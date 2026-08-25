@@ -1,0 +1,2 @@
+# Bewusst leer: der Scraper nutzt ausschließlich die Python-Standardbibliothek
+# (urllib, sqlite3, xml.etree, zipfile). Python >= 3.9.

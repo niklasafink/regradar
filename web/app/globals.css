@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Helvetica Neue", Helvetica, var(--font-app), Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-manrope), "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+  --font-wordmark: var(--font-instrument), Georgia, "Times New Roman", serif;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-slate-900;
+}
+
+dialog::backdrop {
+  background: rgb(15 23 42 / 0.45);
+  backdrop-filter: blur(2px);
+}

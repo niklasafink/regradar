@@ -1,0 +1,19 @@
+# Design-Regeln Regulatory Radar
+
+Verbindlich für alle Screens und Komponenten. Leitbild ist vergabehero.eu: minimalistisch, schwarz-weiß, große Typografie, Pill-Formen. Umgesetzt mit Tailwind CSS v4.
+
+## Grundsätze
+
+1. **Tailwind CSS ist das Styling-System.** Utility-Klassen direkt in den Komponenten, kein eigenes CSS außer Basis-Setup in `globals.css` (Font, `.num` für tabellarische Ziffern, Fokusring, Dialog-Backdrop).
+2. **Typografie wie beim Vorbild:** Body in „Helvetica Neue" (Fallback Inter via `next/font`, Weight 400), Headlines in **Manrope** (`font-heading`-Utility, via `next/font`). Headlines sind `font-medium` (nicht semibold) mit `tracking-tight`: Hero `text-4xl sm:text-5xl`, `leading-[1.08]`; Unterseiten-H1 `text-2xl sm:text-3xl`. Datums- und Zahlenwerte mit `.num`.
+3. **Schwarz-Weiß-Palette.** Weißer Grund, Slate-900 (fast Schwarz) für Primäraktionen und aktive Zustände, Slate-Grautöne für Text und Linien. Nur zwei Farbausnahmen: Blau-600 als gefüllte Pill für Status („Neu", analog „Perfekter Match" beim Vorbild) und Rot-600 als reine Textfarbe für dringende Fristen (unter 60 Tagen).
+4. **Pill-Formen überall.** Buttons, Tags, Filter und Status sind `rounded-full`. Primär-Button: `rounded-full bg-slate-900 text-white hover:bg-slate-700`. Sekundär: weiße Pill mit `border-slate-200`, darf eine zweite Zeile mit kleinem grauem Subtext tragen.
+5. **Wortmarke statt Logo-Icon:** „regulatory" fett + „radar" kursiv-leicht, wie „vergabe*hero*". Keine Icon-Bibliothek nötig; Pfeile als Textzeichen (→, ←, ↗). Einzige Ausnahme: das Dropdown-Caret in der Nav ist ein Inline-SVG (Phosphor CaretDown, `size-3`, `fill="currentColor"`, rotiert bei geöffnetem Menü) — wie beim Vorbild. **Mittelpunkte „·" als Trennzeichen sind verboten** — stattdessen Komma oder Doppelpunkt.
+6. **Homepage-Aufbau: ein Screen, kein Scrollen.** Sticky weiße Nav: Wortmarke links, mittig zentriertes Pill-Menü (Start, Zielgruppen-Dropdown per Hover, Alle Updates; aktiver Punkt als gefüllte Slate-900-Pill), rechts E-Mail-CTA und Sprachumschalter. Die Suche sitzt nicht in der Nav, sondern oben auf den Listen-Seiten (Filterleiste bzw. Kopfzeile). Grauer Hinweis-Streifen darunter, dann eine einzige Hero-Sektion (`max-w-5xl`): Zähler-Badge für Rahmenwerke und Updates über der zentrierten Headline (`text-5xl`), kurzer Subtext, direkt darunter die Anbieterauswahl als kompaktes Drei-Spalten-Grid kleiner Karten (`p-4`, `text-sm`/`text-xs`). Keine weiteren Sektionen, kein Footer auf der Homepage; der Footer bleibt den Unterseiten vorbehalten.
+7. **Karten neutral:** `rounded-2xl border border-slate-200 bg-white`, Hover `hover:border-slate-900`. Keine Schatten außer am Browser-Mockup (`shadow-sm`) und Dialog (`shadow-2xl`).
+8. **Tabellen wie beim Vorbild:** kleine graue Spaltenköpfe, großzügige Zeilenhöhe, hauchdünne Trennlinien (`border-slate-50`), Status-Pill in der ersten Spalte, Frist-Spalte bei Dringlichkeit rot.
+9. **Text ist Interface.** Beschriftungen sagen, was passiert. Die Startseite darf werblich klingen, bleibt aber sachlich; in der Anwendung kein Marketingjargon.
+
+## Sprache
+
+Deutsch ist Leitsprache, Englisch vollständig gepflegt (Umschalter in der Navigation). Dokumenttitel und Normbezeichnungen bleiben in Originalsprache. Datumsformat 24.08.2026 im Deutschen, 24 Aug 2026 im Englischen.

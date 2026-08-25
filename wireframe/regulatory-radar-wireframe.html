@@ -1,0 +1,1282 @@
+<meta charset="utf-8">
+<title>Regulatory Radar Wireframe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+:root{
+  --ground:#E9EBE8; --paper:#F4F5F2; --surface:#FDFDFC;
+  --line:#C4C8C2; --line-soft:#DCDFD9; --fill:#E2E5E0;
+  --ink:#1A1E1C; --muted:#6C7370; --faint:#9AA19D;
+  --anno:#2C5C86; --anno-soft:#DFE8F1;
+  --flag:#9C4A2C; --flag-soft:#F1E3DD;
+  --radius:3px;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#111413; --paper:#181C1A; --surface:#1F2422;
+    --line:#3A403D; --line-soft:#2C312F; --fill:#262B29;
+    --ink:#E4E7E4; --muted:#949B97; --faint:#6B726E;
+    --anno:#87B4DA; --anno-soft:#1E2C38;
+    --flag:#D2907A; --flag-soft:#33221C;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#111413; --paper:#181C1A; --surface:#1F2422;
+  --line:#3A403D; --line-soft:#2C312F; --fill:#262B29;
+  --ink:#E4E7E4; --muted:#949B97; --faint:#6B726E;
+  --anno:#87B4DA; --anno-soft:#1E2C38;
+  --flag:#D2907A; --flag-soft:#33221C;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--sans);font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--anno);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+.wrap{max-width:1060px;margin:0 auto;padding:0 26px}
+@media (max-width:640px){.wrap{padding:0 16px}}
+
+/* ---- prototype strip ---- */
+.proto{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  padding:7px 26px;background:var(--flag-soft);border-bottom:1px solid var(--line);
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;color:var(--flag);
+}
+.proto .grow{flex:1}
+.toggle{display:flex;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.toggle button{padding:3px 9px;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--muted)}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* ---- app header ---- */
+.appbar{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--line)}
+.appbar .inner{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 0}
+.logo{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15px;letter-spacing:-.01em}
+.logo .mark{width:18px;height:18px;border:1.5px solid var(--ink);border-radius:50%;position:relative;flex:0 0 auto}
+.logo .mark::after{content:"";position:absolute;inset:4.5px;border-radius:50%;background:var(--ink)}
+.grow{flex:1;min-width:0}
+
+/* ---- primitives ---- */
+.chip{
+  display:inline-flex;align-items:center;gap:5px;padding:2px 7px;
+  border:1px solid var(--line);border-radius:2px;background:var(--surface);
+  font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--muted);white-space:nowrap;
+}
+.chip.solid{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip.new{border-color:var(--flag);color:var(--flag);background:var(--flag-soft)}
+.chip.anno{border-color:var(--anno);color:var(--anno);background:var(--anno-soft)}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 15px;
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
+  font-size:13.5px;line-height:1.2;
+}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:500}
+.btn.primary:hover{opacity:.87}
+.btn.sm{padding:5px 11px;font-size:12.5px}
+.btn.ghost{border-style:dashed;color:var(--muted)}
+.lbl{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--faint)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.mono{font-family:var(--mono)}
+.tnum{font-variant-numeric:tabular-nums}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* ---- page 1 : hero ---- */
+.hero{padding:56px 0 30px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+@media (max-width:640px){.hero{padding:34px 0 22px}}
+.hero .eyebrow{display:inline-flex;gap:8px;align-items:center}
+.hero h1{
+  margin:0;font-size:clamp(28px,4.6vw,44px);line-height:1.1;
+  letter-spacing:-.032em;font-weight:600;max-width:19ch;text-wrap:balance;
+}
+.hero p{margin:0;max-width:60ch;font-size:16px;color:var(--muted)}
+.hero .facts{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.hero .facts div{display:flex;flex-direction:column;gap:1px}
+.hero .facts b{font-size:19px;font-weight:600;letter-spacing:-.02em}
+
+.pickhead{
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:36px 0 14px;padding-bottom:9px;border-bottom:1px solid var(--line);
+}
+.pickhead h2{margin:0;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-bottom:56px}
+@media (max-width:820px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.tiles{grid-template-columns:1fr}}
+.tile{
+  display:flex;flex-direction:column;gap:7px;align-items:flex-start;text-align:left;
+  padding:17px 18px;background:var(--surface);border:1px solid var(--line-soft);
+  border-radius:var(--radius);transition:border-color .12s,transform .12s;
+}
+.tile:hover{border-color:var(--ink);transform:translateY(-1px)}
+.tile b{font-size:15.5px;font-weight:600;letter-spacing:-.01em}
+.tile .sub{font-size:12.5px;color:var(--muted);line-height:1.45}
+.tile .meta{margin-top:auto;padding-top:9px;display:flex;gap:7px;flex-wrap:wrap}
+.tile .arrow{
+  position:absolute;font-family:var(--mono);font-size:12px;color:var(--faint);
+}
+
+/* ---- page 2 : board ---- */
+.board{padding:20px 0 70px}
+.crumb{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:14px}
+.filterbar{
+  display:flex;gap:9px;align-items:center;flex-wrap:wrap;
+  padding:11px 14px;background:var(--surface);border:1px solid var(--line-soft);
+  border-radius:var(--radius);margin-bottom:16px;
+}
+.fchip{
+  display:inline-flex;align-items:center;gap:6px;padding:3px 8px;
+  border:1px solid var(--anno);background:var(--anno-soft);border-radius:2px;
+  font-size:12px;color:var(--ink);
+}
+.fchip button{font-family:var(--mono);font-size:11px;color:var(--anno);line-height:1}
+
+.topicnav{
+  display:flex;gap:7px;flex-wrap:wrap;padding-bottom:14px;margin-bottom:20px;
+  border-bottom:1px dashed var(--line);
+}
+.tnav{
+  display:inline-flex;align-items:center;gap:7px;padding:5px 11px;
+  border:1px solid var(--line-soft);border-radius:var(--radius);
+  background:var(--surface);font-size:13px;color:var(--muted);
+}
+.tnav:hover{border-color:var(--line);color:var(--ink)}
+.tnav[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.tnav .n{font-family:var(--mono);font-size:10.5px;opacity:.7}
+
+.topic{margin-bottom:34px;scroll-margin-top:70px}
+.topic > h2{
+  margin:0 0 3px;font-size:17px;font-weight:600;letter-spacing:-.018em;
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+}
+.topic > h2 .cnt{font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:.06em}
+.topic > p{margin:0 0 13px;font-size:13px;color:var(--muted);max-width:72ch}
+
+.fw{
+  background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
+  margin-bottom:10px;overflow:hidden;
+}
+.fw.fresh{border-left:3px solid var(--ink)}
+.fwhead{
+  display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;
+  padding:14px 16px;
+}
+.fwhead:hover{background:var(--paper)}
+.fwhead .ttl{flex:1;min-width:0}
+.fwhead h3{margin:0;font-size:15px;font-weight:600;letter-spacing:-.012em;line-height:1.3}
+.fwhead .ref{font-family:var(--mono);font-size:10.5px;color:var(--faint);display:block;margin-top:3px}
+.fwhead .right{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:0 0 auto}
+.fwhead .last{font-family:var(--mono);font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fwhead .caret{font-family:var(--mono);font-size:11px;color:var(--faint)}
+
+.updates{border-top:1px solid var(--line-soft);padding:4px 16px 14px}
+.upd{display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line-soft)}
+.upd:last-child{border-bottom:0}
+@media (max-width:600px){.upd{flex-direction:column;gap:6px}}
+.upd .when{
+  flex:0 0 74px;font-family:var(--mono);font-size:11px;color:var(--muted);
+  font-variant-numeric:tabular-nums;padding-top:2px;
+}
+.upd .body{flex:1;min-width:0}
+.upd h4{margin:0 0 4px;font-size:13.8px;font-weight:600;line-height:1.35}
+.upd p{margin:0;font-size:12.8px;color:var(--muted);line-height:1.5;max-width:78ch}
+.upd .foot{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.src{
+  display:inline-flex;align-items:center;gap:6px;padding:3px 8px;
+  border:1px solid var(--line-soft);border-radius:2px;
+  font-family:var(--mono);font-size:10.5px;color:var(--muted);text-decoration:none;
+}
+.src:hover{border-color:var(--ink);color:var(--ink)}
+.src .ext{font-size:9px;opacity:.7}
+
+.timeline{position:relative;padding-left:15px;margin-top:2px}
+.timeline::before{
+  content:"";position:absolute;left:3px;top:16px;bottom:16px;width:1px;background:var(--line-soft);
+}
+.timeline .upd{position:relative}
+.timeline .upd::before{
+  content:"";position:absolute;left:-15px;top:19px;width:7px;height:7px;
+  border-radius:50%;background:var(--surface);border:1.5px solid var(--line);
+}
+.timeline .upd.hot::before{background:var(--ink);border-color:var(--ink)}
+
+.more{
+  display:block;width:100%;text-align:left;padding:9px 0 2px;
+  font-family:var(--mono);font-size:11px;color:var(--anno);letter-spacing:.04em;
+}
+.empty{
+  padding:28px 18px;text-align:center;border:1px dashed var(--line);
+  border-radius:var(--radius);color:var(--muted);font-size:13.5px;
+}
+
+/* ---- modal ---- */
+.scrim{
+  position:fixed;inset:0;z-index:60;background:rgba(20,24,22,.42);
+  display:grid;place-items:center;padding:20px;backdrop-filter:blur(1.5px);
+}
+.modal{
+  width:min(580px,100%);max-height:min(88vh,700px);display:flex;flex-direction:column;
+  background:var(--surface);border:1px solid var(--line);border-radius:5px;
+  box-shadow:0 18px 44px rgba(20,24,22,.22);overflow:hidden;
+}
+.mhead{padding:15px 20px 12px;border-bottom:1px solid var(--line-soft)}
+.mbody{padding:18px 20px;overflow-y:auto;flex:1}
+.mfoot{
+  padding:13px 20px;border-top:1px solid var(--line-soft);background:var(--paper);
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.progress{display:flex;gap:3px;margin-bottom:11px}
+.progress i{height:3px;flex:1;background:var(--fill);border-radius:2px;display:block}
+.progress i.done{background:var(--ink)}
+.progress i.now{background:var(--anno)}
+.mhead h2{margin:6px 0 0;font-size:17px;font-weight:600;letter-spacing:-.018em;text-wrap:balance}
+.opts{display:flex;flex-direction:column;gap:7px}
+.opts.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:520px){.opts.two{grid-template-columns:1fr}}
+.opt{
+  display:flex;gap:11px;align-items:flex-start;text-align:left;width:100%;
+  padding:10px 12px;background:var(--surface);border:1px solid var(--line-soft);
+  border-radius:var(--radius);font-size:13.5px;
+}
+.opt:hover{border-color:var(--line);background:var(--paper)}
+.opt[aria-pressed="true"]{border-color:var(--ink);background:var(--paper)}
+.opt .tick{flex:0 0 auto;width:15px;height:15px;margin-top:2px;border:1.5px solid var(--line);background:var(--surface)}
+.opt.radio .tick{border-radius:50%}
+.opt[aria-pressed="true"] .tick{border-color:var(--ink);background:var(--ink);box-shadow:inset 0 0 0 3px var(--surface)}
+.opt .hint{display:block;font-size:11.5px;color:var(--faint);margin-top:2px}
+.why{
+  margin-top:14px;padding:9px 12px;border-left:2px solid var(--anno);background:var(--anno-soft);
+  border-radius:0 var(--radius) var(--radius) 0;font-size:12.5px;
+}
+.why b{
+  display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--anno);margin-bottom:3px;font-weight:500;
+}
+.livecount{font-family:var(--mono);font-size:11px;color:var(--muted)}
+
+/* ---- Karte als Ganzes klickbar + Update-Vorschau ---- */
+.fwcard{
+  display:block;width:100%;text-align:left;background:var(--surface);
+  border:1px solid var(--line-soft);border-radius:var(--radius);
+  margin-bottom:10px;padding:0;transition:border-color .12s;
+}
+.fwcard:hover{border-color:var(--ink)}
+.fwcard.fresh{border-left:3px solid var(--ink)}
+.peek{display:block;border-top:1px solid var(--line-soft);padding:9px 16px 12px}
+.pk{display:flex;gap:11px;align-items:baseline;padding:4px 0;font-size:12.7px;min-width:0}
+.pk .when{flex:0 0 66px;font-family:var(--mono);font-size:10.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+.pk .pt{flex:1;min-width:0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.golink{display:inline-block;margin-top:7px;font-family:var(--mono);font-size:11px;color:var(--anno);letter-spacing:.04em}
+.fwcard:hover .golink{text-decoration:underline}
+
+/* ---- Detailseite ---- */
+.detail{padding:20px 0 70px}
+.back{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.05em;color:var(--muted);margin-bottom:16px}
+.back:hover{color:var(--ink)}
+.dhead{padding-bottom:18px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+.dhead h1{margin:9px 0 6px;font-size:clamp(21px,3vw,29px);font-weight:600;letter-spacing:-.026em;line-height:1.18;text-wrap:balance;max-width:24ch}
+.dhead .ref{font-family:var(--mono);font-size:11.5px;color:var(--faint)}
+.dhead .about{margin:12px 0 0;font-size:14.5px;color:var(--muted);max-width:70ch;line-height:1.6}
+.stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:16px}
+.stats div{display:flex;flex-direction:column;gap:1px}
+.stats b{font-size:16px;font-weight:600;letter-spacing:-.015em;font-variant-numeric:tabular-nums}
+.dcols{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:30px;align-items:start}
+@media (max-width:840px){.dcols{grid-template-columns:minmax(0,1fr)}}
+.sidebox{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);padding:14px 15px;margin-bottom:12px}
+.sidebox h3{margin:0 0 9px;font-size:12px;font-weight:600}
+.sidelink{display:flex;gap:9px;align-items:baseline;width:100%;text-align:left;padding:7px 0;border-bottom:1px dashed var(--line-soft);font-size:13px}
+.sidelink:last-child{border-bottom:0}
+.sidelink:hover{color:var(--anno)}
+.sidelink .d{font-family:var(--mono);font-size:10px;color:var(--faint);flex:0 0 auto}
+</style>
+
+<div class="proto">
+  <span id="proto-txt"></span>
+  <span class="grow"></span>
+  <div class="toggle" role="group" aria-label="Language">
+    <button type="button" data-lang="de" aria-pressed="true">DE</button>
+    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+</div>
+
+<div id="app"></div>
+<div id="modal-root"></div>
+
+<script>
+"use strict";
+
+/* ============================================================
+   STATE
+   ============================================================ */
+const state = {
+  lang: "de",
+  provider: null,      // gewählter Anbietertyp (Seite 1)
+  topics: [],          // aktive Themenbereiche, leer = alle (Mehrfachauswahl)
+  fw: null,            // geöffnetes Rahmenwerk -> Detailseite
+  modal: false,
+  step: 0,
+  q: null              // Fragebogen-Antworten, null = noch nicht ausgefüllt
+};
+const TODAY = new Date(2026, 7, 24);   // 24.08.2026 – Bezugsdatum der Beispieldaten
+const L  = () => state.lang;
+const tx = o => (o && typeof o === "object" && !Array.isArray(o)) ? (o[L()] ?? o.de) : o;
+const esc = s => String(s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const dt = d => { const [D,M,Y] = d.split("."); return new Date(+Y, +M-1, +D); };
+const daysAgo = d => Math.round((TODAY - dt(d)) / 86400000);
+
+/* ============================================================
+   ANBIETERTYPEN  (Seite 1)
+   ============================================================ */
+const PROVIDERS = [
+  { id:"CI", n:{de:"Bank / Kreditinstitut",en:"Bank / credit institution"},
+    s:{de:"Einlagen- und Kreditgeschäft nach KWG und CRR",en:"Deposit-taking and lending under KWG and CRR"},
+    tags:["CRR III","MaRisk","DORA","AMLA"] },
+  { id:"AM", n:{de:"Asset Manager / KVG",en:"Asset manager / fund manager"},
+    s:{de:"AIF- oder OGAW-Verwaltung nach KAGB",en:"AIF or UCITS management under KAGB"},
+    tags:["AIFMD II","SFDR","ELTIF 2.0","DORA"] },
+  { id:"IF", n:{de:"Wertpapierinstitut",en:"Investment firm"},
+    s:{de:"Wertpapierdienstleistungen nach WpIG und MiFID II",en:"Investment services under WpIG and MiFID II"},
+    tags:["MiFID II","IFR/IFD","MAR","DORA"] },
+  { id:"PI", n:{de:"Zahlungs- / E-Geld-Institut",en:"Payment / e-money institution"},
+    s:{de:"Zahlungsdienste und E-Geld nach ZAG",en:"Payment services and e-money under ZAG"},
+    tags:["PSD3/PSR","Instant Payments","MiCA","AMLA"] },
+  { id:"INS", n:{de:"Versicherungsunternehmen",en:"Insurance undertaking"},
+    s:{de:"Versicherungsgeschäft nach VAG und Solvency II",en:"Insurance business under VAG and Solvency II"},
+    tags:["Solvency II","IDD","SFDR","DORA"] },
+  { id:"OTH", n:{de:"Leasing, Factoring, Sonstige",en:"Leasing, factoring, other"},
+    s:{de:"Finanzdienstleistungen mit eingeschränkter Erlaubnis",en:"Financial services under a limited licence"},
+    tags:["GwG","HinSchG","NIS-2","BGB"] }
+];
+
+/* ============================================================
+   THEMENBEREICHE
+   ============================================================ */
+const TOPICS = [
+  { id:"ICT", n:{de:"IT & digitale Resilienz",en:"IT & digital resilience"},
+    d:{de:"IKT-Risikomanagement, Vorfallmeldung, Auslagerung an IT-Dienstleister, Cybersicherheit.",
+       en:"ICT risk management, incident reporting, outsourcing to IT providers, cybersecurity."} },
+  { id:"AML", n:{de:"Geldwäscheprävention",en:"Financial crime & AML"},
+    d:{de:"Sorgfaltspflichten, Verdachtsmeldungen, wirtschaftlich Berechtigte, Sanktionen.",
+       en:"Due diligence, suspicious activity reporting, beneficial ownership, sanctions."} },
+  { id:"PRU", n:{de:"Eigenmittel & Aufsichtsrecht",en:"Capital & prudential"},
+    d:{de:"Eigenmittel, Liquidität, Risikomessung, Sanierung und Abwicklung.",
+       en:"Own funds, liquidity, risk measurement, recovery and resolution."} },
+  { id:"GOV", n:{de:"Governance & Auslagerung",en:"Governance & outsourcing"},
+    d:{de:"Organisationspflichten, Auslagerungsmanagement, Hinweisgeberschutz, Vergütung.",
+       en:"Organisational duties, outsourcing management, whistleblowing, remuneration."} },
+  { id:"MKT", n:{de:"Wertpapiergeschäft & Anlegerschutz",en:"Markets & investor protection"},
+    d:{de:"Wohlverhaltensregeln, Marktintegrität, Produktinformation, Vertrieb.",
+       en:"Conduct rules, market integrity, product disclosure, distribution."} },
+  { id:"PAY", n:{de:"Zahlungsverkehr",en:"Payments"},
+    d:{de:"Zahlungsdienste, starke Kundenauthentifizierung, Echtzeitzahlungen, Kryptowerte.",
+       en:"Payment services, strong customer authentication, instant payments, crypto-assets."} },
+  { id:"FND", n:{de:"Fondsregulierung",en:"Fund regulation"},
+    d:{de:"Fondsverwaltung, Liquiditätsinstrumente, Verwahrstelle, Produktregime.",
+       en:"Fund management, liquidity tools, depositary, product regimes."} },
+  { id:"ESG", n:{de:"Nachhaltigkeit",en:"Sustainability"},
+    d:{de:"Offenlegung, Taxonomie, Berichterstattung, ESG-Risiken.",
+       en:"Disclosure, taxonomy, reporting, ESG risks."} },
+  { id:"REP", n:{de:"Meldewesen",en:"Supervisory reporting"},
+    d:{de:"Meldetaxonomien, Einreichungsfristen, statistische Meldungen.",
+       en:"Reporting taxonomies, submission deadlines, statistical returns."} },
+  { id:"INSU", n:{de:"Versicherungsaufsicht",en:"Insurance supervision"},
+    d:{de:"Solvenzkapital, Governance, Vertrieb, Berichterstattung.",
+       en:"Solvency capital, governance, distribution, reporting."} }
+];
+
+/* ============================================================
+   RAHMENWERKE + UPDATES
+   Beispieldaten. Die Dokumente und Daten sind erfunden.
+   cond: zusätzliche Bedingung aus dem Fragebogen (null = gilt immer)
+   ============================================================ */
+const has = (k, v) => !!(state.q && (state.q[k] || []).includes(v));
+const anyOf = (k, ...vs) => vs.some(v => has(k, v));
+
+const FRAMEWORKS = [
+  /* --- IT & digitale Resilienz --- */
+  { id:"dora",
+    about:{de:"Einheitliches EU-Regelwerk für IKT-Risiken im Finanzsektor: Risikomanagement, Meldung schwerwiegender Vorfälle, Resilienztests und Überwachung kritischer IT-Dienstleister.",en:"Single EU rulebook for ICT risk in the financial sector: risk management, major incident reporting, resilience testing and oversight of critical IT providers."}, topic:"ICT", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"DORA — Digitale operationale Resilienz",en:"DORA — Digital Operational Resilience"},
+    ref:"VO (EU) 2022/2554", cond:null,
+    u:[
+      {d:"12.08.2026", t:{de:"RTS",en:"RTS"}, src:"eur-lex.europa.eu",
+       ti:{de:"Delegierte Verordnung zu Weitervergabe kritischer IKT-Dienste",en:"Delegated regulation on subcontracting of critical ICT services"},
+       s:{de:"Legt fest, unter welchen Bedingungen IKT-Drittdienstleister kritische Funktionen weitervergeben dürfen. Vertragliche Mindestinhalte werden auf die zweite Subunternehmerebene ausgedehnt.",
+          en:"Sets out the conditions under which ICT third-party providers may subcontract critical functions. Minimum contractual content is extended to the second tier of subcontractors."}},
+      {d:"04.08.2026", t:{de:"Berichtigung",en:"Corrigendum"}, src:"eur-lex.europa.eu",
+       ti:{de:"Berichtigung der ITS zum Informationsregister",en:"Corrigendum to the ITS on the register of information"},
+       s:{de:"Korrigiert die Feldlängen in Tabelle B_02.02 und stellt die deutsche Sprachfassung richtig. Keine inhaltliche Änderung der Meldepflicht.",
+          en:"Corrects field lengths in table B_02.02 and rectifies the German language version. No substantive change to the reporting duty."}},
+      {d:"22.07.2026", t:{de:"Q&A",en:"Q&A"}, src:"esas-joint-committee.europa.eu",
+       ti:{de:"Neue Antworten zu bedrohungsgeleiteten Penetrationstests",en:"New answers on threat-led penetration testing"},
+       s:{de:"Klärt, wann Gruppentests für mehrere Konzerngesellschaften anerkannt werden und wie externe Tester nachzuweisen sind.",
+          en:"Clarifies when group-wide tests are recognised for several group entities and how external testers must be evidenced."}},
+      {d:"30.06.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       ti:{de:"Leitlinien zur Meldung schwerwiegender IKT-Vorfälle",en:"Guidelines on reporting major ICT-related incidents"},
+       s:{de:"Entwurf verkürzt die Erstmeldefrist von 24 auf 4 Stunden. Stellungnahmen bis 30.09.2026.",
+          en:"Draft shortens the initial notification window from 24 to 4 hours. Comments due by 30 Sep 2026."}}
+    ]},
+
+  { id:"nis2",
+    about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act."}, topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"NIS-2 / BSIG — Cybersicherheit",en:"NIS 2 / BSIG — cybersecurity"},
+    ref:"RL (EU) 2022/2555 · BSIG", cond:()=>has("cross","kritis"),
+    condL:{de:"nur bei Einstufung als kritische Infrastruktur",en:"only if classified as critical infrastructure"},
+    u:[
+      {d:"07.08.2026", t:{de:"Bundesrat",en:"Bundesrat"}, src:"dip.bundestag.de",
+       ti:{de:"Stellungnahme des Bundesrates zum NIS2-Umsetzungsgesetz",en:"Bundesrat opinion on the NIS 2 implementation act"},
+       s:{de:"Die Länder fordern längere Übergangsfristen für Einrichtungen unterhalb der Schwellenwerte und eine Klarstellung zum Verhältnis zu DORA.",
+          en:"The states call for longer transitional periods for entities below the thresholds and clarification of the relationship with DORA."}},
+      {d:"26.06.2026", t:{de:"Regierungsentwurf",en:"Government bill"}, src:"dip.bundestag.de",
+       ti:{de:"Regierungsentwurf eines NIS2-Umsetzungsgesetzes",en:"Government bill for a NIS 2 implementation act"},
+       s:{de:"Übernimmt den Referentenentwurf weitgehend, ergänzt aber eine ausdrückliche Bereichsausnahme für Unternehmen, die bereits vollständig unter DORA fallen.",
+          en:"Largely adopts the ministerial draft but adds an express carve-out for entities already fully within DORA's scope."}},
+      {d:"14.05.2026", t:{de:"Referentenentwurf",en:"Ministerial draft"}, src:"bmi.bund.de",
+       ti:{de:"Referentenentwurf zur Umsetzung der NIS-2-Richtlinie",en:"Ministerial draft implementing the NIS 2 Directive"},
+       s:{de:"Erste Fassung mit Registrierungspflicht binnen drei Monaten und Nachweispflicht gegenüber dem BSI alle drei Jahre.",
+          en:"First version with a three-month registration duty and evidence to be filed with the BSI every three years."}}
+    ]},
+
+  { id:"ebaict",
+    about:{de:"Aufsichtliche Leitlinien der EBA zur Steuerung von IKT- und Sicherheitsrisiken, die MaRisk und DORA operativ unterlegen.",en:"EBA supervisory guidelines on managing ICT and security risk, giving operational substance to MaRisk and DORA."}, topic:"ICT", ents:["CI","IF","PI"],
+    n:{de:"EBA-Leitlinien zu IKT- und Sicherheitsrisiken",en:"EBA guidelines on ICT and security risk"},
+    ref:"EBA/GL/2025/07", cond:null,
+    u:[
+      {d:"09.08.2026", t:{de:"Final Report",en:"Final report"}, src:"eba.europa.eu",
+       ti:{de:"Überarbeitete Leitlinien zur Steuerung von IKT-Risiken",en:"Revised guidelines on ICT risk management"},
+       s:{de:"Das Register informationsverbundener Dienstleister wird auf Subunternehmer der zweiten Ebene erweitert. Comply-or-explain bis 30.11.2026.",
+          en:"The register of information-linked providers is extended to second-tier subcontractors. Comply-or-explain by 30 Nov 2026."}}
+    ]},
+
+  /* --- Geldwäscheprävention --- */
+  { id:"amla",
+    about:{de:"Das unmittelbar geltende EU-Geldwäscherecht samt der neuen Behörde AMLA, die technische Standards erlässt und ausgewählte Institute direkt beaufsichtigt.",en:"The directly applicable EU AML rulebook together with the new AMLA authority, which issues technical standards and directly supervises selected entities."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"AMLA-Verordnung und EU-Geldwäscheverordnung",en:"AMLA Regulation and EU AML Regulation"},
+    ref:"VO (EU) 2024/1620 · 2024/1624", cond:()=>has("cross","aml"),
+    condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
+    u:[
+      {d:"18.08.2026", t:{de:"Konsultation",en:"Consultation"}, src:"amla.europa.eu",
+       ti:{de:"Entwurf technischer Regulierungsstandards zu den Sorgfaltspflichten",en:"Draft regulatory technical standards on customer due diligence"},
+       s:{de:"Der Schwellenwert für vereinfachte Sorgfaltspflichten sinkt von 15.000 auf 10.000 Euro. Bestandskundendaten sind künftig alle drei statt alle fünf Jahre zu aktualisieren. Frist 12.09.2026.",
+          en:"The threshold for simplified due diligence drops from EUR 15,000 to EUR 10,000. Existing customer data must be refreshed every three years instead of five. Deadline 12 Sep 2026."}},
+      {d:"30.06.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"amla.europa.eu",
+       ti:{de:"Finale Leitlinien zum risikobasierten Ansatz",en:"Final guidelines on the risk-based approach"},
+       s:{de:"Konkretisieren die Risikofaktoren für Korrespondenzbankbeziehungen und den Umgang mit Drittstaaten mit hohem Risiko.",
+          en:"Specify risk factors for correspondent relationships and the treatment of high-risk third countries."}},
+      {d:"12.06.2026", t:{de:"Q&A",en:"Q&A"}, src:"amla.europa.eu",
+       ti:{de:"Klarstellungen zum Anwendungsbeginn des EU-Regelwerks",en:"Clarifications on the date of application of the EU rulebook"},
+       s:{de:"Bestätigt, dass nationale Vorgaben bis zum 10.07.2027 fortgelten, soweit sie strenger sind.",
+          en:"Confirms that national requirements continue to apply until 10 Jul 2027 where they are stricter."}}
+    ]},
+
+  { id:"gwg",
+    about:{de:"Das deutsche Geldwäschegesetz mit Sorgfalts-, Melde- und Aufzeichnungspflichten, das derzeit an das EU-Regelwerk angepasst wird.",en:"The German Money Laundering Act with due diligence, reporting and record-keeping duties, currently being aligned with the EU rulebook."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"Geldwäschegesetz",en:"German Money Laundering Act"},
+    ref:"GwG", cond:()=>has("cross","aml"),
+    condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
+    u:[
+      {d:"11.08.2026", t:{de:"Referentenentwurf",en:"Ministerial draft"}, src:"bundesfinanzministerium.de",
+       ti:{de:"Referentenentwurf eines GwG-Anpassungsgesetzes",en:"Ministerial draft of a GwG adaptation act"},
+       s:{de:"Passt das GwG an die EU-Geldwäscheverordnung an und streicht die Vorschriften, die künftig unmittelbar aus der Verordnung folgen.",
+          en:"Aligns the GwG with the EU AML Regulation and deletes provisions that will follow directly from the regulation."}},
+      {d:"24.07.2026", t:{de:"Auslegungshinweise",en:"Interpretation notice"}, src:"bafin.de",
+       ti:{de:"Aktualisierte Auslegungs- und Anwendungshinweise der BaFin",en:"Updated BaFin interpretation and application notes"},
+       s:{de:"Neuer Abschnitt zu Videoidentifizierung und zur Nutzung der EUDI-Wallet für die Identitätsprüfung.",
+          en:"New section on video identification and use of the EUDI wallet for identity verification."}}
+    ]},
+
+  /* --- Eigenmittel & Aufsichtsrecht --- */
+  { id:"crr3",
+    about:{de:"Umsetzung von Basel III in der EU: Eigenmittelanforderungen, Output Floor, Kreditrisiko-Standardansatz und Marktrisiko.",en:"EU implementation of Basel III: own funds requirements, output floor, standardised credit risk approach and market risk."}, topic:"PRU", ents:["CI"],
+    n:{de:"CRR III / CRD VI — Eigenmittel und Aufsicht",en:"CRR III / CRD VI — capital and supervision"},
+    ref:"VO (EU) 2024/1623 · RL (EU) 2024/1619", cond:null,
+    u:[
+      {d:"16.08.2026", t:{de:"RTS",en:"RTS"}, src:"eba.europa.eu",
+       ti:{de:"Technische Standards zum alternativen Standardansatz für Marktrisiken",en:"Technical standards on the alternative standardised approach for market risk"},
+       s:{de:"Präzisiert die Abgrenzung des Handelsbuchs und die Behandlung von Fremdwährungspositionen im Anlagebuch.",
+          en:"Specifies the trading book boundary and the treatment of foreign exchange positions in the banking book."}},
+      {d:"05.08.2026", t:{de:"Delegierte VO",en:"Delegated regulation"}, src:"eur-lex.europa.eu",
+       ti:{de:"Übergangsregelungen zum Output Floor",en:"Transitional arrangements for the output floor"},
+       s:{de:"Verlängert die Übergangsbehandlung für Beteiligungspositionen und grundpfandrechtlich besicherte Kredite um zwei Jahre.",
+          en:"Extends the transitional treatment for equity exposures and mortgage-secured loans by two years."}},
+      {d:"21.07.2026", t:{de:"Konsultation",en:"Consultation"}, src:"bafin.de",
+       ti:{de:"Konsultation zur nationalen Umsetzung der CRD VI",en:"Consultation on the national implementation of CRD VI"},
+       s:{de:"Betrifft insbesondere die Anzeigepflichten für Zweigstellen aus Drittstaaten. Frist 30.09.2026.",
+          en:"Concerns in particular notification duties for third-country branches. Deadline 30 Sep 2026."}}
+    ]},
+
+  { id:"marisk",
+    about:{de:"Die aufsichtliche Auslegung des § 25a KWG durch die BaFin: Organisation, Risikosteuerung, Kreditgeschäft, Handel und Auslagerung.",en:"BaFin's supervisory interpretation of § 25a KWG: organisation, risk control, lending, trading and outsourcing."}, topic:"PRU", ents:["CI"],
+    n:{de:"MaRisk — Mindestanforderungen an das Risikomanagement",en:"MaRisk — minimum requirements for risk management"},
+    ref:"BaFin-Rundschreiben", cond:()=>anyOf("juris","DE"),
+    condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
+    u:[
+      {d:"14.08.2026", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
+       ti:{de:"Novelle der MaRisk veröffentlicht",en:"MaRisk amendment published"},
+       s:{de:"AT 4.4.2 wird um Anforderungen an die Unabhängigkeit der Compliance-Funktion ergänzt. BTO 1.2.4 verlangt eine dokumentierte Neuprodukt-Prozessbewertung je Assetklasse. Anwendung ab 01.01.2027.",
+          en:"AT 4.4.2 is extended with requirements on the independence of the compliance function. BTO 1.2.4 requires a documented new product process assessment per asset class. Applies from 1 Jan 2027."}},
+      {d:"19.03.2026", t:{de:"Konsultation",en:"Consultation"}, src:"bafin.de",
+       ti:{de:"Konsultationsfassung der MaRisk-Novelle",en:"Consultation draft of the MaRisk amendment"},
+       s:{de:"Entwurf mit erstmaligen Vorgaben zum Einsatz von KI-Verfahren in der Risikomessung.",
+          en:"Draft with first-time requirements on the use of AI methods in risk measurement."}}
+    ]},
+
+  { id:"brrd",
+    about:{de:"Sanierungs- und Abwicklungsplanung, MREL-Anforderungen und Zuständigkeit des Einheitlichen Abwicklungsausschusses.",en:"Recovery and resolution planning, MREL requirements and the remit of the Single Resolution Board."}, topic:"PRU", ents:["CI","IF"],
+    n:{de:"Sanierung und Abwicklung",en:"Recovery and resolution"},
+    ref:"BRRD (2014/59/EU) · SRM-VO", cond:null,
+    u:[
+      {d:"08.08.2026", t:{de:"Policy",en:"Policy"}, src:"srb.europa.eu",
+       ti:{de:"MREL-Policy 2026 des Einheitlichen Abwicklungsausschusses",en:"Single Resolution Board MREL policy 2026"},
+       s:{de:"Passt die Kalibrierung für Institute mit Übertragungsstrategie an und konkretisiert die Nachweise zur Abwicklungsfähigkeit.",
+          en:"Adjusts calibration for institutions with a transfer strategy and specifies resolvability evidencing."}}
+    ]},
+
+  { id:"ifr",
+    about:{de:"Eigenes Aufsichtsregime für Wertpapierinstitute mit K-Faktoren anstelle bankaufsichtlicher Eigenmittelanforderungen.",en:"A separate prudential regime for investment firms using K-factors instead of banking own funds requirements."}, topic:"PRU", ents:["IF"],
+    n:{de:"IFR / IFD — Wertpapierinstitute",en:"IFR / IFD — investment firms"},
+    ref:"VO (EU) 2019/2033 · RL (EU) 2019/2034", cond:null,
+    u:[
+      {d:"29.06.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       ti:{de:"Leitlinien zur Einstufung als kleines und nicht verflochtenes Wertpapierinstitut",en:"Guidelines on classification as a small and non-interconnected investment firm"},
+       s:{de:"Vereinheitlicht die Berechnung der K-Faktoren beim Über- und Unterschreiten der Schwellenwerte.",
+          en:"Harmonises K-factor calculation when thresholds are crossed in either direction."}}
+    ]},
+
+  /* --- Governance & Auslagerung --- */
+  { id:"outsourcing",
+    about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"Auslagerungen",en:"Outsourcing"},
+    ref:"EBA/GL/2019/02 · AT 9 MaRisk", cond:()=>has("cross","outsourcing"),
+    condL:{de:"nur bei wesentlichen Auslagerungen",en:"only where material outsourcing exists"},
+    u:[
+      {d:"09.08.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       ti:{de:"Aktualisierte Leitlinien zu Auslagerungsvereinbarungen",en:"Updated guidelines on outsourcing arrangements"},
+       s:{de:"Führt das Auslagerungsregister mit dem DORA-Informationsregister zusammen. Doppelmeldungen entfallen ab 2027.",
+          en:"Merges the outsourcing register with the DORA register of information. Duplicate reporting ends from 2027."}},
+      {d:"12.05.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       ti:{de:"Konsultation zur Zusammenführung der Registeranforderungen",en:"Consultation on merging the register requirements"},
+       s:{de:"Entwurf mit einheitlichem Datenmodell für Auslagerungen und IKT-Drittdienstleister.",
+          en:"Draft with a single data model for outsourcing and ICT third-party providers."}}
+    ]},
+
+  { id:"hinschg",
+    about:{de:"Pflicht zu internen Meldekanälen, Schutz hinweisgebender Personen vor Repressalien und Dokumentationspflichten.",en:"Duty to operate internal reporting channels, protection of reporting persons against retaliation, and documentation duties."}, topic:"GOV", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"Hinweisgeberschutz",en:"Whistleblower protection"},
+    ref:"HinSchG · RL (EU) 2019/1937", cond:null,
+    u:[
+      {d:"28.07.2026", t:{de:"Rechtsprechung",en:"Case law"}, src:"bundesgerichtshof.de",
+       ti:{de:"BGH zur Vertraulichkeit interner Meldekanäle",en:"Federal Court of Justice on confidentiality of internal reporting channels"},
+       s:{de:"Der Bundesgerichtshof stellt klar, dass die Identität hinweisgebender Personen auch gegenüber der internen Revision zu schützen ist.",
+          en:"The court clarifies that the identity of reporting persons must also be protected from internal audit."}}
+    ]},
+
+  /* --- Wertpapiergeschäft --- */
+  { id:"mifid",
+    about:{de:"Wohlverhaltensregeln, Geeignetheits- und Angemessenheitsprüfung, Kostenausweis, Produktgovernance und Handelstransparenz.",en:"Conduct rules, suitability and appropriateness assessment, cost disclosure, product governance and trading transparency."}, topic:"MKT", ents:["CI","AM","IF"],
+    n:{de:"MiFID II / MiFIR",en:"MiFID II / MiFIR"},
+    ref:"RL 2014/65/EU · VO 600/2014",
+    cond:()=>anyOf("act","advice","portfolio","dealing"),
+    condL:{de:"nur bei Wertpapierdienstleistungen",en:"only where investment services are provided"},
+    u:[
+      {d:"13.08.2026", t:{de:"RTS",en:"RTS"}, src:"esma.europa.eu",
+       ti:{de:"Technische Standards zum konsolidierten Datenticker für Aktien",en:"Technical standards on the consolidated tape for equities"},
+       s:{de:"Legt Datenfelder, Latenzanforderungen und den Verteilungsschlüssel für Erlöse an beitragende Handelsplätze fest.",
+          en:"Sets data fields, latency requirements and the revenue allocation key for contributing venues."}},
+      {d:"29.07.2026", t:{de:"Q&A",en:"Q&A"}, src:"esma.europa.eu",
+       ti:{de:"Aktualisierte Antworten zu Zuwendungen und Kostenausweis",en:"Updated answers on inducements and cost disclosure"},
+       s:{de:"Konkretisiert den Ausweis laufender Kosten bei Portfolios mit Zielfonds.",
+          en:"Specifies the disclosure of ongoing costs for portfolios holding target funds."}}
+    ]},
+
+  { id:"mar",
+    about:{de:"Verbot von Insidergeschäften und Marktmanipulation, Ad-hoc-Publizität, Insiderlisten und Eigengeschäfte von Führungskräften.",en:"Prohibition of insider dealing and market manipulation, disclosure of inside information, insider lists and managers' transactions."}, topic:"MKT", ents:["CI","AM","IF"],
+    n:{de:"Marktmissbrauchsverordnung",en:"Market Abuse Regulation"},
+    ref:"VO (EU) 596/2014", cond:()=>anyOf("act","dealing","issuance","portfolio"),
+    condL:{de:"nur bei Handels-, Emissions- oder Verwaltungstätigkeit",en:"only for dealing, issuance or management activity"},
+    u:[
+      {d:"01.08.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"esma.europa.eu",
+       ti:{de:"Überarbeitete Leitlinien zu Insiderlisten",en:"Revised guidelines on insider lists"},
+       s:{de:"Vereinfachtes Format für kleine und mittlere Emittenten, verpflichtend ab 01.01.2027.",
+          en:"Simplified format for small and medium-sized issuers, mandatory from 1 Jan 2027."}}
+    ]},
+
+  { id:"priips",
+    about:{de:"Standardisiertes Basisinformationsblatt für verpackte Anlageprodukte, das Privatkunden vor Vertragsschluss auszuhändigen ist.",en:"Standardised key information document for packaged investment products, to be provided to retail clients before conclusion."}, topic:"MKT", ents:["CI","AM","IF","INS"],
+    n:{de:"PRIIPs — Basisinformationsblatt",en:"PRIIPs — key information document"},
+    ref:"VO (EU) 1286/2014", cond:()=>has("cli","retail"),
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[
+      {d:"17.07.2026", t:{de:"Konsultation",en:"Consultation"}, src:"esma.europa.eu",
+       ti:{de:"Konsultation zur Überarbeitung des Basisinformationsblatts",en:"Consultation on revising the key information document"},
+       s:{de:"Entwurf sieht ein digitales, mehrschichtiges Format und einen neuen Nachhaltigkeitsabschnitt vor.",
+          en:"Draft provides for a digital, layered format and a new sustainability section."}}
+    ]},
+
+  /* --- Zahlungsverkehr --- */
+  { id:"psd3",
+    about:{de:"Nachfolgeregime zur PSD2: Zulassung, starke Kundenauthentifizierung, Zugang zu Zahlungskonten und Haftung bei Betrug.",en:"Successor regime to PSD2: authorisation, strong customer authentication, access to payment accounts and fraud liability."}, topic:"PAY", ents:["CI","PI"],
+    n:{de:"PSD3 / Zahlungsdiensteverordnung",en:"PSD3 / Payment Services Regulation"},
+    ref:"COM(2023) 366 · COM(2023) 367", cond:()=>has("act","payments"),
+    condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
+    u:[
+      {d:"19.08.2026", t:{de:"Trilog",en:"Trilogue"}, src:"consilium.europa.eu",
+       ti:{de:"Vorläufige Einigung im Trilog erzielt",en:"Provisional agreement reached in trilogue"},
+       s:{de:"Die Haftung für autorisierte Push-Zahlungsbetrugsfälle wird ausgeweitet. Anwendungsbeginn voraussichtlich 18 Monate nach Inkrafttreten.",
+          en:"Liability for authorised push payment fraud is extended. Application expected 18 months after entry into force."}},
+      {d:"26.07.2026", t:{de:"RTS",en:"RTS"}, src:"eba.europa.eu",
+       ti:{de:"Technische Standards zu Ausnahmen von der starken Kundenauthentifizierung",en:"Technical standards on exemptions from strong customer authentication"},
+       s:{de:"Erhöht die Betragsgrenze für kontaktlose Zahlungen und führt eine Ausnahme für wiederkehrende Abonnements ein.",
+          en:"Raises the contactless payment limit and introduces an exemption for recurring subscriptions."}}
+    ]},
+
+  { id:"instant",
+    about:{de:"Pflicht zur Erreichbarkeit für Echtzeitüberweisungen in Euro, Entgeltgleichheit und Abgleich von Empfängername und IBAN.",en:"Duty to be reachable for euro instant credit transfers, charge parity, and verification of payee name against IBAN."}, topic:"PAY", ents:["CI","PI"],
+    n:{de:"Verordnung über Echtzeitüberweisungen",en:"Instant Payments Regulation"},
+    ref:"VO (EU) 2024/886", cond:()=>has("act","payments"),
+    condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
+    u:[
+      {d:"06.08.2026", t:{de:"Merkblatt",en:"Guidance note"}, src:"bafin.de",
+       ti:{de:"BaFin-Merkblatt zur Erreichbarkeit und zum Empfängerabgleich",en:"BaFin guidance on reachability and payee verification"},
+       s:{de:"Konkretisiert die Anforderungen an den Abgleich von Name und IBAN sowie an die Fehlerbehandlung bei Abweichungen.",
+          en:"Specifies requirements for matching name and IBAN and for handling mismatches."}}
+    ]},
+
+  { id:"mica",
+    about:{de:"Zulassungs- und Verhaltensregeln für Emittenten von Kryptowerten und für Kryptowertedienstleister in der EU.",en:"Authorisation and conduct rules for issuers of crypto-assets and for crypto-asset service providers in the EU."}, topic:"PAY", ents:["CI","IF","PI"],
+    n:{de:"MiCA — Märkte für Kryptowerte",en:"MiCA — markets in crypto-assets"},
+    ref:"VO (EU) 2023/1114", cond:()=>has("prod","crypto"),
+    condL:{de:"nur bei Kryptowerten im Angebot",en:"only where crypto-assets are offered"},
+    u:[
+      {d:"10.08.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"esma.europa.eu",
+       ti:{de:"Leitlinien zur Verwahrung und Verwaltung von Kryptowerten",en:"Guidelines on custody and administration of crypto-assets"},
+       s:{de:"Verlangt getrennte Wallet-Strukturen je Kunde und tägliche Bestandsabstimmung.",
+          en:"Requires segregated wallet structures per client and daily reconciliation of holdings."}}
+    ]},
+
+  /* --- Fondsregulierung --- */
+  { id:"aifmd2",
+    about:{de:"Verwaltung alternativer Investmentfonds und OGAW: Zulassung, Organisation, Auslagerung, Liquiditätsinstrumente und Verwahrstelle.",en:"Management of alternative investment funds and UCITS: authorisation, organisation, delegation, liquidity tools and depositary."}, topic:"FND", ents:["AM"],
+    n:{de:"AIFMD II und OGAW-Richtlinie",en:"AIFMD II and UCITS Directive"},
+    ref:"RL (EU) 2024/927", cond:null,
+    u:[
+      {d:"14.08.2026", t:{de:"RTS",en:"RTS"}, src:"esma.europa.eu",
+       ti:{de:"Technische Standards zu Liquiditätsmanagement-Instrumenten",en:"Technical standards on liquidity management tools"},
+       s:{de:"Fondsverwalter müssen künftig mindestens zwei Instrumente je Fonds vorsehen und deren Aktivierung der Aufsicht anzeigen.",
+          en:"Managers must provide for at least two tools per fund and notify the supervisor when they are activated."}},
+      {d:"25.07.2026", t:{de:"Q&A",en:"Q&A"}, src:"esma.europa.eu",
+       ti:{de:"Antworten zur Kreditvergabe durch Fonds",en:"Answers on loan origination by funds"},
+       s:{de:"Klärt die Berechnung der Konzentrationsgrenze und die Behandlung von Bestandsportfolios im Übergang.",
+          en:"Clarifies the concentration limit calculation and the treatment of legacy portfolios in transition."}},
+      {d:"11.06.2026", t:{de:"Referentenentwurf",en:"Ministerial draft"}, src:"bundesfinanzministerium.de",
+       ti:{de:"Referentenentwurf eines Fondsmarktstärkungsgesetzes",en:"Ministerial draft of a fund market strengthening act"},
+       s:{de:"Setzt AIFMD II im KAGB um und ergänzt Regelungen zur Auslagerung von Portfolioverwaltungsfunktionen.",
+          en:"Implements AIFMD II in the KAGB and adds rules on delegating portfolio management functions."}}
+    ]},
+
+  { id:"eltif",
+    about:{de:"Produktregime für langfristige Investmentfonds, das seit der Reform auch für Privatanleger geöffnet ist.",en:"Product regime for long-term investment funds, opened up to retail investors following the reform."}, topic:"FND", ents:["AM"],
+    n:{de:"ELTIF 2.0",en:"ELTIF 2.0"},
+    ref:"VO (EU) 2023/606", cond:()=>has("prod","eltif"),
+    condL:{de:"nur bei ELTIF- oder EuVECA-Produkten",en:"only for ELTIF or EuVECA products"},
+    u:[
+      {d:"23.07.2026", t:{de:"RTS",en:"RTS"}, src:"eur-lex.europa.eu",
+       ti:{de:"Delegierte Verordnung zu Rücknahmefristen und Liquiditätsquoten",en:"Delegated regulation on redemption windows and liquidity ratios"},
+       s:{de:"Legt Mindesthaltefristen und die Berechnung der liquiden Quote für offene ELTIF fest.",
+          en:"Sets minimum holding periods and the liquid asset ratio calculation for open-ended ELTIFs."}}
+    ]},
+
+  { id:"mmf",
+    about:{de:"Portfolio-, Bewertungs- und Liquiditätsanforderungen für Geldmarktfonds sowie Regeln zu Rücknahmen unter Stress.",en:"Portfolio, valuation and liquidity requirements for money market funds, and rules on redemptions under stress."}, topic:"FND", ents:["AM"],
+    n:{de:"Geldmarktfonds-Verordnung",en:"Money Market Funds Regulation"},
+    ref:"VO (EU) 2017/1131", cond:()=>has("prod","mmf"),
+    condL:{de:"nur bei Geldmarktfonds im Angebot",en:"only where money market funds are offered"},
+    u:[
+      {d:"02.07.2026", t:{de:"Bericht",en:"Report"}, src:"esma.europa.eu",
+       ti:{de:"Überprüfungsbericht zur Widerstandsfähigkeit von Geldmarktfonds",en:"Review report on money market fund resilience"},
+       s:{de:"Empfiehlt die Entkopplung von Liquiditätsschwellen und Rücknahmegebühren sowie höhere Mindestliquiditätsquoten.",
+          en:"Recommends decoupling liquidity thresholds from redemption fees and raising minimum liquidity ratios."}}
+    ]},
+
+  /* --- Nachhaltigkeit --- */
+  { id:"sfdr",
+    about:{de:"Offenlegungspflichten zu Nachhaltigkeitsrisiken und nachteiligen Nachhaltigkeitsauswirkungen auf Unternehmens- und Produktebene.",en:"Disclosure duties on sustainability risks and principal adverse impacts at entity and product level."}, topic:"ESG", ents:["CI","AM","IF","INS"],
+    n:{de:"SFDR — Offenlegungsverordnung",en:"SFDR — sustainability disclosure"},
+    ref:"VO (EU) 2019/2088", cond:()=>has("cross","esg"),
+    condL:{de:"nur bei nachhaltigkeitsbezogenen Angaben",en:"only where sustainability disclosures are made"},
+    u:[
+      {d:"20.08.2026", t:{de:"Kommissionsvorschlag",en:"Commission proposal"}, src:"eur-lex.europa.eu",
+       ti:{de:"Vorschlag zur Überarbeitung der SFDR mit Produktkategorien",en:"Proposal to revise SFDR introducing product categories"},
+       s:{de:"Ersetzt die Einstufung nach Artikel 8 und 9 durch drei Produktkategorien mit Mindestkriterien. Anwendung frühestens 2028.",
+          en:"Replaces the Article 8 and 9 classification with three product categories subject to minimum criteria. Application in 2028 at the earliest."}},
+      {d:"15.07.2026", t:{de:"Final Report",en:"Final report"}, src:"esas-joint-committee.europa.eu",
+       ti:{de:"Überarbeitete technische Regulierungsstandards zur Offenlegung",en:"Revised regulatory technical standards on disclosure"},
+       s:{de:"Strafft die Vorlagen für vorvertragliche und periodische Informationen und streicht sechs Indikatoren.",
+          en:"Streamlines the pre-contractual and periodic templates and removes six indicators."}}
+    ]},
+
+  /* --- Meldewesen --- */
+  { id:"itsrep",
+    about:{de:"Einheitliche Meldebögen und Taxonomien für COREP, FINREP und weitere aufsichtliche Meldungen.",en:"Harmonised templates and taxonomies for COREP, FINREP and other supervisory returns."}, topic:"REP", ents:["CI","IF"],
+    n:{de:"Aufsichtliches Meldewesen",en:"Supervisory reporting"},
+    ref:"ITS on Supervisory Reporting", cond:()=>has("cross","reporting"),
+    condL:{de:"nur bei aufsichtlicher Meldepflicht",en:"only where supervisory reporting applies"},
+    u:[
+      {d:"17.08.2026", t:{de:"Taxonomie",en:"Taxonomy"}, src:"eba.europa.eu",
+       ti:{de:"Meldetaxonomie 4.1 veröffentlicht",en:"Reporting framework 4.1 published"},
+       s:{de:"Enthält die neuen Marktrisiko-Meldebögen und Anpassungen an COREP infolge der CRR III. Erstmeldung zum Stichtag 31.03.2027.",
+          en:"Contains the new market risk templates and COREP changes following CRR III. First reference date 31 Mar 2027."}},
+      {d:"03.08.2026", t:{de:"Erratum",en:"Erratum"}, src:"eba.europa.eu",
+       ti:{de:"Korrektur der Validierungsregeln v4.0",en:"Correction to validation rules v4.0"},
+       s:{de:"Deaktiviert 14 fehlerhafte Validierungsregeln rückwirkend zum Meldestichtag 30.06.2026.",
+          en:"Deactivates 14 faulty validation rules retroactively to the 30 Jun 2026 reference date."}}
+    ]},
+
+  { id:"anacredit",
+    about:{de:"Granulare Kreditdatenmeldung an Bundesbank und ESZB auf Ebene einzelner Kredite und Kreditnehmer.",en:"Granular credit data reporting to the Bundesbank and the ESCB at individual loan and borrower level."}, topic:"REP", ents:["CI"],
+    n:{de:"AnaCredit und statistische Meldungen",en:"AnaCredit and statistical reporting"},
+    ref:"VO (EU) 2016/867", cond:()=>has("cross","reporting"),
+    condL:{de:"nur bei aufsichtlicher Meldepflicht",en:"only where supervisory reporting applies"},
+    u:[
+      {d:"23.07.2026", t:{de:"Rundschreiben",en:"Circular"}, src:"bundesbank.de",
+       ti:{de:"Bundesbank-Rundschreiben zur Erweiterung des Kreditdatenmeldewesens",en:"Bundesbank circular on extending credit data reporting"},
+       s:{de:"Nimmt Kredite an Einzelunternehmen unterhalb der bisherigen Meldegrenze auf. Anwendung ab dem Meldemonat Januar 2027.",
+          en:"Adds loans to sole proprietors below the previous threshold. Applies from the January 2027 reporting month."}}
+    ]},
+
+  /* --- Versicherungsaufsicht --- */
+  { id:"solvency",
+    about:{de:"Risikobasiertes Aufsichtsregime für Versicherer: Solvenzkapital, Governance, ORSA und Berichterstattung.",en:"Risk-based prudential regime for insurers: solvency capital, governance, ORSA and reporting."}, topic:"INSU", ents:["INS"],
+    n:{de:"Solvency II",en:"Solvency II"},
+    ref:"RL 2009/138/EG · DelVO 2015/35", cond:null,
+    u:[
+      {d:"12.08.2026", t:{de:"Delegierte VO",en:"Delegated regulation"}, src:"eur-lex.europa.eu",
+       ti:{de:"Anpassung der Standardformel an das Solvency-II-Review",en:"Adjustment of the standard formula following the Solvency II review"},
+       s:{de:"Ändert die Zinsstrukturkurve und die Behandlung langfristiger Aktieninvestitionen. Anwendung ab 30.01.2027.",
+          en:"Amends the interest rate term structure and the treatment of long-term equity investments. Applies from 30 Jan 2027."}},
+      {d:"18.06.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eiopa.europa.eu",
+       ti:{de:"Leitlinien zur Berücksichtigung von Nachhaltigkeitsrisiken",en:"Guidelines on integrating sustainability risks"},
+       s:{de:"Verlangt die Einbeziehung von Klimaszenarien in die unternehmenseigene Risiko- und Solvabilitätsbeurteilung.",
+          en:"Requires climate scenarios to be included in the own risk and solvency assessment."}}
+    ]},
+
+  { id:"idd",
+    about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["INS"],
+    n:{de:"Versicherungsvertriebsrichtlinie",en:"Insurance Distribution Directive"},
+    ref:"RL (EU) 2016/97", cond:()=>has("cli","retail"),
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[
+      {d:"31.07.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eiopa.europa.eu",
+       ti:{de:"Konsultation zur Kleinanlegerstrategie und zum Provisionsverbot",en:"Consultation on the retail investment strategy and inducement ban"},
+       s:{de:"Entwurf sieht ein Provisionsverbot im beratungsfreien Geschäft und einen einheitlichen Preis-Leistungs-Test vor.",
+          en:"Draft provides for an inducement ban in execution-only business and a common value-for-money test."}}
+    ]}
+];
+
+/* ============================================================
+   FRAGEBOGEN (Popup) — verfeinert die Filterung
+   ============================================================ */
+const QUESTIONS = [
+  { key:"size", multi:false,
+    q:{de:"Wie werden Sie beaufsichtigt?",en:"How are you supervised?"},
+    why:{de:"Steuert, ob SSM-Rechtsakte der EZB und Proportionalitätserleichterungen für kleine Institute angezeigt werden.",
+         en:"Controls whether ECB SSM legal acts and proportionality relief for small institutions are shown."},
+    o:[{v:"SI",l:{de:"Direkt durch die EZB",en:"Directly by the ECB"}},
+       {v:"LSI",l:{de:"Durch BaFin und Bundesbank",en:"By BaFin and the Bundesbank"}},
+       {v:"SNCI",l:{de:"Klein und nicht komplex",en:"Small and non-complex"}},
+       {v:"NONE",l:{de:"Nicht prudenziell beaufsichtigt",en:"Not prudentially supervised"}}] },
+
+  { key:"juris", multi:true,
+    q:{de:"Wo sind Sie tätig?",en:"Where do you operate?"},
+    why:{de:"Entscheidet, ob deutsche Quellen wie BaFin, Bundesbank und Bundestag zusätzlich zu den EU-Quellen ausgewertet werden.",
+         en:"Determines whether German sources such as BaFin, the Bundesbank and the Bundestag are evaluated alongside EU sources."},
+    o:[{v:"DE",l:{de:"Deutschland",en:"Germany"}},
+       {v:"EU",l:{de:"Weitere EU-Staaten",en:"Other EU states"}},
+       {v:"3RD",l:{de:"Drittstaaten",en:"Third countries"}}] },
+
+  { key:"act", multi:true,
+    q:{de:"Welche Tätigkeiten sind von Ihrer Erlaubnis umfasst?",en:"Which activities does your licence cover?"},
+    why:{de:"Der stärkste Filter: Zahlungsverkehr zieht PSD3 und Echtzeitzahlungen nach sich, Anlageberatung MiFID II und MAR.",
+         en:"The strongest filter: payments pull in PSD3 and instant payments, advice pulls in MiFID II and MAR."},
+    o:[{v:"deposits",l:{de:"Einlagengeschäft",en:"Deposit-taking"}},
+       {v:"lending",l:{de:"Kreditgeschäft",en:"Lending"}},
+       {v:"payments",l:{de:"Zahlungsverkehr",en:"Payment services"}},
+       {v:"custody",l:{de:"Depot und Verwahrung",en:"Custody"}},
+       {v:"dealing",l:{de:"Eigenhandel",en:"Dealing on own account"}},
+       {v:"advice",l:{de:"Anlageberatung",en:"Investment advice"}},
+       {v:"portfolio",l:{de:"Portfolioverwaltung",en:"Portfolio management"}},
+       {v:"issuance",l:{de:"Emissionsgeschäft",en:"Underwriting"}}] },
+
+  { key:"prod", multi:true,
+    q:{de:"Welche Produkte bieten oder halten Sie?",en:"Which products do you offer or hold?"},
+    why:{de:"Produkte lösen eigene Spezialregime aus, unabhängig vom Institutstyp — etwa MiCA bei Kryptowerten.",
+         en:"Products trigger their own specialist regimes regardless of entity type — for example MiCA for crypto-assets."},
+    o:[{v:"otc",l:{de:"OTC-Derivate",en:"OTC derivatives"}},
+       {v:"crypto",l:{de:"Kryptowerte",en:"Crypto-assets"}},
+       {v:"covered",l:{de:"Pfandbriefe",en:"Covered bonds"}},
+       {v:"mmf",l:{de:"Geldmarktfonds",en:"Money market funds"}},
+       {v:"eltif",l:{de:"ELTIF / EuVECA",en:"ELTIF / EuVECA"}},
+       {v:"consumer",l:{de:"Verbraucherdarlehen",en:"Consumer credit"}}] },
+
+  { key:"cli", multi:true,
+    q:{de:"Welche Kunden bedienen Sie?",en:"Which clients do you serve?"},
+    why:{de:"Privatkundengeschäft aktiviert Anlegerschutz- und Produktinformationsregeln, die institutionell entfallen.",
+         en:"Retail business activates investor protection and product disclosure rules that do not apply institutionally."},
+    o:[{v:"retail",l:{de:"Privatkunden",en:"Retail clients"}},
+       {v:"prof",l:{de:"Professionelle Kunden",en:"Professional clients"}},
+       {v:"inst",l:{de:"Institutionelle Anleger",en:"Institutional investors"}}] },
+
+  { key:"cross", multi:true,
+    q:{de:"Welche Querschnittspflichten treffen Sie?",en:"Which cross-cutting obligations apply?"},
+    why:{de:"Querschnittsthemen machen erfahrungsgemäß den größten Teil des laufenden Änderungsaufkommens aus.",
+         en:"Cross-cutting topics typically account for the largest share of ongoing regulatory change."},
+    o:[{v:"aml",l:{de:"Geldwäscherechtlich verpflichtet",en:"Obliged entity under AML law"}},
+       {v:"reporting",l:{de:"Aufsichtliches Meldewesen",en:"Supervisory reporting"}},
+       {v:"outsourcing",l:{de:"Wesentliche Auslagerungen",en:"Material outsourcing"}},
+       {v:"esg",l:{de:"Nachhaltigkeitsangaben",en:"Sustainability disclosures"}},
+       {v:"kritis",l:{de:"Kritische Infrastruktur",en:"Critical infrastructure"}}] }
+];
+
+/* ============================================================
+   AUSWERTUNG
+   ============================================================ */
+function visibleFrameworks(){
+  return FRAMEWORKS
+    .filter(f => f.ents.includes(state.provider))
+    .filter(f => !state.q || !f.cond || f.cond())
+    .map(f => ({...f, u:[...f.u].sort((a,b)=> dt(b.d) - dt(a.d))}))
+    .sort((a,b)=> dt(b.u[0].d) - dt(a.u[0].d));
+}
+function topicsWithContent(list){
+  return TOPICS
+    .map(t => ({...t, fws:list.filter(f => f.topic === t.id)}))
+    .filter(t => t.fws.length)
+    .sort((a,b)=> dt(b.fws[0].u[0].d) - dt(a.fws[0].u[0].d));
+}
+function activeFilters(){
+  if (!state.q) return [];
+  const out = [];
+  for (const q of QUESTIONS){
+    const v = state.q[q.key];
+    if (!v || (Array.isArray(v) && !v.length)) continue;
+    const vals = Array.isArray(v) ? v : [v];
+    for (const val of vals){
+      const o = q.o.find(x => x.v === val);
+      if (o) out.push({ k:q.key, v:val, l:tx(o.l) });
+    }
+  }
+  return out;
+}
+
+/* ============================================================
+   RENDER — SEITE 1
+   ============================================================ */
+function viewHero(){
+  const total = FRAMEWORKS.reduce((n,f)=> n + f.u.length, 0);
+  return `
+  <header class="appbar"><div class="wrap inner">
+    <div class="logo"><span class="mark"></span>Regulatory Radar</div>
+    <span class="grow"></span>
+    <span class="chip">${L()==="de"?"Open Source":"Open source"}</span>
+    <span class="chip">${L()==="de"?"Kostenlos":"Free"}</span>
+  </div></header>
+
+  <div class="wrap">
+    <section class="hero">
+      <span class="eyebrow lbl">${L()==="de"?"Kostenloser Regulatory Monitor":"Free regulatory monitor"}</span>
+      <h1>${L()==="de"?"Alle regulatorischen Änderungen, die Ihr Haus betreffen. An einem Ort."
+                      :"Every regulatory change that concerns your firm. In one place."}</h1>
+      <p>${L()==="de"
+        ? "Wählen Sie Ihren Anbietertyp — Sie sehen sofort die einschlägigen Rahmenwerke nach Themenbereich, mit allen Updates chronologisch und Link auf die Primärquelle. Keine Anmeldung nötig."
+        : "Pick your provider type — you immediately see the applicable frameworks by topic, with every update in chronological order and a link to the primary source. No sign-up needed."}</p>
+      <div class="facts">
+        <div><b class="tnum">${FRAMEWORKS.length}</b><span class="lbl">${L()==="de"?"Rahmenwerke":"Frameworks"}</span></div>
+        <div><b class="tnum">${total}</b><span class="lbl">${L()==="de"?"Updates":"Updates"}</span></div>
+        <div><b class="tnum">${TOPICS.length}</b><span class="lbl">${L()==="de"?"Themenbereiche":"Topics"}</span></div>
+        <div><b class="tnum">12</b><span class="lbl">${L()==="de"?"Quellen":"Sources"}</span></div>
+      </div>
+    </section>
+
+    <div class="pickhead">
+      <h2>${L()==="de"?"Welcher Anbieter sind Sie?":"Which kind of provider are you?"}</h2>
+      <span class="grow"></span>
+      <span class="lbl">${L()==="de"?"Später jederzeit änderbar":"Changeable at any time"}</span>
+    </div>
+    <div class="tiles">
+      ${PROVIDERS.map(p=>{
+        const n = FRAMEWORKS.filter(f=>f.ents.includes(p.id)).length;
+        return `<button type="button" class="tile" data-pick="${p.id}">
+          <b>${tx(p.n)}</b>
+          <span class="sub">${tx(p.s)}</span>
+          <span class="meta">${p.tags.map(t=>`<span class="chip">${esc(t)}</span>`).join("")}</span>
+          <span class="row" style="width:100%;margin-top:8px">
+            <span class="lbl">${n} ${L()==="de"?"Rahmenwerke":"frameworks"}</span>
+            <span class="grow"></span><span class="mono" style="font-size:12px">→</span>
+          </span>
+        </button>`;
+      }).join("")}
+    </div>
+  </div>`;
+}
+
+/* ============================================================
+   RENDER — SEITE 2
+   ============================================================ */
+function updateRow(up, inTimeline){
+  const age = daysAgo(up.d);
+  return `<div class="upd ${age<=14?"hot":""}">
+    <div class="when">${up.d}</div>
+    <div class="body">
+      <div class="row" style="gap:7px;margin-bottom:5px">
+        <span class="chip">${tx(up.t)}</span>
+        ${age<=14?`<span class="chip new">${L()==="de"?"Neu":"New"}</span>`:""}
+      </div>
+      <h4>${tx(up.ti)}</h4>
+      <p>${tx(up.s)}</p>
+      <div class="foot">
+        <a class="src" href="#" data-noop="1" title="${L()==="de"?"Beispieldatensatz – kein echtes Dokument":"Sample record – not a real document"}">
+          ${esc(up.src)}<span class="ext">↗</span></a>
+        <span class="lbl">${L()==="de"?"Original öffnen":"Open original"}</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+function frameworkCard(f){
+  const age = daysAgo(f.u[0].d);
+  const peek = f.u.slice(0,2);
+  return `<button type="button" class="fwcard ${age<=14?"fresh":""}" data-fw="${f.id}">
+    <span class="fwhead" style="display:flex">
+      <span class="ttl">
+        <h3>${tx(f.n)}</h3>
+        <span class="ref">${esc(f.ref)}</span>
+        ${(!state.q && f.condL) ? `<span class="chip anno" style="margin-top:7px">${tx(f.condL)}</span>` : ""}
+      </span>
+      <span class="right">
+        <span class="row" style="gap:6px">
+          ${age<=14?`<span class="chip new">${L()==="de"?"Neu":"New"}</span>`:""}
+          <span class="chip">${f.u.length} ${L()==="de"?"Updates":"updates"}</span>
+        </span>
+        <span class="last">${f.u[0].d}</span>
+      </span>
+    </span>
+    <span class="peek">
+      ${peek.map(u=>`<span class="pk">
+        <span class="when">${u.d}</span>
+        <span class="chip">${tx(u.t)}</span>
+        <span class="pt">${tx(u.ti)}</span></span>`).join("")}
+      <span class="golink">${L()==="de"
+        ? `alle ${f.u.length} Updates ansehen →` : `view all ${f.u.length} updates →`}</span>
+    </span>
+  </button>`;
+}
+
+/* ============================================================
+   RENDER — SEITE 3 : Rahmenwerk-Detailseite
+   ============================================================ */
+function viewDetail(){
+  const f = FRAMEWORKS.find(x => x.id === state.fw);
+  const p = PROVIDERS.find(x => x.id === state.provider);
+  const t = TOPICS.find(x => x.id === f.topic);
+  const ups = [...f.u].sort((a,b)=> dt(b.d) - dt(a.d));
+  const siblings = FRAMEWORKS
+    .filter(x => x.topic === f.topic && x.id !== f.id && x.ents.includes(state.provider))
+    .map(x => ({...x, u:[...x.u].sort((a,b)=> dt(b.d)-dt(a.d))}))
+    .sort((a,b)=> dt(b.u[0].d) - dt(a.u[0].d));
+  const fresh = ups.filter(u => daysAgo(u.d) <= 30).length;
+
+  return `
+  <header class="appbar"><div class="wrap inner">
+    <button type="button" class="logo" data-home="1"><span class="mark"></span>Regulatory Radar</button>
+    <span class="chip solid">${tx(p.n)}</span>
+    <span class="grow"></span>
+    <button type="button" class="btn primary" data-modal="open">
+      ${state.q ? (L()==="de"?"Fragebogen anpassen":"Adjust questionnaire")
+                : (L()==="de"?"Genauer eingrenzen — 6 Fragen":"Narrow it down — 6 questions")}
+    </button>
+  </div></header>
+
+  <div class="wrap detail">
+    <button type="button" class="back" data-board="1">
+      ← ${L()==="de"?"Übersicht":"Overview"} · ${tx(t.n)}</button>
+
+    <div class="dhead">
+      <span class="row" style="gap:7px">
+        <button type="button" class="chip" data-topicjump="${t.id}">${tx(t.n)}</button>
+        ${f.condL ? `<span class="chip anno">${tx(f.condL)}</span>` : ""}
+      </span>
+      <h1>${tx(f.n)}</h1>
+      <span class="ref">${esc(f.ref)}</span>
+      <p class="about">${tx(f.about)}</p>
+      <div class="stats">
+        <div><b>${ups.length}</b><span class="lbl">${L()==="de"?"Updates gesamt":"Updates in total"}</span></div>
+        <div><b>${fresh}</b><span class="lbl">${L()==="de"?"letzte 30 Tage":"last 30 days"}</span></div>
+        <div><b>${ups[0].d}</b><span class="lbl">${L()==="de"?"letzte Änderung":"last change"}</span></div>
+        <div><b>${ups[ups.length-1].d}</b><span class="lbl">${L()==="de"?"ältester Eintrag":"oldest entry"}</span></div>
+      </div>
+    </div>
+
+    <div class="dcols">
+      <div>
+        <h2 style="margin:0 0 4px;font-size:16px;font-weight:600;letter-spacing:-.018em">
+          ${L()==="de"?"Alle Updates chronologisch":"All updates in chronological order"}</h2>
+        <p class="small muted" style="margin:0 0 14px;max-width:70ch">${L()==="de"
+          ? "Neueste zuerst. Jeder Eintrag verweist auf das Originaldokument der veröffentlichenden Stelle."
+          : "Newest first. Every entry links to the original document of the publishing body."}</p>
+        <div class="timeline">${ups.map(u => updateRow(u)).join("")}</div>
+      </div>
+
+      <aside>
+        <div class="sidebox">
+          <h3>${L()==="de"?"Auf einen Blick":"At a glance"}</h3>
+          <div class="sidelink" style="cursor:default"><span class="d">${L()==="de"?"Thema":"Topic"}</span>
+            <span class="grow" style="text-align:right">${tx(t.n)}</span></div>
+          <div class="sidelink" style="cursor:default"><span class="d">${L()==="de"?"Gilt für":"Applies to"}</span>
+            <span class="grow" style="text-align:right">${f.ents.length} ${L()==="de"?"Anbietertypen":"provider types"}</span></div>
+          <div class="sidelink" style="cursor:default"><span class="d">${L()==="de"?"Quellen":"Sources"}</span>
+            <span class="grow" style="text-align:right">${[...new Set(ups.map(u=>u.src))].length}</span></div>
+        </div>
+        ${siblings.length ? `<div class="sidebox">
+          <h3>${L()==="de"?"Weiteres zu diesem Thema":"More on this topic"}</h3>
+          ${siblings.map(x=>`<button type="button" class="sidelink" data-fw="${x.id}">
+            <span class="d">${x.u[0].d}</span><span class="grow">${tx(x.n)}</span></button>`).join("")}
+        </div>` : ""}
+      </aside>
+    </div>
+  </div>`;
+}
+
+function viewBoard(){
+  const p = PROVIDERS.find(x=>x.id===state.provider);
+  const list = visibleFrameworks();
+  const topics = topicsWithContent(list);
+  const shown = state.topics.length ? topics.filter(t=>state.topics.includes(t.id)) : topics;
+  const filters = activeFilters();
+  const totalU = list.reduce((n,f)=>n+f.u.length,0);
+
+  return `
+  <header class="appbar"><div class="wrap inner">
+    <button type="button" class="logo" data-home="1"><span class="mark"></span>Regulatory Radar</button>
+    <span class="chip solid">${tx(p.n)}</span>
+    <button type="button" class="btn sm ghost" data-home="1">${L()==="de"?"ändern":"change"}</button>
+    <span class="grow"></span>
+    <button type="button" class="btn primary" data-modal="open">
+      ${state.q ? (L()==="de"?"Fragebogen anpassen":"Adjust questionnaire")
+                : (L()==="de"?"Genauer eingrenzen — 6 Fragen":"Narrow it down — 6 questions")}
+    </button>
+  </div></header>
+
+  <div class="wrap board">
+    <div class="filterbar">
+      ${filters.length ? `
+        <span class="lbl">${L()==="de"?"Ihre Angaben":"Your answers"}</span>
+        ${filters.map(f=>`<span class="fchip">${esc(f.l)}
+          <button type="button" data-rmf="${f.k}:${f.v}" aria-label="${L()==="de"?"entfernen":"remove"}">×</button></span>`).join("")}
+        <button type="button" class="btn sm ghost" data-reset="1">${L()==="de"?"zurücksetzen":"reset"}</button>
+      ` : `
+        <span class="small muted">${L()==="de"
+          ? "Sie sehen alle Rahmenwerke für Ihren Anbietertyp. Beantworten Sie 6 kurze Fragen, um auf Ihr Haus einzugrenzen."
+          : "You are seeing all frameworks for your provider type. Answer 6 short questions to narrow this down to your firm."}</span>
+      `}
+      <span class="grow"></span>
+      <span class="lbl tnum">${list.length} ${L()==="de"?"Rahmenwerke":"frameworks"} · ${totalU} Updates</span>
+    </div>
+
+    <nav class="topicnav">
+      <button type="button" class="tnav" data-topic="ALL" aria-pressed="${state.topics.length===0}">
+        ${L()==="de"?"Alle Themen":"All topics"}<span class="n">${list.length}</span></button>
+      ${topics.map(t=>`<button type="button" class="tnav" data-topic="${t.id}" aria-pressed="${state.topics.includes(t.id)}">
+        ${tx(t.n)}<span class="n">${t.fws.length}</span></button>`).join("")}
+      <span class="lbl" style="align-self:center">${state.topics.length
+        ? (L()==="de" ? `${state.topics.length} von ${topics.length} ausgewählt`
+                      : `${state.topics.length} of ${topics.length} selected`)
+        : (L()==="de" ? "Mehrfachauswahl möglich" : "Multiple selection possible")}</span>
+    </nav>
+
+    ${shown.length ? shown.map(t=>`
+      <section class="topic" id="t-${t.id}">
+        <h2>${tx(t.n)}<span class="cnt">${t.fws.length} ${L()==="de"?"Rahmenwerke":"frameworks"}</span></h2>
+        <p>${tx(t.d)}</p>
+        ${t.fws.map(frameworkCard).join("")}
+      </section>`).join("")
+    : `<div class="empty">${L()==="de"
+        ? "Für diese Kombination aus Anbietertyp und Angaben sind keine Rahmenwerke hinterlegt. Setzen Sie einzelne Angaben zurück."
+        : "No frameworks are recorded for this combination of provider type and answers. Reset individual answers."}</div>`}
+  </div>`;
+}
+
+/* ============================================================
+   RENDER — FRAGEBOGEN-POPUP
+   ============================================================ */
+function viewModal(){
+  if (!state.modal) return "";
+  const i = state.step, q = QUESTIONS[i];
+  const draft = state.q || {};
+  const sel = draft[q.key];
+  const on = v => q.multi ? (sel||[]).includes(v) : sel===v;
+
+  // Live-Vorschau: wie viele Rahmenwerke blieben mit den bisherigen Angaben?
+  const backup = state.q; state.q = draft;
+  const cnt = visibleFrameworks().length;
+  state.q = backup;
+
+  return `<div class="scrim" data-modal="close">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="${L()==="de"?"Fragebogen":"Questionnaire"}"
+         data-stop="1">
+      <div class="mhead">
+        <div class="progress">${QUESTIONS.map((_,k)=>
+          `<i class="${k<i?"done":(k===i?"now":"")}"></i>`).join("")}</div>
+        <div class="row">
+          <span class="lbl">${L()==="de"?`Frage ${i+1} von ${QUESTIONS.length}`:`Question ${i+1} of ${QUESTIONS.length}`}</span>
+          <span class="grow"></span>
+          <button type="button" class="lbl" data-modal="close">${L()==="de"?"schließen ×":"close ×"}</button>
+        </div>
+        <h2>${tx(q.q)}</h2>
+      </div>
+      <div class="mbody">
+        <div class="opts ${q.o.length>4?"two":""}">
+          ${q.o.map(o=>`<button type="button" class="opt ${q.multi?"":"radio"}"
+             data-ans="${q.key}" data-v="${o.v}" data-multi="${!!q.multi}" aria-pressed="${on(o.v)}">
+            <span class="tick"></span><span>${tx(o.l)}</span></button>`).join("")}
+        </div>
+        <div class="why"><b>${L()==="de"?"Warum wir das fragen":"Why we ask"}</b>${tx(q.why)}</div>
+      </div>
+      <div class="mfoot">
+        <button type="button" class="btn sm" data-step="back" ${i===0?"disabled style=opacity:.4":""}>
+          ${L()==="de"?"Zurück":"Back"}</button>
+        <span class="livecount">${cnt} ${L()==="de"?"Rahmenwerke passen":"frameworks match"}</span>
+        <span class="grow"></span>
+        <button type="button" class="btn sm ghost" data-step="skip">${L()==="de"?"überspringen":"skip"}</button>
+        <button type="button" class="btn primary sm" data-step="${i===QUESTIONS.length-1?"done":"next"}">
+          ${i===QUESTIONS.length-1?(L()==="de"?"Filter anwenden":"Apply filter"):(L()==="de"?"Weiter":"Next")}</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+function render(){
+  document.documentElement.lang = L();
+  document.getElementById("proto-txt").textContent = L()==="de"
+    ? "Wireframe mit Beispieldaten — Dokumente, Daten und Zusammenfassungen sind erfunden und keine regulatorische Auskunft."
+    : "Wireframe with sample data — documents, dates and summaries are fabricated and are not regulatory advice.";
+  document.getElementById("app").innerHTML =
+    !state.provider ? viewHero() : (state.fw ? viewDetail() : viewBoard());
+  document.getElementById("modal-root").innerHTML = viewModal();
+}
+
+/* ============================================================
+   INTERAKTION
+   ============================================================ */
+document.addEventListener("click", e => {
+  const t = e.target;
+
+  const lang = t.closest("[data-lang]");
+  if (lang){
+    state.lang = lang.dataset.lang;
+    document.querySelectorAll("[data-lang]").forEach(b =>
+      b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang)));
+    return render();
+  }
+
+  if (t.closest("[data-noop]")){ e.preventDefault(); return; }
+
+  const pick = t.closest("[data-pick]");
+  if (pick){ state.provider = pick.dataset.pick; state.topics = []; state.fw = null;
+    window.scrollTo({top:0}); return render(); }
+
+  if (t.closest("[data-home]")){
+    state.provider = null; state.q = null; state.fw = null; state.topics = [];
+    window.scrollTo({top:0}); return render(); }
+
+  if (t.closest("[data-board]")){ state.fw = null; window.scrollTo({top:0}); return render(); }
+
+  const jump = t.closest("[data-topicjump]");
+  if (jump){ state.fw = null; state.topics = [jump.dataset.topicjump];
+    window.scrollTo({top:0}); return render(); }
+
+  const topic = t.closest("[data-topic]");
+  if (topic){
+    const id = topic.dataset.topic;
+    if (id === "ALL") state.topics = [];
+    else {
+      const at = state.topics.indexOf(id);
+      at >= 0 ? state.topics.splice(at,1) : state.topics.push(id);
+    }
+    return render();
+  }
+
+  const fw = t.closest("[data-fw]");
+  if (fw){ state.fw = fw.dataset.fw; window.scrollTo({top:0}); return render(); }
+
+  const rm = t.closest("[data-rmf]");
+  if (rm){
+    const [k,v] = rm.dataset.rmf.split(":");
+    const cur = state.q[k];
+    if (Array.isArray(cur)) state.q[k] = cur.filter(x => x !== v);
+    else state.q[k] = null;
+    if (!activeFilters().length) state.q = null;
+    return render();
+  }
+  if (t.closest("[data-reset]")){ state.q = null; return render(); }
+
+  const md = t.closest("[data-modal]");
+  if (md){
+    if (md.dataset.modal === "open"){ state.modal = true; state.step = 0; state.q = state.q || {}; }
+    else if (md === t || t.closest(".scrim") === md){   // nur Klick auf den Hintergrund
+      if (!t.closest("[data-stop]")) { state.modal = false; if (!activeFilters().length) state.q = null; }
+    }
+    return render();
+  }
+
+  const ans = t.closest("[data-ans]");
+  if (ans){
+    const k = ans.dataset.ans, v = ans.dataset.v;
+    state.q = state.q || {};
+    if (ans.dataset.multi === "true"){
+      const arr = state.q[k] || (state.q[k] = []);
+      const at = arr.indexOf(v);
+      at >= 0 ? arr.splice(at,1) : arr.push(v);
+    } else {
+      state.q[k] = state.q[k] === v ? null : v;
+    }
+    return render();
+  }
+
+  const step = t.closest("[data-step]");
+  if (step){
+    const a = step.dataset.step;
+    if (a === "back" && state.step > 0) state.step--;
+    else if ((a === "next" || a === "skip") && state.step < QUESTIONS.length - 1) state.step++;
+    else if (a === "done" || a === "skip"){
+      state.modal = false;
+      if (!activeFilters().length) state.q = null;
+      window.scrollTo({top:0,behavior:"smooth"});
+    }
+    return render();
+  }
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && state.modal){
+    state.modal = false;
+    if (!activeFilters().length) state.q = null;
+    render();
+  }
+});
+
+render();
+</script>
