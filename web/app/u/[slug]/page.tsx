@@ -70,7 +70,9 @@ export default async function UpdatePage(
       />
       <Chrome />
 
-      <main className="mx-auto max-w-3xl px-4 pb-24 sm:px-6">
+      <main
+        className={`mx-auto px-4 pb-24 sm:px-6 ${u.adv?.length ? "max-w-6xl" : "max-w-3xl"}`}
+      >
         <Link
           href={backHref}
           className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900"
@@ -79,7 +81,14 @@ export default async function UpdatePage(
           Alle Updates zu {fw.n.de}
         </Link>
 
-        <article className="mt-4">
+        <div
+          className={
+            u.adv?.length
+              ? "mt-4 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_310px]"
+              : "mt-4"
+          }
+        >
+        <article>
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
             <div className="flex flex-wrap items-center gap-2">
               {t && (
@@ -186,6 +195,46 @@ export default async function UpdatePage(
             </section>
           )}
         </article>
+
+        {u.adv?.length ? (
+          <aside className="lg:sticky lg:top-24">
+            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+              <h2 className="text-sm font-semibold tracking-tight">
+                So kommentieren die Big 4
+              </h2>
+              <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                Fachbeiträge der Beratungsgesellschaften zu dieser Meldung
+              </p>
+              <ul className="mt-3 space-y-2">
+                {u.adv.map((a) => (
+                  <li key={a.url}>
+                    <a
+                      href={a.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block rounded-xl border border-slate-200 p-3 transition-colors hover:border-slate-900"
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
+                          {a.f}
+                        </span>
+                        {a.d && <span className="num text-xs text-slate-400">{a.d}</span>}
+                      </div>
+                      <p className="mt-2 text-xs font-medium leading-snug text-slate-900">
+                        {a.ti}{" "}
+                        <span aria-hidden className="text-slate-400 group-hover:text-slate-900">↗</span>
+                      </p>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 border-t border-slate-100 pt-2.5 text-[0.6875rem] leading-relaxed text-slate-400">
+                Externe Inhalte, automatisch zugeordnet, keine Empfehlung.
+              </p>
+            </div>
+          </aside>
+        ) : null}
+        </div>
       </main>
       <Footer />
     </>

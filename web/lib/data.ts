@@ -7,11 +7,15 @@ export type Txt = { de: string; en: string };
 export interface Provider { id: string; n: Txt; s: Txt; tags: string[] }
 export interface Topic { id: string; n: Txt; d: Txt }
 export interface Cond { k: string; any: string[] }
+/** Fachbeitrag einer Beratungsgesellschaft (Big 4 u. a.) zu einem Update. */
+export interface Advisory { f: string; ti: string; url: string; d?: string }
 export interface Update {
   d: string; t: Txt; src: string; ti: Txt; s: Txt;
   refnum?: string; deadline?: string; eff?: string;
   /** Link zur Primärquelle. Gesetzt bei echten, gescrapten Updates. */
   url?: string;
+  /** Big-4-Fachbeiträge, die genau diese Meldung kommentieren (Scraper). */
+  adv?: Advisory[];
 }
 export interface Framework {
   id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE";

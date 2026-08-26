@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-08-26T13:37:04Z",
+  "sources": [
+    {
+      "id": "eurlex",
+      "name": "EUR-Lex / CELLAR",
+      "authority": "Amt für Veröffentlichungen der EU",
+      "jurisdiction": "EU",
+      "access": "API",
+      "url": "https://eur-lex.europa.eu/"
+    },
+    {
+      "id": "gii",
+      "name": "Gesetze im Internet",
+      "authority": "Bundesministerium der Justiz",
+      "jurisdiction": "DE",
+      "access": "XML",
+      "url": "https://www.gesetze-im-internet.de/"
+    },
+    {
+      "id": "dip",
+      "name": "DIP Bundestag/Bundesrat",
+      "authority": "Deutscher Bundestag",
+      "jurisdiction": "DE",
+      "access": "API",
+      "url": "https://dip.bundestag.de/"
+    },
+    {
+      "id": "bgbl",
+      "name": "Bundesgesetzblatt (recht.bund.de)",
+      "authority": "Bundesamt für Justiz",
+      "jurisdiction": "DE",
+      "access": "RSS",
+      "url": "https://www.recht.bund.de/"
+    },
+    {
+      "id": "rii",
+      "name": "Rechtsprechung im Internet",
+      "authority": "Bundesgerichte",
+      "jurisdiction": "DE",
+      "access": "XML",
+      "url": "https://www.rechtsprechung-im-internet.de/"
+    },
+    {
+      "id": "amla",
+      "name": "AMLA",
+      "authority": "AMLA",
+      "jurisdiction": "EU",
+      "access": "SITEMAP",
+      "url": "https://www.amla.europa.eu/"
+    },
+    {
+      "id": "bafin",
+      "name": "BaFin",
+      "authority": "BaFin",
+      "jurisdiction": "DE",
+      "access": "RSS",
+      "url": "https://www.bafin.de/"
+    },
+    {
+      "id": "eba",
+      "name": "EBA",
+      "authority": "EBA",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.eba.europa.eu/"
+    },
+    {
+      "id": "esma",
+      "name": "ESMA",
+      "authority": "ESMA",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.esma.europa.eu/"
+    },
+    {
+      "id": "ecb_ssm",
+      "name": "EZB Bankenaufsicht (SSM)",
+      "authority": "EZB",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.bankingsupervision.europa.eu/"
+    },
+    {
+      "id": "bundesbank",
+      "name": "Deutsche Bundesbank",
+      "authority": "Bundesbank",
+      "jurisdiction": "DE",
+      "access": "RSS",
+      "url": "https://www.bundesbank.de/"
+    },
+    {
+      "id": "eiopa",
+      "name": "EIOPA",
+      "authority": "EIOPA",
+      "jurisdiction": "EU",
+      "access": "SITEMAP",
+      "url": "https://www.eiopa.europa.eu/"
+    },
+    {
+      "id": "srb",
+      "name": "Single Resolution Board",
+      "authority": "SRB",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.srb.europa.eu/"
+    },
+    {
+      "id": "curia",
+      "name": "EuGH (curia, Pressemitteilungen)",
+      "authority": "EuGH",
+      "jurisdiction": "EU",
+      "access": "HTML",
+      "url": "https://curia.europa.eu/"
+    },
+    {
+      "id": "bmf",
+      "name": "Bundesministerium der Finanzen",
+      "authority": "BMF",
+      "jurisdiction": "DE",
+      "access": "SITEMAP",
+      "url": "https://www.bundesfinanzministerium.de/"
+    },
+    {
+      "id": "hys",
+      "name": "EU-Kommission „Have Your Say\"",
+      "authority": "Europäische Kommission",
+      "jurisdiction": "EU",
+      "access": "API",
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/"
+    },
+    {
+      "id": "eba_qna",
+      "name": "EBA Single Rulebook Q&A",
+      "authority": "EBA",
+      "jurisdiction": "EU",
+      "access": "HTML",
+      "url": "https://www.eba.europa.eu/single-rule-book-qa"
+    },
+    {
+      "id": "esma_library",
+      "name": "ESMA Library (Register/Dokumente)",
+      "authority": "ESMA",
+      "jurisdiction": "EU",
+      "access": "HTML",
+      "url": "https://www.esma.europa.eu/databases-library/esma-library"
+    },
+    {
+      "id": "bsi",
+      "name": "BSI (Presse-/Kurzmitteilungen)",
+      "authority": "BSI",
+      "jurisdiction": "DE",
+      "access": "RSS",
+      "url": "https://www.bsi.bund.de/"
+    },
+    {
+      "id": "edpb",
+      "name": "Europäischer Datenschutzausschuss (EDPB)",
+      "authority": "EDPB",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.edpb.europa.eu/"
+    },
+    {
+      "id": "bfdi",
+      "name": "BfDI",
+      "authority": "BfDI",
+      "jurisdiction": "DE",
+      "access": "RSS",
+      "url": "https://www.bfdi.bund.de/"
+    },
+    {
+      "id": "fiu",
+      "name": "FIU Deutschland (Fachmeldungen)",
+      "authority": "FIU",
+      "jurisdiction": "DE",
+      "access": "RSS",
+      "url": "https://www.zoll.de/DE/FIU/fiu_node.html"
+    },
+    {
+      "id": "esrb",
+      "name": "European Systemic Risk Board",
+      "authority": "ESRB",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.esrb.europa.eu/"
+    },
+    {
+      "id": "bis",
+      "name": "Basler Ausschuss (BIS/BCBS)",
+      "authority": "BCBS",
+      "jurisdiction": "INT",
+      "access": "RSS",
+      "url": "https://www.bis.org/bcbs/"
+    },
+    {
+      "id": "fsb",
+      "name": "Financial Stability Board",
+      "authority": "FSB",
+      "jurisdiction": "INT",
+      "access": "RSS",
+      "url": "https://www.fsb.org/"
+    },
+    {
+      "id": "iosco",
+      "name": "IOSCO (Public Reports)",
+      "authority": "IOSCO",
+      "jurisdiction": "INT",
+      "access": "HTML",
+      "url": "https://www.iosco.org/"
+    }
+  ]
+}

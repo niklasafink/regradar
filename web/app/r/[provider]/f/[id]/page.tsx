@@ -25,6 +25,11 @@ export default function FrameworkDetail() {
   const ups = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
   const fresh = ups.filter((u) => daysAgo(u.d) <= 30).length;
   const sources = [...new Set(ups.map((u) => u.src))];
+  // Big-4-Fachbeiträge aller Updates, dedupliziert für die Seitenleiste.
+  const advisories = ups
+    .flatMap((u) => u.adv ?? [])
+    .filter((a, i, arr) => arr.findIndex((x) => x.url === a.url) === i)
+    .slice(0, 6);
   const siblings = visibleFrameworks(provider, null)
     .filter((x) => x.topic === f.topic && x.id !== f.id);
 
@@ -188,6 +193,27 @@ export default function FrameworkDetail() {
                       {lang === "de" ? "Beispieldatensatz" : "Sample record"}: {u.src}
                     </a>
                   )}
+                  {u.adv?.length ? (
+                    <div className="mt-3 border-t border-slate-100 pt-2.5">
+                      <span className="text-[0.6875rem] font-medium text-slate-400">
+                        {lang === "de" ? "So kommentieren die Big 4:" : "Big 4 commentary:"}
+                      </span>
+                      <div className="mt-1.5 flex flex-wrap gap-1.5">
+                        {u.adv.map((a) => (
+                          <a
+                            key={a.url}
+                            href={a.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={a.ti}
+                            className="inline-flex items-center gap-1 rounded-full border border-slate-200 px-2.5 py-0.5 text-xs font-medium text-slate-600 transition-colors hover:border-slate-900 hover:text-slate-900"
+                          >
+                            {a.f} ↗
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                   </article>
                 </div>
               );
@@ -225,6 +251,51 @@ export default function FrameworkDetail() {
                 </div>
               </dl>
             </div>
+
+            {advisories.length > 0 && (
+              <div className="rounded-2xl border border-slate-200 bg-white p-4">
+                <h2 className="text-sm font-semibold tracking-tight">
+                  {lang === "de" ? "So kommentieren die Big 4" : "Big 4 commentary"}
+                </h2>
+                <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                  {lang === "de"
+                    ? "Fachbeiträge der Beratungsgesellschaften zu diesem Rahmenwerk"
+                    : "Advisory-firm articles covering this framework"}
+                </p>
+                <ul className="mt-3 space-y-2">
+                  {advisories.map((a) => (
+                    <li key={a.url}>
+                      <a
+                        href={a.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block rounded-xl border border-slate-200 p-3 transition-colors hover:border-slate-900"
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
+                            {a.f}
+                          </span>
+                          {a.d && (
+                            <span className="num text-xs text-slate-400">
+                              {lang === "de" ? a.d : fmtDate(lang, a.d)}
+                            </span>
+                          )}
+                        </div>
+                        <p className="mt-2 text-xs font-medium leading-snug text-slate-900">
+                          {a.ti}{" "}
+                          <span aria-hidden className="text-slate-400 group-hover:text-slate-900">↗</span>
+                        </p>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 border-t border-slate-100 pt-2.5 text-[0.6875rem] leading-relaxed text-slate-400">
+                  {lang === "de"
+                    ? "Externe Inhalte, automatisch zugeordnet, keine Empfehlung."
+                    : "External content, matched automatically, not an endorsement."}
+                </p>
+              </div>
+            )}
 
             {siblings.length > 0 && (
               <div className="rounded-2xl border border-slate-200 bg-white p-4">
