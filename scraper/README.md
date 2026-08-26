@@ -15,6 +15,7 @@ python3 -m regradar run all --no-fetch   # nur Discovery, keine Inhalte
 python3 -m regradar sources       # Quellen-Status
 python3 -m regradar report 30     # neueste Regulatory Events
 python3 -m regradar export data/export.json
+python3 -m regradar big4         # Big-4-Fachbeiträge einsammeln (PwC, KPMG, Deloitte …)
 python3 -m regradar export-web   # schreibt web/lib/live.json für das Frontend
 ```
 
@@ -33,7 +34,21 @@ eintragen (wird von der CLI automatisch geladen) oder exportieren (optional
 werden in der Tabelle `llm_relevance` gecacht, ohne Key läuft der Export
 unverändert nur mit der Regex-Regel. Die App mischt die Live-Updates in die
 bestehenden Zeitleisten (`web/lib/live.ts`); Aktualisierung = `run all` +
-`export-web`, danach lädt Next.js die neue JSON automatisch.
+`big4` + `export-web`, danach lädt Next.js die neue JSON automatisch.
+
+**Big-4-Kommentare** (`regradar/big4.py`, Befehl `big4`): sammelt Fachbeiträge
+von PwC (fünf WordPress-Blogs per RSS), PwC Legal (HTML-Listing), KPMG
+Klardenker Financial-Services-Hub (HTML-Listing), Deloitte Legal (Sitemap
+`sitemap_dl_de.xml` + og:title/description der Artikelseiten, Fetch-Budget
+15/Lauf) und dem Blog „Wald vor lauter Normen" (RSS) in die Tabelle
+`big4_articles`. Ein Regex-Vorfilter (dieselben `FRAMEWORK_RULES`) ordnet
+jeden Artikel einem Rahmenwerk zu; beim `export-web` entscheidet dann das
+LLM pro Behörden-Update, welche Artikel genau diese Meldung kommentieren
+(Cache in `big4_matches`, ohne `OPENROUTER_API_KEY` keine Zuordnung). Die
+Treffer landen als `adv`-Feld am Update in `live.json` und erscheinen im
+Frontend auf Update- und Rahmenwerk-Detailseiten („So kommentieren die
+Big 4"). EY pflegt kein scrapebares deutsches Regulatory-Angebot und fehlt
+deshalb bewusst.
 
 Für **DIP** (Bundestag) den frei publizierten API-Key von
 [dip.bundestag.de](https://dip.bundestag.de) (Hilfe → DIP-API) setzen:

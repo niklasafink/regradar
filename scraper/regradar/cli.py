@@ -8,6 +8,8 @@ Befehle:
   report [N]                 die N neuesten Regulatory Events (Standard 25)
   export [pfad]              Events + Dokumente als JSON exportieren
   export-web [pfad]          Live-Updates für das Frontend (web/lib/live.json)
+  big4                       Fachbeiträge der Big 4 (PwC, KPMG, Deloitte Legal
+                             u. a.) einsammeln; Zuordnung läuft im export-web
 """
 import json
 import os
@@ -146,11 +148,18 @@ def main(argv=None):
             cmd_report(conn, int(argv[1]) if len(argv) > 1 else 25)
         elif cmd == "export":
             cmd_export(conn, argv[1] if len(argv) > 1 else "data/export.json")
+        elif cmd == "big4":
+            from .big4 import scrape
+            stats = scrape(conn)
+            print("Big4: {pwc_blogs} PwC-Blog, {pwc_legal} PwC-Legal, {kpmg} KPMG, "
+                  "{deloitte} Deloitte, {wvln} WvlN neu – {total} Artikel gesamt, "
+                  "{framework_mapped} mit Rahmenwerk-Zuordnung".format(**stats))
         elif cmd == "export-web":
             from .webexport import export_web
             info = export_web(conn, argv[1] if len(argv) > 1 else None)
-            print("Web-Export: {updates} Updates in {frameworks} Rahmenwerken "
-                  "(aus {scanned} Dokumenten, LLM-Filter {llm}) → {path}".format(**info))
+            print("Web-Export: {updates} Updates in {frameworks} Rahmenwerken, "
+                  "{advisory} Big4-Verweise (aus {scanned} Dokumenten, "
+                  "LLM-Filter {llm}) → {path}".format(**info))
         else:
             print(__doc__)
             return 1

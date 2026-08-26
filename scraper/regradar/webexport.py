@@ -16,6 +16,8 @@ WEB_LIVE_PATH = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
     "web", "lib", "live.json")
 
+WEB_SOURCES_PATH = os.path.join(os.path.dirname(WEB_LIVE_PATH), "sources.json")
+
 MAX_PER_FRAMEWORK = 6
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
@@ -115,8 +117,38 @@ def _clean(text: Optional[str], limit: int = 280) -> str:
     return text
 
 
+def export_sources(path: Optional[str] = None) -> dict:
+    """Schreibt die angebundenen Quellen (Registry) als web/lib/sources.json.
+
+    Das Frontend (Footer + /quellen) rendert daraus die Quellenliste; der
+    Export läuft bei jedem `export` mit, damit die Liste aktuell bleibt.
+    """
+    from .db import utcnow
+    from .registry import SOURCES
+
+    path = path or WEB_SOURCES_PATH
+    sources = [
+        {
+            "id": s["source_id"],
+            "name": s["name"],
+            "authority": s["authority"],
+            "jurisdiction": s["jurisdiction"],
+            "access": s["discovery_type"],
+            "url": s["base_url"],
+        }
+        for s in SOURCES
+        if s.get("enabled")
+    ]
+    payload = {"generated_at": utcnow(), "sources": sources}
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    return {"path": path, "sources": len(sources)}
+
+
 def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     path = path or WEB_LIVE_PATH
+    sources_info = export_sources()
     rows = conn.execute(
         """SELECT document_id, source_id, external_id, authority, title, document_type,
                   status, publication_date, consultation_deadline, canonical_url, summary,
@@ -147,8 +179,11 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         (r["document_id"], "{} – {}".format(_clean(r["title"], 200), _clean(r["summary"])))
         for r, _, _ in candidates])
 
+    from .big4 import related_articles
+
     updates = {}
     matched = 0
+    advisory = 0
     for r, fw_id, date in candidates:
         if not relevance.get(r["document_id"], True):
             continue
@@ -173,6 +208,12 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         ref = r["reference_number"]
         if ref and len(ref) <= 40 and not ref.startswith("/"):
             entry["refnum"] = ref
+        # Big-4-Fachbeiträge, die genau diese Meldung kommentieren (LLM-geprüft).
+        adv = related_articles(
+            conn, r["document_id"], fw_id, "{} – {}".format(title, summary))
+        if adv:
+            entry["adv"] = adv
+            advisory += len(adv)
         bucket.append(entry)
         matched += 1
 
@@ -182,4 +223,6 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     return {"path": path, "frameworks": len(updates), "updates": matched,
-            "scanned": len(rows), "llm": "aktiv" if api_key() else "inaktiv (kein OPENROUTER_API_KEY)"}
+            "advisory": advisory,
+            "scanned": len(rows), "sources": sources_info["sources"],
+            "llm": "aktiv" if api_key() else "inaktiv (kein OPENROUTER_API_KEY)"}
