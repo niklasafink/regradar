@@ -1,0 +1,2 @@
+mkdir -p logs
+ls . >/dev/null 2>&1 && echo "DEBUG: Verzeichnis lesbar: $(ls 

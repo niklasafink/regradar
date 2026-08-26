@@ -1,0 +1,9 @@
+/bin/zsh: can't open input file: /Users/niklasfink/Documents/CC Projekte/Regulatory Radar/scraper/run_hourly.sh
+=== Lauf gestartet: 2026-08-26 15:51:04 ===
+/Applications/Xcode.app/Contents/Developer/usr/bin/python3: No module named regradar
+=== Lauf gestartet: 2026-08-26 15:51:41 ===
+/Applications/Xcode.app/Contents/Developer/usr/bin/python3: No module named regradar
+/Users/niklasfink/.local/bin/regradar_hourly.sh:14: unmatched "
+DEBUG: scraper-Verzeichnis NICHT lesbar (macOS-Datenschutz/TCC)
+=== Lauf gestartet: 2026-08-26 15:52:50 ===
+/Applications/Xcode.app/Contents/Developer/usr/bin/python3: No module named regradar
