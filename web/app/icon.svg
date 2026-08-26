@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Regulatory Radar Favicon: dunkler Radarschirm, Sweep und blauer Blip ("Neu"-Blau) -->
+  <defs>
+    <linearGradient id="sweep" x1="32" y1="32" x2="50" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.28"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="32" fill="#0f172a"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+  <circle cx="32" cy="32" r="16.5" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2"/>
+  <circle cx="32" cy="32" r="9" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2"/>
+  <path d="M32 32 L50.4 13.6 A26 26 0 0 1 58 32 Z" fill="url(#sweep)"/>
+  <line x1="32" y1="32" x2="50.4" y2="13.6" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="3.4" fill="#ffffff"/>
+  <circle cx="45" cy="24.5" r="5" fill="#2563eb" stroke="#0f172a" stroke-width="1.6"/>
+</svg>
