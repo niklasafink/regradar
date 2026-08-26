@@ -24,7 +24,14 @@ export interface Framework {
 export interface Option { v: string; l: Txt }
 export interface Question { key: string; multi: boolean; q: Txt; why: Txt; o: Option[] }
 
-export const TODAY = new Date(2026, 7, 24);
+// "Heute" wird aus dem Zeitstempel des letzten Scraper-Exports abgeleitet:
+// deterministisch für Server- und Client-Rendering, aktualisiert sich mit
+// jedem täglichen Deploy.
+import liveJson from "./live.json";
+
+const [gy, gm, gd] = (liveJson.generated_at ?? "2026-08-24")
+  .slice(0, 10).split("-").map(Number);
+export const TODAY = new Date(gy, gm - 1, gd);
 
 export const PROVIDERS: Provider[] = [
   { id:"CI", n:{de:"Bank / Kreditinstitut",en:"Bank / credit institution"},
@@ -77,7 +84,13 @@ export const TOPICS: Topic[] = [
        en:"Reporting taxonomies, submission deadlines, statistical returns."} },
   { id:"INSU", n:{de:"Versicherungsaufsicht",en:"Insurance supervision"},
     d:{de:"Solvenzkapital, Governance, Vertrieb, Berichterstattung.",
-       en:"Solvency capital, governance, distribution, reporting."} }
+       en:"Solvency capital, governance, distribution, reporting."} },
+  { id:"DATA", n:{de:"Datenschutz & Digitales",en:"Data protection & digital"},
+    d:{de:"Personenbezogene Daten, digitale Identität, Einsatz von KI-Systemen.",
+       en:"Personal data, digital identity, use of AI systems."} },
+  { id:"CONS", n:{de:"Verbraucherschutz",en:"Consumer protection"},
+    d:{de:"Verbraucherdarlehen, vorvertragliche Information, faire Vertragsbedingungen.",
+       en:"Consumer credit, pre-contractual information, fair contract terms."} }
 ];
 
 export const FRAMEWORKS: Framework[] = [
@@ -449,7 +462,43 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"Konsultation zur Kleinanlegerstrategie und zum Provisionsverbot",en:"Consultation on the retail investment strategy and inducement ban"},
        s:{de:"Entwurf sieht ein Provisionsverbot im beratungsfreien Geschäft und einen einheitlichen Preis-Leistungs-Test vor.",
           en:"Draft provides for an inducement ban in execution-only business and a common value-for-money test."}}
-    ]}
+    ]},
+
+  /* Die folgenden Rahmenwerke starten ohne Beispieldaten; ihre Updates
+     kommen ausschließlich aus den Primärquellen (EDPB, BfDI, BSI, EU u. a.)
+     über den Scraper-Export in live.json. */
+
+  { id:"dsgvo", jur:"EU+DE",
+    about:{de:"Das allgemeine Datenschutzrecht für die Verarbeitung personenbezogener Daten: Rechtsgrundlagen, Betroffenenrechte, Auftragsverarbeitung, Drittlandtransfers und Meldepflichten bei Datenpannen.",en:"General data protection law for processing personal data: legal bases, data subject rights, processors, third-country transfers and breach notification duties."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"DSGVO / BDSG: Datenschutz",en:"GDPR / BDSG: data protection"},
+    ref:"VO (EU) 2016/679, BDSG", cond:null,
+    u:[]},
+
+  { id:"aiact", jur:"EU",
+    about:{de:"Risikobasierte Regeln für den Einsatz von KI-Systemen: verbotene Praktiken, Pflichten für Hochrisiko-Systeme etwa in der Kreditwürdigkeitsprüfung, Transparenzpflichten und Vorgaben für KI-Modelle mit allgemeinem Verwendungszweck.",en:"Risk-based rules for the use of AI systems: prohibited practices, duties for high-risk systems such as creditworthiness assessment, transparency duties and requirements for general-purpose AI models."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"KI-Verordnung",en:"AI Act"},
+    ref:"VO (EU) 2024/1689", cond:null,
+    u:[]},
+
+  { id:"eidas2", jur:"EU",
+    about:{de:"Der europäische Rahmen für digitale Identität und Vertrauensdienste: Die EUDI-Wallet soll Identifizierung und Signaturen EU-weit ermöglichen; Banken und Zahlungsdienstleister müssen sie zur starken Kundenauthentifizierung akzeptieren.",en:"The European framework for digital identity and trust services: the EUDI wallet is to enable identification and signatures EU-wide; banks and payment providers must accept it for strong customer authentication."}, topic:"DATA", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"eIDAS 2: Digitale Identität",en:"eIDAS 2: digital identity"},
+    ref:"VO (EU) 2024/1183", cond:null,
+    u:[]},
+
+  { id:"csrd", jur:"EU+DE",
+    about:{de:"Pflicht zur Nachhaltigkeitsberichterstattung im Lagebericht nach den ESRS-Standards samt Prüfungspflicht; Umfang und Zeitplan werden derzeit durch das Omnibus-Paket der EU-Kommission überarbeitet.",en:"Mandatory sustainability reporting in the management report under the ESRS standards, subject to assurance; scope and timeline are currently being revised through the Commission's omnibus package."}, topic:"ESG", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"CSRD: Nachhaltigkeitsberichterstattung",en:"CSRD: sustainability reporting"},
+    ref:"RL (EU) 2022/2464, ESRS", cond:{k:"cross",any:["esg"]},
+    condL:{de:"nur bei nachhaltigkeitsbezogenen Angaben",en:"only where sustainability disclosures are made"},
+    u:[]},
+
+  { id:"consumer", jur:"EU+DE",
+    about:{de:"Verbraucherschutz im Finanzgeschäft: Verbraucherdarlehen und die neue Verbraucherkreditrichtlinie CCD II, vorvertragliche Informationspflichten, Widerrufsrechte und AGB-Kontrolle.",en:"Consumer protection in finance: consumer credit and the new Consumer Credit Directive CCD II, pre-contractual information duties, withdrawal rights and review of standard terms."}, topic:"CONS", ents:["CI","PI","OTH"],
+    n:{de:"Verbraucherschutz im Finanzgeschäft",en:"Consumer protection in finance"},
+    ref:"RL (EU) 2023/2225 (CCD II), BGB", cond:{k:"cli",any:["retail"]},
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[]}
 ];
 
 /** Zwei kurze Absätze je Rahmenwerk für die aufklappbare Sektion auf der Detailseite. */
@@ -579,6 +628,31 @@ export const ABOUT_LONG: Record<string, [Txt, Txt]> = {
      en:"The IDD harmonises insurance distribution in the EU: intermediaries and insurers must act honestly, fairly and in the customer's best interest, assess demands and needs, and provide a product information document before conclusion."},
     {de:"Für Versicherungsanlageprodukte gelten zusätzlich MiFID-ähnliche Regeln zu Interessenkonflikten, Zuwendungen und Geeignetheit; die Produktfreigabe verlangt einen definierten Zielmarkt. Die EU-Kleinanlegerstrategie stellt Provisionsregeln und Preis-Leistungs-Vorgaben derzeit auf den Prüfstand.",
      en:"For insurance-based investment products, MiFID-style rules on conflicts of interest, inducements and suitability apply in addition; product approval requires a defined target market. The EU retail investment strategy is currently re-examining commission rules and value-for-money requirements."}],
+  dsgvo: [
+    {de:"Die DSGVO regelt jede Verarbeitung personenbezogener Daten: Sie verlangt eine Rechtsgrundlage, Zweckbindung und Datenminimierung, sichert Betroffenenrechte wie Auskunft und Löschung und verpflichtet zu technischen und organisatorischen Schutzmaßnahmen. Datenpannen sind binnen 72 Stunden der Aufsichtsbehörde zu melden.",
+     en:"The GDPR governs any processing of personal data: it requires a legal basis, purpose limitation and data minimisation, secures data subject rights such as access and erasure, and mandates technical and organisational safeguards. Data breaches must be reported to the supervisory authority within 72 hours."},
+    {de:"Für Finanzunternehmen sind vor allem Auftragsverarbeitung bei IT-Dienstleistern, Drittlandtransfers, Scoring und automatisierte Einzelentscheidungen sowie das Zusammenspiel mit aufsichtsrechtlichen Aufbewahrungspflichten relevant. Leitlinien des EDSA und Positionen von BfDI und Landesbehörden konkretisieren die Anforderungen laufend.",
+     en:"For financial firms, the key issues are processing by IT service providers, third-country transfers, scoring and automated individual decisions, and the interplay with regulatory retention duties. EDPB guidelines and positions of the BfDI and state authorities continuously flesh out the requirements."}],
+  aiact: [
+    {de:"Die KI-Verordnung folgt einem risikobasierten Ansatz: Bestimmte Praktiken sind verboten, Hochrisiko-Systeme unterliegen Anforderungen an Datenqualität, Dokumentation, menschliche Aufsicht und Robustheit, und für generative KI-Modelle gelten eigene Transparenz- und Urheberrechtspflichten. Die Pflichten greifen gestaffelt bis 2027.",
+     en:"The AI Act follows a risk-based approach: certain practices are banned, high-risk systems face requirements on data quality, documentation, human oversight and robustness, and general-purpose AI models carry their own transparency and copyright duties. Obligations phase in until 2027."},
+    {de:"Im Finanzsektor gelten insbesondere Kreditwürdigkeitsprüfung und Risikobewertung bei Lebens- und Krankenversicherungen als Hochrisiko-Anwendungen. Betreiber müssen KI-Kompetenz sicherstellen und ihre Systeme inventarisieren; die Aufsicht über Finanzunternehmen soll weitgehend bei den Finanzaufsichtsbehörden liegen.",
+     en:"In finance, creditworthiness assessment and risk pricing in life and health insurance count as high-risk use cases. Deployers must ensure AI literacy and inventory their systems; supervision of financial entities is expected to sit largely with the financial supervisors."}],
+  eidas2: [
+    {de:"eIDAS 2 verpflichtet die Mitgliedstaaten, ihren Bürgerinnen und Bürgern eine europäische Digitale-Identität-Wallet (EUDI-Wallet) anzubieten, mit der man sich EU-weit ausweisen, Nachweise teilen und qualifiziert elektronisch signieren kann. Durchführungsrechtsakte legen die technischen Standards fest.",
+     en:"eIDAS 2 obliges member states to offer their citizens a European Digital Identity Wallet (EUDI wallet) for EU-wide identification, sharing of attestations and qualified electronic signatures. Implementing acts set the technical standards."},
+    {de:"Banken und Zahlungsdienstleister müssen die Wallet dort akzeptieren, wo eine starke Kundenauthentifizierung verlangt wird — das betrifft Onboarding, Login und Zahlungsfreigabe. Zugleich eröffnet die Wallet neue Wege für die geldwäscherechtliche Identifizierung ohne Video-Ident.",
+     en:"Banks and payment providers must accept the wallet wherever strong customer authentication is required — affecting onboarding, login and payment authorisation. At the same time, the wallet opens new routes for AML identification without video identification."}],
+  csrd: [
+    {de:"Die CSRD verankert die Nachhaltigkeitsberichterstattung im Lagebericht: Berichtet wird nach den europäischen Standards (ESRS) über Umwelt-, Sozial- und Governance-Themen entlang der doppelten Wesentlichkeit — also Auswirkungen des Unternehmens und finanzielle Risiken aus Nachhaltigkeitsthemen. Der Bericht ist extern zu prüfen.",
+     en:"The CSRD anchors sustainability reporting in the management report: companies report under the European standards (ESRS) on environmental, social and governance topics along double materiality — the company's impacts and the financial risks from sustainability matters. The report is subject to external assurance."},
+    {de:"Mit dem Omnibus-Paket werden Anwenderkreis, Zeitplan und Datenpunkte derzeit deutlich verschlankt; die deutsche Umsetzung läuft parallel. Für Finanzunternehmen bleibt die CSRD Datenlieferant für SFDR- und Säule-3-Angaben, weshalb Änderungen unmittelbar auf die eigenen Offenlegungen durchschlagen.",
+     en:"The omnibus package is currently slimming down scope, timeline and data points, with German transposition running in parallel. For financial firms the CSRD remains the data source for SFDR and Pillar 3 disclosures, so changes feed straight through to their own reporting."}],
+  consumer: [
+    {de:"Der Verbraucherschutz im Finanzgeschäft bündelt die zivilrechtlichen Pflichten gegenüber Privatkunden: vorvertragliche Information, Kreditwürdigkeitsprüfung, Widerrufsrechte und die AGB-Kontrolle durch die Rechtsprechung. Die neue Verbraucherkreditrichtlinie CCD II erweitert den Anwendungsbereich auf Buy-now-pay-later und Kleinkredite.",
+     en:"Consumer protection in finance bundles the civil-law duties towards retail clients: pre-contractual information, creditworthiness assessment, withdrawal rights and judicial review of standard terms. The new Consumer Credit Directive CCD II extends the scope to buy-now-pay-later and small loans."},
+    {de:"Die CCD II ist bis November 2025 umzusetzen und ab November 2026 anzuwenden; parallel treiben BGH- und EuGH-Rechtsprechung etwa zu Prämiensparverträgen, Kontoentgelten und Widerrufsinformationen die Anforderungen fort. Auch die BaFin greift Verbraucherschutzthemen zunehmend aufsichtlich auf.",
+     en:"The CCD II must be transposed by November 2025 and applies from November 2026; in parallel, Federal Court of Justice and CJEU case law — on premium savings contracts, account fees and withdrawal information — keeps advancing the requirements. BaFin, too, increasingly addresses consumer protection through supervision."}],
 };
 
 export const QUESTIONS: Question[] = [

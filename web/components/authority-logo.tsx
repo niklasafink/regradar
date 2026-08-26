@@ -27,6 +27,7 @@ const LOGOS: Record<string, string> = {
   "edpb.europa.eu": "eu.svg",
   "esrb.europa.eu": "eu.svg",
   "bsi.bund.de": "de.svg",
+  "bfdi.bund.de": "de.svg",
   "zoll.de": "de.svg",
 };
 
@@ -57,6 +58,11 @@ export const FRAMEWORK_AUTH: Record<string, string> = {
   anacredit: "bankingsupervision.europa.eu",
   solvency: "eur-lex.europa.eu",
   idd: "eur-lex.europa.eu",
+  dsgvo: "eur-lex.europa.eu",
+  aiact: "eur-lex.europa.eu",
+  eidas2: "eur-lex.europa.eu",
+  csrd: "eur-lex.europa.eu",
+  consumer: "gesetze-im-internet.de",
 };
 
 /* Big-4- bzw. Kanzlei-Name (adv.f aus live.json) -> Logodatei in public/firms.

@@ -43,6 +43,12 @@ const AUTHORITIES: Record<string, string> = {
   "recht.bund.de": "BGBl",
   "bankingsupervision.europa.eu": "EZB",
   "gesetze-im-internet.de": "Bundesrecht",
+  "edpb.europa.eu": "EDPB",
+  "bfdi.bund.de": "BfDI",
+  "bsi.bund.de": "BSI",
+  "ec.europa.eu": "EU-Kommission",
+  "esrb.europa.eu": "ESRB",
+  "curia.europa.eu": "EuGH",
 };
 export const authority = (src: string): string => AUTHORITIES[src] ?? src;
 
@@ -63,7 +69,8 @@ export function visibleFrameworks(provider: string, answers: Answers | null): Fr
     .filter((f) => condMet(f.cond, answers))
     .map((f) => {
       const u = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
-      return { ...f, u, latest: u[0].d };
+      // Rahmenwerke ohne Updates (frisch angebunden) sortieren ans Ende.
+      return { ...f, u, latest: u[0]?.d ?? "01.01.2020" };
     })
     .sort((a, b) => dt(b.latest).getTime() - dt(a.latest).getTime());
 }

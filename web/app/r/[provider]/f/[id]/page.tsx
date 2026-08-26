@@ -31,8 +31,8 @@ export default function FrameworkDetail() {
   const stats = [
     { v: ups.length, l: lang === "de" ? "Updates gesamt" : "Updates in total" },
     { v: fresh, l: lang === "de" ? "Letzte 30 Tage" : "Last 30 days" },
-    { v: fmtDate(lang, ups[0].d), l: lang === "de" ? "Letzte Änderung" : "Last change" },
-    { v: fmtDate(lang, ups[ups.length - 1].d), l: lang === "de" ? "Ältester Eintrag" : "Oldest entry" },
+    { v: ups[0] ? fmtDate(lang, ups[0].d) : "–", l: lang === "de" ? "Letzte Änderung" : "Last change" },
+    { v: ups[0] ? fmtDate(lang, ups[ups.length - 1].d) : "–", l: lang === "de" ? "Ältester Eintrag" : "Oldest entry" },
   ];
 
   return (
@@ -61,7 +61,7 @@ export default function FrameworkDetail() {
             )}
           </div>
           <AuthorityLogo
-            src={FRAMEWORK_AUTH[f.id] ?? ups[0].src}
+            src={FRAMEWORK_AUTH[f.id] ?? ups[0]?.src ?? "eur-lex.europa.eu"}
             className="mt-5 h-7"
           />
           <h1 className="font-heading mt-3 max-w-3xl text-balance text-2xl font-medium tracking-tight sm:text-4xl">
@@ -98,6 +98,13 @@ export default function FrameworkDetail() {
         <div className="mt-8 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_290px]">
           {/* Update-Verlauf als Zeitleiste */}
           <div>
+            {ups.length === 0 && (
+              <p className="rounded-2xl border border-slate-200 bg-white p-4 text-sm leading-relaxed text-slate-500">
+                {lang === "de"
+                  ? "Für dieses Rahmenwerk liegen noch keine Updates vor. Neue Meldungen aus den Primärquellen erscheinen hier automatisch."
+                  : "No updates for this framework yet. New releases from the primary sources will appear here automatically."}
+              </p>
+            )}
             {ups.map((u, i) => {
               const isNew = daysAgo(u.d) <= 14;
               const urgent = u.deadline && daysUntil(u.deadline) < 60;

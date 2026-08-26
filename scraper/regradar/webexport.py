@@ -34,6 +34,8 @@ FRAMEWORK_RULES = [
     ("mmf", r"geldmarktfonds|money market fund"),
     ("priips", r"\bpriips\b|basisinformationsblatt|key information document"),
     ("hinschg", r"hinweisgeber|whistleblow"),
+    ("aiact", r"ki-verordnung|\bai act\b|artificial intelligence act|künstliche intelligenz|\bki-modell|general.purpose ai|\bgpai\b"),
+    ("eidas2", r"\beidas\b|eudi[- ]wallet|digital identity wallet|elektronische identifizierung|vertrauensdienst|trust service"),
     ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister"),
     ("nis2", r"\bnis-?2\b|bsi-gesetz|\bbsig\b"),
     ("amla", r"\bamla\b|\bamlar\b|anti-money laundering authority|geldwäscheverordnung"),
@@ -47,11 +49,15 @@ FRAMEWORK_RULES = [
     ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution"),
     ("psd3", r"\bpsd[23]\b|zahlungsdienst|payment service"),
     ("aifmd2", r"\baifmd\b|\bkagb\b|\bogaw\b|\bucits\b|investmentfonds|investment fund|kapitalverwaltung|\baif\b"),
+    ("csrd", r"\bcsrd\b|\besrs\b|\bcsddd\b|nachhaltigkeitsbericht|sustainability report|corporate sustainability|lieferkettensorgfalt"),
     ("sfdr", r"\bsfdr\b|offenlegungsverordnung|sustainab|nachhaltigkeitsbezogen|\besg\b|taxonomie-verordnung|taxonomy regulation"),
     ("solvency", r"solvency|solvabilität|versicherungsaufsicht|\bvag\b|\biorp\b|occupational retirement|insurance stress test|reinsurance"),
     ("idd", r"versicherungsvertrieb|insurance distribution"),
     ("ebaict", r"ict (and security )?risk|ikt-risik"),
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement"),
+    # Generische Muster bewusst am Ende, damit Spezialregime zuerst greifen.
+    ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data"),
+    ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|verbraucherschutz|consumer protection|restschuldversicherung"),
 ]
 
 TYPE_LABELS = {
@@ -185,17 +191,46 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
 
     from .big4 import related_articles
 
-    updates = {}
-    matched = 0
-    advisory = 0
+    # Erst auswählen (Relevanz + Kappung je Rahmenwerk), dann nur für die
+    # tatsächlich exportierten Einträge LLM-Zusammenfassungen erzeugen.
+    selected = []
+    per_fw = {}
     for r, fw_id, date in candidates:
         if not relevance.get(r["document_id"], True):
             continue
-        bucket = updates.setdefault(fw_id, [])
-        if len(bucket) >= MAX_PER_FRAMEWORK:
+        if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK:
             continue
+        per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
+        selected.append((r, fw_id, date))
+
+    from .summarize import summarize
+    summaries = summarize(conn, [
+        (r["document_id"],
+         "Titel: {}\nTyp: {}\nBehörde: {}\nDatum: {}{}{}\nTeaser: {}".format(
+             _clean(r["title"], 300),
+             r["document_type"] or "OTHER",
+             r["authority"] or _domain(r["canonical_url"]),
+             date,
+             "\nKonsultationsfrist: {}".format(_de_date(r["consultation_deadline"]))
+             if _de_date(r["consultation_deadline"]) else "",
+             "\nReferenz: {}".format(r["reference_number"])
+             if r["reference_number"] else "",
+             _clean(r["summary"], 600) or "(kein Teaser)"))
+        for r, _, date in selected])
+
+    updates = {}
+    matched = 0
+    advisory = 0
+    summarized = 0
+    for r, fw_id, date in selected:
+        bucket = updates.setdefault(fw_id, [])
         de, en = TYPE_LABELS.get(r["document_type"], TYPE_LABELS["OTHER"])
         title = _clean(r["title"], 200)
+        # Verständliche 2–3-Satz-Zusammenfassung aus dem LLM; Fallback ist
+        # der bereinigte Original-Teaser.
+        llm = summaries.get(r["document_id"])
+        if llm:
+            summarized += 1
         summary = _clean(r["summary"])
         entry = {
             "d": date,
@@ -203,7 +238,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
             "src": _domain(r["canonical_url"]),
             # Dokumenttitel bleiben laut DESIGN.md in Originalsprache.
             "ti": {"de": title, "en": title},
-            "s": {"de": summary, "en": summary},
+            "s": {"de": llm["de"], "en": llm["en"]} if llm
+                 else {"de": summary, "en": summary},
             "url": r["canonical_url"],
         }
         deadline = _de_date(r["consultation_deadline"])
@@ -227,6 +263,6 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     return {"path": path, "frameworks": len(updates), "updates": matched,
-            "advisory": advisory,
+            "advisory": advisory, "summarized": summarized,
             "scanned": len(rows), "sources": sources_info["sources"],
             "llm": "aktiv" if api_key() else "inaktiv (kein OPENROUTER_API_KEY)"}
