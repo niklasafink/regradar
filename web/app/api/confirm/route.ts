@@ -10,7 +10,7 @@ export async function GET(request: Request) {
   if (!data) {
     return Response.redirect(`${base}/?abo=invalid`, 302);
   }
-  await addSubscriber(data.email, data.provider);
-  const target = data.provider ? `/r/${data.provider}` : "/";
+  await addSubscriber(data.email, data.providers);
+  const target = data.providers[0] ? `/r/${data.providers[0]}` : "/";
   return Response.redirect(`${base}${target}?abo=ok`, 302);
 }

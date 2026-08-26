@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AuthorityLogo } from "@/components/authority-logo";
+import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
+import { TrackGoal } from "@/components/track-goal";
 import { authority, daysUntil, frameworkById, topicById } from "@/lib/logic";
 import { isoDate, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
 
@@ -68,11 +69,13 @@ export default async function UpdatePage(
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <TrackGoal
+        goal="update_detail_viewed"
+        params={{ slug, framework: fw.id, authority: u.src }}
+      />
       <Chrome />
 
-      <main
-        className={`mx-auto px-4 pb-24 sm:px-6 ${u.adv?.length ? "max-w-6xl" : "max-w-3xl"}`}
-      >
+      <main className="mx-auto max-w-3xl px-4 pb-24 sm:px-6">
         <Link
           href={backHref}
           className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900"
@@ -81,14 +84,7 @@ export default async function UpdatePage(
           Alle Updates zu {fw.n.de}
         </Link>
 
-        <div
-          className={
-            u.adv?.length
-              ? "mt-4 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_310px]"
-              : "mt-4"
-          }
-        >
-        <article>
+        <article className="mt-4">
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
             <div className="flex flex-wrap items-center gap-2">
               {t && (
@@ -109,6 +105,9 @@ export default async function UpdatePage(
                 href={u.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-fast-goal="original_link_click"
+                data-fast-goal-slug={slug}
+                data-fast-goal-authority={u.src}
                 className="inline-flex items-center gap-1.5 rounded-full border border-slate-900 px-3.5 py-1 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
               >
                 Zur Original-Meldung: {new URL(u.url).hostname.replace(/^www\./, "")} ↗
@@ -159,6 +158,53 @@ export default async function UpdatePage(
             </dl>
           )}
 
+          {u.adv?.length ? (
+            <section className="mt-8">
+              <h2 className="text-sm font-semibold tracking-tight">
+                So kommentieren Big 4 &amp; Kanzleien
+              </h2>
+              <p className="mt-1 text-xs leading-relaxed text-slate-400">
+                Fachbeiträge zu dieser Meldung, externe Inhalte, automatisch
+                zugeordnet, keine Empfehlung.
+              </p>
+              <ul className="mt-3 space-y-2">
+                {u.adv.map((a) => (
+                  <li key={a.url}>
+                    <a
+                      href={a.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 transition-colors hover:border-slate-900"
+                    >
+                      <span className="flex w-24 shrink-0 items-center">
+                        <FirmLogo firm={a.f} large />
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-sm font-medium leading-snug text-slate-900">
+                          {a.ti}
+                        </span>
+                        <span className="mt-0.5 block text-xs text-slate-400">
+                          {a.f}
+                          {a.d && (
+                            <>
+                              , <span className="num">{a.d}</span>
+                            </>
+                          )}
+                        </span>
+                      </span>
+                      <span
+                        aria-hidden
+                        className="shrink-0 text-slate-400 group-hover:text-slate-900"
+                      >
+                        ↗
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
           <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-4">
             <h2 className="text-sm font-semibold tracking-tight">
               Zum Rahmenwerk: {fw.n.de}
@@ -195,46 +241,6 @@ export default async function UpdatePage(
             </section>
           )}
         </article>
-
-        {u.adv?.length ? (
-          <aside className="lg:sticky lg:top-24">
-            <div className="rounded-2xl border border-slate-200 bg-white p-4">
-              <h2 className="text-sm font-semibold tracking-tight">
-                So kommentieren die Big 4
-              </h2>
-              <p className="mt-1 text-xs leading-relaxed text-slate-400">
-                Fachbeiträge der Beratungsgesellschaften zu dieser Meldung
-              </p>
-              <ul className="mt-3 space-y-2">
-                {u.adv.map((a) => (
-                  <li key={a.url}>
-                    <a
-                      href={a.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block rounded-xl border border-slate-200 p-3 transition-colors hover:border-slate-900"
-                    >
-                      <div className="flex items-center justify-between gap-2">
-                        <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
-                          {a.f}
-                        </span>
-                        {a.d && <span className="num text-xs text-slate-400">{a.d}</span>}
-                      </div>
-                      <p className="mt-2 text-xs font-medium leading-snug text-slate-900">
-                        {a.ti}{" "}
-                        <span aria-hidden className="text-slate-400 group-hover:text-slate-900">↗</span>
-                      </p>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-3 border-t border-slate-100 pt-2.5 text-[0.6875rem] leading-relaxed text-slate-400">
-                Externe Inhalte, automatisch zugeordnet, keine Empfehlung.
-              </p>
-            </div>
-          </aside>
-        ) : null}
-        </div>
       </main>
       <Footer />
     </>

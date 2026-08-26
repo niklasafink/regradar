@@ -34,6 +34,10 @@ TYPE_PATTERNS = [
     (r"(?i)\bauslegungsentscheidung|merkblatt", "ADMINISTRATIVE_PRACTICE"),
 ]
 
+# Drupal-Feeds (z. B. ESMA) haben kein pubDate; das Erstellungsdatum steht
+# als <time datetime="..."> im HTML der Description.
+DESC_DATE_RE = re.compile(r'datetime="(\d{4}-\d{2}-\d{2})')
+
 REF_PATTERNS = [
     r"\b(EBA/(?:GL|RTS|ITS|CP|Op)/\d{4}/\d+)\b",
     r"\b(ESMA[\w\-]*\d{2,}[\w\-]*)\b",
@@ -128,10 +132,13 @@ class RssAdapter(SourceAdapter):
                 link = _childtext(item, "link")
                 if not title or not link:
                     continue
+                desc = _childtext(item, "description")
                 pub = _parse_date(_childtext(item, "pubDate") or _childtext(item, "date"))
+                if not pub:
+                    dm = DESC_DATE_RE.search(desc)
+                    pub = dm.group(1) if dm else None
                 if since and pub and pub < since:
                     continue
-                desc = _childtext(item, "description")
 
                 # EBA liefert Digest-Items ("E-mail alert") – die eigentlichen
                 # Veröffentlichungen stehen als Links in der Beschreibung.

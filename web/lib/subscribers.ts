@@ -1,28 +1,58 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
-import path from "node:path";
+// Abonnenten in Upstash Redis. Ein Hash "subs": Feld = E-Mail (lowercase),
+// Wert = { providers, confirmedAt }. Ein Abonnent kann mehrere Anbietertypen
+// abonniert haben; Abmeldung entfernt die E-Mail komplett.
+
+import { Redis } from "@upstash/redis";
 
 export type Subscriber = {
   email: string;
-  provider: string;
+  providers: string[];
   confirmedAt: string;
 };
 
-const FILE = path.join(process.cwd(), "data", "subscribers.json");
+type Stored = { providers: string[]; confirmedAt: string };
 
-async function readAll(): Promise<Subscriber[]> {
-  try {
-    return JSON.parse(await readFile(FILE, "utf8")) as Subscriber[];
-  } catch {
-    return [];
+const KEY = "subs";
+
+let client: Redis | null = null;
+export function redis(): Redis {
+  if (!client) {
+    const url = process.env.UPSTASH_REDIS_REST_URL;
+    const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+    if (!url || !token) {
+      throw new Error(
+        "UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN fehlen in web/.env.local",
+      );
+    }
+    client = new Redis({ url, token });
   }
+  return client;
 }
 
-export async function addSubscriber(email: string, provider: string) {
-  const all = await readAll();
-  const key = email.toLowerCase();
-  if (!all.some((s) => s.email === key && s.provider === provider)) {
-    all.push({ email: key, provider, confirmedAt: new Date().toISOString() });
-    await mkdir(path.dirname(FILE), { recursive: true });
-    await writeFile(FILE, JSON.stringify(all, null, 2));
-  }
+export async function addSubscriber(email: string, newProviders: string[]) {
+  const key = email.trim().toLowerCase();
+  const existing = await redis().hget<Stored>(KEY, key);
+  const providers = new Set(existing?.providers ?? []);
+  for (const p of newProviders) if (p) providers.add(p);
+  await redis().hset(KEY, {
+    [key]: {
+      providers: [...providers],
+      confirmedAt: existing?.confirmedAt ?? new Date().toISOString(),
+    } satisfies Stored,
+  });
+}
+
+export async function removeSubscriber(email: string): Promise<boolean> {
+  const removed = await redis().hdel(KEY, email.trim().toLowerCase());
+  return removed > 0;
+}
+
+export async function listSubscribers(): Promise<Subscriber[]> {
+  const all = await redis().hgetall<Record<string, Stored>>(KEY);
+  if (!all) return [];
+  return Object.entries(all).map(([email, s]) => ({
+    email,
+    providers: s.providers ?? [],
+    confirmedAt: s.confirmedAt,
+  }));
 }

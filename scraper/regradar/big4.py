@@ -265,10 +265,25 @@ def _scrape_deloitte(conn) -> int:
     return new
 
 
+def reclassify(conn: sqlite3.Connection) -> int:
+    """Rahmenwerk-Zuordnung aller Artikel neu ableiten (nach Regel-Änderungen
+    in FRAMEWORK_RULES). Matches bleiben gültig, da pro Artikel gecacht."""
+    ensure_tables(conn)
+    changed = 0
+    for r in conn.execute("SELECT article_id, title, teaser, framework FROM big4_articles"):
+        fw = _framework_for("{} {}".format(r["title"], r["teaser"] or ""))
+        if fw != r["framework"]:
+            conn.execute("UPDATE big4_articles SET framework=? WHERE article_id=?",
+                         (fw, r["article_id"]))
+            changed += 1
+    conn.commit()
+    return changed
+
+
 def scrape(conn: sqlite3.Connection) -> dict:
     """Alle Big-4-Quellen abgrasen; idempotent (URL ist eindeutig)."""
     ensure_tables(conn)
-    stats = {}
+    stats = {"reclassified": reclassify(conn)}
     print("→ PwC-Blogs …", flush=True)
     stats["pwc_blogs"] = _scrape_rss(conn, "PwC", PWC_BLOG_FEEDS)
     print("→ PwC Legal …", flush=True)
@@ -277,8 +292,9 @@ def scrape(conn: sqlite3.Connection) -> dict:
     stats["kpmg"] = _scrape_kpmg(conn)
     print("→ Deloitte Legal …", flush=True)
     stats["deloitte"] = _scrape_deloitte(conn)
-    print("→ Wald vor lauter Normen …", flush=True)
-    stats["wvln"] = _scrape_rss(conn, "Wald vor lauter Normen", [WVLN_FEED])
+    # Blog "Wald vor lauter Normen" wird von Waldeck Rechtsanwälte betrieben.
+    print("→ Waldeck Rechtsanwälte (Wald vor lauter Normen) …", flush=True)
+    stats["wvln"] = _scrape_rss(conn, "Waldeck Rechtsanwälte", [WVLN_FEED])
     total = conn.execute("SELECT COUNT(*) FROM big4_articles").fetchone()[0]
     mapped = conn.execute(
         "SELECT COUNT(*) FROM big4_articles WHERE framework IS NOT NULL").fetchone()[0]

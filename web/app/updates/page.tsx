@@ -11,6 +11,7 @@ import {
   PROVIDER_SHORT, tx, type Impact,
 } from "@/lib/logic";
 import { useStore } from "@/lib/store";
+import { track } from "@/lib/track";
 import { UPDATE_PAGES } from "@/lib/updates";
 
 const impactPill = (i: Impact) =>
@@ -30,6 +31,7 @@ export default function AllUpdates() {
   useEffect(() => {
     const type = new URLSearchParams(window.location.search).get("type");
     if (type && PROVIDERS.some((p) => p.id === type)) setSel(type);
+    track("updates_screen_viewed");
   }, []);
 
   const shown = sel
@@ -78,7 +80,12 @@ export default function AllUpdates() {
               type="button"
               className={pill(sel === p.id)}
               aria-pressed={sel === p.id}
-              onClick={() => setSel(sel === p.id ? null : p.id)}
+              onClick={() => {
+                if (sel !== p.id) {
+                  track("institute_selected", { institute: p.id, source: "updates_filter" });
+                }
+                setSel(sel === p.id ? null : p.id);
+              }}
             >
               {tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
               <span className="num text-xs opacity-70">

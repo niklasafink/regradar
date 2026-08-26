@@ -30,6 +30,27 @@ class TypeRefinement(unittest.TestCase):
         self.assertEqual(refine_type("Monatsbericht August", "CIRCULAR"), "CIRCULAR")
 
 
+class FrameworkClassification(unittest.TestCase):
+    """MaRisk (Banken), WpI MaRisk (Wertpapierinstitute) und KAMaRisk (KVGen)
+    sind eigenständige Regelwerke und dürfen nicht vermischt werden."""
+
+    def test_banken_marisk(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Rundschreiben 06/2026 (BA) – Mindestanforderungen an das Risikomanagement – MaRisk"), "marisk")
+
+    def test_wpi_marisk(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Rundschreiben 09/2026 (WA) - WpI MaRisk"), "ifr")
+
+    def test_marisk_fuer_wertpapierinstitute(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute"), "ifr")
+
+    def test_ka_marisk(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Konsultation zur KAMaRisk – Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften"), "aifmd2")
+
+
 class ReferenceExtraction(unittest.TestCase):
     def test_eba_reference(self):
         self.assertEqual(extract_reference("Final report EBA/GL/2026/05 published"), "EBA/GL/2026/05")
@@ -50,6 +71,15 @@ class DateParsing(unittest.TestCase):
 
     def test_rii_german_to_iso(self):
         self.assertEqual(_to_iso("19.08.2026"), "2026-08-19")
+
+    def test_desc_date_fallback_esma(self):
+        # ESMA-Feed hat kein pubDate; Datum steckt im <time>-Tag der Description.
+        from regradar.adapters.rss import DESC_DATE_RE
+        desc = ('<span class="field--name-created"><time datetime="2026-08-14T10:54:44+02:00" '
+                'class="datetime">14 August 2026</time></span>')
+        m = DESC_DATE_RE.search(desc)
+        self.assertIsNotNone(m)
+        self.assertEqual(m.group(1), "2026-08-14")
 
     def test_amla_english_date(self):
         m = DATE_RE.search("Published on 3 July 2026 by AMLA")

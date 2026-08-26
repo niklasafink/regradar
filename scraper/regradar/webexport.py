@@ -22,6 +22,10 @@ MAX_PER_FRAMEWORK = 6
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
 FRAMEWORK_RULES = [
+    # WpI MaRisk (Wertpapierinstitute) und KAMaRisk (KVGen) sind eigenständige
+    # Regelwerke – nicht die Banken-MaRisk nach § 25a KWG.
+    ("ifr", r"wpi[\s-]*marisk|marisk\b[\s\S]*wertpapierinstitut|wertpapierinstitut[\s\S]*\bmarisk\b"),
+    ("aifmd2", r"kamarisk|\bka[\s-]+marisk\b|marisk\b[\s\S]*kapitalverwaltung|kapitalverwaltung[\s\S]*\bmarisk\b"),
     ("marisk", r"\bmarisk\b"),
     ("anacredit", r"anacredit|kreditdatenstatistik"),
     ("instant", r"echtzeitüberweisung|instant (payment|credit transfer)|verification of payee"),

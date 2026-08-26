@@ -59,6 +59,41 @@ export const FRAMEWORK_AUTH: Record<string, string> = {
   idd: "eur-lex.europa.eu",
 };
 
+/* Big-4- bzw. Kanzlei-Name (adv.f aus live.json) -> Logodatei in public/firms.
+   Höhen pro Firma justiert, damit die Wortmarken optisch gleich groß wirken
+   (die Deloitte-Marke ist sonst deutlich dominanter). */
+const FIRM_LOGOS: Record<string, { file: string; h: string; hLg: string }> = {
+  PwC: { file: "pwc.svg", h: "h-4", hLg: "h-5" },
+  "PwC Legal": { file: "pwc.svg", h: "h-4", hLg: "h-5" },
+  KPMG: { file: "kpmg.svg", h: "h-3.5", hLg: "h-4" },
+  "Deloitte Legal": { file: "deloitte.svg", h: "h-2.5", hLg: "h-3" },
+  "Waldeck Rechtsanwälte": { file: "waldeck.png", h: "h-4", hLg: "h-5" },
+};
+
+/** Logo einer Beratungsgesellschaft/Kanzlei; Fallback ist der Name als Text. */
+export function FirmLogo({
+  firm,
+  large = false,
+}: {
+  firm: string;
+  /** true = größere Variante (Detailseite), false = Listenzeile */
+  large?: boolean;
+}) {
+  const logo = FIRM_LOGOS[firm];
+  if (!logo) {
+    return <span className="text-xs font-medium text-slate-600">{firm}</span>;
+  }
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={`/firms/${logo.file}`}
+      alt={firm}
+      loading="lazy"
+      className={`w-auto max-w-full object-contain object-left ${large ? logo.hLg : logo.h}`}
+    />
+  );
+}
+
 export function AuthorityLogo({
   src,
   className = "h-5",

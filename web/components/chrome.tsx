@@ -110,6 +110,9 @@ function ProviderMenu() {
                 key={p.id}
                 role="menuitem"
                 href={`/r/${p.id}`}
+                data-fast-goal="institute_selected"
+                data-fast-goal-institute={p.id}
+                data-fast-goal-source="menu"
                 onClick={() => setOpen(false)}
                 className={`flex items-center justify-between gap-3 rounded-full px-3.5 py-2 text-[13px] font-medium transition-colors ${
                   active?.id === p.id
@@ -154,6 +157,8 @@ export function Chrome({ children }: { children?: ReactNode }) {
       <div className="border-b border-slate-200 bg-slate-100">
         <Link
           href="/#newsletter"
+          data-fast-goal="newsletter_click"
+          data-fast-goal-placement="banner"
           className="group mx-auto flex max-w-6xl items-center justify-center gap-3 px-4 py-2 text-[13px] text-slate-600 sm:px-6"
         >
           <BannerAvatars />
@@ -220,6 +225,8 @@ export function Chrome({ children }: { children?: ReactNode }) {
           <LangSwitch />
           <Link
             href="/#newsletter"
+            data-fast-goal="newsletter_click"
+            data-fast-goal-placement="header"
             className="hidden shrink-0 items-center rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-slate-700 sm:inline-flex"
           >
             {lang === "de" ? "Newsletter abonnieren" : "Subscribe to newsletter"}

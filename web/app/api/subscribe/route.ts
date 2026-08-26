@@ -1,21 +1,36 @@
+import { PROVIDERS } from "@/lib/data";
 import { sendConfirmationEmail } from "@/lib/email";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request: Request) {
-  let body: { email?: string; provider?: string };
+  let body: { email?: string; providers?: string[]; provider?: string };
   try {
     body = await request.json();
   } catch {
     return Response.json({ error: "invalid_body" }, { status: 400 });
   }
   const email = body.email?.trim() ?? "";
-  const provider = body.provider?.trim() ?? "";
   if (!EMAIL_RE.test(email)) {
     return Response.json({ error: "invalid_email" }, { status: 400 });
   }
+
+  const raw = Array.isArray(body.providers)
+    ? body.providers
+    : body.provider
+      ? [body.provider]
+      : [];
+  const chosen = PROVIDERS.filter((p) => raw.includes(p.id));
+  if (chosen.length === 0) {
+    return Response.json({ error: "no_provider" }, { status: 400 });
+  }
+
   try {
-    await sendConfirmationEmail(email, provider);
+    await sendConfirmationEmail(
+      email,
+      chosen.map((p) => p.id),
+      chosen.map((p) => p.n.de),
+    );
   } catch (e) {
     console.error("subscribe failed:", e);
     return Response.json({ error: "send_failed" }, { status: 502 });

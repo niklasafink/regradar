@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, Manrope } from "next/font/google";
+import Script from "next/script";
 import { StoreProvider } from "@/lib/store";
 import "./globals.css";
 
@@ -31,7 +32,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de">
       <body className={`${inter.variable} ${manrope.variable} ${instrumentSerif.variable} font-sans`}>
+        {/* DataFast-Queue: puffert Goal-Aufrufe, bis das Analytics-Script geladen ist */}
+        <script
+          id="datafast-queue"
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.datafast=window.datafast||function(){window.datafast.q=window.datafast.q||[];window.datafast.q.push(arguments);};",
+          }}
+        />
         <StoreProvider>{children}</StoreProvider>
+        <Script
+          defer
+          data-website-id="dfid_7B0yBIFRvLP0qQU8RjMFI"
+          data-domain="regradar.de"
+          src="https://datafa.st/js/script.js"
+        />
       </body>
     </html>
   );

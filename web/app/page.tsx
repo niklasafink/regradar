@@ -60,6 +60,9 @@ export default function Home() {
                 <Link
                   key={p.id}
                   href={`/r/${p.id}`}
+                  data-fast-goal="institute_selected"
+                  data-fast-goal-institute={p.id}
+                  data-fast-goal-source="home"
                   className="flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)] transition-all hover:border-slate-900 hover:shadow-[0_2px_4px_rgb(31_30_26/0.05),0_8px_24px_rgb(31_30_26/0.1)]"
                 >
                   <span className="text-sm font-semibold tracking-tight">{tx(lang, p.n)}</span>
