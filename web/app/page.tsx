@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, SlimFooter } from "@/components/chrome";
+import { LastUpdated } from "@/components/last-updated";
 import { SubscribeBox } from "@/components/subscribe";
 import { PROVIDERS } from "@/lib/data";
 import {
@@ -33,13 +34,16 @@ export default function Home() {
       <main>
         {/* Hero mit Anbieterauswahl, alles auf einem Screen */}
         <section id="rahmenwerke" className="mx-auto max-w-5xl px-4 pt-10 pb-10 text-center sm:px-6 sm:pt-14">
-          <p className="mb-5 inline-flex items-center rounded-full border border-slate-200 px-4 py-1.5 text-xs font-medium text-slate-500">
-            <span className="num font-semibold text-slate-900">{FRAMEWORKS.length}</span>
-            <span className="ml-1">{lang === "de" ? "Rahmenwerke" : "frameworks"}</span>
-            <span className="mr-1.5">,</span>
-            <span className="num font-semibold text-slate-900">{totalUpdates}</span>
-            <span className="ml-1">Updates</span>
-          </p>
+          <div className="mb-5 flex flex-wrap items-center justify-center gap-2">
+            <p className="inline-flex items-center rounded-full border border-slate-200 px-4 py-1.5 text-xs font-medium text-slate-500">
+              <span className="num font-semibold text-slate-900">{FRAMEWORKS.length}</span>
+              <span className="ml-1">{lang === "de" ? "Rahmenwerke" : "frameworks"}</span>
+              <span className="mr-1.5">,</span>
+              <span className="num font-semibold text-slate-900">{totalUpdates}</span>
+              <span className="ml-1">Updates</span>
+            </p>
+            <LastUpdated />
+          </div>
           <h1 className="font-heading mx-auto max-w-3xl text-balance text-4xl leading-[1.08] font-medium tracking-tight text-slate-900 sm:text-5xl">
             {lang === "de"
               ? "Alle Regulatorik, kostenlos an einem Ort."

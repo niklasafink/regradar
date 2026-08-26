@@ -18,7 +18,7 @@ from typing import Dict, List, Optional, Tuple
 from .llmfilter import API_URL, api_key
 
 DEFAULT_MODEL = "google/gemini-2.5-flash"
-BATCH_SIZE = 8
+BATCH_SIZE = 4
 TIMEOUT = 120
 
 SYSTEM_PROMPT = (
@@ -56,6 +56,8 @@ def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, Dict[
     payload = {
         "model": model,
         "temperature": 0.2,
+        # Großzügiges Limit, damit JSON-Antworten nicht abgeschnitten werden.
+        "max_tokens": 8000,
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -111,12 +113,14 @@ def summarize(conn: sqlite3.Connection,
     from .db import utcnow
     for start in range(0, len(todo), BATCH_SIZE):
         batch = todo[start:start + BATCH_SIZE]
-        try:
-            got = _chat(model, key, batch)
-        except (urllib.error.URLError, json.JSONDecodeError, KeyError, TimeoutError) as e:
-            print("LLM-Zusammenfassung: Batch übersprungen ({}: {})".format(
-                type(e).__name__, e))
-            got = {}
+        got = {}
+        for attempt in (1, 2):
+            try:
+                got = _chat(model, key, batch)
+                break
+            except (urllib.error.URLError, json.JSONDecodeError, KeyError, TimeoutError) as e:
+                print("LLM-Zusammenfassung: Versuch {} fehlgeschlagen ({}: {})".format(
+                    attempt, type(e).__name__, e))
         for i, s in got.items():
             result[i] = s
             conn.execute(

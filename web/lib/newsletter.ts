@@ -103,6 +103,11 @@ export function renderNewsletter(pages: UpdatePage[], unsubUrl: string, base: st
          style="background:#0f172a;color:#ffffff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px">
         Alle Updates ansehen →
       </a>
+      &nbsp;&nbsp;
+      <a href="${base}/fristen"
+         style="color:#0f172a;border:1px solid #e2e8f0;padding:11px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px">
+        Offene Fristen →
+      </a>
     </p>
     <p style="margin:32px 0 0;padding-top:16px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8;line-height:1.6">
       Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.

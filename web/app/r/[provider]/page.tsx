@@ -122,7 +122,7 @@ export default function Board() {
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
                         <AuthorityLogo
-                          src={FRAMEWORK_AUTH[f.id] ?? f.u[0].src}
+                          src={FRAMEWORK_AUTH[f.id] ?? f.u[0]?.src ?? "eur-lex.europa.eu"}
                           className="mb-2.5 h-5"
                         />
                         <h3 className="text-sm font-semibold tracking-tight">{tx(lang, f.n)}</h3>
@@ -138,7 +138,9 @@ export default function Board() {
                     </div>
                     <div className="mt-3 flex flex-1 items-end justify-between border-t border-slate-100 pt-2.5 text-xs">
                       <span className="num text-slate-400">
-                        {lang === "de" ? "Stand" : "Updated"} {fmtDate(lang, f.latest)}
+                        {f.u.length === 0
+                          ? lang === "de" ? "Neu angebunden" : "Newly connected"
+                          : `${lang === "de" ? "Stand" : "Updated"} ${fmtDate(lang, f.latest)}`}
                       </span>
                       <span className="inline-flex items-center gap-1.5 font-medium text-slate-900">
                         {lang === "de"

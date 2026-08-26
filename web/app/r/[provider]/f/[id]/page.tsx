@@ -189,14 +189,12 @@ export default function FrameworkDetail() {
                       {lang === "de" ? "Original öffnen" : "Open original"}: {u.src} ↗
                     </a>
                   ) : (
-                    <a
-                      href="#"
-                      onClick={(e) => e.preventDefault()}
-                      title={lang === "de" ? "Beispieldatensatz, kein echtes Dokument" : "Sample record, not a real document"}
-                      className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 underline-offset-2 hover:underline"
+                    <span
+                      title={lang === "de" ? "Redaktioneller Eintrag ohne Direktlink zur Primärquelle" : "Editorial entry without a direct link to the primary source"}
+                      className="mt-2.5 inline-flex items-center gap-1.5 text-xs text-slate-400"
                     >
-                      {lang === "de" ? "Beispieldatensatz" : "Sample record"}: {u.src}
-                    </a>
+                      {lang === "de" ? "Quelle" : "Source"}: {u.src}
+                    </span>
                   )}
                   {u.adv?.length ? (
                     <div className="mt-3 border-t border-slate-100 pt-2.5">

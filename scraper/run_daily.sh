@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Täglicher Lauf: Quellen crawlen, Big-4-Kommentare, Web-Export und — nur wenn
 # sich live.json geändert hat — Production-Deploy auf Vercel. Danach verschickt
-# der Vercel-Cron (07:00 MESZ) die neuen Updates per Newsletter.
+# der Vercel-Cron (18:00 MESZ) die neuen Updates per Newsletter.
 # Geplant via launchd: ~/Library/LaunchAgents/de.regradar.daily.plist
 
 set -euo pipefail

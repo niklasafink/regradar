@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const out: MetadataRoute.Sitemap = [
     { url: BASE, changeFrequency: "daily", priority: 1 },
     { url: `${BASE}/quellen`, changeFrequency: "weekly", priority: 0.5 },
+    { url: `${BASE}/fristen`, changeFrequency: "daily", priority: 0.8 },
+    { url: `${BASE}/updates`, changeFrequency: "daily", priority: 0.8 },
   ];
 
   for (const p of PROVIDERS) {

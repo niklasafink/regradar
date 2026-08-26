@@ -57,7 +57,7 @@ FRAMEWORK_RULES = [
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement"),
     # Generische Muster bewusst am Ende, damit Spezialregime zuerst greifen.
     ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data"),
-    ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|verbraucherschutz|consumer protection|restschuldversicherung"),
+    ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|restschuldversicherung|verbrauchervertr|widerrufsinformation|buy.now.pay.later|finanzieller verbraucherschutz"),
 ]
 
 TYPE_LABELS = {
@@ -91,7 +91,8 @@ NOISE = re.compile(
     r"moderates|appears before|sets out vision|\bsummit\b|"
     r"call for papers|vacanc|appoint|ernennung|"
     r"geldbuße|bußgeld|zwangsgeld|verwarnt|workshop|webinar|anmeldung|"
-    r"tragic incident|condolence|stakeholder group|photo gallery|"
+    r"tragic incident|condolence|stakeholder group|stakeholder event|photo gallery|"
+    r"anordnung über die vertretung|vertretung der bundesrepublik|"
     r"stellenausschreibung|management board meeting", re.IGNORECASE)
 
 

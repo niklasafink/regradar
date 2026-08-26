@@ -195,6 +195,16 @@ export function Chrome({ children }: { children?: ReactNode }) {
             </Link>
             <ProviderMenu />
             <Link
+              href="/fristen"
+              className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
+                pathname === "/fristen"
+                  ? "bg-slate-900 text-white"
+                  : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+              }`}
+            >
+              {lang === "de" ? "Fristen" : "Deadlines"}
+            </Link>
+            <Link
               href="/updates"
               className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
                 pathname === "/updates"
