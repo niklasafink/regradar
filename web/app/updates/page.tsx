@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
-import { LastUpdated } from "@/components/last-updated";
 import { SearchBox } from "@/components/search";
 import { PROVIDERS } from "@/lib/data";
 import {
@@ -57,7 +56,6 @@ export default function AllUpdates() {
           </h1>
           <span className="min-w-0 flex-1" />
           <SearchBox />
-          <LastUpdated />
           <p className="num shrink-0 text-sm text-slate-500">
             {shown.length} {lang === "de" ? "Einträge" : "entries"}
           </p>

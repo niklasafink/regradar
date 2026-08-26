@@ -7,7 +7,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
-import { LastUpdated } from "@/components/last-updated";
 import { PROVIDERS } from "@/lib/data";
 import {
   authority, daysUntil, dt, fmtDate, PROVIDER_SHORT, tx,
@@ -61,17 +60,10 @@ export default function Deadlines() {
             {lang === "de" ? "Offene Fristen" : "Open deadlines"}
           </h1>
           <span className="min-w-0 flex-1" />
-          <LastUpdated />
           <p className="num shrink-0 text-sm text-slate-500">
             {shown.length} {lang === "de" ? "Einträge" : "entries"}
           </p>
         </div>
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-500">
-          {lang === "de"
-            ? "Laufende Konsultationen und kommende Anwendungs- bzw. Umsetzungsdaten aus allen Rahmenwerken, sortiert nach Fälligkeit. Fristen unter 60 Tagen sind rot markiert."
-            : "Ongoing consultations and upcoming application or implementation dates across all frameworks, sorted by due date. Deadlines under 60 days are marked in red."}
-        </p>
-
         {/* Zielgruppen-Filter wie auf der Updates-Seite */}
         <nav
           className="mt-5 flex flex-wrap items-center gap-1.5"
