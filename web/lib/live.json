@@ -1,6 +1,111 @@
 {
-  "generated_at": "2026-08-26T15:36:57Z",
+  "generated_at": "2026-08-27T21:43:03Z",
   "updates": {
+    "dora": [
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance table on the Joint Guidelines on costs and losses under DORA",
+          "en": "Compliance table on the Joint Guidelines on costs and losses under DORA"
+        },
+        "s": {
+          "de": "Ein Compliance-Tabelle zu den gemeinsamen Leitlinien für Kosten und Verluste gemäß DORA wurde veröffentlicht. Dies betrifft Finanzunternehmen. Die Veröffentlichung erfolgte am 30.07.2026.",
+          "en": "A compliance table on the Joint Guidelines on costs and losses under DORA has been published. This applies to financial entities. The publication was made on 30.07.2026."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
+        "refnum": "ESMA75-1012365701-566"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector",
+          "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
+        },
+        "s": {
+          "de": "Die ESAs fordern eine verbesserte Governance und konsistente Aufsicht, um IKT-Risiken durch neue KI-Modelle im EU-Finanzsektor zu mindern. Dies betrifft Finanzunternehmen in der EU. Die Forderung wurde am 31.07.2026 veröffentlicht.",
+          "en": "The ESAs call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector. This applies to financial undertakings in the EU. The call was published on 31.07.2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision"
+      },
+      {
+        "d": "03.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Esas publish first report dora major ict related incidents",
+          "en": "Esas publish first report dora major ict related incidents"
+        },
+        "s": {
+          "de": "Die ESAs haben am 03.06.2026 ihren ersten Bericht über größere IKT-bezogene Vorfälle unter DORA veröffentlicht. Dieser Bericht analysiert und fasst die ersten Meldungen von schwerwiegenden IKT-Vorfällen zusammen. Er ist relevant für Finanzunternehmen, die unter die DORA-Verordnung fallen.",
+          "en": "The ESAs published their first report on major ICT-related incidents under DORA on 03.06.2026. This report analyzes and summarizes the initial notifications of severe ICT incidents. It is relevant for financial entities falling under the DORA regulation."
+        },
+        "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs veröffentlichen ersten Bericht über schwerwiegende IKT-Vorfälle im Rahmen von DORA",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-veroeffentlichen-ersten-bericht-ueber-schwerwiegende-ikt-vorfaelle-im-rahmen-von-dora/",
+            "d": "03.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "02.10.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Digital Operational Resilience of Financial Services (DORFS) Act",
+          "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
+        },
+        "s": {
+          "de": "Die Europäische Kommission arbeitet am Digital Operational Resilience of Financial Services (DORFS) Act. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
+          "en": "The European Commission is working on the Digital Operational Resilience of Financial Services (DORFS) Act. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Delegierte Verordnung zur Ergänzung von DORA durch technische Regulierungsstandards zur Präzisierung der Aspekte, die ein Finanzunternehmen bei der Untervergabe von IKT-Dienstleistungen berücksichtigen muss, im EU-Amtsblatt veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/delegierte-verordnung-zur-ergaenzung-von-dora-durch-technische-regulierungsstandards-zur-praezisierung-der-aspekte-die-ein-finanzunternehmen-bei-der-untervergabe-von-ikt-dienstleistungen-beruecksicht/",
+            "d": "07.07.2025"
+          },
+          {
+            "f": "KPMG",
+            "ti": "Delegierte Verordnung und Durchführungsverordnung zu DORA im EU-Amtsblatt veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-amtsblatt-cyberbedrohungen-dora-2025-2/",
+            "d": "20.02.2025"
+          },
+          {
+            "f": "KPMG",
+            "ti": "DORA kommt: Änderungen bei den aufsichtlichen Anforderungen an die IT",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/dora-kommt-aenderungen-bei-den-aufsichtlichen-anforderungen-an-die-it/",
+            "d": "10.01.2025"
+          },
+          {
+            "f": "KPMG",
+            "ti": "BaFin-Übersicht zu den Dokumentationsanforderungen nach DORA",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-uebersicht-zu-den-dokumentationsanforderungen-nach-dora/",
+            "d": "17.12.2024"
+          }
+        ]
+      }
+    ],
     "ifr": [
       {
         "d": "24.08.2026",
@@ -1036,7 +1141,15 @@
           "de": "Der BfDI schlägt eine europäische Lösung für Cookie-Banner vor, um Überregulierung zu vermeiden und diese wirksam zu reduzieren. Es wird angeregt, verbindliche, maschinenlesbare Datenschutzpräferenzen und Einwilligungsverwaltungsdienste im EU Digital Omnibus zu verankern. Dies betrifft alle Finanzunternehmen, die Cookie-Banner verwenden.",
           "en": "The BfDI proposes a European solution for cookie banners to avoid overregulation and effectively reduce them. It suggests anchoring binding, machine-readable data protection preferences and consent management services in the EU Digital Omnibus. This affects all financial companies using cookie banners."
         },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/12_Cookie-Banner.html"
+        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/12_Cookie-Banner.html",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Neue Leitlinien der Datenschutzaufsicht zur datenschutzkonformen Einwilligung",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/neue-leitlinien-der-datenschutzaufsicht-zur-datenschutzkonformen-einwilligung",
+            "d": "12.05.2020"
+          }
+        ]
       },
       {
         "d": "14.07.2026",
@@ -1053,7 +1166,15 @@
           "de": "Der EDPB hat die belgische Datenschutzbehörde angewiesen, die Beschwerde von NOYB bezüglich eines Cookie-Banners zu prüfen. Dies betrifft die Verarbeitung personenbezogener Daten durch die Vlaamse Radio-en Televisieomroeporganisatie (VRT).",
           "en": "The EDPB has instructed the Belgian DPA to handle the merits of NOYB's cookie banner complaint. This concerns the processing of personal data by Vlaamse Radio-en Televisieomroeporganisatie (VRT)."
         },
-        "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en"
+        "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Belgische Datenschutzaufsicht: Standard für Cookie-Banner datenschutzwidrig",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/belgische-datenschutzaufsicht-standard-fuer-cookie-banner-datenschutzwidrig",
+            "d": "09.02.2022"
+          }
+        ]
       },
       {
         "d": "09.07.2026",
@@ -1088,7 +1209,33 @@
           "de": "Der EDPB hat am 25.06.2026 eine aktualisierte Version des One-Stop-Shop (OSS) Fallberichts zum Widerspruchsrecht und Recht auf Löschung veröffentlicht. Dieses Update ergänzt das öffentliche Register des EDPB durch die Auswahl und Präsentation wichtiger Entscheidungen zu diesem Thema. Es richtet sich an Datenschutzbehörden und betrifft alle Unternehmen, die der DSGVO unterliegen.",
           "en": "The EDPB published an updated version of the One-Stop-Shop (OSS) case digest on the right to object and right to erasure on 25.06.2026. This update complements the EDPB's public register by selecting and presenting important decisions on this theme. It is aimed at Data Protection Authorities and affects all companies subject to GDPR."
         },
-        "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en"
+        "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Einwand des Rechtsmissbrauchs gegen Auskunftsersuchen nach Art. 15 DSGVO",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/einwand-des-rechtsmissbrauchs-gegen-auskunftsersuchen-nach-art-15-dsgvo",
+            "d": "27.10.2022"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Immaterieller Schadensersatz bei unvollständiger Datenauskunft nach Art. 15 DSGVO",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/immaterieller-schadensersatz-bei-unvollstaendiger-datenauskunft-nach-art-15-dsgvo",
+            "d": "15.03.2022"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "EU-Datenschutzaufsichtsbehörden befürworten weites Auskunftsrecht",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/eu-datenschutzaufsichtsbehoerden-befuerworten-weites-auskunftsrecht",
+            "d": "01.02.2022"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "EU-Kommission: Datenschutzbehörden müssen international besser kooperieren",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/eu-kommission-datenschutzbehoerden-muessen-besser-kooperieren",
+            "d": "29.06.2020"
+          }
+        ]
       },
       {
         "d": "24.06.2026",
@@ -1105,7 +1252,15 @@
           "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular zur Meldung von Inkonsistenzen bei der Auslegung der DSGVO in Europa eingeführt. Dies soll den Dialog mit Stakeholdern stärken und eine konsistente Durchsetzung der DSGVO gewährleisten. Betroffen sind alle, die mutmaßliche Abweichungen zwischen nationalen Positionen oder zwischen nationalen Positionen und denen des EDPB feststellen.",
           "en": "The European Data Protection Board (EDPB) has launched a contact form for reporting inconsistencies in the interpretation of the GDPR across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement. It applies to anyone who identifies alleged divergences between national positions or between national positions and those of the EDPB."
         },
-        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en"
+        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "EU-Kommission: Datenschutzbehörden müssen international besser kooperieren",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/eu-kommission-datenschutzbehoerden-muessen-besser-kooperieren",
+            "d": "29.06.2020"
+          }
+        ]
       },
       {
         "d": "12.06.2026",
@@ -1122,7 +1277,15 @@
           "de": "Der Ausschuss für koordinierte Aufsicht (CSC) erweitert seinen Zuständigkeitsbereich auf das europäische Asyl- und Migrationsdatenbanksystem Eurodac. Eurodac ist ein Informationssystem zur Verwaltung von Asyl- und Migrationsdaten und spielt eine Schlüsselrolle bei der Umsetzung der Dublin-III-Verordnung. Diese Änderung betrifft die Aufsicht über dieses System.",
           "en": "The Coordinated Supervision Committee (CSC) has extended its scope to include the European Union’s asylum and migration database (Eurodac). Eurodac is an information system for managing asylum and migration data and plays a key role in implementing the Dublin III Regulation. This change affects the supervision of this system."
         },
-        "url": "https://www.edpb.europa.eu/news/coordinated-supervision-committee-extends-scope-to-include-eurodac_en"
+        "url": "https://www.edpb.europa.eu/news/coordinated-supervision-committee-extends-scope-to-include-eurodac_en",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "EU-Kommission: Datenschutzbehörden müssen international besser kooperieren",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/eu-kommission-datenschutzbehoerden-muessen-besser-kooperieren",
+            "d": "29.06.2020"
+          }
+        ]
       }
     ],
     "crr3": [
@@ -1520,7 +1683,27 @@
           "de": "Das Bundesamt für Justiz hat eine Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht erlassen. Diese Verordnung ist für Unternehmen relevant, die Verbraucherkreditverträge anbieten. Das Datum der Veröffentlichung ist der 31.07.2026.",
           "en": "The Federal Office of Justice has issued a regulation for the implementation of Directive (EU) 2023/2225 on consumer credit agreements in commercial law. This regulation is relevant for companies offering consumer credit agreements. The publication date is 31.07.2026."
         },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/229"
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/229",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Gesetz zur Umsetzung der Verbraucherkreditverträge-Richtlinie im BGBl. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/gesetz-zur-umsetzung-der-verbraucherkreditvertraege-richtlinie-im-bgbl-veroeffentlicht/",
+            "d": "18.05.2026"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Gesetzentwurf zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge beschlossen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/gesetzentwurf-zur-umsetzung-der-richtlinie-eu-2023-2225-ueber-verbraucherkreditvertrage-beschlossen",
+            "d": "18.09.2025"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Verbraucherkreditrichtlinie 2.0 – mehr Verbraucherschutz und höherer Regulierungsaufwand",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/verbraucherkreditrichtlinie-2-0-mehr-verbraucherschutz-und-hoeherer-regulierungsaufwand",
+            "d": "15.12.2023"
+          }
+        ]
       },
       {
         "d": "18.05.2026",
@@ -1537,7 +1720,33 @@
           "de": "Ein neues Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Förderung klimaneutraler Mobilität tritt in Kraft. Es regelt Verbraucherkreditverträge und Maßnahmen zur Unterstützung klimaneutraler Mobilität. Das Gesetz gilt für alle Finanzinstitute, die Verbraucherkredite vergeben, und tritt am 18.05.2026 in Kraft.",
           "en": "A new law implementing Directive (EU) 2023/2225 on consumer credit agreements and promoting climate-neutral mobility comes into force. It regulates consumer credit agreements and measures supporting climate-neutral mobility. The law applies to all financial institutions granting consumer credit and becomes effective on 18.05.2026."
         },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/139"
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/139",
+        "adv": [
+          {
+            "f": "Deloitte Legal",
+            "ti": "Verbraucherkreditrichtlinie: Muss die Autofinanzierung neu gedacht werden?",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/ccd2-auto-finance.html",
+            "d": "26.08.2026"
+          },
+          {
+            "f": "KPMG",
+            "ti": "Gesetz zur Umsetzung der Verbraucherkreditverträge-Richtlinie im BGBl. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/gesetz-zur-umsetzung-der-verbraucherkreditvertraege-richtlinie-im-bgbl-veroeffentlicht/",
+            "d": "18.05.2026"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Gesetzentwurf zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge beschlossen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/gesetzentwurf-zur-umsetzung-der-richtlinie-eu-2023-2225-ueber-verbraucherkreditvertrage-beschlossen",
+            "d": "18.09.2025"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Verbraucherkreditrichtlinie 2.0 – mehr Verbraucherschutz und höherer Regulierungsaufwand",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/verbraucherkreditrichtlinie-2-0-mehr-verbraucherschutz-und-hoeherer-regulierungsaufwand",
+            "d": "15.12.2023"
+          }
+        ]
       },
       {
         "d": "23.04.2026",
@@ -1555,7 +1764,15 @@
           "en": "The ECJ has ruled that a bank may not charge interest on sums used to pay costs associated with consumer credit. This judgment affects all banks that grant consumer credit. The judgment was rendered on 23.04.2026."
         },
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-04/cp260063de.pdf",
-        "refnum": "C-744/24"
+        "refnum": "C-744/24",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "EuGH-Urteil zur Zinsbasis bei Verbraucherkrediten – was EU-Kreditgeber jetzt beachten sollten",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/eugh-urteil-zur-zinsbasis-bei-verbraucherkrediten-23042026",
+            "d": "30.06.2026"
+          }
+        ]
       },
       {
         "d": "05.02.2026",
@@ -1572,7 +1789,15 @@
           "de": "Das Gesetz ändert das Verbrauchervertrags- und Versicherungsvertragsrecht sowie das Behandlungsvertragsrecht. Es gilt für alle Akteure, die von diesen Rechtsänderungen betroffen sind. Das Gesetz tritt am 05.02.2026 in Kraft.",
           "en": "The law amends consumer contract law, insurance contract law, and treatment contract law. It applies to all entities affected by these legal changes. The law comes into effect on 05.02.2026."
         },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/28"
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/28",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Gesetz zur Umsetzung der Verbraucherkreditverträge-Richtlinie im BGBl. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/gesetz-zur-umsetzung-der-verbraucherkreditvertraege-richtlinie-im-bgbl-veroeffentlicht/",
+            "d": "18.05.2026"
+          }
+        ]
       }
     ],
     "ebaict": [
@@ -1628,111 +1853,6 @@
         "url": "https://www.esma.europa.eu/document/esas-statement-toward-consistent-and-risk-based-approach-ict-risks-frontier-ai-models"
       }
     ],
-    "dora": [
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector",
-          "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
-        },
-        "s": {
-          "de": "Die ESAs fordern eine verbesserte Governance und konsistente Aufsicht, um IKT-Risiken durch neue KI-Modelle im EU-Finanzsektor zu mindern. Dies betrifft Finanzunternehmen in der EU. Die Forderung wurde am 31.07.2026 veröffentlicht.",
-          "en": "The ESAs call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector. This applies to financial undertakings in the EU. The call was published on 31.07.2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision"
-      },
-      {
-        "d": "30.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance table on the Joint Guidelines on costs and losses under DORA",
-          "en": "Compliance table on the Joint Guidelines on costs and losses under DORA"
-        },
-        "s": {
-          "de": "Ein Compliance-Tabelle zu den gemeinsamen Leitlinien für Kosten und Verluste gemäß DORA wurde veröffentlicht. Dies betrifft Finanzunternehmen. Die Veröffentlichung erfolgte am 30.07.2026.",
-          "en": "A compliance table on the Joint Guidelines on costs and losses under DORA has been published. This applies to financial entities. The publication was made on 30.07.2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
-        "refnum": "ESMA75-1012365701-566"
-      },
-      {
-        "d": "03.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Esas publish first report dora major ict related incidents",
-          "en": "Esas publish first report dora major ict related incidents"
-        },
-        "s": {
-          "de": "Die ESAs haben am 03.06.2026 ihren ersten Bericht über größere IKT-bezogene Vorfälle unter DORA veröffentlicht. Dieser Bericht analysiert und fasst die ersten Meldungen von schwerwiegenden IKT-Vorfällen zusammen. Er ist relevant für Finanzunternehmen, die unter die DORA-Verordnung fallen.",
-          "en": "The ESAs published their first report on major ICT-related incidents under DORA on 03.06.2026. This report analyzes and summarizes the initial notifications of severe ICT incidents. It is relevant for financial entities falling under the DORA regulation."
-        },
-        "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs veröffentlichen ersten Bericht über schwerwiegende IKT-Vorfälle im Rahmen von DORA",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-veroeffentlichen-ersten-bericht-ueber-schwerwiegende-ikt-vorfaelle-im-rahmen-von-dora/",
-            "d": "03.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "02.10.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Digital Operational Resilience of Financial Services (DORFS) Act",
-          "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
-        },
-        "s": {
-          "de": "Die Europäische Kommission arbeitet am Digital Operational Resilience of Financial Services (DORFS) Act. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is working on the Digital Operational Resilience of Financial Services (DORFS) Act. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Delegierte Verordnung zur Ergänzung von DORA durch technische Regulierungsstandards zur Präzisierung der Aspekte, die ein Finanzunternehmen bei der Untervergabe von IKT-Dienstleistungen berücksichtigen muss, im EU-Amtsblatt veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/delegierte-verordnung-zur-ergaenzung-von-dora-durch-technische-regulierungsstandards-zur-praezisierung-der-aspekte-die-ein-finanzunternehmen-bei-der-untervergabe-von-ikt-dienstleistungen-beruecksicht/",
-            "d": "07.07.2025"
-          },
-          {
-            "f": "KPMG",
-            "ti": "Delegierte Verordnung und Durchführungsverordnung zu DORA im EU-Amtsblatt veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-amtsblatt-cyberbedrohungen-dora-2025-2/",
-            "d": "20.02.2025"
-          },
-          {
-            "f": "KPMG",
-            "ti": "DORA kommt: Änderungen bei den aufsichtlichen Anforderungen an die IT",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/dora-kommt-aenderungen-bei-den-aufsichtlichen-anforderungen-an-die-it/",
-            "d": "10.01.2025"
-          },
-          {
-            "f": "KPMG",
-            "ti": "BaFin-Übersicht zu den Dokumentationsanforderungen nach DORA",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-uebersicht-zu-den-dokumentationsanforderungen-nach-dora/",
-            "d": "17.12.2024"
-          }
-        ]
-      }
-    ],
     "aiact": [
       {
         "d": "28.07.2026",
@@ -1749,7 +1869,27 @@
           "de": "Ein Gesetz zur Durchführung der Verordnung (EU) 2024/1689 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz wurde erlassen. Dies betrifft die Anwendung der KI-Verordnung in Deutschland. Das Gesetz wurde am 28.07.2026 veröffentlicht.",
           "en": "A law implementing Regulation (EU) 2024/1689 establishing harmonised rules for artificial intelligence has been enacted. This concerns the application of the AI Regulation in Germany. The law was published on 28.07.2026."
         },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/223"
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/223",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Verordnung über künstliche Intelligenz (EU AI Act) im EU-Amtsblatt veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/verordnung-ueber-kuenstliche-intelligenz-eu-ai-act-im-eu-amtsblatt-veroeffentlicht/",
+            "d": "12.07.2024"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Update KI-Verordnung (EU AI Act)",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/update-ki-verordnung-eu-ai-act",
+            "d": "17.01.2024"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Die neue EU-KI-Verordnung und ihre Auswirkungen auf den öffentlichen Sektor",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/die-neue-eu-ki-verordnung-und-ihre-auswirkungen-auf-den-oeffentlichen-sektor",
+            "d": "10.07.2023"
+          }
+        ]
       }
     ],
     "priips": [
