@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:43:03Z",
+  "generated_at": "2026-08-27T23:36:56Z",
   "updates": {
     "dora": [
       {
@@ -849,6 +849,31 @@
         ]
       },
       {
+        "d": "14.08.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
+          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
+        },
+        "s": {
+          "de": "Der Deutsche Bundestag plant eine umfassende Modernisierung der Zollverwaltung durch das Gesetz zur Stärkung der Zollverwaltung und Bekämpfung der Finanzkriminalität. Dies beinhaltet eine Neustrukturierung der Generalzolldirektion, die Zusammenführung von Ermittlungs- und Vollzugseinheiten sowie die Stärkung der Finanzkontrolle Schwarzarbeit. Die Zollverwaltung erhält erweiterte Aufgaben und Befugnisse zur Bekämpfung internationaler Geldwäsche.",
+          "en": "The German Bundestag plans a comprehensive modernization of the customs administration through the Act to strengthen the customs administration and combat financial crime. This includes a restructuring of the General Directorate of Customs, the consolidation of investigation and enforcement units, and the strengthening of the Financial Control of Undeclared Work. The customs administration will receive expanded tasks and powers to combat international money laundering."
+        },
+        "url": "https://dip.bundestag.de/vorgang/338348",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Federal Government Announces Action Plan to Combat Tax and Financial Crime",
+            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/255919/federal-government-announces-action-plan-to-combat-tax-and-financial-crime/",
+            "d": "16.07.2026"
+          }
+        ]
+      },
+      {
         "d": "03.08.2026",
         "t": {
           "de": "Allgemeinverfügung",
@@ -891,6 +916,23 @@
         ]
       },
       {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
+          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
+        },
+        "s": {
+          "de": "Der Deutsche Bundestag plant mit dem Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung eine Änderung des § 261 Strafgesetzbuch. Details zu den spezifischen Änderungen oder dem Anwendungsbereich sind dem vorliegenden Text nicht zu entnehmen.",
+          "en": "The German Bundestag plans an amendment to § 261 of the Criminal Code with the Act on the Consistent Fight against Money Laundering in Tax Evasion. Details on the specific changes or scope are not available in the provided text."
+        },
+        "url": "https://dip.bundestag.de/vorgang/337697"
+      },
+      {
         "d": "20.07.2026",
         "t": {
           "de": "Allgemeinverfügung",
@@ -912,58 +954,6 @@
             "ti": "BaFin veröffentlicht Aufsichtsmitteilung zur Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften",
             "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-aufsichtsmitteilung-zur-praevention-von-geldwaesche-und-terrorismusfinanzierung-risiken-im-zusammenhang-mit-umgehungsgeschaeften/",
             "d": "27.03.2025"
-          }
-        ]
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Methodology for calculating fees levied by the Anti Money Laundering Authority and the procedure for collecting fees",
-          "en": "Methodology for calculating fees levied by the Anti Money Laundering Authority and the procedure for collecting fees"
-        },
-        "s": {
-          "de": "Die Europäische Kommission plant eine Methodik zur Berechnung der Gebühren, die von der Anti Money Laundering Authority erhoben werden, sowie das Verfahren zur Gebührenerhebung. Dies ist ein Legislativvorschlag. Das Dokument wurde am 17.07.2026 veröffentlicht.",
-          "en": "The European Commission is planning a methodology for calculating fees levied by the Anti Money Laundering Authority and the procedure for collecting fees. This is a legislative proposal. The document was published on 17.07.2026."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
-        "refnum": "Ares(2026)6942470",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "GwG-Meldeverordnung (GwGMeldV) im Bundesgesetzblatt veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/gwg-meldeverordnung-gwgmeldv-im-bundesgesetzblatt-veroeffentlicht/",
-            "d": "08.09.2025"
-          }
-        ]
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben 07/2026 (GW)",
-          "en": "Rundschreiben 07/2026 (GW)"
-        },
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 07/2026 (GW) zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung veröffentlicht. Es richtet sich an Finanzunternehmen, die mit diesen Staaten interagieren.",
-          "en": "BaFin has published Circular 07/2026 (GW) concerning high-risk third countries in the area of anti-money laundering and combating terrorist financing. It applies to financial institutions interacting with these countries."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
-        "refnum": "07/2026",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Die EBA startet eine Konsultation zum Reporting Framework 4.3 – Neue Meldepflichten im Bereich der Geldwäschebekämpfung und für Zweigstellen in Drittländern",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/die-eba-startet-eine-konsultation-zum-reporting-framework-4-3-neue-meldepflichten-im-bereich-der-geldwaeschebekaempfung-und-fuer-zweigstellen-in-drittlaendern",
-            "d": "06.05.2026"
           }
         ]
       }
