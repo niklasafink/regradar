@@ -8,6 +8,41 @@ import { track } from "@/lib/track";
 
 type Status = "idle" | "sending" | "sent" | "confirmed" | "unsubscribed" | "error";
 
+type ErrorCode =
+  | "invalid_email"
+  | "no_provider"
+  | "send_failed"
+  | "network"
+  | "link_invalid"
+  | "unknown";
+
+const ERROR_TEXT: Record<ErrorCode, { de: string; en: string }> = {
+  invalid_email: {
+    de: "Diese E-Mail-Adresse scheint ungültig zu sein. Bitte prüfen Sie die Eingabe.",
+    en: "This email address seems to be invalid. Please check your input.",
+  },
+  no_provider: {
+    de: "Bitte wählen Sie mindestens einen Anbietertyp aus.",
+    en: "Please select at least one provider type.",
+  },
+  send_failed: {
+    de: "Die Bestätigungs-E-Mail konnte nicht versendet werden. Bitte versuchen Sie es in ein paar Minuten erneut.",
+    en: "The confirmation email could not be sent. Please try again in a few minutes.",
+  },
+  network: {
+    de: "Der Server ist gerade nicht erreichbar. Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.",
+    en: "The server is currently unreachable. Please check your internet connection and try again.",
+  },
+  link_invalid: {
+    de: "Dieser Bestätigungslink ist ungültig oder abgelaufen. Bitte melden Sie sich erneut an.",
+    en: "This confirmation link is invalid or has expired. Please sign up again.",
+  },
+  unknown: {
+    de: "Das hat leider nicht geklappt. Bitte versuchen Sie es erneut.",
+    en: "That didn't work. Please try again.",
+  },
+};
+
 export function SubscribeBox({ provider = "" }: { provider?: string }) {
   const { lang } = useStore();
   const [email, setEmail] = useState("");
@@ -15,6 +50,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
     PROVIDERS.some((p) => p.id === provider) ? [provider] : [],
   );
   const [status, setStatus] = useState<Status>("idle");
+  const [errorCode, setErrorCode] = useState<ErrorCode>("unknown");
   const [hint, setHint] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -22,7 +58,10 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
     const abo = new URLSearchParams(window.location.search).get("abo");
     if (abo === "ok") setStatus("confirmed");
     if (abo === "off") setStatus("unsubscribed");
-    if (abo === "invalid") setStatus("error");
+    if (abo === "invalid") {
+      setErrorCode("link_invalid");
+      setStatus("error");
+    }
   }, []);
 
   useEffect(() => {
@@ -53,10 +92,22 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, providers }),
       });
-      if (res.ok) track("newsletter_submitted", { email, provider: providers.join(",") });
-      setStatus(res.ok ? "sent" : "error");
-      if (res.ok) setModalOpen(false);
+      if (res.ok) {
+        track("newsletter_submitted", { email, provider: providers.join(",") });
+        setStatus("sent");
+        setModalOpen(false);
+        return;
+      }
+      const data = (await res.json().catch(() => null)) as { error?: string } | null;
+      const code = data?.error;
+      setErrorCode(
+        code === "invalid_email" || code === "no_provider" || code === "send_failed"
+          ? code
+          : "unknown",
+      );
+      setStatus("error");
     } catch {
+      setErrorCode("network");
       setStatus("error");
     }
   };
@@ -125,11 +176,9 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         </form>
       )}
 
-      {status === "error" && (
+      {status === "error" && !modalOpen && (
         <p className="mt-3 text-sm text-red-600">
-          {lang === "de"
-            ? "Das hat nicht geklappt. Bitte versuchen Sie es erneut."
-            : "That didn't work. Please try again."}
+          {ERROR_TEXT[errorCode][lang === "de" ? "de" : "en"]}
         </p>
       )}
 
@@ -187,9 +236,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             )}
             {status === "error" && (
               <p className="mt-3 text-xs text-red-600">
-                {lang === "de"
-                  ? "Das hat nicht geklappt. Bitte versuchen Sie es erneut."
-                  : "That didn't work. Please try again."}
+                {ERROR_TEXT[errorCode][lang === "de" ? "de" : "en"]}
               </p>
             )}
             <div className="mt-5 flex justify-center gap-2">
