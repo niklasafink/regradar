@@ -27,7 +27,7 @@ export async function GET(request: Request) {
 
   if (url.searchParams.get("preview") === "1") {
     const base = process.env.APP_URL ?? url.origin;
-    const html = renderNewsletter(UPDATE_PAGES.slice(0, 8), `${base}/api/unsubscribe?token=preview`, base);
+    const { html } = renderNewsletter(UPDATE_PAGES.slice(0, 8), `${base}/api/unsubscribe?token=preview`, base);
     return new Response(html, { headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
 

@@ -88,10 +88,21 @@ export async function sendConfirmationEmail(
     ? ` zu Updates für: <strong>${providerLabels.join(", ")}</strong>`
     : "";
 
+  const textScope = providerLabels.length
+    ? ` zu Updates für: ${providerLabels.join(", ")}`
+    : "";
+
   const { error } = await resend.emails.send({
     from: `Regulatory Radar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
     to: email,
     subject: "Bitte bestätigen: Update-Benachrichtigungen von Regulatory Radar",
+    text: `regulatoryradar
+
+bitte bestätigen Sie mit einem Klick, dass wir Sie kostenlos per E-Mail über neue regulatorische Updates${textScope} benachrichtigen dürfen:
+
+${confirmUrl}
+
+Der Link ist 48 Stunden gültig. Wenn Sie diese E-Mail nicht angefordert haben, ignorieren Sie sie einfach — es wird nichts gespeichert.`,
     html: `
       <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
         <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>

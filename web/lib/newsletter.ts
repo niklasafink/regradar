@@ -53,8 +53,13 @@ const esc = (s: string): string =>
 
 const fmtDe = (d: string): string => d; // bereits TT.MM.JJJJ
 
-/** E-Mail-HTML im Site-Design: schwarz-weiß, große Typo, Pill-Button. */
-export function renderNewsletter(pages: UpdatePage[], unsubUrl: string, base: string): string {
+/** E-Mail im Site-Design: schwarz-weiß, große Typo, Pill-Button.
+    Liefert HTML plus Plain-Text-Alternative (bessere Spam-Bewertung). */
+export function renderNewsletter(
+  pages: UpdatePage[],
+  unsubUrl: string,
+  base: string,
+): { html: string; text: string } {
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
 
@@ -84,7 +89,40 @@ export function renderNewsletter(pages: UpdatePage[], unsubUrl: string, base: st
     })
     .join("");
 
-  return `
+  const text = [
+    "regulatoryradar",
+    "",
+    pages.length === 1
+      ? "1 neues regulatorisches Update"
+      : `${pages.length} neue regulatorische Updates`,
+    "Neu veröffentlichte Meldungen aus den Primärquellen, kompakt zusammengefasst.",
+    "",
+    ...shown.flatMap(({ slug, fw, u }) => {
+      const meta = [
+        u.deadline && daysUntil(u.deadline) >= 0 ? `Frist ${fmtDe(u.deadline)}` : "",
+        u.eff ? `Gilt ab ${fmtDe(u.eff)}` : "",
+        `${fw.n.de}, ${fw.ref}`,
+      ].filter(Boolean).join(" · ");
+      return [
+        `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)}`,
+        u.ti.de,
+        u.s.de,
+        meta,
+        `${base}/u/${slug}`,
+        "",
+      ];
+    }),
+    ...(more > 0 ? [`… und ${more} weitere Updates auf der Website.`, ""] : []),
+    `Alle Updates: ${base}/updates`,
+    `Offene Fristen: ${base}/fristen`,
+    "",
+    "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
+    "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
+    `Abmelden: ${unsubUrl}`,
+    `Impressum: ${base}/impressum`,
+  ].join("\n");
+
+  const html = `
   <div style="background:#ffffff;padding:32px 16px">
   <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;max-width:560px;margin:0 auto;color:#0f172a">
     <p style="margin:0 0 28px;font-size:18px"><strong>regulatory</strong><em style="font-weight:300">radar</em></p>
@@ -118,6 +156,8 @@ export function renderNewsletter(pages: UpdatePage[], unsubUrl: string, base: st
     </p>
   </div>
   </div>`;
+
+  return { html, text };
 }
 
 export async function runNewsletter(opts: {
@@ -174,12 +214,19 @@ export async function runNewsletter(opts: {
       rel.length === 1
         ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
         : `${rel.length} neue regulatorische Updates`;
+    const { html, text } = renderNewsletter(rel, unsubUrl, base);
     const { error } = await resend.emails.send({
       from,
       to: sub.email,
       subject,
-      html: renderNewsletter(rel, unsubUrl, base),
-      headers: { "List-Unsubscribe": `<${unsubUrl}>` },
+      html,
+      text,
+      headers: {
+        "List-Unsubscribe": `<${unsubUrl}>`,
+        // One-Click-Unsubscribe (RFC 8058) — Gmail/Outlook werten das fürs
+        // Spam-Scoring aus; die Route beantwortet den POST ohne Redirect.
+        "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+      },
     });
     if (error) {
       report.errors.push(`${sub.email}: ${error.message}`);
