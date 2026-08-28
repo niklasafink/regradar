@@ -29,7 +29,11 @@ export function redis(): Redis {
   return client;
 }
 
-export async function addSubscriber(email: string, newProviders: string[]) {
+// Liefert true, wenn die E-Mail vorher noch nicht abonniert war.
+export async function addSubscriber(
+  email: string,
+  newProviders: string[],
+): Promise<boolean> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
   const providers = new Set(existing?.providers ?? []);
@@ -40,6 +44,7 @@ export async function addSubscriber(email: string, newProviders: string[]) {
       confirmedAt: existing?.confirmedAt ?? new Date().toISOString(),
     } satisfies Stored,
   });
+  return !existing;
 }
 
 export async function removeSubscriber(email: string): Promise<boolean> {

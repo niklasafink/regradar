@@ -110,3 +110,30 @@ export async function sendConfirmationEmail(
   });
   if (error) throw new Error(error.message);
 }
+
+// Interne Benachrichtigung an den Betreiber bei jeder bestätigten Anmeldung.
+export async function sendSubscriberNotification(
+  subscriberEmail: string,
+  providers: string[],
+  isNew: boolean,
+) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return;
+  const resend = new Resend(apiKey);
+  const to = process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de";
+
+  const { error } = await resend.emails.send({
+    from: `Regulatory Radar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    to,
+    subject: `${isNew ? "Neuer Abonnent" : "Abo erweitert"}: ${subscriberEmail}`,
+    html: `
+      <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
+        <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
+        <p>${isNew ? "Neue Newsletter-Anmeldung bestätigt" : "Bestehender Abonnent hat sein Abo erweitert"}:</p>
+        <p><strong>${subscriberEmail}</strong></p>
+        <p>Quellen: ${providers.join(", ") || "—"}</p>
+        <p style="color:#64748b;font-size:13px">${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })} Uhr</p>
+      </div>`,
+  });
+  if (error) throw new Error(error.message);
+}
