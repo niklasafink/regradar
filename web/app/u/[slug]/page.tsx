@@ -163,10 +163,6 @@ export default async function UpdatePage(
               <h2 className="text-sm font-semibold tracking-tight">
                 So kommentieren Big 4 &amp; Kanzleien
               </h2>
-              <p className="mt-1 text-xs leading-relaxed text-slate-400">
-                Fachbeiträge zu dieser Meldung, externe Inhalte, automatisch
-                zugeordnet, keine Empfehlung.
-              </p>
               <ul className="mt-3 space-y-2">
                 {u.adv.map((a) => (
                   <li key={a.url}>
