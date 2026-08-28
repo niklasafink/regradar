@@ -1488,3 +1488,58 @@ Datenbank initialisiert: 26 Quellen registriert.
 → eba_qna …
   entdeckt 20, geladen 20, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
 → esma_library …
+  entdeckt 50, geladen 24, neu 0, geändert 2, HTTP-Fehler 0, Parse-Fehler 0
+→ bsi …
+  entdeckt 40, geladen 25, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+→ edpb …
+  entdeckt 10, geladen 7, neu 0, geändert 3, HTTP-Fehler 0, Parse-Fehler 0
+→ bfdi …
+  entdeckt 30, geladen 25, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+→ fiu …
+  entdeckt 4, geladen 0, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+→ esrb …
+  entdeckt 15, geladen 15, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+→ bis …
+  entdeckt 25, geladen 0, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+→ fsb …
+  entdeckt 10, geladen 10, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+→ iosco …
+  entdeckt 26, geladen 0, neu 0, geändert 0, HTTP-Fehler 0, Parse-Fehler 0
+
+Quelle        Status  Entdeckt  Neu  Geändert
+---------------------------------------------
+eurlex        OK      4         0    0       
+gii           OK      11        0    0       
+dip           OK      6         0    0       
+bgbl          OK      1000      0    0       
+rii           OK      80        0    0       
+amla          OK      52        0    0       
+bafin         OK      57        0    0       
+eba           OK      22        0    0       
+esma          OK      10        0    2       
+ecb_ssm       OK      15        0    0       
+bundesbank    OK      10        0    0       
+eiopa         OK      47        0    0       
+srb           OK      10        0    0       
+curia         OK      112       0    0       
+bmf           OK      44        0    0       
+hys           OK      129       0    0       
+eba_qna       OK      20        0    0       
+esma_library  OK      50        0    2       
+bsi           OK      40        0    0       
+edpb          OK      10        0    3       
+bfdi          OK      30        0    0       
+fiu           OK      4         0    0       
+esrb          OK      15        0    0       
+bis           OK      25        0    0       
+fsb           OK      10        0    0       
+iosco         OK      26        0    0       
+→ PwC-Blogs …
+→ PwC Legal …
+→ KPMG Klardenker …
+→ Deloitte Legal …
+→ Waldeck Rechtsanwälte (Wald vor lauter Normen) …
+Big4: 0 PwC-Blog, 0 PwC-Legal, 0 KPMG, 1 Deloitte, 0 WvlN neu – 1552 Artikel gesamt, 424 mit Rahmenwerk-Zuordnung
+Web-Export: 95 Updates in 24 Rahmenwerken, 124 Big4-Verweise (aus 1786 Dokumenten, LLM-Filter aktiv) → /Users/niklasfink/Documents/CC Projekte/Regulatory Radar/web/lib/live.json
+Keine inhaltlichen Änderungen in live.json → kein Deploy
+=== Lauf beendet:   2026-08-28 23:41:26 ===
