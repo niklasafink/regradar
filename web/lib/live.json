@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T21:34:30Z",
+  "generated_at": "2026-08-28T22:55:22Z",
   "updates": {
     "dora": [
       {
@@ -2552,6 +2552,23 @@
             "d": "22.05.2026"
           }
         ]
+      },
+      {
+        "d": "18.03.2016",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur Umsetzung der Richtlinie über die Vergleichbarkeit von Zahlungskontoentgelten, den Wechsel von Zahlungskonten sowie den Zugang zu Zahlungskonten mit grundlegenden Funktionen",
+          "en": "Gesetz zur Umsetzung der Richtlinie über die Vergleichbarkeit von Zahlungskontoentgelten, den Wechsel von Zahlungskonten sowie den Zugang zu Zahlungskonten mit grundlegenden Funktionen"
+        },
+        "s": {
+          "de": "Das Gesetz führt ein Recht auf Zugang zu einem Basiskonto für jeden Verbraucher in der EU ein, einschließlich Obdachloser, Asylsuchender und Geduldeter, mit angepasster Identitätsprüfung und eingeschränkten Ablehnungsmöglichkeiten. Es regelt den Umfang grundlegender Zahlungsdienste und enthält verbraucherschützende Bestimmungen zur Angemessenheit und Transparenz von Entgelten sowie zur eingeschränkten Kündigungsmöglichkeit. Zahlungsdienstleister erhalten Unterstützungsverpflichtungen beim Kontenwechsel.",
+          "en": "The law introduces a right of access to a basic payment account for every consumer in the EU, including homeless persons, asylum seekers, and those with tolerated status, with adapted identity verification and limited grounds for refusal. It regulates the scope of basic payment services and includes consumer protection provisions on the appropriateness and transparency of fees, as well as restricted termination options. Payment service providers are given support obligations for account switching."
+        },
+        "url": "https://dip.bundestag.de/vorgang/70169"
       }
     ],
     "idd": [
