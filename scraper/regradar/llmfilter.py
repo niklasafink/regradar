@@ -78,6 +78,18 @@ def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, bool]
     # Manche Modelle verpacken JSON in Markdown-Zäune.
     content = content.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
     parsed = json.loads(content)
+    # Manche Modelle liefern statt {"id": bool} eine Liste von
+    # {"id": ..., "relevant": ...}-Objekten.
+    if isinstance(parsed, list):
+        merged = {}
+        for entry in parsed:
+            if not isinstance(entry, dict):
+                continue
+            if "id" in entry:
+                merged[str(entry["id"])] = entry.get("relevant")
+            else:
+                merged.update({str(k): v for k, v in entry.items()})
+        parsed = merged
     out: Dict[int, bool] = {}
     for i, _ in items:
         v = parsed.get(str(i), parsed.get(i))
@@ -115,7 +127,8 @@ def classify(conn: sqlite3.Connection, items: List[Tuple[int, str]]) -> Dict[int
         batch = todo[start:start + BATCH_SIZE]
         try:
             verdicts = _chat(model, key, batch)
-        except (urllib.error.URLError, json.JSONDecodeError, KeyError, TimeoutError) as e:
+        except (urllib.error.URLError, json.JSONDecodeError, KeyError,
+                TimeoutError, TypeError, AttributeError, IndexError) as e:
             print("LLM-Filter: Batch übersprungen ({}: {})".format(type(e).__name__, e))
             verdicts = {}
         for i, _ in batch:

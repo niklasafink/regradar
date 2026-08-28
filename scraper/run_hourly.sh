@@ -19,14 +19,14 @@ echo "=== Lauf gestartet: $(date '+%Y-%m-%d %H:%M:%S') ==="
 cd "$REPO"
 if git diff -U0 -- web/lib/live.json | grep '^[+-][^+-]' | grep -v generated_at | grep -q .; then
   echo "live.json inhaltlich geändert → Commit, Push, Deploy"
-  git add web/lib/live.json
+  git add web/lib/live.json web/lib/sources.json
   git commit -m "Auto-Update: live.json ($(date '+%Y-%m-%d %H:%M'))"
   git push origin main
   cd web
   npx vercel --prod --yes
   echo "Deploy abgeschlossen"
 else
-  git checkout -- web/lib/live.json 2>/dev/null || true
+  git checkout -- web/lib/live.json web/lib/sources.json 2>/dev/null || true
   echo "Keine inhaltlichen Änderungen in live.json → kein Deploy"
 fi
 echo "=== Lauf beendet:   $(date '+%Y-%m-%d %H:%M:%S') ==="
