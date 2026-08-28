@@ -242,6 +242,13 @@ export const FRAMEWORKS: Framework[] = [
           en:"Harmonises K-factor calculation when thresholds are crossed in either direction."}}
     ]},
 
+  { id:"wpimarisk", jur:"DE",
+    about:{de:"Die aufsichtliche Auslegung des § 41 WpIG durch die BaFin: eigenständige Mindestanforderungen an das Risikomanagement für kleine und mittlere Wertpapierinstitute – getrennt von der Banken-MaRisk.",en:"BaFin's supervisory interpretation of § 41 WpIG: standalone minimum risk management requirements for small and medium-sized investment firms – separate from the banking MaRisk."}, topic:"PRU", ents:["IF"],
+    n:{de:"WpI MaRisk: Risikomanagement für Wertpapierinstitute",en:"WpI MaRisk: risk management for investment firms"},
+    ref:"BaFin-Rundschreiben", cond:{k:"juris",any:["DE"]},
+    condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
+    u:[]},
+
   { id:"outsourcing", jur:"EU+DE",
     about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
     n:{de:"EBA-Leitlinien zur Auslagerung",en:"EBA Guidelines on Outsourcing"},

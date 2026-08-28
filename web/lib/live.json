@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T23:36:56Z",
+  "generated_at": "2026-08-28T21:34:30Z",
   "updates": {
     "dora": [
       {
@@ -106,7 +106,7 @@
         ]
       }
     ],
-    "ifr": [
+    "wpimarisk": [
       {
         "d": "24.08.2026",
         "t": {
@@ -229,50 +229,8 @@
             "ti": "BaFin-Entwurf WpI MaRisk: neuer aufsichtsrechtlicher Risikorahmen für kleine und mittlere Wertpapierinstitute",
             "url": "https://legal.pwc.de/de/news/fachbeitraege/bafin-entwurf-wpi-marisk-neuer-aufsichtsrechtlicher-risikorahmen-fuer-kleine-und-mittlere-wertpapierinstitute",
             "d": "25.08.2025"
-          },
-          {
-            "f": "PwC Legal",
-            "ti": "Neues Aufsichtsrecht für Wertpapierinstitute",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/neues-aufsichtsrecht-fuer-wertpapierinstitute",
-            "d": "25.05.2021"
           }
         ]
-      },
-      {
-        "d": "15.06.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Requirement for a consolidated ICARA process under Directive (EU) 2019/2034",
-          "en": "Requirement for a consolidated ICARA process under Directive (EU) 2019/2034"
-        },
-        "s": {
-          "de": "Die EBA hat am 15.06.2026 eine Q&A zur Anforderung eines konsolidierten ICARA-Prozesses gemäß Richtlinie (EU) 2019/2034 veröffentlicht. Die Frage betrifft, ob Wertpapierfirmen, die der aufsichtsrechtlichen Konsolidierung unterliegen, einen ICARA-Prozess auf konsolidierter Basis erstellen müssen. Dies gilt für Wertpapierfirmen, die unter Artikel 7 IFR fallen.",
-          "en": "The EBA published a Q&A on 15.06.2026 regarding the requirement for a consolidated ICARA process under Directive (EU) 2019/2034. The question concerns whether investment firms subject to prudential consolidation must prepare an ICARA process on a consolidated basis. This applies to investment firms falling under Article 7 IFR."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7891",
-        "refnum": "2026_7891"
-      },
-      {
-        "d": "11.05.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF",
-          "en": "Proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF"
-        },
-        "s": {
-          "de": "Die EBA prüft die proportionale Anwendung von K-ASA gemäß Artikel 19 IFR in nicht-diskretionären Verwahrungsmodellen, die mit dem Betrieb eines MTF verbunden sind. Es wird geklärt, ob eine risikogerechtere Anwendung möglich ist, wenn eine Wertpapierfirma ein MTF als Kerntätigkeit betreibt und Vermögenswerte streng im Namen von Kunden verwahrt. Diese Klärung betrifft Wertpapierfirmen, die ein MTF betreiben.",
-          "en": "The EBA examines the proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF. It clarifies whether a more proportionate or risk-sensitive application is possible when an investment firm operates an MTF as its core activity and safeguards assets strictly on behalf of clients. This clarification concerns investment firms operating an MTF."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7836",
-        "refnum": "2026_7836"
       }
     ],
     "sfdr": [
@@ -2372,6 +2330,44 @@
             "d": "17.04.2026"
           }
         ]
+      }
+    ],
+    "ifr": [
+      {
+        "d": "15.06.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Requirement for a consolidated ICARA process under Directive (EU) 2019/2034",
+          "en": "Requirement for a consolidated ICARA process under Directive (EU) 2019/2034"
+        },
+        "s": {
+          "de": "Die EBA hat am 15.06.2026 eine Q&A zur Anforderung eines konsolidierten ICARA-Prozesses gemäß Richtlinie (EU) 2019/2034 veröffentlicht. Die Frage betrifft, ob Wertpapierfirmen, die der aufsichtsrechtlichen Konsolidierung unterliegen, einen ICARA-Prozess auf konsolidierter Basis erstellen müssen. Dies gilt für Wertpapierfirmen, die unter Artikel 7 IFR fallen.",
+          "en": "The EBA published a Q&A on 15.06.2026 regarding the requirement for a consolidated ICARA process under Directive (EU) 2019/2034. The question concerns whether investment firms subject to prudential consolidation must prepare an ICARA process on a consolidated basis. This applies to investment firms falling under Article 7 IFR."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7891",
+        "refnum": "2026_7891"
+      },
+      {
+        "d": "11.05.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF",
+          "en": "Proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF"
+        },
+        "s": {
+          "de": "Die EBA prüft die proportionale Anwendung von K-ASA gemäß Artikel 19 IFR in nicht-diskretionären Verwahrungsmodellen, die mit dem Betrieb eines MTF verbunden sind. Es wird geklärt, ob eine risikogerechtere Anwendung möglich ist, wenn eine Wertpapierfirma ein MTF als Kerntätigkeit betreibt und Vermögenswerte streng im Namen von Kunden verwahrt. Diese Klärung betrifft Wertpapierfirmen, die ein MTF betreiben.",
+          "en": "The EBA examines the proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF. It clarifies whether a more proportionate or risk-sensitive application is possible when an investment firm operates an MTF as its core activity and safeguards assets strictly on behalf of clients. This clarification concerns investment firms operating an MTF."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7836",
+        "refnum": "2026_7836"
       }
     ],
     "nis2": [

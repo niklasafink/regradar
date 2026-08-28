@@ -40,11 +40,11 @@ class FrameworkClassification(unittest.TestCase):
 
     def test_wpi_marisk(self):
         from regradar.webexport import _classify
-        self.assertEqual(_classify("Rundschreiben 09/2026 (WA) - WpI MaRisk"), "ifr")
+        self.assertEqual(_classify("Rundschreiben 09/2026 (WA) - WpI MaRisk"), "wpimarisk")
 
     def test_marisk_fuer_wertpapierinstitute(self):
         from regradar.webexport import _classify
-        self.assertEqual(_classify("Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute"), "ifr")
+        self.assertEqual(_classify("Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute"), "wpimarisk")
 
     def test_ka_marisk(self):
         from regradar.webexport import _classify
