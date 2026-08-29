@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T22:33:06Z",
+  "generated_at": "2026-08-29T23:10:22Z",
   "updates": {
     "amla": [
       {
@@ -208,8 +208,8 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "Esas publish first report dora major ict related incidents",
-          "en": "Esas publish first report dora major ict related incidents"
+          "de": "ESAs publish the first report on DORA major ICT-related incidents",
+          "en": "ESAs publish the first report on DORA major ICT-related incidents"
         },
         "s": {
           "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA – ESAs) haben ihren ersten Jahresbericht über schwerwiegende IKT-Vorfälle im EU-Finanzsektor veröffentlicht. Dieser basiert auf einem Meldemechanismus der Digital Operational Resilience Act (DORA) und zeigt, dass IKT-Risiken zunehmend grenzenlos und vernetzt sind.\n\nDer Bericht hebt hervor, dass DORA einheitliche Anforderungen für Finanzunternehmen zur Verwaltung, Klassifizierung und Meldung von IKT-Vorfällen einführt, um die Berichterstattung zu harmonisieren. Rund ein Drittel der 3.383 gemeldeten schwerwiegenden Vorfälle hatte grenzüberschreitende Auswirkungen, was die Notwendigkeit eines robusten Drittpartei-Risikomanagements und einer effektiven Aufsicht über ausgelagerte Dienste unterstreicht. Obwohl nur 10 % der Vorfälle auf Cybersicherheit zurückzuführen waren, ist es entscheidend, dass Finanzunternehmen höchste Cybersicherheitsstandards einhalten, insbesondere angesichts KI-gestützter Tools.\n\nDieser Bericht, der gemäß Artikel 22(2) DORA erstellt wurde, liefert eine Übersicht über Anzahl, Art, Auswirkungen, Abhilfemaßnahmen und Kosten von IKT-Vorfällen. Er unterstreicht die wachsende systemische Dimension des IKT-Risikos und die Bedeutung von Resilienz und Aufsicht für den Finanzsektor.",
@@ -492,6 +492,50 @@
         ]
       },
       {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities",
+          "en": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities"
+        },
+        "s": {
+          "de": "Die EIOPA hat eine Konsultation zu vorgeschlagenen Änderungen der Offenlegungspflichten für Versicherungsunternehmen im Rahmen der EU-Taxonomie für ökologisch nachhaltige Aktivitäten gestartet. Ziel ist es, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Taxonomie-Berichtspflichten besser an andere nachhaltige Finanzrahmen sowie an die Anforderungen für andere Finanzinstitute anzupassen.\n\nZu den wesentlichen Änderungen gehört die Überarbeitung des aktuellen „Underwriting KPI“ für (Rück-)Versicherer, indem der Nenner in den Taxonomie- und Förderfähigkeitsquoten auf taxonomie-fähige Geschäftsbereiche eingeengt und der KPI in „Adaptation Underwriting KPI“ umbenannt wird. Zudem wird die Einführung eines neuen „Green Insured Activities KPI“ erwogen, um das Verhältnis taxonomiekonformer versicherter Aktivitäten zu messen. Dieser KPI würde alle Policen abdecken, die an Unternehmen verkauft werden, die unter die Taxonomie-Verordnung fallen, sowie private Versicherungspolicen für Wohnen und Transport. Die Berichterstattung soll durch die Entfernung von Angaben zu Gas- und Nuklearaktivitäten vereinfacht und die Taxonomie-Offenlegungen in den Jahresberichten der Versicherungsunternehmen stärker hervorgehoben werden.\n\nInteressenträger sind eingeladen, bis zum 12. August 2026 Feedback zu den Konsultationspapieren abzugeben. Eine öffentliche Anhörung findet am 16. Juli 2026 statt.",
+          "en": "EIOPA has launched a consultation on proposed changes to insurance corporate disclosures under the EU Taxonomy framework for environmentally sustainable activities. The aim is to increase transparency, simplify reporting, and better align Taxonomy-related reporting requirements with other sustainable finance frameworks and requirements applicable to other financial institutions.\n\nKey amendments include revising the current 'underwriting KPI' for (re)insurers by narrowing the denominator in the Taxonomy and Eligibility ratios to Taxonomy-eligible lines of business and renaming the KPI to 'Adaptation Underwriting KPI'. The introduction of a new 'Green Insured Activities KPI' is also being considered to measure the ratio of Taxonomy-aligned insured activities. This KPI would cover all policies sold to companies reporting under the Taxonomy Regulation, as well as retail insurance policies for housing and transport. Reporting is to be simplified by removing disclosures on gas and nuclear activities and giving more prominence to Taxonomy disclosures within insurers' annual reports.\n\nStakeholders are invited to provide feedback on the consultation papers by 12 August 2026. A public hearing will take place on 16 July 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/eiopa-consults-enhancements-insurance-corporate-disclosures-under-eu-taxonomy-environmentally-2026-07-01_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          },
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission veröffentlicht Entwürfe zu Anpassungen an den technischen Bewertungskriterien für die EU-Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwuerfe-zu-anpassungen-an-den-technischen-bewertungskriterien-fuer-die-eu-taxonomie-verordnung/",
+            "d": "23.03.2026"
+          },
+          {
+            "f": "KPMG",
+            "ti": "Delegierter Rechtsakt zur Vereinfachung der Berichterstattung nach der EU-Taxonomie-Verordnung im EU-Amtsblatt veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/delegierter-rechtsakt-zur-vereinfachung-der-berichterstattung-nach-der-eu-taxonomie-verordnung-im-eu-amtsblatt-veroeffentlicht/",
+            "d": "09.01.2026"
+          },
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission verabschiedet Delegierten Rechtsakt zur Vereinfachung der Berichterstattung nach der EU-Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-verabschiedet-delegierten-rechtsakt-zur-vereinfachung-der-berichterstattung-nach-der-eu-taxonomie-verordnung/",
+            "d": "14.07.2025"
+          }
+        ]
+      },
+      {
         "d": "21.04.2021",
         "t": {
           "de": "Gesetzentwurf",
@@ -593,51 +637,6 @@
             "ti": "Simplification: EBA aktualisiert Säule 3 Offenlegungspflichten zu ESG-Risiken, Eigenkapital- und Schattenbank-Engagements",
             "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/simplification-eba-aktualisiert-saeule-3-offenlegungspflichten-zu-esg-risiken-eigenkapital-und-schattenbank-engagements/",
             "d": "30.06.2026"
-          },
-          {
-            "f": "KPMG",
-            "ti": "BaFin stimmt No-Action-Letter der EBA zu ESG-Offenlegungspflichten ausdrücklich zu",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-stimmt-no-action-letter-der-eba-zu-esg-offenlegungspflichten-ausdruecklich-zu/",
-            "d": "29.09.2025"
-          }
-        ]
-      },
-      {
-        "d": "25.05.2018",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Institutional investors' and asset managers' duties regarding sustainability",
-          "en": "Institutional investors' and asset managers' duties regarding sustainability"
-        },
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag zu den Pflichten institutioneller Investoren und Vermögensverwalter im Bereich Nachhaltigkeit vorgelegt. Dieser Vorschlag zielt darauf ab, die Offenlegung von ESG-Risiken (Umwelt, Soziales, Governance) zu verbessern und die Integration von Nachhaltigkeitsaspekten in Anlageentscheidungen zu fördern.\n\nDie Regelungen sind relevant für Finanzinstitute, insbesondere Banken, institutionelle Investoren und Vermögensverwalter. Fachbeiträge von PwC und KPMG weisen auf die Notwendigkeit hin, Offenlegungspflichten gemäß Pillar 3 zu beachten und die ESG-Compliance, auch mittels KI-gestützter Lösungen, effizient zu gestalten. Die BaFin hat einem No-Action-Letter der EBA zu ESG-Offenlegungspflichten zugestimmt, was die praktische Relevanz unterstreicht.",
-          "en": "The European Commission has submitted a legislative proposal concerning the duties of institutional investors and asset managers regarding sustainability. This proposal aims to improve the disclosure of ESG (Environmental, Social, and Governance) risks and to promote the integration of sustainability aspects into investment decisions.\n\nThe regulations are relevant for financial institutions, particularly banks, institutional investors, and asset managers. Expert contributions from PwC and KPMG highlight the need to comply with Pillar 3 disclosure requirements and to efficiently manage ESG compliance, including through AI-powered solutions. The BaFin has agreed to an EBA No-Action Letter on ESG disclosure requirements, underscoring its practical relevance."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1185",
-        "imp": "medium",
-        "refnum": "Ares(2017)5524115",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Sustainability Blog: ESG Pillar 3 Disclosure reaches next level: New Instructions reshape how banks disclose climate, social and governance risks",
-            "url": "https://blogs.pwc.de/de/sustainability/article/255545/esg-pillar-3-disclosure-reaches-next-level-new-instructions-reshape-how-banks-disclose-climate-social-and-governance-risks/",
-            "d": "01.07.2026"
-          },
-          {
-            "f": "KPMG",
-            "ti": "Simplification: EBA aktualisiert Säule 3 Offenlegungspflichten zu ESG-Risiken, Eigenkapital- und Schattenbank-Engagements",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/simplification-eba-aktualisiert-saeule-3-offenlegungspflichten-zu-esg-risiken-eigenkapital-und-schattenbank-engagements/",
-            "d": "30.06.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Sustainability Blog: AI-powered ESG compliance: Navigating SFDR 2.0 efficiently",
-            "url": "https://blogs.pwc.de/de/sustainability/article/253079/ai-powered-esg-compliance-navigating-sfdr-20-efficiently/",
-            "d": "09.02.2026"
           },
           {
             "f": "KPMG",
@@ -833,8 +832,8 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "New proportionality framework under solvency ii",
-          "en": "New proportionality framework under solvency ii"
+          "de": "New proportionality framework under Solvency II",
+          "en": "New proportionality framework under Solvency II"
         },
         "s": {
           "de": "Die EIOPA veranstaltet ein öffentliches Event zum neuen Proportionalitätsrahmen der überarbeiteten Solvency II-Richtlinie. Dieser Rahmen soll sicherstellen, dass die regulatorischen Anforderungen die Art, den Umfang und die Komplexität der Risiken von Unternehmen angemessen widerspiegeln.\n\nDer neue Rahmen führt eine Kategorie für kleine und nicht-komplexe Unternehmen (SNCUs) und Gruppen (SNCGs) ein, die bestimmte quantitative und qualitative Kriterien über zwei aufeinanderfolgende Geschäftsjahre erfüllen müssen. Zudem können Aufsichtsbehörden Proportionalitätsmaßnahmen für Unternehmen gewähren, die nicht formal die SNC-Kriterien erfüllen, aber ein proportionales Vorgehen rechtfertigen. Dies betrifft europäische (Rück-)Versicherer.\n\nDas Event findet am 01.07.2026 statt. Die EIOPA wird technische Spezifikationen zur Berechnung der SNC-Kriterien und deren Marktauswirkungen vorstellen. Eine Agenda und Präsentationen sind verfügbar.",
@@ -896,8 +895,8 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "Public working draft 2 pwd2 solvency ii 2100 dpm and taxonomy and irrd dpm and taxonomy",
-          "en": "Public working draft 2 pwd2 solvency ii 2100 dpm and taxonomy and irrd dpm and taxonomy"
+          "de": "Public Working Draft 2 (PWD2) of the Solvency II 2.10.0 DPM and taxonomy and the IRRD DPM and taxonomy",
+          "en": "Public Working Draft 2 (PWD2) of the Solvency II 2.10.0 DPM and taxonomy and the IRRD DPM and taxonomy"
         },
         "s": {
           "de": "EIOPA plant die Veröffentlichung des zweiten öffentlichen Arbeitsentwurfs (PWD2) der Solvency II 2.10.0 DPM und Taxonomie, einschließlich Validierungen, am 18. Mai 2026. Dies dient der Überprüfung durch Stakeholder auf der EIOPA-Webseite für aufsichtsrechtliches Meldewesen.\n\nWährend einer öffentlichen Veranstaltung und Fragerunde am 3. Juni 2026 wird EIOPA die Änderungen gegenüber dem ersten Arbeitsentwurf zusammenfassen und Fragen beantworten. Stakeholder werden auch über die bevorstehende IRRD-Taxonomie-Veröffentlichung informiert. Die KPMG hat in diesem Zusammenhang bereits auf die Überarbeitung der Delegierten Verordnung zu Solvency II und die Entlastung der Versicherer durch Änderungen der aufsichtlichen Melde- und Offenlegungspflichten hingewiesen.\n\nKommentare zum PWD2 können nach der Veröffentlichung über die üblichen Kontaktadressen für technische DPM/XBRL-Probleme und geschäftliche/technische Validierungen eingereicht werden.",
