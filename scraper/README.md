@@ -17,6 +17,7 @@ python3 -m regradar report 30     # neueste Regulatory Events
 python3 -m regradar export data/export.json
 python3 -m regradar big4         # Big-4-Fachbeiträge einsammeln (PwC, KPMG, Deloitte …)
 python3 -m regradar export-web   # schreibt web/lib/live.json für das Frontend
+python3 -m regradar gap-report   # Big4-Artikel ohne Primärquelle per Mail melden
 ```
 
 ## Frontend-Anbindung
@@ -49,6 +50,16 @@ Treffer landen als `adv`-Feld am Update in `live.json` und erscheinen im
 Frontend auf Update- und Rahmenwerk-Detailseiten („So kommentieren die
 Big 4"). EY pflegt kein scrapebares deutsches Regulatory-Angebot und fehlt
 deshalb bewusst.
+
+**Gap-Report** (`regradar/gapreport.py`, Befehl `gap-report`): meldet dem
+Betreiber per Mail (Resend, max. 1×/Tag) Big4-/Kanzlei-Artikel der letzten
+14 Tage, die trotz strenger LLM-Prüfung keinem gescrapten Behörden-Dokument
+zuzuordnen sind — Kandidaten für neue Scraper-Quellen. Vier Stufen:
+big4_matches, Relevanzfilter (Cache `big4_gap_relevance`), Abgleich gegen
+Dokumente der letzten 180 Tage (im Zweifel „abgedeckt"), ohne
+`OPENROUTER_API_KEY` keine Meldung. Jeder Artikel wird nur einmal gemeldet
+(`big4_gap_reported`); `--force` übergeht die Tages-Sperre (`big4_gap_runs`).
+Läuft am Ende von `run_hourly.sh`.
 
 Für **DIP** (Bundestag) den frei publizierten API-Key von
 [dip.bundestag.de](https://dip.bundestag.de) (Hilfe → DIP-API) setzen:
