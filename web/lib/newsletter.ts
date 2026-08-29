@@ -136,14 +136,13 @@ export function renderNewsletter(
       ${items}
     </table>
     ${more > 0 ? `<p style="margin:16px 0 0;font-size:13px;color:#64748b">und ${more} weitere Updates auf der Website.</p>` : ""}
-    <p style="margin:28px 0">
+    <p style="margin:28px 0 16px">
       <a href="${base}/updates"
-         style="background:#0f172a;color:#ffffff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px">
+         style="display:inline-block;white-space:nowrap;background:#0f172a;color:#ffffff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px;margin:0 8px 12px 0">
         Alle Updates ansehen →
       </a>
-      &nbsp;&nbsp;
       <a href="${base}/fristen"
-         style="color:#0f172a;border:1px solid #e2e8f0;padding:11px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px">
+         style="display:inline-block;white-space:nowrap;color:#0f172a;border:1px solid #e2e8f0;padding:11px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px;margin:0 0 12px 0">
         Offene Fristen →
       </a>
     </p>
