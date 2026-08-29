@@ -10,6 +10,8 @@ Befehle:
   export-web [pfad]          Live-Updates für das Frontend (web/lib/live.json)
   big4                       Fachbeiträge der Big 4 (PwC, KPMG, Deloitte Legal
                              u. a.) einsammeln; Zuordnung läuft im export-web
+  gap-report [--force]       Big4-Beiträge ohne gescrapte Primärquelle per
+                             Mail melden (max. 1×/Tag; --force ignoriert das)
 """
 import json
 import os
@@ -154,6 +156,13 @@ def main(argv=None):
             print("Big4: {pwc_blogs} PwC-Blog, {pwc_legal} PwC-Legal, {kpmg} KPMG, "
                   "{deloitte} Deloitte, {wvln} WvlN neu – {total} Artikel gesamt, "
                   "{framework_mapped} mit Rahmenwerk-Zuordnung".format(**stats))
+        elif cmd == "gap-report":
+            from .gapreport import run as gap_run
+            info = gap_run(conn, force="--force" in argv)
+            print("Gap-Report: {status}, {gaps} Lücke(n){extra}".format(
+                status=info["status"], gaps=info["gaps"],
+                extra=" in {} Themen (aus {} geprüften Artikeln)".format(
+                    info["themen"], info["geprüft"]) if "themen" in info else ""))
         elif cmd == "export-web":
             from .webexport import export_web
             info = export_web(conn, argv[1] if len(argv) > 1 else None)

@@ -16,6 +16,9 @@ echo "=== $(date '+%Y-%m-%d %H:%M:%S') Lauf startet ===" >> "$LOG"
 /usr/bin/python3 -m regradar run all >> "$LOG" 2>&1
 /usr/bin/python3 -m regradar big4 >> "$LOG" 2>&1 || echo "big4 fehlgeschlagen (weiter)" >> "$LOG"
 /usr/bin/python3 -m regradar export-web >> "$LOG" 2>&1
+# Lücken-Report: Big4-Artikel ohne gescrapte Primärquelle (max. 1 Mail/Tag).
+# Läuft NACH export-web, damit big4_matches aktuell sind.
+/usr/bin/python3 -m regradar gap-report >> "$LOG" 2>&1 || echo "gap-report fehlgeschlagen (weiter)" >> "$LOG"
 
 # Nur committen/pushen, wenn sich live.json inhaltlich geändert hat
 # (mehr als nur der generated_at-Zeitstempel). Vercel deployt dann automatisch

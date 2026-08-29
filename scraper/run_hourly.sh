@@ -13,6 +13,10 @@ echo "=== Lauf gestartet: $(date '+%Y-%m-%d %H:%M:%S') ==="
 /usr/bin/python3 -m regradar run all
 /usr/bin/python3 -m regradar big4
 /usr/bin/python3 -m regradar export-web
+# Lücken-Report: Big4-Artikel ohne gescrapte Primärquelle. Verschickt intern
+# max. eine Mail pro Kalendertag (Tabelle big4_gap_runs), daher hier im
+# Stundenlauf unbedenklich.
+/usr/bin/python3 -m regradar gap-report || echo "gap-report fehlgeschlagen (weiter)"
 
 # Auto-Push + Deploy: nur wenn sich live.json inhaltlich geändert hat
 # (mehr als nur der generated_at-Zeitstempel)
