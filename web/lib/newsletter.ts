@@ -197,7 +197,7 @@ export async function runNewsletter(opts: {
 
   const base = process.env.APP_URL ?? "http://localhost:3000";
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const from = `Regulatory Radar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
+  const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
 
   for (const sub of subs) {
     const rel = relevantFor(sub, sorted);

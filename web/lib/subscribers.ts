@@ -29,22 +29,26 @@ export function redis(): Redis {
   return client;
 }
 
-// Liefert true, wenn die E-Mail vorher noch nicht abonniert war.
+// "new": E-Mail war noch nicht abonniert. "expanded": bestehender Abonnent
+// hat mindestens eine neue Quelle hinzubekommen. "unchanged": alles schon
+// vorhanden (z. B. wiederholter Aufruf desselben Bestätigungslinks).
 export async function addSubscriber(
   email: string,
   newProviders: string[],
-): Promise<boolean> {
+): Promise<"new" | "expanded" | "unchanged"> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
   const providers = new Set(existing?.providers ?? []);
+  const before = providers.size;
   for (const p of newProviders) if (p) providers.add(p);
+  if (existing && providers.size === before) return "unchanged";
   await redis().hset(KEY, {
     [key]: {
       providers: [...providers],
       confirmedAt: existing?.confirmedAt ?? new Date().toISOString(),
     } satisfies Stored,
   });
-  return !existing;
+  return existing ? "expanded" : "new";
 }
 
 export async function removeSubscriber(email: string): Promise<boolean> {

@@ -1,5 +1,5 @@
 import { PROVIDERS } from "@/lib/data";
-import { sendConfirmationEmail } from "@/lib/email";
+import { sendConfirmationEmail, sendSubscriberNotification } from "@/lib/email";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -34,6 +34,16 @@ export async function POST(request: Request) {
   } catch (e) {
     console.error("subscribe failed:", e);
     return Response.json({ error: "send_failed" }, { status: 502 });
+  }
+  try {
+    await sendSubscriberNotification(
+      email,
+      chosen.map((p) => p.id),
+      "requested",
+    );
+  } catch (e) {
+    // Benachrichtigung darf die Anmeldung nicht blockieren.
+    console.error("subscriber notification failed:", e);
   }
   return Response.json({ ok: true });
 }

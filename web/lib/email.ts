@@ -93,7 +93,7 @@ export async function sendConfirmationEmail(
     : "";
 
   const { error } = await resend.emails.send({
-    from: `Regulatory Radar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
     to: email,
     subject: "Bitte bestätigen: Update-Benachrichtigungen von Regulatory Radar",
     text: `regulatoryradar
@@ -122,11 +122,30 @@ Der Link ist 48 Stunden gültig. Wenn Sie diese E-Mail nicht angefordert haben, 
   if (error) throw new Error(error.message);
 }
 
-// Interne Benachrichtigung an den Betreiber bei jeder bestätigten Anmeldung.
+// Interne Benachrichtigung an den Betreiber: beim Absenden des Formulars
+// ("requested"), bei der ersten Bestätigung ("confirmed") und wenn ein
+// bestehender Abonnent neue Quellen hinzufügt ("expanded"). Wiederholte
+// Aufrufe desselben Bestätigungslinks (z. B. durch Mail-Scanner) ändern
+// nichts mehr und lösen daher keine Mail aus.
+const NOTIFY_TEXT = {
+  requested: {
+    subject: "Neue Anmeldung",
+    line: "Neue Newsletter-Anmeldung (Bestätigungsmail verschickt)",
+  },
+  confirmed: {
+    subject: "Abo bestätigt",
+    line: "Newsletter-Anmeldung bestätigt",
+  },
+  expanded: {
+    subject: "Abo erweitert",
+    line: "Bestehender Abonnent hat neue Quellen hinzugefügt",
+  },
+} as const;
+
 export async function sendSubscriberNotification(
   subscriberEmail: string,
   providers: string[],
-  isNew: boolean,
+  stage: keyof typeof NOTIFY_TEXT,
 ) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) return;
@@ -134,13 +153,13 @@ export async function sendSubscriberNotification(
   const to = process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de";
 
   const { error } = await resend.emails.send({
-    from: `Regulatory Radar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
     to,
-    subject: `${isNew ? "Neuer Abonnent" : "Abo erweitert"}: ${subscriberEmail}`,
+    subject: `${NOTIFY_TEXT[stage].subject}: ${subscriberEmail}`,
     html: `
       <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
         <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
-        <p>${isNew ? "Neue Newsletter-Anmeldung bestätigt" : "Bestehender Abonnent hat sein Abo erweitert"}:</p>
+        <p>${NOTIFY_TEXT[stage].line}:</p>
         <p><strong>${subscriberEmail}</strong></p>
         <p>Quellen: ${providers.join(", ") || "—"}</p>
         <p style="color:#64748b;font-size:13px">${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })} Uhr</p>
