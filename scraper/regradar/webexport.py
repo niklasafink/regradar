@@ -231,8 +231,12 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
              if adv_by_doc[r["document_id"]] else ""))
         for r, _, date in selected]
 
+    # Für die Zusammenfassung zusätzlich die Original-URL mitgeben: summarize
+    # ruft den Volltext der Primärquelle ab (fulltext.py), damit der Inhalt
+    # der Meldung stimmt und nicht nur auf dem Teaser basiert.
+    urls = {r["document_id"]: r["canonical_url"] for r, _, _ in selected}
     from .summarize import summarize
-    summaries = summarize(conn, contexts)
+    summaries = summarize(conn, [(i, t, urls[i]) for i, t in contexts])
 
     # Impact-Urteil per LLM nach den Regeln in scraper/IMPACT.md; ohne
     # Urteil greift im Frontend die Dokumenttyp-Heuristik (logic.ts).

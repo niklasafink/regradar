@@ -42,6 +42,19 @@ Dokumenttyp-Heuristik. Die App mischt die Live-Updates in die
 bestehenden Zeitleisten (`web/lib/live.ts`); Aktualisierung = `run all` +
 `big4` + `export-web`, danach lädt Next.js die neue JSON automatisch.
 
+**LLM-Zusammenfassungen** (`regradar/summarize.py` + `regradar/fulltext.py`):
+für jedes exportierte Update lädt der Export den Volltext der Original-Meldung
+(HTML per Tag-Stripping; bei dünnen Dokumentseiten à la ESMA zusätzlich das
+verlinkte PDF, PDF-Extraktion best effort über FlateDecode, Cache
+`doc_fulltext`) und lässt daraus eine Zusammenfassung in bis zu 3 Absätzen
+schreiben (Inhalt / Relevanz / Fristen, Titel passender Big4-Beiträge als
+Kontext, Cache `llm_summary`, optional `OPENROUTER_SUMMARY_MODEL`). Die
+Konstante `FORMAT` in `summarize.py` versioniert den Cache: bei
+Prompt-Änderungen hochzählen, dann regeneriert der nächste Lauf alle
+Zusammenfassungen. Ohne API-Key oder wenn die Extraktion nichts Brauchbares
+liefert (JS-Seiten, gescannte PDFs), fällt das Update auf den bereinigten
+Original-Teaser zurück.
+
 **Big-4-Kommentare** (`regradar/big4.py`, Befehl `big4`): sammelt Fachbeiträge
 von PwC (fünf WordPress-Blogs per RSS), PwC Legal (HTML-Listing), KPMG
 Klardenker Financial-Services-Hub (HTML-Listing), Deloitte Legal (Sitemap
