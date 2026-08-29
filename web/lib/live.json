@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T22:55:22Z",
+  "generated_at": "2026-08-29T13:03:44Z",
   "updates": {
     "dora": [
       {
@@ -14,8 +14,8 @@
           "en": "Compliance table on the Joint Guidelines on costs and losses under DORA"
         },
         "s": {
-          "de": "Ein Compliance-Tabelle zu den gemeinsamen Leitlinien für Kosten und Verluste gemäß DORA wurde veröffentlicht. Dies betrifft Finanzunternehmen. Die Veröffentlichung erfolgte am 30.07.2026.",
-          "en": "A compliance table on the Joint Guidelines on costs and losses under DORA has been published. This applies to financial entities. The publication was made on 30.07.2026."
+          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der ESMA zu Kosten und Verlusten gemäß DORA (Digital Operational Resilience Act). Es dient der Überwachung der Einhaltung dieser Leitlinien.\n\nFinanzunternehmen, die unter DORA fallen, müssen die Einhaltung der Vorgaben zu Kosten und Verlusten sicherstellen. Die Tabelle hilft, die Umsetzung der Anforderungen zu überprüfen und zu dokumentieren.\n\nDas Dokument wurde am 27.08.2026 veröffentlicht.",
+          "en": "This document is a compliance table for ESMA's Joint Guidelines on costs and losses under DORA (Digital Operational Resilience Act). It is used to monitor adherence to these guidelines.\n\nFinancial entities subject to DORA must ensure compliance with the provisions on costs and losses. The table helps to review and document the implementation of these requirements.\n\nThe document was published on 27.08.2026."
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
         "refnum": "ESMA75-1012365701-566"
@@ -32,8 +32,8 @@
           "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
         },
         "s": {
-          "de": "Die ESAs fordern eine verbesserte Governance und konsistente Aufsicht, um IKT-Risiken durch neue KI-Modelle im EU-Finanzsektor zu mindern. Dies betrifft Finanzunternehmen in der EU. Die Forderung wurde am 31.07.2026 veröffentlicht.",
-          "en": "The ESAs call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector. This applies to financial undertakings in the EU. The call was published on 31.07.2026."
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) fordern einen sektorübergreifenden, risikobasierten und konsistenten Aufsichtsansatz zur Minderung von IKT-Risiken, die sich aus „Frontier AI Models“ ergeben. Dies soll die operationelle Resilienz von Finanzunternehmen gegenüber Cyberrisiken im Zusammenhang mit diesen KI-Modellen stärken.\n\nDie Meldung ist relevant für alle Finanzunternehmen im EU-Finanzsektor. Sie betont die Notwendigkeit, bestehende regulatorische Anforderungen zu berücksichtigen und sich auf Prävention und Erkennung von Risiken zu konzentrieren. Die ESAs berücksichtigen dabei den Aktionsplan der Europäischen Kommission zu Cybersicherheit und Künstlicher Intelligenz sowie Veröffentlichungen anderer relevanter Behörden.\n\nDie Veröffentlichung erfolgte am 31.07.2026.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) are calling for a cross-sectoral, risk-based, and consistent supervisory approach to mitigate ICT risks arising from frontier AI models. This aims to strengthen the operational resilience of financial entities against cyber risks linked to these AI models.\n\nThis announcement is relevant for all financial entities within the EU financial sector. It emphasizes the need to consider existing regulatory requirements and to focus on the prevention and detection of risks. The ESAs incorporate the European Commission’s Action Plan on Cybersecurity and Artificial Intelligence, as well as publications from other relevant authorities.\n\nThe publication date was 31.07.2026."
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision"
       },
@@ -49,8 +49,8 @@
           "en": "Esas publish first report dora major ict related incidents"
         },
         "s": {
-          "de": "Die ESAs haben am 03.06.2026 ihren ersten Bericht über größere IKT-bezogene Vorfälle unter DORA veröffentlicht. Dieser Bericht analysiert und fasst die ersten Meldungen von schwerwiegenden IKT-Vorfällen zusammen. Er ist relevant für Finanzunternehmen, die unter die DORA-Verordnung fallen.",
-          "en": "The ESAs published their first report on major ICT-related incidents under DORA on 03.06.2026. This report analyzes and summarizes the initial notifications of severe ICT incidents. It is relevant for financial entities falling under the DORA regulation."
+          "de": "Die ESAs (Europäische Aufsichtsbehörden) haben ihren ersten Bericht über schwerwiegende IKT-Vorfälle im Rahmen von DORA veröffentlicht. Dies betrifft die Meldung und Analyse von Vorfällen im Bereich der Informations- und Kommunikationstechnologie.\n\nDer Bericht ist für Finanzunternehmen relevant, die unter die DORA-Verordnung fallen, da er Einblicke in die Erwartungen und Anforderungen bezüglich der Meldung von IKT-Vorfällen gibt. KPMG hebt in ihrem Fachbeitrag die Bedeutung dieses ersten Berichts hervor.\n\nDie Veröffentlichung erfolgte am 03.06.2026.",
+          "en": "The ESAs (European Supervisory Authorities) have published their first report on major ICT-related incidents under DORA. This concerns the reporting and analysis of incidents in the field of information and communication technology.\n\nThe report is relevant for financial entities subject to the DORA regulation, as it provides insights into the expectations and requirements for reporting ICT incidents. KPMG emphasizes the significance of this initial report in their expert contribution.\n\nThe publication date is 03.06.2026."
         },
         "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
         "adv": [
@@ -74,8 +74,8 @@
           "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
         },
         "s": {
-          "de": "Die Europäische Kommission arbeitet am Digital Operational Resilience of Financial Services (DORFS) Act. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is working on the Digital Operational Resilience of Financial Services (DORFS) Act. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Der Digital Operational Resilience of Financial Services (DORFS) Act, besser bekannt als DORA, zielt darauf ab, die digitale operationelle Widerstandsfähigkeit im Finanzsektor zu stärken. Er legt einheitliche Anforderungen an die Sicherheit von Netz- und Informationssystemen für Finanzunternehmen fest.\n\nFür Finanzinstitute bedeutet DORA eine Anpassung ihrer IT-Governance und Risikomanagement-Prozesse. Insbesondere die Auslagerung von IKT-Dienstleistungen wird durch technische Regulierungsstandards präzisiert, was weitreichende Implikationen für die Vertragsgestaltung und Überwachung von Drittanbietern hat. Die BaFin hat bereits Übersichten zu den Dokumentationsanforderungen nach DORA veröffentlicht.\n\nDer Verfahrensstand ist der Adoption Workflow, was auf eine bevorstehende oder bereits erfolgte Verabschiedung hindeutet. Die Veröffentlichung delegierter und durchführender Verordnungen im EU-Amtsblatt konkretisiert die Anwendung der DORA-Vorschriften.",
+          "en": "The Digital Operational Resilience of Financial Services (DORFS) Act, commonly known as DORA, aims to strengthen digital operational resilience within the financial sector. It establishes uniform requirements for the security of network and information systems for financial entities.\n\nFor financial institutions, DORA necessitates an adjustment of their IT governance and risk management processes. The outsourcing of ICT services, in particular, is specified by technical regulatory standards, which has far-reaching implications for contract design and the monitoring of third-party providers. BaFin has already published overviews of the documentation requirements under DORA.\n\nThe procedural status is the Adoption Workflow, indicating an impending or already completed adoption. The publication of delegated and implementing regulations in the EU Official Journal further specifies the application of DORA provisions."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
         "adv": [
@@ -119,8 +119,8 @@
           "en": "Anschreiben zum Rundschreiben 09/2026 (WA)"
         },
         "s": {
-          "de": "Die BaFin hat ein Anschreiben zum Rundschreiben 09/2026 (WA) veröffentlicht, das die Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) betrifft. Dieses Rundschreiben richtet sich an Wertpapierinstitute. Weitere Details zu Fristen sind dem Text nicht zu entnehmen.",
-          "en": "The BaFin has published a cover letter for Circular 09/2026 (WA), which concerns the minimum requirements for risk management of investment firms (WpI MaRisk). This circular is addressed to investment firms. Further details on deadlines are not available in the text."
+          "de": "Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk)",
+          "en": "Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk)"
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_09_26_anschreiben_zum_rundschreiben_09_2026_wa.html",
         "refnum": "09/2026",
@@ -163,8 +163,8 @@
           "en": "Rundschreiben 09/2026 (WA) - WpI MaRisk"
         },
         "s": {
-          "de": "Die BaFin hat das Rundschreiben 09/2026 (WA) zu den Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Es richtet sich an Wertpapierinstitute. Der Text enthält keine Angaben zu Fristen.",
-          "en": "The BaFin has published Circular 09/2026 (WA) on the minimum requirements for risk management of investment firms (WpI MaRisk). It is addressed to investment firms. The text does not contain any information on deadlines."
+          "de": "Das Rundschreiben 09/2026 (WA) der BaFin legt die Mindestanforderungen an das Risikomanagement (WpI MaRisk) für Wertpapierinstitute fest. Es konkretisiert die aufsichtsrechtlichen Erwartungen an die Ausgestaltung der Risikosteuerung und -kontrolle in diesen Instituten.\n\nDiese Regelungen sind für kleine und mittlere Wertpapierinstitute relevant. Die Fachbeiträge betonen die Bedeutung dieses Schrittes für einen eigenständigen und praxistauglichen Aufsichtsrahmen, der speziell auf die Bedürfnisse dieser Institute zugeschnitten ist.\n\nDas Rundschreiben wurde am 24.08.2026 veröffentlicht.",
+          "en": "BaFin Circular 09/2026 (WA) establishes the Minimum Requirements for Risk Management (WpI MaRisk) for investment firms. It specifies the supervisory expectations for the design of risk management and control in these institutions.\n\nThese regulations are relevant for small and medium-sized investment firms. Expert contributions highlight the significance of this step for an independent and practical supervisory framework tailored to the needs of these institutions.\n\nThe circular was published on 24.08.2026."
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0926_wpi_marisk.html",
         "refnum": "09/2026",
@@ -207,8 +207,8 @@
           "en": "Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute"
         },
         "s": {
-          "de": "Die BaFin hat Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (MaRisk) veröffentlicht. Dies schafft einen eigenständigen Aufsichtsrahmen für kleine und mittlere Wertpapierinstitute. Der Text enthält keine Angaben zu Fristen.",
-          "en": "The BaFin has published minimum requirements for risk management of investment firms (MaRisk). This creates an independent supervisory framework for small and medium-sized investment firms. The text does not contain any information on deadlines."
+          "de": "Die BaFin hat die Mindestanforderungen an das Risikomanagement (MaRisk) für kleine und mittlere Wertpapierinstitute veröffentlicht. Dies stellt einen wichtigen Meilenstein für einen eigenständigen und praxistauglichen Aufsichtsrahmen für diese Institute dar.\n\nDie Veröffentlichung ist für Wertpapierinstitute von Bedeutung, da sie einen neuen aufsichtsrechtlichen Risikorahmen schafft. Die Fachbeiträge unterstreichen die Relevanz dieser MaRisk für die Praxis der betroffenen Institute.\n\nDie Veröffentlichung erfolgte am 24.08.2026.",
+          "en": "BaFin has published the Minimum Requirements for Risk Management (MaRisk) for small and medium-sized investment firms. This represents an important milestone for an independent and practical supervisory framework for these institutions.\n\nThis publication is significant for investment firms as it establishes a new supervisory risk framework. Expert contributions emphasize the practical relevance of these MaRisk for the affected institutions.\n\nThe publication took place on 24.08.2026."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_08_24_rundschreiben_wpi_marisk.html",
         "adv": [
@@ -246,8 +246,8 @@
           "en": "Compliance table on the Guidelines on Enforcement of Sustainability Information"
         },
         "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien zur Durchsetzung von Nachhaltigkeitsinformationen veröffentlicht. Diese Tabelle richtet sich an Finanzunternehmen, die Nachhaltigkeitsinformationen bereitstellen müssen. Der Text enthält keine Angaben zu Fristen.",
-          "en": "ESMA has published a compliance table on the Guidelines on Enforcement of Sustainability Information. This table is aimed at financial companies that need to provide sustainability information. The text does not contain any information on deadlines."
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien zur Durchsetzung von Nachhaltigkeitsinformationen veröffentlicht. Diese Tabelle ist Teil der Bemühungen, die Offenlegung von ESG-Informationen zu standardisieren und zu verbessern.\n\nDie Leitlinien sind für Finanzunternehmen relevant, die Nachhaltigkeitsinformationen offenlegen müssen. Fachbeiträge von PwC und KPMG weisen darauf hin, dass die Offenlegung von ESG-Risiken, insbesondere im Rahmen von Säule 3, eine neue Ebene erreicht und Banken ihre Offenlegungspraktiken anpassen müssen. Dies betrifft auch die technischen Bewertungskriterien der EU-Taxonomie-Verordnung und ESG-Stresstests.\n\nEs handelt sich um eine Compliance-Tabelle zu den Leitlinien, die am 24.08.2026 veröffentlicht wurden.",
+          "en": "ESMA has published a compliance table on the Guidelines on Enforcement of Sustainability Information. This table is part of efforts to standardize and improve the disclosure of ESG information.\n\nThe guidelines are relevant for financial companies that are required to disclose sustainability information. Expert contributions from PwC and KPMG indicate that the disclosure of ESG risks, particularly under Pillar 3, is reaching a new level and banks need to adapt their disclosure practices. This also affects the technical assessment criteria of the EU Taxonomy Regulation and ESG stress tests.\n\nThis is a compliance table for the guidelines, which were published on 24.08.2026."
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-enforcement-sustainability-information",
         "refnum": "ESMA32-992851010-1155",
@@ -290,8 +290,8 @@
           "en": "Public hearing on the Review of the Insurance Disclosures under article 8 of the Taxonomy Regulation"
         },
         "s": {
-          "de": "Die EIOPA veranstaltet eine öffentliche Anhörung zur Überprüfung der Offenlegungspflichten für Versicherungen gemäß Artikel 8 der Taxonomie-Verordnung. Diese Anhörung ist für Versicherungsunternehmen relevant. Das Dokument wurde am 16.07.2026 veröffentlicht.",
-          "en": "EIOPA is holding a public hearing on the review of insurance disclosures under Article 8 of the Taxonomy Regulation. This hearing is relevant for insurance undertakings. The document was published on 16.07.2026."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.eiopa.europa.eu/media/events/public-hearing-review-insurance-disclosures-under-article-8-taxonomy-regulation-2026-07-16_en",
         "adv": [
@@ -333,8 +333,8 @@
           "en": "Integration of sustainability risks and factors in relation to insurance undertakings and insurance distributors"
         },
         "s": {
-          "de": "Die Europäische Kommission befasst sich mit der Integration von Nachhaltigkeitsrisiken und -faktoren für Versicherungsunternehmen und Versicherungsvertreiber. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is addressing the integration of sustainability risks and factors for insurance undertakings and insurance distributors. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Dieser Legislativvorschlag der Europäischen Kommission befasst sich mit der Integration von Nachhaltigkeitsrisiken und -faktoren für Versicherungsunternehmen und Versicherungsvertreiber. Er zielt darauf ab, die Berücksichtigung von ESG-Aspekten in den Geschäftsprozessen dieser Akteure zu verankern.\n\nDie Regelungen sind relevant für Versicherungsunternehmen und -vertreiber. Die Fachbeiträge von KPMG und PwC deuten auf eine hohe Praxisrelevanz hin, insbesondere im Hinblick auf die ESG-Offenlegungspflichten und die Integration von Nachhaltigkeitsstrategien im Versicherungsvertrieb.\n\nDer Vorschlag befindet sich im Adoptions-Workflow.",
+          "en": "This legislative proposal from the European Commission addresses the integration of sustainability risks and factors for insurance undertakings and insurance distributors. It aims to embed the consideration of ESG aspects into the business processes of these entities.\n\nThe regulations are relevant for insurance undertakings and distributors. Expert contributions from KPMG and PwC indicate high practical relevance, particularly concerning ESG disclosure obligations and the integration of sustainability strategies in insurance distribution.\n\nThe proposal is currently in the adoption workflow."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/11962",
         "refnum": "Ares(2019)5605710",
@@ -365,8 +365,8 @@
           "en": "Integration of sustainability risks and factors for undertakings for collective investment in transferable securities"
         },
         "s": {
-          "de": "Die Europäische Kommission befasst sich mit der Integration von Nachhaltigkeitsrisiken und -faktoren für Organismen für gemeinsame Anlagen in übertragbaren Wertpapieren. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is addressing the integration of sustainability risks and factors for undertakings for collective investment in transferable securities. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/11959",
         "refnum": "Ares(2019)5605606",
@@ -403,8 +403,8 @@
           "en": "Strengthening the consideration of sustainability risks and factors for financial products (Directive (EU) 2017/593)"
         },
         "s": {
-          "de": "Die Europäische Kommission befasst sich mit der Stärkung der Berücksichtigung von Nachhaltigkeitsrisiken und -faktoren für Finanzprodukte gemäß der Richtlinie (EU) 2017/593. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is addressing the strengthening of consideration of sustainability risks and factors for financial products under Directive (EU) 2017/593. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12067",
         "refnum": "Ares(2019)7317879",
@@ -441,8 +441,8 @@
           "en": "Institutional investors' and asset managers' duties regarding sustainability"
         },
         "s": {
-          "de": "Die Europäische Kommission befasst sich mit den Pflichten institutioneller Anleger und Vermögensverwalter bezüglich Nachhaltigkeit. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is addressing institutional investors' and asset managers' duties regarding sustainability. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1185",
         "refnum": "Ares(2017)5524115",
@@ -487,8 +487,8 @@
           "en": "European Commission's request for technical advice on the implementation of the amendments to the MiFID II, UCITS Directive, and AIFMD in the context of the Retail Investment Strategy"
         },
         "s": {
-          "de": "Die Europäische Kommission fordert technischen Rat zur Umsetzung der Änderungen der MiFID II, der OGAW-Richtlinie und der AIFMD im Rahmen der Kleinanlegerstrategie an. Dies betrifft den Fondsvertrieb und den Anlegerschutz. Die Frist für die Stellungnahme ist der 24.08.2026.",
-          "en": "The European Commission requests technical advice on the implementation of amendments to MiFID II, the UCITS Directive, and AIFMD in the context of the Retail Investment Strategy. This concerns fund distribution and investor protection. The deadline for comments is 24.08.2026."
+          "de": "Die Europäische Kommission hat die ESMA um technischen Rat zur Umsetzung der Änderungen der MiFID II, der OGAW-Richtlinie und der AIFMD im Kontext der Retail Investment Strategy gebeten. Dies zielt darauf ab, den Anlegerschutz zu stärken und die Funktionsweise des Fondsmanagements zu verbessern.\n\nDiese Anfrage ist für Fondsmanager und alle Finanzinstitute relevant, die unter die MiFID II, OGAW-Richtlinie und AIFMD fallen. Die Änderungen könnten weitreichende Auswirkungen auf die Produktgestaltung, den Vertrieb und die Beratung von Kleinanlegern haben.\n\nDie Anfrage wurde am 24.08.2026 gestellt und betrifft die weitere Ausgestaltung der Retail Investment Strategy.",
+          "en": "The European Commission has requested technical advice from ESMA on the implementation of amendments to MiFID II, the UCITS Directive, and AIFMD in the context of the Retail Investment Strategy. This aims to strengthen investor protection and improve the functioning of fund management.\n\nThis request is relevant for fund managers and all financial institutions falling under MiFID II, the UCITS Directive, and AIFMD. The amendments could have far-reaching implications for product design, distribution, and advice to retail investors.\n\nThe request was made on 24.08.2026 and concerns the further development of the Retail Investment Strategy."
         },
         "url": "https://www.esma.europa.eu/document/european-commissions-request-technical-advice-implementation-amendments-mifid-ii-ucits"
       },
@@ -504,8 +504,8 @@
           "en": "Contact points of national supervisory authorities for communication in the MiFID II framework on supervisory cooperation, authorisation, acquisitions and passporting"
         },
         "s": {
-          "de": "Die ESMA hat eine Referenzliste der Kontaktstellen nationaler Aufsichtsbehörden für die Kommunikation im MiFID II-Rahmenwerk veröffentlicht. Dies betrifft die Zusammenarbeit, Autorisierung, Akquisitionen und das Passporting für Finanzunternehmen. Das Dokument wurde am 04.08.2026 veröffentlicht.",
-          "en": "ESMA has published a reference list of contact points for national supervisory authorities for communication within the MiFID II framework. This concerns supervisory cooperation, authorization, acquisitions, and passporting for financial firms. The document was published on 04.08.2026."
+          "de": "Reference — Investor protection",
+          "en": "Reference — Investor protection"
         },
         "url": "https://www.esma.europa.eu/document/contact-points-national-supervisory-authorities-communication-in-mifid-ii-framework",
         "refnum": "ESMA35-43-1410"
@@ -522,8 +522,8 @@
           "en": "ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds"
         },
         "s": {
-          "de": "Die ESMA hat EuroCTP B.V. als Consolidated Tape Provider (CTP) für Aktien und Exchange Traded Funds (ETFs) autorisiert. Dies stärkt die Transparenz und Effizienz des EU-Aktienmarktes für Marktteilnehmer. Die Autorisierung erfolgte am 27.07.2026.",
-          "en": "ESMA has authorised EuroCTP B.V. as the Consolidated Tape Provider (CTP) for shares and exchange-traded funds (ETFs). This strengthens the transparency and efficiency of the EU equity market for market participants. The authorisation was granted on 27.07.2026."
+          "de": "Die ESMA hat EuroCTP B.V. als Consolidated Tape Provider (CTP) für Aktien und Exchange Traded Funds (ETFs) zugelassen. Dies ist ein wichtiger Schritt zur Stärkung der Transparenz und Effizienz der EU-Aktienkapitalmärkte.\n\nDer CTP wird Pre-Trade- und Post-Trade-Daten von verschiedenen Datenlieferanten in einem einzigen Datenstrom zusammenführen. Dies soll Marktteilnehmern einen umfassenden Überblick über die Handelsaktivitäten geben, die Preisfindung verbessern und fundiertere Investitionsentscheidungen ermöglichen.\n\nDie Zulassung erfolgte am 27.07.2026.",
+          "en": "ESMA has authorised EuroCTP B.V. to operate as the Consolidated Tape Provider (CTP) for shares and exchange-traded funds (ETFs). This marks a key step in strengthening the transparency and efficiency of EU equity capital markets.\n\nThe CTP will bring pre-trade and post-trade data from multiple data contributors into a single stream. This aims to provide market participants with a comprehensive view of trading activity, support better price discovery, and facilitate more informed investment decisions.\n\nThe authorisation was granted on 27.07.2026."
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/esma-authorises-euroctp-consolidated-tape-provider-shares-and-exchange-traded"
       },
@@ -539,8 +539,8 @@
           "en": "ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds - Press release"
         },
         "s": {
-          "de": "Die ESMA hat EuroCTP als Consolidated Tape Provider für Aktien und ETFs autorisiert. Dies betrifft Finanzunternehmen, die im Handel mit diesen Instrumenten tätig sind. Die Autorisierung erfolgte am 27.07.2026.",
-          "en": "ESMA has authorised EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds. This affects financial firms active in trading these instruments. The authorisation was granted on 27.07.2026."
+          "de": "Die ESMA hat EuroCTP B.V. als Consolidated Tape Provider (CTP) für Aktien und Exchange Traded Funds (ETFs) zugelassen. Diese Zulassung ist ein wichtiger Schritt zur Verbesserung der Transparenz und Effizienz der EU-Kapitalmärkte.\n\nDer CTP wird Handelsdaten aus verschiedenen Quellen bündeln, um Marktteilnehmern einen umfassenden Überblick zu ermöglichen. Dies soll die Preisfindung unterstützen und zu fundierteren Investitionsentscheidungen beitragen.\n\nDie Pressemitteilung wurde am 27.07.2026 veröffentlicht.",
+          "en": "ESMA has authorised EuroCTP B.V. to operate as the Consolidated Tape Provider (CTP) for shares and exchange-traded funds (ETFs). This authorisation is a key step towards enhancing the transparency and efficiency of EU capital markets.\n\nThe CTP will consolidate trading data from various sources to provide market participants with a comprehensive overview. This is intended to support price discovery and contribute to more informed investment decisions.\n\nThe press release was issued on 27.07.2026."
         },
         "url": "https://www.esma.europa.eu/document/esma-authorises-euroctp-consolidated-tape-provider-shares-and-exchange-traded-funds-press",
         "refnum": "ESMA71-545613100-2975"
@@ -557,8 +557,8 @@
           "en": "Compliance table on Guidelines on certain aspects of the MiFID II appropriateness and execution only requirements"
         },
         "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für bestimmte Aspekte der MiFID II Angemessenheits- und Execution-Only-Anforderungen veröffentlicht. Dies ist relevant für Finanzunternehmen, die diese Anforderungen erfüllen müssen. Das Dokument wurde am 23.07.2026 veröffentlicht.",
-          "en": "ESMA has published a compliance table on the guidelines for certain aspects of the MiFID II appropriateness and execution-only requirements. This is relevant for financial firms that need to comply with these requirements. The document was published on 23.07.2026."
+          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den ESMA-Leitlinien bezüglich bestimmter Aspekte der MiFID II Angemessenheits- und „Execution Only“-Anforderungen. Es dient der Überwachung der Einhaltung dieser Leitlinien durch die nationalen zuständigen Behörden (NCAs).\n\nFinanzunternehmen, die unter MiFID II fallen, sollten die Einhaltung der Angemessenheitsprüfung und der „Execution Only“-Regeln sicherstellen. Die Tabelle hilft den NCAs, die Umsetzung dieser wichtigen Anlegerschutzmaßnahmen zu überprüfen und zu harmonisieren.\n\nDas Dokument wurde am 23.07.2026 veröffentlicht.",
+          "en": "This document is a compliance table for the ESMA Guidelines on certain aspects of the MiFID II appropriateness and execution only requirements. It is used to monitor the compliance of these guidelines by national competent authorities (NCAs).\n\nFinancial firms falling under MiFID II should ensure compliance with the appropriateness assessment and execution-only rules. The table helps NCAs to review and harmonize the implementation of these important investor protection measures.\n\nThe document was published on 23.07.2026."
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-certain-aspects-mifid-ii-appropriateness-and-execution-only",
         "refnum": "ESMA35-43-3327"
@@ -575,8 +575,8 @@
           "en": "Fines or penalty payments for consolidated tape providers under ESMA supervision."
         },
         "s": {
-          "de": "Die Europäische Kommission plant die Einführung von Geldbußen oder Strafzahlungen für Consolidated Tape Provider unter ESMA-Aufsicht. Dies betrifft Consolidated Tape Provider. Der Vorschlag wurde am 07.05.2025 veröffentlicht.",
-          "en": "The European Commission plans to introduce fines or penalty payments for consolidated tape providers under ESMA supervision. This affects consolidated tape providers. The proposal was published on 07.05.2025."
+          "de": "Dieser Legislativvorschlag der Europäischen Kommission befasst sich mit Geldbußen oder Strafzahlungen für Anbieter eines Consolidated Tape, die unter die Aufsicht der ESMA fallen.\n\nEs wird erwartet, dass die Regelungen insbesondere für Unternehmen relevant sind, die als Consolidated Tape Provider agieren oder dies beabsichtigen, da sie die finanziellen Konsequenzen bei Nichteinhaltung der Vorschriften festlegen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Europäischen Kommission und wurde am 07.05.2025 veröffentlicht.",
+          "en": "This legislative proposal from the European Commission addresses fines or penalty payments for consolidated tape providers under ESMA supervision.\n\nThe regulations are expected to be particularly relevant for companies that act or intend to act as Consolidated Tape Providers, as they define the financial consequences for non-compliance with the rules.\n\nThe proposal is in the adoption workflow of the European Commission and was published on 07.05.2025."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13870",
         "refnum": "Ares(2023)3982104"
@@ -595,8 +595,8 @@
           "en": "IRSG Response to EIOPA Consultation Paper on Proportional Reinsurance with Features Reducing Commensurateness"
         },
         "s": {
-          "de": "Das IRSG hat eine Stellungnahme zum Konsultationspapier der EIOPA zu proportionaler Rückversicherung mit Merkmalen zur Reduzierung der Angemessenheit abgegeben. Die Stellungnahmefrist war der 19.08.2026.",
-          "en": "The IRSG has submitted a response to EIOPA's Consultation Paper on Proportional Reinsurance with Features Reducing Commensurateness. The consultation deadline was 19.08.2026."
+          "de": "Dieses Dokument ist die Antwort der Insurance and Reinsurance Stakeholder Group (IRSG) auf ein Konsultationspapier der EIOPA. Es befasst sich mit proportionaler Rückversicherung, die Merkmale aufweist, welche die Kommensurabilität reduzieren.\n\nDie Stellungnahme der IRSG ist relevant für Rückversicherungsunternehmen und Versicherer, die proportionale Rückversicherungsverträge nutzen. Sie gibt Einblicke in die Perspektive der Branche auf die regulatorischen Überlegungen der EIOPA zu diesem Thema.\n\nDie Konsultationsfrist endete am 19.08.2026.",
+          "en": "This document is the Insurance and Reinsurance Stakeholder Group's (IRSG) response to an EIOPA consultation paper. It addresses proportional reinsurance with features that reduce commensurability.\n\nThe IRSG's submission is relevant for reinsurance undertakings and insurers utilizing proportional reinsurance contracts. It provides insights into the industry's perspective on EIOPA's regulatory considerations regarding this topic.\n\nThe consultation period ended on 19.08.2026."
         },
         "url": "https://www.eiopa.europa.eu/publications/irsg-response-eiopa-consultation-paper-proportional-reinsurance-features-reducing-commensurateness_en"
       },
@@ -612,8 +612,8 @@
           "en": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year"
         },
         "s": {
-          "de": "Die EIOPA hat ihr Mandat zur Überprüfung von Solvency II mit finalen Leitlinien und Entwürfen technischer Standards abgeschlossen. Diese treten Anfang nächsten Jahres in Kraft und betreffen Versicherungsunternehmen.",
-          "en": "EIOPA has completed its Solvency II Review mandate with final guidelines and draft technical standards. These will take effect early next year and concern insurance undertakings."
+          "de": "Die EIOPA hat ihr Mandat zur Überprüfung von Solvency II mit der Veröffentlichung finaler Leitlinien und Entwürfen technischer Standards abgeschlossen. Dies geschieht im Vorfeld des Inkrafttretens des überarbeiteten Rahmens Anfang nächsten Jahres.\n\nDiese Veröffentlichungen sind relevant für Versicherungsunternehmen, da sie die konkreten Anforderungen und Auslegungen der überarbeiteten Solvency II-Richtlinie präzisieren. Die Fachbeiträge von KPMG zeigen, dass die Überarbeitung der Delegierten Verordnung und die technischen Standards wesentliche Aspekte für die Praxis betreffen.\n\nDie neuen Regelungen treten Anfang nächsten Jahres in Kraft.",
+          "en": "EIOPA has completed its Solvency II Review mandate by publishing final guidelines and draft technical standards. This precedes the revised framework's entry into force early next year.\n\nThese publications are relevant for insurance undertakings as they specify the concrete requirements and interpretations of the revised Solvency II Directive. KPMG's expert contributions indicate that the revision of the Delegated Regulation and the technical standards address key practical aspects.\n\nThe new regulations will come into effect early next year."
         },
         "url": "https://www.eiopa.europa.eu/eiopa-completes-solvency-ii-review-mandate-final-guidelines-and-draft-technical-standards-revised-2026-07-15_en",
         "adv": [
@@ -655,8 +655,8 @@
           "en": "New proportionality framework under solvency ii"
         },
         "s": {
-          "de": "Die EIOPA hat einen neuen Proportionalitätsrahmen unter Solvency II vorgestellt. Dieser betrifft Versicherungsunternehmen.",
-          "en": "EIOPA has introduced a new proportionality framework under Solvency II. This concerns insurance undertakings."
+          "de": "Die EIOPA hat einen neuen Proportionalitätsrahmen im Rahmen von Solvency II vorgestellt. Dieser Rahmen zielt darauf ab, die Anwendung der Solvency-II-Vorschriften an die Größe und Komplexität von Versicherungsunternehmen anzupassen.\n\nDies bedeutet für Versicherungsunternehmen, dass die Anforderungen von Solvency II flexibler gehandhabt werden könnten, was insbesondere kleineren und weniger komplexen Unternehmen zugutekommen dürfte. Die Fachbeiträge von KPMG deuten darauf hin, dass die Überarbeitung der Delegierten Verordnung zu Solvency II und die damit verbundenen Konsultationen von EIOPA wichtige Schritte in dieser Anpassung sind.\n\nWeitere Details und Konsultationen sind im Gange, um diesen neuen Rahmen zu implementieren.",
+          "en": "EIOPA has introduced a new proportionality framework under Solvency II. This framework aims to tailor the application of Solvency II regulations to the size and complexity of insurance undertakings.\n\nFor insurance companies, this means that Solvency II requirements could be applied more flexibly, which should particularly benefit smaller and less complex entities. KPMG's contributions indicate that the revision of the Delegated Regulation on Solvency II and the associated EIOPA consultations are important steps in this adjustment.\n\nFurther details and consultations are underway to implement this new framework."
         },
         "url": "https://www.eiopa.europa.eu/media/events/new-proportionality-framework-under-solvency-ii-2026-07-01_en",
         "adv": [
@@ -698,8 +698,8 @@
           "en": "Advocate General's Opinion in Case C-41/25 Orsay"
         },
         "s": {
-          "de": "Der Generalanwalt Norkus hat am 04.06.2026 seine Schlussanträge in der Rechtssache C-41/25 Orsay vorgelegt. Er vertritt die Auffassung, dass sich ein Mitgliedstaat nicht auf Staatenimmunität berufen kann, um die Ausübung der Gerichtsbarkeit der Gerichte des Staates zu verhindern, in dem ein Insolvenzverfahren eröffnet wurde. Dies betrifft Fälle, in denen Insolvenzverfahren grenzüberschreitend sind.",
-          "en": "Advocate General Norkus presented his opinion in Case C-41/25 Orsay on 04.06.2026. He argues that a Member State cannot rely on immunity from jurisdiction to prevent the courts of the State in which insolvency proceedings have been opened from exercising their jurisdiction. This concerns cases where insolvency proceedings are cross-border."
+          "de": "Advocate General Norkus: a Member State cannot rely on immunity from jurisdiction to prevent the courts of the State in which insolvency proceedings have been opened from exercising their jurisdiction",
+          "en": "Advocate General Norkus: a Member State cannot rely on immunity from jurisdiction to prevent the courts of the State in which insolvency proceedings have been opened from exercising their jurisdiction"
         },
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260082de.pdf",
         "refnum": "C-41/25"
@@ -716,8 +716,8 @@
           "en": "Public working draft 2 pwd2 solvency ii 2100 dpm and taxonomy and irrd dpm and taxonomy"
         },
         "s": {
-          "de": "Die EIOPA hat am 03.06.2026 den Public Working Draft 2 (pwd2) für Solvency II 2100 DPM und Taxonomie sowie IRRD DPM und Taxonomie veröffentlicht. Dieses Dokument enthält Entwürfe für Datenpunktmodelle und Taxonomien im Rahmen von Solvency II und IRRD. Es richtet sich an Versicherungsunternehmen und andere betroffene Parteien.",
-          "en": "EIOPA published the Public Working Draft 2 (pwd2) for Solvency II 2100 DPM and Taxonomy and IRRD DPM and Taxonomy on 03.06.2026. This document contains drafts for data point models and taxonomies under Solvency II and IRRD. It is aimed at insurance undertakings and other affected parties."
+          "de": "Die EIOPA hat den zweiten Entwurf (pwd2) für DPM (Data Point Model) und Taxonomie zu Solvency II 2100 sowie für IRRD (Insurance Reporting and Disclosure) veröffentlicht. Dies ist Teil der Überarbeitung der Solvency II-Vorschriften.\n\nDiese Veröffentlichung ist relevant für Versicherungsunternehmen, da sie die technischen Spezifikationen für die aufsichtsrechtliche Berichterstattung und Offenlegung nach Solvency II aktualisiert. Die Fachbeiträge von KPMG weisen darauf hin, dass es hierbei um die Entlastung der Versicherer und die Überarbeitung der Delegierten Verordnung geht.\n\nDie Veröffentlichung erfolgte am 03.06.2026.",
+          "en": "EIOPA has published the second working draft (pwd2) for the DPM (Data Point Model) and taxonomy related to Solvency II 2100, as well as for IRRD (Insurance Reporting and Disclosure). This is part of the Solvency II review.\n\nThis publication is relevant for insurance undertakings as it updates the technical specifications for supervisory reporting and disclosure under Solvency II. KPMG's articles highlight that the aim is to ease the burden on insurers and revise the Delegated Regulation.\n\nThe publication date is 03.06.2026."
         },
         "url": "https://www.eiopa.europa.eu/media/events/public-working-draft-2-pwd2-solvency-ii-2100-dpm-and-taxonomy-and-irrd-dpm-and-taxonomy-2026-06-03_en",
         "adv": [
@@ -759,8 +759,8 @@
           "en": "Delegated Regulation supplementing the review of prudential rules for the insurance and reinsurance sector (Solvency II)"
         },
         "s": {
-          "de": "Die Europäische Kommission hat eine Delegierte Verordnung zur Ergänzung der Überprüfung der Aufsichtsregeln für den Versicherungs- und Rückversicherungssektor (Solvency II) veröffentlicht. Der Verfahrensstand ist 'Adoption Workflow'.",
-          "en": "The European Commission has published a Delegated Regulation supplementing the review of prudential rules for the insurance and reinsurance sector (Solvency II). The procedural status is 'Adoption Workflow'."
+          "de": "Die Europäische Kommission hat einen Entwurf für eine Delegierte Verordnung zur Überarbeitung der Eigenkapitalvorschriften für den Versicherungs- und Rückversicherungssektor (Solvency II) vorgelegt. Dieser Entwurf ergänzt die bestehenden Regelungen und ist Teil des laufenden Überprüfungsprozesses von Solvency II.\n\nDie Verordnung ist relevant für Versicherungs- und Rückversicherungsunternehmen in der EU. Fachbeiträge von KPMG weisen darauf hin, dass die Kommission den Entwurf zur Überarbeitung der Delegierten Verordnung zu Solvency II veröffentlicht hat, was auf eine bevorstehende Anpassung der Detailvorschriften hindeutet.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was bedeutet, dass der Gesetzgebungsprozess zur Verabschiedung der Verordnung im Gange ist.",
+          "en": "The European Commission has presented a draft Delegated Regulation to revise the prudential rules for the insurance and reinsurance sector (Solvency II). This draft supplements the existing regulations and is part of the ongoing review process of Solvency II.\n\nThis regulation is relevant for insurance and reinsurance undertakings within the EU. Expert contributions from KPMG indicate that the Commission has published the draft for the revision of the Delegated Regulation on Solvency II, suggesting an upcoming adjustment of the detailed provisions.\n\nCurrently, the procedure is in the adoption workflow, meaning the legislative process for the adoption of the regulation is underway."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13690",
         "refnum": "Ares(2023)251034",
@@ -793,8 +793,8 @@
           "en": "Löschroutine für Rückmeldungen nach § 41 GwG"
         },
         "s": {
-          "de": "Für Rückmeldungen nach § 41 Abs. 2 und 3 GwG wird eine Löschroutine von 28 Tagen eingeführt. Diese Änderung tritt ab dem 01.09.2026 in Kraft und betrifft die FIU.",
-          "en": "A 28-day deletion routine will be introduced for feedback under Section 41 (2) and (3) of the German Money Laundering Act (GwG). This change comes into effect on 01.09.2026 and concerns the FIU."
+          "de": "Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG unterliegen ab dem 1. September 2026 einer Löschroutine von 28 Tagen.",
+          "en": "Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG unterliegen ab dem 1. September 2026 einer Löschroutine von 28 Tagen."
         },
         "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
         "adv": [
@@ -818,8 +818,8 @@
           "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
         },
         "s": {
-          "de": "Der Deutsche Bundestag plant eine umfassende Modernisierung der Zollverwaltung durch das Gesetz zur Stärkung der Zollverwaltung und Bekämpfung der Finanzkriminalität. Dies beinhaltet eine Neustrukturierung der Generalzolldirektion, die Zusammenführung von Ermittlungs- und Vollzugseinheiten sowie die Stärkung der Finanzkontrolle Schwarzarbeit. Die Zollverwaltung erhält erweiterte Aufgaben und Befugnisse zur Bekämpfung internationaler Geldwäsche.",
-          "en": "The German Bundestag plans a comprehensive modernization of the customs administration through the Act to strengthen the customs administration and combat financial crime. This includes a restructuring of the General Directorate of Customs, the consolidation of investigation and enforcement units, and the strengthening of the Financial Control of Undeclared Work. The customs administration will receive expanded tasks and powers to combat international money laundering."
+          "de": "Das Gesetz zielt auf eine umfassende Modernisierung der Zollverwaltung ab, insbesondere durch die Neustrukturierung der Generalzolldirektion in die Fachstränge \"Zölle und Steuern\" sowie \"Sicherheit und Vollzug\". Es sieht die Zusammenführung von Ermittlungs- und Vollzugseinheiten vor und stärkt die Finanzkontrolle Schwarzarbeit durch personelle, haushälterische und erweiterte Ermittlungsbefugnisse.\n\nEin Schwerpunkt liegt auf der Bekämpfung internationaler Geldwäsche, wofür spezialisierte Ermittlungseinheiten eingerichtet und ein Verwaltungsverfahren zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft eingeführt werden. Zudem sollen die Zusammenarbeit und der Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen verbessert werden. Die Umsetzung der FATF-Empfehlungen wird durch die gesetzliche Verankerung eines ressortübergreifenden Steuerungskreises vorangetrieben.\n\nDas Gesetz ist relevant für alle Unternehmen, die mit Zollangelegenheiten, Finanzkriminalität oder Geldwäscheprävention in Berührung kommen. Die Stärkung der Zollverwaltung und die erweiterten Befugnisse, insbesondere im Bereich der Geldwäschebekämpfung, bedeuten eine erhöhte Prüfungsintensität und potenzielle Auswirkungen auf Geschäftsprozesse. PwC hebt in seinem Fachbeitrag die Bedeutung des Aktionsplans zur Bekämpfung von Steuer- und Finanzkriminalität hervor.",
+          "en": "The law aims at a comprehensive modernization of the customs administration, particularly through the restructuring of the General Directorate of Customs into the specialized branches \"Customs and Taxes\" and \"Security and Enforcement\". It provides for the consolidation of investigation and enforcement units and strengthens the Financial Control of Undeclared Work through increased personnel, budgetary resources, and expanded investigative powers.\n\nA key focus is on combating international money laundering, for which specialized investigative units will be established and an administrative procedure for clarifying assets of dubious origin will be introduced. Furthermore, cooperation and data exchange of the Financial Intelligence Unit will be improved. The implementation of FATF recommendations is advanced by the legal anchoring of an interdepartmental steering committee.\n\nThe law is relevant for all companies involved in customs matters, financial crime, or anti-money laundering prevention. The strengthening of the customs administration and the expanded powers, especially in the area of anti-money laundering, imply increased scrutiny and potential impacts on business processes. PwC's expert contribution emphasizes the importance of the action plan to combat tax and financial crime."
         },
         "url": "https://dip.bundestag.de/vorgang/338348",
         "adv": [
@@ -843,8 +843,8 @@
           "en": "Norddeutsche Landesbank Girozentrale (Nord/LB): Bafin ordnet Mängelbeseitigung an"
         },
         "s": {
-          "de": "Die BaFin hat der Norddeutschen Landesbank Girozentrale (Nord/LB) die Beseitigung gewichtiger Mängel in der Prävention von Geldwäsche und Terrorismusfinanzierung im Bereich der Aktualisierung von Kundendaten angeordnet. Die Anordnung verpflichtet die Bank, angemessene und geeignete Maßnahmen zu ergreifen. Die Entscheidung wurde am 03.08.2026 getroffen.",
-          "en": "The BaFin has ordered Norddeutsche Landesbank Girozentrale (Nord/LB) to remedy significant deficiencies in the prevention of money laundering and terrorist financing concerning the updating of customer data. The order obliges the bank to take appropriate and suitable measures. The decision was made on 03.08.2026."
+          "de": "Die BaFin hat der Norddeutschen Landesbank Girozentrale (Nord/LB) die Anweisung erteilt, erhebliche Mängel bei der Prävention von Geldwäsche und Terrorismusfinanzierung zu beheben. Dies betrifft insbesondere die Aktualisierung von Kundendaten.\n\nDie Anordnung verpflichtet die Nord/LB, angemessene und geeignete Maßnahmen zu ergreifen, um die festgestellten Defizite zu beseitigen. Dies ist für die Bank von hoher Relevanz, da die Einhaltung der Vorschriften zur Geldwäscheprävention eine zentrale Säule der Finanzmarktregulierung darstellt.\n\nDie BaFin hat diese Maßnahme am 03.08.2026 angeordnet.",
+          "en": "The BaFin has instructed Norddeutsche Landesbank Girozentrale (Nord/LB) to rectify significant deficiencies in the prevention of money laundering and terrorist financing. This specifically concerns the updating of customer data.\n\nThe order obliges Nord/LB to take appropriate and suitable measures to eliminate the identified shortcomings. This is of high relevance for the bank, as compliance with anti-money laundering regulations is a central pillar of financial market regulation.\n\nBaFin issued this order on 03.08.2026."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_08_03_norddeutschen_landesbank_girozentrale.html?cms_expanded=true"
       },
@@ -860,8 +860,8 @@
           "en": "Sektorale Risikoanalyse"
         },
         "s": {
-          "de": "Das Bundesministerium der Finanzen hat eine aktualisierte sektorale Risikoanalyse zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung veröffentlicht. Diese Analyse richtet sich an Finanzunternehmen und andere Verpflichtete im Rahmen der Geldwäscheprävention. Die Veröffentlichung erfolgte am 28.07.2026.",
-          "en": "The Federal Ministry of Finance has published an updated sectoral risk analysis for combating money laundering and terrorist financing. This analysis is aimed at financial institutions and other obliged entities within the scope of anti-money laundering prevention. The publication date was 28.07.2026."
+          "de": "Das Bundesministerium der Finanzen hat eine aktualisierte sektorale Risikoanalyse zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung veröffentlicht. Diese Analyse bewertet spezifische Risiken in verschiedenen Wirtschaftssektoren, um gezielte Maßnahmen zur Prävention und Bekämpfung dieser Kriminalität zu ermöglichen.\n\nDie Analyse ist relevant für Unternehmen in den betroffenen Sektoren, da sie Aufschluss über die Erwartungen der Aufsichtsbehörden gibt und als Grundlage für die Anpassung interner Compliance-Systeme dienen kann. PwC hebt in seinem Fachbeitrag die Bedeutung dieser Bewertung für die Praxis hervor.\n\nDie Veröffentlichung erfolgte am 28.07.2026.",
+          "en": "The Federal Ministry of Finance has published an updated sectoral risk analysis for combating money laundering and terrorist financing. This analysis assesses specific risks in various economic sectors to enable targeted measures for the prevention and combating of these crimes.\n\nThis analysis is relevant for companies in the affected sectors, as it provides insights into the expectations of supervisory authorities and can serve as a basis for adapting internal compliance systems. PwC emphasizes the practical significance of this assessment in its expert contribution.\n\nThe publication date was 28.07.2026."
         },
         "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Nationale-Risikoanalyse/nationale-risikoanalyse_node.html",
         "adv": [
@@ -885,8 +885,8 @@
           "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
         },
         "s": {
-          "de": "Der Deutsche Bundestag plant mit dem Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung eine Änderung des § 261 Strafgesetzbuch. Details zu den spezifischen Änderungen oder dem Anwendungsbereich sind dem vorliegenden Text nicht zu entnehmen.",
-          "en": "The German Bundestag plans an amendment to § 261 of the Criminal Code with the Act on the Consistent Fight against Money Laundering in Tax Evasion. Details on the specific changes or scope are not available in the provided text."
+          "de": "Der Deutsche Bundestag hat einen Gesetzesentwurf zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung vorgelegt. Dieser Entwurf sieht eine Änderung des § 261 des Strafgesetzbuches vor.\n\nDie geplante Gesetzesänderung zielt darauf ab, die Bekämpfung von Geldwäsche, insbesondere im Kontext von Steuerhinterziehung, zu verstärken. Für Finanzinstitute bedeutet dies eine potenzielle Verschärfung der Anforderungen im Bereich der Geldwäscheprävention und eine erhöhte Sensibilität bei Transaktionen mit Bezug zu Steuerdelikten.",
+          "en": "The German Bundestag has submitted a legislative proposal for the consistent combating of money laundering in tax evasion. This draft foresees an amendment to § 261 of the Criminal Code.\n\nThe planned legislative change aims to strengthen the fight against money laundering, particularly in the context of tax evasion. For financial institutions, this means a potential tightening of requirements in the area of anti-money laundering prevention and increased sensitivity to transactions related to tax offenses."
         },
         "url": "https://dip.bundestag.de/vorgang/337697"
       },
@@ -902,8 +902,8 @@
           "en": "Landesbank Hessen-Thüringen Girozentrale (Helaba): Bafin ordnet Mängelbeseitigung an"
         },
         "s": {
-          "de": "Die BaFin hat der Landesbank Hessen-Thüringen Girozentrale (Helaba) angeordnet, Mängel in der Prävention von Geldwäsche und Terrorismusfinanzierung zu beseitigen. Die Helaba muss insbesondere Kundendaten überprüfen und aktualisieren. Die Anordnung erfolgte am 20.07.2026.",
-          "en": "BaFin has ordered Landesbank Hessen-Thüringen Girozentrale (Helaba) to rectify deficiencies in the prevention of money laundering and terrorist financing. Helaba must particularly review and update customer data. The order was issued on 20.07.2026."
+          "de": "Die BaFin hat der Landesbank Hessen-Thüringen Girozentrale (Helaba) die Anordnung erteilt, Mängel in der Prävention von Geldwäsche und Terrorismusfinanzierung zu beseitigen. Dies beinhaltet insbesondere die Überprüfung und Aktualisierung von Kundendaten.\n\nDiese Anordnung ist für die Helaba von direkter Relevanz und erfordert die Implementierung angemessener Maßnahmen zur Einhaltung der geldwäscherechtlichen Vorschriften. Der Fachbeitrag von KPMG deutet darauf hin, dass die BaFin ein besonderes Augenmerk auf Risiken im Zusammenhang mit Umgehungsgeschäften legt, was für die Helaba bei der Mängelbeseitigung zu berücksichtigen ist.\n\nDie Anordnung wurde am 20.07.2026 veröffentlicht und erfordert die sofortige Ergreifung von Maßnahmen zur Mängelbeseitigung.",
+          "en": "The BaFin has ordered Landesbank Hessen-Thüringen Girozentrale (Helaba) to rectify deficiencies in the prevention of money laundering and terrorist financing. This specifically includes the review and updating of customer data.\n\nThis order is directly relevant for Helaba and requires the implementation of appropriate measures to comply with anti-money laundering regulations. The expert contribution from KPMG indicates that BaFin is particularly focusing on risks related to circumvention transactions, which Helaba must consider when rectifying the deficiencies.\n\n The order was published on 20.07.2026 and requires immediate action to rectify the deficiencies."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_20_helaba.html?cms_expanded=true",
         "adv": [
@@ -929,8 +929,8 @@
           "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
         },
         "s": {
-          "de": "Die ESMA konsultiert einen Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs, um die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen zu verbessern. Dies betrifft EU-Firmen, die Clearing-Aktivitäten bei Drittland-CCPs durchführen. Die Konsultationsfrist endet am 18.08.2026.",
-          "en": "ESMA is consulting on a reporting framework for clearing activity at recognised third-country CCPs to improve supervisory visibility of EU firms' exposures. This affects EU firms engaging in clearing activities with third-country CCPs. The consultation period ends on 18.08.2026."
+          "de": "Die ESMA konsultiert einen Entwurf für einen jährlichen Berichtsrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern.\n\nDer Entwurf umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS). Die Berichtspflicht würde für Clearing-Mitglieder und Kunden gelten, die Transaktionen über anerkannte Drittland-CCPs abwickeln.\n\nDie Konsultation läuft bis zum 18.08.2026.",
+          "en": "ESMA is consulting on a draft annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs.\n\nThe draft includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS). The reporting obligation would apply to clearing members and clients that clear transactions through recognised third-country CCPs.\n\nThe consultation is open until 18.08.2026."
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country"
       },
@@ -946,8 +946,8 @@
           "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form"
         },
         "s": {
-          "de": "Die ESMA konsultiert ein Formular zum Melde-Framework unter EMIR für Clearing-Aktivitäten bei anerkannten CCPs aus Drittländern. Die Konsultation richtet sich an alle interessierten Parteien und dient der Vereinfachung und Reduzierung des Verwaltungsaufwands.",
-          "en": "ESMA is consulting on a reply form for the reporting framework under EMIR for clearing activity at recognised third-country CCPs. The consultation is addressed to all interested parties and aims at simplification and burden reduction."
+          "de": "Reference — CCP, Simplification and Burden Reduction",
+          "en": "Reference — CCP, Simplification and Burden Reduction"
         },
         "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third-0",
         "refnum": "ESMA12-2121844265-6120",
@@ -978,8 +978,8 @@
           "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs"
         },
         "s": {
-          "de": "Die ESMA konsultiert zum Melde-Framework unter EMIR für Clearing-Aktivitäten bei anerkannten CCPs aus Drittländern. Die Konsultation richtet sich an alle interessierten Parteien und dient der Vereinfachung und Reduzierung des Verwaltungsaufwands.",
-          "en": "ESMA is consulting on the reporting framework under EMIR for clearing activity at recognised third-country CCPs. The consultation is addressed to all interested parties and aims at simplification and burden reduction."
+          "de": "Die ESMA konsultiert einen Entwurf für technische Regulierungsstandards (RTS) zur Berichterstattung über Clearing-Aktivitäten bei anerkannten CCPs aus Drittländern gemäß EMIR. Ziel ist es, die Meldepflichten zu vereinfachen und den Verwaltungsaufwand zu reduzieren.\n\nDieser Entwurf ist relevant für Finanzinstitute, die Clearing-Dienstleistungen von Drittland-CCPs nutzen. Die Konsultation zielt darauf ab, die Datenqualität zu verbessern und gleichzeitig die Komplexität der Berichterstattung zu verringern, was sich auf die Compliance-Prozesse der betroffenen Unternehmen auswirken wird. Fachbeiträge von PwC und KPMG, die sich mit ESG-Berichterstattung und dem EBA-Reporting Framework 4.0 befassen, deuten auf einen allgemeinen Trend zur Integration neuer Datenanforderungen und zur Überarbeitung von Meldestandards hin.\n\nDie Konsultationsfrist läuft bis zum 18.08.2026.",
+          "en": "ESMA is consulting on a draft of Regulatory Technical Standards (RTS) for reporting on clearing activity at recognised third-country CCPs under EMIR. The aim is to simplify reporting obligations and reduce administrative burden.\n\nThis draft is relevant for financial institutions using clearing services from third-country CCPs. The consultation seeks to improve data quality while reducing reporting complexity, which will impact the compliance processes of affected entities. Expert contributions from PwC and KPMG, focusing on ESG reporting and the EBA Reporting Framework 4.0, indicate a general trend towards integrating new data requirements and revising reporting standards.\n\nThe consultation period runs until 18.08.2026."
         },
         "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third",
         "refnum": "ESMA12-2121844265-6008",
@@ -1010,8 +1010,8 @@
           "en": "ESMA confirms go-live for weekly commodity derivatives position reporting"
         },
         "s": {
-          "de": "Die ESMA bestätigt den Start der wöchentlichen Positionsmeldungen für Warenderivate. Ab dem 03.09.2026 müssen Marktteilnehmer wöchentliche Positionsmeldungen gemäß den aktualisierten Anforderungen, technischen Spezifikationen und Validierungsregeln der XML-Schemaversion v2.0 einreichen.",
-          "en": "ESMA confirms the go-live for weekly commodity derivatives position reporting. From 03.09.2026, market participants will be required to submit weekly position reports in accordance with the updated requirements, technical specifications, and validation rules introduced by XML schema version v2.0."
+          "de": "ESMA confirms go-live for weekly commodity derivatives position reporting 14 August 2026 Trading The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, announces that the new weekly commodity derivatives position reporting …",
+          "en": "ESMA confirms go-live for weekly commodity derivatives position reporting 14 August 2026 Trading The European Securities and Markets Authority (ESMA), the EU’s financial markets regulator and supervisor, announces that the new weekly commodity derivatives position reporting …"
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/esma-confirms-go-live-weekly-commodity-derivatives-position-reporting"
       },
@@ -1027,8 +1027,8 @@
           "en": "​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model"
         },
         "s": {
-          "de": "Die EBA konsultiert einen Berichtsrahmen für die Validierung und Überwachung des ISDA Standard Initial Margin Model. Die Konsultation richtet sich an Finanzinstitute, die dieses Modell verwenden. Die Frist für die Konsultation ist der 05.08.2026.",
-          "en": "The EBA is consulting on a reporting framework for the validation and monitoring of the ISDA Standard Initial Margin Model. The consultation is aimed at financial institutions using this model. The consultation deadline is 05.08.2026."
+          "de": "Die EBA konsultiert einen Entwurf für technische Regulierungsstandards (RTS) zur Festlegung eines Rahmenwerks für die Meldung von Informationen, die für die Validierung und Überwachung des ISDA Standard Initial Margin Models (SIMM) erforderlich sind. Dies betrifft die Berechnung der Initial Margin für nicht zentral abgewickelte Derivate.\n\nDie Konsultation ist relevant für Finanzinstitute, die das ISDA SIMM zur Berechnung ihrer Initial Margin verwenden. Sie müssen sich auf neue Meldepflichten einstellen, die eine detaillierte Offenlegung der Modellparameter und Validierungsergebnisse erfordern.\n\nDie Konsultationsfrist endet am 05.08.2026. KPMG weist in einem Fachbeitrag darauf hin, dass die EBA ein technisches Paket für ihr „Reporting framework 4.0“ veröffentlicht hat, was auf umfassendere Änderungen im Meldewesen hindeutet.",
+          "en": "The EBA is consulting on draft Regulatory Technical Standards (RTS) to establish a framework for reporting information necessary for the validation and monitoring of the ISDA Standard Initial Margin Model (SIMM). This concerns the calculation of initial margin for non-centrally cleared derivatives.\n\nThis consultation is relevant for financial institutions using the ISDA SIMM for their initial margin calculations. They will need to prepare for new reporting requirements that demand detailed disclosure of model parameters and validation results.\n\nThe consultation period ends on 05.08.2026. KPMG notes in an expert article that the EBA has published a technical package for its “Reporting framework 4.0”, indicating broader changes in reporting."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-reporting-framework-validation-and-monitoring-isda-standard-initial-margin-model",
         "adv": [
@@ -1052,8 +1052,8 @@
           "en": "Template F 13.2.1.c VariableID 433471 and 433464"
         },
         "s": {
-          "de": "Die EBA informiert über eine neue Datenpunktkategorisierung in der FINREP-Validierung unter Reporting Framework 4.2, die die Vorlage F 13.2.1.c, insbesondere die VariableIDs 433471 und 433464, betrifft. Dies ist relevant für Finanzinstitute, die der Verordnung (EU) Nr. 575/2013 (CRR) unterliegen. Die Information wurde am 05.08.2026 veröffentlicht.",
-          "en": "The EBA informs about a new data point categorization in the FINREP validation under Reporting Framework 4.2, affecting template F 13.2.1.c, specifically Variable IDs 433471 and 433464. This is relevant for financial institutions subject to Regulation (EU) No 575/2013 (CRR). The information was published on 05.08.2026."
+          "de": "Following the most recent update to the FINREP validation framework under Reporting Framework 4.2., a new data point categorization has been introduced affecting template F 13.2.1.c, specifically Variable IDs 433471 and 433464. We would app … — Legal act: Regulation (EU) No …",
+          "en": "Following the most recent update to the FINREP validation framework under Reporting Framework 4.2., a new data point categorization has been introduced affecting template F 13.2.1.c, specifically Variable IDs 433471 and 433464. We would app … — Legal act: Regulation (EU) No …"
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7904",
         "refnum": "2026_7904",
@@ -1086,8 +1086,8 @@
           "en": "Cookie-Banner wirksam reduzieren, Überregulierung vermeiden: BfDI plädiert für europäische Lösung im Digitalen Omnibus"
         },
         "s": {
-          "de": "Der BfDI schlägt eine europäische Lösung für Cookie-Banner vor, um Überregulierung zu vermeiden und diese wirksam zu reduzieren. Es wird angeregt, verbindliche, maschinenlesbare Datenschutzpräferenzen und Einwilligungsverwaltungsdienste im EU Digital Omnibus zu verankern. Dies betrifft alle Finanzunternehmen, die Cookie-Banner verwenden.",
-          "en": "The BfDI proposes a European solution for cookie banners to avoid overregulation and effectively reduce them. It suggests anchoring binding, machine-readable data protection preferences and consent management services in the EU Digital Omnibus. This affects all financial companies using cookie banners."
+          "de": "Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) hat Empfehlungen zur Reduzierung von Cookie-Bannern vorgelegt. Sie schlägt vor, den EU Digital Omnibus zu nutzen, um verbindliche, maschinenlesbare Datenschutzpräferenzen und Einwilligungsverwaltungsdienste europarechtlich zu verankern.\n\nDies ist relevant für alle Unternehmen, die Websites betreiben und Cookie-Banner einsetzen. Ziel ist es, die Nutzerfreundlichkeit zu verbessern und die derzeitige \"Überregulierung\" im Umgang mit Cookies zu vermeiden. Die Vorschläge könnten zu einer standardisierten und effizienteren Handhabung von Einwilligungen führen.\n\nPwC Legal hat zu diesem Thema bereits Leitlinien der Datenschutzaufsicht zur datenschutzkonformen Einwilligung analysiert, was die praktische Relevanz für Unternehmen unterstreicht, die ihre Cookie-Banner-Praktiken anpassen müssen.",
+          "en": "The Federal Commissioner for Data Protection and Freedom of Information (BfDI) has presented recommendations for reducing cookie banners. She suggests using the EU Digital Omnibus to legally establish binding, machine-readable data protection preferences and consent management services under European law.\n\nThis is relevant for all companies operating websites and using cookie banners. The aim is to improve user experience and avoid the current \"over-regulation\" in handling cookies. The proposals could lead to a standardized and more efficient management of consents.\n\nPwC Legal has already analyzed data protection supervisory authorities' guidelines on data protection-compliant consent, which underscores the practical relevance for companies that need to adapt their cookie banner practices."
         },
         "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/12_Cookie-Banner.html",
         "adv": [
@@ -1111,8 +1111,8 @@
           "en": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint"
         },
         "s": {
-          "de": "Der EDPB hat die belgische Datenschutzbehörde angewiesen, die Beschwerde von NOYB bezüglich eines Cookie-Banners zu prüfen. Dies betrifft die Verarbeitung personenbezogener Daten durch die Vlaamse Radio-en Televisieomroeporganisatie (VRT).",
-          "en": "The EDPB has instructed the Belgian DPA to handle the merits of NOYB's cookie banner complaint. This concerns the processing of personal data by Vlaamse Radio-en Televisieomroeporganisatie (VRT)."
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat die belgische Datenschutzbehörde angewiesen, eine Beschwerde von NOYB bezüglich eines Cookie-Banners in der Sache zu behandeln. Die Entscheidung vom 28. Mai 2026 wurde gemäß Art. 65 Abs. 1 lit. a DSGVO getroffen.\n\nDies ist relevant für alle Unternehmen, die Cookie-Banner auf ihren Websites verwenden, da die Entscheidung die Notwendigkeit einer materiellen Prüfung von Beschwerden unterstreicht. Die belgische Datenschutzbehörde hatte zuvor versucht, die Beschwerde aus verfahrenstechnischen Gründen abzuweisen, was vom EDPB zurückgewiesen wurde. Der Fachbeitrag von PwC Legal deutet darauf hin, dass die Entscheidung Auswirkungen auf die Gestaltung von Cookie-Bannern haben könnte, die als datenschutzwidrig eingestuft werden könnten.",
+          "en": "The European Data Protection Board (EDPB) has instructed the Belgian DPA to handle the merits of a NOYB cookie banner complaint. The decision, dated 28 May 2026, was issued under Art. 65(1)(a) GDPR.\n\nThis is relevant for all companies using cookie banners on their websites, as the decision emphasizes the need for a substantive review of complaints. The Belgian DPA had previously attempted to dismiss the complaint on procedural grounds, which was rejected by the EDPB. PwC Legal's expert contribution suggests that the decision could impact the design of cookie banners, which might be deemed non-compliant with data protection regulations."
         },
         "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
         "adv": [
@@ -1136,8 +1136,8 @@
           "en": "Judgment of the Court in Case C-199/24 Legal Newsdesk Sweden"
         },
         "s": {
-          "de": "Der EuGH hat entschieden, dass die bloße Online-Veröffentlichung von strafrechtlichen Verurteilungen gegen Bezahlung keine Verarbeitung personenbezogener Daten zu 'journalistischen Zwecken' darstellt. Dies betrifft alle, die solche Daten veröffentlichen.",
-          "en": "The ECJ has ruled that the mere online placement of criminal conviction decisions for payment does not, in principle, constitute processing of personal data for 'journalistic purposes'. This affects anyone publishing such data."
+          "de": "Der Europäische Gerichtshof hat entschieden, dass die bloße Online-Veröffentlichung von strafrechtlichen Verurteilungen gegen Bezahlung grundsätzlich keine Verarbeitung personenbezogener Daten zu „journalistischen Zwecken“ darstellt. Dies betrifft die Auslegung der Datenschutz-Grundverordnung (DSGVO).\n\nDie Entscheidung ist relevant für Unternehmen und Plattformen, die Gerichtsentscheidungen, insbesondere strafrechtliche Verurteilungen, online zugänglich machen. Sie müssen prüfen, ob ihre Aktivitäten unter die Ausnahmeregelung für journalistische Zwecke fallen, um die strengeren Anforderungen der DSGVO an die Verarbeitung sensibler Daten zu umgehen.\n\nDas Urteil wurde am 09.07.2026 in der Rechtssache C-199/24 gefällt.",
+          "en": "The European Court of Justice has ruled that the mere online publication of criminal convictions for a fee does not, in principle, constitute processing of personal data for 'journalistic purposes'. This concerns the interpretation of the General Data Protection Regulation (GDPR).\n\nThis decision is relevant for companies and platforms that make court decisions, particularly criminal convictions, accessible online. They must assess whether their activities fall under the exemption for journalistic purposes to avoid the stricter GDPR requirements for processing sensitive data.\n\nThe judgment was rendered on 09.07.2026 in Case C-199/24."
         },
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260100de.pdf",
         "refnum": "C-199/24"
@@ -1154,8 +1154,8 @@
           "en": "One-Stop-Shop case digest on right to object and right to erasure updated"
         },
         "s": {
-          "de": "Der EDPB hat am 25.06.2026 eine aktualisierte Version des One-Stop-Shop (OSS) Fallberichts zum Widerspruchsrecht und Recht auf Löschung veröffentlicht. Dieses Update ergänzt das öffentliche Register des EDPB durch die Auswahl und Präsentation wichtiger Entscheidungen zu diesem Thema. Es richtet sich an Datenschutzbehörden und betrifft alle Unternehmen, die der DSGVO unterliegen.",
-          "en": "The EDPB published an updated version of the One-Stop-Shop (OSS) case digest on the right to object and right to erasure on 25.06.2026. This update complements the EDPB's public register by selecting and presenting important decisions on this theme. It is aimed at Data Protection Authorities and affects all companies subject to GDPR."
+          "de": "Brussels, 25 June - The EDPB has published an update of the One-Stop-Shop (OSS) case digest on right to object and right to erasure . This project has been developed in the framework of the of the Support Pool of Experts programme, which aims to support cooperation among Data …",
+          "en": "Brussels, 25 June - The EDPB has published an update of the One-Stop-Shop (OSS) case digest on right to object and right to erasure . This project has been developed in the framework of the of the Support Pool of Experts programme, which aims to support cooperation among Data …"
         },
         "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en",
         "adv": [
@@ -1197,8 +1197,8 @@
           "en": "Supporting GDPR consistency: EDPB launches dedicated form"
         },
         "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular zur Meldung von Inkonsistenzen bei der Auslegung der DSGVO in Europa eingeführt. Dies soll den Dialog mit Stakeholdern stärken und eine konsistente Durchsetzung der DSGVO gewährleisten. Betroffen sind alle, die mutmaßliche Abweichungen zwischen nationalen Positionen oder zwischen nationalen Positionen und denen des EDPB feststellen.",
-          "en": "The European Data Protection Board (EDPB) has launched a contact form for reporting inconsistencies in the interpretation of the GDPR across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement. It applies to anyone who identifies alleged divergences between national positions or between national positions and those of the EDPB."
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen Inkonsistenzen bei der Auslegung der DSGVO in Europa melden können. Dies soll den Dialog mit Stakeholdern stärken und eine einheitliche Durchsetzung der DSGVO gewährleisten.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Die eingereichten Informationen werden gesammelt und vom EDPB auf hoher Ebene diskutiert, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nObwohl der EDPB nicht auf einzelne Einreichungen antwortet, ist dies für Unternehmen relevant, die grenzüberschreitend tätig sind und mit unterschiedlichen Auslegungen der DSGVO konfrontiert sind. PwC Legal weist in einem Fachbeitrag darauf hin, dass Datenschutzbehörden international besser kooperieren müssen, was die Bedeutung dieses Tools unterstreicht.",
+          "en": "The European Data Protection Board (EDPB) has launched a contact form for stakeholders to report inconsistencies in the interpretation of the GDPR across Europe. This initiative aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of divergences between national positions, as well as between national positions and those of the EDPB. The submitted information will be compiled and discussed at a high level by the EDPB to consider steps for improving consistency.\n\nAlthough the EDPB will not respond to individual submissions, this is relevant for companies operating cross-border and facing varying interpretations of the GDPR. PwC Legal notes in an expert article that data protection authorities need to cooperate better internationally, underscoring the importance of this tool."
         },
         "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
         "adv": [
@@ -1222,8 +1222,8 @@
           "en": "Coordinated Supervision Committee extends scope to include Eurodac"
         },
         "s": {
-          "de": "Der Ausschuss für koordinierte Aufsicht (CSC) erweitert seinen Zuständigkeitsbereich auf das europäische Asyl- und Migrationsdatenbanksystem Eurodac. Eurodac ist ein Informationssystem zur Verwaltung von Asyl- und Migrationsdaten und spielt eine Schlüsselrolle bei der Umsetzung der Dublin-III-Verordnung. Diese Änderung betrifft die Aufsicht über dieses System.",
-          "en": "The Coordinated Supervision Committee (CSC) has extended its scope to include the European Union’s asylum and migration database (Eurodac). Eurodac is an information system for managing asylum and migration data and plays a key role in implementing the Dublin III Regulation. This change affects the supervision of this system."
+          "de": "Der Koordinierte Aufsichtsausschuss (CSC) hat seine Zuständigkeit auf die koordinierte Überwachung der europäischen Asyl- und Migrationsdatenbank Eurodac ausgeweitet. Eurodac ist ein Informationssystem, das ursprünglich zum Abgleich von Fingerabdrücken von Asylbewerbern und irregulären Migranten entwickelt wurde und sich zu einem umfassenden Asyl- und Migrationsmanagementsystem entwickelt hat.\n\nDieses System ist für alle EU-Mitgliedstaaten sowie Island, Liechtenstein, Norwegen und die Schweiz von Bedeutung, da es eine Schlüsselrolle bei der Umsetzung der Dublin-III-Verordnung spielt. Nationale Datenschutzbehörden überwachen die Verarbeitung personenbezogener Daten durch nationale Behörden, während der Europäische Datenschutzbeauftragte (EDPS) die Verarbeitung personenbezogener Daten in der Zentraleinheit beaufsichtigt. PwC Legal weist in einem Fachbeitrag darauf hin, dass Datenschutzbehörden international besser kooperieren müssen, was die Relevanz dieser koordinierten Aufsicht unterstreicht.\n\nDie Erweiterung der Zuständigkeit des CSC ist ab dem 12.06.2026 wirksam.",
+          "en": "The Coordinated Supervision Committee (CSC) has extended its scope to include the coordinated supervision of the European Union’s asylum and migration database, Eurodac. Eurodac is an information system initially designed to compare the fingerprints of asylum applicants and irregular migrants, which has evolved into a full asylum and migration management system.\n\nThis system is relevant for all EU Member States as well as Iceland, Liechtenstein, Norway, and Switzerland, as it plays a key role in implementing the Dublin III Regulation. National Data Protection Authorities (DPAs) supervise the processing of personal data by national authorities, while the European Data Protection Supervisor (EDPS) is responsible for the supervision of the processing of personal data at the central unit. PwC Legal highlights in an expert article that data protection authorities must cooperate better internationally, underscoring the relevance of this coordinated supervision.\n\nThe extension of the CSC's jurisdiction is effective as of 12.06.2026."
         },
         "url": "https://www.edpb.europa.eu/news/coordinated-supervision-committee-extends-scope-to-include-eurodac_en",
         "adv": [
@@ -1249,8 +1249,8 @@
           "en": "Methodology for calculating the scenarios referred to in Article 25(2), (3), and (4), as well as point 5(a), (b), and (c) of the Annex to the Regulation."
         },
         "s": {
-          "de": "Die EBA präzisiert die Methodik zur Berechnung der Szenarien gemäß Artikel 25(2), (3) und (4) sowie Punkt 5(a), (b) und (c) des Anhangs zur Verordnung. Dies betrifft Banken, die als nicht-börsennotierte Institute den standardisierten Ansatz für das Zinsrisiko gemäß Verordnung 2024/857 anwenden müssen. Die Regelung gilt ab dem 11.08.2026.",
-          "en": "The EBA clarifies the methodology for calculating the scenarios referred to in Article 25(2), (3), and (4), as well as point 5(a), (b), and (c) of the Annex to the Regulation. This applies to banks that, as non-listed institutions, are required to apply the standardized approach for interest rate risk as defined in Regulation 2024/857. The regulation is effective from 11.08.2026."
+          "de": "Dieses Q&A der EBA präzisiert die Methodik zur Berechnung von Szenarien gemäß Artikel 25(2), (3) und (4) sowie Punkt 5(a), (b) und (c) des Anhangs der Verordnung 2024/857. Es befasst sich mit dem Zinsrisiko im Anlagebuch (IRRBB) und der Anwendung des standardisierten Ansatzes.\n\nDie Erläuterungen sind relevant für Banken, die den standardisierten Ansatz für das Zinsrisiko gemäß CRR-Verordnung anwenden müssen, insbesondere für nicht-börsennotierte Institute. Sie betreffen die Berechnung von Risikogewichteten Aktiva (RWA) und haben Auswirkungen auf das Risikomanagement und die Berichterstattung, wie auch von PwC in einem Fachbeitrag hervorgehoben wird.\n\nDas Dokument wurde am 11.08.2026 veröffentlicht.",
+          "en": "This EBA Q&A clarifies the methodology for calculating scenarios as per Article 25(2), (3), and (4), as well as point 5(a), (b), and (c) of the Annex to Regulation 2024/857. It addresses interest rate risk in the banking book (IRRBB) and the application of the standardized approach.\n\nThe clarifications are relevant for banks required to apply the standardized approach for interest rate risk under the CRR Regulation, particularly for non-listed institutions. They impact the calculation of Risk-Weighted Assets (RWA) and have implications for risk management and reporting processes, as also highlighted by PwC in an expert article.\n\nThe document was published on 11.08.2026."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7933",
         "refnum": "2026_7933",
@@ -1275,8 +1275,8 @@
           "en": "Classification of spread components of floating-rate instruments for contractual repricing reports"
         },
         "s": {
-          "de": "Die EBA präzisiert die Klassifizierung von Spread-Komponenten variabel verzinslicher Instrumente für vertragliche Repricing-Berichte. Dies betrifft Institute, die gemäß Artikel 7 der Durchführungsverordnung (EU) 2024/857 den Spread zuordnen müssen. Die Regelung gilt ab dem 05.08.2026.",
-          "en": "The EBA clarifies the classification of spread components of floating-rate instruments for contractual repricing reports. This affects institutions that are required to allocate the spread according to Article 7 of Commission Implementing Regulation (EU) 2024/857. The regulation is effective from 05.08.2026."
+          "de": "How should institutions classify the fixed spread component of a floating-rate instrument when reporting IRRBB repricing cash flows? Article 7 of Commission Implementing Regulation (EU) 2024/857 requires institutions to allocate the spread … — Legal act: Regulation (EU) No …",
+          "en": "How should institutions classify the fixed spread component of a floating-rate instrument when reporting IRRBB repricing cash flows? Article 7 of Commission Implementing Regulation (EU) 2024/857 requires institutions to allocate the spread … — Legal act: Regulation (EU) No …"
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7940",
         "refnum": "2026_7940"
@@ -1293,8 +1293,8 @@
           "en": "2026_7724 Application of the currency mismatch treatment to self-employed individuals (natural persons carrying out an economic activity) under Article 123a CRR."
         },
         "s": {
-          "de": "Die EBA hat eine Klärung zur Anwendung der Währungsinkongruenzbehandlung auf Selbstständige (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) gemäß Artikel 123a CRR veröffentlicht. Dies ist relevant für Finanzinstitute, die mit solchen Personen Geschäfte tätigen. Die Veröffentlichung erfolgte am 31.07.2026.",
-          "en": "The EBA has published a clarification on the application of the currency mismatch treatment to self-employed individuals (natural persons carrying out an economic activity) under Article 123a CRR. This is relevant for financial institutions dealing with such individuals. The publication was made on 31.07.2026."
+          "de": "Diese Meldung betrifft die Anwendung der Währungsinkongruenzbehandlung für Selbstständige (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) gemäß Artikel 123a CRR. Es geht um die spezifische Auslegung und Anwendung dieser Regelung im Kontext von Kreditrisikoberechnungen.\n\nFinanzinstitute, die Kredite an Selbstständige vergeben, müssen prüfen, wie Währungsinkongruenzen bei diesen Schuldnern gemäß CRR zu behandeln sind. Die Meldung präzisiert die Anforderungen und Auswirkungen auf die Eigenkapitalunterlegung.\n\nDie Meldung wurde am 31.07.2026 von der EBA veröffentlicht.",
+          "en": "This announcement concerns the application of the currency mismatch treatment to self-employed individuals (natural persons carrying out an economic activity) under Article 123a CRR. It addresses the specific interpretation and application of this regulation in the context of credit risk calculations.\n\nFinancial institutions granting loans to self-employed individuals must assess how currency mismatches for these debtors are to be treated according to CRR. The announcement clarifies the requirements and implications for capital requirements.\n\nThe announcement was published by the EBA on 31.07.2026."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724"
       },
@@ -1310,8 +1310,8 @@
           "en": "The EBA publishes its final draft technical standards on material acquisitions, material transfers, mergers and divisions under the Capital Requirements Directive"
         },
         "s": {
-          "de": "Die EBA veröffentlicht ihre finalen Entwürfe technischer Standards zu wesentlichen Akquisitionen, wesentlichen Übertragungen, Fusionen und Spaltungen gemäß der Capital Requirements Directive. Diese Standards sind für Finanzinstitute relevant. Das Dokument wurde am 17.07.2026 veröffentlicht.",
-          "en": "The EBA publishes its final draft technical standards on material acquisitions, material transfers, mergers, and divisions under the Capital Requirements Directive. These standards are relevant for financial institutions. The document was published on 17.07.2026."
+          "de": "Die EBA hat finale Entwürfe technischer Standards (ITS) zu wesentlichen Akquisitionen, Übertragungen, Fusionen und Spaltungen gemäß der Capital Requirements Directive (CRD) veröffentlicht. Diese ITS legen die Anforderungen und Verfahren für die Bewertung solcher Transaktionen fest.\n\nDie Regelungen sind relevant für Finanzinstitute, die wesentliche Veränderungen in ihrer Unternehmensstruktur planen. Sie sollen sicherstellen, dass solche Transaktionen die Finanzstabilität nicht gefährden und die Aufsichtsbehörden angemessen informiert werden. Fachbeiträge von PwC und KPMG deuten auf die Komplexität und die weitreichenden Auswirkungen dieser Standards hin, insbesondere im Kontext der CRR 3 und des Kreditrisikos.\n\nDie Veröffentlichung erfolgte am 17.07.2026.",
+          "en": "The EBA has published final draft technical standards (ITS) on material acquisitions, transfers, mergers, and divisions under the Capital Requirements Directive (CRD). These ITS set out the requirements and procedures for the assessment of such transactions.\n\nThese regulations are relevant for financial institutions planning significant changes in their corporate structure. They aim to ensure that such transactions do not jeopardize financial stability and that supervisory authorities are adequately informed. Expert contributions from PwC and KPMG highlight the complexity and far-reaching implications of these standards, particularly in the context of CRR 3 and credit risk.\n\nThe publication date was 17.07.2026."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
         "adv": [
@@ -1341,8 +1341,8 @@
           "en": "Consultation on amending ITS on the benchmarking of approaches for calculating own funds requirements – 2027 market risk benchmarking exercise"
         },
         "s": {
-          "de": "Die EBA hat eine Konsultation zur Änderung der ITS zur Benchmarking von Ansätzen für die Berechnung von Eigenmittelanforderungen – 2027 Marktrisiko-Benchmarking-Übung – gestartet. Diese Konsultation richtet sich an Finanzinstitute. Das Dokument wurde am 17.07.2026 veröffentlicht.",
-          "en": "The EBA has launched a consultation on amending ITS on the benchmarking of approaches for calculating own funds requirements – 2027 market risk benchmarking exercise. This consultation is aimed at financial institutions. The document was published on 17.07.2026."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.eba.europa.eu/publications-and-media/events/consultation-amending-its-benchmarking-approaches-calculating-own-funds-requirements-2027-market",
         "adv": [
@@ -1372,8 +1372,8 @@
           "en": "Risk weights assignment to IPRE exposures secured by many properties"
         },
         "s": {
-          "de": "Die EBA klärt die Zuweisung von Risikogewichten für IPRE-Engagements, die durch mehrere Immobilien besichert sind, gemäß CRR. Dies betrifft Kreditinstitute, die solche Engagements halten.",
-          "en": "The EBA clarifies the assignment of risk weights to IPRE exposures secured by multiple properties, according to the CRR. This concerns credit institutions holding such exposures."
+          "de": "Die EBA hat eine Q&A zur Risikogewichtung von IPRE-Engagements (Income Producing Real Estate) veröffentlicht, die durch mehrere Immobilien besichert sind. Die Frage betrifft die Anwendung der Artikel 125 und 126 Absatz 2 der CRR, die die Risikogewichtung für Wohn- bzw. Gewerbeimmobilien regeln, aber keine Klarheit für Engagements mit mehreren Sicherheiten bieten.\n\nDies ist relevant für Kreditinstitute, die Immobilienfinanzierungen anbieten und die korrekte Risikogewichtung für Engagements mit gemischten oder mehreren Immobiliensicherheiten bestimmen müssen. Die Klärung der EBA hilft bei der einheitlichen Anwendung der CRR-Vorschriften und der Berechnung der Eigenkapitalanforderungen.\n\nDie Q&A wurde am 06.07.2026 unter der Referenz 2026_7923 veröffentlicht. KPMG hat dazu bereits Leitlinien für den Erwerb, die Entwicklung und den Bau von Immobilien im Rahmen des Standardansatzes für das Kreditrisiko nach der CRR kommentiert.",
+          "en": "The EBA has published a Q&A on the risk weights assignment to IPRE (Income Producing Real Estate) exposures secured by multiple properties. The question addresses the application of Articles 125 and 126 paragraph 2 of the CRR, which specify risk weights for residential and commercial properties respectively, but lack clarity for exposures with multiple collateral.\n\nThis is relevant for credit institutions involved in real estate financing, who need to correctly determine risk weights for exposures secured by mixed or multiple properties. The EBA's clarification aids in the consistent application of CRR provisions and the calculation of capital requirements.\n\nThe Q&A was published on 06.07.2026 under reference 2026_7923. KPMG has already commented on guidelines for the acquisition, development, and construction of real estate under the CRR's standardized approach for credit risk."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7923",
         "refnum": "2026_7923",
@@ -1400,8 +1400,8 @@
           "en": "Compliance table on the guidelines on maintenance of systems and security access protocols under MiCA"
         },
         "s": {
-          "de": "Die ESMA veröffentlicht eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitszugangsprotokollen unter MiCA. Diese Leitlinien sind für Finanzunternehmen relevant, die unter die MiCA-Verordnung fallen. Die Regelung gilt ab dem 11.08.2026.",
-          "en": "The ESMA publishes a compliance table on the guidelines for the maintenance of systems and security access protocols under MiCA. These guidelines are relevant for financial entities falling under the MiCA regulation. The regulation is effective from 11.08.2026."
+          "de": "Compliance table — Digital Finance and Innovation, Guidelines and Technical standards",
+          "en": "Compliance table — Digital Finance and Innovation, Guidelines and Technical standards"
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
         "refnum": "ESMA75-113276571-1525"
@@ -1418,8 +1418,8 @@
           "en": "Compliance table on the Guidelines on market abuse under MiCA"
         },
         "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmissbrauch unter MiCA veröffentlicht. Diese Leitlinien betreffen Finanzunternehmen im Bereich Digital Finance und Innovation. Das Dokument wurde am 05.08.2026 herausgegeben.",
-          "en": "ESMA has published a compliance table on the Guidelines on market abuse under MiCA. These guidelines concern financial firms in the area of Digital Finance and Innovation. The document was issued on 05.08.2026."
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien zur Marktmissbrauchsbekämpfung gemäß der MiCA-Verordnung veröffentlicht. Diese Leitlinien konkretisieren die Anforderungen an Unternehmen, um Marktmissbrauch im Kontext von Krypto-Assets zu verhindern und zu erkennen.\n\nFinanzunternehmen, die im Bereich von Krypto-Assets tätig sind, müssen diese Leitlinien beachten. Sie dienen der Sicherstellung der Marktintegrität und des Anlegerschutzes im digitalen Finanzsektor. KPMG hebt in einem Fachbeitrag die Bedeutung dieser aufsichtsrechtlichen Leitlinien hervor.\n\nDas Dokument wurde am 05.08.2026 veröffentlicht.",
+          "en": "ESMA has published a compliance table for its Guidelines on market abuse under the MiCA Regulation. These guidelines specify the requirements for companies to prevent and detect market abuse in the context of crypto-assets.\n\nFinancial firms active in the crypto-asset sector must adhere to these guidelines. They are designed to ensure market integrity and investor protection in the digital finance sector. KPMG, in an expert article, emphasizes the significance of these supervisory guidelines.\n\nThe document was published on 05.08.2026."
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
         "refnum": "ESMA75-113276571-1625",
@@ -1444,8 +1444,8 @@
           "en": "Own funds requirement for entities authorized as Crypto Asset Service Provider (CASP), Electronic Money Institution (EMI) and Investment Firm (IF)"
         },
         "s": {
-          "de": "Die EBA klärt die Eigenmittelanforderungen für Unternehmen, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) und als Wertpapierfirma (IF) zugelassen sind. Es wird erläutert, wie die Eigenmittelanforderungen für diese mehrfach zugelassenen Einheiten zu bestimmen sind. Die Klärung richtet sich an alle betroffenen Finanzinstitute.",
-          "en": "The EBA clarifies the own funds requirements for entities authorized simultaneously as Crypto Asset Service Providers (CASP) under MiCAR, Electronic Money Institutions (EMI), and Investment Firms (IF). It explains how to determine the own funds requirements for these multiply authorized entities. The clarification is addressed to all affected financial institutions."
+          "de": "Diese EBA Q&A befasst sich mit der Bestimmung der Eigenmittelanforderungen für eine juristische Person, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) gemäß Richtlinie 2009/110/EC und als Wertpapierfirma (IF) zugelassen ist.\n\nDie Frage zielt darauf ab, wie die Eigenmittelanforderungen für solche hybriden Unternehmen zu berechnen sind, insbesondere wenn sie unter verschiedene regulatorische Rahmenwerke fallen. Dies ist relevant für Finanzinstitute, die ein breites Spektrum an Dienstleistungen anbieten und sicherstellen müssen, dass sie die korrekten Kapitalanforderungen erfüllen.\n\nDie Referenz 2026_7834 deutet auf eine zukünftige Klärung hin, da das Datum der Veröffentlichung der 29.05.2026 ist.",
+          "en": "This EBA Q&A addresses the determination of own funds requirements for a legal entity authorized simultaneously as a Crypto-Asset Service Provider (CASP) under MiCAR, an Electronic Money Institution (EMI) under Directive 2009/110/EC, and an Investment Firm (IF).\n\nThe question aims to clarify how own funds requirements should be calculated for such hybrid entities, especially when they fall under different regulatory frameworks. This is relevant for financial institutions offering a broad range of services and needing to ensure compliance with correct capital requirements.\n\nThe reference 2026_7834 indicates a future clarification, as the publication date is May 29, 2026."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7834",
         "refnum": "2026_7834"
@@ -1462,8 +1462,8 @@
           "en": "Austausch Informationen Kryptowerte"
         },
         "s": {
-          "de": "Das BMF hat einen Gesetzesentwurf zum Austausch von Informationen über Kryptowerte vorgelegt. Dieser Entwurf regelt den Informationsaustausch bezüglich Kryptowerten. Der Vorschlag betrifft alle Akteure im Bereich der Kryptowerte.",
-          "en": "The BMF has submitted a legislative proposal for the exchange of information on crypto assets. This proposal regulates the exchange of information regarding crypto assets. The proposal affects all actors in the crypto asset sector."
+          "de": "Das BMF hat einen Vorschlag zum Austausch von Informationen über Kryptowerte vorgelegt. Dieser Entwurf befasst sich mit der Meldung und dem Austausch von Daten bezüglich Transaktionen und Beständen von Kryptowerten.\n\nDie Regelungen sind für Unternehmen relevant, die mit Kryptowerten handeln oder diese verwahren. Sie müssen sich auf neue Meldepflichten einstellen, um die Transparenz im Kryptomarkt zu erhöhen und Steuerhinterziehung zu bekämpfen.",
+          "en": "The BMF has submitted a proposal for the exchange of information on crypto assets. This draft deals with the reporting and exchange of data regarding transactions and holdings of crypto assets.\n\nThese regulations are relevant for companies that trade or hold crypto assets. They must prepare for new reporting obligations to increase transparency in the crypto market and combat tax evasion."
         },
         "url": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2026-03-24-Austausch-Informationen-Kryptowerte/0-Gesetz.html"
       },
@@ -1479,8 +1479,8 @@
           "en": "ESRB publishes report on systemic risks from crypto-assets and issues recommendation on stablecoins"
         },
         "s": {
-          "de": "Der ESRB hat einen Bericht über systemische Risiken durch Krypto-Assets veröffentlicht und eine Empfehlung zu Stablecoins herausgegeben. Dies richtet sich an Finanzmarktteilnehmer und Aufsichtsbehörden.",
-          "en": "The ESRB has published a report on systemic risks from crypto-assets and issued a recommendation on stablecoins. This is aimed at financial market participants and supervisory authorities."
+          "de": "Der Europäische Ausschuss für Systemrisiken (ESRB) hat einen Bericht über systemische Risiken durch Krypto-Assets veröffentlicht. Gleichzeitig hat der ESRB eine Empfehlung zu Stablecoins herausgegeben.\n\nDies ist relevant für Finanzinstitute und Marktteilnehmer, die mit Krypto-Assets und insbesondere Stablecoins interagieren oder dies beabsichtigen. Der Bericht und die Empfehlung sollen dazu beitragen, potenzielle systemische Risiken im Zusammenhang mit diesen neuen Finanztechnologien zu identifizieren und zu mindern.",
+          "en": "The European Systemic Risk Board (ESRB) has published a report on systemic risks arising from crypto-assets. Concurrently, the ESRB has issued a recommendation on stablecoins.\n\nThis is relevant for financial institutions and market participants that interact with or intend to interact with crypto-assets, particularly stablecoins. The report and recommendation aim to identify and mitigate potential systemic risks associated with these new financial technologies."
         },
         "url": "https://www.esrb.europa.eu//news/pr/date/2025/html/esrb.pr251020~84e90ccc73.en.html"
       }
@@ -1498,8 +1498,8 @@
           "en": "Reporting obligations under Article 3 of the CIR"
         },
         "s": {
-          "de": "Die EBA klärt, ob und inwieweit Meldepflichten gemäß Artikel 3 der CIR für relevante juristische Personen (RLEs) gelten, die voraussichtlich nicht mehr als juristische Person existieren werden. Dies betrifft Finanzinstitute im Kontext der Richtlinie 2014/59/EU (BRRD). Die Klärung erfolgte am 05.08.2026.",
-          "en": "The EBA clarifies whether and to what extent reporting obligations under Article 3 of the CIR apply to Relevant Legal Entities (RLEs) that are expected to cease to exist as legal entities. This concerns financial institutions in the context of Directive 2014/59/EU (BRRD). The clarification was issued on 05.08.2026."
+          "de": "Die EBA klärt in dieser Q&A, ob und inwieweit die Meldepflichten gemäß Artikel 3 der CIR für relevante juristische Einheiten (RLEs) auch dann gelten, wenn eine kürzlich erworbene RLE mit hoher Sicherheit als juristische Person aufhören wird zu existieren.\n\nDies ist relevant für Finanzinstitute, die Akquisitionen tätigen und dabei RLEs erwerben, die in absehbarer Zeit nicht mehr als eigenständige juristische Personen bestehen werden. Die Klärung hilft bei der korrekten Anwendung der Meldepflichten im Rahmen der BRRD.\n\nDas Dokument bezieht sich auf die Richtlinie 2014/59/EU (BRRD) und das Thema BRRD Reporting.",
+          "en": "This EBA Q&A clarifies whether, and to what extent, the reporting obligations concerning Relevant Legal Entities (RLEs) under Article 3 of the CIR also apply where a recently acquired RLE is expected, with a high degree of certainty, to cease to exist as a legal entity.\n\nThis is relevant for financial institutions undertaking acquisitions and acquiring RLEs that are not expected to continue as separate legal entities in the foreseeable future. The clarification assists in the correct application of reporting obligations under the BRRD.\n\nThe document refers to Directive 2014/59/EU (BRRD) and the topic of BRRD Reporting."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7918",
         "refnum": "2026_7918"
@@ -1516,8 +1516,8 @@
           "en": "SRB focuses its resolvability assessment on operational readiness and testing"
         },
         "s": {
-          "de": "Der SRB hat die Ergebnisse seiner jährlichen Abwicklungsbewertung für 2025 veröffentlicht und konzentriert sich dabei auf die operative Bereitschaft und das Testen. Dies betrifft Banken. Die Veröffentlichung erfolgte am 31.07.2026.",
-          "en": "The SRB has published the results of its annual resolvability assessment for 2025, focusing on operational readiness and testing. This applies to banks. The publication was made on 31.07.2026."
+          "de": "Der Bericht des SRB zur Abwicklungsfähigkeit für das Jahr 2025 bewertet den Fortschritt der Banken bei ihren Abwicklungsfähigkeiten. Er markiert einen Übergang zu einem Fokus auf die Operationalisierung, das Testen und die kontinuierliche Verbesserung dieser Fähigkeiten.\n\nDies bedeutet für Finanzinstitute, dass der SRB nun verstärkt die praktische Umsetzbarkeit und Erprobung der Abwicklungsstrategien in den Vordergrund rückt. Insbesondere die operationelle Kontinuität in der Abwicklung (OCIR) wird dabei eine zentrale Rolle spielen, wie auch der Fachbeitrag von KPMG hervorhebt.\n\nDer Bericht wurde am 31.07.2026 veröffentlicht.",
+          "en": "The SRB's resolvability assessment report for 2025 evaluates banks' progress on their resolution capabilities. It marks a transition towards focusing on the operationalisation, testing, and continuous improvement of these capabilities.\n\nFor financial institutions, this means the SRB is now increasingly prioritising the practical implementation and testing of resolution strategies. Operational continuity in resolution (OCIR) will play a central role, as highlighted by KPMG's expert contribution.\n\nThe report was published on 31.07.2026."
         },
         "url": "https://www.srb.europa.eu/en/content/srb-focuses-its-resolvability-assessment-operational-readiness-and-testing",
         "adv": [
@@ -1541,8 +1541,8 @@
           "en": "SRB publishes a renewed Operational Guidance on Business Reorganisation Plan Analysis Reports"
         },
         "s": {
-          "de": "Der SRB hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen veröffentlicht. Diese Leitlinie bietet Banken einen konsolidierten Rahmen zur Stärkung ihrer Krisenbereitschaft und Abwicklungsfähigkeit. Die Veröffentlichung erfolgte am 30.07.2026.",
-          "en": "The SRB has published renewed Operational Guidance for banks on Business Reorganisation Plan Analysis Reports. This guidance provides banks with a consolidated framework to strengthen their crisis preparedness and resolvability. The publication was made on 30.07.2026."
+          "de": "Der SRB hat eine aktualisierte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen veröffentlicht. Diese Leitlinie wird durch eine ergänzende quantitative Vorlage ergänzt. Ziel ist es, Banken einen konsolidierten und transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit zu bieten.\n\nDie Dokumente führen keine neuen Anforderungen ein, sondern sollen die bestehenden Erwartungen an die Banken klarer formulieren. Dies ist insbesondere für Banken relevant, die der direkten Aufsicht des SRB unterliegen, um ihre Abwicklungsfähigkeit zu verbessern. KPMG hebt in diesem Zusammenhang die Bedeutung der operationellen Kontinuität in der Abwicklung (OCIR) hervor.\n\nDie Veröffentlichung erfolgte am 30.07.2026.",
+          "en": "The SRB has published updated operational guidance for banks on Business Reorganisation Plan Analysis Reports. This guidance is complemented by a quantitative template. The aim is to provide banks with a consolidated and transparent framework to strengthen their crisis preparedness and resolvability.\n\nThe documents do not introduce new requirements but aim to clarify existing expectations for banks. This is particularly relevant for banks under direct SRB supervision to improve their resolvability. KPMG emphasizes the importance of operational continuity in resolution (OCIR) in this context.\n\nThe publication date was 30.07.2026."
         },
         "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
         "adv": [
@@ -1566,8 +1566,8 @@
           "en": "Banks continue to meet their MREL targets at year end 2025"
         },
         "s": {
-          "de": "Der SRB veröffentlicht sein MREL Dashboard für H2 2025, das zeigt, dass Banken ihre MREL-Ziele weiterhin erreichen. MREL soll sicherstellen, dass Banken über ausreichende Verlustabsorptionskapazität verfügen. Das Dashboard verfolgt die Entwicklung dieser Ziele und Engpässe für externes und internes MREL sowie die Zusammensetzung der MREL-Instrumente.",
-          "en": "The SRB publishes its MREL Dashboard for H2 2025, showing that banks continue to meet their MREL targets. MREL aims to ensure banks maintain sufficient loss-absorbing capacity. The dashboard tracks the evolution of these targets and shortfalls for external and internal MREL, as well as the composition of MREL instruments."
+          "de": "The SRB today publishes its&nbsp;MREL Dashboard for H2 2025 which shows that banks continue to meet their MREL targets.&nbsp;MREL aims to ensure that a bank maintains sufficient loss-absorbing capacity to ensure that in resolution its shareholders and creditors would absorb the …",
+          "en": "The SRB today publishes its&nbsp;MREL Dashboard for H2 2025 which shows that banks continue to meet their MREL targets.&nbsp;MREL aims to ensure that a bank maintains sufficient loss-absorbing capacity to ensure that in resolution its shareholders and creditors would absorb the …"
         },
         "url": "https://www.srb.europa.eu/en/content/mrel-dashboard-h2-2025"
       },
@@ -1583,8 +1583,8 @@
           "en": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”"
         },
         "s": {
-          "de": "Der Single Resolution Board (SRB) begrüßt die Mitteilung der Europäischen Kommission zur Wettbewerbsfähigkeit des Bankensektors und des Binnenmarktes im Bankwesen. Der SRB sieht die Wettbewerbsfähigkeit durch einfachere Regeln und die Vollendung der Bankenunion gefördert. Die Mitteilung wurde am 17.07.2026 veröffentlicht.",
-          "en": "The Single Resolution Board (SRB) welcomes the European Commission's Communication on the Competitiveness of the Banking Sector and the Single Market in Banking. The SRB believes competitiveness is fostered by simpler rules and the completion of the Banking Union. The communication was published on 17.07.2026."
+          "de": "Der SRB begrüßt die Mitteilung der Europäischen Kommission zur Wettbewerbsfähigkeit des Bankensektors und des Binnenmarktes im Bankwesen. Aus Sicht des Krisenmanagements wird der umfassende Ansatz des Berichts gewürdigt, der Vereinfachung mit Maßnahmen zur Förderung der Marktintegration verbindet.\n\nDies betrifft Themen von der Einlagensicherung bis zur Liquidität in der Abwicklung. Der SRB teilt die Ansicht, dass Wettbewerbsfähigkeit nicht nur durch einfachere und weniger Regeln gefördert wird, sondern auch durch die Vollendung der Bankenunion, um die Vorteile eines echten Binnenmarktes zu nutzen.\n\nDie Meldung ist für Finanzinstitute relevant, da sie die strategische Ausrichtung der EU-Kommission und des SRB bezüglich der zukünftigen Gestaltung des Bankensektors und der Krisenmanagementrahmen aufzeigt.",
+          "en": "The SRB welcomes the European Commission's Communication on the Competitiveness of the Banking Sector and the Single Market in Banking. From a crisis management perspective, the report's comprehensive approach, blending simplification with measures to foster market integration, is appreciated.\n\nThis covers topics from deposit insurance to liquidity in resolution. The SRB shares the view that competitiveness is best fostered not only by simpler, fewer rules, but also by completing the Banking Union to reap the benefits of a true Single Market.\n\nThis announcement is relevant for financial institutions as it outlines the strategic direction of the EU Commission and the SRB regarding the future structure of the banking sector and crisis management frameworks."
         },
         "url": "https://www.srb.europa.eu/en/content/single-resolution-board-welcomes-european-commissions-communication-competitiveness-banking"
       },
@@ -1600,8 +1600,8 @@
           "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)"
         },
         "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Überprüfung des Rahmens für das Bankenkrisenmanagement und die Einlagensicherung (DGSD-Überprüfung) vorgelegt. Dieser Vorschlag betrifft die Bankenunion. Ein Anwendungsbeginn oder eine Konsultationsfrist sind dem Text nicht zu entnehmen.",
-          "en": "The European Commission has submitted a legislative proposal for the review of the bank crisis management and deposit insurance framework (DGSD review). This proposal concerns the Banking Union. A start date or consultation deadline is not available in the text."
+          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung des Rahmens für das Krisenmanagement und die Einlagensicherung im Bankensektor (CMDI-Paket) vorgelegt. Ziel ist es, die Instrumente zur Bewältigung von Bankenkrisen zu verbessern und die Einlagensicherung zu stärken.\n\nDas CMDI-Paket ist relevant für Banken und Finanzinstitute in der EU. Es soll sicherstellen, dass auch kleinere und mittlere Banken im Krisenfall besser abgewickelt werden können, um die Finanzstabilität zu gewährleisten und die Steuerzahler zu schützen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung des Pakets im EU-Amtsblatt hin.\n\nDer Vorschlag befindet sich im Adoptionsprozess.",
+          "en": "The European Commission has put forward a proposal to review the bank crisis management and deposit insurance framework (CMDI package). The aim is to improve the tools for managing banking crises and to strengthen deposit insurance.\n\nThe CMDI package is relevant for banks and financial institutions in the EU. It is intended to ensure that even smaller and medium-sized banks can be better resolved in the event of a crisis, thereby safeguarding financial stability and protecting taxpayers. KPMG highlights the publication of the package in the EU Official Journal in an expert article.\n\nThe proposal is currently in the adoption workflow."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13813",
         "refnum": "COM(2023)228",
@@ -1628,8 +1628,8 @@
           "en": "Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht"
         },
         "s": {
-          "de": "Das Bundesamt für Justiz hat eine Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht erlassen. Diese Verordnung ist für Unternehmen relevant, die Verbraucherkreditverträge anbieten. Das Datum der Veröffentlichung ist der 31.07.2026.",
-          "en": "The Federal Office of Justice has issued a regulation for the implementation of Directive (EU) 2023/2225 on consumer credit agreements in commercial law. This regulation is relevant for companies offering consumer credit agreements. The publication date is 31.07.2026."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/229",
         "adv": [
@@ -1665,8 +1665,8 @@
           "en": "Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Regelung der Förderung klimaneutraler Mobilität"
         },
         "s": {
-          "de": "Ein neues Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Förderung klimaneutraler Mobilität tritt in Kraft. Es regelt Verbraucherkreditverträge und Maßnahmen zur Unterstützung klimaneutraler Mobilität. Das Gesetz gilt für alle Finanzinstitute, die Verbraucherkredite vergeben, und tritt am 18.05.2026 in Kraft.",
-          "en": "A new law implementing Directive (EU) 2023/2225 on consumer credit agreements and promoting climate-neutral mobility comes into force. It regulates consumer credit agreements and measures supporting climate-neutral mobility. The law applies to all financial institutions granting consumer credit and becomes effective on 18.05.2026."
+          "de": "Das Gesetz setzt die EU-Richtlinie 2023/2225 über Verbraucherkreditverträge in nationales Recht um. Es regelt die Bedingungen für Verbraucherkredite und zielt darauf ab, den Verbraucherschutz zu stärken.\n\nFinanzinstitute, die Verbraucherkredite vergeben, müssen ihre Prozesse und Produkte an die neuen Vorgaben anpassen. Die Fachbeiträge deuten auf einen erhöhten Regulierungsaufwand hin und werfen die Frage auf, ob insbesondere die Autofinanzierung neu strukturiert werden muss.\n\nDas Gesetz wurde am 18.05.2026 im Bundesgesetzblatt veröffentlicht.",
+          "en": "The law transposes EU Directive 2023/2225 on consumer credit agreements into national law. It regulates the conditions for consumer credit and aims to strengthen consumer protection.\n\nFinancial institutions granting consumer credit must adapt their processes and products to the new requirements. Expert contributions indicate increased regulatory effort and raise the question of whether car financing, in particular, needs to be restructured.\n\nThe law was published in the Federal Law Gazette on 18.05.2026."
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/139",
         "adv": [
@@ -1708,8 +1708,8 @@
           "en": "Judgment of the Court in Case C-744/24 Bank Polska Kasa Opieki"
         },
         "s": {
-          "de": "Der EuGH hat entschieden, dass eine Bank keine Zinsen auf Beträge erheben darf, die zur Begleichung von Kosten im Zusammenhang mit einem Verbraucherkredit verwendet wurden. Dieses Urteil betrifft alle Banken, die Verbraucherkredite vergeben. Das Urteil wurde am 23.04.2026 gefällt.",
-          "en": "The ECJ has ruled that a bank may not charge interest on sums used to pay costs associated with consumer credit. This judgment affects all banks that grant consumer credit. The judgment was rendered on 23.04.2026."
+          "de": "Der Europäische Gerichtshof hat entschieden, dass Banken keine Zinsen auf Beträge erheben dürfen, die zur Deckung von Kosten im Zusammenhang mit Verbraucherkrediten verwendet werden. Dies betrifft die Zinsbasis bei Verbraucherkrediten.\n\nDas Urteil ist für alle EU-Kreditgeber relevant, die Verbraucherkredite anbieten. Sie müssen ihre Praktiken zur Zinsberechnung überprüfen und sicherstellen, dass keine Zinsen auf die Kreditnebenkosten erhoben werden. PwC Legal hebt die Notwendigkeit hervor, die Auswirkungen auf die Zinsbasis zu beachten.\n\nDas Urteil wurde am 23.04.2026 verkündet und ist unter der Referenz C-744/24 zu finden.",
+          "en": "The European Court of Justice has ruled that banks may not charge interest on sums used to pay costs associated with consumer credit. This concerns the interest basis for consumer loans.\n\nThis judgment is relevant for all EU lenders offering consumer credit. They must review their interest calculation practices and ensure that no interest is charged on ancillary credit costs. PwC Legal emphasizes the need to consider the impact on the interest basis.\n\nThe judgment was delivered on 23.04.2026 and can be found under reference C-744/24."
         },
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-04/cp260063de.pdf",
         "refnum": "C-744/24",
@@ -1734,8 +1734,8 @@
           "en": "Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts sowie zur Änderung des Behandlungsvertragsrechts"
         },
         "s": {
-          "de": "Das Gesetz ändert das Verbrauchervertrags- und Versicherungsvertragsrecht sowie das Behandlungsvertragsrecht. Es gilt für alle Akteure, die von diesen Rechtsänderungen betroffen sind. Das Gesetz tritt am 05.02.2026 in Kraft.",
-          "en": "The law amends consumer contract law, insurance contract law, and treatment contract law. It applies to all entities affected by these legal changes. The law comes into effect on 05.02.2026."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/28",
         "adv": [
@@ -1761,8 +1761,8 @@
           "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
         },
         "s": {
-          "de": "EBA, EIOPA und ESMA fordern eine verbesserte Governance und konsistente Aufsicht, um IKT-Risiken durch neuartige KI-Modelle im EU-Finanzsektor zu mindern. Dies betrifft alle Finanzunternehmen in der EU. Die Aufforderung erfolgte am 31.07.2026.",
-          "en": "EBA, EIOPA, and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector. This concerns all financial firms in the EU. The call was made on 31.07.2026."
+          "de": "Die EBA, EIOPA und ESMA fordern eine verbesserte Governance und eine konsistente Beaufsichtigung, um IKT-Risiken durch neuartige KI-Modelle im EU-Finanzsektor zu mindern. Dies betrifft insbesondere den Einsatz von Frontier AI-Modellen, die aufgrund ihrer Komplexität und potenziellen Auswirkungen besondere Herausforderungen für die Stabilität und Integrität des Finanzsystems darstellen.\n\nDie Empfehlungen zielen darauf ab, Finanzunternehmen und Aufsichtsbehörden auf die spezifischen Risiken dieser Technologien vorzubereiten. Es geht darum, robuste Rahmenwerke für das Risikomanagement zu etablieren und eine einheitliche Aufsichtspraxis zu gewährleisten, um die Resilienz des Sektors zu stärken.\n\nDie Meldung wurde am 31.07.2026 von der EBA veröffentlicht.",
+          "en": "The EBA, EIOPA and ESMA are calling for enhanced governance and consistent supervision to mitigate ICT risks arising from frontier AI models in the EU financial sector. This specifically concerns the use of frontier AI models, which, due to their complexity and potential impact, pose particular challenges to the stability and integrity of the financial system.\n\nThe recommendations aim to prepare financial undertakings and supervisory authorities for the specific risks of these technologies. The focus is on establishing robust risk management frameworks and ensuring uniform supervisory practices to strengthen the sector's resilience.\n\nThe announcement was published by the EBA on 31.07.2026."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier"
       },
@@ -1778,8 +1778,8 @@
           "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
         },
         "s": {
-          "de": "Die ESAs fordern eine verbesserte Governance und konsistente Aufsicht, um IKT-Risiken durch neue KI-Modelle im EU-Finanzsektor zu mindern. Dies betrifft Finanzunternehmen in der EU. Die Forderung wurde am 31.07.2026 veröffentlicht.",
-          "en": "The ESAs call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector. This applies to financial undertakings in the EU. The call was published on 31.07.2026."
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) fordern eine verbesserte Governance und konsistente Aufsicht, um IKT-Risiken durch „Frontier AI Models“ im EU-Finanzsektor zu mindern. Dies soll die operationelle Resilienz von Finanzunternehmen gegenüber Cyberrisiken im Zusammenhang mit diesen KI-Modellen stärken.\n\nDie Meldung ist relevant für alle Finanzunternehmen im EU-Finanzsektor. Sie unterstreicht die Notwendigkeit eines einheitlichen und risikobasierten Ansatzes zur Bewältigung der Herausforderungen, die sich aus der Nutzung fortschrittlicher KI-Modelle ergeben.\n\nDie Veröffentlichung erfolgte am 31.07.2026.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) are calling for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector. This aims to strengthen the operational resilience of financial entities against cyber risks linked to these AI models.\n\nThis announcement is relevant for all financial entities within the EU financial sector. It highlights the necessity of a unified and risk-based approach to address the challenges posed by the use of advanced AI models.\n\nThe publication date was 31.07.2026."
         },
         "url": "https://www.eiopa.europa.eu/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier-2026-07-31_en"
       },
@@ -1795,8 +1795,8 @@
           "en": "ESAs' statement toward a consistent and risk-based approach for ICT risks from frontier AI models"
         },
         "s": {
-          "de": "Die ESAs haben eine Erklärung zu einem konsistenten und risikobasierten Ansatz für IKT-Risiken aus neuen KI-Modellen abgegeben. Dies betrifft den EU-Finanzsektor. Die Erklärung wurde am 31.07.2026 veröffentlicht.",
-          "en": "The ESAs have issued a statement towards a consistent and risk-based approach for ICT risks from frontier AI models. This applies to the EU financial sector. The statement was published on 31.07.2026."
+          "de": "Statement — Digital Finance and Innovation, Joint Committee",
+          "en": "Statement — Digital Finance and Innovation, Joint Committee"
         },
         "url": "https://www.esma.europa.eu/document/esas-statement-toward-consistent-and-risk-based-approach-ict-risks-frontier-ai-models"
       }
@@ -1814,8 +1814,8 @@
           "en": "Gesetz zur Durchführung der Verordnung (EU) 2024/1689 des Europäischen Parlaments und des Rates vom 13. Juni 2024 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz und zur …"
         },
         "s": {
-          "de": "Ein Gesetz zur Durchführung der Verordnung (EU) 2024/1689 zur Festlegung harmonisierter Vorschriften für künstliche Intelligenz wurde erlassen. Dies betrifft die Anwendung der KI-Verordnung in Deutschland. Das Gesetz wurde am 28.07.2026 veröffentlicht.",
-          "en": "A law implementing Regulation (EU) 2024/1689 establishing harmonised rules for artificial intelligence has been enacted. This concerns the application of the AI Regulation in Germany. The law was published on 28.07.2026."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/223",
         "adv": [
@@ -1853,8 +1853,8 @@
           "en": "Rundschreiben 08/2026 (WA)"
         },
         "s": {
-          "de": "Die BaFin hat das Rundschreiben 08/2026 (WA) veröffentlicht, das klarstellt, dass Vermögensanlagen im Regelfall keine verpackten Anlageprodukte gemäß PRIIPs-VO sind. Dies betrifft Finanzunternehmen, die Vermögensanlagen anbieten. Das Rundschreiben wurde am 27.07.2026 datiert.",
-          "en": "BaFin has published Circular 08/2026 (WA), clarifying that asset investments are generally not packaged investment products according to the PRIIPs-VO. This affects financial institutions offering asset investments. The circular was dated 27.07.2026."
+          "de": "Vermögensanlagen im Regelfall keine verpackten Anlageprodukte gemäß PRIIPs-VO",
+          "en": "Vermögensanlagen im Regelfall keine verpackten Anlageprodukte gemäß PRIIPs-VO"
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_08_26_verm%C3%B6gensanlagen.html",
         "refnum": "08/2026"
@@ -1871,8 +1871,8 @@
           "en": "Quick fix to the PRIIPs Regulation"
         },
         "s": {
-          "de": "Die Europäische Kommission arbeitet an einer \"Quick fix\"-Lösung für die PRIIPs-Verordnung. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is working on a \"Quick fix\" to the PRIIPs Regulation. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12987",
         "refnum": "Ares(2021)2389148"
@@ -1891,8 +1891,8 @@
           "en": "Compliance table on the guidelines on outsourcing to cloud service providers"
         },
         "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für das Outsourcing an Cloud-Dienstleister veröffentlicht. Dies betrifft Finanzunternehmen, die Cloud-Dienste auslagern. Das Dokument wurde am 23.07.2026 veröffentlicht.",
-          "en": "ESMA has published a compliance table on the guidelines for outsourcing to cloud service providers. This affects financial firms that outsource to cloud services. The document was published on 23.07.2026."
+          "de": "Compliance table — Digital Finance and Innovation, Guidelines and Technical standards",
+          "en": "Compliance table — Digital Finance and Innovation, Guidelines and Technical standards"
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
         "refnum": "ESMA65-294529287-4824"
@@ -1911,8 +1911,8 @@
           "en": "Compliance table on the Guidelines on Liquidity Management Tools (LMTs) of UCITS and open-ended AIFs"
         },
         "s": {
-          "de": "Die ESMA veröffentlicht eine Compliance-Tabelle zu den Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs. Diese Leitlinien sind für Fondsmanager relevant. Das Dokument wurde am 21.07.2026 veröffentlicht.",
-          "en": "ESMA publishes a compliance table on the Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. These guidelines are relevant for fund managers. The document was published on 21.07.2026."
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Das Dokument mit der Referenz ESMA34-671404336-1384 ist als Leitlinie klassifiziert.\n\nDiese Compliance-Tabelle dient der Überprüfung der Einhaltung der ESMA-Leitlinien zu LMTs. Finanzinstitute, die OGAW und offene AIFs verwalten, müssen ihre internen Prozesse und Systeme auf Konformität mit diesen Leitlinien prüfen. Ein Fachbeitrag von KPMG weist darauf hin, dass bereits zwei delegierte Verordnungen zur Festlegung von Merkmalen von LMTs im EU-Amtsblatt veröffentlicht wurden, was die praktische Relevanz dieser Thematik unterstreicht.",
+          "en": "ESMA has published a compliance table on the Guidelines on Liquidity Management Tools (LMTs) of UCITS and open-ended AIFs. The document, referenced ESMA34-671404336-1384, is classified as a guideline.\n\nThis compliance table serves to verify adherence to ESMA's guidelines on LMTs. Financial institutions managing UCITS and open-ended AIFs must review their internal processes and systems for conformity with these guidelines. A KPMG article highlights that two delegated regulations defining the characteristics of LMTs have already been published in the EU Official Journal, underscoring the practical relevance of this topic."
         },
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
         "refnum": "ESMA34-671404336-1384",
@@ -1937,8 +1937,8 @@
           "en": "Shadow Banking Definition - Alternative Investment Funds"
         },
         "s": {
-          "de": "Die EBA präzisiert die Definition von Schattenbanken für Alternative Investmentfonds (AIF). Es wird geklärt, ob ein AIF als Schattenbank gilt, wenn seine Gründungsdokumente die Kreditvergabe oder den Kauf von Drittkrediten nicht explizit verbieten. Diese Klärung betrifft AIFs im Kontext der Großkredite gemäß CRR.",
-          "en": "The EBA clarifies the definition of shadow banking for Alternative Investment Funds (AIFs). It addresses whether an AIF qualifies as a shadow bank if its constitutive documents do not explicitly prohibit loan origination or the purchase of third-party lending exposures. This clarification concerns AIFs in the context of large exposures under CRR."
+          "de": "Diese EBA Q&A klärt, ob ein Alternativer Investmentfonds (AIF) als Schattenbank einzustufen ist, wenn seine Gründungsdokumente die Kreditvergabe oder den Erwerb von Drittkreditengagements nicht explizit verbieten.\n\nDie Frage ist relevant für AIFs, die unter die Richtlinie 2011/61/EU fallen, da die Einstufung als Schattenbank Auswirkungen auf die regulatorischen Anforderungen haben kann. PwC Legal weist in einem Fachbeitrag auf die Relevanz für das Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften hin, was die praktische Bedeutung dieser Definition unterstreicht.\n\nDie Referenz 2026_7833 deutet auf eine zukünftige Klärung hin, da das Datum der Veröffentlichung der 29.05.2026 ist.",
+          "en": "This EBA Q&A clarifies whether an Alternative Investment Fund (AIF) should be classified as shadow banking if its constitutive documents do not explicitly prohibit loan origination or the purchase of third-party lending exposures.\n\nThis question is relevant for AIFs falling under Directive 2011/61/EU, as classification as shadow banking can have implications for regulatory requirements. PwC Legal highlights in an expert article the relevance for the authorization process of AIF management companies, underscoring the practical importance of this definition.\n\nThe reference 2026_7833 indicates a future clarification, as the publication date is May 29, 2026."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7833",
         "refnum": "2026_7833",
@@ -1963,8 +1963,8 @@
           "en": "Gesetz zur Begrenzung der Risiken durch Investmentfonds und zur Umsetzung der Richtlinie (EU) 2024/927 im Hinblick auf Übertragungsvereinbarungen, Liquiditätsrisikomanagement, die aufsichtliche …"
         },
         "s": {
-          "de": "Ein neues Gesetz zur Begrenzung der Risiken durch Investmentfonds und zur Umsetzung der Richtlinie (EU) 2024/927 tritt in Kraft. Es betrifft Übertragungsvereinbarungen, Liquiditätsrisikomanagement, aufsichtliche Berichterstattung, Verwahr- und Hinterlegungsdienstleistungen sowie Kreditvergabe. Das Gesetz gilt für Investmentfonds und tritt am 14.04.2026 in Kraft.",
-          "en": "A new law limiting risks from investment funds and implementing Directive (EU) 2024/927 comes into force. It concerns transfer agreements, liquidity risk management, supervisory reporting, custody and deposit services, and lending. The law applies to investment funds and becomes effective on 14.04.2026."
+          "de": "Dieses Gesetz dient der Begrenzung von Risiken durch Investmentfonds und setzt die Richtlinie (EU) 2024/927 um. Es adressiert Übertragungsvereinbarungen, Liquiditätsrisikomanagement, aufsichtliche Berichterstattung, die Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie die Kreditvergabe.\n\nDas Gesetz ist für Investmentfonds relevant und hat Auswirkungen auf deren Risikomanagement und Berichtspflichten. Fachbeiträge von PwC und Waldeck Rechtsanwälte weisen auf die Änderungen im KAGB und spezifisch auf Immobilien-Sondervermögen hin, was eine Anpassung der internen Prozesse und Compliance-Maßnahmen erfordert.\n\nDas Gesetz wurde am 14.04.2026 vom Bundesamt für Justiz veröffentlicht. Die BaFin hat bereits Rundschreiben zu den Änderungen im KAGB in Folge dieses Gesetzes konsultiert.",
+          "en": "This law aims to limit risks posed by investment funds and implements Directive (EU) 2024/927. It addresses transfer agreements, liquidity risk management, supervisory reporting, the provision of custody and depositary services, and lending activities.\n\nThis law is relevant for investment funds and impacts their risk management and reporting obligations. Expert contributions from PwC and Waldeck Rechtsanwälte highlight the changes in the KAGB and specifically for real estate special funds, necessitating an adjustment of internal processes and compliance measures.\n\nThe law was published on 14.04.2026 by the Federal Office of Justice. BaFin has already consulted on circulars regarding the changes in the KAGB resulting from this law."
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
         "adv": [
@@ -2000,8 +2000,8 @@
           "en": "Long Term Investment Funds – Review of EU rules"
         },
         "s": {
-          "de": "Die EU-Regeln für langfristige Investmentfonds werden überprüft. Dies betrifft Long Term Investment Funds. Der Vorschlag wurde am 25.11.2021 veröffentlicht.",
-          "en": "The EU rules on Long Term Investment Funds are being reviewed. This affects Long Term Investment Funds. The proposal was published on 25.11.2021."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12570",
         "refnum": "Ares(2020)4337803",
@@ -2032,8 +2032,8 @@
           "en": "Alternative Investment Fund Managers – review of EU rules"
         },
         "s": {
-          "de": "Die Europäische Kommission prüft die EU-Vorschriften für Verwalter alternativer Investmentfonds. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is reviewing the EU rules for Alternative Investment Fund Managers. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung der EU-Regeln für Verwalter alternativer Investmentfonds (AIFM) vorgelegt. Ziel ist es, die bestehenden Vorschriften zu aktualisieren und an aktuelle Marktgegebenheiten anzupassen.\n\nDieser Vorschlag ist relevant für alle AIF-Kapitalverwaltungsgesellschaften. Er könnte Auswirkungen auf deren Erlaubnisverfahren und die allgemeinen Compliance-Anforderungen haben, wie auch der Fachbeitrag von PwC Legal zum Merkblatt der BaFin andeutet.\n\nDer Vorschlag befindet sich im Adoptions-Workflow-Verfahren.",
+          "en": "The European Commission has submitted a proposal to review the EU rules for Alternative Investment Fund Managers (AIFM). The aim is to update the existing regulations and adapt them to current market conditions.\n\nThis proposal is relevant for all AIF management companies. It could impact their authorization procedures and general compliance requirements, as indicated by PwC Legal's expert contribution on BaFin's guidance notice.\n\nThe proposal is currently in the adoption workflow process."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12648",
         "refnum": "Ares(2020)5407001",
@@ -2058,8 +2058,8 @@
           "en": "Integration of sustainability risks and factors related to alternative investment fund managers"
         },
         "s": {
-          "de": "Die Europäische Kommission befasst sich mit der Integration von Nachhaltigkeitsrisiken und -faktoren für Verwalter alternativer Investmentfonds. Es handelt sich um einen Legislativvorschlag, dessen Verfahrensstand „Adoption Workflow“ ist.",
-          "en": "The European Commission is addressing the integration of sustainability risks and factors for alternative investment fund managers. This is a legislative proposal with the procedural status \"Adoption Workflow\"."
+          "de": "Dieses Dokument befasst sich mit der Integration von Nachhaltigkeitsrisiken und -faktoren für Verwalter alternativer Investmentfonds (AIFM).\n\nEs ist relevant für AIFM und betrifft deren Verfahren zur Berücksichtigung von Nachhaltigkeitsaspekten. Die Fachbeiträge von PwC und PwC Legal weisen auf eine Konsultation der BaFin zu Änderungen im KAGB hin, die sich aus dem Finanzmarktintegritätsstärkungsgesetz (FRiG) ergeben, was die praktische Relevanz für deutsche AIFM unterstreicht.\n\nDer Verfahrensstand ist \"Adoption Workflow\", was auf eine bevorstehende oder laufende Verabschiedung hindeutet.",
+          "en": "This document addresses the integration of sustainability risks and factors for Alternative Investment Fund Managers (AIFMs).\n\nIt is relevant for AIFMs and concerns their procedures for incorporating sustainability aspects. The expert contributions from PwC and PwC Legal point to a BaFin consultation on changes to the KAGB resulting from the Financial Market Integrity Strengthening Act (FRiG), highlighting the practical relevance for German AIFMs.\n\nThe procedural status is \"Adoption Workflow,\" indicating an upcoming or ongoing adoption process."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/11960",
         "refnum": "Ares(2019)5605641",
@@ -2092,8 +2092,8 @@
           "en": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing"
         },
         "s": {
-          "de": "Der EDPB und die AMLA werden gemeinsame Leitlinien für Informationsaustauschpartnerschaften entwickeln, um Finanzkriminalität zu bekämpfen und gleichzeitig personenbezogene Daten zu schützen. Dies ist relevant für Unternehmen und Fachleute, die den Geldwäschevorschriften unterliegen.",
-          "en": "The EDPB and AMLA will develop joint guidelines on information sharing partnerships to combat financial crime while protecting personal data. This is relevant for companies and professionals subject to anti-money laundering rules."
+          "de": "Brussels/Frankfurt, 1 July – The EDPB and the Anti-Money Laundering Authority (AMLA) are working together to bring greater clarity to a question of growing importance for industry and authorities alike: how to share information to fight financial crime while protecting personal …",
+          "en": "Brussels/Frankfurt, 1 July – The EDPB and the Anti-Money Laundering Authority (AMLA) are working together to bring greater clarity to a question of growing importance for industry and authorities alike: how to share information to fight financial crime while protecting personal …"
         },
         "url": "https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en"
       },
@@ -2109,8 +2109,8 @@
           "en": "Consultation on the draft ITS under Art. 15(3) AMLAR"
         },
         "s": {
-          "de": "Die AMLA konsultiert einen Entwurf für Implementing Technical Standards (ITS) gemäß Artikel 15 Absatz 3 der AMLAR. Die Konsultation richtet sich an alle relevanten Stakeholder. Stellungnahmen können bis zum 27.01.2026 eingereicht werden.",
-          "en": "AMLA is consulting on a draft for Implementing Technical Standards (ITS) under Article 15(3) AMLAR. The consultation is aimed at all relevant stakeholders. Comments can be submitted until 27.01.2026."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-under-art-153-amlar_en",
         "deadline": "27.01.2026",
@@ -2135,8 +2135,8 @@
           "en": "AMLA and ECB sign agreement on cooperation"
         },
         "s": {
-          "de": "Die AMLA und die EZB haben eine Kooperationsvereinbarung unterzeichnet. Diese Vereinbarung regelt die Zusammenarbeit zwischen den beiden Behörden. Sie trat am 03.07.2025 in Kraft.",
-          "en": "AMLA and the ECB have signed a cooperation agreement. This agreement governs the cooperation between the two authorities. It came into effect on 03.07.2025."
+          "de": "",
+          "en": ""
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/amla-and-ecb-sign-agreement-cooperation_en",
         "adv": [
@@ -2160,8 +2160,8 @@
           "en": "AMLA signs Memorandum of Understanding with the European Supervisory Authorities for effective cooperation and information exchange"
         },
         "s": {
-          "de": "Die AMLA hat ein Memorandum of Understanding mit den Europäischen Aufsichtsbehörden unterzeichnet. Dies soll eine effektive Zusammenarbeit und den Informationsaustausch fördern. Die Konsultationsfrist endete am 27.06.2025.",
-          "en": "AMLA has signed a Memorandum of Understanding with the European Supervisory Authorities. This aims to foster effective cooperation and information exchange. The consultation period ended on 27.06.2025."
+          "de": "Die AMLA hat ein Memorandum of Understanding (MoU) mit den Europäischen Aufsichtsbehörden (ESAs) unterzeichnet. Dieses MoU soll eine effektive Zusammenarbeit und den Informationsaustausch zwischen der AMLA und den ESAs im Kampf gegen Finanzkriminalität sicherstellen.\n\nDas Abkommen ist relevant für Finanzinstitute, die den Vorschriften zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung unterliegen. Es schafft einen Rahmen für die Koordination der Aufsicht und die gemeinsame Nutzung von Informationen, was zu einer kohärenteren Anwendung der AML/CFT-Vorschriften in der EU führen soll. Die Erwähnung der KPMG-Konsultation zu Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen deutet auf die praktische Relevanz für die Sorgfaltspflichten von Unternehmen hin.\n\nDie Konsultationsfrist für den Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen endete am 27.06.2025.",
+          "en": "AMLA has signed a Memorandum of Understanding (MoU) with the European Supervisory Authorities (ESAs). This MoU aims to ensure effective cooperation and information exchange between AMLA and the ESAs in the fight against financial crime.\n\nThis agreement is relevant for financial institutions subject to anti-money laundering and counter-terrorist financing regulations. It establishes a framework for supervisory coordination and information sharing, which should lead to a more coherent application of AML/CFT rules across the EU. The mention of KPMG's consultation on guidelines for ongoing business relationship monitoring indicates the practical relevance for companies' due diligence obligations.\n\nThe consultation period for the draft guidelines on ongoing monitoring of business relationships ended on 27.06.2025."
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/amla-signs-memorandum-understanding-european-supervisory-authorities-effective-cooperation-and_en",
         "deadline": "27.06.2025",
@@ -2186,8 +2186,8 @@
           "en": "AMLA expects high standards against financial crime in crypto sector"
         },
         "s": {
-          "de": "Die AMLA erwartet hohe Standards zur Bekämpfung der Finanzkriminalität im Kryptosektor. Dies betrifft Unternehmen, die im Kryptobereich tätig sind. Die Erwartung wurde am 01.07.2025 geäußert.",
-          "en": "AMLA expects high standards against financial crime in the crypto sector. This applies to companies operating in the crypto space. The expectation was stated on 01.07.2025."
+          "de": "Die AMLA erwartet hohe Standards bei der Bekämpfung von Finanzkriminalität im Kryptosektor. Dies unterstreicht die zunehmende Fokussierung der Aufsichtsbehörde auf die Einhaltung der Vorschriften zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung in diesem Bereich.\n\nDiese Erwartung ist besonders relevant für Unternehmen, die im Kryptosektor tätig sind, einschließlich Krypto-Dienstleister und Finanzinstitute, die mit Krypto-Assets handeln oder diese verwahren. Sie müssen ihre internen Kontrollen und Prozesse anpassen, um den hohen Anforderungen der AMLA gerecht zu werden. Die Erwähnung der KPMG-Konsultation zu Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen deutet auf die Notwendigkeit einer robusten Überwachung von Kundenbeziehungen auch in diesem Sektor hin.",
+          "en": "AMLA expects high standards in combating financial crime in the crypto sector. This highlights the supervisory authority's increasing focus on compliance with anti-money laundering and counter-terrorist financing regulations in this area.\n\nThis expectation is particularly relevant for companies operating in the crypto sector, including crypto service providers and financial institutions that trade or custody crypto assets. They must adapt their internal controls and processes to meet AMLA's high requirements. The mention of KPMG's consultation on guidelines for ongoing monitoring of business relationships indicates the need for robust monitoring of customer relationships in this sector as well."
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/amla-expects-high-standards-against-financial-crime-crypto-sector_en",
         "adv": [
@@ -2213,8 +2213,8 @@
           "en": "Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk Novelle"
         },
         "s": {
-          "de": "Die BaFin hat am 30.06.2026 eine Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk Novelle veröffentlicht. Diese dient der Gegenüberstellung der Entwurfs- und Endfassung der Änderungen der Mindestanforderungen an das Risikomanagement. Die Änderungen betreffen alle Finanzinstitute, die den MaRisk unterliegen.",
-          "en": "The BaFin published on 30.06.2026 a comparison version of the consultation draft to the final published version of the 9th MaRisk amendment. This serves to compare the draft and final versions of the changes to the Minimum Requirements for Risk Management. The changes apply to all financial institutions subject to MaRisk."
+          "de": "Dieses Dokument ist eine Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk Novelle. Es zeigt die Änderungen zwischen den beiden Versionen auf.\n\nDie 9. MaRisk-Novelle ist für alle Banken relevant, da sie die Mindestanforderungen an das Risikomanagement aktualisiert. Fachbeiträge von KPMG und PwC weisen auf die Bedeutung der überarbeiteten Anforderungen hin und beleuchten die Auswirkungen auf die Praxis.\n\nEs handelt sich um eine Konsultationsfassung, was auf einen noch nicht abgeschlossenen Prozess hindeutet.",
+          "en": "This document is a comparison version of the consultation draft to the published version of the 9th MaRisk Amendment. It highlights the changes between the two versions.\n\nThe 9th MaRisk Amendment is relevant for all banks as it updates the minimum requirements for risk management. Expert contributions from KPMG and PwC point to the significance of the revised requirements and shed light on their practical implications.\n\nThis is a consultation draft, indicating that the process is not yet finalized."
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk_vergleichsfassung_konsultation.html",
         "adv": [
@@ -2256,8 +2256,8 @@
           "en": "Rundschreiben 06/2026 (BA)"
         },
         "s": {
-          "de": "Die BaFin hat am 30.06.2026 das Rundschreiben 06/2026 (BA) zu den Mindestanforderungen an das Risikomanagement (MaRisk) veröffentlicht. Es präzisiert die Anforderungen an das Risikomanagement für Finanzinstitute. Das Rundschreiben richtet sich an alle von den MaRisk betroffenen Unternehmen.",
-          "en": "The BaFin published Circular 06/2026 (BA) on the Minimum Requirements for Risk Management (MaRisk) on 30.06.2026. It specifies the risk management requirements for financial institutions. The circular is addressed to all companies affected by MaRisk."
+          "de": "Rundschreiben 06/2026 (BA) - Mindestanforderungen an das Risikomanagement - MaRisk",
+          "en": "Rundschreiben 06/2026 (BA) - Mindestanforderungen an das Risikomanagement - MaRisk"
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk.html",
         "refnum": "06/2026",
@@ -2300,8 +2300,8 @@
           "en": "Vergleichsversion der 8. MaRisk Novelle zur 9. MaRisk Novelle"
         },
         "s": {
-          "de": "Die BaFin hat am 30.06.2026 eine Vergleichsversion der 8. MaRisk Novelle zur 9. MaRisk Novelle veröffentlicht. Diese stellt die Änderungen zwischen der vorherigen und der aktuellen Novelle der Mindestanforderungen an das Risikomanagement dar. Die Änderungen sind relevant für alle Finanzinstitute, die den MaRisk unterliegen.",
-          "en": "The BaFin published on 30.06.2026 a comparison version of the 8th MaRisk amendment to the 9th MaRisk amendment. This illustrates the changes between the previous and current amendments to the Minimum Requirements for Risk Management. The changes are relevant for all financial institutions subject to MaRisk."
+          "de": "Die BaFin hat eine Vergleichsversion der 8. zur 9. MaRisk-Novelle veröffentlicht. Dieses Dokument stellt die Änderungen zwischen den beiden Versionen der Mindestanforderungen an das Risikomanagement (MaRisk) für Banken dar.\n\nDie 9. MaRisk-Novelle ist für alle beaufsichtigten Banken in Deutschland relevant. Sie aktualisiert und präzisiert die Anforderungen an das Risikomanagement und erfordert eine Anpassung der internen Prozesse und Kontrollen der Institute. Fachbeiträge von KPMG und PwC weisen auf die Bedeutung dieser Überarbeitung hin.\n\nEs handelt sich um eine Konsultation der BaFin zur 9. MaRisk-Novelle, was bedeutet, dass interessierte Parteien die Möglichkeit haben, Stellungnahmen abzugeben, bevor die endgültige Fassung in Kraft tritt.",
+          "en": "The BaFin has published a comparison version of the 8th to the 9th MaRisk amendment. This document outlines the changes between the two versions of the Minimum Requirements for Risk Management (MaRisk) for banks.\n\nThe 9th MaRisk amendment is relevant for all supervised banks in Germany. It updates and clarifies the requirements for risk management, necessitating an adjustment of the institutions' internal processes and controls. Expert contributions from KPMG and PwC highlight the significance of this revision.\n\nThis is a consultation by the BaFin on the 9th MaRisk amendment, meaning that interested parties have the opportunity to submit comments before the final version comes into force."
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk_vergleichsfassung_8_marisk.html",
         "adv": [
@@ -2345,8 +2345,8 @@
           "en": "Requirement for a consolidated ICARA process under Directive (EU) 2019/2034"
         },
         "s": {
-          "de": "Die EBA hat am 15.06.2026 eine Q&A zur Anforderung eines konsolidierten ICARA-Prozesses gemäß Richtlinie (EU) 2019/2034 veröffentlicht. Die Frage betrifft, ob Wertpapierfirmen, die der aufsichtsrechtlichen Konsolidierung unterliegen, einen ICARA-Prozess auf konsolidierter Basis erstellen müssen. Dies gilt für Wertpapierfirmen, die unter Artikel 7 IFR fallen.",
-          "en": "The EBA published a Q&A on 15.06.2026 regarding the requirement for a consolidated ICARA process under Directive (EU) 2019/2034. The question concerns whether investment firms subject to prudential consolidation must prepare an ICARA process on a consolidated basis. This applies to investment firms falling under Article 7 IFR."
+          "de": "Does Directive (EU) 2019/2034 require investment firms that are subject to prudential consolidation under Article 7 IFR to prepare, maintain and document an ICARA process on a consolidated basis? In particular, does Article 25(4) IFD impose … — Legal act: Directive (EU) …",
+          "en": "Does Directive (EU) 2019/2034 require investment firms that are subject to prudential consolidation under Article 7 IFR to prepare, maintain and document an ICARA process on a consolidated basis? In particular, does Article 25(4) IFD impose … — Legal act: Directive (EU) …"
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7891",
         "refnum": "2026_7891"
@@ -2363,8 +2363,8 @@
           "en": "Proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF"
         },
         "s": {
-          "de": "Die EBA prüft die proportionale Anwendung von K-ASA gemäß Artikel 19 IFR in nicht-diskretionären Verwahrungsmodellen, die mit dem Betrieb eines MTF verbunden sind. Es wird geklärt, ob eine risikogerechtere Anwendung möglich ist, wenn eine Wertpapierfirma ein MTF als Kerntätigkeit betreibt und Vermögenswerte streng im Namen von Kunden verwahrt. Diese Klärung betrifft Wertpapierfirmen, die ein MTF betreiben.",
-          "en": "The EBA examines the proportional application of K-ASA under Article 19 IFR in non-discretionary custody models linked to the operation of an MTF. It clarifies whether a more proportionate or risk-sensitive application is possible when an investment firm operates an MTF as its core activity and safeguards assets strictly on behalf of clients. This clarification concerns investment firms operating an MTF."
+          "de": "Under Article 19 of Regulation (EU) 2019/2033, is there any scope for a more proportionate or risk-sensitive application of K-ASA where an investment firm: operates an MTF as its core activity; safeguards assets strictly on behalf of client … — Legal act: Regulation (EU) No …",
+          "en": "Under Article 19 of Regulation (EU) 2019/2033, is there any scope for a more proportionate or risk-sensitive application of K-ASA where an investment firm: operates an MTF as its core activity; safeguards assets strictly on behalf of client … — Legal act: Regulation (EU) No …"
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7836",
         "refnum": "2026_7836"
@@ -2383,8 +2383,8 @@
           "en": "Zweiter Schritt zur NIS-2-Registrierung: BSI-Portal ab sofort freigeschaltet"
         },
         "s": {
-          "de": "Das BSI hat ein neues Portal zur NIS-2-Registrierung freigeschaltet. Dies betrifft rund 29.500 Unternehmen in Deutschland und Institutionen der Bundesverwaltung, für die seit Inkrafttreten des NIS-2-Umsetzungsgesetzes neue IT-Sicherheitspflichten gelten. Das Portal steht ab dem 06.01.2026 zur Verfügung.",
-          "en": "The BSI has launched a new portal for NIS-2 registration. This affects approximately 29,500 companies in Germany and federal administration institutions, for which new IT security obligations have applied since the NIS-2 Implementation Act came into force. The portal is available as of 06.01.2026."
+          "de": "Das BSI hat ein neues Portal für die Registrierung nach dem NIS-2-Umsetzungsgesetz freigeschaltet. Dies ist der zweite Schritt zur Umsetzung der NIS-2-Richtlinie in Deutschland.\n\nRund 29.500 Unternehmen und Institutionen der Bundesverwaltung sind von den neuen IT-Sicherheits-Pflichten betroffen. Das Portal dient der Erfüllung dieser gesetzlichen Anforderungen, wie auch PwC Legal in seinem Fachbeitrag zur Umsetzung der EU-Vorgaben hervorhebt.\n\nDas BSI-Portal steht ab sofort zur Verfügung.",
+          "en": "The BSI has launched a new portal for registration under the NIS-2 Implementation Act. This marks the second step in the implementation of the NIS-2 Directive in Germany.\n\nApproximately 29,500 companies and federal administration institutions are affected by the new IT security obligations. The portal serves to fulfill these legal requirements, as emphasized by PwC Legal in its expert contribution on the implementation of the EU requirements.\n\nThe BSI portal is available immediately."
         },
         "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260601_NIS2_BSI-Portal.html",
         "adv": [
@@ -2408,8 +2408,8 @@
           "en": "Gesetz zur Umsetzung der NIS-2-Richtlinie und zur Regelung wesentlicher Grundzüge des Informationssicherheitsmanagements in der Bundesverwaltung"
         },
         "s": {
-          "de": "Ein neues Gesetz zur Umsetzung der NIS-2-Richtlinie und zur Regelung wesentlicher Grundzüge des Informationssicherheitsmanagements in der Bundesverwaltung wurde vom Bundesamt für Justiz veröffentlicht. Das Gesetz trat am 05.12.2025 in Kraft.",
-          "en": "A new law implementing the NIS-2 Directive and regulating essential principles of information security management in the federal administration has been published by the Federal Office of Justice. The law came into force on 05.12.2025."
+          "de": "Das Gesetz zur Umsetzung der NIS-2-Richtlinie und zur Regelung wesentlicher Grundzüge des Informationssicherheitsmanagements in der Bundesverwaltung setzt die EU-Vorgaben zur Cybersicherheit in deutsches Recht um. Es modernisiert das Cybersicherheitsrecht und legt grundlegende Prinzipien für das Informationssicherheitsmanagement in der Bundesverwaltung fest.\n\nFinanzunternehmen, die unter den Anwendungsbereich der NIS-2-Richtlinie fallen, müssen ihre Cybersicherheitsmaßnahmen entsprechend anpassen. Die Umsetzung der EU-Vorgaben bedeutet für diese Unternehmen eine Überprüfung und gegebenenfalls Anpassung ihrer bestehenden Informationssicherheitsprozesse und -systeme, wie auch PwC Legal in ihrem Fachbeitrag hervorhebt.\n\nDas Gesetz tritt am 06.12.2025 in Kraft.",
+          "en": "The Act on the Implementation of the NIS2 Directive and on the Regulation of Essential Principles of Information Security Management in the Federal Administration transposes EU cybersecurity requirements into German law. It modernizes cybersecurity law and establishes fundamental principles for information security management within the federal administration.\n\nFinancial companies falling under the scope of the NIS2 Directive must adapt their cybersecurity measures accordingly. The implementation of the EU requirements means that these companies will need to review and, if necessary, adjust their existing information security processes and systems, as highlighted by PwC Legal in their expert contribution.\n\nThe law comes into force on December 6, 2025."
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/301",
         "adv": [
@@ -2433,8 +2433,8 @@
           "en": "Cybersicherheitsrecht: NIS-2-Umsetzungsgesetz ab morgen in Kraft"
         },
         "s": {
-          "de": "Das NIS-2-Umsetzungsgesetz tritt am 06.12.2025 in Kraft und modernisiert umfassend das Cybersicherheitsrecht. Dies betrifft alle von der NIS-2-Richtlinie erfassten Unternehmen und Institutionen.",
-          "en": "The NIS-2 Implementation Act comes into force on 06.12.2025, comprehensively modernizing cybersecurity law. This affects all companies and institutions covered by the NIS-2 Directive."
+          "de": "Das Cybersicherheitsrecht wird durch die Verkündung des Gesetzes zur Umsetzung der NIS-2-Richtlinie und zur Regelung wesentlicher Grundzüge des Informationssicherheitsmanagements in der Bundesverwaltung umfassend modernisiert. Das Gesetz setzt die EU-Vorgaben zur Cybersicherheit in nationales Recht um.\n\nFür Finanzunternehmen, die von der NIS-2-Richtlinie betroffen sind, bedeutet dies eine Anpassung ihrer Cybersicherheitsstrategien und -maßnahmen. Die Notwendigkeit, die neuen EU-Vorgaben zu erfüllen, erfordert eine genaue Prüfung der internen Prozesse und Systeme, wie auch der Fachbeitrag von PwC Legal unterstreicht.\n\nDas Gesetz tritt am 06.12.2025 in Kraft.",
+          "en": "Cybersecurity law is being comprehensively modernized with the promulgation of the Act on the Implementation of the NIS2 Directive and on the Regulation of Essential Principles of Information Security Management in the Federal Administration. The act transposes EU cybersecurity requirements into national law.\n\nFor financial companies affected by the NIS2 Directive, this means an adaptation of their cybersecurity strategies and measures. The necessity to comply with the new EU requirements demands a thorough review of internal processes and systems, as also emphasized by PwC Legal's expert contribution.\n\nThe law comes into force on December 6, 2025."
         },
         "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2025/251205_NIS-2-Umsetzungsgesetz_in_Kraft.html",
         "adv": [
@@ -2460,8 +2460,8 @@
           "en": "Verordnung zur Konkretisierung von Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes"
         },
         "s": {
-          "de": "Eine neue Verordnung konkretisiert Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes. Sie wurde am 28.08.2025 vom Bundesamt für Justiz veröffentlicht und gilt für Emittenten von Kryptowerten.",
-          "en": "A new regulation specifies notification obligations for the disclosure of inside information under Section 36 of the Crypto Markets Supervision Act. It was published by the Federal Office of Justice on 28.08.2025 and applies to issuers of crypto-assets."
+          "de": "Diese Verordnung konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes (KMMV). Sie legt fest, welche Informationen und in welcher Form diese offengelegt werden müssen, um Markttransparenz und Integrität im Kryptomarkt zu gewährleisten.\n\nDie Regelung ist relevant für Emittenten von Kryptowerten und andere Marktteilnehmer, die unter das Kryptomärkteaufsichtsgesetz fallen. Sie müssen ihre internen Prozesse anpassen, um sicherzustellen, dass relevante Insiderinformationen korrekt und fristgerecht gemeldet werden. PwC Legal weist in seinem Fachbeitrag auf die Bedeutung dieser Konkretisierung für die Praxis hin.\n\nDie Verordnung tritt am 28.08.2025 in Kraft.",
+          "en": "This regulation specifies the notification obligations for the disclosure of inside information according to Section 36 of the Crypto Markets Supervision Act (KMMV). It defines what information must be disclosed and in what form to ensure market transparency and integrity in the crypto market.\n\nThe regulation is relevant for issuers of crypto assets and other market participants falling under the Crypto Markets Supervision Act. They must adapt their internal processes to ensure that relevant inside information is reported correctly and in a timely manner. PwC Legal highlights the practical significance of this concretization in its expert contribution.\n\nThe regulation comes into force on 28.08.2025."
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
         "adv": [
@@ -2487,8 +2487,8 @@
           "en": "Payment services – revision of EU rules (Directive)"
         },
         "s": {
-          "de": "Die EU-Regeln für Zahlungsdienste werden überarbeitet (Richtlinie). Dies betrifft Anbieter von Zahlungsdiensten. Der Vorschlag wurde am 30.06.2023 veröffentlicht.",
-          "en": "The EU rules on payment services are being revised (Directive). This affects payment service providers. The proposal was published on 30.06.2023."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13904",
         "refnum": "COM(2023)366",
@@ -2513,8 +2513,8 @@
           "en": "Payment services – revision of EU rules (new Regulation)"
         },
         "s": {
-          "de": "Die EU-Regeln für Zahlungsdienste werden überarbeitet (neue Verordnung). Dies betrifft Anbieter von Zahlungsdiensten. Der Vorschlag wurde am 30.06.2023 veröffentlicht.",
-          "en": "The EU rules on payment services are being revised (new Regulation). This affects payment service providers. The proposal was published on 30.06.2023."
+          "de": "Die Europäische Kommission hat einen Vorschlag für eine neue Verordnung über Zahlungsdienste (Payment Services Regulation, PSR) vorgelegt. Dieser Vorschlag zielt darauf ab, die bestehenden EU-Regeln für Zahlungsdienste zu überarbeiten und zu modernisieren.\n\nDer Vorschlag ist relevant für regulierte Institute im Finanzsektor, da er den Rahmen für Zahlungsdienste neu gestaltet. Fachbeiträge wie der von PwC Legal betonen die Bedeutung dieser Neuregelung für die Praxis der Institute.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass das Gesetzgebungsverfahren noch läuft.",
+          "en": "The European Commission has submitted a proposal for a new Payment Services Regulation (PSR). This proposal aims to revise and modernize the existing EU rules for payment services.\n\nThe proposal is relevant for regulated institutions in the financial sector, as it reshapes the framework for payment services. Expert contributions, such as the one from PwC Legal, emphasize the practical significance of this new regulation for institutions.\n\nThe proposal is currently in the adoption workflow, meaning the legislative process is still ongoing."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13905",
         "refnum": "COM(2023)367",
@@ -2539,8 +2539,8 @@
           "en": "Review of EU rules on payment services"
         },
         "s": {
-          "de": "Die EU-Regeln für Zahlungsdienste werden überprüft. Dies betrifft Anbieter von Zahlungsdiensten. Der Vorschlag wurde am 29.06.2023 veröffentlicht.",
-          "en": "The EU rules on payment services are being reviewed. This affects payment service providers. The proposal was published on 29.06.2023."
+          "de": "Verfahrensstand: Adoption Workflow",
+          "en": "Verfahrensstand: Adoption Workflow"
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13331",
         "refnum": "Ares(2022)71166",
@@ -2565,8 +2565,8 @@
           "en": "Gesetz zur Umsetzung der Richtlinie über die Vergleichbarkeit von Zahlungskontoentgelten, den Wechsel von Zahlungskonten sowie den Zugang zu Zahlungskonten mit grundlegenden Funktionen"
         },
         "s": {
-          "de": "Das Gesetz führt ein Recht auf Zugang zu einem Basiskonto für jeden Verbraucher in der EU ein, einschließlich Obdachloser, Asylsuchender und Geduldeter, mit angepasster Identitätsprüfung und eingeschränkten Ablehnungsmöglichkeiten. Es regelt den Umfang grundlegender Zahlungsdienste und enthält verbraucherschützende Bestimmungen zur Angemessenheit und Transparenz von Entgelten sowie zur eingeschränkten Kündigungsmöglichkeit. Zahlungsdienstleister erhalten Unterstützungsverpflichtungen beim Kontenwechsel.",
-          "en": "The law introduces a right of access to a basic payment account for every consumer in the EU, including homeless persons, asylum seekers, and those with tolerated status, with adapted identity verification and limited grounds for refusal. It regulates the scope of basic payment services and includes consumer protection provisions on the appropriateness and transparency of fees, as well as restricted termination options. Payment service providers are given support obligations for account switching."
+          "de": "Dieses Gesetz dient der Umsetzung der EU-Zahlungskontenrichtlinie 2014/92/EU und regelt das Recht auf Zugang zu einem Basiskonto für alle Verbraucher in der EU, einschließlich Obdachloser und Asylsuchender, mit angepasster Identitätsprüfung und eingeschränkten Ablehnungsmöglichkeiten. Es definiert den Umfang grundlegender Zahlungsdienste und enthält verbraucherschützende Regelungen zur Angemessenheit und Transparenz von Entgelten sowie zur eingeschränkten Kündigungsmöglichkeit.\n\nFür Zahlungsdienstleister bedeutet dies die Verpflichtung, Basiskonten anzubieten und Unterstützung beim Kontenwechsel zu leisten. Das Gesetz, als Artikel 1 der Vorlage, ändert zudem drei weitere Gesetze und drei Rechtsverordnungen.\n\nDas Gesetz über die Vergleichbarkeit von Zahlungskontoentgelten, den Wechsel von Zahlungskonten sowie den Zugang zu Zahlungskonten mit grundlegenden Funktionen (Zahlungskontengesetz – ZKG) ist als Artikel 1 der Vorlage enthalten.",
+          "en": "This law implements EU Directive 2014/92/EU on payment accounts, establishing the right for all consumers in the EU, including the homeless and asylum seekers, to access a basic payment account, with adapted identity verification and limited refusal options. It defines the scope of basic payment services and includes consumer protection regulations regarding the appropriateness and transparency of fees, as well as restricted termination options.\n\nFor payment service providers, this entails an obligation to offer basic accounts and provide assistance with account switching. The law, as Article 1 of the draft, also amends three other laws and three legal ordinances.\n\nThe Law on the Comparability of Fees Related to Payment Accounts, Payment Account Switching and Access to Payment Accounts with Basic Features (Zahlungskontengesetz – ZKG) is included as Article 1 of the draft."
         },
         "url": "https://dip.bundestag.de/vorgang/70169"
       }
@@ -2584,8 +2584,8 @@
           "en": "Amendment to Directive (EU) 2016/97 on insurance distribution."
         },
         "s": {
-          "de": "Es wird eine Änderung der Richtlinie (EU) 2016/97 über den Versicherungsvertrieb vorgeschlagen. Die Änderung betrifft Finanzunternehmen, die im Bereich des Versicherungsvertriebs tätig sind. Ein konkretes Datum für die Konsultationsfrist oder den Anwendungsbeginn ist dem Text nicht zu entnehmen.",
-          "en": "An amendment to Directive (EU) 2016/97 on insurance distribution is proposed. The amendment applies to financial undertakings active in insurance distribution. A specific date for the consultation deadline or application start is not available in the text."
+          "de": "Dieses Dokument ist ein Änderungsvorschlag zur Richtlinie (EU) 2016/97 über Versicherungsvertrieb.\n\nEs handelt sich um einen Verfahrensstand, der die Annahme des Vorschlags betrifft. Weitere Details zum Inhalt der vorgeschlagenen Änderungen sind dem Teaser nicht zu entnehmen.",
+          "en": "This document is an amendment proposal to Directive (EU) 2016/97 on insurance distribution.\n\nIt concerns a procedural status regarding the adoption workflow. Further details on the content of the proposed amendments are not available in the teaser."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1521",
         "refnum": "COM(2017)792"

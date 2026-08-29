@@ -204,10 +204,18 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
         selected.append((r, fw_id, date))
 
+    # Big-4-/Kanzlei-Beiträge vor der Zusammenfassung ermitteln, damit deren
+    # Titel als Relevanz-Kontext in die LLM-Zusammenfassung einfließen können.
+    adv_by_doc = {}
+    for r, fw_id, _ in selected:
+        adv_by_doc[r["document_id"]] = related_articles(
+            conn, r["document_id"], fw_id,
+            "{} – {}".format(_clean(r["title"], 200), _clean(r["summary"])))
+
     from .summarize import summarize
     summaries = summarize(conn, [
         (r["document_id"],
-         "Titel: {}\nTyp: {}\nBehörde: {}\nDatum: {}{}{}\nTeaser: {}".format(
+         "Titel: {}\nTyp: {}\nBehörde: {}\nDatum: {}{}{}\nTeaser: {}{}".format(
              _clean(r["title"], 300),
              r["document_type"] or "OTHER",
              r["authority"] or _domain(r["canonical_url"]),
@@ -216,7 +224,11 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
              if _de_date(r["consultation_deadline"]) else "",
              "\nReferenz: {}".format(r["reference_number"])
              if r["reference_number"] else "",
-             _clean(r["summary"], 600) or "(kein Teaser)"))
+             _clean(r["summary"], 1000) or "(kein Teaser)",
+             "\nFachbeiträge dazu: {}".format("; ".join(
+                 "{}: {}".format(a["f"], a["ti"])
+                 for a in adv_by_doc[r["document_id"]]))
+             if adv_by_doc[r["document_id"]] else ""))
         for r, _, date in selected])
 
     updates = {}
@@ -227,8 +239,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         bucket = updates.setdefault(fw_id, [])
         de, en = TYPE_LABELS.get(r["document_type"], TYPE_LABELS["OTHER"])
         title = _clean(r["title"], 200)
-        # Verständliche 2–3-Satz-Zusammenfassung aus dem LLM; Fallback ist
-        # der bereinigte Original-Teaser.
+        # Verständliche Zusammenfassung (bis zu 3 Absätze) aus dem LLM;
+        # Fallback ist der bereinigte Original-Teaser.
         llm = summaries.get(r["document_id"])
         if llm:
             summarized += 1
@@ -250,8 +262,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         if ref and len(ref) <= 40 and not ref.startswith("/"):
             entry["refnum"] = ref
         # Big-4-Fachbeiträge, die genau diese Meldung kommentieren (LLM-geprüft).
-        adv = related_articles(
-            conn, r["document_id"], fw_id, "{} – {}".format(title, summary))
+        adv = adv_by_doc.get(r["document_id"]) or []
         if adv:
             entry["adv"] = adv
             advisory += len(adv)

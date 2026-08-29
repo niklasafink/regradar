@@ -10,7 +10,7 @@ import {
   daysAgo, daysUntil, dt, fmtDate, frameworkById, providerById,
   topicById, tx, visibleFrameworks,
 } from "@/lib/logic";
-import { updateHref } from "@/lib/updates";
+import { firstParagraph, updateHref } from "@/lib/updates";
 import { useStore } from "@/lib/store";
 
 export default function FrameworkDetail() {
@@ -156,7 +156,7 @@ export default function FrameworkDetail() {
                   </h2>
                   {tx(lang, u.s) && (
                     <p className="mt-1 max-w-3xl text-sm leading-relaxed text-slate-600">
-                      {tx(lang, u.s)}
+                      {firstParagraph(tx(lang, u.s))}
                     </p>
                   )}
                   {(u.deadline || u.eff) && (

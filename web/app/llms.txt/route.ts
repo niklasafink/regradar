@@ -4,7 +4,7 @@
 
 import { PROVIDERS } from "@/lib/data";
 import { authority, FRAMEWORKS, visibleFrameworks } from "@/lib/logic";
-import { UPDATE_PAGES } from "@/lib/updates";
+import { firstParagraph, UPDATE_PAGES } from "@/lib/updates";
 
 const BASE = process.env.APP_URL ?? "http://localhost:3001";
 
@@ -41,7 +41,7 @@ export function GET() {
     "## Aktuelle Updates",
     "",
     ...recent.map(({ slug, fw, u }) => {
-      const s = u.s.de ? ` — ${u.s.de}` : "";
+      const s = u.s.de ? ` — ${firstParagraph(u.s.de)}` : "";
       return `- [${u.d} · ${u.ti.de}](${BASE}/u/${slug}): ${fw.n.de}, ${authority(u.src)}${s}`;
     }),
     "",

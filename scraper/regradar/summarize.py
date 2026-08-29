@@ -1,9 +1,11 @@
-"""LLM-Kurzzusammenfassungen für den Web-Export.
+"""LLM-Zusammenfassungen für den Web-Export.
 
-Erzeugt pro exportiertem Update 2–3 verständliche deutsche Sätze
-("Was ändert sich, für wen, bis wann?") plus englische Fassung –
-statt des rohen Behörden-Teasers in Originalsprache. Ergebnisse werden
-pro Dokument in der SQLite-DB gecacht.
+Erzeugt pro exportiertem Update eine verständliche deutsche Zusammenfassung
+in bis zu drei kurzen Absätzen ("Was regelt das Dokument, für wen ist es
+relevant, welche Fristen gelten?") plus englische Fassung – statt des rohen
+Behörden-Teasers in Originalsprache. Titel passender Big-4-/Kanzlei-Beiträge
+fließen als Kontext mit ein. Ergebnisse werden pro Dokument in der
+SQLite-DB gecacht (versioniert über FORMAT).
 
 Ohne OPENROUTER_API_KEY ist das Modul inaktiv; der Export fällt dann auf
 die bereinigten Original-Teaser zurück.
@@ -18,25 +20,44 @@ from typing import Dict, List, Optional, Tuple
 from .llmfilter import API_URL, api_key
 
 DEFAULT_MODEL = "google/gemini-2.5-flash"
-BATCH_SIZE = 4
+BATCH_SIZE = 2
 TIMEOUT = 120
 
+# Format-Version der Zusammenfassungen. Bei Prompt-Änderungen, die alte
+# Cache-Einträge unbrauchbar machen, hochzählen – der nächste Export
+# generiert dann alle Zusammenfassungen neu.
+FORMAT = 2
+
 SYSTEM_PROMPT = (
-    "Du schreibst Kurzzusammenfassungen für einen Regulatory-News-Dienst, den "
+    "Du schreibst Zusammenfassungen für einen Regulatory-News-Dienst, den "
     "Compliance-Verantwortliche von Finanzunternehmen lesen.\n\n"
     "Du erhältst eine JSON-Liste von Meldungen (id, text). Der Text enthält "
-    "Titel, Dokumenttyp, Behörde, Datum und ggf. den Original-Teaser sowie "
-    "Fristen.\n\n"
-    "Schreibe je Meldung eine Zusammenfassung in 2–3 kurzen, klaren deutschen "
-    "Sätzen, die drei Fragen beantwortet, soweit der Text es hergibt: Was "
-    "ändert sich? Für wen gilt es? Bis wann (Konsultationsfrist oder "
-    "Anwendungsbeginn)? Dazu eine englische Fassung gleichen Inhalts.\n\n"
+    "Titel, Dokumenttyp, Behörde, Datum und ggf. den Original-Teaser, Fristen "
+    "sowie Titel von Fachbeiträgen von Beratungsgesellschaften/Kanzleien zu "
+    "dieser Meldung.\n\n"
+    "Schreibe je Meldung eine Zusammenfassung in 2–3 kurzen deutschen "
+    "Absätzen (jeweils 2–4 Sätze, getrennt durch eine Leerzeile), sodass "
+    "Leser den Inhalt der Neuerung verstehen und einschätzen können, ob sie "
+    "für sie relevant ist:\n"
+    "1. Inhalt: Was regelt oder ändert das Dokument konkret? Worum geht es "
+    "inhaltlich?\n"
+    "2. Relevanz: Für welche Unternehmen/Institute gilt es und was bedeutet "
+    "es praktisch für sie? Greifen Fachbeiträge bestimmte Aspekte auf, "
+    "kannst du deren Schwerpunkte als Hinweis auf die Praxisrelevanz "
+    "einfließen lassen.\n"
+    "3. Fristen/nächste Schritte: Konsultationsfrist, Anwendungsbeginn oder "
+    "weiteres Verfahren – nur soweit der Text es hergibt; sonst diesen "
+    "Absatz weglassen.\n\n"
+    "Dazu eine englische Fassung gleichen Inhalts und Aufbaus.\n\n"
     "Regeln: Nur Informationen aus dem gegebenen Text verwenden, nichts "
-    "erfinden und keine Fristen raten. Fachbegriffe und Normbezeichnungen "
-    "(z. B. RTS, MiCAR, § 25a KWG) beibehalten. Nüchtern und ohne Floskeln, "
-    "kein 'Diese Meldung …'-Einstieg. Datumsformat TT.MM.JJJJ im Deutschen.\n\n"
+    "erfinden und keine Fristen raten. Gibt der Text wenig her, schreibe "
+    "lieber weniger Absätze als vage Füllsätze. Fachbegriffe und "
+    "Normbezeichnungen (z. B. RTS, MiCAR, § 25a KWG) beibehalten. Nüchtern "
+    "und ohne Floskeln, kein 'Diese Meldung …'-Einstieg. Datumsformat "
+    "TT.MM.JJJJ im Deutschen.\n\n"
     "Antworte ausschließlich mit einem JSON-Objekt, das jede id auf ein "
-    'Objekt {"de": "...", "en": "..."} abbildet. Keine Erklärungen.'
+    'Objekt {"de": "...", "en": "..."} abbildet (Absätze durch \\n\\n '
+    "getrennt). Keine Erklärungen."
 )
 
 
@@ -47,8 +68,13 @@ def _ensure_table(conn: sqlite3.Connection) -> None:
                de          TEXT NOT NULL,
                en          TEXT NOT NULL,
                model       TEXT NOT NULL,
-               created_at  TEXT NOT NULL
+               created_at  TEXT NOT NULL,
+               fmt         INTEGER NOT NULL DEFAULT 1
            )""")
+    cols = [r[1] for r in conn.execute("PRAGMA table_info(llm_summary)")]
+    if "fmt" not in cols:
+        conn.execute(
+            "ALTER TABLE llm_summary ADD COLUMN fmt INTEGER NOT NULL DEFAULT 1")
     conn.commit()
 
 
@@ -98,9 +124,10 @@ def summarize(conn: sqlite3.Connection,
     result: Dict[int, Dict[str, str]] = {}
     if items:
         cached = conn.execute(
-            "SELECT document_id, de, en FROM llm_summary WHERE document_id IN ({})".format(
+            "SELECT document_id, de, en FROM llm_summary "
+            "WHERE fmt=? AND document_id IN ({})".format(
                 ",".join("?" * len(items))),
-            [i for i, _ in items]).fetchall()
+            [FORMAT] + [i for i, _ in items]).fetchall()
         for row in cached:
             result[row[0]] = {"de": row[1], "en": row[2]}
 
@@ -124,7 +151,7 @@ def summarize(conn: sqlite3.Connection,
         for i, s in got.items():
             result[i] = s
             conn.execute(
-                "INSERT OR REPLACE INTO llm_summary VALUES (?,?,?,?,?)",
-                (i, s["de"], s["en"], model, utcnow()))
+                "INSERT OR REPLACE INTO llm_summary VALUES (?,?,?,?,?,?)",
+                (i, s["de"], s["en"], model, utcnow(), FORMAT))
         conn.commit()
     return result

@@ -16,6 +16,11 @@ export const slugify = (s: string): string =>
     .slice(0, 80)
     .replace(/-+$/, "");
 
+/** Erster Absatz einer mehrabsätzigen Zusammenfassung (für Listen, E-Mails
+ *  und Meta-Descriptions; die Detailseite zeigt alle Absätze). */
+export const firstParagraph = (s: string): string =>
+  s.split(/\n{2,}/)[0]?.trim() ?? s;
+
 /** "24.08.2026" -> "2026-08-24" */
 export const isoDate = (d: string): string => {
   const [day, month, year] = d.split(".");

@@ -13,7 +13,7 @@ import { PROVIDERS } from "./data";
 import { createUnsubToken } from "./email";
 import { authority, daysUntil, dt } from "./logic";
 import { listSubscribers, redis, type Subscriber } from "./subscribers";
-import { UPDATE_PAGES, type UpdatePage } from "./updates";
+import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
 
 const SENT_KEY = "newsletter:sent";
 const LAST_RUN_KEY = "newsletter:lastRun";
@@ -81,7 +81,7 @@ export function renderNewsletter(
         <p style="margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35">
           <a href="${base}/u/${slug}" style="color:#0f172a;text-decoration:none">${esc(u.ti.de)}</a>
         </p>
-        <p style="margin:0 0 6px;font-size:13px;line-height:1.55;color:#475569">${esc(u.s.de)}</p>
+        <p style="margin:0 0 6px;font-size:13px;line-height:1.55;color:#475569">${esc(firstParagraph(u.s.de))}</p>
         <p style="margin:0;font-size:12px">${meta}
           ${meta ? " &nbsp; " : ""}<span style="color:#94a3b8">${esc(fw.n.de)}, ${esc(fw.ref)}</span>
         </p>
@@ -106,7 +106,7 @@ export function renderNewsletter(
       return [
         `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)}`,
         u.ti.de,
-        u.s.de,
+        firstParagraph(u.s.de),
         meta,
         `${base}/u/${slug}`,
         "",

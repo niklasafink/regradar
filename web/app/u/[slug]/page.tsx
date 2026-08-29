@@ -5,7 +5,7 @@ import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
 import { authority, daysUntil, frameworkById, topicById } from "@/lib/logic";
-import { isoDate, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
+import { firstParagraph, isoDate, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
 
 export const dynamicParams = false;
 
@@ -22,7 +22,7 @@ export async function generateMetadata(
   const { fw, u } = page;
   const title = `${u.ti.de} – ${fw.n.de}`;
   const description =
-    u.s.de ||
+    (u.s.de && firstParagraph(u.s.de)) ||
     `${u.t.de} der ${authority(u.src)} vom ${u.d} zu ${fw.n.de} (${fw.ref}).`;
   return {
     title,
@@ -50,6 +50,33 @@ export default async function UpdatePage(
   const related = UPDATE_PAGES
     .filter((p) => p.fw.id === fw.id && p.slug !== slug)
     .slice(0, 6);
+
+  // Sachlicher LinkedIn-Post: kurzer Inhalt, Link zur Primärquelle, Hashtags.
+  const hashtag = (s: string) => s.replace(/[^0-9A-Za-zÄÖÜäöüß]/g, "");
+  const hashtags = [
+    ...new Set([
+      hashtag(fw.n.de.split(":")[0].trim()),
+      hashtag(authority(u.src)),
+      "Compliance",
+      "regradar",
+    ]),
+  ]
+    .filter(Boolean)
+    .map((h) => `#${h}`)
+    .join(" ");
+  const excerpt = u.s.de ? firstParagraph(u.s.de) : "";
+  const shareText = [
+    `${u.t.de} · ${authority(u.src)} · ${u.d}: ${u.ti.de}`,
+    excerpt.length > 300
+      ? `${excerpt.slice(0, 300).replace(/\s+\S*$/, "")} …`
+      : excerpt,
+    u.url ? `Zur Original-Meldung: ${u.url}` : "",
+    hashtags,
+  ]
+    .filter(Boolean)
+    .join("\n\n");
+  const linkedInHref =
+    `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareText)}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -85,21 +112,33 @@ export default async function UpdatePage(
         </Link>
 
         <article className="mt-4">
-          <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
-            <div className="flex flex-wrap items-center gap-2">
-              {t && (
-                <span className="rounded-full bg-slate-100 px-3 py-0.5 font-medium text-slate-600">
-                  {t.n.de}
-                </span>
-              )}
-              <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
-                {u.t.de}
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            {t && (
+              <span className="rounded-full bg-slate-100 px-3 py-0.5 font-medium text-slate-600">
+                {t.n.de}
               </span>
-              <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
-                {authority(u.src)}
-              </span>
-              {u.refnum && <span className="num text-slate-400">{u.refnum}</span>}
-            </div>
+            )}
+            <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
+              {u.t.de}
+            </span>
+            <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
+              {authority(u.src)}
+            </span>
+            {u.refnum && <span className="num text-slate-400">{u.refnum}</span>}
+          </div>
+
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
+            <a
+              href={linkedInHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-fast-goal="linkedin_share_click"
+              data-fast-goal-slug={slug}
+              data-fast-goal-authority={u.src}
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-900 px-3.5 py-1 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
+            >
+              Auf LinkedIn posten ↗
+            </a>
             {u.url && (
               <a
                 href={u.url}
@@ -128,9 +167,11 @@ export default async function UpdatePage(
           </p>
 
           {u.s.de && (
-            <p className="mt-5 text-base leading-relaxed text-slate-700">
-              {u.s.de}
-            </p>
+            <div className="mt-5 space-y-3 text-base leading-relaxed text-slate-700">
+              {u.s.de.split(/\n{2,}/).map((p) => (
+                <p key={p.slice(0, 40)}>{p}</p>
+              ))}
+            </div>
           )}
 
           {(u.deadline || u.eff) && (
