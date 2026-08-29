@@ -165,5 +165,38 @@ class IoscoParsing(unittest.TestCase):
         self.assertEqual(REF_RE.match("FR/05/2026 World Investor Week").group(1), "FR/05/2026")
 
 
+class Big4MatchWindow(unittest.TestCase):
+    def test_window(self):
+        from regradar.big4 import _within_window
+        self.assertTrue(_within_window("2026-07-20", "2026-07-28"))
+        self.assertTrue(_within_window("2026-08-10", "2026-07-28"))   # +13 Tage
+        self.assertFalse(_within_window("2026-08-12", "2026-07-28"))  # +15 Tage
+        self.assertFalse(_within_window("2024-07-12", "2026-07-28"))  # 2 Jahre
+        self.assertFalse(_within_window(None, "2026-07-28"))          # ohne Artikeldatum
+        self.assertTrue(_within_window(None, None))                   # ohne Meldungsdatum
+        self.assertFalse(_within_window("kaputt", "2026-07-28"))
+
+
+class DsNewsParsing(unittest.TestCase):
+    BLOCK = ('<article class="ecl-content-item"><div>'
+             '<ul class="ecl-content-block__primary-meta-container">'
+             '<li class="ecl-content-block__primary-meta-item">Press release</li>'
+             '<li class="ecl-content-block__primary-meta-item">31 July 2026</li></ul>'
+             '<div class="ecl-content-block__title"><a\n'
+             '  href="/en/news/commission-starts-enforcing-ai-act-rules" class="ecl-link"\n'
+             '   data-ecl-title-link\n'
+             '><span>Commission starts enforcing AI Act rules</span></a></div></div></article>')
+
+    def test_block_regexes(self):
+        from regradar.adapters.dsnews import DATE_RE, META_ITEM_RE, META_RE, TITLE_RE
+        tm = TITLE_RE.search(self.BLOCK)
+        self.assertEqual(tm.group(1), "/en/news/commission-starts-enforcing-ai-act-rules")
+        self.assertEqual(tm.group(2), "Commission starts enforcing AI Act rules")
+        items = META_ITEM_RE.findall(META_RE.search(self.BLOCK).group(1))
+        self.assertEqual(items, ["Press release", "31 July 2026"])
+        dm = DATE_RE.search(items[1])
+        self.assertEqual((dm.group(1), dm.group(2), dm.group(3)), ("31", "July", "2026"))
+
+
 if __name__ == "__main__":
     unittest.main()

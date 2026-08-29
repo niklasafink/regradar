@@ -11,6 +11,7 @@ from .hys import HysAdapter
 from .ebaqna import EbaQnaAdapter
 from .esmalib import EsmaLibAdapter
 from .iosco import IoscoAdapter
+from .dsnews import DsNewsAdapter
 
 ADAPTERS = {
     "rss": RssAdapter,
@@ -26,4 +27,5 @@ ADAPTERS = {
     "ebaqna": EbaQnaAdapter,
     "esmalib": EsmaLibAdapter,
     "iosco": IoscoAdapter,
+    "dsnews": DsNewsAdapter,
 }

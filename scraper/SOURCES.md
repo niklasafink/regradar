@@ -1,4 +1,4 @@
-# Scraper-Quellenliste (Stand 25.08.2026, 26 Quellen: Welle 1–4 umgesetzt)
+# Scraper-Quellenliste (Stand 30.08.2026, 27 Quellen: Welle 1–5 umgesetzt)
 
 > Status: umgesetzt in `scraper/regradar/`. Die konkreten, live verifizierten Endpunkte stehen in `README.md`. DIP benötigt den frei publizierten API-Key als `DIP_API_KEY`.
 
@@ -50,6 +50,12 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 | 24 | BIS / Basler Ausschuss | INT | RSS 1.0/RDF (`doclist/bcbspubls.rss`) | FINAL_REPORT, CONSULTATION, OTHER | 12–24 Monate Vorlauf vor EU-Umsetzung; Datum aus dc:date |
 | 25 | FSB | INT | RSS (WordPress-Feed) | FINAL_REPORT, CONSULTATION, OTHER | Financial Stability Board |
 | 26 | IOSCO | INT | HTML (Public-Reports-Liste), **nur Metadaten** | FINAL_REPORT, CONSULTATION | PDFs hinter Cloudflare-Bot-Schutz → wird nicht umgangen; IOSCOPD-Nummer als ID |
+
+## Welle 5 — AI Act (umgesetzt am 30.08.2026)
+
+| # | Quelle | Behörde / Jurisdiktion | Zugriffsweg | Dokumenttypen | Bemerkung |
+|---|---|---|---|---|---|
+| 27 | EU-Kommission / AI Office (digital-strategy.ec.europa.eu) | EU (GD CNECT) | HTML (News-Liste `?topic=119` = „Artificial intelligence") | GUIDELINE, CONSULTATION, FINAL_REPORT, OTHER | Offizielle Publikationsplattform für AI-Act-Leitlinien, GPAI Code of Practice, AI Omnibus, Enforcement. Der Site-RSS (`/en/rss.xml`) ist ungefiltert (10 Items, alle Themen) und daher unbrauchbar; Datum + Typ stehen direkt in der Liste |
 
 **Nicht angebunden: FATF** — fatf-gafi.org liefert 403 auf allen Pfaden (Cloudflare-Bot-Schutz, auch mit Browser-User-Agent); wird nicht umgangen. Wieder prüfen, falls ein offizieller Feed erscheint.
 

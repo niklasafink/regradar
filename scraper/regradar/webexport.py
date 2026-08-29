@@ -34,7 +34,7 @@ FRAMEWORK_RULES = [
     ("mmf", r"geldmarktfonds|money market fund"),
     ("priips", r"\bpriips\b|basisinformationsblatt|key information document"),
     ("hinschg", r"hinweisgeber|whistleblow"),
-    ("aiact", r"ki-verordnung|\bai act\b|artificial intelligence act|künstliche intelligenz|\bki-modell|general.purpose ai|\bgpai\b"),
+    ("aiact", r"ki-verordnung|\bai act\b|artificial intelligence act|künstliche intelligenz|\bki-modell|general.purpose ai|\bgpai\b|\b[ak]i[- ]omnibus\b|transparency of ai-generated|\bai office\b|ai-gesetz"),
     ("eidas2", r"\beidas\b|eudi[- ]wallet|digital identity wallet|elektronische identifizierung|vertrauensdienst|trust service"),
     ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister"),
     ("nis2", r"\bnis-?2\b|bsi-gesetz|\bbsig\b"),
@@ -229,7 +229,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     for r, fw_id, _ in selected:
         adv_by_doc[r["document_id"]] = related_articles(
             conn, r["document_id"], fw_id,
-            "{} – {}".format(_clean(r["title"], 200), _clean(r["summary"])))
+            "{} – {}".format(_clean(r["title"], 200), _clean(r["summary"])),
+            doc_date=(r["publication_date"] or r["first_seen_at"] or "")[:10] or None)
 
     # Gemeinsamer Kontext für LLM-Zusammenfassung und LLM-Impact-Einstufung.
     contexts = [

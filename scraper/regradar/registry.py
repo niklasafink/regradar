@@ -375,6 +375,24 @@ SOURCES = [
         "adapter": "iosco",
         "enabled": 1,
     },
+    # ---------------- Welle 5: AI Act (30.08.2026) ----------------
+    {
+        "source_id": "ec_ai",
+        "name": "EU-Kommission / AI Office (digital-strategy)",
+        "authority": "Europäische Kommission (AI Office)",
+        "jurisdiction": "EU",
+        "base_url": "https://digital-strategy.ec.europa.eu/",
+        # topic=119 = Taxonomie-Term "Artificial intelligence" (via Drupal-
+        # Autocomplete verifiziert); der Site-RSS (/en/rss.xml) ist
+        # ungefiltert, nur 10 Items und mischt Events/Tender aller Themen.
+        "discovery_url": "https://digital-strategy.ec.europa.eu/en/news?topic=119",
+        "discovery_type": "HTML",
+        "access_class": "PUBLIC",
+        "document_types": ["GUIDELINE", "CONSULTATION", "FINAL_REPORT", "OTHER"],
+        "poll_interval_minutes": 360,
+        "adapter": "dsnews",
+        "enabled": 1,
+    },
 ]
 
 # Zusätzliche Feeds pro RSS-Quelle (werden alle abgefragt); Mapping auf Dokumenttyp.

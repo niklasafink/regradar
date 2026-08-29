@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T23:10:11Z",
+  "generated_at": "2026-08-29T23:15:38Z",
   "sources": [
     {
       "id": "eurlex",
@@ -208,6 +208,14 @@
       "jurisdiction": "INT",
       "access": "HTML",
       "url": "https://www.iosco.org/"
+    },
+    {
+      "id": "ec_ai",
+      "name": "EU-Kommission / AI Office (digital-strategy)",
+      "authority": "Europäische Kommission (AI Office)",
+      "jurisdiction": "EU",
+      "access": "HTML",
+      "url": "https://digital-strategy.ec.europa.eu/"
     }
   ]
 }

@@ -9,9 +9,14 @@ Discovery je Quelle:
                          der neuen Artikelseiten (Fetch-Budget pro Lauf)
   - Wald vor lauter Normen  WordPress-RSS
 
-Zuordnung zu Behörden-Updates in zwei Stufen:
+Zuordnung zu Behörden-Updates in drei Stufen:
   1. Regex-Vorfilter (FRAMEWORK_RULES aus webexport) ordnet jeden Artikel
      einem Rahmenwerk zu; Artikel ohne Treffer bleiben unzugeordnet.
+  1b. Zeitfenster: Fachbeiträge kommentieren eine Meldung in der Regel
+     binnen weniger Tage – Artikel, deren Publikationsdatum mehr als
+     MATCH_WINDOW_DAYS vom Meldungsdatum abweicht (oder fehlt), werden
+     gar nicht erst geprüft. Das verhindert z. B., dass ein Artikel zum
+     AI Act von 2024 einem Durchführungsgesetz von 2026 zugeordnet wird.
   2. Pro exportiertem Behörden-Update entscheidet ein günstiges LLM (über
      OpenRouter, wie llmfilter), welche Artikel des Rahmenwerks genau diese
      Meldung kommentieren. Ergebnisse werden pro (Dokument, Artikel)-Paar
@@ -43,6 +48,7 @@ KPMG_LIST = "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/
 
 MATCH_MODEL_ENV = "OPENROUTER_MODEL"
 MATCH_BATCH_MAX = 20         # Artikel pro LLM-Anfrage
+MATCH_WINDOW_DAYS = 14       # Artikel max. ±2 Wochen um das Meldungsdatum
 
 MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "mär": 3, "mrz": 3, "apr": 4, "mai": 5,
@@ -350,14 +356,33 @@ def _llm_match(update_text: str, articles: List[sqlite3.Row]) -> Optional[Dict[i
     return out
 
 
+def _within_window(published: Optional[str], doc_date: Optional[str]) -> bool:
+    """True, wenn Artikel- und Meldungsdatum höchstens MATCH_WINDOW_DAYS
+    auseinanderliegen. Ohne Artikel­datum konservativ False (kein Beleg für
+    zeitliche Nähe); ohne Meldungsdatum keine Einschränkung."""
+    if not doc_date:
+        return True
+    if not published:
+        return False
+    from datetime import date
+    try:
+        delta = date.fromisoformat(published[:10]) - date.fromisoformat(doc_date[:10])
+    except ValueError:
+        return False
+    return abs(delta.days) <= MATCH_WINDOW_DAYS
+
+
 def related_articles(conn: sqlite3.Connection, document_id: int, framework: str,
-                     update_text: str, max_items: int = 4) -> List[dict]:
-    """Passende Big-4-Artikel zu einem Behörden-Update (LLM-geprüft, gecacht)."""
+                     update_text: str, doc_date: Optional[str] = None,
+                     max_items: int = 4) -> List[dict]:
+    """Passende Big-4-Artikel zu einem Behörden-Update (Zeitfenster +
+    LLM-geprüft, gecacht). doc_date = Publikationsdatum der Meldung (ISO)."""
     ensure_tables(conn)
     candidates = conn.execute(
         "SELECT article_id, firm, url, title, teaser, published "
         "FROM big4_articles WHERE framework=? ORDER BY published DESC",
         (framework,)).fetchall()
+    candidates = [a for a in candidates if _within_window(a["published"], doc_date)]
     if not candidates:
         return []
 
