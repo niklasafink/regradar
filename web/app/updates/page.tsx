@@ -30,7 +30,9 @@ export default function AllUpdates() {
   /* Vorauswahl der Zielgruppe über ?type=, z. B. vom Board aus verlinkt. */
   useEffect(() => {
     const type = new URLSearchParams(window.location.search).get("type");
-    if (type && PROVIDERS.some((p) => p.id === type)) setSel(type);
+    // Sprechender Slug ("bank") ist kanonisch, alte ID-Links ("CI") bleiben gültig.
+    const match = type ? PROVIDERS.find((p) => p.slug === type || p.id === type) : undefined;
+    if (match) setSel(match.id);
     track("updates_screen_viewed");
   }, []);
 

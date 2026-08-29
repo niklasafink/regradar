@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Search as SearchIcon } from "lucide-react";
 import type { Framework, Update } from "@/lib/data";
-import { FRAMEWORKS, authority, dt, fmtDate, tx } from "@/lib/logic";
+import { FRAMEWORKS, authority, dt, fmtDate, providerSlug, tx } from "@/lib/logic";
 import { useStore } from "@/lib/store";
 
 interface Hit {
@@ -20,7 +20,7 @@ const norm = (s: string) => s.toLowerCase();
 
 function fwHref(f: Framework, provider?: string) {
   const p = provider && f.ents.includes(provider) ? provider : f.ents[0];
-  return `/r/${p}/f/${f.id}`;
+  return `/r/${providerSlug(p)}/f/${f.id}`;
 }
 
 function buildHits(q: string, lang: "de" | "en", provider?: string): Hit[] {

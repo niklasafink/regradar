@@ -1,6 +1,167 @@
 {
-  "generated_at": "2026-08-29T22:17:49Z",
+  "generated_at": "2026-08-29T22:33:06Z",
   "updates": {
+    "amla": [
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Consultation on the draft RTS on the assessment of the inherent and residual risk profile of obliged entities in the non-financial sector",
+          "en": "Consultation on the draft RTS on the assessment of the inherent and residual risk profile of obliged entities in the non-financial sector"
+        },
+        "s": {
+          "de": "Die AMLA hat eine Konsultation zu einem Entwurf technischer Regulierungsstandards (RTS) eröffnet, der eine Methodik zur Bewertung und Klassifizierung des Geldwäsche- und Terrorismusfinanzierungsrisikoprofils (ML/TF-Risikoprofil) von Verpflichteten im Nichtfinanzsektor vorschlägt. Ziel ist es, einen konsistenten, verhältnismäßigen und effektiven Rahmen für die risikobasierte Aufsicht im gesamten EU-Raum zu schaffen.\n\nDie Konsultation richtet sich an alle Interessengruppen des EU-AML/CFT-Rahmenwerks, insbesondere an Verpflichtete, Aufsichtsbehörden und Financial Intelligence Units. Es sollen Rückmeldungen zur Relevanz und Verhältnismäßigkeit der vorgeschlagenen Datenpunkte, zur Behandlung kleinerer Unternehmen, zur operativen Umsetzbarkeit des Berichtsrahmens sowie zu den erwarteten Implementierungskosten und Herausforderungen gesammelt werden. Fachbeiträge von KPMG und PwC Legal weisen auf die Bedeutung dieser Leitlinien für die laufende Überwachung von Geschäftsbeziehungen und den EU AML/CFT-Rahmen hin.\n\nDie Konsultationsfrist endet am 27. September 2026. Eine öffentliche Anhörung zum Entwurf der RTS ist für den 10. September 2026 geplant.",
+          "en": "AMLA has launched a consultation on draft Regulatory Technical Standards (RTS) proposing a methodology for assessing and classifying the money laundering and terrorist financing (ML/TF) risk profile of obliged entities in the non-financial sector. The aim is to establish a consistent, proportionate, and effective framework for risk-based supervision across the EU.\n\nThe consultation targets all stakeholders interested in the EU's anti-money laundering and countering the financing of terrorism (AML/CFT) framework, particularly obliged entities, supervisory authorities, and Financial Intelligence Units. Feedback is sought on the relevance and proportionality of the proposed data points, the treatment of small entities, the operational feasibility of the reporting framework, and the expected implementation costs and challenges. Contributions from KPMG and PwC Legal highlight the significance of these guidelines for ongoing business relationship monitoring and the EU AML/CFT framework.\n\nThe consultation period closes on 27 September 2026. A public hearing on the draft RTS is scheduled for 10 September 2026."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-assessment-inherent-and-residual-risk-profile-obliged-entities-non-financial_en",
+        "imp": "medium",
+        "deadline": "27.09.2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
+            "d": "09.06.2026"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "Aktuelle Informationen zum EU AML/CFT-Rahmenwerk: AMLA schließt erste öffentliche Anhörung zu Entwürfen technischer Regulierungsstandards ab",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/eu-aml-cft-rahmenwerk-amla-schliesst-erste-oeffentliche-anhoerung-zu-entwuerfen-technischer-regulierungsstandards-ab",
+            "d": "24.04.2026"
+          }
+        ]
+      },
+      {
+        "d": "06.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Consultation on the draft RTS on cross-border information exchange between Financial Intelligence Units",
+          "en": "Consultation on the draft RTS on cross-border information exchange between Financial Intelligence Units"
+        },
+        "s": {
+          "de": "Die AMLA hat einen Entwurf für Regulierungsstandards (RTS) zur grenzüberschreitenden Informationsübermittlung zwischen Financial Intelligence Units (FIUs) zur Konsultation gestellt. Diese RTS legen harmonisierte Kriterien fest, wann ein Verdachtsmeldung einen anderen Mitgliedstaat betrifft und wie diese Meldungen zwischen den FIUs ausgetauscht werden sollen.\n\nZiel ist es, den grenzüberschreitenden Informationsaustausch konsistenter, effizienter und zuverlässiger zu gestalten und die Zusammenarbeit zwischen den FIUs zu stärken. Obwohl die Regeln keine direkten Verpflichtungen für Privatunternehmen vorsehen, sind Beiträge von Praktikern mit relevanter Erfahrung willkommen. Die Konsultation richtet sich an alle Stakeholder im Bereich der Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CFT), insbesondere an FIUs, Behörden und beaufsichtigte Unternehmen.\n\nDie Konsultationsfrist endet am 06.10.2026.",
+          "en": "AMLA has published a consultation on draft Regulatory Technical Standards (RTS) concerning cross-border information exchange between Financial Intelligence Units (FIUs). These RTS establish clear and harmonised criteria for identifying when a report of suspicions concerns another Member State and for transmitting it accordingly between FIUs.\n\nThe aim is to make cross-border information exchange more consistent, efficient, and reliable, strengthening cooperation between FIUs. While the rules place no direct obligations on private companies, practitioners with relevant experience are encouraged to contribute. The consultation targets all stakeholders interested in the EU's anti-money laundering and countering the financing of terrorism (AML/CFT) framework, particularly FIUs, public authorities, and obliged entities.\n\nThe deadline for responses to the consultation is 06 October 2026."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-cross-border-information-exchange-between-financial-intelligence-units_en",
+        "imp": "medium",
+        "deadline": "06.10.2026"
+      },
+      {
+        "d": "02.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Consultation on the draft ITS on the format for reporting suspicions and providing transaction records",
+          "en": "Consultation on the draft ITS on the format for reporting suspicions and providing transaction records"
+        },
+        "s": {
+          "de": "Die AMLA hat eine Konsultation zu einem Entwurf von Implementing Technical Standards (ITS) eröffnet. Diese ITS legen das Format für die Meldung von Verdachtsfällen und die Bereitstellung von Transaktionsaufzeichnungen an Financial Intelligence Units (FIUs) fest.\n\nDie ITS beinhalten Vorlagen für Verdachtsmeldungen, die an verschiedene Arten von Verpflichteten angepasst sind, sowie Vorlagen für die Bereitstellung von Transaktionsaufzeichnungen durch Kredit- und Finanzinstitute. Diese Vorlagen sollen von allen FIUs und von allen Verpflichteten implementiert werden, die den Meldeprozess intern automatisieren möchten, anstatt die Meldeplattformen der FIUs zu nutzen.\n\nDie Konsultation läuft bis zum 20.09.2026. Eine öffentliche Anhörung zu dem Entwurf ist für den 09.09.2026 geplant.",
+          "en": "AMLA has launched a consultation on a draft of Implementing Technical Standards (ITS). These ITS establish the format for reporting suspicions and providing transaction records to Financial Intelligence Units (FIUs).\n\nThe ITS include templates for reporting suspicions, adapted to different types of obliged entities, as well as templates for the provision of transaction records by credit and financial institutions. These templates are to be implemented by all FIUs and by all obliged entities wishing to internally automate the reporting process instead of using the reporting platforms of FIUs.\n\nThe consultation is open until 20.09.2026. A public hearing on the draft ITS is scheduled for 09.09.2026."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en",
+        "imp": "medium",
+        "deadline": "20.09.2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
+            "d": "09.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "03.06.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Consultation on the draft Guidelines on ongoing monitoring of a business relationship",
+          "en": "Consultation on the draft Guidelines on ongoing monitoring of a business relationship"
+        },
+        "s": {
+          "de": "Die AMLA hat einen Konsultationsentwurf für Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen veröffentlicht. Diese Leitlinien sollen Finanzinstitute und bestimmte nichtfinanzielle Unternehmen und Berufe bei der Umsetzung ihrer Pflichten zur kontinuierlichen Überwachung und Transaktionsüberwachung gemäß Artikel 26(5) AMLR unterstützen.\n\nDie Entwürfe gliedern sich in allgemeine Grundsätze, die für beide Leitlinien gelten, sowie spezifische Leitlinien zur Aktualisierung von Kundeninformationen (Leitlinie 1) und zum Rahmen für die Transaktions- und Aktivitätenüberwachung (Leitlinie 2). Sie sind für alle verpflichteten Unternehmen relevant, die dem EU-Rahmen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung unterliegen.\n\nDie Konsultation läuft bis zum 03.09.2026. Eine öffentliche Anhörung zu den Entwürfen ist für den 02.07.2026 geplant.",
+          "en": "AMLA has published a consultation draft for guidelines on the ongoing monitoring of business relationships. These guidelines aim to support financial institutions and designated non-financial businesses and professions in implementing their duties for continuous monitoring and transaction monitoring in accordance with Article 26(5) AMLR.\n\nThe drafts are divided into general principles applicable to both guidelines, as well as specific guidelines on keeping customer information up to date (Guideline 1) and on the framework for transaction and activity monitoring (Guideline 2). They are relevant for all obliged entities subject to the EU anti-money laundering and countering the financing of terrorism framework.\n\nThe consultation is open until 03.09.2026. A public hearing on the drafts is scheduled for 02.07.2026."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-guidelines-ongoing-monitoring-business-relationship_en",
+        "imp": "medium",
+        "deadline": "03.09.2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
+            "d": "09.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "04.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "EBA publishes draft reporting framework for the 2027 eligibility data collection",
+          "en": "EBA publishes draft reporting framework for the 2027 eligibility data collection"
+        },
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat einen Entwurf des Datenmodells und der Taxonomie für die Erhebung von Daten zur Berechtigung für die direkte Aufsicht durch die Anti-Geldwäsche-Behörde (AMLA) veröffentlicht. Dies ist Teil der Version 4.4 ihres Reporting Frameworks.\n\nDie Datenerhebung erfolgt Anfang 2027 bei allen verpflichteten Unternehmen, die 2026 als vorläufig berechtigt identifiziert wurden. Ziel ist es, zu bestätigen, ob diese Unternehmen die Kriterien am Stichtag 31. Dezember 2026 noch erfüllen. Der Entwurf sollte zusammen mit den von der AMLA für die Datenerhebung 2026 veröffentlichten Vorlagen und Anweisungen gelesen werden.\n\nInteressenträger, einschließlich des Privatsektors und der nationalen zuständigen Behörden, sind eingeladen, bis zum 24.08.2026 über das EBA-Feedback-Formular Stellungnahmen einzureichen.",
+          "en": "The European Banking Authority (EBA) has published a public working draft of the data model and taxonomy to support the collection of data on eligibility for direct supervision by the Anti-Money Laundering Authority (AMLA). This is part of release 4.4 of its reporting framework.\n\nThe data will be gathered in early 2027 from all obliged entities identified as provisionally eligible in 2026. The aim is to confirm whether these entities still meet the criteria on December 31, 2026, the reference date for the selection exercise. The draft should be read alongside the templates and instructions AMLA published for the 2026 data collection on eligibility criteria.\n\nStakeholders, including the private sector and national competent authorities, are invited to submit feedback through the EBA feedback form by August 24, 2026."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/eba-publishes-draft-reporting-framework-2027-eligibility-data-collection_en",
+        "imp": "medium",
+        "deadline": "24.08.2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "AMLA veröffentlicht Berichterstattungspaket zur Ermittlung vorläufig in Frage kommender verpflichteter Unternehmen",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-veroeffentlicht-berichterstattungspaket-zur-ermittlung-vorlaeufig-in-frage-kommender-verpflichteter-unternehmen/",
+            "d": "13.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Frequently asked questions on the reporting package for identifying provisionally eligible entities",
+          "en": "Frequently asked questions on the reporting package for identifying provisionally eligible entities"
+        },
+        "s": {
+          "de": "Die AMLA hat ein FAQ-Dokument zum Berichterstattungspaket für die Identifizierung vorläufig in Frage kommender verpflichteter Unternehmen veröffentlicht. Dieses Dokument soll meldepflichtige Unternehmen bei der Datenerhebung auf nationaler Ebene unterstützen.\n\nDas FAQ-Dokument sammelt Anfragen nationaler Finanzaufsichtsbehörden und behandelt die wichtigsten Auslegungsfragen, operative Klärungen und praktische Implementierungsprobleme. Es dient als Arbeitsressource für diejenigen, die Einreichungen vorbereiten, um eine genaue und effiziente Berichterstattung zu gewährleisten. KPMG hebt die Veröffentlichung dieses Pakets hervor.\n\nWeitere Fragen können über die zuständigen nationalen Finanzaufsichtsbehörden eingereicht und für zukünftige Aktualisierungen berücksichtigt werden.",
+          "en": "AMLA has published an FAQ document concerning the reporting package for identifying provisionally eligible obliged entities. This document aims to support reporting obliged entities during data collections organized at the national level.\n\nThe FAQ compiles queries received from national financial supervisors, covering key points of interpretation, operational clarifications, and practical implementation issues. It is designed as a working resource for those preparing submissions, helping them report accurately and efficiently. KPMG highlights the publication of this reporting package.\n\nFurther questions can be submitted through the relevant national financial supervisor and will be considered for future updates."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/frequently-asked-questions-reporting-package-identifying-provisionally-eligible-entities_en",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "AMLA veröffentlicht Berichterstattungspaket zur Ermittlung vorläufig in Frage kommender verpflichteter Unternehmen",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-veroeffentlicht-berichterstattungspaket-zur-ermittlung-vorlaeufig-in-frage-kommender-verpflichteter-unternehmen/",
+            "d": "13.05.2026"
+          }
+        ]
+      }
+    ],
     "dora": [
       {
         "d": "27.08.2026",
@@ -2152,132 +2313,6 @@
             "ti": "Konsultation – Rundschreiben der Bafin zu den Änderungen im KAGB in Folge des FRiG",
             "url": "https://legal.pwc.de/de/news/fachbeitraege/rundschreiben-der-bafin-zu-den-aenderungen-im-kagb-in-folge-des-frig",
             "d": "13.07.2026"
-          }
-        ]
-      }
-    ],
-    "amla": [
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "edpb.europa.eu",
-        "ti": {
-          "de": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing",
-          "en": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing"
-        },
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) und die Anti-Geldwäsche-Behörde (AMLA) entwickeln gemeinsam Leitlinien zur Informationsweitergabe im Kampf gegen Finanzkriminalität unter Wahrung des Datenschutzes. Art. 75 der Geldwäsche-Verordnung ermöglicht es Unternehmen und Fachleuten, Informationen untereinander und mit Behörden auszutauschen.\n\nDiese Leitlinien sollen praktische Anleitungen geben, wie Partnerschaften für einen effektiven Informationsaustausch aufgebaut werden können, ohne den Schutz personenbezogener Daten zu vernachlässigen. Dies betrifft Unternehmen, Aufsichtsbehörden, FIUs und Datenschutzbehörden gleichermaßen. Die neue Möglichkeit zur Informationsweitergabe tritt am 10. Juli 2027 in Kraft.\n\nDer EDPB und die AMLA planen für Ende des Jahres eine Veranstaltung, um erste Meinungen zu den Leitlinien einzuholen. Eine öffentliche Konsultation zum Entwurf der Leitlinien ist für die erste Hälfte des Jahres 2027 vorgesehen.",
-          "en": "The European Data Protection Board (EDPB) and the Anti-Money Laundering Authority (AMLA) are jointly developing guidelines on information sharing to combat financial crime while protecting personal data. Article 75 of the AML Regulation allows companies and professionals to share information with each other and with public authorities.\n\nThese guidelines aim to provide practical guidance on how to build partnerships for effective information sharing without neglecting the protection of personal data. This concerns companies, supervisory authorities, FIUs, and data protection authorities alike. The new information sharing possibility will apply from 10 July 2027.\n\nThe EDPB and AMLA plan to hold an event later this year to gather initial views on the guidelines. A public consultation on the draft guidelines is scheduled for the first half of 2027."
-        },
-        "url": "https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en",
-        "imp": "medium"
-      },
-      {
-        "d": "16.12.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "Consultation on the draft ITS under Art. 15(3) AMLAR",
-          "en": "Consultation on the draft ITS under Art. 15(3) AMLAR"
-        },
-        "s": {
-          "de": "Die AMLA hat eine öffentliche Konsultation zu den Entwürfen der Implementing Technical Standards (ITS) gemäß Artikel 15 Absatz 3 der AMLAR durchgeführt. Diese Konsultation ist Teil des politischen Rahmens der AMLA und dient dazu, Transparenz und Inklusivität bei der Entwicklung ihrer regulatorischen und aufsichtsrechtlichen Vorgaben zu gewährleisten.\n\nDie Konsultation richtete sich an alle Interessengruppen des EU-Rahmens zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CFT), insbesondere an Verpflichtete, Aufsichtsbehörden, Financial Intelligence Units und andere öffentliche Stellen. Ziel war es, Rückmeldungen zur Verhältnismäßigkeit der vorgeschlagenen Maßnahmen zu erhalten und externes Fachwissen einzubeziehen.\n\nDie Konsultationsfrist endete am 27. Januar 2026. Die eingegangenen Beiträge werden in die Finalisierung der ITS einfließen. Nach Abschluss der Konsultation wird die AMLA einen Abschlussbericht veröffentlichen, der darlegt, wie die Beiträge berücksichtigt wurden.",
-          "en": "AMLA has conducted a public consultation on the draft Implementing Technical Standards (ITS) under Article 15(3) of the AMLAR. This consultation is part of AMLA's policy-making framework, aiming to ensure transparency and inclusivity in the development of its regulatory and supervisory outputs.\n\nThe consultation targeted all stakeholders interested in the EU's anti-money laundering and countering the financing of terrorism (AML/CFT) framework, particularly obliged entities, supervisory authorities, Financial Intelligence Units, and other public bodies. The objective was to gather feedback on the proportionality of the proposed measures and incorporate external expertise.\n\nThe consultation period closed on January 27, 2026. The received contributions will inform the finalization of the ITS. Following the consultation, AMLA will publish a final report explaining how the contributions have been considered."
-        },
-        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-under-art-153-amlar_en",
-        "imp": "medium",
-        "deadline": "27.01.2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
-            "d": "09.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "03.07.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "AMLA and ECB sign agreement on cooperation",
-          "en": "AMLA and ECB sign agreement on cooperation"
-        },
-        "s": {
-          "de": "Die Anti-Geldwäsche-Behörde (AMLA) und die Europäische Zentralbank (EZB) haben ein Memorandum of Understanding (MoU) unterzeichnet. Dieses MoU legt einen Rahmen für die Zusammenarbeit und den Informationsaustausch fest, um die Effektivität der Aufsicht zu verbessern, die Effizienz zu maximieren und Doppelarbeit zu vermeiden. Es ist Teil des neuen EU-Anti-Geldwäsche-Pakets und erfüllt die gesetzliche Anforderung gemäß Artikel 92 Absatz 3 der AMLA-Verordnung.\n\nDas Abkommen ist für Finanzinstitute relevant, insbesondere für solche, die grenzüberschreitenden Geldwäscherisiken ausgesetzt sind, wie Zahlungsdienstleister, Krypto-Asset-Dienstleister und bestimmte Banken. Es soll die Zusammenarbeit zwischen der Aufsicht zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CFT) und der prudenzielle Aufsicht stärken. Die EZB berücksichtigt bereits AML/CFT-Aspekte in ihrer prudenzielle Bankenaufsicht. Die AMLA wird eine Gruppe von Finanzinstituten, die als „selected obliged entities“ bezeichnet werden, direkt beaufsichtigen.\n\nDie beiden Behörden werden sich um Konsistenz in ihren politischen Ansätzen und Aufsichtsstandards bemühen und eng zusammenarbeiten, wenn sie Aufsichtsmaßnahmen im Zusammenhang mit internen Kontrollen und Governance ergreifen oder Sanktionen verhängen. Dies kann auch Fälle umfassen, in denen aufgrund schwerwiegender Verstöße gegen AML/CFT-Regeln Geschäftsaktivitäten eingeschränkt oder Lizenzen entzogen werden müssen.",
-          "en": "The Anti-Money Laundering Authority (AMLA) and the European Central Bank (ECB) have signed a Memorandum of Understanding (MoU). This MoU establishes a framework for cooperation and information exchange to enhance supervisory effectiveness, maximize efficiency, and avoid duplication of effort. It is part of the new EU anti-money laundering package and fulfills the legal requirement under Article 92(3) of the AMLA Regulation.\n\nThe agreement is relevant for financial institutions, especially those exposed to cross-border money laundering risks, such as payment institutions, crypto-asset service providers, and certain banks. It aims to strengthen cooperation between anti-money laundering and countering the financing of terrorism (AML/CFT) supervision and prudential supervision. The ECB already incorporates AML/CFT considerations into its prudential supervision of banks. AMLA will directly supervise a group of financial institutions referred to as “selected obliged entities.”\n\nThe two authorities will strive for consistency in their policy approaches and supervisory standards and will work closely together when taking supervisory measures related to internal controls and governance or when applying sanctions. This may include cases where, due to serious breaches of AML/CFT rules, it is necessary to restrict or limit an institution’s business or operations or to withdraw licenses."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/amla-and-ecb-sign-agreement-cooperation_en",
-        "imp": "low",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
-            "d": "09.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "03.07.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "AMLA signs Memorandum of Understanding with the European Supervisory Authorities for effective cooperation and information exchange",
-          "en": "AMLA signs Memorandum of Understanding with the European Supervisory Authorities for effective cooperation and information exchange"
-        },
-        "s": {
-          "de": "Die Anti-Geldwäsche-Behörde (AMLA) hat ein multilaterales Memorandum of Understanding (MoU) mit den Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA – ESAs) unterzeichnet. Ziel ist es, eine effektive Zusammenarbeit und einen Informationsaustausch zwischen den vier Institutionen zu gewährleisten. Das MoU legt fest, wie die ESAs und die AMLA Informationen austauschen und kooperieren, um ihre jeweiligen Aufgaben effizient, effektiv und zeitnah zu erfüllen.\n\nDas Memorandum soll die aufsichtsrechtliche Konvergenz im gesamten EU-Finanzsektor fördern, den Austausch notwendiger Informationen ermöglichen und das sektorübergreifende Lernen sowie den Kapazitätsaufbau unter den Aufsichtsbehörden in Bereichen von gemeinsamem Interesse stärken. Es ist Teil des umfassenden Kooperationsrahmens, den die AMLA für den Finanzsektor bereitstellen muss, und eine wichtige Komponente der zukünftigen institutionellen Vereinbarungen. KPMG weist in einem Fachbeitrag auf die Bedeutung der laufenden Überwachung von Geschäftsbeziehungen hin, was die praktische Relevanz der Zusammenarbeit unterstreicht.\n\nDie Unterzeichnung des MoU erfolgte gemäß Artikel 91 der AMLA-Verordnung, der die AMLA verpflichtet, bis zum 27. Juni 2025 ein multilaterales MoU mit den ESAs abzuschließen. Dieses MoU soll die Zusammenarbeit bei der Erfüllung ihrer Aufgaben nach Unionsrecht regeln.",
-          "en": "The Anti-Money Laundering Authority (AMLA) has signed a multilateral Memorandum of Understanding (MoU) with the European Supervisory Authorities (EBA, EIOPA, and ESMA – the ESAs). The aim is to ensure effective cooperation and information exchange between the four institutions. The MoU outlines how the ESAs and AMLA will exchange information and cooperate in practice to perform their respective tasks efficiently, effectively, and in a timely manner.\n\nThe memorandum aims to promote supervisory convergence across the EU financial sector, enable the exchange of necessary information, and foster cross-sectoral learning and capacity building among supervisors in areas of mutual interest. It is part of the overall cooperation framework that AMLA is required to issue for the financial sector and is an important component of future institutional arrangements. KPMG highlights the importance of ongoing monitoring of business relationships in an expert article, underscoring the practical relevance of this cooperation.\n\nThe signing of the MoU was in accordance with Article 91 of the AMLA Regulation, which requires AMLA to conclude a multilateral MoU with the ESAs by June 27, 2025. This MoU is to set out how the authorities intend to cooperate in the performance of their tasks under Union law."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/amla-signs-memorandum-understanding-european-supervisory-authorities-effective-cooperation-and_en",
-        "imp": "low",
-        "deadline": "27.06.2025",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
-            "d": "09.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "01.07.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "AMLA expects high standards against financial crime in crypto sector",
-          "en": "AMLA expects high standards against financial crime in crypto sector"
-        },
-        "s": {
-          "de": "Die AMLA (Anti-Money Laundering Authority) erwartet hohe Standards zur Bekämpfung von Finanzkriminalität im Kryptosektor. Angesichts des neuen Regulierungsrahmens und der Transformation des Kryptosektors sollen europäische Unternehmen ausreichend vor Geldwäsche und Terrorismusfinanzierung geschützt werden. Die AMLA wird eng mit anderen europäischen Behörden und nationalen Aufsichtsbehörden zusammenarbeiten, um effektive Ergebnisse zu erzielen.\n\nKrypto-Dienstleister (CASPs) sind aufgrund ihrer technologischen Merkmale, grenzüberschreitenden Operationen und Anonymität erhöhenden Fähigkeiten erheblichen Geldwäsche- und Terrorismusfinanzierungsrisiken ausgesetzt. Die Markets in Crypto-Assets Regulation (MiCA) ist in Kraft getreten und erfordert eine MiCA-Lizenz für CASPs, die Dienstleistungen in der EU anbieten. Die AMLA erwartet, dass die Zahl der lizenzierten CASPs erheblich steigen wird und betont die Notwendigkeit konsistenter AML/CFT-Standards, insbesondere für grenzüberschreitend tätige CASPs.\n\nDie anfängliche Lizenzierung und Beaufsichtigung von CASPs verbleibt bei den nationalen zuständigen Behörden (NCAs). Die AMLA wird Pläne zur Förderung hoher AML/CFT-Kontrollstandards entwickeln und Finanzinformationen im Zusammenhang mit Krypto-Assets in gemeinsame Analysen einbeziehen, um grenzüberschreitende Typologien und neue Risiken zu identifizieren.",
-          "en": "The AMLA (Anti-Money Laundering Authority) expects high standards for combating financial crime in the crypto sector. Given the new regulatory framework and the transformation of the crypto sector, European companies should be adequately protected from money laundering and terrorist financing. AMLA will work closely with other European authorities and national competent authorities to achieve effective results.\n\nCrypto-asset service providers (CASPs) are exposed to significant money laundering and terrorist financing risks due to their technological features, cross-border operations, and anonymity-enhancing capabilities. The Markets in Crypto-Assets Regulation (MiCA) has come into effect, requiring a MiCA license for CASPs offering services in the EU. AMLA expects the number of licensed CASPs to increase significantly and emphasizes the need for consistent AML/CFT standards, especially for CASPs operating across borders.\n\nThe initial licensing and supervision of CASPs remain with the national competent authorities (NCAs). AMLA will develop plans to promote high AML/CFT control standards and include financial intelligence related to crypto-assets in joint analyses to identify cross-border typologies and emerging risks."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/amla-expects-high-standards-against-financial-crime-crypto-sector_en",
-        "imp": "low",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
-            "d": "09.06.2026"
           }
         ]
       }

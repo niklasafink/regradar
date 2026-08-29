@@ -20,7 +20,10 @@ export async function POST(request: Request) {
     : body.provider
       ? [body.provider]
       : [];
-  const chosen = PROVIDERS.filter((p) => raw.includes(p.id));
+  // ID ("CI") oder URL-Slug ("bank") akzeptieren; gespeichert wird immer die ID.
+  const chosen = PROVIDERS.filter(
+    (p) => raw.includes(p.id) || raw.includes(p.slug),
+  );
   if (chosen.length === 0) {
     return Response.json({ error: "no_provider" }, { status: 400 });
   }

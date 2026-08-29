@@ -25,7 +25,7 @@ export default function FrameworkDetail() {
   const ups = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
   const fresh = ups.filter((u) => daysAgo(u.d) <= 30).length;
   const sources = [...new Set(ups.map((u) => u.src))];
-  const siblings = visibleFrameworks(provider, null)
+  const siblings = visibleFrameworks(p.id, null)
     .filter((x) => x.topic === f.topic && x.id !== f.id);
 
   const stats = [
@@ -41,7 +41,7 @@ export default function FrameworkDetail() {
 
       <main className="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
         <Link
-          href={`/r/${provider}`}
+          href={`/r/${p.slug}`}
           className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900"
         >
           <span aria-hidden>←</span>
@@ -64,7 +64,7 @@ export default function FrameworkDetail() {
             src={FRAMEWORK_AUTH[f.id] ?? ups[0]?.src ?? "eur-lex.europa.eu"}
             className="mt-5 h-7"
           />
-          <h1 className="font-heading mt-3 max-w-3xl text-balance text-2xl font-medium tracking-tight sm:text-4xl">
+          <h1 className="font-heading mt-3 max-w-4xl text-balance text-2xl font-medium tracking-tight sm:text-4xl">
             {tx(lang, f.n)}
           </h1>
           <p className="mt-1.5 text-sm text-slate-400">{f.ref}, {f.jur}</p>
@@ -282,7 +282,7 @@ export default function FrameworkDetail() {
                   {siblings.map((x) => (
                     <li key={x.id}>
                       <Link
-                        href={`/r/${provider}/f/${x.id}`}
+                        href={`/r/${p.slug}/f/${x.id}`}
                         className="-mx-2 flex items-baseline gap-3 rounded-lg px-2 py-1 text-xs hover:bg-slate-50"
                       >
                         <span className="num shrink-0 text-xs text-slate-400">

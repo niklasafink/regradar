@@ -61,7 +61,7 @@ export default function Home() {
               return (
                 <Link
                   key={p.id}
-                  href={`/r/${p.id}`}
+                  href={`/r/${p.slug}`}
                   data-fast-goal="institute_selected"
                   data-fast-goal-institute={p.id}
                   data-fast-goal-source="home"

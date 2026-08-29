@@ -1,4 +1,5 @@
 import { sendSubscriberNotification, verifyToken } from "@/lib/email";
+import { providerSlug } from "@/lib/logic";
 import { addSubscriber } from "@/lib/subscribers";
 
 export async function GET(request: Request) {
@@ -25,6 +26,6 @@ export async function GET(request: Request) {
       console.error("subscriber notification failed:", e);
     }
   }
-  const target = data.providers[0] ? `/r/${data.providers[0]}` : "/";
+  const target = data.providers[0] ? `/r/${providerSlug(data.providers[0])}` : "/";
   return Response.redirect(`${base}${target}?abo=ok`, 302);
 }

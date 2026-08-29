@@ -141,7 +141,12 @@ export const PROVIDER_SHORT: Record<string, Txt> = {
   OTH: { de: "Sonstige", en: "Other" },
 };
 
-export const providerById = (id: string) => PROVIDERS.find((p) => p.id === id);
+/* Löst URL-Slug ("bank") oder interne ID ("CI") auf; alte Links mit
+   ID-Pfaden (/r/CI) bleiben dadurch funktionsfähig. */
+export const providerById = (idOrSlug: string) =>
+  PROVIDERS.find((p) => p.slug === idOrSlug || p.id === idOrSlug);
+export const providerSlug = (id: string) =>
+  PROVIDERS.find((p) => p.id === id)?.slug ?? id;
 export const frameworkById = (id: string) => FRAMEWORKS.find((f) => f.id === id);
 export const topicById = (id: string) => TOPICS.find((t) => t.id === id);
 

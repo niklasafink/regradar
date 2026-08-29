@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
-import { authority, daysUntil, frameworkById, topicById } from "@/lib/logic";
+import { authority, daysUntil, frameworkById, providerSlug, topicById } from "@/lib/logic";
 import { firstParagraph, isoDate, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
 
 export const dynamicParams = false;
@@ -46,7 +46,7 @@ export default async function UpdatePage(
   const { fw, u } = page;
   const t = topicById(fw.topic);
   const f = frameworkById(fw.id)!;
-  const backHref = `/r/${fw.ents[0]}/f/${fw.id}`;
+  const backHref = `/r/${providerSlug(fw.ents[0])}/f/${fw.id}`;
   const related = UPDATE_PAGES
     .filter((p) => p.fw.id === fw.id && p.slug !== slug)
     .slice(0, 6);

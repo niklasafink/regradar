@@ -16,14 +16,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const p of PROVIDERS) {
     const fws = visibleFrameworks(p.id, null);
     out.push({
-      url: `${BASE}/r/${p.id}`,
+      url: `${BASE}/r/${p.slug}`,
       changeFrequency: "daily",
       priority: 0.8,
       lastModified: fws[0] ? dt(fws[0].latest) : undefined,
     });
     for (const f of fws) {
       out.push({
-        url: `${BASE}/r/${p.id}/f/${f.id}`,
+        url: `${BASE}/r/${p.slug}/f/${f.id}`,
         changeFrequency: "weekly",
         priority: 0.6,
         lastModified: dt(f.latest),

@@ -1,5 +1,6 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { Resend } from "resend";
+import { PROVIDERS } from "./data";
 
 const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
@@ -151,6 +152,10 @@ export async function sendSubscriberNotification(
   if (!apiKey) return;
   const resend = new Resend(apiKey);
   const to = process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de";
+  // Interne IDs ("CI", "IF") ausschreiben ("Bank / Kreditinstitut", …).
+  const labels = providers.map(
+    (id) => PROVIDERS.find((p) => p.id === id)?.n.de ?? id,
+  );
 
   const { error } = await resend.emails.send({
     from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
@@ -161,7 +166,7 @@ export async function sendSubscriberNotification(
         <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
         <p>${NOTIFY_TEXT[stage].line}:</p>
         <p><strong>${subscriberEmail}</strong></p>
-        <p>Quellen: ${providers.join(", ") || "—"}</p>
+        <p>Zielgruppen: ${labels.join(", ") || "—"}</p>
         <p style="color:#64748b;font-size:13px">${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })} Uhr</p>
       </div>`,
   });

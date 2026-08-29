@@ -4,7 +4,7 @@
 export type Lang = "de" | "en";
 export type Txt = { de: string; en: string };
 
-export interface Provider { id: string; n: Txt; s: Txt; tags: string[] }
+export interface Provider { id: string; slug: string; n: Txt; s: Txt; tags: string[] }
 export interface Topic { id: string; n: Txt; d: Txt }
 export interface Cond { k: string; any: string[] }
 /** Fachbeitrag einer Beratungsgesellschaft (Big 4 u. a.) zu einem Update. */
@@ -37,22 +37,22 @@ const [gy, gm, gd] = (liveJson.generated_at ?? "2026-08-24")
 export const TODAY = new Date(gy, gm - 1, gd);
 
 export const PROVIDERS: Provider[] = [
-  { id:"CI", n:{de:"Bank / Kreditinstitut",en:"Bank / credit institution"},
+  { id:"CI", slug:"bank", n:{de:"Bank / Kreditinstitut",en:"Bank / credit institution"},
     s:{de:"Einlagen- und Kreditgeschäft nach KWG und CRR",en:"Deposit-taking and lending under KWG and CRR"},
     tags:["CRR III","MaRisk","DORA","AMLA"] },
-  { id:"AM", n:{de:"Asset Manager / KVG",en:"Asset manager / fund manager"},
+  { id:"AM", slug:"asset-manager", n:{de:"Asset Manager / KVG",en:"Asset manager / fund manager"},
     s:{de:"AIF- oder OGAW-Verwaltung nach KAGB",en:"AIF or UCITS management under KAGB"},
     tags:["AIFMD II","SFDR","ELTIF 2.0","DORA"] },
-  { id:"IF", n:{de:"Wertpapierinstitut",en:"Investment firm"},
+  { id:"IF", slug:"wertpapierinstitut", n:{de:"Wertpapierinstitut",en:"Investment firm"},
     s:{de:"Wertpapierdienstleistungen nach WpIG und MiFID II",en:"Investment services under WpIG and MiFID II"},
     tags:["MiFID II","IFR/IFD","MAR","DORA"] },
-  { id:"PI", n:{de:"Zahlungs- / E-Geld-Institut",en:"Payment / e-money institution"},
+  { id:"PI", slug:"zahlungsinstitut", n:{de:"Zahlungs- / E-Geld-Institut",en:"Payment / e-money institution"},
     s:{de:"Zahlungsdienste und E-Geld nach ZAG",en:"Payment services and e-money under ZAG"},
     tags:["PSD3/PSR","Instant Payments","MiCA","AMLA"] },
-  { id:"INS", n:{de:"Versicherungsunternehmen",en:"Insurance undertaking"},
+  { id:"INS", slug:"versicherung", n:{de:"Versicherungsunternehmen",en:"Insurance undertaking"},
     s:{de:"Versicherungsgeschäft nach VAG und Solvency II",en:"Insurance business under VAG and Solvency II"},
     tags:["Solvency II","IDD","SFDR","DORA"] },
-  { id:"OTH", n:{de:"Leasing, Factoring, Sonstige",en:"Leasing, factoring, other"},
+  { id:"OTH", slug:"sonstige", n:{de:"Leasing, Factoring, Sonstige",en:"Leasing, factoring, other"},
     s:{de:"Finanzdienstleistungen mit eingeschränkter Erlaubnis",en:"Financial services under a limited licence"},
     tags:["GwG","HinSchG","NIS-2","BGB"] }
 ];

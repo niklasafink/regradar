@@ -19,7 +19,7 @@ export function GET() {
     "## Anbietertypen",
     "",
     ...PROVIDERS.map(
-      (p) => `- [${p.n.de}](${BASE}/r/${p.id}): ${p.s.de}`,
+      (p) => `- [${p.n.de}](${BASE}/r/${p.slug}): ${p.s.de}`,
     ),
     "",
     "## Rahmenwerke",
@@ -31,7 +31,7 @@ export function GET() {
     for (const f of visibleFrameworks(p.id, null)) {
       if (seen.has(f.id)) continue;
       seen.add(f.id);
-      lines.push(`- [${f.n.de} (${f.ref})](${BASE}/r/${p.id}/f/${f.id}): ${f.about.de}`);
+      lines.push(`- [${f.n.de} (${f.ref})](${BASE}/r/${p.slug}/f/${f.id}): ${f.about.de}`);
     }
   }
 

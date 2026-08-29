@@ -109,7 +109,7 @@ function ProviderMenu() {
               <Link
                 key={p.id}
                 role="menuitem"
-                href={`/r/${p.id}`}
+                href={`/r/${p.slug}`}
                 data-fast-goal="institute_selected"
                 data-fast-goal-institute={p.id}
                 data-fast-goal-source="menu"

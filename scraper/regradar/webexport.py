@@ -96,9 +96,11 @@ NOISE = re.compile(
     r"stellenausschreibung|management board meeting", re.IGNORECASE)
 
 
-def _classify(text: str) -> Optional[str]:
+def _classify(text: str, forced: Optional[str] = None) -> Optional[str]:
     if NOISE.search(text):
         return None
+    if forced:
+        return forced
     lowered = text.lower()
     for fw_id, pattern in FRAMEWORK_RULES:
         if re.search(pattern, lowered):
@@ -175,7 +177,12 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # (Seite noch nicht geladen) – für den High-Level-Feed auslassen.
         if r["source_id"] == "amla" and not r["publication_date"]:
             continue
-        fw_id = _classify("{} {}".format(r["title"] or "", r["summary"] or ""))
+        # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
+        # Titel wie "Consultation on the draft RTS on Customer Due
+        # Diligence" nennen weder Behörde noch Stichworte eindeutig.
+        fw_id = _classify(
+            "{} {}".format(r["title"] or "", r["summary"] or ""),
+            forced="amla" if r["source_id"] == "amla" else None)
         if not fw_id:
             continue
         date = _de_date(r["publication_date"]) or _de_date(r["first_seen_at"][:10])
@@ -194,15 +201,27 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
 
     # Erst auswählen (Relevanz + Kappung je Rahmenwerk), dann nur für die
     # tatsächlich exportierten Einträge LLM-Zusammenfassungen erzeugen.
+    # Einträge mit noch offener Frist (Konsultationen) haben Vorrang vor
+    # datumsneueren Meldungen, damit laufende Fristen die Kappung überleben.
+    from datetime import date as _date
+    today_iso = _date.today().isoformat()
+
+    def _deadline_open(r):
+        dl = r["consultation_deadline"]
+        return bool(dl and dl[:10] >= today_iso)
+
     selected = []
     per_fw = {}
-    for r, fw_id, date in candidates:
-        if not relevance.get(r["document_id"], True):
-            continue
-        if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK:
-            continue
-        per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
-        selected.append((r, fw_id, date))
+    for prio in (True, False):
+        for r, fw_id, date in candidates:
+            if _deadline_open(r) is not prio:
+                continue
+            if not relevance.get(r["document_id"], True):
+                continue
+            if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK:
+                continue
+            per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
+            selected.append((r, fw_id, date))
 
     # Big-4-/Kanzlei-Beiträge vor der Zusammenfassung ermitteln, damit deren
     # Titel als Relevanz-Kontext in die LLM-Zusammenfassung einfließen können.

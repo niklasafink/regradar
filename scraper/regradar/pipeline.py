@@ -77,6 +77,15 @@ def run_source(conn: sqlite3.Connection, source_id: str, since: Optional[str] = 
     stats["discovered"] = len(candidates)
     fetch_budget = MAX_FETCH_PER_RUN
 
+    # Noch nie geladene Dokumente zuerst: sonst verhungern neue Detailseiten
+    # dauerhaft hinter bereits bekannten, wenn discover mehr Kandidaten
+    # liefert als das Fetch-Budget pro Lauf hergibt.
+    fetched_ids = {
+        row["external_id"] for row in conn.execute(
+            "SELECT DISTINCT external_id FROM raw_documents WHERE source_id=?",
+            (source_id,))}
+    candidates.sort(key=lambda c: c.external_id in fetched_ids)
+
     for cand in candidates:
         try:
             known = conn.execute(
@@ -120,6 +129,12 @@ def run_source(conn: sqlite3.Connection, source_id: str, since: Optional[str] = 
                              raw_sha, raw_path))
                 else:
                     stats["http_errors"] += 1
+
+            # Bekanntes Dokument, aber kein neuer Inhalt (Budget erschöpft,
+            # 304 oder Fetch-Fehler): Stand nicht mit dem mageren
+            # Discovery-Platzhalter überschreiben.
+            if known is not None and fetch_url and raw_content is None:
+                continue
 
             try:
                 doc = adapter.normalize(cand, raw_content)

@@ -19,7 +19,7 @@ export default function Board() {
   const p = providerById(provider);
   if (!p) notFound();
 
-  const list = visibleFrameworks(provider, null);
+  const list = visibleFrameworks(p.id, null);
   const topics = topicsWithContent(list);
   const shown = selected.length ? topics.filter((t) => selected.includes(t.id)) : topics;
   const totalUpdates = list.reduce((n, f) => n + f.u.length, 0);
@@ -52,7 +52,7 @@ export default function Board() {
             <p className="num text-sm text-slate-500">
               {list.length} {lang === "de" ? "Rahmenwerke" : "frameworks"}, {totalUpdates} Updates
             </p>
-            <SearchBox provider={provider} />
+            <SearchBox provider={p.id} />
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export default function Board() {
               {lang === "de" ? "Rahmenwerke" : "Frameworks"}
             </span>
             <Link
-              href={`/updates?type=${provider}`}
+              href={`/updates?type=${p.slug}`}
               className="rounded-full px-3.5 py-1 text-xs font-medium text-slate-500 transition-colors hover:text-slate-900"
             >
               {lang === "de" ? "Alle Updates" : "All updates"}
@@ -116,7 +116,7 @@ export default function Board() {
                 return (
                   <Link
                     key={f.id}
-                    href={`/r/${provider}/f/${f.id}`}
+                    href={`/r/${p.slug}/f/${f.id}`}
                     className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)] transition-all hover:border-slate-900 hover:shadow-[0_2px_4px_rgb(31_30_26/0.05),0_8px_24px_rgb(31_30_26/0.1)]"
                   >
                     <div className="flex items-start justify-between gap-3">
