@@ -13,20 +13,22 @@ cd "$DIR"
 LOG="$DIR/data/daily.log"
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') Lauf startet ===" >> "$LOG"
 
-BEFORE=$(shasum ../web/lib/live.json 2>/dev/null | cut -d' ' -f1 || true)
-
 /usr/bin/python3 -m regradar run all >> "$LOG" 2>&1
 /usr/bin/python3 -m regradar big4 >> "$LOG" 2>&1 || echo "big4 fehlgeschlagen (weiter)" >> "$LOG"
 /usr/bin/python3 -m regradar export-web >> "$LOG" 2>&1
 
-AFTER=$(shasum ../web/lib/live.json | cut -d' ' -f1)
-
-if [[ "$BEFORE" == "$AFTER" ]]; then
-  echo "live.json unverändert, kein Deploy." >> "$LOG"
+# Nur committen/pushen, wenn sich live.json inhaltlich geändert hat
+# (mehr als nur der generated_at-Zeitstempel). Vercel deployt dann automatisch
+# via Git-Integration (Root Directory "web").
+cd ..
+if git diff -U0 -- web/lib/live.json | grep '^[+-][^+-]' | grep -v generated_at | grep -q .; then
+  echo "live.json geändert, committe & pushe…" >> "$LOG"
+  git add web/lib/live.json web/lib/sources.json
+  git commit -m "Auto-Update: live.json ($(date '+%Y-%m-%d %H:%M'))" >> "$LOG" 2>&1
+  git push origin main >> "$LOG" 2>&1
 else
-  echo "live.json geändert, deploye…" >> "$LOG"
-  cd ../web
-  npx vercel deploy --prod --yes >> "$LOG" 2>&1
+  git checkout -- web/lib/live.json web/lib/sources.json 2>/dev/null || true
+  echo "live.json unverändert, kein Deploy." >> "$LOG"
 fi
 
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') Lauf fertig ===" >> "$LOG"

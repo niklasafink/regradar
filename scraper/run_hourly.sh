@@ -22,9 +22,7 @@ if git diff -U0 -- web/lib/live.json | grep '^[+-][^+-]' | grep -v generated_at 
   git add web/lib/live.json web/lib/sources.json
   git commit -m "Auto-Update: live.json ($(date '+%Y-%m-%d %H:%M'))"
   git push origin main
-  cd web
-  npx vercel --prod --yes
-  echo "Deploy abgeschlossen"
+  echo "Push abgeschlossen — Vercel deployt automatisch via Git-Integration"
 else
   git checkout -- web/lib/live.json web/lib/sources.json 2>/dev/null || true
   echo "Keine inhaltlichen Änderungen in live.json → kein Deploy"
