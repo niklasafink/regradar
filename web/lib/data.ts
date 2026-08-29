@@ -14,6 +14,9 @@ export interface Update {
   refnum?: string; deadline?: string; eff?: string;
   /** Link zur Primärquelle. Gesetzt bei echten, gescrapten Updates. */
   url?: string;
+  /** LLM-Impact-Urteil nach scraper/IMPACT.md; fehlt es, greift die
+      Dokumenttyp-Heuristik in logic.ts. */
+  imp?: "high" | "medium" | "low";
   /** Big-4-Fachbeiträge, die genau diese Meldung kommentieren (Scraper). */
   adv?: Advisory[];
 }

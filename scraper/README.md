@@ -33,7 +33,12 @@ regulatorische Relevanz. Dafür `OPENROUTER_API_KEY` in `scraper/.env`
 eintragen (wird von der CLI automatisch geladen) oder exportieren (optional
 `OPENROUTER_MODEL`, Default `google/gemini-2.5-flash-lite`); Ergebnisse
 werden in der Tabelle `llm_relevance` gecacht, ohne Key läuft der Export
-unverändert nur mit der Regex-Regel. Die App mischt die Live-Updates in die
+unverändert nur mit der Regex-Regel. Zusätzlich beurteilt ein LLM je
+exportiertem Update den Impact für die Zielgruppe (`regradar/impact.py`,
+Regelwerk in `scraper/IMPACT.md`, Cache `llm_impact`, optional
+`OPENROUTER_IMPACT_MODEL`); das Urteil landet als Feld `imp`
+(high/medium/low) in `live.json`, ohne Urteil greift im Frontend die
+Dokumenttyp-Heuristik. Die App mischt die Live-Updates in die
 bestehenden Zeitleisten (`web/lib/live.ts`); Aktualisierung = `run all` +
 `big4` + `export-web`, danach lädt Next.js die neue JSON automatisch.
 

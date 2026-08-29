@@ -212,8 +212,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
             conn, r["document_id"], fw_id,
             "{} – {}".format(_clean(r["title"], 200), _clean(r["summary"])))
 
-    from .summarize import summarize
-    summaries = summarize(conn, [
+    # Gemeinsamer Kontext für LLM-Zusammenfassung und LLM-Impact-Einstufung.
+    contexts = [
         (r["document_id"],
          "Titel: {}\nTyp: {}\nBehörde: {}\nDatum: {}{}{}\nTeaser: {}{}".format(
              _clean(r["title"], 300),
@@ -229,7 +229,15 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                  "{}: {}".format(a["f"], a["ti"])
                  for a in adv_by_doc[r["document_id"]]))
              if adv_by_doc[r["document_id"]] else ""))
-        for r, _, date in selected])
+        for r, _, date in selected]
+
+    from .summarize import summarize
+    summaries = summarize(conn, contexts)
+
+    # Impact-Urteil per LLM nach den Regeln in scraper/IMPACT.md; ohne
+    # Urteil greift im Frontend die Dokumenttyp-Heuristik (logic.ts).
+    from .impact import assess
+    impacts = assess(conn, contexts)
 
     updates = {}
     matched = 0
@@ -255,6 +263,9 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                  else {"de": summary, "en": summary},
             "url": r["canonical_url"],
         }
+        imp = impacts.get(r["document_id"])
+        if imp:
+            entry["imp"] = imp
         deadline = _de_date(r["consultation_deadline"])
         if deadline:
             entry["deadline"] = deadline
@@ -276,5 +287,6 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     return {"path": path, "frameworks": len(updates), "updates": matched,
             "advisory": advisory, "summarized": summarized,
+            "impact_rated": len(impacts),
             "scanned": len(rows), "sources": sources_info["sources"],
             "llm": "aktiv" if api_key() else "inaktiv (kein OPENROUTER_API_KEY)"}

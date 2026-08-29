@@ -100,9 +100,11 @@ export function activeFilters(answers: Answers | null): ActiveFilter[] {
   return out;
 }
 
-/* Heuristische Impact-Einschätzung eines Updates nach Dokumenttyp:
-   verbindliche bzw. finale Akte wiegen schwer, Entwürfe und Konsultationen
-   mittel, redaktionelle Hinweise leicht. Keine Rechtsberatung. */
+/* Impact-Einschätzung eines Updates: Vorrang hat das LLM-Urteil aus dem
+   Scraper (Feld `imp`, Regeln in scraper/IMPACT.md). Fehlt es, greift die
+   Heuristik nach Dokumenttyp: verbindliche bzw. finale Akte wiegen schwer,
+   Entwürfe und Konsultationen mittel, redaktionelle Hinweise leicht.
+   Keine Rechtsberatung. */
 export type Impact = "high" | "medium" | "low";
 
 const IMPACT_BY_TYPE: Record<string, Impact> = {
@@ -118,8 +120,10 @@ const IMPACT_BY_TYPE: Record<string, Impact> = {
   "Bericht": "low", "Meldung": "low",
 };
 
-export const impactOf = (u: { t: Txt; deadline?: string; eff?: string }): Impact =>
-  IMPACT_BY_TYPE[u.t.de] ?? (u.deadline || u.eff ? "high" : "medium");
+export const impactOf = (
+  u: { t: Txt; deadline?: string; eff?: string; imp?: Impact },
+): Impact =>
+  u.imp ?? IMPACT_BY_TYPE[u.t.de] ?? (u.deadline || u.eff ? "high" : "medium");
 
 export const IMPACT_LABEL: Record<Impact, Txt> = {
   high: { de: "Hoch", en: "High" },

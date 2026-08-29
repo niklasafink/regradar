@@ -160,8 +160,8 @@ export default function AllUpdates() {
 
         <p className="mt-10 text-xs text-slate-400">
           {lang === "de"
-            ? "Die Impact-Einschätzung ist eine automatische Einordnung nach Dokumenttyp und Frist. Keine Rechtsberatung."
-            : "The impact rating is an automatic classification based on document type and deadline. Not legal advice."}
+            ? "Die Impact-Einschätzung ist eine automatische, KI-gestützte Einordnung nach Inhalt, Dokumenttyp und Frist. Keine Rechtsberatung."
+            : "The impact rating is an automatic, AI-assisted classification based on content, document type and deadline. Not legal advice."}
         </p>
       </main>
 

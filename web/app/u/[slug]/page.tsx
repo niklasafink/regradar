@@ -51,7 +51,7 @@ export default async function UpdatePage(
     .filter((p) => p.fw.id === fw.id && p.slug !== slug)
     .slice(0, 6);
 
-  // Sachlicher LinkedIn-Post: kurzer Inhalt, Link zur Primärquelle, Hashtags.
+  // Sachlicher LinkedIn-Post in ganzen Sätzen, Regeln siehe LINKEDIN.md im Repo-Root.
   const hashtag = (s: string) => s.replace(/[^0-9A-Za-zÄÖÜäöüß]/g, "");
   const hashtags = [
     ...new Set([
@@ -64,13 +64,45 @@ export default async function UpdatePage(
     .filter(Boolean)
     .map((h) => `#${h}`)
     .join(" ");
-  const excerpt = u.s.de ? firstParagraph(u.s.de) : "";
+  const name = authority(u.src);
+  const AUTHORITY_ARTICLE: Record<string, string> = {
+    BaFin: "Die", ESMA: "Die", EBA: "Die", EIOPA: "Die", AMLA: "Die",
+    Bundesbank: "Die", EZB: "Die", "EU-Kommission": "Die",
+    BGH: "Der", EuGH: "Der", Bundestag: "Der", "EU-Rat": "Der",
+    BfDI: "Der", EDPB: "Der", ESRB: "Der", SRB: "Der",
+    BMF: "Das", BMI: "Das", BSI: "Das",
+  };
+  const TYPE_PHRASE: Record<string, { obj: string; verb: string }> = {
+    Leitlinien: { obj: "neue Leitlinien", verb: "veröffentlicht" },
+    Konsultation: { obj: "eine neue Konsultation", verb: "gestartet" },
+    Rundschreiben: { obj: "ein neues Rundschreiben", verb: "veröffentlicht" },
+    "Q&A": { obj: "neue Q&A", verb: "veröffentlicht" },
+    ITS: { obj: "neue technische Durchführungsstandards", verb: "veröffentlicht" },
+    Gesetz: { obj: "ein neues Gesetz", verb: "verkündet" },
+    Gesetzentwurf: { obj: "einen neuen Gesetzentwurf", verb: "vorgelegt" },
+    Urteil: { obj: "ein neues Urteil", verb: "veröffentlicht" },
+    Allgemeinverfügung: { obj: "eine neue Allgemeinverfügung", verb: "erlassen" },
+    Meldung: { obj: "eine neue Meldung", verb: "veröffentlicht" },
+  };
+  const phrase = TYPE_PHRASE[u.t.de] ?? TYPE_PHRASE.Meldung;
+  const opener = ["EU-Amtsblatt", "BGBl", "Bundesrecht"].includes(name)
+    ? `Im ${name === "BGBl" ? "Bundesgesetzblatt" : name} wurde am ${u.d} Folgendes veröffentlicht: „${u.ti.de}“.`
+    : name === "ESAs"
+    ? `Die ESAs haben am ${u.d} ${phrase.obj} ${phrase.verb}: „${u.ti.de}“.`
+    : `${AUTHORITY_ARTICLE[name] ? `${AUTHORITY_ARTICLE[name]} ` : ""}${name} hat am ${u.d} ${phrase.obj} ${phrase.verb}: „${u.ti.de}“.`;
+  // Überlange Zusammenfassungen an einer Satzgrenze kürzen, nie mitten im Satz.
+  const trimToSentence = (s: string, max: number) => {
+    if (s.length <= max) return s;
+    const cut = s.slice(0, max);
+    const end = cut.lastIndexOf(". ");
+    if (end > max * 0.4) return cut.slice(0, end + 1);
+    return `${cut.replace(/\s+\S*$/, "")} …`;
+  };
+  const excerpt = u.s.de ? trimToSentence(firstParagraph(u.s.de), 400) : "";
   const shareText = [
-    `${u.t.de} · ${authority(u.src)} · ${u.d}: ${u.ti.de}`,
-    excerpt.length > 300
-      ? `${excerpt.slice(0, 300).replace(/\s+\S*$/, "")} …`
-      : excerpt,
-    u.url ? `Zur Original-Meldung: ${u.url}` : "",
+    opener,
+    excerpt,
+    u.url ? `Die vollständige Meldung gibt es hier: ${u.url}` : "",
     hashtags,
   ]
     .filter(Boolean)
@@ -137,6 +169,9 @@ export default async function UpdatePage(
               data-fast-goal-authority={u.src}
               className="inline-flex items-center gap-1.5 rounded-full border border-slate-900 px-3.5 py-1 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
             >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5" aria-hidden>
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
+              </svg>
               Auf LinkedIn posten ↗
             </a>
             {u.url && (
