@@ -1,23 +1,31 @@
-// Automatischer Newsletter: verschickt alle noch nicht versandten Updates
-// an die bestätigten Abonnenten, gefiltert nach deren Anbietertyp.
+// Automatischer Newsletter: jeder Abonnent erhält genau die Updates, die das
+// System NACH seiner Anmeldung bzw. seiner letzten Zustellung zum ersten Mal
+// gesehen hat — keine Archiv-Mails an Neuanmeldungen, keine Duplikate.
 //
 // Zustand in Redis:
-//   newsletter:sent    SET bereits versandter Update-Slugs
+//   newsletter:seen    HASH Slug → ISO-Zeitpunkt, zu dem das Update erstmals
+//                      gesehen wurde (First-Seen)
+//   newsletter:sent    Alt-Format (SET versandter Slugs), wird einmalig mit
+//                      Epoch-Zeitstempel in den Hash migriert
 //   newsletter:lastRun ISO-Zeitstempel des letzten Laufs (informativ)
+//   subs               pro Abonnent zusätzlich lastNotifiedAt (Wasserzeichen)
 //
-// Erster Lauf: Das Set ist leer — dann werden alle aktuellen Slugs als
-// "versandt" markiert und nichts verschickt (sonst käme das komplette Archiv).
+// Versandregel pro Abonnent: firstSeen(slug) > max(confirmedAt, lastNotifiedAt).
+// Erster Lauf (kein Hash, kein Alt-Set): Archiv wird mit Epoch markiert und
+// nichts verschickt (sonst käme das komplette Archiv).
 
 import { Resend } from "resend";
 import { PROVIDERS } from "./data";
 import { createUnsubToken } from "./email";
 import { authority, daysUntil, dt } from "./logic";
-import { listSubscribers, redis, type Subscriber } from "./subscribers";
+import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
 
-const SENT_KEY = "newsletter:sent";
+const SEEN_KEY = "newsletter:seen";
+const LEGACY_SENT_KEY = "newsletter:sent";
 const LAST_RUN_KEY = "newsletter:lastRun";
 const MAX_PER_MAIL = 20;
+const EPOCH = "1970-01-01T00:00:00.000Z";
 
 export interface RunReport {
   initialized: boolean;
@@ -29,12 +37,41 @@ export interface RunReport {
   errors: string[];
 }
 
-/** Noch nicht versandte Updates, neueste zuerst. */
-async function unsentPages(): Promise<{ pages: UpdatePage[]; first: boolean }> {
-  const sent = await redis().smembers(SENT_KEY);
-  if (sent.length === 0) return { pages: UPDATE_PAGES, first: true };
-  const sentSet = new Set(sent);
-  return { pages: UPDATE_PAGES.filter((p) => !sentSet.has(p.slug)), first: false };
+/** First-Seen-Zeitpunkte aller Slugs laden bzw. neue Slugs registrieren.
+    `first` = allererster Lauf (weder Hash noch Alt-Set vorhanden): dann wird
+    das komplette Archiv mit Epoch markiert, damit es niemand erhält. */
+async function loadSeen(persist: boolean, nowIso: string): Promise<{
+  seen: Record<string, string>;
+  newSlugs: string[];
+  first: boolean;
+}> {
+  const seen = (await redis().hgetall<Record<string, string>>(SEEN_KEY)) ?? {};
+
+  // Einmalige Migration vom Alt-Format: bereits versandte Slugs mit Epoch
+  // importieren — die hat jeder Bestandsabonnent schon bekommen.
+  const toPersist: Record<string, string> = {};
+  if (Object.keys(seen).length === 0) {
+    const legacy = await redis().smembers(LEGACY_SENT_KEY);
+    for (const slug of legacy) {
+      seen[slug] = EPOCH;
+      toPersist[slug] = EPOCH;
+    }
+  }
+
+  const first = Object.keys(seen).length === 0;
+  const newSlugs: string[] = [];
+  for (const p of UPDATE_PAGES) {
+    if (seen[p.slug]) continue;
+    const ts = first ? EPOCH : nowIso;
+    seen[p.slug] = ts;
+    toPersist[p.slug] = ts;
+    if (!first) newSlugs.push(p.slug);
+  }
+
+  if (persist && Object.keys(toPersist).length > 0) {
+    await redis().hset(SEEN_KEY, toPersist);
+  }
+  return { seen, newSlugs, first };
 }
 
 /** Updates, die für die abonnierten Anbietertypen relevant sind.
@@ -168,29 +205,29 @@ export async function runNewsletter(opts: {
     sent: 0, skipped: 0, dryRun: !!opts.dryRun, errors: [],
   };
 
-  const { pages, first } = await unsentPages();
+  // Testversand (?to=) und Dry-Run verändern keinen Zustand.
+  const writable = !opts.dryRun && !opts.onlyTo;
+  const nowIso = new Date().toISOString();
+
+  const { seen, newSlugs, first } = await loadSeen(writable, nowIso);
 
   if (first) {
-    // Erstlauf: Archiv als versandt markieren, nichts verschicken.
-    if (!opts.dryRun && pages.length) {
-      const [head, ...rest] = pages.map((p) => p.slug);
-      await redis().sadd(SENT_KEY, head, ...rest);
-      await redis().set(LAST_RUN_KEY, new Date().toISOString());
-    }
+    // Erstlauf: Archiv mit Epoch markiert, nichts verschicken.
+    if (writable) await redis().set(LAST_RUN_KEY, nowIso);
     report.initialized = true;
-    report.newUpdates = pages.length;
+    report.newUpdates = UPDATE_PAGES.length;
     return report;
   }
 
-  report.newUpdates = pages.length;
-  if (pages.length === 0) return report;
+  report.newUpdates = newSlugs.length;
 
-  const sorted = [...pages].sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
+  const sorted = [...UPDATE_PAGES].sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
   let subs = await listSubscribers();
   if (opts.onlyTo) {
     const only = opts.onlyTo.toLowerCase();
     subs = subs.filter((s) => s.email === only);
-    if (subs.length === 0) subs = [{ email: only, providers: [], confirmedAt: "" }];
+    // Unbekannte Testadresse: Wasserzeichen Epoch → alles außer Archiv.
+    if (subs.length === 0) subs = [{ email: only, providers: [], confirmedAt: EPOCH }];
   }
   report.recipients = subs.length;
 
@@ -199,8 +236,23 @@ export async function runNewsletter(opts: {
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
 
   for (const sub of subs) {
-    const rel = relevantFor(sub, sorted);
+    // Wasserzeichen: jüngster von Anmeldung und letzter Zustellung. Nur
+    // Updates, die danach erstmals gesehen wurden, sind für diesen
+    // Abonnenten neu. ISO-Strings (UTC) sind lexikografisch vergleichbar.
+    const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
+      .sort()
+      .pop()!;
+    const fresh = sorted.filter((p) => (seen[p.slug] ?? nowIso) > watermark);
+    if (fresh.length === 0) {
+      report.skipped++;
+      continue;
+    }
+    const rel = relevantFor(sub, fresh);
     if (rel.length === 0) {
+      // Nichts Relevantes dabei: Wasserzeichen trotzdem vorrücken, damit
+      // diese Updates z. B. nach einer späteren Quellen-Erweiterung nicht
+      // nachträglich als "neu" verschickt werden.
+      if (writable) await setLastNotified(sub.email, nowIso);
       report.skipped++;
       continue;
     }
@@ -228,18 +280,14 @@ export async function runNewsletter(opts: {
       },
     });
     if (error) {
+      // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
       report.errors.push(`${sub.email}: ${error.message}`);
     } else {
       report.sent++;
+      if (writable) await setLastNotified(sub.email, nowIso);
     }
   }
 
-  // Erst nach dem Versand als erledigt markieren; bei Teilfehlern werden die
-  // Updates trotzdem markiert, Fehler stehen im Report.
-  if (!opts.dryRun && !opts.onlyTo) {
-    const [head, ...rest] = sorted.map((p) => p.slug);
-    await redis().sadd(SENT_KEY, head, ...rest);
-    await redis().set(LAST_RUN_KEY, new Date().toISOString());
-  }
+  if (writable) await redis().set(LAST_RUN_KEY, nowIso);
   return report;
 }

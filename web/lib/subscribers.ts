@@ -8,9 +8,14 @@ export type Subscriber = {
   email: string;
   providers: string[];
   confirmedAt: string;
+  // ISO-Zeitpunkt der letzten Newsletter-Zustellung an diese Adresse.
+  // Zusammen mit confirmedAt das Wasserzeichen: verschickt werden nur
+  // Updates, die das System NACH max(confirmedAt, lastNotifiedAt) zum
+  // ersten Mal gesehen hat.
+  lastNotifiedAt?: string;
 };
 
-type Stored = { providers: string[]; confirmedAt: string };
+type Stored = { providers: string[]; confirmedAt: string; lastNotifiedAt?: string };
 
 const KEY = "subs";
 
@@ -46,6 +51,7 @@ export async function addSubscriber(
     [key]: {
       providers: [...providers],
       confirmedAt: existing?.confirmedAt ?? new Date().toISOString(),
+      ...(existing?.lastNotifiedAt ? { lastNotifiedAt: existing.lastNotifiedAt } : {}),
     } satisfies Stored,
   });
   return existing ? "expanded" : "new";
@@ -63,5 +69,16 @@ export async function listSubscribers(): Promise<Subscriber[]> {
     email,
     providers: s.providers ?? [],
     confirmedAt: s.confirmedAt,
+    lastNotifiedAt: s.lastNotifiedAt,
   }));
+}
+
+/** Wasserzeichen nach erfolgreichem Versand vorrücken. Verlorene Race mit
+    einer parallelen Ab-/Ummeldung ist unkritisch (schlimmstenfalls eine
+    Wiederholung bzw. ein gelöschter Eintrag bleibt gelöscht). */
+export async function setLastNotified(email: string, iso: string): Promise<void> {
+  const key = email.trim().toLowerCase();
+  const existing = await redis().hget<Stored>(KEY, key);
+  if (!existing) return; // zwischenzeitlich abgemeldet
+  await redis().hset(KEY, { [key]: { ...existing, lastNotifiedAt: iso } satisfies Stored });
 }
