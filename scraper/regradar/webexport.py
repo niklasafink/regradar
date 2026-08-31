@@ -95,6 +95,46 @@ TYPE_LABELS = {
 }
 
 
+# Aufsichtspraxis: Einzelfall-Maßnahmen (Bußgelder, Verwarnungen, Zwangs-
+# gelder …) sind keine regulatorischen Updates (NOISE greift), aber ein
+# Praxis-Signal — sie landen als eigener "praxis"-Bestand in live.json
+# (Seite /praxis; monatlich aggregierter Newsletter).
+PRAXIS_RULES = [
+    ("bussgeld", r"geldbu(ß|ss)e|bu(ß|ss)geld"),
+    ("zwangsgeld", r"zwangsgeld"),
+    ("verwarnung", r"verwarn"),
+]
+PRAXIS_WINDOW_DAYS = 365
+PRAXIS_MAX = 120
+
+
+def _praxis_summary(text: Optional[str], limit: int = 360) -> str:
+    """Gescrapte Beschreibung für den Praxis-Bestand: ganze Sätze bis ~limit
+    Zeichen, damit Begründung und Betragshöhe lesbar ankommen statt mitten im
+    Wort abzubrechen."""
+    cleaned = _clean(text, 10_000)
+    if len(cleaned) <= limit:
+        return cleaned
+    out = ""
+    for m in re.finditer(r"[^.!?]*[.!?](?:\s+|$)", cleaned):
+        if out and len(out) + len(m.group(0).strip()) + 1 > limit:
+            break
+        out = (out + " " + m.group(0).strip()).strip()
+    return out or _clean(cleaned, limit)
+
+
+def _praxis_category(text: str, url: str = "") -> Optional[str]:
+    lowered = text.lower()
+    for cat, pattern in PRAXIS_RULES:
+        if re.search(pattern, lowered):
+            return cat
+    # BaFin-Maßnahmenseiten (anonymisierte Maßnahmen nach § 60b KWG u. a.)
+    # tragen die Kategorie im URL-Pfad, nicht immer im Titel.
+    if "/massnahmen/" in (url or "").lower():
+        return "massnahme"
+    return None
+
+
 # Kein regulatorisches Änderungssignal: Warnungen vor unerlaubten Anbietern,
 # Einzelfall-Maßnahmen, Veranstaltungen, Personalien, Newsletter.
 NOISE = re.compile(
@@ -199,6 +239,42 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
              AND document_id NOT IN
                  (SELECT item_id FROM dedup_suppressed WHERE kind='document')
            ORDER BY COALESCE(publication_date, substr(first_seen_at, 1, 10)) DESC""").fetchall()
+
+    # Aufsichtspraxis-Bestand (Bußgelder, Verwarnungen, Maßnahmen …): läuft
+    # als eigene Liste in live.json — bewusst ohne Rahmenwerk, LLM-Summary
+    # und Impact, mit Originaltitel, gescrapter Kurzbeschreibung (Hintergrund/
+    # Betragshöhe) und Link auf die Primärquelle.
+    from datetime import date as _pdate, timedelta as _ptd
+    praxis_cutoff = (_pdate.today() - _ptd(days=PRAXIS_WINDOW_DAYS)).isoformat()
+    praxis = []
+    seen_praxis = set()
+    for r in rows:
+        cat = _praxis_category(
+            "{} {}".format(r["title"] or "", r["summary"] or ""),
+            r["canonical_url"] or "")
+        if not cat:
+            continue
+        iso = r["publication_date"] or (r["first_seen_at"] or "")[:10]
+        date = _de_date(iso)
+        if not date or iso < praxis_cutoff:
+            continue
+        key = (re.sub(r"\W+", " ", (r["title"] or "").lower()).strip(), date)
+        if key in seen_praxis:
+            continue
+        seen_praxis.add(key)
+        entry = {
+            "d": date,
+            "ti": _clean(r["title"], 200),
+            "auth": r["authority"] or _domain(r["canonical_url"]),
+            "src": _domain(r["canonical_url"]),
+            "url": r["canonical_url"],
+            "cat": cat,
+        }
+        summary = _praxis_summary(r["summary"])
+        if summary:
+            entry["sum"] = summary
+        praxis.append(entry)
+    praxis = praxis[:PRAXIS_MAX]
 
     # Kandidaten sammeln (Regex-Vorfilter + Rahmenwerk-Zuordnung + Datum) …
     candidates = []
@@ -345,11 +421,12 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         matched += 1
 
     from .db import utcnow
-    payload = {"generated_at": utcnow(), "updates": updates}
+    payload = {"generated_at": utcnow(), "updates": updates, "praxis": praxis}
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     return {"path": path, "frameworks": len(updates), "updates": matched,
+            "praxis": len(praxis),
             "advisory": advisory, "summarized": summarized,
             "impact_rated": len(impacts),
             "scanned": len(rows), "sources": sources_info["sources"],

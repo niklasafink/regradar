@@ -5,9 +5,10 @@
 // Idempotent: Ein zweiter Klick findet keine neuen Inhalte mehr (Wasserzeichen
 // sind vorgerückt) und verschickt nichts doppelt.
 
-import { verifyApproveToken } from "@/lib/email";
+import { APPROVE_LABEL, verifyApproveToken } from "@/lib/email";
 import { runFwNewsletter } from "@/lib/frameworkNewsletter";
 import { runNewsletter } from "@/lib/newsletter";
+import { runPraxisNewsletter } from "@/lib/praxisNewsletter";
 
 export const maxDuration = 300;
 
@@ -39,8 +40,10 @@ export async function GET(request: Request) {
     const report =
       kind === "updates"
         ? await runNewsletter({ approved: true })
-        : await runFwNewsletter({ approved: true });
-    const label = kind === "updates" ? "Update-Newsletter" : "Rahmenwerk-Newsletter";
+        : kind === "frameworks"
+          ? await runFwNewsletter({ approved: true })
+          : await runPraxisNewsletter({ approved: true });
+    const label = APPROVE_LABEL[kind];
     return page(
       "Versand freigegeben",
       `<p style="font-size:14px;color:#475569">${label}: <strong>${report.sent}</strong> von

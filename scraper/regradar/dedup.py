@@ -111,6 +111,10 @@ def _suppress(conn: sqlite3.Connection, kind: str, cluster: List[dict],
 
 
 def _document_rows(conn: sqlite3.Connection) -> Dict[str, List[dict]]:
+    # NOISE-Dokumente (Einzelfall-Maßnahmen, Warnungen, Events …) erreichen
+    # den Web-Export nie — Dubletten darunter sind keine Rückfrage an den
+    # Betreiber wert und werden komplett ignoriert.
+    from .webexport import NOISE
     groups: Dict[str, List[dict]] = {}
     for r in conn.execute(
             """SELECT d.document_id, d.title, d.summary, d.authority, d.source_id,
@@ -121,6 +125,8 @@ def _document_rows(conn: sqlite3.Connection) -> Dict[str, List[dict]]:
                      (SELECT item_id FROM dedup_suppressed WHERE kind='document')"""):
         key = _norm(r["title"])
         if len(key) < MIN_TITLE_LEN:
+            continue
+        if NOISE.search("{} {}".format(r["title"] or "", r["summary"] or "")):
             continue
         groups.setdefault(key, []).append({
             "id": r["document_id"], "title": r["title"] or "",
@@ -196,7 +202,8 @@ def run(conn: sqlite3.Connection) -> dict:
             manual.append({
                 "group_key": group_key, "kind": kind,
                 "titel": survivors[0]["title"],
-                "eintraege": [{"quelle": s["authority"] or s["source"],
+                "eintraege": [{"id": s["id"],
+                               "quelle": s["authority"] or s["source"],
                                "datum": s["date"], "url": s["url"]}
                               for s in survivors],
             })

@@ -131,6 +131,89 @@ function ProviderMenu() {
   );
 }
 
+/** Dropdown "Fristen & Praxis" im Hauptmenü — Auswahl zwischen offenen
+    Fristen und Aufsichtspraxis-Meldungen, gleiche Mechanik wie ProviderMenu. */
+function DeadlinesPraxisMenu() {
+  const { lang } = useStore();
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: MouseEvent) => {
+      if (!ref.current?.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", close);
+    return () => document.removeEventListener("mousedown", close);
+  }, [open]);
+
+  const items = [
+    { href: "/fristen", label: lang === "de" ? "Fristen" : "Deadlines" },
+    { href: "/praxis", label: lang === "de" ? "Praxis" : "Enforcement" },
+  ];
+  const active = items.find((i) => i.href === pathname);
+
+  return (
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-haspopup="menu"
+        onClick={() => setOpen((v) => !v)}
+        className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
+          active
+            ? "bg-slate-900 text-white"
+            : open
+              ? "bg-slate-100 text-slate-900"
+              : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+        }`}
+      >
+        {active
+          ? active.label
+          : lang === "de" ? "Fristen & Praxis" : "Deadlines & enforcement"}
+        <svg
+          aria-hidden
+          viewBox="0 0 256 256"
+          fill="currentColor"
+          className={`relative top-px size-3 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        >
+          <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z" />
+        </svg>
+      </button>
+      {open && (
+        <div className="absolute left-1/2 top-full z-40 -translate-x-1/2 pt-2">
+          <div
+            role="menu"
+            className="w-56 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-2xl"
+          >
+            {items.map((i) => (
+              <Link
+                key={i.href}
+                role="menuitem"
+                href={i.href}
+                onClick={() => setOpen(false)}
+                className={`flex items-center justify-between gap-3 rounded-full px-3.5 py-2 text-[13px] font-medium transition-colors ${
+                  pathname === i.href
+                    ? "bg-slate-900 text-white"
+                    : "text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+                }`}
+              >
+                {i.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 /** Drei überlappende Portraitfotos für das Kostenlos-Banner */
 function BannerAvatars() {
   return (
@@ -198,16 +281,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
               {lang === "de" ? "Start" : "Home"}
             </Link>
             <ProviderMenu />
-            <Link
-              href="/fristen"
-              className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
-                pathname === "/fristen"
-                  ? "bg-slate-900 text-white"
-                  : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-              }`}
-            >
-              {lang === "de" ? "Fristen" : "Deadlines"}
-            </Link>
+            <DeadlinesPraxisMenu />
             <Link
               href="/updates"
               className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${

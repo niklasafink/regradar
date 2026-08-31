@@ -89,6 +89,34 @@ GROUP_PROMPT = (
     "Jede id genau einmal. Keine Erklärungen."
 )
 
+RECO_PROMPT = (
+    "Du bist der Assistent des Betreibers eines Regulatory-Monitoring-"
+    "Dienstes für Finanzunternehmen und gibst zu jedem Punkt seiner "
+    "Tages-Checkliste eine Empfehlung ab. Punktarten und erlaubte "
+    "Empfehlungen:\n"
+    "- dublette (zwei Einträge mit gleichem Titel und größerem zeitlichem "
+    "Abstand): 'eigenstaendig' (beide behalten), 'dublette-behalte-a' oder "
+    "'dublette-behalte-b' (der jeweils andere Eintrag wird unterdrückt). "
+    "Indizien: gleiche URL-Struktur mit neuem Slug oder neuem Datum im Pfad "
+    "spricht für Neuveröffentlichung desselben Inhalts; aktualisierte "
+    "Listen/Statistiken/Rundschreiben mit neuem Stand sowie anonymisierte "
+    "Einzelmaßnahmen zu verschiedenen Daten sind eigenständig; reine "
+    "Sprachfassungen (en/de) desselben Dokuments sind Dubletten (behalte die "
+    "deutsche bzw. die mit echtem Publikationsdatum).\n"
+    "- rahmenwerk (Vorschlag, ein Regelwerk in die Bibliothek aufzunehmen): "
+    "'aufnehmen' oder 'ignorieren' — Maßstab ist die Compliance-Relevanz "
+    "für Banken, Asset Manager, Wertpapier-/Zahlungsinstitute, Versicherer, "
+    "FinTechs.\n"
+    "- scraper (Big4-/Kanzlei-Thema ohne gescrapte Primärquelle): "
+    "'neue-quelle' (Primärquelle lohnt einen eigenen Scraper), 'abgedeckt' "
+    "(vermutlich doch von bestehenden Quellen abgedeckt) oder 'ignorieren' "
+    "(für die Zielgruppe verzichtbar).\n\n"
+    "Antworte ausschließlich mit einem JSON-Objekt der Form "
+    '{"empfehlungen": [{"id": "d1", "empfehlung": "…", '
+    '"grund": "1 kurzer deutscher Satz"}]}. Jede Punkt-id genau einmal. '
+    "Keine Erklärungen außerhalb des JSON."
+)
+
 FW_GAP_PROMPT = (
     "Du prüfst für einen Regulatory-Monitoring-Dienst für Finanzunternehmen "
     "(Banken, Asset Manager/KVGen, Wertpapierinstitute, Zahlungs- und "
@@ -490,12 +518,92 @@ def _de_date(iso: Optional[str]) -> str:
     return "{}.{}.{}".format(d, m, y)
 
 
+def _recommendations(dedup_cases: List[dict], fw_gaps: List[dict],
+                     groups: List[dict]) -> Dict[str, dict]:
+    """Je Checklisten-Punkt eine LLM-Empfehlung (Entscheidungscode + kurzer
+    Grund). Schlüssel: d1…/f1…/s1… nach Position. Ohne LLM-Antwort leer —
+    die Mail kommt dann ohne Empfehlungszeilen."""
+    items: List[dict] = []
+    for i, c in enumerate(dedup_cases, 1):
+        items.append({
+            "id": "d{}".format(i), "art": "dublette",
+            "titel": _clean(c["titel"], 160),
+            "eintraege": [{"pos": letter, "quelle": e["quelle"],
+                           "datum": e["datum"], "url": e["url"]}
+                          for letter, e in zip("abcdef", c["eintraege"])]})
+    for i, f in enumerate(fw_gaps, 1):
+        items.append({
+            "id": "f{}".format(i), "art": "rahmenwerk", "name": f["name"],
+            "rechtsakt": f["rechtsakt"], "relevanz": f["relevanz"],
+            "begruendung": f["begruendung"]})
+    for i, g in enumerate(groups, 1):
+        items.append({
+            "id": "s{}".format(i), "art": "scraper", "thema": g["thema"],
+            "relevanz": g.get("relevanz") or "",
+            "aktualitaet": g.get("aktualitaet") or "",
+            "beitraege": [_clean(a["title"], 160) for a in g["artikel"]][:6]})
+    if not items:
+        return {}
+    parsed = _chat_json(RECO_PROMPT, {"punkte": items})
+    out: Dict[str, dict] = {}
+    if parsed and isinstance(parsed.get("empfehlungen"), list):
+        for e in parsed["empfehlungen"]:
+            if isinstance(e, dict) and e.get("id"):
+                out[str(e["id"])] = {
+                    "empfehlung": _clean(str(e.get("empfehlung") or ""), 40),
+                    "grund": _clean(str(e.get("grund") or ""), 300)}
+    return out
+
+
+def _esc(text: str) -> str:
+    return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+
 def _render_email(groups: List[dict], fw_gaps: List[dict],
-                  dedup_cases: Optional[List[dict]] = None) -> str:
+                  dedup_cases: Optional[List[dict]] = None,
+                  recos: Optional[Dict[str, dict]] = None) -> str:
+    """Mail als durchnummerierte Prüf-Checkliste mit LLM-Empfehlung je Punkt.
+    Am Ende steht eine Antwortvorlage (Klartext-Block) mit denselben Nummern
+    und allen Details (Quellen, URLs, Begründungen, Empfehlung), die der
+    Betreiber nach VS Code kopieren und je Punkt mit einer Entscheidung
+    beantworten kann — die Entscheidungscodes stehen im Block selbst."""
+    dedup_cases = dedup_cases or []
+    recos = recos or {}
+    nr = 0
+    reply: List[str] = []   # Zeilen der Antwortvorlage
+
+    def add_reco(key: str) -> None:
+        """Empfehlungszeile in HTML und Antwortvorlage einfügen."""
+        r = recos.get(key)
+        if not r or not r["empfehlung"]:
+            return
+        parts.append(
+            '<p style="margin:4px 0 0;font-size:13px">'
+            '&#9755; Empfehlung: <strong>{}</strong>{}</p>'.format(
+                r["empfehlung"],
+                " — {}".format(r["grund"]) if r["grund"] else ""))
+        reply.append("    Empfehlung: {}{}".format(
+            r["empfehlung"],
+            " — {}".format(r["grund"]) if r["grund"] else ""))
+
     parts = [
         '<div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;color:#0f172a">',
         '<p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>',
     ]
+    total = len(dedup_cases) + len(fw_gaps) + len(groups)
+    summary = []
+    if dedup_cases:
+        summary.append("{} unsichere Dublette(n)".format(len(dedup_cases)))
+    if fw_gaps:
+        summary.append("{} Rahmenwerk-Vorschläge".format(len(fw_gaps)))
+    if groups:
+        summary.append("{} Scraper-Kandidat(en)".format(len(groups)))
+    parts.append(
+        '<p style="margin:16px 0"><strong>Checkliste: {} Punkte</strong> — {}. '
+        "Punkte der Reihe nach prüfen; die <strong>Antwortvorlage am Ende</strong> "
+        "nach VS Code kopieren und je Punkt die Entscheidung eintragen.</p>".format(
+            total, ", ".join(summary)))
+
     if dedup_cases:
         parts.append(
             '<p style="margin:20px 0 6px;font-size:16px;font-weight:700">'
@@ -506,33 +614,47 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
             "automatisch unterdrückt und nicht angefragt; die folgenden Fälle "
             "sind <strong>unsicher</strong> — ohne Rückmeldung bleiben beide "
             "Einträge bestehen:</p>")
-        for c in dedup_cases:
+        for i, c in enumerate(dedup_cases, 1):
+            nr += 1
+            kind_label = "Big4-Artikel" if c["kind"] == "big4" else "Meldung"
             parts.append(
-                '<p style="margin:14px 0 2px"><strong>{}</strong> '
+                '<p style="margin:14px 0 2px"><strong>[{}] {}</strong> '
                 '<span style="color:#64748b;font-size:13px">({})</span></p>'.format(
-                    _clean(c["titel"], 160),
-                    "Big4-Artikel" if c["kind"] == "big4" else "Meldung"))
+                    nr, _clean(c["titel"], 160), kind_label))
             parts.append('<ul style="margin:0;padding-left:20px">')
-            for e in c["eintraege"]:
+            reply.append("[{}] DUBLETTE ({}): {}".format(
+                nr, kind_label, _clean(c["titel"], 160)))
+            for letter, e in zip("abcdef", c["eintraege"]):
                 parts.append(
-                    '<li style="margin:2px 0">{quelle}, {datum}: '
+                    '<li style="margin:2px 0">{letter}) {quelle}, {datum}: '
                     '<a href="{url}" style="color:#0f172a">{url}</a></li>'.format(
-                        quelle=e["quelle"], datum=_de_date(e["datum"]) or e["datum"],
-                        url=e["url"]))
+                        letter=letter, quelle=e["quelle"],
+                        datum=_de_date(e["datum"]) or e["datum"], url=e["url"]))
+                reply.append("    {}) {} {} — id {}".format(
+                    letter, e["quelle"], _de_date(e["datum"]) or e["datum"],
+                    e.get("id", "?")))
+                reply.append("       {}".format(e["url"]))
             parts.append("</ul>")
+            add_reco("d{}".format(i))
+            reply.append("    Entscheidung [eigenstaendig | dublette-behalte-a | "
+                         "dublette-behalte-b]: ")
+            reply.append("    Kommentar: ")
+            reply.append("")
+
     if fw_gaps:
         parts.append(
             '<p style="margin:20px 0 6px;font-size:16px;font-weight:700">'
             "Möglicherweise fehlende Rahmenwerke</p>"
             "<p>Neue Meldungen, die keinem Rahmenwerk der Bibliothek zugeordnet "
             "werden konnten, deuten auf folgende Lücken:</p>")
-        for f in fw_gaps:
+        for i, f in enumerate(fw_gaps, 1):
+            nr += 1
             meta = " ".join(x for x in (f["rechtsakt"], "vom {}".format(f["datum"])
                                         if f["datum"] else "") if x)
             parts.append(
-                '<p style="margin:16px 0 4px"><strong>{name}</strong>{meta}'
+                '<p style="margin:16px 0 4px"><strong>[{nr}] {name}</strong>{meta}'
                 '{rel}</p>'.format(
-                    name=f["name"],
+                    nr=nr, name=f["name"],
                     meta=" ({})".format(meta) if meta else "",
                     rel=' — Relevanz: <strong>{}</strong>'.format(f["relevanz"])
                         if f["relevanz"] else ""))
@@ -548,15 +670,32 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
                             date="{}: ".format(_de_date(m["datum"])) if _de_date(m["datum"]) else "",
                             url=m["url"], title=m["titel"]))
                 parts.append("</ul>")
+            reply.append("[{}] RAHMENWERK: {}{}{}".format(
+                nr, f["name"], " ({})".format(meta) if meta else "",
+                " — Relevanz: {}".format(f["relevanz"]) if f["relevanz"] else ""))
+            if f["begruendung"]:
+                reply.append("    Begründung: {}".format(f["begruendung"]))
+            for m in f["meldungen"]:
+                reply.append("    - {}{}".format(
+                    "{}: ".format(_de_date(m["datum"])) if _de_date(m["datum"]) else "",
+                    m["titel"]))
+                reply.append("      {}".format(m["url"]))
+            add_reco("f{}".format(i))
+            reply.append("    Entscheidung [aufnehmen | ignorieren]: ")
+            reply.append("    Kommentar: ")
+            reply.append("")
+
     if groups:
         parts.append(
             '<p style="margin:24px 0 6px;font-size:16px;font-weight:700">'
             "Big-4-/Kanzlei-Beiträge ohne Primärquelle</p>"
             "<p>Beiträge zu Themen, zu denen <strong>keine gescrapte "
             "Primärquelle</strong> vorliegt — Kandidaten für einen neuen Scraper:</p>")
-    for g in groups:
+    for i, g in enumerate(groups, 1):
+        nr += 1
         parts.append(
-            '<p style="margin:20px 0 2px;font-weight:600">{}</p>'.format(g["thema"]))
+            '<p style="margin:20px 0 2px;font-weight:600">[{}] {}</p>'.format(
+                nr, g["thema"]))
         assess = []
         if g.get("relevanz"):
             assess.append("Relevanz: <strong>{}</strong>".format(g["relevanz"]))
@@ -579,6 +718,47 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
                     url=a["url"],
                     title=_clean(a["title"], 200)))
         parts.append("</ul>")
+        reply.append("[{}] SCRAPER-KANDIDAT: {}{}".format(
+            nr, g["thema"],
+            " — Relevanz: {}".format(g["relevanz"]) if g.get("relevanz") else ""))
+        if g.get("aktualitaet"):
+            reply.append("    Aktualität: {}".format(g["aktualitaet"]))
+        if g.get("rahmenwerk"):
+            reply.append("    mögliches fehlendes Rahmenwerk: {}".format(
+                g["rahmenwerk"]))
+        for a in g["artikel"]:
+            date = _de_date(a["published"])
+            reply.append("    - {}{}: {}".format(
+                a["firm"], ", {}".format(date) if date else "",
+                _clean(a["title"], 160)))
+            reply.append("      {}".format(a["url"]))
+        add_reco("s{}".format(i))
+        reply.append("    Entscheidung [neue-quelle | abgedeckt | ignorieren]: ")
+        reply.append("    Kommentar: ")
+        reply.append("")
+
+    if reply:
+        template = "\n".join(
+            ["=== RADAR-CHECKLISTE {} — ANTWORTVORLAGE ===".format(utcnow()[:10]),
+             "Die Empfehlung je Punkt ist ein LLM-Vorschlag — die Entscheidung",
+             "liegt bei dir (Empfehlung übernehmen oder überstimmen).",
+             "Entscheidungscodes:",
+             "  Dublette:  eigenstaendig (beide behalten) | "
+             "dublette-behalte-a | dublette-behalte-b",
+             "  Rahmenwerk: aufnehmen | ignorieren",
+             "  Scraper:   neue-quelle | abgedeckt | ignorieren",
+             ""] + reply)
+        parts.append(
+            '<p style="margin:24px 0 6px;font-size:16px;font-weight:700">'
+            "Antwortvorlage</p>"
+            "<p>Block kopieren, in VS Code je Punkt die Entscheidung eintragen "
+            "und zurückschicken bzw. Claude Code übergeben:</p>")
+        parts.append(
+            '<pre style="background:#f1f5f9;padding:16px;border-radius:8px;'
+            'font-size:12px;line-height:1.5;white-space:pre-wrap;'
+            'font-family:ui-monospace,Menlo,monospace">{}</pre>'.format(
+                _esc(template)))
+
     parts.append(
         '<p style="color:#64748b;font-size:13px;margin-top:24px">Streng geprüft '
         "gegen die gescrapten Dokumente der letzten {} Tage; jeder Beitrag und "
@@ -642,7 +822,8 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
     if dedup_cases:
         bits.append("{} unsichere Dublette(n)".format(len(dedup_cases)))
     subject = "Radar-Lücke: " + ", ".join(bits)
-    err = _send_email(subject, _render_email(groups, fw_gaps, dedup_cases))
+    recos = _recommendations(dedup_cases, fw_gaps, groups)
+    err = _send_email(subject, _render_email(groups, fw_gaps, dedup_cases, recos))
     if err:
         # Nichts als gemeldet markieren — nächster Lauf versucht es erneut.
         return {"status": "Mail fehlgeschlagen: {}".format(err), "gaps": len(gaps)}

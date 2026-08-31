@@ -1,5 +1,17 @@
-import { verifyUnsubToken } from "@/lib/email";
+import { sendUnsubscribeNotification, verifyUnsubToken } from "@/lib/email";
 import { removeSubscriber } from "@/lib/subscribers";
+
+// Nach erfolgreicher Abmeldung (nur wenn wirklich ein Eintrag gelöscht wurde,
+// nicht bei wiederholten Klicks) den Betreiber informieren — die Mail enthält
+// die Erinnerung, das DataFast-Profil manuell zu löschen. Fehler beim
+// Mailversand dürfen die Abmeldung selbst nie scheitern lassen.
+async function notify(email: string) {
+  try {
+    await sendUnsubscribeNotification(email);
+  } catch (err) {
+    console.error("unsubscribe notification failed", err);
+  }
+}
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
@@ -10,7 +22,8 @@ export async function GET(request: Request) {
   if (!email) {
     return Response.redirect(`${base}/?abo=invalid`, 302);
   }
-  await removeSubscriber(email);
+  const removed = await removeSubscriber(email);
+  if (removed) await notify(email);
   return Response.redirect(`${base}/?abo=off`, 302);
 }
 
@@ -22,6 +35,7 @@ export async function POST(request: Request) {
   if (!email) {
     return new Response("invalid token", { status: 400 });
   }
-  await removeSubscriber(email);
+  const removed = await removeSubscriber(email);
+  if (removed) await notify(email);
   return new Response("unsubscribed", { status: 200 });
 }

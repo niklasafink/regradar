@@ -95,17 +95,30 @@ export function renderFwNewsletter(
   unsubUrl: string,
   base: string,
 ): { html: string; text: string } {
+  const heading = [
+    frameworks.length > 0
+      ? `${frameworks.length} ${frameworks.length === 1 ? "Rahmenwerk" : "Rahmenwerke"}`
+      : "",
+    sources.length > 0
+      ? `${sources.length} ${sources.length === 1 ? "Quelle" : "Quellen"}`
+      : "",
+  ].filter(Boolean).join(" und ");
+
   const intro =
-    "Wir erweitern die Datenbank von Regulatory Radar laufend um weitere " +
-    "Gesetze, Normen und Primärquellen — auch um bereits geltende Regelwerke, " +
-    "die bisher nicht abgedeckt waren. Diese E-Mail fasst einmal pro Woche " +
-    "zusammen, was seit Ihrer letzten Benachrichtigung neu hinzugekommen ist.";
+    `Wir haben die Datenbank von Regulatory Radar um ${heading} erweitert.`;
+
+  const pill = (label: string): string =>
+    `<span style="display:inline-block;border:1px solid #e2e8f0;border-radius:9999px;padding:1px 10px;font-size:11px;color:#334155;margin:0 4px 4px 0">${esc(label)}</span>`;
+
+  /** Zielgruppen eines Rahmenwerks (Anbietertypen) als Anzeigenamen. */
+  const audiences = (fw: Framework): string[] =>
+    PROVIDERS.filter((p) => fw.ents.includes(p.id)).map((p) => p.n.de);
 
   const fwItems = frameworks
     .map((fw) => `
       <tr><td style="padding:20px 0;border-bottom:1px solid #f1f5f9">
         <p style="margin:0 0 6px;font-size:12px;color:#64748b">
-          <span style="display:inline-block;border:1px solid #e2e8f0;border-radius:9999px;padding:1px 10px;font-size:11px;color:#334155">${esc(JUR_LABEL[fw.jur])}</span> &nbsp;
+          ${pill(JUR_LABEL[fw.jur])}${audiences(fw).map(pill).join("")} &nbsp;
           <span class="num">${esc(fw.ref)}</span>
         </p>
         <p style="margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35">
@@ -127,15 +140,6 @@ export function renderFwNewsletter(
       </td></tr>`)
     .join("");
 
-  const heading = [
-    frameworks.length > 0
-      ? `${frameworks.length} ${frameworks.length === 1 ? "neues Rahmenwerk" : "neue Rahmenwerke"}`
-      : "",
-    sources.length > 0
-      ? `${sources.length} ${sources.length === 1 ? "neue Quelle" : "neue Quellen"}`
-      : "",
-  ].filter(Boolean).join(" und ");
-
   const text = [
     "regulatoryradar",
     "",
@@ -143,14 +147,15 @@ export function renderFwNewsletter(
     "",
     intro,
     "",
-    ...(frameworks.length > 0 ? ["NEUE RAHMENWERKE", ""] : []),
+    ...(frameworks.length > 0 ? ["Neue Rahmenwerke", ""] : []),
     ...frameworks.flatMap((fw) => [
       `${fw.n.de} (${fw.ref}, ${JUR_LABEL[fw.jur]})`,
+      `Relevant für: ${audiences(fw).join(", ")}`,
       fw.about.de,
       frameworkHref(fw, base),
       "",
     ]),
-    ...(sources.length > 0 ? ["NEUE QUELLEN", ""] : []),
+    ...(sources.length > 0 ? ["Neue Quellen", ""] : []),
     ...sources.flatMap((s) => [
       `${s.name} — ${s.authority}, ${JURISDICTION_LABEL[s.jurisdiction].de}`,
       s.url,
@@ -162,6 +167,7 @@ export function renderFwNewsletter(
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
     `Abmelden: ${unsubUrl}`,
     `Impressum: ${base}/impressum`,
+    `Datenschutz: ${base}/datenschutz`,
   ].join("\n");
 
   const html = `
@@ -169,16 +175,16 @@ export function renderFwNewsletter(
   <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;max-width:560px;margin:0 auto;color:#0f172a">
     <p style="margin:0 0 28px;font-size:18px"><strong>regulatory</strong><em style="font-weight:300">radar</em></p>
     <h1 style="margin:0 0 8px;font-size:26px;font-weight:500;letter-spacing:-0.02em;line-height:1.15">
-      Neu in der Datenbank: ${esc(heading)}
+      Neu: ${esc(heading)}
     </h1>
     <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#64748b">${esc(intro)}</p>
     ${frameworks.length > 0 ? `
-    <p style="margin:24px 0 0;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#94a3b8">Neue Rahmenwerke</p>
+    <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Rahmenwerke</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
       ${fwItems}
     </table>` : ""}
     ${sources.length > 0 ? `
-    <p style="margin:24px 0 0;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#94a3b8">Neue Quellen</p>
+    <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Quellen</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
       ${srcItems}
     </table>` : ""}
@@ -270,8 +276,8 @@ export async function runFwNewsletter(opts: {
     const srcs = [...pendingSrc.values()];
     const { html } = renderFwNewsletter(fws, srcs, `${base}/api/unsubscribe?token=preview`, base);
     const summary = [
-      fws.length > 0 ? `${fws.length} ${fws.length === 1 ? "neues Rahmenwerk" : "neue Rahmenwerke"}` : "",
-      srcs.length > 0 ? `${srcs.length} ${srcs.length === 1 ? "neue Quelle" : "neue Quellen"}` : "",
+      fws.length > 0 ? `${fws.length} ${fws.length === 1 ? "Rahmenwerk" : "Rahmenwerke"}` : "",
+      srcs.length > 0 ? `${srcs.length} ${srcs.length === 1 ? "Quelle" : "Quellen"}` : "",
     ].filter(Boolean).join(", ");
     await sendApprovalRequest("frameworks", `${summary} für ${subs.length} Empfänger`, html);
     report.pendingApproval = true;
@@ -305,10 +311,10 @@ export async function runFwNewsletter(opts: {
     const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
     const parts = [
       freshFw.length > 0
-        ? `${freshFw.length} ${freshFw.length === 1 ? "neues Rahmenwerk" : "neue Rahmenwerke"}`
+        ? `${freshFw.length} ${freshFw.length === 1 ? "Rahmenwerk" : "Rahmenwerke"}`
         : "",
       freshSrc.length > 0
-        ? `${freshSrc.length} ${freshSrc.length === 1 ? "neue Quelle" : "neue Quellen"}`
+        ? `${freshSrc.length} ${freshSrc.length === 1 ? "Quelle" : "Quellen"}`
         : "",
     ].filter(Boolean).join(", ");
     const subject = `Neu in der Datenbank: ${parts}`;

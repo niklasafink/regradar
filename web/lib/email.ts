@@ -48,7 +48,13 @@ export function verifyToken(token: string): SubscribePayload | null {
 // eine Vorschau an den Betreiber; erst der Klick auf den Freigabe-Link (mit
 // diesem Token) löst den Versand an den Verteiler aus. 7 Tage gültig, damit
 // eine Montagsmail auch später in der Woche noch freigegeben werden kann.
-export type ApproveKind = "updates" | "frameworks";
+export type ApproveKind = "updates" | "frameworks" | "praxis";
+
+export const APPROVE_LABEL: Record<ApproveKind, string> = {
+  updates: "Update-Newsletter",
+  frameworks: "Rahmenwerk-Newsletter",
+  praxis: "Praxis-Newsletter",
+};
 const APPROVE_TTL_MS = 1000 * 60 * 60 * 24 * 7;
 
 export function createApproveToken(kind: ApproveKind): string {
@@ -71,7 +77,9 @@ export function verifyApproveToken(token: string): ApproveKind | null {
       exp?: number;
     };
     if (data.act !== "nl-approve" || Date.now() > (data.exp ?? 0)) return null;
-    return data.kind === "updates" || data.kind === "frameworks" ? data.kind : null;
+    return data.kind === "updates" || data.kind === "frameworks" || data.kind === "praxis"
+      ? data.kind
+      : null;
   } catch {
     return null;
   }
@@ -100,7 +108,7 @@ export async function sendApprovalRequest(
   const approveUrl = `${base}/api/newsletter/approve?token=${encodeURIComponent(
     createApproveToken(kind),
   )}`;
-  const label = kind === "updates" ? "Update-Newsletter" : "Rahmenwerk-Newsletter";
+  const label = APPROVE_LABEL[kind];
 
   const { error } = await resend.emails.send({
     from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
@@ -197,7 +205,10 @@ bitte bestätigen Sie mit einem Klick, dass wir Sie kostenlos per E-Mail über n
 
 ${confirmUrl}
 
-Der Link ist 48 Stunden gültig. Wenn Sie diese E-Mail nicht angefordert haben, ignorieren Sie sie einfach — es wird nichts gespeichert.`,
+Der Link ist 48 Stunden gültig. Wenn Sie diese E-Mail nicht angefordert haben, ignorieren Sie sie einfach — es wird nichts gespeichert.
+
+Impressum: ${base}/impressum
+Datenschutz: ${base}/datenschutz`,
     html: `
       <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
         <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
@@ -212,6 +223,10 @@ Der Link ist 48 Stunden gültig. Wenn Sie diese E-Mail nicht angefordert haben, 
         <p style="color:#64748b;font-size:13px">Der Link ist 48 Stunden gültig.
         Wenn Sie diese E-Mail nicht angefordert haben, ignorieren Sie sie einfach —
         es wird nichts gespeichert.</p>
+        <p style="margin:24px 0 0;padding-top:12px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8">
+          <a href="${base}/impressum" style="color:#64748b">Impressum</a> &nbsp;
+          <a href="${base}/datenschutz" style="color:#64748b">Datenschutz</a>
+        </p>
       </div>`,
   });
   if (error) throw new Error(error.message);
@@ -236,6 +251,31 @@ const NOTIFY_TEXT = {
     line: "Bestehender Abonnent hat neue Quellen hinzugefügt",
   },
 } as const;
+
+/** Interne Mail an den Betreiber nach einer Abmeldung. Bewusst ohne
+    Löschpflicht-Details in der Mail; Hintergrund: Der Upstash-Eintrag ist zu
+    diesem Zeitpunkt bereits gelöscht, das DataFast-Profil muss separat
+    manuell entfernt werden (kein API-Delete). */
+export async function sendUnsubscribeNotification(subscriberEmail: string) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return;
+  const resend = new Resend(apiKey);
+  const to = process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de";
+
+  const { error } = await resend.emails.send({
+    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    to,
+    subject: `Abmeldung: ${subscriberEmail}`,
+    html: `
+      <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
+        <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
+        <p>Newsletter-Abmeldung:</p>
+        <p><strong>${subscriberEmail}</strong></p>
+        <p style="color:#64748b;font-size:13px">${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })} Uhr</p>
+      </div>`,
+  });
+  if (error) throw new Error(error.message);
+}
 
 export async function sendSubscriberNotification(
   subscriberEmail: string,

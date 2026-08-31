@@ -190,6 +190,7 @@ export function renderNewsletter(
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
     `Abmelden: ${unsubUrl}`,
     `Impressum: ${base}/impressum`,
+    `Datenschutz: ${base}/datenschutz`,
   ].join("\n");
 
   const html = `
