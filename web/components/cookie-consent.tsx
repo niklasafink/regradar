@@ -7,14 +7,17 @@ import { useStore } from "@/lib/store";
 /**
  * Cookie-/Consent-Banner nach Vorbild vergabehero.eu (Karte unten rechts).
  *
- * Notwendige Technik (Hosting, Sprachwahl) läuft immer. DataFast (setzt einen
- * Visitor-Cookie, 12 Monate) und Google Analytics laden erst nach Einwilligung;
- * GA zusätzlich nur, wenn NEXT_PUBLIC_GA_ID gesetzt ist. Goal-/Identify-Aufrufe
- * vor der Einwilligung puffert die Queue aus layout.tsx.
+ * Notwendige Technik (Hosting, Sprachwahl) und die anonyme DataFast-
+ * Reichweitenmessung (lädt in layout.tsx) laufen immer. Die Analyse-
+ * Einwilligung steuert zweierlei: Google Analytics (nur wenn
+ * NEXT_PUBLIC_GA_ID gesetzt) und ob personenbezogene Daten wie die
+ * Newsletter-E-Mail an DataFast gesendet werden dürfen (identify-Guard
+ * in lib/track.ts über hasAnalyticsConsent).
  */
 
 const STORAGE_KEY = "rr.consent";
 const OPEN_EVENT = "rr-consent-open";
+const GRANT_EVENT = "rr-consent-granted";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 type Consent = { v: 1; analytics: boolean; ts: string };
@@ -38,19 +41,6 @@ function writeConsent(analytics: boolean): Consent {
   return c;
 }
 
-let dataFastLoaded = false;
-
-function loadDataFast() {
-  if (dataFastLoaded || typeof document === "undefined") return;
-  dataFastLoaded = true;
-  const s = document.createElement("script");
-  s.defer = true;
-  s.src = "https://datafa.st/js/script.js";
-  s.setAttribute("data-website-id", "dfid_7B0yBIFRvLP0qQU8RjMFI");
-  s.setAttribute("data-domain", "regradar.de");
-  document.head.appendChild(s);
-}
-
 let gaLoaded = false;
 
 function loadGoogleAnalytics() {
@@ -68,6 +58,21 @@ function loadGoogleAnalytics() {
     `gtag('config','${GA_ID}',{anonymize_ip:true});`,
   ].join("");
   document.head.appendChild(inline);
+}
+
+/** Liegt aktuell eine Analyse-Einwilligung vor? (z. B. Guard für identify) */
+export function hasAnalyticsConsent(): boolean {
+  if (typeof window === "undefined") return false;
+  return readConsent()?.analytics === true;
+}
+
+/** Erteilt die Analyse-Einwilligung programmatisch — etwa beim Newsletter-
+    Abonnieren, wo der Klick als Einwilligung gilt (überschreibt auch eine
+    frühere Ablehnung). Schließt einen ggf. offenen Banner. */
+export function grantAnalyticsConsent() {
+  writeConsent(true);
+  loadGoogleAnalytics();
+  window.dispatchEvent(new Event(GRANT_EVENT));
 }
 
 /** Öffnet den Banner erneut, z. B. aus Footer oder Datenschutzerklärung. */
@@ -101,7 +106,6 @@ export function CookieConsent() {
     if (!stored) {
       setVisible(true);
     } else if (stored.analytics) {
-      loadDataFast();
       loadGoogleAnalytics();
     }
     const open = () => {
@@ -109,14 +113,21 @@ export function CookieConsent() {
       setSettings(true);
       setVisible(true);
     };
+    const granted = () => {
+      setVisible(false);
+      setSettings(false);
+    };
     window.addEventListener(OPEN_EVENT, open);
-    return () => window.removeEventListener(OPEN_EVENT, open);
+    window.addEventListener(GRANT_EVENT, granted);
+    return () => {
+      window.removeEventListener(OPEN_EVENT, open);
+      window.removeEventListener(GRANT_EVENT, granted);
+    };
   }, []);
 
   const decide = (allowAnalytics: boolean) => {
     writeConsent(allowAnalytics);
     if (allowAnalytics) {
-      loadDataFast();
       loadGoogleAnalytics();
     }
     setVisible(false);
@@ -136,8 +147,8 @@ export function CookieConsent() {
       </p>
       <p className="mt-2 text-[13px] leading-relaxed text-slate-600">
         {de
-          ? "Wir verwenden Cookies, um die Grundfunktionen der Website sicherzustellen. Mit Ihrer Einwilligung setzen wir zusätzlich Analyse-Cookies, um die Nutzung auszuwerten und unser Angebot zu verbessern."
-          : "We use cookies to ensure the basic functions of this website. With your consent, we also set analytics cookies to evaluate usage and improve our service."}
+          ? "Wir verwenden notwendige Cookies für die Grundfunktionen der Website und messen die Nutzung anonym. Mit Ihrer Einwilligung setzen wir zusätzlich Analyse-Cookies und dürfen Ihre Nutzungsdaten mit Ihrer E-Mail-Adresse verknüpfen, z. B. bei der Newsletter-Anmeldung."
+          : "We use necessary cookies for the basic functions of this website and measure usage anonymously. With your consent, we also set analytics cookies and may link your usage data with your email address, e.g. when you sign up for the newsletter."}
       </p>
 
       {settings && (
@@ -167,8 +178,8 @@ export function CookieConsent() {
               </span>
               {" — "}
               {de
-                ? "DataFast und Google Analytics zur Nutzungsanalyse. DataFast setzt einen Wiedererkennungs-Cookie (Laufzeit 12 Monate)."
-                : "DataFast and Google Analytics for usage analysis. DataFast sets a recognition cookie (12-month lifetime)."}
+                ? "Google Analytics zur Nutzungsanalyse sowie die Verknüpfung Ihrer Nutzungsdaten mit Ihrer E-Mail-Adresse in DataFast (z. B. bei Newsletter-Anmeldung)."
+                : "Google Analytics for usage analysis, and linking your usage data with your email address in DataFast (e.g. on newsletter sign-up)."}
             </span>
           </label>
         </div>

@@ -32,14 +32,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de">
       <body className={`${inter.variable} ${manrope.variable} ${instrumentSerif.variable} font-sans`}>
-        {/* DataFast-Queue: puffert Goal-/Identify-Aufrufe, bis das Script nach
-            Einwilligung (CookieConsent) geladen wird — ohne Consent lädt nichts */}
+        {/* DataFast-Queue: puffert Goal-/Identify-Aufrufe, bis das Script geladen ist */}
         <script
           id="datafast-queue"
           dangerouslySetInnerHTML={{
             __html:
               "window.datafast=window.datafast||function(){window.datafast.q=window.datafast.q||[];window.datafast.q.push(arguments);};",
           }}
+        />
+        {/* Anonyme Reichweitenmessung läuft für alle Besucher (einwilligungsfrei).
+            Personenbezogenes (identify mit E-Mail) sendet track.ts nur nach
+            Analyse-Einwilligung aus dem CookieConsent-Banner. */}
+        <script
+          defer
+          src="https://datafa.st/js/script.js"
+          data-website-id="dfid_7B0yBIFRvLP0qQU8RjMFI"
+          data-domain="regradar.de"
         />
         <StoreProvider>
           {children}

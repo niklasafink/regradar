@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { PROVIDERS } from "@/lib/data";
 import { PROVIDER_SHORT, tx } from "@/lib/logic";
 import { useStore } from "@/lib/store";
+import { grantAnalyticsConsent } from "@/components/cookie-consent";
 import { identify, track } from "@/lib/track";
 
 type Status = "idle" | "sending" | "sent" | "confirmed" | "unsubscribed" | "error";
@@ -93,7 +94,9 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         body: JSON.stringify({ email, providers }),
       });
       if (res.ok) {
-        // Besucher-Profil mit der Newsletter-E-Mail verknüpfen (Journey-Tracking)
+        // Der Abonnieren-Klick gilt (per Hinweis unterm Formular) als Analyse-
+        // Einwilligung — erst erteilen, dann identify (Guard liest den Consent).
+        grantAnalyticsConsent();
         identify(email.trim().toLowerCase(), { source: "newsletter" });
         track("newsletter_submitted", { provider: providers.join(",") });
         setStatus("sent");
@@ -178,21 +181,19 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
           <p className="mt-2 text-xs text-slate-400">
             {lang === "de" ? (
               <>
-                Abmeldung jederzeit möglich. Sofern Sie Analyse-Cookies erlaubt haben, verknüpfen
-                wir Ihre E-Mail-Adresse mit Ihren Nutzungsdaten. Details in der{" "}
+                Mit dem Abonnieren stimmen Sie der Verwendung von Analyse-Cookies zu (
                 <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
                   Datenschutzerklärung
                 </a>
-                .
+                ).
               </>
             ) : (
               <>
-                Unsubscribe anytime. If you have allowed analytics cookies, we link your email
-                address with your usage data. See our{" "}
+                By subscribing you agree to the use of analytics cookies (
                 <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
                   privacy policy
-                </a>{" "}
-                for details.
+                </a>
+                ).
               </>
             )}
           </p>
