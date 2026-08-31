@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Chrome, SlimFooter } from "@/components/chrome";
+import { ConsentSettingsLink } from "@/components/cookie-consent";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung · Regulatory Radar",
@@ -64,22 +65,84 @@ export default function Datenschutz() {
           <section>
             <h2>2. Hosting</h2>
             <p>
-              Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser
-              Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann
-              es sich vor allem um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten und
-              sonstige Daten handeln, die über eine Website generiert werden.
+              Diese Website wird bei Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA,
+              gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden
+              auf den Servern des Hosters verarbeitet. Hierbei kann es sich vor allem um
+              IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten und sonstige Daten
+              handeln, die über eine Website generiert werden.
             </p>
             <p>
               Das externe Hosting erfolgt zum Zweck der Vertragserfüllung gegenüber unseren
               potenziellen und bestehenden Nutzern nach Art. 6 Abs. 1 lit. b DSGVO und im
               Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres
               Online-Angebots durch einen professionellen Anbieter nach Art. 6 Abs. 1 lit. f
-              DSGVO.
+              DSGVO. Wir haben mit Vercel einen Vertrag über Auftragsverarbeitung nach Art. 28
+              DSGVO geschlossen. Die Übermittlung von Daten in die USA stützt sich auf die
+              Standardvertragsklauseln der EU-Kommission sowie auf die Zertifizierung von Vercel
+              unter dem EU-US Data Privacy Framework.
             </p>
           </section>
 
           <section>
-            <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
+            <h2>3. Cookies und Analyse-Tools</h2>
+
+            <h3>Cookies und Einwilligung</h3>
+            <p>
+              Diese Website verwendet technisch notwendige Speichertechnologien (etwa für die
+              Sprachauswahl und das Speichern Ihrer Cookie-Einstellung im lokalen Speicher Ihres
+              Browsers). Diese sind für den Betrieb der Website erforderlich; Rechtsgrundlage ist
+              § 25 Abs. 2 TDDDG sowie Art. 6 Abs. 1 lit. f DSGVO.
+            </p>
+            <p>
+              Darüber hinausgehende Analyse-Cookies setzen wir nur mit Ihrer Einwilligung nach
+              § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO, die Sie über unseren
+              Cookie-Banner erteilen. Sie können Ihre Einwilligung jederzeit mit Wirkung für die
+              Zukunft widerrufen oder anpassen: <ConsentSettingsLink className="underline underline-offset-2" />
+            </p>
+
+            <h3>DataFast (Webanalyse ohne Cookies)</h3>
+            <p>
+              Wir nutzen den Analysedienst DataFast (datafa.st), um die Nutzung unserer Website
+              statistisch auszuwerten (z.&nbsp;B. aufgerufene Seiten, Herkunftsland, verwendeter
+              Browser). DataFast arbeitet ohne Cookies und ohne dauerhafte Kennungen im Endgerät;
+              IP-Adressen werden nicht dauerhaft gespeichert, die Auswertung erfolgt aggregiert
+              und lässt keine Identifizierung einzelner Besucher zu. Rechtsgrundlage ist unser
+              berechtigtes Interesse an der Analyse und Verbesserung unseres Angebots nach Art. 6
+              Abs. 1 lit. f DSGVO.
+            </p>
+
+            <h3>Google Analytics</h3>
+            <p>
+              Sofern Sie darin eingewilligt haben, nutzt diese Website Google Analytics, einen
+              Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4,
+              Irland. Google Analytics verwendet Cookies und ähnliche Technologien, die eine
+              Analyse Ihrer Nutzung der Website ermöglichen. Die dabei erzeugten Informationen
+              werden in der Regel an Server von Google übertragen und dort verarbeitet; dabei
+              kann es auch zu einer Übermittlung in die USA kommen. Google LLC ist unter dem
+              EU-US Data Privacy Framework zertifiziert; ergänzend gelten die
+              Standardvertragsklauseln der EU-Kommission. Die IP-Adresse wird vor der
+              Verarbeitung gekürzt (IP-Anonymisierung).
+            </p>
+            <p>
+              Rechtsgrundlage ist ausschließlich Ihre Einwilligung nach Art. 6 Abs. 1 lit. a
+              DSGVO und § 25 Abs. 1 TDDDG. Ohne Einwilligung wird Google Analytics nicht geladen.
+              Sie können Ihre Einwilligung jederzeit über die{" "}
+              <ConsentSettingsLink className="underline underline-offset-2" /> widerrufen.
+              Weitere Informationen finden Sie in der Datenschutzerklärung von Google:{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-slate-900"
+              >
+                https://policies.google.com/privacy
+              </a>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2>4. Allgemeine Hinweise und Pflichtinformationen</h2>
 
             <h3>Datenschutz</h3>
             <p>
@@ -121,7 +184,7 @@ export default function Datenschutz() {
           </section>
 
           <section>
-            <h2>4. Ihre Rechte</h2>
+            <h2>5. Ihre Rechte</h2>
 
             <h3>Auskunft, Berichtigung und Löschung</h3>
             <p>
@@ -155,7 +218,7 @@ export default function Datenschutz() {
           </section>
 
           <section>
-            <h2>5. Newsletter und Kontakt</h2>
+            <h2>6. Newsletter und Kontakt</h2>
 
             <h3>E-Mail-Newsletter</h3>
             <p>
@@ -166,6 +229,12 @@ export default function Datenschutz() {
               Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung nach Art. 6 Abs. 1 lit. a
               DSGVO. Sie können den Newsletter jederzeit über den Abmeldelink in jeder E-Mail oder
               per Nachricht an uns abbestellen; Ihre E-Mail-Adresse wird danach gelöscht.
+            </p>
+            <p>
+              Für den Versand nutzen wir den Dienstleister Resend (Resend, Inc., 2261 Market
+              Street #5039, San Francisco, CA 94114, USA) auf Grundlage eines Vertrags über
+              Auftragsverarbeitung nach Art. 28 DSGVO. Die Übermittlung in die USA stützt sich
+              auf die Standardvertragsklauseln der EU-Kommission.
             </p>
 
             <h3>Kontaktanfragen</h3>

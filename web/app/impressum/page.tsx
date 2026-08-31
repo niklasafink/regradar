@@ -34,6 +34,17 @@ export default function Impressum() {
           </section>
 
           <section>
+            <h2>Registereintrag</h2>
+            <p>
+              Registergericht: Amtsgericht Walsrode
+              <br />
+              Registernummer: HRB 212113
+              <br />
+              EUID: DEP2716.HRB212113
+            </p>
+          </section>
+
+          <section>
             <h2>Kontakt</h2>
             <p>
               E-Mail:{" "}
@@ -51,23 +62,6 @@ export default function Impressum() {
               Auf der Heidwende 7
               <br />
               27726 Worpswede
-            </p>
-          </section>
-
-          <section>
-            <h2>EU-Streitschlichtung</h2>
-            <p>
-              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS)
-              bereit:{" "}
-              <a
-                href="https://ec.europa.eu/consumers/odr/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-slate-900"
-              >
-                https://ec.europa.eu/consumers/odr/
-              </a>
-              . Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
           </section>
 

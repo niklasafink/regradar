@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { ConsentSettingsLink } from "@/components/cookie-consent";
 import { PROVIDERS } from "@/lib/data";
 import { providerById, tx } from "@/lib/logic";
 import { SOURCES } from "@/lib/sources";
@@ -306,6 +307,7 @@ export function Footer() {
             <Link href="/impressum" className="hover:text-slate-900">
               {lang === "de" ? "Impressum" : "Legal notice"}
             </Link>
+            <ConsentSettingsLink />
           </span>
         </div>
       </div>
@@ -341,6 +343,7 @@ export function SlimFooter() {
           <Link href="/impressum" className="hover:text-slate-900">
             {lang === "de" ? "Impressum" : "Legal notice"}
           </Link>
+          <ConsentSettingsLink />
         </span>
         </div>
       </div>

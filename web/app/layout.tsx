@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, Manrope } from "next/font/google";
 import Script from "next/script";
+import { CookieConsent } from "@/components/cookie-consent";
 import { StoreProvider } from "@/lib/store";
 import "./globals.css";
 
@@ -40,7 +41,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "window.datafast=window.datafast||function(){window.datafast.q=window.datafast.q||[];window.datafast.q.push(arguments);};",
           }}
         />
-        <StoreProvider>{children}</StoreProvider>
+        <StoreProvider>
+          {children}
+          <CookieConsent />
+        </StoreProvider>
         <Script
           defer
           data-website-id="dfid_7B0yBIFRvLP0qQU8RjMFI"

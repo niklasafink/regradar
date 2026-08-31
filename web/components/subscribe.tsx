@@ -93,7 +93,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         body: JSON.stringify({ email, providers }),
       });
       if (res.ok) {
-        track("newsletter_submitted", { email, provider: providers.join(",") });
+        // Keine E-Mail-Adresse an Analytics übergeben (personenbezogene Daten)
+        track("newsletter_submitted", { provider: providers.join(",") });
         setStatus("sent");
         setModalOpen(false);
         return;
@@ -173,6 +174,26 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 : lang === "de" ? "Abonnieren" : "Subscribe"}
             </button>
           </div>
+          <p className="mt-2 text-xs text-slate-400">
+            {lang === "de" ? (
+              <>
+                Abmeldung jederzeit möglich. Hinweise zur Verarbeitung Ihrer Daten finden Sie in
+                der{" "}
+                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
+                  Datenschutzerklärung
+                </a>
+                .
+              </>
+            ) : (
+              <>
+                Unsubscribe anytime. See our{" "}
+                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
+                  privacy policy
+                </a>{" "}
+                for details on how we process your data.
+              </>
+            )}
+          </p>
         </form>
       )}
 
