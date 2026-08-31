@@ -13,9 +13,17 @@ export type Subscriber = {
   // Updates, die das System NACH max(confirmedAt, lastNotifiedAt) zum
   // ersten Mal gesehen hat.
   lastNotifiedAt?: string;
+  // Gleiches Wasserzeichen für den wöchentlichen "Neu in der Datenbank"-
+  // Newsletter (neue Rahmenwerke/Quellen), getrennt vom Update-Versand.
+  lastFwNotifiedAt?: string;
 };
 
-type Stored = { providers: string[]; confirmedAt: string; lastNotifiedAt?: string };
+type Stored = {
+  providers: string[];
+  confirmedAt: string;
+  lastNotifiedAt?: string;
+  lastFwNotifiedAt?: string;
+};
 
 const KEY = "subs";
 
@@ -52,6 +60,7 @@ export async function addSubscriber(
       providers: [...providers],
       confirmedAt: existing?.confirmedAt ?? new Date().toISOString(),
       ...(existing?.lastNotifiedAt ? { lastNotifiedAt: existing.lastNotifiedAt } : {}),
+      ...(existing?.lastFwNotifiedAt ? { lastFwNotifiedAt: existing.lastFwNotifiedAt } : {}),
     } satisfies Stored,
   });
   return existing ? "expanded" : "new";
@@ -70,6 +79,7 @@ export async function listSubscribers(): Promise<Subscriber[]> {
     providers: s.providers ?? [],
     confirmedAt: s.confirmedAt,
     lastNotifiedAt: s.lastNotifiedAt,
+    lastFwNotifiedAt: s.lastFwNotifiedAt,
   }));
 }
 
@@ -81,4 +91,12 @@ export async function setLastNotified(email: string, iso: string): Promise<void>
   const existing = await redis().hget<Stored>(KEY, key);
   if (!existing) return; // zwischenzeitlich abgemeldet
   await redis().hset(KEY, { [key]: { ...existing, lastNotifiedAt: iso } satisfies Stored });
+}
+
+/** Wasserzeichen des Rahmenwerk-Newsletters nach erfolgreichem Versand vorrücken. */
+export async function setLastFwNotified(email: string, iso: string): Promise<void> {
+  const key = email.trim().toLowerCase();
+  const existing = await redis().hget<Stored>(KEY, key);
+  if (!existing) return; // zwischenzeitlich abgemeldet
+  await redis().hset(KEY, { [key]: { ...existing, lastFwNotifiedAt: iso } satisfies Stored });
 }

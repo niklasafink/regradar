@@ -16,7 +16,7 @@
 
 import { Resend } from "resend";
 import { PROVIDERS } from "./data";
-import { createUnsubToken } from "./email";
+import { createUnsubToken, sendApprovalRequest } from "./email";
 import { authority, daysUntil, dt } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
@@ -35,6 +35,10 @@ export interface RunReport {
   skipped: number;
   dryRun: boolean;
   errors: string[];
+  /** true: statt Versand wurde eine Freigabe-Anfrage an den Betreiber
+      geschickt; pendingItems = Zahl der wartenden Updates. */
+  pendingApproval?: boolean;
+  pendingItems?: number;
 }
 
 /** First-Seen-Zeitpunkte aller Slugs laden bzw. neue Slugs registrieren.
@@ -199,6 +203,10 @@ export function renderNewsletter(
 export async function runNewsletter(opts: {
   dryRun?: boolean;
   onlyTo?: string;
+  /** true = Versand wurde per Freigabe-Link autorisiert. Ohne dieses Flag
+      verschickt ein regulärer Lauf (Cron) nur eine Freigabe-Anfrage an den
+      Betreiber — nichts an den Verteiler. */
+  approved?: boolean;
 } = {}): Promise<RunReport> {
   const report: RunReport = {
     initialized: false, newUpdates: 0, recipients: 0,
@@ -232,6 +240,38 @@ export async function runNewsletter(opts: {
   report.recipients = subs.length;
 
   const base = process.env.APP_URL ?? "http://localhost:3000";
+
+  // Freigabe-Gate: Ein regulärer Lauf (Cron, ohne approved/dry/to) verschickt
+  // nichts an Abonnenten, sondern eine Vorschau mit Freigabe-Link an den
+  // Betreiber. Erst der Klick ruft diesen Lauf mit approved=true erneut auf.
+  // Wasserzeichen bleiben unberührt; der nächste Cron erinnert ggf. erneut.
+  if (!opts.approved && writable) {
+    const pending = new Map<string, UpdatePage>();
+    for (const sub of subs) {
+      const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
+        .sort()
+        .pop()!;
+      const fresh = sorted.filter((p) => (seen[p.slug] ?? nowIso) > watermark);
+      for (const p of relevantFor(sub, fresh)) pending.set(p.slug, p);
+    }
+    if (pending.size === 0) {
+      report.skipped = subs.length;
+      await redis().set(LAST_RUN_KEY, nowIso);
+      return report;
+    }
+    const pages = sorted.filter((p) => pending.has(p.slug));
+    const { html } = renderNewsletter(pages, `${base}/api/unsubscribe?token=preview`, base);
+    await sendApprovalRequest(
+      "updates",
+      `${pages.length} ${pages.length === 1 ? "neues Update" : "neue Updates"} für ${subs.length} Empfänger`,
+      html,
+    );
+    report.pendingApproval = true;
+    report.pendingItems = pages.length;
+    await redis().set(LAST_RUN_KEY, nowIso);
+    return report;
+  }
+
   const resend = new Resend(process.env.RESEND_API_KEY);
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
 
