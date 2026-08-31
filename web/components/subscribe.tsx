@@ -174,26 +174,6 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 : lang === "de" ? "Abonnieren" : "Subscribe"}
             </button>
           </div>
-          <p className="mt-2 text-xs text-slate-400">
-            {lang === "de" ? (
-              <>
-                Abmeldung jederzeit möglich. Hinweise zur Verarbeitung Ihrer Daten finden Sie in
-                der{" "}
-                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
-                  Datenschutzerklärung
-                </a>
-                .
-              </>
-            ) : (
-              <>
-                Unsubscribe anytime. See our{" "}
-                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
-                  privacy policy
-                </a>{" "}
-                for details on how we process your data.
-              </>
-            )}
-          </p>
         </form>
       )}
 
