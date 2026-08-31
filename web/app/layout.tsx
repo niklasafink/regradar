@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, Manrope } from "next/font/google";
-import Script from "next/script";
 import { CookieConsent } from "@/components/cookie-consent";
 import { StoreProvider } from "@/lib/store";
 import "./globals.css";
@@ -33,7 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de">
       <body className={`${inter.variable} ${manrope.variable} ${instrumentSerif.variable} font-sans`}>
-        {/* DataFast-Queue: puffert Goal-Aufrufe, bis das Analytics-Script geladen ist */}
+        {/* DataFast-Queue: puffert Goal-/Identify-Aufrufe, bis das Script nach
+            Einwilligung (CookieConsent) geladen wird — ohne Consent lädt nichts */}
         <script
           id="datafast-queue"
           dangerouslySetInnerHTML={{
@@ -45,12 +45,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <CookieConsent />
         </StoreProvider>
-        <Script
-          defer
-          data-website-id="dfid_7B0yBIFRvLP0qQU8RjMFI"
-          data-domain="regradar.de"
-          src="https://datafa.st/js/script.js"
-        />
       </body>
     </html>
   );

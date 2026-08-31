@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { PROVIDERS } from "@/lib/data";
 import { PROVIDER_SHORT, tx } from "@/lib/logic";
 import { useStore } from "@/lib/store";
-import { track } from "@/lib/track";
+import { identify, track } from "@/lib/track";
 
 type Status = "idle" | "sending" | "sent" | "confirmed" | "unsubscribed" | "error";
 
@@ -93,7 +93,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         body: JSON.stringify({ email, providers }),
       });
       if (res.ok) {
-        // Keine E-Mail-Adresse an Analytics übergeben (personenbezogene Daten)
+        // Besucher-Profil mit der Newsletter-E-Mail verknüpfen (Journey-Tracking)
+        identify(email.trim().toLowerCase(), { source: "newsletter" });
         track("newsletter_submitted", { provider: providers.join(",") });
         setStatus("sent");
         setModalOpen(false);
@@ -174,6 +175,27 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 : lang === "de" ? "Abonnieren" : "Subscribe"}
             </button>
           </div>
+          <p className="mt-2 text-xs text-slate-400">
+            {lang === "de" ? (
+              <>
+                Abmeldung jederzeit möglich. Sofern Sie Analyse-Cookies erlaubt haben, verknüpfen
+                wir Ihre E-Mail-Adresse mit Ihren Nutzungsdaten. Details in der{" "}
+                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
+                  Datenschutzerklärung
+                </a>
+                .
+              </>
+            ) : (
+              <>
+                Unsubscribe anytime. If you have allowed analytics cookies, we link your email
+                address with your usage data. See our{" "}
+                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
+                  privacy policy
+                </a>{" "}
+                for details.
+              </>
+            )}
+          </p>
         </form>
       )}
 

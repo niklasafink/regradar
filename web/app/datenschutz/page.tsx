@@ -100,15 +100,32 @@ export default function Datenschutz() {
               Zukunft widerrufen oder anpassen: <ConsentSettingsLink className="underline underline-offset-2" />
             </p>
 
-            <h3>DataFast (Webanalyse ohne Cookies)</h3>
+            <h3>DataFast (Webanalyse)</h3>
             <p>
-              Wir nutzen den Analysedienst DataFast (datafa.st), um die Nutzung unserer Website
-              statistisch auszuwerten (z.&nbsp;B. aufgerufene Seiten, Herkunftsland, verwendeter
-              Browser). DataFast arbeitet ohne Cookies und ohne dauerhafte Kennungen im Endgerät;
-              IP-Adressen werden nicht dauerhaft gespeichert, die Auswertung erfolgt aggregiert
-              und lässt keine Identifizierung einzelner Besucher zu. Rechtsgrundlage ist unser
-              berechtigtes Interesse an der Analyse und Verbesserung unseres Angebots nach Art. 6
-              Abs. 1 lit. f DSGVO.
+              Sofern Sie darin eingewilligt haben, nutzen wir den Analysedienst DataFast
+              (datafa.st) des Anbieters JustShipIt Pte. Ltd., Singapur, um die Nutzung unserer
+              Website auszuwerten (z.&nbsp;B. aufgerufene Seiten, Herkunftsquelle, Browser,
+              Land). DataFast setzt hierzu einen Cookie mit einer zufälligen Besucherkennung
+              (Speicherdauer 12 Monate), um wiederkehrende Besucher zu erkennen und
+              Nutzungsverläufe zuzuordnen.
+            </p>
+            <p>
+              Wenn Sie sich für unseren Newsletter anmelden, verknüpfen wir Ihre E-Mail-Adresse
+              mit diesem Besuchsprofil, um zu verstehen, über welche Wege Nutzer zu unserem
+              Newsletter finden und wie unser Angebot genutzt wird. Rechtsgrundlage für den
+              Einsatz von DataFast einschließlich dieser Verknüpfung ist Ihre Einwilligung nach
+              Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG; ohne Einwilligung wird DataFast
+              nicht geladen und es findet keine Verknüpfung statt. Sie können Ihre Einwilligung
+              jederzeit über die <ConsentSettingsLink className="underline underline-offset-2" />{" "}
+              mit Wirkung für die Zukunft widerrufen.
+            </p>
+            <p>
+              Wir haben mit dem Anbieter einen Vertrag über Auftragsverarbeitung nach Art. 28
+              DSGVO geschlossen. Die Verarbeitung erfolgt teilweise außerhalb der EU (unter
+              anderem in den USA und in Singapur); die Übermittlung stützt sich auf die
+              Standardvertragsklauseln der EU-Kommission. Die Daten werden gelöscht, sobald sie
+              für die genannten Zwecke nicht mehr erforderlich sind; Sie können die Löschung
+              jederzeit bei uns verlangen.
             </p>
 
             <h3>Google Analytics</h3>

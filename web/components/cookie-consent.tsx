@@ -7,9 +7,10 @@ import { useStore } from "@/lib/store";
 /**
  * Cookie-/Consent-Banner nach Vorbild vergabehero.eu (Karte unten rechts).
  *
- * Notwendige Technik (Hosting, Sprachwahl) läuft immer; DataFast ist cookielos
- * und braucht keine Einwilligung. Google Analytics wird erst nach Einwilligung
- * geladen — und nur, wenn NEXT_PUBLIC_GA_ID gesetzt ist.
+ * Notwendige Technik (Hosting, Sprachwahl) läuft immer. DataFast (setzt einen
+ * Visitor-Cookie, 12 Monate) und Google Analytics laden erst nach Einwilligung;
+ * GA zusätzlich nur, wenn NEXT_PUBLIC_GA_ID gesetzt ist. Goal-/Identify-Aufrufe
+ * vor der Einwilligung puffert die Queue aus layout.tsx.
  */
 
 const STORAGE_KEY = "rr.consent";
@@ -35,6 +36,19 @@ function writeConsent(analytics: boolean): Consent {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(c));
   } catch {}
   return c;
+}
+
+let dataFastLoaded = false;
+
+function loadDataFast() {
+  if (dataFastLoaded || typeof document === "undefined") return;
+  dataFastLoaded = true;
+  const s = document.createElement("script");
+  s.defer = true;
+  s.src = "https://datafa.st/js/script.js";
+  s.setAttribute("data-website-id", "dfid_7B0yBIFRvLP0qQU8RjMFI");
+  s.setAttribute("data-domain", "regradar.de");
+  document.head.appendChild(s);
 }
 
 let gaLoaded = false;
@@ -87,6 +101,7 @@ export function CookieConsent() {
     if (!stored) {
       setVisible(true);
     } else if (stored.analytics) {
+      loadDataFast();
       loadGoogleAnalytics();
     }
     const open = () => {
@@ -100,7 +115,10 @@ export function CookieConsent() {
 
   const decide = (allowAnalytics: boolean) => {
     writeConsent(allowAnalytics);
-    if (allowAnalytics) loadGoogleAnalytics();
+    if (allowAnalytics) {
+      loadDataFast();
+      loadGoogleAnalytics();
+    }
     setVisible(false);
     setSettings(false);
   };
@@ -149,8 +167,8 @@ export function CookieConsent() {
               </span>
               {" — "}
               {de
-                ? "Google Analytics zur Reichweitenmessung. Zusätzlich nutzen wir DataFast, das ohne Cookies auskommt."
-                : "Google Analytics for reach measurement. We also use DataFast, which works without cookies."}
+                ? "DataFast und Google Analytics zur Nutzungsanalyse. DataFast setzt einen Wiedererkennungs-Cookie (Laufzeit 12 Monate)."
+                : "DataFast and Google Analytics for usage analysis. DataFast sets a recognition cookie (12-month lifetime)."}
             </span>
           </label>
         </div>
