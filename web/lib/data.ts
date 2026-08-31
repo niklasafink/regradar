@@ -22,7 +22,10 @@ export interface Update {
 }
 export interface Framework {
   id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE";
-  n: Txt; ref: string; about: Txt; cond: Cond | null; condL?: Txt; u: Update[];
+  n: Txt; ref: string;
+  /** Link zur Primärquelle des Rechtsakts (z. B. EUR-Lex). */
+  refUrl?: string;
+  about: Txt; cond: Cond | null; condL?: Txt; u: Update[];
 }
 export interface Option { v: string; l: Txt }
 export interface Question { key: string; multi: boolean; q: Txt; why: Txt; o: Option[] }
@@ -323,7 +326,8 @@ export const FRAMEWORKS: Framework[] = [
   { id:"ecspr", jur:"EU+DE",
     about:{de:"Einheitliches EU-Zulassungs- und Aufsichtsregime für Schwarmfinanzierungsdienstleister (Crowdinvesting und Crowdlending bis 5 Mio. €): Anlagebasisinformationsblatt, Anlegerschutz- und Interessenkonfliktregeln, ESMA-Register. Flankiert von den delegierten Verordnungen (EU) 2022/2111–2122 und in Deutschland vom Schwarmfinanzierung-Begleitgesetz.",en:"Uniform EU authorisation and supervision regime for crowdfunding service providers (investment- and lending-based up to €5m): key investment information sheet, investor protection and conflict-of-interest rules, ESMA register. Flanked by Delegated Regulations (EU) 2022/2111–2122 and, in Germany, by the crowdfunding accompanying act."}, topic:"MKT", ents:["CI","IF","PI","OTH"],
     n:{de:"ECSPR: Schwarmfinanzierung / Crowdfunding",en:"ECSPR: crowdfunding service providers"},
-    ref:"VO (EU) 2020/1503, RL (EU) 2020/1504, Del. VO (EU) 2022/2111–2122, VermAnlG", cond:null,
+    ref:"VO (EU) 2020/1503, RL (EU) 2020/1504, Del. VO (EU) 2022/2111–2122, VermAnlG",
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2020/1503/oj/eng", cond:null,
     u:[]},
 
   { id:"psd3", jur:"EU",

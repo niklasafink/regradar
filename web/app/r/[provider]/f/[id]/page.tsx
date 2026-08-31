@@ -67,7 +67,21 @@ export default function FrameworkDetail() {
           <h1 className="font-heading mt-3 max-w-4xl text-balance text-2xl font-medium tracking-tight sm:text-4xl">
             {tx(lang, f.n)}
           </h1>
-          <p className="mt-1.5 text-sm text-slate-400">{f.ref}, {f.jur}</p>
+          <p className="mt-1.5 text-sm text-slate-400">
+            {f.refUrl ? (
+              <a
+                href={f.refUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:text-slate-900 hover:underline"
+              >
+                {f.ref} ↗
+              </a>
+            ) : (
+              f.ref
+            )}
+            , {f.jur}
+          </p>
           {ABOUT_LONG[f.id] && (
             <details className="group mt-4 max-w-3xl rounded-2xl border border-slate-200 bg-white">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-semibold tracking-tight text-slate-900 [&::-webkit-details-marker]:hidden">
