@@ -117,6 +117,8 @@ FW_GAP_PROMPT = (
 # --------------------------------------------------------------- Persistenz
 
 def ensure_tables(conn: sqlite3.Connection) -> None:
+    from .dedup import ensure_tables as dedup_tables
+    dedup_tables(conn)
     conn.execute(
         """CREATE TABLE IF NOT EXISTS big4_gap_reported (
                article_id  INTEGER PRIMARY KEY,
@@ -250,6 +252,8 @@ def _candidates(conn: sqlite3.Connection) -> List[sqlite3.Row]:
            FROM big4_articles a
            WHERE a.published >= date('now', ?)
              AND a.article_id NOT IN (SELECT article_id FROM big4_gap_reported)
+             AND a.article_id NOT IN
+                 (SELECT item_id FROM dedup_suppressed WHERE kind='big4')
              AND NOT EXISTS (SELECT 1 FROM big4_matches m
                              WHERE m.article_id = a.article_id AND m.related = 1)
            ORDER BY a.published DESC, a.article_id DESC""",
@@ -295,6 +299,8 @@ def _recent_documents(conn: sqlite3.Connection) -> List[dict]:
                   COALESCE(publication_date, substr(first_seen_at, 1, 10)) AS d
            FROM documents
            WHERE COALESCE(publication_date, substr(first_seen_at, 1, 10)) >= date('now', ?)
+             AND document_id NOT IN
+                 (SELECT item_id FROM dedup_suppressed WHERE kind='document')
            ORDER BY d DESC""",
         ("-{} days".format(DOC_WINDOW_DAYS),)).fetchall()
     docs = []
@@ -384,6 +390,8 @@ def _framework_gaps(conn: sqlite3.Connection):
            WHERE source_id NOT IN ('gii', 'rii')
              AND COALESCE(publication_date, substr(first_seen_at, 1, 10)) >= date('now', ?)
              AND document_id NOT IN (SELECT document_id FROM gap_fw_checked)
+             AND document_id NOT IN
+                 (SELECT item_id FROM dedup_suppressed WHERE kind='document')
            ORDER BY d DESC""",
         ("-{} days".format(PUBLISHED_WINDOW_DAYS),)).fetchall()
 
@@ -482,11 +490,36 @@ def _de_date(iso: Optional[str]) -> str:
     return "{}.{}.{}".format(d, m, y)
 
 
-def _render_email(groups: List[dict], fw_gaps: List[dict]) -> str:
+def _render_email(groups: List[dict], fw_gaps: List[dict],
+                  dedup_cases: Optional[List[dict]] = None) -> str:
     parts = [
         '<div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;color:#0f172a">',
         '<p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>',
     ]
+    if dedup_cases:
+        parts.append(
+            '<p style="margin:20px 0 6px;font-size:16px;font-weight:700">'
+            "Mögliche Dubletten — Eingriff nötig?</p>"
+            "<p>Gleicher Titel mit größerem zeitlichem Abstand: kann eine "
+            "Neuveröffentlichung <em>oder</em> ein eigenständiges Dokument sein. "
+            "Eindeutige Dubletten (Schwere: <strong>sicher</strong>) werden "
+            "automatisch unterdrückt und nicht angefragt; die folgenden Fälle "
+            "sind <strong>unsicher</strong> — ohne Rückmeldung bleiben beide "
+            "Einträge bestehen:</p>")
+        for c in dedup_cases:
+            parts.append(
+                '<p style="margin:14px 0 2px"><strong>{}</strong> '
+                '<span style="color:#64748b;font-size:13px">({})</span></p>'.format(
+                    _clean(c["titel"], 160),
+                    "Big4-Artikel" if c["kind"] == "big4" else "Meldung"))
+            parts.append('<ul style="margin:0;padding-left:20px">')
+            for e in c["eintraege"]:
+                parts.append(
+                    '<li style="margin:2px 0">{quelle}, {datum}: '
+                    '<a href="{url}" style="color:#0f172a">{url}</a></li>'.format(
+                        quelle=e["quelle"], datum=_de_date(e["datum"]) or e["datum"],
+                        url=e["url"]))
+            parts.append("</ul>")
     if fw_gaps:
         parts.append(
             '<p style="margin:20px 0 6px;font-size:16px;font-weight:700">'
@@ -585,12 +618,19 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
 
     fw_gaps, fw_checked = _framework_gaps(conn)
 
-    if not gaps and not fw_gaps:
+    # Dubletten: sichere Fälle sofort unterdrücken (läuft zusätzlich stündlich
+    # via `dedup`-Befehl); unsichere Fälle wandern in die Tages-Mail.
+    from .dedup import mark_reported, run as dedup_run
+    dedup_info = dedup_run(conn)
+    dedup_cases = dedup_info["manual"]
+
+    if not gaps and not fw_gaps and not dedup_cases:
         _mark_fw_checked(conn, fw_checked)
         conn.execute("INSERT OR REPLACE INTO big4_gap_runs VALUES (?,0,0)", (today,))
         conn.commit()
-        return {"status": "keine Lücken ({} Artikel geprüft, Rahmenwerk-Check "
-                          "ohne Befund)".format(len(candidates)), "gaps": 0}
+        return {"status": "keine Lücken ({} Artikel geprüft, Rahmenwerk- und "
+                          "Dubletten-Check ohne Befund)".format(len(candidates)),
+                "gaps": 0}
 
     groups = _group_by_topic(gaps) if gaps else []
     bits = []
@@ -599,8 +639,10 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
             len(gaps), len(groups)))
     if fw_gaps:
         bits.append("{} mögliche(s) fehlende(s) Rahmenwerk(e)".format(len(fw_gaps)))
+    if dedup_cases:
+        bits.append("{} unsichere Dublette(n)".format(len(dedup_cases)))
     subject = "Radar-Lücke: " + ", ".join(bits)
-    err = _send_email(subject, _render_email(groups, fw_gaps))
+    err = _send_email(subject, _render_email(groups, fw_gaps, dedup_cases))
     if err:
         # Nichts als gemeldet markieren — nächster Lauf versucht es erneut.
         return {"status": "Mail fehlgeschlagen: {}".format(err), "gaps": len(gaps)}
@@ -612,9 +654,11 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
     for f in fw_gaps:
         conn.execute("INSERT OR REPLACE INTO gap_fw_reported VALUES (?,?,?)",
                      (f["key"], f["name"], now))
+    mark_reported(conn, dedup_cases)
     _mark_fw_checked(conn, fw_checked)
     conn.execute("INSERT OR REPLACE INTO big4_gap_runs VALUES (?,1,?)",
                  (today, len(gaps)))
     conn.commit()
-    return {"status": "Mail verschickt ({} Rahmenwerk-Vorschläge)".format(len(fw_gaps)),
+    return {"status": "Mail verschickt ({} Rahmenwerk-Vorschläge, {} unsichere "
+                      "Dubletten)".format(len(fw_gaps), len(dedup_cases)),
             "gaps": len(gaps), "themen": len(groups), "geprüft": len(candidates)}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T15:46:25Z",
+  "generated_at": "2026-08-31T16:01:03Z",
   "updates": {
     "amla": [
       {
@@ -1340,24 +1340,6 @@
           "de": "Meldung",
           "en": "News"
         },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen technischer Regulierungsstandards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 der Europäischen Kommission vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die der Initial Margin-Pflicht unterliegen, aber unter der EMIR-Schwelle von 8 Milliarden Euro für den Austausch von Initial Margins liegen. Gegenparteien unterhalb dieser Schwelle müssten demnach keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht wurde der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of the European Commission's Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements but below the EMIR threshold of €8 billion for exchanging initial margin. Counterparties below this threshold would no longer be required to exchange initial margin for either new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report has been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
         "src": "esma.europa.eu",
         "ti": {
           "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
@@ -1368,24 +1350,6 @@
           "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose to simplify the bilateral margin requirements of the European Commission’s Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. This is intended to facilitate the phase-out of initial margin requirements for these counterparties. Currently, such counterparties are exempt from exchanging initial margin for new uncleared OTC derivative contracts but must continue to exchange it for existing contracts. With the proposed amendments, the obligation to exchange initial margin for both new and existing contracts will be removed if the threshold is not met.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following its review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen technischer Regulierungsstandards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 der Europäischen Kommission vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die den Anforderungen an die initiale Marge unterliegen, aber unter der in EMIR vorgesehenen Schwelle von 8 Mrd. EUR für den Austausch initialer Margen liegen. Bisher waren diese Gegenparteien vom Austausch initialer Margen für neue, nicht geclearte OTC-Derivatkontrakte befreit, mussten aber weiterhin initiale Margen für bestehende Kontrakte austauschen. Mit den vorgeschlagenen Änderungen entfällt diese Pflicht für neue und bestehende Kontrakte, wenn die Schwelle unterschritten wird.\n\nDer Abschlussbericht wurde der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose to simplify the bilateral margin requirements of the European Commission’s Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements but below the €8 billion threshold for exchanging initial margin as foreseen by EMIR. Previously, these counterparties were exempt from exchanging initial margin for new uncleared OTC derivative contracts but continued to exchange initial margin for existing contracts. With the proposed amendments, this obligation will be removed for both new and existing contracts if the threshold is not met.\n\nThe final report has been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.eiopa.europa.eu/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements-2026-08-03_en",
         "imp": "medium"
       },
       {
@@ -1443,6 +1407,43 @@
         "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
         "imp": "medium",
         "refnum": "OR/04/2026"
+      },
+      {
+        "d": "12.12.2025",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Review of the implementation of margin requirements for non-centrally cleared derivatives",
+          "en": "Review of the implementation of margin requirements for non-centrally cleared derivatives"
+        },
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) und die Internationale Organisation der Wertpapieraufsichtsbehörden (IOSCO) haben eine Überprüfung der Umsetzung des Rahmenwerks für Margenanforderungen bei nicht zentral abgewickelten Derivaten veröffentlicht. Das Rahmenwerk, das 2011 als Reaktion auf den G20-Aufruf zur Stärkung der Finanzmarktstabilität eingeführt wurde, hat die letzte Implementierungsphase im September 2022 erreicht.\n\nDie Überprüfung ergab keine wesentlichen Probleme mit dem Rahmenwerk. BCBS und IOSCO schlagen keine Änderungen vor, empfehlen jedoch eine fortgesetzte Überwachung durch den Austausch von Aufsichtsinformationen und Erfahrungen unter ihren Mitgliedern, um auf sich entwickelnde Marktpraktiken reagieren zu können. Das Rahmenwerk zielt darauf ab, systemische Risiken zu reduzieren und die zentrale Abwicklung zu fördern, wobei Initial Margin (IM) und Variation Margin (VM) die Widerstandsfähigkeit des Systems stärken, indem sie das Kontrahentenrisiko bei nicht zentral abgewickelten Derivaten mindern.\n\nDie Implementierungszeitpläne variierten je nach Jurisdiktion, wobei die meisten das Rahmenwerk umgesetzt haben. Die Anzahl der Jurisdiktionen, die das WGMR-Rahmenwerk implementieren, hat sich kürzlich erweitert und könnte weiter zunehmen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) and the International Organization of Securities Commissions (IOSCO) have published a review of the implementation of the framework for margin requirements for non-centrally cleared derivatives. The framework, introduced in 2011 in response to the G20's call to enhance financial market resilience, reached its final implementation phase in September 2022.\n\nThe review found no material issues with the framework. BCBS and IOSCO do not propose changes but recommend continued monitoring through supervisory information exchange and sharing of experiences among their members to address evolving market practices. The framework aims to reduce systemic risk and promote central clearing, with Initial Margin (IM) and Variation Margin (VM) strengthening system resilience by mitigating counterparty risk in non-centrally cleared derivatives.\n\nImplementation schedules varied across jurisdictions, with most having implemented the framework. The number of jurisdictions implementing the WGMR framework has recently expanded and could continue to grow."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d606.htm",
+        "imp": "low"
+      },
+      {
+        "d": "11.03.2024",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Harmonisation and simplification of the delegated act on fees charged by the ESMA to trade repositories",
+          "en": "Harmonisation and simplification of the delegated act on fees charged by the ESMA to trade repositories"
+        },
+        "s": {
+          "de": "Die Europäische Kommission schlägt eine Harmonisierung und Vereinfachung der delegierten Verordnung über die Gebühren vor, die die ESMA den Transaktionsregistern in Rechnung stellt. Dies betrifft die Gebührenstruktur und die damit verbundenen Verfahren.\n\nDie Änderung ist für Transaktionsregister relevant, da sie die finanziellen Belastungen und administrativen Prozesse im Zusammenhang mit der ESMA-Aufsicht beeinflusst. Ziel ist eine effizientere und transparentere Gebührenerhebung.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was auf eine bevorstehende Verabschiedung hindeutet.",
+          "en": "The European Commission proposes a harmonisation and simplification of the delegated act on fees charged by ESMA to trade repositories. This concerns the fee structure and related procedures.\n\nThe amendment is relevant for trade repositories as it impacts their financial burdens and administrative processes related to ESMA oversight. The aim is a more efficient and transparent fee collection.\n\nThe proposal is currently in the adoption workflow, indicating an upcoming finalisation."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13933",
+        "imp": "medium",
+        "refnum": "Ares(2023)5151234"
       }
     ],
     "consumer": [
@@ -1529,42 +1530,6 @@
       }
     ],
     "ebaict": [
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector",
-          "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
-        },
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA, ESMA) fordern einen sektorübergreifenden, risikobasierten und konsistenten Aufsichtsansatz, um IKT-Risiken durch neuartige KI-Modelle im EU-Finanzsektor zu mindern. Sie betonen die Notwendigkeit robuster Governance- und Risikomanagementrahmenwerke zur Prävention, Erkennung und Steuerung dieser Risiken.\n\nFinanzinstitute sollten ihre operationelle Resilienz gegen Cyberrisiken im Zusammenhang mit KI-Modellen stärken. Die Aufsichtsbehörden verweisen auf bestehende regulatorische Anforderungen und die DORA-Aufsichtsaktivitäten für kritische IKT-Drittanbieter (CTPPs), um diese Risiken zu adressieren. Die Erklärung dient als Grundlage für den aufsichtsrechtlichen Dialog.\n\nDie Meldung enthält keine spezifischen Fristen oder Anwendungsdaten.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, ESMA) call for a cross-sectoral, risk-based, and consistent supervisory approach to mitigate ICT risks from frontier AI models in the EU financial sector. They emphasize the need for robust governance and risk management frameworks to prevent, detect, and manage these risks.\n\nFinancial entities should strengthen their operational resilience against cyber risks linked to AI models. The ESAs refer to existing regulatory requirements and ongoing DORA oversight activities for critical ICT third-party providers (CTPPs) to address these risks. The statement serves as a basis for supervisory dialogue.\n\nThis announcement does not contain specific deadlines or application dates."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier",
-        "imp": "medium"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector",
-          "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
-        },
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA – ESAs) haben eine Stellungnahme veröffentlicht, die einen sektorübergreifenden, risikobasierten und konsistenten Aufsichtsansatz zur Minderung von IKT-Risiken durch „Frontier AI“-Modelle fordert. Die Stellungnahme berücksichtigt bestehende regulatorische Anforderungen, den Aktionsplan der Europäischen Kommission zu Cybersicherheit und Künstlicher Intelligenz sowie Veröffentlichungen relevanter Behörden.\n\nFinanzunternehmen sollen ihre operationelle Resilienz gegenüber Cyberrisiken im Zusammenhang mit „Frontier AI“-Modellen stärken. Besonderes Augenmerk liegt auf der Prävention, Erkennung und dem Management dieser Risiken. Es wird betont, dass Finanzunternehmen über robuste Governance- und Risikomanagementrahmen verfügen sollten, um Cyberrisiken im Zusammenhang mit „Frontier AI“-Modellen effektiv zu steuern und zu mindern. Die ESAs informieren auch über laufende und geplante DORA-Aufsichtsaktivitäten für kritische IKT-Drittanbieter (CTPPs) zur Bewältigung dieses Risikos.\n\nDie ESAs ermutigen Finanzunternehmen und zuständige Behörden, die Stellungnahme als Grundlage für den Aufsichtsdialog zu nutzen. Dies soll dazu beitragen, die Resilienz des EU-Finanzsystems gegenüber Risiken durch „Frontier AI“-Technologien zu gewährleisten.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA – ESAs) have issued a statement calling for a cross-sectoral, risk-based, and consistent supervisory approach to mitigate ICT risks stemming from frontier AI models. The statement considers existing regulatory requirements, the European Commission’s Action Plan on Cybersecurity and Artificial Intelligence, and publications by relevant authorities.\n\nFinancial entities should strengthen their operational resilience against cyber risks linked to frontier AI models. Particular emphasis is placed on the prevention, detection, and management of these risks. It is stressed that financial entities should have robust governance and risk management frameworks in place to support the effective management and mitigation of cyber risks associated with frontier AI models. The ESAs also provide updates on ongoing and planned DORA oversight activities for critical ICT third-party providers (CTPPs) to address this risk.\n\nThe ESAs encourage both financial entities and competent authorities to use the statement as a basis for supervisory dialogue. This approach aims to ensure that the EU financial system remains resilient against risks driven by frontier AI technologies."
-        },
-        "url": "https://www.eiopa.europa.eu/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision-mitigate-ict-risks-frontier-2026-07-31_en",
-        "imp": "medium"
-      },
       {
         "d": "31.07.2026",
         "t": {

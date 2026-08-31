@@ -12,6 +12,9 @@ Befehle:
                              u. a.) einsammeln; Zuordnung läuft im export-web
   gap-report [--force]       Big4-Beiträge ohne gescrapte Primärquelle per
                              Mail melden (max. 1×/Tag; --force ignoriert das)
+  dedup                      Dubletten klassifizieren: sichere unterdrücken
+                             (dedup_suppressed), unsichere meldet die
+                             Gap-Report-Mail
 """
 import json
 import os
@@ -163,6 +166,12 @@ def main(argv=None):
                 status=info["status"], gaps=info["gaps"],
                 extra=" in {} Themen (aus {} geprüften Artikeln)".format(
                     info["themen"], info["geprüft"]) if "themen" in info else ""))
+        elif cmd == "dedup":
+            from .dedup import run as dedup_run
+            info = dedup_run(conn)
+            print("Dedup: {} Dublette(n) unterdrückt, {} unsichere(r) Fall/"
+                  "Fälle für die Gap-Report-Mail".format(
+                      info["auto"], len(info["manual"])))
         elif cmd == "export-web":
             from .webexport import export_web
             info = export_web(conn, argv[1] if len(argv) > 1 else None)

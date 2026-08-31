@@ -175,12 +175,16 @@ def export_sources(path: Optional[str] = None) -> dict:
 def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     path = path or WEB_LIVE_PATH
     sources_info = export_sources()
+    from .dedup import ensure_tables as dedup_tables
+    dedup_tables(conn)
     rows = conn.execute(
         """SELECT document_id, source_id, external_id, authority, title, document_type,
                   status, publication_date, consultation_deadline, canonical_url, summary,
                   reference_number, first_seen_at
            FROM documents
            WHERE source_id NOT IN ('gii', 'rii')
+             AND document_id NOT IN
+                 (SELECT item_id FROM dedup_suppressed WHERE kind='document')
            ORDER BY COALESCE(publication_date, substr(first_seen_at, 1, 10)) DESC""").fetchall()
 
     # Kandidaten sammeln (Regex-Vorfilter + Rahmenwerk-Zuordnung + Datum) …
@@ -225,6 +229,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
 
     selected = []
     per_fw = {}
+    seen_titles = set()  # Netz und doppelter Boden neben dedup_suppressed
     for prio in (True, False):
         for r, fw_id, date in candidates:
             if _deadline_open(r) is not prio:
@@ -233,6 +238,10 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 continue
             if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK:
                 continue
+            title_key = (fw_id, re.sub(r"\W+", " ", (r["title"] or "").lower()).strip())
+            if title_key in seen_titles:
+                continue
+            seen_titles.add(title_key)
             per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
             selected.append((r, fw_id, date))
 

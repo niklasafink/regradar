@@ -378,9 +378,13 @@ def related_articles(conn: sqlite3.Connection, document_id: int, framework: str,
     """Passende Big-4-Artikel zu einem Behörden-Update (Zeitfenster +
     LLM-geprüft, gecacht). doc_date = Publikationsdatum der Meldung (ISO)."""
     ensure_tables(conn)
+    from .dedup import ensure_tables as dedup_tables
+    dedup_tables(conn)
     candidates = conn.execute(
         "SELECT article_id, firm, url, title, teaser, published "
-        "FROM big4_articles WHERE framework=? ORDER BY published DESC",
+        "FROM big4_articles WHERE framework=? "
+        "AND article_id NOT IN (SELECT item_id FROM dedup_suppressed WHERE kind='big4') "
+        "ORDER BY published DESC",
         (framework,)).fetchall()
     candidates = [a for a in candidates if _within_window(a["published"], doc_date)]
     if not candidates:
