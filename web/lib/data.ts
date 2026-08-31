@@ -108,6 +108,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Einheitliches EU-Regelwerk für IKT-Risiken im Finanzsektor: Risikomanagement, Meldung schwerwiegender Vorfälle, Resilienztests und Überwachung kritischer IT-Dienstleister.",en:"Single EU rulebook for ICT risk in the financial sector: risk management, major incident reporting, resilience testing and oversight of critical IT providers."}, topic:"ICT", ents:["CI","AM","IF","PI","INS"],
     n:{de:"DORA: Digitale operationale Resilienz",en:"DORA: Digital Operational Resilience"},
     ref:"VO (EU) 2022/2554", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     u:[
       {refnum:"C(2026) 4812", eff:"01.03.2027", d:"12.08.2026", t:{de:"RTS",en:"RTS"}, src:"eur-lex.europa.eu",
        ti:{de:"Delegierte Verordnung zu Weitervergabe kritischer IKT-Dienste",en:"Delegated regulation on subcontracting of critical ICT services"},
@@ -131,6 +132,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act."}, topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"NIS-2 / BSIG: Cybersicherheit",en:"NIS 2 / BSIG: cybersecurity"},
     ref:"RL (EU) 2022/2555, BSIG", cond:{k:"cross",any:["kritis"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng",
     condL:{de:"nur bei Einstufung als kritische Infrastruktur",en:"only if classified as critical infrastructure"},
     u:[
       {d:"07.08.2026", t:{de:"Bundesrat",en:"Bundesrat"}, src:"dip.bundestag.de",
@@ -151,6 +153,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Aufsichtliche Leitlinien der EBA zur Steuerung von IKT- und Sicherheitsrisiken, die MaRisk und DORA operativ unterlegen.",en:"EBA supervisory guidelines on managing ICT and security risk, giving operational substance to MaRisk and DORA."}, topic:"ICT", ents:["CI","IF","PI"],
     n:{de:"EBA-Leitlinien zu IKT- und Sicherheitsrisiken",en:"EBA guidelines on ICT and security risk"},
     ref:"EBA/GL/2025/07", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-ict-and-security-risk-management",
     u:[
       {refnum:"EBA/GL/2026/11", deadline:"30.11.2026", d:"09.08.2026", t:{de:"Final Report",en:"Final report"}, src:"eba.europa.eu",
        ti:{de:"Überarbeitete Leitlinien zur Steuerung von IKT-Risiken",en:"Revised guidelines on ICT risk management"},
@@ -162,6 +165,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Das unmittelbar geltende EU-Geldwäscherecht samt der neuen Behörde AMLA, die technische Standards erlässt und ausgewählte Institute direkt beaufsichtigt.",en:"The directly applicable EU AML rulebook together with the new AMLA authority, which issues technical standards and directly supervises selected entities."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"AMLA-Verordnung und EU-Geldwäscheverordnung",en:"AMLA Regulation and EU AML Regulation"},
     ref:"VO (EU) 2024/1620, 2024/1624", cond:{k:"cross",any:["aml"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1620/oj/eng",
     condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
     u:[
       {refnum:"AMLA/CP/2026/03", deadline:"12.09.2026", d:"18.08.2026", t:{de:"Konsultation",en:"Consultation"}, src:"amla.europa.eu",
@@ -182,6 +186,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Das deutsche Geldwäschegesetz mit Sorgfalts-, Melde- und Aufzeichnungspflichten, das derzeit an das EU-Regelwerk angepasst wird.",en:"The German Money Laundering Act with due diligence, reporting and record-keeping duties, currently being aligned with the EU rulebook."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"Geldwäschegesetz",en:"German Money Laundering Act"},
     ref:"GwG", cond:{k:"cross",any:["aml"]},
+    refUrl:"https://www.gesetze-im-internet.de/gwg_2017/",
     condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
     u:[
       {d:"11.08.2026", t:{de:"Referentenentwurf",en:"Ministerial draft"}, src:"bundesfinanzministerium.de",
@@ -198,6 +203,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Umsetzung von Basel III in der EU: Eigenmittelanforderungen, Output Floor, Kreditrisiko-Standardansatz und Marktrisiko.",en:"EU implementation of Basel III: own funds requirements, output floor, standardised credit risk approach and market risk."}, topic:"PRU", ents:["CI"],
     n:{de:"CRR III / CRD VI: Eigenmittel und Aufsicht",en:"CRR III / CRD VI: capital and supervision"},
     ref:"VO (EU) 2024/1623, RL (EU) 2024/1619", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1623/oj/eng",
     u:[
       {d:"16.08.2026", t:{de:"RTS",en:"RTS"}, src:"eba.europa.eu",
        ti:{de:"Technische Standards zum alternativen Standardansatz für Marktrisiken",en:"Technical standards on the alternative standardised approach for market risk"},
@@ -217,6 +223,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Die aufsichtliche Auslegung des § 25a KWG durch die BaFin: Organisation, Risikosteuerung, Kreditgeschäft, Handel und Auslagerung.",en:"BaFin's supervisory interpretation of § 25a KWG: organisation, risk control, lending, trading and outsourcing."}, topic:"PRU", ents:["CI","OTH"],
     n:{de:"MaRisk: Mindestanforderungen an das Risikomanagement",en:"MaRisk: minimum requirements for risk management"},
     ref:"BaFin-Rundschreiben", cond:{k:"juris",any:["DE"]},
+    refUrl:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2024/rs_06_2024_MaRisk_BA.html",
     condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
     u:[
       {refnum:"RS 05/2026 (BA)", eff:"01.01.2027", d:"14.08.2026", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
@@ -233,6 +240,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Sanierungs- und Abwicklungsplanung, MREL-Anforderungen und Zuständigkeit des Einheitlichen Abwicklungsausschusses.",en:"Recovery and resolution planning, MREL requirements and the remit of the Single Resolution Board."}, topic:"PRU", ents:["CI","IF"],
     n:{de:"BRRD: Sanierungs- und Abwicklungsrichtlinie",en:"BRRD: Bank Recovery and Resolution Directive"},
     ref:"BRRD (2014/59/EU), SRM-VO", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2014/59/oj/eng",
     u:[
       {d:"08.08.2026", t:{de:"Policy",en:"Policy"}, src:"srb.europa.eu",
        ti:{de:"MREL-Policy 2026 des Einheitlichen Abwicklungsausschusses",en:"Single Resolution Board MREL policy 2026"},
@@ -244,6 +252,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Eigenes Aufsichtsregime für Wertpapierinstitute mit K-Faktoren anstelle bankaufsichtlicher Eigenmittelanforderungen.",en:"A separate prudential regime for investment firms using K-factors instead of banking own funds requirements."}, topic:"PRU", ents:["IF"],
     n:{de:"IFR / IFD: Wertpapierinstitute",en:"IFR / IFD: investment firms"},
     ref:"VO (EU) 2019/2033, RL (EU) 2019/2034", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2019/2033/oj/eng",
     u:[
       {d:"29.06.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
        ti:{de:"Leitlinien zur Einstufung als kleines und nicht verflochtenes Wertpapierinstitut",en:"Guidelines on classification as a small and non-interconnected investment firm"},
@@ -255,6 +264,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Die aufsichtliche Auslegung des § 41 WpIG durch die BaFin: eigenständige Mindestanforderungen an das Risikomanagement für kleine und mittlere Wertpapierinstitute – getrennt von der Banken-MaRisk.",en:"BaFin's supervisory interpretation of § 41 WpIG: standalone minimum risk management requirements for small and medium-sized investment firms – separate from the banking MaRisk."}, topic:"PRU", ents:["IF"],
     n:{de:"WpI MaRisk: Risikomanagement für Wertpapierinstitute",en:"WpI MaRisk: risk management for investment firms"},
     ref:"BaFin-Rundschreiben", cond:{k:"juris",any:["DE"]},
+    refUrl:"https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0926_wpi_marisk.html",
     condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
     u:[]},
 
@@ -262,6 +272,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
     n:{de:"EBA-Leitlinien zur Auslagerung",en:"EBA Guidelines on Outsourcing"},
     ref:"EBA/GL/2019/02, AT 9 MaRisk", cond:{k:"cross",any:["outsourcing"]},
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-outsourcing-arrangements",
     condL:{de:"nur bei wesentlichen Auslagerungen",en:"only where material outsourcing exists"},
     u:[
       {d:"09.08.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
@@ -278,6 +289,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Pflicht zu internen Meldekanälen, Schutz hinweisgebender Personen vor Repressalien und Dokumentationspflichten.",en:"Duty to operate internal reporting channels, protection of reporting persons against retaliation, and documentation duties."}, topic:"GOV", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"Hinweisgeberschutzgesetz",en:"Whistleblower Protection Act"},
     ref:"HinSchG, RL (EU) 2019/1937", cond:null,
+    refUrl:"https://www.gesetze-im-internet.de/hinschg/",
     u:[
       {d:"28.07.2026", t:{de:"Rechtsprechung",en:"Case law"}, src:"bundesgerichtshof.de",
        ti:{de:"BGH zur Vertraulichkeit interner Meldekanäle",en:"Federal Court of Justice on confidentiality of internal reporting channels"},
@@ -289,6 +301,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Wohlverhaltensregeln, Geeignetheits- und Angemessenheitsprüfung, Kostenausweis, Produktgovernance und Handelstransparenz.",en:"Conduct rules, suitability and appropriateness assessment, cost disclosure, product governance and trading transparency."}, topic:"MKT", ents:["CI","AM","IF"],
     n:{de:"MiFID II / MiFIR",en:"MiFID II / MiFIR"},
     ref:"RL 2014/65/EU, VO 600/2014",
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2014/65/oj/eng",
     cond:{k:"act",any:["advice","portfolio","dealing"]},
     condL:{de:"nur bei Wertpapierdienstleistungen",en:"only where investment services are provided"},
     u:[
@@ -306,6 +319,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Verbot von Insidergeschäften und Marktmanipulation, Ad-hoc-Publizität, Insiderlisten und Eigengeschäfte von Führungskräften.",en:"Prohibition of insider dealing and market manipulation, disclosure of inside information, insider lists and managers' transactions."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"Marktmissbrauchsverordnung",en:"Market Abuse Regulation"},
     ref:"VO (EU) 596/2014", cond:{k:"act",any:["dealing","issuance","portfolio"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2014/596/oj/eng",
     condL:{de:"nur bei Handels-, Emissions- oder Verwaltungstätigkeit",en:"only for dealing, issuance or management activity"},
     u:[
       {refnum:"ESMA70-2026-186", eff:"01.01.2027", d:"01.08.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"esma.europa.eu",
@@ -318,6 +332,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Standardisiertes Basisinformationsblatt für verpackte Anlageprodukte, das Privatkunden vor Vertragsschluss auszuhändigen ist.",en:"Standardised key information document for packaged investment products, to be provided to retail clients before conclusion."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"PRIIPs: Basisinformationsblatt",en:"PRIIPs: key information document"},
     ref:"VO (EU) 1286/2014", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2014/1286/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
     u:[
       {deadline:"31.10.2026", d:"17.07.2026", t:{de:"Konsultation",en:"Consultation"}, src:"esma.europa.eu",
@@ -337,6 +352,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Nachfolgeregime zur PSD2: Zulassung, starke Kundenauthentifizierung, Zugang zu Zahlungskonten und Haftung bei Betrug.",en:"Successor regime to PSD2: authorisation, strong customer authentication, access to payment accounts and fraud liability."}, topic:"PAY", ents:["CI","PI"],
     n:{de:"PSD3 / Zahlungsdiensteverordnung",en:"PSD3 / Payment Services Regulation"},
     ref:"COM(2023) 366, COM(2023) 367", cond:{k:"act",any:["payments"]},
+    refUrl:"https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52023PC0366",
     condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
     u:[
       {d:"19.08.2026", t:{de:"Trilog",en:"Trilogue"}, src:"consilium.europa.eu",
@@ -353,6 +369,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Pflicht zur Erreichbarkeit für Echtzeitüberweisungen in Euro, Entgeltgleichheit und Abgleich von Empfängername und IBAN.",en:"Duty to be reachable for euro instant credit transfers, charge parity, and verification of payee name against IBAN."}, topic:"PAY", ents:["CI","PI"],
     n:{de:"Verordnung über Echtzeitüberweisungen",en:"Instant Payments Regulation"},
     ref:"VO (EU) 2024/886", cond:{k:"act",any:["payments"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/886/oj/eng",
     condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
     u:[
       {d:"06.08.2026", t:{de:"Merkblatt",en:"Guidance note"}, src:"bafin.de",
@@ -365,6 +382,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Zulassungs- und Verhaltensregeln für Emittenten von Kryptowerten und für Kryptowertedienstleister in der EU.",en:"Authorisation and conduct rules for issuers of crypto-assets and for crypto-asset service providers in the EU."}, topic:"PAY", ents:["CI","AM","IF","PI"],
     n:{de:"MiCA: Märkte für Kryptowerte",en:"MiCA: markets in crypto-assets"},
     ref:"VO (EU) 2023/1114", cond:{k:"prod",any:["crypto"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng",
     condL:{de:"nur bei Kryptowerten im Angebot",en:"only where crypto-assets are offered"},
     u:[
       {d:"10.08.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"esma.europa.eu",
@@ -377,6 +395,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Pilotregelung für Marktinfrastrukturen auf Basis der Distributed-Ledger-Technologie: Handel und Abwicklung tokenisierter Finanzinstrumente mit befristeten Ausnahmen von MiFIR und CSDR; in Deutschland flankiert durch elektronische Wertpapiere und Kryptowertpapierregister nach dem eWpG.",en:"Pilot regime for market infrastructures based on distributed ledger technology: trading and settlement of tokenised financial instruments under temporary exemptions from MiFIR and CSDR; flanked in Germany by electronic securities and crypto securities registers under the eWpG."}, topic:"MKT", ents:["CI","AM","IF"],
     n:{de:"DLT-Pilotregelung & elektronische Wertpapiere",en:"DLT Pilot Regime & electronic securities"},
     ref:"VO (EU) 2022/858, eWpG", cond:{k:"prod",any:["crypto"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2022/858/oj/eng",
     condL:{de:"nur bei Kryptowerten oder tokenisierten Finanzinstrumenten",en:"only where crypto-assets or tokenised financial instruments are involved"},
     u:[]},
 
@@ -388,6 +407,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Verwaltung alternativer Investmentfonds und OGAW: Zulassung, Organisation, Auslagerung, Liquiditätsinstrumente und Verwahrstelle.",en:"Management of alternative investment funds and UCITS: authorisation, organisation, delegation, liquidity tools and depositary."}, topic:"FND", ents:["AM"],
     n:{de:"AIFMD II und OGAW-Richtlinie",en:"AIFMD II and UCITS Directive"},
     ref:"RL (EU) 2024/927", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2024/927/oj/eng",
     u:[
       {refnum:"ESMA34-2026-77", d:"14.08.2026", t:{de:"RTS",en:"RTS"}, src:"esma.europa.eu",
        ti:{de:"Technische Standards zu Liquiditätsmanagement-Instrumenten",en:"Technical standards on liquidity management tools"},
@@ -407,6 +427,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Produktregime für langfristige Investmentfonds, das seit der Reform auch für Privatanleger geöffnet ist.",en:"Product regime for long-term investment funds, opened up to retail investors following the reform."}, topic:"FND", ents:["AM"],
     n:{de:"ELTIF 2.0",en:"ELTIF 2.0"},
     ref:"VO (EU) 2023/606", cond:{k:"prod",any:["eltif"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2023/606/oj/eng",
     condL:{de:"nur bei ELTIF- oder EuVECA-Produkten",en:"only for ELTIF or EuVECA products"},
     u:[
       {d:"23.07.2026", t:{de:"RTS",en:"RTS"}, src:"eur-lex.europa.eu",
@@ -419,6 +440,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Portfolio-, Bewertungs- und Liquiditätsanforderungen für Geldmarktfonds sowie Regeln zu Rücknahmen unter Stress.",en:"Portfolio, valuation and liquidity requirements for money market funds, and rules on redemptions under stress."}, topic:"FND", ents:["AM"],
     n:{de:"Geldmarktfonds-Verordnung",en:"Money Market Funds Regulation"},
     ref:"VO (EU) 2017/1131", cond:{k:"prod",any:["mmf"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2017/1131/oj/eng",
     condL:{de:"nur bei Geldmarktfonds im Angebot",en:"only where money market funds are offered"},
     u:[
       {d:"02.07.2026", t:{de:"Bericht",en:"Report"}, src:"esma.europa.eu",
@@ -431,6 +453,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Offenlegungspflichten zu Nachhaltigkeitsrisiken und nachteiligen Nachhaltigkeitsauswirkungen auf Unternehmens- und Produktebene.",en:"Disclosure duties on sustainability risks and principal adverse impacts at entity and product level."}, topic:"ESG", ents:["CI","AM","IF","INS"],
     n:{de:"SFDR: Offenlegungsverordnung",en:"SFDR: sustainability disclosure"},
     ref:"VO (EU) 2019/2088", cond:{k:"cross",any:["esg"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2019/2088/oj/eng",
     condL:{de:"nur bei nachhaltigkeitsbezogenen Angaben",en:"only where sustainability disclosures are made"},
     u:[
       {refnum:"COM(2026) 412", d:"20.08.2026", t:{de:"Kommissionsvorschlag",en:"Commission proposal"}, src:"eur-lex.europa.eu",
@@ -447,6 +470,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Einheitliche Meldebögen und Taxonomien für COREP, FINREP und weitere aufsichtliche Meldungen.",en:"Harmonised templates and taxonomies for COREP, FINREP and other supervisory returns."}, topic:"REP", ents:["CI","IF"],
     n:{de:"ITS zum aufsichtlichen Meldewesen",en:"ITS on Supervisory Reporting"},
     ref:"ITS on Supervisory Reporting", cond:{k:"cross",any:["reporting"]},
+    refUrl:"https://www.eba.europa.eu/risk-and-data-analysis/reporting-frameworks",
     condL:{de:"nur bei aufsichtlicher Meldepflicht",en:"only where supervisory reporting applies"},
     u:[
       {refnum:"EBA/ITS/2026/04", eff:"31.03.2027", d:"17.08.2026", t:{de:"Taxonomie",en:"Taxonomy"}, src:"eba.europa.eu",
@@ -463,6 +487,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Granulare Kreditdatenmeldung an Bundesbank und ESZB auf Ebene einzelner Kredite und Kreditnehmer.",en:"Granular credit data reporting to the Bundesbank and the ESCB at individual loan and borrower level."}, topic:"REP", ents:["CI"],
     n:{de:"AnaCredit und statistische Meldungen",en:"AnaCredit and statistical reporting"},
     ref:"VO (EU) 2016/867", cond:{k:"cross",any:["reporting"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2016/867/oj/eng",
     condL:{de:"nur bei aufsichtlicher Meldepflicht",en:"only where supervisory reporting applies"},
     u:[
       {d:"23.07.2026", t:{de:"Rundschreiben",en:"Circular"}, src:"bundesbank.de",
@@ -475,6 +500,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Risikobasiertes Aufsichtsregime für Versicherer: Solvenzkapital, Governance, ORSA und Berichterstattung.",en:"Risk-based prudential regime for insurers: solvency capital, governance, ORSA and reporting."}, topic:"INSU", ents:["INS"],
     n:{de:"Solvency II",en:"Solvency II"},
     ref:"RL 2009/138/EG, DelVO 2015/35", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2009/138/oj/eng",
     u:[
       {eff:"30.01.2027", d:"12.08.2026", t:{de:"Delegierte VO",en:"Delegated regulation"}, src:"eur-lex.europa.eu",
        ti:{de:"Anpassung der Standardformel an das Solvency-II-Review",en:"Adjustment of the standard formula following the Solvency II review"},
@@ -490,6 +516,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["CI","INS"],
     n:{de:"Versicherungsvertriebsrichtlinie",en:"Insurance Distribution Directive"},
     ref:"RL (EU) 2016/97", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2016/97/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
     u:[
       {d:"31.07.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eiopa.europa.eu",
@@ -506,6 +533,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Regeln für Derivategeschäfte: Clearingpflicht über zentrale Gegenparteien, Risikominderung und Einschusspflichten für nicht geclearte OTC-Derivate sowie Meldung aller Kontrakte an Transaktionsregister.",en:"Rules for derivatives: mandatory clearing through central counterparties, risk mitigation and margin requirements for uncleared OTC derivatives, and reporting of all contracts to trade repositories."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"EMIR: Derivate und zentrales Clearing",en:"EMIR: derivatives and central clearing"},
     ref:"VO (EU) 648/2012, VO (EU) 2024/2987", cond:{k:"prod",any:["otc"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2012/648/oj/eng",
     condL:{de:"nur bei Einsatz von OTC-Derivaten",en:"only where OTC derivatives are used"},
     u:[]},
 
@@ -513,6 +541,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Anforderungen an Administratoren und beaufsichtigte Verwender von Referenzwerten wie Zinssätzen und Indizes – einschließlich Zulassung, Methodik und Ausweichplänen für den Wegfall eines Referenzwerts.",en:"Requirements for administrators and supervised users of benchmarks such as interest rates and indices – including authorisation, methodology and fallback plans for benchmark cessation."}, topic:"MKT", ents:["CI","AM","IF"],
     n:{de:"Benchmark-Verordnung",en:"Benchmark Regulation"},
     ref:"VO (EU) 2016/1011", cond:{k:"act",any:["portfolio","dealing","issuance"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2016/1011/oj/eng",
     condL:{de:"nur bei Verwendung von Referenzwerten in Finanzinstrumenten oder Fonds",en:"only where benchmarks are used in financial instruments or funds"},
     u:[]},
 
@@ -520,24 +549,28 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Das allgemeine Datenschutzrecht für die Verarbeitung personenbezogener Daten: Rechtsgrundlagen, Betroffenenrechte, Auftragsverarbeitung, Drittlandtransfers und Meldepflichten bei Datenpannen.",en:"General data protection law for processing personal data: legal bases, data subject rights, processors, third-country transfers and breach notification duties."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"DSGVO / BDSG: Datenschutz",en:"GDPR / BDSG: data protection"},
     ref:"VO (EU) 2016/679, BDSG", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
     u:[]},
 
   { id:"aiact", jur:"EU",
     about:{de:"Risikobasierte Regeln für den Einsatz von KI-Systemen: verbotene Praktiken, Pflichten für Hochrisiko-Systeme etwa in der Kreditwürdigkeitsprüfung, Transparenzpflichten und Vorgaben für KI-Modelle mit allgemeinem Verwendungszweck.",en:"Risk-based rules for the use of AI systems: prohibited practices, duties for high-risk systems such as creditworthiness assessment, transparency duties and requirements for general-purpose AI models."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"KI-Verordnung",en:"AI Act"},
     ref:"VO (EU) 2024/1689", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     u:[]},
 
   { id:"eidas2", jur:"EU",
     about:{de:"Der europäische Rahmen für digitale Identität und Vertrauensdienste: Die EUDI-Wallet soll Identifizierung und Signaturen EU-weit ermöglichen; Banken und Zahlungsdienstleister müssen sie zur starken Kundenauthentifizierung akzeptieren.",en:"The European framework for digital identity and trust services: the EUDI wallet is to enable identification and signatures EU-wide; banks and payment providers must accept it for strong customer authentication."}, topic:"DATA", ents:["CI","AM","IF","PI","INS"],
     n:{de:"eIDAS 2: Digitale Identität",en:"eIDAS 2: digital identity"},
     ref:"VO (EU) 2024/1183", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng",
     u:[]},
 
   { id:"csrd", jur:"EU+DE",
     about:{de:"Pflicht zur Nachhaltigkeitsberichterstattung im Lagebericht nach den ESRS-Standards samt Prüfungspflicht; Umfang und Zeitplan werden derzeit durch das Omnibus-Paket der EU-Kommission überarbeitet.",en:"Mandatory sustainability reporting in the management report under the ESRS standards, subject to assurance; scope and timeline are currently being revised through the Commission's omnibus package."}, topic:"ESG", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"CSRD: Nachhaltigkeitsberichterstattung",en:"CSRD: sustainability reporting"},
     ref:"RL (EU) 2022/2464, ESRS", cond:{k:"cross",any:["esg"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng",
     condL:{de:"nur bei nachhaltigkeitsbezogenen Angaben",en:"only where sustainability disclosures are made"},
     u:[]},
 
@@ -545,6 +578,7 @@ export const FRAMEWORKS: Framework[] = [
     about:{de:"Verbraucherschutz im Finanzgeschäft: Verbraucherdarlehen und die neue Verbraucherkreditrichtlinie CCD II, vorvertragliche Informationspflichten, Widerrufsrechte und AGB-Kontrolle.",en:"Consumer protection in finance: consumer credit and the new Consumer Credit Directive CCD II, pre-contractual information duties, withdrawal rights and review of standard terms."}, topic:"CONS", ents:["CI","PI","OTH"],
     n:{de:"Verbraucherschutz im Finanzgeschäft",en:"Consumer protection in finance"},
     ref:"RL (EU) 2023/2225 (CCD II), BGB", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2023/2225/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
     u:[]}
 ];
