@@ -29,9 +29,16 @@ FRAMEWORK_RULES = [
     ("marisk", r"\bmarisk\b"),
     ("anacredit", r"anacredit|kreditdatenstatistik"),
     ("instant", r"echtzeitüberweisung|instant (payment|credit transfer)|verification of payee"),
+    # DLT-Pilotregelung vor MiCA: Kryptowertpapiere/DLT-Marktinfrastrukturen
+    # sind Finanzinstrumente und fallen gerade nicht unter MiCA.
+    ("dltpilot", r"dlt[\s-]*pilot|pilot[\s-]*regime|pilotregelung|"
+                 r"distributed[\s-]*ledger|\bdlt\b|"
+                 r"kryptowertpapier|crypto securit|elektronische[sn]? wertpapier|\bewpg\b|"
+                 r"tokenisier|tokeni[sz](ed|ation)"),
     ("mica", r"\bmica\b|kryptowert|crypto-?asset"),
     ("eltif", r"\beltif\b|euveca"),
     ("mmf", r"geldmarktfonds|money market fund"),
+    ("ecspr", r"\becspr\b|crowdfunding|crowdinvest|crowdlend|schwarmfinanzier"),
     ("priips", r"\bpriips\b|basisinformationsblatt|key information document"),
     ("hinschg", r"hinweisgeber|whistleblow"),
     ("aiact", r"ki-verordnung|\bai act\b|artificial intelligence act|künstliche intelligenz|\bki-modell|general.purpose ai|\bgpai\b|\b[ak]i[- ]omnibus\b|transparency of ai-generated|\bai office\b|ai-gesetz"),
@@ -45,6 +52,12 @@ FRAMEWORK_RULES = [
     ("ifr", r"\bifr\b|\bifd\b|wertpapierinstitut"),
     ("outsourcing", r"auslagerung|outsourcing"),
     ("mar", r"marktmissbrauch|market abuse|insider"),
+    ("emir", r"\bemir\b|otc-derivat|otc derivative|clearingpflicht|clearing obligation|"
+             r"central counterpart|\bccps?\b|transaktionsregister|trade repositor|"
+             r"einschusspflicht|margin requirement|active account"),
+    ("bmr", r"benchmark-?verordnung|benchmark regulation|referenzwert|"
+            r"kritische[nrs]? benchmark|critical benchmark|significant benchmark|"
+            r"\beuribor\b|€str|euro short-term rate"),
     ("priips", r"\bprospekt"),
     ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution"),
     ("psd3", r"\bpsd[23]\b|zahlungsdienst|payment service"),

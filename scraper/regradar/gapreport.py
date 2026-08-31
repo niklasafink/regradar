@@ -1,10 +1,20 @@
-"""Lücken-Report: Big-4-/Kanzlei-Artikel ohne gescrapte Primärquelle.
+"""Lücken-Report: Big-4-/Kanzlei-Artikel ohne gescrapte Primärquelle sowie
+möglicherweise fehlende Rahmenwerke in der Bibliothek.
 
 Ziel: erkennen, wenn PwC, KPMG, Deloitte & Co. über ein regulatorisches
 Vorhaben schreiben, zu dem der Scraper KEIN Behörden-Dokument (BaFin, EBA,
 ESMA, EU …) kennt — das ist ein Signal, dass eine neue Quelle bzw. ein
 neuer Scraper fehlt. Der Betreiber bekommt dazu maximal einmal pro Tag
-eine E-Mail (Resend) mit den Artikeln, nach Themen gruppiert.
+eine E-Mail (Resend) mit den Artikeln, nach Themen gruppiert und je Thema
+mit einer LLM-Einschätzung zu Relevanz und Aktualität für die
+Financial-Services-Zielgruppe.
+
+Zusätzlich prüft der Report neue gescrapte Meldungen, die KEINEM Rahmenwerk
+der Web-Bibliothek (FRAMEWORK_RULES/web/lib/data.ts) zugeordnet werden
+konnten: Ein LLM beurteilt, ob dahinter ein für die Zielgruppe relevantes,
+in der Bibliothek fehlendes Rahmenwerk steckt — Vorschläge landen mit
+Rechtsakt und Datum des Rahmenwerks in derselben Mail (jedes Rahmenwerk
+wird nur einmal gemeldet, Tabelle gap_fw_reported).
 
 Strenge Prüfung in vier Stufen, damit nur echte Lücken gemeldet werden:
   1. Nur frische Artikel (Publikationsdatum letzte 14 Tage); Artikel, die
@@ -59,13 +69,48 @@ COVER_PROMPT = (
 )
 
 GROUP_PROMPT = (
-    "Du gruppierst Fachbeiträge von Beratungsgesellschaften nach Thema. "
-    "Beiträge zum selben regulatorischen Vorhaben/Thema gehören in eine "
-    "Gruppe; ein Beitrag ohne thematische Nachbarn bildet eine eigene "
-    "Gruppe. Du erhältst eine JSON-Liste mit id und title.\n\n"
+    "Du gruppierst Fachbeiträge von Beratungsgesellschaften/Kanzleien nach "
+    "Thema und beurteilst jede Gruppe für Compliance-Verantwortliche von "
+    "Finanzunternehmen (Banken, Asset Manager/KVGen, Wertpapier- und "
+    "Zahlungsinstitute, Versicherer, FinTechs). Beiträge zum selben "
+    "regulatorischen Vorhaben/Thema gehören in eine Gruppe; ein Beitrag "
+    "ohne thematische Nachbarn bildet eine eigene Gruppe. Du erhältst eine "
+    "JSON-Liste mit id, title und datum (Publikationsdatum).\n\n"
+    "Je Gruppe zusätzlich:\n"
+    "- relevanz: hoch|mittel|niedrig für die Zielgruppe\n"
+    "- aktualitaet: 1 kurzer deutscher Satz, wie aktuell/dringlich das Thema "
+    "ist (anhand der Publikationsdaten und des regulatorischen Stands)\n"
+    "- rahmenwerk: deutet das Thema auf ein eigenständiges Regelwerk, dessen "
+    "Name samt Rechtsakt UND Datum des Rechtsakts (z. B. 'ECSPR – VO (EU) "
+    "2020/1503 vom 07.10.2020'), sonst leerer String\n\n"
     "Antworte ausschließlich mit einem JSON-Objekt der Form "
-    '{"gruppen": [{"thema": "kurzer deutscher Titel", "ids": [1, 2]}]}. '
+    '{"gruppen": [{"thema": "kurzer deutscher Titel", "ids": [1, 2], '
+    '"relevanz": "hoch", "aktualitaet": "…", "rahmenwerk": ""}]}. '
     "Jede id genau einmal. Keine Erklärungen."
+)
+
+FW_GAP_PROMPT = (
+    "Du prüfst für einen Regulatory-Monitoring-Dienst für Finanzunternehmen "
+    "(Banken, Asset Manager/KVGen, Wertpapierinstitute, Zahlungs- und "
+    "E-Geld-Institute, Versicherer, FinTechs), ob in seiner Rahmenwerk-"
+    "Bibliothek Rahmenwerke FEHLEN.\n\n"
+    "Du erhältst 'rahmenwerke' (die vorhandene Bibliothek: id, name, "
+    "rechtsakt) und 'meldungen' (neue Behörden-Meldungen, die keinem "
+    "Rahmenwerk zugeordnet werden konnten: id, titel, behoerde, datum, "
+    "teaser).\n\n"
+    "Nenne nur Rahmenwerke (Gesetze, Verordnungen, Richtlinien, "
+    "Aufsichtsregelwerke), die (a) eindeutig Kernthema mindestens einer "
+    "Meldung sind, (b) in der Bibliothek fehlen — auch nicht unter anderem "
+    "Namen enthalten sind — und (c) für die Compliance der Zielgruppe "
+    "relevant sind. Einzelfallmaßnahmen, Statistiken, allgemeine Politik "
+    "oder Themen ohne eigenes Regelwerk sind KEINE fehlenden Rahmenwerke. "
+    "Im Zweifel: nichts melden.\n\n"
+    "Antworte ausschließlich mit einem JSON-Objekt der Form "
+    '{"fehlend": [{"name": "…", "rechtsakt": "z. B. VO (EU) 2020/1503", '
+    '"datum": "Datum bzw. Jahr des Rechtsakts, z. B. 07.10.2020", '
+    '"relevanz": "hoch|mittel|niedrig", "begruendung": "1 Satz", '
+    '"meldung_ids": [1, 2]}]}. Fehlt nichts: {"fehlend": []}. '
+    "Keine Erklärungen."
 )
 
 
@@ -88,6 +133,17 @@ def ensure_tables(conn: sqlite3.Connection) -> None:
                article_id INTEGER PRIMARY KEY,
                relevant   INTEGER NOT NULL,
                checked_at TEXT NOT NULL
+           )""")
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS gap_fw_checked (
+               document_id INTEGER PRIMARY KEY,
+               checked_at  TEXT NOT NULL
+           )""")
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS gap_fw_reported (
+               fw_key      TEXT PRIMARY KEY,  -- normalisierter Name
+               name        TEXT NOT NULL,
+               reported_at TEXT NOT NULL
            )""")
     conn.commit()
 
@@ -290,10 +346,108 @@ def _coverage(articles: List[sqlite3.Row], docs: List[dict]) -> Dict[int, bool]:
     return covered
 
 
+def _library_frameworks() -> List[dict]:
+    """Bestehende Rahmenwerke (id, Name, Rechtsakt) aus web/lib/data.ts;
+    Fallback: nur die IDs aus FRAMEWORK_RULES."""
+    from .webexport import FRAMEWORK_RULES, WEB_LIVE_PATH
+    path = os.path.join(os.path.dirname(WEB_LIVE_PATH), "data.ts")
+    entries: List[dict] = []
+    try:
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+        # Framework-Einträge haben kleingeschriebene IDs und stets die
+        # Feldfolge id … n:{de:…} … ref:"…" (Provider/Topics: Großbuchstaben).
+        for m in re.finditer(
+                r'id:"([a-z][a-z0-9]*)"[\s\S]*?n:\{de:"([^"]+)"[\s\S]*?ref:"([^"]+)"',
+                text):
+            entries.append({"id": m.group(1), "name": m.group(2),
+                            "rechtsakt": m.group(3)})
+    except OSError:
+        pass
+    if not entries:
+        entries = [{"id": fw_id} for fw_id, _ in FRAMEWORK_RULES]
+    return entries
+
+
+def _framework_gaps(conn: sqlite3.Connection):
+    """Neue Meldungen ohne Rahmenwerk-Zuordnung per LLM daraufhin prüfen, ob
+    der Bibliothek ein für die Zielgruppe relevantes Rahmenwerk fehlt.
+
+    Rückgabe: (vorschlaege, geprüfte document_ids). Die IDs werden erst nach
+    erfolgreichem Versand (bzw. bei leerem Ergebnis sofort) als geprüft
+    markiert, damit ein Mail-Fehler keine Vorschläge verschluckt."""
+    from .webexport import NOISE, _classify
+    rows = conn.execute(
+        """SELECT document_id, title, summary, authority, canonical_url,
+                  COALESCE(publication_date, substr(first_seen_at, 1, 10)) AS d
+           FROM documents
+           WHERE source_id NOT IN ('gii', 'rii')
+             AND COALESCE(publication_date, substr(first_seen_at, 1, 10)) >= date('now', ?)
+             AND document_id NOT IN (SELECT document_id FROM gap_fw_checked)
+           ORDER BY d DESC""",
+        ("-{} days".format(PUBLISHED_WINDOW_DAYS),)).fetchall()
+
+    unmatched, checked = [], []
+    for r in rows:
+        text = "{} {}".format(r["title"] or "", r["summary"] or "")
+        if NOISE.search(text) or _classify(text) is not None:
+            checked.append(r["document_id"])  # Rauschen bzw. zugeordnet
+        else:
+            unmatched.append(r)
+    if not unmatched:
+        return [], checked
+
+    library = _library_frameworks()
+    known_keys = {re.sub(r"\W+", "", f.get("name", f["id"]).lower())
+                  for f in library}
+    already = {r["fw_key"] for r in conn.execute(
+        "SELECT fw_key FROM gap_fw_reported")}
+    suggestions: List[dict] = []
+    for start in range(0, len(unmatched), 40):
+        batch = unmatched[start:start + 40]
+        by_id = {r["document_id"]: r for r in batch}
+        parsed = _chat_json(FW_GAP_PROMPT, {
+            "rahmenwerke": library,
+            "meldungen": [{"id": r["document_id"],
+                           "titel": _clean(r["title"], 200),
+                           "behoerde": r["authority"] or "",
+                           "datum": (r["d"] or "")[:10],
+                           "teaser": _clean(r["summary"], 240)}
+                          for r in batch]})
+        if parsed is None:
+            continue  # Batch beim nächsten Lauf erneut prüfen
+        checked.extend(by_id)
+        for s in (parsed.get("fehlend") or []):
+            if not isinstance(s, dict):
+                continue
+            name = str(s.get("name") or "").strip()
+            key = re.sub(r"\W+", "", name.lower())
+            if not key or key in already or key in known_keys:
+                continue
+            already.add(key)
+            docs = [by_id[i] for i in (s.get("meldung_ids") or [])
+                    if isinstance(i, int) and i in by_id]
+            suggestions.append({
+                "key": key,
+                "name": name[:120],
+                "rechtsakt": str(s.get("rechtsakt") or "")[:120],
+                "datum": str(s.get("datum") or "")[:40],
+                "relevanz": str(s.get("relevanz") or "")[:10],
+                "begruendung": _clean(str(s.get("begruendung") or ""), 300),
+                "meldungen": [{"titel": _clean(d["title"], 160),
+                               "url": d["canonical_url"] or "",
+                               "datum": (d["d"] or "")[:10]} for d in docs],
+            })
+    return suggestions, checked
+
+
 def _group_by_topic(gaps: List[sqlite3.Row]) -> List[dict]:
-    """Lücken-Artikel per LLM zu Themen aggregieren; Fallback: Rahmenwerk."""
+    """Lücken-Artikel per LLM zu Themen aggregieren und je Thema Relevanz,
+    Aktualität und ggf. ein fehlendes Rahmenwerk beurteilen; Fallback ohne
+    LLM-Antwort: Gruppierung nach Rahmenwerk ohne Einschätzung."""
     parsed = _chat_json(GROUP_PROMPT, {
-        "beitraege": [{"id": a["article_id"], "title": _clean(a["title"], 200)}
+        "beitraege": [{"id": a["article_id"], "title": _clean(a["title"], 200),
+                       "datum": (a["published"] or "")[:10]}
                       for a in gaps]})
     by_id = {a["article_id"]: a for a in gaps}
     groups = []
@@ -306,6 +460,9 @@ def _group_by_topic(gaps: List[sqlite3.Row]) -> List[dict]:
                 continue
             seen.update(ids)
             groups.append({"thema": str(g.get("thema") or "Weitere Themen")[:120],
+                           "relevanz": str(g.get("relevanz") or "")[:10],
+                           "aktualitaet": _clean(str(g.get("aktualitaet") or ""), 240),
+                           "rahmenwerk": _clean(str(g.get("rahmenwerk") or ""), 160),
                            "artikel": [by_id[i] for i in ids]})
     rest = [a for a in gaps if a["article_id"] not in seen]
     if rest:
@@ -313,7 +470,8 @@ def _group_by_topic(gaps: List[sqlite3.Row]) -> List[dict]:
         for a in rest:
             by_fw.setdefault(a["framework"] or "Ohne Rahmenwerk-Zuordnung", []).append(a)
         for fw, items in by_fw.items():
-            groups.append({"thema": fw, "artikel": items})
+            groups.append({"thema": fw, "relevanz": "", "aktualitaet": "",
+                           "rahmenwerk": "", "artikel": items})
     return groups
 
 
@@ -324,16 +482,59 @@ def _de_date(iso: Optional[str]) -> str:
     return "{}.{}.{}".format(d, m, y)
 
 
-def _render_email(groups: List[dict]) -> str:
+def _render_email(groups: List[dict], fw_gaps: List[dict]) -> str:
     parts = [
         '<div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;color:#0f172a">',
         '<p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>',
-        "<p>Big-4-/Kanzlei-Beiträge zu Themen, zu denen <strong>keine gescrapte "
-        "Primärquelle</strong> vorliegt — Kandidaten für einen neuen Scraper:</p>",
     ]
+    if fw_gaps:
+        parts.append(
+            '<p style="margin:20px 0 6px;font-size:16px;font-weight:700">'
+            "Möglicherweise fehlende Rahmenwerke</p>"
+            "<p>Neue Meldungen, die keinem Rahmenwerk der Bibliothek zugeordnet "
+            "werden konnten, deuten auf folgende Lücken:</p>")
+        for f in fw_gaps:
+            meta = " ".join(x for x in (f["rechtsakt"], "vom {}".format(f["datum"])
+                                        if f["datum"] else "") if x)
+            parts.append(
+                '<p style="margin:16px 0 4px"><strong>{name}</strong>{meta}'
+                '{rel}</p>'.format(
+                    name=f["name"],
+                    meta=" ({})".format(meta) if meta else "",
+                    rel=' — Relevanz: <strong>{}</strong>'.format(f["relevanz"])
+                        if f["relevanz"] else ""))
+            if f["begruendung"]:
+                parts.append('<p style="margin:0 0 4px;color:#334155">{}</p>'.format(
+                    f["begruendung"]))
+            if f["meldungen"]:
+                parts.append('<ul style="margin:0;padding-left:20px">')
+                for m in f["meldungen"]:
+                    parts.append(
+                        '<li style="margin:4px 0">{date}<a href="{url}" '
+                        'style="color:#0f172a">{title}</a></li>'.format(
+                            date="{}: ".format(_de_date(m["datum"])) if _de_date(m["datum"]) else "",
+                            url=m["url"], title=m["titel"]))
+                parts.append("</ul>")
+    if groups:
+        parts.append(
+            '<p style="margin:24px 0 6px;font-size:16px;font-weight:700">'
+            "Big-4-/Kanzlei-Beiträge ohne Primärquelle</p>"
+            "<p>Beiträge zu Themen, zu denen <strong>keine gescrapte "
+            "Primärquelle</strong> vorliegt — Kandidaten für einen neuen Scraper:</p>")
     for g in groups:
         parts.append(
-            '<p style="margin:20px 0 6px;font-weight:600">{}</p>'.format(g["thema"]))
+            '<p style="margin:20px 0 2px;font-weight:600">{}</p>'.format(g["thema"]))
+        assess = []
+        if g.get("relevanz"):
+            assess.append("Relevanz: <strong>{}</strong>".format(g["relevanz"]))
+        if g.get("aktualitaet"):
+            assess.append(g["aktualitaet"])
+        if g.get("rahmenwerk"):
+            assess.append("mögliches fehlendes Rahmenwerk: {}".format(g["rahmenwerk"]))
+        if assess:
+            parts.append(
+                '<p style="margin:0 0 6px;color:#334155;font-size:13px">{}</p>'.format(
+                    " · ".join(assess)))
         parts.append('<ul style="margin:0;padding-left:20px">')
         for a in g["artikel"]:
             date = _de_date(a["published"])
@@ -347,10 +548,18 @@ def _render_email(groups: List[dict]) -> str:
         parts.append("</ul>")
     parts.append(
         '<p style="color:#64748b;font-size:13px;margin-top:24px">Streng geprüft '
-        "gegen die gescrapten Dokumente der letzten {} Tage; jeder Beitrag wird "
-        "nur einmal gemeldet. Max. eine Mail pro Tag.</p>".format(DOC_WINDOW_DAYS))
+        "gegen die gescrapten Dokumente der letzten {} Tage; jeder Beitrag und "
+        "jedes Rahmenwerk wird nur einmal gemeldet. Max. eine Mail pro Tag.</p>".format(
+            DOC_WINDOW_DAYS))
     parts.append("</div>")
     return "".join(parts)
+
+
+def _mark_fw_checked(conn: sqlite3.Connection, doc_ids: List[int]) -> None:
+    now = utcnow()
+    for doc_id in doc_ids:
+        conn.execute("INSERT OR REPLACE INTO gap_fw_checked VALUES (?,?)",
+                     (doc_id, now))
 
 
 def run(conn: sqlite3.Connection, force: bool = False) -> dict:
@@ -367,31 +576,31 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
                           "strenge Prüfung möglich)", "gaps": 0}
 
     candidates = _candidates(conn)
-    if not candidates:
+    articles = _relevant_only(conn, candidates) if candidates else []
+    gaps: List[sqlite3.Row] = []
+    if articles:
+        docs = _recent_documents(conn)
+        covered = _coverage(articles, docs)
+        gaps = [a for a in articles if covered.get(a["article_id"]) is False]
+
+    fw_gaps, fw_checked = _framework_gaps(conn)
+
+    if not gaps and not fw_gaps:
+        _mark_fw_checked(conn, fw_checked)
         conn.execute("INSERT OR REPLACE INTO big4_gap_runs VALUES (?,0,0)", (today,))
         conn.commit()
-        return {"status": "keine neuen Artikel", "gaps": 0}
+        return {"status": "keine Lücken ({} Artikel geprüft, Rahmenwerk-Check "
+                          "ohne Befund)".format(len(candidates)), "gaps": 0}
 
-    articles = _relevant_only(conn, candidates)
-    if not articles:
-        conn.execute("INSERT OR REPLACE INTO big4_gap_runs VALUES (?,0,0)", (today,))
-        conn.commit()
-        return {"status": "keiner der {} Artikel regulatorisch relevant".format(
-            len(candidates)), "gaps": 0}
-
-    docs = _recent_documents(conn)
-    covered = _coverage(articles, docs)
-    gaps = [a for a in articles if covered.get(a["article_id"]) is False]
-
-    if not gaps:
-        conn.execute("INSERT OR REPLACE INTO big4_gap_runs VALUES (?,0,0)", (today,))
-        conn.commit()
-        return {"status": "alle {} Artikel abgedeckt".format(len(articles)), "gaps": 0}
-
-    groups = _group_by_topic(gaps)
-    subject = "Radar-Lücke: {} Beitrag/Beiträge ohne Primärquelle ({} Themen)".format(
-        len(gaps), len(groups))
-    err = _send_email(subject, _render_email(groups))
+    groups = _group_by_topic(gaps) if gaps else []
+    bits = []
+    if gaps:
+        bits.append("{} Beitrag/Beiträge ohne Primärquelle ({} Themen)".format(
+            len(gaps), len(groups)))
+    if fw_gaps:
+        bits.append("{} mögliche(s) fehlende(s) Rahmenwerk(e)".format(len(fw_gaps)))
+    subject = "Radar-Lücke: " + ", ".join(bits)
+    err = _send_email(subject, _render_email(groups, fw_gaps))
     if err:
         # Nichts als gemeldet markieren — nächster Lauf versucht es erneut.
         return {"status": "Mail fehlgeschlagen: {}".format(err), "gaps": len(gaps)}
@@ -400,8 +609,12 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
     for a in gaps:
         conn.execute("INSERT OR REPLACE INTO big4_gap_reported VALUES (?,?)",
                      (a["article_id"], now))
+    for f in fw_gaps:
+        conn.execute("INSERT OR REPLACE INTO gap_fw_reported VALUES (?,?,?)",
+                     (f["key"], f["name"], now))
+    _mark_fw_checked(conn, fw_checked)
     conn.execute("INSERT OR REPLACE INTO big4_gap_runs VALUES (?,1,?)",
                  (today, len(gaps)))
     conn.commit()
-    return {"status": "Mail verschickt", "gaps": len(gaps), "themen": len(groups),
-            "geprüft": len(candidates)}
+    return {"status": "Mail verschickt ({} Rahmenwerk-Vorschläge)".format(len(fw_gaps)),
+            "gaps": len(gaps), "themen": len(groups), "geprüft": len(candidates)}

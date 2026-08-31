@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T23:15:50Z",
+  "generated_at": "2026-08-31T15:46:25Z",
   "updates": {
     "amla": [
       {
@@ -1333,6 +1333,118 @@
         "refnum": "COM(2023)228"
       }
     ],
+    "emir": [
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen technischer Regulierungsstandards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 der Europäischen Kommission vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die der Initial Margin-Pflicht unterliegen, aber unter der EMIR-Schwelle von 8 Milliarden Euro für den Austausch von Initial Margins liegen. Gegenparteien unterhalb dieser Schwelle müssten demnach keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht wurde der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of the European Commission's Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements but below the EMIR threshold of €8 billion for exchanging initial margin. Counterparties below this threshold would no longer be required to exchange initial margin for either new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report has been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 der Europäischen Kommission vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Für diese Gegenparteien soll der Ausstieg aus den Initial Margin-Anforderungen erleichtert werden. Aktuell sind diese Gegenparteien vom Austausch der Initial Margin für neue, nicht geclearte OTC-Derivatkontrakte befreit, müssen diese aber für bestehende Kontrakte weiterhin austauschen. Mit den vorgeschlagenen Änderungen entfällt die Pflicht zum Austausch der Initial Margin für neue und bestehende Kontrakte, wenn der Schwellenwert unterschritten wird.\n\nDer Abschlussbericht und die RTS-Entwürfe wurden der Europäischen Kommission zur Billigung vorgelegt. Nach deren Prüfung und Annahme werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose to simplify the bilateral margin requirements of the European Commission’s Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. This is intended to facilitate the phase-out of initial margin requirements for these counterparties. Currently, such counterparties are exempt from exchanging initial margin for new uncleared OTC derivative contracts but must continue to exchange it for existing contracts. With the proposed amendments, the obligation to exchange initial margin for both new and existing contracts will be removed if the threshold is not met.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following its review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen technischer Regulierungsstandards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 der Europäischen Kommission vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die den Anforderungen an die initiale Marge unterliegen, aber unter der in EMIR vorgesehenen Schwelle von 8 Mrd. EUR für den Austausch initialer Margen liegen. Bisher waren diese Gegenparteien vom Austausch initialer Margen für neue, nicht geclearte OTC-Derivatkontrakte befreit, mussten aber weiterhin initiale Margen für bestehende Kontrakte austauschen. Mit den vorgeschlagenen Änderungen entfällt diese Pflicht für neue und bestehende Kontrakte, wenn die Schwelle unterschritten wird.\n\nDer Abschlussbericht wurde der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose to simplify the bilateral margin requirements of the European Commission’s Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements but below the €8 billion threshold for exchanging initial margin as foreseen by EMIR. Previously, these counterparties were exempt from exchanging initial margin for new uncleared OTC derivative contracts but continued to exchange initial margin for existing contracts. With the proposed amendments, this obligation will be removed for both new and existing contracts if the threshold is not met.\n\nThe final report has been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.eiopa.europa.eu/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements-2026-08-03_en",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Final Report on amending RTS on uncleared OTC derivatives",
+          "en": "Final Report on amending RTS on uncleared OTC derivatives"
+        },
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bestehende Kontrakte auszuweiten.\n\nKonkret wird vorgeschlagen, dass Gegenparteien, deren durchschnittlicher monatlicher Nominalbetrag (AANA) an nicht zentral geclearten OTC-Derivaten unter 8 Milliarden Euro liegt, auch für bestehende Verträge von der Erhebung von Initial Margins befreit werden können. Dies soll den administrativen Aufwand reduzieren und eine Angleichung an die Regelungen in anderen Jurisdiktionen herbeiführen. Die derzeitige Regelung befreit nur neue Geschäfte, was zu Komplexität und einem ungleichen Wettbewerbsumfeld führen kann.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung durch die Kommission und der Nichtbeanstandung durch das Europäische Parlament und den Rat erfolgt die Veröffentlichung im Amtsblatt der Europäischen Union.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed amendments concern initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nSpecifically, it is proposed that counterparties whose aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives falls below EUR 8 billion may also be exempt from collecting initial margins for existing contracts. This aims to reduce administrative burden and align with regulations in other jurisdictions. The current rule only exempts new trades, which can lead to complexity and an unlevel playing field.\n\nThe final report will now be submitted to the European Commission for endorsement as a Delegated Regulation. Following endorsement by the Commission and no objection from the European Parliament and the Council, it will be published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "iosco.org",
+        "ti": {
+          "de": "Public quantitative disclosure standards for central counterparties",
+          "en": "Public quantitative disclosure standards for central counterparties"
+        },
+        "s": {
+          "de": "Der Bericht von IOSCO und dem Committee on Payments and Market Infrastructures (CPMI) legt finale quantitative Offenlegungsstandards für zentrale Gegenparteien (CCPs) fest. Diese Standards sollen die Transparenz und Vergleichbarkeit von CCPs verbessern, indem sie einheitliche Metriken und Formate für die Veröffentlichung wichtiger Daten vorgeben.\n\nDie Regelungen sind relevant für alle zentralen Gegenparteien, die Finanzmärkte bedienen. Sie müssen zukünftig detaillierte quantitative Informationen über ihre Risikomanagementpraktiken, Sicherheitenanforderungen und finanziellen Ressourcen öffentlich zugänglich machen. Dies ermöglicht Marktteilnehmern und Aufsichtsbehörden eine bessere Einschätzung der Stabilität und Widerstandsfähigkeit von CCPs.\n\nKommentare zu diesem Bericht können bis zum 30.06.2026 eingereicht werden.",
+          "en": "The report by IOSCO and the Committee on Payments and Market Infrastructures (CPMI) establishes final quantitative disclosure standards for central counterparties (CCPs). These standards aim to enhance the transparency and comparability of CCPs by prescribing uniform metrics and formats for publishing key data.\n\nThese regulations are relevant for all central counterparties serving financial markets. They will be required to publicly disclose detailed quantitative information on their risk management practices, collateral requirements, and financial resources. This will enable market participants and supervisors to better assess the stability and resilience of CCPs.\n\nComments on this report should be submitted by June 30, 2026."
+        },
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
+        "imp": "medium",
+        "refnum": "OR/05/2026"
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "iosco.org",
+        "ti": {
+          "de": "Resilience of central counterparties (CCPs): Further guidance on the PFMI",
+          "en": "Resilience of central counterparties (CCPs): Further guidance on the PFMI"
+        },
+        "s": {
+          "de": "Der Bericht von IOSCO und CPMI bietet zusätzliche Leitlinien zur Widerstandsfähigkeit zentraler Gegenparteien (CCPs). Er konkretisiert die Anwendung der Principles for Financial Market Infrastructures (PFMI) im Hinblick auf die operationelle und finanzielle Resilienz von CCPs.\n\nDiese Leitlinien sind relevant für alle CCPs, da sie detaillierte Erwartungen an deren Risikomanagement und ihre Fähigkeit zur Aufrechterhaltung kritischer Funktionen unter Stressbedingungen formulieren. Finanzinstitute, die mit CCPs interagieren, sollten die Einhaltung dieser Prinzipien durch ihre Gegenparteien überprüfen.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
+          "en": "The report by IOSCO and CPMI provides further guidance on the resilience of central counterparties (CCPs). It specifies the application of the Principles for Financial Market Infrastructures (PFMI) with regard to the operational and financial resilience of CCPs.\n\nThese guidelines are relevant for all CCPs, as they formulate detailed expectations for their risk management and their ability to maintain critical functions under stressed conditions. Financial institutions interacting with CCPs should review their counterparties' adherence to these principles.\n\nComments on this report should be submitted by June 30, 2026."
+        },
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
+        "imp": "medium",
+        "refnum": "OR/04/2026"
+      }
+    ],
     "consumer": [
       {
         "d": "31.07.2026",
@@ -1861,6 +1973,122 @@
         "refnum": "2026_7836"
       }
     ],
+    "bmr": [
+      {
+        "d": "12.02.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Judgment of the Court in Case C-471/24 PKO BP (Critical benchmark)",
+          "en": "Judgment of the Court in Case C-471/24 PKO BP (Critical benchmark)"
+        },
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass eine Bank Verbrauchern nicht die Details der Methodik eines rechtlich geregelten Referenzindexes wie WIBOR offenlegen muss, der zur Berechnung eines variablen Zinssatzes für Immobilienkredite verwendet wird. Die Informationspflicht der Bank unterscheidet sich von den Pflichten des Index-Administrators, der für die Veröffentlichung der Methodik verantwortlich ist. Eine Vertragsklausel, die einen solchen Referenzindex enthält, führt grundsätzlich nicht allein zu einem erheblichen Ungleichgewicht zum Nachteil des Verbrauchers.\n\nDiese Entscheidung ist relevant für Banken, die Immobilienkredite mit variablen Zinssätzen anbieten, die an regulierte Referenzindizes gekoppelt sind. Sie präzisiert den Umfang der Transparenzpflichten von Kreditinstituten gegenüber Verbrauchern und stellt klar, dass die Verantwortung für die detaillierte Offenlegung der Index-Methodik beim Administrator liegt. Die Bank muss lediglich auf die vom Administrator bereitgestellten Informationen verweisen.\n\nDas Urteil des EuGH in der Rechtssache C-471/24 vom 12.02.2026 ist für nationale Gerichte bindend, wenn diese über vergleichbare Fragen zu befinden haben.",
+          "en": "The European Court of Justice (ECJ) has ruled that a bank is not obliged to disclose to consumers the details of the methodology of a legally regulated benchmark, such as WIBOR, used to calculate a variable interest rate for property loans. The bank's information obligation differs from that of the index administrator, who is responsible for publishing the methodology. A contractual clause containing such a benchmark does not, in principle, solely lead to a significant imbalance to the detriment of the consumer.\n\nThis decision is relevant for banks offering property loans with variable interest rates linked to regulated benchmarks. It clarifies the scope of transparency obligations for credit institutions towards consumers, stating that the responsibility for detailed disclosure of the index methodology lies with the administrator. The bank merely needs to refer to the information provided by the administrator.\n\nThe ECJ's judgment in Case C-471/24 of 12.02.2026 is binding on national courts when they have to rule on similar issues."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260014de.pdf",
+        "imp": "high",
+        "refnum": "C-471/24"
+      },
+      {
+        "d": "28.03.2025",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Review of the scope and third-country regime of the Benchmark Regulation",
+          "en": "Review of the scope and third-country regime of the Benchmark Regulation"
+        },
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung des Anwendungsbereichs und des Drittstaatenregimes der Benchmark-Verordnung (BMR) eingeleitet. Dies deutet auf eine mögliche Anpassung der Vorschriften hin, die die Erstellung und Verwendung von Benchmarks in der EU regeln.\n\nFinanzunternehmen, die Benchmarks nutzen oder bereitstellen, sollten die Entwicklung dieser Überprüfung genau verfolgen. Änderungen könnten sich auf die Verfügbarkeit von Benchmarks aus Drittstaaten oder auf die Anforderungen an die Nutzung bestimmter Referenzwerte auswirken.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was bedeutet, dass die Kommission aktiv an der Ausarbeitung oder Finalisierung eines Legislativvorschlags arbeitet.",
+          "en": "The European Commission has initiated a review of the scope and third-country regime of the Benchmark Regulation (BMR). This indicates a potential adjustment of the rules governing the creation and use of benchmarks within the EU.\n\nFinancial firms that use or provide benchmarks should closely monitor the developments of this review. Changes could impact the availability of benchmarks from third countries or the requirements for using specific reference values.\n\nThe current procedural status is the adoption workflow, meaning the Commission is actively working on drafting or finalizing a legislative proposal."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13762",
+        "imp": "medium",
+        "refnum": "Ares(2023)1488307"
+      },
+      {
+        "d": "10.12.2021",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators",
+          "en": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators"
+        },
+        "s": {
+          "de": "Der Titel der Meldung deutet auf mögliche Geldbußen oder Strafzahlungen der ESMA für Administratoren kritischer Benchmarks und anerkannte Drittland-BMR-Administratoren hin. Es handelt sich um einen Legislativvorschlag der Europäischen Kommission.\n\nDie Meldung ist für Administratoren von kritischen Benchmarks sowie für anerkannte BMR-Administratoren aus Drittländern relevant. Sie müssen sich auf mögliche Sanktionen durch die ESMA einstellen.\n\nDer Verfahrensstand ist als „Init Planned“ angegeben, was auf eine frühe Phase der Gesetzgebungsinitiative hindeutet.",
+          "en": "The title of the notification indicates potential fines or penalty payments by ESMA for administrators of critical benchmarks and recognized third-country BMR administrators. This is a legislative proposal from the European Commission.\n\nThis notification is relevant for administrators of critical benchmarks and recognized third-country BMR administrators. They should prepare for potential sanctions by ESMA.\n\nThe procedural status is indicated as 'Init Planned', suggesting an early stage of the legislative initiative."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13296",
+        "imp": "medium",
+        "refnum": "Ares(2021)7521504"
+      },
+      {
+        "d": "11.08.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Review of the Benchmark Regulation",
+          "en": "Review of the Benchmark Regulation"
+        },
+        "s": {
+          "de": "Der vorliegende Vorschlag der Europäischen Kommission betrifft die Überprüfung der Benchmark-Verordnung (BMR). Es handelt sich um einen Legislativvorschlag, der darauf abzielt, die bestehenden Regelungen für Benchmarks zu evaluieren und gegebenenfalls anzupassen.\n\nDie Überprüfung ist für Finanzunternehmen relevant, die Benchmarks nutzen oder bereitstellen, da sie potenzielle Änderungen an den Anforderungen und der Funktionsweise der BMR mit sich bringen könnte. Dies betrifft insbesondere die Art und Weise, wie Benchmarks in Finanzprodukten und -verträgen verwendet werden.\n\nDer aktuelle Verfahrensstand ist der „Adoption Workflow“, was bedeutet, dass der Vorschlag sich in einem fortgeschrittenen Stadium des Gesetzgebungsprozesses befindet.",
+          "en": "This proposal from the European Commission concerns the review of the Benchmark Regulation (BMR). It is a legislative proposal aimed at evaluating and, if necessary, adjusting the existing rules for benchmarks.\n\nThe review is relevant for financial undertakings that use or provide benchmarks, as it could lead to potential changes in the requirements and functioning of the BMR. This particularly affects how benchmarks are used in financial products and contracts.\n\nThe current procedural status is “Adoption Workflow,” indicating that the proposal is in an advanced stage of the legislative process."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12268",
+        "imp": "medium",
+        "refnum": "Ares(2020)1637928"
+      },
+      {
+        "d": "28.04.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Delegated Act on the review of the calculation method used to determine the thresholds of critical benchmarks",
+          "en": "Delegated Act on the review of the calculation method used to determine the thresholds of critical benchmarks"
+        },
+        "s": {
+          "de": "Der Delegated Act befasst sich mit der Überprüfung der Berechnungsmethode zur Bestimmung der Schwellenwerte für kritische Benchmarks. Dies ist ein legislativer Vorschlag der Europäischen Kommission.\n\nDie genauen Auswirkungen und die Relevanz für Finanzunternehmen lassen sich ohne weitere Details zum Inhalt des Vorschlags nicht beurteilen. Es ist jedoch davon auszugehen, dass Unternehmen, die Benchmarks verwenden oder bereitstellen, von Änderungen der Schwellenwerte betroffen sein könnten.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was auf eine frühe Phase des Gesetzgebungsprozesses hindeutet.",
+          "en": "The Delegated Act concerns the review of the calculation method used to determine the thresholds of critical benchmarks. This is a legislative proposal from the European Commission.\n\nThe precise impact and relevance for financial undertakings cannot be assessed without further details on the content of the proposal. However, it can be assumed that companies using or providing benchmarks could be affected by changes to the thresholds.\n\nThe current procedural status is \"Init Planned,\" indicating an early stage of the legislative process."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12347",
+        "imp": "low",
+        "refnum": "Ares(2020)2203176"
+      },
+      {
+        "d": "28.04.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Delegated Act on the review of the calculation method used to determine the thresholds of significant benchmarks",
+          "en": "Delegated Act on the review of the calculation method used to determine the thresholds of significant benchmarks"
+        },
+        "s": {
+          "de": "Die Europäische Kommission plant eine Überarbeitung der Berechnungsmethode zur Bestimmung der Schwellenwerte für signifikante Benchmarks. Dies betrifft einen Delegierten Rechtsakt, der die Kriterien für die Einstufung von Benchmarks als signifikant anpassen soll.\n\nDie Anpassung der Berechnungsmethode könnte Auswirkungen auf Finanzinstitute haben, die Benchmarks nutzen oder bereitstellen. Je nach den neuen Schwellenwerten könnten sich die regulatorischen Anforderungen für bestimmte Benchmarks ändern, was eine Neubewertung der Compliance-Pflichten erforderlich macht.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überarbeitung der Berechnungsmethode geplant ist.",
+          "en": "The European Commission plans to revise the calculation method used to determine the thresholds for significant benchmarks. This concerns a delegated act that aims to adjust the criteria for classifying benchmarks as significant.\n\nThe adjustment of the calculation method could impact financial institutions that use or provide benchmarks. Depending on the new thresholds, regulatory requirements for certain benchmarks might change, necessitating a re-evaluation of compliance obligations.\n\nThe current procedural status is 'Init Planned', indicating that the initiative to revise the calculation method is planned."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12346",
+        "imp": "low",
+        "refnum": "Ares(2020)2203125"
+      }
+    ],
     "nis2": [
       {
         "d": "06.01.2026",
@@ -1915,6 +2143,27 @@
         },
         "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2025/251205_NIS-2-Umsetzungsgesetz_in_Kraft.html",
         "imp": "high"
+      }
+    ],
+    "dltpilot": [
+      {
+        "d": "11.11.2025",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "iosco.org",
+        "ti": {
+          "de": "Tokenization of Financial Assets",
+          "en": "Tokenization of Financial Assets"
+        },
+        "s": {
+          "de": "Der IOSCO-Bericht „Tokenization of Financial Assets“ analysiert die Tokenisierung von Finanzanlagen. Er beleuchtet die damit verbundenen Chancen und Risiken für die Finanzmärkte und Regulierungsbehörden. Ziel ist es, ein besseres Verständnis für diese neue Technologie zu schaffen.\n\nDer Bericht richtet sich an Finanzinstitute, die sich mit der Tokenisierung von Vermögenswerten befassen oder dies planen. Er bietet eine Grundlage für die Entwicklung zukünftiger Regulierungsansätze und soll die Marktintegrität sowie den Anlegerschutz gewährleisten.\n\nDer Bericht ist ein Abschlussbericht des IOSCO-Vorstands und dient als Orientierungshilfe für die weitere Entwicklung in diesem Bereich.",
+          "en": "The IOSCO report “Tokenization of Financial Assets” analyzes the tokenization of financial assets. It highlights the associated opportunities and risks for financial markets and regulators. The aim is to foster a better understanding of this new technology.\n\nThe report is addressed to financial institutions that are involved in or planning to engage with asset tokenization. It provides a basis for developing future regulatory approaches and aims to ensure market integrity and investor protection.\n\nThis report is a final report from the IOSCO Board and serves as guidance for further developments in this area."
+        },
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf",
+        "imp": "medium",
+        "refnum": "FR/17/2025"
       }
     ],
     "mar": [

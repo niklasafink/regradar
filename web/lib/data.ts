@@ -208,7 +208,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"marisk", jur:"DE",
-    about:{de:"Die aufsichtliche Auslegung des § 25a KWG durch die BaFin: Organisation, Risikosteuerung, Kreditgeschäft, Handel und Auslagerung.",en:"BaFin's supervisory interpretation of § 25a KWG: organisation, risk control, lending, trading and outsourcing."}, topic:"PRU", ents:["CI"],
+    about:{de:"Die aufsichtliche Auslegung des § 25a KWG durch die BaFin: Organisation, Risikosteuerung, Kreditgeschäft, Handel und Auslagerung.",en:"BaFin's supervisory interpretation of § 25a KWG: organisation, risk control, lending, trading and outsourcing."}, topic:"PRU", ents:["CI","OTH"],
     n:{de:"MaRisk: Mindestanforderungen an das Risikomanagement",en:"MaRisk: minimum requirements for risk management"},
     ref:"BaFin-Rundschreiben", cond:{k:"juris",any:["DE"]},
     condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
@@ -297,7 +297,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"mar", jur:"EU",
-    about:{de:"Verbot von Insidergeschäften und Marktmanipulation, Ad-hoc-Publizität, Insiderlisten und Eigengeschäfte von Führungskräften.",en:"Prohibition of insider dealing and market manipulation, disclosure of inside information, insider lists and managers' transactions."}, topic:"MKT", ents:["CI","AM","IF"],
+    about:{de:"Verbot von Insidergeschäften und Marktmanipulation, Ad-hoc-Publizität, Insiderlisten und Eigengeschäfte von Führungskräften.",en:"Prohibition of insider dealing and market manipulation, disclosure of inside information, insider lists and managers' transactions."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"Marktmissbrauchsverordnung",en:"Market Abuse Regulation"},
     ref:"VO (EU) 596/2014", cond:{k:"act",any:["dealing","issuance","portfolio"]},
     condL:{de:"nur bei Handels-, Emissions- oder Verwaltungstätigkeit",en:"only for dealing, issuance or management activity"},
@@ -319,6 +319,12 @@ export const FRAMEWORKS: Framework[] = [
        s:{de:"Entwurf sieht ein digitales, mehrschichtiges Format und einen neuen Nachhaltigkeitsabschnitt vor.",
           en:"Draft provides for a digital, layered format and a new sustainability section."}}
     ]},
+
+  { id:"ecspr", jur:"EU+DE",
+    about:{de:"Einheitliches EU-Zulassungs- und Aufsichtsregime für Schwarmfinanzierungsdienstleister (Crowdinvesting und Crowdlending bis 5 Mio. €): Anlagebasisinformationsblatt, Anlegerschutz- und Interessenkonfliktregeln, ESMA-Register. Flankiert von den delegierten Verordnungen (EU) 2022/2111–2122 und in Deutschland vom Schwarmfinanzierung-Begleitgesetz.",en:"Uniform EU authorisation and supervision regime for crowdfunding service providers (investment- and lending-based up to €5m): key investment information sheet, investor protection and conflict-of-interest rules, ESMA register. Flanked by Delegated Regulations (EU) 2022/2111–2122 and, in Germany, by the crowdfunding accompanying act."}, topic:"MKT", ents:["CI","IF","PI","OTH"],
+    n:{de:"ECSPR: Schwarmfinanzierung / Crowdfunding",en:"ECSPR: crowdfunding service providers"},
+    ref:"VO (EU) 2020/1503, RL (EU) 2020/1504, Del. VO (EU) 2022/2111–2122, VermAnlG", cond:null,
+    u:[]},
 
   { id:"psd3", jur:"EU",
     about:{de:"Nachfolgeregime zur PSD2: Zulassung, starke Kundenauthentifizierung, Zugang zu Zahlungskonten und Haftung bei Betrug.",en:"Successor regime to PSD2: authorisation, strong customer authentication, access to payment accounts and fraud liability."}, topic:"PAY", ents:["CI","PI"],
@@ -349,7 +355,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"mica", jur:"EU",
-    about:{de:"Zulassungs- und Verhaltensregeln für Emittenten von Kryptowerten und für Kryptowertedienstleister in der EU.",en:"Authorisation and conduct rules for issuers of crypto-assets and for crypto-asset service providers in the EU."}, topic:"PAY", ents:["CI","IF","PI"],
+    about:{de:"Zulassungs- und Verhaltensregeln für Emittenten von Kryptowerten und für Kryptowertedienstleister in der EU.",en:"Authorisation and conduct rules for issuers of crypto-assets and for crypto-asset service providers in the EU."}, topic:"PAY", ents:["CI","AM","IF","PI"],
     n:{de:"MiCA: Märkte für Kryptowerte",en:"MiCA: markets in crypto-assets"},
     ref:"VO (EU) 2023/1114", cond:{k:"prod",any:["crypto"]},
     condL:{de:"nur bei Kryptowerten im Angebot",en:"only where crypto-assets are offered"},
@@ -360,6 +366,17 @@ export const FRAMEWORKS: Framework[] = [
           en:"Requires segregated wallet structures per client and daily reconciliation of holdings."}}
     ]},
 
+  { id:"dltpilot", jur:"EU+DE",
+    about:{de:"Pilotregelung für Marktinfrastrukturen auf Basis der Distributed-Ledger-Technologie: Handel und Abwicklung tokenisierter Finanzinstrumente mit befristeten Ausnahmen von MiFIR und CSDR; in Deutschland flankiert durch elektronische Wertpapiere und Kryptowertpapierregister nach dem eWpG.",en:"Pilot regime for market infrastructures based on distributed ledger technology: trading and settlement of tokenised financial instruments under temporary exemptions from MiFIR and CSDR; flanked in Germany by electronic securities and crypto securities registers under the eWpG."}, topic:"MKT", ents:["CI","AM","IF"],
+    n:{de:"DLT-Pilotregelung & elektronische Wertpapiere",en:"DLT Pilot Regime & electronic securities"},
+    ref:"VO (EU) 2022/858, eWpG", cond:{k:"prod",any:["crypto"]},
+    condL:{de:"nur bei Kryptowerten oder tokenisierten Finanzinstrumenten",en:"only where crypto-assets or tokenised financial instruments are involved"},
+    u:[]},
+
+  /* Bewusst nur AM: Banken sind zwar als Verwahrstellen (§ 68 KAGB) von
+     AIFMD-II-Änderungen mitbetroffen, der Zielgruppenschnitt folgt hier aber
+     der Manager-Sicht – Verwahrstellenpflichten laufen für Banken über
+     outsourcing/mifid mit. */
   { id:"aifmd2", jur:"EU",
     about:{de:"Verwaltung alternativer Investmentfonds und OGAW: Zulassung, Organisation, Auslagerung, Liquiditätsinstrumente und Verwahrstelle.",en:"Management of alternative investment funds and UCITS: authorisation, organisation, delegation, liquidity tools and depositary."}, topic:"FND", ents:["AM"],
     n:{de:"AIFMD II und OGAW-Richtlinie",en:"AIFMD II and UCITS Directive"},
@@ -463,7 +480,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"idd", jur:"EU",
-    about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["INS"],
+    about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["CI","INS"],
     n:{de:"Versicherungsvertriebsrichtlinie",en:"Insurance Distribution Directive"},
     ref:"RL (EU) 2016/97", cond:{k:"cli",any:["retail"]},
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
@@ -477,6 +494,20 @@ export const FRAMEWORKS: Framework[] = [
   /* Die folgenden Rahmenwerke starten ohne Beispieldaten; ihre Updates
      kommen ausschließlich aus den Primärquellen (EDPB, BfDI, BSI, EU u. a.)
      über den Scraper-Export in live.json. */
+
+  { id:"emir", jur:"EU",
+    about:{de:"Regeln für Derivategeschäfte: Clearingpflicht über zentrale Gegenparteien, Risikominderung und Einschusspflichten für nicht geclearte OTC-Derivate sowie Meldung aller Kontrakte an Transaktionsregister.",en:"Rules for derivatives: mandatory clearing through central counterparties, risk mitigation and margin requirements for uncleared OTC derivatives, and reporting of all contracts to trade repositories."}, topic:"MKT", ents:["CI","AM","IF","INS"],
+    n:{de:"EMIR: Derivate und zentrales Clearing",en:"EMIR: derivatives and central clearing"},
+    ref:"VO (EU) 648/2012, VO (EU) 2024/2987", cond:{k:"prod",any:["otc"]},
+    condL:{de:"nur bei Einsatz von OTC-Derivaten",en:"only where OTC derivatives are used"},
+    u:[]},
+
+  { id:"bmr", jur:"EU",
+    about:{de:"Anforderungen an Administratoren und beaufsichtigte Verwender von Referenzwerten wie Zinssätzen und Indizes – einschließlich Zulassung, Methodik und Ausweichplänen für den Wegfall eines Referenzwerts.",en:"Requirements for administrators and supervised users of benchmarks such as interest rates and indices – including authorisation, methodology and fallback plans for benchmark cessation."}, topic:"MKT", ents:["CI","AM","IF"],
+    n:{de:"Benchmark-Verordnung",en:"Benchmark Regulation"},
+    ref:"VO (EU) 2016/1011", cond:{k:"act",any:["portfolio","dealing","issuance"]},
+    condL:{de:"nur bei Verwendung von Referenzwerten in Finanzinstrumenten oder Fonds",en:"only where benchmarks are used in financial instruments or funds"},
+    u:[]},
 
   { id:"dsgvo", jur:"EU+DE",
     about:{de:"Das allgemeine Datenschutzrecht für die Verarbeitung personenbezogener Daten: Rechtsgrundlagen, Betroffenenrechte, Auftragsverarbeitung, Drittlandtransfers und Meldepflichten bei Datenpannen.",en:"General data protection law for processing personal data: legal bases, data subject rights, processors, third-country transfers and breach notification duties."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
@@ -583,6 +614,11 @@ export const ABOUT_LONG: Record<string, [Txt, Txt]> = {
      en:"The PRIIPs Regulation requires a key information document (KID) of no more than three pages for packaged retail and insurance-based investment products, with standardised information on risk, performance scenarios and costs."},
     {de:"Das KID muss Privatkunden rechtzeitig vor Vertragsschluss zur Verfügung stehen und laufend aktualisiert werden. Die Methodik der Szenarien und Kostendarstellung ist in technischen Standards detailliert geregelt und Gegenstand fortlaufender Überarbeitung.",
      en:"The KID must be provided to retail investors in good time before conclusion and kept up to date. The methodology for scenarios and cost disclosure is set out in detailed technical standards and subject to ongoing revision."}],
+  ecspr: [
+    {de:"Die European Crowdfunding Service Providers Regulation (VO (EU) 2020/1503 vom 07.10.2020, anwendbar seit 10.11.2021) schafft ein einheitliches EU-Regime für Schwarmfinanzierungsplattformen: Zulassung durch die nationale Aufsicht (in Deutschland die BaFin), EU-Pass, Pflichten zu Interessenkonflikten, Auslagerung und Verwahrung sowie ein standardisiertes Anlagebasisinformationsblatt (KIIS) je Angebot bis 5 Mio. €. Die begleitende RL (EU) 2020/1504 nimmt zugelassene Dienstleister aus dem MiFID-II-Anwendungsbereich aus.",
+     en:"The European Crowdfunding Service Providers Regulation (Regulation (EU) 2020/1503 of 7 Oct 2020, applicable since 10 Nov 2021) creates a uniform EU regime for crowdfunding platforms: authorisation by the national supervisor (BaFin in Germany), an EU passport, duties on conflicts of interest, outsourcing and safekeeping, and a standardised key investment information sheet (KIIS) per offer up to €5m. The accompanying Directive (EU) 2020/1504 exempts authorised providers from MiFID II."},
+    {de:"Konkretisiert wird das Regime durch die zwölf delegierten Verordnungen (EU) 2022/2111 bis 2022/2122 vom 13.07.2022 (u. a. Beschwerdeverfahren, Interessenkonflikte, Ausfallquoten, Eingangswissenstest und KIIS) sowie ESMA-Q&As und das ESMA-Register der zugelassenen Dienstleister. In Deutschland hat das Schwarmfinanzierung-Begleitgesetz vom 03.06.2021 die Durchführung geregelt und KAGB, WpHG und VermAnlG angepasst; rein nationale Schwarmfinanzierung nach § 2a VermAnlG besteht daneben fort.",
+     en:"The regime is fleshed out by the twelve Delegated Regulations (EU) 2022/2111 to 2022/2122 of 13 Jul 2022 (complaint handling, conflicts of interest, default rates, the entry knowledge test and the KIIS, among others), plus ESMA Q&As and the ESMA register of authorised providers. In Germany, the crowdfunding accompanying act of 3 Jun 2021 governed implementation and amended the KAGB, WpHG and VermAnlG; purely national crowdfunding under § 2a VermAnlG continues alongside."}],
   psd3: [
     {de:"Das PSD3-Paket führt Zahlungsdienste- und E-Geld-Aufsicht in einem Regime zusammen: Die Richtlinie regelt Zulassung und laufende Aufsicht der Institute, während die neue Zahlungsdiensteverordnung (PSR) die Pflichten im Kundenverhältnis unmittelbar und EU-weit einheitlich festlegt.",
      en:"The PSD3 package merges payment services and e-money supervision into one regime: the directive covers authorisation and ongoing supervision, while the new Payment Services Regulation (PSR) sets the customer-facing rules directly and uniformly across the EU."},
@@ -598,6 +634,11 @@ export const ABOUT_LONG: Record<string, [Txt, Txt]> = {
      en:"MiCAR creates the first uniform EU regime for crypto-assets outside existing financial regulation: issuers of e-money tokens and asset-referenced tokens need authorisation, with whitepaper, own funds and reserve requirements."},
     {de:"Kryptowertedienstleister (CASPs) — vom Verwahrer bis zur Handelsplattform — unterliegen Zulassung, Organisations- und Wohlverhaltenspflichten sowie Regeln gegen Marktmissbrauch in Kryptowerten. Bestehende nationale Regime wie das deutsche Kryptoverwahrgeschäft gehen im EU-Regime auf.",
      en:"Crypto-asset service providers (CASPs) — from custodians to trading platforms — are subject to authorisation, organisational and conduct duties, plus market abuse rules for crypto-assets. Existing national regimes such as Germany's crypto custody licence are absorbed into the EU framework."}],
+  dltpilot: [
+    {de:"Die DLT-Pilotregelung (VO (EU) 2022/858, anwendbar seit dem 23.03.2023) erlaubt es Wertpapierfirmen, Marktbetreibern und Zentralverwahrern, Handelssysteme (DLT-MTF), Abwicklungssysteme (DLT-SS) oder kombinierte Handels- und Abwicklungssysteme (DLT-TSS) für tokenisierte Finanzinstrumente zu betreiben — mit befristeten, an Auflagen geknüpften Ausnahmen von MiFIR und CSDR, etwa vom Intermediärszwang und von einzelnen Meldepflichten. Zulässig sind nur kleinere Emissionen (u. a. Aktien, Anleihen, Fondsanteile) unterhalb fester Schwellenwerte; die besondere Erlaubnis erteilt die nationale Aufsicht — in Deutschland die BaFin —, ESMA gibt Leitlinien und Stellungnahmen dazu ab und führt das Register der zugelassenen DLT-Marktinfrastrukturen.",
+     en:"The DLT Pilot Regime (Regulation (EU) 2022/858, applicable since 23 March 2023) allows investment firms, market operators and CSDs to operate trading venues (DLT MTF), settlement systems (DLT SS) or combined trading and settlement systems (DLT TSS) for tokenised financial instruments — under temporary, condition-bound exemptions from MiFIR and CSDR, for instance from mandatory intermediation and certain reporting duties. Only smaller issuances (shares, bonds, fund units, among others) below fixed thresholds qualify; the specific permission is granted by the national supervisor — BaFin in Germany — while ESMA issues guidelines and opinions and maintains the register of authorised DLT market infrastructures."},
+    {de:"In Deutschland schafft das eWpG seit 2021 die zivilrechtliche Grundlage für elektronische Wertpapiere ohne Urkunde: Zentralregisterwertpapiere bei einer Wertpapiersammelbank sowie Kryptowertpapiere in einem dezentral geführten Kryptowertpapierregister, dessen Führung eine BaFin-Erlaubnis nach dem KWG voraussetzt; das Zukunftsfinanzierungsgesetz hat das Regime auf elektronische Aktien erweitert. Parallel erproben EZB und Bundesbank — u. a. mit der Trigger-Lösung — die Abwicklung von DLT-Transaktionen in Zentralbankgeld; aus der Auswertung der Pilotregelung durch ESMA und EU-Kommission kann eine Verlängerung oder Überführung in ein dauerhaftes Regime folgen.",
+     en:"In Germany, the eWpG has since 2021 provided the civil-law basis for electronic securities without a physical certificate: central register securities held with a central securities depository, and crypto securities recorded in a decentralised crypto securities register whose operation requires a BaFin licence under the KWG; the Future Financing Act extended the regime to electronic shares. In parallel, the ECB and the Bundesbank — including via the trigger solution — are testing settlement of DLT transactions in central bank money; the evaluation of the pilot regime by ESMA and the European Commission may lead to an extension or a permanent framework."}],
   aifmd2: [
     {de:"Die AIFMD-Novelle verschärft die Regeln für Fondsverwalter: Delegationsstrukturen müssen substanzhaltig bleiben und werden aufsichtlich gemeldet, kreditvergebende Fonds erhalten erstmals einen harmonisierten Rahmen mit Risikodiversifizierungs- und Rückbehaltspflichten.",
      en:"The AIFMD review tightens the rules for fund managers: delegation structures must retain substance and are reported to supervisors, and loan-originating funds get a harmonised framework with risk diversification and retention requirements for the first time."},
@@ -638,6 +679,16 @@ export const ABOUT_LONG: Record<string, [Txt, Txt]> = {
      en:"The IDD harmonises insurance distribution in the EU: intermediaries and insurers must act honestly, fairly and in the customer's best interest, assess demands and needs, and provide a product information document before conclusion."},
     {de:"Für Versicherungsanlageprodukte gelten zusätzlich MiFID-ähnliche Regeln zu Interessenkonflikten, Zuwendungen und Geeignetheit; die Produktfreigabe verlangt einen definierten Zielmarkt. Die EU-Kleinanlegerstrategie stellt Provisionsregeln und Preis-Leistungs-Vorgaben derzeit auf den Prüfstand.",
      en:"For insurance-based investment products, MiFID-style rules on conflicts of interest, inducements and suitability apply in addition; product approval requires a defined target market. The EU retail investment strategy is currently re-examining commission rules and value-for-money requirements."}],
+  emir: [
+    {de:"EMIR verpflichtet finanzielle Gegenparteien — darunter Banken, Wertpapierinstitute, Versicherer sowie OGAW und AIF mit ihren Verwaltern — standardisierte OTC-Derivate über zugelassene zentrale Gegenparteien (CCPs) zu clearen. Für nicht geclearte Geschäfte gelten Risikominderungstechniken wie rechtzeitige Bestätigung, Portfolioabstimmung und der bilaterale Austausch von Sicherheiten; sämtliche Derivatekontrakte sind an Transaktionsregister zu melden.",
+     en:"EMIR obliges financial counterparties — including banks, investment firms, insurers and UCITS and AIFs together with their managers — to clear standardised OTC derivatives through authorised central counterparties (CCPs). Uncleared trades are subject to risk mitigation techniques such as timely confirmation, portfolio reconciliation and bilateral margining; all derivative contracts must be reported to trade repositories."},
+    {de:"Die EMIR-3.0-Novelle führt das aktive Konto ein: Marktteilnehmer mit wesentlichen Positionen in bestimmten Euro-Zinsderivaten müssen einen Teil davon über EU-CCPs clearen, um die Abhängigkeit von Drittstaaten-Clearinghäusern zu verringern. Daneben werden Meldewesen und Intragruppen-Ausnahmen vereinfacht. Für Fonds greifen die Pflichten auf Fondsebene — in der Verantwortung der Verwaltungsgesellschaft.",
+     en:"The EMIR 3.0 reform introduces the active account: market participants with material positions in certain euro interest rate derivatives must clear part of them through EU CCPs to reduce reliance on third-country clearing houses. Reporting and intragroup exemptions are simplified alongside. For funds, the duties apply at fund level — under the responsibility of the management company."}],
+  bmr: [
+    {de:"Die Benchmark-Verordnung regelt Erstellung, Bereitstellung und Verwendung von Referenzwerten: Administratoren benötigen eine Zulassung oder Registrierung und müssen Governance-, Methodik- und Kontrollanforderungen erfüllen. Beaufsichtigte Verwender — etwa Fondsverwalter, die Indizes nachbilden oder die Wertentwicklung daran messen, und Emittenten strukturierter Produkte — dürfen nur Referenzwerte zugelassener Administratoren einsetzen.",
+     en:"The Benchmark Regulation governs the provision and use of benchmarks: administrators need authorisation or registration and must meet governance, methodology and control requirements. Supervised users — such as fund managers tracking indices or measuring performance against them, and issuers of structured products — may only use benchmarks from authorised administrators."},
+    {de:"Verwender müssen robuste schriftliche Ausweichpläne für den Wegfall oder die wesentliche Änderung eines Referenzwerts vorhalten und in Prospekten auf die Registrierung des Administrators hinweisen. Die laufende Überarbeitung beschränkt den Anwendungsbereich künftig im Wesentlichen auf kritische und signifikante Benchmarks sowie EU-Klima-Benchmarks und erleichtert die Nutzung von Drittstaaten-Referenzwerten.",
+     en:"Users must maintain robust written fallback plans for the cessation or material change of a benchmark and reference the administrator's registration in prospectuses. The ongoing review essentially narrows the scope to critical and significant benchmarks plus EU climate benchmarks, and eases the use of third-country benchmarks."}],
   dsgvo: [
     {de:"Die DSGVO regelt jede Verarbeitung personenbezogener Daten: Sie verlangt eine Rechtsgrundlage, Zweckbindung und Datenminimierung, sichert Betroffenenrechte wie Auskunft und Löschung und verpflichtet zu technischen und organisatorischen Schutzmaßnahmen. Datenpannen sind binnen 72 Stunden der Aufsichtsbehörde zu melden.",
      en:"The GDPR governs any processing of personal data: it requires a legal basis, purpose limitation and data minimisation, secures data subject rights such as access and erasure, and mandates technical and organisational safeguards. Data breaches must be reported to the supervisory authority within 72 hours."},

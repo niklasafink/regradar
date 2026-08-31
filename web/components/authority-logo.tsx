@@ -50,6 +50,7 @@ export const FRAMEWORK_AUTH: Record<string, string> = {
   psd3: "eur-lex.europa.eu",
   instant: "eur-lex.europa.eu",
   mica: "eur-lex.europa.eu",
+  dltpilot: "eur-lex.europa.eu",
   aifmd2: "eur-lex.europa.eu",
   eltif: "eur-lex.europa.eu",
   mmf: "eur-lex.europa.eu",

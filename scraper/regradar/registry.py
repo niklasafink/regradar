@@ -466,5 +466,6 @@ GII_WATCHLIST = {
     "findag": "Finanzdienstleistungsaufsichtsgesetz (FinDAG)",
     "hinschg": "Hinweisgeberschutzgesetz (HinSchG)",
     "wpig": "Wertpapierinstitutsgesetz (WpIG)",
+    "ewpg": "Gesetz über elektronische Wertpapiere (eWpG)",
     "sag": "Sanierungs- und Abwicklungsgesetz (SAG)",
 }
