@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T16:01:03Z",
+  "generated_at": "2026-08-31T16:47:35Z",
   "updates": {
     "amla": [
       {
@@ -122,6 +122,119 @@
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/frequently-asked-questions-reporting-package-identifying-provisionally-eligible-entities_en",
         "imp": "high"
+      }
+    ],
+    "itsrep": [
+      {
+        "d": "31.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Validation Rule RRCOROF_V903610_H_C0030",
+          "en": "Validation Rule RRCOROF_V903610_H_C0030"
+        },
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Validierungsregeln RRCOROF_V903610_H_C0030 in den COROFI- und COROFC-Templates C34.03 abgelehnt. Diese Regeln, die ab dem 31. März 2026 gelten, verlangen, dass die Summen für Anzahl der Transaktionen, Nominalbetrag, positiver und negativer Marktwert sowie Add-on der Summe der jeweiligen Risikokategorien entsprechen müssen.\n\nDie Ablehnung erfolgte, da die Thematik bereits identifiziert wurde und für eine kommende Version des Reporting-Frameworks bzw. eine neue Version der Validierungsregeln berücksichtigt wird. Dies betrifft Finanzinstitute, die Geschäfte mit mehreren Risikokategorien gleichzeitig abwickeln und diese als einzelne Geschäfte melden, ohne sie in einzelne Legs aufzuteilen.\n\nEs gibt keine spezifischen Fristen oder nächsten Schritte, da die Frage abgelehnt wurde und die EBA eine Überarbeitung der Regeln in Aussicht gestellt hat.",
+          "en": "The EBA has rejected a question concerning validation rules RRCOROF_V903610_H_C0030 in COROFI and COROFC templates C34.03. These rules, effective from 31 March 2026, require that the totals for Number of Transactions, Nominal Amount, Positive Market Value, Negative Market Value, and Add-on must equal the sum of the respective risk categories.\n\nThe rejection was due to the fact that the issue has already been identified and will be considered for a forthcoming version of the Reporting framework or a new release of the respective validation rules. This affects financial institutions that conduct deals exposed to multiple risk categories simultaneously and report them as single deals without splitting them into legs.\n\nThere are no specific deadlines or next steps, as the question was rejected and the EBA has indicated a revision of the rules."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7910",
+        "imp": "low",
+        "refnum": "2026_7910"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem vorgeschlagenen jährlichen Berichtsrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern.\n\nDie Berichtspflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Die ESMA möchte den Aufsichtsbehörden einen strukturierten und konsistenten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei anerkannten Drittland-CCPs verschaffen.\n\nInteressenträger können bis zum 12. Oktober 2026 Stellungnahmen zum Berichtsrahmen, den Vorlagen und dem Format einreichen. Anschließend wird die ESMA die Rückmeldungen bewerten und einen Abschlussbericht erstellen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs.\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. ESMA seeks to provide supervisory authorities with a structured and consistent overview of the scale, characteristics, and risk profile of EU firms' exposures to recognised third-country CCPs.\n\nStakeholders are invited to provide feedback on the reporting framework, templates, and format by 12 October 2026. Following the consultation, ESMA will assess the responses received and prepare a Final Report."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form",
+          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form"
+        },
+        "s": {
+          "de": "Dieses Dokument ist das Antwortformular zur Konsultation der ESMA bezüglich des Berichtsrahmens unter EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs. Es dient als Referenzdokument für die Einreichung von Stellungnahmen.\n\nDie Konsultation zielt darauf ab, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber Drittland-CCPs zu verbessern. Die Berichtspflicht wird Clearing-Mitglieder und Kunden betreffen, die Transaktionen über anerkannte Drittland-CCPs abwickeln. Fachbeiträge von PwC und KPMG weisen auf die zunehmende Bedeutung von ESG-Berichterstattung und die Weiterentwicklung von Reporting-Frameworks hin, was die Relevanz konsistenter und umfassender Daten unterstreicht.\n\nDie Frist für die Einreichung von Stellungnahmen zu diesem Berichtsrahmen endet am 12. Oktober 2026.",
+          "en": "This document is the reply form for ESMA's consultation on the reporting framework under EMIR for clearing activity at recognised third-country CCPs. It serves as a reference document for submitting feedback.\n\nThe consultation aims to enhance supervisory visibility of EU firms' exposures to third-country CCPs. The reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. Expert contributions from PwC and KPMG highlight the growing importance of ESG reporting and the evolution of reporting frameworks, underscoring the relevance of consistent and comprehensive data.\n\nThe deadline for submitting feedback on this reporting framework is 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third-0",
+        "imp": "medium",
+        "refnum": "ESMA12-2121844265-6120"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs",
+          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs"
+        },
+        "s": {
+          "de": "Die ESMA hat ein Konsultationspapier zu den technischen Regulierungs- und Durchführungsstandards (RTS und ITS) für die jährliche Berichterstattung von Clearing-Mitgliedern und Kunden über ihre Aktivitäten bei anerkannten Drittland-Zentralverwahrern (TC-CCPs) veröffentlicht. Dies geschieht im Rahmen des neu eingeführten Artikels 7d der EMIR 3, der eine solche Berichterstattung vorschreibt.\n\nDas Konsultationspapier legt den Umfang der Berichtspflicht fest, einschließlich der betroffenen Entitäten sowie der Finanz- und Nicht-Finanzinstrumente. Es enthält Vorschläge zum Inhalt der Berichterstattung, zur Spezifikation der Instrumente, zur Methodik für die Berechnung durchschnittlicher Clearing-Werte und zur Meldung von Margen. Ziel ist es, die Wiederverwendung bestehender Berichtsdaten zu maximieren und neue Anforderungen auf nicht anderweitig verfügbare Informationen zu beschränken.\n\nInteressierte Stakeholder, insbesondere Clearing-Mitglieder, Gegenparteien, die TC-CCPs nutzen, und die TC-CCPs selbst, sind zur Stellungnahme eingeladen. Die Konsultationsfrist endet am 12. Oktober 2026. Die ESMA plant, einen Abschlussbericht im vierten Quartal 2026 zu veröffentlichen.",
+          "en": "ESMA has published a consultation paper on the Regulatory and Implementing Technical Standards (RTS and ITS) for the annual reporting by clearing members and clients on their activity at recognised third-country Central Counterparties (TC-CCPs). This follows the introduction of Article 7d of EMIR 3, which mandates such reporting.\n\nThe consultation paper defines the scope of the reporting obligation, covering both the entities involved and the financial and non-financial instruments. It includes proposals on the content of the reporting, the specification of instruments, the methodology for calculating average cleared values, and the reporting of margins. The aim is to maximise the reuse of existing reporting data and limit new requirements to information not otherwise available.\n\nInterested stakeholders, particularly clearing members, counterparties accessing TC-CCPs, and the TC-CCPs themselves, are invited to submit comments. The consultation period closes on 12 October 2026. ESMA expects to publish a final report in Q4 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third",
+        "imp": "medium",
+        "refnum": "ESMA12-2121844265-6008"
+      },
+      {
+        "d": "14.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA confirms go-live for weekly commodity derivatives position reporting",
+          "en": "ESMA confirms go-live for weekly commodity derivatives position reporting"
+        },
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat den Starttermin für das neue Rahmenwerk zur wöchentlichen Positionsberichterstattung für Warenderivate auf den 3. September 2026 festgelegt. Ab diesem Datum müssen Marktteilnehmer wöchentliche Positionsberichte gemäß den aktualisierten Anforderungen, technischen Spezifikationen und Validierungsregeln, die durch die XML-Schema-Version v2.0 eingeführt wurden, einreichen.\n\nDie ESMA hat zusätzliche Zeit für technische und operative Vorbereitungen eingeräumt, um einen reibungslosen Übergang zu den neuen Meldeverfahren zu gewährleisten. Die aktualisierte technische Dokumentation, einschließlich Meldeanweisungen und XML-Schema, ist nun verfügbar, um Marktteilnehmer bei der Implementierung zu unterstützen.\n\nDie neuen Anforderungen treten am 3. September 2026 in Kraft.",
+          "en": "The European Securities and Markets Authority (ESMA) has confirmed that the new weekly commodity derivatives position reporting framework will go live on 3 September 2026. From this date, market participants will be required to submit weekly position reports in accordance with the updated requirements, technical specifications, and validation rules introduced by XML schema version v2.0.\n\nESMA has dedicated additional time to technical and operational preparations to support a smooth transition to the new reporting arrangements. The updated technical documentation, including reporting instructions and XML schema, is now available to assist market participants with their implementation activities.\n\nThe new requirements will become effective on 3 September 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-confirms-go-live-weekly-commodity-derivatives-position-reporting",
+        "imp": "high"
+      },
+      {
+        "d": "05.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model",
+          "en": "​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model"
+        },
+        "s": {
+          "de": "Die EBA konsultiert einen neuen Berichtsrahmen zur Unterstützung der Validierung und Überwachung von Initial Margin Modellen, die auf dem ISDA Standard Initial Margin Model (SIMM) basieren. Dieser Rahmen soll der EBA die notwendigen Informationen liefern, um ihre Rolle als zentrale Validierungsstelle für Pro-forma-Modelle gemäß EMIR effektiv wahrnehmen zu können.\n\nDie vorgeschlagenen Berichtsanforderungen sind für Gegenparteien relevant, die eine Validierung zur Nutzung des ISDA SIMM anstreben. Sie sollen eine konsistente und qualitativ hochwertige Datenerfassung über die Nutzung und Performance von Initial Margin Modellen ermöglichen und die Grundlage für die Berechnung der jährlichen Gebühren für die Validierung bilden. Die Anforderungen sind proportional ausgestaltet, wobei Unternehmen mit weniger signifikanten OTC-Handelsaktivitäten deutlich leichtere Berichtspflichten (jährlich) haben.\n\nDie Konsultation läuft bis zum 02.11.2026. Die EBA beabsichtigt, bis Ende 2026 eine Entscheidung zur Datenerhebung zu verabschieden. Der erste Berichtsreferenztermin wird voraussichtlich Dezember 2027 sein, mit Datenerfassung im ersten Quartal 2028. Die neuen Berichtsanforderungen werden in das EBA Technical Package Version 4.4, Phase 2, integriert, dessen Veröffentlichung für März 2027 erwartet wird.",
+          "en": "The EBA is consulting on a new reporting framework to support the validation and ongoing monitoring of initial margin models based on the ISDA Standard Initial Margin Model (SIMM). This framework aims to provide the EBA with the necessary information to effectively perform its role as central validator of pro forma models under EMIR.\n\nThe proposed reporting requirements are relevant for counterparties seeking validation to use ISDA SIMM. They are designed to enable consistent and high-quality data collection on the use and performance of initial margin models, and to form the basis for calculating annual validation fees. The requirements are proportionate, with firms engaged in less significant OTC trading activities subject to substantially lighter reporting requirements (annually).\n\nThe consultation runs until 02 November 2026. The EBA intends to adopt a decision on data collection by the end of 2026. The first reporting reference date is expected to be December 2027, with data collection in the first quarter of 2028. The new reporting requirements will be incorporated into the EBA Technical Package Version 4.4, Phase 2, which is expected to be released in March 2027."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-reporting-framework-validation-and-monitoring-isda-standard-initial-margin-model",
+        "imp": "medium"
       }
     ],
     "dora": [
@@ -787,119 +900,6 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_20_helaba.html?cms_expanded=true",
         "imp": "high"
-      }
-    ],
-    "itsrep": [
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem vorgeschlagenen jährlichen Berichtsrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern.\n\nDie Berichtspflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Die ESMA möchte den Aufsichtsbehörden einen strukturierten und konsistenten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei anerkannten Drittland-CCPs verschaffen.\n\nInteressenträger können bis zum 12. Oktober 2026 Stellungnahmen zum Berichtsrahmen, den Vorlagen und dem Format einreichen. Anschließend wird die ESMA die Rückmeldungen bewerten und einen Abschlussbericht erstellen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs.\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. ESMA seeks to provide supervisory authorities with a structured and consistent overview of the scale, characteristics, and risk profile of EU firms' exposures to recognised third-country CCPs.\n\nStakeholders are invited to provide feedback on the reporting framework, templates, and format by 12 October 2026. Following the consultation, ESMA will assess the responses received and prepare a Final Report."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form",
-          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form"
-        },
-        "s": {
-          "de": "Dieses Dokument ist das Antwortformular zur Konsultation der ESMA bezüglich des Berichtsrahmens unter EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs. Es dient als Referenzdokument für die Einreichung von Stellungnahmen.\n\nDie Konsultation zielt darauf ab, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber Drittland-CCPs zu verbessern. Die Berichtspflicht wird Clearing-Mitglieder und Kunden betreffen, die Transaktionen über anerkannte Drittland-CCPs abwickeln. Fachbeiträge von PwC und KPMG weisen auf die zunehmende Bedeutung von ESG-Berichterstattung und die Weiterentwicklung von Reporting-Frameworks hin, was die Relevanz konsistenter und umfassender Daten unterstreicht.\n\nDie Frist für die Einreichung von Stellungnahmen zu diesem Berichtsrahmen endet am 12. Oktober 2026.",
-          "en": "This document is the reply form for ESMA's consultation on the reporting framework under EMIR for clearing activity at recognised third-country CCPs. It serves as a reference document for submitting feedback.\n\nThe consultation aims to enhance supervisory visibility of EU firms' exposures to third-country CCPs. The reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. Expert contributions from PwC and KPMG highlight the growing importance of ESG reporting and the evolution of reporting frameworks, underscoring the relevance of consistent and comprehensive data.\n\nThe deadline for submitting feedback on this reporting framework is 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third-0",
-        "imp": "medium",
-        "refnum": "ESMA12-2121844265-6120"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs",
-          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs"
-        },
-        "s": {
-          "de": "Die ESMA hat ein Konsultationspapier zu den technischen Regulierungs- und Durchführungsstandards (RTS und ITS) für die jährliche Berichterstattung von Clearing-Mitgliedern und Kunden über ihre Aktivitäten bei anerkannten Drittland-Zentralverwahrern (TC-CCPs) veröffentlicht. Dies geschieht im Rahmen des neu eingeführten Artikels 7d der EMIR 3, der eine solche Berichterstattung vorschreibt.\n\nDas Konsultationspapier legt den Umfang der Berichtspflicht fest, einschließlich der betroffenen Entitäten sowie der Finanz- und Nicht-Finanzinstrumente. Es enthält Vorschläge zum Inhalt der Berichterstattung, zur Spezifikation der Instrumente, zur Methodik für die Berechnung durchschnittlicher Clearing-Werte und zur Meldung von Margen. Ziel ist es, die Wiederverwendung bestehender Berichtsdaten zu maximieren und neue Anforderungen auf nicht anderweitig verfügbare Informationen zu beschränken.\n\nInteressierte Stakeholder, insbesondere Clearing-Mitglieder, Gegenparteien, die TC-CCPs nutzen, und die TC-CCPs selbst, sind zur Stellungnahme eingeladen. Die Konsultationsfrist endet am 12. Oktober 2026. Die ESMA plant, einen Abschlussbericht im vierten Quartal 2026 zu veröffentlichen.",
-          "en": "ESMA has published a consultation paper on the Regulatory and Implementing Technical Standards (RTS and ITS) for the annual reporting by clearing members and clients on their activity at recognised third-country Central Counterparties (TC-CCPs). This follows the introduction of Article 7d of EMIR 3, which mandates such reporting.\n\nThe consultation paper defines the scope of the reporting obligation, covering both the entities involved and the financial and non-financial instruments. It includes proposals on the content of the reporting, the specification of instruments, the methodology for calculating average cleared values, and the reporting of margins. The aim is to maximise the reuse of existing reporting data and limit new requirements to information not otherwise available.\n\nInterested stakeholders, particularly clearing members, counterparties accessing TC-CCPs, and the TC-CCPs themselves, are invited to submit comments. The consultation period closes on 12 October 2026. ESMA expects to publish a final report in Q4 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third",
-        "imp": "medium",
-        "refnum": "ESMA12-2121844265-6008"
-      },
-      {
-        "d": "14.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA confirms go-live for weekly commodity derivatives position reporting",
-          "en": "ESMA confirms go-live for weekly commodity derivatives position reporting"
-        },
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat den Starttermin für das neue Rahmenwerk zur wöchentlichen Positionsberichterstattung für Warenderivate auf den 3. September 2026 festgelegt. Ab diesem Datum müssen Marktteilnehmer wöchentliche Positionsberichte gemäß den aktualisierten Anforderungen, technischen Spezifikationen und Validierungsregeln, die durch die XML-Schema-Version v2.0 eingeführt wurden, einreichen.\n\nDie ESMA hat zusätzliche Zeit für technische und operative Vorbereitungen eingeräumt, um einen reibungslosen Übergang zu den neuen Meldeverfahren zu gewährleisten. Die aktualisierte technische Dokumentation, einschließlich Meldeanweisungen und XML-Schema, ist nun verfügbar, um Marktteilnehmer bei der Implementierung zu unterstützen.\n\nDie neuen Anforderungen treten am 3. September 2026 in Kraft.",
-          "en": "The European Securities and Markets Authority (ESMA) has confirmed that the new weekly commodity derivatives position reporting framework will go live on 3 September 2026. From this date, market participants will be required to submit weekly position reports in accordance with the updated requirements, technical specifications, and validation rules introduced by XML schema version v2.0.\n\nESMA has dedicated additional time to technical and operational preparations to support a smooth transition to the new reporting arrangements. The updated technical documentation, including reporting instructions and XML schema, is now available to assist market participants with their implementation activities.\n\nThe new requirements will become effective on 3 September 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-confirms-go-live-weekly-commodity-derivatives-position-reporting",
-        "imp": "high"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model",
-          "en": "​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model"
-        },
-        "s": {
-          "de": "Die EBA konsultiert einen neuen Berichtsrahmen zur Unterstützung der Validierung und Überwachung von Initial Margin Modellen, die auf dem ISDA Standard Initial Margin Model (SIMM) basieren. Dieser Rahmen soll der EBA die notwendigen Informationen liefern, um ihre Rolle als zentrale Validierungsstelle für Pro-forma-Modelle gemäß EMIR effektiv wahrnehmen zu können.\n\nDie vorgeschlagenen Berichtsanforderungen sind für Gegenparteien relevant, die eine Validierung zur Nutzung des ISDA SIMM anstreben. Sie sollen eine konsistente und qualitativ hochwertige Datenerfassung über die Nutzung und Performance von Initial Margin Modellen ermöglichen und die Grundlage für die Berechnung der jährlichen Gebühren für die Validierung bilden. Die Anforderungen sind proportional ausgestaltet, wobei Unternehmen mit weniger signifikanten OTC-Handelsaktivitäten deutlich leichtere Berichtspflichten (jährlich) haben.\n\nDie Konsultation läuft bis zum 02.11.2026. Die EBA beabsichtigt, bis Ende 2026 eine Entscheidung zur Datenerhebung zu verabschieden. Der erste Berichtsreferenztermin wird voraussichtlich Dezember 2027 sein, mit Datenerfassung im ersten Quartal 2028. Die neuen Berichtsanforderungen werden in das EBA Technical Package Version 4.4, Phase 2, integriert, dessen Veröffentlichung für März 2027 erwartet wird.",
-          "en": "The EBA is consulting on a new reporting framework to support the validation and ongoing monitoring of initial margin models based on the ISDA Standard Initial Margin Model (SIMM). This framework aims to provide the EBA with the necessary information to effectively perform its role as central validator of pro forma models under EMIR.\n\nThe proposed reporting requirements are relevant for counterparties seeking validation to use ISDA SIMM. They are designed to enable consistent and high-quality data collection on the use and performance of initial margin models, and to form the basis for calculating annual validation fees. The requirements are proportionate, with firms engaged in less significant OTC trading activities subject to substantially lighter reporting requirements (annually).\n\nThe consultation runs until 02 November 2026. The EBA intends to adopt a decision on data collection by the end of 2026. The first reporting reference date is expected to be December 2027, with data collection in the first quarter of 2028. The new reporting requirements will be incorporated into the EBA Technical Package Version 4.4, Phase 2, which is expected to be released in March 2027."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-reporting-framework-validation-and-monitoring-isda-standard-initial-margin-model",
-        "imp": "medium"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Template F 13.2.1.c VariableID 433471 and 433464",
-          "en": "Template F 13.2.1.c VariableID 433471 and 433464"
-        },
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der FINREP-Validierung im Rahmen des Reporting Framework 4.2. abgelehnt. Es geht um die Datenpunktkategorisierung in Template F 13.2.1.c, insbesondere die Variable IDs 433471 und 433464. Die Anfrage betraf die korrekte Definition dieser Kategorisierung und die zugrunde liegende aufsichtsrechtliche Begründung, da die Validierung nicht immer angemessen erscheint, insbesondere wenn es um die Klassifizierung von zwangsverwerteten Vermögenswerten als zur Veräußerung gehaltene langfristige Vermögenswerte geht.\n\nKreditinstitute, die FINREP-Meldungen erstellen, sind von dieser Thematik betroffen. Die Frage deutet auf eine mögliche Inkonsistenz in der Validierungslogik hin, da die aktuelle Implementierung eine Abstimmung zwischen F 13.2.1.c und F 13.2.1.a zu erfordern scheint, anstatt mit F 13.2.1.b, was bei bestimmten Vermögenswerten wie vermieteten Objekten nach Zwangsverwertung zu Problemen führen kann. Fachbeiträge von PwC und KPMG weisen auf die Komplexität und die Änderungen im FINREP-Reporting hin.\n\nDie EBA hat die Frage abgelehnt, da das Problem bereits identifiziert wurde und für eine kommende Version des Reporting Frameworks (Version 4.4.2) berücksichtigt werden soll. Es ist daher mit einer zukünftigen Anpassung der Validierungsregeln zu rechnen.",
-          "en": "The EBA has rejected a question regarding FINREP validation under Reporting Framework 4.2. The query concerned the data point categorization in Template F 13.2.1.c, specifically Variable IDs 433471 and 433464. The request sought confirmation of the correct definition of this categorization and its underlying prudential reporting rationale, as the validation did not always seem appropriate, particularly concerning the classification of foreclosed assets as non-current assets held for sale.\n\nCredit institutions preparing FINREP reports are affected by this issue. The question points to a potential inconsistency in the validation logic, as the current implementation appears to require consistency between F 13.2.1.c and F 13.2.1.a, rather than F 13.2.1.b, which can cause problems for certain assets such as leased properties after foreclosure. Contributions from PwC and KPMG highlight the complexity and changes in FINREP reporting.\n\nThe EBA rejected the question because the issue has already been identified and will be considered for a forthcoming version of the Reporting Framework (version 4.4.2). Therefore, a future adjustment of the validation rules is to be expected."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7904",
-        "imp": "low",
-        "refnum": "2026_7904"
       }
     ],
     "dsgvo": [
