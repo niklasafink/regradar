@@ -45,7 +45,8 @@ def main() -> int:
     # in Produktion, also immer dort nachfragen.
     base = env.get("APP_URL") or ""
     if not base or "localhost" in base or "127.0.0.1" in base:
-        base = "https://regradar.de"
+        # www ist kanonisch; regradar.de antwortet mit 308, dem urllib nicht folgt
+        base = "https://www.regradar.de"
     secret = env.get("CRON_SECRET")
     if not secret:
         print("newsletter-pending: CRON_SECRET fehlt in web/.env.local")
