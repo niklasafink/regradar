@@ -11,3 +11,6 @@ Claude Code Prompt_ Regulatory Monitoring Backend.md
 # Laufzeit-Artefakte
 scraper/logs/
 Legal/
+
+# Personenbezogene Daten (Abonnenten-Altbestand, Live-Store ist Redis)
+web/data/subscribers.json

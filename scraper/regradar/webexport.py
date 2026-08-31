@@ -105,6 +105,11 @@ PRAXIS_RULES = [
     ("verwarnung", r"verwarn"),
 ]
 PRAXIS_WINDOW_DAYS = 365
+# Harte Obergrenze: Die BaFin muss eigene Maßnahme-Bekanntmachungen fünf
+# Jahre nach Veröffentlichung löschen (u. a. § 125 Abs. 5 WpHG, § 60b
+# Abs. 4 KWG). Der Praxis-Export darf deshalb nie Einträge zeigen, die
+# älter sind — egal wie groß PRAXIS_WINDOW_DAYS künftig gewählt wird.
+PRAXIS_LEGAL_MAX_DAYS = 5 * 365
 PRAXIS_MAX = 120
 
 
@@ -245,7 +250,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     # und Impact, mit Originaltitel, gescrapter Kurzbeschreibung (Hintergrund/
     # Betragshöhe) und Link auf die Primärquelle.
     from datetime import date as _pdate, timedelta as _ptd
-    praxis_cutoff = (_pdate.today() - _ptd(days=PRAXIS_WINDOW_DAYS)).isoformat()
+    praxis_cutoff = (_pdate.today() - _ptd(
+        days=min(PRAXIS_WINDOW_DAYS, PRAXIS_LEGAL_MAX_DAYS))).isoformat()
     praxis = []
     seen_praxis = set()
     for r in rows:
