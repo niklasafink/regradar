@@ -41,10 +41,14 @@ def read_env(path: Path) -> dict[str, str]:
 
 def main() -> int:
     env = read_env(ENV_LOCAL)
-    base = env.get("APP_URL")
+    # APP_URL in .env.local zeigt auf localhost (Dev) — der Versand läuft aber
+    # in Produktion, also immer dort nachfragen.
+    base = env.get("APP_URL") or ""
+    if not base or "localhost" in base or "127.0.0.1" in base:
+        base = "https://regradar.de"
     secret = env.get("CRON_SECRET")
-    if not base or not secret:
-        print("newsletter-pending: APP_URL/CRON_SECRET fehlen in web/.env.local")
+    if not secret:
+        print("newsletter-pending: CRON_SECRET fehlt in web/.env.local")
         return 0  # kein harter Fehler im Stundenlauf
 
     req = urllib.request.Request(
