@@ -163,18 +163,18 @@ export function Chrome({ children }: { children?: ReactNode }) {
           href="/#newsletter"
           data-fast-goal="newsletter_click"
           data-fast-goal-placement="banner"
-          className="group mx-auto flex max-w-6xl items-center justify-center gap-3 px-4 py-2 text-[13px] text-slate-200 sm:px-6"
+          className="group mx-auto flex max-w-6xl items-center justify-center gap-3 px-4 py-2.5 text-sm sm:px-6"
         >
           <BannerAvatars />
-          <span className="truncate">
+          <span className="truncate text-white/75">
             {lang === "de"
               ? "Regulatory Radar ist kostenlos, ohne Anmeldung und ohne Paywall."
               : "Regulatory Radar is free, with no sign-up and no paywall."}
           </span>
-          <span className="hidden shrink-0 items-center rounded-full bg-white px-3.5 py-1 text-xs font-medium text-slate-900 transition-colors group-hover:bg-slate-200 sm:inline-flex">
+          <span className="hidden shrink-0 font-medium text-white group-hover:underline sm:inline">
             {lang === "de"
-              ? "Newsletter abonnieren und auf dem Laufenden bleiben →"
-              : "Subscribe to the newsletter to stay up to date →"}
+              ? "Newsletter abonnieren →"
+              : "Subscribe to the newsletter →"}
           </span>
         </Link>
       </div>
