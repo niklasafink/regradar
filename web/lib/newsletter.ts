@@ -10,7 +10,10 @@
 //   newsletter:lastRun ISO-Zeitstempel des letzten Laufs (informativ)
 //   subs               pro Abonnent zusätzlich lastNotifiedAt (Wasserzeichen)
 //
-// Versandregel pro Abonnent: firstSeen(slug) > max(confirmedAt, lastNotifiedAt).
+// Versandregel pro Abonnent: firstSeen(slug) > max(confirmedAt, lastNotifiedAt)
+// UND Publikationsdatum >= Anmeldetag. Der zweite Teil verhindert, dass beim
+// Aufnehmen eines neuen Rahmenwerks dessen Alt-Archiv (frisches First-Seen,
+// aber Jahre altes Publikationsdatum) als "neu" verschickt wird.
 // Erster Lauf (kein Hash, kein Alt-Set): Archiv wird mit Epoch markiert und
 // nichts verschickt (sonst käme das komplette Archiv).
 
@@ -87,6 +90,32 @@ function relevantFor(sub: Subscriber, pages: UpdatePage[]): UpdatePage[] {
   const known = provs.filter((pr) => PROVIDERS.some((p) => p.id === pr));
   if (known.length === 0) return pages;
   return pages.filter((p) => known.some((pr) => p.fw.ents.includes(pr)));
+}
+
+/** Lokaler Tagesbeginn eines ISO-Zeitstempels — vergleichbar mit dt(u.d),
+    das TT.MM.JJJJ ebenfalls als lokale Mitternacht parst. */
+const dayStart = (iso: string): number => {
+  const d = new Date(iso);
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+};
+
+/** Updates, die für diesen Abonnenten wirklich neu sind:
+    1. erstmals gesehen NACH max(confirmedAt, lastNotifiedAt) — nie doppelt,
+    2. Publikationsdatum am oder nach dem Anmeldetag — kein Alt-Archiv,
+       das nur wegen einer Quellen-/Rahmenwerk-Erweiterung frisch aussieht. */
+function freshFor(
+  sub: Subscriber,
+  sorted: UpdatePage[],
+  seen: Record<string, string>,
+  nowIso: string,
+): UpdatePage[] {
+  const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
+    .sort()
+    .pop()!;
+  const minPub = dayStart(sub.confirmedAt || EPOCH);
+  return sorted.filter(
+    (p) => (seen[p.slug] ?? nowIso) > watermark && dt(p.u.d).getTime() >= minPub,
+  );
 }
 
 const esc = (s: string): string =>
@@ -248,10 +277,7 @@ export async function runNewsletter(opts: {
   if (!opts.approved && writable) {
     const pending = new Map<string, UpdatePage>();
     for (const sub of subs) {
-      const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
-        .sort()
-        .pop()!;
-      const fresh = sorted.filter((p) => (seen[p.slug] ?? nowIso) > watermark);
+      const fresh = freshFor(sub, sorted, seen, nowIso);
       for (const p of relevantFor(sub, fresh)) pending.set(p.slug, p);
     }
     if (pending.size === 0) {
@@ -276,13 +302,7 @@ export async function runNewsletter(opts: {
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
 
   for (const sub of subs) {
-    // Wasserzeichen: jüngster von Anmeldung und letzter Zustellung. Nur
-    // Updates, die danach erstmals gesehen wurden, sind für diesen
-    // Abonnenten neu. ISO-Strings (UTC) sind lexikografisch vergleichbar.
-    const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
-      .sort()
-      .pop()!;
-    const fresh = sorted.filter((p) => (seen[p.slug] ?? nowIso) > watermark);
+    const fresh = freshFor(sub, sorted, seen, nowIso);
     if (fresh.length === 0) {
       report.skipped++;
       continue;

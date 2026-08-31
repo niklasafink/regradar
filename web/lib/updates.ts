@@ -38,7 +38,7 @@ function buildIndex(): { list: UpdatePage[]; bySlug: Map<string, UpdatePage> } {
   const bySlug = new Map<string, UpdatePage>();
   for (const fw of FRAMEWORKS) {
     for (const u of fw.u) {
-      const base = [fw.id, isoDate(u.d), slugify(u.ti.de)]
+      const base = [fw.id, isoDate(u.d), u.sl ?? slugify(u.ti.de)]
         .filter(Boolean).join("-");
       let slug = base;
       for (let n = 2; bySlug.has(slug); n++) slug = `${base}-${n}`;
@@ -67,5 +67,5 @@ export const updateHref = (fwId: string, u: Update): string => {
     );
   return hit
     ? `/u/${hit.slug}`
-    : `/u/${[fwId, isoDate(u.d), slugify(u.ti.de)].filter(Boolean).join("-")}`;
+    : `/u/${[fwId, isoDate(u.d), u.sl ?? slugify(u.ti.de)].filter(Boolean).join("-")}`;
 };

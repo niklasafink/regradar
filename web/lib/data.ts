@@ -11,6 +11,9 @@ export interface Cond { k: string; any: string[] }
 export interface Advisory { f: string; ti: string; url: string; d?: string }
 export interface Update {
   d: string; t: Txt; src: string; ti: Txt; s: Txt;
+  /** Slug-Komponente aus dem Original-Titel der Quelle (Scraper-Export).
+      Hält URLs stabil, auch wenn `ti` ein beschreibender LLM-Titel ist. */
+  sl?: string;
   refnum?: string; deadline?: string; eff?: string;
   /** Link zur Primärquelle. Gesetzt bei echten, gescrapten Updates. */
   url?: string;

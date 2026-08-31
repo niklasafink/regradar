@@ -29,7 +29,7 @@ TIMEOUT = 120
 # Format-Version der Zusammenfassungen. Bei Prompt-Änderungen, die alte
 # Cache-Einträge unbrauchbar machen, hochzählen – der nächste Export
 # generiert dann alle Zusammenfassungen neu.
-FORMAT = 3
+FORMAT = 4
 
 SYSTEM_PROMPT = (
     "Du schreibst Zusammenfassungen für einen Regulatory-News-Dienst, den "
@@ -55,6 +55,16 @@ SYSTEM_PROMPT = (
     "weiteres Verfahren – nur soweit der Text es hergibt; sonst diesen "
     "Absatz weglassen.\n\n"
     "Dazu eine englische Fassung gleichen Inhalts und Aufbaus.\n\n"
+    "Titel: Ist der Original-Titel der Meldung für Leser ohne Detailwissen "
+    "unverständlich – z. B. nur ein technischer Code, eine Regel-/Vorlagen-ID, "
+    "ein Aktenzeichen oder ein Dateiname (etwa 'Validation Rule "
+    "RRCOROF_V903610_H_C0030') – liefere zusätzlich einen beschreibenden "
+    'Anzeigetitel als "ti": {"de": "...", "en": "..."}: kurz (max. ca. 90 '
+    "Zeichen), sagt worum es inhaltlich geht, nutzt offizielle Fachbegriffe "
+    "(z. B. COREP, Meldewesen, RTS) und behält die offizielle Kennung in "
+    "Klammern am Ende, damit die Meldung auffindbar bleibt. Ist der "
+    'Original-Titel bereits verständlich, lasse "ti" weg – verständliche '
+    "Titel bleiben unverändert in Originalsprache.\n\n"
     "Regeln: Nur Informationen aus dem gegebenen Text verwenden, nichts "
     "erfinden und keine Fristen raten. Gibt der Text wenig her, schreibe "
     "lieber weniger Absätze als vage Füllsätze. Fachbegriffe und "
@@ -62,8 +72,8 @@ SYSTEM_PROMPT = (
     "und ohne Floskeln, kein 'Diese Meldung …'-Einstieg. Datumsformat "
     "TT.MM.JJJJ im Deutschen.\n\n"
     "Antworte ausschließlich mit einem JSON-Objekt, das jede id auf ein "
-    'Objekt {"de": "...", "en": "..."} abbildet (Absätze durch \\n\\n '
-    "getrennt). Keine Erklärungen."
+    'Objekt {"de": "...", "en": "...", "ti": {…} nur falls nötig} abbildet '
+    "(Absätze durch \\n\\n getrennt). Keine Erklärungen."
 )
 
 
@@ -81,10 +91,14 @@ def _ensure_table(conn: sqlite3.Connection) -> None:
     if "fmt" not in cols:
         conn.execute(
             "ALTER TABLE llm_summary ADD COLUMN fmt INTEGER NOT NULL DEFAULT 1")
+    # Optionaler LLM-Anzeigetitel für kryptische Original-Titel (fmt >= 4).
+    if "ti_de" not in cols:
+        conn.execute("ALTER TABLE llm_summary ADD COLUMN ti_de TEXT")
+        conn.execute("ALTER TABLE llm_summary ADD COLUMN ti_en TEXT")
     conn.commit()
 
 
-def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, Dict[str, str]]:
+def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, dict]:
     payload = {
         "model": model,
         "temperature": 0.2,
@@ -126,12 +140,19 @@ def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, Dict[
     # Einzelanfrage, deren Antwort direkt {"de": …, "en": …} ist (ohne id-Ebene).
     if len(items) == 1 and "de" in parsed and "en" in parsed:
         parsed = {str(items[0][0]): parsed}
-    out: Dict[int, Dict[str, str]] = {}
+    out: Dict[int, dict] = {}
     for i, _ in items:
         v = parsed.get(str(i), parsed.get(i))
         if (isinstance(v, dict) and isinstance(v.get("de"), str)
                 and isinstance(v.get("en"), str) and v["de"].strip()):
-            out[i] = {"de": v["de"].strip(), "en": v["en"].strip()}
+            entry = {"de": v["de"].strip(), "en": v["en"].strip()}
+            # Optionaler Anzeigetitel, nur bei kryptischen Original-Titeln.
+            ti = v.get("ti")
+            if (isinstance(ti, dict) and isinstance(ti.get("de"), str)
+                    and isinstance(ti.get("en"), str) and ti["de"].strip()
+                    and ti["en"].strip()):
+                entry["ti"] = {"de": ti["de"].strip(), "en": ti["en"].strip()}
+            out[i] = entry
         else:
             print("LLM-Zusammenfassung: id {} verworfen (Antwort: {} …, Schlüssel: {})".format(
                 i, json.dumps(v, ensure_ascii=False)[:200], list(parsed)[:5]))
@@ -139,27 +160,31 @@ def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, Dict[
 
 
 def summarize(conn: sqlite3.Connection,
-              items: List[Tuple[int, str, Optional[str]]]) -> Dict[int, Dict[str, str]]:
+              items: List[Tuple[int, str, Optional[str]]]) -> Dict[int, dict]:
     """items: Liste (document_id, Kontexttext, canonical_url).
 
     Für noch nicht gecachte Dokumente wird der Volltext der Original-Meldung
     abgerufen (fulltext.py, gecacht) und an den Kontext angehängt, damit die
     Zusammenfassung auf der Primärquelle basiert statt nur auf dem Teaser.
 
-    Rückgabe: document_id -> {"de": ..., "en": ...}. Ohne API-Key oder bei
-    API-Fehlern fehlen die betroffenen ids; der Aufrufer nutzt dann den
-    Original-Teaser als Fallback.
+    Rückgabe: document_id -> {"de": ..., "en": ..., optional "ti": {de, en}}
+    ("ti" = beschreibender Anzeigetitel, nur wenn der Original-Titel kryptisch
+    ist). Ohne API-Key oder bei API-Fehlern fehlen die betroffenen ids; der
+    Aufrufer nutzt dann Original-Teaser bzw. -Titel als Fallback.
     """
     _ensure_table(conn)
-    result: Dict[int, Dict[str, str]] = {}
+    result: Dict[int, dict] = {}
     if items:
         cached = conn.execute(
-            "SELECT document_id, de, en FROM llm_summary "
+            "SELECT document_id, de, en, ti_de, ti_en FROM llm_summary "
             "WHERE fmt=? AND document_id IN ({})".format(
                 ",".join("?" * len(items))),
             [FORMAT] + [i for i, _, _ in items]).fetchall()
         for row in cached:
-            result[row[0]] = {"de": row[1], "en": row[2]}
+            entry = {"de": row[1], "en": row[2]}
+            if row[3] and row[4]:
+                entry["ti"] = {"de": row[3], "en": row[4]}
+            result[row[0]] = entry
 
     key = api_key()
     if not key:
@@ -196,8 +221,12 @@ def summarize(conn: sqlite3.Connection,
                     attempt, type(e).__name__, e))
         for i, s in got.items():
             result[i] = s
+            ti = s.get("ti") or {}
             conn.execute(
-                "INSERT OR REPLACE INTO llm_summary VALUES (?,?,?,?,?,?)",
-                (i, s["de"], s["en"], model, utcnow(), FORMAT))
+                "INSERT OR REPLACE INTO llm_summary "
+                "(document_id, de, en, model, created_at, fmt, ti_de, ti_en) "
+                "VALUES (?,?,?,?,?,?,?,?)",
+                (i, s["de"], s["en"], model, utcnow(), FORMAT,
+                 ti.get("de"), ti.get("en")))
         conn.commit()
     return result

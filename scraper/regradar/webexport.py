@@ -133,6 +133,19 @@ def _domain(url: str) -> str:
     return host[4:] if host.startswith("www.") else host
 
 
+def _slugify(s: str) -> str:
+    """Python-Port von slugify() in web/lib/updates.ts – muss identisch
+    slugifizieren, damit exportierte Slugs zu bestehenden URLs passen."""
+    import unicodedata
+    s = s.lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+        s = s.replace(a, b)
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s[:80].rstrip("-")
+
+
 def _clean(text: Optional[str], limit: int = 280) -> str:
     if not text:
         return ""
@@ -299,12 +312,17 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         if llm:
             summarized += 1
         summary = _clean(r["summary"])
+        # Verständliche Titel bleiben laut DESIGN.md in Originalsprache;
+        # kryptische (Regel-IDs, Aktenzeichen) ersetzt der beschreibende
+        # LLM-Anzeigetitel. Der Slug ("sl") bleibt am Original-Titel
+        # verankert, damit URLs und Newsletter-Dedup stabil bleiben.
+        ti = (llm or {}).get("ti") or {"de": title, "en": title}
         entry = {
             "d": date,
             "t": {"de": de, "en": en},
             "src": _domain(r["canonical_url"]),
-            # Dokumenttitel bleiben laut DESIGN.md in Originalsprache.
-            "ti": {"de": title, "en": title},
+            "ti": ti,
+            "sl": _slugify(title),
             "s": {"de": llm["de"], "en": llm["en"]} if llm
                  else {"de": summary, "en": summary},
             "url": r["canonical_url"],
