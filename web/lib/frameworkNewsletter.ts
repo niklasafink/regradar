@@ -23,7 +23,15 @@ import { listSubscribers, redis, setLastFwNotified } from "./subscribers";
 import { JURISDICTION_LABEL, SOURCES, type Source } from "./sources";
 
 const SEEN_KEY = "newsletter:fwseen";
+// Zeitpunkt des letzten echten Versands an Abonnenten. Der lokale Stundenlauf
+// (scraper/clear_newsletter_pending.py) fragt ihn ab und leert danach
+// NEWSLETTER_PENDING.md im Repo.
+const LAST_SENT_KEY = "newsletter:lastFwSentAt";
 const EPOCH = "1970-01-01T00:00:00.000Z";
+
+export async function lastFwSentAt(): Promise<string | null> {
+  return await redis().get<string>(LAST_SENT_KEY);
+}
 
 export interface FwRunReport {
   initialized: boolean;
@@ -323,6 +331,10 @@ export async function runFwNewsletter(opts: {
       report.sent++;
       if (writable) await setLastFwNotified(sub.email, nowIso);
     }
+  }
+
+  if (writable && report.sent > 0) {
+    await redis().set(LAST_SENT_KEY, nowIso);
   }
 
   return report;

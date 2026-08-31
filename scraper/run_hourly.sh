@@ -20,6 +20,9 @@ echo "=== Lauf gestartet: $(date '+%Y-%m-%d %H:%M:%S') ==="
 # max. eine Mail pro Kalendertag (Tabelle big4_gap_runs), daher hier im
 # Stundenlauf unbedenklich.
 /usr/bin/python3 -m regradar gap-report || echo "gap-report fehlgeschlagen (weiter)"
+# NEWSLETTER_PENDING.md leeren, sobald der wöchentliche Rahmenwerk-Newsletter
+# tatsächlich verschickt wurde (Zeitstempel via /api/newsletter/frameworks?status=1)
+/usr/bin/python3 clear_newsletter_pending.py || echo "newsletter-pending-check fehlgeschlagen (weiter)"
 
 # Auto-Push + Deploy: nur wenn sich live.json inhaltlich geändert hat
 # (mehr als nur der generated_at-Zeitstempel)

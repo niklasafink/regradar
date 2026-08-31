@@ -6,12 +6,14 @@
 //       diese Adresse (markiert nichts als versandt)
 //   GET /api/newsletter/frameworks?preview=1           → HTML-Vorschau im
 //       Browser, kein Versand
+//   GET /api/newsletter/frameworks?status=1            → { lastSentAt } des
+//       letzten echten Versands (für das lokale Leeren von NEWSLETTER_PENDING.md)
 //
 // Auth wie beim Update-Newsletter: "Authorization: Bearer <CRON_SECRET>"
 // oder ?secret=<CRON_SECRET>.
 
 import { FRAMEWORKS } from "@/lib/data";
-import { renderFwNewsletter, runFwNewsletter } from "@/lib/frameworkNewsletter";
+import { lastFwSentAt, renderFwNewsletter, runFwNewsletter } from "@/lib/frameworkNewsletter";
 import { SOURCES } from "@/lib/sources";
 
 export const maxDuration = 300;
@@ -25,6 +27,12 @@ export async function GET(request: Request) {
   const auth = request.headers.get("authorization");
   if (auth !== `Bearer ${secret}` && url.searchParams.get("secret") !== secret) {
     return Response.json({ error: "unauthorized" }, { status: 401 });
+  }
+
+  // Zeitpunkt des letzten echten Versands — der lokale Stundenlauf leert
+  // damit NEWSLETTER_PENDING.md (scraper/clear_newsletter_pending.py).
+  if (url.searchParams.get("status") === "1") {
+    return Response.json({ lastSentAt: await lastFwSentAt() });
   }
 
   if (url.searchParams.get("preview") === "1") {
