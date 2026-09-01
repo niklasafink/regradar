@@ -170,13 +170,13 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             {lang === "de" ? (
               <>
                 Wir haben einen Bestätigungslink an{" "}
-                <span className="font-medium text-slate-900">{email.trim()}</span>{" "}
+                <span className="break-all font-medium text-slate-900">{email.trim()}</span>{" "}
                 geschickt. Erst nach dem Klick sind Sie angemeldet.
               </>
             ) : (
               <>
                 We sent a confirmation link to{" "}
-                <span className="font-medium text-slate-900">{email.trim()}</span>.
+                <span className="break-all font-medium text-slate-900">{email.trim()}</span>.
                 You are only subscribed once you click it.
               </>
             )}
@@ -205,26 +205,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 : lang === "de" ? "Abonnieren" : "Subscribe"}
             </button>
           </div>
-          {/* volle Breite, damit der einzeilige Text nicht an der max-w-md-Box hängt (Overflow wäre rechtslastig) */}
-          <p className="mt-2 w-full text-center text-xs text-slate-400 sm:whitespace-nowrap">
-            {lang === "de" ? (
-              <>
-                Mit dem Abonnieren stimmen Sie der Verwendung von Analyse-Cookies zu (
-                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
-                  Datenschutzerklärung
-                </a>
-                ).
-              </>
-            ) : (
-              <>
-                By subscribing you agree to the use of analytics cookies (
-                <a href="/datenschutz" className="underline underline-offset-2 hover:text-slate-900">
-                  privacy policy
-                </a>
-                ).
-              </>
-            )}
-          </p>
+          {/* Consent-Hinweis steht im Anmelde-Dialog unter dem Button, nicht hier. */}
         </form>
       )}
 
@@ -245,7 +226,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             aria-label={
               lang === "de" ? "Newsletter einrichten" : "Set up newsletter"
             }
-            className="relative w-full max-w-lg rounded-3xl bg-white p-6 text-left shadow-2xl sm:p-8"
+            className="relative max-h-[90dvh] w-full max-w-lg overflow-y-auto rounded-3xl bg-white p-5 text-left shadow-2xl sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -266,11 +247,11 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             <p className="mt-1 text-sm text-slate-500">
               {lang === "de" ? (
                 <>
-                  Updates gehen an <span className="font-medium text-slate-900">{email.trim()}</span> — noch zwei kurze Fragen.
+                  Updates gehen an <span className="break-all font-medium text-slate-900">{email.trim()}</span> — noch zwei kurze Fragen.
                 </>
               ) : (
                 <>
-                  Updates will go to <span className="font-medium text-slate-900">{email.trim()}</span> — two quick questions.
+                  Updates will go to <span className="break-all font-medium text-slate-900">{email.trim()}</span> — two quick questions.
                 </>
               )}
             </p>
