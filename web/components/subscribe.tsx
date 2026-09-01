@@ -156,8 +156,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             : "Almost done: please click the confirmation link we just sent you."}
         </p>
       ) : (
-        <form onSubmit={submitEmail} className="mx-auto mt-4 w-full max-w-md">
-          <div className="flex w-full gap-2">
+        <form onSubmit={submitEmail} className="mt-4 w-full">
+          <div className="mx-auto flex w-full max-w-md gap-2">
             <input
               type="email"
               required
@@ -178,8 +178,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 : lang === "de" ? "Abonnieren" : "Subscribe"}
             </button>
           </div>
-          {/* ab sm einzeilig; der zentrierte Text darf die max-w-md-Box symmetrisch überragen */}
-          <p className="mt-2 text-center text-xs text-slate-400 sm:whitespace-nowrap">
+          {/* volle Breite, damit der einzeilige Text nicht an der max-w-md-Box hängt (Overflow wäre rechtslastig) */}
+          <p className="mt-2 w-full text-center text-xs text-slate-400 sm:whitespace-nowrap">
             {lang === "de" ? (
               <>
                 Mit dem Abonnieren stimmen Sie der Verwendung von Analyse-Cookies zu (
@@ -290,7 +290,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
   );
 
   return (
-    <div id="newsletter" className="mx-auto mt-7 max-w-md scroll-mt-24 text-center">
+    <div id="newsletter" className="mx-auto mt-7 scroll-mt-24 text-center">
       {body}
     </div>
   );
