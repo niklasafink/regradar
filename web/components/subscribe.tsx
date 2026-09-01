@@ -375,9 +375,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             <p className="mt-3 text-center text-xs leading-relaxed text-slate-400">
               {lang === "de" ? (
                 <>
-                  Sie bestätigen Ihre Anmeldung per E-Mail und können sich jederzeit
-                  mit einem Klick abmelden. Mit dem Abonnieren stimmen Sie der
-                  Verwendung von Analyse-Cookies zu (
+                  Anmeldung wird per E-Mail bestätigt, Abmeldung jederzeit möglich.
+                  Mit dem Abonnieren stimmen Sie Analyse-Cookies zu (
                   <a
                     href="/datenschutz"
                     className="underline underline-offset-2 hover:text-slate-900"
@@ -388,9 +387,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 </>
               ) : (
                 <>
-                  You&apos;ll confirm your subscription by email and can unsubscribe
-                  anytime with one click. By subscribing you agree to the use of
-                  analytics cookies (
+                  Subscription confirmed by email, unsubscribe anytime. By
+                  subscribing you agree to analytics cookies (
                   <a
                     href="/datenschutz"
                     className="underline underline-offset-2 hover:text-slate-900"
