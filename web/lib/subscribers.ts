@@ -3,11 +3,14 @@
 // abonniert haben; Abmeldung entfernt die E-Mail komplett.
 
 import { Redis } from "@upstash/redis";
+import type { Frequency } from "./email";
 
 export type Subscriber = {
   email: string;
   providers: string[];
   confirmedAt: string;
+  // Rhythmus des Update-Newsletters; fehlt bei Alt-Abonnenten = "daily".
+  frequency?: Frequency;
   // ISO-Zeitpunkt der letzten Newsletter-Zustellung an diese Adresse.
   // Zusammen mit confirmedAt das Wasserzeichen: verschickt werden nur
   // Updates, die das System NACH max(confirmedAt, lastNotifiedAt) zum
@@ -21,6 +24,7 @@ export type Subscriber = {
 type Stored = {
   providers: string[];
   confirmedAt: string;
+  frequency?: Frequency;
   lastNotifiedAt?: string;
   lastFwNotifiedAt?: string;
 };
@@ -48,21 +52,28 @@ export function redis(): Redis {
 export async function addSubscriber(
   email: string,
   newProviders: string[],
+  frequency?: Frequency,
 ): Promise<"new" | "expanded" | "unchanged"> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
   const providers = new Set(existing?.providers ?? []);
   const before = providers.size;
   for (const p of newProviders) if (p) providers.add(p);
-  if (existing && providers.size === before) return "unchanged";
+  const nextFreq = frequency ?? existing?.frequency ?? "daily";
+  const freqChanged = existing ? nextFreq !== (existing.frequency ?? "daily") : false;
+  if (existing && providers.size === before && !freqChanged) return "unchanged";
   await redis().hset(KEY, {
     [key]: {
       providers: [...providers],
       confirmedAt: existing?.confirmedAt ?? new Date().toISOString(),
+      frequency: nextFreq,
       ...(existing?.lastNotifiedAt ? { lastNotifiedAt: existing.lastNotifiedAt } : {}),
       ...(existing?.lastFwNotifiedAt ? { lastFwNotifiedAt: existing.lastFwNotifiedAt } : {}),
     } satisfies Stored,
   });
+  // Reine Rhythmus-Änderung wird gespeichert, zählt aber nicht als "Abo
+  // erweitert" (keine irreführende Betreiber-Mail über neue Quellen).
+  if (existing && providers.size === before) return "unchanged";
   return existing ? "expanded" : "new";
 }
 
@@ -78,6 +89,7 @@ export async function listSubscribers(): Promise<Subscriber[]> {
     email,
     providers: s.providers ?? [],
     confirmedAt: s.confirmedAt,
+    frequency: s.frequency,
     lastNotifiedAt: s.lastNotifiedAt,
     lastFwNotifiedAt: s.lastFwNotifiedAt,
   }));

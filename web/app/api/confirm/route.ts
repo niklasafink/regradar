@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   if (!data) {
     return Response.redirect(`${base}/?abo=invalid`, 302);
   }
-  const result = await addSubscriber(data.email, data.providers);
+  const result = await addSubscriber(data.email, data.providers, data.freq);
   // "unchanged" (wiederholter Aufruf desselben Links durch Mail-Scanner
   // oder Reload) löst keine Mail aus.
   if (result !== "unchanged") {

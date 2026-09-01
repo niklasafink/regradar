@@ -44,12 +44,15 @@ const ERROR_TEXT: Record<ErrorCode, { de: string; en: string }> = {
   },
 };
 
+type Frequency = "daily" | "weekly";
+
 export function SubscribeBox({ provider = "" }: { provider?: string }) {
   const { lang } = useStore();
   const [email, setEmail] = useState("");
   const [selected, setSelected] = useState<string[]>(
     PROVIDERS.some((p) => p.id === provider) ? [provider] : [],
   );
+  const [freq, setFreq] = useState<Frequency>("daily");
   const [status, setStatus] = useState<Status>("idle");
   const [errorCode, setErrorCode] = useState<ErrorCode>("unknown");
   const [hint, setHint] = useState(false);
@@ -91,14 +94,17 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, providers }),
+        body: JSON.stringify({ email, providers, frequency: freq }),
       });
       if (res.ok) {
         // Der Abonnieren-Klick gilt (per Hinweis unterm Formular) als Analyse-
         // Einwilligung — erst erteilen, dann identify (Guard liest den Consent).
         grantAnalyticsConsent();
         identify(email.trim().toLowerCase(), { source: "newsletter" });
-        track("newsletter_submitted", { provider: providers.join(",") });
+        track("newsletter_submitted", {
+          provider: providers.join(","),
+          frequency: freq,
+        });
         setStatus("sent");
         setModalOpen(false);
         return;
@@ -117,12 +123,10 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
     }
   };
 
+  // Immer erst das Dialog-Fenster: dort werden Anbietertyp (falls noch offen)
+  // und der Benachrichtigungs-Rhythmus gewählt, dann erst wird abgeschickt.
   const submitEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    if (selected.length > 0) {
-      void send(selected);
-      return;
-    }
     setHint(false);
     setModalOpen(true);
   };
@@ -150,11 +154,34 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             : "You are unsubscribed and won't receive further emails."}
         </p>
       ) : status === "sent" ? (
-        <p className="mt-4 text-sm font-medium text-slate-900">
-          {lang === "de"
-            ? "Fast geschafft: Bitte klicken Sie auf den Bestätigungslink, den wir Ihnen gerade geschickt haben."
-            : "Almost done: please click the confirmation link we just sent you."}
-        </p>
+        <div className="mx-auto mt-4 w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 text-center">
+          <span
+            aria-hidden="true"
+            className="mx-auto flex size-9 items-center justify-center rounded-full bg-slate-900 text-sm text-white"
+          >
+            ✓
+          </span>
+          <p className="mt-3 text-sm font-medium text-slate-900">
+            {lang === "de"
+              ? "Bitte bestätigen Sie Ihre E-Mail-Adresse."
+              : "Please confirm your email address."}
+          </p>
+          <p className="mt-1 text-xs text-slate-500">
+            {lang === "de" ? (
+              <>
+                Wir haben einen Bestätigungslink an{" "}
+                <span className="font-medium text-slate-900">{email.trim()}</span>{" "}
+                geschickt. Erst nach dem Klick sind Sie angemeldet.
+              </>
+            ) : (
+              <>
+                We sent a confirmation link to{" "}
+                <span className="font-medium text-slate-900">{email.trim()}</span>.
+                You are only subscribed once you click it.
+              </>
+            )}
+          </p>
+        </div>
       ) : (
         <form onSubmit={submitEmail} className="mt-4 w-full">
           <div className="mx-auto flex w-full max-w-md gap-2">
@@ -209,27 +236,50 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/50 p-4 backdrop-blur-sm"
           onClick={() => setModalOpen(false)}
         >
           <div
             role="dialog"
             aria-modal="true"
             aria-label={
-              lang === "de"
-                ? "Anbietertyp wählen"
-                : "Choose provider type"
+              lang === "de" ? "Newsletter einrichten" : "Set up newsletter"
             }
-            className="w-full max-w-md rounded-2xl bg-white p-6 text-center shadow-xl"
+            className="relative w-full max-w-lg rounded-3xl bg-white p-6 text-left shadow-2xl sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
-            <p className="text-sm font-medium text-slate-900">
-              {lang === "de"
-                ? "Für welche Art von Institut möchten Sie Updates erhalten?"
-                : "Which type of institution do you want updates for?"}
+            <button
+              type="button"
+              onClick={() => setModalOpen(false)}
+              aria-label={lang === "de" ? "Schließen" : "Close"}
+              className="absolute right-4 top-4 flex size-8 items-center justify-center rounded-full text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-900"
+            >
+              ✕
+            </button>
+
+            <p className="text-base font-semibold text-slate-900">
+              regulatory<em className="font-light">radar</em>
+            </p>
+            <h2 className="font-heading mt-4 text-xl font-medium tracking-tight text-slate-900 sm:text-2xl">
+              {lang === "de" ? "Fast geschafft" : "Almost there"}
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              {lang === "de" ? (
+                <>
+                  Updates gehen an <span className="font-medium text-slate-900">{email.trim()}</span> — noch zwei kurze Fragen.
+                </>
+              ) : (
+                <>
+                  Updates will go to <span className="font-medium text-slate-900">{email.trim()}</span> — two quick questions.
+                </>
+              )}
+            </p>
+
+            <p className="mt-6 text-xs font-medium uppercase tracking-wide text-slate-400">
+              {lang === "de" ? "Für welche Art von Institut?" : "Which type of institution?"}
             </p>
             <div
-              className="mt-4 flex flex-wrap justify-center gap-1.5"
+              className="mt-2.5 flex flex-wrap gap-1.5"
               role="group"
               aria-label={lang === "de" ? "Anbietertyp wählen" : "Choose provider type"}
             >
@@ -241,7 +291,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                     type="button"
                     aria-pressed={active}
                     onClick={() => toggle(p.id)}
-                    className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+                    className={`rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
                       active
                         ? "border-slate-900 bg-slate-900 text-white"
                         : "border-slate-200 bg-white text-slate-600 hover:border-slate-400 hover:text-slate-900"
@@ -253,36 +303,124 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               })}
             </div>
             {hint && (
-              <p className="mt-3 text-xs text-red-600">
+              <p className="mt-2 text-xs text-red-600">
                 {lang === "de"
                   ? "Bitte wählen Sie mindestens einen Anbietertyp."
                   : "Please select at least one provider type."}
               </p>
             )}
+
+            <p className="mt-6 text-xs font-medium uppercase tracking-wide text-slate-400">
+              {lang === "de" ? "Wie oft möchten Sie Post?" : "How often do you want mail?"}
+            </p>
+            <div
+              className="mt-2.5 grid grid-cols-1 gap-2 sm:grid-cols-2"
+              role="radiogroup"
+              aria-label={lang === "de" ? "Häufigkeit wählen" : "Choose frequency"}
+            >
+              {(
+                [
+                  {
+                    id: "daily" as const,
+                    title: { de: "Täglich", en: "Daily" },
+                    sub: {
+                      de: "sofern es neue Updates gibt",
+                      en: "whenever there are new updates",
+                    },
+                  },
+                  {
+                    id: "weekly" as const,
+                    title: { de: "Wöchentlich", en: "Weekly" },
+                    sub: {
+                      de: "eine gesammelte Übersicht pro Woche",
+                      en: "one combined digest per week",
+                    },
+                  },
+                ]
+              ).map((opt) => {
+                const active = freq === opt.id;
+                return (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={active}
+                    onClick={() => setFreq(opt.id)}
+                    className={`rounded-2xl border p-4 text-left transition-colors ${
+                      active
+                        ? "border-slate-900 bg-slate-50"
+                        : "border-slate-200 bg-white hover:border-slate-400"
+                    }`}
+                  >
+                    <span className="flex items-center justify-between">
+                      <span className="text-sm font-medium text-slate-900">
+                        {opt.title[lang === "de" ? "de" : "en"]}
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className={`flex size-5 items-center justify-center rounded-full text-[11px] ${
+                          active
+                            ? "bg-slate-900 text-white"
+                            : "border border-slate-300 text-transparent"
+                        }`}
+                      >
+                        ✓
+                      </span>
+                    </span>
+                    <span className="mt-1 block text-xs text-slate-500">
+                      {opt.sub[lang === "de" ? "de" : "en"]}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
             {status === "error" && (
-              <p className="mt-3 text-xs text-red-600">
+              <p className="mt-4 text-xs text-red-600">
                 {ERROR_TEXT[errorCode][lang === "de" ? "de" : "en"]}
               </p>
             )}
-            <div className="mt-5 flex justify-center gap-2">
-              <button
-                type="button"
-                onClick={() => setModalOpen(false)}
-                className="rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-600 transition-colors hover:border-slate-400 hover:text-slate-900"
-              >
-                {lang === "de" ? "Abbrechen" : "Cancel"}
-              </button>
-              <button
-                type="button"
-                onClick={confirmModal}
-                disabled={status === "sending"}
-                className="rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-slate-700 disabled:opacity-50"
-              >
-                {status === "sending"
-                  ? lang === "de" ? "Sendet…" : "Sending…"
-                  : lang === "de" ? "Abonnieren" : "Subscribe"}
-              </button>
-            </div>
+
+            <button
+              type="button"
+              onClick={confirmModal}
+              disabled={status === "sending"}
+              className="mt-7 w-full rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-700 disabled:opacity-50"
+            >
+              {status === "sending"
+                ? lang === "de" ? "Sendet…" : "Sending…"
+                : lang === "de" ? "Kostenlos abonnieren →" : "Subscribe for free →"}
+            </button>
+            <p className="mt-3 text-center text-xs text-slate-400">
+              {lang === "de"
+                ? "Bestätigung per E-Mail, Abmeldung jederzeit mit einem Klick."
+                : "Confirmation by email, unsubscribe anytime with one click."}
+            </p>
+            <p className="mt-1.5 text-center text-[11px] text-slate-400">
+              {lang === "de" ? (
+                <>
+                  Mit dem Abonnieren stimmen Sie der Verwendung von Analyse-Cookies zu (
+                  <a
+                    href="/datenschutz"
+                    className="underline underline-offset-2 hover:text-slate-900"
+                  >
+                    Datenschutzerklärung
+                  </a>
+                  ).
+                </>
+              ) : (
+                <>
+                  By subscribing you agree to the use of analytics cookies (
+                  <a
+                    href="/datenschutz"
+                    className="underline underline-offset-2 hover:text-slate-900"
+                  >
+                    privacy policy
+                  </a>
+                  ).
+                </>
+              )}
+            </p>
           </div>
         </div>
       )}

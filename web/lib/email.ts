@@ -5,9 +5,14 @@ import { PROVIDERS } from "./data";
 const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
 
+// Benachrichtigungs-Rhythmus des Update-Newsletters: "daily" = jeden Tag,
+// sofern es neue Updates gibt; "weekly" = höchstens einmal pro Woche.
+export type Frequency = "daily" | "weekly";
+
 export type SubscribePayload = {
   email: string;
   providers: string[];
+  freq: Frequency;
   exp: number;
 };
 
@@ -15,9 +20,13 @@ function sign(data: string) {
   return createHmac("sha256", SECRET).update(data).digest("base64url");
 }
 
-export function createToken(email: string, providers: string[]): string {
+export function createToken(
+  email: string,
+  providers: string[],
+  freq: Frequency = "daily",
+): string {
   const payload = Buffer.from(
-    JSON.stringify({ email, providers, exp: Date.now() + TOKEN_TTL_MS }),
+    JSON.stringify({ email, providers, freq, exp: Date.now() + TOKEN_TTL_MS }),
   ).toString("base64url");
   return `${payload}.${sign(payload)}`;
 }
@@ -38,6 +47,8 @@ export function verifyToken(token: string): SubscribePayload | null {
     if (!Array.isArray(data.providers)) {
       data.providers = data.provider ? [data.provider] : [];
     }
+    // Alt-Tokens ohne freq-Feld gelten als täglich (bisheriges Verhalten).
+    data.freq = data.freq === "weekly" ? "weekly" : "daily";
     return data;
   } catch {
     return null;
@@ -190,6 +201,7 @@ export async function sendConfirmationEmail(
   email: string,
   providers: string[],
   providerLabels: string[] = [],
+  freq: Frequency = "daily",
 ) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -198,7 +210,7 @@ export async function sendConfirmationEmail(
   const resend = new Resend(apiKey);
   const base = process.env.APP_URL ?? "http://localhost:3000";
   const confirmUrl = `${base}/api/confirm?token=${encodeURIComponent(
-    createToken(email, providers),
+    createToken(email, providers, freq),
   )}`;
   const scope = providerLabels.length
     ? ` zu Updates für: <strong>${providerLabels.join(", ")}</strong>`
@@ -208,13 +220,18 @@ export async function sendConfirmationEmail(
     ? ` zu Updates für: ${providerLabels.join(", ")}`
     : "";
 
+  const rhythm =
+    freq === "weekly"
+      ? "höchstens einmal pro Woche"
+      : "täglich, sofern es neue Updates gibt";
+
   const { error } = await resend.emails.send({
     from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
     to: email,
     subject: "Bitte bestätigen: Update-Benachrichtigungen von Regulatory Radar",
     text: `regulatoryradar
 
-bitte bestätigen Sie mit einem Klick, dass wir Sie kostenlos per E-Mail über neue regulatorische Updates${textScope} benachrichtigen dürfen:
+bitte bestätigen Sie mit einem Klick, dass wir Sie kostenlos per E-Mail über neue regulatorische Updates${textScope} benachrichtigen dürfen (${rhythm}):
 
 ${confirmUrl}
 
@@ -226,7 +243,8 @@ Datenschutz: ${base}/datenschutz`,
       <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
         <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
         <p>bitte bestätigen Sie mit einem Klick, dass wir Sie kostenlos per
-        E-Mail über neue regulatorische Updates${scope} benachrichtigen dürfen:</p>
+        E-Mail über neue regulatorische Updates${scope} benachrichtigen dürfen
+        (${rhythm}):</p>
         <p style="margin:28px 0">
           <a href="${confirmUrl}"
              style="background:#0f172a;color:#fff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600">

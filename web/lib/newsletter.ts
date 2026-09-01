@@ -118,6 +118,20 @@ function freshFor(
   );
 }
 
+// Wöchentliche Abonnenten erhalten frühestens ~6,5 Tage nach der letzten
+// Zustellung (bzw. Anmeldung) wieder Post — der halbe Tag Puffer fängt
+// Cron-Jitter ab, damit aus 7 Tagen nicht faktisch 8 werden. Bis dahin
+// bleibt ihr Wasserzeichen stehen und die Updates sammeln sich an.
+const WEEKLY_MIN_MS = 1000 * 60 * 60 * (24 * 6 + 12);
+
+function dueFor(sub: Subscriber, nowIso: string): boolean {
+  if (sub.frequency !== "weekly") return true;
+  const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
+    .sort()
+    .pop()!;
+  return Date.parse(nowIso) - Date.parse(watermark) >= WEEKLY_MIN_MS;
+}
+
 const esc = (s: string): string =>
   s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
@@ -278,6 +292,7 @@ export async function runNewsletter(opts: {
   if (!opts.approved && writable) {
     const pending = new Map<string, UpdatePage>();
     for (const sub of subs) {
+      if (!dueFor(sub, nowIso)) continue; // Wochen-Abo, noch nicht fällig
       const fresh = freshFor(sub, sorted, seen, nowIso);
       for (const p of relevantFor(sub, fresh)) pending.set(p.slug, p);
     }
@@ -304,6 +319,12 @@ export async function runNewsletter(opts: {
   const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
 
   for (const sub of subs) {
+    if (!dueFor(sub, nowIso)) {
+      // Wochen-Abo, noch nicht fällig: Wasserzeichen NICHT vorrücken,
+      // die Updates kommen gesammelt mit der nächsten fälligen Mail.
+      report.skipped++;
+      continue;
+    }
     const fresh = freshFor(sub, sorted, seen, nowIso);
     if (fresh.length === 0) {
       report.skipped++;
