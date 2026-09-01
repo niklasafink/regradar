@@ -44,6 +44,19 @@ export function verifyToken(token: string): SubscribePayload | null {
   }
 }
 
+// Resend erlaubt 2 API-Requests pro Sekunde. Massenversand-Loops holen sich
+// einen Pacer und rufen ihn vor jedem Send auf; er wartet, bis seit dem
+// letzten Aufruf mindestens `intervalMs` vergangen sind (600 ms ≈ 1,7/s,
+// Puffer für parallele Einzelmails wie Freigabe-/Notify-Sends).
+export function createSendPacer(intervalMs = 600): () => Promise<void> {
+  let next = 0;
+  return async () => {
+    const wait = next - Date.now();
+    if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+    next = Date.now() + intervalMs;
+  };
+}
+
 // Freigabe-Token für den Newsletter-Versand: Der Cron verschickt zunächst nur
 // eine Vorschau an den Betreiber; erst der Klick auf den Freigabe-Link (mit
 // diesem Token) löst den Versand an den Verteiler aus. 7 Tage gültig, damit

@@ -18,7 +18,7 @@
 
 import { Resend } from "resend";
 import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
-import { createUnsubToken, sendApprovalRequest } from "./email";
+import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
 import { listSubscribers, redis, setLastFwNotified } from "./subscribers";
 import { JURISDICTION_LABEL, SOURCES, type Source } from "./sources";
 
@@ -287,6 +287,7 @@ export async function runFwNewsletter(opts: {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
+  const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
 
   for (const sub of subs) {
     // Wasserzeichen: jüngster von Anmeldung und letzter Rahmenwerk-Mail.
@@ -319,6 +320,7 @@ export async function runFwNewsletter(opts: {
     ].filter(Boolean).join(", ");
     const subject = `Neu bei Regulatory Radar: ${parts}`;
     const { html, text } = renderFwNewsletter(freshFw, freshSrc, unsubUrl, base);
+    await pace();
     const { error } = await resend.emails.send({
       from,
       to: sub.email,

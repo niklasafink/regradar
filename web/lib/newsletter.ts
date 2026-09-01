@@ -19,7 +19,7 @@
 
 import { Resend } from "resend";
 import { PROVIDERS } from "./data";
-import { createUnsubToken, sendApprovalRequest } from "./email";
+import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
 import { authority, daysUntil, dt } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
@@ -301,6 +301,7 @@ export async function runNewsletter(opts: {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
+  const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
 
   for (const sub of subs) {
     const fresh = freshFor(sub, sorted, seen, nowIso);
@@ -327,6 +328,7 @@ export async function runNewsletter(opts: {
         ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
         : `${rel.length} neue regulatorische Updates`;
     const { html, text } = renderNewsletter(rel, unsubUrl, base);
+    await pace();
     const { error } = await resend.emails.send({
       from,
       to: sub.email,

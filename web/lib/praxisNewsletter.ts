@@ -13,11 +13,17 @@
 // Freigabe-Link an den Betreiber; erst der Klick löst den Versand aus.
 
 import { Resend } from "resend";
-import { createUnsubToken, sendApprovalRequest } from "./email";
+import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
 import { PRAXIS, PRAXIS_CAT_LABELS, type PraxisItem } from "./live";
 import { listSubscribers, redis } from "./subscribers";
 
 const MONTH_KEY = "newsletter:lastPraxisMonth";
+// Set der Adressen, die den Monats-Newsletter schon bekommen haben. Macht
+// Wiederholungsläufe idempotent (z. B. Freigabe-Link erneut klicken, nachdem
+// ein Teil der Sends am Rate-Limit gescheitert ist). TTL 90 Tage — danach ist
+// der Monat lange abgeschlossen und die Adressliste muss nicht weiterleben.
+const sentSetKey = (month: string) => `newsletter:praxisSent:${month}`;
+const SENT_SET_TTL_S = 60 * 60 * 24 * 90;
 
 const MONTH_NAMES_DE = [
   "Januar", "Februar", "März", "April", "Mai", "Juni",
@@ -217,15 +223,23 @@ export async function runPraxisNewsletter(opts: {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
+  const pace = createSendPacer();
+  const alreadySent = new Set(
+    writable ? await redis().smembers(sentSetKey(month)) : [],
+  );
 
   for (const sub of subs) {
+    if (alreadySent.has(sub.email)) {
+      report.skipped++;
+      continue;
+    }
     if (opts.dryRun) {
       report.sent++;
       continue;
     }
     const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
     const { html, text, summary } = renderPraxisNewsletter(month, items, unsubUrl, base);
-    const { error } = await resend.emails.send({
+    const payload = {
       from,
       to: sub.email,
       subject: `Aufsichtspraxis im ${monthLabel(month)}: ${summary}`,
@@ -235,13 +249,31 @@ export async function runPraxisNewsletter(opts: {
         "List-Unsubscribe": `<${unsubUrl}>`,
         "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
       },
-    });
-    if (error) report.errors.push(`${sub.email}: ${error.message}`);
-    else report.sent++;
+    };
+    await pace();
+    let { error } = await resend.emails.send(payload);
+    // Rate-Limit trotz Drossel (z. B. paralleler Send anderswo): einmal
+    // kurz warten und wiederholen; bleibt der Fehler, fängt ihn der
+    // idempotente Wiederholungslauf über den Freigabe-Link.
+    if (error && /rate|429|too many/i.test(error.message)) {
+      await new Promise((r) => setTimeout(r, 1500));
+      ({ error } = await resend.emails.send(payload));
+    }
+    if (error) {
+      report.errors.push(`${sub.email}: ${error.message}`);
+    } else {
+      report.sent++;
+      if (writable) {
+        await redis().sadd(sentSetKey(month), sub.email);
+        await redis().expire(sentSetKey(month), SENT_SET_TTL_S);
+      }
+    }
   }
 
-  // Monat erst nach (weitgehend) erfolgreichem Versand als erledigt markieren.
-  if (writable && report.sent > 0) {
+  // Monat erst als erledigt markieren, wenn wirklich alle beliefert sind —
+  // bei Restfehlern bleibt der Marker frei, damit ein erneuter Klick auf den
+  // Freigabe-Link nur die fehlenden Adressen nachliefert.
+  if (writable && report.errors.length === 0) {
     await redis().set(MONTH_KEY, month);
   }
 
