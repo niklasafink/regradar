@@ -74,9 +74,9 @@ export function renderPraxisNewsletter(
     .join(", ");
 
   const intro =
-    "Was hat die Aufsicht im vergangenen Monat konkret getan — und was lässt " +
-    "sich daraus für die eigene Praxis mitnehmen? Einmal im Monat bündeln wir " +
-    "hier die Aufsichtspraxis an einem Ort.";
+    "Einmal im Monat bündeln wir hier die praxisrelevanten Schritte der " +
+    "Aufsicht: Bußgelder, Zwangsgelder, Verwarnungen und Maßnahmen gegen " +
+    "Institute.";
 
   // Balken je Art: Breite proportional zur größten Kategorie (max. 220px).
   const max = Math.max(1, ...cats.map(([, l]) => l.length));
@@ -96,7 +96,7 @@ export function renderPraxisNewsletter(
       <tr><td style="padding:12px 0;border-bottom:1px solid #f1f5f9">
         <p style="margin:0 0 4px;font-size:12px;color:#64748b">
           <span style="display:inline-block;border:1px solid #e2e8f0;border-radius:9999px;padding:1px 10px;font-size:11px;color:#334155">${esc(PRAXIS_CAT_LABELS[i.cat].de)}</span>
-          &nbsp;<span class="num">${esc(i.d)}</span> &nbsp;·&nbsp; ${esc(i.auth)}
+          &nbsp;<span class="num">${esc(i.d)}</span>, ${esc(i.auth)}
         </p>
         <p style="margin:0;font-size:14px;font-weight:600;line-height:1.4">
           <a href="${base}/praxis" style="color:#0f172a;text-decoration:none">${esc(i.ti)}</a>
@@ -117,7 +117,7 @@ export function renderPraxisNewsletter(
     "EINZELFÄLLE",
     "",
     ...items.flatMap((i) => [
-      `${i.d} · ${PRAXIS_CAT_LABELS[i.cat].de} · ${i.auth}`,
+      `${i.d}, ${PRAXIS_CAT_LABELS[i.cat].de}, ${i.auth}`,
       i.ti,
       ...(i.sum ? [i.sum] : []),
       `${base}/praxis`,

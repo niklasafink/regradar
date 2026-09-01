@@ -197,6 +197,8 @@ function DeadlinesPraxisMenu() {
                 key={i.href}
                 role="menuitem"
                 href={i.href}
+                data-fast-goal="nav_click"
+                data-fast-goal-page={i.href.slice(1)}
                 onClick={() => setOpen(false)}
                 className={`flex items-center justify-between gap-3 rounded-full px-3.5 py-2 text-[13px] font-medium transition-colors ${
                   pathname === i.href
@@ -272,6 +274,8 @@ export function Chrome({ children }: { children?: ReactNode }) {
           >
             <Link
               href="/"
+              data-fast-goal="nav_click"
+              data-fast-goal-page="home"
               className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
                 pathname === "/"
                   ? "bg-slate-900 text-white"
@@ -284,6 +288,8 @@ export function Chrome({ children }: { children?: ReactNode }) {
             <DeadlinesPraxisMenu />
             <Link
               href="/updates"
+              data-fast-goal="nav_click"
+              data-fast-goal-page="updates"
               className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
                 pathname === "/updates"
                   ? "bg-slate-900 text-white"
@@ -303,6 +309,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
             rel="noopener noreferrer"
             aria-label="GitHub"
             title="GitHub"
+            data-fast-goal="github_click"
             className="hidden shrink-0 text-slate-400 transition-colors hover:text-slate-900 sm:inline-flex"
           >
             {/* GitHub-Mark */}
@@ -343,6 +350,9 @@ export function Footer() {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-fast-goal="source_click"
+                    data-fast-goal-source={s.id}
+                    data-fast-goal-placement="footer"
                     className="hover:text-slate-900"
                   >
                     {s.name}
@@ -353,6 +363,8 @@ export function Footer() {
           </div>
           <Link
             href="/quellen"
+            data-fast-goal="footer_link_click"
+            data-fast-goal-page="quellen"
             className="inline-flex shrink-0 items-center rounded-full border border-slate-200 px-4 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-slate-400 hover:text-slate-900"
           >
             {lang === "de"
@@ -375,13 +387,28 @@ export function Footer() {
               : "Not legal advice and not regulatory guidance."}
           </span>
           <span className="flex gap-4">
-            <Link href="/quellen" className="hover:text-slate-900">
+            <Link
+              href="/quellen"
+              data-fast-goal="footer_link_click"
+              data-fast-goal-page="quellen"
+              className="hover:text-slate-900"
+            >
               {lang === "de" ? "Quellen" : "Sources"}
             </Link>
-            <Link href="/datenschutz" className="hover:text-slate-900">
+            <Link
+              href="/datenschutz"
+              data-fast-goal="footer_link_click"
+              data-fast-goal-page="datenschutz"
+              className="hover:text-slate-900"
+            >
               {lang === "de" ? "Datenschutz" : "Privacy"}
             </Link>
-            <Link href="/impressum" className="hover:text-slate-900">
+            <Link
+              href="/impressum"
+              data-fast-goal="footer_link_click"
+              data-fast-goal-page="impressum"
+              className="hover:text-slate-900"
+            >
               {lang === "de" ? "Impressum" : "Legal notice"}
             </Link>
             <ConsentSettingsLink />
@@ -411,13 +438,28 @@ export function SlimFooter() {
             : "Not legal advice and not regulatory guidance."}
         </span>
         <span className="flex gap-4">
-          <Link href="/quellen" className="hover:text-slate-900">
+          <Link
+            href="/quellen"
+            data-fast-goal="footer_link_click"
+            data-fast-goal-page="quellen"
+            className="hover:text-slate-900"
+          >
             {lang === "de" ? "Quellen" : "Sources"}
           </Link>
-          <Link href="/datenschutz" className="hover:text-slate-900">
+          <Link
+            href="/datenschutz"
+            data-fast-goal="footer_link_click"
+            data-fast-goal-page="datenschutz"
+            className="hover:text-slate-900"
+          >
             {lang === "de" ? "Datenschutz" : "Privacy"}
           </Link>
-          <Link href="/impressum" className="hover:text-slate-900">
+          <Link
+            href="/impressum"
+            data-fast-goal="footer_link_click"
+            data-fast-goal-page="impressum"
+            className="hover:text-slate-900"
+          >
             {lang === "de" ? "Impressum" : "Legal notice"}
           </Link>
           <ConsentSettingsLink />

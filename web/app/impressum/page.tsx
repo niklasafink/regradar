@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Chrome, SlimFooter } from "@/components/chrome";
+import { TrackGoal } from "@/components/track-goal";
 
 export const metadata: Metadata = {
   title: "Impressum · Regulatory Radar",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 export default function Impressum() {
   return (
     <>
+      <TrackGoal goal="impressum_screen_viewed" />
       <Chrome />
       <main className="mx-auto max-w-3xl px-4 pt-10 pb-20 sm:px-6">
         <h1 className="font-heading text-3xl font-medium tracking-tight">Impressum</h1>

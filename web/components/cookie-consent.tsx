@@ -127,6 +127,10 @@ export function CookieConsent() {
 
   const decide = (allowAnalytics: boolean) => {
     writeConsent(allowAnalytics);
+    // Anonymes Goal (einwilligungsfrei): misst die Opt-in-Quote des Banners
+    window.datafast?.("cookie_consent_decided", {
+      analytics: allowAnalytics ? "granted" : "declined",
+    });
     if (allowAnalytics) {
       loadGoogleAnalytics();
     }

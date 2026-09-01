@@ -120,11 +120,14 @@ def _praxis_summary(text: Optional[str], limit: int = 360) -> str:
     cleaned = _clean(text, 10_000)
     if len(cleaned) <= limit:
         return cleaned
+    # Satzgrenzen nur an Satzzeichen MIT folgendem Leerraum: Punkte in
+    # Zahlen ("16.000 Euro") oder Abkürzungen ohne Leerzeichen dürfen den
+    # Text nicht zerreißen (sonst bleibt z. B. "000 Euro festgesetzt" übrig).
     out = ""
-    for m in re.finditer(r"[^.!?]*[.!?](?:\s+|$)", cleaned):
-        if out and len(out) + len(m.group(0).strip()) + 1 > limit:
+    for part in re.split(r"(?<=[.!?])\s+", cleaned):
+        if out and len(out) + len(part) + 1 > limit:
             break
-        out = (out + " " + m.group(0).strip()).strip()
+        out = (out + " " + part).strip()
     return out or _clean(cleaned, limit)
 
 
@@ -253,6 +256,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     praxis_cutoff = (_pdate.today() - _ptd(
         days=min(PRAXIS_WINDOW_DAYS, PRAXIS_LEGAL_MAX_DAYS))).isoformat()
     praxis = []
+    praxis_raws = []  # Rohtexte parallel zu praxis, für die KI-Prüfroutine
     seen_praxis = set()
     for r in rows:
         cat = _praxis_category(
@@ -280,7 +284,15 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         if summary:
             entry["sum"] = summary
         praxis.append(entry)
+        praxis_raws.append(r["summary"])
     praxis = praxis[:PRAXIS_MAX]
+    praxis_raws = praxis_raws[:PRAXIS_MAX]
+
+    # KI-Prüfroutine: gescrapte Praxis-Kurztexte vor der Veröffentlichung
+    # per LLM auf Textfehler prüfen (abgeschnittene Sätze/Zahlen, Artefakte)
+    # und beanstandete Texte aus dem Rohtext reparieren (gecacht).
+    from .qacheck import check_praxis
+    qa_stats = check_praxis(conn, praxis, praxis_raws)
 
     # Kandidaten sammeln (Regex-Vorfilter + Rahmenwerk-Zuordnung + Datum) …
     candidates = []
@@ -432,7 +444,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     return {"path": path, "frameworks": len(updates), "updates": matched,
-            "praxis": len(praxis),
+            "praxis": len(praxis), **qa_stats,
             "advisory": advisory, "summarized": summarized,
             "impact_rated": len(impacts),
             "scanned": len(rows), "sources": sources_info["sources"],

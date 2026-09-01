@@ -2,6 +2,7 @@
 
 import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
+import { TrackGoal } from "@/components/track-goal";
 import { useStore } from "@/lib/store";
 import {
   JURISDICTION_LABEL,
@@ -33,6 +34,9 @@ function SourceRow({ s }: { s: Source }) {
           href={s.url}
           target="_blank"
           rel="noopener noreferrer"
+          data-fast-goal="source_click"
+          data-fast-goal-source={s.id}
+          data-fast-goal-placement="quellen"
           className="text-sm font-medium text-slate-900 hover:underline hover:underline-offset-2"
         >
           {s.name}
@@ -60,6 +64,7 @@ export default function Quellen() {
 
   return (
     <>
+      <TrackGoal goal="quellen_screen_viewed" />
       <Chrome />
 
       <main className="mx-auto max-w-4xl px-4 pb-24 sm:px-6">

@@ -198,5 +198,39 @@ class DsNewsParsing(unittest.TestCase):
         self.assertEqual((dm.group(1), dm.group(2), dm.group(3)), ("31", "July", "2026"))
 
 
+class PraxisSummary(unittest.TestCase):
+    """Satz-Kürzung für Praxis-Kurztexte: Punkte in Zahlen (Tausenderpunkt)
+    sind keine Satzgrenzen — Regression für den Wise-Europe-Fall, bei dem
+    aus '… 16.000 Euro festgesetzt' nur '000 Euro festgesetzt' übrig blieb."""
+
+    LONG_TAIL = (" Noch ein weiterer Satz, der deutlich über das Limit"
+                 " hinausführt und deshalb bei der Kürzung wegfallen muss,"
+                 " damit der Grenzfall überhaupt eintritt und die Kürzung"
+                 " auf ganze Sätze sichtbar wird und wirklich greift.")
+
+    def test_thousands_separator_not_a_sentence_end(self):
+        from regradar.webexport import _praxis_summary
+        text = ("Die Finanzaufsicht Bafin hat Bußgelder in Höhe von insgesamt "
+                "16.000 Euro festgesetzt. Grund dafür sind unterlassene "
+                "Meldungen an den Bafin-Kontenvergleich." + self.LONG_TAIL * 3)
+        out = _praxis_summary(text, limit=200)
+        self.assertTrue(out.startswith("Die Finanzaufsicht"))
+        self.assertIn("16.000 Euro", out)
+        self.assertTrue(out.endswith("Bafin-Kontenvergleich."))
+
+    def test_short_text_unchanged(self):
+        from regradar.webexport import _praxis_summary
+        self.assertEqual(_praxis_summary("Kurzer Text.", limit=200),
+                         "Kurzer Text.")
+
+    def test_suspicious_start_heuristic(self):
+        from regradar.qacheck import _suspicious_start
+        self.assertTrue(_suspicious_start("000 Euro festgesetzt."))
+        self.assertTrue(_suspicious_start("und weitere Verstöße."))
+        self.assertFalse(_suspicious_start("Die BaFin hat ein Bußgeld "
+                                           "festgesetzt."))
+        self.assertFalse(_suspicious_start("„Zitat“ am Anfang."))
+
+
 if __name__ == "__main__":
     unittest.main()

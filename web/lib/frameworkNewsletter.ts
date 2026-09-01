@@ -143,7 +143,7 @@ export function renderFwNewsletter(
   const text = [
     "regulatoryradar",
     "",
-    `Neu in der Datenbank: ${heading}`,
+    `Neu bei Regulatory Radar: ${heading}`,
     "",
     intro,
     "",
@@ -317,7 +317,7 @@ export async function runFwNewsletter(opts: {
         ? `${freshSrc.length} ${freshSrc.length === 1 ? "Quelle" : "Quellen"}`
         : "",
     ].filter(Boolean).join(", ");
-    const subject = `Neu in der Datenbank: ${parts}`;
+    const subject = `Neu bei Regulatory Radar: ${parts}`;
     const { html, text } = renderFwNewsletter(freshFw, freshSrc, unsubUrl, base);
     const { error } = await resend.emails.send({
       from,

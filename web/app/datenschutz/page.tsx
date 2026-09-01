@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Chrome, SlimFooter } from "@/components/chrome";
+import { TrackGoal } from "@/components/track-goal";
 import { ConsentSettingsLink } from "@/components/cookie-consent";
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function Datenschutz() {
   return (
     <>
+      <TrackGoal goal="datenschutz_screen_viewed" />
       <Chrome />
       <main className="mx-auto max-w-3xl px-4 pt-10 pb-20 sm:px-6">
         <h1 className="font-heading text-3xl font-medium tracking-tight">Datenschutzerklärung</h1>
