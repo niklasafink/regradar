@@ -179,7 +179,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             </button>
           </div>
           {/* ab sm einzeilig; der zentrierte Text darf die max-w-md-Box symmetrisch überragen */}
-          <p className="mt-2 text-xs text-slate-400 sm:whitespace-nowrap">
+          <p className="mt-2 text-center text-xs text-slate-400 sm:whitespace-nowrap">
             {lang === "de" ? (
               <>
                 Mit dem Abonnieren stimmen Sie der Verwendung von Analyse-Cookies zu (
