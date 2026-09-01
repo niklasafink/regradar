@@ -275,7 +275,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               )}
             </p>
 
-            <p className="mt-6 text-xs font-medium uppercase tracking-wide text-slate-400">
+            <p className="mt-6 text-sm font-medium text-slate-900">
               {lang === "de" ? "Für welche Art von Institut?" : "Which type of institution?"}
             </p>
             <div
@@ -310,7 +310,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               </p>
             )}
 
-            <p className="mt-6 text-xs font-medium uppercase tracking-wide text-slate-400">
+            <p className="mt-6 text-sm font-medium text-slate-900">
               {lang === "de" ? "Wie oft möchten Sie Post?" : "How often do you want mail?"}
             </p>
             <div
@@ -391,15 +391,12 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 ? lang === "de" ? "Sendet…" : "Sending…"
                 : lang === "de" ? "Kostenlos abonnieren →" : "Subscribe for free →"}
             </button>
-            <p className="mt-3 text-center text-xs text-slate-400">
-              {lang === "de"
-                ? "Bestätigung per E-Mail, Abmeldung jederzeit mit einem Klick."
-                : "Confirmation by email, unsubscribe anytime with one click."}
-            </p>
-            <p className="mt-1.5 text-center text-[11px] text-slate-400">
+            <p className="mt-3 text-center text-xs leading-relaxed text-slate-400">
               {lang === "de" ? (
                 <>
-                  Mit dem Abonnieren stimmen Sie der Verwendung von Analyse-Cookies zu (
+                  Sie bestätigen Ihre Anmeldung per E-Mail und können sich jederzeit
+                  mit einem Klick abmelden. Mit dem Abonnieren stimmen Sie der
+                  Verwendung von Analyse-Cookies zu (
                   <a
                     href="/datenschutz"
                     className="underline underline-offset-2 hover:text-slate-900"
@@ -410,7 +407,9 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 </>
               ) : (
                 <>
-                  By subscribing you agree to the use of analytics cookies (
+                  You&apos;ll confirm your subscription by email and can unsubscribe
+                  anytime with one click. By subscribing you agree to the use of
+                  analytics cookies (
                   <a
                     href="/datenschutz"
                     className="underline underline-offset-2 hover:text-slate-900"
