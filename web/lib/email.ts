@@ -55,6 +55,49 @@ export function verifyToken(token: string): SubscribePayload | null {
   }
 }
 
+// Identify-Token für Newsletter-Links: hängt an Site-Links in Abonnenten-Mails
+// (?df=…). Beim Klick verknüpft /api/df die E-Mail server-seitig mit dem
+// DataFast-Besucherprofil — so kommen auch Bestandsabonnenten unter "Users".
+// Unbegrenzt gültig (wie der Abmelde-Link), eigener act-Wert gegen Missbrauch.
+export function createIdToken(email: string): string {
+  const payload = Buffer.from(
+    JSON.stringify({ email: email.toLowerCase(), act: "df" }),
+  ).toString("base64url");
+  return `${payload}.${sign(payload)}`;
+}
+
+export function verifyIdToken(token: string): string | null {
+  const [payload, sig] = token.split(".");
+  if (!payload || !sig) return null;
+  const a = Buffer.from(sig);
+  const b = Buffer.from(sign(payload));
+  if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
+  try {
+    const data = JSON.parse(Buffer.from(payload, "base64url").toString()) as {
+      email?: string;
+      act?: string;
+    };
+    return data.act === "df" && typeof data.email === "string" ? data.email : null;
+  } catch {
+    return null;
+  }
+}
+
+/** Antwortadresse aller ausgehenden Mails: Antworten landen bei Resend
+    (Empfangsadresse auf der Resend-Subdomain) und werden von /api/inbound an
+    den Betreiber weitergeleitet. Überschreibbar per RESEND_REPLY_TO. */
+export function replyToAddress(): string {
+  return process.env.RESEND_REPLY_TO ?? "antwort@mordibo.resend.app";
+}
+
+/** Absender + Reply-To für alle ausgehenden Mails (eine Stelle statt zehn). */
+export function senderFields(): { from: string; replyTo: string } {
+  return {
+    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    replyTo: replyToAddress(),
+  };
+}
+
 // Resend erlaubt 2 API-Requests pro Sekunde. Massenversand-Loops holen sich
 // einen Pacer und rufen ihn vor jedem Send auf; er wartet, bis seit dem
 // letzten Aufruf mindestens `intervalMs` vergangen sind (600 ms ≈ 1,7/s,
@@ -135,7 +178,7 @@ export async function sendApprovalRequest(
   const label = APPROVE_LABEL[kind];
 
   const { error } = await resend.emails.send({
-    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    ...senderFields(),
     to: approverAddress(),
     subject: `Freigabe erforderlich: ${summary}`,
     text: `${label} wartet auf Freigabe: ${summary}
@@ -259,7 +302,7 @@ export async function sendConfirmationEmail(
       : "täglich, sofern es neue Updates gibt";
 
   const { error } = await resend.emails.send({
-    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    ...senderFields(),
     to: email,
     subject: "Bitte bestätigen: Update-Benachrichtigungen von Regulatory Radar",
     text: `regulatoryradar
@@ -327,7 +370,7 @@ export async function sendUnsubscribeNotification(subscriberEmail: string) {
   const to = process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de";
 
   const { error } = await resend.emails.send({
-    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    ...senderFields(),
     to,
     subject: `Abmeldung: ${subscriberEmail}`,
     html: `
@@ -361,7 +404,7 @@ export async function sendUnsubscribeConfirmation(subscriberEmail: string) {
     `Datenschutz: ${base}/datenschutz`,
   ].join("\n");
   const { error } = await resend.emails.send({
-    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    ...senderFields(),
     to: subscriberEmail,
     subject: "Sie wurden abgemeldet – Regulatory Radar",
     text,
@@ -406,7 +449,7 @@ export async function sendSubscriberNotification(
   );
 
   const { error } = await resend.emails.send({
-    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    ...senderFields(),
     to,
     subject: `${NOTIFY_TEXT[stage].subject}: ${subscriberEmail}`,
     html: `

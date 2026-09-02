@@ -13,7 +13,8 @@
 // Freigabe-Link an den Betreiber; erst der Klick löst den Versand aus.
 
 import { Resend } from "resend";
-import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
+import { addIdentifyParam } from "./datafast";
+import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
 import { PRAXIS, PRAXIS_CAT_LABELS, type PraxisItem } from "./live";
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
 import { listSubscribers, redis } from "./subscribers";
@@ -225,7 +226,7 @@ export async function runPraxisNewsletter(opts: {
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
+  const { from, replyTo } = senderFields();
   const pace = createSendPacer();
 
   // Lauf-Sperre gegen parallele Freigabe-Klicks: nur ein echter Versand
@@ -266,9 +267,10 @@ export async function runPraxisNewsletter(opts: {
       const { html, text, summary } = renderPraxisNewsletter(month, items, unsubUrl, base);
       const payload = {
         from,
+        replyTo,
         to: sub.email,
         subject: `Aufsichtspraxis im ${monthLabel(month)}: ${summary}`,
-        html,
+        html: addIdentifyParam(html, base, createIdToken(sub.email)),
         text,
         headers: {
           "List-Unsubscribe": `<${unsubUrl}>`,

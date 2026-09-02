@@ -18,7 +18,8 @@
 
 import { Resend } from "resend";
 import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
-import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
+import { addIdentifyParam } from "./datafast";
+import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
 import { listSubscribers, redis, setLastFwNotified } from "./subscribers";
 import { JURISDICTION_LABEL, SOURCES, type Source } from "./sources";
@@ -289,7 +290,7 @@ export async function runFwNewsletter(opts: {
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
+  const { from, replyTo } = senderFields();
   const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
 
   // Lauf-Sperre gegen parallele Freigabe-Klicks (Doppelklick, Mail-Scanner).
@@ -342,9 +343,10 @@ export async function runFwNewsletter(opts: {
       await pace();
       const { error } = await resend.emails.send({
         from,
+        replyTo,
         to: sub.email,
         subject,
-        html,
+        html: addIdentifyParam(html, base, createIdToken(sub.email)),
         text,
         headers: {
           "List-Unsubscribe": `<${unsubUrl}>`,

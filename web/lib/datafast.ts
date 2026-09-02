@@ -3,6 +3,20 @@
 // Server-Call nie. Läuft nur, wenn DATAFAST_API_KEY gesetzt ist und der
 // Request das Besucher-Cookie mitbringt; Fehler blockieren nie die Anmeldung.
 
+/* Hängt den Identify-Token (?df=…) an alle Site-Links einer Newsletter-Mail.
+   Nur an Seiten-Links ohne bestehende Query — /api/-Links (Abmelden, Rhythmus)
+   tragen bereits ?token= und bleiben unberührt. Nur im HTML-Teil verwenden;
+   im Plain-Text blieben die langen Token-URLs unleserlich. */
+export function addIdentifyParam(html: string, base: string, token: string): string {
+  const escaped = base.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const df = encodeURIComponent(token);
+  return html.replace(
+    new RegExp(`href="(${escaped}(?:/[^"?#]*)?)(#[^"]*)?"`, "g"),
+    (match, url: string, hash: string = "") =>
+      url.includes("/api/") ? match : `href="${url}?df=${df}${hash}"`,
+  );
+}
+
 export function datafastVisitorId(request: Request): string | null {
   const cookie = request.headers.get("cookie") ?? "";
   const m = cookie.match(/(?:^|;\s*)datafast_visitor_id=([^;]+)/);
