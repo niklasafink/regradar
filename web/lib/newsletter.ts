@@ -20,6 +20,7 @@
 import { Resend } from "resend";
 import { PROVIDERS } from "./data";
 import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
+import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
 import { authority, daysUntil, dt } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
@@ -42,6 +43,8 @@ export interface RunReport {
       geschickt; pendingItems = Zahl der wartenden Updates. */
   pendingApproval?: boolean;
   pendingItems?: number;
+  /** Ein anderer Lauf hält die Versand-Sperre — nichts verschickt. */
+  locked?: boolean;
 }
 
 /** First-Seen-Zeitpunkte aller Slugs laden bzw. neue Slugs registrieren.
@@ -318,60 +321,83 @@ export async function runNewsletter(opts: {
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
   const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
 
-  for (const sub of subs) {
-    if (!dueFor(sub, nowIso)) {
-      // Wochen-Abo, noch nicht fällig: Wasserzeichen NICHT vorrücken,
-      // die Updates kommen gesammelt mit der nächsten fälligen Mail.
-      report.skipped++;
-      continue;
-    }
-    const fresh = freshFor(sub, sorted, seen, nowIso);
-    if (fresh.length === 0) {
-      report.skipped++;
-      continue;
-    }
-    const rel = relevantFor(sub, fresh);
-    if (rel.length === 0) {
-      // Nichts Relevantes dabei: Wasserzeichen trotzdem vorrücken, damit
-      // diese Updates z. B. nach einer späteren Quellen-Erweiterung nicht
-      // nachträglich als "neu" verschickt werden.
-      if (writable) await setLastNotified(sub.email, nowIso);
-      report.skipped++;
-      continue;
-    }
-    if (opts.dryRun) {
-      report.sent++;
-      continue;
-    }
-    const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
-    const subject =
-      rel.length === 1
-        ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
-        : `${rel.length} neue regulatorische Updates`;
-    const { html, text } = renderNewsletter(rel, unsubUrl, base);
-    await pace();
-    const { error } = await resend.emails.send({
-      from,
-      to: sub.email,
-      subject,
-      html,
-      text,
-      headers: {
-        "List-Unsubscribe": `<${unsubUrl}>`,
-        // One-Click-Unsubscribe (RFC 8058) — Gmail/Outlook werten das fürs
-        // Spam-Scoring aus; die Route beantwortet den POST ohne Redirect.
-        "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
-      },
+  // Lauf-Sperre gegen parallele Freigabe-Klicks (Doppelklick, Mail-Scanner).
+  if (writable && !(await acquireSendLock("updates"))) {
+    report.locked = true;
+    return report;
+  }
+  const startedAt = new Date().toISOString();
+  const progress = async (done: boolean) => {
+    if (!writable) return;
+    await writeProgress({
+      kind: "updates", total: report.recipients, sent: report.sent,
+      skipped: report.skipped, errors: report.errors.length, done, startedAt,
     });
-    if (error) {
-      // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
-      report.errors.push(`${sub.email}: ${error.message}`);
-    } else {
-      report.sent++;
-      if (writable) await setLastNotified(sub.email, nowIso);
+  };
+
+  try {
+    await progress(false);
+    for (const sub of subs) {
+      if (!dueFor(sub, nowIso)) {
+        // Wochen-Abo, noch nicht fällig: Wasserzeichen NICHT vorrücken,
+        // die Updates kommen gesammelt mit der nächsten fälligen Mail.
+        report.skipped++;
+        continue;
+      }
+      const fresh = freshFor(sub, sorted, seen, nowIso);
+      if (fresh.length === 0) {
+        report.skipped++;
+        continue;
+      }
+      const rel = relevantFor(sub, fresh);
+      if (rel.length === 0) {
+        // Nichts Relevantes dabei: Wasserzeichen trotzdem vorrücken, damit
+        // diese Updates z. B. nach einer späteren Quellen-Erweiterung nicht
+        // nachträglich als "neu" verschickt werden.
+        if (writable) await setLastNotified(sub.email, nowIso);
+        report.skipped++;
+        continue;
+      }
+      if (opts.dryRun) {
+        report.sent++;
+        continue;
+      }
+      const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
+      const subject =
+        rel.length === 1
+          ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
+          : `${rel.length} neue regulatorische Updates`;
+      const { html, text } = renderNewsletter(rel, unsubUrl, base);
+      await pace();
+      const { error } = await resend.emails.send({
+        from,
+        to: sub.email,
+        subject,
+        html,
+        text,
+        headers: {
+          "List-Unsubscribe": `<${unsubUrl}>`,
+          // One-Click-Unsubscribe (RFC 8058) — Gmail/Outlook werten das fürs
+          // Spam-Scoring aus; die Route beantwortet den POST ohne Redirect.
+          "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        },
+      });
+      if (error) {
+        // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
+        report.errors.push(`${sub.email}: ${error.message}`);
+      } else {
+        report.sent++;
+        if (writable) await setLastNotified(sub.email, nowIso);
+      }
+      await progress(false);
+    }
+
+    if (writable) await redis().set(LAST_RUN_KEY, nowIso);
+  } finally {
+    if (writable) {
+      await progress(true);
+      await releaseSendLock("updates");
     }
   }
-
-  if (writable) await redis().set(LAST_RUN_KEY, nowIso);
   return report;
 }

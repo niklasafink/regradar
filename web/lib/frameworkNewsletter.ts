@@ -19,6 +19,7 @@
 import { Resend } from "resend";
 import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
 import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
+import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
 import { listSubscribers, redis, setLastFwNotified } from "./subscribers";
 import { JURISDICTION_LABEL, SOURCES, type Source } from "./sources";
 
@@ -46,6 +47,8 @@ export interface FwRunReport {
       geschickt; pendingItems = Zahl der wartenden Zugänge. */
   pendingApproval?: boolean;
   pendingItems?: number;
+  /** Ein anderer Lauf hält die Versand-Sperre — nichts verschickt. */
+  locked?: boolean;
 }
 
 /** First-Seen-Zeitpunkte laden bzw. neue Rahmenwerke/Quellen registrieren. */
@@ -289,60 +292,83 @@ export async function runFwNewsletter(opts: {
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
   const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
 
-  for (const sub of subs) {
-    // Wasserzeichen: jüngster von Anmeldung und letzter Rahmenwerk-Mail.
-    // Nur danach erstmals gesehene Zugänge sind für diesen Abonnenten neu —
-    // Neuanmelder erhalten also keine Zugänge, die vor ihrer Registrierung
-    // dazukamen. ISO-Strings (UTC) sind lexikografisch vergleichbar.
-    const watermark = [sub.confirmedAt || EPOCH, sub.lastFwNotifiedAt || EPOCH]
-      .sort()
-      .pop()!;
-    const freshFw = FRAMEWORKS.filter((f) => (seen[`fw:${f.id}`] ?? nowIso) > watermark);
-    const freshSrc = SOURCES.filter((s) => (seen[`src:${s.id}`] ?? nowIso) > watermark);
-    report.newFrameworks = Math.max(report.newFrameworks, freshFw.length);
-    report.newSources = Math.max(report.newSources, freshSrc.length);
-    if (freshFw.length === 0 && freshSrc.length === 0) {
-      report.skipped++;
-      continue;
-    }
-    if (opts.dryRun) {
-      report.sent++;
-      continue;
-    }
-    const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
-    const parts = [
-      freshFw.length > 0
-        ? `${freshFw.length} ${freshFw.length === 1 ? "Rahmenwerk" : "Rahmenwerke"}`
-        : "",
-      freshSrc.length > 0
-        ? `${freshSrc.length} ${freshSrc.length === 1 ? "Quelle" : "Quellen"}`
-        : "",
-    ].filter(Boolean).join(", ");
-    const subject = `Neu bei Regulatory Radar: ${parts}`;
-    const { html, text } = renderFwNewsletter(freshFw, freshSrc, unsubUrl, base);
-    await pace();
-    const { error } = await resend.emails.send({
-      from,
-      to: sub.email,
-      subject,
-      html,
-      text,
-      headers: {
-        "List-Unsubscribe": `<${unsubUrl}>`,
-        "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
-      },
-    });
-    if (error) {
-      // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
-      report.errors.push(`${sub.email}: ${error.message}`);
-    } else {
-      report.sent++;
-      if (writable) await setLastFwNotified(sub.email, nowIso);
-    }
+  // Lauf-Sperre gegen parallele Freigabe-Klicks (Doppelklick, Mail-Scanner).
+  if (writable && !(await acquireSendLock("frameworks"))) {
+    report.locked = true;
+    return report;
   }
+  const startedAt = new Date().toISOString();
+  const progress = async (done: boolean) => {
+    if (!writable) return;
+    await writeProgress({
+      kind: "frameworks", total: report.recipients, sent: report.sent,
+      skipped: report.skipped, errors: report.errors.length, done, startedAt,
+    });
+  };
 
-  if (writable && report.sent > 0) {
-    await redis().set(LAST_SENT_KEY, nowIso);
+  try {
+    await progress(false);
+    for (const sub of subs) {
+      // Wasserzeichen: jüngster von Anmeldung und letzter Rahmenwerk-Mail.
+      // Nur danach erstmals gesehene Zugänge sind für diesen Abonnenten neu —
+      // Neuanmelder erhalten also keine Zugänge, die vor ihrer Registrierung
+      // dazukamen. ISO-Strings (UTC) sind lexikografisch vergleichbar.
+      const watermark = [sub.confirmedAt || EPOCH, sub.lastFwNotifiedAt || EPOCH]
+        .sort()
+        .pop()!;
+      const freshFw = FRAMEWORKS.filter((f) => (seen[`fw:${f.id}`] ?? nowIso) > watermark);
+      const freshSrc = SOURCES.filter((s) => (seen[`src:${s.id}`] ?? nowIso) > watermark);
+      report.newFrameworks = Math.max(report.newFrameworks, freshFw.length);
+      report.newSources = Math.max(report.newSources, freshSrc.length);
+      if (freshFw.length === 0 && freshSrc.length === 0) {
+        report.skipped++;
+        continue;
+      }
+      if (opts.dryRun) {
+        report.sent++;
+        continue;
+      }
+      const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
+      const parts = [
+        freshFw.length > 0
+          ? `${freshFw.length} ${freshFw.length === 1 ? "Rahmenwerk" : "Rahmenwerke"}`
+          : "",
+        freshSrc.length > 0
+          ? `${freshSrc.length} ${freshSrc.length === 1 ? "Quelle" : "Quellen"}`
+          : "",
+      ].filter(Boolean).join(", ");
+      const subject = `Neu bei Regulatory Radar: ${parts}`;
+      const { html, text } = renderFwNewsletter(freshFw, freshSrc, unsubUrl, base);
+      await pace();
+      const { error } = await resend.emails.send({
+        from,
+        to: sub.email,
+        subject,
+        html,
+        text,
+        headers: {
+          "List-Unsubscribe": `<${unsubUrl}>`,
+          "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        },
+      });
+      if (error) {
+        // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
+        report.errors.push(`${sub.email}: ${error.message}`);
+      } else {
+        report.sent++;
+        if (writable) await setLastFwNotified(sub.email, nowIso);
+      }
+      await progress(false);
+    }
+
+    if (writable && report.sent > 0) {
+      await redis().set(LAST_SENT_KEY, nowIso);
+    }
+  } finally {
+    if (writable) {
+      await progress(true);
+      await releaseSendLock("frameworks");
+    }
   }
 
   return report;

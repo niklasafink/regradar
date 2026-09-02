@@ -15,6 +15,7 @@
 import { Resend } from "resend";
 import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email";
 import { PRAXIS, PRAXIS_CAT_LABELS, type PraxisItem } from "./live";
+import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
 import { listSubscribers, redis } from "./subscribers";
 
 const MONTH_KEY = "newsletter:lastPraxisMonth";
@@ -61,6 +62,8 @@ export interface PraxisRunReport {
   errors: string[];
   pendingApproval?: boolean;
   alreadySent?: boolean;
+  /** Ein anderer Lauf hält die Versand-Sperre — nichts verschickt. */
+  locked?: boolean;
 }
 
 /** E-Mail im Site-Design (schwarz-weiß, große Typo, Pill-Buttons). */
@@ -224,57 +227,83 @@ export async function runPraxisNewsletter(opts: {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const from = `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`;
   const pace = createSendPacer();
-  const alreadySent = new Set(
-    writable ? await redis().smembers(sentSetKey(month)) : [],
-  );
 
-  for (const sub of subs) {
-    if (alreadySent.has(sub.email)) {
-      report.skipped++;
-      continue;
-    }
-    if (opts.dryRun) {
-      report.sent++;
-      continue;
-    }
-    const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
-    const { html, text, summary } = renderPraxisNewsletter(month, items, unsubUrl, base);
-    const payload = {
-      from,
-      to: sub.email,
-      subject: `Aufsichtspraxis im ${monthLabel(month)}: ${summary}`,
-      html,
-      text,
-      headers: {
-        "List-Unsubscribe": `<${unsubUrl}>`,
-        "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
-      },
-    };
-    await pace();
-    let { error } = await resend.emails.send(payload);
-    // Rate-Limit trotz Drossel (z. B. paralleler Send anderswo): einmal
-    // kurz warten und wiederholen; bleibt der Fehler, fängt ihn der
-    // idempotente Wiederholungslauf über den Freigabe-Link.
-    if (error && /rate|429|too many/i.test(error.message)) {
-      await new Promise((r) => setTimeout(r, 1500));
-      ({ error } = await resend.emails.send(payload));
-    }
-    if (error) {
-      report.errors.push(`${sub.email}: ${error.message}`);
-    } else {
-      report.sent++;
+  // Lauf-Sperre gegen parallele Freigabe-Klicks: nur ein echter Versand
+  // gleichzeitig, der zweite Klick sieht auf der Statusseite den laufenden.
+  if (writable && !(await acquireSendLock("praxis"))) {
+    report.locked = true;
+    return report;
+  }
+  const startedAt = new Date().toISOString();
+  const progress = async (done: boolean) => {
+    if (!writable) return;
+    await writeProgress({
+      kind: "praxis", total: report.recipients, sent: report.sent,
+      skipped: report.skipped, errors: report.errors.length, done, startedAt,
+    });
+  };
+
+  try {
+    await progress(false);
+    for (const sub of subs) {
+      if (opts.dryRun) {
+        report.sent++;
+        continue;
+      }
+      // Atomarer Claim vor dem Send: sadd liefert 0, wenn die Adresse schon
+      // im Set steht — dann hat dieser oder ein früherer Lauf sie bereits
+      // beliefert. Doppelzustellung ist damit auch bei Races ausgeschlossen;
+      // schlägt der Send danach fehl, gibt srem den Claim wieder frei.
       if (writable) {
-        await redis().sadd(sentSetKey(month), sub.email);
+        const claimed = await redis().sadd(sentSetKey(month), sub.email);
+        if (claimed === 0) {
+          report.skipped++;
+          continue;
+        }
         await redis().expire(sentSetKey(month), SENT_SET_TTL_S);
       }
+      const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
+      const { html, text, summary } = renderPraxisNewsletter(month, items, unsubUrl, base);
+      const payload = {
+        from,
+        to: sub.email,
+        subject: `Aufsichtspraxis im ${monthLabel(month)}: ${summary}`,
+        html,
+        text,
+        headers: {
+          "List-Unsubscribe": `<${unsubUrl}>`,
+          "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        },
+      };
+      await pace();
+      let { error } = await resend.emails.send(payload);
+      // Rate-Limit trotz Drossel (z. B. paralleler Einzel-Send anderswo):
+      // einmal kurz warten und wiederholen; bleibt der Fehler, fängt ihn der
+      // idempotente Wiederholungslauf über den Freigabe-Link.
+      if (error && /rate|429|too many/i.test(error.message)) {
+        await new Promise((r) => setTimeout(r, 1500));
+        ({ error } = await resend.emails.send(payload));
+      }
+      if (error) {
+        if (writable) await redis().srem(sentSetKey(month), sub.email);
+        report.errors.push(`${sub.email}: ${error.message}`);
+      } else {
+        report.sent++;
+      }
+      await progress(false);
     }
-  }
 
-  // Monat erst als erledigt markieren, wenn wirklich alle beliefert sind —
-  // bei Restfehlern bleibt der Marker frei, damit ein erneuter Klick auf den
-  // Freigabe-Link nur die fehlenden Adressen nachliefert.
-  if (writable && report.errors.length === 0) {
-    await redis().set(MONTH_KEY, month);
+    // Monat erst als erledigt markieren, wenn wirklich alle beliefert sind —
+    // bei Restfehlern bleibt der Marker frei, damit ein erneuter Klick auf den
+    // Freigabe-Link nur die fehlenden Adressen nachliefert.
+    if (writable && report.errors.length === 0) {
+      await redis().set(MONTH_KEY, month);
+    }
+  } finally {
+    if (writable) {
+      await progress(true);
+      await releaseSendLock("praxis");
+    }
   }
 
   return report;
