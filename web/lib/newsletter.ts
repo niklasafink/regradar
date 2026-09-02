@@ -171,7 +171,7 @@ function renderFreqBlock(freq: FreqLinks): string {
   return `
     <div style="margin:28px 0 0;padding:20px;border:1px solid #e2e8f0;border-radius:16px">
       <p style="margin:0 0 4px;font-size:14px;font-weight:600;color:#0f172a">Wie oft möchten Sie diese E-Mail erhalten?</p>
-      <p style="margin:0 0 12px;font-size:12px;color:#64748b">Aktuell: ${FREQ_LABEL[freq.current]}. Ein Klick genügt, kein Login nötig.</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#64748b">Aktuell: ${FREQ_LABEL[freq.current]}. Kein Login nötig, Sie bestätigen die Wahl mit einem Klick.</p>
       ${opt("daily", freq.dailyUrl)}${opt("weekly", freq.weeklyUrl)}
     </div>`;
 }

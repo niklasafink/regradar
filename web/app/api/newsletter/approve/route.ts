@@ -18,6 +18,7 @@ import { runFwNewsletter } from "@/lib/frameworkNewsletter";
 import { runNewsletter } from "@/lib/newsletter";
 import { runPraxisNewsletter } from "@/lib/praxisNewsletter";
 import { readProgress } from "@/lib/sendProgress";
+import { confirmPage, formBody } from "@/lib/confirmPage";
 
 export const maxDuration = 300;
 
@@ -53,6 +54,25 @@ export async function GET(request: Request) {
       now: new Date().toISOString(),
     });
   }
+
+  // Der Link aus der Mail (GET) löst NICHTS aus — Link-Scanner im Postfach
+  // des Betreibers dürfen keinen Versand starten. Erst der Button (POST).
+  return confirmPage({
+    title: `${APPROVE_LABEL[kind]} freigeben?`,
+    text: "Mit dem Klick geht der Newsletter an alle fälligen Abonnenten raus. Bereits belieferte Abonnenten werden automatisch übersprungen, niemand erhält die Mail doppelt.",
+    action: `/api/newsletter/approve?token=${encodeURIComponent(token)}`,
+    button: "Ja, jetzt verschicken",
+    fields: { confirm: "1" },
+  });
+}
+
+export async function POST(request: Request) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get("token") ?? "";
+  const kind = verifyApproveToken(token);
+  if (!kind) return page("Link ungültig oder abgelaufen", "", 400);
+  const body = await formBody(request);
+  if (body.get("confirm") !== "1") return page("Bestätigung fehlt", "", 400);
 
   // Versand NACH dem Absenden der Antwort starten. Läuft parallel schon
   // einer (zweiter Klick), scheitert er an der Lauf-Sperre und die Seite
