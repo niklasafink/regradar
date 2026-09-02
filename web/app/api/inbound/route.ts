@@ -7,7 +7,8 @@
 // den Abonnenten geht.
 //
 // Webhook in Resend (angelegt 02.09.2026, ID 230c433c-…): Endpoint
-// https://regradar.de/api/inbound, Event "email.received"; Signing Secret in
+// https://www.regradar.de/api/inbound (Apex leitet per 308 auf www um),
+// Event "email.received"; Signing Secret in
 // RESEND_WEBHOOK_SECRET. Ohne Secret wird die Signatur nicht geprüft (nur für
 // lokale Tests). RESEND_API_KEY ist send-only — zum Abrufen der empfangenen
 // Mail braucht es den Lesekey RESEND_METRICS_API_KEY.
