@@ -145,7 +145,7 @@ def upsert_source(conn: sqlite3.Connection, s: dict) -> None:
                discovery_url=excluded.discovery_url, discovery_type=excluded.discovery_type,
                access_class=excluded.access_class, document_types=excluded.document_types,
                poll_interval_minutes=excluded.poll_interval_minutes,
-               adapter=excluded.adapter""",
+               adapter=excluded.adapter, enabled=excluded.enabled""",
         {**s, "document_types": json.dumps(s.get("document_types", []))},
     )
     conn.commit()

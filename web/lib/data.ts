@@ -26,6 +26,8 @@ export interface Update {
 export interface Framework {
   id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE";
   n: Txt; ref: string;
+  /** Umgangssprachliche Bezeichnungen und Abkürzungen (nur für die Suche). */
+  alias?: string;
   /** Link zur Primärquelle des Rechtsakts (z. B. EUR-Lex). */
   refUrl?: string;
   about: Txt; cond: Cond | null; condL?: Txt; u: Update[];
@@ -107,6 +109,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"dora", jur:"EU",
     about:{de:"Einheitliches EU-Regelwerk für IKT-Risiken im Finanzsektor: Risikomanagement, Meldung schwerwiegender Vorfälle, Resilienztests und Überwachung kritischer IT-Dienstleister.",en:"Single EU rulebook for ICT risk in the financial sector: risk management, major incident reporting, resilience testing and oversight of critical IT providers."}, topic:"ICT", ents:["CI","AM","IF","PI","INS"],
     n:{de:"DORA: Digitale operationale Resilienz",en:"DORA: Digital Operational Resilience"},
+    alias:"DORA-Verordnung, Digital Operational Resilience Act, IKT-Risiko, ICT risk, Register of Information, TLPT",
     ref:"VO (EU) 2022/2554", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     /* Chronologie DORA (Level 1–3 + deutsche Umsetzung), Daten und Links
@@ -253,6 +256,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"nis2", jur:"EU+DE",
     about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act."}, topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"NIS-2 / BSIG: Cybersicherheit",en:"NIS 2 / BSIG: cybersecurity"},
+    alias:"NIS2, NIS-2-Umsetzungsgesetz, BSI-Gesetz, Cybersecurity, Cybersicherheit, KRITIS",
     ref:"RL (EU) 2022/2555, BSIG", cond:{k:"cross",any:["kritis"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng",
     condL:{de:"nur bei Einstufung als kritische Infrastruktur",en:"only if classified as critical infrastructure"},
@@ -274,6 +278,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"ebaict", jur:"EU",
     about:{de:"Aufsichtliche Leitlinien der EBA zur Steuerung von IKT- und Sicherheitsrisiken, die MaRisk und DORA operativ unterlegen.",en:"EBA supervisory guidelines on managing ICT and security risk, giving operational substance to MaRisk and DORA."}, topic:"ICT", ents:["CI","IF","PI"],
     n:{de:"EBA-Leitlinien zu IKT- und Sicherheitsrisiken",en:"EBA guidelines on ICT and security risk"},
+    alias:"EBA ICT Guidelines, IKT-Risikomanagement, IT-Sicherheit, EBA/GL/2019/04",
     ref:"EBA/GL/2025/07", cond:null,
     refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-ict-and-security-risk-management",
     u:[
@@ -286,6 +291,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"amla", jur:"EU",
     about:{de:"Das unmittelbar geltende EU-Geldwäscherecht samt der neuen Behörde AMLA, die technische Standards erlässt und ausgewählte Institute direkt beaufsichtigt.",en:"The directly applicable EU AML rulebook together with the new AMLA authority, which issues technical standards and directly supervises selected entities."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"AMLA-Verordnung und EU-Geldwäscheverordnung",en:"AMLA Regulation and EU AML Regulation"},
+    alias:"AMLR, AML-Paket, EU-Geldwäschepaket, Anti-Money Laundering Authority, AMLD6, 6. Geldwäscherichtlinie",
     ref:"VO (EU) 2024/1620, 2024/1624", cond:{k:"cross",any:["aml"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1620/oj/eng",
     condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
@@ -307,6 +313,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"gwg", jur:"DE",
     about:{de:"Das deutsche Geldwäschegesetz mit Sorgfalts-, Melde- und Aufzeichnungspflichten, das derzeit an das EU-Regelwerk angepasst wird.",en:"The German Money Laundering Act with due diligence, reporting and record-keeping duties, currently being aligned with the EU rulebook."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"Geldwäschegesetz",en:"German Money Laundering Act"},
+    alias:"AML, KYC, Know Your Customer, Geldwäscheprävention, Terrorismusfinanzierung, wirtschaftlich Berechtigter, Transparenzregister, FIU, Verdachtsmeldung",
     ref:"GwG", cond:{k:"cross",any:["aml"]},
     refUrl:"https://www.gesetze-im-internet.de/gwg_2017/",
     condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
@@ -321,9 +328,33 @@ export const FRAMEWORKS: Framework[] = [
           en:"New section on video identification and use of the EUDI wallet for identity verification."}}
     ]},
 
+  { id:"sanctions", jur:"EU+DE",
+    about:{de:"Finanzsanktionen und Embargos: unmittelbar geltende EU-Sanktionsverordnungen, Bereitstellungs- und Verfügungsverbote, Meldepflichten gegenüber der Bundesbank, Außenwirtschaftsrecht und die Sanktionsdurchsetzung durch die Zentralstelle für Sanktionsdurchsetzung.",en:"Financial sanctions and embargoes: directly applicable EU sanctions regulations, asset-freeze and no-funds-available prohibitions, reporting duties towards the Bundesbank, foreign trade law and enforcement by the Central Office for Sanctions Enforcement."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"Finanzsanktionen & Embargos",en:"Financial sanctions & embargoes"},
+    alias:"Sanktionen, Embargo, Russland-Sanktionen, Sanktionslisten, Außenwirtschaftsgesetz, AWG, AWV, OFAC, Zentralstelle für Sanktionsdurchsetzung",
+    ref:"EU-Sanktions-VOen, AWG, AWV, SanktDG", cond:null,
+    refUrl:"https://www.bundesbank.de/de/service/finanzsanktionen",
+    u:[]},
+
+  { id:"tfr", jur:"EU",
+    about:{de:"Begleitpflicht von Angaben zu Auftraggeber und Begünstigtem bei Geldtransfers und, seit Ende 2024, bei Kryptowertetransfers (Travel Rule); ergänzt die Geldwäscheprävention um Rückverfolgbarkeit und Prüfpflichten.",en:"Duty to accompany transfers of funds and, since late 2024, transfers of crypto-assets with information on payer and payee (travel rule); complements AML rules with traceability and verification duties."}, topic:"AML", ents:["CI","PI"],
+    n:{de:"Geldtransfer-Verordnung (Travel Rule)",en:"Transfer of Funds Regulation (travel rule)"},
+    alias:"TFR, Travel Rule, Geldtransferverordnung, Transfer of Funds Regulation, Kryptotransfers",
+    ref:"VO (EU) 2023/1113", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2023/1113/oj/deu",
+    /* Chronologie gegen EUR-Lex geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"VO (EU) 2023/1113", eff:"30.12.2024", d:"09.06.2023", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2023/1113/oj/deu",
+       ti:{de:"Neufassung der Geldtransfer-Verordnung mit Travel Rule für Kryptowerte",en:"Recast Transfer of Funds Regulation with travel rule for crypto-assets"},
+       s:{de:"Ersetzt die Verordnung (EU) 2015/847 und erstreckt die Pflicht zur Übermittlung von Angaben zu Auftraggeber und Begünstigtem auf Transfers von Kryptowerten. Anbieter von Kryptowerte-Dienstleistungen müssen die Angaben erheben, prüfen und weitergeben; die Verordnung gilt seit dem 30.12.2024 zeitgleich mit MiCA.",
+          en:"Replaces Regulation (EU) 2015/847 and extends the obligation to transmit originator and beneficiary information to transfers of crypto-assets. Crypto-asset service providers must collect, verify and pass on the information; the regulation applies since 30 Dec 2024, in step with MiCA."}}
+    ]},
+
   { id:"crr3", jur:"EU",
     about:{de:"Umsetzung von Basel III in der EU: Eigenmittelanforderungen, Output Floor, Kreditrisiko-Standardansatz und Marktrisiko.",en:"EU implementation of Basel III: own funds requirements, output floor, standardised credit risk approach and market risk."}, topic:"PRU", ents:["CI"],
     n:{de:"CRR III / CRD VI: Eigenmittel und Aufsicht",en:"CRR III / CRD VI: capital and supervision"},
+    alias:"Basel III, Basel IV, Bankenpaket, Banking Package, Capital Requirements Regulation, KWG, Eigenkapital, LCR, NSFR, Leverage Ratio, SREP, ICAAP",
     ref:"VO (EU) 2024/1623, RL (EU) 2024/1619", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1623/oj/eng",
     u:[
@@ -344,6 +375,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"marisk", jur:"DE",
     about:{de:"Die aufsichtliche Auslegung des § 25a KWG durch die BaFin: Organisation, Risikosteuerung, Kreditgeschäft, Handel und Auslagerung.",en:"BaFin's supervisory interpretation of § 25a KWG: organisation, risk control, lending, trading and outsourcing."}, topic:"PRU", ents:["CI","OTH"],
     n:{de:"MaRisk: Mindestanforderungen an das Risikomanagement",en:"MaRisk: minimum requirements for risk management"},
+    alias:"MaRisk BA, Risikomanagement Banken, § 25a KWG, Rundschreiben 05/2023",
     ref:"BaFin-Rundschreiben", cond:{k:"juris",any:["DE"]},
     refUrl:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2024/rs_06_2024_MaRisk_BA.html",
     condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
@@ -361,6 +393,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"brrd", jur:"EU",
     about:{de:"Sanierungs- und Abwicklungsplanung, MREL-Anforderungen und Zuständigkeit des Einheitlichen Abwicklungsausschusses.",en:"Recovery and resolution planning, MREL requirements and the remit of the Single Resolution Board."}, topic:"PRU", ents:["CI","IF"],
     n:{de:"BRRD: Sanierungs- und Abwicklungsrichtlinie",en:"BRRD: Bank Recovery and Resolution Directive"},
+    alias:"Bankenabwicklung, Bail-in, MREL, SRB, Single Resolution Board, SAG, Sanierungs- und Abwicklungsgesetz, Abwicklungsbehörde",
     ref:"BRRD (2014/59/EU), SRM-VO", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/dir/2014/59/oj/eng",
     u:[
@@ -370,9 +403,26 @@ export const FRAMEWORKS: Framework[] = [
           en:"Adjusts calibration for institutions with a transfer strategy and specifies resolvability evidencing."}}
     ]},
 
+  { id:"dgsd", jur:"EU+DE",
+    about:{de:"Einlagensicherung: gesetzliche Deckung von 100.000 Euro je Einleger, Beitragspflichten, Einlegerinformation, Auszahlungsfristen und die Reform des Krisenmanagement- und Einlagensicherungsrahmens (CMDI).",en:"Deposit guarantee: statutory coverage of 100,000 euros per depositor, contribution duties, depositor information, payout deadlines and the reform of the crisis management and deposit insurance framework (CMDI)."}, topic:"PRU", ents:["CI"],
+    n:{de:"Einlagensicherung (DGSD / EinSiG)",en:"Deposit guarantee (DGSD / EinSiG)"},
+    alias:"Einlagensicherung, Deposit Guarantee Scheme, EinSiG, CMDI, Entschädigungseinrichtung, EdB",
+    ref:"RL 2014/49/EU, EinSiG", cond:{k:"act",any:["deposits"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2014/49/oj/deu",
+    condL:{de:"nur bei Einlagengeschäft",en:"only where deposits are taken"},
+    /* Chronologie gegen EUR-Lex geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"RL (EU) 2026/804", d:"20.04.2026", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2026/804/oj/deu",
+       ti:{de:"CMDI-Paket: Änderung der Einlagensicherungsrichtlinie im Amtsblatt veröffentlicht",en:"CMDI package: amendment to the Deposit Guarantee Schemes Directive published in the Official Journal"},
+       s:{de:"Teil der Reform des Krisenmanagement- und Einlagensicherungsrahmens (CMDI) zusammen mit den Änderungen der BRRD (RL (EU) 2026/806) und der SRM-Verordnung (VO (EU) 2026/808). Erweitert den Schutzumfang unter anderem auf Einlagen bestimmter öffentlicher Stellen und verzahnt ihn mit der neuen Einlegerhierarchie; die Neuregelungen sind nach einer Übergangsfrist von 24 Monaten anzuwenden.",
+          en:"Part of the crisis management and deposit insurance (CMDI) reform together with the amendments to the BRRD (Directive (EU) 2026/806) and the SRM Regulation (Regulation (EU) 2026/808). Extends coverage to, among others, deposits of certain public authorities and links it with the new depositor hierarchy; the new rules apply after a 24-month transition period."}}
+    ]},
+
   { id:"ifr", jur:"EU",
     about:{de:"Eigenes Aufsichtsregime für Wertpapierinstitute mit K-Faktoren anstelle bankaufsichtlicher Eigenmittelanforderungen.",en:"A separate prudential regime for investment firms using K-factors instead of banking own funds requirements."}, topic:"PRU", ents:["IF"],
     n:{de:"IFR / IFD: Wertpapierinstitute",en:"IFR / IFD: investment firms"},
+    alias:"Investment Firms Regulation, Investment Firms Directive, WpIG, Wertpapierinstitutsgesetz, K-Faktoren",
     ref:"VO (EU) 2019/2033, RL (EU) 2019/2034", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2019/2033/oj/eng",
     u:[
@@ -385,14 +435,62 @@ export const FRAMEWORKS: Framework[] = [
   { id:"wpimarisk", jur:"DE",
     about:{de:"Die aufsichtliche Auslegung des § 41 WpIG durch die BaFin: eigenständige Mindestanforderungen an das Risikomanagement für kleine und mittlere Wertpapierinstitute – getrennt von der Banken-MaRisk.",en:"BaFin's supervisory interpretation of § 41 WpIG: standalone minimum risk management requirements for small and medium-sized investment firms – separate from the banking MaRisk."}, topic:"PRU", ents:["IF"],
     n:{de:"WpI MaRisk: Risikomanagement für Wertpapierinstitute",en:"WpI MaRisk: risk management for investment firms"},
+    alias:"MaRisk Wertpapierinstitute, WpI-MaRisk, Rundschreiben 09/2026 (WA)",
     ref:"BaFin-Rundschreiben", cond:{k:"juris",any:["DE"]},
     refUrl:"https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0926_wpi_marisk.html",
+    condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
+    u:[]},
+
+  { id:"zagmarisk", jur:"DE",
+    about:{de:"Die aufsichtliche Auslegung des § 27 Abs. 1 ZAG durch die BaFin: erstmals eigene Mindestanforderungen an das Risikomanagement von Zahlungs- und E-Geld-Instituten, einschließlich Vorgaben zur Sicherung von Kundengeldern (§§ 17, 18 ZAG) und zu Auslagerungen (§ 26 ZAG).",en:"BaFin's supervisory interpretation of § 27(1) ZAG: the first standalone minimum risk management requirements for payment and e-money institutions, including requirements on safeguarding client funds (§§ 17, 18 ZAG) and on outsourcing (§ 26 ZAG)."}, topic:"PRU", ents:["PI"],
+    n:{de:"ZAG-MaRisk: Risikomanagement für Zahlungs- und E-Geld-Institute",en:"ZAG-MaRisk: risk management for payment and e-money institutions"},
+    alias:"MaRisk ZAG, MaRisk Zahlungsinstitute, Rundschreiben 07/2024 (BA), E-Geld-Institute",
+    ref:"BaFin-Rundschreiben 07/2024 (BA)", cond:{k:"juris",any:["DE"]},
+    refUrl:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2024/rs_Rundschreiben_07_24.html",
+    condL:{de:"nur bei Sitz oder Drittstaaten-Zweigstelle in Deutschland",en:"only with a seat or third-country branch in Germany"},
+    /* Chronologie gegen bafin.de geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"RS 07/2024 (BA)", d:"27.05.2024", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2024/rs_Rundschreiben_07_24.html",
+       ti:{de:"ZAG-MaRisk veröffentlicht: erstmals Mindestanforderungen an das Risikomanagement von ZAG-Instituten",en:"ZAG-MaRisk published: first minimum risk management requirements for ZAG institutions"},
+       s:{de:"Rundschreiben auf Grundlage des § 27 Abs. 1 ZAG für inländische Zahlungs- und E-Geld-Institute sowie inländische Zweigstellen von Unternehmen aus Drittstaaten. Gibt einen flexiblen Rahmen für die ordnungsgemäße Geschäftsorganisation vor und konkretisiert die Sicherungsanforderungen (§§ 17, 18 ZAG) sowie die Anforderungen an Auslagerungen (§ 26 ZAG). Zunächst als 01/2024 nummeriert, am 07.06.2024 in 07/2024 umbenannt.",
+          en:"Circular based on § 27(1) ZAG for domestic payment and e-money institutions and domestic branches of third-country undertakings. Provides a flexible framework for proper business organisation and specifies the safeguarding requirements (§§ 17, 18 ZAG) and the requirements on outsourcing (§ 26 ZAG). Initially numbered 01/2024, renumbered 07/2024 on 7 Jun 2024."}},
+      {refnum:"Konsultation 11/2023", d:"27.09.2023", t:{de:"Konsultation",en:"Consultation"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2023/kon_11_23_Konsultation_ZAG_MaRisk.html",
+       ti:{de:"Konsultationsentwurf der ZAG-MaRisk",en:"Consultation draft of the ZAG-MaRisk"},
+       s:{de:"Entwurf eines Rundschreibens mit Mindestanforderungen an das Risikomanagement von ZAG-Instituten. Übernimmt die Struktur der Banken-MaRisk (AT/BT) und berücksichtigt geschäftsmodellspezifische Besonderheiten wie Sicherheitsvorfälle, Betrugsprävention, Haftungsrisiken, Kundenbeschwerden und Agenten. Stellungnahmen bis 06.12.2023.",
+          en:"Draft circular with minimum risk management requirements for ZAG institutions. Follows the structure of the banking MaRisk (AT/BT) and reflects business-model specifics such as security incidents, fraud prevention, liability risks, customer complaints and agents. Comments until 6 Dec 2023."}}
+    ]},
+
+  { id:"macomp", jur:"DE",
+    about:{de:"Die BaFin-Verwaltungspraxis zur Compliance-Funktion und zu den Wohlverhaltensregeln des WpHG: Aufgaben und Unabhängigkeit der Compliance, Produktüberwachung, Geeignetheit, Zuwendungen, Aufzeichnungspflichten und Mitarbeitergeschäfte.",en:"BaFin's administrative practice on the compliance function and the WpHG conduct rules: tasks and independence of compliance, product governance, suitability, inducements, record-keeping and personal transactions."}, topic:"MKT", ents:["CI","IF"],
+    n:{de:"MaComp: Mindestanforderungen an die Compliance-Funktion",en:"MaComp: minimum requirements for the compliance function"},
+    alias:"MaComp, Compliance-Rundschreiben, Wohlverhaltensregeln WpHG, Compliance-Funktion",
+    ref:"BaFin-Rundschreiben 05/2018 (WA)", cond:{k:"juris",any:["DE"]},
+    refUrl:"https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_september_2024.html",
+    condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
+    /* Chronologie gegen bafin.de geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"RS 05/2018 (WA), Fassung 26.09.2024", d:"26.09.2024", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_september_2024.html",
+       ti:{de:"MaComp aktualisiert: ESMA-Leitlinien zu Produktüberwachung und Geeignetheit übernommen",en:"MaComp updated: ESMA guidelines on product governance and suitability incorporated"},
+       s:{de:"Die BaFin passt die Besonderen Teile BT 5 (Produktüberwachungsanforderungen nach MiFID II) und BT 7.1 (Geeignetheitsprüfung) an die überarbeiteten ESMA-Leitlinien an, unter anderem zur Berücksichtigung von Nachhaltigkeitspräferenzen und Nachhaltigkeitsfaktoren.",
+          en:"BaFin aligns the special parts BT 5 (MiFID II product governance requirements) and BT 7.1 (suitability assessment) with the revised ESMA guidelines, including the consideration of sustainability preferences and sustainability factors."}}
+    ]},
+
+  { id:"instvergv", jur:"DE",
+    about:{de:"Vergütungsaufsicht für Institute: angemessene, nachhaltige Vergütungssysteme, Identifizierung von Risikoträgern, Zurückbehaltung und Rückforderung variabler Vergütung, Vergütungskontrollausschuss und Offenlegung; für Wertpapierinstitute gilt die WpI-Vergütungsverordnung.",en:"Remuneration supervision for institutions: appropriate and sustainable pay systems, identification of material risk takers, deferral and clawback of variable pay, remuneration committee and disclosure; investment firms fall under the WpI-Vergütungsverordnung."}, topic:"GOV", ents:["CI","IF","OTH"],
+    n:{de:"Institutsvergütungsverordnung",en:"Remuneration Ordinance for Institutions"},
+    alias:"InstitutsVergV, IVV, Vergütung Banken, Vergütungsverordnung, Risikoträger, Material Risk Taker, WpI-VergV, Bonus",
+    ref:"InstitutsVergV, WpI-VergV, § 25a KWG, CRD", cond:{k:"juris",any:["DE"]},
+    refUrl:"https://www.gesetze-im-internet.de/institutsvergv_2014/",
     condL:{de:"nur bei Sitz oder Zweigstelle in Deutschland",en:"only with a seat or branch in Germany"},
     u:[]},
 
   { id:"outsourcing", jur:"EU+DE",
     about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
     n:{de:"EBA-Leitlinien zur Auslagerung",en:"EBA Guidelines on Outsourcing"},
+    alias:"Auslagerung, Outsourcing, EBA Outsourcing Guidelines, Third-Party Risk, Drittdienstleister, Fremdbezug",
     ref:"EBA/GL/2019/02, AT 9 MaRisk", cond:{k:"cross",any:["outsourcing"]},
     refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-outsourcing-arrangements",
     condL:{de:"nur bei wesentlichen Auslagerungen",en:"only where material outsourcing exists"},
@@ -407,21 +505,61 @@ export const FRAMEWORKS: Framework[] = [
           en:"Draft with a single data model for outsourcing and ICT third-party providers."}}
     ]},
 
+  { id:"complaints", jur:"EU+DE",
+    about:{de:"Mindestanforderungen an das Beschwerdemanagement: Beschwerdemanagementfunktion, internes Beschwerderegister, Fristen und Information der Beschwerdeführer, Auswertung für die Aufsicht; ESA-Leitlinien des Joint Committee und ihre Umsetzung im BaFin-Rundschreiben 06/2018 sowie in BT 12 MaComp.",en:"Minimum requirements for complaints handling: complaints management function, internal complaints register, deadlines and information to complainants, analysis for supervisors; Joint Committee guidelines and their implementation in BaFin Circular 06/2018 and BT 12 MaComp."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"Beschwerdemanagement: ESA-Leitlinien & BaFin-Rundschreiben",en:"Complaints handling: ESA guidelines & BaFin circular"},
+    alias:"Beschwerde, Complaints Handling, Beschwerdemanagement-Rundschreiben, BaFin-Rundschreiben 06/2018",
+    ref:"JC 2014/43, JC 2018/35, BaFin-RS 06/2018", cond:null,
+    refUrl:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_18_06_beschwerdemanagement_vbs.html",
+    /* Chronologie gegen bafin.de und eba.europa.eu geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"RS 06/2018 (BA, WA, VA), Fassung 23.01.2020", d:"23.01.2020", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_18_06_beschwerdemanagement_vbs.html",
+       ti:{de:"BaFin-Rundschreiben zum Beschwerdemanagement an erweiterte ESA-Leitlinien angepasst",en:"BaFin complaints-handling circular aligned with the extended ESA guidelines"},
+       s:{de:"Aktualisierung des gemeinsamen Rundschreibens BA, WA und VA 06/2018, nachdem das Joint Committee der ESAs den Anwendungsbereich der Leitlinien auf Zahlungsauslöse- und Kontoinformationsdienste sowie auf Kreditvermittler und Nichtkreditinstitute nach der Wohnimmobilienkreditrichtlinie ausgedehnt hatte.",
+          en:"Update of joint circular BA, WA and VA 06/2018 after the ESAs' Joint Committee extended the scope of the guidelines to payment initiation and account information service providers as well as credit intermediaries and non-credit institutions under the Mortgage Credit Directive."}},
+      {refnum:"JC 2018/35", eff:"01.05.2019", d:"04.10.2018", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/documents/10180/2381463/cd6e3328-7442-4582-8b68-819346d200ec/Joint%20Committee%20Guidelines%20on%20complaints-handling%20(JC%202018%2035)_EN.pdf",
+       ti:{de:"Joint Committee erweitert die Leitlinien zur Beschwerdeabwicklung auf PSD2- und Wohnimmobilienkredit-Anbieter",en:"Joint Committee extends the complaints-handling guidelines to PSD2 and mortgage credit providers"},
+       s:{de:"Die Leitlinien JC 2014/43 gelten ab dem 01.05.2019 zusätzlich für Zahlungsauslösedienstleister, registrierte Kontoinformationsdienstleister (nur sicherheitsbezogene Beschwerden), Kreditvermittler und Nichtkreditinstitute nach der Wohnimmobilienkreditrichtlinie.",
+          en:"From 1 May 2019 the guidelines JC 2014/43 additionally apply to payment initiation service providers, registered account information service providers (security-related complaints only), credit intermediaries and non-credit institutions under the Mortgage Credit Directive."}},
+      {refnum:"RS 06/2018 (BA, WA, VA)", d:"04.05.2018", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_18_06_beschwerdemanagement_vbs.html",
+       ti:{de:"BaFin veröffentlicht Mindestanforderungen an das Beschwerdemanagement",en:"BaFin publishes minimum requirements for complaints handling"},
+       s:{de:"Gemeinsames Rundschreiben der Banken-, Wertpapier- und Versicherungsaufsicht für CRR-Kreditinstitute, Zahlungs- und E-Geld-Institute, Kapitalverwaltungsgesellschaften und Nichtkreditinstitute nach der Wohnimmobilienkreditrichtlinie. Verlangt eine Beschwerdemanagementfunktion, ein internes Beschwerderegister und die systematische Auswertung von Beschwerden; Rechtsgrundlagen sind § 25a KWG, § 27 ZAG, § 28 KAGB und § 23 VAG.",
+          en:"Joint circular of banking, securities and insurance supervision for CRR credit institutions, payment and e-money institutions, fund managers and non-credit institutions under the Mortgage Credit Directive. Requires a complaints management function, an internal complaints register and systematic analysis of complaints; legal bases are § 25a KWG, § 27 ZAG, § 28 KAGB and § 23 VAG."}},
+      {refnum:"JC 2014/43", d:"27.05.2014", t:{de:"Leitlinien",en:"Guidelines"}, src:"esma.europa.eu",
+       url:"https://www.esma.europa.eu/document/joint-committee-final-report-guidelines-complaints-handling-securities-esma-and-banking-eba",
+       ti:{de:"Leitlinien zur Beschwerdeabwicklung für den Wertpapierhandel und das Bankwesen",en:"Guidelines on complaints-handling for the securities and banking sectors"},
+       s:{de:"Das Joint Committee von EBA und ESMA überträgt die 2012 für Versicherer erlassenen EIOPA-Leitlinien auf Wertpapierfirmen und Kreditinstitute: Beschwerdemanagementpolitik, Beschwerdefunktion, Register, Information der Beschwerdeführer und Fristen für die Beantwortung.",
+          en:"The Joint Committee of EBA and ESMA carries the EIOPA guidelines issued for insurers in 2012 over to investment firms and credit institutions: complaints management policy, complaints function, register, information to complainants and response deadlines."}}
+    ]},
+
   { id:"hinschg", jur:"EU+DE",
-    about:{de:"Pflicht zu internen Meldekanälen, Schutz hinweisgebender Personen vor Repressalien und Dokumentationspflichten.",en:"Duty to operate internal reporting channels, protection of reporting persons against retaliation, and documentation duties."}, topic:"GOV", ents:["CI","AM","IF","PI","INS","OTH"],
+    about:{de:"Pflicht zu internen Meldekanälen, Schutz hinweisgebender Personen vor Repressalien und Dokumentationspflichten. Gilt für alle Unternehmen ab 50 Beschäftigten; Kredit-, Finanzdienstleistungs-, Wertpapier-, Zahlungs- und E-Geld-Institute, KVGen und Versicherer sind nach § 12 Abs. 3 HinSchG unabhängig von der Mitarbeiterzahl verpflichtet.",en:"Duty to operate internal reporting channels, protection of reporting persons against retaliation, and documentation duties. Applies to all companies with 50 or more employees; credit, financial services, investment, payment and e-money institutions, fund managers and insurers are obliged regardless of headcount under § 12(3) HinSchG."}, topic:"GOV", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"Hinweisgeberschutzgesetz",en:"Whistleblower Protection Act"},
+    alias:"HinSchG, Whistleblowing, Whistleblower, Hinweisgeber, Meldestelle, EU-Whistleblower-Richtlinie",
     ref:"HinSchG, RL (EU) 2019/1937", cond:null,
     refUrl:"https://www.gesetze-im-internet.de/hinschg/",
+    condL:{de:"alle Unternehmen ab 50 Beschäftigten, Finanzinstitute unabhängig von der Größe",en:"all companies with 50+ employees, financial institutions regardless of size"},
+    /* Chronologie geprüft gegen BGBl. und gesetze-im-internet.de (Stand 02.09.2026). */
     u:[
-      {d:"28.07.2026", t:{de:"Rechtsprechung",en:"Case law"}, src:"bundesgerichtshof.de",
-       ti:{de:"BGH zur Vertraulichkeit interner Meldekanäle",en:"Federal Court of Justice on confidentiality of internal reporting channels"},
-       s:{de:"Der Bundesgerichtshof stellt klar, dass die Identität hinweisgebender Personen auch gegenüber der internen Revision zu schützen ist.",
-          en:"The court clarifies that the identity of reporting persons must also be protected from internal audit."}}
+      {refnum:"BGBl. 2023 I Nr. 140", eff:"02.07.2023", d:"02.06.2023", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.recht.bund.de/bgbl/1/2023/140/VO.html",
+       ti:{de:"Hinweisgeberschutzgesetz im Bundesgesetzblatt verkündet",en:"Whistleblower Protection Act promulgated in the Federal Law Gazette"},
+       s:{de:"Setzt die EU-Hinweisgeberrichtlinie (EU) 2019/1937 um. In Kraft seit 02.07.2023 für Beschäftigungsgeber ab 250 Mitarbeitenden sowie für Finanzinstitute unabhängig von der Größe (§ 12 Abs. 3 HinSchG). Unternehmen mit 50 bis 249 Beschäftigten mussten die interne Meldestelle bis zum 17.12.2023 einrichten; die Bußgeldvorschriften gelten seit 01.12.2023.",
+          en:"Transposes the EU Whistleblower Directive (EU) 2019/1937. In force since 2 Jul 2023 for employers with 250 or more staff and for financial institutions regardless of size (§ 12(3) HinSchG). Companies with 50 to 249 employees had to set up their internal reporting channel by 17 Dec 2023; the fining provisions apply since 1 Dec 2023."}},
+      {refnum:"RL (EU) 2019/1937", eff:"17.12.2021", d:"26.11.2019", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2019/1937/oj/deu",
+       ti:{de:"EU-Hinweisgeberrichtlinie im Amtsblatt veröffentlicht",en:"EU Whistleblower Directive published in the Official Journal"},
+       s:{de:"Richtlinie zum Schutz von Personen, die Verstöße gegen das Unionsrecht melden. Verpflichtet juristische Personen des privaten Sektors ab 50 Beschäftigten zu internen Meldekanälen; für Finanzdienstleister gilt die Pflicht ohne Schwellenwert.",
+          en:"Directive on the protection of persons who report breaches of Union law. Requires private-sector legal entities with 50 or more workers to run internal reporting channels; for financial services firms the duty applies without any threshold."}}
     ]},
 
   { id:"mifid", jur:"EU",
     about:{de:"Wohlverhaltensregeln, Geeignetheits- und Angemessenheitsprüfung, Kostenausweis, Produktgovernance und Handelstransparenz.",en:"Conduct rules, suitability and appropriateness assessment, cost disclosure, product governance and trading transparency."}, topic:"MKT", ents:["CI","AM","IF"],
     n:{de:"MiFID II / MiFIR",en:"MiFID II / MiFIR"},
+    alias:"MiFID 2, MiFID II, MiFIR, WpHG, Wertpapierhandelsgesetz, Anlageberatung, Geeignetheit, Suitability, Product Governance, Zielmarkt, Zuwendungen, Inducements, Kleinanlegerstrategie, Retail Investment Strategy, RIS",
     ref:"RL 2014/65/EU, VO 600/2014",
     refUrl:"https://eur-lex.europa.eu/eli/dir/2014/65/oj/eng",
     cond:{k:"act",any:["advice","portfolio","dealing"]},
@@ -440,6 +578,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"mar", jur:"EU",
     about:{de:"Verbot von Insidergeschäften und Marktmanipulation, Ad-hoc-Publizität, Insiderlisten und Eigengeschäfte von Führungskräften.",en:"Prohibition of insider dealing and market manipulation, disclosure of inside information, insider lists and managers' transactions."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"Marktmissbrauchsverordnung",en:"Market Abuse Regulation"},
+    alias:"MAR, Market Abuse Regulation, Marktmissbrauch, Insiderhandel, Ad-hoc-Publizität, Ad-hoc-Mitteilung, Directors' Dealings, Marktmanipulation, Insiderliste",
     ref:"VO (EU) 596/2014", cond:{k:"act",any:["dealing","issuance","portfolio"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2014/596/oj/eng",
     condL:{de:"nur bei Handels-, Emissions- oder Verwaltungstätigkeit",en:"only for dealing, issuance or management activity"},
@@ -453,6 +592,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"priips", jur:"EU",
     about:{de:"Standardisiertes Basisinformationsblatt für verpackte Anlageprodukte, das Privatkunden vor Vertragsschluss auszuhändigen ist.",en:"Standardised key information document for packaged investment products, to be provided to retail clients before conclusion."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"PRIIPs: Basisinformationsblatt",en:"PRIIPs: key information document"},
+    alias:"PRIIPs, PRIIP, KID, Key Information Document, Basisinformationsblatt, BIB",
     ref:"VO (EU) 1286/2014", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2014/1286/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
@@ -463,16 +603,96 @@ export const FRAMEWORKS: Framework[] = [
           en:"Draft provides for a digital, layered format and a new sustainability section."}}
     ]},
 
+  { id:"prospectus", jur:"EU",
+    about:{de:"Prospektpflicht bei öffentlichen Angeboten und Börsenzulassungen von Wertpapieren, Prospektinhalte und -billigung sowie die Erleichterungen des EU Listing Act für Emittenten und Emissionsbegleiter.",en:"Prospectus requirement for public offers and admissions to trading of securities, prospectus content and approval, and the simplifications of the EU Listing Act for issuers and underwriters."}, topic:"MKT", ents:["CI","IF"],
+    n:{de:"Prospektverordnung & Listing Act",en:"Prospectus Regulation & Listing Act"},
+    alias:"Prospektverordnung, Prospectus Regulation, Listing Act, WpPG, Wertpapierprospektgesetz, WIB, Wertpapier-Informationsblatt, Börsengang, IPO",
+    ref:"VO (EU) 2017/1129, VO (EU) 2024/2809, WpPG", cond:{k:"act",any:["issuance"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2017/1129/oj/deu",
+    condL:{de:"nur bei Emissionsgeschäft",en:"only where underwriting is provided"},
+    /* Chronologie gegen EUR-Lex geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"VO (EU) 2024/2809", eff:"04.12.2024", d:"14.11.2024", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2024/2809/oj/deu",
+       ti:{de:"EU Listing Act: Änderungen an Prospekt-, Marktmissbrauchs- und MiFIR-Verordnung veröffentlicht",en:"EU Listing Act: amendments to the Prospectus, Market Abuse and MiFIR Regulations published"},
+       s:{de:"Vereinfacht die Prospektpflichten, unter anderem durch höhere Schwellen für prospektfreie Angebote, standardisierte Prospektformate und Erleichterungen für Sekundäremissionen. Teile der Änderungen gelten gestaffelt bis 2026.",
+          en:"Simplifies prospectus requirements through, among other things, higher thresholds for prospectus-exempt offers, standardised prospectus formats and relief for secondary issuances. Parts of the amendments apply in stages until 2026."}}
+    ]},
+
+  { id:"csdr", jur:"EU",
+    about:{de:"Wertpapierabwicklung: Abwicklungsdisziplin, Meldung gescheiterter Abwicklungen, Internalisierte Abwicklung und die Verkürzung des Abwicklungszyklus auf T+1 ab Oktober 2027.",en:"Securities settlement: settlement discipline, reporting of settlement fails, internalised settlement and the shortening of the settlement cycle to T+1 from October 2027."}, topic:"MKT", ents:["CI","IF","AM"],
+    n:{de:"CSDR & Umstellung auf T+1",en:"CSDR & the move to T+1"},
+    alias:"CSDR, Central Securities Depositories Regulation, Zentralverwahrer, T+1, Settlement Discipline, Abwicklungszyklus, Wertpapierabwicklung",
+    ref:"VO (EU) 909/2014, VO (EU) 2025/2075", cond:{k:"act",any:["custody","dealing"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2014/909/oj/deu",
+    condL:{de:"nur bei Depot- oder Eigenhandelsgeschäft",en:"only where custody or dealing is provided"},
+    /* Chronologie gegen EUR-Lex geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"VO (EU) 2025/2075", eff:"11.10.2027", d:"14.10.2025", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2025/2075/oj/deu",
+       ti:{de:"Verkürzung des Abwicklungszyklus auf T+1 im Amtsblatt veröffentlicht",en:"Shortening of the settlement cycle to T+1 published in the Official Journal"},
+       s:{de:"Ändert die CSDR und verkürzt den verbindlichen Abwicklungszyklus für Wertpapiergeschäfte von T+2 auf T+1. Gilt ab dem 11.10.2027; bestimmte Wertpapierfinanzierungsgeschäfte sind bei entsprechender Dokumentation ausgenommen.",
+          en:"Amends the CSDR and shortens the mandatory settlement cycle for securities transactions from T+2 to T+1. Applies from 11 Oct 2027; certain securities financing transactions are exempt if properly documented."}}
+    ]},
+
   { id:"ecspr", jur:"EU+DE",
     about:{de:"Einheitliches EU-Zulassungs- und Aufsichtsregime für Schwarmfinanzierungsdienstleister (Crowdinvesting und Crowdlending bis 5 Mio. €): Anlagebasisinformationsblatt, Anlegerschutz- und Interessenkonfliktregeln, ESMA-Register. Flankiert von den delegierten Verordnungen (EU) 2022/2111–2122 und in Deutschland vom Schwarmfinanzierung-Begleitgesetz.",en:"Uniform EU authorisation and supervision regime for crowdfunding service providers (investment- and lending-based up to €5m): key investment information sheet, investor protection and conflict-of-interest rules, ESMA register. Flanked by Delegated Regulations (EU) 2022/2111–2122 and, in Germany, by the crowdfunding accompanying act."}, topic:"MKT", ents:["CI","IF","PI","OTH"],
     n:{de:"ECSPR: Schwarmfinanzierung / Crowdfunding",en:"ECSPR: crowdfunding service providers"},
+    alias:"ECSPR, Crowdfunding, Crowdinvesting, Crowdlending, Schwarmfinanzierung, European Crowdfunding Service Providers Regulation",
     ref:"VO (EU) 2020/1503, RL (EU) 2020/1504, Del. VO (EU) 2022/2111–2122, VermAnlG",
     refUrl:"https://eur-lex.europa.eu/eli/reg/2020/1503/oj/eng", cond:null,
     u:[]},
 
+  { id:"zag", jur:"DE",
+    about:{de:"Das deutsche Aufsichtsgesetz für Zahlungsdienste und E-Geld: Erlaubnis- und Registrierungspflichten, zulässige Tätigkeiten, Eigenmittel, Sicherung von Kundengeldern, Agenten, Auslagerung, Anzeige- und Meldepflichten sowie die BaFin-Auslegung im ZAG-Merkblatt.",en:"Germany's supervisory act for payment services and e-money: authorisation and registration duties, permitted activities, own funds, safeguarding of client funds, agents, outsourcing, notification and reporting duties, and BaFin's interpretation in the ZAG guidance note."}, topic:"PAY", ents:["PI","CI"],
+    n:{de:"ZAG: Zahlungsdiensteaufsichtsgesetz",en:"ZAG: Payment Services Supervision Act"},
+    alias:"ZAG, Zahlungsdiensteaufsichtsgesetz, Zahlungsinstitute, E-Geld-Institute, ZAG-Erlaubnis, Finanztransfergeschäft, Kontoinformationsdienst",
+    ref:"ZAG, ZAGAnzV, ZIEV, ZAG-MonAwV", cond:{k:"act",any:["payments"]},
+    refUrl:"https://www.gesetze-im-internet.de/zag_2018/",
+    condL:{de:"nur bei Erbringung von Zahlungsdiensten oder E-Geld-Geschäft in Deutschland",en:"only where payment services or e-money business are provided in Germany"},
+    u:[]},
+
+  { id:"zkg", jur:"EU+DE",
+    about:{de:"Zahlungskonten für Verbraucher: Recht auf ein Basiskonto, Kontowechselhilfe, Entgeltinformation und Entgeltaufstellung mit standardisierten Begriffen sowie Vergleichswebsites; setzt die EU-Zahlungskontenrichtlinie um.",en:"Payment accounts for consumers: right to a basic account, account switching service, fee information document and statement of fees with standardised terms, and comparison websites; transposes the EU Payment Accounts Directive."}, topic:"PAY", ents:["CI","PI"],
+    n:{de:"Zahlungskontengesetz",en:"Payment Accounts Act"},
+    alias:"ZKG, Zahlungskontengesetz, Basiskonto, Kontowechsel, Payment Accounts Directive, PAD, Entgeltinformation",
+    ref:"ZKG, RL 2014/92/EU", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://www.gesetze-im-internet.de/zkg/",
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    /* Chronologie gegen BGBl., gesetze-im-internet.de und Cellar geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"BGBl. 2016 I S. 720", eff:"18.06.2016", d:"11.04.2016", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.gesetze-im-internet.de/zkg/",
+       ti:{de:"Zahlungskontengesetz verkündet: Basiskonto, Kontowechselhilfe und Entgelttransparenz",en:"Payment Accounts Act promulgated: basic account, account switching and fee transparency"},
+       s:{de:"Setzt die Zahlungskontenrichtlinie 2014/92/EU um. Der Anspruch auf ein Basiskonto gilt seit dem 19.06.2016, die Kontowechselhilfe seit dem 18.09.2016; die standardisierte Entgeltinformation und Entgeltaufstellung folgten mit den Durchführungsstandards der EU-Kommission ab dem 31.10.2018.",
+          en:"Transposes Payment Accounts Directive 2014/92/EU. The right to a basic account applies since 19 Jun 2016, the account switching service since 18 Sep 2016; the standardised fee information document and statement of fees followed with the Commission's implementing standards from 31 Oct 2018."}},
+      {refnum:"RL 2014/92/EU", eff:"17.09.2014", d:"28.08.2014", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2014/92/oj/deu",
+       ti:{de:"EU-Zahlungskontenrichtlinie im Amtsblatt veröffentlicht",en:"EU Payment Accounts Directive published in the Official Journal"},
+       s:{de:"Richtlinie über die Vergleichbarkeit von Zahlungskontoentgelten, den Wechsel von Zahlungskonten und den Zugang zu Zahlungskonten mit grundlegenden Funktionen. Umsetzungsfrist 18.09.2016.",
+          en:"Directive on the comparability of fees related to payment accounts, payment account switching and access to payment accounts with basic features. Transposition deadline 18 Sep 2016."}}
+    ]},
+
+  { id:"interchange", jur:"EU",
+    about:{de:"Obergrenzen für Interbankenentgelte bei Verbraucher-Debit- und Kreditkartenzahlungen, Trennung von Kartensystem und Abwicklung, Verbot von Gebietsbeschränkungen und Transparenzpflichten gegenüber Händlern.",en:"Caps on interchange fees for consumer debit and credit card payments, separation of scheme and processing, ban on territorial restrictions and transparency duties towards merchants."}, topic:"PAY", ents:["CI","PI"],
+    n:{de:"Interbankenentgelte-Verordnung (IFR)",en:"Interchange Fee Regulation (IFR)"},
+    alias:"IFR, Interchange Fee Regulation, Interbankenentgelte, Kartenzahlung, MIF",
+    ref:"VO (EU) 2015/751", cond:{k:"act",any:["payments"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2015/751/oj/deu",
+    condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
+    /* Chronologie gegen Cellar geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"VO (EU) 2015/751", eff:"08.06.2015", d:"19.05.2015", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2015/751/oj/deu",
+       ti:{de:"Verordnung über Interbankenentgelte für kartengebundene Zahlungsvorgänge veröffentlicht",en:"Regulation on interchange fees for card-based payment transactions published"},
+       s:{de:"Deckelt die Interbankenentgelte auf 0,2 Prozent des Transaktionswerts bei Debitkarten und 0,3 Prozent bei Kreditkarten (Obergrenzen seit 09.12.2015) und schreibt die Trennung von Kartensystem und Abwicklung sowie Informationspflichten gegenüber Zahlungsempfängern vor.",
+          en:"Caps interchange fees at 0.2 percent of the transaction value for debit cards and 0.3 percent for credit cards (caps since 9 Dec 2015) and requires the separation of scheme and processing as well as information duties towards payees."}}
+    ]},
+
   { id:"psd3", jur:"EU",
     about:{de:"Nachfolgeregime zur PSD2: Zulassung, starke Kundenauthentifizierung, Zugang zu Zahlungskonten und Haftung bei Betrug.",en:"Successor regime to PSD2: authorisation, strong customer authentication, access to payment accounts and fraud liability."}, topic:"PAY", ents:["CI","PI"],
     n:{de:"PSD3 / Zahlungsdiensteverordnung",en:"PSD3 / Payment Services Regulation"},
+    alias:"PSD3, PSD2, PSR, Payment Services Regulation, Zahlungsdiensterichtlinie, starke Kundenauthentifizierung, SCA, Open Banking, Zahlungsauslösedienst",
     ref:"COM(2023) 366, COM(2023) 367", cond:{k:"act",any:["payments"]},
     refUrl:"https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52023PC0366",
     condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
@@ -490,6 +710,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"instant", jur:"EU",
     about:{de:"Pflicht zur Erreichbarkeit für Echtzeitüberweisungen in Euro, Entgeltgleichheit und Abgleich von Empfängername und IBAN.",en:"Duty to be reachable for euro instant credit transfers, charge parity, and verification of payee name against IBAN."}, topic:"PAY", ents:["CI","PI"],
     n:{de:"Verordnung über Echtzeitüberweisungen",en:"Instant Payments Regulation"},
+    alias:"Instant Payments, IPR, SEPA Instant, Echtzeitüberweisung, Sofortüberweisung, Verification of Payee, VoP, Empfängerprüfung",
     ref:"VO (EU) 2024/886", cond:{k:"act",any:["payments"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/886/oj/eng",
     condL:{de:"nur bei Erbringung von Zahlungsdiensten",en:"only where payment services are provided"},
@@ -503,6 +724,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"mica", jur:"EU",
     about:{de:"Zulassungs- und Verhaltensregeln für Emittenten von Kryptowerten und für Kryptowertedienstleister in der EU.",en:"Authorisation and conduct rules for issuers of crypto-assets and for crypto-asset service providers in the EU."}, topic:"PAY", ents:["CI","AM","IF","PI"],
     n:{de:"MiCA: Märkte für Kryptowerte",en:"MiCA: markets in crypto-assets"},
+    alias:"MiCA, MiCAR, Markets in Crypto-Assets, Kryptowerte, Krypto, Crypto, CASP, Kryptowertedienstleister, Stablecoin, Kryptoverwahrung, Bitcoin",
     ref:"VO (EU) 2023/1114", cond:{k:"prod",any:["crypto"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng",
     condL:{de:"nur bei Kryptowerten im Angebot",en:"only where crypto-assets are offered"},
@@ -516,6 +738,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"dltpilot", jur:"EU+DE",
     about:{de:"Pilotregelung für Marktinfrastrukturen auf Basis der Distributed-Ledger-Technologie: Handel und Abwicklung tokenisierter Finanzinstrumente mit befristeten Ausnahmen von MiFIR und CSDR; in Deutschland flankiert durch elektronische Wertpapiere und Kryptowertpapierregister nach dem eWpG.",en:"Pilot regime for market infrastructures based on distributed ledger technology: trading and settlement of tokenised financial instruments under temporary exemptions from MiFIR and CSDR; flanked in Germany by electronic securities and crypto securities registers under the eWpG."}, topic:"MKT", ents:["CI","AM","IF"],
     n:{de:"DLT-Pilotregelung & elektronische Wertpapiere",en:"DLT Pilot Regime & electronic securities"},
+    alias:"DLT Pilot Regime, DLT-Pilotregelung, eWpG, elektronische Wertpapiere, Kryptowertpapiere, Tokenisierung, Tokenisation, Blockchain, Distributed Ledger",
     ref:"VO (EU) 2022/858, eWpG", cond:{k:"prod",any:["crypto"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2022/858/oj/eng",
     condL:{de:"nur bei Kryptowerten oder tokenisierten Finanzinstrumenten",en:"only where crypto-assets or tokenised financial instruments are involved"},
@@ -528,6 +751,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"aifmd2", jur:"EU",
     about:{de:"Verwaltung alternativer Investmentfonds und OGAW: Zulassung, Organisation, Auslagerung, Liquiditätsinstrumente und Verwahrstelle.",en:"Management of alternative investment funds and UCITS: authorisation, organisation, delegation, liquidity tools and depositary."}, topic:"FND", ents:["AM"],
     n:{de:"AIFMD II und OGAW-Richtlinie",en:"AIFMD II and UCITS Directive"},
+    alias:"AIFMD 2, AIFMD II, UCITS, OGAW, KAGB, Kapitalanlagegesetzbuch, KVG, Kapitalverwaltungsgesellschaft, AIF, Alternative Investmentfonds, Verwahrstelle, Depositary, KAMaRisk, Spezialfonds, Kreditfonds",
     ref:"RL (EU) 2024/927", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/dir/2024/927/oj/eng",
     u:[
@@ -548,6 +772,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"eltif", jur:"EU",
     about:{de:"Produktregime für langfristige Investmentfonds, das seit der Reform auch für Privatanleger geöffnet ist.",en:"Product regime for long-term investment funds, opened up to retail investors following the reform."}, topic:"FND", ents:["AM"],
     n:{de:"ELTIF 2.0",en:"ELTIF 2.0"},
+    alias:"ELTIF, ELTIF 2, European Long-Term Investment Fund, Europäischer langfristiger Investmentfonds, EuVECA",
     ref:"VO (EU) 2023/606", cond:{k:"prod",any:["eltif"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2023/606/oj/eng",
     condL:{de:"nur bei ELTIF- oder EuVECA-Produkten",en:"only for ELTIF or EuVECA products"},
@@ -561,6 +786,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"mmf", jur:"EU",
     about:{de:"Portfolio-, Bewertungs- und Liquiditätsanforderungen für Geldmarktfonds sowie Regeln zu Rücknahmen unter Stress.",en:"Portfolio, valuation and liquidity requirements for money market funds, and rules on redemptions under stress."}, topic:"FND", ents:["AM"],
     n:{de:"Geldmarktfonds-Verordnung",en:"Money Market Funds Regulation"},
+    alias:"MMF, MMFR, Money Market Fund Regulation, Geldmarktfonds",
     ref:"VO (EU) 2017/1131", cond:{k:"prod",any:["mmf"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2017/1131/oj/eng",
     condL:{de:"nur bei Geldmarktfonds im Angebot",en:"only where money market funds are offered"},
@@ -574,6 +800,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"sfdr", jur:"EU",
     about:{de:"Offenlegungspflichten zu Nachhaltigkeitsrisiken und nachteiligen Nachhaltigkeitsauswirkungen auf Unternehmens- und Produktebene.",en:"Disclosure duties on sustainability risks and principal adverse impacts at entity and product level."}, topic:"ESG", ents:["CI","AM","IF","INS"],
     n:{de:"SFDR: Offenlegungsverordnung",en:"SFDR: sustainability disclosure"},
+    alias:"SFDR, Offenlegungsverordnung, ESG, Nachhaltigkeit, Sustainable Finance, EU-Taxonomie, Taxonomy, Greenwashing, PAI, Artikel 8, Artikel 9, Nachhaltigkeitspräferenzen",
     ref:"VO (EU) 2019/2088", cond:{k:"cross",any:["esg"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2019/2088/oj/eng",
     condL:{de:"nur bei nachhaltigkeitsbezogenen Angaben",en:"only where sustainability disclosures are made"},
@@ -591,6 +818,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"itsrep", jur:"EU",
     about:{de:"Einheitliche Meldebögen und Taxonomien für COREP, FINREP und weitere aufsichtliche Meldungen.",en:"Harmonised templates and taxonomies for COREP, FINREP and other supervisory returns."}, topic:"REP", ents:["CI","IF"],
     n:{de:"ITS zum aufsichtlichen Meldewesen",en:"ITS on Supervisory Reporting"},
+    alias:"COREP, FINREP, Meldewesen, Supervisory Reporting, EBA Reporting Framework, DPM, XBRL, Validation Rules, Meldebögen, Taxonomie",
     ref:"ITS on Supervisory Reporting", cond:{k:"cross",any:["reporting"]},
     refUrl:"https://www.eba.europa.eu/risk-and-data-analysis/reporting-frameworks",
     condL:{de:"nur bei aufsichtlicher Meldepflicht",en:"only where supervisory reporting applies"},
@@ -608,6 +836,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"anacredit", jur:"EU+DE",
     about:{de:"Granulare Kreditdatenmeldung an Bundesbank und ESZB auf Ebene einzelner Kredite und Kreditnehmer.",en:"Granular credit data reporting to the Bundesbank and the ESCB at individual loan and borrower level."}, topic:"REP", ents:["CI"],
     n:{de:"AnaCredit und statistische Meldungen",en:"AnaCredit and statistical reporting"},
+    alias:"AnaCredit, Kreditdatenstatistik, Bundesbank-Meldungen, statistische Meldungen, BISTA",
     ref:"VO (EU) 2016/867", cond:{k:"cross",any:["reporting"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2016/867/oj/eng",
     condL:{de:"nur bei aufsichtlicher Meldepflicht",en:"only where supervisory reporting applies"},
@@ -618,9 +847,30 @@ export const FRAMEWORKS: Framework[] = [
           en:"Adds loans to sole proprietors below the previous threshold. Applies from the January 2027 reporting month."}}
     ]},
 
+  { id:"crs", jur:"EU+DE",
+    about:{de:"Steuerlicher Informationsaustausch: Identifizierung und Meldung meldepflichtiger Finanzkonten (CRS, FATCA) sowie seit 2026 die Melde- und Sorgfaltspflichten für Anbieter von Kryptowerte-Dienstleistungen nach DAC8.",en:"Tax information exchange: identification and reporting of reportable financial accounts (CRS, FATCA) and, since 2026, the reporting and due diligence duties for crypto-asset service providers under DAC8."}, topic:"REP", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"Steuerlicher Informationsaustausch: CRS, FATCA, DAC8",en:"Tax information exchange: CRS, FATCA, DAC8"},
+    alias:"CRS, Common Reporting Standard, FATCA, DAC8, DAC 8, FKAustG, KStTG, CARF, Steuertransparenz, Finanzkonten-Informationsaustausch",
+    ref:"FKAustG, FATCA-USA-UmsV, KStTG, RL (EU) 2023/2226", cond:null,
+    refUrl:"https://www.gesetze-im-internet.de/ksttg/",
+    /* Chronologie gegen BGBl. und EUR-Lex geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"BGBl. 2025 I Nr. 352", eff:"01.01.2026", d:"22.12.2025", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.recht.bund.de/bgbl/1/2025/352/VO.html",
+       ti:{de:"Kryptowerte-Steuertransparenzgesetz: DAC8 in deutsches Recht umgesetzt",en:"Crypto-Asset Tax Transparency Act: DAC8 transposed into German law"},
+       s:{de:"Neues Stammgesetz mit Sorgfalts- und Meldepflichten für Anbieter von Kryptowerte-Dienstleistungen; flankierend werden EU-Amtshilfegesetz, Finanzkonten-Informationsaustauschgesetz, Abgabenordnung und Plattformen-Steuertransparenzgesetz angepasst. Anzuwenden ab dem 01.01.2026.",
+          en:"New standalone act with due diligence and reporting duties for crypto-asset service providers; the EU Mutual Assistance Act, the Financial Account Information Exchange Act, the Fiscal Code and the Platform Tax Transparency Act are amended alongside. Applies from 1 Jan 2026."}},
+      {refnum:"RL (EU) 2023/2226", eff:"01.01.2026", d:"24.10.2023", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2023/2226/oj/deu",
+       ti:{de:"DAC8: Amtshilferichtlinie auf Kryptowerte und E-Geld ausgeweitet",en:"DAC8: Administrative Cooperation Directive extended to crypto-assets and e-money"},
+       s:{de:"Achte Änderung der Amtshilferichtlinie: verpflichtet Anbieter von Kryptowerte-Dienstleistungen zur Meldung von Transaktionen ihrer Nutzer und erweitert den CRS-Meldeumfang um E-Geld und digitales Zentralbankgeld. Umsetzung bis 31.12.2025, Anwendung ab 01.01.2026.",
+          en:"Eighth amendment of the Directive on Administrative Cooperation: obliges crypto-asset service providers to report their users' transactions and extends CRS reporting to e-money and central bank digital currencies. Transposition by 31 Dec 2025, application from 1 Jan 2026."}}
+    ]},
+
   { id:"solvency", jur:"EU",
     about:{de:"Risikobasiertes Aufsichtsregime für Versicherer: Solvenzkapital, Governance, ORSA und Berichterstattung.",en:"Risk-based prudential regime for insurers: solvency capital, governance, ORSA and reporting."}, topic:"INSU", ents:["INS"],
     n:{de:"Solvency II",en:"Solvency II"},
+    alias:"Solvency II, Solvency 2, Solvabilität II, VAG, Versicherungsaufsichtsgesetz, SCR, ORSA, IORP, Rückversicherung, Versicherer",
     ref:"RL 2009/138/EG, DelVO 2015/35", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/dir/2009/138/oj/eng",
     u:[
@@ -634,9 +884,24 @@ export const FRAMEWORKS: Framework[] = [
           en:"Requires climate scenarios to be included in the own risk and solvency assessment."}}
     ]},
 
+  { id:"irrd", jur:"EU",
+    about:{de:"Sanierungs- und Abwicklungsrahmen für Versicherer und Rückversicherer: präventive Sanierungspläne, Abwicklungspläne der nationalen Abwicklungsbehörden, Abwicklungsinstrumente und Kriterien für kritische Funktionen – das Pendant zur BRRD für den Versicherungssektor.",en:"Recovery and resolution framework for insurers and reinsurers: pre-emptive recovery plans, resolution plans drawn up by national resolution authorities, resolution tools and criteria for critical functions – the insurance-sector counterpart to the BRRD."}, topic:"INSU", ents:["INS"],
+    n:{de:"IRRD: Sanierung und Abwicklung von Versicherern",en:"IRRD: insurance recovery and resolution"},
+    alias:"IRRD, Insurance Recovery and Resolution Directive, Versicherungsabwicklung, Sanierungsplan Versicherer, Abwicklung Versicherungen",
+    ref:"RL (EU) 2025/1", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2025/1/oj/eng",
+    u:[
+      {eff:"30.01.2027", d:"27.11.2024", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       ti:{de:"Richtlinie (EU) 2025/1 zur Sanierung und Abwicklung von Versicherungs- und Rückversicherungsunternehmen (IRRD)",en:"Directive (EU) 2025/1 establishing a framework for the recovery and resolution of insurance and reinsurance undertakings (IRRD)"},
+       s:{de:"Verpflichtet die Mitgliedstaaten, Abwicklungsbehörden für den Versicherungssektor zu benennen, und führt präventive Sanierungspläne, Abwicklungsplanung, Abwicklungsinstrumente und Abwicklungsfähigkeitsprüfungen ein. Umsetzung bis 29.01.2027, Anwendung ab 30.01.2027; EIOPA konkretisiert das Regime über technische Standards und Leitlinien, u. a. zu kritischen Funktionen.",
+          en:"Requires Member States to designate insurance resolution authorities and introduces pre-emptive recovery plans, resolution planning, resolution tools and resolvability assessments. Transposition by 29 Jan 2027, application from 30 Jan 2027; EIOPA fleshes out the regime through technical standards and guidelines, including on critical functions."},
+       url:"https://eur-lex.europa.eu/eli/dir/2025/1/oj/eng"}
+    ]},
+
   { id:"idd", jur:"EU",
     about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["CI","INS"],
     n:{de:"Versicherungsvertriebsrichtlinie",en:"Insurance Distribution Directive"},
+    alias:"IDD, Insurance Distribution Directive, Versicherungsvertrieb, Versicherungsvermittler, Versicherungsmakler, IBIP, Versicherungsanlageprodukte",
     ref:"RL (EU) 2016/97", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2016/97/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
@@ -654,6 +919,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"emir", jur:"EU",
     about:{de:"Regeln für Derivategeschäfte: Clearingpflicht über zentrale Gegenparteien, Risikominderung und Einschusspflichten für nicht geclearte OTC-Derivate sowie Meldung aller Kontrakte an Transaktionsregister.",en:"Rules for derivatives: mandatory clearing through central counterparties, risk mitigation and margin requirements for uncleared OTC derivatives, and reporting of all contracts to trade repositories."}, topic:"MKT", ents:["CI","AM","IF","INS"],
     n:{de:"EMIR: Derivate und zentrales Clearing",en:"EMIR: derivatives and central clearing"},
+    alias:"EMIR, EMIR 3, EMIR Refit, Derivate, OTC-Derivate, Clearing, CCP, Zentrale Gegenpartei, Transaktionsregister, Trade Repository, Margin, Active Account",
     ref:"VO (EU) 648/2012, VO (EU) 2024/2987", cond:{k:"prod",any:["otc"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2012/648/oj/eng",
     condL:{de:"nur bei Einsatz von OTC-Derivaten",en:"only where OTC derivatives are used"},
@@ -662,6 +928,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"bmr", jur:"EU",
     about:{de:"Anforderungen an Administratoren und beaufsichtigte Verwender von Referenzwerten wie Zinssätzen und Indizes – einschließlich Zulassung, Methodik und Ausweichplänen für den Wegfall eines Referenzwerts.",en:"Requirements for administrators and supervised users of benchmarks such as interest rates and indices – including authorisation, methodology and fallback plans for benchmark cessation."}, topic:"MKT", ents:["CI","AM","IF"],
     n:{de:"Benchmark-Verordnung",en:"Benchmark Regulation"},
+    alias:"BMR, Benchmark Regulation, Benchmark-Verordnung, Referenzwerte, EURIBOR, €STR, LIBOR, SOFR, IBOR-Ablösung",
     ref:"VO (EU) 2016/1011", cond:{k:"act",any:["portfolio","dealing","issuance"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2016/1011/oj/eng",
     condL:{de:"nur bei Verwendung von Referenzwerten in Finanzinstrumenten oder Fonds",en:"only where benchmarks are used in financial instruments or funds"},
@@ -670,6 +937,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"dsgvo", jur:"EU+DE",
     about:{de:"Das allgemeine Datenschutzrecht für die Verarbeitung personenbezogener Daten: Rechtsgrundlagen, Betroffenenrechte, Auftragsverarbeitung, Drittlandtransfers und Meldepflichten bei Datenpannen.",en:"General data protection law for processing personal data: legal bases, data subject rights, processors, third-country transfers and breach notification duties."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"DSGVO / BDSG: Datenschutz",en:"GDPR / BDSG: data protection"},
+    alias:"DSGVO, GDPR, General Data Protection Regulation, Datenschutz-Grundverordnung, BDSG, Datenschutz, Privacy, Auftragsverarbeitung, Datenpanne, Data Breach, Cookies, Einwilligung, DSFA, DPIA",
     ref:"VO (EU) 2016/679, BDSG", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
     u:[]},
@@ -677,6 +945,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"aiact", jur:"EU",
     about:{de:"Risikobasierte Regeln für den Einsatz von KI-Systemen: verbotene Praktiken, Pflichten für Hochrisiko-Systeme etwa in der Kreditwürdigkeitsprüfung, Transparenzpflichten und Vorgaben für KI-Modelle mit allgemeinem Verwendungszweck.",en:"Risk-based rules for the use of AI systems: prohibited practices, duties for high-risk systems such as creditworthiness assessment, transparency duties and requirements for general-purpose AI models."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"KI-Verordnung",en:"AI Act"},
+    alias:"EU AI Act, AI Act, KI-VO, KI-Gesetz, AI Regulation, Artificial Intelligence Act, KI-Verordnung, künstliche Intelligenz, GPAI, Hochrisiko-KI, High-Risk AI, AI Office, KI-Omnibus",
     ref:"VO (EU) 2024/1689", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
     u:[]},
@@ -684,25 +953,97 @@ export const FRAMEWORKS: Framework[] = [
   { id:"eidas2", jur:"EU",
     about:{de:"Der europäische Rahmen für digitale Identität und Vertrauensdienste: Die EUDI-Wallet soll Identifizierung und Signaturen EU-weit ermöglichen; Banken und Zahlungsdienstleister müssen sie zur starken Kundenauthentifizierung akzeptieren.",en:"The European framework for digital identity and trust services: the EUDI wallet is to enable identification and signatures EU-wide; banks and payment providers must accept it for strong customer authentication."}, topic:"DATA", ents:["CI","AM","IF","PI","INS"],
     n:{de:"eIDAS 2: Digitale Identität",en:"eIDAS 2: digital identity"},
+    alias:"eIDAS 2, eIDAS 2.0, EUDI Wallet, Digital Identity Wallet, digitale Identität, elektronische Signatur, Vertrauensdienste, Trust Services",
     ref:"VO (EU) 2024/1183", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng",
+    u:[]},
+
+  { id:"fida", jur:"EU",
+    about:{de:"Vorschlag für einen Rahmen für den Zugang zu Finanzdaten (Open Finance): Pflicht der Dateninhaber, Kundendaten über Schnittstellen mit zugelassenen Datennutzern zu teilen, Datenaustauschsysteme und ein Zulassungsregime für Finanzinformationsdienstleister. Trilog seit Sommer 2025 unterbrochen.",en:"Proposal for a framework for financial data access (open finance): duty of data holders to share customer data with authorised data users via interfaces, data-sharing schemes and an authorisation regime for financial information service providers. Trilogue stalled since summer 2025."}, topic:"DATA", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"FiDA: Zugang zu Finanzdaten (Open Finance)",en:"FiDA: financial data access (open finance)"},
+    alias:"FiDA, FIDA, Financial Data Access, Open Finance, Finanzdatenzugang, Data Sharing",
+    ref:"COM(2023) 360", cond:null,
+    refUrl:"https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:52023PC0360",
     u:[]},
 
   { id:"csrd", jur:"EU+DE",
     about:{de:"Pflicht zur Nachhaltigkeitsberichterstattung im Lagebericht nach den ESRS-Standards samt Prüfungspflicht; Umfang und Zeitplan werden derzeit durch das Omnibus-Paket der EU-Kommission überarbeitet.",en:"Mandatory sustainability reporting in the management report under the ESRS standards, subject to assurance; scope and timeline are currently being revised through the Commission's omnibus package."}, topic:"ESG", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"CSRD: Nachhaltigkeitsberichterstattung",en:"CSRD: sustainability reporting"},
+    alias:"CSRD, ESRS, Nachhaltigkeitsberichterstattung, Sustainability Reporting, ESG-Bericht, Omnibus, VSME, Lieferkette",
     ref:"RL (EU) 2022/2464, ESRS", cond:{k:"cross",any:["esg"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2022/2464/oj/eng",
     condL:{de:"nur bei nachhaltigkeitsbezogenen Angaben",en:"only where sustainability disclosures are made"},
     u:[]},
 
+  { id:"lksg", jur:"EU+DE",
+    about:{de:"Menschenrechtliche und umweltbezogene Sorgfaltspflichten in der Lieferkette für Unternehmen ab 1.000 Beschäftigten in Deutschland: Risikoanalyse, Grundsatzerklärung, Präventions- und Abhilfemaßnahmen, Beschwerdeverfahren; auf EU-Ebene die CSDDD, deren Anwendung durch die Omnibus-Richtlinie auf Juli 2028 verschoben wurde. Eine Änderung des LkSG zur Streichung der Berichtspflicht ist im Bundestag in Beratung.",en:"Human rights and environmental due diligence in the supply chain for companies with 1,000 or more employees in Germany: risk analysis, policy statement, preventive and remedial measures, complaints procedure; at EU level the CSDDD, whose application was postponed to July 2028 by the omnibus directive. An LkSG amendment removing the reporting duty is under deliberation in the Bundestag."}, topic:"ESG", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"Lieferkettensorgfaltspflichtengesetz & CSDDD",en:"Supply Chain Due Diligence Act & CSDDD"},
+    alias:"LkSG, Lieferkettengesetz, Lieferkettensorgfaltspflichtengesetz, CSDDD, CS3D, Supply Chain Due Diligence, Sorgfaltspflichten",
+    ref:"LkSG, RL (EU) 2024/1760, RL (EU) 2025/794", cond:null,
+    refUrl:"https://www.gesetze-im-internet.de/lksg/",
+    condL:{de:"nur ab 1.000 Beschäftigten im Inland",en:"only with 1,000+ employees in Germany"},
+    /* Chronologie gegen BGBl., gesetze-im-internet.de und Cellar geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"RL (EU) 2025/794", eff:"17.04.2025", d:"16.04.2025", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2025/794/oj/deu",
+       ti:{de:"Omnibus-Richtlinie verschiebt Umsetzung und Anwendung der CSDDD",en:"Omnibus directive postpones transposition and application of the CSDDD"},
+       s:{de:"Verschiebt die Umsetzungsfrist der CSDDD auf den 26.07.2027 und den Anwendungsbeginn für die erste Unternehmensgruppe auf den 26.07.2028; zugleich werden die CSRD-Berichtspflichten für die zweite und dritte Welle um zwei Jahre verschoben.",
+          en:"Postpones the CSDDD transposition deadline to 26 Jul 2027 and the first application date to 26 Jul 2028; at the same time the CSRD reporting duties for the second and third wave are delayed by two years."}},
+      {refnum:"RL (EU) 2024/1760", eff:"25.07.2024", d:"05.07.2024", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2024/1760/oj/deu",
+       ti:{de:"CSDDD: EU-Richtlinie über Sorgfaltspflichten von Unternehmen im Hinblick auf Nachhaltigkeit veröffentlicht",en:"CSDDD: EU Corporate Sustainability Due Diligence Directive published"},
+       s:{de:"Verpflichtet große Unternehmen zu risikobasierten Sorgfaltspflichten für Menschenrechte und Umwelt entlang der Aktivitätskette und zu einem Klimaübergangsplan. Für den Finanzsektor bleiben nachgelagerte Geschäftsbeziehungen zunächst ausgenommen; eine Überprüfungsklausel ist vorgesehen.",
+          en:"Obliges large companies to risk-based human rights and environmental due diligence along the chain of activities and to a climate transition plan. Downstream business relationships of the financial sector are initially exempt; a review clause is included."}},
+      {refnum:"BGBl. 2021 I S. 2959", eff:"01.01.2023", d:"22.07.2021", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.gesetze-im-internet.de/lksg/",
+       ti:{de:"Lieferkettensorgfaltspflichtengesetz verkündet",en:"Supply Chain Due Diligence Act promulgated"},
+       s:{de:"Gilt seit dem 01.01.2023 für Unternehmen ab 3.000 und seit dem 01.01.2024 für Unternehmen ab 1.000 Beschäftigten im Inland. Das Bundesamt für Wirtschaft und Ausfuhrkontrolle überwacht die Einhaltung; die Prüfung der Berichte nach §§ 12, 13 LkSG hat es zum 01.10.2025 eingestellt.",
+          en:"Applies since 1 Jan 2023 to companies with 3,000 or more and since 1 Jan 2024 to companies with 1,000 or more employees in Germany. The Federal Office for Economic Affairs and Export Control supervises compliance; it discontinued the review of reports under §§ 12, 13 LkSG as of 1 Oct 2025."}}
+    ]},
+
   { id:"consumer", jur:"EU+DE",
     about:{de:"Verbraucherschutz im Finanzgeschäft: Verbraucherdarlehen und die neue Verbraucherkreditrichtlinie CCD II, vorvertragliche Informationspflichten, Widerrufsrechte und AGB-Kontrolle.",en:"Consumer protection in finance: consumer credit and the new Consumer Credit Directive CCD II, pre-contractual information duties, withdrawal rights and review of standard terms."}, topic:"CONS", ents:["CI","PI","OTH"],
     n:{de:"Verbraucherschutz im Finanzgeschäft",en:"Consumer protection in finance"},
+    alias:"Verbraucherschutz, Consumer Protection, Verbraucherkredit, Verbraucherdarlehen, CCD II, CCD2, Verbraucherkreditrichtlinie, Widerruf, Widerrufsrecht, Restschuldversicherung, AGB, Prämiensparverträge",
     ref:"RL (EU) 2023/2225 (CCD II), BGB", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2023/2225/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
-    u:[]}
+    u:[]},
+
+  { id:"absfinag", jur:"DE",
+    about:{de:"Neues Aufsichtsregime für Absatzfinanzierer: Händler, Dienstleister und Plattformen, die Verbrauchern Zahlungsaufschübe, Ratenzahlungen oder Rechnungskauf (Buy now, pay later) anbieten, müssen sich bei der BaFin registrieren; Kreditinstitute melden Abtretungsvereinbarungen mit Absatzfinanzierern.",en:"New supervisory regime for sales-financing providers: merchants, service providers and platforms offering consumers deferred payment, instalments or buy-now-pay-later must register with BaFin; credit institutions report assignment arrangements with such providers."}, topic:"CONS", ents:["CI","PI","OTH"],
+    n:{de:"AbsFinAG: Aufsicht über Absatzfinanzierung (BNPL)",en:"AbsFinAG: supervision of sales financing (BNPL)"},
+    alias:"AbsFinAG, Absatzfinanzierung, BNPL, Buy Now Pay Later, Rechnungskauf, Ratenzahlung, Zahlungsaufschub, Händlerkredit, Klarna, PayPal Ratenkauf",
+    ref:"AbsFinAG (Umsetzung RL (EU) 2023/2225)", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_leitfaden_absfinag.html",
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[
+      {d:"31.08.2026", t:{de:"Meldung",en:"News"}, src:"bafin.de",
+       ti:{de:"BaFin veröffentlicht Entscheidungsbaum und Formulare zur Registrierung und Meldung nach dem AbsFinAG",en:"BaFin publishes decision tree and forms for registration and reporting under the AbsFinAG"},
+       s:{de:"Der Entscheidungsbaum hilft Absatzfinanzierern zu prüfen, ob sie registrierungs- oder meldepflichtig sind. Parallel stellt die BaFin die Antragsformulare für Kreditgeber sowie das Meldeformular für Institute nach § 6 Absatz 2 AbsFinAG bereit.",
+          en:"The decision tree helps sales-financing providers check whether they must register or report. BaFin also provides the application forms for lenders and the reporting form for institutions under § 6(2) AbsFinAG."},
+       url:"https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_leitfaden_absfinag.html"},
+      {eff:"20.11.2026", d:"17.04.2026", t:{de:"Gesetz",en:"Law"}, src:"bundestag.de",
+       ti:{de:"Bundestag beschließt das Gesetz zur Umsetzung der Verbraucherkreditrichtlinie 2023 mit dem neuen AbsFinAG",en:"Bundestag adopts the act implementing the 2023 Consumer Credit Directive, including the new AbsFinAG"},
+       s:{de:"Artikelgesetz zur Umsetzung der CCD II (RL (EU) 2023/2225): Änderungen in BGB, EGBGB und KWG sowie das neue Absatzfinanzierungsaufsichtsgesetz mit Registrierungspflicht bei der BaFin, Ausnahmen für KMU (§ 4), Bußgeldrahmen bis 500.000 Euro (§ 8) und Übergangsfrist bis längstens 20.11.2027 (§ 10). Anwendung ab 20.11.2026.",
+          en:"Omnibus act implementing CCD II (Directive (EU) 2023/2225): amendments to the BGB, EGBGB and KWG plus the new AbsFinAG with BaFin registration, SME exemptions (§ 4), fines of up to EUR 500,000 (§ 8) and a transition period ending no later than 20 Nov 2027 (§ 10). Applies from 20 Nov 2026."}}
+    ]},
+
+  { id:"bfsg", jur:"EU+DE",
+    about:{de:"Barrierefreiheit für Verbraucher-Bankdienstleistungen: Online-Banking, Apps, Kontoeröffnung, Geldautomaten und Zahlungsterminals müssen seit dem 28.06.2025 wahrnehmbar, bedienbar und verständlich sein; Kleinstunternehmen sind bei Dienstleistungen ausgenommen.",en:"Accessibility for consumer banking services: online banking, apps, account opening, ATMs and payment terminals must be perceivable, operable and understandable since 28 Jun 2025; micro-enterprises are exempt for services."}, topic:"CONS", ents:["CI","PI","IF","INS"],
+    n:{de:"Barrierefreiheitsstärkungsgesetz",en:"Accessibility Strengthening Act"},
+    alias:"BFSG, Barrierefreiheitsstärkungsgesetz, Barrierefreiheit, Accessibility, European Accessibility Act, EAA, Barrierefreies Banking",
+    ref:"BFSG, RL (EU) 2019/882", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://www.gesetze-im-internet.de/bfsg/",
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    /* Chronologie gegen BGBl. geprüft (Stand 02.09.2026). */
+    u:[
+      {refnum:"BGBl. 2021 I S. 2970", eff:"28.06.2025", d:"22.07.2021", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.gesetze-im-internet.de/bfsg/",
+       ti:{de:"Barrierefreiheitsstärkungsgesetz verkündet, Anwendung ab 28.06.2025",en:"Accessibility Strengthening Act promulgated, applies from 28 Jun 2025"},
+       s:{de:"Setzt den European Accessibility Act (RL (EU) 2019/882) um. Bankdienstleistungen für Verbraucher, Zahlungsterminals und Geldautomaten müssen die Barrierefreiheitsanforderungen erfüllen; Verstöße können mit Bußgeldern bis 100.000 Euro, Untersagung und Verbandsklagen sanktioniert werden. Übergangsfristen gelten für bereits eingesetzte Terminals.",
+          en:"Transposes the European Accessibility Act (Directive (EU) 2019/882). Consumer banking services, payment terminals and ATMs must meet the accessibility requirements; breaches can be sanctioned with fines of up to 100,000 euros, prohibition orders and collective actions. Transition periods apply to terminals already in use."}}
+    ]}
 ];
 
 /** Zwei kurze Absätze je Rahmenwerk für die aufklappbare Sektion auf der Detailseite. */
@@ -762,6 +1103,86 @@ export const ABOUT_LONG: Record<string, [Txt, Txt]> = {
      en:"The Whistleblower Protection Act obliges employers with 50 or more staff — financial firms regardless of size — to operate internal reporting channels through which breaches can be reported confidentially, and on request anonymously."},
     {de:"Hinweisgebende Personen sind vor Repressalien wie Kündigung oder Benachteiligung geschützt; bei Verstößen greift eine Beweislastumkehr zugunsten der meldenden Person. Eingänge sind fristgebunden zu bestätigen und zu bearbeiten sowie datenschutzkonform zu dokumentieren.",
      en:"Reporting persons are protected against retaliation such as dismissal or disadvantage; in disputes, the burden of proof shifts in their favour. Reports must be acknowledged and processed within set deadlines and documented in line with data protection law."}],
+  zagmarisk: [
+    {de:"Mit dem Rundschreiben 07/2024 (BA) hat die BaFin erstmals eigene Mindestanforderungen an das Risikomanagement von Zahlungs- und E-Geld-Instituten aufgestellt. Sie folgen dem Aufbau der Banken-MaRisk mit einem Allgemeinen Teil (Organisation, Risikosteuerung, Auslagerung, IT) und Besonderen Teilen, sind aber auf die Geschäftsmodelle von ZAG-Instituten zugeschnitten: Sicherung von Kundengeldern, Betrugsprävention, Sicherheitsvorfälle, Haftungsrisiken, Kundenbeschwerden und Agentensteuerung.",
+     en:"With Circular 07/2024 (BA), BaFin for the first time set out standalone minimum risk management requirements for payment and e-money institutions. They follow the structure of the banking MaRisk with a general part (organisation, risk control, outsourcing, IT) and special parts, but are tailored to ZAG business models: safeguarding of client funds, fraud prevention, security incidents, liability risks, customer complaints and agent management."},
+    {de:"Rechtsgrundlage ist § 27 Abs. 1 ZAG; daneben konkretisiert das Rundschreiben die Sicherungsanforderungen der §§ 17, 18 ZAG und die Auslagerungsregeln des § 26 ZAG. Die früheren IT-Anforderungen (ZAIT) wurden mit dem Geltungsbeginn von DORA am 17.01.2025 aufgehoben, sodass ZAG-MaRisk und DORA gemeinsam den Rahmen für Governance und operationelle Resilienz bilden.",
+     en:"The legal basis is § 27(1) ZAG; the circular also specifies the safeguarding requirements of §§ 17, 18 ZAG and the outsourcing rules of § 26 ZAG. The former IT requirements (ZAIT) were repealed when DORA became applicable on 17 Jan 2025, so ZAG-MaRisk and DORA together form the framework for governance and operational resilience."}],
+  zag: [
+    {de:"Das ZAG bestimmt, welche Tätigkeiten erlaubnispflichtige Zahlungsdienste sind: Ein- und Auszahlungsgeschäft, Zahlungsgeschäft mit und ohne Kreditgewährung, Akquisitionsgeschäft (Issuing und Acquiring), Finanztransfergeschäft, Zahlungsauslöse- und Kontoinformationsdienste sowie das E-Geld-Geschäft. Der Negativkatalog des § 2 ZAG nimmt unter anderem Handelsvertreter, begrenzte Netze und rein technische Infrastrukturdienste aus. Reine Kontoinformationsdienste werden nur registriert (§ 34 ZAG). Die BaFin erläutert die Abgrenzung in ihrem Merkblatt zum ZAG (Stand Juli 2024).",
+     en:"The ZAG defines which activities are payment services requiring authorisation: cash placement and withdrawal, payment transactions with and without credit, acquiring and issuing, money remittance, payment initiation and account information services, and e-money business. The negative list in § 2 ZAG exempts, among others, commercial agents, limited networks and purely technical infrastructure services. Pure account information services are only registered (§ 34 ZAG). BaFin explains the delineation in its guidance note on the ZAG (as of July 2024)."},
+    {de:"In der laufenden Aufsicht stehen Eigenmittel nach der ZAG-Instituts-Eigenmittelverordnung, die Sicherung entgegengenommener Gelder nach § 17 ZAG, die Einbindung und Anzeige von Agenten, Auslagerungen nach § 26 ZAG sowie die Anzeige- und Meldepflichten der ZAG-Anzeigenverordnung und der ZAG-Monatsausweisverordnung im Mittelpunkt. Hinzu kommen die jährliche Bewertung operationeller und sicherheitsrelevanter Risiken, die Meldung schwerwiegender Vorfälle und die Betrugsstatistik nach der Delegierten Verordnung (EU) 2018/389.",
+     en:"Ongoing supervision centres on own funds under the ZAG own funds ordinance, safeguarding of received funds under § 17 ZAG, the engagement and notification of agents, outsourcing under § 26 ZAG, and the notification and reporting duties of the ZAG notification ordinance and the monthly return ordinance. In addition, institutions must assess operational and security risks annually, report major incidents and submit fraud statistics under Delegated Regulation (EU) 2018/389."}],
+  macomp: [
+    {de:"Die MaComp bündeln die Verwaltungspraxis der BaFin zu den Organisations- und Wohlverhaltensregeln des WpHG für Wertpapierdienstleistungsunternehmen. Der Allgemeine Teil regelt die Compliance-Funktion: Stellung und Unabhängigkeit des Compliance-Beauftragten, Überwachungsplan, Berichterstattung an Geschäftsleitung und Aufsichtsorgan sowie die Einbindung in Neuprodukt- und Auslagerungsprozesse.",
+     en:"The MaComp consolidate BaFin's administrative practice on the WpHG organisational and conduct rules for investment services firms. The general part governs the compliance function: position and independence of the compliance officer, monitoring plan, reporting to management and the supervisory body, and involvement in new product and outsourcing processes."},
+    {de:"Die Besonderen Teile übersetzen ESMA-Leitlinien in konkrete Anforderungen, etwa zu Produktüberwachung (BT 5), Geeignetheitsprüfung (BT 7), Zuwendungen, Aufzeichnung von Telefongesprächen und Mitarbeitergeschäften. Die BaFin aktualisiert die MaComp laufend, zuletzt im September 2024 zur Berücksichtigung von Nachhaltigkeitspräferenzen.",
+     en:"The special parts translate ESMA guidelines into concrete requirements, for example on product governance (BT 5), suitability assessment (BT 7), inducements, recording of telephone conversations and personal transactions. BaFin updates the MaComp on an ongoing basis, most recently in September 2024 to reflect sustainability preferences."}],
+  instvergv: [
+    {de:"Die Institutsvergütungsverordnung konkretisiert § 25a KWG: Vergütungssysteme müssen auf die Strategie ausgerichtet sein und dürfen keine Anreize zu unangemessenen Risiken setzen. Bedeutende Institute identifizieren Risikoträger, deren variable Vergütung zeitlich gestreckt, teilweise in Instrumenten gewährt und im Fall von Fehlverhalten zurückgefordert wird; ein Vergütungskontrollausschuss und ein Vergütungsbeauftragter überwachen die Angemessenheit.",
+     en:"The remuneration ordinance specifies § 25a KWG: pay systems must be aligned with strategy and must not incentivise excessive risk-taking. Significant institutions identify material risk takers whose variable pay is deferred, partly paid in instruments and subject to clawback in case of misconduct; a remuneration committee and a remuneration officer monitor appropriateness."},
+    {de:"Die Verordnung setzt die Vergütungsvorgaben der CRD und die EBA-Leitlinien zu soliden Vergütungspolitiken um; für Wertpapierinstitute gilt die parallele WpI-Vergütungsverordnung. Anpassungen aus CRD VI und der Bürokratieentlastung wurden 2026 nachgezogen. Vergütungsberichte sind jährlich offenzulegen.",
+     en:"The ordinance implements the CRD remuneration provisions and the EBA guidelines on sound remuneration policies; investment firms fall under the parallel WpI remuneration ordinance. Adjustments from CRD VI and the bureaucracy relief package followed in 2026. Remuneration reports must be disclosed annually."}],
+  sanctions: [
+    {de:"EU-Sanktionsverordnungen gelten unmittelbar und verpflichten alle Unternehmen, Gelder und wirtschaftliche Ressourcen gelisteter Personen einzufrieren und ihnen nichts bereitzustellen. Für Finanzinstitute bedeutet das laufendes Screening von Kunden, Zahlungen und Geschäftspartnern gegen die konsolidierte EU-Sanktionsliste sowie die unverzügliche Meldung eingefrorener Gelder an das Servicezentrum Finanzsanktionen der Bundesbank.",
+     en:"EU sanctions regulations apply directly and oblige all companies to freeze funds and economic resources of listed persons and to make nothing available to them. For financial institutions this means ongoing screening of customers, payments and counterparties against the consolidated EU sanctions list and prompt reporting of frozen funds to the Bundesbank's Financial Sanctions Service Centre."},
+    {de:"Verstöße sind nach dem Außenwirtschaftsgesetz strafbar oder bußgeldbewehrt. Mit den Sanktionsdurchsetzungsgesetzen wurde die Zentralstelle für Sanktionsdurchsetzung geschaffen und die Ermittlungs- und Meldeinfrastruktur ausgebaut; die Sanktionspakete gegen Russland haben Umfang und Änderungsfrequenz der Vorgaben deutlich erhöht.",
+     en:"Breaches are criminal or administrative offences under the Foreign Trade and Payments Act. The Sanctions Enforcement Acts created the Central Office for Sanctions Enforcement and expanded the investigation and reporting infrastructure; the sanctions packages against Russia have markedly increased the scope and frequency of change."}],
+  tfr: [
+    {de:"Die Geldtransfer-Verordnung verpflichtet Zahlungsdienstleister, jeden Geldtransfer mit vollständigen Angaben zu Auftraggeber und Begünstigtem zu versehen, diese Angaben zu prüfen und bei fehlenden Daten den Transfer zurückzuweisen oder auszusetzen. Sie ist das Werkzeug, mit dem Zahlungsketten für die Geldwäscheprävention rückverfolgbar bleiben.",
+     en:"The Transfer of Funds Regulation obliges payment service providers to accompany every transfer with complete information on payer and payee, to verify that information and to reject or suspend transfers with missing data. It is the tool that keeps payment chains traceable for anti-money-laundering purposes."},
+    {de:"Mit der Neufassung 2023 gilt die sogenannte Travel Rule auch für Kryptowertetransfers: Anbieter von Kryptowerte-Dienstleistungen müssen Angaben zu Absender und Empfänger erheben, weitergeben und bei Transfers mit nicht gehosteten Wallets zusätzliche Prüfungen vornehmen. Die EBA hat dazu Leitlinien zur Umsetzung veröffentlicht.",
+     en:"With the 2023 recast, the so-called travel rule also applies to transfers of crypto-assets: crypto-asset service providers must collect and transmit originator and beneficiary information and carry out additional checks for transfers involving self-hosted wallets. The EBA has issued guidelines on implementation."}],
+  dgsd: [
+    {de:"Die Einlagensicherungsrichtlinie garantiert jedem Einleger 100.000 Euro je Institut und legt Beitragspflichten, Zielausstattung und Auszahlungsfristen der Sicherungssysteme fest. In Deutschland setzt das Einlagensicherungsgesetz die Vorgaben um; CRR-Kreditinstitute müssen ihre Einleger über Umfang und Grenzen des Schutzes informieren.",
+     en:"The Deposit Guarantee Schemes Directive guarantees every depositor 100,000 euros per institution and sets contribution duties, target funding levels and payout deadlines for the schemes. In Germany the Deposit Guarantee Act transposes the rules; CRR credit institutions must inform their depositors about the scope and limits of protection."},
+    {de:"Das 2026 im Amtsblatt veröffentlichte CMDI-Paket reformiert Einlagensicherung und Abwicklung gemeinsam: Der Schutzumfang wird erweitert, die Einlegerhierarchie in der Insolvenz angepasst und der Einsatz von Sicherungsmitteln in der Abwicklung erleichtert. Die Änderungen sind nach 24 Monaten Übergangsfrist anzuwenden.",
+     en:"The CMDI package published in the Official Journal in 2026 reforms deposit insurance and resolution together: coverage is extended, the depositor hierarchy in insolvency is adjusted and the use of guarantee scheme funds in resolution is facilitated. The changes apply after a 24-month transition period."}],
+  prospectus: [
+    {de:"Wer Wertpapiere öffentlich anbietet oder zum Handel an einem geregelten Markt zulassen lässt, braucht grundsätzlich einen von der BaFin gebilligten Prospekt. Die Prospektverordnung regelt Inhalt, Format, Zusammenfassung, Nachträge und Haftung; unterhalb bestimmter Schwellen genügen Wertpapier-Informationsblätter nach dem WpPG.",
+     en:"Anyone offering securities to the public or seeking admission to trading on a regulated market generally needs a prospectus approved by BaFin. The Prospectus Regulation governs content, format, summary, supplements and liability; below certain thresholds, securities information sheets under the WpPG suffice."},
+    {de:"Der EU Listing Act von 2024 vereinfacht das Regime: höhere Schwellen für prospektfreie Angebote, standardisierte und kürzere Prospekte, Erleichterungen für Sekundäremissionen sowie flankierende Änderungen an Marktmissbrauchsverordnung und MiFIR. Für Emissionsbegleiter ändern sich damit Prüf- und Dokumentationsprozesse.",
+     en:"The 2024 EU Listing Act simplifies the regime: higher thresholds for prospectus-exempt offers, standardised and shorter prospectuses, relief for secondary issuances and accompanying changes to the Market Abuse Regulation and MiFIR. For underwriters this changes review and documentation processes."}],
+  csdr: [
+    {de:"Die Zentralverwahrerverordnung regelt neben der Zulassung von Zentralverwahrern die Abwicklungsdisziplin: Geldbußen bei gescheiterten Abwicklungen, Meldung von Abwicklungsausfällen und die Berichterstattung über internalisierte Abwicklung. Depotbanken und Handelsteilnehmer müssen ihre Prozesse entsprechend ausrichten.",
+     en:"Beyond authorising central securities depositories, the CSDR governs settlement discipline: cash penalties for settlement fails, reporting of fails and reporting on internalised settlement. Custodians and trading participants must align their processes accordingly."},
+    {de:"Ab dem 11.10.2027 verkürzt sich der verbindliche Abwicklungszyklus in der EU von T+2 auf T+1. Das erfordert beschleunigte Abgleich-, Bestätigungs- und Finanzierungsprozesse am Handelstag, angepasste Cut-off-Zeiten und die Koordination mit Großbritannien und der Schweiz, die zeitgleich umstellen.",
+     en:"From 11 Oct 2027 the mandatory settlement cycle in the EU shortens from T+2 to T+1. This requires accelerated matching, confirmation and funding processes on trade date, adjusted cut-off times and coordination with the UK and Switzerland, which switch at the same time."}],
+  crs: [
+    {de:"Finanzinstitute müssen die steuerliche Ansässigkeit ihrer Kontoinhaber feststellen und meldepflichtige Konten jährlich an das Bundeszentralamt für Steuern melden: nach dem Common Reporting Standard über das Finanzkonten-Informationsaustauschgesetz und für US-Personen nach dem FATCA-Abkommen. Sorgfaltspflichten bei Kontoeröffnung und Selbstauskünfte sind dafür fest im Onboarding zu verankern.",
+     en:"Financial institutions must determine the tax residency of their account holders and report reportable accounts annually to the Federal Central Tax Office: under the Common Reporting Standard via the Financial Account Information Exchange Act and, for US persons, under the FATCA agreement. Due diligence at account opening and self-certifications must be embedded in onboarding."},
+    {de:"Mit DAC8 und dem Kryptowerte-Steuertransparenzgesetz gelten seit 2026 vergleichbare Sorgfalts- und Meldepflichten für Anbieter von Kryptowerte-Dienstleistungen; zugleich wurde der CRS auf E-Geld und digitales Zentralbankgeld ausgeweitet. Erste Meldungen für das Jahr 2026 sind 2027 fällig.",
+     en:"With DAC8 and the Crypto-Asset Tax Transparency Act, comparable due diligence and reporting duties apply to crypto-asset service providers since 2026; at the same time the CRS was extended to e-money and central bank digital currencies. First reports for 2026 are due in 2027."}],
+  fida: [
+    {de:"FiDA soll den Kontozugang der PSD2 auf weitere Finanzdaten ausdehnen: Hypotheken, Kredite, Spar- und Anlageprodukte, Versicherungen und Altersvorsorge. Dateninhaber müssten Kundendaten auf Wunsch der Kunden über Schnittstellen mit zugelassenen Datennutzern teilen, organisiert in Datenaustauschsystemen mit Vergütungs- und Haftungsregeln.",
+     en:"FiDA is meant to extend PSD2 account access to further financial data: mortgages, loans, savings and investment products, insurance and pensions. Data holders would have to share customer data at the customer's request with authorised data users via interfaces, organised in data-sharing schemes with compensation and liability rules."},
+    {de:"Der Kommissionsvorschlag stammt aus dem Juni 2023. Parlament und Rat haben ihre Positionen 2024 festgelegt, der Trilog ruht jedoch seit Sommer 2025; mehrere Mitgliedstaaten drängen nicht auf einen Abschluss. Bei einer Verabschiedung wären Übergangsfristen von 18 bis 24 Monaten zu erwarten.",
+     en:"The Commission proposal dates from June 2023. Parliament and Council adopted their positions in 2024, but the trilogue has been on hold since summer 2025; several member states are not pushing for a conclusion. If adopted, transition periods of 18 to 24 months are to be expected."}],
+  zkg: [
+    {de:"Das Zahlungskontengesetz gibt jedem Verbraucher mit rechtmäßigem Aufenthalt in der EU einen Anspruch auf ein Basiskonto bei jedem Institut, das Zahlungskonten für Verbraucher anbietet; Ablehnungen sind nur aus gesetzlich benannten Gründen zulässig und können bei der BaFin überprüft werden. Die Kontowechselhilfe verpflichtet altes und neues Institut zu einem standardisierten Wechselprozess mit festen Fristen.",
+     en:"The Payment Accounts Act gives every consumer legally resident in the EU a right to a basic account at any institution offering consumer payment accounts; refusals are permitted only on statutory grounds and can be reviewed by BaFin. The account switching service obliges old and new institution to a standardised switching process with fixed deadlines."},
+    {de:"Entgeltinformation vor Vertragsschluss und jährliche Entgeltaufstellung müssen die standardisierten EU-Begriffe verwenden; die BaFin überwacht die Einhaltung und kann Basiskontoentgelte auf Angemessenheit prüfen. Für Compliance sind vor allem Ablehnungsprozesse, Fristenkontrolle beim Kontowechsel und die Vollständigkeit der Entgeltdokumente relevant.",
+     en:"The pre-contractual fee information document and the annual statement of fees must use the standardised EU terminology; BaFin monitors compliance and can review basic account fees for reasonableness. For compliance, the key points are refusal processes, deadline control in account switching and completeness of fee documents."}],
+  interchange: [
+    {de:"Die Interbankenentgelte-Verordnung deckelt seit Dezember 2015 die Entgelte, die der Acquirer an den kartenausgebenden Zahlungsdienstleister zahlt: 0,2 Prozent bei Verbraucher-Debitkarten und 0,3 Prozent bei Verbraucher-Kreditkarten. Firmenkarten und Drei-Parteien-Systeme sind teilweise ausgenommen.",
+     en:"Since December 2015 the Interchange Fee Regulation caps the fees the acquirer pays to the card-issuing payment service provider: 0.2 percent for consumer debit cards and 0.3 percent for consumer credit cards. Commercial cards and three-party schemes are partly exempt."},
+    {de:"Daneben enthält sie Geschäftsregeln: Trennung von Kartensystem und Abwicklungsdienstleister, Verbot von Gebietsbeschränkungen bei Lizenzen, Wahlfreiheit der Zahlungsmarke am Terminal, Verbot der Pflicht zur Akzeptanz aller Karten sowie aufgeschlüsselte Entgeltinformation für Händler. Die Einhaltung überwacht in Deutschland die BaFin.",
+     en:"It also sets business rules: separation of scheme and processing entity, ban on territorial licensing restrictions, choice of payment brand at the terminal, ban on honour-all-cards obligations and itemised fee information for merchants. In Germany, compliance is monitored by BaFin."}],
+  complaints: [
+    {de:"Beschwerden sind ein aufsichtlich vorgeschriebener Frühwarnindikator: Institute müssen eine Beschwerdemanagementfunktion einrichten, jede Beschwerde in einem internen Register erfassen, sie objektiv und fristgerecht bearbeiten und die Beschwerdeführer über Verfahren, Ergebnis und außergerichtliche Streitbeilegung informieren. Die Auswertung der Beschwerden fließt in die Produktüberwachung und die Berichterstattung an die Geschäftsleitung ein.",
+     en:"Complaints are a supervisory early-warning indicator: institutions must set up a complaints management function, record every complaint in an internal register, handle it objectively and within deadlines, and inform complainants about the procedure, outcome and out-of-court dispute resolution. Complaints analysis feeds into product governance and reporting to management."},
+    {de:"Rechtlicher Rahmen sind die Leitlinien des Joint Committee der ESAs (JC 2014/43, erweitert durch JC 2018/35) und die EIOPA-Leitlinien für Versicherer und Vermittler. In Deutschland setzt sie das gemeinsame BaFin-Rundschreiben 06/2018 für Kreditinstitute, Zahlungs- und E-Geld-Institute, KVGen und Wohnimmobilienkreditgeber um; für Wertpapierdienstleistungsunternehmen gilt BT 12 MaComp, für Versicherer die Sammelverfügung der BaFin.",
+     en:"The legal framework consists of the ESAs' Joint Committee guidelines (JC 2014/43, extended by JC 2018/35) and the EIOPA guidelines for insurers and intermediaries. In Germany, BaFin's joint circular 06/2018 implements them for credit institutions, payment and e-money institutions, fund managers and mortgage lenders; investment services firms follow BT 12 MaComp and insurers BaFin's general ruling."}],
+  lksg: [
+    {de:"Das Lieferkettensorgfaltspflichtengesetz verlangt von Unternehmen ab 1.000 Beschäftigten ein Risikomanagement für Menschenrechts- und Umweltrisiken im eigenen Geschäftsbereich und bei unmittelbaren Zulieferern: Risikoanalyse, Grundsatzerklärung, Präventions- und Abhilfemaßnahmen, ein Beschwerdeverfahren und Dokumentation. Für Finanzinstitute zählen auch Kunden und Portfoliounternehmen unter bestimmten Voraussetzungen zur Lieferkette.",
+     en:"The Supply Chain Due Diligence Act requires companies with 1,000 or more employees to run a risk management system for human rights and environmental risks in their own operations and at direct suppliers: risk analysis, policy statement, preventive and remedial measures, a complaints procedure and documentation. For financial institutions, clients and portfolio companies can under certain conditions form part of the supply chain."},
+    {de:"Auf EU-Ebene setzt die CSDDD ähnliche Pflichten für sehr große Unternehmen; ihre Anwendung wurde 2025 auf Juli 2028 verschoben und inhaltliche Erleichterungen werden im Omnibus-Verfahren verhandelt. Die Bundesregierung will das LkSG durch ein CSDDD-Umsetzungsgesetz ersetzen; bis dahin soll eine Änderung die Berichtspflicht streichen und Bußgelder auf schwere Verstöße beschränken.",
+     en:"At EU level the CSDDD sets similar duties for very large companies; its application was postponed in 2025 to July 2028 and substantive simplifications are being negotiated in the omnibus procedure. The federal government intends to replace the LkSG with a CSDDD implementation act; until then an amendment is to remove the reporting duty and limit fines to serious breaches."}],
+  bfsg: [
+    {de:"Das Barrierefreiheitsstärkungsgesetz setzt den European Accessibility Act um und erfasst ausdrücklich Bankdienstleistungen für Verbraucher: Kontoführung, Kredite, Zahlungsdienste sowie die zugehörigen Websites, Apps, Geldautomaten und Zahlungsterminals. Informationen müssen wahrnehmbar, bedienbar, verständlich und robust sein, Vertragsunterlagen in verständlicher Sprache vorliegen.",
+     en:"The Accessibility Strengthening Act transposes the European Accessibility Act and explicitly covers consumer banking services: account management, credit, payment services and the associated websites, apps, ATMs and payment terminals. Information must be perceivable, operable, understandable and robust, and contract documents must be provided in plain language."},
+    {de:"Seit dem 28.06.2025 dürfen neue Dienstleistungen nur noch barrierefrei erbracht werden; für bereits eingesetzte Selbstbedienungsterminals gelten Übergangsfristen. Die Marktüberwachungsbehörden der Länder können Bußgelder verhängen und Dienstleistungen untersagen, Verbände können klagen.",
+     en:"Since 28 Jun 2025 new services may only be provided in an accessible form; transition periods apply to self-service terminals already in use. The market surveillance authorities of the Länder can impose fines and prohibit services, and associations can bring collective actions."}],
   mifid: [
     {de:"MiFID II regelt das Wertpapiergeschäft entlang der gesamten Kundenbeziehung: Zielmarktbestimmung in der Produktgovernance, Geeignetheits- und Angemessenheitsprüfung, Offenlegung sämtlicher Kosten und Zuwendungen sowie Aufzeichnungspflichten inklusive Taping.",
      en:"MiFID II governs investment business across the entire client relationship: target market definition in product governance, suitability and appropriateness assessment, disclosure of all costs and inducements, and record-keeping including taping."},
@@ -837,6 +1258,16 @@ export const ABOUT_LONG: Record<string, [Txt, Txt]> = {
      en:"Solvency II is the risk-based supervisory regime for insurers with three pillars: quantitative capital requirements (SCR/MCR) based on market-consistent valuation, qualitative governance requirements including ORSA, and extensive reporting and disclosure duties."},
     {de:"Die laufende Überprüfung passt unter anderem Zinsextrapolation, Volatilitätsanpassung und Proportionalitätsregeln an und führt neue Vorgaben zu Nachhaltigkeitsrisiken und makroprudenzieller Aufsicht ein. Parallel entsteht mit der IRRD ein eigenes Sanierungs- und Abwicklungsregime für Versicherer.",
      en:"The ongoing review adjusts interest rate extrapolation, the volatility adjustment and proportionality rules, and introduces new requirements on sustainability risk and macroprudential supervision. In parallel, the IRRD creates a dedicated recovery and resolution regime for insurers."}],
+  absfinag: [
+    {de:"Das Absatzfinanzierungsaufsichtsgesetz ist Teil des Gesetzes zur Umsetzung der Verbraucherkreditrichtlinie 2023 (CCD II, RL (EU) 2023/2225), das der Bundestag am 17.04.2026 beschlossen hat. Es unterwirft erstmals Unternehmen der Aufsicht der BaFin, die Verbrauchern ohne Banklizenz Kredite in Form von Zahlungsaufschüben, Ratenzahlungen oder Rechnungskauf gewähren – typischerweise Händler, Plattformen und Buy-now-pay-later-Anbieter. Diese Absatzfinanzierer müssen sich bei der BaFin registrieren und die Wohlverhaltens- und Kreditwürdigkeitsvorgaben der CCD II einhalten; Kreditinstitute, die vorab die Abtretung der Zahlungsansprüche mit Absatzfinanzierern vereinbaren, unterliegen einer Meldepflicht nach § 6 Absatz 2 AbsFinAG.",
+     en:"The Sales Financing Supervision Act (AbsFinAG) is part of the act implementing the 2023 Consumer Credit Directive (CCD II, Directive (EU) 2023/2225), adopted by the Bundestag on 17 April 2026. For the first time it brings under BaFin supervision companies that grant consumer credit without a banking licence in the form of deferred payment, instalments or invoice purchase – typically merchants, platforms and buy-now-pay-later providers. These sales-financing providers must register with BaFin and comply with the CCD II conduct and creditworthiness requirements; credit institutions that agree in advance to take assignment of the payment claims are subject to a reporting duty under § 6(2) AbsFinAG."},
+    {de:"Ausgenommen sind insbesondere Kleinst-, kleine und mittlere Unternehmen, die zinsfreie Zahlungsaufschübe mit nur begrenzten Kosten ausschließlich für den Erwerb ihrer eigenen Waren oder Dienstleistungen gewähren (§ 4 AbsFinAG). Vorsätzliche oder fahrlässige Verstöße können mit Bußgeldern bis 500.000 Euro geahndet werden (§ 8 AbsFinAG). Die neuen Regeln gelten ab dem 20.11.2026; für bestehende Anbieter sieht § 10 AbsFinAG eine Übergangsfrist von bis zu zwölf Monaten, längstens bis zum 20.11.2027, vor. Die BaFin hat am 31.08.2026 einen Entscheidungsbaum zur Registrierungs- und Meldepflicht sowie die Antrags- und Meldeformulare veröffentlicht.",
+     en:"Exempt are in particular micro, small and medium-sized enterprises that grant interest-free deferrals with only limited costs exclusively for the purchase of their own goods or services (§ 4 AbsFinAG). Intentional or negligent breaches can be fined up to EUR 500,000 (§ 8 AbsFinAG). The new rules apply from 20 November 2026; for existing providers § 10 AbsFinAG provides a transition period of up to twelve months, ending no later than 20 November 2027. On 31 August 2026 BaFin published a decision tree on registration and reporting duties together with the application and reporting forms."}],
+  irrd: [
+    {de:"Die Insurance Recovery and Resolution Directive (RL (EU) 2025/1 vom 27.11.2024, veröffentlicht im Amtsblatt am 08.01.2025) schafft erstmals einen EU-weit harmonisierten Rahmen für die Sanierung und Abwicklung von Versicherungs- und Rückversicherungsunternehmen nach dem Vorbild der BRRD für Banken. Versicherer, die einen wesentlichen Marktanteil abdecken, müssen präventive Sanierungspläne aufstellen; nationale Abwicklungsbehörden erstellen Abwicklungspläne, prüfen die Abwicklungsfähigkeit und erhalten Instrumente wie Run-off, Übertragung von Portfolios und Herabschreibung oder Umwandlung von Kapitalinstrumenten.",
+     en:"The Insurance Recovery and Resolution Directive (Directive (EU) 2025/1 of 27 November 2024, published in the Official Journal on 8 January 2025) creates for the first time an EU-wide harmonised framework for the recovery and resolution of insurance and reinsurance undertakings, modelled on the BRRD for banks. Insurers covering a significant share of the market must draw up pre-emptive recovery plans; national resolution authorities prepare resolution plans, assess resolvability and receive tools such as run-off, portfolio transfer and the write-down or conversion of capital instruments."},
+    {de:"Die Mitgliedstaaten müssen die Richtlinie bis zum 29.01.2027 umsetzen; die Vorschriften gelten ab dem 30.01.2027. EIOPA konkretisiert das Regime durch technische Regulierungsstandards und Leitlinien – etwa zu den Kriterien für die Identifizierung kritischer Funktionen, zur Bewertung im Abwicklungsfall und zum Inhalt der Sanierungs- und Abwicklungspläne – und hat dazu ab 2025 mehrere Konsultationen durchgeführt. In Deutschland ist die BaFin als Abwicklungsbehörde für den Versicherungssektor vorgesehen; die Umsetzung erfolgt im VAG.",
+     en:"Member States must transpose the directive by 29 January 2027; its provisions apply from 30 January 2027. EIOPA fleshes out the regime through regulatory technical standards and guidelines – for instance on the criteria for identifying critical functions, on valuation in resolution and on the content of recovery and resolution plans – and has run several consultations on these since 2025. In Germany, BaFin is envisaged as the resolution authority for the insurance sector, with transposition through the VAG."}],
   idd: [
     {de:"Die IDD harmonisiert den Versicherungsvertrieb in der EU: Vermittler und Versicherer müssen ehrlich, redlich und im bestmöglichen Kundeninteresse handeln, Wünsche und Bedürfnisse prüfen und vor Abschluss ein Produktinformationsblatt aushändigen.",
      en:"The IDD harmonises insurance distribution in the EU: intermediaries and insurers must act honestly, fairly and in the customer's best interest, assess demands and needs, and provide a product information document before conclusion."},

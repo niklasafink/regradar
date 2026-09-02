@@ -31,7 +31,7 @@ function buildHits(q: string, lang: "de" | "en", provider?: string): Hit[] {
   const ups: { hit: Hit; d: Date }[] = [];
 
   for (const f of FRAMEWORKS) {
-    const fwText = `${f.n.de} ${f.n.en} ${f.ref}`;
+    const fwText = `${f.n.de} ${f.n.en} ${f.ref} ${f.alias ?? ""}`;
     if (norm(fwText).includes(needle)) {
       fws.push({
         key: `f-${f.id}`,

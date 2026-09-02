@@ -50,6 +50,48 @@ class FrameworkClassification(unittest.TestCase):
         from regradar.webexport import _classify
         self.assertEqual(_classify("Konsultation zur KAMaRisk – Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften"), "aifmd2")
 
+    def test_zag_marisk(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Rundschreiben 07/2024 (BA) – Mindestanforderungen an das Risikomanagement von ZAG-Instituten – ZAG-MaRisk"), "zagmarisk")
+        self.assertEqual(_classify("Erstmals MaRisk für Zahlungs- und E-Geld-Institute"), "zagmarisk")
+
+    def test_zag_merkblatt_vor_psd3(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Merkblatt – Hinweise zum Zahlungsdiensteaufsichtsgesetz (ZAG)"), "zag")
+        self.assertEqual(_classify("PSD3: Rat legt Verhandlungsposition zur Zahlungsdiensterichtlinie fest"), "psd3")
+
+    def test_zkg_beschwerde_lieferkette(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("BaFin: Anspruch auf ein Basiskonto nach dem Zahlungskontengesetz"), "zkg")
+        self.assertEqual(_classify("BaFin aktualisiert Rundschreiben 06/2018 zum Beschwerdemanagement"), "complaints")
+        self.assertEqual(_classify("Bundestag berät Änderung des Lieferkettensorgfaltspflichtengesetzes"), "lksg")
+        self.assertEqual(_classify("Kommission veröffentlicht Bericht zur Interchange Fee Regulation für Kartenzahlungen"), "interchange")
+        self.assertEqual(_classify("EBA final report on IFR own funds requirements for investment firms"), "ifr")
+
+    def test_macomp_und_sanktionen(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("BaFin aktualisiert MaComp-Rundschreiben"), "macomp")
+        self.assertEqual(_classify("EU beschließt 19. Sanktionspaket gegen Russland"), "sanctions")
+
+    def test_absfinag_irrd_taxonomie(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Formular für Kreditgeber zum Antrag auf Registrierung nach dem AbsFinAG"), "absfinag")
+        self.assertEqual(_classify("Entscheidungsbaum zu Registrierungs- und Meldepflichten nach dem Absatzfinanzierungsaufsichtsgesetz"), "absfinag")
+        self.assertEqual(_classify("Consultation on the proposal for Guidelines on criteria for the identification of critical functions - IRRD"), "irrd")
+        self.assertEqual(_classify("EBA consults on resolvability under BRRD"), "brrd")
+        self.assertEqual(_classify("Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act"), "sfdr")
+
+    def test_umgangssprachliche_begriffe(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Kommission veröffentlicht Leitlinien zum EU AI Act für Hochrisiko-KI"), "aiact")
+        self.assertEqual(_classify("EBA publishes KYC guidance on beneficial owners"), "gwg")
+        self.assertEqual(_classify("Bundesbank informiert über neues Sanktionspaket – Sanktionen gegen Russland"), "sanctions")
+        self.assertEqual(_classify("ESMA statement on greenwashing risks"), "sfdr")
+        self.assertEqual(_classify("EIOPA opinion on ORSA supervision of insurance undertakings"), "solvency")
+        self.assertEqual(_classify("EBA consults on LCR and NSFR treatment under the banking package"), "crr3")
+        self.assertEqual(_classify("Bafin: Widerrufsrecht bei Verbraucherdarlehen"), "consumer")
+        self.assertEqual(_classify("Payment Services Regulation: Rat einigt sich auf PSR-Text"), "psd3")
+
 
 class ReferenceExtraction(unittest.TestCase):
     def test_eba_reference(self):

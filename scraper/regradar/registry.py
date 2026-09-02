@@ -345,7 +345,7 @@ SOURCES = [
         "document_types": ["FINAL_REPORT", "CONSULTATION", "OTHER"],
         "poll_interval_minutes": 1440,
         "adapter": "rss",
-        "enabled": 1,
+        "enabled": 0,  # RSS-Feed seit 09/2026 dauerhaft 404 – Quelle deaktiviert
     },
     {
         "source_id": "fsb",
@@ -440,10 +440,6 @@ RSS_FEEDS = {
     "esrb": [
         ("https://www.esrb.europa.eu/rss/press.xml", "OTHER", "en"),
     ],
-    "bis": [
-        # RSS 1.0 (RDF) – Publikationen des Basler Ausschusses
-        ("https://www.bis.org/doclist/bcbspubls.rss", "OTHER", "en"),
-    ],
     "fsb": [
         ("https://www.fsb.org/feed/", "OTHER", "en"),
     ],
@@ -468,4 +464,13 @@ GII_WATCHLIST = {
     "wpig": "Wertpapierinstitutsgesetz (WpIG)",
     "ewpg": "Gesetz über elektronische Wertpapiere (eWpG)",
     "sag": "Sanierungs- und Abwicklungsgesetz (SAG)",
+    "einsig": "Einlagensicherungsgesetz (EinSiG)",
+    "institutsvergv_2014": "Institutsvergütungsverordnung (InstitutsVergV)",
+    "wpivergv": "Wertpapierinstituts-Vergütungsverordnung (WpI-VergV)",
+    "bfsg": "Barrierefreiheitsstärkungsgesetz (BFSG)",
+    "ksttg": "Kryptowerte-Steuertransparenzgesetz (KStTG)",
+    "sanktdg": "Sanktionsdurchsetzungsgesetz (SanktDG)",
+    "awg_2013": "Außenwirtschaftsgesetz (AWG)",
+    "zkg": "Zahlungskontengesetz (ZKG)",
+    "lksg": "Lieferkettensorgfaltspflichtengesetz (LkSG)",
 }

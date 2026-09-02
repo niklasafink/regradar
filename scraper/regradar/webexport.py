@@ -26,51 +26,121 @@ FRAMEWORK_RULES = [
     # Regelwerke – nicht die Banken-MaRisk nach § 25a KWG.
     ("wpimarisk", r"wpi[\s-]*marisk|marisk\b[\s\S]*wertpapierinstitut|wertpapierinstitut[\s\S]*\bmarisk\b"),
     ("aifmd2", r"kamarisk|\bka[\s-]+marisk\b|marisk\b[\s\S]*kapitalverwaltung|kapitalverwaltung[\s\S]*\bmarisk\b"),
+    # ZAG-MaRisk (RS 07/2024 BA) für Zahlungs- und E-Geld-Institute.
+    ("zagmarisk", r"zag[\s-]*marisk|marisk\b[\s\S]*(zag-institut|zahlungsinstitut|e-geld-institut|zahlungs- und e-geld)|"
+                  r"(zag-institut|zahlungsinstitut|e-geld-institut|zahlungs- und e-geld)[\s\S]*\bmarisk\b"),
     ("marisk", r"\bmarisk\b"),
+    ("macomp", r"\bmacomp\b|compliance-funktion|mindestanforderungen an die compliance"),
+    ("instvergv", r"institutsvergütungsverordnung|institutsvergv|wpi-vergv|vergütungsverordnung|"
+                  r"vergütungssystem|remuneration polic|sound remuneration|risikoträger|material risk taker|"
+                 r"\bivv\b|wpi-vergütungsverordnung|vergütungsregel|remuneration guideline"),
     ("anacredit", r"anacredit|kreditdatenstatistik"),
-    ("instant", r"echtzeitüberweisung|instant (payment|credit transfer)|verification of payee"),
+    ("instant", r"echtzeitüberweisung|instant (payment|credit transfer)|verification of payee|"
+               r"\bipr\b|instant payments regulation|sepa instant|sepa-echtzeit"),
     # DLT-Pilotregelung vor MiCA: Kryptowertpapiere/DLT-Marktinfrastrukturen
     # sind Finanzinstrumente und fallen gerade nicht unter MiCA.
     ("dltpilot", r"dlt[\s-]*pilot|pilot[\s-]*regime|pilotregelung|"
                  r"distributed[\s-]*ledger|\bdlt\b|"
                  r"kryptowertpapier|crypto securit|elektronische[sn]? wertpapier|\bewpg\b|"
                  r"tokenisier|tokeni[sz](ed|ation)"),
-    ("mica", r"\bmica\b|kryptowert|crypto-?asset"),
-    ("eltif", r"\beltif\b|euveca"),
-    ("mmf", r"geldmarktfonds|money market fund"),
-    ("ecspr", r"\becspr\b|crowdfunding|crowdinvest|crowdlend|schwarmfinanzier"),
-    ("priips", r"\bpriips\b|basisinformationsblatt|key information document"),
-    ("hinschg", r"hinweisgeber|whistleblow"),
-    ("aiact", r"ki-verordnung|\bai act\b|artificial intelligence act|künstliche intelligenz|\bki-modell|general.purpose ai|\bgpai\b|\b[ak]i[- ]omnibus\b|transparency of ai-generated|\bai office\b|ai-gesetz"),
-    ("eidas2", r"\beidas\b|eudi[- ]wallet|digital identity wallet|elektronische identifizierung|vertrauensdienst|trust service"),
-    ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister"),
-    ("nis2", r"\bnis-?2\b|bsi-gesetz|\bbsig\b"),
+    ("mica", r"\bmica\b|kryptowert|crypto-?asset|"
+            r"\bmicar\b|markets in crypto-?assets|kryptowerte-verordnung|\bcasps?\b|kryptoverwahr|stablecoin|krypto-dienstleist"),
+    ("eltif", r"\beltif\b|euveca|"
+             r"european long-term investment|europäische[rn]? langfristige[rn]? investmentfonds"),
+    ("mmf", r"geldmarktfonds|money market fund|"
+           r"\bmmfr\b|money market"),
+    ("ecspr", r"\becspr\b|crowdfunding|crowdinvest|crowdlend|schwarmfinanzier|"
+             r"schwarmfinanzierungs|crowdfunding-verordnung"),
+    ("priips", r"\bpriips\b|basisinformationsblatt|key information document|"
+              r"\bkids?\b|packaged retail"),
+    ("hinschg", r"hinweisgeber|whistleblow|"
+               r"whistleblower|meldestelle|whistleblowing-richtlinie"),
+    ("complaints", r"beschwerdemanagement|beschwerdeabwicklung|complaints?-handling|complaints? handling|beschwerderegister|"
+                  r"complaints management|beschwerdeverfahren"),
+    ("lksg", r"lieferkette|\blksg\b|\bcsddd\b|supply chain due diligence|sorgfaltspflichten von unternehmen"),
+    ("aiact", r"ki-verordnung|\bai act\b|artificial intelligence act|künstliche intelligenz|\bki-modell|general.purpose ai|\bgpai\b|\b[ak]i[- ]omnibus\b|transparency of ai-generated|\bai office\b|ai-gesetz|"
+             r"\bai-act\b|\bki-vo\b|ki-gesetz|ai regulation|artificial intelligence regulation|\bki-system|hochrisiko-ki|high-risk ai"),
+    ("eidas2", r"\beidas\b|eudi[- ]wallet|digital identity wallet|elektronische identifizierung|vertrauensdienst|trust service|"
+              r"eidas 2|eidas-2|elektronische signatur|electronic signature|qualifizierte[rn]? vertrauensdienst"),
+    ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister|"
+            r"dora-verordnung|ikt-vorfall|ict incident|ict-related incident|threat-led penetration|\btlpt\b|register of information|informationsregister"),
+    ("nis2", r"\bnis-?2\b|bsi-gesetz|\bbsig\b|"
+            r"network and information security|cybersicherheitsrichtlinie|nis-2-umsetzung"),
+    ("fida", r"\bfida\b|financial data access|open finance|zugang zu finanzdaten|"
+            r"fida-verordnung|finanzdatenzugang|financial data sharing"),
+    ("bfsg", r"barrierefreiheit|\bbfsg\b|accessibility act|european accessibility"),
+    ("crs", r"\bdac ?8\b|common reporting standard|finanzkonten-informationsaustausch|\bfkaustg\b|"
+            r"kryptowerte-steuertransparenz|\bksttg\b|\bfatca\b|crypto-asset reporting framework|\bcarf\b"),
+    ("csdr", r"\bcsdr\b|\bt\+1\b|zentralverwahrer|central securities depositor|abwicklungszyklus|settlement cycle|settlement discipline|"
+            r"csdr refit|settlement efficiency|abwicklungseffizienz|wertpapierabwicklung|securities settlement"),
+    ("dgsd", r"einlagensicherung|deposit guarantee|deposit insurance|\bdgsd\b|\beinsig\b|\bcmdi\b|"
+            r"sicherungssystem|entschädigungseinrichtung|einlagensicherungsgesetz|deposit protection"),
+    ("prospectus", r"\bprospekt|prospectus|listing act|wertpapier-informationsblatt"),
+    ("tfr", r"geldtransfer-?verordnung|transfer of funds|travel rule|transfers of crypto|"
+           r"\btfr\b|geldtransferverordnung"),
+    ("sanctions", r"finanzsanktion|financial sanction|sanktionspaket|sanctions package|embargo|"
+                  r"sanktionsdurchsetzung|sanktionsliste|restriktive maßnahmen|restrictive measures|"
+                  r"außenwirtschaftsgesetz|\bawg\b|\bawv\b|einfrieren von geldern|asset freez|"
+                 r"sanktionen gegen|sanctions against|russland-sanktion|russia sanction|\bofac\b|iran-sanktion|iran sanction"),
     ("amla", r"\bamla\b|\bamlar\b|anti-money laundering authority|geldwäscheverordnung"),
-    ("gwg", r"geldwäsche|money laundering|\bgwg\b|\bfiu\b|terrorismusfinanzierung|financial crime"),
-    ("itsrep", r"\bcorep\b|\bfinrep\b|meldewesen|reporting framework|validation rules|meldebögen|taxonomie 4|supervisory reporting"),
-    ("brrd", r"\bbrrd\b|\bmrel\b|abwicklungsfähigkeit|bank recovery|abwicklungsrichtlinie|\bsrb\b|sanierungsplan|sanierungs- und abwicklung|single resolution|resolvability|resolution planning|crisis management|\bcmdi\b"),
+    ("gwg", r"geldwäsche|money laundering|\bgwg\b|\bfiu\b|terrorismusfinanzierung|financial crime|"
+           r"\baml\b|\bamld\b|\bcft\b|anti-money laundering|\bkyc\b|know your customer|wirtschaftlich berechtigt|beneficial owner|transparenzregister|geldwäscherichtlinie"),
+    ("itsrep", r"\bcorep\b|\bfinrep\b|meldewesen|reporting framework|validation rules|meldebögen|taxonomie 4|supervisory reporting|"
+              r"\bdpm\b|reporting taxonomy|meldeverordnung|\bxbrl\b|meldepflichten für institute"),
+    # Versicherungs-Sanierung/-Abwicklung (IRRD) vor der Banken-BRRD.
+    ("irrd", r"\birrd\b|recovery and resolution of insurance|recovery and resolution of \(re\)insurance|"
+             r"insurance recovery and resolution|sanierung und abwicklung von versicherung|"
+             r"versicherungssanierung|pre-emptive recovery plan|präventiver sanierungsplan"),
+    ("brrd", r"\bbrrd\b|\bmrel\b|abwicklungsfähigkeit|bank recovery|abwicklungsrichtlinie|\bsrb\b|sanierungsplan|sanierungs- und abwicklung|single resolution|resolvability|resolution planning|crisis management|\bcmdi\b|"
+            r"bail-in|abwicklungsbehörde|resolution authority|abwicklungsfonds|resolution fund"),
     ("ifr", r"\bifr\b|\bifd\b|wertpapierinstitut"),
-    ("outsourcing", r"auslagerung|outsourcing"),
-    ("mar", r"marktmissbrauch|market abuse|insider"),
+    ("outsourcing", r"auslagerung|outsourcing|"
+                   r"third-party (risk|provider|service)|drittparteien|fremdvergabe"),
+    ("mar", r"marktmissbrauch|market abuse|insider|"
+           r"ad-hoc-publizität|ad-hoc-mitteilung|ad hoc disclosure|marktmanipulation|market manipulation|directors.? dealings|eigengeschäfte von führungskräften"),
     ("emir", r"\bemir\b|otc-derivat|otc derivative|clearingpflicht|clearing obligation|"
              r"central counterpart|\bccps?\b|transaktionsregister|trade repositor|"
-             r"einschusspflicht|margin requirement|active account"),
+             r"einschusspflicht|margin requirement|active account|"
+            r"emir 3|emir-refit|emir refit|derivatemeldung|derivatives reporting|clearing house"),
     ("bmr", r"benchmark-?verordnung|benchmark regulation|referenzwert|"
             r"kritische[nrs]? benchmark|critical benchmark|significant benchmark|"
-            r"\beuribor\b|€str|euro short-term rate"),
-    ("priips", r"\bprospekt"),
-    ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution"),
-    ("psd3", r"\bpsd[23]\b|zahlungsdienst|payment service"),
-    ("aifmd2", r"\baifmd\b|\bkagb\b|\bogaw\b|\bucits\b|investmentfonds|investment fund|kapitalverwaltung|\baif\b"),
-    ("csrd", r"\bcsrd\b|\besrs\b|\bcsddd\b|nachhaltigkeitsbericht|sustainability report|corporate sustainability|lieferkettensorgfalt"),
-    ("sfdr", r"\bsfdr\b|offenlegungsverordnung|sustainab|nachhaltigkeitsbezogen|\besg\b|taxonomie-verordnung|taxonomy regulation"),
-    ("solvency", r"solvency|solvabilität|versicherungsaufsicht|\bvag\b|\biorp\b|occupational retirement|insurance stress test|reinsurance"),
-    ("idd", r"versicherungsvertrieb|insurance distribution"),
+            r"\beuribor\b|€str|euro short-term rate|"
+           r"\blibor\b|\bsofr\b|\bsonia\b|ibor-ablösung|ibor transition"),
+    ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution|"
+             r"wertpapierhandelsgesetz|\bwphg\b|geeignetheit|suitability|product governance|produktfreigabe|zielmarkt|target market|zuwendung|inducement|retail investment strategy|kleinanlegerstrategie|mifid ii|mifid 2"),
+    # Deutsches ZAG-Recht vor dem generischen PSD-Muster: Merkblatt, ZAG-
+    # Verordnungen und Erlaubnisfragen sind nationale Auslegung, keine PSD3.
+    ("zkg", r"zahlungskontengesetz|\bzkg\b|basiskonto|kontowechsel|entgeltinformation|entgeltaufstellung|"
+            r"payment accounts directive|basic payment account|account switching"),
+    ("interchange", r"interbankenentgelt|interchange fee|\bifr\b(?=[\s\S]*(kart|card))"),
+    ("zag", r"\bzag\b|zahlungsdiensteaufsichtsgesetz|zag-anzeigenverordnung|zaganzv|"
+            r"zag-instituts-eigenmittel|\bziev\b|zag-monatsausweis|sicherungsanforderungen|"
+            r"finanztransfergeschäft|kontoinformationsdienst|e-geld-institut|zahlungsinstitut|"
+           r"zahlungsinstitutsgesetz|erlaubnis nach dem zag|zag-erlaubnis|e-geld-geschäft|e-money institution"),
+    ("psd3", r"\bpsd[23]\b|zahlungsdienst|payment service|"
+            r"\bpsr\b|payment services regulation|zahlungsdiensterichtlinie|starke kundenauthentifizierung|strong customer authentication|\bsca\b|open banking|zahlungsauslösedienst"),
+    ("aifmd2", r"\baifmd\b|\bkagb\b|\bogaw\b|\bucits\b|investmentfonds|investment fund|kapitalverwaltung|\baif\b|"
+              r"alternative investment fund|\bkvgs?\b|verwahrstelle|depositar|ogaw-richtlinie|ucits directive|spezialfonds|publikumsfonds|kreditfonds|loan-originating"),
+    ("csrd", r"\bcsrd\b|\besrs\b|nachhaltigkeitsbericht|sustainability report|corporate sustainability report|"
+            r"\bvsme\b|esg-bericht|nachhaltigkeitsberichterstattung|csrd-umsetzung|omnibus.{0,40}nachhaltigkeit"),
+    ("sfdr", r"\bsfdr\b|offenlegungsverordnung|sustainab|nachhaltigkeitsbezogen|\besg\b|taxonomie-verordnung|taxonomy regulation|"
+            r"taxonomy disclosures|taxonomie-offenlegung|taxonomy-related disclosure|taxonomiebezogene|"
+            r"greenwashing|klimarisik|climate risk|eu-taxonomie|eu taxonomy|\bpais?\b|principal adverse impact|nachhaltigkeitspräferenz|sustainability preference"),
+    ("solvency", r"solvency|solvabilität|versicherungsaufsicht|\bvag\b|\biorp\b|occupational retirement|insurance stress test|reinsurance|"
+                r"solvency ii|solvency 2|solvabilität ii|\borsa\b|\bscr\b|solvenzkapital|versicherungsunternehmen|insurance undertaking|rückversicher"),
+    ("idd", r"versicherungsvertrieb|insurance distribution|"
+           r"versicherungsvermittl|insurance intermediar|\bibips?\b|versicherungsanlageprodukt|insurance-based investment|versicherungsmakler"),
     ("ebaict", r"ict (and security )?risk|ikt-risik"),
-    ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement"),
+    ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement|"
+            r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted"),
     # Generische Muster bewusst am Ende, damit Spezialregime zuerst greifen.
-    ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data"),
-    ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|restschuldversicherung|verbrauchervertr|widerrufsinformation|buy.now.pay.later|finanzieller verbraucherschutz"),
+    ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data|"
+             r"privacy|datenschutz-grundverordnung|auftragsverarbeit|datenpanne|data breach|\bdsfa\b|\bdpia\b|\bcookies?\b|einwilligung|consent management"),
+    # Absatzfinanzierungsaufsichtsgesetz (BNPL/Händlerkredite) vor dem
+    # generischen Verbraucherkredit-Muster.
+    ("absfinag", r"absatzfinanzierungsaufsichtsgesetz|\babsfinag\b|absatzfinanzier|\bbnpl\b"),
+    ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|restschuldversicherung|verbrauchervertr|widerrufsinformation|buy.now.pay.later|finanzieller verbraucherschutz|"
+                r"verbraucherschutz|consumer protection|verbraucherkreditrichtlinie|\bccd ?(ii|2)\b|widerrufsrecht|right of withdrawal|prämiensparvertr|kontoentgelt|dispozins|überziehungszins"),
 ]
 
 TYPE_LABELS = {

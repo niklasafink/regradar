@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T13:03:18Z",
+  "generated_at": "2026-09-02T14:00:54Z",
   "sources": [
     {
       "id": "eurlex",
@@ -184,14 +184,6 @@
       "jurisdiction": "EU",
       "access": "RSS",
       "url": "https://www.esrb.europa.eu/"
-    },
-    {
-      "id": "bis",
-      "name": "Basler Ausschuss (BIS/BCBS)",
-      "authority": "BCBS",
-      "jurisdiction": "INT",
-      "access": "RSS",
-      "url": "https://www.bis.org/bcbs/"
     },
     {
       "id": "fsb",
