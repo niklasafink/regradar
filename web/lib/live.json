@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T14:22:11Z",
+  "generated_at": "2026-09-02T13:11:57Z",
   "updates": {
     "amla": [
       {
@@ -1062,6 +1062,115 @@
         "imp": "low"
       }
     ],
+    "sanctions": [
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
+          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
+          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
+        "imp": "low",
+        "refnum": "32026R0513R(01)"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
+          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
+          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
+        "imp": "low",
+        "refnum": "32026R0506R(03)",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
+          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
+          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
+        "imp": "high",
+        "refnum": "C-465/24"
+      },
+      {
+        "d": "26.02.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Schlussanträge des Generalanwalts zur Erfüllung von Ansprüchen russischer Organisationen (C-802/24)",
+          "en": "Advocate General's Opinion on the satisfaction of claims by Russian entities (C-802/24)"
+        },
+        "sl": "advocate-general-s-opinion-in-case-c-802-24-reibel",
+        "s": {
+          "de": "Der Generalanwalt des Europäischen Gerichtshofs (EuGH) hat in seinen Schlussanträgen dargelegt, dass das Verbot, Ansprüche russischer Organisationen aus Verträgen zu erfüllen, deren Erfüllung durch restriktive Maßnahmen beeinträchtigt ist, zur öffentlichen Ordnung der Union gehört. Dies bedeutet, dass nationale Gerichte prüfen müssen, ob Schiedssprüche diesem Verbot Rechnung tragen, und diese gegebenenfalls aufheben müssen.\n\nDies ist relevant für Unternehmen, die Verträge mit russischen Parteien haben, insbesondere wenn diese Verträge von EU-Sanktionen betroffen sind. Es unterstreicht die Notwendigkeit, die Einhaltung von EU-Sanktionen auch in Schiedsverfahren sicherzustellen. Schiedsgerichte dürfen zwar mit solchen Ansprüchen befasst werden, dürfen ihnen aber nicht stattgeben, wenn sie gegen die restriktiven Maßnahmen verstoßen. Nationale Gerichte müssen die Einhaltung dieser Vorschriften durch Schiedsgerichte kontrollieren.\n\nDie Schlussanträge sind für den Gerichtshof nicht bindend; das Urteil wird zu einem späteren Zeitpunkt verkündet. Nationale Gerichte, die mit ähnlichen Fragen befasst sind, müssen die endgültige Entscheidung des EuGH berücksichtigen.",
+          "en": "The Advocate General of the European Court of Justice (ECJ) has stated in his Opinion that the prohibition on satisfying claims of Russian entities arising from contracts whose performance is affected by restrictive measures forms part of the public policy of the Union. This implies that national courts must verify whether arbitration awards comply with this prohibition and, if necessary, set them aside.\n\nThis is relevant for companies with contracts involving Russian parties, especially if these contracts are impacted by EU sanctions. It underscores the necessity of ensuring compliance with EU sanctions even in arbitration proceedings. While arbitration courts may hear such claims, they must not uphold them if they violate restrictive measures. National courts are obliged to review arbitration courts' adherence to these rules.\n\nThe Advocate General's Opinion is not binding on the Court; the judgment will be delivered at a later date. National courts dealing with similar issues must take into account the final decision of the ECJ."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260023de.pdf",
+        "imp": "high",
+        "refnum": "C-802/24"
+      },
+      {
+        "d": "05.02.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
+          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
+        },
+        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
+        "s": {
+          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
+          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
+        "imp": "high"
+      }
+    ],
     "crr3": [
       {
         "d": "11.08.2026",
@@ -1360,43 +1469,24 @@
         "imp": "low"
       },
       {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”",
-          "en": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”"
-        },
-        "sl": "the-single-resolution-board-welcomes-the-european-commission-s-communication-on",
-        "s": {
-          "de": "Das Single Resolution Board (SRB) begrüßt die Mitteilung der Europäischen Kommission zur Wettbewerbsfähigkeit des Bankensektors und des Binnenmarktes im Bankwesen. Das SRB sieht in dem Bericht einen umfassenden Ansatz, der Vereinfachung mit Maßnahmen zur Förderung der Marktintegration verbindet, von der Einlagensicherung bis zur Liquidität in der Abwicklung.\n\nDas SRB betont, dass Wettbewerbsfähigkeit nicht nur durch einfachere Regeln gefördert wird, sondern auch durch die Vollendung der Bankenunion. Es empfiehlt, die Entwicklung dieser Ideen fortzusetzen und dabei ein Gleichgewicht zwischen Flexibilität und Vorhersehbarkeit zu finden. Bezüglich des MREL-Vorschlags bekräftigt das SRB die Notwendigkeit eines ganzheitlichen Ansatzes, da die MREL-Kalibrierung von aufsichtsrechtlichen und makroprudenziellen Anforderungen sowie dem Zugang zu branchenweiten Sicherheitsnetzen abhängt.\n\nDas SRB steht bereit, die Europäische Kommission und die Ko-Gesetzgeber mit seiner Expertise und Erfahrung zu unterstützen.",
-          "en": "The Single Resolution Board (SRB) welcomes the European Commission's Communication on the Competitiveness of the Banking Sector and the Single Market in Banking. The SRB appreciates the report's comprehensive approach, blending simplification with measures to foster market integration, from deposit insurance to liquidity in resolution.\n\nThe SRB emphasizes that competitiveness is best fostered not only by simpler rules but also by completing the Banking Union. It recommends pursuing the development of these initial ideas while finding the right balance between flexibility and predictability. Regarding the MREL proposal, the SRB reiterates that a holistic approach is needed, as MREL calibration depends on supervisory and macro-prudential requirements and on access to industry safety-nets.\n\nThe SRB stands ready to support the European Commission and co-legislators by providing its expertise and experience."
-        },
-        "url": "https://www.srb.europa.eu/en/content/single-resolution-board-welcomes-european-commissions-communication-competitiveness-banking",
-        "imp": "low"
-      },
-      {
-        "d": "20.04.2023",
+        "d": "07.08.2020",
         "t": {
           "de": "Gesetzentwurf",
           "en": "Bill"
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)",
-          "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)"
+          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
+          "en": "ITS on the application of Article 55 BRRD (Ares(2020)4105668)"
         },
-        "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
+        "sl": "its-on-application-of-article-55-brrd",
         "s": {
-          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung des Rahmens für das Bankenkrisenmanagement und die Einlagensicherung (DGSD-Überprüfung) vorgelegt. Dieser Vorschlag zielt darauf ab, die Wirksamkeit des Krisenmanagementrahmens zu verbessern und die Rolle der Einlagensicherungssysteme zu stärken.\n\nDer Vorschlag ist für Banken und Finanzinstitute in der Europäischen Union relevant, da er die Verfahren und Instrumente für den Umgang mit Bankenkrisen neu gestaltet. Dies könnte Auswirkungen auf die Anforderungen an die Eigenkapitalausstattung, die Sanierungs- und Abwicklungsplanung sowie die Beiträge zu Einlagensicherungssystemen haben.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er nun von den gesetzgebenden Organen der EU geprüft und verhandelt wird. Es sind noch keine konkreten Fristen für die Umsetzung oder den Anwendungsbeginn genannt.",
-          "en": "The European Commission has put forward a proposal to review the bank crisis management and deposit insurance framework (DGSD review). This proposal aims to enhance the effectiveness of the crisis management framework and strengthen the role of deposit guarantee schemes.\n\nThe proposal is relevant for banks and financial institutions within the European Union, as it reshapes the procedures and tools for handling banking crises. This could impact capital requirements, recovery and resolution planning, and contributions to deposit guarantee schemes.\n\nThe proposal is currently in the adoption workflow, meaning it will now be reviewed and negotiated by the EU's legislative bodies. No specific deadlines for implementation or application have been provided yet."
+          "de": "Die Europäische Kommission hat einen Entwurf für Technische Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD) initiiert. Diese ITS sollen die Details für die vertragliche Anerkennung von Abwicklungsbefugnissen festlegen.\n\nDie Regelung betrifft Kreditinstitute und Wertpapierfirmen, die unter die BRRD fallen. Sie müssen sicherstellen, dass ihre Verträge die Anwendung von Abwicklungsbefugnissen durch die zuständigen Behörden anerkennen, um die Wirksamkeit von Abwicklungsmaßnahmen zu gewährleisten.\n\nDer Verfahrensstand ist „Init Planned“, was bedeutet, dass die Arbeiten an diesem Entwurf begonnen haben.",
+          "en": "The European Commission has initiated a draft for Implementing Technical Standards (ITS) on the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD). These ITS are intended to specify the details for the contractual recognition of resolution powers.\n\nThe regulation affects credit institutions and investment firms falling under the BRRD. They must ensure that their contracts recognize the application of resolution powers by the competent authorities to ensure the effectiveness of resolution measures.\n\nThe procedural status is “Init Planned,” indicating that work on this draft has commenced."
         },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13813",
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
         "imp": "medium",
-        "refnum": "COM(2023)228"
+        "refnum": "Ares(2020)4105668"
       }
     ],
     "emir": [
@@ -1765,6 +1855,106 @@
         "refnum": "Ares(2021)2389148"
       }
     ],
+    "dgsd": [
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "​The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive",
+          "en": "​The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
+        },
+        "sl": "the-eba-consults-on-rules-to-further-improve-depositor-protection-under-the-revi",
+        "s": {
+          "de": "Die EBA hat vier Konsultationen zu Entwürfen von technischen Standards und Leitlinien veröffentlicht, die den Einlegerschutz gemäß der überarbeiteten Einlagensicherungssystem-Richtlinie (DGSD3) stärken sollen. Die Entwürfe umfassen Durchführungsstandards (ITS) zur Einlegerinformation, ITS zum Informationsaustausch zwischen Kreditinstituten, Einlagensicherungssystemen (DGS) und Behörden, Regulierungsstandards (RTS) zur Behandlung von Kundengeldern sowie Leitlinien zur Anlage von DGS-Mitteln.\n\nDie Regelungen betreffen alle Kreditinstitute und Einlagensicherungssysteme in der EU. Sie zielen darauf ab, die Transparenz für Einleger zu erhöhen, den Informationsaustausch bei Bankausfällen zu standardisieren, den Schutz von Kundengeldern zu vereinheitlichen und die effiziente Anlage von DGS-Mitteln sicherzustellen. Dies soll die finanzielle Stabilität wahren und die Harmonisierung des Einlegerschutzes in der EU vorantreiben.\n\nDie Konsultationsfrist für alle vier Entwürfe endet am 23. Oktober 2026. Eine öffentliche Anhörung findet am 24. September 2026 statt, Anmeldeschluss hierfür ist der 21. September 2026.",
+          "en": "The EBA has launched four consultations on draft technical standards and guidelines aimed at strengthening depositor protection under the revised Deposit Guarantee Schemes Directive (DGSD3). The drafts include Implementing Technical Standards (ITS) on depositor information, ITS on information exchange between credit institutions, Deposit Guarantee Schemes (DGSs) and authorities, Regulatory Technical Standards (RTS) on the treatment of client funds, and Guidelines on how DGSs should invest their funds.\n\nThese regulations apply to all credit institutions and DGSs in the EU. They aim to enhance transparency for depositors, standardize information exchange in bank failure scenarios, unify the protection of client funds, and ensure the efficient investment of DGS funds. This is intended to preserve financial stability and advance the harmonization of depositor protection across the EU.\n\nThe consultation period for all four drafts closes on 23 October 2026. A public hearing will take place on 24 September 2026, with the registration deadline being 21 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
+        "imp": "medium"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”",
+          "en": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”"
+        },
+        "sl": "the-single-resolution-board-welcomes-the-european-commission-s-communication-on",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) begrüßt die Mitteilung der Europäischen Kommission zur Wettbewerbsfähigkeit des Bankensektors und des Binnenmarktes im Bankwesen. Das SRB sieht in dem Bericht einen umfassenden Ansatz, der Vereinfachung mit Maßnahmen zur Förderung der Marktintegration verbindet, von der Einlagensicherung bis zur Liquidität in der Abwicklung.\n\nDas SRB betont, dass Wettbewerbsfähigkeit nicht nur durch einfachere Regeln gefördert wird, sondern auch durch die Vollendung der Bankenunion. Es empfiehlt, die Entwicklung dieser Ideen fortzusetzen und dabei ein Gleichgewicht zwischen Flexibilität und Vorhersehbarkeit zu finden. Bezüglich des MREL-Vorschlags bekräftigt das SRB die Notwendigkeit eines ganzheitlichen Ansatzes, da die MREL-Kalibrierung von aufsichtsrechtlichen und makroprudenziellen Anforderungen sowie dem Zugang zu branchenweiten Sicherheitsnetzen abhängt.\n\nDas SRB steht bereit, die Europäische Kommission und die Ko-Gesetzgeber mit seiner Expertise und Erfahrung zu unterstützen.",
+          "en": "The Single Resolution Board (SRB) welcomes the European Commission's Communication on the Competitiveness of the Banking Sector and the Single Market in Banking. The SRB appreciates the report's comprehensive approach, blending simplification with measures to foster market integration, from deposit insurance to liquidity in resolution.\n\nThe SRB emphasizes that competitiveness is best fostered not only by simpler rules but also by completing the Banking Union. It recommends pursuing the development of these initial ideas while finding the right balance between flexibility and predictability. Regarding the MREL proposal, the SRB reiterates that a holistic approach is needed, as MREL calibration depends on supervisory and macro-prudential requirements and on access to industry safety-nets.\n\nThe SRB stands ready to support the European Commission and co-legislators by providing its expertise and experience."
+        },
+        "url": "https://www.srb.europa.eu/en/content/single-resolution-board-welcomes-european-commissions-communication-competitiveness-banking",
+        "imp": "low"
+      },
+      {
+        "d": "20.04.2023",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)",
+          "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)"
+        },
+        "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung des Rahmens für das Bankenkrisenmanagement und die Einlagensicherung (DGSD-Überprüfung) vorgelegt. Dieser Vorschlag zielt darauf ab, die Wirksamkeit des Krisenmanagementrahmens zu verbessern und die Rolle der Einlagensicherungssysteme zu stärken.\n\nDer Vorschlag ist für Banken und Finanzinstitute in der Europäischen Union relevant, da er die Verfahren und Instrumente für den Umgang mit Bankenkrisen neu gestaltet. Dies könnte Auswirkungen auf die Anforderungen an die Eigenkapitalausstattung, die Sanierungs- und Abwicklungsplanung sowie die Beiträge zu Einlagensicherungssystemen haben.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er nun von den gesetzgebenden Organen der EU geprüft und verhandelt wird. Es sind noch keine konkreten Fristen für die Umsetzung oder den Anwendungsbeginn genannt.",
+          "en": "The European Commission has put forward a proposal to review the bank crisis management and deposit insurance framework (DGSD review). This proposal aims to enhance the effectiveness of the crisis management framework and strengthen the role of deposit guarantee schemes.\n\nThe proposal is relevant for banks and financial institutions within the European Union, as it reshapes the procedures and tools for handling banking crises. This could impact capital requirements, recovery and resolution planning, and contributions to deposit guarantee schemes.\n\nThe proposal is currently in the adoption workflow, meaning it will now be reviewed and negotiated by the EU's legislative bodies. No specific deadlines for implementation or application have been provided yet."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13813",
+        "imp": "medium",
+        "refnum": "COM(2023)228"
+      },
+      {
+        "d": "20.04.2023",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (SRMR review)",
+          "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (SRMR review)"
+        },
+        "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung des Rahmens für das Bankenkrisenmanagement und die Einlagensicherung (SRMR-Überprüfung) vorgelegt. Ziel ist es, die Wirksamkeit des Krisenmanagementrahmens zu verbessern, insbesondere für kleinere und mittlere Banken, um die Finanzstabilität zu gewährleisten und die Steuerzahler zu schützen.\n\nDer Vorschlag zielt darauf ab, die Anwendung von Krisenmanagementinstrumenten auf eine breitere Palette von Banken auszuweiten. Dies soll sicherstellen, dass alle Banken, unabhängig von ihrer Größe, im Falle einer Krise effektiv abgewickelt werden können, ohne auf öffentliche Mittel zurückgreifen zu müssen. Für Finanzinstitute bedeutet dies eine potenzielle Anpassung an erweiterte Anforderungen im Krisenfall.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er nun von den gesetzgebenden Organen der EU geprüft und verhandelt wird.",
+          "en": "The European Commission has put forward a proposal to review the bank crisis management and deposit insurance framework (SRMR review). The aim is to enhance the effectiveness of the crisis management framework, particularly for smaller and medium-sized banks, to ensure financial stability and protect taxpayers.\n\nThe proposal seeks to extend the application of crisis management tools to a broader range of banks. This is intended to ensure that all banks, regardless of their size, can be effectively resolved in the event of a crisis without recourse to public funds. For financial institutions, this implies a potential adaptation to expanded requirements in a crisis.\n\nThe proposal is currently in the adoption workflow, meaning it will now be reviewed and negotiated by the EU's legislative bodies."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13812",
+        "imp": "medium",
+        "refnum": "COM(2023)226"
+      },
+      {
+        "d": "25.02.2021",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (BRRD review)",
+          "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (BRRD review)"
+        },
+        "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
+        "s": {
+          "de": "Die Europäische Kommission hat eine öffentliche Konsultation zur Überprüfung des Krisenmanagement- und Einlagensicherungssystems für Banken (BRRD-Überprüfung) eingeleitet. Ziel ist es, die Wirksamkeit des derzeitigen Rahmens zu bewerten und mögliche Verbesserungen zu identifizieren, um Finanzstabilität zu gewährleisten und Steuerzahler zu schützen.\n\nDie Überprüfung betrifft alle Banken und Finanzinstitute innerhalb der Bankenunion. Sie sollen beurteilen, wie gut die bestehenden Regeln zur Bewältigung von Bankenkrisen funktionieren und ob Anpassungen notwendig sind, um auf zukünftige Herausforderungen vorbereitet zu sein.\n\nDie Konsultation ist gestartet, weitere Details zu Fristen oder nächsten Schritten sind dem vorliegenden Text nicht zu entnehmen.",
+          "en": "The European Commission has launched a public consultation on the review of the bank crisis management and deposit insurance framework (BRRD review). The aim is to assess the effectiveness of the current framework and identify possible improvements to ensure financial stability and protect taxpayers.\n\nThis review affects all banks and financial institutions within the Banking Union. They are expected to evaluate how well existing rules for managing banking crises function and whether adjustments are necessary to prepare for future challenges.\n\nThe consultation has been launched, but further details on deadlines or next steps are not available in the provided text."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12732",
+        "imp": "medium",
+        "refnum": "Ares(2020)6560840"
+      }
+    ],
     "outsourcing": [
       {
         "d": "23.07.2026",
@@ -1908,6 +2098,68 @@
         "refnum": "Ares(2019)5605641"
       }
     ],
+    "csdr": [
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
+      },
+      {
+        "d": "17.03.2022",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Central securities depositories – review of EU rules",
+          "en": "Central securities depositories – review of EU rules"
+        },
+        "sl": "central-securities-depositories-review-of-eu-rules",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zentralverwahrer (Central Securities Depositories – CSDs) eingeleitet. Ziel ist es, die Effizienz und Sicherheit der Wertpapierabwicklung in der EU zu verbessern. Dies umfasst die Bewertung der bestehenden Verordnung (CSDR) und die Identifizierung von Bereichen, in denen Anpassungen oder Klarstellungen erforderlich sind.\n\nDie Überprüfung betrifft alle Finanzinstitute, die CSD-Dienstleistungen nutzen oder anbieten. Praktisch bedeutet dies eine potenzielle Anpassung der Anforderungen an die Abwicklung von Wertpapiergeschäften und die damit verbundenen Prozesse. Die Kommission beabsichtigt, die Auswirkungen auf die Marktteilnehmer zu analysieren und gegebenenfalls Vorschläge für legislative Änderungen zu unterbreiten.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine fortgeschrittene Phase der Überprüfung hindeutet.",
+          "en": "The European Commission has initiated a review of the EU rules for Central Securities Depositories (CSDs). The objective is to enhance the efficiency and safety of securities settlement in the EU. This involves evaluating the existing CSDR regulation and identifying areas where adjustments or clarifications are needed.\n\nThis review affects all financial institutions that use or provide CSD services. Practically, this implies a potential adaptation of requirements for securities settlement transactions and related processes. The Commission intends to analyze the impact on market participants and, if necessary, propose legislative changes.\n\nThe current procedural status is the adoption workflow, indicating an advanced stage of the review."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12649",
+        "imp": "medium",
+        "refnum": "Ares(2020)5407019"
+      }
+    ],
+    "bfsg": [
+      {
+        "d": "15.07.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Verordnung zur Änderung der Verordnung zum Barrierefreiheitsstärkungsgesetz",
+          "en": "Verordnung zur Änderung der Verordnung zum Barrierefreiheitsstärkungsgesetz"
+        },
+        "sl": "verordnung-zur-aenderung-der-verordnung-zum-barrierefreiheitsstaerkungsgesetz",
+        "s": {
+          "de": "Die Verordnung zur Änderung der Verordnung zum Barrierefreiheitsstärkungsgesetz wurde am 15.07.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 205) veröffentlicht. Sie wurde am 10.07.2026 ausgefertigt und fällt in die Federführung des Bundesministeriums für Arbeit und Soziales.\n\nDiese Änderung betrifft Unternehmen und Institutionen, die unter das Barrierefreiheitsstärkungsgesetz fallen. Sie müssen die neuen Regelungen zur Barrierefreiheit beachten und umsetzen, um den gesetzlichen Anforderungen zu entsprechen.\n\nDie Verordnung ist ab dem 15.07.2026 gültig.",
+          "en": "The Ordinance Amending the Barrier-Free Strengthening Act Ordinance was published on 15.07.2026 in the Federal Law Gazette (BGBl. 2026 I No. 205). It was issued on 10.07.2026 and is under the responsibility of the Federal Ministry of Labour and Social Affairs.\n\nThis amendment affects companies and institutions subject to the Barrier-Free Strengthening Act. They must observe and implement the new accessibility regulations to comply with legal requirements.\n\nThe ordinance is valid from 15.07.2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/205",
+        "imp": "medium"
+      }
+    ],
     "marisk": [
       {
         "d": "30.06.2026",
@@ -2032,6 +2284,28 @@
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7836",
         "imp": "medium",
         "refnum": "2026_7836"
+      }
+    ],
+    "prospectus": [
+      {
+        "d": "04.03.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus",
+          "en": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus"
+        },
+        "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Reduzierung des Inhalts und zur Standardisierung des Formats und der Reihenfolge des EU-Folgeprospekts und des EU-Wachstumsemissionsprospekts vorgelegt. Dies zielt darauf ab, die Erstellung von Prospekten zu vereinfachen und die Effizienz für Emittenten zu steigern.\n\nDer Vorschlag ist für Unternehmen relevant, die Kapital über die Ausgabe von Wertpapieren am EU-Markt beschaffen möchten. Eine Standardisierung der Prospekte soll den Zugang zu Kapitalmärkten erleichtern und die Kosten für die Prospekterstellung senken.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow-Verfahren.",
+          "en": "The European Commission has submitted a legislative proposal to reduce the content and standardize the format and sequence of the EU Follow-on Prospectus and the EU Growth Issuance Prospectus. This aims to simplify prospectus preparation and increase efficiency for issuers.\n\nThis proposal is relevant for companies seeking to raise capital through securities issuance in the EU market. Standardizing prospectuses is intended to facilitate access to capital markets and reduce the costs associated with prospectus preparation.\n\nThe proposal is currently in the adoption workflow process."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
+        "imp": "medium",
+        "refnum": "Ares(2024)6122774"
       }
     ],
     "bmr": [
@@ -2237,6 +2511,27 @@
         "refnum": "FR/17/2025"
       }
     ],
+    "crs": [
+      {
+        "d": "05.11.2025",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "bundesfinanzministerium.de",
+        "ti": {
+          "de": "Referentenentwurf zur Umsetzung der DAC 8-Richtlinie (DAC8 G)",
+          "en": "Draft Bill for the Implementation of DAC 8 Directive (DAC8 G)"
+        },
+        "sl": "dac8-g",
+        "s": {
+          "de": "Das Bundesfinanzministerium hat einen Referentenentwurf zur Umsetzung der EU-Richtlinie 2023/2226 (DAC 8) vorgelegt. Ziel ist die Weiterentwicklung der zwischenstaatlichen Zusammenarbeit der Steuerbehörden der EU-Mitgliedstaaten im Bereich der direkten Steuern. Insbesondere soll ein Mindestmaß an steuerlicher Transparenz für Transaktionen mit Kryptowerten und anderen digitalen Finanzprodukten geschaffen werden, um Steuerhinterziehung zu bekämpfen und eine Gleichbehandlung mit etablierten Finanzprodukten zu gewährleisten.\n\nDas Gesetz enthält ausschließlich verfahrensrechtliche Regelungen und erweitert oder führt keine neuen Besteuerungstatbestände ein. Es handelt sich um eine 1:1-Umsetzung der europäischen Vorgaben, die auf international ausgehandelten OECD-Transparenzstandards basieren. Dies betrifft Finanzinstitute und Anbieter von Kryptowerten, die zukünftig verstärkt Daten an die Steuerbehörden melden müssen.\n\nZum Referentenentwurf wurden bereits Stellungnahmen von verschiedenen Verbänden, darunter der Deutschen Steuer-Gewerkschaft, des Gesamtverbands der Versicherer und der Deutschen Kreditwirtschaft, eingereicht.",
+          "en": "The German Federal Ministry of Finance has presented a draft bill for the implementation of EU Directive 2023/2226 (DAC 8). The aim is to further develop cross-border cooperation between tax authorities of EU member states in the field of direct taxation. In particular, a minimum level of tax transparency for transactions involving crypto-assets and other digital financial products is to be established to combat tax evasion and ensure equal treatment with established financial products.\n\nThe law exclusively contains procedural regulations and does not expand or introduce new tax offenses. It is a 1:1 implementation of the European requirements, which are based on internationally negotiated OECD transparency standards. This affects financial institutions and crypto-asset providers, who will have to report more data to the tax authorities in the future.\n\nComments on the draft bill have already been submitted by various associations, including the German Tax Union, the German Insurance Association, and the German Banking Industry Committee."
+        },
+        "url": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2025-11-05-DAC8-G/0-Gesetz.html",
+        "imp": "medium"
+      }
+    ],
     "mar": [
       {
         "d": "28.08.2025",
@@ -2256,6 +2551,28 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
         "imp": "high"
+      }
+    ],
+    "fida": [
+      {
+        "d": "30.06.2023",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Open finance framework",
+          "en": "Open finance framework"
+        },
+        "sl": "open-finance-framework",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Vorschlag für einen Rechtsrahmen für Open Finance vorgelegt. Dieser Rahmen soll den Zugang zu und die Nutzung von Kundendaten über traditionelle Zahlungsdienste hinaus auf ein breiteres Spektrum von Finanzdienstleistungen ausweiten. Ziel ist es, Innovationen zu fördern, den Wettbewerb zu stärken und den Verbraucherschutz zu verbessern, indem Kunden mehr Kontrolle über ihre Finanzdaten erhalten.\n\nDer Vorschlag betrifft Finanzinstitute, die Kundendaten speichern, wie Banken, Versicherungen und Wertpapierfirmen. Sie müssen Mechanismen bereitstellen, die es Kunden ermöglichen, ihre Daten sicher mit Drittanbietern zu teilen. Dies könnte zur Entwicklung neuer Finanzprodukte und -dienstleistungen führen, erfordert aber auch Anpassungen in den IT-Systemen und Datenmanagement-Prozessen der betroffenen Unternehmen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Europäischen Kommission. Weitere Schritte im Gesetzgebungsverfahren, einschließlich der Beratungen im Europäischen Parlament und im Rat, werden folgen.",
+          "en": "The European Commission has put forward a proposal for an Open Finance framework. This framework aims to extend access to and use of customer data beyond traditional payment services to a broader range of financial services. The objective is to foster innovation, enhance competition, and improve consumer protection by giving customers more control over their financial data.\n\nThis proposal impacts financial institutions that hold customer data, such as banks, insurance companies, and investment firms. They will be required to provide mechanisms enabling customers to securely share their data with third-party providers. This could lead to the development of new financial products and services but also necessitates adjustments in the IT systems and data management processes of the affected entities.\n\nThe proposal is currently in the adoption workflow of the European Commission. Further steps in the legislative process, including deliberations in the European Parliament and the Council, are expected to follow."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13241",
+        "imp": "medium",
+        "refnum": "Ares(2021)6506852"
       }
     ],
     "psd3": [
