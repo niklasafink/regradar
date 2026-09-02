@@ -83,11 +83,12 @@ export function verifyIdToken(token: string): string | null {
   }
 }
 
-/** Antwortadresse aller ausgehenden Mails: Antworten landen bei Resend
-    (Empfangsadresse auf der Resend-Subdomain) und werden von /api/inbound an
-    den Betreiber weitergeleitet. Überschreibbar per RESEND_REPLY_TO. */
+/** Antwortadresse aller ausgehenden Mails. Seit 02.09.2026 empfängt Resend
+    für regradar.de (MX → inbound-smtp.eu-west-1.amazonaws.com), daher ist die
+    Absenderadresse selbst die Antwortadresse; /api/inbound leitet alles an den
+    Betreiber weiter. Überschreibbar per RESEND_REPLY_TO. */
 export function replyToAddress(): string {
-  return process.env.RESEND_REPLY_TO ?? "antwort@mordibo.resend.app";
+  return process.env.RESEND_REPLY_TO ?? process.env.RESEND_FROM ?? "antwort@mordibo.resend.app";
 }
 
 /** Absender + Reply-To für alle ausgehenden Mails (eine Stelle statt zehn). */

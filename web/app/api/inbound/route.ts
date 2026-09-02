@@ -1,6 +1,5 @@
-// Eingehende Antworten auf unsere Mails. Alle ausgehenden Mails tragen als
-// Reply-To die Resend-Empfangsadresse (siehe replyToAddress in lib/email.ts).
-// Resend nimmt die Antwort entgegen und ruft diesen Webhook mit dem Event
+// Eingehende Mails an regradar.de (MX zeigt seit 02.09.2026 auf Resend) und
+// an die Resend-Subdomain mordibo.resend.app. Resend nimmt die Mail entgegen und ruft diesen Webhook mit dem Event
 // "email.received" auf (nur Metadaten, kein Inhalt). Wir holen den Inhalt
 // per API nach und leiten die Mail an den Betreiber weiter — mit Reply-To
 // auf den ursprünglichen Absender, sodass "Antworten" im Postfach direkt an
