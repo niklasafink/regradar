@@ -312,7 +312,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"gwg", jur:"DE",
     about:{de:"Das deutsche Geldwäschegesetz mit Sorgfalts-, Melde- und Aufzeichnungspflichten, das derzeit an das EU-Regelwerk angepasst wird.",en:"The German Money Laundering Act with due diligence, reporting and record-keeping duties, currently being aligned with the EU rulebook."}, topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
-    n:{de:"Geldwäschegesetz",en:"German Money Laundering Act"},
+    n:{de:"Geldwäschegesetz (GwG)",en:"German Money Laundering Act (GwG)"},
     alias:"AML, KYC, Know Your Customer, Geldwäscheprävention, Terrorismusfinanzierung, wirtschaftlich Berechtigter, Transparenzregister, FIU, Verdachtsmeldung",
     ref:"GwG", cond:{k:"cross",any:["aml"]},
     refUrl:"https://www.gesetze-im-internet.de/gwg_2017/",
@@ -480,7 +480,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"instvergv", jur:"DE",
     about:{de:"Vergütungsaufsicht für Institute: angemessene, nachhaltige Vergütungssysteme, Identifizierung von Risikoträgern, Zurückbehaltung und Rückforderung variabler Vergütung, Vergütungskontrollausschuss und Offenlegung; für Wertpapierinstitute gilt die WpI-Vergütungsverordnung.",en:"Remuneration supervision for institutions: appropriate and sustainable pay systems, identification of material risk takers, deferral and clawback of variable pay, remuneration committee and disclosure; investment firms fall under the WpI-Vergütungsverordnung."}, topic:"GOV", ents:["CI","IF","OTH"],
-    n:{de:"Institutsvergütungsverordnung",en:"Remuneration Ordinance for Institutions"},
+    n:{de:"Institutsvergütungsverordnung (InstitutsVergV)",en:"Remuneration Ordinance for Institutions (InstitutsVergV)"},
     alias:"InstitutsVergV, IVV, Vergütung Banken, Vergütungsverordnung, Risikoträger, Material Risk Taker, WpI-VergV, Bonus",
     ref:"InstitutsVergV, WpI-VergV, § 25a KWG, CRD", cond:{k:"juris",any:["DE"]},
     refUrl:"https://www.gesetze-im-internet.de/institutsvergv_2014/",
@@ -537,7 +537,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"hinschg", jur:"EU+DE",
     about:{de:"Pflicht zu internen Meldekanälen, Schutz hinweisgebender Personen vor Repressalien und Dokumentationspflichten. Gilt für alle Unternehmen ab 50 Beschäftigten; Kredit-, Finanzdienstleistungs-, Wertpapier-, Zahlungs- und E-Geld-Institute, KVGen und Versicherer sind nach § 12 Abs. 3 HinSchG unabhängig von der Mitarbeiterzahl verpflichtet.",en:"Duty to operate internal reporting channels, protection of reporting persons against retaliation, and documentation duties. Applies to all companies with 50 or more employees; credit, financial services, investment, payment and e-money institutions, fund managers and insurers are obliged regardless of headcount under § 12(3) HinSchG."}, topic:"GOV", ents:["CI","AM","IF","PI","INS","OTH"],
-    n:{de:"Hinweisgeberschutzgesetz",en:"Whistleblower Protection Act"},
+    n:{de:"Hinweisgeberschutzgesetz (HinSchG)",en:"Whistleblower Protection Act (HinSchG)"},
     alias:"HinSchG, Whistleblowing, Whistleblower, Hinweisgeber, Meldestelle, EU-Whistleblower-Richtlinie",
     ref:"HinSchG, RL (EU) 2019/1937", cond:null,
     refUrl:"https://www.gesetze-im-internet.de/hinschg/",
@@ -577,7 +577,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"mar", jur:"EU",
     about:{de:"Verbot von Insidergeschäften und Marktmanipulation, Ad-hoc-Publizität, Insiderlisten und Eigengeschäfte von Führungskräften.",en:"Prohibition of insider dealing and market manipulation, disclosure of inside information, insider lists and managers' transactions."}, topic:"MKT", ents:["CI","AM","IF","INS"],
-    n:{de:"Marktmissbrauchsverordnung",en:"Market Abuse Regulation"},
+    n:{de:"Marktmissbrauchsverordnung (MAR)",en:"Market Abuse Regulation (MAR)"},
     alias:"MAR, Market Abuse Regulation, Marktmissbrauch, Insiderhandel, Ad-hoc-Publizität, Ad-hoc-Mitteilung, Directors' Dealings, Marktmanipulation, Insiderliste",
     ref:"VO (EU) 596/2014", cond:{k:"act",any:["dealing","issuance","portfolio"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2014/596/oj/eng",
@@ -605,7 +605,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"prospectus", jur:"EU",
     about:{de:"Prospektpflicht bei öffentlichen Angeboten und Börsenzulassungen von Wertpapieren, Prospektinhalte und -billigung sowie die Erleichterungen des EU Listing Act für Emittenten und Emissionsbegleiter.",en:"Prospectus requirement for public offers and admissions to trading of securities, prospectus content and approval, and the simplifications of the EU Listing Act for issuers and underwriters."}, topic:"MKT", ents:["CI","IF"],
-    n:{de:"Prospektverordnung & Listing Act",en:"Prospectus Regulation & Listing Act"},
+    n:{de:"Prospektverordnung (ProspektVO) & Listing Act",en:"Prospectus Regulation & Listing Act"},
     alias:"Prospektverordnung, Prospectus Regulation, Listing Act, WpPG, Wertpapierprospektgesetz, WIB, Wertpapier-Informationsblatt, Börsengang, IPO",
     ref:"VO (EU) 2017/1129, VO (EU) 2024/2809, WpPG", cond:{k:"act",any:["issuance"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2017/1129/oj/deu",
@@ -654,7 +654,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"zkg", jur:"EU+DE",
     about:{de:"Zahlungskonten für Verbraucher: Recht auf ein Basiskonto, Kontowechselhilfe, Entgeltinformation und Entgeltaufstellung mit standardisierten Begriffen sowie Vergleichswebsites; setzt die EU-Zahlungskontenrichtlinie um.",en:"Payment accounts for consumers: right to a basic account, account switching service, fee information document and statement of fees with standardised terms, and comparison websites; transposes the EU Payment Accounts Directive."}, topic:"PAY", ents:["CI","PI"],
-    n:{de:"Zahlungskontengesetz",en:"Payment Accounts Act"},
+    n:{de:"Zahlungskontengesetz (ZKG)",en:"Payment Accounts Act (ZKG)"},
     alias:"ZKG, Zahlungskontengesetz, Basiskonto, Kontowechsel, Payment Accounts Directive, PAD, Entgeltinformation",
     ref:"ZKG, RL 2014/92/EU", cond:{k:"cli",any:["retail"]},
     refUrl:"https://www.gesetze-im-internet.de/zkg/",
@@ -709,7 +709,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"instant", jur:"EU",
     about:{de:"Pflicht zur Erreichbarkeit für Echtzeitüberweisungen in Euro, Entgeltgleichheit und Abgleich von Empfängername und IBAN.",en:"Duty to be reachable for euro instant credit transfers, charge parity, and verification of payee name against IBAN."}, topic:"PAY", ents:["CI","PI"],
-    n:{de:"Verordnung über Echtzeitüberweisungen",en:"Instant Payments Regulation"},
+    n:{de:"Verordnung über Echtzeitüberweisungen (Instant Payments)",en:"Instant Payments Regulation (IPR)"},
     alias:"Instant Payments, IPR, SEPA Instant, Echtzeitüberweisung, Sofortüberweisung, Verification of Payee, VoP, Empfängerprüfung",
     ref:"VO (EU) 2024/886", cond:{k:"act",any:["payments"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/886/oj/eng",
@@ -737,7 +737,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"dltpilot", jur:"EU+DE",
     about:{de:"Pilotregelung für Marktinfrastrukturen auf Basis der Distributed-Ledger-Technologie: Handel und Abwicklung tokenisierter Finanzinstrumente mit befristeten Ausnahmen von MiFIR und CSDR; in Deutschland flankiert durch elektronische Wertpapiere und Kryptowertpapierregister nach dem eWpG.",en:"Pilot regime for market infrastructures based on distributed ledger technology: trading and settlement of tokenised financial instruments under temporary exemptions from MiFIR and CSDR; flanked in Germany by electronic securities and crypto securities registers under the eWpG."}, topic:"MKT", ents:["CI","AM","IF"],
-    n:{de:"DLT-Pilotregelung & elektronische Wertpapiere",en:"DLT Pilot Regime & electronic securities"},
+    n:{de:"DLT-Pilotregelung & elektronische Wertpapiere (eWpG)",en:"DLT Pilot Regime & electronic securities (eWpG)"},
     alias:"DLT Pilot Regime, DLT-Pilotregelung, eWpG, elektronische Wertpapiere, Kryptowertpapiere, Tokenisierung, Tokenisation, Blockchain, Distributed Ledger",
     ref:"VO (EU) 2022/858, eWpG", cond:{k:"prod",any:["crypto"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2022/858/oj/eng",
@@ -785,7 +785,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"mmf", jur:"EU",
     about:{de:"Portfolio-, Bewertungs- und Liquiditätsanforderungen für Geldmarktfonds sowie Regeln zu Rücknahmen unter Stress.",en:"Portfolio, valuation and liquidity requirements for money market funds, and rules on redemptions under stress."}, topic:"FND", ents:["AM"],
-    n:{de:"Geldmarktfonds-Verordnung",en:"Money Market Funds Regulation"},
+    n:{de:"Geldmarktfonds-Verordnung (MMFR)",en:"Money Market Funds Regulation (MMFR)"},
     alias:"MMF, MMFR, Money Market Fund Regulation, Geldmarktfonds",
     ref:"VO (EU) 2017/1131", cond:{k:"prod",any:["mmf"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2017/1131/oj/eng",
@@ -817,7 +817,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"itsrep", jur:"EU",
     about:{de:"Einheitliche Meldebögen und Taxonomien für COREP, FINREP und weitere aufsichtliche Meldungen.",en:"Harmonised templates and taxonomies for COREP, FINREP and other supervisory returns."}, topic:"REP", ents:["CI","IF"],
-    n:{de:"ITS zum aufsichtlichen Meldewesen",en:"ITS on Supervisory Reporting"},
+    n:{de:"ITS zum aufsichtlichen Meldewesen (COREP / FINREP)",en:"ITS on Supervisory Reporting (COREP / FINREP)"},
     alias:"COREP, FINREP, Meldewesen, Supervisory Reporting, EBA Reporting Framework, DPM, XBRL, Validation Rules, Meldebögen, Taxonomie",
     ref:"ITS on Supervisory Reporting", cond:{k:"cross",any:["reporting"]},
     refUrl:"https://www.eba.europa.eu/risk-and-data-analysis/reporting-frameworks",
@@ -900,7 +900,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"idd", jur:"EU",
     about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["CI","INS"],
-    n:{de:"Versicherungsvertriebsrichtlinie",en:"Insurance Distribution Directive"},
+    n:{de:"Versicherungsvertriebsrichtlinie (IDD)",en:"Insurance Distribution Directive (IDD)"},
     alias:"IDD, Insurance Distribution Directive, Versicherungsvertrieb, Versicherungsvermittler, Versicherungsmakler, IBIP, Versicherungsanlageprodukte",
     ref:"RL (EU) 2016/97", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2016/97/oj/eng",
@@ -927,7 +927,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"bmr", jur:"EU",
     about:{de:"Anforderungen an Administratoren und beaufsichtigte Verwender von Referenzwerten wie Zinssätzen und Indizes – einschließlich Zulassung, Methodik und Ausweichplänen für den Wegfall eines Referenzwerts.",en:"Requirements for administrators and supervised users of benchmarks such as interest rates and indices – including authorisation, methodology and fallback plans for benchmark cessation."}, topic:"MKT", ents:["CI","AM","IF"],
-    n:{de:"Benchmark-Verordnung",en:"Benchmark Regulation"},
+    n:{de:"Benchmark-Verordnung (BMR)",en:"Benchmark Regulation (BMR)"},
     alias:"BMR, Benchmark Regulation, Benchmark-Verordnung, Referenzwerte, EURIBOR, €STR, LIBOR, SOFR, IBOR-Ablösung",
     ref:"VO (EU) 2016/1011", cond:{k:"act",any:["portfolio","dealing","issuance"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2016/1011/oj/eng",
@@ -944,7 +944,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"aiact", jur:"EU",
     about:{de:"Risikobasierte Regeln für den Einsatz von KI-Systemen: verbotene Praktiken, Pflichten für Hochrisiko-Systeme etwa in der Kreditwürdigkeitsprüfung, Transparenzpflichten und Vorgaben für KI-Modelle mit allgemeinem Verwendungszweck.",en:"Risk-based rules for the use of AI systems: prohibited practices, duties for high-risk systems such as creditworthiness assessment, transparency duties and requirements for general-purpose AI models."}, topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
-    n:{de:"KI-Verordnung",en:"AI Act"},
+    n:{de:"KI-Verordnung (EU AI Act)",en:"EU AI Act"},
     alias:"EU AI Act, AI Act, KI-VO, KI-Gesetz, AI Regulation, Artificial Intelligence Act, KI-Verordnung, künstliche Intelligenz, GPAI, Hochrisiko-KI, High-Risk AI, AI Office, KI-Omnibus",
     ref:"VO (EU) 2024/1689", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
@@ -977,7 +977,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"lksg", jur:"EU+DE",
     about:{de:"Menschenrechtliche und umweltbezogene Sorgfaltspflichten in der Lieferkette für Unternehmen ab 1.000 Beschäftigten in Deutschland: Risikoanalyse, Grundsatzerklärung, Präventions- und Abhilfemaßnahmen, Beschwerdeverfahren; auf EU-Ebene die CSDDD, deren Anwendung durch die Omnibus-Richtlinie auf Juli 2028 verschoben wurde. Eine Änderung des LkSG zur Streichung der Berichtspflicht ist im Bundestag in Beratung.",en:"Human rights and environmental due diligence in the supply chain for companies with 1,000 or more employees in Germany: risk analysis, policy statement, preventive and remedial measures, complaints procedure; at EU level the CSDDD, whose application was postponed to July 2028 by the omnibus directive. An LkSG amendment removing the reporting duty is under deliberation in the Bundestag."}, topic:"ESG", ents:["CI","AM","IF","PI","INS","OTH"],
-    n:{de:"Lieferkettensorgfaltspflichtengesetz & CSDDD",en:"Supply Chain Due Diligence Act & CSDDD"},
+    n:{de:"Lieferkettensorgfaltspflichtengesetz (LkSG) & CSDDD",en:"Supply Chain Due Diligence Act (LkSG) & CSDDD"},
     alias:"LkSG, Lieferkettengesetz, Lieferkettensorgfaltspflichtengesetz, CSDDD, CS3D, Supply Chain Due Diligence, Sorgfaltspflichten",
     ref:"LkSG, RL (EU) 2024/1760, RL (EU) 2025/794", cond:null,
     refUrl:"https://www.gesetze-im-internet.de/lksg/",
@@ -1003,7 +1003,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"consumer", jur:"EU+DE",
     about:{de:"Verbraucherschutz im Finanzgeschäft: Verbraucherdarlehen und die neue Verbraucherkreditrichtlinie CCD II, vorvertragliche Informationspflichten, Widerrufsrechte und AGB-Kontrolle.",en:"Consumer protection in finance: consumer credit and the new Consumer Credit Directive CCD II, pre-contractual information duties, withdrawal rights and review of standard terms."}, topic:"CONS", ents:["CI","PI","OTH"],
-    n:{de:"Verbraucherschutz im Finanzgeschäft",en:"Consumer protection in finance"},
+    n:{de:"Verbraucherschutz im Finanzgeschäft (CCD II)",en:"Consumer protection in finance (CCD II)"},
     alias:"Verbraucherschutz, Consumer Protection, Verbraucherkredit, Verbraucherdarlehen, CCD II, CCD2, Verbraucherkreditrichtlinie, Widerruf, Widerrufsrecht, Restschuldversicherung, AGB, Prämiensparverträge",
     ref:"RL (EU) 2023/2225 (CCD II), BGB", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2023/2225/oj/eng",
@@ -1031,7 +1031,7 @@ export const FRAMEWORKS: Framework[] = [
 
   { id:"bfsg", jur:"EU+DE",
     about:{de:"Barrierefreiheit für Verbraucher-Bankdienstleistungen: Online-Banking, Apps, Kontoeröffnung, Geldautomaten und Zahlungsterminals müssen seit dem 28.06.2025 wahrnehmbar, bedienbar und verständlich sein; Kleinstunternehmen sind bei Dienstleistungen ausgenommen.",en:"Accessibility for consumer banking services: online banking, apps, account opening, ATMs and payment terminals must be perceivable, operable and understandable since 28 Jun 2025; micro-enterprises are exempt for services."}, topic:"CONS", ents:["CI","PI","IF","INS"],
-    n:{de:"Barrierefreiheitsstärkungsgesetz",en:"Accessibility Strengthening Act"},
+    n:{de:"Barrierefreiheitsstärkungsgesetz (BFSG)",en:"Accessibility Strengthening Act (BFSG)"},
     alias:"BFSG, Barrierefreiheitsstärkungsgesetz, Barrierefreiheit, Accessibility, European Accessibility Act, EAA, Barrierefreies Banking",
     ref:"BFSG, RL (EU) 2019/882", cond:{k:"cli",any:["retail"]},
     refUrl:"https://www.gesetze-im-internet.de/bfsg/",
