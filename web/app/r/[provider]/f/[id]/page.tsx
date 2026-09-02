@@ -7,7 +7,7 @@ import { AuthorityLogo, FirmLogo, FRAMEWORK_AUTH } from "@/components/authority-
 import { Chrome, Footer } from "@/components/chrome";
 import { ABOUT_LONG } from "@/lib/data";
 import {
-  daysAgo, daysUntil, dt, fmtDate, frameworkById, providerById,
+  daysAgo, daysUntil, deadlineExpired, deadlineLabel, dt, fmtDate, frameworkById, providerById,
   topicById, tx, visibleFrameworks,
 } from "@/lib/logic";
 import { firstParagraph, updateHref } from "@/lib/updates";
@@ -121,7 +121,8 @@ export default function FrameworkDetail() {
             )}
             {ups.map((u, i) => {
               const isNew = daysAgo(u.d) <= 14;
-              const urgent = u.deadline && daysUntil(u.deadline) < 60;
+              const expired = !!u.deadline && deadlineExpired(u.deadline);
+              const urgent = u.deadline && !expired && daysUntil(u.deadline) < 60;
               const last = i === ups.length - 1;
               return (
                 <div
@@ -176,10 +177,8 @@ export default function FrameworkDetail() {
                   {(u.deadline || u.eff) && (
                     <div className="mt-2.5 flex flex-wrap gap-x-6 gap-y-1.5 text-xs">
                       {u.deadline && (
-                        <span className={urgent ? "font-medium text-red-600" : "text-slate-600"}>
-                          {lang === "de" ? "Frist" : "Deadline"}{" "}
-                          <span className="num">{fmtDate(lang, u.deadline)}</span>{" "}
-                          ({daysUntil(u.deadline)} {lang === "de" ? "Tage" : "days"})
+                        <span className={`num ${urgent ? "font-medium text-red-600" : expired ? "text-slate-400" : "text-slate-600"}`}>
+                          {deadlineLabel(lang, u.deadline)}
                         </span>
                       )}
                       {u.eff && (

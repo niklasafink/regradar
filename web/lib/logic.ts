@@ -19,6 +19,16 @@ export const daysAgo = (d: string): number =>
   Math.round((TODAY.getTime() - dt(d).getTime()) / 86400000);
 export const daysUntil = (d: string): number => -daysAgo(d);
 
+/** Abgelaufene Fristen als solche benennen, offene mit Resttagen. */
+export const deadlineExpired = (d: string): boolean => daysUntil(d) < 0;
+export const deadlineLabel = (lang: Lang, d: string): string => {
+  const n = daysUntil(d);
+  const date = fmtDate(lang, d);
+  if (n < 0) return lang === "de" ? `Frist lief am ${date} aus` : `Deadline expired on ${date}`;
+  if (n === 0) return lang === "de" ? `Frist ${date} (heute)` : `Deadline ${date} (today)`;
+  return lang === "de" ? `Frist ${date} (${n} Tage)` : `Deadline ${date} (${n} days)`;
+};
+
 export const fmtDate = (lang: Lang, d: string): string => {
   if (lang === "de") return d;
   return dt(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });

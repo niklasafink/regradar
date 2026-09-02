@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
-import { authority, daysUntil, frameworkById, providerSlug, topicById } from "@/lib/logic";
+import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
 import { firstParagraph, isoDate, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
 
 export const dynamicParams = false;
@@ -217,7 +217,11 @@ export default async function UpdatePage(
                     {u.deadline}
                   </dd>
                   <dt className="mt-0.5 text-xs font-medium text-slate-500">
-                    Frist ({daysUntil(u.deadline)} Tage)
+                    {deadlineExpired(u.deadline)
+                      ? "Frist abgelaufen"
+                      : daysUntil(u.deadline) === 0
+                        ? "Frist (heute)"
+                        : `Frist (${daysUntil(u.deadline)} Tage)`}
                   </dt>
                 </div>
               )}

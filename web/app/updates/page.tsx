@@ -7,7 +7,7 @@ import { Chrome, Footer } from "@/components/chrome";
 import { SearchBox } from "@/components/search";
 import { PROVIDERS } from "@/lib/data";
 import {
-  daysAgo, daysUntil, fmtDate, IMPACT_LABEL, impactOf,
+  daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf,
   PROVIDER_SHORT, tx, type Impact,
 } from "@/lib/logic";
 import { useStore } from "@/lib/store";
@@ -101,7 +101,8 @@ export default function AllUpdates() {
         <ol className="mt-6">
           {shown.map(({ slug, fw, u }) => {
             const fresh = daysAgo(u.d) <= 14;
-            const urgent = u.deadline && daysUntil(u.deadline) < 60;
+            const expired = !!u.deadline && deadlineExpired(u.deadline);
+            const urgent = u.deadline && !expired && daysUntil(u.deadline) < 60;
             const impact = impactOf(u);
             return (
               <li key={slug}>
@@ -141,8 +142,10 @@ export default function AllUpdates() {
                         {tx(lang, fw.n)}, {tx(lang, u.t)}
                       </span>
                       {u.deadline && (
-                        <span className={`num whitespace-nowrap ${urgent ? "font-medium text-red-600" : ""}`}>
-                          {lang === "de" ? "Frist" : "Deadline"} {fmtDate(lang, u.deadline)}
+                        <span className={`num whitespace-nowrap ${urgent ? "font-medium text-red-600" : expired ? "text-slate-400" : ""}`}>
+                          {expired
+                            ? deadlineLabel(lang, u.deadline)
+                            : `${lang === "de" ? "Frist" : "Deadline"} ${fmtDate(lang, u.deadline)}`}
                         </span>
                       )}
                     </span>
