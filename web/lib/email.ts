@@ -341,6 +341,56 @@ export async function sendUnsubscribeNotification(subscriberEmail: string) {
   if (error) throw new Error(error.message);
 }
 
+/** Bestätigung an den Abonnenten selbst nach erfolgreicher Abmeldung — damit
+    eine (z. B. versehentliche oder durch einen Link-Scanner ausgelöste)
+    Abmeldung nicht unbemerkt bleibt. Enthält den Weg zurück zur Anmeldung. */
+export async function sendUnsubscribeConfirmation(subscriberEmail: string) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return;
+  const resend = new Resend(apiKey);
+  const base = process.env.APP_URL ?? "http://localhost:3000";
+  const text = [
+    "regulatoryradar",
+    "",
+    "Sie wurden abgemeldet.",
+    `${subscriberEmail} erhält ab sofort keine Update-Benachrichtigungen mehr von Regulatory Radar.`,
+    "",
+    `Das war ein Versehen? Sie können sich jederzeit neu anmelden: ${base}/#newsletter`,
+    "",
+    `Impressum: ${base}/impressum`,
+    `Datenschutz: ${base}/datenschutz`,
+  ].join("\n");
+  const { error } = await resend.emails.send({
+    from: `Niklas von RegRadar <${process.env.RESEND_FROM ?? "onboarding@resend.dev"}>`,
+    to: subscriberEmail,
+    subject: "Sie wurden abgemeldet – Regulatory Radar",
+    text,
+    html: `
+      <div style="background:#ffffff;padding:32px 16px">
+      <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;max-width:560px;margin:0 auto;color:#0f172a">
+        <p style="margin:0 0 28px;font-size:18px"><strong>regulatory</strong><em style="font-weight:300">radar</em></p>
+        <h1 style="margin:0 0 12px;font-size:24px;font-weight:500;letter-spacing:-0.02em">Sie wurden abgemeldet.</h1>
+        <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#475569">
+          <strong style="color:#0f172a">${subscriberEmail}</strong> erhält ab sofort keine
+          Update-Benachrichtigungen mehr von Regulatory Radar.
+        </p>
+        <p style="margin:0 0 8px;font-size:14px;color:#475569">Das war ein Versehen?</p>
+        <p style="margin:0 0 32px">
+          <a href="${base}/#newsletter"
+             style="display:inline-block;white-space:nowrap;background:#0f172a;color:#ffffff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px">
+            Erneut anmelden →
+          </a>
+        </p>
+        <p style="margin:0;padding-top:16px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8;line-height:1.6">
+          <a href="${base}/impressum" style="color:#64748b">Impressum</a> &nbsp;
+          <a href="${base}/datenschutz" style="color:#64748b">Datenschutz</a>
+        </p>
+      </div>
+      </div>`,
+  });
+  if (error) throw new Error(error.message);
+}
+
 export async function sendSubscriberNotification(
   subscriberEmail: string,
   providers: string[],

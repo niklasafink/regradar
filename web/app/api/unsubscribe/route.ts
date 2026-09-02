@@ -4,7 +4,7 @@
 // Button (POST mit confirm=1) meldet ab. Der One-Click-Weg nach RFC 8058
 // (POST mit Body "List-Unsubscribe=One-Click", von Gmail/Outlook nur nach
 // Nutzeraktion ausgelöst) meldet weiterhin direkt ab.
-import { sendUnsubscribeNotification, verifyUnsubToken } from "@/lib/email";
+import { sendUnsubscribeConfirmation, sendUnsubscribeNotification, verifyUnsubToken } from "@/lib/email";
 import { removeSubscriber } from "@/lib/subscribers";
 import { confirmPage, formBody, htmlPage } from "@/lib/confirmPage";
 
@@ -12,11 +12,15 @@ import { confirmPage, formBody, htmlPage } from "@/lib/confirmPage";
 // nicht bei wiederholten Klicks) den Betreiber informieren — die Mail enthält
 // die Erinnerung, das DataFast-Profil manuell zu löschen. Fehler beim
 // Mailversand dürfen die Abmeldung selbst nie scheitern lassen.
+// Außerdem bekommt der Abonnent selbst eine Bestätigung mit Link zur
+// erneuten Anmeldung.
 async function notify(email: string) {
-  try {
-    await sendUnsubscribeNotification(email);
-  } catch (err) {
-    console.error("unsubscribe notification failed", err);
+  const results = await Promise.allSettled([
+    sendUnsubscribeConfirmation(email),
+    sendUnsubscribeNotification(email),
+  ]);
+  for (const r of results) {
+    if (r.status === "rejected") console.error("unsubscribe mail failed", r.reason);
   }
 }
 
