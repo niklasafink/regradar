@@ -105,6 +105,17 @@ export async function setLastNotified(email: string, iso: string): Promise<void>
   await redis().hset(KEY, { [key]: { ...existing, lastNotifiedAt: iso } satisfies Stored });
 }
 
+/** Rhythmus des Update-Newsletters umstellen (Link am Mailende).
+    true = gespeichert, false = Adresse ist (nicht mehr) abonniert. */
+export async function setFrequency(email: string, freq: Frequency): Promise<boolean> {
+  const key = email.trim().toLowerCase();
+  const existing = await redis().hget<Stored>(KEY, key);
+  if (!existing) return false;
+  if ((existing.frequency ?? "daily") === freq) return true;
+  await redis().hset(KEY, { [key]: { ...existing, frequency: freq } satisfies Stored });
+  return true;
+}
+
 /** Wasserzeichen des Rahmenwerk-Newsletters nach erfolgreichem Versand vorrücken. */
 export async function setLastFwNotified(email: string, iso: string): Promise<void> {
   const key = email.trim().toLowerCase();

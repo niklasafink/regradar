@@ -23,6 +23,7 @@ import { createSendPacer, createUnsubToken, sendApprovalRequest } from "./email"
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
 import { authority, daysUntil, dt } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
+import { createFreqToken, type Frequency } from "./email";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
 
 const SEEN_KEY = "newsletter:seen";
@@ -142,10 +143,44 @@ const fmtDe = (d: string): string => d; // bereits TT.MM.JJJJ
 
 /** E-Mail im Site-Design: schwarz-weiß, große Typo, Pill-Button.
     Liefert HTML plus Plain-Text-Alternative (bessere Spam-Bewertung). */
+/** Links zum Umstellen des Rhythmus am Mailende (fehlt bei Vorschauen). */
+export type FreqLinks = { current: Frequency; dailyUrl: string; weeklyUrl: string };
+
+export function freqLinksFor(sub: Subscriber, base: string): FreqLinks {
+  const url = (f: Frequency) =>
+    `${base}/api/frequency?token=${encodeURIComponent(createFreqToken(sub.email, f))}`;
+  return { current: sub.frequency ?? "daily", dailyUrl: url("daily"), weeklyUrl: url("weekly") };
+}
+
+const FREQ_LABEL: Record<Frequency, string> = {
+  daily: "einmal pro Tag (nur bei neuen Meldungen)",
+  weekly: "einmal pro Woche (nur bei neuen Meldungen)",
+};
+
+function renderFreqBlock(freq: FreqLinks): string {
+  const opt = (f: Frequency, url: string) => {
+    const active = f === freq.current;
+    const [title, sub] = f === "daily"
+      ? ["Einmal pro Tag", "nur bei neuen Meldungen"]
+      : ["Einmal pro Woche", "nur bei neuen Meldungen, gesammelt"];
+    const style = active
+      ? "background:#0f172a;color:#ffffff;border:1px solid #0f172a"
+      : "background:#ffffff;color:#0f172a;border:1px solid #e2e8f0";
+    return `<a href="${url}" style="display:inline-block;white-space:nowrap;${style};padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:13px;margin:0 8px 8px 0">${title}${active ? " ✓" : ""}<span style="display:block;font-weight:400;font-size:11px;opacity:.75">${sub}</span></a>`;
+  };
+  return `
+    <div style="margin:28px 0 0;padding:20px;border:1px solid #e2e8f0;border-radius:16px">
+      <p style="margin:0 0 4px;font-size:14px;font-weight:600;color:#0f172a">Wie oft möchten Sie diese E-Mail erhalten?</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#64748b">Aktuell: ${FREQ_LABEL[freq.current]}. Ein Klick genügt, kein Login nötig.</p>
+      ${opt("daily", freq.dailyUrl)}${opt("weekly", freq.weeklyUrl)}
+    </div>`;
+}
+
 export function renderNewsletter(
   pages: UpdatePage[],
   unsubUrl: string,
   base: string,
+  freq?: FreqLinks,
 ): { html: string; text: string } {
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
@@ -203,6 +238,14 @@ export function renderNewsletter(
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
     "",
+    ...(freq
+      ? [
+          `Wie oft möchten Sie diese E-Mail erhalten? Aktuell: ${FREQ_LABEL[freq.current]}.`,
+          `Einmal pro Tag (nur bei neuen Meldungen): ${freq.dailyUrl}`,
+          `Einmal pro Woche (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
+          "",
+        ]
+      : []),
     "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
     `Abmelden: ${unsubUrl}`,
@@ -234,6 +277,7 @@ export function renderNewsletter(
         Offene Fristen →
       </a>
     </p>
+    ${freq ? renderFreqBlock(freq) : ""}
     <p style="margin:32px 0 0;padding-top:16px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8;line-height:1.6">
       Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.
       Keine Rechtsberatung, alle Angaben ohne Gewähr.<br>
@@ -367,7 +411,7 @@ export async function runNewsletter(opts: {
         rel.length === 1
           ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
           : `${rel.length} neue regulatorische Updates`;
-      const { html, text } = renderNewsletter(rel, unsubUrl, base);
+      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base));
       await pace();
       const { error } = await resend.emails.send({
         from,

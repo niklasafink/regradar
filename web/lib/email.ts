@@ -197,6 +197,39 @@ export function verifyUnsubToken(token: string): string | null {
   }
 }
 
+// Rhythmus-Umschalter am Ende jeder Update-Mail: Ein Klick auf "täglich" bzw.
+// "wöchentlich" stellt den Rhythmus ohne Login um. Der Token trägt Adresse
+// und Ziel-Rhythmus, ist unbefristet gültig (wie der Abmelde-Link) und lässt
+// sich nicht zum Abmelden missbrauchen (eigener act-Wert).
+export function createFreqToken(email: string, freq: Frequency): string {
+  const payload = Buffer.from(
+    JSON.stringify({ email: email.toLowerCase(), act: "freq", freq }),
+  ).toString("base64url");
+  return `${payload}.${sign(payload)}`;
+}
+
+export function verifyFreqToken(
+  token: string,
+): { email: string; freq: Frequency } | null {
+  const [payload, sig] = token.split(".");
+  if (!payload || !sig) return null;
+  const a = Buffer.from(sig);
+  const b = Buffer.from(sign(payload));
+  if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
+  try {
+    const data = JSON.parse(Buffer.from(payload, "base64url").toString()) as {
+      email?: string;
+      act?: string;
+      freq?: string;
+    };
+    if (data.act !== "freq" || typeof data.email !== "string") return null;
+    if (data.freq !== "daily" && data.freq !== "weekly") return null;
+    return { email: data.email, freq: data.freq };
+  } catch {
+    return null;
+  }
+}
+
 export async function sendConfirmationEmail(
   email: string,
   providers: string[],

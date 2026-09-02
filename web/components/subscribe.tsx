@@ -7,7 +7,9 @@ import { useStore } from "@/lib/store";
 import { grantAnalyticsConsent } from "@/components/cookie-consent";
 import { identify, track } from "@/lib/track";
 
-type Status = "idle" | "sending" | "sent" | "confirmed" | "unsubscribed" | "error";
+type Status =
+  | "idle" | "sending" | "sent" | "confirmed" | "unsubscribed"
+  | "freq_daily" | "freq_weekly" | "error";
 
 type ErrorCode =
   | "invalid_email"
@@ -62,6 +64,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
     const abo = new URLSearchParams(window.location.search).get("abo");
     if (abo === "ok") setStatus("confirmed");
     if (abo === "off") setStatus("unsubscribed");
+    if (abo === "daily") setStatus("freq_daily");
+    if (abo === "weekly") setStatus("freq_weekly");
     if (abo === "invalid") {
       setErrorCode("link_invalid");
       setStatus("error");
@@ -152,6 +156,16 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
           {lang === "de"
             ? "Sie sind abgemeldet und erhalten keine weiteren E-Mails."
             : "You are unsubscribed and won't receive further emails."}
+        </p>
+      ) : status === "freq_daily" || status === "freq_weekly" ? (
+        <p className="mt-4 text-sm font-medium text-slate-900">
+          {lang === "de"
+            ? status === "freq_daily"
+              ? "✓ Gespeichert — Sie erhalten Updates einmal pro Tag, nur bei neuen Meldungen."
+              : "✓ Gespeichert — Sie erhalten Updates einmal pro Woche, nur bei neuen Meldungen."
+            : status === "freq_daily"
+              ? "✓ Saved — you'll receive updates once a day, only when there is news."
+              : "✓ Saved — you'll receive updates once a week, only when there is news."}
         </p>
       ) : status === "sent" ? (
         <div className="mx-auto mt-4 w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 text-center">
