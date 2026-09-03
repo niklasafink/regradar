@@ -15,6 +15,8 @@ import {
 } from "@/lib/logic";
 import { firstParagraph, updateHref } from "@/lib/updates";
 import { useStore } from "@/lib/store";
+import { useState } from "react";
+import type { Framework, Update } from "@/lib/data";
 
 export default function FrameworkDetail() {
   const { provider, id } = useParams<{ provider: string; id: string }>();
@@ -25,13 +27,30 @@ export default function FrameworkDetail() {
   if (!p || !f) notFound();
   const t = topicById(f.topic)!;
 
-  const ups = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
-  const fresh = ups.filter((u) => daysAgo(u.d) <= 30).length;
-  const sources = [...new Set(ups.map((u) => u.src))];
   const parent = parentOf(f);
   const kids = visibleFrameworks(p.id, null).filter((x) => x.parent === f.id);
   const siblings = visibleFrameworks(p.id, null)
     .filter((x) => x.topic === f.topic && x.id !== f.id && !x.parent);
+
+  // Slider als Filter: „Alle" (Hauptstandard + alle Unterrahmenwerke), der
+  // Hauptstandard selbst oder ein einzelnes Unterrahmenwerk.
+  const [sel, setSel] = useState<string>(kids.length > 0 ? "all" : f.id);
+  const shortName = (x: Framework) =>
+    x.sn ? tx(lang, x.sn) : tx(lang, x.n).split(":")[0].trim();
+  const scope: Framework[] =
+    sel === "all" ? [f, ...kids] : sel === f.id ? [f] : kids.filter((k) => k.id === sel);
+  const ups: { u: Update; owner: Framework }[] = scope
+    .flatMap((owner) => owner.u.map((u) => ({ u, owner })))
+    .sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
+  const fresh = ups.filter(({ u }) => daysAgo(u.d) <= 30).length;
+  const sources = [...new Set(ups.map(({ u }) => u.src))];
+  const tileCount = kids.length > 0 ? kids.length + 2 : 0;
+  const tile = (active: boolean) =>
+    `flex w-64 items-center gap-3 rounded-2xl border px-3.5 py-2.5 text-left transition-colors ${
+      active
+        ? "border-slate-900 bg-slate-900 text-white"
+        : "border-slate-200 bg-white hover:border-slate-900"
+    }`;
 
 
   return (
@@ -68,7 +87,7 @@ export default function FrameworkDetail() {
 
         <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1">
           <AuthorityLogo
-            src={FRAMEWORK_AUTH[f.id] ?? ups[0]?.src ?? "eur-lex.europa.eu"}
+            src={FRAMEWORK_AUTH[f.id] ?? f.u[0]?.src ?? "eur-lex.europa.eu"}
             className="h-5"
           />
           <p className="text-sm text-slate-400">
@@ -104,13 +123,13 @@ export default function FrameworkDetail() {
           {ups[0] && (
             <span>
               {lang === "de" ? "Stand" : "Updated"}{" "}
-              <span className="num font-semibold text-slate-900">{fmtDate(lang, ups[0].d)}</span>
+              <span className="num font-semibold text-slate-900">{fmtDate(lang, ups[0].u.d)}</span>
             </span>
           )}
           {ups.length > 1 && (
             <span>
               {lang === "de" ? "seit" : "since"}{" "}
-              <span className="num font-semibold text-slate-900">{fmtDate(lang, ups[ups.length - 1].d)}</span>
+              <span className="num font-semibold text-slate-900">{fmtDate(lang, ups[ups.length - 1].u.d)}</span>
             </span>
           )}
         </p>
@@ -131,35 +150,62 @@ export default function FrameworkDetail() {
           </details>
         )}
 
-        {/* Konkretisierende Vorgaben (Kinder: Leitlinien, RTS, ITS) als Slider */}
+        {/* Slider als Filter: Alle, Hauptstandard, je ein Unterrahmenwerk */}
         {kids.length > 0 && (
           <Carousel opts={{ align: "start" }} className="mt-5 flex items-center gap-3">
             <div className="min-w-0 flex-1">
             <CarouselContent>
-              {kids.map((k) => (
-                <CarouselItem key={k.id} className="basis-auto">
-                  <Link
-                    href={`/r/${p.slug}/f/${k.id}`}
-                    className="group flex w-64 items-center gap-3 rounded-2xl border border-slate-200 bg-white px-3.5 py-2.5 transition-colors hover:border-slate-900"
-                  >
-                    <AuthorityLogo src={FRAMEWORK_AUTH[k.id] ?? "eba.europa.eu"} className="h-4 shrink-0" />
-                    <span className="min-w-0">
-                      <span className="block truncate text-sm font-semibold tracking-tight">
-                        {tx(lang, k.sn ?? k.n)}
-                      </span>
-                      <span className="num block truncate text-xs text-slate-400">{k.ref}</span>
+              <CarouselItem className="basis-auto">
+                <button
+                  type="button"
+                  aria-pressed={sel === "all"}
+                  onClick={() => setSel("all")}
+                  className={tile(sel === "all").replace("w-64", "w-auto")}
+                >
+                  <span className="min-w-0">
+                    <span className="block text-sm font-semibold tracking-tight">
+                      {lang === "de" ? "Alle" : "All"}
                     </span>
-                    {daysAgo(k.latest) <= 14 && (
-                      <span className="ml-auto shrink-0 rounded-full bg-blue-600 px-2 py-0.5 text-[0.6875rem] font-medium text-white">
-                        {lang === "de" ? "Neu" : "New"}
+                    <span className={`num block text-xs ${sel === "all" ? "text-slate-300" : "text-slate-400"}`}>
+                      {[f, ...kids].reduce((n, x) => n + x.u.length, 0)} Updates
+                    </span>
+                  </span>
+                </button>
+              </CarouselItem>
+              {[f, ...kids].map((k) => {
+                const active = sel === k.id;
+                return (
+                  <CarouselItem key={k.id} className="basis-auto">
+                    <button
+                      type="button"
+                      aria-pressed={active}
+                      onClick={() => setSel(k.id)}
+                      className={tile(active)}
+                    >
+                      <AuthorityLogo
+                        src={FRAMEWORK_AUTH[k.id] ?? k.u[0]?.src ?? "eur-lex.europa.eu"}
+                        className={`h-4 shrink-0 ${active ? "invert" : ""}`}
+                      />
+                      <span className="min-w-0">
+                        <span className="block truncate text-sm font-semibold tracking-tight">
+                          {shortName(k)}
+                        </span>
+                        <span className={`num block truncate text-xs ${active ? "text-slate-300" : "text-slate-400"}`}>
+                          {k.ref}
+                        </span>
                       </span>
-                    )}
-                  </Link>
-                </CarouselItem>
-              ))}
+                      {daysAgo(k.u[0]?.d ?? "01.01.2020") <= 14 && (
+                        <span className="ml-auto shrink-0 rounded-full bg-blue-600 px-2 py-0.5 text-[0.6875rem] font-medium text-white">
+                          {lang === "de" ? "Neu" : "New"}
+                        </span>
+                      )}
+                    </button>
+                  </CarouselItem>
+                );
+              })}
             </CarouselContent>
             </div>
-            {kids.length > 2 && (
+            {tileCount > 3 && (
               <div className="flex shrink-0 gap-1.5">
                 <CarouselPrevious aria-label={lang === "de" ? "Zurück" : "Previous"} />
                 <CarouselNext aria-label={lang === "de" ? "Weiter" : "Next"} />
@@ -174,11 +220,11 @@ export default function FrameworkDetail() {
             {ups.length === 0 && (
               <p className="rounded-2xl border border-slate-200 bg-white p-4 text-sm leading-relaxed text-slate-500">
                 {lang === "de"
-                  ? "Für dieses Rahmenwerk liegen noch keine Updates vor. Neue Meldungen aus den Primärquellen erscheinen hier automatisch."
-                  : "No updates for this framework yet. New releases from the primary sources will appear here automatically."}
+                  ? "Für diese Auswahl liegen noch keine Updates vor. Neue Meldungen aus den Primärquellen erscheinen hier automatisch."
+                  : "No updates for this selection yet. New releases from the primary sources will appear here automatically."}
               </p>
             )}
-            {ups.map((u, i) => {
+            {ups.map(({ u, owner }, i) => {
               const isNew = daysAgo(u.d) <= 14;
               const expired = !!u.deadline && deadlineExpired(u.deadline);
               const urgent = u.deadline && !expired && daysUntil(u.deadline) < 60;
@@ -219,10 +265,19 @@ export default function FrameworkDetail() {
                     )}
                     <AuthorityLogo src={u.src} className="h-3.5" />
                     {u.refnum && <span className="num text-slate-400">{u.refnum}</span>}
+                    {sel === "all" && owner.id !== f.id && (
+                      <button
+                        type="button"
+                        onClick={() => setSel(owner.id)}
+                        className="rounded-full border border-slate-200 px-2 py-0.5 text-[0.6875rem] font-medium text-slate-500 hover:border-slate-900 hover:text-slate-900"
+                      >
+                        {shortName(owner)}
+                      </button>
+                    )}
                   </div>
                   <h2 className="mt-2 text-sm font-semibold tracking-tight">
                     <Link
-                      href={updateHref(f.id, u)}
+                      href={updateHref(owner.id, u)}
                       className="underline-offset-2 hover:underline"
                     >
                       {tx(lang, u.ti)}
@@ -254,7 +309,7 @@ export default function FrameworkDetail() {
                       target="_blank"
                       rel="noopener noreferrer"
                       data-fast-goal="original_link_click"
-                      data-fast-goal-framework={f.id}
+                      data-fast-goal-framework={owner.id}
                       data-fast-goal-authority={u.src}
                       className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-slate-900 underline-offset-2 hover:underline"
                     >

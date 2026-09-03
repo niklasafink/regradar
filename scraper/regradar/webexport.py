@@ -22,6 +22,35 @@ MAX_PER_FRAMEWORK = 6
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
 FRAMEWORK_RULES = [
+    # Konkretisierende Vorgaben (Kinder mit parent in data.ts) und eigenständige
+    # EBA-Leitlinien zuerst: sie sind spezifischer als die Rechtsakte darunter.
+    ("doraoversight", r"critical ict third.party|kritische[rn]? ikt-drittdienstleister|lead overseer|federführende überwachungsbehörde|"
+                      r"oversight (framework|fees?|activities|cooperation)|joint examination team|\bctpps?\b"),
+    ("dorathirdparty", r"register of information|informationsregister|subcontracting of ict|untervergabe|ict third.party|ikt-drittdienstleister"),
+    ("doraincident", r"major ict.related incident|schwerwiegende[rn]? ikt-vorf|incident classification|vorfallklassifizierung|ikt-vorfall|"
+                     r"(ict|ikt)[\s\S]{0,40}incident reporting|cyber threat|cyberbedrohung"),
+    ("doratlpt", r"\btlpt\b|threat.led penetration|bedrohungsorientiert"),
+    ("dorarmf", r"ict risk management framework|ikt-risikomanagementrahmen|simplified ict risk"),
+    ("ebatcb", r"third[- ]country branch|drittlandzweigstell|drittstaatenzweigstell"),
+    ("ebaasu", r"ancillary services undertaking|nebendienstleistung"),
+    ("ebaadc", r"\badc exposure|acquisition, development and construction|bauträgerfinanzierung"),
+    ("ebaconnected", r"connected clients|verbundener? kunden|kreditnehmereinheit"),
+    ("ebadod", r"definition of default|ausfalldefinition|\bdod\b(?=[\s\S]*(default|ausfall))"),
+    ("ebaenvscen", r"environmental scenario|esg scenario analysis|umweltszenario|klimaszenario|climate scenario analysis"),
+    ("srep", r"\bsrep\b|supervisory review and evaluation|supervisory stress test|aufsichtlicher überprüfungs"),
+    ("irrbb", r"\birrbb\b|\bcsrbb\b|interest rate risk in the banking book|zinsänderungsrisik|credit spread risk"),
+    ("ebagov", r"internal governance|interne[n]? governance"),
+    ("ebapog", r"product oversight|\bpog\b|retail banking products"),
+    ("ebarecovery", r"recovery plan indicator|overall recovery capacity|sanierungsindikator|sanierungskapazität|recovery planning"),
+    ("ebaresolvability", r"resolvability|abwicklungsfähigkeit|transferability|übertragbarkeit"),
+    ("ebaamlrisk", r"risk factors? guidelines|ml/tf risk factors|risikofaktoren-leitlinien|geldwäsche-risikofaktoren"),
+    ("ebaonboarding", r"remote customer onboarding|fernidentifizierung|videoident"),
+    ("ebaamlofficer", r"aml/cft compliance officer|compliance officer|geldwäschebeauftragte"),
+    ("ebaderisking", r"de-risking|derisking|access to financial services"),
+    ("ebasanctions", r"(guidelines|leitlinien)[\s\S]{0,60}restrictive measures|restrictive measures[\s\S]{0,60}(guidelines|leitlinien)|"
+                     r"sanktions-?compliance|sanctions compliance"),
+    ("ebadgsfunds", r"available financial means|dgs contributions|contributions to deposit guarantee|beiträge zur einlagensicherung"),
+    ("ebadgsstress", r"stress tests? of deposit guarantee|dgs stress test|stresstest[\s\S]{0,20}einlagensicherung"),
     # WpI MaRisk (Wertpapierinstitute) und KAMaRisk (KVGen) sind eigenständige
     # Regelwerke – nicht die Banken-MaRisk nach § 25a KWG.
     ("wpimarisk", r"wpi[\s-]*marisk|marisk\b[\s\S]*wertpapierinstitut|wertpapierinstitut[\s\S]*\bmarisk\b"),
@@ -143,9 +172,6 @@ FRAMEWORK_RULES = [
     # Prudenzielle Spezialregime vor SFDR/CRR: ESG-Risikomanagement, Kredit-
     # vergabe, Verbriefung, Pfandbrief, NPL-Zweitmarkt, Wohnimmobilienkredit,
     # Eignung von Geschäftsleitern.
-    # Untergeordnete EBA-Leitlinien (parent in data.ts) vor ihren Rechtsakten.
-    ("ebaenvscen", r"environmental scenario|esg scenario analysis|umweltszenario|klimaszenario|climate scenario analysis"),
-    ("ebadod", r"definition of default|ausfalldefinition|\bdod\b(?=[\s\S]*(default|ausfall))"),
     ("ebaesg", r"esg risks?\b|esg-risik|management of esg|nachhaltigkeitsrisiken im risikomanagement|"
                r"transition plan|transitionsplan|climate-related and environmental risk"),
     # Bewusst nur die Leitlinien selbst – "loan origination" allein taucht

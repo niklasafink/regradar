@@ -13,8 +13,9 @@ import { track } from "@/lib/track";
  * sich beide nicht überlagern. Schritt 1: Freitext, Schritt 2: E-Mail, dann
  * Versand an /api/feedback (Mail an den Betreiber, Reply-To = Nutzer).
  * Standard ist die kleine Form: Foto plus Sprechblase „Fehlt dir etwas?“.
- * Das X klappt das geöffnete Fenster wieder zusammen und blendet die
- * Sprechblase bis zum nächsten Seitenaufruf aus. Nichts wird gespeichert:
+ * Das X im geöffneten Fenster klappt es wieder zusammen und blendet die
+ * Sprechblase aus; das kleine X unten rechts auf dem Foto blendet das ganze
+ * Widget bis zum nächsten Seitenaufruf aus. Nichts wird gespeichert:
  * nach einem Neuladen erscheint die kleine Form wieder, auch nach dem Versand.
  */
 
@@ -120,14 +121,6 @@ export function FeedbackWidget() {
       <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-3 z-40 flex items-center gap-1.5 animate-[rr-pop-in_.5s_cubic-bezier(.16,1,.3,1)_both] sm:right-4 sm:gap-2">
         <button
           type="button"
-          onClick={() => setGone(true)}
-          aria-label={de ? "Ausblenden" : "Hide"}
-          className="flex size-6 items-center justify-center rounded-full bg-white text-slate-400 shadow-sm ring-1 ring-slate-200 transition-colors hover:text-slate-900"
-        >
-          <span aria-hidden className="text-sm leading-none">×</span>
-        </button>
-        <button
-          type="button"
           onClick={open}
           aria-label={de ? "Fehlt dir etwas? Feedback geben" : "Missing something? Give feedback"}
           className="group flex items-center gap-1.5 sm:gap-2"
@@ -137,20 +130,28 @@ export function FeedbackWidget() {
               {de ? "Fehlt dir etwas?" : "Missing something?"}
             </span>
           )}
-          <span className="relative rounded-full bg-white p-0.5 shadow-md ring-1 ring-slate-200 transition-transform group-hover:scale-105">
+          {/* Das Foto ist das höchste Element der Zeile, daher entspricht die
+              obere rechte Ecke des Containers genau der Ecke des Fotos. */}
+          <span className="block rounded-full bg-white p-0.5 shadow-md ring-1 ring-slate-200 transition-transform group-hover:scale-105">
             <span className="block sm:hidden">
               <Avatar size={36} />
             </span>
             <span className="hidden sm:block">
               <Avatar size={44} />
             </span>
-            <span
-              className="absolute -right-0.5 -top-0.5 flex size-4 items-center justify-center rounded-full text-[10px] font-semibold leading-none text-white ring-2 ring-white"
-              style={{ background: "linear-gradient(135deg,#1e1b4b,#3b82f6)" }}
-            >
-              ?
-            </span>
           </span>
+        </button>
+        {/* X in leicht transparentem grauem Kreis oberhalb der rechten Fotoecke: blendet das
+            Widget bis zum nächsten Seitenaufruf aus. */}
+        <button
+          type="button"
+          onClick={() => setGone(true)}
+          aria-label={de ? "Ausblenden" : "Hide"}
+          className="absolute -right-1 -top-2.5 flex size-4 items-center justify-center rounded-full bg-slate-500/15 text-slate-600 backdrop-blur-sm transition-colors hover:bg-slate-500/30 hover:text-slate-900"
+        >
+          <svg aria-hidden viewBox="0 0 12 12" className="size-2.5" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round">
+            <path d="M2 2l8 8M10 2l-8 8" />
+          </svg>
         </button>
       </div>
     );
@@ -203,7 +204,7 @@ export function FeedbackWidget() {
               : "Thanks! I'll get in touch if needed."
             : step === "email"
               ? de
-                ? "Ihre Nachricht geht direkt an mich. Wohin darf ich antworten?"
+                ? "Deine Nachricht geht direkt an mich. Wohin darf ich antworten?"
                 : "Your message goes straight to me. Where can I reply?"
               : de
                 ? "Ich bin Niklas und baue RegRadar. Fehlt eine Quelle, ein Rahmenwerk oder eine Funktion?"
@@ -237,7 +238,7 @@ export function FeedbackWidget() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder={de ? "Ihre E-Mail-Adresse" : "Your email address"}
+                  placeholder={de ? "Deine E-Mail-Adresse" : "Your email address"}
                   className={`${input} rounded-full px-4 py-2.5`}
                 />
               </>

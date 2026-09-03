@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
 import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
-import { firstParagraph, isoDate, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
+import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return UPDATE_PAGES.map(({ slug }) => ({ slug }));
+  return [
+    ...UPDATE_PAGES.map(({ slug }) => ({ slug })),
+    ...[...LEGACY_SLUGS.keys()].map((slug) => ({ slug })),
+  ];
 }
 
 export async function generateMetadata(
@@ -41,6 +44,8 @@ export default async function UpdatePage(
   { params }: { params: Promise<{ slug: string }> },
 ) {
   const { slug } = await params;
+  const moved = LEGACY_SLUGS.get(slug);
+  if (moved) permanentRedirect(`/u/${moved}`);
   const page = updateBySlug(slug);
   if (!page) notFound();
   const { fw, u } = page;

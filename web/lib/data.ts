@@ -362,24 +362,25 @@ export const FRAMEWORKS: Framework[] = [
           en:"The act of 17 July 2015 obliges operators of critical infrastructures, including the finance and insurance sector, to meet minimum IT security standards and report significant disruptions to the BSI. In force since 25 July 2015."}}
     ]},
 
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
   { id:"ebaict", jur:"EU",
-    about:{de:"Aufsichtliche Leitlinien der EBA zur Steuerung von IKT- und Sicherheitsrisiken, die MaRisk und DORA operativ unterlegen.",en:"EBA supervisory guidelines on managing ICT and security risk, giving operational substance to MaRisk and DORA."}, topic:"ICT", ents:["CI","IF","PI"],
+    about:{de:"Aufsichtliche Leitlinien der EBA zur Steuerung von IKT- und Sicherheitsrisiken, die MaRisk und DORA operativ unterlegen.",en:"EBA supervisory guidelines on managing ICT and security risk, giving operational substance to MaRisk and DORA."},
+    topic:"ICT", ents:["CI","IF","PI"],
     n:{de:"EBA-Leitlinien zu IKT- und Sicherheitsrisiken",en:"EBA guidelines on ICT and security risk"},
-    alias:"EBA ICT Guidelines, IKT-Risikomanagement, IT-Sicherheit, EBA/GL/2019/04",
+    alias:"EBA ICT Guidelines, IKT-Risikomanagement, IT-Sicherheit, EBA/GL/2019/04, EBA/GL/2025/02, Zahlungsdienstnutzer",
     ref:"EBA/GL/2019/04, EBA/GL/2025/02", cond:null,
     refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-ict-and-security-risk-management",
-    /* Chronologie inkl. früherer Fassungen gegen EUR-Lex/Cellar, bafin.de, recht.bund.de bzw. eba.europa.eu geprüft (Stand 03.09.2026). */
     u:[
-      {refnum:"EBA/GL/2025/02", eff:"20.05.2025", d:"11.02.2025", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+      {refnum:"EBA/GL/2025/02", d:"11.02.2025", eff:"20.05.2025", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
        url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-amends-its-guidelines-ict-and-security-risk-management-measures-context-dora-application",
-       ti:{de:"EBA passt die IKT-Leitlinien an DORA an: Anwendungsbereich auf Nicht-DORA-Unternehmen verengt (EBA/GL/2025/02)",en:"EBA aligns its ICT guidelines with DORA: scope narrowed to entities outside DORA (EBA/GL/2025/02)"},
-       s:{de:"Seit Geltung von DORA am 17.01.2025 gelten die harmonisierten IKT-Anforderungen unmittelbar. Die EBA streicht daher die überlappenden Abschnitte ihrer Leitlinien; sie gelten nur noch für Zahlungsdienstleister außerhalb von DORA und für die Sicherheit von Zahlungsdiensten nach PSD2. Anwendung ab 20.05.2025.",
-          en:"Since DORA applies from 17 January 2025, the harmonised ICT requirements apply directly. The EBA therefore removes the overlapping sections of its guidelines; they now apply only to payment service providers outside DORA and to payment security under PSD2. Applicable from 20 May 2025."}},
-      {refnum:"EBA/GL/2019/04", eff:"30.06.2020", d:"28.11.2019", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
-       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-ict-and-security-risk-management",
-       ti:{de:"EBA-Leitlinien zum Management von IKT- und Sicherheitsrisiken veröffentlicht (EBA/GL/2019/04)",en:"EBA guidelines on ICT and security risk management published (EBA/GL/2019/04)"},
-       s:{de:"Die Leitlinien legen für Kreditinstitute, Wertpapierfirmen und Zahlungsdienstleister Anforderungen an Governance, Informationssicherheit, Betrieb, Projekt- und Änderungsmanagement sowie Notfallmanagement fest und ersetzen die PSD2-Leitlinien zu Sicherheitsmaßnahmen. Anwendung ab 30.06.2020.",
-          en:"The guidelines set requirements for credit institutions, investment firms and payment service providers on governance, information security, operations, project and change management and business continuity, replacing the PSD2 guidelines on security measures. Applicable from 30 June 2020."}}
+       ti:{de:"Leitlinien wegen DORA eingeengt: nur noch Beziehungsmanagement zu Zahlungsdienstnutzern",en:"Guidelines narrowed because of DORA: only relationship management with payment service users remains"},
+       s:{de:"Seit DORA am 17.01.2025 den IKT-Risikomanagementrahmen harmonisiert, beschränkt die EBA ihre Leitlinien auf Kreditinstitute, Zahlungsinstitute, Kontoinformationsdienstleister sowie ausgenommene Zahlungs- und E-Geld-Institute und inhaltlich auf das Beziehungsmanagement gegenüber Zahlungsdienstnutzern. Anwendung ab 20.05.2025; konsolidierte Fassung vom 19.05.2026.",
+          en:"Since DORA harmonised the ICT risk management framework from 17 January 2025, the EBA limits its guidelines to credit institutions, payment institutions, account information service providers and exempted payment and e-money institutions, and in substance to relationship management with payment service users. Applies from 20 May 2025; consolidated version of 19 May 2026."}},
+      {refnum:"EBA/GL/2019/04", d:"28.11.2019", eff:"30.06.2020", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/2026-05/c8fb6168-0aef-42f6-8da9-114a8baf21b9/Consolidated%20version%20of%20EBA%20ameding%20Guidelines%20on%20ICT%20and%20security%20risk%20management.pdf",
+       ti:{de:"Leitlinien zu IKT- und Sicherheitsrisiken: Anwendung ab 30.06.2020",en:"Guidelines on ICT and security risk management: apply from 30 Jun 2020"},
+       s:{de:"Erste sektorübergreifende EBA-Vorgaben für Kreditinstitute, Wertpapierfirmen und Zahlungsdienstleister: Governance und Strategie, Informationssicherheit, Rollentrennung, Zugriffs- und Änderungsmanagement, Business Continuity und Beziehungsmanagement zu Zahlungsdienstnutzern. Ersetzen die Sicherheitsleitlinien unter PSD2.",
+          en:"First cross-sectoral EBA requirements for credit institutions, investment firms and payment service providers: governance and strategy, information security, segregation of duties, access and change management, business continuity and relationship management with payment service users. Replace the security guidelines under PSD2."}}
     ]},
 
   { id:"amla", jur:"EU",
@@ -426,6 +427,88 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"1. Geldwäscherichtlinie: Beginn der EU-Geldwäscheprävention",en:"1st AML Directive: the start of EU anti-money laundering rules"},
        s:{de:"Die Richtlinie 91/308/EWG verpflichtet Kredit- und Finanzinstitute erstmals zur Identifizierung ihrer Kunden, zur Aufbewahrung von Unterlagen und zur Meldung von Verdachtsfällen. Umsetzung bis 01.01.1993.",
           en:"Directive 91/308/EEC obliges credit and financial institutions for the first time to identify their customers, retain records and report suspicions. Transposition by 1 January 1993."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaamlrisk", jur:"EU", parent:"amla",
+    about:{de:"Welche Risikofaktoren Kredit- und Finanzinstitute bei der Bewertung von Geschäftsbeziehungen und Transaktionen berücksichtigen müssen und wie sie ihre Sorgfaltspflichten daran ausrichten, mit sektoralen Leitlinien und Ergänzungen für gemeinnützige Organisationen und Kryptodienstleister.",
+           en:"Which risk factors credit and financial institutions must consider when assessing business relationships and transactions and how to calibrate customer due diligence accordingly, with sectoral guidelines and additions for non-profit organisations and crypto-asset service providers."},
+    topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"EBA-Leitlinien zu Geldwäsche-Risikofaktoren und Sorgfaltspflichten",en:"EBA guidelines on ML/TF risk factors and customer due diligence"},
+    sn:{de:"Risikofaktoren",en:"Risk factors"},
+    alias:"ML/TF Risk Factors, Risikofaktoren-Leitlinien, Customer Due Diligence, CDD, Sorgfaltspflichten, EBA/GL/2021/02, EBA/GL/2023/03, EBA/GL/2024/01, CASP Risikofaktoren",
+    ref:"EBA/GL/2021/02, EBA/GL/2023/03, EBA/GL/2024/01", cond:null,
+    refUrl:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf",
+    u:[
+      {refnum:"EBA/GL/2024/01", d:"16.01.2024", eff:"30.12.2024", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/2024-01/a3e89f4f-fbf3-4bd6-9e07-35f3243555b3/Final%20Amending%20%20Guidelines%20on%20MLTF%20Risk%20Factors.pdf",
+       ti:{de:"Risikofaktoren-Leitlinien um Kryptodienstleister erweitert: Anwendung ab 30.12.2024",en:"Risk-factor guidelines extended to crypto-asset service providers: apply from 30 Dec 2024"},
+       s:{de:"Neue sektorale Leitlinie für Anbieter von Kryptowerte-Dienstleistungen mit Risikofaktoren zu Anonymisierungsdiensten, selbst gehosteten Wallets und Transfers, dazu Vorgaben für Institute mit Kryptokunden.",
+          en:"New sectoral guideline for crypto-asset service providers with risk factors on anonymising services, self-hosted wallets and transfers, plus requirements for institutions serving crypto clients."}},
+      {refnum:"EBA/GL/2023/03", d:"31.03.2023", eff:"03.11.2023", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054143/Amending%20GLs%20to%20the%20RFGLs%20in%20relation%20to%20NPOs.pdf",
+       ti:{de:"Ergänzung um Risikofaktoren für gemeinnützige Organisationen",en:"Amendment adding risk factors for non-profit organisations"},
+       s:{de:"Neue sektorale Leitlinie, damit gemeinnützige Organisationen nicht pauschal als Hochrisikokunden behandelt werden. Anwendung ab 03.11.2023, zeitgleich mit den Leitlinien zum Zugang zu Finanzdienstleistungen.",
+          en:"New sectoral guideline so that non-profit organisations are not treated as high-risk clients across the board. Applies from 3 November 2023, together with the guidelines on access to financial services."}},
+      {refnum:"EBA/GL/2021/02", d:"01.03.2021", eff:"26.10.2021", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2021/963637/Final%20Report%20on%20Guidelines%20on%20revised%20ML%20TF%20Risk%20Factors.pdf",
+       ti:{de:"Überarbeitete Risikofaktoren-Leitlinien: Anwendung ab 26.10.2021",en:"Revised risk-factor guidelines: apply from 26 Oct 2021"},
+       s:{de:"Neufassung nach der 5. Geldwäscherichtlinie: neue Risikofaktoren zu Terrorismusfinanzierung und Hochrisikodrittländern, Vorgaben zu Fernidentifizierung, Sorgfaltspflichten gegenüber wirtschaftlich Berechtigten und sektorale Leitlinien u. a. für Crowdfunding und Kontoinformationsdienste.",
+          en:"Revision following the 5th AML Directive: new risk factors on terrorist financing and high-risk third countries, requirements for remote identification, due diligence on beneficial owners and sectoral guidelines for crowdfunding and account information services among others."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaonboarding", jur:"EU", parent:"amla",
+    about:{de:"Anforderungen an Richtlinien, Verfahren und Technik, wenn Kunden ohne persönliche Anwesenheit identifiziert werden: Auswahl und Prüfung der Lösung, Dokumentenprüfung, Echtheits- und Lebendigkeitsprüfung, Einsatz von Dienstleistern.",
+           en:"Requirements for policies, procedures and technology when clients are identified without physical presence: selecting and testing the solution, document checks, authenticity and liveness checks, use of service providers."},
+    topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"EBA-Leitlinien zur Fernidentifizierung (Remote Customer Onboarding)",en:"EBA guidelines on remote customer onboarding"},
+    sn:{de:"Fernidentifizierung",en:"Remote onboarding"},
+    alias:"Remote Customer Onboarding, Fernidentifizierung, Videoident, digitale Identifizierung, Onboarding-Lösungen, EBA/GL/2022/15, Art. 13 AMLD",
+    ref:"EBA/GL/2022/15", cond:null,
+    refUrl:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf",
+    u:[
+      {refnum:"EBA/GL/2022/15", d:"22.11.2022", eff:"02.10.2023", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-15%20GL%20on%20remote%20customer%20onboarding/1043884/Guidelines%20on%20the%20use%20of%20Remote%20Customer%20Onboarding%20Solutions.pdf",
+       ti:{de:"Leitlinien zur Fernidentifizierung: Anwendung ab 02.10.2023",en:"Guidelines on remote customer onboarding: apply from 2 Oct 2023"},
+       s:{de:"Erstmals EU-weite Mindestanforderungen an Onboarding-Lösungen ohne persönliche Anwesenheit, technologieneutral formuliert. Institute müssen die Lösung vor Einsatz bewerten, laufend überwachen und bei Auslagerung die Verantwortung behalten.",
+          en:"First EU-wide minimum requirements for onboarding solutions without physical presence, drafted technology-neutrally. Institutions must assess the solution before use, monitor it continuously and retain responsibility when outsourcing."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaamlofficer", jur:"EU", parent:"amla",
+    about:{de:"Rolle und Aufgaben des Leitungsorgans, des für Geldwäscheprävention zuständigen Geschäftsleiters und des Geldwäschebeauftragten sowie die Organisation der Compliance-Funktion auf Gruppenebene.",
+           en:"Role and duties of the management body, the senior manager responsible for AML/CFT and the AML/CFT compliance officer, plus the organisation of the compliance function at group level."},
+    topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"EBA-Leitlinien zur Geldwäsche-Compliance-Funktion und zum Geldwäschebeauftragten",en:"EBA guidelines on AML/CFT compliance management and the compliance officer"},
+    sn:{de:"Geldwäschebeauftragter",en:"AML compliance officer"},
+    alias:"Geldwäschebeauftragter, AML Compliance Officer, AML/CFT Compliance Function, Compliance-Funktion, EBA/GL/2022/05, Art. 8 AMLD",
+    ref:"EBA/GL/2022/05", cond:null,
+    refUrl:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-05%20GLs%20on%20AML%20compliance%20officers/1035126/Guidelines%20on%20AMLCFT%20compliance%20officers.pdf",
+    u:[
+      {refnum:"EBA/GL/2022/05", d:"14.06.2022", eff:"01.12.2022", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2022/EBA-GL-2022-05%20GLs%20on%20AML%20compliance%20officers/1035126/Guidelines%20on%20AMLCFT%20compliance%20officers.pdf",
+       ti:{de:"Leitlinien zum Geldwäschebeauftragten: Anwendung ab 01.12.2022",en:"Guidelines on the AML/CFT compliance officer: apply from 1 Dec 2022"},
+       s:{de:"Legen fest, welche Qualifikation, Stellung und Ressourcen der Geldwäschebeauftragte braucht, welche Berichte an das Leitungsorgan gehen und wie die Funktion in Gruppen organisiert wird. Nationale Regeln wie § 7 GwG bleiben daneben bestehen.",
+          en:"Set out the qualification, position and resources the AML/CFT compliance officer needs, which reports go to the management body and how the function is organised in groups. National rules such as Section 7 GwG continue to apply alongside."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaderisking", jur:"EU", parent:"amla",
+    about:{de:"Vorgaben, wie Institute Geldwäscherisiken steuern, ohne ganze Kundengruppen pauschal abzulehnen: Einzelfallprüfung statt Ausschluss, Dokumentation von Ablehnungen und Kündigungen, Umgang mit Kunden ohne festen Wohnsitz oder mit besonderen Nachweisen.",
+           en:"Rules on how institutions manage ML/TF risk without blanket rejection of whole client groups: case-by-case assessment instead of exclusion, documentation of refusals and terminations, treatment of clients without fixed residence or with unusual documentation."},
+    topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"EBA-Leitlinien zum Zugang zu Finanzdienstleistungen (De-Risking)",en:"EBA guidelines on access to financial services (de-risking)"},
+    sn:{de:"De-Risking",en:"De-risking"},
+    alias:"De-Risking, Zugang zu Finanzdienstleistungen, Access to Financial Services, Kontokündigung Geldwäsche, Basiskonto Geldwäscherisiko, EBA/GL/2023/04",
+    ref:"EBA/GL/2023/04", cond:null,
+    refUrl:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054144/Guidelines%20on%20MLTF%20risk%20management%20and%20access%20to%20financial%20services.pdf",
+    u:[
+      {refnum:"EBA/GL/2023/04", d:"31.03.2023", eff:"03.11.2023", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/document_library/Publications/Guidelines/2023/1054144/Guidelines%20on%20MLTF%20risk%20management%20and%20access%20to%20financial%20services.pdf",
+       ti:{de:"Leitlinien gegen pauschales De-Risking: Anwendung ab 03.11.2023",en:"Guidelines against blanket de-risking: apply from 3 Nov 2023"},
+       s:{de:"Institute dürfen Kunden nicht allein wegen Zugehörigkeit zu einer Kategorie ablehnen, sondern müssen das Risiko im Einzelfall bewerten und Alternativen zur Kündigung prüfen. Ergänzt um die gleichzeitig veröffentlichte Leitlinie für gemeinnützige Organisationen.",
+          en:"Institutions may not reject clients solely for belonging to a category but must assess risk case by case and consider alternatives to termination. Complemented by the guideline on non-profit organisations published at the same time."}}
     ]},
 
   { id:"gwg", jur:"DE",
@@ -482,6 +565,24 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"Sanktionsdurchsetzungsgesetz I: Ermittlungsbefugnisse zur Durchsetzung von EU-Sanktionen",en:"Sanctions Enforcement Act I: investigative powers to enforce EU sanctions"},
        s:{de:"Als Reaktion auf die Russland-Sanktionen erhalten die Behörden Befugnisse zur Ermittlung und Sicherstellung von Vermögenswerten sanktionierter Personen sowie Auskunftsrechte gegenüber Verpflichteten. In Kraft seit 28.05.2022.",
           en:"In response to the Russia sanctions, authorities receive powers to investigate and secure assets of sanctioned persons and information rights vis-à-vis obliged entities. In force since 28 May 2022."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebasanctions", jur:"EU", parent:"sanctions",
+    about:{de:"Erstmals EU-weit einheitliche Anforderungen an Governance, Risikobewertung, Screening, Alarmbearbeitung, Einfrieren von Geldern und Meldungen zur Einhaltung von EU- und nationalen Sanktionen, mit einem eigenen Regelwerk für Zahlungs- und Kryptodienstleister.",
+           en:"First EU-wide uniform requirements for governance, exposure assessment, screening, alert handling, freezing of funds and reporting to comply with EU and national sanctions, with a dedicated set for payment and crypto-asset service providers."},
+    topic:"AML", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"EBA-Leitlinien zur Umsetzung restriktiver Maßnahmen (Sanktions-Compliance)",en:"EBA guidelines on implementing restrictive measures (sanctions compliance)"},
+    sn:{de:"Sanktions-Compliance",en:"Sanctions compliance"},
+    alias:"Restrictive Measures, restriktive Maßnahmen, Sanktionsscreening, Sanctions Screening, Sanktions-Compliance, EBA/GL/2024/14, EBA/GL/2024/15, Einfrieren von Geldern",
+    ref:"EBA/GL/2024/14, EBA/GL/2024/15", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/anti-money-laundering-and-countering-financing-terrorism/guidelines-internal-policies-procedures-and-controls-ensure-implementation-union-and-national",
+    u:[
+      {refnum:"EBA/GL/2024/14", d:"14.11.2024", eff:"30.12.2025", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/anti-money-laundering-and-countering-financing-terrorism/guidelines-internal-policies-procedures-and-controls-ensure-implementation-union-and-national",
+       ti:{de:"Zwei Leitlinien zur Sanktions-Compliance: Anwendung ab 30.12.2025",en:"Two sets of guidelines on sanctions compliance: apply from 30 Dec 2025"},
+       s:{de:"EBA/GL/2024/14 verpflichtet alle Institute im EBA-Mandat zu einer Sanktions-Risikobewertung, klarer Verantwortungszuordnung und angemessenen Kontrollen. EBA/GL/2024/15 regelt für Zahlungs- und Kryptodienstleister zusätzlich Screening-Systeme, Alarmprüfung, Einfrieren und Meldung nach der Geldtransfer-Verordnung.",
+          en:"EBA/GL/2024/14 requires all institutions within the EBA's remit to carry out a sanctions exposure assessment, allocate responsibility clearly and maintain adequate controls. EBA/GL/2024/15 additionally governs screening systems, alert handling, freezing and reporting for payment and crypto-asset service providers under the Transfer of Funds Regulation."}}
     ]},
 
   { id:"tfr", jur:"EU",
@@ -560,6 +661,93 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"Leitlinien zur Anwendung der Ausfalldefinition: einheitliche Auslegung von Art. 178 CRR",en:"Guidelines on applying the definition of default: uniform reading of Art. 178 CRR"},
        s:{de:"Harmonisiert die Ausfallerkennung in der EU: Zählung der Verzugstage, Wesentlichkeitsschwellen, Indikatoren für unwahrscheinliche Rückzahlung, Behandlung von Restrukturierungen und Bedingungen für die Rückkehr in den Nicht-Ausfall-Status. Anwendung spätestens ab 01.01.2021 zusammen mit den RTS zur Wesentlichkeitsschwelle.",
           en:"Harmonises default recognition across the EU: counting days past due, materiality thresholds, unlikeliness-to-pay indicators, treatment of restructurings and conditions for returning to non-defaulted status. Applied from 1 January 2021 at the latest, together with the RTS on the materiality threshold."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaconnected", jur:"EU", parent:"crr3",
+    about:{de:"Wann Kunden wegen Kontrolle oder wirtschaftlicher Abhängigkeit als Gruppe verbundener Kunden gelten und damit als ein Adressenausfallrisiko in der Großkreditmeldung zusammenzufassen sind.",
+           en:"When clients form a group of connected clients through control or economic dependency and must therefore be treated as a single risk for large-exposure purposes."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"EBA-Leitlinien zu Gruppen verbundener Kunden (Großkredite)",en:"EBA guidelines on connected clients (large exposures)"},
+    sn:{de:"Verbundene Kunden",en:"Connected clients"},
+    alias:"Connected Clients, Gruppe verbundener Kunden, GvK, Kreditnehmereinheit, Großkredit, Large Exposures, EBA/GL/2017/15, Del. VO 2024/1728",
+    ref:"EBA/GL/2017/15, EBA/GL/2017/15-rev1, Del. VO (EU) 2024/1728", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/large-exposures/guidelines-connected-clients",
+    u:[
+      {refnum:"EBA/GL/2017/15-rev1", d:"29.04.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-streamlines-its-guidelines-connected-clients-align-new-eu-legislation",
+       ti:{de:"Leitlinien zu verbundenen Kunden gestrafft: Abschnitte zu Kontrolle und wirtschaftlicher Abhängigkeit entfallen",en:"Connected-clients guidelines streamlined: sections on control and economic dependency removed"},
+       s:{de:"Da die Delegierte Verordnung (EU) 2024/1728 die Voraussetzungen für Kontrollbeziehungen und wirtschaftliche Abhängigkeit nun unmittelbar regelt, streicht die EBA per Beschluss die Abschnitte 4, 6 und 7 der Leitlinien. Die konsolidierte Fassung EBA/GL/2017/15-rev1 enthält nur noch die verbleibenden Klarstellungen.",
+          en:"Because Delegated Regulation (EU) 2024/1728 now directly governs control relationships and economic dependency, the EBA deletes sections 4, 6 and 7 of the guidelines by decision. The consolidated version EBA/GL/2017/15-rev1 retains only the remaining clarifications."}},
+      {refnum:"EBA/GL/2017/15", d:"14.11.2017", eff:"01.01.2019", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/large-exposures/guidelines-connected-clients",
+       ti:{de:"Leitlinien zu verbundenen Kunden: Anwendung ab 01.01.2019",en:"Guidelines on connected clients: apply from 1 Jan 2019"},
+       s:{de:"Konkretisieren Art. 4 Abs. 1 Nr. 39 CRR: Kontrollbeziehungen, wirtschaftliche Abhängigkeit, Kombination beider Kriterien und Kontrollverfahren, mit denen Institute Verbindungen zwischen Kunden erkennen. Ersetzen die CEBS-Leitlinien von 2009.",
+          en:"Specify Art. 4(1)(39) CRR: control relationships, economic dependency, the combination of both criteria and the control procedures institutions use to identify links between clients. Replace the CEBS guidelines of 2009."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaadc", jur:"EU", parent:"crr3",
+    about:{de:"Voraussetzungen, unter denen Grunderwerbs-, Entwicklungs- und Baufinanzierungen für Wohnimmobilien im Kreditrisiko-Standardansatz mit 100 % statt 150 % gewichtet werden dürfen: Vorverkaufs- und Vorvermietungsquoten sowie Eigenkapitaleinsatz des Kreditnehmers.",
+           en:"Conditions under which acquisition, development and construction exposures to residential property may be risk-weighted at 100% instead of 150% under the standardised approach: pre-sale and pre-lease shares and the borrower's equity at risk."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"EBA-Leitlinien zu ADC-Risikopositionen bei Wohnimmobilien (Art. 126a CRR)",en:"EBA guidelines on ADC exposures to residential property (Art. 126a CRR)"},
+    sn:{de:"ADC-Risikopositionen",en:"ADC exposures"},
+    alias:"ADC, Acquisition Development Construction, Bauträgerfinanzierung, Projektfinanzierung Wohnimmobilien, Art. 126a CRR, EBA/GL/2025/03, Risikogewicht 150 %",
+    ref:"EBA/GL/2025/03", cond:null,
+    refUrl:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-acquisition-development-and-construction-exposures-residential",
+    u:[
+      {refnum:"EBA/GL/2025/03", d:"27.06.2025", eff:"04.11.2025", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-acquisition-development-and-construction-exposures-residential",
+       ti:{de:"Finale Leitlinien zu ADC-Risikopositionen: 100 % Risikogewicht ab 04.11.2025 unter Bedingungen",en:"Final guidelines on ADC exposures: 100% risk weight from 4 Nov 2025 subject to conditions"},
+       s:{de:"Das ermäßigte Risikogewicht setzt voraus, dass mindestens 50 % der Verträge Vorverkaufs- oder Vorvermietungsverträge mit Anzahlung (mindestens 10 % des Kaufpreises bzw. drei Monatsmieten) sind und der Kreditnehmer mindestens 25 % des Fertigstellungswerts als Eigenkapital einsetzt. Anwendung ab 04.11.2025.",
+          en:"The reduced risk weight requires that at least 50% of contracts are pre-sale or pre-lease contracts with a deposit (at least 10% of the sale price or three monthly rents) and that the obligor contributes at least 25% of the completed value as equity. Applies from 4 November 2025."}},
+      {refnum:"EBA/CP/2024/12", d:"17.05.2024", deadline:"19.08.2024", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-draft-guidelines-acquisition-development-and-construction-exposures-residential",
+       ti:{de:"Konsultation zu ADC-Risikopositionen im Kreditrisiko-Standardansatz",en:"Consultation on ADC exposures under the standardised approach"},
+       s:{de:"Entwurf der Bedingungen, unter denen Institute ADC-Finanzierungen für Wohnimmobilien mit 100 % gewichten dürfen. Stellungnahmen bis 19.08.2024.",
+          en:"Draft conditions under which institutions may apply a 100% risk weight to ADC exposures to residential property. Comments were due by 19 August 2024."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaasu", jur:"EU", parent:"crr3",
+    about:{de:"Kriterien, welche Tätigkeiten als direkte Verlängerung des Bankgeschäfts, als bankbezogene Nebentätigkeit oder als ähnliche Tätigkeit gelten und ein Unternehmen damit in die aufsichtliche Konsolidierung einbeziehen.",
+           en:"Criteria for which activities count as a direct extension of banking, ancillary to banking or similar, thereby bringing an undertaking into the scope of prudential consolidation."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"EBA-Leitlinien zu Anbietern von Nebendienstleistungen (Art. 4 Abs. 1 Nr. 18 CRR)",en:"EBA guidelines on ancillary services undertakings (Art. 4(1)(18) CRR)"},
+    sn:{de:"Nebendienstleistungen",en:"Ancillary services"},
+    alias:"Ancillary Services Undertakings, ASU, Anbieter von Nebendienstleistungen, aufsichtliche Konsolidierung, prudential consolidation, EBA/GL/2026/01",
+    ref:"EBA/GL/2026/01", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/accounting-and-auditing/guidelines-ancillary-services-undertakings",
+    u:[
+      {refnum:"EBA/GL/2026/01", d:"09.01.2026", eff:"04.05.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/accounting-and-auditing/guidelines-ancillary-services-undertakings",
+       ti:{de:"Finale Leitlinien zu Anbietern von Nebendienstleistungen: Anwendung ab 04.05.2026",en:"Final guidelines on ancillary services undertakings: apply from 4 May 2026"},
+       s:{de:"Die Leitlinien legen einfache und einheitliche Kriterien fest, nach denen Tätigkeiten wie Leasing, Immobilienverwaltung oder Datenverarbeitung als Nebendienstleistungen gelten. Sie begleiten den EBA-Bericht zur aufsichtlichen Konsolidierung und folgen einer Konsultation bis 07.10.2025.",
+          en:"The guidelines set simple and consistent criteria for when activities such as leasing, property management or data processing qualify as ancillary services. They accompany the EBA report on prudential consolidation and follow a consultation that closed on 7 October 2025."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebatcb", jur:"EU", parent:"crr3",
+    about:{de:"Informationen, Prüfkriterien, Formulare und Verfahren für die Zulassung von Zweigstellen von Drittlandkreditinstituten im neuen CRD-VI-Regime, das ab 11.01.2027 gilt.",
+           en:"Information requirements, assessment criteria, templates and procedures for authorising branches of third-country credit institutions under the new CRD VI regime applying from 11 January 2027."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"EBA-Leitlinien zur Zulassung von Drittlandzweigstellen (CRD VI)",en:"EBA guidelines on the authorisation of third-country branches (CRD VI)"},
+    sn:{de:"Drittlandzweigstellen",en:"Third-country branches"},
+    alias:"Third-Country Branches, TCB, Drittlandzweigstelle, Drittstaatenzweigstelle, CRD VI, EBA/GL/2026/08, Art. 48c CRD",
+    ref:"EBA/GL/2026/08", cond:null,
+    refUrl:"https://eba.europa.eu/activities/single-rulebook/regulatory-activities/market-access/guidelines-authorisation-third-country-branches",
+    u:[
+      {refnum:"EBA/GL/2026/08", d:"07.07.2026", eff:"11.01.2027", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-guidelines-authorisation-third-country-branches-under-capital-requirements",
+       ti:{de:"Finale Leitlinien zur Zulassung von Drittlandzweigstellen: Anwendung ab 11.01.2027",en:"Final guidelines on authorising third-country branches: apply from 11 Jan 2027"},
+       s:{de:"Die Leitlinien erfüllen das CRD-VI-Mandat und vereinheitlichen, welche Angaben Drittlandinstitute für die Zulassung einer Zweigstelle vorlegen müssen und wie die Behörden prüfen. Gegenüber dem Konsultationsentwurf gab es keine Änderungen.",
+          en:"The guidelines fulfil the CRD VI mandate and harmonise what third-country institutions must submit to have a branch authorised and how authorities assess it. No changes were made compared with the consultation draft."}},
+      {d:"03.11.2025", deadline:"03.02.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-guidelines-authorisation-third-country-branches-under-capital-requirements-directive",
+       ti:{de:"Konsultation zu Leitlinien für die Zulassung von Drittlandzweigstellen",en:"Consultation on guidelines for authorising third-country branches"},
+       s:{de:"Entwurf mit Informationsanforderungen, Prüfkriterien und Vorlagen für Zulassungsanträge nach dem neuen CRD-VI-Regime. Stellungnahmen bis 03.02.2026.",
+          en:"Draft with information requirements, assessment criteria and templates for authorisation applications under the new CRD VI regime. Comments were due by 3 February 2026."}}
     ]},
 
   { id:"marisk", jur:"DE",
@@ -668,6 +856,52 @@ export const FRAMEWORKS: Framework[] = [
           en:"Directive 2014/59/EU requires institutions to draw up recovery plans and authorities resolution plans, and creates the resolution tools sale of business, bridge institution, asset separation and bail-in as well as the MREL requirement. Transposition by 31 December 2014, bail-in from 1 January 2016."}}
     ]},
 
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebarecovery", jur:"EU", parent:"brrd",
+    about:{de:"EBA-Leitlinien zur Mindestliste der Sanierungsindikatoren und zur Berechnung und aufsichtlichen Bewertung der Gesamtsanierungskapazität in Sanierungsplänen nach Art. 9 BRRD.",
+           en:"EBA guidelines on the minimum list of recovery plan indicators and on calculating and supervising the overall recovery capacity in recovery plans under Art. 9 BRRD."},
+    topic:"PRU", ents:["CI","IF"],
+    n:{de:"Sanierungsplanung: Indikatoren und Sanierungskapazität (EBA-Leitlinien)",en:"Recovery planning: indicators and overall recovery capacity (EBA guidelines)"},
+    sn:{de:"Sanierungsplanung",en:"Recovery planning"},
+    alias:"Sanierungsplan, Recovery Plan, Sanierungsindikatoren, Recovery Plan Indicators, Gesamtsanierungskapazität, Overall Recovery Capacity, ORC, EBA/GL/2021/11, EBA/GL/2023/06, MaSanV",
+    ref:"EBA/GL/2021/11, EBA/GL/2023/06", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/recovery-resolution-and-dgs/guidelines-recovery",
+    u:[
+      {refnum:"EBA/GL/2023/06", d:"19.07.2023", eff:"11.01.2024", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/recovery-resolution-and-dgs/guidelines-overall",
+       ti:{de:"Leitlinien zur Gesamtsanierungskapazität: Anwendung ab 11.01.2024",en:"Guidelines on overall recovery capacity: apply from 11 Jan 2024"},
+       s:{de:"Institute müssen aus ihren Sanierungsoptionen eine glaubwürdige Gesamtsanierungskapazität je Szenario ableiten und in Kapital- und Liquiditätskennzahlen ausweisen; die Aufsicht bewertet diese Kapazität nach einheitlichen Kriterien.",
+          en:"Institutions must derive a credible overall recovery capacity per scenario from their recovery options and express it in capital and liquidity metrics; supervisors assess this capacity against uniform criteria."}},
+      {refnum:"EBA/GL/2021/11", d:"09.11.2021", eff:"14.02.2022", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/recovery-resolution-and-dgs/guidelines-recovery",
+       ti:{de:"Leitlinien zu Sanierungsindikatoren: Anwendung ab 14.02.2022",en:"Guidelines on recovery plan indicators: apply from 14 Feb 2022"},
+       s:{de:"Ersetzen die Leitlinien von 2015: Mindestliste an Kapital-, Liquiditäts-, Ertrags- und Qualitätsindikatoren, Anforderungen an Kalibrierung und Schwellenwerte sowie das Verfahren bei Verletzung eines Indikators.",
+          en:"Replace the 2015 guidelines: minimum list of capital, liquidity, profitability and asset-quality indicators, requirements for calibration and thresholds, and the procedure when an indicator is breached."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebaresolvability", jur:"EU", parent:"brrd",
+    about:{de:"EBA-Leitlinien, was Institute und Abwicklungsbehörden für die Abwicklungsfähigkeit vorhalten müssen: operative Kontinuität, Zugang zu Finanzmarktinfrastrukturen, Bail-in-Umsetzung, Übertragungsstrategien und regelmäßige Tests, einschließlich des Master-Playbooks.",
+           en:"EBA guidelines on what institutions and resolution authorities must have in place for resolvability: operational continuity, access to financial market infrastructures, bail-in execution, transfer strategies and regular testing, including the master playbook."},
+    topic:"PRU", ents:["CI","IF"],
+    n:{de:"Abwicklungsfähigkeit, Übertragbarkeit und Abwicklungstests (EBA-Leitlinien)",en:"Resolvability, transferability and resolvability testing (EBA guidelines)"},
+    sn:{de:"Abwicklungsfähigkeit",en:"Resolvability"},
+    alias:"Abwicklungsfähigkeit, Resolvability, Übertragbarkeit, Transferability, Resolvability Testing, Master Playbook, Bail-in Playbook, EBA/GL/2022/01, EBA/GL/2022/11, EBA/GL/2023/05, Rundschreiben 01/2024 (A)",
+    ref:"EBA/GL/2022/01, EBA/GL/2022/11, EBA/GL/2023/05", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/recovery-resolution-and-dgs/guidelines",
+    u:[
+      {refnum:"EBA/GL/2022/11", d:"27.09.2022", eff:"01.01.2024", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/recovery-resolution-and-dgs/guidelines-0",
+       ti:{de:"Leitlinien zur Übertragbarkeit: Anforderungen an Übertragungsstrategien ab 01.01.2024",en:"Guidelines on transferability: requirements for transfer strategies from 1 Jan 2024"},
+       s:{de:"Ergänzen die Abwicklungsfähigkeits-Leitlinien um Vorgaben für Abwicklungsstrategien mit Übertragung: Abgrenzung des Übertragungsperimeters, Trennbarkeit, Informationsbereitstellung für Erwerber und Vorbereitung eines Verkaufsprozesses.",
+          en:"Complement the resolvability guidelines with requirements for transfer-based resolution strategies: definition of the transfer perimeter, separability, information for acquirers and preparation of a sale process."}},
+      {refnum:"EBA/GL/2022/01", d:"13.01.2022", eff:"01.01.2024", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/recovery-resolution-and-dgs/guidelines",
+       ti:{de:"Leitlinien zur Verbesserung der Abwicklungsfähigkeit: Anwendung ab 01.01.2024",en:"Guidelines on improving resolvability: apply from 1 Jan 2024"},
+       s:{de:"Erstmals EU-weit einheitliche Erwartungen an Institute und Abwicklungsbehörden nach Art. 15 und 16 BRRD: operative Kontinuität, Zugang zu FMIs, Finanzierung in der Abwicklung, Bail-in-Umsetzung, Restrukturierung und Kommunikation. 2023 um einen Abschnitt zu Abwicklungstests ergänzt (EBA/GL/2023/05).",
+          en:"First EU-wide uniform expectations for institutions and resolution authorities under Art. 15 and 16 BRRD: operational continuity, access to FMIs, funding in resolution, bail-in execution, restructuring and communication. Supplemented in 2023 by a section on resolvability testing (EBA/GL/2023/05)."}}
+    ]},
+
   { id:"dgsd", jur:"EU+DE",
     about:{de:"Einlagensicherung: gesetzliche Deckung von 100.000 Euro je Einleger, Beitragspflichten, Einlegerinformation, Auszahlungsfristen und die Reform des Krisenmanagement- und Einlagensicherungsrahmens (CMDI).",en:"Deposit guarantee: statutory coverage of 100,000 euros per depositor, contribution duties, depositor information, payout deadlines and the reform of the crisis management and deposit insurance framework (CMDI)."}, topic:"PRU", ents:["CI"],
     n:{de:"Einlagensicherung (DGSD / EinSiG)",en:"Deposit guarantee (DGSD / EinSiG)"},
@@ -697,6 +931,47 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"Erste Einlagensicherungsrichtlinie",en:"First Deposit Guarantee Schemes Directive"},
        s:{de:"Die Richtlinie 94/19/EG verpflichtet alle Mitgliedstaaten erstmals zu einem Einlagensicherungssystem mit einer Mindestdeckung von 20.000 ECU. Nach der Finanzkrise wurde die Deckung 2009 auf 100.000 Euro erhöht; abgelöst durch die Richtlinie 2014/49/EU.",
           en:"Directive 94/19/EC obliges all member states for the first time to operate a deposit guarantee scheme with a minimum coverage of ECU 20,000. After the financial crisis coverage was raised to EUR 100,000 in 2009; replaced by Directive 2014/49/EU."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebadgsfunds", jur:"EU", parent:"dgsd",
+    about:{de:"EBA-Leitlinien zur risikobasierten Berechnung der Beiträge der Institute zur Einlagensicherung und zur Anlage der verfügbaren Finanzmittel der Sicherungssysteme nach der überarbeiteten Einlagensicherungsrichtlinie.",
+           en:"EBA guidelines on the risk-based calculation of institutions' contributions to deposit guarantee schemes and on investing the schemes' available financial means under the revised Deposit Guarantee Schemes Directive."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"Einlagensicherung: Beiträge und Anlage der Mittel (EBA-Leitlinien)",en:"Deposit guarantee schemes: contributions and investment of funds (EBA guidelines)"},
+    sn:{de:"DGS-Beiträge und Mittel",en:"DGS contributions and funds"},
+    alias:"DGS-Beiträge, DGS Contributions, Einlagensicherungsbeiträge, verfügbare Finanzmittel, Available Financial Means, AFM, EBA/GL/2023/02, EBA/CP/2026/12, DGSD3",
+    ref:"EBA/GL/2023/02, EBA/CP/2026/12", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/depositor-protection/guidelines-methods",
+    u:[
+      {refnum:"EBA/CP/2026/12", d:"23.07.2026", deadline:"23.10.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/sites/default/files/2026-07/d60e0fc5-805d-4e76-9821-2c14b51ea155/Consultation%20paper%20on%20Guidelines%20on%20investment%20of%20available%20financial%20means.pdf",
+       ti:{de:"Konsultation zur Anlage der verfügbaren Finanzmittel von Einlagensicherungssystemen",en:"Consultation on investing the available financial means of deposit guarantee schemes"},
+       s:{de:"Eines von vier Konsultationspapieren zu den ersten Mandaten der überarbeiteten Einlagensicherungsrichtlinie: Die Sicherungssysteme sollen ihre Mittel diversifiziert, risikoarm und ausreichend liquide anlegen. Stellungnahmen bis 23.10.2026.",
+          en:"One of four consultation papers on the first mandates under the revised Deposit Guarantee Schemes Directive: schemes should invest their funds in a diversified, low-risk and sufficiently liquid manner. Comments are due by 23 October 2026."}},
+      {refnum:"EBA/GL/2023/02", d:"21.02.2023", eff:"03.07.2024", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-revised-guidelines-methods-calculating",
+       ti:{de:"Überarbeitete Leitlinien zur Beitragsberechnung: Anwendung ab 03.07.2024",en:"Revised guidelines on calculating contributions: apply from 3 Jul 2024"},
+       s:{de:"Stärken den Zusammenhang zwischen Risikoprofil eines Instituts und seinem Beitrag: Mindestgewichte für Kernindikatoren, Vorgaben zur Kalibrierung und Klarstellungen zur Behandlung von Zahlungsverpflichtungen. Ersetzen die Leitlinien EBA/GL/2015/10.",
+          en:"Strengthen the link between an institution's risk profile and its contribution: minimum weights for core indicators, calibration requirements and clarifications on payment commitments. Replace guidelines EBA/GL/2015/10."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebadgsstress", jur:"EU", parent:"dgsd",
+    about:{de:"EBA-Leitlinien, welche Szenarien und Kennzahlen Einlagensicherungssysteme regelmäßig testen müssen, einschließlich der Einzeldatei-Prüfungen bei den Instituten und der Berichterstattung an die EBA.",
+           en:"EBA guidelines on which scenarios and indicators deposit guarantee schemes must test regularly, including single-customer-view checks at institutions and reporting to the EBA."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"Stresstests der Einlagensicherungssysteme (EBA-Leitlinien)",en:"Stress tests of deposit guarantee schemes (EBA guidelines)"},
+    sn:{de:"DGS-Stresstests",en:"DGS stress tests"},
+    alias:"DGS Stress Tests, Einlagensicherung Stresstest, Single Customer View, SCV, Einzeldatei, EBA/GL/2021/10",
+    ref:"EBA/GL/2021/10", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/depositor-protection/guidelines-stress-tests",
+    u:[
+      {refnum:"EBA/GL/2021/10", d:"15.09.2021", eff:"15.09.2021", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/depositor-protection/guidelines-stress-tests",
+       ti:{de:"Überarbeitete Leitlinien zu DGS-Stresstests: Anwendung ab 15.09.2021",en:"Revised guidelines on DGS stress tests: apply from 15 Sep 2021"},
+       s:{de:"Erweitern den Testumfang auf alle gesetzlichen Aufgaben der Sicherungssysteme, schreiben mehr Pflichttests vor und vereinheitlichen die Ergebnisberichte an die EBA. Für Institute relevant über die Prüfung ihrer Einzeldateien für den Entschädigungsfall. Ersetzen EBA/GL/2016/04.",
+          en:"Extend testing to all legal missions of the schemes, require more mandatory tests and harmonise result reports to the EBA. Relevant for institutions through the testing of their single customer view files. Replace EBA/GL/2016/04."}}
     ]},
 
   { id:"ifr", jur:"EU",
@@ -792,6 +1067,95 @@ export const FRAMEWORKS: Framework[] = [
           en:"BaFin consolidates its administrative practice on the compliance function and the conduct, organisational and transparency obligations of the WpHG in a circular for the first time. It was supplemented several times (including 9 June 2011, 31 August 2012, 30 November 2012 and a 4th recast in January 2014) and replaced in 2018."}}
     ]},
 
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebagov", jur:"EU",
+    about:{de:"Anforderungen an Organisation, Leitungsorgan, Risikokultur, interne Kontrollfunktionen und Transparenz der Unternehmensstruktur nach CRD; für Wertpapierinstitute gilt die parallele Fassung EBA/GL/2021/14. Die Revision für CRD VI wurde 2025 konsultiert, die finale Fassung steht aus.",
+           en:"Requirements for organisation, management body, risk culture, internal control functions and transparency of corporate structure under the CRD; investment firms fall under the parallel version EBA/GL/2021/14. The CRD VI revision was consulted in 2025 and the final version is pending."},
+    topic:"GOV", ents:["CI","IF"],
+    n:{de:"EBA-Leitlinien zur internen Governance",en:"EBA guidelines on internal governance"},
+    alias:"Internal Governance, Interne Governance, Leitungsorgan, Management Body, Risikokultur, Aufgabenzuordnung, Statement of Duties, EBA/GL/2021/05, EBA/GL/2021/14",
+    ref:"EBA/GL/2021/05, EBA/GL/2021/14", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-internal-governance-under-crd",
+    u:[
+      {d:"07.08.2025", deadline:"07.11.2025", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-guidelines-internal-governance",
+       ti:{de:"Konsultation zur Überarbeitung der Governance-Leitlinien für CRD VI",en:"Consultation on revising the internal governance guidelines for CRD VI"},
+       s:{de:"Die EBA schlägt dokumentierte Aufgabenbeschreibungen für Mitglieder des Leitungsorgans, Geschäftsleiter und Schlüsselfunktionen sowie eine Aufgabenzuordnung über alle Ebenen vor, passt die Leitlinien an DORA an und verankert, dass der Vorsitz des Leitungsorgans nicht zugleich Geschäftsleiter sein darf. Öffentliche Anhörung am 05.09.2025, Stellungnahmen bis 07.11.2025.",
+          en:"The EBA proposes documented statements of duties for members of the management body, senior managers and key function holders plus a mapping of duties across all levels, aligns the guidelines with DORA and enshrines that the chair of the management body may not simultaneously be CEO. Public hearing on 5 September 2025, comments were due by 7 November 2025."}},
+      {refnum:"EBA/GL/2021/05", d:"02.07.2021", eff:"31.12.2021", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-internal-governance",
+       ti:{de:"Finale Leitlinien zur internen Governance unter CRD V: Anwendung ab 31.12.2021",en:"Final guidelines on internal governance under CRD V: apply from 31 Dec 2021"},
+       s:{de:"Konsolidieren und aktualisieren die Leitlinien von 2017: neue Kapitel zur Transparenz der Unternehmensstruktur, zu den Aufgaben der Aufsichtsfunktion des Leitungsorgans und zum Umgang mit Geldwäscherisiken in der Governance. Gelten seit dem 31.12.2021.",
+          en:"Consolidate and update the 2017 guidelines: new chapters on transparency of corporate structure, on the duties of the supervisory function of the management body and on handling money-laundering risk within governance. Apply since 31 December 2021."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"srep", jur:"EU",
+    about:{de:"EBA-Leitlinien, nach denen die Aufsicht Geschäftsmodell, Governance, Kapital- und Liquiditätsrisiken bewertet und Säule-2-Anforderungen festlegt. Die Neufassung 2026 integriert die IKT-Risikobewertung, den Output Floor und Drittlandzweigstellen.",
+           en:"EBA guidelines under which supervisors assess business model, governance, capital and liquidity risks and set Pillar 2 requirements. The 2026 revision integrates the ICT risk assessment, the output floor and third-country branches."},
+    topic:"PRU", ents:["CI","IF"],
+    n:{de:"Aufsichtlicher Überprüfungs- und Bewertungsprozess (SREP) und aufsichtliche Stresstests",en:"Supervisory review and evaluation process (SREP) and supervisory stress testing"},
+    alias:"SREP, Supervisory Review and Evaluation Process, Säule 2, Pillar 2, P2R, P2G, ICAAP, ILAAP, aufsichtlicher Stresstest, EBA/GL/2026/06, EBA/GL/2022/03",
+    ref:"EBA/GL/2026/06", cond:null,
+    refUrl:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-reaches-another-important-milestone-enhancing-supervisory-efficiency-its-revised-srep-guidelines",
+    u:[
+      {refnum:"EBA/GL/2026/06", d:"26.06.2026", eff:"01.01.2027", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-reaches-another-important-milestone-enhancing-supervisory-efficiency-its-revised-srep-guidelines",
+       ti:{de:"Überarbeitete SREP-Leitlinien: ein Regelwerk für SREP und IKT-Risikobewertung, Anwendung ab 01.01.2027",en:"Revised SREP guidelines: one rulebook for SREP and ICT risk assessment, apply from 1 Jan 2027"},
+       s:{de:"Die Neufassung führt die SREP-Leitlinien von 2022 und die IKT-SREP-Leitlinien von 2017 zusammen, ergänzt einen Titel für Drittlandzweigstellen (Anwendung ab 11.01.2027) und regelt, wie der Output Floor in der Kapitalbewertung berücksichtigt wird. Die Vorgaben zu gezielten Finanzsanktionen gelten ab 10.07.2027.",
+          en:"The revision merges the 2022 SREP guidelines and the 2017 ICT SREP guidelines, adds a title on third-country branches (applying from 11 January 2027) and sets out how the output floor is reflected in the capital assessment. The provisions on targeted financial sanctions apply from 10 July 2027."}},
+      {refnum:"EBA/CP/2025/21", d:"24.10.2025", deadline:"06.02.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-guidelines-supervisory-review-and-evaluation-process-and-supervisory-stress",
+       ti:{de:"Konsultation zur Überarbeitung der SREP-Leitlinien: DORA, ESG, Output Floor und Drittlandzweigstellen",en:"Consultation on revising the SREP guidelines: DORA, ESG, output floor and third-country branches"},
+       s:{de:"Der Entwurf bündelt alle SREP-Vorgaben in einem Rahmen, hebt die separaten IKT-SREP-Leitlinien auf und klärt das Zusammenspiel von Säule-1- und Säule-2-Anforderungen nach CRR III. Öffentliche Anhörung am 04.12.2025, Stellungnahmen bis 06.02.2026.",
+          en:"The draft consolidates all SREP provisions into one framework, repeals the separate ICT SREP guidelines and clarifies the interaction between Pillar 1 and Pillar 2 requirements under CRR III. Public hearing on 4 December 2025, comments were due by 6 February 2026."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"irrbb", jur:"EU",
+    about:{de:"EBA-Leitlinien zur Identifikation, Messung, Steuerung und Überwachung von Zinsänderungs- und Credit-Spread-Risiken im Anlagebuch, ergänzt um die RTS zum Standardansatz und zum aufsichtlichen Ausreißertest.",
+           en:"EBA guidelines on identifying, measuring, managing and monitoring interest rate and credit spread risk in the banking book, complemented by the RTS on the standardised approach and the supervisory outlier test."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"Zinsänderungsrisiko und Credit-Spread-Risiko im Anlagebuch (IRRBB, CSRBB)",en:"Interest rate risk and credit spread risk in the banking book (IRRBB, CSRBB)"},
+    alias:"IRRBB, CSRBB, Zinsänderungsrisiko, Zinsrisiko im Anlagebuch, Credit Spread Risk, Ausreißertest, Supervisory Outlier Test, EBA/GL/2022/14, Zinsschock",
+    ref:"EBA/GL/2022/14", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/supervisory-review-and-evaluation-process-srep-0",
+    u:[
+      {refnum:"EBA/GL/2022/14", d:"20.10.2022", eff:"30.06.2023", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/supervisory-review-and-evaluation-process-srep-0",
+       ti:{de:"Leitlinien zu IRRBB und CSRBB: Anwendung ab 30.06.2023, CSRBB ab 31.12.2023",en:"Guidelines on IRRBB and CSRBB: apply from 30 Jun 2023, CSRBB from 31 Dec 2023"},
+       s:{de:"Ersetzen die Leitlinien von 2018: Institute müssen Zinsänderungsrisiken über barwertige und ertragsbezogene Kennzahlen steuern und erstmals auch Credit-Spread-Risiken im Anlagebuch systematisch erfassen. Teil eines Pakets mit den RTS zum Standardansatz und zum aufsichtlichen Ausreißertest.",
+          en:"Replace the 2018 guidelines: institutions must manage interest rate risk through economic-value and earnings measures and, for the first time, systematically capture credit spread risk in the banking book. Part of a package with the RTS on the standardised approach and the supervisory outlier test."}}
+    ]},
+
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
+  { id:"ebapog", jur:"EU",
+    about:{de:"Anforderungen an Hersteller und Vertreiber von Hypotheken, Verbraucherkrediten, Einlagen, Zahlungskonten, Zahlungsdiensten und E-Geld: Zielmarkt, Produkttests, Vertriebskanäle und Überprüfung über den Lebenszyklus. Seit 2026 mit Vorgaben für Produkte mit ESG-Merkmalen und gegen Greenwashing.",
+           en:"Requirements for manufacturers and distributors of mortgages, consumer loans, deposits, payment accounts, payment services and e-money: target market, product testing, distribution channels and lifecycle review. Since 2026 with rules for products with ESG features and against greenwashing."},
+    topic:"CONS", ents:["CI","PI"],
+    n:{de:"Produktüberwachung für Retail-Bankprodukte (POG-Leitlinien der EBA)",en:"Product oversight and governance for retail banking products (EBA POG guidelines)"},
+    alias:"Product Oversight and Governance, POG, Produktüberwachung, Produktgenehmigung, Zielmarkt Retail-Bankprodukte, Greenwashing Bankprodukte, EBA/GL/2015/18, EBA/GL/2026/07",
+    ref:"EBA/GL/2015/18, EBA/GL/2026/07", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/consumer-protection/guidelines-product-oversight-and-governance-arrangements-retail-banking-products",
+    condL:{de:"nur bei Privatkundengeschäft",en:"only with retail clients"},
+    u:[
+      {refnum:"EBA/GL/2026/07", d:"30.06.2026", eff:"11.01.2027", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-clarifies-its-product-oversight-and-governance-guidelines-which-address-greenwashing-risks-esg",
+       ti:{de:"Geänderte POG-Leitlinien: ESG-Merkmale und Greenwashing-Risiken ab 11.01.2027",en:"Amended POG guidelines: ESG features and greenwashing risks from 11 Jan 2027"},
+       s:{de:"Hersteller und Vertreiber müssen bei Produkten mit ESG-Merkmalen sicherstellen, dass die beworbenen Eigenschaften belegt und dem Zielmarkt angemessen sind. Daneben werden veraltete Verweise an die überarbeiteten Governance- und Drittparteien-Leitlinien angepasst.",
+          en:"Manufacturers and distributors must ensure that the advertised characteristics of products with ESG features are substantiated and suitable for the target market. Outdated references are also aligned with the revised governance and third-party risk guidelines."}},
+      {refnum:"EBA/CP/2025/13", d:"09.07.2025", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revision-product-oversight-and-governance-guidelines-retail-banking-products-consider",
+       ti:{de:"Konsultation zur Überarbeitung der POG-Leitlinien: Produkte mit ESG-Merkmalen",en:"Consultation on revising the POG guidelines: products with ESG features"},
+       s:{de:"Vorgeschlagene Änderungen zu Gegenstand, internen Kontrollfunktionen des Herstellers, Zielmarkt, Vertriebskanälen und Informationspflichten gegenüber Vertreibern. Öffentliche Anhörung am 11.09.2025.",
+          en:"Proposed amendments on subject matter, the manufacturer's internal control functions, target market, distribution channels and information duties towards distributors. Public hearing on 11 September 2025."}},
+      {refnum:"EBA/GL/2015/18", d:"22.03.2016", eff:"03.01.2017", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/consumer-protection/guidelines-product-oversight-and-governance-arrangements-retail-banking-products",
+       ti:{de:"POG-Leitlinien für Retail-Bankprodukte: Anwendung ab 03.01.2017",en:"POG guidelines for retail banking products: apply from 3 Jan 2017"},
+       s:{de:"Erstmals einheitliche Vorgaben für Produktfreigabe, Zielmarktbestimmung, Produkttests, Auswahl der Vertriebskanäle und laufende Überprüfung von Hypotheken, Verbraucherkrediten, Einlagen, Zahlungskonten, Zahlungsdiensten und E-Geld.",
+          en:"First uniform requirements for product approval, target-market definition, product testing, selection of distribution channels and ongoing review of mortgages, consumer loans, deposits, payment accounts, payment services and e-money."}}
+    ]},
+
   { id:"instvergv", jur:"DE",
     about:{de:"Vergütungsaufsicht für Institute: angemessene, nachhaltige Vergütungssysteme, Identifizierung von Risikoträgern, Zurückbehaltung und Rückforderung variabler Vergütung, Vergütungskontrollausschuss und Offenlegung; für Wertpapierinstitute gilt die WpI-Vergütungsverordnung.",en:"Remuneration supervision for institutions: appropriate and sustainable pay systems, identification of material risk takers, deferral and clawback of variable pay, remuneration committee and disclosure; investment firms fall under the WpI-Vergütungsverordnung."}, topic:"GOV", ents:["CI","IF","OTH"],
     n:{de:"Institutsvergütungsverordnung (InstitutsVergV)",en:"Remuneration Ordinance for Institutions (InstitutsVergV)"},
@@ -828,30 +1192,25 @@ export const FRAMEWORKS: Framework[] = [
           en:"The regulation converts the remuneration requirements previously contained in the MaRisk (AT 7.1) and BaFin circular 22/2009 into binding regulatory law and implements CRD III and the FSB principles. In force since 13 October 2010."}}
     ]},
 
+  /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
   { id:"outsourcing", jur:"EU+DE",
-    about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
-    n:{de:"EBA-Leitlinien zur Auslagerung",en:"EBA Guidelines on Outsourcing"},
-    alias:"Auslagerung, Outsourcing, EBA Outsourcing Guidelines, Third-Party Risk, Drittdienstleister, Fremdbezug",
-    ref:"EBA/GL/2019/02, AT 9 MaRisk", cond:{k:"cross",any:["outsourcing"]},
+    about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung. Der 2025 konsultierte Nachfolger erfasst als Drittparteien-Leitlinie alle Nicht-IKT-Dienstleister und ergänzt DORA.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting. The successor consulted in 2025 covers all non-ICT third-party providers as a third-party risk guideline and complements DORA."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"EBA-Leitlinien zu Auslagerung und Drittparteienrisiko",en:"EBA guidelines on outsourcing and third-party risk"},
+    alias:"Auslagerung, Outsourcing, EBA Outsourcing Guidelines, Third-Party Risk, Third-Party Arrangements, Drittparteienrisiko, Drittdienstleister, Fremdbezug, EBA/GL/2019/02, EBA/CP/2025/12, AT 9 MaRisk",
+    ref:"EBA/GL/2019/02, EBA/CP/2025/12, AT 9 MaRisk", cond:{k:"cross",any:["outsourcing"]},
     refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-outsourcing-arrangements",
     condL:{de:"nur bei wesentlichen Auslagerungen",en:"only where material outsourcing exists"},
-    /* Chronologie inkl. früherer Fassungen gegen EUR-Lex/Cellar, bafin.de, recht.bund.de bzw. eba.europa.eu geprüft (Stand 03.09.2026). */
     u:[
-      {deadline:"08.10.2025", d:"08.07.2025", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+      {refnum:"EBA/CP/2025/12", d:"08.07.2025", deadline:"08.10.2025", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
        url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-launches-consultation-its-draft-guidelines-third-party-risk-management-regard-non-ict-related",
-       ti:{de:"EBA konsultiert Leitlinien zum Drittparteienrisiko für Nicht-IKT-Dienstleistungen, die die Auslagerungsleitlinien ablösen sollen",en:"EBA consults on third-party risk guidelines for non-ICT services that are to replace the outsourcing guidelines"},
-       s:{de:"Der Entwurf weitet den Ansatz der Auslagerungsleitlinien auf alle Drittparteienvereinbarungen außerhalb von DORA aus (Register, Risikoanalyse, Vertragsinhalte, Subunternehmer) und soll EBA/GL/2019/02 aufheben. Stellungnahmen bis 08.10.2025; für Bestandsverträge ist eine Übergangsfrist vorgesehen.",
-          en:"The draft extends the approach of the outsourcing guidelines to all third-party arrangements outside DORA (register, risk analysis, contractual content, subcontractors) and is to repeal EBA/GL/2019/02. Comments until 8 October 2025; a transition period is planned for existing contracts."}},
-      {refnum:"RS 10/2021 (BA)", d:"16.08.2021", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
-       url:"https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs1021_MaRisk_pdf_BA.html",
-       ti:{de:"EBA-Auslagerungsleitlinien in AT 9 MaRisk umgesetzt (RS 10/2021)",en:"EBA outsourcing guidelines implemented in AT 9 MaRisk (Circular 10/2021)"},
-       s:{de:"Mit der 6. MaRisk-Novelle übernimmt die BaFin die EBA-Leitlinien: Auslagerungsregister, zentraler Auslagerungsbeauftragter, Anforderungen an Weiterverlagerungen und Ausstiegsstrategien sowie erweiterte Prüfungs- und Informationsrechte.",
-          en:"With the 6th MaRisk amendment BaFin adopts the EBA guidelines: outsourcing register, central outsourcing officer, requirements for sub-outsourcing and exit strategies as well as extended audit and information rights."}},
-      {refnum:"EBA/GL/2019/02", eff:"30.09.2019", d:"25.02.2019", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       ti:{de:"Konsultation zu Leitlinien für das Management von Drittparteienrisiken: Nachfolger der Auslagerungsleitlinien",en:"Consultation on guidelines for managing third-party risk: successor to the outsourcing guidelines"},
+       s:{de:"Der Entwurf ersetzt den Auslagerungsbegriff durch Third-Party Arrangements, erfasst alle Nicht-IKT-Dienstleister einschließlich gruppeninterner Vereinbarungen und dehnt den Anwendungsbereich auf Zahlungs- und E-Geld-Institute, ART-Emittenten und Immobilienkreditgeber aus. Für IKT-Dienstleistungen gilt DORA. Öffentliche Anhörung am 05.09.2025, Stellungnahmen bis 08.10.2025, danach zwei Jahre Übergang für Verträge und Register geplant.",
+          en:"The draft replaces the outsourcing concept with third-party arrangements, covers all non-ICT providers including intra-group arrangements and extends the scope to payment and e-money institutions, ART issuers and mortgage creditors. ICT services remain under DORA. Public hearing on 5 September 2025, comments were due by 8 October 2025, with a two-year transition for contracts and registers planned."}},
+      {refnum:"EBA/GL/2019/02", d:"25.02.2019", eff:"30.09.2019", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
        url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-outsourcing-arrangements",
-       ti:{de:"EBA-Leitlinien zu Auslagerungsvereinbarungen veröffentlicht (EBA/GL/2019/02)",en:"EBA guidelines on outsourcing arrangements published (EBA/GL/2019/02)"},
-       s:{de:"Die Leitlinien ersetzen die CEBS-Leitlinien von 2006 und die EBA-Empfehlung zu Cloud-Auslagerungen: einheitliche Definition der Auslagerung, Abgrenzung kritischer oder wichtiger Funktionen, Auslagerungsregister, Vorgaben zu Vertragsinhalten, Weiterverlagerung und Ausstiegsstrategien. Anwendung ab 30.09.2019.",
-          en:"The guidelines replace the 2006 CEBS guidelines and the EBA recommendation on cloud outsourcing: a uniform definition of outsourcing, identification of critical or important functions, an outsourcing register and requirements on contractual content, sub-outsourcing and exit strategies. Applicable from 30 September 2019."}}
+       ti:{de:"Überarbeitete Leitlinien zu Auslagerungsvereinbarungen: Anwendung ab 30.09.2019",en:"Revised guidelines on outsourcing arrangements: apply from 30 Sep 2019"},
+       s:{de:"Ersetzen die CEBS-Leitlinien von 2006 und integrieren die Cloud-Empfehlungen von 2017: Kriterien für kritische oder wichtige Funktionen, Risikobewertung und Due Diligence vor Vertragsschluss, Mindestvertragsinhalte, Auslagerungsregister, Ausstiegsstrategien und Weiterverlagerung. In Deutschland über AT 9 MaRisk umgesetzt.",
+          en:"Replace the CEBS guidelines of 2006 and integrate the 2017 cloud recommendations: criteria for critical or important functions, risk assessment and due diligence before contracting, minimum contract content, outsourcing register, exit strategies and subcontracting. Implemented in Germany through AT 9 MaRisk."}}
     ]},
 
   { id:"complaints", jur:"EU+DE",

@@ -56,6 +56,19 @@ const idx = buildIndex();
 /** Alle Update-Seiten, neueste zuerst. */
 export const UPDATE_PAGES: UpdatePage[] = idx.list;
 
+/** Alte Slugs von Updates, die aus einem Eltern- in ein Kind-Rahmenwerk
+    gewandert sind (z. B. dora-… → doraincident-…). Werden statisch mit
+    erzeugt und auf den neuen Slug weitergeleitet. */
+export const LEGACY_SLUGS: Map<string, string> = (() => {
+  const out = new Map<string, string>();
+  for (const p of idx.list) {
+    if (!p.fw.parent) continue;
+    const legacy = p.slug.replace(new RegExp(`^${p.fw.id}-`), `${p.fw.parent}-`);
+    if (legacy !== p.slug && !idx.bySlug.has(legacy)) out.set(legacy, p.slug);
+  }
+  return out;
+})();
+
 export const updateBySlug = (slug: string): UpdatePage | undefined =>
   idx.bySlug.get(slug);
 
