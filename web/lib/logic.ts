@@ -59,6 +59,17 @@ const AUTHORITIES: Record<string, string> = {
   "ec.europa.eu": "EU-Kommission",
   "esrb.europa.eu": "ESRB",
   "curia.europa.eu": "EuGH",
+  "finance.ec.europa.eu": "EU-Kommission",
+  "digital-strategy.ec.europa.eu": "EU-Kommission",
+  "europarl.europa.eu": "EU-Parlament",
+  "ecb.europa.eu": "EZB",
+  "bundestag.de": "Bundestag",
+  "cssf.lu": "CSSF",
+  "zoll.de": "FIU",
+  "fsb.org": "FSB",
+  "iosco.org": "IOSCO",
+  "bis.org": "BIS",
+  "dejure.org": "dejure.org",
 };
 export const authority = (src: string): string => AUTHORITIES[src] ?? src;
 

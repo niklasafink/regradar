@@ -92,7 +92,8 @@ export default function Quellen() {
                   {JURISDICTION_LABEL[j][lang]}
                 </h2>
                 <span className="num text-xs text-slate-400">
-                  {group.length} {lang === "de" ? "Quellen" : "sources"}
+                  {group.length}{" "}
+                  {group.length === 1 ? (lang === "de" ? "Quelle" : "source") : lang === "de" ? "Quellen" : "sources"}
                 </span>
               </div>
               <ul className="mt-3 divide-y divide-slate-100 border-y border-slate-100">

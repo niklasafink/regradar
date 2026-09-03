@@ -21,6 +21,13 @@ from .rss import refine_type
 
 SLUG_DATE = re.compile(r"-(\d{4})-(\d{2})-(\d{2})_en$")
 DEFAULT_WINDOW_DAYS = 120
+TIME_TAG = re.compile(r'<time[^>]*datetime="(\d{4}-\d{2}-\d{2})')
+
+
+def page_publication_date(html: str) -> Optional[str]:
+    """Erstes <time datetime="…"> der EIOPA-Seite (ISO-Datum) oder None."""
+    m = TIME_TAG.search(html)
+    return m.group(1) if m else None
 
 
 class EiopaAdapter(SourceAdapter):
@@ -83,6 +90,13 @@ class EiopaAdapter(SourceAdapter):
             if title:
                 doc.title = title[:400]
                 doc.document_type = refine_type(doc.title, doc.document_type)
+
+        # Konsultationsseiten: Das Sitemap-lastmod ist ein Änderungsdatum (Seite
+        # wird nach Fristende erneut angefasst). Das erste <time datetime> der
+        # Seite ist das Veröffentlichungsdatum, das zweite die Frist.
+        page_date = page_publication_date(html)
+        if page_date and "consultation" in (d.detail_url or ""):
+            doc.publication_date = page_date
 
         text = strip_html(html)
         doc.full_text = text[:300000]

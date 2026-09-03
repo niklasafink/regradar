@@ -12,6 +12,7 @@ Ohne OPENROUTER_API_KEY ist das Modul inaktiv; der Export fällt dann auf
 die bereinigten Original-Teaser zurück.
 """
 import json
+import re
 import os
 import sqlite3
 import urllib.error
@@ -30,6 +31,17 @@ TIMEOUT = 120
 # Cache-Einträge unbrauchbar machen, hochzählen – der nächste Export
 # generiert dann alle Zusammenfassungen neu.
 FORMAT = 4
+# Verlegenheitsantworten des Modells ("Der Text enthält keine Informationen …")
+# sind keine Zusammenfassung: nicht cachen, Aufrufer nutzt den Original-Teaser.
+UNUSABLE = re.compile(
+    r"^\s*(der (text|inhalt|artikel)|die (meldung|quelle|seite)|es) "
+    r"(enthält|liefert|bietet|liegt|ist|handelt)[^.]{0,80}"
+    r"(keine (informationen|angaben|inhalte)|lediglich|nicht verfügbar|nicht vor)",
+    re.IGNORECASE)
+
+
+def usable(summary: Optional[str]) -> bool:
+    return bool(summary) and not UNUSABLE.search(summary)
 
 SYSTEM_PROMPT = (
     "Du schreibst Zusammenfassungen für einen Regulatory-News-Dienst, den "
@@ -220,6 +232,9 @@ def summarize(conn: sqlite3.Connection,
                 print("LLM-Zusammenfassung: Versuch {} fehlgeschlagen ({}: {})".format(
                     attempt, type(e).__name__, e))
         for i, s in got.items():
+            if not usable(s.get("de")):
+                print("LLM-Zusammenfassung: unbrauchbare Antwort für id {} verworfen".format(i))
+                continue
             result[i] = s
             ti = s.get("ti") or {}
             conn.execute(

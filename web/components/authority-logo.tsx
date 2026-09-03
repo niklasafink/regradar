@@ -29,6 +29,11 @@ const LOGOS: Record<string, string> = {
   "bsi.bund.de": "de.svg",
   "bfdi.bund.de": "de.svg",
   "zoll.de": "de.svg",
+  "finance.ec.europa.eu": "eu.svg",
+  "digital-strategy.ec.europa.eu": "eu.svg",
+  "europarl.europa.eu": "eu.svg",
+  "ecb.europa.eu": "ezb.svg",
+  "bundestag.de": "bundestag.svg",
 };
 
 /* Rahmenwerk -> herausgebende Stelle (Domain wie in LOGOS/AUTHORITIES). */

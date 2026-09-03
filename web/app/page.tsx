@@ -85,7 +85,7 @@ export default function Home() {
                   <span className="size-2.5 rounded-full bg-slate-200" />
                   <span className="size-2.5 rounded-full bg-slate-200" />
                 </span>
-                <span className="text-xs text-slate-400">regulatory-radar.de/updates</span>
+                <span className="text-xs text-slate-400">regradar.de/updates</span>
               </div>
               <ol className="px-5 py-3">
                 {recent.map(({ slug, fw, u }) => {

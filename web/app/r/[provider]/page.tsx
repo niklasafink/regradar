@@ -19,11 +19,13 @@ export default function Board() {
   const p = providerById(provider);
   if (!p) notFound();
 
-  // Konkretisierende Vorgaben (Kinder) erscheinen nur als Chips auf der Elternkachel.
-  const list = visibleFrameworks(p.id, null).filter((f) => !f.parent);
+  // Konkretisierende Vorgaben (Kinder) erscheinen nur als Chips auf der Elternkachel;
+  // die Kennzahlen zählen sie mit (wie auf der Startseite).
+  const all = visibleFrameworks(p.id, null);
+  const list = all.filter((f) => !f.parent);
   const topics = topicsWithContent(list);
   const shown = selected.length ? topics.filter((t) => selected.includes(t.id)) : topics;
-  const totalUpdates = list.reduce((n, f) => n + f.u.length, 0);
+  const totalUpdates = all.reduce((n, f) => n + f.u.length, 0);
 
   const toggleTopic = (id: string) => {
     if (id === "ALL") return setSelected([]);
@@ -51,7 +53,7 @@ export default function Board() {
           </h1>
           <div className="flex flex-wrap items-center gap-3">
             <p className="num text-sm text-slate-500">
-              {list.length} {lang === "de" ? "Rahmenwerke" : "frameworks"}, {totalUpdates} Updates
+              {all.length} {lang === "de" ? "Rahmenwerke" : "frameworks"}, {totalUpdates} Updates
             </p>
             <SearchBox provider={p.id} />
           </div>

@@ -114,7 +114,7 @@ export default function FrameworkDetail() {
         <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
           <span>
             <span className="num font-semibold text-slate-900">{ups.length}</span>{" "}
-            {lang === "de" ? "Updates" : "updates"}
+            {ups.length === 1 ? (lang === "de" ? "Update" : "update") : lang === "de" ? "Updates" : "updates"}
           </span>
           <span>
             <span className="num font-semibold text-slate-900">{fresh}</span>{" "}

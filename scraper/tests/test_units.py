@@ -78,7 +78,8 @@ class FrameworkClassification(unittest.TestCase):
         self.assertEqual(_classify("Formular für Kreditgeber zum Antrag auf Registrierung nach dem AbsFinAG"), "absfinag")
         self.assertEqual(_classify("Entscheidungsbaum zu Registrierungs- und Meldepflichten nach dem Absatzfinanzierungsaufsichtsgesetz"), "absfinag")
         self.assertEqual(_classify("Consultation on the proposal for Guidelines on criteria for the identification of critical functions - IRRD"), "irrd")
-        self.assertEqual(_classify("EBA consults on resolvability under BRRD"), "brrd")
+        # Abwicklungsfähigkeit ist seit den Kind-Rahmenwerken eine eigene EBA-Leitlinie.
+        self.assertEqual(_classify("EBA consults on resolvability under BRRD"), "ebaresolvability")
         # Seit 03.09.2026 eigenes Rahmenwerk "taxonomy" (vorher unter SFDR).
         self.assertEqual(_classify("Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act"), "taxonomy")
 
@@ -327,3 +328,65 @@ class PraxisSummary(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class QaSweepSept2026(unittest.TestCase):
+    """Befunde der Oberflächenprüfung vom 03.09.2026."""
+
+    def test_offtopic_legislation(self):
+        from regradar.webexport import _classify
+        for title in (
+            "Anordnung zur Übertragung der Zuständigkeit für Widerspruchsbescheide aus dem Beamtenverhältnis Verbraucherschutz",
+            "Gesetz zur Änderung des Energiewirtschaftsrechts zur Stärkung des Verbraucherschutzes im Energiebereich",
+            "Gesetz zur Änderung des Agrarstatistikgesetzes und des Agrarorganisationen-und-Lieferketten-Gesetzes",
+        ):
+            self.assertIsNone(_classify(title, source_id="bgbl"), title)
+        # Finanzrecht bleibt zugeordnet; andere Quellen unberührt.
+        self.assertEqual(_classify("Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge", source_id="bgbl"), "consumer")
+        self.assertEqual(_classify("Lieferkettensorgfaltspflichten: EU-Kommission zum Omnibus", source_id="ec_fisma"), "lksg")
+        # Fachfremd-Filter nur auf den Titel: Teaser des ZKG nennt Asylsuchende.
+        self.assertEqual(_classify("Zahlungskontengesetz: Basiskonto auch für Asylsuchende und Geduldete", source_id="dip", title="Gesetz zur Umsetzung der Zahlungskontenrichtlinie"), "zkg")
+
+    def test_eba_qna_insurance_holdings_is_crr(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Exemption from the deduction of holdings in insurance undertakings under Article 471 CRR", source_id="eba_qna"), "crr3")
+        self.assertEqual(_classify("Validation rule v90317_m COREP C 16.02", source_id="eba_qna"), "itsrep")
+
+    def test_cssf_forwards_of_fatf_and_eba_go_to_amla(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Public Consultation on AML/CFT and Financial Inclusion - Updated FATF Guidance", source_id="cssf"), "amla")
+        self.assertEqual(_classify("The European Banking Authority consults on new rules related to the anti-money laundering package", source_id="cssf"), "amla")
+        self.assertEqual(_classify("Circular CSSF 12-02 on money laundering", source_id="cssf"), "cssfaml")
+        # Travel-Rule-Konsultation der FATF bleibt bei der Geldtransfer-Verordnung.
+        self.assertEqual(_classify("Public consultation by FATF on guidance to increase payment transparency - travel rule", source_id="cssf"), "tfr")
+
+    def test_dora_third_country_branches(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg", source_id="cssf"), "dora")
+        self.assertEqual(_classify("Guidelines on the authorisation of third-country branches under CRD VI"), "ebatcb")
+
+    def test_reply_form_is_noise(self):
+        from regradar.webexport import _classify
+        self.assertIsNone(_classify("Consultation paper on the reporting framework under EMIR - Reply form"))
+
+    def test_title_key_ignores_suffixes(self):
+        from regradar.webexport import _title_key
+        self.assertEqual(_title_key("ESMA authorises EuroCTP - Press release"), _title_key("ESMA authorises EuroCTP"))
+        self.assertEqual(_title_key("Circular CSSF 25/882 (Updated)"), _title_key("Circular CSSF 25/882"))
+
+    def test_praxis_sources(self):
+        from regradar.webexport import PRAXIS_SOURCES
+        self.assertIn("bafin", PRAXIS_SOURCES)
+        self.assertNotIn("bgbl", PRAXIS_SOURCES)
+
+    def test_unusable_llm_summary(self):
+        from regradar.summarize import usable
+        self.assertFalse(usable("Der Text enthält keine Informationen über den Inhalt der Meldung."))
+        self.assertFalse(usable("Der Text enthält lediglich einen Titel."))
+        self.assertTrue(usable("Die BaFin hat die 9. MaRisk-Novelle veröffentlicht."))
+
+    def test_eiopa_page_date(self):
+        from regradar.adapters.eiopa import page_publication_date
+        html = '<time datetime="2025-04-29T12:00:00Z">29 April 2025</time> <time datetime="2025-07-31T21:59:59Z">31 July</time>'
+        self.assertEqual(page_publication_date(html), "2025-04-29")
+        self.assertIsNone(page_publication_date("<p>kein Datum</p>"))

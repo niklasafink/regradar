@@ -31,6 +31,10 @@ FRAMEWORK_RULES = [
                      r"(ict|ikt)[\s\S]{0,40}incident reporting|cyber threat|cyberbedrohung"),
     ("doratlpt", r"\btlpt\b|threat.led penetration|bedrohungsorientiert"),
     ("dorarmf", r"ict risk management framework|ikt-risikomanagementrahmen|simplified ict risk"),
+    # Drittlandzweigstellen: DORA-Texte (z. B. CSSF zur Anwendung von DORA auf
+    # Zweigniederlassungen) gehören zu DORA, nicht zu den CRD-VI-Leitlinien.
+    ("dora", r"\bdora\b(?=[\s\S]*(third[- ]country branch|drittlandzweigstell))|"
+             r"(third[- ]country branch|drittlandzweigstell)(?=[\s\S]*\bdora\b)"),
     ("ebatcb", r"third[- ]country branch|drittlandzweigstell|drittstaatenzweigstell"),
     ("ebaasu", r"ancillary services undertaking|nebendienstleistung"),
     ("ebaadc", r"\badc exposure|acquisition, development and construction|bauträgerfinanzierung"),
@@ -229,11 +233,19 @@ SOURCE_RULES = {
                       r"investment (restriction|rule) breach|02/77"),
         ("cssf18698", r"18/698|22/806|25/883|outsourcing|substance requirement|conducting officers?|dirigeants?|"
                       r"investment fund managers?(?! and)|\bifms?\b|delegation oversight"),
+        # Weiterleitungen internationaler/europäischer AML-Standards (FATF, EBA)
+        # sind kein luxemburgisches Recht.
+        ("amla", r"(\bfatf\b|european banking authority|\beba\b)(?![\s\S]*(travel rule|transfer of funds|geldtransfer))"),
         ("cssfaml", r"12-02|law of 12 november 2004|money laundering|aml/cft|\baml\b|\bcft\b|terrorist financing|"
                     r"financial sanctions?|questionnaire on financial crime|\brc\b.{0,20}\brr\b"),
         ("luaifm", r"law of 17 december 2010|law of 12 july 2013|law of 3 march 2026|\b2010 law\b|\b2013 law\b|25/901|"
                    r"\bsifs?\b|sicar|\braifs?\b|part ii uci|\bucits\b|\baifms?\b|\baifs?\b|investment funds?\b|"
                    r"undertakings for collective investment|\bucis?\b|eltif|\bmmfr?\b|money market fund"),
+    ],
+    # EBA Single Rulebook Q&A: Fragen zu Versicherungsbeteiligungen (CET1-Abzug,
+    # Art. 471 CRR) sind Bankenaufsicht, nicht Solvency II.
+    "eba_qna": [
+        ("crr3", r"(?=[\s\S]*\bcrr\b)(?=[\s\S]*(insurance|versicherung))"),
     ],
 }
 
@@ -268,6 +280,10 @@ PRAXIS_RULES = [
     ("zwangsgeld", r"zwangsgeld"),
     ("verwarnung", r"verwarn"),
 ]
+# Nur Aufsichtsbehörden veröffentlichen Einzelfall-Maßnahmen; Gesetzgebungs-
+# quellen (BGBl, DIP) tragen "Bußgeld" auch in fachfremden Titeln
+# ("… papiergebundene Akten in Bußgeldverfahren", Tiergesundheitsrecht).
+PRAXIS_SOURCES = {"bafin"}
 PRAXIS_WINDOW_DAYS = 365
 # Harte Obergrenze: Die BaFin muss eigene Maßnahme-Bekanntmachungen fünf
 # Jahre nach Veröffentlichung löschen (u. a. § 125 Abs. 5 WpHG, § 60b
@@ -314,16 +330,34 @@ NOISE = re.compile(
     r"identitätsmissbrauch|unerlaubte|newsletter|roundtable|"
     r"speaking|speaks?\b|keynote|speech|interview|visits?\b|konferenz|conference|"
     r"moderates|appears before|sets out vision|\bsummit\b|"
-    r"call for papers|vacanc|appoint|ernennung|"
+    r"call for papers|vacanc|appoint|ernennung|reply form|antwortformular|"
     r"geldbuße|bußgeld|zwangsgeld|verwarnt|workshop|webinar|anmeldung|"
     r"tragic incident|condolence|stakeholder group|stakeholder event|photo gallery|"
     r"anordnung über die vertretung|vertretung der bundesrepublik|"
     r"stellenausschreibung|management board meeting", re.IGNORECASE)
 
 
+# Gesetzgebungsquellen (BGBl, DIP, Gesetze im Internet) decken alle Rechts-
+# gebiete ab; generische Muster wie "Verbraucherschutz" oder "Lieferkette"
+# treffen dort auch Energie-, Agrar- oder Beamtenrecht.
+LEGISLATION_SOURCES = {"bgbl", "dip", "gii"}
+OFFTOPIC_DE = re.compile(
+    r"beamten|besoldung|energiewirtschaft|energiebereich|agrar|tiergesundheit|"
+    r"tierarznei|tierschutz|lebensmittel|landwirtschaft|forst|jagd|fischerei|"
+    r"straßenverkehr|kraftfahr|bundeswehr|soldaten|wehrpflicht|aufenthaltsgesetz|"
+    r"schulgesetz|hochschul|kindergeld|elterngeld|rentenversicherung|krankenversicherung|"
+    r"pflegeversicherung|arzneimittel|krankenhaus|baugesetz|mietrecht|"
+    r"telekommunikation|rundfunk|postgesetz", re.IGNORECASE)
+
+
 def _classify(text: str, forced: Optional[str] = None,
-              source_id: Optional[str] = None) -> Optional[str]:
+              source_id: Optional[str] = None,
+              title: Optional[str] = None) -> Optional[str]:
+    """title: Originaltitel für den Fachfremd-Filter (Teaser nennen bei
+    Finanzgesetzen auch Asylsuchende, Krankenversicherung u. ä.)."""
     if NOISE.search(text):
+        return None
+    if source_id in LEGISLATION_SOURCES and OFFTOPIC_DE.search(title if title is not None else text):
         return None
     if forced:
         return forced
@@ -335,6 +369,16 @@ def _classify(text: str, forced: Optional[str] = None,
         if re.search(pattern, lowered):
             return fw_id
     return None
+
+
+def _title_key(title: Optional[str]) -> str:
+    """Normalisierter Titel für die Dubletten-Erkennung: Groß-/Kleinschreibung,
+    Satzzeichen und Anhängsel wie "- Press release" oder "(Updated)" spielen
+    keine Rolle (ESMA-News vs. ESMA-Library, CSSF-Aktualisierungen)."""
+    t = (title or "").lower()
+    t = re.sub(r"\s*[-–:]\s*(press release|pressemitteilung|news)\s*$", "", t)
+    t = re.sub(r"\s*\((updated|aktualisiert)\)\s*$", "", t)
+    return re.sub(r"\W+", " ", t).strip()
 
 
 def _de_date(iso: Optional[str]) -> Optional[str]:
@@ -427,6 +471,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     praxis_raws = []  # Rohtexte parallel zu praxis, für die KI-Prüfroutine
     seen_praxis = set()
     for r in rows:
+        if r["source_id"] not in PRAXIS_SOURCES:
+            continue
         cat = _praxis_category(
             "{} {}".format(r["title"] or "", r["summary"] or ""),
             r["canonical_url"] or "")
@@ -475,7 +521,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         fw_id = _classify(
             "{} {}".format(r["title"] or "", r["summary"] or ""),
             forced="amla" if r["source_id"] == "amla" else None,
-            source_id=r["source_id"])
+            source_id=r["source_id"], title=r["title"])
         if not fw_id:
             continue
         date = _de_date(r["publication_date"]) or _de_date(r["first_seen_at"][:10])
@@ -514,7 +560,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 continue
             if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK:
                 continue
-            title_key = (fw_id, re.sub(r"\W+", " ", (r["title"] or "").lower()).strip())
+            title_key = (fw_id, _title_key(r["title"]))
             if title_key in seen_titles:
                 continue
             seen_titles.add(title_key)
