@@ -12,8 +12,10 @@ from .ebaqna import EbaQnaAdapter
 from .esmalib import EsmaLibAdapter
 from .iosco import IoscoAdapter
 from .dsnews import DsNewsAdapter
+from .ecfinance import EcFinanceAdapter
 
 ADAPTERS = {
+    "ecfinance": EcFinanceAdapter,
     "rss": RssAdapter,
     "eurlex": EurLexAdapter,
     "gii": GiiAdapter,

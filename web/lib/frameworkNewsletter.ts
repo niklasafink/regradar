@@ -82,7 +82,7 @@ const esc = (s: string): string =>
   s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 const JUR_LABEL: Record<Framework["jur"], string> = {
-  EU: "EU", DE: "Deutschland", "EU+DE": "EU + Deutschland",
+  EU: "EU", DE: "Deutschland", "EU+DE": "EU + Deutschland", LU: "Luxemburg",
 };
 
 /** Detailseite eines Rahmenwerks über den ersten zugeordneten Anbietertyp. */

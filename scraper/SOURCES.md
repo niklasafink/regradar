@@ -1,4 +1,4 @@
-# Scraper-Quellenliste (Stand 30.08.2026, 27 Quellen: Welle 1–5 umgesetzt)
+# Scraper-Quellenliste (Stand 03.09.2026, 30 Quellen: Welle 1–6 umgesetzt)
 
 > Status: umgesetzt in `scraper/regradar/`. Die konkreten, live verifizierten Endpunkte stehen in `README.md`. DIP benötigt den frei publizierten API-Key als `DIP_API_KEY`.
 
@@ -56,6 +56,16 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 | # | Quelle | Behörde / Jurisdiktion | Zugriffsweg | Dokumenttypen | Bemerkung |
 |---|---|---|---|---|---|
 | 27 | EU-Kommission / AI Office (digital-strategy.ec.europa.eu) | EU (GD CNECT) | HTML (News-Liste `?topic=119` = „Artificial intelligence") | GUIDELINE, CONSULTATION, FINAL_REPORT, OTHER | Offizielle Publikationsplattform für AI-Act-Leitlinien, GPAI Code of Practice, AI Omnibus, Enforcement. Der Site-RSS (`/en/rss.xml`) ist ungefiltert (10 Items, alle Themen) und daher unbrauchbar; Datum + Typ stehen direkt in der Liste |
+
+## Welle 6 — Luxemburg, DG FISMA, EZB (umgesetzt am 03.09.2026)
+
+| # | Quelle | Behörde / Jurisdiktion | Zugriffsweg | Dokumenttypen | Bemerkung |
+|---|---|---|---|---|---|
+| 28 | CSSF | LU | RSS, 7 typisierte Feeds (`feed/publications?content_type=…`: circular-cssf, cssf-regulation, communique, public-consultation, cssf-faq, law, grand-ducal-regulation) | CIRCULAR, REGULATION, CONSULTATION, Q_AND_A, LAW, OTHER | Luxemburger Fonds-/ManCo-Recht; Referenzen „Circular CSSF 26/910", „CSSF Regulation No 12-02" aus Titel; Zuordnung zuerst gegen Lux-Rahmenwerke (`SOURCE_RULES`) |
+| 29 | EU-Kommission / GD FISMA | EU | HTML (`finance.ec.europa.eu/finance-news_en`, ECL-Liste, 2 Seiten) | LEGISLATIVE_PROPOSAL, CONSULTATION, FINAL_REPORT, OTHER | Frühwarnsignal für RIS, Verbriefung, PSD3, Digitaler Euro, SIU-Paket; Rat (403) und Parlament (202-Bot-Check) liefern keine Feeds |
+| 30 | EZB (Pressemitteilungen) | EU | RSS (`rss/press.xml`) | OTHER | Digitaler Euro, IReF, TARGET; Reden fängt der NOISE-Filter |
+
+**Nicht angebunden: Rat der EU / Europäisches Parlament** — consilium.europa.eu antwortet 403 („Browser check"), europarl.europa.eu mit 202-Challenge; beides Bot-Schutz, wird nicht umgangen. Ersatz: DG-FISMA-News + EZB.
 
 **Nicht angebunden: FATF** — fatf-gafi.org liefert 403 auf allen Pfaden (Cloudflare-Bot-Schutz, auch mit Browser-User-Agent); wird nicht umgangen. Wieder prüfen, falls ein offizieller Feed erscheint.
 

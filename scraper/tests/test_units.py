@@ -79,7 +79,54 @@ class FrameworkClassification(unittest.TestCase):
         self.assertEqual(_classify("Entscheidungsbaum zu Registrierungs- und Meldepflichten nach dem Absatzfinanzierungsaufsichtsgesetz"), "absfinag")
         self.assertEqual(_classify("Consultation on the proposal for Guidelines on criteria for the identification of critical functions - IRRD"), "irrd")
         self.assertEqual(_classify("EBA consults on resolvability under BRRD"), "brrd")
-        self.assertEqual(_classify("Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act"), "sfdr")
+        # Seit 03.09.2026 eigenes Rahmenwerk "taxonomy" (vorher unter SFDR).
+        self.assertEqual(_classify("Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act"), "taxonomy")
+
+    def test_neue_rahmenwerke_2026(self):
+        """Gap-Analyse 03.09.2026: Spezialregime greifen vor den generischen Mustern."""
+        from regradar.webexport import _classify
+        cases = [
+            ("Retail Investment Strategy: Council endorses final compromise text", "ris"),
+            ("Kleinanlegerstrategie: Parlament stimmt über Value for Money ab", "ris"),
+            ("Commission publishes Market Integration and Supervision Package", "misp"),
+            ("Delegated act on simplification of the EU Taxonomy published", "taxonomy"),
+            ("ESMA statement on ESG rating providers transition period", "esgrating"),
+            ("ESMA registers first external reviewers under the European Green Bond Regulation", "greenbond"),
+            ("Widerrufsbutton: Neue Regeln für den Fernabsatz von Finanzdienstleistungen", "fernabsatz"),
+            ("European Parliament backs negotiating mandate on the digital euro", "digieuro"),
+            ("BaFin veröffentlicht Neufassung der MaGo für Versicherer", "mago"),
+            ("EBA final Guidelines on the management of ESG risks", "ebaesg"),
+            ("ECON adopts position on the securitisation framework review", "securitisation"),
+            ("Commission publishes guidance on the Cyber Resilience Act reporting obligations", "cra"),
+            ("BaFin: Erlaubnisverfahren nach dem Kreditzweitmarktgesetz", "krzwmg"),
+            ("ECB announces main milestones for roll-out of Integrated Reporting Framework", "iref"),
+            ("ICMA updates SFTR reporting recommendations", "sftr"),
+            ("EBA Guidelines on loan origination and monitoring: compliance table", "loanorig"),
+            ("EBA and ESMA consult on revised joint Guidelines on the suitability of members of the management body", "fitproper"),
+            ("Commission consultation on the Mortgage Credit Directive review", "mcd"),
+            ("Pfandbriefgesetz: Änderung der Beleihungswertermittlungsverordnung", "pfandbg"),
+            ("Data Act: Commission guidance on cloud switching", "dataact"),
+            # Bestehende Zuordnungen bleiben stabil.
+            ("EBA reporting framework 4.1 – Taxonomy package published", "itsrep"),
+            ("ESMA guidelines on MiFID II suitability requirements", "mifid"),
+            ("EBA consults on LCR and NSFR treatment under the banking package", "crr3"),
+        ]
+        for text, expected in cases:
+            self.assertEqual(_classify(text), expected, text)
+
+    def test_cssf_quellenregeln(self):
+        """CSSF-Dokumente werden zuerst den luxemburgischen Rahmenwerken zugeordnet;
+        EU-Weiterleitungen fallen auf die generischen Regeln zurück."""
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("Circular CSSF 26/910 – ESMA Guidelines on Liquidity Management Tools", source_id="cssf"), "lulmt")
+        self.assertEqual(_classify("Circular CSSF 24/856 – Protection of investors in case of NAV calculation error", source_id="cssf"), "cssf24856")
+        self.assertEqual(_classify("Circular CSSF 22/806 (as amended) on outsourcing arrangements", source_id="cssf"), "cssf18698")
+        self.assertEqual(_classify("FAQ on AML/CFT asset due diligence obligations in accordance with CSSF Regulation No 12-02", source_id="cssf"), "cssfaml")
+        self.assertEqual(_classify("Communication to the investment fund industry – Law of 3 March 2026", source_id="cssf"), "luaifm")
+        self.assertEqual(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches", source_id="cssf"), "dora")
+        self.assertEqual(_classify("Public consultation by ESMA on simplifying EU Taxonomy disclosure framework", source_id="cssf"), "taxonomy")
+        # Ohne Quellenkontext greifen die Lux-Regeln nicht.
+        self.assertEqual(_classify("ESMA Guidelines on Liquidity Management Tools of UCITS"), "aifmd2")
 
     def test_umgangssprachliche_begriffe(self):
         from regradar.webexport import _classify

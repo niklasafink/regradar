@@ -393,6 +393,56 @@ SOURCES = [
         "adapter": "dsnews",
         "enabled": 1,
     },
+    # ---------------- Welle 6: Luxemburg, DG FISMA, EZB (03.09.2026) ----------------
+    {
+        "source_id": "cssf",
+        "name": "CSSF Luxemburg",
+        "authority": "CSSF",
+        "jurisdiction": "LU",
+        "base_url": "https://www.cssf.lu/",
+        # Typisierte RSS-Feeds (content_type=…), alle am 03.09.2026 live
+        # verifiziert (HTTP 200, pubDate vorhanden). Der ungefilterte
+        # Publikationsfeed enthält Listen/Statistiken und wird nicht genutzt.
+        "discovery_url": "https://www.cssf.lu/en/feed/publications?content_type=circular-cssf",
+        "discovery_type": "RSS",
+        "access_class": "PUBLIC",
+        "document_types": ["CIRCULAR", "REGULATION", "CONSULTATION", "Q_AND_A", "LAW", "OTHER"],
+        "poll_interval_minutes": 360,
+        "adapter": "rss",
+        "enabled": 1,
+    },
+    {
+        "source_id": "ec_fisma",
+        "name": "EU-Kommission / GD FISMA (Finance News)",
+        "authority": "Europäische Kommission (GD FISMA)",
+        "jurisdiction": "EU",
+        "base_url": "https://finance.ec.europa.eu/",
+        # Kein RSS auf finance.ec.europa.eu; die News-Liste (ECL-Markup wie
+        # digital-strategy) liefert Typ, Datum, Titel und Teaser je Eintrag.
+        "discovery_url": "https://finance.ec.europa.eu/finance-news_en",
+        "discovery_type": "HTML",
+        "access_class": "PUBLIC",
+        "document_types": ["LEGISLATIVE_PROPOSAL", "CONSULTATION", "FINAL_REPORT", "OTHER"],
+        "poll_interval_minutes": 360,
+        "adapter": "ecfinance",
+        "enabled": 1,
+    },
+    {
+        "source_id": "ecb",
+        "name": "EZB (Pressemitteilungen)",
+        "authority": "EZB",
+        "jurisdiction": "EU",
+        "base_url": "https://www.ecb.europa.eu/",
+        # Digitaler Euro, IReF, Zahlungsverkehrsinfrastruktur (TARGET) –
+        # ergänzt den SSM-Feed der Bankenaufsicht; Reden filtert NOISE.
+        "discovery_url": "https://www.ecb.europa.eu/rss/press.xml",
+        "discovery_type": "RSS",
+        "access_class": "PUBLIC",
+        "document_types": ["OTHER"],
+        "poll_interval_minutes": 720,
+        "adapter": "rss",
+        "enabled": 1,
+    },
 ]
 
 # Zusätzliche Feeds pro RSS-Quelle (werden alle abgefragt); Mapping auf Dokumenttyp.
@@ -443,6 +493,18 @@ RSS_FEEDS = {
     "fsb": [
         ("https://www.fsb.org/feed/", "OTHER", "en"),
     ],
+    "cssf": [
+        ("https://www.cssf.lu/en/feed/publications?content_type=circular-cssf", "CIRCULAR", "en"),
+        ("https://www.cssf.lu/en/feed/publications?content_type=cssf-regulation", "REGULATION", "en"),
+        ("https://www.cssf.lu/en/feed/publications?content_type=communique", "OTHER", "en"),
+        ("https://www.cssf.lu/en/feed/publications?content_type=public-consultation", "CONSULTATION", "en"),
+        ("https://www.cssf.lu/en/feed/publications?content_type=cssf-faq", "Q_AND_A", "en"),
+        ("https://www.cssf.lu/en/feed/publications?content_type=law", "LAW", "en"),
+        ("https://www.cssf.lu/en/feed/publications?content_type=grand-ducal-regulation", "LAW", "en"),
+    ],
+    "ecb": [
+        ("https://www.ecb.europa.eu/rss/press.xml", "OTHER", "en"),
+    ],
 }
 
 # Quellen, deren Detailseiten nicht gefetcht werden (nur Feed-Metadaten):
@@ -473,4 +535,11 @@ GII_WATCHLIST = {
     "awg_2013": "Außenwirtschaftsgesetz (AWG)",
     "zkg": "Zahlungskontengesetz (ZKG)",
     "lksg": "Lieferkettensorgfaltspflichtengesetz (LkSG)",
+    # Ergänzt am 03.09.2026 (Gap-Analyse): NPL-Zweitmarkt, MiCA-Begleitgesetz,
+    # Vermögensanlagen/Crowdfunding, Wohnimmobilienkredit, Prospektrecht.
+    "krzwmg": "Kreditzweitmarktgesetz (KrZwMG)",
+    "kmag": "Kryptomärkteaufsichtsgesetz (KMAG)",
+    "vermanlg": "Vermögensanlagengesetz (VermAnlG)",
+    "immokwplv": "Immobiliar-Kreditwürdigkeitsprüfungsleitlinien-Verordnung (ImmoKWPLV)",
+    "wppg": "Wertpapierprospektgesetz (WpPG)",
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T14:00:54Z",
+  "generated_at": "2026-09-02T23:46:20Z",
   "sources": [
     {
       "id": "eurlex",
@@ -208,6 +208,30 @@
       "jurisdiction": "EU",
       "access": "HTML",
       "url": "https://digital-strategy.ec.europa.eu/"
+    },
+    {
+      "id": "cssf",
+      "name": "CSSF Luxemburg",
+      "authority": "CSSF",
+      "jurisdiction": "LU",
+      "access": "RSS",
+      "url": "https://www.cssf.lu/"
+    },
+    {
+      "id": "ec_fisma",
+      "name": "EU-Kommission / GD FISMA (Finance News)",
+      "authority": "Europäische Kommission (GD FISMA)",
+      "jurisdiction": "EU",
+      "access": "HTML",
+      "url": "https://finance.ec.europa.eu/"
+    },
+    {
+      "id": "ecb",
+      "name": "EZB (Pressemitteilungen)",
+      "authority": "EZB",
+      "jurisdiction": "EU",
+      "access": "RSS",
+      "url": "https://www.ecb.europa.eu/"
     }
   ]
 }

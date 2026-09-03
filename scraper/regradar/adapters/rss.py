@@ -43,6 +43,9 @@ REF_PATTERNS = [
     r"\b(ESMA[\w\-]*\d{2,}[\w\-]*)\b",
     r"\bRundschreiben\s+(\d+/\d{4})",
     r"\b(GZ:\s*\S+)\b",
+    # CSSF Luxemburg: "Circular CSSF 26/910", "CSSF Regulation No 12-02"
+    r"\b(Circular CSSF \d{2}/\d{3})\b",
+    r"\b(CSSF Regulation No\.? \d{2}-\d{2})\b",
 ]
 
 

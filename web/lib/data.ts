@@ -24,7 +24,9 @@ export interface Update {
   adv?: Advisory[];
 }
 export interface Framework {
-  id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE";
+  /** Rechtsraum; "LU" = luxemburgisches Fonds-/CSSF-Recht (nur sichtbar,
+      wenn im Onboarding „Luxemburg" gewählt ist). */
+  id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE" | "LU";
   n: Txt; ref: string;
   /** Umgangssprachliche Bezeichnungen und Abkürzungen (nur für die Suche). */
   alias?: string;
@@ -1043,7 +1045,432 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"Barrierefreiheitsstärkungsgesetz verkündet, Anwendung ab 28.06.2025",en:"Accessibility Strengthening Act promulgated, applies from 28 Jun 2025"},
        s:{de:"Setzt den European Accessibility Act (RL (EU) 2019/882) um. Bankdienstleistungen für Verbraucher, Zahlungsterminals und Geldautomaten müssen die Barrierefreiheitsanforderungen erfüllen; Verstöße können mit Bußgeldern bis 100.000 Euro, Untersagung und Verbandsklagen sanktioniert werden. Übergangsfristen gelten für bereits eingesetzte Terminals.",
           en:"Transposes the European Accessibility Act (Directive (EU) 2019/882). Consumer banking services, payment terminals and ATMs must meet the accessibility requirements; breaches can be sanctioned with fines of up to 100,000 euros, prohibition orders and collective actions. Transition periods apply to terminals already in use."}}
+    ]},
+  /* ---------- Ergänzt am 03.09.2026 (Gap-Analyse Banken / Asset Manager / Versicherer / Zahlungsinstitute) ---------- */
+
+  { id:"ris", jur:"EU",
+    about:{de:"Kleinanlegerstrategie der EU: Value-for-Money-Benchmarks, verschärfte Zuwendungsregeln, maschinenlesbare Basisinformationsblätter und neue Vorgaben für Marketing und Beratung. Ändert MiFID II, IDD, OGAW-RL, AIFMD, Solvency II und PRIIPs in einem Paket.",
+           en:"The EU Retail Investment Strategy: value-for-money benchmarks, tighter inducement rules, machine-readable key information documents and new marketing and advice standards. Amends MiFID II, IDD, UCITS, AIFMD, Solvency II and PRIIPs in one package."},
+    topic:"MKT", ents:["CI","AM","IF","INS"],
+    n:{de:"Kleinanlegerstrategie (Retail Investment Strategy)",en:"Retail Investment Strategy (RIS)"},
+    alias:"RIS, Retail Investment Strategy, Kleinanlegerstrategie, Value for Money, Zuwendungsverbot, Inducements, Omnibus-Richtlinie Anlegerschutz",
+    ref:"COM(2023) 278 (RL), COM(2023) 279 (VO)", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://www.consilium.europa.eu/en/policies/retail-investment-strategy/",
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[
+      {d:"05.06.2026", t:{de:"Einigung",en:"Agreement"}, src:"consilium.europa.eu",
+       url:"https://www.consilium.europa.eu/en/policies/retail-investment-strategy/",
+       ti:{de:"Mitgliedstaaten billigen den finalen Kompromisstext im AStV",en:"Member states endorse the final compromise text in Coreper"},
+       s:{de:"Der Ausschuss der Ständigen Vertreter hat den technisch bereinigten Text gebilligt; das Parlament bestätigt ihn im September 2026 im Plenum. Nach Veröffentlichung im Amtsblatt beginnt eine Übergangsfrist, bevor Value-for-Money-Prüfung, Zuwendungsregeln und neue PRIIPs-Vorgaben verbindlich werden.",
+          en:"Coreper approved the technically finalised text; Parliament confirms it in plenary in September 2026. After publication in the Official Journal a transitional period runs before value-for-money tests, inducement rules and the new PRIIPs requirements become binding."}},
+      {d:"18.12.2025", t:{de:"Einigung",en:"Agreement"}, src:"consilium.europa.eu",
+       url:"https://www.consilium.europa.eu/en/press/press-releases/2025/12/18/retail-investment-strategy-council-and-parliament-agree-on-package-to-empower-consumers-while-boosting-markets/",
+       ti:{de:"Rat und Parlament erzielen politische Einigung zur Kleinanlegerstrategie",en:"Council and Parliament reach political agreement on the Retail Investment Strategy"},
+       s:{de:"Kernpunkte: Value-for-Money-Bewertung mit Benchmarks statt Zuwendungsverbot, strengere Best-Interest-Prüfung, vereinfachte Kostenoffenlegung, digitale Basisinformationsblätter und EU-weites Onboarding für grenzüberschreitende Berater.",
+          en:"Key points: value-for-money assessment with benchmarks instead of an inducement ban, a stricter best-interest test, simplified cost disclosure, digital key information documents and EU-wide onboarding for cross-border advisers."}}
+    ]},
+
+  { id:"taxonomy", jur:"EU",
+    about:{de:"Klassifikationssystem für ökologisch nachhaltige Wirtschaftstätigkeiten. Finanzunternehmen müssen Taxonomie-Quoten (Green Asset Ratio, KPI für Investitionen) offenlegen; der Omnibus-Rechtsakt vereinfacht ab Geschäftsjahr 2025 Umfang und Templates.",
+           en:"Classification system for environmentally sustainable economic activities. Financial undertakings must disclose taxonomy ratios (green asset ratio, investment KPIs); the omnibus act simplifies scope and templates from financial year 2025."},
+    topic:"ESG", ents:["CI","AM","IF","INS"],
+    n:{de:"EU-Taxonomie-Verordnung",en:"EU Taxonomy Regulation"},
+    alias:"Taxonomie, EU Taxonomy, Green Asset Ratio, GAR, Taxonomie-Offenlegung, Artikel 8 Delegierte Verordnung, DNSH, Omnibus",
+    ref:"VO (EU) 2020/852, DelVO (EU) 2021/2178, DelVO (EU) 2026/73", cond:{k:"cross",any:["esg"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2020/852/oj/eng",
+    condL:{de:"nur bei Nachhaltigkeitsangaben",en:"only where sustainability disclosures apply"},
+    u:[
+      {d:"08.01.2026", eff:"28.01.2026", t:{de:"Delegierte VO",en:"Delegated regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg_del/2026/73/oj/eng",
+       ti:{de:"Omnibus-Vereinfachung der Taxonomie-Offenlegung im Amtsblatt veröffentlicht",en:"Omnibus simplification of taxonomy disclosures published in the Official Journal"},
+       s:{de:"Die Delegierte Verordnung (EU) 2026/73 ändert die Offenlegungs-DelVO 2021/2178 sowie die Klima- und Umwelt-Rechtsakte: Wesentlichkeitsschwellen, gestraffte Templates und vereinfachte DNSH-Kriterien. Gilt rückwirkend ab 01.01.2026 für das Berichtsjahr 2025.",
+          en:"Delegated Regulation (EU) 2026/73 amends the disclosures delegated act 2021/2178 and the climate and environmental acts: materiality thresholds, streamlined templates and simplified DNSH criteria. Applies retroactively from 1 January 2026 for financial year 2025."}}
+    ]},
+
+  { id:"fernabsatz", jur:"EU+DE",
+    about:{de:"Neue Regeln für online oder telefonisch geschlossene Finanzdienstleistungsverträge: Widerrufsbutton, vorvertragliche Informationen, Erklärungspflicht bei Chatbots und Online-Tools. Ersetzt die Fernabsatzrichtlinie 2002/65/EG und ist in BGB und EGBGB umgesetzt.",
+           en:"New rules for financial services contracts concluded online or by phone: a withdrawal button, pre-contractual information, and an explanation duty where chatbots or online tools are used. Replaces Directive 2002/65/EC and is transposed into the BGB and EGBGB."},
+    topic:"CONS", ents:["CI","PI","IF","INS","OTH"],
+    n:{de:"Fernabsatz von Finanzdienstleistungen (RL 2023/2673)",en:"Distance marketing of financial services (Directive 2023/2673)"},
+    alias:"Fernabsatz, Fernabsatzrichtlinie, Distance Marketing, Widerrufsbutton, Withdrawal Button, § 356a BGB, Online-Vertragsabschluss, Fernabsatzverträge",
+    ref:"RL (EU) 2023/2673, §§ 312 ff., 356a BGB, Art. 246b EGBGB", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2023/2673/oj/deu",
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[
+      {refnum:"BGBl. 2026 I Nr. 28", d:"05.02.2026", eff:"19.06.2026", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.recht.bund.de/bgbl/1/2026/28/regelungstext.pdf?__blob=publicationFile&v=1",
+       ti:{de:"Umsetzungsgesetz verkündet: Widerrufsbutton und neue Fernabsatzregeln ab 19.06.2026",en:"Transposition act promulgated: withdrawal button and new distance-marketing rules from 19 Jun 2026"},
+       s:{de:"Das Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts setzt die Richtlinie (EU) 2023/2673 um. Online abgeschlossene Finanzverträge brauchen ab 19.06.2026 eine Widerrufsfunktion; Anbieter müssen auf Verlangen eine menschliche Ansprechperson stellen, wenn Chatbots oder automatisierte Tools eingesetzt werden. Die erweiterten Informationspflichten gelten ab 27.09.2026.",
+          en:"The act amending consumer contract and insurance contract law transposes Directive (EU) 2023/2673. From 19 June 2026 financial contracts concluded online need a withdrawal function; providers must offer a human contact on request where chatbots or automated tools are used. The extended information duties apply from 27 September 2026."}}
+    ]},
+
+  { id:"digieuro", jur:"EU",
+    about:{de:"Rechtsrahmen für eine digitale Zentralbankwährung im Euroraum: Annahmepflicht für Händler, Verteilungspflicht für Banken und Zahlungsdienstleister, Haltelimits, Offline-Funktion und Vergütungsmodell. Parallel dazu die Bargeld-Verordnung.",
+           en:"Legal framework for a euro-area central bank digital currency: mandatory acceptance by merchants, distribution obligations for banks and payment service providers, holding limits, an offline function and a compensation model. Accompanied by the cash regulation."},
+    topic:"PAY", ents:["CI","PI"],
+    n:{de:"Digitaler Euro",en:"Digital euro"},
+    alias:"Digitaler Euro, Digital Euro, D€, CBDC, Zentralbankwährung, Bargeld-Verordnung, Digital Euro Regulation",
+    ref:"COM(2023) 369 (Digitaler Euro), COM(2023) 364 (Bargeld)", cond:{k:"act",any:["payments"]},
+    refUrl:"https://www.ecb.europa.eu/euro/digital_euro/html/index.en.html",
+    condL:{de:"nur bei Zahlungsdiensten",en:"only where payment services are provided"},
+    u:[
+      {d:"09.07.2026", t:{de:"Abstimmung",en:"Vote"}, src:"europarl.europa.eu",
+       ti:{de:"Parlament gibt Verhandlungsmandat zum digitalen Euro frei, Trilog beginnt",en:"Parliament clears its negotiating mandate on the digital euro, trilogue begins"},
+       s:{de:"Das Plenum bestätigte den ECON-Beschluss vom 23.06.2026 mit 416 zu 169 Stimmen, nachdem drei Fraktionen eine Abstimmung erzwungen hatten. Rat, Parlament und Kommission streben eine Einigung bis Ende 2026 an; die EZB plant ein Pilotprojekt 2027 und Verfügbarkeit für Verbraucher ab 2029.",
+          en:"Plenary confirmed the ECON decision of 23 June 2026 by 416 votes to 169 after three groups forced a vote. Council, Parliament and Commission aim for a deal by the end of 2026; the ECB pencils in a pilot for 2027 and consumer availability from 2029."}}
+    ]},
+
+  { id:"mago", jur:"DE",
+    about:{de:"Aufsichtsrechtliche Mindestanforderungen an die Geschäftsorganisation von Versicherern unter Solvency II: Schlüsselfunktionen, Risikomanagement, interne Kontrollen, Ausgliederung. Die Neufassung 2025 ergänzt Nachhaltigkeitsrisiken, Rückversicherung und automatisierte Prozesse.",
+           en:"BaFin's minimum requirements for the system of governance of Solvency II insurers: key functions, risk management, internal controls, outsourcing. The 2025 revision adds sustainability risks, reinsurance and automated processes."},
+    topic:"INSU", ents:["INS"],
+    n:{de:"Mindestanforderungen an die Geschäftsorganisation von Versicherern (MaGo, BaFin-Rundschreiben 09/2025)",en:"Minimum requirements for the system of governance of insurers (MaGo, BaFin Circular 09/2025)"},
+    alias:"MaGo, MaGo für SII-VU, Geschäftsorganisation Versicherer, Rundschreiben 09/2025, Schlüsselfunktionen, Ausgliederung Versicherer",
+    ref:"BaFin-Rundschreiben 09/2025 (VA)", cond:{k:"juris",any:["DE"]},
+    refUrl:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_rundschreiben_09_25_va.html",
+    condL:{de:"nur bei Tätigkeit in Deutschland",en:"only when operating in Germany"},
+    u:[
+      {refnum:"RS 09/2025 (VA)", d:"14.07.2025", eff:"14.10.2025", t:{de:"Rundschreiben",en:"Circular"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_rundschreiben_09_25_va.html",
+       ti:{de:"Neufassung der MaGo für Solvency-II-Versicherer veröffentlicht",en:"Revised MaGo for Solvency II insurers published"},
+       s:{de:"Das Rundschreiben ersetzt die MaGo von 2017 und tritt am 14.10.2025 in Kraft. Neu sind Vorgaben zu Nachhaltigkeitsrisiken im Risikomanagement, zur Rückversicherungsstrategie und zur Steuerung automatisierter Prozesse; die Anforderungen an Ausgliederungen wurden mit DORA abgestimmt.",
+          en:"The circular replaces the 2017 MaGo and takes effect on 14 October 2025. New elements cover sustainability risks in risk management, the reinsurance strategy and the governance of automated processes; outsourcing requirements were aligned with DORA."}}
+    ]},
+
+  { id:"ebaesg", jur:"EU",
+    about:{de:"EBA-Leitlinien zum Management von ESG-Risiken: Identifikation, Messung und Steuerung von Umwelt-, Sozial- und Governance-Risiken im Kreditgeschäft, Transitionspläne und Einbindung in ICAAP und Risikoappetit.",
+           en:"EBA guidelines on managing ESG risks: identifying, measuring and managing environmental, social and governance risks in lending, transition plans and integration into ICAAP and risk appetite."},
+    topic:"PRU", ents:["CI","IF"],
+    n:{de:"EBA-Leitlinien zum ESG-Risikomanagement",en:"EBA guidelines on the management of ESG risks"},
+    alias:"ESG-Risiken, ESG Risk Management, Transitionsplan, Transition Plan, Klimarisiken Banken, EBA/GL/2025/01, Nachhaltigkeitsrisiken Risikomanagement",
+    ref:"EBA/GL/2025/01", cond:null,
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+    u:[
+      {refnum:"EBA/GL/2025/01", d:"09.01.2025", eff:"11.01.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+       ti:{de:"Finale Leitlinien zum ESG-Risikomanagement: Anwendung ab 11.01.2026",en:"Final guidelines on ESG risk management: apply from 11 Jan 2026"},
+       s:{de:"Institute müssen ESG-Risiken über kurze, mittlere und lange Horizonte (mindestens zehn Jahre) bewerten, in Kreditvergabe, Risikoappetit und ICAAP integrieren und Transitionspläne nach CRD VI erstellen. Große Institute wenden die Leitlinien seit 11.01.2026 an, kleine und nicht komplexe Institute ab 11.01.2027.",
+          en:"Institutions must assess ESG risks over short, medium and long horizons (at least ten years), embed them in lending, risk appetite and ICAAP, and prepare transition plans under CRD VI. Large institutions apply the guidelines since 11 January 2026, small and non-complex institutions from 11 January 2027."}}
+    ]},
+
+  { id:"securitisation", jur:"EU",
+    about:{de:"Rahmen für Verbriefungen: Transparenz- und Risikoselbstbehalt-Pflichten, STS-Label, Due-Diligence-Pflichten für Investoren sowie die Eigenmittelbehandlung in CRR und LCR. Die Reform 2025/26 soll Kapitalanforderungen und Meldepflichten deutlich vereinfachen.",
+           en:"Framework for securitisations: transparency and risk-retention duties, the STS label, investor due diligence and the capital treatment under CRR and LCR. The 2025/26 reform is set to simplify capital requirements and reporting substantially."},
+    topic:"PRU", ents:["CI","AM","IF","INS"],
+    n:{de:"Verbriefungsverordnung & Reform 2026",en:"Securitisation Regulation & 2026 reform"},
+    alias:"Verbriefung, Securitisation, Securitization, STS, SECR, Verbriefungsverordnung, Risikoselbstbehalt, Risk Retention, ABS",
+    ref:"VO (EU) 2017/2402, COM(2025) 825 ff. (Reform)", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2017/2402/oj/eng",
+    u:[
+      {d:"06.05.2026", t:{de:"Abstimmung",en:"Vote"}, src:"europarl.europa.eu",
+       url:"https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-review-of-the-securitisation-framework",
+       ti:{de:"ECON beschließt Parlamentsposition zur Verbriefungsreform, Trilog beginnt",en:"ECON adopts Parliament's position on the securitisation reform, trilogue begins"},
+       s:{de:"Das Paket ändert die Verbriefungsverordnung, CRR und LCR: risikosensitivere Eigenmittelanforderungen, ein niedrigerer Risikogewichts-Floor für Senior-Tranchen, vereinfachte Due-Diligence und Transparenz-Templates. Ziel ist ein Abschluss bis Ende 2026 mit Anwendung ab etwa Mitte 2027.",
+          en:"The package amends the Securitisation Regulation, CRR and LCR: more risk-sensitive capital requirements, a lower risk-weight floor for senior tranches, simplified due diligence and transparency templates. The aim is to conclude by the end of 2026 with application from around mid-2027."}}
+    ]},
+
+  { id:"cra", jur:"EU",
+    about:{de:"Cybersicherheitsanforderungen für Produkte mit digitalen Elementen: Security-by-Design, Schwachstellenmanagement und Meldepflichten für Hersteller. Für Finanzunternehmen relevant bei eigener Software-Entwicklung, White-Label-Apps und in der Lieferantenbewertung unter DORA.",
+           en:"Cybersecurity requirements for products with digital elements: security by design, vulnerability handling and reporting duties for manufacturers. Relevant to financial entities that develop software, offer white-label apps or assess suppliers under DORA."},
+    topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"Cybersicherheit von Produkten mit digitalen Elementen (Cyber Resilience Act, CRA)",en:"Cybersecurity of products with digital elements (Cyber Resilience Act, CRA)"},
+    alias:"CRA, Cyber Resilience Act, Cyberresilienz-Verordnung, Produkte mit digitalen Elementen, Security by Design, Schwachstellenmeldung",
+    ref:"VO (EU) 2024/2847", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng",
+    u:[
+      {d:"27.07.2026", eff:"11.09.2026", t:{de:"Leitfaden",en:"Guidance"}, src:"digital-strategy.ec.europa.eu",
+       url:"https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
+       ti:{de:"Kommission veröffentlicht Praxisleitfaden; Meldepflichten gelten ab 11.09.2026",en:"Commission publishes practical guidance; reporting obligations apply from 11 Sep 2026"},
+       s:{de:"Ab 11.09.2026 müssen Hersteller aktiv ausgenutzte Schwachstellen und schwerwiegende Vorfälle über die ENISA-Plattform melden (Frühwarnung binnen 24 Stunden). Die vollständigen Produktanforderungen gelten ab 11.12.2027. Finanzunternehmen sollten die Vorgaben in Lieferantenverträge und das DORA-Informationsregister einbinden.",
+          en:"From 11 September 2026 manufacturers must report actively exploited vulnerabilities and severe incidents via the ENISA platform (early warning within 24 hours). The full product requirements apply from 11 December 2027. Financial entities should reflect the rules in supplier contracts and the DORA register of information."}}
+    ]},
+
+  { id:"krzwmg", jur:"EU+DE",
+    about:{de:"Aufsichtsregime für den Verkauf notleidender Kredite und für Kreditdienstleister: Erlaubnispflicht, Informationspflichten beim NPL-Verkauf, Datentemplates und Verhaltensregeln gegenüber Kreditnehmern. Setzt die EU-Kreditzweitmarktrichtlinie um.",
+           en:"Supervisory regime for selling non-performing loans and for credit servicers: licensing, information duties on NPL sales, data templates and conduct rules towards borrowers. Transposes the EU directive on credit servicers and credit purchasers."},
+    topic:"PRU", ents:["CI","OTH"],
+    n:{de:"Verkauf notleidender Kredite und Kreditdienstleister (Kreditzweitmarktgesetz, KrZwMG)",en:"Sale of non-performing loans and credit servicers (Secondary Credit Market Act, KrZwMG)"},
+    alias:"KrZwMG, Kreditzweitmarktgesetz, NPL, notleidende Kredite, Non-performing Loans, Kreditdienstleister, Credit Servicer, Kreditkäufer, NPL-Richtlinie",
+    ref:"KrZwMG, RL (EU) 2021/2167", cond:{k:"act",any:["lending"]},
+    refUrl:"https://www.gesetze-im-internet.de/krzwmg/",
+    condL:{de:"nur im Kreditgeschäft",en:"only where lending is conducted"},
+    u:[
+      {d:"30.12.2023", eff:"30.12.2023", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.gesetze-im-internet.de/krzwmg/",
+       ti:{de:"Kreditzweitmarktgesetz in Kraft: Erlaubnispflicht für Kreditdienstleistungsinstitute",en:"Secondary Credit Market Act in force: licensing for credit servicing institutions"},
+       s:{de:"Kreditdienstleister brauchen eine BaFin-Erlaubnis und unterliegen laufender Aufsicht; Banken müssen Kreditkäufern beim Verkauf notleidender Kredite standardisierte Datentemplates bereitstellen und halbjährlich über NPL-Verkäufe berichten. Bestehende Anbieter hatten bis zum 29.06.2024 Zeit für den Erlaubnisantrag.",
+          en:"Credit servicers need a BaFin licence and are subject to ongoing supervision; banks must provide standardised data templates to credit purchasers when selling non-performing loans and report NPL sales semi-annually. Existing providers had until 29 June 2024 to apply for a licence."}}
+    ]},
+
+  { id:"iref", jur:"EU+DE",
+    about:{de:"Integriertes Meldewesen des Eurosystems: Die statistischen Meldungen (BSI, MIR, SHS, AnaCredit) werden in einer EZB-Verordnung mit einem gemeinsamen Datenmodell zusammengeführt. Ersetzt perspektivisch nationale Statistikmeldungen an die Bundesbank.",
+           en:"The Eurosystem's integrated reporting framework: statistical reporting (BSI, MIR, SHS, AnaCredit) is consolidated in one ECB regulation with a common data model. Set to replace national statistical reporting to the Bundesbank."},
+    topic:"REP", ents:["CI"],
+    n:{de:"Integriertes statistisches Meldewesen des Eurosystems (IReF)",en:"Integrated statistical reporting of the Eurosystem (IReF)"},
+    alias:"IReF, Integrated Reporting Framework, integriertes Meldewesen, BIRD, statistisches Meldewesen EZB, Bundesbank Statistik",
+    ref:"EZB-Verordnung (Entwurf, Konsultation 2027)", cond:{k:"cross",any:["reporting"]},
+    refUrl:"https://www.ecb.europa.eu/stats/ecb_statistics/reporting/IReF/html/index.en.html",
+    condL:{de:"nur bei aufsichtlichem Meldewesen",en:"only where supervisory reporting applies"},
+    u:[
+      {d:"08.06.2026", t:{de:"Mitteilung",en:"Statement"}, src:"ecb.europa.eu",
+       url:"https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260608~6766ec7154.en.html",
+       ti:{de:"EZB legt Fahrplan fest: IReF-Meldungen ab dem zweiten Quartal 2031",en:"ECB sets the roadmap: IReF reporting from the second quarter of 2031"},
+       s:{de:"Der EZB-Rat hat am 23.04.2026 den Start der Umsetzungsphase beschlossen. Die öffentliche Konsultation des Verordnungsentwurfs folgt im zweiten Halbjahr 2027, eine einjährige Pilotphase ab dem zweiten Quartal 2030, der offizielle Meldebeginn im zweiten Quartal 2031 mit einjähriger Parallelphase.",
+          en:"The Governing Council decided on 23 April 2026 to start the implementation phase. Public consultation on the draft regulation follows in the second half of 2027, a one-year pilot from the second quarter of 2030, and official reporting starts in the second quarter of 2031 with a one-year parallel run."}}
+    ]},
+
+  { id:"sftr", jur:"EU",
+    about:{de:"Meldepflicht für Wertpapierfinanzierungsgeschäfte (Repos, Wertpapierleihe, Buy-Sell-Backs) an Transaktionsregister, Transparenz für Fondsanleger und Regeln zur Wiederverwendung von Sicherheiten. ESMA prüft aktuell eine Zusammenführung mit EMIR- und MiFIR-Meldungen.",
+           en:"Reporting of securities financing transactions (repos, securities lending, buy-sell-backs) to trade repositories, transparency for fund investors and rules on collateral reuse. ESMA is currently reviewing a merger with EMIR and MiFIR reporting."},
+    topic:"MKT", ents:["CI","AM","IF","INS"],
+    n:{de:"Meldepflicht für Wertpapierfinanzierungsgeschäfte wie Repos und Wertpapierleihe (SFTR)",en:"Reporting of securities financing transactions such as repos and securities lending (SFTR)"},
+    alias:"SFTR, Securities Financing Transactions Regulation, Wertpapierfinanzierungsgeschäfte, Repo, Wertpapierleihe, Securities Lending, Collateral Reuse",
+    ref:"VO (EU) 2015/2365", cond:{k:"act",any:["dealing","portfolio","custody"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2015/2365/oj/eng",
+    condL:{de:"nur bei Handel, Portfolioverwaltung oder Verwahrung",en:"only where dealing, portfolio management or custody is conducted"},
+    u:[
+      {d:"04.05.2026", t:{de:"Bericht",en:"Report"}, src:"esma.europa.eu",
+       url:"https://www.esma.europa.eu/press-news/esma-news/esma-advances-simplification-eu-reporting-frameworks-funds-and-transactions",
+       ti:{de:"ESMA-Zwischenbericht: „Report once“ für EMIR, MiFIR und SFTR",en:"ESMA interim report: 'report once' across EMIR, MiFIR and SFTR"},
+       s:{de:"Nach Rückmeldungen von über 100 Marktteilnehmern favorisiert ESMA instrumentbasierte Vereinfachungen, den Wegfall der doppelseitigen Meldung und langfristig ein gemeinsames Meldeformat über alle drei Regime. Der Abschlussbericht mit Empfehlungen an die Kommission war für Juli 2026 angekündigt.",
+          en:"Following feedback from more than 100 market participants, ESMA favours instrument-based simplifications, dropping dual-sided reporting and, in the long run, a single reporting format across all three regimes. The final report with recommendations to the Commission was scheduled for July 2026."}}
+    ]},
+
+  { id:"esgrating", jur:"EU",
+    about:{de:"Zulassung und Aufsicht von ESG-Rating-Anbietern durch ESMA, Transparenz über Methoden und Datenquellen sowie Trennung von Rating und Beratung. Für Finanzunternehmen relevant als Nutzer von Ratings und bei eigener Veröffentlichung von ESG-Scores.",
+           en:"Authorisation and supervision of ESG rating providers by ESMA, transparency on methodologies and data sources, and separation of ratings from advisory services. Relevant to financial firms as rating users and where they publish their own ESG scores."},
+    topic:"ESG", ents:["CI","AM","IF","INS"],
+    n:{de:"Transparenz und Aufsicht von ESG-Rating-Anbietern (ESG-Rating-Verordnung)",en:"Transparency and supervision of ESG rating providers (ESG Ratings Regulation)"},
+    alias:"ESG-Rating, ESG Ratings Regulation, ESGR, ESG-Scores, Nachhaltigkeitsratings, ESMA-Zulassung Ratinganbieter",
+    ref:"VO (EU) 2024/3005", cond:{k:"cross",any:["esg"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2024/3005/oj/eng",
+    condL:{de:"nur bei Nachhaltigkeitsangaben",en:"only where sustainability disclosures apply"},
+    u:[
+      {d:"01.07.2026", eff:"02.07.2026", t:{de:"Mitteilung",en:"Statement"}, src:"esma.europa.eu",
+       url:"https://www.esma.europa.eu/sites/default/files/2026-07/ESMA84-1427279869-1396_Public_Statement_on_Publication_or_distribution_of_ESG_ratings_by_third_parties_in_the_period_from_2_July_2026_until_authorisation__recogniti.pdf",
+       ti:{de:"ESG-Rating-Verordnung gilt ab 02.07.2026: ESMA erläutert Übergangsphase",en:"ESG Ratings Regulation applies from 2 Jul 2026: ESMA explains the transition"},
+       s:{de:"Anbieter, die am 02.01.2025 bereits in der EU tätig waren, müssen ESMA bis zum 02.08.2026 notifizieren und binnen vier Monaten die Zulassung oder Anerkennung beantragen. Finanzunternehmen, die eigene ESG-Ratings veröffentlichen, fallen unter die Ausnahme für interne Ratings nur, wenn diese nicht an Dritte verbreitet werden.",
+          en:"Providers already operating in the EU on 2 January 2025 must notify ESMA by 2 August 2026 and apply for authorisation or recognition within four months. Financial undertakings publishing their own ESG ratings only benefit from the internal-rating exemption if the ratings are not distributed to third parties."}}
+    ]},
+
+  { id:"loanorig", jur:"EU",
+    about:{de:"EBA-Leitlinien zur Kreditvergabe und -überwachung: Governance der Kreditentscheidung, Kreditwürdigkeitsprüfung für Verbraucher und Unternehmen, Bewertung von Sicherheiten, Bepreisung und laufendes Monitoring. In Deutschland über die MaRisk (BTO 1) verankert.",
+           en:"EBA guidelines on loan origination and monitoring: governance of credit decisions, creditworthiness assessment for consumers and businesses, collateral valuation, pricing and ongoing monitoring. Anchored in Germany through MaRisk (BTO 1)."},
+    topic:"PRU", ents:["CI","OTH"],
+    n:{de:"EBA-Leitlinien zur Kreditvergabe und -überwachung",en:"EBA guidelines on loan origination and monitoring"},
+    alias:"Loan Origination, Kreditvergabe, Kreditüberwachung, Kreditwürdigkeitsprüfung, EBA/GL/2020/06, Sicherheitenbewertung, Credit Underwriting",
+    ref:"EBA/GL/2020/06", cond:{k:"act",any:["lending"]},
+    refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/credit-risk/guidelines-loan-origination-and-monitoring",
+    condL:{de:"nur im Kreditgeschäft",en:"only where lending is conducted"},
+    u:[
+      {refnum:"EBA/GL/2020/06", d:"29.05.2020", eff:"30.06.2021", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/credit-risk/guidelines-loan-origination-and-monitoring",
+       ti:{de:"Finale Leitlinien zur Kreditvergabe: gestufte Anwendung ab 30.06.2021",en:"Final guidelines on loan origination: phased application from 30 Jun 2021"},
+       s:{de:"Neue Kredite fallen seit 30.06.2021 unter die Leitlinien, bestehende Kredite mit Nachverhandlung seit 30.06.2022; die vollständige Anwendung auf Monitoring und Datenanforderungen galt ab 30.06.2024. Die Leitlinien verlangen ESG-Faktoren in der Kreditwürdigkeitsprüfung und technologiegestützte Kreditprozesse mit klaren Modell-Governance-Regeln.",
+          en:"New loans have been in scope since 30 June 2021, renegotiated existing loans since 30 June 2022; full application to monitoring and data requirements applied from 30 June 2024. The guidelines require ESG factors in creditworthiness assessments and technology-enabled credit processes with clear model governance."}}
+    ]},
+
+  { id:"fitproper", jur:"EU+DE",
+    about:{de:"Eignungsanforderungen an Geschäftsleiter, Aufsichtsorgane und Inhaber von Schlüsselfunktionen: fachliche Qualifikation, Zuverlässigkeit, Zeitverfügbarkeit, kollektive Eignung und Diversität. Dazu Anzeige- und Prüfverfahren bei BaFin, Bundesbank und EZB.",
+           en:"Suitability requirements for management bodies, supervisory boards and key function holders: expertise, reputation, time commitment, collective suitability and diversity. Plus the notification and assessment procedures at BaFin, the Bundesbank and the ECB."},
+    topic:"GOV", ents:["CI","IF","AM","INS","PI"],
+    n:{de:"Fit & Proper: Eignung von Geschäftsleitern und Aufsichtsorganen",en:"Fit & proper: suitability of management and supervisory bodies"},
+    alias:"Fit and Proper, Fit & Proper, Eignungsprüfung, Geschäftsleiter, Aufsichtsrat, Verwaltungsrat, Schlüsselfunktionen, EBA/GL/2021/06, Merkblatt Geschäftsleiter, Merkblatt Aufsichtsorgane, Inhaberkontrolle",
+    ref:"EBA/GL/2021/06, §§ 25c, 25d KWG, BaFin-Merkblätter", cond:null,
+    refUrl:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-and-esma-launch-consultation-revised-suitability-assessment-framework-banks-and-investment-firms",
+    u:[
+      {refnum:"EBA/CP/2026/03", d:"25.02.2026", deadline:"25.05.2026", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-and-esma-launch-consultation-revised-suitability-assessment-framework-banks-and-investment-firms",
+       ti:{de:"EBA und ESMA konsultieren überarbeitete Fit-&-Proper-Leitlinien",en:"EBA and ESMA consult on revised fit-and-proper guidelines"},
+       s:{de:"Die Neufassung übernimmt die CRD-VI-Anforderungen für große Institute, vereinheitlicht Eignungsfragebogen, Lebenslauf und interne Eignungsbewertung und konkretisiert die Anforderungen an Inhaber von Schlüsselfunktionen. Die Konsultation lief bis zum 25.05.2026.",
+          en:"The revision incorporates the CRD VI requirements for large institutions, harmonises the suitability questionnaire, CV and internal suitability assessment, and specifies the requirements for key function holders. The consultation ran until 25 May 2026."}},
+      {refnum:"Merkblatt 01/2024 (WA)", d:"11.09.2024", eff:"11.09.2025", t:{de:"Merkblatt",en:"Guidance"}, src:"bafin.de",
+       url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/WA/mb_240910_zwei_Geschaeftsleiter_WpIG.html",
+       ti:{de:"BaFin-Merkblatt: Mindestanzahl der Geschäftsleiter bei Wertpapierinstituten",en:"BaFin guidance: minimum number of managing directors at investment firms"},
+       s:{de:"Auch kleine Wertpapierinstitute brauchen in bestimmten Konstellationen zwei Geschäftsleiter. Für bestehende Institute galt eine Übergangsfrist von einem Jahr bis zum 11.09.2025.",
+          en:"Even small investment firms need two managing directors in certain constellations. Existing firms had a one-year transition period until 11 September 2025."}}
+    ]},
+
+  { id:"mcd", jur:"EU+DE",
+    about:{de:"Verbraucherschutz bei Immobiliar-Verbraucherdarlehen: Kreditwürdigkeitsprüfung nach ImmoKWPLV, ESIS-Merkblatt, Beratungsstandards, Kopplungsverbote und Vorgaben für Vermittler. Die Kommission prüft seit 2021 eine Überarbeitung (Digitalisierung, grüne Hypotheken).",
+           en:"Consumer protection for residential mortgage credit: creditworthiness assessment under ImmoKWPLV, the ESIS sheet, advice standards, tying bans and rules for intermediaries. The Commission has been reviewing the directive since 2021 (digitalisation, green mortgages)."},
+    topic:"CONS", ents:["CI","OTH"],
+    n:{de:"Verbraucherschutz bei Immobilienkrediten (Wohnimmobilienkreditrichtlinie, MCD)",en:"Consumer protection in mortgage lending (Mortgage Credit Directive, MCD)"},
+    alias:"MCD, Mortgage Credit Directive, Wohnimmobilienkreditrichtlinie, WIKR, Immobiliar-Verbraucherdarlehen, ImmoKWPLV, ESIS, Baufinanzierung",
+    ref:"RL 2014/17/EU, §§ 491 ff. BGB, ImmoKWPLV", cond:{k:"cli",any:["retail"]},
+    refUrl:"https://eur-lex.europa.eu/eli/dir/2014/17/oj/deu",
+    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
+    u:[
+      {refnum:"BGBl. 2016 I S. 396", d:"11.03.2016", eff:"21.03.2016", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
+       url:"https://www.gesetze-im-internet.de/immokwplv/",
+       ti:{de:"Wohnimmobilienkreditrichtlinie in deutsches Recht umgesetzt",en:"Mortgage Credit Directive transposed into German law"},
+       s:{de:"Seit 21.03.2016 gelten verschärfte Kreditwürdigkeitsprüfungen, das ESIS-Merkblatt und Sachkundeanforderungen für Immobiliardarlehensvermittler. Die Leitlinien zur Kreditwürdigkeitsprüfung wurden 2018 in der ImmoKWPLV konkretisiert.",
+          en:"Since 21 March 2016 stricter creditworthiness assessments, the ESIS sheet and competence requirements for mortgage intermediaries apply. The creditworthiness guidelines were specified in the ImmoKWPLV ordinance in 2018."}}
+    ]},
+
+  { id:"pfandbg", jur:"EU+DE",
+    about:{de:"Emission gedeckter Schuldverschreibungen: Deckungsregister, Treuhänder, Liquiditätspuffer, Beleihungswerte und das EU-Label „European Covered Bond (Premium)“. Das Pfandbriefgesetz setzt die Covered-Bond-Richtlinie um.",
+           en:"Issuing covered bonds: cover register, cover pool monitor, liquidity buffer, mortgage lending values and the 'European Covered Bond (Premium)' label. The Pfandbrief Act transposes the Covered Bond Directive."},
+    topic:"PRU", ents:["CI"],
+    n:{de:"Gedeckte Schuldverschreibungen (Pfandbriefgesetz, Covered-Bond-Richtlinie)",en:"Covered bonds (Pfandbrief Act, Covered Bond Directive)"},
+    alias:"PfandBG, Pfandbrief, Pfandbriefgesetz, Covered Bond, Covered-Bond-Richtlinie, gedeckte Schuldverschreibungen, Deckungsregister, Beleihungswert",
+    ref:"PfandBG, RL (EU) 2019/2162, VO (EU) 2019/2160", cond:{k:"prod",any:["covered"]},
+    refUrl:"https://www.gesetze-im-internet.de/pfandbg/",
+    condL:{de:"nur bei Pfandbriefemission",en:"only where covered bonds are issued"},
+    u:[
+      {d:"08.07.2022", eff:"08.07.2022", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/dir/2019/2162/oj/deu",
+       ti:{de:"EU-Covered-Bond-Regime gilt: harmonisierte Mindeststandards und Premium-Label",en:"EU covered bond regime applies: harmonised minimum standards and premium label"},
+       s:{de:"Seit 08.07.2022 gelten EU-weit einheitliche Anforderungen an Deckungswerte, Liquiditätspuffer von 180 Tagen, Fälligkeitsverschiebung und öffentliche Aufsicht. Die CRR-Änderung koppelt die privilegierte Eigenmittelbehandlung an das Premium-Label.",
+          en:"Since 8 July 2022 uniform EU requirements apply to cover assets, a 180-day liquidity buffer, maturity extension and public supervision. The CRR amendment ties preferential capital treatment to the premium label."}}
+    ]},
+
+  { id:"dataact", jur:"EU",
+    about:{de:"Datenzugangs- und Nutzungsrechte für vernetzte Produkte, Vorgaben gegen missbräuchliche Vertragsklauseln zwischen Unternehmen sowie Wechsel- und Interoperabilitätspflichten für Cloud-Dienste. Für Finanzunternehmen vor allem beim Cloud-Wechsel und in DORA-Verträgen relevant.",
+           en:"Data access and usage rights for connected products, rules against unfair B2B contract terms, and switching and interoperability obligations for cloud services. Relevant to financial entities mainly for cloud switching and DORA contracts."},
+    topic:"DATA", ents:["CI","AM","IF","PI","INS","OTH"],
+    n:{de:"Datenzugang und Cloud-Anbieterwechsel (Data Act)",en:"Data access and cloud switching (Data Act)"},
+    alias:"Data Act, Datenverordnung, Datengesetz, Cloud Switching, Cloud-Wechsel, Egress-Gebühren, Interoperabilität, IoT-Daten",
+    ref:"VO (EU) 2023/2854", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2023/2854/oj/deu",
+    u:[
+      {d:"12.09.2025", eff:"12.09.2025", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2023/2854/oj/deu",
+       ti:{de:"Data Act gilt: Cloud-Anbieter müssen den Anbieterwechsel ermöglichen",en:"Data Act applies: cloud providers must enable switching"},
+       s:{de:"Seit 12.09.2025 müssen Cloud-Verträge Kündigungs- und Wechselklauseln mit maximal 30 Tagen Übergang enthalten; Wechselentgelte sind auf die Kosten begrenzt und entfallen ab 12.01.2027 vollständig. Finanzunternehmen können die Rechte für Exit-Strategien nach DORA nutzen.",
+          en:"Since 12 September 2025 cloud contracts must contain termination and switching clauses with a transition of at most 30 days; switching charges are capped at cost and disappear entirely from 12 January 2027. Financial entities can use these rights for DORA exit strategies."}}
+    ]},
+
+  { id:"greenbond", jur:"EU",
+    about:{de:"Freiwilliger EU-Standard für grüne Anleihen: Erlöse müssen taxonomiekonform verwendet werden, mit Factsheet, Allokations- und Wirkungsberichten sowie externer Prüfung durch bei ESMA registrierte Prüfer. Zusätzlich Transparenzvorlagen für andere nachhaltige Anleihen.",
+           en:"Voluntary EU standard for green bonds: proceeds must be used in line with the taxonomy, with a factsheet, allocation and impact reports and external review by ESMA-registered reviewers. Plus transparency templates for other sustainability-linked bonds."},
+    topic:"ESG", ents:["CI","AM","IF","INS"],
+    n:{de:"Europäischer Standard für grüne Anleihen (EU Green Bond Standard, EuGB)",en:"European standard for green bonds (EU Green Bond Standard, EuGB)"},
+    alias:"EuGB, EU Green Bond, Green Bond Standard, grüne Anleihen, European Green Bond, Sustainability-linked Bonds, externe Prüfer",
+    ref:"VO (EU) 2023/2631", cond:{k:"cross",any:["esg"]},
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2023/2631/oj/deu",
+    condL:{de:"nur bei Nachhaltigkeitsangaben",en:"only where sustainability disclosures apply"},
+    u:[
+      {d:"21.12.2024", eff:"21.12.2024", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2023/2631/oj/deu",
+       ti:{de:"EU-Green-Bond-Standard anwendbar: Label „European Green Bond“ verfügbar",en:"EU Green Bond Standard applies: 'European Green Bond' label available"},
+       s:{de:"Emittenten können Anleihen seit 21.12.2024 als EuGB bezeichnen, wenn die Erlöse zu 100 Prozent taxonomiekonform (mit 15 Prozent Flexibilität) eingesetzt und die Berichte extern geprüft werden. Externe Prüfer mussten sich bis zum 21.06.2026 bei ESMA registrieren.",
+          en:"Since 21 December 2024 issuers may label bonds as EuGB if proceeds are 100 percent taxonomy-aligned (with 15 percent flexibility) and reports are externally reviewed. External reviewers had to register with ESMA by 21 June 2026."}}
+    ]},
+
+  { id:"misp", jur:"EU",
+    about:{de:"Gesetzgebungspaket der Kommission zur Spar- und Investitionsunion: mehr Aufsichtsbefugnisse für ESMA (u. a. Jahresreviews großer Asset Manager, direkte Aufsicht über Krypto-Dienstleister und Handelsplätze), Abbau grenzüberschreitender Hürden für Fonds und harmonisierte Marktinfrastruktur.",
+           en:"The Commission's legislative package for the Savings and Investments Union: more supervisory powers for ESMA (including annual reviews of large asset managers and direct supervision of crypto providers and trading venues), removal of cross-border barriers for funds and harmonised market infrastructure."},
+    topic:"MKT", ents:["CI","AM","IF"],
+    n:{de:"EU-Paket zur Marktintegration und Aufsicht der Spar- und Investitionsunion (MISP)",en:"EU Market Integration and Supervision Package of the Savings and Investments Union (MISP)"},
+    alias:"MISP, Market Integration and Supervision Package, Spar- und Investitionsunion, Savings and Investments Union, SIU, ESMA-Aufsicht, Kapitalmarktunion, CMU",
+    ref:"Kommissionsvorschläge vom 04.12.2025 (2 VO, 1 RL; Änderung von 19 Rechtsakten)", cond:null,
+    refUrl:"https://www.consilium.europa.eu/en/policies/savings-and-investments-union/",
+    u:[
+      {d:"04.12.2025", t:{de:"Gesetzentwurf",en:"Bill"}, src:"finance.ec.europa.eu",
+       url:"https://finance.ec.europa.eu/finance-news_en",
+       ti:{de:"Kommission legt Marktintegrations- und Aufsichtspaket vor",en:"Commission tables the Market Integration and Supervision Package"},
+       s:{de:"Das Paket aus zwei Verordnungen und einer Richtlinie ändert 19 Rechtsakte, darunter OGAW-RL, AIFMD, MiFID II, MiFIR, CSDR und MiCA. Für Asset Manager zentral: keine direkte ESMA-Aufsicht, aber jährliche ESMA-Reviews großer Manager, ein harmonisierter Fonds-Pass und der Abbau nationaler Zusatzanforderungen beim Vertrieb.",
+          en:"The package of two regulations and one directive amends 19 legal acts including UCITS, AIFMD, MiFID II, MiFIR, CSDR and MiCA. For asset managers the key points are: no direct ESMA supervision, but annual ESMA reviews of large managers, a harmonised fund passport and removal of national gold-plating in distribution."}}
+    ]},
+
+  /* ---------- Luxemburg (CSSF): nur sichtbar, wenn im Onboarding „Luxemburg“ gewählt ist ---------- */
+
+  { id:"luaifm", jur:"LU",
+    about:{de:"Luxemburgisches Fondsrecht nach Umsetzung von AIFMD II und UCITS VI: OGA-Gesetz von 2010 und AIFM-Gesetz von 2013 in der Fassung des Gesetzes vom 3. März 2026 (Kreditfonds, Liquiditätsmanagement-Tools, Delegation, Reporting). Dazu die CSSF-Konsolidierung für SIF, SICAR und Teil-II-OGA.",
+           en:"Luxembourg fund law after transposing AIFMD II and UCITS VI: the 2010 UCI Law and the 2013 AIFM Law as amended by the Law of 3 March 2026 (loan-originating funds, liquidity management tools, delegation, reporting). Plus the CSSF consolidation for SIFs, SICARs and Part II UCIs."},
+    topic:"FND", ents:["AM"],
+    n:{de:"Luxemburger Fondsrecht: Gesetz über Organismen für gemeinsame Anlagen und AIFM-Gesetz (AIFMD-II-Umsetzung)",en:"Luxembourg fund law: UCI Law and AIFM Law (AIFMD II transposition)"},
+    alias:"Luxemburg, Loi du 17 décembre 2010, Loi du 12 juillet 2013, Gesetz vom 3. März 2026, Law of 3 March 2026, 2010 Law, 2013 Law, SIF, SICAR, RAIF, Part II UCI, Circular 25/901, ManCo, Chapter 15, Chapter 16",
+    ref:"Loi du 17 décembre 2010 (OPC), Loi du 12 juillet 2013 (GFIA), Loi du 3 mars 2026, Circular CSSF 25/901", cond:{k:"juris",any:["LU"]},
+    refUrl:"https://www.cssf.lu/en/regulatory-framework-for-ucis/",
+    condL:{de:"nur bei Fondsdomizil oder ManCo in Luxemburg",en:"only with a Luxembourg fund domicile or ManCo"},
+    u:[
+      {d:"18.03.2026", eff:"16.04.2026", t:{de:"Mitteilung",en:"Communication"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/2026/03/communication-to-the-investment-fund-industry/",
+       ti:{de:"CSSF-Mitteilung zur Umsetzung von AIFMD II: Gesetz vom 3. März 2026 gilt ab 16.04.2026",en:"CSSF communication on AIFMD II transposition: Law of 3 March 2026 applies from 16 Apr 2026"},
+       s:{de:"Das Gesetz vom 3. März 2026 setzt die Richtlinie (EU) 2024/927 ohne Gold-Plating um und ergänzt beide Fondsgesetze um einen Anhang mit neun Liquiditätsmanagement-Tools. Luxemburger OGAW und offene AIF müssen mindestens zwei Tools wählen und dies der CSSF per eDesk bis zum 16.04.2026 melden; die AIFMD-II-Meldepflichten gelten ab 16.04.2027.",
+          en:"The Law of 3 March 2026 transposes Directive (EU) 2024/927 without gold-plating and adds an annex with nine liquidity management tools to both fund laws. Luxembourg UCITS and open-ended AIFs must select at least two tools and notify the CSSF via eDesk by 16 April 2026; the AIFMD II reporting obligations apply from 16 April 2027."}},
+      {refnum:"Circular CSSF 25/901", d:"19.12.2025", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-25-901/",
+       ti:{de:"Rundschreiben 25/901 konsolidiert das Regelwerk für SIF, SICAR und Teil-II-OGA",en:"Circular 25/901 consolidates the framework for SIFs, SICARs and Part II UCIs"},
+       s:{de:"Ersetzt mehrere ältere Rundschreiben und modernisiert Anlagegrenzen, Risikostreuung und Organisationsanforderungen für spezialisierte Fonds; über die Verweise in den RAIF-Regeln wirkt es indirekt auch auf reservierte alternative Fonds.",
+          en:"Replaces several older circulars and modernises investment limits, risk diversification and organisational requirements for specialised funds; through cross-references in the RAIF rules it indirectly affects reserved alternative funds as well."}}
+    ]},
+
+  { id:"lulmt", jur:"LU",
+    about:{de:"Luxemburger Umsetzung der ESMA-Leitlinien zu Liquiditätsmanagement-Tools: Auswahl, Kalibrierung und Aktivierung von Swing Pricing, Rücknahmegebühren, Gates, Side Pockets und Co. für OGAW und offene AIF, inklusive Meldeprozess über das CSSF-eDesk.",
+           en:"Luxembourg's implementation of the ESMA guidelines on liquidity management tools: selection, calibration and activation of swing pricing, redemption fees, gates, side pockets and more for UCITS and open-ended AIFs, including the CSSF eDesk notification process."},
+    topic:"FND", ents:["AM"],
+    n:{de:"Liquiditätsmanagement-Tools für OGAW und offene AIF in Luxemburg (CSSF-Rundschreiben 26/910)",en:"Liquidity management tools for UCITS and open-ended AIFs in Luxembourg (CSSF Circular 26/910)"},
+    alias:"LMT, Liquidity Management Tools, Liquiditätsmanagement, Swing Pricing, Redemption Gates, Side Pockets, Anti-Dilution, Circular 26/910, eDesk LMT",
+    ref:"Circular CSSF 26/910, ESMA34-671404336-1364", cond:{k:"juris",any:["LU"]},
+    refUrl:"https://www.cssf.lu/en/Document/circular-cssf-26-910/",
+    condL:{de:"nur bei Fondsdomizil oder ManCo in Luxemburg",en:"only with a Luxembourg fund domicile or ManCo"},
+    u:[
+      {refnum:"Circular CSSF 26/910", d:"15.04.2026", eff:"16.04.2026", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-26-910/",
+       ti:{de:"CSSF übernimmt die ESMA-Leitlinien zu Liquiditätsmanagement-Tools",en:"CSSF adopts the ESMA guidelines on liquidity management tools"},
+       s:{de:"Das Rundschreiben integriert die ESMA-Leitlinien vom 12.03.2026 in die Verwaltungspraxis: Fondsmanager müssen Tools im besten Anlegerinteresse auswählen, kalibrieren und aktivieren und Aktivierungen über das eDesk-Modul melden. Anwendung ab 16.04.2026, für bestehende Fonds mit Übergangsfrist bis zum 16.04.2027.",
+          en:"The circular integrates the ESMA guidelines of 12 March 2026 into administrative practice: fund managers must select, calibrate and activate tools in the best interest of investors and notify activations via the eDesk module. Applies from 16 April 2026, with a transition period for existing funds until 16 April 2027."}}
+    ]},
+
+  { id:"cssf18698", jur:"LU",
+    about:{de:"Das zentrale Organisationsrundschreiben der CSSF für Fondsmanager (IFM): Substanzanforderungen, Geschäftsleitung, Kontrollfunktionen, Delegation und Aufsicht über Delegierte, Vergütung, AML-Pflichten. Ergänzt um die Auslagerungs- und IKT-Rundschreiben 22/806 und 25/882.",
+           en:"The CSSF's core organisational circular for investment fund managers (IFMs): substance, senior management, control functions, delegation and oversight of delegates, remuneration, AML duties. Complemented by the outsourcing and ICT circulars 22/806 and 25/882."},
+    topic:"GOV", ents:["AM"],
+    n:{de:"Zulassung und Organisation luxemburgischer Fondsmanager (CSSF-Rundschreiben 18/698)",en:"Authorisation and organisation of Luxembourg investment fund managers (CSSF Circular 18/698)"},
+    alias:"Circular 18/698, IFM, Investment Fund Manager, ManCo Substance, Delegation Oversight, Circular 22/806, Circular 25/882, Circular 25/883, Outsourcing Luxemburg, Conducting Officers, Dirigeants",
+    ref:"Circular CSSF 18/698, Circular CSSF 22/806, Circular CSSF 25/882", cond:{k:"juris",any:["LU"]},
+    refUrl:"https://www.cssf.lu/en/Document/circular-cssf-18-698/",
+    condL:{de:"nur bei Fondsdomizil oder ManCo in Luxemburg",en:"only with a Luxembourg fund domicile or ManCo"},
+    u:[
+      {refnum:"Circular CSSF 25/882", d:"09.04.2025", eff:"09.04.2025", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-25-882/",
+       ti:{de:"Rundschreiben 25/882: Nutzung von IKT-Drittdienstleistern unter DORA",en:"Circular 25/882: use of ICT third-party services under DORA"},
+       s:{de:"Ergänzt DORA um die luxemburgischen Anforderungen an IKT-Auslagerungen und ersetzt insoweit die IKT-Teile von 22/806; gleichzeitig wurden 20/750 und 22/806 per 25/881 und 25/883 an DORA angepasst. Gilt sofort für alle DORA-Finanzunternehmen, also auch für Fondsmanager.",
+          en:"Supplements DORA with Luxembourg requirements for ICT outsourcing and replaces the ICT parts of 22/806; at the same time 20/750 and 22/806 were aligned with DORA via 25/881 and 25/883. Applies immediately to all DORA financial entities, including fund managers."}},
+      {refnum:"Circular CSSF 18/698", d:"23.08.2018", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-18-698/",
+       ti:{de:"Rundschreiben 18/698: Zulassung und Organisation luxemburgischer Fondsmanager",en:"Circular 18/698: authorisation and organisation of Luxembourg investment fund managers"},
+       s:{de:"Legt fest, wie viel Substanz eine ManCo oder ein AIFM in Luxemburg braucht: mindestens drei Dirigeants, ständige Compliance-, Risikomanagement- und Revisionsfunktion, dokumentierte Due Diligence und laufende Überwachung von Delegierten sowie ein Meldewesen gegenüber der CSSF.",
+          en:"Sets out how much substance a ManCo or AIFM needs in Luxembourg: at least three conducting officers, permanent compliance, risk management and internal audit functions, documented due diligence and ongoing monitoring of delegates, and reporting to the CSSF."}}
+    ]},
+
+  { id:"cssf24856", jur:"LU",
+    about:{de:"Anlegerschutz bei NAV-Berechnungsfehlern, Verstößen gegen Anlagegrenzen und sonstigen Fehlern auf Fondsebene: Wesentlichkeitsschwellen, Korrektur- und Entschädigungspflichten, Meldung an die CSSF und Rolle des Wirtschaftsprüfers. Gilt für OGAW, Teil-II-OGA, SIF, SICAR, Geldmarktfonds und ELTIF.",
+           en:"Investor protection for NAV calculation errors, breaches of investment rules and other errors at fund level: materiality thresholds, correction and compensation duties, reporting to the CSSF and the auditor's role. Applies to UCITS, Part II UCIs, SIFs, SICARs, MMFs and ELTIFs."},
+    topic:"FND", ents:["AM"],
+    n:{de:"Anlegerschutz bei NAV-Fehlern und Anlagegrenzverstößen in Luxemburg (CSSF-Rundschreiben 24/856)",en:"Investor protection for NAV errors and investment breaches in Luxembourg (CSSF Circular 24/856)"},
+    alias:"Circular 24/856, NAV Error, NAV-Fehler, Investment Restriction Breach, Anlagegrenzverstoß, Circular 02/77, Materiality Threshold, Compensation Investors",
+    ref:"Circular CSSF 24/856", cond:{k:"juris",any:["LU"]},
+    refUrl:"https://www.cssf.lu/en/Document/circular-cssf-24-856/",
+    condL:{de:"nur bei Fondsdomizil oder ManCo in Luxemburg",en:"only with a Luxembourg fund domicile or ManCo"},
+    u:[
+      {refnum:"Circular CSSF 24/856", d:"29.03.2024", eff:"01.01.2025", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-24-856/",
+       ti:{de:"Neues Rundschreiben zu NAV-Fehlern ersetzt 02/77 ab 01.01.2025",en:"New circular on NAV errors replaces 02/77 from 1 Jan 2025"},
+       s:{de:"Erweitert den Anwendungsbereich auf alternative Fonds, definiert Wesentlichkeitsschwellen je Fondstyp, regelt Entschädigungen bei Fehlern in Swing Pricing, Gebührenberechnung und Anlagegrenzen und verlangt eine Meldung an die CSSF binnen kurzer Frist. Die CSSF hat im Dezember 2024 eine FAQ dazu veröffentlicht.",
+          en:"Extends the scope to alternative funds, defines materiality thresholds per fund type, governs compensation for errors in swing pricing, fee calculation and investment limits, and requires prompt notification to the CSSF. The CSSF published an FAQ on the circular in December 2024."}}
+    ]},
+
+  { id:"cssfaml", jur:"LU",
+    about:{de:"Luxemburgisches Geldwäscherecht für den Fondssektor: Gesetz vom 12. November 2004, CSSF-Verordnung 12-02 mit den Sorgfaltspflichten für Fonds und Fondsmanager, Asset-Due-Diligence, RC/RR-Funktionen, jährlicher AML-Fragebogen und FATF-Hochrisikolisten.",
+           en:"Luxembourg AML law for the fund sector: the Law of 12 November 2004, CSSF Regulation 12-02 with the due-diligence duties for funds and fund managers, asset due diligence, RC/RR functions, the annual AML questionnaire and FATF high-risk lists."},
+    topic:"AML", ents:["AM","CI","IF","PI"],
+    n:{de:"Geldwäscheprävention in Luxemburg (Gesetz vom 12. November 2004, CSSF-Verordnung 12-02)",en:"Anti-money laundering in Luxembourg (Law of 12 November 2004, CSSF Regulation 12-02)"},
+    alias:"CSSF Regulation 12-02, Règlement CSSF 12-02, Loi du 12 novembre 2004, AML Luxemburg, Asset Due Diligence, RC RR, Responsable du contrôle, AML/CFT Questionnaire, Luxembourg AML",
+    ref:"Loi du 12 novembre 2004, Règlement CSSF N° 12-02", cond:{k:"juris",any:["LU"]},
+    refUrl:"https://www.cssf.lu/en/Document/cssf-regulation-n12-02-2/",
+    condL:{de:"nur bei Fondsdomizil oder ManCo in Luxemburg",en:"only with a Luxembourg fund domicile or ManCo"},
+    u:[
+      {d:"13.12.2024", t:{de:"Q&A",en:"Q&A"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/faq-on-aml-cft-asset-due-diligence-obligations-in-accordance-with-cssf-regulation-no-12-02/",
+       ti:{de:"CSSF-FAQ zur Asset-Due-Diligence nach Verordnung 12-02",en:"CSSF FAQ on asset due diligence under Regulation 12-02"},
+       s:{de:"Klärt, wie Fonds und Fondsmanager Geldwäscherisiken auf Ebene der Vermögensgegenstände prüfen: Eine initiale Risikobewertung ist Pflicht, jährliche Neubewertungen entfallen ohne wesentliche Änderungen; an geregelten Märkten gehandelte Wertpapiere gelten als geringer exponiert. Basiert auf Prüfungserkenntnissen und der Public-Private-Partnership OPC AML.",
+          en:"Clarifies how funds and fund managers assess money-laundering risk at asset level: an initial risk assessment is mandatory, annual reassessments are not required absent material changes; securities traded on regulated markets are considered lower risk. Based on inspection findings and the OPC AML public-private partnership."}}
     ]}
+
 ];
 
 /** Zwei kurze Absätze je Rahmenwerk für die aufklappbare Sektion auf der Detailseite. */
@@ -1322,9 +1749,10 @@ export const QUESTIONS: Question[] = [
 
   { key:"juris", multi:true,
     q:{de:"Wo sind Sie tätig?",en:"Where do you operate?"},
-    why:{de:"Entscheidet, ob deutsche Quellen wie BaFin, Bundesbank und Bundestag zusätzlich zu den EU-Quellen ausgewertet werden.",
-         en:"Determines whether German sources such as BaFin, the Bundesbank and the Bundestag are evaluated alongside EU sources."},
+    why:{de:"Entscheidet, ob deutsche Quellen wie BaFin, Bundesbank und Bundestag zusätzlich zu den EU-Quellen ausgewertet werden. Luxemburg schaltet CSSF-Rundschreiben und das luxemburgische Fondsrecht frei.",
+         en:"Determines whether German sources such as BaFin, the Bundesbank and the Bundestag are evaluated alongside EU sources. Luxembourg unlocks CSSF circulars and Luxembourg fund law."},
     o:[{v:"DE",l:{de:"Deutschland",en:"Germany"}},
+       {v:"LU",l:{de:"Luxemburg (Fondsdomizil, ManCo)",en:"Luxembourg (fund domicile, ManCo)"}},
        {v:"EU",l:{de:"Weitere EU-Staaten",en:"Other EU states"}},
        {v:"3RD",l:{de:"Drittstaaten",en:"Third countries"}}] },
 

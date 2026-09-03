@@ -91,7 +91,7 @@ export DIP_API_KEY="..."
 | Quelle | Adapter | Zugriff |
 |---|---|---|
 | EUR-Lex / CELLAR | `eurlex` | SPARQL-API (`publications.europa.eu/webapi/rdf/sparql`), CELEX-IDs |
-| Gesetze im Internet | `gii` | `gii-toc.xml` + Norm-XML (zip), Watchlist: KWG, GwG, WpHG, KAGB, ZAG, VAG, PfandBG, FinDAG, HinSchG, WpIG, SAG; §-genaue Sections |
+| Gesetze im Internet | `gii` | `gii-toc.xml` + Norm-XML (zip), Watchlist (`GII_WATCHLIST`, 26 Normen): u. a. KWG, GwG, WpHG, KAGB, ZAG, VAG, PfandBG, FinDAG, HinSchG, WpIG, SAG, KrZwMG, KMAG, VermAnlG, ImmoKWPLV, WpPG; §-genaue Sections |
 | DIP Bundestag | `dip` | REST-API, Vorgänge „Gesetzgebung" mit Finanz-Keywords |
 | Bundesgesetzblatt | `rss` | `recht.bund.de/rss/feeds/rss_bgbl-1.xml` + `rss_bgbl-2.xml` |
 | Rechtsprechung im Internet | `rii` | `rii-toc.xml`, gefiltert BGH/BFH, ECLI aus Entscheidungs-XML |
@@ -116,6 +116,10 @@ export DIP_API_KEY="..."
 | BIS / Basler Ausschuss | `rss` | `bis.org/doclist/bcbspubls.rss` — RSS 1.0/RDF, Datum aus `dc:date` |
 | FSB | `rss` | `fsb.org/feed/` (WordPress) |
 | IOSCO | `iosco` | Liste `publications/?subsection=public_reports`, IOSCOPD-Nummer als ID; **nur Metadaten** (PDFs hinter Cloudflare-Bot-Schutz, wird nicht umgangen) |
+| EU-Kommission / AI Office | `dsnews` | News-Liste `digital-strategy.ec.europa.eu/en/news?topic=119` (AI Act) |
+| CSSF Luxemburg | `rss` | 7 typisierte Feeds `cssf.lu/en/feed/publications?content_type=…` (Rundschreiben, CSSF-Verordnungen, Communiqués, Konsultationen, FAQ, Gesetze, Großherzogliche Verordnungen); Jurisdiktion `LU`; Zuordnung zuerst gegen Lux-Rahmenwerke (`SOURCE_RULES` in webexport) |
+| EU-Kommission / GD FISMA | `ecfinance` | News-Liste `finance.ec.europa.eu/finance-news_en` (ECL-Markup, 2 Seiten, Teaser aus der Liste); kein RSS vorhanden |
+| EZB (Presse) | `rss` | `ecb.europa.eu/rss/press.xml` — Digitaler Euro, IReF |
 
 **FATF** ist nicht angebunden: fatf-gafi.org liefert 403 auf allen Pfaden
 (Cloudflare-Bot-Schutz, auch mit Browser-User-Agent) — wird nicht umgangen.
@@ -133,9 +137,10 @@ regradar/
   registry.py    Source Registry Seed + RSS-Feed-Liste + GII-Watchlist
   pipeline.py    discover → fetch → raw archivieren (SHA-256) → normalize
                  → Change Detection (normalized_sha256) → Events
-  adapters/      base (Interface), rss (generisch, 14 Quellen; RSS 2.0
+  adapters/      base (Interface), rss (generisch, 16 Quellen; RSS 2.0
                  + RSS 1.0/RDF), eurlex, gii, dip, rii, amla, eiopa,
-                 bmf, curia, hys, ebaqna, esmalib, iosco
+                 bmf, curia, hys, ebaqna, esmalib, iosco, dsnews,
+                 ecfinance
   cli.py         init | sources | run | report | export
 ```
 

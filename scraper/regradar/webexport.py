@@ -62,6 +62,8 @@ FRAMEWORK_RULES = [
              r"\bai-act\b|\bki-vo\b|ki-gesetz|ai regulation|artificial intelligence regulation|\bki-system|hochrisiko-ki|high-risk ai"),
     ("eidas2", r"\beidas\b|eudi[- ]wallet|digital identity wallet|elektronische identifizierung|vertrauensdienst|trust service|"
               r"eidas 2|eidas-2|elektronische signatur|electronic signature|qualifizierte[rn]? vertrauensdienst"),
+    # Cyber Resilience Act (Produkte mit digitalen Elementen) vor DORA/NIS-2.
+    ("cra", r"cyber resilience act|cyber-resilience-act|cyberresilienz|\bcra\b(?=[\s\S]*(product|produkt|manufactur|hersteller|vulnerab|schwachstell))"),
     ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister|"
             r"dora-verordnung|ikt-vorfall|ict incident|ict-related incident|threat-led penetration|\btlpt\b|register of information|informationsregister"),
     ("nis2", r"\bnis-?2\b|bsi-gesetz|\bbsig\b|"
@@ -85,6 +87,7 @@ FRAMEWORK_RULES = [
     ("amla", r"\bamla\b|\bamlar\b|anti-money laundering authority|geldwäscheverordnung"),
     ("gwg", r"geldwäsche|money laundering|\bgwg\b|\bfiu\b|terrorismusfinanzierung|financial crime|"
            r"\baml\b|\bamld\b|\bcft\b|anti-money laundering|\bkyc\b|know your customer|wirtschaftlich berechtigt|beneficial owner|transparenzregister|geldwäscherichtlinie"),
+    ("iref", r"\biref\b|integrated reporting framework|integriertes meldewesen"),
     ("itsrep", r"\bcorep\b|\bfinrep\b|meldewesen|reporting framework|validation rules|meldebögen|taxonomie 4|supervisory reporting|"
               r"\bdpm\b|reporting taxonomy|meldeverordnung|\bxbrl\b|meldepflichten für institute"),
     # Versicherungs-Sanierung/-Abwicklung (IRRD) vor der Banken-BRRD.
@@ -98,6 +101,8 @@ FRAMEWORK_RULES = [
                    r"third-party (risk|provider|service)|drittparteien|fremdvergabe"),
     ("mar", r"marktmissbrauch|market abuse|insider|"
            r"ad-hoc-publizität|ad-hoc-mitteilung|ad hoc disclosure|marktmanipulation|market manipulation|directors.? dealings|eigengeschäfte von führungskräften"),
+    ("sftr", r"\bsftr\b|securities financing transaction|wertpapierfinanzierungsgeschäft|"
+             r"repo market|repo-markt|wertpapierleihe|securities lending"),
     ("emir", r"\bemir\b|otc-derivat|otc derivative|clearingpflicht|clearing obligation|"
              r"central counterpart|\bccps?\b|transaktionsregister|trade repositor|"
              r"einschusspflicht|margin requirement|active account|"
@@ -106,8 +111,22 @@ FRAMEWORK_RULES = [
             r"kritische[nrs]? benchmark|critical benchmark|significant benchmark|"
             r"\beuribor\b|€str|euro short-term rate|"
            r"\blibor\b|\bsofr\b|\bsonia\b|ibor-ablösung|ibor transition"),
+    # Kleinanlegerstrategie und SIU-Marktintegrationspaket vor MiFID: beide
+    # ändern MiFID/IDD/OGAW/AIFMD als Omnibus, sind aber eigene Vorhaben.
+    # Eignung von Geschäftsleitern (Fit & Proper) vor MiFID, weil "suitability"
+    # dort die Kunden-Geeignetheit meint.
+    ("fitproper", r"fit.{0,3}proper|suitability of (the )?members|suitability assessment (framework|of members)|"
+                  r"eignung von geschäftsleiter|geschäftsleiter|aufsichtsorgan|management body|"
+                  r"key function holder|inhaberkontrolle|verwaltungs- oder aufsichtsorgan"),
+    ("ris", r"retail investment strategy|kleinanlegerstrategie|retail investment package|"
+            r"value.for.money|\bris\b(?=[\s\S]*(retail|kleinanleger|priips|inducement|zuwendung))"),
+    # Nur das Paket selbst – "Savings and Investments Union" nennt ESMA in
+    # fast jeder Pressemitteilung (z. B. Consolidated Tape, gehört zu MiFIR).
+    ("misp", r"market integration and supervision|market integration package|marktintegrations|"
+             r"\bmisp\b|(savings and investments union|spar- und investitionsunion|\bsiu\b)"
+             r"[\s\S]{0,80}(package|paket|proposal|vorschlag|directive|regulation|richtlinie|verordnung)"),
     ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution|"
-             r"wertpapierhandelsgesetz|\bwphg\b|geeignetheit|suitability|product governance|produktfreigabe|zielmarkt|target market|zuwendung|inducement|retail investment strategy|kleinanlegerstrategie|mifid ii|mifid 2"),
+             r"wertpapierhandelsgesetz|\bwphg\b|geeignetheit|suitability|product governance|produktfreigabe|zielmarkt|target market|zuwendung|inducement|mifid ii|mifid 2"),
     # Deutsches ZAG-Recht vor dem generischen PSD-Muster: Merkblatt, ZAG-
     # Verordnungen und Erlaubnisfragen sind nationale Auslegung, keine PSD3.
     ("zkg", r"zahlungskontengesetz|\bzkg\b|basiskonto|kontowechsel|entgeltinformation|entgeltaufstellung|"
@@ -117,15 +136,41 @@ FRAMEWORK_RULES = [
             r"zag-instituts-eigenmittel|\bziev\b|zag-monatsausweis|sicherungsanforderungen|"
             r"finanztransfergeschäft|kontoinformationsdienst|e-geld-institut|zahlungsinstitut|"
            r"zahlungsinstitutsgesetz|erlaubnis nach dem zag|zag-erlaubnis|e-geld-geschäft|e-money institution"),
+    ("digieuro", r"digital(er|en|em|e)? euro\b|digital euro|\bcbdc\b|zentralbankwährung|"
+                 r"central bank digital currency|bargeld-verordnung|legal tender of euro"),
     ("psd3", r"\bpsd[23]\b|zahlungsdienst|payment service|"
             r"\bpsr\b|payment services regulation|zahlungsdiensterichtlinie|starke kundenauthentifizierung|strong customer authentication|\bsca\b|open banking|zahlungsauslösedienst"),
+    # Prudenzielle Spezialregime vor SFDR/CRR: ESG-Risikomanagement, Kredit-
+    # vergabe, Verbriefung, Pfandbrief, NPL-Zweitmarkt, Wohnimmobilienkredit,
+    # Eignung von Geschäftsleitern.
+    ("ebaesg", r"esg risks?\b|esg-risik|management of esg|nachhaltigkeitsrisiken im risikomanagement|"
+               r"transition plan|transitionsplan|climate-related and environmental risk"),
+    # Bewusst nur die Leitlinien selbst – "loan origination" allein taucht
+    # auch in CRR-Q&As (Schattenbanken, Großkredite) und Kreditfonds auf.
+    ("loanorig", r"loan origination and monitoring|guidelines on loan origination|"
+                 r"kreditvergabe und -?überwachung|kreditvergabestandards|"
+                 r"credit underwriting|kreditwürdigkeitsprüfung(?![\s\S]*(verbraucher|immobiliar))"),
+    ("securitisation", r"verbriefung|securiti[sz]ation|\bsts\b(?=[\s\S]*(verbrief|securit|synthetic|tranche))|"
+                       r"risk retention|risikoselbstbehalt|synthetic excess spread"),
+    ("pfandbg", r"pfandbrief|covered bond|gedeckte schuldverschreibung|beleihungswert"),
+    ("krzwmg", r"kreditzweitmarkt|\bkrzwmg\b|credit servicer|kreditdienstleist|kreditkäufer|credit purchaser|"
+               r"notleidende[rn]? kredite|non-performing (loans?|exposures?)|\bnpls?\b|\bnpes?\b"),
+    ("mcd", r"wohnimmobilienkredit|mortgage credit|immobiliar-verbraucherdarlehen|immokwplv|"
+            r"hypothekarkredit|baufinanzierung|\bmcd\b(?=[\s\S]*(mortgage|kredit|credit))"),
     ("aifmd2", r"\baifmd\b|\bkagb\b|\bogaw\b|\bucits\b|investmentfonds|investment fund|kapitalverwaltung|\baif\b|"
               r"alternative investment fund|\bkvgs?\b|verwahrstelle|depositar|ogaw-richtlinie|ucits directive|spezialfonds|publikumsfonds|kreditfonds|loan-originating"),
+    # ESG-Spezialrechtsakte vor CSRD/SFDR (deren Muster fangen "taxonom",
+    # "esg" und "sustainab" generisch ab).
+    ("taxonomy", r"taxonomie(?!\s*4)|taxonomy(?!\s*(4|architecture|package|\d))|green asset ratio|\bgar\b"),
+    ("esgrating", r"esg[- ]ratings?|esg rating regulation|esg-rating-verordnung|nachhaltigkeitsrating|"
+                  r"rating providers?\b(?=[\s\S]*(esg|sustainab))"),
+    ("greenbond", r"green bond|grüne anleihe|\beugbs?\b|european green bond|sustainability-linked bond"),
     ("csrd", r"\bcsrd\b|\besrs\b|nachhaltigkeitsbericht|sustainability report|corporate sustainability report|"
             r"\bvsme\b|esg-bericht|nachhaltigkeitsberichterstattung|csrd-umsetzung|omnibus.{0,40}nachhaltigkeit"),
     ("sfdr", r"\bsfdr\b|offenlegungsverordnung|sustainab|nachhaltigkeitsbezogen|\besg\b|taxonomie-verordnung|taxonomy regulation|"
             r"taxonomy disclosures|taxonomie-offenlegung|taxonomy-related disclosure|taxonomiebezogene|"
             r"greenwashing|klimarisik|climate risk|eu-taxonomie|eu taxonomy|\bpais?\b|principal adverse impact|nachhaltigkeitspräferenz|sustainability preference"),
+    ("mago", r"\bmago\b|mindestanforderungen an die geschäftsorganisation"),
     ("solvency", r"solvency|solvabilität|versicherungsaufsicht|\bvag\b|\biorp\b|occupational retirement|insurance stress test|reinsurance|"
                 r"solvency ii|solvency 2|solvabilität ii|\borsa\b|\bscr\b|solvenzkapital|versicherungsunternehmen|insurance undertaking|rückversicher"),
     ("idd", r"versicherungsvertrieb|insurance distribution|"
@@ -134,14 +179,36 @@ FRAMEWORK_RULES = [
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement|"
             r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted"),
     # Generische Muster bewusst am Ende, damit Spezialregime zuerst greifen.
+    ("dataact", r"\bdata act\b|\bdata-act\b|datenverordnung|\bdatengesetz\b|cloud switching|anbieterwechsel cloud|switching charges"),
     ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data|"
              r"privacy|datenschutz-grundverordnung|auftragsverarbeit|datenpanne|data breach|\bdsfa\b|\bdpia\b|\bcookies?\b|einwilligung|consent management"),
+    ("fernabsatz", r"fernabsatz|distance marketing|distance contract|distance selling|"
+                   r"widerrufsbutton|withdrawal button|widerrufsfunktion"),
     # Absatzfinanzierungsaufsichtsgesetz (BNPL/Händlerkredite) vor dem
     # generischen Verbraucherkredit-Muster.
     ("absfinag", r"absatzfinanzierungsaufsichtsgesetz|\babsfinag\b|absatzfinanzier|\bbnpl\b"),
     ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|restschuldversicherung|verbrauchervertr|widerrufsinformation|buy.now.pay.later|finanzieller verbraucherschutz|"
                 r"verbraucherschutz|consumer protection|verbraucherkreditrichtlinie|\bccd ?(ii|2)\b|widerrufsrecht|right of withdrawal|prämiensparvertr|kontoentgelt|dispozins|überziehungszins"),
 ]
+
+# Quellenspezifische Vorrangregeln: Dokumente der CSSF (Luxemburg) werden
+# zuerst gegen die luxemburgischen Rahmenwerke geprüft; nur wenn keines
+# greift (z. B. DORA-, MiCA- oder ESMA-Weiterleitungen), fallen sie auf
+# die generischen FRAMEWORK_RULES zurück.
+SOURCE_RULES = {
+    "cssf": [
+        ("lulmt", r"liquidity management tool|\blmts?\b|26/910|swing pricing|side pocket|redemption gate|anti-dilution"),
+        ("cssf24856", r"24/856|nav (calculation )?errors?|non-compliance with (the )?investment rules|"
+                      r"investment (restriction|rule) breach|02/77"),
+        ("cssf18698", r"18/698|22/806|25/883|outsourcing|substance requirement|conducting officers?|dirigeants?|"
+                      r"investment fund managers?(?! and)|\bifms?\b|delegation oversight"),
+        ("cssfaml", r"12-02|law of 12 november 2004|money laundering|aml/cft|\baml\b|\bcft\b|terrorist financing|"
+                    r"financial sanctions?|questionnaire on financial crime|\brc\b.{0,20}\brr\b"),
+        ("luaifm", r"law of 17 december 2010|law of 12 july 2013|law of 3 march 2026|\b2010 law\b|\b2013 law\b|25/901|"
+                   r"\bsifs?\b|sicar|\braifs?\b|part ii uci|\bucits\b|\baifms?\b|\baifs?\b|investment funds?\b|"
+                   r"undertakings for collective investment|\bucis?\b|eltif|\bmmfr?\b|money market fund"),
+    ],
+}
 
 TYPE_LABELS = {
     "CIRCULAR": ("Rundschreiben", "Circular"),
@@ -227,12 +294,16 @@ NOISE = re.compile(
     r"stellenausschreibung|management board meeting", re.IGNORECASE)
 
 
-def _classify(text: str, forced: Optional[str] = None) -> Optional[str]:
+def _classify(text: str, forced: Optional[str] = None,
+              source_id: Optional[str] = None) -> Optional[str]:
     if NOISE.search(text):
         return None
     if forced:
         return forced
     lowered = text.lower()
+    for fw_id, pattern in SOURCE_RULES.get(source_id or "", []):
+        if re.search(pattern, lowered):
+            return fw_id
     for fw_id, pattern in FRAMEWORK_RULES:
         if re.search(pattern, lowered):
             return fw_id
@@ -376,7 +447,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # Diligence" nennen weder Behörde noch Stichworte eindeutig.
         fw_id = _classify(
             "{} {}".format(r["title"] or "", r["summary"] or ""),
-            forced="amla" if r["source_id"] == "amla" else None)
+            forced="amla" if r["source_id"] == "amla" else None,
+            source_id=r["source_id"])
         if not fw_id:
             continue
         date = _de_date(r["publication_date"]) or _de_date(r["first_seen_at"][:10])
