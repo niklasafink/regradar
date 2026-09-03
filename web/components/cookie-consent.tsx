@@ -66,6 +66,13 @@ export function hasAnalyticsConsent(): boolean {
   return readConsent()?.analytics === true;
 }
 
+/** Hat der Besucher den Banner bereits entschieden (egal wie)? Andere
+    Overlays unten rechts (Feedback-Widget) warten darauf. */
+export function hasConsentDecision(): boolean {
+  if (typeof window === "undefined") return false;
+  return readConsent() !== null;
+}
+
 /** Erteilt die Analyse-Einwilligung programmatisch — etwa beim Newsletter-
     Abonnieren, wo der Klick als Einwilligung gilt (überschreibt auch eine
     frühere Ablehnung). Schließt einen ggf. offenen Banner. */

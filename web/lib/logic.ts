@@ -158,6 +158,16 @@ export const providerById = (idOrSlug: string) =>
 export const providerSlug = (id: string) =>
   PROVIDERS.find((p) => p.id === id)?.slug ?? id;
 export const frameworkById = (id: string) => FRAMEWORKS.find((f) => f.id === id);
+/** Untergeordnete Rahmenwerke (z. B. EBA-Leitlinien zu einem Rechtsakt). */
+export const childrenOf = (id: string): Framework[] =>
+  FRAMEWORKS.filter((f) => f.parent === id);
+export const parentOf = (f: Framework): Framework | undefined =>
+  f.parent ? frameworkById(f.parent) : undefined;
+/** Anzeigename: Kinder mit Elternpfad, z. B. „CRR III › Ausfalldefinition". */
+export const framePath = (lang: Lang, f: Framework): string => {
+  const p = parentOf(f);
+  return p ? `${tx(lang, p.n)} › ${tx(lang, f.sn ?? f.n)}` : tx(lang, f.n);
+};
 export const topicById = (id: string) => TOPICS.find((t) => t.id === id);
 
 /* Kommende Fristen aus deadline und eff über alle sichtbaren Rahmenwerke. */

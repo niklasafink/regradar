@@ -143,6 +143,9 @@ FRAMEWORK_RULES = [
     # Prudenzielle Spezialregime vor SFDR/CRR: ESG-Risikomanagement, Kredit-
     # vergabe, Verbriefung, Pfandbrief, NPL-Zweitmarkt, Wohnimmobilienkredit,
     # Eignung von Geschäftsleitern.
+    # Untergeordnete EBA-Leitlinien (parent in data.ts) vor ihren Rechtsakten.
+    ("ebaenvscen", r"environmental scenario|esg scenario analysis|umweltszenario|klimaszenario|climate scenario analysis"),
+    ("ebadod", r"definition of default|ausfalldefinition|\bdod\b(?=[\s\S]*(default|ausfall))"),
     ("ebaesg", r"esg risks?\b|esg-risik|management of esg|nachhaltigkeitsrisiken im risikomanagement|"
                r"transition plan|transitionsplan|climate-related and environmental risk"),
     # Bewusst nur die Leitlinien selbst – "loan origination" allein taucht

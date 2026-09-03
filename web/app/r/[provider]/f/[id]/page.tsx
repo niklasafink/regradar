@@ -7,8 +7,11 @@ import { AuthorityLogo, FirmLogo, FRAMEWORK_AUTH } from "@/components/authority-
 import { Chrome, Footer } from "@/components/chrome";
 import { ABOUT_LONG } from "@/lib/data";
 import {
-  daysAgo, daysUntil, deadlineExpired, deadlineLabel, dt, fmtDate, frameworkById, providerById,
-  topicById, tx, visibleFrameworks,
+  Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,
+} from "@/components/ui/carousel";
+import {
+  childrenOf, daysAgo, daysUntil, deadlineExpired, deadlineLabel, dt, fmtDate, frameworkById,
+  parentOf, providerById, topicById, tx, visibleFrameworks,
 } from "@/lib/logic";
 import { firstParagraph, updateHref } from "@/lib/updates";
 import { useStore } from "@/lib/store";
@@ -25,49 +28,50 @@ export default function FrameworkDetail() {
   const ups = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
   const fresh = ups.filter((u) => daysAgo(u.d) <= 30).length;
   const sources = [...new Set(ups.map((u) => u.src))];
+  const parent = parentOf(f);
+  const kids = visibleFrameworks(p.id, null).filter((x) => x.parent === f.id);
   const siblings = visibleFrameworks(p.id, null)
-    .filter((x) => x.topic === f.topic && x.id !== f.id);
+    .filter((x) => x.topic === f.topic && x.id !== f.id && !x.parent);
 
-  const stats = [
-    { v: ups.length, l: lang === "de" ? "Updates gesamt" : "Updates in total" },
-    { v: fresh, l: lang === "de" ? "Letzte 30 Tage" : "Last 30 days" },
-    { v: ups[0] ? fmtDate(lang, ups[0].d) : "–", l: lang === "de" ? "Letzte Änderung" : "Last change" },
-    { v: ups[0] ? fmtDate(lang, ups[ups.length - 1].d) : "–", l: lang === "de" ? "Ältester Eintrag" : "Oldest entry" },
-  ];
 
   return (
     <>
       <Chrome />
 
       <main className="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
-        <Link
-          href={`/r/${p.slug}`}
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900"
-        >
-          <span aria-hidden>←</span>
-          {lang === "de" ? "Übersicht" : "Overview"}: {tx(lang, t.n)}
-        </Link>
-
-        {/* Kopf */}
-        <div className="mt-4">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-slate-100 px-3 py-0.5 text-xs font-medium text-slate-600">
-              {tx(lang, t.n)}
+        {/* Kopf, kompakt: Rücksprung, Thema und Bedingungen in einer Zeile */}
+        <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs">
+          <Link
+            href={`/r/${p.slug}`}
+            className="inline-flex items-center gap-1.5 font-medium text-slate-500 hover:text-slate-900"
+          >
+            <span aria-hidden>←</span>
+            {lang === "de" ? "Übersicht" : "Overview"}
+          </Link>
+          <span className="rounded-full bg-slate-100 px-3 py-0.5 font-medium text-slate-600">
+            {tx(lang, t.n)}
+          </span>
+          {f.condL && (
+            <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
+              {tx(lang, f.condL)}
             </span>
-            {f.condL && (
-              <span className="rounded-full border border-slate-200 px-3 py-0.5 text-xs font-medium text-slate-500">
-                {tx(lang, f.condL)}
-              </span>
-            )}
-          </div>
+          )}
+          {parent && (
+            <Link
+              href={`/r/${p.slug}/f/${parent.id}`}
+              className="rounded-full border border-slate-900 px-3 py-0.5 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
+            >
+              {lang === "de" ? "Konkretisiert" : "Specifies"}: {tx(lang, parent.n)}
+            </Link>
+          )}
+        </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1">
           <AuthorityLogo
             src={FRAMEWORK_AUTH[f.id] ?? ups[0]?.src ?? "eur-lex.europa.eu"}
-            className="mt-5 h-7"
+            className="h-5"
           />
-          <h1 className="font-heading mt-3 max-w-4xl text-balance text-2xl font-medium tracking-tight sm:text-4xl">
-            {tx(lang, f.n)}
-          </h1>
-          <p className="mt-1.5 text-sm text-slate-400">
+          <p className="text-sm text-slate-400">
             {f.refUrl ? (
               <a
                 href={f.refUrl}
@@ -82,32 +86,87 @@ export default function FrameworkDetail() {
             )}
             , {f.jur}
           </p>
-          {ABOUT_LONG[f.id] && (
-            <details className="group mt-4 max-w-3xl rounded-2xl border border-slate-200 bg-white">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-semibold tracking-tight text-slate-900 [&::-webkit-details-marker]:hidden">
-                {lang === "de" ? "Mehr zum Rahmenwerk" : "More about this framework"}
-                <ChevronDown
-                  aria-hidden
-                  className="size-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180"
-                />
-              </summary>
-              <div className="space-y-3 border-t border-slate-100 px-4 pt-3 pb-4 text-sm leading-relaxed text-slate-600">
-                {ABOUT_LONG[f.id].map((para, i) => (
-                  <p key={i}>{tx(lang, para)}</p>
-                ))}
-              </div>
-            </details>
-          )}
         </div>
+        <h1 className="font-heading mt-1.5 max-w-4xl text-balance text-2xl font-medium tracking-tight sm:text-3xl">
+          {tx(lang, f.n)}
+        </h1>
 
-        <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 sm:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.l} className="bg-white px-4 py-3">
-              <dd className="num text-base font-semibold tracking-tight text-slate-900">{s.v}</dd>
-              <dt className="mt-0.5 text-xs font-medium text-slate-500">{s.l}</dt>
+        {/* Kennzahlen als eine Zeile statt Kachelraster */}
+        <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
+          <span>
+            <span className="num font-semibold text-slate-900">{ups.length}</span>{" "}
+            {lang === "de" ? "Updates" : "updates"}
+          </span>
+          <span>
+            <span className="num font-semibold text-slate-900">{fresh}</span>{" "}
+            {lang === "de" ? "in den letzten 30 Tagen" : "in the last 30 days"}
+          </span>
+          {ups[0] && (
+            <span>
+              {lang === "de" ? "Stand" : "Updated"}{" "}
+              <span className="num font-semibold text-slate-900">{fmtDate(lang, ups[0].d)}</span>
+            </span>
+          )}
+          {ups.length > 1 && (
+            <span>
+              {lang === "de" ? "seit" : "since"}{" "}
+              <span className="num font-semibold text-slate-900">{fmtDate(lang, ups[ups.length - 1].d)}</span>
+            </span>
+          )}
+        </p>
+        {ABOUT_LONG[f.id] && (
+          <details className="group mt-2 max-w-3xl">
+            <summary className="inline-flex cursor-pointer list-none items-center gap-1 text-xs font-medium text-slate-900 underline-offset-2 hover:underline [&::-webkit-details-marker]:hidden">
+              {lang === "de" ? "Mehr zum Rahmenwerk" : "More about this framework"}
+              <ChevronDown
+                aria-hidden
+                className="size-3.5 text-slate-400 transition-transform group-open:rotate-180"
+              />
+            </summary>
+            <div className="mt-2 space-y-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm leading-relaxed text-slate-600">
+              {ABOUT_LONG[f.id].map((para, i) => (
+                <p key={i}>{tx(lang, para)}</p>
+              ))}
             </div>
-          ))}
-        </dl>
+          </details>
+        )}
+
+        {/* Konkretisierende Vorgaben (Kinder: Leitlinien, RTS, ITS) als Slider */}
+        {kids.length > 0 && (
+          <Carousel opts={{ align: "start" }} className="mt-5 flex items-center gap-3">
+            <div className="min-w-0 flex-1">
+            <CarouselContent>
+              {kids.map((k) => (
+                <CarouselItem key={k.id} className="basis-auto">
+                  <Link
+                    href={`/r/${p.slug}/f/${k.id}`}
+                    className="group flex w-64 items-center gap-3 rounded-2xl border border-slate-200 bg-white px-3.5 py-2.5 transition-colors hover:border-slate-900"
+                  >
+                    <AuthorityLogo src={FRAMEWORK_AUTH[k.id] ?? "eba.europa.eu"} className="h-4 shrink-0" />
+                    <span className="min-w-0">
+                      <span className="block truncate text-sm font-semibold tracking-tight">
+                        {tx(lang, k.sn ?? k.n)}
+                      </span>
+                      <span className="num block truncate text-xs text-slate-400">{k.ref}</span>
+                    </span>
+                    {daysAgo(k.latest) <= 14 && (
+                      <span className="ml-auto shrink-0 rounded-full bg-blue-600 px-2 py-0.5 text-[0.6875rem] font-medium text-white">
+                        {lang === "de" ? "Neu" : "New"}
+                      </span>
+                    )}
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            </div>
+            {kids.length > 2 && (
+              <div className="flex shrink-0 gap-1.5">
+                <CarouselPrevious aria-label={lang === "de" ? "Zurück" : "Previous"} />
+                <CarouselNext aria-label={lang === "de" ? "Weiter" : "Next"} />
+              </div>
+            )}
+          </Carousel>
+        )}
 
         <div className="mt-8 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_290px]">
           {/* Update-Verlauf als Zeitleiste */}

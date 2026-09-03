@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Instrument_Serif, Inter, Manrope } from "next/font/google";
 import { CookieConsent } from "@/components/cookie-consent";
 import { DatafastIdentify } from "@/components/datafast-identify";
+import { FeedbackWidget } from "@/components/feedback-widget";
 import { StoreProvider } from "@/lib/store";
 import "./globals.css";
 
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StoreProvider>
           {children}
           <CookieConsent />
+          <FeedbackWidget />
         </StoreProvider>
         <DatafastIdentify />
       </body>

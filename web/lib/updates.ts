@@ -59,6 +59,17 @@ export const UPDATE_PAGES: UpdatePage[] = idx.list;
 export const updateBySlug = (slug: string): UpdatePage | undefined =>
   idx.bySlug.get(slug);
 
+/** Fallback für alte Links: Wandert ein Update in ein Kind-Rahmenwerk
+    (z. B. dora → doraincident), ändert sich der Slug-Präfix. Gesucht wird
+    dann nach dem Rest aus Datum und Titel-Slug. */
+export const updateBySlugLoose = (slug: string): UpdatePage | undefined => {
+  const hit = idx.bySlug.get(slug);
+  if (hit) return hit;
+  const m = slug.match(/(\d{4}-\d{2}-\d{2}-.+)$/);
+  if (!m) return undefined;
+  return idx.list.find((p) => p.slug.endsWith(`-${m[1]}`));
+};
+
 /** Kanonische URL-Pfad-Komponente eines Updates. */
 export const updateHref = (fwId: string, u: Update): string => {
   const hit = idx.list.find((p) => p.fw.id === fwId && p.u === u)

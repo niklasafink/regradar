@@ -18,6 +18,7 @@
 
 import { Resend } from "resend";
 import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
+import { framePath } from "./logic";
 import { addIdentifyParam } from "./datafast";
 import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
@@ -126,7 +127,7 @@ export function renderFwNewsletter(
           <span class="num">${esc(fw.ref)}</span>
         </p>
         <p style="margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35">
-          <a href="${frameworkHref(fw, base)}" style="color:#0f172a;text-decoration:none">${esc(fw.n.de)}</a>
+          <a href="${frameworkHref(fw, base)}" style="color:#0f172a;text-decoration:none">${esc(framePath("de", fw))}</a>
         </p>
         <p style="margin:0;font-size:13px;line-height:1.55;color:#475569">${esc(fw.about.de)}</p>
       </td></tr>`)
@@ -153,7 +154,7 @@ export function renderFwNewsletter(
     "",
     ...(frameworks.length > 0 ? ["Neue Rahmenwerke", ""] : []),
     ...frameworks.flatMap((fw) => [
-      `${fw.n.de} (${fw.ref}, ${JUR_LABEL[fw.jur]})`,
+      `${framePath("de", fw)} (${fw.ref}, ${JUR_LABEL[fw.jur]})`,
       `Relevant für: ${audiences(fw).join(", ")}`,
       fw.about.de,
       frameworkHref(fw, base),

@@ -7,7 +7,7 @@ import { AuthorityLogo, FRAMEWORK_AUTH } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { SearchBox } from "@/components/search";
 import {
-  daysAgo, fmtDate, providerById, topicsWithContent, tx, visibleFrameworks,
+  childrenOf, daysAgo, fmtDate, providerById, topicsWithContent, tx, visibleFrameworks,
 } from "@/lib/logic";
 import { useStore } from "@/lib/store";
 
@@ -19,7 +19,8 @@ export default function Board() {
   const p = providerById(provider);
   if (!p) notFound();
 
-  const list = visibleFrameworks(p.id, null);
+  // Konkretisierende Vorgaben (Kinder) erscheinen nur als Chips auf der Elternkachel.
+  const list = visibleFrameworks(p.id, null).filter((f) => !f.parent);
   const topics = topicsWithContent(list);
   const shown = selected.length ? topics.filter((t) => selected.includes(t.id)) : topics;
   const totalUpdates = list.reduce((n, f) => n + f.u.length, 0);
@@ -113,6 +114,7 @@ export default function Board() {
             <div className="mt-3 grid gap-3 lg:grid-cols-2">
               {t.fws.map((f) => {
                 const fresh = daysAgo(f.latest) <= 14;
+                const kids = childrenOf(f.id);
                 return (
                   <Link
                     key={f.id}
@@ -136,6 +138,21 @@ export default function Board() {
                         </span>
                       )}
                     </div>
+                    {kids.length > 0 && (
+                      <p className="mt-2.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+                        <span className="shrink-0">
+                          {lang === "de" ? "Konkretisiert durch:" : "Specified by:"}
+                        </span>
+                        {kids.map((k) => (
+                          <span
+                            key={k.id}
+                            className="rounded-full border border-slate-200 px-2 py-0.5 text-[0.6875rem] font-medium text-slate-600"
+                          >
+                            {tx(lang, k.sn ?? k.n)}
+                          </span>
+                        ))}
+                      </p>
+                    )}
                     <div className="mt-3 flex flex-1 items-end justify-between border-t border-slate-100 pt-2.5 text-xs">
                       <span className="num text-slate-400">
                         {f.u.length === 0

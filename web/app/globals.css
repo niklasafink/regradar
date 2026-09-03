@@ -23,3 +23,21 @@ dialog::backdrop {
   background: rgb(15 23 42 / 0.45);
   backdrop-filter: blur(2px);
 }
+
+/* Feedback-Widget: hereinschieben von rechts */
+@keyframes rr-pop-in {
+  from {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  @keyframes rr-pop-in {
+    from { opacity: 0; transform: none; }
+    to { opacity: 1; transform: none; }
+  }
+}

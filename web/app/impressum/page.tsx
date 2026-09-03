@@ -59,7 +59,7 @@ export default function Impressum() {
           <section>
             <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
             <p>
-              Moritz Landwehr
+              Niklas Fink
               <br />
               Auf der Heidwende 7
               <br />

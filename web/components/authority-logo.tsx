@@ -34,11 +34,18 @@ const LOGOS: Record<string, string> = {
 /* Rahmenwerk -> herausgebende Stelle (Domain wie in LOGOS/AUTHORITIES). */
 export const FRAMEWORK_AUTH: Record<string, string> = {
   dora: "eur-lex.europa.eu",
+  dorarmf: "eur-lex.europa.eu",
+  doraincident: "eur-lex.europa.eu",
+  dorathirdparty: "eur-lex.europa.eu",
+  doratlpt: "eur-lex.europa.eu",
+  doraoversight: "eur-lex.europa.eu",
   nis2: "eur-lex.europa.eu",
   ebaict: "eba.europa.eu",
   amla: "amla.europa.eu",
   gwg: "gesetze-im-internet.de",
   crr3: "eur-lex.europa.eu",
+  ebadod: "eba.europa.eu",
+  ebaenvscen: "eba.europa.eu",
   marisk: "bafin.de",
   brrd: "eur-lex.europa.eu",
   ifr: "eur-lex.europa.eu",
