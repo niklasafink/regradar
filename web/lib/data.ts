@@ -901,9 +901,9 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"idd", jur:"EU",
-    about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules."}, topic:"INSU", ents:["CI","INS"],
+    about:{de:"Anforderungen an Beratung, Vertrieb und Produktfreigabe von Versicherungsprodukten einschließlich Wohlverhaltensregeln. Betrifft neben Versicherern auch Banken, die als Versicherungsvermittler auftreten, etwa bei Restschuldversicherungen, Altersvorsorgeprodukten oder Versicherungsanlageprodukten: Beratungs- und Dokumentationspflichten, Produktfreigabe, Provisionsgrenzen und die Vermittlerregeln aus Gewerbeordnung und VersVermV.",en:"Requirements for advice, distribution and product approval of insurance products, including conduct rules. Applies not only to insurers but also to banks acting as insurance intermediaries, for example for payment protection insurance, pension products or insurance-based investment products: advice and documentation duties, product approval, commission caps and the intermediary rules under the Trade Regulation Act and the VersVermV."}, topic:"INSU", ents:["CI","INS"],
     n:{de:"Versicherungsvertriebsrichtlinie (IDD)",en:"Insurance Distribution Directive (IDD)"},
-    alias:"IDD, Insurance Distribution Directive, Versicherungsvertrieb, Versicherungsvermittler, Versicherungsmakler, IBIP, Versicherungsanlageprodukte",
+    alias:"IDD, Insurance Distribution Directive, Versicherungsvertrieb, Versicherungsvermittler, Versicherungsmakler, IBIP, Versicherungsanlageprodukte, Restschuldversicherung, § 34d GewO, VersVermV",
     ref:"RL (EU) 2016/97", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2016/97/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
