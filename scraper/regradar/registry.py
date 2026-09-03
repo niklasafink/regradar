@@ -529,7 +529,6 @@ GII_WATCHLIST = {
     "einsig": "Einlagensicherungsgesetz (EinSiG)",
     "institutsvergv_2014": "Institutsvergütungsverordnung (InstitutsVergV)",
     "wpivergv": "Wertpapierinstituts-Vergütungsverordnung (WpI-VergV)",
-    "bfsg": "Barrierefreiheitsstärkungsgesetz (BFSG)",
     "ksttg": "Kryptowerte-Steuertransparenzgesetz (KStTG)",
     "sanktdg": "Sanktionsdurchsetzungsgesetz (SanktDG)",
     "awg_2013": "Außenwirtschaftsgesetz (AWG)",

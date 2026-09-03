@@ -256,7 +256,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"nis2", jur:"EU+DE",
-    about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act."}, topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
+    about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz. Finanzunternehmen im Anwendungsbereich von DORA sind von den BSIG-Pflichten zu Risikomanagement und Meldungen ausgenommen (DORA als lex specialis); relevant bleibt NIS-2 für Leasing-, Factoring- und sonstige Finanzdienstleister außerhalb von DORA, die die Größenschwellen erreichen.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act. Financial entities within the scope of DORA are exempt from the BSIG duties on risk management and reporting (DORA as lex specialis); NIS 2 remains relevant for leasing, factoring and other financial service providers outside DORA that meet the size thresholds."}, topic:"ICT", ents:["OTH"],
     n:{de:"NIS-2 / BSIG: Cybersicherheit",en:"NIS 2 / BSIG: cybersecurity"},
     alias:"NIS2, NIS-2-Umsetzungsgesetz, BSI-Gesetz, Cybersecurity, Cybersicherheit, KRITIS",
     ref:"RL (EU) 2022/2555, BSIG", cond:{k:"cross",any:["kritis"]},
@@ -606,7 +606,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"prospectus", jur:"EU",
-    about:{de:"Prospektpflicht bei öffentlichen Angeboten und Börsenzulassungen von Wertpapieren, Prospektinhalte und -billigung sowie die Erleichterungen des EU Listing Act für Emittenten und Emissionsbegleiter.",en:"Prospectus requirement for public offers and admissions to trading of securities, prospectus content and approval, and the simplifications of the EU Listing Act for issuers and underwriters."}, topic:"MKT", ents:["CI","IF"],
+    about:{de:"Prospektpflicht bei öffentlichen Angeboten und Börsenzulassungen von Wertpapieren, Prospektinhalte und Billigungsverfahren bei der BaFin sowie die aufsichtlichen Erleichterungen des EU Listing Act: höhere Schwellen für prospektfreie Angebote, standardisierte Prospektformate und vereinfachte Sekundäremissionen.",en:"Prospectus requirement for public offers and admissions to trading of securities, prospectus content and the BaFin approval procedure, plus the supervisory simplifications of the EU Listing Act: higher thresholds for prospectus-exempt offers, standardised prospectus formats and simplified secondary issuances."}, topic:"MKT", ents:["CI","IF"],
     n:{de:"Prospektverordnung (ProspektVO) & Listing Act",en:"Prospectus Regulation & Listing Act"},
     alias:"Prospektverordnung, Prospectus Regulation, Listing Act, WpPG, Wertpapierprospektgesetz, WIB, Wertpapier-Informationsblatt, Börsengang, IPO",
     ref:"VO (EU) 2017/1129, VO (EU) 2024/2809, WpPG", cond:{k:"act",any:["issuance"]},
@@ -850,7 +850,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"crs", jur:"EU+DE",
-    about:{de:"Steuerlicher Informationsaustausch: Identifizierung und Meldung meldepflichtiger Finanzkonten (CRS, FATCA) sowie seit 2026 die Melde- und Sorgfaltspflichten für Anbieter von Kryptowerte-Dienstleistungen nach DAC8.",en:"Tax information exchange: identification and reporting of reportable financial accounts (CRS, FATCA) and, since 2026, the reporting and due diligence duties for crypto-asset service providers under DAC8."}, topic:"REP", ents:["CI","AM","IF","PI","INS"],
+    about:{de:"Steuerlicher Informationsaustausch: Identifizierung und Meldung meldepflichtiger Finanzkonten (CRS, FATCA) sowie seit 2026 die Melde- und Sorgfaltspflichten für Anbieter von Kryptowerte-Dienstleistungen nach DAC8.",en:"Tax information exchange: identification and reporting of reportable financial accounts (CRS, FATCA) and, since 2026, the reporting and due diligence duties for crypto-asset service providers under DAC8."}, topic:"REP", ents:["CI","AM","IF","INS"],
     n:{de:"Steuerlicher Informationsaustausch: CRS, FATCA, DAC8",en:"Tax information exchange: CRS, FATCA, DAC8"},
     alias:"CRS, Common Reporting Standard, FATCA, DAC8, DAC 8, FKAustG, KStTG, CARF, Steuertransparenz, Finanzkonten-Informationsaustausch",
     ref:"FKAustG, FATCA-USA-UmsV, KStTG, RL (EU) 2023/2226", cond:null,
@@ -1004,10 +1004,10 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"consumer", jur:"EU+DE",
-    about:{de:"Verbraucherschutz im Finanzgeschäft: Verbraucherdarlehen und die neue Verbraucherkreditrichtlinie CCD II, vorvertragliche Informationspflichten, Widerrufsrechte und AGB-Kontrolle.",en:"Consumer protection in finance: consumer credit and the new Consumer Credit Directive CCD II, pre-contractual information duties, withdrawal rights and review of standard terms."}, topic:"CONS", ents:["CI","PI","OTH"],
+    about:{de:"Aufsichtlicher Verbraucherschutz im Kreditgeschäft: die Verbraucherkreditrichtlinie CCD II und ihre Umsetzung, Kreditwürdigkeitsprüfung, vorvertragliche Informations- und Erläuterungspflichten, Vorgaben für Werbung und Kostendarstellung, Erlaubnisfragen für Kreditgeber und Kreditvermittler sowie die BaFin-Aufsichtspraxis zum kollektiven Verbraucherschutz.",en:"Supervisory consumer protection in lending: the Consumer Credit Directive CCD II and its transposition, creditworthiness assessment, pre-contractual information and explanation duties, rules on advertising and cost disclosure, authorisation of lenders and credit intermediaries, and BaFin's supervisory practice on collective consumer protection."}, topic:"CONS", ents:["CI","PI","OTH"],
     n:{de:"Verbraucherschutz im Finanzgeschäft (CCD II)",en:"Consumer protection in finance (CCD II)"},
-    alias:"Verbraucherschutz, Consumer Protection, Verbraucherkredit, Verbraucherdarlehen, CCD II, CCD2, Verbraucherkreditrichtlinie, Widerruf, Widerrufsrecht, Restschuldversicherung, AGB, Prämiensparverträge",
-    ref:"RL (EU) 2023/2225 (CCD II), BGB", cond:{k:"cli",any:["retail"]},
+    alias:"Verbraucherschutz, Consumer Protection, Verbraucherkredit, Verbraucherdarlehen, CCD II, CCD2, Verbraucherkreditrichtlinie, Kreditwürdigkeitsprüfung, Restschuldversicherung, Kreditvermittler, kollektiver Verbraucherschutz",
+    ref:"RL (EU) 2023/2225 (CCD II), KWG, § 18a KWG, § 4 Abs. 1a FinDAG", cond:{k:"cli",any:["retail"]},
     refUrl:"https://eur-lex.europa.eu/eli/dir/2023/2225/oj/eng",
     condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
     u:[]},
@@ -1031,21 +1031,6 @@ export const FRAMEWORKS: Framework[] = [
           en:"Omnibus act implementing CCD II (Directive (EU) 2023/2225): amendments to the BGB, EGBGB and KWG plus the new AbsFinAG with BaFin registration, SME exemptions (§ 4), fines of up to EUR 500,000 (§ 8) and a transition period ending no later than 20 Nov 2027 (§ 10). Applies from 20 Nov 2026."}}
     ]},
 
-  { id:"bfsg", jur:"EU+DE",
-    about:{de:"Barrierefreiheit für Verbraucher-Bankdienstleistungen: Online-Banking, Apps, Kontoeröffnung, Geldautomaten und Zahlungsterminals müssen seit dem 28.06.2025 wahrnehmbar, bedienbar und verständlich sein; Kleinstunternehmen sind bei Dienstleistungen ausgenommen.",en:"Accessibility for consumer banking services: online banking, apps, account opening, ATMs and payment terminals must be perceivable, operable and understandable since 28 Jun 2025; micro-enterprises are exempt for services."}, topic:"CONS", ents:["CI","PI","IF","INS"],
-    n:{de:"Barrierefreiheitsstärkungsgesetz (BFSG)",en:"Accessibility Strengthening Act (BFSG)"},
-    alias:"BFSG, Barrierefreiheitsstärkungsgesetz, Barrierefreiheit, Accessibility, European Accessibility Act, EAA, Barrierefreies Banking",
-    ref:"BFSG, RL (EU) 2019/882", cond:{k:"cli",any:["retail"]},
-    refUrl:"https://www.gesetze-im-internet.de/bfsg/",
-    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
-    /* Chronologie gegen BGBl. geprüft (Stand 02.09.2026). */
-    u:[
-      {refnum:"BGBl. 2021 I S. 2970", eff:"28.06.2025", d:"22.07.2021", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
-       url:"https://www.gesetze-im-internet.de/bfsg/",
-       ti:{de:"Barrierefreiheitsstärkungsgesetz verkündet, Anwendung ab 28.06.2025",en:"Accessibility Strengthening Act promulgated, applies from 28 Jun 2025"},
-       s:{de:"Setzt den European Accessibility Act (RL (EU) 2019/882) um. Bankdienstleistungen für Verbraucher, Zahlungsterminals und Geldautomaten müssen die Barrierefreiheitsanforderungen erfüllen; Verstöße können mit Bußgeldern bis 100.000 Euro, Untersagung und Verbandsklagen sanktioniert werden. Übergangsfristen gelten für bereits eingesetzte Terminals.",
-          en:"Transposes the European Accessibility Act (Directive (EU) 2019/882). Consumer banking services, payment terminals and ATMs must meet the accessibility requirements; breaches can be sanctioned with fines of up to 100,000 euros, prohibition orders and collective actions. Transition periods apply to terminals already in use."}}
-    ]},
   /* ---------- Ergänzt am 03.09.2026 (Gap-Analyse Banken / Asset Manager / Versicherer / Zahlungsinstitute) ---------- */
 
   { id:"ris", jur:"EU",
@@ -1085,23 +1070,6 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"Omnibus-Vereinfachung der Taxonomie-Offenlegung im Amtsblatt veröffentlicht",en:"Omnibus simplification of taxonomy disclosures published in the Official Journal"},
        s:{de:"Die Delegierte Verordnung (EU) 2026/73 ändert die Offenlegungs-DelVO 2021/2178 sowie die Klima- und Umwelt-Rechtsakte: Wesentlichkeitsschwellen, gestraffte Templates und vereinfachte DNSH-Kriterien. Gilt rückwirkend ab 01.01.2026 für das Berichtsjahr 2025.",
           en:"Delegated Regulation (EU) 2026/73 amends the disclosures delegated act 2021/2178 and the climate and environmental acts: materiality thresholds, streamlined templates and simplified DNSH criteria. Applies retroactively from 1 January 2026 for financial year 2025."}}
-    ]},
-
-  { id:"fernabsatz", jur:"EU+DE",
-    about:{de:"Neue Regeln für online oder telefonisch geschlossene Finanzdienstleistungsverträge: Widerrufsbutton, vorvertragliche Informationen, Erklärungspflicht bei Chatbots und Online-Tools. Ersetzt die Fernabsatzrichtlinie 2002/65/EG und ist in BGB und EGBGB umgesetzt.",
-           en:"New rules for financial services contracts concluded online or by phone: a withdrawal button, pre-contractual information, and an explanation duty where chatbots or online tools are used. Replaces Directive 2002/65/EC and is transposed into the BGB and EGBGB."},
-    topic:"CONS", ents:["CI","PI","IF","INS","OTH"],
-    n:{de:"Fernabsatz von Finanzdienstleistungen (RL 2023/2673)",en:"Distance marketing of financial services (Directive 2023/2673)"},
-    alias:"Fernabsatz, Fernabsatzrichtlinie, Distance Marketing, Widerrufsbutton, Withdrawal Button, § 356a BGB, Online-Vertragsabschluss, Fernabsatzverträge",
-    ref:"RL (EU) 2023/2673, §§ 312 ff., 356a BGB, Art. 246b EGBGB", cond:{k:"cli",any:["retail"]},
-    refUrl:"https://eur-lex.europa.eu/eli/dir/2023/2673/oj/deu",
-    condL:{de:"nur im Privatkundengeschäft",en:"only in retail business"},
-    u:[
-      {refnum:"BGBl. 2026 I Nr. 28", d:"05.02.2026", eff:"19.06.2026", t:{de:"Gesetz",en:"Act"}, src:"recht.bund.de",
-       url:"https://www.recht.bund.de/bgbl/1/2026/28/regelungstext.pdf?__blob=publicationFile&v=1",
-       ti:{de:"Umsetzungsgesetz verkündet: Widerrufsbutton und neue Fernabsatzregeln ab 19.06.2026",en:"Transposition act promulgated: withdrawal button and new distance-marketing rules from 19 Jun 2026"},
-       s:{de:"Das Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts setzt die Richtlinie (EU) 2023/2673 um. Online abgeschlossene Finanzverträge brauchen ab 19.06.2026 eine Widerrufsfunktion; Anbieter müssen auf Verlangen eine menschliche Ansprechperson stellen, wenn Chatbots oder automatisierte Tools eingesetzt werden. Die erweiterten Informationspflichten gelten ab 27.09.2026.",
-          en:"The act amending consumer contract and insurance contract law transposes Directive (EU) 2023/2673. From 19 June 2026 financial contracts concluded online need a withdrawal function; providers must offer a human contact on request where chatbots or automated tools are used. The extended information duties apply from 27 September 2026."}}
     ]},
 
   { id:"digieuro", jur:"EU",
@@ -1356,22 +1324,6 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"EU-Green-Bond-Standard anwendbar: Label „European Green Bond“ verfügbar",en:"EU Green Bond Standard applies: 'European Green Bond' label available"},
        s:{de:"Emittenten können Anleihen seit 21.12.2024 als EuGB bezeichnen, wenn die Erlöse zu 100 Prozent taxonomiekonform (mit 15 Prozent Flexibilität) eingesetzt und die Berichte extern geprüft werden. Externe Prüfer mussten sich bis zum 21.06.2026 bei ESMA registrieren.",
           en:"Since 21 December 2024 issuers may label bonds as EuGB if proceeds are 100 percent taxonomy-aligned (with 15 percent flexibility) and reports are externally reviewed. External reviewers had to register with ESMA by 21 June 2026."}}
-    ]},
-
-  { id:"misp", jur:"EU",
-    about:{de:"Gesetzgebungspaket der Kommission zur Spar- und Investitionsunion: mehr Aufsichtsbefugnisse für ESMA (u. a. Jahresreviews großer Asset Manager, direkte Aufsicht über Krypto-Dienstleister und Handelsplätze), Abbau grenzüberschreitender Hürden für Fonds und harmonisierte Marktinfrastruktur.",
-           en:"The Commission's legislative package for the Savings and Investments Union: more supervisory powers for ESMA (including annual reviews of large asset managers and direct supervision of crypto providers and trading venues), removal of cross-border barriers for funds and harmonised market infrastructure."},
-    topic:"MKT", ents:["CI","AM","IF"],
-    n:{de:"EU-Paket zur Marktintegration und Aufsicht der Spar- und Investitionsunion (MISP)",en:"EU Market Integration and Supervision Package of the Savings and Investments Union (MISP)"},
-    alias:"MISP, Market Integration and Supervision Package, Spar- und Investitionsunion, Savings and Investments Union, SIU, ESMA-Aufsicht, Kapitalmarktunion, CMU",
-    ref:"Kommissionsvorschläge vom 04.12.2025 (2 VO, 1 RL; Änderung von 19 Rechtsakten)", cond:null,
-    refUrl:"https://www.consilium.europa.eu/en/policies/savings-and-investments-union/",
-    u:[
-      {d:"04.12.2025", t:{de:"Gesetzentwurf",en:"Bill"}, src:"finance.ec.europa.eu",
-       url:"https://finance.ec.europa.eu/finance-news_en",
-       ti:{de:"Kommission legt Marktintegrations- und Aufsichtspaket vor",en:"Commission tables the Market Integration and Supervision Package"},
-       s:{de:"Das Paket aus zwei Verordnungen und einer Richtlinie ändert 19 Rechtsakte, darunter OGAW-RL, AIFMD, MiFID II, MiFIR, CSDR und MiCA. Für Asset Manager zentral: keine direkte ESMA-Aufsicht, aber jährliche ESMA-Reviews großer Manager, ein harmonisierter Fonds-Pass und der Abbau nationaler Zusatzanforderungen beim Vertrieb.",
-          en:"The package of two regulations and one directive amends 19 legal acts including UCITS, AIFMD, MiFID II, MiFIR, CSDR and MiCA. For asset managers the key points are: no direct ESMA supervision, but annual ESMA reviews of large managers, a harmonised fund passport and removal of national gold-plating in distribution."}}
     ]},
 
   /* ---------- Luxemburg (CSSF): nur sichtbar, wenn im Onboarding „Luxemburg“ gewählt ist ---------- */

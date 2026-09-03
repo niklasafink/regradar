@@ -88,11 +88,9 @@ class FrameworkClassification(unittest.TestCase):
         cases = [
             ("Retail Investment Strategy: Council endorses final compromise text", "ris"),
             ("Kleinanlegerstrategie: Parlament stimmt über Value for Money ab", "ris"),
-            ("Commission publishes Market Integration and Supervision Package", "misp"),
             ("Delegated act on simplification of the EU Taxonomy published", "taxonomy"),
             ("ESMA statement on ESG rating providers transition period", "esgrating"),
             ("ESMA registers first external reviewers under the European Green Bond Regulation", "greenbond"),
-            ("Widerrufsbutton: Neue Regeln für den Fernabsatz von Finanzdienstleistungen", "fernabsatz"),
             ("European Parliament backs negotiating mandate on the digital euro", "digieuro"),
             ("BaFin veröffentlicht Neufassung der MaGo für Versicherer", "mago"),
             ("EBA final Guidelines on the management of ESG risks", "ebaesg"),

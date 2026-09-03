@@ -16,7 +16,7 @@ regradar setzt direkt an den Primärquellen an und übersetzt sie in Arbeitsnutz
 
 ## Was regradar heute bietet
 
-- **35 Rahmenwerke** (EU und DE) mit Zeitleiste, Kurzprofil und Betroffenheitslogik — u. a. DORA, NIS2, MiCA, CRR III, MaRisk, WpI-MaRisk, AIFMD II, Solvency II, DSGVO, AI Act, CSRD.
+- **74 Rahmenwerke** (EU, DE und LU) mit Zeitleiste, Kurzprofil und Betroffenheitslogik — u. a. DORA, NIS2, MiCA, CRR III, MaRisk, WpI-MaRisk, AIFMD II, Solvency II, DSGVO, AI Act, CSRD.
 - **27 Primärquellen** werden laufend überwacht: EU-Ebene (EUR-Lex, EBA inkl. Single Rulebook Q&A, ESMA, EIOPA, EZB-Bankenaufsicht, SRB, ESRB, AMLA, EDPB, EuGH, EU-Kommission), Bund (BaFin, Bundesbank, BSI, BfDI, BMF, FIU, Bundesgesetzblatt, DIP Bundestag, Gesetze im Internet, Rechtsprechung im Internet) und internationale Standardsetzer (Basler Ausschuss/BIS, FSB, IOSCO).
 - **Stündliche Aktualisierung**: Der Scraper läuft einmal pro Stunde über alle Quellen; neue Meldungen erscheinen automatisch auf der Seite.
 - **LLM-gestützte Aufbereitung**: Relevanzfilter, verständliche Anzeigetitel (keine kryptischen Dokumentnummern), mehrabsätzige Zusammenfassungen (Inhalt / Relevanz / Fristen) und eine Impact-Einstufung (high / medium / low).

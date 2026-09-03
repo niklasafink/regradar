@@ -70,7 +70,6 @@ FRAMEWORK_RULES = [
             r"network and information security|cybersicherheitsrichtlinie|nis-2-umsetzung"),
     ("fida", r"\bfida\b|financial data access|open finance|zugang zu finanzdaten|"
             r"fida-verordnung|finanzdatenzugang|financial data sharing"),
-    ("bfsg", r"barrierefreiheit|\bbfsg\b|accessibility act|european accessibility"),
     ("crs", r"\bdac ?8\b|common reporting standard|finanzkonten-informationsaustausch|\bfkaustg\b|"
             r"kryptowerte-steuertransparenz|\bksttg\b|\bfatca\b|crypto-asset reporting framework|\bcarf\b"),
     ("csdr", r"\bcsdr\b|\bt\+1\b|zentralverwahrer|central securities depositor|abwicklungszyklus|settlement cycle|settlement discipline|"
@@ -120,11 +119,6 @@ FRAMEWORK_RULES = [
                   r"key function holder|inhaberkontrolle|verwaltungs- oder aufsichtsorgan"),
     ("ris", r"retail investment strategy|kleinanlegerstrategie|retail investment package|"
             r"value.for.money|\bris\b(?=[\s\S]*(retail|kleinanleger|priips|inducement|zuwendung))"),
-    # Nur das Paket selbst – "Savings and Investments Union" nennt ESMA in
-    # fast jeder Pressemitteilung (z. B. Consolidated Tape, gehört zu MiFIR).
-    ("misp", r"market integration and supervision|market integration package|marktintegrations|"
-             r"\bmisp\b|(savings and investments union|spar- und investitionsunion|\bsiu\b)"
-             r"[\s\S]{0,80}(package|paket|proposal|vorschlag|directive|regulation|richtlinie|verordnung)"),
     ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution|"
              r"wertpapierhandelsgesetz|\bwphg\b|geeignetheit|suitability|product governance|produktfreigabe|zielmarkt|target market|zuwendung|inducement|mifid ii|mifid 2"),
     # Deutsches ZAG-Recht vor dem generischen PSD-Muster: Merkblatt, ZAG-
@@ -182,8 +176,6 @@ FRAMEWORK_RULES = [
     ("dataact", r"\bdata act\b|\bdata-act\b|datenverordnung|\bdatengesetz\b|cloud switching|anbieterwechsel cloud|switching charges"),
     ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data|"
              r"privacy|datenschutz-grundverordnung|auftragsverarbeit|datenpanne|data breach|\bdsfa\b|\bdpia\b|\bcookies?\b|einwilligung|consent management"),
-    ("fernabsatz", r"fernabsatz|distance marketing|distance contract|distance selling|"
-                   r"widerrufsbutton|withdrawal button|widerrufsfunktion"),
     # Absatzfinanzierungsaufsichtsgesetz (BNPL/Händlerkredite) vor dem
     # generischen Verbraucherkredit-Muster.
     ("absfinag", r"absatzfinanzierungsaufsichtsgesetz|\babsfinag\b|absatzfinanzier|\bbnpl\b"),
