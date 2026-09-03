@@ -87,7 +87,13 @@ FRAMEWORK_RULES = [
     ("gwg", r"geldwäsche|money laundering|\bgwg\b|\bfiu\b|terrorismusfinanzierung|financial crime|"
            r"\baml\b|\bamld\b|\bcft\b|anti-money laundering|\bkyc\b|know your customer|wirtschaftlich berechtigt|beneficial owner|transparenzregister|geldwäscherichtlinie"),
     ("iref", r"\biref\b|integrated reporting framework|integriertes meldewesen"),
-    ("itsrep", r"\bcorep\b|\bfinrep\b|meldewesen|reporting framework|validation rules|meldebögen|taxonomie 4|supervisory reporting|"
+    # Solvency-II-Taxonomien (EIOPA DPM/XBRL) gehören zu Solvency II, nicht ins Banken-Meldewesen.
+    ("solvency", r"solvency (ii|2).{0,80}(\bdpm\b|taxonom|xbrl)|(\bdpm\b|taxonom|xbrl).{0,80}solvency (ii|2)"),
+    # "reporting framework" allein ist zu generisch (ESMA/EMIR-Meldungen); nur im
+    # EBA-Kontext bzw. mit Versionsnummer oder Technischem Paket zuordnen.
+    ("itsrep", r"\bcorep\b|\bfinrep\b|meldewesen|eba reporting framework|reporting framework \d\.\d|"
+              r"reporting and disclosure framework|technical package|meldebögen|taxonomie 4|supervisory reporting|"
+              r"validation rules?.{0,80}(corep|finrep|dpm|xbrl|taxonom|template|eba)|(corep|finrep|dpm|xbrl|taxonom|template|eba).{0,80}validation rules?|"
               r"\bdpm\b|reporting taxonomy|meldeverordnung|\bxbrl\b|meldepflichten für institute"),
     # Versicherungs-Sanierung/-Abwicklung (IRRD) vor der Banken-BRRD.
     ("irrd", r"\birrd\b|recovery and resolution of insurance|recovery and resolution of \(re\)insurance|"

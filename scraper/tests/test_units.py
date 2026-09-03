@@ -106,6 +106,12 @@ class FrameworkClassification(unittest.TestCase):
             ("Data Act: Commission guidance on cloud switching", "dataact"),
             # Bestehende Zuordnungen bleiben stabil.
             ("EBA reporting framework 4.1 – Taxonomy package published", "itsrep"),
+            ("The EBA releases the final technical package for its 4.3 reporting framework", "itsrep"),
+            ("The EBA seeks feedback on the 4.4 draft technical package of its reporting and disclosure framework", "itsrep"),
+            # Generisches "reporting framework" ohne EBA-Kontext gehört nicht ins Meldewesen.
+            ("ESMA consults on reporting framework for clearing activity at recognised third-country CCPs under EMIR", "emir"),
+            ("EBA Q&A: validation rule on template C 34.03 of the reporting framework", "itsrep"),
+            ("EIOPA publishes second public working draft of the Solvency II 2.10.0 DPM and taxonomy", "solvency"),
             ("ESMA guidelines on MiFID II suitability requirements", "mifid"),
             ("EBA consults on LCR and NSFR treatment under the banking package", "crr3"),
         ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T09:04:36Z",
+  "generated_at": "2026-09-03T09:43:02Z",
   "updates": {
     "irrd": [
       {
@@ -252,6 +252,252 @@
         "deadline": "24.08.2026"
       }
     ],
+    "sanctions": [
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Beweisanforderungen bei Kontrolle von Unternehmen durch sanktionierte Personen (C-147/25)",
+          "en": "ECJ ruling on evidentiary requirements for control of companies by sanctioned persons (C-147/25)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-147-25-inter-rao-lietuva",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Kontrolle einer Gesellschaft durch eine Person, die EU-restriktiven Maßnahmen unterliegt, objektiv und hinreichend gesichert nachgewiesen werden muss. Der autokratische Charakter eines politischen Regimes allein reicht nicht aus, um eine solche Kontrolle zu belegen. Nationale Behörden müssen die Kontrolle durch unmittelbare Beweise oder ein Bündel konkreter, genauer und übereinstimmender Indizien belegen.\n\nDies betrifft Finanzinstitute und andere Unternehmen, die mit Sanktionen belegte Personen oder Unternehmen identifizieren und deren Vermögenswerte einfrieren müssen. Die Entscheidung präzisiert die Anforderungen an die Beweisführung für die Kontrolle von Unternehmen im Kontext von EU-Sanktionen und betont die Notwendigkeit einer soliden faktischen Grundlage für solche Maßnahmen. Nationale Gerichte müssen die Rechtmäßigkeit von Einfrierungsmaßnahmen überprüfen, ohne jedoch die Frage einer Bedrohung der nationalen Sicherheit beurteilen zu müssen.\n\nDie Begründung für das Einfrieren von Geldern muss den Betroffenen so bald wie möglich mitgeteilt werden, um deren Recht auf gerichtlichen Rechtsschutz zu gewährleisten. Eine vorherige Anhörung oder Mitteilung ist nicht erforderlich, um die Wirksamkeit der Maßnahme nicht zu gefährden.",
+          "en": "The European Court of Justice (ECJ) has ruled that the control of a company by a person subject to EU restrictive measures must be proven objectively and with sufficient certainty. The autocratic nature of a political regime alone is not sufficient to demonstrate such control. National authorities must prove control through direct evidence or a set of concrete, precise, and consistent indications.\n\nThis affects financial institutions and other companies that need to identify sanctioned individuals or entities and freeze their assets. The decision clarifies the evidentiary requirements for proving company control in the context of EU sanctions and emphasizes the need for a solid factual basis for such measures. National courts must review the legality of asset-freezing measures but are not required to assess the question of a threat to national security.\n\nThe reasons for freezing funds must be communicated to the affected parties as soon as possible to ensure their right to judicial review. Prior hearings or notifications are not required to avoid jeopardizing the effectiveness of the measure."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260116de.pdf",
+        "imp": "medium",
+        "refnum": "C-147/25"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
+          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
+          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
+        "imp": "low",
+        "refnum": "32026R0513R(01)"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
+          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
+          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
+        "imp": "low",
+        "refnum": "32026R0506R(03)",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
+          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
+          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
+        "imp": "high",
+        "refnum": "C-465/24"
+      },
+      {
+        "d": "26.02.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Schlussanträge des Generalanwalts zur Erfüllung von Ansprüchen russischer Organisationen (C-802/24)",
+          "en": "Advocate General's Opinion on the satisfaction of claims by Russian entities (C-802/24)"
+        },
+        "sl": "advocate-general-s-opinion-in-case-c-802-24-reibel",
+        "s": {
+          "de": "Der Generalanwalt des Europäischen Gerichtshofs (EuGH) hat in seinen Schlussanträgen dargelegt, dass das Verbot, Ansprüche russischer Organisationen aus Verträgen zu erfüllen, deren Erfüllung durch restriktive Maßnahmen beeinträchtigt ist, zur öffentlichen Ordnung der Union gehört. Dies bedeutet, dass nationale Gerichte prüfen müssen, ob Schiedssprüche diesem Verbot Rechnung tragen, und diese gegebenenfalls aufheben müssen.\n\nDies ist relevant für Unternehmen, die Verträge mit russischen Parteien haben, insbesondere wenn diese Verträge von EU-Sanktionen betroffen sind. Es unterstreicht die Notwendigkeit, die Einhaltung von EU-Sanktionen auch in Schiedsverfahren sicherzustellen. Schiedsgerichte dürfen zwar mit solchen Ansprüchen befasst werden, dürfen ihnen aber nicht stattgeben, wenn sie gegen die restriktiven Maßnahmen verstoßen. Nationale Gerichte müssen die Einhaltung dieser Vorschriften durch Schiedsgerichte kontrollieren.\n\nDie Schlussanträge sind für den Gerichtshof nicht bindend; das Urteil wird zu einem späteren Zeitpunkt verkündet. Nationale Gerichte, die mit ähnlichen Fragen befasst sind, müssen die endgültige Entscheidung des EuGH berücksichtigen.",
+          "en": "The Advocate General of the European Court of Justice (ECJ) has stated in his Opinion that the prohibition on satisfying claims of Russian entities arising from contracts whose performance is affected by restrictive measures forms part of the public policy of the Union. This implies that national courts must verify whether arbitration awards comply with this prohibition and, if necessary, set them aside.\n\nThis is relevant for companies with contracts involving Russian parties, especially if these contracts are impacted by EU sanctions. It underscores the necessity of ensuring compliance with EU sanctions even in arbitration proceedings. While arbitration courts may hear such claims, they must not uphold them if they violate restrictive measures. National courts are obliged to review arbitration courts' adherence to these rules.\n\nThe Advocate General's Opinion is not binding on the Court; the judgment will be delivered at a later date. National courts dealing with similar issues must take into account the final decision of the ECJ."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260023de.pdf",
+        "imp": "high",
+        "refnum": "C-802/24"
+      },
+      {
+        "d": "05.02.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
+          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
+        },
+        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
+        "s": {
+          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
+          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
+        "imp": "high"
+      }
+    ],
+    "dsgvo": [
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+          "en": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)"
+        },
+        "sl": "data-protection-commission-announces-final-decision-following-inquiry-into-the-h",
+        "s": {
+          "de": "Die irische Datenschutzkommission (DPC) hat eine endgültige Entscheidung nach einer Untersuchung des Health Service Executive (HSE) getroffen. Die Untersuchung begann im Mai 2024 aufgrund zweier Meldungen von Datenschutzverletzungen im Oktober und November 2023. Dabei hatten Unbefugte Zugang zu Papierakten in ehemaligen psychiatrischen Krankenhäusern erlangt.\n\nDie DPC stellte fest, dass es Mängel beim Schutz personenbezogener Daten in den externen Lagerstätten des HSE gab, insbesondere hinsichtlich der physischen Bedingungen der Dokumentenlager und der Integrität der dort aufbewahrten Dokumente. Die Entscheidung bezieht sich auf Verstöße gegen Artikel 5 (Grundsätze für die Verarbeitung personenbezogener Daten), Artikel 32 (Sicherheit der Verarbeitung), Artikel 33 (Meldung einer Verletzung des Schutzes personenbezogener Daten an die Aufsichtsbehörde) und Artikel 34 (Benachrichtigung der betroffenen Person von einer Verletzung des Schutzes personenbezogener Daten) der DSGVO.\n\nDie DPC verhängte Geldbußen in Höhe von insgesamt 645.000 €, sprach eine Rüge aus und erließ mehrere Anordnungen zur Einhaltung der Vorschriften.",
+          "en": "The Irish Data Protection Commission (DPC) has issued a final decision following an inquiry into the Health Service Executive (HSE). The inquiry commenced in May 2024 due to two personal data breaches notified in October and November 2023, where unauthorized individuals gained access to paper records stored in former psychiatric hospitals.\n\nThe DPC found data protection failings concerning the physical conditions of HSE document storage facilities and the integrity of the documents held within them. The decision references violations of Article 5 (Principles relating to processing of personal data), Article 32 (Security of processing), Article 33 (Notification of a personal data breach to the supervisory authority), and Article 34 (Communication of a personal data breach to the data subject) of the GDPR.\n\nThe DPC imposed fines totaling €645,000, issued a reprimand, and made several compliance orders."
+        },
+        "url": "https://www.edpb.europa.eu/news/data-protection-commission-announces-final-decision-following-inquiry-into-the-health-service_en",
+        "imp": "medium"
+      },
+      {
+        "d": "13.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "Cookie-Banner wirksam reduzieren, Überregulierung vermeiden: BfDI plädiert für europäische Lösung im Digitalen Omnibus",
+          "en": "Cookie-Banner wirksam reduzieren, Überregulierung vermeiden: BfDI plädiert für europäische Lösung im Digitalen Omnibus"
+        },
+        "sl": "cookie-banner-wirksam-reduzieren-ueberregulierung-vermeiden-bfdi-plaediert-fuer",
+        "s": {
+          "de": "Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) hat Empfehlungen zum Umgang mit Cookie-Bannern vorgelegt. Sie schlägt vor, das Verfahren zum EU Digital Omnibus zu nutzen, um verbindliche, maschinenlesbare Datenschutzpräferenzen und Einwilligungsverwaltungsdienste europarechtlich zu verankern.\n\nDie Empfehlungen basieren auf einer Umfrage, die zeigt, dass viele Internetnutzer den Zweck von Cookies nicht verstehen und diese pauschal ablehnen. Cookie-Manager, die eine zentrale Festlegung von Datenschutzpräferenzen ermöglichen, werden von der Mehrheit der Befragten positiv bewertet. Deutschland hat bereits eine Einwilligungsverwaltungsverordnung und einen ersten Dienst anerkannt, der staatlich geprüft ist.\n\nDie BfDI plädiert dafür, die im ursprünglichen Kommissionsvorschlag für den Digital Omnibus enthaltene Regelung für automatisierte Einwilligungs- und Widerspruchssignale wieder aufzugreifen. Eine europäische Lösung soll rechtliche Unklarheiten beseitigen, Überregulierung vermeiden und sicherstellen, dass Cookie-Manager auch DSGVO-Einwilligungen für nachgelagerte Datenverarbeitungen abbilden können.",
+          "en": "The Federal Commissioner for Data Protection and Freedom of Information (BfDI) has presented recommendations on handling cookie banners. It suggests using the EU Digital Omnibus process to legally establish binding, machine-readable data protection preferences and consent management services at a European level.\n\nThe recommendations are based on a survey showing that many internet users do not understand the purpose of cookies and generally reject them. Cookie managers, which allow central setting of data protection preferences, are viewed positively by the majority of respondents. Germany already has a consent management regulation and has recognized a first state-audited service.\n\nThe BfDI advocates for reintroducing the regulation for automated consent and objection signals, which was included in the original Commission proposal for the Digital Omnibus. A European solution should clarify legal ambiguities, avoid overregulation, and ensure that cookie managers can also map GDPR consents for subsequent data processing."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/12_Cookie-Banner.html",
+        "imp": "medium"
+      },
+      {
+        "d": "14.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
+          "en": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint"
+        },
+        "sl": "edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat eine verbindliche Entscheidung gemäß Art. 65 Abs. 1 lit. a DSGVO veröffentlicht. Diese betrifft einen Streitfall, der von der belgischen Datenschutzbehörde (DPA) bezüglich einer Beschwerde gegen die Vlaamse Radio- en Televisieomroeporganisatie (VRT) eingereicht wurde.\n\nDie Beschwerde, eingereicht von der NGO Noyb, betrifft die Verwendung von Cookie-Bannern auf der VRT-Website. Die belgische DPA wollte die Beschwerde wegen angeblichen Missbrauchs von Art. 77 und Art. 80 Abs. 1 DSGVO abweisen, was die österreichische DPA beanstandete. Der EDPB entschied, dass kein Missbrauch der Rechte des Beschwerdeführers vorliegt, da die objektiven und subjektiven Komponenten für einen solchen Nachweis nicht erbracht wurden. Die belgische DPA muss die Beschwerde nun inhaltlich prüfen und einen neuen Entscheidungsentwurf vorlegen.\n\nDiese Entscheidung ist für alle Unternehmen relevant, die Cookie-Banner auf ihren Websites verwenden und grenzüberschreitende Datenverarbeitung betreiben. Sie verdeutlicht, dass Beschwerden nicht leichtfertig aus verfahrenstechnischen Gründen abgewiesen werden dürfen, insbesondere wenn kein klarer Missbrauch der Rechte des Beschwerdeführers nachgewiesen werden kann. Dies stärkt die Rechte von Einzelpersonen und NGOs bei der Durchsetzung von Datenschutzansprüchen.",
+          "en": "The European Data Protection Board (EDPB) has published a binding decision under Art. 65(1)(a) GDPR. This decision concerns a dispute submitted by the Belgian Data Protection Authority (DPA) regarding a complaint against Vlaamse Radio- en Televisieomroeporganisatie (VRT).\n\nThe complaint, lodged by the NGO Noyb, relates to the use of cookie banners on the VRT website. The Belgian DPA proposed to dismiss the complaint based on an alleged abuse of Art. 77 and Art. 80(1) GDPR, which the Austrian DPA objected to. The EDPB found that the complainant did not abuse their rights, as the objective and subjective components needed to prove such abuse were not demonstrated. Consequently, the Belgian DPA is instructed to assess the complaint on its merits and submit a new draft decision.\n\nThis decision is relevant for all companies using cookie banners on their websites and engaging in cross-border data processing. It clarifies that complaints should not be dismissed lightly on procedural grounds, especially when no clear abuse of the complainant's rights can be proven. This strengthens the rights of individuals and NGOs in enforcing data protection claims."
+        },
+        "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
+        "imp": "medium"
+      },
+      {
+        "d": "09.07.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zur DSGVO: Online-Veröffentlichung von Strafurteilen nicht automatisch journalistisch (C-199/24)",
+          "en": "ECJ Judgment on GDPR: Online Publication of Criminal Convictions Not Automatically Journalistic (C-199/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-199-24-legal-newsdesk-sweden",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die bloße Online-Veröffentlichung von strafrechtlichen Verurteilungen gegen Entgelt grundsätzlich keine Verarbeitung personenbezogener Daten zu journalistischen Zwecken im Sinne der Datenschutz-Grundverordnung (DSGVO) darstellt. Dies bedeutet, dass solche Veröffentlichungen nicht von den Garantien und Rechtsbehelfen der DSGVO ausgenommen sind.\n\nDie Entscheidung betrifft Unternehmen, die Datenbanken mit strafrechtlichen Verurteilungen betreiben und diese entgeltlich zugänglich machen. Der EuGH stellt klar, dass Mitgliedstaaten die Anwendung der DSGVO nicht für Datenverarbeitungen ausschließen dürfen, die nicht journalistischen, wissenschaftlichen, künstlerischen oder literarischen Zwecken dienen. Betroffene Personen müssen die durch die DSGVO garantierten Rechtsbehelfe nutzen können und dürfen nicht auf Klagen wegen Verleumdung oder zivilrechtliche Klagen beschränkt werden.\n\nDas Urteil erging im Rahmen eines Vorabentscheidungsersuchens eines schwedischen Gerichts. Die Entscheidung des EuGH ist für das nationale Gericht bindend und hat Auswirkungen auf vergleichbare Fälle in anderen Mitgliedstaaten.",
+          "en": "The European Court of Justice (ECJ) has ruled that the mere online publication of criminal convictions for a fee does not, in principle, constitute processing of personal data for journalistic purposes within the meaning of the General Data Protection Regulation (GDPR). This implies that such publications are not exempt from the guarantees and remedies provided by the GDPR.\n\nThis decision affects companies that operate databases containing criminal convictions and make them accessible for a fee. The ECJ clarifies that Member States may not exclude the application of the GDPR for data processing that does not serve journalistic, scientific, artistic, or literary purposes. Data subjects must be able to exercise the remedies guaranteed by the GDPR and should not be limited to defamation or civil lawsuits.\n\nThe judgment was delivered in response to a preliminary ruling request from a Swedish court. The ECJ's decision is binding on the national court and will impact similar cases in other Member States."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260100de.pdf",
+        "imp": "medium",
+        "refnum": "C-199/24"
+      },
+      {
+        "d": "25.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "One-Stop-Shop case digest on right to object and right to erasure updated",
+          "en": "One-Stop-Shop case digest on right to object and right to erasure updated"
+        },
+        "sl": "one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat eine aktualisierte Fassung des „One-Stop-Shop (OSS) case digest on right to object and right to erasure“ veröffentlicht. Dieses Dokument bietet Einblicke, wie Datenschutzbehörden (DPAs) die internen Prozesse von Organisationen zur Einhaltung des Widerspruchsrechts und des Rechts auf Löschung analysieren.\n\nEs listet die häufigsten Verstöße auf und gibt einen Überblick über die ergriffenen Korrekturmaßnahmen. Die Fallbeispiele umfassen unter anderem die Ausübung des Widerspruchsrechts gegen Direktmarketing oder den Wunsch von Personen, ihre Konten oder Online-Datenprofile zu löschen. Die Aktualisierung berücksichtigt Hunderte neuer OSS-Entscheidungen der DPAs zu diesen Rechten.\n\nDas Projekt wurde im Rahmen des „Support Pool of Experts“-Programms entwickelt, das die Zusammenarbeit zwischen den Datenschutzbehörden fördern soll. Thematische OSS-Falldarstellungen basieren auf Entscheidungen aus dem öffentlichen Register des EDPB (gemäß Art. 60 DSGVO) und ergänzen dieses durch die Auswahl und Präsentation der wichtigsten Entscheidungen zu einem bestimmten Thema.",
+          "en": "The European Data Protection Board (EDPB) has published an updated version of the One-Stop-Shop (OSS) case digest on the right to object and the right to erasure. This document provides insights into how Data Protection Authorities (DPAs) analyze organizations' internal processes for complying with the right to object and the right to erasure.\n\nIt lists the most frequent infringements and provides an overview of the corrective measures issued. Case examples include the exercise of the right to object to direct marketing or individuals' desire to erase their accounts or online data profiles. The update incorporates hundreds of new OSS decisions by DPAs concerning these rights.\n\nThe project was developed within the framework of the Support Pool of Experts program, which aims to foster cooperation among Data Protection Authorities. Thematic OSS case digests are based on decisions from the EDPB's public register (pursuant to Art. 60 GDPR) and complement it by selecting and presenting the most important decisions on a given theme."
+        },
+        "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en",
+        "imp": "low"
+      },
+      {
+        "d": "24.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "Supporting GDPR consistency: EDPB launches dedicated form",
+          "en": "Supporting GDPR consistency: EDPB launches dedicated form"
+        },
+        "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen mögliche Inkonsistenzen bei der Auslegung der Datenschutz-Grundverordnung (DSGVO) in Europa melden können. Dies dient der Stärkung des Dialogs mit Interessengruppen und der Sicherstellung einer konsistenten Durchsetzung der DSGVO.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Der EDPB wird nicht auf einzelne Einreichungen antworten, sondern die gesammelten Informationen regelmäßig auf hoher Ebene diskutieren, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nDie Initiative basiert auf den Verpflichtungen der EDPB Helsinki-Erklärung zur Verbesserung von Klarheit, Unterstützung und Engagement.",
+          "en": "The European Data Protection Board (EDPB) has launched a dedicated contact form for stakeholders to report possible inconsistencies in the interpretation of the General Data Protection Regulation (GDPR) across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of alleged divergences between national positions, as well as between national positions and those of the EDPB. The EDPB will not respond to individual submissions, but the collected information will be regularly discussed at a high level by Board members to consider steps to improve consistency.\n\nThis initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support, and engagement."
+        },
+        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
+        "imp": "low"
+      }
+    ],
     "absfinag": [
       {
         "d": "31.08.2026",
@@ -352,101 +598,102 @@
         "refnum": "2026_7910"
       },
       {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form",
-          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form"
-        },
-        "sl": "consultation-paper-on-the-reporting-framework-under-emir-for-clearing-activity-a",
-        "s": {
-          "de": "Die ESMA hat ein Konsultationspapier zum Meldewesen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs veröffentlicht. Das Dokument ist ein Antwortformular zu diesem Konsultationspapier.\n\nDie Konsultation betrifft Finanzinstitute, die Clearing-Aktivitäten bei zentralen Gegenparteien (CCPs) in Drittländern durchführen, die von der EU anerkannt sind. Ziel ist die Vereinfachung und Reduzierung des Verwaltungsaufwands im Meldewesen.\n\nDie Konsultationsfrist endet am 18.08.2026.",
-          "en": "ESMA has published a consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs. This document is a reply form for that consultation paper.\n\nThe consultation concerns financial institutions engaged in clearing activities with central counterparties (CCPs) in third countries recognised by the EU. The aim is to simplify and reduce the reporting burden.\n\nThe consultation period ends on 18.08.2026."
-        },
-        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third-0",
-        "imp": "medium",
-        "refnum": "ESMA12-2121844265-6120"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs",
-          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "consultation-paper-on-the-reporting-framework-under-emir-for-clearing-activity-a",
-        "s": {
-          "de": "Die ESMA hat ein Konsultationspapier zum Meldewesen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-Zentralen Gegenparteien (TC-CCPs) veröffentlicht. Dieses Papier schlägt Entwürfe für Regulierungs- und technische Durchführungsstandards (RTS und ITS) vor, die den Inhalt und das Format einer jährlichen Meldepflicht für Clearing-Mitglieder und deren Kunden festlegen.\n\nDie Meldepflicht betrifft Clearing-Mitglieder und Kunden, die Dienstleistungen von anerkannten TC-CCPs nutzen. Ziel ist es, Informationen über die Clearing-Aktivitäten zu sammeln, wobei der Fokus auf der Wiederverwendung bereits verfügbarer Daten liegt, um den administrativen Aufwand zu minimieren. Die Meldung soll Angaben zu den Arten der geclearten Finanz- und Nicht-Finanzinstrumente, den durchschnittlichen geclearten Werten pro EU-Währung und Anlageklasse sowie den Margen umfassen.\n\nInteressierte Parteien, insbesondere Clearing-Mitglieder, Gegenparteien, die TC-CCPs nutzen, und die TC-CCPs selbst, sind zur Stellungnahme eingeladen. Die Konsultationsfrist endet am 12. Oktober 2026. Die ESMA plant, einen Abschlussbericht im vierten Quartal 2026 zu veröffentlichen.",
-          "en": "ESMA has published a consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country Central Counterparties (TC-CCPs). This paper proposes draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) specifying the content and format of an annual reporting obligation for clearing members and their clients.\n\nThe reporting obligation applies to clearing members and clients accessing services of recognised TC-CCPs. The aim is to collect information on clearing activities, with a focus on reusing already available data to minimise administrative burden. The report should include details on the types of financial and non-financial instruments cleared, average cleared values per EU currency and asset class, and margins.\n\nInterested parties, particularly clearing members, counterparties using TC-CCPs, and the TC-CCPs themselves, are invited to comment. The consultation period closes on 12 October 2026. ESMA plans to publish a final report in Q4 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third",
-        "imp": "medium",
-        "refnum": "ESMA12-2121844265-6008"
-      },
-      {
-        "d": "14.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA confirms go-live for weekly commodity derivatives position reporting",
-          "en": "ESMA confirms go-live for weekly commodity derivatives position reporting"
-        },
-        "sl": "esma-confirms-go-live-for-weekly-commodity-derivatives-position-reporting",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat den Starttermin für das neue wöchentliche Positionsmeldewesen für Warenderivate auf den 3. September 2026 festgelegt. Ab diesem Datum müssen Marktteilnehmer wöchentliche Positionsmeldungen gemäß den aktualisierten Anforderungen, technischen Spezifikationen und Validierungsregeln einreichen, die durch die XML-Schema-Version v2.0 eingeführt wurden.\n\nDie aktualisierte technische Dokumentation, einschließlich der Meldeanweisungen und des XML-Schemas, steht nun zur Verfügung, um Marktteilnehmer bei der Implementierung zu unterstützen. Die Verschiebung des ursprünglichen Rollouts ermöglichte zusätzliche Zeit für technische und operative Vorbereitungen, um einen reibungslosen Übergang zu gewährleisten.\n\nEs gibt keine Konsultationsfristen oder weitere Verfahrensschritte, die in der Meldung genannt werden. Der Anwendungsbeginn ist der 3. September 2026.",
-          "en": "The European Securities and Markets Authority (ESMA) has confirmed that the new weekly commodity derivatives position reporting framework will go live on 3 September 2026. From this date, market participants will be required to submit weekly position reports in accordance with the updated requirements, technical specifications, and validation rules introduced by XML schema version v2.0.\n\nThe updated technical documentation, including reporting instructions and the XML schema, is now available to support market participants in their implementation activities. The postponement of the original rollout allowed for additional time for technical and operational preparations to ensure a smooth transition.\n\nThere are no consultation deadlines or further procedural steps mentioned in the announcement. The effective date is 3 September 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-confirms-go-live-weekly-commodity-derivatives-position-reporting",
-        "imp": "high"
-      },
-      {
         "d": "05.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "FINREP-Validierung: Datenpunktkategorisierung in Template F 13.2.1.c (EBA Q&A 2026_7904)",
+          "en": "FINREP Validation: Data Point Categorization in Template F 13.2.1.c (EBA Q&A 2026_7904)"
+        },
+        "sl": "template-f-13-2-1-c-variableid-433471-and-433464",
+        "s": {
+          "de": "Die EBA hat eine Frage zur FINREP-Validierung im Rahmen des Reporting Framework 4.2. abgelehnt. Es ging um die Datenpunktkategorisierung in Template F 13.2.1.c, insbesondere die Variablen-IDs 433471 und 433464. Die Einreicher fragten, ob die Validierung korrekt definiert sei und baten um Klärung der aufsichtsrechtlichen Begründung, da nicht alle Zugänge von zwangsverwerteten Vermögenswerten als zur Veräußerung gehaltene langfristige Vermögenswerte qualifiziert werden.\n\nDie Einreicher befürchteten, dass die Validierung eine Konsistenz zwischen F 13.2.1.c und F 13.2.1.a erfordert, obwohl in bestimmten Fällen, wie bei bereits bestehenden Leasingverträgen zum Zeitpunkt der Zwangsverwertung, eine Abstimmung mit F 13.2.1.b (Variablen-IDs 433631 und 433625) angemessener wäre. Die EBA lehnte die Frage ab, da das Problem bereits bekannt ist und für eine zukünftige Version des Reporting Frameworks (4.4.2) berücksichtigt wird.\n\nDie Ablehnung der Frage bedeutet, dass die EBA das Problem anerkennt und eine Lösung in einer kommenden Version des Reporting Frameworks plant. Finanzinstitute, die von dieser spezifischen FINREP-Validierung betroffen sind, sollten die Veröffentlichung von Version 4.4.2 beobachten, um die erwarteten Anpassungen zu implementieren.",
+          "en": "The EBA rejected a question regarding FINREP validation under Reporting Framework 4.2. The query concerned the data point categorization in Template F 13.2.1.c, specifically Variable IDs 433471 and 433464. The submitters asked for confirmation on the correct definition of the validation and clarification on its prudential reporting rationale, as not all additions of foreclosed assets necessarily qualify as non-current assets held for sale.\n\nThe submitters were concerned that the validation appeared to require consistency between F 13.2.1.c and F 13.2.1.a, whereas in certain situations, such as when a lease agreement is already in place at the time of foreclosure, reconciliation with F 13.2.1.b (Variable IDs 433631 and 433625) would be more appropriate. The EBA rejected the question because the matter has already been identified and will be considered for a future version of the Reporting Framework (4.4.2).\n\nThe rejection of the question indicates that the EBA acknowledges the issue and plans to address it in an upcoming version of the Reporting Framework. Financial institutions affected by this specific FINREP validation should monitor the release of version 4.4.2 for the expected adjustments."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7904",
+        "imp": "low",
+        "refnum": "2026_7904"
+      },
+      {
+        "d": "31.07.2026",
         "t": {
           "de": "Konsultation",
           "en": "Consultation"
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "EBA-Konsultation zum Berichtsrahmen für Validierung und Überwachung des ISDA SIMM (Initial Margin Model)",
-          "en": "EBA Consultation on Reporting Framework for Validation and Monitoring of ISDA SIMM (Initial Margin Model)"
+          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
+          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
         },
-        "sl": "the-eba-consults-on-reporting-framework-for-validation-and-monitoring-of-isda-st",
+        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
         "s": {
-          "de": "Die EBA konsultiert einen neuen Berichtsrahmen zur Validierung und Überwachung von Initial Margin Modellen, die auf dem „Standard Initial Margin Model“ (SIMM) der ISDA basieren. Dieser Rahmen soll die EBA bei ihrer Rolle als zentrale Validierungsstelle für Pro-forma-Modelle gemäß EMIR unterstützen.\n\nDie vorgeschlagenen Berichtsanforderungen sollen der EBA die notwendigen Informationen für die effektive Wahrnehmung ihrer Validierungsfunktion liefern und gleichzeitig einen proportionalen Ansatz für die berichtspflichtigen Unternehmen gewährleisten. Unternehmen mit weniger signifikanten OTC-Handelsaktivitäten unterliegen deutlich leichteren Berichtspflichten, die nur einmal jährlich erfolgen.\n\nDie Konsultation läuft bis zum 2. November 2026. Die EBA beabsichtigt, bis Ende 2026 eine Entscheidung zur Datenerhebung zu verabschieden. Der erste Berichtsreferenzstichtag wird voraussichtlich Dezember 2027 sein, mit Datenerhebung im ersten Quartal 2028. Die neuen Berichtsanforderungen werden in Version 4.4, Phase 2 des EBA Technical Package integriert, dessen finale Version im März 2027 erwartet wird.",
-          "en": "The EBA is consulting on a new reporting framework to support the validation and ongoing monitoring of initial margin models based on the ISDA Standard Initial Margin Model (SIMM). This framework aims to assist the EBA in its role as the central validator of pro forma models under EMIR.\n\nThe proposed reporting requirements are intended to provide the EBA with the necessary information to effectively perform its validation function, while ensuring a proportionate approach for reporting entities. Firms with less significant OTC trading activities will be subject to substantially lighter reporting requirements, only needing to report once a year.\n\nThe consultation runs until 2 November 2026. The EBA intends to adopt a decision by the end of 2026 establishing the collection of relevant information. The first reporting reference date is expected to be December 2027, with data collection in the first quarter of 2028. The new reporting requirements will be incorporated into version 4.4, Phase 2 of the EBA Technical Package, with the final version expected in March 2027."
+          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
+          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
         },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-reporting-framework-validation-and-monitoring-isda-standard-initial-margin-model",
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
         "imp": "medium"
+      },
+      {
+        "d": "24.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
+          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
+        },
+        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
+        "s": {
+          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
+          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+        "imp": "medium"
+      },
+      {
+        "d": "03.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
+          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
+        },
+        "sl": "sectoral-classification-of-uk-credit-institutions",
+        "s": {
+          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
+          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
+        "imp": "low",
+        "refnum": "2026_7843"
+      },
+      {
+        "d": "13.05.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Validierungsregel v90317_m (C 16.02) ab",
+          "en": "EBA rejects question on validation rule v90317_m (C 16.02)"
+        },
+        "sl": "incoherent-formulae-of-the-validation-rule-v90317-m",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Validierungsregel v90317_m für die Spalte 0070 / Zeile 0340 der Meldung C 16.02 abgelehnt. Die Anfrage betraf die Klarstellung der Logik dieser Kontrollformel, da sie nicht mit der Definition des Indikators übereinstimme.\n\nDie betroffene Spalte 0070 / Zeile 0340 des Templates C_16.02 ist in Artikel 314 der Verordnung (EU) 2024/1623 definiert und betrifft die Berechnung der Gebühren- und Provisionsaufwandskomponente (FE). Diese Berechnung stellt einen jährlichen Durchschnitt der in den letzten drei Geschäftsjahren gezahlten Gebühren für Beratung und Dienstleistungen dar, einschließlich Auslagerungsgebühren für Finanzdienstleistungen, jedoch ohne Auslagerungsgebühren für nicht-finanzielle Dienstleistungen. Die EBA lehnte die Frage ab, da das Problem bereits bekannt ist und bei einem bevorstehenden vierteljährlichen Update der Validierungsregeln berücksichtigt wird.\n\nDie Ablehnung der Frage deutet darauf hin, dass Institute, die diese Validierungsregel anwenden, in naher Zukunft mit einer Anpassung rechnen können. Es ist ratsam, die kommenden Updates der Validierungsregeln zu beobachten, um die korrekte Berechnung und Meldung sicherzustellen.",
+          "en": "The EBA has rejected a question regarding validation rule v90317_m for column 0070 / row 0340 of report C 16.02. The inquiry concerned a clarification of the logic of this control formula, as it was deemed inconsistent with the indicator's definition.\n\nThe affected column 0070 / row 0340 of template C_16.02 is defined in Article 314 of Regulation (EU) 2024/1623 and relates to the calculation of the fee and commission expense component (FE). This calculation represents an annual average of fees paid for advice and services over the last three financial years, including outsourcing fees for financial services, but excluding outsourcing fees for non-financial services. The EBA rejected the question because the issue has already been identified and will be addressed in an upcoming quarterly update of the validation rules.\n\nThe rejection of the question indicates that institutions applying this validation rule can expect an adjustment in the near future. It is advisable to monitor upcoming updates to the validation rules to ensure correct calculation and reporting."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7862",
+        "imp": "low",
+        "refnum": "2026_7862"
       }
     ],
     "taxonomy": [
@@ -487,7 +734,15 @@
           "en": "EIOPA is holding a public hearing on the review of insurance disclosures under Article 8 of the Taxonomy Regulation. The aim is to prepare stakeholders for the consultation process and to better explain EIOPA's proposals.\n\nThe European Commission has requested technical advice from the ESAs (EBA, EIOPA, ESMA) on targeted amendments to the EU Taxonomy disclosure framework. For EIOPA, the focus is on reviewing the existing Taxonomy underwriting KPI for insurance and reinsurance undertakings and improving the consistency of disclosures with other financial sectors through a new KPI measuring the Taxonomy alignment of insured activities. Additionally, simplifications and technical improvements to enhance the usability of Taxonomy reporting are to be identified, while preserving transparency and preventing greenwashing.\n\nEIOPA intends to publish a Consultation Paper in the first week of July, addressing the Commission's requests regarding (re)insurance undertakings' Taxonomy-related disclosures on underwriting, as well as, in coordination with ESMA and EBA, improvements to disclosures for financial conglomerates and other groups. The public hearing will take place on 16 July 2026."
         },
         "url": "https://www.eiopa.europa.eu/media/events/public-hearing-review-insurance-disclosures-under-article-8-taxonomy-regulation-2026-07-16_en",
-        "imp": "medium"
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          }
+        ]
       },
       {
         "d": "06.07.2026",
@@ -506,7 +761,15 @@
           "en": "The CSSF draws attention to a public consultation by ESMA concerning the simplification of the EU Taxonomy disclosure framework. The aim is to reduce the reporting burden for market participants by reviewing selected KPIs of the Taxonomy Disclosures Delegated Act.\n\nThe consultation was launched by ESMA on 1 July 2026 and is part of a broader review of the Taxonomy disclosure framework requested by the European Commission. The EBA and EIOPA are also conducting similar consultations to address specific and horizontal issues. The CSSF strongly encourages market participants to contribute.\n\nThe consultation is open until 12 August 2026. A public hearing will be held on 22 July to present the proposals and engage with stakeholders."
         },
         "url": "https://www.cssf.lu/en/Document/public-consultation-by-esma-until-12-august-2026-on-simplifying-eu-taxonomy-disclosure-framework/",
-        "imp": "medium"
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: Konsultationen zur Vereinfachung der EU-Taxonomie",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255637/konsultationen-zur-vereinfachung-der-eu-taxonomie/",
+            "d": "02.07.2026"
+          }
+        ]
       },
       {
         "d": "01.07.2026",
@@ -525,7 +788,15 @@
           "en": "EIOPA is consulting on proposed enhancements to insurance corporate disclosures under the EU Taxonomy framework. The aim is to increase transparency, simplify reporting, and better align requirements with other sustainable finance frameworks and those applicable to other financial institutions.\n\nKey amendments include revising the 'underwriting KPI' for (re)insurers by narrowing the denominator to Taxonomy-eligible lines of business and renaming it to 'Adaptation Underwriting KPI'. Furthermore, the introduction of a new 'Green Insured Activities KPI' is proposed to measure the ratio of Taxonomy-aligned insured activities. This KPI would cover all policies sold to companies reporting under the Taxonomy Regulation, as well as retail insurance policies for housing and transport.\n\nThe consultation period ends on 12 August 2026, with a public hearing scheduled for 16 July. These proposals are in response to a European Commission request to the ESAs for technical advice on simplifying and improving the Disclosures Delegated Act under the Taxonomy Regulation."
         },
         "url": "https://www.eiopa.europa.eu/eiopa-consults-enhancements-insurance-corporate-disclosures-under-eu-taxonomy-environmentally-2026-07-01_en",
-        "imp": "medium"
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          }
+        ]
       },
       {
         "d": "24.06.2026",
@@ -967,15 +1238,7 @@
           "en": "The European Commission has published draft revisions to the technical screening criteria of the EU Taxonomy. The aim is to simplify the framework, make it easier to use, and align the criteria with updated EU legislation and technological advancements.\n\nThe changes cover most activities under the Climate and Environmental Delegated Acts, including forestry, environmental protection, manufacturing, energy, transport, and construction. The generic 'do no significant harm' appendices are also affected. This is intended to boost taxonomy adoption, improve access to green finance, and enhance market transparency through clearer disclosures.\n\nStakeholders can provide feedback on the drafts until April 14. The Commission plans to adopt the revised criteria by the summer."
         },
         "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revision-criteria-sustainable-economic-activities-2026-03-17_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission veröffentlicht Entwürfe zu Anpassungen an den technischen Bewertungskriterien für die EU-Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwuerfe-zu-anpassungen-an-den-technischen-bewertungskriterien-fuer-die-eu-taxonomie-verordnung/",
-            "d": "23.03.2026"
-          }
-        ]
+        "imp": "medium"
       },
       {
         "d": "21.04.2021",
@@ -1158,23 +1421,23 @@
         "refnum": "C-41/25"
       },
       {
-        "d": "03.04.2026",
+        "d": "03.06.2026",
         "t": {
-          "de": "Gesetz",
-          "en": "Law"
+          "de": "Meldung",
+          "en": "News"
         },
-        "src": "cssf.lu",
+        "src": "eiopa.europa.eu",
         "ti": {
-          "de": "Gesetz über Einrichtungen der betrieblichen Altersversorgung (SEPCAVs und ASSEPs) (konsolidierte Fassung) (Law of 13 July 2005)",
-          "en": "Law on Institutions for Occupational Retirement Provision (SEPCAVs and ASSEPs) (consolidated version) (Law of 13 July 2005)"
+          "de": "Veröffentlichung des zweiten Arbeitsentwurfs der Solvency II 2.10.0 DPM und Taxonomie (Public Working Draft 2)",
+          "en": "Publication of the Second Public Working Draft of Solvency II 2.10.0 DPM and Taxonomy (Public Working Draft 2)"
         },
-        "sl": "law-of-13-july-2005-consolidated-version-updated",
+        "sl": "public-working-draft-2-pwd2-of-the-solvency-ii-2-10-0-dpm-and-taxonomy-and-the-i",
         "s": {
-          "de": "Dieses Gesetz regelt die Rahmenbedingungen für Einrichtungen der betrieblichen Altersversorgung in Luxemburg, die als SEPCAVs (Société d'Epargne-Pension à Capital Variable) und ASSEPs (Association d'Epargne-Pension) organisiert sind. Es legt die rechtlichen Strukturen, Governance-Anforderungen und operativen Rahmenbedingungen für diese spezifischen Formen der betrieblichen Altersversorgung fest.\n\nDie Regelungen sind relevant für Unternehmen und Organisationen, die betriebliche Altersversorgungssysteme in Luxemburg über SEPCAVs und ASSEPs anbieten oder nutzen. Sie müssen sicherstellen, dass ihre Strukturen und Prozesse den gesetzlichen Anforderungen entsprechen, um die Einhaltung der Vorschriften zu gewährleisten.\n\nDie konsolidierte Fassung des Gesetzes vom 13. Juli 2005 wurde aktualisiert und ist mit Stand vom 3. April 2026 gültig.",
-          "en": "This law regulates the framework conditions for institutions for occupational retirement provision in Luxembourg, organized as SEPCAVs (Société d'Epargne-Pension à Capital Variable) and ASSEPs (Association d'Epargne-Pension). It establishes the legal structures, governance requirements, and operational frameworks for these specific forms of occupational retirement provision.\n\nThe regulations are relevant for companies and organizations that offer or use occupational retirement provision schemes in Luxembourg via SEPCAVs and ASSEPs. They must ensure that their structures and processes comply with the legal requirements to ensure regulatory compliance.\n\nThe consolidated version of the Law of 13 July 2005 has been updated and is valid as of April 3, 2026."
+          "de": "Die EIOPA plant die Veröffentlichung des zweiten öffentlichen Arbeitsentwurfs (PWD2) der Solvency II 2.10.0 DPM und Taxonomie, inklusive Validierungen, am 18. Mai 2026 zur Überprüfung durch Stakeholder. Im Rahmen einer öffentlichen Veranstaltung und Q&A-Sitzung wurden die Änderungen gegenüber dem ersten Entwurf vorgestellt.\n\nDie Aktualisierung ist relevant für Versicherungsunternehmen, die der Solvency II-Regulierung unterliegen. Sie müssen die neuen DPM- und Taxonomie-Versionen für ihr Meldewesen berücksichtigen. Die Veranstaltung diente dazu, Stakeholder über die Änderungen zu informieren und Fragen zu beantworten.\n\nKommentare zum PWD2 der Veröffentlichungen können nach deren Publikation über die üblichen Kontaktstellen eingereicht werden. Zudem informierte die EIOPA über die bevorstehende Veröffentlichung der IRRD-Taxonomie.",
+          "en": "EIOPA plans to publish the 2nd Public Working Draft (PWD2) of the Solvency II 2.10.0 DPM and taxonomy, including validations, on May 18, 2026, for stakeholder review. A public event and Q&A session presented the changes compared to the first draft.\n\nThis update is relevant for insurance undertakings subject to Solvency II regulation. They must consider the new DPM and taxonomy versions for their supervisory reporting. The event aimed to inform stakeholders about the changes and address their questions.\n\nComments on the PWD2 of the releases can be submitted after their publication via the usual contact points. EIOPA also informed stakeholders about the upcoming IRRD taxonomy release."
         },
-        "url": "https://www.cssf.lu/en/Document/law-of-13-july-2005/",
-        "imp": "low"
+        "url": "https://www.eiopa.europa.eu/media/events/public-working-draft-2-pwd2-solvency-ii-2100-dpm-and-taxonomy-and-irrd-dpm-and-taxonomy-2026-06-03_en",
+        "imp": "high"
       }
     ],
     "gwg": [
@@ -1301,249 +1564,123 @@
         "imp": "high"
       }
     ],
-    "dsgvo": [
+    "emir": [
       {
-        "d": "13.08.2026",
+        "d": "18.08.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Konsultation",
+          "en": "Consultation"
         },
-        "src": "bfdi.bund.de",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "Cookie-Banner wirksam reduzieren, Überregulierung vermeiden: BfDI plädiert für europäische Lösung im Digitalen Omnibus",
-          "en": "Cookie-Banner wirksam reduzieren, Überregulierung vermeiden: BfDI plädiert für europäische Lösung im Digitalen Omnibus"
+          "de": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
         },
-        "sl": "cookie-banner-wirksam-reduzieren-ueberregulierung-vermeiden-bfdi-plaediert-fuer",
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
         "s": {
-          "de": "Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) hat Empfehlungen zum Umgang mit Cookie-Bannern vorgelegt. Sie schlägt vor, das Verfahren zum EU Digital Omnibus zu nutzen, um verbindliche, maschinenlesbare Datenschutzpräferenzen und Einwilligungsverwaltungsdienste europarechtlich zu verankern.\n\nDie Empfehlungen basieren auf einer Umfrage, die zeigt, dass viele Internetnutzer den Zweck von Cookies nicht verstehen und diese pauschal ablehnen. Cookie-Manager, die eine zentrale Festlegung von Datenschutzpräferenzen ermöglichen, werden von der Mehrheit der Befragten positiv bewertet. Deutschland hat bereits eine Einwilligungsverwaltungsverordnung und einen ersten Dienst anerkannt, der staatlich geprüft ist.\n\nDie BfDI plädiert dafür, die im ursprünglichen Kommissionsvorschlag für den Digital Omnibus enthaltene Regelung für automatisierte Einwilligungs- und Widerspruchssignale wieder aufzugreifen. Eine europäische Lösung soll rechtliche Unklarheiten beseitigen, Überregulierung vermeiden und sicherstellen, dass Cookie-Manager auch DSGVO-Einwilligungen für nachgelagerte Datenverarbeitungen abbilden können.",
-          "en": "The Federal Commissioner for Data Protection and Freedom of Information (BfDI) has presented recommendations on handling cookie banners. It suggests using the EU Digital Omnibus process to legally establish binding, machine-readable data protection preferences and consent management services at a European level.\n\nThe recommendations are based on a survey showing that many internet users do not understand the purpose of cookies and generally reject them. Cookie managers, which allow central setting of data protection preferences, are viewed positively by the majority of respondents. Germany already has a consent management regulation and has recognized a first state-audited service.\n\nThe BfDI advocates for reintroducing the regulation for automated consent and objection signals, which was included in the original Commission proposal for the Digital Omnibus. A European solution should clarify legal ambiguities, avoid overregulation, and ensure that cookie managers can also map GDPR consents for subsequent data processing."
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
         },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/12_Cookie-Banner.html",
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
         "imp": "medium"
       },
       {
-        "d": "14.07.2026",
+        "d": "18.08.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Konsultation",
+          "en": "Consultation"
         },
-        "src": "edpb.europa.eu",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
-          "en": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint"
+          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form",
+          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs - Reply form"
         },
-        "sl": "edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint",
+        "sl": "consultation-paper-on-the-reporting-framework-under-emir-for-clearing-activity-a",
         "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat eine verbindliche Entscheidung gemäß Art. 65 Abs. 1 lit. a DSGVO veröffentlicht. Diese betrifft einen Streitfall, der von der belgischen Datenschutzbehörde (DPA) bezüglich einer Beschwerde gegen die Vlaamse Radio- en Televisieomroeporganisatie (VRT) eingereicht wurde.\n\nDie Beschwerde, eingereicht von der NGO Noyb, betrifft die Verwendung von Cookie-Bannern auf der VRT-Website. Die belgische DPA wollte die Beschwerde wegen angeblichen Missbrauchs von Art. 77 und Art. 80 Abs. 1 DSGVO abweisen, was die österreichische DPA beanstandete. Der EDPB entschied, dass kein Missbrauch der Rechte des Beschwerdeführers vorliegt, da die objektiven und subjektiven Komponenten für einen solchen Nachweis nicht erbracht wurden. Die belgische DPA muss die Beschwerde nun inhaltlich prüfen und einen neuen Entscheidungsentwurf vorlegen.\n\nDiese Entscheidung ist für alle Unternehmen relevant, die Cookie-Banner auf ihren Websites verwenden und grenzüberschreitende Datenverarbeitung betreiben. Sie verdeutlicht, dass Beschwerden nicht leichtfertig aus verfahrenstechnischen Gründen abgewiesen werden dürfen, insbesondere wenn kein klarer Missbrauch der Rechte des Beschwerdeführers nachgewiesen werden kann. Dies stärkt die Rechte von Einzelpersonen und NGOs bei der Durchsetzung von Datenschutzansprüchen.",
-          "en": "The European Data Protection Board (EDPB) has published a binding decision under Art. 65(1)(a) GDPR. This decision concerns a dispute submitted by the Belgian Data Protection Authority (DPA) regarding a complaint against Vlaamse Radio- en Televisieomroeporganisatie (VRT).\n\nThe complaint, lodged by the NGO Noyb, relates to the use of cookie banners on the VRT website. The Belgian DPA proposed to dismiss the complaint based on an alleged abuse of Art. 77 and Art. 80(1) GDPR, which the Austrian DPA objected to. The EDPB found that the complainant did not abuse their rights, as the objective and subjective components needed to prove such abuse were not demonstrated. Consequently, the Belgian DPA is instructed to assess the complaint on its merits and submit a new draft decision.\n\nThis decision is relevant for all companies using cookie banners on their websites and engaging in cross-border data processing. It clarifies that complaints should not be dismissed lightly on procedural grounds, especially when no clear abuse of the complainant's rights can be proven. This strengthens the rights of individuals and NGOs in enforcing data protection claims."
+          "de": "Die ESMA hat ein Konsultationspapier zum Meldewesen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs veröffentlicht. Das Dokument ist ein Antwortformular zu diesem Konsultationspapier.\n\nDie Konsultation betrifft Finanzinstitute, die Clearing-Aktivitäten bei zentralen Gegenparteien (CCPs) in Drittländern durchführen, die von der EU anerkannt sind. Ziel ist die Vereinfachung und Reduzierung des Verwaltungsaufwands im Meldewesen.\n\nDie Konsultationsfrist endet am 18.08.2026.",
+          "en": "ESMA has published a consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs. This document is a reply form for that consultation paper.\n\nThe consultation concerns financial institutions engaged in clearing activities with central counterparties (CCPs) in third countries recognised by the EU. The aim is to simplify and reduce the reporting burden.\n\nThe consultation period ends on 18.08.2026."
         },
-        "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
-        "imp": "medium"
-      },
-      {
-        "d": "09.07.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zur DSGVO: Online-Veröffentlichung von Strafurteilen nicht automatisch journalistisch (C-199/24)",
-          "en": "ECJ Judgment on GDPR: Online Publication of Criminal Convictions Not Automatically Journalistic (C-199/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-199-24-legal-newsdesk-sweden",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die bloße Online-Veröffentlichung von strafrechtlichen Verurteilungen gegen Entgelt grundsätzlich keine Verarbeitung personenbezogener Daten zu journalistischen Zwecken im Sinne der Datenschutz-Grundverordnung (DSGVO) darstellt. Dies bedeutet, dass solche Veröffentlichungen nicht von den Garantien und Rechtsbehelfen der DSGVO ausgenommen sind.\n\nDie Entscheidung betrifft Unternehmen, die Datenbanken mit strafrechtlichen Verurteilungen betreiben und diese entgeltlich zugänglich machen. Der EuGH stellt klar, dass Mitgliedstaaten die Anwendung der DSGVO nicht für Datenverarbeitungen ausschließen dürfen, die nicht journalistischen, wissenschaftlichen, künstlerischen oder literarischen Zwecken dienen. Betroffene Personen müssen die durch die DSGVO garantierten Rechtsbehelfe nutzen können und dürfen nicht auf Klagen wegen Verleumdung oder zivilrechtliche Klagen beschränkt werden.\n\nDas Urteil erging im Rahmen eines Vorabentscheidungsersuchens eines schwedischen Gerichts. Die Entscheidung des EuGH ist für das nationale Gericht bindend und hat Auswirkungen auf vergleichbare Fälle in anderen Mitgliedstaaten.",
-          "en": "The European Court of Justice (ECJ) has ruled that the mere online publication of criminal convictions for a fee does not, in principle, constitute processing of personal data for journalistic purposes within the meaning of the General Data Protection Regulation (GDPR). This implies that such publications are not exempt from the guarantees and remedies provided by the GDPR.\n\nThis decision affects companies that operate databases containing criminal convictions and make them accessible for a fee. The ECJ clarifies that Member States may not exclude the application of the GDPR for data processing that does not serve journalistic, scientific, artistic, or literary purposes. Data subjects must be able to exercise the remedies guaranteed by the GDPR and should not be limited to defamation or civil lawsuits.\n\nThe judgment was delivered in response to a preliminary ruling request from a Swedish court. The ECJ's decision is binding on the national court and will impact similar cases in other Member States."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260100de.pdf",
+        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third-0",
         "imp": "medium",
-        "refnum": "C-199/24"
+        "refnum": "ESMA12-2121844265-6120"
       },
       {
-        "d": "25.06.2026",
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs",
+          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "consultation-paper-on-the-reporting-framework-under-emir-for-clearing-activity-a",
+        "s": {
+          "de": "Die ESMA hat ein Konsultationspapier zum Meldewesen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-Zentralen Gegenparteien (TC-CCPs) veröffentlicht. Dieses Papier schlägt Entwürfe für Regulierungs- und technische Durchführungsstandards (RTS und ITS) vor, die den Inhalt und das Format einer jährlichen Meldepflicht für Clearing-Mitglieder und deren Kunden festlegen.\n\nDie Meldepflicht betrifft Clearing-Mitglieder und Kunden, die Dienstleistungen von anerkannten TC-CCPs nutzen. Ziel ist es, Informationen über die Clearing-Aktivitäten zu sammeln, wobei der Fokus auf der Wiederverwendung bereits verfügbarer Daten liegt, um den administrativen Aufwand zu minimieren. Die Meldung soll Angaben zu den Arten der geclearten Finanz- und Nicht-Finanzinstrumente, den durchschnittlichen geclearten Werten pro EU-Währung und Anlageklasse sowie den Margen umfassen.\n\nInteressierte Parteien, insbesondere Clearing-Mitglieder, Gegenparteien, die TC-CCPs nutzen, und die TC-CCPs selbst, sind zur Stellungnahme eingeladen. Die Konsultationsfrist endet am 12. Oktober 2026. Die ESMA plant, einen Abschlussbericht im vierten Quartal 2026 zu veröffentlichen.",
+          "en": "ESMA has published a consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country Central Counterparties (TC-CCPs). This paper proposes draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) specifying the content and format of an annual reporting obligation for clearing members and their clients.\n\nThe reporting obligation applies to clearing members and clients accessing services of recognised TC-CCPs. The aim is to collect information on clearing activities, with a focus on reusing already available data to minimise administrative burden. The report should include details on the types of financial and non-financial instruments cleared, average cleared values per EU currency and asset class, and margins.\n\nInterested parties, particularly clearing members, counterparties using TC-CCPs, and the TC-CCPs themselves, are invited to comment. The consultation period closes on 12 October 2026. ESMA plans to publish a final report in Q4 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third",
+        "imp": "medium",
+        "refnum": "ESMA12-2121844265-6008"
+      },
+      {
+        "d": "03.08.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
-        "src": "edpb.europa.eu",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "One-Stop-Shop case digest on right to object and right to erasure updated",
-          "en": "One-Stop-Shop case digest on right to object and right to erasure updated"
+          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
         },
-        "sl": "one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated",
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
         "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat eine aktualisierte Fassung des „One-Stop-Shop (OSS) case digest on right to object and right to erasure“ veröffentlicht. Dieses Dokument bietet Einblicke, wie Datenschutzbehörden (DPAs) die internen Prozesse von Organisationen zur Einhaltung des Widerspruchsrechts und des Rechts auf Löschung analysieren.\n\nEs listet die häufigsten Verstöße auf und gibt einen Überblick über die ergriffenen Korrekturmaßnahmen. Die Fallbeispiele umfassen unter anderem die Ausübung des Widerspruchsrechts gegen Direktmarketing oder den Wunsch von Personen, ihre Konten oder Online-Datenprofile zu löschen. Die Aktualisierung berücksichtigt Hunderte neuer OSS-Entscheidungen der DPAs zu diesen Rechten.\n\nDas Projekt wurde im Rahmen des „Support Pool of Experts“-Programms entwickelt, das die Zusammenarbeit zwischen den Datenschutzbehörden fördern soll. Thematische OSS-Falldarstellungen basieren auf Entscheidungen aus dem öffentlichen Register des EDPB (gemäß Art. 60 DSGVO) und ergänzen dieses durch die Auswahl und Präsentation der wichtigsten Entscheidungen zu einem bestimmten Thema.",
-          "en": "The European Data Protection Board (EDPB) has published an updated version of the One-Stop-Shop (OSS) case digest on the right to object and the right to erasure. This document provides insights into how Data Protection Authorities (DPAs) analyze organizations' internal processes for complying with the right to object and the right to erasure.\n\nIt lists the most frequent infringements and provides an overview of the corrective measures issued. Case examples include the exercise of the right to object to direct marketing or individuals' desire to erase their accounts or online data profiles. The update incorporates hundreds of new OSS decisions by DPAs concerning these rights.\n\nThe project was developed within the framework of the Support Pool of Experts program, which aims to foster cooperation among Data Protection Authorities. Thematic OSS case digests are based on decisions from the EDPB's public register (pursuant to Art. 60 GDPR) and complement it by selecting and presenting the most important decisions on a given theme."
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
         },
-        "url": "https://www.edpb.europa.eu/news/one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated_en",
-        "imp": "low"
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
       },
       {
-        "d": "24.06.2026",
+        "d": "03.08.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Final Report",
+          "en": "Final report"
         },
-        "src": "edpb.europa.eu",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "Supporting GDPR consistency: EDPB launches dedicated form",
-          "en": "Supporting GDPR consistency: EDPB launches dedicated form"
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
         },
-        "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
         "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen mögliche Inkonsistenzen bei der Auslegung der Datenschutz-Grundverordnung (DSGVO) in Europa melden können. Dies dient der Stärkung des Dialogs mit Interessengruppen und der Sicherstellung einer konsistenten Durchsetzung der DSGVO.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Der EDPB wird nicht auf einzelne Einreichungen antworten, sondern die gesammelten Informationen regelmäßig auf hoher Ebene diskutieren, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nDie Initiative basiert auf den Verpflichtungen der EDPB Helsinki-Erklärung zur Verbesserung von Klarheit, Unterstützung und Engagement.",
-          "en": "The European Data Protection Board (EDPB) has launched a dedicated contact form for stakeholders to report possible inconsistencies in the interpretation of the General Data Protection Regulation (GDPR) across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of alleged divergences between national positions, as well as between national positions and those of the EDPB. The EDPB will not respond to individual submissions, but the collected information will be regularly discussed at a high level by Board members to consider steps to improve consistency.\n\nThis initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support, and engagement."
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
         },
-        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
-        "imp": "low"
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
       },
       {
-        "d": "12.06.2026",
+        "d": "06.05.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Final Report",
+          "en": "Final report"
         },
-        "src": "edpb.europa.eu",
+        "src": "iosco.org",
         "ti": {
-          "de": "Coordinated Supervision Committee extends scope to include Eurodac",
-          "en": "Coordinated Supervision Committee extends scope to include Eurodac"
+          "de": "Public quantitative disclosure standards for central counterparties",
+          "en": "Public quantitative disclosure standards for central counterparties"
         },
-        "sl": "coordinated-supervision-committee-extends-scope-to-include-eurodac",
+        "sl": "public-quantitative-disclosure-standards-for-central-counterparties",
         "s": {
-          "de": "Das Coordinated Supervision Committee (CSC) übernimmt ab dem 12. Juni 2026 die koordinierte Aufsicht über Eurodac, die Asyl- und Migrationsdatenbank der Europäischen Union. Eurodac, ursprünglich für den Abgleich von Fingerabdrücken konzipiert, hat sich zu einem umfassenden System für das Asyl- und Migrationsmanagement entwickelt und ist zentral für die Umsetzung der Dublin-III-Verordnung.\n\nDas CSC, bestehend aus Vertretern nationaler Datenschutzbehörden (DPAs) und des Europäischen Datenschutzbeauftragten (EDPS), gewährleistet nun eine koordinierte Überwachung. Bisher überwachten nationale DPAs die Datenverarbeitung durch nationale Behörden und deren Übermittlung an die zentrale Eurodac-Datenbank, während der EDPS für die zentrale Datenverarbeitung zuständig war. Diese Neuerung betrifft alle EU-Mitgliedstaaten sowie Island, Liechtenstein, Norwegen und die Schweiz, die Eurodac nutzen.\n\nDas CSC ist eine Gruppe von Datenschutzbehörden, die eine koordinierte Aufsicht über große IT-Systeme sowie EU-Einrichtungen, -Ämter und -Agenturen sicherstellt. Es agiert autonom innerhalb des Rahmens des Europäischen Datenschutzausschusses (EDPB).",
-          "en": "As of June 12, 2026, the Coordinated Supervision Committee (CSC) will assume coordinated supervision of Eurodac, the European Union's asylum and migration database. Eurodac, initially designed for fingerprint comparison, has evolved into a comprehensive asylum and migration management system and is central to the implementation of the Dublin III Regulation.\n\nThe CSC, comprising representatives from national Data Protection Authorities (DPAs) and the European Data Protection Supervisor (EDPS), will now ensure coordinated oversight. Previously, national DPAs supervised data processing by national authorities and its transmission to the central Eurodac database, while the EDPS was responsible for central data processing. This change affects all EU Member States, as well as Iceland, Liechtenstein, Norway, and Switzerland, which use Eurodac.\n\nThe CSC is a group of DPAs that ensures coordinated supervision of large-scale IT systems and EU bodies, offices, and agencies. It operates autonomously within the framework of the European Data Protection Board (EDPB)."
+          "de": "Der Bericht legt quantitative Offenlegungsstandards für zentrale Gegenparteien (CCPs) fest. Diese Standards sollen die Transparenz und Vergleichbarkeit der von CCPs veröffentlichten Daten verbessern, indem sie einheitliche Metriken und Formate für die Offenlegung vorgeben.\n\nDie Standards richten sich an alle CCPs und sollen Marktteilnehmern, Aufsichtsbehörden und der Öffentlichkeit ein besseres Verständnis der Risikoprofile und der finanziellen Stärke von CCPs ermöglichen. Dies ist insbesondere für Finanzinstitute relevant, die CCP-Dienstleistungen nutzen oder mit CCPs interagieren.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
+          "en": "The report establishes quantitative disclosure standards for central counterparties (CCPs). These standards aim to enhance the transparency and comparability of data published by CCPs by prescribing uniform metrics and formats for disclosure.\n\nThese standards apply to all CCPs and are intended to provide market participants, regulators, and the public with a better understanding of CCPs' risk profiles and financial strength. This is particularly relevant for financial institutions that use CCP services or interact with CCPs.\n\nComments on this report should be submitted by June 30, 2026."
         },
-        "url": "https://www.edpb.europa.eu/news/coordinated-supervision-committee-extends-scope-to-include-eurodac_en",
-        "imp": "low"
-      }
-    ],
-    "sanctions": [
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
-          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
-          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
-        "imp": "low",
-        "refnum": "32026R0513R(01)"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
-          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
-          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
-        "imp": "low",
-        "refnum": "32026R0506R(03)",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "12.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
-          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
-          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
-        "imp": "high",
-        "refnum": "C-465/24"
-      },
-      {
-        "d": "26.02.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "Schlussanträge des Generalanwalts zur Erfüllung von Ansprüchen russischer Organisationen (C-802/24)",
-          "en": "Advocate General's Opinion on the satisfaction of claims by Russian entities (C-802/24)"
-        },
-        "sl": "advocate-general-s-opinion-in-case-c-802-24-reibel",
-        "s": {
-          "de": "Der Generalanwalt des Europäischen Gerichtshofs (EuGH) hat in seinen Schlussanträgen dargelegt, dass das Verbot, Ansprüche russischer Organisationen aus Verträgen zu erfüllen, deren Erfüllung durch restriktive Maßnahmen beeinträchtigt ist, zur öffentlichen Ordnung der Union gehört. Dies bedeutet, dass nationale Gerichte prüfen müssen, ob Schiedssprüche diesem Verbot Rechnung tragen, und diese gegebenenfalls aufheben müssen.\n\nDies ist relevant für Unternehmen, die Verträge mit russischen Parteien haben, insbesondere wenn diese Verträge von EU-Sanktionen betroffen sind. Es unterstreicht die Notwendigkeit, die Einhaltung von EU-Sanktionen auch in Schiedsverfahren sicherzustellen. Schiedsgerichte dürfen zwar mit solchen Ansprüchen befasst werden, dürfen ihnen aber nicht stattgeben, wenn sie gegen die restriktiven Maßnahmen verstoßen. Nationale Gerichte müssen die Einhaltung dieser Vorschriften durch Schiedsgerichte kontrollieren.\n\nDie Schlussanträge sind für den Gerichtshof nicht bindend; das Urteil wird zu einem späteren Zeitpunkt verkündet. Nationale Gerichte, die mit ähnlichen Fragen befasst sind, müssen die endgültige Entscheidung des EuGH berücksichtigen.",
-          "en": "The Advocate General of the European Court of Justice (ECJ) has stated in his Opinion that the prohibition on satisfying claims of Russian entities arising from contracts whose performance is affected by restrictive measures forms part of the public policy of the Union. This implies that national courts must verify whether arbitration awards comply with this prohibition and, if necessary, set them aside.\n\nThis is relevant for companies with contracts involving Russian parties, especially if these contracts are impacted by EU sanctions. It underscores the necessity of ensuring compliance with EU sanctions even in arbitration proceedings. While arbitration courts may hear such claims, they must not uphold them if they violate restrictive measures. National courts are obliged to review arbitration courts' adherence to these rules.\n\nThe Advocate General's Opinion is not binding on the Court; the judgment will be delivered at a later date. National courts dealing with similar issues must take into account the final decision of the ECJ."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260023de.pdf",
-        "imp": "high",
-        "refnum": "C-802/24"
-      },
-      {
-        "d": "05.02.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
-          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
-        },
-        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
-        "s": {
-          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
-          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
-        "imp": "high"
-      },
-      {
-        "d": "15.11.2022",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Grand-ducal Regulation of 14 November 2022",
-          "en": "Grand-ducal Regulation of 14 November 2022"
-        },
-        "sl": "grand-ducal-regulation-of-14-november-2022",
-        "s": {
-          "de": "Die großherzogliche Verordnung vom 14. November 2022 konkretisiert das Gesetz vom 19. Dezember 2020 zur Umsetzung restriktiver Maßnahmen in Finanzfragen. Sie liefert detaillierte Vorgaben zur Anwendung dieses Gesetzes.\n\nDie Verordnung ist für Finanzinstitute in Luxemburg relevant, da sie die praktischen Aspekte der Umsetzung von Finanzsanktionen und anderen restriktiven Maßnahmen regelt. Dies betrifft die Einhaltung von Vorgaben zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung.\n\nWeitere Informationen sind über den bereitgestellten Link zur PDF-Datei der Verordnung verfügbar.",
-          "en": "The Grand-ducal Regulation of 14 November 2022 provides details on the Law of 19 December 2020 concerning the implementation of restrictive measures in financial matters. It specifies the application of this law.\n\nThis regulation is relevant for financial institutions in Luxembourg as it governs the practical aspects of implementing financial sanctions and other restrictive measures. This impacts compliance with anti-money laundering and counter-terrorist financing requirements.\n\nFurther information is available via the provided link to the PDF file of the regulation."
-        },
-        "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-14-november-2022/",
-        "imp": "high"
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
+        "imp": "medium",
+        "refnum": "OR/05/2026"
       }
     ],
     "crr3": [
@@ -2166,125 +2303,6 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14424",
         "imp": "medium",
         "refnum": "Ares(2024)7123964"
-      }
-    ],
-    "emir": [
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "iosco.org",
-        "ti": {
-          "de": "Public quantitative disclosure standards for central counterparties",
-          "en": "Public quantitative disclosure standards for central counterparties"
-        },
-        "sl": "public-quantitative-disclosure-standards-for-central-counterparties",
-        "s": {
-          "de": "Der Bericht legt quantitative Offenlegungsstandards für zentrale Gegenparteien (CCPs) fest. Diese Standards sollen die Transparenz und Vergleichbarkeit der von CCPs veröffentlichten Daten verbessern, indem sie einheitliche Metriken und Formate für die Offenlegung vorgeben.\n\nDie Standards richten sich an alle CCPs und sollen Marktteilnehmern, Aufsichtsbehörden und der Öffentlichkeit ein besseres Verständnis der Risikoprofile und der finanziellen Stärke von CCPs ermöglichen. Dies ist insbesondere für Finanzinstitute relevant, die CCP-Dienstleistungen nutzen oder mit CCPs interagieren.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
-          "en": "The report establishes quantitative disclosure standards for central counterparties (CCPs). These standards aim to enhance the transparency and comparability of data published by CCPs by prescribing uniform metrics and formats for disclosure.\n\nThese standards apply to all CCPs and are intended to provide market participants, regulators, and the public with a better understanding of CCPs' risk profiles and financial strength. This is particularly relevant for financial institutions that use CCP services or interact with CCPs.\n\nComments on this report should be submitted by June 30, 2026."
-        },
-        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
-        "imp": "medium",
-        "refnum": "OR/05/2026"
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "iosco.org",
-        "ti": {
-          "de": "Resilience of central counterparties (CCPs): Further guidance on the PFMI",
-          "en": "Resilience of central counterparties (CCPs): Further guidance on the PFMI"
-        },
-        "sl": "resilience-of-central-counterparties-ccps-further-guidance-on-the-pfmi",
-        "s": {
-          "de": "Die IOSCO hat einen Abschlussbericht zur Resilienz zentraler Gegenparteien (CCPs) veröffentlicht, der weitere Leitlinien zu den Prinzipien für Finanzmarktinfrastrukturen (PFMI) enthält. Der Bericht präzisiert die Erwartungen an CCPs, um deren Widerstandsfähigkeit gegenüber finanziellen und operationellen Schocks zu stärken.\n\nDiese Leitlinien sind für alle zentralen Gegenparteien relevant. Sie sollen sicherstellen, dass CCPs auch unter extremen Marktbedingungen ihre kritischen Funktionen aufrechterhalten können, was für die Stabilität des Finanzsystems von Bedeutung ist.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
-          "en": "IOSCO has published a final report on the resilience of central counterparties (CCPs), providing further guidance on the Principles for Financial Market Infrastructures (PFMI). The report clarifies expectations for CCPs to strengthen their resilience against financial and operational shocks.\n\nThese guidelines are relevant for all central counterparties. They aim to ensure that CCPs can maintain their critical functions even under extreme market conditions, which is important for the stability of the financial system.\n\nComments on this report should be submitted by 30 June 2026."
-        },
-        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
-        "imp": "medium",
-        "refnum": "OR/04/2026"
-      },
-      {
-        "d": "12.12.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bis.org",
-        "ti": {
-          "de": "Review of the implementation of margin requirements for non-centrally cleared derivatives",
-          "en": "Review of the implementation of margin requirements for non-centrally cleared derivatives"
-        },
-        "sl": "review-of-the-implementation-of-margin-requirements-for-non-centrally-cleared-de",
-        "s": {
-          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) und die Internationale Organisation der Wertpapieraufsichtsbehörden (IOSCO) haben eine Überprüfung der Umsetzung des Rahmenwerks für Margenanforderungen für nicht zentral abgewickelte Derivate veröffentlicht. Das Rahmenwerk wurde als Reaktion auf den G20-Aufruf von 2011 zur Stärkung der Widerstandsfähigkeit der Finanzmärkte eingeführt und in mehreren Phasen umgesetzt, wobei die letzte Phase im September 2022 begann.\n\nDie Überprüfung ergab keine wesentlichen Probleme mit dem Rahmenwerk. BCBS und IOSCO schlagen keine Änderungen vor, empfehlen jedoch eine fortgesetzte Überwachung durch den Austausch von Aufsichtsinformationen und Erfahrungen unter ihren Mitgliedern, um sich entwickelnde Marktpraktiken zu adressieren. Margin-Anforderungen reduzieren systemische Risiken und fördern das zentrale Clearing, indem sie das Kontrahentenrisiko bei nicht zentral abgewickelten Derivaten mindern und die Anhäufung unbesicherter Engagements begrenzen.\n\nDie Implementierung des Rahmenwerks erfolgte schrittweise, wobei die letzte Phase (Phase 6) im September 2022 begann und für Notionalbeträge von nicht zentral abgewickelten Derivaten ab 8 Mrd. EUR galt. Die Umsetzungszeitpläne variierten je nach Jurisdiktion, aber die meisten haben das Rahmenwerk umgesetzt.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) and the International Organization of Securities Commissions (IOSCO) have published a review of the implementation of the framework for margin requirements for non-centrally cleared derivatives. The framework was introduced in response to the 2011 G20 call to enhance the resilience of financial markets and was implemented in several phases, with the last phase beginning in September 2022.\n\nThe review found no material issues with the framework. BCBS and IOSCO do not propose changes to the framework but recommend continued monitoring through the exchange of supervisory information and sharing of experiences among their members to address evolving market practices. Margin requirements reduce systemic risk and promote central clearing by mitigating counterparty risk in non-centrally cleared derivatives and limiting the build-up of uncollateralized exposures.\n\nThe implementation of the framework occurred in phases, with the last phase (Phase 6) starting in September 2022, applicable to notional amounts of non-centrally cleared derivatives of EUR 8 billion and above. Implementation schedules varied across jurisdictions, but most have implemented the framework."
-        },
-        "url": "https://www.bis.org/bcbs/publ/d606.htm",
-        "imp": "low"
-      },
-      {
-        "d": "11.03.2024",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Transaktionsregister (Ares(2023)5151234)",
-          "en": "Harmonisation and Simplification of ESMA Fees for Trade Repositories (Ares(2023)5151234)"
-        },
-        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
-        "s": {
-          "de": "Die Europäische Kommission schlägt eine Harmonisierung und Vereinfachung der Gebühren vor, die die ESMA von Transaktionsregistern (Trade Repositories) erhebt. Ziel ist es, die Effizienz und Transparenz der Gebührenstruktur zu verbessern und gleichzeitig die Aufsichtskosten der ESMA zu decken.\n\nDiese Anpassung betrifft alle Transaktionsregister, die unter die Aufsicht der ESMA fallen. Die Vereinfachung der Gebührenberechnung soll den administrativen Aufwand für die Register reduzieren und eine klarere Kostenstruktur schaffen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Europäischen Kommission.",
-          "en": "The European Commission proposes to harmonize and simplify the fees charged by ESMA to trade repositories. The aim is to improve the efficiency and transparency of the fee structure while covering ESMA's supervisory costs.\n\nThis adjustment affects all trade repositories under ESMA's supervision. The simplification of fee calculation is intended to reduce the administrative burden for repositories and create a clearer cost structure.\n\nThe proposal is currently in the adoption workflow of the European Commission."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13933",
-        "imp": "medium",
-        "refnum": "Ares(2023)5151234"
       }
     ],
     "consumer": [
@@ -3719,7 +3737,15 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_rundschreiben_09_25_va.html",
         "imp": "high",
-        "refnum": "09/2025"
+        "refnum": "09/2025",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "BaFin aktualisiert MaGo-Rundschreiben",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-aktualisiert-mago-rundschreiben/",
+            "d": "21.07.2025"
+          }
+        ]
       }
     ],
     "eidas2": [
