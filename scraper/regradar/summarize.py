@@ -43,6 +43,110 @@ UNUSABLE = re.compile(
 def usable(summary: Optional[str]) -> bool:
     return bool(summary) and not UNUSABLE.search(summary)
 
+
+# Erkennung nicht-deutscher Titel für die Nachübersetzung bereits gecachter
+# Zusammenfassungen (FORMAT 4 lieferte "ti" nur bei kryptischen Titeln).
+_EN_WORDS = {"the", "of", "on", "for", "and", "to", "with", "under", "by",
+             "in", "from", "at", "new", "its", "into", "as", "regarding"}
+_DE_WORDS = {"der", "die", "das", "und", "zur", "zum", "für", "von", "des",
+             "im", "bei", "mit", "nach", "über", "zu", "den", "dem", "eine",
+             "einer", "ein", "am", "vom", "durch", "an", "aus", "gegen"}
+_EN_HINTS = re.compile(
+    r"\b(circular|letter|regulation|law|guidance|consultation|report|statement|"
+    r"update|updated|notice|decision|opinion|final|draft|press|release|"
+    r"guidelines|survey|framework|standards?|review|publication|"
+    r"communication|notification|launch(es|ed)?)\b", re.IGNORECASE)
+
+
+def looks_english(title: Optional[str]) -> bool:
+    """True, wenn ein Titel nicht deutsch ist (englische Funktionswörter
+    überwiegen, oder ohne Funktionswörter englische Signalwörter ohne
+    Umlaute)."""
+    if not title:
+        return False
+    words = re.findall(r"[a-zäöüß]+", title.lower())
+    en = sum(w in _EN_WORDS for w in words)
+    de = sum(w in _DE_WORDS for w in words)
+    if en or de:
+        return en > de
+    return bool(_EN_HINTS.search(title)) and not re.search(r"[äöüß]", title.lower())
+
+
+TITLE_PROMPT = (
+    "Du erhältst eine JSON-Liste (id, title) mit Titeln regulatorischer "
+    "Meldungen für Compliance-Verantwortliche von Finanzunternehmen. Liefere "
+    "je id einen deutschen Anzeigetitel: sinngemäß und fachlich korrekt "
+    "übersetzt, kurz (max. ca. 90 Zeichen). Etablierte englische Eigenbegriffe "
+    "und Namen von Rechtsakten bleiben unübersetzt (z. B. DORA, MiCA, "
+    "Solvency II, Consolidated Tape, Q&A, RTS/ITS, Level 1, Have Your Say); "
+    "offizielle Kennungen und Nummern bleiben in Klammern am Ende erhalten. "
+    'Antworte ausschließlich mit einem JSON-Objekt {id: {"de": "...", '
+    '"en": "<Originaltitel, ggf. gekürzt>"}}. Keine Erklärungen.'
+)
+TITLE_BATCH = 15
+
+
+def _translate_titles(model: str, key: str,
+                      items: List[Tuple[int, str]]) -> Dict[int, dict]:
+    payload = {
+        "model": model,
+        "temperature": 0.1,
+        "max_tokens": 4000,
+        "response_format": {"type": "json_object"},
+        "messages": [
+            {"role": "system", "content": TITLE_PROMPT},
+            {"role": "user", "content": json.dumps(
+                [{"id": i, "title": t} for i, t in items], ensure_ascii=False)},
+        ],
+    }
+    req = urllib.request.Request(
+        API_URL, data=json.dumps(payload).encode("utf-8"),
+        headers={"Authorization": "Bearer {}".format(key),
+                 "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+        body = json.loads(resp.read().decode("utf-8"))
+    content = body["choices"][0]["message"]["content"]
+    content = content.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
+    parsed = json.loads(content)
+    out: Dict[int, dict] = {}
+    for i, t in items:
+        v = parsed.get(str(i), parsed.get(i)) if isinstance(parsed, dict) else None
+        if isinstance(v, dict) and isinstance(v.get("de"), str) and v["de"].strip():
+            out[i] = {"de": v["de"].strip()[:160],
+                      "en": (v.get("en") or t).strip()[:160]}
+    return out
+
+
+def _title_from_context(context: str) -> str:
+    m = re.match(r"Titel: (.*)", context)
+    return m.group(1).strip() if m else ""
+
+
+def backfill_titles(conn: sqlite3.Connection, model: str, key: str,
+                    items: List[Tuple[int, str]]) -> Dict[int, dict]:
+    """Deutsche Anzeigetitel für gecachte Zusammenfassungen ohne "ti", deren
+    Original-Titel nicht deutsch ist. items: (document_id, Original-Titel).
+    Ergebnis wird in llm_summary (ti_de/ti_en) gespeichert."""
+    from .db import utcnow
+    result: Dict[int, dict] = {}
+    todo = [(i, t) for i, t in items if looks_english(t)]
+    for start in range(0, len(todo), TITLE_BATCH):
+        batch = todo[start:start + TITLE_BATCH]
+        try:
+            got = _translate_titles(model, key, batch)
+        except (urllib.error.URLError, json.JSONDecodeError, KeyError,
+                ValueError, TimeoutError) as e:
+            print("LLM-Titel: Batch fehlgeschlagen ({}: {})".format(type(e).__name__, e))
+            continue
+        for i, ti in got.items():
+            conn.execute("UPDATE llm_summary SET ti_de=?, ti_en=? WHERE document_id=?",
+                         (ti["de"], ti["en"], i))
+            result[i] = ti
+        conn.commit()
+    if todo:
+        print("LLM-Titel: {} von {} englischen Titeln übersetzt".format(len(result), len(todo)))
+    return result
+
 SYSTEM_PROMPT = (
     "Du schreibst Zusammenfassungen für einen Regulatory-News-Dienst, den "
     "Compliance-Verantwortliche von Finanzunternehmen lesen.\n\n"
@@ -67,16 +171,22 @@ SYSTEM_PROMPT = (
     "weiteres Verfahren – nur soweit der Text es hergibt; sonst diesen "
     "Absatz weglassen.\n\n"
     "Dazu eine englische Fassung gleichen Inhalts und Aufbaus.\n\n"
-    "Titel: Ist der Original-Titel der Meldung für Leser ohne Detailwissen "
-    "unverständlich – z. B. nur ein technischer Code, eine Regel-/Vorlagen-ID, "
-    "ein Aktenzeichen oder ein Dateiname (etwa 'Validation Rule "
-    "RRCOROF_V903610_H_C0030') – liefere zusätzlich einen beschreibenden "
-    'Anzeigetitel als "ti": {"de": "...", "en": "..."}: kurz (max. ca. 90 '
-    "Zeichen), sagt worum es inhaltlich geht, nutzt offizielle Fachbegriffe "
-    "(z. B. COREP, Meldewesen, RTS) und behält die offizielle Kennung in "
-    "Klammern am Ende, damit die Meldung auffindbar bleibt. Ist der "
-    'Original-Titel bereits verständlich, lasse "ti" weg – verständliche '
-    "Titel bleiben unverändert in Originalsprache.\n\n"
+    "Titel: Liefere zusätzlich einen Anzeigetitel als "
+    '"ti": {"de": "...", "en": "..."}, wenn der Original-Titel (a) nicht auf '
+    "Deutsch ist oder (b) für Leser ohne Detailwissen unverständlich ist – "
+    "etwa nur ein technischer Code, eine Regel-/Vorlagen-ID, ein Aktenzeichen "
+    "oder ein Dateiname (wie 'Validation Rule RRCOROF_V903610_H_C0030') oder "
+    "ein nichtssagender Titel wie 'Circular letter'. "
+    '"de" ist ein deutscher Titel: sinngemäß und fachlich korrekt übersetzt '
+    "bzw. beschreibend, kurz (max. ca. 90 Zeichen), sagt worum es inhaltlich "
+    "geht. Etablierte englische Eigenbegriffe und Namen von Rechtsakten "
+    "bleiben unübersetzt (z. B. DORA, MiCA, Solvency II, Consolidated Tape, "
+    "Q&A, RTS/ITS, Level 1, Reply Form, Have Your Say); offizielle Kennungen "
+    "und Nummern (Rundschreiben-Nr., Q&A-ID, Aktenzeichen) bleiben in Klammern "
+    'am Ende erhalten. "en" ist der englische Titel (bei englischem Original '
+    "der Originaltitel, ggf. gekürzt; bei deutschem Original eine "
+    "Übersetzung). Ist der Original-Titel bereits deutsch und verständlich, "
+    'lasse "ti" weg.\n\n'
     "Regeln: Nur Informationen aus dem gegebenen Text verwenden, nichts "
     "erfinden und keine Fristen raten. Gibt der Text wenig her, schreibe "
     "lieber weniger Absätze als vage Füllsätze. Fachbegriffe und "
@@ -202,6 +312,14 @@ def summarize(conn: sqlite3.Connection,
     if not key:
         return result
 
+    model = os.environ.get("OPENROUTER_SUMMARY_MODEL", DEFAULT_MODEL)
+    # Gecachte Einträge ohne Anzeigetitel, deren Original nicht deutsch ist:
+    # Titel nachübersetzen (FORMAT 4 lieferte "ti" nur bei kryptischen Titeln).
+    need_title = [(i, _title_from_context(t)) for i, t, _ in items
+                  if i in result and "ti" not in result[i]]
+    for i, ti in backfill_titles(conn, model, key, need_title).items():
+        result[i]["ti"] = ti
+
     from .fulltext import fetch_fulltext
     todo = []
     for i, t, url in items:
@@ -214,7 +332,6 @@ def summarize(conn: sqlite3.Connection,
     if not todo:
         return result
 
-    model = os.environ.get("OPENROUTER_SUMMARY_MODEL", DEFAULT_MODEL)
     from .db import utcnow
     for start in range(0, len(todo), BATCH_SIZE):
         batch = todo[start:start + BATCH_SIZE]

@@ -44,8 +44,8 @@ export default function Home() {
           </div>
           <h1 className="font-heading mx-auto max-w-3xl text-balance text-4xl leading-[1.08] font-medium tracking-tight text-slate-900 sm:text-5xl">
             {lang === "de"
-              ? "Alle Regulatorik, kostenlos an einem Ort."
-              : "All regulation, free in one place."}
+              ? "Alle Regulatorik für Finanzinstitute, kostenlos an einem Ort."
+              : "All regulation for financial institutions, free in one place."}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
             {lang === "de"

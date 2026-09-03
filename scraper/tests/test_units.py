@@ -120,16 +120,16 @@ class FrameworkClassification(unittest.TestCase):
             self.assertEqual(_classify(text), expected, text)
 
     def test_cssf_quellenregeln(self):
-        """CSSF-Dokumente werden zuerst den luxemburgischen Rahmenwerken zugeordnet;
-        EU-Weiterleitungen fallen auf die generischen Regeln zurück."""
+        """CSSF-Dokumente werden ausschließlich den luxemburgischen Rahmenwerken
+        zugeordnet; EU-Weiterleitungen (DORA, ESMA) entfallen."""
         from regradar.webexport import _classify
         self.assertEqual(_classify("Circular CSSF 26/910 – ESMA Guidelines on Liquidity Management Tools", source_id="cssf"), "lulmt")
         self.assertEqual(_classify("Circular CSSF 24/856 – Protection of investors in case of NAV calculation error", source_id="cssf"), "cssf24856")
         self.assertEqual(_classify("Circular CSSF 22/806 (as amended) on outsourcing arrangements", source_id="cssf"), "cssf18698")
         self.assertEqual(_classify("FAQ on AML/CFT asset due diligence obligations in accordance with CSSF Regulation No 12-02", source_id="cssf"), "cssfaml")
         self.assertEqual(_classify("Communication to the investment fund industry – Law of 3 March 2026", source_id="cssf"), "luaifm")
-        self.assertEqual(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches", source_id="cssf"), "dora")
-        self.assertEqual(_classify("Public consultation by ESMA on simplifying EU Taxonomy disclosure framework", source_id="cssf"), "taxonomy")
+        self.assertIsNone(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches", source_id="cssf"))
+        self.assertIsNone(_classify("Public consultation by ESMA on simplifying EU Taxonomy disclosure framework", source_id="cssf"))
         # Ohne Quellenkontext greifen die Lux-Regeln nicht.
         self.assertEqual(_classify("ESMA Guidelines on Liquidity Management Tools of UCITS"), "aifmd2")
 
@@ -352,17 +352,22 @@ class QaSweepSept2026(unittest.TestCase):
         self.assertEqual(_classify("Exemption from the deduction of holdings in insurance undertakings under Article 471 CRR", source_id="eba_qna"), "crr3")
         self.assertEqual(_classify("Validation rule v90317_m COREP C 16.02", source_id="eba_qna"), "itsrep")
 
-    def test_cssf_forwards_of_fatf_and_eba_go_to_amla(self):
+    def test_cssf_only_luxembourg_frameworks(self):
+        """CSSF-Dokumente landen nur in luxemburgischen Rahmenwerken; EU-Weiter-
+        leitungen (DORA, MiCA, FATF/EBA) entfallen, die kommen über die EU-Quellen."""
         from regradar.webexport import _classify
-        self.assertEqual(_classify("Public Consultation on AML/CFT and Financial Inclusion - Updated FATF Guidance", source_id="cssf"), "amla")
-        self.assertEqual(_classify("The European Banking Authority consults on new rules related to the anti-money laundering package", source_id="cssf"), "amla")
+        self.assertIsNone(_classify("Public Consultation on AML/CFT and Financial Inclusion - Updated FATF Guidance", source_id="cssf"))
+        self.assertIsNone(_classify("The European Banking Authority consults on new rules related to the anti-money laundering package", source_id="cssf"))
+        self.assertIsNone(_classify("Circular CSSF 25/893 Reporting of major ICT-related incidents under DORA", source_id="cssf"))
+        self.assertIsNone(_classify("Notification of white papers under Title II of MiCAR", source_id="cssf"))
         self.assertEqual(_classify("Circular CSSF 12-02 on money laundering", source_id="cssf"), "cssfaml")
-        # Travel-Rule-Konsultation der FATF bleibt bei der Geldtransfer-Verordnung.
-        self.assertEqual(_classify("Public consultation by FATF on guidance to increase payment transparency - travel rule", source_id="cssf"), "tfr")
+        self.assertEqual(_classify("Circular CSSF 26/910 on liquidity management tools", source_id="cssf"), "lulmt")
+        # Andere Quellen behalten den Fallback auf die generischen Regeln.
+        self.assertEqual(_classify("Reporting of major ICT-related incidents under DORA", source_id="esma"), "doraincident")
 
     def test_dora_third_country_branches(self):
         from regradar.webexport import _classify
-        self.assertEqual(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg", source_id="cssf"), "dora")
+        self.assertEqual(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches"), "dora")
         self.assertEqual(_classify("Guidelines on the authorisation of third-country branches under CRD VI"), "ebatcb")
 
     def test_reply_form_is_noise(self):
@@ -373,6 +378,28 @@ class QaSweepSept2026(unittest.TestCase):
         from regradar.webexport import _title_key
         self.assertEqual(_title_key("ESMA authorises EuroCTP - Press release"), _title_key("ESMA authorises EuroCTP"))
         self.assertEqual(_title_key("Circular CSSF 25/882 (Updated)"), _title_key("Circular CSSF 25/882"))
+
+    def test_praxis_excludes_bilanzkontrolle(self):
+        from regradar.webexport import PRAXIS_EXCLUDE
+        for t in ("Zalando SE: Bafin macht Fehler im Konzernabschluss bekannt",
+                  "pferdewetten.de AG: Bafin setzt Geldbuße fest Halbjahresfinanzbericht nicht rechtzeitig veröffentlicht",
+                  "Dermapharm: Bafin leitet Prüfung des Konzernabschlusses 2025 ein",
+                  "Brown Capital: Geldbuße wegen unterlassener Stimmrechtsmitteilungen",
+                  "TeamViewer SE: Geldbuße, Insiderinformation nicht rechtzeitig als Ad-hoc-Mitteilung veröffentlicht"):
+            self.assertTrue(PRAXIS_EXCLUDE.search(t), t)
+        for t in ("bunq B. V.: Bafin setzt Bußgeld fest, unterlassene Meldungen an den Kontenvergleich",
+                  "Nord/LB: Bafin ordnet Mängelbeseitigung in der Geldwäscheprävention an",
+                  "Effecta GmbH: Geldbuße wegen Verstoß gegen die PRIIPs-VO"):
+            self.assertFalse(PRAXIS_EXCLUDE.search(t), t)
+
+    def test_esma_library_shadow_of_news(self):
+        from regradar.webexport import _is_shadow, _title_tokens
+        news = [("2026-08-18", _title_tokens("ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"))]
+        self.assertTrue(_is_shadow("Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs", "2026-08-18", news))
+        self.assertTrue(_is_shadow("ESMA authorises EuroCTP as the Consolidated Tape Provider - Press release", "2026-07-28",
+                                   [("2026-07-27", _title_tokens("ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds"))]))
+        self.assertFalse(_is_shadow("Guidelines on MiFID II suitability requirements", "2026-08-18", news))
+        self.assertFalse(_is_shadow("Consultation paper on the reporting framework under EMIR", "2026-09-18", news))
 
     def test_praxis_sources(self):
         from regradar.webexport import PRAXIS_SOURCES

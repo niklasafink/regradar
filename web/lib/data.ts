@@ -2626,7 +2626,7 @@ export const FRAMEWORKS: Framework[] = [
   { id:"cssfaml", jur:"LU",
     about:{de:"Luxemburgisches Geldwäscherecht für den Fondssektor: Gesetz vom 12. November 2004, CSSF-Verordnung 12-02 mit den Sorgfaltspflichten für Fonds und Fondsmanager, Asset-Due-Diligence, RC/RR-Funktionen, jährlicher AML-Fragebogen und FATF-Hochrisikolisten.",
            en:"Luxembourg AML law for the fund sector: the Law of 12 November 2004, CSSF Regulation 12-02 with the due-diligence duties for funds and fund managers, asset due diligence, RC/RR functions, the annual AML questionnaire and FATF high-risk lists."},
-    topic:"AML", ents:["AM","CI","IF","PI"],
+    topic:"AML", ents:["AM"],
     n:{de:"Geldwäscheprävention in Luxemburg (Gesetz vom 12. November 2004, CSSF-Verordnung 12-02)",en:"Anti-money laundering in Luxembourg (Law of 12 November 2004, CSSF Regulation 12-02)"},
     alias:"CSSF Regulation 12-02, Règlement CSSF 12-02, Loi du 12 novembre 2004, AML Luxemburg, Asset Due Diligence, RC RR, Responsable du contrôle, AML/CFT Questionnaire, Luxembourg AML",
     ref:"Loi du 12 novembre 2004, Règlement CSSF N° 12-02", cond:{k:"juris",any:["LU"]},

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T15:26:30Z",
+  "generated_at": "2026-09-03T15:42:30Z",
   "updates": {
     "amla": [
       {
@@ -10,7 +10,7 @@
         },
         "src": "amla.europa.eu",
         "ti": {
-          "de": "Consultation on the draft RTS on the assessment of the inherent and residual risk profile of obliged entities in the non-financial sector",
+          "de": "Konsultation zum Entwurf der RTS zur Bewertung des inhärenten und residualen Risikoprofils von Verpflichteten im nichtfinanziellen Sektor",
           "en": "Consultation on the draft RTS on the assessment of the inherent and residual risk profile of obliged entities in the non-financial sector"
         },
         "sl": "consultation-on-the-draft-rts-on-the-assessment-of-the-inherent-and-residual-ris",
@@ -91,25 +91,6 @@
         ]
       },
       {
-        "d": "21.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Survey launched by AMLA on Central Contact Points",
-          "en": "Survey launched by AMLA on Central Contact Points"
-        },
-        "sl": "survey-launched-by-amla-on-central-contact-points",
-        "s": {
-          "de": "Die AMLA hat eine Umfrage zum aktuellen Rahmen für Zentrale Kontaktstellen gestartet. Ziel ist es, Erfahrungen und Meinungen zu diesem Rahmenwerk zu sammeln.\n\nBetroffen sind E-Geld-Institute (EMIs) und Zahlungsdienstleister (PSPs). Diese Unternehmen sind eingeladen, freiwillig ihre Erfahrungen mit den Zentralen Kontaktstellen zu teilen. Die Umfrage dient der AMLA als Grundlage für mögliche Anpassungen oder Verbesserungen des bestehenden Rahmens.\n\nDie Umfrage läuft bis zum 15. September 2026.",
-          "en": "AMLA has launched a survey on the current framework for Central Contact Points. The aim is to gather experiences and opinions regarding this framework.\n\nElectronic Money Institutions (EMIs) and Payment Service Providers (PSPs) are concerned. These entities are invited to voluntarily share their experiences with Central Contact Points. The survey will serve as a basis for AMLA to potentially adapt or improve the existing framework.\n\nThe survey is open until 15 September 2026."
-        },
-        "url": "https://www.cssf.lu/en/2026/08/survey-launched-by-amla-on-central-contact-points/",
-        "imp": "medium"
-      },
-      {
         "d": "04.08.2026",
         "t": {
           "de": "Meldung",
@@ -117,7 +98,7 @@
         },
         "src": "amla.europa.eu",
         "ti": {
-          "de": "EBA publishes draft reporting framework for the 2027 eligibility data collection",
+          "de": "EBA veröffentlicht Entwurf des Berichtsrahmens für die Erhebung der Eignungsdaten 2027",
           "en": "EBA publishes draft reporting framework for the 2027 eligibility data collection"
         },
         "sl": "eba-publishes-draft-reporting-framework-for-the-2027-eligibility-data-collection",
@@ -128,6 +109,25 @@
         "url": "https://www.amla.europa.eu/news-media/news-articles/eba-publishes-draft-reporting-framework-2027-eligibility-data-collection_en",
         "imp": "medium",
         "deadline": "24.08.2026"
+      },
+      {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "FAQ zum Meldepaket für die Identifizierung vorläufig geeigneter Verpflichteter (AMLA)",
+          "en": "FAQ on the Reporting Package for Identifying Provisionally Eligible Entities (AMLA)"
+        },
+        "sl": "frequently-asked-questions-on-the-reporting-package-for-identifying-provisionall",
+        "s": {
+          "de": "Die AMLA hat ein FAQ-Dokument zum Meldepaket für die Identifizierung vorläufig geeigneter Verpflichteter veröffentlicht. Es beantwortet Fragen nationaler Finanzaufsichtsbehörden zu Auslegung, operativen Klärungen und praktischen Implementierungsfragen der Datenerhebung.\n\nDas Dokument soll meldepflichtige Unternehmen bei den auf nationaler Ebene organisierten Datenerhebungen unterstützen und eine genaue sowie effiziente Berichterstattung ermöglichen. Es dient als Arbeitsressource für die Erstellung von Einreichungen.\n\nWeitere Fragen können über die zuständigen nationalen Finanzaufsichtsbehörden eingereicht und für zukünftige Aktualisierungen berücksichtigt werden.",
+          "en": "AMLA has published an FAQ document on the reporting package for identifying provisionally eligible entities. It addresses queries from national financial supervisors regarding interpretation, operational clarifications, and practical implementation issues of the data collection.\n\nThe document aims to support reporting obliged entities in the data collections organised at national level, enabling accurate and efficient reporting. It serves as a working resource for preparing submissions.\n\nFurther questions can be submitted through the relevant national financial supervisors and will be considered for future updates."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/frequently-asked-questions-reporting-package-identifying-provisionally-eligible-entities_en",
+        "imp": "high"
       }
     ],
     "irrd": [
@@ -388,7 +388,7 @@
         },
         "src": "edpb.europa.eu",
         "ti": {
-          "de": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)",
+          "de": "Datenschutzkommission gibt endgültige Entscheidung nach Untersuchung des Health Service Executive (HSE) bekannt",
           "en": "Data Protection Commission announces Final Decision following Inquiry into the Health Service Executive (HSE)"
         },
         "sl": "data-protection-commission-announces-final-decision-following-inquiry-into-the-h",
@@ -426,7 +426,7 @@
         },
         "src": "edpb.europa.eu",
         "ti": {
-          "de": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
+          "de": "EDPB fordert belgische DPA auf, NOYB-Beschwerde zu Cookie-Bannern zu bearbeiten",
           "en": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint"
         },
         "sl": "edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint",
@@ -465,7 +465,7 @@
         },
         "src": "edpb.europa.eu",
         "ti": {
-          "de": "One-Stop-Shop case digest on right to object and right to erasure updated",
+          "de": "One-Stop-Shop-Falldigest zu Widerspruchs- und Löschungsrecht aktualisiert",
           "en": "One-Stop-Shop case digest on right to object and right to erasure updated"
         },
         "sl": "one-stop-shop-case-digest-on-right-to-object-and-right-to-erasure-updated",
@@ -484,7 +484,7 @@
         },
         "src": "edpb.europa.eu",
         "ti": {
-          "de": "Supporting GDPR consistency: EDPB launches dedicated form",
+          "de": "Unterstützung der DSGVO-Kohärenz: EDPB startet spezielles Formular",
           "en": "Supporting GDPR consistency: EDPB launches dedicated form"
         },
         "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
@@ -716,45 +716,6 @@
         "refnum": "ESMA75-1012365701-566"
       },
       {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Anwendbarkeit von DORA auf Drittstaaten-Zweigniederlassungen (Circular CSSF 26/915)",
-          "en": "Applicability of DORA to Third-Country Branches (Circular CSSF 26/915)"
-        },
-        "sl": "circular-cssf-26-915",
-        "s": {
-          "de": "Die CSSF hat das Rundschreiben CSSF 26/915 veröffentlicht, das die Anwendbarkeit des Digital Operational Resilience Act (DORA) auf Zweigniederlassungen von Drittstaatenunternehmen in Luxemburg klärt. Dieses Rundschreiben präzisiert, inwiefern die DORA-Anforderungen für diese spezifische Art von Finanzunternehmen gelten.\n\nDas Rundschreiben ist relevant für alle Finanzunternehmen in Luxemburg, die als Zweigniederlassungen von Drittstaatenunternehmen operieren. Es schafft Klarheit bezüglich ihrer Pflichten im Rahmen von DORA und ist somit entscheidend für die Einhaltung der Vorschriften zur digitalen operationellen Resilienz.\n\nDas Rundschreiben wurde am 27. August 2026 veröffentlicht und aktualisiert mehrere frühere Rundschreiben der CSSF, darunter solche zu Meldepflichten bei ICT-Vorfällen, zur Anwendung von ESA-Leitlinien, zu Auslagerungsvereinbarungen und zum ICT-Risikomanagement.",
-          "en": "The CSSF has published Circular CSSF 26/915, clarifying the applicability of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg. This circular specifies to what extent DORA requirements apply to this particular type of financial entity.\n\nThis circular is relevant for all financial entities operating as third-country branches in Luxembourg. It provides clarity regarding their obligations under DORA and is thus crucial for compliance with digital operational resilience regulations.\n\nThe circular was published on August 27, 2026, and updates several previous CSSF circulars, including those on reporting major ICT-related incidents, the application of ESA guidelines, outsourcing arrangements, and ICT risk management."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-cssf-26-915/",
-        "imp": "high",
-        "refnum": "Circular CSSF 26/915"
-      },
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Application of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg",
-          "en": "Application of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg"
-        },
-        "sl": "application-of-the-digital-operational-resilience-act-dora-to-third-country-bran",
-        "s": {
-          "de": "Die CSSF hat klargestellt, dass der Digital Operational Resilience Act (DORA) auch für Zweigniederlassungen aus Drittländern (TCBs) in Luxemburg gilt. Dies wurde durch eine offizielle DORA Q&A der Europäischen Kommission am 17. Dezember 2025 bestätigt, sofern die TCBs im Herkunftsland als Finanzunternehmen gemäß Artikel 2 Absatz 1 Buchstabe a bis t der DORA-Verordnung gelten würden.\n\nInfolgedessen wurden mehrere Rundschreiben der CSSF aktualisiert, um TCBs in den Anwendungsbereich der DORA-bezogenen Vorschriften aufzunehmen. Gleichzeitig wurden TCBs aus dem Geltungsbereich älterer Rundschreiben zu ICT- und Sicherheitsrisikomanagement sowie Auslagerungsvereinbarungen entfernt. Die CSSF präzisiert zudem die Meldung schwerwiegender ICT-bezogener Vorfälle und Cyber-Bedrohungen, falls der vorgeschriebene Kommunikationskanal nicht genutzt werden kann.\n\nDie Bestimmungen der DORA-Verordnung sind seit dem 17. Januar 2025 für die von der CSSF beaufsichtigten Finanzunternehmen anwendbar. Die Änderungen sind in der Grafik der Mitteilung visuell hervorgehoben.",
-          "en": "The CSSF has clarified that the Digital Operational Resilience Act (DORA) also applies to third-country branches (TCBs) in Luxembourg. This was confirmed by an official DORA Q&A from the European Commission on 17 December 2025, provided that the TCBs would qualify as financial entities under Article 2(1)(a) to (t) of the DORA Regulation in their home country.\n\nConsequently, several CSSF circulars have been updated to include TCBs within the scope of DORA-related provisions. Concurrently, TCBs have been removed from the scope of older circulars concerning ICT and security risk management and outsourcing arrangements. The CSSF also specifies the reporting of major ICT-related incidents and cyber threats if the prescribed communication channel cannot be used.\n\nThe provisions of the DORA Regulation have been applicable to financial entities supervised by the CSSF since 17 January 2025. The changes are visually highlighted in the graphic within the communiqué."
-        },
-        "url": "https://www.cssf.lu/en/2026/08/application-of-the-digital-operational-resilience-act-dora-to-third-country-branches-in-luxembourg/",
-        "imp": "medium"
-      },
-      {
         "d": "02.10.2020",
         "t": {
           "de": "Gesetzentwurf",
@@ -762,7 +723,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Digital Operational Resilience of Financial Services (DORFS) Act",
+          "de": "DORFS-Gesetz: Digitale operationale Resilienz von Finanzdienstleistungen",
           "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
         },
         "sl": "digital-operational-resilience-of-financial-services-dorfs-act",
@@ -772,89 +733,6 @@
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
         "imp": "medium"
-      }
-    ],
-    "doraincident": [
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Meldung von IKT-Vorfällen und Cyber-Bedrohungen unter DORA (Circular CSSF 25/893)",
-          "en": "Reporting of ICT-related Incidents and Cyber Threats under DORA (Circular CSSF 25/893)"
-        },
-        "sl": "circular-cssf-25-893-as-amended-by-circular-cssf-26-915-updated",
-        "s": {
-          "de": "Die CSSF-Rundschreiben 25/893 und 26/915 regeln die Meldung schwerwiegender IKT-bezogener Vorfälle und erheblicher Cyber-Bedrohungen gemäß der Verordnung über die digitale operationale Resilienz (DORA). Das Rundschreiben 25/893 wurde am 28. Mai 2025 veröffentlicht und am 27. August 2026 aktualisiert.\n\nDiese Rundschreiben sind für Finanzunternehmen relevant, die unter die DORA-Verordnung fallen. Sie legen fest, wie und wann schwerwiegende IKT-Vorfälle und Cyber-Bedrohungen an die CSSF zu melden sind, um die operationale Resilienz im Finanzsektor zu gewährleisten. Das Rundschreiben 26/915 präzisiert zudem die Anwendbarkeit von DORA auf Drittlandzweigstellen in Luxemburg.\n\nDas Rundschreiben CSSF 21/787 zur Anwendung der EBA-Leitlinien (EBA/GL/2021/03) über die Meldung schwerwiegender Vorfälle gemäß PSD2 wurde durch das Rundschreiben CSSF 25/893 aufgehoben.",
-          "en": "CSSF Circulars 25/893 and 26/915 regulate the reporting of major ICT-related incidents and significant cyber threats under the Digital Operational Resilience Act (DORA). Circular 25/893 was published on 28 May 2025 and updated on 27 August 2026.\n\nThese circulars are relevant for financial entities falling under the DORA regulation. They specify how and when major ICT incidents and cyber threats must be reported to the CSSF to ensure operational resilience in the financial sector. Circular 26/915 further clarifies the applicability of DORA to third-country branches in Luxembourg.\n\nCSSF Circular 21/787 on the application of the EBA Guidelines (EBA/GL/2021/03) on major incident reporting under PSD2 has been repealed by Circular CSSF 25/893."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-893/",
-        "imp": "high",
-        "refnum": "Circular CSSF 25/893"
-      },
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Anwendung der ESA-Leitlinien zu Kosten und Verlusten durch IKT-Vorfälle unter DORA (Circular CSSF 25/892)",
-          "en": "Application of ESA Guidelines on Costs and Losses from ICT Incidents under DORA (Circular CSSF 25/892)"
-        },
-        "sl": "circular-cssf-25-892-as-amended-by-circular-cssf-26-915-updated",
-        "s": {
-          "de": "Die CSSF-Rundschreiben 25/892 und 26/915 konkretisieren die Anwendung der gemeinsamen ESA-Leitlinien zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 entstehen.\n\nDies betrifft Finanzunternehmen, die unter die DORA-Verordnung fallen, und legt fest, wie sie die finanziellen Auswirkungen von IKT-Vorfällen zu bewerten und zu melden haben. Das Rundschreiben 26/915 präzisiert zudem die Anwendbarkeit von DORA auf Drittlandzweigstellen in Luxemburg.\n\nDie Aktualisierung erfolgte am 27. August 2026.",
-          "en": "CSSF Circulars 25/892 and 26/915 specify the application of the Joint ESA Guidelines on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under Regulation (EU) 2022/2554 (DORA).\n\nThis affects financial entities subject to the DORA Regulation, stipulating how they must assess and report the financial impact of ICT incidents. Circular 26/915 further clarifies the applicability of DORA to third-country branches in Luxembourg.\n\nThe update was published on August 27, 2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-892/",
-        "imp": "high",
-        "refnum": "Circular CSSF 25/892"
-      },
-      {
-        "d": "03.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "ESAs veröffentlichen ersten DORA-Bericht zu schwerwiegenden IKT-Vorfällen",
-          "en": "ESAs publish first DORA report on major ICT-related incidents"
-        },
-        "sl": "esas-publish-the-first-report-on-dora-major-ict-related-incidents",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben ihren ersten Jahresbericht über schwerwiegende IKT-Vorfälle im EU-Finanzsektor veröffentlicht. Dieser Bericht basiert auf dem durch DORA etablierten Meldemechanismus und zeigt, dass IKT-Risiken zunehmend grenzüberschreitend und vernetzt sind. Die Behörden betonen die Notwendigkeit für Finanzunternehmen, ihre Cybersicherheitsmaßnahmen angesichts der Entwicklung KI-gestützter Tools zu verstärken.\n\nDORA harmonisiert die Meldepflichten für IKT-Vorfälle und stellt sicher, dass schwerwiegende Vorfälle den zuständigen Behörden gemeldet werden, um eine koordinierte Reaktion zu ermöglichen. Der Bericht zeigt, dass etwa ein Drittel der 3.383 gemeldeten Vorfälle grenzüberschreitende Auswirkungen hatten, während die direkten Auswirkungen auf Kunden und Transaktionen meist begrenzt waren. Systemausfälle und externe Ereignisse waren die Hauptursachen, was die Bedeutung eines robusten Drittparteien-Risikomanagements und einer effektiven Aufsicht über ausgelagerte Dienste unterstreicht. Obwohl nur 10 % der Vorfälle auf Cybersicherheit zurückzuführen waren, ist es entscheidend, dass Finanzunternehmen höchste Cybersicherheitsstandards einhalten.\n\nDieser Bericht, der auf Artikel 22(2) der DORA-Verordnung basiert, wird jährlich veröffentlicht und liefert Daten zu Anzahl, Art, Auswirkungen, Abhilfemaßnahmen und Kosten von IKT-Vorfällen. Ein schwerwiegender IKT-Vorfall ist dabei definiert als ein Ereignis, das die Sicherheit von Netzwerk- und Informationssystemen beeinträchtigt und erhebliche negative Auswirkungen auf kritische Funktionen eines Finanzunternehmens hat.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published their first annual report on major ICT-related incidents in the EU financial sector. This report, based on the reporting mechanism established by DORA, indicates that ICT risks are increasingly borderless and interconnected. The authorities emphasize the need for financial entities to strengthen their cybersecurity measures in light of the development of AI-driven tools.\n\nDORA harmonizes reporting requirements for ICT incidents, ensuring that major incidents are notified to all competent authorities to enable a coordinated response. The report reveals that approximately one-third of the 3,383 reported incidents had cross-border impacts, while direct impacts on clients and transactions were generally limited. System failures and external events were the primary drivers, highlighting the importance of robust third-party risk management and effective oversight of outsourced services. Although only 10% of incidents were cybersecurity-related, it is crucial for financial entities to maintain the highest cybersecurity standards.\n\nThis report, based on Article 22(2) of the DORA regulation, will be published annually and provides data on the number, nature, impact, remedial actions, and costs of ICT incidents. A major ICT-related incident is defined as an event compromising the security of network and information systems with a high adverse impact on critical functions of a financial entity."
-        },
-        "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
-        "imp": "medium"
-      }
-    ],
-    "dorathirdparty": [
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Anforderungen an IKT-Drittdienstleistungen unter DORA (Circular CSSF 25/882)",
-          "en": "Requirements for ICT Third-Party Services under DORA (Circular CSSF 25/882)"
-        },
-        "sl": "circular-cssf-25-882-as-amended-by-circular-cssf-26-915-updated",
-        "s": {
-          "de": "Die CSSF-Rundschreiben 25/882 und 26/915 legen Anforderungen an die Nutzung von IKT-Drittdienstleistungen für Finanzunternehmen fest, die dem Digital Operational Resilience Act (DORA) unterliegen. Das Rundschreiben 25/882 wurde am 9. April 2025 veröffentlicht und am 27. August 2026 aktualisiert.\n\nDiese Rundschreiben sind für Finanzunternehmen relevant, die DORA unterliegen, und betreffen insbesondere deren Umgang mit IKT-Drittdienstleistern. Das Rundschreiben 26/915 präzisiert zudem die Anwendbarkeit von DORA auf Zweigniederlassungen aus Drittländern in Luxemburg.\n\nDie Aktualisierung des Rundschreibens 25/882 erfolgte am 27. August 2026.",
-          "en": "CSSF Circulars 25/882 and 26/915 establish requirements for the use of ICT third-party services by financial entities subject to the Digital Operational Resilience Act (DORA). Circular 25/882 was published on 9 April 2025 and updated on 27 August 2026.\n\nThese circulars are relevant for financial entities subject to DORA, particularly concerning their engagement with ICT third-party service providers. Circular 26/915 further clarifies the applicability of DORA to third-country branches in Luxembourg.\n\nThe update to Circular 25/882 was made on 27 August 2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-882/",
-        "imp": "high",
-        "refnum": "Circular CSSF 25/882"
       }
     ],
     "cssf18698": [
@@ -906,8 +784,8 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD II",
-          "en": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD II"
+          "de": "Mitteilung zu Management-Meldungen und Abmeldungen mit europäischem Pass für in Luxemburg ansässige IFMs – Änderungen durch AIFMD II",
+          "en": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD I"
         },
         "sl": "communication-regarding-management-notifications-and-de-notifications-with-a-eur",
         "s": {
@@ -925,7 +803,7 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "Launch of the ESMA Common Supervisory Action on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers",
+          "de": "Start der ESMA Common Supervisory Action zur Risikomanagementfunktion von UCITS-Verwaltungsgesellschaften und AIF-Managern",
           "en": "Launch of the ESMA Common Supervisory Action on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers"
         },
         "sl": "launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of",
@@ -944,8 +822,8 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "Communication to the investment fund industry in relation to the notification of the intention of a Luxembourg-based investment fund manager to provide ancillary services to third parties",
-          "en": "Communication to the investment fund industry in relation to the notification of the intention of a Luxembourg-based investment fund manager to provide ancillary services to third parties"
+          "de": "Mitteilung an die Investmentfondsbranche zur Erbringung von Nebendienstleistungen durch AIFM",
+          "en": "Communication to the investment fund industry in relation to the notification of the intention of a Luxembourg-based investment fund manager to provide ancillar"
         },
         "sl": "communication-to-the-investment-fund-industry-in-relation-to-the-notification-of",
         "s": {
@@ -1100,25 +978,6 @@
         "refnum": "ESMA32-992851010-1155"
       },
       {
-        "d": "21.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "CSSF FAQ on Sustainable Finance Disclosure Regulation (SFDR) (Updated)",
-          "en": "CSSF FAQ on Sustainable Finance Disclosure Regulation (SFDR) (Updated)"
-        },
-        "sl": "cssf-faq-on-sustainable-finance-disclosure-regulation-sfdr-updated",
-        "s": {
-          "de": "Die CSSF hat ihre FAQ zur Sustainable Finance Disclosure Regulation (SFDR) aktualisiert. Diese Version 5 bietet Klarstellungen zu verschiedenen Aspekten der Verordnung (EU) 2019/2088 über nachhaltigkeitsbezogene Offenlegungspflichten im Finanzdienstleistungssektor.\n\nDie Aktualisierung ist relevant für Finanzmarktteilnehmer und Finanzberater, die unter die SFDR fallen. Sie dient dazu, die Anwendung der Offenlegungspflichten zu präzisieren und die Einhaltung der Vorschriften zu erleichtern.\n\nDie FAQ wurden zuletzt am 21. Juli 2026 aktualisiert.",
-          "en": "The CSSF has updated its FAQ on the Sustainable Finance Disclosure Regulation (SFDR). This Version 5 provides clarifications regarding various aspects of Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services sector.\n\nThis update is relevant for financial market participants and financial advisors falling under the SFDR. It aims to clarify the application of disclosure requirements and facilitate compliance with the regulations.\n\nThe FAQ was last updated on July 21, 2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/cssf-faq-sustainable-finance-disclosure-regulation-sfdr/",
-        "imp": "medium"
-      },
-      {
         "d": "17.03.2026",
         "t": {
           "de": "Meldung",
@@ -1126,7 +985,7 @@
         },
         "src": "finance.ec.europa.eu",
         "ti": {
-          "de": "Commission seeks feedback on revision of criteria for sustainable economic activities",
+          "de": "Kommission bittet um Feedback zur Überarbeitung der Kriterien für nachhaltige Wirtschaftsaktivitäten",
           "en": "Commission seeks feedback on revision of criteria for sustainable economic activities"
         },
         "sl": "commission-seeks-feedback-on-revision-of-criteria-for-sustainable-economic-activ",
@@ -1145,7 +1004,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Integration of sustainability risks and factors in relation to insurance undertakings and insurance distributors",
+          "de": "Integration von Nachhaltigkeitsrisiken und -faktoren für Versicherungsunternehmen und -vertreiber",
           "en": "Integration of sustainability risks and factors in relation to insurance undertakings and insurance distributors"
         },
         "sl": "integration-of-sustainability-risks-and-factors-in-relation-to-insurance-underta",
@@ -1165,7 +1024,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Integration of sustainability risks and factors for undertakings for collective investment in transferable securities",
+          "de": "Integration von Nachhaltigkeitsrisiken und -faktoren für OGAW",
           "en": "Integration of sustainability risks and factors for undertakings for collective investment in transferable securities"
         },
         "sl": "integration-of-sustainability-risks-and-factors-for-undertakings-for-collective",
@@ -1185,7 +1044,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Strengthening the consideration of sustainability risks and factors for financial products (Directive (EU) 2017/593)",
+          "de": "Stärkung der Berücksichtigung von Nachhaltigkeitsrisiken und -faktoren für Finanzprodukte (RL (EU) 2017/593)",
           "en": "Strengthening the consideration of sustainability risks and factors for financial products (Directive (EU) 2017/593)"
         },
         "sl": "strengthening-the-consideration-of-sustainability-risks-and-factors-for-financia",
@@ -1196,6 +1055,26 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12067",
         "imp": "medium",
         "refnum": "Ares(2019)7317879"
+      },
+      {
+        "d": "25.05.2018",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Pflichten von institutionellen Anlegern und Vermögensverwaltern bezüglich Nachhaltigkeit",
+          "en": "Institutional investors' and asset managers' duties regarding sustainability"
+        },
+        "sl": "institutional-investors-and-asset-managers-duties-regarding-sustainability",
+        "s": {
+          "de": "Dieser Legislativvorschlag der Europäischen Kommission befasst sich mit den Pflichten von institutionellen Anlegern und Vermögensverwaltern im Hinblick auf Nachhaltigkeit. Er zielt darauf ab, die Berücksichtigung von Umwelt-, Sozial- und Governance-Faktoren (ESG) in deren Investitionsentscheidungen und Risikomanagement zu verankern.\n\nDie Regelungen sind für institutionelle Anleger und Vermögensverwalter relevant. Sie sollen sicherstellen, dass Nachhaltigkeitsrisiken und -chancen systematisch in ihre Prozesse integriert werden, was potenziell Auswirkungen auf die Anlagepolitik und die Offenlegungspflichten dieser Unternehmen hat.\n\nDer Vorschlag befindet sich im Adoptions-Workflow-Verfahren, was bedeutet, dass er noch nicht finalisiert ist und weitere Schritte im Gesetzgebungsprozess durchlaufen wird.",
+          "en": "This legislative proposal from the European Commission addresses the duties of institutional investors and asset managers regarding sustainability. It aims to embed the consideration of environmental, social, and governance (ESG) factors into their investment decisions and risk management.\n\nThese regulations are relevant for institutional investors and asset managers. They are intended to ensure that sustainability risks and opportunities are systematically integrated into their processes, potentially impacting these companies' investment policies and disclosure requirements.\n\nThe proposal is currently in the adoption workflow, meaning it is not yet finalized and will undergo further steps in the legislative process."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1185",
+        "imp": "medium",
+        "refnum": "Ares(2017)5524115"
       }
     ],
     "ris": [
@@ -1228,7 +1107,7 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "IRSG Response to EIOPA Consultation Paper on Proportional Reinsurance with Features Reducing Commensurateness",
+          "de": "IRSG-Antwort auf EIOPA-Konsultationspapier zu proportionaler Rückversicherung mit Merkmalen zur Reduzierung der Angemessenheit",
           "en": "IRSG Response to EIOPA Consultation Paper on Proportional Reinsurance with Features Reducing Commensurateness"
         },
         "sl": "irsg-response-to-eiopa-consultation-paper-on-proportional-reinsurance-with-featu",
@@ -1247,7 +1126,7 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year",
+          "de": "EIOPA schließt Solvency II-Überprüfung mit Leitlinien und Entwürfen technischer Standards ab",
           "en": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year"
         },
         "sl": "eiopa-completes-solvency-ii-review-mandate-with-final-guidelines-and-draft-techn",
@@ -1266,7 +1145,7 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "New proportionality framework under Solvency II",
+          "de": "Neuer Proportionalitätsrahmen unter Solvency II",
           "en": "New proportionality framework under Solvency II"
         },
         "sl": "new-proportionality-framework-under-solvency-ii",
@@ -1317,23 +1196,32 @@
         "imp": "high"
       },
       {
-        "d": "03.04.2026",
+        "d": "29.10.2025",
         "t": {
-          "de": "Gesetz",
-          "en": "Law"
+          "de": "Gesetzentwurf",
+          "en": "Bill"
         },
-        "src": "cssf.lu",
+        "src": "ec.europa.eu",
         "ti": {
-          "de": "Gesetz über Einrichtungen der betrieblichen Altersversorgung (SEPCAVs und ASSEPs) (konsolidierte Fassung) (Law of 13 July 2005)",
-          "en": "Law on Institutions for Occupational Retirement Provision (SEPCAVs and ASSEPs) (consolidated version) (Law of 13 July 2005)"
+          "de": "Delegierte Verordnung zur Überarbeitung der Aufsichtsregeln für Versicherungen (Solvency II) (Ares(2023)251034)",
+          "en": "Delegated Regulation Supplementing Prudential Rules for Insurance (Solvency II) (Ares(2023)251034)"
         },
-        "sl": "law-of-13-july-2005-consolidated-version-updated",
+        "sl": "delegated-regulation-supplementing-the-review-of-prudential-rules-for-the-insura",
         "s": {
-          "de": "Dieses Gesetz regelt die Rahmenbedingungen für Einrichtungen der betrieblichen Altersversorgung in Luxemburg, die als SEPCAVs (Société d'Epargne-Pension à Capital Variable) und ASSEPs (Association d'Epargne-Pension) organisiert sind. Es legt die rechtlichen Strukturen, Governance-Anforderungen und operativen Rahmenbedingungen für diese spezifischen Formen der betrieblichen Altersversorgung fest.\n\nDie Regelungen sind relevant für Unternehmen und Organisationen, die betriebliche Altersversorgungssysteme in Luxemburg über SEPCAVs und ASSEPs anbieten oder nutzen. Sie müssen sicherstellen, dass ihre Strukturen und Prozesse den gesetzlichen Anforderungen entsprechen, um die Einhaltung der Vorschriften zu gewährleisten.\n\nDie konsolidierte Fassung des Gesetzes vom 13. Juli 2005 wurde aktualisiert und ist mit Stand vom 3. April 2026 gültig.",
-          "en": "This law regulates the framework conditions for institutions for occupational retirement provision in Luxembourg, organized as SEPCAVs (Société d'Epargne-Pension à Capital Variable) and ASSEPs (Association d'Epargne-Pension). It establishes the legal structures, governance requirements, and operational frameworks for these specific forms of occupational retirement provision.\n\nThe regulations are relevant for companies and organizations that offer or use occupational retirement provision schemes in Luxembourg via SEPCAVs and ASSEPs. They must ensure that their structures and processes comply with the legal requirements to ensure regulatory compliance.\n\nThe consolidated version of the Law of 13 July 2005 has been updated and is valid as of April 3, 2026."
+          "de": "Die Europäische Kommission hat einen Entwurf für eine delegierte Verordnung zur Ergänzung der Überprüfung der Aufsichtsregeln für den Versicherungs- und Rückversicherungssektor (Solvency II) vorgelegt. Dieses Dokument ist Teil des Adoptionsprozesses und ergänzt die bestehenden Vorschriften.\n\nDie Verordnung ist für Versicherungs- und Rückversicherungsunternehmen in der EU relevant. Sie konkretisiert die prudenzielle Regulierung und erfordert eine Anpassung der internen Prozesse und Risikomanagementsysteme der betroffenen Institute. KPMG weist in einem Fachbeitrag auf die Vorstellung dieser delegierten Verordnung hin, was die Bedeutung für die Praxis unterstreicht.\n\nDerzeit befindet sich die Verordnung im Adoptions-Workflow der Europäischen Kommission.",
+          "en": "The European Commission has presented a draft delegated regulation supplementing the review of prudential rules for the insurance and reinsurance sector (Solvency II). This document is part of the adoption process and complements the existing regulations.\n\nThis regulation is relevant for insurance and reinsurance undertakings in the EU. It specifies prudential regulation and requires affected institutions to adapt their internal processes and risk management systems. KPMG highlights the presentation of this delegated regulation in an expert article, underscoring its practical significance.\n\nThe regulation is currently in the European Commission's adoption workflow."
         },
-        "url": "https://www.cssf.lu/en/Document/law-of-13-july-2005/",
-        "imp": "low"
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13690",
+        "imp": "medium",
+        "refnum": "Ares(2023)251034",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission stellt delegierte Verordnung zur Überarbeitung von Solvency II vor",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-stellt-delegierte-verordnung-zur-ueberarbeitung-von-solvency-ii-vor/",
+            "d": "31.10.2025"
+          }
+        ]
       }
     ],
     "gwg": [
@@ -1469,7 +1357,7 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs",
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
           "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
         },
         "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
@@ -1481,26 +1369,6 @@
         "imp": "medium"
       },
       {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs",
-          "en": "Consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "consultation-paper-on-the-reporting-framework-under-emir-for-clearing-activity-a",
-        "s": {
-          "de": "Die ESMA hat ein Konsultationspapier zum Meldewesen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-Zentralen Gegenparteien (TC-CCPs) veröffentlicht. Dieses Papier schlägt Entwürfe für Regulierungs- und technische Durchführungsstandards (RTS und ITS) vor, die den Inhalt und das Format einer jährlichen Meldepflicht für Clearing-Mitglieder und deren Kunden festlegen.\n\nDie Meldepflicht betrifft Clearing-Mitglieder und Kunden, die Dienstleistungen von anerkannten TC-CCPs nutzen. Ziel ist es, Informationen über die Clearing-Aktivitäten zu sammeln, wobei der Fokus auf der Wiederverwendung bereits verfügbarer Daten liegt, um den administrativen Aufwand zu minimieren. Die Meldung soll Angaben zu den Arten der geclearten Finanz- und Nicht-Finanzinstrumente, den durchschnittlichen geclearten Werten pro EU-Währung und Anlageklasse sowie den Margen umfassen.\n\nInteressierte Parteien, insbesondere Clearing-Mitglieder, Gegenparteien, die TC-CCPs nutzen, und die TC-CCPs selbst, sind zur Stellungnahme eingeladen. Die Konsultationsfrist endet am 12. Oktober 2026. Die ESMA plant, einen Abschlussbericht im vierten Quartal 2026 zu veröffentlichen.",
-          "en": "ESMA has published a consultation paper on the reporting framework under EMIR for clearing activity at recognised third-country Central Counterparties (TC-CCPs). This paper proposes draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) specifying the content and format of an annual reporting obligation for clearing members and their clients.\n\nThe reporting obligation applies to clearing members and clients accessing services of recognised TC-CCPs. The aim is to collect information on clearing activities, with a focus on reusing already available data to minimise administrative burden. The report should include details on the types of financial and non-financial instruments cleared, average cleared values per EU currency and asset class, and margins.\n\nInterested parties, particularly clearing members, counterparties using TC-CCPs, and the TC-CCPs themselves, are invited to comment. The consultation period closes on 12 October 2026. ESMA plans to publish a final report in Q4 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/consultation-paper-reporting-framework-under-emir-clearing-activity-recognised-third",
-        "imp": "medium",
-        "refnum": "ESMA12-2121844265-6008"
-      },
-      {
         "d": "03.08.2026",
         "t": {
           "de": "Meldung",
@@ -1508,7 +1376,7 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements",
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
           "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
         },
         "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
@@ -1546,7 +1414,7 @@
         },
         "src": "iosco.org",
         "ti": {
-          "de": "Public quantitative disclosure standards for central counterparties",
+          "de": "Öffentliche quantitative Offenlegungsstandards für zentrale Gegenparteien",
           "en": "Public quantitative disclosure standards for central counterparties"
         },
         "sl": "public-quantitative-disclosure-standards-for-central-counterparties",
@@ -1566,7 +1434,7 @@
         },
         "src": "iosco.org",
         "ti": {
-          "de": "Resilience of central counterparties (CCPs): Further guidance on the PFMI",
+          "de": "Widerstandsfähigkeit zentraler Gegenparteien (CCPs): Weitere Leitlinien zu den PFMI",
           "en": "Resilience of central counterparties (CCPs): Further guidance on the PFMI"
         },
         "sl": "resilience-of-central-counterparties-ccps-further-guidance-on-the-pfmi",
@@ -1577,6 +1445,25 @@
         "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
         "imp": "medium",
         "refnum": "OR/04/2026"
+      },
+      {
+        "d": "12.12.2025",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Überprüfung der Umsetzung der Margenanforderungen für nicht zentral abgerechnete Derivate",
+          "en": "Review of the implementation of margin requirements for non-centrally cleared derivatives"
+        },
+        "sl": "review-of-the-implementation-of-margin-requirements-for-non-centrally-cleared-de",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) und die Internationale Organisation der Wertpapieraufsichtsbehörden (IOSCO) haben eine Überprüfung der Umsetzung des Rahmenwerks für Margenanforderungen für nicht zentral abgewickelte Derivate veröffentlicht. Das Rahmenwerk wurde als Reaktion auf den G20-Aufruf von 2011 zur Stärkung der Widerstandsfähigkeit der Finanzmärkte eingeführt und in mehreren Phasen umgesetzt, wobei die letzte Phase im September 2022 begann.\n\nDie Überprüfung ergab keine wesentlichen Probleme mit dem Rahmenwerk. BCBS und IOSCO schlagen keine Änderungen vor, empfehlen jedoch eine fortgesetzte Überwachung durch den Austausch von Aufsichtsinformationen und Erfahrungen unter ihren Mitgliedern, um sich entwickelnde Marktpraktiken zu adressieren. Margin-Anforderungen reduzieren systemische Risiken und fördern das zentrale Clearing, indem sie das Kontrahentenrisiko bei nicht zentral abgewickelten Derivaten mindern und die Anhäufung unbesicherter Engagements begrenzen.\n\nDie Implementierung des Rahmenwerks erfolgte schrittweise, wobei die letzte Phase (Phase 6) im September 2022 begann und für Notionalbeträge von nicht zentral abgewickelten Derivaten ab 8 Mrd. EUR galt. Die Umsetzungszeitpläne variierten je nach Jurisdiktion, aber die meisten haben das Rahmenwerk umgesetzt.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) and the International Organization of Securities Commissions (IOSCO) have published a review of the implementation of the framework for margin requirements for non-centrally cleared derivatives. The framework was introduced in response to the 2011 G20 call to enhance the resilience of financial markets and was implemented in several phases, with the last phase beginning in September 2022.\n\nThe review found no material issues with the framework. BCBS and IOSCO do not propose changes to the framework but recommend continued monitoring through the exchange of supervisory information and sharing of experiences among their members to address evolving market practices. Margin requirements reduce systemic risk and promote central clearing by mitigating counterparty risk in non-centrally cleared derivatives and limiting the build-up of uncollateralized exposures.\n\nThe implementation of the framework occurred in phases, with the last phase (Phase 6) starting in September 2022, applicable to notional amounts of non-centrally cleared derivatives of EUR 8 billion and above. Implementation schedules varied across jurisdictions, but most have implemented the framework."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d606.htm",
+        "imp": "low"
       }
     ],
     "irrbb": [
@@ -1703,69 +1590,70 @@
         "refnum": "ESMA75-113276571-1625"
       },
       {
-        "d": "27.07.2026",
+        "d": "29.05.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Q&A",
+          "en": "Q&A"
         },
-        "src": "cssf.lu",
+        "src": "eba.europa.eu",
         "ti": {
-          "de": "Notification of white papers under Title II of MiCAR",
-          "en": "Notification of white papers under Title II of MiCAR"
+          "de": "Ablehnung einer EBA-Anfrage zu Eigenmittelanforderungen für hybride Finanzinstitute (2026_7834)",
+          "en": "EBA Rejection of Q&A on Own Funds for Hybrid Financial Institutions (2026_7834)"
         },
-        "sl": "notification-of-white-papers-under-title-ii-of-micar",
+        "sl": "own-funds-requirement-for-entities-authorized-as-crypto-asset-service-provider-c",
         "s": {
-          "de": "Die CSSF informiert über das Verfahren zur Notifizierung von Whitepapers gemäß Titel II der MiCAR. Anbieter von Kryptowerten, die keine vermögenswertreferenzierten Token (ARTs) oder E-Geld-Token (EMTs) sind, müssen ihr Whitepaper bei der CSSF einreichen, sofern Luxemburg der Herkunftsmitgliedstaat ist.\n\nDie Notifizierung erfolgt ab dem 3. August 2026 über die eDesk-Plattform mittels des Verfahrens „White Paper Notification“. Dieses Verfahren steht für Anbieter oder Personen, die die Zulassung zum Handel solcher Kryptowerte beantragen, zur Verfügung. Das Whitepaper im iXBRL-Format muss als .zip-Datei hochgeladen werden, während der Erläuterungsanhang im PDF-Format einzureichen ist.\n\nDies betrifft Emittenten und Handelsplattformbetreiber von Kryptowerten, die unter die MiCAR fallen und Luxemburg als ihren Herkunftsmitgliedstaat haben. Die Meldung ist relevant für die praktische Umsetzung der MiCAR-Anforderungen bezüglich der Veröffentlichung und Notifizierung von Whitepapers.",
-          "en": "The CSSF provides information on the procedure for notifying white papers under Title II of MiCAR. Offerors of crypto-assets other than asset-referenced tokens (ARTs) or e-money tokens (EMTs) must notify their white paper to the CSSF if Luxembourg is the home Member State.\n\nAs of August 3, 2026, the notification of white papers will be done via the eDesk platform using the dedicated procedure “White Paper Notification”. This procedure is available for offerors or persons seeking admission to trading of such crypto-assets. The white paper in iXBRL format must be uploaded as a .zip file, while the explanation annex must be submitted in PDF format.\n\nThis applies to issuers and trading platform operators of crypto-assets falling under MiCAR and having Luxembourg as their home Member State. The notification is relevant for the practical implementation of MiCAR requirements regarding the publication and notification of white papers."
+          "de": "Die EBA hat eine Anfrage bezüglich der Eigenmittelanforderungen für Unternehmen abgelehnt, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) gemäß Richtlinie 2009/110/EG und als Wertpapierfirma (IF) gemäß IFR/IFD zugelassen sind.\n\nDie Anfrage betraf insbesondere die Bestimmung der Eigenmittelanforderungen, wenn bestimmte Krypto-Dienstleistungen, wie die Übertragung von Krypto-Assets im Auftrag von Kunden, eine spezifische CASP-Autorisierung erfordern und keine expliziten Bestimmungen zur Interaktion der verschiedenen Aufsichtsrahmen existieren. Die EBA lehnte die Frage ab, da sie über den Rahmen des Q&A-Prozesses hinausgeht und eine Änderung des Rechtsrahmens erfordern würde.\n\nDie Ablehnung erfolgte am 29.05.2026. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, Fragen zu beantworten, die die Korrektheit des Rechtsrahmens in Frage stellen oder dessen Änderung erfordern würden.",
+          "en": "The EBA has rejected an inquiry regarding own funds requirements for entities authorized simultaneously as Crypto Asset Service Providers (CASP) under MiCAR, Electronic Money Institutions (EMI) under Directive 2009/110/EC, and Investment Firms (IF) under IFR/IFD.\n\nThe inquiry specifically concerned the determination of own funds requirements when certain crypto-asset services, such as the transfer of crypto-assets on behalf of clients, necessitate a specific CASP authorization, and explicit provisions governing the interaction between the different prudential frameworks are absent. The EBA rejected the question, stating it falls outside the scope of the Q&A process and would require a modification of the legal framework.\n\nThe rejection occurred on 29.05.2026. The EBA justified its decision by stating that the Q&A tool is not intended to answer questions that challenge the correctness of the legal framework or would necessitate its modification."
         },
-        "url": "https://www.cssf.lu/en/2026/07/notification-of-white-papers-under-title-ii-of-micar/",
-        "imp": "high"
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7834",
+        "imp": "medium",
+        "refnum": "2026_7834"
       },
       {
-        "d": "02.07.2026",
+        "d": "20.05.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
-        "src": "cssf.lu",
+        "src": "finance.ec.europa.eu",
         "ti": {
-          "de": "MiCA: Übergangsfrist für Krypto-Dienstleister endete am 1. Juli 2026",
-          "en": "MiCA: Transition period for crypto-asset service providers ended on 1 July 2026"
+          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
+          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
         },
-        "sl": "mica-transition-period-for-virtual-asset-service-providers-ended-on-1-july-2026",
+        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
         "s": {
-          "de": "Die Übergangsfrist für Virtual Asset Service Provider (VASPs) in der EU ist am 1. Juli 2026 abgelaufen. Anbieter dürfen ihre Dienste nun nur noch mit einer Zulassung als Crypto-Asset Service Provider (CASP) anbieten. Die CSSF informiert Verbraucher über Vorsichtsmaßnahmen und rät, die Zulassung des eigenen Anbieters zu prüfen.\n\nKunden von Krypto-Anbietern sollten die Website ihres Anbieters auf offizielle Namen und Zulassungen prüfen und die Register der ESMA oder der CSSF konsultieren. Anbieter aus Drittländern, die aktiv Dienste in der EU anbieten, benötigen ebenfalls eine CASP-Zulassung, es sei denn, es handelt sich um eine „Reverse Solicitation“, bei der der Kunde von sich aus den Kontakt aufnimmt. Eine missbräuchliche Berufung auf diese Ausnahme kann für Verbraucher Risiken bergen, da Anbieter möglicherweise kurzfristig Konten schließen müssen.\n\nAnbieter ohne entsprechende Zulassung müssen ihre Aktivitäten in der EU geordnet abwickeln. Dies bedeutet, dass sie keine neuen Kunden aufnehmen, keine neuen Konten eröffnen oder Produkte bewerben dürfen. Sie dürfen lediglich den Umtausch von Krypto-Assets in gesetzliche Zahlungsmittel, die Übertragung auf eine andere zugelassene Plattform oder die Übertragung in eine selbstverwaltete Wallet ermöglichen.",
-          "en": "The transition period for Virtual Asset Service Providers (VASPs) in the EU ended on July 1, 2026. Providers are now only permitted to offer their services with authorization as a Crypto-Asset Service Provider (CASP). The CSSF informs consumers about precautionary measures and advises them to check their provider's authorization.\n\nCustomers of crypto providers should check their provider's website for official names and authorizations and consult the ESMA or CSSF registers. Third-country providers actively offering services in the EU also require CASP authorization, unless it is a case of 'reverse solicitation' where the customer initiates contact. Misuse of this exemption can pose risks for consumers, as providers may have to close accounts at short notice.\n\nProviders without the appropriate authorization must wind down their activities in the EU in an orderly manner. This means they are not allowed to onboard new customers, open new accounts, or advertise products. They may only allow the exchange of crypto-assets for legal tender, transfer to another authorized platform, or transfer to a self-managed wallet."
+          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
+          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
         },
-        "url": "https://www.cssf.lu/en/2026/07/mica-transition-period-for-virtual-asset-service-providers-ended-on-1-july-2026/",
-        "imp": "high",
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
+        "imp": "medium",
         "adv": [
           {
-            "f": "Waldeck Rechtsanwälte",
-            "ti": "Geldwäsche(Compliance)risiken bei Wechsel von Crypto-Asset Service Provider",
-            "url": "https://www.waldvorlauternormen.com/geldwasche-compliance-risiken-bei-wechsel-von-crypto-asset-service-provider/",
-            "d": "09.07.2026"
+            "f": "KPMG",
+            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
+            "d": "21.05.2026"
           }
         ]
       },
       {
-        "d": "24.06.2026",
+        "d": "24.03.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Gesetzentwurf",
+          "en": "Bill"
         },
-        "src": "cssf.lu",
+        "src": "bundesfinanzministerium.de",
         "ti": {
-          "de": "ESMA fordert geordnete Abwicklung nicht autorisierter Krypto-Dienstleister nach MiCA-Übergangsfrist (CSSF)",
-          "en": "ESMA calls for orderly wind-down of unauthorised crypto-asset service providers after MiCA transitional period (CSSF)"
+          "de": "Gesetz zum automatischen Informationsaustausch über Kryptowerte (CARF MCAA)",
+          "en": "Law on Automatic Exchange of Information on Crypto-Assets (CARF MCAA)"
         },
-        "sl": "esma-calls-on-unauthorised-crypto-asset-service-providers-to-wind-down-orderly-w",
+        "sl": "austausch-informationen-kryptowerte",
         "s": {
-          "de": "Die ESMA fordert nicht autorisierte Krypto-Dienstleister (CASPs) auf, ihre Geschäftstätigkeit in der EU geordnet einzustellen und dabei die Interessen der Kunden zu wahren. Dies geschieht, da die Übergangsfrist der Markets in Crypto-Assets Regulation (MiCA) am 1. Juli 2026 endet. Nicht autorisierte CASPs müssen sofort aufhören, neue EU-Kunden aufzunehmen, neue Kundenbeziehungen oder Konten zu eröffnen und Marketingaktivitäten einzustellen.\n\nDie Dienstleistungen dieser CASPs sind auf Maßnahmen zu beschränken, die für den Verkauf oder Transfer von Krypto-Assets, die Umverteilung von Assets oder das Schließen von Positionen notwendig sind. Kunden müssen klar und wiederholt über die Maßnahmen zum Schutz ihrer Assets und die Abwicklungspläne informiert werden, einschließlich einer Frist für die automatische Schließung verbleibender Positionen. Die Abwicklung muss im Einklang mit allen relevanten EU- oder nationalen Verhaltensgesetzen und AML/CFT-Verpflichtungen erfolgen. Auch CASPs außerhalb der EU dürfen keine MiCA-Dienstleistungen für EU-Kunden anbieten oder diese anwerben.\n\nKunden nicht autorisierter CASPs werden darauf hingewiesen, dass sie nicht von den MiCA-Schutzmaßnahmen profitieren. Sie sollten prüfen, ob ihr Anbieter im ESMA-Register autorisiert ist, und gegebenenfalls ihre Krypto-Assets zu einem autorisierten CASP oder einer selbst gehosteten Wallet transferieren. ESMA und nationale zuständige Behörden (NCAs) werden die geordnete Abwicklung überwachen, um den Kundenschutz, die Finanzstabilität und die Marktintegrität zu gewährleisten.",
-          "en": "ESMA calls on unauthorised crypto-asset service providers (CASPs) to wind down their EU activities in an orderly manner, while safeguarding clients' interests, as the Markets in Crypto-Assets Regulation (MiCA) transitional period ends on 1 July 2026. Unauthorised CASPs must immediately stop onboarding new EU clients, refrain from opening new client relationships or accounts, and cease marketing activities.\n\nThe provision of services by these CASPs must be limited to actions necessary to sell or transfer crypto-assets, reallocate assets, or close positions. Clients must be clearly and repeatedly informed about measures taken to safeguard their assets and the wind-down plans, including a deadline for the automatic closure of any residual positions. The wind-down arrangements must comply with all relevant EU or national conduct laws and AML/CFT obligations. CASPs established outside the EU are also prohibited from providing MiCA services to EU clients or soliciting them.\n\nClients of unauthorised CASPs are reminded that they do not benefit from MiCA safeguards. They should verify if their provider is authorised in the ESMA Register and, if not, promptly transfer their crypto-assets to an authorised CASP or a self-hosted wallet. ESMA and National Competent Authorities (NCAs) will monitor the orderly wind-down, focusing on client protection, financial stability, and market integrity."
+          "de": "Das Bundesfinanzministerium hat einen Referentenentwurf für ein Gesetz zur Mehrseitigen Vereinbarung über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (CARF MCAA) veröffentlicht. Die OECD hat im Auftrag der G20 das Crypto-Asset Reporting Framework (CARF) entwickelt, um Transparenz im Steuerbereich bei Kryptowerten zu schaffen und Steuerhinterziehung zu verhindern.\n\nAnbieter von Krypto-Dienstleistungen sind verpflichtet, jährlich Informationen über Transaktionen mit Kryptowerten von im Ausland steuerlich ansässigen Personen an nationale Steuerbehörden zu melden. Diese Informationen werden dann automatisch mit den Steuerbehörden der jeweiligen Ansässigkeitsstaaten ausgetauscht. Das zugrunde liegende Kryptowerte-Steuertransparenz-Gesetz trat am 22. Dezember 2025 in Kraft.\n\nDeutschland hat das CARF MCAA am 26. November 2024 unterzeichnet. Das vorliegende Vertragsgesetz soll die notwendige Zustimmung der gesetzgebenden Körperschaften für die Notifikationen an die OECD gemäß § 7 Absatz 1 CARF MCAA einholen.",
+          "en": "The German Federal Ministry of Finance has published a draft bill for a law concerning the Multilateral Competent Authority Agreement on the Automatic Exchange of Information under the Crypto-Asset Reporting Framework (CARF MCAA). The OECD, on behalf of the G20, developed the Crypto-Asset Reporting Framework (CARF) to establish tax transparency for crypto assets and prevent tax evasion.\n\nCrypto-asset service providers are obliged to annually report information on crypto-asset transactions of tax residents abroad to national tax authorities. This information will then be automatically exchanged with the tax authorities of the respective countries of residence. The underlying Crypto-Asset Tax Transparency Act came into force on December 22, 2025.\n\nGermany signed the CARF MCAA on November 26, 2024. This draft law aims to obtain the necessary approval from the legislative bodies for the notifications to the OECD in accordance with Section 7 (1) of the CARF MCAA."
         },
-        "url": "https://www.cssf.lu/en/Document/esma-calls-on-unauthorised-crypto-asset-service-providers-to-wind-down-orderly-while-also-safeguarding-clients-interests-as-mica-transitional-period-ends/",
-        "imp": "high"
+        "url": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2026-03-24-Austausch-Informationen-Kryptowerte/0-Gesetz.html",
+        "imp": "medium"
       }
     ],
     "cssfaml": [
@@ -1789,25 +1677,6 @@
         "imp": "medium"
       },
       {
-        "d": "18.03.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Circular letter",
-          "en": "Circular letter"
-        },
-        "sl": "circular-letter",
-        "s": {
-          "de": "Der Text der Meldung ist nicht vorhanden. Daher kann keine Zusammenfassung erstellt werden.",
-          "en": "The text of the notification is not available. Therefore, no summary can be created."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-letter-2026-03-18/",
-        "imp": "high"
-      },
-      {
         "d": "03.11.2025",
         "t": {
           "de": "Q&A",
@@ -1815,7 +1684,7 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "FAQ regarding International Financial Sanctions (Updated)",
+          "de": "Häufig gestellte Fragen (FAQ) zu internationalen Finanzsanktionen (aktualisiert)",
           "en": "FAQ regarding International Financial Sanctions (Updated)"
         },
         "sl": "faq-regarding-international-financial-sanctions-updated",
@@ -1834,7 +1703,7 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "Grand-ducal Regulation of 11 June 2025",
+          "de": "Großherzogliche Verordnung vom 11. Juni 2025",
           "en": "Grand-ducal Regulation of 11 June 2025"
         },
         "sl": "grand-ducal-regulation-of-11-june-2025",
@@ -1853,7 +1722,7 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "FAQ on AML/CFT asset due diligence obligations in accordance with CSSF Regulation No 12-02",
+          "de": "FAQ zu AML/CFT-Sorgfaltspflichten gemäß CSSF-Verordnung Nr. 12-02",
           "en": "FAQ on AML/CFT asset due diligence obligations in accordance with CSSF Regulation No 12-02"
         },
         "sl": "faq-on-aml-cft-asset-due-diligence-obligations-in-accordance-with-cssf-regulatio",
@@ -1914,7 +1783,7 @@
         },
         "src": "srb.europa.eu",
         "ti": {
-          "de": "Banks continue to meet their MREL targets at year end 2025",
+          "de": "Banken erfüllen MREL-Ziele weiterhin zum Jahresende 2025",
           "en": "Banks continue to meet their MREL targets at year end 2025"
         },
         "sl": "banks-continue-to-meet-their-mrel-targets-at-year-end-2025",
@@ -1955,8 +1824,8 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "Contact points of national supervisory authorities for communication in the MiFID II framework on supervisory cooperation, authorisation, acquisitions and passporting",
-          "en": "Contact points of national supervisory authorities for communication in the MiFID II framework on supervisory cooperation, authorisation, acquisitions and passporting"
+          "de": "Kontaktstellen der nationalen Aufsichtsbehörden für Kommunikation im MiFID II-Rahmen zur aufsichtlichen Zusammenarbeit, Autorisierung, Akquisitionen und Passpor",
+          "en": "Contact points of national supervisory authorities for communication in the MiFID II framework on supervisory cooperation, authorisation, acquisitions and passp"
         },
         "sl": "contact-points-of-national-supervisory-authorities-for-communication-in-the-mifi",
         "s": {
@@ -1975,7 +1844,7 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds",
+          "de": "ESMA autorisiert EuroCTP als Consolidated Tape Provider für Aktien und ETFs",
           "en": "ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds"
         },
         "sl": "esma-authorises-euroctp-as-the-consolidated-tape-provider-for-shares-and-exchang",
@@ -2007,61 +1876,44 @@
         "refnum": "ESMA35-43-3327"
       },
       {
-        "d": "17.07.2026",
+        "d": "07.05.2025",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Gesetzentwurf",
+          "en": "Bill"
         },
-        "src": "cssf.lu",
+        "src": "ec.europa.eu",
         "ti": {
-          "de": "ESMA Supervisory briefing on Triangular Passporting within the framework of the MiFID II",
-          "en": "ESMA Supervisory briefing on Triangular Passporting within the framework of the MiFID II"
+          "de": "Bußgelder für Consolidated Tape Provider unter ESMA-Aufsicht",
+          "en": "Fines or penalty payments for consolidated tape providers under ESMA supervision."
         },
-        "sl": "esma-supervisory-briefing-on-triangular-passporting-within-the-framework-of-the",
+        "sl": "fines-or-penalty-payments-for-consolidated-tape-providers-under-esma-supervision",
         "s": {
-          "de": "Die ESMA hat ein Supervisory Briefing zum „Triangular Passporting“ im Rahmen der MiFID II veröffentlicht. Dieses Briefing definiert „Triangular Passporting“ als die Praxis, bei der eine nach MiFID II zugelassene Wertpapierfirma über eine Niederlassung oder einen gebundenen Vermittler in einem Aufnahmemitgliedstaat (Mitgliedstaat B) Anlageleistungen in einem anderen Aufnahmemitgliedstaat (Mitgliedstaat C) erbringt.\n\nDas Dokument legt das gemeinsame Verständnis der ESMA und der nationalen zuständigen Behörden (NCAs) für die Beaufsichtigung von Firmen dar, die Anlageleistungen mittels Triangular Passporting gemäß MiFID II erbringen. Es behandelt die Verantwortlichkeiten der Firmen, die Zuständigkeiten der Aufsichtsbehörden, allgemeine Informationen für Kunden sowie den Zugang von Kunden zu alternativen Streitbeilegungsmechanismen und Entschädigungssystemen.\n\nDas Supervisory Briefing wurde am 17. Juli 2026 veröffentlicht.",
-          "en": "ESMA has published a Supervisory Briefing on Triangular Passporting within the framework of MiFID II. This briefing defines 'Triangular Passporting' as the practice where an investment firm authorised under MiFID II uses a branch or tied agent established in a host Member State (Member State B) to provide investment services in another host Member State (Member State C).\n\nThe document outlines the common understanding of ESMA and National Competent Authorities (NCAs) regarding the supervision of firms providing investment services via Triangular Passporting under MiFID II. It covers firms' responsibilities, supervisory competences, general information to clients, and client access to alternative dispute resolution mechanisms and compensation schemes.\n\nThe Supervisory Briefing was published on 17 July 2026."
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag zu Geldbußen oder Strafzahlungen für Anbieter eines konsolidierten Datenträgers (Consolidated Tape Providers) unter der Aufsicht der ESMA vorgelegt.\n\nDieser Vorschlag ist für Unternehmen relevant, die als Consolidated Tape Providers agieren oder dies beabsichtigen, da er die finanziellen Konsequenzen bei Nichteinhaltung der Vorschriften regelt. Die ESMA wird die Aufsichtsbehörde sein, die diese Geldbußen verhängt.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Europäischen Kommission.",
+          "en": "The European Commission has submitted a legislative proposal concerning fines or penalty payments for Consolidated Tape Providers under ESMA supervision.\n\nThis proposal is relevant for companies acting or intending to act as Consolidated Tape Providers, as it regulates the financial consequences for non-compliance with regulations. ESMA will be the supervisory authority imposing these fines.\n\n The proposal is currently in the adoption workflow of the European Commission."
         },
-        "url": "https://www.cssf.lu/en/2026/07/esma-supervisory-briefing-on-triangular-passporting-within-the-framework-of-the-mifid-ii/",
-        "imp": "medium"
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13870",
+        "imp": "medium",
+        "refnum": "Ares(2023)3982104"
       },
       {
-        "d": "13.07.2026",
+        "d": "07.05.2025",
         "t": {
-          "de": "Q&A",
-          "en": "Q&A"
+          "de": "Gesetzentwurf",
+          "en": "Bill"
         },
-        "src": "cssf.lu",
+        "src": "ec.europa.eu",
         "ti": {
-          "de": "CSSF FAQ - MiFID II/MiFIR (Updated)",
-          "en": "CSSF FAQ - MiFID II/MiFIR (Updated)"
+          "de": "Aufsichtsgebühren für Consolidated Tape Provider (Ares(2023)4181925)",
+          "en": "Supervisory fees for Consolidated Tape Providers (Ares(2023)4181925)"
         },
-        "sl": "cssf-faq-mifid-ii-mifir-updated",
+        "sl": "supervisory-fees-for-consolidated-tape-providers",
         "s": {
-          "de": "Die CSSF hat ihre FAQ zu MiFID II/MiFIR aktualisiert. Die neue Version vom 13. Juli 2026 enthält Präzisierungen und Antworten auf häufig gestellte Fragen zur Anwendung der Richtlinie über Märkte für Finanzinstrumente (MiFID II) und der Verordnung über Märkte für Finanzinstrumente (MiFIR).\n\nDiese Aktualisierung ist relevant für alle Finanzinstitute, die unter die MiFID II/MiFIR-Regulierung fallen. Sie dient der Klärung von Auslegungsfragen und der Sicherstellung einer einheitlichen Anwendung der Vorschriften, was für die Compliance-Abteilungen von großer Bedeutung ist.",
-          "en": "The CSSF has updated its FAQ on MiFID II/MiFIR. The new version, dated 13 July 2026, provides clarifications and answers to frequently asked questions regarding the application of the Markets in Financial Instruments Directive (MiFID II) and the Markets in Financial Instruments Regulation (MiFIR).\n\nThis update is relevant for all financial institutions subject to MiFID II/MiFIR regulation. It aims to clarify interpretative issues and ensure a consistent application of the rules, which is of great importance for compliance departments."
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag zu Aufsichtsgebühren für Consolidated Tape Provider (CTP) vorgelegt. Dieser Entwurf legt die Gebührenstruktur und das Verfahren für die Erhebung dieser Gebühren fest, die zur Deckung der Aufsichtskosten der Europäischen Wertpapier- und Marktaufsichtsbehörde (ESMA) dienen.\n\nDer Vorschlag betrifft Unternehmen, die als Consolidated Tape Provider agieren oder dies beabsichtigen. Sie müssen sich auf die Entrichtung von Aufsichtsgebühren einstellen, die die Kosten der ESMA für die Überwachung ihrer Tätigkeiten decken sollen. Dies stellt eine direkte finanzielle Belastung für diese Marktteilnehmer dar.\n\nDer Legislativvorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er noch nicht final ist und Änderungen unterliegen kann.",
+          "en": "The European Commission has submitted a legislative proposal concerning supervisory fees for Consolidated Tape Providers (CTP). This draft outlines the fee structure and the procedure for collecting these fees, which are intended to cover the supervisory costs of the European Securities and Markets Authority (ESMA).\n\nThis proposal affects companies that operate or intend to operate as Consolidated Tape Providers. They must prepare for the payment of supervisory fees designed to cover ESMA's costs for overseeing their activities. This represents a direct financial burden for these market participants.\n\nThe legislative proposal is currently in the adoption workflow, meaning it is not yet final and may be subject to changes."
         },
-        "url": "https://www.cssf.lu/en/Document/cssf-faq-mifid-ii-mifir/",
-        "imp": "medium"
-      },
-      {
-        "d": "17.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "ESMA Statement on the results of the Common Supervisory Action on MiFID II sustainability aspects",
-          "en": "ESMA Statement on the results of the Common Supervisory Action on MiFID II sustainability aspects"
-        },
-        "sl": "esma-statement-on-the-results-of-the-common-supervisory-action-on-mifid-ii-susta",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme zu den Ergebnissen einer gemeinsamen Aufsichtsaktion (CSA) veröffentlicht, die 2024 und 2025 zur Integration von Nachhaltigkeitsaspekten in MiFID II durchgeführt wurde. Die CSA untersuchte, wie Wertpapierfirmen und Kreditinstitute Nachhaltigkeit in ihre Eignungsbeurteilungen sowie in ihre Produktüberwachungsprozesse integrieren.\n\nDie Ergebnisse zeigen, dass Unternehmen Fortschritte bei der Umsetzung der MiFID II-Nachhaltigkeitsanforderungen gemacht haben, aber die Praktiken EU-weit noch uneinheitlich sind und weitere Verbesserungen erforderlich sind. Die ESMA erkennt an, dass sich der Rahmen für nachhaltige Finanzen derzeit stark verändert und fordert die nationalen zuständigen Behörden (NCAs) auf, einen verhältnismäßigen Aufsichtsansatz zu verfolgen. Der Dialog mit Unternehmen zur Behebung festgestellter Mängel soll Vorrang vor sofortigen Durchsetzungsmaßnahmen haben, es sei denn, es liegen klare Verstöße oder Falschberatung vor.\n\nDie CSSF wird die Anwendung der MiFID-Nachhaltigkeitsvorschriften weiterhin mit einem verhältnismäßigen Aufsichtsansatz überwachen. Dabei werden der Umfang und die Intensität der Aufsichtsmaßnahmen sowohl die spezifischen Risiken und Umstände der betroffenen Unternehmen als auch die mögliche Entwicklung des regulatorischen Rahmens berücksichtigen.",
-          "en": "ESMA has published a statement on the results of a Common Supervisory Action (CSA) conducted in 2024 and 2025 on the integration of MiFID II sustainability aspects. The CSA examined how investment firms and credit institutions integrate sustainability into their suitability assessments and product governance processes.\n\nThe findings indicate that firms have made progress in implementing MiFID II sustainability requirements, but practices remain uneven across the EU, and further improvements are needed. ESMA acknowledges that the sustainable finance framework is undergoing significant changes and encourages National Competent Authorities (NCAs) to adopt a proportionate supervisory approach. Dialogue with firms to address identified issues should be prioritised over immediate enforcement actions, except in cases involving clear breaches or mis-selling.\n\nThe CSSF will continue to oversee the application of MiFID sustainability-related rules through a proportionate supervisory approach. The scope and intensity of supervisory actions will consider both the specific risks and circumstances of the entities concerned and the potential evolution of the regulatory framework."
-        },
-        "url": "https://www.cssf.lu/en/2026/06/esma-statement-on-the-results-of-the-common-supervisory-action-on-mifid-ii-sustainability-aspects/",
-        "imp": "medium"
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13879",
+        "imp": "medium",
+        "refnum": "Ares(2023)4181925"
       }
     ],
     "securitisation": [
@@ -2073,7 +1925,7 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "List of Synthetic Securitisations notified to ESMA",
+          "de": "Liste der an ESMA gemeldeten synthetischen Verbriefungen",
           "en": "List of Synthetic Securitisations notified to ESMA"
         },
         "sl": "list-of-synthetic-securitisations-notified-to-esma",
@@ -2093,7 +1945,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Review of prudential rules for the insurance and reinsurance sector (Solvency II) as regards securitisation",
+          "de": "Überprüfung der Aufsichtsregeln für Versicherungen (Solvency II) bzgl. Verbriefungen",
           "en": "Review of prudential rules for the insurance and reinsurance sector (Solvency II) as regards securitisation"
         },
         "sl": "review-of-prudential-rules-for-the-insurance-and-reinsurance-sector-solvency-ii",
@@ -2259,7 +2111,7 @@
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "Risk weights assignment to IPRE exposures secured by many properties",
+          "de": "Risikogewichtung von IPRE-Engagements, die durch viele Immobilien besichert sind",
           "en": "Risk weights assignment to IPRE exposures secured by many properties"
         },
         "sl": "risk-weights-assignment-to-ipre-exposures-secured-by-many-properties",
@@ -2321,7 +2173,7 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector",
+          "de": "EBA, EIOPA und ESMA fordern verbesserte Governance und konsistente Aufsicht zur Minderung von IKT-Risiken durch KI-Modelle im EU-Finanzsektor",
           "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
         },
         "sl": "eba-eiopa-and-esma-call-for-enhanced-governance-and-consistent-supervision-to-mi",
@@ -2342,7 +2194,7 @@
         },
         "src": "srb.europa.eu",
         "ti": {
-          "de": "SRB focuses its resolvability assessment on operational readiness and testing",
+          "de": "SRB konzentriert seine Abwicklungsbewertung auf operationelle Bereitschaft und Tests",
           "en": "SRB focuses its resolvability assessment on operational readiness and testing"
         },
         "sl": "srb-focuses-its-resolvability-assessment-on-operational-readiness-and-testing",
@@ -2403,7 +2255,7 @@
         },
         "src": "digital-strategy.ec.europa.eu",
         "ti": {
-          "de": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+          "de": "Kommission beginnt am 2. August mit der Durchsetzung der KI-Gesetz-Regeln und neuer Transparenzanforderungen",
           "en": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August"
         },
         "sl": "commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-on-2",
@@ -2460,7 +2312,7 @@
         },
         "src": "digital-strategy.ec.europa.eu",
         "ti": {
-          "de": "AI Omnibus enters into force",
+          "de": "KI-Omnibus tritt in Kraft",
           "en": "AI Omnibus enters into force"
         },
         "sl": "ai-omnibus-enters-into-force",
@@ -2479,7 +2331,7 @@
         },
         "src": "digital-strategy.ec.europa.eu",
         "ti": {
-          "de": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems",
+          "de": "Kommission veröffentlicht Leitlinien zu Transparenzpflichten für KI-Systeme",
           "en": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
         },
         "sl": "commission-publishes-guidelines-on-transparency-obligations-for-providers-and-de",
@@ -2513,25 +2365,6 @@
         "refnum": "08/2026"
       },
       {
-        "d": "03.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Law of 17 April 2018 (consolidated version) (Updated)",
-          "en": "Law of 17 April 2018 (consolidated version) (Updated)"
-        },
-        "sl": "law-of-17-april-2018-consolidated-version-updated",
-        "s": {
-          "de": "Das Gesetz vom 17. April 2018 in konsolidierter Fassung wurde aktualisiert. Es regelt die wesentlichen Informationsdokumente (Key Information Documents, KID) für verpackte Anlageprodukte für Kleinanleger und Versicherungsanlageprodukte (Packaged Retail and Insurance-based Investment Products, PRIIPs).\n\nDiese Aktualisierung ist relevant für Finanzinstitute, die PRIIPs vertreiben oder entwickeln, da sie die Anforderungen an die Offenlegung von Informationen gegenüber Kleinanlegern festlegt. Die Einhaltung der Vorschriften ist entscheidend, um Transparenz zu gewährleisten und Anlegerschutz zu bieten.\n\nDie konsolidierte Fassung ist seit dem 03.04.2026 gültig.",
-          "en": "The consolidated version of the Law of 17 April 2018 has been updated. It governs the key information documents (KID) for packaged retail and insurance-based investment products (PRIIPs).\n\nThis update is relevant for financial institutions that distribute or develop PRIIPs, as it sets out the requirements for disclosing information to retail investors. Compliance with these regulations is crucial to ensure transparency and provide investor protection.\n\nThe consolidated version has been in effect since 03.04.2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/law-of-17-april-2018/",
-        "imp": "low"
-      },
-      {
         "d": "15.07.2021",
         "t": {
           "de": "Gesetzentwurf",
@@ -2539,7 +2372,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Quick fix to the PRIIPs Regulation",
+          "de": "PRIIPs-Verordnung: Schnellkorrektur",
           "en": "Quick fix to the PRIIPs Regulation"
         },
         "sl": "quick-fix-to-the-priips-regulation",
@@ -2561,8 +2394,8 @@
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "​The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive",
-          "en": "​The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
+          "de": "EBA-Konsultation zur weiteren Verbesserung des Einlegerschutzes (DGS-Richtlinie)",
+          "en": "The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
         },
         "sl": "the-eba-consults-on-rules-to-further-improve-depositor-protection-under-the-revi",
         "s": {
@@ -2580,7 +2413,7 @@
         },
         "src": "srb.europa.eu",
         "ti": {
-          "de": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”",
+          "de": "SRB begrüßt EU-Kommunikation zur Wettbewerbsfähigkeit des Bankensektors",
           "en": "The Single Resolution Board welcomes the European Commission's “Communication on the Competitiveness of the Banking Sector and the Single Market in Banking”"
         },
         "sl": "the-single-resolution-board-welcomes-the-european-commission-s-communication-on",
@@ -2599,7 +2432,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)",
+          "de": "Bankenunion: Überprüfung des Krisenmanagement- und Einlagensicherungsrahmens (DGSD review)",
           "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (DGSD review)"
         },
         "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
@@ -2619,7 +2452,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (SRMR review)",
+          "de": "Bankenunion: Überprüfung des Krisenmanagement- und Einlagensicherungsrahmens (SRMR review)",
           "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (SRMR review)"
         },
         "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
@@ -2639,7 +2472,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Banking Union: Review of the bank crisis management and deposit insurance framework (BRRD review)",
+          "de": "Bankenunion: Überprüfung des Rahmens für Krisenmanagement und Einlagensicherung (BRRD-Überprüfung)",
           "en": "Banking Union: Review of the bank crisis management and deposit insurance framework (BRRD review)"
         },
         "sl": "banking-union-review-of-the-bank-crisis-management-and-deposit-insurance-framewo",
@@ -2661,7 +2494,7 @@
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "Consultation on Guidelines on investment of available financial means",
+          "de": "Konsultation zu Leitlinien für die Anlage verfügbarer Finanzmittel",
           "en": "Consultation on Guidelines on investment of available financial means"
         },
         "sl": "consultation-on-guidelines-on-investment-of-available-financial-means",
@@ -2782,7 +2615,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Long Term Investment Funds – Review of EU rules",
+          "de": "Langfristige Investmentfonds – Überprüfung der EU-Vorschriften",
           "en": "Long Term Investment Funds – Review of EU rules"
         },
         "sl": "long-term-investment-funds-review-of-eu-rules",
@@ -2802,7 +2635,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Alternative Investment Fund Managers – review of EU rules",
+          "de": "Verwalter alternativer Investmentfonds – Überprüfung der EU-Vorschriften",
           "en": "Alternative Investment Fund Managers – review of EU rules"
         },
         "sl": "alternative-investment-fund-managers-review-of-eu-rules",
@@ -2822,7 +2655,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Integration of sustainability risks and factors related to alternative investment fund managers",
+          "de": "Integration von Nachhaltigkeitsrisiken und -faktoren für AIFM",
           "en": "Integration of sustainability risks and factors related to alternative investment fund managers"
         },
         "sl": "integration-of-sustainability-risks-and-factors-related-to-alternative-investmen",
@@ -2844,7 +2677,7 @@
         },
         "src": "esma.europa.eu",
         "ti": {
-          "de": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines",
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
           "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
         },
         "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
@@ -2863,7 +2696,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Central securities depositories – review of EU rules",
+          "de": "Zentralverwahrer – Überprüfung der EU-Vorschriften",
           "en": "Central securities depositories – review of EU rules"
         },
         "sl": "central-securities-depositories-review-of-eu-rules",
@@ -2901,33 +2734,6 @@
             "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
             "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
             "d": "07.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Öffentliche Konsultation der ESMA zur Vereinfachung des EU-Taxonomie-Offenlegungsrahmens (CSSF)",
-          "en": "ESMA Public Consultation on Simplifying EU Taxonomy Disclosure Framework (CSSF)"
-        },
-        "sl": "public-consultation-by-esma-until-12-august-2026-on-simplifying-eu-taxonomy-disc",
-        "s": {
-          "de": "Die CSSF weist auf eine öffentliche Konsultation der ESMA hin, die sich mit der Vereinfachung des Offenlegungsrahmens der EU-Taxonomie befasst. Ziel ist es, den Berichtsaufwand für Marktteilnehmer zu reduzieren, indem ausgewählte KPIs des Taxonomy Disclosures Delegated Act überprüft werden.\n\nDie Konsultation wurde am 1. Juli 2026 von ESMA gestartet und ist Teil einer umfassenderen Überprüfung des Taxonomie-Offenlegungsrahmens, die von der Europäischen Kommission angefordert wurde. Auch die EBA und EIOPA führen entsprechende Konsultationen durch, um spezifische und horizontale Themen zu adressieren. Die CSSF ermutigt Marktteilnehmer ausdrücklich zur Beteiligung.\n\nDie Konsultation läuft bis zum 12. August 2026. Am 22. Juli findet eine öffentliche Anhörung statt, in der die Vorschläge präsentiert und mit den Stakeholdern diskutiert werden.",
-          "en": "The CSSF draws attention to a public consultation by ESMA concerning the simplification of the EU Taxonomy disclosure framework. The aim is to reduce the reporting burden for market participants by reviewing selected KPIs of the Taxonomy Disclosures Delegated Act.\n\nThe consultation was launched by ESMA on 1 July 2026 and is part of a broader review of the Taxonomy disclosure framework requested by the European Commission. The EBA and EIOPA are also conducting similar consultations to address specific and horizontal issues. The CSSF strongly encourages market participants to contribute.\n\nThe consultation is open until 12 August 2026. A public hearing will be held on 22 July to present the proposals and engage with stakeholders."
-        },
-        "url": "https://www.cssf.lu/en/Document/public-consultation-by-esma-until-12-august-2026-on-simplifying-eu-taxonomy-disclosure-framework/",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: Konsultationen zur Vereinfachung der EU-Taxonomie",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255637/konsultationen-zur-vereinfachung-der-eu-taxonomie/",
-            "d": "02.07.2026"
           }
         ]
       },
@@ -2973,7 +2779,7 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities",
+          "de": "EIOPA konsultiert Verbesserungen der Unternehmensangaben zur EU-Taxonomie (Versicherung)",
           "en": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities"
         },
         "sl": "eiopa-consults-on-enhancements-to-insurance-corporate-disclosures-under-eu-taxon",
@@ -3020,7 +2826,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Targeted review of the taxonomy disclosures delegated act",
+          "de": "Gezielte Überprüfung des delegierten Rechtsakts zu Taxonomie-Offenlegungen",
           "en": "Targeted review of the taxonomy disclosures delegated act"
         },
         "sl": "targeted-review-of-the-taxonomy-disclosures-delegated-act",
@@ -3051,27 +2857,6 @@
           "en": "The European Banking Authority (EBA) has released the final technical package for version 4.3 of its reporting framework. This package implements new reporting requirements for Third-Country Branches (TCBs) under the Capital Requirements Directive (CRD) and supports the Anti-Money Laundering Authority's (AMLA) data collection for risk assessment.\n\nThe technical package includes standard specifications such as validation rules, the Data Point Model (DPM), and XBRL taxonomies. It facilitates the implementation of the final draft Implementing Technical Standards (ITS) for TCBs and AMLA's risk assessment reporting, aimed at identifying obliged entities under AMLA's direct supervision. Additionally, a new Glossary Usage Exploration file has been published to simplify the use of the reporting framework and aid in interpreting reporting requirements.\n\nFor TCB reporting obligations, the first reference date is 31 March 2027. For AMLA risk assessment reporting, the first reference date is 31 December 2026. The EBA may issue a targeted update (\"hotfix\") at the end of September if critical clarifications or adjustments are needed."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-its-43-reporting-framework-support-third-country-branches",
-        "imp": "high"
-      }
-    ],
-    "esgrating": [
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Anwendung der ESG-Ratings-Verordnung und neue Offenlegungspflichten unter SFDR (CSSF)",
-          "en": "Application of ESG Ratings Regulation and new disclosure requirements under SFDR (CSSF)"
-        },
-        "sl": "communication-to-market-participants-on-the-application-of-the-esg-ratings-regul",
-        "s": {
-          "de": "Die CSSF weist Marktteilnehmer auf die Anwendung der ESG-Ratings-Verordnung (EU) 2024/3005 hin, die ab dem 2. Juli 2026 gilt. Diese Verordnung führt eine neue Offenlegungspflicht gemäß Artikel 49 ein, der Artikel 13 der SFDR ändert.\n\nFinanzmarktteilnehmer und Finanzberater, die in den Anwendungsbereich der SFDR fallen und ESG-Ratings im Rahmen ihrer Marketingmitteilungen an Dritte herausgeben und offenlegen, müssen dieselben Informationen wie in Anhang III Punkt 1 der ESG-Ratings-Verordnung auf ihrer Website bereitstellen. Zudem müssen sie in diesen Marketingmitteilungen einen Link zu den Website-Offenlegungen angeben. Die CSSF erwartet die Einhaltung dieser Bestimmungen ab dem 2. Juli 2026.\n\nDie CSSF wird die regulatorischen Entwicklungen bezüglich der SFDR weiterhin beobachten und einen verhältnismäßigen Aufsichtsansatz verfolgen. Bis zum 2. November 2026 dürfen Dritte weiterhin ESG-Ratings von bestehenden, noch nicht autorisierten Anbietern veröffentlichen oder verbreiten, die ESMA ihre Absicht zur Fortführung des Betriebs in der Union mitgeteilt haben, bis ESMA eine Entscheidung über die Autorisierung getroffen hat.",
-          "en": "The CSSF draws market participants' attention to the application of the ESG Ratings Regulation (EU) 2024/3005, which will apply from 2 July 2026. This regulation introduces a new disclosure requirement under Article 49, amending Article 13 of the SFDR.\n\nFinancial market participants and financial advisers falling within the scope of the SFDR, who issue and disclose ESG ratings to third parties as part of their marketing communications, must include the same information as required by Annex III point 1 of the ESG Ratings Regulation on their website. Furthermore, they must include a link to these website disclosures in their marketing communications. The CSSF expects compliance with these provisions from 2 July 2026.\n\nThe CSSF will continue to monitor regulatory developments concerning the SFDR and will adopt a proportionate supervisory approach. Until 2 November 2026, third parties may continue to publish or distribute ESG ratings issued by existing, but not yet authorised, providers who have notified ESMA of their intention to continue operating in the Union, until ESMA has made a decision on authorisation."
-        },
-        "url": "https://www.cssf.lu/en/2026/07/communication-to-market-participants-on-the-application-of-the-esg-ratings-regulation-and-the-new-disclosure-requirements-under-the-sfdr/",
         "imp": "high"
       }
     ],
@@ -3168,7 +2953,7 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "EIOPA peer review follow-up shows progress in product oversight and governance supervision",
+          "de": "EIOPA-Peer-Review zeigt Fortschritte bei Produktaufsicht und Governance",
           "en": "EIOPA peer review follow-up shows progress in product oversight and governance supervision"
         },
         "sl": "eiopa-peer-review-follow-up-shows-progress-in-product-oversight-and-governance-s",
@@ -3187,7 +2972,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "DA on product oversight and governance requirements for insurance undertakings and insurance distributors",
+          "de": "DA zu Produktaufsichts- und Governance-Anforderungen für Versicherungsunternehmen und -vertreiber",
           "en": "DA on product oversight and governance requirements for insurance undertakings and insurance distributors"
         },
         "sl": "da-on-product-oversight-and-governance-requirements-for-insurance-undertakings-a",
@@ -3200,27 +2985,6 @@
         "refnum": "Ares(2017)3675955"
       }
     ],
-    "tfr": [
-      {
-        "d": "26.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Public consultation by FATF by 21 August 2026 on guidance to increase payment transparency - “travel rule”",
-          "en": "Public consultation by FATF by 21 August 2026 on guidance to increase payment transparency - “travel rule”"
-        },
-        "sl": "public-consultation-by-fatf-by-21-august-2026-on-guidance-to-increase-payment-tr",
-        "s": {
-          "de": "Die CSSF weist auf eine öffentliche Konsultation der Financial Action Task Force (FATF) hin, die sich auf die Umsetzung der aktualisierten FATF-Empfehlung 16 konzentriert. Ziel ist es, die Transparenz von Zahlungen bis 2030 zu erhöhen, insbesondere im Hinblick auf die sogenannte „Travel Rule“.\n\nDiese Konsultation ist für Finanzinstitute relevant, die von der „Travel Rule“ betroffen sind, da sie die zukünftigen Anforderungen an die Transparenz von Zahlungen prägen wird. Die CSSF ermutigt ausdrücklich Beiträge aus dem Privatsektor.\n\nDie Konsultation wurde am 24. Juni 2026 von der FATF gestartet und läuft bis zum 21. August 2026.",
-          "en": "The CSSF draws attention to a public consultation by the Financial Action Task Force (FATF) focusing on the implementation of the updated FATF Recommendation 16. The aim is to increase payment transparency by 2030, particularly concerning the “Travel Rule.”\n\nThis consultation is relevant for financial institutions affected by the “Travel Rule,” as it will shape future requirements for payment transparency. The CSSF explicitly encourages contributions from the private sector.\n\nThe consultation was launched by the FATF on June 24, 2026, and will remain open until August 21, 2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/public-consultation-by-fatf-by-21-august-2026-on-guidance-to-increase-payment-transparency-travel-rule/",
-        "imp": "medium"
-      }
-    ],
     "luaifm": [
       {
         "d": "19.06.2026",
@@ -3230,8 +2994,8 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "Publication of two new forms relating to proposals for UCITS domestic merger (Law of 17 December 2010) and outbound cross-border merger with the receiving UCITS in another Member State (Directive …",
-          "en": "Publication of two new forms relating to proposals for UCITS domestic merger (Law of 17 December 2010) and outbound cross-border merger with the receiving UCITS in another Member State (Directive …"
+          "de": "Veröffentlichung zweier neuer Formulare für UCITS-Fusionen (national und grenzüberschreitend)",
+          "en": "Publication of two new forms relating to proposals for UCITS domestic merger (Law of 17 December 2010) and outbound cross-border merger with the receiving UCITS"
         },
         "sl": "publication-of-two-new-forms-relating-to-proposals-for-ucits-domestic-merger-law",
         "s": {
@@ -3249,7 +3013,7 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "FAQ concerning MMFR (Updated)",
+          "de": "Häufig gestellte Fragen (FAQ) zur MMFR (aktualisiert)",
           "en": "FAQ concerning MMFR (Updated)"
         },
         "sl": "faq-concerning-mmfr-updated",
@@ -3339,27 +3103,6 @@
         "imp": "low"
       }
     ],
-    "ebaderisking": [
-      {
-        "d": "16.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "De-risking Practices and ML/FT Risk Management",
-          "en": "De-risking Practices and ML/FT Risk Management"
-        },
-        "sl": "de-risking-practices-and-ml-ft-risk-management",
-        "s": {
-          "de": "Die CSSF stellt klar, dass Finanzinstitute Geldwäsche- und Terrorismusfinanzierungsrisiken (ML/FT-Risiken) effektiv managen, aber nicht vermeiden sollen. Ein höheres ML/FT-Risiko rechtfertigt nicht pauschal die Ablehnung von Geschäftsbeziehungen. Institute dürfen keine ganzen Kategorien von Kunden, Produkten oder Dienstleistungen verbieten, es sei denn, dies ist gesetzlich vorgeschrieben.\n\nDie CSSF greift grundsätzlich nicht in Geschäftsmodelle oder kommerzielle Entscheidungen von Finanzinstituten ein. Eine Ablehnung von Kunden aufgrund mangelnder Rentabilität bei hohem ML/FT-Risiko ist eine strategische Geschäftsentscheidung, keine von der CSSF auferlegte „De-Risking“-Maßnahme. Kunden müssen aktiv kooperieren und vollständige Informationen bereitstellen, um die Eröffnung von Bankkonten zu ermöglichen.\n\nDie EBA und die EU-Geldwäschebehörde (AMLA) werden bis Juli 2027 gemeinsame Leitlinien zu Maßnahmen zur Einhaltung der AML/CFT-Vorschriften herausgeben, insbesondere im Hinblick auf Geschäftsbeziehungen, die am stärksten von De-Risking-Praktiken betroffen sind.",
-          "en": "The CSSF clarifies that financial institutions should effectively manage, but not avoid, money laundering and terrorist financing (ML/FT) risks. A higher ML/FT risk does not automatically justify refusing business relationships. Institutions may not generally ban entire categories of clients, products, or services unless expressly provided for by law.\n\nThe CSSF generally does not intervene in the business models or commercial decisions of financial sector professionals. Refusing clients due to unprofitability in the face of high ML/FT risk is a strategic business decision, not a “de-risking” measure imposed by the CSSF. Clients must actively cooperate and provide complete information to facilitate the opening of bank accounts.\n\nThe EBA and the EU Anti-Money Laundering Authority (AMLA) will issue joint guidelines by July 2027 on measures to ensure compliance with AML/CFT rules, particularly concerning business relationships most affected by de-risking practices."
-        },
-        "url": "https://www.cssf.lu/en/2026/06/de-risking-practices-and-ml-ft-risk-management/",
-        "imp": "low"
-      }
-    ],
     "ifr": [
       {
         "d": "15.06.2026",
@@ -3402,6 +3145,27 @@
         "refnum": "2026_7836"
       }
     ],
+    "doraincident": [
+      {
+        "d": "03.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "ESAs veröffentlichen ersten DORA-Bericht zu schwerwiegenden IKT-Vorfällen",
+          "en": "ESAs publish first DORA report on major ICT-related incidents"
+        },
+        "sl": "esas-publish-the-first-report-on-dora-major-ict-related-incidents",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben ihren ersten Jahresbericht über schwerwiegende IKT-Vorfälle im EU-Finanzsektor veröffentlicht. Dieser Bericht basiert auf dem durch DORA etablierten Meldemechanismus und zeigt, dass IKT-Risiken zunehmend grenzüberschreitend und vernetzt sind. Die Behörden betonen die Notwendigkeit für Finanzunternehmen, ihre Cybersicherheitsmaßnahmen angesichts der Entwicklung KI-gestützter Tools zu verstärken.\n\nDORA harmonisiert die Meldepflichten für IKT-Vorfälle und stellt sicher, dass schwerwiegende Vorfälle den zuständigen Behörden gemeldet werden, um eine koordinierte Reaktion zu ermöglichen. Der Bericht zeigt, dass etwa ein Drittel der 3.383 gemeldeten Vorfälle grenzüberschreitende Auswirkungen hatten, während die direkten Auswirkungen auf Kunden und Transaktionen meist begrenzt waren. Systemausfälle und externe Ereignisse waren die Hauptursachen, was die Bedeutung eines robusten Drittparteien-Risikomanagements und einer effektiven Aufsicht über ausgelagerte Dienste unterstreicht. Obwohl nur 10 % der Vorfälle auf Cybersicherheit zurückzuführen waren, ist es entscheidend, dass Finanzunternehmen höchste Cybersicherheitsstandards einhalten.\n\nDieser Bericht, der auf Artikel 22(2) der DORA-Verordnung basiert, wird jährlich veröffentlicht und liefert Daten zu Anzahl, Art, Auswirkungen, Abhilfemaßnahmen und Kosten von IKT-Vorfällen. Ein schwerwiegender IKT-Vorfall ist dabei definiert als ein Ereignis, das die Sicherheit von Netzwerk- und Informationssystemen beeinträchtigt und erhebliche negative Auswirkungen auf kritische Funktionen eines Finanzunternehmens hat.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published their first annual report on major ICT-related incidents in the EU financial sector. This report, based on the reporting mechanism established by DORA, indicates that ICT risks are increasingly borderless and interconnected. The authorities emphasize the need for financial entities to strengthen their cybersecurity measures in light of the development of AI-driven tools.\n\nDORA harmonizes reporting requirements for ICT incidents, ensuring that major incidents are notified to all competent authorities to enable a coordinated response. The report reveals that approximately one-third of the 3,383 reported incidents had cross-border impacts, while direct impacts on clients and transactions were generally limited. System failures and external events were the primary drivers, highlighting the importance of robust third-party risk management and effective oversight of outsourced services. Although only 10% of incidents were cybersecurity-related, it is crucial for financial entities to maintain the highest cybersecurity standards.\n\nThis report, based on Article 22(2) of the DORA regulation, will be published annually and provides data on the number, nature, impact, remedial actions, and costs of ICT incidents. A major ICT-related incident is defined as an event compromising the security of network and information systems with a high adverse impact on critical functions of a financial entity."
+        },
+        "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
+        "imp": "medium"
+      }
+    ],
     "dataact": [
       {
         "d": "29.05.2026",
@@ -3432,7 +3196,7 @@
         },
         "src": "finance.ec.europa.eu",
         "ti": {
-          "de": "Commission reinforces resilience of money market funds with new guidance",
+          "de": "Kommission stärkt Widerstandsfähigkeit von Geldmarktfonds mit neuer Leitlinie",
           "en": "Commission reinforces resilience of money market funds with new guidance"
         },
         "sl": "commission-reinforces-resilience-of-money-market-funds-with-new-guidance",
@@ -3486,7 +3250,7 @@
         },
         "src": "finance.ec.europa.eu",
         "ti": {
-          "de": "Commission seeks feedback on revised sustainability reporting standards",
+          "de": "Kommission bittet um Feedback zu überarbeiteten Nachhaltigkeitsberichtsstandards",
           "en": "Commission seeks feedback on revised sustainability reporting standards"
         },
         "sl": "commission-seeks-feedback-on-revised-sustainability-reporting-standards",
@@ -3541,7 +3305,7 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "CSSF FAQ – Swing Pricing Mechanism (Updated)",
+          "de": "CSSF FAQ – Swing Pricing Mechanism (Aktualisiert)",
           "en": "CSSF FAQ – Swing Pricing Mechanism (Updated)"
         },
         "sl": "cssf-faq-swing-pricing-mechanism-updated",
@@ -3553,86 +3317,6 @@
         "imp": "low"
       }
     ],
-    "pfandbg": [
-      {
-        "d": "03.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Gesetz über die Ausgabe gedeckter Schuldverschreibungen (konsolidierte Fassung) (Law of 8 December 2021)",
-          "en": "Law on the Issuance of Covered Bonds (Consolidated Version) (Law of 8 December 2021)"
-        },
-        "sl": "law-of-8-december-2021-consolidated-version-updated",
-        "s": {
-          "de": "Dieses Gesetz regelt die Ausgabe gedeckter Schuldverschreibungen (Covered Bonds) in Luxemburg. Es legt die rechtlichen Rahmenbedingungen für die Emission, die Besicherung und die Aufsicht über diese Finanzprodukte fest.\n\nDie Regelungen sind relevant für Kreditinstitute, die Covered Bonds emittieren oder beabsichtigen, dies zu tun. Es schafft Rechtssicherheit für Emittenten und Investoren und trägt zur Stabilität des Finanzmarktes bei.\n\nEs handelt sich um eine aktualisierte konsolidierte Fassung des Gesetzes vom 8. Dezember 2021.",
-          "en": "This law regulates the issuance of covered bonds in Luxembourg. It establishes the legal framework for the issuance, collateralization, and supervision of these financial products.\n\nThe regulations are relevant for credit institutions that issue or intend to issue covered bonds. It creates legal certainty for issuers and investors and contributes to the stability of the financial market.\n\nThis is an updated consolidated version of the law of 8 December 2021."
-        },
-        "url": "https://www.cssf.lu/en/Document/law-of-8-december-2021/",
-        "imp": "low"
-      },
-      {
-        "d": "31.07.2025",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "CSSF Regulation N° 25-03 of 25 July 2025",
-          "en": "CSSF Regulation N° 25-03 of 25 July 2025"
-        },
-        "sl": "cssf-regulation-n-25-03-of-25-july-2025",
-        "s": {
-          "de": "Die CSSF-Verordnung Nr. 25-03 vom 25. Juli 2025 regelt die Tätigkeit der Emission gedeckter Schuldverschreibungen (Covered Bonds). Sie schafft einen spezifischen Rechtsrahmen für die Ausgabe dieser Finanzinstrumente in Luxemburg.\n\nDie Verordnung ist relevant für Kreditinstitute, die Covered Bonds emittieren möchten. Sie legt die Anforderungen und Bedingungen fest, die Emittenten erfüllen müssen, um diese Art von Wertpapieren auf den Markt zu bringen. Begleitende Rundschreiben, wie die CSSF 26/907 und 25/895, präzisieren die Anforderungen an Wirtschaftsprüfer und die zu übermittelnden Informationen.\n\nDie Verordnung wurde am 31. Juli 2025 veröffentlicht. Ergänzende Dokumente wie die Rundschreiben CSSF 26/907 und CSSF 25/895, die weitere Details zu Prüfungsanforderungen und Informationspflichten enthalten, wurden ebenfalls veröffentlicht.",
-          "en": "CSSF Regulation N° 25-03 of 25 July 2025 governs the activity of issuing covered bonds. It establishes a specific legal framework for the issuance of these financial instruments in Luxembourg.\n\nThe regulation is relevant for credit institutions intending to issue covered bonds. It sets out the requirements and conditions that issuers must meet to bring these types of securities to the market. Accompanying circulars, such as CSSF 26/907 and 25/895, specify requirements for auditors and information to be transmitted.\n\nThe regulation was published on 31 July 2025. Supplementary documents, including circulars CSSF 26/907 and CSSF 25/895, which provide further details on audit requirements and information obligations, have also been published."
-        },
-        "url": "https://www.cssf.lu/en/Document/regulation-cssf-n-25-03-of-25-july-2025/",
-        "imp": "high"
-      }
-    ],
-    "mar": [
-      {
-        "d": "03.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Gesetz über Marktmissbrauch (konsolidierte Fassung) (CSSF)",
-          "en": "Law on Market Abuse (consolidated version) (CSSF)"
-        },
-        "sl": "law-of-23-december-2016-consolidated-version-updated",
-        "s": {
-          "de": "Das Gesetz vom 23. Dezember 2016 über Marktmissbrauch wurde aktualisiert. Es enthält die konsolidierte Fassung der Regelungen zur Verhinderung und Bekämpfung von Marktmissbrauchspraktiken.\n\nDieses Gesetz ist relevant für Finanzinstitute und Marktteilnehmer in Luxemburg, da es die rechtlichen Rahmenbedingungen für den Umgang mit Insiderinformationen, Marktmanipulation und die Offenlegung von Geschäften von Führungskräften festlegt. Die Einhaltung dieser Vorschriften ist entscheidend, um die Integrität der Finanzmärkte zu gewährleisten und Sanktionen zu vermeiden.\n\nDie aktualisierte Fassung ist ab dem 3. April 2026 gültig.",
-          "en": "The Law of 23 December 2016 on market abuse has been updated. It contains the consolidated version of the regulations for preventing and combating market abuse practices.\n\nThis law is relevant for financial institutions and market participants in Luxembourg, as it establishes the legal framework for dealing with insider information, market manipulation, and the disclosure of managers' transactions. Compliance with these regulations is crucial to ensure the integrity of financial markets and avoid sanctions.\n\nThe updated version is effective from April 3, 2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/law-of-23-december-2016-1/",
-        "imp": "low"
-      },
-      {
-        "d": "28.08.2025",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Kryptomärktemitteilungs-Verordnung (KMMV) zur Offenlegung von Insiderinformationen",
-          "en": "Crypto Market Disclosure Regulation (KMMV) on Insider Information Disclosure"
-        },
-        "sl": "verordnung-zur-konkretisierung-von-mitteilungspflichten-zur-offenlegung-von-insi",
-        "s": {
-          "de": "Die Kryptomärktemitteilungs-Verordnung (KMMV) konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes. Sie legt fest, wie und wann relevante Informationen über Kryptomärkte zu veröffentlichen sind, um Markttransparenz und Anlegerschutz zu gewährleisten.\n\nDiese Verordnung ist für Unternehmen relevant, die im Kryptomarkt tätig sind und unter die Aufsicht des Kryptomärkteaufsichtsgesetzes fallen. Sie müssen ihre internen Prozesse anpassen, um Insiderinformationen fristgerecht und korrekt offenzulegen, um Compliance sicherzustellen und mögliche Sanktionen zu vermeiden.\n\nDie Verordnung wurde am 28.08.2025 im Bundesgesetzblatt veröffentlicht und trat am 25.08.2025 in Kraft. Die Federführung liegt bei der Bundesanstalt für Finanzdienstleistungsaufsicht.",
-          "en": "The Kryptomärktemitteilungs-Verordnung (KMMV) specifies the notification obligations for the disclosure of insider information according to § 36 of the Kryptomärkteaufsichtsgesetz. It defines how and when relevant information about crypto markets must be published to ensure market transparency and investor protection.\n\nThis regulation is relevant for companies active in the crypto market and subject to the supervision of the Kryptomärkteaufsichtsgesetz. They must adapt their internal processes to disclose insider information promptly and correctly to ensure compliance and avoid potential sanctions.\n\nThe regulation was published in the Federal Law Gazette on August 28, 2025, and came into force on August 25, 2025. The Federal Financial Supervisory Authority is responsible for its implementation."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
-        "imp": "high"
-      }
-    ],
     "prospectus": [
       {
         "d": "04.03.2026",
@@ -3642,7 +3326,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus",
+          "de": "Reduzierter Inhalt und standardisiertes Format für EU-Folgeprospekte und EU-Wachstumsemissionsprospekte",
           "en": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus"
         },
         "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
@@ -3704,7 +3388,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators",
+          "de": "ESMA-Bußgelder für Administratoren kritischer Benchmarks und anerkannte BMR-Administratoren aus Drittländern",
           "en": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators"
         },
         "sl": "esma-fines-or-penalty-payments-for-administrators-of-critical-benchmarks-and-rec",
@@ -3724,7 +3408,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Review of the Benchmark Regulation",
+          "de": "Überprüfung der Benchmark-Verordnung",
           "en": "Review of the Benchmark Regulation"
         },
         "sl": "review-of-the-benchmark-regulation",
@@ -3764,7 +3448,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Delegated Act on the review of the calculation method used to determine the thresholds of significant benchmarks",
+          "de": "Delegierte Verordnung zur Überprüfung der Berechnungsmethode für Schwellenwerte signifikanter Benchmarks",
           "en": "Delegated Act on the review of the calculation method used to determine the thresholds of significant benchmarks"
         },
         "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
@@ -3845,7 +3529,7 @@
         },
         "src": "eiopa.europa.eu",
         "ti": {
-          "de": "Consultation on the proposal for Guidelines to specify further the qualitative and quantitative indicators in pre-emptive recovery planning",
+          "de": "Konsultation zum Vorschlag für Leitlinien zur Präzisierung präventiver Sanierungsplanung",
           "en": "Consultation on the proposal for Guidelines to specify further the qualitative and quantitative indicators in pre-emptive recovery planning"
         },
         "sl": "consultation-on-the-proposal-for-guidelines-to-specify-further-the-qualitative-a",
@@ -3887,7 +3571,7 @@
         },
         "src": "iosco.org",
         "ti": {
-          "de": "Tokenization of Financial Assets",
+          "de": "Tokenisierung von Finanzanlagen",
           "en": "Tokenization of Financial Assets"
         },
         "sl": "tokenization-of-financial-assets",
@@ -3943,6 +3627,27 @@
         "refnum": "11/2025"
       }
     ],
+    "mar": [
+      {
+        "d": "28.08.2025",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Kryptomärktemitteilungs-Verordnung (KMMV) zur Offenlegung von Insiderinformationen",
+          "en": "Crypto Market Disclosure Regulation (KMMV) on Insider Information Disclosure"
+        },
+        "sl": "verordnung-zur-konkretisierung-von-mitteilungspflichten-zur-offenlegung-von-insi",
+        "s": {
+          "de": "Die Kryptomärktemitteilungs-Verordnung (KMMV) konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes. Sie legt fest, wie und wann relevante Informationen über Kryptomärkte zu veröffentlichen sind, um Markttransparenz und Anlegerschutz zu gewährleisten.\n\nDiese Verordnung ist für Unternehmen relevant, die im Kryptomarkt tätig sind und unter die Aufsicht des Kryptomärkteaufsichtsgesetzes fallen. Sie müssen ihre internen Prozesse anpassen, um Insiderinformationen fristgerecht und korrekt offenzulegen, um Compliance sicherzustellen und mögliche Sanktionen zu vermeiden.\n\nDie Verordnung wurde am 28.08.2025 im Bundesgesetzblatt veröffentlicht und trat am 25.08.2025 in Kraft. Die Federführung liegt bei der Bundesanstalt für Finanzdienstleistungsaufsicht.",
+          "en": "The Kryptomärktemitteilungs-Verordnung (KMMV) specifies the notification obligations for the disclosure of insider information according to § 36 of the Kryptomärkteaufsichtsgesetz. It defines how and when relevant information about crypto markets must be published to ensure market transparency and investor protection.\n\nThis regulation is relevant for companies active in the crypto market and subject to the supervision of the Kryptomärkteaufsichtsgesetz. They must adapt their internal processes to disclose insider information promptly and correctly to ensure compliance and avoid potential sanctions.\n\nThe regulation was published in the Federal Law Gazette on August 28, 2025, and came into force on August 25, 2025. The Federal Financial Supervisory Authority is responsible for its implementation."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
+        "imp": "high"
+      }
+    ],
     "mago": [
       {
         "d": "14.07.2025",
@@ -3971,108 +3676,6 @@
             "d": "21.07.2025"
           }
         ]
-      }
-    ],
-    "eidas2": [
-      {
-        "d": "20.06.2025",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Gesetz zur elektronischen Unterzeichnung von Verwaltungsdokumenten (Law of 4 June 2025)",
-          "en": "Law on the Electronic Signature of Administrative Documents (Law of 4 June 2025)"
-        },
-        "sl": "law-of-4-june-2025",
-        "s": {
-          "de": "Dieses Gesetz regelt die elektronische Unterzeichnung von Verwaltungsdokumenten. Es legt die rechtlichen Rahmenbedingungen für die Nutzung elektronischer Signaturen im administrativen Verkehr fest, um deren Gültigkeit und Anerkennung sicherzustellen.\n\nDie Regelungen sind für alle Verwaltungen und öffentlichen Einrichtungen relevant, die Dokumente elektronisch signieren oder empfangen. Dies erleichtert die Digitalisierung von Verwaltungsprozessen und kann die Effizienz im Umgang mit behördlichen Unterlagen steigern.\n\nDas Gesetz tritt am 4. Juni 2025 in Kraft.",
-          "en": "This law regulates the electronic signature of administrative documents. It establishes the legal framework for the use of electronic signatures in administrative transactions to ensure their validity and recognition.\n\nThese regulations are relevant for all administrations and public institutions that sign or receive documents electronically. This facilitates the digitalization of administrative processes and can increase efficiency in handling official documents.\n\nThe law comes into force on June 4, 2025."
-        },
-        "url": "https://www.cssf.lu/en/Document/law-of-4-june-2025/",
-        "imp": "high"
-      }
-    ],
-    "psd3": [
-      {
-        "d": "11.04.2025",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Gesetz über Zahlungsdienste (konsolidierte Fassung) (10.11.2009)",
-          "en": "Law on Payment Services (consolidated version) (10.11.2009)"
-        },
-        "sl": "law-of-10-november-2009-consolidated-version-updated",
-        "s": {
-          "de": "Dieses Dokument ist eine aktualisierte konsolidierte Fassung des Gesetzes vom 10. November 2009 über Zahlungsdienste. Es integriert alle Änderungen und Ergänzungen, die seit der ursprünglichen Veröffentlichung vorgenommen wurden, in einem einzigen Text.\n\nDas Gesetz ist für Finanzinstitute relevant, die Zahlungsdienste in Luxemburg anbieten oder beabsichtigen, diese anzubieten. Es legt die rechtlichen Rahmenbedingungen für die Erbringung von Zahlungsdiensten fest und ist entscheidend für die Einhaltung der Vorschriften in diesem Sektor.\n\nDie aktualisierte Fassung tritt am 11. April 2025 in Kraft.",
-          "en": "This document is an updated consolidated version of the Law of 10 November 2009 on payment services. It integrates all amendments and additions made since the original publication into a single text.\n\nThis law is relevant for financial institutions that offer or intend to offer payment services in Luxembourg. It establishes the legal framework for the provision of payment services and is crucial for regulatory compliance in this sector.\n\nThe updated version comes into force on April 11, 2025."
-        },
-        "url": "https://www.cssf.lu/en/Document/law-of-10-november-2009/",
-        "imp": "low"
-      },
-      {
-        "d": "30.06.2023",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Payment services – revision of EU rules (Directive)",
-          "en": "Payment services – revision of EU rules (Directive)"
-        },
-        "sl": "payment-services-revision-of-eu-rules-directive",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung der EU-Vorschriften für Zahlungsdienste vorgelegt. Dieser Vorschlag zielt darauf ab, die bestehende Richtlinie über Zahlungsdienste (PSD2) zu aktualisieren und an die Entwicklungen im digitalen Zahlungsverkehr anzupassen.\n\nDer Vorschlag ist für alle Finanzinstitute relevant, die Zahlungsdienste innerhalb der EU anbieten oder nutzen. Er könnte Auswirkungen auf die Lizenzierung, den Betrieb und die Sicherheitsanforderungen für Zahlungsdienstleister haben.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er nun von den EU-Gesetzgebern geprüft und verhandelt wird.",
-          "en": "The European Commission has put forward a proposal to revise the EU rules on payment services. This proposal aims to update the existing Payment Services Directive (PSD2) and adapt it to developments in digital payment transactions.\n\nThis proposal is relevant for all financial institutions that offer or use payment services within the EU. It could impact the licensing, operation, and security requirements for payment service providers.\n\nThe proposal is currently in the adoption workflow, meaning it will now be reviewed and negotiated by EU legislators."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13904",
-        "imp": "medium",
-        "refnum": "COM(2023)366"
-      },
-      {
-        "d": "30.06.2023",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Payment services – revision of EU rules (new Regulation)",
-          "en": "Payment services – revision of EU rules (new Regulation)"
-        },
-        "sl": "payment-services-revision-of-eu-rules-new-regulation",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Vorschlag für eine neue Verordnung zur Überarbeitung der EU-Vorschriften für Zahlungsdienste vorgelegt. Dieser Vorschlag zielt darauf ab, den Rechtsrahmen für Zahlungsdienste zu aktualisieren und an aktuelle Entwicklungen anzupassen.\n\nDer Vorschlag ist für Finanzinstitute relevant, die Zahlungsdienste in der EU anbieten oder nutzen. Er könnte Auswirkungen auf die Geschäftsprozesse, Compliance-Anforderungen und die Wettbewerbslandschaft im Zahlungsverkehr haben.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow, was bedeutet, dass er noch verschiedene legislative Schritte durchlaufen muss, bevor er in Kraft tritt.",
-          "en": "The European Commission has put forward a proposal for a new regulation to revise the EU rules on payment services. This proposal aims to update the legal framework for payment services and adapt it to current developments.\n\nThe proposal is relevant for financial institutions that offer or use payment services in the EU. It could impact business processes, compliance requirements, and the competitive landscape in the payment sector.\n\nThe proposal is currently in the adoption workflow, meaning it still needs to go through various legislative steps before it enters into force."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13905",
-        "imp": "medium",
-        "refnum": "COM(2023)367"
-      },
-      {
-        "d": "29.06.2023",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Review of EU rules on payment services",
-          "en": "Review of EU rules on payment services"
-        },
-        "sl": "review-of-eu-rules-on-payment-services",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zahlungsdienste eingeleitet. Ziel ist es, die Richtlinie über Zahlungsdienste (PSD2) zu aktualisieren und an neue Marktgegebenheiten anzupassen. Dies umfasst die Berücksichtigung von Innovationen im Zahlungsverkehr und die Stärkung des Verbraucherschutzes.\n\nDie Überprüfung ist für Finanzinstitute relevant, die Zahlungsdienste anbieten oder nutzen. Sie müssen sich auf mögliche Änderungen in den regulatorischen Anforderungen einstellen, die sich auf ihre Geschäftsprozesse und Compliance-Strategien auswirken könnten. Die Anpassungen sollen einen sichereren und effizienteren Zahlungsverkehr in der EU gewährleisten.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was bedeutet, dass der Gesetzgebungsprozess fortgeschritten ist. Es sind keine spezifischen Fristen für Konsultationen oder den Anwendungsbeginn im vorliegenden Text genannt.",
-          "en": "The European Commission has initiated a review of EU rules on payment services. The aim is to update the Payment Services Directive (PSD2) and adapt it to new market conditions. This includes taking into account innovations in payment transactions and strengthening consumer protection.\n\nThis review is relevant for financial institutions that offer or use payment services. They must prepare for potential changes in regulatory requirements that could impact their business processes and compliance strategies. The adjustments are intended to ensure safer and more efficient payment transactions within the EU.\n\nThe current procedural status is the adoption workflow, meaning the legislative process is advanced. No specific deadlines for consultations or application commencement are mentioned in the provided text."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13331",
-        "imp": "medium",
-        "refnum": "Ares(2022)71166"
       }
     ],
     "cssf24856": [
@@ -4106,7 +3709,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Open finance framework",
+          "de": "Open Finance Rahmenwerk",
           "en": "Open finance framework"
         },
         "sl": "open-finance-framework",
@@ -4119,25 +3722,66 @@
         "refnum": "Ares(2021)6506852"
       }
     ],
-    "interchange": [
+    "psd3": [
       {
-        "d": "20.04.2020",
+        "d": "30.06.2023",
         "t": {
-          "de": "Gesetz",
-          "en": "Law"
+          "de": "Gesetzentwurf",
+          "en": "Bill"
         },
-        "src": "cssf.lu",
+        "src": "ec.europa.eu",
         "ti": {
-          "de": "Grand-ducal Regulation of 18 December 2015",
-          "en": "Grand-ducal Regulation of 18 December 2015"
+          "de": "Zahlungsdienste – Überarbeitung der EU-Vorschriften (Richtlinie)",
+          "en": "Payment services – revision of EU rules (Directive)"
         },
-        "sl": "grand-ducal-regulation-of-18-december-2015",
+        "sl": "payment-services-revision-of-eu-rules-directive",
         "s": {
-          "de": "Die großherzogliche Verordnung vom 18. Dezember 2015 setzt Artikel 1 Absatz 5 der EU-Verordnung 2015/751 über Interbankenentgelte für kartengebundene Zahlungsvorgänge um. Sie regelt spezifische Aspekte der Anwendung dieser EU-Verordnung im nationalen Recht.\n\nDiese Regelung ist relevant für Finanzinstitute und Zahlungsdienstleister, die in Luxemburg kartengebundene Zahlungsvorgänge abwickeln. Sie müssen die nationalen Umsetzungsbestimmungen der EU-Verordnung zu Interbankenentgelten beachten.\n\nDie Verordnung wurde am 18. Dezember 2015 veröffentlicht.",
-          "en": "The Grand-ducal Regulation of 18 December 2015 implements Article 1(5) of EU Regulation 2015/751 on interchange fees for card-based payment transactions. It regulates specific aspects of the application of this EU regulation in national law.\n\nThis regulation is relevant for financial institutions and payment service providers that process card-based payment transactions in Luxembourg. They must comply with the national implementing provisions of the EU regulation on interchange fees.\n\nThe regulation was published on 18 December 2015."
+          "de": "Die Europäische Kommission hat einen Vorschlag zur Überarbeitung der EU-Vorschriften für Zahlungsdienste vorgelegt. Dieser Vorschlag zielt darauf ab, die bestehende Richtlinie über Zahlungsdienste (PSD2) zu aktualisieren und an die Entwicklungen im digitalen Zahlungsverkehr anzupassen.\n\nDer Vorschlag ist für alle Finanzinstitute relevant, die Zahlungsdienste innerhalb der EU anbieten oder nutzen. Er könnte Auswirkungen auf die Lizenzierung, den Betrieb und die Sicherheitsanforderungen für Zahlungsdienstleister haben.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er nun von den EU-Gesetzgebern geprüft und verhandelt wird.",
+          "en": "The European Commission has put forward a proposal to revise the EU rules on payment services. This proposal aims to update the existing Payment Services Directive (PSD2) and adapt it to developments in digital payment transactions.\n\nThis proposal is relevant for all financial institutions that offer or use payment services within the EU. It could impact the licensing, operation, and security requirements for payment service providers.\n\nThe proposal is currently in the adoption workflow, meaning it will now be reviewed and negotiated by EU legislators."
         },
-        "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-18-december-2015/",
-        "imp": "high"
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13904",
+        "imp": "medium",
+        "refnum": "COM(2023)366"
+      },
+      {
+        "d": "30.06.2023",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Zahlungsdienste – Überarbeitung der EU-Vorschriften (neue Verordnung)",
+          "en": "Payment services – revision of EU rules (new Regulation)"
+        },
+        "sl": "payment-services-revision-of-eu-rules-new-regulation",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Vorschlag für eine neue Verordnung zur Überarbeitung der EU-Vorschriften für Zahlungsdienste vorgelegt. Dieser Vorschlag zielt darauf ab, den Rechtsrahmen für Zahlungsdienste zu aktualisieren und an aktuelle Entwicklungen anzupassen.\n\nDer Vorschlag ist für Finanzinstitute relevant, die Zahlungsdienste in der EU anbieten oder nutzen. Er könnte Auswirkungen auf die Geschäftsprozesse, Compliance-Anforderungen und die Wettbewerbslandschaft im Zahlungsverkehr haben.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow, was bedeutet, dass er noch verschiedene legislative Schritte durchlaufen muss, bevor er in Kraft tritt.",
+          "en": "The European Commission has put forward a proposal for a new regulation to revise the EU rules on payment services. This proposal aims to update the legal framework for payment services and adapt it to current developments.\n\nThe proposal is relevant for financial institutions that offer or use payment services in the EU. It could impact business processes, compliance requirements, and the competitive landscape in the payment sector.\n\nThe proposal is currently in the adoption workflow, meaning it still needs to go through various legislative steps before it enters into force."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13905",
+        "imp": "medium",
+        "refnum": "COM(2023)367"
+      },
+      {
+        "d": "29.06.2023",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung der EU-Vorschriften für Zahlungsdienste",
+          "en": "Review of EU rules on payment services"
+        },
+        "sl": "review-of-eu-rules-on-payment-services",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zahlungsdienste eingeleitet. Ziel ist es, die Richtlinie über Zahlungsdienste (PSD2) zu aktualisieren und an neue Marktgegebenheiten anzupassen. Dies umfasst die Berücksichtigung von Innovationen im Zahlungsverkehr und die Stärkung des Verbraucherschutzes.\n\nDie Überprüfung ist für Finanzinstitute relevant, die Zahlungsdienste anbieten oder nutzen. Sie müssen sich auf mögliche Änderungen in den regulatorischen Anforderungen einstellen, die sich auf ihre Geschäftsprozesse und Compliance-Strategien auswirken könnten. Die Anpassungen sollen einen sichereren und effizienteren Zahlungsverkehr in der EU gewährleisten.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was bedeutet, dass der Gesetzgebungsprozess fortgeschritten ist. Es sind keine spezifischen Fristen für Konsultationen oder den Anwendungsbeginn im vorliegenden Text genannt.",
+          "en": "The European Commission has initiated a review of EU rules on payment services. The aim is to update the Payment Services Directive (PSD2) and adapt it to new market conditions. This includes taking into account innovations in payment transactions and strengthening consumer protection.\n\nThis review is relevant for financial institutions that offer or use payment services. They must prepare for potential changes in regulatory requirements that could impact their business processes and compliance strategies. The adjustments are intended to ensure safer and more efficient payment transactions within the EU.\n\nThe current procedural status is the adoption workflow, meaning the legislative process is advanced. No specific deadlines for consultations or application commencement are mentioned in the provided text."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13331",
+        "imp": "medium",
+        "refnum": "Ares(2022)71166"
       }
     ],
     "idd": [
@@ -4149,7 +3793,7 @@
         },
         "src": "ec.europa.eu",
         "ti": {
-          "de": "Amendment to Directive (EU) 2016/97 on insurance distribution.",
+          "de": "Änderung der Richtlinie (EU) 2016/97 über den Versicherungsvertrieb",
           "en": "Amendment to Directive (EU) 2016/97 on insurance distribution."
         },
         "sl": "amendment-to-directive-eu-2016-97-on-insurance-distribution",
@@ -4185,24 +3829,6 @@
     ]
   },
   "praxis": [
-    {
-      "d": "01.09.2026",
-      "ti": "a.i.s. AG: Bafin setzt Geldbuße fest",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG/meldung_2026_09_01_a_i_s_ag.html?cms_expanded=true",
-      "cat": "bussgeld",
-      "sum": "Die Finanzaufsicht Bafin hat am 19. August 2026 eine Geldbuße in Höhe von 15.000 Euro gegen die a.i.s. AG festgesetzt. Die a.i.s. AG hatte nicht mittels Hinweisbekanntmachung darüber informiert, ab welchem Zeitpunkt und unter welcher Internetadresse die Jahresfinanzinformationen für das Geschäftsjahr 2025 öffentlich zugänglich waren."
-    },
-    {
-      "d": "28.08.2026",
-      "ti": "pferdewetten.de AG: Bafin setzt Geldbuße fest",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG/meldung_2026_08_28_pferdewetten_de_ag.html?cms_expanded=true",
-      "cat": "bussgeld",
-      "sum": "Die Finanzaufsicht Bafin hat am 24.08.2026 eine Geldbuße in Höhe von 250.000 Euro gegen die pferdewetten.de AG festgesetzt. Das Unternehmen hatte gegen Pflichten des Wertpapierhandelsgesetzes (WpHG) verstoßen. Die pferdewetten.de AG hatte den Halbjahresfinanzbericht für das Geschäftsjahr 2025 nicht rechtzeitig veröffentlicht."
-    },
     {
       "d": "26.08.2026",
       "ti": "Wise Europe SA: Bafin setzt Bußgeld fest",
@@ -4285,15 +3911,6 @@
       "sum": "Die Norddeutsche Landesbank Girozentrale (Nord/LB) mit Sitz in Hannover muss angemessene und geeignete Maßnahmen ergreifen, um gewichtige Mängel in der Prävention von Geldwäsche und Terrorismusfinanzierung im Bereich der Aktualisierung von Kundendaten zu beseitigen. Das hat die Finanzaufsicht Bafin angeordnet."
     },
     {
-      "d": "30.07.2026",
-      "ti": "Leo International Precision Health AG: Bafin setzt Geldbußen fest",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG/meldung_2026_07_30_leo_international_precision_health_ag.html?cms_expanded=true",
-      "cat": "bussgeld",
-      "sum": "Die Finanzaufsicht Bafin hat am 08. Juli 2026 eine Geldbuße in Höhe von 20.000 Euro gegen die Leo International Precision Health AG festgesetzt. Das Unternehmen hatte gegen Pflichten des Wertpapierhandelsgesetzes (WpHG) verstoßen."
-    },
-    {
       "d": "28.07.2026",
       "ti": "Crefo Factoring Westfalen GmbH muss ordnungsgemäße Geschäftsorganisation sicherstellen",
       "auth": "BaFin",
@@ -4301,15 +3918,6 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_28_crefo_factoring_westfalen_gmbh.html?cms_expanded=true",
       "cat": "massnahme",
       "sum": "Die Crefo Factoring Westfalen GmbH mit Sitz in Münster muss sicherstellen, dass ihre Geschäftsorganisation ordnungsgemäß ist. Das hat die Finanzaufsicht Bafin angeordnet."
-    },
-    {
-      "d": "23.07.2026",
-      "ti": "Mitteilungspflichten nicht erfüllt: Bafin setzt Geldbußen fest",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG_anonym/meldung_2026_07_23_geldbussen.html?cms_expanded=true",
-      "cat": "bussgeld",
-      "sum": "Die Finanzaufsicht Bafin hat am 15. Juli 2026 zwei Geldbußen in Höhe von je 55.000 Euro gegen eine natürliche Person festgesetzt. Grund war, dass diese Person gegen die Pflichten des Wertpapierhandelsgesetzes (WpHG) verstoßen hatte. Sie hatte es im August 2025 unterlassen, Stimmrechtsmitteilungen rechtzeitig zu übermitteln."
     },
     {
       "d": "22.07.2026",
@@ -4330,42 +3938,6 @@
       "sum": "Der Bochumer Versicherungsverein auf Gegenseitigkeit darf kein Versicherungsgeschäft mehr betreiben. Die Erlaubnis dazu hat die Finanzaufsicht Bafin am 23. Juni 2026 widerrufen."
     },
     {
-      "d": "22.07.2026",
-      "ti": "Eckert & Ziegler SE: Bafin leitet Prüfung für den Konzernabschluss zum 31. Dezember 2024 und den zugehörigen zusammengefassten Lagebericht ein",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/Bilko/meldung_2026_07_22_eckert_ziegler_se.html?cms_expanded=true",
-      "cat": "massnahme",
-      "sum": "Der Finanzaufsicht Bafin liegen konkrete Anhaltspunkte dafür vor, dass die Eckert & Ziegler SE gegen Rechnungslegungsvorschriften verstoßen hat. Daher hat sie am 15.07.2026 eine Prüfung des Konzernabschlusses der Eckert & Ziegler SE zum 31. Dezember 2024 und des zugehörigen zusammengefassten Lageberichts eingeleitet."
-    },
-    {
-      "d": "22.07.2026",
-      "ti": "Brown Capital Management LLC: Bafin setzt Geldbußen fest",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG/meldung_2026_07_22_brown_capital_management_llc.html?cms_expanded=true",
-      "cat": "bussgeld",
-      "sum": "Die Finanzaufsicht Bafin hat am 10. Juli 2026 eine Geldbuße in Höhe von 187.500 Euro gegen die Brown Capital Management LLC festgesetzt. Grund war, dass das Unternehmen gegen die Pflichten des Wertpapierhandelsgesetzes (WpHG) verstoßen hat. Es hatte Stimmrechtsmitteilungen nicht rechtzeitig übermittelt."
-    },
-    {
-      "d": "21.07.2026",
-      "ti": "Jungheinrich Aktiengesellschaft: Prüfungseinleitung der Bafin für den veröffentlichten verkürzten Abschluss zum 30.06.2025 und den zugehörigen Zwischenlagebericht für das erste Halbjahr 2025",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/Bilko/meldung_2026_07_21_jungheinrich_ag.html?cms_expanded=true",
-      "cat": "massnahme",
-      "sum": "Der Finanzaufsicht Bafin liegen konkrete Anhaltspunkte dafür vor, dass die Jungheinrich Aktiengesellschaft gegen Rechnungslegungsvorschriften verstoßen hat. Daher hat sie am 13.07.2026 eine Prüfung des veröffentlichten verkürzten Abschlusses zum 30.06.2025 und des zugehörigen Zwischenlageberichts für das erste Halbjahr 2025 eingeleitet."
-    },
-    {
-      "d": "21.07.2026",
-      "ti": "Zalando SE: Bafin macht Fehler im Konzernabschluss bekannt",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/Bilko/meldung_2026_07_21_zalando_se.html?cms_expanded=true",
-      "cat": "massnahme",
-      "sum": "Die Finanzaufsicht Bafin hat bei einer Prüfung festgestellt, dass der gebilligte Konzernabschluss der Zalando SE zum Abschlussstichtag 31. Dezember 2025 fehlerhaft ist."
-    },
-    {
       "d": "20.07.2026",
       "ti": "Landesbank Hessen-Thüringen Girozentrale (Helaba): Bafin ordnet Mängelbeseitigung an",
       "auth": "BaFin",
@@ -4373,33 +3945,6 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_20_helaba.html?cms_expanded=true",
       "cat": "massnahme",
       "sum": "Die Landesbank Hessen-Thüringen Girozentrale (Helaba) mit Sitz in Frankfurt a.M. muss angemessene und geeignete Maßnahmen ergreifen, um Mängel in der Prävention von Geldwäsche und Terrorismusfinanzierung zu beseitigen. Insbesondere muss sie Kundendaten überprüfen und aktualisieren. Das hat die Finanzaufsicht Bafin angeordnet."
-    },
-    {
-      "d": "20.07.2026",
-      "ti": "TeamViewer SE: Bafin setzt Geldbuße fest",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG/meldung_2026_07_20_team_viewer.html?cms_expanded=true",
-      "cat": "bussgeld",
-      "sum": "Die Finanzaufsicht Bafin hat am 16. Juli 2026 eine Geldbuße in Höhe von 240.000 Euro gegen die TeamViewer SE festgesetzt. Das Unternehmen hatte gegen die Marktmissbrauchsverordnung (Market Abuse Regulation - MAR) verstoßen."
-    },
-    {
-      "d": "17.07.2026",
-      "ti": "Dermapharm Holding SE: Bafin leitet Prüfung des Konzernabschlusses 2025 und des zugehörigen Lageberichts ein",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/Bilko/meldung_2026_07_17_dermapharm_holding.html?cms_expanded=true",
-      "cat": "massnahme",
-      "sum": "Der Finanzaufsicht Bafin liegen konkrete Anhaltspunkte dafür vor, dass die Dermapharm Holding SE gegen Rechnungslegungsvorschriften verstoßen hat. Daher hat sie am 14. Juli 2026 eine Prüfung des gebilligten Konzernabschlusses zum 31. Dezember 2025 und des zugehörigen Lageberichts eingeleitet."
-    },
-    {
-      "d": "15.07.2026",
-      "ti": "Nagarro SE: Fehlerbekanntmachung für den Konzernabschluss und den zusammengefassten Lagebericht 2022",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/Bilko/meldung_2026_07_15_nagarro_se.html?cms_expanded=true",
-      "cat": "massnahme",
-      "sum": "Die Finanzaufsicht Bafin hat bei ihrer Prüfung festgestellt, dass der nach internationalen Rechnungslegungsstandards (International Financial Reporting Standards - IFRS) erstellte, offengelegte Konzernabschluss der Nagarro SE zum 31. Dezember 2022 sowie der zugehörige zusammengefasste Lagebericht für das Geschäftsjahr 2022 fehlerhaft sind."
     },
     {
       "d": "15.07.2026",
@@ -4418,15 +3963,6 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_09_raiffeisenbank_lech-donau_eg.html?cms_expanded=true",
       "cat": "bussgeld",
       "sum": "Die Finanzaufsicht Bafin hat gegen die Raiffeisenbank Lech-Donau eG ein Bußgeld in Höhe von 22.000 Euro festgesetzt. Grund dafür sind unterlassene Meldungen an den Bafin-Kontenvergleich. Das Institut hatte es über einen längeren Zeitraum versäumt, seine Kontenmodelle an den Bafin-Kontenvergleich zu melden."
-    },
-    {
-      "d": "30.06.2026",
-      "ti": "Mutares SE & Co. KGaA: Bafin macht Fehler im Jahresabschluss bekannt",
-      "auth": "BaFin",
-      "src": "bafin.de",
-      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/Bilko/meldung_2026_06_30_mutares_se.html?cms_expanded=true",
-      "cat": "massnahme",
-      "sum": "Die Finanzaufsicht Bafin hat bei einer Prüfung festgestellt, dass der offengelegte Jahresabschluss der Mutares SE & Co. KGaA zum Abschlussstichtag 31. Dezember 2023 fehlerhaft ist."
     }
   ]
 }

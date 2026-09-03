@@ -9,7 +9,7 @@ import json
 import os
 import re
 import sqlite3
-from typing import Optional
+from typing import List, Optional, Tuple
 from urllib.parse import urlparse
 
 WEB_LIVE_PATH = os.path.join(
@@ -222,10 +222,11 @@ FRAMEWORK_RULES = [
                 r"verbraucherschutz|consumer protection|verbraucherkreditrichtlinie|\bccd ?(ii|2)\b|widerrufsrecht|right of withdrawal|prämiensparvertr|kontoentgelt|dispozins|überziehungszins"),
 ]
 
-# Quellenspezifische Vorrangregeln: Dokumente der CSSF (Luxemburg) werden
-# zuerst gegen die luxemburgischen Rahmenwerke geprüft; nur wenn keines
-# greift (z. B. DORA-, MiCA- oder ESMA-Weiterleitungen), fallen sie auf
-# die generischen FRAMEWORK_RULES zurück.
+# Quellenspezifische Vorrangregeln. Dokumente der CSSF (Luxemburg) werden
+# ausschließlich den luxemburgischen Rahmenwerken zugeordnet (nur für Asset
+# Manager sichtbar); Weiterleitungen von EU-Texten (DORA-Rundschreiben,
+# MiCA-, ESMA-, FATF-Meldungen) kommen über die EU-Quellen selbst und
+# entfallen hier – siehe EXCLUSIVE_SOURCES in _classify.
 SOURCE_RULES = {
     "cssf": [
         ("lulmt", r"liquidity management tool|\blmts?\b|26/910|swing pricing|side pocket|redemption gate|anti-dilution"),
@@ -234,8 +235,8 @@ SOURCE_RULES = {
         ("cssf18698", r"18/698|22/806|25/883|outsourcing|substance requirement|conducting officers?|dirigeants?|"
                       r"investment fund managers?(?! and)|\bifms?\b|delegation oversight"),
         # Weiterleitungen internationaler/europäischer AML-Standards (FATF, EBA)
-        # sind kein luxemburgisches Recht.
-        ("amla", r"(\bfatf\b|european banking authority|\beba\b)(?![\s\S]*(travel rule|transfer of funds|geldtransfer))"),
+        # sind kein luxemburgisches Recht und entfallen.
+        (None, r"\bfatf\b|european banking authority|\beba\b"),
         ("cssfaml", r"12-02|law of 12 november 2004|money laundering|aml/cft|\baml\b|\bcft\b|terrorist financing|"
                     r"financial sanctions?|questionnaire on financial crime|\brc\b.{0,20}\brr\b"),
         ("luaifm", r"law of 17 december 2010|law of 12 july 2013|law of 3 march 2026|\b2010 law\b|\b2013 law\b|25/901|"
@@ -284,6 +285,16 @@ PRAXIS_RULES = [
 # quellen (BGBl, DIP) tragen "Bußgeld" auch in fachfremden Titeln
 # ("… papiergebundene Akten in Bußgeldverfahren", Tiergesundheitsrecht).
 PRAXIS_SOURCES = {"bafin"}
+# Bilanzkontrolle und Emittentenpflichten (Fehlerbekanntmachungen, verspätete
+# Finanzberichte, Stimmrechtsmitteilungen) betreffen börsennotierte
+# Unternehmen aller Branchen, nicht die Aufsicht über Finanzinstitute.
+PRAXIS_EXCLUDE = re.compile(
+    r"konzernabschluss|jahresabschluss|lagebericht|halbjahresfinanzbericht|"
+    r"jahresfinanzbericht|jahresfinanzinformation|finanzbericht|"
+    r"fehlerbekanntmachung|fehler im|bilanzkontrolle|hinweisbekanntmachung|"
+    r"stimmrechtsmitteilung|stimmrechte|leitet prüfung|prüfungseinleitung|"
+    r"prüfung (für|des|der) (den )?(konzern|jahres)|rechnungslegung|"
+    r"ad-hoc|insiderinformation|directors.? dealings|eigengeschäfte von führungskräften", re.IGNORECASE)
 PRAXIS_WINDOW_DAYS = 365
 # Harte Obergrenze: Die BaFin muss eigene Maßnahme-Bekanntmachungen fünf
 # Jahre nach Veröffentlichung löschen (u. a. § 125 Abs. 5 WpHG, § 60b
@@ -341,6 +352,10 @@ NOISE = re.compile(
 # gebiete ab; generische Muster wie "Verbraucherschutz" oder "Lieferkette"
 # treffen dort auch Energie-, Agrar- oder Beamtenrecht.
 LEGISLATION_SOURCES = {"bgbl", "dip", "gii"}
+# Quellen, deren Dokumente nur über ihre SOURCE_RULES zugeordnet werden
+# (kein Fallback auf FRAMEWORK_RULES): CSSF-Schreiben gehören nicht in
+# EU-Rahmenwerke wie DORA, die alle Zielgruppen sehen.
+EXCLUSIVE_SOURCES = {"cssf"}
 OFFTOPIC_DE = re.compile(
     r"beamten|besoldung|energiewirtschaft|energiebereich|agrar|tiergesundheit|"
     r"tierarznei|tierschutz|lebensmittel|landwirtschaft|forst|jagd|fischerei|"
@@ -365,10 +380,53 @@ def _classify(text: str, forced: Optional[str] = None,
     for fw_id, pattern in SOURCE_RULES.get(source_id or "", []):
         if re.search(pattern, lowered):
             return fw_id
+    if source_id in EXCLUSIVE_SOURCES:
+        return None
     for fw_id, pattern in FRAMEWORK_RULES:
         if re.search(pattern, lowered):
             return fw_id
     return None
+
+
+# Sekundärquelle -> Primärquelle: Dokumente der ESMA Library, zu denen am
+# selben Tag (±3 Tage) eine ESMA-News mit ähnlichem Titel existiert, sind
+# dieselbe Meldung (Pressemitteilung + Dokument) und entfallen.
+SHADOW_SOURCES = {"esma_library": "esma"}
+SHADOW_WINDOW_DAYS = 3
+_STOP = {"the", "and", "for", "under", "with", "from", "into", "that", "this",
+         "esma", "consultation", "paper", "press", "release", "report", "final"}
+
+
+def _title_tokens(title: Optional[str]) -> set:
+    return {w for w in re.findall(r"[a-zäöüß0-9]{3,}", (title or "").lower())
+            if w not in _STOP}
+
+
+def _is_shadow(title: Optional[str], date_iso: str,
+               primaries: List[Tuple[str, set]]) -> bool:
+    """True, wenn zu (title, date) eine Primärmeldung mit ähnlichem Titel im
+    Zeitfenster existiert (Jaccard >= 0.5 oder ein Titel enthält den anderen)."""
+    toks = _title_tokens(title)
+    if not toks:
+        return False
+    for p_date, p_toks in primaries:
+        gap = _days_apart(date_iso, p_date)
+        if gap is None or gap > SHADOW_WINDOW_DAYS or not p_toks:
+            continue
+        inter = len(toks & p_toks)
+        if inter / len(toks | p_toks) >= 0.5 or inter >= min(len(toks), len(p_toks)):
+            return True
+    return False
+
+
+def _days_apart(a: str, b: str) -> Optional[int]:
+    from datetime import date as _d
+    try:
+        da = _d(int(a[:4]), int(a[5:7]), int(a[8:10]))
+        db = _d(int(b[:4]), int(b[5:7]), int(b[8:10]))
+    except (ValueError, TypeError):
+        return None
+    return abs((da - db).days)
 
 
 def _title_key(title: Optional[str]) -> str:
@@ -473,10 +531,9 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     for r in rows:
         if r["source_id"] not in PRAXIS_SOURCES:
             continue
-        cat = _praxis_category(
-            "{} {}".format(r["title"] or "", r["summary"] or ""),
-            r["canonical_url"] or "")
-        if not cat:
+        praxis_text = "{} {}".format(r["title"] or "", r["summary"] or "")
+        cat = _praxis_category(praxis_text, r["canonical_url"] or "")
+        if not cat or PRAXIS_EXCLUDE.search(praxis_text):
             continue
         iso = r["publication_date"] or (r["first_seen_at"] or "")[:10]
         date = _de_date(iso)
@@ -509,8 +566,18 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     qa_stats = check_praxis(conn, praxis, praxis_raws)
 
     # Kandidaten sammeln (Regex-Vorfilter + Rahmenwerk-Zuordnung + Datum) …
+    def _too_thin(r) -> bool:
+        """Titel ohne Aussage (max. zwei Wörter, keine Kennung) und praktisch
+        kein Teaser, z. B. CSSF "Circular letter": nichts, was man melden könnte."""
+        title = (r["title"] or "").strip()
+        words = re.findall(r"\S+", title)
+        return (len(words) <= 2 and not re.search(r"\d", title)
+                and len((r["summary"] or "").strip()) < 80)
+
     candidates = []
     for r in rows:
+        if _too_thin(r):
+            continue
         # AMLA-Einträge ohne extrahiertes Seitendatum sind Slug-Platzhalter
         # (Seite noch nicht geladen) – für den High-Level-Feed auslassen.
         if r["source_id"] == "amla" and not r["publication_date"]:
@@ -549,12 +616,25 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         dl = r["consultation_deadline"]
         return bool(dl and dl[:10] >= today_iso)
 
+    # Primärmeldungen je Rahmenwerk für die Schatten-Prüfung (ESMA-News).
+    primaries = {}
+    for r, fw_id, _ in candidates:
+        if r["source_id"] in SHADOW_SOURCES.values():
+            primaries.setdefault((r["source_id"], fw_id), []).append(
+                ((r["publication_date"] or r["first_seen_at"] or "")[:10],
+                 _title_tokens(r["title"])))
+
     selected = []
     per_fw = {}
     seen_titles = set()  # Netz und doppelter Boden neben dedup_suppressed
     for prio in (True, False):
         for r, fw_id, date in candidates:
             if _deadline_open(r) is not prio:
+                continue
+            primary_src = SHADOW_SOURCES.get(r["source_id"])
+            if primary_src and _is_shadow(
+                    r["title"], (r["publication_date"] or r["first_seen_at"] or "")[:10],
+                    primaries.get((primary_src, fw_id), [])):
                 continue
             if not relevance.get(r["document_id"], True):
                 continue
