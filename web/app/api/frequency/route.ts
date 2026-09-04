@@ -8,7 +8,7 @@ import { confirmPage, formBody } from "@/lib/confirmPage";
 
 const LABEL = {
   daily: "einmal pro Tag, nur bei neuen Meldungen",
-  weekly: "einmal pro Woche, nur bei neuen Meldungen",
+  weekly: "freitags gesammelt, nur bei neuen Meldungen",
 } as const;
 
 export async function GET(request: Request) {

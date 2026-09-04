@@ -6,7 +6,7 @@ const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
 
 // Benachrichtigungs-Rhythmus des Update-Newsletters: "daily" = jeden Tag,
-// sofern es neue Updates gibt; "weekly" = höchstens einmal pro Woche.
+// sofern es neue Updates gibt; "weekly" = freitags gesammelt, gleicher Cron.
 export type Frequency = "daily" | "weekly";
 
 export type SubscribePayload = {
@@ -299,7 +299,7 @@ export async function sendConfirmationEmail(
 
   const rhythm =
     freq === "weekly"
-      ? "höchstens einmal pro Woche"
+      ? "einmal pro Woche, freitags gesammelt"
       : "täglich, sofern es neue Updates gibt";
 
   const { error } = await resend.emails.send({

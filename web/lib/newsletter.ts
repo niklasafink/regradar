@@ -123,18 +123,34 @@ function freshFor(
   );
 }
 
-// Wöchentliche Abonnenten erhalten frühestens ~6,5 Tage nach der letzten
-// Zustellung (bzw. Anmeldung) wieder Post — der halbe Tag Puffer fängt
-// Cron-Jitter ab, damit aus 7 Tagen nicht faktisch 8 werden. Bis dahin
-// bleibt ihr Wasserzeichen stehen und die Updates sammeln sich an.
-const WEEKLY_MIN_MS = 1000 * 60 * 60 * (24 * 6 + 12);
+// Wöchentliche Abonnenten bekommen ihre Post freitags mit demselben Cron-Lauf
+// wie die täglichen (vercel.json: 14:00 UTC). Fällig ist ein Wochen-Abo,
+// sobald der jüngste Freitags-Slot (Fr 14:00 UTC) NACH seinem Wasserzeichen
+// liegt — so reicht auch eine verspätete Freigabe am Samstag noch, und ein
+// zweiter Lauf in derselben Woche verschickt nichts doppelt. Wer sich am
+// Freitag nach dem Slot anmeldet, bekommt die erste Wochenmail am folgenden
+// Freitag. Bis zur Fälligkeit bleibt das Wasserzeichen stehen und die
+// Updates sammeln sich an.
+const WEEKLY_DAY_UTC = 5; // Freitag
+const WEEKLY_HOUR_UTC = 14; // = Cron-Stunde des Update-Newsletters
+
+/** Jüngster Freitag 14:00 UTC, der nicht nach `now` liegt. */
+export function lastWeeklySlot(now: Date): Date {
+  const slot = new Date(Date.UTC(
+    now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), WEEKLY_HOUR_UTC,
+  ));
+  const back = (now.getUTCDay() - WEEKLY_DAY_UTC + 7) % 7;
+  slot.setUTCDate(slot.getUTCDate() - back);
+  if (slot.getTime() > now.getTime()) slot.setUTCDate(slot.getUTCDate() - 7);
+  return slot;
+}
 
 function dueFor(sub: Subscriber, nowIso: string): boolean {
   if (sub.frequency !== "weekly") return true;
   const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
     .sort()
     .pop()!;
-  return Date.parse(nowIso) - Date.parse(watermark) >= WEEKLY_MIN_MS;
+  return Date.parse(watermark) < lastWeeklySlot(new Date(nowIso)).getTime();
 }
 
 const esc = (s: string): string =>
@@ -155,7 +171,7 @@ export function freqLinksFor(sub: Subscriber, base: string): FreqLinks {
 
 const FREQ_LABEL: Record<Frequency, string> = {
   daily: "einmal pro Tag (nur bei neuen Meldungen)",
-  weekly: "einmal pro Woche (nur bei neuen Meldungen)",
+  weekly: "freitags gesammelt (nur bei neuen Meldungen)",
 };
 
 function renderFreqBlock(freq: FreqLinks): string {
@@ -163,7 +179,7 @@ function renderFreqBlock(freq: FreqLinks): string {
     const active = f === freq.current;
     const [title, sub] = f === "daily"
       ? ["Einmal pro Tag", "nur bei neuen Meldungen"]
-      : ["Einmal pro Woche", "nur bei neuen Meldungen, gesammelt"];
+      : ["Freitags", "nur bei neuen Meldungen, gesammelt"];
     const style = active
       ? "background:#0f172a;color:#ffffff;border:1px solid #0f172a"
       : "background:#ffffff;color:#0f172a;border:1px solid #e2e8f0";
@@ -243,7 +259,7 @@ export function renderNewsletter(
       ? [
           `Wie oft möchten Sie diese E-Mail erhalten? Aktuell: ${FREQ_LABEL[freq.current]}.`,
           `Einmal pro Tag (nur bei neuen Meldungen): ${freq.dailyUrl}`,
-          `Einmal pro Woche (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
+          `Freitags gesammelt (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
           "",
         ]
       : []),

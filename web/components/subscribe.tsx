@@ -162,10 +162,10 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
           {lang === "de"
             ? status === "freq_daily"
               ? "✓ Gespeichert — Sie erhalten Updates einmal pro Tag, nur bei neuen Meldungen."
-              : "✓ Gespeichert — Sie erhalten Updates einmal pro Woche, nur bei neuen Meldungen."
+              : "✓ Gespeichert — Sie erhalten Updates freitags gesammelt, nur bei neuen Meldungen."
             : status === "freq_daily"
               ? "✓ Saved — you'll receive updates once a day, only when there is news."
-              : "✓ Saved — you'll receive updates once a week, only when there is news."}
+              : "✓ Saved — you'll receive a combined digest every Friday, only when there is news."}
         </p>
       ) : status === "sent" ? (
         <div className="mx-auto mt-4 w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 text-center">
@@ -327,8 +327,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                     id: "weekly" as const,
                     title: { de: "Wöchentlich", en: "Weekly" },
                     sub: {
-                      de: "eine gesammelte Übersicht pro Woche",
-                      en: "one combined digest per week",
+                      de: "eine gesammelte Übersicht jeden Freitag",
+                      en: "one combined digest every Friday",
                     },
                   },
                 ]
