@@ -389,7 +389,6 @@ export const FRAMEWORKS: Framework[] = [
     alias:"AMLR, AML-Paket, EU-Geldwäschepaket, Anti-Money Laundering Authority, AMLD6, 6. Geldwäscherichtlinie",
     ref:"VO (EU) 2024/1620, 2024/1624", cond:{k:"cross",any:["aml"]},
     refUrl:"https://eur-lex.europa.eu/eli/reg/2024/1620/oj/eng",
-    condL:{de:"nur für geldwäscherechtlich Verpflichtete",en:"only for obliged entities under AML law"},
     /* Chronologie inkl. früherer Fassungen gegen EUR-Lex/Cellar, bafin.de, recht.bund.de bzw. eba.europa.eu geprüft (Stand 03.09.2026). */
     u:[
       {refnum:"VO (EU) 2024/1624, RL (EU) 2024/1640, VO (EU) 2024/1620", eff:"10.07.2027", d:"19.06.2024", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",

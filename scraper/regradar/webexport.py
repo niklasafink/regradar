@@ -210,7 +210,10 @@ FRAMEWORK_RULES = [
            r"versicherungsvermittl|insurance intermediar|\bibips?\b|versicherungsanlageprodukt|insurance-based investment|versicherungsmakler"),
     ("ebaict", r"ict (and security )?risk|ikt-risik"),
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement|"
-            r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted"),
+            r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted|"
+            # BRUBEG (CRD-VI-Umsetzung im KWG): Kurzname, Langtitel und die
+            # Richtlinie 2024/1619 in BGBl-/DIP-/BMF-Titeln.
+            r"\bbrubeg\b|bankenrichtlinienumsetzung|2024/1619"),
     # Generische Muster bewusst am Ende, damit Spezialregime zuerst greifen.
     ("dataact", r"\bdata act\b|\bdata-act\b|datenverordnung|\bdatengesetz\b|cloud switching|anbieterwechsel cloud|switching charges"),
     ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data|"

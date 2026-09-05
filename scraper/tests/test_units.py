@@ -34,6 +34,22 @@ class FrameworkClassification(unittest.TestCase):
     """MaRisk (Banken), WpI MaRisk (Wertpapierinstitute) und KAMaRisk (KVGen)
     sind eigenständige Regelwerke und dürfen nicht vermischt werden."""
 
+    def test_brubeg_kurzname_und_bgbl_titel(self):
+        """BRUBEG-Dokumente (BMF-Slug, BGBl-Langtitel, Bundesbank-Aufsatz)
+        gehören zu CRR III / CRD VI; Fachbeiträge zu einzelnen Regelungs-
+        bereichen bleiben beim spezifischeren Rahmenwerk."""
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("BRUBEG"), "crr3")
+        self.assertEqual(_classify(
+            "Gesetz zur Umsetzung der Richtlinie (EU) 2024/1619 des Europäischen Parlaments und des Rates "
+            "vom 31. Mai 2024 zur Änderung der Richtlinie 2013/36/EU im Hinblick auf Aufsichtsbefugnisse, "
+            "Sanktionen, Zweigstellen aus Drittländern sowie Umwelt-, Sozial- und Unternehmensführungsrisiken "
+            "und zur Entlastung der Kreditinstitute von Bürokratie"), "crr3")
+        self.assertEqual(_classify("Das Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG)"), "crr3")
+        self.assertEqual(_classify("Fit & Proper: Neue Anforderungen an Inhaber von Schlüsselfunktionen nach dem BRUBEG"), "fitproper")
+        self.assertEqual(_classify("Institutsvergütungsverordnung 5.0 nach dem BRUBEG"), "instvergv")
+        self.assertEqual(_classify("BRUBEG – Drittstaatenzweigstellen: Erlaubnispflicht nach §§ 53c ff. KWG"), "ebatcb")
+
     def test_banken_marisk(self):
         from regradar.webexport import _classify
         self.assertEqual(_classify("Rundschreiben 06/2026 (BA) – Mindestanforderungen an das Risikomanagement – MaRisk"), "marisk")
@@ -499,3 +515,76 @@ class HealthHeartbeat(unittest.TestCase):
             self.assertEqual(s["lastRunStatus"], "ERROR")
             self.assertEqual(s["lastError"], "Feed nicht erreichbar")
             self.assertEqual(s["errorsLast7d"], 1)
+
+
+class GapReportRelevance(unittest.TestCase):
+    """Der Lücken-Report nutzt einen eigenen, strengen Relevanz-Prompt
+    (nur Finanzaufsichtsrecht) und verwirft gecachte Urteile älterer
+    Prompt-Versionen."""
+
+    def _conn(self):
+        import sqlite3
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        return conn
+
+    def _rows(self, conn, items):
+        conn.execute("CREATE TEMP TABLE arts (article_id INTEGER, title TEXT, teaser TEXT)")
+        conn.executemany("INSERT INTO arts VALUES (?,?,?)", items)
+        return conn.execute("SELECT * FROM arts ORDER BY article_id").fetchall()
+
+    def test_prompt_excludes_tax_and_requires_financial_regulation(self):
+        from regradar import gapreport
+        from regradar.llmfilter import SYSTEM_PROMPT
+        self.assertNotEqual(gapreport.GAP_RELEVANCE_PROMPT, SYSTEM_PROMPT)
+        for word in ("Steuer", "Energie", "Arbeits", "Finanzaufsichts", "Im Zweifel: false"):
+            self.assertIn(word, gapreport.GAP_RELEVANCE_PROMPT)
+
+    def test_old_table_is_migrated_and_old_verdicts_ignored(self):
+        from regradar import gapreport
+        conn = self._conn()
+        # Bestand vor der Versionierung: drei Spalten, Steuerartikel als relevant gecacht
+        conn.execute("CREATE TABLE big4_gap_relevance (article_id INTEGER PRIMARY KEY, relevant INTEGER NOT NULL, checked_at TEXT NOT NULL)")
+        conn.execute("INSERT INTO big4_gap_relevance VALUES (1, 1, '2026-09-05T00:00:00Z')")
+        gapreport.ensure_tables(conn)
+        cols = {r[1] for r in conn.execute("PRAGMA table_info(big4_gap_relevance)")}
+        self.assertIn("fmt", cols)
+        self.assertEqual(conn.execute("SELECT fmt FROM big4_gap_relevance WHERE article_id=1").fetchone()[0], 1)
+
+        calls = []
+        def fake_chat(system, payload):
+            calls.append((system, payload))
+            return {"1": False, "2": True}
+        orig = gapreport._chat_json
+        gapreport._chat_json = fake_chat
+        try:
+            rows = self._rows(conn, [
+                (1, "Bundeskabinett beschließt Einkommensteuerreform 2027", "Steuerpaket"),
+                (2, "Fit & Proper: Neue Anforderungen nach dem BRUBEG", "§ 25e KWG"),
+            ])
+            kept = gapreport._relevant_only(conn, rows)
+        finally:
+            gapreport._chat_json = orig
+
+        # Altes Urteil (fmt=1) wird nicht übernommen: beide Artikel neu bewertet
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0][0], gapreport.GAP_RELEVANCE_PROMPT)
+        self.assertEqual(sorted(i["id"] for i in calls[0][1]), [1, 2])
+        self.assertEqual([r["article_id"] for r in kept], [2])
+        stored = conn.execute("SELECT article_id, relevant, fmt FROM big4_gap_relevance ORDER BY article_id").fetchall()
+        self.assertEqual([tuple(r) for r in stored],
+                         [(1, 0, gapreport.GAP_RELEVANCE_FORMAT), (2, 1, gapreport.GAP_RELEVANCE_FORMAT)])
+
+    def test_cached_current_verdict_skips_llm(self):
+        from regradar import gapreport
+        conn = self._conn()
+        gapreport.ensure_tables(conn)
+        conn.execute("INSERT INTO big4_gap_relevance (article_id, relevant, checked_at, fmt) VALUES (5, 0, 'x', ?)",
+                     (gapreport.GAP_RELEVANCE_FORMAT,))
+        orig = gapreport._chat_json
+        gapreport._chat_json = lambda *a: self.fail("LLM darf bei gecachtem Urteil nicht befragt werden")
+        try:
+            rows = self._rows(conn, [(5, "Steuerurteil", "…")])
+            self.assertEqual(gapreport._relevant_only(conn, rows), [])
+        finally:
+            gapreport._chat_json = orig

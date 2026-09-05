@@ -20,9 +20,12 @@ Strenge Prüfung in vier Stufen, damit nur echte Lücken gemeldet werden:
   1. Nur frische Artikel (Publikationsdatum letzte 14 Tage); Artikel, die
      der bestehende Big4-Match bereits einem Dokument zugeordnet hat
      (big4_matches.related=1), sind abgedeckt.
-  2. LLM-Relevanzfilter (gleiche Kriterien wie llmfilter): Steuerurteile,
-     Kanzlei-PR u. Ä. ohne Aufsichtsbezug fliegen raus (Cache in
-     big4_gap_relevance).
+  2. Eigener, strenger LLM-Relevanzfilter (GAP_RELEVANCE_PROMPT): nur
+     Finanzaufsichts-/Finanzmarktregulierung für die Zielgruppe zählt.
+     Allgemeines Steuer-, Energie-, Arbeits-, Gesellschafts-, Umwelt- und
+     Produktrecht, Kanzlei-PR u. Ä. fliegen raus — auch wenn es Finanz-
+     unternehmen als Steuerzahler oder Arbeitgeber betrifft (Cache in
+     big4_gap_relevance, versioniert über GAP_RELEVANCE_FORMAT).
   3. Ein LLM vergleicht jeden verbleibenden Artikel gegen die gescrapten
      Dokumente der letzten 180 Tage (gleiches Rahmenwerk; ohne Rahmenwerk
      gegen die neuesten Dokumente insgesamt). Im Zweifel gilt: abgedeckt.
@@ -48,6 +51,49 @@ DOC_WINDOW_DAYS = 180         # gescrapte Dokumente: Vergleichszeitraum
 DOCS_PER_FRAMEWORK = 30       # Dokumente pro LLM-Vergleich
 ARTICLE_BATCH_MAX = 12        # Artikel pro LLM-Anfrage
 TIMEOUT = 90
+
+# Version des Relevanzfilters: bei Änderungen an GAP_RELEVANCE_PROMPT
+# hochzählen, damit gecachte Urteile (big4_gap_relevance.fmt) neu bewertet
+# werden. 1 = früherer, allgemeiner llmfilter-Prompt.
+GAP_RELEVANCE_FORMAT = 2
+
+GAP_RELEVANCE_PROMPT = (
+    "Du filterst Fachbeiträge von Beratungsgesellschaften und Kanzleien für "
+    "einen Lücken-Report eines Regulatory-Monitoring-Dienstes. Zielgruppe "
+    "sind Compliance-Abteilungen von Finanzunternehmen (Banken, Asset "
+    "Manager/KVGen, Wertpapier-, Zahlungs- und E-Geld-Institute, "
+    "Versicherer, FinTechs).\n\n"
+    "RELEVANT (true) ist ein Beitrag nur, wenn sein Kernthema "
+    "Finanzaufsichts- oder Finanzmarktregulierung ist, die sich speziell an "
+    "diese Unternehmen richtet: z. B. KWG/CRR/CRD, WpHG/MiFID, WpIG, ZAG/PSD, "
+    "KAGB/AIFMD/UCITS, VAG/Solvency II, GwG/AML, DORA, MiCA, MaRisk, "
+    "Vergütungsregeln für Institute, Fit & Proper, Meldewesen, "
+    "Einlagensicherung/Abwicklung, Kapitalmarkt- und Marktinfrastrukturrecht "
+    "(Prospekt, MAR, EMIR, CSDR, Kapitalmarktunion/MISP), Nachhaltigkeits-"
+    "regulierung für Finanzunternehmen und Berichtspflichtige (SFDR, "
+    "Taxonomie, CSRD/ESRS), Sanktions- und Verbraucherschutzrecht im "
+    "Finanzbereich — als Gesetz, Entwurf, Konsultation, Leitlinie, RTS/ITS, "
+    "Rundschreiben, Merkblatt, Q&A, aufsichtliche Maßnahme oder Urteil mit "
+    "Aufsichtsbezug. Sonstige Querschnittsthemen (Datenschutz, KI, "
+    "IT-Sicherheit) nur, wenn der Beitrag ausdrücklich Pflichten für "
+    "Finanzunternehmen behandelt.\n\n"
+    "NICHT RELEVANT (false) sind insbesondere: allgemeines Steuerrecht "
+    "(Einkommen-, Körperschaft-, Gewerbe-, Umsatzsteuer, Jahressteuergesetz, "
+    "Steuerreformen, Verrechnungspreise, Steuerurteile, BMF-Schreiben zu "
+    "Steuern), Energie- und Strompreisthemen, Arbeits-, Sozial- und "
+    "Vergütungsrecht ohne Institutsbezug (Entgelttransparenz, Nachweisgesetz, "
+    "Mitbestimmung), allgemeines Gesellschafts- und Handelsrecht, Umwelt-, "
+    "Produkt- und Lieferkettenrecht (EUDR, PPWR, CSDDD), allgemeine "
+    "IT-Sicherheit (NIS2) ohne Finanzbezug, Immobilien-, Bau- und "
+    "Vergaberecht, Kanzlei-PR, Awards, Veranstaltungen, Personalien, "
+    "Beiträge in anderen Sprachen als Deutsch oder Englisch. Dass "
+    "Finanzunternehmen als Steuerzahler, Arbeitgeber oder Unternehmen "
+    "allgemein betroffen sind, macht ein Thema NICHT relevant.\n\n"
+    "Im Zweifel: false.\n\n"
+    "Du erhältst eine JSON-Liste von Objekten mit id und text. Antworte "
+    "ausschließlich mit einem JSON-Objekt, das jede id auf true oder false "
+    "abbildet. Keine Erklärungen."
+)
 
 COVER_PROMPT = (
     "Du prüfst für einen Regulatory-Monitoring-Dienst, ob Fachbeiträge von "
@@ -162,8 +208,13 @@ def ensure_tables(conn: sqlite3.Connection) -> None:
         """CREATE TABLE IF NOT EXISTS big4_gap_relevance (
                article_id INTEGER PRIMARY KEY,
                relevant   INTEGER NOT NULL,
-               checked_at TEXT NOT NULL
+               checked_at TEXT NOT NULL,
+               fmt        INTEGER NOT NULL DEFAULT 1  -- GAP_RELEVANCE_FORMAT
            )""")
+    cols = {r[1] for r in conn.execute("PRAGMA table_info(big4_gap_relevance)")}
+    if "fmt" not in cols:  # Bestand vor der Versionierung: alte Urteile = 1
+        conn.execute("ALTER TABLE big4_gap_relevance "
+                     "ADD COLUMN fmt INTEGER NOT NULL DEFAULT 1")
     conn.execute(
         """CREATE TABLE IF NOT EXISTS gap_fw_checked (
                document_id INTEGER PRIMARY KEY,
@@ -290,17 +341,19 @@ def _candidates(conn: sqlite3.Connection) -> List[sqlite3.Row]:
 
 def _relevant_only(conn: sqlite3.Connection,
                    articles: List[sqlite3.Row]) -> List[sqlite3.Row]:
-    """LLM-Relevanzfilter (Kriterien wie llmfilter): Steuerthemen, Awards,
-    allgemeine Kanzlei-Beiträge ohne Aufsichtsbezug aussortieren. Urteile
-    werden pro Artikel gecacht; ohne Urteil gilt der Artikel als nicht
-    relevant (konservativ: keine falsche Lücken-Meldung)."""
-    from .llmfilter import SYSTEM_PROMPT
+    """Strenger LLM-Relevanzfilter (GAP_RELEVANCE_PROMPT): nur Finanz-
+    aufsichts-/Finanzmarktregulierung für die Zielgruppe; Steuer-, Energie-,
+    Arbeits- und sonstiges Querschnittsrecht, Awards und Kanzlei-PR werden
+    aussortiert. Urteile werden pro Artikel und Prompt-Version gecacht;
+    ohne Urteil gilt der Artikel als nicht relevant (konservativ: keine
+    falsche Lücken-Meldung)."""
     cached = {r["article_id"]: bool(r["relevant"]) for r in conn.execute(
-        "SELECT article_id, relevant FROM big4_gap_relevance")}
+        "SELECT article_id, relevant FROM big4_gap_relevance WHERE fmt=?",
+        (GAP_RELEVANCE_FORMAT,))}
     todo = [a for a in articles if a["article_id"] not in cached]
     for start in range(0, len(todo), ARTICLE_BATCH_MAX):
         batch = todo[start:start + ARTICLE_BATCH_MAX]
-        parsed = _chat_json(SYSTEM_PROMPT, [
+        parsed = _chat_json(GAP_RELEVANCE_PROMPT, [
             {"id": a["article_id"],
              "text": "{} – {}".format(_clean(a["title"], 200),
                                       _clean(a["teaser"], 300))}
@@ -313,8 +366,9 @@ def _relevant_only(conn: sqlite3.Connection,
             if isinstance(v, bool):
                 cached[a["article_id"]] = v
                 conn.execute(
-                    "INSERT OR REPLACE INTO big4_gap_relevance VALUES (?,?,?)",
-                    (a["article_id"], int(v), now))
+                    "INSERT OR REPLACE INTO big4_gap_relevance "
+                    "(article_id, relevant, checked_at, fmt) VALUES (?,?,?,?)",
+                    (a["article_id"], int(v), now, GAP_RELEVANCE_FORMAT))
     conn.commit()
     return [a for a in articles if cached.get(a["article_id"])]
 
