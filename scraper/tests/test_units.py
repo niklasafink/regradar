@@ -326,6 +326,35 @@ class PraxisSummary(unittest.TestCase):
         self.assertFalse(_suspicious_start("„Zitat“ am Anfang."))
 
 
+class CliRunDisabledSource(unittest.TestCase):
+    """Eine deaktivierte Quelle (enabled=0) liefert aus run_source nur
+    {"status": "DISABLED"} – cmd_run darf daran nicht scheitern (KeyError
+    'discovered' hat vom 02.–05.09.2026 jeden Stundenlauf abgebrochen)."""
+
+    def test_disabled_source_does_not_crash(self):
+        import io
+        import contextlib
+        from unittest import mock
+        from regradar import cli
+
+        def fake_run_source(conn, sid, since=None, fetch_content=True):
+            if sid == "bis":
+                return {"source_id": sid, "status": "DISABLED"}
+            return {"source_id": sid, "discovered": 3, "fetched": 1, "new": 1,
+                    "changed": 0, "http_errors": 0, "parse_errors": 0,
+                    "status": "OK", "error": None}
+
+        out = io.StringIO()
+        with mock.patch.object(cli, "run_source", fake_run_source), \
+                mock.patch.object(cli, "SOURCES", [{"source_id": "bis"}, {"source_id": "fsb"}]), \
+                contextlib.redirect_stdout(out):
+            cli.cmd_run(None, "all", fetch=True)
+        text = out.getvalue()
+        self.assertIn("übersprungen (Quelle deaktiviert)", text)
+        self.assertIn("fsb", text)
+        self.assertIn("DISABLED", text)
+
+
 if __name__ == "__main__":
     unittest.main()
 
@@ -417,3 +446,56 @@ class QaSweepSept2026(unittest.TestCase):
         html = '<time datetime="2025-04-29T12:00:00Z">29 April 2025</time> <time datetime="2025-07-31T21:59:59Z">31 July</time>'
         self.assertEqual(page_publication_date(html), "2025-04-29")
         self.assertIsNone(page_publication_date("<p>kein Datum</p>"))
+
+
+class HealthHeartbeat(unittest.TestCase):
+    """Herzschlag der Scraper-Überwachung: Argument-Parsing, Schritt-Stände
+    und die Zustandssammlung aus einer leeren Test-Datenbank."""
+
+    def test_parse_step_args(self):
+        from regradar.health import parse_step_args
+        steps, rc, started, dry = parse_step_args(
+            ["--step=crawl=ok", "--step=push=skipped", "--step=bogus=ok",
+             "--exit=1", "--started=2026-09-05T10:00:00Z", "--dry"])
+        self.assertEqual(steps, {"crawl": "ok", "push": "skipped"})
+        self.assertEqual(rc, 1)
+        self.assertEqual(started, "2026-09-05T10:00:00Z")
+        self.assertTrue(dry)
+
+    def test_record_steps_and_collect_state(self):
+        import os
+        import tempfile
+        from regradar import db as dbmod
+        from regradar.health import collect_state, record_steps
+        from regradar.registry import SOURCES
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "steps.json")
+            data = record_steps({"crawl": "ok", "export": "failed", "push": "skipped"}, 1,
+                                "2026-09-05T10:00:00Z", path=path)
+            self.assertIn("crawl", data["lastOk"])
+            self.assertIn("push", data["lastOk"])      # skipped = kein Fehler
+            self.assertNotIn("export", data["lastOk"])
+            self.assertEqual(data["run"]["exitCode"], 1)
+            self.assertEqual(data["run"]["startedAt"], "2026-09-05T10:00:00Z")
+
+            conn = dbmod.connect(os.path.join(tmp, "t.db"))
+            src = SOURCES[0]
+            dbmod.upsert_source(conn, src)
+            conn.execute("UPDATE sources SET last_success_at='2026-09-05T09:00:00Z' WHERE source_id=?",
+                         (src["source_id"],))
+            conn.execute(
+                """INSERT INTO crawl_runs (source_id, started_at, finished_at, status, error_message)
+                   VALUES (?, '2026-09-05T08:00:00Z', '2026-09-05T08:01:00Z', 'ERROR', 'Feed nicht erreichbar')""",
+                (src["source_id"],))
+            conn.commit()
+            state = collect_state(conn, data)
+            conn.close()
+            self.assertEqual(state["v"], 1)
+            self.assertEqual(state["stepsLastOk"].keys(), {"crawl", "push"})
+            s = state["sources"][0]
+            self.assertEqual(s["id"], src["source_id"])
+            self.assertEqual(s["name"], src["name"])
+            self.assertEqual(s["lastSuccessAt"], "2026-09-05T09:00:00Z")
+            self.assertEqual(s["lastRunStatus"], "ERROR")
+            self.assertEqual(s["lastError"], "Feed nicht erreichbar")
+            self.assertEqual(s["errorsLast7d"], 1)

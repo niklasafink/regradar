@@ -18,6 +18,7 @@ python3 -m regradar export data/export.json
 python3 -m regradar big4         # Big-4-Fachbeiträge einsammeln (PwC, KPMG, Deloitte …)
 python3 -m regradar export-web   # schreibt web/lib/live.json für das Frontend
 python3 -m regradar gap-report   # Big4-Artikel ohne Primärquelle per Mail melden
+python3 -m regradar heartbeat --dry   # Zustand für die Scraper-Überwachung anzeigen
 ```
 
 ## Frontend-Anbindung
@@ -141,7 +142,9 @@ regradar/
                  + RSS 1.0/RDF), eurlex, gii, dip, rii, amla, eiopa,
                  bmf, curia, hys, ebaqna, esmalib, iosco, dsnews,
                  ecfinance
-  cli.py         init | sources | run | report | export
+  cli.py         init | sources | run | report | export | big4 | dedup |
+                 export-web | gap-report | heartbeat
+  health.py      Herzschlag an die Scraper-Überwachung der Website
 ```
 
 Prinzipien aus dem Backend-Prompt:
@@ -166,6 +169,85 @@ Prinzipien aus dem Backend-Prompt:
    `discover()` / `fetch_url()` / `normalize()` und Registrierung in
    `adapters/__init__.py`.
 3. `python3 -m regradar run <source_id> --no-fetch` zum Testen.
+
+## Überwachung und Selbstreparatur
+
+Der Stundenlauf (`run_hourly.sh`, launchd-Agent `com.regradar.scraper`,
+Log `logs/scraper.log`) läuft bewusst ohne `set -e`: Die Schritte `crawl`,
+`big4`, `dedup`, `export` und `push` werden einzeln als ok/failed/skipped
+erfasst, ein Absturz im Crawl blockiert den Export nicht mehr (02.–05.09.2026
+hatte ein `KeyError` bei einer deaktivierten Quelle drei Tage lang jeden Lauf
+abgebrochen, unbemerkt). Eine Lauf-Sperre (`data/.run.lock`) verhindert, dass
+Stundenlauf und Reparatur-Agent parallel laufen.
+
+**Herzschlag.** Am Ende jedes Laufs meldet `python3 -m regradar heartbeat`
+(`regradar/health.py`) den Zustand aller Quellen (`sources`/`crawl_runs`:
+letzter Erfolg, letztes Dokument, Fehler der letzten 7 Tage), der
+Big4-Kanzleien und der Pipeline-Schritte an `POST /api/health/heartbeat` der
+Website (`web/lib/health.ts`). Die Schritt-Stände liegen in
+`data/health_steps.json`; `--dry` zeigt den Zustand nur an. Fehler beim Senden
+lassen den Lauf nie scheitern.
+
+**Bewertung und Alarm** (`web/lib/healthTypes.ts`): Eine Quelle oder ein
+Schritt, der länger als 24 h nicht erfolgreich war, gilt als ausgefallen;
+bleibt der Herzschlag selbst länger als 24 h aus, gilt die ganze Pipeline
+(`pipeline`) als ausgefallen. Bewertet wird bei jedem Herzschlag und
+zusätzlich von außen, damit auch ein schlafender oder abgestürzter Mac
+auffällt: stündlich (Minute 17) über GitHub Actions
+(`.github/workflows/health-check.yml`, `GET /api/health/check` ohne Auth,
+löst höchstens alle 4 Min. eine Bewertung aus und verrät nichts) und täglich
+06:30 UTC über den Vercel-Cron. Der Alarm-Zustand liegt im Redis-Hash
+`health:alerts`: pro Problem eine Mail, Erinnerung alle 24 h, „wieder
+OK“-Mail nach Behebung. Empfänger ist `NOTIFY_EMAIL` (Standard: Adresse des
+Betreibers), Versand über Resend.
+
+**Statusseite** `/admin/health?t=<Token>`: Der Token ist mit
+`SUBSCRIBE_SECRET` signiert (eigener `act`-Wert, nicht für Abmeldungen
+nutzbar) und steckt in jeder Alarm-Mail; ohne gültigen Token antwortet die
+Seite mit 404. Sie zeigt Quellen, Schritte, Probleme und laufende Reparaturen
+live (Daten aus `GET /api/health/repair?t=…&all=1`). „Reparieren“ legt einen
+Auftrag an (`health:repair:pending`); `?repair=<id>` aus der Mail startet
+ihn direkt beim Öffnen.
+
+**Reparatur-Agent** `repair_agent.py` (launchd-Agent `com.regradar.repair`,
+minütlich über `run_repair.sh`, Log `logs/repair.log`) holt offene Aufträge
+(`GET /api/health/repair?pending=1`) und meldet jeden Schritt zurück, sodass
+die Statusseite mitliest:
+
+1. Zustand prüfen: Quelle bekannt und aktiv? Stundenlauf-Agent geladen
+   (sonst per `launchctl bootstrap` neu laden)? Läuft gerade ein Stundenlauf
+   (dann warten)?
+2. Quelle erneut abrufen (`python3 -m regradar run <id>`).
+3. Schlägt das fehl: Fehleranalyse und Korrekturversuch mit Claude Code
+   headless (`claude -p`, nur im Verzeichnis `scraper/`, keine Commits,
+   höchstens alle 6 h je Quelle; Modell über `HEALTH_CLAUDE_MODEL`, Standard
+   `sonnet`), danach erneut abrufen. Geänderte Dateien bleiben uncommittet
+   und werden im Ergebnis genannt.
+4. Stundenlauf nachholen (`run_hourly.sh`: Crawl, Export, Push, Deploy,
+   Herzschlag), damit die Website den neuen Stand zeigt.
+5. Ergebnis prüfen: letzter Erfolg der Quelle jünger als der Auftrag →
+   „behoben“, sonst „fehlgeschlagen“ mit Hinweis zur manuellen Prüfung.
+
+Der Auftrag `pipeline` überspringt die Schritte 2–3.
+
+**Auth und Konfiguration.** Gemeinsames Geheimnis Mac ↔ Vercel ist
+`CRON_SECRET` aus `web/.env.local` (liegt identisch auf Vercel; `health.py`
+liest es von dort nach), alternativ `HEALTH_SECRET` in `scraper/.env`.
+Optional: `HEALTH_APP_URL` (Standard `https://www.regradar.de`) für Tests
+gegen einen Dev-Server.
+
+```bash
+python3 -m regradar heartbeat --dry      # Zustand anzeigen, nichts senden
+python3 -m regradar heartbeat            # Zustand senden (macht run_hourly.sh am Ende)
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.regradar.repair.plist
+launchctl list | grep regradar           # beide Agents geladen?
+tail -f logs/repair.log                  # Reparatur-Agent beobachten
+```
+
+Testmail ohne Änderung des Alarm-Zustands: `GET /api/health/check?test=1`
+mit `Authorization: Bearer <CRON_SECRET>` (Antwort enthält den Link zur
+Statusseite). Bekannte Grenze: launchd feuert nicht, während der Mac schläft;
+in dem Fall meldet der externe Takt nach 24 h ohne Herzschlag `pipeline`.
 
 ## Nächste Ausbaustufen
 

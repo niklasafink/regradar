@@ -1,0 +1,18 @@
+# Stündlicher Takt der Scraper-Überwachung, unabhängig vom Mac und vom
+# Vercel-Cron (Hobby-Plan: nur täglich). Stößt nur die Bewertung an; der
+# Endpunkt ist ohne Auth aufrufbar, verrät nichts und löst höchstens alle
+# vier Minuten eine Bewertung aus (siehe web/app/api/health/check/route.ts).
+name: Scraper-Health-Check
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Bewertung anstoßen
+        run: curl -fsS --max-time 60 --retry 2 "https://www.regradar.de/api/health/check" -o /dev/null

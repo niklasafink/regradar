@@ -15,6 +15,9 @@ Befehle:
   dedup                      Dubletten klassifizieren: sichere unterdrücken
                              (dedup_suppressed), unsichere meldet die
                              Gap-Report-Mail
+  heartbeat [--step=…] [--exit=N] [--dry]
+                             Zustand aller Quellen/Schritte an die Scraper-
+                             Überwachung der Website melden (run_hourly.sh)
 """
 import json
 import os
@@ -64,6 +67,11 @@ def cmd_run(conn, target: str, fetch: bool, since=None):
         results.append(stats)
         if stats.get("error"):
             print("  FEHLER: {}".format(stats["error"]))
+        elif stats.get("status") == "DISABLED":
+            # Deaktivierte Quellen (enabled=0 in der Registry) liefern keine
+            # Zählwerte – nicht formatieren, sonst KeyError und der ganze Lauf
+            # bricht ab (passiert 02.–05.09.2026 mit der BIS-Quelle).
+            print("  übersprungen (Quelle deaktiviert)")
         else:
             print("  entdeckt {discovered}, geladen {fetched}, neu {new}, "
                   "geändert {changed}, HTTP-Fehler {http_errors}, Parse-Fehler {parse_errors}"
@@ -153,6 +161,9 @@ def main(argv=None):
             cmd_report(conn, int(argv[1]) if len(argv) > 1 else 25)
         elif cmd == "export":
             cmd_export(conn, argv[1] if len(argv) > 1 else "data/export.json")
+        elif cmd == "heartbeat":
+            from .health import cmd_heartbeat
+            return cmd_heartbeat(conn, argv[1:])
         elif cmd == "big4":
             from .big4 import scrape
             stats = scrape(conn)

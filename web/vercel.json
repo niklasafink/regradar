@@ -12,6 +12,10 @@
     {
       "path": "/api/newsletter/praxis",
       "schedule": "0 7 1 * *"
+    },
+    {
+      "path": "/api/health/check",
+      "schedule": "30 6 * * *"
     }
   ]
 }
