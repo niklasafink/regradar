@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T15:42:30Z",
+  "generated_at": "2026-09-05T17:32:00Z",
   "updates": {
     "amla": [
       {
@@ -63,34 +63,6 @@
         "deadline": "20.09.2026"
       },
       {
-        "d": "03.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "Konsultation zu Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen (AMLA)",
-          "en": "Consultation on Guidelines for Ongoing Monitoring of Business Relationships (AMLA)"
-        },
-        "sl": "consultation-on-the-draft-guidelines-on-ongoing-monitoring-of-a-business-relatio",
-        "s": {
-          "de": "Die AMLA hat eine Konsultation zu Entwürfen von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen gestartet. Diese Leitlinien sollen Verpflichtete bei der Umsetzung ihrer Pflichten zur kontinuierlichen Überwachung von Geschäftsbeziehungen und Transaktionen unterstützen, um ungewöhnliche oder verdächtige Aktivitäten zu erkennen.\n\nDie Entwürfe gliedern sich in allgemeine Grundsätze sowie spezifische Leitlinien zur Aktualisierung von Kundeninformationen und zum Rahmen für die Transaktions- und Aktivitätsüberwachung. Sie richten sich an alle Stakeholder im Bereich des EU-Geldwäsche- und Terrorismusfinanzierungsrahmens, insbesondere an Finanzinstitute und bestimmte Nicht-Finanzunternehmen und -berufe.\n\nDie Konsultation läuft bis zum 3. September 2026. Eine öffentliche Anhörung zu den Entwürfen ist für den 2. Juli 2026 geplant.",
-          "en": "AMLA has launched a consultation on draft guidelines concerning the ongoing monitoring of business relationships. These guidelines aim to assist obliged entities in fulfilling their duties for continuous monitoring of business relationships and transactions to detect unusual or suspicious activities.\n\nThe drafts are divided into general principles and specific guidelines on keeping customer information up to date and on the framework for transaction and activity monitoring. They are addressed to all stakeholders interested in the EU's anti-money laundering and countering the financing of terrorism (AML/CFT) framework, particularly financial institutions and designated non-financial businesses and professions.\n\nThe consultation period ends on 3 September 2026. A public hearing on these draft guidelines is scheduled for 2 July 2026."
-        },
-        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-guidelines-ongoing-monitoring-business-relationship_en",
-        "imp": "medium",
-        "deadline": "03.09.2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "AMLA startet Konsultation zum Entwurf von Leitlinien zur laufenden Überwachung von Geschäftsbeziehungen",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/amla-startet-konsultation-zum-entwurf-von-leitlinien-zur-laufenden-ueberwachung-von-geschaeftsbeziehungen/",
-            "d": "09.06.2026"
-          }
-        ]
-      },
-      {
         "d": "04.08.2026",
         "t": {
           "de": "Meldung",
@@ -127,6 +99,25 @@
           "en": "AMLA has published an FAQ document on the reporting package for identifying provisionally eligible entities. It addresses queries from national financial supervisors regarding interpretation, operational clarifications, and practical implementation issues of the data collection.\n\nThe document aims to support reporting obliged entities in the data collections organised at national level, enabling accurate and efficient reporting. It serves as a working resource for preparing submissions.\n\nFurther questions can be submitted through the relevant national financial supervisors and will be considered for future updates."
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/frequently-asked-questions-reporting-package-identifying-provisionally-eligible-entities_en",
+        "imp": "high"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Aktualisierte Taxonomie für die Datenerhebung zur Risikobewertung 2027 der AMLA",
+          "en": "Updated taxonomy for the 2027 risk assessment data collection"
+        },
+        "sl": "updated-taxonomy-for-the-2027-risk-assessment-data-collection",
+        "s": {
+          "de": "Die EBA hat im Rahmen ihres Reporting Framework Release 4.3 eine aktualisierte Version des Datenmodells und der Taxonomie veröffentlicht. Diese dienen der Datenerhebung für die Risikobewertung der AMLA bei direkt zu beaufsichtigenden Unternehmen.\n\nDie Komponenten der Version 4.3 sind ausschließlich zur Vorbereitung der Meldepflichtigen auf die Datenerhebung der AMLA für die Risikobewertung 2027 gedacht. Sie dürfen nicht für Einreichungen bei nationalen Behörden, der EBA oder der AMLA verwendet werden.\n\nEine weitere Version, 4.4, mit überarbeiteten Vorlagen wird voraussichtlich im September 2026 folgen. Diese wird die Erfassung fehlender Informationen verbessern und zwei neue Datenpunkte hinzufügen.",
+          "en": "The EBA has published an updated version of the data model and taxonomy as part of its Reporting Framework Release 4.3. These are intended to support the collection of data for AMLA's risk assessment of entities eligible for direct supervision.\n\nThe components in v4.3 are solely for reporting agents to prepare for the AMLA risk assessment 2027 data collection exercise. They must not be used for submissions to national competent authorities, the EBA, or AMLA.\n\nA further release, v4.4, with revised templates is expected in September 2026. This will improve the capture of unavailable information and add two new data points."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/updated-taxonomy-2027-risk-assessment-data-collection_en",
         "imp": "high"
       }
     ],
@@ -248,6 +239,124 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "emir": [
+      {
+        "d": "04.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA unterzeichnet MoU mit indischer Wertpapieraufsichtsbehörde SEBI zur Anerkennung von CCPs",
+          "en": "ESMA signs Memorandum of Understanding with the Securities and Exchange Board of India on CCP recognition"
+        },
+        "sl": "esma-signs-memorandum-of-understanding-with-the-securities-and-exchange-board-of",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat ein Memorandum of Understanding (MoU) mit dem Securities and Exchange Board of India (SEBI) unterzeichnet. Ziel ist die Erleichterung der Zusammenarbeit und des Informationsaustauschs bezüglich der Anerkennung indischer Zentraler Gegenparteien (CCPs), die von SEBI beaufsichtigt werden.\n\nDieses Abkommen ist ein wichtiger Schritt, um EU-Clearing-Mitgliedern den Zugang zu indischen CCPs wieder zu ermöglichen. Es folgt auf ein früheres MoU zwischen ESMA und der Reserve Bank of India (RBI) und ist das Ergebnis einer zweijährigen Zusammenarbeit. Das MoU ist eine Voraussetzung gemäß Artikel 25 der EMIR für die Anerkennung von CCPs aus Drittländern durch die ESMA.\n\nIndische CCPs, die von SEBI beaufsichtigt werden, können nun die Wiederanerkennung unter EMIR beantragen. Die ESMA führt zudem Gespräche mit der International Financial Services Centres Authority (IFSCA), um eine ähnliche Kooperationsvereinbarung zu treffen.",
+          "en": "The European Securities and Markets Authority (ESMA) has signed a Memorandum of Understanding (MoU) with the Securities and Exchange Board of India (SEBI). This agreement aims to facilitate cooperation and information exchange regarding the recognition of Indian Central Counterparties (CCPs) supervised by SEBI.\n\nThis agreement is a significant step towards restoring access for EU clearing members to Indian CCPs. It follows an earlier MoU between ESMA and the Reserve Bank of India (RBI) and is the result of two years of sustained engagement. The MoU is a key requirement under Article 25 of EMIR for the recognition of third-country CCPs by ESMA.\n\nIndian CCPs supervised by SEBI can now re-apply for recognition under EMIR. ESMA is also continuing discussions with the International Financial Services Centres Authority (IFSCA) to conclude a similar cooperation arrangement."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-signs-memorandum-understanding-securities-and-exchange-board-india",
+        "imp": "low"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "iosco.org",
+        "ti": {
+          "de": "Öffentliche quantitative Offenlegungsstandards für zentrale Gegenparteien",
+          "en": "Public quantitative disclosure standards for central counterparties"
+        },
+        "sl": "public-quantitative-disclosure-standards-for-central-counterparties",
+        "s": {
+          "de": "Der Bericht legt quantitative Offenlegungsstandards für zentrale Gegenparteien (CCPs) fest. Diese Standards sollen die Transparenz und Vergleichbarkeit der von CCPs veröffentlichten Daten verbessern, indem sie einheitliche Metriken und Formate für die Offenlegung vorgeben.\n\nDie Standards richten sich an alle CCPs und sollen Marktteilnehmern, Aufsichtsbehörden und der Öffentlichkeit ein besseres Verständnis der Risikoprofile und der finanziellen Stärke von CCPs ermöglichen. Dies ist insbesondere für Finanzinstitute relevant, die CCP-Dienstleistungen nutzen oder mit CCPs interagieren.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
+          "en": "The report establishes quantitative disclosure standards for central counterparties (CCPs). These standards aim to enhance the transparency and comparability of data published by CCPs by prescribing uniform metrics and formats for disclosure.\n\nThese standards apply to all CCPs and are intended to provide market participants, regulators, and the public with a better understanding of CCPs' risk profiles and financial strength. This is particularly relevant for financial institutions that use CCP services or interact with CCPs.\n\nComments on this report should be submitted by June 30, 2026."
+        },
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
+        "imp": "medium",
+        "refnum": "OR/05/2026"
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "iosco.org",
+        "ti": {
+          "de": "Widerstandsfähigkeit zentraler Gegenparteien (CCPs): Weitere Leitlinien zu den PFMI",
+          "en": "Resilience of central counterparties (CCPs): Further guidance on the PFMI"
+        },
+        "sl": "resilience-of-central-counterparties-ccps-further-guidance-on-the-pfmi",
+        "s": {
+          "de": "Die IOSCO hat einen Abschlussbericht zur Resilienz zentraler Gegenparteien (CCPs) veröffentlicht, der weitere Leitlinien zu den Prinzipien für Finanzmarktinfrastrukturen (PFMI) enthält. Der Bericht präzisiert die Erwartungen an CCPs, um deren Widerstandsfähigkeit gegenüber finanziellen und operationellen Schocks zu stärken.\n\nDiese Leitlinien sind für alle zentralen Gegenparteien relevant. Sie sollen sicherstellen, dass CCPs auch unter extremen Marktbedingungen ihre kritischen Funktionen aufrechterhalten können, was für die Stabilität des Finanzsystems von Bedeutung ist.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
+          "en": "IOSCO has published a final report on the resilience of central counterparties (CCPs), providing further guidance on the Principles for Financial Market Infrastructures (PFMI). The report clarifies expectations for CCPs to strengthen their resilience against financial and operational shocks.\n\nThese guidelines are relevant for all central counterparties. They aim to ensure that CCPs can maintain their critical functions even under extreme market conditions, which is important for the stability of the financial system.\n\nComments on this report should be submitted by 30 June 2026."
+        },
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
+        "imp": "medium",
+        "refnum": "OR/04/2026"
       }
     ],
     "sanctions": [
@@ -1346,124 +1455,6 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_20_helaba.html?cms_expanded=true",
         "imp": "high"
-      }
-    ],
-    "emir": [
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "iosco.org",
-        "ti": {
-          "de": "Öffentliche quantitative Offenlegungsstandards für zentrale Gegenparteien",
-          "en": "Public quantitative disclosure standards for central counterparties"
-        },
-        "sl": "public-quantitative-disclosure-standards-for-central-counterparties",
-        "s": {
-          "de": "Der Bericht legt quantitative Offenlegungsstandards für zentrale Gegenparteien (CCPs) fest. Diese Standards sollen die Transparenz und Vergleichbarkeit der von CCPs veröffentlichten Daten verbessern, indem sie einheitliche Metriken und Formate für die Offenlegung vorgeben.\n\nDie Standards richten sich an alle CCPs und sollen Marktteilnehmern, Aufsichtsbehörden und der Öffentlichkeit ein besseres Verständnis der Risikoprofile und der finanziellen Stärke von CCPs ermöglichen. Dies ist insbesondere für Finanzinstitute relevant, die CCP-Dienstleistungen nutzen oder mit CCPs interagieren.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
-          "en": "The report establishes quantitative disclosure standards for central counterparties (CCPs). These standards aim to enhance the transparency and comparability of data published by CCPs by prescribing uniform metrics and formats for disclosure.\n\nThese standards apply to all CCPs and are intended to provide market participants, regulators, and the public with a better understanding of CCPs' risk profiles and financial strength. This is particularly relevant for financial institutions that use CCP services or interact with CCPs.\n\nComments on this report should be submitted by June 30, 2026."
-        },
-        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
-        "imp": "medium",
-        "refnum": "OR/05/2026"
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "iosco.org",
-        "ti": {
-          "de": "Widerstandsfähigkeit zentraler Gegenparteien (CCPs): Weitere Leitlinien zu den PFMI",
-          "en": "Resilience of central counterparties (CCPs): Further guidance on the PFMI"
-        },
-        "sl": "resilience-of-central-counterparties-ccps-further-guidance-on-the-pfmi",
-        "s": {
-          "de": "Die IOSCO hat einen Abschlussbericht zur Resilienz zentraler Gegenparteien (CCPs) veröffentlicht, der weitere Leitlinien zu den Prinzipien für Finanzmarktinfrastrukturen (PFMI) enthält. Der Bericht präzisiert die Erwartungen an CCPs, um deren Widerstandsfähigkeit gegenüber finanziellen und operationellen Schocks zu stärken.\n\nDiese Leitlinien sind für alle zentralen Gegenparteien relevant. Sie sollen sicherstellen, dass CCPs auch unter extremen Marktbedingungen ihre kritischen Funktionen aufrechterhalten können, was für die Stabilität des Finanzsystems von Bedeutung ist.\n\nKommentare zu diesem Bericht können bis zum 30. Juni 2026 eingereicht werden.",
-          "en": "IOSCO has published a final report on the resilience of central counterparties (CCPs), providing further guidance on the Principles for Financial Market Infrastructures (PFMI). The report clarifies expectations for CCPs to strengthen their resilience against financial and operational shocks.\n\nThese guidelines are relevant for all central counterparties. They aim to ensure that CCPs can maintain their critical functions even under extreme market conditions, which is important for the stability of the financial system.\n\nComments on this report should be submitted by 30 June 2026."
-        },
-        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
-        "imp": "medium",
-        "refnum": "OR/04/2026"
-      },
-      {
-        "d": "12.12.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bis.org",
-        "ti": {
-          "de": "Überprüfung der Umsetzung der Margenanforderungen für nicht zentral abgerechnete Derivate",
-          "en": "Review of the implementation of margin requirements for non-centrally cleared derivatives"
-        },
-        "sl": "review-of-the-implementation-of-margin-requirements-for-non-centrally-cleared-de",
-        "s": {
-          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) und die Internationale Organisation der Wertpapieraufsichtsbehörden (IOSCO) haben eine Überprüfung der Umsetzung des Rahmenwerks für Margenanforderungen für nicht zentral abgewickelte Derivate veröffentlicht. Das Rahmenwerk wurde als Reaktion auf den G20-Aufruf von 2011 zur Stärkung der Widerstandsfähigkeit der Finanzmärkte eingeführt und in mehreren Phasen umgesetzt, wobei die letzte Phase im September 2022 begann.\n\nDie Überprüfung ergab keine wesentlichen Probleme mit dem Rahmenwerk. BCBS und IOSCO schlagen keine Änderungen vor, empfehlen jedoch eine fortgesetzte Überwachung durch den Austausch von Aufsichtsinformationen und Erfahrungen unter ihren Mitgliedern, um sich entwickelnde Marktpraktiken zu adressieren. Margin-Anforderungen reduzieren systemische Risiken und fördern das zentrale Clearing, indem sie das Kontrahentenrisiko bei nicht zentral abgewickelten Derivaten mindern und die Anhäufung unbesicherter Engagements begrenzen.\n\nDie Implementierung des Rahmenwerks erfolgte schrittweise, wobei die letzte Phase (Phase 6) im September 2022 begann und für Notionalbeträge von nicht zentral abgewickelten Derivaten ab 8 Mrd. EUR galt. Die Umsetzungszeitpläne variierten je nach Jurisdiktion, aber die meisten haben das Rahmenwerk umgesetzt.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) and the International Organization of Securities Commissions (IOSCO) have published a review of the implementation of the framework for margin requirements for non-centrally cleared derivatives. The framework was introduced in response to the 2011 G20 call to enhance the resilience of financial markets and was implemented in several phases, with the last phase beginning in September 2022.\n\nThe review found no material issues with the framework. BCBS and IOSCO do not propose changes to the framework but recommend continued monitoring through the exchange of supervisory information and sharing of experiences among their members to address evolving market practices. Margin requirements reduce systemic risk and promote central clearing by mitigating counterparty risk in non-centrally cleared derivatives and limiting the build-up of uncollateralized exposures.\n\nThe implementation of the framework occurred in phases, with the last phase (Phase 6) starting in September 2022, applicable to notional amounts of non-centrally cleared derivatives of EUR 8 billion and above. Implementation schedules varied across jurisdictions, but most have implemented the framework."
-        },
-        "url": "https://www.bis.org/bcbs/publ/d606.htm",
-        "imp": "low"
       }
     ],
     "irrbb": [
@@ -3163,7 +3154,15 @@
           "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published their first annual report on major ICT-related incidents in the EU financial sector. This report, based on the reporting mechanism established by DORA, indicates that ICT risks are increasingly borderless and interconnected. The authorities emphasize the need for financial entities to strengthen their cybersecurity measures in light of the development of AI-driven tools.\n\nDORA harmonizes reporting requirements for ICT incidents, ensuring that major incidents are notified to all competent authorities to enable a coordinated response. The report reveals that approximately one-third of the 3,383 reported incidents had cross-border impacts, while direct impacts on clients and transactions were generally limited. System failures and external events were the primary drivers, highlighting the importance of robust third-party risk management and effective oversight of outsourced services. Although only 10% of incidents were cybersecurity-related, it is crucial for financial entities to maintain the highest cybersecurity standards.\n\nThis report, based on Article 22(2) of the DORA regulation, will be published annually and provides data on the number, nature, impact, remedial actions, and costs of ICT incidents. A major ICT-related incident is defined as an event compromising the security of network and information systems with a high adverse impact on critical functions of a financial entity."
         },
         "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
-        "imp": "medium"
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs veröffentlichen ersten Bericht über schwerwiegende IKT-Vorfälle im Rahmen von DORA",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-veroeffentlichen-ersten-bericht-ueber-schwerwiegende-ikt-vorfaelle-im-rahmen-von-dora/",
+            "d": "03.06.2026"
+          }
+        ]
       }
     ],
     "dataact": [
@@ -3829,6 +3828,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "04.09.2026",
+      "ti": "Verstoß gegen die Marktmissbrauchsverordnung: Bafin setzt Geldbußen wegen Marktmanipulation fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/40c_neu_124_WpHG_anonym/meldung_2026_09_04_geldbusse.html?cms_expanded=true",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat am 24. August 2026 eine Geldbuße in Höhe von 1.900 Euro gegen eine natürliche Person sowie eine Geldbuße in Höhe von 1.650 Euro gegen eine weitere natürliche Person festgesetzt."
+    },
     {
       "d": "26.08.2026",
       "ti": "Wise Europe SA: Bafin setzt Bußgeld fest",
