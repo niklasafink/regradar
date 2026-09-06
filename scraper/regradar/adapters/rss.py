@@ -17,7 +17,7 @@ from urllib.parse import urlparse
 
 from .. import http
 from ..models import DiscoveredDocument
-from ..registry import RSS_FEEDS, RSS_NO_FETCH
+from ..registry import RSS_FEEDS, RSS_LINK_EXCLUDE, RSS_NO_FETCH
 from .base import SourceAdapter
 
 # Titelmuster → Dokumenttyp-Verfeinerung
@@ -141,6 +141,9 @@ class RssAdapter(SourceAdapter):
                     dm = DESC_DATE_RE.search(desc)
                     pub = dm.group(1) if dm else None
                 if since and pub and pub < since:
+                    continue
+                excl = RSS_LINK_EXCLUDE.get(self.source_id)
+                if excl and re.search(excl, link):
                     continue
 
                 # EBA liefert Digest-Items ("E-mail alert") – die eigentlichen

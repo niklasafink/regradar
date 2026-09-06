@@ -24,7 +24,7 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 | 8 | EBA | EU | HTML/JSON (Publications) + RSS | GUIDELINE, RTS, ITS, Q_AND_A, CONSULTATION | EBA/GL/…-Referenzen als ID; Single Rulebook Q&A separat |
 | 9 | ESMA | EU | Register/Library (JSON-Suche) + RSS | GUIDELINE, RTS, ITS, Q_AND_A, CONSULTATION | ESMA-Dokumentnummern als ID |
 | 10 | EZB Bankenaufsicht | EU (SSM) | RSS + HTML | SUPERVISORY_STATEMENT, GENERAL_DECISION, CONSULTATION | bankingsupervision.europa.eu, Presse + Publikationen |
-| 11 | Deutsche Bundesbank | DE | RSS + HTML | CIRCULAR, OTHER (Meldewesen, Payments) | Rundschreiben Meldewesen, Statistik-Änderungen |
+| 11 | Deutsche Bundesbank | DE | RSS + HTML | CIRCULAR, OTHER (Meldewesen, Payments, Fachbeiträge) | Rundschreiben Meldewesen (Feed 633302) + Fachseiten „Themen" (Feed 633288, seit 06.09.2026: Monatsberichts-Einordnungen wie BRUBEG, Aufsichtsbriefings; englische Doppelseiten werden übersprungen). Pressefeed (Tender) und leerer Monatsberichtsfeed nicht genutzt |
 
 ## Welle 3 — EU-Ausbau + Frühwarnsignale (umgesetzt am 25.08.2026)
 

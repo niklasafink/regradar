@@ -101,7 +101,7 @@ export DIP_API_KEY="..."
 | EBA | `rss` | `rss.xml`; Digest-Items („E-mail alert") werden in Einzelpublikationen aufgelöst |
 | ESMA | `rss` | `rss.xml` |
 | EZB SSM | `rss` | `bankingsupervision.europa.eu/rss/press.xml` |
-| Bundesbank | `rss` | Feeds 633302 (Rundschreiben) + 633286 (Presse) |
+| Bundesbank | `rss` | Feeds 633302 (Rundschreiben) + 633288 (Themen/Fachseiten; englische Fassungen per `RSS_LINK_EXCLUDE` übersprungen); Pressefeed 633286 (Tender) nicht genutzt |
 | EIOPA | `eiopa` | `sitemap.xml`, Datum aus URL-Slug (…-2026-07-14_en), Fenster 120 Tage, Detailseiten inkl. Fristen |
 | SRB | `rss` | `srb.europa.eu/en/rss` |
 | EuGH (curia) | `curia` | Presseliste `jcms/Jo2_7052`, cp-Nummer als ID, `<base>`-aufgelöste PDF-Links (de bevorzugt) |

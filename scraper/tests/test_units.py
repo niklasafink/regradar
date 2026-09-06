@@ -49,6 +49,22 @@ class FrameworkClassification(unittest.TestCase):
         self.assertEqual(_classify("Fit & Proper: Neue Anforderungen an Inhaber von Schlüsselfunktionen nach dem BRUBEG"), "fitproper")
         self.assertEqual(_classify("Institutsvergütungsverordnung 5.0 nach dem BRUBEG"), "instvergv")
         self.assertEqual(_classify("BRUBEG – Drittstaatenzweigstellen: Erlaubnispflicht nach §§ 53c ff. KWG"), "ebatcb")
+        # Bundesbank-Themenseite und BaFin-Anzeigehinweise ohne den Kurznamen
+        self.assertEqual(_classify("Monatsbericht: Bürokratieentlastung und neue Aufsichtsstandards für Banken umgesetzt – Bankenrichtlinie"), "crr3")
+        self.assertEqual(_classify("Anzeigen für Inhaber besonderer Schlüsselfunktionen, MVP-Portal ab dem 4. Quartal 2026"), "fitproper")
+        self.assertEqual(_classify("BRUBEG entlastet Pfandbriefbanken: keine halbjährliche Einreichung des Deckungsregisters mehr"), "pfandbg")
+
+    def test_rss_link_exclude_bundesbank(self):
+        """Der Bundesbank-Feed „Themen" liefert jede Seite auf Deutsch und
+        Englisch; die englische Fassung wird übersprungen."""
+        import re
+        from regradar.registry import RSS_LINK_EXCLUDE
+        pat = RSS_LINK_EXCLUDE["bundesbank"]
+        self.assertTrue(re.search(pat, "https://www.bundesbank.de/en/tasks/cash-management/exchanging-dem-for-euro-61692"))
+        self.assertTrue(re.search(pat, "https://www.hochschule-bundesbank.de/hochschule-en/university/events/summer-school"))
+        self.assertFalse(re.search(pat, "https://www.bundesbank.de/de/aufgaben/themen/monatsbericht-buerokratieentlastung-994802"))
+        self.assertFalse(re.search(pat, "https://www.bundesbank.de/resource/blob/1004140/e8e9/2026-07-30-rs-50-data.pdf"))
+        self.assertFalse(re.search(pat, "https://publikationen.bundesbank.de/publikationen-de/berichte-studien/monatsberichte/monatsbericht-april-2026-990912"))
 
     def test_banken_marisk(self):
         from regradar.webexport import _classify

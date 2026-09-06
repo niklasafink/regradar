@@ -155,7 +155,7 @@ FRAMEWORK_RULES = [
     # dort die Kunden-Geeignetheit meint.
     ("fitproper", r"fit.{0,3}proper|suitability of (the )?members|suitability assessment (framework|of members)|"
                   r"eignung von geschäftsleiter|geschäftsleiter|aufsichtsorgan|management body|"
-                  r"key function holder|inhaberkontrolle|verwaltungs- oder aufsichtsorgan"),
+                  r"key function holder|schlüsselfunktion|inhaberkontrolle|verwaltungs- oder aufsichtsorgan"),
     ("ris", r"retail investment strategy|kleinanlegerstrategie|retail investment package|"
             r"value.for.money|\bris\b(?=[\s\S]*(retail|kleinanleger|priips|inducement|zuwendung))"),
     ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution|"
@@ -211,9 +211,9 @@ FRAMEWORK_RULES = [
     ("ebaict", r"ict (and security )?risk|ikt-risik"),
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement|"
             r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted|"
-            # BRUBEG (CRD-VI-Umsetzung im KWG): Kurzname, Langtitel und die
-            # Richtlinie 2024/1619 in BGBl-/DIP-/BMF-Titeln.
-            r"\bbrubeg\b|bankenrichtlinienumsetzung|2024/1619"),
+            # BRUBEG (CRD-VI-Umsetzung im KWG): Kurzname, „Bankenrichtlinie(n)"
+            # in BGBl-/DIP-/BMF-/Bundesbank-Titeln und die Richtlinie 2024/1619.
+            r"\bbrubeg\b|bankenrichtlinie|2024/1619"),
     # Generische Muster bewusst am Ende, damit Spezialregime zuerst greifen.
     ("dataact", r"\bdata act\b|\bdata-act\b|datenverordnung|\bdatengesetz\b|cloud switching|anbieterwechsel cloud|switching charges"),
     ("dsgvo", r"datenschutz|\bdsgvo\b|\bgdpr\b|data protection|\bbdsg\b|personenbezogene daten|personal data|"

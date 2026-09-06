@@ -470,10 +470,15 @@ RSS_FEEDS = {
         ("https://www.srb.europa.eu/en/rss", "OTHER", "en"),
     ],
     "bundesbank": [
-        # Nur Rundschreiben (Meldewesen); der Pressefeed (633286) besteht
-        # überwiegend aus Tender-Ankündigungen und ist für das
-        # High-Level-Monitoring Rauschen.
+        # Rundschreiben (Meldewesen) plus der Feed „Themen" (633288), der die
+        # Fachseiten der Bundesbank liefert, z. B. die Monatsberichts-
+        # Einordnung zum BRUBEG (April 2026) oder Aufsichtsbriefings; Filialen,
+        # Münzen und Termine darin filtern NOISE bzw. der LLM-Relevanzfilter,
+        # englische Doppelseiten RSS_LINK_EXCLUDE. Der Pressefeed (633286)
+        # besteht überwiegend aus Tender-Ankündigungen und bleibt außen vor;
+        # der Feed „Monats- und Geschäftsberichte" (633280) liefert keine Items.
         ("https://www.bundesbank.de/service/rss/de/633302/feed.rss", "CIRCULAR", "de"),
+        ("https://www.bundesbank.de/service/rss/de/633288/feed.rss", "OTHER", "de"),
     ],
     "bsi": [
         ("https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Presse_Veranstaltungen.xml", "OTHER", "de"),
@@ -511,6 +516,10 @@ RSS_FEEDS = {
 # zoll.de verlangt per robots.txt Crawl-Delay 180 s – der Feed ist zum
 # Abonnieren gedacht, Seitenabrufe wären unhöflich.
 RSS_NO_FETCH = {"fiu"}
+
+# Feed-Links, die auf dieses Muster passen, werden übersprungen (die
+# Bundesbank-Feeds mischen deutsche und englische Fassungen derselben Seite).
+RSS_LINK_EXCLUDE = {"bundesbank": r"bundesbank\.de/(en/|hochschule-en/)"}
 
 # Kernnormen-Watchlist für Gesetze im Internet (Slug im URL-Pfad der TOC).
 GII_WATCHLIST = {
