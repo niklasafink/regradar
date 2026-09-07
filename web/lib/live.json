@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T12:56:24Z",
+  "generated_at": "2026-09-07T16:57:05Z",
   "updates": {
     "amla": [
       {
@@ -280,6 +280,128 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
         "imp": "high"
+      }
+    ],
+    "bmr": [
+      {
+        "d": "07.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Erklärung zu signifikanten Benchmarks der SIX Index AG gemäß BMR (ESMA81-1841807023-1139)",
+          "en": "Statement on Significant benchmarks notified under Article 24(2) of the Benchmark Regulation - SIX Index AG (ESMA81-1841807023-1139)"
+        },
+        "sl": "statement-on-significant-benchmarks-notified-under-article-24-2-of-the-benchmark",
+        "s": {
+          "de": "Die ESMA hat eine Mitteilung der SIX Index AG gemäß Artikel 24 Absatz 2 der Benchmark-Verordnung (BMR) erhalten. Darin wird mitgeteilt, dass die unten genannten Benchmarks den Schwellenwert von 50 Milliarden Euro gemäß Artikel 24 Absatz 1 BMR erreicht haben.\n\nInfolgedessen veröffentlicht die ESMA diese Erklärung gemäß Artikel 24 Absatz 2 BMR, um festzulegen, dass die Benchmarks \"SARON Index\" und \"Swiss Market Index SMI®\" gemäß Artikel 24 Absatz 1 Buchstabe a BMR als signifikant eingestuft werden. Dies betrifft die SIX Index AG als Administrator mit Sitz in der Schweiz.\n\nDie ESMA wird ihr Register aktualisieren, um die relevanten Merkmale dieser Benchmarks als signifikant gemäß Artikel 24 Absatz 2 BMR aufzunehmen.",
+          "en": "ESMA has received a notification from SIX Index AG in accordance with Article 24(2) of the Benchmark Regulation (BMR). This notification states that the benchmarks listed below have reached the threshold of EUR 50 billion as referred to in Article 24(1) of the BMR.\n\nConsequently, ESMA is publishing this statement in accordance with Article 24(2) of the BMR to specify that the benchmarks “SARON Index” and “Swiss Market Index SMI®” are significant according to Article 24(1)(a) of the BMR. This applies to SIX Index AG as the administrator based in Switzerland.\n\nESMA will update its register to include the relevant characteristics of these benchmarks as significant pursuant to Article 24(2) of the BMR."
+        },
+        "url": "https://www.esma.europa.eu/document/statement-significant-benchmarks-notified-under-article-242-benchmark-regulation-six-index",
+        "imp": "low",
+        "refnum": "ESMA81-1841807023-1139"
+      },
+      {
+        "d": "12.02.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Informationspflichten bei kritischen Referenzwerten in Immobilienkrediten (C-471/24)",
+          "en": "ECJ judgment on information obligations for critical benchmarks in real estate loans (C-471/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-471-24-pko-bp-critical-benchmark",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Informationspflicht einer Bank bei Immobilienkrediten mit variablem Zinssatz, der auf einem regulierten Referenzindex wie dem WIBOR basiert, nicht die Offenlegung der Methodik dieses Indexes gegenüber dem Verbraucher umfasst. Eine Vertragsklausel, die einen solchen Referenzindex enthält, führt grundsätzlich nicht allein zu einem erheblichen Ungleichgewicht zwischen den Parteien zum Nachteil des Verbrauchers.\n\nDiese Entscheidung ist relevant für Kreditinstitute, die Immobilienkredite mit variablen Zinssätzen anbieten, die an regulierte Referenzindizes gekoppelt sind. Sie stellt klar, dass die Banken nicht verpflichtet sind, detaillierte Informationen über die Berechnungsmethodik des Referenzindexes zu liefern, da diese Pflicht dem Administrator des Indexes obliegt. Die Bank muss lediglich auf die Veröffentlichung der Methodik durch den Administrator verweisen und darf keine irreführenden Informationen bereitstellen.\n\nDas Urteil des EuGH bindet das vorlegende polnische Gericht und dient als Richtschnur für andere nationale Gerichte bei vergleichbaren Sachverhalten. Es präzisiert die Anwendung der Richtlinie über missbräuchliche Klauseln in Verbraucherverträgen im Kontext von Referenzindizes, die einem umfassenden Rechtsrahmen der Union unterliegen.",
+          "en": "The European Court of Justice (ECJ) has ruled that a bank's obligation to provide information for real estate loans with a variable interest rate based on a regulated benchmark index, such as WIBOR, does not include disclosing the methodology of that index to the consumer. A contractual clause containing such a benchmark index does not, in principle, by itself lead to a significant imbalance between the parties to the detriment of the consumer.\n\nThis decision is relevant for credit institutions offering real estate loans with variable interest rates linked to regulated benchmark indices. It clarifies that banks are not obliged to provide detailed information on the calculation methodology of the benchmark index, as this duty lies with the index administrator. The bank merely needs to refer to the administrator's publication of the methodology and must not provide misleading information.\n\nThe ECJ's judgment is binding on the referring Polish court and serves as guidance for other national courts in similar cases. It clarifies the application of the Unfair Terms in Consumer Contracts Directive in the context of benchmark indices subject to a comprehensive Union legal framework."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260014de.pdf",
+        "imp": "high",
+        "refnum": "C-471/24"
+      },
+      {
+        "d": "28.03.2025",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung des Anwendungsbereichs und Drittstaatenregimes der Benchmark-Verordnung (BMR)",
+          "en": "Review of the scope and third-country regime of the Benchmark Regulation (BMR)"
+        },
+        "sl": "review-of-the-scope-and-third-country-regime-of-the-benchmark-regulation",
+        "s": {
+          "de": "Die Europäische Kommission prüft den Anwendungsbereich und das Drittstaatenregime der Benchmark-Verordnung (BMR). Dies ist Teil einer umfassenderen Bewertung der BMR, um deren Wirksamkeit und Angemessenheit zu beurteilen. Ziel ist es, die Auswirkungen der Verordnung auf die Finanzmärkte und ihre Fähigkeit, die Stabilität und Integrität von Benchmarks zu gewährleisten, zu analysieren.\n\nDie Überprüfung ist relevant für Finanzinstitute, die Benchmarks nutzen oder bereitstellen, insbesondere solche mit Bezug zu Drittstaaten. Sie könnte zu Anpassungen der Anforderungen für die Nutzung von Benchmarks aus Nicht-EU-Ländern führen und die Compliance-Anforderungen für Marktteilnehmer beeinflussen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet. Ein konkretes Datum für die Veröffentlichung oder Fristen für Stellungnahmen sind dem vorliegenden Text nicht zu entnehmen.",
+          "en": "The European Commission is reviewing the scope and third-country regime of the Benchmark Regulation (BMR). This is part of a broader evaluation of the BMR to assess its effectiveness and appropriateness. The aim is to analyze the regulation's impact on financial markets and its ability to ensure the stability and integrity of benchmarks.\n\nThis review is relevant for financial institutions that use or provide benchmarks, especially those with connections to third countries. It could lead to adjustments in the requirements for using benchmarks from non-EU countries and affect compliance obligations for market participants.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions. Specific publication dates or deadlines for comments are not available in the provided text."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13762",
+        "imp": "medium",
+        "refnum": "Ares(2023)1488307"
+      },
+      {
+        "d": "10.12.2021",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "ESMA-Bußgelder für Administratoren kritischer Benchmarks und anerkannte BMR-Administratoren aus Drittländern",
+          "en": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators"
+        },
+        "sl": "esma-fines-or-penalty-payments-for-administrators-of-critical-benchmarks-and-rec",
+        "s": {
+          "de": "Die Europäische Kommission plant die Einführung von Geldbußen und Zwangsgeldern für Administratoren kritischer Benchmarks und anerkannte Drittland-Administratoren von Benchmarks gemäß der Benchmark-Verordnung (BMR).\n\nDiese Maßnahme betrifft Administratoren, die für die Bereitstellung kritischer Benchmarks zuständig sind oder als Drittland-Administratoren in der EU anerkannt wurden. Die Einführung von Sanktionen soll die Einhaltung der BMR-Vorschriften sicherstellen und die Integrität der Benchmarks stärken.",
+          "en": "The European Commission plans to introduce fines and penalty payments for administrators of critical benchmarks and recognized third-country benchmark administrators under the Benchmark Regulation (BMR).\n\nThis measure affects administrators responsible for providing critical benchmarks or those recognized as third-country administrators in the EU. The introduction of sanctions aims to ensure compliance with BMR provisions and strengthen the integrity of benchmarks."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13296",
+        "imp": "medium",
+        "refnum": "Ares(2021)7521504"
+      },
+      {
+        "d": "11.08.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung der Benchmark-Verordnung",
+          "en": "Review of the Benchmark Regulation"
+        },
+        "sl": "review-of-the-benchmark-regulation",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung der Benchmark-Verordnung (BMR) eingeleitet. Ziel ist es, die Wirksamkeit der Verordnung zu bewerten und mögliche Anpassungen zu identifizieren, um ihre Ziele besser zu erreichen.\n\nDiese Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie zu Änderungen in den Anforderungen an Governance, Kontrolle und Transparenz von Benchmarks führen könnte. Die Ergebnisse der Überprüfung könnten sich auf die Auswahl und Nutzung von Referenzwerten auswirken.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet.",
+          "en": "The European Commission has initiated a review of the Benchmark Regulation (BMR). The aim is to assess the effectiveness of the regulation and identify potential adjustments to better achieve its objectives.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could lead to changes in the requirements for governance, control, and transparency of benchmarks. The outcomes of the review could impact the selection and use of reference rates.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12268",
+        "imp": "medium",
+        "refnum": "Ares(2020)1637928"
+      },
+      {
+        "d": "28.04.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Delegierter Rechtsakt zur Überprüfung der Berechnungsmethode für kritische Benchmarks (Ares(2020)2203176)",
+          "en": "Delegated Act on the Review of Calculation Method for Critical Benchmarks (Ares(2020)2203176)"
+        },
+        "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Überprüfung der Berechnungsmethode zur Bestimmung der Schwellenwerte für kritische Benchmarks. Dies erfolgt im Rahmen eines Delegierten Rechtsakts.\n\nDie Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie die Kriterien für die Einstufung einer Benchmark als kritisch beeinflussen könnte. Dies hat Auswirkungen auf die regulatorischen Anforderungen und die Beaufsichtigung solcher Benchmarks.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überprüfung der Berechnungsmethode noch in der Planungsphase ist.",
+          "en": "The European Commission plans to review the calculation method used to determine the thresholds for critical benchmarks. This will be done within the framework of a Delegated Act.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could affect the criteria for classifying a benchmark as critical. This has implications for the regulatory requirements and supervision of such benchmarks.\n\nCurrently, the procedure status is \"Init Planned,\" meaning the initiative to review the calculation method is still in the planning phase."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12347",
+        "imp": "low",
+        "refnum": "Ares(2020)2203176"
       }
     ],
     "emir": [
@@ -3395,128 +3517,6 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
         "imp": "medium",
         "refnum": "Ares(2024)6122774"
-      }
-    ],
-    "bmr": [
-      {
-        "d": "12.02.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Informationspflichten bei kritischen Referenzwerten in Immobilienkrediten (C-471/24)",
-          "en": "ECJ judgment on information obligations for critical benchmarks in real estate loans (C-471/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-471-24-pko-bp-critical-benchmark",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Informationspflicht einer Bank bei Immobilienkrediten mit variablem Zinssatz, der auf einem regulierten Referenzindex wie dem WIBOR basiert, nicht die Offenlegung der Methodik dieses Indexes gegenüber dem Verbraucher umfasst. Eine Vertragsklausel, die einen solchen Referenzindex enthält, führt grundsätzlich nicht allein zu einem erheblichen Ungleichgewicht zwischen den Parteien zum Nachteil des Verbrauchers.\n\nDiese Entscheidung ist relevant für Kreditinstitute, die Immobilienkredite mit variablen Zinssätzen anbieten, die an regulierte Referenzindizes gekoppelt sind. Sie stellt klar, dass die Banken nicht verpflichtet sind, detaillierte Informationen über die Berechnungsmethodik des Referenzindexes zu liefern, da diese Pflicht dem Administrator des Indexes obliegt. Die Bank muss lediglich auf die Veröffentlichung der Methodik durch den Administrator verweisen und darf keine irreführenden Informationen bereitstellen.\n\nDas Urteil des EuGH bindet das vorlegende polnische Gericht und dient als Richtschnur für andere nationale Gerichte bei vergleichbaren Sachverhalten. Es präzisiert die Anwendung der Richtlinie über missbräuchliche Klauseln in Verbraucherverträgen im Kontext von Referenzindizes, die einem umfassenden Rechtsrahmen der Union unterliegen.",
-          "en": "The European Court of Justice (ECJ) has ruled that a bank's obligation to provide information for real estate loans with a variable interest rate based on a regulated benchmark index, such as WIBOR, does not include disclosing the methodology of that index to the consumer. A contractual clause containing such a benchmark index does not, in principle, by itself lead to a significant imbalance between the parties to the detriment of the consumer.\n\nThis decision is relevant for credit institutions offering real estate loans with variable interest rates linked to regulated benchmark indices. It clarifies that banks are not obliged to provide detailed information on the calculation methodology of the benchmark index, as this duty lies with the index administrator. The bank merely needs to refer to the administrator's publication of the methodology and must not provide misleading information.\n\nThe ECJ's judgment is binding on the referring Polish court and serves as guidance for other national courts in similar cases. It clarifies the application of the Unfair Terms in Consumer Contracts Directive in the context of benchmark indices subject to a comprehensive Union legal framework."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260014de.pdf",
-        "imp": "high",
-        "refnum": "C-471/24"
-      },
-      {
-        "d": "28.03.2025",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung des Anwendungsbereichs und Drittstaatenregimes der Benchmark-Verordnung (BMR)",
-          "en": "Review of the scope and third-country regime of the Benchmark Regulation (BMR)"
-        },
-        "sl": "review-of-the-scope-and-third-country-regime-of-the-benchmark-regulation",
-        "s": {
-          "de": "Die Europäische Kommission prüft den Anwendungsbereich und das Drittstaatenregime der Benchmark-Verordnung (BMR). Dies ist Teil einer umfassenderen Bewertung der BMR, um deren Wirksamkeit und Angemessenheit zu beurteilen. Ziel ist es, die Auswirkungen der Verordnung auf die Finanzmärkte und ihre Fähigkeit, die Stabilität und Integrität von Benchmarks zu gewährleisten, zu analysieren.\n\nDie Überprüfung ist relevant für Finanzinstitute, die Benchmarks nutzen oder bereitstellen, insbesondere solche mit Bezug zu Drittstaaten. Sie könnte zu Anpassungen der Anforderungen für die Nutzung von Benchmarks aus Nicht-EU-Ländern führen und die Compliance-Anforderungen für Marktteilnehmer beeinflussen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet. Ein konkretes Datum für die Veröffentlichung oder Fristen für Stellungnahmen sind dem vorliegenden Text nicht zu entnehmen.",
-          "en": "The European Commission is reviewing the scope and third-country regime of the Benchmark Regulation (BMR). This is part of a broader evaluation of the BMR to assess its effectiveness and appropriateness. The aim is to analyze the regulation's impact on financial markets and its ability to ensure the stability and integrity of benchmarks.\n\nThis review is relevant for financial institutions that use or provide benchmarks, especially those with connections to third countries. It could lead to adjustments in the requirements for using benchmarks from non-EU countries and affect compliance obligations for market participants.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions. Specific publication dates or deadlines for comments are not available in the provided text."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13762",
-        "imp": "medium",
-        "refnum": "Ares(2023)1488307"
-      },
-      {
-        "d": "10.12.2021",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "ESMA-Bußgelder für Administratoren kritischer Benchmarks und anerkannte BMR-Administratoren aus Drittländern",
-          "en": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators"
-        },
-        "sl": "esma-fines-or-penalty-payments-for-administrators-of-critical-benchmarks-and-rec",
-        "s": {
-          "de": "Die Europäische Kommission plant die Einführung von Geldbußen und Zwangsgeldern für Administratoren kritischer Benchmarks und anerkannte Drittland-Administratoren von Benchmarks gemäß der Benchmark-Verordnung (BMR).\n\nDiese Maßnahme betrifft Administratoren, die für die Bereitstellung kritischer Benchmarks zuständig sind oder als Drittland-Administratoren in der EU anerkannt wurden. Die Einführung von Sanktionen soll die Einhaltung der BMR-Vorschriften sicherstellen und die Integrität der Benchmarks stärken.",
-          "en": "The European Commission plans to introduce fines and penalty payments for administrators of critical benchmarks and recognized third-country benchmark administrators under the Benchmark Regulation (BMR).\n\nThis measure affects administrators responsible for providing critical benchmarks or those recognized as third-country administrators in the EU. The introduction of sanctions aims to ensure compliance with BMR provisions and strengthen the integrity of benchmarks."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13296",
-        "imp": "medium",
-        "refnum": "Ares(2021)7521504"
-      },
-      {
-        "d": "11.08.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung der Benchmark-Verordnung",
-          "en": "Review of the Benchmark Regulation"
-        },
-        "sl": "review-of-the-benchmark-regulation",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überprüfung der Benchmark-Verordnung (BMR) eingeleitet. Ziel ist es, die Wirksamkeit der Verordnung zu bewerten und mögliche Anpassungen zu identifizieren, um ihre Ziele besser zu erreichen.\n\nDiese Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie zu Änderungen in den Anforderungen an Governance, Kontrolle und Transparenz von Benchmarks führen könnte. Die Ergebnisse der Überprüfung könnten sich auf die Auswahl und Nutzung von Referenzwerten auswirken.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet.",
-          "en": "The European Commission has initiated a review of the Benchmark Regulation (BMR). The aim is to assess the effectiveness of the regulation and identify potential adjustments to better achieve its objectives.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could lead to changes in the requirements for governance, control, and transparency of benchmarks. The outcomes of the review could impact the selection and use of reference rates.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12268",
-        "imp": "medium",
-        "refnum": "Ares(2020)1637928"
-      },
-      {
-        "d": "28.04.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Delegierter Rechtsakt zur Überprüfung der Berechnungsmethode für kritische Benchmarks (Ares(2020)2203176)",
-          "en": "Delegated Act on the Review of Calculation Method for Critical Benchmarks (Ares(2020)2203176)"
-        },
-        "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
-        "s": {
-          "de": "Die Europäische Kommission plant eine Überprüfung der Berechnungsmethode zur Bestimmung der Schwellenwerte für kritische Benchmarks. Dies erfolgt im Rahmen eines Delegierten Rechtsakts.\n\nDie Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie die Kriterien für die Einstufung einer Benchmark als kritisch beeinflussen könnte. Dies hat Auswirkungen auf die regulatorischen Anforderungen und die Beaufsichtigung solcher Benchmarks.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überprüfung der Berechnungsmethode noch in der Planungsphase ist.",
-          "en": "The European Commission plans to review the calculation method used to determine the thresholds for critical benchmarks. This will be done within the framework of a Delegated Act.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could affect the criteria for classifying a benchmark as critical. This has implications for the regulatory requirements and supervision of such benchmarks.\n\nCurrently, the procedure status is \"Init Planned,\" meaning the initiative to review the calculation method is still in the planning phase."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12347",
-        "imp": "low",
-        "refnum": "Ares(2020)2203176"
-      },
-      {
-        "d": "28.04.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Delegierte Verordnung zur Überprüfung der Berechnungsmethode für Schwellenwerte signifikanter Benchmarks",
-          "en": "Delegated Act on the review of the calculation method used to determine the thresholds of significant benchmarks"
-        },
-        "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
-        "s": {
-          "de": "Die Europäische Kommission plant eine Überarbeitung der Berechnungsmethode zur Bestimmung der Schwellenwerte für signifikante Benchmarks. Dies erfolgt im Rahmen eines Delegierten Rechtsakts.\n\nDie Überarbeitung betrifft Finanzinstitute, die Benchmarks verwenden oder bereitstellen. Ziel ist es, die Kriterien für die Einstufung einer Benchmark als signifikant anzupassen, was Auswirkungen auf die regulatorischen Anforderungen und die Governance dieser Benchmarks haben kann.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überarbeitung der Berechnungsmethode für signifikante Benchmarks geplant ist.",
-          "en": "The European Commission plans to revise the calculation method used to determine the thresholds for significant benchmarks. This will be done through a Delegated Act.\n\nThis revision affects financial institutions that use or provide benchmarks. The aim is to adjust the criteria for classifying a benchmark as significant, which may impact the regulatory requirements and governance of these benchmarks.\n\nThe current status is “Init Planned,” indicating that the initiative to revise the calculation method for significant benchmarks is in the planning stage."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12346",
-        "imp": "low",
-        "refnum": "Ares(2020)2203125"
       }
     ],
     "nis2": [
