@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T07:28:13Z",
+  "generated_at": "2026-09-07T12:56:24Z",
   "updates": {
     "amla": [
       {
@@ -239,6 +239,47 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "mar": [
+      {
+        "d": "07.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
+          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
+        },
+        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
+          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
+        },
+        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
+        "imp": "medium",
+        "refnum": "ESMA74-268544963-1748"
+      },
+      {
+        "d": "28.08.2025",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Kryptomärktemitteilungs-Verordnung (KMMV) zur Offenlegung von Insiderinformationen",
+          "en": "Crypto Market Disclosure Regulation (KMMV) on Insider Information Disclosure"
+        },
+        "sl": "verordnung-zur-konkretisierung-von-mitteilungspflichten-zur-offenlegung-von-insi",
+        "s": {
+          "de": "Die Kryptomärktemitteilungs-Verordnung (KMMV) konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes. Sie legt fest, wie und wann relevante Informationen über Kryptomärkte zu veröffentlichen sind, um Markttransparenz und Anlegerschutz zu gewährleisten.\n\nDiese Verordnung ist für Unternehmen relevant, die im Kryptomarkt tätig sind und unter die Aufsicht des Kryptomärkteaufsichtsgesetzes fallen. Sie müssen ihre internen Prozesse anpassen, um Insiderinformationen fristgerecht und korrekt offenzulegen, um Compliance sicherzustellen und mögliche Sanktionen zu vermeiden.\n\nDie Verordnung wurde am 28.08.2025 im Bundesgesetzblatt veröffentlicht und trat am 25.08.2025 in Kraft. Die Federführung liegt bei der Bundesanstalt für Finanzdienstleistungsaufsicht.",
+          "en": "The Kryptomärktemitteilungs-Verordnung (KMMV) specifies the notification obligations for the disclosure of insider information according to § 36 of the Kryptomärkteaufsichtsgesetz. It defines how and when relevant information about crypto markets must be published to ensure market transparency and investor protection.\n\nThis regulation is relevant for companies active in the crypto market and subject to the supervision of the Kryptomärkteaufsichtsgesetz. They must adapt their internal processes to disclose insider information promptly and correctly to ensure compliance and avoid potential sanctions.\n\nThe regulation was published in the Federal Law Gazette on August 28, 2025, and came into force on August 25, 2025. The Federal Financial Supervisory Authority is responsible for its implementation."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
+        "imp": "high"
       }
     ],
     "emir": [
@@ -3642,27 +3683,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_geschaeftsleiter_KWG_ZAG_KAGB.html",
         "imp": "high",
         "refnum": "11/2025"
-      }
-    ],
-    "mar": [
-      {
-        "d": "28.08.2025",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Kryptomärktemitteilungs-Verordnung (KMMV) zur Offenlegung von Insiderinformationen",
-          "en": "Crypto Market Disclosure Regulation (KMMV) on Insider Information Disclosure"
-        },
-        "sl": "verordnung-zur-konkretisierung-von-mitteilungspflichten-zur-offenlegung-von-insi",
-        "s": {
-          "de": "Die Kryptomärktemitteilungs-Verordnung (KMMV) konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes. Sie legt fest, wie und wann relevante Informationen über Kryptomärkte zu veröffentlichen sind, um Markttransparenz und Anlegerschutz zu gewährleisten.\n\nDiese Verordnung ist für Unternehmen relevant, die im Kryptomarkt tätig sind und unter die Aufsicht des Kryptomärkteaufsichtsgesetzes fallen. Sie müssen ihre internen Prozesse anpassen, um Insiderinformationen fristgerecht und korrekt offenzulegen, um Compliance sicherzustellen und mögliche Sanktionen zu vermeiden.\n\nDie Verordnung wurde am 28.08.2025 im Bundesgesetzblatt veröffentlicht und trat am 25.08.2025 in Kraft. Die Federführung liegt bei der Bundesanstalt für Finanzdienstleistungsaufsicht.",
-          "en": "The Kryptomärktemitteilungs-Verordnung (KMMV) specifies the notification obligations for the disclosure of insider information according to § 36 of the Kryptomärkteaufsichtsgesetz. It defines how and when relevant information about crypto markets must be published to ensure market transparency and investor protection.\n\nThis regulation is relevant for companies active in the crypto market and subject to the supervision of the Kryptomärkteaufsichtsgesetz. They must adapt their internal processes to disclose insider information promptly and correctly to ensure compliance and avoid potential sanctions.\n\nThe regulation was published in the Federal Law Gazette on August 28, 2025, and came into force on August 25, 2025. The Federal Financial Supervisory Authority is responsible for its implementation."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
-        "imp": "high"
       }
     ],
     "mago": [
