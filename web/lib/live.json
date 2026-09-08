@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T08:28:19Z",
+  "generated_at": "2026-09-08T10:06:44Z",
   "updates": {
     "amla": [
       {
@@ -320,6 +320,185 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
         "imp": "medium",
         "refnum": "Ares(2020)4105668"
+      }
+    ],
+    "crr3": [
+      {
+        "d": "08.09.2026",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Landwirtschaftliche Rentenbank: Bafin ordnet Sicherstellung der ordnungsgemäßen Geschäftsorganisation und zusätzliche Eigenmittelanforderungen an",
+          "en": "Landwirtschaftliche Rentenbank: Bafin ordnet Sicherstellung der ordnungsgemäßen Geschäftsorganisation und zusätzliche Eigenmittelanforderungen an"
+        },
+        "sl": "landwirtschaftliche-rentenbank-bafin-ordnet-sicherstellung-der-ordnungsgemaessen",
+        "s": {
+          "de": "Die BaFin hat der Landwirtschaftlichen Rentenbank die Sicherstellung einer ordnungsgemäßen Geschäftsorganisation sowie zusätzliche Eigenmittelanforderungen auferlegt. Eine Sonderprüfung im Jahr 2025 zeigte Mängel in den Verfahren zur Ermittlung und Sicherstellung der Risikotragfähigkeit, was einen Verstoß gegen das Kreditwesengesetz darstellt.\n\nDiese Anordnung betrifft die Landwirtschaftliche Rentenbank und verpflichtet sie, die festgestellten organisatorischen Mängel zu beheben. Bis zur vollständigen Beseitigung dieser Mängel muss das Institut zusätzliche Eigenmittel vorhalten. Die Maßnahmen basieren auf § 25a Abs. 1 und 2 KWG, der die Anforderungen an eine ordnungsgemäße Geschäftsorganisation und das Risikomanagement regelt.\n\nDie Maßnahmen der BaFin sind seit dem 15. August 2026 bzw. 21. August 2026 bestandskräftig.",
+          "en": "The BaFin has ordered the Landwirtschaftliche Rentenbank to ensure proper business organization and to hold additional capital. A special audit in 2025 revealed deficiencies in the procedures for determining and ensuring risk-bearing capacity, which constitutes a violation of the German Banking Act.\n\nThis order affects the Landwirtschaftliche Rentenbank, obliging it to rectify the identified organizational shortcomings. Until these deficiencies are fully addressed, the institution must hold additional capital. The measures are based on Section 25a (1) and (2) of the German Banking Act (KWG), which regulates the requirements for proper business organization and risk management.\n\nThe BaFin's measures have been legally binding since August 15, 2026, and August 21, 2026, respectively."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_08_landwirtschaftliche_rentenbank.html?cms_expanded=true",
+        "imp": "high"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
+          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
+        },
+        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
+        "s": {
+          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
+          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
+        "imp": "low"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
+          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
+        },
+        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
+        "s": {
+          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
+          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
+        "imp": "medium"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation zu ITS-Änderungen für Marktrisiko-Benchmarking 2027 (EBA/CP/2026/11)",
+          "en": "Consultation on ITS Amendments for 2027 Market Risk Benchmarking (EBA/CP/2026/11)"
+        },
+        "sl": "consultation-on-amending-its-on-the-benchmarking-of-approaches-for-calculating-o",
+        "s": {
+          "de": "Die EBA konsultiert Änderungen an den Technischen Durchführungsstandards (ITS) für das Benchmarking der Ansätze zur Berechnung der Eigenmittelanforderungen, speziell für die Marktrisiko-Benchmarking-Übung 2027. Die Überarbeitungen berücksichtigen die Fortschritte bei der Umsetzung des Fundamental Review of the Trading Book (FRTB) und passen die Vorlagen und Anweisungen entsprechend an.\n\nDie Änderungen sehen vor, dass das Benchmarking des aktuellen Internen Modellansatzes (IMA) nach einer Pause im Jahr 2026 wieder aufgenommen wird, während das Benchmarking des FRTB Alternative Internal Model Approach (AIMA) aufgrund einer erwarteten Übergangsphase und begrenzter anfänglicher Nutzung verschoben wird. Der Anwendungsbereich der ITS wird erweitert, um auch Institute einzubeziehen, die ausschließlich den Alternativen Standardisierten Ansatz (ASA) anwenden. Zudem werden die Instrumentenportfolios vereinfacht und die Frist für die Übung in die zweite Jahreshälfte verschoben, um ASA-Banken mehr Vorbereitungszeit zu geben. Vorlagen für Kreditrisiko und IFRS 9 wurden entfernt, um die Marktrisiko-Anhänge neu zu strukturieren.\n\nDie Konsultation läuft bis zum 3. September 2026. Die EBA bittet um Kommentare zu allen Vorschlägen, insbesondere zu den spezifischen Fragen in Abschnitt 5.2 des Konsultationspapiers. Die technischen Standards treten 20 Tage nach Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
+          "en": "The EBA is consulting on amendments to the Implementing Technical Standards (ITS) for the benchmarking of approaches for calculating own funds requirements, specifically for the 2027 market risk benchmarking exercise. The revisions reflect progress in implementing the Fundamental Review of the Trading Book (FRTB) and adjust templates and instructions accordingly.\n\nThe changes stipulate that benchmarking of the current Internal Model Approach (IMA) will resume after a 2026 pause, while benchmarking of the FRTB Alternative Internal Model Approach (AIMA) will be postponed due to an expected transitional period and limited initial uptake. The scope of the ITS is expanded to include institutions applying only the Alternative Standardised Approach (ASA). Additionally, instrument portfolios are simplified, and the exercise timeline is delayed to the second half of the year to allow ASA banks more preparation time. Templates for credit risk and IFRS 9 have been removed to restructure the market risk annexes.\n\nThe consultation runs until 3 September 2026. The EBA invites comments on all proposals, particularly on the specific questions in section 5.2 of the consultation paper. The technical standards will apply 20 days after publication in the Official Journal of the European Union."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/events/consultation-amending-its-benchmarking-approaches-calculating-own-funds-requirements-2027-market",
+        "imp": "medium"
+      },
+      {
+        "d": "06.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Risikogewichtung von IPRE-Engagements, die durch viele Immobilien besichert sind",
+          "en": "Risk weights assignment to IPRE exposures secured by many properties"
+        },
+        "sl": "risk-weights-assignment-to-ipre-exposures-secured-by-many-properties",
+        "s": {
+          "de": "Die EBA hat eine Anfrage zur Risikogewichtung von Engagements abgelehnt, die durch mehrere Immobilien besichert sind, insbesondere wenn diese sowohl Wohn- als auch Gewerbeimmobilien umfassen und unterschiedliche IPRE-Status (Income Producing Real Estate) aufweisen.\n\nDie Anfrage bezog sich auf die Auslegung der Artikel 125 und 126 Absatz 2 der CRR, die Regeln für die Risikogewichtung von Engagements mit Wohn- bzw. Gewerbeimmobilien als Sicherheit festlegen. Die EBA lehnte die Beantwortung ab, da die Frage eine mögliche Änderung des Rechtsrahmens erfordern würde, was außerhalb des Geltungsbereichs des Q&A-Prozesses liegt.",
+          "en": "The EBA has rejected a query regarding the risk weighting of exposures secured by multiple properties, particularly when these include both residential and commercial properties with differing IPRE (Income Producing Real Estate) statuses.\n\nThe query concerned the interpretation of Articles 125 and 126 paragraph 2 of the CRR, which set out rules for risk weighting exposures secured by residential and commercial properties, respectively. The EBA declined to answer, stating that the question would require a potential modification of the legal framework, which is outside the scope of the Q&A process."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7923",
+        "imp": "low",
+        "refnum": "2026_7923"
+      },
+      {
+        "d": "06.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Ablehnung einer ETV-Berechnungsanfrage für Hypotheken mit Mehrfachbesicherung (CRR Art. 124 Abs. 6)",
+          "en": "Rejection of ETV Calculation Query for Mortgages Securing Multiple Exposures (CRR Art. 124 para. 6)"
+        },
+        "sl": "clarification-of-etv-calculation-for-mortgages-securing-more-than-one-exposure",
+        "s": {
+          "de": "Die EBA hat eine Anfrage zur Berechnung des Exposure-to-Value (ETV) für Hypotheken abgelehnt, die mehr als eine Risikoposition absichern. Die Anfrage bezog sich auf Artikel 124 Absatz 6 der CRR, der die ETV-Berechnung für IPRE-Risikopositionen (Income-Producing Real Estate) regelt. Insbesondere ging es um die Frage, wie der Nenner der ETV-Formel zu bestimmen ist, wenn mehrere Risikopositionen durch dieselbe Immobilie besichert sind und zusätzlich weitere Sicherheiten bestehen.\n\nDie Anfrage stellte ein komplexes Szenario dar, bei dem zwei Risikopositionen (A und B) durch eine gewerbliche Immobilie (Y) und Risikoposition A zusätzlich durch eine Wohnimmobilie (X) besichert sind. Es wurde gefragt, ob die Werte der Immobilien im Nenner der ETV-Berechnung auf den Wert der Hypothekenregistrierung begrenzt werden sollten und wie die Marktwerte der verschiedenen Immobilien in die Berechnung einfließen sollen, insbesondere wenn eine der Sicherheiten keine IPRE-Immobilie ist.\n\nDie EBA lehnte die Beantwortung ab, da die Frage über den Rahmen des Q&A-Prozesses hinausgeht. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, die Korrektheit des Rechtsrahmens in Frage zu stellen, eine Änderung des Rechtsrahmens zu beantragen oder eine solche Änderung zur Beantwortung der Frage zu erfordern.",
+          "en": "The EBA has rejected a query regarding the calculation of Exposure-to-Value (ETV) for mortgages securing more than one exposure. The query related to Article 124 paragraph 6 of the CRR, which governs ETV calculation for Income-Producing Real Estate (IPRE) exposures. Specifically, it concerned how to determine the denominator of the ETV formula when multiple exposures are secured by the same immovable property and additional collateral exists.\n\nThe query presented a complex scenario where two exposures (A and B) are secured by a commercial property (Y), and exposure A is additionally secured by a residential property (X). It asked whether the property values in the ETV denominator should be capped at the mortgage registration value and how the market values of different properties should be included in the calculation, especially if one of the collaterals is not an IPRE property.\n\nThe EBA rejected the query, stating that the issue raised is beyond the remit of the Q&A process. The EBA's rationale was that the Q&A tool is not intended to question the correctness of the legal framework, seek a modification of the legal framework, or require such a modification to address the question."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7922",
+        "imp": "low",
+        "refnum": "2026_7922"
+      }
+    ],
+    "outsourcing": [
+      {
+        "d": "08.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "iosco.org",
+        "ti": {
+          "de": "Abhängigkeit von Finanzmarktinfrastrukturen von Drittanbietern: Herausforderungen und Risiken (IOSCOPD828)",
+          "en": "FMIs’ Reliance on Third-Party Service Providers: Challenges and Risks (IOSCOPD828)"
+        },
+        "sl": "fmis-reliance-on-third-party-service-providers-challenges-and-risks",
+        "s": {
+          "de": "Dieser Bericht des Committee on Payments and Market Infrastructures (CPMI) und der International Organization of Securities Commissions (IOSCO) befasst sich mit den Herausforderungen und Risiken, die sich aus der Abhängigkeit von Finanzmarktinfrastrukturen (FMIs) von Drittanbietern ergeben. Er untersucht die zunehmende Nutzung von Drittanbietern, insbesondere im Bereich der Cloud-Dienste, und die damit verbundenen betrieblichen Risiken.\n\nDer Bericht ist relevant für alle Finanzmarktinfrastrukturen, die kritische Dienstleistungen von Drittanbietern beziehen. Er beleuchtet die Notwendigkeit einer robusten Risikobewertung und -steuerung, um die Stabilität und Ausfallsicherheit des Finanzsystems zu gewährleisten. Die Empfehlungen zielen darauf ab, die Aufsichtspraktiken zu verbessern und die Widerstandsfähigkeit von FMIs gegenüber Ausfällen bei Drittanbietern zu stärken.\n\nKommentare zu diesem Bericht können bis zum 1. Dezember 2026 eingereicht werden.",
+          "en": "This report by the Committee on Payments and Market Infrastructures (CPMI) and the International Organization of Securities Commissions (IOSCO) addresses the challenges and risks arising from financial market infrastructures' (FMIs) reliance on third-party service providers. It examines the increasing use of third-party providers, particularly in cloud services, and the associated operational risks.\n\nThe report is relevant for all financial market infrastructures that procure critical services from third-party providers. It highlights the need for robust risk assessment and management to ensure the stability and resilience of the financial system. The recommendations aim to improve oversight practices and strengthen the resilience of FMIs against third-party failures.\n\nComments on this report should be submitted by 1 December 2026."
+        },
+        "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD828.pdf",
+        "imp": "medium",
+        "refnum": "IOSCOPD828"
+      },
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Cloud-Outsourcing (ESMA65-294529287-4824)",
+          "en": "Compliance Table on ESMA Guidelines for Cloud Outsourcing (ESMA65-294529287-4824)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-outsourcing-to-cloud-service-providers",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für das Outsourcing an Cloud-Dienstleister veröffentlicht. Diese Tabelle gibt Aufschluss darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die Leitlinien einzuhalten oder dies bereits tun.\n\nDie Tabelle zeigt, dass viele CAs, darunter die BaFin in Deutschland, die Leitlinien anwenden oder anwenden werden. Einige Länder, wie Belgien, Kroatien und Italien, geben an, dass die Leitlinien für sie derzeit nicht relevant sind, da die nationalen Gesetze die in den Leitlinien genannten Entitäten (z.B. bestimmte Verwahrstellen, die nicht unter DORA fallen) nicht vorsehen. Sollten sich die nationalen Gesetze ändern, beabsichtigen diese Behörden, die Leitlinien zu befolgen.\n\nDie bulgarische FSC hat die Leitlinien mit Wirkung vom 14. Juli 2026 übernommen. Die dänische Finanstilsynet stellt die Einhaltung durch nationale Gesetzgebung sicher. Die estnische Finantsinspektsioon hat am 26. Januar 2026 beschlossen, die Leitlinien vollständig einzuhalten.",
+          "en": "ESMA has published a compliance table regarding its guidelines on outsourcing to cloud service providers. This table indicates which national competent authorities (CAs) intend to comply with or are already complying with the guidelines.\n\nThe table shows that many CAs, including BaFin in Germany, are applying or will apply the guidelines. Some countries, such as Belgium, Croatia, and Italy, state that the guidelines are currently not relevant to them because national laws do not provide for the entities mentioned in the guidelines (e.g., certain depositaries not covered by DORA). Should national laws change, these authorities intend to comply with the guidelines.\n\nThe Bulgarian FSC adopted the guidelines with effect from July 14, 2026. The Danish Finanstilsynet ensures compliance through national legislation. The Estonian Finantsinspektsioon decided on January 26, 2026, to fully comply with the guidelines."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
+        "imp": "low",
+        "refnum": "ESMA65-294529287-4824"
+      },
+      {
+        "d": "10.12.2025",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Grundsätze für das Management von Drittparteienrisiken (BCBS)",
+          "en": "Principles for the Sound Management of Third-Party Risk (BCBS)"
+        },
+        "sl": "principles-for-the-sound-management-of-third-party-risk",
+        "s": {
+          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat Grundsätze für das solide Management von Drittparteienrisiken veröffentlicht. Diese Grundsätze sollen einen gemeinsamen Rahmen für Banken und Aufsichtsbehörden schaffen, um Risiken im Zusammenhang mit Drittanbietern zu steuern. Sie ersetzen das Joint Forum Papier von 2005 und erweitern das traditionelle Konzept des Outsourcings auf ein breiteres Spektrum von Drittparteienvereinbarungen.\n\nDie zunehmende Abhängigkeit von Banken von Drittanbietern, insbesondere durch die Digitalisierung, erfordert eine Weiterentwicklung des Risikomanagements. Die Grundsätze sind technologieunabhängig und sollen Banken helfen, ihre operationelle Widerstandsfähigkeit zu stärken. Sie umfassen Leitlinien für Governance, Risikobewertung, Due Diligence, Vertragsgestaltung, Onboarding, Überwachung und Beendigung von Drittparteienbeziehungen sowie spezifische Anleitungen für Aufsichtsbehörden. Die Anwendung der Grundsätze soll proportional zur Größe, Komplexität und dem Risikoprofil der Bank sowie der Kritikalität der Drittparteienvereinbarungen erfolgen.\n\nDie Veröffentlichung erfolgte am 10. Dezember 2025. Eine frühere konsultative Version wurde am 9. Juli 2024 geschlossen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published principles for the sound management of third-party risk. These principles aim to establish a common framework for banks and supervisors to manage risks associated with third-party providers. They supersede the 2005 Joint Forum paper and expand the traditional concept of outsourcing to a broader range of third-party arrangements.\n\nBanks' increasing reliance on third-party service providers, particularly due to digitalization, necessitates an evolution in risk management. The principles are technology-agnostic and are intended to help banks strengthen their operational resilience. They include guidance on governance, risk assessment, due diligence, contracting, onboarding, ongoing monitoring, and termination of third-party relationships, as well as specific guidance for prudential supervisors. The application of the principles should be proportionate to the bank's size, complexity, business model, and risk profile, as well as the criticality of the third-party arrangements.\n\nThe publication date is December 10, 2025. A previous consultative version was closed on July 9, 2024."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d605.htm",
+        "imp": "medium"
       }
     ],
     "mar": [
@@ -2237,125 +2416,6 @@
         "imp": "medium"
       }
     ],
-    "crr3": [
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
-          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
-        },
-        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
-        "s": {
-          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
-          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
-        "imp": "low"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
-          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
-        },
-        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
-        "s": {
-          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
-          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
-        "imp": "medium"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation zu ITS-Änderungen für Marktrisiko-Benchmarking 2027 (EBA/CP/2026/11)",
-          "en": "Consultation on ITS Amendments for 2027 Market Risk Benchmarking (EBA/CP/2026/11)"
-        },
-        "sl": "consultation-on-amending-its-on-the-benchmarking-of-approaches-for-calculating-o",
-        "s": {
-          "de": "Die EBA konsultiert Änderungen an den Technischen Durchführungsstandards (ITS) für das Benchmarking der Ansätze zur Berechnung der Eigenmittelanforderungen, speziell für die Marktrisiko-Benchmarking-Übung 2027. Die Überarbeitungen berücksichtigen die Fortschritte bei der Umsetzung des Fundamental Review of the Trading Book (FRTB) und passen die Vorlagen und Anweisungen entsprechend an.\n\nDie Änderungen sehen vor, dass das Benchmarking des aktuellen Internen Modellansatzes (IMA) nach einer Pause im Jahr 2026 wieder aufgenommen wird, während das Benchmarking des FRTB Alternative Internal Model Approach (AIMA) aufgrund einer erwarteten Übergangsphase und begrenzter anfänglicher Nutzung verschoben wird. Der Anwendungsbereich der ITS wird erweitert, um auch Institute einzubeziehen, die ausschließlich den Alternativen Standardisierten Ansatz (ASA) anwenden. Zudem werden die Instrumentenportfolios vereinfacht und die Frist für die Übung in die zweite Jahreshälfte verschoben, um ASA-Banken mehr Vorbereitungszeit zu geben. Vorlagen für Kreditrisiko und IFRS 9 wurden entfernt, um die Marktrisiko-Anhänge neu zu strukturieren.\n\nDie Konsultation läuft bis zum 3. September 2026. Die EBA bittet um Kommentare zu allen Vorschlägen, insbesondere zu den spezifischen Fragen in Abschnitt 5.2 des Konsultationspapiers. Die technischen Standards treten 20 Tage nach Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
-          "en": "The EBA is consulting on amendments to the Implementing Technical Standards (ITS) for the benchmarking of approaches for calculating own funds requirements, specifically for the 2027 market risk benchmarking exercise. The revisions reflect progress in implementing the Fundamental Review of the Trading Book (FRTB) and adjust templates and instructions accordingly.\n\nThe changes stipulate that benchmarking of the current Internal Model Approach (IMA) will resume after a 2026 pause, while benchmarking of the FRTB Alternative Internal Model Approach (AIMA) will be postponed due to an expected transitional period and limited initial uptake. The scope of the ITS is expanded to include institutions applying only the Alternative Standardised Approach (ASA). Additionally, instrument portfolios are simplified, and the exercise timeline is delayed to the second half of the year to allow ASA banks more preparation time. Templates for credit risk and IFRS 9 have been removed to restructure the market risk annexes.\n\nThe consultation runs until 3 September 2026. The EBA invites comments on all proposals, particularly on the specific questions in section 5.2 of the consultation paper. The technical standards will apply 20 days after publication in the Official Journal of the European Union."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/events/consultation-amending-its-benchmarking-approaches-calculating-own-funds-requirements-2027-market",
-        "imp": "medium"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Risikogewichtung von IPRE-Engagements, die durch viele Immobilien besichert sind",
-          "en": "Risk weights assignment to IPRE exposures secured by many properties"
-        },
-        "sl": "risk-weights-assignment-to-ipre-exposures-secured-by-many-properties",
-        "s": {
-          "de": "Die EBA hat eine Anfrage zur Risikogewichtung von Engagements abgelehnt, die durch mehrere Immobilien besichert sind, insbesondere wenn diese sowohl Wohn- als auch Gewerbeimmobilien umfassen und unterschiedliche IPRE-Status (Income Producing Real Estate) aufweisen.\n\nDie Anfrage bezog sich auf die Auslegung der Artikel 125 und 126 Absatz 2 der CRR, die Regeln für die Risikogewichtung von Engagements mit Wohn- bzw. Gewerbeimmobilien als Sicherheit festlegen. Die EBA lehnte die Beantwortung ab, da die Frage eine mögliche Änderung des Rechtsrahmens erfordern würde, was außerhalb des Geltungsbereichs des Q&A-Prozesses liegt.",
-          "en": "The EBA has rejected a query regarding the risk weighting of exposures secured by multiple properties, particularly when these include both residential and commercial properties with differing IPRE (Income Producing Real Estate) statuses.\n\nThe query concerned the interpretation of Articles 125 and 126 paragraph 2 of the CRR, which set out rules for risk weighting exposures secured by residential and commercial properties, respectively. The EBA declined to answer, stating that the question would require a potential modification of the legal framework, which is outside the scope of the Q&A process."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7923",
-        "imp": "low",
-        "refnum": "2026_7923"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ablehnung einer ETV-Berechnungsanfrage für Hypotheken mit Mehrfachbesicherung (CRR Art. 124 Abs. 6)",
-          "en": "Rejection of ETV Calculation Query for Mortgages Securing Multiple Exposures (CRR Art. 124 para. 6)"
-        },
-        "sl": "clarification-of-etv-calculation-for-mortgages-securing-more-than-one-exposure",
-        "s": {
-          "de": "Die EBA hat eine Anfrage zur Berechnung des Exposure-to-Value (ETV) für Hypotheken abgelehnt, die mehr als eine Risikoposition absichern. Die Anfrage bezog sich auf Artikel 124 Absatz 6 der CRR, der die ETV-Berechnung für IPRE-Risikopositionen (Income-Producing Real Estate) regelt. Insbesondere ging es um die Frage, wie der Nenner der ETV-Formel zu bestimmen ist, wenn mehrere Risikopositionen durch dieselbe Immobilie besichert sind und zusätzlich weitere Sicherheiten bestehen.\n\nDie Anfrage stellte ein komplexes Szenario dar, bei dem zwei Risikopositionen (A und B) durch eine gewerbliche Immobilie (Y) und Risikoposition A zusätzlich durch eine Wohnimmobilie (X) besichert sind. Es wurde gefragt, ob die Werte der Immobilien im Nenner der ETV-Berechnung auf den Wert der Hypothekenregistrierung begrenzt werden sollten und wie die Marktwerte der verschiedenen Immobilien in die Berechnung einfließen sollen, insbesondere wenn eine der Sicherheiten keine IPRE-Immobilie ist.\n\nDie EBA lehnte die Beantwortung ab, da die Frage über den Rahmen des Q&A-Prozesses hinausgeht. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, die Korrektheit des Rechtsrahmens in Frage zu stellen, eine Änderung des Rechtsrahmens zu beantragen oder eine solche Änderung zur Beantwortung der Frage zu erfordern.",
-          "en": "The EBA has rejected a query regarding the calculation of Exposure-to-Value (ETV) for mortgages securing more than one exposure. The query related to Article 124 paragraph 6 of the CRR, which governs ETV calculation for Income-Producing Real Estate (IPRE) exposures. Specifically, it concerned how to determine the denominator of the ETV formula when multiple exposures are secured by the same immovable property and additional collateral exists.\n\nThe query presented a complex scenario where two exposures (A and B) are secured by a commercial property (Y), and exposure A is additionally secured by a residential property (X). It asked whether the property values in the ETV denominator should be capped at the mortgage registration value and how the market values of different properties should be included in the calculation, especially if one of the collaterals is not an IPRE property.\n\nThe EBA rejected the query, stating that the issue raised is beyond the remit of the Q&A process. The EBA's rationale was that the Q&A tool is not intended to question the correctness of the legal framework, seek a modification of the legal framework, or require such a modification to address the question."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7922",
-        "imp": "low",
-        "refnum": "2026_7922"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ablehnung einer Frage zur Definition des „Hauptgeschäfts“ (CRR 2026_7921)",
-          "en": "Rejection of a question on the definition of “main business” (CRR 2026_7921)"
-        },
-        "sl": "definition-of-main-business-under-crr",
-        "s": {
-          "de": "Die EBA hat eine Frage zur Auslegung des Begriffs „Hauptgeschäft“ gemäß Artikel 411 Absatz 1 der CRR in Verbindung mit Anhang I der Richtlinie 2013/36/EU und Artikel 3 Absatz 9 der Delegierten Verordnung (EU) 2015/61 abgelehnt.\n\nDie Anfrage bezog sich darauf, ob eine Einheit, die keine kommerziellen Aktivitäten mit Dritten ausübt und deren Geschäftstätigkeit ausschließlich der Gruppe dient, als „Hauptgeschäft“ im Sinne der CRR angesehen werden kann. Solche „Treasury-Center“ zentralisieren und optimieren die internen Finanzen einer Gruppe, ohne als lizenzierte Kreditinstitute oder Wertpapierfirmen zu agieren oder Dienstleistungen für Dritte anzubieten. Die EBA lehnte die Frage ab, da sie die Korrektheit des Rechtsrahmens in Frage stellt und nicht über den Q&A-Prozess beantwortet werden kann.\n\nDie Ablehnung erfolgte am 06.07.2026.",
-          "en": "The EBA has rejected a question regarding the interpretation of the concept of “main business” under Article 411(1) of the CRR, read in conjunction with Annex I of Directive 2013/36/EU and Article 3(9) of Commission Delegated Regulation (EU) 2015/61.\n\nThe inquiry concerned whether an entity that does not engage in commercial activities with third parties and whose operations exclusively serve the group can be considered to perform “main business” within the meaning of the CRR. Such “treasury centers” centralize and optimize a group's internal finances without acting as licensed credit institutions or investment firms or offering services to third parties. The EBA rejected the question because it challenges the correctness of the legal framework and cannot be addressed through the Q&A process.\n\nThe rejection date was 06.07.2026."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7921",
-        "imp": "low",
-        "refnum": "2026_7921"
-      }
-    ],
     "doraoversight": [
       {
         "d": "31.07.2026",
@@ -2695,47 +2755,6 @@
           "en": "The EBA has launched a consultation on guidelines for the investment of available financial means. These guidelines are intended to specify how financial institutions may invest their surplus funds to ensure the security and liquidity of these investments.\n\nThis consultation is addressed to all financial institutions under EBA supervision. The guidelines are expected to contain concrete requirements regarding permissible investment types, risk management, and valuation of investments, which will directly impact their investment strategies and processes.\n\nThe deadline for submitting responses to this consultation paper is 23 October 2026 at 23:59."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/events/consultation-guidelines-investment-available-financial-means",
-        "imp": "medium"
-      }
-    ],
-    "outsourcing": [
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Cloud-Outsourcing (ESMA65-294529287-4824)",
-          "en": "Compliance Table on ESMA Guidelines for Cloud Outsourcing (ESMA65-294529287-4824)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-outsourcing-to-cloud-service-providers",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für das Outsourcing an Cloud-Dienstleister veröffentlicht. Diese Tabelle gibt Aufschluss darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die Leitlinien einzuhalten oder dies bereits tun.\n\nDie Tabelle zeigt, dass viele CAs, darunter die BaFin in Deutschland, die Leitlinien anwenden oder anwenden werden. Einige Länder, wie Belgien, Kroatien und Italien, geben an, dass die Leitlinien für sie derzeit nicht relevant sind, da die nationalen Gesetze die in den Leitlinien genannten Entitäten (z.B. bestimmte Verwahrstellen, die nicht unter DORA fallen) nicht vorsehen. Sollten sich die nationalen Gesetze ändern, beabsichtigen diese Behörden, die Leitlinien zu befolgen.\n\nDie bulgarische FSC hat die Leitlinien mit Wirkung vom 14. Juli 2026 übernommen. Die dänische Finanstilsynet stellt die Einhaltung durch nationale Gesetzgebung sicher. Die estnische Finantsinspektsioon hat am 26. Januar 2026 beschlossen, die Leitlinien vollständig einzuhalten.",
-          "en": "ESMA has published a compliance table regarding its guidelines on outsourcing to cloud service providers. This table indicates which national competent authorities (CAs) intend to comply with or are already complying with the guidelines.\n\nThe table shows that many CAs, including BaFin in Germany, are applying or will apply the guidelines. Some countries, such as Belgium, Croatia, and Italy, state that the guidelines are currently not relevant to them because national laws do not provide for the entities mentioned in the guidelines (e.g., certain depositaries not covered by DORA). Should national laws change, these authorities intend to comply with the guidelines.\n\nThe Bulgarian FSC adopted the guidelines with effect from July 14, 2026. The Danish Finanstilsynet ensures compliance through national legislation. The Estonian Finantsinspektsioon decided on January 26, 2026, to fully comply with the guidelines."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
-        "imp": "low",
-        "refnum": "ESMA65-294529287-4824"
-      },
-      {
-        "d": "10.12.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bis.org",
-        "ti": {
-          "de": "Grundsätze für das Management von Drittparteienrisiken (BCBS)",
-          "en": "Principles for the Sound Management of Third-Party Risk (BCBS)"
-        },
-        "sl": "principles-for-the-sound-management-of-third-party-risk",
-        "s": {
-          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat Grundsätze für das solide Management von Drittparteienrisiken veröffentlicht. Diese Grundsätze sollen einen gemeinsamen Rahmen für Banken und Aufsichtsbehörden schaffen, um Risiken im Zusammenhang mit Drittanbietern zu steuern. Sie ersetzen das Joint Forum Papier von 2005 und erweitern das traditionelle Konzept des Outsourcings auf ein breiteres Spektrum von Drittparteienvereinbarungen.\n\nDie zunehmende Abhängigkeit von Banken von Drittanbietern, insbesondere durch die Digitalisierung, erfordert eine Weiterentwicklung des Risikomanagements. Die Grundsätze sind technologieunabhängig und sollen Banken helfen, ihre operationelle Widerstandsfähigkeit zu stärken. Sie umfassen Leitlinien für Governance, Risikobewertung, Due Diligence, Vertragsgestaltung, Onboarding, Überwachung und Beendigung von Drittparteienbeziehungen sowie spezifische Anleitungen für Aufsichtsbehörden. Die Anwendung der Grundsätze soll proportional zur Größe, Komplexität und dem Risikoprofil der Bank sowie der Kritikalität der Drittparteienvereinbarungen erfolgen.\n\nDie Veröffentlichung erfolgte am 10. Dezember 2025. Eine frühere konsultative Version wurde am 9. Juli 2024 geschlossen.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) has published principles for the sound management of third-party risk. These principles aim to establish a common framework for banks and supervisors to manage risks associated with third-party providers. They supersede the 2005 Joint Forum paper and expand the traditional concept of outsourcing to a broader range of third-party arrangements.\n\nBanks' increasing reliance on third-party service providers, particularly due to digitalization, necessitates an evolution in risk management. The principles are technology-agnostic and are intended to help banks strengthen their operational resilience. They include guidance on governance, risk assessment, due diligence, contracting, onboarding, ongoing monitoring, and termination of third-party relationships, as well as specific guidance for prudential supervisors. The application of the principles should be proportionate to the bank's size, complexity, business model, and risk profile, as well as the criticality of the third-party arrangements.\n\nThe publication date is December 10, 2025. A previous consultative version was closed on July 9, 2024."
-        },
-        "url": "https://www.bis.org/bcbs/publ/d605.htm",
         "imp": "medium"
       }
     ],
@@ -3886,6 +3905,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "08.09.2026",
+      "ti": "Landwirtschaftliche Rentenbank: Bafin ordnet Sicherstellung der ordnungsgemäßen Geschäftsorganisation und zusätzliche Eigenmittelanforderungen an",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_08_landwirtschaftliche_rentenbank.html?cms_expanded=true",
+      "cat": "massnahme",
+      "sum": "Die Landwirtschaftliche Rentenbank mit Sitz in Frankfurt am Main muss sicherstellen, dass ihre Geschäftsorganisation ordnungsgemäß ist. Zudem muss das Institut zusätzliche Eigenmittel vorhalten, bis die organisatorischen Mängel beseitigt sind. Das hat die Finanzaufsicht Bafin angeordnet."
+    },
     {
       "d": "04.09.2026",
       "ti": "Verstoß gegen die Marktmissbrauchsverordnung: Bafin setzt Geldbußen wegen Marktmanipulation fest",
