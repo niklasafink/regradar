@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T16:57:05Z",
+  "generated_at": "2026-09-08T08:28:19Z",
   "updates": {
     "amla": [
       {
@@ -239,6 +239,87 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "brrd": [
+      {
+        "d": "08.09.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Schlussanträge des Generalanwalts zu den Beiträgen zum Einheitlichen Abwicklungsfonds (C-454/24 P u.a.)",
+          "en": "Advocate General's Opinions on Contributions to the Single Resolution Fund (C-454/24 P et al.)"
+        },
+        "sl": "in-cases-c-454-24-p-srb-v-dexia-sa-c-529-24-p-council-v-hypo-vorarlberg-bank-ag",
+        "s": {
+          "de": "Generalanwalt Spielmann schlägt vor, die Rechtsmittel des Einheitlichen Abwicklungsausschusses (SRB) und des Rates der Europäischen Union gegen Urteile des Gerichts der Europäischen Union zurückzuweisen. Diese Urteile hatten Beschlüsse des SRB zur Festsetzung der Beiträge zum Einheitlichen Abwicklungsfonds für 2022 und 2023 für nichtig erklärt, da sie Rechtsfehler aufwiesen.\n\nDer Generalanwalt argumentiert, dass die Übertragung von Durchführungsbefugnissen an den Rat in der Verordnung (EU) Nr. 806/2014 nicht ausreichend begründet wurde und der Rat zudem seine Befugnisse bei der Festlegung der Berechnungsmethode in der Durchführungsverordnung (EU) 2015/81 überschritten habe. Des Weiteren sei die vom SRB angewandte Methode zur Erreichung der Zielausstattung des Fonds, die eine Überschreitung der jährlichen Beitrags-Obergrenze von 12,5 % vorsah, nicht mit der Verordnung Nr. 806/2014 vereinbar, selbst unter Berücksichtigung außergewöhnlicher Umstände wie der COVID-19-Pandemie und des Ukraine-Krieges.\n\nDie Schlussanträge sind für den Gerichtshof nicht bindend, dienen aber als Entscheidungsvorschlag. Der Gerichtshof wird zu einem späteren Zeitpunkt ein Urteil verkünden. Generalanwalt Spielmann schlägt vor, die Wirkungen der SRB-Beschlüsse bis zum Inkrafttreten neuer, unionsrechtskonformer Beschlüsse für maximal 30 Monate aufrechtzuerhalten.",
+          "en": "Advocate General Spielmann proposes dismissing the appeals lodged by the Single Resolution Board (SRB) and the Council of the European Union against judgments of the General Court of the European Union. These judgments had annulled SRB decisions setting the contributions to the Single Resolution Fund for 2022 and 2023, citing errors of law.\n\nThe Advocate General argues that the transfer of implementing powers to the Council in Regulation (EU) No 806/2014 was not sufficiently justified, and that the Council exceeded its powers in defining the calculation method in Implementing Regulation (EU) 2015/81. Furthermore, the method applied by the SRB to achieve the fund's target level, which involved exceeding the annual contribution cap of 12.5%, was deemed incompatible with Regulation No 806/2014, even considering exceptional circumstances such as the COVID-19 pandemic and the war in Ukraine.\n\nThe Advocate General's opinions are not binding on the Court of Justice but serve as a proposal for its decision. The Court will deliver its judgment at a later date. Advocate General Spielmann suggests maintaining the effects of the SRB decisions for a maximum of 30 months until new, EU law-compliant decisions come into force."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260121de.pdf",
+        "imp": "high",
+        "refnum": "C-454/24, C-529/24, C-536/24"
+      },
+      {
+        "d": "05.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Meldepflichten für RLEs bei Fusionen ab (2026_7918)",
+          "en": "EBA rejects question on RLE reporting obligations in mergers (2026_7918)"
+        },
+        "sl": "reporting-obligations-under-article-3-of-the-cir",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Meldepflichten für relevante juristische Personen (RLEs) gemäß Artikel 3 der Verordnung über die Berichterstattung zur Abwicklungsplanung (CIR) abgelehnt. Die Anfrage betraf die Behandlung einer kürzlich erworbenen RLE, die voraussichtlich vor der Annahme des Abwicklungsplans durch eine Fusion aufhören wird zu existieren.\n\nEs wurde gefragt, ob die Meldepflichten für eine solche RLE entfallen können und wie die erworbene Einheit während der Übergangszeit zwischen Erwerb und Fusion für die Abwicklungsplanung und die damit verbundenen Meldepflichten zu behandeln ist. Die EBA lehnte die Frage ab, da der Sachverhalt im geltenden Rechtsrahmen bereits ausreichend geklärt sei und keine zusätzliche Anleitung erforderlich sei.\n\nDie Frage entstand aus einem Szenario, in dem eine Abwicklungseinheit ein kleineres Kreditinstitut erwirbt, das zuvor als „Abwicklungseinheit“ eingestuft war. Die EBA sieht keine Notwendigkeit für weitere Klarstellungen zu diesem Übergangskontext.",
+          "en": "The EBA has rejected a question regarding reporting obligations for Relevant Legal Entities (RLEs) under Article 3 of the CIR (Resolution Planning Reporting). The inquiry concerned the treatment of a recently acquired RLE that is expected to cease to exist as a legal entity due to a merger prior to the adoption of the resolution plan.\n\nThe question asked whether reporting obligations for such an RLE could be waived and how the acquired entity should be treated for resolution planning and related reporting obligations during the interim period between its acquisition and its absorption through merger. The EBA rejected the question, stating that the issue is already sufficiently clarified in the applicable regulatory framework and no additional guidance is necessary.\n\nThe question arose from a scenario where a resolution entity acquires a smaller credit institution previously designated as a 'liquidation entity'. The EBA sees no need for further clarification on this transitional context."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7918",
+        "imp": "low",
+        "refnum": "2026_7918"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "Banken erfüllen MREL-Ziele weiterhin zum Jahresende 2025",
+          "en": "Banks continue to meet their MREL targets at year end 2025"
+        },
+        "sl": "banks-continue-to-meet-their-mrel-targets-at-year-end-2025",
+        "s": {
+          "de": "Das SRB hat sein MREL Dashboard für das zweite Halbjahr 2025 veröffentlicht. Demnach erfüllen die Banken weiterhin ihre MREL-Ziele. Die durchschnittliche MREL-Zielvorgabe, einschließlich der kombinierten Kapitalpufferanforderung (CBR), lag für Abwicklungseinheiten bei 27,8 % des Gesamtrisikobetrags (TREA) und blieb damit gegenüber dem ersten Halbjahr 2025 stabil.\n\nDer aggregierte MREL-Fehlbetrag gegenüber den endgültigen Zielen der Banken, einschließlich des CBR, betrug 0,2 Mrd. EUR (weniger als 0,01 % des TREA). Dieser Fehlbetrag ist auf einige wenige Banken zurückzuführen, die sich noch in Übergangsfristen zur Erfüllung ihrer endgültigen Ziele befinden. Alle anderen Institute erfüllen ihre Anforderungen weiterhin.\n\nDas Dashboard verfolgt die Entwicklung der MREL-Ziele und -Fehlbeträge für externes und internes MREL sowie das Niveau und die Zusammensetzung der MREL-Instrumente. Es basiert auf den dem SRB gemeldeten Bankdaten und deckt die dem SRB unterstellten Einheiten ab.",
+          "en": "The SRB has published its MREL Dashboard for H2 2025, indicating that banks continue to meet their MREL targets. The average MREL final target, including the Combined Buffer Requirement (CBR), for resolution entities was 27.8% of the Total Risk Exposure Amount (TREA), remaining stable compared to H1 2025.\n\nThe aggregate MREL shortfall against banks’ final targets, including the CBR, stood at EUR 0.2 billion (less than 0.01% of TREA). This shortfall is attributed to a few banks under transitional periods to meet their final targets. All other entities continue to meet their requirements.\n\nThe dashboard tracks the evolution of MREL targets and shortfalls for external and internal MREL, as well as the level and composition of MREL instruments. It is based on bank data reported to the SRB and covers entities under the SRB’s remit."
+        },
+        "url": "https://www.srb.europa.eu/en/content/mrel-dashboard-h2-2025",
+        "imp": "low"
+      },
+      {
+        "d": "07.08.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
+          "en": "ITS on the application of Article 55 BRRD (Ares(2020)4105668)"
+        },
+        "sl": "its-on-application-of-article-55-brrd",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Entwurf für Technische Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD) initiiert. Diese ITS sollen die Details für die vertragliche Anerkennung von Abwicklungsbefugnissen festlegen.\n\nDie Regelung betrifft Kreditinstitute und Wertpapierfirmen, die unter die BRRD fallen. Sie müssen sicherstellen, dass ihre Verträge die Anwendung von Abwicklungsbefugnissen durch die zuständigen Behörden anerkennen, um die Wirksamkeit von Abwicklungsmaßnahmen zu gewährleisten.\n\nDer Verfahrensstand ist „Init Planned“, was bedeutet, dass die Arbeiten an diesem Entwurf begonnen haben.",
+          "en": "The European Commission has initiated a draft for Implementing Technical Standards (ITS) on the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD). These ITS are intended to specify the details for the contractual recognition of resolution powers.\n\nThe regulation affects credit institutions and investment firms falling under the BRRD. They must ensure that their contracts recognize the application of resolution powers by the competent authorities to ensure the effectiveness of resolution measures.\n\nThe procedural status is “Init Planned,” indicating that work on this draft has commenced."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
+        "imp": "medium",
+        "refnum": "Ares(2020)4105668"
       }
     ],
     "mar": [
@@ -1924,67 +2005,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-1-february-2010/",
         "imp": "low"
-      }
-    ],
-    "brrd": [
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zu Meldepflichten für RLEs bei Fusionen ab (2026_7918)",
-          "en": "EBA rejects question on RLE reporting obligations in mergers (2026_7918)"
-        },
-        "sl": "reporting-obligations-under-article-3-of-the-cir",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der Meldepflichten für relevante juristische Personen (RLEs) gemäß Artikel 3 der Verordnung über die Berichterstattung zur Abwicklungsplanung (CIR) abgelehnt. Die Anfrage betraf die Behandlung einer kürzlich erworbenen RLE, die voraussichtlich vor der Annahme des Abwicklungsplans durch eine Fusion aufhören wird zu existieren.\n\nEs wurde gefragt, ob die Meldepflichten für eine solche RLE entfallen können und wie die erworbene Einheit während der Übergangszeit zwischen Erwerb und Fusion für die Abwicklungsplanung und die damit verbundenen Meldepflichten zu behandeln ist. Die EBA lehnte die Frage ab, da der Sachverhalt im geltenden Rechtsrahmen bereits ausreichend geklärt sei und keine zusätzliche Anleitung erforderlich sei.\n\nDie Frage entstand aus einem Szenario, in dem eine Abwicklungseinheit ein kleineres Kreditinstitut erwirbt, das zuvor als „Abwicklungseinheit“ eingestuft war. Die EBA sieht keine Notwendigkeit für weitere Klarstellungen zu diesem Übergangskontext.",
-          "en": "The EBA has rejected a question regarding reporting obligations for Relevant Legal Entities (RLEs) under Article 3 of the CIR (Resolution Planning Reporting). The inquiry concerned the treatment of a recently acquired RLE that is expected to cease to exist as a legal entity due to a merger prior to the adoption of the resolution plan.\n\nThe question asked whether reporting obligations for such an RLE could be waived and how the acquired entity should be treated for resolution planning and related reporting obligations during the interim period between its acquisition and its absorption through merger. The EBA rejected the question, stating that the issue is already sufficiently clarified in the applicable regulatory framework and no additional guidance is necessary.\n\nThe question arose from a scenario where a resolution entity acquires a smaller credit institution previously designated as a 'liquidation entity'. The EBA sees no need for further clarification on this transitional context."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7918",
-        "imp": "low",
-        "refnum": "2026_7918"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "Banken erfüllen MREL-Ziele weiterhin zum Jahresende 2025",
-          "en": "Banks continue to meet their MREL targets at year end 2025"
-        },
-        "sl": "banks-continue-to-meet-their-mrel-targets-at-year-end-2025",
-        "s": {
-          "de": "Das SRB hat sein MREL Dashboard für das zweite Halbjahr 2025 veröffentlicht. Demnach erfüllen die Banken weiterhin ihre MREL-Ziele. Die durchschnittliche MREL-Zielvorgabe, einschließlich der kombinierten Kapitalpufferanforderung (CBR), lag für Abwicklungseinheiten bei 27,8 % des Gesamtrisikobetrags (TREA) und blieb damit gegenüber dem ersten Halbjahr 2025 stabil.\n\nDer aggregierte MREL-Fehlbetrag gegenüber den endgültigen Zielen der Banken, einschließlich des CBR, betrug 0,2 Mrd. EUR (weniger als 0,01 % des TREA). Dieser Fehlbetrag ist auf einige wenige Banken zurückzuführen, die sich noch in Übergangsfristen zur Erfüllung ihrer endgültigen Ziele befinden. Alle anderen Institute erfüllen ihre Anforderungen weiterhin.\n\nDas Dashboard verfolgt die Entwicklung der MREL-Ziele und -Fehlbeträge für externes und internes MREL sowie das Niveau und die Zusammensetzung der MREL-Instrumente. Es basiert auf den dem SRB gemeldeten Bankdaten und deckt die dem SRB unterstellten Einheiten ab.",
-          "en": "The SRB has published its MREL Dashboard for H2 2025, indicating that banks continue to meet their MREL targets. The average MREL final target, including the Combined Buffer Requirement (CBR), for resolution entities was 27.8% of the Total Risk Exposure Amount (TREA), remaining stable compared to H1 2025.\n\nThe aggregate MREL shortfall against banks’ final targets, including the CBR, stood at EUR 0.2 billion (less than 0.01% of TREA). This shortfall is attributed to a few banks under transitional periods to meet their final targets. All other entities continue to meet their requirements.\n\nThe dashboard tracks the evolution of MREL targets and shortfalls for external and internal MREL, as well as the level and composition of MREL instruments. It is based on bank data reported to the SRB and covers entities under the SRB’s remit."
-        },
-        "url": "https://www.srb.europa.eu/en/content/mrel-dashboard-h2-2025",
-        "imp": "low"
-      },
-      {
-        "d": "07.08.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
-          "en": "ITS on the application of Article 55 BRRD (Ares(2020)4105668)"
-        },
-        "sl": "its-on-application-of-article-55-brrd",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Entwurf für Technische Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD) initiiert. Diese ITS sollen die Details für die vertragliche Anerkennung von Abwicklungsbefugnissen festlegen.\n\nDie Regelung betrifft Kreditinstitute und Wertpapierfirmen, die unter die BRRD fallen. Sie müssen sicherstellen, dass ihre Verträge die Anwendung von Abwicklungsbefugnissen durch die zuständigen Behörden anerkennen, um die Wirksamkeit von Abwicklungsmaßnahmen zu gewährleisten.\n\nDer Verfahrensstand ist „Init Planned“, was bedeutet, dass die Arbeiten an diesem Entwurf begonnen haben.",
-          "en": "The European Commission has initiated a draft for Implementing Technical Standards (ITS) on the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD). These ITS are intended to specify the details for the contractual recognition of resolution powers.\n\nThe regulation affects credit institutions and investment firms falling under the BRRD. They must ensure that their contracts recognize the application of resolution powers by the competent authorities to ensure the effectiveness of resolution measures.\n\nThe procedural status is “Init Planned,” indicating that work on this draft has commenced."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
-        "imp": "medium",
-        "refnum": "Ares(2020)4105668"
       }
     ],
     "mifid": [
