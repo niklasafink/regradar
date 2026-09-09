@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T16:23:24Z",
+  "generated_at": "2026-09-09T08:32:39Z",
   "updates": {
     "amla": [
       {
@@ -239,6 +239,136 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "sanctions": [
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Gericht bestätigt restriktive Maßnahmen gegen Roman Abramovich (T-358/25)",
+          "en": "General Court upholds restrictive measures against Roman Abramovich (T-358/25)"
+        },
+        "sl": "judgment-of-the-general-court-in-case-t-358-25-abramovich-v-council",
+        "s": {
+          "de": "Das Gericht der Europäischen Union hat die Klage von Roman Arkadyevich Abramovich gegen die gegen ihn verhängten restriktiven Maßnahmen abgewiesen. Diese Maßnahmen, die das Einfrieren von Geldern und ein Einreiseverbot in die EU umfassen, wurden nach dem Angriff Russlands auf die Ukraine verhängt. Abramovich hatte die Aufnahme und Beibehaltung seines Namens auf den Sanktionslisten angefochten und die Nichtigerklärung der Rechtsakte sowie Schadensersatz gefordert.\n\nDas Gericht bestätigte die Rechtsakte des Rates und wies Abramovichs Argumente zurück. Es stellte fest, dass die Benennungskriterien objektiv, präzise und verhältnismäßig sind, da sie sich auf führende Geschäftsleute beziehen, die in Wirtschaftssektoren tätig sind, die wesentliche Einnahmequellen für die russische Regierung darstellen. Abramovich ist Hauptaktionär von Evraz, einem großen Stahl- und Bergbaukonzern in Russland, und hält Beteiligungen an Norilsk Nickel, was als wesentliche Einnahmequelle für die russische Regierung gilt.\n\nDie Maßnahmen entsprechen den Bedingungen des Unionsrechts und der Charta der Grundrechte der Europäischen Union, da sie eine Rechtsgrundlage haben, Ausnahmen und regelmäßige Überprüfungen vorsehen und verhältnismäßig sind, um eine friedliche Beilegung der Krise in der Ukraine zu fördern. Gegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein Rechtsmittel beim Gerichtshof eingelegt werden.",
+          "en": "The General Court of the European Union has dismissed Roman Arkadyevich Abramovich's action against the restrictive measures imposed on him. These measures, which include asset freezes and an EU entry ban, were enacted following Russia's attack on Ukraine. Abramovich had challenged the inclusion and retention of his name on the sanctions lists, seeking annulment of the legal acts and damages.\n\nThe Court upheld the Council's legal acts and rejected Abramovich's arguments. It found that the designation criteria are objective, precise, and proportionate, targeting leading businesspersons operating in economic sectors that constitute significant sources of revenue for the Russian government. Abramovich is the main shareholder of Evraz, a major steel and mining group in Russia, and holds interests in Norilsk Nickel, which is considered a substantial revenue source for the Russian government.\n\nThe measures comply with EU law and the Charter of Fundamental Rights of the European Union, as they are based on a legal foundation, provide for exceptions and regular reviews, and are proportionate to promote a peaceful resolution of the crisis in Ukraine. An appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260124de.pdf",
+        "imp": "low",
+        "refnum": "T-358/25"
+      },
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Beweisanforderungen bei Kontrolle von Unternehmen durch sanktionierte Personen (C-147/25)",
+          "en": "ECJ ruling on evidentiary requirements for control of companies by sanctioned persons (C-147/25)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-147-25-inter-rao-lietuva",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Kontrolle einer Gesellschaft durch eine Person, die EU-restriktiven Maßnahmen unterliegt, objektiv und hinreichend gesichert nachgewiesen werden muss. Der autokratische Charakter eines politischen Regimes allein reicht nicht aus, um eine solche Kontrolle zu belegen. Nationale Behörden müssen die Kontrolle durch unmittelbare Beweise oder ein Bündel konkreter, genauer und übereinstimmender Indizien belegen.\n\nDies betrifft Finanzinstitute und andere Unternehmen, die mit Sanktionen belegte Personen oder Unternehmen identifizieren und deren Vermögenswerte einfrieren müssen. Die Entscheidung präzisiert die Anforderungen an die Beweisführung für die Kontrolle von Unternehmen im Kontext von EU-Sanktionen und betont die Notwendigkeit einer soliden faktischen Grundlage für solche Maßnahmen. Nationale Gerichte müssen die Rechtmäßigkeit von Einfrierungsmaßnahmen überprüfen, ohne jedoch die Frage einer Bedrohung der nationalen Sicherheit beurteilen zu müssen.\n\nDie Begründung für das Einfrieren von Geldern muss den Betroffenen so bald wie möglich mitgeteilt werden, um deren Recht auf gerichtlichen Rechtsschutz zu gewährleisten. Eine vorherige Anhörung oder Mitteilung ist nicht erforderlich, um die Wirksamkeit der Maßnahme nicht zu gefährden.",
+          "en": "The European Court of Justice (ECJ) has ruled that the control of a company by a person subject to EU restrictive measures must be proven objectively and with sufficient certainty. The autocratic nature of a political regime alone is not sufficient to demonstrate such control. National authorities must prove control through direct evidence or a set of concrete, precise, and consistent indications.\n\nThis affects financial institutions and other companies that need to identify sanctioned individuals or entities and freeze their assets. The decision clarifies the evidentiary requirements for proving company control in the context of EU sanctions and emphasizes the need for a solid factual basis for such measures. National courts must review the legality of asset-freezing measures but are not required to assess the question of a threat to national security.\n\nThe reasons for freezing funds must be communicated to the affected parties as soon as possible to ensure their right to judicial review. Prior hearings or notifications are not required to avoid jeopardizing the effectiveness of the measure."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260116de.pdf",
+        "imp": "medium",
+        "refnum": "C-147/25"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
+          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
+          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
+        "imp": "low",
+        "refnum": "32026R0513R(01)"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
+          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
+          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
+        "imp": "low",
+        "refnum": "32026R0506R(03)",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
+          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
+          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
+        "imp": "high",
+        "refnum": "C-465/24"
+      },
+      {
+        "d": "26.02.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Schlussanträge des Generalanwalts zur Erfüllung von Ansprüchen russischer Organisationen (C-802/24)",
+          "en": "Advocate General's Opinion on the satisfaction of claims by Russian entities (C-802/24)"
+        },
+        "sl": "advocate-general-s-opinion-in-case-c-802-24-reibel",
+        "s": {
+          "de": "Der Generalanwalt des Europäischen Gerichtshofs (EuGH) hat in seinen Schlussanträgen dargelegt, dass das Verbot, Ansprüche russischer Organisationen aus Verträgen zu erfüllen, deren Erfüllung durch restriktive Maßnahmen beeinträchtigt ist, zur öffentlichen Ordnung der Union gehört. Dies bedeutet, dass nationale Gerichte prüfen müssen, ob Schiedssprüche diesem Verbot Rechnung tragen, und diese gegebenenfalls aufheben müssen.\n\nDies ist relevant für Unternehmen, die Verträge mit russischen Parteien haben, insbesondere wenn diese Verträge von EU-Sanktionen betroffen sind. Es unterstreicht die Notwendigkeit, die Einhaltung von EU-Sanktionen auch in Schiedsverfahren sicherzustellen. Schiedsgerichte dürfen zwar mit solchen Ansprüchen befasst werden, dürfen ihnen aber nicht stattgeben, wenn sie gegen die restriktiven Maßnahmen verstoßen. Nationale Gerichte müssen die Einhaltung dieser Vorschriften durch Schiedsgerichte kontrollieren.\n\nDie Schlussanträge sind für den Gerichtshof nicht bindend; das Urteil wird zu einem späteren Zeitpunkt verkündet. Nationale Gerichte, die mit ähnlichen Fragen befasst sind, müssen die endgültige Entscheidung des EuGH berücksichtigen.",
+          "en": "The Advocate General of the European Court of Justice (ECJ) has stated in his Opinion that the prohibition on satisfying claims of Russian entities arising from contracts whose performance is affected by restrictive measures forms part of the public policy of the Union. This implies that national courts must verify whether arbitration awards comply with this prohibition and, if necessary, set them aside.\n\nThis is relevant for companies with contracts involving Russian parties, especially if these contracts are impacted by EU sanctions. It underscores the necessity of ensuring compliance with EU sanctions even in arbitration proceedings. While arbitration courts may hear such claims, they must not uphold them if they violate restrictive measures. National courts are obliged to review arbitration courts' adherence to these rules.\n\nThe Advocate General's Opinion is not binding on the Court; the judgment will be delivered at a later date. National courts dealing with similar issues must take into account the final decision of the ECJ."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260023de.pdf",
+        "imp": "high",
+        "refnum": "C-802/24"
       }
     ],
     "brrd": [
@@ -780,135 +910,6 @@
         "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD818.pdf",
         "imp": "medium",
         "refnum": "OR/04/2026"
-      }
-    ],
-    "sanctions": [
-      {
-        "d": "03.09.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Beweisanforderungen bei Kontrolle von Unternehmen durch sanktionierte Personen (C-147/25)",
-          "en": "ECJ ruling on evidentiary requirements for control of companies by sanctioned persons (C-147/25)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-147-25-inter-rao-lietuva",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Kontrolle einer Gesellschaft durch eine Person, die EU-restriktiven Maßnahmen unterliegt, objektiv und hinreichend gesichert nachgewiesen werden muss. Der autokratische Charakter eines politischen Regimes allein reicht nicht aus, um eine solche Kontrolle zu belegen. Nationale Behörden müssen die Kontrolle durch unmittelbare Beweise oder ein Bündel konkreter, genauer und übereinstimmender Indizien belegen.\n\nDies betrifft Finanzinstitute und andere Unternehmen, die mit Sanktionen belegte Personen oder Unternehmen identifizieren und deren Vermögenswerte einfrieren müssen. Die Entscheidung präzisiert die Anforderungen an die Beweisführung für die Kontrolle von Unternehmen im Kontext von EU-Sanktionen und betont die Notwendigkeit einer soliden faktischen Grundlage für solche Maßnahmen. Nationale Gerichte müssen die Rechtmäßigkeit von Einfrierungsmaßnahmen überprüfen, ohne jedoch die Frage einer Bedrohung der nationalen Sicherheit beurteilen zu müssen.\n\nDie Begründung für das Einfrieren von Geldern muss den Betroffenen so bald wie möglich mitgeteilt werden, um deren Recht auf gerichtlichen Rechtsschutz zu gewährleisten. Eine vorherige Anhörung oder Mitteilung ist nicht erforderlich, um die Wirksamkeit der Maßnahme nicht zu gefährden.",
-          "en": "The European Court of Justice (ECJ) has ruled that the control of a company by a person subject to EU restrictive measures must be proven objectively and with sufficient certainty. The autocratic nature of a political regime alone is not sufficient to demonstrate such control. National authorities must prove control through direct evidence or a set of concrete, precise, and consistent indications.\n\nThis affects financial institutions and other companies that need to identify sanctioned individuals or entities and freeze their assets. The decision clarifies the evidentiary requirements for proving company control in the context of EU sanctions and emphasizes the need for a solid factual basis for such measures. National courts must review the legality of asset-freezing measures but are not required to assess the question of a threat to national security.\n\nThe reasons for freezing funds must be communicated to the affected parties as soon as possible to ensure their right to judicial review. Prior hearings or notifications are not required to avoid jeopardizing the effectiveness of the measure."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260116de.pdf",
-        "imp": "medium",
-        "refnum": "C-147/25"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
-          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
-          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
-        "imp": "low",
-        "refnum": "32026R0513R(01)"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
-          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
-          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
-        "imp": "low",
-        "refnum": "32026R0506R(03)",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "12.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
-          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
-          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
-        "imp": "high",
-        "refnum": "C-465/24"
-      },
-      {
-        "d": "26.02.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "Schlussanträge des Generalanwalts zur Erfüllung von Ansprüchen russischer Organisationen (C-802/24)",
-          "en": "Advocate General's Opinion on the satisfaction of claims by Russian entities (C-802/24)"
-        },
-        "sl": "advocate-general-s-opinion-in-case-c-802-24-reibel",
-        "s": {
-          "de": "Der Generalanwalt des Europäischen Gerichtshofs (EuGH) hat in seinen Schlussanträgen dargelegt, dass das Verbot, Ansprüche russischer Organisationen aus Verträgen zu erfüllen, deren Erfüllung durch restriktive Maßnahmen beeinträchtigt ist, zur öffentlichen Ordnung der Union gehört. Dies bedeutet, dass nationale Gerichte prüfen müssen, ob Schiedssprüche diesem Verbot Rechnung tragen, und diese gegebenenfalls aufheben müssen.\n\nDies ist relevant für Unternehmen, die Verträge mit russischen Parteien haben, insbesondere wenn diese Verträge von EU-Sanktionen betroffen sind. Es unterstreicht die Notwendigkeit, die Einhaltung von EU-Sanktionen auch in Schiedsverfahren sicherzustellen. Schiedsgerichte dürfen zwar mit solchen Ansprüchen befasst werden, dürfen ihnen aber nicht stattgeben, wenn sie gegen die restriktiven Maßnahmen verstoßen. Nationale Gerichte müssen die Einhaltung dieser Vorschriften durch Schiedsgerichte kontrollieren.\n\nDie Schlussanträge sind für den Gerichtshof nicht bindend; das Urteil wird zu einem späteren Zeitpunkt verkündet. Nationale Gerichte, die mit ähnlichen Fragen befasst sind, müssen die endgültige Entscheidung des EuGH berücksichtigen.",
-          "en": "The Advocate General of the European Court of Justice (ECJ) has stated in his Opinion that the prohibition on satisfying claims of Russian entities arising from contracts whose performance is affected by restrictive measures forms part of the public policy of the Union. This implies that national courts must verify whether arbitration awards comply with this prohibition and, if necessary, set them aside.\n\nThis is relevant for companies with contracts involving Russian parties, especially if these contracts are impacted by EU sanctions. It underscores the necessity of ensuring compliance with EU sanctions even in arbitration proceedings. While arbitration courts may hear such claims, they must not uphold them if they violate restrictive measures. National courts are obliged to review arbitration courts' adherence to these rules.\n\nThe Advocate General's Opinion is not binding on the Court; the judgment will be delivered at a later date. National courts dealing with similar issues must take into account the final decision of the ECJ."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260023de.pdf",
-        "imp": "high",
-        "refnum": "C-802/24"
-      },
-      {
-        "d": "05.02.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
-          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
-        },
-        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
-        "s": {
-          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
-          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
-        "imp": "high"
       }
     ],
     "dsgvo": [
