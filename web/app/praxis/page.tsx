@@ -48,8 +48,8 @@ export default function Praxis() {
         </div>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-500">
           {lang === "de"
-            ? "Einzelfall-Maßnahmen der Aufsicht: Bußgelder, Verwarnungen und Zwangsgelder. Keine neuen Regeln, aber ein Signal, was tatsächlich sanktioniert wird."
-            : "Individual supervisory actions: fines, reprimands and penalty payments. Not new rules, but a signal of what actually gets sanctioned."}
+            ? "Einzelfall-Maßnahmen der Aufsicht (Bußgelder, Verwarnungen, Zwangsgelder) sowie Reden und Interviews von Aufsichts- und Zentralbank-Vertretern. Keine neuen Regeln, aber ein Signal, was tatsächlich sanktioniert wird und wo die Aufsicht ihre Schwerpunkte setzt."
+            : "Individual supervisory actions (fines, reprimands, penalty payments) as well as speeches and interviews by supervisory and central bank officials. Not new rules, but a signal of what actually gets sanctioned and where supervisors focus their attention."}
         </p>
 
         {/* Kategorie-Filter wie der Zielgruppen-Filter auf der Fristen-Seite */}

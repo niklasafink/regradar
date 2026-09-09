@@ -80,13 +80,14 @@ export function renderPraxisNewsletter(
   const cats = [...byCat.entries()].sort((a, b) => b[1].length - a[1].length);
 
   const summary = cats
-    .map(([c, list]) => `${list.length} ${PRAXIS_CAT_LABELS[c].de}${list.length === 1 ? "" : c === "massnahme" ? "n" : c === "verwarnung" ? "en" : "er"}`)
+    .map(([c, list]) => `${list.length} ${PRAXIS_CAT_LABELS[c].de}${list.length === 1 ? "" : c === "massnahme" || c === "rede" ? "n" : c === "verwarnung" ? "en" : "er"}`)
     .join(", ");
 
   const intro =
     "Einmal im Monat bündeln wir hier die praxisrelevanten Schritte der " +
     "Aufsicht: Bußgelder, Zwangsgelder, Verwarnungen und Maßnahmen gegen " +
-    "Institute.";
+    "Institute sowie öffentliche Reden und Interviews von Aufsichts- und " +
+    "Zentralbank-Vertretern.";
 
   // Balken je Art: Breite proportional zur größten Kategorie (max. 220px).
   const max = Math.max(1, ...cats.map(([, l]) => l.length));

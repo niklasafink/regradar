@@ -14,7 +14,7 @@ export interface PraxisItem {
   auth: string; // Behörde ("BaFin")
   src: string;  // Quelldomain ("bafin.de")
   url: string;  // Primärquelle
-  cat: "bussgeld" | "zwangsgeld" | "verwarnung" | "massnahme";
+  cat: "bussgeld" | "zwangsgeld" | "verwarnung" | "massnahme" | "rede";
   sum?: string; // gescrapte Kurzbeschreibung (Hintergrund, Betragshöhe)
 }
 
@@ -23,6 +23,7 @@ export const PRAXIS_CAT_LABELS: Record<PraxisItem["cat"], { de: string; en: stri
   zwangsgeld: { de: "Zwangsgeld", en: "Penalty payment" },
   verwarnung: { de: "Verwarnung", en: "Reprimand" },
   massnahme: { de: "Maßnahme", en: "Measure" },
+  rede: { de: "Rede", en: "Speech" },
 };
 
 interface LivePayload {

@@ -95,6 +95,8 @@ FRAMEWORK_RULES = [
              r"\bai-act\b|\bki-vo\b|ki-gesetz|ai regulation|artificial intelligence regulation|\bki-system|hochrisiko-ki|high-risk ai"),
     ("eidas2", r"\beidas\b|eudi[- ]wallet|digital identity wallet|elektronische identifizierung|vertrauensdienst|trust service|"
               r"eidas 2|eidas-2|elektronische signatur|electronic signature|qualifizierte[rn]? vertrauensdienst"),
+    ("dma", r"\bdma\b(?=[\s\S]*(torwächter|gatekeeper|core platform|kern-?plattformdienst))|"
+           r"digital markets act|gesetz über digitale märkte|torwächter|\bgatekeepers?\b(?=[\s\S]*(digital|plattform|platform))"),
     # Cyber Resilience Act (Produkte mit digitalen Elementen) vor DORA/NIS-2.
     ("cra", r"cyber resilience act|cyber-resilience-act|cyberresilienz|\bcra\b(?=[\s\S]*(product|produkt|manufactur|hersteller|vulnerab|schwachstell))"),
     ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister|"
@@ -232,6 +234,8 @@ FRAMEWORK_RULES = [
 # entfallen hier – siehe EXCLUSIVE_SOURCES in _classify.
 SOURCE_RULES = {
     "cssf": [
+        ("cssfict", r"20/750|22/828|25/881|26/915|ict and security risk management|"
+                    r"informations- und kommunikationstechnologie|psp ict assessment"),
         ("lulmt", r"liquidity management tool|\blmts?\b|26/910|swing pricing|side pocket|redemption gate|anti-dilution"),
         ("cssf24856", r"24/856|nav (calculation )?errors?|non-compliance with (the )?investment rules|"
                       r"investment (restriction|rule) breach|02/77"),
@@ -303,8 +307,22 @@ PRAXIS_WINDOW_DAYS = 365
 # Jahre nach Veröffentlichung löschen (u. a. § 125 Abs. 5 WpHG, § 60b
 # Abs. 4 KWG). Der Praxis-Export darf deshalb nie Einträge zeigen, die
 # älter sind — egal wie groß PRAXIS_WINDOW_DAYS künftig gewählt wird.
+# Gilt nur für die Maßnahme-Kategorien (bussgeld/zwangsgeld/verwarnung/
+# massnahme); für "rede" gibt es keine gesetzliche Löschpflicht, sie
+# unterliegt trotzdem dem allgemeinen PRAXIS_WINDOW_DAYS-Fenster.
 PRAXIS_LEGAL_MAX_DAYS = 5 * 365
 PRAXIS_MAX = 120
+
+# Reden/Interviews von Aufsichts- und Zentralbank-Vertretern: keine
+# Einzelfall-Maßnahme, aber ein Praxis-Signal (Aufsichtsschwerpunkte,
+# Erwartungshaltung) — eigene Kategorie "rede", nicht auf PRAXIS_SOURCES
+# beschränkt (anders als Bußgeld u. Ä. sind diese Begriffe eindeutig genug,
+# um quellenübergreifend zu greifen, außer bei Gesetzgebungsquellen).
+# Dieselben Begriffe wie im NOISE-Filter, der solche Titel aus den
+# regulatorischen Updates fernhält (s. u.).
+PRAXIS_REDE = re.compile(
+    r"fireside chat|\binterviews?\b|\bspeech(es)?\b|\bspeaking\b|\bkeynote\b|"
+    r"\bspeaks?\b", re.IGNORECASE)
 
 
 def _praxis_summary(text: Optional[str], limit: int = 360) -> str:
@@ -342,7 +360,7 @@ def _praxis_category(text: str, url: str = "") -> Optional[str]:
 NOISE = re.compile(
     r"warnt\s+(?:\w+\s+)?vor|warnungen?\s+vor|betrüger|phishing|"
     r"identitätsmissbrauch|unerlaubte|newsletter|roundtable|"
-    r"speaking|speaks?\b|keynote|speech|interview|visits?\b|konferenz|conference|"
+    r"speaking|speaks?\b|keynote|speech|interview|fireside chat|visits?\b|konferenz|conference|"
     r"moderates|appears before|sets out vision|\bsummit\b|"
     r"call for papers|vacanc|appoint|ernennung|reply form|antwortformular|"
     r"geldbuße|bußgeld|zwangsgeld|verwarnt|workshop|webinar|anmeldung|"
@@ -532,10 +550,13 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     praxis_raws = []  # Rohtexte parallel zu praxis, für die KI-Prüfroutine
     seen_praxis = set()
     for r in rows:
-        if r["source_id"] not in PRAXIS_SOURCES:
-            continue
         praxis_text = "{} {}".format(r["title"] or "", r["summary"] or "")
-        cat = _praxis_category(praxis_text, r["canonical_url"] or "")
+        if r["source_id"] in PRAXIS_SOURCES:
+            cat = _praxis_category(praxis_text, r["canonical_url"] or "")
+        elif r["source_id"] not in LEGISLATION_SOURCES and PRAXIS_REDE.search(r["title"] or ""):
+            cat = "rede"
+        else:
+            cat = None
         if not cat or PRAXIS_EXCLUDE.search(praxis_text):
             continue
         iso = r["publication_date"] or (r["first_seen_at"] or "")[:10]

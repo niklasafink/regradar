@@ -467,6 +467,20 @@ class QaSweepSept2026(unittest.TestCase):
         self.assertIn("bafin", PRAXIS_SOURCES)
         self.assertNotIn("bgbl", PRAXIS_SOURCES)
 
+    def test_praxis_rede_matches_speeches_and_interviews(self):
+        from regradar.webexport import PRAXIS_REDE
+        for t in ("Frank Elderson: Fireside chat",
+                  "Sharon Donnery: Interview with Central Banking",
+                  "Verena Ross' keynote speech at the European Capital Markets Dialogue",
+                  "AMLA Executive Director Nicolas Vasse speaks at ACPR's Rencontres Anti-Blanchiment"):
+            self.assertTrue(PRAXIS_REDE.search(t), t)
+        # Zufällige Erwähnung von "interview" im Fließtext einer regulären
+        # Meldung ist kein Anlass, die Meldung als Rede einzustufen (der Export
+        # prüft PRAXIS_REDE nur gegen den Titel, nicht die Zusammenfassung).
+        for t in ("CSSF communiqué concerning certain CNC publications",
+                  "BaFin veröffentlicht Merkblatt zu Auslagerungen"):
+            self.assertFalse(PRAXIS_REDE.search(t), t)
+
     def test_unusable_llm_summary(self):
         from regradar.summarize import usable
         self.assertFalse(usable("Der Text enthält keine Informationen über den Inhalt der Meldung."))
@@ -604,3 +618,117 @@ class GapReportRelevance(unittest.TestCase):
             self.assertEqual(gapreport._relevant_only(conn, rows), [])
         finally:
             gapreport._chat_json = orig
+
+
+class GapReportKnownFramework(unittest.TestCase):
+    """Scraper-Kandidaten, deren Thema bereits einem Rahmenwerk der
+    Bibliothek entspricht (FRAMEWORK_RULES), dürfen nie 'neue-quelle'
+    empfohlen bekommen — Regression zur NIS2-Fehlmeldung vom 02.09.2026,
+    bei der Rahmenwerk ('nis2') und Quelle ('bsi') längst existierten."""
+
+    def test_known_framework_detected_and_rahmenwerk_hint_cleared(self):
+        from regradar import gapreport
+        group = {
+            "thema": "NIS2-Richtlinie",
+            "rahmenwerk": "NIS2-Richtlinie – RL (EU) 2022/2555 vom 14.12.2026",
+            "artikel": [{"title": "NIS2 - Network Information Service and what came about"}],
+        }
+        gapreport._tag_known_framework(group)
+        self.assertEqual(group["known_fw"], "nis2")
+        self.assertEqual(group["rahmenwerk"], "")
+
+    def test_unknown_topic_stays_untagged(self):
+        from regradar import gapreport
+        group = {"thema": "Neues EU-Rahmenwerk für Weltraumfinanzierung",
+                 "rahmenwerk": "", "artikel": [{"title": "Space Finance Act angekündigt"}]}
+        gapreport._tag_known_framework(group)
+        self.assertNotIn("known_fw", group)
+
+    def test_recommendations_force_abgedeckt_without_asking_llm(self):
+        from regradar import gapreport
+        known_group = {"thema": "NIS2-Richtlinie", "known_fw": "nis2",
+                       "relevanz": "hoch", "aktualitaet": "", "artikel": []}
+        open_group = {"thema": "Neues Thema ohne Rahmenwerk", "relevanz": "mittel",
+                     "aktualitaet": "", "artikel": [{"title": "Beitrag X"}]}
+
+        calls = []
+        def fake_chat(system, payload):
+            calls.append(payload)
+            return {"empfehlungen": [{"id": "s2", "empfehlung": "ignorieren", "grund": "Testgrund"}]}
+        orig = gapreport._chat_json
+        gapreport._chat_json = fake_chat
+        try:
+            out = gapreport._recommendations([], [], [known_group, open_group])
+        finally:
+            gapreport._chat_json = orig
+
+        self.assertEqual(out["s1"]["empfehlung"], "abgedeckt")
+        self.assertIn("nis2", out["s1"]["grund"])
+        self.assertEqual(out["s2"]["empfehlung"], "ignorieren")
+        # Der bereits bekannte Kandidat (s1) wurde dem LLM gar nicht erst vorgelegt.
+        sent_ids = {item["id"] for item in calls[0]["punkte"]}
+        self.assertNotIn("s1", sent_ids)
+        self.assertIn("s2", sent_ids)
+
+
+class LlmRelevanceFilter(unittest.TestCase):
+    """Der Web-Export-Relevanzfilter (llmfilter.py) verwirft rein verfahrens-
+    rechtliche EuGH-Meldungen und unverbindliche Standardsetzer-Nischenberichte;
+    alte Cache-Urteile unterhalb der aktuellen FORMAT-Version zählen nicht."""
+
+    def _conn(self):
+        import sqlite3
+        conn = sqlite3.connect(":memory:")
+        return conn
+
+    def test_prompt_excludes_procedural_rulings_and_niche_int_reports(self):
+        from regradar.llmfilter import SYSTEM_PROMPT
+        for phrase in ("Verfahrens- oder Kostenentscheidungen",
+                       "Schlussanträge des Generalanwalts",
+                       "Nischenberichte internationaler Standardsetzer"):
+            self.assertIn(phrase, SYSTEM_PROMPT)
+
+    def test_old_table_is_migrated_and_old_verdicts_ignored(self):
+        from regradar import llmfilter
+        conn = self._conn()
+        # Bestand vor der Versionierung: vier Spalten, IOSCO-Bericht als relevant gecacht.
+        conn.execute("CREATE TABLE llm_relevance (document_id INTEGER PRIMARY KEY, "
+                     "relevant INTEGER NOT NULL, model TEXT NOT NULL, checked_at TEXT NOT NULL)")
+        conn.execute("INSERT INTO llm_relevance VALUES (1, 1, 'old-model', '2026-09-05T00:00:00Z')")
+        llmfilter._ensure_table(conn)
+        cols = {r[1] for r in conn.execute("PRAGMA table_info(llm_relevance)")}
+        self.assertIn("fmt", cols)
+        self.assertEqual(conn.execute("SELECT fmt FROM llm_relevance WHERE document_id=1").fetchone()[0], 1)
+
+        orig_key = llmfilter.api_key
+        orig_chat = llmfilter._chat
+        llmfilter.api_key = lambda: "test-key"
+        llmfilter._chat = lambda model, key, items: {i: False for i, _ in items}
+        try:
+            result = llmfilter.classify(conn, [(1, "IOSCOPD828 – Drittanbieter-Abhängigkeit von FMIs")])
+        finally:
+            llmfilter.api_key = orig_key
+            llmfilter._chat = orig_chat
+
+        # Altes Urteil (fmt=1) wird nicht übernommen: Dokument wird neu bewertet.
+        self.assertEqual(result, {1: False})
+        stored = conn.execute("SELECT relevant, fmt FROM llm_relevance WHERE document_id=1").fetchone()
+        self.assertEqual(tuple(stored), (0, llmfilter.FORMAT))
+
+    def test_cached_current_verdict_skips_llm(self):
+        from regradar import llmfilter
+        conn = self._conn()
+        llmfilter._ensure_table(conn)
+        conn.execute("INSERT INTO llm_relevance (document_id, relevant, model, checked_at, fmt) "
+                     "VALUES (7, 0, 'm', 'x', ?)", (llmfilter.FORMAT,))
+        orig_key = llmfilter.api_key
+        orig_chat = llmfilter._chat
+        llmfilter.api_key = lambda: "test-key"
+        llmfilter._chat = lambda *a, **k: self.fail(
+            "LLM darf bei gecachtem Urteil nicht befragt werden")
+        try:
+            result = llmfilter.classify(conn, [(7, "Schlussanträge des Generalanwalts …")])
+        finally:
+            llmfilter.api_key = orig_key
+            llmfilter._chat = orig_chat
+        self.assertEqual(result, {7: False})

@@ -2036,6 +2036,38 @@ export const FRAMEWORKS: Framework[] = [
           en:"Regulation (EU) No 910/2014 establishes mutual recognition of notified eID schemes and a uniform regime for qualified electronic signatures, seals, time stamps and delivery services. Applicable from 1 July 2016."}}
     ]},
 
+  /* Chronologie gegen EUR-Lex und curia.europa.eu geprüft (Stand 09.09.2026). */
+  { id:"dma", jur:"EU",
+    about:{de:"Pflichten für große Digitalplattformen, die als 'Torwächter' benannt werden: Interoperabilität (u. a. NFC-/Zahlungsfunktionen), Verbot der Selbstbegünstigung und fairer Zugang zu App Stores und Suchmaschinen – relevant für Zahlungsdienstleister und Finanzunternehmen mit eigenen digitalen Plattformen.",
+           en:"Duties for large digital platforms designated as 'gatekeepers': interoperability (including NFC/payment functions), a ban on self-preferencing and fair access to app stores and search engines – relevant for payment providers and financial firms operating their own digital platforms."},
+    topic:"DATA", ents:["CI","AM","IF","PI","INS"],
+    n:{de:"Gesetz über digitale Märkte (DMA)",en:"Digital Markets Act (DMA)"},
+    alias:"DMA, Digital Markets Act, Gesetz über digitale Märkte, Torwächter, Gatekeeper, Kern-Plattformdienst, Core Platform Service, NFC-Interoperabilität, Self-Preferencing, Selbstbegünstigung",
+    ref:"VO (EU) 2022/1925", cond:null,
+    refUrl:"https://eur-lex.europa.eu/eli/reg/2022/1925/oj/deu",
+    u:[
+      {d:"02.09.2026", t:{de:"Urteil",en:"Judgment"}, src:"curia.europa.eu",
+       url:"https://curia.europa.eu/juris/documents.jsf?num=T-357/24",
+       ti:{de:"Gericht bestätigt: Microsoft Edge kein Torwächter-Dienst",en:"General Court confirms Microsoft Edge is not a gatekeeper service"},
+       s:{de:"Das Gericht der EU weist die Klage von Opera Norway (Rechtssache T-357/24) in vollem Umfang ab und bestätigt, dass die Kommission Microsoft zu Recht nicht als Torwächter für den Browser Edge benannt hat – u. a. wegen geringer Nutzerzahl und fehlender eigenständiger Kontrolle über die Browser-Engine. Das Urteil konkretisiert die Kriterien für die Torwächter-Benennung von Plattformdiensten.",
+          en:"The EU General Court fully dismisses Opera Norway's action (Case T-357/24) and confirms the Commission was right not to designate Microsoft as a gatekeeper for the Edge browser – citing low user numbers and Microsoft's limited independent control over the browser engine, among other factors. The judgment clarifies the criteria for gatekeeper designation of platform services."}},
+      {d:"06.03.2024", t:{de:"Mitteilung",en:"Statement"}, src:"ec.europa.eu",
+       url:"https://digital-markets-act.ec.europa.eu/gatekeepers-portal_en",
+       ti:{de:"Torwächter-Pflichten treten in Kraft",en:"Gatekeeper obligations take effect"},
+       s:{de:"Sechs Monate nach der Benennung müssen Alphabet, Amazon, Apple, ByteDance, Meta und Microsoft die DMA-Pflichten für ihre insgesamt 22 benannten Kern-Plattformdienste vollständig einhalten, u. a. Interoperabilität, Wahlfreiheit bei Zahlungs- und Wallet-Funktionen und das Verbot der Selbstbegünstigung.",
+          en:"Six months after designation, Alphabet, Amazon, Apple, ByteDance, Meta and Microsoft must fully comply with the DMA duties for their 22 designated core platform services, including interoperability, freedom of choice for payment/wallet functions and the ban on self-preferencing."}},
+      {d:"06.09.2023", t:{de:"Beschluss",en:"Decision"}, src:"ec.europa.eu",
+       url:"https://ec.europa.eu/commission/presscorner/detail/en/ip_23_4328",
+       ti:{de:"Kommission benennt die ersten sechs Torwächter",en:"Commission designates the first six gatekeepers"},
+       s:{de:"Alphabet, Amazon, Apple, ByteDance, Meta und Microsoft werden für insgesamt 22 Kern-Plattformdienste (u. a. Betriebssysteme, App Stores, Suchmaschinen, Werbedienste) als Torwächter benannt und müssen ihre Dienste binnen sechs Monaten an die DMA-Pflichten anpassen.",
+          en:"Alphabet, Amazon, Apple, ByteDance, Meta and Microsoft are designated as gatekeepers for a total of 22 core platform services (including operating systems, app stores, search engines and advertising services) and must bring their services into line with the DMA duties within six months."}},
+      {refnum:"VO (EU) 2022/1925", eff:"02.05.2023", d:"12.10.2022", t:{de:"Verordnung",en:"Regulation"}, src:"eur-lex.europa.eu",
+       url:"https://eur-lex.europa.eu/eli/reg/2022/1925/oj/deu",
+       ti:{de:"DMA im Amtsblatt veröffentlicht: Verordnung über bestreitbare und faire Märkte im digitalen Sektor",en:"DMA published in the Official Journal: Regulation on contestable and fair markets in the digital sector"},
+       s:{de:"Die am 14.09.2022 erlassene Verordnung tritt am 01.11.2022 in Kraft und gilt ab dem 02.05.2023. Sie verpflichtet als 'Torwächter' benannte Betreiber zentraler Plattformdienste u. a. zu Interoperabilität (auch bei NFC-/Zahlungsfunktionen), verbietet Selbstbegünstigung und schreibt fairen Zugang zu App Stores und Suchmaschinen vor.",
+          en:"Adopted on 14 September 2022, the regulation entered into force on 1 November 2022 and applies from 2 May 2023. It requires operators of core platform services designated as 'gatekeepers' to ensure interoperability (including NFC/payment functions), bans self-preferencing and mandates fair access to app stores and search engines."}}
+    ]},
+
   { id:"fida", jur:"EU",
     about:{de:"Vorschlag für einen Rahmen für den Zugang zu Finanzdaten (Open Finance): Pflicht der Dateninhaber, Kundendaten über Schnittstellen mit zugelassenen Datennutzern zu teilen, Datenaustauschsysteme und ein Zulassungsregime für Finanzinformationsdienstleister. Trilog seit Sommer 2025 unterbrochen.",en:"Proposal for a framework for financial data access (open finance): duty of data holders to share customer data with authorised data users via interfaces, data-sharing schemes and an authorisation regime for financial information service providers. Trilogue stalled since summer 2025."}, topic:"DATA", ents:["CI","AM","IF","PI","INS"],
     n:{de:"FiDA: Zugang zu Finanzdaten (Open Finance)",en:"FiDA: financial data access (open finance)"},
@@ -2727,6 +2759,39 @@ export const FRAMEWORKS: Framework[] = [
        ti:{de:"CSSF-FAQ zur Asset-Due-Diligence nach Verordnung 12-02",en:"CSSF FAQ on asset due diligence under Regulation 12-02"},
        s:{de:"Klärt, wie Fonds und Fondsmanager Geldwäscherisiken auf Ebene der Vermögensgegenstände prüfen: Eine initiale Risikobewertung ist Pflicht, jährliche Neubewertungen entfallen ohne wesentliche Änderungen; an geregelten Märkten gehandelte Wertpapiere gelten als geringer exponiert. Basiert auf Prüfungserkenntnissen und der Public-Private-Partnership OPC AML.",
           en:"Clarifies how funds and fund managers assess money-laundering risk at asset level: an initial risk assessment is mandatory, annual reassessments are not required absent material changes; securities traded on regulated markets are considered lower risk. Based on inspection findings and the OPC AML public-private partnership."}}
+    ]},
+
+  /* Chronologie gegen cssf.lu geprüft (Stand 09.09.2026). */
+  { id:"cssfict", jur:"LU",
+    about:{de:"Luxemburgische IKT- und Sicherheitsrisikomanagement-Anforderungen für den Fondssektor: Governance, Sicherheitsrichtlinien, Auslagerung von IKT-Dienstleistungen und die Anwendung von DORA auf Drittlandzweigstellen in Luxemburg.",
+           en:"Luxembourg ICT and security risk management requirements for the fund sector: governance, security policies, outsourcing of ICT services and the application of DORA to third-country branches in Luxembourg."},
+    topic:"ICT", ents:["AM"],
+    n:{de:"IKT- und Sicherheitsrisikomanagement in Luxemburg (CSSF-Rundschreiben 20/750)",en:"ICT and security risk management in Luxembourg (CSSF Circular 20/750)"},
+    alias:"Circular 20/750, Circular 22/828, Circular 25/881, Circular 26/915, ICT and Security Risk Management, PSP ICT Assessment, IKT-Risikomanagement Luxemburg, Third-Country Branch DORA, Drittlandzweigstelle",
+    ref:"Circular CSSF 20/750, Circular CSSF 26/915", cond:{k:"juris",any:["LU"]},
+    refUrl:"https://www.cssf.lu/en/Document/circular-cssf-20-750/",
+    condL:{de:"nur bei Fondsdomizil oder ManCo in Luxemburg",en:"only with a Luxembourg fund domicile or ManCo"},
+    u:[
+      {refnum:"Circular CSSF 26/915", d:"27.08.2026", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-26-915/",
+       ti:{de:"Rundschreiben 26/915 zur Anwendung von DORA auf Drittlandzweigstellen in Luxemburg",en:"Circular 26/915 on the applicability of DORA to third-country branches in Luxembourg"},
+       s:{de:"Klärt, wie die Vorgaben von 20/750 (in der durch 25/881 an DORA angepassten Fassung) auf in Luxemburg errichtete Zweigstellen von Drittstaaten-Unternehmen anzuwenden sind.",
+          en:"Clarifies how the requirements of 20/750 (as aligned with DORA by 25/881) apply to Luxembourg branches of third-country firms."}},
+      {refnum:"Circular CSSF 25/881", d:"09.04.2025", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-25-881/",
+       ti:{de:"Rundschreiben 25/881 passt 20/750 an DORA an",en:"Circular 25/881 aligns 20/750 with DORA"},
+       s:{de:"Passt das bisherige IKT-Rundschreiben 20/750 an die zwischenzeitlich unmittelbar geltende DORA an und ersetzt insoweit veraltete nationale Doppelregelungen.",
+          en:"Aligns the pre-existing ICT circular 20/750 with DORA, which by then applied directly, and removes outdated overlapping national requirements."}},
+      {refnum:"Circular CSSF 22/828", d:"29.12.2022", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-22-828/",
+       ti:{de:"Rundschreiben 22/828 ändert 20/750",en:"Circular 22/828 amends 20/750"},
+       s:{de:"Erste Änderung des ursprünglichen IKT-Rundschreibens 20/750, u. a. zum PSP-ICT-Assessment-Formular für Zahlungs- und E-Geld-Institute.",
+          en:"First amendment to the original ICT circular 20/750, including the PSP ICT Assessment form for payment and e-money institutions."}},
+      {refnum:"Circular CSSF 20/750", d:"25.08.2020", eff:"25.08.2020", t:{de:"Rundschreiben",en:"Circular"}, src:"cssf.lu",
+       url:"https://www.cssf.lu/en/Document/circular-cssf-20-750/",
+       ti:{de:"Ursprüngliches Rundschreiben zu IKT- und Sicherheitsrisikomanagement",en:"Original circular on ICT and security risk management"},
+       s:{de:"Legt Governance, Sicherheitsrichtlinien, Auslagerung von IKT-Dienstleistungen und Meldepflichten fest, bevor DORA unmittelbar für alle Finanzunternehmen galt.",
+          en:"Sets out governance, security policies, outsourcing of ICT services and reporting duties, predating DORA's direct application to all financial entities."}}
     ]}
 
 ];

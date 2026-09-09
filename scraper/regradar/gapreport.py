@@ -16,7 +16,7 @@ in der Bibliothek fehlendes Rahmenwerk steckt — Vorschläge landen mit
 Rechtsakt und Datum des Rahmenwerks in derselben Mail (jedes Rahmenwerk
 wird nur einmal gemeldet, Tabelle gap_fw_reported).
 
-Strenge Prüfung in vier Stufen, damit nur echte Lücken gemeldet werden:
+Strenge Prüfung in fünf Stufen, damit nur echte Lücken gemeldet werden:
   1. Nur frische Artikel (Publikationsdatum letzte 14 Tage); Artikel, die
      der bestehende Big4-Match bereits einem Dokument zugeordnet hat
      (big4_matches.related=1), sind abgedeckt.
@@ -29,7 +29,15 @@ Strenge Prüfung in vier Stufen, damit nur echte Lücken gemeldet werden:
   3. Ein LLM vergleicht jeden verbleibenden Artikel gegen die gescrapten
      Dokumente der letzten 180 Tage (gleiches Rahmenwerk; ohne Rahmenwerk
      gegen die neuesten Dokumente insgesamt). Im Zweifel gilt: abgedeckt.
-  4. Ohne OPENROUTER_API_KEY wird NICHT berichtet (lieber keine Mail als
+  4. Deterministischer Bibliotheks-Check (_tag_known_framework): Thema,
+     LLM-Rahmenwerk-Hinweis und Artikeltitel werden zusätzlich gegen die
+     echten FRAMEWORK_RULES-Regeln aus webexport.py geprüft (dieselbe Logik,
+     die auch Dokumente klassifiziert). Ein Treffer heißt, Rahmenwerk UND
+     Primärquelle existieren bereits — dann wird "neue-quelle" nie
+     vorgeschlagen, auch wenn Stufe 3 mangels frischem Dokument im Fenster
+     "nicht abgedeckt" meldet (Ursache für die NIS2-Fehlmeldung vom
+     02.09.2026: Empfehlung sah die Bibliothek nicht).
+  5. Ohne OPENROUTER_API_KEY wird NICHT berichtet (lieber keine Mail als
      eine falsche Lücken-Meldung).
 
 Jeder Artikel wird höchstens einmal gemeldet (Tabelle big4_gap_reported);
@@ -152,7 +160,9 @@ RECO_PROMPT = (
     "- rahmenwerk (Vorschlag, ein Regelwerk in die Bibliothek aufzunehmen): "
     "'aufnehmen' oder 'ignorieren' — Maßstab ist die Compliance-Relevanz "
     "für Banken, Asset Manager, Wertpapier-/Zahlungsinstitute, Versicherer, "
-    "FinTechs.\n"
+    "FinTechs SELBST. Regelt der Rechtsakt nur Organisation, Zuständigkeiten "
+    "oder Finanzierung einer Aufsichtsbehörde (z. B. FinDAG) und begründet "
+    "keine Pflichten der beaufsichtigten Unternehmen: 'ignorieren'.\n"
     "- scraper (Big4-/Kanzlei-Thema ohne gescrapte Primärquelle): "
     "'neue-quelle' (Primärquelle lohnt einen eigenen Scraper), 'abgedeckt' "
     "(vermutlich doch von bestehenden Quellen abgedeckt) oder 'ignorieren' "
@@ -175,10 +185,15 @@ FW_GAP_PROMPT = (
     "Nenne nur Rahmenwerke (Gesetze, Verordnungen, Richtlinien, "
     "Aufsichtsregelwerke), die (a) eindeutig Kernthema mindestens einer "
     "Meldung sind, (b) in der Bibliothek fehlen — auch nicht unter anderem "
-    "Namen enthalten sind — und (c) für die Compliance der Zielgruppe "
-    "relevant sind. Einzelfallmaßnahmen, Statistiken, allgemeine Politik "
-    "oder Themen ohne eigenes Regelwerk sind KEINE fehlenden Rahmenwerke. "
-    "Im Zweifel: nichts melden.\n\n"
+    "Namen enthalten sind — und (c) unmittelbar Pflichten für die "
+    "beaufsichtigten Finanzunternehmen selbst begründen (nicht nur für "
+    "deren Aufsichtsbehörde). Einzelfallmaßnahmen, Statistiken, allgemeine "
+    "Politik oder Themen ohne eigenes Regelwerk sind KEINE fehlenden "
+    "Rahmenwerke. Ebenfalls KEINE fehlenden Rahmenwerke: Gesetze, die "
+    "ausschließlich Organisation, Zuständigkeiten oder Finanzierung einer "
+    "Aufsichtsbehörde selbst regeln (z. B. Finanzaufsichtsgesetz/FinDAG) "
+    "und keine Pflichten der beaufsichtigten Unternehmen begründen. Im "
+    "Zweifel: nichts melden.\n\n"
     "Antworte ausschließlich mit einem JSON-Objekt der Form "
     '{"fehlend": [{"name": "…", "rechtsakt": "z. B. VO (EU) 2020/1503", '
     '"datum": "Datum bzw. Jahr des Rechtsakts, z. B. 07.10.2020", '
@@ -490,6 +505,14 @@ def _framework_gaps(conn: sqlite3.Connection):
     library = _library_frameworks()
     known_keys = {re.sub(r"\W+", "", f.get("name", f["id"]).lower())
                   for f in library}
+    # Rechtsakt-Nummer (z. B. "2024/1774") ist ein robusteres Dedup-Merkmal
+    # als der vom LLM frei formulierte Name — sonst werden bereits
+    # vorhandene Rahmenwerke unter leicht anderem Namen erneut vorgeschlagen
+    # (z. B. MiCA) bzw. CSSF-Rundschreiben, die denselben EU-Rechtsakt bloß
+    # umsetzen, fälschlich als eigenständige Lücke gemeldet (z. B. die
+    # DORA-IKT-RTS Del. VO 2024/1774, bereits als "dorarmf" vorhanden).
+    known_ref_nums = {m.group(1) for f in library
+                       for m in re.finditer(r"(\d{4}/\d+)", f.get("rechtsakt", "") or "")}
     already = {r["fw_key"] for r in conn.execute(
         "SELECT fw_key FROM gap_fw_reported")}
     suggestions: List[dict] = []
@@ -512,7 +535,8 @@ def _framework_gaps(conn: sqlite3.Connection):
                 continue
             name = str(s.get("name") or "").strip()
             key = re.sub(r"\W+", "", name.lower())
-            if not key or key in already or key in known_keys:
+            ref_nums = set(re.findall(r"(\d{4}/\d+)", str(s.get("rechtsakt") or "")))
+            if not key or key in already or key in known_keys or (ref_nums & known_ref_nums):
                 continue
             already.add(key)
             docs = [by_id[i] for i in (s.get("meldung_ids") or [])
@@ -531,10 +555,32 @@ def _framework_gaps(conn: sqlite3.Connection):
     return suggestions, checked
 
 
+def _tag_known_framework(group: dict) -> None:
+    """Prüft Thema, LLM-Rahmenwerk-Hinweis und Artikeltitel gegen die
+    bestehenden FRAMEWORK_RULES (dieselbe Regex-Zuordnung, die auch echte
+    Dokumente klassifiziert). Ein Treffer heißt: Rahmenwerk UND Primärquelle
+    existieren bereits — dass im Vergleichsfenster kein frisches Dokument
+    dazu lag, ist keine fehlende Quelle. Verhindert Fehlmeldungen wie
+    „NIS2 fehlt" (Framework „nis2" + Quelle „bsi" sind längst vorhanden).
+
+    Setzt group["known_fw"] und leert group["rahmenwerk"] (nicht wirklich
+    fehlend), damit weder die Mail noch die Empfehlung in die Irre führen."""
+    from .webexport import _classify
+    text = " ".join(filter(None, [
+        group.get("thema"), group.get("rahmenwerk"),
+        *[a["title"] for a in group.get("artikel", [])]]))
+    fw_id = _classify(text)
+    if fw_id:
+        group["known_fw"] = fw_id
+        group["rahmenwerk"] = ""
+
+
 def _group_by_topic(gaps: List[sqlite3.Row]) -> List[dict]:
     """Lücken-Artikel per LLM zu Themen aggregieren und je Thema Relevanz,
     Aktualität und ggf. ein fehlendes Rahmenwerk beurteilen; Fallback ohne
-    LLM-Antwort: Gruppierung nach Rahmenwerk ohne Einschätzung."""
+    LLM-Antwort: Gruppierung nach Rahmenwerk ohne Einschätzung. Jede Gruppe
+    wird zusätzlich deterministisch gegen die bestehende Bibliothek geprüft
+    (siehe _tag_known_framework)."""
     parsed = _chat_json(GROUP_PROMPT, {
         "beitraege": [{"id": a["article_id"], "title": _clean(a["title"], 200),
                        "datum": (a["published"] or "")[:10]}
@@ -549,19 +595,23 @@ def _group_by_topic(gaps: List[sqlite3.Row]) -> List[dict]:
             if not ids:
                 continue
             seen.update(ids)
-            groups.append({"thema": str(g.get("thema") or "Weitere Themen")[:120],
-                           "relevanz": str(g.get("relevanz") or "")[:10],
-                           "aktualitaet": _clean(str(g.get("aktualitaet") or ""), 240),
-                           "rahmenwerk": _clean(str(g.get("rahmenwerk") or ""), 160),
-                           "artikel": [by_id[i] for i in ids]})
+            group = {"thema": str(g.get("thema") or "Weitere Themen")[:120],
+                     "relevanz": str(g.get("relevanz") or "")[:10],
+                     "aktualitaet": _clean(str(g.get("aktualitaet") or ""), 240),
+                     "rahmenwerk": _clean(str(g.get("rahmenwerk") or ""), 160),
+                     "artikel": [by_id[i] for i in ids]}
+            _tag_known_framework(group)
+            groups.append(group)
     rest = [a for a in gaps if a["article_id"] not in seen]
     if rest:
         by_fw: Dict[str, List[sqlite3.Row]] = {}
         for a in rest:
             by_fw.setdefault(a["framework"] or "Ohne Rahmenwerk-Zuordnung", []).append(a)
         for fw, items in by_fw.items():
-            groups.append({"thema": fw, "relevanz": "", "aktualitaet": "",
-                           "rahmenwerk": "", "artikel": items})
+            group = {"thema": fw, "relevanz": "", "aktualitaet": "",
+                     "rahmenwerk": "", "artikel": items}
+            _tag_known_framework(group)
+            groups.append(group)
     return groups
 
 
@@ -574,10 +624,17 @@ def _de_date(iso: Optional[str]) -> str:
 
 def _recommendations(dedup_cases: List[dict], fw_gaps: List[dict],
                      groups: List[dict]) -> Dict[str, dict]:
-    """Je Checklisten-Punkt eine LLM-Empfehlung (Entscheidungscode + kurzer
-    Grund). Schlüssel: d1…/f1…/s1… nach Position. Ohne LLM-Antwort leer —
-    die Mail kommt dann ohne Empfehlungszeilen."""
+    """Je Checklisten-Punkt eine Empfehlung (Entscheidungscode + kurzer
+    Grund). Schlüssel: d1…/f1…/s1… nach Position. Scraper-Kandidaten mit
+    bereits bekanntem Rahmenwerk (siehe _tag_known_framework) werden NICHT
+    dem LLM zur Bewertung vorgelegt, sondern deterministisch auf
+    'abgedeckt' gesetzt — das LLM bekommt die Bibliothek sonst nicht zu
+    sehen und würde sonst z. B. für NIS2 fälschlich 'neue-quelle' empfehlen,
+    obwohl Rahmenwerk und Quelle längst existieren. Ohne LLM-Antwort für den
+    Rest bleiben nur die deterministischen Einträge — die Mail kommt dann
+    für die übrigen Punkte ohne Empfehlungszeile."""
     items: List[dict] = []
+    out: Dict[str, dict] = {}
     for i, c in enumerate(dedup_cases, 1):
         items.append({
             "id": "d{}".format(i), "art": "dublette",
@@ -591,15 +648,22 @@ def _recommendations(dedup_cases: List[dict], fw_gaps: List[dict],
             "rechtsakt": f["rechtsakt"], "relevanz": f["relevanz"],
             "begruendung": f["begruendung"]})
     for i, g in enumerate(groups, 1):
+        key = "s{}".format(i)
+        known_fw = g.get("known_fw")
+        if known_fw:
+            out[key] = {
+                "empfehlung": "abgedeckt",
+                "grund": "Rahmenwerk „{}“ und Primärquelle sind bereits in "
+                        "der Bibliothek vorhanden.".format(known_fw)}
+            continue
         items.append({
-            "id": "s{}".format(i), "art": "scraper", "thema": g["thema"],
+            "id": key, "art": "scraper", "thema": g["thema"],
             "relevanz": g.get("relevanz") or "",
             "aktualitaet": g.get("aktualitaet") or "",
             "beitraege": [_clean(a["title"], 160) for a in g["artikel"]][:6]})
     if not items:
-        return {}
+        return out
     parsed = _chat_json(RECO_PROMPT, {"punkte": items})
-    out: Dict[str, dict] = {}
     if parsed and isinstance(parsed.get("empfehlungen"), list):
         for e in parsed["empfehlungen"]:
             if isinstance(e, dict) and e.get("id"):

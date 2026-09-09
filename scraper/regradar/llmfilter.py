@@ -20,6 +20,11 @@ DEFAULT_MODEL = "google/gemini-2.5-flash-lite"
 BATCH_SIZE = 25
 TIMEOUT = 90
 
+# Format-Version des Prompts. Bei inhaltlichen Änderungen hochzählen – der
+# nächste Export bewertet dann alle Kandidaten neu (alte Cache-Einträge unter
+# der Vorversion werden ignoriert).
+FORMAT = 2
+
 SYSTEM_PROMPT = (
     "Du filterst einen Regulatory-News-Feed für Compliance-Abteilungen von "
     "Finanzunternehmen (Banken, Asset Manager, Wertpapier- und Zahlungsinstitute, "
@@ -27,12 +32,20 @@ SYSTEM_PROMPT = (
     "RELEVANT sind nur Meldungen mit regulatorischem Gehalt: neue oder geänderte "
     "Gesetze und Verordnungen, Gesetzentwürfe, Konsultationen, Leitlinien, "
     "technische Standards (RTS/ITS), Rundschreiben, Merkblätter, Q&As, "
-    "Meldewesen-Taxonomien, Urteile mit Aufsichtsbezug, Fristen sowie "
-    "aufsichtliche Maßnahmen und Mitteilungen mit Pflichtenbezug.\n\n"
+    "Meldewesen-Taxonomien, Gerichtsurteile mit echter Auslegungswirkung für "
+    "Institute (z. B. EuGH konkretisiert eine Richtlinien-/Verordnungsnorm), "
+    "Fristen sowie aufsichtliche Maßnahmen und Mitteilungen mit Pflichtenbezug.\n\n"
     "NICHT RELEVANT sind: Warnungen vor Betrug/Phishing/unerlaubten Anbietern, "
     "Veranstaltungen, Reden, Panels, Interviews, Personalien, Newsletter, "
     "Stellenausschreibungen, reine Statistiken oder Dashboards ohne "
-    "Pflichtenbezug und sonstige PR-Meldungen.\n\n"
+    "Pflichtenbezug und sonstige PR-Meldungen. Ebenfalls NICHT RELEVANT: reine "
+    "Verfahrens- oder Kostenentscheidungen von EU-/nationalen Gerichten ohne "
+    "neue materielle Auslegung (z. B. Schlussanträge des Generalanwalts oder "
+    "Zurückweisung eines Rechtsmittels in einem Gebühren-/Beitragsstreit) sowie "
+    "unverbindliche Nischenberichte internationaler Standardsetzer (IOSCO, "
+    "CPMI, BIS, FSB u. ä. – Diskussionspapiere, Marktstudien, Final Reports "
+    "ohne verbindliche Umsetzungspflicht), außer sie konkretisieren explizit "
+    "ein bereits verfolgtes bindendes EU-/DE-Rahmenwerk.\n\n"
     "Du erhältst eine JSON-Liste von Objekten mit id und text. Antworte "
     "ausschließlich mit einem JSON-Objekt, das jede id auf true (relevant) "
     "oder false (nicht relevant) abbildet. Keine Erklärungen."
@@ -49,8 +62,13 @@ def _ensure_table(conn: sqlite3.Connection) -> None:
                document_id INTEGER PRIMARY KEY REFERENCES documents(document_id),
                relevant    INTEGER NOT NULL,
                model       TEXT NOT NULL,
-               checked_at  TEXT NOT NULL
+               checked_at  TEXT NOT NULL,
+               fmt         INTEGER NOT NULL DEFAULT 1
            )""")
+    cols = [r[1] for r in conn.execute("PRAGMA table_info(llm_relevance)")]
+    if "fmt" not in cols:
+        conn.execute(
+            "ALTER TABLE llm_relevance ADD COLUMN fmt INTEGER NOT NULL DEFAULT 1")
     conn.commit()
 
 
@@ -108,9 +126,10 @@ def classify(conn: sqlite3.Connection, items: List[Tuple[int, str]]) -> Dict[int
     _ensure_table(conn)
     result: Dict[int, bool] = {}
     cached = conn.execute(
-        "SELECT document_id, relevant FROM llm_relevance WHERE document_id IN ({})".format(
+        "SELECT document_id, relevant FROM llm_relevance "
+        "WHERE fmt=? AND document_id IN ({})".format(
             ",".join("?" * len(items)) or "NULL"),
-        [i for i, _ in items]).fetchall() if items else []
+        [FORMAT] + [i for i, _ in items]).fetchall() if items else []
     for row in cached:
         result[row[0]] = bool(row[1])
 
@@ -135,8 +154,8 @@ def classify(conn: sqlite3.Connection, items: List[Tuple[int, str]]) -> Dict[int
             if i in verdicts:
                 result[i] = verdicts[i]
                 conn.execute(
-                    "INSERT OR REPLACE INTO llm_relevance VALUES (?,?,?,?)",
-                    (i, int(verdicts[i]), model, utcnow()))
+                    "INSERT OR REPLACE INTO llm_relevance VALUES (?,?,?,?,?)",
+                    (i, int(verdicts[i]), model, utcnow(), FORMAT))
             else:
                 result[i] = True  # fail-open, nicht cachen
         conn.commit()
