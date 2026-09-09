@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T17:57:32Z",
+  "generated_at": "2026-09-09T23:36:33Z",
   "updates": {
     "amla": [
       {
@@ -63,26 +63,6 @@
         "deadline": "20.09.2026"
       },
       {
-        "d": "04.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht Entwurf des Berichtsrahmens für die Erhebung der Eignungsdaten 2027",
-          "en": "EBA publishes draft reporting framework for the 2027 eligibility data collection"
-        },
-        "sl": "eba-publishes-draft-reporting-framework-for-the-2027-eligibility-data-collection",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat einen Entwurf des Datenmodells und der Taxonomie für die Erhebung von Daten zur Berechtigung für die direkte Aufsicht durch die AMLA veröffentlicht. Dies ist Teil der Version 4.4 ihres Meldewesens. Die Daten werden Anfang 2027 erhoben.\n\nDie Datenerhebung richtet sich an alle verpflichteten Unternehmen, die 2026 als vorläufig berechtigt identifiziert wurden. Ziel ist es, zu bestätigen, ob diese Unternehmen die Kriterien am Stichtag 31. Dezember 2026 weiterhin erfüllen. Der Entwurf ist auf der EBA-Website verfügbar und sollte zusammen mit den von der AMLA für die Datenerhebung 2026 veröffentlichten Vorlagen und Anweisungen gelesen werden.\n\nInteressengruppen, einschließlich des Privatsektors und der nationalen zuständigen Behörden, können bis zum 24. August 2026 über das EBA-Feedback-Formular Stellungnahmen einreichen.",
-          "en": "The European Banking Authority (EBA) has published a public working draft of the data model and taxonomy for the collection of data on eligibility for direct supervision by AMLA. This is part of release 4.4 of its reporting framework. The data will be gathered in early 2027.\n\nThe data collection targets all obliged entities identified as provisionally eligible in 2026. Its purpose is to confirm whether these entities still meet the criteria on the reference date of 31 December 2026. The draft is available on the EBA website and should be read alongside the templates and instructions AMLA published for the 2026 data collection on eligibility criteria.\n\nStakeholders, including the private sector and national competent authorities, are invited to submit feedback through the EBA feedback form by 24 August 2026."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/eba-publishes-draft-reporting-framework-2027-eligibility-data-collection_en",
-        "imp": "medium",
-        "deadline": "24.08.2026"
-      },
-      {
         "d": "22.07.2026",
         "t": {
           "de": "Meldung",
@@ -119,6 +99,25 @@
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/updated-taxonomy-2027-risk-assessment-data-collection_en",
         "imp": "high"
+      },
+      {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "EDPB und AMLA entwickeln gemeinsame Leitlinien zur Informationsweitergabe im Kampf gegen Finanzkriminalität",
+          "en": "EDPB and AMLA to develop Joint Guidelines on partnerships for information sharing"
+        },
+        "sl": "edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharin",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) und die Anti-Geldwäsche-Behörde (AMLA) entwickeln gemeinsame Leitlinien zur Informationsweitergabe im Kampf gegen Finanzkriminalität. Ziel ist es, die Zusammenarbeit zu fördern und gleichzeitig den Schutz personenbezogener Daten zu gewährleisten. Dies betrifft insbesondere die Umsetzung von Artikel 75 der Geldwäscheverordnung, der den Austausch von Informationen zwischen Unternehmen, Fachleuten und Behörden ermöglicht.\n\nDie Leitlinien sollen praktische Anweisungen geben, wie Partnerschaften für den Informationsaustausch aufgebaut werden können, um Geldwäsche und Terrorismusfinanzierung effektiv zu bekämpfen. Sie richten sich an Unternehmen, Aufsichtsbehörden, Financial Intelligence Units (FIUs) und Datenschutzbehörden. Die Möglichkeit des Informationsaustauschs gemäß Artikel 75 der Geldwäscheverordnung tritt am 10. Juli 2027 in Kraft.\n\nEDPB und AMLA planen, noch in diesem Jahr eine Veranstaltung abzuhalten, um erste Meinungen von Interessengruppen einzuholen. Eine öffentliche Konsultation zu den Entwürfen der Leitlinien ist für das erste Halbjahr 2027 vorgesehen.",
+          "en": "The European Data Protection Board (EDPB) and the Anti-Money Laundering Authority (AMLA) are developing Joint Guidelines on information sharing in the fight against financial crime. The aim is to foster cooperation while ensuring the protection of personal data. This specifically concerns the implementation of Article 75 of the AML Regulation, which allows for the exchange of information between companies, professionals, and public authorities.\n\nThe guidelines will provide practical guidance on how to build partnerships for information sharing to effectively combat money laundering and terrorist financing. They are aimed at companies, supervisors, Financial Intelligence Units (FIUs), and data protection authorities. The information sharing possibility under Article 75 of the AML Regulation will apply from 10 July 2027.\n\nThe EDPB and AMLA plan to hold an event later this year to gather initial views from stakeholders. A public consultation on the draft guidelines is scheduled for the first half of 2027."
+        },
+        "url": "https://www.edpb.europa.eu/news/edpb-and-amla-to-develop-joint-guidelines-on-partnerships-for-information-sharing_en",
+        "imp": "medium"
       }
     ],
     "irrd": [
@@ -319,126 +318,6 @@
         "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
         "imp": "medium",
         "refnum": "ESMA32-753890202-3034"
-      },
-      {
-        "d": "04.03.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Reduzierter Inhalt und standardisiertes Format für EU-Folgeprospekte und EU-Wachstumsemissionsprospekte",
-          "en": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus"
-        },
-        "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Reduzierung des Inhalts und zur Standardisierung des Formats und der Reihenfolge des EU-Folgeprospekts und des EU-Wachstumsemissionsprospekts vorgelegt. Dies zielt darauf ab, die Erstellung von Prospekten zu vereinfachen und die Effizienz für Emittenten zu steigern.\n\nDer Vorschlag ist für Unternehmen relevant, die Kapital über die Ausgabe von Wertpapieren am EU-Markt beschaffen möchten. Eine Standardisierung der Prospekte soll den Zugang zu Kapitalmärkten erleichtern und die Kosten für die Prospekterstellung senken.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow-Verfahren.",
-          "en": "The European Commission has submitted a legislative proposal to reduce the content and standardize the format and sequence of the EU Follow-on Prospectus and the EU Growth Issuance Prospectus. This aims to simplify prospectus preparation and increase efficiency for issuers.\n\nThis proposal is relevant for companies seeking to raise capital through securities issuance in the EU market. Standardizing prospectuses is intended to facilitate access to capital markets and reduce the costs associated with prospectus preparation.\n\nThe proposal is currently in the adoption workflow process."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
-        "imp": "medium",
-        "refnum": "Ares(2024)6122774"
-      }
-    ],
-    "crr3": [
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
-          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
-        },
-        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
-        "s": {
-          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
-          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
-        "imp": "medium"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation zu ITS-Änderungen für Marktrisiko-Benchmarking 2027 (EBA/CP/2026/11)",
-          "en": "Consultation on ITS Amendments for 2027 Market Risk Benchmarking (EBA/CP/2026/11)"
-        },
-        "sl": "consultation-on-amending-its-on-the-benchmarking-of-approaches-for-calculating-o",
-        "s": {
-          "de": "Die EBA konsultiert Änderungen an den Technischen Durchführungsstandards (ITS) für das Benchmarking der Ansätze zur Berechnung der Eigenmittelanforderungen, speziell für die Marktrisiko-Benchmarking-Übung 2027. Die Überarbeitungen berücksichtigen die Fortschritte bei der Umsetzung des Fundamental Review of the Trading Book (FRTB) und passen die Vorlagen und Anweisungen entsprechend an.\n\nDie Änderungen sehen vor, dass das Benchmarking des aktuellen Internen Modellansatzes (IMA) nach einer Pause im Jahr 2026 wieder aufgenommen wird, während das Benchmarking des FRTB Alternative Internal Model Approach (AIMA) aufgrund einer erwarteten Übergangsphase und begrenzter anfänglicher Nutzung verschoben wird. Der Anwendungsbereich der ITS wird erweitert, um auch Institute einzubeziehen, die ausschließlich den Alternativen Standardisierten Ansatz (ASA) anwenden. Zudem werden die Instrumentenportfolios vereinfacht und die Frist für die Übung in die zweite Jahreshälfte verschoben, um ASA-Banken mehr Vorbereitungszeit zu geben. Vorlagen für Kreditrisiko und IFRS 9 wurden entfernt, um die Marktrisiko-Anhänge neu zu strukturieren.\n\nDie Konsultation läuft bis zum 3. September 2026. Die EBA bittet um Kommentare zu allen Vorschlägen, insbesondere zu den spezifischen Fragen in Abschnitt 5.2 des Konsultationspapiers. Die technischen Standards treten 20 Tage nach Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
-          "en": "The EBA is consulting on amendments to the Implementing Technical Standards (ITS) for the benchmarking of approaches for calculating own funds requirements, specifically for the 2027 market risk benchmarking exercise. The revisions reflect progress in implementing the Fundamental Review of the Trading Book (FRTB) and adjust templates and instructions accordingly.\n\nThe changes stipulate that benchmarking of the current Internal Model Approach (IMA) will resume after a 2026 pause, while benchmarking of the FRTB Alternative Internal Model Approach (AIMA) will be postponed due to an expected transitional period and limited initial uptake. The scope of the ITS is expanded to include institutions applying only the Alternative Standardised Approach (ASA). Additionally, instrument portfolios are simplified, and the exercise timeline is delayed to the second half of the year to allow ASA banks more preparation time. Templates for credit risk and IFRS 9 have been removed to restructure the market risk annexes.\n\nThe consultation runs until 3 September 2026. The EBA invites comments on all proposals, particularly on the specific questions in section 5.2 of the consultation paper. The technical standards will apply 20 days after publication in the Official Journal of the European Union."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/events/consultation-amending-its-benchmarking-approaches-calculating-own-funds-requirements-2027-market",
-        "imp": "medium"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Risikogewichtung von IPRE-Engagements, die durch viele Immobilien besichert sind",
-          "en": "Risk weights assignment to IPRE exposures secured by many properties"
-        },
-        "sl": "risk-weights-assignment-to-ipre-exposures-secured-by-many-properties",
-        "s": {
-          "de": "Die EBA hat eine Anfrage zur Risikogewichtung von Engagements abgelehnt, die durch mehrere Immobilien besichert sind, insbesondere wenn diese sowohl Wohn- als auch Gewerbeimmobilien umfassen und unterschiedliche IPRE-Status (Income Producing Real Estate) aufweisen.\n\nDie Anfrage bezog sich auf die Auslegung der Artikel 125 und 126 Absatz 2 der CRR, die Regeln für die Risikogewichtung von Engagements mit Wohn- bzw. Gewerbeimmobilien als Sicherheit festlegen. Die EBA lehnte die Beantwortung ab, da die Frage eine mögliche Änderung des Rechtsrahmens erfordern würde, was außerhalb des Geltungsbereichs des Q&A-Prozesses liegt.",
-          "en": "The EBA has rejected a query regarding the risk weighting of exposures secured by multiple properties, particularly when these include both residential and commercial properties with differing IPRE (Income Producing Real Estate) statuses.\n\nThe query concerned the interpretation of Articles 125 and 126 paragraph 2 of the CRR, which set out rules for risk weighting exposures secured by residential and commercial properties, respectively. The EBA declined to answer, stating that the question would require a potential modification of the legal framework, which is outside the scope of the Q&A process."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7923",
-        "imp": "low",
-        "refnum": "2026_7923"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ablehnung einer ETV-Berechnungsanfrage für Hypotheken mit Mehrfachbesicherung (CRR Art. 124 Abs. 6)",
-          "en": "Rejection of ETV Calculation Query for Mortgages Securing Multiple Exposures (CRR Art. 124 para. 6)"
-        },
-        "sl": "clarification-of-etv-calculation-for-mortgages-securing-more-than-one-exposure",
-        "s": {
-          "de": "Die EBA hat eine Anfrage zur Berechnung des Exposure-to-Value (ETV) für Hypotheken abgelehnt, die mehr als eine Risikoposition absichern. Die Anfrage bezog sich auf Artikel 124 Absatz 6 der CRR, der die ETV-Berechnung für IPRE-Risikopositionen (Income-Producing Real Estate) regelt. Insbesondere ging es um die Frage, wie der Nenner der ETV-Formel zu bestimmen ist, wenn mehrere Risikopositionen durch dieselbe Immobilie besichert sind und zusätzlich weitere Sicherheiten bestehen.\n\nDie Anfrage stellte ein komplexes Szenario dar, bei dem zwei Risikopositionen (A und B) durch eine gewerbliche Immobilie (Y) und Risikoposition A zusätzlich durch eine Wohnimmobilie (X) besichert sind. Es wurde gefragt, ob die Werte der Immobilien im Nenner der ETV-Berechnung auf den Wert der Hypothekenregistrierung begrenzt werden sollten und wie die Marktwerte der verschiedenen Immobilien in die Berechnung einfließen sollen, insbesondere wenn eine der Sicherheiten keine IPRE-Immobilie ist.\n\nDie EBA lehnte die Beantwortung ab, da die Frage über den Rahmen des Q&A-Prozesses hinausgeht. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, die Korrektheit des Rechtsrahmens in Frage zu stellen, eine Änderung des Rechtsrahmens zu beantragen oder eine solche Änderung zur Beantwortung der Frage zu erfordern.",
-          "en": "The EBA has rejected a query regarding the calculation of Exposure-to-Value (ETV) for mortgages securing more than one exposure. The query related to Article 124 paragraph 6 of the CRR, which governs ETV calculation for Income-Producing Real Estate (IPRE) exposures. Specifically, it concerned how to determine the denominator of the ETV formula when multiple exposures are secured by the same immovable property and additional collateral exists.\n\nThe query presented a complex scenario where two exposures (A and B) are secured by a commercial property (Y), and exposure A is additionally secured by a residential property (X). It asked whether the property values in the ETV denominator should be capped at the mortgage registration value and how the market values of different properties should be included in the calculation, especially if one of the collaterals is not an IPRE property.\n\nThe EBA rejected the query, stating that the issue raised is beyond the remit of the Q&A process. The EBA's rationale was that the Q&A tool is not intended to question the correctness of the legal framework, seek a modification of the legal framework, or require such a modification to address the question."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7922",
-        "imp": "low",
-        "refnum": "2026_7922"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ablehnung einer Frage zur Definition des „Hauptgeschäfts“ (CRR 2026_7921)",
-          "en": "Rejection of a question on the definition of “main business” (CRR 2026_7921)"
-        },
-        "sl": "definition-of-main-business-under-crr",
-        "s": {
-          "de": "Die EBA hat eine Frage zur Auslegung des Begriffs „Hauptgeschäft“ gemäß Artikel 411 Absatz 1 der CRR in Verbindung mit Anhang I der Richtlinie 2013/36/EU und Artikel 3 Absatz 9 der Delegierten Verordnung (EU) 2015/61 abgelehnt.\n\nDie Anfrage bezog sich darauf, ob eine Einheit, die keine kommerziellen Aktivitäten mit Dritten ausübt und deren Geschäftstätigkeit ausschließlich der Gruppe dient, als „Hauptgeschäft“ im Sinne der CRR angesehen werden kann. Solche „Treasury-Center“ zentralisieren und optimieren die internen Finanzen einer Gruppe, ohne als lizenzierte Kreditinstitute oder Wertpapierfirmen zu agieren oder Dienstleistungen für Dritte anzubieten. Die EBA lehnte die Frage ab, da sie die Korrektheit des Rechtsrahmens in Frage stellt und nicht über den Q&A-Prozess beantwortet werden kann.\n\nDie Ablehnung erfolgte am 06.07.2026.",
-          "en": "The EBA has rejected a question regarding the interpretation of the concept of “main business” under Article 411(1) of the CRR, read in conjunction with Annex I of Directive 2013/36/EU and Article 3(9) of Commission Delegated Regulation (EU) 2015/61.\n\nThe inquiry concerned whether an entity that does not engage in commercial activities with third parties and whose operations exclusively serve the group can be considered to perform “main business” within the meaning of the CRR. Such “treasury centers” centralize and optimize a group's internal finances without acting as licensed credit institutions or investment firms or offering services to third parties. The EBA rejected the question because it challenges the correctness of the legal framework and cannot be addressed through the Q&A process.\n\nThe rejection date was 06.07.2026."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7921",
-        "imp": "low",
-        "refnum": "2026_7921"
       }
     ],
     "mar": [
@@ -480,108 +359,6 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
         "imp": "high"
-      }
-    ],
-    "bmr": [
-      {
-        "d": "12.02.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Informationspflichten bei kritischen Referenzwerten in Immobilienkrediten (C-471/24)",
-          "en": "ECJ judgment on information obligations for critical benchmarks in real estate loans (C-471/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-471-24-pko-bp-critical-benchmark",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Informationspflicht einer Bank bei Immobilienkrediten mit variablem Zinssatz, der auf einem regulierten Referenzindex wie dem WIBOR basiert, nicht die Offenlegung der Methodik dieses Indexes gegenüber dem Verbraucher umfasst. Eine Vertragsklausel, die einen solchen Referenzindex enthält, führt grundsätzlich nicht allein zu einem erheblichen Ungleichgewicht zwischen den Parteien zum Nachteil des Verbrauchers.\n\nDiese Entscheidung ist relevant für Kreditinstitute, die Immobilienkredite mit variablen Zinssätzen anbieten, die an regulierte Referenzindizes gekoppelt sind. Sie stellt klar, dass die Banken nicht verpflichtet sind, detaillierte Informationen über die Berechnungsmethodik des Referenzindexes zu liefern, da diese Pflicht dem Administrator des Indexes obliegt. Die Bank muss lediglich auf die Veröffentlichung der Methodik durch den Administrator verweisen und darf keine irreführenden Informationen bereitstellen.\n\nDas Urteil des EuGH bindet das vorlegende polnische Gericht und dient als Richtschnur für andere nationale Gerichte bei vergleichbaren Sachverhalten. Es präzisiert die Anwendung der Richtlinie über missbräuchliche Klauseln in Verbraucherverträgen im Kontext von Referenzindizes, die einem umfassenden Rechtsrahmen der Union unterliegen.",
-          "en": "The European Court of Justice (ECJ) has ruled that a bank's obligation to provide information for real estate loans with a variable interest rate based on a regulated benchmark index, such as WIBOR, does not include disclosing the methodology of that index to the consumer. A contractual clause containing such a benchmark index does not, in principle, by itself lead to a significant imbalance between the parties to the detriment of the consumer.\n\nThis decision is relevant for credit institutions offering real estate loans with variable interest rates linked to regulated benchmark indices. It clarifies that banks are not obliged to provide detailed information on the calculation methodology of the benchmark index, as this duty lies with the index administrator. The bank merely needs to refer to the administrator's publication of the methodology and must not provide misleading information.\n\nThe ECJ's judgment is binding on the referring Polish court and serves as guidance for other national courts in similar cases. It clarifies the application of the Unfair Terms in Consumer Contracts Directive in the context of benchmark indices subject to a comprehensive Union legal framework."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260014de.pdf",
-        "imp": "high",
-        "refnum": "C-471/24"
-      },
-      {
-        "d": "28.03.2025",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung des Anwendungsbereichs und Drittstaatenregimes der Benchmark-Verordnung (BMR)",
-          "en": "Review of the scope and third-country regime of the Benchmark Regulation (BMR)"
-        },
-        "sl": "review-of-the-scope-and-third-country-regime-of-the-benchmark-regulation",
-        "s": {
-          "de": "Die Europäische Kommission prüft den Anwendungsbereich und das Drittstaatenregime der Benchmark-Verordnung (BMR). Dies ist Teil einer umfassenderen Bewertung der BMR, um deren Wirksamkeit und Angemessenheit zu beurteilen. Ziel ist es, die Auswirkungen der Verordnung auf die Finanzmärkte und ihre Fähigkeit, die Stabilität und Integrität von Benchmarks zu gewährleisten, zu analysieren.\n\nDie Überprüfung ist relevant für Finanzinstitute, die Benchmarks nutzen oder bereitstellen, insbesondere solche mit Bezug zu Drittstaaten. Sie könnte zu Anpassungen der Anforderungen für die Nutzung von Benchmarks aus Nicht-EU-Ländern führen und die Compliance-Anforderungen für Marktteilnehmer beeinflussen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet. Ein konkretes Datum für die Veröffentlichung oder Fristen für Stellungnahmen sind dem vorliegenden Text nicht zu entnehmen.",
-          "en": "The European Commission is reviewing the scope and third-country regime of the Benchmark Regulation (BMR). This is part of a broader evaluation of the BMR to assess its effectiveness and appropriateness. The aim is to analyze the regulation's impact on financial markets and its ability to ensure the stability and integrity of benchmarks.\n\nThis review is relevant for financial institutions that use or provide benchmarks, especially those with connections to third countries. It could lead to adjustments in the requirements for using benchmarks from non-EU countries and affect compliance obligations for market participants.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions. Specific publication dates or deadlines for comments are not available in the provided text."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13762",
-        "imp": "medium",
-        "refnum": "Ares(2023)1488307"
-      },
-      {
-        "d": "10.12.2021",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "ESMA-Bußgelder für Administratoren kritischer Benchmarks und anerkannte BMR-Administratoren aus Drittländern",
-          "en": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators"
-        },
-        "sl": "esma-fines-or-penalty-payments-for-administrators-of-critical-benchmarks-and-rec",
-        "s": {
-          "de": "Die Europäische Kommission plant die Einführung von Geldbußen und Zwangsgeldern für Administratoren kritischer Benchmarks und anerkannte Drittland-Administratoren von Benchmarks gemäß der Benchmark-Verordnung (BMR).\n\nDiese Maßnahme betrifft Administratoren, die für die Bereitstellung kritischer Benchmarks zuständig sind oder als Drittland-Administratoren in der EU anerkannt wurden. Die Einführung von Sanktionen soll die Einhaltung der BMR-Vorschriften sicherstellen und die Integrität der Benchmarks stärken.",
-          "en": "The European Commission plans to introduce fines and penalty payments for administrators of critical benchmarks and recognized third-country benchmark administrators under the Benchmark Regulation (BMR).\n\nThis measure affects administrators responsible for providing critical benchmarks or those recognized as third-country administrators in the EU. The introduction of sanctions aims to ensure compliance with BMR provisions and strengthen the integrity of benchmarks."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13296",
-        "imp": "medium",
-        "refnum": "Ares(2021)7521504"
-      },
-      {
-        "d": "11.08.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung der Benchmark-Verordnung",
-          "en": "Review of the Benchmark Regulation"
-        },
-        "sl": "review-of-the-benchmark-regulation",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überprüfung der Benchmark-Verordnung (BMR) eingeleitet. Ziel ist es, die Wirksamkeit der Verordnung zu bewerten und mögliche Anpassungen zu identifizieren, um ihre Ziele besser zu erreichen.\n\nDiese Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie zu Änderungen in den Anforderungen an Governance, Kontrolle und Transparenz von Benchmarks führen könnte. Die Ergebnisse der Überprüfung könnten sich auf die Auswahl und Nutzung von Referenzwerten auswirken.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet.",
-          "en": "The European Commission has initiated a review of the Benchmark Regulation (BMR). The aim is to assess the effectiveness of the regulation and identify potential adjustments to better achieve its objectives.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could lead to changes in the requirements for governance, control, and transparency of benchmarks. The outcomes of the review could impact the selection and use of reference rates.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12268",
-        "imp": "medium",
-        "refnum": "Ares(2020)1637928"
-      },
-      {
-        "d": "28.04.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Delegierter Rechtsakt zur Überprüfung der Berechnungsmethode für kritische Benchmarks (Ares(2020)2203176)",
-          "en": "Delegated Act on the Review of Calculation Method for Critical Benchmarks (Ares(2020)2203176)"
-        },
-        "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
-        "s": {
-          "de": "Die Europäische Kommission plant eine Überprüfung der Berechnungsmethode zur Bestimmung der Schwellenwerte für kritische Benchmarks. Dies erfolgt im Rahmen eines Delegierten Rechtsakts.\n\nDie Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie die Kriterien für die Einstufung einer Benchmark als kritisch beeinflussen könnte. Dies hat Auswirkungen auf die regulatorischen Anforderungen und die Beaufsichtigung solcher Benchmarks.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überprüfung der Berechnungsmethode noch in der Planungsphase ist.",
-          "en": "The European Commission plans to review the calculation method used to determine the thresholds for critical benchmarks. This will be done within the framework of a Delegated Act.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could affect the criteria for classifying a benchmark as critical. This has implications for the regulatory requirements and supervision of such benchmarks.\n\nCurrently, the procedure status is \"Init Planned,\" meaning the initiative to review the calculation method is still in the planning phase."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12347",
-        "imp": "low",
-        "refnum": "Ares(2020)2203176"
       }
     ],
     "itsrep": [
@@ -645,6 +422,25 @@
         "refnum": "2026_7904"
       },
       {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
+          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
+        },
+        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
+        "s": {
+          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
+          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+        "imp": "medium"
+      },
+      {
         "d": "24.07.2026",
         "t": {
           "de": "ITS",
@@ -682,26 +478,6 @@
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
         "imp": "low",
         "refnum": "2026_7843"
-      },
-      {
-        "d": "13.05.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zu Validierungsregel v90317_m (C 16.02) ab",
-          "en": "EBA rejects question on validation rule v90317_m (C 16.02)"
-        },
-        "sl": "incoherent-formulae-of-the-validation-rule-v90317-m",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der Validierungsregel v90317_m für die Spalte 0070 / Zeile 0340 der Meldung C 16.02 abgelehnt. Die Anfrage betraf die Klarstellung der Logik dieser Kontrollformel, da sie nicht mit der Definition des Indikators übereinstimme.\n\nDie betroffene Spalte 0070 / Zeile 0340 des Templates C_16.02 ist in Artikel 314 der Verordnung (EU) 2024/1623 definiert und betrifft die Berechnung der Gebühren- und Provisionsaufwandskomponente (FE). Diese Berechnung stellt einen jährlichen Durchschnitt der in den letzten drei Geschäftsjahren gezahlten Gebühren für Beratung und Dienstleistungen dar, einschließlich Auslagerungsgebühren für Finanzdienstleistungen, jedoch ohne Auslagerungsgebühren für nicht-finanzielle Dienstleistungen. Die EBA lehnte die Frage ab, da das Problem bereits bekannt ist und bei einem bevorstehenden vierteljährlichen Update der Validierungsregeln berücksichtigt wird.\n\nDie Ablehnung der Frage deutet darauf hin, dass Institute, die diese Validierungsregel anwenden, in naher Zukunft mit einer Anpassung rechnen können. Es ist ratsam, die kommenden Updates der Validierungsregeln zu beobachten, um die korrekte Berechnung und Meldung sicherzustellen.",
-          "en": "The EBA has rejected a question regarding validation rule v90317_m for column 0070 / row 0340 of report C 16.02. The inquiry concerned a clarification of the logic of this control formula, as it was deemed inconsistent with the indicator's definition.\n\nThe affected column 0070 / row 0340 of template C_16.02 is defined in Article 314 of Regulation (EU) 2024/1623 and relates to the calculation of the fee and commission expense component (FE). This calculation represents an annual average of fees paid for advice and services over the last three financial years, including outsourcing fees for financial services, but excluding outsourcing fees for non-financial services. The EBA rejected the question because the issue has already been identified and will be addressed in an upcoming quarterly update of the validation rules.\n\nThe rejection of the question indicates that institutions applying this validation rule can expect an adjustment in the near future. It is advisable to monitor upcoming updates to the validation rules to ensure correct calculation and reporting."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7862",
-        "imp": "low",
-        "refnum": "2026_7862"
       }
     ],
     "absfinag": [
@@ -780,6 +556,124 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_leitfaden_absfinag.html",
         "imp": "medium"
+      }
+    ],
+    "crr3": [
+      {
+        "d": "31.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Informationen zur Datenverarbeitung bei Bestellungen von Verwaltern des Refinanzierungsregisters (KWG)",
+          "en": "BaFin Information on Data Processing for Appointments of Refinancing Register Administrators (KWG)"
+        },
+        "sl": "bestellungen-von-verwaltern-des-refinanzierungsregisters-und-stellvertretern-gem",
+        "s": {
+          "de": "Die BaFin informiert über die Verarbeitung personenbezogener Daten im Rahmen der Bestellung von Verwaltern und Stellvertretern des Refinanzierungsregisters gemäß §§ 22e ff. KWG. Die Datenverarbeitung erfolgt zur Prüfung der Eignung der betreffenden Person für diese Funktion.\n\nBetroffen sind Personen, die als Verwalter oder Stellvertreter des Refinanzierungsregisters vorgeschlagen oder beantragt werden. Die BaFin erhebt und verarbeitet hierfür Namen, Geburtsdatum, Adress- und Kontaktdaten sowie Informationen zur persönlichen Zuverlässigkeit, fachlichen Eignung und zu weiteren Tätigkeiten. Die Daten werden innerhalb der BaFin von zuständigen Mitarbeitern verarbeitet und nicht an Drittländer oder internationale Organisationen übermittelt.\n\nDie Speicherung der Daten erfolgt für zehn Jahre nach Ausscheiden aus der aufsichtsrechtlich relevanten Funktion oder nach erfolgtem Antrag/Vorschlag bei unterbliebener Funktionsübernahme. Betroffene Personen haben die Rechte gemäß DSGVO, einschließlich Auskunft, Berichtigung, Löschung und Widerspruch. Eine Nichtbereitstellung der notwendigen Daten führt dazu, dass der Antrag nicht bearbeitet werden kann.",
+          "en": "The BaFin provides information on the processing of personal data in connection with the appointment of administrators and deputies of the refinancing register in accordance with §§ 22e et seq. KWG. Data processing is carried out to assess the suitability of the person concerned for this function.\n\nThis affects individuals proposed or applying to be administrators or deputies of the refinancing register. For this purpose, BaFin collects and processes names, date of birth, address and contact details, as well as information on personal reliability, professional suitability, and other activities. The data is processed internally by BaFin's responsible employees and is not transferred to third countries or international organizations.\n\nData is stored for ten years after leaving the supervisory-relevant function or after an application/proposal has been made if the function is not taken up. Data subjects have rights under the GDPR, including access, rectification, erasure, and objection. Failure to provide the necessary data will result in the application not being processed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Anlage/Datenschutz/anlage_datenschutz_bestellungen_Refinanzierungsregisterverwalter_Kreditwesengesetz_ba.html",
+        "imp": "low"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
+          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
+        },
+        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
+        "s": {
+          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
+          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
+        "imp": "low"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
+          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
+        },
+        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
+        "s": {
+          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
+          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
+        "imp": "medium"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation zu ITS-Änderungen für Marktrisiko-Benchmarking 2027 (EBA/CP/2026/11)",
+          "en": "Consultation on ITS Amendments for 2027 Market Risk Benchmarking (EBA/CP/2026/11)"
+        },
+        "sl": "consultation-on-amending-its-on-the-benchmarking-of-approaches-for-calculating-o",
+        "s": {
+          "de": "Die EBA konsultiert Änderungen an den Technischen Durchführungsstandards (ITS) für das Benchmarking der Ansätze zur Berechnung der Eigenmittelanforderungen, speziell für die Marktrisiko-Benchmarking-Übung 2027. Die Überarbeitungen berücksichtigen die Fortschritte bei der Umsetzung des Fundamental Review of the Trading Book (FRTB) und passen die Vorlagen und Anweisungen entsprechend an.\n\nDie Änderungen sehen vor, dass das Benchmarking des aktuellen Internen Modellansatzes (IMA) nach einer Pause im Jahr 2026 wieder aufgenommen wird, während das Benchmarking des FRTB Alternative Internal Model Approach (AIMA) aufgrund einer erwarteten Übergangsphase und begrenzter anfänglicher Nutzung verschoben wird. Der Anwendungsbereich der ITS wird erweitert, um auch Institute einzubeziehen, die ausschließlich den Alternativen Standardisierten Ansatz (ASA) anwenden. Zudem werden die Instrumentenportfolios vereinfacht und die Frist für die Übung in die zweite Jahreshälfte verschoben, um ASA-Banken mehr Vorbereitungszeit zu geben. Vorlagen für Kreditrisiko und IFRS 9 wurden entfernt, um die Marktrisiko-Anhänge neu zu strukturieren.\n\nDie Konsultation läuft bis zum 3. September 2026. Die EBA bittet um Kommentare zu allen Vorschlägen, insbesondere zu den spezifischen Fragen in Abschnitt 5.2 des Konsultationspapiers. Die technischen Standards treten 20 Tage nach Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
+          "en": "The EBA is consulting on amendments to the Implementing Technical Standards (ITS) for the benchmarking of approaches for calculating own funds requirements, specifically for the 2027 market risk benchmarking exercise. The revisions reflect progress in implementing the Fundamental Review of the Trading Book (FRTB) and adjust templates and instructions accordingly.\n\nThe changes stipulate that benchmarking of the current Internal Model Approach (IMA) will resume after a 2026 pause, while benchmarking of the FRTB Alternative Internal Model Approach (AIMA) will be postponed due to an expected transitional period and limited initial uptake. The scope of the ITS is expanded to include institutions applying only the Alternative Standardised Approach (ASA). Additionally, instrument portfolios are simplified, and the exercise timeline is delayed to the second half of the year to allow ASA banks more preparation time. Templates for credit risk and IFRS 9 have been removed to restructure the market risk annexes.\n\nThe consultation runs until 3 September 2026. The EBA invites comments on all proposals, particularly on the specific questions in section 5.2 of the consultation paper. The technical standards will apply 20 days after publication in the Official Journal of the European Union."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/events/consultation-amending-its-benchmarking-approaches-calculating-own-funds-requirements-2027-market",
+        "imp": "medium"
+      },
+      {
+        "d": "06.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Risikogewichtung von IPRE-Engagements, die durch viele Immobilien besichert sind",
+          "en": "Risk weights assignment to IPRE exposures secured by many properties"
+        },
+        "sl": "risk-weights-assignment-to-ipre-exposures-secured-by-many-properties",
+        "s": {
+          "de": "Die EBA hat eine Anfrage zur Risikogewichtung von Engagements abgelehnt, die durch mehrere Immobilien besichert sind, insbesondere wenn diese sowohl Wohn- als auch Gewerbeimmobilien umfassen und unterschiedliche IPRE-Status (Income Producing Real Estate) aufweisen.\n\nDie Anfrage bezog sich auf die Auslegung der Artikel 125 und 126 Absatz 2 der CRR, die Regeln für die Risikogewichtung von Engagements mit Wohn- bzw. Gewerbeimmobilien als Sicherheit festlegen. Die EBA lehnte die Beantwortung ab, da die Frage eine mögliche Änderung des Rechtsrahmens erfordern würde, was außerhalb des Geltungsbereichs des Q&A-Prozesses liegt.",
+          "en": "The EBA has rejected a query regarding the risk weighting of exposures secured by multiple properties, particularly when these include both residential and commercial properties with differing IPRE (Income Producing Real Estate) statuses.\n\nThe query concerned the interpretation of Articles 125 and 126 paragraph 2 of the CRR, which set out rules for risk weighting exposures secured by residential and commercial properties, respectively. The EBA declined to answer, stating that the question would require a potential modification of the legal framework, which is outside the scope of the Q&A process."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7923",
+        "imp": "low",
+        "refnum": "2026_7923"
+      },
+      {
+        "d": "06.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Ablehnung einer ETV-Berechnungsanfrage für Hypotheken mit Mehrfachbesicherung (CRR Art. 124 Abs. 6)",
+          "en": "Rejection of ETV Calculation Query for Mortgages Securing Multiple Exposures (CRR Art. 124 para. 6)"
+        },
+        "sl": "clarification-of-etv-calculation-for-mortgages-securing-more-than-one-exposure",
+        "s": {
+          "de": "Die EBA hat eine Anfrage zur Berechnung des Exposure-to-Value (ETV) für Hypotheken abgelehnt, die mehr als eine Risikoposition absichern. Die Anfrage bezog sich auf Artikel 124 Absatz 6 der CRR, der die ETV-Berechnung für IPRE-Risikopositionen (Income-Producing Real Estate) regelt. Insbesondere ging es um die Frage, wie der Nenner der ETV-Formel zu bestimmen ist, wenn mehrere Risikopositionen durch dieselbe Immobilie besichert sind und zusätzlich weitere Sicherheiten bestehen.\n\nDie Anfrage stellte ein komplexes Szenario dar, bei dem zwei Risikopositionen (A und B) durch eine gewerbliche Immobilie (Y) und Risikoposition A zusätzlich durch eine Wohnimmobilie (X) besichert sind. Es wurde gefragt, ob die Werte der Immobilien im Nenner der ETV-Berechnung auf den Wert der Hypothekenregistrierung begrenzt werden sollten und wie die Marktwerte der verschiedenen Immobilien in die Berechnung einfließen sollen, insbesondere wenn eine der Sicherheiten keine IPRE-Immobilie ist.\n\nDie EBA lehnte die Beantwortung ab, da die Frage über den Rahmen des Q&A-Prozesses hinausgeht. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, die Korrektheit des Rechtsrahmens in Frage zu stellen, eine Änderung des Rechtsrahmens zu beantragen oder eine solche Änderung zur Beantwortung der Frage zu erfordern.",
+          "en": "The EBA has rejected a query regarding the calculation of Exposure-to-Value (ETV) for mortgages securing more than one exposure. The query related to Article 124 paragraph 6 of the CRR, which governs ETV calculation for Income-Producing Real Estate (IPRE) exposures. Specifically, it concerned how to determine the denominator of the ETV formula when multiple exposures are secured by the same immovable property and additional collateral exists.\n\nThe query presented a complex scenario where two exposures (A and B) are secured by a commercial property (Y), and exposure A is additionally secured by a residential property (X). It asked whether the property values in the ETV denominator should be capped at the mortgage registration value and how the market values of different properties should be included in the calculation, especially if one of the collaterals is not an IPRE property.\n\nThe EBA rejected the query, stating that the issue raised is beyond the remit of the Q&A process. The EBA's rationale was that the Q&A tool is not intended to question the correctness of the legal framework, seek a modification of the legal framework, or require such a modification to address the question."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7922",
+        "imp": "low",
+        "refnum": "2026_7922"
       }
     ],
     "dora": [
@@ -1361,25 +1255,6 @@
         "imp": "medium"
       },
       {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Norddeutsche Landesbank Girozentrale (Nord/LB): Bafin ordnet Mängelbeseitigung an",
-          "en": "Norddeutsche Landesbank Girozentrale (Nord/LB): Bafin ordnet Mängelbeseitigung an"
-        },
-        "sl": "norddeutsche-landesbank-girozentrale-nord-lb-bafin-ordnet-maengelbeseitigung-an",
-        "s": {
-          "de": "Die BaFin hat bei der Norddeutschen Landesbank Girozentrale (Nord/LB) gewichtige Mängel in der Prävention von Geldwäsche und Terrorismusfinanzierung festgestellt. Diese betreffen insbesondere die Aktualisierung von Kundendaten und verstoßen gegen Vorgaben des Geldwäschegesetzes (GwG).\n\nDie BaFin hat die Nord/LB angewiesen, angemessene Maßnahmen zur Beseitigung dieser Mängel zu ergreifen. Dazu gehört die Vorlage und Umsetzung eines Konzepts zur Kundendatenaktualisierung sowie die vollständige Aktualisierung aller nicht aktualisierten Kundendaten gemäß den gesetzlichen Vorgaben. Die Anordnung basiert auf § 51 Absatz 2 Satz 1 GwG und § 44 Absatz 1 Kreditwesengesetz (KWG).\n\nDie Anordnung der BaFin ist seit dem 14. Juni 2026 bestandskräftig. Die Veröffentlichung erfolgt gemäß § 57 Absatz 1 GwG.",
-          "en": "The BaFin has identified significant deficiencies at Norddeutsche Landesbank Girozentrale (Nord/LB) in the prevention of money laundering and terrorist financing. These deficiencies specifically concern the updating of customer data and violate the provisions of the Money Laundering Act (GwG).\n\nThe BaFin has instructed Nord/LB to take appropriate measures to rectify these shortcomings. This includes submitting and implementing a concept for customer data updating, as well as fully updating all un-updated customer data in accordance with legal requirements. The order is based on § 51 paragraph 2 sentence 1 GwG and § 44 paragraph 1 Kreditwesengesetz (KWG).\n\nThe BaFin's order has been legally binding since June 14, 2026. The publication is made in accordance with § 57 paragraph 1 GwG."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_08_03_norddeutschen_landesbank_girozentrale.html?cms_expanded=true",
-        "imp": "high"
-      },
-      {
         "d": "28.07.2026",
         "t": {
           "de": "Meldung",
@@ -1426,23 +1301,44 @@
         "imp": "medium"
       },
       {
-        "d": "20.07.2026",
+        "d": "17.07.2026",
         "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
+          "en": "Methodology for calculating and collecting fees by the Anti-Money Laundering Authority (AMLA)"
+        },
+        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Methodik zur Berechnung und Erhebung von Gebühren durch die Anti-Geldwäsche-Behörde (AMLA). Dieses Vorhaben befindet sich noch in der Planungsphase.\n\nDie geplante Methodik wird für alle Finanzinstitute relevant sein, die unter die Aufsicht der AMLA fallen. Sie wird festlegen, wie die Gebühren für die Aufsichts- und Regulierungsaktivitäten der AMLA berechnet und eingezogen werden.\n\nDerzeit ist der Verfahrensstand \"Init Planned\", was bedeutet, dass die Initiative noch in einem sehr frühen Stadium ist und weitere Details zu Fristen und Konsultationen noch nicht verfügbar sind.",
+          "en": "The European Commission is planning a methodology for the calculation and collection of fees by the Anti-Money Laundering Authority (AMLA). This initiative is currently in the planning phase.\n\nThis planned methodology will be relevant for all financial institutions falling under AMLA's supervision. It will define how fees for AMLA's supervisory and regulatory activities are calculated and collected.\n\nThe current status is \"Init Planned,\" meaning the initiative is in a very early stage, and further details on deadlines and consultations are not yet available."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
+        "imp": "medium",
+        "refnum": "Ares(2026)6942470"
+      },
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
         },
         "src": "bafin.de",
         "ti": {
-          "de": "Landesbank Hessen-Thüringen Girozentrale (Helaba): Bafin ordnet Mängelbeseitigung an",
-          "en": "Landesbank Hessen-Thüringen Girozentrale (Helaba): Bafin ordnet Mängelbeseitigung an"
+          "de": "Rundschreiben zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung (07/2026 GW)",
+          "en": "Circular on High-Risk Third Countries in Anti-Money Laundering and Counter-Terrorist Financing (07/2026 GW)"
         },
-        "sl": "landesbank-hessen-thueringen-girozentrale-helaba-bafin-ordnet-maengelbeseitigung",
+        "sl": "rundschreiben-07-2026-gw",
         "s": {
-          "de": "Die BaFin hat der Landesbank Hessen-Thüringen Girozentrale (Helaba) die Beseitigung von Mängeln in der Geldwäsche- und Terrorismusfinanzierungsprävention angeordnet. Die festgestellten Mängel betreffen die Kundensorgfaltspflichten, insbesondere die Identifizierung, Überprüfung und Aktualisierung von Kundendaten, sowie die Risikoanalyse und das Transaktionsmonitoring.\n\nDie Helaba verstieß damit gegen Vorgaben des Geldwäschegesetzes (GwG) und des Kreditwesengesetzes (KWG). Die Anordnung verpflichtet das Institut, angemessene und geeignete Maßnahmen zu ergreifen, um diese Mängel zu beheben. Dies ist für alle Finanzinstitute relevant, da die Einhaltung der Kundensorgfaltspflichten und die Implementierung robuster Systeme zur Geldwäscheprävention essenziell sind.\n\nDie Anordnungen der BaFin sind seit dem 20.06.2026 bestandskräftig und basieren auf § 51 Absatz 2 Satz 1 GwG und § 44 Absatz 1 KWG. Die Veröffentlichung erfolgt gemäß § 57 Absatz 1 GwG.",
-          "en": "The BaFin has ordered Landesbank Hessen-Thüringen Girozentrale (Helaba) to rectify deficiencies in its anti-money laundering (AML) and counter-terrorist financing (CTF) prevention measures. The identified deficiencies relate to customer due diligence obligations, specifically the identification, verification, and updating of customer data, as well as risk analysis and transaction monitoring.\n\nHelaba thereby violated provisions of the German Anti-Money Laundering Act (GwG) and the Banking Act (KWG). The order obliges the institution to take appropriate and suitable measures to remedy these deficiencies. This is relevant for all financial institutions, as compliance with customer due diligence obligations and the implementation of robust AML prevention systems are essential.\n\nBaFin's orders have been legally binding since 20.06.2026 and are based on Section 51 (2) sentence 1 GwG and Section 44 (1) KWG. The publication is made in accordance with Section 57 (1) GwG."
+          "de": "Dieses Rundschreiben der BaFin informiert alle nach dem Geldwäschegesetz (GwG) Verpflichteten über Drittstaaten mit strategischen Mängeln in ihren Systemen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (Hochrisiko-Staaten).\n\nEs konkretisiert die Maßnahmen, die in Bezug auf Nordkorea, Iran und Myanmar zu ergreifen sind, basierend auf Erklärungen der FATF. Für Nordkorea und Iran werden spezifische Gegenmaßnahmen gefordert, während für Myanmar verstärkte Sorgfaltspflichten gelten. Zudem werden die aktuellen FATF-Listen der Länder unter verstärkter Beobachtung genannt, wobei Bosnien und Herzegowina sowie Irak neu hinzugekommen sind und Algerien sowie Namibia gestrichen wurden.\n\nFinanzinstitute und andere Verpflichtete nach dem GwG müssen die genannten Maßnahmen und verstärkten Sorgfaltspflichten umsetzen, um den Risiken aus diesen Ländern zu begegnen. Dies beinhaltet unter anderem das Beenden von Korrespondenzbeziehungen, das Schließen von Tochtergesellschaften und die Beschränkung von Geschäftsbeziehungen.",
+          "en": "This BaFin circular informs all entities obligated under the Money Laundering Act (GwG) about third countries with strategic deficiencies in their anti-money laundering and counter-terrorist financing systems (high-risk countries).\n\nIt specifies the measures to be taken in relation to North Korea, Iran, and Myanmar, based on FATF statements. Specific countermeasures are required for North Korea and Iran, while enhanced due diligence obligations apply to Myanmar. Furthermore, the current FATF lists of countries under increased monitoring are provided, with Bosnia and Herzegovina and Iraq newly added, and Algeria and Namibia removed.\n\nFinancial institutions and other obligated entities under the GwG must implement the stated measures and enhanced due diligence obligations to address the risks posed by these countries. This includes, among other things, terminating correspondent relationships, closing subsidiaries, and restricting business relationships."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_07_20_helaba.html?cms_expanded=true",
-        "imp": "high"
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
+        "imp": "high",
+        "refnum": "07/2026"
       }
     ],
     "emir": [
@@ -1604,33 +1500,6 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
         "imp": "low",
         "refnum": "32026R0506R(03)",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "21. Sanktionspaket der EU gegen Russland",
-          "en": "EU adopts 21st package of sanctions against Russia"
-        },
-        "sl": "eu-adopts-21th-package-of-sanctions-against-russia",
-        "s": {
-          "de": "Die Europäische Kommission hat das 21. Sanktionspaket der EU gegen Russland begrüßt, das darauf abzielt, Russlands Fähigkeit zur Finanzierung des Krieges und zur Durchführung von Angriffen auf die Ukraine weiter einzuschränken. Das Paket konzentriert sich auf die Bereiche Energie, Finanzdienstleistungen (einschließlich Krypto), Handel und den militärisch-industriellen Komplex Russlands.\n\nZu den wesentlichen Elementen gehören Anpassungen der Ölpreisobergrenze, ein Ausbau des Infrastrukturverbots auf Raffinerien und Häfen, eine Meldepflicht für den Verkauf von LNG-Tankern an Drittländer sowie die Klarstellung, dass das Verbot von LNG-Terminaldienstleistungen auch von russischen Unternehmen kontrollierte Drittlandbetreiber umfasst. Im Finanzbereich werden über 100 russische Banken einem Transaktionsverbot unterworfen, das auch die Nutzung von Finanznachrichtendiensten untersagt. Zudem werden neue Beschränkungen für Krypto-Dienstleistungen und -Plattformen eingeführt, einschließlich eines Verbots für russische Staatsangehörige, in Krypto-Dienstleistungsunternehmen tätig zu sein. Das Paket enthält auch Maßnahmen zum Rechtsschutz von EU-Betreibern gegen missbräuchliche Klagen.\n\nDas Paket erweitert Export- und Importbeschränkungen, fügt 51 Einrichtungen zur Liste der sanktionierten Unternehmen hinzu, die den militärisch-industriellen Komplex unterstützen oder Sanktionen umgehen, und listet 218 weitere Personen und Organisationen. Dies umfasst 94 Banken und Finanzinstitute sowie wichtige Akteure im russischen Bankensektor und im Krypto-Bereich. PwC Legal weist in einem Fachbeitrag darauf hin, dass die Sanktionspakete eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen erfordern.",
-          "en": "The European Commission has welcomed the EU's 21st package of sanctions against Russia, aimed at further restricting Russia's ability to fund the war and carry out attacks on Ukraine. The package focuses on energy, financial services (including crypto), trade, and Russia's military-industrial complex.\n\nKey elements include adjustments to the oil price cap, an expansion of the infrastructure ban to refineries and ports, a notification obligation for LNG tanker sales to third countries, and clarification that the ban on LNG terminal services also covers third-country operators controlled by Russian companies. In the financial sector, over 100 Russian banks are subject to a transaction ban, which also prohibits the use of financial messaging services. New restrictions on crypto services and platforms are introduced, including a ban on Russian nationals owning, controlling, or serving on the boards of crypto service companies. The package also includes measures for the legal protection of EU operators against abusive lawsuits.\n\nThe package expands export and import restrictions, adds 51 entities to the list of sanctioned companies supporting the military-industrial complex or circumventing sanctions, and lists 218 additional individuals and entities. This includes 94 banks and financial institutions, as well as key players in the Russian banking and crypto sectors. PwC Legal notes in an expert article that the sanctions packages require a new compliance architecture for financial services companies."
-        },
-        "url": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
-        "imp": "high",
         "adv": [
           {
             "f": "PwC Legal",
@@ -2012,26 +1881,6 @@
         "imp": "high"
       },
       {
-        "d": "09.07.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil: Widerrufsrecht bei dynamischen Streaming-Diensten nicht ausschließbar (C-234/25)",
-          "en": "ECJ Judgment: Right of Withdrawal for Dynamic Streaming Services Cannot Be Excluded (C-234/25)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-234-25-sky-oesterreich-fernsehen",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Widerrufsrecht bei Streaming-Diensten nicht ausgeschlossen werden darf, wenn das Angebot dynamisch ist und sich an das Nutzerverhalten anpasst. Dies betrifft Dienste, die über die bloße Bereitstellung spezifischer Inhalte hinausgehen, indem sie beispielsweise Empfehlungen basierend auf Wiedergabelisten oder angesehenen Inhalten geben.\n\nDiese Entscheidung ist relevant für Anbieter von Streaming-Diensten in der EU. Sie müssen sicherstellen, dass Verbraucher ihr Widerrufsrecht auch dann ausüben können, wenn sie der sofortigen Vertragserfüllung zugestimmt haben. Die Interessen der Anbieter werden durch die Möglichkeit geschützt, eine angemessene Entschädigung für die bereits erfolgte Nutzung zu verlangen, die sich nach Nutzungsdauer oder dem wirtschaftlichen Wert der konsumierten Inhalte richtet.\n\nDas Urteil erging im Rahmen eines Vorabentscheidungsersuchens des österreichischen Obersten Gerichtshofs bezüglich der Auslegung der Richtlinie über die Rechte der Verbraucher (2011/83/EU). Nationale Gerichte müssen nun ihre Entscheidungen auf Grundlage dieser Auslegung treffen.",
-          "en": "The European Court of Justice (ECJ) has ruled that the right of withdrawal for streaming services cannot be excluded if the offer is dynamic and adapts to user behavior. This applies to services that go beyond the mere provision of specific content, for example, by providing recommendations based on playlists or viewed content.\n\nThis decision is relevant for streaming service providers in the EU. They must ensure that consumers can exercise their right of withdrawal even if they have agreed to immediate contract performance. The interests of providers are protected by the possibility of claiming appropriate compensation for the use already made, which is calculated based on the duration of use or the economic value of the consumed content.\n\nThe judgment was delivered in response to a preliminary ruling request from the Austrian Supreme Court concerning the interpretation of the Consumer Rights Directive (2011/83/EU). National courts must now base their decisions on this interpretation."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260097de.pdf",
-        "imp": "medium",
-        "refnum": "C-234/25"
-      },
-      {
         "d": "18.05.2026",
         "t": {
           "de": "Gesetz",
@@ -2279,25 +2128,6 @@
         },
         "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
         "imp": "high"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "digital-strategy.ec.europa.eu",
-        "ti": {
-          "de": "Verhaltenskodex zur Transparenz von KI-generierten Inhalten: Hohe Beteiligung vor Inkrafttreten des AI Act",
-          "en": "Code of Practice on Transparency of AI-generated Content: Strong Backing Ahead of AI Act Entry into Force"
-        },
-        "sl": "strong-backing-for-the-code-of-practice-on-transparency-of-ai-generated-content",
-        "s": {
-          "de": "Rund 190 Organisationen haben den Verhaltenskodex zur Transparenz von KI-generierten Inhalten unterzeichnet. Dieser Kodex, der von unabhängigen Experten entworfen und von der Kommission sowie dem KI-Gremium als angemessen bewertet wurde, soll Anbietern und Nutzern generativer KI-Systeme helfen, die gesetzlichen Verpflichtungen zur Kennzeichnung und Etikettierung von KI-generierten Inhalten zu erfüllen.\n\nDer Kodex bietet einen optimierten, vorhersehbaren und rechtssicheren Weg zur Gewährleistung und zum Nachweis der Compliance, unabhängig vom Standort der Organisation oder der zuständigen Aufsichtsbehörde. Er deckt Verpflichtungen für Anbieter und Nutzer generativer KI-Systeme ab, wobei auch Anbieter von Markierungs- und Erkennungslösungen sowie von KI-Modellen den Kodex unterzeichnen können. Die Unterzeichner kommen aus verschiedenen Sektoren wie IT, Telekommunikation, Bildung und Einzelhandel, darunter namhafte Unternehmen wie Aleph Alpha, Google, Meta, Microsoft und Lufthansa.\n\nDer Kodex ist weiterhin zur Unterzeichnung geöffnet, und die Liste der Unterzeichner wird laufend aktualisiert. Das KI-Büro ermutigt Anbieter und Entwickler generativer KI-Systeme, den Kodex zu unterzeichnen, um von Rechtssicherheit und reduziertem Verwaltungsaufwand zu profitieren. Im September 2026 werden zwei Task Forces ins Leben gerufen, in denen die Unterzeichner Best Practices austauschen und Feedback zur Implementierung der Transparenzmaßnahmen geben können.",
-          "en": "Approximately 190 organizations have signed the Code of Practice on Transparency of AI-generated Content. This code, drafted by independent experts and deemed adequate by both the Commission and the AI Board, aims to help providers and deployers of generative AI systems comply with legal obligations to mark and label AI-generated content.\n\nThe code offers a streamlined, predictable, and legally certain pathway to ensure and demonstrate compliance, regardless of the organization's location or the competent supervisory authority. It covers obligations for both providers and deployers of generative AI systems, with providers of marking and detection solutions and AI models also able to sign. Signatories come from various sectors, including IT, telecom, education, and retail, and include prominent companies such as Aleph Alpha, Google, Meta, Microsoft, and Lufthansa.\n\nThe code remains open for signature, and the list of signatories will be continuously updated. The AI Office encourages providers and developers of generative AI systems to sign the code to benefit from legal certainty and reduced administrative burden. In September 2026, two task forces will be launched, where signatories can exchange best practices and provide feedback on the implementation of transparency measures."
-        },
-        "url": "https://digital-strategy.ec.europa.eu/en/news/strong-backing-code-practice-transparency-ai-generated-content",
-        "imp": "low"
       },
       {
         "d": "28.07.2026",
@@ -2948,165 +2778,6 @@
             "d": "07.07.2026"
           }
         ]
-      },
-      {
-        "d": "24.06.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
-          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
-        },
-        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
-        "s": {
-          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
-          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
-        "imp": "medium",
-        "refnum": "T-77/24"
-      },
-      {
-        "d": "27.05.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Gezielte Überprüfung des delegierten Rechtsakts zu Taxonomie-Offenlegungen",
-          "en": "Targeted review of the taxonomy disclosures delegated act"
-        },
-        "sl": "targeted-review-of-the-taxonomy-disclosures-delegated-act",
-        "s": {
-          "de": "Die Europäische Kommission plant eine gezielte Überprüfung des Delegierten Rechtsakts zu den Taxonomie-Offenlegungspflichten. Diese Initiative zielt darauf ab, die Anwendung der Offenlegungspflichten gemäß Artikel 8 der Taxonomie-Verordnung zu bewerten und gegebenenfalls anzupassen.\n\nDie Überprüfung ist relevant für Unternehmen, die unter die Taxonomie-Verordnung fallen und Offenlegungspflichten bezüglich ihrer ökologisch nachhaltigen Wirtschaftstätigkeiten haben. Sie könnte zu Änderungen in den Berichtsanforderungen und der Methodik für die Offenlegung führen.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was auf den Beginn der Planungsphase für diese Überprüfung hinweist.",
-          "en": "The European Commission plans a targeted review of the delegated act on taxonomy disclosures. This initiative aims to evaluate and, if necessary, adjust the application of disclosure requirements under Article 8 of the Taxonomy Regulation.\n\nThis review is relevant for companies subject to the Taxonomy Regulation and its disclosure obligations regarding environmentally sustainable economic activities. It could lead to changes in reporting requirements and disclosure methodologies.\n\nThe current procedural status is “Init Planned,” indicating the start of the planning phase for this review."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18213",
-        "imp": "medium",
-        "refnum": "Ares(2026)5124400"
-      }
-    ],
-    "dsgvo": [
-      {
-        "d": "14.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "edpb.europa.eu",
-        "ti": {
-          "de": "EDPB fordert belgische DPA auf, NOYB-Beschwerde zu Cookie-Bannern zu bearbeiten",
-          "en": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint"
-        },
-        "sl": "edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat eine verbindliche Entscheidung gemäß Art. 65 Abs. 1 lit. a DSGVO veröffentlicht. Diese betrifft einen Streitfall, der von der belgischen Datenschutzbehörde (DPA) bezüglich einer Beschwerde gegen die Vlaamse Radio- en Televisieomroeporganisatie (VRT) eingereicht wurde.\n\nDie Beschwerde, eingereicht von der NGO Noyb, betrifft die Verwendung von Cookie-Bannern auf der VRT-Website. Die belgische DPA wollte die Beschwerde wegen angeblichen Missbrauchs von Art. 77 und Art. 80 Abs. 1 DSGVO abweisen, was die österreichische DPA beanstandete. Der EDPB entschied, dass kein Missbrauch der Rechte des Beschwerdeführers vorliegt, da die objektiven und subjektiven Komponenten für einen solchen Nachweis nicht erbracht wurden. Die belgische DPA muss die Beschwerde nun inhaltlich prüfen und einen neuen Entscheidungsentwurf vorlegen.\n\nDiese Entscheidung ist für alle Unternehmen relevant, die Cookie-Banner auf ihren Websites verwenden und grenzüberschreitende Datenverarbeitung betreiben. Sie verdeutlicht, dass Beschwerden nicht leichtfertig aus verfahrenstechnischen Gründen abgewiesen werden dürfen, insbesondere wenn kein klarer Missbrauch der Rechte des Beschwerdeführers nachgewiesen werden kann. Dies stärkt die Rechte von Einzelpersonen und NGOs bei der Durchsetzung von Datenschutzansprüchen.",
-          "en": "The European Data Protection Board (EDPB) has published a binding decision under Art. 65(1)(a) GDPR. This decision concerns a dispute submitted by the Belgian Data Protection Authority (DPA) regarding a complaint against Vlaamse Radio- en Televisieomroeporganisatie (VRT).\n\nThe complaint, lodged by the NGO Noyb, relates to the use of cookie banners on the VRT website. The Belgian DPA proposed to dismiss the complaint based on an alleged abuse of Art. 77 and Art. 80(1) GDPR, which the Austrian DPA objected to. The EDPB found that the complainant did not abuse their rights, as the objective and subjective components needed to prove such abuse were not demonstrated. Consequently, the Belgian DPA is instructed to assess the complaint on its merits and submit a new draft decision.\n\nThis decision is relevant for all companies using cookie banners on their websites and engaging in cross-border data processing. It clarifies that complaints should not be dismissed lightly on procedural grounds, especially when no clear abuse of the complainant's rights can be proven. This strengthens the rights of individuals and NGOs in enforcing data protection claims."
-        },
-        "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
-        "imp": "medium"
-      },
-      {
-        "d": "09.07.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zur DSGVO: Online-Veröffentlichung von Strafurteilen nicht automatisch journalistisch (C-199/24)",
-          "en": "ECJ Judgment on GDPR: Online Publication of Criminal Convictions Not Automatically Journalistic (C-199/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-199-24-legal-newsdesk-sweden",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die bloße Online-Veröffentlichung von strafrechtlichen Verurteilungen gegen Entgelt grundsätzlich keine Verarbeitung personenbezogener Daten zu journalistischen Zwecken im Sinne der Datenschutz-Grundverordnung (DSGVO) darstellt. Dies bedeutet, dass solche Veröffentlichungen nicht von den Garantien und Rechtsbehelfen der DSGVO ausgenommen sind.\n\nDie Entscheidung betrifft Unternehmen, die Datenbanken mit strafrechtlichen Verurteilungen betreiben und diese entgeltlich zugänglich machen. Der EuGH stellt klar, dass Mitgliedstaaten die Anwendung der DSGVO nicht für Datenverarbeitungen ausschließen dürfen, die nicht journalistischen, wissenschaftlichen, künstlerischen oder literarischen Zwecken dienen. Betroffene Personen müssen die durch die DSGVO garantierten Rechtsbehelfe nutzen können und dürfen nicht auf Klagen wegen Verleumdung oder zivilrechtliche Klagen beschränkt werden.\n\nDas Urteil erging im Rahmen eines Vorabentscheidungsersuchens eines schwedischen Gerichts. Die Entscheidung des EuGH ist für das nationale Gericht bindend und hat Auswirkungen auf vergleichbare Fälle in anderen Mitgliedstaaten.",
-          "en": "The European Court of Justice (ECJ) has ruled that the mere online publication of criminal convictions for a fee does not, in principle, constitute processing of personal data for journalistic purposes within the meaning of the General Data Protection Regulation (GDPR). This implies that such publications are not exempt from the guarantees and remedies provided by the GDPR.\n\nThis decision affects companies that operate databases containing criminal convictions and make them accessible for a fee. The ECJ clarifies that Member States may not exclude the application of the GDPR for data processing that does not serve journalistic, scientific, artistic, or literary purposes. Data subjects must be able to exercise the remedies guaranteed by the GDPR and should not be limited to defamation or civil lawsuits.\n\nThe judgment was delivered in response to a preliminary ruling request from a Swedish court. The ECJ's decision is binding on the national court and will impact similar cases in other Member States."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260100de.pdf",
-        "imp": "medium",
-        "refnum": "C-199/24"
-      },
-      {
-        "d": "24.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "edpb.europa.eu",
-        "ti": {
-          "de": "Unterstützung der DSGVO-Kohärenz: EDPB startet spezielles Formular",
-          "en": "Supporting GDPR consistency: EDPB launches dedicated form"
-        },
-        "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen mögliche Inkonsistenzen bei der Auslegung der Datenschutz-Grundverordnung (DSGVO) in Europa melden können. Dies dient der Stärkung des Dialogs mit Interessengruppen und der Sicherstellung einer konsistenten Durchsetzung der DSGVO.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Der EDPB wird nicht auf einzelne Einreichungen antworten, sondern die gesammelten Informationen regelmäßig auf hoher Ebene diskutieren, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nDie Initiative basiert auf den Verpflichtungen der EDPB Helsinki-Erklärung zur Verbesserung von Klarheit, Unterstützung und Engagement.",
-          "en": "The European Data Protection Board (EDPB) has launched a dedicated contact form for stakeholders to report possible inconsistencies in the interpretation of the General Data Protection Regulation (GDPR) across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of alleged divergences between national positions, as well as between national positions and those of the EDPB. The EDPB will not respond to individual submissions, but the collected information will be regularly discussed at a high level by Board members to consider steps to improve consistency.\n\nThis initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support, and engagement."
-        },
-        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
-        "imp": "low"
-      },
-      {
-        "d": "15.04.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bfdi.bund.de",
-        "ti": {
-          "de": "EDSA startet öffentliche Konsultation zu neuer Vorlage für Datenschutz-Folgenabschätzungen",
-          "en": "EDPB launches public consultation on new Data Protection Impact Assessment template"
-        },
-        "sl": "edsa-startet-oeffentliche-konsultation-zu-neuer-vorlage-fuer-datenschutz-folgena",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDSA) hat eine Vorlage und ein Anleitungsdokument für Datenschutz-Folgenabschätzungen (DSFA) entwickelt. Diese Werkzeuge sollen Organisationen dabei unterstützen, die Risiken der Datenverarbeitung zu identifizieren, zu bewerten und geeignete Maßnahmen zur Risikobegrenzung festzulegen.\n\nDie Vorlage ist eine Reaktion auf das Helsinki-Statement, das die Entwicklung praktischer und verständlicher Werkzeuge zur Umsetzung des risikobasierten Ansatzes der Datenschutz-Grundverordnung (DSGVO) vorsieht, insbesondere für kleine und mittlere Organisationen. Eine DSFA ist bei voraussichtlich hohem Risiko der Datenverarbeitung erforderlich und soll die Verarbeitung beschreiben, ihre Notwendigkeit bewerten und Risikominimierungsmaßnahmen identifizieren. Die Verwendung der EDSA-Vorlage bietet den Vorteil vordefinierter Felder, die eine vollständige und strukturierte Erfassung aller notwendigen Informationen ermöglichen.\n\nInteressierte können den Entwurf im Rahmen einer öffentlichen Konsultation bis zum 9. Juni 2026 kommentieren. Nach der Überarbeitung beabsichtigen die Aufsichtsbehörden, die Vorlage als Standard zu übernehmen oder als gemeinsame Grundlage für länderspezifische Vorlagen zu nutzen. Öffentliche Stellen des Bundes und Verantwortliche im Zuständigkeitsbereich der BfDI können sich direkt an die BfDI wenden.",
-          "en": "The European Data Protection Board (EDPB) has developed a template and guidance document for Data Protection Impact Assessments (DPIAs). These tools are designed to help organizations identify, assess, and define appropriate measures to mitigate risks associated with data processing.\n\nThis template is a response to the Helsinki Statement, which called for the development of practical and understandable tools to implement the risk-based approach of the General Data Protection Regulation (GDPR), especially for small and medium-sized organizations. A DPIA is required when data processing is likely to result in a high risk, aiming to describe the processing, assess its necessity, and identify risk minimization measures. Using the EDPB template offers the advantage of predefined fields, ensuring comprehensive and structured data collection.\n\nStakeholders can submit comments on the draft during a public consultation until June 9, 2026. Following revisions, supervisory authorities intend to adopt the template as a standard or use it as a common basis for country-specific templates. Federal public bodies and data controllers within the BfDI's jurisdiction can contact the BfDI directly with questions or feedback."
-        },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05_EDSA-Konsultation_Vorlage_DSFA.html",
-        "imp": "medium"
-      },
-      {
-        "d": "19.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil: Auskunftsantrag nach DSGVO kann bei missbräuchlicher Absicht abgelehnt werden (C-526/24)",
-          "en": "ECJ Judgment: GDPR Access Request Can Be Refused If Abusive (C-526/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-526-24-brillen-rottler",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass ein Antrag auf Auskunft über personenbezogene Daten als missbräuchlich abgelehnt werden kann, wenn er ausschließlich dazu dient, anschließend Schadensersatz wegen eines angeblichen DSGVO-Verstoßes zu fordern. Dies ist der Fall, wenn der Verantwortliche nachweisen kann, dass der Antrag nicht gestellt wurde, um sich der Datenverarbeitung bewusst zu werden und deren Rechtmäßigkeit zu überprüfen, sondern um künstlich die Voraussetzungen für Schadensersatz zu schaffen.\n\nFür Unternehmen bedeutet dies, dass sie Auskunftsersuchen unter bestimmten Umständen ablehnen können, wenn eine missbräuchliche Absicht des Antragstellers nachweisbar ist. Indizien hierfür können sein, dass die betroffene Person systematisch mehrere Auskunftsanträge mit anschließenden Schadensersatzforderungen an verschiedene Verantwortliche richtet. Der EuGH betont zudem, dass ein Schadensersatzanspruch nur besteht, wenn tatsächlich ein Schaden entstanden ist und das eigene Verhalten der betroffenen Person nicht die entscheidende Ursache für den Schaden ist.\n\nDas vorlegende Amtsgericht Arnsberg muss nun unter Berücksichtigung dieser Auslegung des EuGH über den konkreten Fall entscheiden. Die Entscheidung des EuGH ist für andere nationale Gerichte in vergleichbaren Fällen bindend.",
-          "en": "The European Court of Justice (ECJ) has ruled that a request for access to personal data can be rejected as abusive if it is made solely for the purpose of subsequently claiming compensation for an alleged GDPR infringement. This is the case if the controller can prove that the request was not made to become aware of the data processing and to verify its lawfulness, but to artificially create the conditions for obtaining compensation.\n\nFor companies, this means that they can reject access requests under certain circumstances if an abusive intent on the part of the data subject can be proven. Indications of this may include the data subject systematically submitting multiple access requests followed by claims for damages to various controllers. The ECJ also emphasizes that a claim for damages only exists if actual damage has occurred and the data subject's own conduct is not the decisive cause of the damage.\n\nThe referring District Court of Arnsberg must now decide on the specific case, taking into account this interpretation by the ECJ. The ECJ's decision is binding on other national courts in comparable cases."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
-        "imp": "medium",
-        "refnum": "C-526/24"
-      },
-      {
-        "d": "10.02.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH: Klage von WhatsApp Ireland gegen EDSA-Beschluss ist zulässig (C-97/23 P)",
-          "en": "ECJ: WhatsApp Ireland's action against EDPB decision is admissible (C-97/23 P)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-97-23-p-whatsapp-ireland-v-european-data-protect",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass eine Klage von WhatsApp Ireland gegen einen verbindlichen Beschluss des Europäischen Datenschutzausschusses (EDSA) zulässig ist. Der EuGH stellte fest, dass ein solcher Beschluss des EDSA, der eine Streitigkeit zwischen nationalen Aufsichtsbehörden über DSGVO-Verstöße und Abhilfemaßnahmen beilegt, eine anfechtbare Handlung darstellt, da er von einer EU-Einrichtung stammt und Rechtswirkungen gegenüber Dritten entfaltet.\n\nWhatsApp Ireland ist von dem Beschluss unmittelbar betroffen, da dieser die Rechtslage des Unternehmens qualifiziert geändert hat, ohne den Adressaten Ermessensspielraum zu lassen. Der Beschluss ist für die betroffenen Aufsichtsbehörden verbindlich, insbesondere hinsichtlich der Feststellung eines Verstoßes gegen bestimmte DSGVO-Vorschriften. Das Gericht der Europäischen Union hatte die Klage zuvor als unzulässig abgewiesen, da es den EDSA-Beschluss lediglich als Zwischenmaßnahme ansah.\n\nDer EuGH hob den Beschluss des Gerichts auf und verwies die Rechtssache an das Gericht zurück, damit dieses in der Sache entscheidet, einschließlich der Frage, ob WhatsApp gegen die betreffenden Bestimmungen der DSGVO verstoßen hat.",
-          "en": "The European Court of Justice (ECJ) has ruled that an action brought by WhatsApp Ireland against a binding decision of the European Data Protection Board (EDPB) is admissible. The ECJ found that such a decision by the EDPB, which resolves a dispute between national supervisory authorities regarding GDPR infringements and remedial measures, constitutes an act open to challenge, as it originates from an EU institution and produces legal effects vis-à-vis third parties.\n\nWhatsApp Ireland is directly affected by the decision, as it significantly altered the company's legal position without leaving any discretion to the addressees. The decision is binding on the supervisory authorities concerned, particularly with regard to the finding of an infringement of certain GDPR provisions. The General Court of the European Union had previously dismissed the action as inadmissible, considering the EDPB decision to be merely an interim measure.\n\nThe ECJ annulled the General Court's decision and referred the case back to the General Court for a decision on the merits, including whether WhatsApp infringed the relevant GDPR provisions."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260011de.pdf",
-        "imp": "medium",
-        "refnum": "C-97/23"
       }
     ],
     "ebatcb": [
@@ -3313,6 +2984,85 @@
             "d": "07.07.2026"
           }
         ]
+      }
+    ],
+    "dsgvo": [
+      {
+        "d": "24.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "Unterstützung der DSGVO-Kohärenz: EDPB startet spezielles Formular",
+          "en": "Supporting GDPR consistency: EDPB launches dedicated form"
+        },
+        "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen mögliche Inkonsistenzen bei der Auslegung der Datenschutz-Grundverordnung (DSGVO) in Europa melden können. Dies dient der Stärkung des Dialogs mit Interessengruppen und der Sicherstellung einer konsistenten Durchsetzung der DSGVO.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Der EDPB wird nicht auf einzelne Einreichungen antworten, sondern die gesammelten Informationen regelmäßig auf hoher Ebene diskutieren, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nDie Initiative basiert auf den Verpflichtungen der EDPB Helsinki-Erklärung zur Verbesserung von Klarheit, Unterstützung und Engagement.",
+          "en": "The European Data Protection Board (EDPB) has launched a dedicated contact form for stakeholders to report possible inconsistencies in the interpretation of the General Data Protection Regulation (GDPR) across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of alleged divergences between national positions, as well as between national positions and those of the EDPB. The EDPB will not respond to individual submissions, but the collected information will be regularly discussed at a high level by Board members to consider steps to improve consistency.\n\nThis initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support, and engagement."
+        },
+        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
+        "imp": "low"
+      },
+      {
+        "d": "09.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "BfDI kritisiert „Digitalen Omnibus“ der EU-Kommission",
+          "en": "BfDI Criticizes EU Commission's “Digital Omnibus”"
+        },
+        "sl": "digitaler-omnibus-greift-bei-zentralen-datenschutzfragen-zu-kurz",
+        "s": {
+          "de": "Der Bundesbeauftragte für den Datenschutz (BfDI) kritisiert, dass der von der EU-Kommission vorgeschlagene „Digitale Omnibus“ zwar Bürokratie abbauen und die Wettbewerbsfähigkeit steigern soll, aber zentrale Datenschutzfragen unzureichend adressiert.\n\nObwohl der BfDI das Ziel der Vereinfachung und des Abbaus bürokratischer Hürden unterstützt, mahnt er an, dass der substantielle Schutzstandard der DSGVO erhalten bleiben muss. Insbesondere fehle es an Regelungen zu strukturellen Machtungleichgewichten, zum Schutz von Kindern, zu Data Brokern und zur datenschutzrechtlichen Verantwortung von Herstellern und Anbietern digitaler Anwendungen. Auch für Künstliche Intelligenz (KI) seien spezifische, grundrechtssensible Regeln zur Verarbeitung personenbezogener Daten erforderlich.\n\nDie Kritik wurde im Rahmen einer hochrangigen Diskussionsrunde in Brüssel geäußert, die der BfDI gemeinsam mit dem Europäischen Datenschutzbeauftragten (EDPS) und dem Bayerischen Landesbeauftragten für den Datenschutz (BayLfD) veranstaltete.",
+          "en": "The Federal Commissioner for Data Protection (BfDI) criticizes that the “Digital Omnibus” proposed by the EU Commission, while aiming to reduce bureaucracy and enhance competitiveness, inadequately addresses central data protection issues.\n\nAlthough the BfDI supports the goal of simplification and reducing bureaucratic hurdles, it insists that the substantial protection standard of the GDPR must be maintained. Specifically, there is a lack of regulations concerning structural power imbalances, child protection, data brokers, and the data protection responsibility of manufacturers and providers of digital applications. Specific, fundamental rights-sensitive rules for processing personal data are also required for Artificial Intelligence (AI).\n\nThe criticism was voiced during a high-level discussion round in Brussels, organized by the BfDI together with the European Data Protection Supervisor (EDPS) and the Bavarian State Commissioner for Data Protection (BayLfD)."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/09_High_Level_Debatte-KM.html",
+        "imp": "low"
+      },
+      {
+        "d": "15.04.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "EDSA startet öffentliche Konsultation zu neuer Vorlage für Datenschutz-Folgenabschätzungen",
+          "en": "EDPB launches public consultation on new Data Protection Impact Assessment template"
+        },
+        "sl": "edsa-startet-oeffentliche-konsultation-zu-neuer-vorlage-fuer-datenschutz-folgena",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDSA) hat eine Vorlage und ein Anleitungsdokument für Datenschutz-Folgenabschätzungen (DSFA) entwickelt. Diese Werkzeuge sollen Organisationen dabei unterstützen, die Risiken der Datenverarbeitung zu identifizieren, zu bewerten und geeignete Maßnahmen zur Risikobegrenzung festzulegen.\n\nDie Vorlage ist eine Reaktion auf das Helsinki-Statement, das die Entwicklung praktischer und verständlicher Werkzeuge zur Umsetzung des risikobasierten Ansatzes der Datenschutz-Grundverordnung (DSGVO) vorsieht, insbesondere für kleine und mittlere Organisationen. Eine DSFA ist bei voraussichtlich hohem Risiko der Datenverarbeitung erforderlich und soll die Verarbeitung beschreiben, ihre Notwendigkeit bewerten und Risikominimierungsmaßnahmen identifizieren. Die Verwendung der EDSA-Vorlage bietet den Vorteil vordefinierter Felder, die eine vollständige und strukturierte Erfassung aller notwendigen Informationen ermöglichen.\n\nInteressierte können den Entwurf im Rahmen einer öffentlichen Konsultation bis zum 9. Juni 2026 kommentieren. Nach der Überarbeitung beabsichtigen die Aufsichtsbehörden, die Vorlage als Standard zu übernehmen oder als gemeinsame Grundlage für länderspezifische Vorlagen zu nutzen. Öffentliche Stellen des Bundes und Verantwortliche im Zuständigkeitsbereich der BfDI können sich direkt an die BfDI wenden.",
+          "en": "The European Data Protection Board (EDPB) has developed a template and guidance document for Data Protection Impact Assessments (DPIAs). These tools are designed to help organizations identify, assess, and define appropriate measures to mitigate risks associated with data processing.\n\nThis template is a response to the Helsinki Statement, which called for the development of practical and understandable tools to implement the risk-based approach of the General Data Protection Regulation (GDPR), especially for small and medium-sized organizations. A DPIA is required when data processing is likely to result in a high risk, aiming to describe the processing, assess its necessity, and identify risk minimization measures. Using the EDPB template offers the advantage of predefined fields, ensuring comprehensive and structured data collection.\n\nStakeholders can submit comments on the draft during a public consultation until June 9, 2026. Following revisions, supervisory authorities intend to adopt the template as a standard or use it as a common basis for country-specific templates. Federal public bodies and data controllers within the BfDI's jurisdiction can contact the BfDI directly with questions or feedback."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05_EDSA-Konsultation_Vorlage_DSFA.html",
+        "imp": "medium"
+      },
+      {
+        "d": "19.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil: Auskunftsantrag nach DSGVO kann bei missbräuchlicher Absicht abgelehnt werden (C-526/24)",
+          "en": "ECJ Judgment: GDPR Access Request Can Be Refused If Abusive (C-526/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-526-24-brillen-rottler",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass ein Antrag auf Auskunft über personenbezogene Daten als missbräuchlich abgelehnt werden kann, wenn er ausschließlich dazu dient, anschließend Schadensersatz wegen eines angeblichen DSGVO-Verstoßes zu fordern. Dies ist der Fall, wenn der Verantwortliche nachweisen kann, dass der Antrag nicht gestellt wurde, um sich der Datenverarbeitung bewusst zu werden und deren Rechtmäßigkeit zu überprüfen, sondern um künstlich die Voraussetzungen für Schadensersatz zu schaffen.\n\nFür Unternehmen bedeutet dies, dass sie Auskunftsersuchen unter bestimmten Umständen ablehnen können, wenn eine missbräuchliche Absicht des Antragstellers nachweisbar ist. Indizien hierfür können sein, dass die betroffene Person systematisch mehrere Auskunftsanträge mit anschließenden Schadensersatzforderungen an verschiedene Verantwortliche richtet. Der EuGH betont zudem, dass ein Schadensersatzanspruch nur besteht, wenn tatsächlich ein Schaden entstanden ist und das eigene Verhalten der betroffenen Person nicht die entscheidende Ursache für den Schaden ist.\n\nDas vorlegende Amtsgericht Arnsberg muss nun unter Berücksichtigung dieser Auslegung des EuGH über den konkreten Fall entscheiden. Die Entscheidung des EuGH ist für andere nationale Gerichte in vergleichbaren Fällen bindend.",
+          "en": "The European Court of Justice (ECJ) has ruled that a request for access to personal data can be rejected as abusive if it is made solely for the purpose of subsequently claiming compensation for an alleged GDPR infringement. This is the case if the controller can prove that the request was not made to become aware of the data processing and to verify its lawfulness, but to artificially create the conditions for obtaining compensation.\n\nFor companies, this means that they can reject access requests under certain circumstances if an abusive intent on the part of the data subject can be proven. Indications of this may include the data subject systematically submitting multiple access requests followed by claims for damages to various controllers. The ECJ also emphasizes that a claim for damages only exists if actual damage has occurred and the data subject's own conduct is not the decisive cause of the damage.\n\nThe referring District Court of Arnsberg must now decide on the specific case, taking into account this interpretation by the ECJ. The ECJ's decision is binding on other national courts in comparable cases."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
+        "imp": "medium",
+        "refnum": "C-526/24"
       }
     ],
     "luaifm": [
@@ -3546,48 +3296,6 @@
         "imp": "medium"
       }
     ],
-    "esgrating": [
-      {
-        "d": "24.04.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "EU-Regeln zu Gebühren der ESMA für ESG-Ratinganbieter (Ares(2025)9687090)",
-          "en": "EU rules on fees charged by the European Securities and Markets Authority to ESG rating providers (Ares(2025)9687090)"
-        },
-        "sl": "eu-rules-on-fees-charged-by-the-european-securities-and-markets-authority-to-esg",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Vorschlag für eine Verordnung zur Festlegung von Gebühren für ESG-Ratinganbieter durch die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) vorgelegt. Diese Verordnung ist Teil des Adoptions-Workflows und konkretisiert die finanziellen Aspekte der Regulierung von ESG-Ratings.\n\nDie Regelung betrifft alle Unternehmen, die ESG-Ratings in der EU anbieten. Sie müssen künftig Gebühren an die ESMA entrichten, um die Kosten für deren Aufsichtstätigkeiten zu decken. Dies stellt eine direkte finanzielle Belastung für die betroffenen Anbieter dar und erfordert eine Anpassung ihrer Geschäftsmodelle und Preisstrukturen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er noch verschiedene legislative Schritte durchlaufen muss, bevor er in Kraft tritt.",
-          "en": "The European Commission has put forward a proposal for a regulation establishing fees for ESG rating providers by the European Securities and Markets Authority (ESMA). This regulation is part of the adoption workflow and specifies the financial aspects of ESG rating regulation.\n\nThis regulation affects all companies offering ESG ratings in the EU. They will be required to pay fees to ESMA to cover the costs of its supervisory activities. This represents a direct financial burden for the affected providers and necessitates an adjustment of their business models and pricing structures.\n\nThe proposal is currently in the adoption workflow, meaning it still needs to undergo various legislative steps before it enters into force."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15695",
-        "imp": "medium",
-        "refnum": "Ares(2025)9687090"
-      },
-      {
-        "d": "24.04.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "EU-Verfahrensregeln für Geldbußen und Zwangsgelder gegen ESG-Ratinganbieter (Ares(2025)9687083)",
-          "en": "EU rules of procedure on fines and periodic penalty payments imposed to ESG rating providers (Ares(2025)9687083)"
-        },
-        "sl": "eu-rules-of-procedure-on-fines-and-periodic-penalty-payments-imposed-to-esg-rati",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Vorschlag für Verfahrensregeln zur Verhängung von Geldbußen und Zwangsgeldern gegen ESG-Ratinganbieter vorgelegt. Diese Regeln legen fest, wie die Kommission bei Verstößen gegen die EU-Verordnung über ESG-Ratings vorgehen wird.\n\nDie Vorschriften sind für alle Unternehmen relevant, die ESG-Ratings innerhalb der Europäischen Union anbieten. Sie schaffen einen Rahmen für die Durchsetzung der Compliance mit der neuen ESG-Rating-Verordnung und sollen die Integrität und Transparenz des ESG-Ratingmarktes gewährleisten.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Kommission.",
-          "en": "The European Commission has put forward a proposal for procedural rules concerning the imposition of fines and periodic penalty payments on ESG rating providers. These rules specify how the Commission will proceed in cases of infringements of the EU regulation on ESG ratings.\n\nThese provisions are relevant for all companies offering ESG ratings within the European Union. They establish a framework for enforcing compliance with the new ESG rating regulation and aim to ensure the integrity and transparency of the ESG rating market.\n\nThe proposal is currently in the Commission's adoption workflow."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15694",
-        "imp": "medium",
-        "refnum": "Ares(2025)9687083"
-      }
-    ],
     "lulmt": [
       {
         "d": "15.04.2026",
@@ -3627,6 +3335,128 @@
         },
         "url": "https://www.cssf.lu/en/Document/cssf-faq-swing-pricing-mechanism/",
         "imp": "low"
+      }
+    ],
+    "bmr": [
+      {
+        "d": "12.02.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Informationspflichten bei kritischen Referenzwerten in Immobilienkrediten (C-471/24)",
+          "en": "ECJ judgment on information obligations for critical benchmarks in real estate loans (C-471/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-471-24-pko-bp-critical-benchmark",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Informationspflicht einer Bank bei Immobilienkrediten mit variablem Zinssatz, der auf einem regulierten Referenzindex wie dem WIBOR basiert, nicht die Offenlegung der Methodik dieses Indexes gegenüber dem Verbraucher umfasst. Eine Vertragsklausel, die einen solchen Referenzindex enthält, führt grundsätzlich nicht allein zu einem erheblichen Ungleichgewicht zwischen den Parteien zum Nachteil des Verbrauchers.\n\nDiese Entscheidung ist relevant für Kreditinstitute, die Immobilienkredite mit variablen Zinssätzen anbieten, die an regulierte Referenzindizes gekoppelt sind. Sie stellt klar, dass die Banken nicht verpflichtet sind, detaillierte Informationen über die Berechnungsmethodik des Referenzindexes zu liefern, da diese Pflicht dem Administrator des Indexes obliegt. Die Bank muss lediglich auf die Veröffentlichung der Methodik durch den Administrator verweisen und darf keine irreführenden Informationen bereitstellen.\n\nDas Urteil des EuGH bindet das vorlegende polnische Gericht und dient als Richtschnur für andere nationale Gerichte bei vergleichbaren Sachverhalten. Es präzisiert die Anwendung der Richtlinie über missbräuchliche Klauseln in Verbraucherverträgen im Kontext von Referenzindizes, die einem umfassenden Rechtsrahmen der Union unterliegen.",
+          "en": "The European Court of Justice (ECJ) has ruled that a bank's obligation to provide information for real estate loans with a variable interest rate based on a regulated benchmark index, such as WIBOR, does not include disclosing the methodology of that index to the consumer. A contractual clause containing such a benchmark index does not, in principle, by itself lead to a significant imbalance between the parties to the detriment of the consumer.\n\nThis decision is relevant for credit institutions offering real estate loans with variable interest rates linked to regulated benchmark indices. It clarifies that banks are not obliged to provide detailed information on the calculation methodology of the benchmark index, as this duty lies with the index administrator. The bank merely needs to refer to the administrator's publication of the methodology and must not provide misleading information.\n\nThe ECJ's judgment is binding on the referring Polish court and serves as guidance for other national courts in similar cases. It clarifies the application of the Unfair Terms in Consumer Contracts Directive in the context of benchmark indices subject to a comprehensive Union legal framework."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260014de.pdf",
+        "imp": "high",
+        "refnum": "C-471/24"
+      },
+      {
+        "d": "28.03.2025",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung des Anwendungsbereichs und Drittstaatenregimes der Benchmark-Verordnung (BMR)",
+          "en": "Review of the scope and third-country regime of the Benchmark Regulation (BMR)"
+        },
+        "sl": "review-of-the-scope-and-third-country-regime-of-the-benchmark-regulation",
+        "s": {
+          "de": "Die Europäische Kommission prüft den Anwendungsbereich und das Drittstaatenregime der Benchmark-Verordnung (BMR). Dies ist Teil einer umfassenderen Bewertung der BMR, um deren Wirksamkeit und Angemessenheit zu beurteilen. Ziel ist es, die Auswirkungen der Verordnung auf die Finanzmärkte und ihre Fähigkeit, die Stabilität und Integrität von Benchmarks zu gewährleisten, zu analysieren.\n\nDie Überprüfung ist relevant für Finanzinstitute, die Benchmarks nutzen oder bereitstellen, insbesondere solche mit Bezug zu Drittstaaten. Sie könnte zu Anpassungen der Anforderungen für die Nutzung von Benchmarks aus Nicht-EU-Ländern führen und die Compliance-Anforderungen für Marktteilnehmer beeinflussen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet. Ein konkretes Datum für die Veröffentlichung oder Fristen für Stellungnahmen sind dem vorliegenden Text nicht zu entnehmen.",
+          "en": "The European Commission is reviewing the scope and third-country regime of the Benchmark Regulation (BMR). This is part of a broader evaluation of the BMR to assess its effectiveness and appropriateness. The aim is to analyze the regulation's impact on financial markets and its ability to ensure the stability and integrity of benchmarks.\n\nThis review is relevant for financial institutions that use or provide benchmarks, especially those with connections to third countries. It could lead to adjustments in the requirements for using benchmarks from non-EU countries and affect compliance obligations for market participants.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions. Specific publication dates or deadlines for comments are not available in the provided text."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13762",
+        "imp": "medium",
+        "refnum": "Ares(2023)1488307"
+      },
+      {
+        "d": "10.12.2021",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "ESMA-Bußgelder für Administratoren kritischer Benchmarks und anerkannte BMR-Administratoren aus Drittländern",
+          "en": "ESMA fines or penalty payments for administrators of critical benchmarks and recognised third country BMR administrators"
+        },
+        "sl": "esma-fines-or-penalty-payments-for-administrators-of-critical-benchmarks-and-rec",
+        "s": {
+          "de": "Die Europäische Kommission plant die Einführung von Geldbußen und Zwangsgeldern für Administratoren kritischer Benchmarks und anerkannte Drittland-Administratoren von Benchmarks gemäß der Benchmark-Verordnung (BMR).\n\nDiese Maßnahme betrifft Administratoren, die für die Bereitstellung kritischer Benchmarks zuständig sind oder als Drittland-Administratoren in der EU anerkannt wurden. Die Einführung von Sanktionen soll die Einhaltung der BMR-Vorschriften sicherstellen und die Integrität der Benchmarks stärken.",
+          "en": "The European Commission plans to introduce fines and penalty payments for administrators of critical benchmarks and recognized third-country benchmark administrators under the Benchmark Regulation (BMR).\n\nThis measure affects administrators responsible for providing critical benchmarks or those recognized as third-country administrators in the EU. The introduction of sanctions aims to ensure compliance with BMR provisions and strengthen the integrity of benchmarks."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13296",
+        "imp": "medium",
+        "refnum": "Ares(2021)7521504"
+      },
+      {
+        "d": "11.08.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung der Benchmark-Verordnung",
+          "en": "Review of the Benchmark Regulation"
+        },
+        "sl": "review-of-the-benchmark-regulation",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung der Benchmark-Verordnung (BMR) eingeleitet. Ziel ist es, die Wirksamkeit der Verordnung zu bewerten und mögliche Anpassungen zu identifizieren, um ihre Ziele besser zu erreichen.\n\nDiese Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie zu Änderungen in den Anforderungen an Governance, Kontrolle und Transparenz von Benchmarks führen könnte. Die Ergebnisse der Überprüfung könnten sich auf die Auswahl und Nutzung von Referenzwerten auswirken.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Veröffentlichung von Vorschlägen oder Schlussfolgerungen hindeutet.",
+          "en": "The European Commission has initiated a review of the Benchmark Regulation (BMR). The aim is to assess the effectiveness of the regulation and identify potential adjustments to better achieve its objectives.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could lead to changes in the requirements for governance, control, and transparency of benchmarks. The outcomes of the review could impact the selection and use of reference rates.\n\nThe current procedural status is the adoption workflow, indicating an upcoming publication of proposals or conclusions."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12268",
+        "imp": "medium",
+        "refnum": "Ares(2020)1637928"
+      },
+      {
+        "d": "28.04.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Delegierter Rechtsakt zur Überprüfung der Berechnungsmethode für kritische Benchmarks (Ares(2020)2203176)",
+          "en": "Delegated Act on the Review of Calculation Method for Critical Benchmarks (Ares(2020)2203176)"
+        },
+        "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Überprüfung der Berechnungsmethode zur Bestimmung der Schwellenwerte für kritische Benchmarks. Dies erfolgt im Rahmen eines Delegierten Rechtsakts.\n\nDie Überprüfung ist für Finanzinstitute relevant, die Benchmarks verwenden oder bereitstellen, da sie die Kriterien für die Einstufung einer Benchmark als kritisch beeinflussen könnte. Dies hat Auswirkungen auf die regulatorischen Anforderungen und die Beaufsichtigung solcher Benchmarks.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überprüfung der Berechnungsmethode noch in der Planungsphase ist.",
+          "en": "The European Commission plans to review the calculation method used to determine the thresholds for critical benchmarks. This will be done within the framework of a Delegated Act.\n\nThis review is relevant for financial institutions that use or provide benchmarks, as it could affect the criteria for classifying a benchmark as critical. This has implications for the regulatory requirements and supervision of such benchmarks.\n\nCurrently, the procedure status is \"Init Planned,\" meaning the initiative to review the calculation method is still in the planning phase."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12347",
+        "imp": "low",
+        "refnum": "Ares(2020)2203176"
+      },
+      {
+        "d": "28.04.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Delegierte Verordnung zur Überprüfung der Berechnungsmethode für Schwellenwerte signifikanter Benchmarks",
+          "en": "Delegated Act on the review of the calculation method used to determine the thresholds of significant benchmarks"
+        },
+        "sl": "delegated-act-on-the-review-of-the-calculation-method-used-to-determine-the-thre",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Überarbeitung der Berechnungsmethode zur Bestimmung der Schwellenwerte für signifikante Benchmarks. Dies erfolgt im Rahmen eines Delegierten Rechtsakts.\n\nDie Überarbeitung betrifft Finanzinstitute, die Benchmarks verwenden oder bereitstellen. Ziel ist es, die Kriterien für die Einstufung einer Benchmark als signifikant anzupassen, was Auswirkungen auf die regulatorischen Anforderungen und die Governance dieser Benchmarks haben kann.\n\nDer aktuelle Verfahrensstand ist „Init Planned“, was bedeutet, dass die Initiative zur Überarbeitung der Berechnungsmethode für signifikante Benchmarks geplant ist.",
+          "en": "The European Commission plans to revise the calculation method used to determine the thresholds for significant benchmarks. This will be done through a Delegated Act.\n\nThis revision affects financial institutions that use or provide benchmarks. The aim is to adjust the criteria for classifying a benchmark as significant, which may impact the regulatory requirements and governance of these benchmarks.\n\nThe current status is “Init Planned,” indicating that the initiative to revise the calculation method for significant benchmarks is in the planning stage."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12346",
+        "imp": "low",
+        "refnum": "Ares(2020)2203125"
       }
     ],
     "nis2": [
