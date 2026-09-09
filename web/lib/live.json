@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T08:32:39Z",
+  "generated_at": "2026-09-09T14:50:58Z",
   "updates": {
     "amla": [
       {
@@ -369,6 +369,106 @@
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-02/cp260023de.pdf",
         "imp": "high",
         "refnum": "C-802/24"
+      }
+    ],
+    "prospectus": [
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zu Offenlegungspflichten und aktualisiert Leitlinien und Q&As zur Prospektverordnung",
+          "en": "ESMA consults on disclosure requirements and updates guidelines and Q&As under the Prospectus Regulation"
+        },
+        "sl": "esma-consults-on-disclosure-requirements-and-updates-guidelines-and-q-as-under-t",
+        "s": {
+          "de": "Die ESMA hat ein Maßnahmenpaket zur Prospektverordnung veröffentlicht, das Änderungen durch den Listing Act berücksichtigt. Es umfasst ein Konsultationspapier zur Aktualisierung der Leitlinien für Offenlegungspflichten, aktualisierte Q&As, einen Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen, sowie einen Abschlussbericht zu technischen Regulierungsstandards (RTS) für wichtige Finanzinformationen in Prospektzusammenfassungen.\n\nDas Konsultationspapier soll Emittenten und Beratern helfen, die Offenlegungspflichten gemäß der überarbeiteten Prospektverordnung besser zu verstehen und vereinfacht bestehende Leitlinien. Die aktualisierten Q&As passen rechtliche Verweise an, klären Sachverhalte und entfernen überholte Inhalte. Die Leitlinien für Produktnachträge schaffen einen gemeinsamen Ansatz zur Beurteilung, ob ein Nachtrag neue Wertpapiere in einen Basisprospekt einführt, und die RTS aktualisieren die Anforderungen an Finanzinformationen im Prospekt nach den Reformen des Listing Act.\n\nInteressenträger können bis zum 9. November 2026 zur Konsultation Stellung nehmen. Die ESMA plant, den Abschlussbericht und die aktualisierten Leitlinien im zweiten Quartal 2027 zu veröffentlichen. Die Leitlinien zu Produktnachträgen treten in Kraft, sobald Übersetzungen in alle Amtssprachen der EU vorliegen. Die RTS wurden der Europäischen Kommission zur Entscheidung übermittelt.",
+          "en": "ESMA has published a package of materials under the Prospectus Regulation, reflecting changes introduced by the Listing Act. This includes a Consultation Paper on updating disclosure requirements guidelines, updated Q&As, a Final Report on guidelines for supplements introducing new securities to a base prospectus, and a Final Report on regulatory technical standards (RTS) for key financial information in prospectus summaries.\n\nThe Consultation Paper aims to help issuers and their advisors better understand disclosure requirements under the revised Prospectus Regulation and simplifies existing guidance. The updated Q&As adjust legal references, provide clarifications, and remove obsolete content. The guidelines on product supplements establish a common approach for assessing whether a supplement introduces new securities to a base prospectus, and the RTS update financial information requirements in prospectuses following Listing Act reforms.\n\nStakeholders are invited to respond to the consultation by 9 November 2026. ESMA expects to publish the Final Report and updated Guidelines in Q2 2027. The guidelines on product supplements will apply once translations into all official EU languages are available. The RTS have been submitted to the European Commission for a decision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-disclosure-requirements-and-updates-guidelines-and-qas-under",
+        "imp": "medium"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Änderungen an den Q&As zur Prospektverordnung",
+          "en": "Overview of changes made to the Prospectus Q&As"
+        },
+        "sl": "overview-of-changes-made-to-the-prospectus-q-as",
+        "s": {
+          "de": "Die ESMA hat Änderungen an ihren Q&As zur Prospektverordnung vorgenommen. Diese Aktualisierungen betreffen die Vereinfachung und Reduzierung des Verwaltungsaufwands im Zusammenhang mit Prospekten.\n\nDie Änderungen sind für alle Unternehmen relevant, die Prospekte gemäß der Prospektverordnung erstellen und veröffentlichen. Sie sollen den Prozess der Prospekterstellung effizienter gestalten und die Compliance-Last verringern.",
+          "en": "ESMA has introduced changes to its Q&As on the Prospectus Regulation. These updates focus on the simplification and reduction of administrative burdens related to prospectuses.\n\nThese changes are relevant for all entities that prepare and publish prospectuses under the Prospectus Regulation. They aim to streamline the prospectus drafting process and alleviate the compliance burden."
+        },
+        "url": "https://www.esma.europa.eu/document/overview-changes-made-prospectus-qas",
+        "imp": "low"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zur Aktualisierung der RTS für Finanzinformationen in der Prospektzusammenfassung (ESMA32-753890202-3065)",
+          "en": "Final Report on the update to the RTS concerning key financial information in the summary of a prospectus (ESMA32-753890202-3065)"
+        },
+        "sl": "final-report-on-the-update-to-the-rts-concerning-key-financial-information-in-th",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Aktualisierung der RTS bezüglich der wichtigsten Finanzinformationen in der Prospektzusammenfassung veröffentlicht. Ziel ist es, die Anforderungen an Finanzinformationen im Prospekt zu vereinfachen und an die durch den Listing Act geänderten Vorschriften anzupassen.\n\nDie wesentlichen Änderungen betreffen die Verkürzung der erforderlichen Zeiträume für Finanzinformationen bei der Emission von Eigenkapital- und Fremdkapitalinstrumenten. Zudem wird die Cashflow-Tabelle für Fremdkapitalinstrumente aus Anhang II entfernt, da sie keine entsprechende Position in der Delegierten Verordnung (EU) 2019/980 hat. Die Änderungen sollen die Belastung für Emittenten verringern.\n\nDie geänderten RTS werden der Europäischen Kommission zur Annahme vorgelegt und unterliegen einer Prüfungsfrist durch das Europäische Parlament und den Rat. Die ESMA ermutigt nationale zuständige Behörden, den Anwendungsbeginn vorwegzunehmen und einen konsistenten Ansatz mit der Prospektverordnung, wie sie durch den Listing Act geändert wurde, sicherzustellen.",
+          "en": "ESMA has published a final report on the update to the RTS concerning key financial information in the summary of a prospectus. The aim is to simplify the requirements for financial information in prospectuses and align them with the rules amended by the Listing Act.\n\nThe main changes involve reducing the required periods for financial information in the context of both equity and non-equity securities issuances. Additionally, the cash flow table for non-equity securities is removed from Annex II due to its lack of a corresponding item in Delegated Regulation (EU) 2019/980. These amendments are intended to alleviate the burden on issuers.\n\nThe amended RTS will be submitted to the European Commission for adoption and will be subject to a scrutiny period by the European Parliament and Council. ESMA encourages national competent authorities to anticipate its entry into application by ensuring a consistent approach with the Prospectus Regulation, as amended by the Listing Act."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-update-rts-concerning-key-financial-information-summary-prospectus",
+        "imp": "medium",
+        "refnum": "ESMA32-753890202-3065"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen (ESMA32-753890202-3034)",
+          "en": "Final Report on Guidelines on supplements which introduce new securities to a base prospectus (ESMA32-753890202-3034)"
+        },
+        "sl": "final-report-on-the-guidelines-on-supplements-which-introduce-new-securities-to",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht zu den Leitlinien für Nachträge veröffentlicht, die neue Wertpapiere in einen Basisprospekt einführen. Diese Leitlinien sollen die EU-weite Aufsicht in diesem Bereich harmonisieren, da es bisher erhebliche Abweichungen gab, die zu unterschiedlichen aufsichtsrechtlichen Ergebnissen führten.\n\nDie Leitlinien präzisieren, wann ein Nachtrag als Einführung eines neuen Wertpapiertyps gilt, der nicht bereits im Basisprospekt beschrieben ist. Dies ist relevant, da ein Basisprospekt nicht zur Einführung eines neuen Wertpapiertyps verwendet werden sollte, für den die notwendigen Informationen nicht enthalten sind. Die ESMA reagiert damit auf die Notwendigkeit klarer Kriterien, um Inkonsistenzen bei den Anforderungen zwischen den Jurisdiktionen zu vermeiden und die Ziele des Listing Act zu unterstützen.\n\nDie Leitlinien in Anhang III des Berichts werden in die Amtssprachen der EU übersetzt und veröffentlicht. Sie basieren auf umfangreichem Feedback zu einem Konsultationspapier vom 18. Februar 2025 und wurden angepasst, um die Offenlegungsanhänge der Delegierten Verordnung (EU) 2019/980 zu berücksichtigen.",
+          "en": "ESMA has published its Final Report on the Guidelines on supplements which introduce new securities to a base prospectus. These guidelines aim to harmonise EU-wide supervision in this area, as there have been significant divergences leading to different supervisory outcomes.\n\nThe guidelines specify when a supplement is considered to introduce a new type of security not already described in the base prospectus. This is relevant because a base prospectus should not be used to introduce a new type of security for which the necessary information has not been included. ESMA is thus responding to the need for clear criteria to avoid inconsistencies in requirements across jurisdictions and to support the objectives of the Listing Act.\n\nThe guidelines, set out in Annex III of the report, will be translated into the official EU languages and published. They are based on extensive feedback to a consultation paper published on 18 February 2025 and have been adjusted to reflect the disclosure annexes of Delegated Regulation (EU) 2019/980."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
+        "imp": "medium",
+        "refnum": "ESMA32-753890202-3034"
+      },
+      {
+        "d": "04.03.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Reduzierter Inhalt und standardisiertes Format für EU-Folgeprospekte und EU-Wachstumsemissionsprospekte",
+          "en": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus"
+        },
+        "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Reduzierung des Inhalts und zur Standardisierung des Formats und der Reihenfolge des EU-Folgeprospekts und des EU-Wachstumsemissionsprospekts vorgelegt. Dies zielt darauf ab, die Erstellung von Prospekten zu vereinfachen und die Effizienz für Emittenten zu steigern.\n\nDer Vorschlag ist für Unternehmen relevant, die Kapital über die Ausgabe von Wertpapieren am EU-Markt beschaffen möchten. Eine Standardisierung der Prospekte soll den Zugang zu Kapitalmärkten erleichtern und die Kosten für die Prospekterstellung senken.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow-Verfahren.",
+          "en": "The European Commission has submitted a legislative proposal to reduce the content and standardize the format and sequence of the EU Follow-on Prospectus and the EU Growth Issuance Prospectus. This aims to simplify prospectus preparation and increase efficiency for issuers.\n\nThis proposal is relevant for companies seeking to raise capital through securities issuance in the EU market. Standardizing prospectuses is intended to facilitate access to capital markets and reduce the costs associated with prospectus preparation.\n\nThe proposal is currently in the adoption workflow process."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
+        "imp": "medium",
+        "refnum": "Ares(2024)6122774"
       }
     ],
     "brrd": [
@@ -3535,28 +3635,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/cssf-faq-swing-pricing-mechanism/",
         "imp": "low"
-      }
-    ],
-    "prospectus": [
-      {
-        "d": "04.03.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Reduzierter Inhalt und standardisiertes Format für EU-Folgeprospekte und EU-Wachstumsemissionsprospekte",
-          "en": "Reduced content and standardised format and sequence of the EU Follow-on prospectus and EU Growth issuance prospectus"
-        },
-        "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Reduzierung des Inhalts und zur Standardisierung des Formats und der Reihenfolge des EU-Folgeprospekts und des EU-Wachstumsemissionsprospekts vorgelegt. Dies zielt darauf ab, die Erstellung von Prospekten zu vereinfachen und die Effizienz für Emittenten zu steigern.\n\nDer Vorschlag ist für Unternehmen relevant, die Kapital über die Ausgabe von Wertpapieren am EU-Markt beschaffen möchten. Eine Standardisierung der Prospekte soll den Zugang zu Kapitalmärkten erleichtern und die Kosten für die Prospekterstellung senken.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow-Verfahren.",
-          "en": "The European Commission has submitted a legislative proposal to reduce the content and standardize the format and sequence of the EU Follow-on Prospectus and the EU Growth Issuance Prospectus. This aims to simplify prospectus preparation and increase efficiency for issuers.\n\nThis proposal is relevant for companies seeking to raise capital through securities issuance in the EU market. Standardizing prospectuses is intended to facilitate access to capital markets and reduce the costs associated with prospectus preparation.\n\nThe proposal is currently in the adoption workflow process."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
-        "imp": "medium",
-        "refnum": "Ares(2024)6122774"
       }
     ],
     "nis2": [
