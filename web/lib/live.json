@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T16:18:20Z",
+  "generated_at": "2026-09-09T17:57:32Z",
   "updates": {
     "amla": [
       {
@@ -862,7 +862,87 @@
         "imp": "medium"
       }
     ],
-    "cssf18698": [
+    "cssfict": [
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Meldung von IKT-Vorfällen und Cyber-Bedrohungen unter DORA (Circular CSSF 25/893)",
+          "en": "Reporting of ICT-related Incidents and Cyber Threats under DORA (Circular CSSF 25/893)"
+        },
+        "sl": "circular-cssf-25-893-as-amended-by-circular-cssf-26-915-updated",
+        "s": {
+          "de": "Die CSSF-Rundschreiben 25/893 und 26/915 regeln die Meldung schwerwiegender IKT-bezogener Vorfälle und erheblicher Cyber-Bedrohungen gemäß der Verordnung über die digitale operationale Resilienz (DORA). Das Rundschreiben 25/893 wurde am 28. Mai 2025 veröffentlicht und am 27. August 2026 aktualisiert.\n\nDiese Rundschreiben sind für Finanzunternehmen relevant, die unter die DORA-Verordnung fallen. Sie legen fest, wie und wann schwerwiegende IKT-Vorfälle und Cyber-Bedrohungen an die CSSF zu melden sind, um die operationale Resilienz im Finanzsektor zu gewährleisten. Das Rundschreiben 26/915 präzisiert zudem die Anwendbarkeit von DORA auf Drittlandzweigstellen in Luxemburg.\n\nDas Rundschreiben CSSF 21/787 zur Anwendung der EBA-Leitlinien (EBA/GL/2021/03) über die Meldung schwerwiegender Vorfälle gemäß PSD2 wurde durch das Rundschreiben CSSF 25/893 aufgehoben.",
+          "en": "CSSF Circulars 25/893 and 26/915 regulate the reporting of major ICT-related incidents and significant cyber threats under the Digital Operational Resilience Act (DORA). Circular 25/893 was published on 28 May 2025 and updated on 27 August 2026.\n\nThese circulars are relevant for financial entities falling under the DORA regulation. They specify how and when major ICT incidents and cyber threats must be reported to the CSSF to ensure operational resilience in the financial sector. Circular 26/915 further clarifies the applicability of DORA to third-country branches in Luxembourg.\n\nCSSF Circular 21/787 on the application of the EBA Guidelines (EBA/GL/2021/03) on major incident reporting under PSD2 has been repealed by Circular CSSF 25/893."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-893/",
+        "imp": "high",
+        "refnum": "Circular CSSF 25/893"
+      },
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Anwendbarkeit von DORA auf Drittstaaten-Zweigniederlassungen (Circular CSSF 26/915)",
+          "en": "Applicability of DORA to Third-Country Branches (Circular CSSF 26/915)"
+        },
+        "sl": "circular-cssf-26-915",
+        "s": {
+          "de": "Die CSSF hat das Rundschreiben CSSF 26/915 veröffentlicht, das die Anwendbarkeit des Digital Operational Resilience Act (DORA) auf Zweigniederlassungen von Drittstaatenunternehmen in Luxemburg klärt. Dieses Rundschreiben präzisiert, inwiefern die DORA-Anforderungen für diese spezifische Art von Finanzunternehmen gelten.\n\nDas Rundschreiben ist relevant für alle Finanzunternehmen in Luxemburg, die als Zweigniederlassungen von Drittstaatenunternehmen operieren. Es schafft Klarheit bezüglich ihrer Pflichten im Rahmen von DORA und ist somit entscheidend für die Einhaltung der Vorschriften zur digitalen operationellen Resilienz.\n\nDas Rundschreiben wurde am 27. August 2026 veröffentlicht und aktualisiert mehrere frühere Rundschreiben der CSSF, darunter solche zu Meldepflichten bei ICT-Vorfällen, zur Anwendung von ESA-Leitlinien, zu Auslagerungsvereinbarungen und zum ICT-Risikomanagement.",
+          "en": "The CSSF has published Circular CSSF 26/915, clarifying the applicability of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg. This circular specifies to what extent DORA requirements apply to this particular type of financial entity.\n\nThis circular is relevant for all financial entities operating as third-country branches in Luxembourg. It provides clarity regarding their obligations under DORA and is thus crucial for compliance with digital operational resilience regulations.\n\nThe circular was published on August 27, 2026, and updates several previous CSSF circulars, including those on reporting major ICT-related incidents, the application of ESA guidelines, outsourcing arrangements, and ICT risk management."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-cssf-26-915/",
+        "imp": "high",
+        "refnum": "Circular CSSF 26/915"
+      },
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Änderung des CSSF-Rundschreibens 20/750 zu IKT- und Sicherheitsrisikomanagement (CSSF 25/881)",
+          "en": "Amendment to CSSF Circular 20/750 on ICT and Security Risk Management (CSSF 25/881)"
+        },
+        "sl": "circular-cssf-25-881-as-amended-by-circular-cssf-26-915-updated",
+        "s": {
+          "de": "Die CSSF-Rundschreiben 25/881 und 26/915 ändern das Rundschreiben CSSF 20/750. Die Änderungen betreffen die Anforderungen an das Management von Informations- und Kommunikationstechnologie (IKT) sowie Sicherheitsrisiken.\n\nDiese Aktualisierung ist relevant für Finanzunternehmen in Luxemburg, da sie die regulatorischen Erwartungen an IKT- und Sicherheitsrisikomanagement präzisiert. Insbesondere wird die Anwendbarkeit des Digital Operational Resilience Act (DORA) auf Drittlandzweigstellen in Luxemburg thematisiert.\n\nDas Rundschreiben CSSF 20/750 wurde zuletzt am 27. August 2026 aktualisiert und ist in seiner geänderten Fassung maßgeblich.",
+          "en": "CSSF Circulars 25/881 and 26/915 amend Circular CSSF 20/750. The amendments concern requirements for information and communication technology (ICT) and security risk management.\n\nThis update is relevant for financial undertakings in Luxembourg, as it clarifies regulatory expectations for ICT and security risk management. Specifically, it addresses the applicability of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg.\n\nCircular CSSF 20/750 was last updated on August 27, 2026, and is authoritative in its amended version."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-881/",
+        "imp": "high",
+        "refnum": "Circular CSSF 25/881"
+      },
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Anforderungen an IKT-Drittdienstleistungen unter DORA (Circular CSSF 25/882)",
+          "en": "Requirements for ICT Third-Party Services under DORA (Circular CSSF 25/882)"
+        },
+        "sl": "circular-cssf-25-882-as-amended-by-circular-cssf-26-915-updated",
+        "s": {
+          "de": "Die CSSF-Rundschreiben 25/882 und 26/915 legen Anforderungen an die Nutzung von IKT-Drittdienstleistungen für Finanzunternehmen fest, die dem Digital Operational Resilience Act (DORA) unterliegen. Das Rundschreiben 25/882 wurde am 9. April 2025 veröffentlicht und am 27. August 2026 aktualisiert.\n\nDiese Rundschreiben sind für Finanzunternehmen relevant, die DORA unterliegen, und betreffen insbesondere deren Umgang mit IKT-Drittdienstleistern. Das Rundschreiben 26/915 präzisiert zudem die Anwendbarkeit von DORA auf Zweigniederlassungen aus Drittländern in Luxemburg.\n\nDie Aktualisierung des Rundschreibens 25/882 erfolgte am 27. August 2026.",
+          "en": "CSSF Circulars 25/882 and 26/915 establish requirements for the use of ICT third-party services by financial entities subject to the Digital Operational Resilience Act (DORA). Circular 25/882 was published on 9 April 2025 and updated on 27 August 2026.\n\nThese circulars are relevant for financial entities subject to DORA, particularly concerning their engagement with ICT third-party service providers. Circular 26/915 further clarifies the applicability of DORA to third-country branches in Luxembourg.\n\nThe update to Circular 25/882 was made on 27 August 2026."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-882/",
+        "imp": "high",
+        "refnum": "Circular CSSF 25/882"
+      },
       {
         "d": "27.08.2026",
         "t": {
@@ -891,93 +971,17 @@
         },
         "src": "cssf.lu",
         "ti": {
-          "de": "Aktualisierung des CSSF-Rundschreibens zu Auslagerungsvereinbarungen und DORA-Anwendbarkeit (Circular CSSF 22/806)",
-          "en": "Update of CSSF Circular on Outsourcing Arrangements and DORA Applicability (Circular CSSF 22/806)"
+          "de": "Anwendung der ESA-Leitlinien zu Kosten und Verlusten durch IKT-Vorfälle unter DORA (Circular CSSF 25/892)",
+          "en": "Application of ESA Guidelines on Costs and Losses from ICT Incidents under DORA (Circular CSSF 25/892)"
         },
-        "sl": "circular-cssf-22-806-as-amended-by-circulars-cssf-25-883-and-cssf-26-915-updated",
+        "sl": "circular-cssf-25-892-as-amended-by-circular-cssf-26-915-updated",
         "s": {
-          "de": "Die CSSF hat ihr Rundschreiben 22/806 zu Auslagerungsvereinbarungen aktualisiert. Die Aktualisierung erfolgte durch die Rundschreiben CSSF 25/883 und CSSF 26/915.\n\nDas Rundschreiben CSSF 26/915 befasst sich mit der Anwendbarkeit des Digital Operational Resilience Act (DORA) auf Zweigniederlassungen von Drittstaaten in Luxemburg. Das Rundschreiben CSSF 25/883 ändert das ursprüngliche Rundschreiben 22/806 zu Auslagerungsvereinbarungen. Für Finanzinstitute in Luxemburg bedeutet dies eine Anpassung ihrer Auslagerungsstrategien und -prozesse, insbesondere im Hinblick auf die digitale operationale Resilienz.\n\nDie Aktualisierung erfolgte am 27.08.2026. Es sind keine weiteren Fristen oder Schritte angegeben.",
-          "en": "The CSSF has updated its Circular 22/806 on outsourcing arrangements. The update was made through Circulars CSSF 25/883 and CSSF 26/915.\n\nCircular CSSF 26/915 addresses the applicability of the Digital Operational Resilience Act (DORA) to third-country branches in Luxembourg. Circular CSSF 25/883 amends the original Circular 22/806 on outsourcing arrangements. For financial institutions in Luxembourg, this means an adjustment of their outsourcing strategies and processes, particularly with regard to digital operational resilience.\n\nThe update was made on 27.08.2026. No further deadlines or steps are specified."
+          "de": "Die CSSF-Rundschreiben 25/892 und 26/915 konkretisieren die Anwendung der gemeinsamen ESA-Leitlinien zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 entstehen.\n\nDies betrifft Finanzunternehmen, die unter die DORA-Verordnung fallen, und legt fest, wie sie die finanziellen Auswirkungen von IKT-Vorfällen zu bewerten und zu melden haben. Das Rundschreiben 26/915 präzisiert zudem die Anwendbarkeit von DORA auf Drittlandzweigstellen in Luxemburg.\n\nDie Aktualisierung erfolgte am 27. August 2026.",
+          "en": "CSSF Circulars 25/892 and 26/915 specify the application of the Joint ESA Guidelines on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under Regulation (EU) 2022/2554 (DORA).\n\nThis affects financial entities subject to the DORA Regulation, stipulating how they must assess and report the financial impact of ICT incidents. Circular 26/915 further clarifies the applicability of DORA to third-country branches in Luxembourg.\n\nThe update was published on August 27, 2026."
         },
-        "url": "https://www.cssf.lu/en/Document/circular-cssf-22-806/",
+        "url": "https://www.cssf.lu/en/Document/circular-cssf-25-892/",
         "imp": "high",
-        "refnum": "Circular CSSF 22/806"
-      },
-      {
-        "d": "30.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Mitteilung zu Management-Meldungen und Abmeldungen mit europäischem Pass für in Luxemburg ansässige IFMs – Änderungen durch AIFMD II",
-          "en": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD I"
-        },
-        "sl": "communication-regarding-management-notifications-and-de-notifications-with-a-eur",
-        "s": {
-          "de": "Die CSSF informiert über Änderungen bei der Notifizierung von grenzüberschreitenden Management- und Marketingaktivitäten für luxemburgische Investmentfondsmanager (IFMs) im Europäischen Wirtschaftsraum (EWR). Dies geschieht im Zuge der Umsetzung der AIFMD II (Richtlinie (EU) 2024/927) in luxemburgisches Recht durch das Gesetz vom 3. März 2026.\n\nFür UCITS-Verwaltungsgesellschaften und zugelassene AIFM wurden zusätzliche Aktivitäten, Funktionen und Dienstleistungen eingeführt. Die CSSF hat aktualisierte Vorlagen für Notifizierungsschreiben sowie ein aktualisiertes eDesk-Modul (oder CSSF API-Lösung) bereitgestellt, die ab dem 31. Juli 2026 zu verwenden sind. Bevor IFMs diese neuen Aktivitäten in einem anderen Mitgliedstaat ausüben können, müssen sie von der CSSF für diese in Luxemburg zugelassen sein.\n\nDie aktualisierten Vorlagen und das eDesk-Modul sind ab dem 31. Juli 2026 für die Notifizierung zu nutzen. Eine aktualisierte Anleitung für grenzüberschreitende Management-Notifizierungs- und De-Notifizierungsverfahren steht ebenfalls zur Verfügung.",
-          "en": "The CSSF is communicating changes regarding the notification of cross-border management and marketing activities for Luxembourg-domiciled Investment Fund Managers (IFMs) within the European Economic Area (EEA). These changes follow the transposition of AIFMD II (Directive (EU) 2024/927) into Luxembourg law by the Law of 3 March 2026.\n\nAdditional activities, functions, and services have been introduced for UCITS management companies and authorised Alternative Investment Fund Managers (AIFMs). The CSSF has published updated notification letter templates and an updated eDesk module (or CSSF API solution), which must be used from 31 July 2026. Before IFMs can pursue these new activities in another Member State, they must first be authorised by the CSSF to provide them in Luxembourg.\n\nThe updated templates and the eDesk module must be used for notifications as of 31 July 2026. Updated guidelines for cross-border management notification and de-notification procedures are also available."
-        },
-        "url": "https://www.cssf.lu/en/2026/07/communication-regarding-management-notifications-and-de-notifications-with-a-european-passport-for-luxembourg-domiciled-ifms-changes-introduced-by-the-aifmd-ii/",
-        "imp": "high"
-      },
-      {
-        "d": "27.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Start der ESMA Common Supervisory Action zur Risikomanagementfunktion von UCITS-Verwaltungsgesellschaften und AIF-Managern",
-          "en": "Launch of the ESMA Common Supervisory Action on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers"
-        },
-        "sl": "launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine gemeinsame Aufsichtsaktion (CSA) zur Risikomanagementfunktion von OGAW-Verwaltungsgesellschaften und Verwaltern alternativer Investmentfonds (IFMs) in der EU gestartet. Ziel ist es, die Wirksamkeit und Unabhängigkeit der Risikomanagementfunktion sowie deren Ausstattung mit Personal, Autorität, Wissen und Expertise gemäß den OGAW- und AIFMD-Rahmenwerken zu überprüfen.\n\nDie CSA soll sicherstellen, dass wesentliche Risiken wie Markt-, Kredit-, Liquiditäts-, Gegenpartei-, Nachhaltigkeits- und operationelle Risiken ordnungsgemäß identifiziert, gemessen, überwacht und verwaltet werden. Die CSSF hat in diesem Rahmen luxemburgische IFMs mittels eines Fragebogens kontaktiert, der sich auf Governance, Organisation der Risikomanagementfunktion, Risikoidentifikation, -messung, -überwachung und Berichterstattung an die Geschäftsleitung konzentriert.\n\nBetroffene luxemburgische IFMs wurden von der CSSF per E-Mail informiert und müssen den Fragebogen über das eDesk Portal der CSSF einreichen. Die CSSF weist darauf hin, dass die E-Mail-Adressen der eDesk-Nutzer und deren Rollen aktuell gehalten werden müssen, um den Empfang relevanter Mitteilungen sicherzustellen.",
-          "en": "The European Securities and Markets Authority (ESMA) has launched a Common Supervisory Action (CSA) on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers (IFMs) across the EU. The objective is to assess the effectiveness and independence of the risk management function, including its staffing, authority, knowledge, and expertise, in accordance with the UCITS and AIFMD frameworks.\n\nThis CSA aims to ensure that material risks such as market, credit, liquidity, counterparty, sustainability, and operational risks are properly identified, measured, monitored, and managed. In this context, the CSSF has contacted Luxembourg-based IFMs with a questionnaire focusing on governance, organization of the risk management function, risk identification, measurement, monitoring, and reporting to senior management.\n\nAffected Luxembourg-based IFMs were informed by the CSSF via email and are required to submit the questionnaire through the CSSF’s eDesk Portal. The CSSF emphasizes the importance of keeping eDesk user email addresses and their corresponding roles up to date to ensure relevant communications are received."
-        },
-        "url": "https://www.cssf.lu/en/2026/07/launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of-ucits-management-companies-and-alternative-investment-fund-managers/",
-        "imp": "high"
-      },
-      {
-        "d": "19.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Mitteilung an die Investmentfondsbranche zur Erbringung von Nebendienstleistungen durch AIFM",
-          "en": "Communication to the investment fund industry in relation to the notification of the intention of a Luxembourg-based investment fund manager to provide ancillar"
-        },
-        "sl": "communication-to-the-investment-fund-industry-in-relation-to-the-notification-of",
-        "s": {
-          "de": "Die CSSF informiert über die Einführung zusätzlicher Aktivitäten und Funktionen für OGAW-Verwaltungsgesellschaften und zugelassene Verwalter alternativer Investmentfonds (AIFM) durch das Gesetz vom 3. März 2026, das die Richtlinie (EU) 2024/927 umsetzt. Investmentfondsmanager (IFM) können nun bestimmte Funktionen oder Aktivitäten für Dritte erbringen, sofern sie diese bereits für von ihnen verwaltete Organismen für gemeinsame Anlagen (OGA) oder im Rahmen bestehender Dienstleistungen anbieten.\n\nFür in Luxemburg ansässige IFM, die diese zusätzlichen Dienstleistungen erstmals anbieten möchten, hat die CSSF ein neues Formular zur Meldung der Absicht zur Erbringung von Nebendienstleistungen für Dritte veröffentlicht. Die Satzung des IFM muss entsprechend angepasst werden, um die Erbringung dieser Nebendienstleistungen im Unternehmensgegenstand zu spezifizieren. Eine Aktualisierung der Satzung erfordert keine erneute Genehmigung, sondern lediglich eine Meldung.\n\nDas neue Formular ist ausschließlich für die Meldung der in Artikel 5(4)(b)(iv) des Gesetzes von 2013 und/oder Artikel 101(3)(b), vierter Gedankenstrich des Gesetzes von 2010 genannten Nebendienstleistungen vorgesehen. Es ist nicht für andere nicht-kerngeschäftliche Dienstleistungen gemäß Artikel 5(4)(b)(i) bis (iii) bzw. Artikel 101(3)(b), erster bis dritter Gedankenstrich, zu verwenden.",
-          "en": "The CSSF announces the introduction of additional activities and functions for UCITS management companies and authorised alternative investment fund managers (AIFMs) through the Law of 3 March 2026, which transposes Directive (EU) 2024/927. Investment fund managers (IFMs) may now provide certain functions or activities to third parties, provided they already offer these for undertakings for collective investment (UCIs) they manage or as part of existing services.\n\nFor Luxembourg-based IFMs wishing to provide these additional services for the first time, the CSSF has published a new dedicated form for notifying their intention to provide ancillary services to third parties. The IFM's articles of incorporation must be updated to specify the provision of these ancillary services within their corporate object. An update to the articles of incorporation does not require a new authorisation, but only a notification.\n\nThis new form is exclusively for notifying ancillary services as per Article 5(4)(b)(iv) of the Law of 2013 and/or Article 101(3)(b), fourth indent of the Law of 2010. It is not to be used for other non-core services as per Article 5(4)(b)(i) to (iii) and/or Article 101(3)(b), first to third indent, respectively."
-        },
-        "url": "https://www.cssf.lu/en/2026/06/communication-to-the-investment-fund-industry-in-relation-to-the-notification-of-the-intention-of-a-luxembourg-based-investment-fund-manager-to-provide-ancillary-services-to-third-parties/",
-        "imp": "high"
-      },
-      {
-        "d": "16.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Gesetz über Verwalter alternativer Investmentfonds (AIFM) (konsolidierte Fassung) (Law of 12 July 2013)",
-          "en": "Law on Alternative Investment Fund Managers (AIFM) (consolidated version) (Law of 12 July 2013)"
-        },
-        "sl": "law-of-12-july-2013-consolidated-version-updated",
-        "s": {
-          "de": "Das Gesetz vom 12. Juli 2013 über Verwalter alternativer Investmentfonds (AIFM) wurde aktualisiert. Es handelt sich um eine konsolidierte Fassung des ursprünglichen Gesetzes.\n\nDieses Gesetz ist relevant für alle Unternehmen, die als Verwalter alternativer Investmentfonds in Luxemburg tätig sind. Die Aktualisierung kann Änderungen in den Anforderungen an die Geschäftstätigkeit, die Governance oder die Berichterstattung dieser Fondsverwalter mit sich bringen.\n\nDas Gesetz wurde am 16. April 2026 aktualisiert. Es ist eine konsolidierte Version verfügbar.",
-          "en": "The Law of 12 July 2013 on alternative investment fund managers (AIFM) has been updated. This is a consolidated version of the original law.\n\nThis law is relevant for all entities operating as alternative investment fund managers in Luxembourg. The update may introduce changes to the operational, governance, or reporting requirements for these fund managers.\n\nThe law was updated on 16 April 2026. A consolidated version is available."
-        },
-        "url": "https://www.cssf.lu/en/Document/law-of-12-july-2013-2/",
-        "imp": "low"
+        "refnum": "Circular CSSF 25/892"
       }
     ],
     "wpimarisk": [
@@ -2408,6 +2412,122 @@
           "en": "The AI Act Advisory Forum, an advisory body to the European Commission and the AI Board, held its inaugural meeting. Its purpose is to support the implementation and enforcement of the AI Act.\n\nDiscussions focused on the establishment of the Forum, including its rules of procedure and the election of co-chairs. Content-wise, the Commission presented the Code of Practice on Transparency on AI-generated content and sought initial input on standardization-related questions and on the draft guidelines for the classification of high-risk AI systems.\n\nThe Forum comprises 174 members from civil society, academia, and industry, including SMEs and start-ups. These members provide technical expertise and advice on various aspects of the AI Act, including standardization and implementation challenges. Their term of office is two years, with the possibility of one renewal."
         },
         "url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-convenes-its-kick-meeting",
+        "imp": "low"
+      }
+    ],
+    "cssf18698": [
+      {
+        "d": "30.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Mitteilung zu Management-Meldungen und Abmeldungen mit europäischem Pass für in Luxemburg ansässige IFMs – Änderungen durch AIFMD II",
+          "en": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD I"
+        },
+        "sl": "communication-regarding-management-notifications-and-de-notifications-with-a-eur",
+        "s": {
+          "de": "Die CSSF informiert über Änderungen bei der Notifizierung von grenzüberschreitenden Management- und Marketingaktivitäten für luxemburgische Investmentfondsmanager (IFMs) im Europäischen Wirtschaftsraum (EWR). Dies geschieht im Zuge der Umsetzung der AIFMD II (Richtlinie (EU) 2024/927) in luxemburgisches Recht durch das Gesetz vom 3. März 2026.\n\nFür UCITS-Verwaltungsgesellschaften und zugelassene AIFM wurden zusätzliche Aktivitäten, Funktionen und Dienstleistungen eingeführt. Die CSSF hat aktualisierte Vorlagen für Notifizierungsschreiben sowie ein aktualisiertes eDesk-Modul (oder CSSF API-Lösung) bereitgestellt, die ab dem 31. Juli 2026 zu verwenden sind. Bevor IFMs diese neuen Aktivitäten in einem anderen Mitgliedstaat ausüben können, müssen sie von der CSSF für diese in Luxemburg zugelassen sein.\n\nDie aktualisierten Vorlagen und das eDesk-Modul sind ab dem 31. Juli 2026 für die Notifizierung zu nutzen. Eine aktualisierte Anleitung für grenzüberschreitende Management-Notifizierungs- und De-Notifizierungsverfahren steht ebenfalls zur Verfügung.",
+          "en": "The CSSF is communicating changes regarding the notification of cross-border management and marketing activities for Luxembourg-domiciled Investment Fund Managers (IFMs) within the European Economic Area (EEA). These changes follow the transposition of AIFMD II (Directive (EU) 2024/927) into Luxembourg law by the Law of 3 March 2026.\n\nAdditional activities, functions, and services have been introduced for UCITS management companies and authorised Alternative Investment Fund Managers (AIFMs). The CSSF has published updated notification letter templates and an updated eDesk module (or CSSF API solution), which must be used from 31 July 2026. Before IFMs can pursue these new activities in another Member State, they must first be authorised by the CSSF to provide them in Luxembourg.\n\nThe updated templates and the eDesk module must be used for notifications as of 31 July 2026. Updated guidelines for cross-border management notification and de-notification procedures are also available."
+        },
+        "url": "https://www.cssf.lu/en/2026/07/communication-regarding-management-notifications-and-de-notifications-with-a-european-passport-for-luxembourg-domiciled-ifms-changes-introduced-by-the-aifmd-ii/",
+        "imp": "high"
+      },
+      {
+        "d": "27.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Start der ESMA Common Supervisory Action zur Risikomanagementfunktion von UCITS-Verwaltungsgesellschaften und AIF-Managern",
+          "en": "Launch of the ESMA Common Supervisory Action on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers"
+        },
+        "sl": "launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine gemeinsame Aufsichtsaktion (CSA) zur Risikomanagementfunktion von OGAW-Verwaltungsgesellschaften und Verwaltern alternativer Investmentfonds (IFMs) in der EU gestartet. Ziel ist es, die Wirksamkeit und Unabhängigkeit der Risikomanagementfunktion sowie deren Ausstattung mit Personal, Autorität, Wissen und Expertise gemäß den OGAW- und AIFMD-Rahmenwerken zu überprüfen.\n\nDie CSA soll sicherstellen, dass wesentliche Risiken wie Markt-, Kredit-, Liquiditäts-, Gegenpartei-, Nachhaltigkeits- und operationelle Risiken ordnungsgemäß identifiziert, gemessen, überwacht und verwaltet werden. Die CSSF hat in diesem Rahmen luxemburgische IFMs mittels eines Fragebogens kontaktiert, der sich auf Governance, Organisation der Risikomanagementfunktion, Risikoidentifikation, -messung, -überwachung und Berichterstattung an die Geschäftsleitung konzentriert.\n\nBetroffene luxemburgische IFMs wurden von der CSSF per E-Mail informiert und müssen den Fragebogen über das eDesk Portal der CSSF einreichen. Die CSSF weist darauf hin, dass die E-Mail-Adressen der eDesk-Nutzer und deren Rollen aktuell gehalten werden müssen, um den Empfang relevanter Mitteilungen sicherzustellen.",
+          "en": "The European Securities and Markets Authority (ESMA) has launched a Common Supervisory Action (CSA) on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers (IFMs) across the EU. The objective is to assess the effectiveness and independence of the risk management function, including its staffing, authority, knowledge, and expertise, in accordance with the UCITS and AIFMD frameworks.\n\nThis CSA aims to ensure that material risks such as market, credit, liquidity, counterparty, sustainability, and operational risks are properly identified, measured, monitored, and managed. In this context, the CSSF has contacted Luxembourg-based IFMs with a questionnaire focusing on governance, organization of the risk management function, risk identification, measurement, monitoring, and reporting to senior management.\n\nAffected Luxembourg-based IFMs were informed by the CSSF via email and are required to submit the questionnaire through the CSSF’s eDesk Portal. The CSSF emphasizes the importance of keeping eDesk user email addresses and their corresponding roles up to date to ensure relevant communications are received."
+        },
+        "url": "https://www.cssf.lu/en/2026/07/launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of-ucits-management-companies-and-alternative-investment-fund-managers/",
+        "imp": "high"
+      },
+      {
+        "d": "19.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Mitteilung an die Investmentfondsbranche zur Erbringung von Nebendienstleistungen durch AIFM",
+          "en": "Communication to the investment fund industry in relation to the notification of the intention of a Luxembourg-based investment fund manager to provide ancillar"
+        },
+        "sl": "communication-to-the-investment-fund-industry-in-relation-to-the-notification-of",
+        "s": {
+          "de": "Die CSSF informiert über die Einführung zusätzlicher Aktivitäten und Funktionen für OGAW-Verwaltungsgesellschaften und zugelassene Verwalter alternativer Investmentfonds (AIFM) durch das Gesetz vom 3. März 2026, das die Richtlinie (EU) 2024/927 umsetzt. Investmentfondsmanager (IFM) können nun bestimmte Funktionen oder Aktivitäten für Dritte erbringen, sofern sie diese bereits für von ihnen verwaltete Organismen für gemeinsame Anlagen (OGA) oder im Rahmen bestehender Dienstleistungen anbieten.\n\nFür in Luxemburg ansässige IFM, die diese zusätzlichen Dienstleistungen erstmals anbieten möchten, hat die CSSF ein neues Formular zur Meldung der Absicht zur Erbringung von Nebendienstleistungen für Dritte veröffentlicht. Die Satzung des IFM muss entsprechend angepasst werden, um die Erbringung dieser Nebendienstleistungen im Unternehmensgegenstand zu spezifizieren. Eine Aktualisierung der Satzung erfordert keine erneute Genehmigung, sondern lediglich eine Meldung.\n\nDas neue Formular ist ausschließlich für die Meldung der in Artikel 5(4)(b)(iv) des Gesetzes von 2013 und/oder Artikel 101(3)(b), vierter Gedankenstrich des Gesetzes von 2010 genannten Nebendienstleistungen vorgesehen. Es ist nicht für andere nicht-kerngeschäftliche Dienstleistungen gemäß Artikel 5(4)(b)(i) bis (iii) bzw. Artikel 101(3)(b), erster bis dritter Gedankenstrich, zu verwenden.",
+          "en": "The CSSF announces the introduction of additional activities and functions for UCITS management companies and authorised alternative investment fund managers (AIFMs) through the Law of 3 March 2026, which transposes Directive (EU) 2024/927. Investment fund managers (IFMs) may now provide certain functions or activities to third parties, provided they already offer these for undertakings for collective investment (UCIs) they manage or as part of existing services.\n\nFor Luxembourg-based IFMs wishing to provide these additional services for the first time, the CSSF has published a new dedicated form for notifying their intention to provide ancillary services to third parties. The IFM's articles of incorporation must be updated to specify the provision of these ancillary services within their corporate object. An update to the articles of incorporation does not require a new authorisation, but only a notification.\n\nThis new form is exclusively for notifying ancillary services as per Article 5(4)(b)(iv) of the Law of 2013 and/or Article 101(3)(b), fourth indent of the Law of 2010. It is not to be used for other non-core services as per Article 5(4)(b)(i) to (iii) and/or Article 101(3)(b), first to third indent, respectively."
+        },
+        "url": "https://www.cssf.lu/en/2026/06/communication-to-the-investment-fund-industry-in-relation-to-the-notification-of-the-intention-of-a-luxembourg-based-investment-fund-manager-to-provide-ancillary-services-to-third-parties/",
+        "imp": "high"
+      },
+      {
+        "d": "16.04.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Gesetz über Verwalter alternativer Investmentfonds (AIFM) (konsolidierte Fassung) (Law of 12 July 2013)",
+          "en": "Law on Alternative Investment Fund Managers (AIFM) (consolidated version) (Law of 12 July 2013)"
+        },
+        "sl": "law-of-12-july-2013-consolidated-version-updated",
+        "s": {
+          "de": "Das Gesetz vom 12. Juli 2013 über Verwalter alternativer Investmentfonds (AIFM) wurde aktualisiert. Es handelt sich um eine konsolidierte Fassung des ursprünglichen Gesetzes.\n\nDieses Gesetz ist relevant für alle Unternehmen, die als Verwalter alternativer Investmentfonds in Luxemburg tätig sind. Die Aktualisierung kann Änderungen in den Anforderungen an die Geschäftstätigkeit, die Governance oder die Berichterstattung dieser Fondsverwalter mit sich bringen.\n\nDas Gesetz wurde am 16. April 2026 aktualisiert. Es ist eine konsolidierte Version verfügbar.",
+          "en": "The Law of 12 July 2013 on alternative investment fund managers (AIFM) has been updated. This is a consolidated version of the original law.\n\nThis law is relevant for all entities operating as alternative investment fund managers in Luxembourg. The update may introduce changes to the operational, governance, or reporting requirements for these fund managers.\n\nThe law was updated on 16 April 2026. A consolidated version is available."
+        },
+        "url": "https://www.cssf.lu/en/Document/law-of-12-july-2013-2/",
+        "imp": "low"
+      },
+      {
+        "d": "30.09.2025",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "FAQ zum AML/CFT Market Entry Form (Fonds und IFMs) (aktualisiert)",
+          "en": "FAQ regarding the AML/CFT Market Entry Form (Funds and IFMs) (Updated)"
+        },
+        "sl": "faq-regarding-the-aml-cft-market-entry-form-funds-and-ifms-updated",
+        "s": {
+          "de": "Die CSSF hat eine aktualisierte Version ihrer FAQ zum AML/CFT Market Entry Form (Funds and IFMs) veröffentlicht. Dieses Dokument enthält eine Liste von Fragen und Antworten zur Ausfüllung des Formulars in eDesk.\n\nDie FAQ richten sich an Fonds und Investmentfondsmanager (IFMs) in Luxemburg und dienen der Unterstützung bei der korrekten und vollständigen Einreichung des AML/CFT Market Entry Formulars über die eDesk-Plattform. Dies ist relevant für alle, die in den luxemburgischen Markt eintreten möchten oder ihre bestehenden Informationen aktualisieren müssen.\n\nDie vorliegende Version 9 wurde am 30. September 2025 aktualisiert. Ein zugehöriger User Guide für das eDesk Market Entry Form ist ebenfalls verfügbar.",
+          "en": "The CSSF has published an updated version of its FAQ regarding the AML/CFT Market Entry Form (Funds and IFMs). This document provides a list of questions and answers concerning the completion of the form in eDesk.\n\nThe FAQs are aimed at funds and investment fund managers (IFMs) in Luxembourg and are intended to assist them in correctly and completely submitting the AML/CFT Market Entry Form via the eDesk platform. This is relevant for all entities wishing to enter the Luxembourg market or needing to update their existing information.\n\nThis Version 9 was updated on September 30, 2025. A related User Guide for the eDesk Market Entry Form is also available."
+        },
+        "url": "https://www.cssf.lu/en/Document/faq-regarding-the-aml-cft-market-entry-form-funds-and-ifms/",
+        "imp": "low"
+      },
+      {
+        "d": "20.05.2025",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "FAQ zum luxemburgischen AIFM-Gesetz (Version 24)",
+          "en": "FAQ concerning the Luxembourg Law of 12 July 2013 on alternative investment fund managers (Version 24)"
+        },
+        "sl": "faq-concerning-the-luxembourg-law-of-12-july-2013-on-alternative-investment-fund",
+        "s": {
+          "de": "Die CSSF hat eine aktualisierte Version ihrer FAQ zum luxemburgischen Gesetz vom 12. Juli 2013 über Verwalter alternativer Investmentfonds (AIFM) veröffentlicht. Diese Version 24 enthält Klarstellungen und Präzisierungen zu verschiedenen Aspekten der Regulierung von AIFM in Luxemburg.\n\nDie FAQ richten sich an alle AIFM, die unter das luxemburgische Gesetz fallen. Sie bieten Orientierungshilfen für die Einhaltung der regulatorischen Anforderungen und tragen dazu bei, ein einheitliches Verständnis und eine konsistente Anwendung der Vorschriften sicherzustellen.\n\nDie Aktualisierung erfolgte am 20. Mai 2025.",
+          "en": "The CSSF has published an updated version of its FAQ concerning the Luxembourg Law of 12 July 2013 on alternative investment fund managers (AIFM). This Version 24 provides clarifications and precisions on various aspects of the regulation of AIFMs in Luxembourg.\n\nThe FAQ are addressed to all AIFMs falling under the scope of the Luxembourg law. They offer guidance for compliance with regulatory requirements and contribute to ensuring a uniform understanding and consistent application of the rules.\n\nThe update was made on May 20, 2025."
+        },
+        "url": "https://www.cssf.lu/en/Document/faq-alternative-investment-fund-managers/",
         "imp": "low"
       }
     ],
