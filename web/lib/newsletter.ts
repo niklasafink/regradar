@@ -22,7 +22,7 @@ import { PROVIDERS } from "./data";
 import { addIdentifyParam } from "./datafast";
 import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
-import { authority, daysUntil, dt } from "./logic";
+import { authority, daysUntil, dt, groupByTopic, tx } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { createFreqToken, type Frequency } from "./email";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
@@ -202,15 +202,14 @@ export function renderNewsletter(
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
 
-  const items = shown
-    .map(({ slug, fw, u }) => {
-      const deadline =
-        u.deadline && daysUntil(u.deadline) >= 0
-          ? `<span style="color:${daysUntil(u.deadline) < 60 ? "#dc2626" : "#64748b"}">Frist ${fmtDe(u.deadline)}</span>`
-          : "";
-      const eff = u.eff ? `<span style="color:#64748b">Gilt ab ${fmtDe(u.eff)}</span>` : "";
-      const meta = [deadline, eff].filter(Boolean).join(" &nbsp; ");
-      return `
+  const updateRow = ({ slug, fw, u }: UpdatePage): string => {
+    const deadline =
+      u.deadline && daysUntil(u.deadline) >= 0
+        ? `<span style="color:${daysUntil(u.deadline) < 60 ? "#dc2626" : "#64748b"}">Frist ${fmtDe(u.deadline)}</span>`
+        : "";
+    const eff = u.eff ? `<span style="color:#64748b">Gilt ab ${fmtDe(u.eff)}</span>` : "";
+    const meta = [deadline, eff].filter(Boolean).join(" &nbsp; ");
+    return `
       <tr><td style="padding:20px 0;border-bottom:1px solid #f1f5f9">
         <p style="margin:0 0 6px;font-size:12px;color:#64748b">
           <span class="num">${fmtDe(u.d)}</span> &nbsp;
@@ -225,7 +224,16 @@ export function renderNewsletter(
           ${meta ? " &nbsp; " : ""}<span style="color:#94a3b8">${esc(fw.n.de)}, ${esc(fw.ref)}</span>
         </p>
       </td></tr>`;
-    })
+  };
+
+  const groups = groupByTopic(shown, (p) => p.fw.topic);
+
+  const sections = groups
+    .map(({ topic, items }) => `
+      <p style="margin:20px 0 4px;font-size:14px;font-weight:700;color:#0f172a">${esc(tx("de", topic.n))}</p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
+        ${items.map(updateRow).join("")}
+      </table>`)
     .join("");
 
   const text = [
@@ -236,21 +244,25 @@ export function renderNewsletter(
       : `${pages.length} neue regulatorische Updates`,
     "Neu veröffentlichte Meldungen aus den Primärquellen, kompakt zusammengefasst.",
     "",
-    ...shown.flatMap(({ slug, fw, u }) => {
-      const meta = [
-        u.deadline && daysUntil(u.deadline) >= 0 ? `Frist ${fmtDe(u.deadline)}` : "",
-        u.eff ? `Gilt ab ${fmtDe(u.eff)}` : "",
-        `${fw.n.de}, ${fw.ref}`,
-      ].filter(Boolean).join(" · ");
-      return [
-        `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)}`,
-        u.ti.de,
-        firstParagraph(u.s.de),
-        meta,
-        `${base}/u/${slug}`,
-        "",
-      ];
-    }),
+    ...groups.flatMap(({ topic, items }) => [
+      `## ${tx("de", topic.n)}`,
+      "",
+      ...items.flatMap(({ slug, fw, u }) => {
+        const meta = [
+          u.deadline && daysUntil(u.deadline) >= 0 ? `Frist ${fmtDe(u.deadline)}` : "",
+          u.eff ? `Gilt ab ${fmtDe(u.eff)}` : "",
+          `${fw.n.de}, ${fw.ref}`,
+        ].filter(Boolean).join(" · ");
+        return [
+          `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)}`,
+          u.ti.de,
+          firstParagraph(u.s.de),
+          meta,
+          `${base}/u/${slug}`,
+          "",
+        ];
+      }),
+    ]),
     ...(more > 0 ? [`… und ${more} weitere Updates auf der Website.`, ""] : []),
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
@@ -280,9 +292,7 @@ export function renderNewsletter(
     <p style="margin:0 0 8px;font-size:14px;color:#64748b">
       Neu veröffentlichte Meldungen aus den Primärquellen, kompakt zusammengefasst.
     </p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
-      ${items}
-    </table>
+    ${sections}
     ${more > 0 ? `<p style="margin:16px 0 0;font-size:13px;color:#64748b">und ${more} weitere Updates auf der Website.</p>` : ""}
     <p style="margin:28px 0 16px">
       <a href="${base}/updates"

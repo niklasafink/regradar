@@ -2046,11 +2046,6 @@ export const FRAMEWORKS: Framework[] = [
     ref:"VO (EU) 2022/1925", cond:null,
     refUrl:"https://eur-lex.europa.eu/eli/reg/2022/1925/oj/deu",
     u:[
-      {d:"02.09.2026", t:{de:"Urteil",en:"Judgment"}, src:"curia.europa.eu",
-       url:"https://curia.europa.eu/juris/documents.jsf?num=T-357/24",
-       ti:{de:"Gericht bestätigt: Microsoft Edge kein Torwächter-Dienst",en:"General Court confirms Microsoft Edge is not a gatekeeper service"},
-       s:{de:"Das Gericht der EU weist die Klage von Opera Norway (Rechtssache T-357/24) in vollem Umfang ab und bestätigt, dass die Kommission Microsoft zu Recht nicht als Torwächter für den Browser Edge benannt hat – u. a. wegen geringer Nutzerzahl und fehlender eigenständiger Kontrolle über die Browser-Engine. Das Urteil konkretisiert die Kriterien für die Torwächter-Benennung von Plattformdiensten.",
-          en:"The EU General Court fully dismisses Opera Norway's action (Case T-357/24) and confirms the Commission was right not to designate Microsoft as a gatekeeper for the Edge browser – citing low user numbers and Microsoft's limited independent control over the browser engine, among other factors. The judgment clarifies the criteria for gatekeeper designation of platform services."}},
       {d:"06.03.2024", t:{de:"Mitteilung",en:"Statement"}, src:"ec.europa.eu",
        url:"https://digital-markets-act.ec.europa.eu/gatekeepers-portal_en",
        ti:{de:"Torwächter-Pflichten treten in Kraft",en:"Gatekeeper obligations take effect"},

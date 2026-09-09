@@ -23,7 +23,7 @@ TIMEOUT = 90
 # Format-Version des Prompts. Bei inhaltlichen Änderungen hochzählen – der
 # nächste Export bewertet dann alle Kandidaten neu (alte Cache-Einträge unter
 # der Vorversion werden ignoriert).
-FORMAT = 2
+FORMAT = 3
 
 SYSTEM_PROMPT = (
     "Du filterst einen Regulatory-News-Feed für Compliance-Abteilungen von "
@@ -45,7 +45,19 @@ SYSTEM_PROMPT = (
     "unverbindliche Nischenberichte internationaler Standardsetzer (IOSCO, "
     "CPMI, BIS, FSB u. ä. – Diskussionspapiere, Marktstudien, Final Reports "
     "ohne verbindliche Umsetzungspflicht), außer sie konkretisieren explizit "
-    "ein bereits verfolgtes bindendes EU-/DE-Rahmenwerk.\n\n"
+    "ein bereits verfolgtes bindendes EU-/DE-Rahmenwerk. Ebenfalls NICHT "
+    "RELEVANT: Aufsichtsmaßnahmen oder Verwaltungsmitteilungen, die sich "
+    "ausschließlich auf ein einzelnes, namentlich genanntes Institut oder "
+    "einen einzelnen Marktteilnehmer beziehen (z. B. eine Anordnung gegen "
+    "ein bestimmtes Kreditinstitut, eine Schwellenwert- oder "
+    "Registrierungsmitteilung zu einem einzelnen Benchmark-Administrator), "
+    "ohne dass sich das Rahmenwerk selbst ändert – das ist ein Einzelfall-"
+    "/Praxis-Signal, kein Update für alle Institute. Ebenfalls NICHT "
+    "RELEVANT: Gerichtsentscheidungen, die lediglich eine bestehende "
+    "Einstufung oder Entscheidung für ein einzelnes Unternehmen bestätigen "
+    "oder eine Klage dagegen abweisen, ohne eine verallgemeinerbare neue "
+    "Auslegung für die Breite der Institute zu schaffen (z. B. Bestätigung, "
+    "dass ein bestimmter Dienst kein Torwächter-/Gatekeeper-Dienst ist).\n\n"
     "Du erhältst eine JSON-Liste von Objekten mit id und text. Antworte "
     "ausschließlich mit einem JSON-Objekt, das jede id auf true (relevant) "
     "oder false (nicht relevant) abbildet. Keine Erklärungen."

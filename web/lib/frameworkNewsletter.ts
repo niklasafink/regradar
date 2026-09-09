@@ -17,8 +17,8 @@
 // nichts verschickt (sonst käme die gesamte Datenbank als "neu").
 
 import { Resend } from "resend";
-import { FRAMEWORKS, PROVIDERS, TOPICS, type Framework, type Topic } from "./data";
-import { parentOf, tx } from "./logic";
+import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
+import { groupByTopic, parentOf, tx } from "./logic";
 import { addIdentifyParam } from "./datafast";
 import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
@@ -144,21 +144,6 @@ function fwTitle(fw: Framework): { html: string; text: string } {
   return { html: esc(abbr), text: abbr };
 }
 
-/** Rahmenwerke nach Themengebiet gruppiert (Reihenfolge wie TOPICS in
-    data.ts), damit die Newsletter-Übersicht z. B. IT-Governance,
-    Meldewesen und Geldwäsche als eigene Abschnitte zeigt. */
-function groupByTopic(frameworks: Framework[]): { topic: Topic; items: Framework[] }[] {
-  const groups = new Map<string, Framework[]>();
-  for (const fw of frameworks) {
-    const list = groups.get(fw.topic) ?? [];
-    list.push(fw);
-    groups.set(fw.topic, list);
-  }
-  return TOPICS
-    .map((topic) => ({ topic, items: groups.get(topic.id) ?? [] }))
-    .filter((g) => g.items.length > 0);
-}
-
 /** E-Mail im Site-Design (schwarz-weiß, große Typo, Pill-Buttons), analog
     zum Update-Newsletter. Liefert HTML plus Plain-Text-Alternative. */
 export function renderFwNewsletter(
@@ -198,7 +183,7 @@ export function renderFwNewsletter(
         <p style="margin:0;font-size:13px;line-height:1.55;color:#475569">${esc(fw.about.de)}</p>
       </td></tr>`;
 
-  const fwGroups = groupByTopic(frameworks);
+  const fwGroups = groupByTopic(frameworks, (fw) => fw.topic);
 
   const fwSections = fwGroups
     .map(({ topic, items }) => `

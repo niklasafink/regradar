@@ -343,25 +343,6 @@
     ],
     "crr3": [
       {
-        "d": "08.09.2026",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Landwirtschaftliche Rentenbank: Bafin ordnet Sicherstellung der ordnungsgemäßen Geschäftsorganisation und zusätzliche Eigenmittelanforderungen an",
-          "en": "Landwirtschaftliche Rentenbank: Bafin ordnet Sicherstellung der ordnungsgemäßen Geschäftsorganisation und zusätzliche Eigenmittelanforderungen an"
-        },
-        "sl": "landwirtschaftliche-rentenbank-bafin-ordnet-sicherstellung-der-ordnungsgemaessen",
-        "s": {
-          "de": "Die BaFin hat der Landwirtschaftlichen Rentenbank die Sicherstellung einer ordnungsgemäßen Geschäftsorganisation sowie zusätzliche Eigenmittelanforderungen auferlegt. Eine Sonderprüfung im Jahr 2025 zeigte Mängel in den Verfahren zur Ermittlung und Sicherstellung der Risikotragfähigkeit, was einen Verstoß gegen das Kreditwesengesetz darstellt.\n\nDiese Anordnung betrifft die Landwirtschaftliche Rentenbank und verpflichtet sie, die festgestellten organisatorischen Mängel zu beheben. Bis zur vollständigen Beseitigung dieser Mängel muss das Institut zusätzliche Eigenmittel vorhalten. Die Maßnahmen basieren auf § 25a Abs. 1 und 2 KWG, der die Anforderungen an eine ordnungsgemäße Geschäftsorganisation und das Risikomanagement regelt.\n\nDie Maßnahmen der BaFin sind seit dem 15. August 2026 bzw. 21. August 2026 bestandskräftig.",
-          "en": "The BaFin has ordered the Landwirtschaftliche Rentenbank to ensure proper business organization and to hold additional capital. A special audit in 2025 revealed deficiencies in the procedures for determining and ensuring risk-bearing capacity, which constitutes a violation of the German Banking Act.\n\nThis order affects the Landwirtschaftliche Rentenbank, obliging it to rectify the identified organizational shortcomings. Until these deficiencies are fully addressed, the institution must hold additional capital. The measures are based on Section 25a (1) and (2) of the German Banking Act (KWG), which regulates the requirements for proper business organization and risk management.\n\nThe BaFin's measures have been legally binding since August 15, 2026, and August 21, 2026, respectively."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_08_landwirtschaftliche_rentenbank.html?cms_expanded=true",
-        "imp": "high"
-      },
-      {
         "d": "17.07.2026",
         "t": {
           "de": "ITS",
@@ -502,26 +483,6 @@
       }
     ],
     "bmr": [
-      {
-        "d": "07.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Erklärung zu signifikanten Benchmarks der SIX Index AG gemäß BMR (ESMA81-1841807023-1139)",
-          "en": "Statement on Significant benchmarks notified under Article 24(2) of the Benchmark Regulation - SIX Index AG (ESMA81-1841807023-1139)"
-        },
-        "sl": "statement-on-significant-benchmarks-notified-under-article-24-2-of-the-benchmark",
-        "s": {
-          "de": "Die ESMA hat eine Mitteilung der SIX Index AG gemäß Artikel 24 Absatz 2 der Benchmark-Verordnung (BMR) erhalten. Darin wird mitgeteilt, dass die unten genannten Benchmarks den Schwellenwert von 50 Milliarden Euro gemäß Artikel 24 Absatz 1 BMR erreicht haben.\n\nInfolgedessen veröffentlicht die ESMA diese Erklärung gemäß Artikel 24 Absatz 2 BMR, um festzulegen, dass die Benchmarks \"SARON Index\" und \"Swiss Market Index SMI®\" gemäß Artikel 24 Absatz 1 Buchstabe a BMR als signifikant eingestuft werden. Dies betrifft die SIX Index AG als Administrator mit Sitz in der Schweiz.\n\nDie ESMA wird ihr Register aktualisieren, um die relevanten Merkmale dieser Benchmarks als signifikant gemäß Artikel 24 Absatz 2 BMR aufzunehmen.",
-          "en": "ESMA has received a notification from SIX Index AG in accordance with Article 24(2) of the Benchmark Regulation (BMR). This notification states that the benchmarks listed below have reached the threshold of EUR 50 billion as referred to in Article 24(1) of the BMR.\n\nConsequently, ESMA is publishing this statement in accordance with Article 24(2) of the BMR to specify that the benchmarks “SARON Index” and “Swiss Market Index SMI®” are significant according to Article 24(1)(a) of the BMR. This applies to SIX Index AG as the administrator based in Switzerland.\n\nESMA will update its register to include the relevant characteristics of these benchmarks as significant pursuant to Article 24(2) of the BMR."
-        },
-        "url": "https://www.esma.europa.eu/document/statement-significant-benchmarks-notified-under-article-242-benchmark-regulation-six-index",
-        "imp": "low",
-        "refnum": "ESMA81-1841807023-1139"
-      },
       {
         "d": "12.02.2026",
         "t": {

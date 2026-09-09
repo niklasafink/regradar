@@ -435,6 +435,37 @@ class QaSweepSept2026(unittest.TestCase):
         from regradar.webexport import _classify
         self.assertIsNone(_classify("Consultation paper on the reporting framework under EMIR - Reply form"))
 
+    def test_individual_bafin_measure_is_not_a_framework_update(self):
+        """BaFin-Einzelfall-Anordnungen gegen ein namentlich genanntes Institut
+        (§ 60b KWG u. Ä.) sind kein CRR3-Update für alle Institute, sondern
+        ausschließlich ein Praxis-Signal (s. PRAXIS_RULES/_praxis_category,
+        die dieselbe URL bereits korrekt als "massnahme" erkennen). Befund
+        vom 10.09.2026: Anordnung gegen die Landwirtschaftliche Rentenbank
+        erschien fälschlich als allgemeines CRR3-Update, weil der Titel keine
+        Bußgeld-/Zwangsgeld-/Verwarnung-Wörter enthält."""
+        from regradar.webexport import _classify, _praxis_category
+        title = ("Landwirtschaftliche Rentenbank: Bafin ordnet Sicherstellung der "
+                  "ordnungsgemäßen Geschäftsorganisation und zusätzliche "
+                  "Eigenmittelanforderungen an")
+        url = ("https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/"
+               "60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_08_landwirtschaftliche_rentenbank.html")
+        self.assertIsNone(_classify(title, source_id="bafin", url=url))
+        self.assertEqual(_praxis_category(title, url), "massnahme")
+
+    def test_significant_benchmark_notice_is_noise(self):
+        """ESMA-Erklärungen zu einzelnen Benchmark-Administratoren, die den
+        Signifikanz-Schwellenwert erreichen (Art. 24 Abs. 2 BMR), betreffen
+        nur EIN Unternehmen und ändern das Rahmenwerk selbst nicht — kein
+        Update. Befund vom 10.09.2026: SIX Index AG erschien fälschlich als
+        allgemeines BMR-Update."""
+        from regradar.webexport import _classify
+        self.assertIsNone(_classify(
+            "Erklärung zu signifikanten Benchmarks der SIX Index AG gemäß BMR (ESMA81-1841807023-1139)",
+            source_id="esma"))
+        self.assertIsNone(_classify(
+            "Statement on Significant benchmarks notified under Article 24(2) of the Benchmark Regulation",
+            source_id="esma"))
+
     def test_title_key_ignores_suffixes(self):
         from regradar.webexport import _title_key
         self.assertEqual(_title_key("ESMA authorises EuroCTP - Press release"), _title_key("ESMA authorises EuroCTP"))
@@ -686,6 +717,18 @@ class LlmRelevanceFilter(unittest.TestCase):
         for phrase in ("Verfahrens- oder Kostenentscheidungen",
                        "Schlussanträge des Generalanwalts",
                        "Nischenberichte internationaler Standardsetzer"):
+            self.assertIn(phrase, SYSTEM_PROMPT)
+
+    def test_prompt_excludes_individual_entity_actions_and_confirmatory_rulings(self):
+        """Befund vom 10.09.2026: Einzelfall-Anordnung (Rentenbank), Einzel-
+        Administrator-Mitteilung (SIX Index AG) und ein bestätigendes Urteil
+        ohne verallgemeinerbare Auslegung (Microsoft Edge/Torwächter) wurden
+        fälschlich als Rahmenwerk-Updates behandelt. Der Prompt muss diese
+        drei Fallgruppen explizit als NICHT RELEVANT nennen."""
+        from regradar.llmfilter import SYSTEM_PROMPT
+        for phrase in ("einzelnes, namentlich genanntes Institut",
+                       "einzelnen Benchmark-Administrator",
+                       "Torwächter-/Gatekeeper-Dienst"):
             self.assertIn(phrase, SYSTEM_PROMPT)
 
     def test_old_table_is_migrated_and_old_verdicts_ignored(self):

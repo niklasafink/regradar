@@ -366,7 +366,22 @@ NOISE = re.compile(
     r"geldbuße|bußgeld|zwangsgeld|verwarnt|workshop|webinar|anmeldung|"
     r"tragic incident|condolence|stakeholder group|stakeholder event|photo gallery|"
     r"anordnung über die vertretung|vertretung der bundesrepublik|"
-    r"stellenausschreibung|management board meeting", re.IGNORECASE)
+    r"stellenausschreibung|management board meeting|"
+    # Einzelinstitut-/Einzeladministrator-Meldungen ohne Regelungswirkung für
+    # die breite Zielgruppe (nur EIN benanntes Unternehmen betroffen, keine
+    # Änderung des Rahmenwerks selbst) — z. B. ESMA-Erklärungen zu einzelnen
+    # Benchmark-Administratoren, die den Signifikanz-Schwellenwert erreichen.
+    r"erklärung zu signifikanten benchmarks|statement on significant benchmarks|"
+    r"notified under article 24", re.IGNORECASE)
+
+# BaFin-Einzelfall-Maßnahmen gegen ein namentlich genanntes Institut (§ 60b
+# KWG, § 84 WpIG, § 57 GwG u. Ä.): kein Rahmenwerk-Update für alle Institute,
+# sondern ausschließlich ein Praxis-Signal (s. _praxis_category/PRAXIS_RULES,
+# die dieselbe URL bereits als "massnahme" erkennen). Ohne diesen Check
+# würde z. B. eine Anordnung gegen ein einzelnes Kreditinstitut (die keine
+# Bußgeld-/Zwangsgeld-/Verwarnung-Wörter enthält) fälschlich als allgemeines
+# CRR3-Update erscheinen.
+INDIVIDUAL_MEASURE_URL = re.compile(r"/massnahmen/", re.IGNORECASE)
 
 
 # Gesetzgebungsquellen (BGBl, DIP, Gesetze im Internet) decken alle Rechts-
@@ -388,10 +403,13 @@ OFFTOPIC_DE = re.compile(
 
 def _classify(text: str, forced: Optional[str] = None,
               source_id: Optional[str] = None,
-              title: Optional[str] = None) -> Optional[str]:
+              title: Optional[str] = None,
+              url: Optional[str] = None) -> Optional[str]:
     """title: Originaltitel für den Fachfremd-Filter (Teaser nennen bei
     Finanzgesetzen auch Asylsuchende, Krankenversicherung u. ä.)."""
     if NOISE.search(text):
+        return None
+    if url and INDIVIDUAL_MEASURE_URL.search(url):
         return None
     if source_id in LEGISLATION_SOURCES and OFFTOPIC_DE.search(title if title is not None else text):
         return None
@@ -612,7 +630,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         fw_id = _classify(
             "{} {}".format(r["title"] or "", r["summary"] or ""),
             forced="amla" if r["source_id"] == "amla" else None,
-            source_id=r["source_id"], title=r["title"])
+            source_id=r["source_id"], title=r["title"], url=r["canonical_url"])
         if not fw_id:
             continue
         date = _de_date(r["publication_date"]) or _de_date(r["first_seen_at"][:10])

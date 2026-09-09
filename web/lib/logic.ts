@@ -11,6 +11,25 @@ export type Answers = Record<string, string[]>;
 
 export const tx = (lang: Lang, t: Txt): string => t[lang] ?? t.de;
 
+/** Beliebige Liste nach Themengebiet gruppiert (Reihenfolge wie TOPICS in
+    data.ts), z. B. für Newsletter-Gliederungen nach IT-Governance,
+    Meldewesen, Geldwäsche usw. */
+export function groupByTopic<T>(
+  items: T[],
+  topicOf: (item: T) => string,
+): { topic: Topic; items: T[] }[] {
+  const groups = new Map<string, T[]>();
+  for (const item of items) {
+    const key = topicOf(item);
+    const list = groups.get(key) ?? [];
+    list.push(item);
+    groups.set(key, list);
+  }
+  return TOPICS
+    .map((topic) => ({ topic, items: groups.get(topic.id) ?? [] }))
+    .filter((g) => g.items.length > 0);
+}
+
 export const dt = (d: string): Date => {
   const [day, month, year] = d.split(".").map(Number);
   return new Date(year, month - 1, day);
