@@ -17,7 +17,12 @@
 
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { Resend } from "resend";
+import type { ApproveKind } from "./email";
 import { senderFields } from "./email";
+import { runFwNewsletter } from "./frameworkNewsletter";
+import { runNewsletter } from "./newsletter";
+import { runPraxisNewsletter } from "./praxisNewsletter";
+import { acquireQuotaRetry, readQuotaBlock } from "./sendProgress";
 import { redis } from "./subscribers";
 import {
   evaluate,
@@ -134,10 +139,48 @@ export async function readAlerts(): Promise<Record<string, AlertRecord>> {
   return (await redis().hgetall<Record<string, AlertRecord>>(KEY_ALERTS)) ?? {};
 }
 
+// ------------------------------------------------------ Newsletter-Kontingent
+//
+// Scheitert ein Sendelauf an Resends Tages-/Monatslimit, bricht er sofort ab
+// und hinterlässt einen Block-Zustand (lib/sendProgress.ts setQuotaBlock) plus
+// eine Sofort-Mail an den Betreiber (lib/email.ts sendQuotaExceededAlert).
+// Hier, im selben stündlichen Takt wie die Scraper-Überwachung, wird geprüft,
+// ob ein Block noch besteht: falls ja, stößt höchstens einmal täglich ein
+// regulärer (unapproved) Lauf der betroffenen Newsletter-Art an. Der
+// verschickt bei weiterhin offenen Abonnenten wie beim normalen Cron nur eine
+// neue Freigabe-Anfrage an den Betreiber — nie automatisch an den Verteiler,
+// der eigentliche Versand startet erst nach dessen erneutem Klick.
+const QUOTA_RUNNER: Record<ApproveKind, () => Promise<unknown>> = {
+  updates: () => runNewsletter({}),
+  frameworks: () => runFwNewsletter({}),
+  praxis: () => runPraxisNewsletter({}),
+};
+
+export async function checkQuotaBlocks(): Promise<void> {
+  for (const kind of Object.keys(QUOTA_RUNNER) as ApproveKind[]) {
+    if (!(await readQuotaBlock(kind))) continue;
+    if (!(await acquireQuotaRetry(kind))) continue; // heute schon angefragt
+    try {
+      await QUOTA_RUNNER[kind]();
+    } catch (e) {
+      console.error(`quota retry for ${kind} failed:`, e);
+    }
+  }
+}
+
 /** Bewerten, mit dem Alarm-Zustand abgleichen, Mails schicken. Schlägt der
     Versand fehl, bleibt der Alarm-Zustand unverändert (nächster Takt
     versucht es erneut). */
 export async function runCheck(opts: { sendMail?: boolean } = {}): Promise<CheckResult> {
+  // Eigener Nebenzweck desselben stündlichen Takts: pausierte Newsletter-
+  // Sendeläufe (Resend-Kontingent erschöpft) erneut anstoßen. Fehler hier
+  // dürfen die Scraper-Überwachung unten nicht beeinträchtigen.
+  try {
+    await checkQuotaBlocks();
+  } catch (e) {
+    console.error("quota block check failed:", e);
+  }
+
   const sendMail = opts.sendMail ?? true;
   const state = await readState();
   const problems = evaluate(state);

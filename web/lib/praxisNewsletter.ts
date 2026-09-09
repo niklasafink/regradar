@@ -14,9 +14,24 @@
 
 import { Resend } from "resend";
 import { addIdentifyParam } from "./datafast";
-import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
+import {
+  createIdToken,
+  createSendPacer,
+  createUnsubToken,
+  isQuotaExceededError,
+  sendApprovalRequest,
+  sendQuotaExceededAlert,
+  senderFields,
+} from "./email";
 import { PRAXIS, PRAXIS_CAT_LABELS, type PraxisItem } from "./live";
-import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
+import {
+  acquireQuotaAlert,
+  acquireSendLock,
+  clearQuotaBlock,
+  releaseSendLock,
+  setQuotaBlock,
+  writeProgress,
+} from "./sendProgress";
 import { listSubscribers, redis } from "./subscribers";
 
 const MONTH_KEY = "newsletter:lastPraxisMonth";
@@ -245,6 +260,8 @@ export async function runPraxisNewsletter(opts: {
     });
   };
 
+  let quotaHit: string | null = null;
+
   try {
     await progress(false);
     for (const sub of subs) {
@@ -290,6 +307,10 @@ export async function runPraxisNewsletter(opts: {
       if (error) {
         if (writable) await redis().srem(sentSetKey(month), sub.email);
         report.errors.push(`${sub.email}: ${error.message}`);
+        if (isQuotaExceededError(error)) {
+          quotaHit = error.name;
+          break; // weitere Versuche scheitern garantiert ebenso; Rest bleibt unberührt
+        }
       } else {
         report.sent++;
       }
@@ -301,6 +322,25 @@ export async function runPraxisNewsletter(opts: {
     // Freigabe-Link nur die fehlenden Adressen nachliefert.
     if (writable && report.errors.length === 0) {
       await redis().set(MONTH_KEY, month);
+    }
+
+    if (writable) {
+      if (quotaHit) {
+        const remaining = report.recipients - (report.sent + report.skipped + report.errors.length);
+        await setQuotaBlock({
+          kind: "praxis", errorName: quotaHit, blockedAt: new Date().toISOString(),
+          sent: report.sent, remaining,
+        });
+        if (await acquireQuotaAlert("praxis")) {
+          try {
+            await sendQuotaExceededAlert("praxis", quotaHit, report.sent, remaining);
+          } catch (e) {
+            console.error("quota alert failed:", e);
+          }
+        }
+      } else {
+        await clearQuotaBlock("praxis");
+      }
     }
   } finally {
     if (writable) {

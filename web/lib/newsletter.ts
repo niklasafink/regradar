@@ -20,8 +20,23 @@
 import { Resend } from "resend";
 import { PROVIDERS } from "./data";
 import { addIdentifyParam } from "./datafast";
-import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
-import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
+import {
+  createIdToken,
+  createSendPacer,
+  createUnsubToken,
+  isQuotaExceededError,
+  sendApprovalRequest,
+  sendQuotaExceededAlert,
+  senderFields,
+} from "./email";
+import {
+  acquireQuotaAlert,
+  acquireSendLock,
+  clearQuotaBlock,
+  releaseSendLock,
+  setQuotaBlock,
+  writeProgress,
+} from "./sendProgress";
 import { authority, daysUntil, dt, groupByTopic, tx } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { createFreqToken, type Frequency } from "./email";
@@ -406,6 +421,11 @@ export async function runNewsletter(opts: {
     });
   };
 
+  // Name des Resend-Fehlers, sobald der Sendelauf am Tages-/Monatslimit
+  // gescheitert ist — dann bricht die Schleife ab, statt den Rest der Liste
+  // garantiert erfolglos durchzuprobieren.
+  let quotaHit: string | null = null;
+
   try {
     await progress(false);
     for (const sub of subs) {
@@ -457,11 +477,34 @@ export async function runNewsletter(opts: {
       if (error) {
         // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
         report.errors.push(`${sub.email}: ${error.message}`);
+        if (isQuotaExceededError(error)) {
+          quotaHit = error.name;
+          break; // weitere Versuche scheitern garantiert ebenso; Rest bleibt unberührt
+        }
       } else {
         report.sent++;
         if (writable) await setLastNotified(sub.email, nowIso);
       }
       await progress(false);
+    }
+
+    if (writable) {
+      if (quotaHit) {
+        const remaining = report.recipients - (report.sent + report.skipped + report.errors.length);
+        await setQuotaBlock({
+          kind: "updates", errorName: quotaHit, blockedAt: nowIso,
+          sent: report.sent, remaining,
+        });
+        if (await acquireQuotaAlert("updates")) {
+          try {
+            await sendQuotaExceededAlert("updates", quotaHit, report.sent, remaining);
+          } catch (e) {
+            console.error("quota alert failed:", e);
+          }
+        }
+      } else {
+        await clearQuotaBlock("updates");
+      }
     }
 
     if (writable) await redis().set(LAST_RUN_KEY, nowIso);

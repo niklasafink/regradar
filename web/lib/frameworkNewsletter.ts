@@ -20,8 +20,23 @@ import { Resend } from "resend";
 import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
 import { groupByTopic, parentOf, tx } from "./logic";
 import { addIdentifyParam } from "./datafast";
-import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
-import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
+import {
+  createIdToken,
+  createSendPacer,
+  createUnsubToken,
+  isQuotaExceededError,
+  sendApprovalRequest,
+  sendQuotaExceededAlert,
+  senderFields,
+} from "./email";
+import {
+  acquireQuotaAlert,
+  acquireSendLock,
+  clearQuotaBlock,
+  releaseSendLock,
+  setQuotaBlock,
+  writeProgress,
+} from "./sendProgress";
 import { listSubscribers, redis, setLastFwNotified } from "./subscribers";
 import { JURISDICTION_LABEL, SOURCES, type Source } from "./sources";
 
@@ -370,6 +385,8 @@ export async function runFwNewsletter(opts: {
     });
   };
 
+  let quotaHit: string | null = null;
+
   try {
     await progress(false);
     for (const sub of subs) {
@@ -419,6 +436,10 @@ export async function runFwNewsletter(opts: {
       if (error) {
         // Wasserzeichen NICHT vorrücken — der nächste Lauf versucht es erneut.
         report.errors.push(`${sub.email}: ${error.message}`);
+        if (isQuotaExceededError(error)) {
+          quotaHit = error.name;
+          break; // weitere Versuche scheitern garantiert ebenso; Rest bleibt unberührt
+        }
       } else {
         report.sent++;
         if (writable) await setLastFwNotified(sub.email, nowIso);
@@ -428,6 +449,25 @@ export async function runFwNewsletter(opts: {
 
     if (writable && report.sent > 0) {
       await redis().set(LAST_SENT_KEY, nowIso);
+    }
+
+    if (writable) {
+      if (quotaHit) {
+        const remaining = report.recipients - (report.sent + report.skipped + report.errors.length);
+        await setQuotaBlock({
+          kind: "frameworks", errorName: quotaHit, blockedAt: nowIso,
+          sent: report.sent, remaining,
+        });
+        if (await acquireQuotaAlert("frameworks")) {
+          try {
+            await sendQuotaExceededAlert("frameworks", quotaHit, report.sent, remaining);
+          } catch (e) {
+            console.error("quota alert failed:", e);
+          }
+        }
+      } else {
+        await clearQuotaBlock("frameworks");
+      }
     }
   } finally {
     if (writable) {

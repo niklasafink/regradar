@@ -1,5 +1,5 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { Resend } from "resend";
+import { Resend, type ErrorResponse } from "resend";
 import { PROVIDERS } from "./data";
 
 const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
@@ -209,6 +209,64 @@ Cron-Lauf erinnert mit einer neuen Vorschau, solange nichts freigegeben ist.`,
         <div style="border:1px solid #e2e8f0;border-radius:12px;overflow:hidden">
           ${previewHtml}
         </div>
+      </div>`,
+  });
+  if (error) throw new Error(error.message);
+}
+
+/** Resend-Tages-/Monatslimit erreicht (Plan-Kontingent) — anders als das
+    2/s-Rate-Limit, das der Pacer in createSendPacer schon abfängt, lässt sich
+    das nicht durch Warten innerhalb desselben Laufs beheben. */
+export function isQuotaExceededError(
+  error: Pick<ErrorResponse, "name"> | null | undefined,
+): boolean {
+  return error?.name === "daily_quota_exceeded" || error?.name === "monthly_quota_exceeded";
+}
+
+/** Sofort-Mail an den Betreiber, wenn ein Sendelauf am Resend-Kontingent
+    scheitert. Die noch offenen Abonnenten sind sicher: Ihr Wasserzeichen
+    wurde nicht vorgerückt (s. Kommentare in den Sendeläufen), es geht nichts
+    doppelt oder verloren. Der stündliche Health-Check (lib/health.ts)
+    schickt, solange der Block besteht, einmal täglich automatisch eine neue
+    Freigabe-Anfrage für den Rest — der eigentliche Versand startet weiterhin
+    erst nach einem erneuten Klick des Betreibers. */
+export async function sendQuotaExceededAlert(
+  kind: ApproveKind,
+  errorName: string,
+  sent: number,
+  remaining: number,
+): Promise<void> {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) return;
+  const resend = new Resend(apiKey);
+  const label = APPROVE_LABEL[kind];
+  const limitLabel = errorName === "monthly_quota_exceeded" ? "Monatslimit" : "Tageslimit";
+
+  const { error } = await resend.emails.send({
+    ...senderFields(),
+    to: approverAddress(),
+    subject: `Resend-${limitLabel} erreicht: ${label} pausiert`,
+    text: `${label}: Resend-${limitLabel} erreicht, Versand pausiert.
+
+${sent} Mail(s) sind raus. ${remaining} Abonnenten haben noch nichts erhalten — sie sind sicher: ihr Wasserzeichen wurde nicht vorgerückt, es geht nichts doppelt oder verloren.
+
+Sobald das Limit zurückgesetzt ist, schickt regulatoryradar automatisch (spätestens beim nächsten stündlichen Check) eine neue Freigabe-Anfrage für die restlichen Abonnenten. Es geht wie immer erst nach deiner erneuten Bestätigung etwas raus.`,
+    html: `
+      <div style="font-family:system-ui,sans-serif;max-width:540px;margin:0 auto;color:#0f172a">
+        <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
+        <p style="background:#fef2f2;border:1px solid #fecaca;border-radius:8px;padding:12px 16px;font-size:14px;line-height:1.5">
+          <strong>${label}: Resend-${limitLabel} erreicht, Versand pausiert.</strong>
+        </p>
+        <p style="font-size:14px;line-height:1.6;color:#334155">
+          <strong>${sent}</strong> Mail(s) sind raus. <strong>${remaining}</strong> Abonnenten haben noch
+          nichts erhalten — sie sind sicher: ihr Wasserzeichen wurde nicht vorgerückt, es geht nichts
+          doppelt oder verloren.
+        </p>
+        <p style="font-size:14px;line-height:1.6;color:#334155">
+          Sobald das Limit zurückgesetzt ist, schickt regulatoryradar automatisch (spätestens beim nächsten
+          stündlichen Check) eine neue Freigabe-Anfrage für die restlichen Abonnenten. Es geht wie immer
+          erst nach deiner erneuten Bestätigung etwas raus.
+        </p>
       </div>`,
   });
   if (error) throw new Error(error.message);
