@@ -17,8 +17,8 @@
 // nichts verschickt (sonst käme die gesamte Datenbank als "neu").
 
 import { Resend } from "resend";
-import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
-import { framePath } from "./logic";
+import { FRAMEWORKS, PROVIDERS, TOPICS, type Framework, type Topic } from "./data";
+import { parentOf, tx } from "./logic";
 import { addIdentifyParam } from "./datafast";
 import { createIdToken, createSendPacer, createUnsubToken, sendApprovalRequest, senderFields } from "./email";
 import { acquireSendLock, releaseSendLock, writeProgress } from "./sendProgress";
@@ -92,6 +92,73 @@ function frameworkHref(fw: Framework, base: string): string {
   return `${base}/r/${provider.slug}/f/${fw.id}`;
 }
 
+/** Kurzform statt Volltext für die Newsletter-Überschrift (z. B. "DORA"
+    statt "DORA: Digitale operationale Resilienz", "AML-VO" statt "AMLA-
+    Verordnung und EU-Geldwäscheverordnung"). Neue Rahmenwerke ohne Eintrag
+    fallen auf den vollen Namen zurück. */
+const FW_ABBR: Record<string, string> = {
+  dora: "DORA", nis2: "NIS-2", ebaict: "EBA-IKT-Leitlinien", amla: "AML-VO",
+  gwg: "GwG", sanctions: "Finanzsanktionen", tfr: "TFR",
+  crr3: "CRR III / CRD VI", marisk: "MaRisk", brrd: "BRRD",
+  dgsd: "DGSD / EinSiG", ifr: "IFR / IFD", wpimarisk: "WpI MaRisk",
+  zagmarisk: "ZAG-MaRisk", macomp: "MaComp",
+  ebagov: "EBA-Governance-Leitlinien", srep: "SREP", irrbb: "IRRBB",
+  ebapog: "EBA-POG-Leitlinien", instvergv: "InstitutsVergV",
+  outsourcing: "EBA-Auslagerungsleitlinien", complaints: "Beschwerdemanagement",
+  hinschg: "HinSchG", mifid: "MiFID II / MiFIR", mar: "MAR",
+  priips: "PRIIPs", prospectus: "ProspektVO", csdr: "CSDR", ecspr: "ECSPR",
+  zag: "ZAG", zkg: "ZKG", interchange: "Interchange-VO", psd3: "PSD3",
+  instant: "Instant-Payments-VO", mica: "MiCA", dltpilot: "DLT-Pilotregelung",
+  aifmd2: "AIFMD II", eltif: "ELTIF 2.0", mmf: "MMFR", sfdr: "SFDR",
+  itsrep: "COREP/FINREP", anacredit: "AnaCredit", crs: "CRS/FATCA/DAC8",
+  solvency: "Solvency II", irrd: "IRRD", idd: "IDD", emir: "EMIR",
+  bmr: "BMR", dsgvo: "DSGVO", aiact: "KI-VO (EU AI Act)", eidas2: "eIDAS 2",
+  dma: "DMA", fida: "FiDA", csrd: "CSRD", lksg: "LkSG", consumer: "CCD II",
+  absfinag: "AbsFinAG", ris: "RIS", taxonomy: "EU-Taxonomie-VO",
+  digieuro: "Digitaler Euro", mago: "MaGo", ebaesg: "EBA-ESG-Leitlinien",
+  securitisation: "Verbriefungs-VO", cra: "CRA", krzwmg: "KrZwMG",
+  iref: "IReF", sftr: "SFTR", esgrating: "ESG-Rating-VO",
+  loanorig: "EBA-Kreditvergabeleitlinien", fitproper: "Fit & Proper",
+  mcd: "MCD", pfandbg: "PfandBG", dataact: "Data Act", greenbond: "EuGB",
+  luaifm: "Lux. Fondsrecht", lulmt: "LMT (Luxemburg)",
+  cssf18698: "CSSF 18/698", cssf24856: "CSSF 24/856",
+  cssfaml: "CSSF-AML-VO", cssfict: "CSSF 20/750",
+};
+
+/** Anzeigename für die Newsletter-Überschrift: Abkürzung statt Volltext.
+    Bei Kind-Rahmenwerken (RTS/ITS/Leitlinien zu einem Hauptstandard) wird
+    nur der neue, konkretisierende Teil hervorgehoben (HTML: unterstrichen,
+    Text: mit Unterstrichen umschlossen) — die Eltern-Abkürzung selbst ist
+    ja nicht neu. */
+function fwTitle(fw: Framework): { html: string; text: string } {
+  const parent = parentOf(fw);
+  if (parent) {
+    const parentAbbr = FW_ABBR[parent.id] ?? tx("de", parent.n);
+    const childLabel = tx("de", fw.sn ?? fw.n);
+    return {
+      html: `${esc(parentAbbr)} › <u>${esc(childLabel)}</u>`,
+      text: `${parentAbbr} › _${childLabel}_`,
+    };
+  }
+  const abbr = FW_ABBR[fw.id] ?? tx("de", fw.n);
+  return { html: esc(abbr), text: abbr };
+}
+
+/** Rahmenwerke nach Themengebiet gruppiert (Reihenfolge wie TOPICS in
+    data.ts), damit die Newsletter-Übersicht z. B. IT-Governance,
+    Meldewesen und Geldwäsche als eigene Abschnitte zeigt. */
+function groupByTopic(frameworks: Framework[]): { topic: Topic; items: Framework[] }[] {
+  const groups = new Map<string, Framework[]>();
+  for (const fw of frameworks) {
+    const list = groups.get(fw.topic) ?? [];
+    list.push(fw);
+    groups.set(fw.topic, list);
+  }
+  return TOPICS
+    .map((topic) => ({ topic, items: groups.get(topic.id) ?? [] }))
+    .filter((g) => g.items.length > 0);
+}
+
 /** E-Mail im Site-Design (schwarz-weiß, große Typo, Pill-Buttons), analog
     zum Update-Newsletter. Liefert HTML plus Plain-Text-Alternative. */
 export function renderFwNewsletter(
@@ -119,18 +186,26 @@ export function renderFwNewsletter(
   const audiences = (fw: Framework): string[] =>
     PROVIDERS.filter((p) => fw.ents.includes(p.id)).map((p) => p.n.de);
 
-  const fwItems = frameworks
-    .map((fw) => `
+  const fwRow = (fw: Framework): string => `
       <tr><td style="padding:20px 0;border-bottom:1px solid #f1f5f9">
         <p style="margin:0 0 6px;font-size:12px;color:#64748b">
           ${pill(JUR_LABEL[fw.jur])}${audiences(fw).map(pill).join("")} &nbsp;
           <span class="num">${esc(fw.ref)}</span>
         </p>
         <p style="margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35">
-          <a href="${frameworkHref(fw, base)}" style="color:#0f172a;text-decoration:none">${esc(framePath("de", fw))}</a>
+          <a href="${frameworkHref(fw, base)}" style="color:#0f172a;text-decoration:none">${fwTitle(fw).html}</a>
         </p>
         <p style="margin:0;font-size:13px;line-height:1.55;color:#475569">${esc(fw.about.de)}</p>
-      </td></tr>`)
+      </td></tr>`;
+
+  const fwGroups = groupByTopic(frameworks);
+
+  const fwSections = fwGroups
+    .map(({ topic, items }) => `
+      <p style="margin:20px 0 4px;font-size:14px;font-weight:700;color:#0f172a">${esc(tx("de", topic.n))}</p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
+        ${items.map(fwRow).join("")}
+      </table>`)
     .join("");
 
   const srcItems = sources
@@ -153,12 +228,16 @@ export function renderFwNewsletter(
     intro,
     "",
     ...(frameworks.length > 0 ? ["Neue Rahmenwerke", ""] : []),
-    ...frameworks.flatMap((fw) => [
-      `${framePath("de", fw)} (${fw.ref}, ${JUR_LABEL[fw.jur]})`,
-      `Relevant für: ${audiences(fw).join(", ")}`,
-      fw.about.de,
-      frameworkHref(fw, base),
+    ...fwGroups.flatMap(({ topic, items }) => [
+      `## ${tx("de", topic.n)}`,
       "",
+      ...items.flatMap((fw) => [
+        `${fwTitle(fw).text} (${fw.ref}, ${JUR_LABEL[fw.jur]})`,
+        `Relevant für: ${audiences(fw).join(", ")}`,
+        fw.about.de,
+        frameworkHref(fw, base),
+        "",
+      ]),
     ]),
     ...(sources.length > 0 ? ["Neue Quellen", ""] : []),
     ...sources.flatMap((s) => [
@@ -185,9 +264,7 @@ export function renderFwNewsletter(
     <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#64748b">${esc(intro)}</p>
     ${frameworks.length > 0 ? `
     <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Rahmenwerke</p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
-      ${fwItems}
-    </table>` : ""}
+    ${fwSections}` : ""}
     ${sources.length > 0 ? `
     <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Quellen</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
