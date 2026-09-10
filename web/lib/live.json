@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T10:38:01Z",
+  "generated_at": "2026-09-10T12:47:47Z",
   "updates": {
     "amla": [
       {
@@ -254,10 +254,11 @@
         },
         "sl": "verordnung-zur-aenderung-der-wertpapierinstituts-pruefungsberichtsverordnung-und",
         "s": {
-          "de": "",
-          "en": ""
+          "de": "Diese Verordnung ändert die Wertpapierinstituts-Prüfungsberichtsverordnung und die Schwarmfinanzierungsdienstleister-Prüfungsverordnung. Ziel ist es, die Vorgaben der Verordnung (EU) 2022/2554 (DORA) in die Prüfungen von Wertpapierinstituten und Schwarmfinanzierungsdienstleistern zu integrieren. Die Änderungen betreffen die Inhalte und den Umfang der Prüfungsberichte, um die Einhaltung der neuen Anforderungen an die digitale operationale Resilienz sicherzustellen.\n\nDie Änderungen sind relevant für Wertpapierinstitute und Schwarmfinanzierungsdienstleister, da sie die Anforderungen an deren jährliche Prüfungen erweitern. Institute müssen sich auf eine umfassendere Prüfung ihrer IKT-Sicherheit und der Widerstandsfähigkeit ihrer digitalen Operationen einstellen. Dies bedeutet, dass sie ihre internen Prozesse und Dokumentationen entsprechend anpassen müssen, um den Prüfungsanforderungen gerecht zu werden.\n\nDie Verordnung tritt am 10.09.2026 in Kraft.",
+          "en": "This regulation amends the Investment Firm Audit Report Regulation and the Crowdfunding Service Provider Audit Regulation. The aim is to integrate the requirements of Regulation (EU) 2022/2554 (DORA) into the audits of investment firms and crowdfunding service providers. The changes affect the content and scope of audit reports to ensure compliance with the new digital operational resilience requirements.\n\nThe amendments are relevant for investment firms and crowdfunding service providers, as they expand the requirements for their annual audits. Institutions must prepare for a more comprehensive audit of their ICT security and the resilience of their digital operations. This means they will need to adapt their internal processes and documentation accordingly to meet the audit requirements.\n\nThe regulation comes into force on 10.09.2026."
         },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/256"
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/256",
+        "imp": "high"
       }
     ],
     "prospectus": [
