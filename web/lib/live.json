@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T23:36:33Z",
+  "generated_at": "2026-09-10T10:38:01Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,26 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "ecspr": [
+      {
+        "d": "10.09.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Verordnung zur Änderung der Wertpapierinstituts-Prüfungsberichtsverordnung und der Schwarmfinanzierungsdienstleister-Prüfungsverordnung zur Berücksichtigung der Vorgaben der Verordnung (EU) 2022/2554 …",
+          "en": "Verordnung zur Änderung der Wertpapierinstituts-Prüfungsberichtsverordnung und der Schwarmfinanzierungsdienstleister-Prüfungsverordnung zur Berücksichtigung der Vorgaben der Verordnung (EU) 2022/2554 …"
+        },
+        "sl": "verordnung-zur-aenderung-der-wertpapierinstituts-pruefungsberichtsverordnung-und",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/256"
       }
     ],
     "prospectus": [
