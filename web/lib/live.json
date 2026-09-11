@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T11:41:47Z",
+  "generated_at": "2026-09-11T13:56:58Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,41 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "cra": [
+      {
+        "d": "11.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bsi.bund.de",
+        "ti": {
+          "de": "Cyber Resilience Act: Meldepflicht für Hersteller startet",
+          "en": "Cyber Resilience Act: Reporting Obligation for Manufacturers Starts"
+        },
+        "sl": "cyber-resilience-act-meldepflicht-startet",
+        "s": {
+          "de": "Ab dem 11. September 2026 treten für Hersteller von Produkten mit digitalen Elementen auf dem EU-Binnenmarkt die Meldepflichten des Cyber Resilience Act (CRA) in Kraft. Sie müssen aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle, die ihre Produkte betreffen, melden. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) bietet hierzu Schritt-für-Schritt-Anleitungen an.\n\nDie Meldungen erfolgen EU-weit einheitlich über die von der ENISA bereitgestellte Single Reporting Platform (CRA-SRP). Empfänger sind das zuständige koordinierende Computer Security Incident Response Team (CSIRT) des jeweiligen EU-Mitgliedstaates und die ENISA. In Deutschland ist das CERT-Bund im BSI das koordinierende CSIRT. Die Zuständigkeit des CSIRT richtet sich nach dem Mitgliedstaat, in dem die wesentlichen Entscheidungen zur Cybersicherheit der Produkte getroffen werden, oder, falls keine Hauptniederlassung in der EU besteht, nach den Kriterien des CRA Artikel 14 Absatz 7.\n\nDie CRA-SRP ermöglicht eine zentrale, benutzerfreundliche und vertrauliche Meldung, die gleichzeitig die CSIRTs der relevanten Mitgliedstaaten erreicht. Eine vorherige Registrierung ist nicht erforderlich. Das BSI und die ENISA stellen weitere Informationen zur Nutzung der Plattform bereit.",
+          "en": "As of September 11, 2026, manufacturers of products with digital elements on the EU internal market will be subject to the reporting obligations of the Cyber Resilience Act (CRA). They must report actively exploited vulnerabilities and serious security incidents affecting their products. The German Federal Office for Information Security (BSI) provides step-by-step instructions for this.\n\nReports are submitted uniformly across the EU via the Single Reporting Platform (CRA-SRP) provided by ENISA. Recipients are the responsible coordinating Computer Security Incident Response Team (CSIRT) of the respective EU member state and ENISA. In Germany, CERT-Bund within the BSI is the coordinating CSIRT. The CSIRT's jurisdiction is determined by the member state where key decisions on product cybersecurity are made, or, if there is no main establishment in the EU, by the criteria set out in CRA Article 14(7).\n\nThe CRA-SRP enables central, user-friendly, and confidential reporting, simultaneously reaching the CSIRTs of the relevant member states. Prior registration is not required. The BSI and ENISA provide further information on how to use the platform."
+        },
+        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260911_CRA_Meldepflicht_Schwachstellen.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Sector Shorts: CRA-Meldepflichten - Warum Hersteller jetzt handeln sollten",
+            "url": "https://blogs.pwc.de/de/steuern-und-recht/article/256793/sector-shorts-cra-meldepflichten-warum-hersteller-jetzt-handeln-sollten/",
+            "d": "11.09.2026"
+          },
+          {
+            "f": "Deloitte Legal",
+            "ti": "Meldepflichten nach dem Cyber Resilience Act: Was Unternehmen jetzt wissen müssen",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/meldepflichten-cyber-resilience-act.html",
+            "d": "10.09.2026"
+          }
+        ]
       }
     ],
     "ecspr": [
