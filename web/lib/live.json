@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:35:40Z",
+  "generated_at": "2026-09-14T19:15:16Z",
   "updates": {
     "amla": [
       {
@@ -462,6 +462,25 @@
         "imp": "medium"
       },
       {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
+          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
+        },
+        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
+          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
+        "imp": "medium"
+      },
+      {
         "d": "03.09.2026",
         "t": {
           "de": "Meldung",
@@ -537,25 +556,6 @@
           "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
-      },
-      {
-        "d": "24.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
-          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
-        },
-        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
-        "s": {
-          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
-          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
         "imp": "medium"
       }
     ],
