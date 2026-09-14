@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T09:46:22Z",
+  "generated_at": "2026-09-14T13:02:48Z",
   "updates": {
     "amla": [
       {
@@ -280,6 +280,26 @@
         "imp": "high"
       },
       {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zur Bestellung von Verwaltern des Refinanzierungsregisters (10/2026)",
+          "en": "BaFin Circular on the Appointment of Refinancing Register Administrators (10/2026)"
+        },
+        "sl": "rundschreiben-10-2026-ba-bestellung-von-verwaltern-des-refinanzierungsregisters",
+        "s": {
+          "de": "Dieses Rundschreiben der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen. Es definiert die Kriterien für die Bestellung und Verlängerung der Bestellung dieser Verwalter, insbesondere hinsichtlich ihrer Unabhängigkeit, Zuverlässigkeit und Sachkunde.\n\nDas Rundschreiben richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Es legt dar, dass Verwalter natürliche Personen sein müssen, die unabhängig vom registerführenden Unternehmen agieren, zuverlässig sind und über spezifische Kenntnisse im Bereich KWG, RefiRegV, BGB und InsO verfügen. Die BaFin ist für die Bestellung zuständig, die auf Vorschlag des registerführenden Unternehmens erfolgt.\n\nDas Rundschreiben ist ab dem 14.09.2026 gültig. Es enthält detaillierte Vorgaben zu den einzureichenden Unterlagen, wie Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Unabhängigkeitserklärung, sowie Hinweise zur Vergütung und Gebührenpflichtigkeit der Bestellung.",
+          "en": "This BaFin circular specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation. It defines the criteria for the appointment and reappointment of these administrators, particularly regarding their independence, reliability, and expertise.\n\nThe circular is addressed to companies wishing to maintain a refinancing register and to applicants for the position of administrator. It stipulates that administrators must be natural persons who act independently of the register-keeping company, are reliable, and possess specific knowledge in the areas of KWG, RefiRegV, BGB, and InsO. BaFin is responsible for the appointment, which is made upon the proposal of the register-keeping company.\n\nThe circular is valid from September 14, 2026. It contains detailed requirements for the documents to be submitted, such as curriculum vitae, declaration of no criminal record, certificate of good conduct, and declaration of independence, as well as information on remuneration and the obligation to pay fees for the appointment."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_10_2026_bestellung_verw_refireg_ba.html",
+        "imp": "high",
+        "refnum": "10/2026"
+      },
+      {
         "d": "11.09.2026",
         "t": {
           "de": "Durchführungs-VO",
@@ -336,25 +356,6 @@
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
         "imp": "low"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
-          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
-        },
-        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
-        "s": {
-          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
-          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
-        "imp": "medium"
       }
     ],
     "ecspr": [
@@ -395,6 +396,28 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/256",
         "imp": "high"
+      }
+    ],
+    "pfandbg": [
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Bestellung von Treuhändern bei Pfandbriefbanken (Rundschreiben 11/2026 (BA))",
+          "en": "Appointment of Trustees at Pfandbrief Banks (Circular 11/2026 (BA))"
+        },
+        "sl": "rundschreiben-11-2026-ba-bestellung-von-treuhaendern-bei-einer-pfandbriefbank-ge",
+        "s": {
+          "de": "Dieses Rundschreiben der BaFin konkretisiert die Anforderungen an Treuhänder und deren Stellvertreter bei Pfandbriefbanken gemäß §§ 7 ff. PfandBG. Es gibt Hinweise zur Bestellung und Verlängerung der Bestellung und soll Pfandbriefbanken sowie Bewerbern praktische Hilfestellungen bei der Zusammenstellung der erforderlichen Unterlagen bieten.\n\nDie BaFin legt die aufsichtsrechtlichen Anforderungen an Treuhänder dar, insbesondere hinsichtlich erforderlicher Kenntnisse und Erfahrungen, Unabhängigkeit und Zuverlässigkeit. Es wird erläutert, welche Qualifikationen als Nachweis dienen und wann eine Besorgnis von Interessenkonflikten besteht. Zudem werden die einzureichenden Unterlagen und das Verwaltungsverfahren bei der BaFin detailliert beschrieben.\n\nDas Rundschreiben tritt am 14.09.2026 in Kraft und ersetzt die bisherigen FAQs zu diesem Thema. Es richtet sich an Pfandbriefbanken und Personen, die ein Treuhänderamt bei einer Pfandbriefbank anstreben.",
+          "en": "This BaFin circular specifies the requirements for trustees and their deputies at Pfandbrief banks in accordance with §§ 7 et seq. PfandBG. It provides guidance on the appointment and reappointment process and aims to offer practical assistance to Pfandbrief banks and applicants in compiling the necessary documentation.\n\nBaFin outlines the supervisory requirements for trustees, particularly regarding necessary knowledge and experience, independence, and reliability. It clarifies which qualifications serve as proof and when a potential conflict of interest exists. Furthermore, the required documents and the administrative procedure with BaFin are described in detail.\n\nThe circular comes into force on September 14, 2026, and replaces the previous FAQs on this topic. It is addressed to Pfandbrief banks and individuals aspiring to a trustee position at a Pfandbrief bank."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_11_2026_bestellung_treuhhaender_pfandbrief.html",
+        "imp": "high",
+        "refnum": "11/2026"
       }
     ],
     "cra": [
