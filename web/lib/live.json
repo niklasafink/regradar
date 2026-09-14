@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:02:48Z",
+  "generated_at": "2026-09-14T14:35:40Z",
   "updates": {
     "amla": [
       {
@@ -300,6 +300,26 @@
         "refnum": "10/2026"
       },
       {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Verwaltern des Refinanzierungsregisters (10/2026)",
+          "en": "BaFin Circular on Administrators of Refinancing Registers (10/2026)"
+        },
+        "sl": "rundschreiben-10-2026-ba",
+        "s": {
+          "de": "Das Rundschreiben 10/2026 (BA) der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen.\n\nEs richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Die BaFin legt dar, dass Verwalter unabhängig, zuverlässig und sachkundig sein müssen und das 75. Lebensjahr noch nicht vollendet haben dürfen. Insbesondere wird auf die Unabhängigkeit vom registerführenden Unternehmen, die Zuverlässigkeit hinsichtlich straf- und ordnungswidrigkeitenrechtlicher Aspekte sowie die erforderliche Sachkunde in Bezug auf KWG, RefiRegV, BGB und InsO eingegangen.\n\nDie Bestellung erfolgt durch die BaFin auf Vorschlag des registerführenden Unternehmens, in der Regel für fünf Jahre oder bis zur Vollendung des 75. Lebensjahres des Verwalters. Das Rundschreiben ist seit dem 14.09.2026 in Kraft und listet detailliert die einzureichenden Unterlagen auf, darunter Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Auszug aus dem Gewerbezentralregister.",
+          "en": "BaFin Circular 10/2026 (BA) specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation.\n\nIt is addressed to companies wishing to maintain a refinancing register and to applicants for the administrator position. BaFin states that administrators must be independent, reliable, and competent, and must not have reached the age of 75. Special emphasis is placed on independence from the register-keeping company, reliability regarding criminal and administrative offenses, and the required expertise concerning KWG, RefiRegV, BGB, and InsO.\n\nThe appointment is made by BaFin upon proposal by the register-keeping company, typically for five years or until the administrator reaches the age of 75. The circular has been in effect since September 14, 2026, and details the documents to be submitted, including a CV, declaration of no criminal record, certificate of good conduct, and an extract from the central trade register."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_10_2026_bestellung_verwalter_refinanzierungsreg_ba.html",
+        "imp": "high",
+        "refnum": "10/2026"
+      },
+      {
         "d": "11.09.2026",
         "t": {
           "de": "Durchführungs-VO",
@@ -336,25 +356,6 @@
           "en": "The BaFin provides information on the processing of personal data in connection with the appointment of administrators and deputies of the refinancing register in accordance with §§ 22e et seq. KWG. Data processing is carried out to assess the suitability of the person concerned for this function.\n\nThis affects individuals proposed or applying to be administrators or deputies of the refinancing register. For this purpose, BaFin collects and processes names, date of birth, address and contact details, as well as information on personal reliability, professional suitability, and other activities. The data is processed internally by BaFin's responsible employees and is not transferred to third countries or international organizations.\n\nData is stored for ten years after leaving the supervisory-relevant function or after an application/proposal has been made if the function is not taken up. Data subjects have rights under the GDPR, including access, rectification, erasure, and objection. Failure to provide the necessary data will result in the application not being processed."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Anlage/Datenschutz/anlage_datenschutz_bestellungen_Refinanzierungsregisterverwalter_Kreditwesengesetz_ba.html",
-        "imp": "low"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
-          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
-        },
-        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
-        "s": {
-          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
-          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
         "imp": "low"
       }
     ],
@@ -418,6 +419,144 @@
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_11_2026_bestellung_treuhhaender_pfandbrief.html",
         "imp": "high",
         "refnum": "11/2026"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Treuhändern bei Pfandbriefbanken (11/2026 BA)",
+          "en": "BaFin Circular on Trustees at Pfandbrief Banks (11/2026 BA)"
+        },
+        "sl": "rundschreiben-11-2026-ba",
+        "s": {
+          "de": "Das Rundschreiben 11/2026 (BA) der BaFin konkretisiert die Anforderungen an Treuhänder und deren Stellvertreter bei Pfandbriefbanken gemäß §§ 7 ff. PfandBG. Es bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen bei Bestellung und Verlängerung des Treuhänderamtes. Das Rundschreiben ersetzt die bisherigen FAQs zu diesem Thema.\n\nEs richtet sich an Pfandbriefbanken und Bewerber für ein Treuhänderamt. Treuhänder müssen natürliche Personen sein, die über die erforderlichen Kenntnisse und Erfahrungen verfügen, unabhängig von der Pfandbriefbank sind, zuverlässig sind und das 75. Lebensjahr noch nicht vollendet haben. Die BaFin legt dar, welche Kriterien für die Beurteilung von Fachkenntnissen, Unabhängigkeit (insbesondere im Hinblick auf Interessenkonflikte und frühere Beschäftigungsverhältnisse) und Zuverlässigkeit (persönliches Verhalten, Geschäftsgebaren, straf- oder ordnungswidrigkeitsrechtliche Aspekte) herangezogen werden.\n\nDie Bestellung erfolgt durch die BaFin, in der Regel für fünf Jahre, wobei die Pfandbriefbank Vorschläge unterbreitet. Das Rundschreiben gilt ab dem 14.09.2026. Es enthält eine detaillierte Liste der einzureichenden Unterlagen, darunter Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Auszug aus dem Gewerbezentralregister.",
+          "en": "BaFin Circular 11/2026 (BA) specifies the requirements for trustees and their deputies at Pfandbrief banks in accordance with §§ 7 et seq. of the Pfandbrief Act (PfandBG). It provides practical guidance for compiling the necessary documents for the appointment and extension of the trustee's office. This circular replaces the previous FAQs on this topic.\n\nIt is addressed to Pfandbrief banks and applicants for a trustee position. Trustees must be natural persons who possess the necessary knowledge and experience, are independent of the Pfandbrief bank, are reliable, and have not yet reached the age of 75. BaFin outlines the criteria used to assess professional knowledge, independence (especially regarding conflicts of interest and previous employment relationships), and reliability (personal conduct, business practices, criminal or administrative offense aspects).\n\nThe appointment is made by BaFin, usually for a period of five years, with the Pfandbrief bank submitting proposals. The circular is effective from September 14, 2026. It includes a detailed list of documents to be submitted, including a CV, declaration of no criminal record, certificate of good conduct, and an extract from the central trade register."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_11_2026_bestellung_treuhaender_pfandbriefbank_ba.html",
+        "imp": "high",
+        "refnum": "11/2026"
+      }
+    ],
+    "itsrep": [
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Überarbeitete Erläuterungen zum außenwirtschaftlichen Meldewesen",
+          "en": "Revised Explanations on Foreign Trade Reporting"
+        },
+        "sl": "erlaeuterungen-zum-aussenwirtschaftlichen-meldewesen",
+        "s": {
+          "de": "Die Bundesbank hat ihre Erläuterungen zum außenwirtschaftlichen Meldewesen inhaltlich überarbeitet. Diese Überarbeitung berücksichtigt die Außenwirtschaftsverordnung (AWV) in der Fassung vom 1. Januar 2025 sowie alle relevanten gesetzlichen Änderungen und Anpassungen, die sich aus den jüngsten Novellierungen der AWV ergeben haben.\n\nDas Dokument integriert nun die zuvor getrennten allgemeinen Hinweise und speziellen Merkblätter zum Meldewesen. Dies dient der Konsolidierung und Vereinfachung der Informationsbereitstellung für meldepflichtige Unternehmen.\n\nDie aktualisierten Erläuterungen sind ab dem 1. Januar 2025 relevant und bieten eine konsolidierte Informationsquelle für die Erfüllung der Meldepflichten im Außenwirtschaftsverkehr.",
+          "en": "The Bundesbank has substantively revised its explanations on foreign trade reporting. This revision takes into account the Foreign Trade and Payments Ordinance (AWV) as amended on January 1, 2025, as well as all relevant legal changes and adjustments resulting from the latest amendments to the AWV.\n\nThe document now integrates the previously separate general guidance and specific reporting fact sheets. This serves to consolidate and simplify the provision of information for companies subject to reporting requirements.\n\nThe updated explanations are relevant from January 1, 2025, and provide a consolidated source of information for fulfilling reporting obligations in foreign trade."
+        },
+        "url": "https://www.bundesbank.de/de/service/meldewesen/aussenwirtschaft/erlaeuterungen-zum-meldewesen/erlaeuterungen-zum-aussenwirtschaftlichen-meldewesen-611758",
+        "imp": "medium"
+      },
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Bundesbank: Umstellung des ExtraNet auf NExt und Zeitplan für Statistik-Fachverfahren",
+          "en": "Bundesbank: Transition of ExtraNet to NExt and Schedule for Statistical Procedures"
+        },
+        "sl": "bankenstatistik-extranet-next",
+        "s": {
+          "de": "Die Deutsche Bundesbank führt NExt („Neukonzeption ExtraNet“) als Nachfolger des bisherigen ExtraNet ein. NExt wird alle bestehenden Funktionen des ExtraNet übernehmen und um neue Funktionen erweitern. Dabei werden auch neue Begriffe eingeführt: „Fachverfahren“ wird zu „Arbeitsgebiet“ und „Fachverfahrensfunktion“ zu „Fachthema“.\n\nDiese Umstellung betrifft Finanzinstitute, die Meldungen an die Bundesbank über das ExtraNet einreichen. Die Bundesbank stellt Informationen zum Aufbau und zur Benennung von Dateien im XML-basierten Meldewesen bereit, wobei Dateinamen aus Arbeitsgebiet, Meldetermin und Namenserweiterung bestehen. Für bestimmte Statistiken wie die OTC-Derivatestatistik und den Triennial Central Bank Survey sowie die Statistik über Verbriefungszweckgesellschaften ist auch das Excel-Format zulässig.\n\nDie Umstellung der einzelnen Statistik-Fachverfahren auf NExt erfolgt schrittweise im Jahr 2026. Die genauen Termine für die einzelnen Verfahren sind im beigefügten Zeitplan aufgeführt, beginnend mit Statistiken über Verbriefungszweckgesellschaften und Investmentvermögen am 1. Januar 2026 und endend mit der monatlichen Bilanzstatistik und dem Auslandsstatus der Banken am 1. November 2026.",
+          "en": "The Deutsche Bundesbank is introducing NExt (“New ExtraNet Concept”) as the successor to the existing ExtraNet. NExt will take over all existing ExtraNet functions and expand them with new features. New terms will also be introduced: “Fachverfahren” (specialized procedure) will become “Arbeitsgebiet” (work area) and “Fachverfahrensfunktion” (specialized procedure function) will become “Fachthema” (specialized topic).\n\nThis change affects financial institutions that submit reports to the Bundesbank via ExtraNet. The Bundesbank provides information on the structure and naming of files in the XML-based reporting system, where file names consist of the work area, reporting date, and file extension. For certain statistics, such as OTC derivatives statistics and the Triennial Central Bank Survey, as well as statistics on securitization special purpose entities, the Excel format is also permitted.\n\nThe transition of individual statistical procedures to NExt will take place gradually throughout 2026. The exact dates for each procedure are listed in the attached schedule, starting with statistics on securitization special purpose entities and investment funds on January 1, 2026, and concluding with monthly balance sheet statistics and the foreign status of banks on November 1, 2026."
+        },
+        "url": "https://www.bundesbank.de/de/service/meldewesen/bankenstatistik/extranet-next/bankenstatistik-extranet-next-611396",
+        "imp": "low"
+      },
+      {
+        "d": "31.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu Validierungsregeln für COROFI/COROFC Vorlage C 34.03 (RRCOROF_V903610_H_C0030)",
+          "en": "EBA Q&A on Validation Rules for COROFI/COROFC Template C 34.03 (RRCOROF_V903610_H_C0030)"
+        },
+        "sl": "validation-rule-rrcorof-v903610-h-c0030",
+        "s": {
+          "de": "Die Anfrage betrifft die Validierungsregeln für die Vorlage C 34.03 in COROFI und COROFC, die ab dem 31. März 2026 gelten. Insbesondere geht es um die Anforderung, dass die Gesamtzahlen für die Anzahl der Transaktionen, den Nominalbetrag, den positiven und negativen Marktwert sowie den Add-on der Summe der jeweiligen Risikokategorien (Zinsänderungsrisiko, Fremdwährungsrisiko, Kreditrisiko, Aktienrisiko, Rohstoffrisiko, Sonstige) entsprechen müssen.\n\nEin Kreditinstitut fragt, wie Geschäfte zu behandeln sind, die gleichzeitig mehreren Risikokategorien ausgesetzt sind und als einzelne Geschäfte ohne Aufteilung gemeldet werden. Es wird auch die Frage aufgeworfen, wie mit Geschäften umzugehen ist, die unter mehreren Kategorien gemeldet werden, da die Gesamtzahlen in C 34.02 und C 34.03 für die Anzahl der Geschäfte und den Nominalbetrag übereinstimmen müssen und in C 34.03 die Gesamtzahlen der Summe der Risikokategorien entsprechen müssen. Zudem wird der Status einer zuvor deaktivierten Regel bezüglich der Gesamtzahl der Geschäfte im Verhältnis zur Summe der Risikokategorien geklärt.\n\nDie EBA hat die Anfrage abgelehnt, da die angesprochene Problematik bereits bekannt ist und für eine zukünftige Version des Meldewesens bzw. eine Überarbeitung der entsprechenden Validierungsregeln berücksichtigt wird.",
+          "en": "The inquiry concerns the validation rules for template C 34.03 within COROFI and COROFC, effective from 31 March 2026. Specifically, it addresses the requirement that the totals for the number of transactions, nominal amount, positive and negative market value, and add-on must equal the sum of the respective risk categories (interest rate risk, foreign exchange risk, credit risk, equity risk, commodities risk, other).\n\nA credit institution asks how to treat deals exposed to multiple risk categories simultaneously, which are reported as single deals without splitting. The question also addresses how to handle multi-risk deals reported under multiple categories, given that totals in C 34.02 and C 34.03 for the number of deals and nominal amount must match, and in C 34.03, totals must equal the sum of risk categories. Furthermore, clarification is sought on the status of a previously deactivated rule regarding the total number of deals equaling the sum across risk categories.\n\nThe EBA rejected the query, stating that the issue raised has already been identified and will be considered for a forthcoming version of the reporting framework or a release of the respective validation rules."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7910",
+        "imp": "low",
+        "refnum": "2026_7910"
+      },
+      {
+        "d": "05.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "FINREP-Validierung: Datenpunktkategorisierung in Template F 13.2.1.c (EBA Q&A 2026_7904)",
+          "en": "FINREP Validation: Data Point Categorization in Template F 13.2.1.c (EBA Q&A 2026_7904)"
+        },
+        "sl": "template-f-13-2-1-c-variableid-433471-and-433464",
+        "s": {
+          "de": "Die EBA hat eine Frage zur FINREP-Validierung im Rahmen des Reporting Framework 4.2. abgelehnt. Es ging um die Datenpunktkategorisierung in Template F 13.2.1.c, insbesondere die Variablen-IDs 433471 und 433464. Die Einreicher fragten, ob die Validierung korrekt definiert sei und baten um Klärung der aufsichtsrechtlichen Begründung, da nicht alle Zugänge von zwangsverwerteten Vermögenswerten als zur Veräußerung gehaltene langfristige Vermögenswerte qualifiziert werden.\n\nDie Einreicher befürchteten, dass die Validierung eine Konsistenz zwischen F 13.2.1.c und F 13.2.1.a erfordert, obwohl in bestimmten Fällen, wie bei bereits bestehenden Leasingverträgen zum Zeitpunkt der Zwangsverwertung, eine Abstimmung mit F 13.2.1.b (Variablen-IDs 433631 und 433625) angemessener wäre. Die EBA lehnte die Frage ab, da das Problem bereits bekannt ist und für eine zukünftige Version des Reporting Frameworks (4.4.2) berücksichtigt wird.\n\nDie Ablehnung der Frage bedeutet, dass die EBA das Problem anerkennt und eine Lösung in einer kommenden Version des Reporting Frameworks plant. Finanzinstitute, die von dieser spezifischen FINREP-Validierung betroffen sind, sollten die Veröffentlichung von Version 4.4.2 beobachten, um die erwarteten Anpassungen zu implementieren.",
+          "en": "The EBA rejected a question regarding FINREP validation under Reporting Framework 4.2. The query concerned the data point categorization in Template F 13.2.1.c, specifically Variable IDs 433471 and 433464. The submitters asked for confirmation on the correct definition of the validation and clarification on its prudential reporting rationale, as not all additions of foreclosed assets necessarily qualify as non-current assets held for sale.\n\nThe submitters were concerned that the validation appeared to require consistency between F 13.2.1.c and F 13.2.1.a, whereas in certain situations, such as when a lease agreement is already in place at the time of foreclosure, reconciliation with F 13.2.1.b (Variable IDs 433631 and 433625) would be more appropriate. The EBA rejected the question because the matter has already been identified and will be considered for a future version of the Reporting Framework (4.4.2).\n\nThe rejection of the question indicates that the EBA acknowledges the issue and plans to address it in an upcoming version of the Reporting Framework. Financial institutions affected by this specific FINREP validation should monitor the release of version 4.4.2 for the expected adjustments."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7904",
+        "imp": "low",
+        "refnum": "2026_7904"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
+          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
+        },
+        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
+        "s": {
+          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
+          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+        "imp": "medium"
+      },
+      {
+        "d": "24.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
+          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
+        },
+        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
+        "s": {
+          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
+          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+        "imp": "medium"
       }
     ],
     "cra": [
@@ -574,125 +713,6 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
         "imp": "high"
-      }
-    ],
-    "itsrep": [
-      {
-        "d": "03.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bundesbank.de",
-        "ti": {
-          "de": "Bundesbank: Umstellung des ExtraNet auf NExt und Zeitplan für Statistik-Fachverfahren",
-          "en": "Bundesbank: Transition of ExtraNet to NExt and Schedule for Statistical Procedures"
-        },
-        "sl": "bankenstatistik-extranet-next",
-        "s": {
-          "de": "Die Deutsche Bundesbank führt NExt („Neukonzeption ExtraNet“) als Nachfolger des bisherigen ExtraNet ein. NExt wird alle bestehenden Funktionen des ExtraNet übernehmen und um neue Funktionen erweitern. Dabei werden auch neue Begriffe eingeführt: „Fachverfahren“ wird zu „Arbeitsgebiet“ und „Fachverfahrensfunktion“ zu „Fachthema“.\n\nDiese Umstellung betrifft Finanzinstitute, die Meldungen an die Bundesbank über das ExtraNet einreichen. Die Bundesbank stellt Informationen zum Aufbau und zur Benennung von Dateien im XML-basierten Meldewesen bereit, wobei Dateinamen aus Arbeitsgebiet, Meldetermin und Namenserweiterung bestehen. Für bestimmte Statistiken wie die OTC-Derivatestatistik und den Triennial Central Bank Survey sowie die Statistik über Verbriefungszweckgesellschaften ist auch das Excel-Format zulässig.\n\nDie Umstellung der einzelnen Statistik-Fachverfahren auf NExt erfolgt schrittweise im Jahr 2026. Die genauen Termine für die einzelnen Verfahren sind im beigefügten Zeitplan aufgeführt, beginnend mit Statistiken über Verbriefungszweckgesellschaften und Investmentvermögen am 1. Januar 2026 und endend mit der monatlichen Bilanzstatistik und dem Auslandsstatus der Banken am 1. November 2026.",
-          "en": "The Deutsche Bundesbank is introducing NExt (“New ExtraNet Concept”) as the successor to the existing ExtraNet. NExt will take over all existing ExtraNet functions and expand them with new features. New terms will also be introduced: “Fachverfahren” (specialized procedure) will become “Arbeitsgebiet” (work area) and “Fachverfahrensfunktion” (specialized procedure function) will become “Fachthema” (specialized topic).\n\nThis change affects financial institutions that submit reports to the Bundesbank via ExtraNet. The Bundesbank provides information on the structure and naming of files in the XML-based reporting system, where file names consist of the work area, reporting date, and file extension. For certain statistics, such as OTC derivatives statistics and the Triennial Central Bank Survey, as well as statistics on securitization special purpose entities, the Excel format is also permitted.\n\nThe transition of individual statistical procedures to NExt will take place gradually throughout 2026. The exact dates for each procedure are listed in the attached schedule, starting with statistics on securitization special purpose entities and investment funds on January 1, 2026, and concluding with monthly balance sheet statistics and the foreign status of banks on November 1, 2026."
-        },
-        "url": "https://www.bundesbank.de/de/service/meldewesen/bankenstatistik/extranet-next/bankenstatistik-extranet-next-611396",
-        "imp": "low"
-      },
-      {
-        "d": "31.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu Validierungsregeln für COROFI/COROFC Vorlage C 34.03 (RRCOROF_V903610_H_C0030)",
-          "en": "EBA Q&A on Validation Rules for COROFI/COROFC Template C 34.03 (RRCOROF_V903610_H_C0030)"
-        },
-        "sl": "validation-rule-rrcorof-v903610-h-c0030",
-        "s": {
-          "de": "Die Anfrage betrifft die Validierungsregeln für die Vorlage C 34.03 in COROFI und COROFC, die ab dem 31. März 2026 gelten. Insbesondere geht es um die Anforderung, dass die Gesamtzahlen für die Anzahl der Transaktionen, den Nominalbetrag, den positiven und negativen Marktwert sowie den Add-on der Summe der jeweiligen Risikokategorien (Zinsänderungsrisiko, Fremdwährungsrisiko, Kreditrisiko, Aktienrisiko, Rohstoffrisiko, Sonstige) entsprechen müssen.\n\nEin Kreditinstitut fragt, wie Geschäfte zu behandeln sind, die gleichzeitig mehreren Risikokategorien ausgesetzt sind und als einzelne Geschäfte ohne Aufteilung gemeldet werden. Es wird auch die Frage aufgeworfen, wie mit Geschäften umzugehen ist, die unter mehreren Kategorien gemeldet werden, da die Gesamtzahlen in C 34.02 und C 34.03 für die Anzahl der Geschäfte und den Nominalbetrag übereinstimmen müssen und in C 34.03 die Gesamtzahlen der Summe der Risikokategorien entsprechen müssen. Zudem wird der Status einer zuvor deaktivierten Regel bezüglich der Gesamtzahl der Geschäfte im Verhältnis zur Summe der Risikokategorien geklärt.\n\nDie EBA hat die Anfrage abgelehnt, da die angesprochene Problematik bereits bekannt ist und für eine zukünftige Version des Meldewesens bzw. eine Überarbeitung der entsprechenden Validierungsregeln berücksichtigt wird.",
-          "en": "The inquiry concerns the validation rules for template C 34.03 within COROFI and COROFC, effective from 31 March 2026. Specifically, it addresses the requirement that the totals for the number of transactions, nominal amount, positive and negative market value, and add-on must equal the sum of the respective risk categories (interest rate risk, foreign exchange risk, credit risk, equity risk, commodities risk, other).\n\nA credit institution asks how to treat deals exposed to multiple risk categories simultaneously, which are reported as single deals without splitting. The question also addresses how to handle multi-risk deals reported under multiple categories, given that totals in C 34.02 and C 34.03 for the number of deals and nominal amount must match, and in C 34.03, totals must equal the sum of risk categories. Furthermore, clarification is sought on the status of a previously deactivated rule regarding the total number of deals equaling the sum across risk categories.\n\nThe EBA rejected the query, stating that the issue raised has already been identified and will be considered for a forthcoming version of the reporting framework or a release of the respective validation rules."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7910",
-        "imp": "low",
-        "refnum": "2026_7910"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "FINREP-Validierung: Datenpunktkategorisierung in Template F 13.2.1.c (EBA Q&A 2026_7904)",
-          "en": "FINREP Validation: Data Point Categorization in Template F 13.2.1.c (EBA Q&A 2026_7904)"
-        },
-        "sl": "template-f-13-2-1-c-variableid-433471-and-433464",
-        "s": {
-          "de": "Die EBA hat eine Frage zur FINREP-Validierung im Rahmen des Reporting Framework 4.2. abgelehnt. Es ging um die Datenpunktkategorisierung in Template F 13.2.1.c, insbesondere die Variablen-IDs 433471 und 433464. Die Einreicher fragten, ob die Validierung korrekt definiert sei und baten um Klärung der aufsichtsrechtlichen Begründung, da nicht alle Zugänge von zwangsverwerteten Vermögenswerten als zur Veräußerung gehaltene langfristige Vermögenswerte qualifiziert werden.\n\nDie Einreicher befürchteten, dass die Validierung eine Konsistenz zwischen F 13.2.1.c und F 13.2.1.a erfordert, obwohl in bestimmten Fällen, wie bei bereits bestehenden Leasingverträgen zum Zeitpunkt der Zwangsverwertung, eine Abstimmung mit F 13.2.1.b (Variablen-IDs 433631 und 433625) angemessener wäre. Die EBA lehnte die Frage ab, da das Problem bereits bekannt ist und für eine zukünftige Version des Reporting Frameworks (4.4.2) berücksichtigt wird.\n\nDie Ablehnung der Frage bedeutet, dass die EBA das Problem anerkennt und eine Lösung in einer kommenden Version des Reporting Frameworks plant. Finanzinstitute, die von dieser spezifischen FINREP-Validierung betroffen sind, sollten die Veröffentlichung von Version 4.4.2 beobachten, um die erwarteten Anpassungen zu implementieren.",
-          "en": "The EBA rejected a question regarding FINREP validation under Reporting Framework 4.2. The query concerned the data point categorization in Template F 13.2.1.c, specifically Variable IDs 433471 and 433464. The submitters asked for confirmation on the correct definition of the validation and clarification on its prudential reporting rationale, as not all additions of foreclosed assets necessarily qualify as non-current assets held for sale.\n\nThe submitters were concerned that the validation appeared to require consistency between F 13.2.1.c and F 13.2.1.a, whereas in certain situations, such as when a lease agreement is already in place at the time of foreclosure, reconciliation with F 13.2.1.b (Variable IDs 433631 and 433625) would be more appropriate. The EBA rejected the question because the matter has already been identified and will be considered for a future version of the Reporting Framework (4.4.2).\n\nThe rejection of the question indicates that the EBA acknowledges the issue and plans to address it in an upcoming version of the Reporting Framework. Financial institutions affected by this specific FINREP validation should monitor the release of version 4.4.2 for the expected adjustments."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7904",
-        "imp": "low",
-        "refnum": "2026_7904"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
-          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
-        },
-        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
-        "s": {
-          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
-          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
-      },
-      {
-        "d": "24.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
-          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
-        },
-        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
-        "s": {
-          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
-          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
-        "imp": "medium"
-      },
-      {
-        "d": "03.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
-          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
-        },
-        "sl": "sectoral-classification-of-uk-credit-institutions",
-        "s": {
-          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
-          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
-        "imp": "low",
-        "refnum": "2026_7843"
       }
     ],
     "absfinag": [
