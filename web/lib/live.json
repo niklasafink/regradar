@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T19:15:16Z",
+  "generated_at": "2026-09-15T09:48:48Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,126 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "aifmd2": [
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB",
+          "en": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB"
+        },
+        "sl": "rundschreiben-12-2026-wa-erlaubnisverfahren-fuer-aif-kapitalverwaltungsgesellsch",
+        "s": {
+          "de": "Das Rundschreiben der BaFin präzisiert das Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVG) gemäß § 22 KAGB. Es legt detaillierte Anforderungen an die einzureichenden Unterlagen fest, insbesondere in Bezug auf Eigenmittel, Liquidität, Angaben zu Geschäftsleitern, bedeutend beteiligten Inhabern und engen Verbindungen.\n\nFür AIF-KVGs bedeutet dies eine klare Richtlinie für die Antragstellung. Das Rundschreiben behandelt unter anderem die Darstellung des Geschäftsplans, der Geschäftsorganisation, interner Kontrollverfahren, der Vergütungspolitik, Auslagerungen und Anlagestrategien. Es wird erwartet, dass die Angaben zu den Arten der zu verwaltenden AIF mit dem Unternehmensgegenstand in der Satzung übereinstimmen.\n\nDas Rundschreiben ist am 15.09.2026 in Kraft getreten. Die BaFin behält sich vor, die Erlaubnis auf bestimmte Arten von Investmentvermögen zu beschränken und empfiehlt, den Unternehmensgegenstand vorab abzustimmen.",
+          "en": "The BaFin circular specifies the licensing procedure for AIF management companies (AIFMs) in accordance with Section 22 KAGB. It sets out detailed requirements for the documents to be submitted, particularly regarding own funds, liquidity, information on managing directors, significantly involved owners, and close links.\n\nFor AIFMs, this provides clear guidelines for submitting applications. The circular addresses, among other things, the presentation of the business plan, business organization, internal control procedures, remuneration policy, outsourcing, and investment strategies. It is expected that the information on the types of AIFs to be managed aligns with the company's business objective stated in its articles of association.\n\nThe circular came into force on 15.09.2026. BaFin reserves the right to restrict the license to certain types of investment funds and recommends coordinating the company's business objective in advance."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1226_erlaubnisverfahren_fuer_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high",
+        "refnum": "12/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (§ 22 KAGB)",
+          "en": "BaFin Circular on Licensing Procedure for AIF Management Companies (Section 22 KAGB)"
+        },
+        "sl": "rundschreiben-12-2026-wa",
+        "s": {
+          "de": "Die BaFin hat ein Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVGen) nach § 22 KAGB veröffentlicht. Es konkretisiert die Anforderungen an Inhalt und Unterlagen des Erlaubnisantrags sowie Aspekte der Erlaubniserteilung. Ziel ist es, Transparenz zu schaffen und Bearbeitungszeiten zu verkürzen.\n\nDas Rundschreiben richtet sich an Unternehmen, die einen Erlaubnisantrag als AIF-KVG stellen oder beabsichtigen. Es gilt einheitlich für interne und externe AIF-KVGen sowie für Gesellschaften, die bereits nach § 44 KAGB registriert sind. Besondere Beachtung finden die Nachweise zu Eigenmitteln, Liquidität sowie die Zuverlässigkeit und fachliche Eignung der Geschäftsleiter.\n\nDas Rundschreiben 12/2026 (WA) ist ab dem 15.09.2026 gültig und ersetzt das Merkblatt vom 24. März 2025. Merkblätter zur Eignung von Geschäftsleitern und Aufsichtsorganen bleiben unberührt.",
+          "en": "BaFin has published a circular on the licensing procedure for AIF management companies (AIFMs) under Section 22 KAGB. It specifies the requirements for the content and documents of the license application, as well as aspects of the license granting. The aim is to create transparency and shorten processing times.\n\nThe circular is addressed to companies that are applying for or intend to apply for a license as an AIFM. It applies uniformly to internal and external AIFMs, as well as to companies already registered under Section 44 KAGB. Special attention is paid to the proof of own funds, liquidity, and the reliability and professional suitability of managing directors.\n\nCircular 12/2026 (WA) is valid from 15.09.2026 and replaces the guidance notice of March 24, 2025. Guidance notices on the suitability of managing directors and supervisory bodies remain unaffected."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_12_2026_erlaubnisverfahren_f%C3%BCr_aif_kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high",
+        "refnum": "12/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren",
+          "en": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren"
+        },
+        "sl": "aif-kvgen-bafin-schafft-transparenz-bei-erlaubnisverfahren",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 12/2026 zu Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 Kapitalanlagegesetzbuch (KAGB) veröffentlicht. Es bietet detaillierte Informationen zu den erforderlichen Dokumenten und Angaben für Antragsteller.\n\nDieses Rundschreiben ersetzt das Merkblatt vom 22. März 2013 (zuletzt geändert am 24. März 2025) und zielt darauf ab, mehr Transparenz zu schaffen und die Bearbeitung von Erlaubnisanträgen zu beschleunigen. Branchenstellungnahmen wurden berücksichtigt, und Anpassungen resultieren auch aus dem Fondsrisikobegrenzungsgesetz.\n\nDas Rundschreiben ist für Kapitalverwaltungsgesellschaften relevant, die Alternative Investmentfonds (AIF) verwalten und eine Erlaubnis nach § 22 KAGB beantragen. Es soll den Antragsprozess für diese Unternehmen vereinfachen und die Anforderungen klarer definieren.",
+          "en": "The BaFin has published Circular 12/2026 on authorization procedures for AIF management companies under Section 22 of the German Investment Code (KAGB). It provides detailed information on the required documents and data for applicants.\n\nThis circular replaces the leaflet from March 22, 2013 (last amended on March 24, 2025) and aims to create more transparency and accelerate the processing of authorization applications. Industry comments were taken into account, and adjustments also result from the Fund Risk Limitation Act.\n\nThis circular is relevant for management companies that manage Alternative Investment Funds (AIFs) and apply for authorization under Section 22 KAGB. It aims to simplify the application process for these companies and to define the requirements more clearly."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_15_rs_erlaubnisverfahren_f%C3%BCr_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high"
+      },
+      {
+        "d": "21.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs (ESMA34-671404336-1384)",
+          "en": "Compliance Table on ESMA Guidelines on Liquidity Management Tools (LMTs) of UCITS and Open-ended AIFs (ESMA34-671404336-1384)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden in den EU- und EWR-Staaten die Leitlinien anwenden oder beabsichtigen, diese anzuwenden.\n\nDie Tabelle zeigt, dass viele nationale Behörden die Leitlinien bereits anwenden oder beabsichtigen, dies bis zu einem bestimmten Datum oder nach Abschluss notwendiger legislativer oder regulatorischer Verfahren zu tun. Für Finanzinstitute bedeutet dies, dass sie sich auf eine zunehmend harmonisierte Anwendung der LMT-Leitlinien in Europa einstellen müssen, was die Anforderungen an das Liquiditätsmanagement von OGAW und offenen AIFs betrifft.\n\nEinige Länder wie Belgien, Bulgarien, Tschechien, Estland, Frankreich, Ungarn, Italien, Lettland, Polen, Portugal, Slowenien, Island und Norwegen haben angegeben, dass sie beabsichtigen, die Leitlinien zu einem späteren Zeitpunkt oder nach Abschluss nationaler Gesetzgebungsverfahren umzusetzen. Die Fristen für die Umsetzung variieren, beispielsweise der 31.08.2026 für Bulgarien und der 31.12.2026 für Italien und Lettland.",
+          "en": "ESMA has published a compliance table regarding its Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. This table provides an overview of the extent to which national competent authorities in EU and EEA states apply or intend to apply these guidelines.\n\nThe table indicates that many national authorities already apply the guidelines or intend to do so by a specific date or after completing necessary legislative or regulatory proceedings. For financial institutions, this means they should prepare for an increasingly harmonized application of LMT guidelines across Europe, affecting the requirements for liquidity management of UCITS and open-ended AIFs.\n\nSome countries, such as Belgium, Bulgaria, Czech Republic, Estonia, France, Hungary, Italy, Latvia, Poland, Portugal, Slovenia, Iceland, and Norway, have stated their intention to implement the guidelines at a later date or after the completion of national legislative processes. Implementation deadlines vary, for example, August 31, 2026, for Bulgaria, and December 31, 2026, for Italy and Latvia."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
+        "imp": "low",
+        "refnum": "ESMA34-671404336-1384"
+      },
+      {
+        "d": "29.05.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Anfrage zur Schattenbanken-Definition für AIFs ab (2026_7833)",
+          "en": "EBA rejects inquiry on shadow banking definition for AIFs (2026_7833)"
+        },
+        "sl": "shadow-banking-definition-alternative-investment-funds",
+        "s": {
+          "de": "Die EBA hat eine Anfrage zur Definition von Schattenbanken im Kontext von Alternativen Investmentfonds (AIF) abgelehnt. Die Anfrage bezog sich auf die Auslegung von Artikel 1(c)(iii) der Delegierten Verordnung (EU) 2023/2779, die AIFs als Schattenbanken klassifiziert, wenn sie nicht explizit daran gehindert sind, Kredite zu vergeben oder Drittkreditengagements zu erwerben.\n\nDie EBA begründet die Ablehnung damit, dass die regulatorischen Vorgaben bereits ausreichend klar und eindeutig seien. Die Anfrage stellte die Frage, ob die Klassifizierung eines AIF als Schattenbank auf der Grundlage seiner theoretisch erlaubten Aktivitäten oder der tatsächlich ausgeübten Tätigkeiten erfolgen sollte. Die Ablehnung impliziert, dass die bestehenden Regelungen eine klare Unterscheidung ermöglichen.\n\nDie Ablehnung bedeutet, dass Finanzinstitute weiterhin die bestehenden Vorschriften zur Identifizierung von Schattenbanken anwenden müssen, ohne weitere Klarstellung zu erhalten. Dies betrifft insbesondere die Auslegung, ob die Möglichkeit zur Kreditvergabe in den Gründungsdokumenten eines AIF ausreicht, um ihn als Schattenbank einzustufen, auch wenn er diese Aktivitäten nicht tatsächlich ausübt.",
+          "en": "The EBA has rejected an inquiry regarding the definition of shadow banking in the context of Alternative Investment Funds (AIFs). The inquiry concerned the interpretation of Article 1(c)(iii) of Delegated Regulation (EU) 2023/2779, which classifies AIFs as shadow banking entities if they are not explicitly prohibited from originating loans or purchasing third-party lending exposures.\n\nThe EBA justified the rejection by stating that the regulatory framework is already sufficiently clear and unambiguous. The inquiry questioned whether the classification of an AIF as a shadow banking entity should be based on its theoretically permitted activities or its actual activities. The rejection implies that the existing regulations allow for a clear distinction.\n\nThis rejection means that financial institutions must continue to apply the existing regulations for identifying shadow banking entities without further clarification. This particularly affects the interpretation of whether the possibility of loan origination in an AIF's constitutive documents is sufficient to classify it as a shadow banking entity, even if it does not actually engage in these activities."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7833",
+        "imp": "medium",
+        "refnum": "2026_7833"
+      },
+      {
+        "d": "14.04.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Fondsrisikobegrenzungsgesetz zur Umsetzung von EU-Richtlinien (BGBl. 2026 I Nr. 97)",
+          "en": "Investment Fund Risk Limitation Act for the Implementation of EU Directives (BGBl. 2026 I Nr. 97)"
+        },
+        "sl": "gesetz-zur-begrenzung-der-risiken-durch-investmentfonds-und-zur-umsetzung-der-ri",
+        "s": {
+          "de": "Das Fondsrisikobegrenzungsgesetz setzt die Richtlinien (EU) 2024/927 und (EU) 2024/2994 in nationales Recht um. Es zielt darauf ab, Risiken durch Investmentfonds zu begrenzen und umfasst Regelungen zu Übertragungsvereinbarungen, Liquiditätsrisikomanagement und aufsichtlicher Berichterstattung.\n\nDie Regelungen betreffen insbesondere alternative Investmentfonds hinsichtlich der Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie der Kreditvergabe. Zudem werden Vorschriften zum Umgang mit Konzentrationsrisiken aus Risikopositionen gegenüber zentralen Gegenparteien und Ausfallrisiken bei zentral geclearten Derivategeschäften geändert.\n\nDas Gesetz wurde am 09.04.2026 ausgefertigt und am 14.04.2026 im Bundesgesetzblatt veröffentlicht.",
+          "en": "The Investment Fund Risk Limitation Act transposes Directives (EU) 2024/927 and (EU) 2024/2994 into national law. It aims to limit risks posed by investment funds and includes provisions on transfer agreements, liquidity risk management, and supervisory reporting.\n\nThe regulations primarily affect alternative investment funds concerning the provision of custody and depositary services and lending activities. Furthermore, provisions on managing concentration risks arising from exposures to central counterparties and default risks in centrally cleared derivative transactions are amended.\n\nThe Act was enacted on 09.04.2026 and published in the Federal Law Gazette on 14.04.2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
+        "imp": "high"
       }
     ],
     "crr3": [
@@ -2684,127 +2804,6 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
         "imp": "low",
         "refnum": "ESMA65-294529287-4824"
-      }
-    ],
-    "aifmd2": [
-      {
-        "d": "21.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs (ESMA34-671404336-1384)",
-          "en": "Compliance Table on ESMA Guidelines on Liquidity Management Tools (LMTs) of UCITS and Open-ended AIFs (ESMA34-671404336-1384)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden in den EU- und EWR-Staaten die Leitlinien anwenden oder beabsichtigen, diese anzuwenden.\n\nDie Tabelle zeigt, dass viele nationale Behörden die Leitlinien bereits anwenden oder beabsichtigen, dies bis zu einem bestimmten Datum oder nach Abschluss notwendiger legislativer oder regulatorischer Verfahren zu tun. Für Finanzinstitute bedeutet dies, dass sie sich auf eine zunehmend harmonisierte Anwendung der LMT-Leitlinien in Europa einstellen müssen, was die Anforderungen an das Liquiditätsmanagement von OGAW und offenen AIFs betrifft.\n\nEinige Länder wie Belgien, Bulgarien, Tschechien, Estland, Frankreich, Ungarn, Italien, Lettland, Polen, Portugal, Slowenien, Island und Norwegen haben angegeben, dass sie beabsichtigen, die Leitlinien zu einem späteren Zeitpunkt oder nach Abschluss nationaler Gesetzgebungsverfahren umzusetzen. Die Fristen für die Umsetzung variieren, beispielsweise der 31.08.2026 für Bulgarien und der 31.12.2026 für Italien und Lettland.",
-          "en": "ESMA has published a compliance table regarding its Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. This table provides an overview of the extent to which national competent authorities in EU and EEA states apply or intend to apply these guidelines.\n\nThe table indicates that many national authorities already apply the guidelines or intend to do so by a specific date or after completing necessary legislative or regulatory proceedings. For financial institutions, this means they should prepare for an increasingly harmonized application of LMT guidelines across Europe, affecting the requirements for liquidity management of UCITS and open-ended AIFs.\n\nSome countries, such as Belgium, Bulgaria, Czech Republic, Estonia, France, Hungary, Italy, Latvia, Poland, Portugal, Slovenia, Iceland, and Norway, have stated their intention to implement the guidelines at a later date or after the completion of national legislative processes. Implementation deadlines vary, for example, August 31, 2026, for Bulgaria, and December 31, 2026, for Italy and Latvia."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
-        "imp": "low",
-        "refnum": "ESMA34-671404336-1384"
-      },
-      {
-        "d": "29.05.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Anfrage zur Schattenbanken-Definition für AIFs ab (2026_7833)",
-          "en": "EBA rejects inquiry on shadow banking definition for AIFs (2026_7833)"
-        },
-        "sl": "shadow-banking-definition-alternative-investment-funds",
-        "s": {
-          "de": "Die EBA hat eine Anfrage zur Definition von Schattenbanken im Kontext von Alternativen Investmentfonds (AIF) abgelehnt. Die Anfrage bezog sich auf die Auslegung von Artikel 1(c)(iii) der Delegierten Verordnung (EU) 2023/2779, die AIFs als Schattenbanken klassifiziert, wenn sie nicht explizit daran gehindert sind, Kredite zu vergeben oder Drittkreditengagements zu erwerben.\n\nDie EBA begründet die Ablehnung damit, dass die regulatorischen Vorgaben bereits ausreichend klar und eindeutig seien. Die Anfrage stellte die Frage, ob die Klassifizierung eines AIF als Schattenbank auf der Grundlage seiner theoretisch erlaubten Aktivitäten oder der tatsächlich ausgeübten Tätigkeiten erfolgen sollte. Die Ablehnung impliziert, dass die bestehenden Regelungen eine klare Unterscheidung ermöglichen.\n\nDie Ablehnung bedeutet, dass Finanzinstitute weiterhin die bestehenden Vorschriften zur Identifizierung von Schattenbanken anwenden müssen, ohne weitere Klarstellung zu erhalten. Dies betrifft insbesondere die Auslegung, ob die Möglichkeit zur Kreditvergabe in den Gründungsdokumenten eines AIF ausreicht, um ihn als Schattenbank einzustufen, auch wenn er diese Aktivitäten nicht tatsächlich ausübt.",
-          "en": "The EBA has rejected an inquiry regarding the definition of shadow banking in the context of Alternative Investment Funds (AIFs). The inquiry concerned the interpretation of Article 1(c)(iii) of Delegated Regulation (EU) 2023/2779, which classifies AIFs as shadow banking entities if they are not explicitly prohibited from originating loans or purchasing third-party lending exposures.\n\nThe EBA justified the rejection by stating that the regulatory framework is already sufficiently clear and unambiguous. The inquiry questioned whether the classification of an AIF as a shadow banking entity should be based on its theoretically permitted activities or its actual activities. The rejection implies that the existing regulations allow for a clear distinction.\n\nThis rejection means that financial institutions must continue to apply the existing regulations for identifying shadow banking entities without further clarification. This particularly affects the interpretation of whether the possibility of loan origination in an AIF's constitutive documents is sufficient to classify it as a shadow banking entity, even if it does not actually engage in these activities."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7833",
-        "imp": "medium",
-        "refnum": "2026_7833"
-      },
-      {
-        "d": "14.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Fondsrisikobegrenzungsgesetz zur Umsetzung von EU-Richtlinien (BGBl. 2026 I Nr. 97)",
-          "en": "Investment Fund Risk Limitation Act for the Implementation of EU Directives (BGBl. 2026 I Nr. 97)"
-        },
-        "sl": "gesetz-zur-begrenzung-der-risiken-durch-investmentfonds-und-zur-umsetzung-der-ri",
-        "s": {
-          "de": "Das Fondsrisikobegrenzungsgesetz setzt die Richtlinien (EU) 2024/927 und (EU) 2024/2994 in nationales Recht um. Es zielt darauf ab, Risiken durch Investmentfonds zu begrenzen und umfasst Regelungen zu Übertragungsvereinbarungen, Liquiditätsrisikomanagement und aufsichtlicher Berichterstattung.\n\nDie Regelungen betreffen insbesondere alternative Investmentfonds hinsichtlich der Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie der Kreditvergabe. Zudem werden Vorschriften zum Umgang mit Konzentrationsrisiken aus Risikopositionen gegenüber zentralen Gegenparteien und Ausfallrisiken bei zentral geclearten Derivategeschäften geändert.\n\nDas Gesetz wurde am 09.04.2026 ausgefertigt und am 14.04.2026 im Bundesgesetzblatt veröffentlicht.",
-          "en": "The Investment Fund Risk Limitation Act transposes Directives (EU) 2024/927 and (EU) 2024/2994 into national law. It aims to limit risks posed by investment funds and includes provisions on transfer agreements, liquidity risk management, and supervisory reporting.\n\nThe regulations primarily affect alternative investment funds concerning the provision of custody and depositary services and lending activities. Furthermore, provisions on managing concentration risks arising from exposures to central counterparties and default risks in centrally cleared derivative transactions are amended.\n\nThe Act was enacted on 09.04.2026 and published in the Federal Law Gazette on 14.04.2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
-        "imp": "high"
-      },
-      {
-        "d": "25.11.2021",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Langfristige Investmentfonds – Überprüfung der EU-Vorschriften",
-          "en": "Long Term Investment Funds – Review of EU rules"
-        },
-        "sl": "long-term-investment-funds-review-of-eu-rules",
-        "s": {
-          "de": "Der vorliegende Legislativvorschlag betrifft die Überprüfung der EU-Vorschriften für langfristige Investmentfonds (ELTIFs). Ziel ist es, die Attraktivität von ELTIFs für Investoren zu steigern und ihre Rolle bei der Finanzierung der Realwirtschaft zu stärken. Dies soll durch eine Vereinfachung der Regeln und eine Erweiterung der Anlagebereiche erreicht werden.\n\nDie Änderungen sind relevant für Fondsmanager und institutionelle Investoren, die in langfristige Projekte investieren möchten. Die Überarbeitung zielt darauf ab, die Nutzung von ELTIFs als Instrument für nachhaltige und langfristige Investitionen zu fördern, indem die Zugänglichkeit und Flexibilität verbessert werden.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er sich in einem fortgeschrittenen Stadium des Gesetzgebungsverfahrens befindet.",
-          "en": "This legislative proposal concerns the review of EU rules for European Long-Term Investment Funds (ELTIFs). The aim is to increase the attractiveness of ELTIFs for investors and strengthen their role in financing the real economy. This is to be achieved by simplifying the rules and expanding the scope of eligible investments.\n\nThe changes are relevant for fund managers and institutional investors looking to invest in long-term projects. The revision aims to promote the use of ELTIFs as a tool for sustainable and long-term investments by improving accessibility and flexibility.\n\nThe proposal is currently in the adoption workflow, indicating it is in an advanced stage of the legislative process."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12570",
-        "imp": "medium",
-        "refnum": "Ares(2020)4337803"
-      },
-      {
-        "d": "25.11.2021",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Verwalter alternativer Investmentfonds – Überprüfung der EU-Vorschriften",
-          "en": "Alternative Investment Fund Managers – review of EU rules"
-        },
-        "sl": "alternative-investment-fund-managers-review-of-eu-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Verwalter alternativer Investmentfonds (AIFM) eingeleitet. Ziel ist es, die Funktionsweise der Richtlinie 2011/61/EU (AIFMD) zu bewerten und mögliche Anpassungen zu identifizieren, um die Effizienz und Wirksamkeit des Rahmens zu verbessern.\n\nDiese Überprüfung betrifft alle Verwalter alternativer Investmentfonds, die unter die AIFMD fallen. Sie sollen sicherstellen, dass die Vorschriften weiterhin den Marktentwicklungen entsprechen und einen angemessenen Anlegerschutz sowie Finanzstabilität gewährleisten. Die Ergebnisse könnten zu Änderungen in den Anforderungen an AIFM führen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was bedeutet, dass die Kommission aktiv an der Überarbeitung arbeitet.",
-          "en": "The European Commission has initiated a review of the EU rules for Alternative Investment Fund Managers (AIFM). The objective is to assess the functioning of Directive 2011/61/EU (AIFMD) and identify potential adjustments to enhance the framework's efficiency and effectiveness.\n\nThis review concerns all alternative investment fund managers falling under the AIFMD. They should ensure that the regulations continue to meet market developments and guarantee adequate investor protection and financial stability. The results could lead to changes in the requirements for AIFMs.\n\nThe current procedural status is the adoption workflow, meaning the Commission is actively working on the revision."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12648",
-        "imp": "medium",
-        "refnum": "Ares(2020)5407001"
-      },
-      {
-        "d": "21.04.2021",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Integration von Nachhaltigkeitsrisiken und -faktoren für AIFM",
-          "en": "Integration of sustainability risks and factors related to alternative investment fund managers"
-        },
-        "sl": "integration-of-sustainability-risks-and-factors-related-to-alternative-investmen",
-        "s": {
-          "de": "Die Europäische Kommission schlägt Änderungen an der Delegierten Verordnung (EU) Nr. 231/2013 vor, um Nachhaltigkeitsrisiken und -faktoren in die Anforderungen für Verwalter alternativer Investmentfonds (AIFM) zu integrieren. Dies betrifft die Organisation, den Betrieb und die Governance von AIFM sowie deren Risikomanagement und Offenlegungspflichten.\n\nDie Änderungen sind relevant für AIFM, da sie sicherstellen müssen, dass Nachhaltigkeitsrisiken bei Investitionsentscheidungen und in ihren internen Prozessen angemessen berücksichtigt werden. Dies umfasst die Integration von Nachhaltigkeitsfaktoren in die Sorgfaltspflichten und die Vermeidung von Interessenkonflikten.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was auf eine bevorstehende Verabschiedung hindeutet.",
-          "en": "The European Commission proposes amendments to Delegated Regulation (EU) No 231/2013 to integrate sustainability risks and factors into the requirements for alternative investment fund managers (AIFMs). This affects the organisation, operation, and governance of AIFMs, as well as their risk management and disclosure obligations.\n\nThe amendments are relevant for AIFMs, as they must ensure that sustainability risks are adequately considered in investment decisions and their internal processes. This includes integrating sustainability factors into due diligence obligations and avoiding conflicts of interest.\n\nThe proposal is currently in the adoption workflow, indicating an upcoming finalisation."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/11960",
-        "imp": "medium",
-        "refnum": "Ares(2019)5605641"
       }
     ],
     "taxonomy": [
