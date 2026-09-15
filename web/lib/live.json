@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T09:48:48Z",
+  "generated_at": "2026-09-15T13:01:51Z",
   "updates": {
     "amla": [
       {
@@ -240,6 +240,132 @@
         "deadline": "20.03.2026"
       }
     ],
+    "gwg": [
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
+          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
+        },
+        "sl": "gesetz-fuer-mehr-gerechtigkeit-durch-die-staerkung-der-zollverwaltung-und-die-be",
+        "s": {
+          "de": "Das Gesetz zielt auf eine umfassende Modernisierung der Zollverwaltung ab, insbesondere durch die Neustrukturierung der Generalzolldirektion in die Fachstränge „Zölle und Steuern“ sowie „Sicherheit und Vollzug“. Es sieht die Zusammenführung von Ermittlungs- und Vollzugseinheiten vor und stärkt die Finanzkontrolle Schwarzarbeit durch personelle und haushälterische Aufstockung sowie erweiterte Ermittlungsbefugnisse.\n\nFür Finanzinstitute ist relevant, dass die Zollverwaltung bei der Bekämpfung internationaler Geldwäsche gestärkt wird, unter anderem durch die Einrichtung spezialisierter Ermittlungseinheiten und eines Verwaltungsverfahrens zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft. Zudem werden die Zusammenarbeit und der Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen (FIU) mit anderen Akteuren verbessert. Die gesetzliche Verankerung des Ressortübergreifenden Steuerungskreises dient der Umsetzung der FATF-Empfehlungen.\n\nDas Gesetz ist Teil der Initiative „Zoll 2030“ und setzt Ziele des Koalitionsvertrags um.",
+          "en": "The law aims at a comprehensive modernization of the customs administration, particularly through the restructuring of the General Directorate of Customs into the specialized branches “Customs and Taxes” and “Security and Enforcement”. It provides for the consolidation of investigation and enforcement units and strengthens the Financial Control of Undeclared Work through increased personnel and budget, as well as expanded investigative powers.\n\nFor financial institutions, it is relevant that the customs administration's role in combating international money laundering is strengthened, including through the establishment of specialized investigation units and an administrative procedure for clarifying assets of dubious origin. Furthermore, cooperation and data exchange of the Financial Intelligence Unit (FIU) with other actors will be improved. The legal anchoring of the Interdepartmental Steering Committee serves to implement FATF recommendations.\n\nThis law is part of the “Customs 2030” initiative and implements objectives from the coalition agreement."
+        },
+        "url": "https://dip.bundestag.de/vorgang/338348",
+        "imp": "medium"
+      },
+      {
+        "d": "19.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "zoll.de",
+        "ti": {
+          "de": "Löschroutine für Rückmeldungen nach § 41 GwG",
+          "en": "Deletion Routine for Feedback under Section 41 GwG"
+        },
+        "sl": "loeschroutine-fuer-rueckmeldungen-nach-41-gwg",
+        "s": {
+          "de": "Die Financial Intelligence Unit (FIU) hat ihr Verfahren für Rückmeldungen nach § 41 des Geldwäschegesetzes (GwG) überarbeitet und ein neues Konzept entwickelt. Dieses Konzept wird nach Abschluss eines Konsultationsverfahrens im Dezember 2024 auf Verdachtsmeldungen angewendet, die ab dem 1. Januar 2025 eingereicht wurden, wobei Rückmeldungen automatisiert mittels goAML-Nachricht erfolgen.\n\nFür Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG wird aus datenschutzrechtlichen Gründen eine Löschroutine von 28 Tagen eingeführt. Dies bedeutet, dass diese Rückmeldungen 28 Tage nach ihrem Versand automatisch gelöscht werden. Auch ältere Rückmeldungen, die die 28-Tages-Frist überschritten haben, werden sukzessive gelöscht.\n\nDie Löschroutine tritt ab dem 1. September 2026 in Kraft. Verpflichtete müssen dies bei ihren internen Prozessen berücksichtigen und gegebenenfalls eigene Veranlassungen treffen.",
+          "en": "The Financial Intelligence Unit (FIU) has revised its procedure for feedback under Section 41 of the Anti-Money Laundering Act (GwG) and developed a new concept. This concept will be applied to suspicious transaction reports submitted from January 1, 2025, following the conclusion of a consultation process in December 2024, with feedback being provided automatically via goAML messages.\n\nFor feedback according to Section 41 (2) and (3) GwG, a deletion routine of 28 days is being introduced for data protection reasons. This means that such feedback will be automatically deleted 28 days after its dispatch. Older feedback that has exceeded the 28-day period will also be progressively deleted.\n\nThe deletion routine will come into effect on September 1, 2026. Obligated entities must take this into account in their internal processes and, if necessary, make their own arrangements."
+        },
+        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
+        "imp": "medium"
+      },
+      {
+        "d": "28.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "zoll.de",
+        "ti": {
+          "de": "Sektorale Risikoanalyse",
+          "en": "Sektorale Risikoanalyse"
+        },
+        "sl": "sektorale-risikoanalyse",
+        "s": {
+          "de": "Das Bundesministerium der Finanzen (BMF) hat eine aktualisierte sektorale Risikoanalyse veröffentlicht, die sich auf die Anfälligkeit juristischer Personen und sonstiger Rechtsgestaltungen für Geldwäsche und Terrorismusfinanzierung in Deutschland konzentriert. Diese Analyse baut auf den Erkenntnissen der Nationalen Risikoanalyse (NRA) von 2019 auf und ergänzt eine frühere sektorale Analyse zur Terrorismusfinanzierung durch Non-Profit-Organisationen (NPO).\n\nDie Analyse bewertet spezifische Risiken und schlägt Maßnahmen zur Minderung dieser Risiken vor, wobei der Schwerpunkt auf Geldwäscherisiken liegt. Für Verpflichtete nach dem Geldwäschegesetz (§ 5 Abs. 1 Satz 2 GwG) sind die Ergebnisse relevant, da sie diese bei der Erstellung ihrer eigenen Risikoanalysen berücksichtigen müssen. Die PwC-Analyse deutet auf die Bedeutung dieser Bewertung für die Compliance-Praxis hin.\n\nDie \"Sektorspezifische Risikoanalyse 2026 (Stand: Juni 2026)\" ist über die Webseite des BMF verfügbar.",
+          "en": "The German Federal Ministry of Finance (BMF) has published an updated sectoral risk analysis focusing on the susceptibility of legal entities and other legal arrangements to money laundering and terrorist financing in Germany. This analysis builds on the findings of the 2019 National Risk Assessment (NRA) and complements an earlier sectoral analysis on terrorist financing through non-profit organizations (NPOs).\n\nThe analysis assesses specific risks and proposes measures to mitigate them, with a primary focus on money laundering risks. For entities obligated under the Money Laundering Act (Section 5 (1) Sentence 2 GwG), the results are relevant as they must consider them when conducting their own risk analyses. The PwC analysis highlights the importance of this assessment for compliance practices.\n\nThe \"Sector-Specific Risk Analysis 2026 (as of June 2026)\" is available on the BMF's website."
+        },
+        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Nationale-Risikoanalyse/nationale-risikoanalyse_node.html",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "MOF: Sectoral Risk Assessment to combat money laundering and terrorist financing",
+            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/256048/mof-sectoral-risk-assessment-to-combat-money-laundering-and-terrorist-financing/",
+            "d": "27.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
+          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
+        },
+        "sl": "gesetz-zur-konsequenten-bekaempfung-von-geldwaesche-bei-steuerhinterziehung",
+        "s": {
+          "de": "Das Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung zielt darauf ab, die Geldwäsche im Zusammenhang mit Steuerhinterziehung effektiver zu bekämpfen. Es sieht eine Änderung des § 261 des Strafgesetzbuches vor, um die rechtlichen Grundlagen für die Verfolgung solcher Delikte zu stärken.\n\nDiese Gesetzesänderung ist für Finanzinstitute und andere Verpflichtete im Sinne des Geldwäschegesetzes relevant. Sie müssen ihre internen Prozesse und Kontrollsysteme überprüfen und gegebenenfalls anpassen, um den verschärften Anforderungen zur Geldwäscheprävention bei Steuerhinterziehung gerecht zu werden. Dies betrifft insbesondere die Sorgfaltspflichten und die Meldepflichten bei Verdachtsfällen.\n\nDa es sich um einen Gesetzesentwurf handelt, ist der weitere Gesetzgebungsprozess abzuwarten. Ein konkretes Datum für das Inkrafttreten der Änderungen ist noch nicht bekannt.",
+          "en": "The Act on the Consistent Fight against Money Laundering in Tax Evasion aims to combat money laundering related to tax evasion more effectively. It proposes an amendment to Section 261 of the German Criminal Code to strengthen the legal basis for prosecuting such offenses.\n\nThis legislative change is relevant for financial institutions and other obliged entities under the German Money Laundering Act. They must review and, if necessary, adapt their internal processes and control systems to meet the stricter requirements for money laundering prevention in cases of tax evasion. This particularly concerns due diligence obligations and reporting obligations for suspicious transactions.\n\nAs this is a legislative proposal, the further legislative process remains to be seen. A specific date for the entry into force of the amendments is not yet known."
+        },
+        "url": "https://dip.bundestag.de/vorgang/337697",
+        "imp": "medium"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
+          "en": "Methodology for calculating and collecting fees by the Anti-Money Laundering Authority (AMLA)"
+        },
+        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Methodik zur Berechnung und Erhebung von Gebühren durch die Anti-Geldwäsche-Behörde (AMLA). Dieses Vorhaben befindet sich noch in der Planungsphase.\n\nDie geplante Methodik wird für alle Finanzinstitute relevant sein, die unter die Aufsicht der AMLA fallen. Sie wird festlegen, wie die Gebühren für die Aufsichts- und Regulierungsaktivitäten der AMLA berechnet und eingezogen werden.\n\nDerzeit ist der Verfahrensstand \"Init Planned\", was bedeutet, dass die Initiative noch in einem sehr frühen Stadium ist und weitere Details zu Fristen und Konsultationen noch nicht verfügbar sind.",
+          "en": "The European Commission is planning a methodology for the calculation and collection of fees by the Anti-Money Laundering Authority (AMLA). This initiative is currently in the planning phase.\n\nThis planned methodology will be relevant for all financial institutions falling under AMLA's supervision. It will define how fees for AMLA's supervisory and regulatory activities are calculated and collected.\n\nThe current status is \"Init Planned,\" meaning the initiative is in a very early stage, and further details on deadlines and consultations are not yet available."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
+        "imp": "medium",
+        "refnum": "Ares(2026)6942470"
+      },
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung (07/2026 GW)",
+          "en": "Circular on High-Risk Third Countries in Anti-Money Laundering and Counter-Terrorist Financing (07/2026 GW)"
+        },
+        "sl": "rundschreiben-07-2026-gw",
+        "s": {
+          "de": "Dieses Rundschreiben der BaFin informiert alle nach dem Geldwäschegesetz (GwG) Verpflichteten über Drittstaaten mit strategischen Mängeln in ihren Systemen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (Hochrisiko-Staaten).\n\nEs konkretisiert die Maßnahmen, die in Bezug auf Nordkorea, Iran und Myanmar zu ergreifen sind, basierend auf Erklärungen der FATF. Für Nordkorea und Iran werden spezifische Gegenmaßnahmen gefordert, während für Myanmar verstärkte Sorgfaltspflichten gelten. Zudem werden die aktuellen FATF-Listen der Länder unter verstärkter Beobachtung genannt, wobei Bosnien und Herzegowina sowie Irak neu hinzugekommen sind und Algerien sowie Namibia gestrichen wurden.\n\nFinanzinstitute und andere Verpflichtete nach dem GwG müssen die genannten Maßnahmen und verstärkten Sorgfaltspflichten umsetzen, um den Risiken aus diesen Ländern zu begegnen. Dies beinhaltet unter anderem das Beenden von Korrespondenzbeziehungen, das Schließen von Tochtergesellschaften und die Beschränkung von Geschäftsbeziehungen.",
+          "en": "This BaFin circular informs all entities obligated under the Money Laundering Act (GwG) about third countries with strategic deficiencies in their anti-money laundering and counter-terrorist financing systems (high-risk countries).\n\nIt specifies the measures to be taken in relation to North Korea, Iran, and Myanmar, based on FATF statements. Specific countermeasures are required for North Korea and Iran, while enhanced due diligence obligations apply to Myanmar. Furthermore, the current FATF lists of countries under increased monitoring are provided, with Bosnia and Herzegovina and Iraq newly added, and Algeria and Namibia removed.\n\nFinancial institutions and other obligated entities under the GwG must implement the stated measures and enhanced due diligence obligations to address the risks posed by these countries. This includes, among other things, terminating correspondent relationships, closing subsidiaries, and restricting business relationships."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
+        "imp": "high",
+        "refnum": "07/2026"
+      }
+    ],
     "aifmd2": [
       {
         "d": "15.09.2026",
@@ -362,6 +488,106 @@
     ],
     "crr3": [
       {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Sicherheitenabschlägen für Drittland-PSEs/RGLAs ab (Q&A 2026_7989)",
+          "en": "EBA rejects question on collateral haircuts for third-country PSEs/RGLAs (Q&A 2026_7989)"
+        },
+        "sl": "collateral-haircuts-for-third-country-equivalent-pse-rgla-s",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Auslegung von Artikel 197 Absatz 2 Buchstaben a und b der CRR abgelehnt. Es ging darum, ob Verweise auf PSEs (Einrichtungen des öffentlichen Sektors) und RGLAs (regionale Gebietskörperschaften) in den Artikeln 115 Absatz 2 und 116 Absatz 4 CRR auch gleichwertige Drittland-Einheiten gemäß Artikel 115 Absatz 4 und 116 Absatz 5 CRR umfassen.\n\nDie Fragestellung bezog sich auf die Anwendbarkeit von Sicherheitenabschlägen für Schuldtitel, die von diesen Drittland-Einheiten ausgegeben werden. Die EBA begründete die Ablehnung damit, dass die betreffenden Artikel der Verordnung (EU) Nr. 575/2013 (CRR) ausreichend klar und eindeutig sind und die Frage bereits beantworten.\n\nDie Ablehnung bedeutet, dass die EBA keine weitere Klärung für notwendig erachtet. Finanzinstitute müssen die bestehenden CRR-Vorschriften bezüglich Sicherheitenabschlägen und der Anerkennung von Drittland-Einheiten als ausreichend präzise ansehen.",
+          "en": "The EBA has rejected a question regarding the interpretation of Article 197(2)(a) and (b) of the CRR. The query concerned whether references to PSEs (public sector entities) and RGLAs (regional governments and local authorities) in Articles 115(2) and 116(4) CRR should also encompass equivalent third-country entities as referred to in Articles 115(4) and 116(5) CRR.\n\nThe question related to the applicability of collateral haircuts for debt securities issued by these third-country entities. The EBA justified the rejection by stating that the relevant articles of Regulation (EU) No 575/2013 (CRR) are sufficiently clear and unambiguous and already address the question.\n\nThe rejection implies that the EBA does not consider further clarification necessary. Financial institutions must regard the existing CRR provisions concerning collateral haircuts and the recognition of third-country entities as sufficiently precise."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7989",
+        "imp": "low",
+        "refnum": "2026_7989"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Nutzung aggregierter EBA-Verlustdaten für Immobilien außerhalb der EU (Q&A 2026_7980)",
+          "en": "Use of EBA’s aggregated loss data for “All national markets outside the Union” (Q&A 2026_7980)"
+        },
+        "sl": "use-of-the-eba-s-aggregated-loss-data-for-all-national-markets-outside-the-union",
+        "s": {
+          "de": "Die EBA hat eine Anfrage bezüglich der Nutzung aggregierter Verlustdaten für Immobilien außerhalb der EU im Rahmen der Artikel 125 und 126 der CRR abgelehnt. Konkret ging es um die Frage, ob die Zeile „All national markets outside the Union“ in der EBA-Publikation „Immovable-property loss data, Q4 2025“ für die Berechnung von Verlustquoten für Immobilien in der Schweiz herangezogen werden kann.\n\nDie Artikel 125 und 126 CRR ermöglichen eine privilegierte Behandlung von durch Wohn- oder Gewerbeimmobilien besicherten Risikopositionen, wenn bestimmte Verlustquotenschwellen eingehalten werden. Für Immobilien in Drittländern veröffentlicht die EBA relevante Verlustdaten, falls die zuständige Behörde des Drittlandes dies nicht tut und statistisch repräsentative Informationen vorliegen. Die EBA-Publikation enthält zwar eine aggregierte Zeile für alle Märkte außerhalb der Union, aber keine spezifischen Daten für einzelne Drittländer wie die Schweiz.\n\nDie EBA lehnte die Anfrage ab, da die Artikel 125(3) und 126(3) CRR die Thematik bereits ausreichend klar und unzweideutig regeln. Dies bedeutet, dass die aggregierten Daten nicht für die Beurteilung der Verlustquotenschwellen für spezifische nationale Immobilienmärkte außerhalb der EU, wie der Schweiz, verwendet werden können.",
+          "en": "The EBA has rejected an inquiry regarding the use of aggregated loss data for immovable property outside the EU under Articles 125 and 126 of the CRR. Specifically, the question was whether the row “All national markets outside the Union” in the EBA publication “Immovable-property loss data, Q4 2025” could be used to calculate loss rates for immovable property located in Switzerland.\n\nArticles 125 and 126 CRR allow for preferential treatment of exposures secured by residential or commercial immovable property if certain loss rate thresholds are met. For immovable property in third countries, the EBA publishes relevant loss data if the competent authority of the third country does not do so and statistically representative information is available. While the EBA publication includes an aggregated row for all markets outside the Union, it does not provide specific data for individual third countries such as Switzerland.\n\nThe EBA rejected the inquiry, stating that Articles 125(3) and 126(3) CRR already address the issue with sufficient clarity and unambiguousness. This implies that the aggregated data cannot be used to assess the loss rate thresholds for specific national immovable property markets outside the EU, such as Switzerland."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7980",
+        "imp": "low",
+        "refnum": "2026_7980"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Behandlung des besicherten Teils notleidender IPRE-Engagements unter dem Standardansatz (Q&A 2026_7979)",
+          "en": "Treatment of the secured portion of defaulted IPRE exposures under the Standardised Approach (Q&A 2026_7979)"
+        },
+        "sl": "treatment-of-the-secured-portion-of-defaulted-ipre-exposures-under-the-standardi",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Behandlung des besicherten Teils notleidender IPRE-Engagements (Income-Producing Real Estate) unter dem Standardansatz abgelehnt. Die Anfrage bezog sich auf die Auslegung von Artikel 127(3) der CRR, der eine Risikogewichtung von 100 % für notleidende, nicht-IPRE-Engagements vorsieht, die durch Wohn- oder Gewerbeimmobilien besichert sind.\n\nDie Fragestellung zielte darauf ab, zu klären, ob der besicherte Teil notleidender IPRE-Engagements weiterhin gemäß den ETV-basierten Risikogewichtungsstufen der Artikel 125(2) oder 126(2) CRR behandelt werden sollte oder ob analog zu Artikel 127(3) CRR eine Risikogewichtung von 100 % anzuwenden ist. Die EBA lehnte die Frage ab, da die Bestimmungen der Artikel 127(1) bis (3) CRR als ausreichend klar und eindeutig erachtet werden.\n\nDie Ablehnung bedeutet, dass die bestehenden CRR-Regelungen für die Risikogewichtung und COREP-Meldung notleidender IPRE-Engagements unter dem Standardansatz als ausreichend angesehen werden und keine weitere Klärung durch die EBA erforderlich ist.",
+          "en": "The EBA has rejected a question regarding the treatment of the secured portion of defaulted income-producing real estate (IPRE) exposures under the Standardised Approach. The inquiry concerned the interpretation of Article 127(3) CRR, which stipulates a 100% risk weight for defaulted non-IPRE exposures secured by residential or commercial immovable property.\n\nThe question sought clarification on whether the secured portion of defaulted IPRE exposures should continue to be treated according to the ETV-based risk-weight buckets in Articles 125(2) or 126(2) CRR, or if a 100% risk weight should be applied analogously to Article 127(3) CRR. The EBA rejected the question, stating that the provisions of Articles 127(1) to (3) CRR are considered sufficiently clear and unambiguous.\n\nThe rejection implies that the existing CRR regulations for risk weighting and COREP reporting of defaulted IPRE exposures under the Standardised Approach are deemed adequate, and no further clarification from the EBA is necessary."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7979",
+        "imp": "low",
+        "refnum": "2026_7979"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Ablehnung einer Frage zum KMU-Unterstützungsfaktor bei privaten Finanzierungen nach CRR III (Q&A 2026_7971)",
+          "en": "Rejection of a question on the SME supporting factor for private financing under CRR III (Q&A 2026_7971)"
+        },
+        "sl": "application-of-the-sme-supporting-factor-to-exposures-financing-private-purposes",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Anwendung des KMU-Unterstützungsfaktors auf Engagements zur Finanzierung privater Zwecke nach CRR III abgelehnt. Es ging um die Auslegung von Artikel 501 Absatz 2 Buchstabe b CRR, der ein KMU nun unter Bezugnahme auf Artikel 5 Nummer 9 CRR definiert, anstatt auf die Empfehlung 2003/361/EG der Kommission.\n\nDie Frage war, ob der KMU-Status auf Obligor-Ebene bestimmt werden sollte, sodass die Anpassung gemäß Artikel 501 Absatz 1 CRR für alle Engagements gilt, oder ob er weiterhin engagementbezogen anhand des Finanzierungszwecks beurteilt werden sollte. Die EBA lehnte die Frage ab, da die Thematik bereits in der Q&A 2021_6301 behandelt wird und deren fortgesetzte Relevanz unter CRR III in der Q&A 2026_7724 bestätigt wurde. Dies betrifft Kreditinstitute, die den KMU-Unterstützungsfaktor anwenden.\n\nDie Ablehnung bedeutet, dass die bisherige Auslegung, wonach der KMU-Status engagementbezogen und nach dem Finanzierungszweck zu beurteilen ist, weiterhin gilt. Engagements zur Finanzierung privater Aktivitäten einer natürlichen Person, die eine wirtschaftliche Tätigkeit ausübt, profitieren demnach nicht vom KMU-Unterstützungsfaktor.",
+          "en": "The EBA has rejected a question regarding the application of the SME supporting factor to exposures financing private purposes following CRR III. The query concerned the interpretation of Article 501(2)(b) CRR, which now defines an SME by reference to Article 5, point (9), CRR, rather than to Commission Recommendation 2003/361/EC.\n\nThe question was whether SME status should be determined at the obligor level, so that the adjustment under Article 501(1) CRR applies to all exposures, or if it should continue to be assessed on an exposure-by-exposure basis by reference to the purpose of the individual financing. The EBA rejected the question, stating that the matter is already addressed in Q&A 2021_6301, and its continued relevance under CRR III is confirmed in Q&A 2026_7724. This affects credit institutions applying the SME supporting factor.\n\nThe rejection implies that the previous interpretation, which requires SME status to be assessed on an exposure-by-exposure basis according to the purpose of the financing, remains valid. Consequently, exposures financing private activities of a natural person engaged in an economic activity do not benefit from the SME supporting factor."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7971",
+        "imp": "low",
+        "refnum": "2026_7971"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A: Behandlung des Right-Way-Risikos bei Call-Warrants (2026_7911)",
+          "en": "EBA Q&A: Treatment of Right-Way Risk in Call Warrants (2026_7911)"
+        },
+        "sl": "treatment-of-the-right-way-risk-in-call-warrant",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Behandlung des Right-Way-Risikos bei Call-Warrants zurückgewiesen. Die Anfrage bezog sich auf die Befreiung von Gegenparteiausfallrisiko-Anforderungen für Call-Warrants, die von einer Gegenpartei ausgegeben werden, die auch Emittent der zugrunde liegenden Aktien ist.\n\nDie Frage wurde abgelehnt, da sie den Rahmen des Q&A-Prozesses überschreitet. Der Q&A-Prozess dient nicht dazu, die Korrektheit des Rechtsrahmens in Frage zu stellen oder dessen Änderung zu fordern. Die EBA beantwortet keine Fragen, die eine Modifikation des Rechtsrahmens erfordern würden.\n\nDie Einreichung erfolgte am 10.06.2026, die Ablehnung am 15.09.2026.",
+          "en": "The EBA has rejected a question regarding the treatment of right-way risk in call warrants. The inquiry concerned the exemption from counterparty credit risk requirements for call warrants issued by a counterparty that is also the issuer of the underlying shares.\n\nThe question was rejected because it falls outside the scope of the Q&A process. The Q&A process is not intended to question the correctness of the legal framework or to demand its modification. The EBA does not answer questions that would require a modification of the legal framework.\n\nThe submission date was 10/06/2026, and the rejection date was 15/09/2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7911",
+        "imp": "low",
+        "refnum": "2026_7911"
+      },
+      {
         "d": "14.09.2026",
         "t": {
           "de": "Auslegung",
@@ -379,104 +605,373 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
         "imp": "high"
+      }
+    ],
+    "mica": [
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zur Erhöhung von Eigenmitteln und Reservewerten für ARTs und EMTs ab (2026_7968)",
+          "en": "EBA rejects question on increasing own funds and reserve assets for ARTs and EMTs (2026_7968)"
+        },
+        "sl": "national-competent-authorities-power-to-increase-the-quantity-of-arts-and-emts-i",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Auslegung von Artikel 45 Absatz 4 der MiCA-Verordnung (EU) 2023/1114 abgelehnt. Die Frage bezog sich darauf, ob nationale zuständige Behörden oder die EBA die Befugnis haben, Emittenten von vermögenswertreferenzierten Token (ARTs) oder E-Geld-Token (EMTs) aufzufordern, die Menge ihrer Eigenmittel oder Reservewerte über die 1:1-Deckung hinaus zu erhöhen.\n\nDie EBA begründete die Ablehnung damit, dass die betreffende Thematik im regulatorischen Rahmen bereits ausreichend klar und eindeutig erklärt oder behandelt wird. Dies deutet darauf hin, dass die MiCA-Verordnung bereits klare Vorgaben zur Kapitalausstattung und zu Reserveanforderungen enthält und keine zusätzlichen Befugnisse für unbegrenzte Erhöhungen vorsieht. Die Frage wurde von der Industrievereinigung ADAN eingereicht.\n\nDie Ablehnung erfolgte am 15.09.2026.",
+          "en": "The EBA has rejected a question regarding the interpretation of Article 45(4) of the MiCA Regulation (EU) 2023/1114. The question concerned whether national competent authorities or the EBA have the power to require issuers of asset-referenced tokens (ARTs) or e-money tokens (EMTs) to increase the quantity of their own funds or reserve assets beyond the 1:1 backing.\n\nThe EBA justified the rejection by stating that the issue is already sufficiently clear and unambiguously explained or addressed in the regulatory framework. This indicates that the MiCA Regulation already contains clear provisions on capital requirements and reserve assets and does not provide for additional powers for unlimited increases. The question was submitted by the industry association ADAN.\n\nThe rejection date was 15.09.2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7968",
+        "imp": "low",
+        "refnum": "2026_7968"
       },
       {
-        "d": "14.09.2026",
+        "d": "11.08.2026",
         "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
+          "de": "Leitlinien",
+          "en": "Guidelines"
         },
-        "src": "bafin.de",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern",
-          "en": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern"
+          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
+          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
         },
-        "sl": "kwg-und-pfandbg-bafin-veroeffentlicht-rundschreiben-zu-wichtigen-funktionstraege",
+        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
         "s": {
-          "de": "Die BaFin hat zwei Rundschreiben veröffentlicht, die ihre Verwaltungspraxis bezüglich wichtiger Funktionsträger nach dem Kreditwesengesetz (KWG) und dem Pfandbriefgesetz (PfandBG) konkretisieren. Es handelt sich um das Rundschreiben 10/2026 (BA) zur Bestellung von Verwaltern des Refinanzierungsregisters gemäß §§ 22e ff. KWG und das Rundschreiben 11/2026 (BA) zur Bestellung von Treuhändern bei einer Pfandbriefbank gemäß §§ 7 ff. PfandBG.\n\nDie Rundschreiben legen die Erwartungen der BaFin an die Unabhängigkeit, Zuverlässigkeit und Expertise dieser Funktionsträger sowie deren Stellvertreter fest. Institute müssen der BaFin entsprechende Nachweise vorlegen. Das Rundschreiben zu den Treuhändern ersetzt die bisherigen FAQs zu diesem Thema.\n\nDie BaFin unterstützt die Institute bei der Zusammenstellung der erforderlichen Unterlagen wie Lebenslauf, Führungszeugnis und Unabhängigkeitserklärung. Zudem informieren die Rundschreiben über die Verwaltungsverfahren, die Vergütung der Funktionsträger und die anfallenden Gebühren für die Bestellung.",
-          "en": "The BaFin has published two circulars specifying its administrative practice regarding key function holders under the German Banking Act (KWG) and the Pfandbrief Act (PfandBG). These are Circular 10/2026 (BA) on the appointment of administrators of the refinancing register according to §§ 22e et seq. KWG and Circular 11/2026 (BA) on the appointment of trustees at a Pfandbrief bank according to §§ 7 et seq. PfandBG.\n\nThe circulars outline BaFin's expectations regarding the independence, reliability, and expertise of these function holders and their deputies. Institutions must provide BaFin with corresponding evidence. The circular concerning trustees replaces the previous FAQs on this topic.\n\nBaFin assists institutions in compiling the necessary documents, such as CVs, certificates of good conduct, and declarations of independence. Furthermore, the circulars provide information on administrative procedures, remuneration of function holders, and the fees incurred for their appointment."
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
+          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_14_kwg_pfandbg_rundschreiben_zu_wichtigen_funktionstraegern.html",
-        "imp": "high"
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1525"
       },
       {
-        "d": "14.09.2026",
+        "d": "07.08.2026",
         "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
+          "de": "Leitlinien",
+          "en": "Guidelines"
         },
-        "src": "bafin.de",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "BaFin-Rundschreiben zur Bestellung von Verwaltern des Refinanzierungsregisters (10/2026)",
-          "en": "BaFin Circular on the Appointment of Refinancing Register Administrators (10/2026)"
+          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
+          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
         },
-        "sl": "rundschreiben-10-2026-ba-bestellung-von-verwaltern-des-refinanzierungsregisters",
+        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
         "s": {
-          "de": "Dieses Rundschreiben der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen. Es definiert die Kriterien für die Bestellung und Verlängerung der Bestellung dieser Verwalter, insbesondere hinsichtlich ihrer Unabhängigkeit, Zuverlässigkeit und Sachkunde.\n\nDas Rundschreiben richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Es legt dar, dass Verwalter natürliche Personen sein müssen, die unabhängig vom registerführenden Unternehmen agieren, zuverlässig sind und über spezifische Kenntnisse im Bereich KWG, RefiRegV, BGB und InsO verfügen. Die BaFin ist für die Bestellung zuständig, die auf Vorschlag des registerführenden Unternehmens erfolgt.\n\nDas Rundschreiben ist ab dem 14.09.2026 gültig. Es enthält detaillierte Vorgaben zu den einzureichenden Unterlagen, wie Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Unabhängigkeitserklärung, sowie Hinweise zur Vergütung und Gebührenpflichtigkeit der Bestellung.",
-          "en": "This BaFin circular specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation. It defines the criteria for the appointment and reappointment of these administrators, particularly regarding their independence, reliability, and expertise.\n\nThe circular is addressed to companies wishing to maintain a refinancing register and to applicants for the position of administrator. It stipulates that administrators must be natural persons who act independently of the register-keeping company, are reliable, and possess specific knowledge in the areas of KWG, RefiRegV, BGB, and InsO. BaFin is responsible for the appointment, which is made upon the proposal of the register-keeping company.\n\nThe circular is valid from September 14, 2026. It contains detailed requirements for the documents to be submitted, such as curriculum vitae, declaration of no criminal record, certificate of good conduct, and declaration of independence, as well as information on remuneration and the obligation to pay fees for the appointment."
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
+          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
         },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_10_2026_bestellung_verw_refireg_ba.html",
+        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
         "imp": "high",
-        "refnum": "10/2026"
+        "refnum": "ESMA75-113276571-1528"
       },
       {
-        "d": "14.09.2026",
+        "d": "05.08.2026",
         "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
+          "de": "Leitlinien",
+          "en": "Guidelines"
         },
-        "src": "bafin.de",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "BaFin-Rundschreiben zu Verwaltern des Refinanzierungsregisters (10/2026)",
-          "en": "BaFin Circular on Administrators of Refinancing Registers (10/2026)"
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
+          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
         },
-        "sl": "rundschreiben-10-2026-ba",
+        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
         "s": {
-          "de": "Das Rundschreiben 10/2026 (BA) der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen.\n\nEs richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Die BaFin legt dar, dass Verwalter unabhängig, zuverlässig und sachkundig sein müssen und das 75. Lebensjahr noch nicht vollendet haben dürfen. Insbesondere wird auf die Unabhängigkeit vom registerführenden Unternehmen, die Zuverlässigkeit hinsichtlich straf- und ordnungswidrigkeitenrechtlicher Aspekte sowie die erforderliche Sachkunde in Bezug auf KWG, RefiRegV, BGB und InsO eingegangen.\n\nDie Bestellung erfolgt durch die BaFin auf Vorschlag des registerführenden Unternehmens, in der Regel für fünf Jahre oder bis zur Vollendung des 75. Lebensjahres des Verwalters. Das Rundschreiben ist seit dem 14.09.2026 in Kraft und listet detailliert die einzureichenden Unterlagen auf, darunter Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Auszug aus dem Gewerbezentralregister.",
-          "en": "BaFin Circular 10/2026 (BA) specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation.\n\nIt is addressed to companies wishing to maintain a refinancing register and to applicants for the administrator position. BaFin states that administrators must be independent, reliable, and competent, and must not have reached the age of 75. Special emphasis is placed on independence from the register-keeping company, reliability regarding criminal and administrative offenses, and the required expertise concerning KWG, RefiRegV, BGB, and InsO.\n\nThe appointment is made by BaFin upon proposal by the register-keeping company, typically for five years or until the administrator reaches the age of 75. The circular has been in effect since September 14, 2026, and details the documents to be submitted, including a CV, declaration of no criminal record, certificate of good conduct, and an extract from the central trade register."
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
+          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_10_2026_bestellung_verwalter_refinanzierungsreg_ba.html",
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
         "imp": "high",
-        "refnum": "10/2026"
+        "refnum": "ESMA75-113276571-1625"
       },
       {
-        "d": "11.09.2026",
+        "d": "29.05.2026",
         "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
+          "de": "Q&A",
+          "en": "Q&A"
         },
-        "src": "eur-lex.europa.eu",
+        "src": "eba.europa.eu",
         "ti": {
-          "de": "Durchführungsbestimmungen zu Solvency II: Technische Informationen für versicherungstechnische Rückstellungen (32026R2041)",
-          "en": "Implementing provisions for Solvency II: Technical information for technical provisions (32026R2041)"
+          "de": "Ablehnung einer EBA-Anfrage zu Eigenmittelanforderungen für hybride Finanzinstitute (2026_7834)",
+          "en": "EBA Rejection of Q&A on Own Funds for Hybrid Financial Institutions (2026_7834)"
         },
-        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
+        "sl": "own-funds-requirement-for-entities-authorized-as-crypto-asset-service-provider-c",
         "s": {
-          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung des Basissatzes für die risikofreie Zinskurve sowie für die Volatilitätsanpassung festgelegt.\n\nDie Regelungen richten sich an alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union. Sie müssen diese technischen Informationen verwenden, um ihre versicherungstechnischen Rückstellungen korrekt zu bewerten und die Angemessenheit ihrer Eigenmittel nachzuweisen. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im europäischen Versicherungsmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 31. Dezember 2026.",
-          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the basic rate for the risk-free interest rate curve and for the volatility adjustment are defined.\n\nThese regulations apply to all insurance and reinsurance undertakings within the European Union. They must use this technical information to correctly value their technical provisions and demonstrate the adequacy of their own funds. This ensures a uniform and comparable valuation basis across the European insurance market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 31 December 2026."
+          "de": "Die EBA hat eine Anfrage bezüglich der Eigenmittelanforderungen für Unternehmen abgelehnt, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) gemäß Richtlinie 2009/110/EG und als Wertpapierfirma (IF) gemäß IFR/IFD zugelassen sind.\n\nDie Anfrage betraf insbesondere die Bestimmung der Eigenmittelanforderungen, wenn bestimmte Krypto-Dienstleistungen, wie die Übertragung von Krypto-Assets im Auftrag von Kunden, eine spezifische CASP-Autorisierung erfordern und keine expliziten Bestimmungen zur Interaktion der verschiedenen Aufsichtsrahmen existieren. Die EBA lehnte die Frage ab, da sie über den Rahmen des Q&A-Prozesses hinausgeht und eine Änderung des Rechtsrahmens erfordern würde.\n\nDie Ablehnung erfolgte am 29.05.2026. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, Fragen zu beantworten, die die Korrektheit des Rechtsrahmens in Frage stellen oder dessen Änderung erfordern würden.",
+          "en": "The EBA has rejected an inquiry regarding own funds requirements for entities authorized simultaneously as Crypto Asset Service Providers (CASP) under MiCAR, Electronic Money Institutions (EMI) under Directive 2009/110/EC, and Investment Firms (IF) under IFR/IFD.\n\nThe inquiry specifically concerned the determination of own funds requirements when certain crypto-asset services, such as the transfer of crypto-assets on behalf of clients, necessitate a specific CASP authorization, and explicit provisions governing the interaction between the different prudential frameworks are absent. The EBA rejected the question, stating it falls outside the scope of the Q&A process and would require a modification of the legal framework.\n\nThe rejection occurred on 29.05.2026. The EBA justified its decision by stating that the Q&A tool is not intended to answer questions that challenge the correctness of the legal framework or would necessitate its modification."
         },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
-        "imp": "high",
-        "refnum": "32026R2041"
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7834",
+        "imp": "medium",
+        "refnum": "2026_7834"
       },
       {
-        "d": "31.08.2026",
+        "d": "20.05.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
-        "src": "bafin.de",
+        "src": "finance.ec.europa.eu",
         "ti": {
-          "de": "BaFin-Informationen zur Datenverarbeitung bei Bestellungen von Verwaltern des Refinanzierungsregisters (KWG)",
-          "en": "BaFin Information on Data Processing for Appointments of Refinancing Register Administrators (KWG)"
+          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
+          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
         },
-        "sl": "bestellungen-von-verwaltern-des-refinanzierungsregisters-und-stellvertretern-gem",
+        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
         "s": {
-          "de": "Die BaFin informiert über die Verarbeitung personenbezogener Daten im Rahmen der Bestellung von Verwaltern und Stellvertretern des Refinanzierungsregisters gemäß §§ 22e ff. KWG. Die Datenverarbeitung erfolgt zur Prüfung der Eignung der betreffenden Person für diese Funktion.\n\nBetroffen sind Personen, die als Verwalter oder Stellvertreter des Refinanzierungsregisters vorgeschlagen oder beantragt werden. Die BaFin erhebt und verarbeitet hierfür Namen, Geburtsdatum, Adress- und Kontaktdaten sowie Informationen zur persönlichen Zuverlässigkeit, fachlichen Eignung und zu weiteren Tätigkeiten. Die Daten werden innerhalb der BaFin von zuständigen Mitarbeitern verarbeitet und nicht an Drittländer oder internationale Organisationen übermittelt.\n\nDie Speicherung der Daten erfolgt für zehn Jahre nach Ausscheiden aus der aufsichtsrechtlich relevanten Funktion oder nach erfolgtem Antrag/Vorschlag bei unterbliebener Funktionsübernahme. Betroffene Personen haben die Rechte gemäß DSGVO, einschließlich Auskunft, Berichtigung, Löschung und Widerspruch. Eine Nichtbereitstellung der notwendigen Daten führt dazu, dass der Antrag nicht bearbeitet werden kann.",
-          "en": "The BaFin provides information on the processing of personal data in connection with the appointment of administrators and deputies of the refinancing register in accordance with §§ 22e et seq. KWG. Data processing is carried out to assess the suitability of the person concerned for this function.\n\nThis affects individuals proposed or applying to be administrators or deputies of the refinancing register. For this purpose, BaFin collects and processes names, date of birth, address and contact details, as well as information on personal reliability, professional suitability, and other activities. The data is processed internally by BaFin's responsible employees and is not transferred to third countries or international organizations.\n\nData is stored for ten years after leaving the supervisory-relevant function or after an application/proposal has been made if the function is not taken up. Data subjects have rights under the GDPR, including access, rectification, erasure, and objection. Failure to provide the necessary data will result in the application not being processed."
+          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
+          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Anlage/Datenschutz/anlage_datenschutz_bestellungen_Refinanzierungsregisterverwalter_Kreditwesengesetz_ba.html",
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
+            "d": "21.05.2026"
+          }
+        ]
+      }
+    ],
+    "itsrep": [
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "CVA-Ausnahmen: Marginaler Effekt der Wiedereingliederung (Q&A 2026_7941)",
+          "en": "CVA Exemptions: Marginal Impact of Reintegration (Q&A 2026_7941)"
+        },
+        "sl": "cva-exemptions-marginal-impact-of-reintegration",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Berechnung des marginalen Effekts der Wiedereingliederung von CVA-Ausnahmen im Rahmen der aufsichtsrechtlichen Berichterstattung (COREP) abgelehnt. Die Frage bezog sich auf die Auslegung von Anhang II der ITS zu den Anforderungen an die Darstellung des marginalen Effekts der Wiedereingliederung von CVA-Ausnahmen, getrennt für jede Ausnahme.\n\nDie Fragestellung drehte sich darum, ob Institute eine Methode anwenden dürfen, bei der der marginale Effekt der einzelnen Ausnahmen nur annähernd berechnet wird, indem die Differenz der CVA-Risikogebühr für das Gesamtportfolio und das nicht ausgenommene Portfolio auf die einzelnen Ausnahmen aufgeteilt wird. Die EBA lehnte die Frage ab, da die bestehenden regulatorischen Vorgaben als ausreichend klar und eindeutig erachtet werden.\n\nDie Ablehnung bedeutet, dass die Institute die Vorgaben des Anhangs II der ITS gemäß der ursprünglichen Definition umsetzen müssen, die eine präzise Berechnung des marginalen Effekts für jede einzelne Ausnahme vorsieht. Dies ist relevant für Kreditinstitute, die CVA-Risikopositionen halten und diese im Rahmen von COREP berichten müssen.",
+          "en": "The EBA has rejected a question regarding the calculation of the marginal impact of the reintegration of CVA exemptions within supervisory reporting (COREP). The question concerned the interpretation of Annex II of the ITS on the requirements for presenting the marginal impact of reintegrating CVA exemptions, separately for each exemption.\n\nThe query focused on whether institutions are permitted to use a method where the marginal impact of individual exemptions is only approximated by allocating the difference in the CVA risk charge for the total portfolio and the non-exempted portfolio to the individual exemptions. The EBA rejected the question, stating that the existing regulatory framework is considered sufficiently clear and unambiguous.\n\nThe rejection implies that institutions must implement the requirements of Annex II of the ITS according to the original definition, which mandates a precise calculation of the marginal impact for each individual exemption. This is relevant for credit institutions that hold CVA risk exposures and are required to report them under COREP."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7941",
+        "imp": "low",
+        "refnum": "2026_7941"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Datenqualitätsprüfung EGDQ_0764 für Marktrisikoberichterstattung ab (Q&A 2026_7906)",
+          "en": "EBA Rejects Question on Data Quality Check EGDQ_0764 for Market Risk Reporting (Q&A 2026_7906)"
+        },
+        "sl": "incorrect-quality-control-check-egdq-0764-for-annex-i-instructions-for-reporting",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Datenqualitätsprüfung EGDQ_0764 im Rahmen der Marktrisikoberichterstattung (FRTB) zurückgewiesen. Die Frage betraf die Diskrepanz zwischen den in FRTB (C90.00,r0010,c0080) und FINREP (F01.01,r0380,c0010) ausgewiesenen Gesamtaktiva.\n\nDie EBA begründete die Ablehnung damit, dass die Anfrage nicht die formalen Kriterien für die Einreichung erfüllt oder außerhalb des Geltungsbereichs des Q&A-Prozesses liegt. Das Problem betrifft die zusätzlichen Datenqualitätsprüfungen der EZB und fällt daher nicht in den Zuständigkeitsbereich der EBA.\n\nDie Einreichung erfolgte am 03.06.2026, die Ablehnung am 15.09.2026.",
+          "en": "The EBA has rejected a question regarding data quality check EGDQ_0764 within the market risk reporting framework (FRTB). The question concerned the discrepancy between total assets reported in FRTB (C90.00,r0010,c0080) and FINREP (F01.01,r0380,c0010).\n\nThe EBA justified the rejection by stating that the query did not meet the formal submission criteria or was outside the scope of the Q&A process. The issue concerns the ECB's additional supervisory data quality checks and is therefore outside the EBA's remit.\n\nThe submission date was 03/06/2026, and the rejection date was 15/09/2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7906",
+        "imp": "low",
+        "refnum": "2026_7906"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Überarbeitete Erläuterungen zum außenwirtschaftlichen Meldewesen",
+          "en": "Revised Explanations on Foreign Trade Reporting"
+        },
+        "sl": "erlaeuterungen-zum-aussenwirtschaftlichen-meldewesen",
+        "s": {
+          "de": "Die Bundesbank hat ihre Erläuterungen zum außenwirtschaftlichen Meldewesen inhaltlich überarbeitet. Diese Überarbeitung berücksichtigt die Außenwirtschaftsverordnung (AWV) in der Fassung vom 1. Januar 2025 sowie alle relevanten gesetzlichen Änderungen und Anpassungen, die sich aus den jüngsten Novellierungen der AWV ergeben haben.\n\nDas Dokument integriert nun die zuvor getrennten allgemeinen Hinweise und speziellen Merkblätter zum Meldewesen. Dies dient der Konsolidierung und Vereinfachung der Informationsbereitstellung für meldepflichtige Unternehmen.\n\nDie aktualisierten Erläuterungen sind ab dem 1. Januar 2025 relevant und bieten eine konsolidierte Informationsquelle für die Erfüllung der Meldepflichten im Außenwirtschaftsverkehr.",
+          "en": "The Bundesbank has substantively revised its explanations on foreign trade reporting. This revision takes into account the Foreign Trade and Payments Ordinance (AWV) as amended on January 1, 2025, as well as all relevant legal changes and adjustments resulting from the latest amendments to the AWV.\n\nThe document now integrates the previously separate general guidance and specific reporting fact sheets. This serves to consolidate and simplify the provision of information for companies subject to reporting requirements.\n\nThe updated explanations are relevant from January 1, 2025, and provide a consolidated source of information for fulfilling reporting obligations in foreign trade."
+        },
+        "url": "https://www.bundesbank.de/de/service/meldewesen/aussenwirtschaft/erlaeuterungen-zum-meldewesen/erlaeuterungen-zum-aussenwirtschaftlichen-meldewesen-611758",
+        "imp": "medium"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
+          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
+        },
+        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
+          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
+        "imp": "medium"
+      },
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Bundesbank: Umstellung des ExtraNet auf NExt und Zeitplan für Statistik-Fachverfahren",
+          "en": "Bundesbank: Transition of ExtraNet to NExt and Schedule for Statistical Procedures"
+        },
+        "sl": "bankenstatistik-extranet-next",
+        "s": {
+          "de": "Die Deutsche Bundesbank führt NExt („Neukonzeption ExtraNet“) als Nachfolger des bisherigen ExtraNet ein. NExt wird alle bestehenden Funktionen des ExtraNet übernehmen und um neue Funktionen erweitern. Dabei werden auch neue Begriffe eingeführt: „Fachverfahren“ wird zu „Arbeitsgebiet“ und „Fachverfahrensfunktion“ zu „Fachthema“.\n\nDiese Umstellung betrifft Finanzinstitute, die Meldungen an die Bundesbank über das ExtraNet einreichen. Die Bundesbank stellt Informationen zum Aufbau und zur Benennung von Dateien im XML-basierten Meldewesen bereit, wobei Dateinamen aus Arbeitsgebiet, Meldetermin und Namenserweiterung bestehen. Für bestimmte Statistiken wie die OTC-Derivatestatistik und den Triennial Central Bank Survey sowie die Statistik über Verbriefungszweckgesellschaften ist auch das Excel-Format zulässig.\n\nDie Umstellung der einzelnen Statistik-Fachverfahren auf NExt erfolgt schrittweise im Jahr 2026. Die genauen Termine für die einzelnen Verfahren sind im beigefügten Zeitplan aufgeführt, beginnend mit Statistiken über Verbriefungszweckgesellschaften und Investmentvermögen am 1. Januar 2026 und endend mit der monatlichen Bilanzstatistik und dem Auslandsstatus der Banken am 1. November 2026.",
+          "en": "The Deutsche Bundesbank is introducing NExt (“New ExtraNet Concept”) as the successor to the existing ExtraNet. NExt will take over all existing ExtraNet functions and expand them with new features. New terms will also be introduced: “Fachverfahren” (specialized procedure) will become “Arbeitsgebiet” (work area) and “Fachverfahrensfunktion” (specialized procedure function) will become “Fachthema” (specialized topic).\n\nThis change affects financial institutions that submit reports to the Bundesbank via ExtraNet. The Bundesbank provides information on the structure and naming of files in the XML-based reporting system, where file names consist of the work area, reporting date, and file extension. For certain statistics, such as OTC derivatives statistics and the Triennial Central Bank Survey, as well as statistics on securitization special purpose entities, the Excel format is also permitted.\n\nThe transition of individual statistical procedures to NExt will take place gradually throughout 2026. The exact dates for each procedure are listed in the attached schedule, starting with statistics on securitization special purpose entities and investment funds on January 1, 2026, and concluding with monthly balance sheet statistics and the foreign status of banks on November 1, 2026."
+        },
+        "url": "https://www.bundesbank.de/de/service/meldewesen/bankenstatistik/extranet-next/bankenstatistik-extranet-next-611396",
         "imp": "low"
+      },
+      {
+        "d": "31.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu Validierungsregeln für COROFI/COROFC Vorlage C 34.03 (RRCOROF_V903610_H_C0030)",
+          "en": "EBA Q&A on Validation Rules for COROFI/COROFC Template C 34.03 (RRCOROF_V903610_H_C0030)"
+        },
+        "sl": "validation-rule-rrcorof-v903610-h-c0030",
+        "s": {
+          "de": "Die Anfrage betrifft die Validierungsregeln für die Vorlage C 34.03 in COROFI und COROFC, die ab dem 31. März 2026 gelten. Insbesondere geht es um die Anforderung, dass die Gesamtzahlen für die Anzahl der Transaktionen, den Nominalbetrag, den positiven und negativen Marktwert sowie den Add-on der Summe der jeweiligen Risikokategorien (Zinsänderungsrisiko, Fremdwährungsrisiko, Kreditrisiko, Aktienrisiko, Rohstoffrisiko, Sonstige) entsprechen müssen.\n\nEin Kreditinstitut fragt, wie Geschäfte zu behandeln sind, die gleichzeitig mehreren Risikokategorien ausgesetzt sind und als einzelne Geschäfte ohne Aufteilung gemeldet werden. Es wird auch die Frage aufgeworfen, wie mit Geschäften umzugehen ist, die unter mehreren Kategorien gemeldet werden, da die Gesamtzahlen in C 34.02 und C 34.03 für die Anzahl der Geschäfte und den Nominalbetrag übereinstimmen müssen und in C 34.03 die Gesamtzahlen der Summe der Risikokategorien entsprechen müssen. Zudem wird der Status einer zuvor deaktivierten Regel bezüglich der Gesamtzahl der Geschäfte im Verhältnis zur Summe der Risikokategorien geklärt.\n\nDie EBA hat die Anfrage abgelehnt, da die angesprochene Problematik bereits bekannt ist und für eine zukünftige Version des Meldewesens bzw. eine Überarbeitung der entsprechenden Validierungsregeln berücksichtigt wird.",
+          "en": "The inquiry concerns the validation rules for template C 34.03 within COROFI and COROFC, effective from 31 March 2026. Specifically, it addresses the requirement that the totals for the number of transactions, nominal amount, positive and negative market value, and add-on must equal the sum of the respective risk categories (interest rate risk, foreign exchange risk, credit risk, equity risk, commodities risk, other).\n\nA credit institution asks how to treat deals exposed to multiple risk categories simultaneously, which are reported as single deals without splitting. The question also addresses how to handle multi-risk deals reported under multiple categories, given that totals in C 34.02 and C 34.03 for the number of deals and nominal amount must match, and in C 34.03, totals must equal the sum of risk categories. Furthermore, clarification is sought on the status of a previously deactivated rule regarding the total number of deals equaling the sum across risk categories.\n\nThe EBA rejected the query, stating that the issue raised has already been identified and will be considered for a forthcoming version of the reporting framework or a release of the respective validation rules."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7910",
+        "imp": "low",
+        "refnum": "2026_7910"
+      }
+    ],
+    "emir": [
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Behandlung von Bankgarantien als Initial Margin bei der KCCP-Berechnung (EBA Q&A 2026_7937)",
+          "en": "Treatment of Bank Guarantees as Initial Margin in KCCP Calculation (EBA Q&A 2026_7937)"
+        },
+        "sl": "treatment-of-bank-guarantees-posted-by-clearing-members-as-initial-margin-for-th",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Behandlung von Bankgarantien bei der Berechnung des hypothetischen Kapitals (KCCP) von CCPs gemäß Artikel 50a EMIR abgelehnt. Konkret ging es darum, ob Bankgarantien, die von Clearing-Mitgliedern als Initial Margin gestellt werden, im Rahmen der SA-CCR-Methodik als Teil der Net Independent Collateral Amount (NICA) anerkannt werden können.\n\nDie EBA begründet die Ablehnung damit, dass die regulatorischen Vorgaben in der CRR, insbesondere Artikel 197 und 276, bereits klar und eindeutig sind. Diese Artikel listen die zulässigen finanziellen Sicherheiten auf, zu denen Bankgarantien nicht gehören. Bankgarantien werden als ungedeckte Kreditabsicherung behandelt und können nicht wie andere Sicherheiten liquidiert oder abgetrennt werden.\n\nDie Frage wurde abgelehnt, da die bestehenden Regelungen ausreichend Klarheit bieten und keine weitere Interpretation erforderlich ist. Dies bedeutet, dass CCPs Bankgarantien bei der Berechnung des KCCP nicht als NICA anrechnen können.",
+          "en": "The EBA has rejected a question regarding the treatment of bank guarantees in the calculation of CCP hypothetical capital (KCCP) under Article 50a EMIR. Specifically, the question concerned whether bank guarantees posted by clearing members as initial margin could be recognized as part of the Net Independent Collateral Amount (NICA) under the SA-CCR methodology.\n\nThe EBA justified the rejection by stating that the regulatory provisions in the CRR, particularly Articles 197 and 276, are already clear and unambiguous. These articles list eligible financial collateral, which does not include bank guarantees. Bank guarantees are treated as unfunded credit protection and cannot be liquidated or segregated in the same way as other collateral.\n\nThe question was rejected because the existing regulations provide sufficient clarity and no further interpretation is required. This implies that CCPs cannot recognize bank guarantees as NICA when calculating KCCP."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7937",
+        "imp": "low",
+        "refnum": "2026_7937"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      },
+      {
+        "d": "11.03.2024",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Transaktionsregister (Ares(2023)5151234)",
+          "en": "Harmonisation and Simplification of ESMA Fees for Trade Repositories (Ares(2023)5151234)"
+        },
+        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
+        "s": {
+          "de": "Die Europäische Kommission schlägt eine Harmonisierung und Vereinfachung der Gebühren vor, die die ESMA von Transaktionsregistern (Trade Repositories) erhebt. Ziel ist es, die Effizienz und Transparenz der Gebührenstruktur zu verbessern und gleichzeitig die Aufsichtskosten der ESMA zu decken.\n\nDiese Anpassung betrifft alle Transaktionsregister, die unter die Aufsicht der ESMA fallen. Die Vereinfachung der Gebührenberechnung soll den administrativen Aufwand für die Register reduzieren und eine klarere Kostenstruktur schaffen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Europäischen Kommission.",
+          "en": "The European Commission proposes to harmonize and simplify the fees charged by ESMA to trade repositories. The aim is to improve the efficiency and transparency of the fee structure while covering ESMA's supervisory costs.\n\nThis adjustment affects all trade repositories under ESMA's supervision. The simplification of fee calculation is intended to reduce the administrative burden for repositories and create a clearer cost structure.\n\nThe proposal is currently in the adoption workflow of the European Commission."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13933",
+        "imp": "medium",
+        "refnum": "Ares(2023)5151234"
+      },
+      {
+        "d": "22.06.2022",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Äquivalenzentscheidung gemäß EMIR für zentrale Gegenparteien (Ares(2021)230060)",
+          "en": "Equivalence decision under EMIR for central counterparties (Ares(2021)230060)"
+        },
+        "sl": "equivalence-decision-under-emir-central-counterparties",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Äquivalenzentscheidung gemäß EMIR für zentrale Gegenparteien (CCPs) veröffentlicht. Dieser Vorschlag ist Teil des Adoptions-Workflows und betrifft die Anerkennung von CCPs aus Drittländern.\n\nDie Entscheidung ist relevant für Finanzinstitute, die mit CCPs aus Drittländern zusammenarbeiten, da sie die regulatorische Anerkennung und damit die Möglichkeit zur Nutzung dieser CCPs unter EMIR regelt. Sie schafft Rechtssicherheit und erleichtert grenzüberschreitende Transaktionen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er noch nicht final ist und weitere Schritte im Gesetzgebungsprozess durchlaufen wird.",
+          "en": "The European Commission has published a legislative proposal concerning the equivalence decision under EMIR for central counterparties (CCPs). This proposal is part of the adoption workflow and relates to the recognition of third-country CCPs.\n\nThis decision is relevant for financial institutions that collaborate with third-country CCPs, as it governs the regulatory recognition and thus the ability to use these CCPs under EMIR. It provides legal certainty and facilitates cross-border transactions.\n\nThe proposal is currently in the adoption workflow, meaning it is not yet final and will undergo further steps in the legislative process."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12839",
+        "imp": "medium",
+        "refnum": "Ares(2021)230060"
       }
     ],
     "ecspr": [
@@ -559,124 +1054,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_11_2026_bestellung_treuhaender_pfandbriefbank_ba.html",
         "imp": "high",
         "refnum": "11/2026"
-      }
-    ],
-    "itsrep": [
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bundesbank.de",
-        "ti": {
-          "de": "Überarbeitete Erläuterungen zum außenwirtschaftlichen Meldewesen",
-          "en": "Revised Explanations on Foreign Trade Reporting"
-        },
-        "sl": "erlaeuterungen-zum-aussenwirtschaftlichen-meldewesen",
-        "s": {
-          "de": "Die Bundesbank hat ihre Erläuterungen zum außenwirtschaftlichen Meldewesen inhaltlich überarbeitet. Diese Überarbeitung berücksichtigt die Außenwirtschaftsverordnung (AWV) in der Fassung vom 1. Januar 2025 sowie alle relevanten gesetzlichen Änderungen und Anpassungen, die sich aus den jüngsten Novellierungen der AWV ergeben haben.\n\nDas Dokument integriert nun die zuvor getrennten allgemeinen Hinweise und speziellen Merkblätter zum Meldewesen. Dies dient der Konsolidierung und Vereinfachung der Informationsbereitstellung für meldepflichtige Unternehmen.\n\nDie aktualisierten Erläuterungen sind ab dem 1. Januar 2025 relevant und bieten eine konsolidierte Informationsquelle für die Erfüllung der Meldepflichten im Außenwirtschaftsverkehr.",
-          "en": "The Bundesbank has substantively revised its explanations on foreign trade reporting. This revision takes into account the Foreign Trade and Payments Ordinance (AWV) as amended on January 1, 2025, as well as all relevant legal changes and adjustments resulting from the latest amendments to the AWV.\n\nThe document now integrates the previously separate general guidance and specific reporting fact sheets. This serves to consolidate and simplify the provision of information for companies subject to reporting requirements.\n\nThe updated explanations are relevant from January 1, 2025, and provide a consolidated source of information for fulfilling reporting obligations in foreign trade."
-        },
-        "url": "https://www.bundesbank.de/de/service/meldewesen/aussenwirtschaft/erlaeuterungen-zum-meldewesen/erlaeuterungen-zum-aussenwirtschaftlichen-meldewesen-611758",
-        "imp": "medium"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
-          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
-        },
-        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
-          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
-        "imp": "medium"
-      },
-      {
-        "d": "03.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bundesbank.de",
-        "ti": {
-          "de": "Bundesbank: Umstellung des ExtraNet auf NExt und Zeitplan für Statistik-Fachverfahren",
-          "en": "Bundesbank: Transition of ExtraNet to NExt and Schedule for Statistical Procedures"
-        },
-        "sl": "bankenstatistik-extranet-next",
-        "s": {
-          "de": "Die Deutsche Bundesbank führt NExt („Neukonzeption ExtraNet“) als Nachfolger des bisherigen ExtraNet ein. NExt wird alle bestehenden Funktionen des ExtraNet übernehmen und um neue Funktionen erweitern. Dabei werden auch neue Begriffe eingeführt: „Fachverfahren“ wird zu „Arbeitsgebiet“ und „Fachverfahrensfunktion“ zu „Fachthema“.\n\nDiese Umstellung betrifft Finanzinstitute, die Meldungen an die Bundesbank über das ExtraNet einreichen. Die Bundesbank stellt Informationen zum Aufbau und zur Benennung von Dateien im XML-basierten Meldewesen bereit, wobei Dateinamen aus Arbeitsgebiet, Meldetermin und Namenserweiterung bestehen. Für bestimmte Statistiken wie die OTC-Derivatestatistik und den Triennial Central Bank Survey sowie die Statistik über Verbriefungszweckgesellschaften ist auch das Excel-Format zulässig.\n\nDie Umstellung der einzelnen Statistik-Fachverfahren auf NExt erfolgt schrittweise im Jahr 2026. Die genauen Termine für die einzelnen Verfahren sind im beigefügten Zeitplan aufgeführt, beginnend mit Statistiken über Verbriefungszweckgesellschaften und Investmentvermögen am 1. Januar 2026 und endend mit der monatlichen Bilanzstatistik und dem Auslandsstatus der Banken am 1. November 2026.",
-          "en": "The Deutsche Bundesbank is introducing NExt (“New ExtraNet Concept”) as the successor to the existing ExtraNet. NExt will take over all existing ExtraNet functions and expand them with new features. New terms will also be introduced: “Fachverfahren” (specialized procedure) will become “Arbeitsgebiet” (work area) and “Fachverfahrensfunktion” (specialized procedure function) will become “Fachthema” (specialized topic).\n\nThis change affects financial institutions that submit reports to the Bundesbank via ExtraNet. The Bundesbank provides information on the structure and naming of files in the XML-based reporting system, where file names consist of the work area, reporting date, and file extension. For certain statistics, such as OTC derivatives statistics and the Triennial Central Bank Survey, as well as statistics on securitization special purpose entities, the Excel format is also permitted.\n\nThe transition of individual statistical procedures to NExt will take place gradually throughout 2026. The exact dates for each procedure are listed in the attached schedule, starting with statistics on securitization special purpose entities and investment funds on January 1, 2026, and concluding with monthly balance sheet statistics and the foreign status of banks on November 1, 2026."
-        },
-        "url": "https://www.bundesbank.de/de/service/meldewesen/bankenstatistik/extranet-next/bankenstatistik-extranet-next-611396",
-        "imp": "low"
-      },
-      {
-        "d": "31.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu Validierungsregeln für COROFI/COROFC Vorlage C 34.03 (RRCOROF_V903610_H_C0030)",
-          "en": "EBA Q&A on Validation Rules for COROFI/COROFC Template C 34.03 (RRCOROF_V903610_H_C0030)"
-        },
-        "sl": "validation-rule-rrcorof-v903610-h-c0030",
-        "s": {
-          "de": "Die Anfrage betrifft die Validierungsregeln für die Vorlage C 34.03 in COROFI und COROFC, die ab dem 31. März 2026 gelten. Insbesondere geht es um die Anforderung, dass die Gesamtzahlen für die Anzahl der Transaktionen, den Nominalbetrag, den positiven und negativen Marktwert sowie den Add-on der Summe der jeweiligen Risikokategorien (Zinsänderungsrisiko, Fremdwährungsrisiko, Kreditrisiko, Aktienrisiko, Rohstoffrisiko, Sonstige) entsprechen müssen.\n\nEin Kreditinstitut fragt, wie Geschäfte zu behandeln sind, die gleichzeitig mehreren Risikokategorien ausgesetzt sind und als einzelne Geschäfte ohne Aufteilung gemeldet werden. Es wird auch die Frage aufgeworfen, wie mit Geschäften umzugehen ist, die unter mehreren Kategorien gemeldet werden, da die Gesamtzahlen in C 34.02 und C 34.03 für die Anzahl der Geschäfte und den Nominalbetrag übereinstimmen müssen und in C 34.03 die Gesamtzahlen der Summe der Risikokategorien entsprechen müssen. Zudem wird der Status einer zuvor deaktivierten Regel bezüglich der Gesamtzahl der Geschäfte im Verhältnis zur Summe der Risikokategorien geklärt.\n\nDie EBA hat die Anfrage abgelehnt, da die angesprochene Problematik bereits bekannt ist und für eine zukünftige Version des Meldewesens bzw. eine Überarbeitung der entsprechenden Validierungsregeln berücksichtigt wird.",
-          "en": "The inquiry concerns the validation rules for template C 34.03 within COROFI and COROFC, effective from 31 March 2026. Specifically, it addresses the requirement that the totals for the number of transactions, nominal amount, positive and negative market value, and add-on must equal the sum of the respective risk categories (interest rate risk, foreign exchange risk, credit risk, equity risk, commodities risk, other).\n\nA credit institution asks how to treat deals exposed to multiple risk categories simultaneously, which are reported as single deals without splitting. The question also addresses how to handle multi-risk deals reported under multiple categories, given that totals in C 34.02 and C 34.03 for the number of deals and nominal amount must match, and in C 34.03, totals must equal the sum of risk categories. Furthermore, clarification is sought on the status of a previously deactivated rule regarding the total number of deals equaling the sum across risk categories.\n\nThe EBA rejected the query, stating that the issue raised has already been identified and will be considered for a forthcoming version of the reporting framework or a release of the respective validation rules."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7910",
-        "imp": "low",
-        "refnum": "2026_7910"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "FINREP-Validierung: Datenpunktkategorisierung in Template F 13.2.1.c (EBA Q&A 2026_7904)",
-          "en": "FINREP Validation: Data Point Categorization in Template F 13.2.1.c (EBA Q&A 2026_7904)"
-        },
-        "sl": "template-f-13-2-1-c-variableid-433471-and-433464",
-        "s": {
-          "de": "Die EBA hat eine Frage zur FINREP-Validierung im Rahmen des Reporting Framework 4.2. abgelehnt. Es ging um die Datenpunktkategorisierung in Template F 13.2.1.c, insbesondere die Variablen-IDs 433471 und 433464. Die Einreicher fragten, ob die Validierung korrekt definiert sei und baten um Klärung der aufsichtsrechtlichen Begründung, da nicht alle Zugänge von zwangsverwerteten Vermögenswerten als zur Veräußerung gehaltene langfristige Vermögenswerte qualifiziert werden.\n\nDie Einreicher befürchteten, dass die Validierung eine Konsistenz zwischen F 13.2.1.c und F 13.2.1.a erfordert, obwohl in bestimmten Fällen, wie bei bereits bestehenden Leasingverträgen zum Zeitpunkt der Zwangsverwertung, eine Abstimmung mit F 13.2.1.b (Variablen-IDs 433631 und 433625) angemessener wäre. Die EBA lehnte die Frage ab, da das Problem bereits bekannt ist und für eine zukünftige Version des Reporting Frameworks (4.4.2) berücksichtigt wird.\n\nDie Ablehnung der Frage bedeutet, dass die EBA das Problem anerkennt und eine Lösung in einer kommenden Version des Reporting Frameworks plant. Finanzinstitute, die von dieser spezifischen FINREP-Validierung betroffen sind, sollten die Veröffentlichung von Version 4.4.2 beobachten, um die erwarteten Anpassungen zu implementieren.",
-          "en": "The EBA rejected a question regarding FINREP validation under Reporting Framework 4.2. The query concerned the data point categorization in Template F 13.2.1.c, specifically Variable IDs 433471 and 433464. The submitters asked for confirmation on the correct definition of the validation and clarification on its prudential reporting rationale, as not all additions of foreclosed assets necessarily qualify as non-current assets held for sale.\n\nThe submitters were concerned that the validation appeared to require consistency between F 13.2.1.c and F 13.2.1.a, whereas in certain situations, such as when a lease agreement is already in place at the time of foreclosure, reconciliation with F 13.2.1.b (Variable IDs 433631 and 433625) would be more appropriate. The EBA rejected the question because the matter has already been identified and will be considered for a future version of the Reporting Framework (4.4.2).\n\nThe rejection of the question indicates that the EBA acknowledges the issue and plans to address it in an upcoming version of the Reporting Framework. Financial institutions affected by this specific FINREP validation should monitor the release of version 4.4.2 for the expected adjustments."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7904",
-        "imp": "low",
-        "refnum": "2026_7904"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
-          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
-        },
-        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
-        "s": {
-          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
-          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
       }
     ],
     "cra": [
@@ -1452,251 +1829,6 @@
         ]
       }
     ],
-    "gwg": [
-      {
-        "d": "19.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "zoll.de",
-        "ti": {
-          "de": "Löschroutine für Rückmeldungen nach § 41 GwG",
-          "en": "Deletion Routine for Feedback under Section 41 GwG"
-        },
-        "sl": "loeschroutine-fuer-rueckmeldungen-nach-41-gwg",
-        "s": {
-          "de": "Die Financial Intelligence Unit (FIU) hat ihr Verfahren für Rückmeldungen nach § 41 des Geldwäschegesetzes (GwG) überarbeitet und ein neues Konzept entwickelt. Dieses Konzept wird nach Abschluss eines Konsultationsverfahrens im Dezember 2024 auf Verdachtsmeldungen angewendet, die ab dem 1. Januar 2025 eingereicht wurden, wobei Rückmeldungen automatisiert mittels goAML-Nachricht erfolgen.\n\nFür Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG wird aus datenschutzrechtlichen Gründen eine Löschroutine von 28 Tagen eingeführt. Dies bedeutet, dass diese Rückmeldungen 28 Tage nach ihrem Versand automatisch gelöscht werden. Auch ältere Rückmeldungen, die die 28-Tages-Frist überschritten haben, werden sukzessive gelöscht.\n\nDie Löschroutine tritt ab dem 1. September 2026 in Kraft. Verpflichtete müssen dies bei ihren internen Prozessen berücksichtigen und gegebenenfalls eigene Veranlassungen treffen.",
-          "en": "The Financial Intelligence Unit (FIU) has revised its procedure for feedback under Section 41 of the Anti-Money Laundering Act (GwG) and developed a new concept. This concept will be applied to suspicious transaction reports submitted from January 1, 2025, following the conclusion of a consultation process in December 2024, with feedback being provided automatically via goAML messages.\n\nFor feedback according to Section 41 (2) and (3) GwG, a deletion routine of 28 days is being introduced for data protection reasons. This means that such feedback will be automatically deleted 28 days after its dispatch. Older feedback that has exceeded the 28-day period will also be progressively deleted.\n\nThe deletion routine will come into effect on September 1, 2026. Obligated entities must take this into account in their internal processes and, if necessary, make their own arrangements."
-        },
-        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
-        "imp": "medium"
-      },
-      {
-        "d": "14.08.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
-          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
-        },
-        "sl": "gesetz-fuer-mehr-gerechtigkeit-durch-die-staerkung-der-zollverwaltung-und-die-be",
-        "s": {
-          "de": "Das Gesetz zielt auf eine umfassende Modernisierung der Zollverwaltung ab, insbesondere durch die Neustrukturierung der Generalzolldirektion in die Fachstränge „Zölle und Steuern“ sowie „Sicherheit und Vollzug“. Es sieht die Zusammenführung von Ermittlungs- und Vollzugseinheiten vor und stärkt die Finanzkontrolle Schwarzarbeit durch personelle und haushälterische Aufstockung sowie erweiterte Ermittlungsbefugnisse.\n\nFür Finanzinstitute ist relevant, dass die Zollverwaltung bei der Bekämpfung internationaler Geldwäsche gestärkt wird, unter anderem durch die Einrichtung spezialisierter Ermittlungseinheiten und eines Verwaltungsverfahrens zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft. Zudem werden die Zusammenarbeit und der Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen (FIU) mit anderen Akteuren verbessert. Die gesetzliche Verankerung des Ressortübergreifenden Steuerungskreises dient der Umsetzung der FATF-Empfehlungen.\n\nDas Gesetz ist Teil der Initiative „Zoll 2030“ und setzt Ziele des Koalitionsvertrags um.",
-          "en": "The law aims at a comprehensive modernization of the customs administration, particularly through the restructuring of the General Directorate of Customs into the specialized branches “Customs and Taxes” and “Security and Enforcement”. It provides for the consolidation of investigation and enforcement units and strengthens the Financial Control of Undeclared Work through increased personnel and budget, as well as expanded investigative powers.\n\nFor financial institutions, it is relevant that the customs administration's role in combating international money laundering is strengthened, including through the establishment of specialized investigation units and an administrative procedure for clarifying assets of dubious origin. Furthermore, cooperation and data exchange of the Financial Intelligence Unit (FIU) with other actors will be improved. The legal anchoring of the Interdepartmental Steering Committee serves to implement FATF recommendations.\n\nThis law is part of the “Customs 2030” initiative and implements objectives from the coalition agreement."
-        },
-        "url": "https://dip.bundestag.de/vorgang/338348",
-        "imp": "medium"
-      },
-      {
-        "d": "28.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "zoll.de",
-        "ti": {
-          "de": "Sektorale Risikoanalyse",
-          "en": "Sektorale Risikoanalyse"
-        },
-        "sl": "sektorale-risikoanalyse",
-        "s": {
-          "de": "Das Bundesministerium der Finanzen (BMF) hat eine aktualisierte sektorale Risikoanalyse veröffentlicht, die sich auf die Anfälligkeit juristischer Personen und sonstiger Rechtsgestaltungen für Geldwäsche und Terrorismusfinanzierung in Deutschland konzentriert. Diese Analyse baut auf den Erkenntnissen der Nationalen Risikoanalyse (NRA) von 2019 auf und ergänzt eine frühere sektorale Analyse zur Terrorismusfinanzierung durch Non-Profit-Organisationen (NPO).\n\nDie Analyse bewertet spezifische Risiken und schlägt Maßnahmen zur Minderung dieser Risiken vor, wobei der Schwerpunkt auf Geldwäscherisiken liegt. Für Verpflichtete nach dem Geldwäschegesetz (§ 5 Abs. 1 Satz 2 GwG) sind die Ergebnisse relevant, da sie diese bei der Erstellung ihrer eigenen Risikoanalysen berücksichtigen müssen. Die PwC-Analyse deutet auf die Bedeutung dieser Bewertung für die Compliance-Praxis hin.\n\nDie \"Sektorspezifische Risikoanalyse 2026 (Stand: Juni 2026)\" ist über die Webseite des BMF verfügbar.",
-          "en": "The German Federal Ministry of Finance (BMF) has published an updated sectoral risk analysis focusing on the susceptibility of legal entities and other legal arrangements to money laundering and terrorist financing in Germany. This analysis builds on the findings of the 2019 National Risk Assessment (NRA) and complements an earlier sectoral analysis on terrorist financing through non-profit organizations (NPOs).\n\nThe analysis assesses specific risks and proposes measures to mitigate them, with a primary focus on money laundering risks. For entities obligated under the Money Laundering Act (Section 5 (1) Sentence 2 GwG), the results are relevant as they must consider them when conducting their own risk analyses. The PwC analysis highlights the importance of this assessment for compliance practices.\n\nThe \"Sector-Specific Risk Analysis 2026 (as of June 2026)\" is available on the BMF's website."
-        },
-        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Nationale-Risikoanalyse/nationale-risikoanalyse_node.html",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "MOF: Sectoral Risk Assessment to combat money laundering and terrorist financing",
-            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/256048/mof-sectoral-risk-assessment-to-combat-money-laundering-and-terrorist-financing/",
-            "d": "27.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "22.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
-          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
-        },
-        "sl": "gesetz-zur-konsequenten-bekaempfung-von-geldwaesche-bei-steuerhinterziehung",
-        "s": {
-          "de": "Das Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung zielt darauf ab, die Geldwäsche im Zusammenhang mit Steuerhinterziehung effektiver zu bekämpfen. Es sieht eine Änderung des § 261 des Strafgesetzbuches vor, um die rechtlichen Grundlagen für die Verfolgung solcher Delikte zu stärken.\n\nDiese Gesetzesänderung ist für Finanzinstitute und andere Verpflichtete im Sinne des Geldwäschegesetzes relevant. Sie müssen ihre internen Prozesse und Kontrollsysteme überprüfen und gegebenenfalls anpassen, um den verschärften Anforderungen zur Geldwäscheprävention bei Steuerhinterziehung gerecht zu werden. Dies betrifft insbesondere die Sorgfaltspflichten und die Meldepflichten bei Verdachtsfällen.\n\nDa es sich um einen Gesetzesentwurf handelt, ist der weitere Gesetzgebungsprozess abzuwarten. Ein konkretes Datum für das Inkrafttreten der Änderungen ist noch nicht bekannt.",
-          "en": "The Act on the Consistent Fight against Money Laundering in Tax Evasion aims to combat money laundering related to tax evasion more effectively. It proposes an amendment to Section 261 of the German Criminal Code to strengthen the legal basis for prosecuting such offenses.\n\nThis legislative change is relevant for financial institutions and other obliged entities under the German Money Laundering Act. They must review and, if necessary, adapt their internal processes and control systems to meet the stricter requirements for money laundering prevention in cases of tax evasion. This particularly concerns due diligence obligations and reporting obligations for suspicious transactions.\n\nAs this is a legislative proposal, the further legislative process remains to be seen. A specific date for the entry into force of the amendments is not yet known."
-        },
-        "url": "https://dip.bundestag.de/vorgang/337697",
-        "imp": "medium"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
-          "en": "Methodology for calculating and collecting fees by the Anti-Money Laundering Authority (AMLA)"
-        },
-        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
-        "s": {
-          "de": "Die Europäische Kommission plant eine Methodik zur Berechnung und Erhebung von Gebühren durch die Anti-Geldwäsche-Behörde (AMLA). Dieses Vorhaben befindet sich noch in der Planungsphase.\n\nDie geplante Methodik wird für alle Finanzinstitute relevant sein, die unter die Aufsicht der AMLA fallen. Sie wird festlegen, wie die Gebühren für die Aufsichts- und Regulierungsaktivitäten der AMLA berechnet und eingezogen werden.\n\nDerzeit ist der Verfahrensstand \"Init Planned\", was bedeutet, dass die Initiative noch in einem sehr frühen Stadium ist und weitere Details zu Fristen und Konsultationen noch nicht verfügbar sind.",
-          "en": "The European Commission is planning a methodology for the calculation and collection of fees by the Anti-Money Laundering Authority (AMLA). This initiative is currently in the planning phase.\n\nThis planned methodology will be relevant for all financial institutions falling under AMLA's supervision. It will define how fees for AMLA's supervisory and regulatory activities are calculated and collected.\n\nThe current status is \"Init Planned,\" meaning the initiative is in a very early stage, and further details on deadlines and consultations are not yet available."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
-        "imp": "medium",
-        "refnum": "Ares(2026)6942470"
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung (07/2026 GW)",
-          "en": "Circular on High-Risk Third Countries in Anti-Money Laundering and Counter-Terrorist Financing (07/2026 GW)"
-        },
-        "sl": "rundschreiben-07-2026-gw",
-        "s": {
-          "de": "Dieses Rundschreiben der BaFin informiert alle nach dem Geldwäschegesetz (GwG) Verpflichteten über Drittstaaten mit strategischen Mängeln in ihren Systemen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (Hochrisiko-Staaten).\n\nEs konkretisiert die Maßnahmen, die in Bezug auf Nordkorea, Iran und Myanmar zu ergreifen sind, basierend auf Erklärungen der FATF. Für Nordkorea und Iran werden spezifische Gegenmaßnahmen gefordert, während für Myanmar verstärkte Sorgfaltspflichten gelten. Zudem werden die aktuellen FATF-Listen der Länder unter verstärkter Beobachtung genannt, wobei Bosnien und Herzegowina sowie Irak neu hinzugekommen sind und Algerien sowie Namibia gestrichen wurden.\n\nFinanzinstitute und andere Verpflichtete nach dem GwG müssen die genannten Maßnahmen und verstärkten Sorgfaltspflichten umsetzen, um den Risiken aus diesen Ländern zu begegnen. Dies beinhaltet unter anderem das Beenden von Korrespondenzbeziehungen, das Schließen von Tochtergesellschaften und die Beschränkung von Geschäftsbeziehungen.",
-          "en": "This BaFin circular informs all entities obligated under the Money Laundering Act (GwG) about third countries with strategic deficiencies in their anti-money laundering and counter-terrorist financing systems (high-risk countries).\n\nIt specifies the measures to be taken in relation to North Korea, Iran, and Myanmar, based on FATF statements. Specific countermeasures are required for North Korea and Iran, while enhanced due diligence obligations apply to Myanmar. Furthermore, the current FATF lists of countries under increased monitoring are provided, with Bosnia and Herzegovina and Iraq newly added, and Algeria and Namibia removed.\n\nFinancial institutions and other obligated entities under the GwG must implement the stated measures and enhanced due diligence obligations to address the risks posed by these countries. This includes, among other things, terminating correspondent relationships, closing subsidiaries, and restricting business relationships."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
-        "imp": "high",
-        "refnum": "07/2026"
-      }
-    ],
-    "emir": [
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
-      },
-      {
-        "d": "11.03.2024",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Transaktionsregister (Ares(2023)5151234)",
-          "en": "Harmonisation and Simplification of ESMA Fees for Trade Repositories (Ares(2023)5151234)"
-        },
-        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
-        "s": {
-          "de": "Die Europäische Kommission schlägt eine Harmonisierung und Vereinfachung der Gebühren vor, die die ESMA von Transaktionsregistern (Trade Repositories) erhebt. Ziel ist es, die Effizienz und Transparenz der Gebührenstruktur zu verbessern und gleichzeitig die Aufsichtskosten der ESMA zu decken.\n\nDiese Anpassung betrifft alle Transaktionsregister, die unter die Aufsicht der ESMA fallen. Die Vereinfachung der Gebührenberechnung soll den administrativen Aufwand für die Register reduzieren und eine klarere Kostenstruktur schaffen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow der Europäischen Kommission.",
-          "en": "The European Commission proposes to harmonize and simplify the fees charged by ESMA to trade repositories. The aim is to improve the efficiency and transparency of the fee structure while covering ESMA's supervisory costs.\n\nThis adjustment affects all trade repositories under ESMA's supervision. The simplification of fee calculation is intended to reduce the administrative burden for repositories and create a clearer cost structure.\n\nThe proposal is currently in the adoption workflow of the European Commission."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13933",
-        "imp": "medium",
-        "refnum": "Ares(2023)5151234"
-      },
-      {
-        "d": "22.06.2022",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Äquivalenzentscheidung gemäß EMIR für zentrale Gegenparteien (Ares(2021)230060)",
-          "en": "Equivalence decision under EMIR for central counterparties (Ares(2021)230060)"
-        },
-        "sl": "equivalence-decision-under-emir-central-counterparties",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag zur Äquivalenzentscheidung gemäß EMIR für zentrale Gegenparteien (CCPs) veröffentlicht. Dieser Vorschlag ist Teil des Adoptions-Workflows und betrifft die Anerkennung von CCPs aus Drittländern.\n\nDie Entscheidung ist relevant für Finanzinstitute, die mit CCPs aus Drittländern zusammenarbeiten, da sie die regulatorische Anerkennung und damit die Möglichkeit zur Nutzung dieser CCPs unter EMIR regelt. Sie schafft Rechtssicherheit und erleichtert grenzüberschreitende Transaktionen.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er noch nicht final ist und weitere Schritte im Gesetzgebungsprozess durchlaufen wird.",
-          "en": "The European Commission has published a legislative proposal concerning the equivalence decision under EMIR for central counterparties (CCPs). This proposal is part of the adoption workflow and relates to the recognition of third-country CCPs.\n\nThis decision is relevant for financial institutions that collaborate with third-country CCPs, as it governs the regulatory recognition and thus the ability to use these CCPs under EMIR. It provides legal certainty and facilitates cross-border transactions.\n\nThe proposal is currently in the adoption workflow, meaning it is not yet final and will undergo further steps in the legislative process."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12839",
-        "imp": "medium",
-        "refnum": "Ares(2021)230060"
-      },
-      {
-        "d": "30.03.2022",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Derivatehandel – Anerkennung südafrikanischer CCP-Regelungen als gleichwertig mit dem EU-System",
-          "en": "Derivatives trading – recognising South Africa central counterparty arrangements as equivalent to the EU system"
-        },
-        "sl": "derivatives-trading-recognising-south-africa-central-counterparty-arrangements-a",
-        "s": {
-          "de": "Die Europäische Kommission plant, die Regelungen für zentrale Gegenparteien (CCPs) in Südafrika als gleichwertig mit dem EU-System anzuerkennen. Dies betrifft insbesondere das Clearing von Derivategeschäften.\n\nDiese Anerkennung würde es EU-Finanzinstituten ermöglichen, Derivategeschäfte über südafrikanische CCPs abzuwickeln, ohne zusätzliche Kapitalanforderungen oder andere regulatorische Hürden befürchten zu müssen, die bei der Nutzung von CCPs aus nicht-gleichwertigen Drittländern anfallen würden. Dies erleichtert den Handel und reduziert die Compliance-Kosten.\n\nDerzeit befindet sich das Vorhaben im Status „Init Planned“, was bedeutet, dass die Initiative zur Gesetzgebung noch in der Anfangsphase ist.",
-          "en": "The European Commission intends to recognize the central counterparty (CCP) arrangements in South Africa as equivalent to the EU system. This specifically concerns the clearing of derivatives transactions.\n\nThis recognition would allow EU financial institutions to clear derivatives transactions through South African CCPs without facing additional capital requirements or other regulatory hurdles that would arise when using CCPs from non-equivalent third countries. This facilitates trading and reduces compliance costs.\n\nThe initiative is currently in the 'Init Planned' status, meaning the legislative process is still in its initial phase."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13424",
-        "imp": "medium",
-        "refnum": "Ares(2022)2159472"
-      }
-    ],
     "sanctions": [
       {
         "d": "11.08.2026",
@@ -1846,115 +1978,6 @@
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7886",
         "imp": "low",
         "refnum": "2026_7886"
-      }
-    ],
-    "mica": [
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      },
-      {
-        "d": "07.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
-          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
-        },
-        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
-          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1528"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
-          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
-          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1625"
-      },
-      {
-        "d": "29.05.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ablehnung einer EBA-Anfrage zu Eigenmittelanforderungen für hybride Finanzinstitute (2026_7834)",
-          "en": "EBA Rejection of Q&A on Own Funds for Hybrid Financial Institutions (2026_7834)"
-        },
-        "sl": "own-funds-requirement-for-entities-authorized-as-crypto-asset-service-provider-c",
-        "s": {
-          "de": "Die EBA hat eine Anfrage bezüglich der Eigenmittelanforderungen für Unternehmen abgelehnt, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) gemäß Richtlinie 2009/110/EG und als Wertpapierfirma (IF) gemäß IFR/IFD zugelassen sind.\n\nDie Anfrage betraf insbesondere die Bestimmung der Eigenmittelanforderungen, wenn bestimmte Krypto-Dienstleistungen, wie die Übertragung von Krypto-Assets im Auftrag von Kunden, eine spezifische CASP-Autorisierung erfordern und keine expliziten Bestimmungen zur Interaktion der verschiedenen Aufsichtsrahmen existieren. Die EBA lehnte die Frage ab, da sie über den Rahmen des Q&A-Prozesses hinausgeht und eine Änderung des Rechtsrahmens erfordern würde.\n\nDie Ablehnung erfolgte am 29.05.2026. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, Fragen zu beantworten, die die Korrektheit des Rechtsrahmens in Frage stellen oder dessen Änderung erfordern würden.",
-          "en": "The EBA has rejected an inquiry regarding own funds requirements for entities authorized simultaneously as Crypto Asset Service Providers (CASP) under MiCAR, Electronic Money Institutions (EMI) under Directive 2009/110/EC, and Investment Firms (IF) under IFR/IFD.\n\nThe inquiry specifically concerned the determination of own funds requirements when certain crypto-asset services, such as the transfer of crypto-assets on behalf of clients, necessitate a specific CASP authorization, and explicit provisions governing the interaction between the different prudential frameworks are absent. The EBA rejected the question, stating it falls outside the scope of the Q&A process and would require a modification of the legal framework.\n\nThe rejection occurred on 29.05.2026. The EBA justified its decision by stating that the Q&A tool is not intended to answer questions that challenge the correctness of the legal framework or would necessitate its modification."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7834",
-        "imp": "medium",
-        "refnum": "2026_7834"
-      },
-      {
-        "d": "20.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
-          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
-        },
-        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
-          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
-            "d": "21.05.2026"
-          }
-        ]
       }
     ],
     "cssfaml": [
