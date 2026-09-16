@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T13:01:51Z",
+  "generated_at": "2026-09-16T12:20:39Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,66 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "dora": [
+      {
+        "d": "16.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "DORA: Operationelle Anweisungen zur Meldung von IKT-Vorfällen",
+          "en": "DORA incident reporting - operational instructions"
+        },
+        "sl": "dora-incident-reporting-operational-instructions",
+        "s": {
+          "de": "Dieses Dokument der ESMA enthält operationelle Anweisungen für die zuständigen Behörden zur Meldung schwerwiegender IKT-bezogener Vorfälle gemäß der DORA-Verordnung. Ziel ist es, die Datenqualität zu verbessern und die Konsistenz der Meldungen über verschiedene Jurisdiktionen hinweg zu fördern. Die Anweisungen basieren auf den Implementing Technical Standards (ITS) 2025/302 und den Regulatory Technical Standards (RTS) 2025/301 und 2024/1772, die die Meldeformulare, Verfahren, Inhalte, Fristen und Klassifizierungskriterien für IKT-Vorfälle festlegen.\n\nDie Anweisungen behandeln spezifische Aspekte wie die Verwendung der englischen Sprache für Meldungen an die ESAs, die einheitliche Angabe monetärer Felder in Tausendereinheiten und die korrekte Nutzung von Freitextfeldern. Weiterhin wird die Notwendigkeit der Einreichung von Abschlussberichten, die Vorgehensweise bei Korrekturmeldungen und die konsistente Verwendung eindeutiger Identifikatoren für Vorfälle betont. Auch die Kriterien für die Klassifizierung von Vorfällen als schwerwiegend und die geografische Verbreitung werden präzisiert.\n\nFinanzunternehmen, die unter DORA fallen, müssen nach der Erkennung eines als schwerwiegend eingestuften IKT-Vorfalls Informationen über den Vorfall an ihre zuständige Behörde melden. Diese Behörden wiederum benachrichtigen die ESAs unter Verwendung vordefinierter englischer Vorlagen. Die Anweisungen sollen regelmäßig aktualisiert werden, um Erfahrungen aus der Praxis zu berücksichtigen.",
+          "en": "This ESMA document provides operational instructions for competent authorities regarding the reporting of major ICT-related incidents under the DORA Regulation. The aim is to enhance data quality and promote greater consistency in reporting across jurisdictions. The instructions are based on Implementing Technical Standards (ITS) 2025/302 and Regulatory Technical Standards (RTS) 2025/301 and 2024/1772, which define reporting forms, procedures, content, timelines, and classification criteria for ICT incidents.\n\nThe instructions cover specific aspects such as the use of the English language for reports to the ESAs, the consistent reporting of monetary fields in thousands of units, and the correct use of free-text fields. Furthermore, the document emphasizes the necessity of submitting final reports, the procedure for correction reports, and the consistent use of unique identifiers for incidents. Criteria for classifying incidents as major and their geographical spread are also clarified.\n\nFinancial entities falling under DORA must report information on ICT-related incidents classified as major to their competent authority. These authorities, in turn, notify the ESAs using predefined English templates. The instructions will be updated regularly to incorporate practical experience."
+        },
+        "url": "https://www.esma.europa.eu/document/dora-incident-reporting-operational-instructions",
+        "imp": "high"
+      },
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu den gemeinsamen DORA-Leitlinien für IKT-Kosten und -Verluste (ESMA75-1012365701-566)",
+          "en": "Compliance Table on Joint DORA Guidelines for ICT Costs and Losses (ESMA75-1012365701-566)"
+        },
+        "sl": "compliance-table-on-the-joint-guidelines-on-costs-and-losses-under-dora",
+        "s": {
+          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der Europäischen Aufsichtsbehörden (ESAs) zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 (JC/GL/2024/34) verursacht werden.\n\nDie Tabelle listet auf, welche nationalen zuständigen Behörden (z.B. FMA Österreich, BaFin Deutschland, AMF Frankreich) diese Leitlinien einhalten oder beabsichtigen, sie einzuhalten. Einige Behörden geben zusätzliche Informationen zu ihrer Umsetzung an, wie die Veröffentlichung auf ihren Websites, die Integration in Aufsichtsverfahren oder die Entwicklung spezifischer nationaler Anweisungen und Formulare zur Berichterstattung.\n\nDie Leitlinien sind ab dem 19. Mai 2025 anwendbar. Mehrere nationale Behörden haben bereits Maßnahmen zur Umsetzung ergriffen oder planen diese, um die Anforderungen der DORA-Verordnung bezüglich der Meldung von Kosten und Verlusten aus IKT-Vorfällen zu erfüllen.",
+          "en": "This document is a compliance table for the Joint Guidelines of the European Supervisory Authorities (ESAs) on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under the DORA Regulation (EU) 2022/2554 (JC/GL/2024/34).\n\nThe table lists which national competent authorities (e.g., FMA Austria, BaFin Germany, AMF France) comply or intend to comply with these guidelines. Some authorities provide additional information on their implementation, such as publication on their websites, integration into supervisory procedures, or the development of specific national instructions and forms for reporting.\n\nThe guidelines are applicable from May 19, 2025. Several national authorities have already taken or plan to take measures for implementation to meet the DORA Regulation's requirements regarding the reporting of costs and losses from ICT incidents."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
+        "imp": "medium",
+        "refnum": "ESMA75-1012365701-566"
+      },
+      {
+        "d": "02.10.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "DORFS-Gesetz: Digitale operationale Resilienz von Finanzdienstleistungen",
+          "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
+        },
+        "sl": "digital-operational-resilience-of-financial-services-dorfs-act",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag für den Digital Operational Resilience of Financial Services (DORFS) Act vorgelegt. Dieser Vorschlag zielt darauf ab, die digitale operationelle Resilienz im Finanzsektor zu stärken.\n\nDer DORFS Act ist für Finanzunternehmen relevant, da er Anforderungen an ihre IT-Sicherheit und Widerstandsfähigkeit gegenüber Cyberangriffen und anderen digitalen Störungen festlegen wird. Dies bedeutet für die betroffenen Institute, dass sie ihre internen Prozesse und Systeme entsprechend anpassen müssen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Verabschiedung hindeutet.",
+          "en": "The European Commission has submitted a legislative proposal for the Digital Operational Resilience of Financial Services (DORFS) Act. This proposal aims to strengthen digital operational resilience in the financial sector.\n\nThe DORFS Act is relevant for financial companies as it will establish requirements for their IT security and resilience against cyberattacks and other digital disruptions. This means that affected institutions will have to adapt their internal processes and systems accordingly.\n\nThe current procedural status is the adoption workflow, which indicates an impending enactment."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
+        "imp": "medium"
       }
     ],
     "gwg": [
@@ -1287,47 +1347,6 @@
           "en": "BaFin has published a decision tree to assist companies in determining whether they are subject to registration or reporting obligations under the Resolution Financing Act (AbsFinAG). This tool aims to simplify classification by posing relevant questions about business models and legal status.\n\nThe decision tree is intended for institutions within the meaning of Section 1 (2) AbsFinAG, as well as companies that commercially offer loans or financial assistance. It also considers cases where companies are based in another EU/EEA member state or are licensed/registered as lenders. Furthermore, specific constellations such as the assignment of payment claims to institutions under Section 2 (2) AbsFinAG are addressed.\n\nThe publication is dated 31.08.2026."
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_leitfaden_absfinag.html",
-        "imp": "medium"
-      }
-    ],
-    "dora": [
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu den gemeinsamen DORA-Leitlinien für IKT-Kosten und -Verluste (ESMA75-1012365701-566)",
-          "en": "Compliance Table on Joint DORA Guidelines for ICT Costs and Losses (ESMA75-1012365701-566)"
-        },
-        "sl": "compliance-table-on-the-joint-guidelines-on-costs-and-losses-under-dora",
-        "s": {
-          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der Europäischen Aufsichtsbehörden (ESAs) zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 (JC/GL/2024/34) verursacht werden.\n\nDie Tabelle listet auf, welche nationalen zuständigen Behörden (z.B. FMA Österreich, BaFin Deutschland, AMF Frankreich) diese Leitlinien einhalten oder beabsichtigen, sie einzuhalten. Einige Behörden geben zusätzliche Informationen zu ihrer Umsetzung an, wie die Veröffentlichung auf ihren Websites, die Integration in Aufsichtsverfahren oder die Entwicklung spezifischer nationaler Anweisungen und Formulare zur Berichterstattung.\n\nDie Leitlinien sind ab dem 19. Mai 2025 anwendbar. Mehrere nationale Behörden haben bereits Maßnahmen zur Umsetzung ergriffen oder planen diese, um die Anforderungen der DORA-Verordnung bezüglich der Meldung von Kosten und Verlusten aus IKT-Vorfällen zu erfüllen.",
-          "en": "This document is a compliance table for the Joint Guidelines of the European Supervisory Authorities (ESAs) on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under the DORA Regulation (EU) 2022/2554 (JC/GL/2024/34).\n\nThe table lists which national competent authorities (e.g., FMA Austria, BaFin Germany, AMF France) comply or intend to comply with these guidelines. Some authorities provide additional information on their implementation, such as publication on their websites, integration into supervisory procedures, or the development of specific national instructions and forms for reporting.\n\nThe guidelines are applicable from May 19, 2025. Several national authorities have already taken or plan to take measures for implementation to meet the DORA Regulation's requirements regarding the reporting of costs and losses from ICT incidents."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
-        "imp": "medium",
-        "refnum": "ESMA75-1012365701-566"
-      },
-      {
-        "d": "02.10.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "DORFS-Gesetz: Digitale operationale Resilienz von Finanzdienstleistungen",
-          "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
-        },
-        "sl": "digital-operational-resilience-of-financial-services-dorfs-act",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag für den Digital Operational Resilience of Financial Services (DORFS) Act vorgelegt. Dieser Vorschlag zielt darauf ab, die digitale operationelle Resilienz im Finanzsektor zu stärken.\n\nDer DORFS Act ist für Finanzunternehmen relevant, da er Anforderungen an ihre IT-Sicherheit und Widerstandsfähigkeit gegenüber Cyberangriffen und anderen digitalen Störungen festlegen wird. Dies bedeutet für die betroffenen Institute, dass sie ihre internen Prozesse und Systeme entsprechend anpassen müssen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Verabschiedung hindeutet.",
-          "en": "The European Commission has submitted a legislative proposal for the Digital Operational Resilience of Financial Services (DORFS) Act. This proposal aims to strengthen digital operational resilience in the financial sector.\n\nThe DORFS Act is relevant for financial companies as it will establish requirements for their IT security and resilience against cyberattacks and other digital disruptions. This means that affected institutions will have to adapt their internal processes and systems accordingly.\n\nThe current procedural status is the adoption workflow, which indicates an impending enactment."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
         "imp": "medium"
       }
     ],
