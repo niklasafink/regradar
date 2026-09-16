@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T12:20:39Z",
+  "generated_at": "2026-09-16T13:34:55Z",
   "updates": {
     "amla": [
       {
@@ -298,6 +298,47 @@
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
         "imp": "medium"
+      }
+    ],
+    "fitproper": [
+      {
+        "d": "16.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Eignungsprüfung (Fit and Proper – FAP) für Geschäftsleiter und Schlüsselfunktionen",
+          "en": "Fit and Proper (FAP) Assessment for Managing Directors and Key Function Holders"
+        },
+        "sl": "eignungspruefung",
+        "s": {
+          "de": "Die Bundesbank erläutert die Anforderungen an die Eignungsprüfung (Fit and Proper – FAP) für Geschäftsleiter, Mitglieder von Verwaltungs- und Aufsichtsorganen sowie Inhaber von Schlüsselfunktionen in beaufsichtigten Instituten. Diese Personen müssen fachlich geeignet, persönlich zuverlässig und ausreichend zeitlich verfügbar sein.\n\nDie Anforderungen gelten für Kredit- und Finanzdienstleistungsinstitute nach KWG, Zahlungs- und E-Geld-Institute nach ZAG sowie Wertpapierinstitute nach WpIG. Institute müssen der Aufsichtsbehörde und der Bundesbank die Bestellung und das Ausscheiden dieser Personen unverzüglich anzeigen. Für große Unternehmen nach § 1 Abs. 1c KWG sind zusätzliche Anzeigepflichten und Fristen zu beachten.\n\nMit dem Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz werden nun auch Inhaber besonderer Schlüsselfunktionen (Leiter der internen Kontrollfunktionen und Leiter Finanzen) in großen Unternehmen von den aufsichtlichen Eignungsprüfungen erfasst. Deren Ernennung und Abberufung sowie neue relevante Tatsachen sind ebenfalls unverzüglich anzuzeigen.",
+          "en": "The Bundesbank clarifies the Fit and Proper (FAP) requirements for managing directors, members of administrative and supervisory bodies, and key function holders in supervised institutions. These individuals must be professionally qualified, personally reliable, and have sufficient time available.\n\nThe requirements apply to credit and financial services institutions under the KWG, payment and e-money institutions under the ZAG, and investment firms under the WpIG. Institutions must immediately notify the supervisory authority and the Bundesbank of the appointment and departure of these individuals. For large undertakings as defined in § 1 para. 1c KWG, additional notification obligations and deadlines apply.\n\nWith the implementation of the Banking Directive Implementation and Bureaucracy Reduction Act, holders of specific key functions (heads of internal control functions and chief financial officers) in large undertakings are now also subject to supervisory fitness assessments. Their appointment and dismissal, as well as any new relevant facts, must also be reported without delay."
+        },
+        "url": "https://www.bundesbank.de/de/aufgaben/finanzaufsicht/einzelaspekte/eignungspruefung-erlaubnisverfahren-inhaberkontrolle/eignungspruefung-598468",
+        "imp": "high"
+      },
+      {
+        "d": "22.10.2025",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben 11/2025 (BA) zu den Mitgliedern der Geschäftsleitung sowie von Verwaltungs- und Aufsichtsorganen gemäß KWG",
+          "en": "Rundschreiben 11/2025 (BA) zu den Mitgliedern der Geschäftsleitung sowie von Verwaltungs- und Aufsichtsorganen gemäß KWG"
+        },
+        "sl": "rundschreiben-11-2025-ba-zu-den-mitgliedern-der-geschaeftsleitung-sowie-von-verw",
+        "s": {
+          "de": "Das Rundschreiben 11/2025 (BA) der BaFin präzisiert die fachlichen und persönlichen Anforderungen an Geschäftsleiter sowie Mitglieder von Verwaltungs- und Aufsichtsorganen gemäß Kreditwesengesetz (KWG). Es erläutert die damit verbundenen Anzeigepflichten und die einzureichenden Unterlagen.\n\nDie BaFin übernimmt mit diesem Rundschreiben die Leitlinien der EBA und ESMA zur Bewertung der Eignung von Mitgliedern des Leitungsorgans und Inhabern von Schlüsselfunktionen (EBA/GL/2021/06) sowie zur internen Governance (EBA/GL/2021/05) in ihre Verwaltungspraxis. Für Unternehmen unter Aufsicht der EZB gelten zusätzlich die Regelungen des Rundschreibens 07/2020 (BA) zur Nutzung des gemeinsamen SSM IMAS Portals.\n\nZur Erleichterung der Anzeigenerstattung werden verschiedene Formulare bereitgestellt. Für Prüfungszwecke ist das Merkblatt erst ab dem 01.01.2026 zugrunde zu legen.",
+          "en": "BaFin's Circular 11/2025 (BA) specifies the professional and personal requirements for managing directors and members of administrative and supervisory bodies in accordance with the German Banking Act (KWG). It explains the associated notification obligations and the documents to be submitted.\n\nWith this circular, BaFin incorporates the EBA and ESMA guidelines on the assessment of the suitability of members of the management body and key function holders (EBA/GL/2021/06) and on internal governance (EBA/GL/2021/05) into its administrative practice. For companies under the supervision of the ECB, the provisions of Circular 07/2020 (BA) on the use of the common SSM IMAS Portal also apply.\n\nVarious forms are provided to facilitate the submission of notifications. For audit purposes, the guidance document is to be applied only from 01.01.2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_geschaeftsleiter_KWG_ZAG_KAGB.html",
+        "imp": "high",
+        "refnum": "11/2025"
       }
     ],
     "gwg": [
@@ -3737,28 +3778,6 @@
         },
         "url": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2025-11-05-DAC8-G/0-Gesetz.html",
         "imp": "medium"
-      }
-    ],
-    "fitproper": [
-      {
-        "d": "22.10.2025",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben 11/2025 (BA) zu den Mitgliedern der Geschäftsleitung sowie von Verwaltungs- und Aufsichtsorganen gemäß KWG",
-          "en": "Rundschreiben 11/2025 (BA) zu den Mitgliedern der Geschäftsleitung sowie von Verwaltungs- und Aufsichtsorganen gemäß KWG"
-        },
-        "sl": "rundschreiben-11-2025-ba-zu-den-mitgliedern-der-geschaeftsleitung-sowie-von-verw",
-        "s": {
-          "de": "Das Rundschreiben 11/2025 (BA) der BaFin präzisiert die fachlichen und persönlichen Anforderungen an Geschäftsleiter sowie Mitglieder von Verwaltungs- und Aufsichtsorganen gemäß Kreditwesengesetz (KWG). Es erläutert die damit verbundenen Anzeigepflichten und die einzureichenden Unterlagen.\n\nDie BaFin übernimmt mit diesem Rundschreiben die Leitlinien der EBA und ESMA zur Bewertung der Eignung von Mitgliedern des Leitungsorgans und Inhabern von Schlüsselfunktionen (EBA/GL/2021/06) sowie zur internen Governance (EBA/GL/2021/05) in ihre Verwaltungspraxis. Für Unternehmen unter Aufsicht der EZB gelten zusätzlich die Regelungen des Rundschreibens 07/2020 (BA) zur Nutzung des gemeinsamen SSM IMAS Portals.\n\nZur Erleichterung der Anzeigenerstattung werden verschiedene Formulare bereitgestellt. Für Prüfungszwecke ist das Merkblatt erst ab dem 01.01.2026 zugrunde zu legen.",
-          "en": "BaFin's Circular 11/2025 (BA) specifies the professional and personal requirements for managing directors and members of administrative and supervisory bodies in accordance with the German Banking Act (KWG). It explains the associated notification obligations and the documents to be submitted.\n\nWith this circular, BaFin incorporates the EBA and ESMA guidelines on the assessment of the suitability of members of the management body and key function holders (EBA/GL/2021/06) and on internal governance (EBA/GL/2021/05) into its administrative practice. For companies under the supervision of the ECB, the provisions of Circular 07/2020 (BA) on the use of the common SSM IMAS Portal also apply.\n\nVarious forms are provided to facilitate the submission of notifications. For audit purposes, the guidance document is to be applied only from 01.01.2026."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_geschaeftsleiter_KWG_ZAG_KAGB.html",
-        "imp": "high",
-        "refnum": "11/2025"
       }
     ],
     "mago": [
