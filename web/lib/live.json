@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:49:33Z",
+  "generated_at": "2026-09-17T14:19:22Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,64 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "ebaresolvability": [
+      {
+        "d": "17.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB clarifies guidance on Banks’ Communication",
+          "en": "SRB clarifies guidance on Banks’ Communication"
+        },
+        "sl": "srb-clarifies-guidance-on-banks-communication",
+        "s": {
+          "de": "The Single Resolution Board (SRB) publishes today its Operational Guidance on Banks’ Communication in Resolution, together with a Communication Testing Supplement to its Operational Guidance for Resolvability Testing for Banks.",
+          "en": "The Single Resolution Board (SRB) publishes today its Operational Guidance on Banks’ Communication in Resolution, together with a Communication Testing Supplement to its Operational Guidance for Resolvability Testing for Banks."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB konzentriert seine Abwicklungsbewertung auf operationelle Bereitschaft und Tests",
+          "en": "SRB focuses its resolvability assessment on operational readiness and testing"
+        },
+        "sl": "srb-focuses-its-resolvability-assessment-on-operational-readiness-and-testing",
+        "s": {
+          "de": "Der Einheitliche Abwicklungsausschuss (SRB) hat die Ergebnisse seiner jährlichen Abwicklungsfähigkeitsbewertung für das Jahr 2025 veröffentlicht. Der Bericht bewertet den Fortschritt der Banken bei ihren Abwicklungsfähigkeiten und markiert einen Übergang zu einem Fokus auf die Operationalisierung, Erprobung und kontinuierliche Verbesserung dieser Fähigkeiten.\n\nDie Bewertung zeigt fortgesetzte Fortschritte in allen sieben Dimensionen der Abwicklungsfähigkeit zwischen 2023 und 2025. Obwohl Banken den Erwartungen nahekommen, sind weitere Anstrengungen in Bereichen wie Bewertung, Trennbarkeit und Übertragbarkeit erforderlich, wo die Leitlinien kürzlich verbessert wurden.\n\nDer SRB wird sich künftig auf die operationelle Bereitschaft der Abwicklungsfähigkeiten der Banken konzentrieren. Ein umfassendes Testrahmenwerk, einschließlich mehrjähriger Testprogramme für 2026–2028, wird eingeführt, um die Krisenbereitschaft zu überprüfen.",
+          "en": "The Single Resolution Board (SRB) has published the results of its annual resolvability assessment for 2025. The report evaluates banks' progress in their resolution capabilities and marks a transition towards focusing on the operationalization, testing, and continuous improvement of these capabilities.\n\n The assessment shows continued progress across all seven resolvability dimensions between 2023 and 2025. While banks are close to meeting expectations, further work is needed in areas such as valuation, separability, and transferability, where guidance has recently been enhanced.\n\nGoing forward, the SRB will focus on the operational readiness of banks' resolvability capabilities. A comprehensive testing framework, including multi-annual testing programs for 2026–2028, is being introduced to verify crisis preparedness."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-focuses-its-resolvability-assessment-operational-readiness-and-testing",
+        "imp": "medium"
+      },
+      {
+        "d": "30.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB veröffentlicht operative Leitlinie für Business Reorganisation Plan Analysis Reports (BRP AR)",
+          "en": "SRB publishes Operational Guidance on Business Reorganisation Plan Analysis Reports (BRP AR)"
+        },
+        "sl": "srb-publishes-a-renewed-operational-guidance-on-business-reorganisation-plan-ana",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen (Business Reorganisation Plan Analysis Reports – BRP AR) sowie eine ergänzende quantitative Vorlage veröffentlicht. Diese Dokumente bieten Banken einen konsolidierten, transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit, ohne neue Anforderungen einzuführen.\n\nDie Leitlinie ist eine Reaktion auf eine Branchenanfrage nach einer öffentlich zugänglichen, standardisierten Referenz zur Harmonisierung der Erwartungen und zur Verbesserung der Konsistenz bei der Umstrukturierungsplanung. Sie fasst bereits bestehende Erwartungen in einem kohärenten Rahmen zusammen und präzisiert diese. Die nicht-obligatorische quantitative Vorlage bietet praktische Unterstützung für Banken.\n\nDie Veröffentlichung erfolgte am 30.07.2026 und folgt einer öffentlichen Konsultation vom 03.02. bis 30.03.2026. Das SRB behält sich das Recht vor, je nach spezifischer Situation und im Einklang mit dem anwendbaren Rechtsrahmen von den beschriebenen Maßnahmen und Erwartungen abzuweichen.",
+          "en": "The Single Resolution Board (SRB) has published renewed operational guidance for banks on Business Reorganisation Plan Analysis Reports (BRP AR) along with a complementary quantitative template. These documents provide banks with a consolidated, transparent framework to strengthen their crisis preparedness and resolvability, without introducing new requirements.\n\nThe guidance responds to an industry request for a publicly available, standardized reference to harmonize expectations and enhance consistency in reorganization planning. It compiles and clarifies existing expectations within a single, coherent framework. The non-mandatory quantitative template offers practical support for banks.\n\nThe publication was released on 30.07.2026, following a public consultation from 03.02. to 30.03.2026. The SRB reserves the right to deviate from the actions and expectations described, depending on the specific situation and in line with the applicable legal framework."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
+        "imp": "medium"
       }
     ],
     "dora": [
@@ -2368,46 +2426,6 @@
         "imp": "medium"
       }
     ],
-    "ebaresolvability": [
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB konzentriert seine Abwicklungsbewertung auf operationelle Bereitschaft und Tests",
-          "en": "SRB focuses its resolvability assessment on operational readiness and testing"
-        },
-        "sl": "srb-focuses-its-resolvability-assessment-on-operational-readiness-and-testing",
-        "s": {
-          "de": "Der Einheitliche Abwicklungsausschuss (SRB) hat die Ergebnisse seiner jährlichen Abwicklungsfähigkeitsbewertung für das Jahr 2025 veröffentlicht. Der Bericht bewertet den Fortschritt der Banken bei ihren Abwicklungsfähigkeiten und markiert einen Übergang zu einem Fokus auf die Operationalisierung, Erprobung und kontinuierliche Verbesserung dieser Fähigkeiten.\n\nDie Bewertung zeigt fortgesetzte Fortschritte in allen sieben Dimensionen der Abwicklungsfähigkeit zwischen 2023 und 2025. Obwohl Banken den Erwartungen nahekommen, sind weitere Anstrengungen in Bereichen wie Bewertung, Trennbarkeit und Übertragbarkeit erforderlich, wo die Leitlinien kürzlich verbessert wurden.\n\nDer SRB wird sich künftig auf die operationelle Bereitschaft der Abwicklungsfähigkeiten der Banken konzentrieren. Ein umfassendes Testrahmenwerk, einschließlich mehrjähriger Testprogramme für 2026–2028, wird eingeführt, um die Krisenbereitschaft zu überprüfen.",
-          "en": "The Single Resolution Board (SRB) has published the results of its annual resolvability assessment for 2025. The report evaluates banks' progress in their resolution capabilities and marks a transition towards focusing on the operationalization, testing, and continuous improvement of these capabilities.\n\n The assessment shows continued progress across all seven resolvability dimensions between 2023 and 2025. While banks are close to meeting expectations, further work is needed in areas such as valuation, separability, and transferability, where guidance has recently been enhanced.\n\nGoing forward, the SRB will focus on the operational readiness of banks' resolvability capabilities. A comprehensive testing framework, including multi-annual testing programs for 2026–2028, is being introduced to verify crisis preparedness."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-focuses-its-resolvability-assessment-operational-readiness-and-testing",
-        "imp": "medium"
-      },
-      {
-        "d": "30.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB veröffentlicht operative Leitlinie für Business Reorganisation Plan Analysis Reports (BRP AR)",
-          "en": "SRB publishes Operational Guidance on Business Reorganisation Plan Analysis Reports (BRP AR)"
-        },
-        "sl": "srb-publishes-a-renewed-operational-guidance-on-business-reorganisation-plan-ana",
-        "s": {
-          "de": "Das Single Resolution Board (SRB) hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen (Business Reorganisation Plan Analysis Reports – BRP AR) sowie eine ergänzende quantitative Vorlage veröffentlicht. Diese Dokumente bieten Banken einen konsolidierten, transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit, ohne neue Anforderungen einzuführen.\n\nDie Leitlinie ist eine Reaktion auf eine Branchenanfrage nach einer öffentlich zugänglichen, standardisierten Referenz zur Harmonisierung der Erwartungen und zur Verbesserung der Konsistenz bei der Umstrukturierungsplanung. Sie fasst bereits bestehende Erwartungen in einem kohärenten Rahmen zusammen und präzisiert diese. Die nicht-obligatorische quantitative Vorlage bietet praktische Unterstützung für Banken.\n\nDie Veröffentlichung erfolgte am 30.07.2026 und folgt einer öffentlichen Konsultation vom 03.02. bis 30.03.2026. Das SRB behält sich das Recht vor, je nach spezifischer Situation und im Einklang mit dem anwendbaren Rechtsrahmen von den beschriebenen Maßnahmen und Erwartungen abzuweichen.",
-          "en": "The Single Resolution Board (SRB) has published renewed operational guidance for banks on Business Reorganisation Plan Analysis Reports (BRP AR) along with a complementary quantitative template. These documents provide banks with a consolidated, transparent framework to strengthen their crisis preparedness and resolvability, without introducing new requirements.\n\nThe guidance responds to an industry request for a publicly available, standardized reference to harmonize expectations and enhance consistency in reorganization planning. It compiles and clarifies existing expectations within a single, coherent framework. The non-mandatory quantitative template offers practical support for banks.\n\nThe publication was released on 30.07.2026, following a public consultation from 03.02. to 30.03.2026. The SRB reserves the right to deviate from the actions and expectations described, depending on the specific situation and in line with the applicable legal framework."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
-        "imp": "medium"
-      }
-    ],
     "csdr": [
       {
         "d": "31.07.2026",
@@ -4129,6 +4147,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "17.09.2026",
+      "ti": "Volksbank Düsseldorf Neuss eG: Bafin setzt Bußgelder fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_17_volksbank_duesseldorf_neuss_eg.html?cms_expanded=true",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat gegen die Volksbank Düsseldorf Neuss eG Bußgelder in Höhe von 210.000 Euro festgesetzt. Grund für die Bußgelder sind Mängel in der Geldwäscheprävention. Das Kreditinstitut hat die Funktion des Geldwäschebeauftragten auf einen externen Dienstleister ausgelagert, der mehrere Mandanten in dieser Form betreut."
+    },
     {
       "d": "12.09.2026",
       "ti": "Christine Lagarde: Interview with Ouest-France",
