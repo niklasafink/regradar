@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T14:19:22Z",
+  "generated_at": "2026-09-18T07:25:49Z",
   "updates": {
     "amla": [
       {
@@ -249,15 +249,16 @@
         },
         "src": "srb.europa.eu",
         "ti": {
-          "de": "SRB clarifies guidance on Banks’ Communication",
-          "en": "SRB clarifies guidance on Banks’ Communication"
+          "de": "SRB präzisiert Leitlinien zur Kommunikation von Banken in der Abwicklung",
+          "en": "SRB clarifies guidance on Banks’ Communication in Resolution"
         },
         "sl": "srb-clarifies-guidance-on-banks-communication",
         "s": {
-          "de": "The Single Resolution Board (SRB) publishes today its Operational Guidance on Banks’ Communication in Resolution, together with a Communication Testing Supplement to its Operational Guidance for Resolvability Testing for Banks.",
-          "en": "The Single Resolution Board (SRB) publishes today its Operational Guidance on Banks’ Communication in Resolution, together with a Communication Testing Supplement to its Operational Guidance for Resolvability Testing for Banks."
+          "de": "Das Single Resolution Board (SRB) hat seine operative Leitlinie zur Kommunikation von Banken in der Abwicklung sowie ein ergänzendes Dokument zur Kommunikationsprüfung im Rahmen der Abwicklungsfähigkeitstests veröffentlicht. Diese Dokumente sollen Banken dabei unterstützen, ihre Kommunikationsstrategien und -fähigkeiten für den Fall einer Abwicklung zu verbessern.\n\nDie Leitlinien richten sich an Banken, die unter die Zuständigkeit des SRB fallen. Sie sollen sicherstellen, dass diese Institute in einer Krisensituation effektiv mit allen relevanten Stakeholdern kommunizieren können, um die Stabilität des Finanzsystems zu wahren und das Vertrauen der Öffentlichkeit zu erhalten. Die Kommunikationsprüfung ist ein integraler Bestandteil der Abwicklungsplanung.\n\nDie Veröffentlichung erfolgte am 17.09.2026.",
+          "en": "The Single Resolution Board (SRB) has published its operational guidance for banks on communication in resolution, along with a Communication Testing Supplement to its Operational Guidance for Resolvability Testing for Banks. These documents aim to help banks improve their communication strategies and capabilities in the event of a resolution.\n\nThe guidelines are addressed to banks under the SRB's jurisdiction. They are intended to ensure that these institutions can communicate effectively with all relevant stakeholders in a crisis situation to maintain financial system stability and public confidence. Communication testing is an integral part of resolution planning.\n\nThe publication was made on 17.09.2026."
         },
-        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication"
+        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication",
+        "imp": "high"
       },
       {
         "d": "31.07.2026",
@@ -4148,6 +4149,14 @@
   },
   "praxis": [
     {
+      "d": "18.09.2026",
+      "ti": "Boris Vujčić: Interview with Reuters",
+      "auth": "EZB",
+      "src": "ecb.europa.eu",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260918~33f023fe26.en.html",
+      "cat": "rede"
+    },
+    {
       "d": "17.09.2026",
       "ti": "Volksbank Düsseldorf Neuss eG: Bafin setzt Bußgelder fest",
       "auth": "BaFin",
@@ -4155,6 +4164,14 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_17_volksbank_duesseldorf_neuss_eg.html?cms_expanded=true",
       "cat": "bussgeld",
       "sum": "Die Finanzaufsicht Bafin hat gegen die Volksbank Düsseldorf Neuss eG Bußgelder in Höhe von 210.000 Euro festgesetzt. Grund für die Bußgelder sind Mängel in der Geldwäscheprävention. Das Kreditinstitut hat die Funktion des Geldwäschebeauftragten auf einen externen Dienstleister ausgelagert, der mehrere Mandanten in dieser Form betreut."
+    },
+    {
+      "d": "15.09.2026",
+      "ti": "Connecting intelligence and supervision: Rikke-Louise Petersen speaks at Nordic Financial Crime & Sanctions Forum",
+      "auth": "AMLA",
+      "src": "amla.europa.eu",
+      "url": "https://www.amla.europa.eu/news-media/news-articles/connecting-intelligence-and-supervision-rikke-louise-petersen-speaks-nordic-financial-crime_en",
+      "cat": "rede"
     },
     {
       "d": "12.09.2026",
