@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T07:25:49Z",
+  "generated_at": "2026-09-18T08:40:51Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,108 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "brrd": [
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Ausfüllen der Vorlage Z 08.02 (BRRD Reporting) (2026_7927)",
+          "en": "Completion of the Z08.02 Template (BRRD Reporting) (2026_7927)"
+        },
+        "sl": "completion-of-the-z08-02-template",
+        "s": {
+          "de": "Diese EBA Q&A befasst sich mit der Ausfüllung der Vorlage Z 08.02 im Rahmen des BRRD-Reportings. Konkret geht es um die Frage, ob operative Vermögenswerte externen Dienstleistungen zugeordnet werden müssen oder nur internen Dienstleistungen innerhalb eines Unternehmens.\n\nDie Anfrage präzisiert, wie die Spalten 0030, 0080, 0040 und 0050 zu befüllen sind, wenn externe Dienstleistungen IT-Systeme betreffen oder physische Bargeldtransporte. Kreditinstitute, die das BRRD-Reporting durchführen, sind von dieser Klärung betroffen, da die bestehenden Ausfüllhinweise für die Vorlage Z 08.02 hierzu keine spezifischen Anweisungen enthalten.\n\nDie Frage befindet sich derzeit noch in der Prüfung durch die EBA (Status: Question under review).",
+          "en": "This EBA Q&A addresses the completion of template Z 08.02 within the BRRD reporting framework. Specifically, it concerns whether operational assets should be mapped to external services or only to intra-entity services.\n\nThe query clarifies how columns 0030, 0080, 0040, and 0050 should be populated when external services relate to IT systems or physical cash transportation. Credit institutions undertaking BRRD reporting are affected by this clarification, as the existing guidelines for completing template Z 08.02 do not provide specific instructions on this matter.\n\nThe question is currently under review by the EBA (Status: Question under review)."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7927",
+        "imp": "low",
+        "refnum": "2026_7927"
+      },
+      {
+        "d": "05.08.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Meldepflichten für RLEs bei Fusionen ab (2026_7918)",
+          "en": "EBA rejects question on RLE reporting obligations in mergers (2026_7918)"
+        },
+        "sl": "reporting-obligations-under-article-3-of-the-cir",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Meldepflichten für relevante juristische Personen (RLEs) gemäß Artikel 3 der Verordnung über die Berichterstattung zur Abwicklungsplanung (CIR) abgelehnt. Die Anfrage betraf die Behandlung einer kürzlich erworbenen RLE, die voraussichtlich vor der Annahme des Abwicklungsplans durch eine Fusion aufhören wird zu existieren.\n\nEs wurde gefragt, ob die Meldepflichten für eine solche RLE entfallen können und wie die erworbene Einheit während der Übergangszeit zwischen Erwerb und Fusion für die Abwicklungsplanung und die damit verbundenen Meldepflichten zu behandeln ist. Die EBA lehnte die Frage ab, da der Sachverhalt im geltenden Rechtsrahmen bereits ausreichend geklärt sei und keine zusätzliche Anleitung erforderlich sei.\n\nDie Frage entstand aus einem Szenario, in dem eine Abwicklungseinheit ein kleineres Kreditinstitut erwirbt, das zuvor als „Abwicklungseinheit“ eingestuft war. Die EBA sieht keine Notwendigkeit für weitere Klarstellungen zu diesem Übergangskontext.",
+          "en": "The EBA has rejected a question regarding reporting obligations for Relevant Legal Entities (RLEs) under Article 3 of the CIR (Resolution Planning Reporting). The inquiry concerned the treatment of a recently acquired RLE that is expected to cease to exist as a legal entity due to a merger prior to the adoption of the resolution plan.\n\nThe question asked whether reporting obligations for such an RLE could be waived and how the acquired entity should be treated for resolution planning and related reporting obligations during the interim period between its acquisition and its absorption through merger. The EBA rejected the question, stating that the issue is already sufficiently clarified in the applicable regulatory framework and no additional guidance is necessary.\n\nThe question arose from a scenario where a resolution entity acquires a smaller credit institution previously designated as a 'liquidation entity'. The EBA sees no need for further clarification on this transitional context."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7918",
+        "imp": "low",
+        "refnum": "2026_7918"
+      },
+      {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A 2026_7926: Meldung von Anwendungen verbundener Dienstleister in Template Z08.02",
+          "en": "EBA Q&A 2026_7926: Reporting of applications owned and operated by affiliated service providers in Template Z08.02"
+        },
+        "sl": "template-z08-02-reporting-of-applications-owned-and-operated-by-affiliated-servi",
+        "s": {
+          "de": "Diese EBA Q&A befasst sich mit der Meldung von Anwendungen im Template Z08.02, die von verbundenen Dienstleistern betrieben werden. Es wird gefragt, ob eine berichtende Einheit Anwendungen melden muss, die von einem verbundenen Dienstleister besessen, verwaltet und betrieben werden, aber zur Erbringung von Dienstleistungen für die berichtende Einheit genutzt werden.\n\nDie Frage ist relevant für Kreditinstitute, die innerhalb von Bankengruppen Dienstleistungen von anderen Konzerngesellschaften beziehen. Es geht darum, ob Template Z08.02 nur operative Vermögenswerte umfasst, die von der berichtenden Einheit selbst kontrolliert werden, oder auch Anwendungen, die kritische Funktionen und Kerngeschäftsbereiche unterstützen, aber im Besitz verbundener Dienstleister sind. Die Klärung ist wichtig für die korrekte Umsetzung der Meldepflichten gemäß der BRRD.\n\nDie Frage ist derzeit noch in Bearbeitung (Status: \"Question under review\").",
+          "en": "This EBA Q&A addresses the reporting of applications operated by affiliated service providers in Template Z08.02. It asks whether a reporting entity should report applications owned, managed, and operated by an affiliated service provider, but used to provide services to the reporting entity.\n\nThis question is relevant for credit institutions that receive services from other group entities within banking groups. It concerns whether Template Z08.02 covers only operational assets controlled by the reporting entity itself, or also applications that support critical functions and core business lines but are owned by affiliated service providers. Clarification is important for the correct implementation of reporting obligations under the BRRD.\n\nThe question is currently under review (Status: \"Question under review\")."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7926",
+        "imp": "low",
+        "refnum": "2026_7926"
+      },
+      {
+        "d": "18.06.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Definition der Substituierbarkeit von CCPs und Meldung alternativer Anbieter (Q&A 2026_7912)",
+          "en": "Definition of “Substitutability” of CCPs and the connected reporting of “Alternative Providers” (Q&A 2026_7912)"
+        },
+        "sl": "definition-of-substitutability-of-ccps-and-the-connected-reporting-of-alternativ",
+        "s": {
+          "de": "Die EBA klärt in dieser Q&A die Definition von „Substituierbarkeit“ von CCPs und die Meldung von „alternativen Anbietern“ für das Template Z 09.04 (RESOL II) gemäß der BRRD. Es wird präzisiert, dass die Substituierbarkeit nicht restriktiv auf CCPs oder Intermediäre beschränkt ist, die einen äquivalenten Clearing-Service für denselben Handelsplatz anbieten können.\n\nVielmehr soll eine breitere Auslegung angewendet werden, die die wirtschaftliche Funktion und die Geschäftsziele des Clearing-Services berücksichtigt. Finanzinstitute sollen alternative Anbieter oder praktikable Substitute identifizieren, indem sie den Clearing-Service aus einer wirtschaftlichen Perspektive ihres Geschäftsmodells bewerten. Dies schließt die Substitution durch eine abweichende Handelswertschöpfungskette oder durch einen Intermediär/Broker ein, sofern ein vergleichbares wirtschaftliches und funktionales Ergebnis erzielt wird. Diese Informationen sind für die Abwicklungsplanung relevant, um die Substituierbarkeitsoptionen von meldenden Instituten im Falle einer Abwicklung zu bewerten.\n\nDie Frage befindet sich noch in der Prüfung durch die EBA.",
+          "en": "The EBA clarifies in this Q&A the definition of “substitutability” of CCPs and the reporting of “alternative providers” for template Z 09.04 (RESOL II) under the BRRD. It specifies that substitutability is not restrictively limited to CCPs or intermediaries capable of providing an equivalent clearing service for the same trading venue.\n\nInstead, a broader interpretation should be applied, considering the economic function and business objectives of the clearing service. Financial institutions should identify alternative providers or feasible substitutes by assessing the clearing service from an economic perspective of their business model. This includes substitution by deviating to another trade value chain or by an intermediary/broker, provided a comparable economic and functional outcome is achieved. This information is relevant for resolution planning to assess the substitutability options of reporting institutions in a resolution scenario.\n\nThe question is currently under review by the EBA."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7912",
+        "imp": "low",
+        "refnum": "2026_7912"
+      },
+      {
+        "d": "07.08.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
+          "en": "ITS on the application of Article 55 BRRD (Ares(2020)4105668)"
+        },
+        "sl": "its-on-application-of-article-55-brrd",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Entwurf für Technische Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD) initiiert. Diese ITS sollen die Details für die vertragliche Anerkennung von Abwicklungsbefugnissen festlegen.\n\nDie Regelung betrifft Kreditinstitute und Wertpapierfirmen, die unter die BRRD fallen. Sie müssen sicherstellen, dass ihre Verträge die Anwendung von Abwicklungsbefugnissen durch die zuständigen Behörden anerkennen, um die Wirksamkeit von Abwicklungsmaßnahmen zu gewährleisten.\n\nDer Verfahrensstand ist „Init Planned“, was bedeutet, dass die Arbeiten an diesem Entwurf begonnen haben.",
+          "en": "The European Commission has initiated a draft for Implementing Technical Standards (ITS) on the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD). These ITS are intended to specify the details for the contractual recognition of resolution powers.\n\nThe regulation affects credit institutions and investment firms falling under the BRRD. They must ensure that their contracts recognize the application of resolution powers by the competent authorities to ensure the effectiveness of resolution measures.\n\nThe procedural status is “Init Planned,” indicating that work on this draft has commenced."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
+        "imp": "medium",
+        "refnum": "Ares(2020)4105668"
       }
     ],
     "ebaresolvability": [
@@ -2195,108 +2297,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-1-february-2010/",
         "imp": "low"
-      }
-    ],
-    "brrd": [
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zu Meldepflichten für RLEs bei Fusionen ab (2026_7918)",
-          "en": "EBA rejects question on RLE reporting obligations in mergers (2026_7918)"
-        },
-        "sl": "reporting-obligations-under-article-3-of-the-cir",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der Meldepflichten für relevante juristische Personen (RLEs) gemäß Artikel 3 der Verordnung über die Berichterstattung zur Abwicklungsplanung (CIR) abgelehnt. Die Anfrage betraf die Behandlung einer kürzlich erworbenen RLE, die voraussichtlich vor der Annahme des Abwicklungsplans durch eine Fusion aufhören wird zu existieren.\n\nEs wurde gefragt, ob die Meldepflichten für eine solche RLE entfallen können und wie die erworbene Einheit während der Übergangszeit zwischen Erwerb und Fusion für die Abwicklungsplanung und die damit verbundenen Meldepflichten zu behandeln ist. Die EBA lehnte die Frage ab, da der Sachverhalt im geltenden Rechtsrahmen bereits ausreichend geklärt sei und keine zusätzliche Anleitung erforderlich sei.\n\nDie Frage entstand aus einem Szenario, in dem eine Abwicklungseinheit ein kleineres Kreditinstitut erwirbt, das zuvor als „Abwicklungseinheit“ eingestuft war. Die EBA sieht keine Notwendigkeit für weitere Klarstellungen zu diesem Übergangskontext.",
-          "en": "The EBA has rejected a question regarding reporting obligations for Relevant Legal Entities (RLEs) under Article 3 of the CIR (Resolution Planning Reporting). The inquiry concerned the treatment of a recently acquired RLE that is expected to cease to exist as a legal entity due to a merger prior to the adoption of the resolution plan.\n\nThe question asked whether reporting obligations for such an RLE could be waived and how the acquired entity should be treated for resolution planning and related reporting obligations during the interim period between its acquisition and its absorption through merger. The EBA rejected the question, stating that the issue is already sufficiently clarified in the applicable regulatory framework and no additional guidance is necessary.\n\nThe question arose from a scenario where a resolution entity acquires a smaller credit institution previously designated as a 'liquidation entity'. The EBA sees no need for further clarification on this transitional context."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7918",
-        "imp": "low",
-        "refnum": "2026_7918"
-      },
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ausfüllen der Vorlage Z 08.02 (BRRD Reporting) (2026_7927)",
-          "en": "Completion of the Z08.02 Template (BRRD Reporting) (2026_7927)"
-        },
-        "sl": "completion-of-the-z08-02-template",
-        "s": {
-          "de": "Diese EBA Q&A befasst sich mit der Ausfüllung der Vorlage Z 08.02 im Rahmen des BRRD-Reportings. Konkret geht es um die Frage, ob operative Vermögenswerte externen Dienstleistungen zugeordnet werden müssen oder nur internen Dienstleistungen innerhalb eines Unternehmens.\n\nDie Anfrage präzisiert, wie die Spalten 0030, 0080, 0040 und 0050 zu befüllen sind, wenn externe Dienstleistungen IT-Systeme betreffen oder physische Bargeldtransporte. Kreditinstitute, die das BRRD-Reporting durchführen, sind von dieser Klärung betroffen, da die bestehenden Ausfüllhinweise für die Vorlage Z 08.02 hierzu keine spezifischen Anweisungen enthalten.\n\nDie Frage befindet sich derzeit noch in der Prüfung durch die EBA (Status: Question under review).",
-          "en": "This EBA Q&A addresses the completion of template Z 08.02 within the BRRD reporting framework. Specifically, it concerns whether operational assets should be mapped to external services or only to intra-entity services.\n\nThe query clarifies how columns 0030, 0080, 0040, and 0050 should be populated when external services relate to IT systems or physical cash transportation. Credit institutions undertaking BRRD reporting are affected by this clarification, as the existing guidelines for completing template Z 08.02 do not provide specific instructions on this matter.\n\nThe question is currently under review by the EBA (Status: Question under review)."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7927",
-        "imp": "low",
-        "refnum": "2026_7927"
-      },
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A 2026_7926: Meldung von Anwendungen verbundener Dienstleister in Template Z08.02",
-          "en": "EBA Q&A 2026_7926: Reporting of applications owned and operated by affiliated service providers in Template Z08.02"
-        },
-        "sl": "template-z08-02-reporting-of-applications-owned-and-operated-by-affiliated-servi",
-        "s": {
-          "de": "Diese EBA Q&A befasst sich mit der Meldung von Anwendungen im Template Z08.02, die von verbundenen Dienstleistern betrieben werden. Es wird gefragt, ob eine berichtende Einheit Anwendungen melden muss, die von einem verbundenen Dienstleister besessen, verwaltet und betrieben werden, aber zur Erbringung von Dienstleistungen für die berichtende Einheit genutzt werden.\n\nDie Frage ist relevant für Kreditinstitute, die innerhalb von Bankengruppen Dienstleistungen von anderen Konzerngesellschaften beziehen. Es geht darum, ob Template Z08.02 nur operative Vermögenswerte umfasst, die von der berichtenden Einheit selbst kontrolliert werden, oder auch Anwendungen, die kritische Funktionen und Kerngeschäftsbereiche unterstützen, aber im Besitz verbundener Dienstleister sind. Die Klärung ist wichtig für die korrekte Umsetzung der Meldepflichten gemäß der BRRD.\n\nDie Frage ist derzeit noch in Bearbeitung (Status: \"Question under review\").",
-          "en": "This EBA Q&A addresses the reporting of applications operated by affiliated service providers in Template Z08.02. It asks whether a reporting entity should report applications owned, managed, and operated by an affiliated service provider, but used to provide services to the reporting entity.\n\nThis question is relevant for credit institutions that receive services from other group entities within banking groups. It concerns whether Template Z08.02 covers only operational assets controlled by the reporting entity itself, or also applications that support critical functions and core business lines but are owned by affiliated service providers. Clarification is important for the correct implementation of reporting obligations under the BRRD.\n\nThe question is currently under review (Status: \"Question under review\")."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7926",
-        "imp": "low",
-        "refnum": "2026_7926"
-      },
-      {
-        "d": "18.06.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Definition der Substituierbarkeit von CCPs und Meldung alternativer Anbieter (Q&A 2026_7912)",
-          "en": "Definition of “Substitutability” of CCPs and the connected reporting of “Alternative Providers” (Q&A 2026_7912)"
-        },
-        "sl": "definition-of-substitutability-of-ccps-and-the-connected-reporting-of-alternativ",
-        "s": {
-          "de": "Die EBA klärt in dieser Q&A die Definition von „Substituierbarkeit“ von CCPs und die Meldung von „alternativen Anbietern“ für das Template Z 09.04 (RESOL II) gemäß der BRRD. Es wird präzisiert, dass die Substituierbarkeit nicht restriktiv auf CCPs oder Intermediäre beschränkt ist, die einen äquivalenten Clearing-Service für denselben Handelsplatz anbieten können.\n\nVielmehr soll eine breitere Auslegung angewendet werden, die die wirtschaftliche Funktion und die Geschäftsziele des Clearing-Services berücksichtigt. Finanzinstitute sollen alternative Anbieter oder praktikable Substitute identifizieren, indem sie den Clearing-Service aus einer wirtschaftlichen Perspektive ihres Geschäftsmodells bewerten. Dies schließt die Substitution durch eine abweichende Handelswertschöpfungskette oder durch einen Intermediär/Broker ein, sofern ein vergleichbares wirtschaftliches und funktionales Ergebnis erzielt wird. Diese Informationen sind für die Abwicklungsplanung relevant, um die Substituierbarkeitsoptionen von meldenden Instituten im Falle einer Abwicklung zu bewerten.\n\nDie Frage befindet sich noch in der Prüfung durch die EBA.",
-          "en": "The EBA clarifies in this Q&A the definition of “substitutability” of CCPs and the reporting of “alternative providers” for template Z 09.04 (RESOL II) under the BRRD. It specifies that substitutability is not restrictively limited to CCPs or intermediaries capable of providing an equivalent clearing service for the same trading venue.\n\nInstead, a broader interpretation should be applied, considering the economic function and business objectives of the clearing service. Financial institutions should identify alternative providers or feasible substitutes by assessing the clearing service from an economic perspective of their business model. This includes substitution by deviating to another trade value chain or by an intermediary/broker, provided a comparable economic and functional outcome is achieved. This information is relevant for resolution planning to assess the substitutability options of reporting institutions in a resolution scenario.\n\nThe question is currently under review by the EBA."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7912",
-        "imp": "low",
-        "refnum": "2026_7912"
-      },
-      {
-        "d": "07.08.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
-          "en": "ITS on the application of Article 55 BRRD (Ares(2020)4105668)"
-        },
-        "sl": "its-on-application-of-article-55-brrd",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Entwurf für Technische Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD) initiiert. Diese ITS sollen die Details für die vertragliche Anerkennung von Abwicklungsbefugnissen festlegen.\n\nDie Regelung betrifft Kreditinstitute und Wertpapierfirmen, die unter die BRRD fallen. Sie müssen sicherstellen, dass ihre Verträge die Anwendung von Abwicklungsbefugnissen durch die zuständigen Behörden anerkennen, um die Wirksamkeit von Abwicklungsmaßnahmen zu gewährleisten.\n\nDer Verfahrensstand ist „Init Planned“, was bedeutet, dass die Arbeiten an diesem Entwurf begonnen haben.",
-          "en": "The European Commission has initiated a draft for Implementing Technical Standards (ITS) on the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD). These ITS are intended to specify the details for the contractual recognition of resolution powers.\n\nThe regulation affects credit institutions and investment firms falling under the BRRD. They must ensure that their contracts recognize the application of resolution powers by the competent authorities to ensure the effectiveness of resolution measures.\n\nThe procedural status is “Init Planned,” indicating that work on this draft has commenced."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
-        "imp": "medium",
-        "refnum": "Ares(2020)4105668"
       }
     ],
     "consumer": [
