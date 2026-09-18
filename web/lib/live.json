@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T09:55:30Z",
+  "generated_at": "2026-09-18T11:10:47Z",
   "updates": {
     "amla": [
       {
@@ -440,6 +440,66 @@
         "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
         "imp": "medium",
         "refnum": "ESMA32-753890202-3034"
+      }
+    ],
+    "lulmt": [
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Meldepflicht für Rücknahmeaussetzungen im „LMT activation“-Modul für luxemburgische Fonds",
+          "en": "Notification requirement for suspension of redemption in “LMT activation” module for Luxembourg funds"
+        },
+        "sl": "communication-to-the-investment-fund-industry-regarding-the-requirement-to-notif",
+        "s": {
+          "de": "Die CSSF hat mitgeteilt, dass das „LMT activation“-Modul im eDesk-System erweitert wird. Es umfasst nun auch die Meldung der Aktivierung und Deaktivierung von Rücknahmeaussetzungen (suspension of redemption only) für bestimmte luxemburgische Fonds, die nationalen Gesetzen unterliegen.\n\nDies betrifft Investmentfonds nach dem Gesetz von 2010, spezialisierte Investmentfonds nach dem Gesetz von 2007 und Risikokapitalgesellschaften nach dem Gesetz von 2004. Obwohl die Aussetzung von Rücknahmen ohne Zeichnungsaussetzung nach dem Gesetz von 2026 nicht als LMT gilt, wird sie zur Vereinfachung der Meldeverfahren in das Modul integriert. Die administrativen Anforderungen, einschließlich der Einreichung von Belegen, bleiben unverändert und müssen über die üblichen Kommunikationswege erfolgen.\n\nDie Aktivierung und Deaktivierung einer Rücknahmeaussetzung muss ab dem 21.09.2026 über das eDesk „LMT activation“-Modul gemeldet werden. Die CSSF erinnert zudem an die Meldepflichten für andere Aussetzungen und Side Pockets für bestimmte Fonds nach den Gesetzen von 2010, 2007 und 2004, die nicht von einem luxemburgischen AIFM verwaltet werden.",
+          "en": "The CSSF has announced an extension of the “LMT activation” module within its eDesk system. It will now include the notification of activation and deactivation of suspensions of redemption (only) for specific Luxembourg-domiciled funds governed by national laws.\n\nThis applies to investment funds under the 2010 Law, specialised investment funds under the 2007 Law, and risk capital investment companies under the 2004 Law. Although a suspension of redemptions without a suspension of subscriptions is not considered an LMT under the 2026 Law, it is integrated into the module to simplify notification procedures. Administrative requirements, including the submission of supporting documentation, remain unchanged and must be submitted through usual communication channels.\n\nThe activation and deactivation of a suspension of redemptions must be notified via the eDesk “LMT activation” module as of 21 September 2026. The CSSF also reminds certain funds under the 2010, 2007, and 2004 Laws not managed by a Luxembourg-domiciled AIFM of their notification obligations for other suspensions and side pockets."
+        },
+        "url": "https://www.cssf.lu/en/2026/09/communication-to-the-investment-fund-industry-regarding-the-requirement-to-notify-the-suspension-of-redemption-only-in-the-lmt-activation-module-related-to-liquid/",
+        "imp": "high"
+      },
+      {
+        "d": "15.04.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "ESMA-Leitlinien zu Liquiditätsmanagement-Tools für OGAW und offene AIFs (Circular CSSF 26/910)",
+          "en": "ESMA Guidelines on Liquidity Management Tools for UCITS and Open-ended AIFs (Circular CSSF 26/910)"
+        },
+        "sl": "circular-cssf-26-910",
+        "s": {
+          "de": "Die CSSF informiert über die am 4. November 2025 in Kraft tretenden ESMA-Leitlinien zu Liquiditätsmanagement-Tools (LMTs) für OGAW und offene AIFs. Diese Leitlinien konkretisieren die Anforderungen an die Auswahl, Implementierung und Funktionsweise von LMTs, die von Verwaltungsgesellschaften und externen AIFM zu berücksichtigen sind.\n\nDie Leitlinien sind für Verwaltungsgesellschaften von OGAW und externen AIFM relevant, die offene AIFs verwalten. Sie sollen sicherstellen, dass diese Unternehmen über angemessene Instrumente verfügen, um Liquiditätsrisiken effektiv zu steuern und Anlegerschutz zu gewährleisten. Dies beinhaltet die Notwendigkeit, LMTs in die Risikomanagementprozesse zu integrieren und deren Wirksamkeit regelmäßig zu überprüfen.\n\nDie ESMA-Leitlinien treten am 4. November 2025 in Kraft. Die CSSF erwartet von den betroffenen Unternehmen, dass sie die notwendigen Anpassungen vornehmen, um die Einhaltung der neuen Vorgaben bis zu diesem Datum sicherzustellen.",
+          "en": "The CSSF informs about the ESMA Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs, which will come into force on November 4, 2025. These guidelines specify the requirements for the selection, implementation, and functioning of LMTs that management companies and external AIFMs must consider.\n\nThe guidelines are relevant for UCITS management companies and external AIFMs managing open-ended AIFs. They aim to ensure that these entities have appropriate tools to effectively manage liquidity risks and protect investors. This includes the need to integrate LMTs into risk management processes and regularly review their effectiveness.\n\nThe ESMA Guidelines will enter into force on November 4, 2025. The CSSF expects affected entities to make the necessary adjustments to ensure compliance with the new requirements by this date."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-cssf-26-910/",
+        "imp": "high",
+        "refnum": "Circular CSSF 26/910"
+      },
+      {
+        "d": "08.01.2025",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "CSSF FAQ – Swing Pricing Mechanism (Aktualisiert)",
+          "en": "CSSF FAQ – Swing Pricing Mechanism (Updated)"
+        },
+        "sl": "cssf-faq-swing-pricing-mechanism-updated",
+        "s": {
+          "de": "Die CSSF hat ihre FAQ zum Swing Pricing Mechanism aktualisiert. Die neue Version 5 enthält eine zusätzliche Frage (Q.10) zur Anwendung des Swing Pricing bei der Umwandlung eines Teilfonds in einen anderen Teilfonds innerhalb desselben Umbrella-Fonds. Es wird klargestellt, dass in solchen Fällen kein Swing Pricing angewendet werden sollte, da es sich um eine interne Umstrukturierung handelt, die keine externen Transaktionen auslöst.\n\nDiese Klarstellung ist relevant für Verwaltungsgesellschaften und Investmentfonds in Luxemburg, die Swing Pricing anwenden. Sie präzisiert die Handhabung von internen Umwandlungen und hilft, die korrekte Anwendung der Swing-Pricing-Regeln sicherzustellen, um eine unbeabsichtigte Belastung der Anleger zu vermeiden.\n\nDie aktualisierten FAQ sind ab dem 8. Januar 2025 gültig.",
+          "en": "The CSSF has updated its FAQ on the Swing Pricing Mechanism. The new version 5 includes an additional question (Q.10) regarding the application of swing pricing when converting one sub-fund into another sub-fund within the same umbrella fund. It clarifies that swing pricing should not be applied in such cases, as it is an internal restructuring that does not trigger external transactions.\n\nThis clarification is relevant for management companies and investment funds in Luxembourg that apply swing pricing. It specifies the handling of internal conversions and helps ensure the correct application of swing pricing rules to avoid unintended charges to investors.\n\nThe updated FAQ are effective from January 8, 2025."
+        },
+        "url": "https://www.cssf.lu/en/Document/cssf-faq-swing-pricing-mechanism/",
+        "imp": "low"
       }
     ],
     "ebaresolvability": [
@@ -3592,47 +3652,6 @@
         },
         "url": "https://finance.ec.europa.eu/news/commission-reinforces-resilience-money-market-funds-new-guidance-2026-05-11_en",
         "imp": "medium"
-      }
-    ],
-    "lulmt": [
-      {
-        "d": "15.04.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "ESMA-Leitlinien zu Liquiditätsmanagement-Tools für OGAW und offene AIFs (Circular CSSF 26/910)",
-          "en": "ESMA Guidelines on Liquidity Management Tools for UCITS and Open-ended AIFs (Circular CSSF 26/910)"
-        },
-        "sl": "circular-cssf-26-910",
-        "s": {
-          "de": "Die CSSF informiert über die am 4. November 2025 in Kraft tretenden ESMA-Leitlinien zu Liquiditätsmanagement-Tools (LMTs) für OGAW und offene AIFs. Diese Leitlinien konkretisieren die Anforderungen an die Auswahl, Implementierung und Funktionsweise von LMTs, die von Verwaltungsgesellschaften und externen AIFM zu berücksichtigen sind.\n\nDie Leitlinien sind für Verwaltungsgesellschaften von OGAW und externen AIFM relevant, die offene AIFs verwalten. Sie sollen sicherstellen, dass diese Unternehmen über angemessene Instrumente verfügen, um Liquiditätsrisiken effektiv zu steuern und Anlegerschutz zu gewährleisten. Dies beinhaltet die Notwendigkeit, LMTs in die Risikomanagementprozesse zu integrieren und deren Wirksamkeit regelmäßig zu überprüfen.\n\nDie ESMA-Leitlinien treten am 4. November 2025 in Kraft. Die CSSF erwartet von den betroffenen Unternehmen, dass sie die notwendigen Anpassungen vornehmen, um die Einhaltung der neuen Vorgaben bis zu diesem Datum sicherzustellen.",
-          "en": "The CSSF informs about the ESMA Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs, which will come into force on November 4, 2025. These guidelines specify the requirements for the selection, implementation, and functioning of LMTs that management companies and external AIFMs must consider.\n\nThe guidelines are relevant for UCITS management companies and external AIFMs managing open-ended AIFs. They aim to ensure that these entities have appropriate tools to effectively manage liquidity risks and protect investors. This includes the need to integrate LMTs into risk management processes and regularly review their effectiveness.\n\nThe ESMA Guidelines will enter into force on November 4, 2025. The CSSF expects affected entities to make the necessary adjustments to ensure compliance with the new requirements by this date."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-cssf-26-910/",
-        "imp": "high",
-        "refnum": "Circular CSSF 26/910"
-      },
-      {
-        "d": "08.01.2025",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "CSSF FAQ – Swing Pricing Mechanism (Aktualisiert)",
-          "en": "CSSF FAQ – Swing Pricing Mechanism (Updated)"
-        },
-        "sl": "cssf-faq-swing-pricing-mechanism-updated",
-        "s": {
-          "de": "Die CSSF hat ihre FAQ zum Swing Pricing Mechanism aktualisiert. Die neue Version 5 enthält eine zusätzliche Frage (Q.10) zur Anwendung des Swing Pricing bei der Umwandlung eines Teilfonds in einen anderen Teilfonds innerhalb desselben Umbrella-Fonds. Es wird klargestellt, dass in solchen Fällen kein Swing Pricing angewendet werden sollte, da es sich um eine interne Umstrukturierung handelt, die keine externen Transaktionen auslöst.\n\nDiese Klarstellung ist relevant für Verwaltungsgesellschaften und Investmentfonds in Luxemburg, die Swing Pricing anwenden. Sie präzisiert die Handhabung von internen Umwandlungen und hilft, die korrekte Anwendung der Swing-Pricing-Regeln sicherzustellen, um eine unbeabsichtigte Belastung der Anleger zu vermeiden.\n\nDie aktualisierten FAQ sind ab dem 8. Januar 2025 gültig.",
-          "en": "The CSSF has updated its FAQ on the Swing Pricing Mechanism. The new version 5 includes an additional question (Q.10) regarding the application of swing pricing when converting one sub-fund into another sub-fund within the same umbrella fund. It clarifies that swing pricing should not be applied in such cases, as it is an internal restructuring that does not trigger external transactions.\n\nThis clarification is relevant for management companies and investment funds in Luxembourg that apply swing pricing. It specifies the handling of internal conversions and helps ensure the correct application of swing pricing rules to avoid unintended charges to investors.\n\nThe updated FAQ are effective from January 8, 2025."
-        },
-        "url": "https://www.cssf.lu/en/Document/cssf-faq-swing-pricing-mechanism/",
-        "imp": "low"
       }
     ],
     "bmr": [
