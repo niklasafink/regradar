@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T08:40:51Z",
+  "generated_at": "2026-09-18T09:55:30Z",
   "updates": {
     "amla": [
       {
@@ -262,6 +262,26 @@
         "refnum": "2026_7927"
       },
       {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A 2026_7926: Meldung von Anwendungen verbundener Dienstleister in Template Z08.02",
+          "en": "EBA Q&A 2026_7926: Reporting of applications owned and operated by affiliated service providers in Template Z08.02"
+        },
+        "sl": "template-z08-02-reporting-of-applications-owned-and-operated-by-affiliated-servi",
+        "s": {
+          "de": "Diese EBA Q&A befasst sich mit der Meldung von Anwendungen im Template Z08.02, die von verbundenen Dienstleistern betrieben werden. Es wird gefragt, ob eine berichtende Einheit Anwendungen melden muss, die von einem verbundenen Dienstleister besessen, verwaltet und betrieben werden, aber zur Erbringung von Dienstleistungen für die berichtende Einheit genutzt werden.\n\nDie Frage ist relevant für Kreditinstitute, die innerhalb von Bankengruppen Dienstleistungen von anderen Konzerngesellschaften beziehen. Es geht darum, ob Template Z08.02 nur operative Vermögenswerte umfasst, die von der berichtenden Einheit selbst kontrolliert werden, oder auch Anwendungen, die kritische Funktionen und Kerngeschäftsbereiche unterstützen, aber im Besitz verbundener Dienstleister sind. Die Klärung ist wichtig für die korrekte Umsetzung der Meldepflichten gemäß der BRRD.\n\nDie Frage ist derzeit noch in Bearbeitung (Status: \"Question under review\").",
+          "en": "This EBA Q&A addresses the reporting of applications operated by affiliated service providers in Template Z08.02. It asks whether a reporting entity should report applications owned, managed, and operated by an affiliated service provider, but used to provide services to the reporting entity.\n\nThis question is relevant for credit institutions that receive services from other group entities within banking groups. It concerns whether Template Z08.02 covers only operational assets controlled by the reporting entity itself, or also applications that support critical functions and core business lines but are owned by affiliated service providers. Clarification is important for the correct implementation of reporting obligations under the BRRD.\n\nThe question is currently under review (Status: \"Question under review\")."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7926",
+        "imp": "low",
+        "refnum": "2026_7926"
+      },
+      {
         "d": "05.08.2026",
         "t": {
           "de": "Q&A",
@@ -280,26 +300,6 @@
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7918",
         "imp": "low",
         "refnum": "2026_7918"
-      },
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A 2026_7926: Meldung von Anwendungen verbundener Dienstleister in Template Z08.02",
-          "en": "EBA Q&A 2026_7926: Reporting of applications owned and operated by affiliated service providers in Template Z08.02"
-        },
-        "sl": "template-z08-02-reporting-of-applications-owned-and-operated-by-affiliated-servi",
-        "s": {
-          "de": "Diese EBA Q&A befasst sich mit der Meldung von Anwendungen im Template Z08.02, die von verbundenen Dienstleistern betrieben werden. Es wird gefragt, ob eine berichtende Einheit Anwendungen melden muss, die von einem verbundenen Dienstleister besessen, verwaltet und betrieben werden, aber zur Erbringung von Dienstleistungen für die berichtende Einheit genutzt werden.\n\nDie Frage ist relevant für Kreditinstitute, die innerhalb von Bankengruppen Dienstleistungen von anderen Konzerngesellschaften beziehen. Es geht darum, ob Template Z08.02 nur operative Vermögenswerte umfasst, die von der berichtenden Einheit selbst kontrolliert werden, oder auch Anwendungen, die kritische Funktionen und Kerngeschäftsbereiche unterstützen, aber im Besitz verbundener Dienstleister sind. Die Klärung ist wichtig für die korrekte Umsetzung der Meldepflichten gemäß der BRRD.\n\nDie Frage ist derzeit noch in Bearbeitung (Status: \"Question under review\").",
-          "en": "This EBA Q&A addresses the reporting of applications operated by affiliated service providers in Template Z08.02. It asks whether a reporting entity should report applications owned, managed, and operated by an affiliated service provider, but used to provide services to the reporting entity.\n\nThis question is relevant for credit institutions that receive services from other group entities within banking groups. It concerns whether Template Z08.02 covers only operational assets controlled by the reporting entity itself, or also applications that support critical functions and core business lines but are owned by affiliated service providers. Clarification is important for the correct implementation of reporting obligations under the BRRD.\n\nThe question is currently under review (Status: \"Question under review\")."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7926",
-        "imp": "low",
-        "refnum": "2026_7926"
       },
       {
         "d": "18.06.2026",
@@ -340,6 +340,106 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
         "imp": "medium",
         "refnum": "Ares(2020)4105668"
+      }
+    ],
+    "prospectus": [
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Delegierte VO",
+          "en": "Delegated regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Delegierten Verordnung (EU) 2026/1061 zur Prospektgestaltung",
+          "en": "Corrigendum to Delegated Regulation (EU) 2026/1061 on Prospectus Format"
+        },
+        "sl": "berichtigung-der-delegierten-verordnung-eu-2026-1061-der-kommission-vom-7-mai-20",
+        "s": {
+          "de": "Die Berichtigung der Delegierten Verordnung (EU) 2026/1061 korrigiert Fehler in der ursprünglichen Verordnung, die die standardisierte Aufmachung, Reihenfolge und den gestrafften Inhalt sowie die Prüfung und Billigung von Prospekten betrifft. Diese Änderungen sind für die korrekte Anwendung der Prospektvorschriften von Bedeutung.\n\nDie Berichtigung ist für alle Finanzinstitute relevant, die Prospekte gemäß der Prospektverordnung erstellen und veröffentlichen müssen. Sie stellt sicher, dass die Anforderungen an die Prospektgestaltung und das Genehmigungsverfahren korrekt umgesetzt werden können, was die Rechtssicherheit erhöht und potenzielle Compliance-Risiken minimiert.\n\nDie Berichtigung wurde am 18.09.2026 veröffentlicht.",
+          "en": "The corrigendum to Delegated Regulation (EU) 2026/1061 corrects errors in the original regulation concerning the standardized format and order, streamlined content, and the examination and approval of prospectuses. These amendments are important for the correct application of prospectus rules.\n\nThis corrigendum is relevant for all financial institutions required to prepare and publish prospectuses under the Prospectus Regulation. It ensures that the requirements for prospectus drafting and the approval process can be correctly implemented, thereby increasing legal certainty and minimizing potential compliance risks.\n\nThe corrigendum was published on 18.09.2026."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1061R(01)",
+        "imp": "low",
+        "refnum": "32026R1061R(01)"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zu Offenlegungspflichten und aktualisiert Leitlinien und Q&As zur Prospektverordnung",
+          "en": "ESMA consults on disclosure requirements and updates guidelines and Q&As under the Prospectus Regulation"
+        },
+        "sl": "esma-consults-on-disclosure-requirements-and-updates-guidelines-and-q-as-under-t",
+        "s": {
+          "de": "Die ESMA hat ein Maßnahmenpaket zur Prospektverordnung veröffentlicht, das Änderungen durch den Listing Act berücksichtigt. Es umfasst ein Konsultationspapier zur Aktualisierung der Leitlinien für Offenlegungspflichten, aktualisierte Q&As, einen Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen, sowie einen Abschlussbericht zu technischen Regulierungsstandards (RTS) für wichtige Finanzinformationen in Prospektzusammenfassungen.\n\nDas Konsultationspapier soll Emittenten und Beratern helfen, die Offenlegungspflichten gemäß der überarbeiteten Prospektverordnung besser zu verstehen und vereinfacht bestehende Leitlinien. Die aktualisierten Q&As passen rechtliche Verweise an, klären Sachverhalte und entfernen überholte Inhalte. Die Leitlinien für Produktnachträge schaffen einen gemeinsamen Ansatz zur Beurteilung, ob ein Nachtrag neue Wertpapiere in einen Basisprospekt einführt, und die RTS aktualisieren die Anforderungen an Finanzinformationen im Prospekt nach den Reformen des Listing Act.\n\nInteressenträger können bis zum 9. November 2026 zur Konsultation Stellung nehmen. Die ESMA plant, den Abschlussbericht und die aktualisierten Leitlinien im zweiten Quartal 2027 zu veröffentlichen. Die Leitlinien zu Produktnachträgen treten in Kraft, sobald Übersetzungen in alle Amtssprachen der EU vorliegen. Die RTS wurden der Europäischen Kommission zur Entscheidung übermittelt.",
+          "en": "ESMA has published a package of materials under the Prospectus Regulation, reflecting changes introduced by the Listing Act. This includes a Consultation Paper on updating disclosure requirements guidelines, updated Q&As, a Final Report on guidelines for supplements introducing new securities to a base prospectus, and a Final Report on regulatory technical standards (RTS) for key financial information in prospectus summaries.\n\nThe Consultation Paper aims to help issuers and their advisors better understand disclosure requirements under the revised Prospectus Regulation and simplifies existing guidance. The updated Q&As adjust legal references, provide clarifications, and remove obsolete content. The guidelines on product supplements establish a common approach for assessing whether a supplement introduces new securities to a base prospectus, and the RTS update financial information requirements in prospectuses following Listing Act reforms.\n\nStakeholders are invited to respond to the consultation by 9 November 2026. ESMA expects to publish the Final Report and updated Guidelines in Q2 2027. The guidelines on product supplements will apply once translations into all official EU languages are available. The RTS have been submitted to the European Commission for a decision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-disclosure-requirements-and-updates-guidelines-and-qas-under",
+        "imp": "medium"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Änderungen an den Q&As zur Prospektverordnung",
+          "en": "Overview of changes made to the Prospectus Q&As"
+        },
+        "sl": "overview-of-changes-made-to-the-prospectus-q-as",
+        "s": {
+          "de": "Die ESMA hat Änderungen an ihren Q&As zur Prospektverordnung vorgenommen. Diese Aktualisierungen betreffen die Vereinfachung und Reduzierung des Verwaltungsaufwands im Zusammenhang mit Prospekten.\n\nDie Änderungen sind für alle Unternehmen relevant, die Prospekte gemäß der Prospektverordnung erstellen und veröffentlichen. Sie sollen den Prozess der Prospekterstellung effizienter gestalten und die Compliance-Last verringern.",
+          "en": "ESMA has introduced changes to its Q&As on the Prospectus Regulation. These updates focus on the simplification and reduction of administrative burdens related to prospectuses.\n\nThese changes are relevant for all entities that prepare and publish prospectuses under the Prospectus Regulation. They aim to streamline the prospectus drafting process and alleviate the compliance burden."
+        },
+        "url": "https://www.esma.europa.eu/document/overview-changes-made-prospectus-qas",
+        "imp": "low"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zur Aktualisierung der RTS für Finanzinformationen in der Prospektzusammenfassung (ESMA32-753890202-3065)",
+          "en": "Final Report on the update to the RTS concerning key financial information in the summary of a prospectus (ESMA32-753890202-3065)"
+        },
+        "sl": "final-report-on-the-update-to-the-rts-concerning-key-financial-information-in-th",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Aktualisierung der RTS bezüglich der wichtigsten Finanzinformationen in der Prospektzusammenfassung veröffentlicht. Ziel ist es, die Anforderungen an Finanzinformationen im Prospekt zu vereinfachen und an die durch den Listing Act geänderten Vorschriften anzupassen.\n\nDie wesentlichen Änderungen betreffen die Verkürzung der erforderlichen Zeiträume für Finanzinformationen bei der Emission von Eigenkapital- und Fremdkapitalinstrumenten. Zudem wird die Cashflow-Tabelle für Fremdkapitalinstrumente aus Anhang II entfernt, da sie keine entsprechende Position in der Delegierten Verordnung (EU) 2019/980 hat. Die Änderungen sollen die Belastung für Emittenten verringern.\n\nDie geänderten RTS werden der Europäischen Kommission zur Annahme vorgelegt und unterliegen einer Prüfungsfrist durch das Europäische Parlament und den Rat. Die ESMA ermutigt nationale zuständige Behörden, den Anwendungsbeginn vorwegzunehmen und einen konsistenten Ansatz mit der Prospektverordnung, wie sie durch den Listing Act geändert wurde, sicherzustellen.",
+          "en": "ESMA has published a final report on the update to the RTS concerning key financial information in the summary of a prospectus. The aim is to simplify the requirements for financial information in prospectuses and align them with the rules amended by the Listing Act.\n\nThe main changes involve reducing the required periods for financial information in the context of both equity and non-equity securities issuances. Additionally, the cash flow table for non-equity securities is removed from Annex II due to its lack of a corresponding item in Delegated Regulation (EU) 2019/980. These amendments are intended to alleviate the burden on issuers.\n\nThe amended RTS will be submitted to the European Commission for adoption and will be subject to a scrutiny period by the European Parliament and Council. ESMA encourages national competent authorities to anticipate its entry into application by ensuring a consistent approach with the Prospectus Regulation, as amended by the Listing Act."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-update-rts-concerning-key-financial-information-summary-prospectus",
+        "imp": "medium",
+        "refnum": "ESMA32-753890202-3065"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen (ESMA32-753890202-3034)",
+          "en": "Final Report on Guidelines on supplements which introduce new securities to a base prospectus (ESMA32-753890202-3034)"
+        },
+        "sl": "final-report-on-the-guidelines-on-supplements-which-introduce-new-securities-to",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht zu den Leitlinien für Nachträge veröffentlicht, die neue Wertpapiere in einen Basisprospekt einführen. Diese Leitlinien sollen die EU-weite Aufsicht in diesem Bereich harmonisieren, da es bisher erhebliche Abweichungen gab, die zu unterschiedlichen aufsichtsrechtlichen Ergebnissen führten.\n\nDie Leitlinien präzisieren, wann ein Nachtrag als Einführung eines neuen Wertpapiertyps gilt, der nicht bereits im Basisprospekt beschrieben ist. Dies ist relevant, da ein Basisprospekt nicht zur Einführung eines neuen Wertpapiertyps verwendet werden sollte, für den die notwendigen Informationen nicht enthalten sind. Die ESMA reagiert damit auf die Notwendigkeit klarer Kriterien, um Inkonsistenzen bei den Anforderungen zwischen den Jurisdiktionen zu vermeiden und die Ziele des Listing Act zu unterstützen.\n\nDie Leitlinien in Anhang III des Berichts werden in die Amtssprachen der EU übersetzt und veröffentlicht. Sie basieren auf umfangreichem Feedback zu einem Konsultationspapier vom 18. Februar 2025 und wurden angepasst, um die Offenlegungsanhänge der Delegierten Verordnung (EU) 2019/980 zu berücksichtigen.",
+          "en": "ESMA has published its Final Report on the Guidelines on supplements which introduce new securities to a base prospectus. These guidelines aim to harmonise EU-wide supervision in this area, as there have been significant divergences leading to different supervisory outcomes.\n\nThe guidelines specify when a supplement is considered to introduce a new type of security not already described in the base prospectus. This is relevant because a base prospectus should not be used to introduce a new type of security for which the necessary information has not been included. ESMA is thus responding to the need for clear criteria to avoid inconsistencies in requirements across jurisdictions and to support the objectives of the Listing Act.\n\nThe guidelines, set out in Annex III of the report, will be translated into the official EU languages and published. They are based on extensive feedback to a consultation paper published on 18 February 2025 and have been adjusted to reflect the disclosure annexes of Delegated Regulation (EU) 2019/980."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
+        "imp": "medium",
+        "refnum": "ESMA32-753890202-3034"
       }
     ],
     "ebaresolvability": [
@@ -1351,86 +1451,6 @@
             "d": "10.09.2026"
           }
         ]
-      }
-    ],
-    "prospectus": [
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zu Offenlegungspflichten und aktualisiert Leitlinien und Q&As zur Prospektverordnung",
-          "en": "ESMA consults on disclosure requirements and updates guidelines and Q&As under the Prospectus Regulation"
-        },
-        "sl": "esma-consults-on-disclosure-requirements-and-updates-guidelines-and-q-as-under-t",
-        "s": {
-          "de": "Die ESMA hat ein Maßnahmenpaket zur Prospektverordnung veröffentlicht, das Änderungen durch den Listing Act berücksichtigt. Es umfasst ein Konsultationspapier zur Aktualisierung der Leitlinien für Offenlegungspflichten, aktualisierte Q&As, einen Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen, sowie einen Abschlussbericht zu technischen Regulierungsstandards (RTS) für wichtige Finanzinformationen in Prospektzusammenfassungen.\n\nDas Konsultationspapier soll Emittenten und Beratern helfen, die Offenlegungspflichten gemäß der überarbeiteten Prospektverordnung besser zu verstehen und vereinfacht bestehende Leitlinien. Die aktualisierten Q&As passen rechtliche Verweise an, klären Sachverhalte und entfernen überholte Inhalte. Die Leitlinien für Produktnachträge schaffen einen gemeinsamen Ansatz zur Beurteilung, ob ein Nachtrag neue Wertpapiere in einen Basisprospekt einführt, und die RTS aktualisieren die Anforderungen an Finanzinformationen im Prospekt nach den Reformen des Listing Act.\n\nInteressenträger können bis zum 9. November 2026 zur Konsultation Stellung nehmen. Die ESMA plant, den Abschlussbericht und die aktualisierten Leitlinien im zweiten Quartal 2027 zu veröffentlichen. Die Leitlinien zu Produktnachträgen treten in Kraft, sobald Übersetzungen in alle Amtssprachen der EU vorliegen. Die RTS wurden der Europäischen Kommission zur Entscheidung übermittelt.",
-          "en": "ESMA has published a package of materials under the Prospectus Regulation, reflecting changes introduced by the Listing Act. This includes a Consultation Paper on updating disclosure requirements guidelines, updated Q&As, a Final Report on guidelines for supplements introducing new securities to a base prospectus, and a Final Report on regulatory technical standards (RTS) for key financial information in prospectus summaries.\n\nThe Consultation Paper aims to help issuers and their advisors better understand disclosure requirements under the revised Prospectus Regulation and simplifies existing guidance. The updated Q&As adjust legal references, provide clarifications, and remove obsolete content. The guidelines on product supplements establish a common approach for assessing whether a supplement introduces new securities to a base prospectus, and the RTS update financial information requirements in prospectuses following Listing Act reforms.\n\nStakeholders are invited to respond to the consultation by 9 November 2026. ESMA expects to publish the Final Report and updated Guidelines in Q2 2027. The guidelines on product supplements will apply once translations into all official EU languages are available. The RTS have been submitted to the European Commission for a decision."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-disclosure-requirements-and-updates-guidelines-and-qas-under",
-        "imp": "medium"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Änderungen an den Q&As zur Prospektverordnung",
-          "en": "Overview of changes made to the Prospectus Q&As"
-        },
-        "sl": "overview-of-changes-made-to-the-prospectus-q-as",
-        "s": {
-          "de": "Die ESMA hat Änderungen an ihren Q&As zur Prospektverordnung vorgenommen. Diese Aktualisierungen betreffen die Vereinfachung und Reduzierung des Verwaltungsaufwands im Zusammenhang mit Prospekten.\n\nDie Änderungen sind für alle Unternehmen relevant, die Prospekte gemäß der Prospektverordnung erstellen und veröffentlichen. Sie sollen den Prozess der Prospekterstellung effizienter gestalten und die Compliance-Last verringern.",
-          "en": "ESMA has introduced changes to its Q&As on the Prospectus Regulation. These updates focus on the simplification and reduction of administrative burdens related to prospectuses.\n\nThese changes are relevant for all entities that prepare and publish prospectuses under the Prospectus Regulation. They aim to streamline the prospectus drafting process and alleviate the compliance burden."
-        },
-        "url": "https://www.esma.europa.eu/document/overview-changes-made-prospectus-qas",
-        "imp": "low"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Abschlussbericht zur Aktualisierung der RTS für Finanzinformationen in der Prospektzusammenfassung (ESMA32-753890202-3065)",
-          "en": "Final Report on the update to the RTS concerning key financial information in the summary of a prospectus (ESMA32-753890202-3065)"
-        },
-        "sl": "final-report-on-the-update-to-the-rts-concerning-key-financial-information-in-th",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Aktualisierung der RTS bezüglich der wichtigsten Finanzinformationen in der Prospektzusammenfassung veröffentlicht. Ziel ist es, die Anforderungen an Finanzinformationen im Prospekt zu vereinfachen und an die durch den Listing Act geänderten Vorschriften anzupassen.\n\nDie wesentlichen Änderungen betreffen die Verkürzung der erforderlichen Zeiträume für Finanzinformationen bei der Emission von Eigenkapital- und Fremdkapitalinstrumenten. Zudem wird die Cashflow-Tabelle für Fremdkapitalinstrumente aus Anhang II entfernt, da sie keine entsprechende Position in der Delegierten Verordnung (EU) 2019/980 hat. Die Änderungen sollen die Belastung für Emittenten verringern.\n\nDie geänderten RTS werden der Europäischen Kommission zur Annahme vorgelegt und unterliegen einer Prüfungsfrist durch das Europäische Parlament und den Rat. Die ESMA ermutigt nationale zuständige Behörden, den Anwendungsbeginn vorwegzunehmen und einen konsistenten Ansatz mit der Prospektverordnung, wie sie durch den Listing Act geändert wurde, sicherzustellen.",
-          "en": "ESMA has published a final report on the update to the RTS concerning key financial information in the summary of a prospectus. The aim is to simplify the requirements for financial information in prospectuses and align them with the rules amended by the Listing Act.\n\nThe main changes involve reducing the required periods for financial information in the context of both equity and non-equity securities issuances. Additionally, the cash flow table for non-equity securities is removed from Annex II due to its lack of a corresponding item in Delegated Regulation (EU) 2019/980. These amendments are intended to alleviate the burden on issuers.\n\nThe amended RTS will be submitted to the European Commission for adoption and will be subject to a scrutiny period by the European Parliament and Council. ESMA encourages national competent authorities to anticipate its entry into application by ensuring a consistent approach with the Prospectus Regulation, as amended by the Listing Act."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-update-rts-concerning-key-financial-information-summary-prospectus",
-        "imp": "medium",
-        "refnum": "ESMA32-753890202-3065"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen (ESMA32-753890202-3034)",
-          "en": "Final Report on Guidelines on supplements which introduce new securities to a base prospectus (ESMA32-753890202-3034)"
-        },
-        "sl": "final-report-on-the-guidelines-on-supplements-which-introduce-new-securities-to",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht zu den Leitlinien für Nachträge veröffentlicht, die neue Wertpapiere in einen Basisprospekt einführen. Diese Leitlinien sollen die EU-weite Aufsicht in diesem Bereich harmonisieren, da es bisher erhebliche Abweichungen gab, die zu unterschiedlichen aufsichtsrechtlichen Ergebnissen führten.\n\nDie Leitlinien präzisieren, wann ein Nachtrag als Einführung eines neuen Wertpapiertyps gilt, der nicht bereits im Basisprospekt beschrieben ist. Dies ist relevant, da ein Basisprospekt nicht zur Einführung eines neuen Wertpapiertyps verwendet werden sollte, für den die notwendigen Informationen nicht enthalten sind. Die ESMA reagiert damit auf die Notwendigkeit klarer Kriterien, um Inkonsistenzen bei den Anforderungen zwischen den Jurisdiktionen zu vermeiden und die Ziele des Listing Act zu unterstützen.\n\nDie Leitlinien in Anhang III des Berichts werden in die Amtssprachen der EU übersetzt und veröffentlicht. Sie basieren auf umfangreichem Feedback zu einem Konsultationspapier vom 18. Februar 2025 und wurden angepasst, um die Offenlegungsanhänge der Delegierten Verordnung (EU) 2019/980 zu berücksichtigen.",
-          "en": "ESMA has published its Final Report on the Guidelines on supplements which introduce new securities to a base prospectus. These guidelines aim to harmonise EU-wide supervision in this area, as there have been significant divergences leading to different supervisory outcomes.\n\nThe guidelines specify when a supplement is considered to introduce a new type of security not already described in the base prospectus. This is relevant because a base prospectus should not be used to introduce a new type of security for which the necessary information has not been included. ESMA is thus responding to the need for clear criteria to avoid inconsistencies in requirements across jurisdictions and to support the objectives of the Listing Act.\n\nThe guidelines, set out in Annex III of the report, will be translated into the official EU languages and published. They are based on extensive feedback to a consultation paper published on 18 February 2025 and have been adjusted to reflect the disclosure annexes of Delegated Regulation (EU) 2019/980."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
-        "imp": "medium",
-        "refnum": "ESMA32-753890202-3034"
       }
     ],
     "mar": [
