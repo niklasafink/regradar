@@ -152,11 +152,27 @@ def collect_state(conn: sqlite3.Connection, steps_data: Optional[dict] = None) -
             "newLast7d": r["new7d"],
             "errorsLast7d": r["err7d"],
         })
+    # Big4: lastFoundAt = jüngster neu entdeckter Artikel (kein Lebenszeichen,
+    # KPMG findet seit Wochen nichts Neues); Alarmgrundlage ist lastSuccessAt =
+    # letzter Abruf mit lesbaren Einträgen (big4_status, gepflegt von big4.py).
     big4 = []
+    try:
+        status = {r["firm"]: r for r in conn.execute("SELECT * FROM big4_status")}
+    except sqlite3.OperationalError:
+        status = {}
     try:
         for r in conn.execute(
                 "SELECT firm, COUNT(*) n, MAX(discovered_at) last FROM big4_articles GROUP BY firm ORDER BY firm"):
-            big4.append({"firm": r["firm"], "articles": r["n"], "lastFoundAt": r["last"]})
+            entry = {"firm": r["firm"], "articles": r["n"], "lastFoundAt": r["last"]}
+            st = status.get(r["firm"])
+            if st is not None:  # ohne Zeile (Scraper noch nicht gelaufen) kein Alarm
+                entry.update({
+                    "trackedSince": st["tracked_since"],
+                    "lastRunAt": st["last_run_at"],
+                    "lastSuccessAt": st["last_success_at"],
+                    "lastError": st["last_error"],
+                })
+            big4.append(entry)
     except sqlite3.OperationalError:
         pass
     steps_data = steps_data or load_steps()

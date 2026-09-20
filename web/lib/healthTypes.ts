@@ -41,11 +41,23 @@ export type HeartbeatState = {
   };
   stepsLastOk: Partial<Record<StepName, string>>;
   sources: SourceState[];
-  big4?: { firm: string; articles: number; lastFoundAt: string | null }[];
+  big4?: Big4State[];
+};
+
+/** Big-4-Kanzlei: lastFoundAt = jüngster neu gefundener Artikel (kein Lebenszeichen);
+    lastSuccessAt = letzter Abruf mit lesbaren Einträgen (fehlt bei älteren Scraper-Ständen). */
+export type Big4State = {
+  firm: string;
+  articles: number;
+  lastFoundAt: string | null;
+  trackedSince?: string | null;
+  lastRunAt?: string | null;
+  lastSuccessAt?: string | null;
+  lastError?: string | null;
 };
 
 export type Problem = {
-  /** "pipeline" | "step:<name>" | "source:<id>" */
+  /** "pipeline" | "step:<name>" | "source:<id>" | "big4:<Kanzlei>" */
   key: string;
   label: string;
   since: string | null;
@@ -116,6 +128,20 @@ export function evaluate(state: HeartbeatState | null, now = Date.now()): Proble
         detail: s.lastError ?? (s.lastRunStatus ? `Letzter Lauf: ${s.lastRunStatus}` : "Noch nie erfolgreich"),
       });
     }
+  }
+  // Kanzlei-Scraper: zählt der letzte Abruf mit lesbaren Einträgen, nicht der
+  // letzte neue Artikel. Ohne Status (älterer Scraper) keine Bewertung; nie
+  // erfolgreich → ab Beobachtungsbeginn gerechnet.
+  for (const b of state.big4 ?? []) {
+    if (b.lastSuccessAt === undefined) continue;
+    const since = b.lastSuccessAt ?? b.trackedSince ?? null;
+    if (!since || !isStale(since, now)) continue;
+    problems.push({
+      key: `big4:${b.firm}`,
+      label: `Kanzlei ${b.firm}`,
+      since: b.lastSuccessAt ?? null,
+      detail: b.lastError ?? "Kein erfolgreicher Abruf",
+    });
   }
   return problems;
 }

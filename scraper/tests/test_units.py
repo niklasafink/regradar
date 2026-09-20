@@ -562,7 +562,7 @@ class HealthHeartbeat(unittest.TestCase):
                          (src["source_id"],))
             conn.execute(
                 """INSERT INTO crawl_runs (source_id, started_at, finished_at, status, error_message)
-                   VALUES (?, '2026-09-05T08:00:00Z', '2026-09-05T08:01:00Z', 'ERROR', 'Feed nicht erreichbar')""",
+                   VALUES (?, datetime('now','-1 hour'), datetime('now','-1 hour'), 'ERROR', 'Feed nicht erreichbar')""",
                 (src["source_id"],))
             conn.commit()
             state = collect_state(conn, data)
@@ -576,6 +576,51 @@ class HealthHeartbeat(unittest.TestCase):
             self.assertEqual(s["lastRunStatus"], "ERROR")
             self.assertEqual(s["lastError"], "Feed nicht erreichbar")
             self.assertEqual(s["errorsLast7d"], 1)
+
+
+class Big4Status(unittest.TestCase):
+    """Abruf-Zustand der Kanzlei-Scraper (Grundlage des Big4-Alarms)."""
+
+    def _conn(self):
+        import sqlite3
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        from regradar import big4
+        big4.ensure_tables(conn)
+        return conn
+
+    def test_success_failure_and_recovery(self):
+        from regradar.big4 import _note_status
+        conn = self._conn()
+        _note_status(conn, "KPMG", [])
+        row = conn.execute("SELECT * FROM big4_status WHERE firm='KPMG'").fetchone()
+        self.assertIsNotNone(row["last_success_at"])
+        self.assertIsNone(row["last_error"])
+        ok_at = row["last_success_at"]
+        _note_status(conn, "KPMG", ["Layout geändert"])
+        row = conn.execute("SELECT * FROM big4_status WHERE firm='KPMG'").fetchone()
+        self.assertEqual(row["last_success_at"], ok_at)  # Fehler überschreibt den Erfolg nicht
+        self.assertEqual(row["last_error"], "Layout geändert")
+        _note_status(conn, "KPMG", [])
+        self.assertIsNone(conn.execute("SELECT last_error FROM big4_status").fetchone()[0])
+
+    def test_first_failure_never_succeeded(self):
+        from regradar.big4 import _note_status
+        conn = self._conn()
+        _note_status(conn, "X", ["HTTP 404"])
+        row = conn.execute("SELECT * FROM big4_status WHERE firm='X'").fetchone()
+        self.assertIsNone(row["last_success_at"])
+        self.assertIsNotNone(row["tracked_since"])
+
+    def test_layout_change_counts_as_failure(self):
+        from unittest import mock
+        from regradar import big4
+        conn = self._conn()
+        with mock.patch.object(big4, "_fetch", return_value=("<html>leer</html>", None)):
+            big4._scrape_kpmg(conn)
+        row = conn.execute("SELECT * FROM big4_status WHERE firm='KPMG'").fetchone()
+        self.assertIsNone(row["last_success_at"])
+        self.assertIn("kein Artikel erkannt", row["last_error"])
 
 
 class GapReportRelevance(unittest.TestCase):

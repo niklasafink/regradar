@@ -189,7 +189,12 @@ Website (`web/lib/health.ts`). Die Schritt-Stände liegen in
 lassen den Lauf nie scheitern.
 
 **Bewertung und Alarm** (`web/lib/healthTypes.ts`): Eine Quelle oder ein
-Schritt, der länger als 24 h nicht erfolgreich war, gilt als ausgefallen;
+Schritt, der länger als 24 h nicht erfolgreich war, gilt als ausgefallen.
+Für die Big4-Kanzleien zählt der letzte **Abruf mit lesbaren Einträgen**
+(Tabelle `big4_status`, gepflegt von `big4.py`; Alarm-Schlüssel `big4:<Kanzlei>`),
+nicht der letzte neu gefundene Artikel: Eine ruhige Kanzlei (KPMG: seit 07.07.
+nichts Neues) ist kein Alarm, ein geladenes Listing ohne erkannten Artikel
+(Layout geändert) oder ein toter Feed dagegen schon;
 bleibt der Herzschlag selbst länger als 24 h aus, gilt die ganze Pipeline
 (`pipeline`) als ausgefallen. Bewertet wird bei jedem Herzschlag und
 zusätzlich von außen, damit auch ein schlafender oder abgestürzter Mac

@@ -95,6 +95,31 @@ def ensure_tables(conn: sqlite3.Connection) -> None:
                checked_at   TEXT,
                PRIMARY KEY (document_id, article_id)
            )""")
+    # Abruf-Zustand je Kanzlei für die Scraper-Überwachung (health.py): „neu
+    # gefunden“ ist kein Lebenszeichen (KPMG hat seit Wochen nichts Neues),
+    # ein erfolgreicher Abruf mit lesbaren Einträgen schon.
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS big4_status (
+               firm            TEXT PRIMARY KEY,
+               tracked_since   TEXT NOT NULL,
+               last_run_at     TEXT NOT NULL,
+               last_success_at TEXT,
+               last_error      TEXT
+           )""")
+    conn.commit()
+
+
+def _note_status(conn: sqlite3.Connection, firm: str, errors: List[str]) -> None:
+    """Abrufergebnis einer Kanzlei festhalten: keine Fehler = Erfolg."""
+    now = utcnow()
+    err = "; ".join(errors)[:300] or None
+    conn.execute(
+        "INSERT OR IGNORE INTO big4_status (firm, tracked_since, last_run_at) VALUES (?,?,?)",
+        (firm, now, now))
+    conn.execute(
+        "UPDATE big4_status SET last_run_at=?, last_error=?, "
+        "last_success_at=CASE WHEN ? IS NULL THEN ? ELSE last_success_at END WHERE firm=?",
+        (now, err, err, now, firm))
     conn.commit()
 
 
@@ -134,12 +159,18 @@ def _clean_teaser(text: Optional[str]) -> Optional[str]:
 
 # --------------------------------------------------------------- Discovery
 
-def _get(url: str) -> Optional[str]:
+def _fetch(url: str) -> Tuple[Optional[str], Optional[str]]:
+    """(Text, Fehlertext); genau eines von beiden ist gesetzt."""
     result, err = http.get(url)
     if err or result is None or result.status != 200:
-        print("  ! nicht erreichbar: {} ({})".format(url, err or (result and result.status)))
-        return None
-    return result.text()
+        reason = "{} ({})".format(url, err or (result and result.status))
+        print("  ! nicht erreichbar: " + reason)
+        return None, reason
+    return result.text(), None
+
+
+def _get(url: str) -> Optional[str]:
+    return _fetch(url)[0]
 
 
 def _rss_items(xml_text: str):
@@ -167,14 +198,21 @@ def _rss_items(xml_text: str):
 
 def _scrape_rss(conn, firm: str, feeds: List[str]) -> int:
     new = 0
+    errors: List[str] = []
     for feed in feeds:
-        text = _get(feed)
+        text, err = _fetch(feed)
         if not text:
+            errors.append(err or feed)
             continue
+        seen = 0
         for title, link, pub, desc in _rss_items(text):
+            seen += 1
             if _upsert(conn, firm, link.split("?")[0], title, desc, pub):
                 new += 1
+        if not seen:
+            errors.append("Feed ohne lesbare Einträge: " + feed)
     conn.commit()
+    _note_status(conn, firm, errors)
     return new
 
 
@@ -190,14 +228,17 @@ def _parse_de_month_date(raw: str) -> Optional[str]:
 
 
 def _scrape_pwc_legal(conn) -> int:
-    html = _get(PWC_LEGAL_LIST)
+    html, err = _fetch(PWC_LEGAL_LIST)
     if not html:
+        _note_status(conn, "PwC Legal", [err or PWC_LEGAL_LIST])
         return 0
     new = 0
+    seen = 0
     for m in re.finditer(
             r'<a href="(/de/news/fachbeitraege/[^"]+)" class="article-teaser__link"[^>]*>\s*'
             r'<span class="article-teaser__headline">(.*?)</span>(.*?)</a>', html, re.S):
         path, title, meta = m.groups()
+        seen += 1
         import html as html_mod
         title = html_mod.unescape(re.sub(r"<[^>]+>", " ", title))
         pub = None
@@ -207,18 +248,22 @@ def _scrape_pwc_legal(conn) -> int:
         if _upsert(conn, "PwC Legal", "https://legal.pwc.de" + path, title, None, pub):
             new += 1
     conn.commit()
+    _note_status(conn, "PwC Legal", [] if seen else ["Seite geladen, aber kein Artikel erkannt (Layout geändert?): " + PWC_LEGAL_LIST])
     return new
 
 
 def _scrape_kpmg(conn) -> int:
-    html = _get(KPMG_LIST)
+    html, err = _fetch(KPMG_LIST)
     if not html:
+        _note_status(conn, "KPMG", [err or KPMG_LIST])
         return 0
     new = 0
+    seen = 0
     for m in re.finditer(
             r'<div class="regulatory-update-item">\s*<a href="([^"]+)">\s*<h3\b[^>]*>(.*?)</h3>\s*</a>\s*'
             r'<div class="post-meta">\s*(\d{2}\.\d{2}\.\d{4})', html, re.S):
         url, h3, date_de = m.groups()
+        seen += 1
         import html as html_mod
         # Regulator-Flag-Div aus der Überschrift entfernen, Rest ist der Titel.
         h3 = re.sub(r"<div[^>]*>.*?</div>", " ", h3, flags=re.S)
@@ -227,12 +272,14 @@ def _scrape_kpmg(conn) -> int:
         if _upsert(conn, "KPMG", url.split("?")[0], title, None, "{}-{}-{}".format(y, mo, d)):
             new += 1
     conn.commit()
+    _note_status(conn, "KPMG", [] if seen else ["Seite geladen, aber kein Artikel erkannt (Layout geändert?): " + KPMG_LIST])
     return new
 
 
 def _scrape_deloitte(conn) -> int:
-    xml_text = _get(DELOITTE_SITEMAP)
+    xml_text, err = _fetch(DELOITTE_SITEMAP)
     if not xml_text:
+        _note_status(conn, "Deloitte Legal", [err or DELOITTE_SITEMAP])
         return 0
     entries = re.findall(
         r"<url>\s*<loc>([^<]+)</loc>(?:\s*<lastmod>([^<]+)</lastmod>)?", xml_text)
@@ -247,6 +294,8 @@ def _scrape_deloitte(conn) -> int:
         candidates.append((loc, (lastmod or "")[:10] or None))
     # Neueste zuerst; nur noch unbekannte Seiten laden (Budget pro Lauf).
     candidates.sort(key=lambda x: x[1] or "", reverse=True)
+    _note_status(conn, "Deloitte Legal", [] if candidates else
+                 ["Sitemap geladen, aber keine Artikel-URL erkannt (Struktur geändert?): " + DELOITTE_SITEMAP])
     new = 0
     budget = DELOITTE_FETCH_BUDGET
     for url, lastmod in candidates:

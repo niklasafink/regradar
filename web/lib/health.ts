@@ -314,7 +314,7 @@ export async function sendHealthMail(input: {
         }
         ${sections.join("")}
         <p style="margin:28px 0 0;padding-top:12px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8;line-height:1.6">
-          Regel: Alarm, sobald eine Quelle oder ein Pipeline-Schritt länger als 24 Stunden nicht erfolgreich lief.
+          Regel: Alarm, sobald eine Quelle, ein Kanzlei-Scraper oder ein Pipeline-Schritt länger als 24 Stunden nicht erfolgreich lief.
           Erinnerung täglich, solange es offen ist; Entwarnung automatisch.
         </p>
       </div>`,

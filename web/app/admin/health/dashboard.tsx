@@ -362,6 +362,7 @@ export function Dashboard({ token, autoRepair }: { token: string; autoRepair: st
             {state.big4.map((b) => (
               <li key={b.firm} className="rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-600">
                 {b.firm}: <span className="num">{b.articles}</span> Artikel, zuletzt gefunden {ago(b.lastFoundAt, now)}
+                {b.lastSuccessAt !== undefined ? <>, Abruf OK {ago(b.lastSuccessAt, now)}</> : null}
               </li>
             ))}
           </ul>
