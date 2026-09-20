@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T17:59:31Z",
+  "generated_at": "2026-09-20T22:19:33Z",
   "updates": {
     "amla": [
       {
@@ -43,26 +43,6 @@
         "deadline": "06.10.2026"
       },
       {
-        "d": "02.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "Konsultation zu ITS-Entwurf für Meldung von Verdachtsfällen und Transaktionsaufzeichnungen (AMLA)",
-          "en": "Consultation on draft ITS for reporting suspicions and transaction records (AMLA)"
-        },
-        "sl": "consultation-on-the-draft-its-on-the-format-for-reporting-suspicions-and-providi",
-        "s": {
-          "de": "Die AMLA konsultiert einen Entwurf technischer Durchführungsstandards (ITS) zur Festlegung des Formats für die Meldung von Verdachtsfällen und die Bereitstellung von Transaktionsaufzeichnungen an Financial Intelligence Units (FIUs).\n\nDer Entwurf enthält Vorlagen für die Meldung von Verdachtsfällen, die an verschiedene Arten von Verpflichteten angepasst sind, sowie Vorlagen für die Bereitstellung von Transaktionsaufzeichnungen durch Kredit- und Finanzinstitute. Diese Vorlagen sollen von allen FIUs und von allen Verpflichteten implementiert werden, die den internen Meldeprozess automatisieren möchten, anstatt die Meldeplattformen der FIUs zu nutzen.\n\nDie Konsultation läuft bis zum 20. September 2026. Eine öffentliche Anhörung ist für den 9. September 2026 geplant.",
-          "en": "AMLA is consulting on a draft Implementing Technical Standards (ITS) to establish the format for reporting suspicions and providing transaction records to Financial Intelligence Units (FIUs).\n\nThe draft includes templates for reporting suspicions, adapted to different types of obliged entities, and templates for providing transaction records by credit and financial institutions. These templates are to be implemented by all FIUs and by all obliged entities wishing to automate their internal reporting process instead of using the FIUs' reporting platforms.\n\nThe consultation period ends on 20 September 2026. A public hearing is scheduled for 9 September 2026."
-        },
-        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en",
-        "imp": "medium",
-        "deadline": "20.09.2026"
-      },
-      {
         "d": "22.07.2026",
         "t": {
           "de": "Meldung",
@@ -99,6 +79,26 @@
         },
         "url": "https://www.amla.europa.eu/news-media/news-articles/updated-taxonomy-2027-risk-assessment-data-collection_en",
         "imp": "high"
+      },
+      {
+        "d": "02.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Konsultation zu ITS-Entwurf für Meldung von Verdachtsfällen und Transaktionsaufzeichnungen (AMLA)",
+          "en": "Consultation on draft ITS for reporting suspicions and transaction records (AMLA)"
+        },
+        "sl": "consultation-on-the-draft-its-on-the-format-for-reporting-suspicions-and-providi",
+        "s": {
+          "de": "Die AMLA konsultiert einen Entwurf technischer Durchführungsstandards (ITS) zur Festlegung des Formats für die Meldung von Verdachtsfällen und die Bereitstellung von Transaktionsaufzeichnungen an Financial Intelligence Units (FIUs).\n\nDer Entwurf enthält Vorlagen für die Meldung von Verdachtsfällen, die an verschiedene Arten von Verpflichteten angepasst sind, sowie Vorlagen für die Bereitstellung von Transaktionsaufzeichnungen durch Kredit- und Finanzinstitute. Diese Vorlagen sollen von allen FIUs und von allen Verpflichteten implementiert werden, die den internen Meldeprozess automatisieren möchten, anstatt die Meldeplattformen der FIUs zu nutzen.\n\nDie Konsultation läuft bis zum 20. September 2026. Eine öffentliche Anhörung ist für den 9. September 2026 geplant.",
+          "en": "AMLA is consulting on a draft Implementing Technical Standards (ITS) to establish the format for reporting suspicions and providing transaction records to Financial Intelligence Units (FIUs).\n\nThe draft includes templates for reporting suspicions, adapted to different types of obliged entities, and templates for providing transaction records by credit and financial institutions. These templates are to be implemented by all FIUs and by all obliged entities wishing to automate their internal reporting process instead of using the FIUs' reporting platforms.\n\nThe consultation period ends on 20 September 2026. A public hearing is scheduled for 9 September 2026."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en",
+        "imp": "medium",
+        "deadline": "20.09.2026"
       },
       {
         "d": "01.07.2026",
