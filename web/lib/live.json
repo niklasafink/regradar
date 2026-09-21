@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T22:19:33Z",
+  "generated_at": "2026-09-21T21:24:15Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,104 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "dsgvo": [
+      {
+        "d": "21.09.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "EDPB harmonisiert Bußgeldmethodik und verabschiedet DSA-GDPR-Leitlinien",
+          "en": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines"
+        },
+        "sl": "edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat Leitlinien zur Harmonisierung der Methodik für die Verhängung von Geldbußen im Rahmen der Datenschutz-Grundverordnung (DSGVO) verabschiedet. Diese Leitlinien sollen die einheitliche Anwendung der DSGVO in Europa gewährleisten und legen eine fünfstufige Methodik fest, die Datenschutzbehörden (DPAs) bei der Entscheidung über die Verhängung einer Geldbuße anwenden sollen.\n\nDie Methodik umfasst die Prüfung der Bußgeldfähigkeit des Verstoßes, die Bestimmung der haftbaren Partei, die Beurteilung von Vorsatz oder Fahrlässigkeit sowie die Bewertung mildernder und erschwerender Umstände. Zudem wird geprüft, ob die Verhängung einer Geldbuße wirksam, verhältnismäßig und abschreckend ist. Die Leitlinien bieten auch einen Überblick über weitere Korrekturmaßnahmen wie Verwarnungen, Rügen und Anordnungen und illustrieren deren Anwendung anhand von 14 praktischen Beispielen.\n\nDie Leitlinien zur Bußgeldmethodik werden bis zum 13. November 2026 öffentlich konsultiert. Zusätzlich hat der EDPB die finale Version seiner Leitlinien zum Zusammenspiel zwischen dem Gesetz über digitale Dienste (DSA) und der DSGVO verabschiedet, die nach sprachlicher Überprüfung veröffentlicht werden.",
+          "en": "The European Data Protection Board (EDPB) has adopted guidelines to harmonize the methodology for imposing administrative fines under the General Data Protection Regulation (GDPR). These guidelines aim to ensure consistent application of the GDPR across Europe and establish a five-step methodology for Data Protection Authorities (DPAs) to follow when deciding whether to impose a fine.\n\nThe methodology includes checking if the infringement can lead to a fine, determining the liable party, assessing intent or negligence, and evaluating aggravating and mitigating factors. It also considers whether imposing a fine would be effective, proportionate, and dissuasive. The guidelines also provide an overview of other corrective powers, such as warnings, reprimands, and orders, illustrating their application with 14 practical examples.\n\nThe guidelines on fining methodology are open for public consultation until November 13, 2026. Additionally, the EDPB adopted the final version of its guidelines on the interplay between the Digital Services Act (DSA) and the GDPR, which will be published after linguistic checks."
+        },
+        "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+        "imp": "high"
+      },
+      {
+        "d": "24.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "Unterstützung der DSGVO-Kohärenz: EDPB startet spezielles Formular",
+          "en": "Supporting GDPR consistency: EDPB launches dedicated form"
+        },
+        "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen mögliche Inkonsistenzen bei der Auslegung der Datenschutz-Grundverordnung (DSGVO) in Europa melden können. Dies dient der Stärkung des Dialogs mit Interessengruppen und der Sicherstellung einer konsistenten Durchsetzung der DSGVO.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Der EDPB wird nicht auf einzelne Einreichungen antworten, sondern die gesammelten Informationen regelmäßig auf hoher Ebene diskutieren, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nDie Initiative basiert auf den Verpflichtungen der EDPB Helsinki-Erklärung zur Verbesserung von Klarheit, Unterstützung und Engagement.",
+          "en": "The European Data Protection Board (EDPB) has launched a dedicated contact form for stakeholders to report possible inconsistencies in the interpretation of the General Data Protection Regulation (GDPR) across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of alleged divergences between national positions, as well as between national positions and those of the EDPB. The EDPB will not respond to individual submissions, but the collected information will be regularly discussed at a high level by Board members to consider steps to improve consistency.\n\nThis initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support, and engagement."
+        },
+        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
+        "imp": "low"
+      },
+      {
+        "d": "09.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "BfDI kritisiert „Digitalen Omnibus“ der EU-Kommission",
+          "en": "BfDI Criticizes EU Commission's “Digital Omnibus”"
+        },
+        "sl": "digitaler-omnibus-greift-bei-zentralen-datenschutzfragen-zu-kurz",
+        "s": {
+          "de": "Der Bundesbeauftragte für den Datenschutz (BfDI) kritisiert, dass der von der EU-Kommission vorgeschlagene „Digitale Omnibus“ zwar Bürokratie abbauen und die Wettbewerbsfähigkeit steigern soll, aber zentrale Datenschutzfragen unzureichend adressiert.\n\nObwohl der BfDI das Ziel der Vereinfachung und des Abbaus bürokratischer Hürden unterstützt, mahnt er an, dass der substantielle Schutzstandard der DSGVO erhalten bleiben muss. Insbesondere fehle es an Regelungen zu strukturellen Machtungleichgewichten, zum Schutz von Kindern, zu Data Brokern und zur datenschutzrechtlichen Verantwortung von Herstellern und Anbietern digitaler Anwendungen. Auch für Künstliche Intelligenz (KI) seien spezifische, grundrechtssensible Regeln zur Verarbeitung personenbezogener Daten erforderlich.\n\nDie Kritik wurde im Rahmen einer hochrangigen Diskussionsrunde in Brüssel geäußert, die der BfDI gemeinsam mit dem Europäischen Datenschutzbeauftragten (EDPS) und dem Bayerischen Landesbeauftragten für den Datenschutz (BayLfD) veranstaltete.",
+          "en": "The Federal Commissioner for Data Protection (BfDI) criticizes that the “Digital Omnibus” proposed by the EU Commission, while aiming to reduce bureaucracy and enhance competitiveness, inadequately addresses central data protection issues.\n\nAlthough the BfDI supports the goal of simplification and reducing bureaucratic hurdles, it insists that the substantial protection standard of the GDPR must be maintained. Specifically, there is a lack of regulations concerning structural power imbalances, child protection, data brokers, and the data protection responsibility of manufacturers and providers of digital applications. Specific, fundamental rights-sensitive rules for processing personal data are also required for Artificial Intelligence (AI).\n\nThe criticism was voiced during a high-level discussion round in Brussels, organized by the BfDI together with the European Data Protection Supervisor (EDPS) and the Bavarian State Commissioner for Data Protection (BayLfD)."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/09_High_Level_Debatte-KM.html",
+        "imp": "low"
+      },
+      {
+        "d": "15.04.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "EDSA startet öffentliche Konsultation zu neuer Vorlage für Datenschutz-Folgenabschätzungen",
+          "en": "EDPB launches public consultation on new Data Protection Impact Assessment template"
+        },
+        "sl": "edsa-startet-oeffentliche-konsultation-zu-neuer-vorlage-fuer-datenschutz-folgena",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDSA) hat eine Vorlage und ein Anleitungsdokument für Datenschutz-Folgenabschätzungen (DSFA) entwickelt. Diese Werkzeuge sollen Organisationen dabei unterstützen, die Risiken der Datenverarbeitung zu identifizieren, zu bewerten und geeignete Maßnahmen zur Risikobegrenzung festzulegen.\n\nDie Vorlage ist eine Reaktion auf das Helsinki-Statement, das die Entwicklung praktischer und verständlicher Werkzeuge zur Umsetzung des risikobasierten Ansatzes der Datenschutz-Grundverordnung (DSGVO) vorsieht, insbesondere für kleine und mittlere Organisationen. Eine DSFA ist bei voraussichtlich hohem Risiko der Datenverarbeitung erforderlich und soll die Verarbeitung beschreiben, ihre Notwendigkeit bewerten und Risikominimierungsmaßnahmen identifizieren. Die Verwendung der EDSA-Vorlage bietet den Vorteil vordefinierter Felder, die eine vollständige und strukturierte Erfassung aller notwendigen Informationen ermöglichen.\n\nInteressierte können den Entwurf im Rahmen einer öffentlichen Konsultation bis zum 9. Juni 2026 kommentieren. Nach der Überarbeitung beabsichtigen die Aufsichtsbehörden, die Vorlage als Standard zu übernehmen oder als gemeinsame Grundlage für länderspezifische Vorlagen zu nutzen. Öffentliche Stellen des Bundes und Verantwortliche im Zuständigkeitsbereich der BfDI können sich direkt an die BfDI wenden.",
+          "en": "The European Data Protection Board (EDPB) has developed a template and guidance document for Data Protection Impact Assessments (DPIAs). These tools are designed to help organizations identify, assess, and define appropriate measures to mitigate risks associated with data processing.\n\nThis template is a response to the Helsinki Statement, which called for the development of practical and understandable tools to implement the risk-based approach of the General Data Protection Regulation (GDPR), especially for small and medium-sized organizations. A DPIA is required when data processing is likely to result in a high risk, aiming to describe the processing, assess its necessity, and identify risk minimization measures. Using the EDPB template offers the advantage of predefined fields, ensuring comprehensive and structured data collection.\n\nStakeholders can submit comments on the draft during a public consultation until June 9, 2026. Following revisions, supervisory authorities intend to adopt the template as a standard or use it as a common basis for country-specific templates. Federal public bodies and data controllers within the BfDI's jurisdiction can contact the BfDI directly with questions or feedback."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05_EDSA-Konsultation_Vorlage_DSFA.html",
+        "imp": "medium"
+      },
+      {
+        "d": "19.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil: Auskunftsantrag nach DSGVO kann bei missbräuchlicher Absicht abgelehnt werden (C-526/24)",
+          "en": "ECJ Judgment: GDPR Access Request Can Be Refused If Abusive (C-526/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-526-24-brillen-rottler",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass ein Antrag auf Auskunft über personenbezogene Daten als missbräuchlich abgelehnt werden kann, wenn er ausschließlich dazu dient, anschließend Schadensersatz wegen eines angeblichen DSGVO-Verstoßes zu fordern. Dies ist der Fall, wenn der Verantwortliche nachweisen kann, dass der Antrag nicht gestellt wurde, um sich der Datenverarbeitung bewusst zu werden und deren Rechtmäßigkeit zu überprüfen, sondern um künstlich die Voraussetzungen für Schadensersatz zu schaffen.\n\nFür Unternehmen bedeutet dies, dass sie Auskunftsersuchen unter bestimmten Umständen ablehnen können, wenn eine missbräuchliche Absicht des Antragstellers nachweisbar ist. Indizien hierfür können sein, dass die betroffene Person systematisch mehrere Auskunftsanträge mit anschließenden Schadensersatzforderungen an verschiedene Verantwortliche richtet. Der EuGH betont zudem, dass ein Schadensersatzanspruch nur besteht, wenn tatsächlich ein Schaden entstanden ist und das eigene Verhalten der betroffenen Person nicht die entscheidende Ursache für den Schaden ist.\n\nDas vorlegende Amtsgericht Arnsberg muss nun unter Berücksichtigung dieser Auslegung des EuGH über den konkreten Fall entscheiden. Die Entscheidung des EuGH ist für andere nationale Gerichte in vergleichbaren Fällen bindend.",
+          "en": "The European Court of Justice (ECJ) has ruled that a request for access to personal data can be rejected as abusive if it is made solely for the purpose of subsequently claiming compensation for an alleged GDPR infringement. This is the case if the controller can prove that the request was not made to become aware of the data processing and to verify its lawfulness, but to artificially create the conditions for obtaining compensation.\n\nFor companies, this means that they can reject access requests under certain circumstances if an abusive intent on the part of the data subject can be proven. Indications of this may include the data subject systematically submitting multiple access requests followed by claims for damages to various controllers. The ECJ also emphasizes that a claim for damages only exists if actual damage has occurred and the data subject's own conduct is not the decisive cause of the damage.\n\nThe referring District Court of Arnsberg must now decide on the specific case, taking into account this interpretation by the ECJ. The ECJ's decision is binding on other national courts in comparable cases."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
+        "imp": "medium",
+        "refnum": "C-526/24"
       }
     ],
     "brrd": [
@@ -3361,85 +3459,6 @@
             "d": "07.07.2026"
           }
         ]
-      }
-    ],
-    "dsgvo": [
-      {
-        "d": "24.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "edpb.europa.eu",
-        "ti": {
-          "de": "Unterstützung der DSGVO-Kohärenz: EDPB startet spezielles Formular",
-          "en": "Supporting GDPR consistency: EDPB launches dedicated form"
-        },
-        "sl": "supporting-gdpr-consistency-edpb-launches-dedicated-form",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat ein Kontaktformular eingeführt, über das Interessengruppen mögliche Inkonsistenzen bei der Auslegung der Datenschutz-Grundverordnung (DSGVO) in Europa melden können. Dies dient der Stärkung des Dialogs mit Interessengruppen und der Sicherstellung einer konsistenten Durchsetzung der DSGVO.\n\nDas Tool ermöglicht es, Abweichungen zwischen nationalen Positionen sowie zwischen nationalen Positionen und denen des EDPB zu melden. Der EDPB wird nicht auf einzelne Einreichungen antworten, sondern die gesammelten Informationen regelmäßig auf hoher Ebene diskutieren, um Schritte zur Verbesserung der Konsistenz zu prüfen.\n\nDie Initiative basiert auf den Verpflichtungen der EDPB Helsinki-Erklärung zur Verbesserung von Klarheit, Unterstützung und Engagement.",
-          "en": "The European Data Protection Board (EDPB) has launched a dedicated contact form for stakeholders to report possible inconsistencies in the interpretation of the General Data Protection Regulation (GDPR) across Europe. This aims to strengthen dialogue with stakeholders and ensure consistent GDPR enforcement.\n\nThe tool allows reporting of alleged divergences between national positions, as well as between national positions and those of the EDPB. The EDPB will not respond to individual submissions, but the collected information will be regularly discussed at a high level by Board members to consider steps to improve consistency.\n\nThis initiative reflects the commitments set out in the EDPB Helsinki Statement on enhanced clarity, support, and engagement."
-        },
-        "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
-        "imp": "low"
-      },
-      {
-        "d": "09.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bfdi.bund.de",
-        "ti": {
-          "de": "BfDI kritisiert „Digitalen Omnibus“ der EU-Kommission",
-          "en": "BfDI Criticizes EU Commission's “Digital Omnibus”"
-        },
-        "sl": "digitaler-omnibus-greift-bei-zentralen-datenschutzfragen-zu-kurz",
-        "s": {
-          "de": "Der Bundesbeauftragte für den Datenschutz (BfDI) kritisiert, dass der von der EU-Kommission vorgeschlagene „Digitale Omnibus“ zwar Bürokratie abbauen und die Wettbewerbsfähigkeit steigern soll, aber zentrale Datenschutzfragen unzureichend adressiert.\n\nObwohl der BfDI das Ziel der Vereinfachung und des Abbaus bürokratischer Hürden unterstützt, mahnt er an, dass der substantielle Schutzstandard der DSGVO erhalten bleiben muss. Insbesondere fehle es an Regelungen zu strukturellen Machtungleichgewichten, zum Schutz von Kindern, zu Data Brokern und zur datenschutzrechtlichen Verantwortung von Herstellern und Anbietern digitaler Anwendungen. Auch für Künstliche Intelligenz (KI) seien spezifische, grundrechtssensible Regeln zur Verarbeitung personenbezogener Daten erforderlich.\n\nDie Kritik wurde im Rahmen einer hochrangigen Diskussionsrunde in Brüssel geäußert, die der BfDI gemeinsam mit dem Europäischen Datenschutzbeauftragten (EDPS) und dem Bayerischen Landesbeauftragten für den Datenschutz (BayLfD) veranstaltete.",
-          "en": "The Federal Commissioner for Data Protection (BfDI) criticizes that the “Digital Omnibus” proposed by the EU Commission, while aiming to reduce bureaucracy and enhance competitiveness, inadequately addresses central data protection issues.\n\nAlthough the BfDI supports the goal of simplification and reducing bureaucratic hurdles, it insists that the substantial protection standard of the GDPR must be maintained. Specifically, there is a lack of regulations concerning structural power imbalances, child protection, data brokers, and the data protection responsibility of manufacturers and providers of digital applications. Specific, fundamental rights-sensitive rules for processing personal data are also required for Artificial Intelligence (AI).\n\nThe criticism was voiced during a high-level discussion round in Brussels, organized by the BfDI together with the European Data Protection Supervisor (EDPS) and the Bavarian State Commissioner for Data Protection (BayLfD)."
-        },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/09_High_Level_Debatte-KM.html",
-        "imp": "low"
-      },
-      {
-        "d": "15.04.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bfdi.bund.de",
-        "ti": {
-          "de": "EDSA startet öffentliche Konsultation zu neuer Vorlage für Datenschutz-Folgenabschätzungen",
-          "en": "EDPB launches public consultation on new Data Protection Impact Assessment template"
-        },
-        "sl": "edsa-startet-oeffentliche-konsultation-zu-neuer-vorlage-fuer-datenschutz-folgena",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDSA) hat eine Vorlage und ein Anleitungsdokument für Datenschutz-Folgenabschätzungen (DSFA) entwickelt. Diese Werkzeuge sollen Organisationen dabei unterstützen, die Risiken der Datenverarbeitung zu identifizieren, zu bewerten und geeignete Maßnahmen zur Risikobegrenzung festzulegen.\n\nDie Vorlage ist eine Reaktion auf das Helsinki-Statement, das die Entwicklung praktischer und verständlicher Werkzeuge zur Umsetzung des risikobasierten Ansatzes der Datenschutz-Grundverordnung (DSGVO) vorsieht, insbesondere für kleine und mittlere Organisationen. Eine DSFA ist bei voraussichtlich hohem Risiko der Datenverarbeitung erforderlich und soll die Verarbeitung beschreiben, ihre Notwendigkeit bewerten und Risikominimierungsmaßnahmen identifizieren. Die Verwendung der EDSA-Vorlage bietet den Vorteil vordefinierter Felder, die eine vollständige und strukturierte Erfassung aller notwendigen Informationen ermöglichen.\n\nInteressierte können den Entwurf im Rahmen einer öffentlichen Konsultation bis zum 9. Juni 2026 kommentieren. Nach der Überarbeitung beabsichtigen die Aufsichtsbehörden, die Vorlage als Standard zu übernehmen oder als gemeinsame Grundlage für länderspezifische Vorlagen zu nutzen. Öffentliche Stellen des Bundes und Verantwortliche im Zuständigkeitsbereich der BfDI können sich direkt an die BfDI wenden.",
-          "en": "The European Data Protection Board (EDPB) has developed a template and guidance document for Data Protection Impact Assessments (DPIAs). These tools are designed to help organizations identify, assess, and define appropriate measures to mitigate risks associated with data processing.\n\nThis template is a response to the Helsinki Statement, which called for the development of practical and understandable tools to implement the risk-based approach of the General Data Protection Regulation (GDPR), especially for small and medium-sized organizations. A DPIA is required when data processing is likely to result in a high risk, aiming to describe the processing, assess its necessity, and identify risk minimization measures. Using the EDPB template offers the advantage of predefined fields, ensuring comprehensive and structured data collection.\n\nStakeholders can submit comments on the draft during a public consultation until June 9, 2026. Following revisions, supervisory authorities intend to adopt the template as a standard or use it as a common basis for country-specific templates. Federal public bodies and data controllers within the BfDI's jurisdiction can contact the BfDI directly with questions or feedback."
-        },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05_EDSA-Konsultation_Vorlage_DSFA.html",
-        "imp": "medium"
-      },
-      {
-        "d": "19.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil: Auskunftsantrag nach DSGVO kann bei missbräuchlicher Absicht abgelehnt werden (C-526/24)",
-          "en": "ECJ Judgment: GDPR Access Request Can Be Refused If Abusive (C-526/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-526-24-brillen-rottler",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass ein Antrag auf Auskunft über personenbezogene Daten als missbräuchlich abgelehnt werden kann, wenn er ausschließlich dazu dient, anschließend Schadensersatz wegen eines angeblichen DSGVO-Verstoßes zu fordern. Dies ist der Fall, wenn der Verantwortliche nachweisen kann, dass der Antrag nicht gestellt wurde, um sich der Datenverarbeitung bewusst zu werden und deren Rechtmäßigkeit zu überprüfen, sondern um künstlich die Voraussetzungen für Schadensersatz zu schaffen.\n\nFür Unternehmen bedeutet dies, dass sie Auskunftsersuchen unter bestimmten Umständen ablehnen können, wenn eine missbräuchliche Absicht des Antragstellers nachweisbar ist. Indizien hierfür können sein, dass die betroffene Person systematisch mehrere Auskunftsanträge mit anschließenden Schadensersatzforderungen an verschiedene Verantwortliche richtet. Der EuGH betont zudem, dass ein Schadensersatzanspruch nur besteht, wenn tatsächlich ein Schaden entstanden ist und das eigene Verhalten der betroffenen Person nicht die entscheidende Ursache für den Schaden ist.\n\nDas vorlegende Amtsgericht Arnsberg muss nun unter Berücksichtigung dieser Auslegung des EuGH über den konkreten Fall entscheiden. Die Entscheidung des EuGH ist für andere nationale Gerichte in vergleichbaren Fällen bindend.",
-          "en": "The European Court of Justice (ECJ) has ruled that a request for access to personal data can be rejected as abusive if it is made solely for the purpose of subsequently claiming compensation for an alleged GDPR infringement. This is the case if the controller can prove that the request was not made to become aware of the data processing and to verify its lawfulness, but to artificially create the conditions for obtaining compensation.\n\nFor companies, this means that they can reject access requests under certain circumstances if an abusive intent on the part of the data subject can be proven. Indications of this may include the data subject systematically submitting multiple access requests followed by claims for damages to various controllers. The ECJ also emphasizes that a claim for damages only exists if actual damage has occurred and the data subject's own conduct is not the decisive cause of the damage.\n\nThe referring District Court of Arnsberg must now decide on the specific case, taking into account this interpretation by the ECJ. The ECJ's decision is binding on other national courts in comparable cases."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
-        "imp": "medium",
-        "refnum": "C-526/24"
       }
     ],
     "luaifm": [
