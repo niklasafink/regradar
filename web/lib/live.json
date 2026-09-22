@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T05:20:37Z",
+  "generated_at": "2026-09-22T13:19:47Z",
   "updates": {
     "amla": [
       {
@@ -618,7 +618,15 @@
           "en": "The EBA has published its final Guidelines on the management of third-party risk. These Guidelines focus on third-party arrangements supporting critical or important functions (CIFs), the disruption of which would materially impair the performance of a financial entity. The aim is to reduce unnecessary operational and supervisory burdens for less material arrangements while maintaining sound risk management.\n\nThe Guidelines promote a holistic approach to third-party risk management, covering both ICT and non-ICT services. They encompass the full lifecycle of third-party arrangements, including risk assessment and due diligence, contracting, subcontracting, monitoring, documentation, and exit strategies. They reflect feedback from public consultation and international standards such as the BCBS Principles.\n\nA two-year transitional period will support the smooth and proportionate implementation of the Guidelines. They were developed in accordance with Article 74 of Directive 2013/36/EU and take into account other directives such as PSD2, IFD, MiFID II, and MiCAR."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-management-third-party-risk-delivering-more-proportionate-and",
-        "imp": "high"
+        "imp": "high",
+        "adv": [
+          {
+            "f": "Deloitte Legal",
+            "ti": "Neue EBA-Leitlinien zum Drittparteienrisikomanagement",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/neue-eba-leitlinien-drittparteienrisikomanagement.html",
+            "d": "22.09.2026"
+          }
+        ]
       },
       {
         "d": "16.09.2026",
@@ -4232,6 +4240,24 @@
       "src": "ecb.europa.eu",
       "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260922~5f89d300ee.en.html",
       "cat": "rede"
+    },
+    {
+      "d": "22.09.2026",
+      "ti": "Raiffeisenbank Reute-Gaisbeuren eG: Bafin setzt Bußgeld fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_22_raiffeisenbank_reute-gaisbeuren_eg.html?cms_expanded=true",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat gegen die Raiffeisenbank Reute-Gaisbeuren eG ein Bußgeld von 12.500 Euro festgesetzt. Grund dafür sind fehlerhafte und unterlassene Meldungen an den Bafin-Kontenvergleich sowie ein Verstoß gegen Informationspflichten."
+    },
+    {
+      "d": "22.09.2026",
+      "ti": "Vivid Money S.A.: Bafin setzt Bußgeld fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_09_22_vivid_money_s_a.html?cms_expanded=true",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat gegen die Vivid Money S.A. Bußgelder von insgesamt 26.000 Euro festgesetzt. Grund dafür sind unterlassene Meldungen an den Bafin-Kontenvergleich sowie Verstöße gegen Informationspflichten."
     },
     {
       "d": "18.09.2026",
