@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T17:21:10Z",
+  "generated_at": "2026-09-23T20:21:53Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,330 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "dltpilot": [
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
+          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
+        },
+        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
+          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
+        "imp": "medium"
+      }
+    ],
+    "doraincident": [
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESAs warnen vor externen Abhängigkeiten, Cyber-Bedrohungen und Private-Credit-Risiken",
+          "en": "ESAs call for vigilance over external dependencies, cyber threats and private credit risks"
+        },
+        "sl": "esas-call-for-vigilance-over-external-dependencies-cyber-threats-and-private-cre",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA, ESMA) haben in ihrem Risikobericht für Herbst 2026 externe Abhängigkeiten, neue Technologien und Private Credit als zentrale Schwachstellen für das EU-Finanzsystem identifiziert. Insbesondere die Abhängigkeit von Nicht-EU-Anbietern und -Infrastrukturen sowie die zunehmenden Cyberrisiken durch KI-Modelle werden hervorgehoben. Auch der schnell wachsende, aber intransparente Private-Credit-Sektor birgt Risiken.\n\nDiese Risiken betreffen alle Finanzsektoren in der EU. Die Abhängigkeit von IKT-Dienstleistern außerhalb des EWR und die Vernetzung mit Nicht-EU-Ländern erhöhen die Anfälligkeit für geopolitische Ereignisse und Cyberangriffe. Der Private-Credit-Markt, obwohl in der EU noch relativ klein, kann durch Komplexität, mangelnde Transparenz und Verflechtungen mit dem breiteren Finanzsystem Risiken für Banken und Versicherer schaffen.\n\nDie ESAs fordern Aufsichtsbehörden und Marktteilnehmer auf, ihre Krisenvorsorge zu stärken und die Risiken aus externen Abhängigkeiten, Private Credit und neuen Technologien proaktiv zu überwachen und zu steuern. Dies beinhaltet die Überwachung von Engagements gegenüber Nicht-EWR-Einheiten und die Stärkung der Bereitschaft für Risiken durch KI und Quantencomputing.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, ESMA) have identified external dependencies, emerging technologies, and private credit as key vulnerabilities for the EU financial system in their Autumn 2026 risk update. They particularly highlight the reliance on non-EU providers and infrastructures, as well as growing cyber risks linked to AI models. The rapidly growing but opaque private credit sector also poses risks.\n\nThese risks affect all financial sectors in the EU. Dependence on ICT service providers outside the EEA and interconnectedness with non-EU countries increase vulnerability to geopolitical events and cyberattacks. The private credit market, although still relatively small in the EU, can create risks for banks and insurers due to its complexity, lack of transparency, and interlinkages with the broader financial system.\n\nThe ESAs call on supervisors and market participants to strengthen their crisis preparedness and proactively monitor and manage risks stemming from external dependencies, private credit, and emerging technologies. This includes monitoring exposures to non-EEA entities and strengthening preparedness for risks arising from AI and quantum computing."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esas-call-vigilance-over-external-dependencies-cyber-threats-and-private",
+        "imp": "medium"
+      },
+      {
+        "d": "03.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "ESAs veröffentlichen ersten DORA-Bericht zu schwerwiegenden IKT-Vorfällen",
+          "en": "ESAs publish first DORA report on major ICT-related incidents"
+        },
+        "sl": "esas-publish-the-first-report-on-dora-major-ict-related-incidents",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben ihren ersten Jahresbericht über schwerwiegende IKT-Vorfälle im EU-Finanzsektor veröffentlicht. Dieser Bericht basiert auf dem durch DORA etablierten Meldemechanismus und zeigt, dass IKT-Risiken zunehmend grenzüberschreitend und vernetzt sind. Die Behörden betonen die Notwendigkeit für Finanzunternehmen, ihre Cybersicherheitsmaßnahmen angesichts der Entwicklung KI-gestützter Tools zu verstärken.\n\nDORA harmonisiert die Meldepflichten für IKT-Vorfälle und stellt sicher, dass schwerwiegende Vorfälle den zuständigen Behörden gemeldet werden, um eine koordinierte Reaktion zu ermöglichen. Der Bericht zeigt, dass etwa ein Drittel der 3.383 gemeldeten Vorfälle grenzüberschreitende Auswirkungen hatten, während die direkten Auswirkungen auf Kunden und Transaktionen meist begrenzt waren. Systemausfälle und externe Ereignisse waren die Hauptursachen, was die Bedeutung eines robusten Drittparteien-Risikomanagements und einer effektiven Aufsicht über ausgelagerte Dienste unterstreicht. Obwohl nur 10 % der Vorfälle auf Cybersicherheit zurückzuführen waren, ist es entscheidend, dass Finanzunternehmen höchste Cybersicherheitsstandards einhalten.\n\nDieser Bericht, der auf Artikel 22(2) der DORA-Verordnung basiert, wird jährlich veröffentlicht und liefert Daten zu Anzahl, Art, Auswirkungen, Abhilfemaßnahmen und Kosten von IKT-Vorfällen. Ein schwerwiegender IKT-Vorfall ist dabei definiert als ein Ereignis, das die Sicherheit von Netzwerk- und Informationssystemen beeinträchtigt und erhebliche negative Auswirkungen auf kritische Funktionen eines Finanzunternehmens hat.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published their first annual report on major ICT-related incidents in the EU financial sector. This report, based on the reporting mechanism established by DORA, indicates that ICT risks are increasingly borderless and interconnected. The authorities emphasize the need for financial entities to strengthen their cybersecurity measures in light of the development of AI-driven tools.\n\nDORA harmonizes reporting requirements for ICT incidents, ensuring that major incidents are notified to all competent authorities to enable a coordinated response. The report reveals that approximately one-third of the 3,383 reported incidents had cross-border impacts, while direct impacts on clients and transactions were generally limited. System failures and external events were the primary drivers, highlighting the importance of robust third-party risk management and effective oversight of outsourced services. Although only 10% of incidents were cybersecurity-related, it is crucial for financial entities to maintain the highest cybersecurity standards.\n\nThis report, based on Article 22(2) of the DORA regulation, will be published annually and provides data on the number, nature, impact, remedial actions, and costs of ICT incidents. A major ICT-related incident is defined as an event compromising the security of network and information systems with a high adverse impact on critical functions of a financial entity."
+        },
+        "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs veröffentlichen ersten Bericht über schwerwiegende IKT-Vorfälle im Rahmen von DORA",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-veroeffentlichen-ersten-bericht-ueber-schwerwiegende-ikt-vorfaelle-im-rahmen-von-dora/",
+            "d": "03.06.2026"
+          }
+        ]
+      }
+    ],
+    "krzwmg": [
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Kreditdienstleistungsinstitute: Umsetzung der Kreditzweitmarktrichtlinie in Deutschland",
+          "en": "Credit Servicing Institutions: Implementation of the Credit Servicing Directive in Germany"
+        },
+        "sl": "kredit-dienstleistungs-institute",
+        "s": {
+          "de": "Das Kreditzweitmarktgesetz (KrZwMG) setzt die EU-Kreditzweitmarktrichtlinie in Deutschland um und macht die Erbringung von Dienstleistungen im Rahmen des Verkaufs von Kreditforderungen erlaubnispflichtig. Ziel ist die Schaffung eines effizienten Sekundärmarktes für notleidende Kredite, um Bankbilanzen zu entlasten und die Erholung von Finanz- und Realwirtschaft zu fördern.\n\nDie Aufsicht über diese Kreditdienstleistungsinstitute obliegt der BaFin in Zusammenarbeit mit der Deutschen Bundesbank. Die Überwachung ist qualitativ ausgerichtet und konzentriert sich auf die Organisation des Geschäftsbetriebs, einschließlich Unternehmensführung, interner Kontrollen, Risikomanagement, Rechnungslegung, Schutz der Kreditnehmerrechte, Beschwerdebearbeitung und Maßnahmen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung. Lizenzierte Institute können zudem grenzüberschreitend tätig werden.\n\nUnternehmen, die bereits vor Inkrafttreten des KrZwMG tätig waren, müssen ihre Absicht zur Erbringung von Kreditdienstleistungen innerhalb von sieben Wochen nach Inkrafttreten anzeigen und die erforderlichen Unterlagen einreichen. Die ersten halbjährlichen Meldungen zu notleidenden Kreditverträgen sind für den Stichtag 31. Dezember 2024 vorgesehen und beziehen sich auf das zweite Halbjahr 2024. Fehlende Meldungen für die Stichtage 31. Dezember 2023 und 30. Juni 2024 werden nicht beanstandet.",
+          "en": "The German Credit Secondary Market Act (KrZwMG) implements the EU Credit Servicing Directive in Germany, making the provision of services related to the sale of credit claims subject to authorization. The aim is to create an efficient secondary market for non-performing loans (NPLs) to relieve bank balance sheets and foster the recovery of the financial and real economy.\n\nSupervision of these credit servicing institutions falls under the BaFin in cooperation with the Deutsche Bundesbank. This supervision is qualitatively oriented, focusing on the organization of business operations, including corporate governance, internal controls, risk management, accounting, protection of borrower rights, complaint handling, and measures to combat money laundering and terrorist financing. Licensed institutions can also operate cross-border.\n\nCompanies already active before the KrZwMG came into force must notify their intention to provide credit servicing within seven weeks of its effective date and submit the required documentation. The first semi-annual reports on non-performing loan agreements are due for the reporting date of December 31, 2024, covering the second half of 2024. Missing reports for the reporting dates of December 31, 2023, and June 30, 2024, will not be objected to."
+        },
+        "url": "https://www.bundesbank.de/de/aufgaben/finanzaufsicht/einzelaspekte/kreditdienstleistungsinstitute-799404",
+        "imp": "high"
+      }
+    ],
+    "dora": [
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Aufsichtsrechtliche Anforderungen an die IT und digitale operationelle Resilienz (BAIT / DORA)",
+          "en": "Supervisory Requirements for IT and Digital Operational Resilience (BAIT / DORA)"
+        },
+        "sl": "bait-dora-aufsichtliche-anforderungen-an-die-it-und-die-digitale-operationale-re",
+        "s": {
+          "de": "Die Europäische Union hat mit der Verordnung 2022/2554 (DORA) umfassende Anforderungen an die digitale operationelle Resilienz für den gesamten Finanzsektor festgelegt. DORA regelt insbesondere das IKT-Risikomanagement, die Meldung schwerwiegender IKT-Vorfälle, das Testen digitaler operationaler Resilienz sowie das IKT-Drittparteienrisikomanagement von Finanzunternehmen. Zudem etabliert DORA einen EU-weiten Überwachungsrahmen für kritische IKT-Drittdienstleister.\n\nDie DORA-Verordnung findet seit dem 17. Januar 2025 unmittelbare Anwendung in Deutschland. Die BaFin hat daher die zahlungsdiensteaufsichtlichen, versicherungsaufsichtlichen und kapitalverwaltungsaufsichtlichen IT-Anforderungen (ZAIT, VAIT und KAIT) zum 16. Januar 2025 aufgehoben, um Doppelregulierung zu vermeiden. Die bankaufsichtlichen Anforderungen an die IT (BAIT) bleiben für Institute, die kein IKT-Risikomanagement nach DORA betreiben müssen, weiterhin gültig, werden aber zum 31. Dezember 2026 vollständig aufgehoben. Das Finanzmarktdigitalisierungsgesetz (FinmadiG) unterstellt weitere Nicht-CRR-Institute der DORA-Regulierung.\n\nDie BAIT (BaFin-Rundschreiben 10/2017) geben einen Rahmen für die technisch-organisatorische Ausstattung von Instituten vor, insbesondere für das Management der IT-Ressourcen, IT-Risikomanagement und IT-Sicherheitsmanagement. Institute, die ein IKT-Risikomanagement nach Art. 5-15 bzw. Art. 16 DORA betreiben müssen, sind vom Anwenderkreis der BAIT ausgenommen. Förderinstitute unterliegen DORA seit dem 17. Januar 2025, Finanzdienstleistungsinstitute ab dem 1. Januar 2027.",
+          "en": "The European Union has established comprehensive requirements for digital operational resilience across the financial sector with Regulation 2022/2554 (DORA). DORA specifically addresses ICT risk management, reporting of major ICT incidents, testing of digital operational resilience, and ICT third-party risk management for financial entities. It also creates an EU-wide oversight framework for critical ICT third-party service providers.\n\nDORA has been directly applicable in Germany since January 17, 2025. Consequently, BaFin repealed the IT requirements for payment services, insurance, and capital management (ZAIT, VAIT, and KAIT) as of January 16, 2025, to prevent duplicate regulation. The banking supervisory requirements for IT (BAIT) remain valid for institutions not required to implement DORA's ICT risk management, but will be fully repealed by December 31, 2026. The Financial Market Digitalization Act (FinmadiG) subjects additional non-CRR institutions to DORA regulation.\n\nBAIT (BaFin Circular 10/2017) provides a framework for the technical and organizational setup of institutions, particularly for IT resource management, IT risk management, and IT security management. Institutions that must operate an ICT risk management system according to Articles 5-15 or 16 of DORA are exempt from BAIT. Promotional banks have been subject to DORA since January 17, 2025, and financial service institutions will follow from January 1, 2027."
+        },
+        "url": "https://www.bundesbank.de/de/aufgaben/finanzaufsicht/einzelaspekte/risikomanagement/bait-dora-598580",
+        "imp": "medium"
+      },
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finale Leitlinien zum Management von Drittparteienrisiken",
+          "en": "The EBA publishes its final Guidelines on the management of third-party risk"
+        },
+        "sl": "the-eba-publishes-its-final-guidelines-on-the-management-of-third-party-risk-del",
+        "s": {
+          "de": "Die EBA hat finale Leitlinien zum Management von Drittparteienrisiken veröffentlicht. Diese Leitlinien konzentrieren sich auf Vereinbarungen mit Drittparteien, die kritische oder wichtige Funktionen unterstützen, deren Ausfall die Leistung eines Finanzinstituts erheblich beeinträchtigen würde. Ziel ist es, unnötige operative und aufsichtsrechtliche Belastungen für weniger wesentliche Vereinbarungen zu reduzieren und gleichzeitig ein solides Risikomanagement zu gewährleisten.\n\nDie Leitlinien fördern einen ganzheitlichen Ansatz für das Management von Drittparteienrisiken, der sowohl IKT- als auch Nicht-IKT-Dienstleistungen umfasst. Sie decken den gesamten Lebenszyklus von Drittparteienvereinbarungen ab, einschließlich Risikobewertung und Due Diligence, Vertragsgestaltung, Unterauftragsvergabe, Überwachung, Dokumentation und Exit-Strategien. Sie berücksichtigen dabei Rückmeldungen aus der öffentlichen Konsultation und internationale Standards wie die BCBS-Prinzipien.\n\nDie Umsetzung der Leitlinien wird durch eine zweijährige Übergangsfrist unterstützt. Die Leitlinien wurden gemäß Artikel 74 der Richtlinie 2013/36/EU entwickelt und berücksichtigen weitere Richtlinien wie PSD2, IFD, MiFID II und MiCAR.",
+          "en": "The EBA has published its final Guidelines on the management of third-party risk. These Guidelines focus on third-party arrangements supporting critical or important functions (CIFs), the disruption of which would materially impair the performance of a financial entity. The aim is to reduce unnecessary operational and supervisory burdens for less material arrangements while maintaining sound risk management.\n\nThe Guidelines promote a holistic approach to third-party risk management, covering both ICT and non-ICT services. They encompass the full lifecycle of third-party arrangements, including risk assessment and due diligence, contracting, subcontracting, monitoring, documentation, and exit strategies. They reflect feedback from public consultation and international standards such as the BCBS Principles.\n\nA two-year transitional period will support the smooth and proportionate implementation of the Guidelines. They were developed in accordance with Article 74 of Directive 2013/36/EU and take into account other directives such as PSD2, IFD, MiFID II, and MiCAR."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-management-third-party-risk-delivering-more-proportionate-and",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "Deloitte Legal",
+            "ti": "Neue EBA-Leitlinien zum Drittparteienrisikomanagement",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/neue-eba-leitlinien-drittparteienrisikomanagement.html",
+            "d": "22.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "16.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "DORA: Operationelle Anweisungen zur Meldung von IKT-Vorfällen",
+          "en": "DORA incident reporting - operational instructions"
+        },
+        "sl": "dora-incident-reporting-operational-instructions",
+        "s": {
+          "de": "Dieses Dokument der ESMA enthält operationelle Anweisungen für die zuständigen Behörden zur Meldung schwerwiegender IKT-bezogener Vorfälle gemäß der DORA-Verordnung. Ziel ist es, die Datenqualität zu verbessern und die Konsistenz der Meldungen über verschiedene Jurisdiktionen hinweg zu fördern. Die Anweisungen basieren auf den Implementing Technical Standards (ITS) 2025/302 und den Regulatory Technical Standards (RTS) 2025/301 und 2024/1772, die die Meldeformulare, Verfahren, Inhalte, Fristen und Klassifizierungskriterien für IKT-Vorfälle festlegen.\n\nDie Anweisungen behandeln spezifische Aspekte wie die Verwendung der englischen Sprache für Meldungen an die ESAs, die einheitliche Angabe monetärer Felder in Tausendereinheiten und die korrekte Nutzung von Freitextfeldern. Weiterhin wird die Notwendigkeit der Einreichung von Abschlussberichten, die Vorgehensweise bei Korrekturmeldungen und die konsistente Verwendung eindeutiger Identifikatoren für Vorfälle betont. Auch die Kriterien für die Klassifizierung von Vorfällen als schwerwiegend und die geografische Verbreitung werden präzisiert.\n\nFinanzunternehmen, die unter DORA fallen, müssen nach der Erkennung eines als schwerwiegend eingestuften IKT-Vorfalls Informationen über den Vorfall an ihre zuständige Behörde melden. Diese Behörden wiederum benachrichtigen die ESAs unter Verwendung vordefinierter englischer Vorlagen. Die Anweisungen sollen regelmäßig aktualisiert werden, um Erfahrungen aus der Praxis zu berücksichtigen.",
+          "en": "This ESMA document provides operational instructions for competent authorities regarding the reporting of major ICT-related incidents under the DORA Regulation. The aim is to enhance data quality and promote greater consistency in reporting across jurisdictions. The instructions are based on Implementing Technical Standards (ITS) 2025/302 and Regulatory Technical Standards (RTS) 2025/301 and 2024/1772, which define reporting forms, procedures, content, timelines, and classification criteria for ICT incidents.\n\nThe instructions cover specific aspects such as the use of the English language for reports to the ESAs, the consistent reporting of monetary fields in thousands of units, and the correct use of free-text fields. Furthermore, the document emphasizes the necessity of submitting final reports, the procedure for correction reports, and the consistent use of unique identifiers for incidents. Criteria for classifying incidents as major and their geographical spread are also clarified.\n\nFinancial entities falling under DORA must report information on ICT-related incidents classified as major to their competent authority. These authorities, in turn, notify the ESAs using predefined English templates. The instructions will be updated regularly to incorporate practical experience."
+        },
+        "url": "https://www.esma.europa.eu/document/dora-incident-reporting-operational-instructions",
+        "imp": "high"
+      },
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu den gemeinsamen DORA-Leitlinien für IKT-Kosten und -Verluste (ESMA75-1012365701-566)",
+          "en": "Compliance Table on Joint DORA Guidelines for ICT Costs and Losses (ESMA75-1012365701-566)"
+        },
+        "sl": "compliance-table-on-the-joint-guidelines-on-costs-and-losses-under-dora",
+        "s": {
+          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der Europäischen Aufsichtsbehörden (ESAs) zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 (JC/GL/2024/34) verursacht werden.\n\nDie Tabelle listet auf, welche nationalen zuständigen Behörden (z.B. FMA Österreich, BaFin Deutschland, AMF Frankreich) diese Leitlinien einhalten oder beabsichtigen, sie einzuhalten. Einige Behörden geben zusätzliche Informationen zu ihrer Umsetzung an, wie die Veröffentlichung auf ihren Websites, die Integration in Aufsichtsverfahren oder die Entwicklung spezifischer nationaler Anweisungen und Formulare zur Berichterstattung.\n\nDie Leitlinien sind ab dem 19. Mai 2025 anwendbar. Mehrere nationale Behörden haben bereits Maßnahmen zur Umsetzung ergriffen oder planen diese, um die Anforderungen der DORA-Verordnung bezüglich der Meldung von Kosten und Verlusten aus IKT-Vorfällen zu erfüllen.",
+          "en": "This document is a compliance table for the Joint Guidelines of the European Supervisory Authorities (ESAs) on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under the DORA Regulation (EU) 2022/2554 (JC/GL/2024/34).\n\nThe table lists which national competent authorities (e.g., FMA Austria, BaFin Germany, AMF France) comply or intend to comply with these guidelines. Some authorities provide additional information on their implementation, such as publication on their websites, integration into supervisory procedures, or the development of specific national instructions and forms for reporting.\n\nThe guidelines are applicable from May 19, 2025. Several national authorities have already taken or plan to take measures for implementation to meet the DORA Regulation's requirements regarding the reporting of costs and losses from ICT incidents."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
+        "imp": "medium",
+        "refnum": "ESMA75-1012365701-566"
+      },
+      {
+        "d": "02.10.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "DORFS-Gesetz: Digitale operationale Resilienz von Finanzdienstleistungen",
+          "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
+        },
+        "sl": "digital-operational-resilience-of-financial-services-dorfs-act",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag für den Digital Operational Resilience of Financial Services (DORFS) Act vorgelegt. Dieser Vorschlag zielt darauf ab, die digitale operationelle Resilienz im Finanzsektor zu stärken.\n\nDer DORFS Act ist für Finanzunternehmen relevant, da er Anforderungen an ihre IT-Sicherheit und Widerstandsfähigkeit gegenüber Cyberangriffen und anderen digitalen Störungen festlegen wird. Dies bedeutet für die betroffenen Institute, dass sie ihre internen Prozesse und Systeme entsprechend anpassen müssen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Verabschiedung hindeutet.",
+          "en": "The European Commission has submitted a legislative proposal for the Digital Operational Resilience of Financial Services (DORFS) Act. This proposal aims to strengthen digital operational resilience in the financial sector.\n\nThe DORFS Act is relevant for financial companies as it will establish requirements for their IT security and resilience against cyberattacks and other digital disruptions. This means that affected institutions will have to adapt their internal processes and systems accordingly.\n\nThe current procedural status is the adoption workflow, which indicates an impending enactment."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
+        "imp": "medium"
+      }
+    ],
+    "sanctions": [
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Finanzsanktionen gegen Personen und Organisationen in Bezug auf Afghanistan",
+          "en": "Financial Sanctions against Persons and Entities in relation to Afghanistan"
+        },
+        "sl": "afghanistan",
+        "s": {
+          "de": "Die Bundesbank informiert über Finanzsanktionen gegen bestimmte Personen, Gruppen, Unternehmen und Einrichtungen im Zusammenhang mit der Lage in Afghanistan. Diese Sanktionen setzen Maßnahmen des Sicherheitsrats der Vereinten Nationen um.\n\nDie Maßnahmen umfassen ein Verbot, diesen gelisteten Entitäten Gelder oder wirtschaftliche Ressourcen direkt oder indirekt zur Verfügung zu stellen. Zudem werden alle Gelder und wirtschaftlichen Ressourcen, die sich im Eigentum oder Besitz dieser Entitäten befinden oder von ihnen kontrolliert werden, eingefroren. Finanzinstitute müssen sicherstellen, dass sie keine Transaktionen mit gelisteten Personen oder Organisationen durchführen und deren Vermögenswerte einfrieren.\n\nUnter engen Voraussetzungen, beispielsweise für Grundbedürfnisse gelisteter Personen, können Ausnahmegenehmigungen erteilt werden. Anträge hierfür sind beim Servicezentrum Finanzsanktionen der Deutschen Bundesbank einzureichen. Verbindlich sind ausschließlich die im Amtsblatt der Europäischen Union oder im Bundesanzeiger veröffentlichten Texte.",
+          "en": "The Bundesbank provides information on financial sanctions against specific individuals, groups, undertakings, and entities in connection with the situation in Afghanistan. These sanctions implement measures adopted by the United Nations Security Council.\n\nThe measures include a prohibition on directly or indirectly making funds or economic resources available to these listed entities. Furthermore, all funds and economic resources owned, possessed, held, or controlled by these entities are frozen. Financial institutions must ensure they do not conduct transactions with listed persons or organizations and freeze their assets.\n\nUnder strict conditions, such as for the basic needs of listed persons, exemptions may be granted. Applications for such exemptions must be submitted to the Financial Sanctions Service Centre of the Deutsche Bundesbank. Only the texts published in the Official Journal of the European Union or the Federal Gazette are legally binding."
+        },
+        "url": "https://www.bundesbank.de/de/service/finanzsanktionen/sanktionsregimes/afghanistan-610324",
+        "imp": "low"
+      },
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Durchführungsverordnung zur Aktualisierung restriktiver Maßnahmen gegen Personen und Einrichtungen in Afghanistan (EU) 2026/2138",
+          "en": "Implementing Regulation updating restrictive measures against individuals and entities in Afghanistan (EU) 2026/2138"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2138-des-rates-vom-22-september-2026-zur-durchf",
+        "s": {
+          "de": "Diese Durchführungsverordnung des Rates ändert die Verordnung (EU) Nr. 753/2011 über restriktive Maßnahmen angesichts der Lage in Afghanistan. Die Änderungen betreffen Anhang I der Verordnung, in dem die Listen der sanktionierten Personen und Einrichtungen geführt werden.\n\nKonkret werden die Einträge zu 24 Personen und einer Einrichtung aktualisiert, die mit den Taliban in Verbindung stehen und restriktiven Maßnahmen unterliegen. Die Aktualisierungen basieren auf Informationen des Sanktionsausschusses des Sicherheitsrates der Vereinten Nationen.\n\nDie Verordnung ist am Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft getreten und gilt unmittelbar in jedem Mitgliedstaat.",
+          "en": "This Council Implementing Regulation amends Regulation (EU) No 753/2011 concerning restrictive measures in view of the situation in Afghanistan. The amendments relate to Annex I of the Regulation, which lists the sanctioned individuals and entities.\n\nSpecifically, the entries for 24 individuals and one entity associated with the Taliban and subject to restrictive measures are updated. These updates are based on information from the United Nations Security Council's Sanctions Committee.\n\nThe Regulation entered into force on the day following its publication in the Official Journal of the European Union and is directly applicable in all Member States."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2138",
+        "imp": "low",
+        "refnum": "32026R2138"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
+          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
+          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
+        "imp": "low",
+        "refnum": "32026R0513R(01)"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
+          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
+          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
+        "imp": "low",
+        "refnum": "32026R0506R(03)",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
+          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
+          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
+        "imp": "high",
+        "refnum": "C-465/24"
+      },
+      {
+        "d": "05.02.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
+          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
+        },
+        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
+        "s": {
+          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
+          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
+        "imp": "high"
       }
     ],
     "consumer": [
@@ -549,6 +873,131 @@
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7836",
         "imp": "medium",
         "refnum": "2026_7836"
+      }
+    ],
+    "gwg": [
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur Stärkung der strafrechtlichen Verfolgung von Geldwäsche und Steuerhinterziehung",
+          "en": "Gesetz zur Stärkung der strafrechtlichen Verfolgung von Geldwäsche und Steuerhinterziehung"
+        },
+        "sl": "gesetz-zur-staerkung-der-strafrechtlichen-verfolgung-von-geldwaesche-und-steuerh",
+        "s": {
+          "de": "Das Gesetz zur Stärkung der strafrechtlichen Verfolgung von Geldwäsche und Steuerhinterziehung zielt darauf ab, die Effektivität der Bekämpfung dieser Delikte zu erhöhen. Es beinhaltet Maßnahmen zur Verbesserung der Zusammenarbeit zwischen den Behörden und zur Schließung von Gesetzeslücken, die Kriminellen bisher die Verschleierung illegaler Vermögenswerte ermöglichten.\n\nFinanzinstitute und andere Verpflichtete im Sinne des Geldwäschegesetzes müssen sich auf verschärfte Prüf- und Meldepflichten einstellen. Die Änderungen könnten auch Auswirkungen auf die internen Kontrollsysteme und Risikomanagementprozesse haben, um die Einhaltung der neuen Vorschriften zu gewährleisten.\n\nDetails zu Konsultationsfristen oder dem genauen Anwendungsbeginn sind dem vorliegenden Text nicht zu entnehmen.",
+          "en": "The Act to Strengthen the Criminal Prosecution of Money Laundering and Tax Evasion aims to increase the effectiveness of combating these offenses. It includes measures to improve cooperation between authorities and to close legal loopholes that previously allowed criminals to conceal illegal assets.\n\nFinancial institutions and other obliged entities under the Money Laundering Act must prepare for stricter due diligence and reporting obligations. The changes could also impact internal control systems and risk management processes to ensure compliance with the new regulations.\n\nDetails regarding consultation deadlines or the exact effective date are not available in the provided text."
+        },
+        "url": "https://dip.bundestag.de/vorgang/339540",
+        "imp": "medium"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
+          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
+        },
+        "sl": "gesetz-fuer-mehr-gerechtigkeit-durch-die-staerkung-der-zollverwaltung-und-die-be",
+        "s": {
+          "de": "Das Gesetz zielt auf eine umfassende Modernisierung der Zollverwaltung ab, insbesondere durch die Neustrukturierung der Generalzolldirektion in die Fachstränge „Zölle und Steuern“ sowie „Sicherheit und Vollzug“. Es sieht die Zusammenführung von Ermittlungs- und Vollzugseinheiten vor und stärkt die Finanzkontrolle Schwarzarbeit durch personelle und haushälterische Aufstockung sowie erweiterte Ermittlungsbefugnisse.\n\nFür Finanzinstitute ist relevant, dass die Zollverwaltung bei der Bekämpfung internationaler Geldwäsche gestärkt wird, unter anderem durch die Einrichtung spezialisierter Ermittlungseinheiten und eines Verwaltungsverfahrens zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft. Zudem werden die Zusammenarbeit und der Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen (FIU) mit anderen Akteuren verbessert. Die gesetzliche Verankerung des Ressortübergreifenden Steuerungskreises dient der Umsetzung der FATF-Empfehlungen.\n\nDas Gesetz ist Teil der Initiative „Zoll 2030“ und setzt Ziele des Koalitionsvertrags um.",
+          "en": "The law aims at a comprehensive modernization of the customs administration, particularly through the restructuring of the General Directorate of Customs into the specialized branches “Customs and Taxes” and “Security and Enforcement”. It provides for the consolidation of investigation and enforcement units and strengthens the Financial Control of Undeclared Work through increased personnel and budget, as well as expanded investigative powers.\n\nFor financial institutions, it is relevant that the customs administration's role in combating international money laundering is strengthened, including through the establishment of specialized investigation units and an administrative procedure for clarifying assets of dubious origin. Furthermore, cooperation and data exchange of the Financial Intelligence Unit (FIU) with other actors will be improved. The legal anchoring of the Interdepartmental Steering Committee serves to implement FATF recommendations.\n\nThis law is part of the “Customs 2030” initiative and implements objectives from the coalition agreement."
+        },
+        "url": "https://dip.bundestag.de/vorgang/338348",
+        "imp": "medium"
+      },
+      {
+        "d": "19.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "zoll.de",
+        "ti": {
+          "de": "Löschroutine für Rückmeldungen nach § 41 GwG",
+          "en": "Deletion Routine for Feedback under Section 41 GwG"
+        },
+        "sl": "loeschroutine-fuer-rueckmeldungen-nach-41-gwg",
+        "s": {
+          "de": "Die Financial Intelligence Unit (FIU) hat ihr Verfahren für Rückmeldungen nach § 41 des Geldwäschegesetzes (GwG) überarbeitet und ein neues Konzept entwickelt. Dieses Konzept wird nach Abschluss eines Konsultationsverfahrens im Dezember 2024 auf Verdachtsmeldungen angewendet, die ab dem 1. Januar 2025 eingereicht wurden, wobei Rückmeldungen automatisiert mittels goAML-Nachricht erfolgen.\n\nFür Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG wird aus datenschutzrechtlichen Gründen eine Löschroutine von 28 Tagen eingeführt. Dies bedeutet, dass diese Rückmeldungen 28 Tage nach ihrem Versand automatisch gelöscht werden. Auch ältere Rückmeldungen, die die 28-Tages-Frist überschritten haben, werden sukzessive gelöscht.\n\nDie Löschroutine tritt ab dem 1. September 2026 in Kraft. Verpflichtete müssen dies bei ihren internen Prozessen berücksichtigen und gegebenenfalls eigene Veranlassungen treffen.",
+          "en": "The Financial Intelligence Unit (FIU) has revised its procedure for feedback under Section 41 of the Anti-Money Laundering Act (GwG) and developed a new concept. This concept will be applied to suspicious transaction reports submitted from January 1, 2025, following the conclusion of a consultation process in December 2024, with feedback being provided automatically via goAML messages.\n\nFor feedback according to Section 41 (2) and (3) GwG, a deletion routine of 28 days is being introduced for data protection reasons. This means that such feedback will be automatically deleted 28 days after its dispatch. Older feedback that has exceeded the 28-day period will also be progressively deleted.\n\nThe deletion routine will come into effect on September 1, 2026. Obligated entities must take this into account in their internal processes and, if necessary, make their own arrangements."
+        },
+        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
+        "imp": "medium"
+      },
+      {
+        "d": "28.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "zoll.de",
+        "ti": {
+          "de": "Sektorale Risikoanalyse",
+          "en": "Sektorale Risikoanalyse"
+        },
+        "sl": "sektorale-risikoanalyse",
+        "s": {
+          "de": "Das Bundesministerium der Finanzen (BMF) hat eine aktualisierte sektorale Risikoanalyse veröffentlicht, die sich auf die Anfälligkeit juristischer Personen und sonstiger Rechtsgestaltungen für Geldwäsche und Terrorismusfinanzierung in Deutschland konzentriert. Diese Analyse baut auf den Erkenntnissen der Nationalen Risikoanalyse (NRA) von 2019 auf und ergänzt eine frühere sektorale Analyse zur Terrorismusfinanzierung durch Non-Profit-Organisationen (NPO).\n\nDie Analyse bewertet spezifische Risiken und schlägt Maßnahmen zur Minderung dieser Risiken vor, wobei der Schwerpunkt auf Geldwäscherisiken liegt. Für Verpflichtete nach dem Geldwäschegesetz (§ 5 Abs. 1 Satz 2 GwG) sind die Ergebnisse relevant, da sie diese bei der Erstellung ihrer eigenen Risikoanalysen berücksichtigen müssen. Die PwC-Analyse deutet auf die Bedeutung dieser Bewertung für die Compliance-Praxis hin.\n\nDie \"Sektorspezifische Risikoanalyse 2026 (Stand: Juni 2026)\" ist über die Webseite des BMF verfügbar.",
+          "en": "The German Federal Ministry of Finance (BMF) has published an updated sectoral risk analysis focusing on the susceptibility of legal entities and other legal arrangements to money laundering and terrorist financing in Germany. This analysis builds on the findings of the 2019 National Risk Assessment (NRA) and complements an earlier sectoral analysis on terrorist financing through non-profit organizations (NPOs).\n\nThe analysis assesses specific risks and proposes measures to mitigate them, with a primary focus on money laundering risks. For entities obligated under the Money Laundering Act (Section 5 (1) Sentence 2 GwG), the results are relevant as they must consider them when conducting their own risk analyses. The PwC analysis highlights the importance of this assessment for compliance practices.\n\nThe \"Sector-Specific Risk Analysis 2026 (as of June 2026)\" is available on the BMF's website."
+        },
+        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Nationale-Risikoanalyse/nationale-risikoanalyse_node.html",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "MOF: Sectoral Risk Assessment to combat money laundering and terrorist financing",
+            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/256048/mof-sectoral-risk-assessment-to-combat-money-laundering-and-terrorist-financing/",
+            "d": "27.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
+          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
+        },
+        "sl": "gesetz-zur-konsequenten-bekaempfung-von-geldwaesche-bei-steuerhinterziehung",
+        "s": {
+          "de": "Das Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung zielt darauf ab, die Geldwäsche im Zusammenhang mit Steuerhinterziehung effektiver zu bekämpfen. Es sieht eine Änderung des § 261 des Strafgesetzbuches vor, um die rechtlichen Grundlagen für die Verfolgung solcher Delikte zu stärken.\n\nDiese Gesetzesänderung ist für Finanzinstitute und andere Verpflichtete im Sinne des Geldwäschegesetzes relevant. Sie müssen ihre internen Prozesse und Kontrollsysteme überprüfen und gegebenenfalls anpassen, um den verschärften Anforderungen zur Geldwäscheprävention bei Steuerhinterziehung gerecht zu werden. Dies betrifft insbesondere die Sorgfaltspflichten und die Meldepflichten bei Verdachtsfällen.\n\nDa es sich um einen Gesetzesentwurf handelt, ist der weitere Gesetzgebungsprozess abzuwarten. Ein konkretes Datum für das Inkrafttreten der Änderungen ist noch nicht bekannt.",
+          "en": "The Act on the Consistent Fight against Money Laundering in Tax Evasion aims to combat money laundering related to tax evasion more effectively. It proposes an amendment to Section 261 of the German Criminal Code to strengthen the legal basis for prosecuting such offenses.\n\nThis legislative change is relevant for financial institutions and other obliged entities under the German Money Laundering Act. They must review and, if necessary, adapt their internal processes and control systems to meet the stricter requirements for money laundering prevention in cases of tax evasion. This particularly concerns due diligence obligations and reporting obligations for suspicious transactions.\n\nAs this is a legislative proposal, the further legislative process remains to be seen. A specific date for the entry into force of the amendments is not yet known."
+        },
+        "url": "https://dip.bundestag.de/vorgang/337697",
+        "imp": "medium"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
+          "en": "Methodology for calculating and collecting fees by the Anti-Money Laundering Authority (AMLA)"
+        },
+        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Methodik zur Berechnung und Erhebung von Gebühren durch die Anti-Geldwäsche-Behörde (AMLA). Dieses Vorhaben befindet sich noch in der Planungsphase.\n\nDie geplante Methodik wird für alle Finanzinstitute relevant sein, die unter die Aufsicht der AMLA fallen. Sie wird festlegen, wie die Gebühren für die Aufsichts- und Regulierungsaktivitäten der AMLA berechnet und eingezogen werden.\n\nDerzeit ist der Verfahrensstand \"Init Planned\", was bedeutet, dass die Initiative noch in einem sehr frühen Stadium ist und weitere Details zu Fristen und Konsultationen noch nicht verfügbar sind.",
+          "en": "The European Commission is planning a methodology for the calculation and collection of fees by the Anti-Money Laundering Authority (AMLA). This initiative is currently in the planning phase.\n\nThis planned methodology will be relevant for all financial institutions falling under AMLA's supervision. It will define how fees for AMLA's supervisory and regulatory activities are calculated and collected.\n\nThe current status is \"Init Planned,\" meaning the initiative is in a very early stage, and further details on deadlines and consultations are not yet available."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
+        "imp": "medium",
+        "refnum": "Ares(2026)6942470"
       }
     ],
     "dsgvo": [
@@ -911,93 +1360,6 @@
         "imp": "low"
       }
     ],
-    "dora": [
-      {
-        "d": "18.09.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finale Leitlinien zum Management von Drittparteienrisiken",
-          "en": "The EBA publishes its final Guidelines on the management of third-party risk"
-        },
-        "sl": "the-eba-publishes-its-final-guidelines-on-the-management-of-third-party-risk-del",
-        "s": {
-          "de": "Die EBA hat finale Leitlinien zum Management von Drittparteienrisiken veröffentlicht. Diese Leitlinien konzentrieren sich auf Vereinbarungen mit Drittparteien, die kritische oder wichtige Funktionen unterstützen, deren Ausfall die Leistung eines Finanzinstituts erheblich beeinträchtigen würde. Ziel ist es, unnötige operative und aufsichtsrechtliche Belastungen für weniger wesentliche Vereinbarungen zu reduzieren und gleichzeitig ein solides Risikomanagement zu gewährleisten.\n\nDie Leitlinien fördern einen ganzheitlichen Ansatz für das Management von Drittparteienrisiken, der sowohl IKT- als auch Nicht-IKT-Dienstleistungen umfasst. Sie decken den gesamten Lebenszyklus von Drittparteienvereinbarungen ab, einschließlich Risikobewertung und Due Diligence, Vertragsgestaltung, Unterauftragsvergabe, Überwachung, Dokumentation und Exit-Strategien. Sie berücksichtigen dabei Rückmeldungen aus der öffentlichen Konsultation und internationale Standards wie die BCBS-Prinzipien.\n\nDie Umsetzung der Leitlinien wird durch eine zweijährige Übergangsfrist unterstützt. Die Leitlinien wurden gemäß Artikel 74 der Richtlinie 2013/36/EU entwickelt und berücksichtigen weitere Richtlinien wie PSD2, IFD, MiFID II und MiCAR.",
-          "en": "The EBA has published its final Guidelines on the management of third-party risk. These Guidelines focus on third-party arrangements supporting critical or important functions (CIFs), the disruption of which would materially impair the performance of a financial entity. The aim is to reduce unnecessary operational and supervisory burdens for less material arrangements while maintaining sound risk management.\n\nThe Guidelines promote a holistic approach to third-party risk management, covering both ICT and non-ICT services. They encompass the full lifecycle of third-party arrangements, including risk assessment and due diligence, contracting, subcontracting, monitoring, documentation, and exit strategies. They reflect feedback from public consultation and international standards such as the BCBS Principles.\n\nA two-year transitional period will support the smooth and proportionate implementation of the Guidelines. They were developed in accordance with Article 74 of Directive 2013/36/EU and take into account other directives such as PSD2, IFD, MiFID II, and MiCAR."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-management-third-party-risk-delivering-more-proportionate-and",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "Deloitte Legal",
-            "ti": "Neue EBA-Leitlinien zum Drittparteienrisikomanagement",
-            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/neue-eba-leitlinien-drittparteienrisikomanagement.html",
-            "d": "22.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "16.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "DORA: Operationelle Anweisungen zur Meldung von IKT-Vorfällen",
-          "en": "DORA incident reporting - operational instructions"
-        },
-        "sl": "dora-incident-reporting-operational-instructions",
-        "s": {
-          "de": "Dieses Dokument der ESMA enthält operationelle Anweisungen für die zuständigen Behörden zur Meldung schwerwiegender IKT-bezogener Vorfälle gemäß der DORA-Verordnung. Ziel ist es, die Datenqualität zu verbessern und die Konsistenz der Meldungen über verschiedene Jurisdiktionen hinweg zu fördern. Die Anweisungen basieren auf den Implementing Technical Standards (ITS) 2025/302 und den Regulatory Technical Standards (RTS) 2025/301 und 2024/1772, die die Meldeformulare, Verfahren, Inhalte, Fristen und Klassifizierungskriterien für IKT-Vorfälle festlegen.\n\nDie Anweisungen behandeln spezifische Aspekte wie die Verwendung der englischen Sprache für Meldungen an die ESAs, die einheitliche Angabe monetärer Felder in Tausendereinheiten und die korrekte Nutzung von Freitextfeldern. Weiterhin wird die Notwendigkeit der Einreichung von Abschlussberichten, die Vorgehensweise bei Korrekturmeldungen und die konsistente Verwendung eindeutiger Identifikatoren für Vorfälle betont. Auch die Kriterien für die Klassifizierung von Vorfällen als schwerwiegend und die geografische Verbreitung werden präzisiert.\n\nFinanzunternehmen, die unter DORA fallen, müssen nach der Erkennung eines als schwerwiegend eingestuften IKT-Vorfalls Informationen über den Vorfall an ihre zuständige Behörde melden. Diese Behörden wiederum benachrichtigen die ESAs unter Verwendung vordefinierter englischer Vorlagen. Die Anweisungen sollen regelmäßig aktualisiert werden, um Erfahrungen aus der Praxis zu berücksichtigen.",
-          "en": "This ESMA document provides operational instructions for competent authorities regarding the reporting of major ICT-related incidents under the DORA Regulation. The aim is to enhance data quality and promote greater consistency in reporting across jurisdictions. The instructions are based on Implementing Technical Standards (ITS) 2025/302 and Regulatory Technical Standards (RTS) 2025/301 and 2024/1772, which define reporting forms, procedures, content, timelines, and classification criteria for ICT incidents.\n\nThe instructions cover specific aspects such as the use of the English language for reports to the ESAs, the consistent reporting of monetary fields in thousands of units, and the correct use of free-text fields. Furthermore, the document emphasizes the necessity of submitting final reports, the procedure for correction reports, and the consistent use of unique identifiers for incidents. Criteria for classifying incidents as major and their geographical spread are also clarified.\n\nFinancial entities falling under DORA must report information on ICT-related incidents classified as major to their competent authority. These authorities, in turn, notify the ESAs using predefined English templates. The instructions will be updated regularly to incorporate practical experience."
-        },
-        "url": "https://www.esma.europa.eu/document/dora-incident-reporting-operational-instructions",
-        "imp": "high"
-      },
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu den gemeinsamen DORA-Leitlinien für IKT-Kosten und -Verluste (ESMA75-1012365701-566)",
-          "en": "Compliance Table on Joint DORA Guidelines for ICT Costs and Losses (ESMA75-1012365701-566)"
-        },
-        "sl": "compliance-table-on-the-joint-guidelines-on-costs-and-losses-under-dora",
-        "s": {
-          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der Europäischen Aufsichtsbehörden (ESAs) zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 (JC/GL/2024/34) verursacht werden.\n\nDie Tabelle listet auf, welche nationalen zuständigen Behörden (z.B. FMA Österreich, BaFin Deutschland, AMF Frankreich) diese Leitlinien einhalten oder beabsichtigen, sie einzuhalten. Einige Behörden geben zusätzliche Informationen zu ihrer Umsetzung an, wie die Veröffentlichung auf ihren Websites, die Integration in Aufsichtsverfahren oder die Entwicklung spezifischer nationaler Anweisungen und Formulare zur Berichterstattung.\n\nDie Leitlinien sind ab dem 19. Mai 2025 anwendbar. Mehrere nationale Behörden haben bereits Maßnahmen zur Umsetzung ergriffen oder planen diese, um die Anforderungen der DORA-Verordnung bezüglich der Meldung von Kosten und Verlusten aus IKT-Vorfällen zu erfüllen.",
-          "en": "This document is a compliance table for the Joint Guidelines of the European Supervisory Authorities (ESAs) on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under the DORA Regulation (EU) 2022/2554 (JC/GL/2024/34).\n\nThe table lists which national competent authorities (e.g., FMA Austria, BaFin Germany, AMF France) comply or intend to comply with these guidelines. Some authorities provide additional information on their implementation, such as publication on their websites, integration into supervisory procedures, or the development of specific national instructions and forms for reporting.\n\nThe guidelines are applicable from May 19, 2025. Several national authorities have already taken or plan to take measures for implementation to meet the DORA Regulation's requirements regarding the reporting of costs and losses from ICT incidents."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
-        "imp": "medium",
-        "refnum": "ESMA75-1012365701-566"
-      },
-      {
-        "d": "02.10.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "DORFS-Gesetz: Digitale operationale Resilienz von Finanzdienstleistungen",
-          "en": "Digital Operational Resilience of Financial Services (DORFS) Act"
-        },
-        "sl": "digital-operational-resilience-of-financial-services-dorfs-act",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag für den Digital Operational Resilience of Financial Services (DORFS) Act vorgelegt. Dieser Vorschlag zielt darauf ab, die digitale operationelle Resilienz im Finanzsektor zu stärken.\n\nDer DORFS Act ist für Finanzunternehmen relevant, da er Anforderungen an ihre IT-Sicherheit und Widerstandsfähigkeit gegenüber Cyberangriffen und anderen digitalen Störungen festlegen wird. Dies bedeutet für die betroffenen Institute, dass sie ihre internen Prozesse und Systeme entsprechend anpassen müssen.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine bevorstehende Verabschiedung hindeutet.",
-          "en": "The European Commission has submitted a legislative proposal for the Digital Operational Resilience of Financial Services (DORFS) Act. This proposal aims to strengthen digital operational resilience in the financial sector.\n\nThe DORFS Act is relevant for financial companies as it will establish requirements for their IT security and resilience against cyberattacks and other digital disruptions. This means that affected institutions will have to adapt their internal processes and systems accordingly.\n\nThe current procedural status is the adoption workflow, which indicates an impending enactment."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
-        "imp": "medium"
-      }
-    ],
     "ebaresolvability": [
       {
         "d": "17.09.2026",
@@ -1096,132 +1458,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2025/rs_geschaeftsleiter_KWG_ZAG_KAGB.html",
         "imp": "high",
         "refnum": "11/2025"
-      }
-    ],
-    "gwg": [
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
-          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
-        },
-        "sl": "gesetz-fuer-mehr-gerechtigkeit-durch-die-staerkung-der-zollverwaltung-und-die-be",
-        "s": {
-          "de": "Das Gesetz zielt auf eine umfassende Modernisierung der Zollverwaltung ab, insbesondere durch die Neustrukturierung der Generalzolldirektion in die Fachstränge „Zölle und Steuern“ sowie „Sicherheit und Vollzug“. Es sieht die Zusammenführung von Ermittlungs- und Vollzugseinheiten vor und stärkt die Finanzkontrolle Schwarzarbeit durch personelle und haushälterische Aufstockung sowie erweiterte Ermittlungsbefugnisse.\n\nFür Finanzinstitute ist relevant, dass die Zollverwaltung bei der Bekämpfung internationaler Geldwäsche gestärkt wird, unter anderem durch die Einrichtung spezialisierter Ermittlungseinheiten und eines Verwaltungsverfahrens zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft. Zudem werden die Zusammenarbeit und der Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen (FIU) mit anderen Akteuren verbessert. Die gesetzliche Verankerung des Ressortübergreifenden Steuerungskreises dient der Umsetzung der FATF-Empfehlungen.\n\nDas Gesetz ist Teil der Initiative „Zoll 2030“ und setzt Ziele des Koalitionsvertrags um.",
-          "en": "The law aims at a comprehensive modernization of the customs administration, particularly through the restructuring of the General Directorate of Customs into the specialized branches “Customs and Taxes” and “Security and Enforcement”. It provides for the consolidation of investigation and enforcement units and strengthens the Financial Control of Undeclared Work through increased personnel and budget, as well as expanded investigative powers.\n\nFor financial institutions, it is relevant that the customs administration's role in combating international money laundering is strengthened, including through the establishment of specialized investigation units and an administrative procedure for clarifying assets of dubious origin. Furthermore, cooperation and data exchange of the Financial Intelligence Unit (FIU) with other actors will be improved. The legal anchoring of the Interdepartmental Steering Committee serves to implement FATF recommendations.\n\nThis law is part of the “Customs 2030” initiative and implements objectives from the coalition agreement."
-        },
-        "url": "https://dip.bundestag.de/vorgang/338348",
-        "imp": "medium"
-      },
-      {
-        "d": "19.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "zoll.de",
-        "ti": {
-          "de": "Löschroutine für Rückmeldungen nach § 41 GwG",
-          "en": "Deletion Routine for Feedback under Section 41 GwG"
-        },
-        "sl": "loeschroutine-fuer-rueckmeldungen-nach-41-gwg",
-        "s": {
-          "de": "Die Financial Intelligence Unit (FIU) hat ihr Verfahren für Rückmeldungen nach § 41 des Geldwäschegesetzes (GwG) überarbeitet und ein neues Konzept entwickelt. Dieses Konzept wird nach Abschluss eines Konsultationsverfahrens im Dezember 2024 auf Verdachtsmeldungen angewendet, die ab dem 1. Januar 2025 eingereicht wurden, wobei Rückmeldungen automatisiert mittels goAML-Nachricht erfolgen.\n\nFür Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG wird aus datenschutzrechtlichen Gründen eine Löschroutine von 28 Tagen eingeführt. Dies bedeutet, dass diese Rückmeldungen 28 Tage nach ihrem Versand automatisch gelöscht werden. Auch ältere Rückmeldungen, die die 28-Tages-Frist überschritten haben, werden sukzessive gelöscht.\n\nDie Löschroutine tritt ab dem 1. September 2026 in Kraft. Verpflichtete müssen dies bei ihren internen Prozessen berücksichtigen und gegebenenfalls eigene Veranlassungen treffen.",
-          "en": "The Financial Intelligence Unit (FIU) has revised its procedure for feedback under Section 41 of the Anti-Money Laundering Act (GwG) and developed a new concept. This concept will be applied to suspicious transaction reports submitted from January 1, 2025, following the conclusion of a consultation process in December 2024, with feedback being provided automatically via goAML messages.\n\nFor feedback according to Section 41 (2) and (3) GwG, a deletion routine of 28 days is being introduced for data protection reasons. This means that such feedback will be automatically deleted 28 days after its dispatch. Older feedback that has exceeded the 28-day period will also be progressively deleted.\n\nThe deletion routine will come into effect on September 1, 2026. Obligated entities must take this into account in their internal processes and, if necessary, make their own arrangements."
-        },
-        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
-        "imp": "medium"
-      },
-      {
-        "d": "28.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "zoll.de",
-        "ti": {
-          "de": "Sektorale Risikoanalyse",
-          "en": "Sektorale Risikoanalyse"
-        },
-        "sl": "sektorale-risikoanalyse",
-        "s": {
-          "de": "Das Bundesministerium der Finanzen (BMF) hat eine aktualisierte sektorale Risikoanalyse veröffentlicht, die sich auf die Anfälligkeit juristischer Personen und sonstiger Rechtsgestaltungen für Geldwäsche und Terrorismusfinanzierung in Deutschland konzentriert. Diese Analyse baut auf den Erkenntnissen der Nationalen Risikoanalyse (NRA) von 2019 auf und ergänzt eine frühere sektorale Analyse zur Terrorismusfinanzierung durch Non-Profit-Organisationen (NPO).\n\nDie Analyse bewertet spezifische Risiken und schlägt Maßnahmen zur Minderung dieser Risiken vor, wobei der Schwerpunkt auf Geldwäscherisiken liegt. Für Verpflichtete nach dem Geldwäschegesetz (§ 5 Abs. 1 Satz 2 GwG) sind die Ergebnisse relevant, da sie diese bei der Erstellung ihrer eigenen Risikoanalysen berücksichtigen müssen. Die PwC-Analyse deutet auf die Bedeutung dieser Bewertung für die Compliance-Praxis hin.\n\nDie \"Sektorspezifische Risikoanalyse 2026 (Stand: Juni 2026)\" ist über die Webseite des BMF verfügbar.",
-          "en": "The German Federal Ministry of Finance (BMF) has published an updated sectoral risk analysis focusing on the susceptibility of legal entities and other legal arrangements to money laundering and terrorist financing in Germany. This analysis builds on the findings of the 2019 National Risk Assessment (NRA) and complements an earlier sectoral analysis on terrorist financing through non-profit organizations (NPOs).\n\nThe analysis assesses specific risks and proposes measures to mitigate them, with a primary focus on money laundering risks. For entities obligated under the Money Laundering Act (Section 5 (1) Sentence 2 GwG), the results are relevant as they must consider them when conducting their own risk analyses. The PwC analysis highlights the importance of this assessment for compliance practices.\n\nThe \"Sector-Specific Risk Analysis 2026 (as of June 2026)\" is available on the BMF's website."
-        },
-        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Nationale-Risikoanalyse/nationale-risikoanalyse_node.html",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "MOF: Sectoral Risk Assessment to combat money laundering and terrorist financing",
-            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/256048/mof-sectoral-risk-assessment-to-combat-money-laundering-and-terrorist-financing/",
-            "d": "27.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "22.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
-          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
-        },
-        "sl": "gesetz-zur-konsequenten-bekaempfung-von-geldwaesche-bei-steuerhinterziehung",
-        "s": {
-          "de": "Das Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung zielt darauf ab, die Geldwäsche im Zusammenhang mit Steuerhinterziehung effektiver zu bekämpfen. Es sieht eine Änderung des § 261 des Strafgesetzbuches vor, um die rechtlichen Grundlagen für die Verfolgung solcher Delikte zu stärken.\n\nDiese Gesetzesänderung ist für Finanzinstitute und andere Verpflichtete im Sinne des Geldwäschegesetzes relevant. Sie müssen ihre internen Prozesse und Kontrollsysteme überprüfen und gegebenenfalls anpassen, um den verschärften Anforderungen zur Geldwäscheprävention bei Steuerhinterziehung gerecht zu werden. Dies betrifft insbesondere die Sorgfaltspflichten und die Meldepflichten bei Verdachtsfällen.\n\nDa es sich um einen Gesetzesentwurf handelt, ist der weitere Gesetzgebungsprozess abzuwarten. Ein konkretes Datum für das Inkrafttreten der Änderungen ist noch nicht bekannt.",
-          "en": "The Act on the Consistent Fight against Money Laundering in Tax Evasion aims to combat money laundering related to tax evasion more effectively. It proposes an amendment to Section 261 of the German Criminal Code to strengthen the legal basis for prosecuting such offenses.\n\nThis legislative change is relevant for financial institutions and other obliged entities under the German Money Laundering Act. They must review and, if necessary, adapt their internal processes and control systems to meet the stricter requirements for money laundering prevention in cases of tax evasion. This particularly concerns due diligence obligations and reporting obligations for suspicious transactions.\n\nAs this is a legislative proposal, the further legislative process remains to be seen. A specific date for the entry into force of the amendments is not yet known."
-        },
-        "url": "https://dip.bundestag.de/vorgang/337697",
-        "imp": "medium"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
-          "en": "Methodology for calculating and collecting fees by the Anti-Money Laundering Authority (AMLA)"
-        },
-        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
-        "s": {
-          "de": "Die Europäische Kommission plant eine Methodik zur Berechnung und Erhebung von Gebühren durch die Anti-Geldwäsche-Behörde (AMLA). Dieses Vorhaben befindet sich noch in der Planungsphase.\n\nDie geplante Methodik wird für alle Finanzinstitute relevant sein, die unter die Aufsicht der AMLA fallen. Sie wird festlegen, wie die Gebühren für die Aufsichts- und Regulierungsaktivitäten der AMLA berechnet und eingezogen werden.\n\nDerzeit ist der Verfahrensstand \"Init Planned\", was bedeutet, dass die Initiative noch in einem sehr frühen Stadium ist und weitere Details zu Fristen und Konsultationen noch nicht verfügbar sind.",
-          "en": "The European Commission is planning a methodology for the calculation and collection of fees by the Anti-Money Laundering Authority (AMLA). This initiative is currently in the planning phase.\n\nThis planned methodology will be relevant for all financial institutions falling under AMLA's supervision. It will define how fees for AMLA's supervisory and regulatory activities are calculated and collected.\n\nThe current status is \"Init Planned,\" meaning the initiative is in a very early stage, and further details on deadlines and consultations are not yet available."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
-        "imp": "medium",
-        "refnum": "Ares(2026)6942470"
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung (07/2026 GW)",
-          "en": "Circular on High-Risk Third Countries in Anti-Money Laundering and Counter-Terrorist Financing (07/2026 GW)"
-        },
-        "sl": "rundschreiben-07-2026-gw",
-        "s": {
-          "de": "Dieses Rundschreiben der BaFin informiert alle nach dem Geldwäschegesetz (GwG) Verpflichteten über Drittstaaten mit strategischen Mängeln in ihren Systemen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (Hochrisiko-Staaten).\n\nEs konkretisiert die Maßnahmen, die in Bezug auf Nordkorea, Iran und Myanmar zu ergreifen sind, basierend auf Erklärungen der FATF. Für Nordkorea und Iran werden spezifische Gegenmaßnahmen gefordert, während für Myanmar verstärkte Sorgfaltspflichten gelten. Zudem werden die aktuellen FATF-Listen der Länder unter verstärkter Beobachtung genannt, wobei Bosnien und Herzegowina sowie Irak neu hinzugekommen sind und Algerien sowie Namibia gestrichen wurden.\n\nFinanzinstitute und andere Verpflichtete nach dem GwG müssen die genannten Maßnahmen und verstärkten Sorgfaltspflichten umsetzen, um den Risiken aus diesen Ländern zu begegnen. Dies beinhaltet unter anderem das Beenden von Korrespondenzbeziehungen, das Schließen von Tochtergesellschaften und die Beschränkung von Geschäftsbeziehungen.",
-          "en": "This BaFin circular informs all entities obligated under the Money Laundering Act (GwG) about third countries with strategic deficiencies in their anti-money laundering and counter-terrorist financing systems (high-risk countries).\n\nIt specifies the measures to be taken in relation to North Korea, Iran, and Myanmar, based on FATF statements. Specific countermeasures are required for North Korea and Iran, while enhanced due diligence obligations apply to Myanmar. Furthermore, the current FATF lists of countries under increased monitoring are provided, with Bosnia and Herzegovina and Iraq newly added, and Algeria and Namibia removed.\n\nFinancial institutions and other obligated entities under the GwG must implement the stated measures and enhanced due diligence obligations to address the risks posed by these countries. This includes, among other things, terminating correspondent relationships, closing subsidiaries, and restricting business relationships."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
-        "imp": "high",
-        "refnum": "07/2026"
       }
     ],
     "aifmd2": [
@@ -2445,95 +2681,6 @@
         ]
       }
     ],
-    "sanctions": [
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
-          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
-          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
-        "imp": "low",
-        "refnum": "32026R0513R(01)"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
-          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
-          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
-        "imp": "low",
-        "refnum": "32026R0506R(03)",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "12.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
-          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
-          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
-        "imp": "high",
-        "refnum": "C-465/24"
-      },
-      {
-        "d": "05.02.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
-          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
-        },
-        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
-        "s": {
-          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
-          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
-        "imp": "high"
-      }
-    ],
     "irrbb": [
       {
         "d": "11.08.2026",
@@ -3668,35 +3815,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/law-of-17-december-2010/",
         "imp": "low"
-      }
-    ],
-    "doraincident": [
-      {
-        "d": "03.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "ESAs veröffentlichen ersten DORA-Bericht zu schwerwiegenden IKT-Vorfällen",
-          "en": "ESAs publish first DORA report on major ICT-related incidents"
-        },
-        "sl": "esas-publish-the-first-report-on-dora-major-ict-related-incidents",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben ihren ersten Jahresbericht über schwerwiegende IKT-Vorfälle im EU-Finanzsektor veröffentlicht. Dieser Bericht basiert auf dem durch DORA etablierten Meldemechanismus und zeigt, dass IKT-Risiken zunehmend grenzüberschreitend und vernetzt sind. Die Behörden betonen die Notwendigkeit für Finanzunternehmen, ihre Cybersicherheitsmaßnahmen angesichts der Entwicklung KI-gestützter Tools zu verstärken.\n\nDORA harmonisiert die Meldepflichten für IKT-Vorfälle und stellt sicher, dass schwerwiegende Vorfälle den zuständigen Behörden gemeldet werden, um eine koordinierte Reaktion zu ermöglichen. Der Bericht zeigt, dass etwa ein Drittel der 3.383 gemeldeten Vorfälle grenzüberschreitende Auswirkungen hatten, während die direkten Auswirkungen auf Kunden und Transaktionen meist begrenzt waren. Systemausfälle und externe Ereignisse waren die Hauptursachen, was die Bedeutung eines robusten Drittparteien-Risikomanagements und einer effektiven Aufsicht über ausgelagerte Dienste unterstreicht. Obwohl nur 10 % der Vorfälle auf Cybersicherheit zurückzuführen waren, ist es entscheidend, dass Finanzunternehmen höchste Cybersicherheitsstandards einhalten.\n\nDieser Bericht, der auf Artikel 22(2) der DORA-Verordnung basiert, wird jährlich veröffentlicht und liefert Daten zu Anzahl, Art, Auswirkungen, Abhilfemaßnahmen und Kosten von IKT-Vorfällen. Ein schwerwiegender IKT-Vorfall ist dabei definiert als ein Ereignis, das die Sicherheit von Netzwerk- und Informationssystemen beeinträchtigt und erhebliche negative Auswirkungen auf kritische Funktionen eines Finanzunternehmens hat.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published their first annual report on major ICT-related incidents in the EU financial sector. This report, based on the reporting mechanism established by DORA, indicates that ICT risks are increasingly borderless and interconnected. The authorities emphasize the need for financial entities to strengthen their cybersecurity measures in light of the development of AI-driven tools.\n\nDORA harmonizes reporting requirements for ICT incidents, ensuring that major incidents are notified to all competent authorities to enable a coordinated response. The report reveals that approximately one-third of the 3,383 reported incidents had cross-border impacts, while direct impacts on clients and transactions were generally limited. System failures and external events were the primary drivers, highlighting the importance of robust third-party risk management and effective oversight of outsourced services. Although only 10% of incidents were cybersecurity-related, it is crucial for financial entities to maintain the highest cybersecurity standards.\n\nThis report, based on Article 22(2) of the DORA regulation, will be published annually and provides data on the number, nature, impact, remedial actions, and costs of ICT incidents. A major ICT-related incident is defined as an event compromising the security of network and information systems with a high adverse impact on critical functions of a financial entity."
-        },
-        "url": "https://www.eiopa.europa.eu/esas-publish-first-report-dora-major-ict-related-incidents-2026-06-03_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs veröffentlichen ersten Bericht über schwerwiegende IKT-Vorfälle im Rahmen von DORA",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-veroeffentlichen-ersten-bericht-ueber-schwerwiegende-ikt-vorfaelle-im-rahmen-von-dora/",
-            "d": "03.06.2026"
-          }
-        ]
       }
     ],
     "dataact": [
