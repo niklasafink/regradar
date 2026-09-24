@@ -517,9 +517,29 @@ RSS_FEEDS = {
 # Abonnieren gedacht, Seitenabrufe wären unhöflich.
 RSS_NO_FETCH = {"fiu"}
 
+# Dauerseiten der Bundesbank ("Fachseiten"): Der Feed „Themen" (633288)
+# meldet jede angefasste Website-Seite mit dem Änderungsdatum als
+# Publikationsdatum — auch Übersichtsseiten, die es seit Jahren gibt
+# (z. B. „BAIT / DORA", „Liquiditätsverordnung", „Eignungsprüfung",
+# Meldewesen-Wegweiser, Sanktionsregime-Seiten). Das sind keine Meldungen:
+# Es ändert sich nichts, es gibt kein Quelldokument, und die Zusammenfassung
+# beschreibt nur den Dauerzustand. Echte Neuigkeiten der Bundesbank kommen
+# als Rundschreiben (/resource/blob/…), Monatsbericht-Aufsatz
+# (publikationen.bundesbank.de), Meldung unter /de/aufgaben/themen/ oder
+# Analyse unter …/analysen-und-perspektiven/ — die bleiben erlaubt.
+BUNDESBANK_EVERGREEN = (
+    r"bundesbank\.de/de/("
+    r"aufgaben/finanzaufsicht/einzelaspekte/|"
+    r"service/|karriere/|bundesbank/|statistiken/|"
+    r"aufgaben/(geldpolitik|unbarer-zahlungsverkehr|bargeld)/)"
+)
+
 # Feed-Links, die auf dieses Muster passen, werden übersprungen (die
-# Bundesbank-Feeds mischen deutsche und englische Fassungen derselben Seite).
-RSS_LINK_EXCLUDE = {"bundesbank": r"bundesbank\.de/(en/|hochschule-en/)"}
+# Bundesbank-Feeds mischen deutsche und englische Fassungen derselben Seite;
+# dazu die Dauerseiten, s. o.).
+RSS_LINK_EXCLUDE = {
+    "bundesbank": r"bundesbank\.de/(en/|hochschule-en/)|" + BUNDESBANK_EVERGREEN,
+}
 
 # Kernnormen-Watchlist für Gesetze im Internet (Slug im URL-Pfad der TOC).
 GII_WATCHLIST = {

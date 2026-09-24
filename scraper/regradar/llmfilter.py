@@ -23,7 +23,7 @@ TIMEOUT = 90
 # Format-Version des Prompts. Bei inhaltlichen Änderungen hochzählen – der
 # nächste Export bewertet dann alle Kandidaten neu (alte Cache-Einträge unter
 # der Vorversion werden ignoriert).
-FORMAT = 3
+FORMAT = 4
 
 SYSTEM_PROMPT = (
     "Du filterst einen Regulatory-News-Feed für Compliance-Abteilungen von "
@@ -58,6 +58,21 @@ SYSTEM_PROMPT = (
     "oder eine Klage dagegen abweisen, ohne eine verallgemeinerbare neue "
     "Auslegung für die Breite der Institute zu schaffen (z. B. Bestätigung, "
     "dass ein bestimmter Dienst kein Torwächter-/Gatekeeper-Dienst ist).\n\n"
+    "Ebenfalls NICHT RELEVANT: Mitteilungen über den Ein- oder Austritt "
+    "einzelner Panelbanken oder Beitragszahler eines Referenzwerts (z. B. "
+    "'Upcoming changes to the Euribor panel' – eine namentlich genannte Bank "
+    "verlässt das Panel), auch wenn die Aufsicht die Auswirkung bewertet: "
+    "Solange sich die Methodik oder der Rechtsrahmen des Referenzwerts nicht "
+    "ändert, folgt daraus für andere Institute keine Pflicht.\n\n"
+    "Ebenfalls NICHT RELEVANT: rechtspolitisches Material ohne Pflichten"
+    "wirkung – aufsichtliche Empfehlungen und Stellungnahmen AN den "
+    "Gesetzgeber (Ratschläge zur Überprüfung/Reform eines Rechtsakts, "
+    "'priorities for the review of …', Antworten auf ein Call for Advice, "
+    "Stellungnahmen zu fremden Entwürfen) sowie allgemeine Risiko- und "
+    "Marktausblicke der Aufsicht (Risk Reports, Risk Dashboards, Financial "
+    "Stability Reviews, Trends-and-Risks-Berichte). Sie beschreiben "
+    "Einschätzungen, keine Anforderungen; relevant wird daraus erst der "
+    "spätere Rechtsakt oder die Konsultation.\n\n"
     "Du erhältst eine JSON-Liste von Objekten mit id und text. Antworte "
     "ausschließlich mit einem JSON-Objekt, das jede id auf true (relevant) "
     "oder false (nicht relevant) abbildet. Keine Erklärungen."

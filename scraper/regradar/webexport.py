@@ -383,6 +383,27 @@ NOISE = re.compile(
 # CRR3-Update erscheinen.
 INDIVIDUAL_MEASURE_URL = re.compile(r"/massnahmen/", re.IGNORECASE)
 
+# Bußgeld gegen ein namentlich genanntes Unternehmen, englischsprachig: Der
+# deutsche NOISE-Filter oben greift nur bei "Bußgeld"/"Geldbuße", die Titel
+# der EDPB-Meldungen lauten aber "The Irish Data Protection Commission fines
+# Google 403 000 000 EUR" oder "The Spanish DPA fined Securitas Direct
+# 100 000 EUR". Entscheidend ist die Kombination aus Bußgeld-Verb und
+# Betrag — "Guidelines on administrative fines" bleibt damit relevant.
+FINE_WITH_AMOUNT = re.compile(
+    r"\bfine[sd]?\b[^.]{0,80}?\d[\d\s.,]{2,}\s*(?:eur|euro|€|million|mio)",
+    re.IGNORECASE)
+
+# Dauerseiten statt Meldungen: Der Bundesbank-Feed „Themen" liefert
+# Website-Fachseiten mit dem Datum der letzten Bearbeitung („BAIT / DORA",
+# „Liquiditätsverordnung", „Eignungsprüfung", Meldewesen-Wegweiser,
+# Sanktionsregime-Seiten). Sie beschreiben den Dauerzustand, nicht eine
+# Änderung — kein Update. Der Discovery-Filter (RSS_LINK_EXCLUDE) hält sie
+# künftig schon aus der Datenbank; dieser Check entfernt zusätzlich die
+# bereits gespeicherten aus dem Export.
+from .registry import BUNDESBANK_EVERGREEN
+
+EVERGREEN_URL = re.compile(BUNDESBANK_EVERGREEN, re.IGNORECASE)
+
 
 # Gesetzgebungsquellen (BGBl, DIP, Gesetze im Internet) decken alle Rechts-
 # gebiete ab; generische Muster wie "Verbraucherschutz" oder "Lieferkette"
@@ -410,6 +431,10 @@ def _classify(text: str, forced: Optional[str] = None,
     if NOISE.search(text):
         return None
     if url and INDIVIDUAL_MEASURE_URL.search(url):
+        return None
+    if url and EVERGREEN_URL.search(url):
+        return None
+    if FINE_WITH_AMOUNT.search(title if title is not None else text):
         return None
     if source_id in LEGISLATION_SOURCES and OFFTOPIC_DE.search(title if title is not None else text):
         return None
@@ -623,6 +648,21 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # AMLA-Einträge ohne extrahiertes Seitendatum sind Slug-Platzhalter
         # (Seite noch nicht geladen) – für den High-Level-Feed auslassen.
         if r["source_id"] == "amla" and not r["publication_date"]:
+            continue
+        # DIP-Vorgänge ohne amtlichen Abstract: Der Zusammenfassungs-Prompt
+        # hätte nur den Gesetzestitel als Grundlage und erfände den Inhalt
+        # (Beispiel 22.09.2026: "Gesetz zur Stärkung der strafrechtlichen
+        # Verfolgung von Geldwäsche und Steuerhinterziehung" – ein noch nicht
+        # beratener Fraktionsentwurf, zu dem die Zusammenfassung Maßnahmen
+        # behauptete, die nirgends belegt sind). Ohne Abstract kein Eintrag.
+        if r["source_id"] == "dip" and not (r["summary"] or "").strip():
+            continue
+        # EBA-Q&A: nur beantwortete Fragen ("Final Q&A") sind eine Auslegung,
+        # an der sich ein Institut ausrichten muss. Eine zurückgewiesene Frage
+        # ("Rejected question": die EBA sieht keinen Klärungsbedarf) und eine
+        # noch offene Einreichung ("Question under review") enthalten keine
+        # Antwort — daraus folgt keine Handlungspflicht, also kein Update.
+        if r["source_id"] == "eba_qna" and (r["status"] or "").upper() != "FINAL":
             continue
         # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
         # Titel wie "Consultation on the draft RTS on Customer Due

@@ -22,6 +22,21 @@ from .http import get
 MAX_CHARS = 8000
 # Darunter gilt eine Extraktion als gescheitert (Navigationsreste o. Ä.).
 MIN_CHARS = 300
+# Nach so vielen Stunden wird ein leer gebliebener Abruf erneut versucht.
+RETRY_AFTER_HOURS = 24
+
+
+def _retry_due(fetched_at: Optional[str]) -> bool:
+    from datetime import datetime, timedelta, timezone
+    if not fetched_at:
+        return True
+    try:
+        ts = datetime.fromisoformat(fetched_at.replace("Z", "+00:00"))
+    except ValueError:
+        return True
+    if ts.tzinfo is None:
+        ts = ts.replace(tzinfo=timezone.utc)
+    return datetime.now(timezone.utc) - ts > timedelta(hours=RETRY_AFTER_HOURS)
 
 
 def _ensure_table(conn: sqlite3.Connection) -> None:
@@ -139,15 +154,21 @@ def _linked_pdf(base_url: str, raw_html: str) -> Optional[str]:
 def fetch_fulltext(conn: sqlite3.Connection, document_id: int,
                    url: Optional[str]) -> str:
     """Gecachter Volltext-Auszug der Original-Meldung ('' wenn nicht
-    verfügbar). Fehlschläge werden als leerer Text gecacht, damit tote
-    Links nicht bei jedem Lauf erneut abgerufen werden."""
+    verfügbar). Erfolgreiche Abrufe werden dauerhaft gecacht.
+
+    Fehlschläge NICHT: EUR-Lex antwortet zeitweise mit 202 (Dokument wird
+    erst erzeugt), Behördenseiten sind kurz nicht erreichbar. Ein dauerhaft
+    gecachter Fehlschlag verurteilt das Dokument sonst für immer zu einer
+    Zusammenfassung, die nur aus dem Titel geraten ist. Leere Einträge
+    werden deshalb nach RETRY_AFTER_HOURS erneut versucht; tote Links kosten
+    damit höchstens einen Abruf pro Tag."""
     if not url:
         return ""
     _ensure_table(conn)
     row = conn.execute(
-        "SELECT text FROM doc_fulltext WHERE document_id=?",
+        "SELECT text, fetched_at FROM doc_fulltext WHERE document_id=?",
         (document_id,)).fetchone()
-    if row is not None:
+    if row is not None and (row[0] or not _retry_due(row[1])):
         return row[0]
 
     text = ""
