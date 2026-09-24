@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T20:21:53Z",
+  "generated_at": "2026-09-24T13:24:06Z",
   "updates": {
     "amla": [
       {
@@ -162,6 +162,25 @@
         "deadline": "20.10.2026"
       },
       {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur Umsetzung der Richtlinien (EU) 2025/1 und 2025/2 zur Sanierung und Abwicklung von Versicherungsunternehmen",
+          "en": "Act on the Implementation of Directives (EU) 2025/1 and 2025/2 on the Recovery and Resolution of Insurance Undertakings"
+        },
+        "sl": "gesetz-zur-umsetzung-der-richtlinien-eu-2025-1-und-eu-2025-2-zur-festlegung-eine",
+        "s": {
+          "de": "Das Gesetz dient der Umsetzung der EU-Richtlinien 2025/1 und 2025/2, die einen Rahmen für die Sanierung und Abwicklung von Versicherungsunternehmen festlegen und den Aufsichtsrahmen für Versicherungsunternehmen ändern. Es zielt darauf ab, die Integration des Binnenmarkts im Versicherungsbereich zu fördern und die Langfristigkeit des Versicherungsgeschäfts besser zu berücksichtigen.\n\nFür Versicherungsunternehmen bedeutet dies größere Spielräume bei der Kapitalanlage und eine Stärkung der Proportionalität des europäischen Aufsichtsrahmens. Es werden Erleichterungen für kleine und nicht komplexe Unternehmen eingeführt, die Auseinandersetzung mit Nachhaltigkeitsrisiken verstärkt und neue makroprudenzielle Maßnahmen etabliert. Zudem wird die Gruppenaufsicht gestärkt und die Zusammenarbeit der Aufsichtsbehörden bei grenzüberschreitenden Tätigkeiten intensiviert.\n\nEin neuer harmonisierter Rahmen für die Sanierung und kontrollierte Abwicklung von Versicherungsunternehmen wird geschaffen, um die Stabilität der Finanzmärkte zu wahren und eine Alternative zu Insolvenzverfahren zu bieten. Das Versicherungs-Sanierungs-und-Abwicklungs-Gesetz (VSAG) wird als Artikel 1 der Vorlage eingeführt, begleitet von Änderungen an vier Gesetzen und zwei Rechtsverordnungen sowie weiteren Folgeänderungen.",
+          "en": "This law implements EU Directives 2025/1 and 2025/2, which establish a framework for the recovery and resolution of insurance undertakings and amend the supervisory framework for insurance undertakings. It aims to foster the integration of the internal market in the insurance sector and better account for the long-term nature of insurance business.\n\nFor insurance undertakings, this means greater flexibility in capital investment and a strengthening of the proportionality of the European supervisory framework. Facilitations are introduced for small and non-complex undertakings, the engagement with sustainability risks is intensified, and new macro-prudential measures are established. Furthermore, group supervision is strengthened, and cooperation among supervisory authorities in cross-border activities is enhanced.\n\nA new harmonized framework for the recovery and controlled resolution of insurance undertakings is created to maintain financial market stability and provide an alternative to insolvency proceedings. The Insurance Recovery and Resolution Act (VSAG) is introduced as Article 1 of the proposal, accompanied by amendments to four laws and two ordinances, as well as further consequential amendments."
+        },
+        "url": "https://dip.bundestag.de/vorgang/334565",
+        "imp": "medium"
+      },
+      {
         "d": "08.07.2026",
         "t": {
           "de": "Leitlinien",
@@ -218,26 +237,358 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-contractual-recognition-resolution-stay-powers_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "sanctions": [
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Durchführungsverordnung zu restriktiven Maßnahmen gegen Russland (EU) 2026/2165",
+          "en": "Implementing Regulation concerning restrictive measures against Russia (EU) 2026/2165"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2165-des-rates-vom-24-september-2026-zur-durchf",
+        "s": {
+          "de": "Diese Durchführungsverordnung des Rates setzt die Verordnung (EU) 2024/2642 über restriktive Maßnahmen angesichts der destabilisierenden Aktivitäten Russlands um. Sie aktualisiert die Liste der Personen, Organisationen und Einrichtungen, die diesen restriktiven Maßnahmen unterliegen.\n\nDie Verordnung ist für alle Finanzinstitute und Unternehmen in der EU relevant, die Geschäftsbeziehungen zu den gelisteten Personen, Organisationen oder Einrichtungen unterhalten könnten. Sie müssen sicherstellen, dass sie keine Gelder oder wirtschaftliche Ressourcen direkt oder indirekt zur Verfügung stellen oder von diesen erhalten.\n\nDie Verordnung tritt am Tag ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
+          "en": "This Council Implementing Regulation implements Regulation (EU) 2024/2642 concerning restrictive measures in view of Russia's destabilising actions. It updates the list of persons, entities, and bodies subject to these restrictive measures.\n\nThis regulation is relevant for all financial institutions and companies within the EU that may have business relationships with the listed persons, entities, or bodies. They must ensure that they do not directly or indirectly make funds or economic resources available to or receive them from these parties.\n\nThis regulation enters into force on the day of its publication in the Official Journal of the European Union."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2165",
+        "imp": "high",
+        "refnum": "32026R2165"
       },
       {
-        "d": "09.12.2025",
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Finanzsanktionen gegen Personen und Organisationen in Bezug auf Afghanistan",
+          "en": "Financial Sanctions against Persons and Entities in relation to Afghanistan"
+        },
+        "sl": "afghanistan",
+        "s": {
+          "de": "Die Bundesbank informiert über Finanzsanktionen gegen bestimmte Personen, Gruppen, Unternehmen und Einrichtungen im Zusammenhang mit der Lage in Afghanistan. Diese Sanktionen setzen Maßnahmen des Sicherheitsrats der Vereinten Nationen um.\n\nDie Maßnahmen umfassen ein Verbot, diesen gelisteten Entitäten Gelder oder wirtschaftliche Ressourcen direkt oder indirekt zur Verfügung zu stellen. Zudem werden alle Gelder und wirtschaftlichen Ressourcen, die sich im Eigentum oder Besitz dieser Entitäten befinden oder von ihnen kontrolliert werden, eingefroren. Finanzinstitute müssen sicherstellen, dass sie keine Transaktionen mit gelisteten Personen oder Organisationen durchführen und deren Vermögenswerte einfrieren.\n\nUnter engen Voraussetzungen, beispielsweise für Grundbedürfnisse gelisteter Personen, können Ausnahmegenehmigungen erteilt werden. Anträge hierfür sind beim Servicezentrum Finanzsanktionen der Deutschen Bundesbank einzureichen. Verbindlich sind ausschließlich die im Amtsblatt der Europäischen Union oder im Bundesanzeiger veröffentlichten Texte.",
+          "en": "The Bundesbank provides information on financial sanctions against specific individuals, groups, undertakings, and entities in connection with the situation in Afghanistan. These sanctions implement measures adopted by the United Nations Security Council.\n\nThe measures include a prohibition on directly or indirectly making funds or economic resources available to these listed entities. Furthermore, all funds and economic resources owned, possessed, held, or controlled by these entities are frozen. Financial institutions must ensure they do not conduct transactions with listed persons or organizations and freeze their assets.\n\nUnder strict conditions, such as for the basic needs of listed persons, exemptions may be granted. Applications for such exemptions must be submitted to the Financial Sanctions Service Centre of the Deutsche Bundesbank. Only the texts published in the Official Journal of the European Union or the Federal Gazette are legally binding."
+        },
+        "url": "https://www.bundesbank.de/de/service/finanzsanktionen/sanktionsregimes/afghanistan-610324",
+        "imp": "low"
+      },
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Durchführungsverordnung zur Aktualisierung restriktiver Maßnahmen gegen Personen und Einrichtungen in Afghanistan (EU) 2026/2138",
+          "en": "Implementing Regulation updating restrictive measures against individuals and entities in Afghanistan (EU) 2026/2138"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2138-des-rates-vom-22-september-2026-zur-durchf",
+        "s": {
+          "de": "Diese Durchführungsverordnung des Rates ändert die Verordnung (EU) Nr. 753/2011 über restriktive Maßnahmen angesichts der Lage in Afghanistan. Die Änderungen betreffen Anhang I der Verordnung, in dem die Listen der sanktionierten Personen und Einrichtungen geführt werden.\n\nKonkret werden die Einträge zu 24 Personen und einer Einrichtung aktualisiert, die mit den Taliban in Verbindung stehen und restriktiven Maßnahmen unterliegen. Die Aktualisierungen basieren auf Informationen des Sanktionsausschusses des Sicherheitsrates der Vereinten Nationen.\n\nDie Verordnung ist am Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft getreten und gilt unmittelbar in jedem Mitgliedstaat.",
+          "en": "This Council Implementing Regulation amends Regulation (EU) No 753/2011 concerning restrictive measures in view of the situation in Afghanistan. The amendments relate to Annex I of the Regulation, which lists the sanctioned individuals and entities.\n\nSpecifically, the entries for 24 individuals and one entity associated with the Taliban and subject to restrictive measures are updated. These updates are based on information from the United Nations Security Council's Sanctions Committee.\n\nThe Regulation entered into force on the day following its publication in the Official Journal of the European Union and is directly applicable in all Member States."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2138",
+        "imp": "low",
+        "refnum": "32026R2138"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
+          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
+          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
+        "imp": "low",
+        "refnum": "32026R0513R(01)"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
+          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
+          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
+        "imp": "low",
+        "refnum": "32026R0506R(03)",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
+          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
+          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
+        "imp": "high",
+        "refnum": "C-465/24"
+      }
+    ],
+    "crr3": [
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Liquiditätsverordnung (LiqV)",
+          "en": "Liquidity Ordinance (LiqV)"
+        },
+        "sl": "liquiditaetsverordnung",
+        "s": {
+          "de": "Die Liquiditätsverordnung (LiqV) ist am 1. Januar 2007 in Kraft getreten und ersetzt den Grundsatz II. Sie konkretisiert die Anforderungen des Kreditwesengesetzes (§ 11 Abs. 1 Satz 1, § 51b Abs. 1 Satz 1 KWG), wonach Institute und Wohnungsunternehmen mit Spareinrichtung jederzeit ausreichend zahlungsbereit sein müssen.\n\nSeit der vollständigen Einführung der Liquiditätsdeckungsquote (LCR) für CRR-Kreditinstitute zum 1. Januar 2018 galt die LiqV nur noch für Bürgschaftsbanken und Wohnungsunternehmen mit Spareinrichtung. Wertpapierfirmen wurden mit der Änderung der LiqV durch Artikel 7 Abs. 41 des Gesetzes zur Umsetzung der Richtlinie (EU) 2019/2034 vom 12. Mai 2021 aus dem Anwendungsbereich entzogen, da sie nun den Liquiditätsvorschriften der Verordnung (EU) 2019/2033 unterliegen. Die Liquidität gilt als ausreichend, wenn die Zahlungsmittel für den nächsten Monat die erwarteten Abflüsse mindestens decken, wobei die Liquiditätskennzahl mindestens eins betragen muss.\n\nDie Meldungen zur LiqV (Vordrucke LV1 und LV2) sind monatlich bis zum 15. Geschäftstag des Folgemonats bei der Deutschen Bundesbank einzureichen.",
+          "en": "The Liquidity Ordinance (LiqV) came into force on January 1, 2007, replacing Principle II. It specifies the requirements of the German Banking Act (§ 11 para. 1 sentence 1, § 51b para. 1 sentence 1 KWG), stating that institutions and housing enterprises with savings facilities must be sufficiently liquid at all times.\n\nSince the full implementation of the Liquidity Coverage Ratio (LCR) for CRR credit institutions on January 1, 2018, the LiqV only applied to guarantee banks and housing enterprises with savings facilities. Investment firms were removed from the scope of the LiqV with the amendment by Article 7 para. 41 of the law implementing Directive (EU) 2019/2034 of May 12, 2021, as they are now subject to the liquidity requirements of Regulation (EU) 2019/2033. Liquidity is considered sufficient if the available funds for the next month cover at least the expected outflows, with the liquidity ratio being at least one.\n\nReports under the LiqV (forms LV1 and LV2) must be submitted monthly to the Deutsche Bundesbank by the 15th business day of the following month."
+        },
+        "url": "https://www.bundesbank.de/de/aufgaben/finanzaufsicht/einzelaspekte/liquiditaet/liquiditaets-verordnung/liquiditaetsverordnung-598548",
+        "imp": "low"
+      },
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Liquiditätsregulierung",
+          "en": "Liquiditätsregulierung"
+        },
+        "sl": "liquiditaetsregulierung",
+        "s": {
+          "de": "Die Bundesbank erläutert die Liquiditätsregulierung für Kreditinstitute in der EU, basierend auf der Capital Requirements Regulation (CRR). Ziel ist die Sicherstellung der jederzeitigen Zahlungsbereitschaft der Institute durch quantitative Vorschriften, die auf dem Basler Liquiditätsrahmenwerk beruhen.\n\nIm Fokus stehen die kurzfristige Liquiditätsdeckungsanforderung (LCR) und die strukturelle Liquiditätsquote (NSFR). Die LCR schreibt einen Mindestbestand an hochliquiden Aktiva vor, um ein schweres Stressszenario über 30 Tage abzudecken. Die NSFR soll eine nachhaltige Refinanzierungsstruktur gewährleisten, indem sie die Fristentransformation begrenzt und somit das Refinanzierungsrisiko über einen längeren Zeithorizont reduziert. Für kleine, nicht komplexe Institute kann eine vereinfachte NSFR gelten. Ergänzt werden diese durch zusätzliche Beobachtungsparameter (AMM) zur umfassenden Analyse des Liquiditäts- und Refinanzierungsrisikos sowie Offenlegungspflichten zu Liquiditätskennziffern.\n\nEin weiterer wichtiger Aspekt ist das Management der Innertagesliquidität, das für das reibungslose Funktionieren der Zahlungsverkehrs- und Abwicklungssysteme unerlässlich ist. Die Bewertung des Innertagesliquiditätsrisikomanagements erfolgt im Rahmen des SREP.",
+          "en": "The Bundesbank explains the liquidity regulation for credit institutions in the EU, based on the Capital Requirements Regulation (CRR). The objective is to ensure institutions' continuous solvency through quantitative regulations derived from the Basel liquidity framework.\n\nKey elements include the Liquidity Coverage Requirement (LCR) and the Net Stable Funding Ratio (NSFR). The LCR mandates a minimum stock of high-quality liquid assets to cover a severe stress scenario over 30 days. The NSFR aims to ensure a sustainable funding structure by limiting maturity transformation, thereby reducing refinancing risk over a longer time horizon. A simplified NSFR may apply to small, non-complex institutions. These are complemented by Additional Monitoring Metrics (AMM) for a comprehensive analysis of liquidity and refinancing risk, as well as disclosure requirements for liquidity ratios.\n\nAnother crucial aspect is the management of intraday liquidity, which is essential for the smooth functioning of payment and settlement systems. The assessment of intraday liquidity risk management is conducted within the SREP framework."
+        },
+        "url": "https://www.bundesbank.de/de/aufgaben/finanzaufsicht/einzelaspekte/liquiditaet/liquiditaetsregulierung-598474",
+        "imp": "low"
+      },
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Kontrahentenrisiko bei Spot-Instrumenten auf nicht zugeteiltes Gold ab (Q&A 2026_7994)",
+          "en": "EBA rejects question on counterparty risk for spot instruments on unallocated gold (Q&A 2026_7994)"
+        },
+        "sl": "spot-instrument-on-unallocated-gold-are-subject-to-counterparty-risk",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich des Kontrahentenrisikos von Spot-Instrumenten auf nicht zugeteiltes Gold abgelehnt. Die Anfrage bezog sich auf die Verordnung (EU) Nr. 575/2013 (CRR) und das Thema Kreditrisiko.\n\nDie EBA lehnte die Frage ab, da keine Leitlinien oder Klarstellungen der EBA als notwendig erachtet wurden. Zudem schien die Frage auf eine spezifische Beratung zur aufsichtsrechtlichen Behandlung einer bestimmten Transaktionsart abzuzielen. Der Q&A-Prozess ist nicht dazu gedacht, Ratschläge zu individuellen Transaktionen zu erteilen.\n\nDas Single Rule Book Q&A-Tool dient der Bereitstellung von Erläuterungen und nicht-bindenden Auslegungen zur praktischen Anwendung von Rechtsakten, nicht der individuellen Beratung.",
+          "en": "The EBA has rejected a question regarding the counterparty risk of spot instruments on unallocated gold. The inquiry related to Regulation (EU) No 575/2013 (CRR) and the topic of credit risk.\n\nThe EBA rejected the question because EBA guidance or clarification was not deemed necessary. Furthermore, the question appeared to seek bespoke advice on the prudential treatment of a specific type of transaction. The Q&A process is not intended to provide advice dependent on the particular contractual characteristics or circumstances of individual transactions.\n\nThe Single Rule Book Q&A tool is established to provide explanations and non-binding interpretations on the practical application of legislative acts, not for individual advice."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7994",
+        "imp": "low",
+        "refnum": "2026_7994"
+      },
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Gold-Sensitivitäten im Marktrisiko ab (Q&A 2026_7993)",
+          "en": "EBA rejects question on gold sensitivities in market risk (Q&A 2026_7993)"
+        },
+        "sl": "instrument-on-unallocated-gold-according-to-alternative-standardised-approach-fo",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Einordnung von Gold-Sensitivitäten bei Instrumenten, die sich auf nicht zugeteiltes Gold beziehen, im Rahmen des alternativen Standardansatzes für Marktrisiken abgelehnt. Es ging um die Frage, ob diese Sensitivitäten dem Rohstoffrisiko oder dem Fremdwährungsrisiko zuzuordnen sind.\n\nDie Ablehnung erfolgte, da die EBA keine Notwendigkeit für eine Klärung oder Harmonisierung der Praxis durch den Q&A-Prozess sah. Die EBA begründete dies damit, dass die Angelegenheit möglicherweise nicht wesentlich ist oder nur für eine begrenzte Anzahl von Instituten relevant sei.\n\nGemäß Artikel 325as der CRR werden Edelmetalle, einschließlich Gold, in Bucket 7 der Anlageklasse „Rohstoffe“ eingeordnet. Im vereinfachten Verfahren wird Gold gemäß Artikel 352 dem Fremdwährungsrisiko zugerechnet.",
+          "en": "The EBA has rejected a question regarding the classification of gold sensitivities for instruments related to unallocated gold under the alternative standardised approach for market risk. The query concerned whether these sensitivities should be assigned to commodity risk or foreign exchange risk.\n\nRejection occurred because the EBA did not see a need for clarification or harmonisation of practice through the Q&A process. The EBA justified this by stating that the matter might not be material or only relevant to a limited number of institutions.\n\nAccording to Article 325as of the CRR, precious metals, including gold, are classified in Bucket 7 of the “Commodity” asset class. Under the simplified method, gold is included in foreign exchange risk, as specified in Article 352."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7993",
+        "imp": "low",
+        "refnum": "2026_7993"
+      },
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Q&A zu HQLA-Einstufung von Drittland-Staatsforderungen ab (2026_7975)",
+          "en": "EBA rejects Q&A on HQLA eligibility of third-country government claims (2026_7975)"
+        },
+        "sl": "clarification-on-the-use-of-external-credit-assessments-when-determining-hqla-el",
+        "s": {
+          "de": "Die EBA hat eine Anfrage zur Verwendung externer Bonitätseinstufungen bei der Bestimmung der HQLA-Fähigkeit von Vermögenswerten, die eine Forderung an eine Zentralregierung eines Drittlandes darstellen, abgelehnt. Konkret ging es um die Frage, ob kurzfristige Bonitätseinstufungen einer benannten ECAI, die dem Credit Quality Step 1 (CQS 1) entsprechen, für die Einstufung als Level 1-Vermögenswert verwendet werden können.\n\nDie Anfrage bezog sich auf Artikel 10(c)(ii) der Delegierten Verordnung (EU) 2015/61 (LCR-Verordnung) und die CRR. Die EBA begründete die Ablehnung damit, dass die betreffende Thematik im regulatorischen Rahmen bereits ausreichend klar und eindeutig erläutert oder behandelt wird. Dies bedeutet, dass die bestehenden Vorschriften als hinreichend präzise für die Anwendung erachtet werden.\n\nDie Ablehnung erfolgte am 22.09.2026, nachdem die Anfrage am 17.08.2026 eingereicht wurde. Die EBA weist darauf hin, dass das Single Rule Book Q&A-Tool Erläuterungen und unverbindliche Auslegungen zur praktischen Anwendung der Rechtsakte liefern soll, aber nicht für bereits klar geregelte Sachverhalte.",
+          "en": "The EBA has rejected a query regarding the use of external credit assessments for determining the HQLA eligibility of assets representing a claim on a third-country central government. Specifically, the question concerned whether short-term credit assessments from a nominated ECAI corresponding to Credit Quality Step 1 (CQS 1) could be used for Level 1 asset eligibility.\n\nThe query referred to Article 10(c)(ii) of Delegated Regulation (EU) 2015/61 (LCR Regulation) and the CRR. The EBA justified the rejection by stating that the issue is already explained or addressed in the regulatory framework, which is sufficiently clear and unambiguous. This implies that the existing provisions are considered precise enough for application.\n\nThe rejection was issued on 22.09.2026, following the submission of the query on 17.08.2026. The EBA noted that the Single Rule Book Q&A tool is intended to provide explanations and non-binding interpretations on the practical application of legislative acts, but not for matters already clearly regulated."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7975",
+        "imp": "low",
+        "refnum": "2026_7975"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zu Sicherheitenabschlägen für Drittland-PSEs/RGLAs ab (Q&A 2026_7989)",
+          "en": "EBA rejects question on collateral haircuts for third-country PSEs/RGLAs (Q&A 2026_7989)"
+        },
+        "sl": "collateral-haircuts-for-third-country-equivalent-pse-rgla-s",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Auslegung von Artikel 197 Absatz 2 Buchstaben a und b der CRR abgelehnt. Es ging darum, ob Verweise auf PSEs (Einrichtungen des öffentlichen Sektors) und RGLAs (regionale Gebietskörperschaften) in den Artikeln 115 Absatz 2 und 116 Absatz 4 CRR auch gleichwertige Drittland-Einheiten gemäß Artikel 115 Absatz 4 und 116 Absatz 5 CRR umfassen.\n\nDie Fragestellung bezog sich auf die Anwendbarkeit von Sicherheitenabschlägen für Schuldtitel, die von diesen Drittland-Einheiten ausgegeben werden. Die EBA begründete die Ablehnung damit, dass die betreffenden Artikel der Verordnung (EU) Nr. 575/2013 (CRR) ausreichend klar und eindeutig sind und die Frage bereits beantworten.\n\nDie Ablehnung bedeutet, dass die EBA keine weitere Klärung für notwendig erachtet. Finanzinstitute müssen die bestehenden CRR-Vorschriften bezüglich Sicherheitenabschlägen und der Anerkennung von Drittland-Einheiten als ausreichend präzise ansehen.",
+          "en": "The EBA has rejected a question regarding the interpretation of Article 197(2)(a) and (b) of the CRR. The query concerned whether references to PSEs (public sector entities) and RGLAs (regional governments and local authorities) in Articles 115(2) and 116(4) CRR should also encompass equivalent third-country entities as referred to in Articles 115(4) and 116(5) CRR.\n\nThe question related to the applicability of collateral haircuts for debt securities issued by these third-country entities. The EBA justified the rejection by stating that the relevant articles of Regulation (EU) No 575/2013 (CRR) are sufficiently clear and unambiguous and already address the question.\n\nThe rejection implies that the EBA does not consider further clarification necessary. Financial institutions must regard the existing CRR provisions concerning collateral haircuts and the recognition of third-country entities as sufficiently precise."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7989",
+        "imp": "low",
+        "refnum": "2026_7989"
+      }
+    ],
+    "marisk": [
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Aufsichtliche Beurteilung des bankinternen Liquiditätsrisikomanagements (ILAAP)",
+          "en": "Supervisory Assessment of Internal Liquidity Risk Management (ILAAP)"
+        },
+        "sl": "aufsichtliche-beurteilung-des-bankinternen-liquiditaetsrisikomanagements-ilaap",
+        "s": {
+          "de": "Die Deutsche Bundesbank präzisiert ihre Erwartungen an das bankinterne Liquiditätsrisikomanagement (ILAAP) und die Ausgestaltung von Liquiditätstransferpreissystemen. Dies geschieht im Kontext der MaRisk (insbesondere BTR 3) und der 4. MaRisk-Novelle von 2012.\n\nKleinere Institute sollen Konzepte für Verrechnungssysteme entwickeln, die Liquiditätskosten und -nutzen quantifizieren, auch wenn die Steuerung oft noch über Volumenlimite erfolgt. Die Aufsicht erwartet eine verursachungsgerechte interne Verrechnung von Liquiditätskosten, -nutzen und -risiken, die über eine pauschale Betrachtung auf Geschäftsfeldebene hinausgeht. Bei Liquiditätstransferpreissystemen soll die Verrechnung möglichst auf Transaktionsebene erfolgen, bei Verrechnungssystemen ist eine sinnvolle Zusammenfassung gleichartiger Produkte und Geschäfte zulässig. Die Überwachung der Entwicklung und regelmäßigen Überprüfung dieser Systeme obliegt dem Risikocontrolling, welches die Expertise der Treasury nutzen kann.\n\nAlle Institute müssen bis spätestens Ende 2013 ein Konzept für ein Liquiditätstransferpreis- bzw. Verrechnungssystem erstellen. Die Umsetzungsfrist wird über das Jahresende hinaus gewährt, wobei die Aufsicht Verzögerungen im Einzelfall mit Augenmaß beurteilt, sofern sie nicht auf Versäumnisse des Instituts zurückzuführen sind. Institute sollen vorhandene Mechanismen überprüfen und zeitnah Verbesserungen vornehmen.",
+          "en": "The Deutsche Bundesbank clarifies its expectations regarding internal liquidity risk management (ILAAP) and the design of liquidity transfer pricing systems. This is set within the context of MaRisk (especially BTR 3) and the 4th MaRisk amendment from 2012.\n\nSmaller institutions are expected to develop concepts for internal charging systems that quantify liquidity costs and benefits, even if management is often still based on volume limits. The supervisory authority expects a cost-of-cause-based internal allocation of liquidity costs, benefits, and risks, going beyond a general consideration at the business segment level. For liquidity transfer pricing systems, allocation should ideally occur at the transaction level; for internal charging systems, a sensible aggregation of products and transactions with similar liquidity characteristics is permissible. The oversight of the development and regular review of these systems is the responsibility of risk controlling, which can draw on the expertise of the treasury.\n\nAll institutions must prepare a concept for a liquidity transfer pricing or internal charging system by the end of 2013 at the latest. The implementation period extends beyond the end of the year, with the supervisory authority exercising discretion in assessing delays in individual cases, provided they are not due to institutional shortcomings. Institutions are expected to review existing mechanisms and implement improvements to their systems and procedures promptly."
+        },
+        "url": "https://www.bundesbank.de/de/aufgaben/finanzaufsicht/einzelaspekte/risikomanagement/icaap-ilaap/risikotragfaehigkeit-894792",
+        "imp": "low"
+      },
+      {
+        "d": "30.06.2026",
         "t": {
           "de": "Konsultation",
           "en": "Consultation"
         },
-        "src": "eiopa.europa.eu",
+        "src": "bafin.de",
         "ti": {
-          "de": "Konsultation zu RTS zur Unabhängigkeit von Gutachtern bei der Abwicklung von Versicherern (IRRD)",
-          "en": "Consultation on RTS on independence of valuers for insurance resolution (IRRD)"
+          "de": "Vergleichsversion der 9. MaRisk-Novelle (Konsultationsfassung zur Veröffentlichungsfassung)",
+          "en": "Comparison Version of the 9th MaRisk Amendment (Consultation Draft to Final Version)"
         },
-        "sl": "consultation-on-the-proposal-for-regulatory-technical-standards-on-the-independe",
+        "sl": "vergleichsversion-der-konsultationsfassung-zur-veroeffentlichungsfassung-der-9-m",
         "s": {
-          "de": "Die Konsultation der EIOPA betrifft den Entwurf Regulierungs-Technischer Standards (RTS) zur Unabhängigkeit von Gutachtern im Rahmen der Abwicklung von Versicherungsunternehmen gemäß Artikel 24(6) der Insurance Recovery and Resolution Directive (IRRD).\n\nDiese RTS legen die Bedingungen fest, unter denen ein potenzieller Gutachter als unabhängig von der Abwicklungsbehörde und dem abzuwickelnden Unternehmen gilt. Sie sind für alle interessierten Stakeholder relevant und ermöglichen die Bewertung von Vermögenswerten und Verbindlichkeiten eines Unternehmens im Abwicklungsfall. Die IRRD, die im Januar 2027 in Kraft tritt, schafft einen Rahmen für Sanierung und Abwicklung von (Rück-)Versicherern in Europa, um die Stabilität des Sektors zu gewährleisten und geordnete Abwicklungen zu ermöglichen.\n\nDie Konsultationsfrist endete am 20. März 2026.",
-          "en": "EIOPA's consultation concerns the draft Regulatory Technical Standards (RTS) on the independence of valuers for the resolution of insurance undertakings, as per Article 24(6) of the Insurance Recovery and Resolution Directive (IRRD).\n\nThese RTS specify the conditions under which a candidate valuer is deemed independent from both the resolution authority and the entity under resolution. They are relevant for all interested stakeholders and enable the valuation of an entity's assets and liabilities in a resolution scenario. The IRRD, effective January 2027, establishes a recovery and resolution framework for (re)insurers in Europe, aiming to maintain sector stability and facilitate orderly wind-downs.\n\nThe consultation period concluded on March 20, 2026."
+          "de": "Die BaFin hat eine Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk-Novelle herausgegeben. Dieses Rundschreiben konkretisiert die Anforderungen an das Risikomanagement von Instituten auf Basis von § 25a Abs. 1 KWG und präzisiert zudem die Vorgaben des § 25b KWG (Auslagerung) und § 26c KWG (ESG-Risiken). Es legt einen flexiblen und praxisnahen Rahmen für die Ausgestaltung des Risikomanagements fest und schafft eine Grundlage für die Überwachungsfunktionen des Aufsichtsorgans.\n\nDas Rundschreiben ist für alle Institute relevant und setzt den qualitativen Rahmen für die Auslegung maßgeblicher Artikel der Bankenrichtlinie (CRD IV, zuletzt geändert durch CRD VI) zur Organisation und zum Risikomanagement. Es fordert die Einrichtung angemessener Leitungs-, Steuerungs- und Kontrollprozesse, wirksamer Verfahren zur Ermittlung, Steuerung, Überwachung und Kommunikation von Risiken sowie angemessener interner Kontrollmechanismen. Zudem müssen Institute über Verfahren verfügen, die gewährleisten, dass genügend internes Kapital zur Abdeckung aller wesentlichen Risiken vorhanden ist (Internal Capital Adequacy Assessment Process).\n\nDie MaRisk-Novelle integriert zudem verschiedene EBA-Leitlinien, darunter solche zu Stresstests, notleidenden und gestundeten Risikopositionen, Auslagerungen, Kreditvergabe und -überwachung, interner Governance, Zinsänderungs- und Kreditspreadrisiken sowie ESG-Risiken und Umwelt-Szenarioanalysen. Die Anwendung der Anforderungen erfolgt proportional, wobei für kleine und sehr kleine Institute weitere Erleichterungen vorgesehen sind. Die Veröffentlichung erfolgte am 30.06.2026.",
+          "en": "The BaFin has published a comparison version of the consultation draft to the final version of the 9th MaRisk amendment. This circular specifies the requirements for risk management in institutions based on Section 25a (1) KWG and further clarifies the provisions of Section 25b KWG (outsourcing) and Section 26c KWG (ESG risks). It establishes a flexible and practical framework for the design of risk management and provides a basis for the supervisory body's monitoring functions.\n\nThis circular is relevant for all institutions and sets the qualitative framework for interpreting key articles of the Banking Directive (CRD IV, most recently amended by CRD VI) regarding the organization and risk management of institutions. It requires the establishment of appropriate governance, management, and control processes, effective procedures for identifying, managing, monitoring, and communicating actual or potential risks, and adequate internal control mechanisms. Furthermore, institutions must have effective and comprehensive procedures and methods to ensure sufficient internal capital to cover all material risks (Internal Capital Adequacy Assessment Process).\n\nThe MaRisk amendment also integrates various EBA guidelines, including those on stress testing, non-performing and forborne exposures, outsourcing, loan origination and monitoring, internal governance, interest rate and credit spread risks, and ESG risks and environmental scenario analysis. The application of the requirements is proportional, with further simplifications provided for small and very small institutions. The publication date is June 30, 2026."
         },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-independence-valuers-resolution-under-article_en",
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk_vergleichsfassung_konsultation.html",
         "imp": "medium",
-        "deadline": "20.03.2026"
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Bafin veröffentlicht die überarbeiteten Mindestanforderungen an das Risikomanagement von Banken (9. MaRisk-Novelle)",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-die-ueberarbeiteten-mindestanforderungen-an-das-risikomanagement-von-banken-9-marisk-novelle/",
+            "d": "07.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "30.06.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Mindestanforderungen an das Risikomanagement (MaRisk 9. Novelle)",
+          "en": "Minimum Requirements for Risk Management (MaRisk 9th Amendment)"
+        },
+        "sl": "rundschreiben-06-2026-ba",
+        "s": {
+          "de": "Das Rundschreiben 06/2026 (BA) der BaFin, auch bekannt als 9. MaRisk-Novelle, legt die Mindestanforderungen an das Risikomanagement von Instituten fest. Es präzisiert die Anforderungen des § 25a Abs. 1 KWG für einen flexiblen und praxisnahen Rahmen des Risikomanagements sowie die Vorgaben des § 25b KWG (Auslagerung) und des § 26c KWG (ESG-Risiken). Ziel ist die Sicherstellung angemessener Leitungs-, Steuerungs- und Kontrollprozesse sowie wirksamer Verfahren zur Risikosteuerung und -überwachung.\n\nDie MaRisk setzen zudem maßgebliche Artikel der Bankenrichtlinie (CRD IV, geändert durch CRD VI) um und integrieren verschiedene EBA-Leitlinien, darunter solche zu Stresstests, notleidenden Risikopositionen, Auslagerungen, Kreditvergabe und Überwachung, interner Governance, Zinsänderungsrisiken und ESG-Risiken. Die Umsetzung erfolgt proportional, wobei für CRD-Drittstaatenzweigstellen spezifische Regelungen zur Einbeziehung der Unternehmenszentralen getroffen werden. Institute müssen über die dargestellten Anforderungen hinausgehende Vorkehrungen treffen, wenn dies zur Sicherstellung eines angemessenen und wirksamen Risikomanagements erforderlich ist.\n\nDie BaFin hat das Rundschreiben am 30.06.2026 veröffentlicht. Es enthält Vergleichsversionen zur 8. MaRisk-Novelle und zur Konsultationsfassung, was auf eine Überarbeitung und Finalisierung hindeutet.",
+          "en": "Circular 06/2026 (BA) from BaFin, also known as the 9th MaRisk amendment, sets out the minimum requirements for risk management in institutions. It specifies the requirements of Section 25a (1) KWG for a flexible and practical framework for risk management, as well as the provisions of Section 25b KWG (outsourcing) and Section 26c KWG (ESG risks). The aim is to ensure appropriate management, steering, and control processes, as well as effective procedures for risk management and monitoring.\n\nThe MaRisk also implement key articles of the Banking Directive (CRD IV, amended by CRD VI) and integrate various EBA guidelines, including those on stress testing, non-performing exposures, outsourcing, lending and monitoring, internal governance, interest rate risks, and ESG risks. Implementation is proportional, with specific rules for CRD third-country branches regarding the involvement of their head offices. Institutions must take precautions beyond the stated requirements if this is necessary to ensure adequate and effective risk management.\n\nBaFin published the circular on June 30, 2026. It includes comparison versions to the 8th MaRisk amendment and the consultation draft, indicating a revision and finalization process."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk.html",
+        "imp": "high",
+        "refnum": "06/2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Bafin veröffentlicht die überarbeiteten Mindestanforderungen an das Risikomanagement von Banken (9. MaRisk-Novelle)",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-die-ueberarbeiteten-mindestanforderungen-an-das-risikomanagement-von-banken-9-marisk-novelle/",
+            "d": "07.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "30.06.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Vergleich der 8. und 9. MaRisk-Novelle (CIRCULAR)",
+          "en": "Comparison of 8th and 9th MaRisk Amendment (CIRCULAR)"
+        },
+        "sl": "vergleichsversion-der-8-marisk-novelle-zur-9-marisk-novelle",
+        "s": {
+          "de": "Die BaFin hat eine Vergleichsversion der 8. zur 9. MaRisk-Novelle veröffentlicht. Dieses Dokument stellt die Änderungen zwischen den beiden Versionen der Mindestanforderungen an das Risikomanagement (MaRisk) dar. Es beinhaltet eine detaillierte Gegenüberstellung der Abschnitte zu den allgemeinen Anforderungen an das Risikomanagement, wie Risikotragfähigkeit, Strategien und das interne Kontrollsystem, sowie spezifische Anforderungen an das Kredit-, Handels- und Immobiliengeschäft.\n\nDie Novelle ist für alle Finanzinstitute relevant, die den MaRisk unterliegen. Sie müssen die Anpassungen im Risikomanagement, insbesondere in Bezug auf Datenmanagement, Datenqualität und Aggregation von Risikodaten (AT 4.3.4), sowie die Verwendung von Modellen (AT 4.3.5) und das Risikomanagement auf Gruppenebene (AT 4.5) prüfen und umsetzen. Die KPMG hebt in ihrem Fachbeitrag die Überarbeitung der MaRisk hervor, was die Bedeutung dieser Aktualisierung für die Praxis unterstreicht.\n\nDas Rundschreiben datiert vom 29.05.2024, wobei die Vergleichsversion selbst den Stand vom 30.06.2026 angibt. Dies deutet auf eine zukünftige Gültigkeit oder eine Vorabveröffentlichung hin, die den Instituten Zeit zur Vorbereitung geben soll.",
+          "en": "BaFin has published a comparison version of the 8th to the 9th MaRisk amendment. This document outlines the changes between the two versions of the Minimum Requirements for Risk Management (MaRisk). It includes a detailed comparison of sections on general risk management requirements, such as risk-bearing capacity, strategies, and the internal control system, as well as specific requirements for credit, trading, and real estate business.\n\nThe amendment is relevant for all financial institutions subject to MaRisk. They must review and implement the adjustments in risk management, particularly concerning data management, data quality, and aggregation of risk data (AT 4.3.4), as well as the use of models (AT 4.3.5) and group-wide risk management (AT 4.5). KPMG's expert contribution highlights the revision of MaRisk, underscoring the practical significance of this update.\n\nThe circular is dated 29.05.2024, with the comparison version itself indicating a status of 30.06.2026. This suggests future applicability or a pre-publication intended to give institutions time to prepare."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk_vergleichsfassung_8_marisk.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Bafin veröffentlicht die überarbeiteten Mindestanforderungen an das Risikomanagement von Banken (9. MaRisk-Novelle)",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-die-ueberarbeiteten-mindestanforderungen-an-das-risikomanagement-von-banken-9-marisk-novelle/",
+            "d": "07.07.2026"
+          }
+        ]
       }
     ],
     "dltpilot": [
@@ -436,134 +787,6 @@
         "imp": "medium"
       }
     ],
-    "sanctions": [
-      {
-        "d": "23.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bundesbank.de",
-        "ti": {
-          "de": "Finanzsanktionen gegen Personen und Organisationen in Bezug auf Afghanistan",
-          "en": "Financial Sanctions against Persons and Entities in relation to Afghanistan"
-        },
-        "sl": "afghanistan",
-        "s": {
-          "de": "Die Bundesbank informiert über Finanzsanktionen gegen bestimmte Personen, Gruppen, Unternehmen und Einrichtungen im Zusammenhang mit der Lage in Afghanistan. Diese Sanktionen setzen Maßnahmen des Sicherheitsrats der Vereinten Nationen um.\n\nDie Maßnahmen umfassen ein Verbot, diesen gelisteten Entitäten Gelder oder wirtschaftliche Ressourcen direkt oder indirekt zur Verfügung zu stellen. Zudem werden alle Gelder und wirtschaftlichen Ressourcen, die sich im Eigentum oder Besitz dieser Entitäten befinden oder von ihnen kontrolliert werden, eingefroren. Finanzinstitute müssen sicherstellen, dass sie keine Transaktionen mit gelisteten Personen oder Organisationen durchführen und deren Vermögenswerte einfrieren.\n\nUnter engen Voraussetzungen, beispielsweise für Grundbedürfnisse gelisteter Personen, können Ausnahmegenehmigungen erteilt werden. Anträge hierfür sind beim Servicezentrum Finanzsanktionen der Deutschen Bundesbank einzureichen. Verbindlich sind ausschließlich die im Amtsblatt der Europäischen Union oder im Bundesanzeiger veröffentlichten Texte.",
-          "en": "The Bundesbank provides information on financial sanctions against specific individuals, groups, undertakings, and entities in connection with the situation in Afghanistan. These sanctions implement measures adopted by the United Nations Security Council.\n\nThe measures include a prohibition on directly or indirectly making funds or economic resources available to these listed entities. Furthermore, all funds and economic resources owned, possessed, held, or controlled by these entities are frozen. Financial institutions must ensure they do not conduct transactions with listed persons or organizations and freeze their assets.\n\nUnder strict conditions, such as for the basic needs of listed persons, exemptions may be granted. Applications for such exemptions must be submitted to the Financial Sanctions Service Centre of the Deutsche Bundesbank. Only the texts published in the Official Journal of the European Union or the Federal Gazette are legally binding."
-        },
-        "url": "https://www.bundesbank.de/de/service/finanzsanktionen/sanktionsregimes/afghanistan-610324",
-        "imp": "low"
-      },
-      {
-        "d": "22.09.2026",
-        "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Durchführungsverordnung zur Aktualisierung restriktiver Maßnahmen gegen Personen und Einrichtungen in Afghanistan (EU) 2026/2138",
-          "en": "Implementing Regulation updating restrictive measures against individuals and entities in Afghanistan (EU) 2026/2138"
-        },
-        "sl": "durchfuehrungsverordnung-eu-2026-2138-des-rates-vom-22-september-2026-zur-durchf",
-        "s": {
-          "de": "Diese Durchführungsverordnung des Rates ändert die Verordnung (EU) Nr. 753/2011 über restriktive Maßnahmen angesichts der Lage in Afghanistan. Die Änderungen betreffen Anhang I der Verordnung, in dem die Listen der sanktionierten Personen und Einrichtungen geführt werden.\n\nKonkret werden die Einträge zu 24 Personen und einer Einrichtung aktualisiert, die mit den Taliban in Verbindung stehen und restriktiven Maßnahmen unterliegen. Die Aktualisierungen basieren auf Informationen des Sanktionsausschusses des Sicherheitsrates der Vereinten Nationen.\n\nDie Verordnung ist am Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft getreten und gilt unmittelbar in jedem Mitgliedstaat.",
-          "en": "This Council Implementing Regulation amends Regulation (EU) No 753/2011 concerning restrictive measures in view of the situation in Afghanistan. The amendments relate to Annex I of the Regulation, which lists the sanctioned individuals and entities.\n\nSpecifically, the entries for 24 individuals and one entity associated with the Taliban and subject to restrictive measures are updated. These updates are based on information from the United Nations Security Council's Sanctions Committee.\n\nThe Regulation entered into force on the day following its publication in the Official Journal of the European Union and is directly applicable in all Member States."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2138",
-        "imp": "low",
-        "refnum": "32026R2138"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …",
-          "en": "Berichtigung der Verordnung (EU) 2026/513 des Rates vom 23. April 2026 zur Änderung der Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus und der Beteiligung von …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Rolle in Russlands Aggression gegen die Ukraine ändert. Die Korrektur betrifft spezifische redaktionelle Fehler oder Ungenauigkeiten in der ursprünglichen Verordnung.\n\nDie Berichtigung ist für Finanzinstitute relevant, die Transaktionen mit Bezug zu Belarus durchführen oder Geschäftsbeziehungen zu belarussischen Entitäten unterhalten. Sie müssen die Änderungen genau prüfen, um die Einhaltung der aktualisierten Sanktionsbestimmungen sicherzustellen und mögliche Compliance-Risiken zu vermeiden.\n\nDie ursprüngliche Verordnung (EU) 2026/513 wurde am 23. April 2026 veröffentlicht. Die vorliegende Berichtigung ist am 11. August 2026 in Kraft getreten.",
-          "en": "This corrigendum rectifies Council Regulation (EU) 2026/513, which amends restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. The correction addresses specific editorial errors or inaccuracies in the original regulation.\n\nThis corrigendum is relevant for financial institutions conducting transactions related to Belarus or maintaining business relationships with Belarusian entities. They must carefully review the changes to ensure compliance with the updated sanctions provisions and to avoid potential compliance risks.\n\nThe original Regulation (EU) 2026/513 was published on April 23, 2026. This corrigendum entered into force on August 11, 2026."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
-        "imp": "low",
-        "refnum": "32026R0513R(01)"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …",
-          "en": "Berichtigung der Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung (EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in …"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Die Berichtigung zur Verordnung (EU) 2026/506 des Rates vom 23. April 2026 korrigiert einen Fehler in der Verordnung (EU) Nr. 833/2014. Konkret wird in Artikel 1 Nummer 1 Buchstabe b Ziffer i der Verordnung (EU) 2026/506 der Verweis auf „Artikel 3m Absatz 1“ durch „Artikel 3m Absatz 2“ ersetzt.\n\nDiese Änderung betrifft Finanzdienstleistungsunternehmen, die von den restriktiven Maßnahmen der EU gegen Russland betroffen sind. Die Korrektur ist relevant für die korrekte Anwendung und Auslegung der Sanktionsvorschriften, insbesondere im Hinblick auf die in Artikel 3m genannten Bestimmungen. PwC Legal weist in einem Fachbeitrag auf die Notwendigkeit einer neuen Compliance-Architektur für Finanzdienstleister hin, was die Bedeutung präziser Regelungen unterstreicht.",
-          "en": "The corrigendum to Council Regulation (EU) 2026/506 of 23 April 2026 corrects an error in Regulation (EU) No 833/2014. Specifically, in Article 1, point 1(b)(i) of Regulation (EU) 2026/506, the reference to “Article 3m(1)” is replaced by “Article 3m(2)”.\n\nThis amendment affects financial services companies impacted by the EU's restrictive measures against Russia. The correction is relevant for the correct application and interpretation of the sanctions provisions, particularly with regard to the provisions mentioned in Article 3m. PwC Legal highlights in an expert article the need for a new compliance architecture for financial service providers, which underscores the importance of precise regulations."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
-        "imp": "low",
-        "refnum": "32026R0506R(03)",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "12.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Stimmrechten bei eingefrorenen Geldern (C-465/24 SBK Art)",
-          "en": "ECJ judgment on voting rights for frozen funds (C-465/24 SBK Art)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-465-24-sbk-art",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass das Einfrieren von Geldern im Rahmen restriktiver Maßnahmen gegen Russland den Inhaber eines Anteilszertifikats kategorisch und ohne weitere Voraussetzungen daran hindert, an einer Hauptversammlung der Anteilseigner teilzunehmen und das Stimmrecht auszuüben. Wertpapierzertifikate werden als Gelder eingestuft, und die Ausübung der damit verbundenen Rechte stellt eine Nutzung dieser Gelder dar.\n\nDiese Nutzung kann die Eigenschaften oder die Zweckbestimmung der Gelder beeinflussen, da Beschlüsse der Versammlung den Zustand und die Funktion der Gesellschaft sowie den Wert der Anteile beeinflussen. Eine weniger strikte Auslegung würde dem Ziel entgegenwirken, Transaktionen mit eingefrorenen Geldern so weit wie möglich zu begrenzen. Das Urteil erfolgte im Kontext von Sanktionen gegen die russische Sberbank und deren Tochtergesellschaft SBK Art.\n\nDas Urteil des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Fragen zu befinden haben. Es klärt die Reichweite von Sanktionen im Hinblick auf die Ausübung von Aktionärsrechten bei eingefrorenen Vermögenswerten.",
-          "en": "The European Court of Justice (ECJ) has ruled that the freezing of funds under restrictive measures against Russia categorically and unconditionally prevents the holder of a depositary receipt from attending a general meeting of shareholders and exercising voting rights. Securities certificates are classified as funds, and the exercise of associated rights constitutes a use of these funds.\n\nSuch use can affect the characteristics or purpose of the funds, as resolutions passed at the meeting influence the company's status and function, as well as the value of the shares. A less strict interpretation would undermine the objective of limiting transactions with frozen funds as much as possible. The judgment was rendered in the context of sanctions against the Russian Sberbank and its subsidiary SBK Art.\n\nThe ECJ's judgment is binding on national courts when they have to decide on similar issues. It clarifies the scope of sanctions regarding the exercise of shareholder rights for frozen assets."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260035de.pdf",
-        "imp": "high",
-        "refnum": "C-465/24"
-      },
-      {
-        "d": "05.02.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union",
-          "en": "Gesetz zur Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union"
-        },
-        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
-        "s": {
-          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
-          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
-        "imp": "high"
-      }
-    ],
     "consumer": [
       {
         "d": "22.09.2026",
@@ -689,128 +912,6 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1844",
         "imp": "medium",
         "refnum": "Ares(2018)3472049"
-      }
-    ],
-    "crr3": [
-      {
-        "d": "22.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zu Kontrahentenrisiko bei Spot-Instrumenten auf nicht zugeteiltes Gold ab (Q&A 2026_7994)",
-          "en": "EBA rejects question on counterparty risk for spot instruments on unallocated gold (Q&A 2026_7994)"
-        },
-        "sl": "spot-instrument-on-unallocated-gold-are-subject-to-counterparty-risk",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich des Kontrahentenrisikos von Spot-Instrumenten auf nicht zugeteiltes Gold abgelehnt. Die Anfrage bezog sich auf die Verordnung (EU) Nr. 575/2013 (CRR) und das Thema Kreditrisiko.\n\nDie EBA lehnte die Frage ab, da keine Leitlinien oder Klarstellungen der EBA als notwendig erachtet wurden. Zudem schien die Frage auf eine spezifische Beratung zur aufsichtsrechtlichen Behandlung einer bestimmten Transaktionsart abzuzielen. Der Q&A-Prozess ist nicht dazu gedacht, Ratschläge zu individuellen Transaktionen zu erteilen.\n\nDas Single Rule Book Q&A-Tool dient der Bereitstellung von Erläuterungen und nicht-bindenden Auslegungen zur praktischen Anwendung von Rechtsakten, nicht der individuellen Beratung.",
-          "en": "The EBA has rejected a question regarding the counterparty risk of spot instruments on unallocated gold. The inquiry related to Regulation (EU) No 575/2013 (CRR) and the topic of credit risk.\n\nThe EBA rejected the question because EBA guidance or clarification was not deemed necessary. Furthermore, the question appeared to seek bespoke advice on the prudential treatment of a specific type of transaction. The Q&A process is not intended to provide advice dependent on the particular contractual characteristics or circumstances of individual transactions.\n\nThe Single Rule Book Q&A tool is established to provide explanations and non-binding interpretations on the practical application of legislative acts, not for individual advice."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7994",
-        "imp": "low",
-        "refnum": "2026_7994"
-      },
-      {
-        "d": "22.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zu Gold-Sensitivitäten im Marktrisiko ab (Q&A 2026_7993)",
-          "en": "EBA rejects question on gold sensitivities in market risk (Q&A 2026_7993)"
-        },
-        "sl": "instrument-on-unallocated-gold-according-to-alternative-standardised-approach-fo",
-        "s": {
-          "de": "Die EBA hat eine Frage zur Einordnung von Gold-Sensitivitäten bei Instrumenten, die sich auf nicht zugeteiltes Gold beziehen, im Rahmen des alternativen Standardansatzes für Marktrisiken abgelehnt. Es ging um die Frage, ob diese Sensitivitäten dem Rohstoffrisiko oder dem Fremdwährungsrisiko zuzuordnen sind.\n\nDie Ablehnung erfolgte, da die EBA keine Notwendigkeit für eine Klärung oder Harmonisierung der Praxis durch den Q&A-Prozess sah. Die EBA begründete dies damit, dass die Angelegenheit möglicherweise nicht wesentlich ist oder nur für eine begrenzte Anzahl von Instituten relevant sei.\n\nGemäß Artikel 325as der CRR werden Edelmetalle, einschließlich Gold, in Bucket 7 der Anlageklasse „Rohstoffe“ eingeordnet. Im vereinfachten Verfahren wird Gold gemäß Artikel 352 dem Fremdwährungsrisiko zugerechnet.",
-          "en": "The EBA has rejected a question regarding the classification of gold sensitivities for instruments related to unallocated gold under the alternative standardised approach for market risk. The query concerned whether these sensitivities should be assigned to commodity risk or foreign exchange risk.\n\nRejection occurred because the EBA did not see a need for clarification or harmonisation of practice through the Q&A process. The EBA justified this by stating that the matter might not be material or only relevant to a limited number of institutions.\n\nAccording to Article 325as of the CRR, precious metals, including gold, are classified in Bucket 7 of the “Commodity” asset class. Under the simplified method, gold is included in foreign exchange risk, as specified in Article 352."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7993",
-        "imp": "low",
-        "refnum": "2026_7993"
-      },
-      {
-        "d": "22.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Q&A zu HQLA-Einstufung von Drittland-Staatsforderungen ab (2026_7975)",
-          "en": "EBA rejects Q&A on HQLA eligibility of third-country government claims (2026_7975)"
-        },
-        "sl": "clarification-on-the-use-of-external-credit-assessments-when-determining-hqla-el",
-        "s": {
-          "de": "Die EBA hat eine Anfrage zur Verwendung externer Bonitätseinstufungen bei der Bestimmung der HQLA-Fähigkeit von Vermögenswerten, die eine Forderung an eine Zentralregierung eines Drittlandes darstellen, abgelehnt. Konkret ging es um die Frage, ob kurzfristige Bonitätseinstufungen einer benannten ECAI, die dem Credit Quality Step 1 (CQS 1) entsprechen, für die Einstufung als Level 1-Vermögenswert verwendet werden können.\n\nDie Anfrage bezog sich auf Artikel 10(c)(ii) der Delegierten Verordnung (EU) 2015/61 (LCR-Verordnung) und die CRR. Die EBA begründete die Ablehnung damit, dass die betreffende Thematik im regulatorischen Rahmen bereits ausreichend klar und eindeutig erläutert oder behandelt wird. Dies bedeutet, dass die bestehenden Vorschriften als hinreichend präzise für die Anwendung erachtet werden.\n\nDie Ablehnung erfolgte am 22.09.2026, nachdem die Anfrage am 17.08.2026 eingereicht wurde. Die EBA weist darauf hin, dass das Single Rule Book Q&A-Tool Erläuterungen und unverbindliche Auslegungen zur praktischen Anwendung der Rechtsakte liefern soll, aber nicht für bereits klar geregelte Sachverhalte.",
-          "en": "The EBA has rejected a query regarding the use of external credit assessments for determining the HQLA eligibility of assets representing a claim on a third-country central government. Specifically, the question concerned whether short-term credit assessments from a nominated ECAI corresponding to Credit Quality Step 1 (CQS 1) could be used for Level 1 asset eligibility.\n\nThe query referred to Article 10(c)(ii) of Delegated Regulation (EU) 2015/61 (LCR Regulation) and the CRR. The EBA justified the rejection by stating that the issue is already explained or addressed in the regulatory framework, which is sufficiently clear and unambiguous. This implies that the existing provisions are considered precise enough for application.\n\nThe rejection was issued on 22.09.2026, following the submission of the query on 17.08.2026. The EBA noted that the Single Rule Book Q&A tool is intended to provide explanations and non-binding interpretations on the practical application of legislative acts, but not for matters already clearly regulated."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7975",
-        "imp": "low",
-        "refnum": "2026_7975"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zu Sicherheitenabschlägen für Drittland-PSEs/RGLAs ab (Q&A 2026_7989)",
-          "en": "EBA rejects question on collateral haircuts for third-country PSEs/RGLAs (Q&A 2026_7989)"
-        },
-        "sl": "collateral-haircuts-for-third-country-equivalent-pse-rgla-s",
-        "s": {
-          "de": "Die EBA hat eine Frage zur Auslegung von Artikel 197 Absatz 2 Buchstaben a und b der CRR abgelehnt. Es ging darum, ob Verweise auf PSEs (Einrichtungen des öffentlichen Sektors) und RGLAs (regionale Gebietskörperschaften) in den Artikeln 115 Absatz 2 und 116 Absatz 4 CRR auch gleichwertige Drittland-Einheiten gemäß Artikel 115 Absatz 4 und 116 Absatz 5 CRR umfassen.\n\nDie Fragestellung bezog sich auf die Anwendbarkeit von Sicherheitenabschlägen für Schuldtitel, die von diesen Drittland-Einheiten ausgegeben werden. Die EBA begründete die Ablehnung damit, dass die betreffenden Artikel der Verordnung (EU) Nr. 575/2013 (CRR) ausreichend klar und eindeutig sind und die Frage bereits beantworten.\n\nDie Ablehnung bedeutet, dass die EBA keine weitere Klärung für notwendig erachtet. Finanzinstitute müssen die bestehenden CRR-Vorschriften bezüglich Sicherheitenabschlägen und der Anerkennung von Drittland-Einheiten als ausreichend präzise ansehen.",
-          "en": "The EBA has rejected a question regarding the interpretation of Article 197(2)(a) and (b) of the CRR. The query concerned whether references to PSEs (public sector entities) and RGLAs (regional governments and local authorities) in Articles 115(2) and 116(4) CRR should also encompass equivalent third-country entities as referred to in Articles 115(4) and 116(5) CRR.\n\nThe question related to the applicability of collateral haircuts for debt securities issued by these third-country entities. The EBA justified the rejection by stating that the relevant articles of Regulation (EU) No 575/2013 (CRR) are sufficiently clear and unambiguous and already address the question.\n\nThe rejection implies that the EBA does not consider further clarification necessary. Financial institutions must regard the existing CRR provisions concerning collateral haircuts and the recognition of third-country entities as sufficiently precise."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7989",
-        "imp": "low",
-        "refnum": "2026_7989"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Nutzung aggregierter EBA-Verlustdaten für Immobilien außerhalb der EU (Q&A 2026_7980)",
-          "en": "Use of EBA’s aggregated loss data for “All national markets outside the Union” (Q&A 2026_7980)"
-        },
-        "sl": "use-of-the-eba-s-aggregated-loss-data-for-all-national-markets-outside-the-union",
-        "s": {
-          "de": "Die EBA hat eine Anfrage bezüglich der Nutzung aggregierter Verlustdaten für Immobilien außerhalb der EU im Rahmen der Artikel 125 und 126 der CRR abgelehnt. Konkret ging es um die Frage, ob die Zeile „All national markets outside the Union“ in der EBA-Publikation „Immovable-property loss data, Q4 2025“ für die Berechnung von Verlustquoten für Immobilien in der Schweiz herangezogen werden kann.\n\nDie Artikel 125 und 126 CRR ermöglichen eine privilegierte Behandlung von durch Wohn- oder Gewerbeimmobilien besicherten Risikopositionen, wenn bestimmte Verlustquotenschwellen eingehalten werden. Für Immobilien in Drittländern veröffentlicht die EBA relevante Verlustdaten, falls die zuständige Behörde des Drittlandes dies nicht tut und statistisch repräsentative Informationen vorliegen. Die EBA-Publikation enthält zwar eine aggregierte Zeile für alle Märkte außerhalb der Union, aber keine spezifischen Daten für einzelne Drittländer wie die Schweiz.\n\nDie EBA lehnte die Anfrage ab, da die Artikel 125(3) und 126(3) CRR die Thematik bereits ausreichend klar und unzweideutig regeln. Dies bedeutet, dass die aggregierten Daten nicht für die Beurteilung der Verlustquotenschwellen für spezifische nationale Immobilienmärkte außerhalb der EU, wie der Schweiz, verwendet werden können.",
-          "en": "The EBA has rejected an inquiry regarding the use of aggregated loss data for immovable property outside the EU under Articles 125 and 126 of the CRR. Specifically, the question was whether the row “All national markets outside the Union” in the EBA publication “Immovable-property loss data, Q4 2025” could be used to calculate loss rates for immovable property located in Switzerland.\n\nArticles 125 and 126 CRR allow for preferential treatment of exposures secured by residential or commercial immovable property if certain loss rate thresholds are met. For immovable property in third countries, the EBA publishes relevant loss data if the competent authority of the third country does not do so and statistically representative information is available. While the EBA publication includes an aggregated row for all markets outside the Union, it does not provide specific data for individual third countries such as Switzerland.\n\nThe EBA rejected the inquiry, stating that Articles 125(3) and 126(3) CRR already address the issue with sufficient clarity and unambiguousness. This implies that the aggregated data cannot be used to assess the loss rate thresholds for specific national immovable property markets outside the EU, such as Switzerland."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7980",
-        "imp": "low",
-        "refnum": "2026_7980"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Behandlung des besicherten Teils notleidender IPRE-Engagements unter dem Standardansatz (Q&A 2026_7979)",
-          "en": "Treatment of the secured portion of defaulted IPRE exposures under the Standardised Approach (Q&A 2026_7979)"
-        },
-        "sl": "treatment-of-the-secured-portion-of-defaulted-ipre-exposures-under-the-standardi",
-        "s": {
-          "de": "Die EBA hat eine Frage zur Behandlung des besicherten Teils notleidender IPRE-Engagements (Income-Producing Real Estate) unter dem Standardansatz abgelehnt. Die Anfrage bezog sich auf die Auslegung von Artikel 127(3) der CRR, der eine Risikogewichtung von 100 % für notleidende, nicht-IPRE-Engagements vorsieht, die durch Wohn- oder Gewerbeimmobilien besichert sind.\n\nDie Fragestellung zielte darauf ab, zu klären, ob der besicherte Teil notleidender IPRE-Engagements weiterhin gemäß den ETV-basierten Risikogewichtungsstufen der Artikel 125(2) oder 126(2) CRR behandelt werden sollte oder ob analog zu Artikel 127(3) CRR eine Risikogewichtung von 100 % anzuwenden ist. Die EBA lehnte die Frage ab, da die Bestimmungen der Artikel 127(1) bis (3) CRR als ausreichend klar und eindeutig erachtet werden.\n\nDie Ablehnung bedeutet, dass die bestehenden CRR-Regelungen für die Risikogewichtung und COREP-Meldung notleidender IPRE-Engagements unter dem Standardansatz als ausreichend angesehen werden und keine weitere Klärung durch die EBA erforderlich ist.",
-          "en": "The EBA has rejected a question regarding the treatment of the secured portion of defaulted income-producing real estate (IPRE) exposures under the Standardised Approach. The inquiry concerned the interpretation of Article 127(3) CRR, which stipulates a 100% risk weight for defaulted non-IPRE exposures secured by residential or commercial immovable property.\n\nThe question sought clarification on whether the secured portion of defaulted IPRE exposures should continue to be treated according to the ETV-based risk-weight buckets in Articles 125(2) or 126(2) CRR, or if a 100% risk weight should be applied analogously to Article 127(3) CRR. The EBA rejected the question, stating that the provisions of Articles 127(1) to (3) CRR are considered sufficiently clear and unambiguous.\n\nThe rejection implies that the existing CRR regulations for risk weighting and COREP reporting of defaulted IPRE exposures under the Standardised Approach are deemed adequate, and no further clarification from the EBA is necessary."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7979",
-        "imp": "low",
-        "refnum": "2026_7979"
       }
     ],
     "ifr": [
@@ -3615,90 +3716,6 @@
         ]
       }
     ],
-    "marisk": [
-      {
-        "d": "30.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Vergleichsversion der 9. MaRisk-Novelle (Konsultationsfassung zur Veröffentlichungsfassung)",
-          "en": "Comparison Version of the 9th MaRisk Amendment (Consultation Draft to Final Version)"
-        },
-        "sl": "vergleichsversion-der-konsultationsfassung-zur-veroeffentlichungsfassung-der-9-m",
-        "s": {
-          "de": "Die BaFin hat eine Vergleichsversion der Konsultationsfassung zur Veröffentlichungsfassung der 9. MaRisk-Novelle herausgegeben. Dieses Rundschreiben konkretisiert die Anforderungen an das Risikomanagement von Instituten auf Basis von § 25a Abs. 1 KWG und präzisiert zudem die Vorgaben des § 25b KWG (Auslagerung) und § 26c KWG (ESG-Risiken). Es legt einen flexiblen und praxisnahen Rahmen für die Ausgestaltung des Risikomanagements fest und schafft eine Grundlage für die Überwachungsfunktionen des Aufsichtsorgans.\n\nDas Rundschreiben ist für alle Institute relevant und setzt den qualitativen Rahmen für die Auslegung maßgeblicher Artikel der Bankenrichtlinie (CRD IV, zuletzt geändert durch CRD VI) zur Organisation und zum Risikomanagement. Es fordert die Einrichtung angemessener Leitungs-, Steuerungs- und Kontrollprozesse, wirksamer Verfahren zur Ermittlung, Steuerung, Überwachung und Kommunikation von Risiken sowie angemessener interner Kontrollmechanismen. Zudem müssen Institute über Verfahren verfügen, die gewährleisten, dass genügend internes Kapital zur Abdeckung aller wesentlichen Risiken vorhanden ist (Internal Capital Adequacy Assessment Process).\n\nDie MaRisk-Novelle integriert zudem verschiedene EBA-Leitlinien, darunter solche zu Stresstests, notleidenden und gestundeten Risikopositionen, Auslagerungen, Kreditvergabe und -überwachung, interner Governance, Zinsänderungs- und Kreditspreadrisiken sowie ESG-Risiken und Umwelt-Szenarioanalysen. Die Anwendung der Anforderungen erfolgt proportional, wobei für kleine und sehr kleine Institute weitere Erleichterungen vorgesehen sind. Die Veröffentlichung erfolgte am 30.06.2026.",
-          "en": "The BaFin has published a comparison version of the consultation draft to the final version of the 9th MaRisk amendment. This circular specifies the requirements for risk management in institutions based on Section 25a (1) KWG and further clarifies the provisions of Section 25b KWG (outsourcing) and Section 26c KWG (ESG risks). It establishes a flexible and practical framework for the design of risk management and provides a basis for the supervisory body's monitoring functions.\n\nThis circular is relevant for all institutions and sets the qualitative framework for interpreting key articles of the Banking Directive (CRD IV, most recently amended by CRD VI) regarding the organization and risk management of institutions. It requires the establishment of appropriate governance, management, and control processes, effective procedures for identifying, managing, monitoring, and communicating actual or potential risks, and adequate internal control mechanisms. Furthermore, institutions must have effective and comprehensive procedures and methods to ensure sufficient internal capital to cover all material risks (Internal Capital Adequacy Assessment Process).\n\nThe MaRisk amendment also integrates various EBA guidelines, including those on stress testing, non-performing and forborne exposures, outsourcing, loan origination and monitoring, internal governance, interest rate and credit spread risks, and ESG risks and environmental scenario analysis. The application of the requirements is proportional, with further simplifications provided for small and very small institutions. The publication date is June 30, 2026."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk_vergleichsfassung_konsultation.html",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Bafin veröffentlicht die überarbeiteten Mindestanforderungen an das Risikomanagement von Banken (9. MaRisk-Novelle)",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-die-ueberarbeiteten-mindestanforderungen-an-das-risikomanagement-von-banken-9-marisk-novelle/",
-            "d": "07.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "30.06.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Mindestanforderungen an das Risikomanagement (MaRisk 9. Novelle)",
-          "en": "Minimum Requirements for Risk Management (MaRisk 9th Amendment)"
-        },
-        "sl": "rundschreiben-06-2026-ba",
-        "s": {
-          "de": "Das Rundschreiben 06/2026 (BA) der BaFin, auch bekannt als 9. MaRisk-Novelle, legt die Mindestanforderungen an das Risikomanagement von Instituten fest. Es präzisiert die Anforderungen des § 25a Abs. 1 KWG für einen flexiblen und praxisnahen Rahmen des Risikomanagements sowie die Vorgaben des § 25b KWG (Auslagerung) und des § 26c KWG (ESG-Risiken). Ziel ist die Sicherstellung angemessener Leitungs-, Steuerungs- und Kontrollprozesse sowie wirksamer Verfahren zur Risikosteuerung und -überwachung.\n\nDie MaRisk setzen zudem maßgebliche Artikel der Bankenrichtlinie (CRD IV, geändert durch CRD VI) um und integrieren verschiedene EBA-Leitlinien, darunter solche zu Stresstests, notleidenden Risikopositionen, Auslagerungen, Kreditvergabe und Überwachung, interner Governance, Zinsänderungsrisiken und ESG-Risiken. Die Umsetzung erfolgt proportional, wobei für CRD-Drittstaatenzweigstellen spezifische Regelungen zur Einbeziehung der Unternehmenszentralen getroffen werden. Institute müssen über die dargestellten Anforderungen hinausgehende Vorkehrungen treffen, wenn dies zur Sicherstellung eines angemessenen und wirksamen Risikomanagements erforderlich ist.\n\nDie BaFin hat das Rundschreiben am 30.06.2026 veröffentlicht. Es enthält Vergleichsversionen zur 8. MaRisk-Novelle und zur Konsultationsfassung, was auf eine Überarbeitung und Finalisierung hindeutet.",
-          "en": "Circular 06/2026 (BA) from BaFin, also known as the 9th MaRisk amendment, sets out the minimum requirements for risk management in institutions. It specifies the requirements of Section 25a (1) KWG for a flexible and practical framework for risk management, as well as the provisions of Section 25b KWG (outsourcing) and Section 26c KWG (ESG risks). The aim is to ensure appropriate management, steering, and control processes, as well as effective procedures for risk management and monitoring.\n\nThe MaRisk also implement key articles of the Banking Directive (CRD IV, amended by CRD VI) and integrate various EBA guidelines, including those on stress testing, non-performing exposures, outsourcing, lending and monitoring, internal governance, interest rate risks, and ESG risks. Implementation is proportional, with specific rules for CRD third-country branches regarding the involvement of their head offices. Institutions must take precautions beyond the stated requirements if this is necessary to ensure adequate and effective risk management.\n\nBaFin published the circular on June 30, 2026. It includes comparison versions to the 8th MaRisk amendment and the consultation draft, indicating a revision and finalization process."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk.html",
-        "imp": "high",
-        "refnum": "06/2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Bafin veröffentlicht die überarbeiteten Mindestanforderungen an das Risikomanagement von Banken (9. MaRisk-Novelle)",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-die-ueberarbeiteten-mindestanforderungen-an-das-risikomanagement-von-banken-9-marisk-novelle/",
-            "d": "07.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "30.06.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Vergleich der 8. und 9. MaRisk-Novelle (CIRCULAR)",
-          "en": "Comparison of 8th and 9th MaRisk Amendment (CIRCULAR)"
-        },
-        "sl": "vergleichsversion-der-8-marisk-novelle-zur-9-marisk-novelle",
-        "s": {
-          "de": "Die BaFin hat eine Vergleichsversion der 8. zur 9. MaRisk-Novelle veröffentlicht. Dieses Dokument stellt die Änderungen zwischen den beiden Versionen der Mindestanforderungen an das Risikomanagement (MaRisk) dar. Es beinhaltet eine detaillierte Gegenüberstellung der Abschnitte zu den allgemeinen Anforderungen an das Risikomanagement, wie Risikotragfähigkeit, Strategien und das interne Kontrollsystem, sowie spezifische Anforderungen an das Kredit-, Handels- und Immobiliengeschäft.\n\nDie Novelle ist für alle Finanzinstitute relevant, die den MaRisk unterliegen. Sie müssen die Anpassungen im Risikomanagement, insbesondere in Bezug auf Datenmanagement, Datenqualität und Aggregation von Risikodaten (AT 4.3.4), sowie die Verwendung von Modellen (AT 4.3.5) und das Risikomanagement auf Gruppenebene (AT 4.5) prüfen und umsetzen. Die KPMG hebt in ihrem Fachbeitrag die Überarbeitung der MaRisk hervor, was die Bedeutung dieser Aktualisierung für die Praxis unterstreicht.\n\nDas Rundschreiben datiert vom 29.05.2024, wobei die Vergleichsversion selbst den Stand vom 30.06.2026 angibt. Dies deutet auf eine zukünftige Gültigkeit oder eine Vorabveröffentlichung hin, die den Instituten Zeit zur Vorbereitung geben soll.",
-          "en": "BaFin has published a comparison version of the 8th to the 9th MaRisk amendment. This document outlines the changes between the two versions of the Minimum Requirements for Risk Management (MaRisk). It includes a detailed comparison of sections on general risk management requirements, such as risk-bearing capacity, strategies, and the internal control system, as well as specific requirements for credit, trading, and real estate business.\n\nThe amendment is relevant for all financial institutions subject to MaRisk. They must review and implement the adjustments in risk management, particularly concerning data management, data quality, and aggregation of risk data (AT 4.3.4), as well as the use of models (AT 4.3.5) and group-wide risk management (AT 4.5). KPMG's expert contribution highlights the revision of MaRisk, underscoring the practical significance of this update.\n\nThe circular is dated 29.05.2024, with the comparison version itself indicating a status of 30.06.2026. This suggests future applicability or a pre-publication intended to give institutions time to prepare."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk_vergleichsfassung_8_marisk.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Bafin veröffentlicht die überarbeiteten Mindestanforderungen an das Risikomanagement von Banken (9. MaRisk-Novelle)",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-die-ueberarbeiteten-mindestanforderungen-an-das-risikomanagement-von-banken-9-marisk-novelle/",
-            "d": "07.07.2026"
-          }
-        ]
-      }
-    ],
     "luaifm": [
       {
         "d": "19.06.2026",
@@ -4392,6 +4409,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "24.09.2026",
+      "ti": "Verena Ross' speech ath the International Conference on Finance, Warsaw, 23 September 2026",
+      "auth": "ESMA",
+      "src": "esma.europa.eu",
+      "url": "https://www.esma.europa.eu/document/verena-ross-speech-ath-international-conference-finance-warsaw-23-september-2026",
+      "cat": "rede",
+      "sum": "Die Bundesnetzagentur hat heute die Ergebnisse ihrer Konsultation zur Vereinfachung und Entlastung im Stromnetz veröffentlicht. Die Maßnahmen zielen darauf ab, bürokratische Hürden abzubauen und die Netznutzung für alle Beteiligten effizienter zu gestalten."
+    },
     {
       "d": "22.09.2026",
       "ti": "Philip R. Lane: Interview with Le Temps",
