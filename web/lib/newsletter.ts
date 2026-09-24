@@ -37,7 +37,9 @@ import {
   setQuotaBlock,
   writeProgress,
 } from "./sendProgress";
-import { authority, daysUntil, dt, groupByTopic, tx } from "./logic";
+import {
+  authority, daysUntil, dt, groupByTopic, IMPACT_LABEL, impactOf, tx, type Impact,
+} from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { createFreqToken, type Frequency } from "./email";
 import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
@@ -173,6 +175,16 @@ const esc = (s: string): string =>
 
 const fmtDe = (d: string): string => d; // bereits TT.MM.JJJJ
 
+/** Impact-Pill wie auf der Website (impactOf = dieselbe Einschätzung wie
+    /updates und Startseite; keine eigene Bewertung im Newsletter). */
+const IMPACT_PILL_STYLE: Record<Impact, string> = {
+  high: "background:#0f172a;color:#ffffff;border:1px solid #0f172a",
+  medium: "color:#334155;border:1px solid #cbd5e1",
+  low: "color:#94a3b8;border:1px solid #e2e8f0",
+};
+const impactPill = (i: Impact): string =>
+  `<span style="display:inline-block;${IMPACT_PILL_STYLE[i]};border-radius:9999px;padding:1px 10px;font-size:11px;font-weight:600">Impact: ${IMPACT_LABEL[i].de}</span>`;
+
 /** E-Mail im Site-Design: schwarz-weiß, große Typo, Pill-Button.
     Liefert HTML plus Plain-Text-Alternative (bessere Spam-Bewertung). */
 /** Links zum Umstellen des Rhythmus am Mailende (fehlt bei Vorschauen). */
@@ -229,7 +241,8 @@ export function renderNewsletter(
         <p style="margin:0 0 6px;font-size:12px;color:#64748b">
           <span class="num">${fmtDe(u.d)}</span> &nbsp;
           <span style="display:inline-block;border:1px solid #e2e8f0;border-radius:9999px;padding:1px 10px;font-size:11px;color:#334155">${esc(u.t.de)}</span> &nbsp;
-          ${esc(authority(u.src))}
+          ${esc(authority(u.src))} &nbsp;
+          ${impactPill(impactOf(u))}
         </p>
         <p style="margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35">
           <a href="${base}/u/${slug}" style="color:#0f172a;text-decoration:none">${esc(u.ti.de)}</a>
@@ -269,7 +282,7 @@ export function renderNewsletter(
           `${fw.n.de}, ${fw.ref}`,
         ].filter(Boolean).join(" · ");
         return [
-          `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)}`,
+          `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)} · Impact: ${IMPACT_LABEL[impactOf(u)].de}`,
           u.ti.de,
           firstParagraph(u.s.de),
           meta,
