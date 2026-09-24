@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T13:24:06Z",
+  "generated_at": "2026-09-24T15:21:34Z",
   "updates": {
     "amla": [
       {
@@ -589,6 +589,127 @@
             "d": "07.07.2026"
           }
         ]
+      }
+    ],
+    "mica": [
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA identifiziert Prioritäten für die Überprüfung der MiCA-Verordnung",
+          "en": "The EBA identifies priorities for the review of MiCA"
+        },
+        "sl": "the-eba-identifies-priorities-for-the-review-of-mica",
+        "s": {
+          "de": "Die EBA hat Prioritäten für die Überprüfung der MiCA-Verordnung identifiziert. Sie empfiehlt eine Stärkung des Regulierungsrahmens, insbesondere im Hinblick auf Risiken, die von Multi-Emittenten-Stablecoin-Systemen ausgehen.\n\nDie EBA sieht Klärungsbedarf beim Anwendungsbereich der MiCA, um die Konsistenz bei der Klassifizierung von Krypto-Assets zu fördern und Innovationen zu unterstützen. Zudem schlägt sie vor, die Kreditvergabe mit Krypto-Assets, einschließlich Aktivitäten im Zusammenhang mit dezentraler Finanzierung (DeFi), zu regulieren. Auch das Meldewesen für Emittenten und Krypto-Dienstleister soll überprüft werden.\n\nDiese Empfehlungen richten sich an die Europäische Kommission und sind für alle Finanzinstitute relevant, die im Bereich Krypto-Assets tätig sind oder dies planen. Die EBA will damit einen robusten, verhältnismäßigen und zukunftssicheren Regulierungsrahmen für den EU-Krypto-Asset-Sektor gewährleisten.",
+          "en": "The EBA has identified priorities for the review of the MiCA Regulation. It recommends strengthening the regulatory framework, particularly regarding risks arising from multi-issuer stablecoin schemes.\n\nThe EBA sees a need for clarifications on MiCA's scope to foster consistency in crypto-asset classification and support innovation. It also proposes regulating crypto-asset lending, including activities related to decentralized finance (DeFi). The reporting framework for issuers and crypto-asset service providers should also be reviewed.\n\nThese recommendations are addressed to the European Commission and are relevant for all financial institutions active or planning to be active in the crypto-asset sector. The EBA aims to ensure a robust, proportionate, and future-proof regulatory framework for the EU crypto-asset sector."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-identifies-priorities-review-mica",
+        "imp": "medium"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA lehnt Frage zur Erhöhung von Eigenmitteln und Reservewerten für ARTs und EMTs ab (2026_7968)",
+          "en": "EBA rejects question on increasing own funds and reserve assets for ARTs and EMTs (2026_7968)"
+        },
+        "sl": "national-competent-authorities-power-to-increase-the-quantity-of-arts-and-emts-i",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Auslegung von Artikel 45 Absatz 4 der MiCA-Verordnung (EU) 2023/1114 abgelehnt. Die Frage bezog sich darauf, ob nationale zuständige Behörden oder die EBA die Befugnis haben, Emittenten von vermögenswertreferenzierten Token (ARTs) oder E-Geld-Token (EMTs) aufzufordern, die Menge ihrer Eigenmittel oder Reservewerte über die 1:1-Deckung hinaus zu erhöhen.\n\nDie EBA begründete die Ablehnung damit, dass die betreffende Thematik im regulatorischen Rahmen bereits ausreichend klar und eindeutig erklärt oder behandelt wird. Dies deutet darauf hin, dass die MiCA-Verordnung bereits klare Vorgaben zur Kapitalausstattung und zu Reserveanforderungen enthält und keine zusätzlichen Befugnisse für unbegrenzte Erhöhungen vorsieht. Die Frage wurde von der Industrievereinigung ADAN eingereicht.\n\nDie Ablehnung erfolgte am 15.09.2026.",
+          "en": "The EBA has rejected a question regarding the interpretation of Article 45(4) of the MiCA Regulation (EU) 2023/1114. The question concerned whether national competent authorities or the EBA have the power to require issuers of asset-referenced tokens (ARTs) or e-money tokens (EMTs) to increase the quantity of their own funds or reserve assets beyond the 1:1 backing.\n\nThe EBA justified the rejection by stating that the issue is already sufficiently clear and unambiguously explained or addressed in the regulatory framework. This indicates that the MiCA Regulation already contains clear provisions on capital requirements and reserve assets and does not provide for additional powers for unlimited increases. The question was submitted by the industry association ADAN.\n\nThe rejection date was 15.09.2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7968",
+        "imp": "low",
+        "refnum": "2026_7968"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
+          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
+          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1525"
+      },
+      {
+        "d": "07.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
+          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
+        },
+        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
+          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1528"
+      },
+      {
+        "d": "05.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
+          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
+          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1625"
+      },
+      {
+        "d": "29.05.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Ablehnung einer EBA-Anfrage zu Eigenmittelanforderungen für hybride Finanzinstitute (2026_7834)",
+          "en": "EBA Rejection of Q&A on Own Funds for Hybrid Financial Institutions (2026_7834)"
+        },
+        "sl": "own-funds-requirement-for-entities-authorized-as-crypto-asset-service-provider-c",
+        "s": {
+          "de": "Die EBA hat eine Anfrage bezüglich der Eigenmittelanforderungen für Unternehmen abgelehnt, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) gemäß Richtlinie 2009/110/EG und als Wertpapierfirma (IF) gemäß IFR/IFD zugelassen sind.\n\nDie Anfrage betraf insbesondere die Bestimmung der Eigenmittelanforderungen, wenn bestimmte Krypto-Dienstleistungen, wie die Übertragung von Krypto-Assets im Auftrag von Kunden, eine spezifische CASP-Autorisierung erfordern und keine expliziten Bestimmungen zur Interaktion der verschiedenen Aufsichtsrahmen existieren. Die EBA lehnte die Frage ab, da sie über den Rahmen des Q&A-Prozesses hinausgeht und eine Änderung des Rechtsrahmens erfordern würde.\n\nDie Ablehnung erfolgte am 29.05.2026. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, Fragen zu beantworten, die die Korrektheit des Rechtsrahmens in Frage stellen oder dessen Änderung erfordern würden.",
+          "en": "The EBA has rejected an inquiry regarding own funds requirements for entities authorized simultaneously as Crypto Asset Service Providers (CASP) under MiCAR, Electronic Money Institutions (EMI) under Directive 2009/110/EC, and Investment Firms (IF) under IFR/IFD.\n\nThe inquiry specifically concerned the determination of own funds requirements when certain crypto-asset services, such as the transfer of crypto-assets on behalf of clients, necessitate a specific CASP authorization, and explicit provisions governing the interaction between the different prudential frameworks are absent. The EBA rejected the question, stating it falls outside the scope of the Q&A process and would require a modification of the legal framework.\n\nThe rejection occurred on 29.05.2026. The EBA justified its decision by stating that the Q&A tool is not intended to answer questions that challenge the correctness of the legal framework or would necessitate its modification."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7834",
+        "imp": "medium",
+        "refnum": "2026_7834"
       }
     ],
     "dltpilot": [
@@ -1679,135 +1800,6 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
         "imp": "high"
-      }
-    ],
-    "mica": [
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA lehnt Frage zur Erhöhung von Eigenmitteln und Reservewerten für ARTs und EMTs ab (2026_7968)",
-          "en": "EBA rejects question on increasing own funds and reserve assets for ARTs and EMTs (2026_7968)"
-        },
-        "sl": "national-competent-authorities-power-to-increase-the-quantity-of-arts-and-emts-i",
-        "s": {
-          "de": "Die EBA hat eine Frage zur Auslegung von Artikel 45 Absatz 4 der MiCA-Verordnung (EU) 2023/1114 abgelehnt. Die Frage bezog sich darauf, ob nationale zuständige Behörden oder die EBA die Befugnis haben, Emittenten von vermögenswertreferenzierten Token (ARTs) oder E-Geld-Token (EMTs) aufzufordern, die Menge ihrer Eigenmittel oder Reservewerte über die 1:1-Deckung hinaus zu erhöhen.\n\nDie EBA begründete die Ablehnung damit, dass die betreffende Thematik im regulatorischen Rahmen bereits ausreichend klar und eindeutig erklärt oder behandelt wird. Dies deutet darauf hin, dass die MiCA-Verordnung bereits klare Vorgaben zur Kapitalausstattung und zu Reserveanforderungen enthält und keine zusätzlichen Befugnisse für unbegrenzte Erhöhungen vorsieht. Die Frage wurde von der Industrievereinigung ADAN eingereicht.\n\nDie Ablehnung erfolgte am 15.09.2026.",
-          "en": "The EBA has rejected a question regarding the interpretation of Article 45(4) of the MiCA Regulation (EU) 2023/1114. The question concerned whether national competent authorities or the EBA have the power to require issuers of asset-referenced tokens (ARTs) or e-money tokens (EMTs) to increase the quantity of their own funds or reserve assets beyond the 1:1 backing.\n\nThe EBA justified the rejection by stating that the issue is already sufficiently clear and unambiguously explained or addressed in the regulatory framework. This indicates that the MiCA Regulation already contains clear provisions on capital requirements and reserve assets and does not provide for additional powers for unlimited increases. The question was submitted by the industry association ADAN.\n\nThe rejection date was 15.09.2026."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7968",
-        "imp": "low",
-        "refnum": "2026_7968"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      },
-      {
-        "d": "07.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
-          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
-        },
-        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
-          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1528"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
-          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
-          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1625"
-      },
-      {
-        "d": "29.05.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ablehnung einer EBA-Anfrage zu Eigenmittelanforderungen für hybride Finanzinstitute (2026_7834)",
-          "en": "EBA Rejection of Q&A on Own Funds for Hybrid Financial Institutions (2026_7834)"
-        },
-        "sl": "own-funds-requirement-for-entities-authorized-as-crypto-asset-service-provider-c",
-        "s": {
-          "de": "Die EBA hat eine Anfrage bezüglich der Eigenmittelanforderungen für Unternehmen abgelehnt, die gleichzeitig als Krypto-Dienstleister (CASP) gemäß MiCAR, als E-Geld-Institut (EMI) gemäß Richtlinie 2009/110/EG und als Wertpapierfirma (IF) gemäß IFR/IFD zugelassen sind.\n\nDie Anfrage betraf insbesondere die Bestimmung der Eigenmittelanforderungen, wenn bestimmte Krypto-Dienstleistungen, wie die Übertragung von Krypto-Assets im Auftrag von Kunden, eine spezifische CASP-Autorisierung erfordern und keine expliziten Bestimmungen zur Interaktion der verschiedenen Aufsichtsrahmen existieren. Die EBA lehnte die Frage ab, da sie über den Rahmen des Q&A-Prozesses hinausgeht und eine Änderung des Rechtsrahmens erfordern würde.\n\nDie Ablehnung erfolgte am 29.05.2026. Die EBA begründete dies damit, dass der Q&A-Prozess nicht dazu dient, Fragen zu beantworten, die die Korrektheit des Rechtsrahmens in Frage stellen oder dessen Änderung erfordern würden.",
-          "en": "The EBA has rejected an inquiry regarding own funds requirements for entities authorized simultaneously as Crypto Asset Service Providers (CASP) under MiCAR, Electronic Money Institutions (EMI) under Directive 2009/110/EC, and Investment Firms (IF) under IFR/IFD.\n\nThe inquiry specifically concerned the determination of own funds requirements when certain crypto-asset services, such as the transfer of crypto-assets on behalf of clients, necessitate a specific CASP authorization, and explicit provisions governing the interaction between the different prudential frameworks are absent. The EBA rejected the question, stating it falls outside the scope of the Q&A process and would require a modification of the legal framework.\n\nThe rejection occurred on 29.05.2026. The EBA justified its decision by stating that the Q&A tool is not intended to answer questions that challenge the correctness of the legal framework or would necessitate its modification."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7834",
-        "imp": "medium",
-        "refnum": "2026_7834"
-      },
-      {
-        "d": "20.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
-          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
-        },
-        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
-          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
-            "d": "21.05.2026"
-          }
-        ]
       }
     ],
     "itsrep": [
