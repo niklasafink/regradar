@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T11:21:43Z",
+  "generated_at": "2026-09-25T14:21:44Z",
   "updates": {
     "amla": [
       {
@@ -238,6 +238,133 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-contractual-recognition-resolution-stay-powers_en",
         "imp": "medium",
         "deadline": "20.03.2026"
+      }
+    ],
+    "gwg": [
+      {
+        "d": "25.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
+          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
+        },
+        "sl": "gesetz-fuer-mehr-gerechtigkeit-durch-die-staerkung-der-zollverwaltung-und-die-be",
+        "s": {
+          "de": "Das Gesetz zur Stärkung der Zollverwaltung und Bekämpfung der Finanzkriminalität modernisiert die Zollverwaltung umfassend im Rahmen der Initiative \"Zoll 2030\". Es strukturiert die Generalzolldirektion neu in die Fachstränge \"Zölle und Steuern\" sowie \"Sicherheit und Vollzug\" und führt Ermittlungs- und Vollzugseinheiten zusammen.\n\nDie Finanzkontrolle Schwarzarbeit (FKS) bleibt als eigene Organisationseinheit erhalten, wird personell und haushälterisch gestärkt und erhält erweiterte Ermittlungsbefugnisse. Zudem werden die Aufgaben und Befugnisse der Zollverwaltung bei der Bekämpfung internationaler Geldwäsche gestärkt, spezialisierte Ermittlungseinheiten eingerichtet und ein Verwaltungsverfahren zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft eingeführt.\n\nDas Gesetz verbessert die Zusammenarbeit und den Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen (FIU) mit anderen Akteuren und setzt die Empfehlungen der Financial Action Task Force (FATF) durch die gesetzliche Verankerung eines ressortübergreifenden Steuerungskreises um.",
+          "en": "The Act for more Justice through Strengthening Customs Administration and Combating Financial Crime comprehensively modernizes the customs administration as part of the \"Customs 2030\" initiative. It reorganizes the General Directorate of Customs into the specialized branches \"Customs and Taxes\" and \"Security and Enforcement\" and merges investigation and enforcement units.\n\nThe Financial Control of Undeclared Work (FKS) will be retained as a separate organizational unit, strengthened in terms of personnel and budget, and given expanded investigative powers. Furthermore, the customs administration's tasks and powers in combating international money laundering will be strengthened, specialized investigation units will be established, and an administrative procedure for clarifying assets of dubious origin will be introduced.\n\nThe Act improves cooperation and data exchange between the Financial Intelligence Unit (FIU) and other actors and implements the recommendations of the Financial Action Task Force (FATF) by legally establishing an interdepartmental steering committee."
+        },
+        "url": "https://dip.bundestag.de/vorgang/338348",
+        "imp": "medium"
+      },
+      {
+        "d": "19.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "zoll.de",
+        "ti": {
+          "de": "Löschroutine für Rückmeldungen nach § 41 GwG",
+          "en": "Deletion Routine for Feedback under Section 41 GwG"
+        },
+        "sl": "loeschroutine-fuer-rueckmeldungen-nach-41-gwg",
+        "s": {
+          "de": "Die Financial Intelligence Unit (FIU) hat ihr Verfahren für Rückmeldungen nach § 41 des Geldwäschegesetzes (GwG) überarbeitet und ein neues Konzept entwickelt. Dieses Konzept wird nach Abschluss eines Konsultationsverfahrens im Dezember 2024 auf Verdachtsmeldungen angewendet, die ab dem 1. Januar 2025 eingereicht wurden, wobei Rückmeldungen automatisiert mittels goAML-Nachricht erfolgen.\n\nFür Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG wird aus datenschutzrechtlichen Gründen eine Löschroutine von 28 Tagen eingeführt. Dies bedeutet, dass diese Rückmeldungen 28 Tage nach ihrem Versand automatisch gelöscht werden. Auch ältere Rückmeldungen, die die 28-Tages-Frist überschritten haben, werden sukzessive gelöscht.\n\nDie Löschroutine tritt ab dem 1. September 2026 in Kraft. Verpflichtete müssen dies bei ihren internen Prozessen berücksichtigen und gegebenenfalls eigene Veranlassungen treffen.",
+          "en": "The Financial Intelligence Unit (FIU) has revised its procedure for feedback under Section 41 of the Anti-Money Laundering Act (GwG) and developed a new concept. This concept will be applied to suspicious transaction reports submitted from January 1, 2025, following the conclusion of a consultation process in December 2024, with feedback being provided automatically via goAML messages.\n\nFor feedback according to Section 41 (2) and (3) GwG, a deletion routine of 28 days is being introduced for data protection reasons. This means that such feedback will be automatically deleted 28 days after its dispatch. Older feedback that has exceeded the 28-day period will also be progressively deleted.\n\nThe deletion routine will come into effect on September 1, 2026. Obligated entities must take this into account in their internal processes and, if necessary, make their own arrangements."
+        },
+        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
+        "imp": "medium"
+      },
+      {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
+          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
+        },
+        "sl": "gesetz-zur-konsequenten-bekaempfung-von-geldwaesche-bei-steuerhinterziehung",
+        "s": {
+          "de": "Das Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung zielt darauf ab, die Geldwäsche im Zusammenhang mit Steuerhinterziehung effektiver zu bekämpfen. Es ändert primär den § 261 des Strafgesetzbuches (StGB).\n\nDiese Änderung ist für Finanzinstitute und andere Verpflichtete relevant, da sie die Anforderungen an die Geldwäscheprävention im Kontext von Steuerstraftaten verschärft. Unternehmen müssen ihre internen Prozesse und Kontrollsysteme anpassen, um den erweiterten Umfang der Geldwäschebekämpfung zu berücksichtigen.\n\nDer Gesetzesentwurf wurde vom Deutschen Bundestag am 22.07.2026 vorgelegt.",
+          "en": "The Act on the Consistent Fight against Money Laundering in Tax Evasion aims to combat money laundering more effectively in connection with tax evasion. It primarily amends Section 261 of the German Criminal Code (StGB).\n\nThis amendment is relevant for financial institutions and other obliged entities, as it tightens the requirements for anti-money laundering in the context of tax offenses. Companies must adapt their internal processes and control systems to account for the expanded scope of money laundering combat.\n\nThis legislative proposal was submitted by the German Bundestag on July 22, 2026."
+        },
+        "url": "https://dip.bundestag.de/vorgang/337697",
+        "imp": "medium"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
+          "en": "Methodology for calculating and collecting fees levied by the Anti-Money Laundering Authority (AMLA)"
+        },
+        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
+        "s": {
+          "de": "Die Europäische Kommission plant die Einführung einer Methodik zur Berechnung der Gebühren, die von der neuen Anti-Geldwäsche-Behörde (AMLA) erhoben werden. Dies umfasst auch das Verfahren zur Erhebung dieser Gebühren.\n\nDiese Regelung ist für Finanzinstitute relevant, die unter die Aufsicht der AMLA fallen werden. Sie müssen sich auf die Einführung von Gebühren für die Aufsichtstätigkeiten der Behörde einstellen.\n\nDerzeit befindet sich der Vorschlag im Status „Init Planned“, was auf eine frühe Planungsphase hindeutet.",
+          "en": "The European Commission is planning to introduce a methodology for calculating the fees levied by the new Anti-Money Laundering Authority (AMLA). This also includes the procedure for collecting these fees.\n\nThis regulation is relevant for financial institutions that will fall under the supervision of the AMLA. They must prepare for the introduction of fees for the authority's supervisory activities.\n\nThe proposal is currently in the 'Init Planned' status, indicating an early planning phase."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
+        "imp": "medium",
+        "refnum": "Ares(2026)6942470"
+      },
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung (07/2026 GW)",
+          "en": "Circular on High-Risk Third Countries in Anti-Money Laundering and Counter-Terrorist Financing (07/2026 GW)"
+        },
+        "sl": "rundschreiben-07-2026-gw",
+        "s": {
+          "de": "Dieses Rundschreiben der BaFin informiert alle nach dem Geldwäschegesetz (GwG) Verpflichteten über Drittstaaten mit strategischen Mängeln in ihren Systemen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (Hochrisiko-Staaten).\n\nEs konkretisiert die Maßnahmen, die in Bezug auf Nordkorea, Iran und Myanmar zu ergreifen sind, basierend auf Erklärungen der FATF. Für Nordkorea und Iran werden spezifische Gegenmaßnahmen gefordert, während für Myanmar verstärkte Sorgfaltspflichten gelten. Zudem werden die aktuellen FATF-Listen der Länder unter verstärkter Beobachtung genannt, wobei Bosnien und Herzegowina sowie Irak neu hinzugekommen sind und Algerien sowie Namibia gestrichen wurden.\n\nFinanzinstitute und andere Verpflichtete nach dem GwG müssen die genannten Maßnahmen und verstärkten Sorgfaltspflichten umsetzen, um den Risiken aus diesen Ländern zu begegnen. Dies beinhaltet unter anderem das Beenden von Korrespondenzbeziehungen, das Schließen von Tochtergesellschaften und die Beschränkung von Geschäftsbeziehungen.",
+          "en": "This BaFin circular informs all entities obligated under the Money Laundering Act (GwG) about third countries with strategic deficiencies in their anti-money laundering and counter-terrorist financing systems (high-risk countries).\n\nIt specifies the measures to be taken in relation to North Korea, Iran, and Myanmar, based on FATF statements. Specific countermeasures are required for North Korea and Iran, while enhanced due diligence obligations apply to Myanmar. Furthermore, the current FATF lists of countries under increased monitoring are provided, with Bosnia and Herzegovina and Iraq newly added, and Algeria and Namibia removed.\n\nFinancial institutions and other obligated entities under the GwG must implement the stated measures and enhanced due diligence obligations to address the risks posed by these countries. This includes, among other things, terminating correspondent relationships, closing subsidiaries, and restricting business relationships."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
+        "imp": "high",
+        "refnum": "07/2026"
+      },
+      {
+        "d": "21.05.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil: Öffentlicher Zugang zu Daten über wirtschaftliche Eigentümer von Treuhandverträgen (C-684/24, C-685/24)",
+          "en": "ECJ Judgment: Public Access to Beneficial Ownership Data of Trust Mandates (C-684/24, C-685/24)"
+        },
+        "sl": "judgment-of-the-court-in-joined-cases-c-684-24-across-fiduciaria-and-others-and",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass der öffentliche Zugang zu Informationen über die wirtschaftlichen Eigentümer von Treuhandverträgen italienischen Rechts mit EU-Recht vereinbar ist, sofern ein berechtigtes Interesse vorliegt. Dies dient dem legitimen Ziel der Verhinderung von Geldwäsche und Terrorismusfinanzierung durch erhöhte Transparenz.\n\nDie Entscheidung betrifft Treuhandgesellschaften, die nach der Vierten Geldwäscherichtlinie verpflichtet sind, Informationen über wirtschaftliche Eigentümer bereitzustellen. Der EuGH bestätigt, dass die italienische Gesetzgebung, die diese Pflichten auf Treuhandgesellschaften anwendet, auch wenn kein Eigentumsübergang stattfindet, im Rahmen des Gestaltungsspielraums liegt. Auch die Zuständigkeit der Handelskammern für Ausnahmen vom Zugang wird nicht beanstandet, sofern ein vorläufiger gerichtlicher Rechtsschutz gewährleistet ist.\n\nDieses Urteil ist relevant für Finanzunternehmen und Treuhänder, die mit Treuhandverträgen nach italienischem Recht arbeiten, da es die Transparenzanforderungen und den öffentlichen Zugang zu Daten über wirtschaftliche Eigentümer bestätigt. Es unterstreicht die Bedeutung der Geldwäschebekämpfung und die Notwendigkeit, entsprechende Informationen zugänglich zu machen.",
+          "en": "The European Court of Justice (ECJ) has ruled that public access to information on the beneficial owners of trust mandates governed by Italian law is compatible with EU law, provided there is a legitimate interest. This serves the legitimate goal of preventing money laundering and terrorist financing through increased transparency.\n\nThe decision concerns trust companies that are obliged under the Fourth Anti-Money Laundering Directive to provide information on beneficial owners. The ECJ confirms that Italian legislation, which applies these obligations to trust companies even if no transfer of ownership takes place, is within the scope of discretion. The competence of the Chambers of Commerce to decide on exceptions to access is also not objectionable, provided that provisional judicial protection is guaranteed.\n\nThis judgment is relevant for financial companies and trustees working with trust mandates under Italian law, as it confirms transparency requirements and public access to beneficial ownership data. It underscores the importance of combating money laundering and the need to make relevant information accessible."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-05/cp260074de.pdf",
+        "imp": "high",
+        "refnum": "C-684/24, C-685/24",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "ECJ: Public access to beneficial ownership data compatible with EU law",
+            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/254777/ecj-public-access-to-beneficial-ownership-data-compatible-with-eu-law/",
+            "d": "24.05.2026"
+          }
+        ]
       }
     ],
     "sanctions": [
@@ -1208,133 +1335,6 @@
         },
         "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
         "imp": "medium"
-      }
-    ],
-    "gwg": [
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität",
-          "en": "Gesetz für mehr Gerechtigkeit durch die Stärkung der Zollverwaltung und die Bekämpfung der Finanzkriminalität"
-        },
-        "sl": "gesetz-fuer-mehr-gerechtigkeit-durch-die-staerkung-der-zollverwaltung-und-die-be",
-        "s": {
-          "de": "Das Gesetz zur Stärkung der Zollverwaltung und Bekämpfung der Finanzkriminalität modernisiert die Zollverwaltung umfassend im Rahmen der Initiative \"Zoll 2030\". Es strukturiert die Generalzolldirektion neu in die Fachstränge \"Zölle und Steuern\" sowie \"Sicherheit und Vollzug\" und führt Ermittlungs- und Vollzugseinheiten zusammen.\n\nDie Finanzkontrolle Schwarzarbeit (FKS) bleibt als eigene Organisationseinheit erhalten, wird personell und haushälterisch gestärkt und erhält erweiterte Ermittlungsbefugnisse. Zudem werden die Aufgaben und Befugnisse der Zollverwaltung bei der Bekämpfung internationaler Geldwäsche gestärkt, spezialisierte Ermittlungseinheiten eingerichtet und ein Verwaltungsverfahren zur Aufklärung von Vermögensgegenständen zweifelhafter Herkunft eingeführt.\n\nDas Gesetz verbessert die Zusammenarbeit und den Datenaustausch der Zentralstelle für Finanztransaktionsuntersuchungen (FIU) mit anderen Akteuren und setzt die Empfehlungen der Financial Action Task Force (FATF) durch die gesetzliche Verankerung eines ressortübergreifenden Steuerungskreises um.",
-          "en": "The Act for more Justice through Strengthening Customs Administration and Combating Financial Crime comprehensively modernizes the customs administration as part of the \"Customs 2030\" initiative. It reorganizes the General Directorate of Customs into the specialized branches \"Customs and Taxes\" and \"Security and Enforcement\" and merges investigation and enforcement units.\n\nThe Financial Control of Undeclared Work (FKS) will be retained as a separate organizational unit, strengthened in terms of personnel and budget, and given expanded investigative powers. Furthermore, the customs administration's tasks and powers in combating international money laundering will be strengthened, specialized investigation units will be established, and an administrative procedure for clarifying assets of dubious origin will be introduced.\n\nThe Act improves cooperation and data exchange between the Financial Intelligence Unit (FIU) and other actors and implements the recommendations of the Financial Action Task Force (FATF) by legally establishing an interdepartmental steering committee."
-        },
-        "url": "https://dip.bundestag.de/vorgang/338348",
-        "imp": "medium"
-      },
-      {
-        "d": "19.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "zoll.de",
-        "ti": {
-          "de": "Löschroutine für Rückmeldungen nach § 41 GwG",
-          "en": "Deletion Routine for Feedback under Section 41 GwG"
-        },
-        "sl": "loeschroutine-fuer-rueckmeldungen-nach-41-gwg",
-        "s": {
-          "de": "Die Financial Intelligence Unit (FIU) hat ihr Verfahren für Rückmeldungen nach § 41 des Geldwäschegesetzes (GwG) überarbeitet und ein neues Konzept entwickelt. Dieses Konzept wird nach Abschluss eines Konsultationsverfahrens im Dezember 2024 auf Verdachtsmeldungen angewendet, die ab dem 1. Januar 2025 eingereicht wurden, wobei Rückmeldungen automatisiert mittels goAML-Nachricht erfolgen.\n\nFür Rückmeldungen gemäß § 41 Abs. 2 und 3 GwG wird aus datenschutzrechtlichen Gründen eine Löschroutine von 28 Tagen eingeführt. Dies bedeutet, dass diese Rückmeldungen 28 Tage nach ihrem Versand automatisch gelöscht werden. Auch ältere Rückmeldungen, die die 28-Tages-Frist überschritten haben, werden sukzessive gelöscht.\n\nDie Löschroutine tritt ab dem 1. September 2026 in Kraft. Verpflichtete müssen dies bei ihren internen Prozessen berücksichtigen und gegebenenfalls eigene Veranlassungen treffen.",
-          "en": "The Financial Intelligence Unit (FIU) has revised its procedure for feedback under Section 41 of the Anti-Money Laundering Act (GwG) and developed a new concept. This concept will be applied to suspicious transaction reports submitted from January 1, 2025, following the conclusion of a consultation process in December 2024, with feedback being provided automatically via goAML messages.\n\nFor feedback according to Section 41 (2) and (3) GwG, a deletion routine of 28 days is being introduced for data protection reasons. This means that such feedback will be automatically deleted 28 days after its dispatch. Older feedback that has exceeded the 28-day period will also be progressively deleted.\n\nThe deletion routine will come into effect on September 1, 2026. Obligated entities must take this into account in their internal processes and, if necessary, make their own arrangements."
-        },
-        "url": "https://www.zoll.de/DE/FIU/Fachliche-Informationen/Verdachtsmeldung/Rueckmeldungen-nach-p-41-GwG/rueckmeldungen-nach-p-41-gwg_node.html",
-        "imp": "medium"
-      },
-      {
-        "d": "22.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung",
-          "en": "Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung"
-        },
-        "sl": "gesetz-zur-konsequenten-bekaempfung-von-geldwaesche-bei-steuerhinterziehung",
-        "s": {
-          "de": "Das Gesetz zur konsequenten Bekämpfung von Geldwäsche bei Steuerhinterziehung zielt darauf ab, die Geldwäsche im Zusammenhang mit Steuerhinterziehung effektiver zu bekämpfen. Es ändert primär den § 261 des Strafgesetzbuches (StGB).\n\nDiese Änderung ist für Finanzinstitute und andere Verpflichtete relevant, da sie die Anforderungen an die Geldwäscheprävention im Kontext von Steuerstraftaten verschärft. Unternehmen müssen ihre internen Prozesse und Kontrollsysteme anpassen, um den erweiterten Umfang der Geldwäschebekämpfung zu berücksichtigen.\n\nDer Gesetzesentwurf wurde vom Deutschen Bundestag am 22.07.2026 vorgelegt.",
-          "en": "The Act on the Consistent Fight against Money Laundering in Tax Evasion aims to combat money laundering more effectively in connection with tax evasion. It primarily amends Section 261 of the German Criminal Code (StGB).\n\nThis amendment is relevant for financial institutions and other obliged entities, as it tightens the requirements for anti-money laundering in the context of tax offenses. Companies must adapt their internal processes and control systems to account for the expanded scope of money laundering combat.\n\nThis legislative proposal was submitted by the German Bundestag on July 22, 2026."
-        },
-        "url": "https://dip.bundestag.de/vorgang/337697",
-        "imp": "medium"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Methodik zur Berechnung und Erhebung von Gebühren der Anti-Geldwäsche-Behörde (AMLA)",
-          "en": "Methodology for calculating and collecting fees levied by the Anti-Money Laundering Authority (AMLA)"
-        },
-        "sl": "methodology-for-calculating-fees-levied-by-the-anti-money-laundering-authority-a",
-        "s": {
-          "de": "Die Europäische Kommission plant die Einführung einer Methodik zur Berechnung der Gebühren, die von der neuen Anti-Geldwäsche-Behörde (AMLA) erhoben werden. Dies umfasst auch das Verfahren zur Erhebung dieser Gebühren.\n\nDiese Regelung ist für Finanzinstitute relevant, die unter die Aufsicht der AMLA fallen werden. Sie müssen sich auf die Einführung von Gebühren für die Aufsichtstätigkeiten der Behörde einstellen.\n\nDerzeit befindet sich der Vorschlag im Status „Init Planned“, was auf eine frühe Planungsphase hindeutet.",
-          "en": "The European Commission is planning to introduce a methodology for calculating the fees levied by the new Anti-Money Laundering Authority (AMLA). This also includes the procedure for collecting these fees.\n\nThis regulation is relevant for financial institutions that will fall under the supervision of the AMLA. They must prepare for the introduction of fees for the authority's supervisory activities.\n\nThe proposal is currently in the 'Init Planned' status, indicating an early planning phase."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
-        "imp": "medium",
-        "refnum": "Ares(2026)6942470"
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben zu Hochrisiko-Drittstaaten im Bereich Geldwäsche und Terrorismusfinanzierung (07/2026 GW)",
-          "en": "Circular on High-Risk Third Countries in Anti-Money Laundering and Counter-Terrorist Financing (07/2026 GW)"
-        },
-        "sl": "rundschreiben-07-2026-gw",
-        "s": {
-          "de": "Dieses Rundschreiben der BaFin informiert alle nach dem Geldwäschegesetz (GwG) Verpflichteten über Drittstaaten mit strategischen Mängeln in ihren Systemen zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (Hochrisiko-Staaten).\n\nEs konkretisiert die Maßnahmen, die in Bezug auf Nordkorea, Iran und Myanmar zu ergreifen sind, basierend auf Erklärungen der FATF. Für Nordkorea und Iran werden spezifische Gegenmaßnahmen gefordert, während für Myanmar verstärkte Sorgfaltspflichten gelten. Zudem werden die aktuellen FATF-Listen der Länder unter verstärkter Beobachtung genannt, wobei Bosnien und Herzegowina sowie Irak neu hinzugekommen sind und Algerien sowie Namibia gestrichen wurden.\n\nFinanzinstitute und andere Verpflichtete nach dem GwG müssen die genannten Maßnahmen und verstärkten Sorgfaltspflichten umsetzen, um den Risiken aus diesen Ländern zu begegnen. Dies beinhaltet unter anderem das Beenden von Korrespondenzbeziehungen, das Schließen von Tochtergesellschaften und die Beschränkung von Geschäftsbeziehungen.",
-          "en": "This BaFin circular informs all entities obligated under the Money Laundering Act (GwG) about third countries with strategic deficiencies in their anti-money laundering and counter-terrorist financing systems (high-risk countries).\n\nIt specifies the measures to be taken in relation to North Korea, Iran, and Myanmar, based on FATF statements. Specific countermeasures are required for North Korea and Iran, while enhanced due diligence obligations apply to Myanmar. Furthermore, the current FATF lists of countries under increased monitoring are provided, with Bosnia and Herzegovina and Iraq newly added, and Algeria and Namibia removed.\n\nFinancial institutions and other obligated entities under the GwG must implement the stated measures and enhanced due diligence obligations to address the risks posed by these countries. This includes, among other things, terminating correspondent relationships, closing subsidiaries, and restricting business relationships."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_07_26_hochrisikostaaten_gw.html",
-        "imp": "high",
-        "refnum": "07/2026"
-      },
-      {
-        "d": "21.05.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil: Öffentlicher Zugang zu Daten über wirtschaftliche Eigentümer von Treuhandverträgen (C-684/24, C-685/24)",
-          "en": "ECJ Judgment: Public Access to Beneficial Ownership Data of Trust Mandates (C-684/24, C-685/24)"
-        },
-        "sl": "judgment-of-the-court-in-joined-cases-c-684-24-across-fiduciaria-and-others-and",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass der öffentliche Zugang zu Informationen über die wirtschaftlichen Eigentümer von Treuhandverträgen italienischen Rechts mit EU-Recht vereinbar ist, sofern ein berechtigtes Interesse vorliegt. Dies dient dem legitimen Ziel der Verhinderung von Geldwäsche und Terrorismusfinanzierung durch erhöhte Transparenz.\n\nDie Entscheidung betrifft Treuhandgesellschaften, die nach der Vierten Geldwäscherichtlinie verpflichtet sind, Informationen über wirtschaftliche Eigentümer bereitzustellen. Der EuGH bestätigt, dass die italienische Gesetzgebung, die diese Pflichten auf Treuhandgesellschaften anwendet, auch wenn kein Eigentumsübergang stattfindet, im Rahmen des Gestaltungsspielraums liegt. Auch die Zuständigkeit der Handelskammern für Ausnahmen vom Zugang wird nicht beanstandet, sofern ein vorläufiger gerichtlicher Rechtsschutz gewährleistet ist.\n\nDieses Urteil ist relevant für Finanzunternehmen und Treuhänder, die mit Treuhandverträgen nach italienischem Recht arbeiten, da es die Transparenzanforderungen und den öffentlichen Zugang zu Daten über wirtschaftliche Eigentümer bestätigt. Es unterstreicht die Bedeutung der Geldwäschebekämpfung und die Notwendigkeit, entsprechende Informationen zugänglich zu machen.",
-          "en": "The European Court of Justice (ECJ) has ruled that public access to information on the beneficial owners of trust mandates governed by Italian law is compatible with EU law, provided there is a legitimate interest. This serves the legitimate goal of preventing money laundering and terrorist financing through increased transparency.\n\nThe decision concerns trust companies that are obliged under the Fourth Anti-Money Laundering Directive to provide information on beneficial owners. The ECJ confirms that Italian legislation, which applies these obligations to trust companies even if no transfer of ownership takes place, is within the scope of discretion. The competence of the Chambers of Commerce to decide on exceptions to access is also not objectionable, provided that provisional judicial protection is guaranteed.\n\nThis judgment is relevant for financial companies and trustees working with trust mandates under Italian law, as it confirms transparency requirements and public access to beneficial ownership data. It underscores the importance of combating money laundering and the need to make relevant information accessible."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-05/cp260074de.pdf",
-        "imp": "high",
-        "refnum": "C-684/24, C-685/24",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "ECJ: Public access to beneficial ownership data compatible with EU law",
-            "url": "https://blogs.pwc.de/de/german-tax-and-legal-news/article/254777/ecj-public-access-to-beneficial-ownership-data-compatible-with-eu-law/",
-            "d": "24.05.2026"
-          }
-        ]
       }
     ],
     "aifmd2": [
