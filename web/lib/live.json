@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T21:23:00Z",
+  "generated_at": "2026-09-29T16:48:16Z",
   "updates": {
     "irrd": [
       {
@@ -238,6 +238,27 @@
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en",
         "imp": "medium",
         "deadline": "20.09.2026"
+      }
+    ],
+    "ebaderisking": [
+      {
+        "d": "29.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Gezielte Konsultation zum Recht auf Vergessenwerden für Krebsüberlebende bei Finanzdienstleistungen",
+          "en": "Targeted Consultation on Fair Access to Financial Services for Cancer Survivors"
+        },
+        "sl": "commission-launches-targeted-consultation-on-fair-access-to-financial-services-f",
+        "s": {
+          "de": "Die Europäische Kommission hat eine gezielte Konsultation zum fairen Zugang zu Finanzdienstleistungen für Krebsüberlebende gestartet. Ziel ist es, sicherzustellen, dass eine frühere Krebsdiagnose nach einer definierten Frist nach Beendigung der aktiven Behandlung nicht mehr zur Festlegung von Preisen oder Zugangsbedingungen für Finanzdienstleistungen wie Hypothekenlebensversicherungen herangezogen werden kann.\n\nDie Konsultation soll praktische Erkenntnisse zur Umsetzung eines effektiven „Rechts auf Vergessenwerden“ in den EU-Mitgliedstaaten sammeln. Sie richtet sich an alle EU- und nationalen Interessengruppen, einschließlich Krebsüberlebender, Patientenorganisationen, der medizinischen Gemeinschaft sowie des Versicherungs- und Bankensektors. Dies ist besonders relevant für Finanzinstitute, die Lebensversicherungen oder andere Finanzprodukte anbieten, bei denen Gesundheitsdaten eine Rolle spielen.\n\nDie Konsultation läuft bis zum 27. Oktober. Das Feedback der Interessengruppen wird die nächsten Schritte der Kommission zum Recht auf Vergessenwerden beeinflussen.",
+          "en": "The European Commission has launched a targeted consultation on fair access to financial services for cancer survivors. The aim is to ensure that, after a defined period following the end of active treatment, a past cancer diagnosis can no longer be used when setting the price or conditions of access to financial services, such as mortgage life insurance.\n\nThe consultation seeks to gather practical insights on how to implement an effective 'right to be forgotten' approach in EU Member States. It targets all EU and national stakeholders, including cancer survivors, representative organizations, the medical community, and the insurance and banking sectors. This is particularly relevant for financial institutions offering life insurance or other financial products where health data plays a role.\n\nThe consultation is open until October 27. Stakeholders' feedback will inform the Commission's next steps on the right to be forgotten."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-launches-targeted-consultation-fair-access-financial-services-cancer-survivors-2026-09-29_en",
+        "imp": "medium"
       }
     ],
     "sanctions": [
