@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T16:48:16Z",
+  "generated_at": "2026-09-29T18:16:32Z",
   "updates": {
     "irrd": [
       {
@@ -261,6 +261,123 @@
         "imp": "medium"
       }
     ],
+    "aiact": [
+      {
+        "d": "29.09.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung zur Vereinfachung der Umsetzung von KI-Vorschriften (32026R1744R(01))",
+          "en": "Corrigendum to the Regulation on simplifying the implementation of AI rules (32026R1744R(01))"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-1744-des-europaeischen-parlaments-und-des-ra",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Verordnung (EU) 2026/1744, die Änderungen an den Verordnungen (EU) 2024/1689, (EU) 2018/1139 und (EU) 2023/1230 vornimmt. Die Änderungen betreffen die Vereinfachung der Umsetzung harmonisierter Vorschriften für künstliche Intelligenz. Es handelt sich um eine technische Korrektur des bereits veröffentlichten Rechtstextes.\n\nDie Berichtigung ist für alle Unternehmen relevant, die von den ursprünglichen Verordnungen betroffen sind, insbesondere im Hinblick auf die Anwendung von harmonisierten KI-Vorschriften. Sie stellt sicher, dass der Gesetzestext korrekt ist und keine Missverständnisse bei der Implementierung entstehen.\n\nEs handelt sich um eine Berichtigung eines bereits in Kraft getretenen Rechtsakts. Es sind keine neuen Fristen oder Konsultationen genannt.",
+          "en": "This corrigendum rectifies Regulation (EU) 2026/1744, which amends Regulations (EU) 2024/1689, (EU) 2018/1139, and (EU) 2023/1230. The amendments aim to simplify the implementation of harmonised rules for artificial intelligence. This is a technical correction to an already published legal text.\n\nThis corrigendum is relevant for all entities affected by the original regulations, particularly concerning the application of harmonised AI rules. It ensures the accuracy of the legal text and prevents misunderstandings during implementation.\n\nThis is a correction to an already enacted legal act. No new deadlines or consultations are mentioned."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1744R(01)",
+        "imp": "low",
+        "refnum": "32026R1744R(01)"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "digital-strategy.ec.europa.eu",
+        "ti": {
+          "de": "Kommission beginnt am 2. August mit der Durchsetzung der KI-Gesetz-Regeln und neuer Transparenzanforderungen",
+          "en": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August"
+        },
+        "sl": "commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-on-2",
+        "s": {
+          "de": "Ab dem 2. August 2026 beginnt das KI-Büro der Europäischen Kommission zusammen mit den nationalen Behörden mit der Durchsetzung des Gesetzes über künstliche Intelligenz (KI-Gesetz). Gleichzeitig treten neue Transparenzregeln in Kraft, die vorschreiben, dass bestimmte KI-Systeme Nutzer darüber informieren müssen, wenn sie mit KI interagieren oder wenn Inhalte von KI generiert oder verändert wurden.\n\nDie neuen Regeln bedeuten, dass Chatbots und andere interaktive KI-Systeme Nutzer darüber aufklären müssen, dass sie mit einer KI und nicht mit einem Menschen kommunizieren. Deepfakes, also mittels KI bearbeitete oder generierte Bilder, Videos oder Audioinhalte, müssen entsprechend gekennzeichnet werden. Zudem müssen KI-generierte oder -veränderte Inhalte maschinenlesbare Markierungen tragen, um ihre Erkennung zu erleichtern. Diese Maßnahmen sollen Täuschung und Manipulation reduzieren und informierte Entscheidungen ermöglichen, während sie Unternehmen klare Pflichten und einen praktischen Weg zur Einhaltung aufzeigen.\n\nDie Durchsetzung des KI-Gesetzes und die neuen Transparenzregeln treten am 2. August 2026 in Kraft. Die Kommission hat bereits eine Liste von über 180 Organisationen veröffentlicht, die den Verhaltenskodex zur Transparenz von KI-generierten Inhalten unterzeichnet haben.",
+          "en": "From August 2, 2026, the European Commission's AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. Simultaneously, new transparency rules will come into effect, requiring certain AI systems to inform users when they are interacting with AI or when content has been generated or altered by it.\n\nThese new rules mandate that chatbots and other interactive AI systems must disclose to users that they are engaging with AI, not a human. Deepfakes, which are images, videos, or audio edited or generated using AI, must be labeled accordingly. Additionally, AI-generated or altered content must carry machine-readable marks to facilitate its detection. These measures aim to reduce deception and manipulation and enable informed choices, while providing businesses with clear obligations and a practical path to compliance.\n\nThe enforcement of the AI Act and the new transparency rules will commence on August 2, 2026. The Commission has already published a list of over 180 organizations that have signed the Code of Practice on transparency of AI-generated content."
+        },
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+        "imp": "high"
+      },
+      {
+        "d": "28.07.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Durchführung der EU-Verordnung über künstliche Intelligenz (BGBl. 2026 I Nr. 223)",
+          "en": "Law on the Implementation of the EU Artificial Intelligence Regulation (BGBl. 2026 I Nr. 223)"
+        },
+        "sl": "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-1689-des-europaeischen-parlament",
+        "s": {
+          "de": "Dieses Gesetz dient der nationalen Durchführung der EU-Verordnung 2024/1689, die harmonisierte Vorschriften für künstliche Intelligenz festlegt. Es handelt sich um ein Bundesgesetz, das am 28.07.2026 im Bundesgesetzblatt veröffentlicht wurde.\n\nDie Verordnung (EU) 2024/1689, deren Durchführung dieses Gesetz regelt, etabliert einen Rechtsrahmen für künstliche Intelligenz. Dies betrifft Unternehmen, die KI-Systeme entwickeln, bereitstellen oder nutzen, und hat Auswirkungen auf verschiedene Sektoren, da die Verordnung auch bestehende EU-Regulierungen in Bereichen wie Produktsicherheit und Verkehr ändert. Die Regelungen sind relevant für die Anpassung von Geschäftsprozessen und Compliance-Strategien im Umgang mit KI.\n\nDas Gesetz wurde am 22.07.2026 ausgefertigt und am 28.07.2026 veröffentlicht. Es fällt in die Sachgebiete EWG-Durchführung, Strafgesetzbuch, Sozialgesetzbuch und aufsichtsrechtliche Vorschriften.",
+          "en": "This law serves to implement EU Regulation 2024/1689, which establishes harmonized rules for artificial intelligence. It is a federal law published in the Federal Law Gazette on July 28, 2026.\n\nRegulation (EU) 2024/1689, which this law implements, establishes a legal framework for artificial intelligence. This affects companies that develop, provide, or use AI systems and has implications for various sectors, as the regulation also amends existing EU regulations in areas such as product safety and transport. The regulations are relevant for adapting business processes and compliance strategies in dealing with AI.\n\nThe law was enacted on July 22, 2026, and published on July 28, 2026. It falls under the subject areas of EEC implementation, criminal code, social security code, and supervisory regulations."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/223",
+        "imp": "high"
+      },
+      {
+        "d": "27.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "digital-strategy.ec.europa.eu",
+        "ti": {
+          "de": "KI-Omnibus tritt in Kraft",
+          "en": "AI Omnibus enters into force"
+        },
+        "sl": "ai-omnibus-enters-into-force",
+        "s": {
+          "de": "Der AI Omnibus tritt am 27. Juli 2026 in Kraft und vereinfacht das Regelwerk für Künstliche Intelligenz (KI) bei gleichzeitiger Wahrung von Sicherheits- und Grundrechtsstandards. Er zielt darauf ab, Innovation und Wettbewerbsfähigkeit zu fördern, indem er die Einhaltung der Vorschriften für kleinere Unternehmen erleichtert, Fristen verlängert und Testmöglichkeiten erweitert.\n\nDie Neuerungen umfassen Unterstützung für wachsende Unternehmen durch Ausweitung von Maßnahmen auf Small Mid-Cap Companies (SMCs), erweiterten Zugang zu regulatorischen Sandboxes und die Einführung einer EU-weiten Sandbox. Zudem werden administrative Lasten reduziert, indem vereinfachte rechtliche Pflichten für KMU auf SMCs ausgedehnt und die Registrierungspflicht für ausgenommene KI-Systeme in der EU-Datenbank vereinfacht wird. Die Vorschriften für Hochrisiko-KI-Systeme treten gestaffelt ab dem 2. Dezember 2027 in Kraft. Verboten werden KI-Systeme, die nicht-einvernehmliche sexuell explizite Inhalte oder Material zum sexuellen Missbrauch von Kindern generieren.\n\nDas AI Office erhält erweiterte Aufsichtsbefugnisse über bestimmte KI-Systeme, einschließlich solcher, die auf allgemeinen Modellen basieren und in großen Online-Plattformen und Suchmaschinen integriert sind. Zudem wird die Rechts- und Verfahrensklarheit durch die Präzisierung des Zusammenspiels zwischen dem AI Act und anderen EU-Gesetzen sowie die Vereinfachung von Konformitätsbewertungsverfahren verbessert.",
+          "en": "The AI Omnibus enters into force on 27 July 2026, simplifying the AI rulebook while maintaining strong safeguards for safety and fundamental rights. It aims to foster innovation and competitiveness by easing compliance for smaller businesses, extending timelines, and expanding testing opportunities.\n\nKey updates include support for growing companies by extending measures to Small Mid-Cap Companies (SMCs), expanded access to regulatory sandboxes, and the introduction of an EU-level sandbox. Administrative burdens are reduced by extending simplified legal obligations for SMEs to SMCs and simplifying the registration of exempted AI systems in the EU database. Rules for high-risk AI systems will apply in phases, starting from 2 December 2027. The Omnibus also prohibits AI systems that generate non-consensual sexually explicit content or child sexual abuse material.\n\nThe AI Office will gain extended oversight powers over certain AI systems, including those built on general-purpose models and embedded in large online platforms and search engines. Furthermore, legal and procedural clarity is enhanced by clarifying the interplay between the AI Act and other EU laws, and by simplifying procedures for conformity assessment bodies."
+        },
+        "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+        "imp": "high"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "digital-strategy.ec.europa.eu",
+        "ti": {
+          "de": "Kommission veröffentlicht Leitlinien zu Transparenzpflichten für KI-Systeme",
+          "en": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
+        },
+        "sl": "commission-publishes-guidelines-on-transparency-obligations-for-providers-and-de",
+        "s": {
+          "de": "Die Europäische Kommission hat Leitlinien veröffentlicht, die Anbietern und Betreibern von KI-Systemen bei der Einhaltung der Transparenzpflichten des AI Act helfen sollen. Diese Pflichten treten am 2. August 2026 in Kraft und zielen darauf ab, die Erkennung von Interaktionen mit KI sowie von KI-generierten oder -veränderten Inhalten zu erleichtern, um Täuschung und Manipulation zu reduzieren.\n\nDie Leitlinien präzisieren, welche Anbieter und Betreiber die Transparenzpflichten für interaktive KI-Systeme sowie für die Kennzeichnung und Etikettierung von KI-generierten Inhalten erfüllen müssen. Anbieter müssen KI-Systeme so gestalten, dass Nutzer über die direkte Interaktion mit einer KI informiert werden und maschinenlesbare Kennzeichnungen zur Erkennung von KI-generierten oder manipulierten Inhalten hinzugefügt werden. Betreiber müssen Personen informieren, wenn sie Deepfakes, KI-generierten Inhalten von öffentlichem Interesse ohne menschliche Überprüfung oder redaktionelle Kontrolle sowie Emotionserkennungs- oder biometrischen Kategorisierungssystemen ausgesetzt sind.\n\nDie Transparenzpflichten des AI Act gelten ab dem 2. August 2026.",
+          "en": "The European Commission has published guidelines to assist providers and deployers of AI systems in meeting the transparency obligations of the AI Act. These obligations, which come into force on August 2, 2026, aim to help people recognize when they are interacting with AI or when content has been generated or altered by AI, thereby reducing the risk of deception and manipulation.\n\nThe guidelines clarify which providers and deployers must comply with the transparency obligations for interactive AI systems and for the marking and labeling of AI-generated content. Providers will have to design AI systems to inform users when they are directly interacting with an AI and to add machine-readable marks to enable the detection of AI-generated or manipulated content. Deployers will also have to inform people when they are exposed to deepfakes, to AI-generated content on matters of public interest without human review or editorial control, and to emotion recognition or biometric categorization systems.\n\nThese transparency obligations under the AI Act will apply from August 2, 2026."
+        },
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+        "imp": "high"
+      },
+      {
+        "d": "06.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bsi.bund.de",
+        "ti": {
+          "de": "BSI veröffentlicht Community Draft des Prüfkatalogs A5 für vertrauenswürdige KI-Systeme",
+          "en": "BSI Publishes Community Draft of A5 Audit Catalog for Trustworthy AI Systems"
+        },
+        "sl": "pruefkatalog-vertrauenswuerdige-ki-systeme-bsi-veroeffentlicht-community-draft-d",
+        "s": {
+          "de": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI) hat den Community Draft der AI Audit and Assurance Assessment Architecture (A5) zur Kommentierung veröffentlicht. Der A5 legt den Grundstein für eine modulare und erweiterbare Prüfarchitektur für KI-Systeme und bietet Kriterien und Methodik zur systematischen und standardisierten Bewertung der Vertrauenswürdigkeit von KI-Systemen.\n\nDer A5 richtet sich an alle Akteure entlang der KI-Wertschöpfungskette, von Anbietern über Betreiber bis hin zu Personen, die mit Entwicklung, Betrieb und Aufsicht betraut sind. Er unterstützt Stakeholder bei der Einhaltung regulatorischer Anforderungen wie dem EU AI Act und dem Cyber Resilience Act und ermöglicht die Integration in bestehende OSCAL-basierte Werkzeuge zur Compliance-Bearbeitung. Die Methodik orientiert sich am C5-Katalog des BSI und dem International Standard on Assurance Engagements 3000 (ISAE 3000).\n\nAnmerkungen und Anregungen zum Community Draft können bis zum 31. August 2026 per E-Mail an aisecurity@bsi.bund.de gesendet werden.",
+          "en": "The German Federal Office for Information Security (BSI) has published the Community Draft of the AI Audit and Assurance Assessment Architecture (A5) for comment. The A5 lays the foundation for a modular and extensible audit architecture for AI systems, providing criteria and methodology for the systematic and standardized assessment of AI system trustworthiness.\n\nThe A5 is aimed at all stakeholders along the AI value chain, from providers and operators to those involved in development, operation, and supervision. It supports stakeholders in complying with regulatory requirements such as the EU AI Act and the Cyber Resilience Act, and allows integration into existing OSCAL-based tools for compliance processing. The methodology is based on the BSI's C5 catalog and the International Standard on Assurance Engagements 3000 (ISAE 3000).\n\nComments and suggestions on the Community Draft can be submitted by email to aisecurity@bsi.bund.de until August 31, 2026."
+        },
+        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260706_KI_A5-Community-Draft.html",
+        "imp": "medium"
+      }
+    ],
     "sanctions": [
       {
         "d": "28.09.2026",
@@ -301,6 +418,26 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2184",
         "imp": "high",
         "refnum": "32026R2184"
+      },
+      {
+        "d": "28.09.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Durchführungsverordnung (EU) 2026/2191 des Rates vom 28. September 2026 zur Durchführung der Verordnung (EG) Nr. 1183/2005 über restriktive Maßnahmen angesichts der Lage in der Demokratischen …",
+          "en": "Durchführungsverordnung (EU) 2026/2191 des Rates vom 28. September 2026 zur Durchführung der Verordnung (EG) Nr. 1183/2005 über restriktive Maßnahmen angesichts der Lage in der Demokratischen …"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2191-des-rates-vom-28-september-2026-zur-durchf",
+        "s": {
+          "de": "Die Durchführungsverordnung (EU) 2026/2191 des Rates aktualisiert die Liste der Personen und Organisationen, gegen die restriktive Maßnahmen aufgrund der Lage in der Demokratischen Republik Kongo verhängt wurden. Es handelt sich um eine Anpassung der Anhänge der Verordnung (EG) Nr. 1183/2005, die die Grundlage für diese Sanktionen bildet.\n\nDiese Aktualisierung ist für Finanzinstitute und andere Unternehmen relevant, die Geschäftsbeziehungen mit Akteuren in oder mit Bezug zur Demokratischen Republik Kongo unterhalten. Sie müssen sicherstellen, dass sie keine Gelder oder wirtschaftlichen Ressourcen für die gelisteten Personen oder Organisationen bereitstellen und deren Vermögenswerte einfrieren.\n\nDie Verordnung tritt am Tag ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
+          "en": "Council Implementing Regulation (EU) 2026/2191 updates the list of persons and entities subject to restrictive measures due to the situation in the Democratic Republic of Congo. This involves an adjustment to the annexes of Regulation (EC) No 1183/2005, which forms the basis for these sanctions.\n\nThis update is relevant for financial institutions and other businesses that maintain commercial relations with actors in or related to the Democratic Republic of Congo. They must ensure that they do not make funds or economic resources available to the listed persons or entities and must freeze their assets.\n\nThe Regulation enters into force on the day of its publication in the Official Journal of the European Union."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2191",
+        "imp": "high",
+        "refnum": "32026R2191"
       },
       {
         "d": "24.09.2026",
@@ -361,26 +498,6 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2138",
         "imp": "low",
         "refnum": "32026R2138"
-      },
-      {
-        "d": "03.09.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Beweisanforderungen bei Kontrolle von Unternehmen durch sanktionierte Personen (C-147/25)",
-          "en": "ECJ ruling on evidentiary requirements for control of companies by sanctioned persons (C-147/25)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-147-25-inter-rao-lietuva",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Kontrolle einer Gesellschaft durch eine Person, die EU-restriktiven Maßnahmen unterliegt, objektiv und hinreichend gesichert nachgewiesen werden muss. Der autokratische Charakter eines politischen Regimes allein reicht nicht aus, um eine solche Kontrolle zu belegen. Nationale Behörden müssen die Kontrolle durch unmittelbare Beweise oder ein Bündel konkreter, genauer und übereinstimmender Indizien belegen.\n\nDies betrifft Finanzinstitute und andere Unternehmen, die mit Sanktionen belegte Personen oder Unternehmen identifizieren und deren Vermögenswerte einfrieren müssen. Die Entscheidung präzisiert die Anforderungen an die Beweisführung für die Kontrolle von Unternehmen im Kontext von EU-Sanktionen und betont die Notwendigkeit einer soliden faktischen Grundlage für solche Maßnahmen. Nationale Gerichte müssen die Rechtmäßigkeit von Einfrierungsmaßnahmen überprüfen, ohne jedoch die Frage einer Bedrohung der nationalen Sicherheit beurteilen zu müssen.\n\nDie Begründung für das Einfrieren von Geldern muss den Betroffenen so bald wie möglich mitgeteilt werden, um deren Recht auf gerichtlichen Rechtsschutz zu gewährleisten. Eine vorherige Anhörung oder Mitteilung ist nicht erforderlich, um die Wirksamkeit der Maßnahme nicht zu gefährden.",
-          "en": "The European Court of Justice (ECJ) has ruled that the control of a company by a person subject to EU restrictive measures must be proven objectively and with sufficient certainty. The autocratic nature of a political regime alone is not sufficient to demonstrate such control. National authorities must prove control through direct evidence or a set of concrete, precise, and consistent indications.\n\nThis affects financial institutions and other companies that need to identify sanctioned individuals or entities and freeze their assets. The decision clarifies the evidentiary requirements for proving company control in the context of EU sanctions and emphasizes the need for a solid factual basis for such measures. National courts must review the legality of asset-freezing measures but are not required to assess the question of a threat to national security.\n\nThe reasons for freezing funds must be communicated to the affected parties as soon as possible to ensure their right to judicial review. Prior hearings or notifications are not required to avoid jeopardizing the effectiveness of the measure."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260116de.pdf",
-        "imp": "medium",
-        "refnum": "C-147/25"
       }
     ],
     "gwg": [
@@ -2606,103 +2723,6 @@
           "en": "The European Supervisory Authorities (ESAs) have issued a statement on a consistent and risk-based approach to ICT risks arising from frontier AI models. These cutting-edge AI models pose new challenges to the operational resilience of financial entities. The statement emphasizes the need to adapt existing ICT risk management frameworks to address these emerging threats.\n\nFinancial institutions must re-evaluate their cyber risk prevention, detection, and management strategies. This includes continuously updating IT inventories, implementing secure-by-design principles, enhancing monitoring processes, and adapting risk management frameworks to AI-assisted threats. Cybersecurity awareness training for management and staff also needs to evolve to foster a more proactive mindset.\n\nThe statement calls for the evolution of cybersecurity strategies to respond to AI-enhanced attacks. This involves integrating automated security controls into development processes and considering new or heightened risks from AI models, including dependencies on third-party providers and open-source communities."
         },
         "url": "https://www.esma.europa.eu/document/esas-statement-toward-consistent-and-risk-based-approach-ict-risks-frontier-ai-models",
-        "imp": "medium"
-      }
-    ],
-    "aiact": [
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "digital-strategy.ec.europa.eu",
-        "ti": {
-          "de": "Kommission beginnt am 2. August mit der Durchsetzung der KI-Gesetz-Regeln und neuer Transparenzanforderungen",
-          "en": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August"
-        },
-        "sl": "commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-on-2",
-        "s": {
-          "de": "Ab dem 2. August 2026 beginnt das KI-Büro der Europäischen Kommission zusammen mit den nationalen Behörden mit der Durchsetzung des Gesetzes über künstliche Intelligenz (KI-Gesetz). Gleichzeitig treten neue Transparenzregeln in Kraft, die vorschreiben, dass bestimmte KI-Systeme Nutzer darüber informieren müssen, wenn sie mit KI interagieren oder wenn Inhalte von KI generiert oder verändert wurden.\n\nDie neuen Regeln bedeuten, dass Chatbots und andere interaktive KI-Systeme Nutzer darüber aufklären müssen, dass sie mit einer KI und nicht mit einem Menschen kommunizieren. Deepfakes, also mittels KI bearbeitete oder generierte Bilder, Videos oder Audioinhalte, müssen entsprechend gekennzeichnet werden. Zudem müssen KI-generierte oder -veränderte Inhalte maschinenlesbare Markierungen tragen, um ihre Erkennung zu erleichtern. Diese Maßnahmen sollen Täuschung und Manipulation reduzieren und informierte Entscheidungen ermöglichen, während sie Unternehmen klare Pflichten und einen praktischen Weg zur Einhaltung aufzeigen.\n\nDie Durchsetzung des KI-Gesetzes und die neuen Transparenzregeln treten am 2. August 2026 in Kraft. Die Kommission hat bereits eine Liste von über 180 Organisationen veröffentlicht, die den Verhaltenskodex zur Transparenz von KI-generierten Inhalten unterzeichnet haben.",
-          "en": "From August 2, 2026, the European Commission's AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. Simultaneously, new transparency rules will come into effect, requiring certain AI systems to inform users when they are interacting with AI or when content has been generated or altered by it.\n\nThese new rules mandate that chatbots and other interactive AI systems must disclose to users that they are engaging with AI, not a human. Deepfakes, which are images, videos, or audio edited or generated using AI, must be labeled accordingly. Additionally, AI-generated or altered content must carry machine-readable marks to facilitate its detection. These measures aim to reduce deception and manipulation and enable informed choices, while providing businesses with clear obligations and a practical path to compliance.\n\nThe enforcement of the AI Act and the new transparency rules will commence on August 2, 2026. The Commission has already published a list of over 180 organizations that have signed the Code of Practice on transparency of AI-generated content."
-        },
-        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
-        "imp": "high"
-      },
-      {
-        "d": "28.07.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Durchführung der EU-Verordnung über künstliche Intelligenz (BGBl. 2026 I Nr. 223)",
-          "en": "Law on the Implementation of the EU Artificial Intelligence Regulation (BGBl. 2026 I Nr. 223)"
-        },
-        "sl": "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-1689-des-europaeischen-parlament",
-        "s": {
-          "de": "Dieses Gesetz dient der nationalen Durchführung der EU-Verordnung 2024/1689, die harmonisierte Vorschriften für künstliche Intelligenz festlegt. Es handelt sich um ein Bundesgesetz, das am 28.07.2026 im Bundesgesetzblatt veröffentlicht wurde.\n\nDie Verordnung (EU) 2024/1689, deren Durchführung dieses Gesetz regelt, etabliert einen Rechtsrahmen für künstliche Intelligenz. Dies betrifft Unternehmen, die KI-Systeme entwickeln, bereitstellen oder nutzen, und hat Auswirkungen auf verschiedene Sektoren, da die Verordnung auch bestehende EU-Regulierungen in Bereichen wie Produktsicherheit und Verkehr ändert. Die Regelungen sind relevant für die Anpassung von Geschäftsprozessen und Compliance-Strategien im Umgang mit KI.\n\nDas Gesetz wurde am 22.07.2026 ausgefertigt und am 28.07.2026 veröffentlicht. Es fällt in die Sachgebiete EWG-Durchführung, Strafgesetzbuch, Sozialgesetzbuch und aufsichtsrechtliche Vorschriften.",
-          "en": "This law serves to implement EU Regulation 2024/1689, which establishes harmonized rules for artificial intelligence. It is a federal law published in the Federal Law Gazette on July 28, 2026.\n\nRegulation (EU) 2024/1689, which this law implements, establishes a legal framework for artificial intelligence. This affects companies that develop, provide, or use AI systems and has implications for various sectors, as the regulation also amends existing EU regulations in areas such as product safety and transport. The regulations are relevant for adapting business processes and compliance strategies in dealing with AI.\n\nThe law was enacted on July 22, 2026, and published on July 28, 2026. It falls under the subject areas of EEC implementation, criminal code, social security code, and supervisory regulations."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/223",
-        "imp": "high"
-      },
-      {
-        "d": "27.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "digital-strategy.ec.europa.eu",
-        "ti": {
-          "de": "KI-Omnibus tritt in Kraft",
-          "en": "AI Omnibus enters into force"
-        },
-        "sl": "ai-omnibus-enters-into-force",
-        "s": {
-          "de": "Der AI Omnibus tritt am 27. Juli 2026 in Kraft und vereinfacht das Regelwerk für Künstliche Intelligenz (KI) bei gleichzeitiger Wahrung von Sicherheits- und Grundrechtsstandards. Er zielt darauf ab, Innovation und Wettbewerbsfähigkeit zu fördern, indem er die Einhaltung der Vorschriften für kleinere Unternehmen erleichtert, Fristen verlängert und Testmöglichkeiten erweitert.\n\nDie Neuerungen umfassen Unterstützung für wachsende Unternehmen durch Ausweitung von Maßnahmen auf Small Mid-Cap Companies (SMCs), erweiterten Zugang zu regulatorischen Sandboxes und die Einführung einer EU-weiten Sandbox. Zudem werden administrative Lasten reduziert, indem vereinfachte rechtliche Pflichten für KMU auf SMCs ausgedehnt und die Registrierungspflicht für ausgenommene KI-Systeme in der EU-Datenbank vereinfacht wird. Die Vorschriften für Hochrisiko-KI-Systeme treten gestaffelt ab dem 2. Dezember 2027 in Kraft. Verboten werden KI-Systeme, die nicht-einvernehmliche sexuell explizite Inhalte oder Material zum sexuellen Missbrauch von Kindern generieren.\n\nDas AI Office erhält erweiterte Aufsichtsbefugnisse über bestimmte KI-Systeme, einschließlich solcher, die auf allgemeinen Modellen basieren und in großen Online-Plattformen und Suchmaschinen integriert sind. Zudem wird die Rechts- und Verfahrensklarheit durch die Präzisierung des Zusammenspiels zwischen dem AI Act und anderen EU-Gesetzen sowie die Vereinfachung von Konformitätsbewertungsverfahren verbessert.",
-          "en": "The AI Omnibus enters into force on 27 July 2026, simplifying the AI rulebook while maintaining strong safeguards for safety and fundamental rights. It aims to foster innovation and competitiveness by easing compliance for smaller businesses, extending timelines, and expanding testing opportunities.\n\nKey updates include support for growing companies by extending measures to Small Mid-Cap Companies (SMCs), expanded access to regulatory sandboxes, and the introduction of an EU-level sandbox. Administrative burdens are reduced by extending simplified legal obligations for SMEs to SMCs and simplifying the registration of exempted AI systems in the EU database. Rules for high-risk AI systems will apply in phases, starting from 2 December 2027. The Omnibus also prohibits AI systems that generate non-consensual sexually explicit content or child sexual abuse material.\n\nThe AI Office will gain extended oversight powers over certain AI systems, including those built on general-purpose models and embedded in large online platforms and search engines. Furthermore, legal and procedural clarity is enhanced by clarifying the interplay between the AI Act and other EU laws, and by simplifying procedures for conformity assessment bodies."
-        },
-        "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
-        "imp": "high"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "digital-strategy.ec.europa.eu",
-        "ti": {
-          "de": "Kommission veröffentlicht Leitlinien zu Transparenzpflichten für KI-Systeme",
-          "en": "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
-        },
-        "sl": "commission-publishes-guidelines-on-transparency-obligations-for-providers-and-de",
-        "s": {
-          "de": "Die Europäische Kommission hat Leitlinien veröffentlicht, die Anbietern und Betreibern von KI-Systemen bei der Einhaltung der Transparenzpflichten des AI Act helfen sollen. Diese Pflichten treten am 2. August 2026 in Kraft und zielen darauf ab, die Erkennung von Interaktionen mit KI sowie von KI-generierten oder -veränderten Inhalten zu erleichtern, um Täuschung und Manipulation zu reduzieren.\n\nDie Leitlinien präzisieren, welche Anbieter und Betreiber die Transparenzpflichten für interaktive KI-Systeme sowie für die Kennzeichnung und Etikettierung von KI-generierten Inhalten erfüllen müssen. Anbieter müssen KI-Systeme so gestalten, dass Nutzer über die direkte Interaktion mit einer KI informiert werden und maschinenlesbare Kennzeichnungen zur Erkennung von KI-generierten oder manipulierten Inhalten hinzugefügt werden. Betreiber müssen Personen informieren, wenn sie Deepfakes, KI-generierten Inhalten von öffentlichem Interesse ohne menschliche Überprüfung oder redaktionelle Kontrolle sowie Emotionserkennungs- oder biometrischen Kategorisierungssystemen ausgesetzt sind.\n\nDie Transparenzpflichten des AI Act gelten ab dem 2. August 2026.",
-          "en": "The European Commission has published guidelines to assist providers and deployers of AI systems in meeting the transparency obligations of the AI Act. These obligations, which come into force on August 2, 2026, aim to help people recognize when they are interacting with AI or when content has been generated or altered by AI, thereby reducing the risk of deception and manipulation.\n\nThe guidelines clarify which providers and deployers must comply with the transparency obligations for interactive AI systems and for the marking and labeling of AI-generated content. Providers will have to design AI systems to inform users when they are directly interacting with an AI and to add machine-readable marks to enable the detection of AI-generated or manipulated content. Deployers will also have to inform people when they are exposed to deepfakes, to AI-generated content on matters of public interest without human review or editorial control, and to emotion recognition or biometric categorization systems.\n\nThese transparency obligations under the AI Act will apply from August 2, 2026."
-        },
-        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
-        "imp": "high"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bsi.bund.de",
-        "ti": {
-          "de": "BSI veröffentlicht Community Draft des Prüfkatalogs A5 für vertrauenswürdige KI-Systeme",
-          "en": "BSI Publishes Community Draft of A5 Audit Catalog for Trustworthy AI Systems"
-        },
-        "sl": "pruefkatalog-vertrauenswuerdige-ki-systeme-bsi-veroeffentlicht-community-draft-d",
-        "s": {
-          "de": "Das Bundesamt für Sicherheit in der Informationstechnik (BSI) hat den Community Draft der AI Audit and Assurance Assessment Architecture (A5) zur Kommentierung veröffentlicht. Der A5 legt den Grundstein für eine modulare und erweiterbare Prüfarchitektur für KI-Systeme und bietet Kriterien und Methodik zur systematischen und standardisierten Bewertung der Vertrauenswürdigkeit von KI-Systemen.\n\nDer A5 richtet sich an alle Akteure entlang der KI-Wertschöpfungskette, von Anbietern über Betreiber bis hin zu Personen, die mit Entwicklung, Betrieb und Aufsicht betraut sind. Er unterstützt Stakeholder bei der Einhaltung regulatorischer Anforderungen wie dem EU AI Act und dem Cyber Resilience Act und ermöglicht die Integration in bestehende OSCAL-basierte Werkzeuge zur Compliance-Bearbeitung. Die Methodik orientiert sich am C5-Katalog des BSI und dem International Standard on Assurance Engagements 3000 (ISAE 3000).\n\nAnmerkungen und Anregungen zum Community Draft können bis zum 31. August 2026 per E-Mail an aisecurity@bsi.bund.de gesendet werden.",
-          "en": "The German Federal Office for Information Security (BSI) has published the Community Draft of the AI Audit and Assurance Assessment Architecture (A5) for comment. The A5 lays the foundation for a modular and extensible audit architecture for AI systems, providing criteria and methodology for the systematic and standardized assessment of AI system trustworthiness.\n\nThe A5 is aimed at all stakeholders along the AI value chain, from providers and operators to those involved in development, operation, and supervision. It supports stakeholders in complying with regulatory requirements such as the EU AI Act and the Cyber Resilience Act, and allows integration into existing OSCAL-based tools for compliance processing. The methodology is based on the BSI's C5 catalog and the International Standard on Assurance Engagements 3000 (ISAE 3000).\n\nComments and suggestions on the Community Draft can be submitted by email to aisecurity@bsi.bund.de until August 31, 2026."
-        },
-        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260706_KI_A5-Community-Draft.html",
         "imp": "medium"
       }
     ],
