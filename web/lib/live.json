@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T14:24:24Z",
+  "generated_at": "2026-10-01T05:22:57Z",
   "updates": {
     "irrd": [
       {
@@ -41,6 +41,25 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-draft-rts-valuation-3-irrd_en",
         "imp": "medium",
         "deadline": "20.10.2026"
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Umsetzung der EU-Richtlinien zur Sanierung und Abwicklung von Versicherungsunternehmen (VSAAG)",
+          "en": "Act Implementing EU Directives on Recovery and Resolution of Insurance Undertakings (VSAAG)"
+        },
+        "sl": "gesetz-zur-umsetzung-der-richtlinien-eu-2025-1-und-eu-2025-2-zur-festlegung-eine",
+        "s": {
+          "de": "Das Gesetz zur Umsetzung der Richtlinien (EU) 2025/1 und (EU) 2025/2, kurz Versicherungs-Sanierungs-Abwicklungs-und-Aufsichtsänderungs-Gesetz (VSAAG), wurde am 30.09.2026 im Bundesgesetzblatt veröffentlicht. Es dient der Implementierung von EU-Vorgaben zur Sanierung und Abwicklung von Versicherungsunternehmen und passt den Aufsichtsrahmen an.\n\nDieses Gesetz ist für Versicherungsunternehmen relevant, da es einen neuen Rahmen für Sanierungs- und Abwicklungsmaßnahmen schafft. Es betrifft verschiedene Sachgebiete, darunter Versicherungsaufsichtsrecht und aufsichtsrechtliche Vorschriften, und kann weitreichende Auswirkungen auf die Geschäftsprozesse und die Compliance-Anforderungen der betroffenen Institute haben.\n\nDas Gesetz wurde am 25.09.2026 ausgefertigt und ist nun als BGBl. 2026 I Nr. 275 verfügbar.",
+          "en": "The Act implementing Directives (EU) 2025/1 and (EU) 2025/2, known as the Insurance Recovery, Resolution and Supervisory Amendment Act (VSAAG), was published in the Federal Law Gazette on 30.09.2026. It serves to implement EU requirements for the recovery and resolution of insurance undertakings and adjusts the supervisory framework.\n\nThis Act is relevant for insurance undertakings as it establishes a new framework for recovery and resolution measures. It affects various areas, including insurance supervisory law and prudential regulations, and can have far-reaching implications for the business processes and compliance requirements of the affected institutions.\n\nThe Act was issued on 25.09.2026 and is now available as BGBl. 2026 I No. 275."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/275",
+        "imp": "high"
       },
       {
         "d": "25.09.2026",
@@ -98,26 +117,6 @@
         },
         "url": "https://www.eiopa.europa.eu/eiopa-launches-consultation-irrd-draft-technical-standards-covering-valuation-reinsurers-context-2026-07-08_en",
         "imp": "medium"
-      },
-      {
-        "d": "09.12.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zu RTS über die vertragliche Anerkennung von Resolution Stay Powers (IRRD)",
-          "en": "Consultation on RTS on Contractual Recognition of Resolution Stay Powers (IRRD)"
-        },
-        "sl": "consultation-on-on-the-proposal-for-regulatory-technical-standards-on-contractua",
-        "s": {
-          "de": "Die EIOPA hat eine Konsultation zu einem Entwurf für Regulierungsstandards (RTS) zur vertraglichen Anerkennung von „Resolution Stay Powers“ gemäß Artikel 52 der Richtlinie (EU) 2025/1 (IRRD) veröffentlicht. Diese RTS sollen standardisierte Bedingungen für Finanzkontrakte festlegen, die es Abwicklungsbehörden ermöglichen, ihre Befugnisse zur Aussetzung oder Beschränkung von Rechten und Pflichten (Stay Powers) bei Verträgen auszuüben, die dem Recht eines Drittlandes unterliegen.\n\nZiel ist es, die grenzüberschreitende Durchsetzbarkeit der Maßnahmen von Abwicklungsbehörden zu unterstützen. Die IRRD verlangt von bestimmten Unternehmen, in Finanzkontrakte, die dem Recht eines Drittlandes unterliegen, Klauseln aufzunehmen, die die Ausübung dieser Stay Powers anerkennen. Dies ist besonders relevant, da die Anwendung von Stay Powers bei Verträgen, die dem Recht eines Mitgliedstaates unterliegen, bereits gesetzlich geregelt ist, bei Drittlandverträgen jedoch eine vertragliche Anerkennung zur Sicherstellung der Durchsetzbarkeit erforderlich ist.\n\nDie Konsultationsfrist endete am 20. März 2026. Die EIOPA wird die eingegangenen Kommentare prüfen und einen Bericht über die Konsultation sowie den überarbeiteten Vorschlag veröffentlichen.",
-          "en": "EIOPA has published a consultation on a draft for Regulatory Technical Standards (RTS) on the contractual recognition of resolution stay powers under Article 52 of Directive (EU) 2025/1 (IRRD). These RTS aim to establish standardized terms for financial contracts, enabling resolution authorities to exercise their powers to suspend or restrict rights and obligations (stay powers) in contracts governed by third-country law.\n\nThe objective is to support the cross-border enforceability of resolution authorities' actions. The IRRD requires certain entities to include clauses in financial contracts governed by third-country law that recognize the exercise of these stay powers. This is particularly relevant because, while the application of stay powers in contracts governed by the law of a Member State is already legally established, contractual recognition is necessary for third-country contracts to ensure enforceability.\n\nThe consultation period ended on 20 March 2026. EIOPA will review the comments received and publish a consultation report along with the revised proposal."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-proposal-regulatory-technical-standards-contractual-recognition-resolution-stay-powers_en",
-        "imp": "medium",
-        "deadline": "20.03.2026"
       }
     ],
     "amla": [
@@ -238,6 +237,182 @@
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en",
         "imp": "medium",
         "deadline": "20.09.2026"
+      }
+    ],
+    "dltpilot": [
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
+          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
+        },
+        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
+          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
+        "imp": "medium"
+      },
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
+          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
+        },
+        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
+          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
+        "imp": "medium"
+      }
+    ],
+    "mica": [
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
+          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
+        },
+        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
+        "s": {
+          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
+          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1721",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur Ratifizierung der Zusatzvereinbarung zum automatischen Informationsaustausch über Finanzkonten (Kryptowerte)",
+          "en": "Act on the Ratification of the Additional Agreement on the Automatic Exchange of Financial Account Information (Crypto-Assets)"
+        },
+        "sl": "gesetz-zu-der-zusatzvereinbarung-vom-8-juni-2023-zur-mehrseitigen-vereinbarung-v",
+        "s": {
+          "de": "Das Gesetz dient der Ratifizierung einer Zusatzvereinbarung zur Mehrseitigen Vereinbarung vom 29. Oktober 2014 über den automatischen Austausch von Informationen über Finanzkonten. Diese Zusatzvereinbarung, unterzeichnet am 8. Juni 2023, erweitert den Umfang der auszutauschenden Informationen.\n\nDie Erweiterung betrifft insbesondere neue digitale Finanzprodukte, Derivate auf Kryptowerte und Beteiligungen an Krypto-Investmentgesellschaften. Dies ist relevant für Finanzinstitute, die solche Produkte anbieten oder verwalten, da sie künftig entsprechende Daten für den automatischen Informationsaustausch bereitstellen müssen.\n\nDie Zusatzvereinbarung wurde am 26. November in Asunción unterzeichnet.",
+          "en": "This law serves to ratify an additional agreement to the Multilateral Competent Authority Agreement of October 29, 2014, on the automatic exchange of financial account information. This additional agreement, signed on June 8, 2023, expands the scope of information to be exchanged.\n\nThe expansion specifically includes new digital financial products, derivatives on crypto-assets, and participations in crypto investment entities. This is relevant for financial institutions that offer or manage such products, as they will be required to provide corresponding data for automatic information exchange in the future.\n\nThe additional agreement was signed on November 26 in Asunción."
+        },
+        "url": "https://dip.bundestag.de/vorgang/335556",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
+          "en": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte"
+        },
+        "sl": "gesetz-zu-der-mehrseitigen-vereinbarung-vom-8-juni-2023-zwischen-den-zustaendige",
+        "s": {
+          "de": "Dieses Gesetz dient der Umsetzung der Mehrseitigen Vereinbarung vom 8. Juni 2023 über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (Crypto-Asset Reporting Framework – CARF). Ziel ist die Erweiterung des automatischen Informationsaustauschs auf Transaktionen mit Kryptowerten, um Steuerhinterziehung in diesem Bereich zu bekämpfen.\n\nDie Vereinbarung verpflichtet die zuständigen Behörden der teilnehmenden Staaten, Informationen über meldepflichtige Kryptowerte und deren Nutzer auszutauschen. Dies betrifft insbesondere Krypto-Dienstleister, die Transaktionen mit Kryptowerten für Kunden durchführen. Für Finanzunternehmen bedeutet dies eine Ausweitung ihrer Meldepflichten und eine Anpassung ihrer internen Prozesse zur Datenerfassung und -übermittlung.\n\nDie Zustimmung zu dieser Vereinbarung ist ein Schritt zur Schaffung eines globalen Standards für den Informationsaustausch im Bereich der Kryptowerte. Das Gesetz enthält zudem eine Verordnungsermächtigung zur weiteren Ausgestaltung der nationalen Umsetzung.",
+          "en": "This law serves to implement the Multilateral Agreement of June 8, 2023, on the automatic exchange of information under the Crypto-Asset Reporting Framework (CARF). The aim is to extend the automatic exchange of information to transactions involving crypto-assets to combat tax evasion in this area.\n\nThe agreement obliges the competent authorities of the participating states to exchange information on reportable crypto-assets and their users. This particularly affects crypto service providers who conduct crypto-asset transactions for customers. For financial institutions, this means an expansion of their reporting obligations and an adaptation of their internal processes for data collection and transmission.\n\nConsent to this agreement is a step towards creating a global standard for information exchange in the crypto-asset sector. The law also includes an authorization to issue regulations for the further national implementation."
+        },
+        "url": "https://dip.bundestag.de/vorgang/335555",
+        "imp": "medium"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
+          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
+          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1525"
+      },
+      {
+        "d": "07.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
+          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
+        },
+        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
+          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1528"
+      },
+      {
+        "d": "05.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
+          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
+          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1625"
       }
     ],
     "ebaderisking": [
@@ -869,162 +1044,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-1-february-2010/",
         "imp": "low"
-      }
-    ],
-    "mica": [
-      {
-        "d": "24.09.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zur Ratifizierung der Zusatzvereinbarung zum automatischen Informationsaustausch über Finanzkonten (Kryptowerte)",
-          "en": "Act on the Ratification of the Additional Agreement on the Automatic Exchange of Financial Account Information (Crypto-Assets)"
-        },
-        "sl": "gesetz-zu-der-zusatzvereinbarung-vom-8-juni-2023-zur-mehrseitigen-vereinbarung-v",
-        "s": {
-          "de": "Das Gesetz dient der Ratifizierung einer Zusatzvereinbarung zur Mehrseitigen Vereinbarung vom 29. Oktober 2014 über den automatischen Austausch von Informationen über Finanzkonten. Diese Zusatzvereinbarung, unterzeichnet am 8. Juni 2023, erweitert den Umfang der auszutauschenden Informationen.\n\nDie Erweiterung betrifft insbesondere neue digitale Finanzprodukte, Derivate auf Kryptowerte und Beteiligungen an Krypto-Investmentgesellschaften. Dies ist relevant für Finanzinstitute, die solche Produkte anbieten oder verwalten, da sie künftig entsprechende Daten für den automatischen Informationsaustausch bereitstellen müssen.\n\nDie Zusatzvereinbarung wurde am 26. November in Asunción unterzeichnet.",
-          "en": "This law serves to ratify an additional agreement to the Multilateral Competent Authority Agreement of October 29, 2014, on the automatic exchange of financial account information. This additional agreement, signed on June 8, 2023, expands the scope of information to be exchanged.\n\nThe expansion specifically includes new digital financial products, derivatives on crypto-assets, and participations in crypto investment entities. This is relevant for financial institutions that offer or manage such products, as they will be required to provide corresponding data for automatic information exchange in the future.\n\nThe additional agreement was signed on November 26 in Asunción."
-        },
-        "url": "https://dip.bundestag.de/vorgang/335556",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "24.09.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
-          "en": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte"
-        },
-        "sl": "gesetz-zu-der-mehrseitigen-vereinbarung-vom-8-juni-2023-zwischen-den-zustaendige",
-        "s": {
-          "de": "Dieses Gesetz dient der Umsetzung der Mehrseitigen Vereinbarung vom 8. Juni 2023 über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (Crypto-Asset Reporting Framework – CARF). Ziel ist die Erweiterung des automatischen Informationsaustauschs auf Transaktionen mit Kryptowerten, um Steuerhinterziehung in diesem Bereich zu bekämpfen.\n\nDie Vereinbarung verpflichtet die zuständigen Behörden der teilnehmenden Staaten, Informationen über meldepflichtige Kryptowerte und deren Nutzer auszutauschen. Dies betrifft insbesondere Krypto-Dienstleister, die Transaktionen mit Kryptowerten für Kunden durchführen. Für Finanzunternehmen bedeutet dies eine Ausweitung ihrer Meldepflichten und eine Anpassung ihrer internen Prozesse zur Datenerfassung und -übermittlung.\n\nDie Zustimmung zu dieser Vereinbarung ist ein Schritt zur Schaffung eines globalen Standards für den Informationsaustausch im Bereich der Kryptowerte. Das Gesetz enthält zudem eine Verordnungsermächtigung zur weiteren Ausgestaltung der nationalen Umsetzung.",
-          "en": "This law serves to implement the Multilateral Agreement of June 8, 2023, on the automatic exchange of information under the Crypto-Asset Reporting Framework (CARF). The aim is to extend the automatic exchange of information to transactions involving crypto-assets to combat tax evasion in this area.\n\nThe agreement obliges the competent authorities of the participating states to exchange information on reportable crypto-assets and their users. This particularly affects crypto service providers who conduct crypto-asset transactions for customers. For financial institutions, this means an expansion of their reporting obligations and an adaptation of their internal processes for data collection and transmission.\n\nConsent to this agreement is a step towards creating a global standard for information exchange in the crypto-asset sector. The law also includes an authorization to issue regulations for the further national implementation."
-        },
-        "url": "https://dip.bundestag.de/vorgang/335555",
-        "imp": "medium"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      },
-      {
-        "d": "07.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
-          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
-        },
-        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
-          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1528"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
-          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
-          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1625"
-      },
-      {
-        "d": "20.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
-          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
-        },
-        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
-          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
-            "d": "21.05.2026"
-          }
-        ]
-      }
-    ],
-    "dltpilot": [
-      {
-        "d": "23.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
-          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
-        },
-        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
-          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
-        "imp": "medium"
       }
     ],
     "dsgvo": [
@@ -4190,6 +4209,22 @@
     ]
   },
   "praxis": [
+    {
+      "d": "30.09.2026",
+      "ti": "Sharon Donnery: Interview with banko.ro",
+      "auth": "EZB",
+      "src": "bankingsupervision.europa.eu",
+      "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in260930~04503f5461.en.html",
+      "cat": "rede"
+    },
+    {
+      "d": "30.09.2026",
+      "ti": "Christine Lagarde: Interview with La Croix",
+      "auth": "EZB",
+      "src": "ecb.europa.eu",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260930~10084a5f3d.en.html",
+      "cat": "rede"
+    },
     {
       "d": "24.09.2026",
       "ti": "Verena Ross' speech ath the International Conference on Finance, Warsaw, 23 September 2026",
