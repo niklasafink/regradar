@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T05:22:57Z",
+  "generated_at": "2026-10-01T20:28:36Z",
   "updates": {
     "irrd": [
       {
@@ -237,6 +237,122 @@
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-its-format-reporting-suspicions-and-providing-transaction-records_en",
         "imp": "medium",
         "deadline": "20.09.2026"
+      }
+    ],
+    "dsgvo": [
+      {
+        "d": "01.10.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Opinion of the Advocate General at the Court Laila Medina in Case C-12/25 Bisdom Gent",
+          "en": "Opinion of the Advocate General at the Court Laila Medina in Case C-12/25 Bisdom Gent"
+        },
+        "sl": "opinion-of-the-advocate-general-at-the-court-laila-medina-in-case-c-12-25-bisdom",
+        "s": {
+          "de": "Advocate General Medina: the right to erasure under the GDPR may, in principle, apply to personal data contained in baptismal registers",
+          "en": "Advocate General Medina: the right to erasure under the GDPR may, in principle, apply to personal data contained in baptismal registers"
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-10/cp260139de.pdf",
+        "refnum": "C-12/25"
+      },
+      {
+        "d": "01.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "Moritz Hennemann tritt Amt als Bundesbeauftragter für den Datenschutz und die Informationsfreiheit an",
+          "en": "Moritz Hennemann tritt Amt als Bundesbeauftragter für den Datenschutz und die Informationsfreiheit an"
+        },
+        "sl": "moritz-hennemann-tritt-amt-als-bundesbeauftragter-fuer-den-datenschutz-und-die-i",
+        "s": {
+          "de": "Moritz Hennemann ist seit heute neuer Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI).",
+          "en": "Moritz Hennemann ist seit heute neuer Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI)."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/14_Amtsantritt_Hennemann.html"
+      },
+      {
+        "d": "21.09.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "EDPB harmonisiert Bußgeldmethodik und verabschiedet DSA-GDPR-Leitlinien",
+          "en": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines"
+        },
+        "sl": "edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat Leitlinien zur Harmonisierung der Methodik für die Verhängung von Geldbußen im Rahmen der Datenschutz-Grundverordnung (DSGVO) verabschiedet. Diese Leitlinien sollen die einheitliche Anwendung der DSGVO in Europa gewährleisten und legen eine fünfstufige Methodik fest, die Datenschutzbehörden (DPAs) bei der Entscheidung über die Verhängung einer Geldbuße anwenden sollen.\n\nDie Methodik umfasst die Prüfung der Bußgeldfähigkeit des Verstoßes, die Bestimmung der haftbaren Partei, die Beurteilung von Vorsatz oder Fahrlässigkeit sowie die Bewertung mildernder und erschwerender Umstände. Zudem wird geprüft, ob die Verhängung einer Geldbuße wirksam, verhältnismäßig und abschreckend ist. Die Leitlinien bieten auch einen Überblick über weitere Korrekturmaßnahmen wie Verwarnungen, Rügen und Anordnungen und illustrieren deren Anwendung anhand von 14 praktischen Beispielen.\n\nDie Leitlinien zur Bußgeldmethodik werden bis zum 13. November 2026 öffentlich konsultiert. Zusätzlich hat der EDPB die finale Version seiner Leitlinien zum Zusammenspiel zwischen dem Gesetz über digitale Dienste (DSA) und der DSGVO verabschiedet, die nach sprachlicher Überprüfung veröffentlicht werden.",
+          "en": "The European Data Protection Board (EDPB) has adopted guidelines to harmonize the methodology for imposing administrative fines under the General Data Protection Regulation (GDPR). These guidelines aim to ensure consistent application of the GDPR across Europe and establish a five-step methodology for Data Protection Authorities (DPAs) to follow when deciding whether to impose a fine.\n\nThe methodology includes checking if the infringement can lead to a fine, determining the liable party, assessing intent or negligence, and evaluating aggravating and mitigating factors. It also considers whether imposing a fine would be effective, proportionate, and dissuasive. The guidelines also provide an overview of other corrective powers, such as warnings, reprimands, and orders, illustrating their application with 14 practical examples.\n\nThe guidelines on fining methodology are open for public consultation until November 13, 2026. Additionally, the EDPB adopted the final version of its guidelines on the interplay between the Digital Services Act (DSA) and the GDPR, which will be published after linguistic checks."
+        },
+        "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
+        "imp": "high"
+      },
+      {
+        "d": "03.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "BfDI fordert Bundestransparenzgesetz und Verankerung der Informationsfreiheit im Grundgesetz",
+          "en": "BfDI Calls for Federal Transparency Act and Constitutional Entrenchment of Freedom of Information"
+        },
+        "sl": "bfdi-fordert-bundestransparenzgesetz",
+        "s": {
+          "de": "Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) fordert eine grundlegende Weiterentwicklung des Informationsfreiheitsrechts in Deutschland. Anlässlich des 8. Symposiums zur Informationsfreiheit betonte die BfDI die Notwendigkeit, das Informationsfreiheitsgesetz des Bundes (IFG) zu modernisieren, da die Anforderungen an transparentes staatliches Handeln durch die Digitalisierung komplexer werden.\n\nKonkret schlägt die BfDI drei Schritte vor: Erstens soll die Informationsfreiheit verfassungsrechtlich im Grundgesetz abgesichert werden, um sie dauerhaft zu schützen. Zweitens fordert sie ein echtes Bundestransparenzgesetz, das eine proaktive Veröffentlichung wichtiger amtlicher Informationen (z.B. Verträge ab einem bestimmten Volumen, Gutachten, Studien, Lobbykontakte) vorsieht, anstatt nur auf Antrag zu reagieren. Drittens soll die BfDI als Aufsichtsinstanz gestärkt werden, um den Zugang zu Informationen direkt und effizient durchsetzen zu können, anstatt Bürger auf langwierige Gerichtsverfahren zu verweisen.\n\nDiese Forderungen zielen darauf ab, die Transparenz staatlichen Handelns zu erhöhen und die demokratische Teilhabe der Bürger zu stärken. Die vorgeschlagenen Maßnahmen würden sowohl die Verwaltung entlasten als auch die Rechtssicherheit für Bürger verbessern, indem sie einen leichteren und effektiveren Zugang zu staatlichen Informationen ermöglichen.",
+          "en": "The Federal Commissioner for Data Protection and Freedom of Information (BfDI) is calling for a fundamental reform of information freedom law in Germany. On the occasion of the 8th Symposium on Freedom of Information, the BfDI emphasized the need to modernize the Federal Freedom of Information Act (IFG), as the demands on transparent state action are becoming more complex due to digitalization.\n\nSpecifically, the BfDI proposes three steps: First, freedom of information should be constitutionally enshrined in the Basic Law to ensure its long-term protection. Second, it calls for a genuine Federal Transparency Act that mandates proactive publication of important official information (e.g., contracts above a certain volume, expert opinions, studies, lobbying contacts) instead of merely responding to requests. Third, the BfDI as a supervisory authority should be strengthened to directly and efficiently enforce access to information, rather than referring citizens to lengthy court proceedings.\n\nThese demands aim to increase the transparency of state actions and strengthen citizens' democratic participation. The proposed measures would both relieve the administration and improve legal certainty for citizens by enabling easier and more effective access to state information."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/09_Informationsfreiheit_Symposium.html",
+        "imp": "low"
+      },
+      {
+        "d": "15.04.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bfdi.bund.de",
+        "ti": {
+          "de": "EDSA startet öffentliche Konsultation zu neuer Vorlage für Datenschutz-Folgenabschätzungen",
+          "en": "EDPB launches public consultation on new Data Protection Impact Assessment template"
+        },
+        "sl": "edsa-startet-oeffentliche-konsultation-zu-neuer-vorlage-fuer-datenschutz-folgena",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDSA) hat eine Vorlage und ein Anleitungsdokument für Datenschutz-Folgenabschätzungen (DSFA) entwickelt. Diese Werkzeuge sollen Organisationen dabei unterstützen, die Risiken der Datenverarbeitung zu identifizieren, zu bewerten und geeignete Maßnahmen zur Risikobegrenzung festzulegen.\n\nDie Vorlage ist eine Reaktion auf das Helsinki-Statement, das die Entwicklung praktischer und verständlicher Werkzeuge zur Umsetzung des risikobasierten Ansatzes der Datenschutz-Grundverordnung (DSGVO) vorsieht, insbesondere für kleine und mittlere Organisationen. Eine DSFA ist bei voraussichtlich hohem Risiko der Datenverarbeitung erforderlich und soll die Verarbeitung beschreiben, ihre Notwendigkeit bewerten und Risikominimierungsmaßnahmen identifizieren. Die Verwendung der EDSA-Vorlage bietet den Vorteil vordefinierter Felder, die eine vollständige und strukturierte Erfassung aller notwendigen Informationen ermöglichen.\n\nInteressierte können den Entwurf im Rahmen einer öffentlichen Konsultation bis zum 9. Juni 2026 kommentieren. Nach der Überarbeitung beabsichtigen die Aufsichtsbehörden, die Vorlage als Standard zu übernehmen oder als gemeinsame Grundlage für länderspezifische Vorlagen zu nutzen. Öffentliche Stellen des Bundes und Verantwortliche im Zuständigkeitsbereich der BfDI können sich direkt an die BfDI wenden.",
+          "en": "The European Data Protection Board (EDPB) has developed a template and guidance document for Data Protection Impact Assessments (DPIAs). These tools are designed to help organizations identify, assess, and define appropriate measures to mitigate risks associated with data processing.\n\nThis template is a response to the Helsinki Statement, which called for the development of practical and understandable tools to implement the risk-based approach of the General Data Protection Regulation (GDPR), especially for small and medium-sized organizations. A DPIA is required when data processing is likely to result in a high risk, aiming to describe the processing, assess its necessity, and identify risk minimization measures. Using the EDPB template offers the advantage of predefined fields, ensuring comprehensive and structured data collection.\n\nStakeholders can submit comments on the draft during a public consultation until June 9, 2026. Following revisions, supervisory authorities intend to adopt the template as a standard or use it as a common basis for country-specific templates. Federal public bodies and data controllers within the BfDI's jurisdiction can contact the BfDI directly with questions or feedback."
+        },
+        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05_EDSA-Konsultation_Vorlage_DSFA.html",
+        "imp": "medium"
+      },
+      {
+        "d": "19.03.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil: Auskunftsantrag nach DSGVO kann bei missbräuchlicher Absicht abgelehnt werden (C-526/24)",
+          "en": "ECJ Judgment: GDPR Access Request Can Be Refused If Abusive (C-526/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-526-24-brillen-rottler",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass ein Antrag auf Auskunft über personenbezogene Daten als missbräuchlich abgelehnt werden kann, wenn er ausschließlich dazu dient, anschließend Schadensersatz wegen eines angeblichen DSGVO-Verstoßes zu fordern. Dies ist der Fall, wenn der Verantwortliche nachweisen kann, dass der Antrag nicht gestellt wurde, um sich der Datenverarbeitung bewusst zu werden und deren Rechtmäßigkeit zu überprüfen, sondern um künstlich die Voraussetzungen für Schadensersatz zu schaffen.\n\nFür Unternehmen bedeutet dies, dass sie Auskunftsersuchen unter bestimmten Umständen ablehnen können, wenn eine missbräuchliche Absicht des Antragstellers nachweisbar ist. Indizien hierfür können sein, dass die betroffene Person systematisch mehrere Auskunftsanträge mit anschließenden Schadensersatzforderungen an verschiedene Verantwortliche richtet. Der EuGH betont zudem, dass ein Schadensersatzanspruch nur besteht, wenn tatsächlich ein Schaden entstanden ist und das eigene Verhalten der betroffenen Person nicht die entscheidende Ursache für den Schaden ist.\n\nDas vorlegende Amtsgericht Arnsberg muss nun unter Berücksichtigung dieser Auslegung des EuGH über den konkreten Fall entscheiden. Die Entscheidung des EuGH ist für andere nationale Gerichte in vergleichbaren Fällen bindend.",
+          "en": "The European Court of Justice (ECJ) has ruled that a request for access to personal data can be rejected as abusive if it is made solely for the purpose of subsequently claiming compensation for an alleged GDPR infringement. This is the case if the controller can prove that the request was not made to become aware of the data processing and to verify its lawfulness, but to artificially create the conditions for obtaining compensation.\n\nFor companies, this means that they can reject access requests under certain circumstances if an abusive intent on the part of the data subject can be proven. Indications of this may include the data subject systematically submitting multiple access requests followed by claims for damages to various controllers. The ECJ also emphasizes that a claim for damages only exists if actual damage has occurred and the data subject's own conduct is not the decisive cause of the damage.\n\nThe referring District Court of Arnsberg must now decide on the specific case, taking into account this interpretation by the ECJ. The ECJ's decision is binding on other national courts in comparable cases."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
+        "imp": "medium",
+        "refnum": "C-526/24"
       }
     ],
     "dltpilot": [
@@ -1044,85 +1160,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-1-february-2010/",
         "imp": "low"
-      }
-    ],
-    "dsgvo": [
-      {
-        "d": "21.09.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "edpb.europa.eu",
-        "ti": {
-          "de": "EDPB harmonisiert Bußgeldmethodik und verabschiedet DSA-GDPR-Leitlinien",
-          "en": "EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines"
-        },
-        "sl": "edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDPB) hat Leitlinien zur Harmonisierung der Methodik für die Verhängung von Geldbußen im Rahmen der Datenschutz-Grundverordnung (DSGVO) verabschiedet. Diese Leitlinien sollen die einheitliche Anwendung der DSGVO in Europa gewährleisten und legen eine fünfstufige Methodik fest, die Datenschutzbehörden (DPAs) bei der Entscheidung über die Verhängung einer Geldbuße anwenden sollen.\n\nDie Methodik umfasst die Prüfung der Bußgeldfähigkeit des Verstoßes, die Bestimmung der haftbaren Partei, die Beurteilung von Vorsatz oder Fahrlässigkeit sowie die Bewertung mildernder und erschwerender Umstände. Zudem wird geprüft, ob die Verhängung einer Geldbuße wirksam, verhältnismäßig und abschreckend ist. Die Leitlinien bieten auch einen Überblick über weitere Korrekturmaßnahmen wie Verwarnungen, Rügen und Anordnungen und illustrieren deren Anwendung anhand von 14 praktischen Beispielen.\n\nDie Leitlinien zur Bußgeldmethodik werden bis zum 13. November 2026 öffentlich konsultiert. Zusätzlich hat der EDPB die finale Version seiner Leitlinien zum Zusammenspiel zwischen dem Gesetz über digitale Dienste (DSA) und der DSGVO verabschiedet, die nach sprachlicher Überprüfung veröffentlicht werden.",
-          "en": "The European Data Protection Board (EDPB) has adopted guidelines to harmonize the methodology for imposing administrative fines under the General Data Protection Regulation (GDPR). These guidelines aim to ensure consistent application of the GDPR across Europe and establish a five-step methodology for Data Protection Authorities (DPAs) to follow when deciding whether to impose a fine.\n\nThe methodology includes checking if the infringement can lead to a fine, determining the liable party, assessing intent or negligence, and evaluating aggravating and mitigating factors. It also considers whether imposing a fine would be effective, proportionate, and dissuasive. The guidelines also provide an overview of other corrective powers, such as warnings, reprimands, and orders, illustrating their application with 14 practical examples.\n\nThe guidelines on fining methodology are open for public consultation until November 13, 2026. Additionally, the EDPB adopted the final version of its guidelines on the interplay between the Digital Services Act (DSA) and the GDPR, which will be published after linguistic checks."
-        },
-        "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
-        "imp": "high"
-      },
-      {
-        "d": "03.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bfdi.bund.de",
-        "ti": {
-          "de": "BfDI fordert Bundestransparenzgesetz und Verankerung der Informationsfreiheit im Grundgesetz",
-          "en": "BfDI Calls for Federal Transparency Act and Constitutional Entrenchment of Freedom of Information"
-        },
-        "sl": "bfdi-fordert-bundestransparenzgesetz",
-        "s": {
-          "de": "Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) fordert eine grundlegende Weiterentwicklung des Informationsfreiheitsrechts in Deutschland. Anlässlich des 8. Symposiums zur Informationsfreiheit betonte die BfDI die Notwendigkeit, das Informationsfreiheitsgesetz des Bundes (IFG) zu modernisieren, da die Anforderungen an transparentes staatliches Handeln durch die Digitalisierung komplexer werden.\n\nKonkret schlägt die BfDI drei Schritte vor: Erstens soll die Informationsfreiheit verfassungsrechtlich im Grundgesetz abgesichert werden, um sie dauerhaft zu schützen. Zweitens fordert sie ein echtes Bundestransparenzgesetz, das eine proaktive Veröffentlichung wichtiger amtlicher Informationen (z.B. Verträge ab einem bestimmten Volumen, Gutachten, Studien, Lobbykontakte) vorsieht, anstatt nur auf Antrag zu reagieren. Drittens soll die BfDI als Aufsichtsinstanz gestärkt werden, um den Zugang zu Informationen direkt und effizient durchsetzen zu können, anstatt Bürger auf langwierige Gerichtsverfahren zu verweisen.\n\nDiese Forderungen zielen darauf ab, die Transparenz staatlichen Handelns zu erhöhen und die demokratische Teilhabe der Bürger zu stärken. Die vorgeschlagenen Maßnahmen würden sowohl die Verwaltung entlasten als auch die Rechtssicherheit für Bürger verbessern, indem sie einen leichteren und effektiveren Zugang zu staatlichen Informationen ermöglichen.",
-          "en": "The Federal Commissioner for Data Protection and Freedom of Information (BfDI) is calling for a fundamental reform of information freedom law in Germany. On the occasion of the 8th Symposium on Freedom of Information, the BfDI emphasized the need to modernize the Federal Freedom of Information Act (IFG), as the demands on transparent state action are becoming more complex due to digitalization.\n\nSpecifically, the BfDI proposes three steps: First, freedom of information should be constitutionally enshrined in the Basic Law to ensure its long-term protection. Second, it calls for a genuine Federal Transparency Act that mandates proactive publication of important official information (e.g., contracts above a certain volume, expert opinions, studies, lobbying contacts) instead of merely responding to requests. Third, the BfDI as a supervisory authority should be strengthened to directly and efficiently enforce access to information, rather than referring citizens to lengthy court proceedings.\n\nThese demands aim to increase the transparency of state actions and strengthen citizens' democratic participation. The proposed measures would both relieve the administration and improve legal certainty for citizens by enabling easier and more effective access to state information."
-        },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/09_Informationsfreiheit_Symposium.html",
-        "imp": "low"
-      },
-      {
-        "d": "15.04.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bfdi.bund.de",
-        "ti": {
-          "de": "EDSA startet öffentliche Konsultation zu neuer Vorlage für Datenschutz-Folgenabschätzungen",
-          "en": "EDPB launches public consultation on new Data Protection Impact Assessment template"
-        },
-        "sl": "edsa-startet-oeffentliche-konsultation-zu-neuer-vorlage-fuer-datenschutz-folgena",
-        "s": {
-          "de": "Der Europäische Datenschutzausschuss (EDSA) hat eine Vorlage und ein Anleitungsdokument für Datenschutz-Folgenabschätzungen (DSFA) entwickelt. Diese Werkzeuge sollen Organisationen dabei unterstützen, die Risiken der Datenverarbeitung zu identifizieren, zu bewerten und geeignete Maßnahmen zur Risikobegrenzung festzulegen.\n\nDie Vorlage ist eine Reaktion auf das Helsinki-Statement, das die Entwicklung praktischer und verständlicher Werkzeuge zur Umsetzung des risikobasierten Ansatzes der Datenschutz-Grundverordnung (DSGVO) vorsieht, insbesondere für kleine und mittlere Organisationen. Eine DSFA ist bei voraussichtlich hohem Risiko der Datenverarbeitung erforderlich und soll die Verarbeitung beschreiben, ihre Notwendigkeit bewerten und Risikominimierungsmaßnahmen identifizieren. Die Verwendung der EDSA-Vorlage bietet den Vorteil vordefinierter Felder, die eine vollständige und strukturierte Erfassung aller notwendigen Informationen ermöglichen.\n\nInteressierte können den Entwurf im Rahmen einer öffentlichen Konsultation bis zum 9. Juni 2026 kommentieren. Nach der Überarbeitung beabsichtigen die Aufsichtsbehörden, die Vorlage als Standard zu übernehmen oder als gemeinsame Grundlage für länderspezifische Vorlagen zu nutzen. Öffentliche Stellen des Bundes und Verantwortliche im Zuständigkeitsbereich der BfDI können sich direkt an die BfDI wenden.",
-          "en": "The European Data Protection Board (EDPB) has developed a template and guidance document for Data Protection Impact Assessments (DPIAs). These tools are designed to help organizations identify, assess, and define appropriate measures to mitigate risks associated with data processing.\n\nThis template is a response to the Helsinki Statement, which called for the development of practical and understandable tools to implement the risk-based approach of the General Data Protection Regulation (GDPR), especially for small and medium-sized organizations. A DPIA is required when data processing is likely to result in a high risk, aiming to describe the processing, assess its necessity, and identify risk minimization measures. Using the EDPB template offers the advantage of predefined fields, ensuring comprehensive and structured data collection.\n\nStakeholders can submit comments on the draft during a public consultation until June 9, 2026. Following revisions, supervisory authorities intend to adopt the template as a standard or use it as a common basis for country-specific templates. Federal public bodies and data controllers within the BfDI's jurisdiction can contact the BfDI directly with questions or feedback."
-        },
-        "url": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05_EDSA-Konsultation_Vorlage_DSFA.html",
-        "imp": "medium"
-      },
-      {
-        "d": "19.03.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil: Auskunftsantrag nach DSGVO kann bei missbräuchlicher Absicht abgelehnt werden (C-526/24)",
-          "en": "ECJ Judgment: GDPR Access Request Can Be Refused If Abusive (C-526/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-526-24-brillen-rottler",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass ein Antrag auf Auskunft über personenbezogene Daten als missbräuchlich abgelehnt werden kann, wenn er ausschließlich dazu dient, anschließend Schadensersatz wegen eines angeblichen DSGVO-Verstoßes zu fordern. Dies ist der Fall, wenn der Verantwortliche nachweisen kann, dass der Antrag nicht gestellt wurde, um sich der Datenverarbeitung bewusst zu werden und deren Rechtmäßigkeit zu überprüfen, sondern um künstlich die Voraussetzungen für Schadensersatz zu schaffen.\n\nFür Unternehmen bedeutet dies, dass sie Auskunftsersuchen unter bestimmten Umständen ablehnen können, wenn eine missbräuchliche Absicht des Antragstellers nachweisbar ist. Indizien hierfür können sein, dass die betroffene Person systematisch mehrere Auskunftsanträge mit anschließenden Schadensersatzforderungen an verschiedene Verantwortliche richtet. Der EuGH betont zudem, dass ein Schadensersatzanspruch nur besteht, wenn tatsächlich ein Schaden entstanden ist und das eigene Verhalten der betroffenen Person nicht die entscheidende Ursache für den Schaden ist.\n\nDas vorlegende Amtsgericht Arnsberg muss nun unter Berücksichtigung dieser Auslegung des EuGH über den konkreten Fall entscheiden. Die Entscheidung des EuGH ist für andere nationale Gerichte in vergleichbaren Fällen bindend.",
-          "en": "The European Court of Justice (ECJ) has ruled that a request for access to personal data can be rejected as abusive if it is made solely for the purpose of subsequently claiming compensation for an alleged GDPR infringement. This is the case if the controller can prove that the request was not made to become aware of the data processing and to verify its lawfulness, but to artificially create the conditions for obtaining compensation.\n\nFor companies, this means that they can reject access requests under certain circumstances if an abusive intent on the part of the data subject can be proven. Indications of this may include the data subject systematically submitting multiple access requests followed by claims for damages to various controllers. The ECJ also emphasizes that a claim for damages only exists if actual damage has occurred and the data subject's own conduct is not the decisive cause of the damage.\n\nThe referring District Court of Arnsberg must now decide on the specific case, taking into account this interpretation by the ECJ. The ECJ's decision is binding on other national courts in comparable cases."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
-        "imp": "medium",
-        "refnum": "C-526/24"
       }
     ],
     "brrd": [
@@ -3920,6 +3957,66 @@
         "refnum": "11/2025"
       }
     ],
+    "securitisation": [
+      {
+        "d": "13.10.2025",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esrb.europa.eu",
+        "ti": {
+          "de": "Francesco Mazzaferro: Review of the EU securitisation framework",
+          "en": "Francesco Mazzaferro: Review of the EU securitisation framework"
+        },
+        "sl": "francesco-mazzaferro-review-of-the-eu-securitisation-framework",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.esrb.europa.eu//news/speeches/date/2025/html/ersb.sp251013~029d439147.en.html"
+      },
+      {
+        "d": "14.10.2024",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung der Solvency II-Regeln für Verbriefungen im Versicherungssektor",
+          "en": "Review of Solvency II Rules for Securitisation in the Insurance Sector"
+        },
+        "sl": "review-of-prudential-rules-for-the-insurance-and-reinsurance-sector-solvency-ii",
+        "s": {
+          "de": "Die Europäische Kommission plant eine Überprüfung der Aufsichtsregeln für den Versicherungs- und Rückversicherungssektor (Solvency II) im Hinblick auf Verbriefungen. Dies ist Teil einer breiteren Initiative zur Stärkung der Kapitalmärkte in der EU und zur Förderung von Investitionen in die Realwirtschaft.\n\nDie Überprüfung zielt darauf ab, die regulatorische Behandlung von Verbriefungen für Versicherungsunternehmen zu optimieren. Dies könnte zu einer effizienteren Kapitalallokation führen und die Attraktivität von Verbriefungen als Anlageklasse für Versicherer erhöhen, was wiederum die Liquidität und Diversifizierung der Märkte fördern könnte.\n\nDerzeit befindet sich die Initiative im Stadium der Planung ('Init Planned'). Weitere Details zu den spezifischen Änderungen und dem Zeitplan werden zu einem späteren Zeitpunkt erwartet.",
+          "en": "The European Commission is planning a review of the prudential rules for the insurance and reinsurance sector (Solvency II) concerning securitisation. This is part of a broader initiative to strengthen capital markets in the EU and promote investment in the real economy.\n\nThis review aims to optimise the regulatory treatment of securitisations for insurance undertakings. This could lead to more efficient capital allocation and increase the attractiveness of securitisations as an asset class for insurers, which in turn could foster market liquidity and diversification.\n\nThe initiative is currently in the 'Init Planned' stage. Further details on the specific changes and timeline are expected at a later date."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14424",
+        "imp": "medium",
+        "refnum": "Ares(2024)7123964"
+      },
+      {
+        "d": "11.03.2024",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Verbriefungsregister",
+          "en": "Harmonisation and simplification of the delegated act on fees charged by the ESMA to securitisation repositories"
+        },
+        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
+        "s": {
+          "de": "Die Europäische Kommission hat einen delegierten Rechtsakt zur Harmonisierung und Vereinfachung der Gebühren vorgelegt, die die ESMA von Verbriefungsregistern erhebt. Ziel ist es, die Gebührenstruktur für diese Register zu optimieren und transparenter zu gestalten.\n\nDiese Maßnahme betrifft alle Unternehmen, die als Verbriefungsregister agieren. Die Vereinfachung der Gebührenordnung soll die Einhaltung der Vorschriften erleichtern und die Kosten für die Registerbetreiber potenziell senken.\n\nDer Vorschlag befindet sich im Adoptions-Workflow und wird voraussichtlich in Kürze in Kraft treten.",
+          "en": "The European Commission has presented a delegated act to harmonise and simplify the fees charged by ESMA to securitisation repositories. The aim is to optimise and make the fee structure for these repositories more transparent.\n\nThis measure affects all undertakings acting as securitisation repositories. The simplification of the fee schedule is intended to facilitate compliance and potentially reduce costs for repository operators.\n\n The proposal is currently in the adoption workflow and is expected to enter into force shortly."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13931",
+        "imp": "medium",
+        "refnum": "Ares(2023)5151192"
+      }
+    ],
     "mago": [
       {
         "d": "14.07.2025",
@@ -3970,48 +4067,6 @@
         "url": "https://www.cssf.lu/en/Document/faq-on-circular-cssf-24-856/",
         "imp": "low",
         "refnum": "Circular CSSF 24/856"
-      }
-    ],
-    "securitisation": [
-      {
-        "d": "14.10.2024",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung der Solvency II-Regeln für Verbriefungen im Versicherungssektor",
-          "en": "Review of Solvency II Rules for Securitisation in the Insurance Sector"
-        },
-        "sl": "review-of-prudential-rules-for-the-insurance-and-reinsurance-sector-solvency-ii",
-        "s": {
-          "de": "Die Europäische Kommission plant eine Überprüfung der Aufsichtsregeln für den Versicherungs- und Rückversicherungssektor (Solvency II) im Hinblick auf Verbriefungen. Dies ist Teil einer breiteren Initiative zur Stärkung der Kapitalmärkte in der EU und zur Förderung von Investitionen in die Realwirtschaft.\n\nDie Überprüfung zielt darauf ab, die regulatorische Behandlung von Verbriefungen für Versicherungsunternehmen zu optimieren. Dies könnte zu einer effizienteren Kapitalallokation führen und die Attraktivität von Verbriefungen als Anlageklasse für Versicherer erhöhen, was wiederum die Liquidität und Diversifizierung der Märkte fördern könnte.\n\nDerzeit befindet sich die Initiative im Stadium der Planung ('Init Planned'). Weitere Details zu den spezifischen Änderungen und dem Zeitplan werden zu einem späteren Zeitpunkt erwartet.",
-          "en": "The European Commission is planning a review of the prudential rules for the insurance and reinsurance sector (Solvency II) concerning securitisation. This is part of a broader initiative to strengthen capital markets in the EU and promote investment in the real economy.\n\nThis review aims to optimise the regulatory treatment of securitisations for insurance undertakings. This could lead to more efficient capital allocation and increase the attractiveness of securitisations as an asset class for insurers, which in turn could foster market liquidity and diversification.\n\nThe initiative is currently in the 'Init Planned' stage. Further details on the specific changes and timeline are expected at a later date."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14424",
-        "imp": "medium",
-        "refnum": "Ares(2024)7123964"
-      },
-      {
-        "d": "11.03.2024",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Verbriefungsregister",
-          "en": "Harmonisation and simplification of the delegated act on fees charged by the ESMA to securitisation repositories"
-        },
-        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
-        "s": {
-          "de": "Die Europäische Kommission hat einen delegierten Rechtsakt zur Harmonisierung und Vereinfachung der Gebühren vorgelegt, die die ESMA von Verbriefungsregistern erhebt. Ziel ist es, die Gebührenstruktur für diese Register zu optimieren und transparenter zu gestalten.\n\nDiese Maßnahme betrifft alle Unternehmen, die als Verbriefungsregister agieren. Die Vereinfachung der Gebührenordnung soll die Einhaltung der Vorschriften erleichtern und die Kosten für die Registerbetreiber potenziell senken.\n\nDer Vorschlag befindet sich im Adoptions-Workflow und wird voraussichtlich in Kürze in Kraft treten.",
-          "en": "The European Commission has presented a delegated act to harmonise and simplify the fees charged by ESMA to securitisation repositories. The aim is to optimise and make the fee structure for these repositories more transparent.\n\nThis measure affects all undertakings acting as securitisation repositories. The simplification of the fee schedule is intended to facilitate compliance and potentially reduce costs for repository operators.\n\n The proposal is currently in the adoption workflow and is expected to enter into force shortly."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13931",
-        "imp": "medium",
-        "refnum": "Ares(2023)5151192"
       }
     ],
     "greenbond": [
