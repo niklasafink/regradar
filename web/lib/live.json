@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T07:19:37Z",
+  "generated_at": "2026-10-02T14:09:50Z",
   "updates": {
     "irrd": [
       {
@@ -4208,6 +4208,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "02.10.2026",
+      "ti": "GVO Gegenseitigkeit Versicherung Oldenburg VVaG: Bafin setzt Sonderbeauftragten ein",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/VAG/meldung_261002_gvo_gegenseitigkeit_versicherung_oldenburg_vvag.html",
+      "cat": "massnahme",
+      "sum": "Die Finanzaufsicht Bafin hat bei der GVO Gegenseitigkeit Versicherung Oldenburg VVaG einen Sonderbeauftragten mit den Befugnissen eines Vorstandsmitglieds eingesetzt. Damit stellt die Aufsicht sicher, dass die Geschäftsleitung des Versicherungsunternehmens mit der erforderlichen Anzahl an Mitgliedern besetzt ist."
+    },
     {
       "d": "30.09.2026",
       "ti": "Sharon Donnery: Interview with banko.ro",
