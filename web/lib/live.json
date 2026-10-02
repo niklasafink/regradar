@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T14:09:50Z",
+  "generated_at": "2026-10-02T20:15:17Z",
   "updates": {
     "irrd": [
       {
@@ -236,6 +236,147 @@
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-assessment-inherent-and-residual-risk-profile-obliged-entities-non-financial_en",
         "imp": "medium",
         "deadline": "27.09.2026"
+      }
+    ],
+    "csrd": [
+      {
+        "d": "02.10.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Nachhaltigkeitsberichtsstandard für Drittlandunternehmen (Ares(2026)9148189)",
+          "en": "Sustainability reporting standard for third-country undertakings (Ares(2026)9148189)"
+        },
+        "sl": "sustainability-reporting-standard-for-third-country-undertakings",
+        "s": {
+          "de": "Die Europäische Kommission plant die Einführung eines Nachhaltigkeitsberichtsstandards für Unternehmen aus Drittländern. Dieser Standard soll die Berichterstattung über Nachhaltigkeitsaspekte vereinheitlichen und transparenter machen.\n\nBetroffen sind Unternehmen aus Drittländern, die in der EU tätig sind und bestimmte Kriterien erfüllen. Ziel ist es, gleiche Wettbewerbsbedingungen zu schaffen und die Vergleichbarkeit von Nachhaltigkeitsinformationen zu verbessern.\n\nDas Verfahren befindet sich im Stadium der geplanten Initiative (Init Planned).",
+          "en": "The European Commission is planning to introduce a sustainability reporting standard for third-country undertakings. This standard aims to harmonize and increase the transparency of sustainability reporting.\n\nIt will affect third-country undertakings operating in the EU that meet specific criteria. The objective is to create a level playing field and improve the comparability of sustainability information.\n\nThe procedure is currently in the 'Init Planned' stage."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19394",
+        "imp": "low",
+        "refnum": "Ares(2026)9148189"
+      },
+      {
+        "d": "02.10.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Geplante Standards für die eingeschränkte Prüfung der Nachhaltigkeitsberichterstattung (Ares(2026)9141299)",
+          "en": "Planned Limited Assurance Standards for Sustainability Reporting (Ares(2026)9141299)"
+        },
+        "sl": "limited-assurance-standards-for-sustainability-reporting",
+        "s": {
+          "de": "Die Europäische Kommission plant die Einführung von Standards für die eingeschränkte Prüfung der Nachhaltigkeitsberichterstattung. Diese Standards sollen die Verlässlichkeit und Vergleichbarkeit von Nachhaltigkeitsinformationen verbessern, die von Unternehmen im Rahmen ihrer Berichterstattung veröffentlicht werden.\n\nDie neuen Regelungen werden voraussichtlich Unternehmen betreffen, die zur Nachhaltigkeitsberichterstattung verpflichtet sind. Sie müssen sicherstellen, dass ihre Nachhaltigkeitsdaten einer Prüfung nach den neuen Standards standhalten, was Anpassungen in den internen Prozessen und Systemen erfordern könnte.\n\nDerzeit befindet sich das Vorhaben im Status „Init Planned“, was bedeutet, dass die Initiative zur Entwicklung dieser Standards noch in der Planungsphase ist. Weitere Details zu den Inhalten und dem Zeitplan werden zu einem späteren Zeitpunkt erwartet.",
+          "en": "The European Commission plans to introduce standards for limited assurance on sustainability reporting. These standards aim to enhance the reliability and comparability of sustainability information published by companies as part of their reporting.\n\nThese new regulations are expected to affect companies subject to sustainability reporting requirements. They will need to ensure that their sustainability data can withstand an audit according to the new standards, which may necessitate adjustments in internal processes and systems.\n\nThe initiative is currently in the 'Init Planned' status, meaning the development of these standards is still in the planning phase. Further details regarding the content and timeline are expected at a later date."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19393",
+        "imp": "low",
+        "refnum": "Ares(2026)9141299"
+      },
+      {
+        "d": "03.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Kommission verabschiedet überarbeitete ESRS und freiwilligen Berichtsstandard zur Reduzierung des Verwaltungsaufwands",
+          "en": "Commission adopts revised ESRS and voluntary reporting standard to reduce administrative burdens"
+        },
+        "sl": "commission-adopts-revised-sustainability-reporting-standards-to-reduce-administr",
+        "s": {
+          "de": "Die Europäische Kommission hat überarbeitete Europäische Nachhaltigkeitsberichtsstandards (ESRS) und einen freiwilligen Berichtsstandard für kleinere Unternehmen verabschiedet. Die ESRS decken Umwelt-, Sozial- und Governance-Themen ab und sollen Investoren sowie Stakeholdern Informationen über Nachhaltigkeitsrisiken und deren Auswirkungen auf Menschen und Umwelt liefern.\n\nDie überarbeiteten Standards zielen darauf ab, den Verwaltungsaufwand für EU-Unternehmen zu reduzieren, während gleichzeitig hochwertige Offenlegungen beibehalten werden. Sie sind Teil des „Omnibus I“-Vereinfachungspakets, das die Nachhaltigkeitsberichterstattung in der EU strafft und die Anzahl der von der Corporate Sustainability Reporting Directive (CSRD) erfassten Unternehmen verringert. Die Anzahl der obligatorischen Datenpunkte wurde um über 60 % und die Gesamtzahl der Datenpunkte um über 70 % reduziert, was die Berichtskosten pro Unternehmen um mehr als 30 % senken soll. Der freiwillige Berichtsstandard bietet einen proportionalen Referenzrahmen für kleinere Unternehmen außerhalb des CSRD-Anwendungsbereichs und erleichtert diesen die Beantwortung von Nachhaltigkeitsanfragen. Zudem wird eine Wertschöpfungskettenobergrenze eingeführt, die verhindert, dass CSRD-pflichtige Unternehmen mehr Informationen von ihren Zulieferern verlangen, als der freiwillige Standard vorsieht.\n\nDie delegierten Rechtsakte werden nun dem Europäischen Parlament und dem Rat der EU zur Prüfung übermittelt. Die Maßnahmen treten nach Ablauf der Prüfungsfrist von zwei Monaten, die um weitere zwei Monate verlängert werden kann, in Kraft.",
+          "en": "The European Commission has adopted revised European Sustainability Reporting Standards (ESRS) and a voluntary reporting standard for smaller companies. The ESRS cover environmental, social, and governance issues, providing information for investors and stakeholders to understand sustainability-related risks and their impacts on people and the environment.\n\nThe revised standards aim to reduce administrative burdens for EU businesses while maintaining high-quality disclosures. They are part of the “Omnibus I” simplification package, which streamlines sustainability reporting in the EU and reduces the number of companies within the scope of the Corporate Sustainability Reporting Directive (CSRD). The number of mandatory data points has been reduced by over 60%, and the total number of data points by over 70%, which is expected to cut reporting costs per company by more than 30%. The voluntary reporting standard provides a proportionate reference framework for sustainability reporting by smaller companies outside the scope of the CSRD, making it easier for them to respond to sustainability information requests. It also establishes a value chain cap, preventing CSRD-subject companies from requiring more information from their value chain partners than covered by the voluntary standard.\n\nThe delegated acts will now be transmitted to the European Parliament and the Council of the EU for scrutiny. The measures will apply once the scrutiny period of two months, which can be extended by another two months, is over."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-adopts-revised-sustainability-reporting-standards-reduce-administrative-burdens-eu-2026-07-03_en",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission veröffentlicht Delegierte Verordnung zur Übernahme der überarbeiteten ESRS in geltendes Recht und Delegierte Verordnung zu den Standards für die freiwillige Nachhaltigkeitsberichterstattung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-delegierte-verordnung-zur-uebernahme-der-ueberarbeiteten-esrs-in-geltendes-recht-und-delegierte-verordnung-zu-den-standards-fuer-die-freiwillige-nachhaltigkeitsberichters/",
+            "d": "07.07.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: Europäische Kommission verabschiedet überarbeitete ESRS und VS",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255687/europaeische-kommission-verabschiedet-ueberarbeitete-esrs-und-vs/",
+            "d": "03.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Erläuterungen zur Value Chain Cap der CSRD und zum freiwilligen Nachhaltigkeitsberichtsstandard",
+          "en": "Explanatory Information on CSRD Value Chain Cap and Voluntary Sustainability Reporting Standard"
+        },
+        "sl": "feedback-on-sustainability-reporting-standards-additional-explanatory-informatio",
+        "s": {
+          "de": "Die Europäische Kommission hat Erläuterungen zur neuen „Value Chain Cap“ veröffentlicht, die durch die Omnibus I Richtlinie eingeführt wurde. Diese Begrenzung soll den „Trickle-down-Effekt“ der Corporate Sustainability Reporting Directive (CSRD) reduzieren, indem sie festlegt, wie viele Nachhaltigkeitsinformationen CSRD-pflichtige Unternehmen von ihren Zulieferern anfordern dürfen.\n\nDie Value Chain Cap verbietet es CSRD-Unternehmen, von Unternehmen in ihrer Wertschöpfungskette mit 1.000 oder weniger Mitarbeitern mehr Nachhaltigkeitsinformationen zu verlangen, als im Standard für die freiwillige Nachhaltigkeitsberichterstattung vorgesehen ist. Dieser Standard umfasst zwei Module (Basis- und umfassendes Modul) und kategorisiert Offenlegungen als „notwendig“, „notwendig falls zutreffend“, „freiwillig“ oder „Berücksichtigung bei der Berichterstattung über Sektorinformationen“. Die Value Chain Cap bezieht sich nur auf die als „notwendig“ gekennzeichneten Offenlegungen. Für Unternehmen mit 10 oder weniger Mitarbeitern sind einige dieser „notwendigen“ Offenlegungen als „freiwillig“ eingestuft, um einen stärkeren Schutz zu gewährleisten.\n\nCSRD-pflichtige Unternehmen dürfen zwar weiterhin zusätzliche Informationen anfordern, müssen aber klar kennzeichnen, welche Informationen über die Value Chain Cap hinausgehen und die Zulieferer über ihr gesetzliches Recht informieren, diese zusätzlichen Informationen abzulehnen. Der freiwillige Standard ist nicht verpflichtend für Unternehmen in der Wertschöpfungskette. Es wird erwartet, dass CSRD-Unternehmen nur die Informationen anfordern, die sie tatsächlich benötigen.",
+          "en": "The European Commission has published explanatory information on the new “Value Chain Cap” introduced by the Omnibus I Directive. This cap aims to reduce the “trickle-down effect” of the Corporate Sustainability Reporting Directive (CSRD) by specifying how much sustainability information CSRD-obliged companies can request from their suppliers.\n\nThe Value Chain Cap prohibits CSRD companies from requiring companies in their value chain with 1,000 or fewer employees to provide more sustainability information than what is specified in the voluntary sustainability reporting standard. This standard comprises two modules (basic and comprehensive) and categorizes disclosures as “necessary,” “necessary if applicable,” “voluntary,” or “consideration when reporting sector information.” The Value Chain Cap only applies to disclosures marked as “necessary.” For companies with 10 or fewer employees, some of these “necessary” disclosures are classified as “voluntary” to provide greater protection.\n\nWhile CSRD-obliged companies may still request additional information, they must clearly indicate which information exceeds the Value Chain Cap and inform suppliers of their statutory right to decline providing this additional information. The voluntary standard is not mandatory for companies in the value chain. CSRD companies are expected to request only the information they genuinely need."
+        },
+        "url": "https://finance.ec.europa.eu/news/feedback-sustainability-reporting-standards-additional-explanatory-information-regarding-value-chain-2026-05-06_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission veröffentlicht Entwurf der Delegierten VO zur Übernahme der überarbeiteten ESRS in geltendes Recht und Entwurf der Delegierten VO zu den Standards für die freiwillige Nachhaltigkeitsberichterstattung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwurf-der-delegierten-vo-zur-uebernahme-der-ueberarbeiteten-esrs-in-geltendes-recht-und-entwurf-der-delegierten-vo-zu-den-standards-fuer-die-freiwillige-nachhaltigkeits/",
+            "d": "07.05.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: Überarbeitete ESRS: Europäische Kommission legt Entwürfe vor und startet den öffentlichen Feedbackprozess",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/254500/ueberarbeitete-esrs-europaeische-kommission-legt-entwuerfe-vor-und-startet-den-oeffentlichen-feedbackprozess/",
+            "d": "06.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Kommission bittet um Feedback zu überarbeiteten Nachhaltigkeitsberichtsstandards",
+          "en": "Commission seeks feedback on revised sustainability reporting standards"
+        },
+        "sl": "commission-seeks-feedback-on-revised-sustainability-reporting-standards",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Monat lang eine öffentliche Konsultation zu den überarbeiteten Entwürfen der European Sustainability Reporting Standards (ESRS) und einem freiwilligen Berichtsstandard für kleinere Unternehmen gestartet. Ziel ist es, den Verwaltungsaufwand für EU-Unternehmen zu reduzieren und gleichzeitig die Qualität der Nachhaltigkeitsangaben zu erhalten.\n\nDie überarbeiteten ESRS reduzieren die Anzahl der obligatorischen Datenpunkte um über 60 % und die Gesamtzahl der Datenpunkte um über 70 %. Sie sind kürzer, klarer und führen neue Flexibilitäten sowie eine vereinfachte Wesentlichkeitsanalyse ein, was die Berichtskosten pro Unternehmen voraussichtlich um mehr als 30 % senken wird. Der Entwurf des freiwilligen Standards unterstützt Unternehmen, die nicht den obligatorischen CSRD-Anforderungen unterliegen, und führt eine „Wertschöpfungsketten-Obergrenze“ ein, die verhindert, dass CSRD-pflichtige Unternehmen von kleineren Partnern (bis 1000 Mitarbeiter) mehr Informationen verlangen, als im freiwilligen Standard festgelegt ist.\n\nInteressenträger können bis zum 3. Juni Feedback über das „Have-Your-Say“-Portal abgeben. Anschließend wird die Kommission die beiden delegierten Rechtsakte so schnell wie möglich verabschieden, die dann dem Europäischen Parlament und dem Rat zur Prüfung vorgelegt werden, bevor sie in Kraft treten.",
+          "en": "The European Commission has launched a one-month public consultation on the revised draft European Sustainability Reporting Standards (ESRS) and a voluntary reporting standard for smaller companies. The aim is to reduce administrative burden for EU businesses while maintaining the quality of sustainability disclosures.\n\nThe revised ESRS cut mandatory data points by over 60% and total data points by over 70%. They are shorter, clearer, introduce new flexibilities, and simplify the materiality assessment, which is expected to reduce reporting costs per company by more than 30%. The draft voluntary standard supports companies not subject to mandatory CSRD requirements and introduces a “value chain cap,” preventing CSRD-in-scope companies from demanding more information from smaller partners (up to 1000 employees) than set out in the voluntary standard.\n\nStakeholders are invited to provide feedback via the “Have-Your-Say” portal until June 3. The Commission will then adopt the two delegated acts as soon as possible, which will subsequently be transmitted to the European Parliament and the Council for scrutiny before entering into force."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revised-sustainability-reporting-standards-2026-05-06_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission veröffentlicht Entwurf der Delegierten VO zur Übernahme der überarbeiteten ESRS in geltendes Recht und Entwurf der Delegierten VO zu den Standards für die freiwillige Nachhaltigkeitsberichterstattung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwurf-der-delegierten-vo-zur-uebernahme-der-ueberarbeiteten-esrs-in-geltendes-recht-und-entwurf-der-delegierten-vo-zu-den-standards-fuer-die-freiwillige-nachhaltigkeits/",
+            "d": "07.05.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: Überarbeitete ESRS: Europäische Kommission legt Entwürfe vor und startet den öffentlichen Feedbackprozess",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/254500/ueberarbeitete-esrs-europaeische-kommission-legt-entwuerfe-vor-und-startet-den-oeffentlichen-feedbackprozess/",
+            "d": "06.05.2026"
+          }
+        ]
       }
     ],
     "gwg": [
@@ -3277,107 +3418,6 @@
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-its-43-reporting-framework-support-third-country-branches",
         "imp": "high"
-      }
-    ],
-    "csrd": [
-      {
-        "d": "03.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Kommission verabschiedet überarbeitete ESRS und freiwilligen Berichtsstandard zur Reduzierung des Verwaltungsaufwands",
-          "en": "Commission adopts revised ESRS and voluntary reporting standard to reduce administrative burdens"
-        },
-        "sl": "commission-adopts-revised-sustainability-reporting-standards-to-reduce-administr",
-        "s": {
-          "de": "Die Europäische Kommission hat überarbeitete Europäische Nachhaltigkeitsberichtsstandards (ESRS) und einen freiwilligen Berichtsstandard für kleinere Unternehmen verabschiedet. Die ESRS decken Umwelt-, Sozial- und Governance-Themen ab und sollen Investoren sowie Stakeholdern Informationen über Nachhaltigkeitsrisiken und deren Auswirkungen auf Menschen und Umwelt liefern.\n\nDie überarbeiteten Standards zielen darauf ab, den Verwaltungsaufwand für EU-Unternehmen zu reduzieren, während gleichzeitig hochwertige Offenlegungen beibehalten werden. Sie sind Teil des „Omnibus I“-Vereinfachungspakets, das die Nachhaltigkeitsberichterstattung in der EU strafft und die Anzahl der von der Corporate Sustainability Reporting Directive (CSRD) erfassten Unternehmen verringert. Die Anzahl der obligatorischen Datenpunkte wurde um über 60 % und die Gesamtzahl der Datenpunkte um über 70 % reduziert, was die Berichtskosten pro Unternehmen um mehr als 30 % senken soll. Der freiwillige Berichtsstandard bietet einen proportionalen Referenzrahmen für kleinere Unternehmen außerhalb des CSRD-Anwendungsbereichs und erleichtert diesen die Beantwortung von Nachhaltigkeitsanfragen. Zudem wird eine Wertschöpfungskettenobergrenze eingeführt, die verhindert, dass CSRD-pflichtige Unternehmen mehr Informationen von ihren Zulieferern verlangen, als der freiwillige Standard vorsieht.\n\nDie delegierten Rechtsakte werden nun dem Europäischen Parlament und dem Rat der EU zur Prüfung übermittelt. Die Maßnahmen treten nach Ablauf der Prüfungsfrist von zwei Monaten, die um weitere zwei Monate verlängert werden kann, in Kraft.",
-          "en": "The European Commission has adopted revised European Sustainability Reporting Standards (ESRS) and a voluntary reporting standard for smaller companies. The ESRS cover environmental, social, and governance issues, providing information for investors and stakeholders to understand sustainability-related risks and their impacts on people and the environment.\n\nThe revised standards aim to reduce administrative burdens for EU businesses while maintaining high-quality disclosures. They are part of the “Omnibus I” simplification package, which streamlines sustainability reporting in the EU and reduces the number of companies within the scope of the Corporate Sustainability Reporting Directive (CSRD). The number of mandatory data points has been reduced by over 60%, and the total number of data points by over 70%, which is expected to cut reporting costs per company by more than 30%. The voluntary reporting standard provides a proportionate reference framework for sustainability reporting by smaller companies outside the scope of the CSRD, making it easier for them to respond to sustainability information requests. It also establishes a value chain cap, preventing CSRD-subject companies from requiring more information from their value chain partners than covered by the voluntary standard.\n\nThe delegated acts will now be transmitted to the European Parliament and the Council of the EU for scrutiny. The measures will apply once the scrutiny period of two months, which can be extended by another two months, is over."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-adopts-revised-sustainability-reporting-standards-reduce-administrative-burdens-eu-2026-07-03_en",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission veröffentlicht Delegierte Verordnung zur Übernahme der überarbeiteten ESRS in geltendes Recht und Delegierte Verordnung zu den Standards für die freiwillige Nachhaltigkeitsberichterstattung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-delegierte-verordnung-zur-uebernahme-der-ueberarbeiteten-esrs-in-geltendes-recht-und-delegierte-verordnung-zu-den-standards-fuer-die-freiwillige-nachhaltigkeitsberichters/",
-            "d": "07.07.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: Europäische Kommission verabschiedet überarbeitete ESRS und VS",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255687/europaeische-kommission-verabschiedet-ueberarbeitete-esrs-und-vs/",
-            "d": "03.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Erläuterungen zur Value Chain Cap der CSRD und zum freiwilligen Nachhaltigkeitsberichtsstandard",
-          "en": "Explanatory Information on CSRD Value Chain Cap and Voluntary Sustainability Reporting Standard"
-        },
-        "sl": "feedback-on-sustainability-reporting-standards-additional-explanatory-informatio",
-        "s": {
-          "de": "Die Europäische Kommission hat Erläuterungen zur neuen „Value Chain Cap“ veröffentlicht, die durch die Omnibus I Richtlinie eingeführt wurde. Diese Begrenzung soll den „Trickle-down-Effekt“ der Corporate Sustainability Reporting Directive (CSRD) reduzieren, indem sie festlegt, wie viele Nachhaltigkeitsinformationen CSRD-pflichtige Unternehmen von ihren Zulieferern anfordern dürfen.\n\nDie Value Chain Cap verbietet es CSRD-Unternehmen, von Unternehmen in ihrer Wertschöpfungskette mit 1.000 oder weniger Mitarbeitern mehr Nachhaltigkeitsinformationen zu verlangen, als im Standard für die freiwillige Nachhaltigkeitsberichterstattung vorgesehen ist. Dieser Standard umfasst zwei Module (Basis- und umfassendes Modul) und kategorisiert Offenlegungen als „notwendig“, „notwendig falls zutreffend“, „freiwillig“ oder „Berücksichtigung bei der Berichterstattung über Sektorinformationen“. Die Value Chain Cap bezieht sich nur auf die als „notwendig“ gekennzeichneten Offenlegungen. Für Unternehmen mit 10 oder weniger Mitarbeitern sind einige dieser „notwendigen“ Offenlegungen als „freiwillig“ eingestuft, um einen stärkeren Schutz zu gewährleisten.\n\nCSRD-pflichtige Unternehmen dürfen zwar weiterhin zusätzliche Informationen anfordern, müssen aber klar kennzeichnen, welche Informationen über die Value Chain Cap hinausgehen und die Zulieferer über ihr gesetzliches Recht informieren, diese zusätzlichen Informationen abzulehnen. Der freiwillige Standard ist nicht verpflichtend für Unternehmen in der Wertschöpfungskette. Es wird erwartet, dass CSRD-Unternehmen nur die Informationen anfordern, die sie tatsächlich benötigen.",
-          "en": "The European Commission has published explanatory information on the new “Value Chain Cap” introduced by the Omnibus I Directive. This cap aims to reduce the “trickle-down effect” of the Corporate Sustainability Reporting Directive (CSRD) by specifying how much sustainability information CSRD-obliged companies can request from their suppliers.\n\nThe Value Chain Cap prohibits CSRD companies from requiring companies in their value chain with 1,000 or fewer employees to provide more sustainability information than what is specified in the voluntary sustainability reporting standard. This standard comprises two modules (basic and comprehensive) and categorizes disclosures as “necessary,” “necessary if applicable,” “voluntary,” or “consideration when reporting sector information.” The Value Chain Cap only applies to disclosures marked as “necessary.” For companies with 10 or fewer employees, some of these “necessary” disclosures are classified as “voluntary” to provide greater protection.\n\nWhile CSRD-obliged companies may still request additional information, they must clearly indicate which information exceeds the Value Chain Cap and inform suppliers of their statutory right to decline providing this additional information. The voluntary standard is not mandatory for companies in the value chain. CSRD companies are expected to request only the information they genuinely need."
-        },
-        "url": "https://finance.ec.europa.eu/news/feedback-sustainability-reporting-standards-additional-explanatory-information-regarding-value-chain-2026-05-06_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission veröffentlicht Entwurf der Delegierten VO zur Übernahme der überarbeiteten ESRS in geltendes Recht und Entwurf der Delegierten VO zu den Standards für die freiwillige Nachhaltigkeitsberichterstattung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwurf-der-delegierten-vo-zur-uebernahme-der-ueberarbeiteten-esrs-in-geltendes-recht-und-entwurf-der-delegierten-vo-zu-den-standards-fuer-die-freiwillige-nachhaltigkeits/",
-            "d": "07.05.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: Überarbeitete ESRS: Europäische Kommission legt Entwürfe vor und startet den öffentlichen Feedbackprozess",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/254500/ueberarbeitete-esrs-europaeische-kommission-legt-entwuerfe-vor-und-startet-den-oeffentlichen-feedbackprozess/",
-            "d": "06.05.2026"
-          }
-        ]
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Kommission bittet um Feedback zu überarbeiteten Nachhaltigkeitsberichtsstandards",
-          "en": "Commission seeks feedback on revised sustainability reporting standards"
-        },
-        "sl": "commission-seeks-feedback-on-revised-sustainability-reporting-standards",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Monat lang eine öffentliche Konsultation zu den überarbeiteten Entwürfen der European Sustainability Reporting Standards (ESRS) und einem freiwilligen Berichtsstandard für kleinere Unternehmen gestartet. Ziel ist es, den Verwaltungsaufwand für EU-Unternehmen zu reduzieren und gleichzeitig die Qualität der Nachhaltigkeitsangaben zu erhalten.\n\nDie überarbeiteten ESRS reduzieren die Anzahl der obligatorischen Datenpunkte um über 60 % und die Gesamtzahl der Datenpunkte um über 70 %. Sie sind kürzer, klarer und führen neue Flexibilitäten sowie eine vereinfachte Wesentlichkeitsanalyse ein, was die Berichtskosten pro Unternehmen voraussichtlich um mehr als 30 % senken wird. Der Entwurf des freiwilligen Standards unterstützt Unternehmen, die nicht den obligatorischen CSRD-Anforderungen unterliegen, und führt eine „Wertschöpfungsketten-Obergrenze“ ein, die verhindert, dass CSRD-pflichtige Unternehmen von kleineren Partnern (bis 1000 Mitarbeiter) mehr Informationen verlangen, als im freiwilligen Standard festgelegt ist.\n\nInteressenträger können bis zum 3. Juni Feedback über das „Have-Your-Say“-Portal abgeben. Anschließend wird die Kommission die beiden delegierten Rechtsakte so schnell wie möglich verabschieden, die dann dem Europäischen Parlament und dem Rat zur Prüfung vorgelegt werden, bevor sie in Kraft treten.",
-          "en": "The European Commission has launched a one-month public consultation on the revised draft European Sustainability Reporting Standards (ESRS) and a voluntary reporting standard for smaller companies. The aim is to reduce administrative burden for EU businesses while maintaining the quality of sustainability disclosures.\n\nThe revised ESRS cut mandatory data points by over 60% and total data points by over 70%. They are shorter, clearer, introduce new flexibilities, and simplify the materiality assessment, which is expected to reduce reporting costs per company by more than 30%. The draft voluntary standard supports companies not subject to mandatory CSRD requirements and introduces a “value chain cap,” preventing CSRD-in-scope companies from demanding more information from smaller partners (up to 1000 employees) than set out in the voluntary standard.\n\nStakeholders are invited to provide feedback via the “Have-Your-Say” portal until June 3. The Commission will then adopt the two delegated acts as soon as possible, which will subsequently be transmitted to the European Parliament and the Council for scrutiny before entering into force."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revised-sustainability-reporting-standards-2026-05-06_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission veröffentlicht Entwurf der Delegierten VO zur Übernahme der überarbeiteten ESRS in geltendes Recht und Entwurf der Delegierten VO zu den Standards für die freiwillige Nachhaltigkeitsberichterstattung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwurf-der-delegierten-vo-zur-uebernahme-der-ueberarbeiteten-esrs-in-geltendes-recht-und-entwurf-der-delegierten-vo-zu-den-standards-fuer-die-freiwillige-nachhaltigkeits/",
-            "d": "07.05.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: Überarbeitete ESRS: Europäische Kommission legt Entwürfe vor und startet den öffentlichen Feedbackprozess",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/254500/ueberarbeitete-esrs-europaeische-kommission-legt-entwuerfe-vor-und-startet-den-oeffentlichen-feedbackprozess/",
-            "d": "06.05.2026"
-          }
-        ]
       }
     ],
     "marisk": [
