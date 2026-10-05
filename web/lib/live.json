@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T20:15:17Z",
+  "generated_at": "2026-10-05T14:08:10Z",
   "updates": {
     "irrd": [
       {
@@ -236,6 +236,48 @@
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-assessment-inherent-and-residual-risk-profile-obliged-entities-non-financial_en",
         "imp": "medium",
         "deadline": "27.09.2026"
+      }
+    ],
+    "cssf24856": [
+      {
+        "d": "05.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "CSSF Feedback-Bericht zum Rundschreiben 24/856 (Anlegerschutz bei OGA-Fehlern)",
+          "en": "CSSF Feedback Report on Circular 24/856 (Investor Protection in UCI Errors)"
+        },
+        "sl": "communication-on-the-cssf-feedback-report-circular-cssf-24-856",
+        "s": {
+          "de": "Die CSSF hat einen Feedback-Bericht zur Rundschreiben CSSF 24/856 veröffentlicht, das am 1. Januar 2025 in Kraft getreten ist und das Rundschreiben CSSF 02/77 ersetzt hat. Das Rundschreiben betrifft den Anlegerschutz bei NAV-Berechnungsfehlern, Nichteinhaltung von Anlagerichtlinien und anderen Fehlern auf Ebene der OGA. Parallel zur Einführung des Rundschreibens wurden die Meldeformulare an die neuen Richtlinien angepasst und ein sicherer Übertragungsweg über die eDesk-Plattform oder API eingeführt.\n\nDer Feedback-Bericht basiert auf den Erfahrungen der CSSF mit dem neuen Rahmenwerk im Jahr 2025. Er enthält Statistiken zu den eingereichten Meldungen und Beobachtungen der CSSF zu verschiedenen Fehlern und Nichteinhaltungen, die in den Geltungsbereich des Rundschreibens fallen. Zudem werden Erfahrungen mit den aktualisierten Meldeformularen auf der eDesk-Plattform geteilt.\n\nAlle Unternehmen, die in den Geltungsbereich des Rundschreibens CSSF 24/856 fallen, sollten die im Feedback-Bericht enthaltenen Beobachtungen bei der Vorbereitung und Einreichung ihrer Meldungen an die CSSF berücksichtigen.",
+          "en": "The CSSF has published a feedback report on Circular CSSF 24/856, which entered into force on 1 January 2025, repealing Circular CSSF 02/77. The Circular concerns investor protection in cases of NAV calculation errors, non-compliance with investment rules, and other errors at UCI level. In parallel with the Circular's implementation, notification forms were adapted to the new guidelines, and a secure transmission channel via the eDesk platform or API was introduced.\n\nThe feedback report is based on the CSSF's experience with the new framework during 2025. It presents statistics on submitted notifications and observations made by the CSSF regarding various errors and instances of non-compliance within the scope of the Circular. It also shares experiences with the updated notification forms integrated into the eDesk platform.\n\nAll entities falling within the scope of Circular CSSF 24/856 are expected to give due consideration to the observations set out in the CSSF Feedback Report when preparing and submitting notifications to the CSSF."
+        },
+        "url": "https://www.cssf.lu/en/2026/10/communication-on-the-cssf-feedback-report-circular-cssf-24-856/",
+        "imp": "high",
+        "refnum": "Circular CSSF 24/856"
+      },
+      {
+        "d": "24.12.2024",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "FAQ zur Rundverfügung CSSF 24/856 (Anlegerschutz bei Fehlern in UCIs)",
+          "en": "FAQ on Circular CSSF 24/856 (Investor Protection in case of UCI Errors)"
+        },
+        "sl": "faq-on-circular-cssf-24-856",
+        "s": {
+          "de": "Die CSSF hat eine FAQ-Sammlung zur Rundverfügung CSSF 24/856 veröffentlicht. Diese erste Version der FAQ soll die Anwendung der Rundverfügung erleichtern, die den Schutz von Anlegern bei Fehlern in der Nettoinventarwertberechnung (NAV), Nichteinhaltung von Anlagerichtlinien und anderen Fehlern auf Ebene der \"Undertakings for Collective Investment\" (UCI) regelt.\n\nDie Rundverfügung CSSF 24/856 betrifft alle UCIs in Luxemburg und legt detaillierte Verfahren für den Umgang mit Fehlern fest, die sich auf den Anleger auswirken können. Die FAQ präzisieren die Anforderungen und sollen den betroffenen Finanzinstituten helfen, die Vorgaben korrekt umzusetzen und die Anlegerrechte zu wahren.\n\nDie Rundverfügung CSSF 24/856 wurde am 29. März 2024 veröffentlicht. Weitere praktische und technische Leitlinien zur UCI-Meldung gemäß dieser Rundverfügung wurden am 17. Juli 2025 aktualisiert.",
+          "en": "The CSSF has published a collection of FAQs regarding Circular CSSF 24/856. This first version of the FAQs aims to facilitate the application of the circular, which governs the protection of investors in cases of Net Asset Value (NAV) calculation errors, non-compliance with investment rules, and other errors at the level of Undertakings for Collective Investment (UCIs).\n\nCircular CSSF 24/856 applies to all UCIs in Luxembourg and establishes detailed procedures for handling errors that may affect investors. The FAQs clarify the requirements and are intended to help affected financial institutions correctly implement the provisions and safeguard investor rights.\n\nCircular CSSF 24/856 was published on March 29, 2024. Further practical and technical guidance on UCI notification in accordance with this circular was updated on July 17, 2025."
+        },
+        "url": "https://www.cssf.lu/en/Document/faq-on-circular-cssf-24-856/",
+        "imp": "low",
+        "refnum": "Circular CSSF 24/856"
       }
     ],
     "csrd": [
@@ -3987,28 +4029,6 @@
             "d": "21.07.2025"
           }
         ]
-      }
-    ],
-    "cssf24856": [
-      {
-        "d": "24.12.2024",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "FAQ zur Rundverfügung CSSF 24/856 (Anlegerschutz bei Fehlern in UCIs)",
-          "en": "FAQ on Circular CSSF 24/856 (Investor Protection in case of UCI Errors)"
-        },
-        "sl": "faq-on-circular-cssf-24-856",
-        "s": {
-          "de": "Die CSSF hat eine FAQ-Sammlung zur Rundverfügung CSSF 24/856 veröffentlicht. Diese erste Version der FAQ soll die Anwendung der Rundverfügung erleichtern, die den Schutz von Anlegern bei Fehlern in der Nettoinventarwertberechnung (NAV), Nichteinhaltung von Anlagerichtlinien und anderen Fehlern auf Ebene der \"Undertakings for Collective Investment\" (UCI) regelt.\n\nDie Rundverfügung CSSF 24/856 betrifft alle UCIs in Luxemburg und legt detaillierte Verfahren für den Umgang mit Fehlern fest, die sich auf den Anleger auswirken können. Die FAQ präzisieren die Anforderungen und sollen den betroffenen Finanzinstituten helfen, die Vorgaben korrekt umzusetzen und die Anlegerrechte zu wahren.\n\nDie Rundverfügung CSSF 24/856 wurde am 29. März 2024 veröffentlicht. Weitere praktische und technische Leitlinien zur UCI-Meldung gemäß dieser Rundverfügung wurden am 17. Juli 2025 aktualisiert.",
-          "en": "The CSSF has published a collection of FAQs regarding Circular CSSF 24/856. This first version of the FAQs aims to facilitate the application of the circular, which governs the protection of investors in cases of Net Asset Value (NAV) calculation errors, non-compliance with investment rules, and other errors at the level of Undertakings for Collective Investment (UCIs).\n\nCircular CSSF 24/856 applies to all UCIs in Luxembourg and establishes detailed procedures for handling errors that may affect investors. The FAQs clarify the requirements and are intended to help affected financial institutions correctly implement the provisions and safeguard investor rights.\n\nCircular CSSF 24/856 was published on March 29, 2024. Further practical and technical guidance on UCI notification in accordance with this circular was updated on July 17, 2025."
-        },
-        "url": "https://www.cssf.lu/en/Document/faq-on-circular-cssf-24-856/",
-        "imp": "low",
-        "refnum": "Circular CSSF 24/856"
       }
     ],
     "securitisation": [
