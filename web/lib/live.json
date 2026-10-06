@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T14:08:10Z",
+  "generated_at": "2026-10-06T03:25:28Z",
   "updates": {
     "irrd": [
       {
@@ -1229,6 +1229,25 @@
       }
     ],
     "dsgvo": [
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "Irische DPC verhängt 403 Mio. EUR Strafe gegen Google wegen Standortdatenverarbeitung",
+          "en": "Irish DPC fines Google 403 million EUR over location data processing"
+        },
+        "sl": "the-irish-data-protection-commission-fines-google-eur-403-000-000-following-inqu",
+        "s": {
+          "de": "Die irische Datenschutzkommission (DPC) hat eine Untersuchung gegen Google Ireland Limited abgeschlossen, die sich auf die Verarbeitung von Standortdaten durch Google bezog. Die Untersuchung, die im Februar 2020 auf Beschwerden europäischer Verbraucherschutzorganisationen hin eingeleitet wurde, konzentrierte sich auf die Funktionen „Web- & App-Aktivitäten“, „Standortverlauf“ und „Standortgenauigkeit“ im Zeitraum vom 25. Mai 2018 bis zum 4. Februar 2020.\n\nDie DPC stellte fest, dass Google gegen die DSGVO verstoßen hat, insbesondere hinsichtlich der Rechtmäßigkeit und Fairness der Verarbeitung von Standortdaten in „Web- & App-Aktivitäten“ und „Standortverlauf“. Zudem wurden Mängel bei den Rechenschaftspflichten bezüglich der „Standortgenauigkeit“ sowie bei den Transparenzpflichten für alle drei Funktionen und der Speicherung von Standortdaten festgestellt.\n\nAls Konsequenz verhängte die DPC eine Geldbuße von insgesamt 403 Millionen Euro gegen Google. Google wurde außerdem angewiesen, seine Datenverarbeitung innerhalb von sechs Monaten an die Vorschriften anzupassen.",
+          "en": "The Irish Data Protection Commission (DPC) has concluded an inquiry into Google Ireland Limited concerning Google's processing of location data. The inquiry, initiated in February 2020 following complaints from European consumer rights organizations, focused on the 'Web & App Activity,' 'Location History,' and 'Location Accuracy' features between May 25, 2018, and February 4, 2020.\n\nThe DPC found that Google infringed the GDPR, specifically regarding the lawfulness and fairness of its processing of location data in 'Web & App Activity' and 'Location History.' Deficiencies were also identified in accountability obligations concerning 'Location Accuracy,' transparency obligations for all three features, and the retention of location data.\n\nConsequently, the DPC imposed administrative fines totaling 403 million EUR on Google. Google has also been ordered to bring its processing into compliance within six months."
+        },
+        "url": "https://www.edpb.europa.eu/news/the-irish-data-protection-commission-fines-google-403-000-000-eur-following-inquiry_en",
+        "imp": "medium"
+      },
       {
         "d": "21.09.2026",
         "t": {
