@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T03:25:28Z",
+  "generated_at": "2026-10-06T14:11:38Z",
   "updates": {
     "irrd": [
       {
@@ -236,6 +236,147 @@
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-assessment-inherent-and-residual-risk-profile-obliged-entities-non-financial_en",
         "imp": "medium",
         "deadline": "27.09.2026"
+      }
+    ],
+    "crr3": [
+      {
+        "d": "06.10.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Leitlinien zur Ermittlung von Tätigkeiten gemäß Art. 4 Abs. 1 Nr. 18 CRR (Rundschreiben 14/2026)",
+          "en": "Guidelines for Determining Activities under Art. 4 para. 1 no. 18 CRR (Circular 14/2026)"
+        },
+        "sl": "rundschreiben-14-2026-ba",
+        "s": {
+          "de": "Die BaFin hat die EBA-Leitlinien zur Ermittlung von Tätigkeiten gemäß Art. 4 Abs. 1 Nr. 18 CRR in ihre Verwaltungspraxis übernommen. Diese Leitlinien definieren Kriterien für die Abhängigkeit von Banktätigkeiten und Finanzmitteln.\n\nDie Übernahme ist relevant für Finanzinstitute, da sie die Auslegung der Begriffe „Abhängigkeit von der Banktätigkeit“ und „Abhängigkeit von Finanzmitteln“ konkretisiert. Eine Abhängigkeit von Banktätigkeiten liegt vor, wenn das Geschäftsmodell eines Unternehmens ohne gruppeninterne Bankprodukte oder -dienstleistungen nicht funktionieren oder erheblich beeinträchtigt wäre. Eine Abhängigkeit von Finanzmitteln bezieht sich speziell auf Darlehensgeschäfte, Bürgschaften und Kreditzusagen.\n\nDas Rundschreiben 14/2026 (BA) wurde am 06.10.2026 veröffentlicht.",
+          "en": "The BaFin has incorporated the EBA Guidelines for determining activities under Art. 4 para. 1 no. 18 CRR into its administrative practice. These guidelines define criteria for dependence on banking activities and financial resources.\n\nThis adoption is relevant for financial institutions as it clarifies the interpretation of the terms “dependence on banking activities” and “dependence on financial resources.” Dependence on banking activities exists if a company's business model would not function or would be significantly impaired without intra-group banking products or services. Dependence on financial resources specifically refers to loan transactions, guarantees, and credit commitments.\n\nCircular 14/2026 (BA) was published on 06.10.2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_14_2026_anwendung_eba_Leitlinien.html",
+        "imp": "high",
+        "refnum": "14/2026"
+      },
+      {
+        "d": "06.10.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Leitlinien zur Ermittlung von Tätigkeiten gemäß Art. 4 Abs. 1 Nr. 18 CRR (Rundschreiben 14/2026)",
+          "en": "Guidelines on the determination of activities pursuant to Art. 4 para. 1 no. 18 CRR (Circular 14/2026)"
+        },
+        "sl": "rundschreiben-14-2026-ba-leitlinien-zur-festlegung-der-kriterien-fuer-die-ermitt",
+        "s": {
+          "de": "Die BaFin hat mit dem Rundschreiben 14/2026 (BA) bekannt gegeben, dass sie die Leitlinien der EBA zur Festlegung der Kriterien für die Ermittlung der Tätigkeiten gemäß Art. 4 Abs. 1 Nr. 18 CRR in ihre Verwaltungspraxis übernimmt. Dies erfolgte mittels einer „Compliance Notification“ an die EBA vom 4. Mai 2026.\n\nDas Rundschreiben konkretisiert die Auslegung der Begriffe „Abhängigkeit von der Banktätigkeit“ und „Abhängigkeit von Finanzmitteln“. Eine Abhängigkeit von der Banktätigkeit liegt vor, wenn das Geschäftsmodell eines Unternehmens ohne die von einem Institut oder Finanzinstitut der Gruppe bereitgestellten Bankprodukte oder -dienstleistungen nicht funktionieren oder erheblich beeinträchtigt wäre. Die Abhängigkeit von Finanzmitteln bezieht sich speziell auf Darlehensgeschäfte, Bürgschaften und Kreditzusagen.\n\nDiese Klarstellungen sind relevant für Institute und Finanzinstitute, die prüfen müssen, ob bestimmte Tätigkeiten unter die Definition des Art. 4 Abs. 1 Nr. 18 CRR fallen. Die präzise Definition hilft bei der korrekten Anwendung der CRR-Vorschriften.",
+          "en": "The BaFin has announced with Circular 14/2026 (BA) that it is adopting the EBA Guidelines on the criteria for determining activities pursuant to Art. 4 para. 1 no. 18 CRR into its administrative practice. This was done via a “Compliance Notification” to the EBA dated May 4, 2026.\n\nThe circular specifies the interpretation of the terms “dependence on banking activity” and “dependence on financial resources”. Dependence on banking activity exists if a company's business model would not function or would be significantly impaired without the banking products or services provided by an institution or financial institution of the group. Dependence on financial resources specifically refers to loan transactions, guarantees, and credit commitments.\n\nThese clarifications are relevant for institutions and financial institutions that need to assess whether certain activities fall under the definition of Art. 4 para. 1 no. 18 CRR. The precise definition aids in the correct application of CRR provisions."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/rs_14_2026_anwendung_eba_Leitlinien.html",
+        "imp": "high",
+        "refnum": "14/2026"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
+          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
+        },
+        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
+        "s": {
+          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
+          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
+        "imp": "high"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern",
+          "en": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern"
+        },
+        "sl": "kwg-und-pfandbg-bafin-veroeffentlicht-rundschreiben-zu-wichtigen-funktionstraege",
+        "s": {
+          "de": "Die BaFin hat zwei Rundschreiben veröffentlicht, die ihre Verwaltungspraxis bezüglich wichtiger Funktionsträger nach dem Kreditwesengesetz (KWG) und dem Pfandbriefgesetz (PfandBG) konkretisieren. Es handelt sich um das Rundschreiben 10/2026 (BA) zur Bestellung von Verwaltern des Refinanzierungsregisters gemäß §§ 22e ff. KWG und das Rundschreiben 11/2026 (BA) zur Bestellung von Treuhändern bei einer Pfandbriefbank gemäß §§ 7 ff. PfandBG.\n\nDie Rundschreiben legen die Erwartungen der BaFin an die Unabhängigkeit, Zuverlässigkeit und Expertise dieser Funktionsträger sowie deren Stellvertreter fest. Institute müssen der BaFin entsprechende Nachweise vorlegen. Das Rundschreiben zu den Treuhändern ersetzt die bisherigen FAQs zu diesem Thema.\n\nDie BaFin unterstützt die Institute bei der Zusammenstellung der erforderlichen Unterlagen wie Lebenslauf, Führungszeugnis und Unabhängigkeitserklärung. Zudem informieren die Rundschreiben über die Verwaltungsverfahren, die Vergütung der Funktionsträger und die anfallenden Gebühren für die Bestellung.",
+          "en": "The BaFin has published two circulars specifying its administrative practice regarding key function holders under the German Banking Act (KWG) and the Pfandbrief Act (PfandBG). These are Circular 10/2026 (BA) on the appointment of administrators of the refinancing register according to §§ 22e et seq. KWG and Circular 11/2026 (BA) on the appointment of trustees at a Pfandbrief bank according to §§ 7 et seq. PfandBG.\n\nThe circulars outline BaFin's expectations regarding the independence, reliability, and expertise of these function holders and their deputies. Institutions must provide BaFin with corresponding evidence. The circular concerning trustees replaces the previous FAQs on this topic.\n\nBaFin assists institutions in compiling the necessary documents, such as CVs, certificates of good conduct, and declarations of independence. Furthermore, the circulars provide information on administrative procedures, remuneration of function holders, and the fees incurred for their appointment."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_14_kwg_pfandbg_rundschreiben_zu_wichtigen_funktionstraegern.html",
+        "imp": "high"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zur Bestellung von Verwaltern des Refinanzierungsregisters (10/2026)",
+          "en": "BaFin Circular on the Appointment of Refinancing Register Administrators (10/2026)"
+        },
+        "sl": "rundschreiben-10-2026-ba-bestellung-von-verwaltern-des-refinanzierungsregisters",
+        "s": {
+          "de": "Dieses Rundschreiben der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen. Es definiert die Kriterien für die Bestellung und Verlängerung der Bestellung dieser Verwalter, insbesondere hinsichtlich ihrer Unabhängigkeit, Zuverlässigkeit und Sachkunde.\n\nDas Rundschreiben richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Es legt dar, dass Verwalter natürliche Personen sein müssen, die unabhängig vom registerführenden Unternehmen agieren, zuverlässig sind und über spezifische Kenntnisse im Bereich KWG, RefiRegV, BGB und InsO verfügen. Die BaFin ist für die Bestellung zuständig, die auf Vorschlag des registerführenden Unternehmens erfolgt.\n\nDas Rundschreiben ist ab dem 14.09.2026 gültig. Es enthält detaillierte Vorgaben zu den einzureichenden Unterlagen, wie Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Unabhängigkeitserklärung, sowie Hinweise zur Vergütung und Gebührenpflichtigkeit der Bestellung.",
+          "en": "This BaFin circular specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation. It defines the criteria for the appointment and reappointment of these administrators, particularly regarding their independence, reliability, and expertise.\n\nThe circular is addressed to companies wishing to maintain a refinancing register and to applicants for the position of administrator. It stipulates that administrators must be natural persons who act independently of the register-keeping company, are reliable, and possess specific knowledge in the areas of KWG, RefiRegV, BGB, and InsO. BaFin is responsible for the appointment, which is made upon the proposal of the register-keeping company.\n\nThe circular is valid from September 14, 2026. It contains detailed requirements for the documents to be submitted, such as curriculum vitae, declaration of no criminal record, certificate of good conduct, and declaration of independence, as well as information on remuneration and the obligation to pay fees for the appointment."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_10_2026_bestellung_verw_refireg_ba.html",
+        "imp": "high",
+        "refnum": "10/2026"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Verwaltern des Refinanzierungsregisters (10/2026)",
+          "en": "BaFin Circular on Administrators of Refinancing Registers (10/2026)"
+        },
+        "sl": "rundschreiben-10-2026-ba",
+        "s": {
+          "de": "Das Rundschreiben 10/2026 (BA) der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen.\n\nEs richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Die BaFin legt dar, dass Verwalter unabhängig, zuverlässig und sachkundig sein müssen und das 75. Lebensjahr noch nicht vollendet haben dürfen. Insbesondere wird auf die Unabhängigkeit vom registerführenden Unternehmen, die Zuverlässigkeit hinsichtlich straf- und ordnungswidrigkeitenrechtlicher Aspekte sowie die erforderliche Sachkunde in Bezug auf KWG, RefiRegV, BGB und InsO eingegangen.\n\nDie Bestellung erfolgt durch die BaFin auf Vorschlag des registerführenden Unternehmens, in der Regel für fünf Jahre oder bis zur Vollendung des 75. Lebensjahres des Verwalters. Das Rundschreiben ist seit dem 14.09.2026 in Kraft und listet detailliert die einzureichenden Unterlagen auf, darunter Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Auszug aus dem Gewerbezentralregister.",
+          "en": "BaFin Circular 10/2026 (BA) specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation.\n\nIt is addressed to companies wishing to maintain a refinancing register and to applicants for the administrator position. BaFin states that administrators must be independent, reliable, and competent, and must not have reached the age of 75. Special emphasis is placed on independence from the register-keeping company, reliability regarding criminal and administrative offenses, and the required expertise concerning KWG, RefiRegV, BGB, and InsO.\n\nThe appointment is made by BaFin upon proposal by the register-keeping company, typically for five years or until the administrator reaches the age of 75. The circular has been in effect since September 14, 2026, and details the documents to be submitted, including a CV, declaration of no criminal record, certificate of good conduct, and an extract from the central trade register."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_10_2026_bestellung_verwalter_refinanzierungsreg_ba.html",
+        "imp": "high",
+        "refnum": "10/2026"
+      }
+    ],
+    "ebaasu": [
+      {
+        "d": "06.10.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin übernimmt EBA-Leitlinien zu Anbietern von Nebendienstleistungen (Rundschreiben 14/2026 (BA))",
+          "en": "BaFin adopts EBA Guidelines on providers of ancillary services (Circular 14/2026 (BA))"
+        },
+        "sl": "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin",
+        "s": {
+          "de": "Die BaFin hat die EBA-Leitlinien zur Definition von Anbietern von Nebendienstleistungen (AvN) in ihre Verwaltungspraxis übernommen. Diese Leitlinien präzisieren die Kriterien, unter denen ein Unternehmen gemäß der überarbeiteten Kapitaladäquanzverordnung (CRR) als AvN einzustufen ist.\n\nDie BaFin wendet die Leitlinien mit einem Auslegungsvorbehalt an, insbesondere bezüglich des Kriteriums „Abhängigkeit von der Banktätigkeit“. Sie weicht in ihrer Auslegung von dem weiter gefassten Verständnis der EBA ab, was für Unternehmen, die als AvN eingestuft werden könnten, relevant ist.\n\nDas Rundschreiben 14/2026 (BA) mit dem vollständigen Titel „Leitlinien zur Festlegung der Kriterien für die Ermittlung der Tätigkeiten gemäß Art. 4 Abs. 1 Nr. 18 CRR“ ist am 06.10.2026 in Kraft getreten.",
+          "en": "The BaFin has adopted the EBA Guidelines on the definition of providers of ancillary services (AvN) into its administrative practice. These guidelines specify the criteria under which a company is to be classified as an AvN according to the revised Capital Requirements Regulation (CRR).\n\nThe BaFin applies the guidelines with a reservation regarding interpretation, particularly concerning the criterion of “dependence on banking activity”. It deviates in its interpretation from the broader understanding of the EBA, which is relevant for companies that could be classified as AvN.\n\nThe Circular 14/2026 (BA), fully titled “Guidelines on the criteria for the identification of activities under Art. 4(1)(18) CRR”, came into force on 06.10.2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_06_rundschreiben_leitlinien_crr.html",
+        "imp": "high"
       }
     ],
     "cssf24856": [
@@ -1813,125 +1954,6 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12570",
         "imp": "medium",
         "refnum": "Ares(2020)4337803"
-      }
-    ],
-    "crr3": [
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
-          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
-        },
-        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
-        "s": {
-          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
-          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
-        "imp": "high"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern",
-          "en": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern"
-        },
-        "sl": "kwg-und-pfandbg-bafin-veroeffentlicht-rundschreiben-zu-wichtigen-funktionstraege",
-        "s": {
-          "de": "Die BaFin hat zwei Rundschreiben veröffentlicht, die ihre Verwaltungspraxis bezüglich wichtiger Funktionsträger nach dem Kreditwesengesetz (KWG) und dem Pfandbriefgesetz (PfandBG) konkretisieren. Es handelt sich um das Rundschreiben 10/2026 (BA) zur Bestellung von Verwaltern des Refinanzierungsregisters gemäß §§ 22e ff. KWG und das Rundschreiben 11/2026 (BA) zur Bestellung von Treuhändern bei einer Pfandbriefbank gemäß §§ 7 ff. PfandBG.\n\nDie Rundschreiben legen die Erwartungen der BaFin an die Unabhängigkeit, Zuverlässigkeit und Expertise dieser Funktionsträger sowie deren Stellvertreter fest. Institute müssen der BaFin entsprechende Nachweise vorlegen. Das Rundschreiben zu den Treuhändern ersetzt die bisherigen FAQs zu diesem Thema.\n\nDie BaFin unterstützt die Institute bei der Zusammenstellung der erforderlichen Unterlagen wie Lebenslauf, Führungszeugnis und Unabhängigkeitserklärung. Zudem informieren die Rundschreiben über die Verwaltungsverfahren, die Vergütung der Funktionsträger und die anfallenden Gebühren für die Bestellung.",
-          "en": "The BaFin has published two circulars specifying its administrative practice regarding key function holders under the German Banking Act (KWG) and the Pfandbrief Act (PfandBG). These are Circular 10/2026 (BA) on the appointment of administrators of the refinancing register according to §§ 22e et seq. KWG and Circular 11/2026 (BA) on the appointment of trustees at a Pfandbrief bank according to §§ 7 et seq. PfandBG.\n\nThe circulars outline BaFin's expectations regarding the independence, reliability, and expertise of these function holders and their deputies. Institutions must provide BaFin with corresponding evidence. The circular concerning trustees replaces the previous FAQs on this topic.\n\nBaFin assists institutions in compiling the necessary documents, such as CVs, certificates of good conduct, and declarations of independence. Furthermore, the circulars provide information on administrative procedures, remuneration of function holders, and the fees incurred for their appointment."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_14_kwg_pfandbg_rundschreiben_zu_wichtigen_funktionstraegern.html",
-        "imp": "high"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zur Bestellung von Verwaltern des Refinanzierungsregisters (10/2026)",
-          "en": "BaFin Circular on the Appointment of Refinancing Register Administrators (10/2026)"
-        },
-        "sl": "rundschreiben-10-2026-ba-bestellung-von-verwaltern-des-refinanzierungsregisters",
-        "s": {
-          "de": "Dieses Rundschreiben der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen. Es definiert die Kriterien für die Bestellung und Verlängerung der Bestellung dieser Verwalter, insbesondere hinsichtlich ihrer Unabhängigkeit, Zuverlässigkeit und Sachkunde.\n\nDas Rundschreiben richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Es legt dar, dass Verwalter natürliche Personen sein müssen, die unabhängig vom registerführenden Unternehmen agieren, zuverlässig sind und über spezifische Kenntnisse im Bereich KWG, RefiRegV, BGB und InsO verfügen. Die BaFin ist für die Bestellung zuständig, die auf Vorschlag des registerführenden Unternehmens erfolgt.\n\nDas Rundschreiben ist ab dem 14.09.2026 gültig. Es enthält detaillierte Vorgaben zu den einzureichenden Unterlagen, wie Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Unabhängigkeitserklärung, sowie Hinweise zur Vergütung und Gebührenpflichtigkeit der Bestellung.",
-          "en": "This BaFin circular specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation. It defines the criteria for the appointment and reappointment of these administrators, particularly regarding their independence, reliability, and expertise.\n\nThe circular is addressed to companies wishing to maintain a refinancing register and to applicants for the position of administrator. It stipulates that administrators must be natural persons who act independently of the register-keeping company, are reliable, and possess specific knowledge in the areas of KWG, RefiRegV, BGB, and InsO. BaFin is responsible for the appointment, which is made upon the proposal of the register-keeping company.\n\nThe circular is valid from September 14, 2026. It contains detailed requirements for the documents to be submitted, such as curriculum vitae, declaration of no criminal record, certificate of good conduct, and declaration of independence, as well as information on remuneration and the obligation to pay fees for the appointment."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_10_2026_bestellung_verw_refireg_ba.html",
-        "imp": "high",
-        "refnum": "10/2026"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zu Verwaltern des Refinanzierungsregisters (10/2026)",
-          "en": "BaFin Circular on Administrators of Refinancing Registers (10/2026)"
-        },
-        "sl": "rundschreiben-10-2026-ba",
-        "s": {
-          "de": "Das Rundschreiben 10/2026 (BA) der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen.\n\nEs richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Die BaFin legt dar, dass Verwalter unabhängig, zuverlässig und sachkundig sein müssen und das 75. Lebensjahr noch nicht vollendet haben dürfen. Insbesondere wird auf die Unabhängigkeit vom registerführenden Unternehmen, die Zuverlässigkeit hinsichtlich straf- und ordnungswidrigkeitenrechtlicher Aspekte sowie die erforderliche Sachkunde in Bezug auf KWG, RefiRegV, BGB und InsO eingegangen.\n\nDie Bestellung erfolgt durch die BaFin auf Vorschlag des registerführenden Unternehmens, in der Regel für fünf Jahre oder bis zur Vollendung des 75. Lebensjahres des Verwalters. Das Rundschreiben ist seit dem 14.09.2026 in Kraft und listet detailliert die einzureichenden Unterlagen auf, darunter Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Auszug aus dem Gewerbezentralregister.",
-          "en": "BaFin Circular 10/2026 (BA) specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation.\n\nIt is addressed to companies wishing to maintain a refinancing register and to applicants for the administrator position. BaFin states that administrators must be independent, reliable, and competent, and must not have reached the age of 75. Special emphasis is placed on independence from the register-keeping company, reliability regarding criminal and administrative offenses, and the required expertise concerning KWG, RefiRegV, BGB, and InsO.\n\nThe appointment is made by BaFin upon proposal by the register-keeping company, typically for five years or until the administrator reaches the age of 75. The circular has been in effect since September 14, 2026, and details the documents to be submitted, including a CV, declaration of no criminal record, certificate of good conduct, and an extract from the central trade register."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_10_2026_bestellung_verwalter_refinanzierungsreg_ba.html",
-        "imp": "high",
-        "refnum": "10/2026"
-      },
-      {
-        "d": "11.09.2026",
-        "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Technische Informationen für versicherungstechnische Rückstellungen und Eigenmittel (Solvency II) (32026R2041)",
-          "en": "Technical Information for Technical Provisions and Own Funds (Solvency II) (32026R2041)"
-        },
-        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
-        "s": {
-          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung der Volatilitätsanpassung und die risikofreien Zinssätze für verschiedene Währungen definiert.\n\nDie Regelungen betreffen alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union, die der Solvency-II-Richtlinie unterliegen. Sie müssen die hier festgelegten technischen Parameter für ihre versicherungsmathematischen Berechnungen und die Ermittlung ihrer Solvenzkapitalanforderungen anwenden. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im gesamten EU-Binnenmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 30. September 2026. Die technischen Informationen sind für die Anwendung ab diesem Datum relevant.",
-          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the volatility adjustment and the risk-free interest rates for various currencies are defined.\n\nThe regulations apply to all insurance and reinsurance undertakings within the European Union that are subject to the Solvency II Directive. They must apply the technical parameters set out herein for their actuarial calculations and the determination of their Solvency Capital Requirements. This ensures a uniform and comparable valuation basis across the entire EU single market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 30 September 2026. The technical information is relevant for application from this date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
-        "imp": "high",
-        "refnum": "32026R2041"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
-          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
-        },
-        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
-        "s": {
-          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
-          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
-        "imp": "low"
       }
     ],
     "ecspr": [
