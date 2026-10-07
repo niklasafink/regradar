@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:21:26Z",
+  "generated_at": "2026-10-07T07:05:36Z",
   "updates": {
     "irrd": [
       {
@@ -2751,6 +2751,26 @@
         "imp": "high"
       },
       {
+        "d": "03.02.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Aufsichtserklärung für (Rück-)Versicherer und Private Equity",
+          "en": "Consultation on Supervisory Statement for (Re-)Insurance Undertakings and Private Equity"
+        },
+        "sl": "consultation-on-supervisory-statement-on-the-authorisation-and-ongoing-supervisi",
+        "s": {
+          "de": "Die EIOPA konsultiert eine Aufsichtserklärung zur Genehmigung und laufenden Beaufsichtigung von (Rück-)Versicherungsunternehmen im Zusammenhang mit Private-Equity-Firmen. Ziel ist es, die spezifische Art und die Risiken dieser Unternehmen zu berücksichtigen, um Risiken zu adressieren und eine hochwertige sowie konvergente Aufsicht zu gewährleisten.\n\nDie Erklärung legt aufsichtsrechtliche Erwartungen für den Erwerb qualifizierter Beteiligungen, Portfolioübertragungen und Fusionen sowie für die laufende Aufsicht fest. Sie richtet sich an europäische Aufsichtsbehörden und soll im Einklang mit den Grundsätzen einer risikobasierten und verhältnismäßigen Aufsicht angewendet werden.\n\nDie Konsultationsfrist endete am 30.04.2026.",
+          "en": "EIOPA is consulting on a supervisory statement concerning the authorisation and ongoing supervision of (re-)insurance undertakings related to private equity firms. The aim is to address the specific nature and risks of these entities, ensuring high-quality and convergent supervision.\n\nThe statement sets out supervisory expectations for acquisitions of qualifying holdings, portfolio transfers, and mergers, as well as for ongoing supervision. It is intended to be applied by European supervisory authorities in line with the principles of risk-based and proportionate supervision.\n\nThe consultation period closed on 30 April 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-supervisory-statement-authorisation-and-ongoing-supervision-re-insurance-undertakings_en",
+        "imp": "medium",
+        "deadline": "30.04.2026"
+      },
+      {
         "d": "29.10.2025",
         "t": {
           "de": "Gesetzentwurf",
@@ -2775,34 +2795,6 @@
             "ti": "EU-Kommission stellt delegierte Verordnung zur Überarbeitung von Solvency II vor",
             "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-stellt-delegierte-verordnung-zur-ueberarbeitung-von-solvency-ii-vor/",
             "d": "31.10.2025"
-          }
-        ]
-      },
-      {
-        "d": "06.03.2025",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zum Grundsatz der unternehmerischen Vorsicht (PPP) von Versicherungsunternehmen unter Solvabilität II (05/2025 (VA))",
-          "en": "BaFin Circular on the Prudent Person Principle (PPP) for Insurance Undertakings under Solvency II (05/2025 (VA))"
-        },
-        "sl": "rundschreiben-05-2025-va-ppp-rundschreiben-05-2025-va-grundsatz-der-unternehmeri",
-        "s": {
-          "de": "Dieses Rundschreiben der BaFin konkretisiert die Auslegung des Grundsatzes der unternehmerischen Vorsicht (Prudent Person Principle – PPP) für Versicherungsunternehmen unter Solvabilität II. Es legt die Vorschriften des Versicherungsaufsichtsgesetzes (VAG) und der Delegierten Verordnung (EU) 2015/35 verbindlich aus, um eine konsistente Anwendung zu gewährleisten. Unternehmen sollen eigenverantwortlich und risikoorientiert entscheiden, wie sie die Vorgaben umsetzen.\n\nDas Rundschreiben gilt für alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, die unter Solvabilität II fallen, mit Ausnahmen für bestimmte Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen. Es behandelt Aspekte wie das Management des Anlagerisikos, die Bewertung nicht alltäglicher Anlagen, die Sicherheit, Qualität, Liquidität und Rentabilität des Anlageportfolios, Interessenkonflikte, fondsgebundene Verträge, Derivate, Verbriefungen, Liquiditätsrisikomanagement, Aktiv-Passiv-Management und Nachhaltigkeit. Die BaFin stützt ihre Auslegung auf die EIOPA-Leitlinien zum Governance-System.\n\nDas Rundschreiben tritt am 06.03.2025 in Kraft. Es ersetzt und präzisiert frühere Auslegungsentscheidungen und Rundschreiben zu verwandten Themen, wie etwa zur Verwendung externer Ratings, Staatenrisiken, Infrastrukturinvestitionen und der fachlichen Eignung der Geschäftsleitung.",
-          "en": "This BaFin circular specifies the interpretation of the Prudent Person Principle (PPP) for insurance undertakings under Solvency II. It provides a binding interpretation of the provisions of the German Insurance Supervision Act (VAG) and Delegated Regulation (EU) 2015/35 to ensure consistent application. Companies are expected to make independent and risk-oriented decisions on how to implement these requirements.\n\nThe circular applies to all primary and reinsurance undertakings domiciled in Germany or a third country that fall under Solvency II, with exceptions for certain funeral funds, pension funds, and small insurance undertakings. It addresses aspects such as investment risk management, valuation of unusual investments, security, quality, liquidity, and profitability of the investment portfolio, conflicts of interest, unit-linked contracts, derivatives, securitisations, liquidity risk management, asset-liability management, and sustainability. BaFin bases its interpretation on the EIOPA Guidelines on the System of Governance.\n\nThe circular comes into force on 06.03.2025. It replaces and clarifies previous interpretative decisions and circulars on related topics, such as the use of external ratings, sovereign risks, infrastructure investments, and the professional suitability of management."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_05_2025_ppp_va.html",
-        "imp": "high",
-        "refnum": "05/2025",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin-Rundschreiben 05/2025 (VA): Grundsatz der unternehmerischen Vorsicht (Prudent Person Principle – PPP) von Versicherungsunternehmen unter Solvabilität II",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-rundschreiben-solvency-ii-versicherer-2025/",
-            "d": "10.03.2025"
           }
         ]
       }
