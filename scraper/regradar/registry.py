@@ -363,7 +363,7 @@ SOURCES = [
     },
     {
         "source_id": "iosco",
-        "name": "IOSCO (Public Reports)",
+        "name": "IOSCO (Public Reports / Media Releases)",
         "authority": "IOSCO",
         "jurisdiction": "INT",
         "base_url": "https://www.iosco.org/",

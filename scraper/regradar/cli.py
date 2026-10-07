@@ -60,10 +60,12 @@ def cmd_sources(conn):
 
 def cmd_run(conn, target: str, fetch: bool, since=None):
     ids = [s["source_id"] for s in SOURCES] if target == "all" else [target]
+    # Explizit benannte Quelle immer ausführen, bei 'all' poll_interval beachten.
+    force = (target != "all")
     results = []
     for sid in ids:
         print("→ {} …".format(sid), flush=True)
-        stats = run_source(conn, sid, since=since, fetch_content=fetch)
+        stats = run_source(conn, sid, since=since, fetch_content=fetch, force=force)
         results.append(stats)
         if stats.get("error"):
             print("  FEHLER: {}".format(stats["error"]))
@@ -72,6 +74,8 @@ def cmd_run(conn, target: str, fetch: bool, since=None):
             # Zählwerte – nicht formatieren, sonst KeyError und der ganze Lauf
             # bricht ab (passiert 02.–05.09.2026 mit der BIS-Quelle).
             print("  übersprungen (Quelle deaktiviert)")
+        elif stats.get("status") == "SKIPPED":
+            print("  übersprungen (Poll-Intervall noch nicht erreicht)")
         else:
             print("  entdeckt {discovered}, geladen {fetched}, neu {new}, "
                   "geändert {changed}, HTTP-Fehler {http_errors}, Parse-Fehler {parse_errors}"

@@ -290,7 +290,7 @@ def _send_email(subject: str, html: str) -> Optional[str]:
                 return "Resend HTTP {}".format(resp.status)
     except urllib.error.HTTPError as e:
         return "Resend HTTP {}: {}".format(e.code, e.read().decode()[:200])
-    except (urllib.error.URLError, TimeoutError) as e:
+    except (urllib.error.URLError, OSError) as e:
         return str(e)
     return None
 
@@ -324,7 +324,7 @@ def _chat_json(system: str, user_payload) -> Optional[dict]:
         content = body["choices"][0]["message"]["content"].strip()
         content = content.removeprefix("```json").removeprefix("```").removesuffix("```")
         return json.loads(content)
-    except (urllib.error.URLError, json.JSONDecodeError, KeyError, TimeoutError) as e:
+    except (urllib.error.URLError, json.JSONDecodeError, KeyError, OSError) as e:
         print("Gap-Report: LLM-Anfrage übersprungen ({}: {})".format(type(e).__name__, e))
         return None
 

@@ -16,6 +16,17 @@ SCRAPER="$PWD"
 REPO="$(dirname "$PWD")"
 mkdir -p logs data
 
+# Netz abwarten: Direkt nach dem Aufwachen (launchd holt verpasste Läufe nach)
+# ist DNS oft noch nicht da – am 01./02.10.2026 schlugen so ganze Läufe mit
+# „nodename nor servname provided“ fehl. Bis zu 90 s warten, sonst Lauf
+# auslassen (ohne Netz gelingen weder Crawl noch Push noch Herzschlag).
+online() { /usr/bin/python3 -c 'import socket; socket.setdefaulttimeout(5); socket.getaddrinfo("regradar.de", 443)' 2>/dev/null; }
+for i in {1..9}; do online && break; sleep 10; done
+if ! online; then
+  echo "=== Lauf ausgelassen $(date '+%Y-%m-%d %H:%M:%S'): kein Netz (DNS) ==="
+  exit 0
+fi
+
 # Lauf-Sperre: launchd-Lauf und Reparatur-Agent (repair_agent.py) dürfen nicht
 # parallel laufen (SQLite-Locks, doppelte Commits). Verwaiste Sperren (>2 h)
 # werden entfernt.

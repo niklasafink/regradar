@@ -116,7 +116,7 @@ export DIP_API_KEY="..."
 | ESRB | `rss` | `esrb.europa.eu/rss/press.xml` |
 | BIS / Basler Ausschuss | `rss` | `bis.org/doclist/bcbspubls.rss` — RSS 1.0/RDF, Datum aus `dc:date` |
 | FSB | `rss` | `fsb.org/feed/` (WordPress) |
-| IOSCO | `iosco` | Liste `publications/?subsection=public_reports`, IOSCOPD-Nummer als ID; **nur Metadaten** (PDFs hinter Cloudflare-Bot-Schutz, wird nicht umgangen) |
+| IOSCO | `iosco` | Liste `publications/?subsection=public_reports`, IOSCOPD-Nummer als ID; ist sie gesperrt (403 seit 30.09.2026), ersatzweise `media_room/?subsection=media_releases` (IOSCONEWS-Nummer); **nur Metadaten** (Cloudflare-Bot-Schutz wird nicht umgangen) |
 | EU-Kommission / AI Office | `dsnews` | News-Liste `digital-strategy.ec.europa.eu/en/news?topic=119` (AI Act) |
 | CSSF Luxemburg | `rss` | 7 typisierte Feeds `cssf.lu/en/feed/publications?content_type=…` (Rundschreiben, CSSF-Verordnungen, Communiqués, Konsultationen, FAQ, Gesetze, Großherzogliche Verordnungen); Jurisdiktion `LU`; Zuordnung zuerst gegen Lux-Rahmenwerke (`SOURCE_RULES` in webexport) |
 | EU-Kommission / GD FISMA | `ecfinance` | News-Liste `finance.ec.europa.eu/finance-news_en` (ECL-Markup, 2 Seiten, Teaser aus der Liste); kein RSS vorhanden |

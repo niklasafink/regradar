@@ -174,7 +174,7 @@ def classify(conn: sqlite3.Connection, items: List[Tuple[int, str]]) -> Dict[int
         try:
             verdicts = _chat(model, key, batch)
         except (urllib.error.URLError, json.JSONDecodeError, KeyError,
-                TimeoutError, TypeError, AttributeError, IndexError) as e:
+                OSError, TypeError, AttributeError, IndexError) as e:
             print("LLM-Filter: Batch übersprungen ({}: {})".format(type(e).__name__, e))
             verdicts = {}
         for i, _ in batch:

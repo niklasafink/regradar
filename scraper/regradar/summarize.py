@@ -135,7 +135,7 @@ def backfill_titles(conn: sqlite3.Connection, model: str, key: str,
         try:
             got = _translate_titles(model, key, batch)
         except (urllib.error.URLError, json.JSONDecodeError, KeyError,
-                ValueError, TimeoutError) as e:
+                ValueError, OSError) as e:
             print("LLM-Titel: Batch fehlgeschlagen ({}: {})".format(type(e).__name__, e))
             continue
         for i, ti in got.items():
@@ -345,7 +345,7 @@ def summarize(conn: sqlite3.Connection,
                 print("LLM-Zusammenfassung: Versuch {} unvollständig "
                       "({}/{} ids)".format(attempt, len(got), len(batch)))
             except (urllib.error.URLError, json.JSONDecodeError, KeyError,
-                    ValueError, TimeoutError) as e:
+                    ValueError, OSError) as e:
                 print("LLM-Zusammenfassung: Versuch {} fehlgeschlagen ({}: {})".format(
                     attempt, type(e).__name__, e))
         for i, s in got.items():

@@ -301,7 +301,9 @@ def _scrape_deloitte(conn) -> int:
     for url, lastmod in candidates:
         if budget <= 0:
             break
-        if conn.execute("SELECT 1 FROM big4_articles WHERE url=?", (url,)).fetchone():
+        # Ohne Groß-/Kleinschreibung: Die Sitemap führt einzelne Artikel in
+        # einer zweiten Schreibweise, die nur 404 liefert (jeder Lauf erneut).
+        if conn.execute("SELECT 1 FROM big4_articles WHERE lower(url)=lower(?)", (url,)).fetchone():
             continue
         page = _get(url)
         budget -= 1
@@ -394,7 +396,7 @@ def _llm_match(update_text: str, articles: List[sqlite3.Row]) -> Optional[Dict[i
         content = body["choices"][0]["message"]["content"].strip()
         content = content.removeprefix("```json").removeprefix("```").removesuffix("```")
         parsed = json.loads(content)
-    except (urllib.error.URLError, json.JSONDecodeError, KeyError, TimeoutError) as e:
+    except (urllib.error.URLError, json.JSONDecodeError, KeyError, OSError) as e:
         print("Big4-Match: Anfrage übersprungen ({}: {})".format(type(e).__name__, e))
         return None
     out = {}

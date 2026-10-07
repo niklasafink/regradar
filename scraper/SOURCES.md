@@ -49,7 +49,7 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 | 23 | ESRB | EU | RSS (`rss/press.xml`) | OTHER | Makroprudenzielle Warnungen/Empfehlungen |
 | 24 | BIS / Basler Ausschuss | INT | RSS 1.0/RDF (`doclist/bcbspubls.rss`) | FINAL_REPORT, CONSULTATION, OTHER | 12–24 Monate Vorlauf vor EU-Umsetzung; Datum aus dc:date |
 | 25 | FSB | INT | RSS (WordPress-Feed) | FINAL_REPORT, CONSULTATION, OTHER | Financial Stability Board |
-| 26 | IOSCO | INT | HTML (Public-Reports-Liste), **nur Metadaten** | FINAL_REPORT, CONSULTATION | PDFs hinter Cloudflare-Bot-Schutz → wird nicht umgangen; IOSCOPD-Nummer als ID |
+| 26 | IOSCO | INT | HTML (Public-Reports-Liste, ersatzweise Media Releases), **nur Metadaten** | FINAL_REPORT, CONSULTATION | PDFs und seit 30.09.2026 auch die Reports-Liste hinter Cloudflare-Bot-Schutz → wird nicht umgangen; dann Media-Releases-Liste (IOSCONEWS-Nummer als ID), sonst IOSCOPD-Nummer |
 
 ## Welle 5 — AI Act (umgesetzt am 30.08.2026)
 

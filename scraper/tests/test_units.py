@@ -290,6 +290,17 @@ class IoscoParsing(unittest.TestCase):
         self.assertEqual((m.group(3), m.group(4), m.group(5)), ("09", "Jul", "2026"))
         self.assertEqual(REF_RE.match("FR/05/2026 World Investor Week").group(1), "FR/05/2026")
 
+    MEDIA = ('<li>\n <strong>IOSCO publishes Report on Supervisory Technology &#x28;SupTech&#x29;</strong>\n'
+             ' <br />\n 18 Jun 2026 \n - <a href="/news/pdf/IOSCONEWS800.pdf" target="_blank">'
+             'View Release</a>\n </li>')
+
+    def test_media_release_regex(self):
+        from regradar.adapters.iosco import MEDIA_RE
+        m = MEDIA_RE.search(self.MEDIA)
+        self.assertIsNotNone(m)
+        self.assertEqual(m.group(6), "IOSCONEWS800")
+        self.assertEqual((m.group(2), m.group(3), m.group(4)), ("18", "Jun", "2026"))
+
 
 class Big4MatchWindow(unittest.TestCase):
     def test_window(self):
@@ -357,6 +368,22 @@ class PraxisSummary(unittest.TestCase):
                                            "festgesetzt."))
         self.assertFalse(_suspicious_start("„Zitat“ am Anfang."))
 
+    def test_metadata_only_text_dropped(self):
+        from regradar.webexport import _praxis_summary
+        self.assertEqual(_praxis_summary("Speech — CCP, Speeches"), "")
+
+    def test_repair_must_be_verbatim(self):
+        from unittest import mock
+        from regradar import qacheck
+        raw = "Navigation Die Bafin hat ein Bußgeld von 16.000 Euro festgesetzt. Mehr"
+        with mock.patch.object(qacheck, "_chat", return_value=(
+                "Die Bundesnetzagentur hat heute Ergebnisse veröffentlicht.")):
+            self.assertIsNone(qacheck._repair("m", "k", raw))
+        with mock.patch.object(qacheck, "_chat", return_value=(
+                "Die Bafin hat ein Bußgeld von 16.000 Euro festgesetzt.")):
+            self.assertEqual(qacheck._repair("m", "k", raw),
+                             "Die Bafin hat ein Bußgeld von 16.000 Euro festgesetzt.")
+
 
 class CliRunDisabledSource(unittest.TestCase):
     """Eine deaktivierte Quelle (enabled=0) liefert aus run_source nur
@@ -369,7 +396,7 @@ class CliRunDisabledSource(unittest.TestCase):
         from unittest import mock
         from regradar import cli
 
-        def fake_run_source(conn, sid, since=None, fetch_content=True):
+        def fake_run_source(conn, sid, since=None, fetch_content=True, force=False):
             if sid == "bis":
                 return {"source_id": sid, "status": "DISABLED"}
             return {"source_id": sid, "discovered": 3, "fetched": 1, "new": 1,
@@ -389,6 +416,37 @@ class CliRunDisabledSource(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PollIntervalDue(unittest.TestCase):
+    """Poll-Intervall: fehlgeschlagene Quellen im nächsten Stundenlauf erneut."""
+
+    @staticmethod
+    def _ago(minutes):
+        import datetime
+        t = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(minutes=minutes)
+        return t.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    def test_successful_source_waits_for_interval(self):
+        from regradar.pipeline import _is_due
+        ts = self._ago(120)
+        self.assertFalse(_is_due({"poll_interval_minutes": 720,
+                                  "last_checked_at": ts, "last_success_at": ts}))
+
+    def test_failed_source_retries_next_hourly_run(self):
+        from regradar.pipeline import _is_due
+        self.assertTrue(_is_due({"poll_interval_minutes": 1440,
+                                 "last_checked_at": self._ago(57),
+                                 "last_success_at": self._ago(3000)}))
+        self.assertFalse(_is_due({"poll_interval_minutes": 1440,
+                                  "last_checked_at": self._ago(5),
+                                  "last_success_at": None}))
+
+    def test_tolerance_covers_start_offset_of_hourly_run(self):
+        from regradar.pipeline import _is_due
+        ts = self._ago(357)
+        self.assertTrue(_is_due({"poll_interval_minutes": 360,
+                                 "last_checked_at": ts, "last_success_at": ts}))
 
 
 class QaSweepSept2026(unittest.TestCase):

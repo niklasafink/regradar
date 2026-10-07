@@ -4,6 +4,7 @@
 Idempotent: erneutes Ausführen erzeugt keine Dubletten (UNIQUE auf
 source_id+external_id, Versionen nur bei geändertem normalized_sha256).
 """
+import datetime
 import hashlib
 import json
 import os
@@ -17,6 +18,32 @@ from .models import CanonicalDocument, DiscoveredDocument
 
 RAW_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "raw")
 MAX_FETCH_PER_RUN = 25   # Höflichkeitslimit pro Quelle und Lauf
+RETRY_AFTER_ERROR_MINUTES = 60   # fehlgeschlagene Quelle im nächsten Stundenlauf erneut
+# Der Stundenlauf startet zur Minute 5, eine Quelle wird aber erst einige
+# Minuten später geprüft – ohne Toleranz rutscht jedes Intervall um 1 h.
+DUE_TOLERANCE_MINUTES = 10
+
+
+def _is_due(source: dict) -> bool:
+    """True, wenn die Quelle ihr poll_interval seit dem letzten Check überschritten hat.
+
+    Nach einem fehlgeschlagenen Check (last_success_at != last_checked_at) gilt
+    stattdessen RETRY_AFTER_ERROR_MINUTES: sonst wartet eine Quelle nach einem
+    kurzen Netzaussetzer 6–24 h auf den nächsten Versuch.
+    """
+    last = source.get("last_checked_at")
+    if not last:
+        return True
+    interval = source.get("poll_interval_minutes") or 360
+    if source.get("last_success_at") != last:
+        interval = min(interval, RETRY_AFTER_ERROR_MINUTES)
+    try:
+        checked = datetime.datetime.strptime(last, "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=datetime.timezone.utc)
+        elapsed = (datetime.datetime.now(datetime.timezone.utc) - checked).total_seconds() / 60
+        return elapsed + DUE_TOLERANCE_MINUTES >= interval
+    except (ValueError, TypeError):
+        return True
 
 
 def _store_raw(source_id: str, external_id: str, content: bytes) -> str:
@@ -42,13 +69,15 @@ def _normalized_hash(doc: CanonicalDocument) -> str:
 
 
 def run_source(conn: sqlite3.Connection, source_id: str, since: Optional[str] = None,
-               fetch_content: bool = True, verbose: bool = True) -> dict:
+               fetch_content: bool = True, verbose: bool = True, force: bool = False) -> dict:
     row = conn.execute("SELECT * FROM sources WHERE source_id=?", (source_id,)).fetchone()
     if row is None:
         raise ValueError("Unbekannte Quelle: " + source_id)
     source = dict(row)
     if not source["enabled"]:
         return {"source_id": source_id, "status": "DISABLED"}
+    if not force and not _is_due(source):
+        return {"source_id": source_id, "status": "SKIPPED"}
 
     adapter_cls = ADAPTERS[source["adapter"]]
     adapter = adapter_cls(source)

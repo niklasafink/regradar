@@ -134,7 +134,7 @@ def assess(conn: sqlite3.Connection,
                 got = _chat(model, key, prompt, batch)
                 break
             except (urllib.error.URLError, json.JSONDecodeError, KeyError,
-                    TimeoutError) as e:
+                    OSError) as e:
                 print("LLM-Impact: Versuch {} fehlgeschlagen ({}: {})".format(
                     attempt, type(e).__name__, e))
         for i, v in got.items():
