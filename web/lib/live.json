@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T14:09:41Z",
+  "generated_at": "2026-10-07T17:08:38Z",
   "updates": {
     "amla": [
       {
@@ -296,6 +296,65 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12649",
         "imp": "medium",
         "refnum": "Ares(2020)5407019"
+      }
+    ],
+    "ebaresolvability": [
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB veröffentlicht Konsultationsliste und vereinfacht Anfragen an Banken ab 2027",
+          "en": "SRB publishes list of consultations and simplifies requests to industry from 2027"
+        },
+        "sl": "srb-publishes-the-list-of-consultations-and-simplifies-its-requests-to-the-indus",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) hat seine Liste der Konsultationen und Anfragen an die Industrie für 2027 veröffentlicht. Diese Liste umfasst erwartete Konsultationen, Datenanfragen und Lieferobjekte, die sich aus EU-Rechtsakten, den SRB Expectations for Banks (EfB) und der Verlagerung des SRB hin zu bankengesteuerten Tests und Abwicklungsbewertungen ergeben.\n\nAb 2027 führt das SRB eine Vereinfachung ein, indem es von jährlichen Anfragen zu einem dreijährigen Einreichungszyklus für bankspezifische Lieferobjekte übergeht. Dies gilt, wenn keine wesentlichen Abwicklungsbedenken bestehen, und soll den Verwaltungsaufwand reduzieren. Zudem wurde das vierteljährliche Bestätigungsformular zur MREL-Fähigkeit gemeldeter Verbindlichkeiten mit sofortiger Wirkung eingestellt.\n\nDie Umstellung auf einen dreijährigen Zyklus soll den Banken, die eine konstant zufriedenstellende Abwicklungsleistung zeigen, eine Reduzierung der jährlichen Anfragen um bis zu einem Drittel ermöglichen. Banken wurden bereits individuell über die für sie geltenden Anforderungen informiert.",
+          "en": "The Single Resolution Board (SRB) has published its list of consultations and requests to the industry for 2027. This list includes expected consultations, data requests, and deliverables stemming from EU legal acts, the SRB Expectations for Banks (EfB), and the SRB's shift towards bank-led testing and resolvability assessment.\n\nFrom 2027, the SRB will introduce a simplification by transitioning from annual requests to a three-year submission cycle for bank-specific deliverables. This change applies where no material resolvability concerns exist and aims to reduce administrative burden. Additionally, the quarterly Sign-off form on MREL eligibility of reported liabilities has been discontinued with immediate effect.\n\nThe shift to a three-year cycle is expected to reduce annual requests for banks with consistently satisfactory resolvability performance by up to one-third. Banks have already been individually informed about the requirements applicable to them."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-publishes-list-consultations-and-simplifies-its-requests-industry-2027",
+        "imp": "medium"
+      },
+      {
+        "d": "17.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB präzisiert Leitlinien zur Kommunikation von Banken in der Abwicklung",
+          "en": "SRB clarifies guidance on Banks’ Communication in Resolution"
+        },
+        "sl": "srb-clarifies-guidance-on-banks-communication",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) hat eine operative Leitlinie zur Kommunikation von Banken in der Abwicklung sowie ein ergänzendes Dokument zur Prüfung der Kommunikationsfähigkeit veröffentlicht. Diese Dokumente präzisieren die Kommunikationsdimension der „Expectations for Banks (EfB)“ des SRB und die Prüfung der Kommunikationsfähigkeiten im Rahmen der Abwicklungsplanung von Banken.\n\nDie Leitlinie legt keine neuen Anforderungen fest, sondern bietet zusätzliche operative Klarheit und ist auf die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zur Abwicklungsfähigkeit abgestimmt. Sie soll Banken dabei unterstützen, die Erwartungen des SRB zu erfüllen und eine effektive Krisenkommunikation sicherzustellen, insbesondere wenn eine Bank in Schwierigkeiten gerät oder wahrscheinlich in Schwierigkeiten geraten wird. Dies ist ein wesentliches Element der operativen Bereitschaft von Banken zur Umsetzung von Abwicklungsstrategien.\n\nBanken haben bis April 2028 Zeit, diese operativen Überlegungen zu berücksichtigen und gegebenenfalls in ihren Kommunikationsplänen widerzuspiegeln. Die Dokumente wurden nach einer öffentlichen Konsultation vom 17. Oktober bis 12. Dezember 2025 veröffentlicht.",
+          "en": "The Single Resolution Board (SRB) has published operational guidance for banks on communication in resolution, along with a supplementary document for testing communication capabilities. These documents clarify the communication dimension of the SRB's Expectations for Banks (EfB) and the testing of communication capabilities as part of banks' resolution preparedness.\n\nThe guidance does not set new requirements but provides additional operational clarity and aligns with the European Banking Authority's (EBA) guidelines on resolvability. It aims to help banks meet SRB expectations and ensure effective crisis communication, especially when a bank is failing or likely to fail. This is an essential element of banks' operational readiness to implement resolution strategies.\n\nBanks have until April 2028 to take these operational considerations into account and reflect them, where needed, in their communication plans. The documents were published following a public consultation held from October 17 to December 12, 2025."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication",
+        "imp": "high"
+      },
+      {
+        "d": "30.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB veröffentlicht operative Leitlinie für Business Reorganisation Plan Analysis Reports (BRP AR)",
+          "en": "SRB publishes Operational Guidance on Business Reorganisation Plan Analysis Reports (BRP AR)"
+        },
+        "sl": "srb-publishes-a-renewed-operational-guidance-on-business-reorganisation-plan-ana",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen (Business Reorganisation Plan Analysis Reports – BRP AR) sowie eine ergänzende quantitative Vorlage veröffentlicht. Diese Dokumente bieten Banken einen konsolidierten, transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit, ohne neue Anforderungen einzuführen.\n\nDie Leitlinie ist eine Reaktion auf eine Branchenanfrage nach einer öffentlich zugänglichen, standardisierten Referenz zur Harmonisierung der Erwartungen und zur Verbesserung der Konsistenz bei der Umstrukturierungsplanung. Sie fasst bereits bestehende Erwartungen in einem kohärenten Rahmen zusammen und präzisiert diese. Die nicht-obligatorische quantitative Vorlage bietet praktische Unterstützung für Banken.\n\nDie Veröffentlichung erfolgte am 30.07.2026 und folgt einer öffentlichen Konsultation vom 03.02. bis 30.03.2026. Das SRB behält sich das Recht vor, je nach spezifischer Situation und im Einklang mit dem anwendbaren Rechtsrahmen von den beschriebenen Maßnahmen und Erwartungen abzuweichen.",
+          "en": "The Single Resolution Board (SRB) has published renewed operational guidance for banks on Business Reorganisation Plan Analysis Reports (BRP AR) along with a complementary quantitative template. These documents provide banks with a consolidated, transparent framework to strengthen their crisis preparedness and resolvability, without introducing new requirements.\n\nThe guidance responds to an industry request for a publicly available, standardized reference to harmonize expectations and enhance consistency in reorganization planning. It compiles and clarifies existing expectations within a single, coherent framework. The non-mandatory quantitative template offers practical support for banks.\n\nThe publication was released on 30.07.2026, following a public consultation from 03.02. to 30.03.2026. The SRB reserves the right to deviate from the actions and expectations described, depending on the specific situation and in line with the applicable legal framework."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
+        "imp": "medium"
       }
     ],
     "crr3": [
@@ -1853,46 +1912,6 @@
           "en": "The Digital Operational Resilience of Financial Services (DORFS) Act is a legislative proposal by the European Commission. It aims to strengthen digital operational resilience within the financial sector. This involves introducing harmonized requirements for information and communication technology (ICT) security and risk management for financial entities.\n\nThe proposal affects financial institutions across the EU and is intended to ensure they can withstand cyberattacks and other ICT-related disruptions. For companies, this means adapting their internal processes and systems to meet the new standards and ensure the continuity of their services.\n\nThe current procedural status is the adoption workflow, indicating that the proposal is actively being processed and its enactment is imminent."
         },
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12090",
-        "imp": "medium"
-      }
-    ],
-    "ebaresolvability": [
-      {
-        "d": "17.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB präzisiert Leitlinien zur Kommunikation von Banken in der Abwicklung",
-          "en": "SRB clarifies guidance on Banks’ Communication in Resolution"
-        },
-        "sl": "srb-clarifies-guidance-on-banks-communication",
-        "s": {
-          "de": "Das Single Resolution Board (SRB) hat eine operative Leitlinie zur Kommunikation von Banken in der Abwicklung sowie ein ergänzendes Dokument zur Prüfung der Kommunikationsfähigkeit veröffentlicht. Diese Dokumente präzisieren die Kommunikationsdimension der „Expectations for Banks (EfB)“ des SRB und die Prüfung der Kommunikationsfähigkeiten im Rahmen der Abwicklungsplanung von Banken.\n\nDie Leitlinie legt keine neuen Anforderungen fest, sondern bietet zusätzliche operative Klarheit und ist auf die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zur Abwicklungsfähigkeit abgestimmt. Sie soll Banken dabei unterstützen, die Erwartungen des SRB zu erfüllen und eine effektive Krisenkommunikation sicherzustellen, insbesondere wenn eine Bank in Schwierigkeiten gerät oder wahrscheinlich in Schwierigkeiten geraten wird. Dies ist ein wesentliches Element der operativen Bereitschaft von Banken zur Umsetzung von Abwicklungsstrategien.\n\nBanken haben bis April 2028 Zeit, diese operativen Überlegungen zu berücksichtigen und gegebenenfalls in ihren Kommunikationsplänen widerzuspiegeln. Die Dokumente wurden nach einer öffentlichen Konsultation vom 17. Oktober bis 12. Dezember 2025 veröffentlicht.",
-          "en": "The Single Resolution Board (SRB) has published operational guidance for banks on communication in resolution, along with a supplementary document for testing communication capabilities. These documents clarify the communication dimension of the SRB's Expectations for Banks (EfB) and the testing of communication capabilities as part of banks' resolution preparedness.\n\nThe guidance does not set new requirements but provides additional operational clarity and aligns with the European Banking Authority's (EBA) guidelines on resolvability. It aims to help banks meet SRB expectations and ensure effective crisis communication, especially when a bank is failing or likely to fail. This is an essential element of banks' operational readiness to implement resolution strategies.\n\nBanks have until April 2028 to take these operational considerations into account and reflect them, where needed, in their communication plans. The documents were published following a public consultation held from October 17 to December 12, 2025."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication",
-        "imp": "high"
-      },
-      {
-        "d": "30.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB veröffentlicht operative Leitlinie für Business Reorganisation Plan Analysis Reports (BRP AR)",
-          "en": "SRB publishes Operational Guidance on Business Reorganisation Plan Analysis Reports (BRP AR)"
-        },
-        "sl": "srb-publishes-a-renewed-operational-guidance-on-business-reorganisation-plan-ana",
-        "s": {
-          "de": "Das Single Resolution Board (SRB) hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen (Business Reorganisation Plan Analysis Reports – BRP AR) sowie eine ergänzende quantitative Vorlage veröffentlicht. Diese Dokumente bieten Banken einen konsolidierten, transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit, ohne neue Anforderungen einzuführen.\n\nDie Leitlinie ist eine Reaktion auf eine Branchenanfrage nach einer öffentlich zugänglichen, standardisierten Referenz zur Harmonisierung der Erwartungen und zur Verbesserung der Konsistenz bei der Umstrukturierungsplanung. Sie fasst bereits bestehende Erwartungen in einem kohärenten Rahmen zusammen und präzisiert diese. Die nicht-obligatorische quantitative Vorlage bietet praktische Unterstützung für Banken.\n\nDie Veröffentlichung erfolgte am 30.07.2026 und folgt einer öffentlichen Konsultation vom 03.02. bis 30.03.2026. Das SRB behält sich das Recht vor, je nach spezifischer Situation und im Einklang mit dem anwendbaren Rechtsrahmen von den beschriebenen Maßnahmen und Erwartungen abzuweichen.",
-          "en": "The Single Resolution Board (SRB) has published renewed operational guidance for banks on Business Reorganisation Plan Analysis Reports (BRP AR) along with a complementary quantitative template. These documents provide banks with a consolidated, transparent framework to strengthen their crisis preparedness and resolvability, without introducing new requirements.\n\nThe guidance responds to an industry request for a publicly available, standardized reference to harmonize expectations and enhance consistency in reorganization planning. It compiles and clarifies existing expectations within a single, coherent framework. The non-mandatory quantitative template offers practical support for banks.\n\nThe publication was released on 30.07.2026, following a public consultation from 03.02. to 30.03.2026. The SRB reserves the right to deviate from the actions and expectations described, depending on the specific situation and in line with the applicable legal framework."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
         "imp": "medium"
       }
     ],
