@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T07:05:36Z",
+  "generated_at": "2026-10-07T10:07:16Z",
   "updates": {
     "irrd": [
       {
@@ -117,6 +117,66 @@
         },
         "url": "https://www.eiopa.europa.eu/eiopa-launches-consultation-irrd-draft-technical-standards-covering-valuation-reinsurers-context-2026-07-08_en",
         "imp": "medium"
+      }
+    ],
+    "csdr": [
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA klärt Zugang zu Drittland-CSDs für EU-Marktteilnehmer (07.10.2026)",
+          "en": "ESMA clarifies access for EU market participants to third-country CSDs (07.10.2026)"
+        },
+        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
+        "s": {
+          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollen. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung des aktuellen Übergangsregimes finalisiert hat. Das bestehende Übergangsregime, das bestimmten Drittland-CSDs die Erbringung von Notar- und Zentralverwaltungsdienstleistungen für Finanzinstrumente nach EU-Recht erlaubt, läuft am 17. Januar 2027 aus.\n\nDie Klarstellung der ESMA soll Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten zerstreuen. Diese Unsicherheit könnte andernfalls operative Herausforderungen schaffen. Die ESMA unterstützt damit das ordnungsgemäße Funktionieren der EU-Kapitalmärkte.\n\nDas derzeit verhandelte Market Integration and Supervision Package (MISP) schlägt eine Verlängerung dieses Übergangsregimes vor. Sowohl der Rat der Europäischen Union als auch das Europäische Parlament unterstützen diese Verlängerung.",
+          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This access is granted until the EU finalises legislation to extend the current transitional regime. The existing transitional regime, which permits certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under EU Member State law, is set to expire on 17 January 2027.\n\nESMA's clarification aims to address concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. Such uncertainty could otherwise create operational challenges. ESMA's statement supports the orderly functioning of EU capital markets.\n\nThe Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime. Both the Council of the European Union and the European Parliament support this extension."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
+      },
+      {
+        "d": "17.03.2022",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD)",
+          "en": "Central securities depositories – review of EU rules"
+        },
+        "sl": "central-securities-depositories-review-of-eu-rules",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD) eingeleitet. Ziel ist es, die Effizienz und Sicherheit der Wertpapierabwicklung in der EU zu verbessern und gleichzeitig die Wettbewerbsfähigkeit des europäischen Finanzmarktes zu stärken.\n\nDiese Überprüfung betrifft alle Zentralverwahrer, die in der EU tätig sind, sowie Finanzinstitute, die deren Dienstleistungen nutzen. Praktisch bedeutet dies eine mögliche Anpassung der regulatorischen Anforderungen an die CSDs und damit indirekt auch an deren Nutzer.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine baldige Veröffentlichung konkreter Vorschläge hindeutet.",
+          "en": "The European Commission has initiated a review of the EU rules for Central Securities Depositories (CSDs). The aim is to improve the efficiency and security of securities settlement in the EU while strengthening the competitiveness of the European financial market.\n\nThis review affects all CSDs operating in the EU, as well as financial institutions that use their services. Practically, this means a potential adjustment of the regulatory requirements for CSDs and, consequently, indirectly for their users.\n\nThe current procedural status is the adoption workflow, which indicates an imminent publication of concrete proposals."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12649",
+        "imp": "medium",
+        "refnum": "Ares(2020)5407019"
       }
     ],
     "crr3": [
@@ -3321,47 +3381,6 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
         "imp": "low",
         "refnum": "ESMA65-294529287-4824"
-      }
-    ],
-    "csdr": [
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
-          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
-        },
-        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
-          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
-        "imp": "high"
-      },
-      {
-        "d": "17.03.2022",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD)",
-          "en": "Central securities depositories – review of EU rules"
-        },
-        "sl": "central-securities-depositories-review-of-eu-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD) eingeleitet. Ziel ist es, die Effizienz und Sicherheit der Wertpapierabwicklung in der EU zu verbessern und gleichzeitig die Wettbewerbsfähigkeit des europäischen Finanzmarktes zu stärken.\n\nDiese Überprüfung betrifft alle Zentralverwahrer, die in der EU tätig sind, sowie Finanzinstitute, die deren Dienstleistungen nutzen. Praktisch bedeutet dies eine mögliche Anpassung der regulatorischen Anforderungen an die CSDs und damit indirekt auch an deren Nutzer.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine baldige Veröffentlichung konkreter Vorschläge hindeutet.",
-          "en": "The European Commission has initiated a review of the EU rules for Central Securities Depositories (CSDs). The aim is to improve the efficiency and security of securities settlement in the EU while strengthening the competitiveness of the European financial market.\n\nThis review affects all CSDs operating in the EU, as well as financial institutions that use their services. Practically, this means a potential adjustment of the regulatory requirements for CSDs and, consequently, indirectly for their users.\n\nThe current procedural status is the adoption workflow, which indicates an imminent publication of concrete proposals."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12649",
-        "imp": "medium",
-        "refnum": "Ares(2020)5407019"
       }
     ],
     "taxonomy": [
