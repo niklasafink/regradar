@@ -1,6 +1,125 @@
 {
-  "generated_at": "2026-10-07T10:07:16Z",
+  "generated_at": "2026-10-07T14:09:41Z",
   "updates": {
+    "amla": [
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Konsultation zu RTS für zentrale AML/CFT-Datenbank der AMLA",
+          "en": "Consultation on draft RTS for establishing a central AML/CFT database"
+        },
+        "sl": "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am",
+        "s": {
+          "de": "Die AMLA konsultiert Entwürfe technischer Regulierungsstandards (RTS) zur Einrichtung einer zentralen Datenbank zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung (AML/CFT). Diese Datenbank soll den Austausch von Aufsichtsinformationen innerhalb der EU unterstützen und die AML/CFT-Aufsicht zielgerichteter, risikobasierter und effektiver gestalten.\n\nDie Datenbank wird als zentrale Anlaufstelle für standardisierte Meldungen und als Speicher für Aufsichtsinformationen auf Entitäts- und Systemebene dienen. Aufsichtsbehörden erhalten vertraulichen Zugang zu umfassenden Daten, um ihre Aufgaben zu erfüllen, wodurch die Meldeprozesse vorhersehbarer und effizienter werden sollen. Direkte Pflichten für Privatunternehmen entstehen durch diese Regeln nicht.\n\nInteressierte Stakeholder, darunter Financial Intelligence Units, Behörden und beaufsichtigte Unternehmen, sind eingeladen, sich an der Konsultation zu beteiligen. Eine öffentliche Anhörung zu den Entwürfen der RTS findet am 3. November 2026 statt, die Konsultationsfrist endet ebenfalls am 3. November 2026 um 16:00 Uhr (MEZ).",
+          "en": "AMLA is consulting on draft Regulatory Technical Standards (RTS) for establishing a central Anti-Money Laundering and Countering the Financing of Terrorism (AML/CFT) database. This database aims to support the exchange of supervisory information across the EU and make AML/CFT supervision more targeted, risk-based, and effective.\n\nThe database will serve as a single entry point for standardized reporting and as a repository for supervisory information at both entity and system levels. Supervisory authorities will gain confidential access to comprehensive data needed for their functions, which is intended to make reporting more predictable and streamlined. These rules do not impose direct obligations on private companies.\n\nInterested stakeholders, including Financial Intelligence Units, public authorities, and obliged entities, are invited to participate in the consultation. A public hearing on the draft RTS is scheduled for November 3, 2026, and the consultation deadline is also November 3, 2026, at 16:00 (CET)."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-public-hearing-draft-rts-establishing-central-amlcft-database_en",
+        "imp": "medium",
+        "deadline": "03.11.2026"
+      },
+      {
+        "d": "01.10.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin ändert Praxis bei Übernahme von ESA- und AMLA-Leitlinien",
+          "en": "BaFin Changes Practice for Adopting ESA and AMLA Guidelines"
+        },
+        "sl": "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben",
+        "s": {
+          "de": "Die BaFin hat ihre Praxis zur Übernahme von Leitlinien der Europäischen Aufsichtsbehörden (ESAs) und der EU-Behörde zur Bekämpfung der Geldwäsche und Terrorismusfinanzierung (AMLA) geändert. Ab dem 1. Oktober 2026 informiert sie über eine tabellarische Übersicht auf ihrer Website, welche Leitlinien in ihre Verwaltungspraxis übernommen wurden und welche nicht.\n\nDiese Änderung bedeutet, dass die BaFin keine separaten Rundschreiben mehr zu diesem Thema konsultiert oder veröffentlicht. Ziel ist es, die Anzahl der Veröffentlichungen zu reduzieren und Bürokratie abzubauen. Finanzinstitute sollten daher die BaFin-Website für aktuelle Informationen zu den übernommenen Leitlinien konsultieren.\n\nDie neue Vorgehensweise ist seit dem 1. Oktober 2026 in Kraft.",
+          "en": "The BaFin has changed its practice regarding the adoption of guidelines from the European Supervisory Authorities (ESAs) and the EU Anti-Money Laundering Authority (AMLA). As of October 1, 2026, it will provide information on its website via a tabular overview, indicating which guidelines have been incorporated into its administrative practice and which have not.\n\nThis change means that BaFin will no longer consult on or publish separate circulars on this topic. The aim is to reduce the number of publications and cut down on bureaucracy. Financial institutions should therefore consult the BaFin website for current information on adopted guidelines.\n\nThis new procedure has been in effect since October 1, 2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_01_leitlinien_esas_amla_bafin_reduziert_rundschreiben.html",
+        "imp": "medium"
+      },
+      {
+        "d": "04.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht Entwurf des Berichtsrahmens für die Erhebung der Eignungsdaten 2027",
+          "en": "EBA publishes draft reporting framework for the 2027 eligibility data collection"
+        },
+        "sl": "eba-publishes-draft-reporting-framework-for-the-2027-eligibility-data-collection",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat einen Entwurf des Datenmodells und der Taxonomie für die Erhebung von Daten zur Berechtigung für die direkte Aufsicht durch die AMLA veröffentlicht. Dies ist Teil der Version 4.4 ihres Meldewesens. Die Daten werden Anfang 2027 erhoben.\n\nDie Datenerhebung richtet sich an alle verpflichteten Unternehmen, die 2026 als vorläufig berechtigt identifiziert wurden. Ziel ist es, zu bestätigen, ob diese Unternehmen die Kriterien am Stichtag 31. Dezember 2026 weiterhin erfüllen. Der Entwurf ist auf der EBA-Website verfügbar und sollte zusammen mit den von der AMLA für die Datenerhebung 2026 veröffentlichten Vorlagen und Anweisungen gelesen werden.\n\nInteressengruppen, einschließlich des Privatsektors und der nationalen zuständigen Behörden, können bis zum 24. August 2026 über das EBA-Feedback-Formular Stellungnahmen einreichen.",
+          "en": "The European Banking Authority (EBA) has published a public working draft of the data model and taxonomy for the collection of data on eligibility for direct supervision by AMLA. This is part of release 4.4 of its reporting framework. The data will be gathered in early 2027.\n\nThe data collection targets all obliged entities identified as provisionally eligible in 2026. Its purpose is to confirm whether these entities still meet the criteria on the reference date of 31 December 2026. The draft is available on the EBA website and should be read alongside the templates and instructions AMLA published for the 2026 data collection on eligibility criteria.\n\nStakeholders, including the private sector and national competent authorities, are invited to submit feedback through the EBA feedback form by 24 August 2026."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/eba-publishes-draft-reporting-framework-2027-eligibility-data-collection_en",
+        "imp": "medium",
+        "deadline": "24.08.2026"
+      },
+      {
+        "d": "22.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "FAQ zum Meldepaket für die Identifizierung vorläufig geeigneter Verpflichteter (AMLA)",
+          "en": "FAQ on the Reporting Package for Identifying Provisionally Eligible Entities (AMLA)"
+        },
+        "sl": "frequently-asked-questions-on-the-reporting-package-for-identifying-provisionall",
+        "s": {
+          "de": "Die AMLA hat ein FAQ-Dokument zum Meldepaket für die Identifizierung vorläufig geeigneter Verpflichteter veröffentlicht. Es beantwortet Fragen nationaler Finanzaufsichtsbehörden zu Auslegung, operativen Klärungen und praktischen Implementierungsfragen der Datenerhebung.\n\nDas Dokument soll meldepflichtige Unternehmen bei den auf nationaler Ebene organisierten Datenerhebungen unterstützen und eine genaue sowie effiziente Berichterstattung ermöglichen. Es dient als Arbeitsressource für die Erstellung von Einreichungen.\n\nWeitere Fragen können über die zuständigen nationalen Finanzaufsichtsbehörden eingereicht und für zukünftige Aktualisierungen berücksichtigt werden.",
+          "en": "AMLA has published an FAQ document on the reporting package for identifying provisionally eligible entities. It addresses queries from national financial supervisors regarding interpretation, operational clarifications, and practical implementation issues of the data collection.\n\nThe document aims to support reporting obliged entities in the data collections organised at national level, enabling accurate and efficient reporting. It serves as a working resource for preparing submissions.\n\nFurther questions can be submitted through the relevant national financial supervisors and will be considered for future updates."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/frequently-asked-questions-reporting-package-identifying-provisionally-eligible-entities_en",
+        "imp": "high"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Aktualisierte Taxonomie für die Datenerhebung zur Risikobewertung 2027 der AMLA",
+          "en": "Updated taxonomy for the 2027 risk assessment data collection"
+        },
+        "sl": "updated-taxonomy-for-the-2027-risk-assessment-data-collection",
+        "s": {
+          "de": "Die EBA hat im Rahmen ihres Reporting Framework Release 4.3 eine aktualisierte Version des Datenmodells und der Taxonomie veröffentlicht. Diese dienen der Datenerhebung für die Risikobewertung der AMLA bei direkt zu beaufsichtigenden Unternehmen.\n\nDie Komponenten der Version 4.3 sind ausschließlich zur Vorbereitung der Meldepflichtigen auf die Datenerhebung der AMLA für die Risikobewertung 2027 gedacht. Sie dürfen nicht für Einreichungen bei nationalen Behörden, der EBA oder der AMLA verwendet werden.\n\nEine weitere Version, 4.4, mit überarbeiteten Vorlagen wird voraussichtlich im September 2026 folgen. Diese wird die Erfassung fehlender Informationen verbessern und zwei neue Datenpunkte hinzufügen.",
+          "en": "The EBA has published an updated version of the data model and taxonomy as part of its Reporting Framework Release 4.3. These are intended to support the collection of data for AMLA's risk assessment of entities eligible for direct supervision.\n\nThe components in v4.3 are solely for reporting agents to prepare for the AMLA risk assessment 2027 data collection exercise. They must not be used for submissions to national competent authorities, the EBA, or AMLA.\n\nA further release, v4.4, with revised templates is expected in September 2026. This will improve the capture of unavailable information and add two new data points."
+        },
+        "url": "https://www.amla.europa.eu/news-media/news-articles/updated-taxonomy-2027-risk-assessment-data-collection_en",
+        "imp": "high"
+      },
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Konsultation zum Entwurf der RTS zur Bewertung des inhärenten und residualen Risikoprofils von Verpflichteten im nichtfinanziellen Sektor",
+          "en": "Consultation on the draft RTS on the assessment of the inherent and residual risk profile of obliged entities in the non-financial sector"
+        },
+        "sl": "consultation-on-the-draft-rts-on-the-assessment-of-the-inherent-and-residual-ris",
+        "s": {
+          "de": "Die AMLA hat eine Konsultation zu einem Entwurf technischer Regulierungsstandards (RTS) eröffnet. Diese RTS sollen eine Methodik für die Bewertung und Klassifizierung des inhärenten und residualen Geldwäsche- und Terrorismusfinanzierungsrisikoprofils von Verpflichteten im Nichtfinanzsektor festlegen.\n\nDie Konsultation richtet sich an alle Interessengruppen des EU-AML/CFT-Rahmens, insbesondere an Verpflichtete, Aufsichtsbehörden und Finanzermittlungsbehörden. Ziel ist es, ein konsistentes, verhältnismäßiges und effektives Rahmenwerk für die risikobasierte Aufsicht im Nichtfinanzsektor zu gewährleisten. Dabei werden die Relevanz der Datenpunkte, die Behandlung kleinerer Unternehmen sowie die Umsetzbarkeit und Kosten des Meldewesens berücksichtigt.\n\nDie Konsultationsfrist endet am 27. September 2026. Eine öffentliche Anhörung zu den Entwürfen ist für den 10. September 2026 geplant.",
+          "en": "AMLA has launched a consultation on draft Regulatory Technical Standards (RTS). These RTS aim to establish a methodology for assessing and classifying the inherent and residual money laundering and terrorist financing risk profile of obliged entities in the non-financial sector.\n\nThe consultation targets all stakeholders interested in the EU's AML/CFT framework, particularly obliged entities, supervisory authorities, and Financial Intelligence Units. The objective is to ensure a consistent, proportionate, and effective framework for risk-based supervision in the non-financial sector. This includes considering the relevance of data points, the treatment of small entities, and the operational feasibility and costs of the reporting framework.\n\nThe consultation period closes on 27 September 2026. A public hearing on the draft RTS is scheduled for 10 September 2026."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-assessment-inherent-and-residual-risk-profile-obliged-entities-non-financial_en",
+        "imp": "medium",
+        "deadline": "27.09.2026"
+      }
+    ],
     "irrd": [
       {
         "d": "08.07.2026",
@@ -501,125 +620,6 @@
             "d": "06.05.2026"
           }
         ]
-      }
-    ],
-    "amla": [
-      {
-        "d": "01.10.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin ändert Praxis bei Übernahme von ESA- und AMLA-Leitlinien",
-          "en": "BaFin Changes Practice for Adopting ESA and AMLA Guidelines"
-        },
-        "sl": "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben",
-        "s": {
-          "de": "Die BaFin hat ihre Praxis zur Übernahme von Leitlinien der Europäischen Aufsichtsbehörden (ESAs) und der EU-Behörde zur Bekämpfung der Geldwäsche und Terrorismusfinanzierung (AMLA) geändert. Ab dem 1. Oktober 2026 informiert sie über eine tabellarische Übersicht auf ihrer Website, welche Leitlinien in ihre Verwaltungspraxis übernommen wurden und welche nicht.\n\nDiese Änderung bedeutet, dass die BaFin keine separaten Rundschreiben mehr zu diesem Thema konsultiert oder veröffentlicht. Ziel ist es, die Anzahl der Veröffentlichungen zu reduzieren und Bürokratie abzubauen. Finanzinstitute sollten daher die BaFin-Website für aktuelle Informationen zu den übernommenen Leitlinien konsultieren.\n\nDie neue Vorgehensweise ist seit dem 1. Oktober 2026 in Kraft.",
-          "en": "The BaFin has changed its practice regarding the adoption of guidelines from the European Supervisory Authorities (ESAs) and the EU Anti-Money Laundering Authority (AMLA). As of October 1, 2026, it will provide information on its website via a tabular overview, indicating which guidelines have been incorporated into its administrative practice and which have not.\n\nThis change means that BaFin will no longer consult on or publish separate circulars on this topic. The aim is to reduce the number of publications and cut down on bureaucracy. Financial institutions should therefore consult the BaFin website for current information on adopted guidelines.\n\nThis new procedure has been in effect since October 1, 2026."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_01_leitlinien_esas_amla_bafin_reduziert_rundschreiben.html",
-        "imp": "medium"
-      },
-      {
-        "d": "04.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht Entwurf des Berichtsrahmens für die Erhebung der Eignungsdaten 2027",
-          "en": "EBA publishes draft reporting framework for the 2027 eligibility data collection"
-        },
-        "sl": "eba-publishes-draft-reporting-framework-for-the-2027-eligibility-data-collection",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat einen Entwurf des Datenmodells und der Taxonomie für die Erhebung von Daten zur Berechtigung für die direkte Aufsicht durch die AMLA veröffentlicht. Dies ist Teil der Version 4.4 ihres Meldewesens. Die Daten werden Anfang 2027 erhoben.\n\nDie Datenerhebung richtet sich an alle verpflichteten Unternehmen, die 2026 als vorläufig berechtigt identifiziert wurden. Ziel ist es, zu bestätigen, ob diese Unternehmen die Kriterien am Stichtag 31. Dezember 2026 weiterhin erfüllen. Der Entwurf ist auf der EBA-Website verfügbar und sollte zusammen mit den von der AMLA für die Datenerhebung 2026 veröffentlichten Vorlagen und Anweisungen gelesen werden.\n\nInteressengruppen, einschließlich des Privatsektors und der nationalen zuständigen Behörden, können bis zum 24. August 2026 über das EBA-Feedback-Formular Stellungnahmen einreichen.",
-          "en": "The European Banking Authority (EBA) has published a public working draft of the data model and taxonomy for the collection of data on eligibility for direct supervision by AMLA. This is part of release 4.4 of its reporting framework. The data will be gathered in early 2027.\n\nThe data collection targets all obliged entities identified as provisionally eligible in 2026. Its purpose is to confirm whether these entities still meet the criteria on the reference date of 31 December 2026. The draft is available on the EBA website and should be read alongside the templates and instructions AMLA published for the 2026 data collection on eligibility criteria.\n\nStakeholders, including the private sector and national competent authorities, are invited to submit feedback through the EBA feedback form by 24 August 2026."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/eba-publishes-draft-reporting-framework-2027-eligibility-data-collection_en",
-        "imp": "medium",
-        "deadline": "24.08.2026"
-      },
-      {
-        "d": "22.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "FAQ zum Meldepaket für die Identifizierung vorläufig geeigneter Verpflichteter (AMLA)",
-          "en": "FAQ on the Reporting Package for Identifying Provisionally Eligible Entities (AMLA)"
-        },
-        "sl": "frequently-asked-questions-on-the-reporting-package-for-identifying-provisionall",
-        "s": {
-          "de": "Die AMLA hat ein FAQ-Dokument zum Meldepaket für die Identifizierung vorläufig geeigneter Verpflichteter veröffentlicht. Es beantwortet Fragen nationaler Finanzaufsichtsbehörden zu Auslegung, operativen Klärungen und praktischen Implementierungsfragen der Datenerhebung.\n\nDas Dokument soll meldepflichtige Unternehmen bei den auf nationaler Ebene organisierten Datenerhebungen unterstützen und eine genaue sowie effiziente Berichterstattung ermöglichen. Es dient als Arbeitsressource für die Erstellung von Einreichungen.\n\nWeitere Fragen können über die zuständigen nationalen Finanzaufsichtsbehörden eingereicht und für zukünftige Aktualisierungen berücksichtigt werden.",
-          "en": "AMLA has published an FAQ document on the reporting package for identifying provisionally eligible entities. It addresses queries from national financial supervisors regarding interpretation, operational clarifications, and practical implementation issues of the data collection.\n\nThe document aims to support reporting obliged entities in the data collections organised at national level, enabling accurate and efficient reporting. It serves as a working resource for preparing submissions.\n\nFurther questions can be submitted through the relevant national financial supervisors and will be considered for future updates."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/frequently-asked-questions-reporting-package-identifying-provisionally-eligible-entities_en",
-        "imp": "high"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "Aktualisierte Taxonomie für die Datenerhebung zur Risikobewertung 2027 der AMLA",
-          "en": "Updated taxonomy for the 2027 risk assessment data collection"
-        },
-        "sl": "updated-taxonomy-for-the-2027-risk-assessment-data-collection",
-        "s": {
-          "de": "Die EBA hat im Rahmen ihres Reporting Framework Release 4.3 eine aktualisierte Version des Datenmodells und der Taxonomie veröffentlicht. Diese dienen der Datenerhebung für die Risikobewertung der AMLA bei direkt zu beaufsichtigenden Unternehmen.\n\nDie Komponenten der Version 4.3 sind ausschließlich zur Vorbereitung der Meldepflichtigen auf die Datenerhebung der AMLA für die Risikobewertung 2027 gedacht. Sie dürfen nicht für Einreichungen bei nationalen Behörden, der EBA oder der AMLA verwendet werden.\n\nEine weitere Version, 4.4, mit überarbeiteten Vorlagen wird voraussichtlich im September 2026 folgen. Diese wird die Erfassung fehlender Informationen verbessern und zwei neue Datenpunkte hinzufügen.",
-          "en": "The EBA has published an updated version of the data model and taxonomy as part of its Reporting Framework Release 4.3. These are intended to support the collection of data for AMLA's risk assessment of entities eligible for direct supervision.\n\nThe components in v4.3 are solely for reporting agents to prepare for the AMLA risk assessment 2027 data collection exercise. They must not be used for submissions to national competent authorities, the EBA, or AMLA.\n\nA further release, v4.4, with revised templates is expected in September 2026. This will improve the capture of unavailable information and add two new data points."
-        },
-        "url": "https://www.amla.europa.eu/news-media/news-articles/updated-taxonomy-2027-risk-assessment-data-collection_en",
-        "imp": "high"
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "Konsultation zum Entwurf der RTS zur Bewertung des inhärenten und residualen Risikoprofils von Verpflichteten im nichtfinanziellen Sektor",
-          "en": "Consultation on the draft RTS on the assessment of the inherent and residual risk profile of obliged entities in the non-financial sector"
-        },
-        "sl": "consultation-on-the-draft-rts-on-the-assessment-of-the-inherent-and-residual-ris",
-        "s": {
-          "de": "Die AMLA hat eine Konsultation zu einem Entwurf technischer Regulierungsstandards (RTS) eröffnet. Diese RTS sollen eine Methodik für die Bewertung und Klassifizierung des inhärenten und residualen Geldwäsche- und Terrorismusfinanzierungsrisikoprofils von Verpflichteten im Nichtfinanzsektor festlegen.\n\nDie Konsultation richtet sich an alle Interessengruppen des EU-AML/CFT-Rahmens, insbesondere an Verpflichtete, Aufsichtsbehörden und Finanzermittlungsbehörden. Ziel ist es, ein konsistentes, verhältnismäßiges und effektives Rahmenwerk für die risikobasierte Aufsicht im Nichtfinanzsektor zu gewährleisten. Dabei werden die Relevanz der Datenpunkte, die Behandlung kleinerer Unternehmen sowie die Umsetzbarkeit und Kosten des Meldewesens berücksichtigt.\n\nDie Konsultationsfrist endet am 27. September 2026. Eine öffentliche Anhörung zu den Entwürfen ist für den 10. September 2026 geplant.",
-          "en": "AMLA has launched a consultation on draft Regulatory Technical Standards (RTS). These RTS aim to establish a methodology for assessing and classifying the inherent and residual money laundering and terrorist financing risk profile of obliged entities in the non-financial sector.\n\nThe consultation targets all stakeholders interested in the EU's AML/CFT framework, particularly obliged entities, supervisory authorities, and Financial Intelligence Units. The objective is to ensure a consistent, proportionate, and effective framework for risk-based supervision in the non-financial sector. This includes considering the relevance of data points, the treatment of small entities, and the operational feasibility and costs of the reporting framework.\n\nThe consultation period closes on 27 September 2026. A public hearing on the draft RTS is scheduled for 10 September 2026."
-        },
-        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-assessment-inherent-and-residual-risk-profile-obliged-entities-non-financial_en",
-        "imp": "medium",
-        "deadline": "27.09.2026"
-      },
-      {
-        "d": "06.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "amla.europa.eu",
-        "ti": {
-          "de": "Konsultation zu RTS zum grenzüberschreitenden Informationsaustausch zwischen FIUs (AMLA)",
-          "en": "Consultation on RTS on cross-border information exchange between FIUs (AMLA)"
-        },
-        "sl": "consultation-on-the-draft-rts-on-cross-border-information-exchange-between-finan",
-        "s": {
-          "de": "Die AMLA konsultiert einen Entwurf technischer Regulierungsstandards (RTS) zum grenzüberschreitenden Informationsaustausch zwischen Financial Intelligence Units (FIUs). Ziel ist die Festlegung klarer und harmonisierter Kriterien, um zu bestimmen, wann ein Verdachtsbericht einen anderen Mitgliedstaat betrifft und wie dieser entsprechend zwischen den FIUs übermittelt wird.\n\nDiese Regelungen sollen den grenzüberschreitenden Informationsaustausch konsistenter, effizienter und zuverlässiger gestalten. Dies stärkt die Zusammenarbeit zwischen den FIUs und fördert eine reibungslosere Integration in bestehende Systeme wie FIU.net. Die Regeln legen keine direkten Verpflichtungen für Privatunternehmen fest, jedoch sind Beiträge von Praktikern mit relevanter Erfahrung willkommen.\n\nDie Konsultationsfrist endet am 6. Oktober 2026.",
-          "en": "AMLA is consulting on a draft of Regulatory Technical Standards (RTS) concerning cross-border information exchange between Financial Intelligence Units (FIUs). The objective is to establish clear and harmonised criteria for identifying when a report of suspicions concerns another Member State and for transmitting it accordingly between FIUs.\n\nThese rules aim to make cross-border information exchange more consistent, efficient, and reliable. This will strengthen cooperation between FIUs and support smoother integration into existing systems such as FIU.net. The rules place no direct obligations on private companies, but contributions from practitioners with relevant experience are welcome.\n\nThe consultation period closes on 6 October 2026."
-        },
-        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-rts-cross-border-information-exchange-between-financial-intelligence-units_en",
-        "imp": "medium",
-        "deadline": "06.10.2026"
       }
     ],
     "gwg": [
@@ -4321,6 +4321,14 @@
   },
   "praxis": [
     {
+      "d": "07.10.2026",
+      "ti": "Patrick Montagner: Interview with Les Echos",
+      "auth": "EZB",
+      "src": "bankingsupervision.europa.eu",
+      "url": "https://www.bankingsupervision.europa.eu//press/interviews/date/2026/html/ssm.in261007~d067020f88.en.html",
+      "cat": "rede"
+    },
+    {
       "d": "06.10.2026",
       "ti": "Philip R. Lane: Interview with Ansa",
       "auth": "EZB",
@@ -4336,6 +4344,14 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/VAG/meldung_261002_gvo_gegenseitigkeit_versicherung_oldenburg_vvag.html",
       "cat": "massnahme",
       "sum": "Die Finanzaufsicht Bafin hat bei der GVO Gegenseitigkeit Versicherung Oldenburg VVaG einen Sonderbeauftragten mit den Befugnissen eines Vorstandsmitglieds eingesetzt. Damit stellt die Aufsicht sicher, dass die Geschäftsleitung des Versicherungsunternehmens mit der erforderlichen Anzahl an Mitgliedern besetzt ist."
+    },
+    {
+      "d": "01.10.2026",
+      "ti": "AMLA Executive Board Member Hennie Verbeek-Kusters delivers keynote at 10th Austrian Anti-Money Laundering Conference",
+      "auth": "AMLA",
+      "src": "amla.europa.eu",
+      "url": "https://www.amla.europa.eu/news-media/news-articles/amla-executive-board-member-hennie-verbeek-kusters-speaks-10th-austrian-anti-money-laundering_en",
+      "cat": "rede"
     },
     {
       "d": "30.09.2026",
