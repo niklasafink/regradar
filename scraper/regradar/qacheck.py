@@ -32,7 +32,7 @@ SUMMARY_LIMIT = 360
 
 # Bei Prompt-/Regeländerungen hochzählen — der nächste Export prüft dann
 # alle Texte neu.
-FORMAT = 1
+FORMAT = 2
 
 CHECK_PROMPT = (
     "Du prüfst deutsche Kurztexte für einen Regulatory-News-Dienst vor der "
@@ -142,7 +142,16 @@ def _repair(model: str, key: str, raw: str) -> Optional[str]:
     # Plausibilitätsnetz: nicht leer, nicht ausgeufert, plausibler Satzanfang.
     if not fixed or len(fixed) > SUMMARY_LIMIT + 80 or _suspicious_start(fixed):
         return None
+    # Nur Original-Wortlaut: Steht die "Reparatur" nicht wörtlich im Rohtext,
+    # hat das Modell Text erfunden (September 2026: Bundesnetzagentur-/EZB-
+    # Sätze zu ESMA-Reden, deren Rohtext nur "Speech — CCP, Speeches" war).
+    if _norm(fixed) not in _norm(raw):
+        return None
     return fixed
+
+
+def _norm(text: str) -> str:
+    return " ".join(re.sub(r"<[^>]+>", " ", text).split())
 
 
 def _suspicious_start(text: str) -> bool:

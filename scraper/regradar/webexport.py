@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sqlite3
+from difflib import SequenceMatcher
 from typing import List, Optional, Tuple
 from urllib.parse import urlparse
 
@@ -330,6 +331,12 @@ def _praxis_summary(text: Optional[str], limit: int = 360) -> str:
     Zeichen, damit Begründung und Betragshöhe lesbar ankommen statt mitten im
     Wort abzubrechen."""
     cleaned = _clean(text, 10_000)
+    # Reine Metadaten statt Fließtext (ESMA-Library: "Speech — CCP, Speeches")
+    # sind keine Kurzbeschreibung: weglassen. Sonst beanstandet die KI-
+    # Prüfroutine sie und "repariert" aus einem Rohtext ohne Inhalt (September
+    # 2026: frei erfundene Kurztexte zu drei ESMA-Reden).
+    if not re.search(r"[.!?…](\s|$)", cleaned):
+        return ""
     if len(cleaned) <= limit:
         return cleaned
     # Satzgrenzen nur an Satzzeichen MIT folgendem Leerraum: Punkte in
@@ -592,6 +599,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     praxis = []
     praxis_raws = []  # Rohtexte parallel zu praxis, für die KI-Prüfroutine
     seen_praxis = set()
+    praxis_keys = []  # (Titel-Schlüssel, first_seen_at) parallel zu praxis
     for r in rows:
         praxis_text = "{} {}".format(r["title"] or "", r["summary"] or "")
         if r["source_id"] in PRAXIS_SOURCES:
@@ -609,6 +617,18 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         key = (re.sub(r"\W+", " ", (r["title"] or "").lower()).strip(), date)
         if key in seen_praxis:
             continue
+        # Korrigierte Neuveröffentlichung derselben Meldung (Tippfehler im
+        # Titel, neue URL — z. B. ESMA "speech ath the …"/"speech at the …"):
+        # nur die später gesehene Fassung behalten.
+        # Bewusst eng (nur Reden, lange Titel, fast identisch), damit
+        # "Bank A: Bafin setzt Bußgeld fest"/"Bank B: …" nie verschmelzen.
+        twin = None
+        if cat == "rede" and len(key[0]) >= 60:
+            twin = next((i for i, (k, _) in enumerate(praxis_keys)
+                         if k[1] == date and praxis[i]["cat"] == "rede"
+                         and SequenceMatcher(None, k[0], key[0]).ratio() >= 0.97), None)
+        if twin is not None and (r["first_seen_at"] or "") <= praxis_keys[twin][1]:
+            continue
         seen_praxis.add(key)
         entry = {
             "d": date,
@@ -621,8 +641,13 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         summary = _praxis_summary(r["summary"])
         if summary:
             entry["sum"] = summary
+        if twin is not None:
+            praxis[twin], praxis_raws[twin] = entry, r["summary"]
+            praxis_keys[twin] = (key, r["first_seen_at"] or "")
+            continue
         praxis.append(entry)
         praxis_raws.append(r["summary"])
+        praxis_keys.append((key, r["first_seen_at"] or ""))
     praxis = praxis[:PRAXIS_MAX]
     praxis_raws = praxis_raws[:PRAXIS_MAX]
 
