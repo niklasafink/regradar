@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T20:21:21Z",
+  "generated_at": "2026-10-07T20:40:54Z",
   "sources": [
     {
       "id": "eurlex",
@@ -195,7 +195,7 @@
     },
     {
       "id": "iosco",
-      "name": "IOSCO (Public Reports)",
+      "name": "IOSCO (Public Reports / Media Releases)",
       "authority": "IOSCO",
       "jurisdiction": "INT",
       "access": "HTML",
