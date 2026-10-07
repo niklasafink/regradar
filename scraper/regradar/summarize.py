@@ -147,6 +147,49 @@ def backfill_titles(conn: sqlite3.Connection, model: str, key: str,
         print("LLM-Titel: {} von {} englischen Titeln übersetzt".format(len(result), len(todo)))
     return result
 
+def praxis_titles(conn: sqlite3.Connection, titles: List[str]) -> Dict[str, str]:
+    """Deutsche Anzeigetitel für nicht-deutsche Praxis-Titel (Reden,
+    Interviews): Originaltitel -> deutscher Titel, dauerhaft gecacht in
+    llm_praxis_title. Ohne API-Key oder bei Fehlern bleibt der Originaltitel
+    (der nächste Export versucht es erneut)."""
+    from .db import utcnow
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS llm_praxis_title (
+               title      TEXT PRIMARY KEY,
+               de         TEXT NOT NULL,
+               created_at TEXT NOT NULL
+           )""")
+    conn.commit()
+    todo = sorted({t for t in titles if looks_english(t)})
+    result: Dict[str, str] = {}
+    for t in todo:
+        row = conn.execute(
+            "SELECT de FROM llm_praxis_title WHERE title=?", (t,)).fetchone()
+        if row:
+            result[t] = row[0]
+    todo = [t for t in todo if t not in result]
+    key = api_key()
+    if not todo or not key:
+        return result
+    model = os.environ.get("OPENROUTER_SUMMARY_MODEL", DEFAULT_MODEL)
+    for start in range(0, len(todo), TITLE_BATCH):
+        batch = list(enumerate(todo[start:start + TITLE_BATCH]))
+        try:
+            got = _translate_titles(model, key, batch)
+        except (urllib.error.URLError, json.JSONDecodeError, KeyError,
+                ValueError, OSError) as e:
+            print("LLM-Praxis-Titel: Batch fehlgeschlagen ({}: {})".format(type(e).__name__, e))
+            continue
+        for i, t in batch:
+            if i in got:
+                result[t] = got[i]["de"]
+                conn.execute(
+                    "INSERT OR REPLACE INTO llm_praxis_title (title, de, created_at) "
+                    "VALUES (?,?,?)", (t, got[i]["de"], utcnow()))
+        conn.commit()
+    return result
+
+
 SYSTEM_PROMPT = (
     "Du schreibst Zusammenfassungen für einen Regulatory-News-Dienst, den "
     "Compliance-Verantwortliche von Finanzunternehmen lesen.\n\n"
@@ -188,7 +231,13 @@ SYSTEM_PROMPT = (
     "Übersetzung). Ist der Original-Titel bereits deutsch und verständlich, "
     'lasse "ti" weg.\n\n'
     "Regeln: Nur Informationen aus dem gegebenen Text verwenden, nichts "
-    "erfinden und keine Fristen raten. Gibt der Text wenig her, schreibe "
+    "erfinden und keine Fristen raten. Das Veröffentlichungsdatum ist kein "
+    "Inkrafttreten: 'in Kraft getreten', 'gilt ab' oder 'anzuwenden ab' nur "
+    "schreiben, wenn der Text es ausdrücklich so sagt. Das Datum der Meldung "
+    "gehört nicht in den Titel. Übliche deutsche Fachbegriffe verwenden, "
+    "nicht Wort für Wort übersetzen (resolvability = Abwicklungsfähigkeit, "
+    "deliverables = einzureichende Unterlagen, central maintenance service = "
+    "zentrale Kontoführung); 'Rundschreiben' ist Neutrum (das/zum Rundschreiben). Gibt der Text wenig her, schreibe "
     "lieber weniger Absätze als vage Füllsätze. Fachbegriffe und "
     "Normbezeichnungen (z. B. RTS, MiCAR, § 25a KWG) beibehalten. Nüchtern "
     "und ohne Floskeln, kein 'Diese Meldung …'-Einstieg. Datumsformat "

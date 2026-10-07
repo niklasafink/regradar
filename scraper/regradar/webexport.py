@@ -396,9 +396,51 @@ INDIVIDUAL_MEASURE_URL = re.compile(r"/massnahmen/", re.IGNORECASE)
 # Google 403 000 000 EUR" oder "The Spanish DPA fined Securitas Direct
 # 100 000 EUR". Entscheidend ist die Kombination aus Bußgeld-Verb und
 # Betrag — "Guidelines on administrative fines" bleibt damit relevant.
+# Die Währung steht mal hinter, mal vor dem Betrag ("fines Google EUR
+# 403 000 000" rutschte am 06.10.2026 als DSGVO-Update durch).
 FINE_WITH_AMOUNT = re.compile(
-    r"\bfine[sd]?\b[^.]{0,80}?\d[\d\s.,]{2,}\s*(?:eur|euro|€|million|mio)",
+    r"\bfine[sd]?\b[^.]{0,80}?(?:(?:eur|euro|€)\s*\d[\d\s.,]{2,}|"
+    r"\d[\d\s.,]{2,}\s*(?:eur|euro|€|million|mio))",
     re.IGNORECASE)
+
+# Have-Your-Say-Initiativen, zu denen es noch nichts gibt: bloß angekündigt
+# (kein Entwurf, keine Feedback-Phase) oder aufgegeben. Der Datensatz enthält
+# dann nur Kurztitel und Verfahrensstand — die Zusammenfassung wäre geraten,
+# und für ein Institut folgt daraus nichts (02.10.2026: zwei CSRD-Einträge
+# "Init Planned" als "Gesetzentwurf").
+HYS_NOT_YET = re.compile(
+    r"verfahrensstand:\s*(init planned|planning workflow|abandoned)", re.IGNORECASE)
+
+# "Konsultation" nur, wenn das Dokument selbst eine ist — nicht, wenn der
+# Titel bloß Konsultationen aufzählt oder ankündigt (SRB "publishes the list
+# of consultations …" ohne Frist).
+NOT_A_CONSULTATION = re.compile(
+    r"list of (?:\w+ )?consultations|consultations? (?:list|calendar|programme|plan)\b",
+    re.IGNORECASE)
+
+# BaFin veröffentlicht ein Rundschreiben mehrfach: als Rundschreiben-Seite,
+# als gleichnamige Download-Seite (URL teils nicht aufrufbar) und als
+# erläuternde Meldung. Für den Leser ist das EINE Neuerung.
+BAFIN_CIRCULAR_NO = re.compile(r"rundschreiben\s+(\d{1,2}/20\d{2})", re.IGNORECASE)
+BAFIN_CIRCULAR_WINDOW_DAYS = 3
+
+# Die beiden Regeln oben (HYS_NOT_YET, Rundschreiben-Fassungen) entfernen
+# Einträge. Sie gelten nur für Dokumente, die nach dem letzten Versand vor
+# ihrer Einführung (02.10.2026, 15 Uhr UTC) erstmals gesehen wurden: Ältere
+# Einträge stehen in verschickten Newslettern, ihre /u/-Links dürfen nicht
+# ins Leere laufen.
+STRICT_SINCE = "2026-10-02T15:00:00Z"
+
+
+def _bafin_circular_rank(url: Optional[str]) -> int:
+    """Welche Fassung bleibt: die erläuternde Meldung (sagt, was sich ändert),
+    sonst die Rundschreiben-Seite, zuletzt die Download-Seite."""
+    u = (url or "").lower()
+    if "/meldung/" in u:
+        return 0
+    if "/downloads/" in u:
+        return 2
+    return 1
 
 # Dauerseiten statt Meldungen: Der Bundesbank-Feed „Themen" liefert
 # Website-Fachseiten mit dem Datum der letzten Bearbeitung („BAIT / DORA",
@@ -657,6 +699,14 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     from .qacheck import check_praxis
     qa_stats = check_praxis(conn, praxis, praxis_raws)
 
+    # Titel erscheinen auf Deutsch (CLAUDE.md) — auch im Praxis-Bestand:
+    # englische Rede-/Interview-Titel übersetzen (gecacht je Titel).
+    from .summarize import praxis_titles
+    german = praxis_titles(conn, [e["ti"] for e in praxis])
+    for e in praxis:
+        if e["ti"] in german:
+            e["ti"] = german[e["ti"]]
+
     # Kandidaten sammeln (Regex-Vorfilter + Rahmenwerk-Zuordnung + Datum) …
     def _too_thin(r) -> bool:
         """Titel ohne Aussage (max. zwei Wörter, keine Kennung) und praktisch
@@ -688,6 +738,9 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # noch offene Einreichung ("Question under review") enthalten keine
         # Antwort — daraus folgt keine Handlungspflicht, also kein Update.
         if r["source_id"] == "eba_qna" and (r["status"] or "").upper() != "FINAL":
+            continue
+        if (r["source_id"] == "hys" and HYS_NOT_YET.search(r["summary"] or "")
+                and (r["first_seen_at"] or "") >= STRICT_SINCE):
             continue
         # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
         # Titel wie "Consultation on the draft RTS on Customer Due
@@ -754,6 +807,42 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
             per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
             selected.append((r, fw_id, date))
 
+    # Dasselbe BaFin-Rundschreiben in mehreren Fassungen (auch über
+    # Rahmenwerke hinweg): nur die bestplatzierte Fassung bleibt. Bewusst
+    # erst NACH der Auswahl — so ist die behaltene Fassung garantiert eine,
+    # die auch exportiert wird (Relevanzfilter, Kappung je Rahmenwerk).
+    from .fulltext import fetch_fulltext
+    circulars = {}
+    for r, fw_id, _ in selected:
+        if r["source_id"] != "bafin":
+            continue
+        rank = _bafin_circular_rank(r["canonical_url"])
+        numbers = set(BAFIN_CIRCULAR_NO.findall(
+            "{} {}".format(r["title"] or "", r["summary"] or "")))
+        # Die erläuternde Meldung nennt die Nummer oft erst im Text ("In
+        # ihrem Rundschreiben gibt die Bafin bekannt …"): Volltext (gecacht).
+        if (not numbers and rank == 0
+                and "rundschreiben" in (r["canonical_url"] or "").lower()):
+            numbers = set(BAFIN_CIRCULAR_NO.findall(
+                fetch_fulltext(conn, r["document_id"], r["canonical_url"]) or ""))
+        # Eine Sammelmeldung zu mehreren Rundschreiben ersetzt keines davon.
+        if rank == 0 and len(numbers) != 1:
+            continue
+        iso = (r["publication_date"] or r["first_seen_at"] or "")[:10]
+        for no in numbers:
+            circulars.setdefault(no, []).append(
+                (rank, iso, r["document_id"], r["first_seen_at"] or ""))
+    circular_dupes = set()
+    for group in circulars.values():
+        group.sort()
+        keep_iso = group[0][1]
+        for _, iso, doc_id, first_seen in group[1:]:
+            gap = _days_apart(iso, keep_iso)
+            if (gap is not None and gap <= BAFIN_CIRCULAR_WINDOW_DAYS
+                    and first_seen >= STRICT_SINCE):
+                circular_dupes.add(doc_id)
+    selected = [x for x in selected if x[0]["document_id"] not in circular_dupes]
+
     # Big-4-/Kanzlei-Beiträge vor der Zusammenfassung ermitteln, damit deren
     # Titel als Relevanz-Kontext in die LLM-Zusammenfassung einfließen können.
     adv_by_doc = {}
@@ -800,7 +889,11 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     summarized = 0
     for r, fw_id, date in selected:
         bucket = updates.setdefault(fw_id, [])
-        de, en = TYPE_LABELS.get(r["document_type"], TYPE_LABELS["OTHER"])
+        doc_type = r["document_type"]
+        if (doc_type == "CONSULTATION" and not r["consultation_deadline"]
+                and NOT_A_CONSULTATION.search(r["title"] or "")):
+            doc_type = "OTHER"
+        de, en = TYPE_LABELS.get(doc_type, TYPE_LABELS["OTHER"])
         title = _clean(r["title"], 200)
         # Verständliche Zusammenfassung (bis zu 3 Absätze) aus dem LLM;
         # Fallback ist der bereinigte Original-Teaser.
@@ -813,6 +906,10 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # LLM-Anzeigetitel. Der Slug ("sl") bleibt am Original-Titel
         # verankert, damit URLs und Newsletter-Dedup stabil bleiben.
         ti = (llm or {}).get("ti") or {"de": title, "en": title}
+        # Das Modell hängt gelegentlich das Publikationsdatum als vermeintliche
+        # Kennung an ("… (07.10.2026)") — das Datum steht ohnehin am Eintrag.
+        ti = {k: re.sub(r"\s*\(\d{1,2}\.\d{1,2}\.\d{4}\)\s*$", "", v) or v
+              for k, v in ti.items()}
         entry = {
             "d": date,
             "t": {"de": de, "en": en},

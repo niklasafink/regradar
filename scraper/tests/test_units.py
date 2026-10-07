@@ -878,3 +878,38 @@ class LlmRelevanceFilter(unittest.TestCase):
             llmfilter.api_key = orig_key
             llmfilter._chat = orig_chat
         self.assertEqual(result, {7: False})
+
+
+class NewsletterCheckOct2026(unittest.TestCase):
+    """Befunde aus der Newsletter-Prüfung vom 07.10.2026."""
+
+    def test_fine_with_currency_before_amount(self):
+        from regradar.webexport import _classify
+        title = ("The Irish Data Protection Commission fines Google EUR 403 000 000 "
+                 "following Inquiry into Google’s processing of location data")
+        self.assertIsNone(_classify(title + " GDPR", forced="dsgvo", title=title))
+        guide = "Guidelines on the calculation of administrative fines under the GDPR"
+        self.assertEqual(_classify(guide, forced="dsgvo", title=guide), "dsgvo")
+
+    def test_hys_planned_initiative_is_not_an_update(self):
+        from regradar.webexport import HYS_NOT_YET
+        self.assertTrue(HYS_NOT_YET.search("Verfahrensstand: Init Planned"))
+        self.assertFalse(HYS_NOT_YET.search("Verfahrensstand: Opc Launched"))
+        self.assertFalse(HYS_NOT_YET.search("Verfahrensstand: Adoption Workflow"))
+
+    def test_list_of_consultations_is_not_a_consultation(self):
+        from regradar.webexport import NOT_A_CONSULTATION
+        self.assertTrue(NOT_A_CONSULTATION.search(
+            "SRB publishes the list of consultations and simplifies its requests"))
+        self.assertFalse(NOT_A_CONSULTATION.search(
+            "Consultation on draft RTS for establishing a central AML/CFT database"))
+
+    def test_bafin_circular_rank_prefers_notice(self):
+        from regradar.webexport import _bafin_circular_rank as rank
+        base = "https://www.bafin.de/SharedDocs/"
+        self.assertLess(
+            rank(base + "Veroeffentlichungen/DE/Meldung/2026/meldung_x.html"),
+            rank(base + "Veroeffentlichungen/DE/Rundschreiben/2026/rs_14_2026.html"))
+        self.assertLess(
+            rank(base + "Veroeffentlichungen/DE/Rundschreiben/2026/rs_14_2026.html"),
+            rank(base + "Downloads/DE/Rundschreiben/rs_14_2026.html"))
