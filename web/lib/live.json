@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:07:35Z",
+  "generated_at": "2026-10-08T15:07:54Z",
   "updates": {
     "amla": [
       {
@@ -571,6 +571,122 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2165",
         "imp": "high",
         "refnum": "32026R2165"
+      }
+    ],
+    "cssf18698": [
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Informationen für luxemburgische IFMs zu White-Label-Geschäften (Art. 13(2a) Gesetz 2013 / Art. 111(2) Gesetz 2010)",
+          "en": "Information for Luxembourg-based IFMs on white-label business (Art. 13(2a) Law of 2013 / Art. 111(2) Law of 2010)"
+        },
+        "sl": "communication-to-the-investment-fund-industry-in-relation-to-the-information-to",
+        "s": {
+          "de": "Die CSSF informiert über neue Anforderungen für luxemburgische Investmentfondsmanager (IFMs), die Fonds auf Initiative Dritter verwalten oder verwalten wollen, das sogenannte White-Label-Geschäft. Dies betrifft Fälle, in denen der Fonds den Namen eines Drittinitiators verwendet oder der IFM einen Drittinitiator delegiert.\n\nGrundlage ist das Gesetz vom 3. März 2026 zur Umsetzung der EU-Richtlinie 2024/927. IFMs müssen der CSSF detaillierte Erläuterungen und Nachweise zur Einhaltung der Artikel 13(2a) des Gesetzes von 2013 und/oder 111(2) des Gesetzes von 2010 vorlegen, insbesondere im Hinblick auf potenzielle Interessenkonflikte. Hierfür hat die CSSF ein spezielles Formular veröffentlicht.\n\nIFMs, die erstmals ein White-Label-Geschäft aufnehmen möchten, müssen dieses Formular ausfüllen und einreichen. Die CSSF behält sich vor, jederzeit zusätzliche Informationen zur ursprünglichen Meldung anzufordern.",
+          "en": "The CSSF announces new requirements for Luxembourg-based Investment Fund Managers (IFMs) that manage or intend to manage funds at the initiative of a third party, known as white-label business. This includes situations where the fund uses the name of a third-party initiator or where the IFM delegates to a third-party initiator.\n\nThese requirements are based on the Law of 3 March 2026, which transposes EU Directive 2024/927. IFMs must submit detailed explanations and evidence to the CSSF demonstrating compliance with Article 13(2a) of the 2013 Law and/or Article 111(2) of the 2010 Law, particularly regarding potential conflicts of interest. The CSSF has published a dedicated form for this purpose.\n\nIFMs wishing to engage in white-label business for the first time must complete and submit this form. The CSSF reserves the right to request additional information regarding the initial notification at any time."
+        },
+        "url": "https://www.cssf.lu/en/2026/10/communication-to-the-investment-fund-industry-in-relation-to-the-information-to-be-provided-to-the-cssf-by-a-luxembourg-based-ifm-intending-to-perform-white-label-business/",
+        "imp": "medium"
+      },
+      {
+        "d": "30.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Mitteilung zu Management-Meldungen und Abmeldungen mit europäischem Pass für in Luxemburg ansässige IFMs – Änderungen durch AIFMD II",
+          "en": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD I"
+        },
+        "sl": "communication-regarding-management-notifications-and-de-notifications-with-a-eur",
+        "s": {
+          "de": "Die CSSF informiert über Änderungen bei der Notifizierung von grenzüberschreitenden Management- und Marketingaktivitäten für luxemburgische Investmentfondsmanager (IFMs) im Europäischen Wirtschaftsraum (EWR). Dies geschieht im Zuge der Umsetzung der AIFMD II (Richtlinie (EU) 2024/927) in luxemburgisches Recht durch das Gesetz vom 3. März 2026.\n\nFür UCITS-Verwaltungsgesellschaften und zugelassene AIFM wurden zusätzliche Aktivitäten, Funktionen und Dienstleistungen eingeführt. Die CSSF hat aktualisierte Vorlagen für Notifizierungsschreiben sowie ein aktualisiertes eDesk-Modul (oder CSSF API-Lösung) bereitgestellt, die ab dem 31. Juli 2026 zu verwenden sind. Bevor IFMs diese neuen Aktivitäten in einem anderen Mitgliedstaat ausüben können, müssen sie von der CSSF für diese in Luxemburg zugelassen sein.\n\nDie aktualisierten Vorlagen und das eDesk-Modul sind ab dem 31. Juli 2026 für die Notifizierung zu nutzen. Eine aktualisierte Anleitung für grenzüberschreitende Management-Notifizierungs- und De-Notifizierungsverfahren steht ebenfalls zur Verfügung.",
+          "en": "The CSSF is communicating changes regarding the notification of cross-border management and marketing activities for Luxembourg-domiciled Investment Fund Managers (IFMs) within the European Economic Area (EEA). These changes follow the transposition of AIFMD II (Directive (EU) 2024/927) into Luxembourg law by the Law of 3 March 2026.\n\nAdditional activities, functions, and services have been introduced for UCITS management companies and authorised Alternative Investment Fund Managers (AIFMs). The CSSF has published updated notification letter templates and an updated eDesk module (or CSSF API solution), which must be used from 31 July 2026. Before IFMs can pursue these new activities in another Member State, they must first be authorised by the CSSF to provide them in Luxembourg.\n\nThe updated templates and the eDesk module must be used for notifications as of 31 July 2026. Updated guidelines for cross-border management notification and de-notification procedures are also available."
+        },
+        "url": "https://www.cssf.lu/en/2026/07/communication-regarding-management-notifications-and-de-notifications-with-a-european-passport-for-luxembourg-domiciled-ifms-changes-introduced-by-the-aifmd-ii/",
+        "imp": "high"
+      },
+      {
+        "d": "27.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Start der ESMA Common Supervisory Action zur Risikomanagementfunktion von UCITS-Verwaltungsgesellschaften und AIF-Managern",
+          "en": "Launch of the ESMA Common Supervisory Action on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers"
+        },
+        "sl": "launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine gemeinsame Aufsichtsaktion (CSA) zur Risikomanagementfunktion von OGAW-Verwaltungsgesellschaften und Verwaltern alternativer Investmentfonds (IFMs) in der EU gestartet. Ziel ist es, die Wirksamkeit und Unabhängigkeit der Risikomanagementfunktion sowie deren Ausstattung mit Personal, Autorität, Wissen und Expertise gemäß den OGAW- und AIFMD-Rahmenwerken zu überprüfen.\n\nDie CSA soll sicherstellen, dass wesentliche Risiken wie Markt-, Kredit-, Liquiditäts-, Gegenpartei-, Nachhaltigkeits- und operationelle Risiken ordnungsgemäß identifiziert, gemessen, überwacht und verwaltet werden. Die CSSF hat in diesem Rahmen luxemburgische IFMs mittels eines Fragebogens kontaktiert, der sich auf Governance, Organisation der Risikomanagementfunktion, Risikoidentifikation, -messung, -überwachung und Berichterstattung an die Geschäftsleitung konzentriert.\n\nBetroffene luxemburgische IFMs wurden von der CSSF per E-Mail informiert und müssen den Fragebogen über das eDesk Portal der CSSF einreichen. Die CSSF weist darauf hin, dass die E-Mail-Adressen der eDesk-Nutzer und deren Rollen aktuell gehalten werden müssen, um den Empfang relevanter Mitteilungen sicherzustellen.",
+          "en": "The European Securities and Markets Authority (ESMA) has launched a Common Supervisory Action (CSA) on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers (IFMs) across the EU. The objective is to assess the effectiveness and independence of the risk management function, including its staffing, authority, knowledge, and expertise, in accordance with the UCITS and AIFMD frameworks.\n\nThis CSA aims to ensure that material risks such as market, credit, liquidity, counterparty, sustainability, and operational risks are properly identified, measured, monitored, and managed. In this context, the CSSF has contacted Luxembourg-based IFMs with a questionnaire focusing on governance, organization of the risk management function, risk identification, measurement, monitoring, and reporting to senior management.\n\nAffected Luxembourg-based IFMs were informed by the CSSF via email and are required to submit the questionnaire through the CSSF’s eDesk Portal. The CSSF emphasizes the importance of keeping eDesk user email addresses and their corresponding roles up to date to ensure relevant communications are received."
+        },
+        "url": "https://www.cssf.lu/en/2026/07/launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of-ucits-management-companies-and-alternative-investment-fund-managers/",
+        "imp": "high"
+      },
+      {
+        "d": "30.06.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Rundschreiben IML 95/120 zur zentralen Verwaltung von Investmentfonds (CSSF)",
+          "en": "Circular IML 95/120 on Central Administration of Investment Funds (CSSF)"
+        },
+        "sl": "circular-iml-95-120-as-amended-by-circulars-cssf-12-552-22-806-and-26-906-update",
+        "s": {
+          "de": "Die CSSF hat ihr Rundschreiben IML 95/120 aktualisiert, das die Anforderungen an die zentrale Verwaltung von Investmentfonds in Luxemburg regelt. Das Rundschreiben präzisiert die Aufgaben und Verantwortlichkeiten der zentralen Verwaltung und stellt sicher, dass diese den aufsichtsrechtlichen Standards entsprechen.\n\nDie Aktualisierung ist relevant für alle luxemburgischen Investmentfonds und deren Verwaltungsgesellschaften. Sie müssen sicherstellen, dass ihre Governance-Strukturen und operativen Prozesse den überarbeiteten Anforderungen an die zentrale Verwaltung genügen. Dies betrifft insbesondere die Auslagerung von Funktionen und die Überwachung der ausgelagerten Tätigkeiten.\n\nDas Rundschreiben IML 95/120 wurde zuletzt durch die Rundschreiben CSSF 12/552, 22/806 und 26/906 geändert und ist in seiner aktualisierten Fassung ab dem 30.06.2026 gültig.",
+          "en": "The CSSF has updated its Circular IML 95/120, which governs the requirements for the central administration of investment funds in Luxembourg. The circular clarifies the duties and responsibilities of central administration, ensuring compliance with supervisory standards.\n\nThis update is relevant for all Luxembourg investment funds and their management companies. They must ensure that their governance structures and operational processes meet the revised central administration requirements. This particularly concerns the outsourcing of functions and the oversight of outsourced activities.\n\nCircular IML 95/120 was last amended by Circulars CSSF 12/552, 22/806, and 26/906, and its updated version is effective from 30.06.2026."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-iml-95-120/",
+        "imp": "medium"
+      },
+      {
+        "d": "30.06.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Rundschreiben IML 96/126 zur administrativen und buchhalterischen Organisation (aktualisiert)",
+          "en": "Circular IML 96/126 on administrative and accounting organisation (updated)"
+        },
+        "sl": "circular-iml-96-126-as-amended-by-circulars-cssf-12-552-cssf-22-806-and-cssf-26",
+        "s": {
+          "de": "Die CSSF hat ihr Rundschreiben IML 96/126 aktualisiert, das die administrative und buchhalterische Organisation von Finanzinstituten regelt. Es legt die Anforderungen an die interne Organisation fest, um eine ordnungsgemäße Geschäftsabwicklung und die Einhaltung regulatorischer Vorschriften sicherzustellen.\n\nDieses Rundschreiben ist für alle Finanzinstitute in Luxemburg relevant. Es definiert die Rahmenbedingungen für Governance, Risikomanagement und interne Kontrollsysteme, die für den Schutz von Kundenvermögen und die Stabilität des Finanzsektors unerlässlich sind.\n\nDie Aktualisierung tritt am 30.06.2026 in Kraft.",
+          "en": "The CSSF has updated its Circular IML 96/126, which governs the administrative and accounting organisation of financial institutions. It sets out the requirements for internal organisation to ensure proper business conduct and compliance with regulatory provisions.\n\nThis circular is relevant for all financial institutions in Luxembourg. It defines the framework for governance, risk management, and internal control systems, which are essential for protecting client assets and maintaining the stability of the financial sector.\n\nThe update comes into effect on 30.06.2026."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-iml-96-126/",
+        "imp": "medium"
+      },
+      {
+        "d": "30.06.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Rundschreiben IML 98/143 zur internen Kontrolle (CSSF Circular IML 98/143)",
+          "en": "Circular IML 98/143 on Internal Control (CSSF Circular IML 98/143)"
+        },
+        "sl": "circular-iml-98-143-as-amended-by-circulars-cssf-04-155-12-552-and-22-806-update",
+        "s": {
+          "de": "Die CSSF hat das Rundschreiben IML 98/143 aktualisiert, das die Anforderungen an die interne Kontrolle von Finanzinstituten in Luxemburg regelt. Das Rundschreiben legt die Grundsätze und organisatorischen Rahmenbedingungen für ein robustes internes Kontrollsystem fest, um Risiken zu steuern und die Einhaltung gesetzlicher Vorschriften sicherzustellen.\n\nDieses Rundschreiben ist für alle Finanzinstitute in Luxemburg relevant. Es konkretisiert die Erwartungen der Aufsichtsbehörde an die Governance und Risikomanagementprozesse der Institute, insbesondere im Hinblick auf die Identifizierung, Bewertung und Überwachung operationeller, finanzieller und Compliance-Risiken.\n\nDie Aktualisierung tritt am 30.06.2026 in Kraft. Institute sollten diese Zeit nutzen, um ihre internen Kontrollsysteme zu überprüfen und gegebenenfalls anzupassen, um den neuen oder präzisierten Anforderungen gerecht zu werden.",
+          "en": "The CSSF has updated Circular IML 98/143, which governs the requirements for internal control of financial institutions in Luxembourg. The circular sets out the principles and organizational framework for a robust internal control system to manage risks and ensure compliance with legal provisions.\n\nThis circular is relevant for all financial institutions in Luxembourg. It specifies the supervisory authority's expectations regarding the institutions' governance and risk management processes, particularly with regard to the identification, assessment, and monitoring of operational, financial, and compliance risks.\n\nThe update comes into effect on 30.06.2026. Institutions should use this time to review and, if necessary, adjust their internal control systems to meet the new or clarified requirements."
+        },
+        "url": "https://www.cssf.lu/en/Document/circular-iml-98-143/",
+        "imp": "medium"
       }
     ],
     "csdr": [
@@ -2834,122 +2950,6 @@
         },
         "url": "https://www.esma.europa.eu/document/esas-statement-toward-consistent-and-risk-based-approach-ict-risks-frontier-ai-models",
         "imp": "medium"
-      }
-    ],
-    "cssf18698": [
-      {
-        "d": "30.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Mitteilung zu Management-Meldungen und Abmeldungen mit europäischem Pass für in Luxemburg ansässige IFMs – Änderungen durch AIFMD II",
-          "en": "Communication regarding management notifications and de-notifications with a European passport for Luxembourg-domiciled IFMs - Changes introduced by the AIFMD I"
-        },
-        "sl": "communication-regarding-management-notifications-and-de-notifications-with-a-eur",
-        "s": {
-          "de": "Die CSSF informiert über Änderungen bei der Notifizierung von grenzüberschreitenden Management- und Marketingaktivitäten für luxemburgische Investmentfondsmanager (IFMs) im Europäischen Wirtschaftsraum (EWR). Dies geschieht im Zuge der Umsetzung der AIFMD II (Richtlinie (EU) 2024/927) in luxemburgisches Recht durch das Gesetz vom 3. März 2026.\n\nFür UCITS-Verwaltungsgesellschaften und zugelassene AIFM wurden zusätzliche Aktivitäten, Funktionen und Dienstleistungen eingeführt. Die CSSF hat aktualisierte Vorlagen für Notifizierungsschreiben sowie ein aktualisiertes eDesk-Modul (oder CSSF API-Lösung) bereitgestellt, die ab dem 31. Juli 2026 zu verwenden sind. Bevor IFMs diese neuen Aktivitäten in einem anderen Mitgliedstaat ausüben können, müssen sie von der CSSF für diese in Luxemburg zugelassen sein.\n\nDie aktualisierten Vorlagen und das eDesk-Modul sind ab dem 31. Juli 2026 für die Notifizierung zu nutzen. Eine aktualisierte Anleitung für grenzüberschreitende Management-Notifizierungs- und De-Notifizierungsverfahren steht ebenfalls zur Verfügung.",
-          "en": "The CSSF is communicating changes regarding the notification of cross-border management and marketing activities for Luxembourg-domiciled Investment Fund Managers (IFMs) within the European Economic Area (EEA). These changes follow the transposition of AIFMD II (Directive (EU) 2024/927) into Luxembourg law by the Law of 3 March 2026.\n\nAdditional activities, functions, and services have been introduced for UCITS management companies and authorised Alternative Investment Fund Managers (AIFMs). The CSSF has published updated notification letter templates and an updated eDesk module (or CSSF API solution), which must be used from 31 July 2026. Before IFMs can pursue these new activities in another Member State, they must first be authorised by the CSSF to provide them in Luxembourg.\n\nThe updated templates and the eDesk module must be used for notifications as of 31 July 2026. Updated guidelines for cross-border management notification and de-notification procedures are also available."
-        },
-        "url": "https://www.cssf.lu/en/2026/07/communication-regarding-management-notifications-and-de-notifications-with-a-european-passport-for-luxembourg-domiciled-ifms-changes-introduced-by-the-aifmd-ii/",
-        "imp": "high"
-      },
-      {
-        "d": "27.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Start der ESMA Common Supervisory Action zur Risikomanagementfunktion von UCITS-Verwaltungsgesellschaften und AIF-Managern",
-          "en": "Launch of the ESMA Common Supervisory Action on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers"
-        },
-        "sl": "launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine gemeinsame Aufsichtsaktion (CSA) zur Risikomanagementfunktion von OGAW-Verwaltungsgesellschaften und Verwaltern alternativer Investmentfonds (IFMs) in der EU gestartet. Ziel ist es, die Wirksamkeit und Unabhängigkeit der Risikomanagementfunktion sowie deren Ausstattung mit Personal, Autorität, Wissen und Expertise gemäß den OGAW- und AIFMD-Rahmenwerken zu überprüfen.\n\nDie CSA soll sicherstellen, dass wesentliche Risiken wie Markt-, Kredit-, Liquiditäts-, Gegenpartei-, Nachhaltigkeits- und operationelle Risiken ordnungsgemäß identifiziert, gemessen, überwacht und verwaltet werden. Die CSSF hat in diesem Rahmen luxemburgische IFMs mittels eines Fragebogens kontaktiert, der sich auf Governance, Organisation der Risikomanagementfunktion, Risikoidentifikation, -messung, -überwachung und Berichterstattung an die Geschäftsleitung konzentriert.\n\nBetroffene luxemburgische IFMs wurden von der CSSF per E-Mail informiert und müssen den Fragebogen über das eDesk Portal der CSSF einreichen. Die CSSF weist darauf hin, dass die E-Mail-Adressen der eDesk-Nutzer und deren Rollen aktuell gehalten werden müssen, um den Empfang relevanter Mitteilungen sicherzustellen.",
-          "en": "The European Securities and Markets Authority (ESMA) has launched a Common Supervisory Action (CSA) on the risk management function of UCITS Management Companies and Alternative Investment Fund Managers (IFMs) across the EU. The objective is to assess the effectiveness and independence of the risk management function, including its staffing, authority, knowledge, and expertise, in accordance with the UCITS and AIFMD frameworks.\n\nThis CSA aims to ensure that material risks such as market, credit, liquidity, counterparty, sustainability, and operational risks are properly identified, measured, monitored, and managed. In this context, the CSSF has contacted Luxembourg-based IFMs with a questionnaire focusing on governance, organization of the risk management function, risk identification, measurement, monitoring, and reporting to senior management.\n\nAffected Luxembourg-based IFMs were informed by the CSSF via email and are required to submit the questionnaire through the CSSF’s eDesk Portal. The CSSF emphasizes the importance of keeping eDesk user email addresses and their corresponding roles up to date to ensure relevant communications are received."
-        },
-        "url": "https://www.cssf.lu/en/2026/07/launch-of-the-esma-common-supervisory-action-on-the-risk-management-function-of-ucits-management-companies-and-alternative-investment-fund-managers/",
-        "imp": "high"
-      },
-      {
-        "d": "30.06.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Rundschreiben IML 95/120 zur zentralen Verwaltung von Investmentfonds (CSSF)",
-          "en": "Circular IML 95/120 on Central Administration of Investment Funds (CSSF)"
-        },
-        "sl": "circular-iml-95-120-as-amended-by-circulars-cssf-12-552-22-806-and-26-906-update",
-        "s": {
-          "de": "Die CSSF hat ihr Rundschreiben IML 95/120 aktualisiert, das die Anforderungen an die zentrale Verwaltung von Investmentfonds in Luxemburg regelt. Das Rundschreiben präzisiert die Aufgaben und Verantwortlichkeiten der zentralen Verwaltung und stellt sicher, dass diese den aufsichtsrechtlichen Standards entsprechen.\n\nDie Aktualisierung ist relevant für alle luxemburgischen Investmentfonds und deren Verwaltungsgesellschaften. Sie müssen sicherstellen, dass ihre Governance-Strukturen und operativen Prozesse den überarbeiteten Anforderungen an die zentrale Verwaltung genügen. Dies betrifft insbesondere die Auslagerung von Funktionen und die Überwachung der ausgelagerten Tätigkeiten.\n\nDas Rundschreiben IML 95/120 wurde zuletzt durch die Rundschreiben CSSF 12/552, 22/806 und 26/906 geändert und ist in seiner aktualisierten Fassung ab dem 30.06.2026 gültig.",
-          "en": "The CSSF has updated its Circular IML 95/120, which governs the requirements for the central administration of investment funds in Luxembourg. The circular clarifies the duties and responsibilities of central administration, ensuring compliance with supervisory standards.\n\nThis update is relevant for all Luxembourg investment funds and their management companies. They must ensure that their governance structures and operational processes meet the revised central administration requirements. This particularly concerns the outsourcing of functions and the oversight of outsourced activities.\n\nCircular IML 95/120 was last amended by Circulars CSSF 12/552, 22/806, and 26/906, and its updated version is effective from 30.06.2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-iml-95-120/",
-        "imp": "medium"
-      },
-      {
-        "d": "30.06.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Rundschreiben IML 96/126 zur administrativen und buchhalterischen Organisation (aktualisiert)",
-          "en": "Circular IML 96/126 on administrative and accounting organisation (updated)"
-        },
-        "sl": "circular-iml-96-126-as-amended-by-circulars-cssf-12-552-cssf-22-806-and-cssf-26",
-        "s": {
-          "de": "Die CSSF hat ihr Rundschreiben IML 96/126 aktualisiert, das die administrative und buchhalterische Organisation von Finanzinstituten regelt. Es legt die Anforderungen an die interne Organisation fest, um eine ordnungsgemäße Geschäftsabwicklung und die Einhaltung regulatorischer Vorschriften sicherzustellen.\n\nDieses Rundschreiben ist für alle Finanzinstitute in Luxemburg relevant. Es definiert die Rahmenbedingungen für Governance, Risikomanagement und interne Kontrollsysteme, die für den Schutz von Kundenvermögen und die Stabilität des Finanzsektors unerlässlich sind.\n\nDie Aktualisierung tritt am 30.06.2026 in Kraft.",
-          "en": "The CSSF has updated its Circular IML 96/126, which governs the administrative and accounting organisation of financial institutions. It sets out the requirements for internal organisation to ensure proper business conduct and compliance with regulatory provisions.\n\nThis circular is relevant for all financial institutions in Luxembourg. It defines the framework for governance, risk management, and internal control systems, which are essential for protecting client assets and maintaining the stability of the financial sector.\n\nThe update comes into effect on 30.06.2026."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-iml-96-126/",
-        "imp": "medium"
-      },
-      {
-        "d": "30.06.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Rundschreiben IML 98/143 zur internen Kontrolle (CSSF Circular IML 98/143)",
-          "en": "Circular IML 98/143 on Internal Control (CSSF Circular IML 98/143)"
-        },
-        "sl": "circular-iml-98-143-as-amended-by-circulars-cssf-04-155-12-552-and-22-806-update",
-        "s": {
-          "de": "Die CSSF hat das Rundschreiben IML 98/143 aktualisiert, das die Anforderungen an die interne Kontrolle von Finanzinstituten in Luxemburg regelt. Das Rundschreiben legt die Grundsätze und organisatorischen Rahmenbedingungen für ein robustes internes Kontrollsystem fest, um Risiken zu steuern und die Einhaltung gesetzlicher Vorschriften sicherzustellen.\n\nDieses Rundschreiben ist für alle Finanzinstitute in Luxemburg relevant. Es konkretisiert die Erwartungen der Aufsichtsbehörde an die Governance und Risikomanagementprozesse der Institute, insbesondere im Hinblick auf die Identifizierung, Bewertung und Überwachung operationeller, finanzieller und Compliance-Risiken.\n\nDie Aktualisierung tritt am 30.06.2026 in Kraft. Institute sollten diese Zeit nutzen, um ihre internen Kontrollsysteme zu überprüfen und gegebenenfalls anzupassen, um den neuen oder präzisierten Anforderungen gerecht zu werden.",
-          "en": "The CSSF has updated Circular IML 98/143, which governs the requirements for internal control of financial institutions in Luxembourg. The circular sets out the principles and organizational framework for a robust internal control system to manage risks and ensure compliance with legal provisions.\n\nThis circular is relevant for all financial institutions in Luxembourg. It specifies the supervisory authority's expectations regarding the institutions' governance and risk management processes, particularly with regard to the identification, assessment, and monitoring of operational, financial, and compliance risks.\n\nThe update comes into effect on 30.06.2026. Institutions should use this time to review and, if necessary, adjust their internal control systems to meet the new or clarified requirements."
-        },
-        "url": "https://www.cssf.lu/en/Document/circular-iml-98-143/",
-        "imp": "medium"
-      },
-      {
-        "d": "19.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Mitteilung an die Investmentfondsbranche zur Erbringung von Nebendienstleistungen durch AIFM",
-          "en": "Communication to the investment fund industry in relation to the notification of the intention of a Luxembourg-based investment fund manager to provide ancillar"
-        },
-        "sl": "communication-to-the-investment-fund-industry-in-relation-to-the-notification-of",
-        "s": {
-          "de": "Die CSSF informiert über die Einführung zusätzlicher Aktivitäten und Funktionen für OGAW-Verwaltungsgesellschaften und zugelassene Verwalter alternativer Investmentfonds (AIFM) durch das Gesetz vom 3. März 2026, das die Richtlinie (EU) 2024/927 umsetzt. Investmentfondsmanager (IFM) können nun bestimmte Funktionen oder Aktivitäten für Dritte erbringen, sofern sie diese bereits für von ihnen verwaltete Organismen für gemeinsame Anlagen (OGA) oder im Rahmen bestehender Dienstleistungen anbieten.\n\nFür in Luxemburg ansässige IFM, die diese zusätzlichen Dienstleistungen erstmals anbieten möchten, hat die CSSF ein neues Formular zur Meldung der Absicht zur Erbringung von Nebendienstleistungen für Dritte veröffentlicht. Die Satzung des IFM muss entsprechend angepasst werden, um die Erbringung dieser Nebendienstleistungen im Unternehmensgegenstand zu spezifizieren. Eine Aktualisierung der Satzung erfordert keine erneute Genehmigung, sondern lediglich eine Meldung.\n\nDas neue Formular ist ausschließlich für die Meldung der in Artikel 5(4)(b)(iv) des Gesetzes von 2013 und/oder Artikel 101(3)(b), vierter Gedankenstrich des Gesetzes von 2010 genannten Nebendienstleistungen vorgesehen. Es ist nicht für andere nicht-kerngeschäftliche Dienstleistungen gemäß Artikel 5(4)(b)(i) bis (iii) bzw. Artikel 101(3)(b), erster bis dritter Gedankenstrich, zu verwenden.",
-          "en": "The CSSF announces the introduction of additional activities and functions for UCITS management companies and authorised alternative investment fund managers (AIFMs) through the Law of 3 March 2026, which transposes Directive (EU) 2024/927. Investment fund managers (IFMs) may now provide certain functions or activities to third parties, provided they already offer these for undertakings for collective investment (UCIs) they manage or as part of existing services.\n\nFor Luxembourg-based IFMs wishing to provide these additional services for the first time, the CSSF has published a new dedicated form for notifying their intention to provide ancillary services to third parties. The IFM's articles of incorporation must be updated to specify the provision of these ancillary services within their corporate object. An update to the articles of incorporation does not require a new authorisation, but only a notification.\n\nThis new form is exclusively for notifying ancillary services as per Article 5(4)(b)(iv) of the Law of 2013 and/or Article 101(3)(b), fourth indent of the Law of 2010. It is not to be used for other non-core services as per Article 5(4)(b)(i) to (iii) and/or Article 101(3)(b), first to third indent, respectively."
-        },
-        "url": "https://www.cssf.lu/en/2026/06/communication-to-the-investment-fund-industry-in-relation-to-the-notification-of-the-intention-of-a-luxembourg-based-investment-fund-manager-to-provide-ancillary-services-to-third-parties/",
-        "imp": "high"
       }
     ],
     "priips": [
