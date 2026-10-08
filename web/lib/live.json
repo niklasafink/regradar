@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T06:07:48Z",
+  "generated_at": "2026-10-08T11:07:37Z",
   "updates": {
     "amla": [
       {
@@ -238,7 +238,104 @@
         "imp": "medium"
       }
     ],
+    "crr3": [
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung zur Methodik der Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026 (08/2026)",
+          "en": "Supervisory Notice on the Methodology for Own Funds Recommendation (Pillar 2 Guidance – P2G) from 2026 (08/2026)"
+        },
+        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
+        "s": {
+          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) für Institute. Diese Aufsichtsmitteilung konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines und ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank.\n\nKünftig erhalten nur Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen identifizierten Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Der Kalibrierungsfaktor zur Berechnung der Höhe der Eigenmittelempfehlung wird zu jedem LSI-Stresstest neu festgelegt und beträgt für 2026 65%.",
+          "en": "The BaFin provides information on the methodology and process for Pillar 2 Guidance (P2G) for institutions. This supervisory notice specifies § 6d para. 1 KWG in conjunction with the EBA SREP Guidelines and complements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with solid capitalisation or low identified risks should generally no longer receive a recommendation for additional own funds.\n\nThe supervisory notice is valid from 08.10.2026 until 30.08.2028. The calibration factor for calculating the amount of the own funds recommendation will be redefined for each LSI stress test and is 65% for 2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_08_2026_methodik_zur_eigenmittelempfehlung_ab_2026_ba.html",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung",
+          "en": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung"
+        },
+        "sl": "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung",
+        "s": {
+          "de": "Die BaFin hat die Aufsichtsmitteilung „08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026“ veröffentlicht. Darin wird präzisiert, wie die BaFin Kreditinstitute über Eigenmittelempfehlungen informiert und wie diese berechnet werden. Die neue Methodik zielt darauf ab, die Aufsicht proportionaler und risikoorientierter zu gestalten und Bürokratie abzubauen.\n\nKünftig müssen nur noch Institute zusätzliche Eigenmittel vorhalten, die beim aufsichtlichen Stresstest für kleine und mittlere Institute (LSI-Stresstest) im Stressszenario bestimmte Kapitalschwellen unterschreiten. Die teilnehmenden Institute erhalten bereits während der Erhebung des Stresstests eine Indikation, ob sie voraussichtlich eine Empfehlung für zusätzliche Eigenmittel erhalten werden. Dies entlastet Institute spürbar durch eine risikoorientierte Herangehensweise.\n\nDie neue Methodik gilt für alle Institute, Institutsgruppen, Finanzholding-Gruppen und gemischten Finanzholding-Gruppen, die unter den Anwendungsbereich des § 6d Absatz 1 Kreditwesengesetz fallen.",
+          "en": "The BaFin has published Supervisory Notice “08/2026 (BA): Methodology for the Capital Recommendation from 2026”. It specifies how BaFin informs credit institutions about capital recommendations and how these are calculated. The new methodology aims to make supervision more proportionate and risk-oriented and to reduce bureaucracy.\n\nIn the future, only institutions that fall below certain capital thresholds in the stress scenario of the supervisory stress test for small and medium-sized institutions (LSI stress test) will have to hold additional capital. Participating institutions will receive an indication during the stress test data collection as to whether they are likely to receive a recommendation for additional capital. This significantly relieves institutions through a risk-oriented approach.\n\nThis new methodology applies to all institutions, institutional groups, financial holding groups, and mixed financial holding groups that fall within the scope of Section 6d (1) of the German Banking Act (Kreditwesengesetz)."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_08_methodik_zur_eigenmittelempfehlung.html",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026",
+          "en": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026"
+        },
+        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
+        "s": {
+          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026. Ziel ist es, Transparenz bei der Ermittlung der Eigenmittelempfehlung zu schaffen und aufsichtliche Prozesse zu vereinfachen. Die Mitteilung ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank und konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines.\n\nKünftig erhalten nur noch Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten. Die Berechnung der Eigenmittelempfehlung erfolgt durch Multiplikation des Kapitalverzehrs aus dem adversen Szenario mit einem Kalibrierungsfaktor, der für 2026 auf 65 % festgelegt wurde.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Eine Überführung in ein Rundschreiben ist vorgesehen, sofern sich die Verwaltungspraxis verstetigt. Der Kalibrierungsfaktor wird zu jedem LSI-Stresstest neu festgelegt.",
+          "en": "BaFin provides information on the methodology and process for the Pillar 2 Guidance (P2G) recommendation for own funds from 2026. The aim is to create transparency in determining the own funds recommendation and to simplify supervisory processes. This notice supplements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank and specifies Section 6d (1) of the German Banking Act (KWG) in conjunction with the EBA SREP Guidelines.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with sound capitalisation or low risks should generally no longer receive a recommendation for additional own funds. The own funds recommendation is calculated by multiplying the capital consumption from the adverse scenario by a calibration factor, which has been set at 65% for 2026.\n\nThe supervisory notice is valid from 08 October 2026 until 30 August 2028. It is intended to be converted into a circular if the administrative practice becomes established. The calibration factor will be redefined for each LSI stress test."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/Aufsichtsmitteilung/dl_am_08.2026_methodik_zur_eigenmittelempfehlung_ba.html",
+        "imp": "high"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
+          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
+        },
+        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
+        "s": {
+          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
+          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
+        "imp": "high"
+      }
+    ],
     "mica": [
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
+          "en": "Supervisory expectations on services related to unauthorised stablecoins"
+        },
+        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
+          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
+        "imp": "high"
+      },
       {
         "d": "07.10.2026",
         "t": {
@@ -352,26 +449,6 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
         "imp": "high",
         "refnum": "ESMA75-113276571-1528"
-      },
-      {
-        "d": "05.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
-          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
-          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1625"
       }
     ],
     "csdr": [
@@ -1753,86 +1830,6 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12570",
         "imp": "medium",
         "refnum": "Ares(2020)4337803"
-      }
-    ],
-    "crr3": [
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
-          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
-        },
-        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
-        "s": {
-          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
-          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
-        "imp": "high"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern",
-          "en": "KWG und PfandBG: Bafin veröffentlicht Rundschreiben zu wichtigen Funktionsträgern"
-        },
-        "sl": "kwg-und-pfandbg-bafin-veroeffentlicht-rundschreiben-zu-wichtigen-funktionstraege",
-        "s": {
-          "de": "Die BaFin hat zwei Rundschreiben veröffentlicht, die ihre Verwaltungspraxis bezüglich wichtiger Funktionsträger nach dem Kreditwesengesetz (KWG) und dem Pfandbriefgesetz (PfandBG) konkretisieren. Es handelt sich um das Rundschreiben 10/2026 (BA) zur Bestellung von Verwaltern des Refinanzierungsregisters gemäß §§ 22e ff. KWG und das Rundschreiben 11/2026 (BA) zur Bestellung von Treuhändern bei einer Pfandbriefbank gemäß §§ 7 ff. PfandBG.\n\nDie Rundschreiben legen die Erwartungen der BaFin an die Unabhängigkeit, Zuverlässigkeit und Expertise dieser Funktionsträger sowie deren Stellvertreter fest. Institute müssen der BaFin entsprechende Nachweise vorlegen. Das Rundschreiben zu den Treuhändern ersetzt die bisherigen FAQs zu diesem Thema.\n\nDie BaFin unterstützt die Institute bei der Zusammenstellung der erforderlichen Unterlagen wie Lebenslauf, Führungszeugnis und Unabhängigkeitserklärung. Zudem informieren die Rundschreiben über die Verwaltungsverfahren, die Vergütung der Funktionsträger und die anfallenden Gebühren für die Bestellung.",
-          "en": "The BaFin has published two circulars specifying its administrative practice regarding key function holders under the German Banking Act (KWG) and the Pfandbrief Act (PfandBG). These are Circular 10/2026 (BA) on the appointment of administrators of the refinancing register according to §§ 22e et seq. KWG and Circular 11/2026 (BA) on the appointment of trustees at a Pfandbrief bank according to §§ 7 et seq. PfandBG.\n\nThe circulars outline BaFin's expectations regarding the independence, reliability, and expertise of these function holders and their deputies. Institutions must provide BaFin with corresponding evidence. The circular concerning trustees replaces the previous FAQs on this topic.\n\nBaFin assists institutions in compiling the necessary documents, such as CVs, certificates of good conduct, and declarations of independence. Furthermore, the circulars provide information on administrative procedures, remuneration of function holders, and the fees incurred for their appointment."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_14_kwg_pfandbg_rundschreiben_zu_wichtigen_funktionstraegern.html",
-        "imp": "high"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zur Bestellung von Verwaltern des Refinanzierungsregisters (10/2026)",
-          "en": "BaFin Circular on the Appointment of Refinancing Register Administrators (10/2026)"
-        },
-        "sl": "rundschreiben-10-2026-ba-bestellung-von-verwaltern-des-refinanzierungsregisters",
-        "s": {
-          "de": "Dieses Rundschreiben der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen. Es definiert die Kriterien für die Bestellung und Verlängerung der Bestellung dieser Verwalter, insbesondere hinsichtlich ihrer Unabhängigkeit, Zuverlässigkeit und Sachkunde.\n\nDas Rundschreiben richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Es legt dar, dass Verwalter natürliche Personen sein müssen, die unabhängig vom registerführenden Unternehmen agieren, zuverlässig sind und über spezifische Kenntnisse im Bereich KWG, RefiRegV, BGB und InsO verfügen. Die BaFin ist für die Bestellung zuständig, die auf Vorschlag des registerführenden Unternehmens erfolgt.\n\nDas Rundschreiben ist ab dem 14.09.2026 gültig. Es enthält detaillierte Vorgaben zu den einzureichenden Unterlagen, wie Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Unabhängigkeitserklärung, sowie Hinweise zur Vergütung und Gebührenpflichtigkeit der Bestellung.",
-          "en": "This BaFin circular specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation. It defines the criteria for the appointment and reappointment of these administrators, particularly regarding their independence, reliability, and expertise.\n\nThe circular is addressed to companies wishing to maintain a refinancing register and to applicants for the position of administrator. It stipulates that administrators must be natural persons who act independently of the register-keeping company, are reliable, and possess specific knowledge in the areas of KWG, RefiRegV, BGB, and InsO. BaFin is responsible for the appointment, which is made upon the proposal of the register-keeping company.\n\nThe circular is valid from September 14, 2026. It contains detailed requirements for the documents to be submitted, such as curriculum vitae, declaration of no criminal record, certificate of good conduct, and declaration of independence, as well as information on remuneration and the obligation to pay fees for the appointment."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_10_2026_bestellung_verw_refireg_ba.html",
-        "imp": "high",
-        "refnum": "10/2026"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zu Verwaltern des Refinanzierungsregisters (10/2026)",
-          "en": "BaFin Circular on Administrators of Refinancing Registers (10/2026)"
-        },
-        "sl": "rundschreiben-10-2026-ba",
-        "s": {
-          "de": "Das Rundschreiben 10/2026 (BA) der BaFin konkretisiert die Anforderungen an Verwalter von Refinanzierungsregistern gemäß §§ 22e ff. KWG und bietet praktische Hilfestellungen für die Zusammenstellung der erforderlichen Unterlagen.\n\nEs richtet sich an Unternehmen, die ein Refinanzierungsregister führen möchten, sowie an Bewerber für das Amt des Verwalters. Die BaFin legt dar, dass Verwalter unabhängig, zuverlässig und sachkundig sein müssen und das 75. Lebensjahr noch nicht vollendet haben dürfen. Insbesondere wird auf die Unabhängigkeit vom registerführenden Unternehmen, die Zuverlässigkeit hinsichtlich straf- und ordnungswidrigkeitenrechtlicher Aspekte sowie die erforderliche Sachkunde in Bezug auf KWG, RefiRegV, BGB und InsO eingegangen.\n\nDie Bestellung erfolgt durch die BaFin auf Vorschlag des registerführenden Unternehmens, in der Regel für fünf Jahre oder bis zur Vollendung des 75. Lebensjahres des Verwalters. Das Rundschreiben ist seit dem 14.09.2026 in Kraft und listet detailliert die einzureichenden Unterlagen auf, darunter Lebenslauf, Straffreiheitserklärung, Führungszeugnis und Auszug aus dem Gewerbezentralregister.",
-          "en": "BaFin Circular 10/2026 (BA) specifies the requirements for administrators of refinancing registers in accordance with §§ 22e et seq. KWG and provides practical guidance for compiling the necessary documentation.\n\nIt is addressed to companies wishing to maintain a refinancing register and to applicants for the administrator position. BaFin states that administrators must be independent, reliable, and competent, and must not have reached the age of 75. Special emphasis is placed on independence from the register-keeping company, reliability regarding criminal and administrative offenses, and the required expertise concerning KWG, RefiRegV, BGB, and InsO.\n\nThe appointment is made by BaFin upon proposal by the register-keeping company, typically for five years or until the administrator reaches the age of 75. The circular has been in effect since September 14, 2026, and details the documents to be submitted, including a CV, declaration of no criminal record, certificate of good conduct, and an extract from the central trade register."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_10_2026_bestellung_verwalter_refinanzierungsreg_ba.html",
-        "imp": "high",
-        "refnum": "10/2026"
       }
     ],
     "ecspr": [
