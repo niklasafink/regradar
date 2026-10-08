@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T15:07:54Z",
+  "generated_at": "2026-10-08T20:08:01Z",
   "updates": {
     "amla": [
       {
@@ -337,6 +337,26 @@
         "imp": "high"
       },
       {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Stellungnahme zu Krypto-Dienstleistungen für nicht MiCA-konforme ARTs und EMTs (ESMA75-113276571-1742)",
+          "en": "Opinion on crypto-asset services for non-MiCA-compliant ARTs and EMTs (ESMA75-113276571-1742)"
+        },
+        "sl": "opinion-on-the-provision-of-crypto-asset-services-in-relation-to-non-mica-compli",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme zur Erbringung von Krypto-Dienstleistungen in Bezug auf nicht MiCA-konforme Asset-referenced Tokens (ARTs) und E-Money Tokens (EMTs) veröffentlicht. Sie präzisiert, dass Krypto-Dienstleister (CASPs) keine Dienstleistungen für ARTs und EMTs erbringen sollten, die nicht den Anforderungen der MiCA-Verordnung entsprechen. Dies gilt unabhängig davon, ob die Dienstleistung selbst ein öffentliches Angebot oder eine Zulassung zum Handel darstellt.\n\nDie ESMA begründet dies damit, dass die Erbringung solcher Dienstleistungen Kunden Risiken aussetzt, die aus der fehlenden MiCA-Konformität der Tokens resultieren. Diese Risiken können von CASPs nicht angemessen identifiziert, verwaltet oder gemindert werden. Eine solche Praxis würde die Ziele der MiCA-Verordnung untergraben, insbesondere den Anlegerschutz und die Marktintegrität, und ein ungleiches Wettbewerbsfeld zwischen konformen und nicht-konformen Emittenten schaffen.\n\nDie Stellungnahme richtet sich primär an die nationalen zuständigen Behörden (NCAs), um eine gemeinsame Aufsichtskultur und konsistente Aufsichtspraktiken in der gesamten Union zu fördern. Sie ergänzt bestehende Leitlinien und soll eine einheitlichere Anwendung des MiCA-Rahmens gewährleisten.",
+          "en": "ESMA has published an opinion on the provision of crypto-asset services in relation to non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs). It clarifies that crypto-asset service providers (CASPs) should not provide services for ARTs and EMTs that do not comply with the requirements of the MiCA Regulation, regardless of whether the service itself constitutes a public offer or admission to trading.\n\nESMA justifies this by stating that providing such services exposes clients to risks arising from the tokens' non-MiCA compliance. These risks cannot be adequately identified, managed, or mitigated by CASPs. Such a practice would undermine the objectives of the MiCA Regulation, particularly investor protection and market integrity, and create an uneven playing field between compliant and non-compliant issuers.\n\nThe opinion is primarily addressed to national competent authorities (NCAs) to foster a common supervisory culture and consistent supervisory practices across the Union. It complements existing guidance and aims to ensure a more uniform application of the MiCA framework."
+        },
+        "url": "https://www.esma.europa.eu/document/opinion-provision-crypto-asset-services-relation-non-mica-compliant-asset-referenced",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1742"
+      },
+      {
         "d": "07.10.2026",
         "t": {
           "de": "Gesetzentwurf",
@@ -429,26 +449,6 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
         "imp": "medium",
         "refnum": "ESMA75-113276571-1525"
-      },
-      {
-        "d": "07.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
-          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
-        },
-        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
-          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1528"
       }
     ],
     "sanctions": [
