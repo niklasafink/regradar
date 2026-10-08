@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T02:07:32Z",
+  "generated_at": "2026-10-08T05:08:39Z",
   "updates": {
     "amla": [
       {
@@ -4240,6 +4240,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "08.10.2026",
+      "ti": "abcfinance GmbH: Bafin setzt Bußgeld fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_10_08_abcfinance_gmbh.html?cms_expanded=true",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat gegen die abcfinance GmbH Bußgelder von 90.000 Euro festgesetzt. Grund waren Verstöße gegen das Geldwäschegesetz. Das Institut hatte im April 2025 mehrere Verdachtsmeldungen verspätet abgegeben."
+    },
     {
       "d": "07.10.2026",
       "ti": "Patrick Montagner: Interview mit Les Echos",
