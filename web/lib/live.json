@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T06:47:35Z",
+  "generated_at": "2026-10-09T08:07:55Z",
   "updates": {
     "idd": [
       {
@@ -296,6 +296,66 @@
           "en": "EIOPA has launched two consultations on draft technical standards under the Insurance Recovery and Resolution Directive (IRRD). These drafts concern the valuation of (re)insurance undertakings and groups for resolution purposes.\n\nThe IRRD, set to become operational in January 2027, introduces a tailored framework for the recovery and resolution of (re)insurers in Europe. Its aim is to maintain the stability of the European insurance sector while enabling the orderly winding-down of failing undertakings. The consultations focus on the methodology for valuing assets and liabilities in the context of resolution and on calculating a buffer for additional losses.\n\nStakeholders are invited to submit feedback on the consultation papers by 20 October 2026. These are EIOPA's final two consultations on the 19 policy instruments supporting the implementation of the IRRD."
         },
         "url": "https://www.eiopa.europa.eu/eiopa-launches-consultation-irrd-draft-technical-standards-covering-valuation-reinsurers-context-2026-07-08_en",
+        "imp": "medium"
+      }
+    ],
+    "dltpilot": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (ESMA91-1505572268-4934)",
+          "en": "Call for evidence on the CCP collateral tokenisation (ESMA91-1505572268-4934)"
+        },
+        "sl": "call-for-evidence-on-the-ccp-collateral-tokenisation",
+        "s": {
+          "de": "Die ESMA hat ein Konsultationspapier zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (CCPs) veröffentlicht. Ziel ist es, die Auswirkungen der Tokenisierung auf die Mobilisierung, Übertragung, Verwaltung, den Schutz und die Verwertung von Sicherheiten zu untersuchen. Dabei soll geklärt werden, ob der bestehende Regulierungs- und Aufsichtsrahmen noch angemessen ist.\n\nDas Papier richtet sich an CCPs, Clearing-Mitglieder, deren Kunden sowie Marktinfrastrukturen (CSDs, Verwahrer, Triparty-Agenten) und Anbieter von Tokenisierungs- oder DLT-Lösungen. Es ist auch relevant für Rechtsexperten, Branchenverbände und andere Stakeholder, die im Sicherheitenmanagement, bei Post-Trade-Dienstleistungen oder der Entwicklung digitaler Finanzmarktinfrastrukturen tätig sind. Die ESMA möchte ein besseres Verständnis für die Implikationen der Tokenisierung von Sicherheiten gewinnen, bevor sie über mögliche regulatorische Maßnahmen entscheidet.\n\nInteressierte Parteien können bis zum 15. Januar 2027 Stellungnahmen einreichen. Alle Beiträge werden nach Abschluss der Konsultation veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
+          "en": "ESMA has published a consultation paper on the tokenisation of collateral for central counterparties (CCPs). The aim is to investigate the implications of tokenisation for the mobilisation, transfer, management, protection, and realisation of collateral. It seeks to clarify whether the existing regulatory and supervisory framework remains adequate.\n\nThe paper is addressed to CCPs, clearing members and their clients, as well as market infrastructures (CSDs, custodians, triparty agents) and providers of tokenisation or DLT solutions. It is also relevant for legal experts, industry associations, and other stakeholders involved in collateral management, post-trade services, or digital financial market infrastructure developments. ESMA aims to gain a better understanding of the implications of collateral tokenisation before deciding on potential regulatory actions.\n\nInterested parties can submit comments until 15 January 2027. All contributions will be published after the close of the consultation, unless confidentiality is requested."
+        },
+        "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation",
+        "imp": "medium",
+        "refnum": "ESMA91-1505572268-4934"
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
+          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
+        },
+        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
+          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
+        "imp": "medium"
+      },
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
+          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
+        },
+        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
+          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
         "imp": "medium"
       }
     ],
@@ -1057,46 +1117,6 @@
             "d": "24.05.2026"
           }
         ]
-      }
-    ],
-    "dltpilot": [
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
-          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
-        },
-        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
-          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
-        "imp": "medium"
-      },
-      {
-        "d": "23.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
-          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
-        },
-        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
-          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
-        "imp": "medium"
       }
     ],
     "ebaderisking": [
