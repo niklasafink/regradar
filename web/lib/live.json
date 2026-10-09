@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:07:36Z",
+  "generated_at": "2026-10-09T21:11:26Z",
   "updates": {
     "idd": [
       {
@@ -481,6 +481,529 @@
         "refnum": "32026R2191"
       }
     ],
+    "brrd": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Klassifizierung von Tier-2-Emissionen bei Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung (Q&A 2026_7797)",
+          "en": "Classification of Tier 2 Subordinated Issuances Losing MREL Computability Due to Early Call (Q&A 2026_7797)"
+        },
+        "sl": "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr",
+        "s": {
+          "de": "Die EBA präzisiert die Klassifizierung von nachrangigen Tier-2-Emissionen im Rahmen des BRRD-Reportings, wenn diese ihre MREL-Anrechenbarkeit aufgrund einer vorzeitigen Rückzahlung verlieren, die bereits angekündigt, aber noch nicht ausgeführt wurde.\n\nEin Instrument, für das eine vorzeitige Rückzahlung angekündigt wurde, soll weiterhin in Zeile r0531 des Templates Z 02.00 als Teil der als Eigenmittel anerkannten nachrangigen Verbindlichkeiten ausgewiesen werden. Die Abzugsfähigkeit vom Tier-2-Kapital ändert nichts an der Einstufung des Instruments selbst. Die insolvenzrechtliche Rangfolge des Instruments bleibt unverändert und richtet sich nach dem nationalen Insolvenzrecht.\n\nIm Template Z 12.00 ist der Betrag, der die Bedingungen für die MREL-Anrechenbarkeit erfüllt, nach dem Abzug aufgrund der angekündigten Rückzahlung als Null auszuweisen.",
+          "en": "The EBA clarifies the classification of Tier 2 subordinated issuances for BRRD reporting purposes when they lose their MREL computability due to an early call that has been announced but not yet executed.\n\nAn instrument for which an early redemption has been announced should continue to be reported in row r0531 of template Z 02.00 as part of subordinated liabilities recognized as own funds. The deduction from Tier 2 capital does not change the classification of the instrument itself. The insolvency ranking of the instrument remains unchanged and is determined by national insolvency law.\n\nIn template Z 12.00, the amount meeting the conditions for MREL eligibility shall be reported as zero after the deduction following the announced redemption."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7797",
+        "imp": "medium"
+      },
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Ausfüllung der Meldung Z 08.02 (Q&A 2026_7927)",
+          "en": "Completion of the Z 08.02 Template (Q&A 2026_7927)"
+        },
+        "sl": "completion-of-the-z08-02-template",
+        "s": {
+          "de": "Die EBA hat eine finale Q&A zur Ausfüllung der Meldung Z 08.02 gemäß der Abwicklungsplanungs-Berichtsverordnung (Regulation (EU) 2025/2303) veröffentlicht. Die Frage betrifft die Abbildung von operativen Vermögenswerten im Zusammenhang mit externen Dienstleistungen.\n\nZ 08.02 erfasst operative Vermögenswerte, die kritische Funktionen oder Kerngeschäftsfelder unterstützen, auch wenn die Dienstleistung extern erbracht wird. Ein Vermögenswert, der ausschließlich einem Drittanbieter gehört und von diesem betrieben wird und auf den kein konzerninterner oder unternehmensinterner Dienstleister zugreifen muss, fällt nicht in den Anwendungsbereich von Z 08.02. Wenn ein externer Anbieter ein IT-System oder eine Anwendung unterstützt, die von einer Konzerneinheit besessen, geleast oder lizenziert ist und diese den relevanten Dienst unterstützt, muss der Vermögenswert gemeldet und die Spalten 0030, 0040, 0050 und 0080 ausgefüllt werden. Bei externen Dienstleistungen, die nicht von einem operativen Vermögenswert der Konzerneinheit abhängen (z.B. physischer Geldtransport), ist kein Vermögenswert in Z 08.02 zu melden.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die unter die BRRD-Berichtspflicht fallen und die Meldung Z 08.02 erstellen. Sie präzisiert, welche Arten von Vermögenswerten im Kontext externer Dienstleistungen zu melden sind und welche nicht, was die korrekte und konsistente Datenmeldung sicherstellt.",
+          "en": "The EBA has published a final Q&A on the completion of template Z 08.02 under the Resolution Planning Reporting Regulation (Regulation (EU) 2025/2303). The question concerns the mapping of operational assets in relation to external services.\n\nZ 08.02 identifies operational assets that underpin services supporting critical functions or core business lines, including where the related service is provided externally. However, an asset owned and operated solely by a third-party service provider, to which no intra-group or intra-entity service provider requires access, is outside the scope of Z 08.02. Where an external provider supports an IT system or application that is owned, leased, or licensed by a group entity and that asset supports the relevant service, the asset should be reported, and columns 0030, 0040, 0050, and 0080 should be completed. Conversely, where an external service, such as physical cash transportation, does not depend on an operational asset of a group entity, no asset should be reported in Z 08.02.\n\nThis clarification is relevant for credit institutions subject to BRRD reporting requirements and completing template Z 08.02. It specifies which types of assets are to be reported in the context of external services and which are not, ensuring correct and consistent data reporting."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7927",
+        "imp": "low",
+        "refnum": "2026_7927"
+      },
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A 2026_7926: Meldung von Anwendungen verbundener Dienstleister in Template Z08.02",
+          "en": "EBA Q&A 2026_7926: Reporting of applications owned and operated by affiliated service providers in Template Z08.02"
+        },
+        "sl": "template-z08-02-reporting-of-applications-owned-and-operated-by-affiliated-servi",
+        "s": {
+          "de": "Die EBA hat eine Klarstellung zur Meldung von Anwendungen in Template Z08.02 veröffentlicht. Demnach müssen Finanzinstitute auch Anwendungen melden, die von verbundenen Dienstleistern betrieben werden, sofern diese kritische Funktionen oder Kerngeschäftsbereiche der Gruppe unterstützen.\n\nDies betrifft alle Kreditinstitute, die Dienstleistungen von verbundenen Unternehmen beziehen und dabei auf deren Anwendungen angewiesen sind. Die Meldung erfolgt auf Gruppenebene und umfasst alle operativen Vermögenswerte, die kritische Funktionen oder Kerngeschäftsbereiche der Gruppe unterstützen, unabhängig davon, ob sie direkt von der meldenden Einheit kontrolliert werden oder von verbundenen Unternehmen stammen. Die Informationen in Spalte 0070 (Rechts-/Vertragsart) sind aus Sicht des Unternehmens anzugeben, zu dem der konzerninterne Dienstleister gehört.\n\nDie finale Antwort wurde am 18.09.2026 veröffentlicht.",
+          "en": "The EBA has published a clarification on the reporting of applications in Template Z08.02. Accordingly, financial institutions must also report applications operated by affiliated service providers, provided these support critical functions or core business lines of the group.\n\nThis applies to all credit institutions that receive services from affiliated entities and rely on their applications. Reporting is done at group level and includes all operational assets supporting the group's critical functions or core business lines, regardless of whether they are directly controlled by the reporting entity or originate from affiliated entities. The information in column 0070 (legal/contract type) must be provided from the perspective of the entity to which the intra-group service provider belongs.\n\nThe final answer was published on 18.09.2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7926",
+        "imp": "low",
+        "refnum": "2026_7926"
+      },
+      {
+        "d": "07.08.2020",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
+          "en": "ITS on application of article 55 BRRD (Ares(2020)4105668)"
+        },
+        "sl": "its-on-application-of-article-55-brrd",
+        "s": {
+          "de": "Die Europäische Kommission plant die Entwicklung von technischen Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD).\n\nDiese ITS werden voraussichtlich detaillierte Verfahren und Formate für die Umsetzung der Anforderungen von Artikel 55 BRRD festlegen. Dies ist relevant für Kreditinstitute und Wertpapierfirmen, da Artikel 55 BRRD die vertragliche Anerkennung von Abwicklungsbefugnissen regelt und somit Auswirkungen auf die Gestaltung von Verträgen und die Risikobewertung hat.\n\nDer Verfahrensstand ist derzeit \"Init Planned\", was bedeutet, dass die Arbeiten an diesem Legislativvorschlag noch am Anfang stehen.",
+          "en": "The European Commission is planning to develop Implementing Technical Standards (ITS) for the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD).\n\nThese ITS are expected to specify detailed procedures and formats for implementing the requirements of Article 55 BRRD. This is relevant for credit institutions and investment firms, as Article 55 BRRD governs the contractual recognition of resolution powers and thus impacts contract design and risk assessment.\n\nThe procedural status is currently \"Init Planned,\" indicating that work on this legislative proposal is still in its initial stages."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
+        "imp": "medium",
+        "refnum": "Ares(2020)4105668"
+      }
+    ],
+    "taxonomy": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Klarstellung zur Meldung von FMI-Dienstleistungen in Vorlage Z 09.01 (Q&A 2026_7823)",
+          "en": "Clarification on FMI Services Reporting in Template Z 09.01 (Q&A 2026_7823)"
+        },
+        "sl": "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii",
+        "s": {
+          "de": "Die EBA hat eine Klarstellung zur Meldung von Vorlagen im Rahmen der Abwicklungsplanung (ITS on Resolution Planning Reporting) veröffentlicht. Konkret geht es um die Vorlage Z 09.01, die Informationen zu Finanzmarktinfrastruktur-Dienstleistungen (FMI Services) erfasst.\n\nEs wurde präzisiert, dass Spalte 0110 (\"Criticality assessment by provider\") in Vorlage Z 09.01 nicht leer gelassen werden darf, auch wenn in Spalte 0090 \"Direct\" angegeben ist. Stattdessen muss in Spalte 0110 \"Not applicable\" eingetragen werden, da Spalte 0110 Teil des Primärschlüssels ist und somit keine Nullwerte zulässt. Die Anweisungen werden entsprechend angepasst.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Meldungen zur Abwicklungsplanung gemäß der BRRD einreichen müssen. Sie betrifft die technische Umsetzung der Meldepflichten und stellt sicher, dass die Datenkonsistenz in der EBA-Taxonomie gewahrt bleibt. Institute sollten ihre Meldeprozesse entsprechend anpassen, um \"Not applicable\" statt eines leeren Feldes zu verwenden.",
+          "en": "The EBA has published a clarification regarding the reporting of templates under the ITS on Resolution Planning Reporting. Specifically, it concerns template Z 09.01, which collects information on Financial Market Infrastructure (FMI) Services.\n\nIt has been clarified that column 0110 (\"Criticality assessment by provider\") in template Z 09.01 must not be left blank, even when 'Direct' is reported in column 0090. Instead, 'Not applicable' must be reported in column 0110, as column 0110 is part of the primary key and thus does not allow null values. The instructions will be amended accordingly.\n\nThis clarification is relevant for credit institutions that are required to submit resolution planning reports under the BRRD. It concerns the technical implementation of reporting obligations and ensures data consistency within the EBA taxonomy. Institutions should adjust their reporting processes to use 'Not applicable' instead of a blank field."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7823",
+        "imp": "high"
+      },
+      {
+        "d": "16.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Öffentliche Anhörung zur Überprüfung der Versicherungs-Offenlegungspflichten unter der Taxonomie-Verordnung (Artikel 8)",
+          "en": "Public Hearing on the Review of Insurance Disclosures under the Taxonomy Regulation (Article 8)"
+        },
+        "sl": "public-hearing-on-the-review-of-the-insurance-disclosures-under-article-8-of-the",
+        "s": {
+          "de": "Die EIOPA veranstaltet eine öffentliche Anhörung zur Überprüfung der Offenlegungspflichten für Versicherungen gemäß Artikel 8 der Taxonomie-Verordnung. Ziel ist es, Interessengruppen auf den Konsultationsprozess vorzubereiten und die Vorschläge der EIOPA besser zu erläutern.\n\nDie Europäische Kommission hat die ESAs (EBA, EIOPA, ESMA) um technische Beratung zu gezielten Änderungen des EU-Taxonomie-Offenlegungsrahmens gebeten. Für die EIOPA liegt der Fokus auf der Überprüfung des bestehenden Taxonomie-Underwriting-KPI für Erst- und Rückversicherungsunternehmen sowie der Verbesserung der Konsistenz der Offenlegungen mit anderen Finanzsektoren durch einen neuen KPI zur Messung der Taxonomie-Ausrichtung versicherter Aktivitäten. Zudem sollen Vereinfachungen und technische Verbesserungen zur Steigerung der Benutzerfreundlichkeit der Taxonomie-Berichterstattung identifiziert werden, um Transparenz zu wahren und Greenwashing zu verhindern.\n\nDie EIOPA beabsichtigt, in der ersten Juliwoche ein Konsultationspapier zu veröffentlichen, das die Anfragen der Kommission bezüglich der Taxonomie-bezogenen Offenlegungen von (Rück-)Versicherungsunternehmen zum Underwriting sowie in Abstimmung mit ESMA und EBA Verbesserungen der Offenlegungen für Finanzkonglomerate und andere Gruppen behandelt. Die öffentliche Anhörung findet am 16. Juli 2026 statt.",
+          "en": "EIOPA is holding a public hearing on the review of insurance disclosures under Article 8 of the Taxonomy Regulation. The aim is to prepare stakeholders for the consultation process and to better explain EIOPA's proposals.\n\nThe European Commission has requested technical advice from the ESAs (EBA, EIOPA, ESMA) on targeted amendments to the EU Taxonomy disclosure framework. For EIOPA, the focus is on reviewing the existing Taxonomy underwriting KPI for insurance and reinsurance undertakings and improving the consistency of disclosures with other financial sectors through a new KPI measuring the Taxonomy alignment of insured activities. Additionally, simplifications and technical improvements to enhance the usability of Taxonomy reporting are to be identified, while preserving transparency and preventing greenwashing.\n\nEIOPA intends to publish a Consultation Paper in the first week of July, addressing the Commission's requests regarding (re)insurance undertakings' Taxonomy-related disclosures on underwriting, as well as, in coordination with ESMA and EBA, improvements to disclosures for financial conglomerates and other groups. The public hearing will take place on 16 July 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/media/events/public-hearing-review-insurance-disclosures-under-article-8-taxonomy-regulation-2026-07-16_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Überprüfung der Offenlegungspflichten für Versicherungen unter dem Taxonomie-Delegierten Rechtsakt (EIOPA)",
+          "en": "Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act (EIOPA)"
+        },
+        "sl": "consultation-on-the-review-of-insurance-disclosures-under-the-taxonomy-disclosur",
+        "s": {
+          "de": "Die EIOPA hat eine Konsultation zu vorgeschlagenen Änderungen der Offenlegungspflichten für Versicherungsunternehmen im Rahmen der EU-Taxonomie für ökologisch nachhaltige Aktivitäten durchgeführt. Die Entwürfe zielen darauf ab, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Taxonomie-bezogenen Berichtspflichten der Versicherer besser an andere Rahmenwerke für nachhaltige Finanzen sowie an die Anforderungen für andere Finanzinstitute anzugleichen.\n\nDiese Änderungen betreffen Versicherungsunternehmen, die unter die EU-Taxonomie fallen. Praktisch bedeutet dies eine Anpassung der Offenlegungspraktiken, um eine konsistentere und vergleichbarere Berichterstattung über nachhaltige Aktivitäten zu gewährleisten. Die Angleichung an andere Finanzrahmenwerke könnte den Compliance-Aufwand durch Harmonisierung reduzieren.\n\nDie Konsultationsfrist endete am 12. August 2026. Die EIOPA hat am 28. August 2026 die Antworten auf die Konsultation veröffentlicht.",
+          "en": "EIOPA has conducted a consultation on proposed changes to insurance corporate disclosure requirements under the EU Taxonomy framework for environmentally sustainable activities. The draft proposals aim to increase transparency, simplify reporting, and better align insurers' Taxonomy-related reporting requirements with other sustainable finance frameworks as well as with requirements applicable to other financial institutions.\n\nThese changes affect insurance undertakings falling under the EU Taxonomy. Practically, this means an adjustment of disclosure practices to ensure more consistent and comparable reporting on sustainable activities. Alignment with other financial frameworks could reduce compliance efforts through harmonization.\n\nThe consultation period ended on August 12, 2026. EIOPA published the responses to the consultation on August 28, 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-review-insurance-disclosures-under-taxonomy-disclosures-delegated-act_en",
+        "imp": "medium",
+        "deadline": "12.08.2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: Konsultationen zur Vereinfachung der EU-Taxonomie",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255637/konsultationen-zur-vereinfachung-der-eu-taxonomie/",
+            "d": "02.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EIOPA konsultiert Verbesserungen der Unternehmensangaben zur EU-Taxonomie (Versicherung)",
+          "en": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities"
+        },
+        "sl": "eiopa-consults-on-enhancements-to-insurance-corporate-disclosures-under-eu-taxon",
+        "s": {
+          "de": "Die EIOPA konsultiert Vorschläge zur Verbesserung der Unternehmensangaben von Versicherern gemäß der EU-Taxonomie. Ziel ist es, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Anforderungen besser an andere nachhaltige Finanzrahmen sowie an andere Finanzinstitute anzugleichen.\n\nWesentliche Änderungen umfassen die Überarbeitung des „Underwriting KPI“ für (Rück-)Versicherer, indem der Nenner auf taxonomiekonforme Geschäftsbereiche eingeengt und der KPI in „Adaptation Underwriting KPI“ umbenannt wird. Zudem wird die Einführung eines neuen „Green Insured Activities KPI“ vorgeschlagen, um den Anteil taxonomiekonformer versicherter Aktivitäten zu messen. Dieser KPI würde alle Policen abdecken, die an Unternehmen verkauft werden, die unter die Taxonomie-Verordnung fallen, sowie private Versicherungen für Wohnen und Transport.\n\nDie Konsultation läuft bis zum 12. August 2026. Eine öffentliche Anhörung findet am 16. Juli statt. Die Vorschläge erfolgen auf Anfrage der Europäischen Kommission an die ESAs zur Vereinfachung und Verbesserung des Delegierten Rechtsakts zu Offenlegungen unter der Taxonomie-Verordnung.",
+          "en": "EIOPA is consulting on proposed enhancements to insurance corporate disclosures under the EU Taxonomy framework. The aim is to increase transparency, simplify reporting, and better align requirements with other sustainable finance frameworks and those applicable to other financial institutions.\n\nKey amendments include revising the 'underwriting KPI' for (re)insurers by narrowing the denominator to Taxonomy-eligible lines of business and renaming it to 'Adaptation Underwriting KPI'. Furthermore, the introduction of a new 'Green Insured Activities KPI' is proposed to measure the ratio of Taxonomy-aligned insured activities. This KPI would cover all policies sold to companies reporting under the Taxonomy Regulation, as well as retail insurance policies for housing and transport.\n\nThe consultation period ends on 12 August 2026, with a public hearing scheduled for 16 July. These proposals are in response to a European Commission request to the ESAs for technical advice on simplifying and improving the Disclosures Delegated Act under the Taxonomy Regulation."
+        },
+        "url": "https://www.eiopa.europa.eu/eiopa-consults-enhancements-insurance-corporate-disclosures-under-eu-taxonomy-environmentally-2026-07-01_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.06.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
+          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
+        },
+        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
+        "s": {
+          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
+          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
+        "imp": "medium",
+        "refnum": "T-77/24"
+      }
+    ],
+    "crr3": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
+          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
+        },
+        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
+        "s": {
+          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
+          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
+        "imp": "medium"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung zur Methodik der Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026 (08/2026)",
+          "en": "Supervisory Notice on the Methodology for Own Funds Recommendation (Pillar 2 Guidance – P2G) from 2026 (08/2026)"
+        },
+        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
+        "s": {
+          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) für Institute. Diese Aufsichtsmitteilung konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines und ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank.\n\nKünftig erhalten nur Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen identifizierten Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Der Kalibrierungsfaktor zur Berechnung der Höhe der Eigenmittelempfehlung wird zu jedem LSI-Stresstest neu festgelegt und beträgt für 2026 65%.",
+          "en": "The BaFin provides information on the methodology and process for Pillar 2 Guidance (P2G) for institutions. This supervisory notice specifies § 6d para. 1 KWG in conjunction with the EBA SREP Guidelines and complements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with solid capitalisation or low identified risks should generally no longer receive a recommendation for additional own funds.\n\nThe supervisory notice is valid from 08.10.2026 until 30.08.2028. The calibration factor for calculating the amount of the own funds recommendation will be redefined for each LSI stress test and is 65% for 2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_08_2026_methodik_zur_eigenmittelempfehlung_ab_2026_ba.html",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung",
+          "en": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung"
+        },
+        "sl": "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung",
+        "s": {
+          "de": "Die BaFin hat die Aufsichtsmitteilung „08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026“ veröffentlicht. Darin wird präzisiert, wie die BaFin Kreditinstitute über Eigenmittelempfehlungen informiert und wie diese berechnet werden. Die neue Methodik zielt darauf ab, die Aufsicht proportionaler und risikoorientierter zu gestalten und Bürokratie abzubauen.\n\nKünftig müssen nur noch Institute zusätzliche Eigenmittel vorhalten, die beim aufsichtlichen Stresstest für kleine und mittlere Institute (LSI-Stresstest) im Stressszenario bestimmte Kapitalschwellen unterschreiten. Die teilnehmenden Institute erhalten bereits während der Erhebung des Stresstests eine Indikation, ob sie voraussichtlich eine Empfehlung für zusätzliche Eigenmittel erhalten werden. Dies entlastet Institute spürbar durch eine risikoorientierte Herangehensweise.\n\nDie neue Methodik gilt für alle Institute, Institutsgruppen, Finanzholding-Gruppen und gemischten Finanzholding-Gruppen, die unter den Anwendungsbereich des § 6d Absatz 1 Kreditwesengesetz fallen.",
+          "en": "The BaFin has published Supervisory Notice “08/2026 (BA): Methodology for the Capital Recommendation from 2026”. It specifies how BaFin informs credit institutions about capital recommendations and how these are calculated. The new methodology aims to make supervision more proportionate and risk-oriented and to reduce bureaucracy.\n\nIn the future, only institutions that fall below certain capital thresholds in the stress scenario of the supervisory stress test for small and medium-sized institutions (LSI stress test) will have to hold additional capital. Participating institutions will receive an indication during the stress test data collection as to whether they are likely to receive a recommendation for additional capital. This significantly relieves institutions through a risk-oriented approach.\n\nThis new methodology applies to all institutions, institutional groups, financial holding groups, and mixed financial holding groups that fall within the scope of Section 6d (1) of the German Banking Act (Kreditwesengesetz)."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_08_methodik_zur_eigenmittelempfehlung.html",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026",
+          "en": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026"
+        },
+        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
+        "s": {
+          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026. Ziel ist es, Transparenz bei der Ermittlung der Eigenmittelempfehlung zu schaffen und aufsichtliche Prozesse zu vereinfachen. Die Mitteilung ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank und konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines.\n\nKünftig erhalten nur noch Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten. Die Berechnung der Eigenmittelempfehlung erfolgt durch Multiplikation des Kapitalverzehrs aus dem adversen Szenario mit einem Kalibrierungsfaktor, der für 2026 auf 65 % festgelegt wurde.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Eine Überführung in ein Rundschreiben ist vorgesehen, sofern sich die Verwaltungspraxis verstetigt. Der Kalibrierungsfaktor wird zu jedem LSI-Stresstest neu festgelegt.",
+          "en": "BaFin provides information on the methodology and process for the Pillar 2 Guidance (P2G) recommendation for own funds from 2026. The aim is to create transparency in determining the own funds recommendation and to simplify supervisory processes. This notice supplements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank and specifies Section 6d (1) of the German Banking Act (KWG) in conjunction with the EBA SREP Guidelines.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with sound capitalisation or low risks should generally no longer receive a recommendation for additional own funds. The own funds recommendation is calculated by multiplying the capital consumption from the adverse scenario by a calibration factor, which has been set at 65% for 2026.\n\nThe supervisory notice is valid from 08 October 2026 until 30 August 2028. It is intended to be converted into a circular if the administrative practice becomes established. The calibration factor will be redefined for each LSI stress test."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/Aufsichtsmitteilung/dl_am_08.2026_methodik_zur_eigenmittelempfehlung_ba.html",
+        "imp": "high"
+      }
+    ],
+    "itsrep": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
+          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
+        },
+        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
+          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
+        "imp": "low"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
+          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
+        },
+        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
+          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
+        "imp": "medium"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
+          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
+        },
+        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
+        "s": {
+          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
+          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+        "imp": "medium"
+      },
+      {
+        "d": "24.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
+          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
+        },
+        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
+        "s": {
+          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
+          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+        "imp": "medium"
+      },
+      {
+        "d": "03.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
+          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
+        },
+        "sl": "sectoral-classification-of-uk-credit-institutions",
+        "s": {
+          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
+          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
+        "imp": "low",
+        "refnum": "2026_7843"
+      },
+      {
+        "d": "30.10.2025",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bundesbank.de",
+        "ti": {
+          "de": "Bankenstatistik: Hinweise zu Mindestreserven, NACE Rev. 2.1 und EUREX Clearing AG",
+          "en": "Banking Statistics: Guidance on Minimum Reserves, NACE Rev. 2.1, and EUREX Clearing AG"
+        },
+        "sl": "bankenstatistik-hier-hinweise-zu-den-mindestreserven-zur-anwendung-des-rahmenwer",
+        "s": {
+          "de": "Die Bundesbank informiert über Änderungen im bankstatistischen Meldewesen. Es werden Hinweise zu den Mindestreserven gegeben, insbesondere zur Anwendung des Rahmenwerks NACE Rev. 2.1. Dies betrifft die Klassifizierung von Wirtschaftszweigen, die für die Meldung statistischer Daten relevant ist.\n\nDie Änderungen sind für alle Kreditinstitute relevant, die der Bankenstatistik unterliegen. Die korrekte Anwendung des NACE Rev. 2.1-Rahmenwerks ist entscheidend für die Einhaltung der Meldepflichten und die korrekte Berechnung der Mindestreserven. Zudem werden spezifische Hinweise zur EUREX Clearing Aktiengesellschaft gegeben, die für Institute mit Geschäftsbeziehungen zu dieser Einrichtung von Bedeutung sind.\n\nDie Hinweise sind ab dem 30.10.2025 zu beachten.",
+          "en": "The Bundesbank provides information on changes in banking statistics reporting. Guidance is given on minimum reserves, particularly regarding the application of the NACE Rev. 2.1 framework. This concerns the classification of economic activities, which is relevant for reporting statistical data.\n\nThe changes are relevant for all credit institutions subject to banking statistics. The correct application of the NACE Rev. 2.1 framework is crucial for compliance with reporting obligations and the correct calculation of minimum reserves. Additionally, specific guidance is provided for EUREX Clearing Aktiengesellschaft, which is important for institutions with business relationships with this entity.\n\nThe guidance is to be observed from 30.10.2025."
+        },
+        "url": "https://www.bundesbank.de/resource/blob/970024/dadc0c2fdecc01fea0e3b2ea90168f46/472B63F073F071307366337C94F8C870/2025-10-31-rs-57-data.pdf",
+        "imp": "medium"
+      }
+    ],
+    "emir": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Definition der Substituierbarkeit von CCPs und Meldung alternativer Anbieter (RESOL II) (Q&A 2026_7912)",
+          "en": "Definition of “Substitutability” of CCPs and the connected reporting of “Alternative Providers” (RESOL II) (Q&A 2026_7912)"
+        },
+        "sl": "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of",
+        "s": {
+          "de": "Die EBA präzisiert die Definition der „Substituierbarkeit“ von Zentralen Gegenparteien (CCPs) und die Meldung von „alternativen Anbietern“ für das Template Z 09.04 (RESOL II). Die Substituierbarkeit ist im Hinblick auf die fortgesetzte Bereitstellung des Clearing-Dienstes für den in Spalte 0020 gemeldeten Produkttyp zu beurteilen. Dabei muss der alternative Anbieter nicht denselben Handelsplatz oder Markt bedienen wie die ursprüngliche CCP.\n\nEin alternativer Anbieter kann eine andere CCP oder ein Intermediär, einschließlich eines Brokers, sein, sofern das meldende Institut zum Meldezeitpunkt eine entsprechende vertragliche Beziehung zu diesem Anbieter hat und die Vereinbarung die Fortsetzung der Clearing-Aktivität innerhalb eines angemessenen Zeitrahmens nach einem Abwicklungsereignis ermöglichen würde. Dies kann auch die Umleitung der Clearing-Aktivität über eine alternative Marktinfrastruktur umfassen. Spalte 0040 soll den FMI oder Intermediär identifizieren, der den alternativen Anbieter des Clearing-Dienstes darstellt oder Zugang dazu bietet, nicht alle beteiligten FMIs der Wertschöpfungskette.\n\nDie Nutzung eines anderen Handelsplatzes oder Marktes schließt eine Alternative nicht aus dem Anwendungsbereich von Z 09.04 aus. Rein hypothetische Alternativen, für die zum Meldezeitpunkt keine vertragliche Beziehung besteht, sind jedoch nicht als Ersatzanbieter zu melden. Die EBA beantwortet damit eine Frage zur Auslegung der BRRD-Berichterstattung gemäß Artikel 11 Absatz 3 und der ITS zur Abwicklungsplanungsberichterstattung (Verordnung (EU) 2025/2303, Artikel 3 Absatz 1).",
+          "en": "The EBA clarifies the definition of “substitutability” of Central Counterparties (CCPs) and the reporting of “alternative providers” for template Z 09.04 (RESOL II). Substitutability must be assessed in relation to the continued provision of the clearing service for the product type reported in column 0020. The alternative provider does not have to serve the same trading venue or market as the original CCP.\n\nAn alternative provider can be another CCP or an intermediary, including a broker, provided that the reporting institution has a relevant contractual relationship with that provider at the reporting date and the arrangement would enable the relevant clearing activity to be continued within a reasonable timeframe following a resolution event. This may include rerouting clearing activity through alternative market infrastructure. Column 0040 should identify the FMI or intermediary that constitutes the alternative provider of, or provides access to, the substitute clearing service, not all FMIs involved in the value chain.\n\nThe use of a different trading venue or market does not in itself exclude an alternative from the scope of Z 09.04. However, purely hypothetical alternatives for which the required contractual relationship does not exist at the reporting date are not to be reported as substitute providers. The EBA thus answers a question on the interpretation of BRRD reporting according to Article 11(3) and the ITS on Resolution Planning Reporting (Regulation (EU) 2025/2303, Article 3(1))."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7912",
+        "imp": "medium"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      },
+      {
+        "d": "11.03.2024",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Transaktionsregister (Ares(2023)5151234)",
+          "en": "Harmonisation and simplification of ESMA fees for trade repositories (Ares(2023)5151234)"
+        },
+        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Entwurf zur Harmonisierung und Vereinfachung der Gebühren vorgelegt, die die ESMA von Transaktionsregistern (TRs) erhebt. Ziel ist es, die Gebührenstruktur zu optimieren und an die aktuellen Marktbedingungen anzupassen. Dies soll die Effizienz der Gebührenerhebung verbessern und die Transparenz für die betroffenen Unternehmen erhöhen.\n\nDiese Anpassungen sind für alle Transaktionsregister relevant, die unter die Aufsicht der ESMA fallen. Die Vereinfachung der Gebührenberechnung und -erhebung soll den administrativen Aufwand für diese Institute reduzieren und eine fairere Verteilung der Kosten gewährleisten. Die Maßnahme zielt darauf ab, die Einhaltung der Vorschriften zu erleichtern und die Wettbewerbsfähigkeit zu fördern.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow der Europäischen Kommission, was bedeutet, dass die finalen Schritte zur Verabschiedung eingeleitet wurden.",
+          "en": "The European Commission has presented a draft proposal to harmonize and simplify the fees charged by ESMA to trade repositories (TRs). The aim is to optimize the fee structure and adapt it to current market conditions. This is intended to improve the efficiency of fee collection and increase transparency for the affected entities.\n\nThese adjustments are relevant for all trade repositories under ESMA's supervision. The simplification of fee calculation and collection aims to reduce the administrative burden for these institutions and ensure a fairer distribution of costs. The measure seeks to facilitate compliance and promote competitiveness.\n\nThe proposal is currently in the European Commission's adoption workflow, meaning the final steps towards its enactment have been initiated."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13933",
+        "imp": "medium",
+        "refnum": "Ares(2023)5151234"
+      },
+      {
+        "d": "22.06.2022",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Äquivalenzentscheidung unter EMIR für zentrale Gegenparteien (Ares(2021)230060)",
+          "en": "Equivalence decision under EMIR for central counterparties (Ares(2021)230060)"
+        },
+        "sl": "equivalence-decision-under-emir-central-counterparties",
+        "s": {
+          "de": "Dieses Dokument ist ein Legislativvorschlag der Europäischen Kommission bezüglich einer Äquivalenzentscheidung unter EMIR für zentrale Gegenparteien. Es handelt sich um einen Verfahrensstand im Adoptions-Workflow.\n\nDie Äquivalenzentscheidung ist für Finanzinstitute relevant, die mit zentralen Gegenparteien aus Drittländern zusammenarbeiten. Sie bestimmt, ob die Regulierung und Aufsicht in diesen Drittländern als gleichwertig mit den EMIR-Anforderungen der EU angesehen wird, was Auswirkungen auf die Behandlung von Derivategeschäften haben kann.\n\nDer aktuelle Status ist ein Verfahrensstand im Adoptions-Workflow, was bedeutet, dass der Vorschlag noch nicht finalisiert ist und weitere Schritte im Gesetzgebungsprozess folgen werden.",
+          "en": "This document is a legislative proposal from the European Commission concerning an equivalence decision under EMIR for central counterparties. It represents a procedural stage in the adoption workflow.\n\nThis equivalence decision is relevant for financial institutions that collaborate with central counterparties from third countries. It determines whether the regulation and supervision in these third countries are considered equivalent to the EU's EMIR requirements, which can impact the treatment of derivative transactions.\n\nThe current status is a procedural stage in the adoption workflow, meaning the proposal is not yet finalized and further steps in the legislative process are to follow."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12839",
+        "imp": "medium",
+        "refnum": "Ares(2021)230060"
+      }
+    ],
     "mica": [
       {
         "d": "08.10.2026",
@@ -621,84 +1144,6 @@
             "d": "28.09.2026"
           }
         ]
-      }
-    ],
-    "crr3": [
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Aufsichtsmitteilung zur Methodik der Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026 (08/2026)",
-          "en": "Supervisory Notice on the Methodology for Own Funds Recommendation (Pillar 2 Guidance – P2G) from 2026 (08/2026)"
-        },
-        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
-        "s": {
-          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) für Institute. Diese Aufsichtsmitteilung konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines und ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank.\n\nKünftig erhalten nur Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen identifizierten Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Der Kalibrierungsfaktor zur Berechnung der Höhe der Eigenmittelempfehlung wird zu jedem LSI-Stresstest neu festgelegt und beträgt für 2026 65%.",
-          "en": "The BaFin provides information on the methodology and process for Pillar 2 Guidance (P2G) for institutions. This supervisory notice specifies § 6d para. 1 KWG in conjunction with the EBA SREP Guidelines and complements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with solid capitalisation or low identified risks should generally no longer receive a recommendation for additional own funds.\n\nThe supervisory notice is valid from 08.10.2026 until 30.08.2028. The calibration factor for calculating the amount of the own funds recommendation will be redefined for each LSI stress test and is 65% for 2026."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_08_2026_methodik_zur_eigenmittelempfehlung_ab_2026_ba.html",
-        "imp": "high"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung",
-          "en": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung"
-        },
-        "sl": "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung",
-        "s": {
-          "de": "Die BaFin hat die Aufsichtsmitteilung „08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026“ veröffentlicht. Darin wird präzisiert, wie die BaFin Kreditinstitute über Eigenmittelempfehlungen informiert und wie diese berechnet werden. Die neue Methodik zielt darauf ab, die Aufsicht proportionaler und risikoorientierter zu gestalten und Bürokratie abzubauen.\n\nKünftig müssen nur noch Institute zusätzliche Eigenmittel vorhalten, die beim aufsichtlichen Stresstest für kleine und mittlere Institute (LSI-Stresstest) im Stressszenario bestimmte Kapitalschwellen unterschreiten. Die teilnehmenden Institute erhalten bereits während der Erhebung des Stresstests eine Indikation, ob sie voraussichtlich eine Empfehlung für zusätzliche Eigenmittel erhalten werden. Dies entlastet Institute spürbar durch eine risikoorientierte Herangehensweise.\n\nDie neue Methodik gilt für alle Institute, Institutsgruppen, Finanzholding-Gruppen und gemischten Finanzholding-Gruppen, die unter den Anwendungsbereich des § 6d Absatz 1 Kreditwesengesetz fallen.",
-          "en": "The BaFin has published Supervisory Notice “08/2026 (BA): Methodology for the Capital Recommendation from 2026”. It specifies how BaFin informs credit institutions about capital recommendations and how these are calculated. The new methodology aims to make supervision more proportionate and risk-oriented and to reduce bureaucracy.\n\nIn the future, only institutions that fall below certain capital thresholds in the stress scenario of the supervisory stress test for small and medium-sized institutions (LSI stress test) will have to hold additional capital. Participating institutions will receive an indication during the stress test data collection as to whether they are likely to receive a recommendation for additional capital. This significantly relieves institutions through a risk-oriented approach.\n\nThis new methodology applies to all institutions, institutional groups, financial holding groups, and mixed financial holding groups that fall within the scope of Section 6d (1) of the German Banking Act (Kreditwesengesetz)."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_08_methodik_zur_eigenmittelempfehlung.html",
-        "imp": "high"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026",
-          "en": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026"
-        },
-        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
-        "s": {
-          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026. Ziel ist es, Transparenz bei der Ermittlung der Eigenmittelempfehlung zu schaffen und aufsichtliche Prozesse zu vereinfachen. Die Mitteilung ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank und konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines.\n\nKünftig erhalten nur noch Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten. Die Berechnung der Eigenmittelempfehlung erfolgt durch Multiplikation des Kapitalverzehrs aus dem adversen Szenario mit einem Kalibrierungsfaktor, der für 2026 auf 65 % festgelegt wurde.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Eine Überführung in ein Rundschreiben ist vorgesehen, sofern sich die Verwaltungspraxis verstetigt. Der Kalibrierungsfaktor wird zu jedem LSI-Stresstest neu festgelegt.",
-          "en": "BaFin provides information on the methodology and process for the Pillar 2 Guidance (P2G) recommendation for own funds from 2026. The aim is to create transparency in determining the own funds recommendation and to simplify supervisory processes. This notice supplements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank and specifies Section 6d (1) of the German Banking Act (KWG) in conjunction with the EBA SREP Guidelines.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with sound capitalisation or low risks should generally no longer receive a recommendation for additional own funds. The own funds recommendation is calculated by multiplying the capital consumption from the adverse scenario by a calibration factor, which has been set at 65% for 2026.\n\nThe supervisory notice is valid from 08 October 2026 until 30 August 2028. It is intended to be converted into a circular if the administrative practice becomes established. The calibration factor will be redefined for each LSI stress test."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/Aufsichtsmitteilung/dl_am_08.2026_methodik_zur_eigenmittelempfehlung_ba.html",
-        "imp": "high"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
-          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
-        },
-        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
-        "s": {
-          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
-          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
-        "imp": "high"
       }
     ],
     "cssf18698": [
@@ -1587,68 +2032,6 @@
         "refnum": "C-526/24"
       }
     ],
-    "brrd": [
-      {
-        "d": "18.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Ausfüllung der Meldung Z 08.02 (Q&A 2026_7927)",
-          "en": "Completion of the Z 08.02 Template (Q&A 2026_7927)"
-        },
-        "sl": "completion-of-the-z08-02-template",
-        "s": {
-          "de": "Die EBA hat eine finale Q&A zur Ausfüllung der Meldung Z 08.02 gemäß der Abwicklungsplanungs-Berichtsverordnung (Regulation (EU) 2025/2303) veröffentlicht. Die Frage betrifft die Abbildung von operativen Vermögenswerten im Zusammenhang mit externen Dienstleistungen.\n\nZ 08.02 erfasst operative Vermögenswerte, die kritische Funktionen oder Kerngeschäftsfelder unterstützen, auch wenn die Dienstleistung extern erbracht wird. Ein Vermögenswert, der ausschließlich einem Drittanbieter gehört und von diesem betrieben wird und auf den kein konzerninterner oder unternehmensinterner Dienstleister zugreifen muss, fällt nicht in den Anwendungsbereich von Z 08.02. Wenn ein externer Anbieter ein IT-System oder eine Anwendung unterstützt, die von einer Konzerneinheit besessen, geleast oder lizenziert ist und diese den relevanten Dienst unterstützt, muss der Vermögenswert gemeldet und die Spalten 0030, 0040, 0050 und 0080 ausgefüllt werden. Bei externen Dienstleistungen, die nicht von einem operativen Vermögenswert der Konzerneinheit abhängen (z.B. physischer Geldtransport), ist kein Vermögenswert in Z 08.02 zu melden.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die unter die BRRD-Berichtspflicht fallen und die Meldung Z 08.02 erstellen. Sie präzisiert, welche Arten von Vermögenswerten im Kontext externer Dienstleistungen zu melden sind und welche nicht, was die korrekte und konsistente Datenmeldung sicherstellt.",
-          "en": "The EBA has published a final Q&A on the completion of template Z 08.02 under the Resolution Planning Reporting Regulation (Regulation (EU) 2025/2303). The question concerns the mapping of operational assets in relation to external services.\n\nZ 08.02 identifies operational assets that underpin services supporting critical functions or core business lines, including where the related service is provided externally. However, an asset owned and operated solely by a third-party service provider, to which no intra-group or intra-entity service provider requires access, is outside the scope of Z 08.02. Where an external provider supports an IT system or application that is owned, leased, or licensed by a group entity and that asset supports the relevant service, the asset should be reported, and columns 0030, 0040, 0050, and 0080 should be completed. Conversely, where an external service, such as physical cash transportation, does not depend on an operational asset of a group entity, no asset should be reported in Z 08.02.\n\nThis clarification is relevant for credit institutions subject to BRRD reporting requirements and completing template Z 08.02. It specifies which types of assets are to be reported in the context of external services and which are not, ensuring correct and consistent data reporting."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7927",
-        "imp": "low",
-        "refnum": "2026_7927"
-      },
-      {
-        "d": "18.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A 2026_7926: Meldung von Anwendungen verbundener Dienstleister in Template Z08.02",
-          "en": "EBA Q&A 2026_7926: Reporting of applications owned and operated by affiliated service providers in Template Z08.02"
-        },
-        "sl": "template-z08-02-reporting-of-applications-owned-and-operated-by-affiliated-servi",
-        "s": {
-          "de": "Die EBA hat eine Klarstellung zur Meldung von Anwendungen in Template Z08.02 veröffentlicht. Demnach müssen Finanzinstitute auch Anwendungen melden, die von verbundenen Dienstleistern betrieben werden, sofern diese kritische Funktionen oder Kerngeschäftsbereiche der Gruppe unterstützen.\n\nDies betrifft alle Kreditinstitute, die Dienstleistungen von verbundenen Unternehmen beziehen und dabei auf deren Anwendungen angewiesen sind. Die Meldung erfolgt auf Gruppenebene und umfasst alle operativen Vermögenswerte, die kritische Funktionen oder Kerngeschäftsbereiche der Gruppe unterstützen, unabhängig davon, ob sie direkt von der meldenden Einheit kontrolliert werden oder von verbundenen Unternehmen stammen. Die Informationen in Spalte 0070 (Rechts-/Vertragsart) sind aus Sicht des Unternehmens anzugeben, zu dem der konzerninterne Dienstleister gehört.\n\nDie finale Antwort wurde am 18.09.2026 veröffentlicht.",
-          "en": "The EBA has published a clarification on the reporting of applications in Template Z08.02. Accordingly, financial institutions must also report applications operated by affiliated service providers, provided these support critical functions or core business lines of the group.\n\nThis applies to all credit institutions that receive services from affiliated entities and rely on their applications. Reporting is done at group level and includes all operational assets supporting the group's critical functions or core business lines, regardless of whether they are directly controlled by the reporting entity or originate from affiliated entities. The information in column 0070 (legal/contract type) must be provided from the perspective of the entity to which the intra-group service provider belongs.\n\nThe final answer was published on 18.09.2026."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7926",
-        "imp": "low",
-        "refnum": "2026_7926"
-      },
-      {
-        "d": "07.08.2020",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "ITS zur Anwendung von Artikel 55 BRRD (Ares(2020)4105668)",
-          "en": "ITS on application of article 55 BRRD (Ares(2020)4105668)"
-        },
-        "sl": "its-on-application-of-article-55-brrd",
-        "s": {
-          "de": "Die Europäische Kommission plant die Entwicklung von technischen Durchführungsstandards (ITS) zur Anwendung von Artikel 55 der Richtlinie über die Sanierung und Abwicklung von Kreditinstituten und Wertpapierfirmen (BRRD).\n\nDiese ITS werden voraussichtlich detaillierte Verfahren und Formate für die Umsetzung der Anforderungen von Artikel 55 BRRD festlegen. Dies ist relevant für Kreditinstitute und Wertpapierfirmen, da Artikel 55 BRRD die vertragliche Anerkennung von Abwicklungsbefugnissen regelt und somit Auswirkungen auf die Gestaltung von Verträgen und die Risikobewertung hat.\n\nDer Verfahrensstand ist derzeit \"Init Planned\", was bedeutet, dass die Arbeiten an diesem Legislativvorschlag noch am Anfang stehen.",
-          "en": "The European Commission is planning to develop Implementing Technical Standards (ITS) for the application of Article 55 of the Bank Recovery and Resolution Directive (BRRD).\n\nThese ITS are expected to specify detailed procedures and formats for implementing the requirements of Article 55 BRRD. This is relevant for credit institutions and investment firms, as Article 55 BRRD governs the contractual recognition of resolution powers and thus impacts contract design and risk assessment.\n\nThe procedural status is currently \"Init Planned,\" indicating that work on this legislative proposal is still in its initial stages."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12556",
-        "imp": "medium",
-        "refnum": "Ares(2020)4105668"
-      }
-    ],
     "prospectus": [
       {
         "d": "18.09.2026",
@@ -2116,104 +2499,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_11_2026_bestellung_treuhaender_pfandbriefbank_ba.html",
         "imp": "high",
         "refnum": "11/2026"
-      }
-    ],
-    "itsrep": [
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
-          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
-        },
-        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
-          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
-        "imp": "medium"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
-          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
-        },
-        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
-        "s": {
-          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
-          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
-      },
-      {
-        "d": "24.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
-          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
-        },
-        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
-        "s": {
-          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
-          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
-        "imp": "medium"
-      },
-      {
-        "d": "03.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
-          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
-        },
-        "sl": "sectoral-classification-of-uk-credit-institutions",
-        "s": {
-          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
-          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
-        "imp": "low",
-        "refnum": "2026_7843"
-      },
-      {
-        "d": "30.10.2025",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bundesbank.de",
-        "ti": {
-          "de": "Bankenstatistik: Hinweise zu Mindestreserven, NACE Rev. 2.1 und EUREX Clearing AG",
-          "en": "Banking Statistics: Guidance on Minimum Reserves, NACE Rev. 2.1, and EUREX Clearing AG"
-        },
-        "sl": "bankenstatistik-hier-hinweise-zu-den-mindestreserven-zur-anwendung-des-rahmenwer",
-        "s": {
-          "de": "Die Bundesbank informiert über Änderungen im bankstatistischen Meldewesen. Es werden Hinweise zu den Mindestreserven gegeben, insbesondere zur Anwendung des Rahmenwerks NACE Rev. 2.1. Dies betrifft die Klassifizierung von Wirtschaftszweigen, die für die Meldung statistischer Daten relevant ist.\n\nDie Änderungen sind für alle Kreditinstitute relevant, die der Bankenstatistik unterliegen. Die korrekte Anwendung des NACE Rev. 2.1-Rahmenwerks ist entscheidend für die Einhaltung der Meldepflichten und die korrekte Berechnung der Mindestreserven. Zudem werden spezifische Hinweise zur EUREX Clearing Aktiengesellschaft gegeben, die für Institute mit Geschäftsbeziehungen zu dieser Einrichtung von Bedeutung sind.\n\nDie Hinweise sind ab dem 30.10.2025 zu beachten.",
-          "en": "The Bundesbank provides information on changes in banking statistics reporting. Guidance is given on minimum reserves, particularly regarding the application of the NACE Rev. 2.1 framework. This concerns the classification of economic activities, which is relevant for reporting statistical data.\n\nThe changes are relevant for all credit institutions subject to banking statistics. The correct application of the NACE Rev. 2.1 framework is crucial for compliance with reporting obligations and the correct calculation of minimum reserves. Additionally, specific guidance is provided for EUREX Clearing Aktiengesellschaft, which is important for institutions with business relationships with this entity.\n\nThe guidance is to be observed from 30.10.2025."
-        },
-        "url": "https://www.bundesbank.de/resource/blob/970024/dadc0c2fdecc01fea0e3b2ea90168f46/472B63F073F071307366337C94F8C870/2025-10-31-rs-57-data.pdf",
-        "imp": "medium"
       }
     ],
     "cra": [
@@ -2879,125 +3164,6 @@
         ]
       }
     ],
-    "emir": [
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
-      },
-      {
-        "d": "11.03.2024",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Harmonisierung und Vereinfachung der ESMA-Gebühren für Transaktionsregister (Ares(2023)5151234)",
-          "en": "Harmonisation and simplification of ESMA fees for trade repositories (Ares(2023)5151234)"
-        },
-        "sl": "harmonisation-and-simplification-of-the-delegated-act-on-fees-charged-by-the-esm",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Entwurf zur Harmonisierung und Vereinfachung der Gebühren vorgelegt, die die ESMA von Transaktionsregistern (TRs) erhebt. Ziel ist es, die Gebührenstruktur zu optimieren und an die aktuellen Marktbedingungen anzupassen. Dies soll die Effizienz der Gebührenerhebung verbessern und die Transparenz für die betroffenen Unternehmen erhöhen.\n\nDiese Anpassungen sind für alle Transaktionsregister relevant, die unter die Aufsicht der ESMA fallen. Die Vereinfachung der Gebührenberechnung und -erhebung soll den administrativen Aufwand für diese Institute reduzieren und eine fairere Verteilung der Kosten gewährleisten. Die Maßnahme zielt darauf ab, die Einhaltung der Vorschriften zu erleichtern und die Wettbewerbsfähigkeit zu fördern.\n\nDerzeit befindet sich der Vorschlag im Adoptions-Workflow der Europäischen Kommission, was bedeutet, dass die finalen Schritte zur Verabschiedung eingeleitet wurden.",
-          "en": "The European Commission has presented a draft proposal to harmonize and simplify the fees charged by ESMA to trade repositories (TRs). The aim is to optimize the fee structure and adapt it to current market conditions. This is intended to improve the efficiency of fee collection and increase transparency for the affected entities.\n\nThese adjustments are relevant for all trade repositories under ESMA's supervision. The simplification of fee calculation and collection aims to reduce the administrative burden for these institutions and ensure a fairer distribution of costs. The measure seeks to facilitate compliance and promote competitiveness.\n\nThe proposal is currently in the European Commission's adoption workflow, meaning the final steps towards its enactment have been initiated."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13933",
-        "imp": "medium",
-        "refnum": "Ares(2023)5151234"
-      },
-      {
-        "d": "22.06.2022",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Äquivalenzentscheidung unter EMIR für zentrale Gegenparteien (Ares(2021)230060)",
-          "en": "Equivalence decision under EMIR for central counterparties (Ares(2021)230060)"
-        },
-        "sl": "equivalence-decision-under-emir-central-counterparties",
-        "s": {
-          "de": "Dieses Dokument ist ein Legislativvorschlag der Europäischen Kommission bezüglich einer Äquivalenzentscheidung unter EMIR für zentrale Gegenparteien. Es handelt sich um einen Verfahrensstand im Adoptions-Workflow.\n\nDie Äquivalenzentscheidung ist für Finanzinstitute relevant, die mit zentralen Gegenparteien aus Drittländern zusammenarbeiten. Sie bestimmt, ob die Regulierung und Aufsicht in diesen Drittländern als gleichwertig mit den EMIR-Anforderungen der EU angesehen wird, was Auswirkungen auf die Behandlung von Derivategeschäften haben kann.\n\nDer aktuelle Status ist ein Verfahrensstand im Adoptions-Workflow, was bedeutet, dass der Vorschlag noch nicht finalisiert ist und weitere Schritte im Gesetzgebungsprozess folgen werden.",
-          "en": "This document is a legislative proposal from the European Commission concerning an equivalence decision under EMIR for central counterparties. It represents a procedural stage in the adoption workflow.\n\nThis equivalence decision is relevant for financial institutions that collaborate with central counterparties from third countries. It determines whether the regulation and supervision in these third countries are considered equivalent to the EU's EMIR requirements, which can impact the treatment of derivative transactions.\n\nThe current status is a procedural stage in the adoption workflow, meaning the proposal is not yet finalized and further steps in the legislative process are to follow."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12839",
-        "imp": "medium",
-        "refnum": "Ares(2021)230060"
-      },
-      {
-        "d": "30.03.2022",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Derivatehandel – Anerkennung südafrikanischer CCP-Regelungen als gleichwertig mit dem EU-System",
-          "en": "Derivatives trading – recognising South Africa central counterparty arrangements as equivalent to the EU system"
-        },
-        "sl": "derivatives-trading-recognising-south-africa-central-counterparty-arrangements-a",
-        "s": {
-          "de": "Die Europäische Kommission plant, die Regelungen für zentrale Gegenparteien (CCPs) in Südafrika als gleichwertig mit dem EU-System anzuerkennen. Dies betrifft insbesondere das Clearing von Derivategeschäften.\n\nDiese Anerkennung würde es EU-Finanzinstituten erleichtern, Derivategeschäfte über südafrikanische CCPs abzuwickeln, da diese dann den gleichen regulatorischen Standards wie EU-CCPs unterliegen würden. Dies könnte die Effizienz und Liquidität im Derivatehandel mit Südafrika verbessern.\n\nDerzeit befindet sich der Vorschlag im Status „Init Planned“, was auf eine frühe Phase des Gesetzgebungsverfahrens hinweist.",
-          "en": "The European Commission plans to recognize the central counterparty (CCP) arrangements in South Africa as equivalent to the EU system. This specifically concerns the clearing of derivatives transactions.\n\nThis recognition would make it easier for EU financial institutions to clear derivatives transactions through South African CCPs, as they would then be subject to the same regulatory standards as EU CCPs. This could improve efficiency and liquidity in derivatives trading with South Africa.\n\nThe proposal is currently in the “Init Planned” status, indicating an early stage of the legislative process."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13424",
-        "imp": "medium",
-        "refnum": "Ares(2022)2159472"
-      }
-    ],
     "doraoversight": [
       {
         "d": "31.07.2026",
@@ -3285,116 +3451,6 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
         "imp": "low",
         "refnum": "ESMA65-294529287-4824"
-      }
-    ],
-    "taxonomy": [
-      {
-        "d": "16.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Öffentliche Anhörung zur Überprüfung der Versicherungs-Offenlegungspflichten unter der Taxonomie-Verordnung (Artikel 8)",
-          "en": "Public Hearing on the Review of Insurance Disclosures under the Taxonomy Regulation (Article 8)"
-        },
-        "sl": "public-hearing-on-the-review-of-the-insurance-disclosures-under-article-8-of-the",
-        "s": {
-          "de": "Die EIOPA veranstaltet eine öffentliche Anhörung zur Überprüfung der Offenlegungspflichten für Versicherungen gemäß Artikel 8 der Taxonomie-Verordnung. Ziel ist es, Interessengruppen auf den Konsultationsprozess vorzubereiten und die Vorschläge der EIOPA besser zu erläutern.\n\nDie Europäische Kommission hat die ESAs (EBA, EIOPA, ESMA) um technische Beratung zu gezielten Änderungen des EU-Taxonomie-Offenlegungsrahmens gebeten. Für die EIOPA liegt der Fokus auf der Überprüfung des bestehenden Taxonomie-Underwriting-KPI für Erst- und Rückversicherungsunternehmen sowie der Verbesserung der Konsistenz der Offenlegungen mit anderen Finanzsektoren durch einen neuen KPI zur Messung der Taxonomie-Ausrichtung versicherter Aktivitäten. Zudem sollen Vereinfachungen und technische Verbesserungen zur Steigerung der Benutzerfreundlichkeit der Taxonomie-Berichterstattung identifiziert werden, um Transparenz zu wahren und Greenwashing zu verhindern.\n\nDie EIOPA beabsichtigt, in der ersten Juliwoche ein Konsultationspapier zu veröffentlichen, das die Anfragen der Kommission bezüglich der Taxonomie-bezogenen Offenlegungen von (Rück-)Versicherungsunternehmen zum Underwriting sowie in Abstimmung mit ESMA und EBA Verbesserungen der Offenlegungen für Finanzkonglomerate und andere Gruppen behandelt. Die öffentliche Anhörung findet am 16. Juli 2026 statt.",
-          "en": "EIOPA is holding a public hearing on the review of insurance disclosures under Article 8 of the Taxonomy Regulation. The aim is to prepare stakeholders for the consultation process and to better explain EIOPA's proposals.\n\nThe European Commission has requested technical advice from the ESAs (EBA, EIOPA, ESMA) on targeted amendments to the EU Taxonomy disclosure framework. For EIOPA, the focus is on reviewing the existing Taxonomy underwriting KPI for insurance and reinsurance undertakings and improving the consistency of disclosures with other financial sectors through a new KPI measuring the Taxonomy alignment of insured activities. Additionally, simplifications and technical improvements to enhance the usability of Taxonomy reporting are to be identified, while preserving transparency and preventing greenwashing.\n\nEIOPA intends to publish a Consultation Paper in the first week of July, addressing the Commission's requests regarding (re)insurance undertakings' Taxonomy-related disclosures on underwriting, as well as, in coordination with ESMA and EBA, improvements to disclosures for financial conglomerates and other groups. The public hearing will take place on 16 July 2026."
-        },
-        "url": "https://www.eiopa.europa.eu/media/events/public-hearing-review-insurance-disclosures-under-article-8-taxonomy-regulation-2026-07-16_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
-            "d": "07.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Überprüfung der Offenlegungspflichten für Versicherungen unter dem Taxonomie-Delegierten Rechtsakt (EIOPA)",
-          "en": "Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act (EIOPA)"
-        },
-        "sl": "consultation-on-the-review-of-insurance-disclosures-under-the-taxonomy-disclosur",
-        "s": {
-          "de": "Die EIOPA hat eine Konsultation zu vorgeschlagenen Änderungen der Offenlegungspflichten für Versicherungsunternehmen im Rahmen der EU-Taxonomie für ökologisch nachhaltige Aktivitäten durchgeführt. Die Entwürfe zielen darauf ab, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Taxonomie-bezogenen Berichtspflichten der Versicherer besser an andere Rahmenwerke für nachhaltige Finanzen sowie an die Anforderungen für andere Finanzinstitute anzugleichen.\n\nDiese Änderungen betreffen Versicherungsunternehmen, die unter die EU-Taxonomie fallen. Praktisch bedeutet dies eine Anpassung der Offenlegungspraktiken, um eine konsistentere und vergleichbarere Berichterstattung über nachhaltige Aktivitäten zu gewährleisten. Die Angleichung an andere Finanzrahmenwerke könnte den Compliance-Aufwand durch Harmonisierung reduzieren.\n\nDie Konsultationsfrist endete am 12. August 2026. Die EIOPA hat am 28. August 2026 die Antworten auf die Konsultation veröffentlicht.",
-          "en": "EIOPA has conducted a consultation on proposed changes to insurance corporate disclosure requirements under the EU Taxonomy framework for environmentally sustainable activities. The draft proposals aim to increase transparency, simplify reporting, and better align insurers' Taxonomy-related reporting requirements with other sustainable finance frameworks as well as with requirements applicable to other financial institutions.\n\nThese changes affect insurance undertakings falling under the EU Taxonomy. Practically, this means an adjustment of disclosure practices to ensure more consistent and comparable reporting on sustainable activities. Alignment with other financial frameworks could reduce compliance efforts through harmonization.\n\nThe consultation period ended on August 12, 2026. EIOPA published the responses to the consultation on August 28, 2026."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-review-insurance-disclosures-under-taxonomy-disclosures-delegated-act_en",
-        "imp": "medium",
-        "deadline": "12.08.2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
-            "d": "07.07.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: Konsultationen zur Vereinfachung der EU-Taxonomie",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255637/konsultationen-zur-vereinfachung-der-eu-taxonomie/",
-            "d": "02.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EIOPA konsultiert Verbesserungen der Unternehmensangaben zur EU-Taxonomie (Versicherung)",
-          "en": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities"
-        },
-        "sl": "eiopa-consults-on-enhancements-to-insurance-corporate-disclosures-under-eu-taxon",
-        "s": {
-          "de": "Die EIOPA konsultiert Vorschläge zur Verbesserung der Unternehmensangaben von Versicherern gemäß der EU-Taxonomie. Ziel ist es, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Anforderungen besser an andere nachhaltige Finanzrahmen sowie an andere Finanzinstitute anzugleichen.\n\nWesentliche Änderungen umfassen die Überarbeitung des „Underwriting KPI“ für (Rück-)Versicherer, indem der Nenner auf taxonomiekonforme Geschäftsbereiche eingeengt und der KPI in „Adaptation Underwriting KPI“ umbenannt wird. Zudem wird die Einführung eines neuen „Green Insured Activities KPI“ vorgeschlagen, um den Anteil taxonomiekonformer versicherter Aktivitäten zu messen. Dieser KPI würde alle Policen abdecken, die an Unternehmen verkauft werden, die unter die Taxonomie-Verordnung fallen, sowie private Versicherungen für Wohnen und Transport.\n\nDie Konsultation läuft bis zum 12. August 2026. Eine öffentliche Anhörung findet am 16. Juli statt. Die Vorschläge erfolgen auf Anfrage der Europäischen Kommission an die ESAs zur Vereinfachung und Verbesserung des Delegierten Rechtsakts zu Offenlegungen unter der Taxonomie-Verordnung.",
-          "en": "EIOPA is consulting on proposed enhancements to insurance corporate disclosures under the EU Taxonomy framework. The aim is to increase transparency, simplify reporting, and better align requirements with other sustainable finance frameworks and those applicable to other financial institutions.\n\nKey amendments include revising the 'underwriting KPI' for (re)insurers by narrowing the denominator to Taxonomy-eligible lines of business and renaming it to 'Adaptation Underwriting KPI'. Furthermore, the introduction of a new 'Green Insured Activities KPI' is proposed to measure the ratio of Taxonomy-aligned insured activities. This KPI would cover all policies sold to companies reporting under the Taxonomy Regulation, as well as retail insurance policies for housing and transport.\n\nThe consultation period ends on 12 August 2026, with a public hearing scheduled for 16 July. These proposals are in response to a European Commission request to the ESAs for technical advice on simplifying and improving the Disclosures Delegated Act under the Taxonomy Regulation."
-        },
-        "url": "https://www.eiopa.europa.eu/eiopa-consults-enhancements-insurance-corporate-disclosures-under-eu-taxonomy-environmentally-2026-07-01_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
-            "d": "07.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "24.06.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
-          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
-        },
-        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
-        "s": {
-          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
-          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
-        "imp": "medium",
-        "refnum": "T-77/24"
       }
     ],
     "ebatcb": [
