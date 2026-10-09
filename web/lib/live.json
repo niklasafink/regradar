@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T08:07:55Z",
+  "generated_at": "2026-10-09T15:07:36Z",
   "updates": {
     "idd": [
       {
@@ -359,220 +359,27 @@
         "imp": "medium"
       }
     ],
-    "crr3": [
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Aufsichtsmitteilung zur Methodik der Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026 (08/2026)",
-          "en": "Supervisory Notice on the Methodology for Own Funds Recommendation (Pillar 2 Guidance – P2G) from 2026 (08/2026)"
-        },
-        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
-        "s": {
-          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) für Institute. Diese Aufsichtsmitteilung konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines und ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank.\n\nKünftig erhalten nur Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen identifizierten Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Der Kalibrierungsfaktor zur Berechnung der Höhe der Eigenmittelempfehlung wird zu jedem LSI-Stresstest neu festgelegt und beträgt für 2026 65%.",
-          "en": "The BaFin provides information on the methodology and process for Pillar 2 Guidance (P2G) for institutions. This supervisory notice specifies § 6d para. 1 KWG in conjunction with the EBA SREP Guidelines and complements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with solid capitalisation or low identified risks should generally no longer receive a recommendation for additional own funds.\n\nThe supervisory notice is valid from 08.10.2026 until 30.08.2028. The calibration factor for calculating the amount of the own funds recommendation will be redefined for each LSI stress test and is 65% for 2026."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_08_2026_methodik_zur_eigenmittelempfehlung_ab_2026_ba.html",
-        "imp": "high"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung",
-          "en": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung"
-        },
-        "sl": "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung",
-        "s": {
-          "de": "Die BaFin hat die Aufsichtsmitteilung „08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026“ veröffentlicht. Darin wird präzisiert, wie die BaFin Kreditinstitute über Eigenmittelempfehlungen informiert und wie diese berechnet werden. Die neue Methodik zielt darauf ab, die Aufsicht proportionaler und risikoorientierter zu gestalten und Bürokratie abzubauen.\n\nKünftig müssen nur noch Institute zusätzliche Eigenmittel vorhalten, die beim aufsichtlichen Stresstest für kleine und mittlere Institute (LSI-Stresstest) im Stressszenario bestimmte Kapitalschwellen unterschreiten. Die teilnehmenden Institute erhalten bereits während der Erhebung des Stresstests eine Indikation, ob sie voraussichtlich eine Empfehlung für zusätzliche Eigenmittel erhalten werden. Dies entlastet Institute spürbar durch eine risikoorientierte Herangehensweise.\n\nDie neue Methodik gilt für alle Institute, Institutsgruppen, Finanzholding-Gruppen und gemischten Finanzholding-Gruppen, die unter den Anwendungsbereich des § 6d Absatz 1 Kreditwesengesetz fallen.",
-          "en": "The BaFin has published Supervisory Notice “08/2026 (BA): Methodology for the Capital Recommendation from 2026”. It specifies how BaFin informs credit institutions about capital recommendations and how these are calculated. The new methodology aims to make supervision more proportionate and risk-oriented and to reduce bureaucracy.\n\nIn the future, only institutions that fall below certain capital thresholds in the stress scenario of the supervisory stress test for small and medium-sized institutions (LSI stress test) will have to hold additional capital. Participating institutions will receive an indication during the stress test data collection as to whether they are likely to receive a recommendation for additional capital. This significantly relieves institutions through a risk-oriented approach.\n\nThis new methodology applies to all institutions, institutional groups, financial holding groups, and mixed financial holding groups that fall within the scope of Section 6d (1) of the German Banking Act (Kreditwesengesetz)."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_08_methodik_zur_eigenmittelempfehlung.html",
-        "imp": "high"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026",
-          "en": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026"
-        },
-        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
-        "s": {
-          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026. Ziel ist es, Transparenz bei der Ermittlung der Eigenmittelempfehlung zu schaffen und aufsichtliche Prozesse zu vereinfachen. Die Mitteilung ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank und konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines.\n\nKünftig erhalten nur noch Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten. Die Berechnung der Eigenmittelempfehlung erfolgt durch Multiplikation des Kapitalverzehrs aus dem adversen Szenario mit einem Kalibrierungsfaktor, der für 2026 auf 65 % festgelegt wurde.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Eine Überführung in ein Rundschreiben ist vorgesehen, sofern sich die Verwaltungspraxis verstetigt. Der Kalibrierungsfaktor wird zu jedem LSI-Stresstest neu festgelegt.",
-          "en": "BaFin provides information on the methodology and process for the Pillar 2 Guidance (P2G) recommendation for own funds from 2026. The aim is to create transparency in determining the own funds recommendation and to simplify supervisory processes. This notice supplements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank and specifies Section 6d (1) of the German Banking Act (KWG) in conjunction with the EBA SREP Guidelines.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with sound capitalisation or low risks should generally no longer receive a recommendation for additional own funds. The own funds recommendation is calculated by multiplying the capital consumption from the adverse scenario by a calibration factor, which has been set at 65% for 2026.\n\nThe supervisory notice is valid from 08 October 2026 until 30 August 2028. It is intended to be converted into a circular if the administrative practice becomes established. The calibration factor will be redefined for each LSI stress test."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/Aufsichtsmitteilung/dl_am_08.2026_methodik_zur_eigenmittelempfehlung_ba.html",
-        "imp": "high"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
-          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
-        },
-        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
-        "s": {
-          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
-          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
-        "imp": "high"
-      }
-    ],
-    "mica": [
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
-          "en": "Supervisory expectations on services related to unauthorised stablecoins"
-        },
-        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
-          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
-        "imp": "high"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Stellungnahme zu Krypto-Dienstleistungen für nicht MiCA-konforme ARTs und EMTs (ESMA75-113276571-1742)",
-          "en": "Opinion on crypto-asset services for non-MiCA-compliant ARTs and EMTs (ESMA75-113276571-1742)"
-        },
-        "sl": "opinion-on-the-provision-of-crypto-asset-services-in-relation-to-non-mica-compli",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme zur Erbringung von Krypto-Dienstleistungen in Bezug auf nicht MiCA-konforme Asset-referenced Tokens (ARTs) und E-Money Tokens (EMTs) veröffentlicht. Sie präzisiert, dass Krypto-Dienstleister (CASPs) keine Dienstleistungen für ARTs und EMTs erbringen sollten, die nicht den Anforderungen der MiCA-Verordnung entsprechen. Dies gilt unabhängig davon, ob die Dienstleistung selbst ein öffentliches Angebot oder eine Zulassung zum Handel darstellt.\n\nDie ESMA begründet dies damit, dass die Erbringung solcher Dienstleistungen Kunden Risiken aussetzt, die aus der fehlenden MiCA-Konformität der Tokens resultieren. Diese Risiken können von CASPs nicht angemessen identifiziert, verwaltet oder gemindert werden. Eine solche Praxis würde die Ziele der MiCA-Verordnung untergraben, insbesondere den Anlegerschutz und die Marktintegrität, und ein ungleiches Wettbewerbsfeld zwischen konformen und nicht-konformen Emittenten schaffen.\n\nDie Stellungnahme richtet sich primär an die nationalen zuständigen Behörden (NCAs), um eine gemeinsame Aufsichtskultur und konsistente Aufsichtspraktiken in der gesamten Union zu fördern. Sie ergänzt bestehende Leitlinien und soll eine einheitlichere Anwendung des MiCA-Rahmens gewährleisten.",
-          "en": "ESMA has published an opinion on the provision of crypto-asset services in relation to non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs). It clarifies that crypto-asset service providers (CASPs) should not provide services for ARTs and EMTs that do not comply with the requirements of the MiCA Regulation, regardless of whether the service itself constitutes a public offer or admission to trading.\n\nESMA justifies this by stating that providing such services exposes clients to risks arising from the tokens' non-MiCA compliance. These risks cannot be adequately identified, managed, or mitigated by CASPs. Such a practice would undermine the objectives of the MiCA Regulation, particularly investor protection and market integrity, and create an uneven playing field between compliant and non-compliant issuers.\n\nThe opinion is primarily addressed to national competent authorities (NCAs) to foster a common supervisory culture and consistent supervisory practices across the Union. It complements existing guidance and aims to ensure a more uniform application of the MiCA framework."
-        },
-        "url": "https://www.esma.europa.eu/document/opinion-provision-crypto-asset-services-relation-non-mica-compliant-asset-referenced",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1742"
-      },
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zur Ratifizierung der Zusatzvereinbarung zum automatischen Informationsaustausch über Finanzkonten (Kryptowerte)",
-          "en": "Act on the Ratification of the Additional Agreement on the Automatic Exchange of Financial Account Information (Crypto-Assets)"
-        },
-        "sl": "gesetz-zu-der-zusatzvereinbarung-vom-8-juni-2023-zur-mehrseitigen-vereinbarung-v",
-        "s": {
-          "de": "Das Gesetz dient der Ratifizierung einer Zusatzvereinbarung zur Mehrseitigen Vereinbarung vom 29. Oktober 2014 über den automatischen Austausch von Informationen über Finanzkonten. Diese Zusatzvereinbarung, unterzeichnet am 8. Juni 2023, erweitert den Umfang der auszutauschenden Informationen.\n\nDie Erweiterung betrifft insbesondere neue digitale Finanzprodukte, Derivate auf Kryptowerte und Beteiligungen an Krypto-Investmentgesellschaften. Dies ist relevant für Finanzinstitute, die solche Produkte anbieten oder verwalten, da sie künftig entsprechende Daten für den automatischen Informationsaustausch bereitstellen müssen.\n\nDie Zusatzvereinbarung wurde am 26. November in Asunción unterzeichnet.",
-          "en": "This law serves to ratify an additional agreement to the Multilateral Competent Authority Agreement of October 29, 2014, on the automatic exchange of financial account information. This additional agreement, signed on June 8, 2023, expands the scope of information to be exchanged.\n\nThe expansion specifically includes new digital financial products, derivatives on crypto-assets, and participations in crypto investment entities. This is relevant for financial institutions that offer or manage such products, as they will be required to provide corresponding data for automatic information exchange in the future.\n\nThe additional agreement was signed on November 26 in Asunción."
-        },
-        "url": "https://dip.bundestag.de/vorgang/335556",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
-          "en": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte"
-        },
-        "sl": "gesetz-zu-der-mehrseitigen-vereinbarung-vom-8-juni-2023-zwischen-den-zustaendige",
-        "s": {
-          "de": "Dieses Gesetz dient der Umsetzung der Mehrseitigen Vereinbarung vom 8. Juni 2023 über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (Crypto-Asset Reporting Framework – CARF). Ziel ist die Erweiterung des automatischen Informationsaustauschs auf Transaktionen mit Kryptowerten, um Steuerhinterziehung in diesem Bereich zu bekämpfen.\n\nDie Vereinbarung verpflichtet die zuständigen Behörden der teilnehmenden Staaten, Informationen über meldepflichtige Kryptowerte und deren Nutzer auszutauschen. Dies betrifft insbesondere Krypto-Dienstleister, die Transaktionen mit Kryptowerten für Kunden durchführen. Für Finanzunternehmen bedeutet dies eine Ausweitung ihrer Meldepflichten und eine Anpassung ihrer internen Prozesse zur Datenerfassung und -übermittlung.\n\nDie Zustimmung zu dieser Vereinbarung ist ein Schritt zur Schaffung eines globalen Standards für den Informationsaustausch im Bereich der Kryptowerte. Das Gesetz enthält zudem eine Verordnungsermächtigung zur weiteren Ausgestaltung der nationalen Umsetzung.",
-          "en": "This law serves to implement the Multilateral Agreement of June 8, 2023, on the automatic exchange of information under the Crypto-Asset Reporting Framework (CARF). The aim is to extend the automatic exchange of information to transactions involving crypto-assets to combat tax evasion in this area.\n\nThe agreement obliges the competent authorities of the participating states to exchange information on reportable crypto-assets and their users. This particularly affects crypto service providers who conduct crypto-asset transactions for customers. For financial institutions, this means an expansion of their reporting obligations and an adaptation of their internal processes for data collection and transmission.\n\nConsent to this agreement is a step towards creating a global standard for information exchange in the crypto-asset sector. The law also includes an authorization to issue regulations for the further national implementation."
-        },
-        "url": "https://dip.bundestag.de/vorgang/335555",
-        "imp": "medium"
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
-          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
-        },
-        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
-        "s": {
-          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
-          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1721",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      }
-    ],
     "sanctions": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Durchführungsverordnung zu restriktiven Maßnahmen gegen Personen im Sudan (2026/2262)",
+          "en": "Implementing Regulation on restrictive measures against persons in Sudan (2026/2262)"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2262-des-rates-vom-9-oktober-2026-zur-durchfueh",
+        "s": {
+          "de": "Diese Durchführungsverordnung des Rates aktualisiert die Liste der Personen und Organisationen, die restriktiven Maßnahmen unterliegen. Sie fügt eine natürliche Person hinzu, die für Handlungen verantwortlich ist, welche die Stabilität und den politischen Übergang Sudans untergraben.\n\nDie Verordnung betrifft Finanzinstitute und andere Wirtschaftsteilnehmer, die mit den gelisteten Personen und Organisationen in Kontakt treten könnten. Sie müssen sicherstellen, dass sie keine Gelder oder wirtschaftlichen Ressourcen direkt oder indirekt zur Verfügung stellen oder von diesen erhalten.\n\nDie Änderungen treten am Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
+          "en": "This Council Implementing Regulation updates the list of persons and entities subject to restrictive measures. It adds one natural person responsible for actions undermining the stability and political transition of Sudan.\n\nThe regulation affects financial institutions and other economic operators who may interact with the listed persons and entities. They must ensure that they do not directly or indirectly make funds or economic resources available to or receive them from these individuals.\n\nThe amendments enter into force on the day following their publication in the Official Journal of the European Union."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2262",
+        "imp": "medium",
+        "refnum": "32026R2262"
+      },
       {
         "d": "08.10.2026",
         "t": {
@@ -672,26 +479,226 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2191",
         "imp": "high",
         "refnum": "32026R2191"
+      }
+    ],
+    "mica": [
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zur Ratifizierung der Zusatzvereinbarung zum automatischen Informationsaustausch über Finanzkonten (Kryptowerte)",
+          "en": "Act on the Ratification of the Additional Agreement on the Automatic Exchange of Financial Account Information (Crypto-Assets)"
+        },
+        "sl": "gesetz-zu-der-zusatzvereinbarung-vom-8-juni-2023-zur-mehrseitigen-vereinbarung-v",
+        "s": {
+          "de": "Das Gesetz dient der Ratifizierung einer Zusatzvereinbarung zur Mehrseitigen Vereinbarung vom 29. Oktober 2014 über den automatischen Austausch von Informationen über Finanzkonten. Diese Zusatzvereinbarung, unterzeichnet am 8. Juni 2023, erweitert den Umfang der auszutauschenden Informationen.\n\nDie Erweiterung betrifft insbesondere neue digitale Finanzprodukte, Derivate auf Kryptowerte und Beteiligungen an Krypto-Investmentgesellschaften. Dies ist relevant für Finanzinstitute, die solche Produkte anbieten oder verwalten, da sie künftig entsprechende Daten für den automatischen Informationsaustausch bereitstellen müssen.\n\nDie Zusatzvereinbarung wurde am 26. November in Asunción unterzeichnet.",
+          "en": "This law serves to ratify an additional agreement to the Multilateral Competent Authority Agreement of October 29, 2014, on the automatic exchange of financial account information. This additional agreement, signed on June 8, 2023, expands the scope of information to be exchanged.\n\nThe expansion specifically includes new digital financial products, derivatives on crypto-assets, and participations in crypto investment entities. This is relevant for financial institutions that offer or manage such products, as they will be required to provide corresponding data for automatic information exchange in the future.\n\nThe additional agreement was signed on November 26 in Asunción."
+        },
+        "url": "https://dip.bundestag.de/vorgang/335556",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
       },
       {
-        "d": "24.09.2026",
+        "d": "08.10.2026",
         "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
+          "de": "Meldung",
+          "en": "News"
         },
-        "src": "eur-lex.europa.eu",
+        "src": "esma.europa.eu",
         "ti": {
-          "de": "Durchführungsverordnung zur Änderung der Sanktionsliste wegen Russlands destabilisierender Aktivitäten (EU) 2026/2165",
-          "en": "Implementing Regulation amending the sanctions list due to Russia's destabilising activities (EU) 2026/2165"
+          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
+          "en": "Supervisory expectations on services related to unauthorised stablecoins"
         },
-        "sl": "durchfuehrungsverordnung-eu-2026-2165-des-rates-vom-24-september-2026-zur-durchf",
+        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
         "s": {
-          "de": "Diese Durchführungsverordnung des Rates ändert die Verordnung (EU) 2024/2642 über restriktive Maßnahmen angesichts der destabilisierenden Aktivitäten Russlands. Hintergrund sind die anhaltenden hybriden Angriffe auf die EU und ihre Mitgliedstaaten, insbesondere durch Russland und Belarus, sowie die Notwendigkeit, die Resilienz zu stärken und hybride Angriffe zu verhindern.\n\nKonkret wird Anhang I der Verordnung 2024/2642 geändert, indem eine natürliche Person, Xenia Vladimirovna Fedorova, in die Liste der sanktionierten Personen aufgenommen wird. Sie wird als ehemalige Präsidentin und Informationsdirektorin von Russia Today (RT) France identifiziert, die an der Verbreitung prorussischer Narrative in Frankreich und der EU beteiligt ist und Handlungen unterstützt, die die Demokratie und Stabilität untergraben.\n\nDie Verordnung tritt am Tag ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt unmittelbar in jedem Mitgliedstaat.",
-          "en": "This Council Implementing Regulation amends Regulation (EU) 2024/2642 concerning restrictive measures in view of Russia’s destabilising activities. The background is the ongoing hybrid attacks on the EU and its Member States, particularly by Russia and Belarus, and the need to strengthen resilience and prevent hybrid attacks.\n\nSpecifically, Annex I of Regulation 2024/2642 is amended by adding a natural person, Xenia Vladimirovna Fedorova, to the list of sanctioned individuals. She is identified as the former President and Information Director of Russia Today (RT) France, involved in disseminating pro-Russian narratives in France and the EU, and supporting actions that undermine democracy and stability.\n\nThis Regulation enters into force on the day of its publication in the Official Journal of the European Union and is binding in its entirety and directly applicable in all Member States."
+          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
+          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
         },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2165",
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Stellungnahme zu Krypto-Dienstleistungen für nicht MiCA-konforme ARTs und EMTs (ESMA75-113276571-1742)",
+          "en": "Opinion on crypto-asset services for non-MiCA-compliant ARTs and EMTs (ESMA75-113276571-1742)"
+        },
+        "sl": "opinion-on-the-provision-of-crypto-asset-services-in-relation-to-non-mica-compli",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme zur Erbringung von Krypto-Dienstleistungen in Bezug auf nicht MiCA-konforme Asset-referenced Tokens (ARTs) und E-Money Tokens (EMTs) veröffentlicht. Sie präzisiert, dass Krypto-Dienstleister (CASPs) keine Dienstleistungen für ARTs und EMTs erbringen sollten, die nicht den Anforderungen der MiCA-Verordnung entsprechen. Dies gilt unabhängig davon, ob die Dienstleistung selbst ein öffentliches Angebot oder eine Zulassung zum Handel darstellt.\n\nDie ESMA begründet dies damit, dass die Erbringung solcher Dienstleistungen Kunden Risiken aussetzt, die aus der fehlenden MiCA-Konformität der Tokens resultieren. Diese Risiken können von CASPs nicht angemessen identifiziert, verwaltet oder gemindert werden. Eine solche Praxis würde die Ziele der MiCA-Verordnung untergraben, insbesondere den Anlegerschutz und die Marktintegrität, und ein ungleiches Wettbewerbsfeld zwischen konformen und nicht-konformen Emittenten schaffen.\n\nDie Stellungnahme richtet sich primär an die nationalen zuständigen Behörden (NCAs), um eine gemeinsame Aufsichtskultur und konsistente Aufsichtspraktiken in der gesamten Union zu fördern. Sie ergänzt bestehende Leitlinien und soll eine einheitlichere Anwendung des MiCA-Rahmens gewährleisten.",
+          "en": "ESMA has published an opinion on the provision of crypto-asset services in relation to non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs). It clarifies that crypto-asset service providers (CASPs) should not provide services for ARTs and EMTs that do not comply with the requirements of the MiCA Regulation, regardless of whether the service itself constitutes a public offer or admission to trading.\n\nESMA justifies this by stating that providing such services exposes clients to risks arising from the tokens' non-MiCA compliance. These risks cannot be adequately identified, managed, or mitigated by CASPs. Such a practice would undermine the objectives of the MiCA Regulation, particularly investor protection and market integrity, and create an uneven playing field between compliant and non-compliant issuers.\n\nThe opinion is primarily addressed to national competent authorities (NCAs) to foster a common supervisory culture and consistent supervisory practices across the Union. It complements existing guidance and aims to ensure a more uniform application of the MiCA framework."
+        },
+        "url": "https://www.esma.europa.eu/document/opinion-provision-crypto-asset-services-relation-non-mica-compliant-asset-referenced",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1742"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zum Schließen einer Gerechtigkeitslücke bei der Besteuerung von Kryptowerten",
+          "en": "Gesetz zum Schließen einer Gerechtigkeitslücke bei der Besteuerung von Kryptowerten"
+        },
+        "sl": "gesetz-zum-schliessen-einer-gerechtigkeitsluecke-bei-der-besteuerung-von-kryptow",
+        "s": {
+          "de": "Dieser Gesetzentwurf zielt darauf ab, die Besteuerung von Einkünften aus privaten Veräußerungsgeschäften mit Kryptowerten neu zu regeln. Künftig sollen solche Einkünfte unabhängig von der Haltedauer dem persönlichen Einkommensteuersatz unterliegen. Dies würde eine Abkehr von der bisherigen Regelung bedeuten, bei der nach einer bestimmten Haltedauer eine Steuerfreiheit eintreten konnte.\n\nDie vorgeschlagenen Änderungen betreffen primär die §§ 23 und 52 des Einkommensteuergesetzes. Für Finanzinstitute und Privatpersonen, die mit Kryptowerten handeln oder diese halten, bedeutet dies eine wesentliche Änderung der steuerlichen Behandlung. Insbesondere entfällt der Vorteil der Steuerfreiheit nach einer einjährigen Haltedauer, was die Rentabilität von langfristigen Krypto-Investitionen beeinflussen könnte.\n\nEs handelt sich um einen Entwurf, der noch das Gesetzgebungsverfahren durchlaufen muss. Die genauen Auswirkungen und das Inkrafttreten hängen von der finalen Verabschiedung ab.",
+          "en": "This legislative proposal aims to revise the taxation of income from private sales of crypto assets. In the future, such income will be subject to the personal income tax rate, regardless of the holding period. This would mark a departure from the previous regulation, where tax exemption could apply after a certain holding period.\n\nThe proposed changes primarily affect §§ 23 and 52 of the Income Tax Act. For financial institutions and individuals trading or holding crypto assets, this means a significant change in tax treatment. In particular, the advantage of tax exemption after a one-year holding period will be eliminated, which could impact the profitability of long-term crypto investments.\n\nThis is a draft proposal that still needs to go through the legislative process. The exact implications and effective date depend on its final adoption."
+        },
+        "url": "https://dip.bundestag.de/vorgang/334536",
         "imp": "high",
-        "refnum": "32026R2165"
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "BMF: Entwurf eines Gesetzes zur Reform der Besteuerung bestimmter Kryptowerte im Privatvermögen",
+            "url": "https://blogs.pwc.de/de/steuern-und-recht/article/257144/bmf-entwurf-eines-gesetzes-zur-reform-der-besteuerung-bestimmter-kryptowerte-im-privatvermoegen/",
+            "d": "05.10.2026"
+          }
+        ]
+      },
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
+          "en": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte"
+        },
+        "sl": "gesetz-zu-der-mehrseitigen-vereinbarung-vom-8-juni-2023-zwischen-den-zustaendige",
+        "s": {
+          "de": "Dieses Gesetz dient der Umsetzung der Mehrseitigen Vereinbarung vom 8. Juni 2023 über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (Crypto-Asset Reporting Framework – CARF). Ziel ist die Erweiterung des automatischen Informationsaustauschs auf Transaktionen mit Kryptowerten, um Steuerhinterziehung in diesem Bereich zu bekämpfen.\n\nDie Vereinbarung verpflichtet die zuständigen Behörden der teilnehmenden Staaten, Informationen über meldepflichtige Kryptowerte und deren Nutzer auszutauschen. Dies betrifft insbesondere Krypto-Dienstleister, die Transaktionen mit Kryptowerten für Kunden durchführen. Für Finanzunternehmen bedeutet dies eine Ausweitung ihrer Meldepflichten und eine Anpassung ihrer internen Prozesse zur Datenerfassung und -übermittlung.\n\nDie Zustimmung zu dieser Vereinbarung ist ein Schritt zur Schaffung eines globalen Standards für den Informationsaustausch im Bereich der Kryptowerte. Das Gesetz enthält zudem eine Verordnungsermächtigung zur weiteren Ausgestaltung der nationalen Umsetzung.",
+          "en": "This law serves to implement the Multilateral Agreement of June 8, 2023, on the automatic exchange of information under the Crypto-Asset Reporting Framework (CARF). The aim is to extend the automatic exchange of information to transactions involving crypto-assets to combat tax evasion in this area.\n\nThe agreement obliges the competent authorities of the participating states to exchange information on reportable crypto-assets and their users. This particularly affects crypto service providers who conduct crypto-asset transactions for customers. For financial institutions, this means an expansion of their reporting obligations and an adaptation of their internal processes for data collection and transmission.\n\nConsent to this agreement is a step towards creating a global standard for information exchange in the crypto-asset sector. The law also includes an authorization to issue regulations for the further national implementation."
+        },
+        "url": "https://dip.bundestag.de/vorgang/335555",
+        "imp": "medium"
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
+          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
+        },
+        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
+        "s": {
+          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
+          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1721",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      }
+    ],
+    "crr3": [
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung zur Methodik der Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026 (08/2026)",
+          "en": "Supervisory Notice on the Methodology for Own Funds Recommendation (Pillar 2 Guidance – P2G) from 2026 (08/2026)"
+        },
+        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
+        "s": {
+          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) für Institute. Diese Aufsichtsmitteilung konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines und ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank.\n\nKünftig erhalten nur Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen identifizierten Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Der Kalibrierungsfaktor zur Berechnung der Höhe der Eigenmittelempfehlung wird zu jedem LSI-Stresstest neu festgelegt und beträgt für 2026 65%.",
+          "en": "The BaFin provides information on the methodology and process for Pillar 2 Guidance (P2G) for institutions. This supervisory notice specifies § 6d para. 1 KWG in conjunction with the EBA SREP Guidelines and complements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with solid capitalisation or low identified risks should generally no longer receive a recommendation for additional own funds.\n\nThe supervisory notice is valid from 08.10.2026 until 30.08.2028. The calibration factor for calculating the amount of the own funds recommendation will be redefined for each LSI stress test and is 65% for 2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_08_2026_methodik_zur_eigenmittelempfehlung_ab_2026_ba.html",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung",
+          "en": "Bafin konkretisiert Methodik zur Eigenmittelempfehlung"
+        },
+        "sl": "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung",
+        "s": {
+          "de": "Die BaFin hat die Aufsichtsmitteilung „08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026“ veröffentlicht. Darin wird präzisiert, wie die BaFin Kreditinstitute über Eigenmittelempfehlungen informiert und wie diese berechnet werden. Die neue Methodik zielt darauf ab, die Aufsicht proportionaler und risikoorientierter zu gestalten und Bürokratie abzubauen.\n\nKünftig müssen nur noch Institute zusätzliche Eigenmittel vorhalten, die beim aufsichtlichen Stresstest für kleine und mittlere Institute (LSI-Stresstest) im Stressszenario bestimmte Kapitalschwellen unterschreiten. Die teilnehmenden Institute erhalten bereits während der Erhebung des Stresstests eine Indikation, ob sie voraussichtlich eine Empfehlung für zusätzliche Eigenmittel erhalten werden. Dies entlastet Institute spürbar durch eine risikoorientierte Herangehensweise.\n\nDie neue Methodik gilt für alle Institute, Institutsgruppen, Finanzholding-Gruppen und gemischten Finanzholding-Gruppen, die unter den Anwendungsbereich des § 6d Absatz 1 Kreditwesengesetz fallen.",
+          "en": "The BaFin has published Supervisory Notice “08/2026 (BA): Methodology for the Capital Recommendation from 2026”. It specifies how BaFin informs credit institutions about capital recommendations and how these are calculated. The new methodology aims to make supervision more proportionate and risk-oriented and to reduce bureaucracy.\n\nIn the future, only institutions that fall below certain capital thresholds in the stress scenario of the supervisory stress test for small and medium-sized institutions (LSI stress test) will have to hold additional capital. Participating institutions will receive an indication during the stress test data collection as to whether they are likely to receive a recommendation for additional capital. This significantly relieves institutions through a risk-oriented approach.\n\nThis new methodology applies to all institutions, institutional groups, financial holding groups, and mixed financial holding groups that fall within the scope of Section 6d (1) of the German Banking Act (Kreditwesengesetz)."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_08_methodik_zur_eigenmittelempfehlung.html",
+        "imp": "high"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026",
+          "en": "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026"
+        },
+        "sl": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
+        "s": {
+          "de": "Die BaFin informiert über die Methodik und den Prozess zur Eigenmittelempfehlung (Pillar 2 Guidance – P2G) ab 2026. Ziel ist es, Transparenz bei der Ermittlung der Eigenmittelempfehlung zu schaffen und aufsichtliche Prozesse zu vereinfachen. Die Mitteilung ergänzt den Beitrag zum LSI-Stresstest von BaFin und Deutscher Bundesbank und konkretisiert § 6d Abs. 1 KWG in Verbindung mit den EBA-SREP-Guidelines.\n\nKünftig erhalten nur noch Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Diese Grenze setzt sich aus den vorgeschriebenen Kapitalanforderungen (TSCR) zuzüglich eines Puffers von 500 Basispunkten zusammen. Institute mit solider Kapitalausstattung oder geringen Risiken sollen grundsätzlich keine Empfehlung für zusätzliche Eigenmittel mehr erhalten. Die Berechnung der Eigenmittelempfehlung erfolgt durch Multiplikation des Kapitalverzehrs aus dem adversen Szenario mit einem Kalibrierungsfaktor, der für 2026 auf 65 % festgelegt wurde.\n\nDie Aufsichtsmitteilung gilt ab dem 08.10.2026 bis zum 30.08.2028. Eine Überführung in ein Rundschreiben ist vorgesehen, sofern sich die Verwaltungspraxis verstetigt. Der Kalibrierungsfaktor wird zu jedem LSI-Stresstest neu festgelegt.",
+          "en": "BaFin provides information on the methodology and process for the Pillar 2 Guidance (P2G) recommendation for own funds from 2026. The aim is to create transparency in determining the own funds recommendation and to simplify supervisory processes. This notice supplements the contribution on the LSI stress test by BaFin and Deutsche Bundesbank and specifies Section 6d (1) of the German Banking Act (KWG) in conjunction with the EBA SREP Guidelines.\n\nIn the future, only institutions whose capital ratios fall below a certain threshold in the adverse scenario of the LSI stress test will receive a recommendation for additional own funds. This threshold consists of the prescribed capital requirements (TSCR) plus a buffer of 500 basis points. Institutions with sound capitalisation or low risks should generally no longer receive a recommendation for additional own funds. The own funds recommendation is calculated by multiplying the capital consumption from the adverse scenario by a calibration factor, which has been set at 65% for 2026.\n\nThe supervisory notice is valid from 08 October 2026 until 30 August 2028. It is intended to be converted into a circular if the administrative practice becomes established. The calibration factor will be redefined for each LSI stress test."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/Aufsichtsmitteilung/dl_am_08.2026_methodik_zur_eigenmittelempfehlung_ba.html",
+        "imp": "high"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Anhörung zur Erhöhung des österreichischen Systemrisikopuffers für Gewerbeimmobilienkredite",
+          "en": "Consultation on the Increase of the Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
+        },
+        "sl": "anhoerung-zur-anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer",
+        "s": {
+          "de": "Die BaFin beabsichtigt, den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte gewerbeimmobilienbesicherte Kredite reziprok anzuwenden und schrittweise zu erhöhen. Der Puffer soll von 1,0 auf 2,0 Prozent ab dem 1. Juli 2026 und weiter auf 3,5 Prozent ab dem 1. Juli 2027 angehoben werden.\n\nDiese Maßnahme betrifft Institute im Sinne des § 1 Abs. 1b KWG, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, deren in Österreich belegene Risikopositionen im Bereich Gewerbeimmobilien 100 Mio. Euro überschreiten. Der Puffer gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften im Bau- und Immobiliensektor in Österreich, die nach NACE-Klassifikation ermittelt werden, mit Ausnahme gemeinnütziger Bauvereinigungen. Die Anwendung erfolgt auf Einzel-, teilkonsolidierter und konsolidierter Basis.\n\nInteressierte Parteien haben bis zum 28. September 2026 die Möglichkeit, sich zu der geplanten Maßnahme zu äußern. Nach Ablauf dieser Frist wird die BaFin über den Erlass der Allgemeinverfügung entscheiden.",
+          "en": "The BaFin intends to reciprocally apply and gradually increase the sectoral systemic risk buffer for certain commercial real estate-backed loans, as mandated by the Austrian Financial Market Authority (FMA). The buffer is set to rise from 1.0 to 2.0 percent from July 1, 2026, and further to 3.5 percent from July 1, 2027.\n\nThis measure applies to institutions as defined in Section 1 (1b) KWG, institutional groups, financial holding groups, and mixed financial holding groups whose commercial real estate risk exposures located in Austria exceed 100 million Euros. The buffer covers risk exposures to non-financial corporations in the construction and real estate sector in Austria, identified according to NACE classification, with the exception of non-profit housing associations. It is to be applied on an individual, sub-consolidated, and consolidated basis.\n\nInterested parties have until September 28, 2026, to comment on the proposed measure. Following this deadline, the BaFin will decide on the issuance of the general administrative act."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/anh_01_2026_anerkennung_eines_in_oesterreich_angeordneten_kapitalpuffers_fuer_systemische_risiken.html",
+        "imp": "high"
       }
     ],
     "cssf18698": [
