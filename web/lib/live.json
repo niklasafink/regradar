@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T15:06:47Z",
+  "generated_at": "2026-10-12T16:09:16Z",
   "updates": {
     "idd": [
       {
@@ -419,6 +419,202 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2271",
         "imp": "high",
         "refnum": "32026R2271"
+      }
+    ],
+    "csdr": [
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
+          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
+        },
+        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
+        "s": {
+          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
+          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+        "imp": "medium"
+      },
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 2027 hinaus geklärt",
+          "en": "Access for EU market participants to third-country CSDs clarified beyond 2027"
+        },
+        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
+        "s": {
+          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollten. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung der aktuellen Übergangsregelung abgeschlossen hat. Die derzeitige Regelung, die es bestimmten Drittland-CSDs erlaubt, Notar- und zentrale Kontoführungsdienste für Finanzinstrumente nach dem Recht eines EU-Mitgliedstaates zu erbringen, läuft am 17. Januar 2027 aus.\n\nDie ESMA reagiert damit auf Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten. Das derzeit verhandelte „Market Integration and Supervision Package“ (MISP) schlägt eine Verlängerung dieser Übergangsregelung vor, die sowohl vom Rat der Europäischen Union als auch vom Europäischen Parlament unterstützt wird. Die Klarstellung soll das reibungslose Funktionieren der EU-Kapitalmärkte unterstützen.\n\nDie Aussage der ESMA schafft frühzeitig vor der Frist am 17. Januar 2027 Klarheit und soll operative Herausforderungen vermeiden, die durch die Unsicherheit entstehen könnten. Eine legislative Verlängerung der Übergangsregelung wird erwartet.",
+          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This applies until the EU finalises legislation to extend the current transitional regime. The current regime, which allows certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under the law of an EU Member State, is set to expire on 17 January 2027.\n\nESMA is responding to concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. The Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime, a proposal supported by both the Council of the European Union and the European Parliament. The clarification aims to support the orderly functioning of EU capital markets.\n\nESMA's statement provides clarity well in advance of the 17 January 2027 deadline and seeks to avoid operational challenges that could arise from the uncertainty. A legislative extension of the transitional regime is anticipated."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
+      },
+      {
+        "d": "17.03.2022",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD)",
+          "en": "Central securities depositories – review of EU rules"
+        },
+        "sl": "central-securities-depositories-review-of-eu-rules",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD) eingeleitet. Ziel ist es, die Effizienz und Sicherheit der Wertpapierabwicklung in der EU zu verbessern und gleichzeitig die Wettbewerbsfähigkeit des europäischen Finanzmarktes zu stärken.\n\nDiese Überprüfung betrifft alle Zentralverwahrer, die in der EU tätig sind, sowie Finanzinstitute, die deren Dienstleistungen nutzen. Praktisch bedeutet dies eine mögliche Anpassung der regulatorischen Anforderungen an die CSDs und damit indirekt auch an deren Nutzer.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine baldige Veröffentlichung konkreter Vorschläge hindeutet.",
+          "en": "The European Commission has initiated a review of the EU rules for Central Securities Depositories (CSDs). The aim is to improve the efficiency and security of securities settlement in the EU while strengthening the competitiveness of the European financial market.\n\nThis review affects all CSDs operating in the EU, as well as financial institutions that use their services. Practically, this means a potential adjustment of the regulatory requirements for CSDs and, consequently, indirectly for their users.\n\nThe current procedural status is the adoption workflow, which indicates an imminent publication of concrete proposals."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12649",
+        "imp": "medium",
+        "refnum": "Ares(2020)5407019"
+      }
+    ],
+    "itsrep": [
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4",
+          "en": "EBA releases final technical package for reporting and Pillar 3 disclosure framework 4.4"
+        },
+        "sl": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
+        "s": {
+          "de": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht. Dieses Paket deckt die IFRS-18-Berichterstattung, ESG-Offenlegungen gemäß Säule 3 sowie weitere technische Anpassungen ab. Ziel ist es, die Berichterstattungskosten für Institute zu senken und die Einhaltung der Vorschriften zu erleichtern.\n\nDas Paket umfasst das Data Point Model (DPM), Validierungsregeln und XBRL-Taxonomien für neue oder geänderte Anforderungen. Dazu gehören aktualisierte Offenlegungspflichten zu ESG-Risiken, Eigenkapital und Schattenbanken sowie ein neues FINREP-Modul, das die IFRS-18-Anforderungen widerspiegelt. Auch technische Anpassungen für die Abwicklungsplanung, MREL-Entscheidungen und die Offenlegung gemäß Säule 3 sind enthalten, ebenso wie Korrekturen für die Liquiditätsberichterstattung von Drittlandzweigstellen und Vorlagen für die AMLA-Risikobewertung.\n\nDies ist die erste Phase der technischen Implementierung des 4.4-Rahmens; eine zweite Phase zur Vereinfachung der aufsichtsrechtlichen Berichterstattung wird Anfang 2027 erwartet. Das Paket berücksichtigt Rückmeldungen aus der Konsultation und enthält gezielte Verfeinerungen des Glossars im Rahmen des DPM 2.0. Die EBA hat zudem eine aktualisierte Liste bekannter DPM-Probleme und FAQs veröffentlicht, um die Implementierung zu unterstützen.",
+          "en": "The EBA has released the final technical package for version 4.4 of its reporting and Pillar 3 disclosure framework. This package covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to reduce institutions' reporting costs and facilitate their compliance.\n\nThe package includes the Data Point Model (DPM), validation rules, and XBRL taxonomies for new or amended requirements. These include updated disclosure requirements on ESG risks, equity, and shadow banking, as well as a new FINREP module reflecting IFRS 18 requirements. Technical amendments for resolution planning, MREL decisions, and Pillar 3 disclosures are also included, along with corrections for third-country branch liquidity reporting and templates for the AMLA risk assessment. \n\nThis is the first phase of the technical implementation of the 4.4 framework; a second phase for simplifying supervisory reporting is expected in early 2027. The package incorporates feedback from the consultation and includes targeted refinements to the DPM 2.0 glossary. The EBA has also published an updated list of known DPM issues and FAQs to support implementation."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-release-44-its-reporting-and-pillar-3-disclosure-framework",
+        "imp": "high"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
+          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
+        },
+        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
+          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
+        "imp": "low"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
+          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
+        },
+        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
+          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
+        "imp": "medium"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
+          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
+        },
+        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
+        "s": {
+          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
+          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+        "imp": "medium"
+      },
+      {
+        "d": "24.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
+          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
+        },
+        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
+        "s": {
+          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
+          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+        "imp": "medium"
+      },
+      {
+        "d": "03.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
+          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
+        },
+        "sl": "sectoral-classification-of-uk-credit-institutions",
+        "s": {
+          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
+          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
+        "imp": "low",
+        "refnum": "2026_7843"
       }
     ],
     "gwg": [
@@ -896,123 +1092,6 @@
         "imp": "high"
       }
     ],
-    "itsrep": [
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
-          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
-        },
-        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
-          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
-        "imp": "low"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
-          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
-        },
-        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
-          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
-        "imp": "medium"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
-          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
-        },
-        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
-        "s": {
-          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
-          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
-      },
-      {
-        "d": "24.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
-          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
-        },
-        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
-        "s": {
-          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
-          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
-        "imp": "medium"
-      },
-      {
-        "d": "03.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
-          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
-        },
-        "sl": "sectoral-classification-of-uk-credit-institutions",
-        "s": {
-          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
-          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
-        "imp": "low",
-        "refnum": "2026_7843"
-      },
-      {
-        "d": "30.10.2025",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bundesbank.de",
-        "ti": {
-          "de": "Bankenstatistik: Hinweise zu Mindestreserven, NACE Rev. 2.1 und EUREX Clearing AG",
-          "en": "Banking Statistics: Guidance on Minimum Reserves, NACE Rev. 2.1, and EUREX Clearing AG"
-        },
-        "sl": "bankenstatistik-hier-hinweise-zu-den-mindestreserven-zur-anwendung-des-rahmenwer",
-        "s": {
-          "de": "Die Bundesbank informiert über Änderungen im bankstatistischen Meldewesen. Es werden Hinweise zu den Mindestreserven gegeben, insbesondere zur Anwendung des Rahmenwerks NACE Rev. 2.1. Dies betrifft die Klassifizierung von Wirtschaftszweigen, die für die Meldung statistischer Daten relevant ist.\n\nDie Änderungen sind für alle Kreditinstitute relevant, die der Bankenstatistik unterliegen. Die korrekte Anwendung des NACE Rev. 2.1-Rahmenwerks ist entscheidend für die Einhaltung der Meldepflichten und die korrekte Berechnung der Mindestreserven. Zudem werden spezifische Hinweise zur EUREX Clearing Aktiengesellschaft gegeben, die für Institute mit Geschäftsbeziehungen zu dieser Einrichtung von Bedeutung sind.\n\nDie Hinweise sind ab dem 30.10.2025 zu beachten.",
-          "en": "The Bundesbank provides information on changes in banking statistics reporting. Guidance is given on minimum reserves, particularly regarding the application of the NACE Rev. 2.1 framework. This concerns the classification of economic activities, which is relevant for reporting statistical data.\n\nThe changes are relevant for all credit institutions subject to banking statistics. The correct application of the NACE Rev. 2.1 framework is crucial for compliance with reporting obligations and the correct calculation of minimum reserves. Additionally, specific guidance is provided for EUREX Clearing Aktiengesellschaft, which is important for institutions with business relationships with this entity.\n\nThe guidance is to be observed from 30.10.2025."
-        },
-        "url": "https://www.bundesbank.de/resource/blob/970024/dadc0c2fdecc01fea0e3b2ea90168f46/472B63F073F071307366337C94F8C870/2025-10-31-rs-57-data.pdf",
-        "imp": "medium"
-      }
-    ],
     "emir": [
       {
         "d": "09.10.2026",
@@ -1387,66 +1466,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/circular-iml-98-143/",
         "imp": "medium"
-      }
-    ],
-    "csdr": [
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 2027 hinaus geklärt",
-          "en": "Access for EU market participants to third-country CSDs clarified beyond 2027"
-        },
-        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
-        "s": {
-          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollten. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung der aktuellen Übergangsregelung abgeschlossen hat. Die derzeitige Regelung, die es bestimmten Drittland-CSDs erlaubt, Notar- und zentrale Kontoführungsdienste für Finanzinstrumente nach dem Recht eines EU-Mitgliedstaates zu erbringen, läuft am 17. Januar 2027 aus.\n\nDie ESMA reagiert damit auf Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten. Das derzeit verhandelte „Market Integration and Supervision Package“ (MISP) schlägt eine Verlängerung dieser Übergangsregelung vor, die sowohl vom Rat der Europäischen Union als auch vom Europäischen Parlament unterstützt wird. Die Klarstellung soll das reibungslose Funktionieren der EU-Kapitalmärkte unterstützen.\n\nDie Aussage der ESMA schafft frühzeitig vor der Frist am 17. Januar 2027 Klarheit und soll operative Herausforderungen vermeiden, die durch die Unsicherheit entstehen könnten. Eine legislative Verlängerung der Übergangsregelung wird erwartet.",
-          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This applies until the EU finalises legislation to extend the current transitional regime. The current regime, which allows certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under the law of an EU Member State, is set to expire on 17 January 2027.\n\nESMA is responding to concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. The Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime, a proposal supported by both the Council of the European Union and the European Parliament. The clarification aims to support the orderly functioning of EU capital markets.\n\nESMA's statement provides clarity well in advance of the 17 January 2027 deadline and seeks to avoid operational challenges that could arise from the uncertainty. A legislative extension of the transitional regime is anticipated."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
-        "imp": "medium"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
-          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
-        },
-        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
-          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
-        "imp": "high"
-      },
-      {
-        "d": "17.03.2022",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD)",
-          "en": "Central securities depositories – review of EU rules"
-        },
-        "sl": "central-securities-depositories-review-of-eu-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überprüfung der EU-Vorschriften für Zentralverwahrer (CSD) eingeleitet. Ziel ist es, die Effizienz und Sicherheit der Wertpapierabwicklung in der EU zu verbessern und gleichzeitig die Wettbewerbsfähigkeit des europäischen Finanzmarktes zu stärken.\n\nDiese Überprüfung betrifft alle Zentralverwahrer, die in der EU tätig sind, sowie Finanzinstitute, die deren Dienstleistungen nutzen. Praktisch bedeutet dies eine mögliche Anpassung der regulatorischen Anforderungen an die CSDs und damit indirekt auch an deren Nutzer.\n\nDer aktuelle Verfahrensstand ist der Adoptions-Workflow, was auf eine baldige Veröffentlichung konkreter Vorschläge hindeutet.",
-          "en": "The European Commission has initiated a review of the EU rules for Central Securities Depositories (CSDs). The aim is to improve the efficiency and security of securities settlement in the EU while strengthening the competitiveness of the European financial market.\n\nThis review affects all CSDs operating in the EU, as well as financial institutions that use their services. Practically, this means a potential adjustment of the regulatory requirements for CSDs and, consequently, indirectly for their users.\n\nThe current procedural status is the adoption workflow, which indicates an imminent publication of concrete proposals."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12649",
-        "imp": "medium",
-        "refnum": "Ares(2020)5407019"
       }
     ],
     "ebaresolvability": [
