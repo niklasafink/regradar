@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T15:12:07Z",
+  "generated_at": "2026-10-13T17:03:04Z",
   "updates": {
     "idd": [
       {
@@ -417,6 +417,133 @@
             "d": "06.05.2026"
           }
         ]
+      }
+    ],
+    "consumer": [
+      {
+        "d": "13.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Sachkunde bei Verbraucherdarlehen (09/2026)",
+          "en": "Consultation on Professional Qualification for Consumer Loans (09/2026)"
+        },
+        "sl": "verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde",
+        "s": {
+          "de": "Die BaFin konsultiert einen Entwurf zur Änderung der Immobiliar-Darlehensvergabe-Sachkunde-Verordnung. Ziel ist es, die Sachkundeanforderungen für Mitarbeiter von Kreditinstituten, die Verbraucherdarlehen vergeben, zu erweitern. Dies betrifft sowohl interne als auch externe Mitarbeiter.\n\nDie Änderungen konkretisieren die Vorgaben des § 18a Abs. 6 des Kreditwesengesetzes, die im Zuge der zweiten EU-Verbraucherkreditrichtlinie (CCD II) angepasst wurden. Kreditinstitute müssen sicherstellen, dass ihre Mitarbeiter die erforderliche Sachkunde für die Vergabe von Allgemein-Verbraucherdarlehen nachweisen können.\n\nDie neuen Vorgaben gelten ab dem 20. November 2026. Stellungnahmen zum Konsultationsentwurf können bis zum 27. Oktober 2026 bei der BaFin eingereicht werden.",
+          "en": "BaFin is consulting on a draft amendment to the Immobiliar-Darlehensvergabe-Sachkunde-Verordnung (Regulation on Professional Qualification for Mortgage Lending). The aim is to extend the professional qualification requirements for employees of credit institutions involved in consumer loan origination. This applies to both internal and external staff.\n\nThese amendments specify the requirements of Section 18a (6) of the German Banking Act (Kreditwesengesetz), which were adjusted in line with the second EU Consumer Credit Directive (CCD II). Credit institutions must ensure that their employees can demonstrate the necessary professional qualifications for granting general consumer loans.\n\nThe new requirements will apply from November 20, 2026. Comments on the consultation draft can be submitted to BaFin until October 27, 2026."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_13_konsultation_09_2026_aenderungsverordnung_sachkunde.html",
+        "imp": "medium"
+      },
+      {
+        "d": "24.09.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil: Unfaire Preisanpassungsklauseln in Verbraucherverträgen und Dreijahresfristen (C-900/24)",
+          "en": "ECJ Judgment: Unfair Price Adjustment Clauses in Consumer Contracts and Three-Year Limitation Periods (C-900/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-900-24-svb",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass nationales Recht oder Praktiken, die die Aufrechterhaltung eines Vertrags mit einer missbräuchlichen Klausel vorsehen, dem Unionsrecht widersprechen, wenn Preiserhöhungen aus dieser Klausel nicht innerhalb von drei Jahren vom Kunden beanstandet wurden. Dies betrifft einen Fall, in dem ein Energieversorger eine Preisanpassungsklausel einseitig geändert hatte und deutsche Gerichte eine Dreijahresfrist für die Beanstandung durch den Kunden anwandten.\n\nDer EuGH stellte fest, dass die Dreijahreslösung die Wirkungen der missbräuchlichen Klausel zum Nachteil des Verbrauchers aufrechterhält und es dem Verbraucher nicht ermöglicht, der Anwendung dieser Lösung zu widersprechen oder die Unwirksamkeit des gesamten Vertrags zu beantragen. Zudem ist die Möglichkeit oder Verpflichtung eines Energieversorgers, eine für unwirksam erklärte Preisänderungsklausel einseitig zu ändern, nicht mit der Richtlinie 93/13/EWG vereinbar, da nationale Gerichte missbräuchliche Klauseln für unanwendbar erklären müssen und nicht befugt sind, deren Inhalt abzuändern.\n\nDiese Entscheidung hat weitreichende Folgen für Energieversorger und andere Unternehmen, die Verträge mit Verbrauchern abschließen, insbesondere hinsichtlich der Gestaltung und Anwendung von Preisanpassungsklauseln. Sie unterstreicht die Notwendigkeit, dass missbräuchliche Klauseln vollständig unwirksam sind und nicht durch Fristen oder einseitige Änderungen aufrechterhalten werden können. Nationale Gerichte müssen die Richtlinie 93/13/EWG konsequent anwenden, um den Verbraucherschutz zu gewährleisten.",
+          "en": "The European Court of Justice (ECJ) has ruled that national law or practices allowing a contract with an unfair term to remain in force, where price increases resulting from that term have not been challenged by the customer within three years, are contrary to EU law. This decision stems from a case where an energy supplier unilaterally modified a price adjustment clause, and German courts applied a three-year limitation period for customer challenges.\n\nThe ECJ found that the three-year solution maintains the effects of the unfair term to the detriment of the consumer and does not allow the consumer to object to its application or request the invalidation of the entire contract. Furthermore, the possibility or obligation for an energy supplier to unilaterally amend a price adjustment clause declared invalid due to unfairness is incompatible with Directive 93/13/EEC, as national courts must declare unfair terms inapplicable and are not authorized to modify their content.\n\nThis ruling has significant implications for energy suppliers and other companies entering into contracts with consumers, particularly concerning the drafting and application of price adjustment clauses. It emphasizes that unfair terms must be entirely ineffective and cannot be upheld through limitation periods or unilateral amendments. National courts are required to consistently apply Directive 93/13/EEC to ensure consumer protection."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260132de.pdf",
+        "imp": "high",
+        "refnum": "C-900/24"
+      },
+      {
+        "d": "22.09.2026",
+        "t": {
+          "de": "Richtlinie",
+          "en": "Directive"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge (32023L2225R(03))",
+          "en": "Corrigendum to Directive (EU) 2023/2225 on consumer credit agreements (32023L2225R(03))"
+        },
+        "sl": "berichtigung-der-richtlinie-eu-2023-2225-des-europaeischen-parlaments-und-des-ra",
+        "s": {
+          "de": "Dieses Dokument ist eine Berichtigung zur Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge. Es korrigiert mehrere Artikel und Absätze der ursprünglichen Richtlinie, um redaktionelle Fehler zu beheben und die Klarheit zu verbessern.\n\nDie Änderungen betreffen spezifische Formulierungen in Artikel 2 Absatz 7, Artikel 3 Nummer 20 Buchstabe a, Artikel 10 Absatz 5 Unterabsatz 1 Buchstabe d und Artikel 16 Absatz 2 Unterabsatz 1 Buchstabe a. Diese Anpassungen sind für Finanzinstitute relevant, die Verbraucherkreditverträge anbieten, da sie die genaue Auslegung und Anwendung der Richtlinie beeinflussen.\n\nDie Berichtigung wurde am 22.09.2026 veröffentlicht und ist ab diesem Datum gültig.",
+          "en": "This document is a corrigendum to Directive (EU) 2023/2225 on consumer credit agreements. It corrects several articles and paragraphs of the original directive to rectify editorial errors and improve clarity.\n\nThe amendments concern specific wordings in Article 2(7), Article 3(20)(a), Article 10(5), first subparagraph, point (d), and Article 16(2), first subparagraph, point (a). These adjustments are relevant for financial institutions offering consumer credit agreements, as they affect the precise interpretation and application of the Directive.\n\nThe corrigendum was published on 22.09.2026 and is effective from that date."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023L2225R(03)",
+        "imp": "low",
+        "refnum": "32023L2225R(03)"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht",
+          "en": "Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht"
+        },
+        "sl": "verordnung-zur-umsetzung-der-richtlinie-eu-2023-2225-ueber-verbraucherkreditvert",
+        "s": {
+          "de": "Diese Verordnung setzt die Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge in deutsches Gewerberecht um. Sie wurde am 28.07.2026 ausgefertigt und am 31.07.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 229) veröffentlicht.\n\nDie Regelung betrifft das Sachgebiet der Gewerbeordnung und genehmigungsbedürftige Gewerbe. Finanzunternehmen, die Verbraucherkredite anbieten, müssen die neuen Vorgaben im Rahmen ihrer gewerberechtlichen Pflichten beachten.\n\nDie Verordnung ist am 31.07.2026 in Kraft getreten.",
+          "en": "This regulation transposes Directive (EU) 2023/2225 on consumer credit agreements into German commercial law. It was issued on 28.07.2026 and published in the Federal Law Gazette (BGBl. 2026 I No. 229) on 31.07.2026.\n\nThe regulation pertains to commercial law and trades requiring permits. Financial undertakings offering consumer credit must observe the new requirements within their commercial law obligations.\n\nThe regulation entered into force on 31.07.2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/229",
+        "imp": "high"
+      },
+      {
+        "d": "18.05.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Regelung der Förderung klimaneutraler Mobilität",
+          "en": "Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Regelung der Förderung klimaneutraler Mobilität"
+        },
+        "sl": "gesetz-zur-umsetzung-der-richtlinie-eu-2023-2225-ueber-verbraucherkreditvertraeg",
+        "s": {
+          "de": "Dieses Gesetz setzt die Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge in deutsches Recht um. Es wurde am 18.05.2026 im Bundesgesetzblatt (BGBl. I Nr. 139) veröffentlicht und trat am 12.05.2026 in Kraft.\n\nDie Regelungen betreffen verschiedene Sachgebiete, darunter das Bürgerliche Gesetzbuch, das Recht der Schuldverhältnisse, Datenschutz, die Gewerbeordnung sowie aufsichtsrechtliche Vorschriften. Finanzinstitute, die Verbraucherkreditverträge anbieten, sind von den Änderungen direkt betroffen und müssen ihre Prozesse und Verträge entsprechend anpassen.\n\nDas Bundesministerium der Justiz und für Verbraucherschutz hatte die Federführung bei der Erarbeitung dieses Gesetzes.",
+          "en": "This law transposes Directive (EU) 2023/2225 on consumer credit agreements into German law. It was published in the Federal Law Gazette (BGBl. I No. 139) on 18.05.2026 and came into force on 12.05.2026.\n\nThe regulations affect various areas, including the Civil Code, the law of obligations, data protection, the Industrial Code, and supervisory regulations. Financial institutions offering consumer credit agreements are directly affected by the changes and must adapt their processes and contracts accordingly.\n\nThe Federal Ministry of Justice and Consumer Protection was responsible for drafting this law."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/139",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Gesetz zur Umsetzung der Verbraucherkreditverträge-Richtlinie im BGBl. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/gesetz-zur-umsetzung-der-verbraucherkreditvertraege-richtlinie-im-bgbl-veroeffentlicht/",
+            "d": "18.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "23.04.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Zinsberechnung bei Verbraucherkrediten (C-744/24)",
+          "en": "ECJ judgment on interest calculation for consumer credit (C-744/24)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-744-24-bank-polska-kasa-opieki",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass Banken keine Zinsen auf Beträge erheben dürfen, die zur Begleichung von Kosten im Zusammenhang mit einem Verbraucherkredit verwendet werden, wie z.B. Versicherungsprämien. Dies betrifft Fälle, in denen der Kreditgeber diese Kosten direkt vom Kreditbetrag abzieht und nicht an den Verbraucher auszahlt.\n\nDie Entscheidung basiert auf der Auslegung der Richtlinie 2008/48/EG über Verbraucherkreditverträge. Der EuGH stellt klar, dass der Zinssatz nur auf den tatsächlich an den Verbraucher ausgezahlten Kreditbetrag angewendet werden darf, nicht aber auf Kosten, die der Kreditgeber einbehält, um vertragliche Verpflichtungen zu erfüllen. Dies soll die Transparenz für Verbraucher erhöhen und den Vergleich von Kreditangeboten erleichtern.\n\nDas Urteil ist für nationale Gerichte bindend, die über vergleichbare Sachverhalte entscheiden müssen. Es ist ein nicht-amtliches Dokument zur Verwendung durch die Medien; der Volltext des Urteils wird auf der Curia-Website veröffentlicht.",
+          "en": "The European Court of Justice (ECJ) has ruled that banks may not charge interest on amounts used to cover costs associated with consumer credit, such as insurance premiums. This applies to cases where the lender directly deducts these costs from the loan amount and does not disburse them to the consumer.\n\nThe decision is based on the interpretation of Directive 2008/48/EC on consumer credit agreements. The ECJ clarifies that the interest rate may only be applied to the loan amount actually disbursed to the consumer, and not to costs retained by the lender to fulfill contractual obligations. This aims to increase transparency for consumers and facilitate the comparison of credit offers.\n\nThe judgment is binding on national courts that have to decide on comparable cases. This is a non-official document for media use; the full text of the judgment will be published on the Curia website."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-04/cp260063de.pdf",
+        "imp": "high",
+        "refnum": "C-744/24"
       }
     ],
     "sanctions": [
@@ -1845,133 +1972,6 @@
           "en": "The German Federal Office for Information Security (BSI) has published the Community Draft of the AI Audit and Assurance Assessment Architecture (A5) for comment. The A5 lays the foundation for a modular and extensible audit architecture for AI systems, providing criteria and methodology for the systematic and standardized assessment of AI system trustworthiness.\n\nThe A5 is aimed at all stakeholders along the AI value chain, from providers and operators to those involved in development, operation, and supervision. It supports stakeholders in complying with regulatory requirements such as the EU AI Act and the Cyber Resilience Act, and allows integration into existing OSCAL-based tools for compliance processing. The methodology is based on the BSI's C5 catalog and the International Standard on Assurance Engagements 3000 (ISAE 3000).\n\nComments and suggestions on the Community Draft can be submitted by email to aisecurity@bsi.bund.de until August 31, 2026."
         },
         "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260706_KI_A5-Community-Draft.html",
-        "imp": "medium"
-      }
-    ],
-    "consumer": [
-      {
-        "d": "24.09.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil: Unfaire Preisanpassungsklauseln in Verbraucherverträgen und Dreijahresfristen (C-900/24)",
-          "en": "ECJ Judgment: Unfair Price Adjustment Clauses in Consumer Contracts and Three-Year Limitation Periods (C-900/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-900-24-svb",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass nationales Recht oder Praktiken, die die Aufrechterhaltung eines Vertrags mit einer missbräuchlichen Klausel vorsehen, dem Unionsrecht widersprechen, wenn Preiserhöhungen aus dieser Klausel nicht innerhalb von drei Jahren vom Kunden beanstandet wurden. Dies betrifft einen Fall, in dem ein Energieversorger eine Preisanpassungsklausel einseitig geändert hatte und deutsche Gerichte eine Dreijahresfrist für die Beanstandung durch den Kunden anwandten.\n\nDer EuGH stellte fest, dass die Dreijahreslösung die Wirkungen der missbräuchlichen Klausel zum Nachteil des Verbrauchers aufrechterhält und es dem Verbraucher nicht ermöglicht, der Anwendung dieser Lösung zu widersprechen oder die Unwirksamkeit des gesamten Vertrags zu beantragen. Zudem ist die Möglichkeit oder Verpflichtung eines Energieversorgers, eine für unwirksam erklärte Preisänderungsklausel einseitig zu ändern, nicht mit der Richtlinie 93/13/EWG vereinbar, da nationale Gerichte missbräuchliche Klauseln für unanwendbar erklären müssen und nicht befugt sind, deren Inhalt abzuändern.\n\nDiese Entscheidung hat weitreichende Folgen für Energieversorger und andere Unternehmen, die Verträge mit Verbrauchern abschließen, insbesondere hinsichtlich der Gestaltung und Anwendung von Preisanpassungsklauseln. Sie unterstreicht die Notwendigkeit, dass missbräuchliche Klauseln vollständig unwirksam sind und nicht durch Fristen oder einseitige Änderungen aufrechterhalten werden können. Nationale Gerichte müssen die Richtlinie 93/13/EWG konsequent anwenden, um den Verbraucherschutz zu gewährleisten.",
-          "en": "The European Court of Justice (ECJ) has ruled that national law or practices allowing a contract with an unfair term to remain in force, where price increases resulting from that term have not been challenged by the customer within three years, are contrary to EU law. This decision stems from a case where an energy supplier unilaterally modified a price adjustment clause, and German courts applied a three-year limitation period for customer challenges.\n\nThe ECJ found that the three-year solution maintains the effects of the unfair term to the detriment of the consumer and does not allow the consumer to object to its application or request the invalidation of the entire contract. Furthermore, the possibility or obligation for an energy supplier to unilaterally amend a price adjustment clause declared invalid due to unfairness is incompatible with Directive 93/13/EEC, as national courts must declare unfair terms inapplicable and are not authorized to modify their content.\n\nThis ruling has significant implications for energy suppliers and other companies entering into contracts with consumers, particularly concerning the drafting and application of price adjustment clauses. It emphasizes that unfair terms must be entirely ineffective and cannot be upheld through limitation periods or unilateral amendments. National courts are required to consistently apply Directive 93/13/EEC to ensure consumer protection."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260132de.pdf",
-        "imp": "high",
-        "refnum": "C-900/24"
-      },
-      {
-        "d": "22.09.2026",
-        "t": {
-          "de": "Richtlinie",
-          "en": "Directive"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge (32023L2225R(03))",
-          "en": "Corrigendum to Directive (EU) 2023/2225 on consumer credit agreements (32023L2225R(03))"
-        },
-        "sl": "berichtigung-der-richtlinie-eu-2023-2225-des-europaeischen-parlaments-und-des-ra",
-        "s": {
-          "de": "Dieses Dokument ist eine Berichtigung zur Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge. Es korrigiert mehrere Artikel und Absätze der ursprünglichen Richtlinie, um redaktionelle Fehler zu beheben und die Klarheit zu verbessern.\n\nDie Änderungen betreffen spezifische Formulierungen in Artikel 2 Absatz 7, Artikel 3 Nummer 20 Buchstabe a, Artikel 10 Absatz 5 Unterabsatz 1 Buchstabe d und Artikel 16 Absatz 2 Unterabsatz 1 Buchstabe a. Diese Anpassungen sind für Finanzinstitute relevant, die Verbraucherkreditverträge anbieten, da sie die genaue Auslegung und Anwendung der Richtlinie beeinflussen.\n\nDie Berichtigung wurde am 22.09.2026 veröffentlicht und ist ab diesem Datum gültig.",
-          "en": "This document is a corrigendum to Directive (EU) 2023/2225 on consumer credit agreements. It corrects several articles and paragraphs of the original directive to rectify editorial errors and improve clarity.\n\nThe amendments concern specific wordings in Article 2(7), Article 3(20)(a), Article 10(5), first subparagraph, point (d), and Article 16(2), first subparagraph, point (a). These adjustments are relevant for financial institutions offering consumer credit agreements, as they affect the precise interpretation and application of the Directive.\n\nThe corrigendum was published on 22.09.2026 and is effective from that date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023L2225R(03)",
-        "imp": "low",
-        "refnum": "32023L2225R(03)"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht",
-          "en": "Verordnung zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge im Gewerberecht"
-        },
-        "sl": "verordnung-zur-umsetzung-der-richtlinie-eu-2023-2225-ueber-verbraucherkreditvert",
-        "s": {
-          "de": "Diese Verordnung setzt die Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge in deutsches Gewerberecht um. Sie wurde am 28.07.2026 ausgefertigt und am 31.07.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 229) veröffentlicht.\n\nDie Regelung betrifft das Sachgebiet der Gewerbeordnung und genehmigungsbedürftige Gewerbe. Finanzunternehmen, die Verbraucherkredite anbieten, müssen die neuen Vorgaben im Rahmen ihrer gewerberechtlichen Pflichten beachten.\n\nDie Verordnung ist am 31.07.2026 in Kraft getreten.",
-          "en": "This regulation transposes Directive (EU) 2023/2225 on consumer credit agreements into German commercial law. It was issued on 28.07.2026 and published in the Federal Law Gazette (BGBl. 2026 I No. 229) on 31.07.2026.\n\nThe regulation pertains to commercial law and trades requiring permits. Financial undertakings offering consumer credit must observe the new requirements within their commercial law obligations.\n\nThe regulation entered into force on 31.07.2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/229",
-        "imp": "high"
-      },
-      {
-        "d": "18.05.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Regelung der Förderung klimaneutraler Mobilität",
-          "en": "Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge und zur Regelung der Förderung klimaneutraler Mobilität"
-        },
-        "sl": "gesetz-zur-umsetzung-der-richtlinie-eu-2023-2225-ueber-verbraucherkreditvertraeg",
-        "s": {
-          "de": "Dieses Gesetz setzt die Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge in deutsches Recht um. Es wurde am 18.05.2026 im Bundesgesetzblatt (BGBl. I Nr. 139) veröffentlicht und trat am 12.05.2026 in Kraft.\n\nDie Regelungen betreffen verschiedene Sachgebiete, darunter das Bürgerliche Gesetzbuch, das Recht der Schuldverhältnisse, Datenschutz, die Gewerbeordnung sowie aufsichtsrechtliche Vorschriften. Finanzinstitute, die Verbraucherkreditverträge anbieten, sind von den Änderungen direkt betroffen und müssen ihre Prozesse und Verträge entsprechend anpassen.\n\nDas Bundesministerium der Justiz und für Verbraucherschutz hatte die Federführung bei der Erarbeitung dieses Gesetzes.",
-          "en": "This law transposes Directive (EU) 2023/2225 on consumer credit agreements into German law. It was published in the Federal Law Gazette (BGBl. I No. 139) on 18.05.2026 and came into force on 12.05.2026.\n\nThe regulations affect various areas, including the Civil Code, the law of obligations, data protection, the Industrial Code, and supervisory regulations. Financial institutions offering consumer credit agreements are directly affected by the changes and must adapt their processes and contracts accordingly.\n\nThe Federal Ministry of Justice and Consumer Protection was responsible for drafting this law."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/139",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Gesetz zur Umsetzung der Verbraucherkreditverträge-Richtlinie im BGBl. veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/gesetz-zur-umsetzung-der-verbraucherkreditvertraege-richtlinie-im-bgbl-veroeffentlicht/",
-            "d": "18.05.2026"
-          }
-        ]
-      },
-      {
-        "d": "23.04.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Zinsberechnung bei Verbraucherkrediten (C-744/24)",
-          "en": "ECJ judgment on interest calculation for consumer credit (C-744/24)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-744-24-bank-polska-kasa-opieki",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass Banken keine Zinsen auf Beträge erheben dürfen, die zur Begleichung von Kosten im Zusammenhang mit einem Verbraucherkredit verwendet werden, wie z.B. Versicherungsprämien. Dies betrifft Fälle, in denen der Kreditgeber diese Kosten direkt vom Kreditbetrag abzieht und nicht an den Verbraucher auszahlt.\n\nDie Entscheidung basiert auf der Auslegung der Richtlinie 2008/48/EG über Verbraucherkreditverträge. Der EuGH stellt klar, dass der Zinssatz nur auf den tatsächlich an den Verbraucher ausgezahlten Kreditbetrag angewendet werden darf, nicht aber auf Kosten, die der Kreditgeber einbehält, um vertragliche Verpflichtungen zu erfüllen. Dies soll die Transparenz für Verbraucher erhöhen und den Vergleich von Kreditangeboten erleichtern.\n\nDas Urteil ist für nationale Gerichte bindend, die über vergleichbare Sachverhalte entscheiden müssen. Es ist ein nicht-amtliches Dokument zur Verwendung durch die Medien; der Volltext des Urteils wird auf der Curia-Website veröffentlicht.",
-          "en": "The European Court of Justice (ECJ) has ruled that banks may not charge interest on amounts used to cover costs associated with consumer credit, such as insurance premiums. This applies to cases where the lender directly deducts these costs from the loan amount and does not disburse them to the consumer.\n\nThe decision is based on the interpretation of Directive 2008/48/EC on consumer credit agreements. The ECJ clarifies that the interest rate may only be applied to the loan amount actually disbursed to the consumer, and not to costs retained by the lender to fulfill contractual obligations. This aims to increase transparency for consumers and facilitate the comparison of credit offers.\n\nThe judgment is binding on national courts that have to decide on comparable cases. This is a non-official document for media use; the full text of the judgment will be published on the Curia website."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-04/cp260063de.pdf",
-        "imp": "high",
-        "refnum": "C-744/24"
-      },
-      {
-        "d": "05.02.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts sowie zur Änderung des Behandlungsvertragsrechts",
-          "en": "Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts sowie zur Änderung des Behandlungsvertragsrechts"
-        },
-        "sl": "gesetz-zur-aenderung-des-verbrauchervertrags-und-des-versicherungsvertragsrechts",
-        "s": {
-          "de": "Das Gesetz zur Änderung des Verbrauchervertrags- und des Versicherungsvertragsrechts sowie zur Änderung des Behandlungsvertragsrechts wurde am 05.02.2026 im Bundesgesetzblatt veröffentlicht. Es wurde am 03.02.2026 ausgefertigt und fällt in die Sachgebiete Bürgerliches Gesetzbuch, Investmentwesen und Versicherungsvertragsrecht.\n\nDie Änderungen betreffen verschiedene Bereiche des Zivilrechts, insbesondere Verbraucher- und Versicherungsverträge. Finanzunternehmen, die im Bereich des Investmentwesens oder des Versicherungsvertragsrechts tätig sind, müssen die neuen Bestimmungen prüfen und ihre Vertragspraktiken entsprechend anpassen.\n\nDas Bundesministerium der Justiz und für Verbraucherschutz war federführend bei der Erstellung dieses Gesetzes.",
-          "en": "The Act Amending Consumer Contract Law and Insurance Contract Law, as well as Medical Treatment Contract Law, was published in the Federal Law Gazette on 05.02.2026. It was enacted on 03.02.2026 and falls under the subject areas of the Civil Code, investment law, and insurance contract law.\n\nThe amendments affect various areas of civil law, particularly consumer and insurance contracts. Financial companies active in the investment sector or insurance contract law must review the new provisions and adapt their contractual practices accordingly.\n\nThe Federal Ministry of Justice and Consumer Protection was the lead ministry for the drafting of this act."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/28",
         "imp": "medium"
       }
     ],
