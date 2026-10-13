@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T10:50:14Z",
+  "generated_at": "2026-10-13T15:12:07Z",
   "updates": {
     "idd": [
       {
@@ -1361,6 +1361,25 @@
       {
         "d": "08.10.2026",
         "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "dip.bundestag.de",
+        "ti": {
+          "de": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
+          "en": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte"
+        },
+        "sl": "gesetz-zu-der-mehrseitigen-vereinbarung-vom-8-juni-2023-zwischen-den-zustaendige",
+        "s": {
+          "de": "Dieses Gesetz dient der Umsetzung der Mehrseitigen Vereinbarung vom 8. Juni 2023 über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (Crypto-Asset Reporting Framework – CARF). Ziel ist die Erweiterung des automatischen Informationsaustauschs auf Transaktionen mit Kryptowerten, um Steuerhinterziehung in diesem Bereich zu bekämpfen.\n\nDie Vereinbarung verpflichtet die zuständigen Behörden der teilnehmenden Staaten, Informationen über meldepflichtige Kryptowerte und deren Nutzer auszutauschen. Dies betrifft insbesondere Krypto-Dienstleister, die Transaktionen mit Kryptowerten für Kunden durchführen. Für Finanzunternehmen bedeutet dies eine Ausweitung ihrer Meldepflichten und eine Anpassung ihrer internen Prozesse zur Datenerfassung und -übermittlung.\n\nDie Zustimmung zu dieser Vereinbarung ist ein Schritt zur Schaffung eines globalen Standards für den Informationsaustausch im Bereich der Kryptowerte. Das Gesetz enthält zudem eine Verordnungsermächtigung zur weiteren Ausgestaltung der nationalen Umsetzung.",
+          "en": "This law serves to implement the Multilateral Agreement of June 8, 2023, on the automatic exchange of information under the Crypto-Asset Reporting Framework (CARF). The aim is to extend the automatic exchange of information to transactions involving crypto-assets to combat tax evasion in this area.\n\nThe agreement obliges the competent authorities of the participating states to exchange information on reportable crypto-assets and their users. This particularly affects crypto service providers who conduct crypto-asset transactions for customers. For financial institutions, this means an expansion of their reporting obligations and an adaptation of their internal processes for data collection and transmission.\n\nConsent to this agreement is a step towards creating a global standard for information exchange in the crypto-asset sector. The law also includes an authorization to issue regulations for the further national implementation."
+        },
+        "url": "https://dip.bundestag.de/vorgang/335555",
+        "imp": "medium"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
           "de": "Meldung",
           "en": "News"
         },
@@ -1423,25 +1442,6 @@
             "d": "05.10.2026"
           }
         ]
-      },
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "dip.bundestag.de",
-        "ti": {
-          "de": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
-          "en": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte"
-        },
-        "sl": "gesetz-zu-der-mehrseitigen-vereinbarung-vom-8-juni-2023-zwischen-den-zustaendige",
-        "s": {
-          "de": "Dieses Gesetz dient der Umsetzung der Mehrseitigen Vereinbarung vom 8. Juni 2023 über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte (Crypto-Asset Reporting Framework – CARF). Ziel ist die Erweiterung des automatischen Informationsaustauschs auf Transaktionen mit Kryptowerten, um Steuerhinterziehung in diesem Bereich zu bekämpfen.\n\nDie Vereinbarung verpflichtet die zuständigen Behörden der teilnehmenden Staaten, Informationen über meldepflichtige Kryptowerte und deren Nutzer auszutauschen. Dies betrifft insbesondere Krypto-Dienstleister, die Transaktionen mit Kryptowerten für Kunden durchführen. Für Finanzunternehmen bedeutet dies eine Ausweitung ihrer Meldepflichten und eine Anpassung ihrer internen Prozesse zur Datenerfassung und -übermittlung.\n\nDie Zustimmung zu dieser Vereinbarung ist ein Schritt zur Schaffung eines globalen Standards für den Informationsaustausch im Bereich der Kryptowerte. Das Gesetz enthält zudem eine Verordnungsermächtigung zur weiteren Ausgestaltung der nationalen Umsetzung.",
-          "en": "This law serves to implement the Multilateral Agreement of June 8, 2023, on the automatic exchange of information under the Crypto-Asset Reporting Framework (CARF). The aim is to extend the automatic exchange of information to transactions involving crypto-assets to combat tax evasion in this area.\n\nThe agreement obliges the competent authorities of the participating states to exchange information on reportable crypto-assets and their users. This particularly affects crypto service providers who conduct crypto-asset transactions for customers. For financial institutions, this means an expansion of their reporting obligations and an adaptation of their internal processes for data collection and transmission.\n\nConsent to this agreement is a step towards creating a global standard for information exchange in the crypto-asset sector. The law also includes an authorization to issue regulations for the further national implementation."
-        },
-        "url": "https://dip.bundestag.de/vorgang/335555",
-        "imp": "medium"
       },
       {
         "d": "30.09.2026",
