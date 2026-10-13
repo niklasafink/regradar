@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T16:09:16Z",
+  "generated_at": "2026-10-13T04:09:23Z",
   "updates": {
     "idd": [
       {
@@ -4378,6 +4378,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "13.10.2026",
+      "ti": "Bafin spricht Tätigkeitsverbot gegenüber ehemaligem Geschäftsleiter aus",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG_anonym/meldung_2026_10_13_gl_taetigkeitsverbot.html?cms_expanded=true",
+      "cat": "massnahme",
+      "sum": "Die Finanzaufsicht Bafin hat am 16. Juli 2025 gegenüber einem ehemaligen Geschäftsleiter eines Kreditinstitutes ein Verbot der Ausübung einer Tätigkeit als Geschäftsleiter von CRR-Kreditinstituten angeordnet."
+    },
     {
       "d": "09.10.2026",
       "ti": "Deutsche Bank AG: Bafin ordnet neue Fristen zur Mängelbeseitigung an",
