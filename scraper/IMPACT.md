@@ -109,7 +109,15 @@ Informativ oder redaktionell, ohne dass Institute etwas tun müssen:
    Referenznummer (z. B. „RS 09/2026" = Rundschreiben trotz Typ „Meldung"),
    Fristen und die Titel der Fachbeiträge. Urteile nur auf dieser
    Grundlage — erfinde keine Fakten und rate keine Fristen.
-7. **Zweifelsfallregel.** Reicht der Text für ein sicheres Urteil nicht
+7. **Sanktionslisten nach Art der Änderung.** Neue Listungen, neue oder
+   erweiterte restriktive Maßnahmen und neue Sanktionsregime sind HOCH:
+   Institute müssen sofort Gelder einfrieren und ihr Screening anpassen.
+   Änderungen, die nur bestehende Einträge betreffen — Streichungen
+   (Delisting), geänderte Begründungen oder Identifizierungsangaben,
+   Verlängerungen ohne inhaltliche Änderung — sind GERING: Die Listen-
+   aktualisierung läuft über das Screening-System, eine eigene Prüfung
+   ist nicht nötig.
+8. **Zweifelsfallregel.** Reicht der Text für ein sicheres Urteil nicht
    aus, wähle MITTEL — nicht GERING (Unterschätzung ist teurer als
    Überschätzung), und nicht HOCH ohne Beleg.
 
@@ -134,6 +142,8 @@ abbildet. Keine Erklärungen außerhalb des JSON.
 | ESMA-Q&A-Aktualisierung zu MiCAR | gering | Klarstellung ohne neue Pflichten |
 | Delegierte VO im Amtsblatt, Anwendungsbeginn 01.03.2027 | hoch | Verbindlich, konkreter Anwendungsbeginn |
 | BaFin-Jahresbericht | gering | Bericht ohne Pflichtenbezug |
+| Durchführungs-VO des Rates: zwei weitere Personen auf der Russland-Sanktionsliste | hoch | Neue Listung, sofortiges Einfrieren |
+| Durchführungs-VO des Rates: Streichung eines Eintrags bzw. geänderte Begründungen | gering | Nur bestehende Einträge, läuft übers Screening |
 
 ## Betrieb
 

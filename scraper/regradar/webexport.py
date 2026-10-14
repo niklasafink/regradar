@@ -955,8 +955,15 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
 
     # Impact-Urteil per LLM nach den Regeln in scraper/IMPACT.md; ohne
     # Urteil greift im Frontend die Dokumenttyp-Heuristik (logic.ts).
+    # Bei Sanktionen entscheidet die Art der Änderung (neue Listung vs.
+    # Streichung/geänderte Begründung, IMPACT.md Nr. 7) — die steht nicht im
+    # Amtsblatt-Titel, sondern erst in der Zusammenfassung aus dem Volltext.
+    fw_of = {r["document_id"]: fw_id for r, fw_id, _ in selected}
     from .impact import assess
-    impacts = assess(conn, contexts)
+    impacts = assess(conn, [
+        (i, "{}\nZusammenfassung: {}".format(t, summaries[i]["de"])
+         if fw_of.get(i) == "sanctions" and i in summaries else t)
+        for i, t in contexts])
 
     updates = {}
     matched = 0
