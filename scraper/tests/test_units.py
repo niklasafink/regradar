@@ -995,3 +995,73 @@ class NewsletterCheck14Oct2026(unittest.TestCase):
         # Die Pressemitteilung entfällt, die Konsultation bleibt; Q&A-Paare
         # (kein OTHER) und andere Rahmenwerke werden gar nicht geprüft.
         self.assertEqual(drop, {2})
+
+
+class FrameworkQa14Oct2026(unittest.TestCase):
+    """Befunde aus der Rahmenwerk-Prüfung vom 14.10.2026 (Fehlzuordnungen)."""
+
+    def c(self, title, summary="", **kw):
+        from regradar.webexport import _classify
+        return _classify("{} {}".format(title, summary), title=title, **kw)
+
+    def test_third_party_risk_guidelines_are_outsourcing_not_dora(self):
+        self.assertEqual(self.c("The EBA publishes its final Guidelines on the management of "
+                                "third-party risk, delivering a more proportionate and consistent "
+                                "framework aligned with DORA"), "outsourcing")
+
+    def test_frontier_ai_ict_risks_are_dora(self):
+        self.assertEqual(self.c("ESAs' statement toward a consistent and risk-based approach "
+                                "for ICT risks from frontier AI models"), "dora")
+
+    def test_insurer_pre_emptive_recovery_is_irrd(self):
+        self.assertEqual(self.c("Consultation on the proposal for Guidelines to specify further "
+                                "the range of scenarios in pre-emptive recovery planning"), "irrd")
+
+    def test_eba_reporting_package_is_itsrep_not_tcb(self):
+        self.assertEqual(self.c("The EBA releases the final technical package for its 4.3 reporting "
+                                "framework to support Third-Country Branches reporting and AML "
+                                "Authority risk assessment data collection"), "itsrep")
+
+    def test_cancer_survivors_is_consumer_not_derisking(self):
+        self.assertEqual(self.c("Commission launches targeted consultation on fair access to "
+                                "financial services for cancer survivors"), "consumer")
+        self.assertEqual(self.c("Guidelines on ML/TF risk management and access to financial services"),
+                         "ebaderisking")
+
+    def test_amla_without_hyphen_and_non_financial_sector(self):
+        self.assertEqual(self.c("Methodology for calculating fees levied by the Anti Money "
+                                "Laundering Authority"), "amla")
+        self.assertIsNone(self.c("Consultation on the draft RTS on the assessment of the inherent and "
+                                 "residual risk profile of obliged entities in the non-financial sector",
+                                 forced="amla", source_id="amla"))
+
+    def test_mica_in_title_beats_tokenisation_in_teaser(self):
+        self.assertEqual(self.c("ESMA calls for changes to make MiCA clearer, safer and ready for "
+                                "emerging services", "tokenisation and DLT"), "mica")
+        self.assertEqual(self.c("Verordnung zur Konkretisierung von Mitteilungspflichten zur Offenlegung "
+                                "von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes"),
+                         "mica")
+
+    def test_srb_documents_are_brrd(self):
+        self.assertEqual(self.c("SRB clarifies guidance on Banks' Communication", "resolvability",
+                                source_id="srb"), "brrd")
+
+    def test_p2g_is_srep(self):
+        self.assertEqual(self.c("Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung "
+                                "(EME) ab 2026"), "srep")
+
+    def test_misc_noise(self):
+        self.assertIsNone(self.c("ESMA authorises EuroCTP as the Consolidated Tape Provider for "
+                                 "shares and exchange-traded funds"))
+        self.assertIsNone(self.c("IRSG Response to EIOPA Consultation Paper on Proportional Reinsurance"))
+        self.assertIsNone(self.c("BfDI fordert Bundestransparenzgesetz"))
+        self.assertIsNone(self.c("Public hearing on Solvency II", url="https://www.eiopa.europa.eu/"
+                                 "media/events/public-hearing-2026-07-16_en"))
+        # NIS-2-Gesetz nennt die Bundesverwaltung, bleibt aber ein Update.
+        self.assertEqual(self.c("Gesetz zur Umsetzung der NIS-2-Richtlinie und Informationssicherheits"
+                                "management in der Bundesverwaltung"), "nis2")
+
+    def test_eltif_without_european_and_taxonomy_criteria(self):
+        self.assertEqual(self.c("Long Term Investment Funds – Review of EU rules"), "eltif")
+        self.assertEqual(self.c("Commission seeks feedback on revision of criteria for sustainable "
+                                "economic activities"), "taxonomy")

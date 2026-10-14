@@ -398,7 +398,7 @@ export const FRAMEWORKS: Framework[] = [
           en:"Regulation (EU) 2024/1624 harmonises due diligence, reporting and transparency duties directly for the first time (applicable from 10 July 2027), Directive (EU) 2024/1640 governs supervision, registers and FIUs, and Regulation (EU) 2024/1620 establishes the AMLA authority in Frankfurt, operational since 1 July 2025."}},
       {refnum:"RL (EU) 2018/1673", eff:"03.12.2020", d:"12.11.2018", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
        url:"https://eur-lex.europa.eu/eli/dir/2018/1673/oj/deu",
-       ti:{de:"Richtlinie zur strafrechtlichen Bekämpfung der Geldwäsche (6AMLD)",en:"Directive on combating money laundering by criminal law (6AMLD)"},
+       ti:{de:"Richtlinie zur strafrechtlichen Bekämpfung der Geldwäsche (nicht zu verwechseln mit der 6. Geldwäscherichtlinie von 2024)",en:"Directive on combating money laundering by criminal law (not to be confused with the 2024 sixth AML Directive)"},
        s:{de:"Die Richtlinie (EU) 2018/1673 harmonisiert Straftatbestände, Vortaten und Mindeststrafen für Geldwäsche in der EU. Umsetzung bis 03.12.2020.",
           en:"Directive (EU) 2018/1673 harmonises criminal offences, predicate offences and minimum penalties for money laundering across the EU. Transposition by 3 December 2020."}},
       {refnum:"RL (EU) 2018/843", eff:"10.01.2020", d:"19.06.2018", t:{de:"Richtlinie",en:"Directive"}, src:"eur-lex.europa.eu",
@@ -1243,13 +1243,18 @@ export const FRAMEWORKS: Framework[] = [
 
   /* Chronologie geprüft gegen eba.europa.eu (Stand 03.09.2026). */
   { id:"outsourcing", jur:"EU+DE",
-    about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung. Der 2025 konsultierte Nachfolger erfasst als Drittparteien-Leitlinie alle Nicht-IKT-Dienstleister und ergänzt DORA.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting. The successor consulted in 2025 covers all non-ICT third-party providers as a third-party risk guideline and complements DORA."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
+    about:{de:"Anforderungen an Auswahl, Vertragsgestaltung, Steuerung und Registrierung von Auslagerungen einschließlich Weiterverlagerung. Der im September 2026 final veröffentlichte Nachfolger erfasst als Drittparteien-Leitlinie alle Nicht-IKT-Dienstleister und ergänzt DORA.",en:"Requirements for selecting, contracting, managing and registering outsourcing arrangements, including subcontracting. The successor finalised in September 2026 covers all non-ICT third-party providers as a third-party risk guideline and complements DORA."}, topic:"GOV", ents:["CI","AM","IF","PI","INS"],
     n:{de:"EBA-Leitlinien zu Auslagerung und Drittparteienrisiko",en:"EBA guidelines on outsourcing and third-party risk"},
     alias:"Auslagerung, Outsourcing, EBA Outsourcing Guidelines, Third-Party Risk, Third-Party Arrangements, Drittparteienrisiko, Drittdienstleister, Fremdbezug, EBA/GL/2019/02, EBA/CP/2025/12, AT 9 MaRisk",
     ref:"EBA/GL/2019/02, EBA/CP/2025/12, AT 9 MaRisk", cond:{k:"cross",any:["outsourcing"]},
     refUrl:"https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-outsourcing-arrangements",
     condL:{de:"nur bei wesentlichen Auslagerungen",en:"only where material outsourcing exists"},
     u:[
+      {d:"18.09.2026", t:{de:"Leitlinien",en:"Guidelines"}, src:"eba.europa.eu",
+       url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-management-third-party-risk-delivering-more-proportionate-and",
+       ti:{de:"Finale Leitlinien zu Drittparteienrisiken bei Nicht-IKT-Dienstleistungen mit zweijähriger Übergangsfrist",en:"Final guidelines on third-party risk for non-ICT services with a two-year transition"},
+       s:{de:"Die EBA hat die Nachfolger der Auslagerungsleitlinien final veröffentlicht. Sie konzentrieren sich auf Drittparteienvereinbarungen, die kritische oder wichtige Funktionen unterstützen, und decken den gesamten Lebenszyklus ab: Risikobewertung und Due Diligence, Vertragsgestaltung, Weiterverlagerung, Überwachung, Dokumentation und Exit-Strategien. Institute sollten ihre Auslagerungs- bzw. Drittparteienregister, Verträge und Prozesse gegen die neuen Vorgaben abgleichen; für die Umsetzung gilt eine zweijährige Übergangsfrist.",
+          en:"The EBA has finalised the successor to its outsourcing guidelines. They focus on third-party arrangements supporting critical or important functions and cover the full lifecycle: risk assessment and due diligence, contracting, subcontracting, monitoring, documentation and exit strategies. Institutions should check their outsourcing or third-party registers, contracts and processes against the new requirements; a two-year transitional period applies."}},
       {refnum:"EBA/CP/2025/12", d:"08.07.2025", deadline:"08.10.2025", t:{de:"Konsultation",en:"Consultation"}, src:"eba.europa.eu",
        url:"https://www.eba.europa.eu/publications-and-media/press-releases/eba-launches-consultation-its-draft-guidelines-third-party-risk-management-regard-non-ict-related",
        ti:{de:"Konsultation zu Leitlinien für das Management von Drittparteienrisiken: Nachfolger der Auslagerungsleitlinien",en:"Consultation on guidelines for managing third-party risk: successor to the outsourcing guidelines"},

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound, permanentRedirect, redirect } from "next/navigation";
 import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
 import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
-import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateHref } from "@/lib/updates";
+import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateBySlugLoose, updateHref } from "@/lib/updates";
 
-export const dynamicParams = false;
+// Unbekannte Slugs werden zur Laufzeit aufgelöst: Wandert eine Meldung in ein
+// anderes Rahmenwerk oder fällt sie bei einer Bereinigung weg, führen Links aus
+// verschickten Newslettern auf die neue Seite bzw. das Rahmenwerk statt ins Leere.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return [
@@ -47,7 +50,13 @@ export default async function UpdatePage(
   const moved = LEGACY_SLUGS.get(slug);
   if (moved) permanentRedirect(`/u/${moved}`);
   const page = updateBySlug(slug);
-  if (!page) notFound();
+  if (!page) {
+    const loose = updateBySlugLoose(slug);
+    if (loose) permanentRedirect(`/u/${loose.slug}`);
+    const gone = frameworkById(slug.split("-")[0]);
+    if (gone) redirect(`/r/${providerSlug(gone.ents[0])}/f/${gone.id}`);
+    notFound();
+  }
   const { fw, u } = page;
   const t = topicById(fw.topic);
   const f = frameworkById(fw.id)!;

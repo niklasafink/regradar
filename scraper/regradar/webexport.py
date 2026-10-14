@@ -23,6 +23,25 @@ MAX_PER_FRAMEWORK = 6
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
 FRAMEWORK_RULES = [
+    # QA-Prüfung 14.10.2026: Texte, die generische Muster eines Kind-Rahmenwerks
+    # treffen, inhaltlich aber zu einem anderen Regime gehören.
+    # - EBA-Leitlinien zu Drittparteienrisiken (Nachfolger der Auslagerungs-
+    #   Leitlinien) nennen DORA nur zur Abgrenzung; sie sind kein DORA-Update.
+    ("outsourcing", r"guidelines on (the )?management of third.party risk|"
+                    r"final guidelines on (the )?management of third.party|"
+                    r"leitlinien[\s\S]{0,40}management von drittparteienrisiken"),
+    # - ESA-Aussagen zu IKT-Risiken aus KI-Modellen betreffen DORA insgesamt,
+    #   nicht die Überwachung kritischer Drittdienstleister oder die
+    #   (auf Zahlungsdienstnutzer verengten) EBA-IKT-Leitlinien.
+    ("dora", r"frontier ai|(ict|ikt)[\s\S]{0,40}(risks?|risiken) from (frontier )?ai|"
+             # Prüfungsberichtsverordnungen, die DORA (VO 2022/2554) umsetzen.
+             r"2022/2554[\s\S]{0,80}prüfung|prüfungsbericht[\s\S]*\bdora\b|\bdora\b[\s\S]*prüfungsbericht"),
+    # - Präventive Sanierungsplanung ist Versicherungs-Sanierungsrecht (IRRD),
+    #   nicht die Banken-Sanierungsindikatoren der EBA.
+    ("irrd", r"pre-emptive recovery|präventive[rn]? sanierungsplan"),
+    # - EBA-Meldewesen-Pakete ("4.3 reporting framework … third-country
+    #   branches … AMLA data collection") sind Meldewesen.
+    ("itsrep", r"technical package[\s\S]{0,60}reporting framework|reporting framework \d\.\d"),
     # Konkretisierende Vorgaben (Kinder mit parent in data.ts) und eigenständige
     # EBA-Leitlinien zuerst: sie sind spezifischer als die Rechtsakte darunter.
     ("doraoversight", r"critical ict third.party|kritische[rn]? ikt-drittdienstleister|lead overseer|federführende überwachungsbehörde|"
@@ -42,16 +61,19 @@ FRAMEWORK_RULES = [
     ("ebaconnected", r"connected clients|verbundener? kunden|kreditnehmereinheit"),
     ("ebadod", r"definition of default|ausfalldefinition|\bdod\b(?=[\s\S]*(default|ausfall))"),
     ("ebaenvscen", r"environmental scenario|esg scenario analysis|umweltszenario|klimaszenario|climate scenario analysis"),
-    ("srep", r"\bsrep\b|supervisory review and evaluation|supervisory stress test|aufsichtlicher überprüfungs"),
+    ("srep", r"\bsrep\b|supervisory review and evaluation|supervisory stress test|aufsichtlicher überprüfungs|"
+             r"eigenmittelempfehlung|pillar 2 guidance|\bp2g\b"),
     ("irrbb", r"\birrbb\b|\bcsrbb\b|interest rate risk in the banking book|zinsänderungsrisik|credit spread risk"),
     ("ebagov", r"internal governance|interne[n]? governance"),
-    ("ebapog", r"product oversight|\bpog\b|retail banking products"),
+    ("ebapog", r"^(?![\s\S]*insurance (undertaking|distribut))[\s\S]*?(product oversight|\bpog\b|retail banking products)"),
     ("ebarecovery", r"recovery plan indicator|overall recovery capacity|sanierungsindikator|sanierungskapazität|recovery planning"),
     ("ebaresolvability", r"resolvability|abwicklungsfähigkeit|transferability|übertragbarkeit"),
     ("ebaamlrisk", r"risk factors? guidelines|ml/tf risk factors|risikofaktoren-leitlinien|geldwäsche-risikofaktoren"),
     ("ebaonboarding", r"remote customer onboarding|fernidentifizierung|videoident"),
     ("ebaamlofficer", r"aml/cft compliance officer|compliance officer|geldwäschebeauftragte"),
-    ("ebaderisking", r"de-risking|derisking|access to financial services"),
+    ("ebaderisking", r"de-risking|derisking|"
+                     r"(ml/tf|money laundering|aml/cft)[\s\S]{0,200}access to financial services|"
+                     r"access to financial services[\s\S]{0,200}(ml/tf|money laundering|aml/cft)"),
     ("ebasanctions", r"(guidelines|leitlinien)[\s\S]{0,60}restrictive measures|restrictive measures[\s\S]{0,60}(guidelines|leitlinien)|"
                      r"sanktions-?compliance|sanctions compliance"),
     ("ebadgsfunds", r"available financial means|dgs contributions|contributions to deposit guarantee|beiträge zur einlagensicherung"),
@@ -84,9 +106,9 @@ FRAMEWORK_RULES = [
             r"kryptowerte-steuertransparenz|\bksttg\b|\bfatca\b|crypto-asset reporting framework|\bcarf\b|"
             r"melderahmen für kryptowerte|informationen über finanzkonten"),
     ("mica", r"\bmica\b|kryptowert|crypto-?asset|"
-            r"\bmicar\b|markets in crypto-?assets|kryptowerte-verordnung|\bcasps?\b|kryptoverwahr|stablecoin|krypto-dienstleist"),
+            r"\bmicar\b|markets in crypto-?assets|kryptowerte-verordnung|kryptomärkte|\bkmag\b|\bcasps?\b|kryptoverwahr|stablecoin|krypto-dienstleist"),
     ("eltif", r"\beltif\b|euveca|"
-             r"european long-term investment|europäische[rn]? langfristige[rn]? investmentfonds"),
+             r"european long-term investment|long.term investment funds?|europäische[rn]? langfristige[rn]? investmentfonds"),
     ("mmf", r"geldmarktfonds|money market fund|"
            r"\bmmfr\b|money market"),
     ("ecspr", r"\becspr\b|crowdfunding|crowdinvest|crowdlend|schwarmfinanzier|"
@@ -106,7 +128,7 @@ FRAMEWORK_RULES = [
            r"digital markets act|gesetz über digitale märkte|torwächter|\bgatekeepers?\b(?=[\s\S]*(digital|plattform|platform))"),
     # Cyber Resilience Act (Produkte mit digitalen Elementen) vor DORA/NIS-2.
     ("cra", r"cyber resilience act|cyber-resilience-act|cyberresilienz|\bcra\b(?=[\s\S]*(product|produkt|manufactur|hersteller|vulnerab|schwachstell))"),
-    ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister|"
+    ("dora", r"\bdora\b|digital operational resilience|ikt-drittdienstleister|\bict risks?\b|ikt-risik|"
             r"dora-verordnung|ikt-vorfall|ict incident|ict-related incident|threat-led penetration|\btlpt\b|register of information|informationsregister"),
     ("nis2", r"\bnis-?2\b|bsi-gesetz|\bbsig\b|"
             r"network and information security|cybersicherheitsrichtlinie|nis-2-umsetzung"),
@@ -123,7 +145,7 @@ FRAMEWORK_RULES = [
                   r"sanktionsdurchsetzung|sanktionsliste|restriktive maßnahmen|restrictive measures|"
                   r"außenwirtschaftsgesetz|\bawg\b|\bawv\b|einfrieren von geldern|asset freez|"
                  r"sanktionen gegen|sanctions against|russland-sanktion|russia sanction|\bofac\b|iran-sanktion|iran sanction"),
-    ("amla", r"\bamla\b|\bamlar\b|anti-money laundering authority|geldwäscheverordnung"),
+    ("amla", r"\bamla\b|\bamlar\b|anti[- ]money laundering authority|geldwäscheverordnung"),
     ("gwg", r"geldwäsche|money laundering|\bgwg\b|\bfiu\b|terrorismusfinanzierung|financial crime|"
            r"\baml\b|\bamld\b|\bcft\b|anti-money laundering|\bkyc\b|know your customer|wirtschaftlich berechtigt|beneficial owner|transparenzregister|geldwäscherichtlinie"),
     ("iref", r"\biref\b|integrated reporting framework|integriertes meldewesen"),
@@ -201,7 +223,8 @@ FRAMEWORK_RULES = [
               r"alternative investment fund|\bkvgs?\b|verwahrstelle|depositar|ogaw-richtlinie|ucits directive|spezialfonds|publikumsfonds|kreditfonds|loan-originating"),
     # ESG-Spezialrechtsakte vor CSRD/SFDR (deren Muster fangen "taxonom",
     # "esg" und "sustainab" generisch ab).
-    ("taxonomy", r"taxonomie(?!\s*4)|taxonomy(?!\s*(4|architecture|package|\d))|green asset ratio|\bgar\b"),
+    ("taxonomy", r"taxonomie(?!\s*4)|taxonomy(?!\s*(4|architecture|package|\d))|green asset ratio|\bgar\b|"
+                 r"criteria for sustainable economic activit|nachhaltige[rn]? wirtschaftstätigkeit"),
     ("esgrating", r"esg[- ]ratings?|esg rating regulation|esg-rating-verordnung|nachhaltigkeitsrating|"
                   r"rating providers?\b(?=[\s\S]*(esg|sustainab))"),
     ("greenbond", r"green bond|grüne anleihe|\beugbs?\b|european green bond|sustainability-linked bond"),
@@ -215,7 +238,7 @@ FRAMEWORK_RULES = [
                 r"solvency ii|solvency 2|solvabilität ii|\borsa\b|\bscr\b|solvenzkapital|versicherungsunternehmen|insurance undertaking|rückversicher"),
     ("idd", r"versicherungsvertrieb|insurance distribution|"
            r"versicherungsvermittl|insurance intermediar|\bibips?\b|versicherungsanlageprodukt|insurance-based investment|versicherungsmakler"),
-    ("ebaict", r"ict (and security )?risk|ikt-risik"),
+    ("ebaict", r"guidelines on ict and security risk|leitlinien zu ikt- und sicherheitsrisik"),
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement|"
             r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted|"
             # BRUBEG (CRD-VI-Umsetzung im KWG): Kurzname, „Bankenrichtlinie(n)"
@@ -229,7 +252,7 @@ FRAMEWORK_RULES = [
     # generischen Verbraucherkredit-Muster.
     ("absfinag", r"absatzfinanzierungsaufsichtsgesetz|\babsfinag\b|absatzfinanzier|\bbnpl\b"),
     ("consumer", r"verbraucherdarlehen|verbraucherkredit|consumer credit|\bccd\b|restschuldversicherung|verbrauchervertr|widerrufsinformation|buy.now.pay.later|finanzieller verbraucherschutz|"
-                r"verbraucherschutz|consumer protection|verbraucherkreditrichtlinie|\bccd ?(ii|2)\b|widerrufsrecht|right of withdrawal|prämiensparvertr|kontoentgelt|dispozins|überziehungszins"),
+                r"verbraucherschutz|consumer protection|verbraucherkreditrichtlinie|right to be forgotten|recht auf vergessenwerden|cancer survivor|\bccd ?(ii|2)\b|widerrufsrecht|right of withdrawal|prämiensparvertr|kontoentgelt|dispozins|überziehungszins"),
 ]
 
 # Quellenspezifische Vorrangregeln. Dokumente der CSSF (Luxemburg) werden
@@ -265,6 +288,11 @@ SOURCE_RULES = {
     ],
     # EBA Single Rulebook Q&A: Fragen zu Versicherungsbeteiligungen (CET1-Abzug,
     # Art. 471 CRR) sind Bankenaufsicht, nicht Solvency II.
+    # SRB-Meldungen (Abwicklungsplanung, Leitlinien an Banken) gehören zur
+    # BRRD/SRMR, nicht zu den EBA-Leitlinien zur Abwicklungsfähigkeit.
+    "srb": [
+        ("brrd", r"[\s\S]"),
+    ],
     "eba_qna": [
         ("crr3", r"(?=[\s\S]*\bcrr\b)(?=[\s\S]*(insurance|versicherung))"),
     ],
@@ -391,7 +419,39 @@ NOISE = re.compile(
     # Änderung des Rahmenwerks selbst) — z. B. ESMA-Erklärungen zu einzelnen
     # Benchmark-Administratoren, die den Signifikanz-Schwellenwert erreichen.
     r"erklärung zu signifikanten benchmarks|statement on significant benchmarks|"
-    r"notified under article 24", re.IGNORECASE)
+    r"notified under article 24|"
+    # Zulassung EINES Anbieters (ESMA "authorises EuroCTP as the Consolidated
+    # Tape Provider") ändert für die Institute nichts.
+    r"\bauthori[sz]es\b[\s\S]{0,60}\bas (the |a )?(consolidated tape provider|benchmark administrator|"
+    r"trade repository|credit rating agency)|"
+    # Stellungnahmen der Stakeholder-Gruppen (IRSG, OPSG, BSG) zu ESA-
+    # Konsultationen sind Eingaben Dritter, keine Aufsichtsdokumente.
+    r"\b(irsg|opsg|bsg|smsg)\b[\s\S]{0,20}(response|antwort|stellungnahme)|"
+    # Öffentlicher Sektor ohne Bezug zu Instituten (BfDI-Informationsfreiheit,
+    # Cybersicherheitsprogramme der Bundesverwaltung).
+    r"informationsfreiheit|bundestransparenzgesetz|cybersicherheit der bundesverwaltung", re.IGNORECASE)
+
+# Veranstaltungsseiten (EIOPA "media/events", EBA "publications-and-media/
+# events"): Anhörungen und Präsentationen zu Dokumenten, die selbst eigens
+# erfasst werden.
+EVENT_URL = re.compile(r"/(media|publications-and-media)/events/", re.IGNORECASE)
+
+# AMLA-Dokumente zum Nichtfinanzsektor (Notare, Immobilienmakler, Güterhändler)
+# betreffen die Zielgruppe der Finanzinstitute nicht.
+AMLA_NON_FINANCIAL = re.compile(r"non-financial sector|nichtfinanzsektor|nichtfinanziellen sektor",
+                                re.IGNORECASE)
+
+# Titel, die ein Regime ausdrücklich nennen, gehen vor Stichwörtern im Teaser:
+# ESMA "calls for changes to make MiCA clearer" landete wegen "tokenisation"
+# im Teaser bei der DLT-Pilotregelung.
+TITLE_RULES = [
+    ("mica", r"\bmica\b|markets in crypto-?assets"),
+]
+
+# Have-Your-Say-Initiativen, deren Startdatum lange zurückliegt, sind kein
+# neues Signal: Das Vorhaben ist längst als Rechtsakt erfasst (DORFS-Vorschlag
+# 2020, PSD3-Vorschlag 2023) oder versandet.
+HYS_MAX_AGE_DAYS = 365
 
 # BaFin-Einzelfall-Maßnahmen gegen ein namentlich genanntes Institut (§ 60b
 # KWG, § 84 WpIG, § 57 GwG u. Ä.): kein Rahmenwerk-Update für alle Institute,
@@ -433,7 +493,7 @@ NOT_A_CONSULTATION = re.compile(
 # BaFin veröffentlicht ein Rundschreiben mehrfach: als Rundschreiben-Seite,
 # als gleichnamige Download-Seite (URL teils nicht aufrufbar) und als
 # erläuternde Meldung. Für den Leser ist das EINE Neuerung.
-BAFIN_CIRCULAR_NO = re.compile(r"rundschreiben\s+(\d{1,2}/20\d{2})", re.IGNORECASE)
+BAFIN_CIRCULAR_NO = re.compile(r"(?:rundschreiben|aufsichtsmitteilung)\s+(\d{1,2}/20\d{2})", re.IGNORECASE)
 BAFIN_CIRCULAR_WINDOW_DAYS = 3
 
 # Die beiden Regeln oben (HYS_NOT_YET, Rundschreiben-Fassungen) entfernen
@@ -533,6 +593,10 @@ def _classify(text: str, forced: Optional[str] = None,
         return None
     if url and INDIVIDUAL_MEASURE_URL.search(url):
         return None
+    if url and EVENT_URL.search(url):
+        return None
+    if source_id == "amla" and AMLA_NON_FINANCIAL.search(title if title is not None else text):
+        return None
     if url and EVERGREEN_URL.search(url):
         return None
     if FINE_WITH_AMOUNT.search(title if title is not None else text):
@@ -551,6 +615,9 @@ def _classify(text: str, forced: Optional[str] = None,
             return fw_id
     if source_id in EXCLUSIVE_SOURCES:
         return None
+    for fw_id, pattern in TITLE_RULES:
+        if title and re.search(pattern, title.lower()):
+            return fw_id
     for fw_id, pattern in FRAMEWORK_RULES:
         if re.search(pattern, lowered):
             return fw_id
@@ -780,6 +847,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 if r["source_id"] == "eba_qna" and r["reference_number"]}
     feed_qna = {_eba_qna_id(r) for r in rows if r["source_id"] == "eba"} - {None}
 
+    from datetime import date as _hdate
+    _hys_today = _hdate.today().isoformat()
     candidates = []
     for r in rows:
         if _too_thin(r):
@@ -808,6 +877,10 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
             continue
         if (r["source_id"] == "hys" and HYS_NOT_YET.search(r["summary"] or "")
                 and (r["first_seen_at"] or "") >= STRICT_SINCE):
+            continue
+        hys_age = (_days_apart(r["publication_date"][:10], _hys_today)
+                   if r["source_id"] == "hys" and r["publication_date"] else None)
+        if hys_age is not None and hys_age > HYS_MAX_AGE_DAYS:
             continue
         # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
         # Titel wie "Consultation on the draft RTS on Customer Due
@@ -891,7 +964,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # Die erläuternde Meldung nennt die Nummer oft erst im Text ("In
         # ihrem Rundschreiben gibt die Bafin bekannt …"): Volltext (gecacht).
         if (not numbers and rank == 0
-                and "rundschreiben" in (r["canonical_url"] or "").lower()):
+                and re.search(r"rundschreiben|aufsichtsmitteilung|/meldung/",
+                              (r["canonical_url"] or "").lower())):
             numbers = set(BAFIN_CIRCULAR_NO.findall(
                 fetch_fulltext(conn, r["document_id"], r["canonical_url"]) or ""))
         # Eine Sammelmeldung zu mehreren Rundschreiben ersetzt keines davon.
