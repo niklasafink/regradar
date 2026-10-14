@@ -66,12 +66,13 @@ export interface RunReport {
   locked?: boolean;
 }
 
-/** Slugs sind `<rahmenwerk>-<JJJJ-MM-TT>-<titel>`; ohne das Datum bleibt die
-    Identität des Dokuments. Titel, die im selben Rahmenwerk nach mehr als
-    einem Jahr wiederkehren, gelten als neues Dokument. */
+/** Slugs sind `<rahmenwerk>-<JJJJ-MM-TT>-<titel>`; ohne Datum und Rahmenwerk
+    bleibt die Identität des Dokuments — auch eine Neuzuordnung zu einem
+    anderen Rahmenwerk (QA 14.10.2026: P2G crr3 → srep) macht es nicht neu.
+    Titel, die nach mehr als einem Jahr wiederkehren, gelten als neu. */
 const SLUG_PARTS = /^(.+?)-(\d{4}-\d{2}-\d{2})-(.+)$/;
 const SAME_DOC_MAX_DAYS = 365;
-const identityOf = (fwId: string, titleSlug: string): string => `${fwId}|${titleSlug}`;
+const identityOf = (titleSlug: string): string => titleSlug;
 const daysApart = (a: string, b: string): number =>
   Math.abs(Date.parse(a) - Date.parse(b)) / 86_400_000;
 
@@ -83,7 +84,7 @@ function seenByIdentity(seen: Record<string, string>): Map<string, SeenSlug[]> {
   for (const [slug, ts] of Object.entries(seen)) {
     const m = slug.match(SLUG_PARTS);
     if (!m) continue;
-    const id = identityOf(m[1], m[3]);
+    const id = identityOf(m[3]);
     out.set(id, [...(out.get(id) ?? []), { slug, iso: m[2], ts }]);
   }
   return out;
@@ -115,12 +116,13 @@ async function loadSeen(persist: boolean, nowIso: string): Promise<{
   const newSlugs: string[] = [];
   for (const p of UPDATE_PAGES) {
     // Dasselbe Dokument unter neuem Datum (Bundestags-Vorgang mit neuem
-    // Verfahrensschritt, korrigiertes Publikationsdatum): der Slug ändert
+    // Verfahrensschritt, korrigiertes Publikationsdatum) oder in einem
+    // anderen Rahmenwerk (korrigierte Zuordnung): der Slug ändert
     // sich, die Meldung ist aber nicht neu. Es gilt der früheste First-Seen-
     // Zeitpunkt aller Fassungen, sonst ginge sie bei jedem Schritt erneut
     // raus (Zoll-Gesetz 14.08.–09.10.2026 fünfmal, CARF-Gesetze dreimal).
     const iso = isoDate(p.u.d);
-    const earliest = (known.get(identityOf(p.fw.id, p.u.sl ?? slugify(p.u.ti.de))) ?? [])
+    const earliest = (known.get(identityOf(p.u.sl ?? slugify(p.u.ti.de))) ?? [])
       .filter((s) => s.slug !== p.slug && daysApart(s.iso, iso) <= SAME_DOC_MAX_DAYS)
       .map((s) => s.ts)
       .sort()[0];
