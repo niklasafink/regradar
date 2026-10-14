@@ -72,16 +72,30 @@ def looks_english(title: Optional[str]) -> bool:
     return bool(_EN_HINTS.search(title)) and not re.search(r"[äöüß]", title.lower())
 
 
+# Originaltitel ab dieser Länge brauchen einen gekürzten Anzeigetitel, auch
+# wenn sie deutsch sind (EUR-Lex-Volltitel der Sanktions-VOen, 14.10.2026).
+TITLE_MAX = 120
+
+
+def needs_title(title: Optional[str]) -> bool:
+    """Original-Titel, der einen Anzeigetitel braucht: nicht deutsch oder
+    zu lang für Liste und Mail."""
+    return looks_english(title) or len((title or "").strip()) > TITLE_MAX
+
+
 TITLE_PROMPT = (
     "Du erhältst eine JSON-Liste (id, title) mit Titeln regulatorischer "
     "Meldungen für Compliance-Verantwortliche von Finanzunternehmen. Liefere "
     "je id einen deutschen Anzeigetitel: sinngemäß und fachlich korrekt "
-    "übersetzt, kurz (max. ca. 90 Zeichen). Etablierte englische Eigenbegriffe "
+    "übersetzt bzw. bei überlangen deutschen Titeln auf den Kern gekürzt "
+    "(Sanktions-VO: betroffenes Land/Regime und Art der Änderung), kurz "
+    "(max. ca. 90 Zeichen). Etablierte englische Eigenbegriffe "
     "und Namen von Rechtsakten bleiben unübersetzt (z. B. DORA, MiCA, "
     "Solvency II, Consolidated Tape, Q&A, RTS/ITS, Level 1, Have Your Say); "
     "offizielle Kennungen und Nummern bleiben in Klammern am Ende erhalten. "
     'Antworte ausschließlich mit einem JSON-Objekt {id: {"de": "...", '
-    '"en": "<Originaltitel, ggf. gekürzt>"}}. Keine Erklärungen.'
+    '"en": "<englischer Titel: bei englischem Original dieses, ggf. gekürzt, '
+    'sonst eine Übersetzung>"}}. Keine Erklärungen.'
 )
 TITLE_BATCH = 15
 
@@ -125,11 +139,12 @@ def _title_from_context(context: str) -> str:
 def backfill_titles(conn: sqlite3.Connection, model: str, key: str,
                     items: List[Tuple[int, str]]) -> Dict[int, dict]:
     """Deutsche Anzeigetitel für gecachte Zusammenfassungen ohne "ti", deren
-    Original-Titel nicht deutsch ist. items: (document_id, Original-Titel).
+    Original-Titel nicht deutsch oder überlang ist. items: (document_id,
+    Original-Titel).
     Ergebnis wird in llm_summary (ti_de/ti_en) gespeichert."""
     from .db import utcnow
     result: Dict[int, dict] = {}
-    todo = [(i, t) for i, t in items if looks_english(t)]
+    todo = [(i, t) for i, t in items if needs_title(t)]
     for start in range(0, len(todo), TITLE_BATCH):
         batch = todo[start:start + TITLE_BATCH]
         try:
@@ -144,7 +159,7 @@ def backfill_titles(conn: sqlite3.Connection, model: str, key: str,
             result[i] = ti
         conn.commit()
     if todo:
-        print("LLM-Titel: {} von {} englischen Titeln übersetzt".format(len(result), len(todo)))
+        print("LLM-Titel: {} von {} Titeln übersetzt/gekürzt".format(len(result), len(todo)))
     return result
 
 def praxis_titles(conn: sqlite3.Connection, titles: List[str]) -> Dict[str, str]:
@@ -219,7 +234,10 @@ SYSTEM_PROMPT = (
     "Deutsch ist oder (b) für Leser ohne Detailwissen unverständlich ist – "
     "etwa nur ein technischer Code, eine Regel-/Vorlagen-ID, ein Aktenzeichen "
     "oder ein Dateiname (wie 'Validation Rule RRCOROF_V903610_H_C0030') oder "
-    "ein nichtssagender Titel wie 'Circular letter'. "
+    "ein nichtssagender Titel wie 'Circular letter' – oder (c) länger als "
+    "ca. 120 Zeichen ist (z. B. volle Amtsblatt-Titel 'Durchführungs"
+    "verordnung (EU) 2026/2281 des Rates vom … zur Durchführung der "
+    "Verordnung …'). "
     '"de" ist ein deutscher Titel: sinngemäß und fachlich korrekt übersetzt '
     "bzw. beschreibend, kurz (max. ca. 90 Zeichen), sagt worum es inhaltlich "
     "geht. Etablierte englische Eigenbegriffe und Namen von Rechtsakten "
@@ -228,8 +246,8 @@ SYSTEM_PROMPT = (
     "und Nummern (Rundschreiben-Nr., Q&A-ID, Aktenzeichen) bleiben in Klammern "
     'am Ende erhalten. "en" ist der englische Titel (bei englischem Original '
     "der Originaltitel, ggf. gekürzt; bei deutschem Original eine "
-    "Übersetzung). Ist der Original-Titel bereits deutsch und verständlich, "
-    'lasse "ti" weg.\n\n'
+    "Übersetzung). Ist der Original-Titel bereits deutsch, verständlich und "
+    'kurz, lasse "ti" weg.\n\n'
     "Regeln: Nur Informationen aus dem gegebenen Text verwenden, nichts "
     "erfinden und keine Fristen raten. Das Veröffentlichungsdatum ist kein "
     "Inkrafttreten: 'in Kraft getreten', 'gilt ab' oder 'anzuwenden ab' nur "

@@ -99,15 +99,15 @@ def _ensure_table(conn: sqlite3.Connection) -> None:
     conn.commit()
 
 
-def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, bool]:
+def _post_json(model: str, key: str, system: str, user: str):
+    """Chat-Anfrage mit JSON-Antwort; gibt das geparste JSON zurück."""
     payload = {
         "model": model,
         "temperature": 0,
         "response_format": {"type": "json_object"},
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": json.dumps(
-                [{"id": i, "text": t} for i, t in items], ensure_ascii=False)},
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
         ],
     }
     req = urllib.request.Request(
@@ -122,7 +122,12 @@ def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, bool]
     content = body["choices"][0]["message"]["content"]
     # Manche Modelle verpacken JSON in Markdown-Zäune.
     content = content.strip().removeprefix("```json").removeprefix("```").removesuffix("```")
-    parsed = json.loads(content)
+    return json.loads(content)
+
+
+def _chat(model: str, key: str, items: List[Tuple[int, str]]) -> Dict[int, bool]:
+    parsed = _post_json(model, key, SYSTEM_PROMPT, json.dumps(
+        [{"id": i, "text": t} for i, t in items], ensure_ascii=False))
     # Manche Modelle liefern statt {"id": bool} eine Liste von
     # {"id": ..., "relevant": ...}-Objekten.
     if isinstance(parsed, list):

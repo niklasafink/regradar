@@ -42,7 +42,7 @@ import {
 } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
 import { createFreqToken, type Frequency } from "./email";
-import { firstParagraph, UPDATE_PAGES, type UpdatePage } from "./updates";
+import { firstParagraph, isoDate, slugify, UPDATE_PAGES, type UpdatePage } from "./updates";
 
 const SEEN_KEY = "newsletter:seen";
 const LEGACY_SENT_KEY = "newsletter:sent";
@@ -64,6 +64,29 @@ export interface RunReport {
   pendingItems?: number;
   /** Ein anderer Lauf hält die Versand-Sperre — nichts verschickt. */
   locked?: boolean;
+}
+
+/** Slugs sind `<rahmenwerk>-<JJJJ-MM-TT>-<titel>`; ohne das Datum bleibt die
+    Identität des Dokuments. Titel, die im selben Rahmenwerk nach mehr als
+    einem Jahr wiederkehren, gelten als neues Dokument. */
+const SLUG_PARTS = /^(.+?)-(\d{4}-\d{2}-\d{2})-(.+)$/;
+const SAME_DOC_MAX_DAYS = 365;
+const identityOf = (fwId: string, titleSlug: string): string => `${fwId}|${titleSlug}`;
+const daysApart = (a: string, b: string): number =>
+  Math.abs(Date.parse(a) - Date.parse(b)) / 86_400_000;
+
+type SeenSlug = { slug: string; iso: string; ts: string };
+
+/** Identität → alle bereits gesehenen Slugs dieses Dokuments. */
+function seenByIdentity(seen: Record<string, string>): Map<string, SeenSlug[]> {
+  const out = new Map<string, SeenSlug[]>();
+  for (const [slug, ts] of Object.entries(seen)) {
+    const m = slug.match(SLUG_PARTS);
+    if (!m) continue;
+    const id = identityOf(m[1], m[3]);
+    out.set(id, [...(out.get(id) ?? []), { slug, iso: m[2], ts }]);
+  }
+  return out;
 }
 
 /** First-Seen-Zeitpunkte aller Slugs laden bzw. neue Slugs registrieren.
@@ -88,8 +111,24 @@ async function loadSeen(persist: boolean, nowIso: string): Promise<{
   }
 
   const first = Object.keys(seen).length === 0;
+  const known = first ? new Map<string, SeenSlug[]>() : seenByIdentity(seen);
   const newSlugs: string[] = [];
   for (const p of UPDATE_PAGES) {
+    // Dasselbe Dokument unter neuem Datum (Bundestags-Vorgang mit neuem
+    // Verfahrensschritt, korrigiertes Publikationsdatum): der Slug ändert
+    // sich, die Meldung ist aber nicht neu. Es gilt der früheste First-Seen-
+    // Zeitpunkt aller Fassungen, sonst ginge sie bei jedem Schritt erneut
+    // raus (Zoll-Gesetz 14.08.–09.10.2026 fünfmal, CARF-Gesetze dreimal).
+    const iso = isoDate(p.u.d);
+    const earliest = (known.get(identityOf(p.fw.id, p.u.sl ?? slugify(p.u.ti.de))) ?? [])
+      .filter((s) => s.slug !== p.slug && daysApart(s.iso, iso) <= SAME_DOC_MAX_DAYS)
+      .map((s) => s.ts)
+      .sort()[0];
+    if (earliest && (!seen[p.slug] || earliest < seen[p.slug])) {
+      seen[p.slug] = earliest;
+      toPersist[p.slug] = earliest;
+      continue;
+    }
     if (seen[p.slug]) continue;
     const ts = first ? EPOCH : nowIso;
     seen[p.slug] = ts;
@@ -393,10 +432,14 @@ export async function runNewsletter(opts: {
   // Wasserzeichen bleiben unberührt; der nächste Cron erinnert ggf. erneut.
   if (!opts.approved && writable) {
     const pending = new Map<string, UpdatePage>();
+    // Nur wer tatsächlich eine Mail bekäme (fällig + etwas Relevantes) —
+    // mittwochs sind das z. B. nur die Tages-Abos, nicht alle Abonnenten.
+    let due = 0;
     for (const sub of subs) {
       if (!dueFor(sub, nowIso)) continue; // Wochen-Abo, noch nicht fällig
-      const fresh = freshFor(sub, sorted, seen, nowIso);
-      for (const p of relevantFor(sub, fresh)) pending.set(p.slug, p);
+      const rel = relevantFor(sub, freshFor(sub, sorted, seen, nowIso));
+      if (rel.length > 0) due++;
+      for (const p of rel) pending.set(p.slug, p);
     }
     if (pending.size === 0) {
       report.skipped = subs.length;
@@ -407,7 +450,7 @@ export async function runNewsletter(opts: {
     const { html } = renderNewsletter(pages, `${base}/api/unsubscribe?token=preview`, base);
     await sendApprovalRequest(
       "updates",
-      `${pages.length} ${pages.length === 1 ? "neues Update" : "neue Updates"} für ${subs.length} Empfänger`,
+      `${pages.length} ${pages.length === 1 ? "neues Update" : "neue Updates"} für ${due} von ${subs.length} Abonnenten`,
       html,
     );
     report.pendingApproval = true;

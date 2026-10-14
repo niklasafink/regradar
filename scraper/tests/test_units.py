@@ -4,7 +4,9 @@ Ausführen:  python3 -m unittest discover -s tests -v
 """
 import os
 import sys
+import sqlite3
 import unittest
+import unittest.mock
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -913,3 +915,83 @@ class NewsletterCheckOct2026(unittest.TestCase):
         self.assertLess(
             rank(base + "Veroeffentlichungen/DE/Rundschreiben/2026/rs_14_2026.html"),
             rank(base + "Downloads/DE/Rundschreiben/rs_14_2026.html"))
+
+
+class NewsletterCheck14Oct2026(unittest.TestCase):
+    """Befunde aus der Newsletter-Prüfung vom 14.10.2026."""
+
+    def test_tax_laws_are_out_of_scope(self):
+        from regradar.webexport import _classify
+        t = "Gesetz zum Schließen einer Gerechtigkeitslücke bei der Besteuerung von Kryptowerten"
+        self.assertIsNone(_classify(t, source_id="dip", title=t))
+        # Steuer-MELDEpflichten der Institute bleiben (Rahmenwerk crs).
+        t = "Kryptowerte-Steuertransparenzgesetz (KStTG): DAC8 umgesetzt"
+        self.assertEqual(_classify(t, title=t), "crs")
+        # Steuerhinterziehung als Geldwäsche-Vortat ist kein Steuerrecht.
+        t = "Gesetz zur Stärkung der Verfolgung von Geldwäsche und Steuerhinterziehung"
+        self.assertEqual(_classify(t, source_id="dip", title=t), "gwg")
+
+    def test_treaty_laws_are_not_updates(self):
+        from regradar.webexport import _classify
+        for t in ("Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den "
+                  "zuständigen Behörden über den automatischen Austausch von Informationen "
+                  "nach dem Melderahmen für Kryptowerte",
+                  "Gesetz zu der Zusatzvereinbarung vom 8. Juni 2023 zur Mehrseitigen "
+                  "Vereinbarung vom 29. Oktober 2014 zwischen den zuständigen Behörden über "
+                  "den automatischen Austausch von Informationen über Finanzkonten"):
+            self.assertIsNone(_classify(t, source_id="dip", title=t))
+
+    def test_carf_is_crs_not_mica(self):
+        from regradar.webexport import _classify
+        self.assertEqual(_classify("OECD Melderahmen für Kryptowerte (CARF)"), "crs")
+        self.assertEqual(_classify("ESMA Q&A on MiCA crypto-asset service providers"), "mica")
+
+    def test_eba_resolution_templates_are_brrd(self):
+        from regradar.webexport import _classify
+        t = ("2026_7912 Definition of “Substitutability” of CCPs and the connected reporting "
+             "of “Alternative Providers” for the purpose of the template Z 09.04 (RESOL II).")
+        self.assertEqual(_classify(t, source_id="eba", title=t), "brrd")
+        t = "2026_7823 Template Z09.01: EBA Taxonomy alignment with ITS Requirements -Annex II instructions"
+        self.assertEqual(_classify(t, source_id="eba", title=t), "brrd")
+        t = "2026_7844 Reporting template RESOL 2 – Z.08.02"
+        self.assertEqual(_classify(t, source_id="eba", title=t), "brrd")
+
+    def test_eba_feed_qna_keeps_qna_type(self):
+        from regradar.webexport import _doc_type
+        r = {"document_type": "ITS", "consultation_deadline": None,
+             "title": "2026_7823 Template Z09.01: EBA Taxonomy alignment with ITS Requirements",
+             "canonical_url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7823"}
+        self.assertEqual(_doc_type(r), "Q_AND_A")
+
+    def test_overlong_german_titles_get_display_title(self):
+        from regradar.summarize import needs_title
+        self.assertTrue(needs_title(
+            "Durchführungsverordnung (EU) 2026/2281 des Rates vom 12. Oktober 2026 zur "
+            "Durchführung der Verordnung (EU) Nr. 269/2014 über restriktive Maßnahmen angesichts "
+            "von Handlungen, die die territoriale Unversehrtheit der Ukraine untergraben"))
+        self.assertFalse(needs_title("Konsultation zur Sachkunde bei Verbraucherdarlehen"))
+
+    def test_samepub_pairs_only_same_source_fw_and_news(self):
+        from regradar import samepub
+        from regradar.webexport import _clean, _days_apart, _doc_type
+
+        def row(i, src, typ, d, seen="2026-10-09T05:00:00Z"):
+            return {"document_id": i, "source_id": src, "document_type": typ,
+                    "publication_date": d, "first_seen_at": seen, "title": "t%d" % i,
+                    "summary": "", "consultation_deadline": None,
+                    "canonical_url": "https://x/%d" % i}
+        conn = sqlite3.connect(":memory:")
+        sel = [(row(1, "eiopa", "CONSULTATION", "2026-10-08"), "idd", "08.10.2026"),
+               (row(2, "eiopa", "OTHER", "2026-10-08"), "idd", "08.10.2026"),
+               (row(3, "eiopa", "CONSULTATION", "2026-10-08"), "solvency", "08.10.2026"),
+               (row(4, "eba", "Q_AND_A", "2026-10-08"), "crr3", "08.10.2026"),
+               (row(5, "eba", "Q_AND_A", "2026-10-08"), "crr3", "08.10.2026")]
+        conn.execute("CREATE TABLE IF NOT EXISTS llm_samepub (doc_a INTEGER, doc_b INTEGER, "
+                     "same INTEGER, model TEXT, checked_at TEXT, fmt INTEGER, "
+                     "PRIMARY KEY (doc_a, doc_b))")
+        conn.execute("INSERT INTO llm_samepub VALUES (1,2,1,'m','x',?)", (samepub.FORMAT,))
+        with unittest.mock.patch.object(samepub, "api_key", return_value=None):
+            drop = samepub.duplicates(conn, sel, _doc_type, _days_apart, _clean)
+        # Die Pressemitteilung entfällt, die Konsultation bleibt; Q&A-Paare
+        # (kein OTHER) und andere Rahmenwerke werden gar nicht geprüft.
+        self.assertEqual(drop, {2})

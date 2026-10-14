@@ -77,6 +77,12 @@ FRAMEWORK_RULES = [
                  r"distributed[\s-]*ledger|\bdlt\b|"
                  r"kryptowertpapier|crypto securit|elektronische[sn]? wertpapier|\bewpg\b|"
                  r"tokenisier|tokeni[sz](ed|ation)"),
+    # Steuertransparenz (CRS/DAC8/CARF) vor MiCA: "Melderahmen für Kryptowerte"
+    # ist Steuerrecht, kein Kryptoaufsichtsrecht (CARF-Gesetze landeten
+    # 24.09.–08.10.2026 bei MiCA).
+    ("crs", r"\bdac ?8\b|common reporting standard|finanzkonten-informationsaustausch|\bfkaustg\b|"
+            r"kryptowerte-steuertransparenz|\bksttg\b|\bfatca\b|crypto-asset reporting framework|\bcarf\b|"
+            r"melderahmen für kryptowerte|informationen über finanzkonten"),
     ("mica", r"\bmica\b|kryptowert|crypto-?asset|"
             r"\bmicar\b|markets in crypto-?assets|kryptowerte-verordnung|\bcasps?\b|kryptoverwahr|stablecoin|krypto-dienstleist"),
     ("eltif", r"\beltif\b|euveca|"
@@ -106,8 +112,6 @@ FRAMEWORK_RULES = [
             r"network and information security|cybersicherheitsrichtlinie|nis-2-umsetzung"),
     ("fida", r"\bfida\b|financial data access|open finance|zugang zu finanzdaten|"
             r"fida-verordnung|finanzdatenzugang|financial data sharing"),
-    ("crs", r"\bdac ?8\b|common reporting standard|finanzkonten-informationsaustausch|\bfkaustg\b|"
-            r"kryptowerte-steuertransparenz|\bksttg\b|\bfatca\b|crypto-asset reporting framework|\bcarf\b"),
     ("csdr", r"\bcsdr\b|\bt\+1\b|zentralverwahrer|central securities depositor|abwicklungszyklus|settlement cycle|settlement discipline|"
             r"csdr refit|settlement efficiency|abwicklungseffizienz|wertpapierabwicklung|securities settlement"),
     ("dgsd", r"einlagensicherung|deposit guarantee|deposit insurance|\bdgsd\b|\beinsig\b|\bcmdi\b|"
@@ -250,6 +254,14 @@ SOURCE_RULES = {
         ("luaifm", r"law of 17 december 2010|law of 12 july 2013|law of 3 march 2026|\b2010 law\b|\b2013 law\b|25/901|"
                    r"\bsifs?\b|sicar|\braifs?\b|part ii uci|\bucits\b|\baifms?\b|\baifs?\b|investment funds?\b|"
                    r"undertakings for collective investment|\bucis?\b|eltif|\bmmfr?\b|money market fund"),
+    ],
+    # EBA-Feed: Q&As zu den Z-Meldebögen (RESOL, Abwicklungsplanung) gehören
+    # zur BRRD — "CCPs" darin ist kein EMIR-Thema, "EBA Taxonomy" die
+    # Meldewesen-Taxonomie, nicht die EU-Taxonomie (Q&A 2026_7912 und
+    # 2026_7823 landeten am 09.10.2026 bei EMIR bzw. EU-Taxonomie).
+    "eba": [
+        ("brrd", r"\btemplates? z ?\.?\d{2}\.\d{2}|\bz ?\.?\d{2}\.\d{2}\b|\bresol\b|resolution planning report"),
+        ("itsrep", r"eba taxonomy|reporting taxonomy|taxonomy alignment with its"),
     ],
     # EBA Single Rulebook Q&A: Fragen zu Versicherungsbeteiligungen (CET1-Abzug,
     # Art. 471 CRR) sind Bankenaufsicht, nicht Solvency II.
@@ -432,6 +444,27 @@ BAFIN_CIRCULAR_WINDOW_DAYS = 3
 STRICT_SINCE = "2026-10-02T15:00:00Z"
 
 
+EBA_QNA_URL = re.compile(r"/single-rule-book-qa/qna/view/publicId/(\d{4}_\d+)", re.IGNORECASE)
+
+
+def _eba_qna_id(r) -> Optional[str]:
+    """Q&A-Kennung (z. B. 2026_7823), wenn das Dokument eine EBA-Q&A ist."""
+    m = EBA_QNA_URL.search(r["canonical_url"] or "")
+    return m.group(1) if m else None
+
+
+def _doc_type(r) -> str:
+    """Dokumenttyp für Anzeige und LLM-Kontext. Der EBA-Feed rät den Typ aus
+    dem Titel ("… with ITS Requirements" → ITS); eine Q&A bleibt eine Q&A."""
+    doc_type = r["document_type"] or "OTHER"
+    if _eba_qna_id(r):
+        return "Q_AND_A"
+    if (doc_type == "CONSULTATION" and not r["consultation_deadline"]
+            and NOT_A_CONSULTATION.search(r["title"] or "")):
+        return "OTHER"
+    return doc_type
+
+
 def _bafin_circular_rank(url: Optional[str]) -> int:
     """Welche Fassung bleibt: die erläuternde Meldung (sagt, was sich ändert),
     sonst die Rundschreiben-Seite, zuletzt die Download-Seite."""
@@ -471,6 +504,25 @@ OFFTOPIC_DE = re.compile(
     r"telekommunikation|rundfunk|postgesetz", re.IGNORECASE)
 
 
+# Steuerrecht ist nicht Gegenstand des Radars (Nutzerentscheidung
+# 02.09.2026), auch wenn Finanzinstitute betroffen sind: Besteuerung,
+# Steuerarten, Verrechnungspreise. Steuer-MELDEpflichten der Institute
+# (CRS/DAC8/KStTG) bleiben über das Rahmenwerk "crs" erfasst.
+TAX_ONLY = re.compile(
+    r"\bbesteuerung\b|einkommensteuer|umsatzsteuer|mehrwertsteuer|körperschaftsteuer|"
+    r"gewerbesteuer|erbschaftsteuer|schenkungsteuer|grunderwerbsteuer|kapitalertragsteuer|"
+    r"abgeltungsteuer|mindeststeuer|mindestbesteuerung|globe-informationen|"
+    r"verrechnungspreis|transfer pricing|\bvat\b|value added tax|"
+    r"doppelbesteuerung|steueränderungsgesetz|jahressteuergesetz", re.IGNORECASE)
+
+# Vertragsgesetze ("Gesetz zu dem Abkommen/der Vereinbarung …") ratifizieren
+# Vereinbarungen zwischen Staaten bzw. Behörden. Pflichten der Institute
+# entstehen erst durch das Umsetzungsgesetz, das eigens erfasst wird.
+TREATY_LAW = re.compile(
+    r"^\s*(entwurf eines )?gesetz(es)? zu (dem|der|den) [\s\S]{0,200}?"
+    r"(abkommen|vereinbarung|übereinkommen|protokoll|vertrag)", re.IGNORECASE)
+
+
 def _classify(text: str, forced: Optional[str] = None,
               source_id: Optional[str] = None,
               title: Optional[str] = None,
@@ -486,6 +538,10 @@ def _classify(text: str, forced: Optional[str] = None,
     if FINE_WITH_AMOUNT.search(title if title is not None else text):
         return None
     if source_id in LEGISLATION_SOURCES and OFFTOPIC_DE.search(title if title is not None else text):
+        return None
+    if TAX_ONLY.search(title if title is not None else text):
+        return None
+    if source_id in LEGISLATION_SOURCES and TREATY_LAW.search(title if title is not None else text):
         return None
     if forced:
         return forced
@@ -716,6 +772,14 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         return (len(words) <= 2 and not re.search(r"\d", title)
                 and len((r["summary"] or "").strip()) < 80)
 
+    # Der allgemeine EBA-Feed meldet beantwortete Q&As ohne Rechtsakt und
+    # Thema; die Q&A-Quelle (eba_qna) kennt beides ("Legal act: Directive
+    # 2014/59/EU (BRRD) — Topic: BRRD Reporting"). Für die Zuordnung dort
+    # nachschlagen, sonst entscheiden Zufallswörter im Titel ("CCPs", "Taxonomy").
+    qna_meta = {r["reference_number"]: r["summary"] or "" for r in rows
+                if r["source_id"] == "eba_qna" and r["reference_number"]}
+    feed_qna = {_eba_qna_id(r) for r in rows if r["source_id"] == "eba"} - {None}
+
     candidates = []
     for r in rows:
         if _too_thin(r):
@@ -739,14 +803,19 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         # Antwort — daraus folgt keine Handlungspflicht, also kein Update.
         if r["source_id"] == "eba_qna" and (r["status"] or "").upper() != "FINAL":
             continue
+        # Dieselbe Q&A kam schon über den EBA-Feed: nur einmal melden.
+        if r["source_id"] == "eba_qna" and r["reference_number"] in feed_qna:
+            continue
         if (r["source_id"] == "hys" and HYS_NOT_YET.search(r["summary"] or "")
                 and (r["first_seen_at"] or "") >= STRICT_SINCE):
             continue
         # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
         # Titel wie "Consultation on the draft RTS on Customer Due
         # Diligence" nennen weder Behörde noch Stichworte eindeutig.
+        qna_id = _eba_qna_id(r)
         fw_id = _classify(
-            "{} {}".format(r["title"] or "", r["summary"] or ""),
+            "{} {} {}".format(r["title"] or "", r["summary"] or "",
+                              qna_meta.get(qna_id, "") if qna_id else ""),
             forced="amla" if r["source_id"] == "amla" else None,
             source_id=r["source_id"], title=r["title"], url=r["canonical_url"])
         if not fw_id:
@@ -843,6 +912,12 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 circular_dupes.add(doc_id)
     selected = [x for x in selected if x[0]["document_id"] not in circular_dupes]
 
+    # Pressemitteilung + Dokument derselben Veröffentlichung (unterschiedliche
+    # Titel): nur eine Fassung bleibt (LLM-geprüft, gecacht; samepub.py).
+    from .samepub import duplicates as samepub_duplicates
+    same_pub = samepub_duplicates(conn, selected, _doc_type, _days_apart, _clean)
+    selected = [x for x in selected if x[0]["document_id"] not in same_pub]
+
     # Big-4-/Kanzlei-Beiträge vor der Zusammenfassung ermitteln, damit deren
     # Titel als Relevanz-Kontext in die LLM-Zusammenfassung einfließen können.
     adv_by_doc = {}
@@ -857,7 +932,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         (r["document_id"],
          "Titel: {}\nTyp: {}\nBehörde: {}\nDatum: {}{}{}\nTeaser: {}{}".format(
              _clean(r["title"], 300),
-             r["document_type"] or "OTHER",
+             _doc_type(r),
              r["authority"] or _domain(r["canonical_url"]),
              date,
              "\nKonsultationsfrist: {}".format(_de_date(r["consultation_deadline"]))
@@ -889,11 +964,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     summarized = 0
     for r, fw_id, date in selected:
         bucket = updates.setdefault(fw_id, [])
-        doc_type = r["document_type"]
-        if (doc_type == "CONSULTATION" and not r["consultation_deadline"]
-                and NOT_A_CONSULTATION.search(r["title"] or "")):
-            doc_type = "OTHER"
-        de, en = TYPE_LABELS.get(doc_type, TYPE_LABELS["OTHER"])
+        de, en = TYPE_LABELS.get(_doc_type(r), TYPE_LABELS["OTHER"])
         title = _clean(r["title"], 200)
         # Verständliche Zusammenfassung (bis zu 3 Absätze) aus dem LLM;
         # Fallback ist der bereinigte Original-Teaser.
