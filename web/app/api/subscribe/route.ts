@@ -47,8 +47,9 @@ export async function POST(request: Request) {
   }
   const fwIds = fws.map((f) => f.id);
   const fwLabels = fws.map((f) => framePath("de", f));
-  // Unbekannte Werte fallen auf das bisherige Verhalten (täglich) zurück.
-  const frequency = body.frequency === "weekly" ? "weekly" : "daily";
+  // Nur noch wöchentlicher Versand (seit 14.10.2026); ein mitgeschicktes
+  // "daily" alter Formular-Stände wird ignoriert.
+  const frequency = "weekly";
 
   try {
     await sendConfirmationEmail(

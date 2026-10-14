@@ -99,4 +99,11 @@ else
   STEPS+=("--step=push=skipped")
   echo "Keine inhaltlichen Änderungen in live.json → kein Deploy"
 fi
+
+# Newsletter-QS: ab Donnerstag 10:00 UTC einmal pro Woche (sonst sofort fertig).
+# Prüft die fälligen Meldungen per Claude Code nach scraper/NEWSLETTER_QA.md,
+# pusht Korrekturen und löst danach die Freigabe-Mail aus. Läuft innerhalb der
+# Lauf-Sperre, weil sie committet.
+cd "$SCRAPER"
+/usr/bin/python3 newsletter_qa.py || echo "newsletter-qa fehlgeschlagen (weiter)"
 exit $RC

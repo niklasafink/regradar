@@ -41,7 +41,7 @@ import {
   authority, daysUntil, dt, groupByTopic, IMPACT_LABEL, impactOf, tx, type Impact,
 } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
-import { createFreqToken, type Frequency } from "./email";
+import { markApprovalSent, readQa, type QaRecord } from "./newsletterQa";
 import { firstParagraph, isoDate, slugify, UPDATE_PAGES, type UpdatePage } from "./updates";
 
 const SEEN_KEY = "newsletter:seen";
@@ -64,6 +64,11 @@ export interface RunReport {
   pendingItems?: number;
   /** Ein anderer Lauf hält die Versand-Sperre — nichts verschickt. */
   locked?: boolean;
+  /** Freigabe-Mail zurückgehalten: Die QS für den aktuellen Wochen-Slot
+      (scraper/newsletter_qa.py) ist noch nicht gelaufen. */
+  qaPending?: boolean;
+  /** Freigabe-Mail für diesen Slot ging vor < 20 h schon raus. */
+  approvalAlreadySent?: boolean;
 }
 
 /** Slugs sind `<rahmenwerk>-<JJJJ-MM-TT>-<titel>`; ohne Datum und Rahmenwerk
@@ -192,18 +197,19 @@ function freshFor(
   );
 }
 
-// Wöchentliche Abonnenten bekommen ihre Post donnerstags mit demselben Cron-
-// Lauf wie die täglichen (vercel.json: 14:00 UTC). Fällig ist ein Wochen-Abo,
-// sobald der jüngste Donnerstags-Slot (Do 14:00 UTC) NACH seinem Wasserzeichen
-// liegt — so reicht auch eine verspätete Freigabe am Freitag noch, und ein
-// zweiter Lauf in derselben Woche verschickt nichts doppelt. Wer sich am
-// Donnerstag nach dem Slot anmeldet, bekommt die erste Wochenmail am
-// folgenden Donnerstag. Bis zur Fälligkeit bleibt das Wasserzeichen stehen
-// und die Updates sammeln sich an.
+// Alle Abonnenten bekommen ihre Post wöchentlich (täglicher Versand seit
+// 14.10.2026 abgeschafft). Stichtag ist der Donnerstags-Slot um 10:00 UTC:
+// Danach prüft die automatische QS (scraper/newsletter_qa.py) die fälligen
+// Meldungen und löst erst dann die Freigabe-Mail aus. Fällig ist ein Abonnent,
+// sobald der jüngste Slot NACH seinem Wasserzeichen liegt — so reicht auch
+// eine verspätete Freigabe am Freitag noch, und ein zweiter Lauf in derselben
+// Woche verschickt nichts doppelt. Wer sich nach dem Slot anmeldet, bekommt
+// die erste Mail am folgenden Donnerstag. Bis zur Fälligkeit bleibt das
+// Wasserzeichen stehen und die Updates sammeln sich an.
 const WEEKLY_DAY_UTC = 4; // Donnerstag
-const WEEKLY_HOUR_UTC = 14; // = Cron-Stunde des Update-Newsletters
+const WEEKLY_HOUR_UTC = 10; // Stichtag; QS startet danach im Stundenlauf
 
-/** Jüngster Donnerstag 14:00 UTC, der nicht nach `now` liegt. */
+/** Jüngster Donnerstag 10:00 UTC, der nicht nach `now` liegt. */
 export function lastWeeklySlot(now: Date): Date {
   const slot = new Date(Date.UTC(
     now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), WEEKLY_HOUR_UTC,
@@ -215,11 +221,44 @@ export function lastWeeklySlot(now: Date): Date {
 }
 
 function dueFor(sub: Subscriber, nowIso: string): boolean {
-  if (sub.frequency !== "weekly") return true;
   const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
     .sort()
     .pop()!;
   return Date.parse(watermark) < lastWeeklySlot(new Date(nowIso)).getTime();
+}
+
+/** Updates, die beim nächsten freigegebenen Versand rausgingen, und die
+    Zahl der Abonnenten, die tatsächlich eine Mail bekämen. */
+function collectPending(
+  subs: Subscriber[],
+  sorted: UpdatePage[],
+  seen: Record<string, string>,
+  nowIso: string,
+): { pages: UpdatePage[]; due: number } {
+  const pending = new Set<string>();
+  let due = 0;
+  for (const sub of subs) {
+    if (!dueFor(sub, nowIso)) continue; // diese Woche schon beliefert
+    const rel = relevantFor(sub, freshFor(sub, sorted, seen, nowIso));
+    if (rel.length > 0) due++;
+    for (const p of rel) pending.add(p.slug);
+  }
+  return { pages: sorted.filter((p) => pending.has(p.slug)), due };
+}
+
+/** Lesender Blick auf den nächsten Versand (für die QS, verändert nichts). */
+export async function pendingUpdates(): Promise<{
+  slot: string;
+  pages: UpdatePage[];
+  due: number;
+  subscribers: number;
+}> {
+  const nowIso = new Date().toISOString();
+  const { seen } = await loadSeen(false, nowIso);
+  const sorted = [...UPDATE_PAGES].sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
+  const subs = await listSubscribers();
+  const { pages, due } = collectPending(subs, sorted, seen, nowIso);
+  return { slot: lastWeeklySlot(new Date(nowIso)).toISOString(), pages, due, subscribers: subs.length };
 }
 
 const esc = (s: string): string =>
@@ -239,44 +278,10 @@ const impactPill = (i: Impact): string =>
 
 /** E-Mail im Site-Design: schwarz-weiß, große Typo, Pill-Button.
     Liefert HTML plus Plain-Text-Alternative (bessere Spam-Bewertung). */
-/** Links zum Umstellen des Rhythmus am Mailende (fehlt bei Vorschauen). */
-export type FreqLinks = { current: Frequency; dailyUrl: string; weeklyUrl: string };
-
-export function freqLinksFor(sub: Subscriber, base: string): FreqLinks {
-  const url = (f: Frequency) =>
-    `${base}/api/frequency?token=${encodeURIComponent(createFreqToken(sub.email, f))}`;
-  return { current: sub.frequency ?? "daily", dailyUrl: url("daily"), weeklyUrl: url("weekly") };
-}
-
-const FREQ_LABEL: Record<Frequency, string> = {
-  daily: "einmal pro Tag (nur bei neuen Meldungen)",
-  weekly: "donnerstags gesammelt (nur bei neuen Meldungen)",
-};
-
-function renderFreqBlock(freq: FreqLinks): string {
-  const opt = (f: Frequency, url: string) => {
-    const active = f === freq.current;
-    const [title, sub] = f === "daily"
-      ? ["Einmal pro Tag", "nur bei neuen Meldungen"]
-      : ["Donnerstags", "nur bei neuen Meldungen, gesammelt"];
-    const style = active
-      ? "background:#0f172a;color:#ffffff;border:1px solid #0f172a"
-      : "background:#ffffff;color:#0f172a;border:1px solid #e2e8f0";
-    return `<a href="${url}" style="display:inline-block;white-space:nowrap;${style};padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:13px;margin:0 8px 8px 0">${title}${active ? " ✓" : ""}<span style="display:block;font-weight:400;font-size:11px;opacity:.75">${sub}</span></a>`;
-  };
-  return `
-    <div style="margin:28px 0 0;padding:20px;border:1px solid #e2e8f0;border-radius:16px">
-      <p style="margin:0 0 4px;font-size:14px;font-weight:600;color:#0f172a">Wie oft möchten Sie diese E-Mail erhalten?</p>
-      <p style="margin:0 0 12px;font-size:12px;color:#64748b">Aktuell: ${FREQ_LABEL[freq.current]}. Kein Login nötig, Sie bestätigen die Wahl mit einem Klick.</p>
-      ${opt("daily", freq.dailyUrl)}${opt("weekly", freq.weeklyUrl)}
-    </div>`;
-}
-
 export function renderNewsletter(
   pages: UpdatePage[],
   unsubUrl: string,
   base: string,
-  freq?: FreqLinks,
 ): { html: string; text: string } {
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
@@ -347,14 +352,6 @@ export function renderNewsletter(
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
     "",
-    ...(freq
-      ? [
-          `Wie oft möchten Sie diese E-Mail erhalten? Aktuell: ${FREQ_LABEL[freq.current]}.`,
-          `Einmal pro Tag (nur bei neuen Meldungen): ${freq.dailyUrl}`,
-          `Donnerstags gesammelt (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
-          "",
-        ]
-      : []),
     "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
     `Abmelden: ${unsubUrl}`,
@@ -384,7 +381,6 @@ export function renderNewsletter(
         Offene Fristen →
       </a>
     </p>
-    ${freq ? renderFreqBlock(freq) : ""}
     <p style="margin:32px 0 0;padding-top:16px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8;line-height:1.6">
       Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.
       Keine Rechtsberatung, alle Angaben ohne Gewähr.<br>
@@ -398,6 +394,17 @@ export function renderNewsletter(
   return { html, text };
 }
 
+/** QS-Ergebnis für die Freigabe-Mail. Meldungen, die erst nach der QS
+    hinzukamen, werden als ungeprüft ausgewiesen. */
+function qaNotice(qa: QaRecord, pages: UpdatePage[]): { ok: boolean; text: string } {
+  const checked = new Set(qa.checked ?? []);
+  const unchecked = qa.checked ? pages.filter((p) => !checked.has(p.slug)) : [];
+  const extra = unchecked.length > 0
+    ? `\n\nNach der QS hinzugekommen und ungeprüft: ${unchecked.map((p) => p.u.ti.de).join("; ")}`
+    : "";
+  return { ok: qa.ok, text: qa.report + extra };
+}
+
 export async function runNewsletter(opts: {
   dryRun?: boolean;
   onlyTo?: string;
@@ -405,6 +412,10 @@ export async function runNewsletter(opts: {
       verschickt ein regulärer Lauf (Cron) nur eine Freigabe-Anfrage an den
       Betreiber — nichts an den Verteiler. */
   approved?: boolean;
+  /** true = Aufruf direkt nach abgeschlossener QS (POST /api/newsletter/qa):
+      Freigabe-Mail sofort verschicken, auch wenn der Cron heute schon eine
+      geschickt hat. */
+  afterQa?: boolean;
 } = {}): Promise<RunReport> {
   const report: RunReport = {
     initialized: false, newUpdates: 0, recipients: 0,
@@ -439,33 +450,43 @@ export async function runNewsletter(opts: {
 
   const base = process.env.APP_URL ?? "http://localhost:3000";
 
-  // Freigabe-Gate: Ein regulärer Lauf (Cron, ohne approved/dry/to) verschickt
-  // nichts an Abonnenten, sondern eine Vorschau mit Freigabe-Link an den
-  // Betreiber. Erst der Klick ruft diesen Lauf mit approved=true erneut auf.
-  // Wasserzeichen bleiben unberührt; der nächste Cron erinnert ggf. erneut.
+  // Freigabe-Gate: Ein regulärer Lauf (Cron oder QS, ohne approved/dry/to)
+  // verschickt nichts an Abonnenten, sondern eine Vorschau mit Freigabe-Link
+  // an den Betreiber. Erst der Klick ruft diesen Lauf mit approved=true erneut
+  // auf. Wasserzeichen bleiben unberührt; der nächste Cron erinnert ggf. erneut.
   if (!opts.approved && writable) {
-    const pending = new Map<string, UpdatePage>();
-    // Nur wer tatsächlich eine Mail bekäme (fällig + etwas Relevantes) —
-    // mittwochs sind das z. B. nur die Tages-Abos, nicht alle Abonnenten.
-    let due = 0;
-    for (const sub of subs) {
-      if (!dueFor(sub, nowIso)) continue; // Wochen-Abo, noch nicht fällig
-      const rel = relevantFor(sub, freshFor(sub, sorted, seen, nowIso));
-      if (rel.length > 0) due++;
-      for (const p of rel) pending.set(p.slug, p);
-    }
-    if (pending.size === 0) {
+    const { pages, due } = collectPending(subs, sorted, seen, nowIso);
+    if (pages.length === 0) {
       report.skipped = subs.length;
       await redis().set(LAST_RUN_KEY, nowIso);
       return report;
     }
-    const pages = sorted.filter((p) => pending.has(p.slug));
+    // QS-Gate: Die Freigabe-Mail kommt erst, wenn die automatische QS für
+    // den aktuellen Wochen-Slot gelaufen ist (scraper/NEWSLETTER_QA.md). Die
+    // QS löst sie danach selbst aus (afterQa); der tägliche Cron erinnert
+    // nur, falls die letzte Freigabe-Mail älter als 20 h ist.
+    const slot = lastWeeklySlot(new Date(nowIso)).toISOString();
+    const qa = await readQa(slot);
+    if (!qa) {
+      report.qaPending = true;
+      report.pendingItems = pages.length;
+      await redis().set(LAST_RUN_KEY, nowIso);
+      return report;
+    }
+    if (!opts.afterQa && qa.approvalAt
+        && Date.parse(nowIso) - Date.parse(qa.approvalAt) < 20 * 3600_000) {
+      report.approvalAlreadySent = true;
+      report.pendingItems = pages.length;
+      return report;
+    }
     const { html } = renderNewsletter(pages, `${base}/api/unsubscribe?token=preview`, base);
     await sendApprovalRequest(
       "updates",
       `${pages.length} ${pages.length === 1 ? "neues Update" : "neue Updates"} für ${due} von ${subs.length} Abonnenten`,
       html,
+      qaNotice(qa, pages),
     );
+    await markApprovalSent(slot, nowIso);
     report.pendingApproval = true;
     report.pendingItems = pages.length;
     await redis().set(LAST_RUN_KEY, nowIso);
@@ -527,7 +548,7 @@ export async function runNewsletter(opts: {
         rel.length === 1
           ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
           : `${rel.length} neue regulatorische Updates`;
-      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base));
+      const { html, text } = renderNewsletter(rel, unsubUrl, base);
       await pace();
       const { error } = await resend.emails.send({
         from,

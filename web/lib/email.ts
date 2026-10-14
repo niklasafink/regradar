@@ -5,8 +5,9 @@ import { PROVIDERS } from "./data";
 const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
 
-// Benachrichtigungs-Rhythmus des Update-Newsletters: "daily" = jeden Tag,
-// sofern es neue Updates gibt; "weekly" = donnerstags gesammelt, gleicher Cron.
+// Benachrichtigungs-Rhythmus des Update-Newsletters. Seit 14.10.2026 gibt es
+// nur noch "weekly" (donnerstags gesammelt, nach QS und Freigabe); "daily"
+// bleibt als Typ nur für Alt-Tokens und Alt-Daten bestehen.
 export type Frequency = "daily" | "weekly";
 
 export type SubscribePayload = {
@@ -28,7 +29,7 @@ function sign(data: string) {
 export function createToken(
   email: string,
   providers: string[],
-  freq: Frequency = "daily",
+  freq: Frequency = "weekly",
   frameworks: string[] = [],
 ): string {
   const payload = Buffer.from(
@@ -53,8 +54,9 @@ export function verifyToken(token: string): SubscribePayload | null {
     if (!Array.isArray(data.providers)) {
       data.providers = data.provider ? [data.provider] : [];
     }
-    // Alt-Tokens ohne freq-Feld gelten als täglich (bisheriges Verhalten).
-    data.freq = data.freq === "weekly" ? "weekly" : "daily";
+    // Täglicher Versand wird nicht mehr angeboten: auch Alt-Tokens mit
+    // freq "daily" (oder ohne freq) führen zum Wochen-Abo.
+    data.freq = "weekly";
     // Alt-Tokens ohne frameworks-Feld: keine Rahmenwerk-Einschränkung.
     if (!Array.isArray(data.frameworks)) data.frameworks = [];
     return data;
@@ -170,12 +172,14 @@ export function approverAddress(): string {
   );
 }
 
-/** Freigabe-Anfrage an den Betreiber: Zusammenfassung, Freigeben-Button und
-    darunter die vollständige Vorschau der Newsletter-Mail. */
+/** Freigabe-Anfrage an den Betreiber: Zusammenfassung, Freigeben-Button,
+    optional der QS-Bericht und darunter die vollständige Vorschau der
+    Newsletter-Mail. */
 export async function sendApprovalRequest(
   kind: ApproveKind,
   summary: string,
   previewHtml: string,
+  qa?: { ok: boolean; text: string },
 ): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) throw new Error("RESEND_API_KEY fehlt in web/.env.local");
@@ -185,13 +189,22 @@ export async function sendApprovalRequest(
     createApproveToken(kind),
   )}`;
   const label = APPROVE_LABEL[kind];
+  const qaTitle = qa ? (qa.ok ? "Automatische QS abgeschlossen" : "QS mit Hinweisen, bitte prüfen") : "";
+  const qaHtml = qa
+    ? `<div style="border:1px solid ${qa.ok ? "#bbf7d0" : "#fecaca"};background:${qa.ok ? "#f0fdf4" : "#fef2f2"};border-radius:8px;padding:12px 16px;margin:0 0 20px;font-size:13px;line-height:1.5">
+         <strong>${qaTitle}</strong>
+         <div style="white-space:pre-wrap;margin-top:6px">${escapeHtml(qa.text)}</div>
+       </div>`
+    : "";
+  const qaText = qa ? `\n${qaTitle}:\n${qa.text}\n` : "";
 
   const { error } = await resend.emails.send({
     ...senderFields(),
     to: approverAddress(),
-    subject: `Freigabe erforderlich: ${summary}`,
+    subject: `${qa && !qa.ok ? "QS-Hinweise · " : ""}Freigabe erforderlich: ${summary}`,
     text: `${label} wartet auf Freigabe: ${summary}
 
+${qaText}
 Freigeben (löst den Versand an alle Abonnenten aus):
 ${approveUrl}
 
@@ -210,6 +223,7 @@ Cron-Lauf erinnert mit einer neuen Vorschau, solange nichts freigegeben ist.`,
             Freigeben und an alle senden →
           </a>
         </p>
+        ${qaHtml}
         <p style="color:#64748b;font-size:12px;margin:0 0 20px">
           Link 7 Tage gültig. Unten die Vorschau der Mail, wie Abonnenten sie
           (gefiltert nach ihren Anbietertypen) erhalten.
@@ -307,17 +321,9 @@ export function verifyUnsubToken(token: string): string | null {
   }
 }
 
-// Rhythmus-Umschalter am Ende jeder Update-Mail: Ein Klick auf "täglich" bzw.
-// "wöchentlich" stellt den Rhythmus ohne Login um. Der Token trägt Adresse
-// und Ziel-Rhythmus, ist unbefristet gültig (wie der Abmelde-Link) und lässt
-// sich nicht zum Abmelden missbrauchen (eigener act-Wert).
-export function createFreqToken(email: string, freq: Frequency): string {
-  const payload = Buffer.from(
-    JSON.stringify({ email: email.toLowerCase(), act: "freq", freq }),
-  ).toString("base64url");
-  return `${payload}.${sign(payload)}`;
-}
-
+// Rhythmus-Links aus älteren Update-Mails (bis 14.10.2026 gab es täglich und
+// wöchentlich). Neue Mails enthalten keine mehr; die Route /api/frequency
+// setzt bei jedem gültigen Token nur noch auf wöchentlich.
 export function verifyFreqToken(
   token: string,
 ): { email: string; freq: Frequency } | null {
@@ -344,7 +350,7 @@ export async function sendConfirmationEmail(
   email: string,
   providers: string[],
   providerLabels: string[] = [],
-  freq: Frequency = "daily",
+  freq: Frequency = "weekly",
   frameworks: string[] = [],
   frameworkLabels: string[] = [],
 ) {

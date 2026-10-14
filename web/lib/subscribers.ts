@@ -9,7 +9,8 @@ export type Subscriber = {
   email: string;
   providers: string[];
   confirmedAt: string;
-  // Rhythmus des Update-Newsletters; fehlt bei Alt-Abonnenten = "daily".
+  // Rhythmus des Update-Newsletters. Seit 14.10.2026 immer "weekly"; der
+  // Versand behandelt jeden Abonnenten als Wochen-Abo, auch Alt-Einträge.
   frequency?: Frequency;
   // ISO-Zeitpunkt der letzten Newsletter-Zustellung an diese Adresse.
   // Zusammen mit confirmedAt das Wasserzeichen: verschickt werden nur
@@ -61,7 +62,6 @@ export function redis(): Redis {
 export async function addSubscriber(
   email: string,
   newProviders: string[],
-  frequency?: Frequency,
   frameworks: string[] = [],
 ): Promise<"new" | "expanded" | "unchanged"> {
   const key = email.trim().toLowerCase();
@@ -69,8 +69,8 @@ export async function addSubscriber(
   const providers = new Set(existing?.providers ?? []);
   const before = providers.size;
   for (const p of newProviders) if (p) providers.add(p);
-  const nextFreq = frequency ?? existing?.frequency ?? "daily";
-  const freqChanged = existing ? nextFreq !== (existing.frequency ?? "daily") : false;
+  const nextFreq: Frequency = "weekly"; // täglicher Versand abgeschafft (14.10.2026)
+  const freqChanged = existing ? nextFreq !== existing.frequency : false;
   const nextFw = [...new Set(frameworks.filter(Boolean))].sort();
   const fwChanged = existing
     ? nextFw.join(",") !== [...(existing.frameworks ?? [])].sort().join(",")
@@ -121,14 +121,14 @@ export async function setLastNotified(email: string, iso: string): Promise<void>
   await redis().hset(KEY, { [key]: { ...existing, lastNotifiedAt: iso } satisfies Stored });
 }
 
-/** Rhythmus des Update-Newsletters umstellen (Link am Mailende).
-    true = gespeichert, false = Adresse ist (nicht mehr) abonniert. */
-export async function setFrequency(email: string, freq: Frequency): Promise<boolean> {
+/** Rhythmus auf wöchentlich setzen (Alt-Links „Rhythmus ändern“ aus früheren
+    Mails). true = gespeichert, false = Adresse ist (nicht mehr) abonniert. */
+export async function setWeekly(email: string): Promise<boolean> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
   if (!existing) return false;
-  if ((existing.frequency ?? "daily") === freq) return true;
-  await redis().hset(KEY, { [key]: { ...existing, frequency: freq } satisfies Stored });
+  if (existing.frequency === "weekly") return true;
+  await redis().hset(KEY, { [key]: { ...existing, frequency: "weekly" } satisfies Stored });
   return true;
 }
 

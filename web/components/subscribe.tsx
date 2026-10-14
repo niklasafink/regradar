@@ -10,7 +10,7 @@ import { identify, track } from "@/lib/track";
 
 type Status =
   | "idle" | "sending" | "sent" | "confirmed" | "unsubscribed"
-  | "freq_daily" | "freq_weekly" | "error";
+  | "freq_weekly" | "error";
 
 type ErrorCode =
   | "invalid_email"
@@ -47,15 +47,12 @@ const ERROR_TEXT: Record<ErrorCode, { de: string; en: string }> = {
   },
 };
 
-type Frequency = "daily" | "weekly";
-
 export function SubscribeBox({ provider = "" }: { provider?: string }) {
   const { lang } = useStore();
   const [email, setEmail] = useState("");
   const [selected, setSelected] = useState<string[]>(
     PROVIDERS.some((p) => p.id === provider) ? [provider] : [],
   );
-  const [freq, setFreq] = useState<Frequency>("daily");
   // Optionale Rahmenwerk-Auswahl: gesetzt = nur Updates zu diesen Rahmenwerken.
   const [frameworks, setFrameworks] = useState<string[]>([]);
   const [status, setStatus] = useState<Status>("idle");
@@ -67,8 +64,9 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
     const abo = new URLSearchParams(window.location.search).get("abo");
     if (abo === "ok") setStatus("confirmed");
     if (abo === "off") setStatus("unsubscribed");
-    if (abo === "daily") setStatus("freq_daily");
-    if (abo === "weekly") setStatus("freq_weekly");
+    // Alte Rhythmus-Links (?abo=daily) zeigen ebenfalls den Wochen-Hinweis:
+    // täglicher Versand wird seit 14.10.2026 nicht mehr angeboten.
+    if (abo === "daily" || abo === "weekly") setStatus("freq_weekly");
     if (abo === "invalid") {
       setErrorCode("link_invalid");
       setStatus("error");
@@ -101,7 +99,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, providers, frequency: freq, frameworks }),
+        body: JSON.stringify({ email, providers, frameworks }),
       });
       if (res.ok) {
         // Der Abonnieren-Klick gilt (per Hinweis unterm Formular) als Analyse-
@@ -110,7 +108,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         identify(email.trim().toLowerCase(), { source: "newsletter" });
         track("newsletter_submitted", {
           provider: providers.join(","),
-          frequency: freq,
+          frequency: "weekly",
           frameworks: frameworks.join(","),
         });
         setStatus("sent");
@@ -161,15 +159,11 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             ? "Sie sind abgemeldet und erhalten keine weiteren E-Mails."
             : "You are unsubscribed and won't receive further emails."}
         </p>
-      ) : status === "freq_daily" || status === "freq_weekly" ? (
+      ) : status === "freq_weekly" ? (
         <p className="mt-4 text-sm font-medium text-slate-900">
           {lang === "de"
-            ? status === "freq_daily"
-              ? "✓ Gespeichert — Sie erhalten Updates einmal pro Tag, nur bei neuen Meldungen."
-              : "✓ Gespeichert — Sie erhalten Updates donnerstags gesammelt, nur bei neuen Meldungen."
-            : status === "freq_daily"
-              ? "✓ Saved — you'll receive updates once a day, only when there is news."
-              : "✓ Saved — you'll receive a combined digest every Thursday, only when there is news."}
+            ? "✓ Sie erhalten Updates donnerstags gesammelt, nur bei neuen Meldungen."
+            : "✓ You'll receive a combined digest every Thursday, only when there is news."}
         </p>
       ) : status === "sent" ? (
         <div className="mx-auto mt-4 w-full max-w-md rounded-2xl border border-slate-200 bg-white p-5 text-center">
@@ -342,70 +336,11 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               </p>
             )}
 
-            <p className="mt-6 text-sm font-medium text-slate-900">
-              {lang === "de" ? "Wie oft möchten Sie Post?" : "How often do you want mail?"}
+            <p className="mt-6 text-xs text-slate-500">
+              {lang === "de"
+                ? "Sie erhalten jeden Donnerstag eine gesammelte Übersicht, nur wenn es neue Updates gibt."
+                : "You'll receive one combined digest every Thursday, only when there are new updates."}
             </p>
-            <div
-              className="mt-2.5 grid grid-cols-1 gap-2 sm:grid-cols-2"
-              role="radiogroup"
-              aria-label={lang === "de" ? "Häufigkeit wählen" : "Choose frequency"}
-            >
-              {(
-                [
-                  {
-                    id: "daily" as const,
-                    title: { de: "Täglich", en: "Daily" },
-                    sub: {
-                      de: "sofern es neue Updates gibt",
-                      en: "whenever there are new updates",
-                    },
-                  },
-                  {
-                    id: "weekly" as const,
-                    title: { de: "Wöchentlich", en: "Weekly" },
-                    sub: {
-                      de: "eine gesammelte Übersicht jeden Donnerstag",
-                      en: "one combined digest every Thursday",
-                    },
-                  },
-                ]
-              ).map((opt) => {
-                const active = freq === opt.id;
-                return (
-                  <button
-                    key={opt.id}
-                    type="button"
-                    role="radio"
-                    aria-checked={active}
-                    onClick={() => setFreq(opt.id)}
-                    className={`rounded-2xl border p-4 text-left transition-colors ${
-                      active
-                        ? "border-slate-900 bg-slate-50"
-                        : "border-slate-200 bg-white hover:border-slate-400"
-                    }`}
-                  >
-                    <span className="flex items-center justify-between">
-                      <span className="text-sm font-medium text-slate-900">
-                        {opt.title[lang === "de" ? "de" : "en"]}
-                      </span>
-                      <span
-                        aria-hidden="true"
-                        className={`flex size-5 items-center justify-center rounded-full text-[11px] ${
-                          active
-                            ? "bg-slate-900 text-white"
-                            : "border border-slate-300 text-transparent"
-                        }`}
-                      >
-                        ✓
-                      </span>
-                    </span>
-                    <span className="mt-1 block text-xs text-slate-500">
-                      {opt.sub[lang === "de" ? "de" : "en"]}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
 
             {status === "error" && (
               <p className="mt-4 text-xs text-red-600">
