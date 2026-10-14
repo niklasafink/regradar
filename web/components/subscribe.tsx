@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { PROVIDERS } from "@/lib/data";
-import { PROVIDER_SHORT, tx } from "@/lib/logic";
+import { FRAMEWORKS, PROVIDER_SHORT, framePath, tx } from "@/lib/logic";
+import { FrameworkPicker } from "@/components/frameworkPicker";
 import { useStore } from "@/lib/store";
 import { grantAnalyticsConsent } from "@/components/cookie-consent";
 import { identify, track } from "@/lib/track";
@@ -25,8 +26,8 @@ const ERROR_TEXT: Record<ErrorCode, { de: string; en: string }> = {
     en: "This email address seems to be invalid. Please check your input.",
   },
   no_provider: {
-    de: "Bitte wählen Sie mindestens einen Anbietertyp aus.",
-    en: "Please select at least one provider type.",
+    de: "Bitte wählen Sie eine Institutsart oder mindestens ein Rahmenwerk aus.",
+    en: "Please select an institution type or at least one framework.",
   },
   send_failed: {
     de: "Die Bestätigungs-E-Mail konnte nicht versendet werden. Bitte versuchen Sie es in ein paar Minuten erneut.",
@@ -55,6 +56,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
     PROVIDERS.some((p) => p.id === provider) ? [provider] : [],
   );
   const [freq, setFreq] = useState<Frequency>("daily");
+  // Optionale Rahmenwerk-Auswahl: gesetzt = nur Updates zu diesen Rahmenwerken.
+  const [frameworks, setFrameworks] = useState<string[]>([]);
   const [status, setStatus] = useState<Status>("idle");
   const [errorCode, setErrorCode] = useState<ErrorCode>("unknown");
   const [hint, setHint] = useState(false);
@@ -98,7 +101,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, providers, frequency: freq }),
+        body: JSON.stringify({ email, providers, frequency: freq, frameworks }),
       });
       if (res.ok) {
         // Der Abonnieren-Klick gilt (per Hinweis unterm Formular) als Analyse-
@@ -108,6 +111,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         track("newsletter_submitted", {
           provider: providers.join(","),
           frequency: freq,
+          frameworks: frameworks.join(","),
         });
         setStatus("sent");
         setModalOpen(false);
@@ -136,7 +140,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
   };
 
   const confirmModal = () => {
-    if (selected.length === 0) {
+    if (selected.length === 0 && frameworks.length === 0) {
       setHint(true);
       return;
     }
@@ -195,6 +199,18 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               </>
             )}
           </p>
+          {frameworks.length > 0 && (
+            <p className="mt-3 text-xs text-slate-500">
+              {lang === "de" ? "Nur Updates zu: " : "Only updates on: "}
+              <span className="font-medium text-slate-900">
+                {frameworks
+                  .map((id) => FRAMEWORKS.find((f) => f.id === id))
+                  .filter((f) => !!f)
+                  .map((f) => framePath(lang, f!))
+                  .join(", ")}
+              </span>
+            </p>
+          )}
         </div>
       ) : (
         <form onSubmit={submitEmail} className="mt-4 w-full">
@@ -261,11 +277,11 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             <p className="mt-1 text-sm text-slate-500">
               {lang === "de" ? (
                 <>
-                  Updates gehen an <span className="break-all font-medium text-slate-900">{email.trim()}</span> — noch zwei kurze Fragen.
+                  Updates gehen an <span className="break-all font-medium text-slate-900">{email.trim()}</span> — noch ein paar kurze Fragen.
                 </>
               ) : (
                 <>
-                  Updates will go to <span className="break-all font-medium text-slate-900">{email.trim()}</span> — two quick questions.
+                  Updates will go to <span className="break-all font-medium text-slate-900">{email.trim()}</span> — a few quick questions.
                 </>
               )}
             </p>
@@ -300,8 +316,29 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
             {hint && (
               <p className="mt-2 text-xs text-red-600">
                 {lang === "de"
-                  ? "Bitte wählen Sie mindestens einen Anbietertyp."
-                  : "Please select at least one provider type."}
+                  ? "Bitte wählen Sie eine Institutsart oder unten mindestens ein Rahmenwerk."
+                  : "Please select an institution type or at least one framework below."}
+              </p>
+            )}
+
+            <p className="mt-6 text-sm font-medium text-slate-900">
+              {lang === "de" ? "Nur bestimmte Rahmenwerke?" : "Only specific frameworks?"}{" "}
+              <span className="font-normal text-slate-400">
+                (optional)
+              </span>
+            </p>
+            <div className="mt-2.5">
+              <FrameworkPicker
+                value={frameworks}
+                onChange={(ids) => { setHint(false); setFrameworks(ids); }}
+                providers={selected}
+              />
+            </div>
+            {frameworks.length > 0 && (
+              <p className="mt-2 text-xs text-slate-500">
+                {lang === "de"
+                  ? "Sie erhalten nur Updates zu diesen Rahmenwerken (inklusive zugehöriger Leitlinien und RTS)."
+                  : "You will only receive updates on these frameworks (including related guidelines and RTS)."}
               </p>
             )}
 

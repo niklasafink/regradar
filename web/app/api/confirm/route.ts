@@ -1,5 +1,5 @@
 import { sendSubscriberNotification, verifyToken } from "@/lib/email";
-import { providerSlug } from "@/lib/logic";
+import { framePath, frameworkById, providerSlug } from "@/lib/logic";
 import { addSubscriber } from "@/lib/subscribers";
 
 export async function GET(request: Request) {
@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   if (!data) {
     return Response.redirect(`${base}/?abo=invalid`, 302);
   }
-  const result = await addSubscriber(data.email, data.providers, data.freq);
+  const result = await addSubscriber(data.email, data.providers, data.freq, data.frameworks);
   // "unchanged" (wiederholter Aufruf desselben Links durch Mail-Scanner
   // oder Reload) löst keine Mail aus.
   if (result !== "unchanged") {
@@ -20,6 +20,10 @@ export async function GET(request: Request) {
         data.email,
         data.providers,
         result === "new" ? "confirmed" : "expanded",
+        data.frameworks.map((id) => {
+          const f = frameworkById(id);
+          return f ? framePath("de", f) : id;
+        }),
       );
     } catch (e) {
       // Benachrichtigung darf die Bestätigung nicht blockieren.

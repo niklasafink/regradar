@@ -18,7 +18,7 @@
 // nichts verschickt (sonst käme das komplette Archiv).
 
 import { Resend } from "resend";
-import { PROVIDERS } from "./data";
+import { FRAMEWORKS, PROVIDERS } from "./data";
 import { addIdentifyParam } from "./datafast";
 import {
   createIdToken,
@@ -142,9 +142,20 @@ async function loadSeen(persist: boolean, nowIso: string): Promise<{
   return { seen, newSlugs, first };
 }
 
-/** Updates, die für die abonnierten Anbietertypen relevant sind.
-    Ohne (oder mit unbekanntem) Anbietertyp: alle Updates. */
+/** Updates, die für den Abonnenten relevant sind. Mit Rahmenwerk-Auswahl
+    gilt nur diese (Kinder erben das Abo des Eltern-Rahmenwerks), sonst die
+    abonnierten Anbietertypen. Ohne (oder mit unbekanntem) Anbietertyp: alle. */
 function relevantFor(sub: Subscriber, pages: UpdatePage[]): UpdatePage[] {
+  // Unbekannte IDs (z. B. umbenanntes Rahmenwerk) zählen nicht; bleibt nichts
+  // übrig, gilt wieder der Anbietertyp-Filter — niemand wird stumm geschaltet.
+  const fws = new Set(
+    (sub.frameworks ?? []).filter((id) => FRAMEWORKS.some((f) => f.id === id)),
+  );
+  if (fws.size > 0) {
+    return pages.filter(
+      (p) => fws.has(p.fw.id) || (!!p.fw.parent && fws.has(p.fw.parent)),
+    );
+  }
   const provs = sub.providers.filter(Boolean);
   if (provs.length === 0) return pages;
   // Unbekannte Anbietertypen (Alt-Daten) zählen nicht als Filter.

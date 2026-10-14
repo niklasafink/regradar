@@ -19,6 +19,11 @@ export type Subscriber = {
   // Gleiches Wasserzeichen für den wöchentlichen "Neu in der Datenbank"-
   // Newsletter (neue Rahmenwerke/Quellen), getrennt vom Update-Versand.
   lastFwNotifiedAt?: string;
+  // Rahmenwerk-IDs, auf die der Update-Newsletter beschränkt ist (Kinder
+  // erben das Abo des Eltern-Rahmenwerks). Leer/fehlend = keine Beschränkung,
+  // es gilt der Institutsart-Filter. Mit Auswahl entfällt die
+  // "Neu in der Datenbank"-Mail.
+  frameworks?: string[];
 };
 
 type Stored = {
@@ -27,6 +32,7 @@ type Stored = {
   frequency?: Frequency;
   lastNotifiedAt?: string;
   lastFwNotifiedAt?: string;
+  frameworks?: string[];
 };
 
 const KEY = "subs";
@@ -47,12 +53,16 @@ export function redis(): Redis {
 }
 
 // "new": E-Mail war noch nicht abonniert. "expanded": bestehender Abonnent
-// hat mindestens eine neue Quelle hinzubekommen. "unchanged": alles schon
-// vorhanden (z. B. wiederholter Aufruf desselben Bestätigungslinks).
+// hat mindestens eine neue Quelle hinzubekommen oder seine Rahmenwerk-Auswahl
+// geändert. "unchanged": alles schon vorhanden (z. B. wiederholter Aufruf
+// desselben Bestätigungslinks).
+// Institutsarten werden vereinigt, die Rahmenwerk-Auswahl dagegen ersetzt:
+// die zuletzt bestätigte Auswahl gilt (leer = alle Updates).
 export async function addSubscriber(
   email: string,
   newProviders: string[],
   frequency?: Frequency,
+  frameworks: string[] = [],
 ): Promise<"new" | "expanded" | "unchanged"> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
@@ -61,7 +71,11 @@ export async function addSubscriber(
   for (const p of newProviders) if (p) providers.add(p);
   const nextFreq = frequency ?? existing?.frequency ?? "daily";
   const freqChanged = existing ? nextFreq !== (existing.frequency ?? "daily") : false;
-  if (existing && providers.size === before && !freqChanged) return "unchanged";
+  const nextFw = [...new Set(frameworks.filter(Boolean))].sort();
+  const fwChanged = existing
+    ? nextFw.join(",") !== [...(existing.frameworks ?? [])].sort().join(",")
+    : false;
+  if (existing && providers.size === before && !freqChanged && !fwChanged) return "unchanged";
   await redis().hset(KEY, {
     [key]: {
       providers: [...providers],
@@ -69,11 +83,12 @@ export async function addSubscriber(
       frequency: nextFreq,
       ...(existing?.lastNotifiedAt ? { lastNotifiedAt: existing.lastNotifiedAt } : {}),
       ...(existing?.lastFwNotifiedAt ? { lastFwNotifiedAt: existing.lastFwNotifiedAt } : {}),
+      ...(nextFw.length ? { frameworks: nextFw } : {}),
     } satisfies Stored,
   });
   // Reine Rhythmus-Änderung wird gespeichert, zählt aber nicht als "Abo
   // erweitert" (keine irreführende Betreiber-Mail über neue Quellen).
-  if (existing && providers.size === before) return "unchanged";
+  if (existing && providers.size === before && !fwChanged) return "unchanged";
   return existing ? "expanded" : "new";
 }
 
@@ -92,6 +107,7 @@ export async function listSubscribers(): Promise<Subscriber[]> {
     frequency: s.frequency,
     lastNotifiedAt: s.lastNotifiedAt,
     lastFwNotifiedAt: s.lastFwNotifiedAt,
+    frameworks: s.frameworks,
   }));
 }
 

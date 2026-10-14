@@ -326,6 +326,10 @@ export async function runFwNewsletter(opts: {
     subs = subs.filter((s) => s.email === only);
     // Unbekannte Testadresse: Wasserzeichen Epoch → alles außer Erstbestand.
     if (subs.length === 0) subs = [{ email: only, providers: [], confirmedAt: EPOCH }];
+  } else {
+    // Wer nur einzelne Rahmenwerke abonniert hat, bekommt keine Mail über
+    // neu aufgenommene Rahmenwerke (Nutzerentscheidung 14.10.2026).
+    subs = subs.filter((s) => !s.frameworks?.length);
   }
   report.recipients = subs.length;
 

@@ -13,8 +13,13 @@ export type SubscribePayload = {
   email: string;
   providers: string[];
   freq: Frequency;
+  // Rahmenwerk-IDs; leer = keine Einschränkung (alle Updates der Institutsart).
+  frameworks: string[];
   exp: number;
 };
+
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 function sign(data: string) {
   return createHmac("sha256", SECRET).update(data).digest("base64url");
@@ -24,9 +29,10 @@ export function createToken(
   email: string,
   providers: string[],
   freq: Frequency = "daily",
+  frameworks: string[] = [],
 ): string {
   const payload = Buffer.from(
-    JSON.stringify({ email, providers, freq, exp: Date.now() + TOKEN_TTL_MS }),
+    JSON.stringify({ email, providers, freq, frameworks, exp: Date.now() + TOKEN_TTL_MS }),
   ).toString("base64url");
   return `${payload}.${sign(payload)}`;
 }
@@ -49,6 +55,8 @@ export function verifyToken(token: string): SubscribePayload | null {
     }
     // Alt-Tokens ohne freq-Feld gelten als täglich (bisheriges Verhalten).
     data.freq = data.freq === "weekly" ? "weekly" : "daily";
+    // Alt-Tokens ohne frameworks-Feld: keine Rahmenwerk-Einschränkung.
+    if (!Array.isArray(data.frameworks)) data.frameworks = [];
     return data;
   } catch {
     return null;
@@ -337,6 +345,8 @@ export async function sendConfirmationEmail(
   providers: string[],
   providerLabels: string[] = [],
   freq: Frequency = "daily",
+  frameworks: string[] = [],
+  frameworkLabels: string[] = [],
 ) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -345,14 +355,17 @@ export async function sendConfirmationEmail(
   const resend = new Resend(apiKey);
   const base = process.env.APP_URL ?? "http://localhost:3000";
   const confirmUrl = `${base}/api/confirm?token=${encodeURIComponent(
-    createToken(email, providers, freq),
+    createToken(email, providers, freq, frameworks),
   )}`;
-  const scope = providerLabels.length
-    ? ` zu Updates für: <strong>${providerLabels.join(", ")}</strong>`
+  // Mit Rahmenwerk-Auswahl gilt nur diese; sonst die Institutsarten.
+  const scopeLabels = frameworkLabels.length ? frameworkLabels : providerLabels;
+  const scopeLead = frameworkLabels.length ? "ausschließlich zu Updates für" : "zu Updates für";
+  const scope = scopeLabels.length
+    ? ` ${scopeLead}: <strong>${scopeLabels.map(escapeHtml).join(", ")}</strong>`
     : "";
 
-  const textScope = providerLabels.length
-    ? ` zu Updates für: ${providerLabels.join(", ")}`
+  const textScope = scopeLabels.length
+    ? ` ${scopeLead}: ${scopeLabels.join(", ")}`
     : "";
 
   const rhythm =
@@ -497,6 +510,7 @@ export async function sendSubscriberNotification(
   subscriberEmail: string,
   providers: string[],
   stage: keyof typeof NOTIFY_TEXT,
+  frameworkLabels: string[] = [],
 ) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) return;
@@ -517,6 +531,7 @@ export async function sendSubscriberNotification(
         <p>${NOTIFY_TEXT[stage].line}:</p>
         <p><strong>${subscriberEmail}</strong></p>
         <p>Zielgruppen: ${labels.join(", ") || "—"}</p>
+        <p>Rahmenwerke: ${frameworkLabels.map(escapeHtml).join(", ") || "alle"}</p>
         <p style="color:#64748b;font-size:13px">${new Date().toLocaleString("de-DE", { timeZone: "Europe/Berlin" })} Uhr</p>
       </div>`,
   });
