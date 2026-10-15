@@ -74,6 +74,11 @@ step big4  /usr/bin/python3 -m regradar big4
 # bevor der Export läuft; unsichere Fälle meldet die Gap-Report-Mail.
 step dedup /usr/bin/python3 -m regradar dedup
 if step export /usr/bin/python3 -m regradar export-web; then EXPORT_OK=1; else RC=1; fi
+# LinkedIn-Tagespost (Aufhänger, Folge, Kurzzeilen je Posttag → web/lib/linkedin.json).
+# Erzeugt nur neu, wenn sich die Meldungen eines Posttags ändern; Fehler brechen nichts ab.
+if [ "$EXPORT_OK" = 1 ]; then
+  /usr/bin/python3 -m regradar linkedin || echo "linkedin fehlgeschlagen (weiter)"
+fi
 # Lücken-Report: Big4-Artikel ohne gescrapte Primärquelle. Verschickt intern
 # max. eine Mail pro Kalendertag (Tabelle big4_gap_runs).
 /usr/bin/python3 -m regradar gap-report || echo "gap-report fehlgeschlagen (weiter)"
@@ -84,9 +89,10 @@ if step export /usr/bin/python3 -m regradar export-web; then EXPORT_OK=1; else R
 # Auto-Push + Deploy: nur nach erfolgreichem Export und nur, wenn sich
 # live.json inhaltlich geändert hat (mehr als der generated_at-Zeitstempel)
 cd "$REPO"
-if [ "$EXPORT_OK" = 1 ] && git diff -U0 -- web/lib/live.json | grep '^[+-][^+-]' | grep -v generated_at | grep -q .; then
-  echo "live.json inhaltlich geändert → Commit, Push, Deploy"
-  if git add web/lib/live.json web/lib/sources.json \
+if [ "$EXPORT_OK" = 1 ] && { git diff -U0 -- web/lib/live.json | grep '^[+-][^+-]' | grep -v generated_at | grep -q . \
+     || ! git diff --quiet -- web/lib/linkedin.json; }; then
+  echo "live.json oder linkedin.json inhaltlich geändert → Commit, Push, Deploy"
+  if git add web/lib/live.json web/lib/sources.json web/lib/linkedin.json \
      && git commit -m "Auto-Update: live.json ($(date '+%Y-%m-%d %H:%M'))" \
      && git push origin main; then
     STEPS+=("--step=push=ok")

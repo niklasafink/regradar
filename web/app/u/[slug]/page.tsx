@@ -6,6 +6,7 @@ import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
 import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
 import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateBySlugLoose, updateHref } from "@/lib/updates";
+import { hashtag, shareOpener } from "@/lib/linkedin";
 
 // Unbekannte Slugs werden zur Laufzeit aufgelöst: Wandert eine Meldung in ein
 // anderes Rahmenwerk oder fällt sie bei einer Bereinigung weg, führen Links aus
@@ -66,7 +67,6 @@ export default async function UpdatePage(
     .slice(0, 6);
 
   // Sachlicher LinkedIn-Post in ganzen Sätzen, Regeln siehe LINKEDIN.md im Repo-Root.
-  const hashtag = (s: string) => s.replace(/[^0-9A-Za-zÄÖÜäöüß]/g, "");
   const hashtags = [
     ...new Set([
       hashtag(fw.n.de.split(":")[0].trim()),
@@ -78,32 +78,7 @@ export default async function UpdatePage(
     .filter(Boolean)
     .map((h) => `#${h}`)
     .join(" ");
-  const name = authority(u.src);
-  const AUTHORITY_ARTICLE: Record<string, string> = {
-    BaFin: "Die", ESMA: "Die", EBA: "Die", EIOPA: "Die", AMLA: "Die",
-    Bundesbank: "Die", EZB: "Die", "EU-Kommission": "Die",
-    BGH: "Der", EuGH: "Der", Bundestag: "Der", "EU-Rat": "Der",
-    BfDI: "Der", EDPB: "Der", ESRB: "Der", SRB: "Der",
-    BMF: "Das", BMI: "Das", BSI: "Das",
-  };
-  const TYPE_PHRASE: Record<string, { obj: string; verb: string }> = {
-    Leitlinien: { obj: "neue Leitlinien", verb: "veröffentlicht" },
-    Konsultation: { obj: "eine neue Konsultation", verb: "gestartet" },
-    Rundschreiben: { obj: "ein neues Rundschreiben", verb: "veröffentlicht" },
-    "Q&A": { obj: "neue Q&A", verb: "veröffentlicht" },
-    ITS: { obj: "neue technische Durchführungsstandards", verb: "veröffentlicht" },
-    Gesetz: { obj: "ein neues Gesetz", verb: "verkündet" },
-    Gesetzentwurf: { obj: "einen neuen Gesetzentwurf", verb: "vorgelegt" },
-    Urteil: { obj: "ein neues Urteil", verb: "veröffentlicht" },
-    Allgemeinverfügung: { obj: "eine neue Allgemeinverfügung", verb: "erlassen" },
-    Meldung: { obj: "eine neue Meldung", verb: "veröffentlicht" },
-  };
-  const phrase = TYPE_PHRASE[u.t.de] ?? TYPE_PHRASE.Meldung;
-  const opener = ["EU-Amtsblatt", "BGBl", "Bundesrecht"].includes(name)
-    ? `Im ${name === "BGBl" ? "Bundesgesetzblatt" : name} wurde am ${u.d} Folgendes veröffentlicht: „${u.ti.de}“.`
-    : name === "ESAs"
-    ? `Die ESAs haben am ${u.d} ${phrase.obj} ${phrase.verb}: „${u.ti.de}“.`
-    : `${AUTHORITY_ARTICLE[name] ? `${AUTHORITY_ARTICLE[name]} ` : ""}${name} hat am ${u.d} ${phrase.obj} ${phrase.verb}: „${u.ti.de}“.`;
+  const opener = shareOpener(u);
   // Überlange Zusammenfassungen an einer Satzgrenze kürzen, nie mitten im Satz.
   const trimToSentence = (s: string, max: number) => {
     if (s.length <= max) return s;

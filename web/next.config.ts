@@ -12,6 +12,10 @@ const PROVIDER_SLUGS: Record<string, string> = {
 };
 
 const nextConfig: NextConfig = {
+  // Dateien, die die LinkedIn-Slides zur Laufzeit lesen (Slides, PDF und Posten unter app/api/linkedin).
+  outputFileTracingIncludes: {
+    "/api/linkedin/**": ["./assets/fonts/**/*", "./public/authorities/**/*", "./app/icon.svg"],
+  },
   async redirects() {
     return Object.entries(PROVIDER_SLUGS).flatMap(([id, slug]) => [
       { source: `/r/${id}`, destination: `/r/${slug}`, permanent: true },

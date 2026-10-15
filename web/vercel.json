@@ -16,6 +16,22 @@
     {
       "path": "/api/health/check",
       "schedule": "30 6 * * *"
+    },
+    {
+      "path": "/api/linkedin/cron?job=ask",
+      "schedule": "0 16 * * *"
+    },
+    {
+      "path": "/api/linkedin/cron?job=ask",
+      "schedule": "0 17 * * *"
+    },
+    {
+      "path": "/api/linkedin/cron?job=publish",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/linkedin/cron?job=publish",
+      "schedule": "0 7 * * *"
     }
   ]
 }

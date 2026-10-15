@@ -4,7 +4,7 @@
 import { authority } from "@/lib/logic";
 
 /* Quelle (Domain) -> Logodatei */
-const LOGOS: Record<string, string> = {
+export const LOGOS: Record<string, string> = {
   "eur-lex.europa.eu": "eu.svg",
   "consilium.europa.eu": "eu.svg",
   "esas-joint-committee.europa.eu": "eu.svg",

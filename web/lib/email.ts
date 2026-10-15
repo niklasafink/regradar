@@ -163,6 +163,28 @@ export function verifyApproveToken(token: string): ApproveKind | null {
   }
 }
 
+/** Allgemeines signiertes Token (HMAC wie alle Mail-Links) mit Zweck `act`
+    und Ablaufzeit, z. B. für die Freigabe des LinkedIn-Tagesposts. */
+export function createSignedToken(act: string, data: Record<string, string>, ttlMs: number): string {
+  const payload = Buffer.from(JSON.stringify({ ...data, act, exp: Date.now() + ttlMs })).toString("base64url");
+  return `${payload}.${sign(payload)}`;
+}
+
+export function verifySignedToken(token: string, act: string): Record<string, string> | null {
+  const [payload, sig] = token.split(".");
+  if (!payload || !sig) return null;
+  const a = Buffer.from(sig);
+  const b = Buffer.from(sign(payload));
+  if (a.length !== b.length || !timingSafeEqual(a, b)) return null;
+  try {
+    const data = JSON.parse(Buffer.from(payload, "base64url").toString()) as Record<string, unknown>;
+    if (data.act !== act || Date.now() > Number(data.exp ?? 0)) return null;
+    return Object.fromEntries(Object.entries(data).map(([k, v]) => [k, String(v)]));
+  } catch {
+    return null;
+  }
+}
+
 /** Adresse, die Newsletter vor dem Versand freigeben muss. */
 export function approverAddress(): string {
   return (

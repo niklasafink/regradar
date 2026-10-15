@@ -1065,3 +1065,26 @@ class FrameworkQa14Oct2026(unittest.TestCase):
         self.assertEqual(self.c("Long Term Investment Funds – Review of EU rules"), "eltif")
         self.assertEqual(self.c("Commission seeks feedback on revision of criteria for sustainable "
                                 "economic activities"), "taxonomy")
+
+
+class LinkedInDigestTests(unittest.TestCase):
+    """Tages-Post: Posttage/Fenster und Datumsprüfung der LLM-Texte."""
+
+    def test_window(self):
+        import datetime as dt
+        from regradar.linkedin import next_post_day, post_window
+        d = dt.date
+        self.assertEqual(post_window(d(2026, 10, 14)), [d(2026, 10, 13)])  # Mi: Di
+        self.assertEqual(post_window(d(2026, 10, 12)),
+                         [d(2026, 10, 9), d(2026, 10, 10), d(2026, 10, 11)])  # Mo: Fr–So
+        self.assertEqual(post_window(d(2026, 10, 17)), [])  # Sa: kein Post
+        self.assertEqual(next_post_day(d(2026, 10, 10)), d(2026, 10, 12))
+        self.assertEqual(next_post_day(d(2026, 10, 15)), d(2026, 10, 16))
+
+    def test_bad_dates(self):
+        from regradar.linkedin import _bad_dates
+        items = [{"u": {"s": {"de": "Stellungnahmen bis 27. Oktober 2026, gilt ab 20.11.2026."},
+                        "ti": {"de": "Konsultation (09/2026)"}, "d": "13.10.2026"}}]
+        self.assertEqual(_bad_dates("bis 27.10.2026, ab 20.11.2026", items), [])
+        self.assertEqual(_bad_dates("bis 09.2026", items), ["09.2026"])
+        self.assertEqual(_bad_dates("bis 28.10.2026", items), ["28.10.2026"])

@@ -193,6 +193,16 @@ def main(argv=None):
             print("Web-Export: {updates} Updates in {frameworks} Rahmenwerken, "
                   "{advisory} Big4-Verweise (aus {scanned} Dokumenten, "
                   "LLM-Filter {llm}) → {path}".format(**info))
+        elif cmd == "linkedin":
+            import datetime as _dt
+            from .linkedin import build as linkedin_build
+            only = None
+            for a in argv[1:]:
+                if a.startswith("--date="):
+                    only = _dt.date.fromisoformat(a.split("=", 1)[1])
+            info = linkedin_build(force="--force" in argv, only=only)
+            print("LinkedIn: {neu} neu, {unverändert} unverändert, {leer} ohne "
+                  "Meldungen, {fehler} Fehler → {path}".format(**info))
         else:
             print(__doc__)
             return 1
