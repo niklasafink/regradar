@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T17:22:39Z",
+  "generated_at": "2026-10-15T10:11:44Z",
   "updates": {
     "idd": [
       {
@@ -258,6 +258,88 @@
         },
         "url": "https://www.eiopa.europa.eu/eiopa-launches-consultation-irrd-draft-technical-standards-covering-valuation-reinsurers-context-2026-07-08_en",
         "imp": "medium"
+      }
+    ],
+    "mar": [
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Überblick über Sanktionen und Maßnahmen nach EU-Recht im Jahr 2025 (ESMA43-502934634-2953)",
+          "en": "ESMA: Enforcement Snapshot of Sanctions and Measures under EU Acts in 2025 (ESMA43-502934634-2953)"
+        },
+        "sl": "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025",
+        "s": {
+          "de": "Die ESMA hat einen Überblick über die von den nationalen zuständigen Behörden (NCAs) im Jahr 2025 verhängten Sanktionen und Maßnahmen gemäß verschiedenen EU-Rechtsakten veröffentlicht. Dieser „Enforcement Snapshot“ fasst die Durchsetzungsaktivitäten in Bereichen wie Marktmissbrauch, Transparenz und Beaufsichtigung zusammen.\n\nIm Jahr 2025 wurden von 29 NCAs insgesamt 955 administrative Sanktionen und Maßnahmen verhängt. Die höchste Einzelstrafe betrug 7,4 Millionen Euro, während die Gesamtsumme der verhängten Geldbußen 81,9 Millionen Euro erreichte. Die größten Anteile entfielen auf MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro).\n\nDie Übersicht zeigt die Verteilung der Geldbußen auf verschiedene EU-Rechtsakte, darunter CSDR, MiCA, EMIR, Prospektverordnung, OGAW, AIFMD, ECSPR und SFTR. Es wird betont, dass diese Darstellung keine vollständige Abbildung aller Durchsetzungsaktivitäten der NCAs ist, sondern eine Momentaufnahme der Sanktionen unter bestimmten EU-Texten im Zuständigkeitsbereich der ESMA.",
+          "en": "ESMA has published an overview of sanctions and measures imposed by National Competent Authorities (NCAs) in 2025 under various EU acts. This 'Enforcement Snapshot' summarizes enforcement activities in areas such as market abuse, transparency, and supervisory convergence.\n\nIn 2025, a total of 955 administrative sanctions and measures were imposed by 29 NCAs. The highest single fine amounted to 7.4 million euros, while the total value of administrative fines reached 81.9 million euros. The largest portions were attributed to MiFID II/MiFIR (36.6 million euros) and MAR (33.4 million euros).\n\nThe overview details the distribution of fines across various EU acts, including CSDR, MiCA, EMIR, Prospectus Regulation, UCITS, AIFMD, ECSPR, and SFTR. It is emphasized that this representation is not a complete picture of all NCA enforcement activities but rather a snapshot of sanctions under specific EU texts within ESMA's remit."
+        },
+        "url": "https://www.esma.europa.eu/document/enforcement-snapshot-sanctions-and-measures-under-eu-acts-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2953"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Konsolidierter Sanktionsbericht – Tabelle der für 2025 gemeldeten Sanktionen (ESMA43-502934634-2993)",
+          "en": "Consolidated sanctions report – Table of sanctions reported for 2025 (ESMA43-502934634-2993)"
+        },
+        "sl": "consolidated-sanctions-report-table-of-sanctions-reported-for-2025",
+        "s": {
+          "de": "Dieses Dokument ist ein konsolidierter Sanktionsbericht der ESMA, der eine Tabelle der für das Jahr 2025 gemeldeten Sanktionen enthält. Es dient als Referenzdokument im Kontext von Marktmissbrauch, Aufsichtskonvergenz und Transparenz.\n\nDer Bericht ist relevant für Finanzinstitute und Marktteilnehmer, die den EU-Vorschriften zur Marktintegrität unterliegen. Er bietet einen Überblick über die von den Mitgliedstaaten verhängten Sanktionen und Maßnahmen und kann zur Einschätzung von Compliance-Risiken und zur Anpassung interner Kontrollen genutzt werden.\n\nEs handelt sich um ein Referenzdokument ohne spezifische Fristen für die Umsetzung. Es ergänzt den umfassenderen Bericht über die in den Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen.",
+          "en": "This document is a consolidated sanctions report from ESMA, containing a table of sanctions reported for the year 2025. It serves as a reference document in the context of market abuse, supervisory convergence, and transparency.\n\nThe report is relevant for financial institutions and market participants subject to EU market integrity regulations. It provides an overview of sanctions and measures imposed by Member States and can be used to assess compliance risks and adjust internal controls.\n\nThis is a reference document with no specific implementation deadlines. It complements the broader report on sanctions and measures imposed in Member States in 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/consolidated-sanctions-report-table-sanctions-reported-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2993"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Bericht über Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025",
+          "en": "Report on Sanctions and Measures Imposed in EU/EEA Member States in 2025"
+        },
+        "sl": "report-on-sanctions-and-measures-imposed-in-member-states-in-2025",
+        "s": {
+          "de": "Dieser Bericht der ESMA gibt einen Überblick über die in den EU-/EWR-Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen im Finanzsektor. Insgesamt wurden 955 administrative Sanktionen und Maßnahmen mit einer Gesamtsumme von 81.896.178 Euro an Geldbußen verhängt. Die Durchsetzungsaktivitäten konzentrierten sich hauptsächlich auf Verstöße gegen die Marktmissbrauchsverordnung (MAR) und die MiFID II/MiFIR.\n\nDie höchsten Sanktionszahlen betrafen die MAR (350) und die AIFMD (268), während die höchsten Geldbußen unter MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro) verhängt wurden. Deutschland verhängte die höchsten Geldbußen (23,3 Mio. Euro), gefolgt von Frankreich und Spanien. Erstmals wurden auch Sanktionen unter MiCA und SFTR verhängt.\n\nDer Bericht hebt weiterhin Diskrepanzen bei der Anwendung von Sanktionsbefugnissen zwischen den Mitgliedstaaten hervor, sowohl hinsichtlich der Höhe der Geldbußen als auch der Art und Anzahl der Maßnahmen. Die Durchsetzungsaktivitäten bleiben auf wenige Rechtsakte und Mitgliedstaaten konzentriert, was auf eine uneinheitliche Anwendung der Vorschriften hindeutet.",
+          "en": "This ESMA report provides an overview of sanctions and measures imposed in EU/EEA Member States in the financial sector during 2025. A total of 955 administrative sanctions and measures were imposed, with an aggregate value of administrative fines amounting to EUR 81,896,178. Enforcement activities primarily focused on breaches of the Market Abuse Regulation (MAR) and MiFID II/MiFIR.\n\nThe highest number of sanctions related to MAR (350) and AIFMD (268), while the largest fines were imposed under MiFID II/MiFIR (EUR 36.6 million) and MAR (EUR 33.4 million). Germany imposed the highest administrative fines (EUR 23.3 million), followed by France and Spain. For the first time, sanctions were also issued under MiCA and SFTR.\n\nThe report continues to highlight discrepancies in the use of sanctioning powers across Member States, both in terms of fine amounts and the types and numbers of measures. Enforcement activity remains concentrated in a limited set of legislative acts and a few Member States, indicating inconsistent application of regulations."
+        },
+        "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2902"
+      },
+      {
+        "d": "07.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
+          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
+        },
+        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
+          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
+        },
+        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
+        "imp": "medium",
+        "refnum": "ESMA74-268544963-1748"
       }
     ],
     "csrd": [
@@ -2216,28 +2298,6 @@
             "d": "10.09.2026"
           }
         ]
-      }
-    ],
-    "mar": [
-      {
-        "d": "07.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
-          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
-        },
-        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
-          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
-        },
-        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
-        "imp": "medium",
-        "refnum": "ESMA74-268544963-1748"
       }
     ],
     "absfinag": [
