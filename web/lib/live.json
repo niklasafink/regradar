@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T10:11:44Z",
+  "generated_at": "2026-10-15T12:10:21Z",
   "updates": {
     "idd": [
       {
@@ -340,6 +340,28 @@
         "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
         "imp": "medium",
         "refnum": "ESMA74-268544963-1748"
+      }
+    ],
+    "psd3": [
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil: Sofortige Erstattung bei nicht autorisierten Zahlungen trotz grober Fahrlässigkeit des Kunden (C-70/25)",
+          "en": "ECJ Judgment: Immediate Reimbursement for Unauthorized Payments Despite Customer's Gross Negligence (C-70/25)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-70-25-tukowiecka",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass Zahlungsdienstleister den Betrag eines nicht autorisierten Zahlungsvorgangs unverzüglich erstatten müssen, selbst wenn sie grobe Fahrlässigkeit des Kunden vermuten. Diese Pflicht zur sofortigen Erstattung besteht grundsätzlich, es sei denn, der Dienstleister hat berechtigte Gründe für den Verdacht eines Betrugs durch den Kunden und teilt dies der zuständigen Behörde schriftlich mit.\n\nDie Entscheidung stellt klar, dass die Frage der Erstattung und die Frage, wer letztendlich den Verlust trägt, getrennt zu behandeln sind. Zahlungsdienstleister können die Erstattung nicht verweigern, indem sie sich auf grobe Fahrlässigkeit des Kunden berufen. Erst nach der Erstattung können sie vom Kunden die Rückzahlung der Verluste verlangen, sofern sie nachweisen können, dass der Kunde vorsätzlich oder grob fahrlässig gehandelt hat, beispielsweise durch unzureichenden Schutz seiner Sicherheitsmerkmale.\n\nDieser Ansatz soll einen hohen Verbraucherschutz gewährleisten und verhindern, dass Kunden gezwungen sind, rechtliche Schritte einzuleiten, um ihre Ansprüche durchzusetzen. Die Entscheidung des EuGH ist für nationale Gerichte bindend, wenn sie über vergleichbare Sachverhalte entscheiden.",
+          "en": "The European Court of Justice (ECJ) has ruled that payment service providers must immediately refund the amount of an unauthorized payment transaction, even if they suspect gross negligence on the part of the customer. This obligation for immediate reimbursement generally applies, unless the service provider has legitimate reasons to suspect fraud by the customer and communicates these reasons in writing to the competent authority.\n\nThis decision clarifies that the issue of reimbursement and the question of who ultimately bears the loss are to be treated separately. Payment service providers cannot refuse reimbursement by citing gross negligence on the part of the customer. Only after reimbursement can they claim repayment of losses from the customer, provided they can prove that the customer acted intentionally or with gross negligence, for example, by inadequately protecting their security features.\n\nThis approach aims to ensure a high level of consumer protection and prevent customers from being forced to initiate legal proceedings to enforce their claims. The ECJ's decision is binding on national courts when ruling on similar cases."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-10/cp260147de.pdf",
+        "imp": "high",
+        "refnum": "C-70/25"
       }
     ],
     "csrd": [
