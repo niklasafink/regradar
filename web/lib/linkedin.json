@@ -1,31 +1,5 @@
 {
  "posts": {
-  "2026-10-01": {
-   "window": [
-    "2026-09-30"
-   ],
-   "keys": [
-    "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
-    "gesetz-zur-umsetzung-der-richtlinien-eu-2025-1-und-eu-2025-2-zur-festlegung-eine",
-    "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat"
-   ],
-   "hook": "Versicherer erhalten einen neuen Rahmen für Sanierung und Abwicklung, der weitreichende Auswirkungen hat.",
-   "folge": "Das VSAAG implementiert EU-Vorgaben zur Sanierung und Abwicklung von Versicherungsunternehmen und passt den Aufsichtsrahmen an. Dies erfordert eine Überprüfung der Geschäftsprozesse und Compliance-Anforderungen.",
-   "cover": "Bundesgesetzblatt: Neues Gesetz zur Sanierung von Versicherern",
-   "zeilen": [
-    "ESMA: MiCA soll klarer und sicherer werden, mit strengeren Regeln für Influencer-Werbung",
-    "ESMA: Neue regulierte Dienste für Krypto-Asset-Dienstleister und erweiterte Aufsichtsbefugnisse"
-   ],
-   "frage": "Wie bewerten Sie die Auswirkungen des neuen Sanierungs- und Abwicklungsrahmens auf Ihre internen Prozesse?",
-   "top": "gesetz-zur-umsetzung-der-richtlinien-eu-2025-1-und-eu-2025-2-zur-festlegung-eine",
-   "kern": {
-    "gesetz-zur-umsetzung-der-richtlinien-eu-2025-1-und-eu-2025-2-zur-festlegung-eine": "Das VSAAG wurde am 30.09.2026 im Bundesgesetzblatt veröffentlicht und schafft einen neuen Rahmen für Sanierungs- und Abwicklungsmaßnahmen bei Versicherungsunternehmen.",
-    "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service": "Die ESMA fordert Änderungen an der MiCA-Verordnung, um den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie DeFi, Staking und Lending zu regulieren.",
-    "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat": "Die ESMA schlägt in ihrer Antwort zur MiCA-Konsultation neue regulierte Dienste für Krypto-Asset-Dienstleister und erweiterte Aufsichtsbefugnisse vor, um Rechtsunsicherheiten zu beseitigen."
-   },
-   "fmt": 4,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-02": {
    "window": [
     "2026-10-01"
@@ -249,25 +223,27 @@
     "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025",
     "esma-updates-its-manual-on-transparency-with-new-guidance-for-otc-derivatives-an",
     "judgment-of-the-court-in-case-c-70-25-tukowiecka",
+    "manual-on-post-trade-transparency-under-mifid-ii-mifir",
     "report-on-sanctions-and-measures-imposed-in-member-states-in-2025"
    ],
    "hook": "Erst erstatten, dann prüfen: Der EuGH verschärft die Regeln für nicht autorisierte Zahlungen.",
-   "folge": "Zahlungsdienstleister müssen bei nicht autorisierten Zahlungen sofort erstatten, selbst bei Verdacht auf grobe Fahrlässigkeit des Kunden. Erst danach kann der Dienstleister versuchen, den Verlust vom Kunden zurückzufordern.",
+   "folge": "Zahlungsdienstleister müssen bei nicht autorisierten Zahlungen sofort erstatten, auch bei Verdacht auf grobe Fahrlässigkeit des Kunden. Erst danach können sie die Rückzahlung fordern, wenn sie Vorsatz oder grobe Fahrlässigkeit nachweisen.",
    "cover": "EuGH: Zahlungsdienstleister müssen sofort erstatten",
    "zeilen": [
+    "ESMA: Handbuch zur Post-Trade-Transparenz unter MiFID II/MiFIR mit Leitlinien ab 02.03.2026",
     "ESMA: Aktualisiertes Transparenzhandbuch für OTC-Derivate und Tick-Größen-Regime",
-    "ESMA: 955 Sanktionen im Jahr 2025, zusammen 81,9 Mio. Euro Bußgeld",
-    "EU-Amtsblatt: Technische Anpassung der Sanktionsliste zur Ukraine"
+    "ESMA: 955 Sanktionen im Jahr 2025, zusammen 81,9 Mio. Euro Bußgeld"
    ],
    "frage": "Wie lange dauert bei Ihnen heute eine Erstattung, wenn der Kunde Betrug meldet?",
    "top": "judgment-of-the-court-in-case-c-70-25-tukowiecka",
    "kern": {
-    "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025": "Die ESMA hat einen Überblick über 955 Sanktionen und Maßnahmen im Jahr 2025 veröffentlicht, die sich auf insgesamt 81,9 Millionen Euro belaufen.",
-    "consolidated-sanctions-report-table-of-sanctions-reported-for-2025": "Die ESMA hat einen konsolidierten Sanktionsbericht mit einer Tabelle der für 2025 gemeldeten Sanktionen zur Marktintegrität veröffentlicht.",
-    "report-on-sanctions-and-measures-imposed-in-member-states-in-2025": "Die ESMA berichtet über 955 administrative Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025 mit 81,9 Millionen Euro Geldbußen.",
-    "judgment-of-the-court-in-case-c-70-25-tukowiecka": "Zahlungsdienstleister müssen nicht autorisierte Zahlungen sofort erstatten, auch bei Verdacht auf grobe Fahrlässigkeit des Kunden, so der EuGH.",
+    "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025": "Die ESMA hat einen Überblick über 955 Sanktionen und Maßnahmen der NCAs im Jahr 2025 veröffentlicht, die sich auf 81,9 Mio. Euro summierten.",
+    "consolidated-sanctions-report-table-of-sanctions-reported-for-2025": "Die ESMA hat eine Tabelle der für 2025 gemeldeten Sanktionen als Referenzdokument für Marktteilnehmer veröffentlicht.",
+    "report-on-sanctions-and-measures-imposed-in-member-states-in-2025": "Die ESMA hat einen Bericht über 955 Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025 mit 81,9 Mio. Euro Geldbußen veröffentlicht.",
+    "judgment-of-the-court-in-case-c-70-25-tukowiecka": "Der EuGH hat entschieden, dass Zahlungsdienstleister nicht autorisierte Zahlungen sofort erstatten müssen, selbst bei Verdacht auf grobe Fahrlässigkeit des Kunden.",
     "esma-updates-its-manual-on-transparency-with-new-guidance-for-otc-derivatives-an": "Die ESMA hat ihr Transparenzhandbuch aktualisiert, um die Identifizierung von OTC-Derivaten und das Tick-Größen-Regime zu präzisieren.",
-    "durchfuehrungsverordnung-eu-2026-2333-des-rates-vom-15-oktober-2026-zur-durchfue": "Eine Durchführungsverordnung des Rates aktualisiert die Liste der Personen, Organisationen und Einrichtungen, die restriktiven Maßnahmen unterliegen."
+    "durchfuehrungsverordnung-eu-2026-2333-des-rates-vom-15-oktober-2026-zur-durchfue": "Eine Durchführungsverordnung des Rates aktualisiert die Liste restriktiver Maßnahmen gegen die Ukraine mit einer technischen Anpassung der Identifikationsdaten.",
+    "manual-on-post-trade-transparency-under-mifid-ii-mifir": "Die ESMA hat ein Handbuch zur Post-Trade-Transparenz unter MiFID II/MiFIR mit detaillierten Anleitungen, auch für den 02.03.2026, veröffentlicht."
    },
    "fmt": 4,
    "model": "google/gemini-2.5-flash"

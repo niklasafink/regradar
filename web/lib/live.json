@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T18:08:17Z",
+  "generated_at": "2026-10-15T22:10:59Z",
   "updates": {
     "idd": [
       {
@@ -562,6 +562,48 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2278",
         "imp": "low",
         "refnum": "32026R2278"
+      }
+    ],
+    "mifid": [
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Handbuch zur Post-Trade-Transparenz unter MiFID II/MiFIR",
+          "en": "Manual on post-trade transparency under MiFID II/MiFIR"
+        },
+        "sl": "manual-on-post-trade-transparency-under-mifid-ii-mifir",
+        "s": {
+          "de": "Die ESMA hat ein Handbuch zur Post-Trade-Transparenz gemäß MiFID II/MiFIR veröffentlicht. Es bietet detaillierte Anleitungen zu den Anforderungen an die Veröffentlichung von Handelsdaten nach dem Handel. Das Dokument behandelt den Umfang der Instrumente und Transaktionen, die der Post-Trade-Transparenz unterliegen, einschließlich Eigenkapital- und Nicht-Eigenkapitalinstrumenten sowie spezifischen Transaktionstypen.\n\nDas Handbuch richtet sich an alle Marktteilnehmer, die unter die MiFID II/MiFIR-Regulierung fallen, insbesondere an Wertpapierfirmen und Handelsplätze. Es klärt, wer, wann und welche Details eines Handels zu veröffentlichen hat, einschließlich der Definition der meldepflichtigen Stelle, der Meldefristen und der Anwendung von Flags. Auch die Behandlung von Paketgeschäften und Transaktionen mit Drittlandbezug wird erläutert.\n\nEin Abschnitt widmet sich den Schemata für die Veröffentlichung von Post-Trade-Transparenzdaten für Nicht-Eigenkapitalinstrumente, einschließlich verschiedener Aufschubregelungen und der Veröffentlichung aggregierter Informationen. Es gibt auch spezifische Anleitungen, die ab dem 2. März 2026 gelten.",
+          "en": "ESMA has published a manual on post-trade transparency under MiFID II/MiFIR, providing detailed guidance on post-trade data publication requirements. The document covers the scope of instruments and transactions subject to post-trade transparency, including equity and non-equity instruments, as well as specific transaction types.\n\nThe manual is aimed at all market participants falling under MiFID II/MiFIR regulation, particularly investment firms and trading venues. It clarifies who, when, and what details of a trade must be published, including the definition of the reporting entity, reporting deadlines, and the application of flags. The treatment of package transactions and transactions with a third-country dimension is also explained.\n\nA section is dedicated to schemes for the publication of post-trade transparency data for non-equity instruments, including various deferral regimes and the publication of aggregated information. There is also specific guidance applicable from 2 March 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/manual-post-trade-transparency-under-mifid-ii-mifir",
+        "imp": "medium",
+        "refnum": "ESMA74-2134169708-6870"
+      },
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu MiFID II Angemessenheits- und Execution-Only-Leitlinien (ESMA35-43-3327)",
+          "en": "Compliance Table on MiFID II Appropriateness and Execution-Only Guidelines (ESMA35-43-3327)"
+        },
+        "sl": "compliance-table-on-guidelines-on-certain-aspects-of-the-mifid-ii-appropriatenes",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien bezüglich der Angemessenheitsprüfung und der \"Execution Only\"-Anforderungen unter MiFID II veröffentlicht. Dieses Dokument listet auf, welche nationalen Aufsichtsbehörden in den EU-Mitgliedstaaten die ESMA über die Einhaltung oder die Absicht zur Einhaltung dieser Leitlinien informiert haben.\n\nFür Finanzinstitute bedeutet dies, dass die nationalen Aufsichtsbehörden die ESMA-Leitlinien zur Angemessenheitsprüfung und zu \"Execution Only\"-Dienstleistungen in ihren jeweiligen Aufsichtspraktiken berücksichtigen oder bereits umgesetzt haben. Die Tabelle zeigt, dass die meisten Behörden die Einhaltung bestätigt und teilweise auch auf ihren Webseiten veröffentlicht oder in nationale Vorschriften integriert haben, wie z.B. die BaFin in Deutschland oder die CNMV in Spanien.\n\nDie Leitlinien sind bereits in Kraft und die nationalen Behörden haben ihre Maßnahmen zur Einhaltung der ESMA mitgeteilt. Einige Länder, wie Ungarn und Rumänien, haben spezifische nationale Empfehlungen oder Verordnungen erlassen, die ab Anfang 2023 bzw. November 2023 gelten.",
+          "en": "ESMA has published a compliance table regarding its Guidelines on certain aspects of the MiFID II appropriateness and execution-only requirements. This document lists which national supervisory authorities in EU Member States have informed ESMA about their compliance or intention to comply with these guidelines.\n\nFor financial institutions, this means that national supervisory authorities are considering or have already implemented ESMA's guidelines on appropriateness assessment and execution-only services in their respective supervisory practices. The table indicates that most authorities have confirmed compliance and, in some cases, published them on their websites or integrated them into national regulations, such as BaFin in Germany or CNMV in Spain.\n\nThe guidelines are already in force, and national authorities have communicated their measures for compliance to ESMA. Some countries, like Hungary and Romania, have issued specific national recommendations or regulations effective from early 2023 and November 2023, respectively."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-certain-aspects-mifid-ii-appropriateness-and-execution-only",
+        "imp": "low",
+        "refnum": "ESMA35-43-3327"
       }
     ],
     "csrd": [
@@ -2930,28 +2972,6 @@
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
         "imp": "medium"
-      }
-    ],
-    "mifid": [
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiFID II Angemessenheits- und Execution-Only-Leitlinien (ESMA35-43-3327)",
-          "en": "Compliance Table on MiFID II Appropriateness and Execution-Only Guidelines (ESMA35-43-3327)"
-        },
-        "sl": "compliance-table-on-guidelines-on-certain-aspects-of-the-mifid-ii-appropriatenes",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien bezüglich der Angemessenheitsprüfung und der \"Execution Only\"-Anforderungen unter MiFID II veröffentlicht. Dieses Dokument listet auf, welche nationalen Aufsichtsbehörden in den EU-Mitgliedstaaten die ESMA über die Einhaltung oder die Absicht zur Einhaltung dieser Leitlinien informiert haben.\n\nFür Finanzinstitute bedeutet dies, dass die nationalen Aufsichtsbehörden die ESMA-Leitlinien zur Angemessenheitsprüfung und zu \"Execution Only\"-Dienstleistungen in ihren jeweiligen Aufsichtspraktiken berücksichtigen oder bereits umgesetzt haben. Die Tabelle zeigt, dass die meisten Behörden die Einhaltung bestätigt und teilweise auch auf ihren Webseiten veröffentlicht oder in nationale Vorschriften integriert haben, wie z.B. die BaFin in Deutschland oder die CNMV in Spanien.\n\nDie Leitlinien sind bereits in Kraft und die nationalen Behörden haben ihre Maßnahmen zur Einhaltung der ESMA mitgeteilt. Einige Länder, wie Ungarn und Rumänien, haben spezifische nationale Empfehlungen oder Verordnungen erlassen, die ab Anfang 2023 bzw. November 2023 gelten.",
-          "en": "ESMA has published a compliance table regarding its Guidelines on certain aspects of the MiFID II appropriateness and execution-only requirements. This document lists which national supervisory authorities in EU Member States have informed ESMA about their compliance or intention to comply with these guidelines.\n\nFor financial institutions, this means that national supervisory authorities are considering or have already implemented ESMA's guidelines on appropriateness assessment and execution-only services in their respective supervisory practices. The table indicates that most authorities have confirmed compliance and, in some cases, published them on their websites or integrated them into national regulations, such as BaFin in Germany or CNMV in Spain.\n\nThe guidelines are already in force, and national authorities have communicated their measures for compliance to ESMA. Some countries, like Hungary and Romania, have issued specific national recommendations or regulations effective from early 2023 and November 2023, respectively."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-certain-aspects-mifid-ii-appropriateness-and-execution-only",
-        "imp": "low",
-        "refnum": "ESMA35-43-3327"
       }
     ],
     "solvency": [
