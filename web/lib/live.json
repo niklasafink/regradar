@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T08:03:26Z",
+  "generated_at": "2026-10-16T08:11:12Z",
   "updates": {
     "idd": [
       {
@@ -258,6 +258,84 @@
         },
         "url": "https://www.eiopa.europa.eu/eiopa-launches-consultation-irrd-draft-technical-standards-covering-valuation-reinsurers-context-2026-07-08_en",
         "imp": "medium"
+      }
+    ],
+    "csdr": [
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
+          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
+        },
+        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
+          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
+        "imp": "high"
+      },
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
+          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
+        },
+        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
+        "s": {
+          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
+          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+        "imp": "medium"
+      },
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 2027 hinaus geklärt",
+          "en": "Access for EU market participants to third-country CSDs clarified beyond 2027"
+        },
+        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
+        "s": {
+          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollten. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung der aktuellen Übergangsregelung abgeschlossen hat. Die derzeitige Regelung, die es bestimmten Drittland-CSDs erlaubt, Notar- und zentrale Kontoführungsdienste für Finanzinstrumente nach dem Recht eines EU-Mitgliedstaates zu erbringen, läuft am 17. Januar 2027 aus.\n\nDie ESMA reagiert damit auf Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten. Das derzeit verhandelte „Market Integration and Supervision Package“ (MISP) schlägt eine Verlängerung dieser Übergangsregelung vor, die sowohl vom Rat der Europäischen Union als auch vom Europäischen Parlament unterstützt wird. Die Klarstellung soll das reibungslose Funktionieren der EU-Kapitalmärkte unterstützen.\n\nDie Aussage der ESMA schafft frühzeitig vor der Frist am 17. Januar 2027 Klarheit und soll operative Herausforderungen vermeiden, die durch die Unsicherheit entstehen könnten. Eine legislative Verlängerung der Übergangsregelung wird erwartet.",
+          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This applies until the EU finalises legislation to extend the current transitional regime. The current regime, which allows certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under the law of an EU Member State, is set to expire on 17 January 2027.\n\nESMA is responding to concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. The Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime, a proposal supported by both the Council of the European Union and the European Parliament. The clarification aims to support the orderly functioning of EU capital markets.\n\nESMA's statement provides clarity well in advance of the 17 January 2027 deadline and seeks to avoid operational challenges that could arise from the uncertainty. A legislative extension of the transitional regime is anticipated."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
       }
     ],
     "mar": [
@@ -850,65 +928,6 @@
             "d": "18.05.2026"
           }
         ]
-      }
-    ],
-    "csdr": [
-      {
-        "d": "12.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
-          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
-        },
-        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
-        "s": {
-          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
-          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
-        "imp": "medium"
-      },
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 2027 hinaus geklärt",
-          "en": "Access for EU market participants to third-country CSDs clarified beyond 2027"
-        },
-        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
-        "s": {
-          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollten. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung der aktuellen Übergangsregelung abgeschlossen hat. Die derzeitige Regelung, die es bestimmten Drittland-CSDs erlaubt, Notar- und zentrale Kontoführungsdienste für Finanzinstrumente nach dem Recht eines EU-Mitgliedstaates zu erbringen, läuft am 17. Januar 2027 aus.\n\nDie ESMA reagiert damit auf Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten. Das derzeit verhandelte „Market Integration and Supervision Package“ (MISP) schlägt eine Verlängerung dieser Übergangsregelung vor, die sowohl vom Rat der Europäischen Union als auch vom Europäischen Parlament unterstützt wird. Die Klarstellung soll das reibungslose Funktionieren der EU-Kapitalmärkte unterstützen.\n\nDie Aussage der ESMA schafft frühzeitig vor der Frist am 17. Januar 2027 Klarheit und soll operative Herausforderungen vermeiden, die durch die Unsicherheit entstehen könnten. Eine legislative Verlängerung der Übergangsregelung wird erwartet.",
-          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This applies until the EU finalises legislation to extend the current transitional regime. The current regime, which allows certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under the law of an EU Member State, is set to expire on 17 January 2027.\n\nESMA is responding to concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. The Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime, a proposal supported by both the Council of the European Union and the European Parliament. The clarification aims to support the orderly functioning of EU capital markets.\n\nESMA's statement provides clarity well in advance of the 17 January 2027 deadline and seeks to avoid operational challenges that could arise from the uncertainty. A legislative extension of the transitional regime is anticipated."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
-        "imp": "medium"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
-          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
-        },
-        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
-          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
-        "imp": "high"
       }
     ],
     "itsrep": [

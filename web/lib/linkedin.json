@@ -7,16 +7,17 @@
    "keys": [
     "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben"
    ],
-   "hook": "Die BaFin ändert ihre Praxis bei der Übernahme von Leitlinien der europäischen Aufsichtsbehörden.",
-   "folge": "Ab dem 1. Oktober 2026 informiert die BaFin über eine tabellarische Übersicht auf ihrer Website, welche ESA- und AMLA-Leitlinien in ihre Verwaltungspraxis übernommen wurden. Institute müssen die BaFin-Website für aktuelle Informationen konsultieren.",
-   "cover": "BaFin: Weniger Rundschreiben zu ESA-Leitlinien",
+   "hook": "Die BaFin ändert ihre Praxis bei der Übernahme von EU-Leitlinien und schafft separate Rundschreiben ab.",
+   "folge": "Ab dem 1. Oktober 2026 informiert die BaFin nur noch über eine tabellarische Übersicht auf ihrer Website, welche Leitlinien der ESAs und der AMLA übernommen werden. Institute müssen diese Übersicht selbständig prüfen.",
+   "cover": "BaFin: Weniger Rundschreiben zu EU-Leitlinien",
    "zeilen": [],
-   "frage": "Wie stellen Sie sicher, dass Sie über die aktuellen BaFin-Positionen zu ESA- und AMLA-Leitlinien informiert sind?",
+   "frage": "Wie stellen Sie sicher, dass Sie künftig über die von der BaFin übernommenen EU-Leitlinien informiert sind?",
    "top": "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben",
    "kern": {
-    "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben": "Ab dem 01.10.2026 informiert die BaFin über die Übernahme von ESA- und AMLA-Leitlinien nur noch über eine tabellarische Übersicht auf ihrer Website, um Bürokratie abzubauen."
+    "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben": "Die BaFin informiert ab dem 01.10.2026 nur noch über eine tabellarische Übersicht auf ihrer Website über die Übernahme von ESA- und AMLA-Leitlinien, um Bürokratie abzubauen."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-06": {
@@ -26,16 +27,17 @@
    "keys": [
     "communication-on-the-cssf-feedback-report-circular-cssf-24-856"
    ],
-   "hook": "Die CSSF teilt ihre Erfahrungen mit der neuen Circular 24/856 zum Anlegerschutz mit.",
-   "folge": "Der Feedback Report der CSSF enthält Statistiken und Beobachtungen zu Fehlern und Nichteinhaltungen bei OGAW. Institute sollten diese Hinweise für künftige Meldungen berücksichtigen.",
-   "cover": "CSSF: Feedback zu Anlegerschutz-Meldungen",
+   "hook": "Die CSSF teilt ihre Erfahrungen mit der neuen Meldepflicht zu NAV-Fehlern und Anlagerichtlinienverstößen.",
+   "folge": "Der Feedback Report zur Circular CSSF 24/856 zeigt, worauf Institute bei Meldungen zu Anlegerschutzthemen achten müssen. Prüfen Sie die Beobachtungen der CSSF für Ihre Prozesse.",
+   "cover": "CSSF: Feedback zu Meldungen nach Circular 24/856",
    "zeilen": [],
-   "frage": "Welche Herausforderungen sehen Sie bei der Umsetzung der Circular CSSF 24/856 in Ihrem Institut?",
+   "frage": "Welche Herausforderungen sehen Sie bei der Meldung von NAV-Berechnungsfehlern oder Anlagerichtlinienverstößen?",
    "top": "communication-on-the-cssf-feedback-report-circular-cssf-24-856",
    "kern": {
-    "communication-on-the-cssf-feedback-report-circular-cssf-24-856": "Die CSSF veröffentlicht einen Feedback Report zur Circular CSSF 24/856, der Beobachtungen und Statistiken zu Meldungen im Jahr 2025 enthält."
+    "communication-on-the-cssf-feedback-report-circular-cssf-24-856": "Die CSSF veröffentlicht einen Feedback Report zur Circular CSSF 24/856, der Beobachtungen und Statistiken zu Meldungen über Anlegerschutzthemen seit dem 01.01.2025 enthält."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-07": {
@@ -45,16 +47,17 @@
    "keys": [
     "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin"
    ],
-   "hook": "Die BaFin präzisiert die Einstufung von Nebendienstleistern und weicht dabei von der EBA ab.",
-   "folge": "Institute müssen prüfen, ob ihre Dienstleister unter die engere Definition der BaFin fallen, um die korrekte Anwendung der CRR-Regeln sicherzustellen.",
-   "cover": "BaFin: Engere Definition für Nebendienstleister",
+   "hook": "Die BaFin präzisiert die Einstufung von Nebendienstleistern, weicht aber in einem Punkt von der EBA ab.",
+   "folge": "Institute müssen prüfen, ob ihre Dienstleister unter die engere Definition der BaFin fallen, um die korrekte Einstufung gemäß CRR sicherzustellen.",
+   "cover": "BaFin: Engere Auslegung für Nebendienstleister",
    "zeilen": [],
-   "frage": "Welche Auswirkungen hat die BaFin-Auslegung auf die Klassifizierung Ihrer Dienstleister?",
+   "frage": "Welche Kriterien nutzen Sie aktuell, um Dienstleister als AvN gemäß CRR einzustufen?",
    "top": "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin",
    "kern": {
-    "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin": "Die BaFin übernimmt EBA-Leitlinien zur Definition von Anbietern von Nebendienstleistungen (AvN) mit einem Auslegungsvorbehalt, der die Kriterien für die Einstufung enger fasst."
+    "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin": "Die BaFin übernimmt EBA-Leitlinien zur Definition von Anbietern von Nebendienstleistungen (AvN) mit einem Auslegungsvorbehalt zur „Abhängigkeit von Finanzmitteln“."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-08": {
@@ -65,19 +68,20 @@
     "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am",
     "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr"
    ],
-   "hook": "Zugang zu Drittland-CSDs bleibt über 2027 hinaus gesichert, bis die EU-Gesetzgebung angepasst ist.",
-   "folge": "Die ESMA stellt klar, dass EU-Marktteilnehmer auch nach dem 17. Januar 2027 die Dienste von Drittland-CSDs nutzen können. Dies vermeidet operative Herausforderungen, bis die geplante Gesetzesverlängerung im Rahmen des MISP abgeschlossen ist.",
-   "cover": "ESMA: Zugang zu Drittland-CSDs über 2027 hinaus",
+   "hook": "Die EU-Aufsicht baut eine zentrale Datenbank für Geldwäsche- und Terrorismusfinanzierungsdaten auf.",
+   "folge": "Die AMLA konsultiert Entwürfe für technische Regulierungsstandards (RTS) zur neuen Datenbank. Institute sind indirekt betroffen, da die Aufsicht effektiver wird.",
+   "cover": "AMLA: Konsultation zu zentraler AML/CFT-Datenbank",
    "zeilen": [
-    "AMLA: Konsultation zu RTS für zentrale AML/CFT-Datenbank bis 03.11.2026"
+    "ESMA: Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 17.01.2027 hinaus gesichert"
    ],
-   "frage": "Welche Drittland-CSDs nutzen Sie aktuell und welche Herausforderungen erwarten Sie bei einer Umstellung?",
-   "top": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
+   "frage": "Wie stellen Sie sicher, dass Ihre AML/CFT-Daten für eine effektivere Aufsicht bereit sind?",
+   "top": "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am",
    "kern": {
-    "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am": "Die AMLA konsultiert bis zum 03.11.2026 Entwürfe für RTS zur Einrichtung einer zentralen Datenbank für die AML/CFT-Aufsicht.",
-    "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17.01.2027 hinaus Zugang zu Drittland-CSDs haben werden, bis die Gesetzgebung angepasst ist."
+    "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am": "Die AMLA konsultiert bis zum 03.11.2026 Entwürfe für technische Regulierungsstandards (RTS) zur Einrichtung einer zentralen AML/CFT-Datenbank, die die Aufsicht in der EU verbessern soll.",
+    "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr": "Die ESMA stellt klar, dass EU-Marktteilnehmer auch nach dem 17.01.2027 Zugang zu Drittland-CSDs haben werden, bis die Gesetzgebung zur Verlängerung der Übergangsregelung abgeschlossen ist."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-09": {
@@ -92,25 +96,29 @@
     "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes",
     "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl"
    ],
-   "hook": "Die BaFin ändert die Methodik zur Eigenmittelempfehlung und entlastet viele Institute spürbar.",
-   "folge": "Künftig erhalten nur noch Institute eine Empfehlung für zusätzliche Eigenmittel, deren Kapitalquoten im adversen Szenario des LSI-Stresstests unter eine bestimmte Grenze fallen. Dies reduziert den bürokratischen Aufwand für Institute mit solider Kapitalausstattung.",
-   "cover": "BaFin: Weniger Eigenmittelempfehlungen ab 2026",
+   "hook": "BaFin vereinfacht Eigenmittel-Empfehlungen: Viele Institute brauchen künftig keine zusätzlichen Puffer mehr.",
+   "folge": "Ab 08.10.2026 erhalten nur noch Institute eine Eigenmittelempfehlung, deren Kapitalquoten im adversen Stresstest-Szenario unter einer bestimmten Grenze liegen. Das reduziert Bürokratie und macht die Aufsicht risikoorientierter.",
+   "cover": "BaFin: Eigenmittel-Empfehlungen werden proportionaler",
    "zeilen": [
-    "ESMA: Krypto-Dienstleister müssen Dienstleistungen für nicht-MiCA-konforme Stablecoins einstellen",
-    "EIOPA: Konsultation zur Aufsicht über IBIP-Vertriebsprozesse bis zum 04.01.2027",
-    "CSSF: Neue Anforderungen für luxemburgische IFMs bei White-Label-Geschäften"
+    "ESMA: Krypto-Dienstleister müssen MiCA-nicht-konforme Stablecoins einstellen",
+    "CSSF: Neue Anforderungen für luxemburgische IFMs bei White-Label-Geschäften",
+    "EIOPA: Konsultation zu Aufsichtserklärung für IBIP-Vertriebsprozesse bis 04.01.2027"
    ],
-   "frage": "Wie schätzen Sie die Auswirkungen der neuen BaFin-Methodik auf Ihr Institut ein?",
-   "top": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
+   "frage": "Wie schätzen Sie die Auswirkungen der neuen BaFin-Methodik auf Ihre Kapitalplanung ein?",
+   "top": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
    "kern": {
-    "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes": "Die EIOPA konsultiert bis zum 04.01.2027 einen Entwurf zur ergebnisorientierten Aufsicht über IBIP-Vertriebsprozesse, um die Customer Journey zu vereinfachen und Aufwand zu reduzieren.",
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026": "Die BaFin konkretisiert ab dem 08.10.2026 die Methodik zur Eigenmittelempfehlung (P2G), sodass nur noch Institute mit Kapitalquoten unter einer bestimmten Grenze im adversen LSI-Stresstest eine Empfehlung erhalten.",
-    "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung": "Die BaFin hat die Aufsichtsmitteilung „08/2026 (BA): Methodik zur Eigenmittelempfehlung ab 2026“ veröffentlicht, um die Aufsicht proportionaler und risikoorientierter zu gestalten und Bürokratie abzubauen.",
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026": "Die BaFin informiert ab dem 08.10.2026 über die Methodik zur Eigenmittelempfehlung (P2G), sodass nur noch Institute mit Kapitalquoten unter einer bestimmten Grenze im adversen LSI-Stresstest eine Empfehlung erhalten.",
-    "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl": "Die ESMA erwartet, dass Krypto-Dienstleister die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen.",
-    "communication-to-the-investment-fund-industry-in-relation-to-the-information-to": "Die CSSF informiert luxemburgische IFMs über neue Anforderungen für White-Label-Geschäfte, insbesondere bezüglich Interessenkonflikten und der Einreichung eines speziellen Formulars."
+    "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes": "Die EIOPA konsultiert bis zum 04.01.2027 eine Aufsichtserklärung zur ergebnisorientierten Aufsicht über den Vertrieb von Versicherungsanlageprodukten.",
+    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026": "Die BaFin konkretisiert ab dem 08.10.2026 ihre Methodik zur Eigenmittelempfehlung, sodass Institute mit solider Kapitalausstattung keine Empfehlung mehr erhalten.",
+    "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung": "Die BaFin hat die Aufsichtsmitteilung 08/2026 (BA) veröffentlicht, die die Berechnung und Mitteilung von Eigenmittelempfehlungen für Kreditinstitute präzisiert.",
+    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026": "Die BaFin informiert ab dem 08.10.2026 über die Methodik zur Eigenmittelempfehlung, die nur noch Institute mit Kapitalquoten unter einer bestimmten Grenze im Stresstest betrifft.",
+    "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl": "Die ESMA erwartet, dass Krypto-Dienstleister die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für EU-Kunden einstellen.",
+    "communication-to-the-investment-fund-industry-in-relation-to-the-information-to": "Die CSSF fordert von luxemburgischen IFMs detaillierte Informationen zu White-Label-Geschäften, insbesondere bei der Verwaltung von Fonds Dritter."
    },
-   "fmt": 4,
+   "doppelt": [
+    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
+    "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung"
+   ],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-12": {
@@ -130,28 +138,29 @@
     "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of",
     "call-for-evidence-on-the-ccp-collateral-tokenisation"
    ],
-   "hook": "Die EBA präzisiert die Meldung von Gegenpartei-Identifikatoren im Abwicklungsplan-Reporting.",
-   "folge": "Institute müssen interne Identifikatoren verwenden, wenn LEI oder MFI-Code fehlen, auch für aggregierte Daten. Dies soll divergierende Meldepraktiken beenden und die Datenqualität verbessern.",
-   "cover": "EBA: Interne IDs für unbekannte Gegenparteien",
+   "hook": "Tokenisierung von Sicherheiten: Die ESMA fragt, ob die Regulierung noch passt.",
+   "folge": "Die ESMA will wissen, wie Tokenisierung Sicherheiten mobilisiert, überträgt und verwertet. Institute, Clearing-Mitglieder und DLT-Anbieter können bis zum 15.01.2027 Stellung nehmen.",
+   "cover": "ESMA: Konsultation zur Tokenisierung von Sicherheiten",
    "zeilen": [
-    "ESMA: Konsultation zur Tokenisierung von Sicherheiten bei CCPs bis 15.01.2027",
-    "EBA: Tier-2-Emissionen bleiben bei angekündigter Rückzahlung in Z 02.00",
+    "EBA: Tier-2-Emissionen bleiben bei vorzeitiger Rückzahlung in Z 02.00",
+    "EBA: Internen Identifikator für unbekannte Gegenparteien in Z 12.00/Z 14.00 nutzen",
     "EBA: Substituierbarkeit von CCPs auch bei anderem Handelsplatz möglich"
    ],
-   "frage": "Wie stellen Sie sicher, dass interne Identifikatoren konsistent über alle Meldungen hinweg verwendet werden?",
-   "top": "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and",
+   "frage": "Welche Auswirkungen hätte eine Tokenisierung von Sicherheiten auf Ihre Prozesse?",
+   "top": "call-for-evidence-on-the-ccp-collateral-tokenisation",
    "kern": {
-    "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor": "Institute sollen bis zur Veröffentlichung von DPM v4.4 Phase 2 die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land 20 % der Engagements überschreitet.",
-    "call-for-evidence-on-the-ccp-collateral-tokenisation": "Interessierte Parteien können bis zum 15. Januar 2027 Stellungnahmen zur Tokenisierung von Sicherheiten bei CCPs einreichen.",
-    "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr": "Nachrangige Tier-2-Emissionen sind auch bei angekündigter vorzeitiger Rückzahlung weiterhin in Zeile r0531 des Templates Z 02.00 auszuweisen.",
-    "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and": "Institute müssen für unbekannte oder aggregierte Gegenparteien in den Templates Z 12.00 und Z 14.00 interne Identifikatoren verwenden.",
-    "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii": "Institute müssen in Spalte 0110 des Templates Z 09.01 „Not applicable“ eintragen, wenn in Spalte 0090 „Direct“ gemeldet wird.",
-    "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia": "Institute müssen in Vorlage Z09.01 nur Dienstleistungen melden, die für die vertragliche Beziehung zum Zugang oder zur Funktion einer FMI relevant sind.",
-    "2026-7844-reporting-template-resol-2-z-08-02": "Institute müssen in Feld c0080 („Contract ID“) des Templates Z 08.02 „Not applicable“ angeben, wenn ein Vermögenswert im Eigentum des Instituts steht und keinem Vertrag unterliegt.",
-    "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of": "Institute müssen alternative CCP-Anbieter melden, wenn eine vertragliche Beziehung besteht, auch wenn ein anderer Handelsplatz oder Markt genutzt wird.",
-    "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation": "Die Anrechenbarkeit von Immobilien als Kreditsicherheit im IRB-Ansatz ist nicht strikt an die Definition von IPRE gekoppelt, sondern an die Unabhängigkeit der Rückzahlung von den Cashflows der Immobilie."
+    "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor": "Die EBA klärt, dass der Code „Other Countries“ in COREP-Meldungen bis zur Korrektur in DPM v4.4 Phase 2 nicht zu melden ist, wenn kein Land 20 % überschreitet.",
+    "call-for-evidence-on-the-ccp-collateral-tokenisation": "Die ESMA konsultiert bis zum 15.01.2027 zur Tokenisierung von Sicherheiten bei CCPs, um den Regulierungsbedarf zu prüfen.",
+    "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr": "Die EBA stellt klar, dass Tier-2-Emissionen trotz Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung weiterhin in Z 02.00 zu melden sind.",
+    "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and": "Institute müssen in Z 12.00 und Z 14.00 interne Identifikatoren für unbekannte Gegenparteien oder aggregierte Daten verwenden, keine Platzhalter.",
+    "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii": "Die EBA präzisiert, dass in Z 09.01, Spalte 0110, „Not applicable“ einzutragen ist, wenn in Spalte 0090 „Direct“ gemeldet wird.",
+    "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia": "Die EBA präzisiert, dass in Z09.01 nur FMI-bezogene Dienstleistungen zu melden sind, nicht allgemeine kommerzielle oder konzerninterne Dienstleistungen.",
+    "2026-7844-reporting-template-resol-2-z-08-02": "Die EBA klärt, dass bei eigenen Vermögenswerten ohne Vertrag in Z 08.02, Feld c0080, „Not applicable“ anzugeben ist.",
+    "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of": "Die EBA präzisiert, dass die Substituierbarkeit von CCPs auch bei Nutzung eines anderen Handelsplatzes gegeben sein kann, sofern eine vertragliche Beziehung besteht.",
+    "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation": "Die EBA präzisiert, dass die Anrechenbarkeit von Immobilien als Kreditsicherheit nicht strikt an die IPRE-Definition gekoppelt ist, sondern an die Unabhängigkeit von Cashflows."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-13": {
@@ -165,24 +174,25 @@
     "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
     "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an"
    ],
-   "hook": "Die EBA erleichtert die Berichterstattung und präzisiert Anforderungen für Zentralverwahrer.",
-   "folge": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht. Dies senkt die Berichterstattungskosten für Institute und erleichtert die Einhaltung der Vorschriften.",
-   "cover": "EBA: Neues technisches Paket für Reporting 4.4",
+   "hook": "Russland-Sanktionen: Die EU hat erneut Personen und Organisationen auf die Sanktionsliste gesetzt.",
+   "folge": "Finanzinstitute müssen ihre Compliance-Systeme sofort aktualisieren und alle Geschäftsbeziehungen zu den neu gelisteten Parteien prüfen. Dies erfordert eine umgehende Überprüfung von Kunden- und Transaktionsdaten, um die Einhaltung der Sanktionsvorschriften zu gewährleisten.",
+   "cover": "EU-Amtsblatt: Neue Russland-Sanktionen in Kraft",
    "zeilen": [
+    "EBA: Finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4 veröffentlicht",
     "EBA: Entwurf zur Änderung der RTS für Zentralverwahrer veröffentlicht",
-    "EU-Amtsblatt: Neue Sanktionen gegen die Ukraine-Liste in Kraft getreten",
-    "EU-Amtsblatt: Eine Person von der DVRK-Sanktionsliste gestrichen"
+    "EU-Amtsblatt: Eine Entität von DVRK-Sanktionsliste gestrichen"
    ],
-   "frage": "Welche Herausforderungen sehen Sie bei der Implementierung neuer EBA-Reporting-Anforderungen?",
-   "top": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
+   "frage": "Wie schnell können Sie neue Sanktionslisteneinträge in Ihren Systemen wirksam umsetzen?",
+   "top": "durchfuehrungsverordnung-eu-2026-2281-des-rates-vom-12-oktober-2026-zur-durchfue",
    "kern": {
-    "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue": "Die Durchführungsverordnung (EU) 2026/2292 aktualisiert die Begründungen für zwei gelistete Personen auf der Ukraine-Sanktionsliste.",
-    "durchfuehrungsverordnung-eu-2026-2281-des-rates-vom-12-oktober-2026-zur-durchfue": "Die Durchführungsverordnung (EU) 2026/2281 aktualisiert die Liste der Personen, Organisationen und Einrichtungen, die restriktiven Maßnahmen wegen der Ukraine unterliegen.",
-    "durchfuehrungsverordnung-eu-2026-2278-des-rates-vom-12-oktober-2026-zur-durchfue": "Die Durchführungsverordnung (EU) 2026/2278 streicht einen Eintrag aus der Liste der restriktiven Maßnahmen gegen die DVRK.",
-    "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der RTS für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer veröffentlicht.",
-    "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht, um die Berichterstattungskosten zu senken."
+    "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der RTS für Zentralverwahrer veröffentlicht, um bankähnliche Nebendienstleistungen für andere CSDs zu ermöglichen.",
+    "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU aktualisiert die Begründungen für die Listung von zwei natürlichen Personen auf der Russland-Sanktionsliste.",
+    "durchfuehrungsverordnung-eu-2026-2281-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU hat neue Personen und Organisationen auf die Russland-Sanktionsliste gesetzt, was eine sofortige Prüfung der Geschäftsbeziehungen erfordert.",
+    "durchfuehrungsverordnung-eu-2026-2278-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU hat einen Eintrag aus der Sanktionsliste gegen die DVRK gestrichen, was eine Aktualisierung der Compliance-Systeme erfordert.",
+    "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht, inklusive IFRS-18-Berichterstattung und ESG-Offenlegungen."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-14": {
@@ -195,22 +205,24 @@
     "esma-sets-out-2026-european-common-enforcement-priorities",
     "verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde"
    ],
-   "hook": "ESMA legt Prüfungsschwerpunkte für 2026 fest: Geopolitische Risiken und Nachhaltigkeit rücken in den Fokus.",
-   "folge": "Emittenten müssen ihre Jahresfinanzberichte und Nachhaltigkeitserklärungen 2026 an den neuen Schwerpunkten ausrichten. Dies betrifft insbesondere die Wesentlichkeitsanalyse und die Verknüpfung von Informationen zu Auswirkungen, Risiken und Chancen.",
-   "cover": "ESMA: Prüfungsschwerpunkte für Finanzberichte 2026",
+   "hook": "ESMA legt Prüfungsschwerpunkte für 2026 fest: Geopolitische Risiken und Nachhaltigkeit im Fokus.",
+   "folge": "Emittenten müssen ihre Jahresfinanzberichte und Nachhaltigkeitserklärungen auf diese Schwerpunkte ausrichten. Das betrifft insbesondere IFRS-Berichte und ESRS-Anwendungen.",
+   "cover": "ESMA: Prüfungsschwerpunkte für Jahresfinanzberichte 2026",
    "zeilen": [
     "BaFin: Konsultation zur Sachkunde bei Verbraucherdarlehen bis 27.10.2026",
-    "EU-Amtsblatt: Sanktionsliste Belarus um eine Person erweitert"
+    "EU-Amtsblatt: Neue Russland-Sanktionen gegen eine Person in Belarus",
+    "EU-Amtsblatt: Aktualisierung der Sanktionsliste für Guinea"
    ],
-   "frage": "Wie stellen Sie sicher, dass Ihre Nachhaltigkeitsberichterstattung den neuen ESMA-Anforderungen gerecht wird?",
+   "frage": "Wie stellen Sie sicher, dass geopolitische Risiken in Ihren Finanzberichten angemessen abgebildet sind?",
    "top": "esma-sets-out-2026-european-common-enforcement-priorities",
    "kern": {
-    "durchfuehrungsverordnung-eu-2026-2313-des-rates-vom-13-oktober-2026-zur-durchfue": "Die EU hat eine Person zur Sanktionsliste gegen Belarus hinzugefügt, die Unternehmen müssen deren Vermögenswerte einfrieren und Geschäftsbeziehungen vermeiden.",
-    "durchfuehrungsverordnung-eu-2026-2318-des-rates-vom-13-oktober-2026-zur-durchfue": "Die EU hat die Sanktionsliste für Guinea aktualisiert und die Angaben zu einer gelisteten Person präzisiert.",
-    "esma-sets-out-2026-european-common-enforcement-priorities": "Die ESMA hat die Prüfungsschwerpunkte für Jahresfinanzberichte 2026 veröffentlicht, mit Fokus auf geopolitische Risiken und Nachhaltigkeitserklärungen nach ESRS.",
+    "durchfuehrungsverordnung-eu-2026-2313-des-rates-vom-13-oktober-2026-zur-durchfue": "Eine weitere Person wurde in die Liste der Russland-Sanktionen aufgenommen, was für alle EU-Unternehmen sofortige Prüf- und Einfrierpflichten auslöst.",
+    "durchfuehrungsverordnung-eu-2026-2318-des-rates-vom-13-oktober-2026-zur-durchfue": "Die Sanktionsliste für Guinea wurde aktualisiert, was für Finanzinstitute eine Anpassung ihrer Compliance-Prüfungen bedeutet.",
+    "esma-sets-out-2026-european-common-enforcement-priorities": "Die ESMA hat die Prüfungsschwerpunkte für Jahresfinanzberichte 2026 veröffentlicht, die geopolitische Risiken und Nachhaltigkeitsberichterstattung umfassen.",
     "verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde": "Die BaFin konsultiert bis zum 27.10.2026 eine Änderung der Immobiliar-Darlehensvergabe-Sachkunde-Verordnung, die ab dem 20.11.2026 gilt."
    },
-   "fmt": 4,
+   "doppelt": [],
+   "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
   "2026-10-16": {
