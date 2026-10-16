@@ -1,25 +1,5 @@
 {
  "posts": {
-  "2026-10-02": {
-   "window": [
-    "2026-10-01"
-   ],
-   "keys": [
-    "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben"
-   ],
-   "hook": "Die BaFin ändert ihre Praxis bei der Übernahme von EU-Leitlinien und schafft separate Rundschreiben ab.",
-   "folge": "Ab dem 1. Oktober 2026 informiert die BaFin nur noch über eine tabellarische Übersicht auf ihrer Website, welche Leitlinien der ESAs und der AMLA übernommen werden. Institute müssen diese Übersicht selbständig prüfen.",
-   "cover": "BaFin: Weniger Rundschreiben zu EU-Leitlinien",
-   "zeilen": [],
-   "frage": "Wie stellen Sie sicher, dass Sie künftig über die von der BaFin übernommenen EU-Leitlinien informiert sind?",
-   "top": "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben",
-   "kern": {
-    "leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben": "Die BaFin informiert ab dem 01.10.2026 nur noch über eine tabellarische Übersicht auf ihrer Website über die Übernahme von ESA- und AMLA-Leitlinien, um Bürokratie abzubauen."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-06": {
    "window": [
     "2026-10-05"
