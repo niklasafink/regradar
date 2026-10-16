@@ -112,12 +112,13 @@ export async function connect(code: string): Promise<StoredToken> {
 
 /* ---------- Posten ---------- */
 
-/** LinkedIn „little text format“: reservierte Zeichen maskieren, #Wort als Hashtag. */
+/** LinkedIn „little text format“: reservierte Zeichen maskieren. #Wort bleibt
+    unmaskiert, LinkedIn macht daraus selbst einen Hashtag; die Vorlage
+    {hashtag|\#|Wort} erschien am 16.10.2026 wörtlich im Post. */
 export function littleText(text: string): string {
   return text
     .replace(/[\\|{}@[\]()<>*_~]/g, (c) => `\\${c}`)
-    .replace(/#([0-9A-Za-zÄÖÜäöüß]+)/g, "{hashtag|\\#|$1}")
-    .replace(/#/g, "\\#");
+    .replace(/#(?![0-9A-Za-zÄÖÜäöüß])/g, "\\#");
 }
 
 async function li(tok: StoredToken, path: string, body: unknown): Promise<Response> {
@@ -125,7 +126,9 @@ async function li(tok: StoredToken, path: string, body: unknown): Promise<Respon
     method: "POST",
     headers: {
       Authorization: `Bearer ${tok.access}`, "Content-Type": "application/json",
-      "LinkedIn-Version": VERSION, "X-Restli-Protocol-Version": "2.0.0",
+      // LinkedIn-Version gilt nur für die versionierte /rest-API, nicht für /v2.
+      ...(path.startsWith("/rest/") ? { "LinkedIn-Version": VERSION } : {}),
+      "X-Restli-Protocol-Version": "2.0.0",
     },
     body: JSON.stringify(body),
   });
@@ -133,7 +136,17 @@ async function li(tok: StoredToken, path: string, body: unknown): Promise<Respon
   return res;
 }
 
-/** Post mit PDF anlegen, danach den ersten Kommentar mit dem Link. */
+/** Erster Kommentar mit dem Link. /rest/socialActions verlangt die Partner-API
+    (Community Management, 403 partnerApiSocialActions.CREATE), daher die
+    v2-Schnittstelle, die mit w_member_social auskommt. */
+export async function comment(tok: StoredToken, urn: string, text: string): Promise<void> {
+  await li(tok, `/v2/socialActions/${encodeURIComponent(urn)}/comments`, {
+    actor: `urn:li:person:${tok.sub}`, object: urn, message: { text },
+  });
+}
+
+/** Post mit PDF anlegen. Der Kommentar folgt getrennt (runPublish), damit ein
+    Fehler dort nie zu einem zweiten Post führt. */
 export async function publish(d: Digest): Promise<{ urn: string; url: string }> {
   const tok = await getToken();
   if (!tok) throw new Error("LinkedIn nicht verbunden oder Token abgelaufen");
@@ -169,9 +182,6 @@ export async function publish(d: Digest): Promise<{ urn: string; url: string }> 
   });
   const urn = post.headers.get("x-restli-id") ?? "";
   if (!urn) throw new Error("LinkedIn hat keine Post-ID geliefert");
-  await li(tok, `/rest/socialActions/${encodeURIComponent(urn)}/comments`, {
-    actor: author, object: urn, message: { text: d.comment },
-  });
   return { urn, url: `https://www.linkedin.com/feed/update/${urn}/` };
 }
 
@@ -286,14 +296,11 @@ export async function runPublish(day = berlin().day): Promise<string> {
     return `${day}: Inhalt seit Freigabe geändert, neue Freigabe angefordert`;
   }
   if (!(await redis().set(KEY.lock(day), "1", { nx: true, ex: 600 }))) return `${day}: Posten läuft bereits`;
+  let res: { urn: string; url: string };
   try {
-    const res = await publish(d);
+    res = await publish(d);
+    // Sofort als gepostet merken: ab hier darf kein Fehler mehr einen zweiten Post auslösen.
     await redis().set(KEY.posted(day), { ...res, at: new Date().toISOString() }, { ex: 30 * 86400 });
-    await mail(`LinkedIn-Post ist online: ${d.cover}`,
-      `Der Post ist online: ${res.url}\nDer erste Kommentar mit dem Link steht darunter.`,
-      frame(`<p style="font-size:14px">Der Post ist online, der erste Kommentar mit dem Link steht darunter.</p>
-        <p><a href="${res.url}" style="background:#0f172a;color:#fff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600">Auf LinkedIn ansehen →</a></p>`));
-    return `${day}: gepostet (${res.url})`;
   } catch (e) {
     await redis().del(KEY.lock(day));
     const msg = e instanceof Error ? e.message : String(e);
@@ -305,4 +312,26 @@ export async function runPublish(day = berlin().day): Promise<string> {
         <p><a href="${approveLink(day)}">Erneut versuchen →</a></p>`)).catch(() => {});
     throw e;
   }
+  // Kommentar mit dem Link; scheitert er, ist der Post trotzdem online.
+  let missing = "";
+  const tok = await getToken();
+  try {
+    if (!tok) throw new Error("LinkedIn-Token fehlt");
+    await comment(tok, res.urn, d.comment);
+  } catch (e) {
+    missing = e instanceof Error ? e.message : String(e);
+    console.error("linkedin comment:", missing);
+  }
+  await mail(missing ? `LinkedIn-Post ist online, Kommentar fehlt: ${d.cover}` : `LinkedIn-Post ist online: ${d.cover}`,
+    missing
+      ? `Der Post ist online: ${res.url}\n\nDer erste Kommentar konnte nicht gesetzt werden:\n${missing}\n\nBitte von Hand kommentieren:\n${d.comment}`
+      : `Der Post ist online: ${res.url}\nDer erste Kommentar mit dem Link steht darunter.`,
+    frame(`${missing
+      ? `<p style="font-size:14px">Der Post ist online, aber der erste Kommentar konnte nicht gesetzt werden:</p>
+        <pre style="white-space:pre-wrap;font-size:12px;background:#f1f5f9;padding:12px;border-radius:8px">${esc(missing)}</pre>
+        <p style="font-size:14px">Bitte von Hand kommentieren:<br>${esc(d.comment)}</p>`
+      : `<p style="font-size:14px">Der Post ist online, der erste Kommentar mit dem Link steht darunter.</p>`}
+      <p><a href="${res.url}" style="background:#0f172a;color:#fff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600">Auf LinkedIn ansehen →</a></p>`))
+    .catch((e) => console.error("linkedin mail:", e));
+  return `${day}: gepostet (${res.url})${missing ? `, Kommentar fehlt: ${missing}` : ""}`;
 }
