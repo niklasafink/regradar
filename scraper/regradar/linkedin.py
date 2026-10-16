@@ -98,7 +98,10 @@ Für alle Felder: Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A) bleiben. Keine
 Floskeln wie „nicht nur …, sondern auch“, „Das Ergebnis?“, „Hier kommt … ins
 Spiel“. Nur Fakten aus der Eingabe verwenden. Datumsangaben immer vollständig
 im Format TT.MM.JJJJ und nur, wenn genau dieses Datum in der Eingabe steht.
-Kennungen wie „09/2026“ oder „(04/2026)“ sind Aktenzeichen, keine Fristen."""
+Kennungen wie „09/2026“ oder „(04/2026)“ sind Aktenzeichen, keine Fristen.
+Sanktionen wegen Handlungen gegen die Ukraine richten sich gegen Personen und
+Organisationen aus dem Umfeld Russlands, nie „gegen die Ukraine“; benenne sie
+als Russland-Sanktionen."""
 
 # Höchstlängen; längere LLM-Antworten werden verworfen und neu erzeugt.
 MAX_LEN = {"hook": 110, "cover": 70, "folge": 280, "frage": 130, "zeile": 110}

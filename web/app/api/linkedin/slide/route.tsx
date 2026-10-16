@@ -146,7 +146,13 @@ function Brand({ iconSrc, size, dark }: { iconSrc: string; size: number; dark?: 
 function Words({ text, size, style }: { text: string; size: number; style: React.CSSProperties }) {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", columnGap: Math.round(size * 0.27), fontSize: size, ...style }}>
-      {text.split(/\s+/).filter(Boolean).map((w, i) => <span key={i} style={{ whiteSpace: "nowrap" }}>{w}</span>)}
+      {/* Bindestrich-Wörter als feste Zeile aus Teilen: als ein Span misst Satori
+          „Post-Trade-Transparenz“ zu breit und lässt eine Lücke dahinter. */}
+      {text.split(/\s+/).filter(Boolean).map((w, i) => (
+        <div key={i} style={{ display: "flex", flexWrap: "nowrap" }}>
+          {w.split(/(?<=-)/).map((part, j) => <span key={j} style={{ whiteSpace: "nowrap" }}>{part}</span>)}
+        </div>
+      ))}
     </div>
   );
 }
