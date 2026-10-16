@@ -61,6 +61,8 @@ interface StoredPost {
   /** Meldung, auf die sich der Aufhänger bezieht (erste Slide) */
   top?: string;
   kern: Record<string, string>;
+  /** Meldungen zum selben Dokument wie eine andere (Bericht + Tabelle): keine eigene Slide */
+  doppelt?: string[];
 }
 
 const POSTS = (linkedinJson as { posts: Record<string, StoredPost> }).posts;
@@ -117,6 +119,7 @@ export function digestFor(day: string): Digest | undefined {
   if (!post) return undefined;
   const items: DigestItem[] = [];
   for (const key of post.keys) {
+    if (post.doppelt?.includes(key)) continue;
     const page = UPDATE_PAGES.find((p) => keyOf(p.u) === key);
     if (page) items.push({ page, kern: post.kern[key] ?? "" });
   }

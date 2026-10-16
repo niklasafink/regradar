@@ -28,7 +28,7 @@ from .webexport import WEB_LIVE_PATH
 
 LINKEDIN_PATH = os.path.join(os.path.dirname(WEB_LIVE_PATH), "linkedin.json")
 # Bei inhaltlichen Prompt-Änderungen hochzählen: alle Tages-Posts neu erzeugen.
-FORMAT = 4
+FORMAT = 5
 # So viele Posttage rückwirkend vorhalten (Vorschau und verspätete Posts).
 KEEP_DAYS = 14
 TIMEOUT = 120
@@ -41,7 +41,8 @@ zusammenfassung, frist, impact = high/medium/low).
 
 Liefere ein JSON-Objekt:
 {"hook": "...", "folge": "...", "cover": "...", "top": "<id>",
- "zeilen": ["...", ...], "frage": "...", "kern": {"<id>": "...", ...}}
+ "zeilen": ["...", ...], "frage": "...", "kern": {"<id>": "...", ...},
+ "doppelt": {"<id>": "<id>", ...}}
 
 top: die id der wichtigsten Meldung (höchster impact, bei Gleichstand die
 früheste Frist). hook, folge und cover beziehen sich auf sie. Routinemäßige
@@ -86,6 +87,12 @@ Gibt es eine konkrete Pflicht oder Frist, steht sie im Satz. Gibt es keine
 bis wann beteiligen kann. Verboten sind Schablonen wie „Institute sollten …
 prüfen, um … zu verstehen“ oder „… im Blick behalten“, Paragrafen, das
 Wiederholen des Titels.
+
+doppelt: Meldungen, die dasselbe Dokument oder Paket wie eine andere Meldung
+der Liste behandeln (z. B. ein Bericht und die zugehörige Tabelle oder ein
+Anhang dazu). Schlüssel ist die weniger aussagekräftige Meldung, die entfällt,
+Wert die Meldung, die bleibt und den Inhalt trägt. Eine Meldung, die bleibt,
+ist nie selbst Schlüssel; die top-Meldung entfällt nie. Keine Dubletten: {}.
 
 Für alle Felder: Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A) bleiben. Keine
 Floskeln wie „nicht nur …, sondern auch“, „Das Ergebnis?“, „Hier kommt … ins
@@ -168,6 +175,12 @@ def _chat(key: str, model: str, items: List[dict], retry: str = "") -> dict:
     top = str(parsed.get("top") or "")
     if top not in kern:
         top = items[0]["key"]
+    keys = {it["key"] for it in items}
+    raw = parsed.get("doppelt") or {}
+    pairs = {str(k): str(v) for k, v in raw.items()} if isinstance(raw, dict) else {}
+    # Nur gültige Paare; was bleibt, darf nie selbst entfallen (sonst fiele das Thema ganz weg).
+    pairs = {k: v for k, v in pairs.items() if k in keys and v in keys and k != v and k != top}
+    doppelt = sorted(k for k in pairs if k not in set(pairs.values()))
     if not all(text.values()) or any(it["key"] not in kern for it in items):
         raise ValueError("LLM-Antwort unvollständig (hook, folge, cover, frage oder kern fehlt)")
     too_long = [f for f, v in text.items() if len(v) > MAX_LEN[f]]
@@ -184,7 +197,7 @@ def _chat(key: str, model: str, items: List[dict], retry: str = "") -> dict:
         bad = _bad_dates(t, items)
         if bad:
             raise ValueError("Datum ohne Beleg in der Eingabe: {}".format(", ".join(bad)))
-    return {**text, "zeilen": zeilen, "top": top, "kern": kern}
+    return {**text, "zeilen": zeilen, "top": top, "kern": kern, "doppelt": doppelt}
 
 
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
@@ -266,6 +279,7 @@ def build(today: Optional[dt.date] = None, force: bool = False,
             "frage": got["frage"],
             "top": got["top"],
             "kern": got["kern"],
+            "doppelt": got["doppelt"],
             "fmt": FORMAT,
             "model": model,
         }

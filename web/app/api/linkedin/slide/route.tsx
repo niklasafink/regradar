@@ -141,6 +141,20 @@ function Brand({ iconSrc, size, dark }: { iconSrc: string; size: number; dark?: 
   );
 }
 
+/** Überschrift wortweise mit festem Wortabstand. Satori setzt Leerzeichen bei
+    negativem Buchstabenabstand ungleich breit („desKunden“, „Kunden  (C-70/25)“). */
+function Words({ text, size, style }: { text: string; size: number; style: React.CSSProperties }) {
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", columnGap: Math.round(size * 0.27), fontSize: size, ...style }}>
+      {text.split(/\s+/).filter(Boolean).map((w, i) => <span key={i} style={{ whiteSpace: "nowrap" }}>{w}</span>)}
+    </div>
+  );
+}
+
+/** Lange Kennungen am Titelende („(ESMA43-502934634-2993)“) fallen auf der Slide weg,
+    kurze Aktenzeichen wie „(C-70/25)“ bleiben. */
+const slideTitle = (ti: string) => ti.replace(/\s*\((?=[^)]*\d)[^()\s]{12,}\)\s*$/, "");
+
 function Pill({ children, blue, outline }: { children: React.ReactNode; blue?: boolean; outline?: boolean }) {
   const bg = blue ? C.blue : "#fff";
   return (
@@ -171,7 +185,9 @@ function Footer({ iconSrc, page, total, dark }: { iconSrc: string; page: number;
 const frame = (dark: boolean) => ({
   width: "100%", height: "100%", display: "flex", flexDirection: "column" as const,
   position: "relative" as const, overflow: "hidden" as const,
-  background: dark ? C.ink : "#fff", padding: "72px 76px 60px",
+  // Großer Rand oben und unten: die LinkedIn-App zeigt quadratische Seiten
+  // mobil beschnitten (ca. 7 % oben, 12 % unten, Screenshot 16.10.2026).
+  background: dark ? C.ink : "#fff", padding: "118px 80px 112px",
   fontFamily: "Inter", color: dark ? "#fff" : C.ink,
 });
 
@@ -193,14 +209,14 @@ function cover(d: Digest, iconSrc: string) {
   const date = d.window.length > 1
     ? `${wd(d.window[0])} bis ${wd(last)}, ${deDate(d.window[0]).slice(0, 6)} bis ${deDate(last)}`
     : windowLabel(d.window);
-  const size = d.cover.length > 75 ? 66 : d.cover.length > 50 ? 80 : 92;
+  const size = d.cover.length > 75 ? 62 : d.cover.length > 50 ? 74 : 86;
   const more = n === 1 ? "Die Meldung im Überblick"
     : `+ ${n - 1} ${n === 2 ? "weitere Meldung" : "weitere Meldungen"} von ${others(d)}`;
   return (
     <div style={frame(true)}>
       <Radar dark size={760} right={-330} top={-250} />
-      <Brand iconSrc={iconSrc} size={30} dark />
       <div style={{ display: "flex", flexGrow: 1 }} />
+      <div style={{ display: "flex", marginBottom: 40 }}><Brand iconSrc={iconSrc} size={30} dark /></div>
       {/* Datum groß und fett: zeigt auf einen Blick, dass der Post tagesaktuell ist. */}
       <div style={{
         display: "flex", marginBottom: 22, color: "#fff",
@@ -209,13 +225,12 @@ function cover(d: Digest, iconSrc: string) {
       <div style={{ display: "flex", fontSize: 34, color: "#60a5fa", fontWeight: 500, marginBottom: 24 }}>
         Regulatorik-Update für Finanzinstitute
       </div>
-      <div style={{
-        display: "flex", fontFamily: "Manrope", fontWeight: 700,
-        fontSize: size, lineHeight: 1.05, letterSpacing: -3, maxWidth: 920,
-      }}>{d.cover}</div>
+      <Words text={d.cover} size={size} style={{
+        fontFamily: "Manrope", fontWeight: 700, lineHeight: 1.08, letterSpacing: -1.5, maxWidth: 920,
+      }} />
       <div style={{
         display: "flex", alignItems: "center", justifyContent: "space-between", gap: 40,
-        marginTop: 64, paddingTop: 36, borderTop: `2px solid ${C.nightLine}`,
+        marginTop: 52, paddingTop: 32, borderTop: `2px solid ${C.nightLine}`,
       }}>
         {/* Wortweise ohne Umbruch innerhalb, sonst trennt Satori „EU-Amtsblatt“ am Bindestrich. */}
         <div style={{ display: "flex", flexWrap: "wrap", columnGap: 10, fontSize: 34, lineHeight: 1.3, color: C.nightText, maxWidth: 720 }}>
@@ -236,10 +251,10 @@ async function itemSlide(d: Digest, idx: number, iconSrc: string) {
   const { page, kern } = d.items[idx];
   const u = page.u;
   const l = await logo(u.src);
-  const ti = u.ti.de;
+  const ti = slideTitle(u.ti.de);
   const long = ti.length + kern.length;
-  const tiSize = ti.length > 110 || long > 290 ? 38 : ti.length > 75 || long > 230 ? 43 : 50;
-  const kernSize = long > 290 ? 27 : 30;
+  const tiSize = ti.length > 110 || long > 290 ? 40 : ti.length > 75 || long > 230 ? 46 : 54;
+  const kernSize = long > 290 ? 29 : 32;
   const fw = page.fw.n.de.split(":")[0].trim();
   const nr = String(idx + 1).padStart(2, "0");
   return (
@@ -247,12 +262,13 @@ async function itemSlide(d: Digest, idx: number, iconSrc: string) {
       <Radar dark={false} size={640} right={-330} top={-300} />
       <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", flexShrink: 0 }}>
         <div style={{
-          display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: 168,
-          lineHeight: 0.82, letterSpacing: -8, color: C.ink,
+          display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: 140,
+          lineHeight: 0.82, letterSpacing: -6, color: C.ink,
         }}>{nr}</div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 18, paddingTop: 4 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 18, minHeight: 72 }}>
-            {l && <LogoImg l={l} h={l.generic ? 50 : 72} maxW={250} />}
+          {/* Einheitliche Logo-Höhe für Flaggen und Wortmarken. */}
+          <div style={{ display: "flex", alignItems: "center", gap: 16, height: 60 }}>
+            {l && <LogoImg l={l} h={l.generic ? 46 : 60} maxW={200} />}
             {(!l || l.generic) && (
               <div style={{ display: "flex", fontSize: 30, fontWeight: 500 }}>{authority(u.src)}</div>
             )}
@@ -264,14 +280,13 @@ async function itemSlide(d: Digest, idx: number, iconSrc: string) {
         <Pill>{u.t.de}</Pill>
         {u.imp === "high" && <Pill blue>Hohe Relevanz</Pill>}
       </div>
-      <div style={{
-        display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: tiSize,
-        lineHeight: 1.14, letterSpacing: -1, marginTop: 26, flexShrink: 0,
-      }}>{ti}</div>
-      <div style={{ display: "flex", flexGrow: 1, minHeight: 24 }} />
+      <Words text={ti} size={tiSize} style={{
+        fontFamily: "Manrope", fontWeight: 700, lineHeight: 1.14, letterSpacing: -0.5, marginTop: 26, flexShrink: 0,
+      }} />
+      {/* Box direkt unter dem Titel, der freie Raum liegt über der Fußzeile. */}
       <div style={{
         display: "flex", flexDirection: "column", background: C.soft, borderRadius: 32,
-        padding: "30px 38px", marginBottom: 32, flexShrink: 0,
+        padding: "30px 38px", marginTop: 36, flexShrink: 0,
       }}>
         <div style={{ display: "flex", fontSize: 23, color: C.blue, fontWeight: 500 }}>Kurz gesagt</div>
         <div style={{ display: "flex", fontSize: kernSize, lineHeight: 1.38, color: C.ink, marginTop: 10 }}>{kern}</div>
@@ -282,6 +297,7 @@ async function itemSlide(d: Digest, idx: number, iconSrc: string) {
           <div style={{ display: "flex", fontSize: 23, color: C.text }}>{`Rahmenwerk: ${fw}`}</div>
         </div>
       </div>
+      <div style={{ display: "flex", flexGrow: 1, minHeight: 28 }} />
       <Footer iconSrc={iconSrc} page={idx + 2} total={d.slides} />
     </div>
   );
@@ -292,10 +308,9 @@ function endSlide(d: Digest, iconSrc: string) {
     <div style={frame(true)}>
       <Radar dark size={950} right={-500} top={-200} />
       <div style={{ display: "flex", flexGrow: 1 }} />
-      <div style={{
-        display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: 70,
-        lineHeight: 1.08, letterSpacing: -2,
-      }}>Alle Meldungen mit Zusammenfassung und Link zur Quelle</div>
+      <Words text="Alle Meldungen mit Zusammenfassung und Link zur Quelle" size={66} style={{
+        fontFamily: "Manrope", fontWeight: 700, lineHeight: 1.1, letterSpacing: -1,
+      }} />
       <div style={{ display: "flex", marginTop: 44 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "20px 42px", borderRadius: 999, background: "#fff", color: C.ink, fontSize: 38, fontWeight: 500 }}>
           regradar.de/updates
@@ -305,7 +320,7 @@ function endSlide(d: Digest, iconSrc: string) {
       <div style={{ display: "flex", gap: 14, marginTop: 48 }}>
         {["Rechtsmonitoring", "Kostenlos", "Open Source"].map((t) => <Pill key={t} outline>{t}</Pill>)}
       </div>
-      <div style={{ display: "flex", fontSize: 30, lineHeight: 1.45, color: C.nightText, marginTop: 34, marginBottom: 56 }}>
+      <div style={{ display: "flex", fontSize: 30, lineHeight: 1.45, color: C.nightText, marginTop: 34, marginBottom: 48 }}>
         Kostenloses Rechtsmonitoring als Open Source. Jeden Donnerstag die Meldungen der Woche zu Ihren Rahmenwerken per E-Mail.
       </div>
       <Footer iconSrc={iconSrc} page={d.slides} total={d.slides} dark />
