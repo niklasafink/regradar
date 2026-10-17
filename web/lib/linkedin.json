@@ -243,6 +243,39 @@
    ],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-10-19": {
+   "window": [
+    "2026-10-16",
+    "2026-10-17",
+    "2026-10-18"
+   ],
+   "keys": [
+    "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet",
+    "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
+    "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
+    "new-q-as-available",
+    "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s"
+   ],
+   "hook": "Die EU-Wertpapierabwicklung wird schneller: T+1 kommt, und die Kommunikation wird elektronisch.",
+   "folge": "Ab dem 11. Oktober 2027 müssen Wertpapiergeschäfte in der EU innerhalb eines Tages abgewickelt werden. Wertpapierfirmen müssen dafür schon ab dem 7. Dezember 2026 elektronische, standardisierte Kommunikationskanäle nutzen.",
+   "cover": "ESMA: T+1-Abwicklung erfordert neue Prozesse",
+   "zeilen": [
+    "Bundestag: BSI wird zentrale Behörde für Cybersicherheit von IT-Produkten ab Dezember 2027",
+    "ESMA: Neue MAR-Leitlinien präzisieren Bedingungen für die Offenlegungsverzögerung von Insiderinformationen"
+   ],
+   "frage": "Sind Ihre Systeme und Prozesse bereit für die Umstellung auf T+1 und die neuen Kommunikationsstandards?",
+   "top": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+   "kern": {
+    "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s": "Wertpapierfirmen müssen sich auf die T+1-Abwicklung bis zum 11.10.2027 vorbereiten und ab dem 07.12.2026 elektronische, standardisierte Kommunikationskanäle nutzen.",
+    "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa": "Die ESMA überarbeitet die CSDR-Leitlinien für Wertpapierfirmen zur Kommunikation mit professionellen Kunden, um Effizienz und Sicherheit der Abwicklung zu verbessern.",
+    "new-q-as-available": "Die ESMA klärt in neuen Q&As Fragen zur Nutzung von Zahlungskonten durch Krypto-Dienstleister, Crowdfunding-Plattformen und zur EMIR-AAR-Befreiung.",
+    "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet": "Das BSI wird ab Dezember 2027 die zentrale Behörde für Cybersicherheit von IT-Produkten und überwacht die Einhaltung des Cyber Resilience Act.",
+    "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat": "Die ESMA präzisiert in überarbeiteten MAR-Leitlinien die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
