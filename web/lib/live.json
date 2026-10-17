@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:10:20Z",
+  "generated_at": "2026-10-17T10:10:27Z",
   "updates": {
     "idd": [
       {
@@ -534,6 +534,26 @@
       }
     ],
     "mar": [
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zu den MAR-Leitlinien zur Offenlegungsverzögerung von Insiderinformationen (ESMA74-268544963-1718)",
+          "en": "Final Report on MAR Guidelines on Delay in the Disclosure of Inside Information (ESMA74-268544963-1718)"
+        },
+        "sl": "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
+        "s": {
+          "de": "Dieser Abschlussbericht der ESMA befasst sich mit den Leitlinien zur Offenlegungsverzögerung von Insiderinformationen gemäß der Marktmissbrauchsverordnung (MAR). Er berücksichtigt die Änderungen durch den Listing Act, der darauf abzielt, den Zugang zu öffentlichen Kapitalmärkten für EU-Unternehmen, insbesondere KMU, zu erleichtern und den Verwaltungsaufwand zu reduzieren.\n\nDie überarbeiteten Leitlinien präzisieren die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen. Dies betrifft insbesondere Situationen, die sich aus langwierigen Prozessen ergeben, Anordnungen von Behörden zur Vertraulichkeit, die Notwendigkeit, weitere Informationen zu sammeln, oder das Risiko, eine Geschäftsmöglichkeit zu verlieren. Ziel ist es, die Rechtssicherheit für Emittenten zu erhöhen und gleichzeitig den Schutz der Anleger zu gewährleisten.\n\nDer Bericht enthält Vorschläge für Änderungen an den bestehenden Leitlinien, eine Kosten-Nutzen-Analyse und berücksichtigt Rückmeldungen von Interessengruppen. Die Anpassungen sollen sicherstellen, dass die MAR-Vorschriften im Einklang mit den Zielen des Listing Act stehen und die Attraktivität der EU-Kapitalmärkte steigern.",
+          "en": "This ESMA final report addresses the guidelines on delaying the disclosure of inside information under the Market Abuse Regulation (MAR). It takes into account the changes introduced by the Listing Act, which aims to facilitate access to public capital markets for EU companies, especially SMEs, and reduce administrative burdens.\n\nThe revised guidelines clarify the conditions under which issuers may delay the disclosure of inside information. This particularly concerns situations arising from protracted processes, public authority orders to maintain confidentiality, the need to gather further information, or the risk of losing a business opportunity. The objective is to increase legal certainty for issuers while ensuring investor protection.\n\nThe report includes proposed amendments to the existing guidelines, a cost-benefit analysis, and incorporates feedback from stakeholders. The adjustments are intended to ensure that MAR provisions align with the objectives of the Listing Act and enhance the attractiveness of EU capital markets."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-mar-guidelines-delay-disclosure-inside-information",
+        "imp": "high",
+        "refnum": "ESMA74-268544963-1718"
+      },
       {
         "d": "15.10.2026",
         "t": {
