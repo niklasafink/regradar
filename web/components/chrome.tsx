@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ConsentSettingsLink } from "@/components/cookie-consent";
-import { PROVIDERS } from "@/lib/data";
-import { providerById, tx } from "@/lib/logic";
+import { PROVIDERS } from "@/lib/base";
+import { providerById, tx } from "@/lib/core";
 import { SOURCES } from "@/lib/sources";
 import { useStore } from "@/lib/store";
 
@@ -307,7 +307,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
             href="https://github.com/niklasafink/regradar"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="Quellcode von Regulatory Radar auf GitHub"
             title="GitHub"
             data-fast-goal="github_click"
             className="hidden shrink-0 text-slate-400 transition-colors hover:text-slate-900 sm:inline-flex"

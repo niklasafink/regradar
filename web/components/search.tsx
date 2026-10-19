@@ -3,8 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Search as SearchIcon } from "lucide-react";
-import type { Framework, Update } from "@/lib/data";
-import { FRAMEWORKS, authority, dt, fmtDate, providerSlug, tx } from "@/lib/logic";
+import { authority, dt, fmtDate, providerSlug, tx } from "@/lib/core";
+import { useFrameworkIndex, type FwLite as Framework } from "@/lib/fwIndex";
 import { useStore } from "@/lib/store";
 
 interface Hit {
@@ -23,7 +23,7 @@ function fwHref(f: Framework, provider?: string) {
   return `/r/${providerSlug(p)}/f/${f.id}`;
 }
 
-function buildHits(q: string, lang: "de" | "en", provider?: string): Hit[] {
+function buildHits(FRAMEWORKS: Framework[], q: string, lang: "de" | "en", provider?: string): Hit[] {
   const needle = norm(q.trim());
   if (needle.length < 2) return [];
 
@@ -41,7 +41,7 @@ function buildHits(q: string, lang: "de" | "en", provider?: string): Hit[] {
         kind: "framework",
       });
     }
-    for (const u of f.u as Update[]) {
+    for (const u of f.u) {
       const uText = `${u.ti.de} ${u.ti.en} ${u.refnum ?? ""} ${u.src}`;
       if (norm(uText).includes(needle)) {
         ups.push({
@@ -70,8 +70,14 @@ export function SearchBox({ provider }: { provider?: string }) {
   const [active, setActive] = useState(0);
   const boxRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  // Suchindex erst laden, wenn die Suche benutzt wird (Fokus oder Eingabe).
+  const [wanted, setWanted] = useState(false);
+  const index = useFrameworkIndex(wanted);
 
-  const hits = useMemo(() => buildHits(q, lang, provider), [q, lang, provider]);
+  const hits = useMemo(
+    () => (index ? buildHits(index, q, lang, provider) : []),
+    [index, q, lang, provider],
+  );
 
   useEffect(() => setActive(0), [q]);
 
@@ -117,7 +123,7 @@ export function SearchBox({ provider }: { provider?: string }) {
     }
   };
 
-  const showResults = open && q.trim().length >= 2;
+  const showResults = open && !!index && q.trim().length >= 2;
 
   return (
     <div ref={boxRef} className="relative min-w-0 flex-1 sm:max-w-xs">
@@ -127,8 +133,8 @@ export function SearchBox({ provider }: { provider?: string }) {
           ref={inputRef}
           type="search"
           value={q}
-          onChange={(e) => { setQ(e.target.value); setOpen(true); }}
-          onFocus={() => setOpen(true)}
+          onChange={(e) => { setQ(e.target.value); setOpen(true); setWanted(true); }}
+          onFocus={() => { setOpen(true); setWanted(true); }}
           onKeyDown={onKeyDown}
           placeholder={lang === "de" ? "Rahmenwerke und Updates suchen" : "Search frameworks and updates"}
           aria-label={lang === "de" ? "Suche" : "Search"}

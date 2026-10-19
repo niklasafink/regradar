@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import type { Framework } from "@/lib/data";
-import { FRAMEWORKS, framePath } from "@/lib/logic";
+import { framePathLite, useFrameworkIndex, type FwLite as Framework } from "@/lib/fwIndex";
 import { useStore } from "@/lib/store";
 
 const norm = (s: string) => s.toLowerCase();
@@ -26,12 +25,14 @@ export function FrameworkPicker({
   const [active, setActive] = useState(0);
   const boxRef = useRef<HTMLDivElement>(null);
   const listId = useId();
+  const all = useFrameworkIndex();
+  const FRAMEWORKS = all ?? [];
 
-  const label = (f: Framework) => framePath(lang, f);
+  const label = (f: Framework) => framePathLite(lang, f, FRAMEWORKS);
 
   const options = useMemo(() => {
     const needle = norm(q.trim());
-    const name = (f: Framework) => framePath(lang, f);
+    const name = (f: Framework) => framePathLite(lang, f, FRAMEWORKS);
     const hits = FRAMEWORKS.filter((f) =>
       !needle ||
       norm(`${name(f)} ${f.n.de} ${f.n.en} ${f.ref} ${f.alias ?? ""}`).includes(needle),
@@ -41,7 +42,7 @@ export function FrameworkPicker({
     return hits.sort(
       (a, b) => rank(a) - rank(b) || name(a).localeCompare(name(b), lang),
     );
-  }, [q, lang, providers]);
+  }, [q, lang, providers, all]);
 
   useEffect(() => setActive(0), [q]);
 
@@ -84,6 +85,7 @@ export function FrameworkPicker({
         <input
           type="text"
           role="combobox"
+          aria-label={lang === "de" ? "Rahmenwerk suchen" : "Search framework"}
           aria-expanded={open}
           aria-controls={listId}
           aria-autocomplete="list"
@@ -104,7 +106,7 @@ export function FrameworkPicker({
         </button>
       </div>
 
-      {open && (
+      {open && all && (
         <ul
           id={listId}
           role="listbox"

@@ -7,6 +7,9 @@ import { TrackGoal } from "@/components/track-goal";
 import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
 import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateBySlugLoose, updateHref } from "@/lib/updates";
 import { hashtag, shareOpener } from "@/lib/linkedin";
+import {
+  breadcrumbLd, clip, description, frameworkPath, ldGraph, organizationLd, pageMeta, SITE_URL, title, TITLE_MAX,
+} from "@/lib/seo";
 
 // Unbekannte Slugs werden zur Laufzeit aufgelöst: Wandert eine Meldung in ein
 // anderes Rahmenwerk oder fällt sie bei einer Bereinigung weg, führen Links aus
@@ -27,21 +30,31 @@ export async function generateMetadata(
   const page = updateBySlug(slug);
   if (!page) return {};
   const { fw, u } = page;
-  const title = `${u.ti.de} – ${fw.n.de}`;
-  const description =
-    (u.s.de && firstParagraph(u.s.de)) ||
-    `${u.t.de} der ${authority(u.src)} vom ${u.d} zu ${fw.n.de} (${fw.ref}).`;
-  return {
-    title,
-    description,
-    alternates: { canonical: `/u/${slug}` },
-    openGraph: {
-      title,
-      description,
-      type: "article",
-      publishedTime: isoDate(u.d),
-    },
-  };
+  return pageMeta({
+    title: updateTitle(u.ti.de, fw.n.de, u.d),
+    ogTitle: u.ti.de,
+    description: updateDescription(page),
+    path: `/u/${slug}`,
+    type: "article",
+    publishedTime: isoDate(u.d),
+  });
+}
+
+/* Titel: der deutsche Meldungstitel; kurze bekommen das Rahmenwerk dazu,
+   lange werden für das <title>-Element an einer Wortgrenze gekürzt und mit
+   dem Datum eindeutig gemacht (og:title und die Überschrift bleiben vollständig). */
+function updateTitle(ti: string, fwName: string, d: string): string {
+  if (ti.length < 30) return clip(`${ti} – ${fwName}`, TITLE_MAX);
+  if (ti.length > TITLE_MAX) return `${clip(ti, TITLE_MAX - d.length - 3)} (${d})`;
+  return title(ti);
+}
+
+/* Beschreibung: erster Absatz der Zusammenfassung, bei Bedarf ergänzt um
+   Dokumenttyp, Behörde und Datum, auf 120–160 Zeichen gebracht. */
+function updateDescription({ fw, u }: { fw: { n: { de: string }; ref: string }; u: { s: { de: string }; t: { de: string }; src: string; d: string } }): string {
+  const context = `${u.t.de} der ${authority(u.src)} vom ${u.d} zu ${fw.n.de}.`;
+  const lead = u.s.de ? firstParagraph(u.s.de) : `${context} (${fw.ref})`;
+  return description(lead, u.s.de ? context : "");
 }
 
 export default async function UpdatePage(
@@ -99,23 +112,44 @@ export default async function UpdatePage(
   const linkedInHref =
     `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareText)}`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    headline: u.ti.de,
-    datePublished: isoDate(u.d),
-    inLanguage: "de",
-    about: fw.n.de,
-    ...(u.url ? { isBasedOn: u.url } : {}),
-    publisher: { "@type": "Organization", name: "Regulatory Radar" },
-    author: { "@type": "Organization", name: authority(u.src) },
-  };
+  const url = `${SITE_URL}/u/${slug}`;
+  const fwPath = frameworkPath(fw);
+  const jsonLd = ldGraph(
+    {
+      "@type": "NewsArticle",
+      "@id": `${url}#article`,
+      mainEntityOfPage: url,
+      url,
+      headline: clip(u.ti.de, 110),
+      description: updateDescription(page),
+      image: [`${SITE_URL}/og.png`],
+      datePublished: isoDate(u.d),
+      dateModified: isoDate(u.d),
+      inLanguage: "de-DE",
+      about: { "@type": "Thing", name: fw.n.de },
+      ...(u.url ? { isBasedOn: u.url } : {}),
+      publisher: { "@id": organizationLd["@id"] },
+      // Veröffentlichende Stelle; @id über ihre Domain, damit dieselbe Behörde
+      // auf allen Seiten als eine Organisation erkannt wird.
+      author: {
+        "@type": "Organization",
+        "@id": `https://${u.src}/#organization`,
+        name: authority(u.src),
+        url: `https://${u.src}/`,
+      },
+    },
+    organizationLd,
+    breadcrumbLd([
+      [fw.n.de, fwPath],
+      [clip(u.ti.de, 80), `/u/${slug}`],
+    ]),
+  );
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
       />
       <TrackGoal
         goal="update_detail_viewed"

@@ -226,6 +226,7 @@ export function FeedbackWidget() {
                 onChange={(e) => setMessage(e.target.value)}
                 rows={3}
                 maxLength={4000}
+                aria-label="Feedback"
                 placeholder={de ? "Was fehlt, was könnte besser sein?" : "What's missing, what could be better?"}
                 className={`${input} resize-none rounded-2xl px-3.5 py-2.5`}
               />
@@ -238,6 +239,7 @@ export function FeedbackWidget() {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  aria-label={de ? "E-Mail-Adresse" : "Email address"}
                   placeholder={de ? "Deine E-Mail-Adresse" : "Your email address"}
                   className={`${input} rounded-full px-4 py-2.5`}
                 />

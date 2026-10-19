@@ -1,7 +1,7 @@
 // Logos der veröffentlichenden Behörden und Organe. Die Dateien liegen in
 // public/authorities und stammen von Wikimedia Commons bzw. Wikipedia
 // (offizielle Logos, nur zur Kennzeichnung der Quelle verwendet).
-import { authority } from "@/lib/logic";
+import { authority } from "@/lib/core";
 
 /* Quelle (Domain) -> Logodatei */
 export const LOGOS: Record<string, string> = {

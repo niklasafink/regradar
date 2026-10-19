@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { PROVIDERS } from "@/lib/data";
-import { FRAMEWORKS, PROVIDER_SHORT, framePath, tx } from "@/lib/logic";
+import { PROVIDERS } from "@/lib/base";
+import { PROVIDER_SHORT, tx } from "@/lib/core";
+import { framePathLite, useFrameworkIndex } from "@/lib/fwIndex";
 import { FrameworkPicker } from "@/components/frameworkPicker";
 import { useStore } from "@/lib/store";
 import { grantAnalyticsConsent } from "@/components/cookie-consent";
@@ -59,6 +60,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
   const [errorCode, setErrorCode] = useState<ErrorCode>("unknown");
   const [hint, setHint] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  // Rahmenwerkliste erst laden, wenn der Dialog offen ist oder Rahmenwerke gewählt sind.
+  const FRAMEWORKS = useFrameworkIndex(modalOpen || frameworks.length > 0) ?? [];
 
   useEffect(() => {
     const abo = new URLSearchParams(window.location.search).get("abo");
@@ -200,7 +203,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 {frameworks
                   .map((id) => FRAMEWORKS.find((f) => f.id === id))
                   .filter((f) => !!f)
-                  .map((f) => framePath(lang, f!))
+                  .map((f) => framePathLite(lang, f!, FRAMEWORKS))
                   .join(", ")}
               </span>
             </p>
@@ -214,6 +217,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              aria-label={lang === "de" ? "E-Mail-Adresse" : "Email address"}
+              autoComplete="email"
               placeholder={lang === "de" ? "name@unternehmen.de" : "name@company.com"}
               className="min-w-0 flex-1 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm outline-none focus:border-slate-900"
             />

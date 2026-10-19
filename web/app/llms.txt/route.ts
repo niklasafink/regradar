@@ -4,6 +4,7 @@
 
 import { PROVIDERS } from "@/lib/data";
 import { authority, FRAMEWORKS, visibleFrameworks } from "@/lib/logic";
+import { frameworkPath } from "@/lib/seo";
 import { firstParagraph, UPDATE_PAGES } from "@/lib/updates";
 
 const BASE = process.env.APP_URL ?? "http://localhost:3001";
@@ -31,7 +32,7 @@ export function GET() {
     for (const f of visibleFrameworks(p.id, null)) {
       if (seen.has(f.id)) continue;
       seen.add(f.id);
-      lines.push(`- [${f.n.de} (${f.ref})](${BASE}/r/${p.slug}/f/${f.id}): ${f.about.de}`);
+      lines.push(`- [${f.n.de} (${f.ref})](${BASE}${frameworkPath(f)}): ${f.about.de}`);
     }
   }
 

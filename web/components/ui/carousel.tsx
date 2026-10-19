@@ -173,7 +173,8 @@ function CarouselPrevious({ className, ...props }: React.ComponentProps<"button"
       {...props}
     >
       <ArrowLeft className="size-4" />
-      <span className="sr-only">Previous slide</span>
+      {/* Ohne aria-label des Aufrufers die englische Standardbeschriftung. */}
+      {!props["aria-label"] && <span className="sr-only">Previous slide</span>}
     </button>
   );
 }
@@ -190,7 +191,8 @@ function CarouselNext({ className, ...props }: React.ComponentProps<"button">) {
       {...props}
     >
       <ArrowRight className="size-4" />
-      <span className="sr-only">Next slide</span>
+      {/* Ohne aria-label des Aufrufers die englische Standardbeschriftung. */}
+      {!props["aria-label"] && <span className="sr-only">Next slide</span>}
     </button>
   );
 }

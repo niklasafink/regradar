@@ -3,6 +3,7 @@ import { Instrument_Serif, Inter, Manrope } from "next/font/google";
 import { CookieConsent } from "@/components/cookie-consent";
 import { DatafastIdentify } from "@/components/datafast-identify";
 import { FeedbackWidget } from "@/components/feedback-widget";
+import { HOME_DESCRIPTION, HOME_TITLE, pageMeta } from "@/lib/seo";
 import { StoreProvider } from "@/lib/store";
 import "./globals.css";
 
@@ -23,11 +24,14 @@ const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument",
 });
 
+/* Vorgaben für Seiten ohne eigene Metadaten; jede indexierbare Seite setzt
+   Titel, Beschreibung und Canonical selbst über pageMeta (lib/seo.ts). */
+const defaults = pageMeta({ title: HOME_TITLE, description: HOME_DESCRIPTION, path: "/" });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.APP_URL ?? "http://localhost:3001"),
-  title: "Regulatory Radar",
-  description:
-    "Kostenloser Regulatory Monitor für Banken, Asset Manager und andere Finanzunternehmen.",
+  ...defaults,
+  alternates: undefined,
+  openGraph: { ...defaults.openGraph, url: undefined },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
