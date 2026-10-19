@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { FrameworkDetail, type LinkedFramework } from "./detail-client";
-import { ABOUT_LONG, type Framework } from "@/lib/data";
+import { ABOUT_LONG, PROVIDERS, type Framework } from "@/lib/data";
 import {
   dt, frameworkById, parentOf, providerById, providerSlug, topicById, visibleFrameworks,
 } from "@/lib/logic";
@@ -15,6 +15,13 @@ const withHrefs = (x: Framework): LinkedFramework => ({
   ...x,
   u: x.u.map((u) => ({ ...u, href: updateHref(x.id, u) })),
 });
+
+/* Alle Rahmenwerke unter jeder ihrer Zielgruppen beim Build vorab rendern. */
+export function generateStaticParams() {
+  return PROVIDERS.flatMap((p) =>
+    visibleFrameworks(p.id, null).map((f) => ({ provider: p.slug, id: f.id })),
+  );
+}
 
 export default async function Page({ params }: { params: Promise<{ provider: string; id: string }> }) {
   const { provider, id } = await params;

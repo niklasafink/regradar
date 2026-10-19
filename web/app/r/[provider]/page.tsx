@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { Board } from "./board-client";
+import { PROVIDERS } from "@/lib/data";
 import { childrenOf, PROVIDER_SHORT, providerById, topicsWithContent, visibleFrameworks } from "@/lib/logic";
 import {
   breadcrumbLd, frameworkPath, ldGraph, providerDescription, providerTitle, SITE_URL, webPageLd,
@@ -8,6 +9,11 @@ import {
 /* Kacheldaten auf dem Server berechnen; die Client-Ansicht bekommt nur die
    angezeigten Felder. Kinder erscheinen nur als Chips auf der Elternkachel,
    die Kennzahlen zählen sie mit (wie auf der Startseite). */
+/* Alle Zielgruppen beim Build vorab rendern (statt bei jedem Aufruf). */
+export function generateStaticParams() {
+  return PROVIDERS.map((p) => ({ provider: p.slug }));
+}
+
 export default async function Page({ params }: { params: Promise<{ provider: string }> }) {
   const { provider } = await params;
   const p = providerById(provider);

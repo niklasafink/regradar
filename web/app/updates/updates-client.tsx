@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { SearchBox } from "@/components/search";
@@ -29,7 +29,17 @@ const impactPill = (i: Impact) =>
         : "border border-slate-200 text-slate-400"
   }`;
 
-export function AllUpdates({ pages: UPDATE_PAGES }: { pages: UpdateRow[] }) {
+/** Kompakte Übergabe vom Server: Rahmenwerke einmal, Zeilen verweisen per Index. */
+export interface UpdatesData {
+  fws: UpdateRow["fw"][];
+  rows: (Omit<UpdateRow, "fw"> & { f: number })[];
+}
+
+export function AllUpdates({ fws, rows }: UpdatesData) {
+  const UPDATE_PAGES: UpdateRow[] = useMemo(
+    () => rows.map(({ f, ...r }) => ({ ...r, fw: fws[f] })),
+    [fws, rows],
+  );
   const { lang } = useStore();
   const [sel, setSel] = useState<string | null>(null);
 

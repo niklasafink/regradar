@@ -20,15 +20,16 @@ const PROVIDER_SLUGS: Record<string, string> = {
 
 // Sicherheits-Header für alle Antworten. Die CSP erlaubt Inline-Skripte (Next.js,
 // JSON-LD, DataFast-Queue) und die beiden Analyse-Dienste: DataFast immer,
-// Google Analytics erst nach Einwilligung (components/cookie-consent.tsx).
+// Google Analytics erst nach Einwilligung (components/cookie-consent.tsx);
+// vercel.live für die Vercel-Toolbar.
 const CSP = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === "production" ? "" : " 'unsafe-eval'"} https://datafa.st https://www.googletagmanager.com`,
+  `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === "production" ? "" : " 'unsafe-eval'"} https://datafa.st https://www.googletagmanager.com https://vercel.live`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  "connect-src 'self' https://datafa.st https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.doubleclick.net https://www.google.com",
-  "frame-src 'none'",
+  "connect-src 'self' https://datafa.st https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.doubleclick.net https://www.google.com https://vercel.live wss://ws-us3.pusher.com",
+  "frame-src https://vercel.live",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
