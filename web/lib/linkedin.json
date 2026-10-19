@@ -276,6 +276,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-10-20": {
+   "window": [
+    "2026-10-19"
+   ],
+   "keys": [
+    "millionenkreditmeldewesen-bafin-konsultiert-mantelverordnung"
+   ],
+   "hook": "Die BaFin vereinfacht das Meldewesen: Millionenkreditmeldungen entfallen zugunsten von AnaCredit.",
+   "folge": "Die bisherige GroMiKV wird durch eine neue GroKV ersetzt. Kreditinstitute müssen künftig keine Millionenkreditmeldungen mehr einreichen, da die EZB-Datenbank AnaCredit diese Daten liefert.",
+   "cover": "BaFin: Millionenkreditmeldewesen entfällt",
+   "zeilen": [],
+   "frage": "Welche internen Prozesse müssen Sie anpassen, wenn das Millionenkreditmeldewesen entfällt?",
+   "top": "millionenkreditmeldewesen-bafin-konsultiert-mantelverordnung",
+   "kern": {
+    "millionenkreditmeldewesen-bafin-konsultiert-mantelverordnung": "Die BaFin konsultiert bis zum 02.11.2026 eine Mantelverordnung, die das Millionenkreditmeldewesen abschafft und die GroMiKV durch eine neue GroKV ersetzt."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
