@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T08:09:18Z",
+  "generated_at": "2026-10-20T03:06:52Z",
   "updates": {
     "idd": [
       {
@@ -264,20 +264,20 @@
       {
         "d": "19.10.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Konsultation",
+          "en": "Consultation"
         },
         "src": "bafin.de",
         "ti": {
-          "de": "BaFin konsultiert Mantelverordnung zur Abschaffung des Millionenkreditmeldewesens",
-          "en": "BaFin consults on umbrella regulation for abolition of million loan reporting"
+          "de": "Anpassung von Verordnungen nach Wegfall des Millionenkreditmeldewesens (Konsultation 10/2026)",
+          "en": "Adjustment of Regulations Following Discontinuation of Million Loan Reporting (Consultation 10/2026)"
         },
-        "sl": "millionenkreditmeldewesen-bafin-konsultiert-mantelverordnung",
+        "sl": "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher",
         "s": {
-          "de": "Die BaFin konsultiert den Entwurf einer Mantelverordnung, die die bisherige Großkredit- und Millionenkreditverordnung (GroMiKV) durch eine neue Großkreditverordnung (GroKV) ersetzt. Dies geschieht im Zuge der Abschaffung des Millionenkreditmeldewesens, um den Meldeaufwand für Kreditinstitute zu reduzieren.\n\nDie neue Verordnung bereinigt auch andere BaFin-Verordnungen, die Verweise auf die Millionenkreditmeldepflichten im Kreditwesengesetz (KWG) enthielten. Ziel ist es, doppelte Meldepflichten zu vermeiden, da künftig die europäische AnaCredit-Datenbank der EZB für Kreditdaten genutzt wird.\n\nStellungnahmen zum Entwurf der Mantelverordnung können bis zum 02. November 2026 bei der BaFin eingereicht werden.",
-          "en": "BaFin is consulting on a draft umbrella regulation that replaces the previous Large Exposure and Million Loan Regulation (GroMiKV) with a new Large Exposure Regulation (GroKV). This follows the abolition of the million loan reporting system, aiming to reduce reporting burdens for credit institutions.\n\nThe new regulation also cleans up other BaFin ordinances that contained references to the million loan reporting requirements in the German Banking Act (KWG). The objective is to avoid duplicate reporting obligations, as the European AnaCredit database of the ECB will be used for credit data in the future.\n\nComments on the draft umbrella regulation can be submitted to BaFin until November 02, 2026."
+          "de": "Dieser Konsultationsentwurf der BaFin passt verschiedene Verordnungen an, nachdem das Millionenkreditmeldewesen nach § 14 KWG zum 30. Dezember 2026 entfällt. Die Großkredit- und Millionenkreditverordnung (GroMiKV) wird aufgehoben und durch eine neue Großkreditverordnung (GroKV) ersetzt. Zudem werden weitere Verordnungen, die auf das Millionenkreditmeldewesen Bezug nehmen, geändert oder aufgehoben.\n\nDie Änderungen betreffen insbesondere Institute, die bisher Millionenkreditmeldungen abgeben mussten. Die neue GroKV regelt Ausnahmen von der Obergrenze für Großkredite nach Art. 395 Abs. 1 CRR, Beschlussfassungspflichten der Geschäftsleiter bei Großkrediten und Meldungen zu Großkrediten. Dies soll den Wegfall der bisherigen Meldepflichten und die damit verbundenen Anpassungen im Aufsichtsrecht umsetzen.\n\nDie Konsultation läuft bis zum 19.10.2026. Die Änderungen treten mit Wirkung zum 30. Dezember 2026 in Kraft, dem Zeitpunkt der Streichung der Millionenkreditmeldepflichten im KWG.",
+          "en": "This BaFin consultation draft adapts various regulations following the discontinuation of the large exposure reporting requirement under Section 14 KWG as of December 30, 2026. The Large Exposure and Million Loan Regulation (GroMiKV) will be repealed and replaced by a new Large Exposure Regulation (GroKV). In addition, other regulations referring to the large exposure reporting system will be amended or repealed.\n\nThe changes primarily affect institutions that previously had to submit large exposure reports. The new GroKV regulates exemptions from the large exposure limit according to Art. 395 (1) CRR, decision-making obligations of managing directors for large exposures, and reporting requirements for large exposures. This is intended to implement the discontinuation of the previous reporting obligations and the associated adjustments in supervisory law.\n\nThe consultation runs until October 19, 2026. The changes will come into effect on December 30, 2026, the date on which the large exposure reporting obligations in the KWG are removed."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_10_19_konsultation_10_2026_gro%C3%9Fkredite_mantelverordnung.html",
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_10_2026_entwurf_verordnung_anpassung_vorschriften_ba.html",
         "imp": "medium"
       },
       {
@@ -354,25 +354,6 @@
           "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
-      },
-      {
-        "d": "24.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
-          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
-        },
-        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
-        "s": {
-          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
-          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
         "imp": "medium"
       }
     ],
