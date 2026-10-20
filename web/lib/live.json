@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T09:06:51Z",
+  "generated_at": "2026-10-20T16:08:42Z",
   "updates": {
     "idd": [
       {
@@ -257,6 +257,103 @@
           "en": "EIOPA has launched two consultations on draft technical standards under the Insurance Recovery and Resolution Directive (IRRD). These drafts concern the valuation of (re)insurance undertakings and groups for resolution purposes.\n\nThe IRRD, set to become operational in January 2027, introduces a tailored framework for the recovery and resolution of (re)insurers in Europe. Its aim is to maintain the stability of the European insurance sector while enabling the orderly winding-down of failing undertakings. The consultations focus on the methodology for valuing assets and liabilities in the context of resolution and on calculating a buffer for additional losses.\n\nStakeholders are invited to submit feedback on the consultation papers by 20 October 2026. These are EIOPA's final two consultations on the 19 policy instruments supporting the implementation of the IRRD."
         },
         "url": "https://www.eiopa.europa.eu/eiopa-launches-consultation-irrd-draft-technical-standards-covering-valuation-reinsurers-context-2026-07-08_en",
+        "imp": "medium"
+      }
+    ],
+    "emir": [
+      {
+        "d": "20.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA präzisiert Anforderungen für Post-Trade Risk Reduction (PTRR)-Dienste zur Befreiung von der Clearingpflicht (EMIR 3)",
+          "en": "ESMA specifies requirements for Post-Trade Risk Reduction (PTRR) services for clearing obligation exemption (EMIR 3)"
+        },
+        "sl": "esma-specifies-requirements-to-facilitate-safe-use-of-post-trade-risk-reduction",
+        "s": {
+          "de": "Die ESMA hat Bedingungen für Anbieter und Nutzer von Post-Trade Risk Reduction (PTRR)-Diensten festgelegt, unter denen bestimmte OTC-Derivategeschäfte von der Clearingpflicht gemäß EMIR 3 ausgenommen werden können. Die neuen Regeln, veröffentlicht in einem aktuellen Abschlussbericht, schaffen auch Schutzmaßnahmen für die Bereitstellung dieser Dienste und die Überwachung der Nutzung der Ausnahme.\n\nZiel ist es, die Nutzung von PTRR-Diensten zu erleichtern und sicherzustellen, dass die Ausnahme unter den in EMIR 3 festgelegten Bedingungen genutzt wird und nicht zu einem Missbrauch der Clearingpflicht führt. Der Bericht präzisiert die Anforderungen an PTRR-Dienste, einschließlich der zu liefernden Informationen, der Durchführung von Übungen, der Kontrollen der Anbieter, der Aufzeichnungen und der Überwachung der Ausnahme. PTRR-Dienste unterstützen Marktteilnehmer bei der Verwaltung ihrer Derivateportfolios und der Risikoreduzierung.\n\nDie Entwürfe der technischen Regulierungsstandards (RTS) werden nun der Europäischen Kommission zur Billigung vorgelegt.",
+          "en": "ESMA has specified the conditions that providers and users of Post-Trade Risk Reduction (PTRR) services must meet for certain OTC derivative transactions to be exempt from the clearing obligation under EMIR 3. The new rules, published in a recent final report, also establish safeguards for the provision of these services and the monitoring of the use of the exemption.\n\nThe goal is to facilitate the use of PTRR services and ensure that the exemption is used under the conditions laid down in EMIR 3 and does not lead to misuse of the clearing obligation. The report specifies the elements and requirements of PTRR services, including the information to be provided, how exercises are carried out, the controls providers should have in place, record-keeping, and how the exemption will be monitored. PTRR services help market participants manage their derivatives portfolios and reduce risks.\n\nThe draft Regulatory Technical Standards (RTS) will now be submitted to the European Commission for endorsement."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-specifies-requirements-facilitate-safe-use-post-trade-risk-reduction",
+        "imp": "high"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA aktualisiert Transparenzhandbuch für OTC-Derivate und Tick-Größen-Regime",
+          "en": "ESMA updates transparency manual for OTC derivatives and tick-size regime"
+        },
+        "sl": "esma-updates-its-manual-on-transparency-with-new-guidance-for-otc-derivatives-an",
+        "s": {
+          "de": "Die ESMA hat ihr Transparenzhandbuch aktualisiert, um die Identifizierung von OTC-Derivaten, die Transparenzanforderungen unterliegen, zu präzisieren. Zudem wird die aufsichtsrechtliche Konvergenz bei der Anwendung des Tick-Größen-Regimes verbessert.\n\nDie Aktualisierung klärt, wie identifizierende Referenzdaten für OTC-Derivate zu Transparenzzwecken bereitzustellen sind, was zu einer größeren Konsistenz der Daten im Consolidated Tape beitragen soll. Das Handbuch enthält auch veröffentlichte Q&As zum Tick-Größen-Regime und Empfehlungen, wann Handelsplätze und nationale Behörden eingreifen können.\n\nDie Leitlinien zu den identifizierenden Referenzdaten für OTC-Derivate sind als Entwurf zu betrachten, bis die zugehörigen technischen Standards (RTS 2 und RTS zu CTP-Input-/Output-Daten) in Kraft treten.",
+          "en": "ESMA has updated its transparency manual to provide further guidance on the identification of OTC derivatives subject to transparency requirements and to enhance supervisory convergence on the application of the tick-size regime.\n\nThe update clarifies how identifying reference data for OTC derivatives should be provided for transparency purposes, supporting greater consistency in data reported to and published through the consolidated tape. The manual also includes published Q&As on the tick-size regime and recommendations on when trading venues and national competent authorities may intervene.\n\nRegarding the guidance on OTC identifying reference data, the updated manual should be considered a draft until the entry into force of the related technical standards (RTS 2 and RTS on CTP input/output data)."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-updates-its-manual-transparency-new-guidance-otc-derivatives-and-tick",
+        "imp": "medium"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
         "imp": "medium"
       }
     ],
@@ -752,84 +849,6 @@
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-10/cp260147de.pdf",
         "imp": "high",
         "refnum": "C-70/25"
-      }
-    ],
-    "emir": [
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA aktualisiert Transparenzhandbuch für OTC-Derivate und Tick-Größen-Regime",
-          "en": "ESMA updates transparency manual for OTC derivatives and tick-size regime"
-        },
-        "sl": "esma-updates-its-manual-on-transparency-with-new-guidance-for-otc-derivatives-an",
-        "s": {
-          "de": "Die ESMA hat ihr Transparenzhandbuch aktualisiert, um die Identifizierung von OTC-Derivaten, die Transparenzanforderungen unterliegen, zu präzisieren. Zudem wird die aufsichtsrechtliche Konvergenz bei der Anwendung des Tick-Größen-Regimes verbessert.\n\nDie Aktualisierung klärt, wie identifizierende Referenzdaten für OTC-Derivate zu Transparenzzwecken bereitzustellen sind, was zu einer größeren Konsistenz der Daten im Consolidated Tape beitragen soll. Das Handbuch enthält auch veröffentlichte Q&As zum Tick-Größen-Regime und Empfehlungen, wann Handelsplätze und nationale Behörden eingreifen können.\n\nDie Leitlinien zu den identifizierenden Referenzdaten für OTC-Derivate sind als Entwurf zu betrachten, bis die zugehörigen technischen Standards (RTS 2 und RTS zu CTP-Input-/Output-Daten) in Kraft treten.",
-          "en": "ESMA has updated its transparency manual to provide further guidance on the identification of OTC derivatives subject to transparency requirements and to enhance supervisory convergence on the application of the tick-size regime.\n\nThe update clarifies how identifying reference data for OTC derivatives should be provided for transparency purposes, supporting greater consistency in data reported to and published through the consolidated tape. The manual also includes published Q&As on the tick-size regime and recommendations on when trading venues and national competent authorities may intervene.\n\nRegarding the guidance on OTC identifying reference data, the updated manual should be considered a draft until the entry into force of the related technical standards (RTS 2 and RTS on CTP input/output data)."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-updates-its-manual-transparency-new-guidance-otc-derivatives-and-tick",
-        "imp": "medium"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
       }
     ],
     "sanctions": [
