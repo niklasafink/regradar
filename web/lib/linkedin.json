@@ -1,25 +1,5 @@
 {
  "posts": {
-  "2026-10-06": {
-   "window": [
-    "2026-10-05"
-   ],
-   "keys": [
-    "communication-on-the-cssf-feedback-report-circular-cssf-24-856"
-   ],
-   "hook": "Die CSSF teilt ihre Erfahrungen mit der neuen Meldepflicht zu NAV-Fehlern und Anlagerichtlinienverstößen.",
-   "folge": "Der Feedback Report zur Circular CSSF 24/856 zeigt, worauf Institute bei Meldungen zu Anlegerschutzthemen achten müssen. Prüfen Sie die Beobachtungen der CSSF für Ihre Prozesse.",
-   "cover": "CSSF: Feedback zu Meldungen nach Circular 24/856",
-   "zeilen": [],
-   "frage": "Welche Herausforderungen sehen Sie bei der Meldung von NAV-Berechnungsfehlern oder Anlagerichtlinienverstößen?",
-   "top": "communication-on-the-cssf-feedback-report-circular-cssf-24-856",
-   "kern": {
-    "communication-on-the-cssf-feedback-report-circular-cssf-24-856": "Die CSSF veröffentlicht einen Feedback Report zur Circular CSSF 24/856, der Beobachtungen und Statistiken zu Meldungen über Anlegerschutzthemen seit dem 01.01.2025 enthält."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-07": {
    "window": [
     "2026-10-06"
@@ -302,16 +282,16 @@
     "2026-10-20"
    ],
    "keys": [
-    "esma-specifies-requirements-to-facilitate-safe-use-of-post-trade-risk-reduction"
+    "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk"
    ],
-   "hook": "Die ESMA erleichtert das Risikomanagement für OTC-Derivate und präzisiert Ausnahmen von der Clearingpflicht.",
-   "folge": "Die ESMA hat Bedingungen für Post-Trade Risk Reduction (PTRR)-Dienste festgelegt, unter denen OTC-Derivate von der Clearingpflicht nach EMIR 3 ausgenommen werden können. Dies soll die Nutzung von PTRR-Diensten fördern und Missbrauch verhindern.",
-   "cover": "ESMA: PTRR-Dienste erleichtern Risikoreduzierung",
+   "hook": "Die ESMA präzisiert, wann Derivategeschäfte von der Clearingpflicht befreit sind, wenn sie Risiken reduzieren.",
+   "folge": "Finanzunternehmen, die OTC-Derivate handeln, erhalten klare Regeln für Post-Trade Risk Reduction (PTRR) Services. Dies klärt die Bedingungen für die Nutzung von PTRR-Diensten zur Risikoreduzierung und zur potenziellen Befreiung von der Clearingpflicht.",
+   "cover": "ESMA: Finale RTS zu Post-Trade Risk Reduction Services",
    "zeilen": [],
-   "frage": "Nutzen Sie bereits PTRR-Dienste und welche Vorteile erhoffen Sie sich von den neuen Regeln?",
-   "top": "esma-specifies-requirements-to-facilitate-safe-use-of-post-trade-risk-reduction",
+   "frage": "Nutzen Sie bereits PTRR-Dienste und welche Herausforderungen sehen Sie bei der Umsetzung der neuen RTS?",
+   "top": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
    "kern": {
-    "esma-specifies-requirements-to-facilitate-safe-use-of-post-trade-risk-reduction": "Die ESMA präzisiert die Anforderungen für Post-Trade Risk Reduction (PTRR)-Dienste, um die Ausnahme von der Clearingpflicht für OTC-Derivate gemäß EMIR 3 zu regeln."
+    "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk": "Die ESMA hat finale RTS veröffentlicht, die die Anforderungen für die Befreiung von Derivategeschäften von der Clearingpflicht unter EMIR bei Nutzung von PTRR-Diensten festlegen."
    },
    "doppelt": [],
    "fmt": 5,
