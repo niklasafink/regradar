@@ -1,25 +1,5 @@
 {
  "posts": {
-  "2026-10-07": {
-   "window": [
-    "2026-10-06"
-   ],
-   "keys": [
-    "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin"
-   ],
-   "hook": "Die BaFin präzisiert die Einstufung von Nebendienstleistern, weicht aber in einem Punkt von der EBA ab.",
-   "folge": "Institute müssen prüfen, ob ihre Dienstleister unter die engere Definition der BaFin fallen, um die korrekte Einstufung gemäß CRR sicherzustellen.",
-   "cover": "BaFin: Engere Auslegung für Nebendienstleister",
-   "zeilen": [],
-   "frage": "Welche Kriterien nutzen Sie aktuell, um Dienstleister als AvN gemäß CRR einzustufen?",
-   "top": "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin",
-   "kern": {
-    "anbieter-von-nebendienstleistungen-bafin-uebernimmt-eba-leitlinien-zur-crr-defin": "Die BaFin übernimmt EBA-Leitlinien zur Definition von Anbietern von Nebendienstleistungen (AvN) mit einem Auslegungsvorbehalt zur „Abhängigkeit von Finanzmitteln“."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-08": {
    "window": [
     "2026-10-07"
@@ -292,6 +272,36 @@
    "top": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
    "kern": {
     "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk": "Die ESMA hat finale RTS veröffentlicht, die die Anforderungen für die Befreiung von Derivategeschäften von der Clearingpflicht unter EMIR bei Nutzung von PTRR-Diensten festlegen."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
+  },
+  "2026-10-22": {
+   "window": [
+    "2026-10-21"
+   ],
+   "keys": [
+    "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+    "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u",
+    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
+    "reporting-instructions-midas-system"
+   ],
+   "hook": "MiCA-Marktmissbrauch: Die ESMA veröffentlicht eine Compliance-Tabelle zur Umsetzung in den EU-Ländern.",
+   "folge": "Die Tabelle zeigt, welche nationalen Behörden die ESMA-Leitlinien zu Marktmisbrauch unter MiCA einhalten. Institute müssen prüfen, wie ihre Aufsichtsbehörde die Vorgaben umsetzt und welche Fristen für die Einhaltung gelten.",
+   "cover": "ESMA: MiCA-Marktmissbrauch-Leitlinien in der EU",
+   "zeilen": [
+    "ESMA: Reporting-Anweisungen für Krypto-Assets im MIDAS-System veröffentlicht",
+    "ESMA: EU T+1 Koordinierungsausschuss prüft Banken auf T+1-Bereitschaft im Q4 2026",
+    "ESMA: Ablehnung von Registrierungen kleiner ESG-Ratinganbieter an Vorsitzenden delegiert"
+   ],
+   "frage": "Wie stellen Sie sicher, dass Ihre internen Prozesse die MiCA-Vorgaben Ihrer nationalen Behörde erfüllen?",
+   "top": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+   "kern": {
+    "compliance-table-on-the-guidelines-on-market-abuse-under-mica": "Die ESMA hat eine Compliance-Tabelle veröffentlicht, die zeigt, welche nationalen Behörden die Leitlinien für Marktmisbrauch unter MiCA einhalten oder dies bis zu einer bestimmten Frist beabsichtigen.",
+    "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u": "Die ESMA delegiert die Befugnis zur Ablehnung von Registrierungsanträgen kleiner ESG-Ratinganbieter an ihren Vorsitzenden, um den Prozess effizienter zu gestalten.",
+    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026": "Der EU T+1 Koordinierungsausschuss berichtet über Fortschritte bei der T+1-Migration und plant eine erneute Prüfung der Bankenbereitschaft im vierten Quartal 2026.",
+    "reporting-instructions-midas-system": "Die ESMA hat Anweisungen für das Reporting von Krypto-Assets und Orderbüchern über das MIDAS-System veröffentlicht, inklusive technischer Spezifikationen und Validierungsregeln."
    },
    "doppelt": [],
    "fmt": 5,

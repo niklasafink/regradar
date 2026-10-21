@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T22:13:34Z",
+  "generated_at": "2026-10-21T22:15:36Z",
   "updates": {
     "idd": [
       {
@@ -140,6 +140,388 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
         "imp": "medium",
         "refnum": "Ares(2026)6942470"
+      }
+    ],
+    "mica": [
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
+          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
+          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1625"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR (ESMA)",
+          "en": "New Q&As on Crypto-Asset Service Providers, Crowdfunding and EMIR (ESMA)"
+        },
+        "sl": "new-q-as-available",
+        "s": {
+          "de": "Die ESMA hat neue Q&As zu verschiedenen Themen veröffentlicht. Für Krypto-Dienstleister (CASPs) wird die Nutzung von Zahlungskonten bei Nicht-Bank-Zahlungsdienstleistern zur Verwahrung von Kundengeldern behandelt. Für europäische Crowdfunding-Dienstleister wird die Frage geklärt, ob Plattformen, die Registrierungs-, Mitglieds- oder andere Zugangsgebühren erheben (\"Investment Club\"-Plattformen), unter die Regulierung fallen.\n\nIm Bereich OTC-Derivate, zentrale Gegenparteien (CCPs) und Transaktionsregister (EMIR) werden spezifische Fragen zur AAR-Befreiung (85%), zur Berechnung der AAR-Schwellenwerte und zur AAR-Repräsentativitätspflicht beantwortet. Diese Klarstellungen sind für die betroffenen Finanzinstitute relevant, um ihre Compliance-Pflichten korrekt zu erfüllen und die Anwendung der jeweiligen Vorschriften besser zu verstehen.\n\nDie Q&As dienen der Vereinheitlichung der Aufsichtspraxis und der Klärung von Auslegungsfragen. Sie sind ab dem Veröffentlichungsdatum, dem 16.10.2026, verfügbar und sollten von den relevanten Marktteilnehmern beachtet werden.",
+          "en": "ESMA has published new Q&As on various topics. For Crypto-Asset Service Providers (CASPs), the use of payment accounts provided by non-bank payment service providers for holding clients’ funds is addressed. For European crowdfunding service providers, the question of whether platforms charging registration, membership, or other access fees (\"investment club\" platforms) fall under the regulation is clarified.\n\nIn the area of OTC derivatives, central counterparties (CCPs), and trade repositories (EMIR), specific questions regarding the AAR 85% exemption, AAR thresholds calculation, and the AAR representativeness obligation are answered. These clarifications are relevant for the affected financial institutions to correctly fulfill their compliance obligations and better understand the application of the respective regulations.\n\nThe Q&As aim to standardize supervisory practices and clarify interpretative issues. They are available from the publication date, 16 October 2026, and should be considered by relevant market participants."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
+        "imp": "low"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
+          "en": "Supervisory expectations on services related to unauthorised stablecoins"
+        },
+        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
+          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
+        "imp": "high"
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
+          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
+        },
+        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
+          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0: Neue Impulse von ESMA, ESRB, AMLA und SRB",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
+            "d": "14.10.2026"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
+          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
+        },
+        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
+        "s": {
+          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
+          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1721",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      }
+    ],
+    "esgrating": [
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA delegiert Ablehnung von Registrierungen kleiner ESG-Ratinganbieter an Vorsitzenden",
+          "en": "ESMA Delegates Refusal of Registration for Small ESG Rating Providers to Chair"
+        },
+        "sl": "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u",
+        "s": {
+          "de": "Die ESMA hat beschlossen, die Befugnis zur Ablehnung von Registrierungsanträgen kleiner ESG-Ratinganbieter im Rahmen der Übergangsregelung an ihren Vorsitzenden zu delegieren. Diese Entscheidung betrifft Anbieter, die gemäß Artikel 5 der ESGR-Verordnung (EU) 2024/3005 unter einem temporären Regime agieren dürfen, sofern sie ihre Absicht der ESMA mitteilen und von dieser registriert werden.\n\nDie Delegation soll den Registrierungsprozess effizienter gestalten und unnötige Verzögerungen vermeiden, da die Prüfung der Anträge auf vordefinierten Kriterien basiert und keine komplexen technischen oder rechtlichen Elemente beinhaltet, die eine Beteiligung des Aufsichtsrats erfordern würden. Der Vorsitzende muss den Aufsichtsrat regelmäßig über die Ergebnisse der delegierten Aufgaben informieren.\n\nDie Entscheidung trat am Tag nach ihrer Annahme in Kraft. Die Delegation ist unbefristet, kann aber vom Aufsichtsrat jederzeit geändert oder widerrufen werden.",
+          "en": "ESMA has decided to delegate to its Chair the power to adopt refusal decisions concerning the registration of small ESG rating providers under the temporary regime. This decision affects providers that are allowed to operate under a temporary regime, as per Article 5 of the ESGR Regulation (EU) 2024/3005, provided they notify ESMA of their intention and are registered by the authority.\n\nThe delegation aims to streamline the registration process and avoid unnecessary delays, as the assessment of applications is based on predefined criteria and does not involve complex technical or legal elements requiring the Board of Supervisors' involvement. The Chair must periodically inform the Board of Supervisors about the outcome of the delegated tasks.\n\nThe decision entered into force on the day following its adoption. The delegation is for an indeterminate period but can be amended or revoked by the Board of Supervisors at any time."
+        },
+        "url": "https://www.esma.europa.eu/document/decision-delegating-esma-chair-refusal-registration-decisions-under-temporary-regime-small",
+        "imp": "low",
+        "refnum": "ESMA80-519981123-3461"
+      }
+    ],
+    "csdr": [
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Zusammenfassung der Ergebnisse des EU T+1 Koordinierungsausschusses (September 2026)",
+          "en": "Summary of Conclusions of the EU T+1 Coordination Committee (September 2026)"
+        },
+        "sl": "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
+        "s": {
+          "de": "Das EU T+1 Coordination Committee hat die Ergebnisse seiner Sitzung vom September 2026 veröffentlicht. Die Europäische Kommission erwartet die baldige Veröffentlichung der geänderten RTS zur Abwicklungsdisziplin und plant, das politische Bewusstsein für die T+1-Umstellung zu schärfen. Die ESMA arbeitet mit nationalen Behörden an einem konvergenten Ansatz zur Überwachung der Einhaltung der neuen RTS-Anforderungen.\n\nDie EZB berichtete über Fortschritte bei der T+1-Migration in den Märkten und die Anpassungen von T2S. Die für T+1 erforderlichen Änderungen in T2S sind im Zeitplan. Die Verschiebung des Swift 2026 Standards Release auf den 12. Juni 2027 schützt die geplanten T+1-Testfenster. Die EZB (Bankenaufsicht) plant, im vierten Quartal 2026 erneut die T+1-Bereitschaft ausgewählter Banken zu prüfen, wobei die Kommunikation der Banken mit ihren Kunden als entscheidend hervorgehoben wird.\n\nDer Vorsitzende des EU T+1 Industry Committee (EUIC) betonte, dass die notwendige Marktanleitung bereitgestellt wurde und Tests lokal organisiert werden müssen. Eine Task Force für die Übergangsperiode (TPTF) wird eingerichtet, um praktische Fragen wie IPOs und größere Kapitalmaßnahmen zu behandeln. Das EUIC erwägt die Nutzung und Veröffentlichung von Daten zum tatsächlichen Verhalten der Marktteilnehmer zur Überwachung der Branchenbereitschaft und empfiehlt den nationalen Behörden, Daten auf nationaler Ebene zu sammeln, insbesondere zu Allokationen und Bestätigungen.",
+          "en": "The EU T+1 Coordination Committee has published the conclusions of its September 2026 meeting. The European Commission expects the amended RTS on Settlement Discipline to be published shortly and plans to raise political awareness for the T+1 transition. ESMA is working with national authorities on a convergent approach to supervising firms' compliance with the new RTS requirements.\n\nThe ECB reported on progress in T+1 migration in the markets and T2S adjustments. The T2S changes required for T+1 are on track. The deferral of the Swift 2026 Standards Release to June 12, 2027, protects the agreed T+1 testing windows. The ECB (Banking Supervision) plans to re-engage with a sample of banks in Q4 2026 regarding their T+1 readiness, emphasizing that banks' outreach to their clients will be key.\n\nThe Chair of the EU T+1 Industry Committee (EUIC) stated that the necessary market guidance has been delivered and testing must be organized locally. A Transition Period Task Force (TPTF) is being established to address practical issues such as IPOs and major corporate actions. The EUIC is considering using and publishing data on the actual behavior of market participants to monitor industry readiness and recommends that NCAs collect data at national level, particularly on allocations and confirmations."
+        },
+        "url": "https://www.esma.europa.eu/document/eu-t1-coordination-committee-summary-conclusions-september-2026",
+        "imp": "medium"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
+          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
+        },
+        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
+          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
+        "imp": "high"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Überarbeitete CSDR-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen",
+          "en": "Revised CSDR Guidelines on Standardised Procedures and Messaging Protocols"
+        },
+        "sl": "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
+        "s": {
+          "de": "Dieser Abschlussbericht der ESMA enthält überarbeitete Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen, die zwischen Wertpapierfirmen und ihren professionellen Kunden verwendet werden. Die Überarbeitung betrifft die Dokumentation von Vereinbarungen, die Einigung auf Kommunikationsverfahren und Nachrichtenprotokolle sowie die Abschaffung der mündlichen Kommunikation bei der Übermittlung von Allokationen und Bestätigungen.\n\nDie Leitlinien sind für Wertpapierfirmen relevant, die mit professionellen Kunden zusammenarbeiten. Sie sollen die Effizienz und Sicherheit der Wertpapierabwicklung verbessern, indem sie die Nutzung internationaler offener Kommunikationsverfahren und Standards vorschreiben und die Möglichkeit der Nutzung nicht-elektronischer Mittel auf Ausnahmefälle beschränken. Dies hat praktische Auswirkungen auf die internen Prozesse und die IT-Infrastruktur der betroffenen Unternehmen.\n\nDer Bericht enthält auch eine Kosten-Nutzen-Analyse und fasst das Feedback aus der Konsultation zusammen. Die genauen Anwendungsdaten und nächsten Schritte ergeben sich aus den finalen Leitlinien, die diesem Bericht beigefügt sind.",
+          "en": "This ESMA final report contains revised guidelines on standardised procedures and messaging protocols used between investment firms and their professional clients. The revision addresses the documentation of arrangements, agreement on communication procedures and messaging protocols, and the elimination of oral communication for submitting allocations and confirmations.\n\nThese guidelines are relevant for investment firms dealing with professional clients. They aim to enhance the efficiency and security of securities settlement by mandating the use of international open communication procedures and standards and limiting the use of non-electronic means to exceptional cases. This has practical implications for the internal processes and IT infrastructure of the affected firms.\n\nThe report also includes a cost-benefit analysis and summarises feedback from the consultation. The exact application dates and next steps will be determined by the final guidelines attached to this report."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-revised-csdr-guidelines-standardised-procedures-and-messaging-protocols-used",
+        "imp": "medium",
+        "refnum": "ESMA74-2119945926-3749"
+      },
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
+          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
+        },
+        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
+        "s": {
+          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
+          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+        "imp": "medium"
+      },
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 2027 hinaus geklärt",
+          "en": "Access for EU market participants to third-country CSDs clarified beyond 2027"
+        },
+        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
+        "s": {
+          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollten. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung der aktuellen Übergangsregelung abgeschlossen hat. Die derzeitige Regelung, die es bestimmten Drittland-CSDs erlaubt, Notar- und zentrale Kontoführungsdienste für Finanzinstrumente nach dem Recht eines EU-Mitgliedstaates zu erbringen, läuft am 17. Januar 2027 aus.\n\nDie ESMA reagiert damit auf Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten. Das derzeit verhandelte „Market Integration and Supervision Package“ (MISP) schlägt eine Verlängerung dieser Übergangsregelung vor, die sowohl vom Rat der Europäischen Union als auch vom Europäischen Parlament unterstützt wird. Die Klarstellung soll das reibungslose Funktionieren der EU-Kapitalmärkte unterstützen.\n\nDie Aussage der ESMA schafft frühzeitig vor der Frist am 17. Januar 2027 Klarheit und soll operative Herausforderungen vermeiden, die durch die Unsicherheit entstehen könnten. Eine legislative Verlängerung der Übergangsregelung wird erwartet.",
+          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This applies until the EU finalises legislation to extend the current transitional regime. The current regime, which allows certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under the law of an EU Member State, is set to expire on 17 January 2027.\n\nESMA is responding to concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. The Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime, a proposal supported by both the Council of the European Union and the European Parliament. The clarification aims to support the orderly functioning of EU capital markets.\n\nESMA's statement provides clarity well in advance of the 17 January 2027 deadline and seeks to avoid operational challenges that could arise from the uncertainty. A legislative extension of the transitional regime is anticipated."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
+      }
+    ],
+    "mar": [
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
+          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
+        },
+        "sl": "reporting-instructions-midas-system",
+        "s": {
+          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
+          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
+        "imp": "high",
+        "refnum": "ESMA65-955014868-17690"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zu den MAR-Leitlinien zur Offenlegungsverzögerung von Insiderinformationen (ESMA74-268544963-1718)",
+          "en": "Final Report on MAR Guidelines on Delay in the Disclosure of Inside Information (ESMA74-268544963-1718)"
+        },
+        "sl": "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
+        "s": {
+          "de": "Dieser Abschlussbericht der ESMA befasst sich mit den Leitlinien zur Offenlegungsverzögerung von Insiderinformationen gemäß der Marktmissbrauchsverordnung (MAR). Er berücksichtigt die Änderungen durch den Listing Act, der darauf abzielt, den Zugang zu öffentlichen Kapitalmärkten für EU-Unternehmen, insbesondere KMU, zu erleichtern und den Verwaltungsaufwand zu reduzieren.\n\nDie überarbeiteten Leitlinien präzisieren die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen. Dies betrifft insbesondere Situationen, die sich aus langwierigen Prozessen ergeben, Anordnungen von Behörden zur Vertraulichkeit, die Notwendigkeit, weitere Informationen zu sammeln, oder das Risiko, eine Geschäftsmöglichkeit zu verlieren. Ziel ist es, die Rechtssicherheit für Emittenten zu erhöhen und gleichzeitig den Schutz der Anleger zu gewährleisten.\n\nDer Bericht enthält Vorschläge für Änderungen an den bestehenden Leitlinien, eine Kosten-Nutzen-Analyse und berücksichtigt Rückmeldungen von Interessengruppen. Die Anpassungen sollen sicherstellen, dass die MAR-Vorschriften im Einklang mit den Zielen des Listing Act stehen und die Attraktivität der EU-Kapitalmärkte steigern.",
+          "en": "This ESMA final report addresses the guidelines on delaying the disclosure of inside information under the Market Abuse Regulation (MAR). It takes into account the changes introduced by the Listing Act, which aims to facilitate access to public capital markets for EU companies, especially SMEs, and reduce administrative burdens.\n\nThe revised guidelines clarify the conditions under which issuers may delay the disclosure of inside information. This particularly concerns situations arising from protracted processes, public authority orders to maintain confidentiality, the need to gather further information, or the risk of losing a business opportunity. The objective is to increase legal certainty for issuers while ensuring investor protection.\n\nThe report includes proposed amendments to the existing guidelines, a cost-benefit analysis, and incorporates feedback from stakeholders. The adjustments are intended to ensure that MAR provisions align with the objectives of the Listing Act and enhance the attractiveness of EU capital markets."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-mar-guidelines-delay-disclosure-inside-information",
+        "imp": "high",
+        "refnum": "ESMA74-268544963-1718"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Überblick über Sanktionen und Maßnahmen nach EU-Recht im Jahr 2025 (ESMA43-502934634-2953)",
+          "en": "ESMA: Enforcement Snapshot of Sanctions and Measures under EU Acts in 2025 (ESMA43-502934634-2953)"
+        },
+        "sl": "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025",
+        "s": {
+          "de": "Die ESMA hat einen Überblick über die von den nationalen zuständigen Behörden (NCAs) im Jahr 2025 verhängten Sanktionen und Maßnahmen gemäß verschiedenen EU-Rechtsakten veröffentlicht. Dieser „Enforcement Snapshot“ fasst die Durchsetzungsaktivitäten in Bereichen wie Marktmissbrauch, Transparenz und Beaufsichtigung zusammen.\n\nIm Jahr 2025 wurden von 29 NCAs insgesamt 955 administrative Sanktionen und Maßnahmen verhängt. Die höchste Einzelstrafe betrug 7,4 Millionen Euro, während die Gesamtsumme der verhängten Geldbußen 81,9 Millionen Euro erreichte. Die größten Anteile entfielen auf MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro).\n\nDie Übersicht zeigt die Verteilung der Geldbußen auf verschiedene EU-Rechtsakte, darunter CSDR, MiCA, EMIR, Prospektverordnung, OGAW, AIFMD, ECSPR und SFTR. Es wird betont, dass diese Darstellung keine vollständige Abbildung aller Durchsetzungsaktivitäten der NCAs ist, sondern eine Momentaufnahme der Sanktionen unter bestimmten EU-Texten im Zuständigkeitsbereich der ESMA.",
+          "en": "ESMA has published an overview of sanctions and measures imposed by National Competent Authorities (NCAs) in 2025 under various EU acts. This 'Enforcement Snapshot' summarizes enforcement activities in areas such as market abuse, transparency, and supervisory convergence.\n\nIn 2025, a total of 955 administrative sanctions and measures were imposed by 29 NCAs. The highest single fine amounted to 7.4 million euros, while the total value of administrative fines reached 81.9 million euros. The largest portions were attributed to MiFID II/MiFIR (36.6 million euros) and MAR (33.4 million euros).\n\nThe overview details the distribution of fines across various EU acts, including CSDR, MiCA, EMIR, Prospectus Regulation, UCITS, AIFMD, ECSPR, and SFTR. It is emphasized that this representation is not a complete picture of all NCA enforcement activities but rather a snapshot of sanctions under specific EU texts within ESMA's remit."
+        },
+        "url": "https://www.esma.europa.eu/document/enforcement-snapshot-sanctions-and-measures-under-eu-acts-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2953"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Konsolidierter Sanktionsbericht – Tabelle der für 2025 gemeldeten Sanktionen (ESMA43-502934634-2993)",
+          "en": "Consolidated sanctions report – Table of sanctions reported for 2025 (ESMA43-502934634-2993)"
+        },
+        "sl": "consolidated-sanctions-report-table-of-sanctions-reported-for-2025",
+        "s": {
+          "de": "Dieses Dokument ist ein konsolidierter Sanktionsbericht der ESMA, der eine Tabelle der für das Jahr 2025 gemeldeten Sanktionen enthält. Es dient als Referenzdokument im Kontext von Marktmissbrauch, Aufsichtskonvergenz und Transparenz.\n\nDer Bericht ist relevant für Finanzinstitute und Marktteilnehmer, die den EU-Vorschriften zur Marktintegrität unterliegen. Er bietet einen Überblick über die von den Mitgliedstaaten verhängten Sanktionen und Maßnahmen und kann zur Einschätzung von Compliance-Risiken und zur Anpassung interner Kontrollen genutzt werden.\n\nEs handelt sich um ein Referenzdokument ohne spezifische Fristen für die Umsetzung. Es ergänzt den umfassenderen Bericht über die in den Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen.",
+          "en": "This document is a consolidated sanctions report from ESMA, containing a table of sanctions reported for the year 2025. It serves as a reference document in the context of market abuse, supervisory convergence, and transparency.\n\nThe report is relevant for financial institutions and market participants subject to EU market integrity regulations. It provides an overview of sanctions and measures imposed by Member States and can be used to assess compliance risks and adjust internal controls.\n\nThis is a reference document with no specific implementation deadlines. It complements the broader report on sanctions and measures imposed in Member States in 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/consolidated-sanctions-report-table-sanctions-reported-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2993"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Bericht über Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025",
+          "en": "Report on Sanctions and Measures Imposed in EU/EEA Member States in 2025"
+        },
+        "sl": "report-on-sanctions-and-measures-imposed-in-member-states-in-2025",
+        "s": {
+          "de": "Dieser Bericht der ESMA gibt einen Überblick über die in den EU-/EWR-Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen im Finanzsektor. Insgesamt wurden 955 administrative Sanktionen und Maßnahmen mit einer Gesamtsumme von 81.896.178 Euro an Geldbußen verhängt. Die Durchsetzungsaktivitäten konzentrierten sich hauptsächlich auf Verstöße gegen die Marktmissbrauchsverordnung (MAR) und die MiFID II/MiFIR.\n\nDie höchsten Sanktionszahlen betrafen die MAR (350) und die AIFMD (268), während die höchsten Geldbußen unter MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro) verhängt wurden. Deutschland verhängte die höchsten Geldbußen (23,3 Mio. Euro), gefolgt von Frankreich und Spanien. Erstmals wurden auch Sanktionen unter MiCA und SFTR verhängt.\n\nDer Bericht hebt weiterhin Diskrepanzen bei der Anwendung von Sanktionsbefugnissen zwischen den Mitgliedstaaten hervor, sowohl hinsichtlich der Höhe der Geldbußen als auch der Art und Anzahl der Maßnahmen. Die Durchsetzungsaktivitäten bleiben auf wenige Rechtsakte und Mitgliedstaaten konzentriert, was auf eine uneinheitliche Anwendung der Vorschriften hindeutet.",
+          "en": "This ESMA report provides an overview of sanctions and measures imposed in EU/EEA Member States in the financial sector during 2025. A total of 955 administrative sanctions and measures were imposed, with an aggregate value of administrative fines amounting to EUR 81,896,178. Enforcement activities primarily focused on breaches of the Market Abuse Regulation (MAR) and MiFID II/MiFIR.\n\nThe highest number of sanctions related to MAR (350) and AIFMD (268), while the largest fines were imposed under MiFID II/MiFIR (EUR 36.6 million) and MAR (EUR 33.4 million). Germany imposed the highest administrative fines (EUR 23.3 million), followed by France and Spain. For the first time, sanctions were also issued under MiCA and SFTR.\n\nThe report continues to highlight discrepancies in the use of sanctioning powers across Member States, both in terms of fine amounts and the types and numbers of measures. Enforcement activity remains concentrated in a limited set of legislative acts and a few Member States, indicating inconsistent application of regulations."
+        },
+        "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2902"
+      },
+      {
+        "d": "07.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
+          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
+        },
+        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
+          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
+        },
+        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
+        "imp": "medium",
+        "refnum": "ESMA74-268544963-1748"
       }
     ],
     "emir": [
@@ -337,225 +719,6 @@
         "imp": "medium"
       }
     ],
-    "csdr": [
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
-          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
-        },
-        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
-          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
-        "imp": "high"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Überarbeitete CSDR-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen",
-          "en": "Revised CSDR Guidelines on Standardised Procedures and Messaging Protocols"
-        },
-        "sl": "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
-        "s": {
-          "de": "Dieser Abschlussbericht der ESMA enthält überarbeitete Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen, die zwischen Wertpapierfirmen und ihren professionellen Kunden verwendet werden. Die Überarbeitung betrifft die Dokumentation von Vereinbarungen, die Einigung auf Kommunikationsverfahren und Nachrichtenprotokolle sowie die Abschaffung der mündlichen Kommunikation bei der Übermittlung von Allokationen und Bestätigungen.\n\nDie Leitlinien sind für Wertpapierfirmen relevant, die mit professionellen Kunden zusammenarbeiten. Sie sollen die Effizienz und Sicherheit der Wertpapierabwicklung verbessern, indem sie die Nutzung internationaler offener Kommunikationsverfahren und Standards vorschreiben und die Möglichkeit der Nutzung nicht-elektronischer Mittel auf Ausnahmefälle beschränken. Dies hat praktische Auswirkungen auf die internen Prozesse und die IT-Infrastruktur der betroffenen Unternehmen.\n\nDer Bericht enthält auch eine Kosten-Nutzen-Analyse und fasst das Feedback aus der Konsultation zusammen. Die genauen Anwendungsdaten und nächsten Schritte ergeben sich aus den finalen Leitlinien, die diesem Bericht beigefügt sind.",
-          "en": "This ESMA final report contains revised guidelines on standardised procedures and messaging protocols used between investment firms and their professional clients. The revision addresses the documentation of arrangements, agreement on communication procedures and messaging protocols, and the elimination of oral communication for submitting allocations and confirmations.\n\nThese guidelines are relevant for investment firms dealing with professional clients. They aim to enhance the efficiency and security of securities settlement by mandating the use of international open communication procedures and standards and limiting the use of non-electronic means to exceptional cases. This has practical implications for the internal processes and IT infrastructure of the affected firms.\n\nThe report also includes a cost-benefit analysis and summarises feedback from the consultation. The exact application dates and next steps will be determined by the final guidelines attached to this report."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-revised-csdr-guidelines-standardised-procedures-and-messaging-protocols-used",
-        "imp": "medium",
-        "refnum": "ESMA74-2119945926-3749"
-      },
-      {
-        "d": "12.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
-          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
-        },
-        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
-        "s": {
-          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
-          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
-        "imp": "medium"
-      },
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 2027 hinaus geklärt",
-          "en": "Access for EU market participants to third-country CSDs clarified beyond 2027"
-        },
-        "sl": "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr",
-        "s": {
-          "de": "Die ESMA stellt klar, dass EU-Marktteilnehmer über den 17. Januar 2027 hinaus Zugang zu den Dienstleistungen von Zentralverwahrern (CSDs) aus Drittländern haben sollten. Dies gilt, bis die EU die Gesetzgebung zur Verlängerung der aktuellen Übergangsregelung abgeschlossen hat. Die derzeitige Regelung, die es bestimmten Drittland-CSDs erlaubt, Notar- und zentrale Kontoführungsdienste für Finanzinstrumente nach dem Recht eines EU-Mitgliedstaates zu erbringen, läuft am 17. Januar 2027 aus.\n\nDie ESMA reagiert damit auf Bedenken von Marktteilnehmern, insbesondere Emittenten, hinsichtlich der Unsicherheit über den fortgesetzten Zugang zu Drittland-CSD-Diensten. Das derzeit verhandelte „Market Integration and Supervision Package“ (MISP) schlägt eine Verlängerung dieser Übergangsregelung vor, die sowohl vom Rat der Europäischen Union als auch vom Europäischen Parlament unterstützt wird. Die Klarstellung soll das reibungslose Funktionieren der EU-Kapitalmärkte unterstützen.\n\nDie Aussage der ESMA schafft frühzeitig vor der Frist am 17. Januar 2027 Klarheit und soll operative Herausforderungen vermeiden, die durch die Unsicherheit entstehen könnten. Eine legislative Verlängerung der Übergangsregelung wird erwartet.",
-          "en": "ESMA clarifies that EU market participants should not be prevented from accessing the services of third-country Central Securities Depositories (CSDs) beyond 17 January 2027. This applies until the EU finalises legislation to extend the current transitional regime. The current regime, which allows certain third-country CSDs to provide notary and central maintenance services for financial instruments constituted under the law of an EU Member State, is set to expire on 17 January 2027.\n\nESMA is responding to concerns raised by market participants, particularly issuers, regarding uncertainty over continued access to third-country CSD services. The Market Integration and Supervision Package (MISP), currently under negotiation, proposes extending this transitional regime, a proposal supported by both the Council of the European Union and the European Parliament. The clarification aims to support the orderly functioning of EU capital markets.\n\nESMA's statement provides clarity well in advance of the 17 January 2027 deadline and seeks to avoid operational challenges that could arise from the uncertainty. A legislative extension of the transitional regime is anticipated."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-clarifies-access-eu-market-participants-services-third-country-csds",
-        "imp": "medium"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
-          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
-        },
-        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
-          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
-        "imp": "high"
-      }
-    ],
-    "mica": [
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR (ESMA)",
-          "en": "New Q&As on Crypto-Asset Service Providers, Crowdfunding and EMIR (ESMA)"
-        },
-        "sl": "new-q-as-available",
-        "s": {
-          "de": "Die ESMA hat neue Q&As zu verschiedenen Themen veröffentlicht. Für Krypto-Dienstleister (CASPs) wird die Nutzung von Zahlungskonten bei Nicht-Bank-Zahlungsdienstleistern zur Verwahrung von Kundengeldern behandelt. Für europäische Crowdfunding-Dienstleister wird die Frage geklärt, ob Plattformen, die Registrierungs-, Mitglieds- oder andere Zugangsgebühren erheben (\"Investment Club\"-Plattformen), unter die Regulierung fallen.\n\nIm Bereich OTC-Derivate, zentrale Gegenparteien (CCPs) und Transaktionsregister (EMIR) werden spezifische Fragen zur AAR-Befreiung (85%), zur Berechnung der AAR-Schwellenwerte und zur AAR-Repräsentativitätspflicht beantwortet. Diese Klarstellungen sind für die betroffenen Finanzinstitute relevant, um ihre Compliance-Pflichten korrekt zu erfüllen und die Anwendung der jeweiligen Vorschriften besser zu verstehen.\n\nDie Q&As dienen der Vereinheitlichung der Aufsichtspraxis und der Klärung von Auslegungsfragen. Sie sind ab dem Veröffentlichungsdatum, dem 16.10.2026, verfügbar und sollten von den relevanten Marktteilnehmern beachtet werden.",
-          "en": "ESMA has published new Q&As on various topics. For Crypto-Asset Service Providers (CASPs), the use of payment accounts provided by non-bank payment service providers for holding clients’ funds is addressed. For European crowdfunding service providers, the question of whether platforms charging registration, membership, or other access fees (\"investment club\" platforms) fall under the regulation is clarified.\n\nIn the area of OTC derivatives, central counterparties (CCPs), and trade repositories (EMIR), specific questions regarding the AAR 85% exemption, AAR thresholds calculation, and the AAR representativeness obligation are answered. These clarifications are relevant for the affected financial institutions to correctly fulfill their compliance obligations and better understand the application of the respective regulations.\n\nThe Q&As aim to standardize supervisory practices and clarify interpretative issues. They are available from the publication date, 16 October 2026, and should be considered by relevant market participants."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
-        "imp": "low"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
-          "en": "Supervisory expectations on services related to unauthorised stablecoins"
-        },
-        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
-          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
-        "imp": "high"
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
-          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
-        },
-        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
-          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0: Neue Impulse von ESMA, ESRB, AMLA und SRB",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
-            "d": "14.10.2026"
-          },
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
-          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
-        },
-        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
-        "s": {
-          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
-          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1721",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      }
-    ],
     "cra": [
       {
         "d": "16.10.2026",
@@ -608,108 +771,6 @@
             "d": "10.09.2026"
           }
         ]
-      }
-    ],
-    "mar": [
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Abschlussbericht zu den MAR-Leitlinien zur Offenlegungsverzögerung von Insiderinformationen (ESMA74-268544963-1718)",
-          "en": "Final Report on MAR Guidelines on Delay in the Disclosure of Inside Information (ESMA74-268544963-1718)"
-        },
-        "sl": "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
-        "s": {
-          "de": "Dieser Abschlussbericht der ESMA befasst sich mit den Leitlinien zur Offenlegungsverzögerung von Insiderinformationen gemäß der Marktmissbrauchsverordnung (MAR). Er berücksichtigt die Änderungen durch den Listing Act, der darauf abzielt, den Zugang zu öffentlichen Kapitalmärkten für EU-Unternehmen, insbesondere KMU, zu erleichtern und den Verwaltungsaufwand zu reduzieren.\n\nDie überarbeiteten Leitlinien präzisieren die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen. Dies betrifft insbesondere Situationen, die sich aus langwierigen Prozessen ergeben, Anordnungen von Behörden zur Vertraulichkeit, die Notwendigkeit, weitere Informationen zu sammeln, oder das Risiko, eine Geschäftsmöglichkeit zu verlieren. Ziel ist es, die Rechtssicherheit für Emittenten zu erhöhen und gleichzeitig den Schutz der Anleger zu gewährleisten.\n\nDer Bericht enthält Vorschläge für Änderungen an den bestehenden Leitlinien, eine Kosten-Nutzen-Analyse und berücksichtigt Rückmeldungen von Interessengruppen. Die Anpassungen sollen sicherstellen, dass die MAR-Vorschriften im Einklang mit den Zielen des Listing Act stehen und die Attraktivität der EU-Kapitalmärkte steigern.",
-          "en": "This ESMA final report addresses the guidelines on delaying the disclosure of inside information under the Market Abuse Regulation (MAR). It takes into account the changes introduced by the Listing Act, which aims to facilitate access to public capital markets for EU companies, especially SMEs, and reduce administrative burdens.\n\nThe revised guidelines clarify the conditions under which issuers may delay the disclosure of inside information. This particularly concerns situations arising from protracted processes, public authority orders to maintain confidentiality, the need to gather further information, or the risk of losing a business opportunity. The objective is to increase legal certainty for issuers while ensuring investor protection.\n\nThe report includes proposed amendments to the existing guidelines, a cost-benefit analysis, and incorporates feedback from stakeholders. The adjustments are intended to ensure that MAR provisions align with the objectives of the Listing Act and enhance the attractiveness of EU capital markets."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-mar-guidelines-delay-disclosure-inside-information",
-        "imp": "high",
-        "refnum": "ESMA74-268544963-1718"
-      },
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Überblick über Sanktionen und Maßnahmen nach EU-Recht im Jahr 2025 (ESMA43-502934634-2953)",
-          "en": "ESMA: Enforcement Snapshot of Sanctions and Measures under EU Acts in 2025 (ESMA43-502934634-2953)"
-        },
-        "sl": "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025",
-        "s": {
-          "de": "Die ESMA hat einen Überblick über die von den nationalen zuständigen Behörden (NCAs) im Jahr 2025 verhängten Sanktionen und Maßnahmen gemäß verschiedenen EU-Rechtsakten veröffentlicht. Dieser „Enforcement Snapshot“ fasst die Durchsetzungsaktivitäten in Bereichen wie Marktmissbrauch, Transparenz und Beaufsichtigung zusammen.\n\nIm Jahr 2025 wurden von 29 NCAs insgesamt 955 administrative Sanktionen und Maßnahmen verhängt. Die höchste Einzelstrafe betrug 7,4 Millionen Euro, während die Gesamtsumme der verhängten Geldbußen 81,9 Millionen Euro erreichte. Die größten Anteile entfielen auf MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro).\n\nDie Übersicht zeigt die Verteilung der Geldbußen auf verschiedene EU-Rechtsakte, darunter CSDR, MiCA, EMIR, Prospektverordnung, OGAW, AIFMD, ECSPR und SFTR. Es wird betont, dass diese Darstellung keine vollständige Abbildung aller Durchsetzungsaktivitäten der NCAs ist, sondern eine Momentaufnahme der Sanktionen unter bestimmten EU-Texten im Zuständigkeitsbereich der ESMA.",
-          "en": "ESMA has published an overview of sanctions and measures imposed by National Competent Authorities (NCAs) in 2025 under various EU acts. This 'Enforcement Snapshot' summarizes enforcement activities in areas such as market abuse, transparency, and supervisory convergence.\n\nIn 2025, a total of 955 administrative sanctions and measures were imposed by 29 NCAs. The highest single fine amounted to 7.4 million euros, while the total value of administrative fines reached 81.9 million euros. The largest portions were attributed to MiFID II/MiFIR (36.6 million euros) and MAR (33.4 million euros).\n\nThe overview details the distribution of fines across various EU acts, including CSDR, MiCA, EMIR, Prospectus Regulation, UCITS, AIFMD, ECSPR, and SFTR. It is emphasized that this representation is not a complete picture of all NCA enforcement activities but rather a snapshot of sanctions under specific EU texts within ESMA's remit."
-        },
-        "url": "https://www.esma.europa.eu/document/enforcement-snapshot-sanctions-and-measures-under-eu-acts-2025",
-        "imp": "low",
-        "refnum": "ESMA43-502934634-2953"
-      },
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Konsolidierter Sanktionsbericht – Tabelle der für 2025 gemeldeten Sanktionen (ESMA43-502934634-2993)",
-          "en": "Consolidated sanctions report – Table of sanctions reported for 2025 (ESMA43-502934634-2993)"
-        },
-        "sl": "consolidated-sanctions-report-table-of-sanctions-reported-for-2025",
-        "s": {
-          "de": "Dieses Dokument ist ein konsolidierter Sanktionsbericht der ESMA, der eine Tabelle der für das Jahr 2025 gemeldeten Sanktionen enthält. Es dient als Referenzdokument im Kontext von Marktmissbrauch, Aufsichtskonvergenz und Transparenz.\n\nDer Bericht ist relevant für Finanzinstitute und Marktteilnehmer, die den EU-Vorschriften zur Marktintegrität unterliegen. Er bietet einen Überblick über die von den Mitgliedstaaten verhängten Sanktionen und Maßnahmen und kann zur Einschätzung von Compliance-Risiken und zur Anpassung interner Kontrollen genutzt werden.\n\nEs handelt sich um ein Referenzdokument ohne spezifische Fristen für die Umsetzung. Es ergänzt den umfassenderen Bericht über die in den Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen.",
-          "en": "This document is a consolidated sanctions report from ESMA, containing a table of sanctions reported for the year 2025. It serves as a reference document in the context of market abuse, supervisory convergence, and transparency.\n\nThe report is relevant for financial institutions and market participants subject to EU market integrity regulations. It provides an overview of sanctions and measures imposed by Member States and can be used to assess compliance risks and adjust internal controls.\n\nThis is a reference document with no specific implementation deadlines. It complements the broader report on sanctions and measures imposed in Member States in 2025."
-        },
-        "url": "https://www.esma.europa.eu/document/consolidated-sanctions-report-table-sanctions-reported-2025",
-        "imp": "low",
-        "refnum": "ESMA43-502934634-2993"
-      },
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Bericht über Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025",
-          "en": "Report on Sanctions and Measures Imposed in EU/EEA Member States in 2025"
-        },
-        "sl": "report-on-sanctions-and-measures-imposed-in-member-states-in-2025",
-        "s": {
-          "de": "Dieser Bericht der ESMA gibt einen Überblick über die in den EU-/EWR-Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen im Finanzsektor. Insgesamt wurden 955 administrative Sanktionen und Maßnahmen mit einer Gesamtsumme von 81.896.178 Euro an Geldbußen verhängt. Die Durchsetzungsaktivitäten konzentrierten sich hauptsächlich auf Verstöße gegen die Marktmissbrauchsverordnung (MAR) und die MiFID II/MiFIR.\n\nDie höchsten Sanktionszahlen betrafen die MAR (350) und die AIFMD (268), während die höchsten Geldbußen unter MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro) verhängt wurden. Deutschland verhängte die höchsten Geldbußen (23,3 Mio. Euro), gefolgt von Frankreich und Spanien. Erstmals wurden auch Sanktionen unter MiCA und SFTR verhängt.\n\nDer Bericht hebt weiterhin Diskrepanzen bei der Anwendung von Sanktionsbefugnissen zwischen den Mitgliedstaaten hervor, sowohl hinsichtlich der Höhe der Geldbußen als auch der Art und Anzahl der Maßnahmen. Die Durchsetzungsaktivitäten bleiben auf wenige Rechtsakte und Mitgliedstaaten konzentriert, was auf eine uneinheitliche Anwendung der Vorschriften hindeutet.",
-          "en": "This ESMA report provides an overview of sanctions and measures imposed in EU/EEA Member States in the financial sector during 2025. A total of 955 administrative sanctions and measures were imposed, with an aggregate value of administrative fines amounting to EUR 81,896,178. Enforcement activities primarily focused on breaches of the Market Abuse Regulation (MAR) and MiFID II/MiFIR.\n\nThe highest number of sanctions related to MAR (350) and AIFMD (268), while the largest fines were imposed under MiFID II/MiFIR (EUR 36.6 million) and MAR (EUR 33.4 million). Germany imposed the highest administrative fines (EUR 23.3 million), followed by France and Spain. For the first time, sanctions were also issued under MiCA and SFTR.\n\nThe report continues to highlight discrepancies in the use of sanctioning powers across Member States, both in terms of fine amounts and the types and numbers of measures. Enforcement activity remains concentrated in a limited set of legislative acts and a few Member States, indicating inconsistent application of regulations."
-        },
-        "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
-        "imp": "low",
-        "refnum": "ESMA43-502934634-2902"
-      },
-      {
-        "d": "07.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
-          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
-        },
-        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
-          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
-        },
-        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
-        "imp": "medium",
-        "refnum": "ESMA74-268544963-1748"
       }
     ],
     "psd3": [
