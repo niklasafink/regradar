@@ -5,9 +5,9 @@ import { PROVIDERS } from "./data";
 const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
 
-// Benachrichtigungs-Rhythmus des Update-Newsletters. Seit 14.10.2026 gibt es
-// nur noch "weekly" (donnerstags gesammelt, nach QS und Freigabe); "daily"
-// bleibt als Typ nur für Alt-Tokens und Alt-Daten bestehen.
+// Benachrichtigungs-Rhythmus des Update-Newsletters. Standard ist "weekly"
+// (donnerstags gesammelt, nach QS und Freigabe); "daily" wählt man nur über
+// den Umschalter am Ende der Update-Mails.
 export type Frequency = "daily" | "weekly";
 
 export type SubscribePayload = {
@@ -54,8 +54,8 @@ export function verifyToken(token: string): SubscribePayload | null {
     if (!Array.isArray(data.providers)) {
       data.providers = data.provider ? [data.provider] : [];
     }
-    // Täglicher Versand wird nicht mehr angeboten: auch Alt-Tokens mit
-    // freq "daily" (oder ohne freq) führen zum Wochen-Abo.
+    // Anmeldung startet immer wöchentlich; auf täglich stellt man nur über
+    // den Umschalter in den Update-Mails um.
     data.freq = "weekly";
     // Alt-Tokens ohne frameworks-Feld: keine Rahmenwerk-Einschränkung.
     if (!Array.isArray(data.frameworks)) data.frameworks = [];
@@ -343,9 +343,17 @@ export function verifyUnsubToken(token: string): string | null {
   }
 }
 
-// Rhythmus-Links aus älteren Update-Mails (bis 14.10.2026 gab es täglich und
-// wöchentlich). Neue Mails enthalten keine mehr; die Route /api/frequency
-// setzt bei jedem gültigen Token nur noch auf wöchentlich.
+// Rhythmus-Umschalter am Ende jeder Update-Mail: Ein Klick auf "täglich" bzw.
+// "wöchentlich" stellt den Rhythmus ohne Login um. Der Token trägt Adresse
+// und Ziel-Rhythmus, ist unbefristet gültig (wie der Abmelde-Link) und lässt
+// sich nicht zum Abmelden missbrauchen (eigener act-Wert).
+export function createFreqToken(email: string, freq: Frequency): string {
+  const payload = Buffer.from(
+    JSON.stringify({ email: email.toLowerCase(), act: "freq", freq }),
+  ).toString("base64url");
+  return `${payload}.${sign(payload)}`;
+}
+
 export function verifyFreqToken(
   token: string,
 ): { email: string; freq: Frequency } | null {

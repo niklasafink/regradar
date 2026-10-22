@@ -9,8 +9,7 @@ export type Subscriber = {
   email: string;
   providers: string[];
   confirmedAt: string;
-  // Rhythmus des Update-Newsletters. Seit 14.10.2026 immer "weekly"; der
-  // Versand behandelt jeden Abonnenten als Wochen-Abo, auch Alt-Einträge.
+  // Rhythmus des Update-Newsletters; fehlt = "weekly" (Standard).
   frequency?: Frequency;
   // ISO-Zeitpunkt der letzten Newsletter-Zustellung an diese Adresse.
   // Zusammen mit confirmedAt das Wasserzeichen: verschickt werden nur
@@ -69,7 +68,9 @@ export async function addSubscriber(
   const providers = new Set(existing?.providers ?? []);
   const before = providers.size;
   for (const p of newProviders) if (p) providers.add(p);
-  const nextFreq: Frequency = "weekly"; // täglicher Versand abgeschafft (14.10.2026)
+  // Standard ist wöchentlich; eine per Mail-Umschalter gewählte Frequenz
+  // bleibt bei erneuter Anmeldung erhalten.
+  const nextFreq: Frequency = existing?.frequency ?? "weekly";
   const freqChanged = existing ? nextFreq !== existing.frequency : false;
   const nextFw = [...new Set(frameworks.filter(Boolean))].sort();
   const fwChanged = existing
@@ -121,14 +122,14 @@ export async function setLastNotified(email: string, iso: string): Promise<void>
   await redis().hset(KEY, { [key]: { ...existing, lastNotifiedAt: iso } satisfies Stored });
 }
 
-/** Rhythmus auf wöchentlich setzen (Alt-Links „Rhythmus ändern“ aus früheren
-    Mails). true = gespeichert, false = Adresse ist (nicht mehr) abonniert. */
-export async function setWeekly(email: string): Promise<boolean> {
+/** Rhythmus des Update-Newsletters umstellen (Link am Mailende).
+    true = gespeichert, false = Adresse ist (nicht mehr) abonniert. */
+export async function setFrequency(email: string, freq: Frequency): Promise<boolean> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
   if (!existing) return false;
-  if (existing.frequency === "weekly") return true;
-  await redis().hset(KEY, { [key]: { ...existing, frequency: "weekly" } satisfies Stored });
+  if ((existing.frequency ?? "weekly") === freq) return true;
+  await redis().hset(KEY, { [key]: { ...existing, frequency: freq } satisfies Stored });
   return true;
 }
 

@@ -41,6 +41,7 @@ import {
   authority, daysUntil, dt, groupByTopic, IMPACT_LABEL, impactOf, tx, type Impact,
 } from "./logic";
 import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
+import { createFreqToken, type Frequency } from "./email";
 import { markApprovalSent, readQa, type QaRecord } from "./newsletterQa";
 import { firstParagraph, isoDate, slugify, UPDATE_PAGES, type UpdatePage } from "./updates";
 
@@ -197,8 +198,8 @@ function freshFor(
   );
 }
 
-// Alle Abonnenten bekommen ihre Post wöchentlich (täglicher Versand seit
-// 14.10.2026 abgeschafft). Stichtag ist der Donnerstags-Slot um 10:00 UTC:
+// Standard ist der Wochenversand; wer in der Mail auf "täglich" umgestellt hat,
+// ist an jedem Lauf fällig (sofern es etwas Neues gibt). Stichtag ist der Donnerstags-Slot um 10:00 UTC:
 // Danach prüft die automatische QS (scraper/newsletter_qa.py) die fälligen
 // Meldungen und löst erst dann die Freigabe-Mail aus. Fällig ist ein Abonnent,
 // sobald der jüngste Slot NACH seinem Wasserzeichen liegt — so reicht auch
@@ -221,6 +222,7 @@ export function lastWeeklySlot(now: Date): Date {
 }
 
 function dueFor(sub: Subscriber, nowIso: string): boolean {
+  if (sub.frequency === "daily") return true;
   const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
     .sort()
     .pop()!;
@@ -278,10 +280,44 @@ const impactPill = (i: Impact): string =>
 
 /** E-Mail im Site-Design: schwarz-weiß, große Typo, Pill-Button.
     Liefert HTML plus Plain-Text-Alternative (bessere Spam-Bewertung). */
+/** Links zum Umstellen des Rhythmus am Mailende (fehlt bei Vorschauen). */
+export type FreqLinks = { current: Frequency; dailyUrl: string; weeklyUrl: string };
+
+export function freqLinksFor(sub: Subscriber, base: string): FreqLinks {
+  const url = (f: Frequency) =>
+    `${base}/api/frequency?token=${encodeURIComponent(createFreqToken(sub.email, f))}`;
+  return { current: sub.frequency ?? "weekly", dailyUrl: url("daily"), weeklyUrl: url("weekly") };
+}
+
+const FREQ_LABEL: Record<Frequency, string> = {
+  daily: "einmal pro Tag (nur bei neuen Meldungen)",
+  weekly: "donnerstags gesammelt (nur bei neuen Meldungen)",
+};
+
+function renderFreqBlock(freq: FreqLinks): string {
+  const opt = (f: Frequency, url: string) => {
+    const active = f === freq.current;
+    const [title, sub] = f === "daily"
+      ? ["Einmal pro Tag", "nur bei neuen Meldungen"]
+      : ["Donnerstags", "nur bei neuen Meldungen, gesammelt"];
+    const style = active
+      ? "background:#0f172a;color:#ffffff;border:1px solid #0f172a"
+      : "background:#ffffff;color:#0f172a;border:1px solid #e2e8f0";
+    return `<a href="${url}" style="display:inline-block;white-space:nowrap;${style};padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:13px;margin:0 8px 8px 0">${title}${active ? " ✓" : ""}<span style="display:block;font-weight:400;font-size:11px;opacity:.75">${sub}</span></a>`;
+  };
+  return `
+    <div style="margin:28px 0 0;padding:20px;border:1px solid #e2e8f0;border-radius:16px">
+      <p style="margin:0 0 4px;font-size:14px;font-weight:600;color:#0f172a">Wie oft möchten Sie diese E-Mail erhalten?</p>
+      <p style="margin:0 0 12px;font-size:12px;color:#64748b">Aktuell: ${FREQ_LABEL[freq.current]}. Kein Login nötig, Sie bestätigen die Wahl mit einem Klick.</p>
+      ${opt("daily", freq.dailyUrl)}${opt("weekly", freq.weeklyUrl)}
+    </div>`;
+}
+
 export function renderNewsletter(
   pages: UpdatePage[],
   unsubUrl: string,
   base: string,
+  freq?: FreqLinks,
 ): { html: string; text: string } {
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
@@ -352,6 +388,14 @@ export function renderNewsletter(
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
     "",
+    ...(freq
+      ? [
+          `Wie oft möchten Sie diese E-Mail erhalten? Aktuell: ${FREQ_LABEL[freq.current]}.`,
+          `Einmal pro Tag (nur bei neuen Meldungen): ${freq.dailyUrl}`,
+          `Donnerstags gesammelt (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
+          "",
+        ]
+      : []),
     "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
     `Abmelden: ${unsubUrl}`,
@@ -381,6 +425,7 @@ export function renderNewsletter(
         Offene Fristen →
       </a>
     </p>
+    ${freq ? renderFreqBlock(freq) : ""}
     <p style="margin:32px 0 0;padding-top:16px;border-top:1px solid #f1f5f9;font-size:12px;color:#94a3b8;line-height:1.6">
       Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.
       Keine Rechtsberatung, alle Angaben ohne Gewähr.<br>
@@ -548,7 +593,7 @@ export async function runNewsletter(opts: {
         rel.length === 1
           ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
           : `${rel.length} neue regulatorische Updates`;
-      const { html, text } = renderNewsletter(rel, unsubUrl, base);
+      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base));
       await pace();
       const { error } = await resend.emails.send({
         from,
