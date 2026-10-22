@@ -211,27 +211,32 @@
     "2026-10-18"
    ],
    "keys": [
+    "amendments-to-g-sib-framework-to-address-window-dressing",
     "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet",
     "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
     "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
+    "global-systemically-important-banks-methodology-review",
     "new-q-as-available",
     "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s"
    ],
-   "hook": "Die EU-Wertpapierabwicklung wird schneller: T+1 kommt, und die Kommunikation wird elektronisch.",
-   "folge": "Ab dem 11. Oktober 2027 müssen Wertpapiergeschäfte in der EU innerhalb eines Tages abgewickelt werden. Wertpapierfirmen müssen dafür schon ab dem 7. Dezember 2026 elektronische, standardisierte Kommunikationskanäle nutzen.",
-   "cover": "ESMA: T+1-Abwicklung erfordert neue Prozesse",
+   "hook": "Bilanzkosmetik hat ein Ende: Der Basler Ausschuss ändert die Berechnung der G-SIB-Scores.",
+   "folge": "Ab 01.01.2030 müssen Banken Jahresdurchschnittswerte statt Stichtagswerte für G-SIB-Indikatoren melden. Das verhindert Manipulationen und beeinflusst Kapitalanforderungen.",
+   "cover": "BCBS: G-SIB-Scores künftig mit Jahresdurchschnittswerten",
    "zeilen": [
-    "Bundestag: BSI wird zentrale Behörde für Cybersicherheit von IT-Produkten ab Dezember 2027",
-    "ESMA: Neue MAR-Leitlinien präzisieren Bedingungen für die Offenlegungsverzögerung von Insiderinformationen"
+    "ESMA: T+1-Abwicklung bis 11.10.2027 umsetzen, neuer Regulierungsrahmen ist vollständig",
+    "ESMA: Emittenten können Offenlegung von Insiderinformationen unter bestimmten Bedingungen aufschieben",
+    "BSI: Cybersicherheitsanforderungen für Produkte mit digitalen Elementen ab Dezember 2027"
    ],
-   "frage": "Sind Ihre Systeme und Prozesse bereit für die Umstellung auf T+1 und die neuen Kommunikationsstandards?",
-   "top": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+   "frage": "Wie stellen Sie sicher, dass Ihre Daten für die G-SIB-Berechnung manipulationssicher sind?",
+   "top": "amendments-to-g-sib-framework-to-address-window-dressing",
    "kern": {
-    "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s": "Wertpapierfirmen müssen sich auf die T+1-Abwicklung bis zum 11.10.2027 vorbereiten und ab dem 07.12.2026 elektronische, standardisierte Kommunikationskanäle nutzen.",
-    "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa": "Die ESMA überarbeitet die CSDR-Leitlinien für Wertpapierfirmen zur Kommunikation mit professionellen Kunden, um Effizienz und Sicherheit der Abwicklung zu verbessern.",
-    "new-q-as-available": "Die ESMA klärt in neuen Q&As Fragen zur Nutzung von Zahlungskonten durch Krypto-Dienstleister, Crowdfunding-Plattformen und zur EMIR-AAR-Befreiung.",
-    "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet": "Das BSI wird ab Dezember 2027 die zentrale Behörde für Cybersicherheit von IT-Produkten und überwacht die Einhaltung des Cyber Resilience Act.",
-    "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat": "Die ESMA präzisiert in überarbeiteten MAR-Leitlinien die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen."
+    "new-q-as-available": "Die ESMA hat neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR veröffentlicht, die ab dem 16.10.2026 für Klarheit bei Compliance-Pflichten sorgen.",
+    "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s": "Wertpapierfirmen müssen bis zum 11.10.2027 die technischen Vorbereitungen für die T+1-Abwicklung abschließen und ab dem 07.12.2026 neue Anforderungen an Allokationen und Bestätigungen erfüllen.",
+    "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa": "Die überarbeiteten CSDR-Leitlinien der ESMA schreiben Wertpapierfirmen die Nutzung elektronischer, standardisierter Kommunikationskanäle für Allokationen und Bestätigungen vor.",
+    "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat": "Die ESMA präzisiert in überarbeiteten MAR-Leitlinien die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen, um Rechtssicherheit zu erhöhen.",
+    "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet": "Das BSI wird ab Dezember 2027 die zentrale Behörde für Cybersicherheit und überwacht IT-Produkte mit digitalen Elementen gemäß dem CRA-Durchführungsgesetz.",
+    "amendments-to-g-sib-framework-to-address-window-dressing": "Der Basler Ausschuss ändert das G-SIB-Rahmenwerk, sodass Banken ab dem 01.01.2030 Jahresdurchschnittswerte für Indikatoren melden und der Schwellenwert ab dem 01.01.2027 auf 350 Mrd. EUR steigt.",
+    "global-systemically-important-banks-methodology-review": "Der Basler Ausschuss konsultiert bis zum 14.01.2027 eine Überarbeitung der G-SIB-Methodik, um die Behandlung grenzüberschreitender Engagements innerhalb der Europäischen Bankenunion zu formalisieren."
    },
    "doppelt": [],
    "fmt": 5,

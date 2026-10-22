@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T14:49:49Z",
+  "generated_at": "2026-10-22T15:07:39Z",
   "updates": {
     "idd": [
       {
@@ -832,25 +832,6 @@
         "imp": "medium"
       },
       {
-        "d": "01.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bis.org",
-        "ti": {
-          "de": "Basler Ausschuss erörtert KI-Risiken, G-SIB-Bewertung und maschinenlesbare Säule-3-Offenlegungen",
-          "en": "Basel Committee discusses AI risks, G-SIB assessment, and machine-readable Pillar 3 disclosures"
-        },
-        "sl": "basel-committee-meets-to-advance-supervisory-and-regulatory-initiatives-and-disc",
-        "s": {
-          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat sich getroffen, um Fortschritte bei seinen Initiativen zu erzielen und Risiken im globalen Bankensystem zu erörtern. Im Fokus standen die rasante Entwicklung der Künstlichen Intelligenz (KI) und deren Auswirkungen auf das Finanzsystem, einschließlich operativer Schwachstellen wie Cyberangriffe. Der Ausschuss plant, die bestehenden Verlustkategorien im operationellen Risikorahmen zu überprüfen, insbesondere im Hinblick auf Cyberrisiken und KI-Entwicklungen.\n\nWeitere Beschlüsse umfassen die Genehmigung einer jährlichen Bewertung für global systemrelevante Banken (G-SIBs) und Überarbeitungen zur Reduzierung von Window-Dressing-Verhalten. Ein finaler Standard für maschinenlesbare Säule-3-Offenlegungen wurde ebenfalls verabschiedet, um die Aggregation und den Vergleich von Bankdaten zu erleichtern. Zudem wird der Ausschuss eine Konsultation zu zusätzlichen Säule-2-Leitlinien für Zinsrisiken im Anlagebuch veröffentlichen und ein Update zur Überprüfung seiner Eigenkapitalanforderungen für Krypto-Engagements von Banken bereitstellen.\n\nDie Ergebnisse der G-SIB-Bewertung für Ende 2025 werden dem Finanzstabilitätsrat (FSB) übermittelt. Die Überarbeitungen des G-SIB-Bewertungsrahmens und eine Konsultation zur Berücksichtigung grenzüberschreitender Engagements innerhalb der europäischen Bankenunion im G-SIB-Rahmen werden noch in diesem Monat veröffentlicht. Die Konsultation zu den IRRBB-Leitlinien folgt im nächsten Monat, während der Standard für maschinenlesbare Säule-3-Offenlegungen gegen Jahresende publiziert wird.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) met to advance its initiatives and discuss risks in the global banking system. The rapid development of Artificial Intelligence (AI) and its implications for the financial system, including operational vulnerabilities such as cyberattacks, were key topics. The Committee plans to review existing loss categories in the operational risk framework, particularly concerning cyber risk and AI developments.\n\nFurther decisions include approving an annual assessment for global systemically important banks (G-SIBs) and revisions to reduce window-dressing behavior. A final standard for machine-readable Pillar 3 disclosures was also approved to facilitate the aggregation and comparison of bank data. Additionally, the Committee will launch a consultation on further Pillar 2 guidance for interest rate risk in the banking book and provide an update on its review of prudential standards for banks' cryptoasset exposures.\n\nThe results of the end-2025 G-SIB assessment will be submitted to the Financial Stability Board (FSB). Revisions to the G-SIB assessment framework and a consultation on incorporating cross-border exposures within the European banking union into the G-SIB framework will be published later this month. The consultation on IRRBB guidance will follow next month, while the standard for machine-readable Pillar 3 disclosures will be published around year-end."
-        },
-        "url": "https://www.bis.org/media-releases/20261001-basel-committee-meets-advance-supervisory-and-regulatory-initiatives-and-discuss-risks-and",
-        "imp": "medium"
-      },
-      {
         "d": "28.09.2026",
         "t": {
           "de": "Final Report",
@@ -924,7 +905,15 @@
           "en": "The Basel Committee on Banking Supervision (BCBS) has published a report on Information and Communication Technology (ICT) risk management. It analyzes practices to strengthen banks' operational resilience against non-malicious ICT incidents. The report aims to support banks in developing robust ICT risk management frameworks, which are a critical aspect of operational risk management.\n\nBased on a survey across 16 jurisdictions, the report identifies common root causes of ICT incidents, such as gaps in change control, system design, capacity management, and external dependencies. The most frequently reported management practices include ICT change management, third-party risk management, ICT continuity testing, ICT incident and problem management, and ICT project management and system development. This is particularly relevant for global and domestic systemically important banks (G-SIBs, D-SIBs) and other banks, such as digital-only banks.\n\nThe report is part of the BCBS's 2025-26 work program and serves as guidance for supervisors and banks to enhance resilience against ICT incidents."
         },
         "url": "https://www.bis.org/bcbs/publ/d611.htm",
-        "imp": "low"
+        "imp": "low",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Basler Ausschuss veröffentlicht Bericht zum Risikomanagement in der Informations- und Kommunikationstechnologie",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/basler-ausschuss-veroeffentlicht-bericht-zum-risikomanagement-in-der-informations-und-kommunikationstechnologie/",
+            "d": "02.06.2026"
+          }
+        ]
       },
       {
         "d": "23.03.2026",
@@ -965,42 +954,61 @@
         "imp": "low"
       },
       {
-        "d": "20.02.2026",
+        "d": "06.01.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
         "src": "bis.org",
         "ti": {
-          "de": "Stabilität von täglich fälligen Einlagen: Einflussfaktoren und aktuelle Entwicklungen",
-          "en": "Non-maturity deposit stability: Established factors and recent developments"
+          "de": "Umsetzung der BCBS 239-Prinzipien zur Aggregation von Risikodaten",
+          "en": "Implementation of BCBS 239 Principles for Risk Data Aggregation"
         },
-        "sl": "literature-review-on-non-maturity-deposit-stability-established-factors-and-rece",
+        "sl": "implementation-of-the-principles-for-effective-risk-data-aggregation-and-risk-re",
         "s": {
-          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat eine Literaturübersicht zur Stabilität von täglich fälligen Einlagen (Non-Maturity Deposits, NMDs) veröffentlicht. Die Analyse untersucht, inwieweit neue Entwicklungen – wie technologische Innovationen, veränderte Refinanzierungsquellen von Banken, erhöhter Wettbewerb und Änderungen im regulatorischen Umfeld – das Verhalten von NMDs beeinflusst haben, insbesondere im Kontext der Bankenunruhen von März bis Mai 2023.\n\nDie Studie kommt zu dem Ergebnis, dass es Hinweise darauf gibt, dass die Veränderungen im Banken- und Finanzsektor die Stabilität von NMDs beeinflusst haben. Gleichzeitig deuten die Erkenntnisse darauf hin, dass traditionelle Faktoren wie die Einlagensicherung und die Wahrnehmung der Bankinsolvenz weiterhin wesentliche Treiber für die Veränderungen in der NMD-Stabilität sind. Es ist daher schwierig zu beurteilen, ob die Nettoeffekte der jüngsten Entwicklungen zu einem volatileren Verhalten der Einleger geführt haben.\n\nDiese Veröffentlichung ist ein Arbeitspapier des BCBS (Working Papers 47) und spiegelt die Ansichten der Autoren wider, nicht notwendigerweise die offiziellen Positionen des Komitees oder seiner Mitglieder. Für Finanzinstitute ist dies relevant, um die Dynamik und Risikofaktoren von NMDs besser zu verstehen und ihre Liquiditätssteuerung entsprechend anzupassen.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) has published a literature review on the stability of non-maturity deposits (NMDs). The analysis examines the extent to which new developments – such as technological innovations, changing funding sources for banks, increased competition, and shifts in the legal and regulatory landscape – have affected NMD behavior, particularly in the context of the banking turmoil from March to May 2023.\n\nThe study concludes that there is some support for the view that changes in the banking and financial industry have affected NMD stability. At the same time, the evidence suggests that traditional factors, such as deposit insurance coverage and perceptions of bank insolvency, remain substantial drivers of changes in NMD stability. It is therefore difficult to conclude whether the net effect of recent developments has resulted in more volatile NMD depositor behavior.\n\nThis publication is a BCBS Working Paper (Working Papers 47) and reflects the views of the authors, not necessarily the official positions of the Committee or its members. For financial institutions, this is relevant for a better understanding of the dynamics and risk factors of NMDs and for adapting their liquidity management accordingly."
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat ein Rundschreiben zur Umsetzung der Prinzipien für die effektive Aggregation von Risikodaten und die Risikoberichterstattung (BCBS 239) veröffentlicht. Das Rundschreiben fasst zentrale Themen und Herausforderungen zusammen, die sich aus jüngsten Aufsichts- und Branchengesprächen zur Implementierung von BCBS 239 ergeben haben. Es dient der Information und stellt keine neue aufsichtsrechtliche Leitlinie oder Erwartung dar.\n\nDie Prinzipien von BCBS 239 bilden einen grundlegenden Rahmen für das Daten- und Risikomanagement im Bankensektor, der ursprünglich auf systemrelevante Banken (SIBs) abzielte. Die Umsetzung hat sich im Laufe der Jahre weiterentwickelt, um Veränderungen im Geschäfts-, Technologie- und Risikoumfeld Rechnung zu tragen. Herausforderungen bestehen weiterhin in der Anpassung an neue Geschäftsumfelder, der Governance von Risikodatenaggregations-Aktivitäten, der Datenherkunft (Data Lineage), grenzüberschreitenden Fragestellungen und den Auswirkungen neuer Technologien.\n\nBankvorstände tragen die Gesamtverantwortung für die Überwachung der Risikodatenaggregation. Eine starke datengesteuerte Kultur und die aktive Einbindung des Top-Managements sind entscheidend, um Implementierungsbarrieren zu überwinden. Einige Banken haben die BCBS 239-Prinzipien in breitere unternehmensweite Data-Governance-Rahmenwerke integriert, was trotz erhöhter Komplexität Chancen zur Systemrationalisierung und Kostenreduktion bieten kann.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published a newsletter on the implementation of the Principles for effective risk data aggregation and risk reporting (BCBS 239). The newsletter summarises key themes and challenges arising from recent supervisory and industry outreach sessions on BCBS 239 implementation. It is for informational purposes only and does not constitute new supervisory guidance or expectations.\n\nThe BCBS 239 principles provide a foundational framework for data and risk management in the banking sector, initially targeting systemically important banks (SIBs). Implementation has evolved over the years to reflect changes in the business, technology, and risk landscape. Challenges persist in adapting to evolving business environments, governance of risk data aggregation activities, data lineage, cross-border issues, and the implications of emerging technologies.\n\nBank boards are responsible for the overall oversight of risk data aggregation activities. A strong data-driven culture and active involvement of senior management are crucial to overcoming implementation barriers. Some banks have integrated BCBS 239 principles into broader enterprise-wide data governance frameworks, which, despite increased complexity, can offer opportunities for system rationalisation and cost reduction."
         },
-        "url": "https://www.bis.org/bcbs/publ/wp47.htm",
+        "url": "https://www.bis.org/publ/bcbs_nl36.htm",
+        "imp": "medium"
+      },
+      {
+        "d": "12.12.2025",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Überprüfung der Umsetzung der Margenanforderungen für nicht zentral abgerechnete Derivate",
+          "en": "Review of the implementation of margin requirements for non-centrally cleared derivatives"
+        },
+        "sl": "review-of-the-implementation-of-margin-requirements-for-non-centrally-cleared-de",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) und die Internationale Organisation der Wertpapieraufsichtsbehörden (IOSCO) haben eine Überprüfung der Umsetzung des Rahmenwerks für Margenanforderungen für nicht zentral abgewickelte Derivate veröffentlicht. Das Rahmenwerk wurde als Reaktion auf den G20-Aufruf von 2011 zur Stärkung der Widerstandsfähigkeit der Finanzmärkte eingeführt und in mehreren Phasen umgesetzt, wobei die letzte Phase im September 2022 begann.\n\nDie Überprüfung ergab keine wesentlichen Probleme mit dem Rahmenwerk. BCBS und IOSCO schlagen keine Änderungen vor, empfehlen jedoch eine fortgesetzte Überwachung durch den Austausch von Aufsichtsinformationen und Erfahrungen unter ihren Mitgliedern, um sich entwickelnde Marktpraktiken zu adressieren. Margin-Anforderungen reduzieren systemische Risiken und fördern das zentrale Clearing, indem sie das Kontrahentenrisiko bei nicht zentral abgewickelten Derivaten mindern und die Anhäufung unbesicherter Engagements begrenzen.\n\nDie Implementierung des Rahmenwerks erfolgte schrittweise, wobei die letzte Phase (Phase 6) im September 2022 begann und für Notionalbeträge von nicht zentral abgewickelten Derivaten ab 8 Mrd. EUR galt. Die Umsetzungszeitpläne variierten je nach Jurisdiktion, aber die meisten haben das Rahmenwerk umgesetzt.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) and the International Organization of Securities Commissions (IOSCO) have published a review of the implementation of the framework for margin requirements for non-centrally cleared derivatives. The framework was introduced in response to the 2011 G20 call to enhance the resilience of financial markets and was implemented in several phases, with the last phase beginning in September 2022.\n\nThe review found no material issues with the framework. BCBS and IOSCO do not propose changes to the framework but recommend continued monitoring through the exchange of supervisory information and sharing of experiences among their members to address evolving market practices. Margin requirements reduce systemic risk and promote central clearing by mitigating counterparty risk in non-centrally cleared derivatives and limiting the build-up of uncollateralized exposures.\n\nThe implementation of the framework occurred in phases, with the last phase (Phase 6) starting in September 2022, applicable to notional amounts of non-centrally cleared derivatives of EUR 8 billion and above. Implementation schedules varied across jurisdictions, but most have implemented the framework."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d606.htm",
         "imp": "low"
       },
       {
-        "d": "17.02.2026",
+        "d": "10.12.2025",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
         "src": "bis.org",
         "ti": {
-          "de": "Analyse zu Synthetic Risk Transfers (SRT)",
-          "en": "Analysis of Synthetic Risk Transfers (SRT)"
+          "de": "Grundsätze für das Management von Drittparteienrisiken (BCBS)",
+          "en": "Principles for the Sound Management of Third-Party Risk (BCBS)"
         },
-        "sl": "synthetic-risk-transfers",
+        "sl": "principles-for-the-sound-management-of-third-party-risk",
         "s": {
-          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat einen Bericht zu Synthetic Risk Transfers (SRT) veröffentlicht. SRTs ermöglichen Banken, Kreditrisiken von Vermögenspools auf Gegenparteien zu übertragen, während sie die zugrunde liegenden Vermögenswerte behalten. Hauptmotivationen für Banken sind das Kapital- und Kreditrisikomanagement.\n\nDer Bericht ist Teil der Überwachung der Verflechtungen zwischen Banken und Nichtbanken-Finanzintermediären (NBFIs). Er stellt fest, dass die SRT-Märkte im letzten Jahrzehnt stark gewachsen sind und eine wichtige Quelle für die Kapitalentlastung von Unternehmens-Kreditrisiken darstellen. Das Volumen der durch SRTs geschützten Vermögenswerte in Kanada, der Eurozone, den USA und Großbritannien wird auf rund 750 Milliarden Euro geschätzt, was etwa 1,1 % der gesamten Bankaktiva entspricht.\n\nObwohl seit der Finanzkrise 2008 regulatorische Reformen die SRT-Verbriefungen vereinfacht und die Prüfung verbessert haben, sehen einige Marktteilnehmer und Jurisdiktionen weiterhin „blinde Flecken“ bei Offenlegung und Finanzierungsaktivitäten. Die mit SRTs verbundenen Risiken, wie die erhöhte Abhängigkeit von NBFIs, werden von den Marktteilnehmern zwar gemanagt, erfordern aber eine kontinuierliche Überwachung durch die Aufsichtsbehörden, da die Märkte weiter wachsen.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) has published a report on Synthetic Risk Transfers (SRT). SRTs allow banks to transfer all or a portion of the credit risk of a pool of assets to a counterparty while retaining ownership of the underlying assets. The main motivations for banks to engage in SRTs are capital and credit risk management.\n\nThe report is part of the Committee's ongoing monitoring of interconnections between banks and non-bank financial intermediaries (NBFIs). It finds that SRT markets have grown rapidly over the last decade, providing an important source of capital relief for corporate credit risk. The total value of assets protected by SRTs in Canada, the Euro area, the United States, and the United Kingdom is estimated at approximately EUR 750 billion, or 1.1% of total bank assets.\n\nWhile regulatory reforms since the 2008 financial crisis have simplified SRT securitisations and increased scrutiny, some market participants and jurisdictions still identify blind spots related to disclosure and SRT financing activities. Risks associated with SRTs, such as banks' increased dependence on NBFIs, are acknowledged and managed by market participants, but they warrant continued monitoring by supervisors as SRT markets continue to grow."
+          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat Grundsätze für das solide Management von Drittparteienrisiken veröffentlicht. Diese Grundsätze sollen einen gemeinsamen Rahmen für Banken und Aufsichtsbehörden schaffen, um Risiken im Zusammenhang mit Drittanbietern zu steuern. Sie ersetzen das Joint Forum Papier von 2005 und erweitern das traditionelle Konzept des Outsourcings auf ein breiteres Spektrum von Drittparteienvereinbarungen.\n\nDie zunehmende Abhängigkeit von Banken von Drittanbietern, insbesondere durch die Digitalisierung, erfordert eine Weiterentwicklung des Risikomanagements. Die Grundsätze sind technologieunabhängig und sollen Banken helfen, ihre operationelle Widerstandsfähigkeit zu stärken. Sie umfassen Leitlinien für Governance, Risikobewertung, Due Diligence, Vertragsgestaltung, Onboarding, Überwachung und Beendigung von Drittparteienbeziehungen sowie spezifische Anleitungen für Aufsichtsbehörden. Die Anwendung der Grundsätze soll proportional zur Größe, Komplexität und dem Risikoprofil der Bank sowie der Kritikalität der Drittparteienvereinbarungen erfolgen.\n\nDie Veröffentlichung erfolgte am 10. Dezember 2025. Eine frühere konsultative Version wurde am 9. Juli 2024 geschlossen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published principles for the sound management of third-party risk. These principles aim to establish a common framework for banks and supervisors to manage risks associated with third-party providers. They supersede the 2005 Joint Forum paper and expand the traditional concept of outsourcing to a broader range of third-party arrangements.\n\nBanks' increasing reliance on third-party service providers, particularly due to digitalization, necessitates an evolution in risk management. The principles are technology-agnostic and are intended to help banks strengthen their operational resilience. They include guidance on governance, risk assessment, due diligence, contracting, onboarding, ongoing monitoring, and termination of third-party relationships, as well as specific guidance for prudential supervisors. The application of the principles should be proportionate to the bank's size, complexity, business model, and risk profile, as well as the criticality of the third-party arrangements.\n\nThe publication date is December 10, 2025. A previous consultative version was closed on July 9, 2024."
         },
-        "url": "https://www.bis.org/bcbs/publ/d607.htm",
-        "imp": "low"
+        "url": "https://www.bis.org/bcbs/publ/d605.htm",
+        "imp": "medium"
       }
     ],
     "psd3": [
