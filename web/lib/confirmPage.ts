@@ -5,15 +5,15 @@
 // Versandfreigabe): Er zeigt nur diese Seite mit einem Bestätigungs-Button,
 // der die Aktion per POST-Formular aus dem Browser des Nutzers abschickt.
 
-const esc = (s: string): string =>
+export const esc = (s: string): string =>
   s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 
-export function htmlPage(title: string, body: string, status = 200): Response {
+export function htmlPage(title: string, body: string, status = 200, width = 480): Response {
   return new Response(
     `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="noindex">
     <title>${esc(title)}</title>
-    <div style="font-family:system-ui,sans-serif;max-width:480px;margin:80px auto;padding:0 16px;color:#0f172a">
+    <div style="font-family:system-ui,sans-serif;max-width:${width}px;margin:80px auto;padding:0 16px;color:#0f172a">
       <p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>
       <h1 style="font-size:22px;font-weight:600">${esc(title)}</h1>
       ${body}

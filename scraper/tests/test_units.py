@@ -1212,3 +1212,40 @@ class LinkedInDigestTests(unittest.TestCase):
         self.assertEqual(_bad_dates("bis 27.10.2026, ab 20.11.2026", items), [])
         self.assertEqual(_bad_dates("bis 09.2026", items), ["09.2026"])
         self.assertEqual(_bad_dates("bis 28.10.2026", items), ["28.10.2026"])
+
+
+class RadarDecisions(unittest.TestCase):
+    """Entscheidungspunkte der Checklisten-Mail (Buttons, Dubletten-Auflösung)."""
+
+    CASE = {"group_key": "k", "kind": "document", "titel": "TransRe Europe S.E.",
+            "eintraege": [{"id": 11, "quelle": "BaFin", "datum": "2026-09-15", "url": "https://a.example/1"},
+                          {"id": 22, "quelle": "BaFin", "datum": "2026-10-20", "url": "https://a.example/2"}]}
+
+    def test_items_and_button(self):
+        from regradar import gapreport
+        recos = {"d1": {"empfehlung": "dublette-behalte-a", "grund": "älter"}}
+        items = gapreport._radar_items([], [], [self.CASE], recos)
+        self.assertEqual(items[0]["kind"], "dublette")
+        self.assertEqual(items[0]["meta"]["ids"], [11, 22])
+        self.assertEqual(items[0]["recommendation"]["code"], "dublette-behalte-a")
+        ids = {i["id"].split("-", 1)[1]: i["id"] for i in items}
+        html = gapreport._render_email([], [], [self.CASE], recos, {items[0]["id"]: "https://x.example/r"}, ids)
+        self.assertIn("Im Browser entscheiden", html)
+        self.assertNotIn("Im Browser entscheiden",
+                         gapreport._render_email([], [], [self.CASE], recos))
+
+    def test_suppress_duplicate(self):
+        import radar_actions
+        from regradar import dedup
+        class Keep(sqlite3.Connection):
+            def close(self):  # Verbindung für die Prüfung offen lassen
+                pass
+        conn = sqlite3.connect(":memory:", factory=Keep)
+        item = {"id": "x-d1", "meta": {"dedup_kind": "document", "ids": [11, 22]}}
+        with unittest.mock.patch.object(radar_actions.dbmod, "connect", return_value=conn):
+            ok, _ = radar_actions.suppress_duplicate(item, "dublette-behalte-a")
+        self.assertTrue(ok)
+        row = conn.execute("SELECT item_id, canonical_id FROM dedup_suppressed").fetchone()
+        self.assertEqual(row, (22, 11))
+        ok, _ = radar_actions.suppress_duplicate({"id": "y", "meta": {}}, "dublette-behalte-b")
+        self.assertFalse(ok)

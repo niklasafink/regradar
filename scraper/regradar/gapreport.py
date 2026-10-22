@@ -677,9 +677,77 @@ def _esc(text: str) -> str:
     return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
+CODES = {
+    "d": ["eigenstaendig", "dublette-behalte-a", "dublette-behalte-b"],
+    "f": ["aufnehmen", "ignorieren"],
+    "s": ["neue-quelle", "abgedeckt", "ignorieren"],
+}
+
+
+def _radar_items(groups: List[dict], fw_gaps: List[dict],
+                 dedup_cases: List[dict], recos: Dict[str, dict]) -> List[dict]:
+    """Entscheidungspunkte für /api/radar, Schlüssel d1…/f1…/s1… wie in den
+    Empfehlungen. Id = Zeitstempel des Laufs + Schlüssel (erneuter Lauf am
+    selben Tag überschreibt nichts Bearbeitetes)."""
+    stamp = utcnow()[:16].replace("-", "").replace(":", "").replace("T", "t")
+    items: List[dict] = []
+    nr = 0
+
+    def reco(key: str) -> Optional[dict]:
+        r = recos.get(key)
+        return {"code": r["empfehlung"], "reason": r["grund"]} if r and r.get("empfehlung") else None
+
+    for i, c in enumerate(dedup_cases, 1):
+        nr += 1
+        items.append({
+            "id": "{}-d{}".format(stamp, i), "kind": "dublette", "nr": nr,
+            "title": "Dublette: " + _clean(c["titel"], 160),
+            "links": [{"label": "{}) {} {}".format(
+                letter, e["quelle"], _de_date(e["datum"]) or e["datum"]),
+                "url": e["url"]} for letter, e in zip("abcdef", c["eintraege"])],
+            "recommendation": reco("d{}".format(i)),
+            "meta": {"dedup_kind": "big4" if c["kind"] == "big4" else "document",
+                     "ids": [e.get("id") for e in c["eintraege"]]}})
+    for i, f in enumerate(fw_gaps, 1):
+        nr += 1
+        meta = " ".join(x for x in (f["rechtsakt"], "vom {}".format(f["datum"])
+                                    if f["datum"] else "") if x)
+        items.append({
+            "id": "{}-f{}".format(stamp, i), "kind": "rahmenwerk", "nr": nr,
+            "title": "Rahmenwerk: {}{}".format(f["name"], " ({})".format(meta) if meta else ""),
+            "detail": f["begruendung"],
+            "links": [{"label": m["titel"], "url": m["url"]} for m in f["meldungen"]],
+            "recommendation": reco("f{}".format(i)),
+            "meta": {"name": f["name"], "rechtsakt": f["rechtsakt"]}})
+    for i, g in enumerate(groups, 1):
+        nr += 1
+        items.append({
+            "id": "{}-s{}".format(stamp, i), "kind": "scraper", "nr": nr,
+            "title": "Scraper-Kandidat: " + g["thema"],
+            "detail": " ".join(x for x in (g.get("aktualitaet"), g.get("rahmenwerk")) if x),
+            "links": [{"label": "{} {}".format(a["firm"], _clean(a["title"], 120)),
+                       "url": a["url"]} for a in g["artikel"]],
+            "recommendation": reco("s{}".format(i)),
+            "meta": {"thema": g["thema"]}})
+    return items
+
+
+def _publish_radar_items(items: List[dict]) -> Dict[str, str]:
+    """Punkte an die Website geben; Rückgabe: Link je Id. Scheitert die
+    Website, kommt die Mail ohne Buttons (Antwortvorlage bleibt)."""
+    from . import radarapi
+    try:
+        return radarapi.upsert(items)
+    except RuntimeError as e:
+        print("Radar-Punkte nicht veröffentlicht (Mail ohne Buttons): {}".format(e))
+        return {}
+
+
 def _render_email(groups: List[dict], fw_gaps: List[dict],
                   dedup_cases: Optional[List[dict]] = None,
-                  recos: Optional[Dict[str, dict]] = None) -> str:
+                  recos: Optional[Dict[str, dict]] = None,
+                  links: Optional[Dict[str, str]] = None,
+                  item_ids: Optional[Dict[str, str]] = None) -> str:
     """Mail als durchnummerierte Prüf-Checkliste mit LLM-Empfehlung je Punkt.
     Am Ende steht eine Antwortvorlage (Klartext-Block) mit denselben Nummern
     und allen Details (Quellen, URLs, Begründungen, Empfehlung), die der
@@ -687,6 +755,8 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
     beantworten kann — die Entscheidungscodes stehen im Block selbst."""
     dedup_cases = dedup_cases or []
     recos = recos or {}
+    links = links or {}
+    item_ids = item_ids or {}
     nr = 0
     reply: List[str] = []   # Zeilen der Antwortvorlage
 
@@ -704,6 +774,18 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
             r["empfehlung"],
             " — {}".format(r["grund"]) if r["grund"] else ""))
 
+    def add_button(key: str) -> None:
+        """Button zur Entscheidungsseite (Direkt übernehmen, KI-Analyse, Anweisung)."""
+        url = links.get(item_ids.get(key, ""))
+        if not url:
+            return
+        parts.append(
+            '<p style="margin:8px 0 0"><a href="{}" style="display:inline-block;'
+            'background:#0f172a;color:#fff;text-decoration:none;padding:9px 20px;'
+            'border-radius:9999px;font-size:13px;font-weight:600">'
+            'Im Browser entscheiden</a></p>'.format(_esc(url)))
+        reply.append("    Entscheiden im Browser: {}".format(url))
+
     parts = [
         '<div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;color:#0f172a">',
         '<p style="font-size:18px"><strong>regulatory</strong><em>radar</em></p>',
@@ -718,9 +800,14 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
         summary.append("{} Scraper-Kandidat(en)".format(len(groups)))
     parts.append(
         '<p style="margin:16px 0"><strong>Checkliste: {} Punkte</strong> — {}. '
-        "Punkte der Reihe nach prüfen; die <strong>Antwortvorlage am Ende</strong> "
-        "nach VS Code kopieren und je Punkt die Entscheidung eintragen.</p>".format(
-            total, ", ".join(summary)))
+        "{}</p>".format(
+            total, ", ".join(summary),
+            "Je Punkt der Button <strong>Im Browser entscheiden</strong>: Empfehlung "
+            "übernehmen, KI-Analyse mit Vorschlag anfordern oder der KI per Textfeld "
+            "Anweisungen geben. Alternativ die <strong>Antwortvorlage am Ende</strong> "
+            "nach VS Code kopieren." if links else
+            "Punkte der Reihe nach prüfen; die <strong>Antwortvorlage am Ende</strong> "
+            "nach VS Code kopieren und je Punkt die Entscheidung eintragen."))
 
     if dedup_cases:
         parts.append(
@@ -754,6 +841,7 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
                 reply.append("       {}".format(e["url"]))
             parts.append("</ul>")
             add_reco("d{}".format(i))
+            add_button("d{}".format(i))
             reply.append("    Entscheidung [eigenstaendig | dublette-behalte-a | "
                          "dublette-behalte-b]: ")
             reply.append("    Kommentar: ")
@@ -799,6 +887,7 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
                     m["titel"]))
                 reply.append("      {}".format(m["url"]))
             add_reco("f{}".format(i))
+            add_button("f{}".format(i))
             reply.append("    Entscheidung [aufnehmen | ignorieren]: ")
             reply.append("    Kommentar: ")
             reply.append("")
@@ -851,6 +940,7 @@ def _render_email(groups: List[dict], fw_gaps: List[dict],
                 _clean(a["title"], 160)))
             reply.append("      {}".format(a["url"]))
         add_reco("s{}".format(i))
+        add_button("s{}".format(i))
         reply.append("    Entscheidung [neue-quelle | abgedeckt | ignorieren]: ")
         reply.append("    Kommentar: ")
         reply.append("")
@@ -941,7 +1031,11 @@ def run(conn: sqlite3.Connection, force: bool = False) -> dict:
         bits.append("{} unsichere Dublette(n)".format(len(dedup_cases)))
     subject = "Radar-Lücke: " + ", ".join(bits)
     recos = _recommendations(dedup_cases, fw_gaps, groups)
-    err = _send_email(subject, _render_email(groups, fw_gaps, dedup_cases, recos))
+    radar_items = _radar_items(groups, fw_gaps, dedup_cases, recos)
+    item_ids = {it["id"].split("-", 1)[1]: it["id"] for it in radar_items}
+    links = _publish_radar_items(radar_items)
+    err = _send_email(subject, _render_email(
+        groups, fw_gaps, dedup_cases, recos, links, item_ids))
     if err:
         # Nichts als gemeldet markieren — nächster Lauf versucht es erneut.
         return {"status": "Mail fehlgeschlagen: {}".format(err), "gaps": len(gaps)}

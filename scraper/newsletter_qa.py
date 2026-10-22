@@ -215,7 +215,8 @@ def run_claude(pending: List[dict], check_only: bool) -> Tuple[bool, bool, str, 
     return True, ok, report, meta
 
 
-def apply_changes(before_tracked: Set[str], before_untracked: Set[str]) -> Tuple[bool, str, Optional[str]]:
+def apply_changes(before_tracked: Set[str], before_untracked: Set[str],
+                  subject: Optional[str] = None) -> Tuple[bool, str, Optional[str]]:
     """Änderungen der QS testen, committen und pushen.
     (in Ordnung, Hinweis für den Bericht, neuer Commit-SHA oder None)."""
     tracked, untracked = git_changes()
@@ -241,7 +242,7 @@ def apply_changes(before_tracked: Set[str], before_untracked: Set[str]) -> Tuple
 
     tracked, untracked = git_changes()
     paths = sorted(p for p in (tracked - before_tracked) | (untracked - before_untracked) if allowed(p))
-    msg = "Newsletter-QS {}: Korrekturen vor der Freigabe\n\nAutomatisch nach scraper/NEWSLETTER_QA.md.".format(
+    msg = subject or "Newsletter-QS {}: Korrekturen vor der Freigabe\n\nAutomatisch nach scraper/NEWSLETTER_QA.md.".format(
         dt.date.today().strftime("%d.%m.%Y"))
     for cmd in (["git", "add", "--"] + paths, ["git", "commit", "-m", msg], ["git", "push", "origin", "main"]):
         rc, out = run(cmd, 120)

@@ -112,4 +112,7 @@ fi
 # Lauf-Sperre, weil sie committet.
 cd "$SCRAPER"
 /usr/bin/python3 newsletter_qa.py || echo "newsletter-qa fehlgeschlagen (weiter)"
+# Radar-Entscheidungen aus der Checklisten-Mail: KI-Analysen erstellen und
+# freigegebene Punkte umsetzen (Anweisung: scraper/RADAR_ACTIONS.md).
+/usr/bin/python3 radar_actions.py || echo "radar-actions fehlgeschlagen (weiter)"
 exit $RC
