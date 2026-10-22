@@ -311,6 +311,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-10-23": {
+   "window": [
+    "2026-10-22"
+   ],
+   "keys": [
+    "esma-streamlines-several-q-as-as-part-of-simplification-efforts"
+   ],
+   "hook": "Die ESMA räumt auf: Veraltete Q&As zu MiFID II, MAR und SSR wurden gestrichen.",
+   "folge": "Die ESMA hat ihre Q&As zu MiFID II, MAR und SSR im Rahmen ihrer SBR-Initiative gestrafft. Finanzunternehmen müssen die aktualisierten Q&As zusammen mit anderen ESMA-Leitlinien für eine umfassende Auslegung der Regeln heranziehen.",
+   "cover": "ESMA: Q&As zu MiFID II, MAR und SSR gestrafft",
+   "zeilen": [],
+   "frage": "Wie oft prüfen Sie, ob Ihre internen Leitlinien noch den aktuellen ESMA-Q&As entsprechen?",
+   "top": "esma-streamlines-several-q-as-as-part-of-simplification-efforts",
+   "kern": {
+    "esma-streamlines-several-q-as-as-part-of-simplification-efforts": "Die ESMA hat ihre Q&As zu MiFID II, MAR und SSR gestrafft, um veraltete und doppelte Leitlinien zu entfernen und die Relevanz für Finanzunternehmen zu sichern."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:07:39Z",
+  "generated_at": "2026-10-22T16:06:35Z",
   "updates": {
     "idd": [
       {
@@ -140,6 +140,127 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
         "imp": "medium",
         "refnum": "Ares(2026)6942470"
+      }
+    ],
+    "mar": [
+      {
+        "d": "22.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA strafft Q&As zu MiFID II, MAR und SSR",
+          "en": "ESMA streamlines Q&As on MiFID II, MAR, and SSR"
+        },
+        "sl": "esma-streamlines-several-q-as-as-part-of-simplification-efforts",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat ihre Fragen und Antworten (Q&As) zur Marktstruktur unter MiFID II, der Marktmissbrauchsverordnung (MAR) und der Leerverkaufsverordnung (SSR) aktualisiert. Im Rahmen ihrer Initiative zur Vereinfachung und Reduzierung des Verwaltungsaufwands (SBR) wurden veraltete, doppelte und nicht mehr relevante Leitlinien entfernt.\n\nZiel der Überarbeitung war es, Q&As zu identifizieren, die aufgrund von Gesetzesänderungen oder durch andere ESMA-Leitlinien überflüssig geworden sind. Mehrere Q&As wurden daraufhin zurückgezogen oder geändert, auch wenn die gleichen Sachverhalte bereits in anderen ESMA-Publikationen wie Supervisory Briefings oder Stellungnahmen behandelt werden.\n\nDie Initiative soll unnötige Komplexität reduzieren, überholte Leitlinien entfernen und sicherstellen, dass die ESMA-Q&As relevant, verhältnismäßig und konsistent mit dem aktuellen Rechtsrahmen bleiben. Finanzunternehmen sollten die aktualisierten Q&As zusammen mit anderen ESMA-Leitlinien für eine umfassende Auslegung der Regeln heranziehen.",
+          "en": "The European Securities and Markets Authority (ESMA) has updated its Questions and Answers (Q&As) on market structure under MiFID II, the Market Abuse Regulation (MAR), and the Short Selling Regulation (SSR). As part of its Simplification and Burden Reduction (SBR) initiative, outdated, duplicative, and no longer relevant guidance has been removed.\n\nThe revision aimed to identify Q&As that have become obsolete due to legislative amendments or are covered by other ESMA guidance. Consequently, several Q&As have been withdrawn or amended, including instances where the same issues are addressed in other ESMA publications such as supervisory briefings and opinions.\n\nThe initiative's goal is to reduce unnecessary complexity, remove obsolete guidance, and ensure that ESMA's Q&As remain relevant, proportionate, and consistent with the current legislative framework. Financial firms should refer to the updated Q&As along with other ESMA guidance for the most comprehensive interpretation of the applicable rules."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-streamlines-several-qas-part-simplification-efforts",
+        "imp": "low"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
+          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
+        },
+        "sl": "reporting-instructions-midas-system",
+        "s": {
+          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
+          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
+        "imp": "high",
+        "refnum": "ESMA65-955014868-17690"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zu den MAR-Leitlinien zur Offenlegungsverzögerung von Insiderinformationen (ESMA74-268544963-1718)",
+          "en": "Final Report on MAR Guidelines on Delay in the Disclosure of Inside Information (ESMA74-268544963-1718)"
+        },
+        "sl": "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
+        "s": {
+          "de": "Dieser Abschlussbericht der ESMA befasst sich mit den Leitlinien zur Offenlegungsverzögerung von Insiderinformationen gemäß der Marktmissbrauchsverordnung (MAR). Er berücksichtigt die Änderungen durch den Listing Act, der darauf abzielt, den Zugang zu öffentlichen Kapitalmärkten für EU-Unternehmen, insbesondere KMU, zu erleichtern und den Verwaltungsaufwand zu reduzieren.\n\nDie überarbeiteten Leitlinien präzisieren die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen. Dies betrifft insbesondere Situationen, die sich aus langwierigen Prozessen ergeben, Anordnungen von Behörden zur Vertraulichkeit, die Notwendigkeit, weitere Informationen zu sammeln, oder das Risiko, eine Geschäftsmöglichkeit zu verlieren. Ziel ist es, die Rechtssicherheit für Emittenten zu erhöhen und gleichzeitig den Schutz der Anleger zu gewährleisten.\n\nDer Bericht enthält Vorschläge für Änderungen an den bestehenden Leitlinien, eine Kosten-Nutzen-Analyse und berücksichtigt Rückmeldungen von Interessengruppen. Die Anpassungen sollen sicherstellen, dass die MAR-Vorschriften im Einklang mit den Zielen des Listing Act stehen und die Attraktivität der EU-Kapitalmärkte steigern.",
+          "en": "This ESMA final report addresses the guidelines on delaying the disclosure of inside information under the Market Abuse Regulation (MAR). It takes into account the changes introduced by the Listing Act, which aims to facilitate access to public capital markets for EU companies, especially SMEs, and reduce administrative burdens.\n\nThe revised guidelines clarify the conditions under which issuers may delay the disclosure of inside information. This particularly concerns situations arising from protracted processes, public authority orders to maintain confidentiality, the need to gather further information, or the risk of losing a business opportunity. The objective is to increase legal certainty for issuers while ensuring investor protection.\n\nThe report includes proposed amendments to the existing guidelines, a cost-benefit analysis, and incorporates feedback from stakeholders. The adjustments are intended to ensure that MAR provisions align with the objectives of the Listing Act and enhance the attractiveness of EU capital markets."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-mar-guidelines-delay-disclosure-inside-information",
+        "imp": "high",
+        "refnum": "ESMA74-268544963-1718"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Überblick über Sanktionen und Maßnahmen nach EU-Recht im Jahr 2025 (ESMA43-502934634-2953)",
+          "en": "ESMA: Enforcement Snapshot of Sanctions and Measures under EU Acts in 2025 (ESMA43-502934634-2953)"
+        },
+        "sl": "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025",
+        "s": {
+          "de": "Die ESMA hat einen Überblick über die von den nationalen zuständigen Behörden (NCAs) im Jahr 2025 verhängten Sanktionen und Maßnahmen gemäß verschiedenen EU-Rechtsakten veröffentlicht. Dieser „Enforcement Snapshot“ fasst die Durchsetzungsaktivitäten in Bereichen wie Marktmissbrauch, Transparenz und Beaufsichtigung zusammen.\n\nIm Jahr 2025 wurden von 29 NCAs insgesamt 955 administrative Sanktionen und Maßnahmen verhängt. Die höchste Einzelstrafe betrug 7,4 Millionen Euro, während die Gesamtsumme der verhängten Geldbußen 81,9 Millionen Euro erreichte. Die größten Anteile entfielen auf MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro).\n\nDie Übersicht zeigt die Verteilung der Geldbußen auf verschiedene EU-Rechtsakte, darunter CSDR, MiCA, EMIR, Prospektverordnung, OGAW, AIFMD, ECSPR und SFTR. Es wird betont, dass diese Darstellung keine vollständige Abbildung aller Durchsetzungsaktivitäten der NCAs ist, sondern eine Momentaufnahme der Sanktionen unter bestimmten EU-Texten im Zuständigkeitsbereich der ESMA.",
+          "en": "ESMA has published an overview of sanctions and measures imposed by National Competent Authorities (NCAs) in 2025 under various EU acts. This 'Enforcement Snapshot' summarizes enforcement activities in areas such as market abuse, transparency, and supervisory convergence.\n\nIn 2025, a total of 955 administrative sanctions and measures were imposed by 29 NCAs. The highest single fine amounted to 7.4 million euros, while the total value of administrative fines reached 81.9 million euros. The largest portions were attributed to MiFID II/MiFIR (36.6 million euros) and MAR (33.4 million euros).\n\nThe overview details the distribution of fines across various EU acts, including CSDR, MiCA, EMIR, Prospectus Regulation, UCITS, AIFMD, ECSPR, and SFTR. It is emphasized that this representation is not a complete picture of all NCA enforcement activities but rather a snapshot of sanctions under specific EU texts within ESMA's remit."
+        },
+        "url": "https://www.esma.europa.eu/document/enforcement-snapshot-sanctions-and-measures-under-eu-acts-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2953"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Konsolidierter Sanktionsbericht – Tabelle der für 2025 gemeldeten Sanktionen (ESMA43-502934634-2993)",
+          "en": "Consolidated sanctions report – Table of sanctions reported for 2025 (ESMA43-502934634-2993)"
+        },
+        "sl": "consolidated-sanctions-report-table-of-sanctions-reported-for-2025",
+        "s": {
+          "de": "Dieses Dokument ist ein konsolidierter Sanktionsbericht der ESMA, der eine Tabelle der für das Jahr 2025 gemeldeten Sanktionen enthält. Es dient als Referenzdokument im Kontext von Marktmissbrauch, Aufsichtskonvergenz und Transparenz.\n\nDer Bericht ist relevant für Finanzinstitute und Marktteilnehmer, die den EU-Vorschriften zur Marktintegrität unterliegen. Er bietet einen Überblick über die von den Mitgliedstaaten verhängten Sanktionen und Maßnahmen und kann zur Einschätzung von Compliance-Risiken und zur Anpassung interner Kontrollen genutzt werden.\n\nEs handelt sich um ein Referenzdokument ohne spezifische Fristen für die Umsetzung. Es ergänzt den umfassenderen Bericht über die in den Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen.",
+          "en": "This document is a consolidated sanctions report from ESMA, containing a table of sanctions reported for the year 2025. It serves as a reference document in the context of market abuse, supervisory convergence, and transparency.\n\nThe report is relevant for financial institutions and market participants subject to EU market integrity regulations. It provides an overview of sanctions and measures imposed by Member States and can be used to assess compliance risks and adjust internal controls.\n\nThis is a reference document with no specific implementation deadlines. It complements the broader report on sanctions and measures imposed in Member States in 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/consolidated-sanctions-report-table-sanctions-reported-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2993"
+      },
+      {
+        "d": "15.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Bericht über Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025",
+          "en": "Report on Sanctions and Measures Imposed in EU/EEA Member States in 2025"
+        },
+        "sl": "report-on-sanctions-and-measures-imposed-in-member-states-in-2025",
+        "s": {
+          "de": "Dieser Bericht der ESMA gibt einen Überblick über die in den EU-/EWR-Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen im Finanzsektor. Insgesamt wurden 955 administrative Sanktionen und Maßnahmen mit einer Gesamtsumme von 81.896.178 Euro an Geldbußen verhängt. Die Durchsetzungsaktivitäten konzentrierten sich hauptsächlich auf Verstöße gegen die Marktmissbrauchsverordnung (MAR) und die MiFID II/MiFIR.\n\nDie höchsten Sanktionszahlen betrafen die MAR (350) und die AIFMD (268), während die höchsten Geldbußen unter MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro) verhängt wurden. Deutschland verhängte die höchsten Geldbußen (23,3 Mio. Euro), gefolgt von Frankreich und Spanien. Erstmals wurden auch Sanktionen unter MiCA und SFTR verhängt.\n\nDer Bericht hebt weiterhin Diskrepanzen bei der Anwendung von Sanktionsbefugnissen zwischen den Mitgliedstaaten hervor, sowohl hinsichtlich der Höhe der Geldbußen als auch der Art und Anzahl der Maßnahmen. Die Durchsetzungsaktivitäten bleiben auf wenige Rechtsakte und Mitgliedstaaten konzentriert, was auf eine uneinheitliche Anwendung der Vorschriften hindeutet.",
+          "en": "This ESMA report provides an overview of sanctions and measures imposed in EU/EEA Member States in the financial sector during 2025. A total of 955 administrative sanctions and measures were imposed, with an aggregate value of administrative fines amounting to EUR 81,896,178. Enforcement activities primarily focused on breaches of the Market Abuse Regulation (MAR) and MiFID II/MiFIR.\n\nThe highest number of sanctions related to MAR (350) and AIFMD (268), while the largest fines were imposed under MiFID II/MiFIR (EUR 36.6 million) and MAR (EUR 33.4 million). Germany imposed the highest administrative fines (EUR 23.3 million), followed by France and Spain. For the first time, sanctions were also issued under MiCA and SFTR.\n\nThe report continues to highlight discrepancies in the use of sanctioning powers across Member States, both in terms of fine amounts and the types and numbers of measures. Enforcement activity remains concentrated in a limited set of legislative acts and a few Member States, indicating inconsistent application of regulations."
+        },
+        "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
+        "imp": "low",
+        "refnum": "ESMA43-502934634-2902"
       }
     ],
     "mica": [
@@ -400,128 +521,6 @@
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
         "imp": "high"
-      }
-    ],
-    "mar": [
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
-          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
-        },
-        "sl": "reporting-instructions-midas-system",
-        "s": {
-          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
-          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
-        },
-        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
-        "imp": "high",
-        "refnum": "ESMA65-955014868-17690"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Abschlussbericht zu den MAR-Leitlinien zur Offenlegungsverzögerung von Insiderinformationen (ESMA74-268544963-1718)",
-          "en": "Final Report on MAR Guidelines on Delay in the Disclosure of Inside Information (ESMA74-268544963-1718)"
-        },
-        "sl": "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
-        "s": {
-          "de": "Dieser Abschlussbericht der ESMA befasst sich mit den Leitlinien zur Offenlegungsverzögerung von Insiderinformationen gemäß der Marktmissbrauchsverordnung (MAR). Er berücksichtigt die Änderungen durch den Listing Act, der darauf abzielt, den Zugang zu öffentlichen Kapitalmärkten für EU-Unternehmen, insbesondere KMU, zu erleichtern und den Verwaltungsaufwand zu reduzieren.\n\nDie überarbeiteten Leitlinien präzisieren die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen. Dies betrifft insbesondere Situationen, die sich aus langwierigen Prozessen ergeben, Anordnungen von Behörden zur Vertraulichkeit, die Notwendigkeit, weitere Informationen zu sammeln, oder das Risiko, eine Geschäftsmöglichkeit zu verlieren. Ziel ist es, die Rechtssicherheit für Emittenten zu erhöhen und gleichzeitig den Schutz der Anleger zu gewährleisten.\n\nDer Bericht enthält Vorschläge für Änderungen an den bestehenden Leitlinien, eine Kosten-Nutzen-Analyse und berücksichtigt Rückmeldungen von Interessengruppen. Die Anpassungen sollen sicherstellen, dass die MAR-Vorschriften im Einklang mit den Zielen des Listing Act stehen und die Attraktivität der EU-Kapitalmärkte steigern.",
-          "en": "This ESMA final report addresses the guidelines on delaying the disclosure of inside information under the Market Abuse Regulation (MAR). It takes into account the changes introduced by the Listing Act, which aims to facilitate access to public capital markets for EU companies, especially SMEs, and reduce administrative burdens.\n\nThe revised guidelines clarify the conditions under which issuers may delay the disclosure of inside information. This particularly concerns situations arising from protracted processes, public authority orders to maintain confidentiality, the need to gather further information, or the risk of losing a business opportunity. The objective is to increase legal certainty for issuers while ensuring investor protection.\n\nThe report includes proposed amendments to the existing guidelines, a cost-benefit analysis, and incorporates feedback from stakeholders. The adjustments are intended to ensure that MAR provisions align with the objectives of the Listing Act and enhance the attractiveness of EU capital markets."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-mar-guidelines-delay-disclosure-inside-information",
-        "imp": "high",
-        "refnum": "ESMA74-268544963-1718"
-      },
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Überblick über Sanktionen und Maßnahmen nach EU-Recht im Jahr 2025 (ESMA43-502934634-2953)",
-          "en": "ESMA: Enforcement Snapshot of Sanctions and Measures under EU Acts in 2025 (ESMA43-502934634-2953)"
-        },
-        "sl": "enforcement-snapshot-sanctions-and-measures-under-eu-acts-in-2025",
-        "s": {
-          "de": "Die ESMA hat einen Überblick über die von den nationalen zuständigen Behörden (NCAs) im Jahr 2025 verhängten Sanktionen und Maßnahmen gemäß verschiedenen EU-Rechtsakten veröffentlicht. Dieser „Enforcement Snapshot“ fasst die Durchsetzungsaktivitäten in Bereichen wie Marktmissbrauch, Transparenz und Beaufsichtigung zusammen.\n\nIm Jahr 2025 wurden von 29 NCAs insgesamt 955 administrative Sanktionen und Maßnahmen verhängt. Die höchste Einzelstrafe betrug 7,4 Millionen Euro, während die Gesamtsumme der verhängten Geldbußen 81,9 Millionen Euro erreichte. Die größten Anteile entfielen auf MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro).\n\nDie Übersicht zeigt die Verteilung der Geldbußen auf verschiedene EU-Rechtsakte, darunter CSDR, MiCA, EMIR, Prospektverordnung, OGAW, AIFMD, ECSPR und SFTR. Es wird betont, dass diese Darstellung keine vollständige Abbildung aller Durchsetzungsaktivitäten der NCAs ist, sondern eine Momentaufnahme der Sanktionen unter bestimmten EU-Texten im Zuständigkeitsbereich der ESMA.",
-          "en": "ESMA has published an overview of sanctions and measures imposed by National Competent Authorities (NCAs) in 2025 under various EU acts. This 'Enforcement Snapshot' summarizes enforcement activities in areas such as market abuse, transparency, and supervisory convergence.\n\nIn 2025, a total of 955 administrative sanctions and measures were imposed by 29 NCAs. The highest single fine amounted to 7.4 million euros, while the total value of administrative fines reached 81.9 million euros. The largest portions were attributed to MiFID II/MiFIR (36.6 million euros) and MAR (33.4 million euros).\n\nThe overview details the distribution of fines across various EU acts, including CSDR, MiCA, EMIR, Prospectus Regulation, UCITS, AIFMD, ECSPR, and SFTR. It is emphasized that this representation is not a complete picture of all NCA enforcement activities but rather a snapshot of sanctions under specific EU texts within ESMA's remit."
-        },
-        "url": "https://www.esma.europa.eu/document/enforcement-snapshot-sanctions-and-measures-under-eu-acts-2025",
-        "imp": "low",
-        "refnum": "ESMA43-502934634-2953"
-      },
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Konsolidierter Sanktionsbericht – Tabelle der für 2025 gemeldeten Sanktionen (ESMA43-502934634-2993)",
-          "en": "Consolidated sanctions report – Table of sanctions reported for 2025 (ESMA43-502934634-2993)"
-        },
-        "sl": "consolidated-sanctions-report-table-of-sanctions-reported-for-2025",
-        "s": {
-          "de": "Dieses Dokument ist ein konsolidierter Sanktionsbericht der ESMA, der eine Tabelle der für das Jahr 2025 gemeldeten Sanktionen enthält. Es dient als Referenzdokument im Kontext von Marktmissbrauch, Aufsichtskonvergenz und Transparenz.\n\nDer Bericht ist relevant für Finanzinstitute und Marktteilnehmer, die den EU-Vorschriften zur Marktintegrität unterliegen. Er bietet einen Überblick über die von den Mitgliedstaaten verhängten Sanktionen und Maßnahmen und kann zur Einschätzung von Compliance-Risiken und zur Anpassung interner Kontrollen genutzt werden.\n\nEs handelt sich um ein Referenzdokument ohne spezifische Fristen für die Umsetzung. Es ergänzt den umfassenderen Bericht über die in den Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen.",
-          "en": "This document is a consolidated sanctions report from ESMA, containing a table of sanctions reported for the year 2025. It serves as a reference document in the context of market abuse, supervisory convergence, and transparency.\n\nThe report is relevant for financial institutions and market participants subject to EU market integrity regulations. It provides an overview of sanctions and measures imposed by Member States and can be used to assess compliance risks and adjust internal controls.\n\nThis is a reference document with no specific implementation deadlines. It complements the broader report on sanctions and measures imposed in Member States in 2025."
-        },
-        "url": "https://www.esma.europa.eu/document/consolidated-sanctions-report-table-sanctions-reported-2025",
-        "imp": "low",
-        "refnum": "ESMA43-502934634-2993"
-      },
-      {
-        "d": "15.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Bericht über Sanktionen und Maßnahmen in EU-/EWR-Mitgliedstaaten im Jahr 2025",
-          "en": "Report on Sanctions and Measures Imposed in EU/EEA Member States in 2025"
-        },
-        "sl": "report-on-sanctions-and-measures-imposed-in-member-states-in-2025",
-        "s": {
-          "de": "Dieser Bericht der ESMA gibt einen Überblick über die in den EU-/EWR-Mitgliedstaaten im Jahr 2025 verhängten Sanktionen und Maßnahmen im Finanzsektor. Insgesamt wurden 955 administrative Sanktionen und Maßnahmen mit einer Gesamtsumme von 81.896.178 Euro an Geldbußen verhängt. Die Durchsetzungsaktivitäten konzentrierten sich hauptsächlich auf Verstöße gegen die Marktmissbrauchsverordnung (MAR) und die MiFID II/MiFIR.\n\nDie höchsten Sanktionszahlen betrafen die MAR (350) und die AIFMD (268), während die höchsten Geldbußen unter MiFID II/MiFIR (36,6 Mio. Euro) und MAR (33,4 Mio. Euro) verhängt wurden. Deutschland verhängte die höchsten Geldbußen (23,3 Mio. Euro), gefolgt von Frankreich und Spanien. Erstmals wurden auch Sanktionen unter MiCA und SFTR verhängt.\n\nDer Bericht hebt weiterhin Diskrepanzen bei der Anwendung von Sanktionsbefugnissen zwischen den Mitgliedstaaten hervor, sowohl hinsichtlich der Höhe der Geldbußen als auch der Art und Anzahl der Maßnahmen. Die Durchsetzungsaktivitäten bleiben auf wenige Rechtsakte und Mitgliedstaaten konzentriert, was auf eine uneinheitliche Anwendung der Vorschriften hindeutet.",
-          "en": "This ESMA report provides an overview of sanctions and measures imposed in EU/EEA Member States in the financial sector during 2025. A total of 955 administrative sanctions and measures were imposed, with an aggregate value of administrative fines amounting to EUR 81,896,178. Enforcement activities primarily focused on breaches of the Market Abuse Regulation (MAR) and MiFID II/MiFIR.\n\nThe highest number of sanctions related to MAR (350) and AIFMD (268), while the largest fines were imposed under MiFID II/MiFIR (EUR 36.6 million) and MAR (EUR 33.4 million). Germany imposed the highest administrative fines (EUR 23.3 million), followed by France and Spain. For the first time, sanctions were also issued under MiCA and SFTR.\n\nThe report continues to highlight discrepancies in the use of sanctioning powers across Member States, both in terms of fine amounts and the types and numbers of measures. Enforcement activity remains concentrated in a limited set of legislative acts and a few Member States, indicating inconsistent application of regulations."
-        },
-        "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
-        "imp": "low",
-        "refnum": "ESMA43-502934634-2902"
-      },
-      {
-        "d": "07.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
-          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
-        },
-        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
-          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
-        },
-        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
-        "imp": "medium",
-        "refnum": "ESMA74-268544963-1748"
       }
     ],
     "emir": [
