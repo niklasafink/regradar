@@ -1,29 +1,5 @@
 {
  "posts": {
-  "2026-10-08": {
-   "window": [
-    "2026-10-07"
-   ],
-   "keys": [
-    "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am",
-    "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr"
-   ],
-   "hook": "Die EU-Aufsicht baut eine zentrale Datenbank für Geldwäsche- und Terrorismusfinanzierungsdaten auf.",
-   "folge": "Die AMLA konsultiert Entwürfe für technische Regulierungsstandards (RTS) zur neuen Datenbank. Institute sind indirekt betroffen, da die Aufsicht effektiver wird.",
-   "cover": "AMLA: Konsultation zu zentraler AML/CFT-Datenbank",
-   "zeilen": [
-    "ESMA: Zugang zu Drittland-CSDs für EU-Marktteilnehmer über 17.01.2027 hinaus gesichert"
-   ],
-   "frage": "Wie stellen Sie sicher, dass Ihre AML/CFT-Daten für eine effektivere Aufsicht bereit sind?",
-   "top": "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am",
-   "kern": {
-    "consultation-via-a-public-hearing-on-the-draft-rts-for-establishing-a-central-am": "Die AMLA konsultiert bis zum 03.11.2026 Entwürfe für technische Regulierungsstandards (RTS) zur Einrichtung einer zentralen AML/CFT-Datenbank, die die Aufsicht in der EU verbessern soll.",
-    "esma-clarifies-access-for-eu-market-participants-to-the-services-of-third-countr": "Die ESMA stellt klar, dass EU-Marktteilnehmer auch nach dem 17.01.2027 Zugang zu Drittland-CSDs haben werden, bis die Gesetzgebung zur Verlängerung der Übergangsregelung abgeschlossen ist."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-09": {
    "window": [
     "2026-10-08"
