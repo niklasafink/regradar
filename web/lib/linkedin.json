@@ -317,16 +317,20 @@
     "2026-10-22"
    ],
    "keys": [
-    "esma-streamlines-several-q-as-as-part-of-simplification-efforts"
+    "esma-streamlines-several-q-as-as-part-of-simplification-efforts",
+    "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec"
    ],
-   "hook": "Die ESMA räumt auf: Veraltete Q&As zu MiFID II, MAR und SSR wurden gestrichen.",
-   "folge": "Die ESMA hat ihre Q&As zu MiFID II, MAR und SSR im Rahmen ihrer SBR-Initiative gestrafft. Finanzunternehmen müssen die aktualisierten Q&As zusammen mit anderen ESMA-Leitlinien für eine umfassende Auslegung der Regeln heranziehen.",
-   "cover": "ESMA: Q&As zu MiFID II, MAR und SSR gestrafft",
-   "zeilen": [],
-   "frage": "Wie oft prüfen Sie, ob Ihre internen Leitlinien noch den aktuellen ESMA-Q&As entsprechen?",
-   "top": "esma-streamlines-several-q-as-as-part-of-simplification-efforts",
+   "hook": "Die EU vereinfacht den Verbriefungsrahmen, um Investitionen anzukurbeln und die Finanzstabilität zu wahren.",
+   "folge": "Die politische Einigung zur Überarbeitung des EU-Verbriefungsrahmens soll Verbriefungsaktivitäten fördern. Dies bedeutet für Institute eine Vereinfachung der Verbriefungsverordnung durch den Abbau operativer Belastungen und gestraffte Due-Diligence- und Transparenzanforderungen.",
+   "cover": "EU-Kommission: Einigung zur Vereinfachung des Verbriefungsrahmens",
+   "zeilen": [
+    "ESMA: Q&As zu MiFID II, MAR und SSR wurden gestrafft, um veraltete Leitlinien zu entfernen"
+   ],
+   "frage": "Welche Vereinfachungen im Verbriefungsrahmen würden Ihre Prozesse am stärksten entlasten?",
+   "top": "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec",
    "kern": {
-    "esma-streamlines-several-q-as-as-part-of-simplification-efforts": "Die ESMA hat ihre Q&As zu MiFID II, MAR und SSR gestrafft, um veraltete und doppelte Leitlinien zu entfernen und die Relevanz für Finanzunternehmen zu sichern."
+    "esma-streamlines-several-q-as-as-part-of-simplification-efforts": "Die ESMA hat ihre Q&As zu MiFID II, MAR und SSR aktualisiert, indem sie veraltete und doppelte Leitlinien im Rahmen ihrer SBR-Initiative entfernt hat, um Relevanz und Konsistenz zu gewährleisten.",
+    "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec": "Die EU-Kommission begrüßt die politische Einigung zur Überarbeitung des Verbriefungsrahmens, die operative Belastungen abbaut und Due-Diligence- sowie Transparenzanforderungen strafft, um Verbriefungen zu fördern."
    },
    "doppelt": [],
    "fmt": 5,

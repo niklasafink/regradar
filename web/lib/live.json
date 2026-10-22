@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T16:06:35Z",
+  "generated_at": "2026-10-22T17:07:57Z",
   "updates": {
     "idd": [
       {
@@ -261,6 +261,27 @@
         "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
         "imp": "low",
         "refnum": "ESMA43-502934634-2902"
+      }
+    ],
+    "securitisation": [
+      {
+        "d": "22.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Politische Einigung zur Überarbeitung des EU-Verbriefungsrahmens erzielt",
+          "en": "Political Agreement Reached on Review of EU Securitisation Framework"
+        },
+        "sl": "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec",
+        "s": {
+          "de": "Die Europäische Kommission begrüßt die politische Einigung zwischen Parlament und Rat zur Überarbeitung des EU-Verbriefungsrahmens. Ziel ist es, Verbriefungsaktivitäten in der EU zu fördern und gleichzeitig die Finanzstabilität zu wahren.\n\nDie Einigung ist das erste legislative Ergebnis der Spar- und Investitionsunion (SIU). Sie soll die Kanalisierung von Ersparnissen in produktive Investitionen über Kapitalmärkte und das Bankensystem verbessern. Ein stärkerer Verbriefungsmarkt soll Finanzierungsquellen diversifizieren, die Risikoteilung verbessern und zusätzliche Kredite für Haushalte, Unternehmen sowie KMU ermöglichen. Die Änderungen vereinfachen die Verbriefungsverordnung durch den Abbau operativer Belastungen und die Straffung von Due-Diligence- und Transparenzanforderungen. Zudem wird die Eigenkapitalverordnung angepasst, um die aufsichtsrechtliche Behandlung von Verbriefungen risikosensitiver zu gestalten.\n\nDer Vorschlag muss nun technisch finalisiert und formell von Parlament und Rat angenommen werden. Nach der Veröffentlichung im Amtsblatt der EU treten die Änderungen sofort in Kraft.",
+          "en": "The European Commission welcomes the political agreement reached between the Parliament and the Council on the review of the EU Securitisation Framework. The aim is to support securitisation activity in the EU while safeguarding financial stability.\n\nThis agreement is the first legislative deliverable under the Savings and Investments Union (SIU), which seeks to better channel savings into productive investment through capital markets and the banking system. A stronger securitisation market is expected to diversify funding sources, enhance risk-sharing, and support additional lending to households, businesses, and SMEs. The amendments simplify the Securitisation Regulation by reducing operational burdens and streamlining due diligence and transparency requirements. Furthermore, the Capital Requirements Regulation will be amended to make the prudential treatment of securitisations more risk-sensitive.\n\nThe proposal now awaits technical finalisation and formal approval by both the Parliament and Council. Once published in the Official Journal of the EU, the amendments will enter into force immediately."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
+        "imp": "medium"
       }
     ],
     "mica": [
