@@ -20,6 +20,10 @@ WEB_LIVE_PATH = os.path.join(
 WEB_SOURCES_PATH = os.path.join(os.path.dirname(WEB_LIVE_PATH), "sources.json")
 
 MAX_PER_FRAMEWORK = 6
+# Das BIS-Rahmenwerk bündelt vier Quellen (Basler Ausschuss, CPMI, FSI,
+# Pressemitteilungen); die Chronologie in data.ts endet vor dem Zeitfenster
+# des Scrapers (zwei Listenseiten), daher mehr Live-Einträge als üblich.
+MAX_PER_FRAMEWORK_BY_ID = {"bcbs": 12}
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
 FRAMEWORK_RULES = [
@@ -239,6 +243,12 @@ FRAMEWORK_RULES = [
     ("idd", r"versicherungsvertrieb|insurance distribution|"
            r"versicherungsvermittl|insurance intermediar|\bibips?\b|versicherungsanlageprodukt|insurance-based investment|versicherungsmakler"),
     ("ebaict", r"guidelines on ict and security risk|leitlinien zu ikt- und sicherheitsrisik"),
+    # BCBS 239 / RDARR: Aufsichtsthema der EZB, der BaFin (MaRisk AT 4.3.4) und
+    # der Beratungshäuser, Ursprung ist der Basler Ausschuss. Bewusst eng:
+    # ein bloßes "Basel" bleibt bei crr3 (EU-Umsetzung); BIS-Dokumente selbst
+    # kommen über SOURCE_RULES.
+    ("bcbs", r"bcbs[\s-]*239|risk data aggregation|\brdarr\b|risikodatenaggregation|"
+             r"basel committee on banking supervision|basler ausschuss"),
     ("crr3", r"\bcrr\b|\bcrd\b|eigenmittel|\bbasel\b|output floor|own funds|kapitalpuffer|capital requirement|"
             r"basel (iii|iv|3|4)|kreditrisiko|credit risk|liquidity coverage|\blcr\b|\bnsfr\b|leverage ratio|verschuldungsquote|\bkwg\b|kreditwesengesetz|\bsrep\b|\bicaap\b|\bilaap\b|bankenpaket|banking package|eigenkapitalanforderung|risikogewichtete|risk-weighted|"
             # BRUBEG (CRD-VI-Umsetzung im KWG): Kurzname, „Bankenrichtlinie(n)"
@@ -260,7 +270,26 @@ FRAMEWORK_RULES = [
 # Manager sichtbar); Weiterleitungen von EU-Texten (DORA-Rundschreiben,
 # MiCA-, ESMA-, FATF-Meldungen) kommen über die EU-Quellen selbst und
 # entfallen hier – siehe EXCLUSIVE_SOURCES in _classify.
+# RCAP-Bewertungen einzelner Mitgliedsländer (Kanada, Japan …) und die dazu
+# gehörenden Pressemitteilungen betreffen keine EU-Institute; nur Bewertungen
+# der EU bzw. Deutschlands bleiben. QIS-Monitoring ist Statistik.
+BIS_FOREIGN_RCAP = (
+    r"^(?![\s\S]*(european union|\beu\b|germany|euro area))[\s\S]*"
+    r"(regulatory consistency assessment|\brcap\b|\bfinds\b[^.]{0,120}\bcompliant\b)")
+# Marker für den Relevanzfilter (llmfilter.py): BIS-Meldungen werden anders
+# bewertet als sonstige unverbindliche Berichte internationaler Standardsetzer.
+BIS_SOURCES = {"bis", "bis_cpmi", "bis_fsi", "bis_press"}
+LLM_BIS_PREFIX = "[BIS] "
+BIS_RULES = [
+    (None, BIS_FOREIGN_RCAP),
+    (None, r"basel iii monitoring report|monitoring report"),
+    ("bcbs", r"[\s\S]"),
+]
 SOURCE_RULES = {
+    "bis": BIS_RULES,
+    "bis_cpmi": BIS_RULES,
+    "bis_fsi": BIS_RULES,
+    "bis_press": BIS_RULES,
     "cssf": [
         ("cssfict", r"20/750|22/828|25/881|26/915|ict and security risk management|"
                     r"informations- und kommunikationstechnologie|psp ict assessment"),
@@ -306,6 +335,7 @@ TYPE_LABELS = {
     "ITS": ("ITS", "ITS"),
     "Q_AND_A": ("Q&A", "Q&A"),
     "FINAL_REPORT": ("Final Report", "Final report"),
+    "STANDARD": ("Standard", "Standard"),
     "GENERAL_DECISION": ("Allgemeinverfügung", "General decision"),
     "ADMINISTRATIVE_PRACTICE": ("Auslegung", "Guidance"),
     "SUPERVISORY_STATEMENT": ("Mitteilung", "Statement"),
@@ -628,6 +658,10 @@ def _classify(text: str, forced: Optional[str] = None,
 # selben Tag (±3 Tage) eine ESMA-News mit ähnlichem Titel existiert, sind
 # dieselbe Meldung (Pressemitteilung + Dokument) und entfallen.
 SHADOW_SOURCES = {"esma_library": "esma"}
+# Quellen derselben Behörde für die Zusammenführung "Pressemitteilung +
+# Dokument" (samepub.py): BIS-Publikationslisten und BIS-Pressefeed melden
+# dieselbe Veröffentlichung unter verschiedenen Titeln.
+SAME_AUTHORITY_SOURCES = {"bis_cpmi": "bis", "bis_fsi": "bis", "bis_press": "bis"}
 SHADOW_WINDOW_DAYS = 3
 _STOP = {"the", "and", "for", "under", "with", "from", "into", "that", "this",
          "esma", "consultation", "paper", "press", "release", "report", "final"}
@@ -902,7 +936,9 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     # OPENROUTER_API_KEY gelten alle Kandidaten als relevant).
     from .llmfilter import api_key, classify as llm_classify
     relevance = llm_classify(conn, [
-        (r["document_id"], "{} – {}".format(_clean(r["title"], 200), _clean(r["summary"])))
+        (r["document_id"], "{}{} – {}".format(
+            LLM_BIS_PREFIX if r["source_id"] in BIS_SOURCES else "",
+            _clean(r["title"], 200), _clean(r["summary"])))
         for r, _, _ in candidates])
 
     from .big4 import related_articles
@@ -940,7 +976,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 continue
             if not relevance.get(r["document_id"], True):
                 continue
-            if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK:
+            if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK_BY_ID.get(fw_id, MAX_PER_FRAMEWORK):
                 continue
             title_key = (fw_id, _title_key(r["title"]))
             if title_key in seen_titles:

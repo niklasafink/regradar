@@ -114,7 +114,8 @@ export DIP_API_KEY="..."
 | BfDI | `rss` | GSB-Feed `SiteGlobals/Functions/RSSFeed/Allgemein/rssnewsfeed.xml` |
 | FIU Deutschland | `rss` | Fachmeldungen-Feed auf zoll.de; **kein Seiten-Fetch** (robots.txt Crawl-Delay 180 s) |
 | ESRB | `rss` | `esrb.europa.eu/rss/press.xml` |
-| BIS / Basler Ausschuss | `rss` | `bis.org/doclist/bcbspubls.rss` — RSS 1.0/RDF, Datum aus `dc:date` |
+| BIS / Basler Ausschuss, CPMI, FSI | `bis` | Publikationslisten `bis.org/committees/{bcbs,cpmi}/publications` und `bis.org/about/fsi/publications` (Drupal-Karten mit Serien-Badge, Datum, Titel, Teaser; ID = Slug; 2 Seiten je Lauf). Der frühere RSS-Feed `doclist/bcbspubls.rss` liefert seit 09/2026 404 |
+| BIS-Pressemitteilungen | `rss` | `bis.org/doclist/all_pressrels.rss` (RSS 1.0/RDF), nur Basel-/CPMI-/FSI-Meldungen (`RSS_LINK_EXCLUDE`) |
 | FSB | `rss` | `fsb.org/feed/` (WordPress) |
 | IOSCO | `iosco` | Liste `publications/?subsection=public_reports`, IOSCOPD-Nummer als ID; ist sie gesperrt (403 seit 30.09.2026), ersatzweise `media_room/?subsection=media_releases` (IOSCONEWS-Nummer); **nur Metadaten** (Cloudflare-Bot-Schutz wird nicht umgangen) |
 | EU-Kommission / AI Office | `dsnews` | News-Liste `digital-strategy.ec.europa.eu/en/news?topic=119` (AI Act) |
@@ -140,7 +141,7 @@ regradar/
                  → Change Detection (normalized_sha256) → Events
   adapters/      base (Interface), rss (generisch, 16 Quellen; RSS 2.0
                  + RSS 1.0/RDF), eurlex, gii, dip, rii, amla, eiopa,
-                 bmf, curia, hys, ebaqna, esmalib, iosco, dsnews,
+                 bmf, curia, hys, ebaqna, esmalib, iosco, bis, dsnews,
                  ecfinance
   cli.py         init | sources | run | report | export | big4 | dedup |
                  export-web | gap-report | heartbeat

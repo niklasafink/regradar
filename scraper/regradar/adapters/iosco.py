@@ -29,8 +29,8 @@ REF_RE = re.compile(r"^([A-Z]{2,3}/?\d*/\d{4})\s+")
 
 MEDIA_URL = BASE + "/media_room/?subsection=media_releases"
 MEDIA_RE = re.compile(
-    r'(?s)<li>\s*<strong>(.*?)</strong>\s*<br\s*/?>\s*(\d{1,2})\s+([A-Za-z]{3})\w*\s+(\d{4})'
-    r'.*?href="(/news/pdf/(IOSCONEWS\d+)\.pdf)"')
+    r'(?s)<li>\s*<strong><a\s+href="(/news/pdf/(IOSCONEWS\d+)\.pdf)"[^>]*>(.*?)</a></strong>'
+    r'\s*<br\s*/?>\s*(\d{1,2})\s+([A-Za-z]{3})\w*\s+(\d{4})')
 # Releases bis zu diesem Tag sind bereits über die Reports-Liste erfasst
 # (letzter erfolgreicher Abruf) – sonst Dubletten und ein Rückstau alter Meldungen.
 MEDIA_SINCE = "2026-09-09"
@@ -103,23 +103,23 @@ class IoscoAdapter(SourceAdapter):
             raise RuntimeError(
                 "IOSCO nicht erreichbar (Publikationsliste: {}, Media Releases: {})".format(
                     list_err, err))
-        matches = list(MEDIA_RE.finditer(result.text()))
+        matches = list(MEDIA_RE.finditer(html_mod.unescape(result.text())))
         if not matches:
             raise RuntimeError("IOSCO-Media-Releases ohne erkennbare Einträge (Layout geändert?)")
         floor = max(since or "", MEDIA_SINCE)
         docs = []
         for m in matches:
-            month = MONTHS.get(m.group(3).lower())
+            month = MONTHS.get(m.group(5).lower())
             if not month:
                 continue
-            pub = "{}-{:02d}-{:02d}".format(m.group(4), month, int(m.group(2)))
+            pub = "{}-{:02d}-{:02d}".format(m.group(6), month, int(m.group(4)))
             if pub < floor:
                 continue
-            title = _strip(m.group(1))
-            pdf_url = BASE + m.group(5)
+            title = _strip(m.group(3))
+            pdf_url = BASE + m.group(1)
             docs.append(DiscoveredDocument(
                 source_id=self.source_id,
-                external_id=m.group(6),
+                external_id=m.group(2),
                 title=title[:500],
                 detail_url=pdf_url,
                 document_url=pdf_url,

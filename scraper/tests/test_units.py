@@ -292,16 +292,140 @@ class IoscoParsing(unittest.TestCase):
         self.assertEqual((m.group(3), m.group(4), m.group(5)), ("09", "Jul", "2026"))
         self.assertEqual(REF_RE.match("FR/05/2026 World Investor Week").group(1), "FR/05/2026")
 
-    MEDIA = ('<li>\n <strong>IOSCO publishes Report on Supervisory Technology &#x28;SupTech&#x29;</strong>\n'
-             ' <br />\n 18 Jun 2026 \n - <a href="/news/pdf/IOSCONEWS800.pdf" target="_blank">'
-             'View Release</a>\n </li>')
+    MEDIA = ('<li>\n        <strong><a href="/news/pdf/IOSCONEWS800.pdf" target="_blank" class="text-reset">'
+             'IOSCO publishes Report on Supervisory Technology (SupTech)</a></strong>\n'
+             '        <br />\n        18 Jun 2026 \n'
+             '            - <a href="/news/pdf/IOSCONEWS800.pdf" target="_blank">View Release</a>\n'
+             '        \n    </li>')
 
     def test_media_release_regex(self):
         from regradar.adapters.iosco import MEDIA_RE
         m = MEDIA_RE.search(self.MEDIA)
         self.assertIsNotNone(m)
-        self.assertEqual(m.group(6), "IOSCONEWS800")
-        self.assertEqual((m.group(2), m.group(3), m.group(4)), ("18", "Jun", "2026"))
+        self.assertEqual(m.group(2), "IOSCONEWS800")
+        self.assertEqual((m.group(4), m.group(5), m.group(6)), ("18", "Jun", "2026"))
+
+
+class BisParsing(unittest.TestCase):
+    """BIS-Publikationslisten (Drupal-Karten, seit 09/2026; alte RSS-Feeds 404)."""
+
+    CARD = (
+        '<div class="card-wrapper">\n'
+        '  <a href="/publications/202610-standards-amendments-g-sib-framework-address-window-dressing"'
+        ' class="card-link">\n<div class="card"><div class="card-body"><div class="card-header">\n'
+        '<span\n class="badge d-inline-flex bg-secondary basic-secondary"\n>\n Publication\n </span>\n'
+        '<span\n class="badge d-inline-flex bg-secondary basic-secondary"\n>\n Standards\n </span>\n'
+        '<span class="card-date fs-sm">16 Oct 2026</span></div>\n'
+        '<h5 class="card-heading">Amendments to G-SIB framework to address window dressing</h5>\n'
+        '<div class="card-description">The Basel Committee has finalised amendments &amp; more.</div>\n'
+        '<div class="card-topic"><span class="badge basic-secondary"> Macroprudential </span></div>\n'
+        '</div></div></a></div>')
+
+    def test_card_is_parsed(self):
+        from regradar.adapters.bis import parse_cards
+        cards = parse_cards(self.CARD)
+        self.assertEqual(len(cards), 1)
+        c = cards[0]
+        self.assertEqual(c["slug"], "202610-standards-amendments-g-sib-framework-address-window-dressing")
+        self.assertEqual(c["series"], "Standards")
+        self.assertEqual(c["date"], "2026-10-16")
+        self.assertEqual(c["title"], "Amendments to G-SIB framework to address window dressing")
+        self.assertEqual(c["teaser"], "The Basel Committee has finalised amendments & more.")
+        self.assertEqual(c["badges"][2:], ["Macroprudential"])
+
+    def test_card_without_date_is_skipped(self):
+        from regradar.adapters.bis import parse_cards
+        self.assertEqual(parse_cards(self.CARD.replace("16 Oct 2026", "n/a")), [])
+
+    def test_layout_change_raises(self):
+        from unittest import mock
+        from regradar.adapters import bis
+        from regradar import http
+
+        class R:
+            status = 200
+            def text(self):
+                return "<html><body>umgebaut</body></html>"
+
+        src = {"source_id": "bis", "authority": "BCBS", "jurisdiction": "INT",
+               "discovery_url": "https://www.bis.org/committees/bcbs/publications"}
+        with mock.patch.object(http, "get", return_value=(R(), None)):
+            with self.assertRaises(RuntimeError):
+                bis.BisAdapter(src).discover()
+
+    def test_discover_maps_types_and_skips_working_papers(self):
+        from unittest import mock
+        from regradar.adapters import bis
+        from regradar import http
+
+        def card(slug, series, date, title):
+            return self.CARD.replace(
+                "202610-standards-amendments-g-sib-framework-address-window-dressing", slug
+            ).replace("Standards\n </span>", series + "\n </span>").replace(
+                "16 Oct 2026", date).replace(
+                "Amendments to G-SIB framework to address window dressing", title)
+
+        page = "".join([
+            card("a", "Consultative", "10 Oct 2026", "Consultation A"),
+            card("b", "BCBS Working Papers", "09 Oct 2026", "Working paper B"),
+            card("c", "Implementation reports", "01 Jan 2026", "Report C"),
+        ])
+
+        class R:
+            status = 200
+            def text(self):
+                return page
+
+        src = {"source_id": "bis", "authority": "BCBS", "jurisdiction": "INT",
+               "discovery_url": "https://www.bis.org/committees/bcbs/publications"}
+        with mock.patch.object(http, "get", return_value=(R(), None)):
+            docs = bis.BisAdapter(src).discover(since="2026-06-01")
+        self.assertEqual([d.external_id for d in docs], ["a"])
+        self.assertEqual(docs[0].document_type, "CONSULTATION")
+        self.assertEqual(docs[0].document_url, "https://www.bis.org/publications/a.pdf")
+        self.assertEqual(docs[0].publication_date, "2026-10-10")
+
+
+class BisClassification(unittest.TestCase):
+    """BIS-Dokumente landen im Rahmenwerk bcbs; Auslandsbewertungen entfallen."""
+
+    def _cls(self, title, source_id="bis"):
+        from regradar.webexport import _classify
+        return _classify(title.lower(), source_id=source_id, title=title)
+
+    def test_basel_documents_go_to_bcbs(self):
+        for sid in ("bis", "bis_cpmi", "bis_fsi", "bis_press"):
+            self.assertEqual(self._cls("Principles for the sound management of third-party risk", sid), "bcbs")
+
+    def test_foreign_rcap_assessments_are_dropped(self):
+        self.assertIsNone(self._cls(
+            "Regulatory Consistency Assessment Programme (RCAP): Assessment of Basel Committee's "
+            "leverage ratio framework - Canada"))
+        self.assertIsNone(self._cls(
+            "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, "
+            "United Kingdom largely compliant", "bis_press"))
+
+    def test_eu_rcap_assessment_is_kept(self):
+        self.assertEqual(self._cls(
+            "RCAP: Assessment of Basel Committee's large exposures framework - European Union"), "bcbs")
+
+    def test_monitoring_report_is_dropped(self):
+        self.assertIsNone(self._cls("Basel III monitoring report"))
+
+    def test_bcbs239_from_other_sources_maps_to_bcbs(self):
+        self.assertEqual(self._cls("ECB guide on effective risk data aggregation and risk reporting", "ecb"), "bcbs")
+        self.assertEqual(self._cls("BCBS 239: Umsetzungsstand", "bafin"), "bcbs")
+
+    def test_plain_basel_mention_stays_with_crr3(self):
+        self.assertEqual(self._cls("Kommission verschiebt FRTB gegenüber Basel III", "ecfin"), "crr3")
+
+    def test_press_feed_filter(self):
+        import re
+        from regradar.registry import RSS_LINK_EXCLUDE
+        rx = RSS_LINK_EXCLUDE["bis_press"]
+        base = "https://www.bis.org/media-releases/"
+        self.assertFalse(re.search(rx, base + "20261016-basel-committee-finalises-measures-address-window-dressing"))
+        self.assertTrue(re.search(rx, base + "20260628-global-economic-pressure-points-call-policy-discipline-bis"))
 
 
 class Big4MatchWindow(unittest.TestCase):

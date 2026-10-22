@@ -338,14 +338,59 @@ SOURCES = [
         "name": "Basler Ausschuss (BIS/BCBS)",
         "authority": "BCBS",
         "jurisdiction": "INT",
-        "base_url": "https://www.bis.org/bcbs/",
-        "discovery_url": "https://www.bis.org/doclist/bcbspubls.rss",
-        "discovery_type": "RSS",
+        "base_url": "https://www.bis.org/committees/bcbs/",
+        "discovery_url": "https://www.bis.org/committees/bcbs/publications",
+        "discovery_type": "HTML",
+        "access_class": "PUBLIC",
+        "document_types": ["STANDARD", "CONSULTATION", "FINAL_REPORT", "OTHER"],
+        "poll_interval_minutes": 360,
+        "adapter": "bis",
+        "enabled": 1,  # RSS (doclist/bcbspubls.rss) seit 09/2026 404 → Publikationsliste der neuen Drupal-Site
+    },
+    {
+        "source_id": "bis_cpmi",
+        "name": "CPMI (BIS)",
+        "authority": "CPMI",
+        "jurisdiction": "INT",
+        "base_url": "https://www.bis.org/committees/cpmi/",
+        "discovery_url": "https://www.bis.org/committees/cpmi/publications",
+        "discovery_type": "HTML",
         "access_class": "PUBLIC",
         "document_types": ["FINAL_REPORT", "CONSULTATION", "OTHER"],
-        "poll_interval_minutes": 1440,
+        "poll_interval_minutes": 720,
+        "adapter": "bis",
+        "enabled": 1,
+    },
+    {
+        "source_id": "bis_fsi",
+        "name": "Financial Stability Institute (BIS)",
+        "authority": "FSI",
+        "jurisdiction": "INT",
+        "base_url": "https://www.bis.org/about/fsi/",
+        "discovery_url": "https://www.bis.org/about/fsi/publications",
+        "discovery_type": "HTML",
+        "access_class": "PUBLIC",
+        "document_types": ["FINAL_REPORT", "OTHER"],
+        "poll_interval_minutes": 720,
+        "adapter": "bis",
+        "enabled": 1,
+    },
+    {
+        # Pressemitteilungen der BIS-Gremien: Sitzungsergebnisse, Umsetzungs-
+        # stände und Ankündigungen (z. B. die Überprüfung des Krypto-Standards),
+        # die in den Publikationslisten fehlen. Feed-Filter: RSS_LINK_EXCLUDE.
+        "source_id": "bis_press",
+        "name": "BIS-Pressemitteilungen (Basler Ausschuss, CPMI, FSI)",
+        "authority": "BCBS",
+        "jurisdiction": "INT",
+        "base_url": "https://www.bis.org/press/",
+        "discovery_url": "https://www.bis.org/doclist/all_pressrels.rss",
+        "discovery_type": "RSS",
+        "access_class": "PUBLIC",
+        "document_types": ["OTHER"],
+        "poll_interval_minutes": 360,
         "adapter": "rss",
-        "enabled": 0,  # RSS-Feed seit 09/2026 dauerhaft 404 – Quelle deaktiviert
+        "enabled": 1,
     },
     {
         "source_id": "fsb",
@@ -538,6 +583,11 @@ BUNDESBANK_EVERGREEN = (
 # Bundesbank-Feeds mischen deutsche und englische Fassungen derselben Seite;
 # dazu die Dauerseiten, s. o.).
 RSS_LINK_EXCLUDE = {
+    # BIS-Pressefeed: nur Meldungen der Aufsichtsgremien (Basel, CPMI, FSI,
+    # globale Standardsetzer); Reden, Jahresberichte, Geldpolitik u. Ä. entfallen.
+    # Der Link-Slug trägt die Titelwörter.
+    "bis_press": r"^(?!.*(basel|bcbs|cpmi|standard-setting|financial-stability-institute|"
+                 r"\bfsi\b|g-sib|cryptoasset|stablecoin|supervis)).*$",
     "bundesbank": r"bundesbank\.de/(en/|hochschule-en/)|" + BUNDESBANK_EVERGREEN,
 }
 

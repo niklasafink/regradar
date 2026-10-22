@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T09:09:48Z",
+  "generated_at": "2026-10-22T14:22:51Z",
   "sources": [
     {
       "id": "eurlex",
@@ -184,6 +184,38 @@
       "jurisdiction": "EU",
       "access": "RSS",
       "url": "https://www.esrb.europa.eu/"
+    },
+    {
+      "id": "bis",
+      "name": "Basler Ausschuss (BIS/BCBS)",
+      "authority": "BCBS",
+      "jurisdiction": "INT",
+      "access": "HTML",
+      "url": "https://www.bis.org/committees/bcbs/"
+    },
+    {
+      "id": "bis_cpmi",
+      "name": "CPMI (BIS)",
+      "authority": "CPMI",
+      "jurisdiction": "INT",
+      "access": "HTML",
+      "url": "https://www.bis.org/committees/cpmi/"
+    },
+    {
+      "id": "bis_fsi",
+      "name": "Financial Stability Institute (BIS)",
+      "authority": "FSI",
+      "jurisdiction": "INT",
+      "access": "HTML",
+      "url": "https://www.bis.org/about/fsi/"
+    },
+    {
+      "id": "bis_press",
+      "name": "BIS-Pressemitteilungen (Basler Ausschuss, CPMI, FSI)",
+      "authority": "BCBS",
+      "jurisdiction": "INT",
+      "access": "RSS",
+      "url": "https://www.bis.org/press/"
     },
     {
       "id": "fsb",

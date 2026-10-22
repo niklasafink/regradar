@@ -27,8 +27,9 @@ export interface Update {
 }
 export interface Framework {
   /** Rechtsraum; "LU" = luxemburgisches Fonds-/CSSF-Recht (nur sichtbar,
-      wenn im Onboarding „Luxemburg" gewählt ist). */
-  id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE" | "LU";
+      wenn im Onboarding „Luxemburg" gewählt ist); "INT" = internationale
+      Standardsetzer (BIS/Basler Ausschuss), sichtbar für alle. */
+  id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE" | "LU" | "INT";
   n: Txt; ref: string;
   /** Umgangssprachliche Bezeichnungen und Abkürzungen (nur für die Suche). */
   alias?: string;

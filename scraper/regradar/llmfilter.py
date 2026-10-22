@@ -23,7 +23,7 @@ TIMEOUT = 90
 # Format-Version des Prompts. Bei inhaltlichen Änderungen hochzählen – der
 # nächste Export bewertet dann alle Kandidaten neu (alte Cache-Einträge unter
 # der Vorversion werden ignoriert).
-FORMAT = 4
+FORMAT = 5
 
 SYSTEM_PROMPT = (
     "Du filterst einen Regulatory-News-Feed für Compliance-Abteilungen von "
@@ -58,6 +58,22 @@ SYSTEM_PROMPT = (
     "oder eine Klage dagegen abweisen, ohne eine verallgemeinerbare neue "
     "Auslegung für die Breite der Institute zu schaffen (z. B. Bestätigung, "
     "dass ein bestimmter Dienst kein Torwächter-/Gatekeeper-Dienst ist).\n\n"
+    "AUSNAHME Bank für Internationalen Zahlungsausgleich: Meldungen mit dem "
+    "Präfix [BIS] stammen vom Basler Ausschuss (BCBS), von CPMI oder FSI und "
+    "werden bewusst verfolgt (eigenes Rahmenwerk; Basel-Standards sind die "
+    "Vorstufe der EU-Bankenregulierung). RELEVANT sind dort: Standards und "
+    "Änderungen des Basel-Rahmenwerks, Leitlinien und Grundsätze des "
+    "Basler Ausschusses (z. B. BCBS 239, operationelle Resilienz, "
+    "Drittparteienrisiken, Kreditrisiko, Klimarisiken, Kryptowerte, "
+    "Geldwäsche-Aufsicht), Konsultationen dazu, technische Änderungen und "
+    "FAQs, Umsetzungsberichte zu Basel III oder BCBS 239 sowie Mitteilungen "
+    "über Sitzungsergebnisse, Umsetzungsfristen und Überprüfungen von "
+    "Standards. NICHT RELEVANT bleiben auch mit Präfix [BIS]: Forschungs- und "
+    "Arbeitspapiere, Statistiken und Monitoring-Berichte, Marktstudien, "
+    "Konferenz- und Veranstaltungsankündigungen, Berichte, die sich nur an "
+    "Zentralbanken oder Finanzmarktinfrastrukturen richten (Zahlungsverkehr, "
+    "Wertpapierabwicklung, Zentralbankgovernance), sowie FSI-Studien ohne "
+    "Standard- oder Leitliniencharakter.\n\n"
     "Ebenfalls NICHT RELEVANT: Mitteilungen über den Ein- oder Austritt "
     "einzelner Panelbanken oder Beitragszahler eines Referenzwerts (z. B. "
     "'Upcoming changes to the Euribor panel' – eine namentlich genannte Bank "

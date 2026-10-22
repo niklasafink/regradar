@@ -93,10 +93,11 @@ def duplicates(conn: sqlite3.Connection, selected: list, doc_type, days_apart,
     zweite Fassung derselben Veröffentlichung entfallen."""
     # ESMA-Library und ESMA-News sind dieselbe Behörde (Dokument + Presse-
     # mitteilung, 08.10.2026: Stellungnahme zu nicht MiCA-konformen Tokens).
-    from .webexport import SHADOW_SOURCES
+    from .webexport import SAME_AUTHORITY_SOURCES, SHADOW_SOURCES
 
     def family(r) -> str:
-        return SHADOW_SOURCES.get(r["source_id"], r["source_id"])
+        sid = r["source_id"]
+        return SHADOW_SOURCES.get(sid) or SAME_AUTHORITY_SOURCES.get(sid, sid)
 
     pairs = []
     for (r1, fw1, _), (r2, fw2, _) in combinations(selected, 2):

@@ -99,6 +99,7 @@ const esc = (s: string): string =>
 
 const JUR_LABEL: Record<Framework["jur"], string> = {
   EU: "EU", DE: "Deutschland", "EU+DE": "EU + Deutschland", LU: "Luxemburg",
+  INT: "International",
 };
 
 /** Detailseite eines Rahmenwerks über den ersten zugeordneten Anbietertyp. */
@@ -114,7 +115,7 @@ function frameworkHref(fw: Framework, base: string): string {
 const FW_ABBR: Record<string, string> = {
   dora: "DORA", nis2: "NIS-2", ebaict: "EBA-IKT-Leitlinien", amla: "AML-VO",
   gwg: "GwG", sanctions: "Finanzsanktionen", tfr: "TFR",
-  crr3: "CRR III / CRD VI", marisk: "MaRisk", brrd: "BRRD",
+  crr3: "CRR III / CRD VI", bcbs: "Basler Ausschuss / BCBS 239", marisk: "MaRisk", brrd: "BRRD",
   dgsd: "DGSD / EinSiG", ifr: "IFR / IFD", wpimarisk: "WpI MaRisk",
   zagmarisk: "ZAG-MaRisk", macomp: "MaComp",
   ebagov: "EBA-Governance-Leitlinien", srep: "SREP", irrbb: "IRRBB",

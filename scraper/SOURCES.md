@@ -47,7 +47,7 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 | 21 | BfDI | DE | RSS (GSB-Feed) | OTHER | Datenschutz-Aufsicht Bund |
 | 22 | FIU Deutschland | DE | RSS (Fachmeldungen, zoll.de) | OTHER | Typologiepapiere/Meldungen für GwG-Pflichtige; kein Seiten-Fetch (robots-Crawl-Delay 180 s) |
 | 23 | ESRB | EU | RSS (`rss/press.xml`) | OTHER | Makroprudenzielle Warnungen/Empfehlungen |
-| 24 | BIS / Basler Ausschuss | INT | RSS 1.0/RDF (`doclist/bcbspubls.rss`) | FINAL_REPORT, CONSULTATION, OTHER | 12–24 Monate Vorlauf vor EU-Umsetzung; Datum aus dc:date |
+| 24 | BIS / Basler Ausschuss (BCBS) | INT | HTML (Publikationsliste `bis.org/committees/bcbs/publications`, Drupal-Karten, 2 Seiten) | STANDARD, CONSULTATION, FINAL_REPORT, OTHER | Seit 09/2026 liefern RSS (`doclist/bcbspubls.rss`) und alte `/publ/`-Listen 404; Adapter `bis` liest die Karten (Serien-Badge → Typ, Slug als ID). Working Papers werden übersprungen. 12–24 Monate Vorlauf vor EU-Umsetzung; Rahmenwerk `bcbs` |
 | 25 | FSB | INT | RSS (WordPress-Feed) | FINAL_REPORT, CONSULTATION, OTHER | Financial Stability Board |
 | 26 | IOSCO | INT | HTML (Public-Reports-Liste, ersatzweise Media Releases), **nur Metadaten** | FINAL_REPORT, CONSULTATION | PDFs und seit 30.09.2026 auch die Reports-Liste hinter Cloudflare-Bot-Schutz → wird nicht umgangen; dann Media-Releases-Liste (IOSCONEWS-Nummer als ID), sonst IOSCOPD-Nummer |
 
@@ -64,6 +64,18 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 | 28 | CSSF | LU | RSS, 7 typisierte Feeds (`feed/publications?content_type=…`: circular-cssf, cssf-regulation, communique, public-consultation, cssf-faq, law, grand-ducal-regulation) | CIRCULAR, REGULATION, CONSULTATION, Q_AND_A, LAW, OTHER | Luxemburger Fonds-/ManCo-Recht; Referenzen „Circular CSSF 26/910", „CSSF Regulation No 12-02" aus Titel; Zuordnung zuerst gegen Lux-Rahmenwerke (`SOURCE_RULES`) |
 | 29 | EU-Kommission / GD FISMA | EU | HTML (`finance.ec.europa.eu/finance-news_en`, ECL-Liste, 2 Seiten) | LEGISLATIVE_PROPOSAL, CONSULTATION, FINAL_REPORT, OTHER | Frühwarnsignal für RIS, Verbriefung, PSD3, Digitaler Euro, SIU-Paket; Rat (403) und Parlament (202-Bot-Check) liefern keine Feeds |
 | 30 | EZB (Pressemitteilungen) | EU | RSS (`rss/press.xml`) | OTHER | Digitaler Euro, IReF, TARGET; Reden fängt der NOISE-Filter |
+
+## Welle 7 — BIS-Gremien (umgesetzt am 22.10.2026)
+
+Anlass: Kundenhinweis, die BIS-Neuigkeiten (BCBS 239 u. a.) fehlten. Ursache: Der BCBS-Feed war seit 09/2026 tot und die Quelle deaktiviert. Alle vier Quellen speisen das Rahmenwerk `bcbs` (data.ts, `jur: "INT"`); Zuordnung über `SOURCE_RULES` (webexport), Filter über den `[BIS]`-Präfix im Relevanzprompt (llmfilter, FORMAT 5).
+
+| # | Quelle | Behörde / Jurisdiktion | Zugriffsweg | Dokumenttypen | Bemerkung |
+|---|---|---|---|---|---|
+| 31 | CPMI (BIS) | INT | HTML (`bis.org/committees/cpmi/publications`), Adapter `bis` | FINAL_REPORT, CONSULTATION, OTHER | Zahlungsverkehr/Marktinfrastrukturen; der Relevanzfilter lässt nur Standards und Leitlinien mit Bankbezug durch |
+| 32 | FSI (BIS) | INT | HTML (`bis.org/about/fsi/publications`), Adapter `bis` | FINAL_REPORT, OTHER | Aufsichtsstudien; nur mit Standard-/Leitliniencharakter relevant |
+| 33 | BIS-Pressemitteilungen | INT | RSS 1.0 (`bis.org/doclist/all_pressrels.rss`), Adapter `rss`; Link-Filter `RSS_LINK_EXCLUDE["bis_press"]` | OTHER | Sitzungsergebnisse, Umsetzungsstände, Ankündigungen (z. B. Überprüfung des Krypto-Standards), die in den Publikationslisten fehlen; Doppelmeldungen zur selben Veröffentlichung führt `samepub.py` zusammen |
+
+Auslandsbewertungen (RCAP für Kanada, Japan …) und Monitoring-Berichte entfallen per `BIS_RULES`. Robots.txt von bis.org erlaubt `/committees/` und `/publications/`.
 
 **Nicht angebunden: Rat der EU / Europäisches Parlament** — consilium.europa.eu antwortet 403 („Browser check"), europarl.europa.eu mit 202-Challenge; beides Bot-Schutz, wird nicht umgangen. Ersatz: DG-FISMA-News + EZB.
 
