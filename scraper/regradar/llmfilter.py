@@ -23,7 +23,10 @@ TIMEOUT = 90
 # Format-Version des Prompts. Bei inhaltlichen Änderungen hochzählen – der
 # nächste Export bewertet dann alle Kandidaten neu (alte Cache-Einträge unter
 # der Vorversion werden ignoriert).
-FORMAT = 5
+# Der [BIS]-Zusatz im Prompt wirkt nur auf neue Dokumente und zählt FORMAT
+# bewusst nicht hoch: ein Hochzählen würde alle Urteile anderer Quellen neu
+# würfeln (22.10.2026: 22 Meldungen verschwanden aus anderen Rahmenwerken).
+FORMAT = 4
 
 SYSTEM_PROMPT = (
     "Du filterst einen Regulatory-News-Feed für Compliance-Abteilungen von "

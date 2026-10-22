@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T09:09:51Z",
+  "generated_at": "2026-10-22T14:49:49Z",
   "updates": {
     "idd": [
       {
@@ -771,6 +771,236 @@
             "d": "10.09.2026"
           }
         ]
+      }
+    ],
+    "bcbs": [
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Standard",
+          "en": "Standard"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Änderungen am G-SIB-Rahmenwerk gegen Bilanzkosmetik",
+          "en": "Amendments to G-SIB framework to address window dressing"
+        },
+        "sl": "amendments-to-g-sib-framework-to-address-window-dressing",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat Änderungen am Rahmenwerk für global systemrelevante Banken (G-SIBs) finalisiert, um Bilanzkosmetik (Window Dressing) zu unterbinden. Künftig müssen Banken die Indikatoren zur Berechnung der G-SIB-Scores auf Basis von Jahresdurchschnittswerten statt Stichtagswerten melden und offenlegen.\n\nDiese Anpassung soll verhindern, dass Banken ihre Bilanzen zum Jahresende manipulieren, um ihre Systemrelevanz und damit verbundene Kapitalanforderungen zu beeinflussen. Die Änderungen sind für alle Banken relevant, die potenziell als G-SIB eingestuft werden könnten oder bereits sind.\n\nZudem wird der Schwellenwert für die G-SIB-Meldepflicht und Offenlegung von 200 Milliarden EUR auf 350 Milliarden EUR bei der Leverage Ratio Exposure Measure angehoben. Die Umsetzung der Änderungen zur Bilanzkosmetik ist für den 1. Januar 2030 vorgesehen, während die Anhebung des Schwellenwerts bereits ab dem 1. Januar 2027 gilt.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has finalised amendments to the framework for global systemically important banks (G-SIBs) to address window-dressing behaviour. Banks will now be required to report and disclose indicators used to calculate G-SIB scores based on average values over the reporting year, rather than year-end values.\n\nThis adjustment aims to prevent banks from manipulating their balance sheets at year-end to influence their systemic importance and associated capital requirements. These changes are relevant for all banks that could potentially be classified as G-SIBs or already are.\n\nIn addition, the G-SIB reporting and disclosure threshold will be increased from EUR 200 billion to EUR 350 billion in the leverage ratio exposure measure. The implementation of the amendments addressing window dressing is scheduled for 1 January 2030, while the increased threshold will apply from 1 January 2027."
+        },
+        "url": "https://www.bis.org/publications/202610-standards-amendments-g-sib-framework-address-window-dressing",
+        "imp": "high"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Konsultation zur G-SIB-Methodik: Berücksichtigung der Europäischen Bankenunion",
+          "en": "Consultation on G-SIB Methodology: Incorporating the European Banking Union"
+        },
+        "sl": "global-systemically-important-banks-methodology-review",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) konsultiert eine Überarbeitung seiner Methodik zur Bestimmung global systemrelevanter Banken (G-SIBs). Im Fokus steht die formale Einbeziehung der bereits vereinbarten Behandlung grenzüberschreitender Engagements innerhalb der Europäischen Bankenunion (EBU) in das G-SIB-Rahmenwerk. Dies soll die bestehende Praxis, die 2022 vom Ausschuss vereinbart wurde, in die offiziellen Standards überführen.\n\nKonkret schlägt der BCBS vor, Kapitel SCO40 des Basler Rahmenwerks zu aktualisieren, um die Verwendung paralleler G-SIB-Scores für EBU-Banken zu erläutern. Diese parallelen Scores berücksichtigen eine Reduzierung von 66 % des Scores, die sich ergeben würde, wenn Intra-EBU-Engagements als inländische Engagements behandelt würden. Die Anpassung der Bucket-Zuweisung erfolgt nach aufsichtsrechtlichem Ermessen, wobei eine Herabstufung auf einen einzelnen Bucket begrenzt ist. Auch die Berichtsanweisungen für die G-SIB-Bewertung sollen entsprechend angepasst werden.\n\nDa die Vorschläge eine bestehende Praxis formalisieren, sollen die Änderungen unmittelbar nach ihrer Finalisierung in Kraft treten. Stellungnahmen zu diesem Konsultationspapier können bis zum 14. Januar 2027 eingereicht werden.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) is consulting on a review of its methodology for identifying global systemically important banks (G-SIBs). The consultation focuses on formally incorporating the agreed treatment of cross-border exposures within the European Banking Union (EBU) into the G-SIB framework. This aims to formalize the existing practice, which was agreed by the Committee in 2022, into the official standards.\n\nSpecifically, the BCBS proposes to update Chapter SCO40 of the Basel Framework to explain the use of parallel G-SIB scores for EBU banks. These parallel scores recognize a 66% reduction in the score that would result from treating intra-EBU exposures as domestic exposures. The adjustment of bucket allocations is made using supervisory judgment, with any downward adjustment limited to a single bucket. The G-SIB assessment reporting instructions will also be updated accordingly.\n\nGiven that the proposals formalize an existing treatment of EBU exposures, the revisions would apply with immediate effect once finalized. Comments on this consultative document are invited by 14 January 2027."
+        },
+        "url": "https://www.bis.org/publications/202610-consultation-global-systemically-important-banks-methodology-review",
+        "imp": "medium"
+      },
+      {
+        "d": "05.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Basel III: Fast alle Mitgliedsländer setzen Standards bis 2027 um",
+          "en": "Basel III: Almost All Member Jurisdictions to Implement Standards by 2027"
+        },
+        "sl": "basel-iii-applicable-in-almost-all-member-jurisdictions-by-2027",
+        "s": {
+          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat den aktuellen Stand der Umsetzung der finalen Basel III-Standards in seinen Mitgliedsländern veröffentlicht. Demnach haben drei Viertel der 27 Mitgliedsländer bis Ende September 2026 die entsprechenden Vorschriften publiziert.\n\nDie überarbeiteten Standards für Kreditrisiko und operationelles Risiko sowie die Output Floor-Regelung sind bereits in rund 85 % der Mitgliedsländer in Kraft. Fast alle Mitgliedsländer haben angekündigt, dass Banken Basel III bis April 2027 oder früher anwenden müssen. Das BCBS wird die vollständige und konsistente Umsetzung weiterhin eng überwachen und bewerten.\n\nDie ursprüngliche Umsetzungsfrist für diese Reformen war der 1. Januar 2023. Die Aufsichtsbehörden betonen die Bedeutung eines umsichtigen globalen Regulierungsrahmens und gleicher Wettbewerbsbedingungen, insbesondere angesichts der jüngsten Schocks an den Finanzmärkten.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published its latest progress report on the implementation of the final Basel III standards in its member jurisdictions. According to the report, three quarters of the 27 member jurisdictions had published the relevant regulations by the end of September 2026.\n\nThe revised credit risk and operational risk standards, as well as the output floor, are already effective in approximately 85% of member jurisdictions. Almost all member jurisdictions have announced that banks must apply Basel III by April 2027 or earlier. The BCBS will continue to closely monitor and assess the full and consistent implementation.\n\nThe original implementation date for these reforms was 1 January 2023. Supervisors emphasize the importance of a prudent global regulatory framework and a level playing field, particularly in light of recent financial market shocks."
+        },
+        "url": "https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027",
+        "imp": "medium"
+      },
+      {
+        "d": "01.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Basler Ausschuss erörtert KI-Risiken, G-SIB-Bewertung und maschinenlesbare Säule-3-Offenlegungen",
+          "en": "Basel Committee discusses AI risks, G-SIB assessment, and machine-readable Pillar 3 disclosures"
+        },
+        "sl": "basel-committee-meets-to-advance-supervisory-and-regulatory-initiatives-and-disc",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat sich getroffen, um Fortschritte bei seinen Initiativen zu erzielen und Risiken im globalen Bankensystem zu erörtern. Im Fokus standen die rasante Entwicklung der Künstlichen Intelligenz (KI) und deren Auswirkungen auf das Finanzsystem, einschließlich operativer Schwachstellen wie Cyberangriffe. Der Ausschuss plant, die bestehenden Verlustkategorien im operationellen Risikorahmen zu überprüfen, insbesondere im Hinblick auf Cyberrisiken und KI-Entwicklungen.\n\nWeitere Beschlüsse umfassen die Genehmigung einer jährlichen Bewertung für global systemrelevante Banken (G-SIBs) und Überarbeitungen zur Reduzierung von Window-Dressing-Verhalten. Ein finaler Standard für maschinenlesbare Säule-3-Offenlegungen wurde ebenfalls verabschiedet, um die Aggregation und den Vergleich von Bankdaten zu erleichtern. Zudem wird der Ausschuss eine Konsultation zu zusätzlichen Säule-2-Leitlinien für Zinsrisiken im Anlagebuch veröffentlichen und ein Update zur Überprüfung seiner Eigenkapitalanforderungen für Krypto-Engagements von Banken bereitstellen.\n\nDie Ergebnisse der G-SIB-Bewertung für Ende 2025 werden dem Finanzstabilitätsrat (FSB) übermittelt. Die Überarbeitungen des G-SIB-Bewertungsrahmens und eine Konsultation zur Berücksichtigung grenzüberschreitender Engagements innerhalb der europäischen Bankenunion im G-SIB-Rahmen werden noch in diesem Monat veröffentlicht. Die Konsultation zu den IRRBB-Leitlinien folgt im nächsten Monat, während der Standard für maschinenlesbare Säule-3-Offenlegungen gegen Jahresende publiziert wird.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) met to advance its initiatives and discuss risks in the global banking system. The rapid development of Artificial Intelligence (AI) and its implications for the financial system, including operational vulnerabilities such as cyberattacks, were key topics. The Committee plans to review existing loss categories in the operational risk framework, particularly concerning cyber risk and AI developments.\n\nFurther decisions include approving an annual assessment for global systemically important banks (G-SIBs) and revisions to reduce window-dressing behavior. A final standard for machine-readable Pillar 3 disclosures was also approved to facilitate the aggregation and comparison of bank data. Additionally, the Committee will launch a consultation on further Pillar 2 guidance for interest rate risk in the banking book and provide an update on its review of prudential standards for banks' cryptoasset exposures.\n\nThe results of the end-2025 G-SIB assessment will be submitted to the Financial Stability Board (FSB). Revisions to the G-SIB assessment framework and a consultation on incorporating cross-border exposures within the European banking union into the G-SIB framework will be published later this month. The consultation on IRRBB guidance will follow next month, while the standard for machine-readable Pillar 3 disclosures will be published around year-end."
+        },
+        "url": "https://www.bis.org/media-releases/20261001-basel-committee-meets-advance-supervisory-and-regulatory-initiatives-and-discuss-risks-and",
+        "imp": "medium"
+      },
+      {
+        "d": "28.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Leverage Ratio und Output Floor: Komplementarität und Überschneidungen",
+          "en": "The leverage ratio and the output floor: complementarities and overlaps"
+        },
+        "sl": "the-leverage-ratio-and-the-output-floor-complementarities-and-overlaps",
+        "s": {
+          "de": "Dieses Papier des FSI untersucht analytisch und empirisch die Komplementarität und Überschneidungen der Basel III-Leverage Ratio (LR) und des Output Floors (OF) sowie deren Zusammenspiel mit risikobasierten Eigenkapitalanforderungen. Es wird analysiert, wie diese Anforderungen die Gesamtkapitalanforderungen von Banken bestimmen und somit deren Fähigkeit zur Kreditvergabe und ihr Wachstum sowie ihre Widerstandsfähigkeit gegenüber negativen Schocks beeinflussen.\n\nDie Studie zeigt, dass LR und OF keine Substitute sind, sondern sich ergänzen. Die LR begrenzt übermäßige Verschuldung, die Risikomaße möglicherweise nicht erfassen, während der OF die übermäßige Variabilität der risikogewichteten Aktiva (RWA) aufgrund interner Modelle begrenzt. Dies geschieht, indem er die effektiven RWA an standardisierte Ansätze koppelt, die Nutzbarkeit von Puffern und eine gewisse Risikosensitivität bewahrt. Für 13 global systemrelevante Banken (G-SIBs), die OF-Daten offenlegen, wäre unter einem vollständig implementierten 72,5 % OF für sechs Banken der OF bindend, selbst in Fällen, in denen die LR das Ergebnis der OF-Beschränkung nicht reproduzieren würde.\n\nDie Analyse basiert auf öffentlich verfügbaren Daten von 29 G-SIBs für den Zeitraum 2014–2025. Die Ergebnisse deuten darauf hin, dass der Anteil der Banken, für die die LR die höchste Anforderung darstellt, erheblich zugenommen hat. Die jeweils bindende Anforderung ist jedoch nicht stabil und variiert stark zwischen Banken und Jurisdiktionen.",
+          "en": "This FSI paper analytically and empirically examines the complementarity and overlaps of the Basel III Leverage Ratio (LR) and Output Floor (OF), as well as their interaction with risk-based capital requirements. It analyzes how these requirements determine banks' overall capital requirements and thus their capacity to support credit and growth, as well as their resilience to negative shocks.\n\nThe study shows that LR and OF are not substitutes but rather complement each other. The LR constrains excessive leverage that risk measures might miss, while the OF constrains excessive variability of risk-weighted assets (RWA) due to internal models. This is achieved by linking effective RWA to standardized approaches, preserving buffer usability and some risk sensitivity. For 13 global systemically important banks (G-SIBs) disclosing OF data, under a fully phased-in 72.5% OF, six banks would be bound by the OF, even in cases where the LR would not reproduce the outcome of the OF constraint.\n\nThe analysis is based on publicly available data for 29 G-SIBs from 2014–2025. The results indicate that the proportion of banks for which the LR is the highest requirement has increased materially. However, the most constraining requirement is not stable and varies significantly across banks and jurisdictions."
+        },
+        "url": "https://www.bis.org/publications/fsi-paper-29-leverage-ratio-and-output-floor-complementarities-and-overlaps",
+        "imp": "low"
+      },
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Vereinfachte Regulierung für kleine Banken: Proportionalität und Anpassung",
+          "en": "Simple, resilient and proportional: revisiting regulation for small banks"
+        },
+        "sl": "simple-resilient-and-proportional-revisiting-regulation-for-small-banks",
+        "s": {
+          "de": "Dieses Papier des Financial Stability Institute (FSI) untersucht, wie sechs Jurisdiktionen vereinfachte regulatorische Regime für kleine Banken gestalten. Es konzentriert sich dabei auf die Kriterien für die Berechtigung und die Proportionalitätsansätze, die auf die Eigenkapitalanforderungen angewendet werden.\n\nKleine Banken haben im Vergleich zu größeren Banken unterschiedliche Geschäftsmodelle und Risikoprofile. Das Basler Komitee für Bankenaufsicht (BCBS) fördert daher die Proportionalität in globalen Bankenstandards, um maßgeschneiderte Anforderungen basierend auf Größe, Komplexität und Risikoprofil der Banken zu ermöglichen. Die Studie bietet politische Überlegungen für Aufsichtsbehörden, die ihre Regulierungsrahmen für kleine Banken an spezifische lokale Gegebenheiten anpassen möchten.\n\nBehörden können die Kriterien des BCBS (Größe, Komplexität, Risikoprofil) als Grundlage nutzen und lokale Indikatoren entwickeln, um diese zu verfeinern. Eigenkapitalanforderungen sollten an die jeweiligen Berechtigungskriterien gekoppelt werden, beispielsweise durch die Verknüpfung von Ausnahmen von Marktrisikokapitalanforderungen mit Grenzen für die Größe des Handelsbuchs. Dies soll sicherstellen, dass die Regime einfach, proportional und widerstandsfähig bleiben.",
+          "en": "This paper by the Financial Stability Institute (FSI) explores how six jurisdictions design simplified regulatory regimes for small banks. It focuses on the eligibility criteria and the proportionality approaches applied to prudential requirements.\n\nSmall banks have distinct business models and risk profiles compared to larger banks. The Basel Committee on Banking Supervision (BCBS) therefore promotes proportionality in global banking standards, encouraging tailored requirements based on bank size, complexity, and risk profile. The study provides policy considerations for authorities aiming to tailor small bank regulatory frameworks to their specific contexts.\n\nAuthorities can use the BCBS's criteria (size, complexity, risk profile) as a foundation and develop locally relevant indicators to refine each criterion. Prudential requirements should be aligned with applicable eligibility criteria, such as tying exemptions from market risk capital requirements to trading book size limits. This approach aims to ensure that small bank regulatory regimes remain simple, proportional, and resilient."
+        },
+        "url": "https://www.bis.org/publications/fsi-insight-78-simple-resilient-and-proportional-revisiting-regulation-small-banks",
+        "imp": "low"
+      },
+      {
+        "d": "08.07.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Vergleich der Kapitalanforderungen für global systemrelevante Banken",
+          "en": "On the comparison of capital requirements for global systemically important banks"
+        },
+        "sl": "on-the-comparison-of-capital-requirements-for-global-systemically-important-bank",
+        "s": {
+          "de": "Dieser Bericht des FSI untersucht die Kapitalanforderungen für global systemrelevante Banken (G-SIBs) und die Gründe für Unterschiede zwischen den Jurisdiktionen. Obwohl Basel III einheitliche Mindestanforderungen festlegt, ermöglicht es den nationalen Behörden, diese zu überschreiten.\n\nDie Analyse basiert auf harmonisierten Daten von 29 G-SIBs für den Zeitraum 2014–2025 und zeigt, dass die Implementierung von Kapitalpuffern, aufsichtsrechtlichen Zuschlägen und nicht-bindenden Leitlinien heterogen ist. Auch die unterschiedliche Systemrelevanz der Banken und die Berechnung risikogewichteter Aktiva (RWA) tragen zu den Unterschieden bei. Es gibt Hinweise, dass höhere Kapitalanforderungen konservativere RWA-Berechnungen ausgleichen können.\n\nDie Modernisierung nationaler Regulierungsrahmen könnte die Struktur der Kapitalanforderungen vereinfachen, aber auch den Vergleich zwischen Jurisdiktionen beeinflussen.",
+          "en": "This FSI report examines the capital requirements for global systemically important banks (G-SIBs) and the reasons for differences across jurisdictions. Although Basel III establishes common minimum requirements, it allows national authorities to exceed these standards.\n\nBased on harmonized data from 29 G-SIBs for 2014–2025, the analysis reveals heterogeneity in the implementation of capital buffers, supervisory add-ons, and non-binding guidance. Differences in banks' systemic importance and the calculation of risk-weighted assets (RWA) also contribute to these disparities. There is suggestive evidence that higher capital ratio requirements may compensate for more conservative RWA computations.\n\nOngoing efforts to modernize national regulatory frameworks could simplify the structure of capital requirements but may also affect cross-jurisdictional comparisons."
+        },
+        "url": "https://www.bis.org/publications/fsi-insight-76-comparison-capital-requirements-global-systemically-important-banks",
+        "imp": "low"
+      },
+      {
+        "d": "02.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "BCBS-Bericht zu IKT-Risikomanagement-Praktiken",
+          "en": "BCBS Report on ICT Risk Management Practices"
+        },
+        "sl": "information-and-communication-technology-ict-risk-management-range-of-practices",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat einen Bericht über das Management von Informations- und Kommunikationstechnologie (IKT)-Risiken veröffentlicht. Dieser analysiert Praktiken zur Stärkung der operationellen Resilienz von Banken gegenüber nicht-bösartigen IKT-Vorfällen. Ziel ist es, Banken bei der Entwicklung robuster IKT-Risikomanagement-Frameworks zu unterstützen, die ein kritischer Aspekt des operationellen Risikomanagements sind.\n\nDer Bericht basiert auf einer Umfrage unter 16 Jurisdiktionen und identifiziert die häufigsten Ursachen für IKT-Vorfälle, wie Mängel im Änderungsmanagement, Systemdesign, Kapazitätsmanagement und externe Abhängigkeiten. Als häufigste Managementpraktiken werden IKT-Änderungsmanagement, Drittparteien-Risikomanagement, IKT-Kontinuitätstests, IKT-Vorfalls- und Problemmanagement sowie IKT-Projektmanagement und Systementwicklung genannt. Dies ist besonders relevant für global und national systemrelevante Banken (G-SIBs, D-SIBs) sowie andere Banken wie Digitalbanken.\n\nDer Bericht ist Teil des Arbeitsprogramms 2025-26 des BCBS und dient als Orientierungshilfe für Aufsichtsbehörden und Banken, um die Widerstandsfähigkeit gegenüber IKT-Vorfällen zu verbessern.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published a report on Information and Communication Technology (ICT) risk management. It analyzes practices to strengthen banks' operational resilience against non-malicious ICT incidents. The report aims to support banks in developing robust ICT risk management frameworks, which are a critical aspect of operational risk management.\n\nBased on a survey across 16 jurisdictions, the report identifies common root causes of ICT incidents, such as gaps in change control, system design, capacity management, and external dependencies. The most frequently reported management practices include ICT change management, third-party risk management, ICT continuity testing, ICT incident and problem management, and ICT project management and system development. This is particularly relevant for global and domestic systemically important banks (G-SIBs, D-SIBs) and other banks, such as digital-only banks.\n\nThe report is part of the BCBS's 2025-26 work program and serves as guidance for supervisors and banks to enhance resilience against ICT incidents."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d611.htm",
+        "imp": "low"
+      },
+      {
+        "d": "23.03.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Technische Änderung und FAQs zum Basler Rahmenwerk (Operationelle und Marktrisiken)",
+          "en": "Technical Amendment and FAQs to the Basel Framework (Operational and Market Risks)"
+        },
+        "sl": "finalisation-of-technical-amendment-and-frequently-asked-questions",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat eine technische Änderung am Basler Rahmenwerk finalisiert, die den Standardansatz für operationelle Risiken betrifft. Die Änderung präzisiert die Behandlung von Mieteinnahmen aus als Finanzinvestition gehaltenen Immobilien und Zinsaufwendungen im Rahmen des Geschäftsindikators (Business Indicator, BI), der zur Berechnung der Eigenkapitalanforderungen für operationelle Risiken verwendet wird. Ziel ist es, eine konsistente Erfassung dieser Posten im BI sicherzustellen.\n\nDiese Klarstellung ist für Banken relevant, die den Standardansatz für operationelle Risiken anwenden. Eine korrekte Kategorisierung von Einnahmen und Ausgaben in die BI-Komponenten ist entscheidend für die genaue Berechnung des BI-Wertes, der wiederum die Eigenkapitalanforderungen beeinflusst. Die Anpassungen sollen sicherstellen, dass Mieteinnahmen und -ausgaben aus Operating-Leasingverhältnissen angemessen berücksichtigt werden.\n\nDie Mitglieder des Basler Ausschusses haben vereinbart, diese technische Änderung so bald wie möglich und spätestens bis zum 1. April 2029 umzusetzen. Zudem wurde eine FAQ zum Standardansatz für Marktrisiken sowie entsprechende Anpassungen an verwandten FAQs finalisiert und in das Basler Rahmenwerk aufgenommen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has finalised a technical amendment to the Basel Framework concerning the standardised approach to operational risk. The amendment clarifies the treatment of rental income from investment properties and interest expenses within the Business Indicator (BI), which is used to calculate operational risk capital requirements. The aim is to ensure consistent capture of these items in the BI.\n\nThis clarification is relevant for banks applying the standardised approach to operational risk. Accurate categorisation of income and expenses into the BI components is crucial for correctly calculating the BI value, which in turn affects capital requirements. The adjustments are intended to ensure that rental income and expenses from operating leases are appropriately captured.\n\nBasel Committee members have agreed to implement this technical amendment as soon as practical and by 1 April 2029 at the latest. Additionally, a frequently asked question (FAQ) on the standardised approach to market risk and consequential amendments to related FAQs have been finalised and incorporated into the Basel Framework."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d610.htm",
+        "imp": "low"
+      },
+      {
+        "d": "26.02.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "BCBS konsolidiert Leitlinien und bewährte Praktiken auf neuer Website",
+          "en": "BCBS consolidates guidelines and sound practices on new website"
+        },
+        "sl": "consolidated-guidelines-and-sound-practices",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat einen neuen Bereich auf seiner Website eingerichtet, der eine konsolidierte Version seiner Leitlinien und bewährten Praktiken für Banken und Aufsichtsbehörden bereitstellt. Ziel ist es, die Zugänglichkeit der Veröffentlichungen des Ausschusses in einem benutzerfreundlichen Format zu verbessern.\n\nDie bisher als PDF-Dokumente auf der Website der Bank für Internationalen Zahlungsausgleich (BIZ) veröffentlichten Inhalte werden auf der neuen Website in einem modularen Format neu organisiert. Dies soll die Navigation und Nutzung der umfangreichen Dokumente erleichtern.\n\nDer Ausschuss hat ein Konsultationsdokument veröffentlicht und um Rückmeldungen zu drei spezifischen Fragen gebeten. Die Frist für die Einreichung von Kommentaren war der 26. Juni 2026. Alle eingegangenen Kommentare werden auf der BIZ-Website veröffentlicht, sofern keine vertrauliche Behandlung beantragt wurde.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has launched a new section of its website, providing a consolidated version of its guidelines and sound practices for banks and supervisors. The aim is to improve the accessibility of the Committee's outputs in a user-friendly format.\n\nPreviously published as PDF documents on the Bank for International Settlements (BIS) website, the content of existing guidelines and sound practices is now reorganised into a modular format on the new website. This is intended to facilitate navigation and use of the extensive documentation.\n\nTo gather feedback, the Committee published a consultative document and invited comments on three specific questions. The deadline for submitting comments was 26 June 2026. All comments received will be published on the BIS website unless a respondent specifically requests confidential treatment."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d608.htm",
+        "imp": "low"
+      },
+      {
+        "d": "20.02.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Stabilität von täglich fälligen Einlagen: Einflussfaktoren und aktuelle Entwicklungen",
+          "en": "Non-maturity deposit stability: Established factors and recent developments"
+        },
+        "sl": "literature-review-on-non-maturity-deposit-stability-established-factors-and-rece",
+        "s": {
+          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat eine Literaturübersicht zur Stabilität von täglich fälligen Einlagen (Non-Maturity Deposits, NMDs) veröffentlicht. Die Analyse untersucht, inwieweit neue Entwicklungen – wie technologische Innovationen, veränderte Refinanzierungsquellen von Banken, erhöhter Wettbewerb und Änderungen im regulatorischen Umfeld – das Verhalten von NMDs beeinflusst haben, insbesondere im Kontext der Bankenunruhen von März bis Mai 2023.\n\nDie Studie kommt zu dem Ergebnis, dass es Hinweise darauf gibt, dass die Veränderungen im Banken- und Finanzsektor die Stabilität von NMDs beeinflusst haben. Gleichzeitig deuten die Erkenntnisse darauf hin, dass traditionelle Faktoren wie die Einlagensicherung und die Wahrnehmung der Bankinsolvenz weiterhin wesentliche Treiber für die Veränderungen in der NMD-Stabilität sind. Es ist daher schwierig zu beurteilen, ob die Nettoeffekte der jüngsten Entwicklungen zu einem volatileren Verhalten der Einleger geführt haben.\n\nDiese Veröffentlichung ist ein Arbeitspapier des BCBS (Working Papers 47) und spiegelt die Ansichten der Autoren wider, nicht notwendigerweise die offiziellen Positionen des Komitees oder seiner Mitglieder. Für Finanzinstitute ist dies relevant, um die Dynamik und Risikofaktoren von NMDs besser zu verstehen und ihre Liquiditätssteuerung entsprechend anzupassen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published a literature review on the stability of non-maturity deposits (NMDs). The analysis examines the extent to which new developments – such as technological innovations, changing funding sources for banks, increased competition, and shifts in the legal and regulatory landscape – have affected NMD behavior, particularly in the context of the banking turmoil from March to May 2023.\n\nThe study concludes that there is some support for the view that changes in the banking and financial industry have affected NMD stability. At the same time, the evidence suggests that traditional factors, such as deposit insurance coverage and perceptions of bank insolvency, remain substantial drivers of changes in NMD stability. It is therefore difficult to conclude whether the net effect of recent developments has resulted in more volatile NMD depositor behavior.\n\nThis publication is a BCBS Working Paper (Working Papers 47) and reflects the views of the authors, not necessarily the official positions of the Committee or its members. For financial institutions, this is relevant for a better understanding of the dynamics and risk factors of NMDs and for adapting their liquidity management accordingly."
+        },
+        "url": "https://www.bis.org/bcbs/publ/wp47.htm",
+        "imp": "low"
+      },
+      {
+        "d": "17.02.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Analyse zu Synthetic Risk Transfers (SRT)",
+          "en": "Analysis of Synthetic Risk Transfers (SRT)"
+        },
+        "sl": "synthetic-risk-transfers",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat einen Bericht zu Synthetic Risk Transfers (SRT) veröffentlicht. SRTs ermöglichen Banken, Kreditrisiken von Vermögenspools auf Gegenparteien zu übertragen, während sie die zugrunde liegenden Vermögenswerte behalten. Hauptmotivationen für Banken sind das Kapital- und Kreditrisikomanagement.\n\nDer Bericht ist Teil der Überwachung der Verflechtungen zwischen Banken und Nichtbanken-Finanzintermediären (NBFIs). Er stellt fest, dass die SRT-Märkte im letzten Jahrzehnt stark gewachsen sind und eine wichtige Quelle für die Kapitalentlastung von Unternehmens-Kreditrisiken darstellen. Das Volumen der durch SRTs geschützten Vermögenswerte in Kanada, der Eurozone, den USA und Großbritannien wird auf rund 750 Milliarden Euro geschätzt, was etwa 1,1 % der gesamten Bankaktiva entspricht.\n\nObwohl seit der Finanzkrise 2008 regulatorische Reformen die SRT-Verbriefungen vereinfacht und die Prüfung verbessert haben, sehen einige Marktteilnehmer und Jurisdiktionen weiterhin „blinde Flecken“ bei Offenlegung und Finanzierungsaktivitäten. Die mit SRTs verbundenen Risiken, wie die erhöhte Abhängigkeit von NBFIs, werden von den Marktteilnehmern zwar gemanagt, erfordern aber eine kontinuierliche Überwachung durch die Aufsichtsbehörden, da die Märkte weiter wachsen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published a report on Synthetic Risk Transfers (SRT). SRTs allow banks to transfer all or a portion of the credit risk of a pool of assets to a counterparty while retaining ownership of the underlying assets. The main motivations for banks to engage in SRTs are capital and credit risk management.\n\nThe report is part of the Committee's ongoing monitoring of interconnections between banks and non-bank financial intermediaries (NBFIs). It finds that SRT markets have grown rapidly over the last decade, providing an important source of capital relief for corporate credit risk. The total value of assets protected by SRTs in Canada, the Euro area, the United States, and the United Kingdom is estimated at approximately EUR 750 billion, or 1.1% of total bank assets.\n\nWhile regulatory reforms since the 2008 financial crisis have simplified SRT securitisations and increased scrutiny, some market participants and jurisdictions still identify blind spots related to disclosure and SRT financing activities. Risks associated with SRTs, such as banks' increased dependence on NBFIs, are acknowledged and managed by market participants, but they warrant continued monitoring by supervisors as SRT markets continue to grow."
+        },
+        "url": "https://www.bis.org/bcbs/publ/d607.htm",
+        "imp": "low"
       }
     ],
     "psd3": [

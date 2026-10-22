@@ -280,15 +280,31 @@ BIS_FOREIGN_RCAP = (
 # bewertet als sonstige unverbindliche Berichte internationaler Standardsetzer.
 BIS_SOURCES = {"bis", "bis_cpmi", "bis_fsi", "bis_press"}
 LLM_BIS_PREFIX = "[BIS] "
+# Finanzmarktinfrastrukturen (CPMI-IOSCO) und Statistik-Pressemeldungen sind
+# keine Bankenaufsichtsstandards.
+BIS_NOT_BANK_SUPERVISION = (
+    r"\bfmis?\b|financial market infrastructures?|monitoring report|"
+    r"ratios are stable|indicators show")
+# CPMI und FSI liefern überwiegend Forschung und Marktinfrastruktur; nur
+# Papiere mit Basel-/Bankenaufsichtsbezug laufen ins Rahmenwerk.
+BIS_BANK_TERMS = (
+    r"basel|bcbs|g-sib|output floor|leverage ratio|operational resilience|"
+    r"third.party|risk data|banking supervision|bank supervision")
 BIS_RULES = [
     (None, BIS_FOREIGN_RCAP),
-    (None, r"basel iii monitoring report|monitoring report"),
+    (None, BIS_NOT_BANK_SUPERVISION),
     ("bcbs", r"[\s\S]"),
+]
+BIS_SECONDARY_RULES = [
+    (None, BIS_FOREIGN_RCAP),
+    (None, BIS_NOT_BANK_SUPERVISION),
+    ("bcbs", BIS_BANK_TERMS),
+    (None, r"[\s\S]"),
 ]
 SOURCE_RULES = {
     "bis": BIS_RULES,
-    "bis_cpmi": BIS_RULES,
-    "bis_fsi": BIS_RULES,
+    "bis_cpmi": BIS_SECONDARY_RULES,
+    "bis_fsi": BIS_SECONDARY_RULES,
     "bis_press": BIS_RULES,
     "cssf": [
         ("cssfict", r"20/750|22/828|25/881|26/915|ict and security risk management|"
@@ -883,9 +899,16 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
 
     from datetime import date as _hdate
     _hys_today = _hdate.today().isoformat()
+    # Pressemitteilungen am Tag einer BIS-Publikation kündigen genau diese an.
+    bis_pub_days = {(r["publication_date"] or "")[:10] for r in rows
+                    if r["source_id"] in ("bis", "bis_cpmi", "bis_fsi")
+                    and r["publication_date"]}
     candidates = []
     for r in rows:
         if _too_thin(r):
+            continue
+        if (r["source_id"] == "bis_press" and r["publication_date"]
+                and r["publication_date"][:10] in bis_pub_days):
             continue
         # AMLA-Einträge ohne extrahiertes Seitendatum sind Slug-Platzhalter
         # (Seite noch nicht geladen) – für den High-Level-Feed auslassen.
