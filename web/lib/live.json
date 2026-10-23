@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:11:32Z",
+  "generated_at": "2026-10-23T09:07:50Z",
   "updates": {
     "idd": [
       {
@@ -4006,6 +4006,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "23.10.2026",
+      "ti": "Kühne Holding AG: Bafin setzt Bußgeld fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/VAG/meldung_261023_kuehne_holding_ag.html",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat gegen die Kühne Holding AG ein Bußgeld von 8.500 Euro erlassen. Grund war ein Verstoß gegen das Versicherungsaufsichtsgesetz (VAG). Das Unternehmen hatte die Neubestellung eines Vertreters nicht unverzüglich nach dessen Bestellung anzeigt."
+    },
     {
       "d": "22.10.2026",
       "ti": "Bank Saderat Iran Zweigniederlassung Hamburg: Bafin hebt Erlaubnis auf und ordnet Abwicklung an",
