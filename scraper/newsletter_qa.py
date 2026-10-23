@@ -26,10 +26,10 @@ hängen bleibt.
                                       Freigabe-Seite ab, meldet Schritte
                                       zurück, löst am Ende die neue Freigabe-
                                       Mail aus. Modell NEWSLETTER_QA_LIVE_MODEL
-                                      (Standard sonnet, für kurze Laufzeit).
+                                      (sonst wie die reguläre QS).
 
 Auth über CRON_SECRET aus web/.env.local; optional NEWSLETTER_QA_MODEL
-(Standard opus) und HEALTH_APP_URL.
+(OpenRouter-ID, Standard openai/gpt-6-luna) und OPENROUTER_API_KEY aus scraper/.env und HEALTH_APP_URL.
 """
 import datetime as dt
 import json
@@ -59,6 +59,7 @@ INSTRUCTIONS = os.path.join(SCRAPER, "NEWSLETTER_QA.md")
 SLOT_WEEKDAY = 3  # Donnerstag (Python: Montag = 0)
 SLOT_HOUR_UTC = 10
 MAX_ATTEMPTS = 2
+DEFAULT_MODEL = "openai/gpt-6-luna"  # OpenRouter-ID, 0,1/0,5 USD je 1 Mio. Token (gpt-6-sol: 2/10, ohne Caching so teuer wie Opus)
 CLAUDE_TIMEOUT = 35 * 60
 DEPLOY_TIMEOUT = 20 * 60
 TEST_TIMEOUT = 10 * 60
@@ -109,8 +110,10 @@ def api(method: str, body: Optional[dict] = None, path: str = "/api/newsletter/q
         raise RuntimeError("HTTP {}: {}".format(e.code, e.read().decode("utf-8", "replace")[:300]))
 
 
-def run(cmd: List[str], timeout: int, cwd: str = REPO) -> Tuple[int, str]:
+def run(cmd: List[str], timeout: int, cwd: str = REPO,
+        extra_env: Optional[dict] = None) -> Tuple[int, str]:
     env = dict(os.environ)
+    env.update(extra_env or {})
     env["PATH"] = "/usr/local/bin:/usr/bin:/bin:" + env.get("PATH", "")
     try:
         p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout, env=env)
@@ -184,15 +187,30 @@ def run_claude(pending: List[dict], check_only: bool, live: bool = False) -> Tup
         "Heute ist {today}. Führe die Newsletter-QS nach der folgenden Anweisung aus. "
         "{n} Meldungen stehen in scraper/data/newsletter_qa_pending.json.\n{mode}\n\n{ins}"
     ).format(today=dt.date.today().strftime("%d.%m.%Y"), n=len(pending), mode=mode, ins=instructions)
-    model = (os.environ.get("NEWSLETTER_QA_LIVE_MODEL", "sonnet") if live
-             else os.environ.get("NEWSLETTER_QA_MODEL", "opus"))
+    # Kosten: Die QS läuft über OpenRouter mit einem GPT-Modell (Nutzerentscheidung
+    # 23.10.2026, Claude-Opus kostete ~3 USD je Lauf). Claude Code dient nur als
+    # Werkzeug-Schleife; alle Modellaufrufe gehen an OpenRouter.
+    model = (os.environ.get("NEWSLETTER_QA_LIVE_MODEL") if live else None) \
+        or os.environ.get("NEWSLETTER_QA_MODEL") or DEFAULT_MODEL
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        return False, False, "", "OPENROUTER_API_KEY fehlt (scraper/.env)"
+    model_env = {
+        "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+        "ANTHROPIC_AUTH_TOKEN": key,
+        "ANTHROPIC_API_KEY": "",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": model,
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": model,
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": model,
+        "ANTHROPIC_SMALL_FAST_MODEL": model,
+    }
     tools = CLAUDE_READONLY_TOOLS + ",Write" if check_only else CLAUDE_ALLOWED_TOOLS
     cmd = [exe, "-p", prompt, "--output-format", "json", "--permission-mode", "acceptEdits",
            "--allowedTools", tools, "--max-turns", "80" if live else "150",
            "--no-session-persistence", "--model", model]
     log("claude -p läuft (Modell {}, {} Meldungen, {}) …".format(
         model, len(pending), "nur prüfen" if check_only else "prüfen und beheben"))
-    rc, out = run(cmd, CLAUDE_TIMEOUT)
+    rc, out = run(cmd, CLAUDE_TIMEOUT, extra_env=model_env)
     data: dict = {}
     for candidate in (out.strip(), out.strip().splitlines()[-1] if out.strip() else ""):
         try:
@@ -202,9 +220,9 @@ def run_claude(pending: List[dict], check_only: bool, live: bool = False) -> Tup
                 break
         except ValueError:
             continue
-    meta = "{} Schritte, Kosten {}".format(
-        data.get("num_turns", "?"),
-        "{:.2f} USD".format(data["total_cost_usd"]) if isinstance(data.get("total_cost_usd"), (int, float)) else "?")
+    # total_cost_usd von Claude Code ist bei Fremdmodellen unbrauchbar (kennt
+    # die Preise nicht); die echten Kosten stehen im OpenRouter-Dashboard.
+    meta = "{} Schritte, Modell {}".format(data.get("num_turns", "?"), model)
     if rc != 0 or data.get("is_error"):
         return False, False, "", "claude -p fehlgeschlagen (Exit {}, {}): {}".format(rc, meta, out[-800:])
     try:
@@ -391,6 +409,8 @@ def _main(argv: List[str], live: bool) -> int:
             state["attempts"], detail[:500])
 
     commit = info.get("commit")
+    if ok_run:
+        report += "\n\nTechnik: {}".format(detail)
     if ok_run and not check_only:
         if live:
             live_report("running", "Übernehme Korrekturen (Tests, Export, Push) …")
@@ -399,6 +419,9 @@ def _main(argv: List[str], live: bool) -> int:
             report += "\n\n" + note
         ok = ok and applied
         if sha:
+            _, stat = run(["git", "show", "--stat", "--format=", sha], 30)
+            files = [ln.split("|")[0].strip() for ln in stat.splitlines() if "|" in ln]
+            report += "\n\nCode-Änderungen (Commit {}): {}".format(sha[:8], ", ".join(files))
             log("Korrekturen gepusht ({}), warte auf Deploy …".format(sha[:8]))
             if live:
                 live_report("running", "Warte auf den Deploy der Korrekturen …")
