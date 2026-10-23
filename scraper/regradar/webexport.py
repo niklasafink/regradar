@@ -170,6 +170,12 @@ FRAMEWORK_RULES = [
     ("ifr", r"\bifr\b|\bifd\b|wertpapierinstitut"),
     ("outsourcing", r"auslagerung|outsourcing|"
                    r"third-party (risk|provider|service)|drittparteien|fremdvergabe"),
+    # QA-Prüfung 23.10.2026: ESMA-Library-Dokumente zum MIDAS-System mit dem
+    # Topic-Tag "Digital Finance and Innovation" sind MiCA-Reporting-Dokumente
+    # (Art. 92–96 MiCAR, Krypto-Assets), nicht klassische MAR-Transaktionsdaten.
+    # "Market Abuse" im Teaser bezeichnet die MiCA-Marktmissbrauchsvorschriften,
+    # die MIDAS als bestehende Infrastruktur übernehmen.
+    ("mica", r"midas[\s\S]{0,80}digital finance|digital finance[\s\S]{0,80}midas"),
     ("mar", r"marktmissbrauch|market abuse|insider|"
            r"ad-hoc-publizität|ad-hoc-mitteilung|ad hoc disclosure|marktmanipulation|market manipulation|directors.? dealings|eigengeschäfte von führungskräften"),
     ("sftr", r"\bsftr\b|securities financing transaction|wertpapierfinanzierungsgeschäft|"

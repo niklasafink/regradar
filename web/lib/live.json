@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:19:40Z",
+  "generated_at": "2026-10-23T16:39:49Z",
   "updates": {
     "idd": [
       {
@@ -163,26 +163,6 @@
         "imp": "low"
       },
       {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
-          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
-        },
-        "sl": "reporting-instructions-midas-system",
-        "s": {
-          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
-          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
-        },
-        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
-        "imp": "high",
-        "refnum": "ESMA65-955014868-17690"
-      },
-      {
         "d": "16.10.2026",
         "t": {
           "de": "Final Report",
@@ -261,6 +241,26 @@
         "url": "https://www.esma.europa.eu/document/report-sanctions-and-measures-imposed-member-states-2025",
         "imp": "low",
         "refnum": "ESMA43-502934634-2902"
+      },
+      {
+        "d": "07.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Stellungnahme zu Änderungen der RTS für Rückkaufprogramme und Stabilisierungsmaßnahmen (ESMA74-268544963-1748)",
+          "en": "Opinion on the amendments to RTS on buy-back programmes and stabilisation measures (ESMA74-268544963-1748)"
+        },
+        "sl": "opinion-on-the-amendments-to-buy-back-programmes-and-stabilisation-measures",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme zu den von der Kommission vorgeschlagenen Änderungen der RTS zu Rückkaufprogrammen und Stabilisierungsmaßnahmen veröffentlicht. Diese Änderungen betreffen die delegierte Verordnung (EU) 2016/1052, die die Marktmissbrauchsverordnung (MAR) ergänzt.\n\nDie vorgeschlagenen Änderungen sehen vor, dass Stabilisierungsgeschäfte in aggregierter Form gemeldet und öffentlich bekannt gemacht werden, ähnlich wie es für Rückkaufgeschäfte bereits im ESMA-Entwurf der RTS vorgesehen ist. Dies beinhaltet die Angabe des aggregierten Volumens und des gewichteten Durchschnittspreises pro Tag und Handelsplatz sowie die Zentralisierung der Meldung an die zuständige Behörde des liquidesten Marktes (MRMTL). Die ESMA hält diese Änderungen für angemessen, da sie einen konsistenten Ansatz für die Berichterstattung und Offenlegung von Rückkauf- und Stabilisierungsgeschäften gewährleisten und den Verwaltungsaufwand für Unternehmen reduzieren, während die Überwachungsfähigkeit der Aufsichtsbehörden erhalten bleibt.\n\nDie Stellungnahme wurde der Europäischen Kommission als Antwort auf deren Anfrage vom 24. Juli 2026 übermittelt. Eine Kopie ging auch an das Europäische Parlament und den Rat.",
+          "en": "ESMA has published an Opinion on the amendments proposed by the Commission to the RTS on buy-back programmes and stabilisation measures. These amendments concern Delegated Regulation (EU) 2016/1052, which supplements the Market Abuse Regulation (MAR).\n\nThe proposed amendments stipulate that stabilisation transactions should be reported and publicly disclosed in an aggregated form, similar to what is already foreseen for buy-back transactions in ESMA's draft RTS. This includes indicating the aggregated volume and weighted average price per day and per trading venue, as well as centralising reporting to the competent authority of the Most Relevant Market in Terms of Liquidity (MRMTL). ESMA considers these amendments appropriate as they ensure a consistent approach to the reporting and disclosure of buy-back and stabilisation transactions and reduce the administrative burden for entities, while preserving the supervisory authorities' ability to monitor trading activity.\n\nThis Opinion has been submitted to the European Commission in response to its letter of 24 July 2026. A copy has also been sent to the European Parliament and the Council."
+        },
+        "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
+        "imp": "medium",
+        "refnum": "ESMA74-268544963-1748"
       }
     ],
     "securitisation": [
@@ -304,6 +304,26 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
         "imp": "high",
         "refnum": "ESMA75-113276571-1625"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
+          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
+        },
+        "sl": "reporting-instructions-midas-system",
+        "s": {
+          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
+          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
+        "imp": "high",
+        "refnum": "ESMA65-955014868-17690"
       },
       {
         "d": "16.10.2026",
@@ -368,34 +388,6 @@
             "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
             "d": "14.10.2026"
           },
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
-          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
-        },
-        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
-        "s": {
-          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
-          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1721",
-        "adv": [
           {
             "f": "PwC Legal",
             "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",

@@ -178,6 +178,17 @@ class FrameworkClassification(unittest.TestCase):
         self.assertEqual(_classify("Bafin: Widerrufsrecht bei Verbraucherdarlehen"), "consumer")
         self.assertEqual(_classify("Payment Services Regulation: Rat einigt sich auf PSR-Text"), "psd3")
 
+    def test_midas_digital_finance_zu_mica(self):
+        """MIDAS + 'Digital Finance and Innovation' = MiCA-Reporting (Art. 92–96),
+        nicht MAR-Transaktionsmeldung. Entspricht ESMA-Library-Metadaten-Muster."""
+        from regradar.webexport import _classify
+        self.assertEqual(
+            _classify("Reporting instructions - MIDAS system "
+                      "Reference — Digital Finance and Innovation, Market Abuse"),
+            "mica")
+        # Reines MIDAS ohne Digital-Finance-Kontext bleibt bei MAR.
+        self.assertEqual(_classify("MIDAS system update for market abuse reporting"), "mar")
+
 
 class ReferenceExtraction(unittest.TestCase):
     def test_eba_reference(self):
