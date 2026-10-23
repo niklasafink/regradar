@@ -32,6 +32,8 @@ export function confirmPage(opts: {
   fields?: Record<string, string>;
   cancelHref?: string;
   cancelLabel?: string;
+  /** Zweiter, heller Button mit eigener Aktion (eigenes Formular). */
+  secondary?: { action: string; button: string; text?: string };
 }): Response {
   const hidden = Object.entries(opts.fields ?? {})
     .map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`)
@@ -43,7 +45,12 @@ export function confirmPage(opts: {
        ${hidden}
        <button type="submit" style="display:inline-block;background:#0f172a;color:#fff;border:0;padding:12px 24px;border-radius:9999px;font-weight:600;font-size:14px;cursor:pointer">${esc(opts.button)}</button>
        ${opts.cancelHref ? `<a href="${esc(opts.cancelHref)}" style="display:inline-block;margin-left:12px;color:#64748b;font-size:14px">${esc(opts.cancelLabel ?? "Abbrechen")}</a>` : ""}
-     </form>`,
+     </form>
+     ${opts.secondary ? `<form method="post" action="${esc(opts.secondary.action)}" style="margin:28px 0 0;padding-top:20px;border-top:1px solid #e2e8f0">
+       ${opts.secondary.text ? `<p style="font-size:13px;color:#64748b;line-height:1.6;margin:0 0 12px">${opts.secondary.text}</p>` : ""}
+       <input type="hidden" name="confirm" value="1">
+       <button type="submit" style="display:inline-block;background:#fff;color:#0f172a;border:1px solid #0f172a;padding:11px 22px;border-radius:9999px;font-weight:600;font-size:14px;cursor:pointer">${esc(opts.secondary.button)}</button>
+     </form>` : ""}`,
   );
 }
 

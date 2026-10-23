@@ -63,6 +63,13 @@ export async function GET(request: Request) {
     action: `/api/newsletter/approve?token=${encodeURIComponent(token)}`,
     button: "Ja, jetzt verschicken",
     fields: { confirm: "1" },
+    secondary: kind === "updates"
+      ? {
+          action: `/api/newsletter/qa/live?token=${encodeURIComponent(token)}`,
+          button: "Erst QS-Lauf starten",
+          text: "Prüft die Meldungen jetzt noch einmal (dauert ca. 1–3 Minuten). Danach kommt automatisch eine neue Freigabe-Mail mit dem aktuellen QS-Bericht.",
+        }
+      : undefined,
   });
 }
 

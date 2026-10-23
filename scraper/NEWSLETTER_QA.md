@@ -62,8 +62,9 @@ Schreibe zum Schluss `scraper/data/newsletter_qa_result.json`:
 ```
 
 - `ok` ist `true`, wenn nach deinen Korrekturen nichts offen ist. Es ist `false`, wenn Niklas vor der Freigabe etwas entscheiden oder prüfen muss.
-- `report` ist deutscher Klartext für Niklas, höchstens etwa 15 Zeilen, ohne Markdown-Überschriften:
-  - eine Zeile „Geprüft: N Meldungen“,
-  - „Behoben:“ mit je einer Zeile pro Korrektur (Meldung, was falsch war, welche Regel),
-  - „Zur Entscheidung:“ mit je einer Zeile pro offenem Punkt und deiner Empfehlung,
-  - fehlt beides, dann „Keine Auffälligkeiten.“
+- `report` ist deutscher Klartext für Niklas, **höchstens 5 Stichpunkte** (jede Zeile beginnt mit „• “), ohne Markdown-Überschriften, jeder Punkt eine kurze Zeile. Er steht so in der Freigabe-Mail und wird dort in Sekunden gelesen:
+  - „• Geprüft: N Meldungen“,
+  - „• Behoben: …“ (mehrere Korrekturen in einem Punkt zusammenfassen: Meldung, Fehler, Regel),
+  - „• Zur Entscheidung: …“ je offenem Punkt mit deiner Empfehlung (nur diese Punkte dürfen eine zweite Zeile brauchen),
+  - fehlt beides, dann „• Keine Auffälligkeiten.“
+- Auf der Freigabe-Seite kann Niklas die QS per Knopfdruck neu starten (`newsletter_qa.py --live`, gleiche Anweisung, kürzere Laufzeit gewünscht). Arbeite zügig und prüfe nur, was der Bestand nahelegt.

@@ -21,6 +21,12 @@ hängen bleibt.
   python3 newsletter_qa.py            regulärer Aufruf (Stundenlauf)
   python3 newsletter_qa.py --force    QS für den aktuellen Slot erneut
   python3 newsletter_qa.py --dry      nur fällige Meldungen anzeigen
+  python3 newsletter_qa.py --live     Live-QS auf Knopfdruck (minütlich über
+                                      run_qa_live.sh): holt den Auftrag der
+                                      Freigabe-Seite ab, meldet Schritte
+                                      zurück, löst am Ende die neue Freigabe-
+                                      Mail aus. Modell NEWSLETTER_QA_LIVE_MODEL
+                                      (Standard sonnet, für kurze Laufzeit).
 
 Auth über CRON_SECRET aus web/.env.local; optional NEWSLETTER_QA_MODEL
 (Standard opus) und HEALTH_APP_URL.
@@ -85,13 +91,13 @@ def current_slot(now: dt.datetime) -> dt.datetime:
     return slot
 
 
-def api(method: str, body: Optional[dict] = None) -> dict:
+def api(method: str, body: Optional[dict] = None, path: str = "/api/newsletter/qa") -> dict:
     load_web_env()
     key = os.environ.get("CRON_SECRET")
     if not key:
         raise RuntimeError("CRON_SECRET fehlt (web/.env.local)")
     req = urllib.request.Request(
-        app_url() + "/api/newsletter/qa", method=method,
+        app_url() + path, method=method,
         data=json.dumps(body).encode("utf-8") if body is not None else None,
         headers={"Authorization": "Bearer " + key,
                  "Content-Type": "application/json",
@@ -153,7 +159,7 @@ def revert(tracked: Set[str], untracked: Set[str]) -> None:
             pass
 
 
-def run_claude(pending: List[dict], check_only: bool) -> Tuple[bool, bool, str, str]:
+def run_claude(pending: List[dict], check_only: bool, live: bool = False) -> Tuple[bool, bool, str, str]:
     """(gelaufen, nichts offen, Bericht, Detail für das Log)."""
     exe = shutil.which("claude") or ("/usr/local/bin/claude" if os.path.exists("/usr/local/bin/claude") else None)
     if not exe:
@@ -178,10 +184,11 @@ def run_claude(pending: List[dict], check_only: bool) -> Tuple[bool, bool, str, 
         "Heute ist {today}. Führe die Newsletter-QS nach der folgenden Anweisung aus. "
         "{n} Meldungen stehen in scraper/data/newsletter_qa_pending.json.\n{mode}\n\n{ins}"
     ).format(today=dt.date.today().strftime("%d.%m.%Y"), n=len(pending), mode=mode, ins=instructions)
-    model = os.environ.get("NEWSLETTER_QA_MODEL", "opus")
+    model = (os.environ.get("NEWSLETTER_QA_LIVE_MODEL", "sonnet") if live
+             else os.environ.get("NEWSLETTER_QA_MODEL", "opus"))
     tools = CLAUDE_READONLY_TOOLS + ",Write" if check_only else CLAUDE_ALLOWED_TOOLS
     cmd = [exe, "-p", prompt, "--output-format", "json", "--permission-mode", "acceptEdits",
-           "--allowedTools", tools, "--max-turns", "150",
+           "--allowedTools", tools, "--max-turns", "80" if live else "150",
            "--no-session-persistence", "--model", model]
     log("claude -p läuft (Modell {}, {} Meldungen, {}) …".format(
         model, len(pending), "nur prüfen" if check_only else "prüfen und beheben"))
@@ -264,8 +271,77 @@ def wait_for_deploy(sha: str) -> bool:
     return False
 
 
-def main(argv: List[str]) -> int:
+LIVE_PATH = "/api/newsletter/qa/live"
+LOCK_DIR = os.path.join(DATA, ".qa.lock")
+RUN_LOCK = os.path.join(DATA, ".run.lock")
+
+
+def live_report(status: str, step: str) -> None:
+    try:
+        api("PUT", {"status": status, "step": step}, LIVE_PATH)
+    except RuntimeError as e:
+        log("Live-Status nicht gemeldet: {}".format(e))
+
+
+def acquire_lock() -> bool:
+    try:
+        os.makedirs(DATA, exist_ok=True)
+        os.mkdir(LOCK_DIR)
+        return True
+    except FileExistsError:
+        if time.time() - os.path.getmtime(LOCK_DIR) > 60 * 60:
+            shutil.rmtree(LOCK_DIR, ignore_errors=True)
+            return acquire_lock()
+        return False
+
+
+def main_live() -> int:
+    """Live-QS: nur starten, wenn die Freigabe-Seite einen Auftrag eingereiht hat."""
     _load_env()
+    try:
+        live = api("GET", path=LIVE_PATH).get("live")
+    except RuntimeError as e:
+        log("Auftrag nicht abrufbar: {}".format(e))
+        return 1
+    if not live or live.get("status") != "queued":
+        return 0
+    if os.path.isdir(RUN_LOCK) and time.time() - os.path.getmtime(RUN_LOCK) < 120 * 60:
+        live_report("queued", "Wartet, bis der laufende Stundenlauf fertig ist")
+        return 0
+    if not acquire_lock():
+        return 0
+    try:
+        live_report("running", "QS startet")
+        try:
+            rc = main(["--force", "--live"])
+        except Exception as e:  # noqa: BLE001 - jede Störung soll auf der Seite landen
+            live_report("failed", "Fehler: {}".format(str(e)[:200]))
+            raise
+        if rc == 0:
+            live_report("done", "QS abgeschlossen, Freigabe-Mail verschickt")
+        else:
+            live_report("failed", "QS konnte nicht laufen (Details in scraper/logs/qa_live.log)")
+        return rc
+    finally:
+        shutil.rmtree(LOCK_DIR, ignore_errors=True)
+
+
+def main(argv: List[str]) -> int:
+    live = "--live" in argv
+    if "--live" in argv and "--force" not in argv:
+        return main_live()
+    _load_env()
+    if not live and not acquire_lock():
+        log("QS läuft bereits")
+        return 0
+    try:
+        return _main(argv, live)
+    finally:
+        if not live:
+            shutil.rmtree(LOCK_DIR, ignore_errors=True)
+
+
+def _main(argv: List[str], live: bool) -> int:
     now = dt.datetime.now(dt.timezone.utc)
     slot = current_slot(now).isoformat().replace("+00:00", ".000Z")
     force = "--force" in argv
@@ -300,10 +376,14 @@ def main(argv: List[str]) -> int:
     state["attempts"] = state.get("attempts", 0) + 1
     save_state(state)
 
-    ok_run, ok, report, detail = run_claude(pending, check_only)
+    if live:
+        live_report("running", "Prüfe {} Meldungen …".format(len(pending)))
+    ok_run, ok, report, detail = run_claude(pending, check_only, live)
     if not ok_run:
         log(detail)
         revert(*(s - b for s, b in zip(git_changes(), (before_tracked, before_untracked))))
+        if live:
+            return 1
         if state["attempts"] < MAX_ATTEMPTS:
             log("zweiter Versuch im nächsten Stundenlauf")
             return 1
@@ -312,12 +392,16 @@ def main(argv: List[str]) -> int:
 
     commit = info.get("commit")
     if ok_run and not check_only:
+        if live:
+            live_report("running", "Übernehme Korrekturen (Tests, Export, Push) …")
         applied, note, sha = apply_changes(before_tracked, before_untracked)
         if note:
             report += "\n\n" + note
         ok = ok and applied
         if sha:
             log("Korrekturen gepusht ({}), warte auf Deploy …".format(sha[:8]))
+            if live:
+                live_report("running", "Warte auf den Deploy der Korrekturen …")
             if wait_for_deploy(sha):
                 commit = sha
             else:
@@ -326,6 +410,8 @@ def main(argv: List[str]) -> int:
     elif check_only:
         report = "Nur geprüft, nichts geändert: Das Arbeitsverzeichnis hatte uncommittete Änderungen.\n" + report
 
+    if live:
+        live_report("running", "Verschicke die neue Freigabe-Mail …")
     latest = api("GET")
     checked = [p["slug"] for p in latest.get("pending") or []]
     res = api("POST", {"ok": ok, "report": report, "checked": checked, "commit": commit})

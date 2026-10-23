@@ -38,3 +38,25 @@ export async function markApprovalSent(slot: string, iso: string): Promise<void>
   const rec = await readQa(slot);
   if (rec) await writeQa(slot, { ...rec, approvalAt: iso });
 }
+
+/** Live-QS auf Knopfdruck (Freigabe-Seite → /api/newsletter/qa/live). Der
+    minütliche Agent auf dem Mac (scraper/newsletter_qa.py --live) holt den
+    Auftrag ab, meldet Schritte zurück und löst am Ende die neue Freigabe-Mail
+    aus. Redis: newsletter:qa:live (1 Tag). */
+export type LiveQa = {
+  status: "queued" | "running" | "done" | "failed";
+  requestedAt: string;
+  updatedAt: string;
+  /** Aktueller Schritt in Klartext. */
+  step?: string;
+};
+
+const LIVE_KEY = "newsletter:qa:live";
+
+export async function readLive(): Promise<LiveQa | null> {
+  return (await redis().get<LiveQa>(LIVE_KEY)) ?? null;
+}
+
+export async function writeLive(rec: LiveQa): Promise<void> {
+  await redis().set(LIVE_KEY, rec, { ex: 24 * 3600 });
+}
