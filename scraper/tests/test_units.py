@@ -1190,6 +1190,17 @@ class FrameworkQa14Oct2026(unittest.TestCase):
         self.assertEqual(self.c("Commission seeks feedback on revision of criteria for sustainable "
                                 "economic activities"), "taxonomy")
 
+    def test_transparency_manual_and_tick_size_are_mifid_not_emir(self):
+        # QA-Prüfung 23.10.2026: Transparenzhandbuch/Tick-Größen = MiFIR, obwohl
+        # der Teaser "OTC-Derivate" nennt (griff sonst über die emir-Regel).
+        self.assertEqual(self.c("ESMA updates transparency manual for OTC derivatives and "
+                                "tick-size regime"), "mifid")
+        self.assertEqual(self.c("ESMA aktualisiert Transparenzhandbuch für OTC-Derivate und "
+                                "Tick-Größen-Regime"), "mifid")
+        # Echtes EMIR-Clearing bleibt unberührt.
+        self.assertEqual(self.c("Final report on RTS for post-trade risk reduction services "
+                                "and the clearing obligation under EMIR"), "emir")
+
 
 class LinkedInDigestTests(unittest.TestCase):
     """Tages-Post: Posttage/Fenster und Datumsprüfung der LLM-Texte."""

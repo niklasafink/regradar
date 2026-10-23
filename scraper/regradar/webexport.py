@@ -174,6 +174,12 @@ FRAMEWORK_RULES = [
            r"ad-hoc-publizität|ad-hoc-mitteilung|ad hoc disclosure|marktmanipulation|market manipulation|directors.? dealings|eigengeschäfte von führungskräften"),
     ("sftr", r"\bsftr\b|securities financing transaction|wertpapierfinanzierungsgeschäft|"
              r"repo market|repo-markt|wertpapierleihe|securities lending"),
+    # QA-Prüfung 23.10.2026: Post-Trade-Transparenz, das ESMA-Transparenzhandbuch
+    # und das Tick-Größen-Regime sind MiFIR-Themen, nicht EMIR-Clearing. Die
+    # emir-Regel darunter griff über "OTC-Derivate" (ESMA-Meldung zur
+    # Aktualisierung des Transparenzhandbuchs für OTC-Derivate und Tick-Größen).
+    ("mifid", r"tick[\s-]?(size|größe)|post-?trade transparency|"
+              r"transparency manual|transparenzhandbuch"),
     ("emir", r"\bemir\b|otc-derivat|otc derivative|clearingpflicht|clearing obligation|"
              r"central counterpart|\bccps?\b|transaktionsregister|trade repositor|"
              r"einschusspflicht|margin requirement|active account|"
