@@ -1,42 +1,5 @@
 {
  "posts": {
-  "2026-10-09": {
-   "window": [
-    "2026-10-08"
-   ],
-   "keys": [
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
-    "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung",
-    "communication-to-the-investment-fund-industry-in-relation-to-the-information-to",
-    "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes",
-    "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl"
-   ],
-   "hook": "BaFin vereinfacht Eigenmittel-Empfehlungen: Viele Institute brauchen künftig keine zusätzlichen Puffer mehr.",
-   "folge": "Ab 08.10.2026 erhalten nur noch Institute eine Eigenmittelempfehlung, deren Kapitalquoten im adversen Stresstest-Szenario unter einer bestimmten Grenze liegen. Das reduziert Bürokratie und macht die Aufsicht risikoorientierter.",
-   "cover": "BaFin: Eigenmittel-Empfehlungen werden proportionaler",
-   "zeilen": [
-    "ESMA: Krypto-Dienstleister müssen MiCA-nicht-konforme Stablecoins einstellen",
-    "CSSF: Neue Anforderungen für luxemburgische IFMs bei White-Label-Geschäften",
-    "EIOPA: Konsultation zu Aufsichtserklärung für IBIP-Vertriebsprozesse bis 04.01.2027"
-   ],
-   "frage": "Wie schätzen Sie die Auswirkungen der neuen BaFin-Methodik auf Ihre Kapitalplanung ein?",
-   "top": "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026",
-   "kern": {
-    "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes": "Die EIOPA konsultiert bis zum 04.01.2027 eine Aufsichtserklärung zur ergebnisorientierten Aufsicht über den Vertrieb von Versicherungsanlageprodukten.",
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-eme-ab-2026": "Die BaFin konkretisiert ab dem 08.10.2026 ihre Methodik zur Eigenmittelempfehlung, sodass Institute mit solider Kapitalausstattung keine Empfehlung mehr erhalten.",
-    "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung": "Die BaFin hat die Aufsichtsmitteilung 08/2026 (BA) veröffentlicht, die die Berechnung und Mitteilung von Eigenmittelempfehlungen für Kreditinstitute präzisiert.",
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026": "Die BaFin informiert ab dem 08.10.2026 über die Methodik zur Eigenmittelempfehlung, die nur noch Institute mit Kapitalquoten unter einer bestimmten Grenze im Stresstest betrifft.",
-    "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl": "Die ESMA erwartet, dass Krypto-Dienstleister die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für EU-Kunden einstellen.",
-    "communication-to-the-investment-fund-industry-in-relation-to-the-information-to": "Die CSSF fordert von luxemburgischen IFMs detaillierte Informationen zu White-Label-Geschäften, insbesondere bei der Verwaltung von Fonds Dritter."
-   },
-   "doppelt": [
-    "aufsichtsmitteilung-08-2026-ba-methodik-zur-eigenmittelempfehlung-ab-2026",
-    "bafin-konkretisiert-methodik-zur-eigenmittelempfehlung"
-   ],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-12": {
    "window": [
     "2026-10-09",
