@@ -1,32 +1,5 @@
 {
  "posts": {
-  "2026-10-13": {
-   "window": [
-    "2026-10-12"
-   ],
-   "keys": [
-    "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue",
-    "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
-    "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an"
-   ],
-   "hook": "Die EBA erleichtert die Berichterstattung für Banken und Versicherer mit einem neuen technischen Paket.",
-   "folge": "Das finale technische Paket für Version 4.4 des EBA-Berichtsrahmens ist da. Es umfasst IFRS-18-Berichterstattung, ESG-Offenlegungen und weitere technische Anpassungen, um die Compliance-Kosten zu senken.",
-   "cover": "EBA: Neues technisches Paket für Reporting 4.4",
-   "zeilen": [
-    "EBA: Änderungen der RTS für Zentralverwahrer, die Bankdienstleistungen anbieten",
-    "EU-Amtsblatt: Aktualisierung von Russland-Sanktionen für zwei Personen"
-   ],
-   "frage": "Welche Herausforderungen sehen Sie bei der Implementierung neuer Berichtsrahmen wie EBA 4.4 in Ihrem Institut?",
-   "top": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
-   "kern": {
-    "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru": "Die EBA hat einen Abschlussbericht zur Änderung der RTS für aufsichtsrechtliche Anforderungen an Zentralverwahrer veröffentlicht, um bankähnliche Nebendienstleistungen für andere CSDs zu ermöglichen.",
-    "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU hat die Begründungen für die Listung von zwei natürlichen Personen in Anhang I der Russland-Sanktionsverordnung (EU) Nr. 269/2014 aktualisiert.",
-    "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht, das IFRS-18-Berichterstattung und ESG-Offenlegungen umfasst."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-14": {
    "window": [
     "2026-10-13"
