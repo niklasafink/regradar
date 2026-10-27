@@ -5,28 +5,23 @@
     "2026-10-12"
    ],
    "keys": [
-    "durchfuehrungsverordnung-eu-2026-2278-des-rates-vom-12-oktober-2026-zur-durchfue",
-    "durchfuehrungsverordnung-eu-2026-2281-des-rates-vom-12-oktober-2026-zur-durchfue",
     "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue",
     "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
     "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an"
    ],
-   "hook": "Russland-Sanktionen: Die EU hat erneut Personen und Organisationen auf die Sanktionsliste gesetzt.",
-   "folge": "Finanzinstitute müssen ihre Compliance-Systeme sofort aktualisieren und alle Geschäftsbeziehungen zu den neu gelisteten Parteien prüfen. Dies erfordert eine umgehende Überprüfung von Kunden- und Transaktionsdaten, um die Einhaltung der Sanktionsvorschriften zu gewährleisten.",
-   "cover": "EU-Amtsblatt: Neue Russland-Sanktionen in Kraft",
+   "hook": "Die EBA erleichtert die Berichterstattung für Banken und Versicherer mit einem neuen technischen Paket.",
+   "folge": "Das finale technische Paket für Version 4.4 des EBA-Berichtsrahmens ist da. Es umfasst IFRS-18-Berichterstattung, ESG-Offenlegungen und weitere technische Anpassungen, um die Compliance-Kosten zu senken.",
+   "cover": "EBA: Neues technisches Paket für Reporting 4.4",
    "zeilen": [
-    "EBA: Finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4 veröffentlicht",
-    "EBA: Entwurf zur Änderung der RTS für Zentralverwahrer veröffentlicht",
-    "EU-Amtsblatt: Eine Entität von DVRK-Sanktionsliste gestrichen"
+    "EBA: Änderungen der RTS für Zentralverwahrer, die Bankdienstleistungen anbieten",
+    "EU-Amtsblatt: Aktualisierung von Russland-Sanktionen für zwei Personen"
    ],
-   "frage": "Wie schnell können Sie neue Sanktionslisteneinträge in Ihren Systemen wirksam umsetzen?",
-   "top": "durchfuehrungsverordnung-eu-2026-2281-des-rates-vom-12-oktober-2026-zur-durchfue",
+   "frage": "Welche Herausforderungen sehen Sie bei der Implementierung neuer Berichtsrahmen wie EBA 4.4 in Ihrem Institut?",
+   "top": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
    "kern": {
-    "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der RTS für Zentralverwahrer veröffentlicht, um bankähnliche Nebendienstleistungen für andere CSDs zu ermöglichen.",
-    "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU aktualisiert die Begründungen für die Listung von zwei natürlichen Personen auf der Russland-Sanktionsliste.",
-    "durchfuehrungsverordnung-eu-2026-2281-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU hat neue Personen und Organisationen auf die Russland-Sanktionsliste gesetzt, was eine sofortige Prüfung der Geschäftsbeziehungen erfordert.",
-    "durchfuehrungsverordnung-eu-2026-2278-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU hat einen Eintrag aus der Sanktionsliste gegen die DVRK gestrichen, was eine Aktualisierung der Compliance-Systeme erfordert.",
-    "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht, inklusive IFRS-18-Berichterstattung und ESG-Offenlegungen."
+    "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru": "Die EBA hat einen Abschlussbericht zur Änderung der RTS für aufsichtsrechtliche Anforderungen an Zentralverwahrer veröffentlicht, um bankähnliche Nebendienstleistungen für andere CSDs zu ermöglichen.",
+    "durchfuehrungsverordnung-eu-2026-2292-des-rates-vom-12-oktober-2026-zur-durchfue": "Die EU hat die Begründungen für die Listung von zwei natürlichen Personen in Anhang I der Russland-Sanktionsverordnung (EU) Nr. 269/2014 aktualisiert.",
+    "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht, das IFRS-18-Berichterstattung und ESG-Offenlegungen umfasst."
    },
    "doppelt": [],
    "fmt": 5,
@@ -184,24 +179,28 @@
    "keys": [
     "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
     "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u",
+    "durchfuehrungsverordnung-eu-2026-2384-der-kommission-vom-21-oktober-2026-zur-363",
+    "durchfuehrungsverordnung-eu-2026-2388-der-kommission-vom-21-oktober-2026-zur-aen",
     "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
     "reporting-instructions-midas-system"
    ],
-   "hook": "MiCA-Marktmissbrauch: Die ESMA veröffentlicht eine Compliance-Tabelle zur Umsetzung in den EU-Ländern.",
-   "folge": "Die Tabelle zeigt, welche nationalen Behörden die ESMA-Leitlinien zu Marktmisbrauch unter MiCA einhalten. Institute müssen prüfen, wie ihre Aufsichtsbehörde die Vorgaben umsetzt und welche Fristen für die Einhaltung gelten.",
-   "cover": "ESMA: MiCA-Marktmissbrauch-Leitlinien in der EU",
+   "hook": "MiCA-Compliance wird konkret: Die ESMA veröffentlicht technische Details für das Reporting von Krypto-Assets.",
+   "folge": "Unternehmen, die Krypto-Assets anbieten, müssen ihre Systeme anpassen, um Daten in spezifischen JSON-Formaten über das MIDAS-System einzureichen. Dies betrifft die Aufzeichnung von Krypto-Assets und Orderbüchern.",
+   "cover": "ESMA: Technische Reporting-Anweisungen für MiCA",
    "zeilen": [
-    "ESMA: Reporting-Anweisungen für Krypto-Assets im MIDAS-System veröffentlicht",
-    "ESMA: EU T+1 Koordinierungsausschuss prüft Banken auf T+1-Bereitschaft im Q4 2026",
-    "ESMA: Ablehnung von Registrierungen kleiner ESG-Ratinganbieter an Vorsitzenden delegiert"
+    "ESMA: Compliance-Tabelle zu MiCA-Leitlinien für Marktmisbrauch zeigt nationale Umsetzungsstände",
+    "ESMA: EU T+1 Koordinierungsausschuss prüft im 4. Quartal 2026 erneut die Bankenbereitschaft",
+    "EU-Amtsblatt: Aktualisierung der EU-Sanktionslisten für ISIL (Da'esh) und Al-Qaida sowie Irak"
    ],
-   "frage": "Wie stellen Sie sicher, dass Ihre internen Prozesse die MiCA-Vorgaben Ihrer nationalen Behörde erfüllen?",
-   "top": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+   "frage": "Wie weit sind Ihre internen Systeme bei der Anpassung an die neuen MiCA-Reporting-Anforderungen?",
+   "top": "reporting-instructions-midas-system",
    "kern": {
-    "compliance-table-on-the-guidelines-on-market-abuse-under-mica": "Die ESMA hat eine Compliance-Tabelle veröffentlicht, die zeigt, welche nationalen Behörden die Leitlinien für Marktmisbrauch unter MiCA einhalten oder dies bis zu einer bestimmten Frist beabsichtigen.",
+    "compliance-table-on-the-guidelines-on-market-abuse-under-mica": "Die ESMA-Compliance-Tabelle zeigt, welche nationalen Behörden die Leitlinien für Marktmisbrauch unter MiCA einhalten oder dies bis zum 30.09.2026 beabsichtigen.",
+    "reporting-instructions-midas-system": "Die ESMA hat technische Anweisungen für das Reporting von Krypto-Assets und Orderbüchern über das MIDAS-System veröffentlicht, die Unternehmen zur Anpassung ihrer Systeme verpflichten.",
     "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u": "Die ESMA delegiert die Befugnis zur Ablehnung von Registrierungsanträgen kleiner ESG-Ratinganbieter an ihren Vorsitzenden, um den Prozess effizienter zu gestalten.",
-    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026": "Der EU T+1 Koordinierungsausschuss berichtet über Fortschritte bei der T+1-Migration und plant eine erneute Prüfung der Bankenbereitschaft im vierten Quartal 2026.",
-    "reporting-instructions-midas-system": "Die ESMA hat Anweisungen für das Reporting von Krypto-Assets und Orderbüchern über das MIDAS-System veröffentlicht, inklusive technischer Spezifikationen und Validierungsregeln."
+    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026": "Der EU T+1 Koordinierungsausschuss berichtet über Fortschritte bei der T+1-Migration und plant für das 4. Quartal 2026 eine erneute Prüfung der Bankenbereitschaft.",
+    "durchfuehrungsverordnung-eu-2026-2384-der-kommission-vom-21-oktober-2026-zur-363": "Die EU aktualisiert die Sanktionsliste für Personen und Organisationen, die mit ISIL (Da'esh) und Al-Qaida verbunden sind, was sofortige Anpassungen erfordert.",
+    "durchfuehrungsverordnung-eu-2026-2388-der-kommission-vom-21-oktober-2026-zur-aen": "Die EU aktualisiert die Liste der Personen und Organisationen im Rahmen der Irak-Sanktionen, was sofortige Anpassungen der Compliance-Systeme erfordert."
    },
    "doppelt": [],
    "fmt": 5,
