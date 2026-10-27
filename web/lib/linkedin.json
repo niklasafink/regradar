@@ -1,47 +1,5 @@
 {
  "posts": {
-  "2026-10-12": {
-   "window": [
-    "2026-10-09",
-    "2026-10-10",
-    "2026-10-11"
-   ],
-   "keys": [
-    "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr",
-    "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and",
-    "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii",
-    "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia",
-    "2026-7844-reporting-template-resol-2-z-08-02",
-    "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
-    "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
-    "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of",
-    "call-for-evidence-on-the-ccp-collateral-tokenisation"
-   ],
-   "hook": "Tokenisierung von Sicherheiten: Die ESMA fragt, ob die Regulierung noch passt.",
-   "folge": "Die ESMA will wissen, wie Tokenisierung Sicherheiten mobilisiert, überträgt und verwertet. Institute, Clearing-Mitglieder und DLT-Anbieter können bis zum 15.01.2027 Stellung nehmen.",
-   "cover": "ESMA: Konsultation zur Tokenisierung von Sicherheiten",
-   "zeilen": [
-    "EBA: Tier-2-Emissionen bleiben bei vorzeitiger Rückzahlung in Z 02.00",
-    "EBA: Internen Identifikator für unbekannte Gegenparteien in Z 12.00/Z 14.00 nutzen",
-    "EBA: Substituierbarkeit von CCPs auch bei anderem Handelsplatz möglich"
-   ],
-   "frage": "Welche Auswirkungen hätte eine Tokenisierung von Sicherheiten auf Ihre Prozesse?",
-   "top": "call-for-evidence-on-the-ccp-collateral-tokenisation",
-   "kern": {
-    "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor": "Die EBA klärt, dass der Code „Other Countries“ in COREP-Meldungen bis zur Korrektur in DPM v4.4 Phase 2 nicht zu melden ist, wenn kein Land 20 % überschreitet.",
-    "call-for-evidence-on-the-ccp-collateral-tokenisation": "Die ESMA konsultiert bis zum 15.01.2027 zur Tokenisierung von Sicherheiten bei CCPs, um den Regulierungsbedarf zu prüfen.",
-    "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr": "Die EBA stellt klar, dass Tier-2-Emissionen trotz Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung weiterhin in Z 02.00 zu melden sind.",
-    "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and": "Institute müssen in Z 12.00 und Z 14.00 interne Identifikatoren für unbekannte Gegenparteien oder aggregierte Daten verwenden, keine Platzhalter.",
-    "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii": "Die EBA präzisiert, dass in Z 09.01, Spalte 0110, „Not applicable“ einzutragen ist, wenn in Spalte 0090 „Direct“ gemeldet wird.",
-    "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia": "Die EBA präzisiert, dass in Z09.01 nur FMI-bezogene Dienstleistungen zu melden sind, nicht allgemeine kommerzielle oder konzerninterne Dienstleistungen.",
-    "2026-7844-reporting-template-resol-2-z-08-02": "Die EBA klärt, dass bei eigenen Vermögenswerten ohne Vertrag in Z 08.02, Feld c0080, „Not applicable“ anzugeben ist.",
-    "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of": "Die EBA präzisiert, dass die Substituierbarkeit von CCPs auch bei Nutzung eines anderen Handelsplatzes gegeben sein kann, sofern eine vertragliche Beziehung besteht.",
-    "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation": "Die EBA präzisiert, dass die Anrechenbarkeit von Immobilien als Kreditsicherheit nicht strikt an die IPRE-Definition gekoppelt ist, sondern an die Unabhängigkeit von Cashflows."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-13": {
    "window": [
     "2026-10-12"
