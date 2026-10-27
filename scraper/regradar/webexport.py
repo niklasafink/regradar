@@ -146,7 +146,10 @@ FRAMEWORK_RULES = [
     ("tfr", r"geldtransfer-?verordnung|transfer of funds|travel rule|transfers of crypto|"
            r"\btfr\b|geldtransferverordnung"),
     ("sanctions", r"finanzsanktion|financial sanction|sanktionspaket|sanctions package|embargo|"
-                  r"sanktionsdurchsetzung|sanktionsliste|restriktive maßnahmen|restrictive measures|"
+                  # "restriktiver Maßnahmen" (Al-Qaida-Liste VO 881/2002), Irak-VO 1210/2003
+                  r"sanktionsdurchsetzung|sanktionsliste|restriktive[rn]? maßnahmen|restrictive measures|"
+                  r"beschränkungen in den wirtschaftlichen und finanziellen beziehungen|"
+                  r"restrictions on economic and financial relations|"
                   r"außenwirtschaftsgesetz|\bawg\b|\bawv\b|einfrieren von geldern|asset freez|"
                  r"sanktionen gegen|sanctions against|russland-sanktion|russia sanction|\bofac\b|iran-sanktion|iran sanction"),
     ("amla", r"\bamla\b|\bamlar\b|anti[- ]money laundering authority|geldwäscheverordnung"),
