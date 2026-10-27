@@ -230,6 +230,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-10-28": {
+   "window": [
+    "2026-10-27"
+   ],
+   "keys": [
+    "federli-informatik-gmbh-verdacht-auf-oeffentliches-angebot-von-namensaktien-der"
+   ],
+   "hook": "Ohne Prospekt, keine Kontrolle: Die BaFin warnt vor einem öffentlichen Angebot von Aktien.",
+   "folge": "Die Federli Informatik GmbH bietet Namensaktien der Federli Informatik AG ohne den erforderlichen Prospekt an. Institute sollten ihre Kunden vor solchen Angeboten warnen, da die BaFin die Vollständigkeit und Kohärenz der Angaben nicht prüfen konnte.",
+   "cover": "BaFin: Warnung vor Aktienangebot ohne Prospekt",
+   "zeilen": [],
+   "frage": "Wie stellen Sie sicher, dass Ihre Kunden vor unseriösen Wertpapierangeboten geschützt sind?",
+   "top": "federli-informatik-gmbh-verdacht-auf-oeffentliches-angebot-von-namensaktien-der",
+   "kern": {
+    "federli-informatik-gmbh-verdacht-auf-oeffentliches-angebot-von-namensaktien-der": "Die BaFin warnt vor einem öffentlichen Angebot von Namensaktien der Federli Informatik AG durch die Federli Informatik GmbH in Deutschland, da der erforderliche Prospekt fehlt."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
