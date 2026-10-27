@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T14:05:44Z",
+  "generated_at": "2026-10-27T15:09:41Z",
   "updates": {
     "idd": [
       {
@@ -909,6 +909,25 @@
         ]
       },
       {
+        "d": "25.03.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Grundsätze für das Management von Drittparteirisiken bei Banken",
+          "en": "Principles for the Sound Management of Third-Party Risk in Banks"
+        },
+        "sl": "sound-management-of-third-party-risk-executive-summary",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat neue Grundsätze für das Management von Drittparteirisiken bei Banken veröffentlicht. Diese Grundsätze ersetzen ein früheres Papier von 2005 und bauen auf jüngeren BCBS-Publikationen zur operationellen Resilienz und zum Management operationeller Risiken auf. Sie decken den gesamten Lebenszyklus von Drittparteivereinbarungen ab, von der Governance und Strategie bis zur Beendigung.\n\nDie Grundsätze richten sich an große, international tätige Banken und deren Aufsichtsbehörden in BCBS-Mitgliedsländern. Sie sollen proportional zur Größe, Komplexität, dem Geschäftsmodell und Risikoprofil der Bank sowie der Kritikalität der Drittparteivereinbarungen angewendet werden. Banken müssen umfassende Risikobewertungen durchführen, eine angemessene Due Diligence vornehmen, rechtlich bindende Verträge abschließen, Ressourcen für das Onboarding bereitstellen, die Leistung und Risiken laufend überwachen und robuste Geschäftskontinuitäts- und Exit-Pläne vorhalten.\n\nDie Aufsichtsbehörden sollen das Drittparteirisikomanagement als integralen Bestandteil ihrer laufenden Bankenbewertung prüfen. Zudem sollen sie potenzielle systemische Risiken, insbesondere durch Konzentration bei einzelnen oder mehreren Drittanbietern, analysieren und die Koordination über Sektoren und Grenzen hinweg fördern, um systemische Risiken kritischer Drittanbieter zu überwachen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published new principles for the sound management of third-party risk for banks. These principles supersede a 2005 paper and build on more recent BCBS publications on operational resilience and the management of operational risk. They cover the entire life cycle of third-party arrangements, from governance and strategy to termination.\n\nThe principles target large internationally active banks and their prudential supervisors in BCBS member jurisdictions. They are intended to be applied on a proportionate basis depending on the bank's size, complexity, business model, and risk profile, as well as the risks and criticality of the third-party arrangements. Banks must conduct comprehensive risk assessments, perform appropriate due diligence, enter into legally binding contracts, dedicate resources for onboarding, continuously monitor performance and risks, and maintain robust business continuity and exit plans.\n\nSupervisors should evaluate third-party risk management as an integral part of their ongoing assessment of banks. Furthermore, they should analyze potential systemic risks, including those posed by concentration on one or multiple third-party service providers, and promote coordination across sectors and borders to monitor systemic risks posed by critical third-party service providers."
+        },
+        "url": "https://www.bis.org/publications/fsi-summary-sound-management-third-party-risk-executive-summary",
+        "imp": "low"
+      },
+      {
         "d": "23.03.2026",
         "t": {
           "de": "Meldung",
@@ -983,25 +1002,6 @@
         },
         "url": "https://www.bis.org/bcbs/publ/d606.htm",
         "imp": "low"
-      },
-      {
-        "d": "10.12.2025",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bis.org",
-        "ti": {
-          "de": "Grundsätze für das Management von Drittparteienrisiken (BCBS)",
-          "en": "Principles for the Sound Management of Third-Party Risk (BCBS)"
-        },
-        "sl": "principles-for-the-sound-management-of-third-party-risk",
-        "s": {
-          "de": "Das Basler Komitee für Bankenaufsicht (BCBS) hat Grundsätze für das solide Management von Drittparteienrisiken veröffentlicht. Diese Grundsätze sollen einen gemeinsamen Rahmen für Banken und Aufsichtsbehörden schaffen, um Risiken im Zusammenhang mit Drittanbietern zu steuern. Sie ersetzen das Joint Forum Papier von 2005 und erweitern das traditionelle Konzept des Outsourcings auf ein breiteres Spektrum von Drittparteienvereinbarungen.\n\nDie zunehmende Abhängigkeit von Banken von Drittanbietern, insbesondere durch die Digitalisierung, erfordert eine Weiterentwicklung des Risikomanagements. Die Grundsätze sind technologieunabhängig und sollen Banken helfen, ihre operationelle Widerstandsfähigkeit zu stärken. Sie umfassen Leitlinien für Governance, Risikobewertung, Due Diligence, Vertragsgestaltung, Onboarding, Überwachung und Beendigung von Drittparteienbeziehungen sowie spezifische Anleitungen für Aufsichtsbehörden. Die Anwendung der Grundsätze soll proportional zur Größe, Komplexität und dem Risikoprofil der Bank sowie der Kritikalität der Drittparteienvereinbarungen erfolgen.\n\nDie Veröffentlichung erfolgte am 10. Dezember 2025. Eine frühere konsultative Version wurde am 9. Juli 2024 geschlossen.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) has published principles for the sound management of third-party risk. These principles aim to establish a common framework for banks and supervisors to manage risks associated with third-party providers. They supersede the 2005 Joint Forum paper and expand the traditional concept of outsourcing to a broader range of third-party arrangements.\n\nBanks' increasing reliance on third-party service providers, particularly due to digitalization, necessitates an evolution in risk management. The principles are technology-agnostic and are intended to help banks strengthen their operational resilience. They include guidance on governance, risk assessment, due diligence, contracting, onboarding, ongoing monitoring, and termination of third-party relationships, as well as specific guidance for prudential supervisors. The application of the principles should be proportionate to the bank's size, complexity, business model, and risk profile, as well as the criticality of the third-party arrangements.\n\nThe publication date is December 10, 2025. A previous consultative version was closed on July 9, 2024."
-        },
-        "url": "https://www.bis.org/bcbs/publ/d605.htm",
-        "imp": "medium"
       }
     ],
     "psd3": [
