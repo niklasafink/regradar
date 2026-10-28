@@ -1,35 +1,5 @@
 {
  "posts": {
-  "2026-10-14": {
-   "window": [
-    "2026-10-13"
-   ],
-   "keys": [
-    "durchfuehrungsverordnung-eu-2026-2313-des-rates-vom-13-oktober-2026-zur-durchfue",
-    "durchfuehrungsverordnung-eu-2026-2318-des-rates-vom-13-oktober-2026-zur-durchfue",
-    "esma-sets-out-2026-european-common-enforcement-priorities",
-    "verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde"
-   ],
-   "hook": "ESMA legt Prüfungsschwerpunkte für 2026 fest: Geopolitische Risiken und Nachhaltigkeit im Fokus.",
-   "folge": "Emittenten müssen ihre Jahresfinanzberichte und Nachhaltigkeitserklärungen auf diese Schwerpunkte ausrichten. Das betrifft insbesondere IFRS-Berichte und ESRS-Anwendungen.",
-   "cover": "ESMA: Prüfungsschwerpunkte für Jahresfinanzberichte 2026",
-   "zeilen": [
-    "BaFin: Konsultation zur Sachkunde bei Verbraucherdarlehen bis 27.10.2026",
-    "EU-Amtsblatt: Neue Russland-Sanktionen gegen eine Person in Belarus",
-    "EU-Amtsblatt: Aktualisierung der Sanktionsliste für Guinea"
-   ],
-   "frage": "Wie stellen Sie sicher, dass geopolitische Risiken in Ihren Finanzberichten angemessen abgebildet sind?",
-   "top": "esma-sets-out-2026-european-common-enforcement-priorities",
-   "kern": {
-    "durchfuehrungsverordnung-eu-2026-2313-des-rates-vom-13-oktober-2026-zur-durchfue": "Eine weitere Person wurde in die Liste der Russland-Sanktionen aufgenommen, was für alle EU-Unternehmen sofortige Prüf- und Einfrierpflichten auslöst.",
-    "durchfuehrungsverordnung-eu-2026-2318-des-rates-vom-13-oktober-2026-zur-durchfue": "Die Sanktionsliste für Guinea wurde aktualisiert, was für Finanzinstitute eine Anpassung ihrer Compliance-Prüfungen bedeutet.",
-    "esma-sets-out-2026-european-common-enforcement-priorities": "Die ESMA hat die Prüfungsschwerpunkte für Jahresfinanzberichte 2026 veröffentlicht, die geopolitische Risiken und Nachhaltigkeitsberichterstattung umfassen.",
-    "verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde": "Die BaFin konsultiert bis zum 27.10.2026 eine Änderung der Immobiliar-Darlehensvergabe-Sachkunde-Verordnung, die ab dem 20.11.2026 gilt."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-16": {
    "window": [
     "2026-10-15"
