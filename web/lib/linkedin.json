@@ -172,6 +172,30 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-10-30": {
+   "window": [
+    "2026-10-29"
+   ],
+   "keys": [
+    "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
+    "esma-proposes-simpler-eu-taxonomy-reporting"
+   ],
+   "hook": "Weniger ist mehr: Die ESMA will die Berichtspflichten zur EU-Taxonomie vereinfachen.",
+   "folge": "Die ESMA schlägt vor, den OpEx-KPI auf nicht-aktivierte F&E-Ausgaben zu beschränken und die Berichterstattung auf Gruppenebene zu vereinfachen. Das könnte den Aufwand für Institute reduzieren, die Taxonomie-Offenlegungen erstellen müssen.",
+   "cover": "ESMA: Vereinfachung der EU-Taxonomie-Berichterstattung",
+   "zeilen": [
+    "EU-Kommission: Konsultation zu Margenanforderungen für OTC-Derivate bis 26.11.2026"
+   ],
+   "frage": "Welche Erleichterungen würden Sie sich bei der Taxonomie-Berichterstattung am meisten wünschen?",
+   "top": "esma-proposes-simpler-eu-taxonomy-reporting",
+   "kern": {
+    "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl": "Die EU-Kommission konsultiert bis zum 26.11.2026 Änderungen an den RTS zu Margenanforderungen für nicht zentral abgewickelte Derivate, die Finanzinstitute betreffen.",
+    "esma-proposes-simpler-eu-taxonomy-reporting": "Die ESMA schlägt der EU-Kommission vor, den obligatorischen OpEx-KPI auf nicht-aktivierte F&E-Ausgaben zu beschränken und die Taxonomie-Berichterstattung auf Gruppenebene zu vereinfachen."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }

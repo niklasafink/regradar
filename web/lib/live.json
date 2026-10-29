@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-10-28T23:05:45Z",
+  "generated_at": "2026-10-29T14:17:11Z",
   "updates": {
+    "emir": [
+      {
+        "d": "29.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Konsultation zu Margenanforderungen für nicht zentral abgewickelte Derivate (Ares(2026)10142916)",
+          "en": "Consultation on margin requirements for non-centrally cleared derivatives (Ares(2026)10142916)"
+        },
+        "sl": "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
+        "s": {
+          "de": "Die Europäische Kommission konsultiert Änderungen an den technischen Regulierungsstandards (RTS) zu bestimmten Margenanforderungen für nicht zentral abgewickelte Transaktionen. Diese Änderungen betreffen die Anwendung von Sicherheitenanforderungen für Derivatekontrakte, die nicht über eine zentrale Gegenpartei (CCP) abgewickelt werden.\n\nDie Konsultation ist relevant für Finanzinstitute, die außerbörsliche Derivate (OTC-Derivate) handeln und dabei Margenanforderungen gemäß EMIR erfüllen müssen. Die Anpassungen könnten Auswirkungen auf die Berechnung und den Austausch von Initial- und Variation-Margin haben.\n\nInteressierte Parteien können bis zum 26. November 2026 Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
+          "en": "The European Commission is consulting on amendments to the Regulatory Technical Standards (RTS) on certain margin requirements applicable to non-centrally cleared transactions. These amendments concern the application of collateral requirements for derivative contracts not cleared by a central counterparty (CCP).\n\nThis consultation is relevant for financial institutions trading over-the-counter (OTC) derivatives that are subject to margin requirements under EMIR. The adjustments could impact the calculation and exchange of initial and variation margin.\n\nInterested parties can submit comments on the proposed amendments until 26 November 2026."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19680",
+        "imp": "medium",
+        "deadline": "26.11.2026",
+        "refnum": "Ares(2026)10142916"
+      },
+      {
+        "d": "20.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finale RTS zu Anforderungen an Post-Trade Risk Reduction Services (EMIR)",
+          "en": "Final RTS on requirements for Post-Trade Risk Reduction services (EMIR)"
+        },
+        "sl": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht zu den technischen Regulierungsstandards (RTS) für Post-Trade Risk Reduction (PTRR) Services veröffentlicht. Diese RTS legen die Anforderungen fest, unter denen Derivategeschäfte, die im Rahmen von PTRR-Diensten abgeschlossen werden, von der Clearingpflicht gemäß EMIR ausgenommen werden können.\n\nDer Bericht befasst sich mit der Identifizierung von PTRR-Diensten, der Marktrisikoneutralität, der Risikoreduzierung und der nicht-preisbildenden Natur von PTRR-Übungen. Zudem werden Anforderungen an die Unabhängigkeit der PTRR-Dienstleister von den Gegenparteien der OTC-Derivatekontrakte sowie an die Teilnahme und Ausführung einer PTRR-Übung detailliert beschrieben. Für Finanzunternehmen, die OTC-Derivate handeln, sind diese Standards relevant, da sie die Bedingungen für die Nutzung von PTRR-Diensten zur Reduzierung von Risikopositionen und zur potenziellen Befreiung von der Clearingpflicht klären.\n\nDes Weiteren werden operative Bedingungen für PTRR-Dienstleister behandelt, einschließlich algorithmischer Anforderungen, organisatorischer Vorgaben, Kontrollen und Kriterien zur Vermeidung der Umgehung der Clearingpflicht. Auch die Aufzeichnung von Transaktionen, die im Rahmen einer PTRR-Übung ausgeführt werden, ist ein wichtiger Bestandteil der neuen Regelungen.",
+          "en": "ESMA has published its final report on the Regulatory Technical Standards (RTS) for Post-Trade Risk Reduction (PTRR) services. These RTS define the requirements under which derivative transactions concluded within the framework of PTRR services may be exempted from the clearing obligation under EMIR.\n\n The report addresses the identification of PTRR services, market risk neutrality, risk reduction, and the non-price-forming nature of PTRR exercises. It also details requirements for the independence of PTRR service providers from the counterparties to OTC derivative contracts, as well as for the participation and execution of a PTRR exercise. These standards are relevant for financial undertakings trading OTC derivatives, as they clarify the conditions for using PTRR services to reduce risk exposures and potentially qualify for an exemption from the clearing obligation.\n\nFurthermore, operational conditions for PTRR service providers are covered, including algorithmic requirements, organizational requirements, controls, and criteria to prevent circumvention of the clearing obligation. The record-keeping of transactions executed pursuant to a PTRR exercise is also an important component of the new regulations."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-regulatory-standards-requirements-post-trade-risk-reduction-services-purpose",
+        "imp": "high",
+        "refnum": "ESMA74-1049116226-981"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      }
+    ],
     "idd": [
       {
         "d": "08.10.2026",
@@ -140,6 +240,141 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
         "imp": "medium",
         "refnum": "Ares(2026)6942470"
+      }
+    ],
+    "taxonomy": [
+      {
+        "d": "29.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA schlägt Vereinfachungen für die EU-Taxonomie-Berichterstattung vor",
+          "en": "ESMA proposes simpler EU Taxonomy reporting"
+        },
+        "sl": "esma-proposes-simpler-eu-taxonomy-reporting",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht mit technischem Rat an die Europäische Kommission zur Vereinfachung der wichtigsten Leistungsindikatoren (KPIs) gemäß der Taxonomie-Offenlegungs-Delegierten Verordnung veröffentlicht.\n\nDie ESMA empfiehlt, den obligatorischen KPI für Betriebsausgaben (OpEx) auf nicht-aktivierte Forschungs- und Entwicklungsausgaben zu beschränken. Zudem schlägt sie eine einfachere Taxonomie-Berichterstattung auf Gruppenebene vor, einschließlich der Abschaffung des gewichteten Durchschnitts-KPI, sowie gezielte Maßnahmen zur Verhältnismäßigkeit, Klarheit und Benutzerfreundlichkeit der Offenlegungen. Diese Vorschläge zielen darauf ab, die Berichterstattung auf entscheidungsrelevante Informationen zu konzentrieren und gleichzeitig die Relevanz, Vergleichbarkeit und Zuverlässigkeit der Taxonomie-Offenlegungen zu wahren.\n\nDer technische Rat wurde an die Europäische Kommission übermittelt, die ihn bei ihrer Überprüfung der Taxonomie-Offenlegungs-Delegierten Verordnung berücksichtigen wird.",
+          "en": "ESMA has published its Final Report providing technical advice to the European Commission on simplifying key performance indicators (KPIs) under the Taxonomy Disclosures Delegated Act.\n\nESMA recommends narrowing the mandatory operating expenditure (OpEx) KPI to non-capitalised research and development expenditure. It also proposes simpler group Taxonomy reporting, including removing the weighted-average KPI, and targeted measures to make disclosures more proportionate, clearer, and easier to use. These proposals aim to focus reporting on decision-useful information while preserving the relevance, comparability, and reliability of Taxonomy disclosures.\n\nThe technical advice has been submitted to the European Commission for consideration in its review of the Taxonomy Disclosures Delegated Act."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-proposes-simpler-eu-taxonomy-reporting",
+        "imp": "medium"
+      },
+      {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Überprüfung der Offenlegungspflichten für Versicherungen unter dem Taxonomie-Delegierten Rechtsakt (EIOPA)",
+          "en": "Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act (EIOPA)"
+        },
+        "sl": "consultation-on-the-review-of-insurance-disclosures-under-the-taxonomy-disclosur",
+        "s": {
+          "de": "Die EIOPA hat eine Konsultation zu vorgeschlagenen Änderungen der Offenlegungspflichten für Versicherungsunternehmen im Rahmen der EU-Taxonomie für ökologisch nachhaltige Aktivitäten durchgeführt. Die Entwürfe zielen darauf ab, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Taxonomie-bezogenen Berichtspflichten der Versicherer besser an andere Rahmenwerke für nachhaltige Finanzen sowie an die Anforderungen für andere Finanzinstitute anzugleichen.\n\nDiese Änderungen betreffen Versicherungsunternehmen, die unter die EU-Taxonomie fallen. Praktisch bedeutet dies eine Anpassung der Offenlegungspraktiken, um eine konsistentere und vergleichbarere Berichterstattung über nachhaltige Aktivitäten zu gewährleisten. Die Angleichung an andere Finanzrahmenwerke könnte den Compliance-Aufwand durch Harmonisierung reduzieren.\n\nDie Konsultationsfrist endete am 12. August 2026. Die EIOPA hat am 28. August 2026 die Antworten auf die Konsultation veröffentlicht.",
+          "en": "EIOPA has conducted a consultation on proposed changes to insurance corporate disclosure requirements under the EU Taxonomy framework for environmentally sustainable activities. The draft proposals aim to increase transparency, simplify reporting, and better align insurers' Taxonomy-related reporting requirements with other sustainable finance frameworks as well as with requirements applicable to other financial institutions.\n\nThese changes affect insurance undertakings falling under the EU Taxonomy. Practically, this means an adjustment of disclosure practices to ensure more consistent and comparable reporting on sustainable activities. Alignment with other financial frameworks could reduce compliance efforts through harmonization.\n\nThe consultation period ended on August 12, 2026. EIOPA published the responses to the consultation on August 28, 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-review-insurance-disclosures-under-taxonomy-disclosures-delegated-act_en",
+        "imp": "medium",
+        "deadline": "12.08.2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: Konsultationen zur Vereinfachung der EU-Taxonomie",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255637/konsultationen-zur-vereinfachung-der-eu-taxonomie/",
+            "d": "02.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "01.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EIOPA konsultiert Verbesserungen der Unternehmensangaben zur EU-Taxonomie (Versicherung)",
+          "en": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities"
+        },
+        "sl": "eiopa-consults-on-enhancements-to-insurance-corporate-disclosures-under-eu-taxon",
+        "s": {
+          "de": "Die EIOPA konsultiert Vorschläge zur Verbesserung der Unternehmensangaben von Versicherern gemäß der EU-Taxonomie. Ziel ist es, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Anforderungen besser an andere nachhaltige Finanzrahmen sowie an andere Finanzinstitute anzugleichen.\n\nWesentliche Änderungen umfassen die Überarbeitung des „Underwriting KPI“ für (Rück-)Versicherer, indem der Nenner auf taxonomiekonforme Geschäftsbereiche eingeengt und der KPI in „Adaptation Underwriting KPI“ umbenannt wird. Zudem wird die Einführung eines neuen „Green Insured Activities KPI“ vorgeschlagen, um den Anteil taxonomiekonformer versicherter Aktivitäten zu messen. Dieser KPI würde alle Policen abdecken, die an Unternehmen verkauft werden, die unter die Taxonomie-Verordnung fallen, sowie private Versicherungen für Wohnen und Transport.\n\nDie Konsultation läuft bis zum 12. August 2026. Eine öffentliche Anhörung findet am 16. Juli statt. Die Vorschläge erfolgen auf Anfrage der Europäischen Kommission an die ESAs zur Vereinfachung und Verbesserung des Delegierten Rechtsakts zu Offenlegungen unter der Taxonomie-Verordnung.",
+          "en": "EIOPA is consulting on proposed enhancements to insurance corporate disclosures under the EU Taxonomy framework. The aim is to increase transparency, simplify reporting, and better align requirements with other sustainable finance frameworks and those applicable to other financial institutions.\n\nKey amendments include revising the 'underwriting KPI' for (re)insurers by narrowing the denominator to Taxonomy-eligible lines of business and renaming it to 'Adaptation Underwriting KPI'. Furthermore, the introduction of a new 'Green Insured Activities KPI' is proposed to measure the ratio of Taxonomy-aligned insured activities. This KPI would cover all policies sold to companies reporting under the Taxonomy Regulation, as well as retail insurance policies for housing and transport.\n\nThe consultation period ends on 12 August 2026, with a public hearing scheduled for 16 July. These proposals are in response to a European Commission request to the ESAs for technical advice on simplifying and improving the Disclosures Delegated Act under the Taxonomy Regulation."
+        },
+        "url": "https://www.eiopa.europa.eu/eiopa-consults-enhancements-insurance-corporate-disclosures-under-eu-taxonomy-environmentally-2026-07-01_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
+            "d": "07.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.06.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
+          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
+        },
+        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
+        "s": {
+          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
+          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
+        "imp": "medium",
+        "refnum": "T-77/24"
+      },
+      {
+        "d": "17.03.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Kommission bittet um Feedback zur Überarbeitung der Kriterien für nachhaltige Wirtschaftsaktivitäten",
+          "en": "Commission seeks feedback on revision of criteria for sustainable economic activities"
+        },
+        "sl": "commission-seeks-feedback-on-revision-of-criteria-for-sustainable-economic-activ",
+        "s": {
+          "de": "Die Europäische Kommission hat Entwürfe zur Überarbeitung der technischen Bewertungskriterien der EU-Taxonomie veröffentlicht. Ziel ist es, das Rahmenwerk zu vereinfachen, die Anwendung zu erleichtern und die Kriterien an aktuelle EU-Gesetzgebung sowie technologische Fortschritte anzupassen.\n\nDie Änderungen betreffen die meisten Aktivitäten der Klima- und Umwelt-Delegierten Rechtsakte, darunter Forstwirtschaft, Umweltschutz, Fertigung, Energie, Verkehr und Bauwesen. Auch die generischen „Do no significant harm“-Anhänge sind betroffen. Dies soll die Akzeptanz der Taxonomie fördern, den Zugang zu grünen Finanzierungen verbessern und die Markttransparenz durch klarere Offenlegungen erhöhen.\n\nInteressenträger können bis zum 14. April Rückmeldungen zu den Entwürfen geben. Die Kommission plant, die überarbeiteten Kriterien bis zum Sommer zu verabschieden.",
+          "en": "The European Commission has published draft revisions to the technical screening criteria of the EU Taxonomy. The aim is to simplify the framework, make it easier to use, and align the criteria with updated EU legislation and technological advancements.\n\nThe changes cover most activities under the Climate and Environmental Delegated Acts, including forestry, environmental protection, manufacturing, energy, transport, and construction. The generic 'do no significant harm' appendices are also affected. This is intended to boost taxonomy adoption, improve access to green finance, and enhance market transparency through clearer disclosures.\n\nStakeholders can provide feedback on the drafts until April 14. The Commission plans to adopt the revised criteria by the summer."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revision-criteria-sustainable-economic-activities-2026-03-17_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission veröffentlicht Entwürfe zu Anpassungen an den technischen Bewertungskriterien für die EU-Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwuerfe-zu-anpassungen-an-den-technischen-bewertungskriterien-fuer-die-eu-taxonomie-verordnung/",
+            "d": "23.03.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: EU-Taxonomie: Öffentliches Feedback zur Anpassung des Klima- und Umweltrechtsakts",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/253721/eu-taxonomie-oeffentliches-feedback-zur-anpassung-des-klima-und-umweltrechtsakts/",
+            "d": "19.03.2026"
+          }
+        ]
       }
     ],
     "mar": [
@@ -656,85 +891,6 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2292",
         "imp": "low",
         "refnum": "32026R2292"
-      }
-    ],
-    "emir": [
-      {
-        "d": "20.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finale RTS zu Anforderungen an Post-Trade Risk Reduction Services (EMIR)",
-          "en": "Final RTS on requirements for Post-Trade Risk Reduction services (EMIR)"
-        },
-        "sl": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht zu den technischen Regulierungsstandards (RTS) für Post-Trade Risk Reduction (PTRR) Services veröffentlicht. Diese RTS legen die Anforderungen fest, unter denen Derivategeschäfte, die im Rahmen von PTRR-Diensten abgeschlossen werden, von der Clearingpflicht gemäß EMIR ausgenommen werden können.\n\nDer Bericht befasst sich mit der Identifizierung von PTRR-Diensten, der Marktrisikoneutralität, der Risikoreduzierung und der nicht-preisbildenden Natur von PTRR-Übungen. Zudem werden Anforderungen an die Unabhängigkeit der PTRR-Dienstleister von den Gegenparteien der OTC-Derivatekontrakte sowie an die Teilnahme und Ausführung einer PTRR-Übung detailliert beschrieben. Für Finanzunternehmen, die OTC-Derivate handeln, sind diese Standards relevant, da sie die Bedingungen für die Nutzung von PTRR-Diensten zur Reduzierung von Risikopositionen und zur potenziellen Befreiung von der Clearingpflicht klären.\n\nDes Weiteren werden operative Bedingungen für PTRR-Dienstleister behandelt, einschließlich algorithmischer Anforderungen, organisatorischer Vorgaben, Kontrollen und Kriterien zur Vermeidung der Umgehung der Clearingpflicht. Auch die Aufzeichnung von Transaktionen, die im Rahmen einer PTRR-Übung ausgeführt werden, ist ein wichtiger Bestandteil der neuen Regelungen.",
-          "en": "ESMA has published its final report on the Regulatory Technical Standards (RTS) for Post-Trade Risk Reduction (PTRR) services. These RTS define the requirements under which derivative transactions concluded within the framework of PTRR services may be exempted from the clearing obligation under EMIR.\n\n The report addresses the identification of PTRR services, market risk neutrality, risk reduction, and the non-price-forming nature of PTRR exercises. It also details requirements for the independence of PTRR service providers from the counterparties to OTC derivative contracts, as well as for the participation and execution of a PTRR exercise. These standards are relevant for financial undertakings trading OTC derivatives, as they clarify the conditions for using PTRR services to reduce risk exposures and potentially qualify for an exemption from the clearing obligation.\n\nFurthermore, operational conditions for PTRR service providers are covered, including algorithmic requirements, organizational requirements, controls, and criteria to prevent circumvention of the clearing obligation. The record-keeping of transactions executed pursuant to a PTRR exercise is also an important component of the new regulations."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-regulatory-standards-requirements-post-trade-risk-reduction-services-purpose",
-        "imp": "high",
-        "refnum": "ESMA74-1049116226-981"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
       }
     ],
     "itsrep": [
@@ -3408,122 +3564,6 @@
             "ti": "EU-Kommission stellt delegierte Verordnung zur Überarbeitung von Solvency II vor",
             "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-stellt-delegierte-verordnung-zur-ueberarbeitung-von-solvency-ii-vor/",
             "d": "31.10.2025"
-          }
-        ]
-      }
-    ],
-    "taxonomy": [
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Überprüfung der Offenlegungspflichten für Versicherungen unter dem Taxonomie-Delegierten Rechtsakt (EIOPA)",
-          "en": "Consultation on the review of insurance disclosures under the Taxonomy Disclosures Delegated Act (EIOPA)"
-        },
-        "sl": "consultation-on-the-review-of-insurance-disclosures-under-the-taxonomy-disclosur",
-        "s": {
-          "de": "Die EIOPA hat eine Konsultation zu vorgeschlagenen Änderungen der Offenlegungspflichten für Versicherungsunternehmen im Rahmen der EU-Taxonomie für ökologisch nachhaltige Aktivitäten durchgeführt. Die Entwürfe zielen darauf ab, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Taxonomie-bezogenen Berichtspflichten der Versicherer besser an andere Rahmenwerke für nachhaltige Finanzen sowie an die Anforderungen für andere Finanzinstitute anzugleichen.\n\nDiese Änderungen betreffen Versicherungsunternehmen, die unter die EU-Taxonomie fallen. Praktisch bedeutet dies eine Anpassung der Offenlegungspraktiken, um eine konsistentere und vergleichbarere Berichterstattung über nachhaltige Aktivitäten zu gewährleisten. Die Angleichung an andere Finanzrahmenwerke könnte den Compliance-Aufwand durch Harmonisierung reduzieren.\n\nDie Konsultationsfrist endete am 12. August 2026. Die EIOPA hat am 28. August 2026 die Antworten auf die Konsultation veröffentlicht.",
-          "en": "EIOPA has conducted a consultation on proposed changes to insurance corporate disclosure requirements under the EU Taxonomy framework for environmentally sustainable activities. The draft proposals aim to increase transparency, simplify reporting, and better align insurers' Taxonomy-related reporting requirements with other sustainable finance frameworks as well as with requirements applicable to other financial institutions.\n\nThese changes affect insurance undertakings falling under the EU Taxonomy. Practically, this means an adjustment of disclosure practices to ensure more consistent and comparable reporting on sustainable activities. Alignment with other financial frameworks could reduce compliance efforts through harmonization.\n\nThe consultation period ended on August 12, 2026. EIOPA published the responses to the consultation on August 28, 2026."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-review-insurance-disclosures-under-taxonomy-disclosures-delegated-act_en",
-        "imp": "medium",
-        "deadline": "12.08.2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
-            "d": "07.07.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: Konsultationen zur Vereinfachung der EU-Taxonomie",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/255637/konsultationen-zur-vereinfachung-der-eu-taxonomie/",
-            "d": "02.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "01.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EIOPA konsultiert Verbesserungen der Unternehmensangaben zur EU-Taxonomie (Versicherung)",
-          "en": "EIOPA consults on enhancements to insurance corporate disclosures under EU Taxonomy for environmentally sustainable activities"
-        },
-        "sl": "eiopa-consults-on-enhancements-to-insurance-corporate-disclosures-under-eu-taxon",
-        "s": {
-          "de": "Die EIOPA konsultiert Vorschläge zur Verbesserung der Unternehmensangaben von Versicherern gemäß der EU-Taxonomie. Ziel ist es, die Transparenz zu erhöhen, die Berichterstattung zu vereinfachen und die Anforderungen besser an andere nachhaltige Finanzrahmen sowie an andere Finanzinstitute anzugleichen.\n\nWesentliche Änderungen umfassen die Überarbeitung des „Underwriting KPI“ für (Rück-)Versicherer, indem der Nenner auf taxonomiekonforme Geschäftsbereiche eingeengt und der KPI in „Adaptation Underwriting KPI“ umbenannt wird. Zudem wird die Einführung eines neuen „Green Insured Activities KPI“ vorgeschlagen, um den Anteil taxonomiekonformer versicherter Aktivitäten zu messen. Dieser KPI würde alle Policen abdecken, die an Unternehmen verkauft werden, die unter die Taxonomie-Verordnung fallen, sowie private Versicherungen für Wohnen und Transport.\n\nDie Konsultation läuft bis zum 12. August 2026. Eine öffentliche Anhörung findet am 16. Juli statt. Die Vorschläge erfolgen auf Anfrage der Europäischen Kommission an die ESAs zur Vereinfachung und Verbesserung des Delegierten Rechtsakts zu Offenlegungen unter der Taxonomie-Verordnung.",
-          "en": "EIOPA is consulting on proposed enhancements to insurance corporate disclosures under the EU Taxonomy framework. The aim is to increase transparency, simplify reporting, and better align requirements with other sustainable finance frameworks and those applicable to other financial institutions.\n\nKey amendments include revising the 'underwriting KPI' for (re)insurers by narrowing the denominator to Taxonomy-eligible lines of business and renaming it to 'Adaptation Underwriting KPI'. Furthermore, the introduction of a new 'Green Insured Activities KPI' is proposed to measure the ratio of Taxonomy-aligned insured activities. This KPI would cover all policies sold to companies reporting under the Taxonomy Regulation, as well as retail insurance policies for housing and transport.\n\nThe consultation period ends on 12 August 2026, with a public hearing scheduled for 16 July. These proposals are in response to a European Commission request to the ESAs for technical advice on simplifying and improving the Disclosures Delegated Act under the Taxonomy Regulation."
-        },
-        "url": "https://www.eiopa.europa.eu/eiopa-consults-enhancements-insurance-corporate-disclosures-under-eu-taxonomy-environmentally-2026-07-01_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
-            "d": "07.07.2026"
-          }
-        ]
-      },
-      {
-        "d": "24.06.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
-          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
-        },
-        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
-        "s": {
-          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
-          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
-        "imp": "medium",
-        "refnum": "T-77/24"
-      },
-      {
-        "d": "17.03.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Kommission bittet um Feedback zur Überarbeitung der Kriterien für nachhaltige Wirtschaftsaktivitäten",
-          "en": "Commission seeks feedback on revision of criteria for sustainable economic activities"
-        },
-        "sl": "commission-seeks-feedback-on-revision-of-criteria-for-sustainable-economic-activ",
-        "s": {
-          "de": "Die Europäische Kommission hat Entwürfe zur Überarbeitung der technischen Bewertungskriterien der EU-Taxonomie veröffentlicht. Ziel ist es, das Rahmenwerk zu vereinfachen, die Anwendung zu erleichtern und die Kriterien an aktuelle EU-Gesetzgebung sowie technologische Fortschritte anzupassen.\n\nDie Änderungen betreffen die meisten Aktivitäten der Klima- und Umwelt-Delegierten Rechtsakte, darunter Forstwirtschaft, Umweltschutz, Fertigung, Energie, Verkehr und Bauwesen. Auch die generischen „Do no significant harm“-Anhänge sind betroffen. Dies soll die Akzeptanz der Taxonomie fördern, den Zugang zu grünen Finanzierungen verbessern und die Markttransparenz durch klarere Offenlegungen erhöhen.\n\nInteressenträger können bis zum 14. April Rückmeldungen zu den Entwürfen geben. Die Kommission plant, die überarbeiteten Kriterien bis zum Sommer zu verabschieden.",
-          "en": "The European Commission has published draft revisions to the technical screening criteria of the EU Taxonomy. The aim is to simplify the framework, make it easier to use, and align the criteria with updated EU legislation and technological advancements.\n\nThe changes cover most activities under the Climate and Environmental Delegated Acts, including forestry, environmental protection, manufacturing, energy, transport, and construction. The generic 'do no significant harm' appendices are also affected. This is intended to boost taxonomy adoption, improve access to green finance, and enhance market transparency through clearer disclosures.\n\nStakeholders can provide feedback on the drafts until April 14. The Commission plans to adopt the revised criteria by the summer."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revision-criteria-sustainable-economic-activities-2026-03-17_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission veröffentlicht Entwürfe zu Anpassungen an den technischen Bewertungskriterien für die EU-Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwuerfe-zu-anpassungen-an-den-technischen-bewertungskriterien-fuer-die-eu-taxonomie-verordnung/",
-            "d": "23.03.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: EU-Taxonomie: Öffentliches Feedback zur Anpassung des Klima- und Umweltrechtsakts",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/253721/eu-taxonomie-oeffentliches-feedback-zur-anpassung-des-klima-und-umweltrechtsakts/",
-            "d": "19.03.2026"
           }
         ]
       }
