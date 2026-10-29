@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T20:13:03Z",
+  "generated_at": "2026-10-29T23:05:44Z",
   "updates": {
     "emir": [
       {
@@ -3557,34 +3557,6 @@
         "url": "https://www.eiopa.europa.eu/consultations/consultation-supervisory-statement-authorisation-and-ongoing-supervision-re-insurance-undertakings_en",
         "imp": "medium",
         "deadline": "30.04.2026"
-      },
-      {
-        "d": "29.10.2025",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Delegierte Verordnung zur Ergänzung der Solvency II-Überprüfung (Ares(2023)251034)",
-          "en": "Delegated Regulation supplementing the review of prudential rules for the insurance and reinsurance sector (Solvency II) (Ares(2023)251034)"
-        },
-        "sl": "delegated-regulation-supplementing-the-review-of-prudential-rules-for-the-insura",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Entwurf für eine delegierte Verordnung vorgelegt, die die Überprüfung der Aufsichtsregeln für den Versicherungs- und Rückversicherungssektor (Solvency II) ergänzt. Dieser Entwurf ist Teil des laufenden Gesetzgebungsverfahrens zur Anpassung und Modernisierung der Solvency II-Richtlinie.\n\nDie Verordnung ist für alle Versicherungs- und Rückversicherungsunternehmen im Geltungsbereich von Solvency II relevant. Sie konkretisiert die überarbeiteten Vorschriften und hat praktische Auswirkungen auf die Kapitalanforderungen, Risikomanagementpraktiken und Berichterstattungspflichten der betroffenen Institute. KPMG weist in einem Fachbeitrag auf die Vorstellung dieser delegierten Verordnung hin, was die Bedeutung für die Praxis unterstreicht.\n\nDer aktuelle Verfahrensstand ist die „Adoption Workflow“, was bedeutet, dass der Entwurf sich in der finalen Phase vor der Verabschiedung befindet. Ein konkretes Anwendungsdatum oder eine Konsultationsfrist sind dem vorliegenden Text nicht zu entnehmen.",
-          "en": "The European Commission has presented a draft delegated regulation supplementing the review of prudential rules for the insurance and reinsurance sector (Solvency II). This draft is part of the ongoing legislative process to adapt and modernize the Solvency II Directive.\n\nThis regulation is relevant for all insurance and reinsurance undertakings falling under the scope of Solvency II. It specifies the revised provisions and has practical implications for the capital requirements, risk management practices, and reporting obligations of the affected institutions. KPMG highlights the presentation of this delegated regulation in an expert article, underscoring its practical significance.\n\nThe current procedural status is \"Adoption Workflow,\" meaning the draft is in the final phase before adoption. A specific application date or consultation deadline cannot be inferred from the provided text."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13690",
-        "imp": "medium",
-        "refnum": "Ares(2023)251034",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission stellt delegierte Verordnung zur Überarbeitung von Solvency II vor",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-stellt-delegierte-verordnung-zur-ueberarbeitung-von-solvency-ii-vor/",
-            "d": "31.10.2025"
-          }
-        ]
       }
     ],
     "marisk": [
