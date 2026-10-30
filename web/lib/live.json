@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T23:05:44Z",
+  "generated_at": "2026-10-30T05:42:00Z",
   "updates": {
     "emir": [
       {
@@ -4009,6 +4009,23 @@
     ]
   },
   "praxis": [
+    {
+      "d": "29.10.2026",
+      "ti": "Keynote-Rede: Aufsichtseffektivität in der Versicherungsaufsicht (BIS FSI-IAIS)",
+      "auth": "EIOPA",
+      "src": "eiopa.europa.eu",
+      "url": "https://www.eiopa.europa.eu/keynote-speech-bis-fsi-iais-policy-implementation-meeting-supervisory-effectiveness-insurance-2026-10-29_en",
+      "cat": "rede"
+    },
+    {
+      "d": "29.10.2026",
+      "ti": "Rede SRB-Vorsitzender Laboureix: Krisenvorsorge in einer vernetzten Welt (IADI Konferenz)",
+      "auth": "SRB",
+      "src": "srb.europa.eu",
+      "url": "https://www.srb.europa.eu/en/content/speech-srb-chair-dominique-laboureix-iadi-conference-strengthening-crisis-preparedness",
+      "cat": "rede",
+      "sum": "In his speech at the IADI Conference in Berlin, SRB Chair Dominique Laboureix highlighted the evolving risks to financial stability driven by digitalisation, emerging technologies and interconnectedness, stressing the need for stronger crisis preparedness, effective resolution frameworks and closer international cooperation."
+    },
     {
       "d": "27.10.2026",
       "ti": "Social Lease GmbH: Bafin setzt Bußgeld fest",
