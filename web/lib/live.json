@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T15:08:59Z",
+  "generated_at": "2026-10-30T20:06:30Z",
   "updates": {
     "emir": [
       {
@@ -3593,6 +3593,50 @@
         "imp": "medium"
       }
     ],
+    "ebamicaclass": [
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Compliance-Tabelle zu Leitlinien für Krypto-Assets (MiCAR)",
+          "en": "ESMA Compliance Table on Guidelines for Crypto-Assets (MiCAR)"
+        },
+        "sl": "compliance-table-on-the-joint-guidelines-on-templates-for-explanations-and-opini",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Gemeinsamen Leitlinien für Erläuterungen und Stellungnahmen sowie zum standardisierten Test für die Klassifizierung von Krypto-Assets veröffentlicht (JC/GL/2024/28). Diese Tabelle gibt Aufschluss darüber, welche nationalen zuständigen Behörden in den EU-Mitgliedstaaten die Leitlinien gemäß Artikel 97 Absatz 1 der MiCAR (Verordnung (EU) 2023/1114) anwenden oder beabsichtigen, sie anzuwenden.\n\nDie meisten nationalen Behörden, darunter die BaFin in Deutschland, geben an, die Leitlinien bereits zu befolgen. Einige Behörden, wie die Latvijas Banka, beabsichtigen die Einhaltung, sobald die notwendigen legislativen oder regulatorischen Verfahren abgeschlossen sind. Polen und Rumänien geben an, die Leitlinien standardmäßig nicht einzuhalten, da die zuständige Behörde noch nicht benannt wurde.\n\nDie slowakische Nationalbank (NBS) erklärt, dass die Leitlinien für sie derzeit nicht anwendbar sind, da die slowakische Wertpapiergesetzgebung die Ausgabe tokenisierter übertragbarer Wertpapiere nicht ermöglicht. Eine Gesetzesänderung zur Behebung dieses Problems ist jedoch geplant, und die NBS beabsichtigt, die Leitlinien nach Inkrafttreten dieser Änderung einzuhalten.",
+          "en": "ESMA has published a compliance table regarding the Joint Guidelines on templates for explanations and opinions, and the standardised test for the classification of crypto-assets (JC/GL/2024/28). This table indicates which national competent authorities in EU Member States comply with or intend to comply with the guidelines under Article 97(1) of MiCAR (Regulation (EU) 2023/1114).\n\nMost national authorities, including BaFin in Germany, state that they already comply with the guidelines. Some authorities, such as Latvijas Banka, intend to comply once the necessary legislative or regulatory proceedings are completed. Poland and Romania indicate non-compliance by default, pending the designation of the competent authority.\n\nThe National Bank of Slovakia (NBS) states that the guidelines are not currently applicable to them, as Slovak securities legislation does not enable the issuance of tokenised transferable securities. However, a legislative change to address this issue is envisaged, and the NBS intends to comply with the guidelines once this change takes effect."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-templates-explanations-and-opinions-and-standardised",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1527"
+      }
+    ],
+    "ebamicaholdings": [
+      {
+        "d": "07.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu EBA-ESMA-Leitlinien zur Eignungsbeurteilung von Anteilseignern bei ART-Emittenten und CASPs (ESMA75-113276571-1528)",
+          "en": "Compliance Table on EBA-ESMA Guidelines for Suitability Assessment of Shareholders in ART Issuers and CASPs (ESMA75-113276571-1528)"
+        },
+        "sl": "compliance-table-on-eba-esma-guidelines-on-the-suitability-assessment-of-shareho",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den gemeinsamen Leitlinien der EBA und ESMA zur Eignungsbeurteilung von Aktionären und Mitgliedern mit qualifizierten Beteiligungen an Emittenten von vermögenswertreferenzierten Token (ARTs) und Krypto-Dienstleistern (CASPs) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, wie die nationalen zuständigen Behörden in den EU-Mitgliedstaaten diese Leitlinien umsetzen oder umzusetzen beabsichtigen.\n\nDie Tabelle zeigt, dass die meisten nationalen Behörden die Leitlinien vollständig umsetzen oder dies beabsichtigen. Einige Länder wie Estland, Polen, Rumänien und Schweden haben jedoch Vorbehalte oder planen eine teilweise Nicht-Einhaltung, oft aufgrund von Konflikten mit nationalem Recht oder ausstehender Benennung der zuständigen Behörde. Dies ist relevant für Emittenten von ARTs und CASPs, da die Anforderungen an die Eignungsprüfung von Anteilseignern und Management je nach Jurisdiktion variieren können.\n\nDie Leitlinien sind seit dem 4. Februar 2025 anwendbar. Die Tabelle wurde am 7. August 2026 veröffentlicht und spiegelt den Stand der Umsetzung zu diesem Zeitpunkt wider.",
+          "en": "ESMA has published a compliance table regarding the joint EBA and ESMA guidelines on the suitability assessment of shareholders and members with qualifying holdings in issuers of asset-referenced tokens (ARTs) and crypto-asset service providers (CASPs). This table provides an overview of how national competent authorities in EU Member States are implementing or intend to implement these guidelines.\n\nThe table indicates that most national authorities fully comply or intend to comply with the guidelines. However, some countries, such as Estonia, Poland, Romania, and Sweden, have reservations or plan partial non-compliance, often due to conflicts with national law or pending designation of the competent authority. This is relevant for ART issuers and CASPs, as the suitability assessment requirements for shareholders and management may vary by jurisdiction.\n\nThe guidelines have been applicable since 4 February 2025. The table was published on 7 August 2026 and reflects the status of implementation at that time."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-eba-esma-guidelines-suitability-assessment-shareholders-and-members",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1528"
+      }
+    ],
     "priips": [
       {
         "d": "27.07.2026",
@@ -3809,6 +3853,28 @@
         },
         "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/07_Data-Act-Datenschutzaufsicht.html",
         "imp": "high"
+      }
+    ],
+    "ebaretaildiv": [
+      {
+        "d": "20.05.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin übernimmt EBA-Leitlinien zu Diversifizierungsmethoden im Mengengeschäft (04/2026)",
+          "en": "BaFin Adopts EBA Guidelines on Diversification Methods for Retail Exposures (04/2026)"
+        },
+        "sl": "rundschreiben-04-2026-ba",
+        "s": {
+          "de": "Die BaFin hat die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) für verhältnismäßige Diversifizierungsmethoden im Mengengeschäft gemäß Artikel 123 Absatz 1 der CRR in ihre Verwaltungspraxis übernommen. Dies entspricht einer zuvor gegenüber der EBA abgegebenen Erklärung.\n\nDas Rundschreiben konkretisiert die Anwendung von Diversifizierungsmethoden für beaufsichtigte Unternehmen im Mengengeschäft. Es ist für alle Unternehmen relevant, die unter die CRR fallen und entsprechende Geschäfte tätigen.\n\nDie BaFin hat den beaufsichtigten Unternehmen eine Übergangsfrist zur Umsetzung dieses Rundschreibens bis zum 31. Dezember 2026 eingeräumt.",
+          "en": "The BaFin has incorporated the European Banking Authority's (EBA) Guidelines on proportionate diversification methods for retail exposures under Article 123(1) of the CRR into its administrative practice. This aligns with a previous declaration made to the EBA.\n\nThe circular specifies the application of diversification methods for supervised institutions in retail business. It is relevant for all institutions subject to the CRR and engaged in such business activities.\n\nBaFin has granted supervised institutions a transitional period until December 31, 2026, to implement this circular."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_04_2026_diversifizierungsmethoden_ba.html",
+        "imp": "high",
+        "refnum": "04/2026"
       }
     ],
     "mmf": [
