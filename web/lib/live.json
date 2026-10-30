@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T05:42:00Z",
+  "generated_at": "2026-10-30T08:53:44Z",
   "updates": {
     "emir": [
       {
@@ -4009,6 +4009,24 @@
     ]
   },
   "praxis": [
+    {
+      "d": "30.10.2026",
+      "ti": "Volksbank Westerstede eG: Bafin ordnet zusätzliche Eigenmittel an",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_10_30_volksbank_westerstede_eg.html?cms_expanded=true",
+      "cat": "massnahme",
+      "sum": "Die Volksbank Westerstede eG muss zusätzliche Eigenmittel vorhalten. Das hat die Finanzaufsicht Bafin angeordnet."
+    },
+    {
+      "d": "30.10.2026",
+      "ti": "LeasAG muss ordnungsgemäße Geschäftsorganisation sicherstellen",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_10_30_leasag.html?cms_expanded=true",
+      "cat": "massnahme",
+      "sum": "Die LeasAG Leasing Aktiengesellschaft mit Sitz in Düsseldorf muss sicherstellen, dass ihre Geschäftsorganisation ordnungsgemäß ist. Das hat die Finanzaufsicht Bafin angeordnet."
+    },
     {
       "d": "29.10.2026",
       "ti": "Keynote-Rede: Aufsichtseffektivität in der Versicherungsaufsicht (BIS FSI-IAIS)",
