@@ -59,18 +59,84 @@ FRAMEWORK_RULES = [
     # Zweigniederlassungen) gehören zu DORA, nicht zu den CRD-VI-Leitlinien.
     ("dora", r"\bdora\b(?=[\s\S]*(third[- ]country branch|drittlandzweigstell))|"
              r"(third[- ]country branch|drittlandzweigstell)(?=[\s\S]*\bdora\b)"),
-    ("ebatcb", r"third[- ]country branch|drittlandzweigstell|drittstaatenzweigstell"),
+    ("ebatcb", r"third[- ]country branch|drittlandzweigstell|drittstaatenzweigstell|capital endowment|dotationskapital"),
     ("ebaasu", r"ancillary services undertaking|nebendienstleistung"),
     ("ebaadc", r"\badc exposure|acquisition, development and construction|bauträgerfinanzierung"),
     ("ebaconnected", r"connected clients|verbundener? kunden|kreditnehmereinheit"),
     ("ebadod", r"definition of default|ausfalldefinition|\bdod\b(?=[\s\S]*(default|ausfall))"),
+    # EBA-Leitlinien laut Single-Rulebook-Dashboard (Ergänzung 30.10.2026).
+    # Reihenfolge: MiCA-Inhaberkontrolle vor allgemeiner Inhaberkontrolle,
+    # IFD-Vergütung vor CRD-Vergütung, beide vor instvergv; Vertriebsvergütung
+    # vor ebapog; Institutsstresstests vor srep/ebadgsstress.
+    ("ebairb", r"\b(pd|lgd) estimation|(pd|lgd)-schätzung|downturn[- ]lgd|economic downturn(?=[\s\S]*(\blgd\b|\birb\b))|"
+               r"lgd in-default|\belbe\b|(credit risk mitigation|kreditrisikominderung)(?=[\s\S]*\birb\b)"),
+    ("ebanpe", r"^(?![\s\S]*(credit servic|kreditdienstleister|kreditzweitmarkt|secondary market|\bmarisk\b))[\s\S]*?"
+               r"(non-performing and forborne|notleidende[nr]? und gestundete|forborne exposure|gestundete[nr]? risikoposition|"
+               r"management of non-performing|npe (strateg|reduction|management|disclosure))"),
+    ("ebalargeexp", r"exposures to shadow banking|shadow banking entit|schattenbank|tri-party repo|tri-party repurchase|"
+                    r"large exposures? (limits? )?breach|breaches of the large exposure|überschreitung der großkredit|großkreditobergrenze"),
+    ("ebaecl", r"accounting for expected credit loss|credit risk management practices and accounting|"
+               r"expected credit loss(es)? (accounting|provisioning|model)|erwartete[nr]? kreditverlust[\s\S]*(bilanzierung|kreditrisikomanagement)"),
+    ("ebaretaildiv", r"retail diversification|diversification methods|diversifizierungsmethode|"
+                     r"diversifizierung (des|im) (retail|mengengesch)|granularit[äa]t (des|im) mengengesch"),
+    ("ebamarket", r"stressed var|stressed value[- ]at[- ]risk|incremental (default and migration )?risk charge|"
+                  r"\birc\b(?=[\s\S]*(market risk|trading book|marktrisiko|handelsbuch))|"
+                  r"expected shortfall[\s\S]{0,80}(data inputs|internal model|\bima\b)|"
+                  r"structural (fx|foreign[- ]exchange)|strukturelle[nr]? (fx|fremdwährung)|"
+                  r"modified duration|modifizierte[nr]? duration"),
+    ("ebadisclosure", r"materiality, proprietary and confidentiality|wesentlichkeit, geschäftsgeheimnis|"
+                      r"systemic importance indicators|indikatoren (der|zur) (globalen )?systemrelevanz|"
+                      r"disclosure of g-siis? indicators"),
+    ("ebareporting", r"\bfunding plans?\b|refinanzierungspl[aä]n|resubmission of historical data|nachmeldung historischer daten"),
+    ("ebamicaart", r"redemption plans? under (the )?(mica|markets in crypto|articles 47)|rücktauschpl[aä]n|"
+                   r"recovery plans? under (mica|articles 46)|sanierungspl[aä]ne?\w* (nach|unter|gemäß) mica|"
+                   r"liquidity stress test\w* under mica|governance arrangements for issuers of asset-referenced|"
+                   r"eba/gl/2024/(06|07|08|13)\b"),
+    ("ebamicaholdings", r"qualifying holdings? in (an )?(issuers? of (arts?|asset-referenced)|crypto-asset service providers?|casps?)|"
+                        r"suitability[\s\S]{0,120}(issuers of (arts|asset-referenced)|crypto-asset service providers|casps|under micar?)|"
+                        r"eba/gl/2024/09\b|esma75-453128700-10\b"),
+    ("ebamicaclass", r"(templates for explanations|standardised test)[\s\S]{0,120}classification of crypto|"
+                     r"einstufung von kryptowerten|\bjc 2024 28\b|eba/gl/2024/16\b"),
+    ("ebapsdfraud", r"fraud reporting|betrugsmeldung|betrugsstatistik|"
+                    r"(statistical data on fraud|fraud data)(?=[\s\S]*(psd2|payment))"),
+    ("ebapsdauth", r"authori[sz]ation and registration under psd2|"
+                   r"(professional indemnity insurance|berufshaftpflicht)(?=[\s\S]*(psd2|payment initiation|account information|zahlungsauslöse|kontoinformation))|"
+                   r"information to be provided for the authori[sz]ation of payment"),
+    ("ebapsdexempt", r"limited network|begrenzte[sn]? netz|"
+                     r"(contingency|fall.?back) mechanism|notfallmechanismus|"
+                     r"exemption from the (contingency|fall.?back)"),
+    ("ebaarrears", r"arrears and foreclosure|zahlungsrückst[aä]nde?[\s\S]{0,40}zwangsvollstreck|"
+                   r"guidelines on arrears|leitlinien zu zahlungsrückständen"),
+    ("ebasalesrem", r"remuneration of sales staff|sales staff remuneration|"
+                    r"remuneration policies and practices related to the sale|vergütung (von |der )?vertriebsmitarbeit|vertriebsvergütung"),
+    ("ebacreditservicers", r"credit servicers?[\s\S]{0,80}(knowledge and experience|management or administrative organ|complaints?)|"
+                           r"(knowledge and experience|complaints?)[\s\S]{0,80}credit servicers?|"
+                           r"kreditdienstleister[\s\S]{0,60}(eignung|beschwerde|geschäftsleit|leitungsorgan)"),
+    ("ebaifrem", r"remuneration[\s\S]{0,80}(investment firms?\b|2019/2034)|"
+                 r"ifd remuneration|wpi-vergütungsverordnung|wpi-vergv|vergütung[\s\S]{0,30}wertpapierinstitut|eba/gl/2021/13"),
+    ("ebarem", r"guidelines on (sound )?remuneration polic|sound remuneration polic|notional discount rate|"
+               r"vergütungsleitlinien|leitlinien[\s\S]{0,30}vergütungspolitik|eba/gl/2021/04|eba/gl/2015/22|eba/gl/2014/01"),
+    ("ebaifprud", r"group capital test|gruppenkapitaltest|"
+                  r"exemption[\s\S]{0,40}investment firms[\s\S]{0,40}liquidity|liquidity requirements? exemption|"
+                  r"befreiung[\s\S]{0,40}liquiditätsanforderung|eba/gl/2024/03|eba/gl/2022/10"),
+    # Versicherungsaufsicht (EIOPA/Solvency II) ist nicht gemeint.
+    ("ebaqualholdings", r"^(?![\s\S]*(insurance|versicher|eiopa|solvency))[\s\S]*?"
+                        r"(qualifying holdings?|qualifizierte[rn]? beteiligung|inhaberkontrolle|inhaberkontrollverordnung|"
+                        r"\binhkontrollv\b|jc/gl/2016/01|jc 2016 01|proposed acquirer)"),
+    ("ebastresstest", r"institutions'? stress testing|guidelines on stress testing\b(?![\s\S]{0,40}(deposit|dgs|supervisory))|"
+                      r"reverse stress test|inverse[rn]? stresstest|eba/gl/2018/04"),
+    ("ebasts", r"sts[- ]kriterien|sts criteria|on-balance-sheet securiti[sz]ation|bilanzwirksamen? verbriefung|\babcp\b"),
+    ("ebasrt", r"significant (credit )?risk transfer|signifikante[nr]? risikotransfer|\bsrt\b(?=[\s\S]*(verbrief|securiti|tranche))|"
+               r"implicit support|implizite[nr]? unterstützung|weighted average maturity"),
+    ("ebagroupsupport", r"group financial support|gruppeninterne[nr]? finanzielle[nr]? unterstützung|business reorgani[sz]ation plan|reorganisationsplan"),
     ("ebaenvscen", r"environmental scenario|esg scenario analysis|umweltszenario|klimaszenario|climate scenario analysis"),
     ("srep", r"\bsrep\b|supervisory review and evaluation|supervisory stress test|aufsichtlicher überprüfungs|"
              r"eigenmittelempfehlung|pillar 2 guidance|\bp2g\b"),
     ("irrbb", r"\birrbb\b|\bcsrbb\b|interest rate risk in the banking book|zinsänderungsrisik|credit spread risk"),
     ("ebagov", r"internal governance|interne[n]? governance"),
     ("ebapog", r"^(?![\s\S]*insurance (undertaking|distribut))[\s\S]*?(product oversight|\bpog\b|retail banking products)"),
-    ("ebarecovery", r"recovery plan indicator|overall recovery capacity|sanierungsindikator|sanierungskapazität|recovery planning"),
+    ("ebarecovery", r"recovery plan indicator|overall recovery capacity|sanierungsindikator|sanierungskapazität|recovery planning|"
+                    r"scenarios to be used in recovery plans|recovery plan scenario|sanierungsszenari|szenarien für sanierungspl"),
     ("ebaresolvability", r"resolvability|abwicklungsfähigkeit|transferability|übertragbarkeit"),
     ("ebaamlrisk", r"risk factors? guidelines|ml/tf risk factors|risikofaktoren-leitlinien|geldwäsche-risikofaktoren"),
     ("ebaonboarding", r"remote customer onboarding|fernidentifizierung|videoident"),
@@ -203,7 +269,7 @@ FRAMEWORK_RULES = [
     # dort die Kunden-Geeignetheit meint.
     ("fitproper", r"fit.{0,3}proper|suitability of (the )?members|suitability assessment (framework|of members)|"
                   r"eignung von geschäftsleiter|geschäftsleiter|aufsichtsorgan|management body|"
-                  r"key function holder|schlüsselfunktion|inhaberkontrolle|verwaltungs- oder aufsichtsorgan"),
+                  r"key function holder|schlüsselfunktion|verwaltungs- oder aufsichtsorgan"),
     ("ris", r"retail investment strategy|kleinanlegerstrategie|retail investment package|"
             r"value.for.money|\bris\b(?=[\s\S]*(retail|kleinanleger|priips|inducement|zuwendung))"),
     ("mifid", r"\bmifid\b|\bmifir\b|wertpapierdienstleistung|consolidated tape|anlageberatung|best execution|"

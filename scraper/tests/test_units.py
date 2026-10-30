@@ -626,6 +626,41 @@ class QaSweepSept2026(unittest.TestCase):
         self.assertEqual(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches"), "dora")
         self.assertEqual(_classify("Guidelines on the authorisation of third-country branches under CRD VI"), "ebatcb")
 
+    def test_eba_guidelines_from_single_rulebook_dashboard(self):
+        """EBA-Leitlinien aus dem Single-Rulebook-Dashboard (Ergänzung
+        30.10.2026) landen bei ihrem Kind-Rahmenwerk, nicht beim Rechtsakt."""
+        from regradar.webexport import _classify
+        cases = {
+            "Guidelines on PD estimation, LGD estimation and the treatment of defaulted exposures": "ebairb",
+            "Guidelines on management of non-performing and forborne exposures": "ebanpe",
+            "EBA consults on revised Guidelines on limits on exposures to shadow banking entities": "ebalargeexp",
+            "Guidelines on credit institutions' credit risk management practices and accounting for expected credit losses": "ebaecl",
+            "Guidelines on proportionate retail diversification methods under the standardised approach": "ebaretaildiv",
+            "Guidelines on Stressed Value-At-Risk (Stressed VaR)": "ebamarket",
+            "Guidelines on materiality, proprietary and confidentiality and on disclosure frequency": "ebadisclosure",
+            "Guidelines on harmonised definitions and templates for funding plans of credit institutions": "ebareporting",
+            "Guidelines on redemption plans under Articles 47 and 55 of Regulation (EU) 2023/1114": "ebamicaart",
+            "Joint Guidelines on the suitability assessment of shareholders with qualifying holdings in issuers of asset-referenced tokens and in crypto-asset service providers": "ebamicaholdings",
+            "Guidelines on fraud reporting under PSD2": "ebapsdfraud",
+            "Guidelines on the limited network exclusion under PSD2": "ebapsdexempt",
+            "Guidelines on arrears and foreclosure": "ebaarrears",
+            "Guidelines on remuneration policies and practices related to the sale and provision of retail banking products": "ebasalesrem",
+            "Guidelines on sound remuneration policies under Directive (EU) 2019/2034 for investment firms": "ebaifrem",
+            "Guidelines on sound remuneration policies under Directive 2013/36/EU": "ebarem",
+            "Guidelines on the application of the group capital test for investment firm groups": "ebaifprud",
+            "Joint Guidelines on the prudential assessment of acquisitions of qualifying holdings in the banking sector": "ebaqualholdings",
+            "Guidelines on institutions' stress testing": "ebastresstest",
+            "Guidelines on the STS criteria for on-balance-sheet securitisation": "ebasts",
+            "Guidelines on significant risk transfer for securitisation transactions": "ebasrt",
+            "Guidelines on the conditions for the provision of group financial support": "ebagroupsupport",
+            "Guidelines on instruments available for third country branches for the capital endowment requirement": "ebatcb",
+            "Guidelines on the range of scenarios to be used in recovery plans": "ebarecovery",
+        }
+        for title, fw in cases.items():
+            self.assertEqual(_classify(title), fw, title)
+        # Versicherungsaufsicht ist keine Inhaberkontrolle nach CRD
+        self.assertNotEqual(_classify("Consultation on Supervisory Statement for (Re-)Insurance Undertakings and qualifying holdings"), "ebaqualholdings")
+
     def test_reply_form_is_noise(self):
         from regradar.webexport import _classify
         self.assertIsNone(_classify("Consultation paper on the reporting framework under EMIR - Reply form"))
