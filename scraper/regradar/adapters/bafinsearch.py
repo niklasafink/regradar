@@ -25,7 +25,7 @@ from .base import SourceAdapter
 SEARCH_URL = ("https://www.bafin.de/SiteGlobals/Forms/Suche/Expertensuche/"
               "Servicesuche_Formular.html?cl2Categories_Format={fmt}&pageLocale=de"
               "&sortOrder=searchDate_dt+desc&resultsPerPage=50&gtp=239378_list%253D{page}")
-MAX_PAGES = 20  # Sicherung gegen Endlosschleifen; größtes Format hat ~5 Seiten
+MAX_PAGES = 40  # Sicherung gegen Endlosschleifen; größtes Format (Anlage) hat ~30 Seiten
 
 # Format-Filter der Suche → kanonischer Dokumenttyp
 FORMATS = [
@@ -35,7 +35,16 @@ FORMATS = [
     ("aufsichtsmitteilung", "SUPERVISORY_STATEMENT"),
     ("konsultation", "CONSULTATION"),
     ("verfuegung", "GENERAL_DECISION"),
+    ("anlage", "ADMINISTRATIVE_PRACTICE"),
 ]
+
+# "Anlage" umfasst ~1.500 Formulare und Anhänge. Die BaFin führt dort aber
+# auch Auslegungsdokumente, die im Format Auslegungsentscheidung fehlen
+# (AuA zum GwG AT 2024 und BT Kreditinstitute 2021). Übernommen werden
+# nur Anlagen aus dem Ordner der Auslegungsentscheidungen, ohne nummerierte
+# Anhänge, Muster und Vergleichsfassungen.
+FORMAT_URL = {"anlage": re.compile(r"/Downloads/DE/Auslegungsentscheidung/")}
+FORMAT_SKIP_TITLE = {"anlage": re.compile(r"^(anlage \d|muster\b)|vergleichsversion", re.IGNORECASE)}
 
 LINK_RE = re.compile(r'<a href="(https://www\.bafin\.de/[^"]+)"')
 HEADLINE_RE = re.compile(r'(?s)__headline">(.*?)</h3>')
@@ -173,6 +182,10 @@ class BafinSearchAdapter(SourceAdapter):
                 # Formaten auf (Triparty-Repos 2021 als Auslegungsentscheidung);
                 # zusammengeführt werden sie nur im Format Konsultation.
                 if fmt != "konsultation" and "/Konsultation/" in it["url"]:
+                    continue
+                if fmt in FORMAT_URL and not FORMAT_URL[fmt].search(it["url"]):
+                    continue
+                if fmt in FORMAT_SKIP_TITLE and FORMAT_SKIP_TITLE[fmt].search(it["title"]):
                     continue
                 seen.add(it["url"])
                 if since and it["pub"] and it["pub"] < since:

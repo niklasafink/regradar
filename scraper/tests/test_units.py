@@ -123,6 +123,8 @@ class FrameworkClassification(unittest.TestCase):
         cases = [
             ("Retail Investment Strategy: Council endorses final compromise text", "ris"),
             ("Kleinanlegerstrategie: Parlament stimmt über Value for Money ab", "ris"),
+            ("Commission publishes Market Integration and Supervision Package", "misp"),
+            ("Council agrees position on MISP: ESMA to supervise significant crypto-asset service providers", "misp"),
             ("Delegated act on simplification of the EU Taxonomy published", "taxonomy"),
             ("ESMA statement on ESG rating providers transition period", "esgrating"),
             ("ESMA registers first external reviewers under the European Green Bond Regulation", "greenbond"),
@@ -1399,6 +1401,24 @@ class BafinSearch(unittest.TestCase):
                 unittest.mock.patch("regradar.adapters.bafinsearch.http.get", return_value=(result, None)):
             docs = BafinSearchAdapter(src).discover()
         self.assertEqual(len(docs), 2)
+
+    def test_anlage_only_interpretation_folder(self):
+        from regradar.adapters.bafinsearch import BafinSearchAdapter
+        ae = "https://www.bafin.de/SharedDocs/Downloads/DE/Auslegungsentscheidung/"
+        page = (self._hit(ae + "dl-ae-auas-2025-gw.html",
+                          "Auslegungs- und Anwendungshinweise zum Geldwäschegesetz (AuA AT)", "29.11.2024")
+                + self._hit("https://www.bafin.de/SharedDocs/Downloads/DE/Formular/dl_antrag.html",
+                            "Antrag auf Erlaubnis", "01.10.2024")
+                + self._hit(ae + "dl_anlage3.html",
+                            "Anlage 3 - Muster eines Vorratsbeschlusses", "17.09.2021")
+                + self._hit(ae + "dl_vgl.html",
+                            "Auslegungshilfe zum Abschirmungsgesetz - Vergleichsversion", "06.08.2020"))
+        src = {"source_id": "bafin_search", "authority": "BaFin", "jurisdiction": "DE"}
+        result = unittest.mock.Mock(status=200, text=lambda: page)
+        with unittest.mock.patch("regradar.adapters.bafinsearch.FORMATS", [("anlage", "ADMINISTRATIVE_PRACTICE")]), \
+                unittest.mock.patch("regradar.adapters.bafinsearch.http.get", return_value=(result, None)):
+            docs = BafinSearchAdapter(src).discover()
+        self.assertEqual([d.detail_url for d in docs], [ae + "dl-ae-auas-2025-gw.html"])
 
     def test_repealed_skipped(self):
         from regradar.adapters.bafinsearch import SKIP_TITLE

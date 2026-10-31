@@ -175,6 +175,13 @@ FRAMEWORK_RULES = [
     ("crs", r"\bdac ?8\b|common reporting standard|finanzkonten-informationsaustausch|\bfkaustg\b|"
             r"kryptowerte-steuertransparenz|\bksttg\b|\bfatca\b|crypto-asset reporting framework|\bcarf\b|"
             r"melderahmen für kryptowerte|informationen über finanzkonten"),
+    # MISP vor MiCA/MiFID (das Paket verschiebt u. a. die CASP-Aufsicht zu
+    # ESMA). Nur das Paket selbst – "Savings and Investments Union" nennt ESMA
+    # in fast jeder Pressemitteilung (z. B. Consolidated Tape, gehört zu MiFIR).
+    ("misp", r"market integration and supervision|market integration package|marktintegrations|"
+             r"kapitalmarktintegration und der aufsicht|\bmisp\b|"
+             r"(savings and investments union|spar- und investitionsunion|\bsiu\b)"
+             r"[\s\S]{0,80}(package|paket|proposal|vorschlag|directive|regulation|richtlinie|verordnung)"),
     ("mica", r"\bmica\b|kryptowert|crypto-?asset|"
             r"\bmicar\b|markets in crypto-?assets|kryptowerte-verordnung|kryptomärkte|\bkmag\b|\bcasps?\b|kryptoverwahr|stablecoin|krypto-dienstleist"),
     ("eltif", r"\beltif\b|euveca|"

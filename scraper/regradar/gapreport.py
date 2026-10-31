@@ -538,6 +538,14 @@ def _framework_gaps(conn: sqlite3.Connection):
             ref_nums = set(re.findall(r"(\d{4}/\d+)", str(s.get("rechtsakt") or "")))
             if not key or key in already or key in known_keys or (ref_nums & known_ref_nums):
                 continue
+            # Abweichend formulierte Namen bekannter Rahmenwerke (31.10.2026:
+            # "MaGo: Mindestanforderungen an die Geschäftsorganisation von
+            # Versicherern", "Mindestanforderungen an das Risikomanagement"):
+            # Zuordnungsregeln und Teilstring des Bibliotheksnamens prüfen.
+            if _classify("{} {}".format(name, s.get("rechtsakt") or "")) is not None:
+                continue
+            if len(key) >= 15 and any(key in k or k in key for k in known_keys if len(k) >= 15):
+                continue
             already.add(key)
             docs = [by_id[i] for i in (s.get("meldung_ids") or [])
                     if isinstance(i, int) and i in by_id]
