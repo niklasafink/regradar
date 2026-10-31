@@ -119,6 +119,50 @@ FRAMEWORK_RULES = [
     ("ebaifprud", r"group capital test|gruppenkapitaltest|"
                   r"exemption[\s\S]{0,40}investment firms[\s\S]{0,40}liquidity|liquidity requirements? exemption|"
                   r"befreiung[\s\S]{0,40}liquiditätsanforderung|eba/gl/2024/03|eba/gl/2022/10"),
+    # EBA-RTS/ITS laut Single-Rulebook-Dashboard (Ergänzung 31.10.2026).
+    # Wertpapierfirmen vor den CRR-Kindern (Kollegien, Eigenmittel), PSD2 vor
+    # der CRD-Zulassung, DORA-Texte nicht ins operationelle Risiko.
+    ("ebaifprud", r"k-factors?\b|k-faktor|"
+                  r"investment firms?[\s\S]{0,80}(fixed overheads|own funds requirements?|prudential consolidation|colleges|passport)|"
+                  r"wertpapierinstitut[\s\S]{0,60}(fixe gemeinkosten|eigenmittelanforderung)"),
+    # Bloße FRTB-/LCR-/NSFR-Erwähnungen (Verschiebungen, Bankenpaket) bleiben bei crr3.
+    ("ebamarket", r"alternative (internal model|standardised) approach|"
+                  r"credit valuation adjustment|\bcva risk|\bsa-ccr\b|prudent valuation|vorsichtige bewertung|"
+                  r"counterparty credit risk|gegenparteiausfallrisiko|residual risk add-on|jump-to-default|"
+                  r"back-?testing and (p&l|profit and loss) attribution|modellab(ility|ilität) of risk factors"),
+    ("ebaliquidity", r"(technical standards?|\brts\b|\bits\b|delegated (act|regulation))[\s\S]{0,120}"
+                     r"(liquidity coverage|\blcr\b|net stable funding|\bnsfr\b|liquidity outflows?)|"
+                     r"(liquidity coverage ratio|\blcr\b)[\s\S]{0,60}delegated (act|regulation)|"
+                     r"additional (liquidity )?monitoring metrics|\balmm\b|"
+                     r"currencies with constraints on the availability of liquid assets"),
+    ("ebaoprisk", r"^(?![\s\S]*(\bdora\b|\bict\b|\bikt\b|digital operational|basel|\bbcbs\b|\bucits\b|\bogaw\b|esma|"
+                  r"third.part|drittpartei))[\s\S]*?"
+                  r"(operational risk|operationelle[sn]? risik|business indicator|geschäftsindikator)"),
+    ("ebaecai", r"\becais?\b|external credit assessment institutions?|credit quality steps?|bonitätsstufe|"
+                r"mapping of credit assessments|ratingzuordnung"),
+    ("ebacreditrisk", r"standardised approach (for|to) credit risk|kreditrisiko-standardansatz|mandate-based approach|"
+                      r"risk weights?[\s\S]{0,60}(immovable property|real estate|immobilien)|"
+                      r"off-balance[- ]sheet items?[\s\S]{0,60}(conversion factors?|\bccfs?\b)|credit conversion factors?|"
+                      r"kreditumrechnungsfaktor|unconditionally cancellable commitment|property under construction"),
+    ("ebaownfunds", r"deduction of software|software assets|common equity tier 1 (items|instruments|deduction)|"
+                    r"identification of (global )?systemically important institutions|g-sii (identification|methodology)|"
+                    r"geographical location of (the )?relevant credit exposures|prudential consolidation|aufsichtliche konsolidierung"),
+    ("ebaauthpass", r"^(?![\s\S]*(psd2|payment (service|institution)|zahlungs|e-money|e-geld|investment firms?|"
+                    r"wertpapierinstitut|crypto|mica|insurance|versicher))[\s\S]*?"
+                    r"(authori[sz]ation as a credit institution|zulassung als kreditinstitut|passport(ing)? notifications?|"
+                    r"right of establishment|freedom to provide services|niederlassungsfreiheit|dienstleistungsfreiheit|"
+                    r"colleges? of supervisors|supervisory colleges?|aufsichtskollegi|joint decision process)"),
+    ("ebaresolution", r"^(?![\s\S]*(\birrd\b|insurance|insurer|versicher|eiopa))[\s\S]*?"
+                      r"((technical standards?|\brts\b|\bits\b|technische[nr]? (regulierungs|durchführungs)standards?)[\s\S]{0,120}"
+                      r"(\bmrel\b|resolution plan|valuation|bail-?in|resolution reporting)|"
+                      r"mrel (reporting|disclosure)|contractual recognition|vertragliche anerkennung|stay powers|"
+                      r"impracticability|valuation of difference in treatment)"),
+    ("ebaamlstd", r"central contact points?[\s\S]{0,120}(money laundering|\baml|terrorist)|\beureca\b|"
+                  r"aml/cft central database|group-wide (policies|measures)[\s\S]{0,80}third countr"),
+    ("ficod", r"financial conglomerates?|finanzkonglomerat|\bficod\b|2002/87"),
+    ("ebadisclosure", r"pillar 3 (disclosure|data hub)|säule[- ]3[- ]offenlegung|\bp3dh\b|"
+                      r"european single access point|\besap\b"),
+    ("ebamicaart", r"(technical standards?|\brts\b|\bits\b)[\s\S]{0,120}(asset-referenced tokens?|e-money tokens?)"),
     # Versicherungsaufsicht (EIOPA/Solvency II) ist nicht gemeint.
     ("ebaqualholdings", r"^(?![\s\S]*(insurance|versicher|eiopa|solvency))[\s\S]*?"
                         r"(qualifying holdings?|qualifizierte[rn]? beteiligung|inhaberkontrolle|inhaberkontrollverordnung|"
