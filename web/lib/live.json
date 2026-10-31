@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T23:08:05Z",
+  "generated_at": "2026-10-31T03:08:54Z",
   "updates": {
     "emir": [
       {
@@ -362,6 +362,25 @@
     ],
     "taxonomy": [
       {
+        "d": "30.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EIOPA-Stellungnahme zur Vereinfachung der Taxonomie-Offenlegungen für Versicherer",
+          "en": "EIOPA Advice on Enhancements to Insurers' EU Taxonomy Disclosures"
+        },
+        "sl": "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur",
+        "s": {
+          "de": "Die EIOPA hat der Europäischen Kommission ihre finale Stellungnahme zur Verbesserung der Unternehmensangaben von Versicherern gemäß der EU-Taxonomie übermittelt. Ziel ist es, die Berichterstattung zu vereinfachen, die Transparenz und Vergleichbarkeit der Taxonomie-Offenlegungen von Versicherungsunternehmen zu erhöhen und die Verfügbarkeit zuverlässiger Informationen über ökologisch nachhaltige Versicherungsaktivitäten sicherzustellen.\n\nDie EIOPA schlägt gezielte Änderungen am bestehenden Underwriting Key Performance Indicator (KPI) vor, um Inkonsistenzen in der aktuellen Berichterstattung zu beheben. Dazu gehören die Umbenennung in „Adaptation Underwriting KPI“, eine gemeinsame Berechnungsmethode für den Zähler, die nur relevante Verträge und den Anteil der Bruttoprämien für klimabezogene Risiken berücksichtigt, sowie die Begrenzung des Nenners auf acht förderfähige Geschäftsbereiche. Zur weiteren Vereinfachung wird empfohlen, die Aufschlüsselung von Gas- und Nuklearaktivitäten aus den Berichtsvorlagen zu entfernen, da diese für das Underwriting und die Investitionen von Versicherern in der Regel nicht wesentlich sind.\n\nZusammen mit EBA und ESMA rät die EIOPA davon ab, den Operational Expenditure KPI in die Taxonomie-Offenlegungen von Finanzunternehmen einzuführen. Für die Konzernberichterstattung wird eine Vereinfachung vorgeschlagen, indem vollständige Offenlegungen für das Mutterunternehmen und vereinfachte Offenlegungen für wesentliche Tochterunternehmen verlangt werden. Die EIOPA empfiehlt zudem, den KPI des Mutterunternehmens anstelle eines gewichteten Durchschnitts zur Messung des Konzernengagements zu verwenden.",
+          "en": "EIOPA has submitted its final advice to the European Commission on enhancing insurers' corporate disclosures under the EU Taxonomy. The aim is to simplify reporting, improve the transparency and comparability of insurance undertakings' Taxonomy disclosures, and ensure the availability of reliable information on environmentally sustainable insurance activities.\n\nEIOPA proposes targeted changes to the existing Underwriting Key Performance Indicator (KPI) to address inconsistencies in current reporting practices. These include renaming it to “Adaptation Underwriting KPI,” defining a common method to calculate the numerator that only covers relevant contracts and the share of gross written premiums attributable to climate-related perils, and limiting the denominator to eight eligible lines of business. To further simplify reporting, it is recommended to remove the breakdown of gas and nuclear activities from reporting templates, as this information is generally not material for insurers' underwriting and investments.\n\nTogether with EBA and ESMA, EIOPA advises against introducing the Operational Expenditure KPI in financial undertakings' Taxonomy disclosures. For group-level reporting, simplification is proposed by requiring full disclosures for the parent undertaking, complemented by simplified disclosures for material subsidiaries. EIOPA also recommends using the parent undertaking's KPI, rather than a weighted average, to measure the group's exposure."
+        },
+        "url": "https://www.eiopa.europa.eu/eiopa-publishes-its-final-advice-enhancements-insurers-corporate-disclosures-under-eu-taxonomy-2026-10-30_en",
+        "imp": "medium"
+      },
+      {
         "d": "29.10.2026",
         "t": {
           "de": "Meldung",
@@ -479,39 +498,6 @@
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
         "imp": "medium",
         "refnum": "T-77/24"
-      },
-      {
-        "d": "17.03.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Kommission bittet um Feedback zur Überarbeitung der Kriterien für nachhaltige Wirtschaftsaktivitäten",
-          "en": "Commission seeks feedback on revision of criteria for sustainable economic activities"
-        },
-        "sl": "commission-seeks-feedback-on-revision-of-criteria-for-sustainable-economic-activ",
-        "s": {
-          "de": "Die Europäische Kommission hat Entwürfe zur Überarbeitung der technischen Bewertungskriterien der EU-Taxonomie veröffentlicht. Ziel ist es, das Rahmenwerk zu vereinfachen, die Anwendung zu erleichtern und die Kriterien an aktuelle EU-Gesetzgebung sowie technologische Fortschritte anzupassen.\n\nDie Änderungen betreffen die meisten Aktivitäten der Klima- und Umwelt-Delegierten Rechtsakte, darunter Forstwirtschaft, Umweltschutz, Fertigung, Energie, Verkehr und Bauwesen. Auch die generischen „Do no significant harm“-Anhänge sind betroffen. Dies soll die Akzeptanz der Taxonomie fördern, den Zugang zu grünen Finanzierungen verbessern und die Markttransparenz durch klarere Offenlegungen erhöhen.\n\nInteressenträger können bis zum 14. April Rückmeldungen zu den Entwürfen geben. Die Kommission plant, die überarbeiteten Kriterien bis zum Sommer zu verabschieden.",
-          "en": "The European Commission has published draft revisions to the technical screening criteria of the EU Taxonomy. The aim is to simplify the framework, make it easier to use, and align the criteria with updated EU legislation and technological advancements.\n\nThe changes cover most activities under the Climate and Environmental Delegated Acts, including forestry, environmental protection, manufacturing, energy, transport, and construction. The generic 'do no significant harm' appendices are also affected. This is intended to boost taxonomy adoption, improve access to green finance, and enhance market transparency through clearer disclosures.\n\nStakeholders can provide feedback on the drafts until April 14. The Commission plans to adopt the revised criteria by the summer."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revision-criteria-sustainable-economic-activities-2026-03-17_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "EU-Kommission veröffentlicht Entwürfe zu Anpassungen an den technischen Bewertungskriterien für die EU-Taxonomie-Verordnung",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwuerfe-zu-anpassungen-an-den-technischen-bewertungskriterien-fuer-die-eu-taxonomie-verordnung/",
-            "d": "23.03.2026"
-          },
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: EU-Taxonomie: Öffentliches Feedback zur Anpassung des Klima- und Umweltrechtsakts",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/253721/eu-taxonomie-oeffentliches-feedback-zur-anpassung-des-klima-und-umweltrechtsakts/",
-            "d": "19.03.2026"
-          }
-        ]
       }
     ],
     "mar": [
