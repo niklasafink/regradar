@@ -14,6 +14,7 @@ from .iosco import IoscoAdapter
 from .bis import BisAdapter
 from .dsnews import DsNewsAdapter
 from .ecfinance import EcFinanceAdapter
+from .bafinsearch import BafinSearchAdapter
 
 ADAPTERS = {
     "ecfinance": EcFinanceAdapter,
@@ -32,4 +33,5 @@ ADAPTERS = {
     "iosco": IoscoAdapter,
     "bis": BisAdapter,
     "dsnews": DsNewsAdapter,
+    "bafinsearch": BafinSearchAdapter,
 }

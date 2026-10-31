@@ -91,8 +91,11 @@ def _clusters(rows: List[dict], window_days: int) -> List[List[dict]]:
 
 def _doc_canonical(cluster: List[dict]) -> dict:
     """Vertreter wählen: echtes Publikationsdatum vor Fallback-Datum,
-    dann längerer Teaser, dann älteste ID (stabil)."""
+    dann längerer Teaser, dann älteste ID (stabil). Die BaFin-Expertensuche
+    tritt hinter jede andere Fassung zurück (webexport._bafin_search_overlaps):
+    Sonst unterdrückte dedup den RSS-Eintrag und der Export die Suchfassung."""
     return sorted(cluster, key=lambda r: (
+        1 if r["source"] == "bafin_search" else 0,
         0 if r["has_pubdate"] else 1, -len(r["summary"] or ""), r["id"]))[0]
 
 

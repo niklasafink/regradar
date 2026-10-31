@@ -98,6 +98,7 @@ export DIP_API_KEY="..."
 | Rechtsprechung im Internet | `rii` | `rii-toc.xml`, gefiltert BGH/BFH, ECLI aus Entscheidungs-XML |
 | AMLA | `amla` | `sitemap.xml` → Konsultationen, RTS/ITS, News; Fristen + PDFs aus Detailseiten |
 | BaFin | `rss` | 4 Feeds: Rundschreiben, Aufsicht, Maßnahmen, alle Meldungen |
+| BaFin (Expertensuche) | `bafinsearch` | Servicesuche je Format (Auslegungsentscheidung, Merkblatt, Rundschreiben, Aufsichtsmitteilung, Konsultation, Verfügung), alle Seiten à 50; nur Listen-Metadaten + Teaser (Frist aus „bis zum …“), kein Seiten-Fetch; RSS-Fassung hat Vorrang (`_bafin_search_overlaps`) |
 | EBA | `rss` | `rss.xml`; Digest-Items („E-mail alert") werden in Einzelpublikationen aufgelöst |
 | ESMA | `rss` | `rss.xml` |
 | EZB SSM | `rss` | `bankingsupervision.europa.eu/rss/press.xml` |

@@ -108,6 +108,25 @@ SOURCES = [
         "enabled": 1,
     },
     {
+        # Expertensuche nach Format: Auslegungsentscheidungen, Merkblätter,
+        # Rundschreiben, Aufsichtsmitteilungen, Konsultationen und
+        # (Allgemein-)Verfügungen – vollständig, inkl. Altbestand. Meldungen
+        # und Maßnahmen bleiben bei der RSS-Quelle bafin (31.10.2026).
+        "source_id": "bafin_search",
+        "name": "BaFin (Expertensuche)",
+        "authority": "BaFin",
+        "jurisdiction": "DE",
+        "base_url": "https://www.bafin.de/SiteGlobals/Forms/Suche/Expertensuche/Servicesuche_Formular.html",
+        "discovery_url": "https://www.bafin.de/SiteGlobals/Forms/Suche/Expertensuche/Servicesuche_Formular.html",
+        "discovery_type": "HTML",
+        "access_class": "PUBLIC",
+        "document_types": ["ADMINISTRATIVE_PRACTICE", "CIRCULAR", "SUPERVISORY_STATEMENT",
+                           "CONSULTATION", "GENERAL_DECISION"],
+        "poll_interval_minutes": 720,
+        "adapter": "bafinsearch",
+        "enabled": 1,
+    },
+    {
         "source_id": "eba",
         "name": "EBA",
         "authority": "EBA",

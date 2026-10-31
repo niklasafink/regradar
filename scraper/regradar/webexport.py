@@ -850,6 +850,49 @@ def _title_key(title: Optional[str]) -> str:
     return re.sub(r"\W+", " ", t).strip()
 
 
+# Die BaFin-Expertensuche (bafin_search) listet auch Dokumente, die der
+# RSS-Feed (bafin) schon geliefert hat — teils als Download-Seite unter
+# anderem Titel. Der RSS-Eintrag bleibt: Er stand womöglich schon in einem
+# Newsletter, sein /u/-Link und Slug sollen sich nicht ändern.
+BAFIN_REF = re.compile(
+    r"(rundschreiben|aufsichtsmitteilung|konsultation)\s+(?:nr\.\s*)?(\d{1,2})/(20\d{2})",
+    re.IGNORECASE)
+BAFIN_SEARCH_OVERLAP_DAYS = 7
+
+
+def _bafin_keys(r) -> set:
+    """Kennungen eines BaFin-Dokuments: URL, Titel und Nummern wie
+    "rundschreiben 6/2026" (führende Null egal)."""
+    text = "{} {}".format(r["title"] or "", r["summary"] or "")
+    keys = {("url", (r["canonical_url"] or "").lower())}
+    if len(_title_key(r["title"])) >= 15:
+        keys.add(("title", _title_key(r["title"])))
+    keys |= {("ref", m.group(1).lower(), int(m.group(2)), m.group(3))
+             for m in BAFIN_REF.finditer(text)}
+    return keys
+
+
+def _bafin_search_overlaps(rows) -> set:
+    """document_ids der bafin_search-Zeilen, die ein RSS-Dokument doppeln."""
+    rss = {}
+    for r in rows:
+        if r["source_id"] == "bafin":
+            iso = (r["publication_date"] or r["first_seen_at"] or "")[:10]
+            for k in _bafin_keys(r):
+                rss.setdefault(k, []).append(iso)
+    dupes = set()
+    for r in rows:
+        if r["source_id"] != "bafin_search":
+            continue
+        iso = (r["publication_date"] or "")[:10]
+        for k in _bafin_keys(r):
+            if any(k[0] == "url" or (_days_apart(iso, other) or 0) <= BAFIN_SEARCH_OVERLAP_DAYS
+                   for other in rss.get(k, [])):
+                dupes.add(r["document_id"])
+                break
+    return dupes
+
+
 def _de_date(iso: Optional[str]) -> Optional[str]:
     if not iso or not re.match(r"\d{4}-\d{2}-\d{2}", iso):
         return None
@@ -1028,9 +1071,12 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     bis_pub_days = {(r["publication_date"] or "")[:10] for r in rows
                     if r["source_id"] in ("bis", "bis_cpmi", "bis_fsi")
                     and r["publication_date"]}
+    bafin_search_dupes = _bafin_search_overlaps(rows)
     candidates = []
     for r in rows:
         if _too_thin(r):
+            continue
+        if r["document_id"] in bafin_search_dupes:
             continue
         if (r["source_id"] == "bis_press" and r["publication_date"]
                 and r["publication_date"][:10] in bis_pub_days):
@@ -1140,7 +1186,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     from .fulltext import fetch_fulltext
     circulars = {}
     for r, fw_id, _ in selected:
-        if r["source_id"] != "bafin":
+        if r["source_id"] not in ("bafin", "bafin_search"):
             continue
         rank = _bafin_circular_rank(r["canonical_url"])
         numbers = set(BAFIN_CIRCULAR_NO.findall(

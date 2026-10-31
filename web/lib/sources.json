@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T03:08:45Z",
+  "generated_at": "2026-10-31T10:00:06Z",
   "sources": [
     {
       "id": "eurlex",
@@ -56,6 +56,14 @@
       "jurisdiction": "DE",
       "access": "RSS",
       "url": "https://www.bafin.de/"
+    },
+    {
+      "id": "bafin_search",
+      "name": "BaFin (Expertensuche)",
+      "authority": "BaFin",
+      "jurisdiction": "DE",
+      "access": "HTML",
+      "url": "https://www.bafin.de/SiteGlobals/Forms/Suche/Expertensuche/Servicesuche_Formular.html"
     },
     {
       "id": "eba",

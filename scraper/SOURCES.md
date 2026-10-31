@@ -21,6 +21,7 @@ Zugriffspriorität: `API > XML > JSON > RSS > Sitemap > HTML > PDF`. Verbandsque
 |---|---|---|---|---|---|
 | 6 | AMLA | EU | HTML (Publications/Consultations) | RTS, ITS, GUIDELINE, CONSULTATION, FINAL_REPORT | Referenzadapter lt. Backend-Prompt (Kap. 14): End-to-End inkl. Fristen & Adressaten |
 | 7 | BaFin | DE | RSS-Feeds + HTML | CIRCULAR, CONSULTATION, ADMINISTRATIVE_PRACTICE, GENERAL_DECISION | Mehrere themenspezifische RSS-Feeds; Geschäftszeichen als ID |
+| 7a | BaFin (Expertensuche) | DE | HTML (Servicesuche, Filter Format, 50 je Seite, alle Seiten) | ADMINISTRATIVE_PRACTICE, CIRCULAR, SUPERVISORY_STATEMENT, CONSULTATION, GENERAL_DECISION | Seit 31.10.2026: Auslegungsentscheidungen, Merkblätter, Rundschreiben, Aufsichtsmitteilungen, Konsultationen, (Allgemein-)Verfügungen inkl. Altbestand. Nicht: Meldung, Maßnahme, Veranstaltung. Datum = Erstveröffentlichung („geändert am“ zählt nicht). Englische Fassungen, Stellungnahmen Dritter und doppelte Download-Seiten werden übersprungen; überschneidet sich ein Dokument mit dem RSS, bleibt der RSS-Eintrag |
 | 8 | EBA | EU | HTML/JSON (Publications) + RSS | GUIDELINE, RTS, ITS, Q_AND_A, CONSULTATION | EBA/GL/…-Referenzen als ID; Single Rulebook Q&A separat |
 | 9 | ESMA | EU | Register/Library (JSON-Suche) + RSS | GUIDELINE, RTS, ITS, Q_AND_A, CONSULTATION | ESMA-Dokumentnummern als ID |
 | 10 | EZB Bankenaufsicht | EU (SSM) | RSS + HTML | SUPERVISORY_STATEMENT, GENERAL_DECISION, CONSULTATION | bankingsupervision.europa.eu, Presse + Publikationen |

@@ -1335,3 +1335,121 @@ class RadarDecisions(unittest.TestCase):
         self.assertEqual(row, (22, 11))
         ok, _ = radar_actions.suppress_duplicate({"id": "y", "meta": {}}, "dublette-behalte-b")
         self.assertFalse(ok)
+
+
+class BafinSearch(unittest.TestCase):
+    """BaFin-Expertensuche (bafin_search, 31.10.2026): Trefferliste parsen,
+    Download-Doppel zusammenführen, RSS-Fassung hat Vorrang."""
+
+    @staticmethod
+    def _hit(url, title, pub, teaser="", changed=None):
+        return (
+            '<div class="c-teaser-search-result" data-qa-teaser-search-result="">'
+            '<a href="{}" class="c-teaser-search-result__link-main"><span class="is-text">'
+            '<h3 class="c-teaser-search-result__headline">{}</h3></span></a>'
+            '<p class="c-topline"><span class="c-topline__element is-date">{}</span> | Konsultation</p>'
+            '<p class="c-teaser-search-result__topic">Thema <a class="c-teaser-search-result__topic-link" href="#">Banken</a></p>'
+            '{}<div class="c-teaser-search-result__text"><p>{}</p></div></div>'
+        ).format(url, title, pub,
+                 '<p class="c-teaser-search-result__date"><span class="c-topline__element is-date">'
+                 'geändert am: {}</span></p>'.format(changed) if changed else "", teaser)
+
+    def test_parse_results(self):
+        from regradar.adapters.bafinsearch import parse_results
+        page = self._hit(
+            "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/WA/ae_x.html?nn=1",
+            'Rundschreiben 14/2026 (<abbr title="Bankenaufsicht">BA</abbr>)', "24.06.2013",
+            "Text", "01.10.2026")
+        [it] = parse_results(page, "ADMINISTRATIVE_PRACTICE")
+        self.assertEqual(it["title"], "Rundschreiben 14/2026 (BA)")
+        self.assertEqual(it["pub"], "2013-06-24")
+        self.assertEqual(it["changed"], "2026-10-01")
+        self.assertEqual(it["topic"], "Banken")
+        self.assertTrue(it["url"].endswith("ae_x.html"))
+
+    def test_download_twin_merged_with_deadline(self):
+        from regradar.adapters.bafinsearch import BafinSearchAdapter
+        page = (self._hit("https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_11_2026.html",
+                          "Konsultation 11/2026 – Rundschreiben XX/2026", "28.10.2026",
+                          "Stellungnahme bis zum 25.11.2026 per E-Mail.")
+                + self._hit("https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/kon_11_2026.html",
+                            "Konsultation 11/2026 - Rundschreiben XX/2026", "28.10.2026", "Konsultation 11/2026")
+                + self._hit("https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2025/dl_stn.html",
+                            "Stellungnahme ZIA zu Konsultation 17/2025", "14.08.2026"))
+        src = {"source_id": "bafin_search", "authority": "BaFin", "jurisdiction": "DE"}
+        result = unittest.mock.Mock(status=200, text=lambda: page)
+        with unittest.mock.patch("regradar.adapters.bafinsearch.FORMATS", [("konsultation", "CONSULTATION")]), \
+                unittest.mock.patch("regradar.adapters.bafinsearch.http.get", return_value=(result, None)):
+            adapter = BafinSearchAdapter(src)
+            [d] = adapter.discover()
+        self.assertIn("/Veroeffentlichungen/", d.detail_url)
+        doc = adapter.normalize(d, None)
+        self.assertEqual(doc.consultation_deadline, "2026-11-25")
+        self.assertEqual(doc.reference_number, "Konsultation 11/2026")
+
+    def test_rss_version_wins(self):
+        from regradar.webexport import _bafin_search_overlaps
+
+        def row(i, src, title, url, pub, summary=""):
+            return {"document_id": i, "source_id": src, "title": title, "summary": summary,
+                    "canonical_url": url, "publication_date": pub, "first_seen_at": pub + "T00:00:00Z"}
+        rows = [
+            row(1, "bafin", "Aufsichtsmitteilung 08/2026 (BA): Methodik zur EME",
+                "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_am_08.2026.html", "2026-10-08"),
+            row(2, "bafin_search", "Aufsichtsmitteilung 08/2026 (BA): Methodik zur Eigenmittelempfehlung (EME) ab 2026",
+                "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/am_08.html", "2026-10-08"),
+            # Gleiche Nummer, anderes Jahr: kein Doppel.
+            row(3, "bafin_search", "Aufsichtsmitteilung 08/2025 (BA): Anderes Thema",
+                "https://www.bafin.de/x.html", "2025-10-08"),
+            # Neues Dokument ohne RSS-Gegenstück.
+            row(4, "bafin_search", "Hinweise zur Geldtransferverordnung",
+                "https://www.bafin.de/y.html", "2018-12-20"),
+        ]
+        self.assertEqual(_bafin_search_overlaps(rows), {2})
+
+    def test_dedup_prefers_rss(self):
+        from regradar.dedup import _doc_canonical
+        cluster = [
+            {"id": "a", "source": "bafin_search", "has_pubdate": True, "summary": "langer Teaser " * 10},
+            {"id": "b", "source": "bafin", "has_pubdate": True, "summary": "kurz"},
+        ]
+        self.assertEqual(_doc_canonical(cluster)["id"], "b")
+
+    def test_download_siblings_stay_separate(self):
+        from regradar.adapters.bafinsearch import BafinSearchAdapter
+        base = "Allgemeinverfügung zur Anordnung einer Meldepflicht bei Geschäftsbeziehungen und Transaktionen mit Bezug zu"
+        page = (self._hit("https://www.bafin.de/SharedDocs/Downloads/DE/Aufsichtsrecht/dl_iran.html",
+                          base + " Iran", "13.05.2020")
+                + self._hit("https://www.bafin.de/SharedDocs/Downloads/DE/Aufsichtsrecht/dl_nk.html",
+                            base + " Nordkorea", "13.05.2020"))
+        src = {"source_id": "bafin_search", "authority": "BaFin", "jurisdiction": "DE"}
+        result = unittest.mock.Mock(status=200, text=lambda: page)
+        with unittest.mock.patch("regradar.adapters.bafinsearch.FORMATS", [("verfuegung", "GENERAL_DECISION")]), \
+                unittest.mock.patch("regradar.adapters.bafinsearch.http.get", return_value=(result, None)):
+            docs = BafinSearchAdapter(src).discover()
+        self.assertEqual(len(docs), 2)
+
+    def test_repealed_skipped(self):
+        from regradar.adapters.bafinsearch import SKIP_TITLE
+        self.assertTrue(SKIP_TITLE.search("Mindestanforderungen an die Sicherheit von Internetzahlungen (MaSI) – aufgehoben"))
+        self.assertFalse(SKIP_TITLE.search("Rundschreiben 1/2001 - Hinweise … (teilweise aufgehoben)"))
+
+    def test_repealed_teaser_skipped(self):
+        from regradar.adapters.bafinsearch import SKIP_TEASER
+        self.assertTrue(SKIP_TEASER.search("[mit Ablauf des 16.01.2025 aufgehoben] Versicherungsaufsichtliche Anforderungen an die IT (VAIT)"))
+        self.assertTrue(SKIP_TEASER.search("An alle Zahlungsdienstleister Das Rundschreiben 4/2015 (BA) wurde am 04.11.2021 aufgehoben"))
+        self.assertFalse(SKIP_TEASER.search("Hinweis: Abschnitt II. 2. des Rundschreibens wurde am 20.10.2010 aufgehoben"))
+        self.assertFalse(SKIP_TEASER.search("Rundschreiben 4/98 (Punkt II. Nr. 2 am 7.4.2009 aufgehoben)"))
+
+    def test_download_merges_into_single_page_of_day(self):
+        from regradar.adapters.bafinsearch import BafinSearchAdapter
+        page = (self._hit("https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/WA/mb_240910.html",
+                          "Geschäftsleitung von Wertpapierinstituten: BaFin veröffentlicht Merkblatt", "11.09.2024")
+                + self._hit("https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_100924.html",
+                            "Merkblatt 01/2024 (WA)", "11.09.2024"))
+        src = {"source_id": "bafin_search", "authority": "BaFin", "jurisdiction": "DE"}
+        result = unittest.mock.Mock(status=200, text=lambda: page)
+        with unittest.mock.patch("regradar.adapters.bafinsearch.FORMATS", [("merkblatt", "ADMINISTRATIVE_PRACTICE")]), \
+                unittest.mock.patch("regradar.adapters.bafinsearch.http.get", return_value=(result, None)):
+            [d] = BafinSearchAdapter(src).discover()
+        self.assertIn("/Veroeffentlichungen/", d.detail_url)
