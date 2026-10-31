@@ -382,7 +382,105 @@ BIS_SECONDARY_RULES = [
     ("bcbs", BIS_BANK_TERMS),
     (None, r"[\s\S]"),
 ]
+# BaFin-Expertensuche (bafin_search, 31.10.2026): Auslegungsentscheidungen,
+# Merkblätter und Allgemeinverfügungen seit 1983. Die allgemeinen Muster
+# ordneten u. a. Positionslimits für Warenderivate EMIR zu (MiFID II, § 54
+# WpHG), Versicherungs-Verbraucherthemen der CCD II, die Bank-SolvV Solvency II
+# und ließen PFOF-Verbot, ADC-Leitlinien, Nachhandelstransparenz und LCR/NSFR
+# ganz liegen. Die Teaser tragen das BaFin-Thema ("Thema: Großkredite"). Gilt
+# nur für diese Quelle; Reihenfolge = Vorrang, Rest über FRAMEWORK_RULES.
+BAFIN_SEARCH_RULES = [
+    # Kein Rahmenwerk-Update: Steuer, Einzelfälle (ein Produkt/Institut/eine
+    # Aktie), Gebühren, Bilanzkontrolle, Werbung, Firmierung.
+    (None, r"steuerbescheinigung|kapitalertragsteuer|e-geld-produkt|freistellung als e-geld-agent|"
+           r"silicon valley bank|wirecard|werbung mit der bafin|banknoten und münzen|umlage|"
+           r"reduzierungsanträge|bilanzkontrollverfahren|pflicht-haftpflichtversicherungen|bezeichnungsschutz|"
+           r"fondsbezogene bescheinigungen|bdai|thema: bafin-finanzierung|hinweise für registergerichte"),
+    # Feinere Regelwerke vor den breiten Mustern unten (MaComp nicht als
+    # MiFID, KAGB-Geschäftsleiter nicht als AIFMD, Schwarmfinanzierung nicht
+    # als WpHG allgemein).
+    ("macomp", r"macomp|compliance-funktion"),
+    ("srep", r"\bsrep\b|eigenmittelempfehlung"),
+    ("ebadod", r"ausfalldefinition"),
+    ("ebairb", r"lgd-schätzung"),
+    ("mifid", r"finanzinstrumenten nach § 1 abs\. 11"),
+    ("ecspr", r"schwarmfinanzierung|crowdfunding"),
+    ("interchange", r"ec-karte|interbankenentgelt"),
+    ("priips", r"priips|basisinformationsblatt"),
+    ("sfdr", r"fondsnamen|zuordnungsansatz"),
+    ("mcd", r"wohnimmobilienkredit|immobiliar-darlehen"),
+    ("zag", r"inländische agenten"),
+    ("crr3", r"fixen gemeinkosten|artikel (?:89|467)\b|(?<!zag-)(?<!wertpapierinstituts-)anzeigenverordnung|kleine und nicht komplexe"),
+    ("solvency", r"2015/35|bewertungsreserven"),
+    ("aifmd2", r"kapitalanlagegesetzbuch"),
+    ("idd", r"white-label"),
+    ("ebaretaildiv", r"diversifizierungsmethoden|rundschreibens? 04/2026 \(ba\)"),
+    ("ebaadc", r"\badc\b|spekulative immobilienfinanzierung"),
+    ("ebapsdexempt", r"notfallmechanismus"),
+    ("ebapsdauth", r"berufshaftpflichtversicherung"),
+    ("ebaonboarding", r"videoidentifizierung"),
+    ("ebasts", r"sts-kriterien"),
+    ("ebaifrem", r"vergütungsanzeigen für wertpapierinstitute|wertpapierinstituts-vergütung|vergütungsmeldungen wertpapierinstitute"),
+    ("ebaifprud", r"befreiung von liquiditätsanforderungen"),
+    ("tfr", r"geldtransferverordnung"),
+    ("dltpilot", r"kryptowertpapierregister"),
+    ("fitproper", r"geschäftsleiter|geschäftsleitung von|fachliche[rn]? eignung|zuverlässigkeit|personenanzeigen|aufsichtsorgan"),
+    ("aifmd2", r"kamarisk|verwahrstelle und kapitalverwaltungsgesellschaft|\bkagb\b|investmentvermögen|"
+               r"kapitalverwaltungsgesellschaft|\baif\b|ogaw|\binvg\b|thema: investmentfonds"),
+    ("mica", r"krypto|\bmicar?\b"),
+    ("mar", r"emittentenleitfaden|ad-hoc|directors' dealings|artikel 19 abs\. 9|verdachtsmeldungen nach art\. 16"),
+    ("brrd", r"thema: sanierung|thema: abwicklung|mabail-in|abwicklungsfähigkeit|abwicklungsbewertung|"
+             r"§ 46f kwg|insolvenzrechtliche[rn]? (behandlung|einordnung)|handelsaussetzung an nicht-börsen"),
+    ("ebalargeexp", r"thema: großkredite|groß- und millionenkredit|gromikv|verbundene[rn]? kunden|"
+                    r"großkreditobergrenze|triparty"),
+    ("irrbb", r"zinsänderungsrisik|irrbb|csrbb"),
+    ("wpimarisk", r"wpi marisk"),
+    ("zagmarisk", r"zag-marisk|risikomanagement von zag"),
+    ("complaints", r"beschwerde"),
+    ("ficod", r"finanzkonglomerat"),
+    ("ebaqualholdings", r"inhaberkontrolle|qualifizierte[rn]? beteiligung|bedeutenden beteiligung"),
+    ("gwg", r"geldwäsche|§ 25h|§ 25n|geldkarte|§ 24c|terrorismusfinanzierung|underground-banking|"
+            r"identifi(?:zierung|kation) von flüchtlingen|\bfatf\b"),
+    ("psd3", r"kontozugangsschnittstelle|internetzahlungen|kartenausgebende"),
+    ("zag", r"\bzag\b|zahlungsdienst|e-geld|zahlungsvorgänge"),
+    ("consumer", r"governance von bankprodukten|steuerung von finanzprodukten|prämiensparvertr|zinsanpassungsklausel"),
+    ("dora", r"\bbait\b|anforderungen an die it\b|\bdora\b"),
+    ("itsrep", r"risikotragfähigkeitsinformationen|aufsichtlicher finanzinformationen|informationen zur risikotragfähigkeit"),
+    ("securitisation", r"verbriefung|gewichteten durchschnittlichen laufzeit"),
+    ("pfandbg", r"pfandbrief|beleihungswert"),
+    ("emir", r"\bemir\b|zentrale gegenpartei|intragruppenausnahme"),
+    ("idd", r"versicherungsvermittl|versicherungsvertrieb|gruppenversicherung|wohlverhaltensaufsicht|sondervergütungsverbot"),
+    ("mago", r"geschäftsorganisation von (?:versicher|einrichtungen|kleinen)|eigene[rn]? risikobeurteilung"),
+    ("solvency", r"\(va\)|thema: kapitalanlagen von versicherern"),
+    # Wertpapiergeschäft: Positionslimits (§ 54 WpHG), Transparenz,
+    # Produktintervention, Wertpapierdienstleistungs-Tatbestände.
+    ("mifid", r"positionslimit|warenderivat|illiquide|nachhandelstransparenz|payment for order flow|\bpfof\b|"
+              r"systematische[rn]? internalisierer|produktintervention|binäre[rn]? optionen|contracts for difference|"
+              r"bonitätsanleihen|handelssystem|anlageberatung|anlagevermittlung|abschlussvermittlung|"
+              r"finanzportfolioverwaltung|eigenhandel|platzierungsgeschäft|finanzkommissionsgeschäft|"
+              r"emissionsgeschäft|depotgeschäft|verwahrgeschäft|anlageverwaltung|investmentclub|"
+              r"(?<!derivative )(?<!derivativen )finanzinstrument|market-making|vertraglich gebundene[rn]? vermittler|cold calling|wphg"),
+    ("instvergv", r"vergütungsanzeigen|diversitätsanzeigen|institutsvergütung"),
+    ("marisk", r"begleitschreiben von der bafin und der deutschen bundesbank für finanzierungsleasing"),
+    # Bankenaufsicht: Liquidität, Bank-SolvV (nicht Solvency II), KWG-Erlaubnis-
+    # und Ausnahmetatbestände, Makroaufsicht. Vor den Versicherungen, weil
+    # "Versicherungen in fortgeschrittenen Messansätzen" Bankenaufsicht ist.
+    ("crr3", r"liquiditätsabflüss|stabile[rn]? refinanzierung|liquiditätsdeckungsquote|\blcr\b|\bnsfr\b|"
+             r"liquiditätsverordnung|2015/61|zentralbankreserven|nettoausweis|solvabilitätsverordnung|\bsolvv\b|"
+             r"refinanzierungsregister|kleine und sehr kleine kreditinstitute|organkredit|offenlegung|"
+             r"fortgeschrittenen messansätzen|zusatzsicherheit|einlagengeschäft|kreditgeschäft|garantiegeschäft|"
+             r"diskontgeschäft|wechseleinzug|factoring|bankgeschäfte|zulassung als kreditinstitut|"
+             r"verbotene geschäfte|drittstaateneinlagenvermittlung|abwickler|konzernprivileg|§ 2 abs\. 4 kwg|"
+             r"bereichsausnahme|merkblatt ausnahme für|grenzüberschreitend betriebenen|darlehenrückkauf|"
+             r"kapitalpuffer|geschäftsguthaben|thema: makroaufsicht|thema: erlaubnispflicht"),
+    ("solvency", r"\(va\)|versicher|pensionsfonds|pensionskasse|sterbekasse|eiopa|aktuar|zillmerung|"
+                 r"sicherungsvermögen|vermögensverzeichnis|deckungsrückstellung|thema: solvabilität|"
+                 r"thema: rückstellungen|thema: betriebliche altersversorgung"),
+    ("marisk", r"\bmarisk\b|nachhaltigkeitsrisiken"),
+]
+
 SOURCE_RULES = {
+    "bafin_search": BAFIN_SEARCH_RULES,
     "bis": BIS_RULES,
     "bis_cpmi": BIS_SECONDARY_RULES,
     "bis_fsi": BIS_SECONDARY_RULES,

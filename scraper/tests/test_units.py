@@ -1424,3 +1424,26 @@ class BafinSearch(unittest.TestCase):
                 unittest.mock.patch("regradar.adapters.bafinsearch.http.get", return_value=(result, None)):
             [d] = BafinSearchAdapter(src).discover()
         self.assertIn("/Veroeffentlichungen/", d.detail_url)
+
+    def test_framework_rules(self):
+        """Zuordnung der BaFin-Suchtreffer (Prüfung 31.10.2026)."""
+        from regradar.webexport import _classify
+        cases = [
+            ("Allgemeinverfügung zur Neufestsetzung von Positionslimits für TTF natural gas Future", "", "mifid"),
+            ("Aufsichtsmitteilung 05/2026 (WA): Inkrafttreten des Payment for Order Flow (PFOF)-Verbots in Deutschland", "", "mifid"),
+            ("Konsultation 04/2026: Rundschreiben zur Übernahme der EBA-Leitlinien zu den ADC-Risikopositionen", "", "ebaadc"),
+            ("Erläuternde Aussagen zur Solvabilitätsverordnung (Operationelles Risiko)", "", "crr3"),
+            ("Hinweise zu einigen Auslegungsfragen zum Versicherungsvertragsgesetz (VVG)", "", "solvency"),
+            ("Rundschreiben 08/2017 (VA) – Derivative Finanzinstrumente und strukturierte Produkte", "", "solvency"),
+            ("Rundschreiben 4/2010 (WA) - MaComp", "", "macomp"),
+            ("Merkblatt zur Eignung von Geschäftsleitern nach dem KAGB", "", "fitproper"),
+            ("Merkblatt Zulassungsanforderungen bzgl. ART und EMT nach MiCAR", "", "mica"),
+            ("Konsultation 09/2026 – Entwurf einer Verordnung zur Änderung der Immobiliar-Darlehensvergabe-Sachkundeverordnung", "", "mcd"),
+            ("Konsultation 20/2021: Entwurf für ein Rundschreiben N/2021(BA)",
+             "zu weiteren Anforderungen an eigene LGD-Schätzungen — Thema: Eigenmittel", "ebairb"),
+            ("Steuerbescheinigungen: BaFin erwartet Ausstellung bis Ende Juni des Folgejahres", "", None),
+            ("Freistellung des E-Geld-Produkts „EDEKA-Gutscheinkarte“ der paybox Bank AG", "", None),
+        ]
+        for title, summary, expected in cases:
+            self.assertEqual(_classify("{} {}".format(title, summary), source_id="bafin_search", title=title),
+                             expected, title)
