@@ -135,7 +135,7 @@ const FW_ABBR: Record<string, string> = {
   securitisation: "Verbriefungs-VO", cra: "CRA", krzwmg: "KrZwMG",
   iref: "IReF", sftr: "SFTR", esgrating: "ESG-Rating-VO",
   loanorig: "EBA-Kreditvergabeleitlinien", fitproper: "Fit & Proper",
-  mcd: "MCD", pfandbg: "PfandBG", dataact: "Data Act", greenbond: "EuGB",
+  mcd: "MCD", pfandbg: "PfandBG", bspkg: "BauSparkG", dataact: "Data Act", greenbond: "EuGB",
   luaifm: "Lux. Fondsrecht", lulmt: "LMT (Luxemburg)",
   cssf18698: "CSSF 18/698", cssf24856: "CSSF 24/856",
   cssfaml: "CSSF-AML-VO", cssfict: "CSSF 20/750",

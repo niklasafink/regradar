@@ -1447,3 +1447,12 @@ class BafinSearch(unittest.TestCase):
         for title, summary, expected in cases:
             self.assertEqual(_classify("{} {}".format(title, summary), source_id="bafin_search", title=title),
                              expected, title)
+
+    def test_bausparkassen_framework(self):
+        """Rahmenwerk bspkg (31.10.2026): BaFin-Suche und andere Quellen."""
+        from regradar.webexport import _classify
+        for title in ("Allgemeinverfügung bezüglich des kollektiven Lageberichts von Bausparkassen",
+                      "Tarifgenehmigung gem. § 9 Abs. 1 BSpKG"):
+            self.assertEqual(_classify(title, source_id="bafin_search", title=title), "bspkg")
+        title = "Verordnung zur Änderung der Bausparkassen-Verordnung"
+        self.assertEqual(_classify(title, source_id="bgbl", title=title), "bspkg")

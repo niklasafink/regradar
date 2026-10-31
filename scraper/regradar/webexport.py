@@ -300,6 +300,7 @@ FRAMEWORK_RULES = [
     ("securitisation", r"verbriefung|securiti[sz]ation|\bsts\b(?=[\s\S]*(verbrief|securit|synthetic|tranche))|"
                        r"risk retention|risikoselbstbehalt|synthetic excess spread"),
     ("pfandbg", r"pfandbrief|covered bond|gedeckte schuldverschreibung|beleihungswert"),
+    ("bspkg", r"bausparkass|bauspark?v\b|bausparkg|bausparvertr"),
     ("krzwmg", r"kreditzweitmarkt|\bkrzwmg\b|credit servicer|kreditdienstleist|kreditkäufer|credit purchaser|"
                r"notleidende[rn]? kredite|non-performing (loans?|exposures?)|\bnpls?\b|\bnpes?\b"),
     ("mcd", r"wohnimmobilienkredit|mortgage credit|immobiliar-verbraucherdarlehen|immokwplv|"
@@ -399,7 +400,10 @@ BAFIN_SEARCH_RULES = [
     # Feinere Regelwerke vor den breiten Mustern unten (MaComp nicht als
     # MiFID, KAGB-Geschäftsleiter nicht als AIFMD, Schwarmfinanzierung nicht
     # als WpHG allgemein).
-    ("macomp", r"macomp|compliance-funktion"),
+    ("bspkg", r"bauspar|\bbspkg\b|finanzierung aus einer hand"),
+    ("macomp", r"macomp|compliance-funktion|anlage at 9"),
+    ("consumer", r"zahlungskont|vergleichswebsite"),
+    ("aifmd2", r"\bfinma\b"),
     ("srep", r"\bsrep\b|eigenmittelempfehlung"),
     ("ebadod", r"ausfalldefinition"),
     ("ebairb", r"lgd-schätzung"),
@@ -410,7 +414,7 @@ BAFIN_SEARCH_RULES = [
     ("sfdr", r"fondsnamen|zuordnungsansatz"),
     ("mcd", r"wohnimmobilienkredit|immobiliar-darlehen"),
     ("zag", r"inländische agenten"),
-    ("crr3", r"fixen gemeinkosten|artikel (?:89|467)\b|(?<!zag-)(?<!wertpapierinstituts-)anzeigenverordnung|kleine und nicht komplexe"),
+    ("crr3", r"abschirmung|fixen gemeinkosten|artikel (?:89|467)\b|(?<!zag-)(?<!wertpapierinstituts-)anzeigenverordnung|kleine und nicht komplexe"),
     ("solvency", r"2015/35|bewertungsreserven"),
     ("aifmd2", r"kapitalanlagegesetzbuch"),
     ("idd", r"white-label"),
@@ -459,7 +463,8 @@ BAFIN_SEARCH_RULES = [
               r"bonitätsanleihen|handelssystem|anlageberatung|anlagevermittlung|abschlussvermittlung|"
               r"finanzportfolioverwaltung|eigenhandel|platzierungsgeschäft|finanzkommissionsgeschäft|"
               r"emissionsgeschäft|depotgeschäft|verwahrgeschäft|anlageverwaltung|investmentclub|"
-              r"(?<!derivative )(?<!derivativen )finanzinstrument|market-making|vertraglich gebundene[rn]? vermittler|cold calling|wphg"),
+              r"(?<!derivative )(?<!derivativen )finanzinstrument|market-making|vertraglich gebundene[rn]? vermittler|cold calling|wphg|"
+              r"wpdpv|30\.05\.2008|30\. mai 2008"),
     ("instvergv", r"vergütungsanzeigen|diversitätsanzeigen|institutsvergütung"),
     ("marisk", r"begleitschreiben von der bafin und der deutschen bundesbank für finanzierungsleasing"),
     # Bankenaufsicht: Liquidität, Bank-SolvV (nicht Solvency II), KWG-Erlaubnis-

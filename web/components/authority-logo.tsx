@@ -103,6 +103,7 @@ export const FRAMEWORK_AUTH: Record<string, string> = {
   ebaamlstd: "eba.europa.eu",
   ficod: "eur-lex.europa.eu",
   marisk: "bafin.de",
+  bspkg: "bafin.de",
   brrd: "eur-lex.europa.eu",
   ifr: "eur-lex.europa.eu",
   outsourcing: "eba.europa.eu",
