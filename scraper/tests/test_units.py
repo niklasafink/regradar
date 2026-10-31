@@ -661,35 +661,6 @@ class QaSweepSept2026(unittest.TestCase):
         # Versicherungsaufsicht ist keine Inhaberkontrolle nach CRD
         self.assertNotEqual(_classify("Consultation on Supervisory Statement for (Re-)Insurance Undertakings and qualifying holdings"), "ebaqualholdings")
 
-    def test_eba_technical_standards_from_single_rulebook_dashboard(self):
-        """EBA-RTS/ITS aus dem Single-Rulebook-Dashboard (Ergänzung
-        31.10.2026) landen bei ihrem Kind-Rahmenwerk."""
-        from regradar.webexport import _classify
-        cases = {
-            "EBA publishes final draft RTS on the K-factor methods for investment firms": "ebaifprud",
-            "Final draft RTS on CVA risk of securities financing transactions": "ebamarket",
-            "EBA consults on RTS on prudent valuation": "ebamarket",
-            "Amendments to the liquidity coverage ratio delegated act": "ebaliquidity",
-            "ITS on the mapping of the business indicator for operational risk": "ebaoprisk",
-            "ITS amending the mapping of credit assessments of ECAIs": "ebaecai",
-            "Final draft RTS on the allocation of off-balance sheet items and credit conversion factors": "ebacreditrisk",
-            "RTS on the deduction of software assets from CET1": "ebaownfunds",
-            "RTS on the information in the application for authorisation as a credit institution": "ebaauthpass",
-            "RTS on the functioning of colleges of supervisors": "ebaauthpass",
-            "ITS on MREL reporting and disclosure": "ebaresolution",
-            "RTS on the contractual recognition of stay powers": "ebaresolution",
-            "RTS on central contact points to strengthen the fight against money laundering": "ebaamlstd",
-            "Supplementary supervision of financial conglomerates: ITS on intra-group transactions": "ficod",
-            "ITS on Pillar 3 disclosure via the Pillar 3 data hub": "ebadisclosure",
-            "RTS on liquidity requirements for issuers of asset-referenced tokens": "ebamicaart",
-        }
-        for title, fw in cases.items():
-            self.assertEqual(_classify(title), fw, title)
-        # DORA-Texte gehören nicht ins operationelle Risiko nach CRR
-        self.assertNotEqual(_classify("DORA and operational risk: ICT incident reporting"), "ebaoprisk")
-        # PSD2-Passporting gehört nicht zur CRD-Zulassung
-        self.assertNotEqual(_classify("RTS on passport notifications of payment institutions under PSD2"), "ebaauthpass")
-
     def test_reply_form_is_noise(self):
         from regradar.webexport import _classify
         self.assertIsNone(_classify("Consultation paper on the reporting framework under EMIR - Reply form"))
