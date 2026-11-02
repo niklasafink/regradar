@@ -96,6 +96,23 @@ function seenByIdentity(seen: Record<string, string>): Map<string, SeenSlug[]> {
   return out;
 }
 
+/** Gleiche Quell-URL mit Datum ±7 Tage = dasselbe Dokument, auch unter neuem
+    Titel (QA 02.11.2026: kuratierter EBA-Final-Report CSDR Art. 59 vom 31.10.
+    wäre neben der am 13.10. verschickten Scraper-Meldung erneut rausgegangen).
+    Das enge Fenster schützt Seiten, die über Monate mehrere Stufen tragen
+    (Have-your-say-Initiativen, Gesetzesseiten). */
+const SAME_URL_MAX_DAYS = 7;
+
+function seenByUrl(seen: Record<string, string>): Map<string, SeenSlug[]> {
+  const out = new Map<string, SeenSlug[]>();
+  for (const p of UPDATE_PAGES) {
+    const ts = seen[p.slug];
+    if (!ts || !p.u.url) continue;
+    out.set(p.u.url, [...(out.get(p.u.url) ?? []), { slug: p.slug, iso: isoDate(p.u.d), ts }]);
+  }
+  return out;
+}
+
 /** First-Seen-Zeitpunkte aller Slugs laden bzw. neue Slugs registrieren.
     `first` = allererster Lauf (weder Hash noch Alt-Set vorhanden): dann wird
     das komplette Archiv mit Epoch markiert, damit es niemand erhält. */
@@ -119,6 +136,7 @@ async function loadSeen(persist: boolean, nowIso: string): Promise<{
 
   const first = Object.keys(seen).length === 0;
   const known = first ? new Map<string, SeenSlug[]>() : seenByIdentity(seen);
+  const byUrl = first ? new Map<string, SeenSlug[]>() : seenByUrl(seen);
   const newSlugs: string[] = [];
   for (const p of UPDATE_PAGES) {
     // Dasselbe Dokument unter neuem Datum (Bundestags-Vorgang mit neuem
@@ -128,8 +146,13 @@ async function loadSeen(persist: boolean, nowIso: string): Promise<{
     // Zeitpunkt aller Fassungen, sonst ginge sie bei jedem Schritt erneut
     // raus (Zoll-Gesetz 14.08.–09.10.2026 fünfmal, CARF-Gesetze dreimal).
     const iso = isoDate(p.u.d);
-    const earliest = (known.get(identityOf(p.u.sl ?? slugify(p.u.ti.de))) ?? [])
-      .filter((s) => s.slug !== p.slug && daysApart(s.iso, iso) <= SAME_DOC_MAX_DAYS)
+    const earliest = [
+      ...(known.get(identityOf(p.u.sl ?? slugify(p.u.ti.de))) ?? [])
+        .filter((s) => daysApart(s.iso, iso) <= SAME_DOC_MAX_DAYS),
+      ...(p.u.url ? byUrl.get(p.u.url) ?? [] : [])
+        .filter((s) => daysApart(s.iso, iso) <= SAME_URL_MAX_DAYS),
+    ]
+      .filter((s) => s.slug !== p.slug)
       .map((s) => s.ts)
       .sort()[0];
     if (earliest && (!seen[p.slug] || earliest < seen[p.slug])) {
@@ -179,10 +202,16 @@ const dayStart = (iso: string): number => {
   return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
 };
 
+const MAX_LATE_DAYS = 28;
+
 /** Updates, die für diesen Abonnenten wirklich neu sind:
     1. erstmals gesehen NACH max(confirmedAt, lastNotifiedAt) — nie doppelt,
     2. Publikationsdatum am oder nach dem Anmeldetag — kein Alt-Archiv,
-       das nur wegen einer Quellen-/Rahmenwerk-Erweiterung frisch aussieht. */
+       das nur wegen einer Quellen-/Rahmenwerk-Erweiterung frisch aussieht,
+    3. Publikationsdatum höchstens 28 Tage vor dem Wasserzeichen — dasselbe
+       für Bestandsabonnenten (QA 02.11.2026: nachgetragenes ITS zum
+       Geschäftsindikator vom 03.09., gültig seit 23.09., stand als „neu“ in
+       der November-Mail). Spät gescrapte Meldungen bleiben drin. */
 function freshFor(
   sub: Subscriber,
   sorted: UpdatePage[],
@@ -192,7 +221,10 @@ function freshFor(
   const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
     .sort()
     .pop()!;
-  const minPub = dayStart(sub.confirmedAt || EPOCH);
+  const minPub = Math.max(
+    dayStart(sub.confirmedAt || EPOCH),
+    dayStart(watermark) - MAX_LATE_DAYS * 86_400_000,
+  );
   return sorted.filter(
     (p) => (seen[p.slug] ?? nowIso) > watermark && dt(p.u.d).getTime() >= minPub,
   );

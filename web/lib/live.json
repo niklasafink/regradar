@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T15:09:49Z",
+  "generated_at": "2026-11-02T21:57:04Z",
   "updates": {
     "emir": [
       {
@@ -420,25 +420,6 @@
         "imp": "high"
       },
       {
-        "d": "30.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "cssf.lu",
-        "ti": {
-          "de": "Antwort der IMMFA auf eine öffentliche Konsultation",
-          "en": "IMMFA's Answer to a Public Consultation"
-        },
-        "sl": "answer-to-the-public-consultation-institutional-money-market-funds-association-i",
-        "s": {
-          "de": "Die Meldung ist eine Antwort der Institutional Money Market Funds Association (IMMFA) auf eine öffentliche Konsultation. Der Inhalt der Konsultation oder die spezifischen Punkte, auf die sich die Antwort bezieht, sind dem vorliegenden Text nicht zu entnehmen.\n\nOhne weitere Informationen zum Gegenstand der Konsultation lässt sich die Relevanz für Finanzunternehmen nicht beurteilen. Es ist anzunehmen, dass die Antwort die Interessen von Geldmarktfonds und deren Anbietern vertritt.\n\nEs sind keine Fristen oder nächsten Schritte aus dem Text ersichtlich.",
-          "en": "This notice is a response from the Institutional Money Market Funds Association (IMMFA) to a public consultation. The content of the consultation or the specific points addressed in the response are not apparent from the provided text.\n\nWithout further information on the subject of the consultation, its relevance for financial undertakings cannot be assessed. It can be assumed that the response represents the interests of money market funds and their providers.\n\nNo deadlines or next steps are evident from the text."
-        },
-        "url": "https://www.cssf.lu/en/Document/answer-to-the-public-consultation-institutional-money-market-funds-association-immfa/",
-        "imp": "low"
-      },
-      {
         "d": "19.06.2026",
         "t": {
           "de": "Meldung",
@@ -515,6 +496,25 @@
         "url": "https://www.cssf.lu/en/Document/circular-cssf-26-911/",
         "imp": "medium",
         "refnum": "Circular CSSF 26/911"
+      },
+      {
+        "d": "12.05.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "cssf.lu",
+        "ti": {
+          "de": "Gesetz zur Änderung von Finanzmarktgesetzen und Umsetzung von EU-Richtlinien (Law of 5 May 2026)",
+          "en": "Law amending financial sector laws and transposing EU Directives (Law of 5 May 2026)"
+        },
+        "sl": "law-of-5-may-2026-only-in-french",
+        "s": {
+          "de": "Das Gesetz vom 5. Mai 2026 ändert mehrere bestehende Gesetze im Finanzsektor. Es passt das Gesetz über den Finanzsektor von 1993, das Gesetz über OGAW von 2010, das Gesetz über die Abwicklung von Kreditinstituten und Wertpapierfirmen von 2015 sowie das Gesetz über OTC-Derivate, zentrale Gegenparteien und Transaktionsregister von 2016 an.\n\nZudem setzt das Gesetz die EU-Richtlinien 2024/1619 und 2024/2994 in nationales Recht um. Diese Richtlinien betreffen Aufsichtsbefugnisse, Sanktionen, Drittstaatenzweigstellen, ESG-Risiken sowie die Behandlung von Konzentrations- und Gegenparteirisiken bei zentral abgerechneten Derivategeschäften. Es implementiert auch die Verordnung (EU) 2024/2987 zur Minderung übermäßiger Risikopositionen gegenüber Drittstaaten-Zentralen Gegenparteien und zur Verbesserung der Effizienz der Clearingmärkte der Union.\n\nDie Änderungen sind relevant für Kreditinstitute, Wertpapierfirmen, OGAW und andere Finanzmarktteilnehmer, die von den genannten Gesetzen und Richtlinien betroffen sind. Sie müssen sich auf neue Anforderungen bezüglich Aufsicht, Risikomanagement (insbesondere Konzentrations- und Gegenparteirisiken) und ESG-Aspekte einstellen.",
+          "en": "The Law of 5 May 2026 amends several existing laws in the financial sector. It adjusts the Law of 5 April 1993 on the financial sector, the Law of 17 December 2010 relating to undertakings for collective investment, the Law of 18 December 2015 on the failure of credit institutions and certain investment firms, and the Law of 15 March 2016 on OTC derivatives, central counterparties and trade repositories.\n\nFurthermore, the law transposes EU Directives 2024/1619 and 2024/2994 into national law. These directives concern supervisory powers, sanctions, third-country branches, ESG risks, and the treatment of concentration and counterparty risk in centrally cleared derivative transactions. It also implements Regulation (EU) 2024/2987 regarding measures to mitigate excessive exposures to third-country central counterparties and improve the efficiency of Union clearing markets.\n\nThe amendments are relevant for credit institutions, investment firms, UCITS, and other financial market participants affected by the mentioned laws and directives. They will need to adapt to new requirements concerning supervision, risk management (especially concentration and counterparty risks), and ESG aspects."
+        },
+        "url": "https://www.cssf.lu/en/Document/law-of-5-may-2026/",
+        "imp": "high"
       }
     ],
     "taxonomy": [

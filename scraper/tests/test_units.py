@@ -667,6 +667,15 @@ class QaSweepSept2026(unittest.TestCase):
         from regradar.webexport import _classify
         self.assertIsNone(_classify("Consultation paper on the reporting framework under EMIR - Reply form"))
 
+    def test_third_party_consultation_answer_is_noise(self):
+        """QA-Prüfung 02.11.2026: CSSF-Dokument mit der Konsultationsantwort
+        eines Verbands (IMMFA) stand als Update im Newsletter."""
+        from regradar.webexport import _classify
+        self.assertIsNone(_classify(
+            "Answer to the public consultation - Institutional Money Market Funds Association (IMMFA)",
+            source_id="cssf",
+            url="https://www.cssf.lu/en/Document/answer-to-the-public-consultation-institutional-money-market-funds-association-immfa/"))
+
     def test_individual_bafin_measure_is_not_a_framework_update(self):
         """BaFin-Einzelfall-Anordnungen gegen ein namentlich genanntes Institut
         (§ 60b KWG u. Ä.) sind kein CRR3-Update für alle Institute, sondern

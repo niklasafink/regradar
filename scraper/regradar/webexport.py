@@ -664,6 +664,10 @@ NOISE = re.compile(
     # Stellungnahmen der Stakeholder-Gruppen (IRSG, OPSG, BSG) zu ESA-
     # Konsultationen sind Eingaben Dritter, keine Aufsichtsdokumente.
     r"\b(irsg|opsg|bsg|smsg)\b[\s\S]{0,20}(response|antwort|stellungnahme)|"
+    # QA-Prüfung 02.11.2026: Die CSSF veröffentlicht Konsultationsantworten
+    # einzelner Verbände ("Answer to the public consultation – IMMFA") als
+    # eigene Dokumente — ebenfalls Eingaben Dritter.
+    r"answer to the public consultation|"
     # Öffentlicher Sektor ohne Bezug zu Instituten (BfDI-Informationsfreiheit,
     # Cybersicherheitsprogramme der Bundesverwaltung).
     r"informationsfreiheit|bundestransparenzgesetz|cybersicherheit der bundesverwaltung", re.IGNORECASE)
