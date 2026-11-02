@@ -33,7 +33,7 @@ export function confirmPage(opts: {
   cancelHref?: string;
   cancelLabel?: string;
   /** Zweiter, heller Button mit eigener Aktion (eigenes Formular). */
-  secondary?: { action: string; button: string; text?: string };
+  secondary?: { action: string; button: string; text?: string; textarea?: { name: string; placeholder: string } };
 }): Response {
   const hidden = Object.entries(opts.fields ?? {})
     .map(([k, v]) => `<input type="hidden" name="${esc(k)}" value="${esc(v)}">`)
@@ -49,6 +49,7 @@ export function confirmPage(opts: {
      ${opts.secondary ? `<form method="post" action="${esc(opts.secondary.action)}" style="margin:28px 0 0;padding-top:20px;border-top:1px solid #e2e8f0">
        ${opts.secondary.text ? `<p style="font-size:13px;color:#64748b;line-height:1.6;margin:0 0 12px">${opts.secondary.text}</p>` : ""}
        <input type="hidden" name="confirm" value="1">
+       ${opts.secondary.textarea ? `<textarea name="${esc(opts.secondary.textarea.name)}" rows="4" maxlength="2000" placeholder="${esc(opts.secondary.textarea.placeholder)}" style="display:block;width:100%;box-sizing:border-box;margin:0 0 12px;padding:10px 12px;border:1px solid #e2e8f0;border-radius:8px;font:inherit;font-size:14px;line-height:1.5"></textarea>` : ""}
        <button type="submit" style="display:inline-block;background:#fff;color:#0f172a;border:1px solid #0f172a;padding:11px 22px;border-radius:9999px;font-weight:600;font-size:14px;cursor:pointer">${esc(opts.secondary.button)}</button>
      </form>` : ""}`,
   );

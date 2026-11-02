@@ -49,6 +49,8 @@ export type LiveQa = {
   updatedAt: string;
   /** Aktueller Schritt in Klartext. */
   step?: string;
+  /** Entscheidungen des Betreibers aus dem Textfeld der Freigabe-Seite. */
+  note?: string;
 };
 
 const LIVE_KEY = "newsletter:qa:live";

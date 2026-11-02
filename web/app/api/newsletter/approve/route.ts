@@ -67,7 +67,8 @@ export async function GET(request: Request) {
       ? {
           action: `/api/newsletter/qa/live?token=${encodeURIComponent(token)}`,
           button: "Erst QS-Lauf starten",
-          text: "Prüft die Meldungen jetzt noch einmal (dauert ca. 1–3 Minuten). Danach kommt automatisch eine neue Freigabe-Mail mit dem aktuellen QS-Bericht.",
+          text: "Prüft die Meldungen jetzt noch einmal und korrigiert Fehler (dauert ca. 1–3 Minuten). Optional: Schreib unten, wie du die offenen Punkte entscheidest, die QS setzt das um. Danach kommt automatisch eine neue Freigabe-Mail mit dem aktuellen QS-Bericht.",
+          textarea: { name: "note", placeholder: "z. B. EMIR-Konsultation: Frist passt, freigeben. Sanktionsakte: rausnehmen." },
         }
       : undefined,
   });

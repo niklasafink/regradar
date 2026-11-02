@@ -53,6 +53,15 @@ Prüfe in `web/lib/live.json`, dass die beanstandeten Meldungen jetzt richtig zu
 - Steht im Prompt „Nur prüfen“, änderst du gar nichts und berichtest nur. Das ist der Fall, wenn das Arbeitsverzeichnis schon vorher Änderungen hatte.
 - Bist du bei einer Meldung unsicher, ob sie raus soll, ändere nichts. Nenne sie im Bericht als Entscheidung für Niklas.
 
+## Entscheidungen von Niklas
+
+Bei einer Live-QS kann Niklas auf der Freigabe-Seite in ein Textfeld schreiben, wie er offene Punkte entscheidet. Steht im Prompt ein Abschnitt „Entscheidungen von Niklas“, gilt:
+
+- Setze jede Entscheidung um, auch wenn du anders empfohlen hättest (z. B. Meldung rausnehmen, Frist oder Rahmenwerk ändern, Punkt als erledigt behandeln). Nutze dafür dieselben Wege wie bei eigenen Korrekturen.
+- Ein so entschiedener Punkt ist nicht mehr offen. Im Bericht steht er als „• **Meldung**: wie entschieden …, umgesetzt.“
+- Ist eine Entscheidung unklar oder lässt sie sich nicht umsetzen, ändere nichts daran und nenne sie im Bericht mit dem Grund in einem Satz.
+- Im Modus „Nur prüfen“ setzt du nichts um und nennst die Entscheidungen als noch nicht umgesetzt.
+
 ## Ergebnis
 
 Schreibe zum Schluss `scraper/data/newsletter_qa_result.json`:

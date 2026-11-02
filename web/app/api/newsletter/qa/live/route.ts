@@ -63,7 +63,12 @@ export async function POST(request: Request) {
   // Läuft schon einer (Doppelklick), nur dessen Stand zeigen.
   if (!active(await readLive())) {
     const now = new Date().toISOString();
-    await writeLive({ status: "queued", requestedAt: now, updatedAt: now, step: "Wartet auf den Start (maximal eine Minute)" });
+    const note = (body.get("note") ?? "").trim().slice(0, 2000);
+    await writeLive({
+      status: "queued", requestedAt: now, updatedAt: now,
+      step: "Wartet auf den Start (maximal eine Minute)",
+      ...(note ? { note } : {}),
+    });
   }
 
   const statusUrl = `/api/newsletter/qa/live?status=1&token=${encodeURIComponent(token)}`;

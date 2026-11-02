@@ -162,7 +162,7 @@ def revert(tracked: Set[str], untracked: Set[str]) -> None:
             pass
 
 
-def run_claude(pending: List[dict], check_only: bool, live: bool = False) -> Tuple[bool, bool, str, str]:
+def run_claude(pending: List[dict], check_only: bool, live: bool = False, note: str = "") -> Tuple[bool, bool, str, str]:
     """(gelaufen, nichts offen, Bericht, Detail für das Log)."""
     exe = shutil.which("claude") or ("/usr/local/bin/claude" if os.path.exists("/usr/local/bin/claude") else None)
     if not exe:
@@ -182,6 +182,11 @@ def run_claude(pending: List[dict], check_only: bool, live: bool = False) -> Tup
         if check_only else
         "Modus: Prüfen und beheben."
     )
+    if note:
+        mode += (
+            "\n\nEntscheidungen von Niklas zu dieser QS (Abschnitt „Entscheidungen von Niklas“ "
+            "der Anweisung, sie haben Vorrang vor deinen Empfehlungen):\n" + note
+        )
     prompt = (
         "Du arbeitest im Projekt Regulatory Radar (Arbeitsverzeichnis = Repo-Root). "
         "Heute ist {today}. Führe die Newsletter-QS nach der folgenden Anweisung aus. "
@@ -334,7 +339,7 @@ def main_live() -> int:
     try:
         live_report("running", "QS startet")
         try:
-            rc = main(["--force", "--live"])
+            rc = main(["--force", "--live"], note=str(live.get("note") or "").strip())
         except Exception as e:  # noqa: BLE001 - jede Störung soll auf der Seite landen
             live_report("failed", "Fehler: {}".format(str(e)[:200]))
             raise
@@ -347,7 +352,7 @@ def main_live() -> int:
         shutil.rmtree(LOCK_DIR, ignore_errors=True)
 
 
-def main(argv: List[str]) -> int:
+def main(argv: List[str], note: str = "") -> int:
     live = "--live" in argv
     if "--live" in argv and "--force" not in argv:
         return main_live()
@@ -356,13 +361,13 @@ def main(argv: List[str]) -> int:
         log("QS läuft bereits")
         return 0
     try:
-        return _main(argv, live)
+        return _main(argv, live, note)
     finally:
         if not live:
             shutil.rmtree(LOCK_DIR, ignore_errors=True)
 
 
-def _main(argv: List[str], live: bool) -> int:
+def _main(argv: List[str], live: bool, note: str = "") -> int:
     now = dt.datetime.now(dt.timezone.utc)
     slot = current_slot(now).isoformat().replace("+00:00", ".000Z")
     force = "--force" in argv
@@ -399,7 +404,7 @@ def _main(argv: List[str], live: bool) -> int:
 
     if live:
         live_report("running", "Prüfe {} Meldungen …".format(len(pending)))
-    ok_run, ok, report, detail = run_claude(pending, check_only, live)
+    ok_run, ok, report, detail = run_claude(pending, check_only, live, note)
     if not ok_run:
         log(detail)
         revert(*(s - b for s, b in zip(git_changes(), (before_tracked, before_untracked))))
