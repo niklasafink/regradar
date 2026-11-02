@@ -173,22 +173,20 @@
     "2026-11-01"
    ],
    "keys": [
-    "answer-to-the-public-consultation-institutional-money-market-funds-association-i",
     "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le",
     "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur"
    ],
-   "hook": "Geldmarktfonds müssen ihre Liquiditätspuffer stärken, um Marktschocks besser abzufedern.",
-   "folge": "Die CSSF fordert von Geldmarktfonds höhere wöchentliche Liquiditätsniveaus und verbesserte Risikomanagementpraktiken, um die Resilienz gegenüber Marktstress zu erhöhen. Institute müssen dies innerhalb von drei Monaten umsetzen.",
+   "hook": "Geldmarktfonds müssen ihre Liquiditätspuffer stärken, um künftigen Marktstress besser abzufedern.",
+   "folge": "Die CSSF fordert von Geldmarktfonds höhere Liquiditätsniveaus und verbesserte Risikomanagementpraktiken. Institute müssen ihre Prozesse innerhalb von drei Monaten anpassen, um die neuen Erwartungen zu erfüllen.",
    "cover": "CSSF: Geldmarktfonds brauchen höhere Liquiditätspuffer",
    "zeilen": [
-    "EIOPA: Vereinfachte Taxonomie-Offenlegungen für Versicherer, Fokus auf Anpassungs-KPI"
+    "EIOPA: Vereinfachung der Taxonomie-Offenlegungen für Versicherer durch gezielte KPI-Änderungen"
    ],
-   "frage": "Wie stellen Sie sicher, dass Ihre Geldmarktfonds auch in Stressphasen ausreichend liquide bleiben?",
+   "frage": "Wie stellen Sie sicher, dass Ihre Geldmarktfonds auch unter Stress die geforderten Liquiditätsniveaus halten?",
    "top": "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le",
    "kern": {
-    "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le": "Die CSSF hat finale Leitlinien für Geldmarktfonds veröffentlicht, die höhere wöchentliche Liquiditätsniveaus und verbesserte Risikomanagementpraktiken innerhalb von drei Monaten fordern.",
-    "answer-to-the-public-consultation-institutional-money-market-funds-association-i": "Die Institutional Money Market Funds Association (IMMFA) hat eine Antwort auf eine öffentliche Konsultation eingereicht, deren Inhalt und Relevanz für Finanzunternehmen ohne weitere Informationen nicht beurteilbar sind.",
-    "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur": "Die EIOPA hat der EU-Kommission finale Vorschläge zur Vereinfachung der Taxonomie-Offenlegungen für Versicherer übermittelt, um Transparenz und Vergleichbarkeit zu verbessern und den Fokus auf den Adaptation Underwriting KPI zu legen."
+    "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le": "Die CSSF hat finale Leitlinien zu wöchentlichen Liquiditätsniveaus und Risikomanagementpraktiken für Geldmarktfonds veröffentlicht, die innerhalb von drei Monaten umzusetzen sind.",
+    "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur": "Die EIOPA empfiehlt der EU-Kommission, die Taxonomie-Offenlegungen für Versicherer durch gezielte Änderungen am Underwriting KPI und Vereinfachungen bei der Konzernberichterstattung zu verbessern."
    },
    "doppelt": [],
    "fmt": 5,
