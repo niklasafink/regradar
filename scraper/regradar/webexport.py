@@ -668,6 +668,9 @@ NOISE = re.compile(
     # einzelner Verbände ("Answer to the public consultation – IMMFA") als
     # eigene Dokumente — ebenfalls Eingaben Dritter.
     r"answer to the public consultation|"
+    # QA-Prüfung 02.11.2026: Urteile zur Flugverbotsliste einzelner
+    # Fluggesellschaften (C-482/24 P) betreffen keine Pflichten der Institute.
+    r"flight ban list|flugverbotsliste|"
     # Öffentlicher Sektor ohne Bezug zu Instituten (BfDI-Informationsfreiheit,
     # Cybersicherheitsprogramme der Bundesverwaltung).
     r"informationsfreiheit|bundestransparenzgesetz|cybersicherheit der bundesverwaltung", re.IGNORECASE)
@@ -816,6 +819,17 @@ TAX_ONLY = re.compile(
     r"verrechnungspreis|transfer pricing|\bvat\b|value added tax|"
     r"doppelbesteuerung|steueränderungsgesetz|jahressteuergesetz", re.IGNORECASE)
 
+# Sanktionslisten-Pflege (Nutzerentscheidung 02.11.2026): Durchführungs-
+# verordnungen zu Sanktionsregimen nehmen nur Personen auf, streichen sie oder
+# ändern ihre Angaben — das übernehmen die Screening-Listen der Institute
+# automatisch. Neue Pakete und inhaltliche Änderungen kommen als Verordnung
+# des Rates und bleiben Updates.
+SANCTIONS_LISTING = re.compile(
+    r"^\s*(durchführungsverordnung|commission implementing regulation|"
+    r"council implementing regulation|implementing regulation)\b[\s\S]*"
+    r"(restriktive[rn]? maßnahmen|spezifische beschränkungen|restrictive measures|"
+    r"specific restrictions)", re.IGNORECASE)
+
 # Vertragsgesetze ("Gesetz zu dem Abkommen/der Vereinbarung …") ratifizieren
 # Vereinbarungen zwischen Staaten bzw. Behörden. Pflichten der Institute
 # entstehen erst durch das Umsetzungsgesetz, das eigens erfasst wird.
@@ -845,6 +859,8 @@ def _classify(text: str, forced: Optional[str] = None,
     if source_id in LEGISLATION_SOURCES and OFFTOPIC_DE.search(title if title is not None else text):
         return None
     if TAX_ONLY.search(title if title is not None else text):
+        return None
+    if SANCTIONS_LISTING.search(title if title is not None else text):
         return None
     if source_id in LEGISLATION_SOURCES and TREATY_LAW.search(title if title is not None else text):
         return None

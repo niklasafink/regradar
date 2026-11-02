@@ -667,6 +667,34 @@ class QaSweepSept2026(unittest.TestCase):
         from regradar.webexport import _classify
         self.assertIsNone(_classify("Consultation paper on the reporting framework under EMIR - Reply form"))
 
+    def test_sanctions_listing_updates_are_noise(self):
+        """Nutzerentscheidung 02.11.2026: reine Listen-Änderungen zu Sanktions-
+        regimen sind kein Update, neue Pakete (Verordnung des Rates) schon."""
+        from regradar.webexport import _classify
+        for title in (
+            "Durchführungsverordnung (EU) 2026/2384 der Kommission vom 21. Oktober 2026 zur 363. Änderung "
+            "der Verordnung (EG) Nr. 881/2002 des Rates über die Anwendung bestimmter spezifischer "
+            "restriktiver Maßnahmen gegen bestimmte Personen und Organisationen, die mit den ISIL "
+            "(Da’esh)- und Al-Qaida-Organisationen in Verbindung stehen",
+            "Durchführungsverordnung (EU) 2026/2388 der Kommission vom 21. Oktober 2026 zur Änderung der "
+            "Verordnung (EG) Nr. 1210/2003 des Rates über bestimmte spezifische Beschränkungen in den "
+            "wirtschaftlichen und finanziellen Beziehungen zu Irak",
+            "Durchführungsverordnung (EU) 2026/2313 des Rates vom 13. Oktober 2026 zur Durchführung der "
+            "Verordnung (EG) Nr. 765/2006 über restriktive Maßnahmen angesichts der Lage in Belarus",
+        ):
+            self.assertIsNone(_classify(title, source_id="eurlex", title=title), title)
+        package = ("Verordnung (EU) 2026/506 des Rates vom 23. April 2026 zur Änderung der Verordnung "
+                   "(EU) Nr. 833/2014 über restriktive Maßnahmen angesichts der Handlungen Russlands, "
+                   "die die Lage in der Ukraine destabilisieren")
+        self.assertIsNotNone(_classify(package, source_id="eurlex", title=package))
+
+    def test_flight_ban_list_judgment_is_noise(self):
+        from regradar.webexport import _classify
+        self.assertIsNone(_classify(
+            "Judgment of the Court in Case C-482/24 P Global 8 Airlines v Commission "
+            "Restrictive measures: the inclusion, by the Commission, of aircraft on a flight ban "
+            "list is an act that may be challenged before the EU Courts", source_id="curia"))
+
     def test_third_party_consultation_answer_is_noise(self):
         """QA-Prüfung 02.11.2026: CSSF-Dokument mit der Konsultationsantwort
         eines Verbands (IMMFA) stand als Update im Newsletter."""
