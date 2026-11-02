@@ -1,43 +1,5 @@
 {
  "posts": {
-  "2026-10-19": {
-   "window": [
-    "2026-10-16",
-    "2026-10-17",
-    "2026-10-18"
-   ],
-   "keys": [
-    "amendments-to-g-sib-framework-to-address-window-dressing",
-    "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet",
-    "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat",
-    "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
-    "global-systemically-important-banks-methodology-review",
-    "new-q-as-available",
-    "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s"
-   ],
-   "hook": "Bilanzkosmetik hat ein Ende: Der Basler Ausschuss ändert die Berechnung der G-SIB-Scores.",
-   "folge": "Ab 01.01.2030 müssen Banken Jahresdurchschnittswerte statt Stichtagswerte für G-SIB-Indikatoren melden. Das verhindert Manipulationen und beeinflusst Kapitalanforderungen.",
-   "cover": "BCBS: G-SIB-Scores künftig mit Jahresdurchschnittswerten",
-   "zeilen": [
-    "ESMA: T+1-Abwicklung bis 11.10.2027 umsetzen, neuer Regulierungsrahmen ist vollständig",
-    "ESMA: Emittenten können Offenlegung von Insiderinformationen unter bestimmten Bedingungen aufschieben",
-    "BSI: Cybersicherheitsanforderungen für Produkte mit digitalen Elementen ab Dezember 2027"
-   ],
-   "frage": "Wie stellen Sie sicher, dass Ihre Daten für die G-SIB-Berechnung manipulationssicher sind?",
-   "top": "amendments-to-g-sib-framework-to-address-window-dressing",
-   "kern": {
-    "new-q-as-available": "Die ESMA hat neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR veröffentlicht, die ab dem 16.10.2026 für Klarheit bei Compliance-Pflichten sorgen.",
-    "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s": "Wertpapierfirmen müssen bis zum 11.10.2027 die technischen Vorbereitungen für die T+1-Abwicklung abschließen und ab dem 07.12.2026 neue Anforderungen an Allokationen und Bestätigungen erfüllen.",
-    "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa": "Die überarbeiteten CSDR-Leitlinien der ESMA schreiben Wertpapierfirmen die Nutzung elektronischer, standardisierter Kommunikationskanäle für Allokationen und Bestätigungen vor.",
-    "final-report-on-the-mar-guidelines-on-delay-in-the-disclosure-of-inside-informat": "Die ESMA präzisiert in überarbeiteten MAR-Leitlinien die Bedingungen, unter denen Emittenten die Offenlegung von Insiderinformationen aufschieben dürfen, um Rechtssicherheit zu erhöhen.",
-    "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet": "Das BSI wird ab Dezember 2027 die zentrale Behörde für Cybersicherheit und überwacht IT-Produkte mit digitalen Elementen gemäß dem CRA-Durchführungsgesetz.",
-    "amendments-to-g-sib-framework-to-address-window-dressing": "Der Basler Ausschuss ändert das G-SIB-Rahmenwerk, sodass Banken ab dem 01.01.2030 Jahresdurchschnittswerte für Indikatoren melden und der Schwellenwert ab dem 01.01.2027 auf 350 Mrd. EUR steigt.",
-    "global-systemically-important-banks-methodology-review": "Der Basler Ausschuss konsultiert bis zum 14.01.2027 eine Überarbeitung der G-SIB-Methodik, um die Behandlung grenzüberschreitender Engagements innerhalb der Europäischen Bankenunion zu formalisieren."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-20": {
    "window": [
     "2026-10-19"
@@ -86,29 +48,25 @@
     "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
     "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
     "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u",
-    "durchfuehrungsverordnung-eu-2026-2384-der-kommission-vom-21-oktober-2026-zur-363",
-    "durchfuehrungsverordnung-eu-2026-2388-der-kommission-vom-21-oktober-2026-zur-aen",
     "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
     "reporting-instructions-midas-system"
    ],
-   "hook": "MiCA-Compliance wird konkret: Die ESMA veröffentlicht detaillierte Reporting-Anweisungen für Krypto-Assets.",
-   "folge": "Unternehmen, die Krypto-Assets anbieten, müssen ihre Systeme anpassen, um Daten in spezifischen JSON-Formaten über das MIDAS-System einzureichen. Dies betrifft die Aufzeichnung von Krypto-Assets und Orderbüchern.",
-   "cover": "ESMA: Reporting-Anweisungen für Krypto-Assets",
+   "hook": "Österreichs Immobilienmarkt wird für Banken teurer: Die BaFin erkennt den Systemrisikopuffer an.",
+   "folge": "Die BaFin wendet den österreichischen Systemrisikopuffer für Gewerbeimmobilienkredite reziprok an. Institute müssen diesen Puffer schrittweise bis Juli 2027 auf 3,5 % erhöhen, wenn ihre Risikopositionen in Österreich 100 Mio. Euro übersteigen.",
+   "cover": "BaFin: Österreichischer Kapitalpuffer für Immobilienkredite steigt",
    "zeilen": [
-    "BaFin: Österreichischer Kapitalpuffer für Gewerbeimmobilienkredite steigt bis 01.07.2027 auf 3,5 %",
-    "ESMA: Nationale Behörden setzen MiCA-Leitlinien zu Marktmisbrauch bis 30.09.2026 um",
-    "ESMA: EU T+1 Umstellung wird im Q4 2026 erneut auf Bankenbereitschaft geprüft"
+    "ESMA: Compliance-Tabelle zeigt MiCA-Umsetzung bei Marktmisbrauch in der EU",
+    "ESMA: Reporting-Anweisungen für Krypto-Assets im MIDAS-System veröffentlicht",
+    "ESMA: EU T+1 Koordinierungsausschuss prüft Banken-Bereitschaft im Q4 2026"
    ],
-   "frage": "Sind Ihre Systeme bereit, Krypto-Asset-Daten im JSON-Format an die ESMA zu melden?",
-   "top": "reporting-instructions-midas-system",
+   "frage": "Wie stellen Sie sicher, dass grenzüberschreitende Kapitalpuffer korrekt angewendet werden?",
+   "top": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
    "kern": {
-    "compliance-table-on-the-guidelines-on-market-abuse-under-mica": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht, die zeigt, welche nationalen Behörden diese bis zum 30.09.2026 einhalten werden.",
-    "reporting-instructions-midas-system": "Die ESMA hat detaillierte Anweisungen für das Reporting von Krypto-Assets und Orderbüchern über das MIDAS-System in JSON-Formaten veröffentlicht.",
-    "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u": "Die ESMA delegiert die Befugnis zur Ablehnung von Registrierungsanträgen kleiner ESG-Ratinganbieter an ihren Vorsitzenden, um den Prozess effizienter zu gestalten.",
-    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026": "Der EU T+1 Koordinierungsausschuss hat im September 2026 die Fortschritte bei der T+1-Migration erörtert und plant eine erneute Prüfung der Bankenbereitschaft im vierten Quartal 2026.",
-    "durchfuehrungsverordnung-eu-2026-2384-der-kommission-vom-21-oktober-2026-zur-363": "Die EU hat die Liste der mit ISIL (Da’esh) und Al-Qaida verbundenen Personen aktualisiert, was sofortige Anpassungen in den Compliance-Systemen erfordert.",
-    "durchfuehrungsverordnung-eu-2026-2388-der-kommission-vom-21-oktober-2026-zur-aen": "Die EU hat die Liste der Personen und Organisationen für Irak-Sanktionen aktualisiert, was sofortige Anpassungen in den Compliance-Systemen erfordert.",
-    "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe": "Die BaFin erkennt den österreichischen sektoralen Systemrisikopuffer für Gewerbeimmobilienkredite an, der schrittweise bis zum 01.07.2027 auf 3,5 % erhöht wird."
+    "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe": "Die BaFin erkennt den österreichischen Systemrisikopuffer für Gewerbeimmobilienkredite an, der schrittweise bis 01.07.2027 auf 3,5 % steigt und für Institute mit über 100 Mio. Euro Risikopositionen in Österreich gilt.",
+    "compliance-table-on-the-guidelines-on-market-abuse-under-mica": "Die ESMA hat eine Compliance-Tabelle veröffentlicht, die zeigt, welche nationalen Behörden die MiCA-Leitlinien zu Marktmisbrauch einhalten oder dies bis spätestens 30.09.2026 beabsichtigen.",
+    "reporting-instructions-midas-system": "Die ESMA hat technische Anweisungen für das Reporting von Krypto-Assets und Orderbüchern über das MIDAS-System veröffentlicht, die Unternehmen zur Anpassung ihrer internen Systeme verpflichten.",
+    "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u": "Die ESMA delegiert die Ablehnung von Registrierungsanträgen kleiner ESG-Ratinganbieter an ihren Vorsitzenden, um den Prozess effizienter zu gestalten.",
+    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026": "Der EU T+1 Koordinierungsausschuss erwartet die Veröffentlichung geänderter RTS zur Abwicklungsdisziplin und prüft im Q4 2026 die T+1-Bereitschaft ausgewählter Banken."
    },
    "doppelt": [],
    "fmt": 5,
