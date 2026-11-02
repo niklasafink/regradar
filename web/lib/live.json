@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:08:28Z",
+  "generated_at": "2026-11-02T08:45:57Z",
   "updates": {
     "emir": [
       {
@@ -464,25 +464,6 @@
           "de": "Meldung",
           "en": "News"
         },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA schlägt Vereinfachungen für die EU-Taxonomie-Berichterstattung vor",
-          "en": "ESMA proposes simpler EU Taxonomy reporting"
-        },
-        "sl": "esma-proposes-simpler-eu-taxonomy-reporting",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht mit technischem Rat an die Europäische Kommission zur Vereinfachung der wichtigsten Leistungsindikatoren (KPIs) gemäß der Taxonomie-Offenlegungs-Delegierten Verordnung veröffentlicht.\n\nDie ESMA empfiehlt, den obligatorischen KPI für Betriebsausgaben (OpEx) auf nicht-aktivierte Forschungs- und Entwicklungsausgaben zu beschränken. Zudem schlägt sie eine einfachere Taxonomie-Berichterstattung auf Gruppenebene vor, einschließlich der Abschaffung des gewichteten Durchschnitts-KPI, sowie gezielte Maßnahmen zur Verhältnismäßigkeit, Klarheit und Benutzerfreundlichkeit der Offenlegungen. Diese Vorschläge zielen darauf ab, die Berichterstattung auf entscheidungsrelevante Informationen zu konzentrieren und gleichzeitig die Relevanz, Vergleichbarkeit und Zuverlässigkeit der Taxonomie-Offenlegungen zu wahren.\n\nDer technische Rat wurde an die Europäische Kommission übermittelt, die ihn bei ihrer Überprüfung der Taxonomie-Offenlegungs-Delegierten Verordnung berücksichtigen wird.",
-          "en": "ESMA has published its Final Report providing technical advice to the European Commission on simplifying key performance indicators (KPIs) under the Taxonomy Disclosures Delegated Act.\n\nESMA recommends narrowing the mandatory operating expenditure (OpEx) KPI to non-capitalised research and development expenditure. It also proposes simpler group Taxonomy reporting, including removing the weighted-average KPI, and targeted measures to make disclosures more proportionate, clearer, and easier to use. These proposals aim to focus reporting on decision-useful information while preserving the relevance, comparability, and reliability of Taxonomy disclosures.\n\nThe technical advice has been submitted to the European Commission for consideration in its review of the Taxonomy Disclosures Delegated Act."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-proposes-simpler-eu-taxonomy-reporting",
-        "imp": "medium"
-      },
-      {
-        "d": "29.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
         "src": "eba.europa.eu",
         "ti": {
           "de": "EBA empfiehlt Vereinfachungen bei Taxonomie-Offenlegungen",
@@ -495,6 +476,26 @@
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-advises-targeted-simplifications-taxonomy-disclosures",
         "imp": "medium"
+      },
+      {
+        "d": "29.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Technischer Rat der ESMA zu ausgewählten KPIs der EU-Taxonomie-Offenlegungsverordnung",
+          "en": "ESMA Technical Advice on selected KPIs under the Taxonomy Disclosures Delegated Act"
+        },
+        "sl": "final-report-on-technical-advice-on-selected-kpis-under-the-taxonomy-disclosures",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht mit technischem Rat zu ausgewählten Leistungskennzahlen (KPIs) gemäß der Offenlegungs-Delegierten Verordnung zur EU-Taxonomie veröffentlicht. Dieser Bericht reagiert auf einen Aufruf der Europäischen Kommission und enthält Empfehlungen zur Überarbeitung des OpEx-KPI, zur freiwilligen Nutzung von OpEx durch Finanzunternehmen, zur Konzern-Taxonomie-Berichterstattung und zu weiteren möglichen Vereinfachungen.\n\nDie Empfehlungen betreffen die Berichterstattung über umweltverträgliche Wirtschaftsaktivitäten und sollen die Anwendung der EU-Taxonomie erleichtern. Finanzunternehmen und andere berichtspflichtige Unternehmen sollten die vorgeschlagenen Änderungen und Vereinfachungen prüfen, um ihre Offenlegungspflichten effizienter zu erfüllen. Die Anpassungen sind insbesondere für Unternehmen relevant, die bereits unter die Corporate Sustainability Reporting Directive (CSRD) fallen oder fallen werden.\n\nDer Bericht berücksichtigt das Feedback aus einer öffentlichen Konsultation und dient als Grundlage für mögliche zukünftige Änderungen der Delegierten Verordnung (EU) 2021/2178 (Disclosures Delegated Act) und anderer relevanter Rechtsakte.",
+          "en": "ESMA has published its final report providing technical advice on selected Key Performance Indicators (KPIs) under the Taxonomy Disclosures Delegated Act. This report responds to a call for advice from the European Commission and includes recommendations on revising the OpEx KPI, the voluntary use of OpEx by financial undertakings, group Taxonomy reporting, and other potential simplifications.\n\nThe recommendations concern the reporting of environmentally sustainable economic activities and aim to facilitate the application of the EU Taxonomy. Financial undertakings and other reporting entities should review the proposed changes and simplifications to comply with their disclosure obligations more efficiently. The adjustments are particularly relevant for companies already subject to or soon to be subject to the Corporate Sustainability Reporting Directive (CSRD).\n\nThe report incorporates feedback from a public consultation and serves as a basis for potential future amendments to Delegated Regulation (EU) 2021/2178 (Disclosures Delegated Act) and other relevant legal acts."
+        },
+        "url": "https://www.esma.europa.eu/sites/default/files/2026-10/ESMA32-846262651-5927_Final_Report_on_Technical_Advice_selected_Taxonomy_KPIs.pdf",
+        "imp": "medium",
+        "refnum": "ESMA32-846262651-5927"
       },
       {
         "d": "01.07.2026",
@@ -556,26 +557,6 @@
             "d": "07.07.2026"
           }
         ]
-      },
-      {
-        "d": "24.06.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
-          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
-        },
-        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
-        "s": {
-          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
-          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
-        "imp": "medium",
-        "refnum": "T-77/24"
       }
     ],
     "mar": [
