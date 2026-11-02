@@ -412,8 +412,6 @@ def _main(argv: List[str], live: bool) -> int:
             state["attempts"], detail[:500])
 
     commit = info.get("commit")
-    if ok_run:
-        report += "\n\nTechnik: {}".format(detail)
     if ok_run and not check_only:
         if live:
             live_report("running", "Übernehme Korrekturen (Tests, Export, Push) …")
@@ -422,9 +420,7 @@ def _main(argv: List[str], live: bool) -> int:
             report += "\n\n" + note
         ok = ok and applied
         if sha:
-            _, stat = run(["git", "show", "--stat", "--format=", sha], 30)
-            files = [ln.split("|")[0].strip() for ln in stat.splitlines() if "|" in ln]
-            report += "\n\nCode-Änderungen (Commit {}): {}".format(sha[:8], ", ".join(files))
+            report += "\n\nKorrekturen eingespielt (Commit {}).".format(sha[:8])
             log("Korrekturen gepusht ({}), warte auf Deploy …".format(sha[:8]))
             if live:
                 live_report("running", "Warte auf den Deploy der Korrekturen …")

@@ -215,10 +215,10 @@ export async function sendApprovalRequest(
   const qaHtml = qa
     ? `<div style="border:1px solid ${qa.ok ? "#bbf7d0" : "#fecaca"};background:${qa.ok ? "#f0fdf4" : "#fef2f2"};border-radius:8px;padding:12px 16px;margin:0 0 20px;font-size:13px;line-height:1.5">
          <strong>${qaTitle}</strong>
-         <div style="white-space:pre-wrap;margin-top:6px">${escapeHtml(qa.text)}</div>
+         <div style="white-space:pre-wrap;margin-top:6px">${escapeHtml(qa.text).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</div>
        </div>`
     : "";
-  const qaText = qa ? `\n${qaTitle}:\n${qa.text}\n` : "";
+  const qaText = qa ? `\n${qaTitle}:\n${qa.text.replace(/\*\*(.+?)\*\*/g, "$1")}\n` : "";
 
   const { error } = await resend.emails.send({
     ...senderFields(),
