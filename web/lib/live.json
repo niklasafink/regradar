@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T09:01:28Z",
+  "generated_at": "2026-11-02T15:09:49Z",
   "updates": {
     "emir": [
       {
@@ -318,6 +318,85 @@
         "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18772",
         "imp": "medium",
         "refnum": "Ares(2026)6942470"
+      }
+    ],
+    "crr3": [
+      {
+        "d": "02.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "IPU Quarterly Assessment: Neue Rechtsgrundlage im KWG",
+          "en": "IPU Quarterly Assessment: New Legal Basis in KWG"
+        },
+        "sl": "ipu-quarterly-assessment-neue-rechtsgrundlage",
+        "s": {
+          "de": "Die BaFin weist darauf hin, dass die Meldepflicht für das IPU Quarterly Assessment seit dem 1. April 2026 nicht mehr auf ihrer Anordnung beruht, sondern direkt in § 2g Absatz 8 KWG verankert ist. Inhalt und Meldeschwellen des Assessments bleiben unverändert.\n\nDas IPU Quarterly Assessment dient der Überwachung der Vermögenswerte von Drittstaatengruppen in der EU. Meldepflichtig sind bestimmte EU-Mutterinstitute, Einzelinstitute der Drittstaatengruppe sowie das IPU nach seiner Errichtung. Die Berechnung und Überwachung der Schwellenwerte richten sich nach den EBA-Leitlinien (EBA/GL/2021/08).\n\nDie Meldung erfolgt vierteljährlich zu den Stichtagen 31. März, 30. Juni, 30. September und 31. Dezember, mit einer Meldefrist von zwei Monaten nach dem Stichtag. Institute reichen die Meldebögen weiterhin über das NExt-System der Deutschen Bundesbank ein, die die Daten im Auftrag der BaFin erhebt und auswertet.",
+          "en": "The BaFin points out that the reporting obligation for the IPU Quarterly Assessment no longer stems from its own order since April 1, 2026, but is directly enshrined in Section 2g (8) of the German Banking Act (KWG). The content and reporting thresholds of the assessment remain unchanged.\n\nThe IPU Quarterly Assessment serves to monitor the assets of third-country groups in the EU. Certain EU parent institutions and individual institutions of the third-country group, as well as the IPU after its establishment, are subject to reporting requirements. The calculation and monitoring of the thresholds are based on the EBA Guidelines (EBA/GL/2021/08).\n\nReporting is done quarterly on March 31, June 30, September 30, and December 31, with a reporting deadline of two months after the respective reference date. Institutions continue to submit the reporting forms via the Deutsche Bundesbank's NExt system, which collects and evaluates the data on behalf of the BaFin."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_02_ipu_quarterly_assessment_neue_rechtsgrundlage.html",
+        "imp": "low"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Allgemeinverfügung",
+          "en": "General decision"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken",
+          "en": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken"
+        },
+        "sl": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
+        "s": {
+          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte Gewerbeimmobilienkredite reziprok anwendet. Dieser Puffer wird schrittweise erhöht: von einem Prozent auf zwei Prozent mit Inkrafttreten der Allgemeinverfügung und ab dem 1. Juli 2027 auf dreieinhalb Prozent.\n\nDie Erhöhungen gelten für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im Bau- und Immobiliensektor in Österreich, klassifiziert nach NACE-Kodes F 41, F 43 und L 68. Institute müssen den Puffer auf Einzel-, teilkonsolidierter und konsolidierter Basis anwenden, sofern ihre in Österreich belegenen Risikopositionen 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB).\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte die Erhöhung des Puffersatzes begründet, da der ursprüngliche Satz von 1 % nicht ausreichte, um identifizierte Risiken abzudecken, und die Auswirkungen der CRR 3 auf Gewerbeimmobilienengagements geringer ausfielen als erwartet.",
+          "en": "The BaFin has issued a general decree reciprocally applying the sectoral systemic risk buffer for certain commercial real estate loans mandated by the Austrian Financial Market Authority (FMA). This buffer will be gradually increased: from one percent to two percent upon the general decree's entry into force, and to three and a half percent from July 1, 2027.\n\nThe increases apply to risk exposures to non-financial corporations (excluding non-profit housing associations) in the construction and real estate sector in Austria, classified under NACE codes F 41, F 43, and L 68. Institutions must apply the buffer on an individual, sub-consolidated, and consolidated basis, provided their risk exposures located in Austria exceed 100 million Euros. The BaFin thus follows a recommendation from the European Systemic Risk Board (ESRB).\n\nThe general decree enters into force one month after its public announcement. The FMA justified the increase in the buffer rate by stating that the original rate of 1% was insufficient to cover identified risks, and the impact of CRR 3 on commercial real estate exposures was less than expected."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20261021_anerkennung_kapitalpuffer_sys_risiken_at.html",
+        "imp": "high"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
+          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
+        },
+        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
+        "s": {
+          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
+          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
+        "imp": "medium"
+      },
+      {
+        "d": "11.09.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Technische Informationen für versicherungstechnische Rückstellungen und Eigenmittel (Solvency II) (32026R2041)",
+          "en": "Technical Information for Technical Provisions and Own Funds (Solvency II) (32026R2041)"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
+        "s": {
+          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung der Volatilitätsanpassung und die risikofreien Zinssätze für verschiedene Währungen definiert.\n\nDie Regelungen betreffen alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union, die der Solvency-II-Richtlinie unterliegen. Sie müssen die hier festgelegten technischen Parameter für ihre versicherungsmathematischen Berechnungen und die Ermittlung ihrer Solvenzkapitalanforderungen anwenden. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im gesamten EU-Binnenmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 30. September 2026. Die technischen Informationen sind für die Anwendung ab diesem Datum relevant.",
+          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the volatility adjustment and the risk-free interest rates for various currencies are defined.\n\nThe regulations apply to all insurance and reinsurance undertakings within the European Union that are subject to the Solvency II Directive. They must apply the technical parameters set out herein for their actuarial calculations and the determination of their Solvency Capital Requirements. This ensures a uniform and comparable valuation basis across the entire EU single market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 30 September 2026. The technical information is relevant for application from this date."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
+        "imp": "high",
+        "refnum": "32026R2041"
       }
     ],
     "luaifm": [
@@ -1153,85 +1232,6 @@
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2292",
         "imp": "low",
         "refnum": "32026R2292"
-      }
-    ],
-    "crr3": [
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken",
-          "en": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken"
-        },
-        "sl": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
-        "s": {
-          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte Gewerbeimmobilienkredite reziprok anwendet. Dieser Puffer wird schrittweise erhöht: von einem Prozent auf zwei Prozent mit Inkrafttreten der Allgemeinverfügung und ab dem 1. Juli 2027 auf dreieinhalb Prozent.\n\nDie Erhöhungen gelten für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im Bau- und Immobiliensektor in Österreich, klassifiziert nach NACE-Kodes F 41, F 43 und L 68. Institute müssen den Puffer auf Einzel-, teilkonsolidierter und konsolidierter Basis anwenden, sofern ihre in Österreich belegenen Risikopositionen 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB).\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte die Erhöhung des Puffersatzes begründet, da der ursprüngliche Satz von 1 % nicht ausreichte, um identifizierte Risiken abzudecken, und die Auswirkungen der CRR 3 auf Gewerbeimmobilienengagements geringer ausfielen als erwartet.",
-          "en": "The BaFin has issued a general decree reciprocally applying the sectoral systemic risk buffer for certain commercial real estate loans mandated by the Austrian Financial Market Authority (FMA). This buffer will be gradually increased: from one percent to two percent upon the general decree's entry into force, and to three and a half percent from July 1, 2027.\n\nThe increases apply to risk exposures to non-financial corporations (excluding non-profit housing associations) in the construction and real estate sector in Austria, classified under NACE codes F 41, F 43, and L 68. Institutions must apply the buffer on an individual, sub-consolidated, and consolidated basis, provided their risk exposures located in Austria exceed 100 million Euros. The BaFin thus follows a recommendation from the European Systemic Risk Board (ESRB).\n\nThe general decree enters into force one month after its public announcement. The FMA justified the increase in the buffer rate by stating that the original rate of 1% was insufficient to cover identified risks, and the impact of CRR 3 on commercial real estate exposures was less than expected."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20261021_anerkennung_kapitalpuffer_sys_risiken_at.html",
-        "imp": "high"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
-          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
-        },
-        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
-        "s": {
-          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
-          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
-        "imp": "medium"
-      },
-      {
-        "d": "11.09.2026",
-        "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Technische Informationen für versicherungstechnische Rückstellungen und Eigenmittel (Solvency II) (32026R2041)",
-          "en": "Technical Information for Technical Provisions and Own Funds (Solvency II) (32026R2041)"
-        },
-        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
-        "s": {
-          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung der Volatilitätsanpassung und die risikofreien Zinssätze für verschiedene Währungen definiert.\n\nDie Regelungen betreffen alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union, die der Solvency-II-Richtlinie unterliegen. Sie müssen die hier festgelegten technischen Parameter für ihre versicherungsmathematischen Berechnungen und die Ermittlung ihrer Solvenzkapitalanforderungen anwenden. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im gesamten EU-Binnenmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 30. September 2026. Die technischen Informationen sind für die Anwendung ab diesem Datum relevant.",
-          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the volatility adjustment and the risk-free interest rates for various currencies are defined.\n\nThe regulations apply to all insurance and reinsurance undertakings within the European Union that are subject to the Solvency II Directive. They must apply the technical parameters set out herein for their actuarial calculations and the determination of their Solvency Capital Requirements. This ensures a uniform and comparable valuation basis across the entire EU single market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 30 September 2026. The technical information is relevant for application from this date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
-        "imp": "high",
-        "refnum": "32026R2041"
-      },
-      {
-        "d": "31.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Informationen zur Datenverarbeitung bei Bestellungen von Verwaltern des Refinanzierungsregisters (KWG)",
-          "en": "BaFin Information on Data Processing for Appointments of Refinancing Register Administrators (KWG)"
-        },
-        "sl": "bestellungen-von-verwaltern-des-refinanzierungsregisters-und-stellvertretern-gem",
-        "s": {
-          "de": "Die BaFin informiert über die Verarbeitung personenbezogener Daten im Rahmen der Bestellung von Verwaltern und Stellvertretern des Refinanzierungsregisters gemäß §§ 22e ff. KWG. Die Datenverarbeitung erfolgt zur Prüfung der Eignung der betreffenden Person für diese Funktion.\n\nBetroffen sind Personen, die als Verwalter oder Stellvertreter des Refinanzierungsregisters vorgeschlagen oder beantragt werden. Die BaFin erhebt und verarbeitet hierfür Namen, Geburtsdatum, Adress- und Kontaktdaten sowie Informationen zur persönlichen Zuverlässigkeit, fachlichen Eignung und zu weiteren Tätigkeiten. Die Daten werden innerhalb der BaFin von zuständigen Mitarbeitern verarbeitet und nicht an Drittländer oder internationale Organisationen übermittelt.\n\nDie Speicherung der Daten erfolgt für zehn Jahre nach Ausscheiden aus der aufsichtsrechtlich relevanten Funktion oder nach erfolgtem Antrag/Vorschlag bei unterbliebener Funktionsübernahme. Betroffene Personen haben die Rechte gemäß DSGVO, einschließlich Auskunft, Berichtigung, Löschung und Widerspruch. Eine Nichtbereitstellung der notwendigen Daten führt dazu, dass der Antrag nicht bearbeitet werden kann.",
-          "en": "The BaFin provides information on the processing of personal data in connection with the appointment of administrators and deputies of the refinancing register in accordance with §§ 22e et seq. KWG. Data processing is carried out to assess the suitability of the person concerned for this function.\n\nThis affects individuals proposed or applying to be administrators or deputies of the refinancing register. For this purpose, BaFin collects and processes names, date of birth, address and contact details, as well as information on personal reliability, professional suitability, and other activities. The data is processed internally by BaFin's responsible employees and is not transferred to third countries or international organizations.\n\nData is stored for ten years after leaving the supervisory-relevant function or after an application/proposal has been made if the function is not taken up. Data subjects have rights under the GDPR, including access, rectification, erasure, and objection. Failure to provide the necessary data will result in the application not being processed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Anlage/Datenschutz/anlage_datenschutz_bestellungen_Refinanzierungsregisterverwalter_Kreditwesengesetz_ba.html",
-        "imp": "low"
       }
     ],
     "itsrep": [

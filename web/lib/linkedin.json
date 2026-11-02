@@ -193,6 +193,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-03": {
+   "window": [
+    "2026-11-02"
+   ],
+   "keys": [
+    "ipu-quarterly-assessment-neue-rechtsgrundlage"
+   ],
+   "hook": "Die Meldepflicht für das IPU Quarterly Assessment hat eine neue gesetzliche Grundlage im KWG.",
+   "folge": "Seit dem 01.04.2026 ist die Meldepflicht für das IPU Quarterly Assessment direkt in § 2g Absatz 8 KWG verankert. Institute müssen weiterhin vierteljährlich über das NExt-System der Deutschen Bundesbank melden.",
+   "cover": "BaFin: IPU Quarterly Assessment nun im KWG",
+   "zeilen": [],
+   "frage": "Wie stellen Sie sicher, dass alle relevanten Meldepflichten stets auf der aktuellen Rechtsgrundlage basieren?",
+   "top": "ipu-quarterly-assessment-neue-rechtsgrundlage",
+   "kern": {
+    "ipu-quarterly-assessment-neue-rechtsgrundlage": "Die Meldepflicht für das IPU Quarterly Assessment ist seit dem 01.04.2026 direkt in § 2g Absatz 8 KWG verankert, Inhalt und Meldeschwellen bleiben unverändert."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
