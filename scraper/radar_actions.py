@@ -87,7 +87,10 @@ def run_claude(item: dict, mode: str) -> Tuple[bool, Optional[dict], str]:
     model = os.environ.get("RADAR_ACTIONS_MODEL", "opus")
     cmd = [exe, "-p", prompt, "--output-format", "json", "--permission-mode", "acceptEdits",
            "--allowedTools", tools, "--max-turns", "120",
-           "--no-session-persistence", "--model", model]
+           "--no-session-persistence", "--model", model,
+           # Ohne ~/.claude: der globale Skill-Router ließ die QS am 29.10.2026
+           # nach einem Schritt mit einer Rückfrage enden.
+           "--setting-sources", "project,local", "--disable-slash-commands"]
     log("claude -p ({}, Modell {}) für {} …".format(mode, model, item["id"]))
     rc, out = run(cmd, CLAUDE_TIMEOUT)
     if rc != 0:

@@ -275,7 +275,10 @@ def claude_fix(sid: str, src: dict, run_output: str, errs: List[dict], rep: Repo
     model = os.environ.get("HEALTH_CLAUDE_MODEL", "sonnet")
     cmd = [exe, "-p", prompt, "--output-format", "json", "--permission-mode", "acceptEdits",
            "--allowedTools", CLAUDE_ALLOWED_TOOLS, "--max-turns", "60",
-           "--no-session-persistence", "--model", model]
+           "--no-session-persistence", "--model", model,
+           # Ohne ~/.claude: der globale Skill-Router ließ die QS am 29.10.2026
+           # nach einem Schritt mit einer Rückfrage enden.
+           "--setting-sources", "project,local", "--disable-slash-commands"]
     env = dict(os.environ)
     env["PATH"] = "/usr/local/bin:/usr/bin:/bin:" + env.get("PATH", "")
     rep.detail("claude -p läuft (Modell {}, max. 25 Min.) …".format(model))

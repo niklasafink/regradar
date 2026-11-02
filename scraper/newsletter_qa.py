@@ -207,7 +207,10 @@ def run_claude(pending: List[dict], check_only: bool, live: bool = False) -> Tup
     tools = CLAUDE_READONLY_TOOLS + ",Write" if check_only else CLAUDE_ALLOWED_TOOLS
     cmd = [exe, "-p", prompt, "--output-format", "json", "--permission-mode", "acceptEdits",
            "--allowedTools", tools, "--max-turns", "80" if live else "150",
-           "--no-session-persistence", "--model", model]
+           "--no-session-persistence", "--model", model,
+           # Ohne ~/.claude: der globale Skill-Router ließ die QS am 29.10.2026
+           # nach einem Schritt mit einer Rückfrage enden.
+           "--setting-sources", "project,local", "--disable-slash-commands"]
     log("claude -p läuft (Modell {}, {} Meldungen, {}) …".format(
         model, len(pending), "nur prüfen" if check_only else "prüfen und beheben"))
     rc, out = run(cmd, CLAUDE_TIMEOUT, extra_env=model_env)
