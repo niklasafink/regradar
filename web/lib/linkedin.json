@@ -1,25 +1,5 @@
 {
  "posts": {
-  "2026-10-20": {
-   "window": [
-    "2026-10-19"
-   ],
-   "keys": [
-    "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher"
-   ],
-   "hook": "Die BaFin plant, das Millionenkreditmeldewesen abzuschaffen und die Großkreditverordnung neu zu fassen.",
-   "folge": "Institute, die bisher Millionenkreditmeldungen abgeben mussten, müssen sich auf neue Regeln für Großkredite einstellen. Die Konsultation läuft bis zum 19.10.2026, die Änderungen treten zum 30.12.2026 in Kraft.",
-   "cover": "BaFin: Millionenkreditmeldewesen entfällt, GroKV neu",
-   "zeilen": [],
-   "frage": "Welche Auswirkungen erwarten Sie durch den Wegfall des Millionenkreditmeldewesens auf Ihre Prozesse?",
-   "top": "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher",
-   "kern": {
-    "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher": "Die BaFin konsultiert bis zum 19.10.2026 einen Entwurf zur Anpassung von Verordnungen, da das Millionenkreditmeldewesen zum 30.12.2026 entfällt und die Großkreditverordnung neu gefasst wird."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-21": {
    "window": [
     "2026-10-20"
