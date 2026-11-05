@@ -1,37 +1,5 @@
 {
  "posts": {
-  "2026-10-22": {
-   "window": [
-    "2026-10-21"
-   ],
-   "keys": [
-    "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
-    "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-    "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u",
-    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
-    "reporting-instructions-midas-system"
-   ],
-   "hook": "Österreichs Immobilienmarkt wird für Banken teurer: Die BaFin erkennt den Systemrisikopuffer an.",
-   "folge": "Die BaFin wendet den österreichischen Systemrisikopuffer für Gewerbeimmobilienkredite reziprok an. Institute müssen diesen Puffer schrittweise bis Juli 2027 auf 3,5 % erhöhen, wenn ihre Risikopositionen in Österreich 100 Mio. Euro übersteigen.",
-   "cover": "BaFin: Österreichischer Kapitalpuffer für Immobilienkredite steigt",
-   "zeilen": [
-    "ESMA: Compliance-Tabelle zeigt MiCA-Umsetzung bei Marktmisbrauch in der EU",
-    "ESMA: Reporting-Anweisungen für Krypto-Assets im MIDAS-System veröffentlicht",
-    "ESMA: EU T+1 Koordinierungsausschuss prüft Banken-Bereitschaft im Q4 2026"
-   ],
-   "frage": "Wie stellen Sie sicher, dass grenzüberschreitende Kapitalpuffer korrekt angewendet werden?",
-   "top": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
-   "kern": {
-    "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe": "Die BaFin erkennt den österreichischen Systemrisikopuffer für Gewerbeimmobilienkredite an, der schrittweise bis 01.07.2027 auf 3,5 % steigt und für Institute mit über 100 Mio. Euro Risikopositionen in Österreich gilt.",
-    "compliance-table-on-the-guidelines-on-market-abuse-under-mica": "Die ESMA hat eine Compliance-Tabelle veröffentlicht, die zeigt, welche nationalen Behörden die MiCA-Leitlinien zu Marktmisbrauch einhalten oder dies bis spätestens 30.09.2026 beabsichtigen.",
-    "reporting-instructions-midas-system": "Die ESMA hat technische Anweisungen für das Reporting von Krypto-Assets und Orderbüchern über das MIDAS-System veröffentlicht, die Unternehmen zur Anpassung ihrer internen Systeme verpflichten.",
-    "decision-on-delegating-to-the-esma-chair-the-refusal-of-registration-decisions-u": "Die ESMA delegiert die Ablehnung von Registrierungsanträgen kleiner ESG-Ratinganbieter an ihren Vorsitzenden, um den Prozess effizienter zu gestalten.",
-    "eu-t-1-coordination-committee-summary-of-conclusions-september-2026": "Der EU T+1 Koordinierungsausschuss erwartet die Veröffentlichung geänderter RTS zur Abwicklungsdisziplin und prüft im Q4 2026 die T+1-Bereitschaft ausgewählter Banken."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-10-23": {
    "window": [
     "2026-10-22"
