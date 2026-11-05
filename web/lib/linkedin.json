@@ -129,6 +129,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-06": {
+   "window": [
+    "2026-11-05"
+   ],
+   "keys": [
+    "consolidated-guidelines-consequential-amendments"
+   ],
+   "hook": "Der BCBS konsolidiert seine Leitlinien und fragt nach Ihrer Meinung zu den Folgeanpassungen.",
+   "folge": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat eine konsolidierte Version seiner Leitlinien veröffentlicht. Nun konsultiert er Folgeanpassungen am Basler Rahmenwerk, um Querverweise zu aktualisieren und Inhalte zu überführen. Stellungnahmen sind bis 21.12.2026 möglich.",
+   "cover": "BCBS: Konsolidierte Leitlinien und Folgeanpassungen",
+   "zeilen": [],
+   "frage": "Wie nutzen Sie die Leitlinien des BCBS in Ihrer täglichen Compliance-Arbeit?",
+   "top": "consolidated-guidelines-consequential-amendments",
+   "kern": {
+    "consolidated-guidelines-consequential-amendments": "Der BCBS hat eine konsolidierte Version seiner Leitlinien veröffentlicht und konsultiert bis 21.12.2026 Folgeanpassungen am Basler Rahmenwerk, um Querverweise zu aktualisieren und Inhalte zu überführen."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
