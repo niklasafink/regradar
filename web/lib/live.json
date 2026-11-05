@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T21:06:44Z",
+  "generated_at": "2026-11-05T21:10:11Z",
   "updates": {
     "emir": [
       {
@@ -437,6 +437,27 @@
         },
         "url": "https://www.bis.org/publ/bcbs_nl36.htm",
         "imp": "medium"
+      }
+    ],
+    "ebagov": [
+      {
+        "d": "05.11.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht überarbeitete Leitlinien zur internen Governance mit mehr Proportionalität",
+          "en": "EBA publishes revised Guidelines on internal governance, delivering greater proportionality"
+        },
+        "sl": "the-eba-publishes-revised-guidelines-on-internal-governance-delivering-greater-p",
+        "s": {
+          "de": "Die EBA hat ihre überarbeiteten Leitlinien zur internen Governance gemäß der Eigenkapitalrichtlinie (CRD) veröffentlicht. Diese Überarbeitung berücksichtigt die Änderungen durch CRD VI, die unter anderem eine Zuordnung von Pflichten und Verantwortlichkeiten für Mitglieder des Leitungsorgans und Inhaber von Schlüsselfunktionen sowie einen speziellen Governance-Rahmen für Drittlandszweigstellen einführt.\n\nDie Leitlinien präzisieren die internen Governance-Regelungen, einschließlich der Verantwortlichkeiten des Leitungsorgans, der Organisationsstrukturen, des Umgangs mit Interessenkonflikten (auch bei der Kombination von Vorsitz- und Exekutivfunktionen) und wesentlicher Aspekte der internen Kontrollrahmen. Sie verfolgen einen stärker proportionalen und risikobasierten Ansatz, um die Erwartungen an Größe, Art und Komplexität der Institute anzupassen. Die Änderungen zielen darauf ab, unnötige operative und Compliance-Belastungen zu reduzieren, während eine solide Governance im EU-Bankensektor gewährleistet bleibt.\n\nIm Vergleich zum Konsultationspapier wurden unter anderem der Detaillierungsgrad für die Zuordnung von Pflichten und individuellen Erklärungen reduziert, die Proportionalität für Drittlandszweigstellen erhöht, die Bestimmungen zu Interessenkonflikten vereinfacht und die Anforderungen an die Überwachung von Vielfalt und Inklusion weniger granular gestaltet.",
+          "en": "The EBA has published its revised Guidelines on internal governance under the Capital Requirements Directive (CRD). This revision reflects the changes introduced by CRD VI, which include a mapping of duties and responsibilities for members of the management body and key function holders, as well as a dedicated governance framework for third-country branches.\n\nThe Guidelines provide further clarity on internal governance arrangements, including the responsibilities of the management body, organisational structures, the management of conflicts of interest (including in relation to the combination of Chair and executive functions), and key aspects of internal control frameworks. They introduce a more proportionate and risk-based approach to governance requirements, ensuring that expectations remain aligned with institutions' size, nature, and complexity. The changes aim to reduce unnecessary operational and compliance burdens while safeguarding sound governance across the EU banking sector.\n\nCompared to the consultation paper, key changes in the final Guidelines include a reduced level of detail for the mapping of duties and individual statements, greater proportionality in provisions applicable to third-country branches, clearer and simpler provisions on conflicts of interest, and reduced granularity in requirements related to monitoring diversity and inclusion."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-revised-guidelines-internal-governance-delivering-greater-proportionality-and",
+        "imp": "high"
       }
     ],
     "crr3": [

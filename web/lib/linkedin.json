@@ -135,16 +135,20 @@
     "2026-11-05"
    ],
    "keys": [
-    "consolidated-guidelines-consequential-amendments"
+    "consolidated-guidelines-consequential-amendments",
+    "the-eba-publishes-revised-guidelines-on-internal-governance-delivering-greater-p"
    ],
-   "hook": "Der Basler Ausschuss konsolidiert seine Leitlinien, um die Zugänglichkeit zu verbessern.",
-   "folge": "Banken und Aufsichtsbehörden erhalten eine benutzerfreundlichere Struktur für die BCBS-Dokumente. Bis zum 21.12.2026 können Stellungnahmen zu den Folgeanpassungen eingereicht werden.",
-   "cover": "BCBS: Leitlinien konsolidiert, Rahmenwerk angepasst",
-   "zeilen": [],
-   "frage": "Wie bewerten Sie die Zugänglichkeit der aktuellen BCBS-Dokumente für Ihre tägliche Arbeit?",
-   "top": "consolidated-guidelines-consequential-amendments",
+   "hook": "Die EBA lockert die Governance-Regeln für Banken und Versicherer und passt sie an Größe und Komplexität an.",
+   "folge": "Die überarbeiteten EBA-Leitlinien zur internen Governance berücksichtigen CRD VI und reduzieren unnötige operative und Compliance-Belastungen. Institute müssen ihre internen Governance-Regelungen, Verantwortlichkeiten des Leitungsorgans und Kontrollrahmen anpassen.",
+   "cover": "EBA: Interne Governance-Leitlinien mit mehr Proportionalität",
+   "zeilen": [
+    "BCBS: Konsolidierung der Leitlinien und Konsultation zu Folgeanpassungen bis 21.12.2026"
+   ],
+   "frage": "Welche Governance-Anpassungen sind in Ihrem Institut durch die neuen EBA-Leitlinien am dringendsten?",
+   "top": "the-eba-publishes-revised-guidelines-on-internal-governance-delivering-greater-p",
    "kern": {
-    "consolidated-guidelines-consequential-amendments": "Der BCBS hat seine Leitlinien konsolidiert und konsultiert bis zum 21.12.2026 Folgeanpassungen am Basler Rahmenwerk zur Verbesserung der Zugänglichkeit."
+    "consolidated-guidelines-consequential-amendments": "Der BCBS hat konsolidierte Leitlinien veröffentlicht und konsultiert bis zum 21.12.2026 Folgeanpassungen am Basler Rahmenwerk zur Verbesserung der Zugänglichkeit.",
+    "the-eba-publishes-revised-guidelines-on-internal-governance-delivering-greater-p": "Die EBA hat überarbeitete Leitlinien zur internen Governance veröffentlicht, die einen proportionaleren Ansatz verfolgen und die Erwartungen an Institute anpassen."
    },
    "doppelt": [],
    "fmt": 5,
