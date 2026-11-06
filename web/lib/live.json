@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T19:11:29Z",
+  "generated_at": "2026-11-06T21:10:54Z",
   "updates": {
     "emir": [
       {
@@ -314,6 +314,241 @@
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7844",
         "imp": "low"
+      }
+    ],
+    "itsrep": [
+      {
+        "d": "06.11.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "The EBA outlines next steps on supervisory reporting simplification and extends implementation timelines following consultation feedback on the ITS",
+          "en": "The EBA outlines next steps on supervisory reporting simplification and extends implementation timelines following consultation feedback on the ITS"
+        },
+        "sl": "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-outlines-next-steps-supervisory-reporting-simplification-and-extends-implementation-timelines"
+      },
+      {
+        "d": "19.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Anpassung von Verordnungen nach Wegfall des Millionenkreditmeldewesens (Konsultation 10/2026)",
+          "en": "Adjustment of Regulations Following Discontinuation of Million Loan Reporting (Consultation 10/2026)"
+        },
+        "sl": "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher",
+        "s": {
+          "de": "Dieser Konsultationsentwurf der BaFin passt verschiedene Verordnungen an, nachdem das Millionenkreditmeldewesen nach § 14 KWG zum 30. Dezember 2026 entfällt. Die Großkredit- und Millionenkreditverordnung (GroMiKV) wird aufgehoben und durch eine neue Großkreditverordnung (GroKV) ersetzt. Zudem werden weitere Verordnungen, die auf das Millionenkreditmeldewesen Bezug nehmen, geändert oder aufgehoben.\n\nDie Änderungen betreffen insbesondere Institute, die bisher Millionenkreditmeldungen abgeben mussten. Die neue GroKV regelt Ausnahmen von der Obergrenze für Großkredite nach Art. 395 Abs. 1 CRR, Beschlussfassungspflichten der Geschäftsleiter bei Großkrediten und Meldungen zu Großkrediten. Dies soll den Wegfall der bisherigen Meldepflichten und die damit verbundenen Anpassungen im Aufsichtsrecht umsetzen.\n\nDie Konsultation läuft bis zum 19.10.2026. Die Änderungen treten mit Wirkung zum 30. Dezember 2026 in Kraft, dem Zeitpunkt der Streichung der Millionenkreditmeldepflichten im KWG.",
+          "en": "This BaFin consultation draft adapts various regulations following the discontinuation of the large exposure reporting requirement under Section 14 KWG as of December 30, 2026. The Large Exposure and Million Loan Regulation (GroMiKV) will be repealed and replaced by a new Large Exposure Regulation (GroKV). In addition, other regulations referring to the large exposure reporting system will be amended or repealed.\n\nThe changes primarily affect institutions that previously had to submit large exposure reports. The new GroKV regulates exemptions from the large exposure limit according to Art. 395 (1) CRR, decision-making obligations of managing directors for large exposures, and reporting requirements for large exposures. This is intended to implement the discontinuation of the previous reporting obligations and the associated adjustments in supervisory law.\n\nThe consultation runs until October 19, 2026. The changes will come into effect on December 30, 2026, the date on which the large exposure reporting obligations in the KWG are removed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_10_2026_entwurf_verordnung_anpassung_vorschriften_ba.html",
+        "imp": "medium"
+      },
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4",
+          "en": "EBA releases final technical package for reporting and Pillar 3 disclosure framework 4.4"
+        },
+        "sl": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
+        "s": {
+          "de": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht. Dieses Paket deckt die IFRS-18-Berichterstattung, ESG-Offenlegungen gemäß Säule 3 sowie weitere technische Anpassungen ab. Ziel ist es, die Berichterstattungskosten für Institute zu senken und die Einhaltung der Vorschriften zu erleichtern.\n\nDas Paket umfasst das Data Point Model (DPM), Validierungsregeln und XBRL-Taxonomien für neue oder geänderte Anforderungen. Dazu gehören aktualisierte Offenlegungspflichten zu ESG-Risiken, Eigenkapital und Schattenbanken sowie ein neues FINREP-Modul, das die IFRS-18-Anforderungen widerspiegelt. Auch technische Anpassungen für die Abwicklungsplanung, MREL-Entscheidungen und die Offenlegung gemäß Säule 3 sind enthalten, ebenso wie Korrekturen für die Liquiditätsberichterstattung von Drittlandzweigstellen und Vorlagen für die AMLA-Risikobewertung.\n\nDies ist die erste Phase der technischen Implementierung des 4.4-Rahmens; eine zweite Phase zur Vereinfachung der aufsichtsrechtlichen Berichterstattung wird Anfang 2027 erwartet. Das Paket berücksichtigt Rückmeldungen aus der Konsultation und enthält gezielte Verfeinerungen des Glossars im Rahmen des DPM 2.0. Die EBA hat zudem eine aktualisierte Liste bekannter DPM-Probleme und FAQs veröffentlicht, um die Implementierung zu unterstützen.",
+          "en": "The EBA has released the final technical package for version 4.4 of its reporting and Pillar 3 disclosure framework. This package covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to reduce institutions' reporting costs and facilitate their compliance.\n\nThe package includes the Data Point Model (DPM), validation rules, and XBRL taxonomies for new or amended requirements. These include updated disclosure requirements on ESG risks, equity, and shadow banking, as well as a new FINREP module reflecting IFRS 18 requirements. Technical amendments for resolution planning, MREL decisions, and Pillar 3 disclosures are also included, along with corrections for third-country branch liquidity reporting and templates for the AMLA risk assessment. \n\nThis is the first phase of the technical implementation of the 4.4 framework; a second phase for simplifying supervisory reporting is expected in early 2027. The package incorporates feedback from the consultation and includes targeted refinements to the DPM 2.0 glossary. The EBA has also published an updated list of known DPM issues and FAQs to support implementation."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-release-44-its-reporting-and-pillar-3-disclosure-framework",
+        "imp": "high"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
+          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
+        },
+        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
+          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
+        "imp": "low"
+      },
+      {
+        "d": "14.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
+          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
+        },
+        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
+          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
+        "imp": "medium"
+      }
+    ],
+    "securitisation": [
+      {
+        "d": "06.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "2026_7830 Geographical allocation of exposures arising from synthetic securitisations for the purposes of the Countercyclical Capital Buffer (CCB)",
+          "en": "2026_7830 Geographical allocation of exposures arising from synthetic securitisations for the purposes of the Countercyclical Capital Buffer (CCB)"
+        },
+        "sl": "2026-7830-geographical-allocation-of-exposures-arising-from-synthetic-securitisa",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7830"
+      },
+      {
+        "d": "22.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Politische Einigung zur Überarbeitung des EU-Verbriefungsrahmens erzielt",
+          "en": "Political Agreement Reached on Review of EU Securitisation Framework"
+        },
+        "sl": "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec",
+        "s": {
+          "de": "Die Europäische Kommission begrüßt die politische Einigung zwischen Parlament und Rat zur Überarbeitung des EU-Verbriefungsrahmens. Ziel ist es, Verbriefungsaktivitäten in der EU zu fördern und gleichzeitig die Finanzstabilität zu wahren.\n\nDie Einigung ist das erste legislative Ergebnis der Spar- und Investitionsunion (SIU). Sie soll die Kanalisierung von Ersparnissen in produktive Investitionen über Kapitalmärkte und das Bankensystem verbessern. Ein stärkerer Verbriefungsmarkt soll Finanzierungsquellen diversifizieren, die Risikoteilung verbessern und zusätzliche Kredite für Haushalte, Unternehmen sowie KMU ermöglichen. Die Änderungen vereinfachen die Verbriefungsverordnung durch den Abbau operativer Belastungen und die Straffung von Due-Diligence- und Transparenzanforderungen. Zudem wird die Eigenkapitalverordnung angepasst, um die aufsichtsrechtliche Behandlung von Verbriefungen risikosensitiver zu gestalten.\n\nDer Vorschlag muss nun technisch finalisiert und formell von Parlament und Rat angenommen werden. Nach der Veröffentlichung im Amtsblatt der EU treten die Änderungen sofort in Kraft.",
+          "en": "The European Commission welcomes the political agreement reached between the Parliament and the Council on the review of the EU Securitisation Framework. The aim is to support securitisation activity in the EU while safeguarding financial stability.\n\nThis agreement is the first legislative deliverable under the Savings and Investments Union (SIU), which seeks to better channel savings into productive investment through capital markets and the banking system. A stronger securitisation market is expected to diversify funding sources, enhance risk-sharing, and support additional lending to households, businesses, and SMEs. The amendments simplify the Securitisation Regulation by reducing operational burdens and streamlining due diligence and transparency requirements. Furthermore, the Capital Requirements Regulation will be amended to make the prudential treatment of securitisations more risk-sensitive.\n\nThe proposal now awaits technical finalisation and formal approval by both the Parliament and Council. Once published in the Official Journal of the EU, the amendments will enter into force immediately."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
+        "imp": "medium"
+      },
+      {
+        "d": "01.10.2020",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin übernimmt EBA-Leitlinien zur gewichteten Durchschnittslaufzeit bei Verbriefungen (Rundschreiben 04/2020)",
+          "en": "BaFin adopts EBA Guidelines on Weighted Average Maturity in Securitisations (Circular 04/2020)"
+        },
+        "sl": "rundschreiben-04-2020-ba-verbriefung",
+        "s": {
+          "de": "Die BaFin hat die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA/GL/2020/04) zur Bestimmung der gewichteten durchschnittlichen Laufzeit von vertraglichen Zahlungen innerhalb einer Verbriefungstranche in ihre Verwaltungspraxis übernommen. Dies geschieht gemäß Artikel 257 Absatz 1 Buchstabe a der Verordnung (EU) Nr. 575/2013 (CRR).\n\nDas Rundschreiben richtet sich an Finanzinstitute, die Verbriefungstransaktionen durchführen und die Eigenmittelanforderungen der CRR erfüllen müssen. Die Übernahme der EBA-Leitlinien stellt sicher, dass die Berechnung der gewichteten durchschnittlichen Laufzeit bei Verbriefungen einheitlich erfolgt, was für die korrekte Ermittlung der Eigenmittelunterlegung relevant ist.\n\nDie BaFin kommt mit diesem Rundschreiben ihrer gegenüber der EBA abgegebenen Erklärung nach, die Leitlinie ab dem 1. Oktober 2020 anzuwenden.",
+          "en": "The BaFin has incorporated the European Banking Authority's (EBA/GL/2020/04) guidelines on the determination of the weighted average maturity of contractual payments due under a securitisation tranche into its administrative practice. This is done in accordance with Article 257(1)(a) of Regulation (EU) No 575/2013 (CRR).\n\nThis circular is addressed to financial institutions that conduct securitisation transactions and must comply with the CRR's own funds requirements. The adoption of the EBA guidelines ensures a consistent calculation of the weighted average maturity in securitisations, which is relevant for the correct determination of own funds requirements.\n\nWith this circular, BaFin fulfills its commitment to the EBA to apply the guideline from 1 October 2020."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2020/rs_2020_04_Verbriefung_ba.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 04/2020"
+      },
+      {
+        "d": "11.09.2020",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Bestimmung der Tranchenlaufzeit bei Verbriefungen (Konsultation 11/2020)",
+          "en": "Consultation on determining tranche maturity in securitisations (Consultation 11/2020)"
+        },
+        "sl": "konsultation-11-2020-entwurf-eines-rundschreibens-zur-bestimmung-der-gewichteten",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf eines Rundschreibens zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dieses Rundschreiben dient der Übernahme der entsprechenden EBA-Leitlinien gemäß Artikel 257 Absatz 1 Buchstabe a der CRR.\n\nDie Leitlinien legen fest, wie die gewichtete durchschnittliche Laufzeit für die Berechnung der Eigenmittelanforderungen für Verbriefungen zu bestimmen ist. Dies ist relevant für Kreditinstitute, die Verbriefungspositionen halten und die Eigenmittelverordnung (CRR) anwenden müssen.\n\nStellungnahmen zum Entwurf können bis zum 25. September 2020 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die EBA-Leitlinien bis zum 1. Oktober 2020 in ihre Verwaltungspraxis zu übernehmen.",
+          "en": "BaFin is consulting on a draft circular concerning the determination of the weighted average maturity of contractual payments within a securitisation tranche. This circular aims to implement the corresponding EBA Guidelines in accordance with Article 257(1)(a) of the CRR.\n\nThe guidelines specify how to determine the weighted average maturity for calculating own funds requirements for securitisations. This is relevant for credit institutions holding securitisation positions and subject to the Capital Requirements Regulation (CRR).\n\nComments on the draft can be submitted to BaFin in writing or via email by 25 September 2020. BaFin intends to incorporate the EBA Guidelines into its administrative practice by 1 October 2020."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_11_20_RS_Bestimmung_durchschnittlichen_Laufzeit.html",
+        "imp": "medium",
+        "refnum": "Konsultation 11/2020"
+      },
+      {
+        "d": "10.09.2020",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Rundschreiben über die gewichtete durchschnittliche Laufzeit von Verbriefungstranchen (Konsultation 11/2020)",
+          "en": "Consultation on Circular on Weighted Average Maturity of Securitisation Tranches (Consultation 11/2020)"
+        },
+        "sl": "konsultation-11-2020",
+        "s": {
+          "de": "Die BaFin konsultiert ein Rundschreiben zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dies erfolgt gemäß Artikel 257 Absatz 1 Buchstabe a der Kapitaladäquanzverordnung (CRR).\n\nMit dem Rundschreiben setzt die BaFin die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zu diesem Thema in ihre Verwaltungspraxis um. Es richtet sich an Finanzinstitute, die Verbriefungen halten und die damit verbundenen Eigenmittelanforderungen berechnen müssen.\n\nDie BaFin beabsichtigt, den EBA-Leitlinien zum 1. Oktober 2020 nachzukommen.",
+          "en": "The BaFin is consulting on a circular regarding the determination of the weighted average maturity of contractual payments due within a securitisation tranche. This is in accordance with Article 257(1)(a) of the Capital Requirements Regulation (CRR).\n\nWith this circular, BaFin implements the European Banking Authority's (EBA) guidelines on this matter into its administrative practice. It is aimed at financial institutions that hold securitisations and need to calculate the associated own funds requirements.\n\nBaFin intends to comply with the EBA guidelines as of 1 October 2020."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kons_11_20_RS_Anwendung_EBA_Leitlinien_Tranchenlaufzeit.html",
+        "imp": "medium",
+        "refnum": "Konsultation 11/2020"
+      },
+      {
+        "d": "25.10.2018",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zur außervertraglichen Kreditunterstützung bei Verbriefungen (13/2018)",
+          "en": "BaFin Circular on Implicit Support for Securitisation Transactions (13/2018)"
+        },
+        "sl": "rundschreiben-13-2018-zur-ausservertraglichen-kreditunterstuetzung-bei-verbriefu",
+        "s": {
+          "de": "Das BaFin-Rundschreiben 13/2018 setzt die EBA-Leitlinien zur außervertraglichen Kreditunterstützung bei Verbriefungstransaktionen (EBA/GL/2016/08) um. Es präzisiert die Auslegung von Artikel 248 der Verordnung (EU) Nr. 575/2013 (CRR) hinsichtlich der Frage, wann ein Geschäft als Kreditunterstützung gilt und wann nicht. Zudem werden Melde- und Dokumentationspflichten gemäß CRR Artikel 248 Absatz 1 weiter ausgearbeitet.\n\nDas Rundschreiben richtet sich an Institute, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, die den Vorgaben des Artikels 248 CRR unterliegen. Es definiert, wann ein Geschäft als über die bestehenden vertraglichen Verpflichtungen hinausgehend gilt und unter welchen Bedingungen es als nicht-kreditunterstützend angesehen wird, insbesondere wenn es zu marktüblichen oder für den Sponsor/Originator günstigeren Konditionen erfolgt. Marktübliche Konditionen liegen vor, wenn die Parteien unabhängig voneinander agieren und die Bedingungen wie bei einem normalen Handelsgeschäft gestaltet sind.\n\nDas Rundschreiben ist unbeschadet der laufenden Beurteilung der Übertragung eines signifikanten Risikos während der Laufzeit einer Verbriefung anzuwenden. Es gilt nicht für bedeutende beaufsichtigte Unternehmen und Gruppen im Sinne der EZB-Verordnung (EU) Nr. 468/2014.",
+          "en": "BaFin Circular 13/2018 implements the EBA Guidelines on implicit support for securitisation transactions (EBA/GL/2016/08). It clarifies the interpretation of Article 248 of Regulation (EU) No 575/2013 (CRR) regarding when a transaction constitutes implicit support and when it does not. Furthermore, reporting and documentation obligations under CRR Article 248(1) are further elaborated.\n\nThe circular is addressed to institutions, institution groups, financial holding groups, and mixed financial holding groups subject to the requirements of Article 248 CRR. It defines when a transaction is considered to go beyond existing contractual obligations and under what conditions it is deemed not to constitute implicit support, particularly if it is conducted at market terms or terms more favourable to the sponsor/originator. Market terms are considered to exist when the parties act independently and the terms are structured like a normal commercial transaction.\n\nThe circular is to be applied without prejudice to the ongoing assessment of the transfer of significant risk during the life of a securitisation. It does not apply to significant supervised entities and groups within the meaning of ECB Regulation (EU) No 468/2014."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_13_2018_ausservertragliche_Kreditunterstuetzung_BA.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 13/2018"
+      }
+    ],
+    "ebaresolvability": [
+      {
+        "d": "06.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "2026_7945 Consolidated application and intragroup transferability of the permanent exemption from deduction of equity holdings in an insurance company from CET1",
+          "en": "2026_7945 Consolidated application and intragroup transferability of the permanent exemption from deduction of equity holdings in an insurance company from CET1"
+        },
+        "sl": "2026-7945-consolidated-application-and-intragroup-transferability-of-the-permane",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7945"
       }
     ],
     "bcbs": [
@@ -1030,126 +1265,6 @@
         "refnum": "ESMA74-268544963-1748"
       }
     ],
-    "securitisation": [
-      {
-        "d": "22.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Politische Einigung zur Überarbeitung des EU-Verbriefungsrahmens erzielt",
-          "en": "Political Agreement Reached on Review of EU Securitisation Framework"
-        },
-        "sl": "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec",
-        "s": {
-          "de": "Die Europäische Kommission begrüßt die politische Einigung zwischen Parlament und Rat zur Überarbeitung des EU-Verbriefungsrahmens. Ziel ist es, Verbriefungsaktivitäten in der EU zu fördern und gleichzeitig die Finanzstabilität zu wahren.\n\nDie Einigung ist das erste legislative Ergebnis der Spar- und Investitionsunion (SIU). Sie soll die Kanalisierung von Ersparnissen in produktive Investitionen über Kapitalmärkte und das Bankensystem verbessern. Ein stärkerer Verbriefungsmarkt soll Finanzierungsquellen diversifizieren, die Risikoteilung verbessern und zusätzliche Kredite für Haushalte, Unternehmen sowie KMU ermöglichen. Die Änderungen vereinfachen die Verbriefungsverordnung durch den Abbau operativer Belastungen und die Straffung von Due-Diligence- und Transparenzanforderungen. Zudem wird die Eigenkapitalverordnung angepasst, um die aufsichtsrechtliche Behandlung von Verbriefungen risikosensitiver zu gestalten.\n\nDer Vorschlag muss nun technisch finalisiert und formell von Parlament und Rat angenommen werden. Nach der Veröffentlichung im Amtsblatt der EU treten die Änderungen sofort in Kraft.",
-          "en": "The European Commission welcomes the political agreement reached between the Parliament and the Council on the review of the EU Securitisation Framework. The aim is to support securitisation activity in the EU while safeguarding financial stability.\n\nThis agreement is the first legislative deliverable under the Savings and Investments Union (SIU), which seeks to better channel savings into productive investment through capital markets and the banking system. A stronger securitisation market is expected to diversify funding sources, enhance risk-sharing, and support additional lending to households, businesses, and SMEs. The amendments simplify the Securitisation Regulation by reducing operational burdens and streamlining due diligence and transparency requirements. Furthermore, the Capital Requirements Regulation will be amended to make the prudential treatment of securitisations more risk-sensitive.\n\nThe proposal now awaits technical finalisation and formal approval by both the Parliament and Council. Once published in the Official Journal of the EU, the amendments will enter into force immediately."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
-        "imp": "medium"
-      },
-      {
-        "d": "01.10.2020",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin übernimmt EBA-Leitlinien zur gewichteten Durchschnittslaufzeit bei Verbriefungen (Rundschreiben 04/2020)",
-          "en": "BaFin adopts EBA Guidelines on Weighted Average Maturity in Securitisations (Circular 04/2020)"
-        },
-        "sl": "rundschreiben-04-2020-ba-verbriefung",
-        "s": {
-          "de": "Die BaFin hat die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA/GL/2020/04) zur Bestimmung der gewichteten durchschnittlichen Laufzeit von vertraglichen Zahlungen innerhalb einer Verbriefungstranche in ihre Verwaltungspraxis übernommen. Dies geschieht gemäß Artikel 257 Absatz 1 Buchstabe a der Verordnung (EU) Nr. 575/2013 (CRR).\n\nDas Rundschreiben richtet sich an Finanzinstitute, die Verbriefungstransaktionen durchführen und die Eigenmittelanforderungen der CRR erfüllen müssen. Die Übernahme der EBA-Leitlinien stellt sicher, dass die Berechnung der gewichteten durchschnittlichen Laufzeit bei Verbriefungen einheitlich erfolgt, was für die korrekte Ermittlung der Eigenmittelunterlegung relevant ist.\n\nDie BaFin kommt mit diesem Rundschreiben ihrer gegenüber der EBA abgegebenen Erklärung nach, die Leitlinie ab dem 1. Oktober 2020 anzuwenden.",
-          "en": "The BaFin has incorporated the European Banking Authority's (EBA/GL/2020/04) guidelines on the determination of the weighted average maturity of contractual payments due under a securitisation tranche into its administrative practice. This is done in accordance with Article 257(1)(a) of Regulation (EU) No 575/2013 (CRR).\n\nThis circular is addressed to financial institutions that conduct securitisation transactions and must comply with the CRR's own funds requirements. The adoption of the EBA guidelines ensures a consistent calculation of the weighted average maturity in securitisations, which is relevant for the correct determination of own funds requirements.\n\nWith this circular, BaFin fulfills its commitment to the EBA to apply the guideline from 1 October 2020."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2020/rs_2020_04_Verbriefung_ba.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 04/2020"
-      },
-      {
-        "d": "11.09.2020",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Bestimmung der Tranchenlaufzeit bei Verbriefungen (Konsultation 11/2020)",
-          "en": "Consultation on determining tranche maturity in securitisations (Consultation 11/2020)"
-        },
-        "sl": "konsultation-11-2020-entwurf-eines-rundschreibens-zur-bestimmung-der-gewichteten",
-        "s": {
-          "de": "Die BaFin konsultiert den Entwurf eines Rundschreibens zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dieses Rundschreiben dient der Übernahme der entsprechenden EBA-Leitlinien gemäß Artikel 257 Absatz 1 Buchstabe a der CRR.\n\nDie Leitlinien legen fest, wie die gewichtete durchschnittliche Laufzeit für die Berechnung der Eigenmittelanforderungen für Verbriefungen zu bestimmen ist. Dies ist relevant für Kreditinstitute, die Verbriefungspositionen halten und die Eigenmittelverordnung (CRR) anwenden müssen.\n\nStellungnahmen zum Entwurf können bis zum 25. September 2020 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die EBA-Leitlinien bis zum 1. Oktober 2020 in ihre Verwaltungspraxis zu übernehmen.",
-          "en": "BaFin is consulting on a draft circular concerning the determination of the weighted average maturity of contractual payments within a securitisation tranche. This circular aims to implement the corresponding EBA Guidelines in accordance with Article 257(1)(a) of the CRR.\n\nThe guidelines specify how to determine the weighted average maturity for calculating own funds requirements for securitisations. This is relevant for credit institutions holding securitisation positions and subject to the Capital Requirements Regulation (CRR).\n\nComments on the draft can be submitted to BaFin in writing or via email by 25 September 2020. BaFin intends to incorporate the EBA Guidelines into its administrative practice by 1 October 2020."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_11_20_RS_Bestimmung_durchschnittlichen_Laufzeit.html",
-        "imp": "medium",
-        "refnum": "Konsultation 11/2020"
-      },
-      {
-        "d": "10.09.2020",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Rundschreiben über die gewichtete durchschnittliche Laufzeit von Verbriefungstranchen (Konsultation 11/2020)",
-          "en": "Consultation on Circular on Weighted Average Maturity of Securitisation Tranches (Consultation 11/2020)"
-        },
-        "sl": "konsultation-11-2020",
-        "s": {
-          "de": "Die BaFin konsultiert ein Rundschreiben zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dies erfolgt gemäß Artikel 257 Absatz 1 Buchstabe a der Kapitaladäquanzverordnung (CRR).\n\nMit dem Rundschreiben setzt die BaFin die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zu diesem Thema in ihre Verwaltungspraxis um. Es richtet sich an Finanzinstitute, die Verbriefungen halten und die damit verbundenen Eigenmittelanforderungen berechnen müssen.\n\nDie BaFin beabsichtigt, den EBA-Leitlinien zum 1. Oktober 2020 nachzukommen.",
-          "en": "The BaFin is consulting on a circular regarding the determination of the weighted average maturity of contractual payments due within a securitisation tranche. This is in accordance with Article 257(1)(a) of the Capital Requirements Regulation (CRR).\n\nWith this circular, BaFin implements the European Banking Authority's (EBA) guidelines on this matter into its administrative practice. It is aimed at financial institutions that hold securitisations and need to calculate the associated own funds requirements.\n\nBaFin intends to comply with the EBA guidelines as of 1 October 2020."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kons_11_20_RS_Anwendung_EBA_Leitlinien_Tranchenlaufzeit.html",
-        "imp": "medium",
-        "refnum": "Konsultation 11/2020"
-      },
-      {
-        "d": "25.10.2018",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zur außervertraglichen Kreditunterstützung bei Verbriefungen (13/2018)",
-          "en": "BaFin Circular on Implicit Support for Securitisation Transactions (13/2018)"
-        },
-        "sl": "rundschreiben-13-2018-zur-ausservertraglichen-kreditunterstuetzung-bei-verbriefu",
-        "s": {
-          "de": "Das BaFin-Rundschreiben 13/2018 setzt die EBA-Leitlinien zur außervertraglichen Kreditunterstützung bei Verbriefungstransaktionen (EBA/GL/2016/08) um. Es präzisiert die Auslegung von Artikel 248 der Verordnung (EU) Nr. 575/2013 (CRR) hinsichtlich der Frage, wann ein Geschäft als Kreditunterstützung gilt und wann nicht. Zudem werden Melde- und Dokumentationspflichten gemäß CRR Artikel 248 Absatz 1 weiter ausgearbeitet.\n\nDas Rundschreiben richtet sich an Institute, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, die den Vorgaben des Artikels 248 CRR unterliegen. Es definiert, wann ein Geschäft als über die bestehenden vertraglichen Verpflichtungen hinausgehend gilt und unter welchen Bedingungen es als nicht-kreditunterstützend angesehen wird, insbesondere wenn es zu marktüblichen oder für den Sponsor/Originator günstigeren Konditionen erfolgt. Marktübliche Konditionen liegen vor, wenn die Parteien unabhängig voneinander agieren und die Bedingungen wie bei einem normalen Handelsgeschäft gestaltet sind.\n\nDas Rundschreiben ist unbeschadet der laufenden Beurteilung der Übertragung eines signifikanten Risikos während der Laufzeit einer Verbriefung anzuwenden. Es gilt nicht für bedeutende beaufsichtigte Unternehmen und Gruppen im Sinne der EZB-Verordnung (EU) Nr. 468/2014.",
-          "en": "BaFin Circular 13/2018 implements the EBA Guidelines on implicit support for securitisation transactions (EBA/GL/2016/08). It clarifies the interpretation of Article 248 of Regulation (EU) No 575/2013 (CRR) regarding when a transaction constitutes implicit support and when it does not. Furthermore, reporting and documentation obligations under CRR Article 248(1) are further elaborated.\n\nThe circular is addressed to institutions, institution groups, financial holding groups, and mixed financial holding groups subject to the requirements of Article 248 CRR. It defines when a transaction is considered to go beyond existing contractual obligations and under what conditions it is deemed not to constitute implicit support, particularly if it is conducted at market terms or terms more favourable to the sponsor/originator. Market terms are considered to exist when the parties act independently and the terms are structured like a normal commercial transaction.\n\nThe circular is to be applied without prejudice to the ongoing assessment of the transfer of significant risk during the life of a securitisation. It does not apply to significant supervised entities and groups within the meaning of ECB Regulation (EU) No 468/2014."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_13_2018_ausservertragliche_Kreditunterstuetzung_BA.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 13/2018"
-      },
-      {
-        "d": "02.07.2018",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Rundschreiben über außervertragliche Kreditunterstützung bei Verbriefungen",
-          "en": "Consultation on Circular on Implicit Support for Securitisation Transactions"
-        },
-        "sl": "konsultation-10-2018-entwurf-eines-rundschreibens-ausservertragliche-kreditunter",
-        "s": {
-          "de": "Die BaFin konsultiert den Entwurf eines Rundschreibens zur außervertraglichen Kreditunterstützung bei Verbriefungstransaktionen. Das Rundschreiben setzt die EBA-Leitlinien (EBA/GL/2016/08) um und präzisiert die Auslegung von Artikel 248 der CRR (Verordnung (EU) Nr. 575/2013).\n\nEs wird definiert, was unter marktüblichen Konditionen zu verstehen ist und wann ein Geschäft keine Kreditunterstützung darstellt. Zudem werden Melde- und Dokumentationspflichten gemäß Artikel 248 Absatz 1 CRR weiter ausgearbeitet. Adressaten sind Institute, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, die sich nach der CRR oder dem KWG an die Vorgaben des Artikels 248 CRR halten müssen, ausgenommen bedeutende beaufsichtigte Unternehmen und Gruppen im Sinne der EZB-Verordnung (EU) Nr. 468/2014.\n\nDie Konsultation läuft bis zum 2. August 2018.",
-          "en": "BaFin is consulting on a draft circular on implicit support for securitisation transactions. The circular implements the EBA Guidelines (EBA/GL/2016/08) and clarifies the interpretation of Article 248 of the CRR (Regulation (EU) No 575/2013).\n\nIt defines what is meant by market terms and conditions and when a transaction does not constitute implicit support. Furthermore, reporting and documentation obligations under Article 248(1) CRR are further elaborated. The circular is addressed to institutions, institutional groups, financial holding groups, and mixed financial holding groups that must comply with the requirements of Article 248 CRR under the CRR or the KWG, excluding significant supervised entities and groups as defined in ECB Regulation (EU) No 468/2014.\n\nThe consultation period ends on 2 August 2018."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2018/kon_1018_Ausservertragliche_Kreditunterstuetzung_Verbriefungstransaktionen_BA.html",
-        "imp": "medium"
-      }
-    ],
     "mica": [
       {
         "d": "21.10.2026",
@@ -1381,103 +1496,6 @@
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
         "imp": "high"
-      }
-    ],
-    "itsrep": [
-      {
-        "d": "19.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anpassung von Verordnungen nach Wegfall des Millionenkreditmeldewesens (Konsultation 10/2026)",
-          "en": "Adjustment of Regulations Following Discontinuation of Million Loan Reporting (Consultation 10/2026)"
-        },
-        "sl": "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher",
-        "s": {
-          "de": "Dieser Konsultationsentwurf der BaFin passt verschiedene Verordnungen an, nachdem das Millionenkreditmeldewesen nach § 14 KWG zum 30. Dezember 2026 entfällt. Die Großkredit- und Millionenkreditverordnung (GroMiKV) wird aufgehoben und durch eine neue Großkreditverordnung (GroKV) ersetzt. Zudem werden weitere Verordnungen, die auf das Millionenkreditmeldewesen Bezug nehmen, geändert oder aufgehoben.\n\nDie Änderungen betreffen insbesondere Institute, die bisher Millionenkreditmeldungen abgeben mussten. Die neue GroKV regelt Ausnahmen von der Obergrenze für Großkredite nach Art. 395 Abs. 1 CRR, Beschlussfassungspflichten der Geschäftsleiter bei Großkrediten und Meldungen zu Großkrediten. Dies soll den Wegfall der bisherigen Meldepflichten und die damit verbundenen Anpassungen im Aufsichtsrecht umsetzen.\n\nDie Konsultation läuft bis zum 19.10.2026. Die Änderungen treten mit Wirkung zum 30. Dezember 2026 in Kraft, dem Zeitpunkt der Streichung der Millionenkreditmeldepflichten im KWG.",
-          "en": "This BaFin consultation draft adapts various regulations following the discontinuation of the large exposure reporting requirement under Section 14 KWG as of December 30, 2026. The Large Exposure and Million Loan Regulation (GroMiKV) will be repealed and replaced by a new Large Exposure Regulation (GroKV). In addition, other regulations referring to the large exposure reporting system will be amended or repealed.\n\nThe changes primarily affect institutions that previously had to submit large exposure reports. The new GroKV regulates exemptions from the large exposure limit according to Art. 395 (1) CRR, decision-making obligations of managing directors for large exposures, and reporting requirements for large exposures. This is intended to implement the discontinuation of the previous reporting obligations and the associated adjustments in supervisory law.\n\nThe consultation runs until October 19, 2026. The changes will come into effect on December 30, 2026, the date on which the large exposure reporting obligations in the KWG are removed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_10_2026_entwurf_verordnung_anpassung_vorschriften_ba.html",
-        "imp": "medium"
-      },
-      {
-        "d": "12.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4",
-          "en": "EBA releases final technical package for reporting and Pillar 3 disclosure framework 4.4"
-        },
-        "sl": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
-        "s": {
-          "de": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht. Dieses Paket deckt die IFRS-18-Berichterstattung, ESG-Offenlegungen gemäß Säule 3 sowie weitere technische Anpassungen ab. Ziel ist es, die Berichterstattungskosten für Institute zu senken und die Einhaltung der Vorschriften zu erleichtern.\n\nDas Paket umfasst das Data Point Model (DPM), Validierungsregeln und XBRL-Taxonomien für neue oder geänderte Anforderungen. Dazu gehören aktualisierte Offenlegungspflichten zu ESG-Risiken, Eigenkapital und Schattenbanken sowie ein neues FINREP-Modul, das die IFRS-18-Anforderungen widerspiegelt. Auch technische Anpassungen für die Abwicklungsplanung, MREL-Entscheidungen und die Offenlegung gemäß Säule 3 sind enthalten, ebenso wie Korrekturen für die Liquiditätsberichterstattung von Drittlandzweigstellen und Vorlagen für die AMLA-Risikobewertung.\n\nDies ist die erste Phase der technischen Implementierung des 4.4-Rahmens; eine zweite Phase zur Vereinfachung der aufsichtsrechtlichen Berichterstattung wird Anfang 2027 erwartet. Das Paket berücksichtigt Rückmeldungen aus der Konsultation und enthält gezielte Verfeinerungen des Glossars im Rahmen des DPM 2.0. Die EBA hat zudem eine aktualisierte Liste bekannter DPM-Probleme und FAQs veröffentlicht, um die Implementierung zu unterstützen.",
-          "en": "The EBA has released the final technical package for version 4.4 of its reporting and Pillar 3 disclosure framework. This package covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to reduce institutions' reporting costs and facilitate their compliance.\n\nThe package includes the Data Point Model (DPM), validation rules, and XBRL taxonomies for new or amended requirements. These include updated disclosure requirements on ESG risks, equity, and shadow banking, as well as a new FINREP module reflecting IFRS 18 requirements. Technical amendments for resolution planning, MREL decisions, and Pillar 3 disclosures are also included, along with corrections for third-country branch liquidity reporting and templates for the AMLA risk assessment. \n\nThis is the first phase of the technical implementation of the 4.4 framework; a second phase for simplifying supervisory reporting is expected in early 2027. The package incorporates feedback from the consultation and includes targeted refinements to the DPM 2.0 glossary. The EBA has also published an updated list of known DPM issues and FAQs to support implementation."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-release-44-its-reporting-and-pillar-3-disclosure-framework",
-        "imp": "high"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
-          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
-        },
-        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
-          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
-        "imp": "low"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
-          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
-        },
-        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
-          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
-        "imp": "medium"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
-          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
-        },
-        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
-        "s": {
-          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
-          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
       }
     ],
     "cra": [
