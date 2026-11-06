@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T23:06:22Z",
+  "generated_at": "2026-11-06T19:11:29Z",
   "updates": {
     "emir": [
       {
@@ -199,6 +199,121 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2021/rs_2021_03_hinweise_echte_gruppenversicherungsvertraege_va.html",
         "imp": "high",
         "refnum": "Rundschreiben 03/2021"
+      }
+    ],
+    "brrd": [
+      {
+        "d": "06.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "Europe’s banking union has come very far. It should go further.",
+          "en": "Europe’s banking union has come very far. It should go further."
+        },
+        "sl": "europe-s-banking-union-has-come-very-far-it-should-go-further",
+        "s": {
+          "de": "By Claudia Buch, Chair of the Supervisory Board of the ECB, and Dominique Laboureix, Chair of the Single Resolution Board",
+          "en": "By Claudia Buch, Chair of the Supervisory Board of the ECB, and Dominique Laboureix, Chair of the Single Resolution Board"
+        },
+        "url": "https://www.srb.europa.eu/en/content/europes-banking-union-has-come-very-far-it-should-go-further"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Klassifizierung von Tier-2-Emissionen bei Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung (Q&A 2026_7797)",
+          "en": "Classification of Tier 2 Subordinated Issuances Losing MREL Computability Due to Early Call (Q&A 2026_7797)"
+        },
+        "sl": "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr",
+        "s": {
+          "de": "Die EBA präzisiert die Klassifizierung von nachrangigen Tier-2-Emissionen im Rahmen des BRRD-Reportings, wenn diese ihre MREL-Anrechenbarkeit aufgrund einer vorzeitigen Rückzahlung verlieren, die bereits angekündigt, aber noch nicht ausgeführt wurde.\n\nEin Instrument, für das eine vorzeitige Rückzahlung angekündigt wurde, soll weiterhin in Zeile r0531 des Templates Z 02.00 als Teil der als Eigenmittel anerkannten nachrangigen Verbindlichkeiten ausgewiesen werden. Die Abzugsfähigkeit vom Tier-2-Kapital ändert nichts an der Einstufung des Instruments selbst. Die insolvenzrechtliche Rangfolge des Instruments bleibt unverändert und richtet sich nach dem nationalen Insolvenzrecht.\n\nIm Template Z 12.00 ist der Betrag, der die Bedingungen für die MREL-Anrechenbarkeit erfüllt, nach dem Abzug aufgrund der angekündigten Rückzahlung als Null auszuweisen.",
+          "en": "The EBA clarifies the classification of Tier 2 subordinated issuances for BRRD reporting purposes when they lose their MREL computability due to an early call that has been announced but not yet executed.\n\nAn instrument for which an early redemption has been announced should continue to be reported in row r0531 of template Z 02.00 as part of subordinated liabilities recognized as own funds. The deduction from Tier 2 capital does not change the classification of the instrument itself. The insolvency ranking of the instrument remains unchanged and is determined by national insolvency law.\n\nIn template Z 12.00, the amount meeting the conditions for MREL eligibility shall be reported as zero after the deduction following the announced redemption."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7797",
+        "imp": "medium"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 (Q&A 2026_7815)",
+          "en": "Reporting of Counterparty Identifiers in Templates Z 12.00 and Z 14.00 (Q&A 2026_7815)"
+        },
+        "sl": "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and",
+        "s": {
+          "de": "Die EBA hat eine Klarstellung zur Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 der ITS zum Abwicklungsplan-Reporting veröffentlicht. Es wird präzisiert, wie Institute vorgehen sollen, wenn Gegenparteien unbekannt sind oder Daten auf aggregierter Ebene gemeldet werden müssen.\n\nInstitute müssen einen internen Identifikator verwenden, wenn kein LEI oder MFI-Code verfügbar ist. Dies gilt auch für aggregierte Meldungen, wobei für jede aggregierte Gruppe ein konsistenter interner Identifikator zuzuweisen ist. Für Mitarbeiterverbindlichkeiten sind separate Identifikatoren zu nutzen, wenn diese nach Typ und Insolvenzrang getrennt aggregiert werden.\n\nDie Antwort stellt klar, dass Platzhalter wie „0000“ oder „Not applicable“ nicht verwendet werden sollen. Stattdessen ist ein interner Identifikator zu vergeben und der entsprechende Identifikatortyp anzugeben. Dies soll divergierende Meldepraktiken beenden und die Datenqualität verbessern.",
+          "en": "The EBA has published a clarification on the reporting of counterparty identifiers in templates Z 12.00 and Z 14.00 of the ITS on Resolution Planning Reporting. It specifies how institutions should proceed when counterparties are unknown or data needs to be reported at an aggregated level.\n\nInstitutions must use an internal identifier when an LEI or MFI code is not available. This also applies to aggregated reporting, where a consistent internal identifier must be assigned to each aggregated group. For employee liabilities, separate identifiers are to be used if they are aggregated separately by type and insolvency ranking.\n\nThe answer clarifies that placeholders such as “0000” or “Not applicable” should not be used. Instead, an internal identifier must be assigned and the corresponding identifier type indicated. This aims to end divergent reporting practices and improve data quality."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7815",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu Meldung Z 09.01 (FMI Services) im Abwicklungsplanungs-Reporting (2026_7823)",
+          "en": "EBA Q&A on Reporting Template Z 09.01 (FMI Services) in Resolution Planning Reporting (2026_7823)"
+        },
+        "sl": "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii",
+        "s": {
+          "de": "Die EBA hat eine Klarstellung zur Meldung Z 09.01 (FMI Services) im Rahmen des ITS zum Abwicklungsplanungs-Reporting veröffentlicht. Konkret geht es um die Spalte 0110 („Criticality assessment by provider“), die laut Anhang II leer bleiben darf, wenn in Spalte 0090 „Direct“ angegeben wird.\n\nDie technische Taxonomie erlaubt es jedoch nicht, Spalte 0110 leer zu lassen, da sie Teil des Primärschlüssels ist. Die EBA stellt klar, dass Spalte 0110 weiterhin Teil des Primärschlüssels bleibt und daher nicht null sein darf. Stattdessen ist „Not applicable“ einzutragen, wenn in Spalte 0090 „Direct“ gemeldet wird. Die Anweisungen werden entsprechend angepasst.\n\nDiese Regelung ist relevant für Kreditinstitute, die Abwicklungsplanungs-Reportings gemäß der BRRD erstellen. Sie müssen sicherstellen, dass ihre Meldungen der technischen Taxonomie entsprechen und in Spalte 0110 „Not applicable“ eintragen, wenn die Bedingung in Spalte 0090 erfüllt ist, um Validierungsfehler zu vermeiden.",
+          "en": "The EBA has published a clarification regarding template Z 09.01 (FMI Services) within the ITS on Resolution Planning Reporting. Specifically, it addresses column 0110 (“Criticality assessment by provider”), which, according to Annex II, may be left blank when 'Direct' is reported in column 0090.\n\nHowever, the technical taxonomy does not permit column 0110 to be left blank as it is part of the primary key. The EBA clarifies that column 0110 will remain part of the primary key and therefore cannot be reported as null. Instead, 'Not applicable' shall be reported when 'Direct' is indicated in column 0090. The instructions will be amended accordingly.\n\nThis ruling is relevant for credit institutions preparing resolution planning reports under the BRRD. They must ensure their reports comply with the technical taxonomy and enter 'Not applicable' in column 0110 when the condition in column 0090 is met, to avoid validation errors."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7823",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA präzisiert Meldepflichten für FMI-Dienstleistungen (Q&A 2026_7824)",
+          "en": "EBA clarifies reporting requirements for FMI services (Q&A 2026_7824)"
+        },
+        "sl": "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia",
+        "s": {
+          "de": "Die EBA präzisiert die Auslegung der Spalten 0210 und 0220 der Vorlage Z09.01 (FMI Services – Providers and Users) für das BRRD-Reporting. Die Meldung von Dienstleistungen in dieser Vorlage ist auf solche beschränkt, die für die vertragliche Beziehung zum Zugang oder zur Funktion einer Finanzmarktinfrastruktur (FMI) relevant sind.\n\nDies umfasst auch Dienstleistungen, die den direkten oder indirekten Zugang zur FMI unterstützen. Allgemeine kommerzielle, operative oder konzerninterne Dienstleistungen, die mit einem Intermediär ausgetauscht werden und nicht mit der FMI-Beziehung zusammenhängen, sollen nicht gemeldet werden. Dies betrifft Kreditinstitute, die unter die BRRD-Berichtspflicht fallen.\n\nDie Klarstellung hilft den meldenden Instituten, den Umfang der zu berichtenden Dienstleistungen korrekt abzugrenzen und unnötige Meldungen zu vermeiden. Die Antwort wurde von der EBA erstellt und am 09.10.2026 veröffentlicht.",
+          "en": "The EBA clarifies the interpretation of columns 0210 and 0220 of template Z09.01 (FMI Services – Providers and Users) for BRRD reporting. The reporting of services in this template is limited to those relevant to the contractual relationship governing access to, or the functioning of, a Financial Market Infrastructure (FMI).\n\nThis includes services supporting direct or indirect access to the FMI. General commercial, operational, or intragroup services exchanged with an intermediary that are unrelated to the FMI relationship should not be reported. This applies to credit institutions subject to BRRD reporting requirements.\n\nThe clarification helps reporting institutions correctly define the scope of services to be reported and avoid unnecessary submissions. The answer was prepared by the EBA and published on 09.10.2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7824",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA-Klarstellung zur Meldung von Vertrags-IDs bei eigenen Vermögenswerten (Q&A 2026_7844)",
+          "en": "EBA Clarification on Reporting Contract IDs for Owned Assets (Q&A 2026_7844)"
+        },
+        "sl": "2026-7844-reporting-template-resol-2-z-08-02",
+        "s": {
+          "de": "Die EBA präzisiert die Meldung von Vertrags-IDs im Rahmen des Abwicklungsplanungs-Reportings (RESOL 2 – Z 08.02). Wenn ein Vermögenswert im Eigentum des Instituts steht und keinem vertraglichen Arrangement unterliegt, ist in Feld c0080 („Contract ID“) der Wert „Not applicable“ anzugeben.\n\nDiese Klarstellung betrifft Kreditinstitute, die gemäß der BRRD und der ITS zur Abwicklungsplanung berichten müssen. Sie löst ein technisches Problem bei der Datenmeldung, da die Spalte „Contract ID“ als Primärschlüssel definiert ist, aber bei eigenen Vermögenswerten keine Vertrags-ID existiert.\n\nDie EBA wird die entsprechenden Anweisungen bei nächster Gelegenheit anpassen, um diese Handhabung zu verdeutlichen.",
+          "en": "The EBA clarifies the reporting of contract IDs within the resolution planning reporting (RESOL 2 – Z 08.02). If an asset is owned by the institution and is not governed by a contractual arrangement, “Not applicable” shall be reported in field c0080 (“Contract ID”).\n\nThis clarification affects credit institutions that are required to report under BRRD and the ITS on resolution planning. It resolves a technical issue in data reporting, as the “Contract ID” column is defined as a primary key, but no contract ID exists for owned assets.\n\nThe EBA will amend the relevant instructions at the next available opportunity to clarify this treatment."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7844",
+        "imp": "low"
       }
     ],
     "bcbs": [
@@ -1929,122 +2044,6 @@
           "en": "BaFin has published a guidance note on applying for a license to operate a crypto securities register in accordance with Section 65 (1) sentence 1 of the German Banking Act (KWG). It specifies the requirements for the application and the documents to be submitted, which are necessary for examining the licensing conditions.\n\nThe guidance note is aimed at companies that wish to offer crypto securities register management as a financial service. It explains in detail the necessary information regarding the business model, organization, personnel, and technical systems to ensure a complete and auditable application.\n\nThe guidelines are intended to help applicants meet the complex requirements of the KWG and the Crypto Securities Ordinance (KryptoWpVerOV) and to accelerate the licensing process."
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/BA/Merkblatt_02_2022_Hinweise_Erlaubnisantrag_Kryptowertpapierregisterfuehrung.html",
-        "imp": "medium"
-      }
-    ],
-    "brrd": [
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Klassifizierung von Tier-2-Emissionen bei Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung (Q&A 2026_7797)",
-          "en": "Classification of Tier 2 Subordinated Issuances Losing MREL Computability Due to Early Call (Q&A 2026_7797)"
-        },
-        "sl": "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr",
-        "s": {
-          "de": "Die EBA präzisiert die Klassifizierung von nachrangigen Tier-2-Emissionen im Rahmen des BRRD-Reportings, wenn diese ihre MREL-Anrechenbarkeit aufgrund einer vorzeitigen Rückzahlung verlieren, die bereits angekündigt, aber noch nicht ausgeführt wurde.\n\nEin Instrument, für das eine vorzeitige Rückzahlung angekündigt wurde, soll weiterhin in Zeile r0531 des Templates Z 02.00 als Teil der als Eigenmittel anerkannten nachrangigen Verbindlichkeiten ausgewiesen werden. Die Abzugsfähigkeit vom Tier-2-Kapital ändert nichts an der Einstufung des Instruments selbst. Die insolvenzrechtliche Rangfolge des Instruments bleibt unverändert und richtet sich nach dem nationalen Insolvenzrecht.\n\nIm Template Z 12.00 ist der Betrag, der die Bedingungen für die MREL-Anrechenbarkeit erfüllt, nach dem Abzug aufgrund der angekündigten Rückzahlung als Null auszuweisen.",
-          "en": "The EBA clarifies the classification of Tier 2 subordinated issuances for BRRD reporting purposes when they lose their MREL computability due to an early call that has been announced but not yet executed.\n\nAn instrument for which an early redemption has been announced should continue to be reported in row r0531 of template Z 02.00 as part of subordinated liabilities recognized as own funds. The deduction from Tier 2 capital does not change the classification of the instrument itself. The insolvency ranking of the instrument remains unchanged and is determined by national insolvency law.\n\nIn template Z 12.00, the amount meeting the conditions for MREL eligibility shall be reported as zero after the deduction following the announced redemption."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7797",
-        "imp": "medium"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 (Q&A 2026_7815)",
-          "en": "Reporting of Counterparty Identifiers in Templates Z 12.00 and Z 14.00 (Q&A 2026_7815)"
-        },
-        "sl": "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and",
-        "s": {
-          "de": "Die EBA hat eine Klarstellung zur Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 der ITS zum Abwicklungsplan-Reporting veröffentlicht. Es wird präzisiert, wie Institute vorgehen sollen, wenn Gegenparteien unbekannt sind oder Daten auf aggregierter Ebene gemeldet werden müssen.\n\nInstitute müssen einen internen Identifikator verwenden, wenn kein LEI oder MFI-Code verfügbar ist. Dies gilt auch für aggregierte Meldungen, wobei für jede aggregierte Gruppe ein konsistenter interner Identifikator zuzuweisen ist. Für Mitarbeiterverbindlichkeiten sind separate Identifikatoren zu nutzen, wenn diese nach Typ und Insolvenzrang getrennt aggregiert werden.\n\nDie Antwort stellt klar, dass Platzhalter wie „0000“ oder „Not applicable“ nicht verwendet werden sollen. Stattdessen ist ein interner Identifikator zu vergeben und der entsprechende Identifikatortyp anzugeben. Dies soll divergierende Meldepraktiken beenden und die Datenqualität verbessern.",
-          "en": "The EBA has published a clarification on the reporting of counterparty identifiers in templates Z 12.00 and Z 14.00 of the ITS on Resolution Planning Reporting. It specifies how institutions should proceed when counterparties are unknown or data needs to be reported at an aggregated level.\n\nInstitutions must use an internal identifier when an LEI or MFI code is not available. This also applies to aggregated reporting, where a consistent internal identifier must be assigned to each aggregated group. For employee liabilities, separate identifiers are to be used if they are aggregated separately by type and insolvency ranking.\n\nThe answer clarifies that placeholders such as “0000” or “Not applicable” should not be used. Instead, an internal identifier must be assigned and the corresponding identifier type indicated. This aims to end divergent reporting practices and improve data quality."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7815",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu Meldung Z 09.01 (FMI Services) im Abwicklungsplanungs-Reporting (2026_7823)",
-          "en": "EBA Q&A on Reporting Template Z 09.01 (FMI Services) in Resolution Planning Reporting (2026_7823)"
-        },
-        "sl": "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii",
-        "s": {
-          "de": "Die EBA hat eine Klarstellung zur Meldung Z 09.01 (FMI Services) im Rahmen des ITS zum Abwicklungsplanungs-Reporting veröffentlicht. Konkret geht es um die Spalte 0110 („Criticality assessment by provider“), die laut Anhang II leer bleiben darf, wenn in Spalte 0090 „Direct“ angegeben wird.\n\nDie technische Taxonomie erlaubt es jedoch nicht, Spalte 0110 leer zu lassen, da sie Teil des Primärschlüssels ist. Die EBA stellt klar, dass Spalte 0110 weiterhin Teil des Primärschlüssels bleibt und daher nicht null sein darf. Stattdessen ist „Not applicable“ einzutragen, wenn in Spalte 0090 „Direct“ gemeldet wird. Die Anweisungen werden entsprechend angepasst.\n\nDiese Regelung ist relevant für Kreditinstitute, die Abwicklungsplanungs-Reportings gemäß der BRRD erstellen. Sie müssen sicherstellen, dass ihre Meldungen der technischen Taxonomie entsprechen und in Spalte 0110 „Not applicable“ eintragen, wenn die Bedingung in Spalte 0090 erfüllt ist, um Validierungsfehler zu vermeiden.",
-          "en": "The EBA has published a clarification regarding template Z 09.01 (FMI Services) within the ITS on Resolution Planning Reporting. Specifically, it addresses column 0110 (“Criticality assessment by provider”), which, according to Annex II, may be left blank when 'Direct' is reported in column 0090.\n\nHowever, the technical taxonomy does not permit column 0110 to be left blank as it is part of the primary key. The EBA clarifies that column 0110 will remain part of the primary key and therefore cannot be reported as null. Instead, 'Not applicable' shall be reported when 'Direct' is indicated in column 0090. The instructions will be amended accordingly.\n\nThis ruling is relevant for credit institutions preparing resolution planning reports under the BRRD. They must ensure their reports comply with the technical taxonomy and enter 'Not applicable' in column 0110 when the condition in column 0090 is met, to avoid validation errors."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7823",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA präzisiert Meldepflichten für FMI-Dienstleistungen (Q&A 2026_7824)",
-          "en": "EBA clarifies reporting requirements for FMI services (Q&A 2026_7824)"
-        },
-        "sl": "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia",
-        "s": {
-          "de": "Die EBA präzisiert die Auslegung der Spalten 0210 und 0220 der Vorlage Z09.01 (FMI Services – Providers and Users) für das BRRD-Reporting. Die Meldung von Dienstleistungen in dieser Vorlage ist auf solche beschränkt, die für die vertragliche Beziehung zum Zugang oder zur Funktion einer Finanzmarktinfrastruktur (FMI) relevant sind.\n\nDies umfasst auch Dienstleistungen, die den direkten oder indirekten Zugang zur FMI unterstützen. Allgemeine kommerzielle, operative oder konzerninterne Dienstleistungen, die mit einem Intermediär ausgetauscht werden und nicht mit der FMI-Beziehung zusammenhängen, sollen nicht gemeldet werden. Dies betrifft Kreditinstitute, die unter die BRRD-Berichtspflicht fallen.\n\nDie Klarstellung hilft den meldenden Instituten, den Umfang der zu berichtenden Dienstleistungen korrekt abzugrenzen und unnötige Meldungen zu vermeiden. Die Antwort wurde von der EBA erstellt und am 09.10.2026 veröffentlicht.",
-          "en": "The EBA clarifies the interpretation of columns 0210 and 0220 of template Z09.01 (FMI Services – Providers and Users) for BRRD reporting. The reporting of services in this template is limited to those relevant to the contractual relationship governing access to, or the functioning of, a Financial Market Infrastructure (FMI).\n\nThis includes services supporting direct or indirect access to the FMI. General commercial, operational, or intragroup services exchanged with an intermediary that are unrelated to the FMI relationship should not be reported. This applies to credit institutions subject to BRRD reporting requirements.\n\nThe clarification helps reporting institutions correctly define the scope of services to be reported and avoid unnecessary submissions. The answer was prepared by the EBA and published on 09.10.2026."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7824",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA-Klarstellung zur Meldung von Vertrags-IDs bei eigenen Vermögenswerten (Q&A 2026_7844)",
-          "en": "EBA Clarification on Reporting Contract IDs for Owned Assets (Q&A 2026_7844)"
-        },
-        "sl": "2026-7844-reporting-template-resol-2-z-08-02",
-        "s": {
-          "de": "Die EBA präzisiert die Meldung von Vertrags-IDs im Rahmen des Abwicklungsplanungs-Reportings (RESOL 2 – Z 08.02). Wenn ein Vermögenswert im Eigentum des Instituts steht und keinem vertraglichen Arrangement unterliegt, ist in Feld c0080 („Contract ID“) der Wert „Not applicable“ anzugeben.\n\nDiese Klarstellung betrifft Kreditinstitute, die gemäß der BRRD und der ITS zur Abwicklungsplanung berichten müssen. Sie löst ein technisches Problem bei der Datenmeldung, da die Spalte „Contract ID“ als Primärschlüssel definiert ist, aber bei eigenen Vermögenswerten keine Vertrags-ID existiert.\n\nDie EBA wird die entsprechenden Anweisungen bei nächster Gelegenheit anpassen, um diese Handhabung zu verdeutlichen.",
-          "en": "The EBA clarifies the reporting of contract IDs within the resolution planning reporting (RESOL 2 – Z 08.02). If an asset is owned by the institution and is not governed by a contractual arrangement, “Not applicable” shall be reported in field c0080 (“Contract ID”).\n\nThis clarification affects credit institutions that are required to report under BRRD and the ITS on resolution planning. It resolves a technical issue in data reporting, as the “Contract ID” column is defined as a primary key, but no contract ID exists for owned assets.\n\nThe EBA will amend the relevant instructions at the next available opportunity to clarify this treatment."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7844",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Definition der Substituierbarkeit von CCPs und Meldung alternativer Anbieter (RESOL II) (Q&A 2026_7912)",
-          "en": "Definition of “Substitutability” of CCPs and the connected reporting of “Alternative Providers” (RESOL II) (Q&A 2026_7912)"
-        },
-        "sl": "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of",
-        "s": {
-          "de": "Die EBA präzisiert die Definition der „Substituierbarkeit“ von Zentralen Gegenparteien (CCPs) und die Meldung von „alternativen Anbietern“ für das Template Z 09.04 (RESOL II). Die Substituierbarkeit ist im Hinblick auf die fortgesetzte Bereitstellung des Clearing-Dienstes für den in Spalte 0020 gemeldeten Produkttyp zu beurteilen. Dabei muss der alternative Anbieter nicht denselben Handelsplatz oder Markt bedienen wie die ursprüngliche CCP.\n\nEin alternativer Anbieter kann eine andere CCP oder ein Intermediär, einschließlich eines Brokers, sein, sofern das meldende Institut zum Meldezeitpunkt eine entsprechende vertragliche Beziehung zu diesem Anbieter hat und die Vereinbarung die Fortsetzung der Clearing-Aktivität innerhalb eines angemessenen Zeitrahmens nach einem Abwicklungsereignis ermöglichen würde. Dies kann auch die Umleitung der Clearing-Aktivität über eine alternative Marktinfrastruktur umfassen. Spalte 0040 soll den FMI oder Intermediär identifizieren, der den alternativen Anbieter des Clearing-Dienstes darstellt oder Zugang dazu bietet, nicht alle beteiligten FMIs der Wertschöpfungskette.\n\nDie Nutzung eines anderen Handelsplatzes oder Marktes schließt eine Alternative nicht aus dem Anwendungsbereich von Z 09.04 aus. Rein hypothetische Alternativen, für die zum Meldezeitpunkt keine vertragliche Beziehung besteht, sind jedoch nicht als Ersatzanbieter zu melden. Die EBA beantwortet damit eine Frage zur Auslegung der BRRD-Berichterstattung gemäß Artikel 11 Absatz 3 und der ITS zur Abwicklungsplanungsberichterstattung (Verordnung (EU) 2025/2303, Artikel 3 Absatz 1).",
-          "en": "The EBA clarifies the definition of “substitutability” of Central Counterparties (CCPs) and the reporting of “alternative providers” for template Z 09.04 (RESOL II). Substitutability must be assessed in relation to the continued provision of the clearing service for the product type reported in column 0020. The alternative provider does not have to serve the same trading venue or market as the original CCP.\n\nAn alternative provider can be another CCP or an intermediary, including a broker, provided that the reporting institution has a relevant contractual relationship with that provider at the reporting date and the arrangement would enable the relevant clearing activity to be continued within a reasonable timeframe following a resolution event. This may include rerouting clearing activity through alternative market infrastructure. Column 0040 should identify the FMI or intermediary that constitutes the alternative provider of, or provides access to, the substitute clearing service, not all FMIs involved in the value chain.\n\nThe use of a different trading venue or market does not in itself exclude an alternative from the scope of Z 09.04. However, purely hypothetical alternatives for which the required contractual relationship does not exist at the reporting date are not to be reported as substitute providers. The EBA thus answers a question on the interpretation of BRRD reporting according to Article 11(3) and the ITS on Resolution Planning Reporting (Regulation (EU) 2025/2303, Article 3(1))."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7912",
         "imp": "medium"
       }
     ],
