@@ -312,7 +312,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
             aria-label="Quellcode von Regulatory Radar auf GitHub"
             title="GitHub"
             data-fast-goal="github_click"
-            className="hidden shrink-0 text-slate-400 transition-colors hover:text-slate-900 sm:inline-flex"
+            className="hidden shrink-0 text-slate-400 transition-colors hover:text-slate-900 2xl:inline-flex"
           >
             {/* GitHub-Mark */}
             <svg aria-hidden viewBox="0 0 16 16" fill="currentColor" className="size-4">
