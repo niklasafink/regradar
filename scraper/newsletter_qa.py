@@ -29,7 +29,7 @@ hängen bleibt.
                                       (sonst wie die reguläre QS).
 
 Auth über CRON_SECRET aus web/.env.local; optional NEWSLETTER_QA_MODEL
-(OpenRouter-ID, Standard openai/gpt-6-luna) und OPENROUTER_API_KEY aus scraper/.env und HEALTH_APP_URL.
+(Claude-Alias, Standard sonnet; läuft über das Claude-Abo) und HEALTH_APP_URL.
 """
 import datetime as dt
 import json
@@ -59,7 +59,7 @@ INSTRUCTIONS = os.path.join(SCRAPER, "NEWSLETTER_QA.md")
 SLOT_WEEKDAY = 3  # Donnerstag (Python: Montag = 0)
 SLOT_HOUR_UTC = 10
 MAX_ATTEMPTS = 2
-DEFAULT_MODEL = "openai/gpt-6-luna"  # OpenRouter-ID, 0,1/0,5 USD je 1 Mio. Token (gpt-6-sol: 2/10, ohne Caching so teuer wie Opus)
+DEFAULT_MODEL = "sonnet"  # Claude-Abo-Kontingent, keine OpenRouter-Kosten (Nutzerentscheidung 07.11.2026)
 CLAUDE_TIMEOUT = 35 * 60
 DEPLOY_TIMEOUT = 20 * 60
 TEST_TIMEOUT = 10 * 60
@@ -113,7 +113,11 @@ def api(method: str, body: Optional[dict] = None, path: str = "/api/newsletter/q
 def run(cmd: List[str], timeout: int, cwd: str = REPO,
         extra_env: Optional[dict] = None) -> Tuple[int, str]:
     env = dict(os.environ)
-    env.update(extra_env or {})
+    for k, v in (extra_env or {}).items():
+        if v is None:
+            env.pop(k, None)  # None = Variable entfernen
+        else:
+            env[k] = v
     env["PATH"] = "/usr/local/bin:/usr/bin:/bin:" + env.get("PATH", "")
     try:
         p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout, env=env)
@@ -192,23 +196,13 @@ def run_claude(pending: List[dict], check_only: bool, live: bool = False, note: 
         "Heute ist {today}. Führe die Newsletter-QS nach der folgenden Anweisung aus. "
         "{n} Meldungen stehen in scraper/data/newsletter_qa_pending.json.\n{mode}\n\n{ins}"
     ).format(today=dt.date.today().strftime("%d.%m.%Y"), n=len(pending), mode=mode, ins=instructions)
-    # Kosten: Die QS läuft über OpenRouter mit einem GPT-Modell (Nutzerentscheidung
-    # 23.10.2026, Claude-Opus kostete ~3 USD je Lauf). Claude Code dient nur als
-    # Werkzeug-Schleife; alle Modellaufrufe gehen an OpenRouter.
+    # Kosten: Die QS läuft über das Claude-Abo-Kontingent (claude.ai-Login), nicht
+    # über OpenRouter (Nutzerentscheidung 07.11.2026; die ~3 USD je Lauf vom
+    # 23.10. waren nur der rechnerische total_cost_usd, nicht abgerechnet).
+    # ANTHROPIC_*-Variablen werden entfernt, damit kein API-Key oder Fremd-Endpunkt greift.
     model = (os.environ.get("NEWSLETTER_QA_LIVE_MODEL") if live else None) \
         or os.environ.get("NEWSLETTER_QA_MODEL") or DEFAULT_MODEL
-    key = os.environ.get("OPENROUTER_API_KEY")
-    if not key:
-        return False, False, "", "OPENROUTER_API_KEY fehlt (scraper/.env)"
-    model_env = {
-        "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
-        "ANTHROPIC_AUTH_TOKEN": key,
-        "ANTHROPIC_API_KEY": "",
-        "ANTHROPIC_DEFAULT_OPUS_MODEL": model,
-        "ANTHROPIC_DEFAULT_SONNET_MODEL": model,
-        "ANTHROPIC_DEFAULT_HAIKU_MODEL": model,
-        "ANTHROPIC_SMALL_FAST_MODEL": model,
-    }
+    model_env = {k: None for k in ("ANTHROPIC_BASE_URL", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_API_KEY")}
     tools = CLAUDE_READONLY_TOOLS + ",Write" if check_only else CLAUDE_ALLOWED_TOOLS
     cmd = [exe, "-p", prompt, "--output-format", "json", "--permission-mode", "acceptEdits",
            "--allowedTools", tools, "--max-turns", "80" if live else "150",
@@ -228,8 +222,7 @@ def run_claude(pending: List[dict], check_only: bool, live: bool = False, note: 
                 break
         except ValueError:
             continue
-    # total_cost_usd von Claude Code ist bei Fremdmodellen unbrauchbar (kennt
-    # die Preise nicht); die echten Kosten stehen im OpenRouter-Dashboard.
+    # total_cost_usd ist beim Abo nur rechnerisch, abgerechnet wird nichts.
     meta = "{} Schritte, Modell {}".format(data.get("num_turns", "?"), model)
     if rc != 0 or data.get("is_error"):
         return False, False, "", "claude -p fehlgeschlagen (Exit {}, {}): {}".format(rc, meta, out[-800:])
