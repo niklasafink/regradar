@@ -266,12 +266,12 @@ export function Chrome({ children }: { children?: ReactNode }) {
         </Link>
       </div>
       <header className="sticky top-0 z-30 border-b border-slate-100 bg-white/90 backdrop-blur-md">
-        <div className="relative mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:px-6">
+        <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:px-6">
           <Link href="/" className="shrink-0">
             <Wordmark />
           </Link>
           <nav
-            className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 md:flex"
+            className="hidden min-w-0 flex-1 items-center justify-center gap-1 md:flex"
             aria-label={lang === "de" ? "Hauptnavigation" : "Main navigation"}
           >
             <Link
@@ -301,7 +301,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
               {lang === "de" ? "Alle Updates" : "All updates"}
             </Link>
           </nav>
-          <span className="flex-1" />
+          <span className="flex-1 md:hidden" />
           {children && (
             <span className="hidden items-center gap-3 xl:flex">{children}</span>
           )}
@@ -324,7 +324,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
             href="/#newsletter"
             data-fast-goal="newsletter_click"
             data-fast-goal-placement="header"
-            className="hidden shrink-0 items-center rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-slate-700 sm:inline-flex"
+            className="hidden shrink-0 items-center rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-slate-700 sm:inline-flex md:hidden lg:inline-flex"
           >
             {lang === "de" ? "Newsletter abonnieren" : "Subscribe to newsletter"}
           </Link>
