@@ -5,6 +5,8 @@ import { notFound, permanentRedirect, redirect } from "next/navigation";
 import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
+import { RichUpdateSections } from "@/components/rich-update";
+import { richBySlug, trimDescription } from "@/lib/rich";
 import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
 import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateBySlugLoose, updateHref } from "@/lib/updates";
 import { hashtag, shareOpener } from "@/lib/linkedin";
@@ -31,10 +33,11 @@ export async function generateMetadata(
   const page = updateBySlug(slug);
   if (!page) return {};
   const { fw, u } = page;
+  const rich = richBySlug(slug);
   return pageMeta({
-    title: updateTitle(u.ti.de, fw.n.de, u.d),
-    ogTitle: u.ti.de,
-    description: updateDescription(page),
+    title: rich && rich.seo_title.length >= 30 ? title(rich.seo_title) : updateTitle(u.ti.de, fw.n.de, u.d),
+    ogTitle: rich?.h1 ?? u.ti.de,
+    description: rich ? trimDescription(rich.meta_description) : updateDescription(page),
     path: `/u/${slug}`,
     type: "article",
     publishedTime: isoDate(u.d),
@@ -73,6 +76,7 @@ export default async function UpdatePage(
     notFound();
   }
   const { fw, u } = page;
+  const rich = richBySlug(slug);
   const t = topicById(fw.topic);
   const f = frameworkById(fw.id)!;
   const backHref = `/r/${providerSlug(fw.ents[0])}/f/${fw.id}`;
@@ -121,29 +125,41 @@ export default async function UpdatePage(
       "@id": `${url}#article`,
       mainEntityOfPage: url,
       url,
-      headline: clip(u.ti.de, 110),
-      description: updateDescription(page),
+      headline: clip(rich?.h1 ?? u.ti.de, 110),
+      description: rich ? trimDescription(rich.meta_description) : updateDescription(page),
+      ...(rich ? {
+        abstract: rich.summary,
+        keywords: rich.aka.join(", "),
+        speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", ".rich-summary"] },
+      } : {}),
       image: [`${SITE_URL}/og.png`],
       datePublished: isoDate(u.d),
-      dateModified: isoDate(u.d),
+      dateModified: rich ? rich.meta.generated : isoDate(u.d),
       inLanguage: "de-DE",
       about: { "@type": "Thing", name: fw.n.de },
       ...(u.url ? { isBasedOn: u.url } : {}),
       publisher: { "@id": organizationLd["@id"] },
       // Veröffentlichende Stelle; @id über ihre Domain, damit dieselbe Behörde
       // auf allen Seiten als eine Organisation erkannt wird.
-      author: {
+      // Ohne Anreicherung gibt die Seite die Meldung der Behörde wieder (Autor:
+      // Behörde); angereicherte Seiten schreibt Regulatory Radar, die Behörde ist Quelle.
+      [rich ? "sourceOrganization" : "author"]: {
         "@type": "Organization",
         "@id": `https://${u.src}/#organization`,
         name: authority(u.src),
         url: `https://${u.src}/`,
       },
+      ...(rich ? { author: { "@id": organizationLd["@id"] } } : {}),
     },
     organizationLd,
     breadcrumbLd([
       [fw.n.de, fwPath],
-      [clip(u.ti.de, 80), `/u/${slug}`],
+      [clip(rich?.h1 ?? u.ti.de, 80), `/u/${slug}`],
     ]),
+    ...(rich ? [{
+      "@type": "FAQPage",
+      mainEntity: rich.faq.map((q) => ({ "@type": "Question", name: q.q, acceptedAnswer: { "@type": "Answer", text: q.a } })),
+    }] : []),
   );
 
   return (
@@ -215,7 +231,7 @@ export default async function UpdatePage(
 
           <div className="mt-4 flex items-start justify-between gap-4">
             <h1 className="font-heading text-balance text-2xl font-medium tracking-tight sm:text-3xl">
-              {u.ti.de}
+              {rich?.h1 ?? u.ti.de}
             </h1>
             <RelevanceStatus target={`u:${slug}`} className="mt-1" />
           </div>
@@ -228,7 +244,9 @@ export default async function UpdatePage(
             <span>{fw.ref}, {fw.jur}</span>
           </p>
 
-          {u.s.de && (
+          {rich ? (
+            <RichUpdateSections rich={rich} published={u.d} seed={[...slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 997, 7)} />
+          ) : u.s.de && (
             <div className="mt-5 space-y-3 text-base leading-relaxed text-slate-700">
               {u.s.de.split(/\n{2,}/).map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>
