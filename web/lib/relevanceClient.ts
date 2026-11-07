@@ -46,6 +46,9 @@ export const statusPill = (s: Status) =>
 
 const DRAFT_KEY = "rr.profileDraft";
 const EVENT = "rr:profile";
+/** Teilergebnisse eingetroffen: nur Anzeige auffrischen, nichts neu laden. */
+const PARTIAL = "rr:partial";
+const PENDING: MatchResult = { status: "unsicher", grund: "Noch nicht geprüft.", stufe: "fallback" };
 
 export function readDraft(): { id: string; name: string } & Record<string, unknown> | null {
   try {
@@ -100,11 +103,14 @@ const inflight = new Set<string>();
 async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
   const keys = [...batch.keys];
   keys.forEach((k) => inflight.add(k));
-  for (let i = 0; i < keys.length; i += 40) {
-    const chunk = keys.slice(i, i + 40);
+  // Pakete zu 20 parallel: erste Ergebnisse kommen schneller als bei einem
+  // großen Paket, das bis zum Zeitlimit des Servers läuft.
+  const me = await loadMe();
+  const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
+  const chunks: string[][] = [];
+  for (let i = 0; i < keys.length; i += 20) chunks.push(keys.slice(i, i + 20));
+  await Promise.all(chunks.map(async (chunk) => {
     try {
-      const me = await loadMe();
-      const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
       const res = await fetch("/api/relevance/check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -112,8 +118,9 @@ async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
       });
       const json = (await res.json()) as { results?: Record<string, MatchResult> };
       for (const [k, v] of Object.entries(json.results ?? {})) results.set(k, v);
+      if (typeof window !== "undefined") window.dispatchEvent(new Event(PARTIAL));
     } catch { /* still: keine Chips */ }
-  }
+  }));
   keys.forEach((k) => inflight.delete(k));
   batch.waiters.forEach((w) => w());
   scheduleRetry(keys);
@@ -124,9 +131,14 @@ async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
    Server-Cache, der Rest wird weitergeprüft. Höchstens 8 Runden je Schlüssel. */
 const retries = new Map<string, number>();
 export const isPending = (r?: MatchResult) => !!r && r.stufe === "fallback" && r.grund.startsWith("Noch nicht geprüft");
+const isOutage = (r?: MatchResult) => !!r && r.grund.startsWith("Prüfung derzeit nicht verfügbar");
 
 function scheduleRetry(keys: string[]) {
-  const again = keys.filter((k) => isPending(results.get(k)) && (retries.get(k) ?? 0) < 8);
+  const again = keys.filter((k) => {
+    const r = results.get(k);
+    const n = retries.get(k) ?? 0;
+    return (isPending(r) && n < 8) || (isOutage(r) && n < 2);
+  });
   if (!again.length || typeof window === "undefined") return;
   again.forEach((k) => retries.set(k, (retries.get(k) ?? 0) + 1));
   setTimeout(() => {
@@ -175,21 +187,24 @@ export function useRelevance(keys: string[], enabled: boolean): Record<string, M
   useEffect(() => {
     if (!enabled || !keys.length) return;
     let alive = true;
-    const run = () =>
-      check(keys).then(() => {
-        if (!alive) return;
-        const o: Record<string, MatchResult> = {};
-        for (const k of keys) {
-          const r = results.get(k);
-          if (r) o[k] = r;
-        }
-        setOut(o);
-      });
+    // Bis ein Ergebnis da ist, steht der Schlüssel auf „wird geprüft“.
+    const show = () => {
+      if (!alive) return;
+      const o: Record<string, MatchResult> = {};
+      for (const k of keys) o[k] = results.get(k) ?? PENDING;
+      setOut(o);
+    };
+    const run = () => {
+      show();
+      void check(keys).then(show);
+    };
     run();
     window.addEventListener(EVENT, run);
+    window.addEventListener(PARTIAL, show);
     return () => {
       alive = false;
       window.removeEventListener(EVENT, run);
+      window.removeEventListener(PARTIAL, show);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sig, enabled]);

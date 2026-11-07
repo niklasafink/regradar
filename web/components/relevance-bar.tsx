@@ -6,6 +6,7 @@ import { useState } from "react";
 import {
   activeName, hasProfile, invalidate, readDraft, STATUS_LABEL, statusPill, useMe, useRelevance,
   writeDraft, type Me,
+  isPending,
 } from "@/lib/relevanceClient";
 import { RelevanceHint } from "./relevance-hint";
 
@@ -76,9 +77,9 @@ export function RelevanceBar() {
         </Link>
       </>
     );
-  } else if (key && !r) {
+  } else if (key && (!r || isPending(r))) {
     content = <span className="text-slate-500">Prüfe die Einschlägigkeit für {name} …</span>;
-  } else if (key && r) {
+  } else if (key && r && !isPending(r)) {
     content = (
       <>
         <span className={statusPill(r.status)}>{STATUS_LABEL[r.status]}</span>
