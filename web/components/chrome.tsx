@@ -222,6 +222,128 @@ function DeadlinesPraxisMenu() {
   );
 }
 
+/** Menü-Button für schmale Bildschirme (unter md): klappt unter dem Header
+    eine Liste mit allen Punkten der Hauptnavigation auf. */
+function MobileMenu() {
+  const { lang } = useStore();
+  const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+  const [audiences, setAudiences] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  const de = lang === "de";
+  const row = (active: boolean) =>
+    `flex items-center justify-between gap-3 rounded-full px-4 py-2.5 text-sm font-medium transition-colors ${
+      active ? "bg-slate-900 text-white" : "text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+    }`;
+  const links = [
+    { href: "/", page: "home", label: de ? "Start" : "Home" },
+    { href: "/fristen", page: "fristen", label: de ? "Fristen" : "Deadlines" },
+    { href: "/praxis", page: "praxis", label: de ? "Praxis" : "Enforcement" },
+    { href: "/updates", page: "updates", label: de ? "Alle Updates" : "All updates" },
+  ];
+
+  return (
+    <div className="md:hidden">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls="mobile-menu"
+        aria-label={open ? (de ? "Menü schließen" : "Close menu") : de ? "Menü öffnen" : "Open menu"}
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition-colors hover:border-slate-900 hover:text-slate-900"
+      >
+        <svg aria-hidden viewBox="0 0 256 256" fill="currentColor" className="size-4">
+          {open ? (
+            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z" />
+          ) : (
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z" />
+          )}
+        </svg>
+      </button>
+      {open && (
+        <div
+          id="mobile-menu"
+          className="absolute inset-x-0 top-full max-h-[calc(100dvh-4rem)] overflow-y-auto border-b border-slate-100 bg-white px-4 pb-4 pt-2 shadow-2xl"
+        >
+          <nav aria-label={de ? "Hauptnavigation" : "Main navigation"} className="flex flex-col gap-0.5">
+            <Link href="/" data-fast-goal="nav_click" data-fast-goal-page="home" className={row(pathname === "/")}>
+              {links[0].label}
+            </Link>
+            <button
+              type="button"
+              aria-expanded={audiences}
+              onClick={() => setAudiences((v) => !v)}
+              className={row(false)}
+            >
+              {de ? "Zielgruppen" : "Audiences"}
+              <svg
+                aria-hidden
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                className={`size-3 transition-transform duration-300 ${audiences ? "rotate-180" : ""}`}
+              >
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z" />
+              </svg>
+            </button>
+            {audiences && (
+              <div className="ml-4 flex flex-col gap-0.5 border-l border-slate-100 pl-2">
+                {PROVIDERS.map((p) => (
+                  <Link
+                    key={p.id}
+                    href={`/r/${p.slug}`}
+                    data-fast-goal="institute_selected"
+                    data-fast-goal-institute={p.id}
+                    data-fast-goal-source="mobile_menu"
+                    className={row(pathname === `/r/${p.slug}`)}
+                  >
+                    {tx(lang, p.n)}
+                  </Link>
+                ))}
+              </div>
+            )}
+            {links.slice(1).map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                data-fast-goal="nav_click"
+                data-fast-goal-page={l.page}
+                className={row(pathname === l.href)}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="mt-3 flex items-center justify-between gap-3 border-t border-slate-100 pt-3">
+            <LangSwitch />
+            <Link
+              href="/#newsletter"
+              data-fast-goal="newsletter_click"
+              data-fast-goal-placement="mobile_menu"
+              onClick={() => setOpen(false)}
+              className="inline-flex items-center rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white transition-colors hover:bg-slate-700"
+            >
+              {de ? "Newsletter abonnieren" : "Subscribe to newsletter"}
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 /** Drei überlappende Portraitfotos für das Kostenlos-Banner */
 function BannerAvatars() {
   return (
@@ -270,7 +392,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
         </Link>
       </div>
       <header className="sticky top-0 z-30 border-b border-slate-100 bg-white/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:px-6">
+        <div className="relative mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:px-6">
           <Link href="/" className="shrink-0">
             <Wordmark />
           </Link>
@@ -323,7 +445,9 @@ export function Chrome({ children }: { children?: ReactNode }) {
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
             </svg>
           </a>
-          <LangSwitch />
+          <span className="hidden md:inline-flex">
+            <LangSwitch />
+          </span>
           <Link
             href="/#newsletter"
             data-fast-goal="newsletter_click"
@@ -333,6 +457,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
             {lang === "de" ? "Newsletter abonnieren" : "Subscribe to newsletter"}
           </Link>
           <AccountMenu />
+          <MobileMenu />
         </div>
       </header>
       <RelevanceBar />
