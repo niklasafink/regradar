@@ -12,12 +12,13 @@
 //    bei „unsicher“ mit Rückfrage.
 // Speicherung (Kosten, Nutzerentscheidung 07.11.2026): Jedes Paar aus Profil
 // und Ziel wird genau einmal geprüft und je Profil festgehalten (Redis-Hash
-// relp:<Profil>:<Generation>). Profiländerungen lösen keine neue Prüfung aus;
-// erst „Neu prüfen“ startet eine neue Generation. Darin werden Ergebnisse
-// der Vorgeneration übernommen, wenn die geänderten Merkmale sie nicht
-// berühren. Zusätzlich teilen sich Profile mit gleichen Merkmalen die
-// Ergebnisse (relm:<Signatur>). Ausnahme: „Unklar“ mit einer inzwischen
-// beantworteten Rückfrage wird sofort neu geprüft. Server-only.
+// relp:1:<Profil>:<Generation>, die Generation bleibt seit 07.11.2026 fest).
+// Ein Komplettlauf füllt den Speicher direkt nach dem Anlegen (server.ts,
+// prefillProfile). Es gibt kein „Neu prüfen“. Ändert der Nutzer sein Profil,
+// werden nur die Ergebnisse gelöscht und neu geprüft, die an den geänderten
+// Merkmalen hängen (invalidateChanged). Profile mit gleichen Merkmalen teilen
+// sich KI-Ergebnisse (relm:<Signatur>). Vom Nutzer gesetzte Status
+// (relo:1:<Profil>) gehen allem vor und lösen keine Prüfung aus. Server-only.
 
 import { featureById, featureLabel, FEATURE_IDS, FEATURES } from "./catalog";
 import { BudgetError, chatJson, MODELS } from "./llm";
@@ -38,7 +39,9 @@ export interface MatchResult {
   /** Profilmerkmale, auf die sich das Urteil stützt (für die Wiederverwendung). */
   merkmale?: string[];
   art?: Scope["art"];
-  stufe: "regel" | "ki" | "schiedsrichter" | "fallback";
+  stufe: "regel" | "ki" | "schiedsrichter" | "fallback" | "nutzer";
+  /** Bei stufe "nutzer": die automatische Einschätzung, falls vorhanden. */
+  auto?: { status: Status; grund: string };
   kostenUsd: number;
   at: string;
 }
@@ -236,38 +239,39 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
     chatJson<LlmVerdict>({ model: MODELS.matchA, system: MATCH_SYSTEM, user, maxTokens: 5000 }),
     chatJson<LlmVerdict>({ model: MODELS.matchB, system: MATCH_SYSTEM, user, maxTokens: 5000 }),
   ]);
-  // Fällt ein Prüfer aus (leere Antwort, API-Fehler), entscheidet der andere
-  // allein, wenn sein Urteil die Regelprüfung besteht.
-  if (sa.status === "rejected" || sb.status === "rejected") {
-    const bad = [sa, sb].find((x) => x.status === "rejected") as PromiseRejectedResult;
-    if (bad.reason instanceof BudgetError) throw bad.reason;
-    const ok = [sa, sb].find((x) => x.status === "fulfilled") as PromiseFulfilledResult<{ data: LlmVerdict; costUsd: number }> | undefined;
-    if (!ok) throw bad.reason;
-    const v = norm(ok.value.data);
-    if (qs1(p, v, rules).length) throw new Error("Einzelurteil besteht die Regelprüfung nicht");
-    return { status: v.status, grund: v.grund, teile: v.teile, frage: v.frage, merkmale: v.merkmale, art: scope?.art, stufe: "ki", kostenUsd: ok.value.costUsd, at };
-  }
-  const a = sa.value;
-  const b = sb.value;
-  cost += a.costUsd + b.costUsd;
-  const va = norm(a.data);
-  const vb = norm(b.data);
-  const issuesA = qs1(p, va, rules);
-  const issuesB = qs1(p, vb, rules);
+  const failed = [sa, sb].filter((x): x is PromiseRejectedResult => x.status === "rejected");
+  if (failed.some((x) => x.reason instanceof BudgetError)) throw new BudgetError();
+  if (failed.length === 2) throw failed[0].reason;
+  const ok = (x: typeof sa) => (x.status === "fulfilled" ? x.value : null);
+  const a = ok(sa);
+  const b = ok(sb);
+  cost += (a?.costUsd ?? 0) + (b?.costUsd ?? 0);
+  const va = a ? norm(a.data) : undefined;
+  const vb = b ? norm(b.data) : undefined;
+  const issuesA = va ? qs1(p, va, rules) : [];
+  const issuesB = vb ? qs1(p, vb, rules) : [];
+  const done = (v: Verdict, stufe: MatchResult["stufe"] = "ki"): MatchResult => ({
+    status: v.status, grund: v.grund, teile: v.teile, frage: v.frage, merkmale: v.merkmale, art: scope?.art, stufe, kostenUsd: cost, at,
+  });
 
-  const agree = relevantSide(va.status) === relevantSide(vb.status)
-    && (va.status !== "unsicher" || va.frage?.merkmal === vb.frage?.merkmal || !!va.frage);
-  if (agree && issuesA.length === 0) {
-    const status: Status = va.status === "teilweise" || vb.status === "teilweise"
-      ? (va.status === "ja" && vb.status === "ja" ? "ja" : "teilweise")
-      : va.status;
-    return {
-      status, grund: va.grund, teile: va.teile ?? vb.teile, frage: va.frage ?? vb.frage,
-      merkmale: [...new Set([...va.merkmale, ...vb.merkmale])], art: scope?.art, stufe: "ki", kostenUsd: cost, at,
-    };
-  }
-  if (agree && issuesB.length === 0) {
-    return { status: vb.status, grund: vb.grund, teile: vb.teile, frage: vb.frage, merkmale: vb.merkmale, art: scope?.art, stufe: "ki", kostenUsd: cost, at };
+  if (va && vb) {
+    const agree = relevantSide(va.status) === relevantSide(vb.status)
+      && (va.status !== "unsicher" || va.frage?.merkmal === vb.frage?.merkmal || !!va.frage);
+    if (agree && issuesA.length === 0) {
+      const status: Status = va.status === "teilweise" || vb.status === "teilweise"
+        ? (va.status === "ja" && vb.status === "ja" ? "ja" : "teilweise")
+        : va.status;
+      return {
+        ...done(va), status, teile: va.teile ?? vb.teile, frage: va.frage ?? vb.frage,
+        merkmale: [...new Set([...va.merkmale, ...vb.merkmale])],
+      };
+    }
+    if (agree && issuesB.length === 0) return done(vb);
+  } else {
+    // Ein Prüfer ausgefallen: Der andere entscheidet allein, wenn sein Urteil
+    // die Regelprüfung besteht; sonst entscheidet der Schiedsrichter.
+    const single = (va ?? vb)!;
+    if ((va ? issuesA : issuesB).length === 0) return done(single);
   }
 
   // Schiedsrichter: sieht beide Urteile und die QS-1-Befunde.
@@ -276,23 +280,23 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
       model: MODELS.arbiter,
       system: `${MATCH_SYSTEM}\n\nZwei Prüfer kamen zu unterschiedlichen oder fehlerhaften Ergebnissen. Prüfe beide gegen Profil und
 Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten.`,
-      user: `${user}\n\nPRÜFER A: ${JSON.stringify(va)}\nBefunde Regelprüfung A: ${JSON.stringify(issuesA)}\n\nPRÜFER B: ${JSON.stringify(vb)}\nBefunde Regelprüfung B: ${JSON.stringify(issuesB)}`,
+      user: `${user}\n\nPRÜFER A: ${va ? JSON.stringify(va) : "ausgefallen"}\nBefunde Regelprüfung A: ${JSON.stringify(issuesA)}\n\nPRÜFER B: ${vb ? JSON.stringify(vb) : "ausgefallen"}\nBefunde Regelprüfung B: ${JSON.stringify(issuesB)}`,
       maxTokens: 5000,
     });
     cost += arb.costUsd;
     const vc = norm(arb.data);
-    if (qs1(p, vc, rules).length === 0) {
-      return { status: vc.status, grund: vc.grund, teile: vc.teile, frage: vc.frage, merkmale: vc.merkmale, art: scope?.art, stufe: "schiedsrichter", kostenUsd: cost, at };
-    }
+    if (qs1(p, vc, rules).length === 0) return done(vc, "schiedsrichter");
   } catch (e) {
     if (e instanceof BudgetError) throw e;
     console.error("arbiter failed:", e);
   }
-  const frage = va.frage ?? vb.frage ?? fallbackQuestion(p, scope, rules);
+  // Auch dieses „Unklar“ ist ein fertiges Ergebnis und wird gespeichert
+  // (früher stufe "fallback": lief bei jedem Seitenaufruf erneut).
+  const frage = va?.frage ?? vb?.frage ?? fallbackQuestion(p, scope, rules);
   return {
     status: "unsicher",
     grund: "Unklar, weil die Angaben im Profil für eine sichere Einschätzung nicht reichen.",
-    frage, art: scope?.art, stufe: "fallback", kostenUsd: cost, at,
+    frage, merkmale: frage ? [frage.merkmal] : [], art: scope?.art, stufe: "ki", kostenUsd: cost, at,
   };
 }
 
@@ -309,16 +313,24 @@ function fallbackQuestion(p: Profile, scope: Scope | undefined, rules: RuleResul
 const FW_MATCH_VERSION = 3;
 const cacheKey = (t: MatchTarget, sig: string) =>
   `relm:${t.u ? MATCH_VERSION : `f${FW_MATCH_VERSION}`}.${SCOPE_FORMAT}:${t.key}:${sig}`;
-/** Festgehaltene Ergebnisse je Profil und Prüfgeneration (Hash, Feld = Ziel). */
-const storeKey = (p: Profile, gen: number) => `relp:1:${p.id}:${gen}`;
+/** Festgehaltene Ergebnisse je Profil (Hash, Feld = Ziel). Die Generation
+    stammt aus der Zeit von „Neu prüfen“ und bleibt seitdem fest. */
+const storeKey = (p: Profile) => `relp:1:${p.id}:${p.check?.gen ?? 0}`;
+const overrideKey = (p: Profile) => `relo:1:${p.id}`;
+const failKey = (p: Profile) => `relf:1:${p.id}`;
+const lockKey = (p: Profile, key: string) => `rlock:${p.id}:${key}`;
 const STORE_TTL = 60 * 60 * 24 * 400;
+/** Nach so vielen API-Fehlern je Paar bleibt es bei „Unklar“ (keine Endlosschleife). */
+const MAX_FAILS = 3;
 
 /** „Unklar“, dessen Rückfrage das Profil inzwischen beantwortet: neu prüfen. */
 const answered = (p: Profile, r: MatchResult) =>
   r.status === "unsicher" && !!r.frage && featureValue(p, r.frage.merkmal) !== null;
 
 function scopeFeatures(scope: Scope): Set<string> {
-  const ids = new Set<string>(["finanzholding", "gruppe_uebergeordnet"]);
+  // Konsolidierte Pflichten treffen auch Finanzholdings und übergeordnete
+  // Unternehmen (ruleCheck); bei reinen Einzelpflichten spielen sie keine Rolle.
+  const ids = new Set<string>(scope.ebene !== "einzel" ? ["finanzholding", "gruppe_uebergeordnet"] : []);
   const add = (gs: Group[]) => gs.forEach((g) => g.alle.forEach((x) => ids.add(x)));
   add(scope.adressaten);
   add(scope.ausschluesse);
@@ -328,119 +340,190 @@ function scopeFeatures(scope: Scope): Set<string> {
   return ids;
 }
 
-/** Ergebnis der Vorgeneration übernehmen, wenn die Änderung es nicht berührt. */
-function reusable(r: MatchResult, changed: Set<string>, t: MatchTarget, scope: Scope | undefined): boolean {
-  if (r.stufe === "fallback" || r.status === "unsicher") return false;
+/** Bleibt ein gespeichertes Ergebnis nach einer Profiländerung gültig?
+    `isTrue` liefert den neuen Wert eines Merkmals. */
+export function stillValid(
+  r: MatchResult, changed: Set<string>, scope: Scope | undefined, isTrue: (id: string) => boolean,
+): boolean {
+  if (r.stufe === "fallback") return false;
   if (changed.size === 0) return true;
-  const used = new Set([...(r.merkmale ?? []), ...(r.frage ? [r.frage.merkmal] : [])]);
+  if (r.stufe === "regel" && r.art === "keine_institute") return true;
+  const used = new Set([
+    ...(r.merkmale ?? []), ...(r.frage ? [r.frage.merkmal] : []), ...(r.weitere ?? []).map((w) => w.merkmal),
+  ]);
+  if ([...changed].some((c) => used.has(c))) return false;
   if (scope) {
     const rel = scopeFeatures(scope);
-    return ![...changed].some((c) => rel.has(c) || used.has(c));
+    return ![...changed].some((c) => rel.has(c));
   }
-  // Ganzes Rahmenwerk ohne Analyse: Art und Erlaubnisse prägen das Urteil immer.
-  if (changed.has("lic")) return false;
-  return ![...changed].some((c) => {
-    const g = featureById(c)?.g;
-    return g === "art" || g === "erl" || used.has(c);
-  });
+  // Ohne Anforderungsanalyse (Rahmenwerke, kuratierte Chronologie-Einträge):
+  // Eine andere Institutsart kann jedes Urteil kippen. Sonst gilt: Ein „Ja“
+  // kippt nur, wenn ein Merkmal wegfällt, auf das es sich stützt (oben
+  // geprüft). Ein „Nein“ oder „Unklar“ kann kippen, wenn eine Erlaubnis, ein
+  // Geschäft oder ein Aufsichtsmerkmal hinzukommt.
+  if ([...changed].some((c) => featureById(c)?.g === "art")) return false;
+  if (r.status === "ja" || r.status === "teilweise") return true;
+  return ![...changed].some((c) => c === "lic" || (featureById(c)?.g !== "recht" && isTrue(c)));
 }
 
-async function computeOne(
-  p: Profile, t: MatchTarget, opts: { noLlm?: boolean; prev?: MatchResult; changed?: Set<string> },
-): Promise<MatchResult> {
+/** Nach einer Profiländerung: nur die Ergebnisse löschen, die an den
+    geänderten Merkmalen hängen. Sie werden beim nächsten Lauf neu geprüft,
+    alle anderen bleiben ohne neue KI-Kosten stehen. */
+export async function invalidateChanged(
+  p: Profile, oldVals: string, resolve: (key: string) => MatchTarget | null,
+): Promise<{ stored: number; removed: string[] }> {
+  const changed = changedFeatures(oldVals, profileValues(p));
+  if (!changed.size) return { stored: 0, removed: [] };
+  const store = storeKey(p);
+  const all = (await redis().hgetall<Record<string, MatchResult>>(store)) ?? {};
+  const removed = Object.entries(all).filter(([k, r]) => {
+    const t = resolve(k);
+    if (!t) return true;
+    return !stillValid(r, changed, t.u?.url ? scopeFor(t.u.url) : undefined, (id) => featureValue(p, id) === true);
+  }).map(([k]) => k);
+  if (removed.length) await redis().hdel(store, ...removed);
+  await redis().del(failKey(p)).catch(() => 0);
+  return { stored: Object.keys(all).length, removed };
+}
+
+/* ---------- Vom Nutzer gesetzter Status ---------- */
+
+export interface Override { status: Status; at: string }
+
+export async function setOverride(p: Profile, key: string, status: Status | null): Promise<void> {
+  if (status === null) await redis().hdel(overrideKey(p), key);
+  else {
+    await redis().hset(overrideKey(p), { [key]: { status, at: new Date().toISOString() } satisfies Override });
+    await redis().expire(overrideKey(p), STORE_TTL);
+  }
+}
+
+function fromOverride(o: Override, auto: MatchResult | null | undefined): MatchResult {
+  return {
+    status: o.status,
+    grund: "Status von Ihnen festgelegt.",
+    stufe: "nutzer",
+    auto: auto && auto.stufe !== "fallback" && auto.stufe !== "nutzer" ? { status: auto.status, grund: auto.grund } : undefined,
+    art: auto?.art,
+    kostenUsd: 0,
+    at: o.at,
+  };
+}
+
+const pendingResult = (scope: Scope | undefined, frage?: { merkmal: string; frage: string }): MatchResult => ({
+  status: "unsicher", grund: "Noch nicht geprüft.", art: scope?.art, frage, stufe: "fallback", kostenUsd: 0,
+  at: new Date().toISOString(),
+});
+
+async function computeOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean; persist: boolean }): Promise<MatchResult> {
   const scope = t.u?.url ? scopeFor(t.u.url) : undefined;
   const rules = ruleCheck(p, scope);
   if (rules.decided) return rules.decided;
-  const sig = profileSignature(p);
-  const key = cacheKey(t, sig);
+  const key = cacheKey(t, profileSignature(p));
   try {
     const hit = await redis().get<MatchResult>(key);
     if (hit && !answered(p, hit)) return hit;
   } catch { /* ohne Cache weiter */ }
-  if (opts.prev && opts.changed && reusable(opts.prev, opts.changed, t, scope)) return opts.prev;
   const extra = (main?: { merkmal: string }) =>
     (scope?.fragen ?? []).filter((f) => featureValue(p, f.merkmal) === null && f.merkmal !== main?.merkmal).slice(0, 3);
   if (opts.noLlm) {
     const frage = fallbackQuestion(p, scope, rules);
-    return {
-      status: "unsicher", grund: "Noch nicht geprüft.", art: scope?.art,
-      frage, weitere: extra(frage), stufe: "fallback", kostenUsd: 0, at: new Date().toISOString(),
-    };
+    return { ...pendingResult(scope, frage), weitere: extra(frage) };
+  }
+  // Sperre je Paar: Komplettlauf und Seitenaufruf prüfen nie dasselbe Paar
+  // gleichzeitig (sonst doppelte KI-Kosten). Wer die Sperre nicht bekommt,
+  // meldet „Noch nicht geprüft“; der Browser fragt kurz darauf nach.
+  if (opts.persist) {
+    const got = await redis().set(lockKey(p, t.key), 1, { nx: true, ex: 180 }).catch(() => "OK");
+    if (got !== "OK") return pendingResult(scope);
   }
   let result: MatchResult;
   try {
     result = await llmMatch(p, t, scope, rules);
   } catch (e) {
-    // Budget erreicht oder API-Fehler: nichts festhalten, ehrlich „unsicher“.
     console.error("relevance llm failed:", t.key, e instanceof Error ? e.message : e);
     const frage = fallbackQuestion(p, scope, rules);
-    return {
+    const budget = e instanceof BudgetError;
+    // API-Fehler zählen je Paar; nach MAX_FAILS bleibt es dauerhaft bei
+    // „Unklar“ (der Nutzer kann den Status selbst setzen). Budget-Stopps
+    // zählen nicht, sie lösen sich im Folgemonat.
+    let fails = 0;
+    if (!budget && opts.persist) fails = await redis().hincrby(failKey(p), t.key, 1).catch(() => 0);
+    const final = fails >= MAX_FAILS;
+    result = {
       status: "unsicher",
-      grund: e instanceof BudgetError ? "Prüfung derzeit ausgelastet, bitte später erneut ansehen." : "Prüfung derzeit nicht verfügbar.",
-      frage, weitere: extra(frage), art: scope?.art, stufe: "fallback", kostenUsd: 0,
-      at: new Date().toISOString(),
+      grund: budget ? "Prüfung derzeit ausgelastet, bitte später erneut ansehen."
+        : final ? "Unklar, weil die automatische Prüfung wiederholt nicht möglich war." : "Prüfung derzeit nicht verfügbar.",
+      frage, weitere: extra(frage), merkmale: frage ? [frage.merkmal] : [], art: scope?.art,
+      stufe: final ? "ki" : "fallback", kostenUsd: 0, at: new Date().toISOString(),
     };
+    if (opts.persist) await redis().del(lockKey(p, t.key)).catch(() => 0);
+    return result;
   }
   if (result.status === "unsicher") result.weitere = extra(result.frage);
-  if (result.stufe !== "fallback") {
-    try { await redis().set(key, result, { ex: TTL }); } catch { /* egal */ }
-  }
+  try { await redis().set(key, result, { ex: TTL }); } catch { /* egal */ }
   return result;
 }
 
 /** Mehrere Ziele mit begrenzter Parallelität. Bereits geprüfte Paare kommen
-    aus dem Profil-Speicher und kosten nichts. */
+    aus dem Profil-Speicher und kosten nichts; vom Nutzer gesetzte Status
+    gehen vor und lösen gar keine Prüfung aus. `persist: false` für
+    Browser-Entwürfe von Gästen (deren Merkmale sich ständig ändern): dann
+    nur Signatur-Cache. */
 export async function matchMany(
   p: Profile,
   targets: MatchTarget[],
-  opts: { concurrency?: number; noLlm?: boolean; deadlineMs?: number } = {},
+  opts: { concurrency?: number; noLlm?: boolean; deadlineMs?: number; persist?: boolean } = {},
 ): Promise<Record<string, MatchResult>> {
   const out: Record<string, MatchResult> = {};
   if (!targets.length) return out;
-  const gen = p.check?.gen ?? 0;
-  const store = storeKey(p, gen);
+  const persist = opts.persist !== false;
+  const store = storeKey(p);
   const fields = targets.map((t) => t.key);
   let stored: Record<string, MatchResult | null> = {};
-  let prev: Record<string, MatchResult | null> = {};
-  try {
-    stored = (await redis().hmget<Record<string, MatchResult | null>>(store, ...fields)) ?? {};
-  } catch { /* ohne Speicher weiter */ }
+  let overrides: Record<string, Override | null> = {};
+  if (persist) {
+    try {
+      [stored, overrides] = await Promise.all([
+        redis().hmget<Record<string, MatchResult | null>>(store, ...fields).then((x) => x ?? {}),
+        redis().hmget<Record<string, Override | null>>(overrideKey(p), ...fields).then((x) => x ?? {}),
+      ]);
+    } catch { /* ohne Speicher weiter */ }
+  }
   const todo = targets.filter((t) => {
+    const o = overrides[t.key];
+    if (o) { out[t.key] = fromOverride(o, stored[t.key]); return false; }
     const r = stored[t.key];
     if (r && !answered(p, r)) { out[t.key] = r; return false; }
     return true;
   });
   if (!todo.length) return out;
 
-  // Neue Generation: Ergebnisse der Vorgeneration als Kandidaten.
-  let changed: Set<string> | undefined;
-  if (gen > 0 && p.check?.prevVals) {
-    changed = changedFeatures(p.check.prevVals, profileValues(p));
-    try {
-      prev = (await redis().hmget<Record<string, MatchResult | null>>(storeKey(p, gen - 1), ...todo.map((t) => t.key))) ?? {};
-    } catch { /* dann neu prüfen */ }
-  }
-
   const fresh: Record<string, MatchResult> = {};
   const queue = [...todo];
   const stopAt = opts.deadlineMs ? Date.now() + opts.deadlineMs : Infinity;
   const worker = async () => {
     for (let t = queue.shift(); t; t = queue.shift()) {
-      const r = await computeOne(p, t, {
-        noLlm: opts.noLlm || Date.now() > stopAt, prev: prev[t.key] ?? undefined, changed,
-      });
+      const r = await computeOne(p, t, { noLlm: opts.noLlm || Date.now() > stopAt, persist });
       out[t.key] = r;
       if (r.stufe !== "fallback") fresh[t.key] = r;
     }
   };
   await Promise.all(Array.from({ length: Math.min(opts.concurrency ?? 4, todo.length) }, worker));
-  if (Object.keys(fresh).length) {
+  if (persist && Object.keys(fresh).length) {
     try {
       await redis().hset(store, fresh);
       await redis().expire(store, STORE_TTL);
     } catch { /* egal */ }
   }
   return out;
+}
+
+/** Wie viele der Ziele sind für das Profil schon gespeichert? */
+export async function storedCount(p: Profile, keys: string[]): Promise<number> {
+  if (!keys.length) return 0;
+  const got = (await redis().hmget<Record<string, MatchResult | null>>(storeKey(p), ...keys)) ?? {};
+  return Object.values(got).filter(Boolean).length;
 }
 
 export const STATUS_LABEL: Record<Status, string> = {

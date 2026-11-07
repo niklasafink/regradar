@@ -13,7 +13,8 @@ import {
 import { useStore } from "@/lib/store";
 import { RelevanceChip } from "@/components/relevance-chip";
 import { RelevanceStatus } from "@/components/relevance-status";
-import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
+import { activeName, hasProfile, relMatches, useMe, useRelevance, useRelFilter } from "@/lib/relevanceClient";
+import { RelevanceFilter } from "@/components/relevance-filter";
 import { useState } from "react";
 import type { Framework, Provider, Topic, Txt, Update } from "@/lib/base";
 
@@ -53,11 +54,15 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
     .sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
   const fresh = ups.filter(({ u }) => daysAgo(u.d) <= 30).length;
   const sources = [...new Set(ups.map(({ u }) => u.src))];
-  const rel = useRelevance(
-    ups.slice(0, 40).map(({ u }) => relKey(u.href)).filter((k): k is string => !!k),
-    hasProfile(me),
-  );
+  const withProfile = hasProfile(me);
+  const [relFilter, setRelFilter] = useRelFilter();
+  const upKeys = ups.map(({ u }) => relKey(u.href)).filter((k): k is string => !!k);
+  // Volle Prüfung für die obersten Einträge, der Rest nur ohne KI für den Filter.
+  const rel = useRelevance(upKeys.slice(0, 40), withProfile, upKeys);
   const relName = activeName(me);
+  const listed = withProfile && relFilter !== "alle"
+    ? ups.filter(({ u }) => { const k = relKey(u.href); return !!k && relMatches(relFilter, rel[k]); })
+    : ups;
   const tileCount = kids.length > 0 ? kids.length + 2 : 0;
   const tile = (active: boolean) =>
     `flex w-64 items-center gap-3 rounded-2xl border px-3.5 py-2.5 text-left transition-colors ${
@@ -241,12 +246,27 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
                   : "No updates for this selection yet. New releases from the primary sources will appear here automatically."}
               </p>
             )}
-            {ups.map(({ u, owner }, i) => {
+            {ups.length > 0 && (
+              <RelevanceFilter
+                className="mb-4"
+                keys={upKeys}
+                rel={rel}
+                value={relFilter}
+                onChange={setRelFilter}
+                show={withProfile}
+              />
+            )}
+            {ups.length > 0 && listed.length === 0 && (
+              <p className="rounded-2xl border border-slate-200 bg-white p-4 text-sm leading-relaxed text-slate-500">
+                Keine geprüften Updates mit diesem Status{relName ? ` für ${relName}` : ""}.
+              </p>
+            )}
+            {listed.map(({ u, owner }, i) => {
               const rk = relKey(u.href);
               const isNew = daysAgo(u.d) <= 14;
               const expired = !!u.deadline && deadlineExpired(u.deadline);
               const urgent = u.deadline && !expired && daysUntil(u.deadline) < 60;
-              const last = i === ups.length - 1;
+              const last = i === listed.length - 1;
               return (
                 <div
                   key={i}

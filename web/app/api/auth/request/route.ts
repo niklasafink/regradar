@@ -1,3 +1,4 @@
+import { logActivity } from "@/lib/relevance/activity";
 import { createMagicLink, isEmail } from "@/lib/accounts";
 import { sanitizeProfile } from "@/lib/relevance/profile";
 import { rateLimit, sendMagicLinkMail } from "@/lib/relevance/server";
@@ -19,5 +20,6 @@ export async function POST(request: Request) {
     console.error("magic link mail failed:", e);
     return Response.json({ error: "E-Mail konnte nicht versendet werden." }, { status: 502 });
   }
+  await logActivity(request, "Anmeldelink angefordert", draft ? `mit Profil ${draft.name}` : undefined, email);
   return Response.json({ ok: true });
 }

@@ -3,14 +3,14 @@
 
 import { Resend } from "resend";
 import {
-  currentVisitor, domainOf, getDomainProfile, putDomainProfile, type Account,
+  currentVisitor, domainOf, getAccount, getDomainProfile, putDomainProfile, putProfileCheck, saveProfile, type Account,
 } from "../accounts";
 import { senderFields } from "../email";
-import { frameworkById } from "../logic";
+import { FRAMEWORKS, frameworkById } from "../logic";
 import { redis } from "../subscribers";
-import { updateBySlug } from "../updates";
-import type { MatchTarget } from "./match";
-import { profileFromDomain, sanitizeProfile, type DomainProfile, type Profile } from "./profile";
+import { UPDATE_PAGES, updateBySlug } from "../updates";
+import { invalidateChanged, matchMany, storedCount, type MatchTarget } from "./match";
+import { profileFromDomain, profileValues, sanitizeProfile, type DomainProfile, type Profile } from "./profile";
 
 /** "u:<slug>" = Update, "f:<id>" = Rahmenwerk als Ganzes. */
 export function resolveTarget(key: string): MatchTarget | null {
@@ -23,6 +23,80 @@ export function resolveTarget(key: string): MatchTarget | null {
     return fw ? { key, fw } : null;
   }
   return null;
+}
+
+/** Alle Ziele, für die die Website einen Status zeigt: jedes Update und
+    jedes Rahmenwerk. */
+export function allTargetKeys(): string[] {
+  return [...UPDATE_PAGES.map((p) => `u:${p.slug}`), ...FRAMEWORKS.map((f) => `f:${f.id}`)];
+}
+
+/** Profiländerung übernehmen: nur betroffene Ergebnisse verwerfen und den
+    Ausgangsstand auf die neuen Merkmale setzen. Liefert die Zahl der
+    verworfenen Ergebnisse (null = nichts geändert). */
+export async function reconcileProfile(email: string, p: Profile): Promise<number | null> {
+  const vals = profileValues(p);
+  if (!p.check || p.check.vals === vals) return null;
+  const { removed } = await invalidateChanged(p, p.check.vals, resolveTarget);
+  p.check = { gen: p.check.gen, vals, at: new Date().toISOString() };
+  await putProfileCheck(email, p.id, p.check);
+  return removed.length;
+}
+
+/** Profil speichern; bei geänderten Merkmalen nur Betroffenes verwerfen. */
+export async function saveAndReconcile(email: string, p: Profile, makeActive = true): Promise<{ account: Account; profile: Profile; removed: number | null }> {
+  const account = await saveProfile(email, p, makeActive);
+  const saved = account.profiles.find((x) => x.id === p.id)!;
+  const removed = await reconcileProfile(email, saved);
+  return { account, profile: saved, removed };
+}
+
+/** Komplettlauf: alle noch nicht gespeicherten Ziele eines Profils prüfen,
+    bis die Zeit um ist. Bereits gespeicherte Paare kosten nichts. Eine
+    Sperre je Profil verhindert parallele Läufe. */
+export async function prefillProfile(p: Profile, deadlineMs: number): Promise<{ total: number; stored: number; skipped?: boolean }> {
+  const keys = allTargetKeys();
+  const lock = `rlock:prefill:${p.id}`;
+  const got = await redis().set(lock, 1, { nx: true, ex: Math.ceil(deadlineMs / 1000) + 60 }).catch(() => "OK");
+  if (got !== "OK") return { total: keys.length, stored: await storedCount(p, keys), skipped: true };
+  try {
+    const stopAt = Date.now() + deadlineMs;
+    for (let i = 0; i < keys.length && Date.now() < stopAt; i += 60) {
+      const targets = keys.slice(i, i + 60).map(resolveTarget).filter((t) => t !== null);
+      await matchMany(p, targets, { concurrency: 10, deadlineMs: Math.max(0, stopAt - Date.now()) });
+    }
+    return { total: keys.length, stored: await storedCount(p, keys) };
+  } finally {
+    await redis().del(lock).catch(() => 0);
+  }
+}
+
+/** Alle Kontoprofile: Profiländerungen abgleichen, fehlende Paare prüfen
+    (neue Updates, abgebrochene Läufe). Für den Stundenlauf. */
+export async function prefillAll(deadlineMs: number): Promise<{ profiles: number; complete: number; open: number }> {
+  const stopAt = Date.now() + deadlineMs;
+  const emails: string[] = [];
+  let cursor = "0";
+  do {
+    const [next, batch] = await redis().scan(cursor, { match: "acct:*", count: 500 });
+    cursor = String(next);
+    emails.push(...batch.map((k) => k.slice(5)));
+  } while (cursor !== "0");
+  let profiles = 0;
+  let complete = 0;
+  let open = 0;
+  for (const email of emails) {
+    const a = await getAccount(email);
+    for (const p of a?.profiles ?? []) {
+      profiles++;
+      await reconcileProfile(email, p);
+      const left = stopAt - Date.now();
+      const r = left > 5_000 ? await prefillProfile(p, left) : { total: 1, stored: 0 };
+      if (r.stored >= r.total) complete++;
+      else open += r.total - r.stored;
+    }
+  }
+  return { profiles, complete, open };
 }
 
 export interface VisitorProfile {

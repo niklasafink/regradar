@@ -1,3 +1,4 @@
+import { logActivity } from "@/lib/relevance/activity";
 import { matchMany } from "@/lib/relevance/match";
 import { rateLimit, resolveTarget, visitorProfile } from "@/lib/relevance/server";
 import { scopeFor } from "@/lib/relevance/scopes";
@@ -23,7 +24,13 @@ export async function POST(request: Request) {
   // Gäste und Vorprofile: begrenztes Tageskontingent für KI-Prüfungen;
   // darüber hinaus nur Regel- und Cache-Ergebnisse.
   const allowLlm = !body.noLlm && (vp.source === "konto" || (await rateLimit(request, "check", 150)));
-  const results = await matchMany(vp.profile, targets, { noLlm: !allowLlm, deadlineMs: 25_000, concurrency: 10 });
+  // Browser-Entwürfe von Gästen ändern sich laufend: kein Profil-Speicher,
+  // nur der Cache nach Merkmalssignatur.
+  const results = await matchMany(vp.profile, targets, {
+    noLlm: !allowLlm, deadlineMs: 25_000, concurrency: 10, persist: vp.source !== "entwurf",
+  });
+  const label = { konto: "Status angezeigt", domain: "Status angezeigt (Vorprofil Domain)", entwurf: "Status angezeigt (Entwurf)" }[vp.source ?? "entwurf"];
+  await logActivity(request, body.preview ? "Vorschau im Profil-Ablauf" : label, vp.profile.name);
   const titles = Object.fromEntries(targets.map((t) => [t.key, t.u ? { ti: t.u.ti.de, d: t.u.d, fw: t.fw.n.de } : { ti: t.fw.n.de, d: "", fw: "" }]));
   return Response.json({
     profile: { id: vp.profile.id, name: vp.profile.name, origin: vp.profile.origin },

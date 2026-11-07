@@ -10,7 +10,8 @@ import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf,
   PROVIDER_SHORT, tx, type Impact,
 } from "@/lib/core";
-import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
+import { activeName, hasProfile, relMatches, useMe, useRelevance, useRelFilter } from "@/lib/relevanceClient";
+import { RelevanceFilter } from "@/components/relevance-filter";
 import { RelevanceChip } from "@/components/relevance-chip";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
@@ -54,15 +55,20 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
     track("updates_screen_viewed");
   }, []);
 
-  const shown = sel
+  const byType = sel
     ? UPDATE_PAGES.filter((p) => p.fw.ents.includes(sel))
     : UPDATE_PAGES;
 
-  // Einschlägigkeit für das Profil des Besuchers (nur die obersten Einträge,
-  // weiter unten bleibt es bei der Detailseite).
+  // Einschlägigkeit für das Profil des Besuchers: volle Prüfung nur für die
+  // obersten Einträge; für den Filter fragen wir den Rest ohne KI ab
+  // (Regeln und gespeicherte Ergebnisse).
   const me = useMe();
-  const rel = useRelevance(shown.slice(0, 40).map((p) => `u:${p.slug}`), hasProfile(me));
+  const withProfile = hasProfile(me);
+  const [relFilter, setRelFilter] = useRelFilter();
+  const typeKeys = byType.map((p) => `u:${p.slug}`);
+  const rel = useRelevance(typeKeys.slice(0, 40), withProfile, typeKeys);
   const relName = activeName(me);
+  const shown = withProfile ? byType.filter((p) => relMatches(relFilter, rel[`u:${p.slug}`])) : byType;
 
   const pill = (active: boolean) =>
     `inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
@@ -120,6 +126,21 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
             </button>
           ))}
         </nav>
+
+        <RelevanceFilter
+          className="mt-3"
+          keys={typeKeys}
+          rel={rel}
+          value={relFilter}
+          onChange={setRelFilter}
+          show={withProfile}
+        />
+
+        {withProfile && relFilter !== "alle" && shown.length === 0 && (
+          <p className="py-16 text-center text-sm text-slate-500">
+            Keine geprüften Einträge mit diesem Status{relName ? ` für ${relName}` : ""}.
+          </p>
+        )}
 
         {/* Chronologische Liste mit Zeitlinie */}
         <ol className="mt-6">

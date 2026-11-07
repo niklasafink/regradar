@@ -3,14 +3,17 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
-  activeName, activeStale, answerQuestion, hasProfile, isPending, recheckProfile, STATUS_LABEL, statusPill,
-  useMe, useRelevance,
+  activeName, answerQuestion, hasProfile, isPending, setStatus, STATUS_LABEL, statusPill,
+  useMe, useRelevance, type Status,
 } from "@/lib/relevanceClient";
 import { RelevanceHint } from "./relevance-hint";
 
+const CHOICES: Status[] = ["ja", "teilweise", "nein", "unsicher"];
+
 /** Status oben rechts auf Detailseiten (Update, Rahmenwerk): gut sichtbarer
-    Chip; ein Klick zeigt den Grund in einem Satz und, bei „Unklar“, die
-    offenen Fragen zum direkten Beantworten. */
+    Chip; ein Klick zeigt den Grund in einem Satz, bei „Unklar“ die offenen
+    Fragen zum direkten Beantworten und (angemeldet) die Möglichkeit, den
+    Status selbst festzulegen. */
 export function RelevanceStatus({ target, className = "" }: { target: string; className?: string }) {
   const me = useMe();
   const withProfile = hasProfile(me);
@@ -31,7 +34,11 @@ export function RelevanceStatus({ target, className = "" }: { target: string; cl
   if (!me || !withProfile) return null;
   const r = res[target];
   const name = activeName(me);
-  const stale = activeStale(me);
+  const manual = r?.stufe === "nutzer";
+  const choose = async (s: Status | null) => {
+    setBusy(true);
+    try { await setStatus(target, s); } finally { setBusy(false); }
+  };
 
   if (!r || isPending(r)) {
     return (
@@ -91,17 +98,35 @@ export function RelevanceStatus({ target, className = "" }: { target: string; cl
               ))}
             </div>
           )}
-          {stale && (
-            <div className="border-t border-slate-100 pt-3 text-xs text-slate-600">
-              <p>Ihr Profil hat sich seit der letzten Prüfung geändert. Bisherige Ergebnisse bleiben bestehen.</p>
-              <button
-                type="button"
-                disabled={busy}
-                onClick={async () => { setBusy(true); try { await recheckProfile(stale.id); } finally { setBusy(false); } }}
-                className="mt-2 rounded-full bg-slate-900 px-3 py-1 font-medium text-white hover:bg-slate-700 disabled:opacity-50"
-              >
-                Neu prüfen
-              </button>
+          {me.loggedIn && (
+            <div className="space-y-2 border-t border-slate-100 pt-3 text-xs">
+              <p className="font-medium text-slate-900">Status selbst festlegen</p>
+              <div className="flex flex-wrap gap-1.5">
+                {CHOICES.map((s) => (
+                  <button
+                    key={s}
+                    type="button"
+                    disabled={busy || (manual && r.status === s)}
+                    aria-pressed={manual && r.status === s}
+                    onClick={() => choose(s)}
+                    className={`rounded-full px-3 py-0.5 font-medium disabled:cursor-default ${
+                      manual && r.status === s
+                        ? "bg-slate-900 text-white"
+                        : "border border-slate-300 text-slate-700 hover:border-slate-900 hover:text-slate-900 disabled:opacity-50"
+                    }`}
+                  >
+                    {STATUS_LABEL[s]}
+                  </button>
+                ))}
+              </div>
+              {manual && (
+                <p className="text-slate-500">
+                  {r.auto ? `Automatische Einschätzung: ${STATUS_LABEL[r.auto.status]}. ` : ""}
+                  <button type="button" disabled={busy} onClick={() => choose(null)} className="font-medium text-slate-900 underline-offset-2 hover:underline disabled:opacity-50">
+                    Automatische Einschätzung verwenden
+                  </button>
+                </p>
+              )}
             </div>
           )}
           <p className="border-t border-slate-100 pt-3 text-xs text-slate-500">

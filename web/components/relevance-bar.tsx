@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 import {
-  activeName, activeStale, hasProfile, readDraft, recheckProfile, useMe,
+  activeName, hasProfile, readDraft, useMe,
 } from "@/lib/relevanceClient";
 
 /** Prüfziel der aktuellen Seite: Update-Detail oder Rahmenwerk. */
@@ -24,12 +23,10 @@ export function RelevanceBar() {
   const me = useMe();
   const key = targetOf(pathname);
   const withProfile = hasProfile(me);
-  const [busy, setBusy] = useState(false);
 
   if (!me || pathname.startsWith("/profil") || pathname.startsWith("/admin")) return null;
   const name = activeName(me);
   const next = encodeURIComponent(pathname);
-  const stale = activeStale(me);
 
   const register = !me.loggedIn && withProfile ? (
     <Link href="/profil?speichern=1" className="shrink-0 font-medium text-slate-900 underline-offset-2 hover:underline">
@@ -38,7 +35,7 @@ export function RelevanceBar() {
   ) : null;
 
   // Detailseiten zeigen den Status oben rechts am Titel (RelevanceStatus);
-  // die Zeile bleibt dort nur für Registrierung oder „Neu prüfen“.
+  // die Zeile bleibt dort nur für die Registrierung.
   let content: React.ReactNode;
   if (!withProfile) {
     content = (
@@ -55,22 +52,6 @@ export function RelevanceBar() {
         >
           {key ? "Für mein Institut prüfen →" : "Institutsprofil anlegen →"}
         </Link>
-      </>
-    );
-  } else if (stale) {
-    content = (
-      <>
-        <span className="text-slate-600">
-          Profil <span className="font-medium text-slate-900">{stale.name}</span> geändert. Bisherige Einschätzungen bleiben, bis Sie neu prüfen.
-        </span>
-        <button
-          type="button"
-          disabled={busy}
-          onClick={async () => { setBusy(true); try { await recheckProfile(stale.id); } finally { setBusy(false); } }}
-          className="shrink-0 rounded-full bg-slate-900 px-3 py-0.5 font-medium text-white hover:bg-slate-700 disabled:opacity-50"
-        >
-          Neu prüfen
-        </button>
       </>
     );
   } else if (key) {

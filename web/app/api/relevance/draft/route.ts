@@ -1,3 +1,4 @@
+import { logActivity } from "@/lib/relevance/activity";
 import { draftProfile, manualProfile, questionsFor, type Profile } from "@/lib/relevance/profile";
 import { rateLimit } from "@/lib/relevance/server";
 
@@ -19,6 +20,7 @@ export async function POST(request: Request) {
     } else {
       return Response.json({ error: "registryId oder name+facts fehlt" }, { status: 400 });
     }
+    await logActivity(request, body.registryId ? "Profil-Entwurf (Register)" : "Profil-Entwurf (manuell)", profile.name);
     return Response.json({ profile, questions: questionsFor(profile) });
   } catch (e) {
     console.error("draft failed:", e);

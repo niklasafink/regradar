@@ -9,7 +9,8 @@ import type { Provider, Topic, Txt } from "@/lib/base";
 import { daysAgo, fmtDate, tx } from "@/lib/core";
 import { useStore } from "@/lib/store";
 import { RelevanceChip } from "@/components/relevance-chip";
-import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
+import { activeName, hasProfile, relMatches, useMe, useRelevance, useRelFilter } from "@/lib/relevanceClient";
+import { RelevanceFilter } from "@/components/relevance-filter";
 
 /** Rahmenwerk-Kachel mit den angezeigten Feldern (vom Server vorbereitet). */
 export interface BoardFramework {
@@ -33,13 +34,19 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
   const { lang } = useStore();
   const [selected, setSelected] = useState<string[]>([]);
 
-  const shown = selected.length ? topics.filter((t) => selected.includes(t.id)) : topics;
+  const byTopic = selected.length ? topics.filter((t) => selected.includes(t.id)) : topics;
   const me = useMe();
-  const rel = useRelevance(
-    [...new Set(shown.flatMap((t) => t.fws.map((f) => `f:${f.id}`)))],
-    hasProfile(me),
-  );
+  const withProfile = hasProfile(me);
+  const [relFilter, setRelFilter] = useRelFilter();
+  const fwKeys = [...new Set(byTopic.flatMap((t) => t.fws.map((f) => `f:${f.id}`)))];
+  const rel = useRelevance(fwKeys, withProfile);
   const relName = activeName(me);
+  // Filter nach Einschlägigkeit: Themen ohne passende Rahmenwerke entfallen.
+  const shown = !withProfile || relFilter === "alle"
+    ? byTopic
+    : byTopic
+        .map((t) => ({ ...t, fws: t.fws.filter((f) => relMatches(relFilter, rel[`f:${f.id}`])) }))
+        .filter((t) => t.fws.length > 0);
 
   const toggleTopic = (id: string) => {
     if (id === "ALL") return setSelected([]);
@@ -116,7 +123,22 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
           ))}
         </nav>
 
-        {shown.length === 0 && (
+        <RelevanceFilter
+          className="mt-3"
+          keys={fwKeys}
+          rel={rel}
+          value={relFilter}
+          onChange={setRelFilter}
+          show={withProfile}
+        />
+
+        {shown.length === 0 && withProfile && relFilter !== "alle" && byTopic.length > 0 && (
+          <p className="py-20 text-center text-sm text-slate-500">
+            Keine geprüften Rahmenwerke mit diesem Status{relName ? ` für ${relName}` : ""}.
+          </p>
+        )}
+
+        {shown.length === 0 && byTopic.length === 0 && (
           <p className="py-20 text-center text-sm text-slate-500">
             {lang === "de"
               ? "Für diesen Anbietertyp sind keine Rahmenwerke hinterlegt."

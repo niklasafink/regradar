@@ -1,8 +1,14 @@
 import { cookies } from "next/headers";
+import { after } from "next/server";
 import {
-  SESSION_COOKIE, SUB_COOKIE, consumeMagicLink, createSession, peekMagicLink, saveProfile,
+  SESSION_COOKIE, SUB_COOKIE, consumeMagicLink, createSession, peekMagicLink,
   sessionCookieOptions, subCookieOptions, subCookieValue,
 } from "@/lib/accounts";
+import { logActivity } from "@/lib/relevance/activity";
+import { prefillProfile, saveAndReconcile } from "@/lib/relevance/server";
+
+// Nach dem Anmelden mit Profil läuft die Einschlägigkeit einmal komplett.
+export const maxDuration = 300;
 import { confirmPage, formBody, htmlPage } from "@/lib/confirmPage";
 
 /* Magic Link: GET zeigt nur eine Bestätigungsseite (Mail-Scanner rufen Links
@@ -31,8 +37,12 @@ export async function POST(request: Request) {
   const v = await consumeMagicLink(form.get("t") ?? "");
   if (!v) return Response.redirect(`${base}/profil?login=abgelaufen`, 303);
   if (v.draft) {
-    try { await saveProfile(v.email, v.draft); } catch (e) { console.error("save draft failed:", e); }
+    try {
+      const { profile } = await saveAndReconcile(v.email, v.draft);
+      after(() => prefillProfile(profile, 270_000).catch((e) => console.error("prefill failed:", e)));
+    } catch (e) { console.error("save draft failed:", e); }
   }
+  await logActivity(request, "Angemeldet", v.draft ? `Profil ${v.draft.name} gespeichert` : undefined, v.email);
   const jar = await cookies();
   jar.set(SESSION_COOKIE, await createSession(v.email), sessionCookieOptions);
   jar.set(SUB_COOKIE, subCookieValue(v.email), subCookieOptions);

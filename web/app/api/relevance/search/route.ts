@@ -1,3 +1,4 @@
+import { logActivity } from "@/lib/relevance/activity";
 import { ecbLookup, searchRegistry } from "@/lib/relevance/registry";
 import { rateLimit } from "@/lib/relevance/server";
 
@@ -11,6 +12,7 @@ export async function GET(request: Request) {
   }
   try {
     const hits = await searchRegistry(q);
+    await logActivity(request, "Institutssuche", q);
     return Response.json({
       hits: hits.map((h) => {
         const ecb = ecbLookup(h.name);

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
-  invalidate, readDraft, recheckProfile, statusPill, useMe, writeDraft,
+  invalidate, readDraft, statusPill, useMe, writeDraft,
 } from "@/lib/relevanceClient";
 import { RelevanceHint } from "@/components/relevance-hint";
 
@@ -176,11 +176,14 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       setProfile(upd.profile);
       if (me?.loggedIn) {
         const editing = (accountProfiles ?? []).some((x) => x.id === upd.profile.id);
-        await post("/api/account/profile", { action: "save", profile: upd.profile });
+        const saved = await post<{ rechecked?: number }>("/api/account/profile", { action: "save", profile: upd.profile });
         invalidate();
         if (editing) {
           await loadAccount();
-          setNotice(`Profil „${upd.profile.name}“ gespeichert. Die bisherigen Einschätzungen bleiben bestehen; mit „Neu prüfen“ übernehmen Sie die Änderungen.`);
+          const n = saved.rechecked ?? 0;
+          setNotice(n > 0
+            ? `Profil „${upd.profile.name}“ gespeichert. ${n === 1 ? "Eine Einschätzung hängt" : `${n} Einschätzungen hängen`} an den geänderten Angaben und ${n === 1 ? "wird" : "werden"} neu geprüft, alle anderen bleiben bestehen.`
+            : `Profil „${upd.profile.name}“ gespeichert. Die Änderungen berühren keine bisherige Einschätzung.`);
           setStep("liste");
         } else {
           window.location.href = nextPath();
@@ -234,20 +237,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
               <div className="min-w-0 flex-1">
                 <p className="font-medium text-slate-900">{p.name}</p>
                 <p className="text-xs text-slate-500">{p.gattung.join(", ") || "Manuell angelegt"}{supervision(p) ? `, ${supervision(p)}` : ""}</p>
-                {(p as Profile & { stale?: boolean }).stale && (
-                  <p className="mt-1 text-xs text-slate-600">Seit der letzten Prüfung geändert. Bisherige Einschätzungen bleiben, bis Sie neu prüfen.</p>
-                )}
               </div>
-              {(p as Profile & { stale?: boolean }).stale && (
-                <button type="button" className={btn} disabled={busy} onClick={async () => {
-                  setBusy(true);
-                  try {
-                    await recheckProfile(p.id);
-                    await loadAccount();
-                    setNotice(`Einschlägigkeit für „${p.name}“ wird neu geprüft. Unveränderte Ergebnisse werden übernommen.`);
-                  } finally { setBusy(false); }
-                }}>Neu prüfen</button>
-              )}
               {p.id === primaryId ? (
                 <span className={statusPill("teilweise")} title="Gilt für Ihre Newsletter-Mails">Primär (Newsletter)</span>
               ) : (
@@ -275,6 +265,8 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
                   .then((r) => { setQuestions(r.questions); setAnswers(Object.fromEntries(r.questions.map((x) => [x.id, x.value]))); });
                 setStep("pruefen");
               }}>Bearbeiten</button>
+              <a className={btn2} href={`/api/relevance/export?profileId=${encodeURIComponent(p.id)}`} download
+                title="Excel-Datei mit allen Rahmenwerken und Updates, ein Blatt je Themengebiet">Export (Excel)</a>
               <button type="button" className="text-sm text-slate-500 hover:text-red-600" onClick={async () => {
                 if (!confirm(`Profil „${p.name}“ löschen?`)) return;
                 await post("/api/account/profile", { action: "delete", id: p.id });

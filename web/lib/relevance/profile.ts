@@ -39,11 +39,11 @@ export interface Profile {
   closed: boolean;
   /** Herkunft: Register-Treffer, manuell, oder automatisch aus der Mail-Domain. */
   origin: "register" | "manuell" | "domain";
-  /** Stand der Einschlägigkeits-Prüfung: Ergebnisse liegen je Profil und
-      Generation fest (match.ts). Ändert sich das Profil, bleiben sie stehen,
-      bis der Nutzer „Neu prüfen“ klickt (Generation +1). `vals` = Merkmalswerte
-      zum Start der Generation, `prevVals` = die der Vorgeneration (für die
-      Wiederverwendung unberührter Ergebnisse). */
+  /** Stand der Einschlägigkeits-Prüfung: Ergebnisse liegen je Profil fest
+      (match.ts). `vals` = Merkmalswerte, auf denen die gespeicherten
+      Ergebnisse beruhen; weichen die aktuellen ab, verwirft
+      server.ts/reconcileProfile nur die betroffenen Ergebnisse. `gen` und
+      `prevVals` stammen aus der Zeit von „Neu prüfen“ (bis 07.11.2026). */
   check?: { gen: number; vals: string; prevVals?: string; at: string };
   createdAt: string;
   updatedAt: string;
@@ -85,15 +85,6 @@ export function changedFeatures(a: string, b: string): Set<string> {
   const out = new Set<string>();
   for (const k of new Set([...ma.keys(), ...mb.keys()])) if (ma.get(k) !== mb.get(k)) out.add(k);
   return out;
-}
-
-/** Profil seit dem Start der laufenden Prüfgeneration geändert? */
-export const profileChanged = (p: Profile) => !!p.check && p.check.vals !== profileValues(p);
-
-/** Neue Prüfgeneration („Neu prüfen“). */
-export function bumpCheck(p: Profile): void {
-  const gen = (p.check?.gen ?? 0) + 1;
-  p.check = { gen, vals: profileValues(p), prevVals: p.check?.vals, at: now() };
 }
 
 const now = () => new Date().toISOString();

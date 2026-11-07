@@ -15,8 +15,10 @@ export interface MatchResult {
   weitere?: { merkmal: string; frage: string }[];
   art?: "pflicht" | "kuenftig" | "information" | "keine_institute";
   stufe: string;
+  /** Bei stufe "nutzer": die automatische Einschätzung. */
+  auto?: { status: Status; grund: string };
 }
-export interface ProfileRef { id: string; name: string; origin: string; stale?: boolean }
+export interface ProfileRef { id: string; name: string; origin: string }
 export interface Me {
   loggedIn: boolean;
   email: string | null;
@@ -74,6 +76,7 @@ const results = new Map<string, MatchResult>();
 export function invalidate(): void {
   mePromise = null;
   results.clear();
+  cheapMiss.clear();
   if (typeof window !== "undefined") window.dispatchEvent(new Event(EVENT));
 }
 
@@ -106,19 +109,14 @@ export async function answerQuestion(me: Me, merkmal: string, value: boolean): P
   if (json.profile) writeDraft(json.profile);
 }
 
-/** Aktives Profil seit der letzten Prüfung geändert? (nur Konten) */
-export function activeStale(me: Me | null): ProfileRef | null {
-  if (!me?.loggedIn) return null;
-  const p = me.profiles.find((x) => x.id === me.activeId) ?? me.profiles[0];
-  return p?.stale ? p : null;
-}
-
-/** „Neu prüfen“: neue Prüfgeneration für ein geändertes Profil. */
-export async function recheckProfile(id: string): Promise<void> {
-  await fetch("/api/account/profile", {
-    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "recheck", id }),
+/** Status selbst festlegen (nur Konten); null = automatische Einschätzung. */
+export async function setStatus(key: string, status: Status | null): Promise<void> {
+  const res = await fetch("/api/relevance/override", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ key, status }),
   });
-  invalidate();
+  if (!res.ok) throw new Error(((await res.json().catch(() => ({}))) as { error?: string }).error ?? "Fehler");
+  results.delete(key);
+  if (typeof window !== "undefined") window.dispatchEvent(new Event(EVENT));
 }
 
 /** Hat der Besucher irgendein Profil (Konto, Entwurf, Domain-Vorprofil)? */
@@ -200,6 +198,44 @@ export function check(keys: string[]): Promise<void> {
 
 export const resultFor = (key: string) => results.get(key);
 
+/* Günstige Abfrage ohne KI (nur Regeln und gespeicherte Ergebnisse) für
+   Einträge jenseits der vollen Prüfung, damit der Filter die ganze Liste
+   abdeckt, ohne Kosten auszulösen. Nicht entschiedene Schlüssel merken wir
+   uns, damit sie nicht erneut abgefragt werden; die volle Prüfung bleibt
+   für sie offen (Detailseite, erste Einträge der Liste). */
+const cheapMiss = new Set<string>();
+const cheapInflight = new Set<string>();
+
+async function checkCheap(keys: string[]): Promise<void> {
+  const missing = keys.filter((k) => !results.has(k) && !cheapMiss.has(k) && !cheapInflight.has(k) && !inflight.has(k));
+  if (!missing.length) return;
+  missing.forEach((k) => cheapInflight.add(k));
+  const me = await loadMe();
+  const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
+  const queue: string[][] = [];
+  for (let i = 0; i < missing.length; i += 40) queue.push(missing.slice(i, i + 40));
+  const worker = async () => {
+    for (let chunk = queue.shift(); chunk; chunk = queue.shift()) {
+      try {
+        const res = await fetch("/api/relevance/check", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ keys: chunk, profile: draft, noLlm: true }),
+        });
+        const json = (await res.json()) as { results?: Record<string, MatchResult> };
+        for (const k of chunk) {
+          const v = json.results?.[k];
+          if (v && v.stufe !== "fallback") results.set(k, v);
+          else cheapMiss.add(k);
+        }
+        if (typeof window !== "undefined") window.dispatchEvent(new Event(PARTIAL));
+      } catch { /* still */ }
+      chunk.forEach((k) => cheapInflight.delete(k));
+    }
+  };
+  await Promise.all([worker(), worker(), worker()]);
+}
+
 /** React-Hook: Besucherstatus, aktualisiert bei Profilwechsel. */
 export function useMe(): Me | null {
   const [me, setMe] = useState<Me | null>(null);
@@ -216,23 +252,30 @@ export function useMe(): Me | null {
   return me;
 }
 
-/** React-Hook: Ergebnisse für mehrere Schlüssel ("u:<slug>", "f:<id>"). */
-export function useRelevance(keys: string[], enabled: boolean): Record<string, MatchResult> {
+/** React-Hook: Ergebnisse für mehrere Schlüssel ("u:<slug>", "f:<id>").
+    `cheap`: weitere Schlüssel, die nur ohne KI abgefragt werden (für den
+    Filter); ohne Ergebnis fehlen sie in der Rückgabe. */
+export function useRelevance(keys: string[], enabled: boolean, cheap: string[] = []): Record<string, MatchResult> {
   const [out, setOut] = useState<Record<string, MatchResult>>({});
-  const sig = keys.join("|");
+  const sig = keys.join("|") + "#" + cheap.join("|");
   useEffect(() => {
-    if (!enabled || !keys.length) return;
+    if (!enabled || (!keys.length && !cheap.length)) return;
     let alive = true;
     // Bis ein Ergebnis da ist, steht der Schlüssel auf „wird geprüft“.
     const show = () => {
       if (!alive) return;
       const o: Record<string, MatchResult> = {};
       for (const k of keys) o[k] = results.get(k) ?? PENDING;
+      for (const k of cheap) {
+        const r = results.get(k);
+        if (r && !(k in o)) o[k] = r;
+      }
       setOut(o);
     };
     const run = () => {
       show();
       void check(keys).then(show);
+      if (cheap.length) void checkCheap(cheap.filter((k) => !keys.includes(k))).then(show);
     };
     run();
     window.addEventListener(EVENT, run);
@@ -245,4 +288,39 @@ export function useRelevance(keys: string[], enabled: boolean): Record<string, M
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sig, enabled]);
   return out;
+}
+
+/* ---------- Filter nach Einschlägigkeit ---------- */
+
+export type RelFilter = "alle" | Status;
+const FILTER_KEY = "rr.relFilter";
+const FILTER_EVENT = "rr:relfilter";
+
+/** Auswahl gilt seitenübergreifend für die Sitzung. */
+export function useRelFilter(): [RelFilter, (f: RelFilter) => void] {
+  const [f, setF] = useState<RelFilter>("alle");
+  useEffect(() => {
+    const read = () => {
+      try {
+        const v = sessionStorage.getItem(FILTER_KEY) as RelFilter | null;
+        setF(v && (v === "alle" || v in STATUS_LABEL) ? v : "alle");
+      } catch { /* privat-Modus */ }
+    };
+    read();
+    window.addEventListener(FILTER_EVENT, read);
+    return () => window.removeEventListener(FILTER_EVENT, read);
+  }, []);
+  const set = (v: RelFilter) => {
+    setF(v);
+    try { sessionStorage.setItem(FILTER_KEY, v); } catch { /* privat-Modus */ }
+    window.dispatchEvent(new Event(FILTER_EVENT));
+  };
+  return [f, set];
+}
+
+/** Passt ein Ergebnis zum Filter? Ungeprüfte Einträge erscheinen nur unter „Alle“. */
+export function relMatches(f: RelFilter, r?: MatchResult): boolean {
+  if (f === "alle") return true;
+  if (!r || isPending(r)) return false;
+  return r.status === f;
 }

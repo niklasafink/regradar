@@ -118,4 +118,8 @@ cd "$SCRAPER"
 # Radar-Entscheidungen aus der Checklisten-Mail: KI-Analysen erstellen und
 # freigegebene Punkte umsetzen (Anweisung: scraper/RADAR_ACTIONS.md).
 /usr/bin/python3 radar_actions.py || echo "radar-actions fehlgeschlagen (weiter)"
+# Einschlägigkeit: für alle Kontoprofile fehlende Paare aus Profil und
+# Update/Rahmenwerk einmal prüfen (neue Updates, unterbrochene Komplettläufe).
+# Gespeicherte Ergebnisse kosten nichts; kein erneuter Lauf.
+/usr/bin/python3 relevance_prefill.py || echo "relevance-prefill fehlgeschlagen (weiter)"
 exit $RC

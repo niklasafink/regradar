@@ -32,6 +32,10 @@
     {
       "path": "/api/linkedin/cron?job=publish",
       "schedule": "0 7 * * *"
+    },
+    {
+      "path": "/api/relevance/activity-report",
+      "schedule": "0 18 * * *"
     }
   ]
 }

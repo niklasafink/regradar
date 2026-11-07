@@ -1,3 +1,4 @@
+import { logActivity } from "@/lib/relevance/activity";
 import { applyAnswers, questionsFor, sanitizeProfile } from "@/lib/relevance/profile";
 
 /* Antworten aus dem Fragebogen übernehmen (ohne KI). */
@@ -8,5 +9,6 @@ export async function POST(request: Request) {
   const p = sanitizeProfile(body.profile);
   if (!p) return Response.json({ error: "Profil fehlt" }, { status: 400 });
   applyAnswers(p, body.answers ?? {}, body.bilanzsumme ?? null);
+  await logActivity(request, "Fragebogen beantwortet", p.name);
   return Response.json({ profile: p, questions: questionsFor(p) });
 }
