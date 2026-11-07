@@ -20,6 +20,12 @@ WEB_LIVE_PATH = os.path.join(
 WEB_SOURCES_PATH = os.path.join(os.path.dirname(WEB_LIVE_PATH), "sources.json")
 
 MAX_PER_FRAMEWORK = 6
+# Meldungen der letzten RECENT_DAYS Tage werden nie gekappt (Nutzerentscheidung
+# 07.11.2026): Sonst verdrängen in aktiven Rahmenwerken neue Meldungen ältere,
+# bevor der Wochen-Newsletter sie verschickt hat, und deren Detailseiten
+# verschwinden. Die Kappung gilt nur für ältere Meldungen und zählt erst nach
+# dem Entfernen von Dubletten (BaFin-Rundschreiben, Pressemitteilung + Dokument).
+RECENT_DAYS = 90
 # Das BIS-Rahmenwerk bündelt vier Quellen (Basler Ausschuss, CPMI, FSI,
 # Pressemitteilungen); die Chronologie in data.ts endet vor dem Zeitfenster
 # des Scrapers (zwei Listenseiten), daher mehr Live-Einträge als üblich.
@@ -1254,8 +1260,17 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 ((r["publication_date"] or r["first_seen_at"] or "")[:10],
                  _title_tokens(r["title"])))
 
+    from datetime import timedelta as _td
+    recent_from = (_date.today() - _td(days=RECENT_DAYS)).isoformat()
+
+    def _is_recent(r):
+        return (r["publication_date"] or r["first_seen_at"] or "")[:10] >= recent_from
+
+    def _cap(fw_id):
+        return MAX_PER_FRAMEWORK_BY_ID.get(fw_id, MAX_PER_FRAMEWORK)
+
     selected = []
-    per_fw = {}
+    per_fw = {}  # nur ältere Meldungen; Vorauswahl mit Reserve für Dubletten
     seen_titles = set()  # Netz und doppelter Boden neben dedup_suppressed
     for prio in (True, False):
         for r, fw_id, date in candidates:
@@ -1268,13 +1283,15 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                 continue
             if not relevance.get(r["document_id"], True):
                 continue
-            if per_fw.get(fw_id, 0) >= MAX_PER_FRAMEWORK_BY_ID.get(fw_id, MAX_PER_FRAMEWORK):
+            recent = _is_recent(r)
+            if not recent and per_fw.get(fw_id, 0) >= 2 * _cap(fw_id):
                 continue
             title_key = (fw_id, _title_key(r["title"]))
             if title_key in seen_titles:
                 continue
             seen_titles.add(title_key)
-            per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
+            if not recent:
+                per_fw[fw_id] = per_fw.get(fw_id, 0) + 1
             selected.append((r, fw_id, date))
 
     # Dasselbe BaFin-Rundschreiben in mehreren Fassungen (auch über
@@ -1319,6 +1336,19 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     from .samepub import duplicates as samepub_duplicates
     same_pub = samepub_duplicates(conn, selected, _doc_type, _days_apart, _clean)
     selected = [x for x in selected if x[0]["document_id"] not in same_pub]
+
+    # Kappung je Rahmenwerk erst jetzt, nach den Dubletten: ältere Meldungen
+    # bis zur Grenze, jüngere (RECENT_DAYS) vollständig.
+    older = {}
+    capped = []
+    for x in selected:
+        r, fw_id, _ = x
+        if not _is_recent(r):
+            if older.get(fw_id, 0) >= _cap(fw_id):
+                continue
+            older[fw_id] = older.get(fw_id, 0) + 1
+        capped.append(x)
+    selected = capped
 
     # Big-4-/Kanzlei-Beiträge vor der Zusammenfassung ermitteln, damit deren
     # Titel als Relevanz-Kontext in die LLM-Zusammenfassung einfließen können.
