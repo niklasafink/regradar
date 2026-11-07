@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { activeName, invalidate, useMe } from "@/lib/relevanceClient";
 
 /** Oben rechts: Anmeldestatus, aktives Institutsprofil und Profilwechsel. */
 export function AccountMenu() {
   const me = useMe();
+  const pathname = usePathname() ?? "/";
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -83,7 +85,7 @@ export function AccountMenu() {
               );
             })}
             <div className="my-1.5 border-t border-slate-100" />
-            <Link role="menuitem" href="/profil?neu=1" onClick={() => setOpen(false)} className={`${item} text-slate-700 hover:bg-slate-100 hover:text-slate-900`}>
+            <Link role="menuitem" href={`/profil?neu=1${pathname.startsWith("/profil") ? "" : `&next=${encodeURIComponent(pathname)}`}`} onClick={() => setOpen(false)} className={`${item} text-slate-700 hover:bg-slate-100 hover:text-slate-900`}>
               Weiteres Institut anlegen
             </Link>
             <Link role="menuitem" href="/profil" onClick={() => setOpen(false)} className={`${item} text-slate-700 hover:bg-slate-100 hover:text-slate-900`}>

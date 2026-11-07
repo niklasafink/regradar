@@ -9,6 +9,8 @@ import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf, tx, type Impact,
 } from "@/lib/core";
 import { useStore } from "@/lib/store";
+import { RelevanceChip } from "@/components/relevance-chip";
+import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
 
 /** Vom Server vorberechnete Startseiten-Daten (siehe app/page.tsx), damit das
     Client-Bundle ohne data.ts/live.json auskommt. */
@@ -34,6 +36,9 @@ const impactPill = (i: Impact) =>
 
 export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recent }: HomeData) {
   const { lang } = useStore();
+  const me = useMe();
+  const rel = useRelevance(recent.slice(0, 40).map((r) => `u:${r.slug}`), hasProfile(me));
+  const relName = activeName(me);
 
   return (
     <>
@@ -126,6 +131,7 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
                         <span className="flex min-w-0 flex-col gap-0.5 border-b border-slate-50 py-2.5">
                           <span className="flex min-w-0 items-center gap-2">
                             <AuthorityLogo src={u.src} className="h-3.5 shrink-0" />
+                            <RelevanceChip r={rel[`u:${slug}`]} name={relName} />
                             <span className="truncate text-sm font-medium text-slate-900 group-hover:underline group-hover:underline-offset-2">
                               {tx(lang, u.ti)}
                             </span>

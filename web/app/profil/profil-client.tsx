@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
-  invalidate, readDraft, STATUS_LABEL, statusPill, useMe, writeDraft, type MatchResult,
+  invalidate, readDraft, statusPill, useMe, writeDraft,
 } from "@/lib/relevanceClient";
 import { RelevanceHint } from "@/components/relevance-hint";
 
@@ -28,7 +28,7 @@ interface Profile {
 interface Question { id: string; label: string; value: Tri; source: string | null; evidence: string | null }
 interface Hit { id: string; name: string; gattung: string; ecb: { si: boolean; hi: boolean; type: string } | null }
 
-type Step = "liste" | "suche" | "manuell" | "laden" | "pruefen" | "vorschau" | "speichern" | "gesendet" | "anmelden";
+type Step = "liste" | "suche" | "manuell" | "laden" | "pruefen" | "speichern" | "gesendet" | "anmelden";
 
 const btn = "inline-flex items-center rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-50";
 const btn2 = "inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-900 hover:border-slate-900 disabled:opacity-50";
@@ -66,7 +66,6 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
   const [answers, setAnswers] = useState<Record<string, Tri>>({});
   const [bs, setBs] = useState<string>("");
 
-  const [preview, setPreview] = useState<{ results: Record<string, MatchResult>; titles: Record<string, { ti: string; d: string; fw: string }> } | null>(null);
   const [email, setEmail] = useState("");
   const [accountProfiles, setAccountProfiles] = useState<Profile[] | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -154,7 +153,16 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
     }
   };
 
-  const toPreview = async () => {
+  /** Rücksprung nach dem Speichern: nur interne Pfade, sonst „Alle Updates“. */
+  const nextPath = () => {
+    const n = new URLSearchParams(window.location.search).get("next") ?? "";
+    return n.startsWith("/") && !n.startsWith("//") && !n.startsWith("/profil") ? n : "/updates";
+  };
+
+  /* Antworten übernehmen und direkt speichern (keine Vorschau-Liste).
+     Angemeldet: ins Konto, aktiv setzen, zurück zur Ausgangsseite; das
+     Profil steht dann oben rechts. Gast: Entwurf im Browser, dann registrieren. */
+  const saveDirect = async () => {
     if (!profile) return;
     setError(null);
     setBusy(true);
@@ -164,40 +172,26 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
         profile, answers, bilanzsumme: Number.isFinite(num) && num > 0 ? num : null,
       });
       setProfile(upd.profile);
-      setStep("vorschau");
-      setPreview(null);
-      const pv = await post<{ results: Record<string, MatchResult>; titles: Record<string, { ti: string; d: string; fw: string }> }>(
-        "/api/relevance/check", { latest: 30, profile: upd.profile, preview: true },
-      );
-      setPreview(pv);
+      if (me?.loggedIn) {
+        const editing = (accountProfiles ?? []).some((x) => x.id === upd.profile.id);
+        await post("/api/account/profile", { action: "save", profile: upd.profile });
+        invalidate();
+        if (editing) {
+          await loadAccount();
+          setNotice(`Profil „${upd.profile.name}“ gespeichert.`);
+          setStep("liste");
+        } else {
+          window.location.href = nextPath();
+        }
+        return;
+      }
+      writeDraft(upd.profile);
+      setStep("speichern");
     } catch (e) {
       setError((e as Error).message);
     } finally {
       setBusy(false);
     }
-  };
-
-  const save = async () => {
-    if (!profile) return;
-    setError(null);
-    if (me?.loggedIn) {
-      setBusy(true);
-      try {
-        await post("/api/account/profile", { action: "save", profile });
-        invalidate();
-        await loadAccount();
-        setNotice(`Profil „${profile.name}“ gespeichert.`);
-        setStep("liste");
-      } catch (e) {
-        setError((e as Error).message);
-      } finally {
-        setBusy(false);
-      }
-      return;
-    }
-    // Gast: Entwurf sofort im Browser nutzen, dann registrieren.
-    writeDraft(profile);
-    setStep("speichern");
   };
 
   const requestLink = async (withProfile = true) => {
@@ -212,10 +206,6 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       setBusy(false);
     }
   };
-
-  const counts = preview
-    ? Object.values(preview.results).reduce<Record<string, number>>((acc, r) => ({ ...acc, [r.status]: (acc[r.status] ?? 0) + 1 }), {})
-    : {};
 
   return (
     <div>
@@ -433,52 +423,9 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
           )}
 
           <div className="flex flex-wrap gap-2">
-            <button type="button" className={btn} disabled={busy} onClick={() => void toPreview()}>Weiter zur Vorschau</button>
+            <button type="button" className={btn} disabled={busy} onClick={() => void saveDirect()}>{busy ? "Speichert …" : "Profil speichern"}</button>
             <button type="button" className={btn2} onClick={() => setStep(me?.loggedIn ? "liste" : "suche")}>Zurück</button>
           </div>
-        </section>
-      )}
-
-      {/* Schritt 3: Vorschau */}
-      {step === "vorschau" && profile && (
-        <section className="mt-8">
-          <p className="text-sm text-slate-600">
-            So sieht die Einschätzung für <span className="font-medium text-slate-900">{profile.name}</span> bei den 30 neuesten Meldungen aus.
-          </p>
-          {!preview && <p className="mt-6 text-sm text-slate-500">Die Meldungen werden geprüft …</p>}
-          {preview && (
-            <>
-              <p className="mt-4 flex flex-wrap gap-2 text-xs">
-                {(["ja", "teilweise", "nein", "unsicher"] as const).map((s) => (
-                  <span key={s} className={statusPill(s)}>{STATUS_LABEL[s]}: {counts[s] ?? 0}</span>
-                ))}
-              </p>
-              <ul className="mt-4 divide-y divide-slate-50 rounded-2xl border border-slate-200 bg-white">
-                {Object.entries(preview.results).map(([k, r]) => (
-                  <li key={k} className="px-4 py-3">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className={statusPill(r.status)}>{STATUS_LABEL[r.status]}</span>
-                      <Link href={`/u/${k.slice(2)}`} className="min-w-0 flex-1 text-sm font-medium text-slate-900 hover:underline">
-                        {preview.titles[k]?.ti ?? k}
-                      </Link>
-                      <span className="num text-xs text-slate-400">{preview.titles[k]?.d}</span>
-                    </div>
-                    <p className="mt-1 text-xs leading-relaxed text-slate-500">
-                      {r.status === "unsicher" && r.frage ? `Offen: ${r.frage.frage}` : r.grund}
-                      {r.status === "teilweise" && r.teile ? ` Es gelten: ${r.teile}` : ""}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </>
-          )}
-          <div className="mt-6 flex flex-wrap gap-2">
-            <button type="button" className={btn} disabled={busy} onClick={() => void save()}>
-              {me?.loggedIn ? "Profil speichern" : "Profil speichern und registrieren"}
-            </button>
-            <button type="button" className={btn2} onClick={() => setStep("pruefen")}>Angaben ändern</button>
-          </div>
-          <p className="mt-6 text-xs text-slate-400">Automatische, KI-gestützte Einschätzung auf Basis Ihres Profils. Keine Rechtsberatung.</p>
         </section>
       )}
 
