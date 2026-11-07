@@ -21,6 +21,7 @@ export interface Me {
   email: string | null;
   profiles: ProfileRef[];
   activeId: string | null;
+  primaryId?: string | null;
   pre: { name: string | null; domain: string; kind: string; profile?: unknown } | null;
   subscriber?: boolean;
 }

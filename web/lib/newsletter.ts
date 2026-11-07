@@ -574,7 +574,7 @@ export async function runNewsletter(opts: {
       qaNotice(qa, pages),
     );
     await markApprovalSent(slot, nowIso);
-    // Einschlägigkeit für alle Profile vorab prüfen (Cache), damit der
+    // Einschlägigkeit für die primären Profile vorab prüfen (Cache), damit der
     // freigegebene Versand nicht auf KI-Aufrufe warten muss.
     try {
       after(async () => {

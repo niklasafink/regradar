@@ -1,8 +1,8 @@
-// Einschlägigkeit im Update-Newsletter: je Abonnent die Profile seines Kontos
+// Einschlägigkeit im Update-Newsletter: je Abonnent das primäre Profil seines Kontos
 // (gleiche E-Mail-Adresse) oder, ohne Konto, das Vorprofil seiner Mail-Domain.
 // Die Mail kennzeichnet nur, sie filtert nicht (Nutzerentscheidung 06.11.2026).
 
-import { domainOf, getAccount, getDomainProfile } from "../accounts";
+import { domainOf, getAccount, getDomainProfile, primaryProfile } from "../accounts";
 import type { Subscriber } from "../subscribers";
 import type { UpdatePage } from "../updates";
 import { matchMany, STATUS_LABEL, type MatchResult } from "./match";
@@ -15,15 +15,11 @@ export interface MailRelevance {
   fromDomain: boolean;
 }
 
-const MAX_PROFILES_IN_MAIL = 5;
-
 export async function profilesForSubscriber(email: string): Promise<{ profiles: Profile[]; fromDomain: boolean }> {
   const acct = await getAccount(email).catch(() => null);
-  if (acct?.profiles.length) {
-    const active = acct.profiles.find((p) => p.id === acct.activeId);
-    const rest = acct.profiles.filter((p) => p.id !== acct.activeId);
-    return { profiles: [...(active ? [active] : []), ...rest].slice(0, MAX_PROFILES_IN_MAIL), fromDomain: false };
-  }
+  // Nur das primäre Profil kennzeichnet die Mail (Nutzerentscheidung 07.11.2026).
+  const primary = acct ? primaryProfile(acct) : null;
+  if (primary) return { profiles: [primary], fromDomain: false };
   const dp = await getDomainProfile(domainOf(email)).catch(() => null);
   return { profiles: dp?.profile ? [dp.profile] : [], fromDomain: !!dp?.profile };
 }

@@ -14,6 +14,8 @@ export interface Account {
   createdAt: string;
   profiles: Profile[];
   activeId?: string;
+  /** Primäres Profil: gilt für den Newsletter. Fehlt es, das erste Profil. */
+  primaryId?: string;
 }
 
 const ACCT = (email: string) => `acct:${email}`;
@@ -59,6 +61,7 @@ export async function saveProfile(email: string, p: Profile, makeActive = true):
     a.profiles.push(p);
   }
   if (makeActive || !a.activeId) a.activeId = p.id;
+  if (!a.primaryId || !a.profiles.some((x) => x.id === a.primaryId)) a.primaryId = a.profiles[0].id;
   await putAccount(a);
   return a;
 }
@@ -68,6 +71,7 @@ export async function deleteProfile(email: string, id: string): Promise<Account 
   if (!a) return null;
   a.profiles = a.profiles.filter((p) => p.id !== id);
   if (a.activeId === id) a.activeId = a.profiles[0]?.id;
+  if (a.primaryId === id) a.primaryId = a.profiles[0]?.id;
   await putAccount(a);
   return a;
 }
@@ -76,6 +80,19 @@ export async function setActiveProfile(email: string, id: string): Promise<Accou
   const a = await getAccount(email);
   if (!a || !a.profiles.some((p) => p.id === id)) return a;
   a.activeId = id;
+  await putAccount(a);
+  return a;
+}
+
+/** Primäres Profil (für den Newsletter): gesetztes oder das erste. */
+export function primaryProfile(a: Account): Profile | null {
+  return a.profiles.find((p) => p.id === a.primaryId) ?? a.profiles[0] ?? null;
+}
+
+export async function setPrimaryProfile(email: string, id: string): Promise<Account | null> {
+  const a = await getAccount(email);
+  if (!a || !a.profiles.some((p) => p.id === id)) return a;
+  a.primaryId = id;
   await putAccount(a);
   return a;
 }

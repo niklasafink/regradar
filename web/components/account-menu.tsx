@@ -80,7 +80,9 @@ export function AccountMenu() {
                   className={`${item} ${active ? "bg-slate-900 text-white" : "text-slate-700 hover:bg-slate-100 hover:text-slate-900"}`}
                 >
                   <span className="truncate">{p.name}</span>
-                  {active && <span className="shrink-0 text-[11px] opacity-70">aktiv</span>}
+                  <span className="shrink-0 text-[11px] opacity-70">
+                    {[p.id === me.primaryId ? "primär" : "", active ? "aktiv" : ""].filter(Boolean).join(", ")}
+                  </span>
                 </button>
               );
             })}

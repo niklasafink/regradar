@@ -69,13 +69,15 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
   const [email, setEmail] = useState("");
   const [accountProfiles, setAccountProfiles] = useState<Profile[] | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [primaryId, setPrimaryId] = useState<string | null>(null);
 
   const loadAccount = useCallback(async () => {
     const res = await fetch("/api/account/profile", { cache: "no-store" });
     if (!res.ok) return;
-    const json = (await res.json()) as { profiles: Profile[]; activeId: string | null };
+    const json = (await res.json()) as { profiles: Profile[]; activeId: string | null; primaryId: string | null };
     setAccountProfiles(json.profiles);
     setActiveId(json.activeId);
+    setPrimaryId(json.primaryId);
   }, []);
 
   /* Einstieg: Rückkehr aus dem Magic Link, „Registrieren“-Link aus der Zeile,
@@ -226,13 +228,22 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       {/* Profilverwaltung (angemeldet) */}
       {step === "liste" && (
         <section className="mt-6 space-y-3">
-          <p className="text-sm text-slate-600">Angemeldet als {me?.email}. Die Einschlägigkeit auf der Website gilt für das aktive Profil, Ihre Newsletter-Mails kennzeichnen alle Profile.</p>
+          <p className="text-sm text-slate-600">Angemeldet als {me?.email}. Die Einschlägigkeit auf der Website gilt für das aktive Profil, das Sie oben rechts wechseln. Ihre Newsletter-Mails kennzeichnen nur das primäre Profil.</p>
           {(accountProfiles ?? []).map((p) => (
             <div key={p.id} className={`${card} flex flex-wrap items-center gap-3`}>
               <div className="min-w-0 flex-1">
                 <p className="font-medium text-slate-900">{p.name}</p>
                 <p className="text-xs text-slate-500">{p.gattung.join(", ") || "Manuell angelegt"}{supervision(p) ? `, ${supervision(p)}` : ""}</p>
               </div>
+              {p.id === primaryId ? (
+                <span className={statusPill("teilweise")} title="Gilt für Ihre Newsletter-Mails">Primär (Newsletter)</span>
+              ) : (
+                <button type="button" className={btn2} title="Dieses Profil kennzeichnet künftig Ihre Newsletter-Mails" onClick={async () => {
+                  await post("/api/account/profile", { action: "primary", id: p.id });
+                  setPrimaryId(p.id);
+                  invalidate();
+                }}>Als primär setzen</button>
+              )}
               {p.id === activeId ? (
                 <span className={statusPill("ja")}>Aktiv</span>
               ) : (

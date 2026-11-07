@@ -1,4 +1,4 @@
-import { deleteProfile, saveProfile, sessionEmail, setActiveProfile } from "@/lib/accounts";
+import { deleteProfile, primaryProfile, saveProfile, sessionEmail, setActiveProfile, setPrimaryProfile } from "@/lib/accounts";
 import { sanitizeProfile } from "@/lib/relevance/profile";
 
 /* Profile im Konto verwalten: speichern, löschen, aktiv setzen. */
@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   const email = await sessionEmail();
   if (!email) return Response.json({ error: "Nicht angemeldet" }, { status: 401 });
   const body = (await request.json().catch(() => ({}))) as {
-    action?: "save" | "delete" | "activate"; profile?: unknown; id?: string;
+    action?: "save" | "delete" | "activate" | "primary"; profile?: unknown; id?: string;
   };
   try {
     if (body.action === "save") {
@@ -23,6 +23,10 @@ export async function POST(request: Request) {
       const a = await setActiveProfile(email, body.id);
       return Response.json({ ok: true, activeId: a?.activeId ?? null });
     }
+    if (body.action === "primary" && body.id) {
+      const a = await setPrimaryProfile(email, body.id);
+      return Response.json({ ok: true, primaryId: a ? primaryProfile(a)?.id ?? null : null });
+    }
   } catch (e) {
     return Response.json({ error: e instanceof Error ? e.message : "Fehler" }, { status: 400 });
   }
@@ -35,6 +39,6 @@ export async function GET() {
   if (!email) return Response.json({ error: "Nicht angemeldet" }, { status: 401 });
   const { getAccount } = await import("@/lib/accounts");
   const a = await getAccount(email);
-  return Response.json({ email, activeId: a?.activeId ?? null, profiles: a?.profiles ?? [] },
+  return Response.json({ email, activeId: a?.activeId ?? null, primaryId: a ? primaryProfile(a)?.id ?? null : null, profiles: a?.profiles ?? [] },
     { headers: { "Cache-Control": "no-store" } });
 }
