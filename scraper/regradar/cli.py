@@ -193,6 +193,19 @@ def main(argv=None):
             print("Web-Export: {updates} Updates in {frameworks} Rahmenwerken, "
                   "{advisory} Big4-Verweise (aus {scanned} Dokumenten, "
                   "LLM-Filter {llm}) → {path}".format(**info))
+        elif cmd == "scope":
+            from .scope import analyze
+            limit = None
+            if "--limit" in argv:
+                limit = int(argv[argv.index("--limit") + 1])
+            info = analyze(conn, backfill="--backfill" in argv, limit=limit)
+            print("Anforderungsanalyse: {neu} neu, {fehler} Fehler, {kosten_usd:.4f} USD "
+                  "(von {total} Updates{gebremst})".format(
+                      **{**info, "gebremst": ", Wochenbudget erreicht" if info["gebremst"] else ""}))
+        elif cmd == "ecb-list":
+            from .ecblist import export as ecb_export
+            n = ecb_export(force="--force" in argv)
+            print("EZB-Liste: {}".format("aktuell" if n < 0 else "{} Einträge".format(n)))
         elif cmd == "linkedin":
             import datetime as _dt
             from .linkedin import build as linkedin_build

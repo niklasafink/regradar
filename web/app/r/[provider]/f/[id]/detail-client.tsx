@@ -135,7 +135,7 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
           )}
         </p>
         {aboutLong && (
-          <details className="group mt-2 max-w-3xl">
+          <details className="group mt-2">
             <summary className="inline-flex cursor-pointer list-none items-center gap-1 text-xs font-medium text-slate-900 underline-offset-2 hover:underline [&::-webkit-details-marker]:hidden">
               {lang === "de" ? "Mehr zum Rahmenwerk" : "More about this framework"}
               <ChevronDown

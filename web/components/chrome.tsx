@@ -1,5 +1,6 @@
 "use client";
 
+import { RelevanceBar } from "./relevance-bar";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
@@ -328,6 +329,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
           </Link>
         </div>
       </header>
+      <RelevanceBar />
     </>
   );
 }

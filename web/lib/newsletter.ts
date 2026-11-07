@@ -17,7 +17,12 @@
 // Erster Lauf (kein Hash, kein Alt-Set): Archiv wird mit Epoch markiert und
 // nichts verschickt (sonst käme das komplette Archiv).
 
+import { after } from "next/server";
 import { Resend } from "resend";
+import {
+  relevanceFooterHtml, relevanceFooterText, relevanceForMail, relevanceHtml, relevanceText,
+  warmRelevance, type MailRelevance,
+} from "./relevance/newsletter";
 import { FRAMEWORKS, PROVIDERS } from "./data";
 import { addIdentifyParam } from "./datafast";
 import {
@@ -350,6 +355,7 @@ export function renderNewsletter(
   unsubUrl: string,
   base: string,
   freq?: FreqLinks,
+  rel: MailRelevance | null = null,
 ): { html: string; text: string } {
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
@@ -369,6 +375,7 @@ export function renderNewsletter(
           ${esc(authority(u.src))} &nbsp;
           ${impactPill(impactOf(u))}
         </p>
+        ${relevanceHtml(rel, slug)}
         <p style="margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35">
           <a href="${base}/u/${slug}" style="color:#0f172a;text-decoration:none">${esc(u.ti.de)}</a>
         </p>
@@ -409,6 +416,7 @@ export function renderNewsletter(
         return [
           `${fmtDe(u.d)} · ${u.t.de} · ${authority(u.src)} · Impact: ${IMPACT_LABEL[impactOf(u)].de}`,
           u.ti.de,
+          ...(relevanceText(rel, slug) ? [relevanceText(rel, slug)] : []),
           firstParagraph(u.s.de),
           meta,
           `${base}/u/${slug}`,
@@ -417,6 +425,7 @@ export function renderNewsletter(
       }),
     ]),
     ...(more > 0 ? [`… und ${more} weitere Updates auf der Website.`, ""] : []),
+    ...(rel ? [relevanceFooterText(rel, base), ""] : []),
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
     "",
@@ -447,6 +456,7 @@ export function renderNewsletter(
     </p>
     ${sections}
     ${more > 0 ? `<p style="margin:16px 0 0;font-size:13px;color:#64748b">und ${more} weitere Updates auf der Website.</p>` : ""}
+    ${relevanceFooterHtml(rel, base)}
     <p style="margin:28px 0 16px">
       <a href="${base}/updates"
          style="display:inline-block;white-space:nowrap;background:#0f172a;color:#ffffff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px;margin:0 8px 12px 0">
@@ -564,6 +574,13 @@ export async function runNewsletter(opts: {
       qaNotice(qa, pages),
     );
     await markApprovalSent(slot, nowIso);
+    // Einschlägigkeit für alle Profile vorab prüfen (Cache), damit der
+    // freigegebene Versand nicht auf KI-Aufrufe warten muss.
+    try {
+      after(async () => {
+        try { await warmRelevance(subs, pages); } catch (e) { console.error("warm relevance failed:", e); }
+      });
+    } catch { /* außerhalb eines Requests (Skript): überspringen */ }
     report.pendingApproval = true;
     report.pendingItems = pages.length;
     await redis().set(LAST_RUN_KEY, nowIso);
@@ -625,7 +642,16 @@ export async function runNewsletter(opts: {
         rel.length === 1
           ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
           : `${rel.length} neue regulatorische Updates`;
-      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base));
+      // Einschlägigkeit je Profil des Abonnenten (Konto oder Domain-Vorprofil).
+      // Höchstens 20 s KI-Zeit je Mail, danach nur Cache und Regeln; Fehler
+      // verhindern den Versand nie.
+      let relevance: MailRelevance | null = null;
+      try {
+        relevance = await relevanceForMail(sub, rel.slice(0, MAX_PER_MAIL), { deadlineMs: 20_000 });
+      } catch (e) {
+        console.error("relevance for mail failed:", e);
+      }
+      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base), relevance);
       await pace();
       const { error } = await resend.emails.send({
         from,

@@ -302,7 +302,7 @@ SOURCES = [
         "authority": "EDPB",
         "jurisdiction": "EU",
         "base_url": "https://www.edpb.europa.eu/",
-        "discovery_url": "https://www.edpb.europa.eu/feed/news_en",
+        "discovery_url": "https://www.edpb.europa.eu/feed/publications_en",
         "discovery_type": "RSS",
         "access_class": "PUBLIC",
         "document_types": ["GUIDELINE", "CONSULTATION", "OTHER"],
@@ -548,7 +548,7 @@ RSS_FEEDS = {
         ("https://www.bsi.bund.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Presse_Veranstaltungen.xml", "OTHER", "de"),
     ],
     "edpb": [
-        ("https://www.edpb.europa.eu/feed/news_en", "OTHER", "en"),
+        ("https://www.edpb.europa.eu/feed/publications_en", "OTHER", "en"),
     ],
     "bfdi": [
         ("https://www.bfdi.bund.de/SiteGlobals/Functions/RSSFeed/Allgemein/rssnewsfeed.xml", "OTHER", "de"),

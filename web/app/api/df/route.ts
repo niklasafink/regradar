@@ -1,5 +1,9 @@
 import { datafastVisitorId, identifyDatafastVisitor } from "@/lib/datafast";
+import { cookies } from "next/headers";
+import { after } from "next/server";
+import { SUB_COOKIE, subCookieOptions, subCookieValue } from "@/lib/accounts";
 import { verifyIdToken } from "@/lib/email";
+import { ensureDomainProfile } from "@/lib/relevance/server";
 
 /* Wertet den Identify-Token aus Newsletter-Links (?df=…) aus: Der Client
    schickt ihn nach dem Seitenaufruf hierher; wir verknüpfen die E-Mail mit
@@ -14,6 +18,11 @@ export async function POST(request: Request) {
   }
   const email = verifyIdToken(token);
   if (email) {
+    // Abonnenten-Cookie für das Vorprofil der Mail-Domain (Einschlägigkeit).
+    (await cookies()).set(SUB_COOKIE, subCookieValue(email), subCookieOptions);
+    after(async () => {
+      try { await ensureDomainProfile(email); } catch (e) { console.error("domain profile failed:", e); }
+    });
     await identifyDatafastVisitor(email, datafastVisitorId(request), {
       source: "newsletter_link",
     });

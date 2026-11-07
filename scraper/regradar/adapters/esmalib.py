@@ -19,7 +19,8 @@ from .rss import refine_type
 BASE = "https://www.esma.europa.eu"
 TIME_RE = re.compile(r'view-created[^>]*>.*?datetime="(\d{4}-\d{2}-\d{2})', re.S)
 REF_RE = re.compile(r'(?s)view-field-document-reference[^>]*>(.*?)</td>')
-TITLE_RE = re.compile(r'(?s)view-title[^>]*>.*?<a href="(/document/[^"]+)"[^>]*>(.*?)</a>')
+# ESMA migrated from /document/<slug> to direct file URLs (/sites/default/files/...)
+TITLE_RE = re.compile(r'(?s)view-title[^>]*>.*?<a href="(/(?:document|sites/default/files)/[^"]+)"[^>]*>(.*?)</a>')
 TYPE_RE = re.compile(r'(?s)view-field-document-type[^>]*>(.*?)</td>')
 SECTION_RE = re.compile(r'(?s)view-field-document-section[^>]*>(.*?)</td>')
 
@@ -93,6 +94,12 @@ class EsmaLibAdapter(SourceAdapter):
         if not docs:
             raise RuntimeError("ESMA-Library ohne erkennbare Zeilen (Layout geändert?)")
         return docs
+
+    def fetch_url(self, d):
+        url = d.detail_url or ""
+        if any(url.lower().endswith(ext) for ext in (".pdf", ".xlsx", ".xls", ".docx", ".doc", ".zip")):
+            return None
+        return url
 
     def normalize(self, d, raw_content):
         doc = super().normalize(d, raw_content)

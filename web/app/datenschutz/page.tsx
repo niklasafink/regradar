@@ -256,6 +256,31 @@ export default function Datenschutz() {
               auf die Standardvertragsklauseln der EU-Kommission.
             </p>
 
+            <h3>Konto und Institutsprofile</h3>
+            <p>
+              Sie können ein Konto ohne Passwort anlegen: Wir senden Ihnen einen Anmeldelink an
+              Ihre E-Mail-Adresse. Im Konto speichern wir Ihre E-Mail-Adresse und die von Ihnen
+              angelegten Institutsprofile (Name des Instituts, öffentlich verfügbare Angaben zu
+              Erlaubnissen, Aufsichtsstatus und Konzernzugehörigkeit sowie Ihre Antworten zu
+              Geschäftsmerkmalen). Damit zeigen wir auf der Website und in Ihren Newsletter-Mails,
+              welche Meldungen für das jeweilige Institut einschlägig sind. Die Einschätzung
+              erstellen wir automatisiert, auch mithilfe von KI-Modellen, die wir über den Dienst
+              OpenRouter (OpenRouter, Inc., USA) ansprechen; dabei werden nur Institutsdaten und
+              Meldungstexte übermittelt, nicht Ihre E-Mail-Adresse. Rechtsgrundlage ist Art. 6
+              Abs. 1 lit. b DSGVO. Sie können Profile und Konto jederzeit löschen oder uns um
+              Löschung bitten.
+            </p>
+            <p>
+              Haben Sie den Newsletter mit einer beruflichen E-Mail-Adresse abonniert, legen wir
+              anhand der Domain Ihrer Adresse ein vorausgefülltes Institutsprofil an, damit Sie die
+              Einschlägigkeit auch ohne Konto sehen. Dafür setzen wir beim Bestätigen des
+              Newsletters und beim Aufruf von Links aus unseren Newsletter-Mails ein technisch
+              notwendiges Cookie („rr_sub“, Laufzeit ein Jahr), das eine signierte Kennung Ihres
+              Abonnements enthält. Nach der Anmeldung im Konto hält ein weiteres technisch
+              notwendiges Cookie („rr_session“, Laufzeit 90 Tage) die Sitzung. Rechtsgrundlage ist
+              § 25 Abs. 2 Nr. 2 TDDDG in Verbindung mit Art. 6 Abs. 1 lit. b und f DSGVO.
+            </p>
+
             <h3>Kontaktanfragen</h3>
             <p>
               Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben inklusive der von Ihnen

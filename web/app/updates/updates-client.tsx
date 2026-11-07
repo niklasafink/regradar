@@ -10,6 +10,7 @@ import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf,
   PROVIDER_SHORT, tx, type Impact,
 } from "@/lib/core";
+import { hasProfile, STATUS_LABEL, statusPill, useMe, useRelevance } from "@/lib/relevanceClient";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
 
@@ -55,6 +56,11 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
   const shown = sel
     ? UPDATE_PAGES.filter((p) => p.fw.ents.includes(sel))
     : UPDATE_PAGES;
+
+  // Einschlägigkeit für das Profil des Besuchers (nur die obersten Einträge,
+  // weiter unten bleibt es bei der Detailseite).
+  const me = useMe();
+  const rel = useRelevance(shown.slice(0, 40).map((p) => `u:${p.slug}`), hasProfile(me));
 
   const pill = (active: boolean) =>
     `inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
@@ -120,6 +126,7 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
             const expired = !!u.deadline && deadlineExpired(u.deadline);
             const urgent = u.deadline && !expired && daysUntil(u.deadline) < 60;
             const impact = impactOf(u);
+            const r = rel[`u:${slug}`];
             return (
               <li key={slug}>
                 <Link
@@ -154,6 +161,11 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
                       <span className={`sm:hidden ${impactPill(impact)}`}>
                         {tx(lang, IMPACT_LABEL[impact])}
                       </span>
+                      {r && (
+                        <span className={`sm:hidden ${statusPill(r.status)}`} title={r.grund}>
+                          {STATUS_LABEL[r.status]}
+                        </span>
+                      )}
                       <span className="truncate">
                         {tx(lang, fw.n)}, {tx(lang, u.t)}
                       </span>
@@ -172,6 +184,11 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
                     <span className={impactPill(impact)}>
                       Impact: {tx(lang, IMPACT_LABEL[impact])}
                     </span>
+                    {r && (
+                      <span className={statusPill(r.status)} title={r.grund}>
+                        {STATUS_LABEL[r.status]}
+                      </span>
+                    )}
                   </span>
                 </Link>
               </li>

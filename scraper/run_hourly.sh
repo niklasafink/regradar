@@ -90,9 +90,11 @@ fi
 # live.json inhaltlich geändert hat (mehr als der generated_at-Zeitstempel)
 cd "$REPO"
 if [ "$EXPORT_OK" = 1 ] && { git diff -U0 -- web/lib/live.json | grep '^[+-][^+-]' | grep -v generated_at | grep -q . \
-     || ! git diff --quiet -- web/lib/linkedin.json; }; then
+     || ! git diff --quiet -- web/lib/linkedin.json \
+     || ! git diff --quiet -- web/lib/relevance/scopes.json web/lib/relevance/ecb-entities.json; }; then
   echo "live.json oder linkedin.json inhaltlich geändert → Commit, Push, Deploy"
   if git add web/lib/live.json web/lib/sources.json web/lib/linkedin.json \
+       web/lib/relevance/scopes.json web/lib/relevance/ecb-entities.json \
      && git commit -m "Auto-Update: live.json ($(date '+%Y-%m-%d %H:%M'))" \
      && git push origin main; then
     STEPS+=("--step=push=ok")
@@ -102,6 +104,7 @@ if [ "$EXPORT_OK" = 1 ] && { git diff -U0 -- web/lib/live.json | grep '^[+-][^+-
   fi
 else
   git checkout -- web/lib/live.json web/lib/sources.json 2>/dev/null || true
+  git checkout -- web/lib/relevance/scopes.json 2>/dev/null || true
   STEPS+=("--step=push=skipped")
   echo "Keine inhaltlichen Änderungen in live.json → kein Deploy"
 fi

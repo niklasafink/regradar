@@ -1410,6 +1410,21 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
+
+    # Einschlägigkeit: Anforderungsanalyse für neue Updates (scope.py, eigenes
+    # Wochenbudget) und wöchentlich die EZB-Liste der beaufsichtigten Institute.
+    # Fehler hier dürfen den Export nie verhindern.
+    if os.path.abspath(path) == os.path.abspath(WEB_LIVE_PATH):
+        try:
+            from .scope import analyze as scope_analyze
+            scope_analyze(conn)
+        except Exception as e:  # noqa: BLE001
+            print("Anforderungsanalyse übersprungen: {}".format(e))
+        try:
+            from .ecblist import export as ecb_export
+            ecb_export()
+        except Exception as e:  # noqa: BLE001
+            print("EZB-Liste übersprungen: {}".format(e))
     return {"path": path, "frameworks": len(updates), "updates": matched,
             "praxis": len(praxis), **qa_stats,
             "advisory": advisory, "summarized": summarized,

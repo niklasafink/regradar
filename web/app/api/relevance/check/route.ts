@@ -1,0 +1,31 @@
+import { matchMany } from "@/lib/relevance/match";
+import { rateLimit, resolveTarget, visitorProfile } from "@/lib/relevance/server";
+import { scopeFor } from "@/lib/relevance/scopes";
+import { UPDATE_PAGES } from "@/lib/updates";
+
+/* Einschlägigkeit für Updates ("u:<slug>") oder Rahmenwerke ("f:<id>").
+   Profil: Konto > Vorprofil der Abonnenten-Domain > Entwurf aus dem Browser. */
+export async function POST(request: Request) {
+  const body = (await request.json().catch(() => ({}))) as {
+    keys?: string[]; profileId?: string; profile?: unknown; noLlm?: boolean; latest?: number; preview?: boolean;
+  };
+  // latest=N: die N neuesten analysierten Updates (Vorschau im Profil-Ablauf).
+  const latestKeys = body.latest
+    ? UPDATE_PAGES.filter((p) => p.u.url && scopeFor(p.u.url)).slice(0, Math.min(body.latest, 40)).map((p) => `u:${p.slug}`)
+    : [];
+  const keys = [...new Set([...latestKeys, ...(body.keys ?? []).filter((k) => typeof k === "string")])].slice(0, 40);
+  const vp = await visitorProfile({ profileId: body.profileId, draft: body.profile, preferDraft: !!body.preview });
+  if (!vp.profile) return Response.json({ profile: null, results: {} });
+  const targets = keys.map(resolveTarget).filter((t) => t !== null);
+  // Gäste und Vorprofile: begrenztes Tageskontingent für KI-Prüfungen;
+  // darüber hinaus nur Regel- und Cache-Ergebnisse.
+  const allowLlm = !body.noLlm && (vp.source === "konto" || (await rateLimit(request, "check", 60)));
+  const results = await matchMany(vp.profile, targets, { noLlm: !allowLlm, deadlineMs: 45_000 });
+  const titles = Object.fromEntries(targets.map((t) => [t.key, t.u ? { ti: t.u.ti.de, d: t.u.d, fw: t.fw.n.de } : { ti: t.fw.n.de, d: "", fw: "" }]));
+  return Response.json({
+    profile: { id: vp.profile.id, name: vp.profile.name, origin: vp.profile.origin },
+    titles,
+    source: vp.source,
+    results,
+  });
+}

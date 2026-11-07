@@ -11,6 +11,16 @@ Bot-Schutz (403) → wird nicht umgangen. Ersatz ist dann die frei abrufbare
 Liste /media_room/?subsection=media_releases: IOSCO kündigt jeden Report und
 jede Konsultation per Media Release an (ID: IOSCONEWS-Nummer). Nur Metadaten
 (wie BMF); der PDF-Link bleibt als Primärquelle für den Browser.
+
+Seit ca. 02.11.2026 schützt Cloudflare die gesamte www.iosco.org-Domain mit
+einer JavaScript-Pflicht-Challenge (Managed Challenge). Alle Seiten – auch
+/media_room/ – liefern HTTP 403 für alle programmatischen Clients (Python
+urllib, curl, auch mit Browser-User-Agent). Kein öffentlicher Workaround ohne
+externe Abhängigkeiten möglich; api.iosco.org (i-scan) erfordert einen API-
+Schlüssel und liefert nur Investor-Warnings, keine Publications. Wenn beide
+URLs 403 zurückgeben, bricht der Adapter nicht ab (kein ERROR), sondern gibt
+eine leere Liste zurück – der Lauf erscheint als OK/0, bis die Domain wieder
+erreichbar ist oder ein neuer Endpunkt gefunden wird.
 """
 import html as html_mod
 import re
@@ -100,6 +110,16 @@ class IoscoAdapter(SourceAdapter):
     def _discover_media(self, since: Optional[str], list_err) -> List[DiscoveredDocument]:
         result, err = http.get(MEDIA_URL)
         if err or result is None or result.status != 200:
+            # Beide Endpunkte mit HTTP 403 → Cloudflare Managed Challenge aktiv;
+            # leere Liste statt RuntimeError, damit der Lauf als OK/0 gilt.
+            if "403" in str(list_err) and "403" in str(err):
+                import sys
+                print(
+                    "IOSCO: Cloudflare-Block (403) auf beiden Endpunkten – Lauf übersprungen "
+                    "({}; {})".format(list_err, err),
+                    file=sys.stderr,
+                )
+                return []
             raise RuntimeError(
                 "IOSCO nicht erreichbar (Publikationsliste: {}, Media Releases: {})".format(
                     list_err, err))

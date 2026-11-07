@@ -1,4 +1,7 @@
+import { after } from "next/server";
+import { SUB_COOKIE, subCookieOptions, subCookieValue } from "@/lib/accounts";
 import { sendSubscriberNotification, verifyToken } from "@/lib/email";
+import { ensureDomainProfile } from "@/lib/relevance/server";
 import { framePath, frameworkById, providerSlug } from "@/lib/logic";
 import { addSubscriber } from "@/lib/subscribers";
 
@@ -30,6 +33,17 @@ export async function GET(request: Request) {
       console.error("subscriber notification failed:", e);
     }
   }
+  // Vorprofil der Mail-Domain im Hintergrund anlegen (Einschlägigkeit).
+  after(async () => {
+    try { await ensureDomainProfile(data.email); } catch (e) { console.error("domain profile failed:", e); }
+  });
   const target = data.providers[0] ? `/r/${providerSlug(data.providers[0])}` : "/";
-  return Response.redirect(`${base}${target}?abo=ok`, 302);
+  // Response.redirect hat unveränderliche Header; eigene Antwort mit Cookie.
+  return new Response(null, {
+    status: 302,
+    headers: {
+      Location: `${base}${target}?abo=ok`,
+      "Set-Cookie": `${SUB_COOKIE}=${subCookieValue(data.email)}; Path=/; Max-Age=${subCookieOptions.maxAge}; HttpOnly; SameSite=Lax${subCookieOptions.secure ? "; Secure" : ""}`,
+    },
+  });
 }
