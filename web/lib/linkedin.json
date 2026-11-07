@@ -6,25 +6,21 @@
    ],
    "keys": [
     "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
-    "final-report-on-technical-advice-on-selected-kpis-under-the-taxonomy-disclosures",
     "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures"
    ],
-   "hook": "Die EBA und ESMA schlagen Vereinfachungen bei der Taxonomie-Offenlegung vor, um die Komplexität zu reduzieren.",
-   "folge": "Institute können mit einer Entlastung bei der Berichterstattung über umweltverträgliche Wirtschaftsaktivitäten rechnen. Die Empfehlungen betreffen die Streichung bestimmter KPIs und die Vereinfachung von Konzernoffenlegungen.",
-   "cover": "EBA/ESMA: Vereinfachungen bei Taxonomie-Offenlegungen",
+   "hook": "Weniger ist mehr: Die EBA schlägt konkrete Vereinfachungen bei den Taxonomie-Offenlegungen vor.",
+   "folge": "Die EBA empfiehlt der EU-Kommission, mehrere KPIs für Kreditinstitute und Wertpapierfirmen zu streichen oder zu vereinfachen, um die Komplexität der Taxonomie-Offenlegung zu reduzieren. Dies könnte den Aufwand für die Berichterstattung erheblich mindern.",
+   "cover": "EBA: Vereinfachung der Taxonomie-Offenlegungen",
    "zeilen": [
-    "EU-Kommission: Konsultation zu Margenanforderungen für Derivate bis 26.11.2026"
+    "EU-Kommission: Konsultation zu Margenanforderungen für OTC-Derivate bis 26.11.2026"
    ],
-   "frage": "Welche KPIs zur Taxonomie-Offenlegung empfinden Sie in Ihrem Institut als besonders aufwendig?",
+   "frage": "Welche der vorgeschlagenen Vereinfachungen würde bei Ihnen den größten Aufwand einsparen?",
    "top": "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures",
    "kern": {
-    "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl": "Die EU-Kommission konsultiert bis zum 26.11.2026 Änderungen an den RTS zu Margenanforderungen für nicht zentral abgewickelte Derivate, die Auswirkungen auf die Sicherheitenanforderungen haben können.",
-    "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures": "Die EBA empfiehlt der EU-Kommission Vereinfachungen bei den Taxonomie-Offenlegungspflichten für Kreditinstitute und Wertpapierfirmen, darunter die Streichung von KPIs und die Vereinfachung von Konzernoffenlegungen.",
-    "final-report-on-technical-advice-on-selected-kpis-under-the-taxonomy-disclosures": "Die ESMA hat einen Abschlussbericht mit technischem Rat zu ausgewählten KPIs der EU-Taxonomie-Offenlegungsverordnung veröffentlicht, der Empfehlungen zur Überarbeitung und Vereinfachung enthält."
+    "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl": "Die EU-Kommission konsultiert bis zum 26.11.2026 Änderungen an den RTS zu Margenanforderungen für nicht zentral abgewickelte Derivate, was Finanzinstitute mit OTC-Derivaten betrifft.",
+    "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures": "Die EBA empfiehlt der EU-Kommission, die Taxonomie-Offenlegungspflichten für Kreditinstitute und Wertpapierfirmen durch Streichung und Vereinfachung bestimmter KPIs zu reduzieren."
    },
-   "doppelt": [
-    "final-report-on-technical-advice-on-selected-kpis-under-the-taxonomy-disclosures"
-   ],
+   "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
   },
@@ -35,20 +31,16 @@
     "2026-11-01"
    ],
    "keys": [
-    "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le",
-    "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur"
+    "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le"
    ],
    "hook": "Geldmarktfonds müssen ihre Liquiditätspuffer stärken, um künftigen Marktstress besser abzufedern.",
-   "folge": "Die CSSF fordert von Geldmarktfonds höhere Liquiditätsniveaus und verbesserte Risikomanagementpraktiken. Institute müssen ihre Prozesse innerhalb von drei Monaten anpassen, um die neuen Erwartungen zu erfüllen.",
+   "folge": "Die CSSF hat finale Leitlinien zu den wöchentlichen Liquiditätsniveaus von Geldmarktfonds veröffentlicht. Institute müssen ihre Liquiditäts- und Risikomanagementpraktiken innerhalb von drei Monaten anpassen.",
    "cover": "CSSF: Geldmarktfonds brauchen höhere Liquiditätspuffer",
-   "zeilen": [
-    "EIOPA: Vereinfachung der Taxonomie-Offenlegungen für Versicherer durch gezielte KPI-Änderungen"
-   ],
-   "frage": "Wie stellen Sie sicher, dass Ihre Geldmarktfonds auch unter Stress die geforderten Liquiditätsniveaus halten?",
+   "zeilen": [],
+   "frage": "Wie stellen Sie sicher, dass Ihre Geldmarktfonds auch in Stressszenarien ausreichend liquide sind?",
    "top": "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le",
    "kern": {
-    "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le": "Die CSSF hat finale Leitlinien zu wöchentlichen Liquiditätsniveaus und Risikomanagementpraktiken für Geldmarktfonds veröffentlicht, die innerhalb von drei Monaten umzusetzen sind.",
-    "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur": "Die EIOPA empfiehlt der EU-Kommission, die Taxonomie-Offenlegungen für Versicherer durch gezielte Änderungen am Underwriting KPI und Vereinfachungen bei der Konzernberichterstattung zu verbessern."
+    "cssf-communication-on-final-guidance-on-money-market-fund-weekly-liquid-asset-le": "Die CSSF hat finale Leitlinien zu den wöchentlichen Liquiditätsniveaus von Geldmarktfonds veröffentlicht, die innerhalb von drei Monaten umzusetzen sind, um das Risikomanagement zu verbessern."
    },
    "doppelt": [],
    "fmt": 5,
