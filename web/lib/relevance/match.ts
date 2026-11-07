@@ -157,6 +157,22 @@ Status:
 Entscheide zwischen ja und nein, wann immer die bekannten Merkmale es erlauben. Nationale BaFin-Vorgaben betreffen nur in
 Deutschland tätige Institute. Konsolidierte Pflichten treffen auch Finanzholdings bzw. übergeordnete Unternehmen.
 
+Ohne Anforderungsanalyse (ganzes Rahmenwerk statt einzelner Meldung) bestimmst du den Anwendungsbereich streng nach den
+Normadressaten des Rechtsakts:
+- "ja" oder "teilweise" nur, wenn das Institut wegen seiner Institutsart, Erlaubnisse oder bekannten Geschäftsmerkmale
+  unmittelbar eigene Pflichten aus dem Rechtsakt hat. Mittelbare Berührung (als Kunde, Nutzer, Investor, Vertragspartner)
+  reicht nicht.
+- Regelwerke für bestimmte Anbieter (z. B. ESG-Rating-Anbieter, Ratingagenturen, Benchmark-Administratoren, Zentralverwahrer,
+  Handelsplätze, Kryptowerte-Dienstleister, Kapitalverwaltungsgesellschaften, Versicherer) sind "nein", wenn das Institut
+  kein solcher Anbieter ist.
+- Freiwillige Standards und Labels (z. B. EU Green Bond Standard) sind "nein", solange nichts darauf hinweist, dass das
+  Institut sie nutzt.
+- Pflichten, die an Wertpapierdienstleistungen, Anlageberatung, Portfolioverwaltung, Herstellung oder Vertrieb von PRIIPs,
+  Derivate- oder Wertpapierfinanzierungsgeschäfte, Zahlungskonten oder Kartengeschäft anknüpfen: "nein", wenn Erlaubnisse
+  oder Merkmale die Tätigkeit ausschließen (bei vollständigen Erlaubnissen zählt eine fehlende Erlaubnis als Ausschluss);
+  "unsicher" mit dem passenden Merkmal, wenn es unbekannt ist.
+- Querschnittsregeln für alle Institute (z. B. DORA, Geldwäsche, Datenschutz, Hinweisgeberschutz) bleiben "ja".
+
 Antworte nur als JSON: {"status": "ja|teilweise|nein|unsicher", "teile": "…" | null, "grund": "ein bis zwei Sätze, nenne die
 entscheidenden Merkmale in Worten", "merkmale": ["IDs der Profilmerkmale, auf die du dich stützt"], "frage": {"merkmal": "id", "frage": "…"} | null}`;
 
@@ -278,7 +294,10 @@ function fallbackQuestion(p: Profile, scope: Scope | undefined, rules: RuleResul
 
 /* ---------- Öffentliche API ---------- */
 
-const cacheKey = (t: MatchTarget, sig: string) => `relm:${MATCH_VERSION}.${SCOPE_FORMAT}:${t.key}:${sig}`;
+// Rahmenwerk-Ziele (f:) eigene Version: strengere Adressatenregel seit 07.11.2026.
+const FW_MATCH_VERSION = 2;
+const cacheKey = (t: MatchTarget, sig: string) =>
+  `relm:${t.u ? MATCH_VERSION : `f${FW_MATCH_VERSION}`}.${SCOPE_FORMAT}:${t.key}:${sig}`;
 
 export async function matchOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean } = {}): Promise<MatchResult> {
   const sig = profileSignature(p);
