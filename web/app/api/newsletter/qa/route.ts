@@ -2,7 +2,8 @@
 //   GET  → Wochen-Slot, vorhandenes QS-Ergebnis, Deploy-Commit und die
 //          Meldungen, die beim nächsten Versand rausgingen (verändert nichts)
 //   POST → QS-Ergebnis für den aktuellen Slot speichern und die Freigabe-Mail
-//          an den Betreiber auslösen. Body: { ok, report, checked?, commit? }
+//          an den Betreiber auslösen (nur montags, außer live=true).
+//          Body: { ok, report, checked?, commit?, live? }
 //
 // Auth wie /api/newsletter/send: "Authorization: Bearer <CRON_SECRET>" oder
 // ?secret=<CRON_SECRET>.
@@ -55,7 +56,7 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   if (!authorized(request)) return Response.json({ error: "unauthorized" }, { status: 401 });
-  let body: { ok?: unknown; report?: unknown; checked?: unknown; commit?: unknown };
+  let body: { ok?: unknown; report?: unknown; checked?: unknown; commit?: unknown; live?: unknown };
   try {
     body = await request.json();
   } catch {
@@ -75,7 +76,7 @@ export async function POST(request: Request) {
     commit: typeof body.commit === "string" ? body.commit : commit() ?? undefined,
   });
   try {
-    const report = await runNewsletter({ afterQa: true });
+    const report = await runNewsletter({ afterQa: true, live: body.live === true });
     return Response.json({ slot, report });
   } catch (e) {
     console.error("newsletter approval after QA failed:", e);

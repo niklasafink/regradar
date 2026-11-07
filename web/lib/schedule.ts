@@ -25,6 +25,12 @@ export function berlinParts(now: Date): { y: number; m: number; d: number; hour:
   return { y: Number(p.year), m: Number(p.month), d: Number(p.day), hour: Number(p.hour) };
 }
 
+/** true, wenn `now` in Berliner Zeit ein Montag ist (Tag der Freigabe-Mail
+    des Update-Newsletters). */
+export function isBerlinMonday(now: Date): boolean {
+  return new Intl.DateTimeFormat("en-US", { timeZone: TZ, weekday: "short" }).format(now) === "Mon";
+}
+
 /** Abstand Berlin zu UTC in Minuten (60 im Winter, 120 im Sommer). */
 function offsetMin(at: Date): number {
   const p = Object.fromEntries(

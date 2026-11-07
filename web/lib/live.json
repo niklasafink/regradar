@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T23:06:42Z",
+  "generated_at": "2026-11-07T15:15:39Z",
   "updates": {
     "emir": [
       {
@@ -298,7 +298,7 @@
         "imp": "medium"
       }
     ],
-    "securitisation": [
+    "ebaownfunds": [
       {
         "d": "06.11.2026",
         "t": {
@@ -317,108 +317,9 @@
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7830",
         "imp": "low"
-      },
-      {
-        "d": "22.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Politische Einigung zur Überarbeitung des EU-Verbriefungsrahmens erzielt",
-          "en": "Political Agreement Reached on Review of EU Securitisation Framework"
-        },
-        "sl": "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec",
-        "s": {
-          "de": "Die Europäische Kommission begrüßt die politische Einigung zwischen Parlament und Rat zur Überarbeitung des EU-Verbriefungsrahmens. Ziel ist es, Verbriefungsaktivitäten in der EU zu fördern und gleichzeitig die Finanzstabilität zu wahren.\n\nDie Einigung ist das erste legislative Ergebnis der Spar- und Investitionsunion (SIU). Sie soll die Kanalisierung von Ersparnissen in produktive Investitionen über Kapitalmärkte und das Bankensystem verbessern. Ein stärkerer Verbriefungsmarkt soll Finanzierungsquellen diversifizieren, die Risikoteilung verbessern und zusätzliche Kredite für Haushalte, Unternehmen sowie KMU ermöglichen. Die Änderungen vereinfachen die Verbriefungsverordnung durch den Abbau operativer Belastungen und die Straffung von Due-Diligence- und Transparenzanforderungen. Zudem wird die Eigenkapitalverordnung angepasst, um die aufsichtsrechtliche Behandlung von Verbriefungen risikosensitiver zu gestalten.\n\nDer Vorschlag muss nun technisch finalisiert und formell von Parlament und Rat angenommen werden. Nach der Veröffentlichung im Amtsblatt der EU treten die Änderungen sofort in Kraft.",
-          "en": "The European Commission welcomes the political agreement reached between the Parliament and the Council on the review of the EU Securitisation Framework. The aim is to support securitisation activity in the EU while safeguarding financial stability.\n\nThis agreement is the first legislative deliverable under the Savings and Investments Union (SIU), which seeks to better channel savings into productive investment through capital markets and the banking system. A stronger securitisation market is expected to diversify funding sources, enhance risk-sharing, and support additional lending to households, businesses, and SMEs. The amendments simplify the Securitisation Regulation by reducing operational burdens and streamlining due diligence and transparency requirements. Furthermore, the Capital Requirements Regulation will be amended to make the prudential treatment of securitisations more risk-sensitive.\n\nThe proposal now awaits technical finalisation and formal approval by both the Parliament and Council. Once published in the Official Journal of the EU, the amendments will enter into force immediately."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
-        "imp": "medium"
-      },
-      {
-        "d": "01.10.2020",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin übernimmt EBA-Leitlinien zur gewichteten Durchschnittslaufzeit bei Verbriefungen (Rundschreiben 04/2020)",
-          "en": "BaFin adopts EBA Guidelines on Weighted Average Maturity in Securitisations (Circular 04/2020)"
-        },
-        "sl": "rundschreiben-04-2020-ba-verbriefung",
-        "s": {
-          "de": "Die BaFin hat die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA/GL/2020/04) zur Bestimmung der gewichteten durchschnittlichen Laufzeit von vertraglichen Zahlungen innerhalb einer Verbriefungstranche in ihre Verwaltungspraxis übernommen. Dies geschieht gemäß Artikel 257 Absatz 1 Buchstabe a der Verordnung (EU) Nr. 575/2013 (CRR).\n\nDas Rundschreiben richtet sich an Finanzinstitute, die Verbriefungstransaktionen durchführen und die Eigenmittelanforderungen der CRR erfüllen müssen. Die Übernahme der EBA-Leitlinien stellt sicher, dass die Berechnung der gewichteten durchschnittlichen Laufzeit bei Verbriefungen einheitlich erfolgt, was für die korrekte Ermittlung der Eigenmittelunterlegung relevant ist.\n\nDie BaFin kommt mit diesem Rundschreiben ihrer gegenüber der EBA abgegebenen Erklärung nach, die Leitlinie ab dem 1. Oktober 2020 anzuwenden.",
-          "en": "The BaFin has incorporated the European Banking Authority's (EBA/GL/2020/04) guidelines on the determination of the weighted average maturity of contractual payments due under a securitisation tranche into its administrative practice. This is done in accordance with Article 257(1)(a) of Regulation (EU) No 575/2013 (CRR).\n\nThis circular is addressed to financial institutions that conduct securitisation transactions and must comply with the CRR's own funds requirements. The adoption of the EBA guidelines ensures a consistent calculation of the weighted average maturity in securitisations, which is relevant for the correct determination of own funds requirements.\n\nWith this circular, BaFin fulfills its commitment to the EBA to apply the guideline from 1 October 2020."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2020/rs_2020_04_Verbriefung_ba.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 04/2020"
-      },
-      {
-        "d": "11.09.2020",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Bestimmung der Tranchenlaufzeit bei Verbriefungen (Konsultation 11/2020)",
-          "en": "Consultation on determining tranche maturity in securitisations (Consultation 11/2020)"
-        },
-        "sl": "konsultation-11-2020-entwurf-eines-rundschreibens-zur-bestimmung-der-gewichteten",
-        "s": {
-          "de": "Die BaFin konsultiert den Entwurf eines Rundschreibens zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dieses Rundschreiben dient der Übernahme der entsprechenden EBA-Leitlinien gemäß Artikel 257 Absatz 1 Buchstabe a der CRR.\n\nDie Leitlinien legen fest, wie die gewichtete durchschnittliche Laufzeit für die Berechnung der Eigenmittelanforderungen für Verbriefungen zu bestimmen ist. Dies ist relevant für Kreditinstitute, die Verbriefungspositionen halten und die Eigenmittelverordnung (CRR) anwenden müssen.\n\nStellungnahmen zum Entwurf können bis zum 25. September 2020 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die EBA-Leitlinien bis zum 1. Oktober 2020 in ihre Verwaltungspraxis zu übernehmen.",
-          "en": "BaFin is consulting on a draft circular concerning the determination of the weighted average maturity of contractual payments within a securitisation tranche. This circular aims to implement the corresponding EBA Guidelines in accordance with Article 257(1)(a) of the CRR.\n\nThe guidelines specify how to determine the weighted average maturity for calculating own funds requirements for securitisations. This is relevant for credit institutions holding securitisation positions and subject to the Capital Requirements Regulation (CRR).\n\nComments on the draft can be submitted to BaFin in writing or via email by 25 September 2020. BaFin intends to incorporate the EBA Guidelines into its administrative practice by 1 October 2020."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_11_20_RS_Bestimmung_durchschnittlichen_Laufzeit.html",
-        "imp": "medium",
-        "refnum": "Konsultation 11/2020"
-      },
-      {
-        "d": "10.09.2020",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Rundschreiben über die gewichtete durchschnittliche Laufzeit von Verbriefungstranchen (Konsultation 11/2020)",
-          "en": "Consultation on Circular on Weighted Average Maturity of Securitisation Tranches (Consultation 11/2020)"
-        },
-        "sl": "konsultation-11-2020",
-        "s": {
-          "de": "Die BaFin konsultiert ein Rundschreiben zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dies erfolgt gemäß Artikel 257 Absatz 1 Buchstabe a der Kapitaladäquanzverordnung (CRR).\n\nMit dem Rundschreiben setzt die BaFin die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zu diesem Thema in ihre Verwaltungspraxis um. Es richtet sich an Finanzinstitute, die Verbriefungen halten und die damit verbundenen Eigenmittelanforderungen berechnen müssen.\n\nDie BaFin beabsichtigt, den EBA-Leitlinien zum 1. Oktober 2020 nachzukommen.",
-          "en": "The BaFin is consulting on a circular regarding the determination of the weighted average maturity of contractual payments due within a securitisation tranche. This is in accordance with Article 257(1)(a) of the Capital Requirements Regulation (CRR).\n\nWith this circular, BaFin implements the European Banking Authority's (EBA) guidelines on this matter into its administrative practice. It is aimed at financial institutions that hold securitisations and need to calculate the associated own funds requirements.\n\nBaFin intends to comply with the EBA guidelines as of 1 October 2020."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kons_11_20_RS_Anwendung_EBA_Leitlinien_Tranchenlaufzeit.html",
-        "imp": "medium",
-        "refnum": "Konsultation 11/2020"
-      },
-      {
-        "d": "25.10.2018",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zur außervertraglichen Kreditunterstützung bei Verbriefungen (13/2018)",
-          "en": "BaFin Circular on Implicit Support for Securitisation Transactions (13/2018)"
-        },
-        "sl": "rundschreiben-13-2018-zur-ausservertraglichen-kreditunterstuetzung-bei-verbriefu",
-        "s": {
-          "de": "Das BaFin-Rundschreiben 13/2018 setzt die EBA-Leitlinien zur außervertraglichen Kreditunterstützung bei Verbriefungstransaktionen (EBA/GL/2016/08) um. Es präzisiert die Auslegung von Artikel 248 der Verordnung (EU) Nr. 575/2013 (CRR) hinsichtlich der Frage, wann ein Geschäft als Kreditunterstützung gilt und wann nicht. Zudem werden Melde- und Dokumentationspflichten gemäß CRR Artikel 248 Absatz 1 weiter ausgearbeitet.\n\nDas Rundschreiben richtet sich an Institute, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, die den Vorgaben des Artikels 248 CRR unterliegen. Es definiert, wann ein Geschäft als über die bestehenden vertraglichen Verpflichtungen hinausgehend gilt und unter welchen Bedingungen es als nicht-kreditunterstützend angesehen wird, insbesondere wenn es zu marktüblichen oder für den Sponsor/Originator günstigeren Konditionen erfolgt. Marktübliche Konditionen liegen vor, wenn die Parteien unabhängig voneinander agieren und die Bedingungen wie bei einem normalen Handelsgeschäft gestaltet sind.\n\nDas Rundschreiben ist unbeschadet der laufenden Beurteilung der Übertragung eines signifikanten Risikos während der Laufzeit einer Verbriefung anzuwenden. Es gilt nicht für bedeutende beaufsichtigte Unternehmen und Gruppen im Sinne der EZB-Verordnung (EU) Nr. 468/2014.",
-          "en": "BaFin Circular 13/2018 implements the EBA Guidelines on implicit support for securitisation transactions (EBA/GL/2016/08). It clarifies the interpretation of Article 248 of Regulation (EU) No 575/2013 (CRR) regarding when a transaction constitutes implicit support and when it does not. Furthermore, reporting and documentation obligations under CRR Article 248(1) are further elaborated.\n\nThe circular is addressed to institutions, institution groups, financial holding groups, and mixed financial holding groups subject to the requirements of Article 248 CRR. It defines when a transaction is considered to go beyond existing contractual obligations and under what conditions it is deemed not to constitute implicit support, particularly if it is conducted at market terms or terms more favourable to the sponsor/originator. Market terms are considered to exist when the parties act independently and the terms are structured like a normal commercial transaction.\n\nThe circular is to be applied without prejudice to the ongoing assessment of the transfer of significant risk during the life of a securitisation. It does not apply to significant supervised entities and groups within the meaning of ECB Regulation (EU) No 468/2014."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_13_2018_ausservertragliche_Kreditunterstuetzung_BA.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 13/2018"
       }
     ],
-    "ebaresolvability": [
+    "crr3": [
       {
         "d": "06.11.2026",
         "t": {
@@ -437,6 +338,63 @@
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7945",
         "imp": "low"
+      },
+      {
+        "d": "02.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "IPU Quarterly Assessment: Neue Rechtsgrundlage im KWG",
+          "en": "IPU Quarterly Assessment: New Legal Basis in KWG"
+        },
+        "sl": "ipu-quarterly-assessment-neue-rechtsgrundlage",
+        "s": {
+          "de": "Die BaFin weist darauf hin, dass die Meldepflicht für das IPU Quarterly Assessment seit dem 1. April 2026 nicht mehr auf ihrer Anordnung beruht, sondern direkt in § 2g Absatz 8 KWG verankert ist. Inhalt und Meldeschwellen des Assessments bleiben unverändert.\n\nDas IPU Quarterly Assessment dient der Überwachung der Vermögenswerte von Drittstaatengruppen in der EU. Meldepflichtig sind bestimmte EU-Mutterinstitute, Einzelinstitute der Drittstaatengruppe sowie das IPU nach seiner Errichtung. Die Berechnung und Überwachung der Schwellenwerte richten sich nach den EBA-Leitlinien (EBA/GL/2021/08).\n\nDie Meldung erfolgt vierteljährlich zu den Stichtagen 31. März, 30. Juni, 30. September und 31. Dezember, mit einer Meldefrist von zwei Monaten nach dem Stichtag. Institute reichen die Meldebögen weiterhin über das NExt-System der Deutschen Bundesbank ein, die die Daten im Auftrag der BaFin erhebt und auswertet.",
+          "en": "The BaFin points out that the reporting obligation for the IPU Quarterly Assessment no longer stems from its own order since April 1, 2026, but is directly enshrined in Section 2g (8) of the German Banking Act (KWG). The content and reporting thresholds of the assessment remain unchanged.\n\nThe IPU Quarterly Assessment serves to monitor the assets of third-country groups in the EU. Certain EU parent institutions and individual institutions of the third-country group, as well as the IPU after its establishment, are subject to reporting requirements. The calculation and monitoring of the thresholds are based on the EBA Guidelines (EBA/GL/2021/08).\n\nReporting is done quarterly on March 31, June 30, September 30, and December 31, with a reporting deadline of two months after the respective reference date. Institutions continue to submit the reporting forms via the Deutsche Bundesbank's NExt system, which collects and evaluates the data on behalf of the BaFin."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_02_ipu_quarterly_assessment_neue_rechtsgrundlage.html",
+        "imp": "low"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Allgemeinverfügung",
+          "en": "General decision"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken",
+          "en": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken"
+        },
+        "sl": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
+        "s": {
+          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte Gewerbeimmobilienkredite reziprok anwendet. Dieser Puffer wird schrittweise erhöht: von einem Prozent auf zwei Prozent mit Inkrafttreten der Allgemeinverfügung und ab dem 1. Juli 2027 auf dreieinhalb Prozent.\n\nDie Erhöhungen gelten für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im Bau- und Immobiliensektor in Österreich, klassifiziert nach NACE-Kodes F 41, F 43 und L 68. Institute müssen den Puffer auf Einzel-, teilkonsolidierter und konsolidierter Basis anwenden, sofern ihre in Österreich belegenen Risikopositionen 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB).\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte die Erhöhung des Puffersatzes begründet, da der ursprüngliche Satz von 1 % nicht ausreichte, um identifizierte Risiken abzudecken, und die Auswirkungen der CRR 3 auf Gewerbeimmobilienengagements geringer ausfielen als erwartet.",
+          "en": "The BaFin has issued a general decree reciprocally applying the sectoral systemic risk buffer for certain commercial real estate loans mandated by the Austrian Financial Market Authority (FMA). This buffer will be gradually increased: from one percent to two percent upon the general decree's entry into force, and to three and a half percent from July 1, 2027.\n\nThe increases apply to risk exposures to non-financial corporations (excluding non-profit housing associations) in the construction and real estate sector in Austria, classified under NACE codes F 41, F 43, and L 68. Institutions must apply the buffer on an individual, sub-consolidated, and consolidated basis, provided their risk exposures located in Austria exceed 100 million Euros. The BaFin thus follows a recommendation from the European Systemic Risk Board (ESRB).\n\nThe general decree enters into force one month after its public announcement. The FMA justified the increase in the buffer rate by stating that the original rate of 1% was insufficient to cover identified risks, and the impact of CRR 3 on commercial real estate exposures was less than expected."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20261021_anerkennung_kapitalpuffer_sys_risiken_at.html",
+        "imp": "high"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
+          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
+        },
+        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
+        "s": {
+          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
+          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
+        "imp": "medium"
       }
     ],
     "bcbs": [
@@ -698,85 +656,6 @@
         "imp": "high"
       }
     ],
-    "crr3": [
-      {
-        "d": "02.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "IPU Quarterly Assessment: Neue Rechtsgrundlage im KWG",
-          "en": "IPU Quarterly Assessment: New Legal Basis in KWG"
-        },
-        "sl": "ipu-quarterly-assessment-neue-rechtsgrundlage",
-        "s": {
-          "de": "Die BaFin weist darauf hin, dass die Meldepflicht für das IPU Quarterly Assessment seit dem 1. April 2026 nicht mehr auf ihrer Anordnung beruht, sondern direkt in § 2g Absatz 8 KWG verankert ist. Inhalt und Meldeschwellen des Assessments bleiben unverändert.\n\nDas IPU Quarterly Assessment dient der Überwachung der Vermögenswerte von Drittstaatengruppen in der EU. Meldepflichtig sind bestimmte EU-Mutterinstitute, Einzelinstitute der Drittstaatengruppe sowie das IPU nach seiner Errichtung. Die Berechnung und Überwachung der Schwellenwerte richten sich nach den EBA-Leitlinien (EBA/GL/2021/08).\n\nDie Meldung erfolgt vierteljährlich zu den Stichtagen 31. März, 30. Juni, 30. September und 31. Dezember, mit einer Meldefrist von zwei Monaten nach dem Stichtag. Institute reichen die Meldebögen weiterhin über das NExt-System der Deutschen Bundesbank ein, die die Daten im Auftrag der BaFin erhebt und auswertet.",
-          "en": "The BaFin points out that the reporting obligation for the IPU Quarterly Assessment no longer stems from its own order since April 1, 2026, but is directly enshrined in Section 2g (8) of the German Banking Act (KWG). The content and reporting thresholds of the assessment remain unchanged.\n\nThe IPU Quarterly Assessment serves to monitor the assets of third-country groups in the EU. Certain EU parent institutions and individual institutions of the third-country group, as well as the IPU after its establishment, are subject to reporting requirements. The calculation and monitoring of the thresholds are based on the EBA Guidelines (EBA/GL/2021/08).\n\nReporting is done quarterly on March 31, June 30, September 30, and December 31, with a reporting deadline of two months after the respective reference date. Institutions continue to submit the reporting forms via the Deutsche Bundesbank's NExt system, which collects and evaluates the data on behalf of the BaFin."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_02_ipu_quarterly_assessment_neue_rechtsgrundlage.html",
-        "imp": "low"
-      },
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken",
-          "en": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken"
-        },
-        "sl": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
-        "s": {
-          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte Gewerbeimmobilienkredite reziprok anwendet. Dieser Puffer wird schrittweise erhöht: von einem Prozent auf zwei Prozent mit Inkrafttreten der Allgemeinverfügung und ab dem 1. Juli 2027 auf dreieinhalb Prozent.\n\nDie Erhöhungen gelten für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im Bau- und Immobiliensektor in Österreich, klassifiziert nach NACE-Kodes F 41, F 43 und L 68. Institute müssen den Puffer auf Einzel-, teilkonsolidierter und konsolidierter Basis anwenden, sofern ihre in Österreich belegenen Risikopositionen 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB).\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte die Erhöhung des Puffersatzes begründet, da der ursprüngliche Satz von 1 % nicht ausreichte, um identifizierte Risiken abzudecken, und die Auswirkungen der CRR 3 auf Gewerbeimmobilienengagements geringer ausfielen als erwartet.",
-          "en": "The BaFin has issued a general decree reciprocally applying the sectoral systemic risk buffer for certain commercial real estate loans mandated by the Austrian Financial Market Authority (FMA). This buffer will be gradually increased: from one percent to two percent upon the general decree's entry into force, and to three and a half percent from July 1, 2027.\n\nThe increases apply to risk exposures to non-financial corporations (excluding non-profit housing associations) in the construction and real estate sector in Austria, classified under NACE codes F 41, F 43, and L 68. Institutions must apply the buffer on an individual, sub-consolidated, and consolidated basis, provided their risk exposures located in Austria exceed 100 million Euros. The BaFin thus follows a recommendation from the European Systemic Risk Board (ESRB).\n\nThe general decree enters into force one month after its public announcement. The FMA justified the increase in the buffer rate by stating that the original rate of 1% was insufficient to cover identified risks, and the impact of CRR 3 on commercial real estate exposures was less than expected."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20261021_anerkennung_kapitalpuffer_sys_risiken_at.html",
-        "imp": "high"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
-          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
-        },
-        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
-        "s": {
-          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
-          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
-        "imp": "medium"
-      },
-      {
-        "d": "11.09.2026",
-        "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Technische Informationen für versicherungstechnische Rückstellungen und Eigenmittel (Solvency II) (32026R2041)",
-          "en": "Technical Information for Technical Provisions and Own Funds (Solvency II) (32026R2041)"
-        },
-        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
-        "s": {
-          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung der Volatilitätsanpassung und die risikofreien Zinssätze für verschiedene Währungen definiert.\n\nDie Regelungen betreffen alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union, die der Solvency-II-Richtlinie unterliegen. Sie müssen die hier festgelegten technischen Parameter für ihre versicherungsmathematischen Berechnungen und die Ermittlung ihrer Solvenzkapitalanforderungen anwenden. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im gesamten EU-Binnenmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 30. September 2026. Die technischen Informationen sind für die Anwendung ab diesem Datum relevant.",
-          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the volatility adjustment and the risk-free interest rates for various currencies are defined.\n\nThe regulations apply to all insurance and reinsurance undertakings within the European Union that are subject to the Solvency II Directive. They must apply the technical parameters set out herein for their actuarial calculations and the determination of their Solvency Capital Requirements. This ensures a uniform and comparable valuation basis across the entire EU single market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 30 September 2026. The technical information is relevant for application from this date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
-        "imp": "high",
-        "refnum": "32026R2041"
-      }
-    ],
     "luaifm": [
       {
         "d": "30.10.2026",
@@ -897,33 +776,6 @@
     ],
     "taxonomy": [
       {
-        "d": "30.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EIOPA-Stellungnahme zur Vereinfachung der Taxonomie-Offenlegungen für Versicherer",
-          "en": "EIOPA Advice on Enhancements to Insurers' EU Taxonomy Disclosures"
-        },
-        "sl": "eiopa-publishes-its-final-advice-on-enhancements-to-insurers-corporate-disclosur",
-        "s": {
-          "de": "Die EIOPA hat der Europäischen Kommission ihre finale Stellungnahme zur Verbesserung der Unternehmensangaben von Versicherern gemäß der EU-Taxonomie übermittelt. Ziel ist es, die Berichterstattung zu vereinfachen, die Transparenz und Vergleichbarkeit der Taxonomie-Offenlegungen von Versicherungsunternehmen zu erhöhen und die Verfügbarkeit zuverlässiger Informationen über ökologisch nachhaltige Versicherungsaktivitäten sicherzustellen.\n\nDie EIOPA schlägt gezielte Änderungen am bestehenden Underwriting Key Performance Indicator (KPI) vor, um Inkonsistenzen in der aktuellen Berichterstattung zu beheben. Dazu gehören die Umbenennung in „Adaptation Underwriting KPI“, eine gemeinsame Berechnungsmethode für den Zähler, die nur relevante Verträge und den Anteil der Bruttoprämien für klimabezogene Risiken berücksichtigt, sowie die Begrenzung des Nenners auf acht förderfähige Geschäftsbereiche. Zur weiteren Vereinfachung wird empfohlen, die Aufschlüsselung von Gas- und Nuklearaktivitäten aus den Berichtsvorlagen zu entfernen, da diese für das Underwriting und die Investitionen von Versicherern in der Regel nicht wesentlich sind.\n\nZusammen mit EBA und ESMA rät die EIOPA davon ab, den Operational Expenditure KPI in die Taxonomie-Offenlegungen von Finanzunternehmen einzuführen. Für die Konzernberichterstattung wird eine Vereinfachung vorgeschlagen, indem vollständige Offenlegungen für das Mutterunternehmen und vereinfachte Offenlegungen für wesentliche Tochterunternehmen verlangt werden. Die EIOPA empfiehlt zudem, den KPI des Mutterunternehmens anstelle eines gewichteten Durchschnitts zur Messung des Konzernengagements zu verwenden.",
-          "en": "EIOPA has submitted its final advice to the European Commission on enhancing insurers' corporate disclosures under the EU Taxonomy. The aim is to simplify reporting, improve the transparency and comparability of insurance undertakings' Taxonomy disclosures, and ensure the availability of reliable information on environmentally sustainable insurance activities.\n\nEIOPA proposes targeted changes to the existing Underwriting Key Performance Indicator (KPI) to address inconsistencies in current reporting practices. These include renaming it to “Adaptation Underwriting KPI,” defining a common method to calculate the numerator that only covers relevant contracts and the share of gross written premiums attributable to climate-related perils, and limiting the denominator to eight eligible lines of business. To further simplify reporting, it is recommended to remove the breakdown of gas and nuclear activities from reporting templates, as this information is generally not material for insurers' underwriting and investments.\n\nTogether with EBA and ESMA, EIOPA advises against introducing the Operational Expenditure KPI in financial undertakings' Taxonomy disclosures. For group-level reporting, simplification is proposed by requiring full disclosures for the parent undertaking, complemented by simplified disclosures for material subsidiaries. EIOPA also recommends using the parent undertaking's KPI, rather than a weighted average, to measure the group's exposure."
-        },
-        "url": "https://www.eiopa.europa.eu/eiopa-publishes-its-final-advice-enhancements-insurers-corporate-disclosures-under-eu-taxonomy-2026-10-30_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Accounting and Reporting Blog: EU-Taxonomie: Europäische Aufsichtsbehörden übermitteln fachliche Stellungnahmen zur Überarbeitung der Berichtspflichten an die Europäische Kommission",
-            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/257653/eu-taxonomie-europaeische-aufsichtsbehoerden-uebermitteln-fachliche-stellungnahmen-zur-ueberarbeitung-der-berichtspflichten-an-die-europaeische-kommission/",
-            "d": "04.11.2026"
-          }
-        ]
-      },
-      {
         "d": "29.10.2026",
         "t": {
           "de": "Meldung",
@@ -949,26 +801,6 @@
             "d": "04.11.2026"
           }
         ]
-      },
-      {
-        "d": "29.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Technischer Rat der ESMA zu ausgewählten KPIs der EU-Taxonomie-Offenlegungsverordnung",
-          "en": "ESMA Technical Advice on selected KPIs under the Taxonomy Disclosures Delegated Act"
-        },
-        "sl": "final-report-on-technical-advice-on-selected-kpis-under-the-taxonomy-disclosures",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht mit technischem Rat zu ausgewählten Leistungskennzahlen (KPIs) gemäß der Offenlegungs-Delegierten Verordnung zur EU-Taxonomie veröffentlicht. Dieser Bericht reagiert auf einen Aufruf der Europäischen Kommission und enthält Empfehlungen zur Überarbeitung des OpEx-KPI, zur freiwilligen Nutzung von OpEx durch Finanzunternehmen, zur Konzern-Taxonomie-Berichterstattung und zu weiteren möglichen Vereinfachungen.\n\nDie Empfehlungen betreffen die Berichterstattung über umweltverträgliche Wirtschaftsaktivitäten und sollen die Anwendung der EU-Taxonomie erleichtern. Finanzunternehmen und andere berichtspflichtige Unternehmen sollten die vorgeschlagenen Änderungen und Vereinfachungen prüfen, um ihre Offenlegungspflichten effizienter zu erfüllen. Die Anpassungen sind insbesondere für Unternehmen relevant, die bereits unter die Corporate Sustainability Reporting Directive (CSRD) fallen oder fallen werden.\n\nDer Bericht berücksichtigt das Feedback aus einer öffentlichen Konsultation und dient als Grundlage für mögliche zukünftige Änderungen der Delegierten Verordnung (EU) 2021/2178 (Disclosures Delegated Act) und anderer relevanter Rechtsakte.",
-          "en": "ESMA has published its final report providing technical advice on selected Key Performance Indicators (KPIs) under the Taxonomy Disclosures Delegated Act. This report responds to a call for advice from the European Commission and includes recommendations on revising the OpEx KPI, the voluntary use of OpEx by financial undertakings, group Taxonomy reporting, and other potential simplifications.\n\nThe recommendations concern the reporting of environmentally sustainable economic activities and aim to facilitate the application of the EU Taxonomy. Financial undertakings and other reporting entities should review the proposed changes and simplifications to comply with their disclosure obligations more efficiently. The adjustments are particularly relevant for companies already subject to or soon to be subject to the Corporate Sustainability Reporting Directive (CSRD).\n\nThe report incorporates feedback from a public consultation and serves as a basis for potential future amendments to Delegated Regulation (EU) 2021/2178 (Disclosures Delegated Act) and other relevant legal acts."
-        },
-        "url": "https://www.esma.europa.eu/sites/default/files/2026-10/ESMA32-846262651-5927_Final_Report_on_Technical_Advice_selected_Taxonomy_KPIs.pdf",
-        "imp": "medium",
-        "refnum": "ESMA32-846262651-5927"
       },
       {
         "d": "01.07.2026",
@@ -1028,6 +860,59 @@
             "ti": "ESAs konsultieren Änderungsvorschläge zur Taxonomie-Verordnung",
             "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/esas-konsultieren-aenderungsvorschlaege-zur-taxonomie-verordnung/",
             "d": "07.07.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.06.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EU-Taxonomie: Gericht annulliert Ausschluss von Geschäftsflugzeugen aus Übergangstätigkeiten (T-77/24)",
+          "en": "EU Taxonomy: Court annuls exclusion of business aviation from transitional activities (T-77/24)"
+        },
+        "sl": "judgment-of-the-general-court-in-case-t-77-24-dassault-aviation-v-commission",
+        "s": {
+          "de": "Das Gericht der Europäischen Union hat den Ausschluss der Herstellung von Luftfahrzeugen für die private oder gewerbliche Geschäftsreiseluftfahrt aus dem Bereich der „Übergangstätigkeiten“ der EU-Taxonomie für nichtig erklärt. Die Kommission hatte diese Luftfahrzeuge aufgrund ihres CO2-Fußabdrucks pro Passagierkilometer von den zum Klimaschutz beitragenden Tätigkeiten ausgeschlossen. Das Gericht stellte fest, dass die Kommission nicht davon ausgehen durfte, dass andere Verkehrsmittel zwangsläufig CO2-arme Alternativen darstellen.\n\nDas Urteil ist relevant für Unternehmen, die in der Herstellung von Geschäftsflugzeugen tätig sind, da sie ihre Aktivitäten nun möglicherweise nicht mehr als nicht taxonomiekonform in ihrer Nachhaltigkeitsberichterstattung ausweisen müssen. Dies könnte sich positiv auf ihren Zugang zu Finanzmitteln auswirken. Das Gericht kritisierte, dass die Kommission ein nicht in der Taxonomie-Verordnung vorgesehenes Kriterium (CO2-Fußabdruck pro Passagierkilometer) angewendet und relevante Aspekte wie die Eignung für nachhaltige Flugkraftstoffe unberücksichtigt gelassen hat.\n\nGegen die Entscheidung des Gerichts kann innerhalb von zwei Monaten und zehn Tagen nach Zustellung ein auf Rechtsfragen beschränktes Rechtsmittel beim Gerichtshof eingelegt werden. Entsteht durch die Nichtigerklärung eine Regelungslücke, hat das betreffende Organ diese zu schließen.",
+          "en": "The General Court of the European Union has annulled the exclusion of the manufacture of aircraft intended for private or commercial business aviation from the scope of 'transitional activities' under the EU taxonomy. The Commission had excluded these aircraft from activities contributing to climate change mitigation based on their CO2 footprint per passenger-kilometre. The Court found that the Commission could not assume that other modes of transport necessarily constitute low-CO2 alternatives.\n\nThis judgment is relevant for companies involved in the manufacture of business aircraft, as they may no longer be required to report their activities as non-taxonomy-aligned in their sustainability reporting. This could positively impact their access to finance. The Court criticised the Commission for applying a criterion not provided for in the Taxonomy Regulation (CO2 footprint per passenger-kilometre) and for failing to consider relevant aspects such as the suitability for sustainable aviation fuels.\n\nAn appeal on points of law may be lodged with the Court of Justice within two months and ten days of notification of the decision. If the annulment creates a regulatory gap, the institution concerned must fill it."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-06/cp260091de.pdf",
+        "imp": "medium",
+        "refnum": "T-77/24"
+      },
+      {
+        "d": "17.03.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Kommission bittet um Feedback zur Überarbeitung der Kriterien für nachhaltige Wirtschaftsaktivitäten",
+          "en": "Commission seeks feedback on revision of criteria for sustainable economic activities"
+        },
+        "sl": "commission-seeks-feedback-on-revision-of-criteria-for-sustainable-economic-activ",
+        "s": {
+          "de": "Die Europäische Kommission hat Entwürfe zur Überarbeitung der technischen Bewertungskriterien der EU-Taxonomie veröffentlicht. Ziel ist es, das Rahmenwerk zu vereinfachen, die Anwendung zu erleichtern und die Kriterien an aktuelle EU-Gesetzgebung sowie technologische Fortschritte anzupassen.\n\nDie Änderungen betreffen die meisten Aktivitäten der Klima- und Umwelt-Delegierten Rechtsakte, darunter Forstwirtschaft, Umweltschutz, Fertigung, Energie, Verkehr und Bauwesen. Auch die generischen „Do no significant harm“-Anhänge sind betroffen. Dies soll die Akzeptanz der Taxonomie fördern, den Zugang zu grünen Finanzierungen verbessern und die Markttransparenz durch klarere Offenlegungen erhöhen.\n\nInteressenträger können bis zum 14. April Rückmeldungen zu den Entwürfen geben. Die Kommission plant, die überarbeiteten Kriterien bis zum Sommer zu verabschieden.",
+          "en": "The European Commission has published draft revisions to the technical screening criteria of the EU Taxonomy. The aim is to simplify the framework, make it easier to use, and align the criteria with updated EU legislation and technological advancements.\n\nThe changes cover most activities under the Climate and Environmental Delegated Acts, including forestry, environmental protection, manufacturing, energy, transport, and construction. The generic 'do no significant harm' appendices are also affected. This is intended to boost taxonomy adoption, improve access to green finance, and enhance market transparency through clearer disclosures.\n\nStakeholders can provide feedback on the drafts until April 14. The Commission plans to adopt the revised criteria by the summer."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-revision-criteria-sustainable-economic-activities-2026-03-17_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "EU-Kommission veröffentlicht Entwürfe zu Anpassungen an den technischen Bewertungskriterien für die EU-Taxonomie-Verordnung",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/eu-kommission-veroeffentlicht-entwuerfe-zu-anpassungen-an-den-technischen-bewertungskriterien-fuer-die-eu-taxonomie-verordnung/",
+            "d": "23.03.2026"
+          },
+          {
+            "f": "PwC",
+            "ti": "Accounting and Reporting Blog: EU-Taxonomie: Öffentliches Feedback zur Anpassung des Klima- und Umweltrechtsakts",
+            "url": "https://blogs.pwc.de/de/accounting-and-reporting/article/253721/eu-taxonomie-oeffentliches-feedback-zur-anpassung-des-klima-und-umweltrechtsakts/",
+            "d": "19.03.2026"
           }
         ]
       }
@@ -1151,6 +1036,126 @@
         "url": "https://www.esma.europa.eu/document/opinion-amendments-buy-back-programmes-and-stabilisation-measures",
         "imp": "medium",
         "refnum": "ESMA74-268544963-1748"
+      }
+    ],
+    "securitisation": [
+      {
+        "d": "22.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Politische Einigung zur Überarbeitung des EU-Verbriefungsrahmens erzielt",
+          "en": "Political Agreement Reached on Review of EU Securitisation Framework"
+        },
+        "sl": "the-commission-welcomes-the-political-agreement-reached-on-the-review-of-the-sec",
+        "s": {
+          "de": "Die Europäische Kommission begrüßt die politische Einigung zwischen Parlament und Rat zur Überarbeitung des EU-Verbriefungsrahmens. Ziel ist es, Verbriefungsaktivitäten in der EU zu fördern und gleichzeitig die Finanzstabilität zu wahren.\n\nDie Einigung ist das erste legislative Ergebnis der Spar- und Investitionsunion (SIU). Sie soll die Kanalisierung von Ersparnissen in produktive Investitionen über Kapitalmärkte und das Bankensystem verbessern. Ein stärkerer Verbriefungsmarkt soll Finanzierungsquellen diversifizieren, die Risikoteilung verbessern und zusätzliche Kredite für Haushalte, Unternehmen sowie KMU ermöglichen. Die Änderungen vereinfachen die Verbriefungsverordnung durch den Abbau operativer Belastungen und die Straffung von Due-Diligence- und Transparenzanforderungen. Zudem wird die Eigenkapitalverordnung angepasst, um die aufsichtsrechtliche Behandlung von Verbriefungen risikosensitiver zu gestalten.\n\nDer Vorschlag muss nun technisch finalisiert und formell von Parlament und Rat angenommen werden. Nach der Veröffentlichung im Amtsblatt der EU treten die Änderungen sofort in Kraft.",
+          "en": "The European Commission welcomes the political agreement reached between the Parliament and the Council on the review of the EU Securitisation Framework. The aim is to support securitisation activity in the EU while safeguarding financial stability.\n\nThis agreement is the first legislative deliverable under the Savings and Investments Union (SIU), which seeks to better channel savings into productive investment through capital markets and the banking system. A stronger securitisation market is expected to diversify funding sources, enhance risk-sharing, and support additional lending to households, businesses, and SMEs. The amendments simplify the Securitisation Regulation by reducing operational burdens and streamlining due diligence and transparency requirements. Furthermore, the Capital Requirements Regulation will be amended to make the prudential treatment of securitisations more risk-sensitive.\n\nThe proposal now awaits technical finalisation and formal approval by both the Parliament and Council. Once published in the Official Journal of the EU, the amendments will enter into force immediately."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-reached-review-securitisation-framework-2026-10-22_en",
+        "imp": "medium"
+      },
+      {
+        "d": "01.10.2020",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin übernimmt EBA-Leitlinien zur gewichteten Durchschnittslaufzeit bei Verbriefungen (Rundschreiben 04/2020)",
+          "en": "BaFin adopts EBA Guidelines on Weighted Average Maturity in Securitisations (Circular 04/2020)"
+        },
+        "sl": "rundschreiben-04-2020-ba-verbriefung",
+        "s": {
+          "de": "Die BaFin hat die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA/GL/2020/04) zur Bestimmung der gewichteten durchschnittlichen Laufzeit von vertraglichen Zahlungen innerhalb einer Verbriefungstranche in ihre Verwaltungspraxis übernommen. Dies geschieht gemäß Artikel 257 Absatz 1 Buchstabe a der Verordnung (EU) Nr. 575/2013 (CRR).\n\nDas Rundschreiben richtet sich an Finanzinstitute, die Verbriefungstransaktionen durchführen und die Eigenmittelanforderungen der CRR erfüllen müssen. Die Übernahme der EBA-Leitlinien stellt sicher, dass die Berechnung der gewichteten durchschnittlichen Laufzeit bei Verbriefungen einheitlich erfolgt, was für die korrekte Ermittlung der Eigenmittelunterlegung relevant ist.\n\nDie BaFin kommt mit diesem Rundschreiben ihrer gegenüber der EBA abgegebenen Erklärung nach, die Leitlinie ab dem 1. Oktober 2020 anzuwenden.",
+          "en": "The BaFin has incorporated the European Banking Authority's (EBA/GL/2020/04) guidelines on the determination of the weighted average maturity of contractual payments due under a securitisation tranche into its administrative practice. This is done in accordance with Article 257(1)(a) of Regulation (EU) No 575/2013 (CRR).\n\nThis circular is addressed to financial institutions that conduct securitisation transactions and must comply with the CRR's own funds requirements. The adoption of the EBA guidelines ensures a consistent calculation of the weighted average maturity in securitisations, which is relevant for the correct determination of own funds requirements.\n\nWith this circular, BaFin fulfills its commitment to the EBA to apply the guideline from 1 October 2020."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2020/rs_2020_04_Verbriefung_ba.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 04/2020"
+      },
+      {
+        "d": "11.09.2020",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Bestimmung der Tranchenlaufzeit bei Verbriefungen (Konsultation 11/2020)",
+          "en": "Consultation on determining tranche maturity in securitisations (Consultation 11/2020)"
+        },
+        "sl": "konsultation-11-2020-entwurf-eines-rundschreibens-zur-bestimmung-der-gewichteten",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf eines Rundschreibens zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dieses Rundschreiben dient der Übernahme der entsprechenden EBA-Leitlinien gemäß Artikel 257 Absatz 1 Buchstabe a der CRR.\n\nDie Leitlinien legen fest, wie die gewichtete durchschnittliche Laufzeit für die Berechnung der Eigenmittelanforderungen für Verbriefungen zu bestimmen ist. Dies ist relevant für Kreditinstitute, die Verbriefungspositionen halten und die Eigenmittelverordnung (CRR) anwenden müssen.\n\nStellungnahmen zum Entwurf können bis zum 25. September 2020 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die EBA-Leitlinien bis zum 1. Oktober 2020 in ihre Verwaltungspraxis zu übernehmen.",
+          "en": "BaFin is consulting on a draft circular concerning the determination of the weighted average maturity of contractual payments within a securitisation tranche. This circular aims to implement the corresponding EBA Guidelines in accordance with Article 257(1)(a) of the CRR.\n\nThe guidelines specify how to determine the weighted average maturity for calculating own funds requirements for securitisations. This is relevant for credit institutions holding securitisation positions and subject to the Capital Requirements Regulation (CRR).\n\nComments on the draft can be submitted to BaFin in writing or via email by 25 September 2020. BaFin intends to incorporate the EBA Guidelines into its administrative practice by 1 October 2020."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_11_20_RS_Bestimmung_durchschnittlichen_Laufzeit.html",
+        "imp": "medium",
+        "refnum": "Konsultation 11/2020"
+      },
+      {
+        "d": "10.09.2020",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Rundschreiben über die gewichtete durchschnittliche Laufzeit von Verbriefungstranchen (Konsultation 11/2020)",
+          "en": "Consultation on Circular on Weighted Average Maturity of Securitisation Tranches (Consultation 11/2020)"
+        },
+        "sl": "konsultation-11-2020",
+        "s": {
+          "de": "Die BaFin konsultiert ein Rundschreiben zur Bestimmung der gewichteten durchschnittlichen Laufzeit vertraglicher Zahlungen innerhalb einer Verbriefungstranche. Dies erfolgt gemäß Artikel 257 Absatz 1 Buchstabe a der Kapitaladäquanzverordnung (CRR).\n\nMit dem Rundschreiben setzt die BaFin die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zu diesem Thema in ihre Verwaltungspraxis um. Es richtet sich an Finanzinstitute, die Verbriefungen halten und die damit verbundenen Eigenmittelanforderungen berechnen müssen.\n\nDie BaFin beabsichtigt, den EBA-Leitlinien zum 1. Oktober 2020 nachzukommen.",
+          "en": "The BaFin is consulting on a circular regarding the determination of the weighted average maturity of contractual payments due within a securitisation tranche. This is in accordance with Article 257(1)(a) of the Capital Requirements Regulation (CRR).\n\nWith this circular, BaFin implements the European Banking Authority's (EBA) guidelines on this matter into its administrative practice. It is aimed at financial institutions that hold securitisations and need to calculate the associated own funds requirements.\n\nBaFin intends to comply with the EBA guidelines as of 1 October 2020."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kons_11_20_RS_Anwendung_EBA_Leitlinien_Tranchenlaufzeit.html",
+        "imp": "medium",
+        "refnum": "Konsultation 11/2020"
+      },
+      {
+        "d": "25.10.2018",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zur außervertraglichen Kreditunterstützung bei Verbriefungen (13/2018)",
+          "en": "BaFin Circular on Implicit Support for Securitisation Transactions (13/2018)"
+        },
+        "sl": "rundschreiben-13-2018-zur-ausservertraglichen-kreditunterstuetzung-bei-verbriefu",
+        "s": {
+          "de": "Das BaFin-Rundschreiben 13/2018 setzt die EBA-Leitlinien zur außervertraglichen Kreditunterstützung bei Verbriefungstransaktionen (EBA/GL/2016/08) um. Es präzisiert die Auslegung von Artikel 248 der Verordnung (EU) Nr. 575/2013 (CRR) hinsichtlich der Frage, wann ein Geschäft als Kreditunterstützung gilt und wann nicht. Zudem werden Melde- und Dokumentationspflichten gemäß CRR Artikel 248 Absatz 1 weiter ausgearbeitet.\n\nDas Rundschreiben richtet sich an Institute, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, die den Vorgaben des Artikels 248 CRR unterliegen. Es definiert, wann ein Geschäft als über die bestehenden vertraglichen Verpflichtungen hinausgehend gilt und unter welchen Bedingungen es als nicht-kreditunterstützend angesehen wird, insbesondere wenn es zu marktüblichen oder für den Sponsor/Originator günstigeren Konditionen erfolgt. Marktübliche Konditionen liegen vor, wenn die Parteien unabhängig voneinander agieren und die Bedingungen wie bei einem normalen Handelsgeschäft gestaltet sind.\n\nDas Rundschreiben ist unbeschadet der laufenden Beurteilung der Übertragung eines signifikanten Risikos während der Laufzeit einer Verbriefung anzuwenden. Es gilt nicht für bedeutende beaufsichtigte Unternehmen und Gruppen im Sinne der EZB-Verordnung (EU) Nr. 468/2014.",
+          "en": "BaFin Circular 13/2018 implements the EBA Guidelines on implicit support for securitisation transactions (EBA/GL/2016/08). It clarifies the interpretation of Article 248 of Regulation (EU) No 575/2013 (CRR) regarding when a transaction constitutes implicit support and when it does not. Furthermore, reporting and documentation obligations under CRR Article 248(1) are further elaborated.\n\nThe circular is addressed to institutions, institution groups, financial holding groups, and mixed financial holding groups subject to the requirements of Article 248 CRR. It defines when a transaction is considered to go beyond existing contractual obligations and under what conditions it is deemed not to constitute implicit support, particularly if it is conducted at market terms or terms more favourable to the sponsor/originator. Market terms are considered to exist when the parties act independently and the terms are structured like a normal commercial transaction.\n\nThe circular is to be applied without prejudice to the ongoing assessment of the transfer of significant risk during the life of a securitisation. It does not apply to significant supervised entities and groups within the meaning of ECB Regulation (EU) No 468/2014."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2018/rs_13_2018_ausservertragliche_Kreditunterstuetzung_BA.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 13/2018"
+      },
+      {
+        "d": "02.07.2018",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Rundschreiben über außervertragliche Kreditunterstützung bei Verbriefungen",
+          "en": "Consultation on Circular on Implicit Support for Securitisation Transactions"
+        },
+        "sl": "konsultation-10-2018-entwurf-eines-rundschreibens-ausservertragliche-kreditunter",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf eines Rundschreibens zur außervertraglichen Kreditunterstützung bei Verbriefungstransaktionen. Das Rundschreiben setzt die EBA-Leitlinien (EBA/GL/2016/08) um und präzisiert die Auslegung von Artikel 248 der CRR (Verordnung (EU) Nr. 575/2013).\n\nEs wird definiert, was unter marktüblichen Konditionen zu verstehen ist und wann ein Geschäft keine Kreditunterstützung darstellt. Zudem werden Melde- und Dokumentationspflichten gemäß Artikel 248 Absatz 1 CRR weiter ausgearbeitet. Adressaten sind Institute, Institutsgruppen, Finanzholding-Gruppen und gemischte Finanzholding-Gruppen, die sich nach der CRR oder dem KWG an die Vorgaben des Artikels 248 CRR halten müssen, ausgenommen bedeutende beaufsichtigte Unternehmen und Gruppen im Sinne der EZB-Verordnung (EU) Nr. 468/2014.\n\nDie Konsultation läuft bis zum 2. August 2018.",
+          "en": "BaFin is consulting on a draft circular on implicit support for securitisation transactions. The circular implements the EBA Guidelines (EBA/GL/2016/08) and clarifies the interpretation of Article 248 of the CRR (Regulation (EU) No 575/2013).\n\nIt defines what is meant by market terms and conditions and when a transaction does not constitute implicit support. Furthermore, reporting and documentation obligations under Article 248(1) CRR are further elaborated. The circular is addressed to institutions, institutional groups, financial holding groups, and mixed financial holding groups that must comply with the requirements of Article 248 CRR under the CRR or the KWG, excluding significant supervised entities and groups as defined in ECB Regulation (EU) No 468/2014.\n\nThe consultation period ends on 2 August 2018."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2018/kon_1018_Ausservertragliche_Kreditunterstuetzung_Verbriefungstransaktionen_BA.html",
+        "imp": "medium"
       }
     ],
     "mica": [

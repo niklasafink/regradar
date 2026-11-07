@@ -519,6 +519,13 @@ SOURCE_RULES = {
     # Meldewesen-Taxonomie, nicht die EU-Taxonomie (Q&A 2026_7912 und
     # 2026_7823 landeten am 09.10.2026 bei EMIR bzw. EU-Taxonomie).
     "eba": [
+        # QA-Prüfung 07.11.2026: Q&A 2026_7945 (Abzug von Beteiligungen an
+        # Versicherern vom CET1, Art. 495a CRR) landete wegen "intragroup
+        # transferability" bei der Abwicklungsfähigkeit; Q&A 2026_7830
+        # (Zuordnung für den antizyklischen Kapitalpuffer, Art. 140 CRD, Del.
+        # VO 1152/2014) wegen "synthetic securitisations" bei der Verbriefung.
+        ("crr3", r"(?=[\s\S]*(insurance|versicherung))(?=[\s\S]*(\bcet1\b|deduction|abzug))"),
+        ("ebaownfunds", r"countercyclical (capital )?buffer|antizyklische[nr]? (kapital)?puffer|\bccyb\b"),
         ("brrd", r"\btemplates? z ?\.?\d{2}\.\d{2}|\bz ?\.?\d{2}\.\d{2}\b|\bresol\b|resolution planning report"),
         ("itsrep", r"eba taxonomy|reporting taxonomy|taxonomy alignment with its"),
     ],
@@ -668,6 +675,11 @@ NOISE = re.compile(
     # einzelner Verbände ("Answer to the public consultation – IMMFA") als
     # eigene Dokumente — ebenfalls Eingaben Dritter.
     r"answer to the public consultation|"
+    # QA-Prüfung 07.11.2026: Fachliche Empfehlungen der ESAs an die Kommission
+    # ("final advice", "technical advice") und deren Anforderung sind Beiträge
+    # zu einem laufenden Rechtsetzungsverfahren, noch keine Pflicht für die
+    # Institute. Konsultationen zu Entwürfen ("draft technical advice") bleiben.
+    r"(?<!draft )technical advice|\bfinal advice\b|"
     # QA-Prüfung 02.11.2026: Urteile zur Flugverbotsliste einzelner
     # Fluggesellschaften (C-482/24 P) betreffen keine Pflichten der Institute.
     r"flight ban list|flugverbotsliste|"

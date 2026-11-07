@@ -40,6 +40,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from zoneinfo import ZoneInfo
 from typing import List, Optional, Set, Tuple
 
 SCRAPER = os.path.dirname(os.path.abspath(__file__))
@@ -364,6 +365,10 @@ def _main(argv: List[str], live: bool, note: str = "") -> int:
     now = dt.datetime.now(dt.timezone.utc)
     slot = current_slot(now).isoformat().replace("+00:00", ".000Z")
     force = "--force" in argv
+    # Reguläre QS nur montags (Berliner Zeit), passend zur Freigabe-Mail um
+    # 11:00. Live-QS auf Knopfdruck, --force und --dry laufen jederzeit.
+    if not (live or force or "--dry" in argv) and now.astimezone(ZoneInfo("Europe/Berlin")).weekday() != 0:
+        return 0
     state = load_state()
     if state.get("slot") != slot:
         state = {"slot": slot, "attempts": 0, "done": False}
@@ -434,7 +439,7 @@ def _main(argv: List[str], live: bool, note: str = "") -> int:
         live_report("running", "Verschicke die neue Freigabe-Mail …")
     latest = api("GET")
     checked = [p["slug"] for p in latest.get("pending") or []]
-    res = api("POST", {"ok": ok, "report": report, "checked": checked, "commit": commit})
+    res = api("POST", {"ok": ok, "report": report, "checked": checked, "commit": commit, "live": live})
     state["done"] = True
     save_state(state)
     log("Ergebnis gemeldet (ok={}), Antwort: {}".format(ok, json.dumps(res.get("report") or res)[:300]))

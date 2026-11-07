@@ -704,6 +704,33 @@ class QaSweepSept2026(unittest.TestCase):
             source_id="cssf",
             url="https://www.cssf.lu/en/Document/answer-to-the-public-consultation-institutional-money-market-funds-association-immfa/"))
 
+    def test_eba_qna_insurance_holdings_and_ccyb(self):
+        """QA-Prüfung 07.11.2026: EBA-Q&As zu Art. 495a CRR und zum
+        antizyklischen Kapitalpuffer standen bei Abwicklungsfähigkeit bzw.
+        Verbriefung."""
+        from regradar.webexport import _classify
+        t = ("2026_7945 Consolidated application and intragroup transferability of the permanent "
+             "exemption from deduction of equity holdings in an insurance company from CET1")
+        self.assertEqual(_classify(t, source_id="eba", title=t), "crr3")
+        t = ("2026_7830 Geographical allocation of exposures arising from synthetic securitisations "
+             "for the purposes of the Countercyclical Capital Buffer (CCB)")
+        self.assertEqual(_classify(t, source_id="eba", title=t), "ebaownfunds")
+        # Gewöhnliche Verbriefungs-Q&As bleiben bei der Verbriefung.
+        t = "2026_7000 Due diligence requirements for investors in STS securitisations"
+        self.assertEqual(_classify(t, source_id="eba", title=t), "securitisation")
+
+    def test_esa_advice_to_commission_is_noise(self):
+        """QA-Prüfung 07.11.2026: EIOPA-Advice zur Taxonomie-Offenlegung der
+        Versicherer erschien als Update."""
+        from regradar.webexport import _classify
+        for t in ("EIOPA publishes its final advice on enhancements to insurers' corporate "
+                  "disclosures under the EU Taxonomy",
+                  "Final report on Technical Advice on selected KPIs under the Taxonomy Disclosures Delegated Act"):
+            self.assertIsNone(_classify(t, title=t))
+        t = "Public consultation on the draft technical advice on minimum common standards for insurance guarantee schemes"
+        from regradar.webexport import NOISE
+        self.assertIsNone(NOISE.search(t))
+
     def test_individual_bafin_measure_is_not_a_framework_update(self):
         """BaFin-Einzelfall-Anordnungen gegen ein namentlich genanntes Institut
         (§ 60b KWG u. Ä.) sind kein CRR3-Update für alle Institute, sondern

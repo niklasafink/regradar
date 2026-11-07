@@ -47,7 +47,7 @@ import {
 } from "./logic";
 import { listSubscribers, redis, setLastFwNotified, setLastNotified, type Subscriber } from "./subscribers";
 import { fwFreshFor, loadFwSeen, markFwSent, renderFwParts } from "./frameworkNewsletter";
-import { APPROVAL_HOUR_BERLIN, scheduleAt, scheduleLabel, SEND_HOUR_BERLIN } from "./schedule";
+import { APPROVAL_HOUR_BERLIN, isBerlinMonday, scheduleAt, scheduleLabel, SEND_HOUR_BERLIN } from "./schedule";
 import type { Source } from "./sources";
 import { createFreqToken, type Frequency } from "./email";
 import { markApprovalSent, readQa, type QaRecord } from "./newsletterQa";
@@ -78,6 +78,9 @@ export interface RunReport {
   qaPending?: boolean;
   /** Freigabe-Mail für diesen Slot ging vor < 20 h schon raus. */
   approvalAlreadySent?: boolean;
+  /** Freigabe-Mail zurückgehalten: Sie geht nur montags (Berliner Zeit)
+      raus, außer bei einer Live-QS auf Knopfdruck. */
+  approvalDeferred?: boolean;
   /** Geplante Zustellung der Freigabe-Mail bzw. der Newsletter (ISO); fehlt = sofort. */
   approvalScheduledAt?: string;
   scheduledAt?: string;
@@ -528,6 +531,9 @@ export async function runNewsletter(opts: {
       Freigabe-Mail sofort verschicken, auch wenn der Cron heute schon eine
       geschickt hat. */
   afterQa?: boolean;
+  /** true = Live-QS auf Knopfdruck: Freigabe-Mail auch außerhalb des
+      Montags verschicken. */
+  live?: boolean;
   /** true = Tagesversand (werktags 12:00, Vercel-Cron): nur Tages-Abonnenten,
       ohne Freigabe und QS (Nutzerentscheidung 07.11.2026). */
   daily?: boolean;
@@ -606,6 +612,16 @@ export async function runNewsletter(opts: {
     const qa = await readQa(slot);
     if (!qa) {
       report.qaPending = true;
+      report.pendingItems = pages.length;
+      await redis().set(LAST_RUN_KEY, nowIso);
+      return report;
+    }
+    // Feste Versandtage (Nutzerentscheidung 07.11.2026): Freigabe-Mail und
+    // Erinnerung nur montags. Kommt die QS an einem anderen Tag fertig (z. B.
+    // nach einer Slot-Umstellung oder einem schlafenden Mac), wartet alles
+    // auf den nächsten Montag; nur die Live-QS auf Knopfdruck darf sofort.
+    if (!opts.live && !isBerlinMonday(new Date(nowIso))) {
+      report.approvalDeferred = true;
       report.pendingItems = pages.length;
       await redis().set(LAST_RUN_KEY, nowIso);
       return report;

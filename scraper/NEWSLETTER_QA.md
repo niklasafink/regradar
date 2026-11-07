@@ -4,7 +4,7 @@ Diese Datei ist die Arbeitsanweisung für die Qualitätssicherung des wöchentli
 
 ## Ablauf und Zweck
 
-Stichtag ist donnerstags um 10:00 UTC. Danach startet der Stundenlauf (`run_hourly.sh`) die QS. Erst wenn sie ihr Ergebnis an `POST /api/newsletter/qa` gemeldet hat, verschickt die Website die Freigabe-Mail an Niklas, zusammen mit dem QS-Bericht. Der Vercel-Cron allein verschickt keine Freigabe-Mail mehr, solange für die Woche keine QS vorliegt.
+Stichtag ist montags um 06:00 UTC. Danach startet der Stundenlauf (`run_hourly.sh`) die QS, aber nur montags (deutsche Zeit); die Freigabe-Mail geht ebenfalls nur montags raus, um 11:00 bzw. sofort, wenn die QS später fertig wird. Die Live-QS auf Knopfdruck läuft an jedem Tag. Erst wenn sie ihr Ergebnis an `POST /api/newsletter/qa` gemeldet hat, verschickt die Website die Freigabe-Mail an Niklas, zusammen mit dem QS-Bericht. Der Vercel-Cron allein verschickt keine Freigabe-Mail mehr, solange für die Woche keine QS vorliegt.
 
 Ziel: In der Mail an die Abonnenten steht nur, was ein Compliance-Officer im Finanzinstitut als Update braucht. Jede Meldung muss dem richtigen Rahmenwerk zugeordnet sein, das richtige Datum haben und einen deutschen, verständlichen Titel tragen. Dubletten und Rauschen gehören nicht hinein.
 
