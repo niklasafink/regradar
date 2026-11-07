@@ -205,10 +205,23 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
   const user = `INSTITUTSPROFIL:\n${profileText(p)}\n\nMELDUNG UND ANFORDERUNGSANALYSE:\n${targetText(t, scope)}`;
   let cost = 0;
   const at = new Date().toISOString();
-  const [a, b] = await Promise.all([
+  const [sa, sb] = await Promise.allSettled([
     chatJson<LlmVerdict>({ model: MODELS.matchA, system: MATCH_SYSTEM, user, maxTokens: 2500 }),
     chatJson<LlmVerdict>({ model: MODELS.matchB, system: MATCH_SYSTEM, user, maxTokens: 2500 }),
   ]);
+  // Fällt ein Prüfer aus (leere Antwort, API-Fehler), entscheidet der andere
+  // allein, wenn sein Urteil die Regelprüfung besteht.
+  if (sa.status === "rejected" || sb.status === "rejected") {
+    const bad = [sa, sb].find((x) => x.status === "rejected") as PromiseRejectedResult;
+    if (bad.reason instanceof BudgetError) throw bad.reason;
+    const ok = [sa, sb].find((x) => x.status === "fulfilled") as PromiseFulfilledResult<{ data: LlmVerdict; costUsd: number }> | undefined;
+    if (!ok) throw bad.reason;
+    const v = norm(ok.value.data);
+    if (qs1(p, v, rules).length) throw new Error("Einzelurteil besteht die Regelprüfung nicht");
+    return { status: v.status, grund: v.grund, teile: v.teile, frage: v.frage, art: scope?.art, stufe: "ki", kostenUsd: ok.value.costUsd, at };
+  }
+  const a = sa.value;
+  const b = sb.value;
   cost += a.costUsd + b.costUsd;
   const va = norm(a.data);
   const vb = norm(b.data);

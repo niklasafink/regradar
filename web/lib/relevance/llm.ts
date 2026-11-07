@@ -107,6 +107,7 @@ export async function chatJson<T>(opts: {
         .replace(/^```(?:json)?/, "").replace(/```$/, "").trim();
       const start = content.indexOf("{");
       const end = content.lastIndexOf("}");
+      if (!content) throw new Error(`${opts.model}: leere Antwort`);
       const data = JSON.parse(start >= 0 ? content.slice(start, end + 1) : content) as T;
       return { data, costUsd: cost, model: json.model ?? opts.model };
     } catch (e) {
