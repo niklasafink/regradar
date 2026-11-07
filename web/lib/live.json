@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:18:08Z",
+  "generated_at": "2026-11-07T16:36:17Z",
   "updates": {
     "emir": [
       {
@@ -2518,22 +2518,22 @@
         "imp": "high"
       },
       {
-        "d": "18.02.2026",
+        "d": "25.06.2025",
         "t": {
           "de": "Allgemeinverfügung",
           "en": "General decision"
         },
         "src": "bafin.de",
         "ti": {
-          "de": "Teilweiser Widerruf der Allgemeinverfügung zu Nachhandelstransparenz für Handelsplätze",
-          "en": "Partial Revocation of General Administrative Act on Post-Trade Transparency for Trading Venues"
+          "de": "Neufestsetzung von Positionslimits für THE natural gas Future Kontrakte (BaFin)",
+          "en": "Re-establishment of Position Limits for THE natural gas Future Contracts (BaFin)"
         },
-        "sl": "anhoerung-zum-teilwiderruf-der-allgemeinverfuegung-bezueglich-der-nachhandelstra",
+        "sl": "allgemeinverfuegung-zur-neufestsetzung-von-positionslimits-fuer-the-natural-gas",
         "s": {
-          "de": "Die BaFin beabsichtigt, ihre Allgemeinverfügung vom 15. Juni 2023 zu den Nachhandelstransparenzanforderungen für Handelsplätze teilweise zu widerrufen. Dies betrifft Schuldverschreibungen, strukturierte Finanzprodukte und Emissionszertifikate. Der Widerruf erfolgt aufgrund geänderter europäischer Vorgaben, insbesondere der Überarbeitung der MiFIR und der Delegierten Verordnung (EU) 2025/1246 (RTS 2).\n\nDie ursprüngliche Allgemeinverfügung erlaubte es Wertpapierdienstleistungsunternehmen, Details zu bestimmten Geschäften später zu veröffentlichen (Deferrals). Da die rechtliche Grundlage für diese Deferrals in der MiFIR entfallen ist und die überarbeiteten RTS 2 ab dem 2. März 2026 gelten, entspricht die bisherige Regelung nicht mehr dem EU-Recht. Für Derivate bleibt das bisherige Regelungsregime jedoch bestehen, bis die RTS 2 auch in diesem Bereich überarbeitet werden.\n\nInteressierte Parteien haben bis zum 25. Februar 2026 die Möglichkeit, Stellungnahmen zu diesem Teilwiderruf bei der BaFin einzureichen. Der Teilwiderruf soll mit Wirkung zum 2. März 2026 in Kraft treten.",
-          "en": "BaFin intends to partially revoke its general administrative act of June 15, 2023, concerning post-trade transparency requirements for trading venues. This revocation affects bonds, structured finance products, and emission allowances. The decision is based on amended European regulations, specifically the revised MiFIR and Delegated Regulation (EU) 2025/1246 (RTS 2).\n\nThe original general administrative act allowed investment firms to defer the publication of details for certain transactions. As the legal basis for these deferrals in MiFIR has been removed and the revised RTS 2 will apply from March 2, 2026, the current regulation no longer complies with EU law. However, for derivatives, the existing regulatory regime will remain in place until RTS 2 is revised for this area as well.\n\nInterested parties have until February 25, 2026, to submit comments on this partial revocation to BaFin. The partial revocation is intended to take effect on March 2, 2026."
+          "de": "Die BaFin hat eine Allgemeinverfügung zur Neufestsetzung von Positionslimits für „THE natural gas Future“-Kontrakte der European Energy Exchange AG (EEX) erlassen. Für den Spot-Monat wird das Limit auf 17.938.800 MWh und für die anderen Monate auf 53.054.650 MWh festgelegt.\n\nDiese Maßnahme erfolgt gemäß § 54 Abs. 1 und § 56 Abs. 1 Satz 2 WpHG in Verbindung mit Art. 16 Buchstabe a der Delegierten Verordnung (EU) 2022/1302. Die Neufestsetzung ist notwendig, da das Open Interest für diese Warenderivate den Schwellenwert von durchschnittlich 300.000 handelbaren Einheiten überschritten hat, was sie zu signifikanten Kontrakten im Sinne des WpHG macht. Die BaFin stützt sich bei der Berechnung der lieferbaren Menge auf Daten von ENTSO-G, GIE und Eurostat und berücksichtigt dabei die tatsächlichen Importe anstelle der Lieferkapazitäten, um dem Ausfall russischer Gaslieferungen Rechnung zu tragen.\n\nDie Allgemeinverfügung tritt mit Wirkung zum 26. Juni 2025 in Kraft. Die sofortige Vollziehung der Positionslimit-Festsetzung wurde angeordnet.",
+          "en": "The BaFin has issued a general decree to re-establish position limits for “THE natural gas Future” contracts of the European Energy Exchange AG (EEX). The limit for the spot month is set at 17,938,800 MWh, and for other months at 53,054,650 MWh.\n\nThis measure is taken in accordance with Section 54 (1) and Section 56 (1) sentence 2 WpHG in conjunction with Article 16(a) of Delegated Regulation (EU) 2022/1302. The re-establishment is necessary because the open interest for these commodity derivatives has exceeded the threshold of an average of 300,000 tradable units, making them significant contracts under the WpHG. BaFin bases its calculation of the deliverable quantity on data from ENTSO-G, GIE, and Eurostat, considering actual imports instead of delivery capacities to account for the cessation of Russian gas supplies.\n\nThe general decree comes into effect on June 26, 2025. Immediate enforcement of the position limit setting has been ordered."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20260218_anhoerung_teilwiderruf_handelplaetze.html",
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_250625_allgvfg_positionslimits_the_natural_gas_future.html",
         "imp": "high"
       }
     ],
@@ -5911,29 +5911,29 @@
         ]
       },
       {
-        "d": "06.06.2025",
+        "d": "27.03.2025",
         "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
+          "de": "Mitteilung",
+          "en": "Statement"
         },
         "src": "bafin.de",
         "ti": {
-          "de": "BaFin-Anhörung zur Rücknahme von GwG-Freistellungen",
-          "en": "BaFin Consultation on Revocation of GwG Exemptions"
+          "de": "Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften",
+          "en": "Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften"
         },
-        "sl": "anhoerung-zur-allgemeinverfuegung-bezueglich-der-ruecknahme-von-freistellungen-v",
+        "sl": "praevention-von-geldwaesche-und-terrorismusfinanzierung-risiken-im-zusammenhang",
         "s": {
-          "de": "Die BaFin beabsichtigt, alle auf Grundlage des bis zum 20.08.2008 geltenden Geldwäschegesetzes (GwG) erteilten Freistellungen von GwG-Vorschriften mit Wirkung zum 10.07.2027 zurückzunehmen. Dies betrifft Freistellungen, die vom Bundesaufsichtsamt für das Kreditwesen oder der BaFin unbefristet und mit Widerrufsvorbehalt erteilt wurden.\n\nGrundlage für die Rücknahme ist die neue EU-Geldwäscheverordnung (Verordnung (EU) 2024/1624), die am 09.07.2024 in Kraft getreten ist. Diese Verordnung enthält keine Regelung, die der alten Freistellungsoption des § 1 Abs. 1 Satz 2 GwG entspricht. Zwar ermöglicht Artikel 6 der EU-Geldwäscheverordnung neue Ausnahmen für bestimmte Finanztätigkeiten bei geringem Risiko, diese wären jedoch voraussichtlich erheblich restriktiver als die bisherigen Freistellungen.\n\nDie Rücknahme dient dem öffentlichen Interesse an einer einheitlichen Anwendung der neuen EU-Geldwäscheverordnung und des GwG. Betroffene haben bis zum 20.06.2025 Gelegenheit zur Äußerung im Rahmen der Anhörung. Die Bekanntgabe der Rücknahme soll frühzeitig erfolgen, um den derzeit Freigestellten ausreichend Vorbereitungszeit für die neue Rechtslage ab dem 10.07.2027 zu geben.",
-          "en": "BaFin intends to revoke all exemptions from the German Anti-Money Laundering Act (GwG) provisions, granted under the GwG versions valid until August 20, 2008, effective July 10, 2027. This concerns exemptions issued indefinitely and with a right of revocation by the Federal Banking Supervisory Office or BaFin.\n\nThe revocation is based on the new EU Anti-Money Laundering Regulation (Regulation (EU) 2024/1624), which entered into force on July 9, 2024. This regulation does not contain a provision corresponding to the old exemption option under § 1 para. 1 sentence 2 GwG. While Article 6 of the EU AML Regulation allows for new exemptions for certain low-risk financial activities, these would likely be significantly more restrictive than the previous exemptions.\n\nThe revocation serves the public interest in a uniform application of the new EU AML Regulation and the GwG. Affected parties have until June 20, 2025, to comment as part of the consultation. The revocation is to be announced early to provide those currently exempted with sufficient preparation time for the new legal situation starting July 10, 2027."
+          "de": "Die BaFin warnt Finanzunternehmen vor erheblichen Geldwäsche- und Terrorismusfinanzierungsrisiken durch Umgehungsgeschäfte. Solche Geschäfte zielen darauf ab, gesetzliche, regulatorische oder vertragliche Vorgaben zu umgehen, indem sie den tatsächlichen wirtschaftlichen oder länderspezifischen Hintergrund verschleiern. Dies erschwert die Einhaltung der Sorgfaltspflichten nach §§ 10 ff. GwG.\n\nBei Anhaltspunkten für Umgehungsgeschäfte sind verstärkte Sorgfaltspflichten gemäß § 15 GwG anzuwenden. Können diese nicht erfüllt werden, greift die Beendigungspflicht nach § 15 Absatz 9 GwG in Verbindung mit § 10 Absatz 9 GwG, und es sind gegebenenfalls Verdachtsmeldungen nach § 43 Absatz 1 GwG zu erstatten. Die BaFin hebt hervor, dass Verpflichtete ihr Risikomanagement und ihre Monitoring-Systeme anpassen müssen, um verdächtige Muster zu erkennen und den Informationsaustausch nach § 47 Absatz 5 GwG zu nutzen.\n\nBesondere Aufmerksamkeit gilt Umgehungsgeschäften mit Iran-Bezug, da der Iran als Hochrisikoland eingestuft ist. Die BaFin nennt hier die Einbindung von „Exchange Trading Houses“ und „Payment Agents“ sowie den Missbrauch von Handelsfinanzierungen als bekannte Modelle zur Verschleierung des Iran-Bezugs und zur Umgehung von Sanktionen und Sorgfaltspflichten.",
+          "en": "The BaFin warns financial institutions about significant money laundering and terrorist financing risks posed by circumvention schemes. Such schemes aim to bypass legal, regulatory, or contractual requirements by obscuring the true economic or country-specific background. This makes it difficult to comply with due diligence obligations under Sections 10 et seq. of the German Money Laundering Act (GwG).\n\nIf there are indications of circumvention schemes, enhanced due diligence obligations under Section 15 GwG must be applied. If these cannot be met, the termination obligation under Section 15 (9) GwG in conjunction with Section 10 (9) GwG applies, and suspicious activity reports under Section 43 (1) GwG must be filed if necessary. The BaFin emphasizes that obliged entities must adapt their risk management and monitoring systems to identify suspicious patterns and utilize information exchange under Section 47 (5) GwG.\n\nParticular attention is drawn to circumvention schemes involving Iran, as Iran is classified as a high-risk country. The BaFin specifically mentions the involvement of “Exchange Trading Houses” and “Payment Agents,” as well as the misuse of trade finance, as known models for concealing Iran-related transactions and circumventing sanctions and due diligence obligations."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_250606_allgvfg_Ruecknahme_Freistellungen_GwG.html",
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2025/aufsichtsmitteilung_250311_umgehungsgeschaefte_gw.html",
         "imp": "high",
         "adv": [
           {
             "f": "KPMG",
-            "ti": "BaFin startet Konsultation zu einer Allgemeinverfügung bezüglich der Rücknahme von Freistellungen von Vorschriften des Geldwäschegesetzes (GwG)",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-einer-allgemeinverfuegung-bezueglich-der-ruecknahme-von-freistellungen-von-vorschriften-des-geldwaeschegesetzes-gwg/",
-            "d": "16.06.2025"
+            "ti": "BaFin veröffentlicht Aufsichtsmitteilung zur Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-aufsichtsmitteilung-zur-praevention-von-geldwaesche-und-terrorismusfinanzierung-risiken-im-zusammenhang-mit-umgehungsgeschaeften/",
+            "d": "27.03.2025"
           }
         ]
       }

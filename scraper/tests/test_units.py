@@ -740,6 +740,34 @@ class QaSweepSept2026(unittest.TestCase):
         self.assertEqual(_twin_key(base.format("Handelsplätze")), _twin_key(base.format("OTC-Geschäfte")))
         self.assertNotEqual(_twin_key("Rundschreiben 05/2026"), _twin_key("Rundschreiben 06/2026"))
 
+    def test_treaty_notices_are_not_updates(self):
+        """07.11.2026: BGBl.-II-Bekanntmachung zum Europarats-Übereinkommen
+        (Vorbehalt Schwedens) stand unter GwG."""
+        from regradar.webexport import _classify, TREATY_LAW
+        t = ("Bekanntmachung zu dem Übereinkommen des Europarats über Geldwäsche sowie Ermittlung, "
+             "Beschlagnahme und Einziehung von Erträgen aus Straftaten")
+        self.assertIsNone(_classify(t, source_id="bgbl", title=t))
+        self.assertTrue(TREATY_LAW.search("Bekanntmachung über den Geltungsbereich des Übereinkommens zur Errichtung"))
+        self.assertIsNone(TREATY_LAW.search("Bekanntmachung der Neufassung des Kreditwesengesetzes"))
+
+    def test_bafin_hearing_superseded_by_decision(self):
+        """07.11.2026: BaFin-Anhörung entfällt, sobald die Allgemeinverfügung
+        zum selben Gegenstand erschienen ist; andere Kontrakte bleiben."""
+        from regradar.webexport import _superseded_hearings
+        def row(i, iso, title):
+            return {"document_id": i, "source_id": "bafin_search", "publication_date": iso,
+                    "first_seen_at": iso, "title": title}
+        rows = [
+            row(1, "2026-02-18", "Anhörung zum Teilwiderruf der Allgemeinverfügung bezüglich der "
+                "Nachhandelstransparenzanforderungen für Handelsplätze im Hinblick auf Nichteigenkapitalinstrumente"),
+            row(2, "2026-02-27", "Allgemeinverfügung zum Teilwiderruf der Allgemeinverfügung bezüglich der "
+                "Nachhandelstransparenzanforderungen für Handelsplätze im Hinblick auf Schuldverschreibungen"),
+            row(3, "2026-02-18", "Anhörung zur Festsetzung eines Positionslimits für French Power Future Kontrakte"),
+            row(4, "2026-03-01", "Allgemeinverfügung zur Festsetzung eines Positionslimits für Italian Power Future Kontrakte"),
+            row(5, "2026-03-01", "Anhörung zur Anerkennung eines in Norwegen angeordneten Kapitalpuffers"),
+        ]
+        self.assertEqual(_superseded_hearings(rows), {1})
+
     def test_individual_bafin_measure_is_not_a_framework_update(self):
         """BaFin-Einzelfall-Anordnungen gegen ein namentlich genanntes Institut
         (§ 60b KWG u. Ä.) sind kein CRR3-Update für alle Institute, sondern

@@ -338,7 +338,7 @@ FRAMEWORK_RULES = [
     ("idd", r"versicherungsvertrieb|insurance distribution|"
            r"versicherungsvermittl|insurance intermediar|\bibips?\b|versicherungsanlageprodukt|insurance-based investment|versicherungsmakler"),
     ("ebaict", r"guidelines on ict and security risk|leitlinien zu ikt- und sicherheitsrisik"),
-    # BCBS 239 / RDARR: Aufsichtsthema der EZB, der BaFin (MaRisk AT 4.3.4) und
+    # BCBS 239 / RDARR: Aufsichtsthema der EZB, der BaFin (MaRisk AT 4.3.4 bis 06/2026) und
     # der Beratungshäuser, Ursprung ist der Basler Ausschuss. Bewusst eng:
     # ein bloßes "Basel" bleibt bei crr3 (EU-Umsetzung); BIS-Dokumente selbst
     # kommen über SOURCE_RULES.
@@ -852,7 +852,10 @@ SANCTIONS_LISTING = re.compile(
 # Vereinbarungen zwischen Staaten bzw. Behörden. Pflichten der Institute
 # entstehen erst durch das Umsetzungsgesetz, das eigens erfasst wird.
 TREATY_LAW = re.compile(
-    r"^\s*(entwurf eines )?gesetz(es)? zu (dem|der|den) [\s\S]{0,200}?"
+    r"^\s*((entwurf eines )?gesetz(es)? zu (dem|der|den)|"
+    # 07.11.2026: Bekanntmachungen im BGBl. II zu völkerrechtlichen Verträgen
+    # (Vorbehalte, Geltungsbereich, Notenwechsel) lösen keine Pflicht aus.
+    r"bekanntmachung (zu (dem|der|den)|über den geltungsbereich|des|der|den)\b)[\s\S]{0,200}?"
     r"(abkommen|vereinbarung|übereinkommen|protokoll|vertrag)", re.IGNORECASE)
 
 
@@ -1006,6 +1009,52 @@ def _bafin_search_overlaps(rows) -> set:
                 dupes.add(r["document_id"])
                 break
     return dupes
+
+
+# BaFin-Anhörung vor einer Allgemeinverfügung: Ist die Verfügung zum selben
+# Thema erschienen, löst die Anhörung keine Handlung mehr aus und entfällt
+# (07.11.2026: Anhörung 18.02. und Teilwiderruf 27.02.2026 zur
+# Nachhandelstransparenz; Anhörung 14.09. und Anerkennung 21.10.2026 zum
+# österreichischen Systemrisikopuffer). Bewusst nur BaFin; bei EU-Konsultationen
+# ist die Zuordnung Entwurf/Endfassung über den Titel zu unsicher.
+HEARING_TITLE = re.compile(r"^\s*anhörung\b", re.IGNORECASE)
+DECISION_TITLE = re.compile(r"^\s*allgemeinverfügung\b", re.IGNORECASE)
+HEARING_MAX_DAYS = 180
+HEARING_MIN_OVERLAP = 0.8
+_HEARING_STOP = {"anhörung", "allgemeinverfügung", "bezüglich", "geplanten", "eines", "einer",
+                 "des", "der", "die", "das", "zur", "zum", "für", "nach", "vor", "erlass",
+                 "im", "hinblick", "auf", "in", "und", "von"}
+
+
+def _hearing_tokens(title: Optional[str]) -> set:
+    # Nur der Gegenstand zählt; der Zusatz "im Hinblick auf …" nennt in
+    # Anhörung und Verfügung oft unterschiedliche Instrumentenlisten.
+    t = TWIN_VARIANT.sub(" ", (title or "").lower()).split(" im hinblick")[0]
+    return {w for w in re.findall(r"\w+", t) if len(w) >= 4 and w not in _HEARING_STOP}
+
+
+def _superseded_hearings(rows) -> set:
+    """document_ids von BaFin-Anhörungen, auf die eine Allgemeinverfügung zum
+    selben Thema folgte."""
+    bafin = [r for r in rows if r["source_id"] in ("bafin", "bafin_search")]
+    decisions = [((r["publication_date"] or r["first_seen_at"] or "")[:10], _hearing_tokens(r["title"]))
+                 for r in bafin if DECISION_TITLE.search(r["title"] or "")]
+    out = set()
+    for r in bafin:
+        if not HEARING_TITLE.search(r["title"] or ""):
+            continue
+        iso = (r["publication_date"] or r["first_seen_at"] or "")[:10]
+        toks = _hearing_tokens(r["title"])
+        if not toks:
+            continue
+        for d_iso, d_toks in decisions:
+            gap = _days_apart(iso, d_iso)
+            if gap is None or d_iso < iso or gap > HEARING_MAX_DAYS:
+                continue
+            if len(toks & d_toks) / len(toks | d_toks) >= HEARING_MIN_OVERLAP:
+                out.add(r["document_id"])
+                break
+    return out
 
 
 def _de_date(iso: Optional[str]) -> Optional[str]:
@@ -1186,7 +1235,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     bis_pub_days = {(r["publication_date"] or "")[:10] for r in rows
                     if r["source_id"] in ("bis", "bis_cpmi", "bis_fsi")
                     and r["publication_date"]}
-    bafin_search_dupes = _bafin_search_overlaps(rows)
+    bafin_search_dupes = _bafin_search_overlaps(rows) | _superseded_hearings(rows)
     candidates = []
     for r in rows:
         if _too_thin(r):
