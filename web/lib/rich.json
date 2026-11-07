@@ -1157,6 +1157,192 @@
    "dropped": 0
   }
  },
+ "itsrep-2026-11-06-the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends": {
+  "h1": "EBA vereinfacht aufsichtsrechtliches Meldewesen und verlängert Fristen (ITS DVO 2024/3117)",
+  "seo_title": "EBA Meldewesen Vereinfachung ITS 2026",
+  "meta_description": "EBA verschiebt erste Referenzperiode auf Dezember 2027, ausgewählte Bereiche auf Dezember 2028. ITS-Abschlussbericht folgt im Dezember 2026. Was Institute jetzt beachten müssen.",
+  "lead": "Die EBA hat die nächsten Schritte zur Vereinfachung des aufsichtsrechtlichen Meldewesens dargelegt und die Umsetzungsfristen verlängert. Die neue erste Referenzperiode ist Dezember 2027, für Liquidität, ESG und Benchmarking gilt Dezember 2028.",
+  "aka": [
+   "ITS Supervisory Reporting",
+   "COREP FINREP Vereinfachung",
+   "DVO 2024/3117",
+   "EBA Meldewesen Simplification",
+   "ITS Simplification Package"
+  ],
+  "summary": "Die EBA hat nach der öffentlichen Konsultation die Eckpunkte ihres finalisierten ITS-Pakets zur Vereinfachung des aufsichtsrechtlichen Meldewesens veröffentlicht. Die erste Referenzperiode für neue Anforderungen wird auf Dezember 2027 verschoben; Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG-Meldungen folgen erst ab Dezember 2028. Der Abschlussbericht erscheint im Dezember 2026, das technische Paket im Frühjahr 2027.",
+  "overview": [
+   "Die EBA hat am 06.11.2026 die Ergebnisse ihrer Konsultation zum ITS-Paket für das aufsichtsrechtliche Meldewesen (DVO (EU) 2024/3117) kommuniziert und die Umsetzungsfristen verlängert. Der ITS-Abschlussbericht erscheint im Dezember 2026 und wird anschließend der EU-Kommission zur Annahme vorgelegt.",
+   "Das finalisierte Paket sieht eine weitere Vereinfachung der Meldebögen, stärkere Proportionalität, reduzierte Meldefrequenzen und eine engere Abstimmung mit den Offenlegungspflichten vor. Kreditrisiko- und IFRS-9-Benchmarking-Meldungen werden in das aufsichtsrechtliche Meldewesen integriert; operative Verlustmeldungen werden gestrafft; ein eigenes Modul für Stresstests wird eingeführt.",
+   "Während der Übergangszeit gelten weiter die bestehenden Vorgaben für IFRS-18, FRTB (ab 01.01.2027), operative Risikoverluste und aufsichtsrechtliches Benchmarking (ITS 2026). EBA und nationale Behörden haben sich zudem verpflichtet, doppelte nationale Datenabrufe zu reduzieren."
+  ],
+  "facts": [
+   {
+    "label": "Herausgeber",
+    "value": "EBA"
+   },
+   {
+    "label": "Meldung vom",
+    "value": "06.11.2026"
+   },
+   {
+    "label": "Rechtsakt",
+    "value": "DVO (EU) 2024/3117 (ITS on Supervisory Reporting)"
+   },
+   {
+    "label": "Konsultationsende",
+    "value": "10.07.2026"
+   },
+   {
+    "label": "ITS-Abschlussbericht",
+    "value": "Dezember 2026"
+   },
+   {
+    "label": "Erste Referenzperiode (neue Anforderungen)",
+    "value": "Dezember 2027"
+   },
+   {
+    "label": "Aufgeschobene Bereiche (Liquidität, ESG, Benchmarking)",
+    "value": "Dezember 2028"
+   },
+   {
+    "label": "Technisches Paket (DPM, Taxonomien, Validierungsregeln)",
+    "value": "Frühjahr 2027"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Banken / CRR-Institute",
+    "note": "Direkt betroffen: COREP/FINREP-Meldepflichten",
+    "detail": "Alle Institute, die unter die ITS on Supervisory Reporting fallen, müssen Übergangsregeln beachten und Systeme für Dezember 2027 vorbereiten.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen / Regulatory Reporting",
+    "note": "Umsetzung und Systemanpassung",
+    "detail": "Fachbereiche müssen Meldebögen, Frequenzen und Datenpunkte anpassen; technisches Paket (DPM/Taxonomien) erscheint erst Frühjahr 2027.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance / Regulatorik",
+    "note": "Übergangsvorgaben sofort relevant",
+    "detail": "Bestehende IFRS-18-Opinion, FRTB-Hinweise und Benchmarking-ITS 2026 gelten bis zur Ablösung. Fristverlängerungen mindern, aber nicht beseitigen Handlungspflichten.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Risikomanagement",
+    "note": "FRTB und operationelle Risiken",
+    "detail": "FRTB-Meldungen gelten ab 01.01.2027 nach bestehendem Rahmen; operative Risikoverluste nur für nicht von neuer Taxonomie betroffene Daten.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Wertpapierfirmen (WpI)",
+    "note": "Nicht ausdrücklich einbezogen",
+    "detail": "Die Meldung bezieht sich auf CRR-Institute und EBA-Rahmen; Wertpapierfirmen nach IFD/IFR sollten Anwendbarkeit separat prüfen.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Versicherungen / Fonds",
+    "note": "EBA-Rahmen nicht anwendbar",
+    "detail": "COREP/FINREP und die EBA-ITS on Supervisory Reporting richten sich an Kreditinstitute; SOLVENCY-II- und AIFMD-Meldewesen sind nicht betroffen.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "EBA, 06.11.2026",
+    "title": "Erste Referenzperiode auf Dez. 2027 verschoben",
+    "text": "Die neue erste Referenzperiode für alle neuen Anforderungen aus dem ITS-Paket ist Dezember 2027, mindestens ein Jahr nach Inkrafttreten der finalen ITS."
+   },
+   {
+    "ref": "EBA, 06.11.2026",
+    "title": "Aufschub für Liquidität, ESG, Benchmarking",
+    "text": "Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG-Meldungen gelten erst ab Dezember 2028."
+   },
+   {
+    "ref": "EBA, 06.11.2026",
+    "title": "Integration Benchmarking in Supervisory Reporting",
+    "text": "Kreditrisiko- und IFRS-9-Benchmarking-Meldungen werden in die ITS on Supervisory Reporting überführt; IFRS-9-Anforderungen werden dabei gestrafft."
+   },
+   {
+    "ref": "EBA, 06.11.2026",
+    "title": "Neues Stresstest-Modul mit eigenen Fristen",
+    "text": "Ein separates Stresstest-Meldemodul mit eigenen Einreichungsfristen und reduzierten Datenpunkten wird eingeführt."
+   },
+   {
+    "ref": "EBA, 06.11.2026",
+    "title": "Vereinfachte operative Verlustmeldungen",
+    "text": "Granulare Meldungen zu operationellen Verlusten werden gestrafft; bis zur Ablösung gilt die bisherige Vorlage nur für Daten außerhalb der neuen Taxonomie."
+   },
+   {
+    "ref": "EBA, Q1 2027",
+    "title": "EU-weites Repository für Datenabrufe geplant",
+    "text": "Ein öffentliches EU-Repository für aufsichtliche Datenabrufe soll in Q1 2027 operativ werden; EBA-Leitlinien zu Datenabrufen erscheinen noch Ende 2026."
+   }
+  ],
+  "todos": [
+   "Übergangsvorgaben dokumentieren: IFRS-18-Opinion, FRTB-Hinweise und Benchmarking-ITS 2026 sind bis zur Ablösung weiter anzuwenden.",
+   "ITS-Abschlussbericht der EBA im Dezember 2026 auswerten und Gap-Analyse zu bestehenden Meldeprozessen anstoßen.",
+   "Technisches Paket (DPM, Taxonomien, Validierungsregeln) für Frühjahr 2027 einplanen und IT-/Systemumsetzung terminieren.",
+   "Projektplanung auf neue Referenzperiode Dezember 2027 ausrichten (mindestens ein Jahr Implementierungszeitraum nach ITS-Annahme durch EU-Kommission).",
+   "Für Liquidität, Vermögensbelastung, Benchmarking und ESG separate Umsetzungslinie bis Dezember 2028 einplanen.",
+   "Doppelte nationale Datenabrufe intern erfassen und mit nationaler Aufsicht abstimmen, sobald EBA-Leitlinien zu Datenabrufen Ende 2026 erscheinen.",
+   "FRTB-Melderahmen ab 01.01.2027 nach bestehendem ITS sicherstellen, bis neues Paket gilt."
+  ],
+  "timeline": [
+   {
+    "date": "10.04.2026",
+    "label": "Konsultation veröffentlicht",
+    "kind": "schritt"
+   },
+   {
+    "date": "10.07.2026",
+    "label": "Konsultationsende",
+    "kind": "frist"
+   },
+   {
+    "date": "06.11.2026",
+    "label": "EBA-Meldung: nächste Schritte",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Müssen Institute jetzt schon etwas ändern?",
+    "a": "Nein, aber die Übergangsregeln sind sofort verbindlich: IFRS-18-Opinion, FRTB-Vorgaben ab 01.01.2027 und das Benchmarking-ITS 2026 gelten weiter, bis das neue Paket in Kraft tritt. Eine Gap-Analyse sollte nach Veröffentlichung des ITS-Abschlussberichts im Dezember 2026 erfolgen."
+   },
+   {
+    "q": "Wann gelten die neuen Meldebögen konkret?",
+    "a": "Die neue erste Referenzperiode ist Dezember 2027. Für Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG gilt Dezember 2028. Der genaue Anwendungsbeginn hängt vom Datum der Annahme durch die EU-Kommission ab."
+   },
+   {
+    "q": "Wann erscheint das technische Paket für die IT-Umsetzung?",
+    "a": "EBA kündigt das technische Paket mit Datenpunktmodell, Taxonomien und Validierungsregeln für Anfang 2027 an. Ohne dieses Paket ist eine finale Systemumsetzung nicht möglich."
+   },
+   {
+    "q": "Was ändert sich für das Benchmarking-Meldewesen?",
+    "a": "Kreditrisiko- und IFRS-9-Benchmarking werden in die allgemeine ITS on Supervisory Reporting integriert. Bis dahin gilt das Benchmarking-ITS 2026 weiter. Der Aufschub für das integrierte Benchmarking läuft bis Dezember 2028."
+   },
+   {
+    "q": "Betrifft das auch Wertpapierfirmen?",
+    "a": "Die Quelle adressiert ausdrücklich Kreditinstitute im EBA-Rahmen. Wertpapierfirmen nach IFD/IFR sollten prüfen, ob die ITS auf sie anwendbar ist; eine ausdrückliche Ausnahme findet sich in der Meldung nicht."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Exakter Anwendungsbeginn hängt vom Annahmedatum durch die EU-Kommission ab; dieser Termin ist noch nicht bekannt.",
+   "Umfang der EBA-Leitlinien zu Datenabrufen (erwartet Ende 2026) noch nicht veröffentlicht.",
+   "Details zum EU-weiten Repository (Q1 2027) noch offen.",
+   "Konkrete Ausgestaltung der Proportionalitätsregelungen für kleinere Institute noch nicht aus der Meldung ableitbar.",
+   "Dezember 2028 als Frist für aufgeschobene Bereiche setzt eine Annahme durch die EU-Kommission voraus; Verschiebungen sind möglich."
+  ],
+  "meta": {
+   "generated": "2026-11-07",
+   "model": "sonnet",
+   "source": "HTML, 6115 Zeichen, gekürzt auf 6115",
+   "dropped": 3,
+   "tokens": 24681
+  }
+ },
  "mica-2026-10-21-compliance-table-on-the-guidelines-on-market-abuse-under-mica": {
   "h1": "Compliance-Tabelle ESMA-Leitlinien Marktmissbrauch unter MiCA (ESMA75-113276571-1625)",
   "seo_title": "ESMA MiCA Marktmissbrauch Compliance-Tabelle 2026",
