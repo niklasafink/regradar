@@ -731,6 +731,15 @@ class QaSweepSept2026(unittest.TestCase):
         from regradar.webexport import NOISE
         self.assertIsNone(NOISE.search(t))
 
+    def test_bafin_twin_decisions_share_a_key(self):
+        """07.11.2026: Teilwiderruf Nachhandelstransparenz erschien zweimal
+        (Handelsplätze und OTC-Geschäfte, gleicher Tag)."""
+        from regradar.webexport import _twin_key
+        base = ("Allgemeinverfügung zum Teilwiderruf der Allgemeinverfügung bezüglich der "
+                "Nachhandelstransparenzanforderungen für {} im Hinblick auf Schuldverschreibungen")
+        self.assertEqual(_twin_key(base.format("Handelsplätze")), _twin_key(base.format("OTC-Geschäfte")))
+        self.assertNotEqual(_twin_key("Rundschreiben 05/2026"), _twin_key("Rundschreiben 06/2026"))
+
     def test_individual_bafin_measure_is_not_a_framework_update(self):
         """BaFin-Einzelfall-Anordnungen gegen ein namentlich genanntes Institut
         (§ 60b KWG u. Ä.) sind kein CRR3-Update für alle Institute, sondern

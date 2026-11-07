@@ -954,6 +954,17 @@ def _title_key(title: Optional[str]) -> str:
     return re.sub(r"\W+", " ", t).strip()
 
 
+# Zwillings-Verfügungen der BaFin: Dieselbe Regelung erscheint am selben Tag
+# zweimal, einmal für Handelsplätze und einmal für OTC-Geschäfte
+# (Teilwiderruf Nachhandelstransparenz 27.02.2026). Für die Institute ist das
+# eine Meldung; die Fassung für Handelsplätze bleibt.
+TWIN_VARIANT = re.compile(r"\b(für )?(handelsplätze|otc-geschäfte)\b")
+
+
+def _twin_key(title: Optional[str]) -> str:
+    return _title_key(TWIN_VARIANT.sub(" ", (title or "").lower()))
+
+
 # Die BaFin-Expertensuche (bafin_search) listet auch Dokumente, die der
 # RSS-Feed (bafin) schon geliefert hat — teils als Download-Seite unter
 # anderem Titel. Der RSS-Eintrag bleibt: Er stand womöglich schon in einem
@@ -1286,7 +1297,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
             recent = _is_recent(r)
             if not recent and per_fw.get(fw_id, 0) >= 2 * _cap(fw_id):
                 continue
-            title_key = (fw_id, _title_key(r["title"]))
+            title_key = (fw_id, _twin_key(r["title"]))
             if title_key in seen_titles:
                 continue
             seen_titles.add(title_key)

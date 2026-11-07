@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:07:27Z",
+  "generated_at": "2026-11-07T16:18:08Z",
   "updates": {
     "emir": [
       {
@@ -2518,22 +2518,22 @@
         "imp": "high"
       },
       {
-        "d": "27.02.2026",
+        "d": "18.02.2026",
         "t": {
           "de": "Allgemeinverfügung",
           "en": "General decision"
         },
         "src": "bafin.de",
         "ti": {
-          "de": "Teilweiser Widerruf der Allgemeinverfügung zu Nachhandelstransparenz für OTC-Geschäfte (MiFIR)",
-          "en": "Partial Revocation of General Administrative Act on Post-Trade Transparency for OTC Transactions (MiFIR)"
+          "de": "Teilweiser Widerruf der Allgemeinverfügung zu Nachhandelstransparenz für Handelsplätze",
+          "en": "Partial Revocation of General Administrative Act on Post-Trade Transparency for Trading Venues"
         },
-        "sl": "allgemeinverfuegung-zum-teilwiderruf-der-allgemeinverfuegung-bezueglich-der-nach",
+        "sl": "anhoerung-zum-teilwiderruf-der-allgemeinverfuegung-bezueglich-der-nachhandelstra",
         "s": {
-          "de": "Die BaFin widerruft teilweise ihre Allgemeinverfügung vom 15. Juni 2023 zu den Nachhandelstransparenzanforderungen für OTC-Geschäfte. Der Widerruf betrifft Schuldverschreibungen, strukturierte Finanzprodukte und Emissionszertifikate. Für Derivate bleibt die ursprüngliche Allgemeinverfügung weiterhin gültig.\n\nGrundlage für den Teilwiderruf ist die Überarbeitung der MiFIR und der Delegierten Verordnung (EU) 2017/583 (RTS 2). Die neuen Regelungen für die spätere Veröffentlichung von Handelsdetails (Deferrals) für die genannten Instrumente treten am 2. März 2026 in Kraft. Die BaFin stellt damit sicher, dass die nationalen Regelungen dem aktualisierten EU-Recht entsprechen und ein einheitliches Transparenzniveau gewährleistet wird.\n\nDer Teilwiderruf tritt mit Wirkung zum 2. März 2026 in Kraft. Wertpapierdienstleistungsunternehmen müssen ab diesem Datum die neuen, überarbeiteten RTS 2 für die Veröffentlichung von OTC-Geschäften in Schuldverschreibungen, strukturierten Finanzprodukten und Emissionszertifikaten anwenden.",
-          "en": "BaFin partially revokes its general administrative act of 15 June 2023 concerning post-trade transparency requirements for OTC transactions. The revocation applies to bonds, structured finance products, and emission allowances. For derivatives, the original general administrative act remains valid.\n\nThe partial revocation is based on the revision of MiFIR and Delegated Regulation (EU) 2017/583 (RTS 2). The new rules for deferred publication of trade details (deferrals) for the aforementioned instruments come into force on 2 March 2026. BaFin thus ensures that national regulations comply with updated EU law and that a uniform level of transparency is maintained.\n\nThe partial revocation takes effect on 2 March 2026. From this date, investment firms must apply the new, revised RTS 2 for the publication of OTC transactions in bonds, structured finance products, and emission allowances."
+          "de": "Die BaFin beabsichtigt, ihre Allgemeinverfügung vom 15. Juni 2023 zu den Nachhandelstransparenzanforderungen für Handelsplätze teilweise zu widerrufen. Dies betrifft Schuldverschreibungen, strukturierte Finanzprodukte und Emissionszertifikate. Der Widerruf erfolgt aufgrund geänderter europäischer Vorgaben, insbesondere der Überarbeitung der MiFIR und der Delegierten Verordnung (EU) 2025/1246 (RTS 2).\n\nDie ursprüngliche Allgemeinverfügung erlaubte es Wertpapierdienstleistungsunternehmen, Details zu bestimmten Geschäften später zu veröffentlichen (Deferrals). Da die rechtliche Grundlage für diese Deferrals in der MiFIR entfallen ist und die überarbeiteten RTS 2 ab dem 2. März 2026 gelten, entspricht die bisherige Regelung nicht mehr dem EU-Recht. Für Derivate bleibt das bisherige Regelungsregime jedoch bestehen, bis die RTS 2 auch in diesem Bereich überarbeitet werden.\n\nInteressierte Parteien haben bis zum 25. Februar 2026 die Möglichkeit, Stellungnahmen zu diesem Teilwiderruf bei der BaFin einzureichen. Der Teilwiderruf soll mit Wirkung zum 2. März 2026 in Kraft treten.",
+          "en": "BaFin intends to partially revoke its general administrative act of June 15, 2023, concerning post-trade transparency requirements for trading venues. This revocation affects bonds, structured finance products, and emission allowances. The decision is based on amended European regulations, specifically the revised MiFIR and Delegated Regulation (EU) 2025/1246 (RTS 2).\n\nThe original general administrative act allowed investment firms to defer the publication of details for certain transactions. As the legal basis for these deferrals in MiFIR has been removed and the revised RTS 2 will apply from March 2, 2026, the current regulation no longer complies with EU law. However, for derivatives, the existing regulatory regime will remain in place until RTS 2 is revised for this area as well.\n\nInterested parties have until February 25, 2026, to submit comments on this partial revocation to BaFin. The partial revocation is intended to take effect on March 2, 2026."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20260227_allgemeinverfuegung_teilwiderruf_otc_geschaefte.html",
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20260218_anhoerung_teilwiderruf_handelplaetze.html",
         "imp": "high"
       }
     ],
