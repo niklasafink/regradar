@@ -6,12 +6,12 @@
       "schedule": "0 14 * * *"
     },
     {
-      "path": "/api/newsletter/frameworks",
-      "schedule": "0 7 * * 1"
+      "path": "/api/newsletter/send?daily=1",
+      "schedule": "0 9 * * 1-5"
     },
     {
       "path": "/api/newsletter/praxis",
-      "schedule": "0 7 1 * *"
+      "schedule": "0 6 * * 2"
     },
     {
       "path": "/api/health/check",

@@ -166,7 +166,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
           {lang === "de"
             ? status === "freq_daily"
               ? "✓ Gespeichert — Sie erhalten Updates einmal pro Tag, nur bei neuen Meldungen."
-              : "✓ Gespeichert — Sie erhalten Updates donnerstags gesammelt, nur bei neuen Meldungen."
+              : "✓ Gespeichert — Sie erhalten Updates montags gesammelt, nur bei neuen Meldungen."
             : status === "freq_daily"
               ? "✓ Saved — you'll receive updates once a day, only when there is news."
               : "✓ Saved — you'll receive a combined digest every Thursday, only when there is news."}
@@ -346,7 +346,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
 
             <p className="mt-6 text-xs text-slate-500">
               {lang === "de"
-                ? "Sie erhalten jeden Donnerstag eine gesammelte Übersicht, nur wenn es neue Updates gibt."
+                ? "Sie erhalten jeden Montag eine gesammelte Übersicht, nur wenn es neue Updates gibt."
                 : "You'll receive one combined digest every Thursday, only when there are new updates."}
             </p>
 

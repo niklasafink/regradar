@@ -1,5 +1,6 @@
-// Monatlicher Praxis-Newsletter (Aufsichtspraxis des Vormonats, aggregiert).
-// Aufruf durch Vercel Cron (vercel.json, Monatserster) oder manuell:
+// Wöchentlicher Newsletter „Aufsichtspraxis und Fristen“ (Praxis der Vorwoche
+// plus Fristen der nächsten 30 Tage). Aufruf durch Vercel Cron (vercel.json,
+// dienstags; Freigabe-Mail 11:00, Versand 12:00) oder manuell:
 //   GET /api/newsletter/praxis                     → Freigabe-Anfrage bzw. Versand
 //   GET /api/newsletter/praxis?dry=1               → nur Report
 //   GET /api/newsletter/praxis?to=mail@example.com → Testversand nur an diese
@@ -10,7 +11,7 @@
 // oder ?secret=<CRON_SECRET>.
 
 import {
-  itemsForMonth, previousMonthKey, renderPraxisNewsletter, runPraxisNewsletter,
+  fristenFor, itemsForWeek, renderPraxisNewsletter, runPraxisNewsletter, weekKey,
 } from "@/lib/praxisNewsletter";
 
 export const maxDuration = 300;
@@ -28,10 +29,11 @@ export async function GET(request: Request) {
 
   if (url.searchParams.get("preview") === "1") {
     const base = process.env.APP_URL ?? url.origin;
-    const month = previousMonthKey();
+    const week = weekKey();
     const { html } = renderPraxisNewsletter(
-      month,
-      itemsForMonth(month),
+      week,
+      itemsForWeek(week),
+      fristenFor(null),
       `${base}/api/unsubscribe?token=preview`,
       base,
     );

@@ -81,11 +81,11 @@ export function Praxis({ items: all }: { items: PraxisItem[] }) {
           ))}
         </nav>
 
-        {/* Dezenter Hinweis: Praxis-Meldungen gehen nur monatlich aggregiert raus */}
+        {/* Dezenter Hinweis: Praxis-Meldungen gehen wöchentlich (dienstags) mit den Fristen raus */}
         <p className="mt-4 text-xs text-slate-400">
           {lang === "de"
-            ? "Praxis-Meldungen werden einmal pro Monat aggregiert per Newsletter verschickt."
-            : "Enforcement items are sent once a month as an aggregated newsletter."}
+            ? "Praxis-Meldungen gehen einmal pro Woche, dienstags, zusammen mit den anstehenden Fristen per Newsletter raus."
+            : "Enforcement items are sent once a week, on Tuesdays, together with upcoming deadlines."}
         </p>
 
         {/* Praxis-Tabelle */}

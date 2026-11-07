@@ -6,7 +6,7 @@ const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
 
 // Benachrichtigungs-Rhythmus des Update-Newsletters. Standard ist "weekly"
-// (donnerstags gesammelt, nach QS und Freigabe); "daily" wählt man nur über
+// (montags 12:00 gesammelt, nach QS und Freigabe); "daily" wählt man nur über
 // den Umschalter am Ende der Update-Mails.
 export type Frequency = "daily" | "weekly";
 
@@ -125,13 +125,13 @@ export function createSendPacer(intervalMs = 600): () => Promise<void> {
 // Freigabe-Token für den Newsletter-Versand: Der Cron verschickt zunächst nur
 // eine Vorschau an den Betreiber; erst der Klick auf den Freigabe-Link (mit
 // diesem Token) löst den Versand an den Verteiler aus. 7 Tage gültig, damit
-// eine Montagsmail auch später in der Woche noch freigegeben werden kann.
+// eine Freigabe auch später in der Woche noch freigegeben werden kann.
 export type ApproveKind = "updates" | "frameworks" | "praxis";
 
 export const APPROVE_LABEL: Record<ApproveKind, string> = {
   updates: "Update-Newsletter",
   frameworks: "Rahmenwerk-Newsletter",
-  praxis: "Praxis-Newsletter",
+  praxis: "Praxis- und Fristen-Newsletter",
 };
 const APPROVE_TTL_MS = 1000 * 60 * 60 * 24 * 7;
 
@@ -202,6 +202,8 @@ export async function sendApprovalRequest(
   summary: string,
   previewHtml: string,
   qa?: { ok: boolean; text: string },
+  /** Zustellung zu einem festen Zeitpunkt (Resend scheduledAt), sonst sofort. */
+  scheduledAt?: string,
 ): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) throw new Error("RESEND_API_KEY fehlt in web/.env.local");
@@ -223,6 +225,7 @@ export async function sendApprovalRequest(
   const { error } = await resend.emails.send({
     ...senderFields(),
     to: approverAddress(),
+    ...(scheduledAt ? { scheduledAt } : {}),
     subject: `${qa && !qa.ok ? "QS-Hinweise · " : ""}Freigabe erforderlich: ${summary}`,
     text: `${label} wartet auf Freigabe: ${summary}
 
@@ -406,7 +409,7 @@ export async function sendConfirmationEmail(
 
   const rhythm =
     freq === "weekly"
-      ? "einmal pro Woche, donnerstags gesammelt"
+      ? "einmal pro Woche, montags gesammelt; dienstags Aufsichtspraxis und Fristen"
       : "täglich, sofern es neue Updates gibt";
 
   const { error } = await resend.emails.send({

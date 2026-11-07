@@ -23,7 +23,7 @@ import {
   relevanceFooterHtml, relevanceFooterText, relevanceForMail, relevanceHtml, relevanceText,
   warmRelevance, type MailRelevance,
 } from "./relevance/newsletter";
-import { FRAMEWORKS, PROVIDERS } from "./data";
+import { FRAMEWORKS, PROVIDERS, type Framework } from "./data";
 import { addIdentifyParam } from "./datafast";
 import {
   createIdToken,
@@ -45,7 +45,10 @@ import {
 import {
   authority, daysUntil, dt, groupByTopic, IMPACT_LABEL, impactOf, tx, type Impact,
 } from "./logic";
-import { listSubscribers, redis, setLastNotified, type Subscriber } from "./subscribers";
+import { listSubscribers, redis, setLastFwNotified, setLastNotified, type Subscriber } from "./subscribers";
+import { fwFreshFor, loadFwSeen, markFwSent, renderFwParts } from "./frameworkNewsletter";
+import { APPROVAL_HOUR_BERLIN, scheduleAt, scheduleLabel, SEND_HOUR_BERLIN } from "./schedule";
+import type { Source } from "./sources";
 import { createFreqToken, type Frequency } from "./email";
 import { markApprovalSent, readQa, type QaRecord } from "./newsletterQa";
 import { firstParagraph, isoDate, slugify, UPDATE_PAGES, type UpdatePage } from "./updates";
@@ -75,6 +78,9 @@ export interface RunReport {
   qaPending?: boolean;
   /** Freigabe-Mail für diesen Slot ging vor < 20 h schon raus. */
   approvalAlreadySent?: boolean;
+  /** Geplante Zustellung der Freigabe-Mail bzw. der Newsletter (ISO); fehlt = sofort. */
+  approvalScheduledAt?: string;
+  scheduledAt?: string;
 }
 
 /** Slugs sind `<rahmenwerk>-<JJJJ-MM-TT>-<titel>`; ohne Datum und Rahmenwerk
@@ -181,7 +187,7 @@ async function loadSeen(persist: boolean, nowIso: string): Promise<{
 /** Updates, die für den Abonnenten relevant sind. Mit Rahmenwerk-Auswahl
     gilt nur diese (Kinder erben das Abo des Eltern-Rahmenwerks), sonst die
     abonnierten Anbietertypen. Ohne (oder mit unbekanntem) Anbietertyp: alle. */
-function relevantFor(sub: Subscriber, pages: UpdatePage[]): UpdatePage[] {
+export function relevantFor(sub: Subscriber, pages: UpdatePage[]): UpdatePage[] {
   // Unbekannte IDs (z. B. umbenanntes Rahmenwerk) zählen nicht; bleibt nichts
   // übrig, gilt wieder der Anbietertyp-Filter — niemand wird stumm geschaltet.
   const fws = new Set(
@@ -235,19 +241,20 @@ function freshFor(
   );
 }
 
-// Standard ist der Wochenversand; wer in der Mail auf "täglich" umgestellt hat,
-// ist an jedem Lauf fällig (sofern es etwas Neues gibt). Stichtag ist der Donnerstags-Slot um 10:00 UTC:
-// Danach prüft die automatische QS (scraper/newsletter_qa.py) die fälligen
-// Meldungen und löst erst dann die Freigabe-Mail aus. Fällig ist ein Abonnent,
-// sobald der jüngste Slot NACH seinem Wasserzeichen liegt — so reicht auch
-// eine verspätete Freigabe am Freitag noch, und ein zweiter Lauf in derselben
-// Woche verschickt nichts doppelt. Wer sich nach dem Slot anmeldet, bekommt
-// die erste Mail am folgenden Donnerstag. Bis zur Fälligkeit bleibt das
-// Wasserzeichen stehen und die Updates sammeln sich an.
-const WEEKLY_DAY_UTC = 4; // Donnerstag
-const WEEKLY_HOUR_UTC = 10; // Stichtag; QS startet danach im Stundenlauf
+// Standard ist der Wochenversand (Nutzerentscheidung 07.11.2026): Stichtag
+// ist Montag 06:00 UTC. Danach prüft die automatische QS (scraper/
+// newsletter_qa.py) die fälligen Meldungen; die Freigabe-Mail kommt um 11:00,
+// der Versand um 12:00 deutscher Zeit (lib/schedule.ts). Fällig ist ein
+// Wochen-Abonnent, sobald der jüngste Slot NACH seinem Wasserzeichen liegt —
+// so reicht auch eine verspätete Freigabe am Dienstag noch, und ein zweiter
+// Lauf in derselben Woche verschickt nichts doppelt. Wer sich nach dem Slot
+// anmeldet, bekommt die erste Mail am folgenden Montag.
+// Tages-Abonnenten laufen getrennt: werktags 12:00 automatisch ohne Freigabe
+// (runNewsletter({ daily: true })), der Wochenversand lässt sie aus.
+const WEEKLY_DAY_UTC = 1; // Montag
+const WEEKLY_HOUR_UTC = 6; // Stichtag; QS startet danach im Stundenlauf
 
-/** Jüngster Donnerstag 10:00 UTC, der nicht nach `now` liegt. */
+/** Jüngster Montag 06:00 UTC, der nicht nach `now` liegt. */
 export function lastWeeklySlot(now: Date): Date {
   const slot = new Date(Date.UTC(
     now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), WEEKLY_HOUR_UTC,
@@ -258,8 +265,11 @@ export function lastWeeklySlot(now: Date): Date {
   return slot;
 }
 
-function dueFor(sub: Subscriber, nowIso: string): boolean {
-  if (sub.frequency === "daily") return true;
+/** daily=false: Wochenversand (nur Wochen-Abonnenten, einmal je Slot);
+    daily=true: Tagesversand (nur Tages-Abonnenten, jeder Lauf). */
+function dueFor(sub: Subscriber, nowIso: string, daily = false): boolean {
+  const isDaily = sub.frequency === "daily";
+  if (daily || isDaily) return daily && isDaily;
   const watermark = [sub.confirmedAt || EPOCH, sub.lastNotifiedAt || EPOCH]
     .sort()
     .pop()!;
@@ -318,6 +328,8 @@ const impactPill = (i: Impact): string =>
 /** E-Mail im Site-Design: schwarz-weiß, große Typo, Pill-Button.
     Liefert HTML plus Plain-Text-Alternative (bessere Spam-Bewertung). */
 /** Links zum Umstellen des Rhythmus am Mailende (fehlt bei Vorschauen). */
+export type DbSection = { heading: string; html: string; text: string[] };
+
 export type FreqLinks = { current: Frequency; dailyUrl: string; weeklyUrl: string };
 
 export function freqLinksFor(sub: Subscriber, base: string): FreqLinks {
@@ -328,7 +340,7 @@ export function freqLinksFor(sub: Subscriber, base: string): FreqLinks {
 
 const FREQ_LABEL: Record<Frequency, string> = {
   daily: "einmal pro Tag (nur bei neuen Meldungen)",
-  weekly: "donnerstags gesammelt (nur bei neuen Meldungen)",
+  weekly: "montags gesammelt (nur bei neuen Meldungen)",
 };
 
 function renderFreqBlock(freq: FreqLinks): string {
@@ -336,7 +348,7 @@ function renderFreqBlock(freq: FreqLinks): string {
     const active = f === freq.current;
     const [title, sub] = f === "daily"
       ? ["Einmal pro Tag", "nur bei neuen Meldungen"]
-      : ["Donnerstags", "nur bei neuen Meldungen, gesammelt"];
+      : ["Montags", "nur bei neuen Meldungen, gesammelt"];
     const style = active
       ? "background:#0f172a;color:#ffffff;border:1px solid #0f172a"
       : "background:#ffffff;color:#0f172a;border:1px solid #e2e8f0";
@@ -356,7 +368,20 @@ export function renderNewsletter(
   base: string,
   freq?: FreqLinks,
   rel: MailRelevance | null = null,
+  /** Abschnitt „Neu in der Datenbank“ (neue Rahmenwerke/Quellen). */
+  db: DbSection | null = null,
 ): { html: string; text: string } {
+  const heading = pages.length === 0 && db
+    ? `Neu in der Datenbank: ${db.heading}`
+    : pages.length === 1 ? "1 neues regulatorisches Update" : `${pages.length} neue regulatorische Updates`;
+  const lead = pages.length === 0 && db
+    ? `Wir haben die Datenbank von Regulatory Radar um ${db.heading} erweitert.`
+    : "Neu veröffentlichte Meldungen aus den Primärquellen, kompakt zusammengefasst.";
+  const dbHtml = db
+    ? `${pages.length > 0 ? `<h2 style="margin:36px 0 4px;font-size:20px;font-weight:500;letter-spacing:-0.01em">Neu in der Datenbank: ${esc(db.heading)}</h2>
+       <p style="margin:0;font-size:13px;color:#64748b">Wir haben die Abdeckung von Regulatory Radar erweitert.</p>` : ""}
+       ${db.html}`
+    : "";
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
 
@@ -399,10 +424,8 @@ export function renderNewsletter(
   const text = [
     "regulatoryradar",
     "",
-    pages.length === 1
-      ? "1 neues regulatorisches Update"
-      : `${pages.length} neue regulatorische Updates`,
-    "Neu veröffentlichte Meldungen aus den Primärquellen, kompakt zusammengefasst.",
+    heading,
+    lead,
     "",
     ...groups.flatMap(({ topic, items }) => [
       `## ${tx("de", topic.n)}`,
@@ -425,6 +448,7 @@ export function renderNewsletter(
       }),
     ]),
     ...(more > 0 ? [`… und ${more} weitere Updates auf der Website.`, ""] : []),
+    ...(db ? [...(pages.length > 0 ? [`Neu in der Datenbank: ${db.heading}`, ""] : []), ...db.text] : []),
     ...(rel ? [relevanceFooterText(rel, base), ""] : []),
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
@@ -433,7 +457,7 @@ export function renderNewsletter(
       ? [
           `Wie oft möchten Sie diese E-Mail erhalten? Aktuell: ${FREQ_LABEL[freq.current]}.`,
           `Einmal pro Tag (nur bei neuen Meldungen): ${freq.dailyUrl}`,
-          `Donnerstags gesammelt (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
+          `Montags gesammelt (nur bei neuen Meldungen): ${freq.weeklyUrl}`,
           "",
         ]
       : []),
@@ -449,13 +473,14 @@ export function renderNewsletter(
   <div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;max-width:560px;margin:0 auto;color:#0f172a">
     <p style="margin:0 0 28px;font-size:18px"><strong>regulatory</strong><em style="font-weight:300">radar</em></p>
     <h1 style="margin:0 0 8px;font-size:26px;font-weight:500;letter-spacing:-0.02em;line-height:1.15">
-      ${pages.length === 1 ? "1 neues regulatorisches Update" : `${pages.length} neue regulatorische Updates`}
+      ${esc(heading)}
     </h1>
     <p style="margin:0 0 8px;font-size:14px;color:#64748b">
-      Neu veröffentlichte Meldungen aus den Primärquellen, kompakt zusammengefasst.
+      ${esc(lead)}
     </p>
     ${sections}
     ${more > 0 ? `<p style="margin:16px 0 0;font-size:13px;color:#64748b">und ${more} weitere Updates auf der Website.</p>` : ""}
+    ${dbHtml}
     ${relevanceFooterHtml(rel, base)}
     <p style="margin:28px 0 16px">
       <a href="${base}/updates"
@@ -503,6 +528,9 @@ export async function runNewsletter(opts: {
       Freigabe-Mail sofort verschicken, auch wenn der Cron heute schon eine
       geschickt hat. */
   afterQa?: boolean;
+  /** true = Tagesversand (werktags 12:00, Vercel-Cron): nur Tages-Abonnenten,
+      ohne Freigabe und QS (Nutzerentscheidung 07.11.2026). */
+  daily?: boolean;
 } = {}): Promise<RunReport> {
   const report: RunReport = {
     initialized: false, newUpdates: 0, recipients: 0,
@@ -514,6 +542,7 @@ export async function runNewsletter(opts: {
   const nowIso = new Date().toISOString();
 
   const { seen, newSlugs, first } = await loadSeen(writable, nowIso);
+  const base = process.env.APP_URL ?? "http://localhost:3000";
 
   if (first) {
     // Erstlauf: Archiv mit Epoch markiert, nichts verschicken.
@@ -524,6 +553,15 @@ export async function runNewsletter(opts: {
   }
 
   report.newUpdates = newSlugs.length;
+  const daily = !!opts.daily;
+  // Neue Rahmenwerke/Quellen laufen seit 07.11.2026 als Abschnitt in dieser
+  // Mail mit (vorher eigene Montagsmail); null = Erstlauf, nichts Neues.
+  const fwSeen = await loadFwSeen(writable, nowIso);
+  const dbFor = (sub: Subscriber): DbSection | null => {
+    if (!fwSeen) return null;
+    const { fws, srcs } = fwFreshFor(sub, fwSeen, nowIso);
+    return fws.length + srcs.length > 0 ? renderFwParts(fws, srcs, base) : null;
+  };
 
   const sorted = [...UPDATE_PAGES].sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
   let subs = await listSubscribers();
@@ -535,15 +573,27 @@ export async function runNewsletter(opts: {
   }
   report.recipients = subs.length;
 
-  const base = process.env.APP_URL ?? "http://localhost:3000";
-
   // Freigabe-Gate: Ein regulärer Lauf (Cron oder QS, ohne approved/dry/to)
   // verschickt nichts an Abonnenten, sondern eine Vorschau mit Freigabe-Link
   // an den Betreiber. Erst der Klick ruft diesen Lauf mit approved=true erneut
   // auf. Wasserzeichen bleiben unberührt; der nächste Cron erinnert ggf. erneut.
-  if (!opts.approved && writable) {
+  if (!opts.approved && !daily && writable) {
     const { pages, due } = collectPending(subs, sorted, seen, nowIso);
-    if (pages.length === 0) {
+    // Vorschau des Datenbank-Abschnitts: alle neuen Zugänge der fälligen Abonnenten.
+    const dbFws = new Map<string, Framework>();
+    const dbSrcs = new Map<string, Source>();
+    if (fwSeen) {
+      for (const sub of subs) {
+        if (!dueFor(sub, nowIso)) continue;
+        const { fws, srcs } = fwFreshFor(sub, fwSeen, nowIso);
+        for (const f of fws) dbFws.set(f.id, f);
+        for (const x of srcs) dbSrcs.set(x.id, x);
+      }
+    }
+    const dbPreview = dbFws.size + dbSrcs.size > 0
+      ? renderFwParts([...dbFws.values()], [...dbSrcs.values()], base)
+      : null;
+    if (pages.length === 0 && !dbPreview) {
       report.skipped = subs.length;
       await redis().set(LAST_RUN_KEY, nowIso);
       return report;
@@ -566,13 +616,20 @@ export async function runNewsletter(opts: {
       report.pendingItems = pages.length;
       return report;
     }
-    const { html } = renderNewsletter(pages, `${base}/api/unsubscribe?token=preview`, base);
+    const { html } = renderNewsletter(
+      pages, `${base}/api/unsubscribe?token=preview`, base, undefined, null, dbPreview,
+    );
+    // Zustellung der Freigabe-Mail montags 11:00 (QS läuft vorher); kommt die
+    // QS später fertig oder erinnert der Cron, geht sie sofort raus.
+    const approvalAt = scheduleAt(APPROVAL_HOUR_BERLIN, new Date(nowIso));
     await sendApprovalRequest(
       "updates",
-      `${pages.length} ${pages.length === 1 ? "neues Update" : "neue Updates"} für ${due} von ${subs.length} Abonnenten`,
+      `${pages.length} ${pages.length === 1 ? "neues Update" : "neue Updates"}${dbPreview ? ` und ${dbPreview.heading} neu in der Datenbank` : ""} für ${due} von ${subs.length} Abonnenten, Versand ${scheduleLabel(scheduleAt(SEND_HOUR_BERLIN, new Date(nowIso)))}`,
       html,
       qaNotice(qa, pages),
+      approvalAt,
     );
+    report.approvalScheduledAt = approvalAt;
     await markApprovalSent(slot, nowIso);
     // Einschlägigkeit für die primären Profile vorab prüfen (Cache), damit der
     // freigegebene Versand nicht auf KI-Aufrufe warten muss.
@@ -590,6 +647,11 @@ export async function runNewsletter(opts: {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { from, replyTo } = senderFields();
   const pace = createSendPacer(); // Resend: max. 2 Requests/Sekunde
+  // Zustellung 12:00 deutscher Zeit über Resend scheduledAt; nach 12:00 sofort.
+  // Testversand (?to=) geht immer sofort.
+  const sendAt = opts.onlyTo ? undefined : scheduleAt(SEND_HOUR_BERLIN, new Date(nowIso));
+  report.scheduledAt = sendAt;
+  let fwSent = false;
 
   // Lauf-Sperre gegen parallele Freigabe-Klicks (Doppelklick, Mail-Scanner).
   if (writable && !(await acquireSendLock("updates"))) {
@@ -613,19 +675,20 @@ export async function runNewsletter(opts: {
   try {
     await progress(false);
     for (const sub of subs) {
-      if (!dueFor(sub, nowIso)) {
+      if (!dueFor(sub, nowIso, daily)) {
         // Wochen-Abo, noch nicht fällig: Wasserzeichen NICHT vorrücken,
         // die Updates kommen gesammelt mit der nächsten fälligen Mail.
         report.skipped++;
         continue;
       }
       const fresh = freshFor(sub, sorted, seen, nowIso);
-      if (fresh.length === 0) {
+      const db = dbFor(sub);
+      if (fresh.length === 0 && !db) {
         report.skipped++;
         continue;
       }
       const rel = relevantFor(sub, fresh);
-      if (rel.length === 0) {
+      if (rel.length === 0 && !db) {
         // Nichts Relevantes dabei: Wasserzeichen trotzdem vorrücken, damit
         // diese Updates z. B. nach einer späteren Quellen-Erweiterung nicht
         // nachträglich als "neu" verschickt werden.
@@ -638,8 +701,9 @@ export async function runNewsletter(opts: {
         continue;
       }
       const unsubUrl = `${base}/api/unsubscribe?token=${encodeURIComponent(createUnsubToken(sub.email))}`;
-      const subject =
-        rel.length === 1
+      const subject = rel.length === 0 && db
+        ? `Neu bei Regulatory Radar: ${db.heading}`
+        : rel.length === 1
           ? `Neues regulatorisches Update: ${rel[0].u.ti.de.slice(0, 80)}`
           : `${rel.length} neue regulatorische Updates`;
       // Einschlägigkeit je Profil des Abonnenten (Konto oder Domain-Vorprofil).
@@ -647,16 +711,17 @@ export async function runNewsletter(opts: {
       // verhindern den Versand nie.
       let relevance: MailRelevance | null = null;
       try {
-        relevance = await relevanceForMail(sub, rel.slice(0, MAX_PER_MAIL), { deadlineMs: 20_000 });
+        if (rel.length > 0) relevance = await relevanceForMail(sub, rel.slice(0, MAX_PER_MAIL), { deadlineMs: 20_000 });
       } catch (e) {
         console.error("relevance for mail failed:", e);
       }
-      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base), relevance);
+      const { html, text } = renderNewsletter(rel, unsubUrl, base, freqLinksFor(sub, base), relevance, db);
       await pace();
       const { error } = await resend.emails.send({
         from,
         replyTo,
         to: sub.email,
+        ...(sendAt ? { scheduledAt: sendAt } : {}),
         subject,
         html: addIdentifyParam(html, base, createIdToken(sub.email)),
         text,
@@ -677,6 +742,10 @@ export async function runNewsletter(opts: {
       } else {
         report.sent++;
         if (writable) await setLastNotified(sub.email, nowIso);
+        if (writable && db) {
+          await setLastFwNotified(sub.email, nowIso);
+          fwSent = true;
+        }
       }
       await progress(false);
     }
@@ -700,6 +769,7 @@ export async function runNewsletter(opts: {
       }
     }
 
+    if (writable && fwSent) await markFwSent(nowIso);
     if (writable) await redis().set(LAST_RUN_KEY, nowIso);
   } finally {
     if (writable) {

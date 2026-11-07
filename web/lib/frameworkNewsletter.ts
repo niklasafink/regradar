@@ -37,7 +37,7 @@ import {
   setQuotaBlock,
   writeProgress,
 } from "./sendProgress";
-import { listSubscribers, redis, setLastFwNotified } from "./subscribers";
+import { listSubscribers, redis, setLastFwNotified, type Subscriber } from "./subscribers";
 import { JURISDICTION_LABEL, SOURCES, type Source } from "./sources";
 
 const SEEN_KEY = "newsletter:fwseen";
@@ -160,14 +160,15 @@ function fwTitle(fw: Framework): { html: string; text: string } {
   return { html: esc(abbr), text: abbr };
 }
 
-/** E-Mail im Site-Design (schwarz-weiß, große Typo, Pill-Buttons), analog
-    zum Update-Newsletter. Liefert HTML plus Plain-Text-Alternative. */
-export function renderFwNewsletter(
+/** Rahmenwerke/Quellen als Mail-Bausteine. Dient der eigenständigen Mail
+    (manueller Versand) und dem Abschnitt „Neu in der Datenbank“ in der
+    Montagsmail des Update-Newsletters (seit 07.11.2026, damit Abonnenten
+    nur zwei Mails pro Woche bekommen). */
+export function renderFwParts(
   frameworks: Framework[],
   sources: Source[],
-  unsubUrl: string,
   base: string,
-): { html: string; text: string } {
+): { heading: string; html: string; text: string[] } {
   const heading = [
     frameworks.length > 0
       ? `${frameworks.length} ${frameworks.length === 1 ? "Rahmenwerk" : "Rahmenwerke"}`
@@ -176,9 +177,6 @@ export function renderFwNewsletter(
       ? `${sources.length} ${sources.length === 1 ? "Quelle" : "Quellen"}`
       : "",
   ].filter(Boolean).join(" und ");
-
-  const intro =
-    `Wir haben die Datenbank von Regulatory Radar um ${heading} erweitert.`;
 
   const pill = (label: string): string =>
     `<span style="display:inline-block;border:1px solid #e2e8f0;border-radius:9999px;padding:1px 10px;font-size:11px;color:#334155;margin:0 4px 4px 0">${esc(label)}</span>`;
@@ -222,12 +220,6 @@ export function renderFwNewsletter(
     .join("");
 
   const text = [
-    "regulatoryradar",
-    "",
-    `Neu bei Regulatory Radar: ${heading}`,
-    "",
-    intro,
-    "",
     ...(frameworks.length > 0 ? ["Neue Rahmenwerke", ""] : []),
     ...fwGroups.flatMap(({ topic, items }) => [
       `## ${tx("de", topic.n)}`,
@@ -246,6 +238,70 @@ export function renderFwNewsletter(
       s.url,
       "",
     ]),
+  ];
+
+  const html = `
+    ${frameworks.length > 0 ? `
+    <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Rahmenwerke</p>
+    ${fwSections}` : ""}
+    ${sources.length > 0 ? `
+    <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Quellen</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
+      ${srcItems}
+    </table>` : ""}`;
+
+  return { heading, html, text };
+}
+
+/** Neue Rahmenwerke/Quellen für einen Abonnenten: erstmals gesehen nach
+    max(confirmedAt, lastFwNotifiedAt). Wer einzelne Rahmenwerke abonniert
+    hat, bekommt keine (Nutzerentscheidung 14.10.2026). */
+export function fwFreshFor(
+  sub: Subscriber,
+  seen: Record<string, string>,
+  nowIso: string,
+): { fws: Framework[]; srcs: Source[] } {
+  if (sub.frameworks?.length) return { fws: [], srcs: [] };
+  const watermark = [sub.confirmedAt || EPOCH, sub.lastFwNotifiedAt || EPOCH].sort().pop()!;
+  return {
+    fws: FRAMEWORKS.filter((f) => (seen[`fw:${f.id}`] ?? nowIso) > watermark),
+    srcs: SOURCES.filter((s) => (seen[`src:${s.id}`] ?? nowIso) > watermark),
+  };
+}
+
+/** First-Seen-Stand für den Abschnitt in der Montagsmail. `first` = Erstlauf
+    (Bestand mit Epoch markiert), dann gibt es nichts Neues. */
+export async function loadFwSeen(persist: boolean, nowIso: string): Promise<Record<string, string> | null> {
+  const { seen, first } = await loadSeen(persist, nowIso);
+  return first ? null : seen;
+}
+
+/** Zeitpunkt des letzten echten Versands merken (für clear_newsletter_pending.py). */
+export async function markFwSent(nowIso: string): Promise<void> {
+  await redis().set(LAST_SENT_KEY, nowIso);
+}
+
+/** Eigenständige Mail im Site-Design (nur noch für manuellen Versand über
+    /api/newsletter/frameworks). Liefert HTML plus Plain-Text-Alternative. */
+export function renderFwNewsletter(
+  frameworks: Framework[],
+  sources: Source[],
+  unsubUrl: string,
+  base: string,
+): { html: string; text: string } {
+  const parts = renderFwParts(frameworks, sources, base);
+  const heading = parts.heading;
+  const intro =
+    `Wir haben die Datenbank von Regulatory Radar um ${heading} erweitert.`;
+
+  const text = [
+    "regulatoryradar",
+    "",
+    `Neu bei Regulatory Radar: ${heading}`,
+    "",
+    intro,
+    "",
+    ...parts.text,
     `Alle Quellen: ${base}/quellen`,
     "",
     "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
@@ -263,14 +319,7 @@ export function renderFwNewsletter(
       Neu: ${esc(heading)}
     </h1>
     <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#64748b">${esc(intro)}</p>
-    ${frameworks.length > 0 ? `
-    <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Rahmenwerke</p>
-    ${fwSections}` : ""}
-    ${sources.length > 0 ? `
-    <p style="margin:24px 0 0;font-size:13px;font-weight:600;color:#94a3b8">Neue Quellen</p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #e2e8f0">
-      ${srcItems}
-    </table>` : ""}
+    ${parts.html}
     <p style="margin:28px 0 16px">
       <a href="${base}/quellen"
          style="display:inline-block;white-space:nowrap;background:#0f172a;color:#ffffff;padding:12px 24px;border-radius:9999px;text-decoration:none;font-weight:600;font-size:14px;margin:0 8px 12px 0">

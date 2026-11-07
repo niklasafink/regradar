@@ -327,7 +327,7 @@ function endSlide(d: Digest, iconSrc: string) {
         {["Rechtsmonitoring", "Kostenlos", "Open Source"].map((t) => <Pill key={t} outline>{t}</Pill>)}
       </div>
       <div style={{ display: "flex", fontSize: 30, lineHeight: 1.45, color: C.nightText, marginTop: 34, marginBottom: 48 }}>
-        Kostenloses Rechtsmonitoring als Open Source. Jeden Donnerstag die Meldungen der Woche zu Ihren Rahmenwerken per E-Mail.
+        Kostenloses Rechtsmonitoring als Open Source. Jeden Montag die Meldungen der Woche zu Ihren Rahmenwerken per E-Mail.
       </div>
       <Footer iconSrc={iconSrc} page={d.slides} total={d.slides} dark />
     </div>

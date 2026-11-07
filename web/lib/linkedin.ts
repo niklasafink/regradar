@@ -153,7 +153,7 @@ export function digestFor(day: string): Digest | undefined {
   // Schluss: Werbung für regradar.de, der Link steht im ersten Kommentar.
   const promo = "Kostenloses Rechtsmonitoring für Finanzinstitute: Regulatory Radar sammelt "
     + "diese Meldungen jeden Tag, zu jeder Meldung mit Zusammenfassung und Quelle. "
-    + "Auf Wunsch jeden Donnerstag per E-Mail, nur zu Ihren Rahmenwerken. Link im ersten Kommentar.";
+    + "Auf Wunsch jeden Montag per E-Mail, nur zu Ihren Rahmenwerken. Link im ersten Kommentar.";
   const text = [
     post.hook,
     post.folge ?? "",

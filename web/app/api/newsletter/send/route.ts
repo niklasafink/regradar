@@ -1,5 +1,8 @@
 // Newsletter-Versand. Aufruf durch Vercel Cron (vercel.json) oder manuell:
-//   GET /api/newsletter/send                     → echter Versand
+//   GET /api/newsletter/send                     → Freigabe-Anfrage bzw. Erinnerung
+//       (Wochenversand montags; QS-Gate, siehe lib/newsletter.ts)
+//   GET /api/newsletter/send?daily=1             → Tagesversand an Tages-
+//       Abonnenten, ohne Freigabe, Zustellung 12:00 deutscher Zeit
 //   GET /api/newsletter/send?dry=1               → nur Report, kein Versand
 //   GET /api/newsletter/send?to=mail@example.com → Testversand nur an diese
 //       Adresse (markiert nichts als versandt)
@@ -35,6 +38,7 @@ export async function GET(request: Request) {
     const report = await runNewsletter({
       dryRun: url.searchParams.get("dry") === "1",
       onlyTo: url.searchParams.get("to") ?? undefined,
+      daily: url.searchParams.get("daily") === "1",
     });
     return Response.json(report);
   } catch (e) {

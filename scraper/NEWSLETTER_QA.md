@@ -1,6 +1,6 @@
 # Newsletter-QS vor der Freigabe-Mail
 
-Diese Datei ist die Arbeitsanweisung für die Qualitätssicherung des wöchentlichen Update-Newsletters. `newsletter_qa.py` gibt sie jeden Donnerstag als Prompt an Claude Code (headless). Manuelle Sessions folgen ihr ebenfalls, wenn der Nutzer eine Newsletter-QS verlangt. Vorbild ist die QS vom 14.10.2026 (Commits `fe8bd7c`, `f57f5ec`, `df50357`).
+Diese Datei ist die Arbeitsanweisung für die Qualitätssicherung des wöchentlichen Update-Newsletters. `newsletter_qa.py` gibt sie jeden Montag ab 06:00 UTC als Prompt an Claude Code (headless). Manuelle Sessions folgen ihr ebenfalls, wenn der Nutzer eine Newsletter-QS verlangt. Vorbild ist die QS vom 14.10.2026 (Commits `fe8bd7c`, `f57f5ec`, `df50357`).
 
 ## Ablauf und Zweck
 

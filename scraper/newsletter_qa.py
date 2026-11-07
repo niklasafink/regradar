@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Automatische QS des wöchentlichen Update-Newsletters (aus run_hourly.sh).
 
-Ab Donnerstag 10:00 UTC (Stichtag, web/lib/newsletter.ts → lastWeeklySlot)
-läuft einmal pro Woche:
+Ab Montag 06:00 UTC (Stichtag, web/lib/newsletter.ts → lastWeeklySlot)
+läuft einmal pro Woche (Freigabe-Mail 11:00, Versand 12:00 deutscher Zeit):
 
   1. Fällige Meldungen holen (GET /api/newsletter/qa). Liegt für den Slot
      schon ein QS-Ergebnis vor, ist nichts zu tun.
@@ -56,8 +56,8 @@ PENDING_FILE = os.path.join(DATA, "newsletter_qa_pending.json")
 RESULT_FILE = os.path.join(DATA, "newsletter_qa_result.json")
 INSTRUCTIONS = os.path.join(SCRAPER, "NEWSLETTER_QA.md")
 
-SLOT_WEEKDAY = 3  # Donnerstag (Python: Montag = 0)
-SLOT_HOUR_UTC = 10
+SLOT_WEEKDAY = 0  # Montag (Python: Montag = 0)
+SLOT_HOUR_UTC = 6
 MAX_ATTEMPTS = 2
 DEFAULT_MODEL = "sonnet"  # Claude-Abo-Kontingent, keine OpenRouter-Kosten (Nutzerentscheidung 07.11.2026)
 CLAUDE_TIMEOUT = 35 * 60
@@ -84,7 +84,7 @@ def log(msg: str) -> None:
 
 
 def current_slot(now: dt.datetime) -> dt.datetime:
-    """Jüngster Donnerstag 10:00 UTC, der nicht nach `now` liegt."""
+    """Jüngster Montag 06:00 UTC, der nicht nach `now` liegt."""
     slot = now.replace(hour=SLOT_HOUR_UTC, minute=0, second=0, microsecond=0)
     slot -= dt.timedelta(days=(now.weekday() - SLOT_WEEKDAY) % 7)
     if slot > now:
