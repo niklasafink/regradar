@@ -122,4 +122,8 @@ cd "$SCRAPER"
 # Update/Rahmenwerk einmal prüfen (neue Updates, unterbrochene Komplettläufe).
 # Gespeicherte Ergebnisse kosten nichts; kein erneuter Lauf.
 /usr/bin/python3 relevance_prefill.py || echo "relevance-prefill fehlgeschlagen (weiter)"
+# Angereicherte Detailseiten für neue Meldungen (Format wie /u/-Top-10, seit
+# 07.11.2026): je Meldung ein claude -p-Aufruf über das Abo-Kontingent, Ziel
+# unter 20.000 Tokens, max. 5 je Lauf und 40 je Tag; committet nur rich.json.
+/usr/bin/python3 richpages_auto.py || echo "richpages fehlgeschlagen (weiter)"
 exit $RC

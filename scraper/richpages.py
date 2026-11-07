@@ -20,7 +20,7 @@ import sys
 
 UA = "Mozilla/5.0 (compatible; regradar-richpages/0.1)"
 BASE = "https://www.regradar.de"
-SRC_CHARS = 18000          # ca. 5.000 Tokens Quelltext
+SRC_CHARS = int(os.environ.get("RICH_SRC_CHARS", "18000"))  # 12000 im Stundenlauf: unter 20.000 Tokens je Meldung
 TODAY = dt.date(2026, 11, 7)
 MODEL = os.environ.get("RICH_MODEL", "sonnet")
 
@@ -34,7 +34,9 @@ Faktenregeln:
 - Ist die QUELLE leer oder dünn, bleibe knapp und nenne das in open_points.
 - audience: wer ist betroffen (Institutsarten, Funktionen). status "nicht betroffen" nur, wenn die Quelle das ausdrücklich sagt oder der Anwendungsbereich es klar ausschließt.
 
-Stil: Deutsch, kurze klare Sätze, aktiv. Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A, T+1) bleiben. Keine Mittelpunkte als Trenner, keine Versalien, keine Gedankenstrich-Einschübe, keine Floskeln, kein Marketing. Antworte ausschließlich mit dem JSON."""
+Stil: Deutsch, kurze klare Sätze, aktiv. Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A, T+1) bleiben. Keine Mittelpunkte als Trenner, keine Versalien, keine Gedankenstrich-Einschübe, keine Floskeln, kein Marketing. Antworte ausschließlich mit einem JSON-Objekt (kein Markdown, kein Text davor oder danach) mit genau diesen Feldern:
+h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (40 bis 60 Wörter, zitierfähig), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (1 bis 4 Objekte {ref max. 20 Zeichen oder leer, title max. 40 Zeichen, text max. 220 Zeichen}), todos (2 bis 5 Strings), timeline (0 bis 6 Objekte {date TT.MM.JJJJ, label max. 26 Zeichen, kind "schritt"|"kern"|"frist"}), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings).
+Gesamtumfang höchstens 900 Wörter."""
 
 SCHEMA = {
     "type": "object",
@@ -167,8 +169,44 @@ def dates_in(text):
     return found
 
 
+def validate(d):
+    """Pflichtfelder und Typen prüfen (ersetzt den JSON-Schema-Modus, der zwei Durchgänge kostet)."""
+    if not isinstance(d, dict):
+        return "kein Objekt"
+    for k in SCHEMA["required"]:
+        if k not in d:
+            return f"Feld fehlt: {k}"
+    for k in ("h1", "seo_title", "meta_description", "lead", "summary"):
+        if not isinstance(d[k], str) or not d[k].strip():
+            return f"Feld leer: {k}"
+    for k in ("aka", "overview", "todos", "open_points", "facts", "audience", "changes", "timeline", "faq"):
+        if isinstance(d[k], str):
+            d[k] = [p.strip() for p in re.split(r"\n\s*\n", d[k]) if p.strip()]
+        if isinstance(d[k], dict):
+            d[k] = [d[k]]
+        if not isinstance(d[k], list):
+            return f"keine Liste: {k}"
+    if not d["audience"] or not d["changes"] or not d["faq"]:
+        return "audience, changes oder faq leer"
+    for a in d["audience"]:
+        if a.get("status") not in ("betroffen", "teilweise", "nicht betroffen") or not a.get("name"):
+            return "audience ungültig"
+        a.setdefault("note", ""); a.setdefault("detail", "")
+    for x in d["timeline"]:
+        if x.get("kind") not in ("schritt", "kern", "frist"):
+            x["kind"] = "schritt"
+    for f in d["facts"]:
+        if not isinstance(f, dict) or "label" not in f or "value" not in f:
+            return "facts ungültig"
+    for c in d["changes"]:
+        c.setdefault("ref", "")
+    if d["impact"] not in ("hoch", "mittel", "gering"):
+        d["impact"] = "mittel"
+    return ""
+
+
 def run_model(page, source, src_note):
-    exe = shutil.which("claude")
+    exe = shutil.which("claude") or "/usr/local/bin/claude"
     env = {k: v for k, v in os.environ.items() if k not in ("ANTHROPIC_BASE_URL", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_API_KEY")}
     env["MAX_THINKING_TOKENS"] = "0"
     user = ("SEITE (bestehende Detailseite auf regradar.de):\n" + json.dumps({
@@ -176,20 +214,31 @@ def run_model(page, source, src_note):
         "zusammenfassung": page["summary"], "quelle_url": page["orig"]}, ensure_ascii=False, indent=1)
         + f"\n\nQUELLE ({src_note}):\n" + (source or "(nicht abrufbar)"))
     cmd = [exe, "-p", "--output-format", "json", "--model", MODEL, "--system-prompt", SYSTEM,
-           "--json-schema", json.dumps(SCHEMA), "--tools", "", "--strict-mcp-config",
+           "--tools", "", "--strict-mcp-config",
            "--setting-sources", "local", "--no-session-persistence", "--disable-slash-commands"]
-    rc, so, se = sh(cmd, inp=user.encode(), timeout=600, env=env)
-    if rc != 0:
-        raise RuntimeError(f"claude -p Exit {rc}: {se.decode()[-400:]} {so.decode()[-400:]}")
-    res = json.loads(so)
-    data = res.get("structured_output")
-    if data is None:
+    usage = {"input": 0, "cache_write": 0, "cache_read": 0, "output": 0}
+    data, err = None, ""
+    for _attempt in range(2):
+        rc, so, se = sh(cmd, inp=user.encode(), timeout=600, env=env)
+        if rc != 0:
+            raise RuntimeError(f"claude -p Exit {rc}: {se.decode()[-400:]} {so.decode()[-400:]}")
+        res = json.loads(so)
+        u = res.get("usage", {})
+        usage["input"] += u.get("input_tokens", 0)
+        usage["cache_write"] += u.get("cache_creation_input_tokens", 0)
+        usage["cache_read"] += u.get("cache_read_input_tokens", 0)
+        usage["output"] += u.get("output_tokens", 0)
         txt = res.get("result", "")
         txt = txt[txt.find("{"): txt.rfind("}") + 1]
-        data = json.loads(txt)
-    u = res.get("usage", {})
-    usage = {"input": u.get("input_tokens", 0), "cache_write": u.get("cache_creation_input_tokens", 0),
-             "cache_read": u.get("cache_read_input_tokens", 0), "output": u.get("output_tokens", 0)}
+        try:
+            data = json.loads(txt)
+            err = validate(data)
+        except ValueError as e:
+            data, err = None, f"kein gültiges JSON: {e}"
+        if data is not None and not err:
+            break
+    if data is None or err:
+        raise RuntimeError(f"Antwort unbrauchbar: {err}")
     usage["total"] = sum(usage.values())
     usage["turns"] = res.get("num_turns")
     usage["iterations"] = len(u.get("iterations") or [])
