@@ -12,10 +12,13 @@ const API_URL = "https://openrouter.ai/api/v1/chat/completions";
     analyse im Scraper hat ein eigenes Budget (scope.py); zusammen ≈ 3 €/Woche. */
 export const WEEKLY_BUDGET_USD = Number(process.env.RELEVANCE_WEEKLY_BUDGET_USD ?? "2.5");
 
+/* Modellwahl nach Vergleichstest vom 07.11.2026 (112 Paare aus Update und
+   Profil, 7 Modelle): A + B zusammen 98 % Treffer, Schiedsrichter nur bei
+   Abweichung. A und B kommen bewusst von verschiedenen Anbietern. */
 export const MODELS = {
-  matchA: process.env.RELEVANCE_MODEL_A ?? "openai/gpt-oss-120b",
-  matchB: process.env.RELEVANCE_MODEL_B ?? "qwen/qwen3.7-flash",
-  arbiter: process.env.RELEVANCE_MODEL_ARBITER ?? "typesafe/jev-router",
+  matchA: process.env.RELEVANCE_MODEL_A ?? "deepseek/deepseek-v4.1-flash",
+  matchB: process.env.RELEVANCE_MODEL_B ?? "google/gemini-3.1-flash-lite",
+  arbiter: process.env.RELEVANCE_MODEL_ARBITER ?? "deepseek/deepseek-v4-pro",
   research: process.env.RELEVANCE_MODEL_RESEARCH ?? "openai/gpt-oss-120b",
 };
 
@@ -69,15 +72,18 @@ export async function chatJson<T>(opts: {
     model: opts.model,
     temperature: opts.temperature ?? 0,
     max_tokens: opts.maxTokens ?? 1500,
-    response_format: { type: "json_object" },
-    // Reasoning-Modelle (gpt-oss) verbrauchen sonst das Token-Limit vor der Antwort.
-    reasoning: { effort: "low" },
     usage: { include: true },
     messages: [
       { role: "system", content: opts.system },
       { role: "user", content: opts.user },
     ],
   };
+  // DeepSeek denkt im JSON-Modus endlos bis ans Token-Limit; ohne ihn liefert
+  // es sauberes JSON, das unten ohnehin aus dem Text geschnitten wird.
+  if (!opts.model.startsWith("deepseek/")) body.response_format = { type: "json_object" };
+  // gpt-oss verbraucht sonst das Token-Limit vor der Antwort; bei DeepSeek
+  // wirkt der Parameter nicht, Gemini Flash-Lite denkt ohnehin kaum.
+  if (opts.model.startsWith("openai/")) body.reasoning = { effort: "low" };
   if (opts.web) body.plugins = [{ id: "web", max_results: 5 }];
 
   let lastErr: unknown;

@@ -35,7 +35,7 @@ export interface MatchResult {
 
 export interface MatchTarget { key: string; fw: Framework; u?: Update }
 
-const MATCH_VERSION = 1;
+const MATCH_VERSION = 2; // 2: neue Modelle (07.11.2026)
 const TTL = 60 * 60 * 24 * 180;
 
 /* ---------- Regel-Vorfilter ---------- */
@@ -222,8 +222,8 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
   let cost = 0;
   const at = new Date().toISOString();
   const [sa, sb] = await Promise.allSettled([
-    chatJson<LlmVerdict>({ model: MODELS.matchA, system: MATCH_SYSTEM, user, maxTokens: 2500 }),
-    chatJson<LlmVerdict>({ model: MODELS.matchB, system: MATCH_SYSTEM, user, maxTokens: 2500 }),
+    chatJson<LlmVerdict>({ model: MODELS.matchA, system: MATCH_SYSTEM, user, maxTokens: 5000 }),
+    chatJson<LlmVerdict>({ model: MODELS.matchB, system: MATCH_SYSTEM, user, maxTokens: 5000 }),
   ]);
   // Fällt ein Prüfer aus (leere Antwort, API-Fehler), entscheidet der andere
   // allein, wenn sein Urteil die Regelprüfung besteht.
@@ -266,7 +266,7 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
       system: `${MATCH_SYSTEM}\n\nZwei Prüfer kamen zu unterschiedlichen oder fehlerhaften Ergebnissen. Prüfe beide gegen Profil und
 Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten.`,
       user: `${user}\n\nPRÜFER A: ${JSON.stringify(va)}\nBefunde Regelprüfung A: ${JSON.stringify(issuesA)}\n\nPRÜFER B: ${JSON.stringify(vb)}\nBefunde Regelprüfung B: ${JSON.stringify(issuesB)}`,
-      maxTokens: 2500,
+      maxTokens: 5000,
     });
     cost += arb.costUsd;
     const vc = norm(arb.data);
@@ -295,7 +295,7 @@ function fallbackQuestion(p: Profile, scope: Scope | undefined, rules: RuleResul
 /* ---------- Öffentliche API ---------- */
 
 // Rahmenwerk-Ziele (f:) eigene Version: strengere Adressatenregel seit 07.11.2026.
-const FW_MATCH_VERSION = 2;
+const FW_MATCH_VERSION = 3;
 const cacheKey = (t: MatchTarget, sig: string) =>
   `relm:${t.u ? MATCH_VERSION : `f${FW_MATCH_VERSION}`}.${SCOPE_FORMAT}:${t.key}:${sig}`;
 

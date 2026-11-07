@@ -3,6 +3,9 @@ import { rateLimit, resolveTarget, visitorProfile } from "@/lib/relevance/server
 import { scopeFor } from "@/lib/relevance/scopes";
 import { UPDATE_PAGES } from "@/lib/updates";
 
+// Ein KI-Abgleich mit Schiedsrichter kann 40–60 s dauern.
+export const maxDuration = 120;
+
 /* Einschlägigkeit für Updates ("u:<slug>") oder Rahmenwerke ("f:<id>").
    Profil: Konto > Vorprofil der Abonnenten-Domain > Entwurf aus dem Browser. */
 export async function POST(request: Request) {
