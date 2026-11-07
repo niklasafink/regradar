@@ -206,8 +206,8 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
   let cost = 0;
   const at = new Date().toISOString();
   const [a, b] = await Promise.all([
-    chatJson<LlmVerdict>({ model: MODELS.matchA, system: MATCH_SYSTEM, user, maxTokens: 900 }),
-    chatJson<LlmVerdict>({ model: MODELS.matchB, system: MATCH_SYSTEM, user, maxTokens: 900 }),
+    chatJson<LlmVerdict>({ model: MODELS.matchA, system: MATCH_SYSTEM, user, maxTokens: 2500 }),
+    chatJson<LlmVerdict>({ model: MODELS.matchB, system: MATCH_SYSTEM, user, maxTokens: 2500 }),
   ]);
   cost += a.costUsd + b.costUsd;
   const va = norm(a.data);
@@ -237,7 +237,7 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
       system: `${MATCH_SYSTEM}\n\nZwei Prüfer kamen zu unterschiedlichen oder fehlerhaften Ergebnissen. Prüfe beide gegen Profil und
 Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten.`,
       user: `${user}\n\nPRÜFER A: ${JSON.stringify(va)}\nBefunde Regelprüfung A: ${JSON.stringify(issuesA)}\n\nPRÜFER B: ${JSON.stringify(vb)}\nBefunde Regelprüfung B: ${JSON.stringify(issuesB)}`,
-      maxTokens: 900,
+      maxTokens: 2500,
     });
     cost += arb.costUsd;
     const vc = norm(arb.data);

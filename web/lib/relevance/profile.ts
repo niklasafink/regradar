@@ -241,7 +241,7 @@ Rechtssubjekt, nicht für den Konzern oder Verbund.`;
     merkmale_gesucht: qs.map((id) => ({ id, bedeutung: featureById(id)?.l, pruefkriterien: HINTS[id]?.pruefen })),
   });
   const { data, costUsd } = await chatJson<ResearchOut>({
-    model: MODELS.research, system, user, maxTokens: 1800, web: true,
+    model: MODELS.research, system, user, maxTokens: 4000, web: true,
   });
   if (data.website) p.website = String(data.website).replace(/^https?:\/\//, "").replace(/\/.*$/, "");
   const bs = Number(data.bilanzsumme_mrd);
@@ -386,7 +386,7 @@ export async function profileFromDomain(domain: string): Promise<DomainProfile> 
   const { data } = await chatJson<{ finanzunternehmen: boolean; kandidaten: string[]; konfidenz: number }>({
     model: MODELS.research,
     web: true,
-    maxTokens: 600,
+    maxTokens: 1500,
     system: `Ermittle, welches deutsche oder europäische beaufsichtigte Finanzunternehmen (Bank, Sparkasse, Versicherer,
 Kapitalverwaltungsgesellschaft, Zahlungsinstitut, Leasing, Wertpapierinstitut …) die E-Mail-Domain nutzt.
 Antworte als JSON: {"finanzunternehmen": true|false, "kandidaten": ["exakter Firmenname laut Impressum", ...], "konfidenz": 0..1}.

@@ -70,6 +70,8 @@ export async function chatJson<T>(opts: {
     temperature: opts.temperature ?? 0,
     max_tokens: opts.maxTokens ?? 1500,
     response_format: { type: "json_object" },
+    // Reasoning-Modelle (gpt-oss) verbrauchen sonst das Token-Limit vor der Antwort.
+    reasoning: { effort: "low" },
     usage: { include: true },
     messages: [
       { role: "system", content: opts.system },
