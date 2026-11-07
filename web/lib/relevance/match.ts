@@ -289,6 +289,7 @@ export async function matchOne(p: Profile, t: MatchTarget, opts: { noLlm?: boole
       result = await llmMatch(p, t, scope, rules);
     } catch (e) {
       // Budget erreicht oder API-Fehler: nichts cachen, ehrlich „unsicher“.
+      console.error("relevance llm failed:", t.key, e instanceof Error ? e.message : e);
       return {
         status: "unsicher",
         grund: e instanceof BudgetError ? "Prüfung derzeit ausgelastet, bitte später erneut ansehen." : "Prüfung derzeit nicht verfügbar.",

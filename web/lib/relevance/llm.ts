@@ -61,7 +61,7 @@ export async function chatJson<T>(opts: {
   web?: boolean;
   temperature?: number;
 }): Promise<ChatResult<T>> {
-  const key = process.env.OPENROUTER_API_KEY;
+  const key = process.env.OPENROUTER_API_KEY?.trim();
   if (!key) throw new Error("OPENROUTER_API_KEY fehlt");
   if ((await spentThisWeek()) >= WEEKLY_BUDGET_USD) throw new BudgetError();
 
