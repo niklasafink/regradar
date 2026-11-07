@@ -20,7 +20,7 @@ export async function POST(request: Request) {
   // Gäste und Vorprofile: begrenztes Tageskontingent für KI-Prüfungen;
   // darüber hinaus nur Regel- und Cache-Ergebnisse.
   const allowLlm = !body.noLlm && (vp.source === "konto" || (await rateLimit(request, "check", 60)));
-  const results = await matchMany(vp.profile, targets, { noLlm: !allowLlm, deadlineMs: 45_000 });
+  const results = await matchMany(vp.profile, targets, { noLlm: !allowLlm, deadlineMs: 45_000, concurrency: 10 });
   const titles = Object.fromEntries(targets.map((t) => [t.key, t.u ? { ti: t.u.ti.de, d: t.u.d, fw: t.fw.n.de } : { ti: t.fw.n.de, d: "", fw: "" }]));
   return Response.json({
     profile: { id: vp.profile.id, name: vp.profile.name, origin: vp.profile.origin },

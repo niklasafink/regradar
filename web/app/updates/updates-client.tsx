@@ -10,7 +10,8 @@ import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf,
   PROVIDER_SHORT, tx, type Impact,
 } from "@/lib/core";
-import { hasProfile, STATUS_LABEL, statusPill, useMe, useRelevance } from "@/lib/relevanceClient";
+import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
+import { RelevanceChip } from "@/components/relevance-chip";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
 
@@ -61,6 +62,7 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
   // weiter unten bleibt es bei der Detailseite).
   const me = useMe();
   const rel = useRelevance(shown.slice(0, 40).map((p) => `u:${p.slug}`), hasProfile(me));
+  const relName = activeName(me);
 
   const pill = (active: boolean) =>
     `inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
@@ -162,9 +164,7 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
                         {tx(lang, IMPACT_LABEL[impact])}
                       </span>
                       {r && (
-                        <span className={`sm:hidden ${statusPill(r.status)}`} title={r.grund}>
-                          {STATUS_LABEL[r.status]}
-                        </span>
+                        <span className="sm:hidden"><RelevanceChip r={r} name={relName} /></span>
                       )}
                       <span className="truncate">
                         {tx(lang, fw.n)}, {tx(lang, u.t)}
@@ -185,9 +185,7 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
                       Impact: {tx(lang, IMPACT_LABEL[impact])}
                     </span>
                     {r && (
-                      <span className={statusPill(r.status)} title={r.grund}>
-                        {STATUS_LABEL[r.status]}
-                      </span>
+                      <RelevanceChip r={r} name={relName} />
                     )}
                   </span>
                 </Link>

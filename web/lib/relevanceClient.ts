@@ -95,9 +95,11 @@ export function activeName(me: Me | null): string | null {
 
 /* Gebündelte Prüfabfragen: Aufrufe innerhalb von 30 ms gehen in einen Request. */
 let pending: { keys: Set<string>; waiters: (() => void)[] } | null = null;
+const inflight = new Set<string>();
 
 async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
   const keys = [...batch.keys];
+  keys.forEach((k) => inflight.add(k));
   for (let i = 0; i < keys.length; i += 40) {
     const chunk = keys.slice(i, i + 40);
     try {
@@ -112,11 +114,29 @@ async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
       for (const [k, v] of Object.entries(json.results ?? {})) results.set(k, v);
     } catch { /* still: keine Chips */ }
   }
+  keys.forEach((k) => inflight.delete(k));
   batch.waiters.forEach((w) => w());
+  scheduleRetry(keys);
+}
+
+/* Was der Server in seiner Zeit nicht geschafft hat („Noch nicht geprüft“),
+   fragen wir nach kurzer Pause erneut an; fertige Ergebnisse liegen dann im
+   Server-Cache, der Rest wird weitergeprüft. Höchstens 8 Runden je Schlüssel. */
+const retries = new Map<string, number>();
+export const isPending = (r?: MatchResult) => !!r && r.stufe === "fallback" && r.grund.startsWith("Noch nicht geprüft");
+
+function scheduleRetry(keys: string[]) {
+  const again = keys.filter((k) => isPending(results.get(k)) && (retries.get(k) ?? 0) < 8);
+  if (!again.length || typeof window === "undefined") return;
+  again.forEach((k) => retries.set(k, (retries.get(k) ?? 0) + 1));
+  setTimeout(() => {
+    again.forEach((k) => results.delete(k));
+    window.dispatchEvent(new Event(EVENT));
+  }, 1500);
 }
 
 export function check(keys: string[]): Promise<void> {
-  const missing = keys.filter((k) => !results.has(k));
+  const missing = keys.filter((k) => !results.has(k) && !inflight.has(k));
   if (!missing.length) return Promise.resolve();
   if (!pending) {
     pending = { keys: new Set(), waiters: [] };
