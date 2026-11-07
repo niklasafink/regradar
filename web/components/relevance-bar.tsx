@@ -7,6 +7,7 @@ import {
   activeName, hasProfile, invalidate, readDraft, STATUS_LABEL, statusPill, useMe, useRelevance,
   writeDraft, type Me,
 } from "@/lib/relevanceClient";
+import { RelevanceHint } from "./relevance-hint";
 
 /** Prüfziel der aktuellen Seite: Update-Detail oder Rahmenwerk. */
 function targetOf(pathname: string): string | null {
@@ -50,23 +51,6 @@ export function RelevanceBar() {
   const name = activeName(me);
   const r = key ? res[key] : undefined;
   const next = encodeURIComponent(pathname);
-
-  const switcher = me.loggedIn && me.profiles.length > 1 ? (
-    <select
-      aria-label="Profil wählen"
-      className="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-xs text-slate-700"
-      value={me.activeId ?? ""}
-      onChange={async (e) => {
-        await fetch("/api/account/profile", {
-          method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ action: "activate", id: e.target.value }),
-        });
-        invalidate();
-      }}
-    >
-      {me.profiles.map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}
-    </select>
-  ) : null;
 
   const register = !me.loggedIn && withProfile ? (
     <Link href="/profil?speichern=1" className="shrink-0 font-medium text-slate-900 underline-offset-2 hover:underline">
@@ -124,6 +108,9 @@ export function RelevanceBar() {
             ))}
           </span>
         )}
+        {r.status === "unsicher" && r.frage && (
+          <RelevanceHint merkmal={r.frage.merkmal} className="basis-full" />
+        )}
       </>
     );
   } else {
@@ -136,19 +123,12 @@ export function RelevanceBar() {
 
   return (
     <div className="border-b border-slate-100 bg-slate-50">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-1.5 px-4 py-2 text-xs sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-1.5 px-4 py-2 text-center text-xs sm:px-6">
         {content}
-        <span className="flex-1" />
         {!me.loggedIn && me.pre?.name && !readDraft() && (
           <span className="text-slate-500">Vorausgefüllt anhand Ihrer E-Mail-Domain.</span>
         )}
         {register}
-        {switcher}
-        {me.loggedIn && (
-          <Link href="/profil" className="shrink-0 text-slate-500 underline-offset-2 hover:text-slate-900 hover:underline">
-            Profile
-          </Link>
-        )}
       </div>
     </div>
   );

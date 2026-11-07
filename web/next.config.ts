@@ -34,7 +34,8 @@ const CSP = [
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'none'",
-  "upgrade-insecure-requests",
+  // Nur in Produktion: lokal (http://localhost) würde Safari sonst CSS/JS per https nachladen.
+  ...(process.env.NODE_ENV === "production" ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 
 const SECURITY_HEADERS = [
@@ -49,6 +50,8 @@ const SECURITY_HEADERS = [
 
 const nextConfig: NextConfig = {
   env: { NEXT_PUBLIC_LIVE_GENERATED_AT: LIVE_GENERATED_AT },
+  // Lokale Entwicklung auch über 127.0.0.1 und die LAN-IP (sonst blockt next dev das JS).
+  allowedDevOrigins: ["127.0.0.1", "192.168.0.30"],
   // Dateien, die die LinkedIn-Slides zur Laufzeit lesen (Slides, PDF und Posten unter app/api/linkedin).
   outputFileTracingIncludes: {
     "/api/linkedin/**": ["./assets/fonts/**/*", "./public/authorities/**/*", "./app/icon.svg"],

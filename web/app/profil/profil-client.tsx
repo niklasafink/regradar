@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import {
   invalidate, readDraft, STATUS_LABEL, statusPill, useMe, writeDraft, type MatchResult,
 } from "@/lib/relevanceClient";
+import { RelevanceHint } from "@/components/relevance-hint";
 
 type Opt = { id: string; l: string };
 type Tri = true | false | null;
@@ -27,7 +28,7 @@ interface Profile {
 interface Question { id: string; label: string; value: Tri; source: string | null; evidence: string | null }
 interface Hit { id: string; name: string; gattung: string; ecb: { si: boolean; hi: boolean; type: string } | null }
 
-type Step = "liste" | "suche" | "manuell" | "laden" | "pruefen" | "vorschau" | "speichern" | "gesendet";
+type Step = "liste" | "suche" | "manuell" | "laden" | "pruefen" | "vorschau" | "speichern" | "gesendet" | "anmelden";
 
 const btn = "inline-flex items-center rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-50";
 const btn2 = "inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-900 hover:border-slate-900 disabled:opacity-50";
@@ -93,6 +94,10 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
     if (me.loggedIn) {
       void loadAccount();
       setStep(params.get("neu") ? "suche" : "liste");
+      return;
+    }
+    if (params.get("anmelden")) {
+      setStep("anmelden");
       return;
     }
     if (params.get("speichern")) {
@@ -195,11 +200,11 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
     setStep("speichern");
   };
 
-  const requestLink = async () => {
+  const requestLink = async (withProfile = true) => {
     setError(null);
     setBusy(true);
     try {
-      await post("/api/auth/request", { email, profile });
+      await post("/api/auth/request", { email, profile: withProfile ? profile : null });
       setStep("gesendet");
     } catch (e) {
       setError((e as Error).message);
@@ -215,9 +220,9 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
   return (
     <div>
       <h1 className="font-heading text-2xl font-medium tracking-tight sm:text-3xl">
-        {step === "liste" ? "Ihre Institutsprofile" : "Welche Updates sind für Ihr Institut einschlägig?"}
+        {step === "liste" ? "Ihre Institutsprofile" : step === "anmelden" ? "Anmelden" : "Welche Updates sind für Ihr Institut einschlägig?"}
       </h1>
-      {step !== "liste" && (
+      {step !== "liste" && step !== "anmelden" && (
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
           Legen Sie einmal ein Profil Ihres Instituts an. Danach zeigen wir bei jeder Meldung auf der Website und in
           Ihren Newsletter-Mails, ob sie für Ihr Institut einschlägig ist. Beraterinnen, Berater und Prüfer können
@@ -292,6 +297,15 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
             />
             <button type="submit" className={btn} disabled={busy || q.trim().length < 3}>Suchen</button>
           </form>
+          {me && !me.loggedIn && (
+            <p className="mt-3 text-xs text-slate-500">
+              Schon registriert?{" "}
+              <button type="button" className="font-medium text-slate-900 underline-offset-2 hover:underline" onClick={() => setStep("anmelden")}>
+                Anmelden
+              </button>
+              , dann landet das Profil direkt in Ihrem Konto.
+            </p>
+          )}
           {hits && (
             <ul className="mt-4 space-y-2">
               {hits.map((h) => (
@@ -411,6 +425,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
                     {x.evidence && x.source === "recherche" && (
                       <p className="mt-1 text-xs text-slate-400">Vorschlag: {x.evidence}</p>
                     )}
+                    <RelevanceHint merkmal={x.id} className="mt-1.5" />
                   </li>
                 ))}
               </ul>
@@ -486,11 +501,32 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
         </section>
       )}
 
+      {step === "anmelden" && (
+        <section className="mt-6 max-w-xl">
+          <p className="text-sm text-slate-600">
+            Sie haben schon ein Konto oder abonnieren den Newsletter? Geben Sie Ihre E-Mail-Adresse ein. Sie bekommen einen
+            Anmeldelink, ein Passwort gibt es nicht. Danach bleiben Sie in diesem Browser angemeldet und können Institutsprofile
+            anlegen und wechseln.
+          </p>
+          <form className="mt-4 flex flex-wrap gap-2" onSubmit={(e) => { e.preventDefault(); setProfile(null); void requestLink(false); }}>
+            <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@institut.de" autoComplete="email"
+              className="min-w-0 flex-1 rounded-full border border-slate-200 px-4 py-2 text-sm focus:border-slate-900 focus:outline-none" />
+            <button type="submit" className={btn} disabled={busy}>Anmeldelink senden</button>
+          </form>
+          <p className="mt-4 text-sm text-slate-600">
+            Noch kein Konto?{" "}
+            <button type="button" className="font-medium text-slate-900 underline-offset-2 hover:underline" onClick={() => setStep("suche")}>
+              Institutsprofil anlegen
+            </button>
+          </p>
+        </section>
+      )}
+
       {step === "gesendet" && (
         <section className="mt-8 max-w-xl">
           <p className="text-sm text-slate-600">
             Wir haben einen Anmeldelink an <span className="font-medium text-slate-900">{email}</span> geschickt. Er ist 30 Minuten
-            gültig. Nach dem Klick ist Ihr Profil gespeichert.
+            gültig. {profile ? "Nach dem Klick ist Ihr Profil gespeichert." : "Nach dem Klick sind Sie angemeldet und bleiben es in diesem Browser."}
           </p>
         </section>
       )}

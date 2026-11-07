@@ -8,6 +8,8 @@ import { SearchBox } from "@/components/search";
 import type { Provider, Topic, Txt } from "@/lib/base";
 import { daysAgo, fmtDate, tx } from "@/lib/core";
 import { useStore } from "@/lib/store";
+import { RelevanceChip } from "@/components/relevance-chip";
+import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
 
 /** Rahmenwerk-Kachel mit den angezeigten Feldern (vom Server vorbereitet). */
 export interface BoardFramework {
@@ -32,6 +34,12 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
   const [selected, setSelected] = useState<string[]>([]);
 
   const shown = selected.length ? topics.filter((t) => selected.includes(t.id)) : topics;
+  const me = useMe();
+  const rel = useRelevance(
+    [...new Set(shown.flatMap((t) => t.fws.map((f) => `f:${f.id}`)))],
+    hasProfile(me),
+  );
+  const relName = activeName(me);
 
   const toggleTopic = (id: string) => {
     if (id === "ALL") return setSelected([]);
@@ -140,11 +148,14 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
                           {f.ref}, {f.jur}
                         </p>
                       </div>
+                      <span className="flex shrink-0 flex-col items-end gap-1.5">
+                      <RelevanceChip r={rel[`f:${f.id}`]} name={relName} />
                       {fresh && (
                         <span className="shrink-0 rounded-full bg-blue-600 px-2.5 py-0.5 text-xs font-medium text-white">
                           {lang === "de" ? "Neu" : "New"}
                         </span>
                       )}
+                      </span>
                     </div>
                     {kids.length > 0 && (
                       <p className="mt-2.5 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">

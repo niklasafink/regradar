@@ -3,6 +3,7 @@
 // aus einer Kurzrecherche (nur Vorschlag, der Nutzer bestätigt). Alles wird
 // auf den Merkmalskatalog (catalog.json) abgebildet. Server-only.
 
+import { HINTS } from "./hints";
 import { createHash, randomUUID } from "node:crypto";
 import {
   CLOSED_GROUPS, FEATURES, FEATURE_IDS, deriveFeatures, featureById,
@@ -237,7 +238,7 @@ Rechtssubjekt, nicht für den Konzern oder Verbund.`;
     gattung: p.gattung,
     erlaubnisse: p.licenses.map((l) => l.text),
     gruppe: p.group,
-    merkmale_gesucht: qs.map((id) => ({ id, bedeutung: featureById(id)?.l })),
+    merkmale_gesucht: qs.map((id) => ({ id, bedeutung: featureById(id)?.l, pruefkriterien: HINTS[id]?.pruefen })),
   });
   const { data, costUsd } = await chatJson<ResearchOut>({
     model: MODELS.research, system, user, maxTokens: 1800, web: true,

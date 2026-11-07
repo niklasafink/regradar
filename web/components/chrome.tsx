@@ -1,5 +1,6 @@
 "use client";
 
+import { AccountMenu } from "./account-menu";
 import { RelevanceBar } from "./relevance-bar";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
@@ -327,6 +328,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
           >
             {lang === "de" ? "Newsletter abonnieren" : "Subscribe to newsletter"}
           </Link>
+          <AccountMenu />
         </div>
       </header>
       <RelevanceBar />

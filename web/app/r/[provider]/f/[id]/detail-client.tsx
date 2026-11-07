@@ -11,6 +11,8 @@ import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, dt, firstParagraph, fmtDate, tx,
 } from "@/lib/core";
 import { useStore } from "@/lib/store";
+import { RelevanceChip } from "@/components/relevance-chip";
+import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
 import { useState } from "react";
 import type { Framework, Provider, Topic, Txt, Update } from "@/lib/base";
 
@@ -36,6 +38,11 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
   // Slider als Filter: „Alle" (Hauptstandard + alle Unterrahmenwerke), der
   // Hauptstandard selbst oder ein einzelnes Unterrahmenwerk.
   const [sel, setSel] = useState<string>(kids.length > 0 ? "all" : f.id);
+  const me = useMe();
+  const relKey = (href: string) => {
+    const m = href.match(/^\/u\/([^/?#]+)/);
+    return m ? `u:${decodeURIComponent(m[1])}` : null;
+  };
   const shortName = (x: LinkedFramework) =>
     x.sn ? tx(lang, x.sn) : tx(lang, x.n).split(":")[0].trim();
   const scope: LinkedFramework[] =
@@ -45,6 +52,11 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
     .sort((a, b) => dt(b.u.d).getTime() - dt(a.u.d).getTime());
   const fresh = ups.filter(({ u }) => daysAgo(u.d) <= 30).length;
   const sources = [...new Set(ups.map(({ u }) => u.src))];
+  const rel = useRelevance(
+    ups.slice(0, 40).map(({ u }) => relKey(u.href)).filter((k): k is string => !!k),
+    hasProfile(me),
+  );
+  const relName = activeName(me);
   const tileCount = kids.length > 0 ? kids.length + 2 : 0;
   const tile = (active: boolean) =>
     `flex w-64 items-center gap-3 rounded-2xl border px-3.5 py-2.5 text-left transition-colors ${
@@ -226,6 +238,7 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
               </p>
             )}
             {ups.map(({ u, owner }, i) => {
+              const rk = relKey(u.href);
               const isNew = daysAgo(u.d) <= 14;
               const expired = !!u.deadline && deadlineExpired(u.deadline);
               const urgent = u.deadline && !expired && daysUntil(u.deadline) < 60;
@@ -266,6 +279,7 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
                     )}
                     <AuthorityLogo src={u.src} className="h-3.5" />
                     {u.refnum && <span className="num text-slate-400">{u.refnum}</span>}
+                    {rk && <RelevanceChip r={rel[rk]} name={relName} />}
                     {sel === "all" && owner.id !== f.id && (
                       <button
                         type="button"
