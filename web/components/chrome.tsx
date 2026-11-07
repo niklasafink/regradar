@@ -82,7 +82,7 @@ function ProviderMenu() {
         aria-expanded={open}
         aria-haspopup="menu"
         onClick={() => setOpen((v) => !v)}
-        className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
+        className={`inline-flex min-w-0 items-center gap-1 whitespace-nowrap rounded-full px-2 py-1.5 text-[13px] lg:px-3 xl:px-4 font-medium transition-colors ${
           active
             ? "bg-slate-900 text-white"
             : open
@@ -90,7 +90,9 @@ function ProviderMenu() {
               : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
         }`}
       >
-        {active ? tx(lang, active.n) : lang === "de" ? "Zielgruppen" : "Target groups"}
+        <span className="max-w-[6rem] truncate lg:max-w-[11rem]">
+          {active ? tx(lang, active.n) : lang === "de" ? "Zielgruppen" : "Audiences"}
+        </span>
         {/* Phosphor CaretDown, identisch mit dem Dropdown-Pfeil bei vergabehero.eu */}
         <svg
           aria-hidden
@@ -168,7 +170,7 @@ function DeadlinesPraxisMenu() {
         aria-expanded={open}
         aria-haspopup="menu"
         onClick={() => setOpen((v) => !v)}
-        className={`inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
+        className={`inline-flex min-w-0 items-center gap-1 whitespace-nowrap rounded-full px-2 py-1.5 text-[13px] lg:px-3 xl:px-4 font-medium transition-colors ${
           active
             ? "bg-slate-900 text-white"
             : open
@@ -176,9 +178,11 @@ function DeadlinesPraxisMenu() {
               : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
         }`}
       >
-        {active
-          ? active.label
-          : lang === "de" ? "Fristen & Praxis" : "Deadlines & enforcement"}
+        <span className="max-w-[6rem] truncate lg:max-w-[11rem]">
+          {active
+            ? active.label
+            : lang === "de" ? "Fristen & Praxis" : "Deadlines & fines"}
+        </span>
         <svg
           aria-hidden
           viewBox="0 0 256 256"
@@ -271,14 +275,14 @@ export function Chrome({ children }: { children?: ReactNode }) {
             <Wordmark />
           </Link>
           <nav
-            className="hidden min-w-0 flex-1 items-center justify-center gap-1 md:flex"
+            className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 md:flex lg:gap-1"
             aria-label={lang === "de" ? "Hauptnavigation" : "Main navigation"}
           >
             <Link
               href="/"
               data-fast-goal="nav_click"
               data-fast-goal-page="home"
-              className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
+              className={`hidden whitespace-nowrap lg:block rounded-full px-2 py-1.5 text-[13px] lg:px-3 xl:px-4 font-medium transition-colors ${
                 pathname === "/"
                   ? "bg-slate-900 text-white"
                   : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
@@ -292,7 +296,7 @@ export function Chrome({ children }: { children?: ReactNode }) {
               href="/updates"
               data-fast-goal="nav_click"
               data-fast-goal-page="updates"
-              className={`rounded-full px-4 py-1.5 text-[13px] font-medium transition-colors ${
+              className={`whitespace-nowrap rounded-full px-2 py-1.5 text-[13px] lg:px-3 xl:px-4 font-medium transition-colors ${
                 pathname === "/updates"
                   ? "bg-slate-900 text-white"
                   : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
