@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
-  invalidate, readDraft, statusPill, useMe, writeDraft,
+  invalidate, readDraft, recheckProfile, statusPill, useMe, writeDraft,
 } from "@/lib/relevanceClient";
 import { RelevanceHint } from "@/components/relevance-hint";
 
@@ -180,7 +180,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
         invalidate();
         if (editing) {
           await loadAccount();
-          setNotice(`Profil „${upd.profile.name}“ gespeichert.`);
+          setNotice(`Profil „${upd.profile.name}“ gespeichert. Die bisherigen Einschätzungen bleiben bestehen; mit „Neu prüfen“ übernehmen Sie die Änderungen.`);
           setStep("liste");
         } else {
           window.location.href = nextPath();
@@ -234,7 +234,20 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
               <div className="min-w-0 flex-1">
                 <p className="font-medium text-slate-900">{p.name}</p>
                 <p className="text-xs text-slate-500">{p.gattung.join(", ") || "Manuell angelegt"}{supervision(p) ? `, ${supervision(p)}` : ""}</p>
+                {(p as Profile & { stale?: boolean }).stale && (
+                  <p className="mt-1 text-xs text-slate-600">Seit der letzten Prüfung geändert. Bisherige Einschätzungen bleiben, bis Sie neu prüfen.</p>
+                )}
               </div>
+              {(p as Profile & { stale?: boolean }).stale && (
+                <button type="button" className={btn} disabled={busy} onClick={async () => {
+                  setBusy(true);
+                  try {
+                    await recheckProfile(p.id);
+                    await loadAccount();
+                    setNotice(`Einschlägigkeit für „${p.name}“ wird neu geprüft. Unveränderte Ergebnisse werden übernommen.`);
+                  } finally { setBusy(false); }
+                }}>Neu prüfen</button>
+              )}
               {p.id === primaryId ? (
                 <span className={statusPill("teilweise")} title="Gilt für Ihre Newsletter-Mails">Primär (Newsletter)</span>
               ) : (

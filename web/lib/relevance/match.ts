@@ -10,12 +10,18 @@
 // 3. QS 2: Modell B aus einem anderen Haus urteilt unabhängig.
 // 4. Bei Widerspruch entscheidet der Schiedsrichter; scheitert er, bleibt es
 //    bei „unsicher“ mit Rückfrage.
-// Ergebnisse werden je (Update, Profil-Signatur) in Redis gecacht: gleiche
-// Profile teilen sich die Kosten. Server-only.
+// Speicherung (Kosten, Nutzerentscheidung 07.11.2026): Jedes Paar aus Profil
+// und Ziel wird genau einmal geprüft und je Profil festgehalten (Redis-Hash
+// relp:<Profil>:<Generation>). Profiländerungen lösen keine neue Prüfung aus;
+// erst „Neu prüfen“ startet eine neue Generation. Darin werden Ergebnisse
+// der Vorgeneration übernommen, wenn die geänderten Merkmale sie nicht
+// berühren. Zusätzlich teilen sich Profile mit gleichen Merkmalen die
+// Ergebnisse (relm:<Signatur>). Ausnahme: „Unklar“ mit einer inzwischen
+// beantworteten Rückfrage wird sofort neu geprüft. Server-only.
 
 import { featureById, featureLabel, FEATURE_IDS, FEATURES } from "./catalog";
 import { BudgetError, chatJson, MODELS } from "./llm";
-import { featureValue, profileSignature, type Profile, type Tri } from "./profile";
+import { changedFeatures, featureValue, profileSignature, profileValues, type Profile, type Tri } from "./profile";
 import { scopeFor, SCOPE_FORMAT, type Group, type Scope } from "./scopes";
 import { redis } from "../subscribers";
 import type { Framework, Update } from "../data";
@@ -27,6 +33,10 @@ export interface MatchResult {
   grund: string;
   teile?: string;
   frage?: { merkmal: string; frage: string };
+  /** Weitere offene Rückfragen (nur bei „unsicher“). */
+  weitere?: { merkmal: string; frage: string }[];
+  /** Profilmerkmale, auf die sich das Urteil stützt (für die Wiederverwendung). */
+  merkmale?: string[];
   art?: Scope["art"];
   stufe: "regel" | "ki" | "schiedsrichter" | "fallback";
   kostenUsd: number;
@@ -65,14 +75,14 @@ export function ruleCheck(p: Profile, scope: Scope | undefined): RuleResult {
   const base = { art: scope.art, kostenUsd: 0, at, stufe: "regel" as const };
   if (scope.art === "keine_institute") {
     return {
-      decided: { ...base, status: "nein", grund: "Richtet sich nicht unmittelbar an Institute (z. B. internationaler Standard oder Material für Behörden)." },
+      decided: { ...base, status: "nein", grund: "Nicht einschlägig, weil es sich nicht unmittelbar an Institute richtet." },
       hits: [], open: [], allFalse: true,
     };
   }
   const excluded = scope.ausschluesse.find((g) => evalGroup(p, g).v === true);
   if (excluded) {
     return {
-      decided: { ...base, status: "nein", grund: `Ausdrücklich ausgenommen: ${excluded.alle.map(featureLabel).join(", ")}.` },
+      decided: { ...base, status: "nein", grund: `Nicht einschlägig, weil ausgenommen: ${excluded.alle.map(featureLabel).join(", ")}.`, merkmale: excluded.alle },
       hits: [], open: [], allFalse: true,
     };
   }
@@ -88,7 +98,7 @@ export function ruleCheck(p: Profile, scope: Scope | undefined): RuleResult {
     && (featureValue(p, "finanzholding") === true || featureValue(p, "gruppe_uebergeordnet") === true);
   if (allFalse && !consolidated) {
     return {
-      decided: { ...base, status: "nein", grund: `Adressaten laut Analyse: ${(scope.kurz || scope.adressaten.map((g) => g.alle.map(featureLabel).join(" + ")).join("; ")).replace(/\.+$/, "")}. Das Profil erfüllt keine dieser Voraussetzungen.` },
+      decided: { ...base, status: "nein", grund: `Nicht einschlägig, weil es sich nur richtet an: ${(scope.kurz || scope.adressaten.map((g) => g.alle.map(featureLabel).join(" + ")).join("; ")).replace(/\.+$/, "")}.` },
       hits, open, allFalse,
     };
   }
@@ -97,7 +107,7 @@ export function ruleCheck(p: Profile, scope: Scope | undefined): RuleResult {
   if (hits.length > 0 && scope.teilregeln.length === 0 && scope.schwellen.length === 0
     && (scope.art === "pflicht" || scope.art === "kuenftig")) {
     return {
-      decided: { ...base, status: "ja", grund: `Einschlägig als ${hits[0].alle.map(featureLabel).join(" + ")}.${scope.handlung ? ` ${scope.handlung}` : ""}` },
+      decided: { ...base, status: "ja", grund: `Einschlägig, weil ${hits[0].alle.map(featureLabel).join(" + ")}.`, merkmale: hits[0].alle },
       hits, open, allFalse,
     };
   }
@@ -173,8 +183,9 @@ Normadressaten des Rechtsakts:
   "unsicher" mit dem passenden Merkmal, wenn es unbekannt ist.
 - Querschnittsregeln für alle Institute (z. B. DORA, Geldwäsche, Datenschutz, Hinweisgeberschutz) bleiben "ja".
 
-Antworte nur als JSON: {"status": "ja|teilweise|nein|unsicher", "teile": "…" | null, "grund": "ein bis zwei Sätze, nenne die
-entscheidenden Merkmale in Worten", "merkmale": ["IDs der Profilmerkmale, auf die du dich stützt"], "frage": {"merkmal": "id", "frage": "…"} | null}`;
+Antworte nur als JSON: {"status": "ja|teilweise|nein|unsicher", "teile": "…" | null, "grund": "EIN kurzer Satz mit dem
+entscheidenden Merkmal, beginnend mit „Einschlägig, weil …“ bzw. „Nicht einschlägig, weil …“ (z. B. „Einschlägig, weil
+CRR-Kreditinstitut mit Einlagengeschäft.“, „Nicht einschlägig, weil Bilanzsumme unter 1 Mrd. €.“), höchstens 140 Zeichen", "merkmale": ["IDs der Profilmerkmale, auf die du dich stützt"], "frage": {"merkmal": "id", "frage": "…"} | null}`;
 
 interface LlmVerdict {
   status?: string;
@@ -234,7 +245,7 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
     if (!ok) throw bad.reason;
     const v = norm(ok.value.data);
     if (qs1(p, v, rules).length) throw new Error("Einzelurteil besteht die Regelprüfung nicht");
-    return { status: v.status, grund: v.grund, teile: v.teile, frage: v.frage, art: scope?.art, stufe: "ki", kostenUsd: ok.value.costUsd, at };
+    return { status: v.status, grund: v.grund, teile: v.teile, frage: v.frage, merkmale: v.merkmale, art: scope?.art, stufe: "ki", kostenUsd: ok.value.costUsd, at };
   }
   const a = sa.value;
   const b = sb.value;
@@ -252,11 +263,11 @@ async function llmMatch(p: Profile, t: MatchTarget, scope: Scope | undefined, ru
       : va.status;
     return {
       status, grund: va.grund, teile: va.teile ?? vb.teile, frage: va.frage ?? vb.frage,
-      art: scope?.art, stufe: "ki", kostenUsd: cost, at,
+      merkmale: [...new Set([...va.merkmale, ...vb.merkmale])], art: scope?.art, stufe: "ki", kostenUsd: cost, at,
     };
   }
   if (agree && issuesB.length === 0) {
-    return { status: vb.status, grund: vb.grund, teile: vb.teile, frage: vb.frage, art: scope?.art, stufe: "ki", kostenUsd: cost, at };
+    return { status: vb.status, grund: vb.grund, teile: vb.teile, frage: vb.frage, merkmale: vb.merkmale, art: scope?.art, stufe: "ki", kostenUsd: cost, at };
   }
 
   // Schiedsrichter: sieht beide Urteile und die QS-1-Befunde.
@@ -271,7 +282,7 @@ Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten
     cost += arb.costUsd;
     const vc = norm(arb.data);
     if (qs1(p, vc, rules).length === 0) {
-      return { status: vc.status, grund: vc.grund, teile: vc.teile, frage: vc.frage, art: scope?.art, stufe: "schiedsrichter", kostenUsd: cost, at };
+      return { status: vc.status, grund: vc.grund, teile: vc.teile, frage: vc.frage, merkmale: vc.merkmale, art: scope?.art, stufe: "schiedsrichter", kostenUsd: cost, at };
     }
   } catch (e) {
     if (e instanceof BudgetError) throw e;
@@ -280,7 +291,7 @@ Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten
   const frage = va.frage ?? vb.frage ?? fallbackQuestion(p, scope, rules);
   return {
     status: "unsicher",
-    grund: "Die Prüfung kam zu keinem eindeutigen Ergebnis.",
+    grund: "Unklar, weil die Angaben im Profil für eine sichere Einschätzung nicht reichen.",
     frage, art: scope?.art, stufe: "fallback", kostenUsd: cost, at,
   };
 }
@@ -298,59 +309,137 @@ function fallbackQuestion(p: Profile, scope: Scope | undefined, rules: RuleResul
 const FW_MATCH_VERSION = 3;
 const cacheKey = (t: MatchTarget, sig: string) =>
   `relm:${t.u ? MATCH_VERSION : `f${FW_MATCH_VERSION}`}.${SCOPE_FORMAT}:${t.key}:${sig}`;
+/** Festgehaltene Ergebnisse je Profil und Prüfgeneration (Hash, Feld = Ziel). */
+const storeKey = (p: Profile, gen: number) => `relp:1:${p.id}:${gen}`;
+const STORE_TTL = 60 * 60 * 24 * 400;
 
-export async function matchOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean } = {}): Promise<MatchResult> {
+/** „Unklar“, dessen Rückfrage das Profil inzwischen beantwortet: neu prüfen. */
+const answered = (p: Profile, r: MatchResult) =>
+  r.status === "unsicher" && !!r.frage && featureValue(p, r.frage.merkmal) !== null;
+
+function scopeFeatures(scope: Scope): Set<string> {
+  const ids = new Set<string>(["finanzholding", "gruppe_uebergeordnet"]);
+  const add = (gs: Group[]) => gs.forEach((g) => g.alle.forEach((x) => ids.add(x)));
+  add(scope.adressaten);
+  add(scope.ausschluesse);
+  scope.teilregeln.forEach((t) => add(t.gilt_fuer));
+  scope.schwellen.forEach((x) => ids.add(x.merkmal));
+  scope.fragen.forEach((x) => ids.add(x.merkmal));
+  return ids;
+}
+
+/** Ergebnis der Vorgeneration übernehmen, wenn die Änderung es nicht berührt. */
+function reusable(r: MatchResult, changed: Set<string>, t: MatchTarget, scope: Scope | undefined): boolean {
+  if (r.stufe === "fallback" || r.status === "unsicher") return false;
+  if (changed.size === 0) return true;
+  const used = new Set([...(r.merkmale ?? []), ...(r.frage ? [r.frage.merkmal] : [])]);
+  if (scope) {
+    const rel = scopeFeatures(scope);
+    return ![...changed].some((c) => rel.has(c) || used.has(c));
+  }
+  // Ganzes Rahmenwerk ohne Analyse: Art und Erlaubnisse prägen das Urteil immer.
+  if (changed.has("lic")) return false;
+  return ![...changed].some((c) => {
+    const g = featureById(c)?.g;
+    return g === "art" || g === "erl" || used.has(c);
+  });
+}
+
+async function computeOne(
+  p: Profile, t: MatchTarget, opts: { noLlm?: boolean; prev?: MatchResult; changed?: Set<string> },
+): Promise<MatchResult> {
+  const scope = t.u?.url ? scopeFor(t.u.url) : undefined;
+  const rules = ruleCheck(p, scope);
+  if (rules.decided) return rules.decided;
   const sig = profileSignature(p);
   const key = cacheKey(t, sig);
   try {
     const hit = await redis().get<MatchResult>(key);
-    if (hit) return hit;
+    if (hit && !answered(p, hit)) return hit;
   } catch { /* ohne Cache weiter */ }
-
-  const scope = t.u?.url ? scopeFor(t.u.url) : undefined;
-  const rules = ruleCheck(p, scope);
-  let result: MatchResult | undefined = rules.decided;
-  if (!result) {
-    if (opts.noLlm) {
-      return {
-        status: "unsicher", grund: "Noch nicht geprüft.", art: scope?.art,
-        frage: fallbackQuestion(p, scope, rules), stufe: "fallback", kostenUsd: 0, at: new Date().toISOString(),
-      };
-    }
-    try {
-      result = await llmMatch(p, t, scope, rules);
-    } catch (e) {
-      // Budget erreicht oder API-Fehler: nichts cachen, ehrlich „unsicher“.
-      console.error("relevance llm failed:", t.key, e instanceof Error ? e.message : e);
-      return {
-        status: "unsicher",
-        grund: e instanceof BudgetError ? "Prüfung derzeit ausgelastet, bitte später erneut ansehen." : "Prüfung derzeit nicht verfügbar.",
-        frage: fallbackQuestion(p, scope, rules), art: scope?.art, stufe: "fallback", kostenUsd: 0,
-        at: new Date().toISOString(),
-      };
-    }
+  if (opts.prev && opts.changed && reusable(opts.prev, opts.changed, t, scope)) return opts.prev;
+  const extra = (main?: { merkmal: string }) =>
+    (scope?.fragen ?? []).filter((f) => featureValue(p, f.merkmal) === null && f.merkmal !== main?.merkmal).slice(0, 3);
+  if (opts.noLlm) {
+    const frage = fallbackQuestion(p, scope, rules);
+    return {
+      status: "unsicher", grund: "Noch nicht geprüft.", art: scope?.art,
+      frage, weitere: extra(frage), stufe: "fallback", kostenUsd: 0, at: new Date().toISOString(),
+    };
   }
+  let result: MatchResult;
+  try {
+    result = await llmMatch(p, t, scope, rules);
+  } catch (e) {
+    // Budget erreicht oder API-Fehler: nichts festhalten, ehrlich „unsicher“.
+    console.error("relevance llm failed:", t.key, e instanceof Error ? e.message : e);
+    const frage = fallbackQuestion(p, scope, rules);
+    return {
+      status: "unsicher",
+      grund: e instanceof BudgetError ? "Prüfung derzeit ausgelastet, bitte später erneut ansehen." : "Prüfung derzeit nicht verfügbar.",
+      frage, weitere: extra(frage), art: scope?.art, stufe: "fallback", kostenUsd: 0,
+      at: new Date().toISOString(),
+    };
+  }
+  if (result.status === "unsicher") result.weitere = extra(result.frage);
   if (result.stufe !== "fallback") {
     try { await redis().set(key, result, { ex: TTL }); } catch { /* egal */ }
   }
   return result;
 }
 
-/** Mehrere Ziele mit begrenzter Parallelität. */
+/** Mehrere Ziele mit begrenzter Parallelität. Bereits geprüfte Paare kommen
+    aus dem Profil-Speicher und kosten nichts. */
 export async function matchMany(
   p: Profile,
   targets: MatchTarget[],
   opts: { concurrency?: number; noLlm?: boolean; deadlineMs?: number } = {},
 ): Promise<Record<string, MatchResult>> {
   const out: Record<string, MatchResult> = {};
-  const queue = [...targets];
+  if (!targets.length) return out;
+  const gen = p.check?.gen ?? 0;
+  const store = storeKey(p, gen);
+  const fields = targets.map((t) => t.key);
+  let stored: Record<string, MatchResult | null> = {};
+  let prev: Record<string, MatchResult | null> = {};
+  try {
+    stored = (await redis().hmget<Record<string, MatchResult | null>>(store, ...fields)) ?? {};
+  } catch { /* ohne Speicher weiter */ }
+  const todo = targets.filter((t) => {
+    const r = stored[t.key];
+    if (r && !answered(p, r)) { out[t.key] = r; return false; }
+    return true;
+  });
+  if (!todo.length) return out;
+
+  // Neue Generation: Ergebnisse der Vorgeneration als Kandidaten.
+  let changed: Set<string> | undefined;
+  if (gen > 0 && p.check?.prevVals) {
+    changed = changedFeatures(p.check.prevVals, profileValues(p));
+    try {
+      prev = (await redis().hmget<Record<string, MatchResult | null>>(storeKey(p, gen - 1), ...todo.map((t) => t.key))) ?? {};
+    } catch { /* dann neu prüfen */ }
+  }
+
+  const fresh: Record<string, MatchResult> = {};
+  const queue = [...todo];
   const stopAt = opts.deadlineMs ? Date.now() + opts.deadlineMs : Infinity;
   const worker = async () => {
     for (let t = queue.shift(); t; t = queue.shift()) {
-      out[t.key] = await matchOne(p, t, { noLlm: opts.noLlm || Date.now() > stopAt });
+      const r = await computeOne(p, t, {
+        noLlm: opts.noLlm || Date.now() > stopAt, prev: prev[t.key] ?? undefined, changed,
+      });
+      out[t.key] = r;
+      if (r.stufe !== "fallback") fresh[t.key] = r;
     }
   };
-  await Promise.all(Array.from({ length: Math.min(opts.concurrency ?? 4, targets.length) }, worker));
+  await Promise.all(Array.from({ length: Math.min(opts.concurrency ?? 4, todo.length) }, worker));
+  if (Object.keys(fresh).length) {
+    try {
+      await redis().hset(store, fresh);
+      await redis().expire(store, STORE_TTL);
+    } catch { /* egal */ }
+  }
   return out;
 }
 

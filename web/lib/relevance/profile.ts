@@ -39,6 +39,12 @@ export interface Profile {
   closed: boolean;
   /** Herkunft: Register-Treffer, manuell, oder automatisch aus der Mail-Domain. */
   origin: "register" | "manuell" | "domain";
+  /** Stand der Einschlägigkeits-Prüfung: Ergebnisse liegen je Profil und
+      Generation fest (match.ts). Ändert sich das Profil, bleiben sie stehen,
+      bis der Nutzer „Neu prüfen“ klickt (Generation +1). `vals` = Merkmalswerte
+      zum Start der Generation, `prevVals` = die der Vorgeneration (für die
+      Wiederverwendung unberührter Ergebnisse). */
+  check?: { gen: number; vals: string; prevVals?: string; at: string };
   createdAt: string;
   updatedAt: string;
 }
@@ -54,13 +60,40 @@ export function featureValue(p: Pick<Profile, "facts" | "closed">, id: string): 
 
 /** Kompakte Signatur über alle Merkmalswerte: Profile mit gleichen Merkmalen
     (z. B. alle Abonnenten derselben Domain) teilen sich Abgleichsergebnisse. */
-export function profileSignature(p: Profile): string {
+export function profileValues(p: Pick<Profile, "facts" | "closed" | "licenses">): string {
   const parts = FEATURES.map((f) => {
     const v = featureValue(p, f.id);
     return v === null ? "" : `${f.id}=${v ? 1 : 0}`;
   }).filter(Boolean);
   parts.push(`lic=${p.licenses.map((l) => l.text).sort().join("|")}`);
-  return createHash("sha256").update(parts.join(";")).digest("base64url").slice(0, 22);
+  return parts.join(";");
+}
+
+export function profileSignature(p: Profile): string {
+  return createHash("sha256").update(profileValues(p)).digest("base64url").slice(0, 22);
+}
+
+/** Merkmale, deren Wert sich zwischen zwei Ständen unterscheidet; `lic`, wenn
+    sich die Erlaubnistexte geändert haben. */
+export function changedFeatures(a: string, b: string): Set<string> {
+  const parse = (s: string) => new Map(s.split(";").filter(Boolean).map((x) => {
+    const i = x.indexOf("=");
+    return [x.slice(0, i), x.slice(i + 1)] as [string, string];
+  }));
+  const ma = parse(a);
+  const mb = parse(b);
+  const out = new Set<string>();
+  for (const k of new Set([...ma.keys(), ...mb.keys()])) if (ma.get(k) !== mb.get(k)) out.add(k);
+  return out;
+}
+
+/** Profil seit dem Start der laufenden Prüfgeneration geändert? */
+export const profileChanged = (p: Profile) => !!p.check && p.check.vals !== profileValues(p);
+
+/** Neue Prüfgeneration („Neu prüfen“). */
+export function bumpCheck(p: Profile): void {
+  const gen = (p.check?.gen ?? 0) + 1;
+  p.check = { gen, vals: profileValues(p), prevVals: p.check?.vals, at: now() };
 }
 
 const now = () => new Date().toISOString();
@@ -341,9 +374,27 @@ export function sanitizeProfile(raw: unknown): Profile | null {
     website: typeof r.website === "string" ? r.website.slice(0, 100) : undefined,
     closed: !!r.closed,
     origin: r.origin === "domain" || r.origin === "manuell" ? r.origin : "register",
+    check: sanitizeCheck(r.check),
     createdAt: typeof r.createdAt === "string" ? r.createdAt : now(),
     updatedAt: now(),
   };
+}
+
+function sanitizeCheck(c: unknown): Profile["check"] {
+  if (!c || typeof c !== "object") return undefined;
+  const x = c as NonNullable<Profile["check"]>;
+  if (!Number.isInteger(x.gen) || x.gen < 0 || typeof x.vals !== "string") return undefined;
+  return {
+    gen: Math.min(x.gen, 10_000), vals: x.vals.slice(0, 8000),
+    prevVals: typeof x.prevVals === "string" ? x.prevVals.slice(0, 8000) : undefined,
+    at: typeof x.at === "string" ? x.at.slice(0, 40) : now(),
+  };
+}
+
+/** Ausgangsstand der Prüfung setzen, falls das Profil noch keinen hat. */
+export function ensureCheck(p: Profile): Profile {
+  if (!p.check) p.check = { gen: 0, vals: profileValues(p), at: now() };
+  return p;
 }
 
 /* Vorprofil aus der Mail-Domain eines Newsletter-Abonnenten. */

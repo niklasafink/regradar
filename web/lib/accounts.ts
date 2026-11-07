@@ -7,7 +7,7 @@
 import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { redis } from "./subscribers";
-import type { DomainProfile, Profile } from "./relevance/profile";
+import { ensureCheck, profileValues, type DomainProfile, type Profile } from "./relevance/profile";
 
 export interface Account {
   email: string;
@@ -55,6 +55,15 @@ export async function ensureAccount(email: string): Promise<Account> {
 export async function saveProfile(email: string, p: Profile, makeActive = true): Promise<Account> {
   const a = await ensureAccount(email);
   const i = a.profiles.findIndex((x) => x.id === p.id);
+  // Prüfstand nie vom Client übernehmen: bestehende Profile behalten ihren,
+  // neue starten mit dem aktuellen Stand (Ergebnisse laufen einmal).
+  if (i >= 0) {
+    const old = a.profiles[i];
+    p.check = old.check ?? { gen: 0, vals: profileValues(old), at: old.updatedAt };
+  } else {
+    p.check = undefined;
+    ensureCheck(p);
+  }
   if (i >= 0) a.profiles[i] = p;
   else {
     if (a.profiles.length >= MAX_PROFILES) throw new Error(`Höchstens ${MAX_PROFILES} Profile je Konto`);
@@ -64,6 +73,15 @@ export async function saveProfile(email: string, p: Profile, makeActive = true):
   if (!a.primaryId || !a.profiles.some((x) => x.id === a.primaryId)) a.primaryId = a.profiles[0].id;
   await putAccount(a);
   return a;
+}
+
+/** Nur den Prüfstand eines Profils setzen (saveProfile übernimmt ihn nie vom Client). */
+export async function putProfileCheck(email: string, id: string, check: NonNullable<Profile["check"]>): Promise<void> {
+  const a = await getAccount(email);
+  const p = a?.profiles.find((x) => x.id === id);
+  if (!a || !p) return;
+  p.check = check;
+  await putAccount(a);
 }
 
 export async function deleteProfile(email: string, id: string): Promise<Account | null> {

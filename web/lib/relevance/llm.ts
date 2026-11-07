@@ -1,6 +1,6 @@
-// OpenRouter-Client für Abgleich und Recherche mit harter Wochenbremse.
+// OpenRouter-Client für Abgleich und Recherche mit harter Monatsbremse.
 // Kosten kommen aus usage.cost der Antwort (auch bei Routern mit
-// dynamischem Preis) und laufen in Redis pro ISO-Woche auf. Ist das Budget
+// dynamischem Preis) und laufen in Redis pro Kalendermonat auf. Ist das Budget
 // erreicht, liefern Aufrufe einen BudgetError; der Abgleich fällt dann auf
 // den Regel-Vorfilter bzw. „unsicher“ zurück. Server-only.
 
@@ -8,9 +8,14 @@ import { redis } from "../subscribers";
 
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
-/** Wochenbudget der Website (Abgleich + Recherche) in USD. Die Anforderungs-
-    analyse im Scraper hat ein eigenes Budget (scope.py); zusammen ≈ 3 €/Woche. */
-export const WEEKLY_BUDGET_USD = Number(process.env.RELEVANCE_WEEKLY_BUDGET_USD ?? "2.5");
+/** Monatsbudget der Website für alle Einschlägigkeits-Läufe (Abgleich,
+    Schiedsrichter, Profil-Recherche): 20 € (Nutzerentscheidung 07.11.2026).
+    OpenRouter rechnet in USD; der Kurs ist bewusst niedrig angesetzt, damit
+    das Limit in Euro sicher hält. Die Anforderungsanalyse im Scraper hat ein
+    eigenes Budget (scope.py). */
+export const MONTHLY_BUDGET_EUR = Number(process.env.RELEVANCE_MONTHLY_BUDGET_EUR ?? "20");
+const EUR_USD = Number(process.env.RELEVANCE_EUR_USD ?? "1.05");
+export const MONTHLY_BUDGET_USD = MONTHLY_BUDGET_EUR * EUR_USD;
 
 /* Modellwahl nach Vergleichstest vom 07.11.2026 (112 Paare aus Update und
    Profil, 7 Modelle): A + B zusammen 98 % Treffer, Schiedsrichter nur bei
@@ -23,7 +28,7 @@ export const MODELS = {
 };
 
 export class BudgetError extends Error {
-  constructor() { super("Wochenbudget für den Einschlägigkeits-Abgleich erreicht"); }
+  constructor() { super("Monatsbudget für den Einschlägigkeits-Abgleich erreicht"); }
 }
 
 export function isoWeek(d = new Date()): string {
@@ -35,9 +40,9 @@ export function isoWeek(d = new Date()): string {
   return `${y}-W${String(w).padStart(2, "0")}`;
 }
 
-const costKey = () => `relcost:${isoWeek()}`;
+const costKey = (d = new Date()) => `relcost:m:${d.toISOString().slice(0, 7)}`;
 
-export async function spentThisWeek(): Promise<number> {
+export async function spentThisMonth(): Promise<number> {
   try {
     return Number((await redis().get<number | string>(costKey())) ?? 0);
   } catch {
@@ -50,7 +55,7 @@ async function book(usd: number): Promise<void> {
   try {
     const k = costKey();
     await redis().incrbyfloat(k, usd);
-    await redis().expire(k, 60 * 60 * 24 * 60);
+    await redis().expire(k, 60 * 60 * 24 * 400);
   } catch { /* Buchung darf den Abgleich nicht blockieren */ }
 }
 
@@ -66,7 +71,7 @@ export async function chatJson<T>(opts: {
 }): Promise<ChatResult<T>> {
   const key = process.env.OPENROUTER_API_KEY?.trim();
   if (!key) throw new Error("OPENROUTER_API_KEY fehlt");
-  if ((await spentThisWeek()) >= WEEKLY_BUDGET_USD) throw new BudgetError();
+  if ((await spentThisMonth()) >= MONTHLY_BUDGET_USD) throw new BudgetError();
 
   const body: Record<string, unknown> = {
     model: opts.model,

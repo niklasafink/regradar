@@ -1,4 +1,5 @@
 import { currentVisitor, domainOf, getDomainProfile, primaryProfile } from "@/lib/accounts";
+import { profileChanged } from "@/lib/relevance/profile";
 
 /* Wer ist der Besucher? Für die Einschlägigkeits-Zeile oben auf jeder Seite. */
 export async function GET() {
@@ -10,7 +11,7 @@ export async function GET() {
         email,
         activeId: account.activeId ?? account.profiles[0]?.id ?? null,
         primaryId: primaryProfile(account)?.id ?? null,
-        profiles: account.profiles.map((p) => ({ id: p.id, name: p.name, origin: p.origin })),
+        profiles: account.profiles.map((p) => ({ id: p.id, name: p.name, origin: p.origin, stale: profileChanged(p) })),
         pre: null,
       }, { headers: { "Cache-Control": "no-store" } });
     }

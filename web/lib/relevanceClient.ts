@@ -12,10 +12,11 @@ export interface MatchResult {
   grund: string;
   teile?: string;
   frage?: { merkmal: string; frage: string };
+  weitere?: { merkmal: string; frage: string }[];
   art?: "pflicht" | "kuenftig" | "information" | "keine_institute";
   stufe: string;
 }
-export interface ProfileRef { id: string; name: string; origin: string }
+export interface ProfileRef { id: string; name: string; origin: string; stale?: boolean }
 export interface Me {
   loggedIn: boolean;
   email: string | null;
@@ -83,6 +84,41 @@ export function loadMe(): Promise<Me> {
       .catch(() => ({ loggedIn: false, email: null, profiles: [], activeId: null, pre: null }));
   }
   return mePromise;
+}
+
+/** Rückfrage beantworten: Antwort ins Profil (Konto oder Browser-Entwurf);
+    danach prüft der Server nur die Fälle neu, die an dieser Frage hingen. */
+export async function answerQuestion(me: Me, merkmal: string, value: boolean): Promise<void> {
+  const answers = { [merkmal]: value };
+  if (me.loggedIn) {
+    await fetch("/api/account/answer", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ answers }),
+    });
+    invalidate();
+    return;
+  }
+  const base = readDraft() ?? (me.pre as { profile?: unknown } | null)?.profile;
+  if (!base) return;
+  const res = await fetch("/api/relevance/answers", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ profile: base, answers }),
+  });
+  const json = (await res.json()) as { profile?: unknown };
+  if (json.profile) writeDraft(json.profile);
+}
+
+/** Aktives Profil seit der letzten Prüfung geändert? (nur Konten) */
+export function activeStale(me: Me | null): ProfileRef | null {
+  if (!me?.loggedIn) return null;
+  const p = me.profiles.find((x) => x.id === me.activeId) ?? me.profiles[0];
+  return p?.stale ? p : null;
+}
+
+/** „Neu prüfen“: neue Prüfgeneration für ein geändertes Profil. */
+export async function recheckProfile(id: string): Promise<void> {
+  await fetch("/api/account/profile", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "recheck", id }),
+  });
+  invalidate();
 }
 
 /** Hat der Besucher irgendein Profil (Konto, Entwurf, Domain-Vorprofil)? */

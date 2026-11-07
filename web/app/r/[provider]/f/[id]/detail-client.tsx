@@ -12,6 +12,7 @@ import {
 } from "@/lib/core";
 import { useStore } from "@/lib/store";
 import { RelevanceChip } from "@/components/relevance-chip";
+import { RelevanceStatus } from "@/components/relevance-status";
 import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClient";
 import { useState } from "react";
 import type { Framework, Provider, Topic, Txt, Update } from "@/lib/base";
@@ -119,9 +120,12 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
             , {f.jur}
           </p>
         </div>
-        <h1 className="font-heading mt-1.5 max-w-4xl text-balance text-2xl font-medium tracking-tight sm:text-3xl">
-          {tx(lang, f.n)}
-        </h1>
+        <div className="mt-1.5 flex items-start justify-between gap-4">
+          <h1 className="font-heading max-w-4xl text-balance text-2xl font-medium tracking-tight sm:text-3xl">
+            {tx(lang, f.n)}
+          </h1>
+          <RelevanceStatus target={`f:${f.id}`} className="mt-1" />
+        </div>
 
         {/* Kennzahlen als eine Zeile statt Kachelraster */}
         <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">

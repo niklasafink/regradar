@@ -1,3 +1,4 @@
+import { RelevanceStatus } from "@/components/relevance-status";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, permanentRedirect, redirect } from "next/navigation";
@@ -212,9 +213,12 @@ export default async function UpdatePage(
             )}
           </div>
 
-          <h1 className="font-heading mt-4 text-balance text-2xl font-medium tracking-tight sm:text-3xl">
-            {u.ti.de}
-          </h1>
+          <div className="mt-4 flex items-start justify-between gap-4">
+            <h1 className="font-heading text-balance text-2xl font-medium tracking-tight sm:text-3xl">
+              {u.ti.de}
+            </h1>
+            <RelevanceStatus target={`u:${slug}`} className="mt-1" />
+          </div>
 
           <p className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-500">
             <time dateTime={isoDate(u.d)} className="num">{u.d}</time>
