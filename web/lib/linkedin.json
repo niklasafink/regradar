@@ -89,6 +89,35 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-09": {
+   "window": [
+    "2026-11-06",
+    "2026-11-07",
+    "2026-11-08"
+   ],
+   "keys": [
+    "2026-7830-geographical-allocation-of-exposures-arising-from-synthetic-securitisa",
+    "2026-7945-consolidated-application-and-intragroup-transferability-of-the-permane",
+    "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends"
+   ],
+   "hook": "Die EBA verschiebt die Fristen für das aufsichtsrechtliche Meldewesen erneut, um Institute zu entlasten.",
+   "folge": "Die EBA verlängert die Umsetzungsfristen für neue Meldepflichten bis Dezember 2027, für bestimmte Bereiche sogar bis Dezember 2028. Institute erhalten damit mehr Zeit für die Anpassung ihrer Prozesse und Systeme.",
+   "cover": "EBA: Fristen für Meldewesen bis 2028 verlängert",
+   "zeilen": [
+    "EBA: Geografische Zuordnung von synthetischen Verbriefungen bleibt beim Schuldner",
+    "EBA: CRR-Ausnahme für Versichererbeteiligungen ist auf jeder Ebene separat zu prüfen"
+   ],
+   "frage": "Welche Erleichterung durch die verlängerten EBA-Fristen ist für Ihr Institut am wichtigsten?",
+   "top": "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends",
+   "kern": {
+    "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends": "Die EBA verlängert die Umsetzungsfristen für das vereinfachte aufsichtsrechtliche Meldewesen bis Dezember 2027, für Liquidität, Vermögensbelastung, Benchmarking und ESG-Meldungen sogar bis Dezember 2028.",
+    "2026-7830-geographical-allocation-of-exposures-arising-from-synthetic-securitisa": "Die geografische Zuordnung von Risikopositionen aus synthetischen Verbriefungen für den antizyklischen Kapitalpuffer ist stets anhand der Schuldner der zugrunde liegenden Risikopositionen zu bestimmen.",
+    "2026-7945-consolidated-application-and-intragroup-transferability-of-the-permane": "Die CRR-Ausnahme von der Eigenmittelabzugspflicht für Beteiligungen an Versicherern muss auf Einzel- und Konsolidierungsebene separat beurteilt werden."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
