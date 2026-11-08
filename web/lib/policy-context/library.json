@@ -293,6 +293,74 @@
         { "fw": "bgb", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["verbraucherkredit", "wohnimmobilienkredit", "privatkunden"], "l": { "de": "vergibt Verbraucherkredite", "en": "grants consumer loans" } }, "norms": ["§§ 491–505e"], "why": { "de": "Verbraucherdarlehen, Kreditwürdigkeitsprüfung", "en": "Consumer credit, creditworthiness" } },
         { "fw": "marisk", "p": ["fdi"], "lv": "optional", "when": { "any": ["lic_leasing", "lic_factoring"], "l": { "de": "Leasing oder Factoring", "en": "leasing or factoring" } }, "norms": ["BTO 1", "BTR 1"], "why": { "de": "Anwendung auf Leasing- und Factoringgeschäft", "en": "Application to leasing and factoring" } }
       ]
+    },
+    {
+      "id": "risikomanagement",
+      "l": { "de": "Rahmenrichtlinie Risikomanagement", "en": "Risk management framework policy" },
+      "syn": ["risikomanagement", "risk management", "risikotragfähigkeit", "risk appetite", "icaap"],
+      "focus": ["Risikomanagement", "Risikotragfähigkeit", "Risikostrategie", "Stresstest", "Risikoinventur", "Limit", "Risikobericht"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 2", "AT 3", "AT 4.1", "AT 4.2", "AT 4.3", "AT 4.4.1", "BT 1", "BT 2", "BTR"], "why": { "de": "Risikoinventur, Strategien, Risikotragfähigkeit, Stresstests, Risikocontrolling-Funktion, internes Kontrollsystem, Risikoberichte", "en": "Risk inventory, strategies, risk-bearing capacity, stress tests, risk control function, internal control system, risk reports" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["§ 25a Abs. 1", "§ 25c Abs. 4a"], "why": { "de": "Ordnungsgemäße Geschäftsorganisation, Verantwortung der Geschäftsleitung für das Risikomanagement", "en": "Proper business organisation, management responsibility for risk management" } },
+        { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 435"], "why": { "de": "Offenlegung der Risikomanagementziele und -politik", "en": "Disclosure of risk management objectives and policies" } },
+        { "fw": "ebagov", "p": ["crr_bank"], "lv": "auslegung", "norms": ["Titel V"], "why": { "de": "Rahmen für Risikomanagement und interne Kontrollfunktionen", "en": "Risk management framework and internal control functions" } }
+      ]
+    },
+    {
+      "id": "organisation",
+      "l": { "de": "Organisationsrichtlinie", "en": "Organisational policy" },
+      "syn": ["organisationsrichtlinie", "organisational policy", "schriftlich fixierte ordnung", "organisationshandbuch"],
+      "focus": ["Organisation", "Organisationsrichtlinien", "Dokumentation", "Personal", "Änderungen", "Zuständigkeiten"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 1", "AT 5", "AT 6", "AT 7.1", "AT 8.2"], "why": { "de": "Organisationsrichtlinien, Dokumentation und Aufbewahrung, Personalausstattung, Auswirkungsanalyse bei Änderungen", "en": "Organisational guidelines, documentation and retention, staffing, impact analysis of changes" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["§ 25a Abs. 1", "§ 25a Abs. 1 S. 6 Nr. 2"], "why": { "de": "Ordnungsgemäße Geschäftsorganisation, vollständige Dokumentation der Geschäftstätigkeit", "en": "Proper business organisation, complete documentation of business activities" } },
+        { "fw": "ebagov", "p": ["crr_bank"], "lv": "auslegung", "norms": ["Titel III"], "why": { "de": "Organisatorischer Rahmen und Struktur", "en": "Organisational framework and structure" } }
+      ]
+    },
+    {
+      "id": "handel",
+      "l": { "de": "Richtlinie Handelsgeschäft und Marktpreisrisiken", "en": "Trading and market risk policy" },
+      "syn": ["handelsgeschäft", "handelsgeschaeft", "marktpreisrisik", "market risk", "trading"],
+      "focus": ["Handel", "Handelsbuch", "Anlagebuch", "Marktpreisrisiko", "Zinsänderungsrisiko", "Kreditspreadrisiko", "Limit"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["BTO", "BTO 2", "BTR 2", "BTR 5"], "why": { "de": "Funktionstrennung, Abwicklung und Kontrolle im Handel, Limitsystem für Marktpreisrisiken, Kreditspreadrisiken im Anlagebuch", "en": "Segregation, settlement and control in trading, market risk limits, credit spread risk in the banking book" } },
+        { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 102–106"], "why": { "de": "Handelsbuch: Abgrenzung, Bewertung und Steuerung", "en": "Trading book: boundary, valuation and management" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["§ 25a Abs. 2"], "why": { "de": "Zinsänderungsrisiken im Anlagebuch", "en": "Interest rate risk in the banking book" } }
+      ]
+    },
+    {
+      "id": "liquiditaet",
+      "l": { "de": "Richtlinie Liquiditätsrisikomanagement", "en": "Liquidity risk management policy" },
+      "syn": ["liquidität", "liquiditaet", "liquidity", "refinanzierung", "funding"],
+      "focus": ["Liquidität", "Refinanzierung", "Liquiditätspuffer", "LCR", "NSFR", "Notfallplan Liquidität", "Liquiditätsübersicht"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["BTR 3"], "why": { "de": "Liquiditätsübersicht, Liquiditätspuffer, Stresstests, Notfallplan für Liquiditätsengpässe, Verrechnungssystem", "en": "Liquidity overview, buffers, stress tests, liquidity contingency plan, transfer pricing" } },
+        { "fw": "crr", "p": ["crr_bank"], "lv": "kern", "norms": ["Art. 412", "Art. 413", "Art. 415"], "why": { "de": "Liquiditätsdeckungsanforderung, strukturelle Liquidität, Meldungen", "en": "Liquidity coverage, stable funding, reporting" } },
+        { "fw": "kwg", "p": ["bank"], "lv": "kern", "norms": ["§ 11"], "why": { "de": "Liquidität von Instituten ohne CRR-Status", "en": "Liquidity of institutions without CRR status" } }
+      ]
+    },
+    {
+      "id": "oprisk",
+      "l": { "de": "Richtlinie Operationelle Risiken", "en": "Operational risk policy" },
+      "syn": ["operationelle risiken", "operationelles risiko", "operational risk", "oprisk", "schadensfall"],
+      "focus": ["Operationelles Risiko", "Schadensfalldatenbank", "Risikoinventur", "Rechtsrisiko", "IKT-Risiko", "Self-Assessment"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["BTR 4"], "why": { "de": "Identifizierung, Beurteilung, Schadensfälle, Berichterstattung über operationelle Risiken", "en": "Identification, assessment, loss events, reporting of operational risk" } },
+        { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 312–324"], "why": { "de": "Eigenmittel für operationelles Risiko, Verlustdaten", "en": "Own funds for operational risk, loss data" } },
+        { "fw": "dora", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["Art. 6", "Art. 17"], "why": { "de": "IKT-Risiken als Teil der operationellen Risiken, Behandlung IKT-bezogener Vorfälle", "en": "ICT risk as part of operational risk, ICT incident management" } }
+      ]
+    },
+    {
+      "id": "revision",
+      "l": { "de": "Revisionsordnung", "en": "Internal audit charter" },
+      "syn": ["revision", "internal audit", "audit charter", "prüfungsordnung"],
+      "focus": ["Interne Revision", "Prüfungsplan", "Prüfungsbericht", "Feststellungen", "Unabhängigkeit", "Nachschau"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 4.4.3"], "why": { "de": "Aufgaben, Unabhängigkeit, Informationsrecht und Prüfungsplanung der Internen Revision", "en": "Tasks, independence, right to information and audit planning of internal audit" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["§ 25a Abs. 1 S. 3 Nr. 3"], "why": { "de": "Internes Kontrollverfahren mit Interner Revision", "en": "Internal control procedures including internal audit" } },
+        { "fw": "dora", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["Art. 6 Abs. 6"], "why": { "de": "Regelmäßige Prüfung des IKT-Risikomanagementrahmens durch die Revision", "en": "Regular audit of the ICT risk management framework" } },
+        { "fw": "ebagov", "p": ["crr_bank"], "lv": "auslegung", "norms": ["Titel V"], "why": { "de": "Interne Revision als unabhängige Kontrollfunktion", "en": "Internal audit as independent control function" } }
+      ]
     }
   ]
 }
