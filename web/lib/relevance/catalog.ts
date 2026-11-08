@@ -26,7 +26,7 @@ export const CLOSED_GROUPS = new Set(
 
 /* Erlaubnistexte (Wortlaut wie im Unternehmensregister) → Merkmale.
    Reihenfolge egal, ein Text kann mehrere Merkmale setzen. */
-const LICENSE_RULES: [RegExp, string[]][] = [
+export const LICENSE_RULES: [RegExp, string[]][] = [
   [/^Einlagengesch[äa]ft|Entgegennahme von Einlagen/i, ["lic_einlagen"]],
   [/^Kreditgesch[äa]ft|Ausleihungen/i, ["lic_kredit"]],
   [/Pfandbriefgesch[äa]ft/i, ["lic_pfandbrief"]],
@@ -65,7 +65,7 @@ const LICENSE_RULES: [RegExp, string[]][] = [
 ];
 
 /* „Gattung“ des Registers → Institutsart. */
-const GATTUNG_RULES: [RegExp, string[]][] = [
+export const GATTUNG_RULES: [RegExp, string[]][] = [
   [/CRR-Kreditinstitut/i, ["ki_crr", "ki"]],
   [/^Kreditinstitut/i, ["ki"]],
   [/Bausparkasse/i, ["bausparkasse", "ki"]],

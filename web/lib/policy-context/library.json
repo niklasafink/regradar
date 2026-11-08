@@ -1,0 +1,298 @@
+{
+  "format": 1,
+  "updated": "2026-11-08",
+  "note": "Kontext-Layer für Policies: je Policy-Thema und Institutsprofil die Normen, die eine Richtlinie (keine Arbeitsanweisung) regelmäßig umsetzen muss. Kern gilt für jedes Institut des Profils; optional nur, wenn ein Merkmal des konkreten Instituts zutrifft (when). Merkmale wie in relevance/catalog.json.",
+  "profiles": [
+    { "id": "crr_bank", "l": { "de": "CRR-Kreditinstitut", "en": "CRR credit institution" }, "any": ["ki_crr"] },
+    { "id": "bank", "l": { "de": "Kreditinstitut ohne CRR-Status (Förderbank, Bausparkasse u. a.)", "en": "Credit institution without CRR status" }, "any": ["ki", "bausparkasse", "foerderbank"] },
+    { "id": "wpi", "l": { "de": "Wertpapierinstitut", "en": "Investment firm" }, "any": ["wpi", "wpi_gross", "wpi_mittel", "wpi_klein"] },
+    { "id": "kvg", "l": { "de": "Asset Manager (Kapitalverwaltungsgesellschaft)", "en": "Asset manager (management company)" }, "any": ["kvg_ogaw", "kvg_aif", "kvg_registriert"] },
+    { "id": "zi_egi", "l": { "de": "Zahlungs- oder E-Geld-Institut", "en": "Payment or e-money institution" }, "any": ["zi", "egi"] },
+    { "id": "versicherer", "l": { "de": "Versicherungsunternehmen", "en": "Insurance undertaking" }, "any": ["versicherer_leben", "versicherer_kranken", "versicherer_schaden", "rueckversicherer"] },
+    { "id": "casp", "l": { "de": "Kryptowerte-Dienstleister", "en": "Crypto-asset service provider" }, "any": ["casp", "krypto_emittent"] },
+    { "id": "fdi", "l": { "de": "Finanzdienstleistungsinstitut (auch Leasing, Factoring)", "en": "Financial services institution (incl. leasing, factoring)" }, "any": ["fdi", "leasing_factoring"] }
+  ],
+  "frameworks": {
+    "dsgvo": { "n": "DSGVO", "ref": "VO (EU) 2016/679", "rr": "dsgvo", "conformis": "dsgvo" },
+    "bdsg": { "n": "BDSG", "ref": "Bundesdatenschutzgesetz", "rr": "dsgvo", "conformis": "bdsg" },
+    "tdddg": { "n": "TDDDG", "ref": "Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz", "rr": null, "conformis": null },
+    "aiact": { "n": "KI-Verordnung", "ref": "VO (EU) 2024/1689", "rr": "aiact", "conformis": null },
+    "kwg": { "n": "KWG", "ref": "Kreditwesengesetz", "rr": null, "conformis": "kwg" },
+    "crr": { "n": "CRR", "ref": "VO (EU) Nr. 575/2013", "rr": "crr3", "conformis": "crr" },
+    "marisk": { "n": "MaRisk", "ref": "BaFin-Rundschreiben (BA)", "rr": "marisk", "conformis": "marisk" },
+    "wpimarisk": { "n": "WpI-MaRisk", "ref": "BaFin-Rundschreiben", "rr": "wpimarisk", "conformis": "wpi-marisk" },
+    "kamarisk": { "n": "KAMaRisk", "ref": "BaFin-Rundschreiben 01/2017 (WA)", "rr": null, "conformis": "kamarisk" },
+    "zagmarisk": { "n": "ZAG-MaRisk", "ref": "BaFin-Rundschreiben 07/2024 (BA)", "rr": "zagmarisk", "conformis": null },
+    "mago": { "n": "MaGo", "ref": "BaFin-Rundschreiben 09/2025 (VA)", "rr": "mago", "conformis": null },
+    "vag": { "n": "VAG", "ref": "Versicherungsaufsichtsgesetz", "rr": "solvency", "conformis": null },
+    "vvg": { "n": "VVG", "ref": "Versicherungsvertragsgesetz", "rr": null, "conformis": null },
+    "wpig": { "n": "WpIG", "ref": "Wertpapierinstitutsgesetz", "rr": "ifr", "conformis": null },
+    "wphg": { "n": "WpHG und DelVO (EU) 2017/565", "ref": "WpHG, DelVO (EU) 2017/565", "rr": "mifid", "conformis": null },
+    "macomp": { "n": "MaComp", "ref": "BaFin-Rundschreiben 05/2018 (WA)", "rr": "macomp", "conformis": null },
+    "kagb": { "n": "KAGB", "ref": "Kapitalanlagegesetzbuch", "rr": "aifmd2", "conformis": null },
+    "aifmdvo": { "n": "AIFM-DVO", "ref": "DelVO (EU) Nr. 231/2013", "rr": "aifmd2", "conformis": null },
+    "zag": { "n": "ZAG", "ref": "Zahlungsdiensteaufsichtsgesetz", "rr": "zag", "conformis": null },
+    "mica": { "n": "MiCA", "ref": "VO (EU) 2023/1114", "rr": "mica", "conformis": "mica" },
+    "tfr": { "n": "Geldtransfer-Verordnung", "ref": "VO (EU) 2023/1113", "rr": "tfr", "conformis": null },
+    "dora": { "n": "DORA", "ref": "VO (EU) 2022/2554", "rr": "dora", "conformis": null },
+    "dorarmf": { "n": "RTS IKT-Risikomanagement", "ref": "DelVO (EU) 2024/1774", "rr": "dorarmf", "conformis": "dora-rts-rm" },
+    "dorathirdparty": { "n": "RTS IKT-Drittparteien und Informationsregister", "ref": "DelVO (EU) 2024/1773, DVO (EU) 2024/2956", "rr": "dorathirdparty", "conformis": null },
+    "nis2": { "n": "NIS-2 / BSIG", "ref": "RL (EU) 2022/2555, BSIG", "rr": "nis2", "conformis": null },
+    "c5": { "n": "BSI C5", "ref": "BSI Cloud Computing Compliance Criteria Catalogue", "rr": null, "conformis": "bsi-c5-2026" },
+    "ebaoutsourcing": { "n": "EBA-Leitlinien Auslagerung", "ref": "EBA/GL/2019/02", "rr": "outsourcing", "conformis": null },
+    "gwg": { "n": "GwG", "ref": "Geldwäschegesetz", "rr": "gwg", "conformis": "gwg" },
+    "amlr": { "n": "EU-Geldwäscheverordnung (AMLR)", "ref": "VO (EU) 2024/1624", "rr": "amla", "conformis": "eu-aml" },
+    "ebaamlrisk": { "n": "EBA-Leitlinien Risikofaktoren", "ref": "EBA/GL/2021/02", "rr": "ebaamlrisk", "conformis": null },
+    "ebaamlofficer": { "n": "EBA-Leitlinien Geldwäsche-Compliance-Funktion", "ref": "EBA/GL/2022/05", "rr": "ebaamlofficer", "conformis": null },
+    "sanctions": { "n": "Finanzsanktionen (EU-Sanktions-VOen, AWG, AWV)", "ref": "VO (EU) Nr. 269/2014, VO (EU) Nr. 833/2014, VO (EG) Nr. 2580/2001, AWG, AWV", "rr": "sanctions", "conformis": null },
+    "ebasanctions": { "n": "EBA-Leitlinien restriktive Maßnahmen", "ref": "EBA/GL/2024/14, EBA/GL/2024/15", "rr": "ebasanctions", "conformis": null },
+    "hinschg": { "n": "HinSchG", "ref": "Hinweisgeberschutzgesetz", "rr": "hinschg", "conformis": null },
+    "mar": { "n": "MAR", "ref": "VO (EU) Nr. 596/2014", "rr": "mar", "conformis": null },
+    "ebagov": { "n": "EBA-Leitlinien interne Governance", "ref": "EBA/GL/2021/05", "rr": "ebagov", "conformis": null },
+    "ivv": { "n": "InstitutsVergV", "ref": "Institutsvergütungsverordnung", "rr": "instvergv", "conformis": "ivv" },
+    "wpivergv": { "n": "WpI-VergV", "ref": "Wertpapierinstitutsvergütungsverordnung", "rr": "ebaifrem", "conformis": null },
+    "versvergv": { "n": "VersVergV", "ref": "Versicherungs-Vergütungsverordnung", "rr": null, "conformis": null },
+    "ebasalesrem": { "n": "EBA-Leitlinien Vergütung im Vertrieb", "ref": "EBA/GL/2016/06", "rr": "ebasalesrem", "conformis": null },
+    "complaints": { "n": "Beschwerdemanagement (BaFin-RS 06/2018, ESA-Leitlinien)", "ref": "BaFin-RS 06/2018, JC 2014/43, JC 2018/35", "rr": "complaints", "conformis": null },
+    "fitproper": { "n": "Fit & Proper (EBA/ESMA-Leitlinien, BaFin-Merkblätter)", "ref": "EBA/GL/2021/06, BaFin-Rundschreiben 11/2025", "rr": "fitproper", "conformis": null },
+    "ebapog": { "n": "EBA-Leitlinien Produktüberwachung", "ref": "EBA/GL/2015/18", "rr": "ebapog", "conformis": null },
+    "loanorig": { "n": "EBA-Leitlinien Kreditvergabe und -überwachung", "ref": "EBA/GL/2020/06", "rr": "loanorig", "conformis": null },
+    "bgb": { "n": "BGB Verbraucherdarlehen", "ref": "§§ 491 ff. BGB", "rr": "consumer", "conformis": null },
+    "idd": { "n": "IDD", "ref": "RL (EU) 2016/97, DelVO (EU) 2017/2359", "rr": "idd", "conformis": null }
+  },
+  "topics": [
+    {
+      "id": "datenschutz",
+      "l": { "de": "Datenschutzrichtlinie", "en": "Data protection policy" },
+      "syn": ["datenschutz", "privacy", "dsgvo", "gdpr", "data protection", "personenbezogen"],
+      "focus": ["Datenschutz", "personenbezogen", "Kunden", "Mitarbeiter", "Beschäftigte", "Auslagerung", "IT-Dienstleister", "Digitalisierung", "Online", "Filialen"],
+      "entries": [
+        { "fw": "dsgvo", "p": ["*"], "lv": "kern", "norms": ["Art. 5", "Art. 6", "Art. 9", "Art. 12–22", "Art. 24", "Art. 25", "Art. 28", "Art. 30", "Art. 32", "Art. 33", "Art. 34", "Art. 35", "Art. 37–39", "Art. 44–49"], "why": { "de": "Grundsätze, Rechtsgrundlagen, Betroffenenrechte, Rechenschaft, Auftragsverarbeitung, Datenpannen, DSB, Drittlandübermittlung", "en": "Principles, legal bases, data subject rights, accountability, processors, breaches, DPO, transfers" } },
+        { "fw": "bdsg", "p": ["*"], "lv": "kern", "when": { "any": ["sitz_de", "taetig_de"] }, "norms": ["§ 4", "§ 22", "§ 26", "§ 38"], "why": { "de": "Videoüberwachung, besondere Kategorien, Beschäftigtendaten, Pflicht zum Datenschutzbeauftragten", "en": "CCTV, special categories, employee data, DPO obligation" } },
+        { "fw": "gwg", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "casp", "fdi"], "lv": "teilweise", "norms": ["§ 8", "§ 11a"], "why": { "de": "Aufzeichnung und Aufbewahrung von KYC-Daten, Verarbeitung personenbezogener Daten nach GwG", "en": "Recording and retention of KYC data, processing under the AML Act" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["§ 24c", "§ 25h"], "why": { "de": "Kontenabrufverfahren und Datenverarbeitung zur Verhinderung strafbarer Handlungen", "en": "Account retrieval system and processing to prevent criminal acts" } },
+        { "fw": "zag", "p": ["zi_egi"], "lv": "kern", "norms": ["§ 59"], "why": { "de": "Datenschutz bei Zahlungsdiensten", "en": "Data protection for payment services" } },
+        { "fw": "zag", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["zahlungskonten", "lic_zahlungsdienste"], "l": { "de": "bietet Zahlungsdienste an", "en": "provides payment services" } }, "norms": ["§ 59"], "why": { "de": "Datenschutz bei Zahlungsdiensten", "en": "Data protection for payment services" } },
+        { "fw": "vvg", "p": ["versicherer"], "lv": "kern", "norms": ["§ 213"], "why": { "de": "Erhebung von Gesundheitsdaten bei Dritten", "en": "Collection of health data from third parties" } },
+        { "fw": "tfr", "p": ["casp"], "lv": "kern", "norms": ["Art. 15"], "why": { "de": "Verarbeitung der Daten zu Auftraggeber und Begünstigtem (Travel Rule)", "en": "Processing of originator and beneficiary data (travel rule)" } },
+        { "fw": "dsgvo", "p": ["crr_bank", "bank", "fdi", "zi_egi"], "lv": "optional", "when": { "any": ["lic_kredit", "verbraucherkredit", "wohnimmobilienkredit"], "l": { "de": "vergibt Kredite mit Scoring", "en": "grants loans using scoring" } }, "norms": ["Art. 22"], "why": { "de": "Automatisierte Einzelentscheidungen und Scoring bei der Kreditvergabe", "en": "Automated decisions and scoring in lending" } },
+        { "fw": "tdddg", "p": ["*"], "lv": "optional", "when": { "any": ["privatkunden"], "l": { "de": "Online-Angebot für Privatkunden", "en": "online offering for retail customers" } }, "norms": ["§ 25"], "why": { "de": "Einwilligung in Cookies und Zugriffe auf Endgeräte (Online-Banking, App, Website)", "en": "Consent to cookies and device access (online banking, app, website)" } },
+        { "fw": "aiact", "p": ["*"], "lv": "optional", "when": { "any": ["ki_systeme"], "l": { "de": "setzt KI-Systeme ein", "en": "uses AI systems" } }, "norms": ["Art. 4", "Art. 26"], "why": { "de": "KI-Kompetenz und Pflichten der Betreiber bei Verarbeitung personenbezogener Daten durch KI", "en": "AI literacy and deployer obligations when AI processes personal data" } },
+        { "fw": "dsgvo", "p": ["*"], "lv": "optional", "when": { "any": ["gruppe_uebergeordnet", "gruppe_nachgeordnet"], "l": { "de": "gehört zu einer Gruppe", "en": "belongs to a group" } }, "norms": ["Art. 26", "Art. 47"], "why": { "de": "Gemeinsame Verantwortung und verbindliche interne Datenschutzvorschriften in der Gruppe", "en": "Joint controllership and binding corporate rules in the group" } }
+      ]
+    },
+    {
+      "id": "informationssicherheit",
+      "l": { "de": "Informationssicherheitsrichtlinie", "en": "Information security policy" },
+      "syn": ["informationssicherheit", "it-sicherheit", "information security", "isms", "cyber", "ikt-sicherheit"],
+      "focus": ["Informationssicherheit", "IT", "Cyber", "Rechenzentrum", "Cloud", "Digitalisierung", "IT-Dienstleister", "Vorfälle"],
+      "entries": [
+        { "fw": "dora", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "versicherer", "casp"], "lv": "kern", "norms": ["Art. 5", "Art. 6", "Art. 8", "Art. 9", "Art. 10", "Art. 13", "Art. 17"], "why": { "de": "Leitungsverantwortung, IKT-Risikomanagementrahmen, Identifizierung, Schutz und Prävention, Erkennung, Lernen, Vorfallmanagement", "en": "Management body, ICT risk framework, identification, protection, detection, learning, incident management" } },
+        { "fw": "dorarmf", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "versicherer", "casp"], "lv": "kern", "norms": ["Art. 1–23"], "why": { "de": "Konkrete Inhalte der IKT-Sicherheitsleitlinien (Verschlüsselung, Zugang, Netzwerk, Änderungen, Physik)", "en": "Contents of ICT security policies (encryption, access, network, change, physical)" } },
+        { "fw": "dora", "p": ["wpi", "zi_egi", "kvg", "casp"], "lv": "optional", "when": { "any": ["snci", "wpi_klein"], "l": { "de": "kleines, nicht verflochtenes Institut", "en": "small, non-interconnected institution" } }, "norms": ["Art. 16"], "why": { "de": "Vereinfachter IKT-Risikomanagementrahmen", "en": "Simplified ICT risk management framework" } },
+        { "fw": "dorarmf", "p": ["wpi", "zi_egi", "kvg", "casp"], "lv": "optional", "when": { "any": ["snci", "wpi_klein"], "l": { "de": "kleines, nicht verflochtenes Institut", "en": "small, non-interconnected institution" } }, "norms": ["Art. 29–41"], "why": { "de": "Inhalte des vereinfachten Rahmens", "en": "Contents of the simplified framework" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "teilweise", "norms": ["§ 25a Abs. 1 S. 3 Nr. 4"], "why": { "de": "Angemessene technisch-organisatorische Ausstattung", "en": "Adequate technical and organisational resources" } },
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 7.2"], "why": { "de": "IT-Systeme, Schutzbedarf und Informationssicherheit", "en": "IT systems, protection needs and information security" } },
+        { "fw": "wpimarisk", "p": ["wpi"], "lv": "kern", "norms": ["technisch-organisatorische Ausstattung"], "why": { "de": "Risikomanagement des Wertpapierinstituts", "en": "Risk management of the investment firm" } },
+        { "fw": "kamarisk", "p": ["kvg"], "lv": "kern", "norms": ["technisch-organisatorische Ausstattung"], "why": { "de": "Risikomanagement der KVG", "en": "Risk management of the management company" } },
+        { "fw": "zagmarisk", "p": ["zi_egi"], "lv": "kern", "norms": ["IT-Systeme und Informationssicherheit"], "why": { "de": "Risikomanagement des Zahlungs- oder E-Geld-Instituts", "en": "Risk management of the payment or e-money institution" } },
+        { "fw": "mago", "p": ["versicherer"], "lv": "kern", "norms": ["Geschäftsorganisation, IT"], "why": { "de": "Geschäftsorganisation nach § 23 VAG", "en": "System of governance under section 23 VAG" } },
+        { "fw": "mica", "p": ["casp"], "lv": "kern", "norms": ["Art. 68 Abs. 7–8"], "why": { "de": "Sichere IKT-Systeme und Geschäftsfortführung", "en": "Secure ICT systems and business continuity" } },
+        { "fw": "dsgvo", "p": ["*"], "lv": "teilweise", "norms": ["Art. 25", "Art. 32", "Art. 33"], "why": { "de": "Technische und organisatorische Maßnahmen, Meldung von Datenpannen", "en": "Technical and organisational measures, breach notification" } },
+        { "fw": "c5", "p": ["*"], "lv": "auslegung", "when": { "any": ["auslagerung_wesentlich"], "l": { "de": "nutzt Cloud-Dienste oder wesentliche IT-Auslagerungen", "en": "uses cloud services or material IT outsourcing" } }, "norms": ["Kriterienkatalog"], "why": { "de": "Anerkannter Maßstab für Cloud-Sicherheit, nicht bindend", "en": "Recognised cloud security standard, not binding" } },
+        { "fw": "nis2", "p": ["*"], "lv": "optional", "when": { "any": ["kritis"], "l": { "de": "betreibt kritische Anlagen", "en": "operates critical facilities" } }, "norms": ["§ 30 BSIG"], "why": { "de": "Nur soweit DORA nicht als Spezialregel vorgeht", "en": "Only where DORA does not take precedence" } }
+      ]
+    },
+    {
+      "id": "auslagerung",
+      "l": { "de": "Auslagerungsrichtlinie", "en": "Outsourcing policy" },
+      "syn": ["auslagerung", "outsourcing", "drittpartei", "dienstleister", "third party", "fremdbezug"],
+      "focus": ["Auslagerung", "Dienstleister", "Rechenzentrum", "IT-Dienstleister", "Cloud", "Verbund", "Kooperation"],
+      "entries": [
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["§ 25b", "§ 24 Abs. 1 Nr. 19"], "why": { "de": "Auslagerung von Aktivitäten und Prozessen, Anzeige wesentlicher Auslagerungen", "en": "Outsourcing of activities and processes, notification of material outsourcing" } },
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 9"], "why": { "de": "Risikoanalyse, Vertrag, Steuerung, Auslagerungsmanagement und -register", "en": "Risk analysis, contract, management, outsourcing function and register" } },
+        { "fw": "ebaoutsourcing", "p": ["crr_bank", "bank", "wpi", "zi_egi"], "lv": "kern", "norms": ["Abschnitte 4, 11–14"], "why": { "de": "Auslagerungsleitlinie, Register, Prüfung vor Auslagerung, Vertrag, Überwachung, Exit", "en": "Outsourcing policy, register, pre-outsourcing analysis, contract, monitoring, exit" } },
+        { "fw": "dora", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "versicherer", "casp"], "lv": "teilweise", "norms": ["Art. 28", "Art. 29", "Art. 30"], "why": { "de": "IKT-Drittparteienrisiko: Strategie, Informationsregister, Konzentrationsrisiko, Vertragsinhalte", "en": "ICT third-party risk: strategy, register, concentration risk, contract terms" } },
+        { "fw": "dorathirdparty", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "versicherer", "casp"], "lv": "teilweise", "norms": ["Art. 1–11 DelVO 2024/1773", "DVO 2024/2956"], "why": { "de": "Leitlinie für IKT-Dienstleistungen kritischer oder wichtiger Funktionen, Vorlagen des Registers", "en": "Policy on ICT services for critical or important functions, register templates" } },
+        { "fw": "wpig", "p": ["wpi"], "lv": "kern", "norms": ["§ 40"], "why": { "de": "Auslagerung beim Wertpapierinstitut", "en": "Outsourcing by investment firms" } },
+        { "fw": "wpimarisk", "p": ["wpi"], "lv": "kern", "norms": ["Auslagerung"], "why": { "de": "Anforderungen an Auslagerungen", "en": "Outsourcing requirements" } },
+        { "fw": "kagb", "p": ["kvg"], "lv": "kern", "norms": ["§ 36"], "why": { "de": "Auslagerung durch die KVG", "en": "Delegation by the management company" } },
+        { "fw": "aifmdvo", "p": ["kvg"], "lv": "kern", "when": { "any": ["kvg_aif"] }, "norms": ["Art. 75–82"], "why": { "de": "Übertragung von Aufgaben durch AIFM", "en": "Delegation by AIFMs" } },
+        { "fw": "kamarisk", "p": ["kvg"], "lv": "kern", "norms": ["Ziff. 10"], "why": { "de": "Auslagerung", "en": "Outsourcing" } },
+        { "fw": "zag", "p": ["zi_egi"], "lv": "kern", "norms": ["§ 26"], "why": { "de": "Auslagerung beim Zahlungs- oder E-Geld-Institut", "en": "Outsourcing by payment or e-money institutions" } },
+        { "fw": "vag", "p": ["versicherer"], "lv": "kern", "norms": ["§ 32", "§ 47 Nr. 8"], "why": { "de": "Ausgliederung und Anzeige", "en": "Outsourcing and notification" } },
+        { "fw": "mago", "p": ["versicherer"], "lv": "kern", "norms": ["Ausgliederung"], "why": { "de": "Ausgliederungsleitlinie", "en": "Outsourcing policy" } },
+        { "fw": "mica", "p": ["casp"], "lv": "kern", "norms": ["Art. 73"], "why": { "de": "Auslagerung durch Kryptowerte-Dienstleister", "en": "Outsourcing by CASPs" } },
+        { "fw": "dsgvo", "p": ["*"], "lv": "teilweise", "norms": ["Art. 28", "Art. 44–49"], "why": { "de": "Auftragsverarbeitung und Drittlandübermittlung bei Dienstleistern", "en": "Processors and third-country transfers" } },
+        { "fw": "c5", "p": ["*"], "lv": "optional", "when": { "any": ["auslagerung_wesentlich"], "l": { "de": "nutzt Cloud-Dienste", "en": "uses cloud services" } }, "norms": ["Kriterienkatalog"], "why": { "de": "Maßstab für die Prüfung von Cloud-Anbietern, nicht bindend", "en": "Benchmark for assessing cloud providers, not binding" } }
+      ]
+    },
+    {
+      "id": "gwg",
+      "l": { "de": "Geldwäsche-Richtlinie", "en": "AML policy" },
+      "syn": ["geldwäsche", "gwg", "aml", "anti-money", "terrorismusfinanzierung", "kyc", "sorgfaltspflichten"],
+      "focus": ["Geldwäsche", "Kunden", "Auslandsgeschäft", "Korrespondenz", "Bargeld", "Krypto", "Risikoanalyse", "Zahlungsverkehr"],
+      "entries": [
+        { "fw": "gwg", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "casp", "fdi"], "lv": "kern", "norms": ["§ 4", "§ 5", "§ 6", "§ 7", "§ 8", "§ 10–17", "§ 43"], "why": { "de": "Risikomanagement, Risikoanalyse, Sicherungsmaßnahmen, Geldwäschebeauftragter, Sorgfaltspflichten, Verdachtsmeldung", "en": "Risk management, risk assessment, safeguards, MLRO, due diligence, suspicious activity reports" } },
+        { "fw": "gwg", "p": ["versicherer"], "lv": "optional", "when": { "any": ["versicherer_leben", "lic_vers_leben"], "l": { "de": "betreibt Lebensversicherung", "en": "writes life insurance" } }, "norms": ["§ 2 Abs. 1 Nr. 7", "§ 4–17", "§ 43"], "why": { "de": "Verpflichteter nur mit Lebensversicherungsgeschäft", "en": "Obliged entity only for life business" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["§ 25h", "§ 25i", "§ 25k"], "why": { "de": "Interne Sicherungsmaßnahmen, Datenverarbeitungssysteme, vereinfachte und verstärkte Pflichten", "en": "Internal safeguards, monitoring systems, simplified and enhanced duties" } },
+        { "fw": "zag", "p": ["zi_egi"], "lv": "kern", "norms": ["§ 27"], "why": { "de": "Organisationspflichten zur Geldwäscheprävention", "en": "Organisational AML duties" } },
+        { "fw": "amlr", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "casp", "fdi"], "lv": "teilweise", "norms": ["Art. 7–11", "Art. 19–28", "Art. 69"], "why": { "de": "Gilt ab 10.07.2027 unmittelbar; Richtlinie jetzt vorbereiten", "en": "Applies directly from 10 July 2027; prepare the policy now" } },
+        { "fw": "ebaamlrisk", "p": ["crr_bank", "bank", "wpi", "zi_egi", "casp", "fdi"], "lv": "auslegung", "norms": ["Titel I, II"], "why": { "de": "Risikofaktoren und Sorgfaltspflichten, als Auslegung", "en": "Risk factors and due diligence, as interpretation" } },
+        { "fw": "ebaamlofficer", "p": ["crr_bank", "bank", "wpi", "zi_egi", "casp"], "lv": "auslegung", "norms": ["Abschnitt 4"], "why": { "de": "Rolle des Geldwäschebeauftragten", "en": "Role of the AML compliance officer" } },
+        { "fw": "tfr", "p": ["casp"], "lv": "kern", "norms": ["Art. 14–23"], "why": { "de": "Travel Rule für Kryptowertetransfers", "en": "Travel rule for crypto-asset transfers" } },
+        { "fw": "tfr", "p": ["crr_bank", "bank", "zi_egi"], "lv": "optional", "when": { "any": ["zahlungskonten", "lic_zahlungsdienste", "krypto_aktiv"], "l": { "de": "führt Geldtransfers aus", "en": "executes fund transfers" } }, "norms": ["Art. 4–13"], "why": { "de": "Angaben bei Geldtransfers", "en": "Information accompanying transfers of funds" } }
+      ]
+    },
+    {
+      "id": "sanktionen",
+      "l": { "de": "Richtlinie Finanzsanktionen und Embargos", "en": "Sanctions and embargo policy" },
+      "syn": ["sanktion", "embargo", "sanctions", "finanzsanktion"],
+      "focus": ["Sanktionen", "Auslandsgeschäft", "Zahlungsverkehr", "Russland", "Handelsfinanzierung"],
+      "entries": [
+        { "fw": "sanctions", "p": ["*"], "lv": "kern", "norms": ["Art. 2 VO 269/2014", "Art. 5 ff. VO 833/2014", "Art. 2 VO 2580/2001", "§§ 17, 18 AWG", "§ 23a AWV"], "why": { "de": "Bereitstellungs- und Verfügungsverbote, Meldepflichten", "en": "Asset freeze, prohibitions, reporting duties" } },
+        { "fw": "ebasanctions", "p": ["crr_bank", "bank", "wpi", "zi_egi", "casp", "fdi"], "lv": "kern", "norms": ["EBA/GL/2024/14", "EBA/GL/2024/15"], "why": { "de": "Governance und Verfahren zur Umsetzung restriktiver Maßnahmen", "en": "Governance and procedures for restrictive measures" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "teilweise", "norms": ["§ 25h"], "why": { "de": "Datenverarbeitungssysteme zur Überwachung", "en": "Monitoring systems" } },
+        { "fw": "tfr", "p": ["casp", "zi_egi"], "lv": "teilweise", "norms": ["Art. 23"], "why": { "de": "Restriktive Maßnahmen bei Transfers", "en": "Restrictive measures in transfers" } }
+      ]
+    },
+    {
+      "id": "hinweisgeber",
+      "l": { "de": "Hinweisgeberrichtlinie", "en": "Whistleblowing policy" },
+      "syn": ["hinweisgeber", "whistleblow", "hinschg", "meldestelle"],
+      "focus": ["Hinweisgeber", "Mitarbeiter", "Beschäftigte", "Compliance", "Verhaltenskodex"],
+      "entries": [
+        { "fw": "hinschg", "p": ["*"], "lv": "kern", "norms": ["§ 12–18", "§ 35–37"], "why": { "de": "Interne Meldestelle, Verfahren, Vertraulichkeit, Repressalienverbot", "en": "Internal reporting channel, procedure, confidentiality, no retaliation" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["§ 25a Abs. 1 S. 6 Nr. 3"], "why": { "de": "Prozess für Hinweise auf Verstöße", "en": "Process for reporting breaches" } },
+        { "fw": "gwg", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "casp", "fdi"], "lv": "teilweise", "norms": ["§ 6 Abs. 5"], "why": { "de": "Hinweisgebersystem für Verstöße gegen das GwG", "en": "Reporting system for AML breaches" } },
+        { "fw": "vag", "p": ["versicherer"], "lv": "teilweise", "norms": ["§ 23 Abs. 6"], "why": { "de": "Meldung von Verstößen", "en": "Reporting of breaches" } },
+        { "fw": "mar", "p": ["crr_bank", "bank", "wpi"], "lv": "optional", "when": { "any": ["lic_eigenhandel", "lic_finanzkommission", "lic_anlagevermittlung", "kapitalmarktorientiert"], "l": { "de": "erbringt Wertpapiergeschäfte oder ist kapitalmarktorientiert", "en": "conducts securities business or is listed" } }, "norms": ["Art. 32"], "why": { "de": "Meldung von Marktmissbrauch", "en": "Reporting of market abuse" } },
+        { "fw": "dsgvo", "p": ["*"], "lv": "teilweise", "norms": ["Art. 6", "Art. 14", "Art. 23"], "why": { "de": "Verarbeitung der Daten von Hinweisgebern und Betroffenen", "en": "Processing data of reporters and persons concerned" } }
+      ]
+    },
+    {
+      "id": "interessenkonflikte",
+      "l": { "de": "Richtlinie zu Interessenkonflikten", "en": "Conflicts of interest policy" },
+      "syn": ["interessenkonflikt", "conflict of interest", "mitarbeitergeschäfte", "zuwendungen"],
+      "focus": ["Interessenkonflikt", "Organkredite", "Beteiligungen", "Vertrieb", "Wertpapier", "Mandate"],
+      "entries": [
+        { "fw": "ebagov", "p": ["crr_bank", "bank", "wpi"], "lv": "kern", "norms": ["Abschnitte 11, 12"], "why": { "de": "Interessenkonflikte des Instituts und der Mitarbeiter", "en": "Institutional and staff conflicts of interest" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["§ 25a Abs. 1", "§ 15", "§ 25c Abs. 2"], "why": { "de": "Geschäftsorganisation, Organkredite, Mandate der Geschäftsleiter", "en": "Organisation, loans to insiders, directorships" } },
+        { "fw": "wphg", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["lic_anlageberatung", "lic_finanzkommission", "lic_depot", "lic_portfolioverwaltung", "lic_anlagevermittlung"], "l": { "de": "erbringt Wertpapierdienstleistungen", "en": "provides investment services" } }, "norms": ["§ 63 Abs. 2", "§ 80 Abs. 1 S. 2 Nr. 2", "Art. 33–35 DelVO", "Art. 29 DelVO"], "why": { "de": "Interessenkonflikte und Mitarbeitergeschäfte im Wertpapiergeschäft", "en": "Conflicts and personal transactions in investment services" } },
+        { "fw": "wphg", "p": ["wpi"], "lv": "kern", "norms": ["§ 63 Abs. 2", "§ 80 Abs. 1 S. 2 Nr. 2", "Art. 33–35 DelVO", "Art. 29 DelVO"], "why": { "de": "Interessenkonflikte und Mitarbeitergeschäfte", "en": "Conflicts and personal transactions" } },
+        { "fw": "kagb", "p": ["kvg"], "lv": "kern", "norms": ["§ 27"], "why": { "de": "Interessenkonflikte der KVG", "en": "Conflicts of the management company" } },
+        { "fw": "aifmdvo", "p": ["kvg"], "lv": "kern", "when": { "any": ["kvg_aif"] }, "norms": ["Art. 30–37"], "why": { "de": "Erkennung und Steuerung von Interessenkonflikten", "en": "Identification and management of conflicts" } },
+        { "fw": "idd", "p": ["versicherer"], "lv": "optional", "when": { "any": ["versicherungsvertrieb", "lic_vers_leben"], "l": { "de": "vertreibt Versicherungsanlageprodukte", "en": "distributes insurance-based investment products" } }, "norms": ["Art. 27, 28 IDD", "Art. 3–8 DelVO 2017/2359"], "why": { "de": "Interessenkonflikte im Versicherungsvertrieb", "en": "Conflicts in insurance distribution" } },
+        { "fw": "mica", "p": ["casp"], "lv": "kern", "norms": ["Art. 72"], "why": { "de": "Interessenkonflikte bei Kryptowerte-Dienstleistungen", "en": "Conflicts in crypto-asset services" } }
+      ]
+    },
+    {
+      "id": "verguetung",
+      "l": { "de": "Vergütungsrichtlinie", "en": "Remuneration policy" },
+      "syn": ["vergütung", "remuneration", "bonus", "variable vergütung"],
+      "focus": ["Vergütung", "Mitarbeiter", "Bonus", "Personalaufwand", "Risikoträger"],
+      "entries": [
+        { "fw": "ivv", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["§ 3–12", "§ 14–16"], "why": { "de": "Vergütungsstrategie, Vergütungssysteme, Kontrolleinheiten, Offenlegung", "en": "Remuneration strategy, systems, control units, disclosure" } },
+        { "fw": "ivv", "p": ["crr_bank"], "lv": "optional", "when": { "any": ["bedeutend_ivv", "bs_ab_15mrd"], "l": { "de": "bedeutendes Institut nach § 1 Abs. 3c KWG", "en": "significant institution under section 1 (3c) KWG" } }, "norms": ["§ 18–22", "§ 25d Abs. 12 KWG"], "why": { "de": "Risikoträger, Zurückbehaltung, Malus und Clawback, Vergütungsbeauftragter, Vergütungskontrollausschuss", "en": "Risk takers, deferral, malus and clawback, remuneration officer and committee" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "teilweise", "norms": ["§ 25a Abs. 1 S. 3 Nr. 6", "§ 25a Abs. 5"], "why": { "de": "Angemessene Vergütungssysteme, Begrenzung der variablen Vergütung", "en": "Adequate remuneration systems, bonus cap" } },
+        { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 450"], "why": { "de": "Offenlegung der Vergütungspolitik", "en": "Disclosure of remuneration policy" } },
+        { "fw": "ebasalesrem", "p": ["crr_bank", "bank", "zi_egi"], "lv": "optional", "when": { "any": ["privatkunden"], "l": { "de": "Vertrieb an Privatkunden", "en": "retail sales" } }, "norms": ["Leitlinien 1–5"], "why": { "de": "Vergütung der Vertriebsmitarbeiter", "en": "Remuneration of sales staff" } },
+        { "fw": "wpivergv", "p": ["wpi"], "lv": "kern", "norms": ["gesamte Verordnung", "§ 46 WpIG"], "why": { "de": "Vergütung beim Wertpapierinstitut", "en": "Remuneration at investment firms" } },
+        { "fw": "kagb", "p": ["kvg"], "lv": "kern", "norms": ["§ 37"], "why": { "de": "Vergütungssysteme der KVG", "en": "Remuneration systems of the management company" } },
+        { "fw": "versvergv", "p": ["versicherer"], "lv": "kern", "norms": ["gesamte Verordnung", "§ 25 VAG"], "why": { "de": "Vergütungssysteme im Versicherungsunternehmen", "en": "Remuneration systems in insurance" } },
+        { "fw": "mica", "p": ["casp"], "lv": "teilweise", "norms": ["Art. 68"], "why": { "de": "Unternehmensführung", "en": "Governance" } }
+      ]
+    },
+    {
+      "id": "notfall",
+      "l": { "de": "Notfall- und Geschäftsfortführungsrichtlinie", "en": "Business continuity policy" },
+      "syn": ["notfall", "business continuity", "bcm", "geschäftsfortführung", "krisenmanagement", "wiederanlauf"],
+      "focus": ["Notfall", "Rechenzentrum", "IT-Dienstleister", "Standorte", "Filialen", "Krise"],
+      "entries": [
+        { "fw": "dora", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "versicherer", "casp"], "lv": "kern", "norms": ["Art. 11", "Art. 12", "Art. 14"], "why": { "de": "IKT-Geschäftsfortführungsleitlinie, Backup und Wiederherstellung, Krisenkommunikation", "en": "ICT business continuity policy, backup and recovery, crisis communication" } },
+        { "fw": "dorarmf", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "versicherer", "casp"], "lv": "kern", "norms": ["Art. 24–26"], "why": { "de": "Inhalte der Geschäftsfortführungsleitlinie und der Pläne, Tests", "en": "Contents of continuity policy and plans, testing" } },
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 7.3"], "why": { "de": "Notfallmanagement", "en": "Business continuity management" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "teilweise", "norms": ["§ 25a Abs. 1 S. 3 Nr. 5"], "why": { "de": "Notfallkonzept", "en": "Contingency plan" } },
+        { "fw": "kamarisk", "p": ["kvg"], "lv": "kern", "norms": ["Notfallkonzept"], "why": { "de": "Notfallkonzept der KVG", "en": "Contingency plan" } },
+        { "fw": "zagmarisk", "p": ["zi_egi"], "lv": "kern", "norms": ["Notfallmanagement"], "why": { "de": "Notfallmanagement", "en": "Business continuity" } },
+        { "fw": "mago", "p": ["versicherer"], "lv": "kern", "norms": ["Notfallmanagement", "§ 26 Abs. 9 VAG"], "why": { "de": "Notfallpläne", "en": "Contingency plans" } }
+      ]
+    },
+    {
+      "id": "compliance",
+      "l": { "de": "Compliance-Richtlinie", "en": "Compliance policy" },
+      "syn": ["compliance", "compliance-funktion", "regeltreue"],
+      "focus": ["Compliance", "Rechtsänderungen", "Wertpapier", "Kontrollen", "Verhaltenskodex"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 4.4.2"], "why": { "de": "Compliance-Funktion", "en": "Compliance function" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "teilweise", "norms": ["§ 25a Abs. 1 S. 3 Nr. 3 lit. c"], "why": { "de": "Compliance-Funktion als Teil des internen Kontrollsystems", "en": "Compliance function within internal control" } },
+        { "fw": "ebagov", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["Abschnitt 20"], "why": { "de": "Compliance-Funktion", "en": "Compliance function" } },
+        { "fw": "wphg", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["lic_anlageberatung", "lic_finanzkommission", "lic_depot", "lic_portfolioverwaltung", "lic_anlagevermittlung"], "l": { "de": "erbringt Wertpapierdienstleistungen", "en": "provides investment services" } }, "norms": ["§ 80 Abs. 1", "Art. 22 DelVO"], "why": { "de": "WpHG-Compliance", "en": "MiFID compliance" } },
+        { "fw": "macomp", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["lic_anlageberatung", "lic_finanzkommission", "lic_depot", "lic_portfolioverwaltung", "lic_anlagevermittlung"], "l": { "de": "erbringt Wertpapierdienstleistungen", "en": "provides investment services" } }, "norms": ["BT 1"], "why": { "de": "Organisation der Compliance-Funktion im Wertpapiergeschäft", "en": "Compliance function in investment services" } },
+        { "fw": "wphg", "p": ["wpi"], "lv": "kern", "norms": ["§ 80 Abs. 1", "Art. 22 DelVO"], "why": { "de": "Compliance-Funktion", "en": "Compliance function" } },
+        { "fw": "macomp", "p": ["wpi"], "lv": "kern", "norms": ["BT 1"], "why": { "de": "Organisation der Compliance-Funktion", "en": "Compliance function" } },
+        { "fw": "aifmdvo", "p": ["kvg"], "lv": "kern", "when": { "any": ["kvg_aif"] }, "norms": ["Art. 61"], "why": { "de": "Permanente Compliance-Funktion", "en": "Permanent compliance function" } },
+        { "fw": "kamarisk", "p": ["kvg"], "lv": "kern", "norms": ["Compliance-Funktion"], "why": { "de": "Compliance-Funktion der KVG", "en": "Compliance function" } },
+        { "fw": "vag", "p": ["versicherer"], "lv": "kern", "norms": ["§ 29"], "why": { "de": "Compliance-Funktion", "en": "Compliance function" } },
+        { "fw": "zagmarisk", "p": ["zi_egi"], "lv": "kern", "norms": ["Compliance-Funktion"], "why": { "de": "Compliance-Funktion", "en": "Compliance function" } },
+        { "fw": "mica", "p": ["casp"], "lv": "kern", "norms": ["Art. 68"], "why": { "de": "Unternehmensführung und Compliance", "en": "Governance and compliance" } }
+      ]
+    },
+    {
+      "id": "beschwerden",
+      "l": { "de": "Richtlinie Beschwerdemanagement", "en": "Complaints handling policy" },
+      "syn": ["beschwerde", "complaint", "reklamation"],
+      "focus": ["Beschwerden", "Kunden", "Privatkunden", "Filialen"],
+      "entries": [
+        { "fw": "complaints", "p": ["crr_bank", "bank", "wpi", "kvg", "zi_egi", "fdi"], "lv": "kern", "norms": ["BaFin-RS 06/2018 Ziff. 1–8"], "why": { "de": "Beschwerdemanagementleitlinie, Beschwerdefunktion, Bearbeitung, Analyse", "en": "Complaints policy, function, handling, analysis" } },
+        { "fw": "wphg", "p": ["crr_bank", "bank", "wpi"], "lv": "optional", "when": { "any": ["lic_anlageberatung", "lic_finanzkommission", "lic_depot", "lic_portfolioverwaltung", "lic_anlagevermittlung"], "l": { "de": "erbringt Wertpapierdienstleistungen", "en": "provides investment services" } }, "norms": ["Art. 26 DelVO", "§ 80 Abs. 1 WpHG"], "why": { "de": "Beschwerden im Wertpapiergeschäft", "en": "Complaints in investment services" } },
+        { "fw": "zag", "p": ["zi_egi"], "lv": "kern", "norms": ["§ 62"], "why": { "de": "Beschwerdeverfahren", "en": "Complaints procedure" } },
+        { "fw": "kagb", "p": ["kvg"], "lv": "teilweise", "norms": ["§ 28 Abs. 2 Nr. 1"], "why": { "de": "Verfahren für Anlegerbeschwerden", "en": "Investor complaints procedure" } },
+        { "fw": "mica", "p": ["casp"], "lv": "kern", "norms": ["Art. 71"], "why": { "de": "Beschwerdeverfahren", "en": "Complaints procedure" } },
+        { "fw": "idd", "p": ["versicherer"], "lv": "kern", "norms": ["Art. 14 IDD"], "why": { "de": "Beschwerdebearbeitung im Versicherungsvertrieb", "en": "Complaints in insurance distribution" } }
+      ]
+    },
+    {
+      "id": "fit_proper",
+      "l": { "de": "Eignungsrichtlinie (Fit & Proper)", "en": "Fit and proper policy" },
+      "syn": ["eignung", "fit & proper", "fit and proper", "geschäftsleiter", "aufsichtsorgan", "suitability"],
+      "focus": ["Vorstand", "Aufsichtsrat", "Verwaltungsrat", "Geschäftsleitung", "Gremien"],
+      "entries": [
+        { "fw": "kwg", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["§ 25c", "§ 25d", "§ 24 Abs. 1 Nr. 1, 15"], "why": { "de": "Eignung von Geschäftsleitern und Aufsichtsorgan, Anzeigen", "en": "Suitability of management and supervisory body, notifications" } },
+        { "fw": "fitproper", "p": ["crr_bank", "bank", "wpi"], "lv": "kern", "norms": ["EBA/GL/2021/06 Titel II–VI"], "why": { "de": "Eignungsrichtlinie, Bewertung, Diversität, Einarbeitung", "en": "Suitability policy, assessment, diversity, induction" } },
+        { "fw": "wpig", "p": ["wpi"], "lv": "kern", "norms": ["§ 20"], "why": { "de": "Geschäftsleiter des Wertpapierinstituts", "en": "Management of the investment firm" } },
+        { "fw": "vag", "p": ["versicherer"], "lv": "kern", "norms": ["§ 24"], "why": { "de": "Fachliche Eignung und Zuverlässigkeit", "en": "Fitness and propriety" } },
+        { "fw": "mica", "p": ["casp"], "lv": "kern", "norms": ["Art. 68 Abs. 1"], "why": { "de": "Eignung des Leitungsorgans", "en": "Suitability of the management body" } }
+      ]
+    },
+    {
+      "id": "neue_produkte",
+      "l": { "de": "Richtlinie Neue-Produkte-Prozess", "en": "New product process policy" },
+      "syn": ["neue produkte", "new product", "npp", "produktfreigabe", "produktüberwachung"],
+      "focus": ["Produkte", "neue Märkte", "Digitalisierung", "Vertrieb"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 8.1"], "why": { "de": "Neu-Produkt-Prozess", "en": "New product process" } },
+        { "fw": "ebapog", "p": ["crr_bank", "bank", "zi_egi"], "lv": "optional", "when": { "any": ["privatkunden"], "l": { "de": "Produkte für Privatkunden", "en": "retail products" } }, "norms": ["Leitlinien 1–12"], "why": { "de": "Produktüberwachung und -steuerung für Retail-Bankprodukte", "en": "Product oversight and governance" } },
+        { "fw": "wphg", "p": ["crr_bank", "bank", "wpi"], "lv": "optional", "when": { "any": ["lic_emission", "lic_platzierung", "lic_anlageberatung"], "l": { "de": "konzipiert oder vertreibt Finanzinstrumente", "en": "manufactures or distributes financial instruments" } }, "norms": ["§ 80 Abs. 9–11"], "why": { "de": "Produktfreigabeverfahren", "en": "Product governance" } },
+        { "fw": "wpimarisk", "p": ["wpi"], "lv": "kern", "norms": ["Neue Produkte"], "why": { "de": "Neue Produkte und Märkte", "en": "New products and markets" } },
+        { "fw": "kamarisk", "p": ["kvg"], "lv": "kern", "norms": ["Neue Produkte"], "why": { "de": "Neue Produkte und Märkte", "en": "New products and markets" } },
+        { "fw": "vag", "p": ["versicherer"], "lv": "kern", "norms": ["§ 23 Abs. 1a–1c"], "why": { "de": "Produktfreigabeverfahren", "en": "Product oversight" } },
+        { "fw": "zagmarisk", "p": ["zi_egi"], "lv": "kern", "norms": ["Neue Produkte"], "why": { "de": "Neue Produkte und Märkte", "en": "New products and markets" } }
+      ]
+    },
+    {
+      "id": "kredit",
+      "l": { "de": "Kreditrichtlinie", "en": "Credit policy" },
+      "syn": ["kredit", "credit", "kreditvergabe", "kreditrisiko", "lending"],
+      "focus": ["Kredit", "Kreditportfolio", "Sicherheiten", "Immobilien", "Firmenkunden", "Privatkunden", "Risikovorsorge"],
+      "entries": [
+        { "fw": "marisk", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["BTO 1", "BTR 1"], "why": { "de": "Kreditgeschäft: Funktionstrennung, Prozesse, Votierung, Adressrisiken", "en": "Lending: segregation, processes, approval, credit risk" } },
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["§ 18", "§ 18a", "§ 15", "§ 13"], "why": { "de": "Offenlegung, Kreditwürdigkeitsprüfung, Organkredite, Großkredite", "en": "Disclosure, creditworthiness, insider loans, large exposures" } },
+        { "fw": "loanorig", "p": ["crr_bank"], "lv": "kern", "norms": ["Abschnitte 4–8"], "why": { "de": "Kreditvergabe- und Überwachungsrichtlinien", "en": "Loan origination and monitoring policies" } },
+        { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 178", "Art. 395"], "why": { "de": "Ausfalldefinition, Großkreditobergrenze", "en": "Definition of default, large exposure limit" } },
+        { "fw": "bgb", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["verbraucherkredit", "wohnimmobilienkredit", "privatkunden"], "l": { "de": "vergibt Verbraucherkredite", "en": "grants consumer loans" } }, "norms": ["§§ 491–505e"], "why": { "de": "Verbraucherdarlehen, Kreditwürdigkeitsprüfung", "en": "Consumer credit, creditworthiness" } },
+        { "fw": "marisk", "p": ["fdi"], "lv": "optional", "when": { "any": ["lic_leasing", "lic_factoring"], "l": { "de": "Leasing oder Factoring", "en": "leasing or factoring" } }, "norms": ["BTO 1", "BTR 1"], "why": { "de": "Anwendung auf Leasing- und Factoringgeschäft", "en": "Application to leasing and factoring" } }
+      ]
+    }
+  ]
+}
