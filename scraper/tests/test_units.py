@@ -346,6 +346,20 @@ class BisParsing(unittest.TestCase):
         self.assertEqual(c["teaser"], "The Basel Committee has finalised amendments & more.")
         self.assertEqual(c["badges"][2:], ["Macroprudential"])
 
+    def test_detail_page_marks_consultation(self):
+        # QA-Prüfung 09.11.2026: neue Konsultationen haben auf der Liste noch
+        # kein Serien-Badge; Status und Frist stehen auf der Detailseite.
+        from regradar.adapters.bis import parse_detail
+        page = ('<dt>Status</dt><dd>Consultative</dd><p>The Committee welcomes comments '
+                'on the proposed changes set out in the consultative document by '
+                'Monday 21 December 2026.</p>')
+        self.assertEqual(parse_detail(page), {"consultative": True, "deadline": "2026-12-21"})
+        page2 = 'Status Consultative … welcomes comments … by 9 February 2027.'
+        self.assertEqual(parse_detail(page2)["deadline"], "2027-02-09")
+        final = ('Previous consultation Consultative 26 Feb 2026 … Status : Closed '
+                 'This version Type Publication Status Current')
+        self.assertEqual(parse_detail(final), {"consultative": False, "deadline": None})
+
     def test_card_without_date_is_skipped(self):
         from regradar.adapters.bis import parse_cards
         self.assertEqual(parse_cards(self.CARD.replace("16 Oct 2026", "n/a")), [])
@@ -1178,6 +1192,12 @@ class NewsletterCheckOct2026(unittest.TestCase):
             "SRB publishes the list of consultations and simplifies its requests"))
         self.assertFalse(NOT_A_CONSULTATION.search(
             "Consultation on draft RTS for establishing a central AML/CFT database"))
+        # QA-Prüfung 09.11.2026: Bezug auf abgeschlossene Konsultation.
+        self.assertTrue(NOT_A_CONSULTATION.search(
+            "The EBA outlines next steps on supervisory reporting simplification and "
+            "extends implementation timelines following consultation feedback on the ITS"))
+        self.assertFalse(NOT_A_CONSULTATION.search(
+            "EBA consults on amendments to the ITS on supervisory reporting"))
 
     def test_bafin_circular_rank_prefers_notice(self):
         from regradar.webexport import _bafin_circular_rank as rank

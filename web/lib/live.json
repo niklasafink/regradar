@@ -1,327 +1,12 @@
 {
-  "generated_at": "2026-11-09T14:09:13Z",
+  "generated_at": "2026-11-09T14:46:55Z",
   "updates": {
-    "emir": [
-      {
-        "d": "29.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zu Margenanforderungen für nicht zentral abgewickelte Derivate (Ares(2026)10142916)",
-          "en": "Consultation on margin requirements for non-centrally cleared derivatives (Ares(2026)10142916)"
-        },
-        "sl": "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
-        "s": {
-          "de": "Die Europäische Kommission konsultiert Änderungen an den technischen Regulierungsstandards (RTS) zu bestimmten Margenanforderungen für nicht zentral abgewickelte Transaktionen. Diese Änderungen betreffen die Anwendung von Sicherheitenanforderungen für Derivatekontrakte, die nicht über eine zentrale Gegenpartei (CCP) abgewickelt werden.\n\nDie Konsultation ist relevant für Finanzinstitute, die außerbörsliche Derivate (OTC-Derivate) handeln und dabei Margenanforderungen gemäß EMIR erfüllen müssen. Die Anpassungen könnten Auswirkungen auf die Berechnung und den Austausch von Initial- und Variation-Margin haben.\n\nInteressierte Parteien können bis zum 26. November 2026 Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
-          "en": "The European Commission is consulting on amendments to the Regulatory Technical Standards (RTS) on certain margin requirements applicable to non-centrally cleared transactions. These amendments concern the application of collateral requirements for derivative contracts not cleared by a central counterparty (CCP).\n\nThis consultation is relevant for financial institutions trading over-the-counter (OTC) derivatives that are subject to margin requirements under EMIR. The adjustments could impact the calculation and exchange of initial and variation margin.\n\nInterested parties can submit comments on the proposed amendments until 26 November 2026."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19680",
-        "imp": "medium",
-        "deadline": "26.11.2026",
-        "refnum": "Ares(2026)10142916"
-      },
-      {
-        "d": "20.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finale RTS zu Anforderungen an Post-Trade Risk Reduction Services (EMIR)",
-          "en": "Final RTS on requirements for Post-Trade Risk Reduction services (EMIR)"
-        },
-        "sl": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht zu den technischen Regulierungsstandards (RTS) für Post-Trade Risk Reduction (PTRR) Services veröffentlicht. Diese RTS legen die Anforderungen fest, unter denen Derivategeschäfte, die im Rahmen von PTRR-Diensten abgeschlossen werden, von der Clearingpflicht gemäß EMIR ausgenommen werden können.\n\nDer Bericht befasst sich mit der Identifizierung von PTRR-Diensten, der Marktrisikoneutralität, der Risikoreduzierung und der nicht-preisbildenden Natur von PTRR-Übungen. Zudem werden Anforderungen an die Unabhängigkeit der PTRR-Dienstleister von den Gegenparteien der OTC-Derivatekontrakte sowie an die Teilnahme und Ausführung einer PTRR-Übung detailliert beschrieben. Für Finanzunternehmen, die OTC-Derivate handeln, sind diese Standards relevant, da sie die Bedingungen für die Nutzung von PTRR-Diensten zur Reduzierung von Risikopositionen und zur potenziellen Befreiung von der Clearingpflicht klären.\n\nDes Weiteren werden operative Bedingungen für PTRR-Dienstleister behandelt, einschließlich algorithmischer Anforderungen, organisatorischer Vorgaben, Kontrollen und Kriterien zur Vermeidung der Umgehung der Clearingpflicht. Auch die Aufzeichnung von Transaktionen, die im Rahmen einer PTRR-Übung ausgeführt werden, ist ein wichtiger Bestandteil der neuen Regelungen.",
-          "en": "ESMA has published its final report on the Regulatory Technical Standards (RTS) for Post-Trade Risk Reduction (PTRR) services. These RTS define the requirements under which derivative transactions concluded within the framework of PTRR services may be exempted from the clearing obligation under EMIR.\n\n The report addresses the identification of PTRR services, market risk neutrality, risk reduction, and the non-price-forming nature of PTRR exercises. It also details requirements for the independence of PTRR service providers from the counterparties to OTC derivative contracts, as well as for the participation and execution of a PTRR exercise. These standards are relevant for financial undertakings trading OTC derivatives, as they clarify the conditions for using PTRR services to reduce risk exposures and potentially qualify for an exemption from the clearing obligation.\n\nFurthermore, operational conditions for PTRR service providers are covered, including algorithmic requirements, organizational requirements, controls, and criteria to prevent circumvention of the clearing obligation. The record-keeping of transactions executed pursuant to a PTRR exercise is also an important component of the new regulations."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-regulatory-standards-requirements-post-trade-risk-reduction-services-purpose",
-        "imp": "high",
-        "refnum": "ESMA74-1049116226-981"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
-      },
-      {
-        "d": "05.01.2017",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Intragruppenausnahmen nach EMIR (Art. 11 Abs. 6-10)",
-          "en": "Guidance on Intragroup Exemptions under EMIR (Art. 11(6)-(10))"
-        },
-        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-11-abs-6-10-emir",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen gemäß Artikel 11 Absätze 6 bis 10 der EMIR-Verordnung veröffentlicht. Es konkretisiert die Anforderungen und das Verfahren für Unternehmen, die von den Clearing- und Besicherungsplichten für Derivate innerhalb einer Gruppe befreit werden möchten.\n\nDas Merkblatt richtet sich an Finanz- und Nichtfinanzkontrahenten, die gruppeninterne Derivategeschäfte tätigen und die Voraussetzungen für eine Ausnahme von den EMIR-Pflichten erfüllen. Es erläutert die notwendigen Schritte und einzureichenden Unterlagen für die Beantragung oder Anzeige dieser Ausnahmen bei der BaFin.\n\nDas Merkblatt wurde am 5. Januar 2017 veröffentlicht und zuletzt am 1. April 2017 geändert. Es ist über das MVP-Portal zugänglich.",
-          "en": "BaFin has published guidance on notifications and applications for intragroup exemptions under Article 11(6) to (10) of the EMIR Regulation. It specifies the requirements and procedures for companies seeking to be exempted from clearing and collateralisation obligations for intragroup derivatives.\n\nThis guidance is aimed at financial and non-financial counterparties that conduct intragroup derivative transactions and meet the conditions for an exemption from EMIR obligations. It explains the necessary steps and documents to be submitted for applying for or notifying these exemptions to BaFin.\n\nThe guidance was published on January 5, 2017, and last amended on April 1, 2017. It is accessible via the MVP portal."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_wa_Merkblatt_Art11_EMIR_Anzeigen_Antraege_Intragruppenausnahmen.html",
-        "imp": "medium"
-      },
-      {
-        "d": "22.12.2015",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen von der EMIR-Clearingpflicht",
-          "en": "Guidance Notice on Notifications and Applications for Intragroup Exemptions from EMIR Clearing Obligation"
-        },
-        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-4-emir-sowie-bei-drit",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Ausgestaltung von Anzeigen und Anträgen für Intragruppenausnahmen von der Clearingpflicht nach Art. 4 EMIR sowie bei Drittstaatensachverhalten veröffentlicht. Es konkretisiert die Anforderungen für finanzielle und nichtfinanzielle Gegenparteien, die von der Clearingpflicht für OTC-Derivate befreit werden möchten.\n\nDas Merkblatt erläutert die zwei Hauptfälle für Intragruppenausnahmen: Geschäfte zwischen EU-ansässigen Gegenparteien (Art. 4 Abs. 2a EMIR) und Geschäfte, bei denen eine Gegenpartei in einem Drittstaat ansässig ist (Art. 4 Abs. 2b EMIR). Es beschreibt die jeweiligen Anzeige- und Antragsverfahren, einschließlich der Fristen und der Möglichkeit für die BaFin, die Ausnahme zu untersagen. Auch temporäre Ausnahmen durch RTS für Drittstaaten-Geschäfte werden behandelt.\n\nDie Regelungen sind relevant für alle finanziellen und nichtfinanziellen Gegenparteien, die OTC-Derivate handeln und die Clearingschwelle nach Art. 10 Abs. 1 EMIR überschreiten. Sie müssen die im Merkblatt beschriebenen Verfahren einhalten, um Intragruppengeschäfte von der Clearingpflicht ausnehmen zu können. Das Merkblatt berücksichtigt die Änderungen durch EMIR REFIT, die seit dem 17.06.2019 gelten, und die Q&A der ESMA zur EMIR-Implementierung.",
-          "en": "BaFin has published a guidance notice on the design of notifications and applications for intragroup exemptions from the clearing obligation under Art. 4 EMIR, including cases involving third-country entities. It specifies the requirements for financial and non-financial counterparties seeking exemption from the clearing obligation for OTC derivatives.\n\nThe guidance notice explains the two main scenarios for intragroup exemptions: transactions between EU-based counterparties (Art. 4 para. 2a EMIR) and transactions where one counterparty is located in a third country (Art. 4 para. 2b EMIR). It describes the respective notification and application procedures, including deadlines and BaFin's power to prohibit the exemption. Temporary exemptions for third-country transactions under RTS are also covered.\n\nThe regulations are relevant for all financial and non-financial counterparties trading OTC derivatives and exceeding the clearing threshold under Art. 10 para. 1 EMIR. They must follow the procedures outlined in the guidance notice to exempt intragroup transactions from the clearing obligation. The notice incorporates the changes introduced by EMIR REFIT, effective since 17 June 2019, and ESMA's Q&A on EMIR implementation."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_infoblatt_emir_intragruppenausnahmen_wa.html",
-        "imp": "medium"
-      },
-      {
-        "d": "18.02.2014",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "EMIR in der Versicherungsaufsicht: Anwendbarkeit und Meldepflichten",
-          "en": "EMIR in Insurance Supervision: Applicability and Reporting Obligations"
-        },
-        "sl": "european-market-infrastructure-regulation-emir-in-der-versicherungsaufsicht",
-        "s": {
-          "de": "Die BaFin erläutert die Anwendbarkeit der European Market Infrastructure Regulation (EMIR) auf Versicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung. Die EMIR zielt darauf ab, systemische Risiken im europäischen Derivatemarkt durch Transparenz und Sicherheit zu reduzieren, insbesondere durch die Abwicklung standardisierter OTC-Derivate über zentrale Gegenparteien und die Meldung an Transaktionsregister.\n\nVersicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung werden als „finanzielle Gegenparteien“ eingestuft und unterliegen der Clearingpflicht für standardisierte OTC-Derivate. Nichtfinanzielle Gegenparteien, zu denen die BaFin auch Sterbekassen zählt, sind von der Clearingpflicht betroffen, wenn sie Derivate in größerem Umfang für nicht-absichernde Zwecke einsetzen. Alle Derivategeschäfte müssen zur Erhöhung der Transparenz an ein Transaktionsregister gemeldet werden.\n\nDie BaFin präzisiert, dass die Delegation der Meldepflicht nach Art. 9 Abs. 1 EMIR an den Kontrahenten keine Auslagerung im Sinne des VAG darstellt, während eine Übertragung an einen geeigneten Dritten eine Einzelfallprüfung auf Funktionsausgliederung erfordert. Auch bei der Auslagerung von Dienstleistungen sind die Anforderungen des Risikomanagements gemäß VAG und MaRisk VA einzuhalten.",
-          "en": "BaFin clarifies the applicability of the European Market Infrastructure Regulation (EMIR) to insurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision. EMIR aims to mitigate systemic risks in the European derivatives market by increasing transparency and safety, particularly through the clearing of standardized OTC derivatives via central counterparties and reporting to trade repositories.\n\nInsurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision are classified as “financial counterparties” and are subject to the clearing obligation for standardized OTC derivatives. Non-financial counterparties, which BaFin also considers to include burial funds, are subject to the clearing obligation if they use derivatives extensively for non-hedging purposes. All derivative transactions must be reported to a trade repository to enhance transparency.\n\nBaFin specifies that delegating the reporting obligation under Art. 9(1) EMIR to a counterparty does not constitute outsourcing under the German Insurance Supervision Act (VAG), whereas transferring it to a suitable third party requires a case-by-case assessment for functional outsourcing. Even when outsourcing services, risk management requirements according to VAG and MaRisk VA must be observed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_hinweise_emir_va.html",
-        "imp": "medium"
-      },
-      {
-        "d": "18.02.2014",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Einordnung zur Delegation der EMIR-Meldepflicht für Versicherer",
-          "en": "BaFin Classification of EMIR Reporting Obligation Delegation for Insurers"
-        },
-        "sl": "versicherungsaufsichtsrechtliche-einordnung-der-delegation-der-meldepflicht-nach",
-        "s": {
-          "de": "Die BaFin präzisiert die versicherungsaufsichtsrechtliche Einordnung der Delegation der Meldepflicht nach Artikel 9 Abs. 1 EMIR. Sie unterscheidet dabei zwischen der Übertragung der Meldepflicht auf den Kontrahenten und auf einen geeigneten Dritten.\n\nWird die Meldepflicht auf den Kontrahenten übertragen, liegt nach Auffassung der BaFin keine Auslagerung oder Funktionsausgliederung gemäß § 5 Abs. 3 Nr. 4 VAG vor. Dies dient der Vermeidung von Mehrfachmeldungen und der Arbeitsvereinfachung. Bei einer Übertragung auf einen geeigneten Dritten ist hingegen stets eine Einzelfallprüfung erforderlich, ob eine Funktionsausgliederung nach §§ 5 Abs. 3 Nr. 4, 64a Abs. 4 VAG i.V.m. Punkt 8 der MaRisk VA oder eine Ausgliederung von Dienstleistungen nach § 64a Abs. 4 VAG i.V.m. Punkt 8 der MaRisk VA vorliegt.\n\nVersicherungsunternehmen müssen bei der Delegation der Meldepflicht an einen geeigneten Dritten die Anforderungen an das Risikomanagement gemäß § 64a Abs. 4 VAG und Punkt 8 der MaRisk VA einhalten. Die BaFin weist darauf hin, dass dies auch bei der Auslagerung von Dienstleistungen gilt.",
-          "en": "BaFin clarifies the insurance supervisory classification of the delegation of the reporting obligation under Article 9(1) EMIR. It distinguishes between transferring the reporting obligation to the counterparty and to a suitable third party.\n\nAccording to BaFin, if the reporting obligation is transferred to the counterparty, it does not constitute an outsourcing or functional outsourcing under Section 5 (3) No. 4 VAG. This aims to avoid duplicate reports and simplify work. However, if the obligation is transferred to a suitable third party, an individual assessment is always required to determine whether it constitutes a functional outsourcing under Sections 5 (3) No. 4, 64a (4) VAG in conjunction with point 8 of MaRisk VA, or an outsourcing of services under Section 64a (4) VAG in conjunction with point 8 of MaRisk VA.\n\nInsurance undertakings must comply with the risk management requirements under Section 64a (4) VAG and point 8 of MaRisk VA when delegating the reporting obligation to a suitable third party. BaFin points out that this also applies to the outsourcing of services."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_emir_meldepflicht_va.html",
-        "imp": "medium"
-      }
-    ],
-    "idd": [
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zum Entwurf einer Aufsichtserklärung zu IBIP-Vertriebsprozessen",
-          "en": "Consultation on the draft Supervisory Statement on IBIP Sales Processes"
-        },
-        "sl": "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes",
-        "s": {
-          "de": "Die EIOPA konsultiert einen Entwurf für eine Aufsichtserklärung zu ergebnisorientierter Aufsicht über Vertriebsprozesse für Versicherungsanlageprodukte (IBIPs) und vorvertragliche Offenlegungen. Die Erklärung richtet sich an nationale zuständige Behörden und zielt darauf ab, eine konsistentere, verhältnismäßigere und risikobasierte Aufsicht über die praktische Anwendung bestehender Vertriebssicherungsmaßnahmen zu fördern.\n\nDie Aufsichtserklärung ergänzt die Compliance-basierte Aufsicht, führt keine neuen regulatorischen Anforderungen oder Berichtspflichten ein und schreibt keine spezifischen Aufsichtsmethoden vor. Sie soll die Customer Journey vereinfachen und den Aufwand reduzieren. Die EIOPA bittet insbesondere um praktische Rückmeldungen zu unnötiger Komplexität und Duplizierung in der Customer Journey, zur Anwendung der Verhältnismäßigkeit, zu relevanten Schutzmaßnahmen und Kompromissen sowie zur Klarheit und Benutzerfreundlichkeit des vorgeschlagenen Aufsichtsansatzes.\n\nInteressierte Kreise können bis zum 04.01.2027 über eine Online-Umfrage Stellungnahmen einreichen. Die Antworten werden auf der EIOPA-Website veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
-          "en": "EIOPA is consulting on a draft Supervisory Statement concerning outcomes-focused supervision of insurance-based investment product (IBIP) sales processes and pre-contractual disclosures. Addressed to national competent authorities, the Statement aims to promote more consistent, proportionate, and risk-based supervision of how existing sales safeguards operate in practice.\n\nThe Supervisory Statement complements compliance-based supervision and does not introduce new regulatory requirements, reporting obligations, or prescribed supervisory methodologies. It aims to simplify the customer journey and reduce burden. EIOPA particularly invites practical input on unnecessary complexity and duplication in the customer journey, the application of proportionality, relevant safeguards and trade-offs, and the clarity and usability of the proposed supervisory approach.\n\nStakeholders are invited to submit their feedback via an online survey by 4 January 2027. Responses will be published on EIOPA’s website unless confidentiality is requested."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-draft-supervisory-statement-ibip-sales-processes_en",
-        "imp": "medium",
-        "deadline": "04.01.2027"
-      },
-      {
-        "d": "04.07.2023",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Auswirkungen von EuGH-Urteil auf Vermittlerstatus bei Gruppenversicherungen",
-          "en": "Auswirkungen von EuGH-Urteil auf Vermittlerstatus bei Gruppenversicherungen"
-        },
-        "sl": "auswirkungen-von-eugh-urteil-auf-vermittlerstatus-bei-gruppenversicherungen",
-        "s": {
-          "de": "Die BaFin hat gemeinsam mit der DIHK/IHK eine Aufsichtsmitteilung zu den Auswirkungen eines EuGH-Urteils (C-633/20) auf den Vermittlerstatus bei Gruppenversicherungen veröffentlicht. Das Urteil vom September 2022 betrifft die Frage, wann Versicherungsnehmer von Gruppenversicherungsverträgen, wie Unternehmen oder Vereine, die ihren Mitarbeitern oder Mitgliedern Versicherungsschutz ermöglichen, als Versicherungsvermittler einzustufen sind.\n\nDie Mitteilung klärt, unter welchen Umständen beispielsweise ein Verein oder Arbeitgeber zum Versicherungsvermittler werden könnte. Sie bietet praxisnahe Hinweise und Beispiele, um die Einordnung in der Praxis zu erleichtern. Dies ist relevant für Unternehmen und Vereine, die Gruppenversicherungen anbieten, da eine Einstufung als Vermittler zusätzliche regulatorische Pflichten nach sich ziehen würde.\n\nDie Aufsichtsmitteilung ist auf der Website der BaFin verfügbar.",
-          "en": "The BaFin, in cooperation with the DIHK/IHK, has published a supervisory statement on the implications of a European Court of Justice (ECJ) ruling (C-633/20) for the intermediary status in group insurance. The September 2022 ruling addresses the question of when policyholders of group insurance contracts, such as companies or associations providing insurance coverage to their employees or members, are to be classified as insurance intermediaries.\n\nThe statement clarifies the circumstances under which, for example, an association or an employer could become an insurance intermediary. It provides practical guidance and examples to facilitate classification in practice. This is relevant for companies and associations offering group insurance, as classification as an intermediary would entail additional regulatory obligations.\n\nThe supervisory statement is available on the BaFin website."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2023/aufsichtsmitteilung_230704_Gruppenversicherungen.html",
-        "imp": "medium"
-      },
-      {
-        "d": "08.05.2023",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungsprodukten (01/2023 VA)",
-          "en": "BaFin Guidance Notice on Conduct-of-Business Supervisory Aspects of Unit-Linked Life Insurance Products (01/2023 VA)"
-        },
-        "sl": "merkblatt-01-2023-va-zu-wohlverhaltensaufsichtlichen-aspekten-bei-kapitalbildend",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungsprodukten veröffentlicht. Es konkretisiert die Anforderungen an das Produktfreigabeverfahren gemäß Versicherungsvertriebsrichtlinie (IDD) und den nationalen Umsetzungsnormen (§ 23 Abs. 1a bis 1c, § 48a VAG).\n\nIm Fokus steht die unternehmenseigene Feststellung eines angemessenen Kundennutzens der vertriebenen Produkte. Das Merkblatt beschreibt, wie die BaFin die von EIOPA entwickelten Werkzeuge zur Prüfung des Preis-Leistungs-Verhältnisses von Produkten anwendet. Es richtet sich an inländische und ausländische Lebensversicherungsunternehmen, die kapitalbildende Lebensversicherungsprodukte vertreiben, wobei Pensionskassen ausgenommen sind.\n\nDie BaFin erwartet, dass Lebensversicherungsunternehmen aus anderen EU-/EWR-Staaten die Ausführungen zum Produktfreigabeverfahren bei grenzüberschreitender Tätigkeit in Deutschland beachten. Das Merkblatt ist am 8. Mai 2023 veröffentlicht worden.",
-          "en": "BaFin has published a guidance notice on conduct-of-business supervisory aspects of unit-linked life insurance products. It specifies the requirements for the product approval process in accordance with the Insurance Distribution Directive (IDD) and national implementing standards (Section 23 (1a) to (1c), Section 48a VAG).\n\nThe focus is on the companies' own determination of appropriate customer value for the products distributed. The guidance notice describes how BaFin applies the tools developed by EIOPA to assess the value for money of products. It is aimed at domestic and foreign life insurance companies that distribute unit-linked life insurance products, with pension funds being excluded.\n\nBaFin expects life insurance companies from other EU/EEA states to observe the explanations on the product approval process when operating across borders in Germany. The guidance notice was published on May 8, 2023."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_01_2023_wohlverhaltensaufsichtliche_aspekte_va.html",
-        "imp": "medium"
-      },
-      {
-        "d": "31.10.2022",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungen (Konsultation 08/2022)",
-          "en": "Guidance Notice on Conduct-of-Business Supervisory Aspects of Unit-Linked Life Insurance Products (Consultation 08/2022)"
-        },
-        "sl": "konsultation-08-2022-merkblatt-2022-va-merkblatt-zu-wohlverhaltensaufsichtlichen",
-        "s": {
-          "de": "Die BaFin hat den Entwurf eines Merkblatts zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungsprodukten zur Konsultation gestellt. Ziel ist es, sicherzustellen, dass diese Produkte den Kunden einen angemessenen Nutzen bieten und Interessenkonflikte im Vertrieb vermieden werden. Der Entwurf konkretisiert die Anforderungen an das Produktfreigabeverfahren gemäß § 23 Abs. 1a bis 1c VAG und der Delegierten Verordnung 2017/2358.\n\nIm Fokus stehen die Sicherstellung eines realen Anlageerfolgs nach Kosten und oberhalb der Inflationserwartung sowie die Vermeidung von Fehlanreizen durch Vertriebsvergütungen (§ 48a VAG, Delegierte Verordnung 2017/2359). Die BaFin erläutert zudem ihren risikoorientierten Aufsichtsansatz, bei dem insbesondere Versicherer mit überdurchschnittlich hohen Effektivkosten oder hohen Aufwendungen für Versicherungsvermittler (jeweils im oberen Viertel der Branchenwerte) näher geprüft werden. Ergänzende Kriterien können Stornoquoten oder Rückvergütungen sein.\n\nDas Merkblatt richtet sich an in- und ausländische Lebensversicherungsunternehmen, die der BaFin-Aufsicht unterliegen, in den Anwendungsbereich der IDD fallen und kapitalbildende Lebensversicherungsprodukte anbieten. Es zeigt auf, wie die Vorgaben der IDD bei diesen Produkten umzusetzen sind. Die Inhalte stehen im Einklang mit den Arbeiten der EIOPA zu Product Oversight and Governance (POG).\n\nStellungnahmen zum Konsultationsentwurf konnten bis zum 15. Januar 2023 eingereicht werden.",
-          "en": "BaFin has published a draft guidance notice on conduct-of-business supervisory aspects of unit-linked life insurance products for consultation. The aim is to ensure that these products offer customers appropriate benefits and that conflicts of interest in distribution are avoided. The draft specifies the requirements for the product approval process in accordance with Section 23 (1a) to (1c) of the German Insurance Supervision Act (VAG) and Delegated Regulation 2017/2358.\n\nThe focus is on ensuring a real investment return after costs and above inflation expectations, as well as avoiding misincentives through distribution remuneration (Section 48a VAG, Delegated Regulation 2017/2359). BaFin also explains its risk-oriented supervisory approach, under which insurers with above-average effective costs or high expenses for insurance intermediaries (each in the upper quartile of industry values) will be examined more closely. Additional criteria may include lapse rates or rebates to distribution partners.\n\nThe guidance notice is addressed to domestic and foreign life insurance undertakings subject to BaFin supervision, falling within the scope of the Insurance Distribution Directive (IDD) and offering unit-linked life insurance products. It outlines how the IDD requirements are to be implemented for these products. The content is consistent with EIOPA's work on Product Oversight and Governance (POG).\n\nComments on the consultation draft could be submitted until 15 January 2023."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2022/kon_08_22_Konsultation_wohlverhaltensaufsichliche_Aspekte_lv_produkte.html",
-        "imp": "medium",
-        "refnum": "Konsultation 08/2022"
-      },
-      {
-        "d": "03.03.2021",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben 03/2021 (VA) - Hinweise zu echten Gruppenversicherungsverträgen",
-          "en": "Rundschreiben 03/2021 (VA) - Hinweise zu echten Gruppenversicherungsverträgen"
-        },
-        "sl": "rundschreiben-03-2021-va-hinweise-zu-echten-gruppenversicherungsvertraegen",
-        "s": {
-          "de": "Die BaFin präzisiert in ihrem Rundschreiben 03/2021 (VA) die Anforderungen an „echte Gruppenversicherungsverträge“, bei denen die versicherten Personen Verbraucher sind. Sie definiert diese als einheitliche Verträge mit einem Versicherungsnehmer, die eine Personengruppe erfassen. Die versicherten Personen können automatisch oder durch Beitrittserklärung einbezogen werden, wobei die Gruppenzugehörigkeit das Kriterium ist.\n\nDas Rundschreiben zielt darauf ab, den kollektiven Verbraucherschutz zu stärken. Es erwartet, dass Versicherungsunternehmen in solchen Verträgen ein direktes Forderungsrecht der versicherten Person gegenüber dem Versicherer vorsehen und das Aufrechnungsrecht des Versicherers gegen die versicherte Person ausschließen, wenn diese ihre Zahlungsverpflichtung erfüllt hat. Dies weicht von den Regelungen in § 44 Abs. 2 VVG und § 35 VVG ab.\n\nZudem sollen versicherte Personen bei Beitritt umfassend über ihre Rechte und die Vertragsbedingungen informiert werden, insbesondere über das Produktinformationsblatt (PIB) und das Basisinformationsblatt (BIB) sowie über das Direktanspruchsrecht und den Ausschluss des Aufrechnungsrechts. Ausgenommen vom Anwendungsbereich sind unter anderem Pensionskassen, Pensionsfonds, Direktversicherungen sowie bestimmte Rückdeckungs-, Kfz-, Haftpflicht- und Cyber-Gruppenversicherungsverträge.",
-          "en": "BaFin Circular 03/2021 (VA) clarifies the requirements for “genuine group insurance contracts” where the insured persons are consumers. It defines these as uniform contracts with a single policyholder covering a group of people. Insured persons can be included automatically or by declaration of accession, with group affiliation being the criterion.\n\nThe circular aims to strengthen collective consumer protection. It expects insurance companies to provide for a direct right of claim for the insured person against the insurer in such contracts and to exclude the insurer's right of set-off against the insured person if the latter has fulfilled their payment obligation. This deviates from the provisions in Section 44 (2) VVG and Section 35 VVG.\n\nFurthermore, insured persons must be comprehensively informed about their rights and the contract terms upon accession, especially regarding the Product Information Document (PID) and the Basic Information Document (BID), as well as the direct right of claim and the exclusion of the right of set-off. Excluded from the scope are, among others, pension funds, direct insurance, and certain reinsurance, motor vehicle, liability, and cyber group insurance contracts."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2021/rs_2021_03_hinweise_echte_gruppenversicherungsvertraege_va.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 03/2021"
-      },
-      {
-        "d": "21.10.2020",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zur Auslegung des Sondervergütungsverbotes (§ 48b Versicherungsaufsichtsgesetz - VAG)",
-          "en": "Merkblatt zur Auslegung des Sondervergütungsverbotes (§ 48b Versicherungsaufsichtsgesetz - VAG)"
-        },
-        "sl": "merkblatt-zur-auslegung-des-sonderverguetungsverbotes-48b-versicherungsaufsichts",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Auslegung des Sondervergütungsverbotes nach § 48b Versicherungsaufsichtsgesetz (VAG) veröffentlicht. Es fasst frühere Hinweise aus dem Rundschreiben 11/2018 zusammen und aktualisiert diese. Das Verbot untersagt Versicherungsunternehmen, -vermittlern und deren Angestellten, Versicherungsnehmern, versicherten Personen oder Bezugsberechtigten Sondervergütungen zu gewähren oder zu versprechen, um Fehlanreize zu vermeiden.\n\nDas Merkblatt präzisiert den Anwendungsbereich des Verbots. Es gilt für unmittelbare und mittelbare Zuwendungen, die über die vertraglich vereinbarte Leistung hinausgehen, wie Provisionsabgaben, Sach- oder Dienstleistungen oder Rabattierungen, sofern sie nicht geringwertig sind. Die BaFin überwacht die Einhaltung durch Versicherungsunternehmen, während die Aufsicht über Versicherungsvermittler bei den Industrie- und Handelskammern liegt. Tippgeber fallen in der Regel nicht unter das Verbot, es sei denn, es liegt eine planmäßige Weitergabe der Vergütung an den Versicherungsnehmer in Kenntnis des Versicherungsunternehmens vor.\n\nAls geringwertig gelten Zuwendungen im Rahmen eines bestehenden Vertrages bis zu 15 Euro oder 5 % der Jahresprämie pro Kalenderjahr, sofern sie als Sach- oder Dienstleistungen erbracht werden (kein Bargeld oder bargeldgleiche Leistungen). Für Zuwendungen zur Anbahnung oder anlässlich eines Vertragsabschlusses liegt die Grenze bei 15 Euro pro Versicherungsverhältnis und Kalenderjahr, wobei nur eine dieser Zuwendungen gewährt werden darf.",
-          "en": "BaFin has published a guidance notice on the interpretation of the special remuneration prohibition under Section 48b of the German Insurance Supervision Act (VAG). It consolidates and updates previous guidance from Circular 11/2018. The prohibition forbids insurance undertakings, intermediaries, and their employees from granting or promising special remuneration to policyholders, insured persons, or beneficiaries from an insurance contract, aiming to prevent misaligned incentives.\n\nThe guidance clarifies the scope of the prohibition. It applies to direct and indirect benefits beyond the contractually agreed service, such as commission rebates, goods or services, or discounts, unless they are of minor value. BaFin supervises compliance by insurance undertakings, while the supervision of insurance intermediaries falls under the responsibility of the respective Chambers of Industry and Commerce. Referrers (Tippgeber) are generally not subject to the prohibition, unless there is a systematic transfer of remuneration to the policyholder with the knowledge of the insurance undertaking.\n\nBenefits are considered of minor value if, for an existing contract, they do not exceed 15 euros or 5% of the annual premium per calendar year, provided they are rendered as goods or services (no cash or cash equivalents). For benefits granted during contract initiation or upon conclusion, the limit is 15 euros per insurance relationship and calendar year, with only one of these types of benefits allowed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_201021_sonderverguetungsverbot_va.html",
-        "imp": "medium"
-      },
-      {
-        "d": "25.03.2020",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Rundschreiben über echte Gruppenversicherungsverträge (Konsultation 04/2020)",
-          "en": "Consultation on the Circular on Genuine Group Insurance Contracts (Consultation 04/2020)"
-        },
-        "sl": "konsultation-04-2020-rundschreiben-2020-va-hinweise-zu-echten-gruppenversicherun",
-        "s": {
-          "de": "Die BaFin hat den Entwurf eines Rundschreibens zur Konsultation gestellt, das Hinweise zu echten Gruppenversicherungsverträgen zusammenführt. Es soll die bestehenden Rundschreiben 3/90, 3/94 und 2/97 in einem Dokument bündeln und an aktuelle Gesetzesänderungen sowie digitale Kommunikationsmöglichkeiten anpassen.\n\nZiel ist es, Missstände zulasten der versicherten Personen zu vermeiden und den kollektiven Verbraucherschutz zu stärken. Eine Branchenabfrage der BaFin zeigte, dass es derzeit kein einheitliches Schutzniveau gibt. Das Rundschreiben soll durch die Definition des Gruppenversicherungsvertrags und die Konkretisierung gesetzlicher Vorgaben die Rechtssicherheit für Versicherungsunternehmen erhöhen.\n\nStellungnahmen zum Entwurf können bis zum 6. Juli 2020 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen auf ihrer Internetseite zu veröffentlichen.",
-          "en": "BaFin has published a draft circular for consultation, which consolidates guidance on genuine group insurance contracts. It aims to combine existing circulars 3/90, 3/94, and 2/97 into a single document and adapt them to current legal changes and digital communication possibilities.\n\nThe objective is to prevent abuses to the detriment of insured persons and to strengthen collective consumer protection. A BaFin industry survey revealed that there is currently no uniform level of protection. The circular aims to increase legal certainty for insurance undertakings by defining group insurance contracts and specifying legal requirements.\n\nComments on the draft can be submitted to BaFin in writing or by email until July 6, 2020. BaFin intends to publish the submitted comments on its website."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
-        "imp": "medium",
-        "refnum": "Konsultation 04/2020"
-      }
-    ],
     "bcbs": [
       {
         "d": "09.11.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Konsultation",
+          "en": "Consultation"
         },
         "src": "bis.org",
         "ti": {
@@ -330,17 +15,18 @@
         },
         "sl": "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
         "s": {
-          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) konsultiert zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch (IRRBB). Die Vorschläge reagieren auf Mängel im Management des IRRBB bei Banken, die insbesondere in Phasen hoher Inflation, starker Zinsanstiege und erhöhter Marktvolatilität festgestellt wurden.\n\nDie geplanten Leitlinien ergänzen den bestehenden IRRBB-Rahmen, indem sie die Erwartungen an das Risikomanagement der Banken und die aufsichtsrechtliche Überwachung stärken. Sie umfassen zusätzliche Vorgaben zum Modellrisikomanagement und zur Validierung, zu Stresstests, zu IRRBB-Kontrollen, zur Behandlung eingebetteter Gewinne und Verluste in Wertpapierportfolios sowie zu kurz- und mittelfristigen Ertragsindikatoren. Zudem soll „Supervisory Information“ eingeführt werden, die Banken zur Unterstützung der laufenden Überwachung und Prüfung des IRRBB durch die Aufsichtsbehörden melden müssen.\n\nDie vorgeschlagenen Änderungen umfassen auch Anpassungen der IRRBB-Bestimmungen im Basler Rahmenwerk (SRP31) und der zugehörigen Anwendungsleitlinien (SRP98). Kommentare zum Konsultationsdokument können bis zum 9. Februar 2027 eingereicht werden.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) is consulting on additional Pillar 2 guidance concerning interest rate risk in the banking book (IRRBB). The proposals address shortcomings identified in banks’ management of IRRBB, particularly during periods of elevated inflation, sharp interest rate increases, and heightened market volatility.\n\nThe proposed guidance complements the existing IRRBB framework by strengthening expectations for banks’ risk management and supervisory oversight. It includes additional provisions on model risk management and validation, stress testing, IRRBB controls, the treatment of embedded gains and losses in securities portfolios, and short- and medium-term earnings indicators. Furthermore, “Supervisory Information” is to be introduced, which banks must report to support supervisors’ ongoing monitoring and examination of IRRBB.\n\nThe proposed changes also include amendments to the IRRBB provisions in the Basel Framework (SRP31) and related application guidance (SRP98). Comments on the consultative document are welcome by 9 February 2027."
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) konsultiert zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch (IRRBB), unter anderem zu Modellvalidierung, Stresstests und neuen Aufsichtsmeldungen. Anlass sind Mängel im IRRBB-Management, die sich in Phasen hoher Inflation und stark steigender Zinsen gezeigt haben. Stellungnahmen sind bis 9. Februar 2027 möglich.\n\nDie geplanten Leitlinien ergänzen den bestehenden IRRBB-Rahmen, indem sie die Erwartungen an das Risikomanagement der Banken und die aufsichtsrechtliche Überwachung stärken. Sie umfassen zusätzliche Vorgaben zum Modellrisikomanagement und zur Validierung, zu Stresstests, zu IRRBB-Kontrollen, zur Behandlung eingebetteter Gewinne und Verluste in Wertpapierportfolios sowie zu kurz- und mittelfristigen Ertragsindikatoren. Zudem soll „Supervisory Information“ eingeführt werden, die Banken zur Unterstützung der laufenden Überwachung und Prüfung des IRRBB durch die Aufsichtsbehörden melden müssen.\n\nDie vorgeschlagenen Änderungen umfassen auch Anpassungen der IRRBB-Bestimmungen im Basler Rahmenwerk (SRP31) und der zugehörigen Anwendungsleitlinien (SRP98). Kommentare zum Konsultationsdokument können bis zum 9. Februar 2027 eingereicht werden.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) is consulting on additional Pillar 2 guidance on interest rate risk in the banking book (IRRBB), covering model validation, stress testing and new supervisory information, among other things. The proposals respond to shortcomings in IRRBB management observed during periods of high inflation and sharp rate increases. Comments are due by 9 February 2027.\n\nThe proposed guidance complements the existing IRRBB framework by strengthening expectations for banks’ risk management and supervisory oversight. It includes additional provisions on model risk management and validation, stress testing, IRRBB controls, the treatment of embedded gains and losses in securities portfolios, and short- and medium-term earnings indicators. Furthermore, “Supervisory Information” is to be introduced, which banks must report to support supervisors’ ongoing monitoring and examination of IRRBB.\n\nThe proposed changes also include amendments to the IRRBB provisions in the Basel Framework (SRP31) and related application guidance (SRP98). Comments on the consultative document are welcome by 9 February 2027."
         },
         "url": "https://www.bis.org/publications/interest-rate-risk-banking-book---additional-pillar-2-guidance",
-        "imp": "medium"
+        "imp": "medium",
+        "deadline": "09.02.2027"
       },
       {
         "d": "05.11.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Konsultation",
+          "en": "Consultation"
         },
         "src": "bis.org",
         "ti": {
@@ -349,11 +35,12 @@
         },
         "sl": "consolidated-guidelines-consequential-amendments",
         "s": {
-          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat eine konsolidierte Version seiner Leitlinien und bewährten Praktiken für Banken und Aufsichtsbehörden fertiggestellt und auf seiner Website veröffentlicht. Ziel ist es, die Zugänglichkeit der Dokumente durch ein benutzerfreundliches, modulares Format zu verbessern.\n\nDer BCBS konsultiert nun Folgeanpassungen am Basler Rahmenwerk, um Querverweise auf die neuen Kapitel der konsolidierten Leitlinien zu aktualisieren. Zudem sollen Inhalte bestimmter „Application guidance“-Kapitel des Basler Rahmenwerks in die konsolidierten Leitlinien überführt werden. Dies soll die Verbreitung von Leitfäden reduzieren und Standards klarer von Leitlinien abgrenzen.\n\nInteressierte Parteien können bis Montag, den 21. Dezember 2026, Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
-          "en": "The Basel Committee on Banking Supervision (BCBS) has finalised and published a consolidated version of its guidelines and sound practices for banks and supervisors on its website. The aim is to improve the accessibility of the documents through a user-friendly, modular format.\n\nThe BCBS is now consulting on consequential amendments to the Basel Framework to update cross-references to the new chapters in the consolidated guidelines. In addition, the contents of certain “Application guidance” chapters in the Basel Framework are to be migrated to the consolidated guidelines. This is intended to reduce the proliferation of guidance materials and to more clearly distinguish between standards and guidelines.\n\nInterested parties can submit comments on the proposed changes by Monday, 21 December 2026."
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat seine Leitlinien und bewährten Praktiken in einer konsolidierten Fassung auf seiner Website zusammengeführt und konsultiert dazu technische Folgeanpassungen am Basler Rahmenwerk (aktualisierte Querverweise, Verschiebung einzelner Anwendungsleitlinien). Stellungnahmen sind bis 21. Dezember 2026 möglich.\n\nDer BCBS konsultiert nun Folgeanpassungen am Basler Rahmenwerk, um Querverweise auf die neuen Kapitel der konsolidierten Leitlinien zu aktualisieren. Zudem sollen Inhalte bestimmter „Application guidance“-Kapitel des Basler Rahmenwerks in die konsolidierten Leitlinien überführt werden. Dies soll die Verbreitung von Leitfäden reduzieren und Standards klarer von Leitlinien abgrenzen.\n\nInteressierte Parteien können bis Montag, den 21. Dezember 2026, Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has brought its guidelines and sound practices together in a consolidated version on its website and is consulting on related technical amendments to the Basel Framework (updated cross-references, migration of certain application guidance). Comments are due by 21 December 2026.\n\nThe BCBS is now consulting on consequential amendments to the Basel Framework to update cross-references to the new chapters in the consolidated guidelines. In addition, the contents of certain “Application guidance” chapters in the Basel Framework are to be migrated to the consolidated guidelines. This is intended to reduce the proliferation of guidance materials and to more clearly distinguish between standards and guidelines.\n\nInterested parties can submit comments on the proposed changes by Monday, 21 December 2026."
         },
         "url": "https://www.bis.org/publications/consolidated-guidelines-consequential-amendments",
-        "imp": "low"
+        "imp": "low",
+        "deadline": "21.12.2026"
       },
       {
         "d": "16.10.2026",
@@ -695,6 +382,321 @@
         "imp": "low"
       }
     ],
+    "emir": [
+      {
+        "d": "29.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Konsultation zu Margenanforderungen für nicht zentral abgewickelte Derivate (Ares(2026)10142916)",
+          "en": "Consultation on margin requirements for non-centrally cleared derivatives (Ares(2026)10142916)"
+        },
+        "sl": "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
+        "s": {
+          "de": "Die Europäische Kommission konsultiert Änderungen an den technischen Regulierungsstandards (RTS) zu bestimmten Margenanforderungen für nicht zentral abgewickelte Transaktionen. Diese Änderungen betreffen die Anwendung von Sicherheitenanforderungen für Derivatekontrakte, die nicht über eine zentrale Gegenpartei (CCP) abgewickelt werden.\n\nDie Konsultation ist relevant für Finanzinstitute, die außerbörsliche Derivate (OTC-Derivate) handeln und dabei Margenanforderungen gemäß EMIR erfüllen müssen. Die Anpassungen könnten Auswirkungen auf die Berechnung und den Austausch von Initial- und Variation-Margin haben.\n\nInteressierte Parteien können bis zum 26. November 2026 Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
+          "en": "The European Commission is consulting on amendments to the Regulatory Technical Standards (RTS) on certain margin requirements applicable to non-centrally cleared transactions. These amendments concern the application of collateral requirements for derivative contracts not cleared by a central counterparty (CCP).\n\nThis consultation is relevant for financial institutions trading over-the-counter (OTC) derivatives that are subject to margin requirements under EMIR. The adjustments could impact the calculation and exchange of initial and variation margin.\n\nInterested parties can submit comments on the proposed amendments until 26 November 2026."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19680",
+        "imp": "medium",
+        "deadline": "26.11.2026",
+        "refnum": "Ares(2026)10142916"
+      },
+      {
+        "d": "20.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finale RTS zu Anforderungen an Post-Trade Risk Reduction Services (EMIR)",
+          "en": "Final RTS on requirements for Post-Trade Risk Reduction services (EMIR)"
+        },
+        "sl": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht zu den technischen Regulierungsstandards (RTS) für Post-Trade Risk Reduction (PTRR) Services veröffentlicht. Diese RTS legen die Anforderungen fest, unter denen Derivategeschäfte, die im Rahmen von PTRR-Diensten abgeschlossen werden, von der Clearingpflicht gemäß EMIR ausgenommen werden können.\n\nDer Bericht befasst sich mit der Identifizierung von PTRR-Diensten, der Marktrisikoneutralität, der Risikoreduzierung und der nicht-preisbildenden Natur von PTRR-Übungen. Zudem werden Anforderungen an die Unabhängigkeit der PTRR-Dienstleister von den Gegenparteien der OTC-Derivatekontrakte sowie an die Teilnahme und Ausführung einer PTRR-Übung detailliert beschrieben. Für Finanzunternehmen, die OTC-Derivate handeln, sind diese Standards relevant, da sie die Bedingungen für die Nutzung von PTRR-Diensten zur Reduzierung von Risikopositionen und zur potenziellen Befreiung von der Clearingpflicht klären.\n\nDes Weiteren werden operative Bedingungen für PTRR-Dienstleister behandelt, einschließlich algorithmischer Anforderungen, organisatorischer Vorgaben, Kontrollen und Kriterien zur Vermeidung der Umgehung der Clearingpflicht. Auch die Aufzeichnung von Transaktionen, die im Rahmen einer PTRR-Übung ausgeführt werden, ist ein wichtiger Bestandteil der neuen Regelungen.",
+          "en": "ESMA has published its final report on the Regulatory Technical Standards (RTS) for Post-Trade Risk Reduction (PTRR) services. These RTS define the requirements under which derivative transactions concluded within the framework of PTRR services may be exempted from the clearing obligation under EMIR.\n\n The report addresses the identification of PTRR services, market risk neutrality, risk reduction, and the non-price-forming nature of PTRR exercises. It also details requirements for the independence of PTRR service providers from the counterparties to OTC derivative contracts, as well as for the participation and execution of a PTRR exercise. These standards are relevant for financial undertakings trading OTC derivatives, as they clarify the conditions for using PTRR services to reduce risk exposures and potentially qualify for an exemption from the clearing obligation.\n\nFurthermore, operational conditions for PTRR service providers are covered, including algorithmic requirements, organizational requirements, controls, and criteria to prevent circumvention of the clearing obligation. The record-keeping of transactions executed pursuant to a PTRR exercise is also an important component of the new regulations."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-regulatory-standards-requirements-post-trade-risk-reduction-services-purpose",
+        "imp": "high",
+        "refnum": "ESMA74-1049116226-981"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      },
+      {
+        "d": "05.01.2017",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Intragruppenausnahmen nach EMIR (Art. 11 Abs. 6-10)",
+          "en": "Guidance on Intragroup Exemptions under EMIR (Art. 11(6)-(10))"
+        },
+        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-11-abs-6-10-emir",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen gemäß Artikel 11 Absätze 6 bis 10 der EMIR-Verordnung veröffentlicht. Es konkretisiert die Anforderungen und das Verfahren für Unternehmen, die von den Clearing- und Besicherungsplichten für Derivate innerhalb einer Gruppe befreit werden möchten.\n\nDas Merkblatt richtet sich an Finanz- und Nichtfinanzkontrahenten, die gruppeninterne Derivategeschäfte tätigen und die Voraussetzungen für eine Ausnahme von den EMIR-Pflichten erfüllen. Es erläutert die notwendigen Schritte und einzureichenden Unterlagen für die Beantragung oder Anzeige dieser Ausnahmen bei der BaFin.\n\nDas Merkblatt wurde am 5. Januar 2017 veröffentlicht und zuletzt am 1. April 2017 geändert. Es ist über das MVP-Portal zugänglich.",
+          "en": "BaFin has published guidance on notifications and applications for intragroup exemptions under Article 11(6) to (10) of the EMIR Regulation. It specifies the requirements and procedures for companies seeking to be exempted from clearing and collateralisation obligations for intragroup derivatives.\n\nThis guidance is aimed at financial and non-financial counterparties that conduct intragroup derivative transactions and meet the conditions for an exemption from EMIR obligations. It explains the necessary steps and documents to be submitted for applying for or notifying these exemptions to BaFin.\n\nThe guidance was published on January 5, 2017, and last amended on April 1, 2017. It is accessible via the MVP portal."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_wa_Merkblatt_Art11_EMIR_Anzeigen_Antraege_Intragruppenausnahmen.html",
+        "imp": "medium"
+      },
+      {
+        "d": "22.12.2015",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen von der EMIR-Clearingpflicht",
+          "en": "Guidance Notice on Notifications and Applications for Intragroup Exemptions from EMIR Clearing Obligation"
+        },
+        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-4-emir-sowie-bei-drit",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Ausgestaltung von Anzeigen und Anträgen für Intragruppenausnahmen von der Clearingpflicht nach Art. 4 EMIR sowie bei Drittstaatensachverhalten veröffentlicht. Es konkretisiert die Anforderungen für finanzielle und nichtfinanzielle Gegenparteien, die von der Clearingpflicht für OTC-Derivate befreit werden möchten.\n\nDas Merkblatt erläutert die zwei Hauptfälle für Intragruppenausnahmen: Geschäfte zwischen EU-ansässigen Gegenparteien (Art. 4 Abs. 2a EMIR) und Geschäfte, bei denen eine Gegenpartei in einem Drittstaat ansässig ist (Art. 4 Abs. 2b EMIR). Es beschreibt die jeweiligen Anzeige- und Antragsverfahren, einschließlich der Fristen und der Möglichkeit für die BaFin, die Ausnahme zu untersagen. Auch temporäre Ausnahmen durch RTS für Drittstaaten-Geschäfte werden behandelt.\n\nDie Regelungen sind relevant für alle finanziellen und nichtfinanziellen Gegenparteien, die OTC-Derivate handeln und die Clearingschwelle nach Art. 10 Abs. 1 EMIR überschreiten. Sie müssen die im Merkblatt beschriebenen Verfahren einhalten, um Intragruppengeschäfte von der Clearingpflicht ausnehmen zu können. Das Merkblatt berücksichtigt die Änderungen durch EMIR REFIT, die seit dem 17.06.2019 gelten, und die Q&A der ESMA zur EMIR-Implementierung.",
+          "en": "BaFin has published a guidance notice on the design of notifications and applications for intragroup exemptions from the clearing obligation under Art. 4 EMIR, including cases involving third-country entities. It specifies the requirements for financial and non-financial counterparties seeking exemption from the clearing obligation for OTC derivatives.\n\nThe guidance notice explains the two main scenarios for intragroup exemptions: transactions between EU-based counterparties (Art. 4 para. 2a EMIR) and transactions where one counterparty is located in a third country (Art. 4 para. 2b EMIR). It describes the respective notification and application procedures, including deadlines and BaFin's power to prohibit the exemption. Temporary exemptions for third-country transactions under RTS are also covered.\n\nThe regulations are relevant for all financial and non-financial counterparties trading OTC derivatives and exceeding the clearing threshold under Art. 10 para. 1 EMIR. They must follow the procedures outlined in the guidance notice to exempt intragroup transactions from the clearing obligation. The notice incorporates the changes introduced by EMIR REFIT, effective since 17 June 2019, and ESMA's Q&A on EMIR implementation."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_infoblatt_emir_intragruppenausnahmen_wa.html",
+        "imp": "medium"
+      },
+      {
+        "d": "18.02.2014",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "EMIR in der Versicherungsaufsicht: Anwendbarkeit und Meldepflichten",
+          "en": "EMIR in Insurance Supervision: Applicability and Reporting Obligations"
+        },
+        "sl": "european-market-infrastructure-regulation-emir-in-der-versicherungsaufsicht",
+        "s": {
+          "de": "Die BaFin erläutert die Anwendbarkeit der European Market Infrastructure Regulation (EMIR) auf Versicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung. Die EMIR zielt darauf ab, systemische Risiken im europäischen Derivatemarkt durch Transparenz und Sicherheit zu reduzieren, insbesondere durch die Abwicklung standardisierter OTC-Derivate über zentrale Gegenparteien und die Meldung an Transaktionsregister.\n\nVersicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung werden als „finanzielle Gegenparteien“ eingestuft und unterliegen der Clearingpflicht für standardisierte OTC-Derivate. Nichtfinanzielle Gegenparteien, zu denen die BaFin auch Sterbekassen zählt, sind von der Clearingpflicht betroffen, wenn sie Derivate in größerem Umfang für nicht-absichernde Zwecke einsetzen. Alle Derivategeschäfte müssen zur Erhöhung der Transparenz an ein Transaktionsregister gemeldet werden.\n\nDie BaFin präzisiert, dass die Delegation der Meldepflicht nach Art. 9 Abs. 1 EMIR an den Kontrahenten keine Auslagerung im Sinne des VAG darstellt, während eine Übertragung an einen geeigneten Dritten eine Einzelfallprüfung auf Funktionsausgliederung erfordert. Auch bei der Auslagerung von Dienstleistungen sind die Anforderungen des Risikomanagements gemäß VAG und MaRisk VA einzuhalten.",
+          "en": "BaFin clarifies the applicability of the European Market Infrastructure Regulation (EMIR) to insurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision. EMIR aims to mitigate systemic risks in the European derivatives market by increasing transparency and safety, particularly through the clearing of standardized OTC derivatives via central counterparties and reporting to trade repositories.\n\nInsurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision are classified as “financial counterparties” and are subject to the clearing obligation for standardized OTC derivatives. Non-financial counterparties, which BaFin also considers to include burial funds, are subject to the clearing obligation if they use derivatives extensively for non-hedging purposes. All derivative transactions must be reported to a trade repository to enhance transparency.\n\nBaFin specifies that delegating the reporting obligation under Art. 9(1) EMIR to a counterparty does not constitute outsourcing under the German Insurance Supervision Act (VAG), whereas transferring it to a suitable third party requires a case-by-case assessment for functional outsourcing. Even when outsourcing services, risk management requirements according to VAG and MaRisk VA must be observed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_hinweise_emir_va.html",
+        "imp": "medium"
+      },
+      {
+        "d": "18.02.2014",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Einordnung zur Delegation der EMIR-Meldepflicht für Versicherer",
+          "en": "BaFin Classification of EMIR Reporting Obligation Delegation for Insurers"
+        },
+        "sl": "versicherungsaufsichtsrechtliche-einordnung-der-delegation-der-meldepflicht-nach",
+        "s": {
+          "de": "Die BaFin präzisiert die versicherungsaufsichtsrechtliche Einordnung der Delegation der Meldepflicht nach Artikel 9 Abs. 1 EMIR. Sie unterscheidet dabei zwischen der Übertragung der Meldepflicht auf den Kontrahenten und auf einen geeigneten Dritten.\n\nWird die Meldepflicht auf den Kontrahenten übertragen, liegt nach Auffassung der BaFin keine Auslagerung oder Funktionsausgliederung gemäß § 5 Abs. 3 Nr. 4 VAG vor. Dies dient der Vermeidung von Mehrfachmeldungen und der Arbeitsvereinfachung. Bei einer Übertragung auf einen geeigneten Dritten ist hingegen stets eine Einzelfallprüfung erforderlich, ob eine Funktionsausgliederung nach §§ 5 Abs. 3 Nr. 4, 64a Abs. 4 VAG i.V.m. Punkt 8 der MaRisk VA oder eine Ausgliederung von Dienstleistungen nach § 64a Abs. 4 VAG i.V.m. Punkt 8 der MaRisk VA vorliegt.\n\nVersicherungsunternehmen müssen bei der Delegation der Meldepflicht an einen geeigneten Dritten die Anforderungen an das Risikomanagement gemäß § 64a Abs. 4 VAG und Punkt 8 der MaRisk VA einhalten. Die BaFin weist darauf hin, dass dies auch bei der Auslagerung von Dienstleistungen gilt.",
+          "en": "BaFin clarifies the insurance supervisory classification of the delegation of the reporting obligation under Article 9(1) EMIR. It distinguishes between transferring the reporting obligation to the counterparty and to a suitable third party.\n\nAccording to BaFin, if the reporting obligation is transferred to the counterparty, it does not constitute an outsourcing or functional outsourcing under Section 5 (3) No. 4 VAG. This aims to avoid duplicate reports and simplify work. However, if the obligation is transferred to a suitable third party, an individual assessment is always required to determine whether it constitutes a functional outsourcing under Sections 5 (3) No. 4, 64a (4) VAG in conjunction with point 8 of MaRisk VA, or an outsourcing of services under Section 64a (4) VAG in conjunction with point 8 of MaRisk VA.\n\nInsurance undertakings must comply with the risk management requirements under Section 64a (4) VAG and point 8 of MaRisk VA when delegating the reporting obligation to a suitable third party. BaFin points out that this also applies to the outsourcing of services."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_emir_meldepflicht_va.html",
+        "imp": "medium"
+      }
+    ],
+    "idd": [
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zum Entwurf einer Aufsichtserklärung zu IBIP-Vertriebsprozessen",
+          "en": "Consultation on the draft Supervisory Statement on IBIP Sales Processes"
+        },
+        "sl": "consultation-on-the-draft-supervisory-statement-on-ibip-sales-processes",
+        "s": {
+          "de": "Die EIOPA konsultiert einen Entwurf für eine Aufsichtserklärung zu ergebnisorientierter Aufsicht über Vertriebsprozesse für Versicherungsanlageprodukte (IBIPs) und vorvertragliche Offenlegungen. Die Erklärung richtet sich an nationale zuständige Behörden und zielt darauf ab, eine konsistentere, verhältnismäßigere und risikobasierte Aufsicht über die praktische Anwendung bestehender Vertriebssicherungsmaßnahmen zu fördern.\n\nDie Aufsichtserklärung ergänzt die Compliance-basierte Aufsicht, führt keine neuen regulatorischen Anforderungen oder Berichtspflichten ein und schreibt keine spezifischen Aufsichtsmethoden vor. Sie soll die Customer Journey vereinfachen und den Aufwand reduzieren. Die EIOPA bittet insbesondere um praktische Rückmeldungen zu unnötiger Komplexität und Duplizierung in der Customer Journey, zur Anwendung der Verhältnismäßigkeit, zu relevanten Schutzmaßnahmen und Kompromissen sowie zur Klarheit und Benutzerfreundlichkeit des vorgeschlagenen Aufsichtsansatzes.\n\nInteressierte Kreise können bis zum 04.01.2027 über eine Online-Umfrage Stellungnahmen einreichen. Die Antworten werden auf der EIOPA-Website veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
+          "en": "EIOPA is consulting on a draft Supervisory Statement concerning outcomes-focused supervision of insurance-based investment product (IBIP) sales processes and pre-contractual disclosures. Addressed to national competent authorities, the Statement aims to promote more consistent, proportionate, and risk-based supervision of how existing sales safeguards operate in practice.\n\nThe Supervisory Statement complements compliance-based supervision and does not introduce new regulatory requirements, reporting obligations, or prescribed supervisory methodologies. It aims to simplify the customer journey and reduce burden. EIOPA particularly invites practical input on unnecessary complexity and duplication in the customer journey, the application of proportionality, relevant safeguards and trade-offs, and the clarity and usability of the proposed supervisory approach.\n\nStakeholders are invited to submit their feedback via an online survey by 4 January 2027. Responses will be published on EIOPA’s website unless confidentiality is requested."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-draft-supervisory-statement-ibip-sales-processes_en",
+        "imp": "medium",
+        "deadline": "04.01.2027"
+      },
+      {
+        "d": "04.07.2023",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Auswirkungen von EuGH-Urteil auf Vermittlerstatus bei Gruppenversicherungen",
+          "en": "Auswirkungen von EuGH-Urteil auf Vermittlerstatus bei Gruppenversicherungen"
+        },
+        "sl": "auswirkungen-von-eugh-urteil-auf-vermittlerstatus-bei-gruppenversicherungen",
+        "s": {
+          "de": "Die BaFin hat gemeinsam mit der DIHK/IHK eine Aufsichtsmitteilung zu den Auswirkungen eines EuGH-Urteils (C-633/20) auf den Vermittlerstatus bei Gruppenversicherungen veröffentlicht. Das Urteil vom September 2022 betrifft die Frage, wann Versicherungsnehmer von Gruppenversicherungsverträgen, wie Unternehmen oder Vereine, die ihren Mitarbeitern oder Mitgliedern Versicherungsschutz ermöglichen, als Versicherungsvermittler einzustufen sind.\n\nDie Mitteilung klärt, unter welchen Umständen beispielsweise ein Verein oder Arbeitgeber zum Versicherungsvermittler werden könnte. Sie bietet praxisnahe Hinweise und Beispiele, um die Einordnung in der Praxis zu erleichtern. Dies ist relevant für Unternehmen und Vereine, die Gruppenversicherungen anbieten, da eine Einstufung als Vermittler zusätzliche regulatorische Pflichten nach sich ziehen würde.\n\nDie Aufsichtsmitteilung ist auf der Website der BaFin verfügbar.",
+          "en": "The BaFin, in cooperation with the DIHK/IHK, has published a supervisory statement on the implications of a European Court of Justice (ECJ) ruling (C-633/20) for the intermediary status in group insurance. The September 2022 ruling addresses the question of when policyholders of group insurance contracts, such as companies or associations providing insurance coverage to their employees or members, are to be classified as insurance intermediaries.\n\nThe statement clarifies the circumstances under which, for example, an association or an employer could become an insurance intermediary. It provides practical guidance and examples to facilitate classification in practice. This is relevant for companies and associations offering group insurance, as classification as an intermediary would entail additional regulatory obligations.\n\nThe supervisory statement is available on the BaFin website."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2023/aufsichtsmitteilung_230704_Gruppenversicherungen.html",
+        "imp": "medium"
+      },
+      {
+        "d": "08.05.2023",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungsprodukten (01/2023 VA)",
+          "en": "BaFin Guidance Notice on Conduct-of-Business Supervisory Aspects of Unit-Linked Life Insurance Products (01/2023 VA)"
+        },
+        "sl": "merkblatt-01-2023-va-zu-wohlverhaltensaufsichtlichen-aspekten-bei-kapitalbildend",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungsprodukten veröffentlicht. Es konkretisiert die Anforderungen an das Produktfreigabeverfahren gemäß Versicherungsvertriebsrichtlinie (IDD) und den nationalen Umsetzungsnormen (§ 23 Abs. 1a bis 1c, § 48a VAG).\n\nIm Fokus steht die unternehmenseigene Feststellung eines angemessenen Kundennutzens der vertriebenen Produkte. Das Merkblatt beschreibt, wie die BaFin die von EIOPA entwickelten Werkzeuge zur Prüfung des Preis-Leistungs-Verhältnisses von Produkten anwendet. Es richtet sich an inländische und ausländische Lebensversicherungsunternehmen, die kapitalbildende Lebensversicherungsprodukte vertreiben, wobei Pensionskassen ausgenommen sind.\n\nDie BaFin erwartet, dass Lebensversicherungsunternehmen aus anderen EU-/EWR-Staaten die Ausführungen zum Produktfreigabeverfahren bei grenzüberschreitender Tätigkeit in Deutschland beachten. Das Merkblatt ist am 8. Mai 2023 veröffentlicht worden.",
+          "en": "BaFin has published a guidance notice on conduct-of-business supervisory aspects of unit-linked life insurance products. It specifies the requirements for the product approval process in accordance with the Insurance Distribution Directive (IDD) and national implementing standards (Section 23 (1a) to (1c), Section 48a VAG).\n\nThe focus is on the companies' own determination of appropriate customer value for the products distributed. The guidance notice describes how BaFin applies the tools developed by EIOPA to assess the value for money of products. It is aimed at domestic and foreign life insurance companies that distribute unit-linked life insurance products, with pension funds being excluded.\n\nBaFin expects life insurance companies from other EU/EEA states to observe the explanations on the product approval process when operating across borders in Germany. The guidance notice was published on May 8, 2023."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_01_2023_wohlverhaltensaufsichtliche_aspekte_va.html",
+        "imp": "medium"
+      },
+      {
+        "d": "31.10.2022",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungen (Konsultation 08/2022)",
+          "en": "Guidance Notice on Conduct-of-Business Supervisory Aspects of Unit-Linked Life Insurance Products (Consultation 08/2022)"
+        },
+        "sl": "konsultation-08-2022-merkblatt-2022-va-merkblatt-zu-wohlverhaltensaufsichtlichen",
+        "s": {
+          "de": "Die BaFin hat den Entwurf eines Merkblatts zu wohlverhaltensaufsichtlichen Aspekten bei kapitalbildenden Lebensversicherungsprodukten zur Konsultation gestellt. Ziel ist es, sicherzustellen, dass diese Produkte den Kunden einen angemessenen Nutzen bieten und Interessenkonflikte im Vertrieb vermieden werden. Der Entwurf konkretisiert die Anforderungen an das Produktfreigabeverfahren gemäß § 23 Abs. 1a bis 1c VAG und der Delegierten Verordnung 2017/2358.\n\nIm Fokus stehen die Sicherstellung eines realen Anlageerfolgs nach Kosten und oberhalb der Inflationserwartung sowie die Vermeidung von Fehlanreizen durch Vertriebsvergütungen (§ 48a VAG, Delegierte Verordnung 2017/2359). Die BaFin erläutert zudem ihren risikoorientierten Aufsichtsansatz, bei dem insbesondere Versicherer mit überdurchschnittlich hohen Effektivkosten oder hohen Aufwendungen für Versicherungsvermittler (jeweils im oberen Viertel der Branchenwerte) näher geprüft werden. Ergänzende Kriterien können Stornoquoten oder Rückvergütungen sein.\n\nDas Merkblatt richtet sich an in- und ausländische Lebensversicherungsunternehmen, die der BaFin-Aufsicht unterliegen, in den Anwendungsbereich der IDD fallen und kapitalbildende Lebensversicherungsprodukte anbieten. Es zeigt auf, wie die Vorgaben der IDD bei diesen Produkten umzusetzen sind. Die Inhalte stehen im Einklang mit den Arbeiten der EIOPA zu Product Oversight and Governance (POG).\n\nStellungnahmen zum Konsultationsentwurf konnten bis zum 15. Januar 2023 eingereicht werden.",
+          "en": "BaFin has published a draft guidance notice on conduct-of-business supervisory aspects of unit-linked life insurance products for consultation. The aim is to ensure that these products offer customers appropriate benefits and that conflicts of interest in distribution are avoided. The draft specifies the requirements for the product approval process in accordance with Section 23 (1a) to (1c) of the German Insurance Supervision Act (VAG) and Delegated Regulation 2017/2358.\n\nThe focus is on ensuring a real investment return after costs and above inflation expectations, as well as avoiding misincentives through distribution remuneration (Section 48a VAG, Delegated Regulation 2017/2359). BaFin also explains its risk-oriented supervisory approach, under which insurers with above-average effective costs or high expenses for insurance intermediaries (each in the upper quartile of industry values) will be examined more closely. Additional criteria may include lapse rates or rebates to distribution partners.\n\nThe guidance notice is addressed to domestic and foreign life insurance undertakings subject to BaFin supervision, falling within the scope of the Insurance Distribution Directive (IDD) and offering unit-linked life insurance products. It outlines how the IDD requirements are to be implemented for these products. The content is consistent with EIOPA's work on Product Oversight and Governance (POG).\n\nComments on the consultation draft could be submitted until 15 January 2023."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2022/kon_08_22_Konsultation_wohlverhaltensaufsichliche_Aspekte_lv_produkte.html",
+        "imp": "medium",
+        "refnum": "Konsultation 08/2022"
+      },
+      {
+        "d": "03.03.2021",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben 03/2021 (VA) - Hinweise zu echten Gruppenversicherungsverträgen",
+          "en": "Rundschreiben 03/2021 (VA) - Hinweise zu echten Gruppenversicherungsverträgen"
+        },
+        "sl": "rundschreiben-03-2021-va-hinweise-zu-echten-gruppenversicherungsvertraegen",
+        "s": {
+          "de": "Die BaFin präzisiert in ihrem Rundschreiben 03/2021 (VA) die Anforderungen an „echte Gruppenversicherungsverträge“, bei denen die versicherten Personen Verbraucher sind. Sie definiert diese als einheitliche Verträge mit einem Versicherungsnehmer, die eine Personengruppe erfassen. Die versicherten Personen können automatisch oder durch Beitrittserklärung einbezogen werden, wobei die Gruppenzugehörigkeit das Kriterium ist.\n\nDas Rundschreiben zielt darauf ab, den kollektiven Verbraucherschutz zu stärken. Es erwartet, dass Versicherungsunternehmen in solchen Verträgen ein direktes Forderungsrecht der versicherten Person gegenüber dem Versicherer vorsehen und das Aufrechnungsrecht des Versicherers gegen die versicherte Person ausschließen, wenn diese ihre Zahlungsverpflichtung erfüllt hat. Dies weicht von den Regelungen in § 44 Abs. 2 VVG und § 35 VVG ab.\n\nZudem sollen versicherte Personen bei Beitritt umfassend über ihre Rechte und die Vertragsbedingungen informiert werden, insbesondere über das Produktinformationsblatt (PIB) und das Basisinformationsblatt (BIB) sowie über das Direktanspruchsrecht und den Ausschluss des Aufrechnungsrechts. Ausgenommen vom Anwendungsbereich sind unter anderem Pensionskassen, Pensionsfonds, Direktversicherungen sowie bestimmte Rückdeckungs-, Kfz-, Haftpflicht- und Cyber-Gruppenversicherungsverträge.",
+          "en": "BaFin Circular 03/2021 (VA) clarifies the requirements for “genuine group insurance contracts” where the insured persons are consumers. It defines these as uniform contracts with a single policyholder covering a group of people. Insured persons can be included automatically or by declaration of accession, with group affiliation being the criterion.\n\nThe circular aims to strengthen collective consumer protection. It expects insurance companies to provide for a direct right of claim for the insured person against the insurer in such contracts and to exclude the insurer's right of set-off against the insured person if the latter has fulfilled their payment obligation. This deviates from the provisions in Section 44 (2) VVG and Section 35 VVG.\n\nFurthermore, insured persons must be comprehensively informed about their rights and the contract terms upon accession, especially regarding the Product Information Document (PID) and the Basic Information Document (BID), as well as the direct right of claim and the exclusion of the right of set-off. Excluded from the scope are, among others, pension funds, direct insurance, and certain reinsurance, motor vehicle, liability, and cyber group insurance contracts."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2021/rs_2021_03_hinweise_echte_gruppenversicherungsvertraege_va.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 03/2021"
+      },
+      {
+        "d": "21.10.2020",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zur Auslegung des Sondervergütungsverbotes (§ 48b Versicherungsaufsichtsgesetz - VAG)",
+          "en": "Merkblatt zur Auslegung des Sondervergütungsverbotes (§ 48b Versicherungsaufsichtsgesetz - VAG)"
+        },
+        "sl": "merkblatt-zur-auslegung-des-sonderverguetungsverbotes-48b-versicherungsaufsichts",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Auslegung des Sondervergütungsverbotes nach § 48b Versicherungsaufsichtsgesetz (VAG) veröffentlicht. Es fasst frühere Hinweise aus dem Rundschreiben 11/2018 zusammen und aktualisiert diese. Das Verbot untersagt Versicherungsunternehmen, -vermittlern und deren Angestellten, Versicherungsnehmern, versicherten Personen oder Bezugsberechtigten Sondervergütungen zu gewähren oder zu versprechen, um Fehlanreize zu vermeiden.\n\nDas Merkblatt präzisiert den Anwendungsbereich des Verbots. Es gilt für unmittelbare und mittelbare Zuwendungen, die über die vertraglich vereinbarte Leistung hinausgehen, wie Provisionsabgaben, Sach- oder Dienstleistungen oder Rabattierungen, sofern sie nicht geringwertig sind. Die BaFin überwacht die Einhaltung durch Versicherungsunternehmen, während die Aufsicht über Versicherungsvermittler bei den Industrie- und Handelskammern liegt. Tippgeber fallen in der Regel nicht unter das Verbot, es sei denn, es liegt eine planmäßige Weitergabe der Vergütung an den Versicherungsnehmer in Kenntnis des Versicherungsunternehmens vor.\n\nAls geringwertig gelten Zuwendungen im Rahmen eines bestehenden Vertrages bis zu 15 Euro oder 5 % der Jahresprämie pro Kalenderjahr, sofern sie als Sach- oder Dienstleistungen erbracht werden (kein Bargeld oder bargeldgleiche Leistungen). Für Zuwendungen zur Anbahnung oder anlässlich eines Vertragsabschlusses liegt die Grenze bei 15 Euro pro Versicherungsverhältnis und Kalenderjahr, wobei nur eine dieser Zuwendungen gewährt werden darf.",
+          "en": "BaFin has published a guidance notice on the interpretation of the special remuneration prohibition under Section 48b of the German Insurance Supervision Act (VAG). It consolidates and updates previous guidance from Circular 11/2018. The prohibition forbids insurance undertakings, intermediaries, and their employees from granting or promising special remuneration to policyholders, insured persons, or beneficiaries from an insurance contract, aiming to prevent misaligned incentives.\n\nThe guidance clarifies the scope of the prohibition. It applies to direct and indirect benefits beyond the contractually agreed service, such as commission rebates, goods or services, or discounts, unless they are of minor value. BaFin supervises compliance by insurance undertakings, while the supervision of insurance intermediaries falls under the responsibility of the respective Chambers of Industry and Commerce. Referrers (Tippgeber) are generally not subject to the prohibition, unless there is a systematic transfer of remuneration to the policyholder with the knowledge of the insurance undertaking.\n\nBenefits are considered of minor value if, for an existing contract, they do not exceed 15 euros or 5% of the annual premium per calendar year, provided they are rendered as goods or services (no cash or cash equivalents). For benefits granted during contract initiation or upon conclusion, the limit is 15 euros per insurance relationship and calendar year, with only one of these types of benefits allowed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_201021_sonderverguetungsverbot_va.html",
+        "imp": "medium"
+      },
+      {
+        "d": "25.03.2020",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Rundschreiben über echte Gruppenversicherungsverträge (Konsultation 04/2020)",
+          "en": "Consultation on the Circular on Genuine Group Insurance Contracts (Consultation 04/2020)"
+        },
+        "sl": "konsultation-04-2020-rundschreiben-2020-va-hinweise-zu-echten-gruppenversicherun",
+        "s": {
+          "de": "Die BaFin hat den Entwurf eines Rundschreibens zur Konsultation gestellt, das Hinweise zu echten Gruppenversicherungsverträgen zusammenführt. Es soll die bestehenden Rundschreiben 3/90, 3/94 und 2/97 in einem Dokument bündeln und an aktuelle Gesetzesänderungen sowie digitale Kommunikationsmöglichkeiten anpassen.\n\nZiel ist es, Missstände zulasten der versicherten Personen zu vermeiden und den kollektiven Verbraucherschutz zu stärken. Eine Branchenabfrage der BaFin zeigte, dass es derzeit kein einheitliches Schutzniveau gibt. Das Rundschreiben soll durch die Definition des Gruppenversicherungsvertrags und die Konkretisierung gesetzlicher Vorgaben die Rechtssicherheit für Versicherungsunternehmen erhöhen.\n\nStellungnahmen zum Entwurf können bis zum 6. Juli 2020 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen auf ihrer Internetseite zu veröffentlichen.",
+          "en": "BaFin has published a draft circular for consultation, which consolidates guidance on genuine group insurance contracts. It aims to combine existing circulars 3/90, 3/94, and 2/97 into a single document and adapt them to current legal changes and digital communication possibilities.\n\nThe objective is to prevent abuses to the detriment of insured persons and to strengthen collective consumer protection. A BaFin industry survey revealed that there is currently no uniform level of protection. The circular aims to increase legal certainty for insurance undertakings by defining group insurance contracts and specifying legal requirements.\n\nComments on the draft can be submitted to BaFin in writing or by email until July 6, 2020. BaFin intends to publish the submitted comments on its website."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
+        "imp": "medium",
+        "refnum": "Konsultation 04/2020"
+      }
+    ],
     "luaifm": [
       {
         "d": "09.11.2026",
@@ -855,8 +857,8 @@
       {
         "d": "06.11.2026",
         "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
+          "de": "Meldung",
+          "en": "News"
         },
         "src": "eba.europa.eu",
         "ti": {
@@ -865,8 +867,8 @@
         },
         "sl": "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends",
         "s": {
-          "de": "Die EBA hat die nächsten Schritte zur Vereinfachung des aufsichtsrechtlichen Meldewesens dargelegt und die Umsetzungsfristen nach Rückmeldungen zur Konsultation der ITS verlängert. Das finalisierte Paket wird zusätzliche Vereinfachungsmaßnahmen, mehr Verhältnismäßigkeit und längere Umsetzungsfristen einführen, um die Meldepflichten zu reduzieren, ohne die für eine effektive Aufsicht notwendigen Informationen zu beeinträchtigen.\n\nZu den wesentlichen Änderungen gehören eine weitere Vereinfachung der Meldebögen, eine stärkere Proportionalität, präzisere Anweisungen, reduzierte Meldefrequenzen und eine engere Abstimmung mit den Offenlegungspflichten. Dies umfasst eine Reduzierung der Meldepflichten für Sicherheiten, Stresstests und ESG-bezogene Daten sowie die Integration von Kreditrisiko- und IFRS-9-Benchmarking-Meldungen in das aufsichtsrechtliche Meldewesen. Auch die Meldung von operationellen Verlusten wird vereinfacht und ein spezielles Modul für Stresstest-Meldungen eingeführt.\n\nDie EBA wird den Abschlussbericht zu den Entwürfen der technischen Durchführungsstandards (ITS) im Dezember 2026 veröffentlichen. Die erste Referenzperiode für neue Anforderungen wird auf Dezember 2027 verschoben, und bestimmte Meldebereiche wie Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG-Meldungen werden bis Dezember 2028 aufgeschoben. Im Übergangszeitraum sind bestehende Vorgaben für IFRS-18, FRTB, operationelle Risikoverluste und aufsichtsrechtliches Benchmarking weiterhin zu beachten.",
-          "en": "The EBA has outlined the next steps for simplifying supervisory reporting and extended implementation timelines following feedback on the ITS consultation. The finalized package will introduce additional simplification measures, greater proportionality, and extended implementation timelines, reducing reporting costs while preserving the information necessary for effective supervision.\n\nKey changes include further simplification of reporting templates, greater proportionality, clarified instructions, reduced reporting frequencies, and closer alignment with disclosure requirements. This encompasses a reduction in collateral reporting, stress testing, and ESG-related reporting, as well as the integration of credit risk and IFRS 9 benchmarking reporting into the supervisory reporting framework. Operational risk loss reporting will also be simplified, and a dedicated stress-testing reporting module will be introduced.\n\nThe EBA will publish the final report on the draft Implementing Technical Standards (ITS) package in December 2026. The first reference date for new requirements is postponed to December 2027, with selected reporting areas such as liquidity, asset encumbrance, supervisory benchmarking, and ESG reporting deferred until December 2028. During the transition period, existing requirements for IFRS-18, FRTB, operational risk losses, and supervisory benchmarking must continue to be observed."
+          "de": "Die EBA verlängert nach Abschluss der Konsultation die Umsetzungsfristen für das vereinfachte aufsichtliche Meldewesen: Neue Anforderungen gelten erstmals zum Meldestichtag Dezember 2027, die Bereiche Liquidität, Asset Encumbrance, aufsichtliches Benchmarking und ESG erst ab Dezember 2028. Den Abschlussbericht zu den ITS will die EBA im Dezember 2026 vorlegen; Institute sollten ihre Umsetzungsplanung im Meldewesen daran ausrichten.\n\nZu den wesentlichen Änderungen gehören eine weitere Vereinfachung der Meldebögen, eine stärkere Proportionalität, präzisere Anweisungen, reduzierte Meldefrequenzen und eine engere Abstimmung mit den Offenlegungspflichten. Dies umfasst eine Reduzierung der Meldepflichten für Sicherheiten, Stresstests und ESG-bezogene Daten sowie die Integration von Kreditrisiko- und IFRS-9-Benchmarking-Meldungen in das aufsichtsrechtliche Meldewesen. Auch die Meldung von operationellen Verlusten wird vereinfacht und ein spezielles Modul für Stresstest-Meldungen eingeführt.\n\nDie EBA wird den Abschlussbericht zu den Entwürfen der technischen Durchführungsstandards (ITS) im Dezember 2026 veröffentlichen. Die erste Referenzperiode für neue Anforderungen wird auf Dezember 2027 verschoben, und bestimmte Meldebereiche wie Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG-Meldungen werden bis Dezember 2028 aufgeschoben. Im Übergangszeitraum sind bestehende Vorgaben für IFRS-18, FRTB, operationelle Risikoverluste und aufsichtsrechtliches Benchmarking weiterhin zu beachten.",
+          "en": "Following its consultation, the EBA is extending the implementation timelines for simplified supervisory reporting: new requirements will first apply from the December 2027 reference date, while liquidity, asset encumbrance, supervisory benchmarking and ESG reporting are deferred until December 2028. The EBA plans to publish the final report on the ITS in December 2026; institutions should align their reporting implementation plans accordingly.\n\nKey changes include further simplification of reporting templates, greater proportionality, clarified instructions, reduced reporting frequencies, and closer alignment with disclosure requirements. This encompasses a reduction in collateral reporting, stress testing, and ESG-related reporting, as well as the integration of credit risk and IFRS 9 benchmarking reporting into the supervisory reporting framework. Operational risk loss reporting will also be simplified, and a dedicated stress-testing reporting module will be introduced.\n\nThe EBA will publish the final report on the draft Implementing Technical Standards (ITS) package in December 2026. The first reference date for new requirements is postponed to December 2027, with selected reporting areas such as liquidity, asset encumbrance, supervisory benchmarking, and ESG reporting deferred until December 2028. During the transition period, existing requirements for IFRS-18, FRTB, operational risk losses, and supervisory benchmarking must continue to be observed."
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-outlines-next-steps-supervisory-reporting-simplification-and-extends-implementation-timelines",
         "imp": "medium"
@@ -1079,8 +1081,8 @@
         },
         "sl": "2026-7830-geographical-allocation-of-exposures-arising-from-synthetic-securitisa",
         "s": {
-          "de": "Die EBA präzisiert die geografische Zuordnung von Risikopositionen aus synthetischen Verbriefungen für die Berechnung des antizyklischen Kapitalpuffers (CCB). Gemäß Artikel 140 CRD und der Delegierten Verordnung (EU) Nr. 1152/2014 ist die geografische Lage von Verbriefungspositionen stets anhand der Schuldner der zugrunde liegenden Risikopositionen zu bestimmen.\n\nDies gilt auch für synthetische Verbriefungen, unabhängig davon, ob der Originator Verbriefungstranchen behält oder Kreditschutz (funded oder unfunded) erhalten hat. Die Anwendung von Kreditrisikominderungstechniken beeinflusst zwar die Höhe der Eigenmittelanforderungen für die CCB-Berechnung, ändert aber nicht die geografische Zuordnung der relevanten Kreditrisikoposition. Es wird keine Unterscheidung zwischen den verschiedenen Arten von Risikopositionen innerhalb einer synthetischen Verbriefung gemacht.\n\nDiese Klarstellung ist für Kreditinstitute relevant, die synthetische Verbriefungen durchführen und ihren institutsspezifischen antizyklischen Kapitalpuffer berechnen müssen. Sie stellt sicher, dass die geografische Zuordnung konsistent auf Basis der ursprünglichen Schuldner erfolgt, auch wenn Risikominderungstechniken eingesetzt werden.",
-          "en": "The EBA clarifies the geographical allocation of exposures arising from synthetic securitisations for the purpose of calculating the Countercyclical Capital Buffer (CCB). According to Article 140 CRD and Delegated Regulation (EU) No 1152/2014, the geographical location of securitisation exposures must always be determined by reference to the obligors of the underlying exposures.\n\nThis applies to synthetic securitisations as well, regardless of whether the originator retains securitisation tranches or has obtained funded or unfunded credit protection. While the use of credit risk mitigation techniques affects the amount of own funds requirements for CCB calculation, it does not alter the geographical allocation of the relevant credit exposure. No distinction is made between the different types of exposures within a synthetic securitisation.\n\nThis clarification is relevant for credit institutions that engage in synthetic securitisations and need to calculate their institution-specific countercyclical capital buffer. It ensures that the geographical allocation is consistently based on the original obligors, even when credit risk mitigation techniques are employed."
+          "de": "Die EBA präzisiert die geografische Zuordnung von Risikopositionen aus synthetischen Verbriefungen für die Berechnung des antizyklischen Kapitalpuffers (CCyB). Gemäß Artikel 140 CRD und der Delegierten Verordnung (EU) Nr. 1152/2014 ist die geografische Lage von Verbriefungspositionen stets anhand der Schuldner der zugrunde liegenden Risikopositionen zu bestimmen.\n\nDies gilt auch für synthetische Verbriefungen, unabhängig davon, ob der Originator Verbriefungstranchen behält oder Kreditschutz (funded oder unfunded) erhalten hat. Die Anwendung von Kreditrisikominderungstechniken beeinflusst zwar die Höhe der Eigenmittelanforderungen für die CCyB-Berechnung, ändert aber nicht die geografische Zuordnung der relevanten Kreditrisikoposition. Es wird keine Unterscheidung zwischen den verschiedenen Arten von Risikopositionen innerhalb einer synthetischen Verbriefung gemacht.\n\nDiese Klarstellung ist für Kreditinstitute relevant, die synthetische Verbriefungen durchführen und ihren institutsspezifischen antizyklischen Kapitalpuffer berechnen müssen. Sie stellt sicher, dass die geografische Zuordnung konsistent auf Basis der ursprünglichen Schuldner erfolgt, auch wenn Risikominderungstechniken eingesetzt werden.",
+          "en": "The EBA clarifies the geographical allocation of exposures arising from synthetic securitisations for the purpose of calculating the countercyclical capital buffer (CCyB). According to Article 140 CRD and Delegated Regulation (EU) No 1152/2014, the geographical location of securitisation exposures must always be determined by reference to the obligors of the underlying exposures.\n\nThis applies to synthetic securitisations as well, regardless of whether the originator retains securitisation tranches or has obtained funded or unfunded credit protection. While the use of credit risk mitigation techniques affects the amount of own funds requirements for CCyB calculation, it does not alter the geographical allocation of the relevant credit exposure. No distinction is made between the different types of exposures within a synthetic securitisation.\n\nThis clarification is relevant for credit institutions that engage in synthetic securitisations and need to calculate their institution-specific countercyclical capital buffer. It ensures that the geographical allocation is consistently based on the original obligors, even when credit risk mitigation techniques are employed."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7830",
         "imp": "low"
@@ -1100,8 +1102,8 @@
         },
         "sl": "2026-7945-consolidated-application-and-intragroup-transferability-of-the-permane",
         "s": {
-          "de": "Die EBA präzisiert die Anwendung der dauerhaften Ausnahme von der Eigenmittelabzugspflicht für Beteiligungen an Versicherungsunternehmen gemäß Artikel 495a Absatz 3 CRR. Diese Ausnahme, die ein Grandfathering für bestimmte Eigenkapitalpositionen vorsieht, muss sowohl auf Einzelinstituts- als auch auf konsolidierter Ebene separat beurteilt werden. Die Bedingungen des Artikels 495a Absatz 3 CRR sind für jede Ebene unabhängig zu prüfen.\n\nDie Anwendung der Ausnahme durch ein Einzelinstitut erstreckt sich nicht automatisch auf die konsolidierte Situation der Gruppe, zu der das Institut gehört. Eine übergeordnete Gesellschaft kann die Ausnahme auf konsolidierter Ebene nur anwenden, wenn sie die Bedingungen des Artikels 495a Absatz 3 CRR eigenständig erfüllt. Auch bei einer konzerninternen Übertragung einer Beteiligung auf ein anderes Institut ist die Ausnahme nicht automatisch übertragbar; das empfangende Institut muss die Voraussetzungen erneut prüfen.\n\nDies bedeutet, dass bei Akquisitionen oder Umstrukturierungen innerhalb einer Gruppe die historische Bedingung des Artikel 495a Absatz 3 CRR (Beteiligung am 27. Oktober 2021) für jede Ebene neu bewertet werden muss. Eine Muttergesellschaft, die ein Institut nach Inkrafttreten der CRR3 erwirbt, kann die Ausnahme für die konsolidierte Situation nicht geltend machen, wenn sie selbst die historischen Kriterien nicht erfüllt.",
-          "en": "The EBA clarifies the application of the permanent exemption from the deduction of equity holdings in insurance undertakings from CET1, as per Article 495a(3) CRR. This exemption, which provides for a grandfathering treatment for certain equity exposures, must be assessed separately at both individual institution and consolidated levels. The conditions of Article 495a(3) CRR must be independently verified for each level.\n\nThe application of the exemption by an individual institution does not automatically extend to the consolidated situation of the group to which that institution belongs. A parent entity may apply the exemption at the consolidated level only if it independently meets the conditions of Article 495a(3) CRR. Similarly, in the event of an intragroup transfer of a shareholding to another institution, the exemption is not automatically transferable; the receiving institution must re-evaluate the conditions.\n\nThis implies that in acquisitions or restructurings within a group, the historical condition of Article 495a(3) CRR (holding on 27 October 2021) must be re-assessed for each level. A parent company acquiring an institution after the entry into force of CRR3 cannot claim the exemption for the consolidated situation if it does not meet the historical criteria itself."
+          "de": "Die EBA stellt klar, wie die dauerhafte Ausnahme vom Abzug von Beteiligungen an Versicherungsunternehmen (Artikel 495a Absatz 3 CRR) im Konzern anzuwenden ist: Einzel- und konsolidierte Ebene sind getrennt zu prüfen, und bei einer konzerninternen Umstrukturierung geht die Ausnahme nicht auf das Institut über, das die Beteiligung übernimmt. Institute, die die Ausnahme nutzen, sollten geplante Übertragungen solcher Beteiligungen vorab auf ihre Wirkung auf das harte Kernkapital prüfen.\n\nDie Anwendung der Ausnahme durch ein Einzelinstitut erstreckt sich nicht automatisch auf die konsolidierte Situation der Gruppe, zu der das Institut gehört. Eine übergeordnete Gesellschaft kann die Ausnahme auf konsolidierter Ebene nur anwenden, wenn sie die Bedingungen des Artikels 495a Absatz 3 CRR eigenständig erfüllt. Auch bei einer konzerninternen Übertragung einer Beteiligung auf ein anderes Institut ist die Ausnahme nicht automatisch übertragbar; das empfangende Institut muss die Voraussetzungen erneut prüfen.\n\nDies bedeutet, dass bei Akquisitionen oder Umstrukturierungen innerhalb einer Gruppe die historische Bedingung des Artikel 495a Absatz 3 CRR (Beteiligung am 27. Oktober 2021) für jede Ebene neu bewertet werden muss. Eine Muttergesellschaft, die ein Institut nach Inkrafttreten der CRR3 erwirbt, kann die Ausnahme für die konsolidierte Situation nicht geltend machen, wenn sie selbst die historischen Kriterien nicht erfüllt.",
+          "en": "The EBA clarifies how the permanent exemption from deducting holdings in insurance undertakings (Article 495a(3) CRR) applies within a group: the individual and consolidated levels must be assessed separately, and in an intragroup reorganisation the exemption does not pass to the institution that takes over the holding. Institutions using the exemption should assess the CET1 impact of any planned transfer of such holdings in advance.\n\nThe application of the exemption by an individual institution does not automatically extend to the consolidated situation of the group to which that institution belongs. A parent entity may apply the exemption at the consolidated level only if it independently meets the conditions of Article 495a(3) CRR. Similarly, in the event of an intragroup transfer of a shareholding to another institution, the exemption is not automatically transferable; the receiving institution must re-evaluate the conditions.\n\nThis implies that in acquisitions or restructurings within a group, the historical condition of Article 495a(3) CRR (holding on 27 October 2021) must be re-assessed for each level. A parent company acquiring an institution after the entry into force of CRR3 cannot claim the exemption for the consolidated situation if it does not meet the historical criteria itself."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7945",
         "imp": "low"

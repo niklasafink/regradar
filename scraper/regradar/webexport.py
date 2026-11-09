@@ -747,9 +747,12 @@ HYS_NOT_YET = re.compile(
 
 # "Konsultation" nur, wenn das Dokument selbst eine ist — nicht, wenn der
 # Titel bloß Konsultationen aufzählt oder ankündigt (SRB "publishes the list
-# of consultations …" ohne Frist).
+# of consultations …" ohne Frist). QA-Prüfung 09.11.2026: auch nicht, wenn
+# eine Meldung nur auf eine abgeschlossene Konsultation Bezug nimmt (EBA
+# "… extends implementation timelines following consultation feedback").
 NOT_A_CONSULTATION = re.compile(
-    r"list of (?:\w+ )?consultations|consultations? (?:list|calendar|programme|plan)\b",
+    r"list of (?:\w+ )?consultations|consultations? (?:list|calendar|programme|plan)\b|"
+    r"\b(?:following|after)(?: the)? consultation|consultation (?:feedback|responses)\b",
     re.IGNORECASE)
 
 # BaFin veröffentlicht ein Rundschreiben mehrfach: als Rundschreiben-Seite,

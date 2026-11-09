@@ -59,6 +59,26 @@ SKIP_SERIES = {"bcbs working papers", "bis working paper", "bis working papers"}
 MAX_PAGES = 2
 
 
+# QA-Prüfung 09.11.2026: Frisch erschienene Konsultationen tragen auf der
+# Listenseite noch kein Serien-Badge (IRRBB-Pillar-2-Leitlinien kamen als
+# "Meldung" ohne Frist). Die Detailseite nennt Status und Kommentarfrist.
+DETAIL_STATUS_RE = re.compile(r"\bStatus\s+Consultative\b", re.IGNORECASE)
+DETAIL_DEADLINE_RE = re.compile(
+    r"welcomes (?:any )?comments\b.{0,200}?\bby\s+(?:[A-Za-z]+day,?\s+)?(\d{1,2})\s+([A-Za-z]{3})[a-z]*\s+(\d{4})",
+    re.IGNORECASE | re.DOTALL)
+
+
+def parse_detail(page: str) -> dict:
+    """Detailseite → {"consultative": bool, "deadline": "YYYY-MM-DD" | None}."""
+    text = _text(page)
+    out = {"consultative": bool(DETAIL_STATUS_RE.search(text)), "deadline": None}
+    m = DETAIL_DEADLINE_RE.search(text)
+    month = MONTHS.get(m.group(2).lower()) if m else None
+    if m and month:
+        out["deadline"] = "{}-{:02d}-{:02d}".format(m.group(3), month, int(m.group(1)))
+    return out
+
+
 def _text(fragment: str) -> str:
     return " ".join(re.sub(r"<[^>]+>", " ", html_mod.unescape(fragment)).split())
 
@@ -147,4 +167,10 @@ class BisAdapter(SourceAdapter):
     def normalize(self, d, raw_content):
         doc = super().normalize(d, raw_content)
         doc.summary = d.extra.get("teaser") or None
+        if raw_content:
+            detail = parse_detail(raw_content.decode("utf-8", "ignore"))
+            if detail["consultative"] or detail["deadline"]:
+                doc.document_type = "CONSULTATION"
+            if detail["deadline"]:
+                doc.consultation_deadline = detail["deadline"]
         return doc
