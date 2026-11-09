@@ -118,6 +118,30 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-10": {
+   "window": [
+    "2026-11-09"
+   ],
+   "keys": [
+    "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated",
+    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance"
+   ],
+   "hook": "Der Basler Ausschuss verschärft die Anforderungen an das Zinsrisikomanagement im Anlagebuch.",
+   "folge": "Banken müssen ihre Modelle, Stresstests und Kontrollen für das Zinsrisiko im Anlagebuch anpassen. Die Aufsichtsbehörden erhalten neue Informationspflichten zur Überwachung.",
+   "cover": "BCBS: Neue Leitlinien für Zinsrisiko im Anlagebuch",
+   "zeilen": [
+    "CSSF: Aktualisierte FAQ für luxemburgische SIFs und SICARs, die keine AIFs sind"
+   ],
+   "frage": "Wie oft überprüfen Sie die Angemessenheit Ihrer IRRBB-Modelle und Stresstests?",
+   "top": "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
+   "kern": {
+    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance": "Der Basler Ausschuss konsultiert bis zum 09.02.2027 zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch, die das Risikomanagement und die aufsichtsrechtliche Überwachung stärken sollen.",
+    "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated": "Die CSSF hat ihre FAQ zu Spezialfonds und Investmentgesellschaften in Risikokapital aktualisiert, die nicht als alternative Investmentfonds qualifizieren."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
