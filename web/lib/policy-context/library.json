@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "note": "Kontext-Layer für Policies: je Policy-Thema und Institutsprofil die Normen, die eine Richtlinie (keine Arbeitsanweisung) regelmäßig umsetzen muss. Kern gilt für jedes Institut des Profils; optional nur, wenn ein Merkmal des konkreten Instituts zutrifft (when). Merkmale wie in relevance/catalog.json.",
   "profiles": [
     { "id": "crr_bank", "l": { "de": "CRR-Kreditinstitut", "en": "CRR credit institution" }, "any": ["ki_crr"] },
@@ -40,6 +40,11 @@
     "nis2": { "n": "NIS-2 / BSIG", "ref": "RL (EU) 2022/2555, BSIG", "rr": "nis2", "conformis": null },
     "c5": { "n": "BSI C5", "ref": "BSI Cloud Computing Compliance Criteria Catalogue", "rr": null, "conformis": "bsi-c5-2026" },
     "ebaoutsourcing": { "n": "EBA-Leitlinien Auslagerung", "ref": "EBA/GL/2019/02", "rr": "outsourcing", "conformis": null },
+    "rtfleitfaden": { "n": "RTF-Leitfaden (BaFin/Bundesbank)", "ref": "Leitfaden zur Risikotragfähigkeit vom 24.05.2018", "rr": null, "conformis": null },
+    "ebastresstest": { "n": "EBA-Leitlinien Stresstests", "ref": "EBA/GL/2018/04", "rr": "ebastresstest", "conformis": null },
+    "irrbb": { "n": "EBA-Leitlinien IRRBB und CSRBB", "ref": "EBA/GL/2022/14", "rr": "irrbb", "conformis": null },
+    "ebaesg": { "n": "EBA-Leitlinien ESG-Risikomanagement", "ref": "EBA/GL/2025/01", "rr": "ebaesg", "conformis": null },
+    "ebanpe": { "n": "EBA-Leitlinien notleidende und gestundete Risikopositionen", "ref": "EBA/GL/2018/06", "rr": "ebanpe", "conformis": null },
     "gwg": { "n": "GwG", "ref": "Geldwäschegesetz", "rr": "gwg", "conformis": "gwg" },
     "amlr": { "n": "EU-Geldwäscheverordnung (AMLR)", "ref": "VO (EU) 2024/1624", "rr": "amla", "conformis": "eu-aml" },
     "ebaamlrisk": { "n": "EBA-Leitlinien Risikofaktoren", "ref": "EBA/GL/2021/02", "rr": "ebaamlrisk", "conformis": null },
@@ -291,7 +296,9 @@
         { "fw": "loanorig", "p": ["crr_bank"], "lv": "kern", "norms": ["Abschnitte 4–8"], "why": { "de": "Kreditvergabe- und Überwachungsrichtlinien", "en": "Loan origination and monitoring policies" } },
         { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 178", "Art. 395"], "why": { "de": "Ausfalldefinition, Großkreditobergrenze", "en": "Definition of default, large exposure limit" } },
         { "fw": "bgb", "p": ["crr_bank", "bank"], "lv": "optional", "when": { "any": ["verbraucherkredit", "wohnimmobilienkredit", "privatkunden"], "l": { "de": "vergibt Verbraucherkredite", "en": "grants consumer loans" } }, "norms": ["§§ 491–505e"], "why": { "de": "Verbraucherdarlehen, Kreditwürdigkeitsprüfung", "en": "Consumer credit, creditworthiness" } },
-        { "fw": "marisk", "p": ["fdi"], "lv": "optional", "when": { "any": ["lic_leasing", "lic_factoring"], "l": { "de": "Leasing oder Factoring", "en": "leasing or factoring" } }, "norms": ["BTO 1", "BTR 1"], "why": { "de": "Anwendung auf Leasing- und Factoringgeschäft", "en": "Application to leasing and factoring" } }
+        { "fw": "marisk", "p": ["fdi"], "lv": "optional", "when": { "any": ["lic_leasing", "lic_factoring"], "l": { "de": "Leasing oder Factoring", "en": "leasing or factoring" } }, "norms": ["BTO 1", "BTR 1"], "why": { "de": "Anwendung auf Leasing- und Factoringgeschäft", "en": "Application to leasing and factoring" } },
+        { "fw": "ebanpe", "p": ["crr_bank"], "lv": "kern", "norms": ["Abschnitte 4–9"], "why": { "de": "Früherkennung, Forbearance, NPE-Strategie ab 5 % NPL-Quote; in BTO 1.2.5 und BTO 1.3 MaRisk umgesetzt", "en": "Early warning, forbearance, NPE strategy from 5% NPL ratio; implemented in BTO 1.2.5 and BTO 1.3 MaRisk" } },
+        { "fw": "ebaesg", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["Abschnitt 5"], "why": { "de": "ESG-Risiken in Kreditvergabe und Kreditüberwachung", "en": "ESG risks in loan origination and monitoring" } }
       ]
     },
     {
@@ -303,7 +310,11 @@
         { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["AT 2", "AT 3", "AT 4.1", "AT 4.2", "AT 4.3", "AT 4.4.1", "BT 1", "BT 2", "BTR"], "why": { "de": "Risikoinventur, Strategien, Risikotragfähigkeit, Stresstests, Risikocontrolling-Funktion, internes Kontrollsystem, Risikoberichte", "en": "Risk inventory, strategies, risk-bearing capacity, stress tests, risk control function, internal control system, risk reports" } },
         { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["§ 25a Abs. 1", "§ 25c Abs. 4a"], "why": { "de": "Ordnungsgemäße Geschäftsorganisation, Verantwortung der Geschäftsleitung für das Risikomanagement", "en": "Proper business organisation, management responsibility for risk management" } },
         { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 435"], "why": { "de": "Offenlegung der Risikomanagementziele und -politik", "en": "Disclosure of risk management objectives and policies" } },
-        { "fw": "ebagov", "p": ["crr_bank"], "lv": "auslegung", "norms": ["Titel V"], "why": { "de": "Rahmen für Risikomanagement und interne Kontrollfunktionen", "en": "Risk management framework and internal control functions" } }
+        { "fw": "ebagov", "p": ["crr_bank"], "lv": "auslegung", "norms": ["Titel V"], "why": { "de": "Rahmen für Risikomanagement und interne Kontrollfunktionen", "en": "Risk management framework and internal control functions" } },
+        { "fw": "rtfleitfaden", "p": ["crr_bank", "bank"], "lv": "auslegung", "norms": ["Grundsätze 1–8", "Normative und ökonomische Perspektive"], "why": { "de": "Aufsichtliche Erwartungen an Risikotragfähigkeitskonzepte (ICAAP), Konkretisierung von AT 4.1 MaRisk", "en": "Supervisory expectations for ICAAP, specifying AT 4.1 MaRisk" } },
+        { "fw": "ebastresstest", "p": ["crr_bank"], "lv": "kern", "norms": ["Abschnitte 4.1–4.6"], "why": { "de": "Stresstestprogramm, Szenarien, inverse Stresstests; in AT 4.3.3 MaRisk umgesetzt", "en": "Stress testing programme, scenarios, reverse stress tests; implemented in AT 4.3.3 MaRisk" } },
+        { "fw": "irrbb", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["Abschnitte 4.1–4.6"], "why": { "de": "Zinsänderungs- und Credit-Spread-Risiken im Anlagebuch; in BTR 2.3 MaRisk umgesetzt", "en": "Interest rate and credit spread risk in the banking book; implemented in BTR 2.3 MaRisk" } },
+        { "fw": "ebaesg", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["Abschnitte 4–6"], "why": { "de": "Identifizierung, Messung, Steuerung und Überwachung von ESG-Risiken, Übergangspläne", "en": "Identification, measurement, management and monitoring of ESG risks, transition plans" } }
       ]
     },
     {
@@ -325,7 +336,8 @@
       "entries": [
         { "fw": "marisk", "p": ["crr_bank", "bank", "fdi"], "lv": "kern", "norms": ["BTO", "BTO 2", "BTR 2", "BTR 5"], "why": { "de": "Funktionstrennung, Abwicklung und Kontrolle im Handel, Limitsystem für Marktpreisrisiken, Kreditspreadrisiken im Anlagebuch", "en": "Segregation, settlement and control in trading, market risk limits, credit spread risk in the banking book" } },
         { "fw": "crr", "p": ["crr_bank"], "lv": "teilweise", "norms": ["Art. 102–106"], "why": { "de": "Handelsbuch: Abgrenzung, Bewertung und Steuerung", "en": "Trading book: boundary, valuation and management" } },
-        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["§ 25a Abs. 2"], "why": { "de": "Zinsänderungsrisiken im Anlagebuch", "en": "Interest rate risk in the banking book" } }
+        { "fw": "kwg", "p": ["crr_bank", "bank"], "lv": "teilweise", "norms": ["§ 25a Abs. 2"], "why": { "de": "Zinsänderungsrisiken im Anlagebuch", "en": "Interest rate risk in the banking book" } },
+        { "fw": "irrbb", "p": ["crr_bank", "bank"], "lv": "kern", "norms": ["Abschnitte 4.1–4.6"], "why": { "de": "Zinsänderungs- und Credit-Spread-Risiken im Anlagebuch", "en": "Interest rate and credit spread risk in the banking book" } }
       ]
     },
     {
