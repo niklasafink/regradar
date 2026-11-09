@@ -1343,6 +1343,121 @@
    "tokens": 24681
   }
  },
+ "luaifm-2026-11-09-faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated": {
+  "h1": "CSSF-FAQ zu SIFs und SICARs ohne AIF-Status (Version 7)",
+  "seo_title": "CSSF-FAQ SIF SICAR kein AIF, Version 7",
+  "meta_description": "CSSF aktualisiert FAQ zu SIFs und SICARs, die nicht als AIFs qualifizieren, auf Version 7 (09.11.2026). Relevant für Fondsmanager und Compliance in Luxemburg.",
+  "lead": "Die CSSF hat am 09.11.2026 ihre FAQ zu Spezialfonds (SIF) und Investmentgesellschaften in Risikokapital (SICAR), die nicht als AIF qualifizieren, auf Version 7 aktualisiert. Betroffen sind Fondsmanager und Compliance-Verantwortliche luxemburgischer SIF- und SICAR-Strukturen außerhalb des AIFMD-Rahmens.",
+  "aka": [
+   "CSSF FAQ SIF SICAR",
+   "SIF non-AIF FAQ",
+   "SICAR FAQ Luxemburg",
+   "CSSF FAQ Version 7",
+   "SIF SICAR kein AIF"
+  ],
+  "summary": "Die CSSF hat am 09.11.2026 Version 7 ihrer FAQ zu SIFs und SICARs veröffentlicht, die nicht unter die AIFM-Richtlinie fallen. Das Dokument richtet sich an Fondsmanager und Compliance-Verantwortliche, die luxemburgische Fondsstrukturen außerhalb des AIF-Regimes betreiben.",
+  "overview": [
+   "Die CSSF aktualisiert regelmäßig ihre FAQ zu SIFs (Spezialfonds) und SICARs (Investmentgesellschaften in Risikokapital), die aufgrund ihrer Struktur oder Anlagestrategie nicht als alternative Investmentfonds (AIF) im Sinne der AIFM-Richtlinie gelten. Version 7 wurde am 09.11.2026 veröffentlicht.",
+   "Für Compliance-Officer bedeutet die Aktualisierung eine Prüfpflicht: Die FAQ konkretisieren die regulatorischen Anforderungen für diese Fondsstrukturen und können geänderte oder präzisierte Auslegungen enthalten, die in interne Richtlinien und Prozesse einfließen müssen."
+  ],
+  "facts": [
+   {
+    "label": "Dokument",
+    "value": "CSSF FAQ – SIFs und SICARs ohne AIF-Status"
+   },
+   {
+    "label": "Version",
+    "value": "7"
+   },
+   {
+    "label": "Aktualisiert",
+    "value": "09.11.2026"
+   },
+   {
+    "label": "Erstveröffentlichung",
+    "value": "02.09.2019"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "CSSF (Luxemburg)"
+   },
+   {
+    "label": "Format",
+    "value": "PDF (132,6 KB)"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Fondsmanager LU",
+    "note": "SIF- und SICAR-Strukturen ohne AIF-Status",
+    "detail": "Unmittelbar betroffen: Manager luxemburgischer SIFs und SICARs, die nicht unter die AIFMD fallen. FAQ konkretisieren die anwendbaren Anforderungen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance-Officer",
+    "note": "Luxemburgische Fondsstrukturen prüfen",
+    "detail": "Müssen prüfen, ob Änderungen in Version 7 Anpassungen interner Richtlinien oder Prozesse erfordern.",
+    "status": "betroffen"
+   },
+   {
+    "name": "AIFM",
+    "note": "Vollregulierte AIFs nicht erfasst",
+    "detail": "Die FAQ gelten ausdrücklich nur für SIFs und SICARs, die nicht als AIF qualifizieren. Vollregulierte AIFMs sind nicht direkt adressiert.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Version 7",
+    "title": "FAQ auf Version 7 aktualisiert",
+    "text": "Die CSSF hat die FAQ am 09.11.2026 auf Version 7 gehoben. Welche inhaltlichen Änderungen gegenüber Version 6 vorgenommen wurden, ist aus der Quelle nicht ersichtlich."
+   }
+  ],
+  "todos": [
+   "Aktuelle FAQ Version 7 (PDF) herunterladen und mit der Vorversion vergleichen.",
+   "Prüfen, ob geänderte oder neue Auslegungen Anpassungen interner Compliance-Vorgaben erfordern.",
+   "Ergebnis der Prüfung dokumentieren und ggf. betroffene Teams informieren."
+  ],
+  "timeline": [
+   {
+    "date": "02.09.2019",
+    "label": "Erstveröffentlichung FAQ",
+    "kind": "schritt"
+   },
+   {
+    "date": "09.11.2026",
+    "label": "Version 7 veröffentlicht",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Für wen gelten diese FAQ?",
+    "a": "Für luxemburgische SIFs und SICARs, die nicht als AIF im Sinne der AIFM-Richtlinie qualifizieren. Vollregulierte AIFs und ihre Manager sind ausdrücklich nicht adressiert."
+   },
+   {
+    "q": "Was hat sich in Version 7 geändert?",
+    "a": "Die Quelle benennt keine konkreten inhaltlichen Änderungen gegenüber der Vorversion. Ein direkter Versionsvergleich anhand des CSSF-PDFs ist erforderlich."
+   },
+   {
+    "q": "Besteht Handlungsbedarf?",
+    "a": "Ja: Compliance-Verantwortliche sollten Version 7 mit der Vorversion vergleichen und prüfen, ob geänderte Auslegungen interne Prozesse oder Dokumentationen betreffen."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Konkrete inhaltliche Änderungen gegenüber Version 6 sind aus der Quelle nicht ersichtlich. Versionsvergleich nur anhand des CSSF-PDFs möglich.",
+   "Versionsnummer der Vorversion nicht genannt. Offen, wie viele Versionen seit 2019 erschienen sind.",
+   "Kein Hinweis auf einen Umsetzungstermin oder eine Konsultationsfrist in der Quelle."
+  ],
+  "meta": {
+   "generated": "2026-11-09",
+   "model": "sonnet",
+   "source": "HTML, 3975 Zeichen, gekürzt auf 3975",
+   "dropped": 0,
+   "tokens": 8401
+  }
+ },
  "mica-2026-10-21-compliance-table-on-the-guidelines-on-market-abuse-under-mica": {
   "h1": "Compliance-Tabelle ESMA-Leitlinien Marktmissbrauch unter MiCA (ESMA75-113276571-1625)",
   "seo_title": "ESMA MiCA Marktmissbrauch Compliance-Tabelle 2026",
