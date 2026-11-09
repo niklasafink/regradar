@@ -13,6 +13,7 @@ import {
 import { activeName, hasProfile, relMatches, useMe, useRelevance, useRelFilter } from "@/lib/relevanceClient";
 import { RelevanceFilter } from "@/components/relevance-filter";
 import { RelevanceChip } from "@/components/relevance-chip";
+import { ExportButton } from "@/components/export-dialog";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
 
@@ -91,6 +92,7 @@ export function AllUpdates({ fws, rows }: UpdatesData) {
           <p className="num shrink-0 text-sm text-slate-500">
             {shown.length} {lang === "de" ? "Einträge" : "entries"}
           </p>
+          <ExportButton me={me} />
         </div>
 
         {/* Zielgruppen-Filter: keine Auswahl heißt alle Institute */}

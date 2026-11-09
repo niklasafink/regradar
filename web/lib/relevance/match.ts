@@ -42,6 +42,8 @@ export interface MatchResult {
   stufe: "regel" | "ki" | "schiedsrichter" | "fallback" | "nutzer";
   /** Bei stufe "nutzer": die automatische Einschätzung, falls vorhanden. */
   auto?: { status: Status; grund: string };
+  /** Bei stufe "nutzer": Begründung des Nutzers (optional). */
+  notiz?: string;
   kostenUsd: number;
   at: string;
 }
@@ -388,12 +390,13 @@ export async function invalidateChanged(
 
 /* ---------- Vom Nutzer gesetzter Status ---------- */
 
-export interface Override { status: Status; at: string }
+export interface Override { status: Status; at: string; notiz?: string }
 
-export async function setOverride(p: Profile, key: string, status: Status | null): Promise<void> {
+export async function setOverride(p: Profile, key: string, status: Status | null, notiz?: string): Promise<void> {
   if (status === null) await redis().hdel(overrideKey(p), key);
   else {
-    await redis().hset(overrideKey(p), { [key]: { status, at: new Date().toISOString() } satisfies Override });
+    const o: Override = { status, at: new Date().toISOString(), ...(notiz ? { notiz } : {}) };
+    await redis().hset(overrideKey(p), { [key]: o });
     await redis().expire(overrideKey(p), STORE_TTL);
   }
 }
@@ -401,7 +404,8 @@ export async function setOverride(p: Profile, key: string, status: Status | null
 function fromOverride(o: Override, auto: MatchResult | null | undefined): MatchResult {
   return {
     status: o.status,
-    grund: "Status von Ihnen festgelegt.",
+    grund: o.notiz ? `Von Ihnen festgelegt: ${o.notiz}` : "Status von Ihnen festgelegt.",
+    notiz: o.notiz,
     stufe: "nutzer",
     auto: auto && auto.stufe !== "fallback" && auto.stufe !== "nutzer" ? { status: auto.status, grund: auto.grund } : undefined,
     art: auto?.art,
@@ -516,6 +520,20 @@ export async function matchMany(
       await redis().expire(store, STORE_TTL);
     } catch { /* egal */ }
   }
+  return out;
+}
+
+/** Alles, was für das Profil festgehalten ist (gespeicherte Prüfungen und
+    selbst gesetzte Status), in einem Abruf. Ergebnisse, deren Rückfrage das
+    Profil inzwischen beantwortet, fehlen (sie werden neu geprüft). */
+export async function storedAll(p: Profile): Promise<Record<string, MatchResult>> {
+  const [stored, overrides] = await Promise.all([
+    redis().hgetall<Record<string, MatchResult>>(storeKey(p)).then((x) => x ?? {}),
+    redis().hgetall<Record<string, Override>>(overrideKey(p)).then((x) => x ?? {}),
+  ]);
+  const out: Record<string, MatchResult> = {};
+  for (const [k, r] of Object.entries(stored)) if (r && !answered(p, r)) out[k] = r;
+  for (const [k, o] of Object.entries(overrides)) if (o) out[k] = fromOverride(o, stored[k]);
   return out;
 }
 

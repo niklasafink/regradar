@@ -17,6 +17,8 @@ export interface MatchResult {
   stufe: string;
   /** Bei stufe "nutzer": die automatische Einschätzung. */
   auto?: { status: Status; grund: string };
+  /** Bei stufe "nutzer": Begründung des Nutzers. */
+  notiz?: string;
 }
 export interface ProfileRef { id: string; name: string; origin: string }
 export interface Me {
@@ -73,8 +75,28 @@ export function writeDraft(p: unknown | null): void {
 let mePromise: Promise<Me> | null = null;
 const results = new Map<string, MatchResult>();
 
+/* Angemeldet: alles, was für das aktive Profil gespeichert ist, kommt in
+   einem Abruf (/api/relevance/stored). Die Listen zeigen damit sofort den
+   gespeicherten Stand; nur was dort fehlt, wird einzeln nachgefragt. */
+let storedPromise: Promise<void> | null = null;
+
+function loadStored(): Promise<void> {
+  if (!storedPromise) {
+    storedPromise = loadMe().then(async (me) => {
+      if (!me.loggedIn || !me.profiles.length) return;
+      try {
+        const res = await fetch("/api/relevance/stored", { cache: "no-store" });
+        const json = (await res.json()) as { results?: Record<string, MatchResult> };
+        for (const [k, v] of Object.entries(json.results ?? {})) if (!results.has(k)) results.set(k, v);
+      } catch { /* dann paketweise wie bisher */ }
+    });
+  }
+  return storedPromise;
+}
+
 export function invalidate(): void {
   mePromise = null;
+  storedPromise = null;
   results.clear();
   cheapMiss.clear();
   if (typeof window !== "undefined") window.dispatchEvent(new Event(EVENT));
@@ -109,10 +131,11 @@ export async function answerQuestion(me: Me, merkmal: string, value: boolean): P
   if (json.profile) writeDraft(json.profile);
 }
 
-/** Status selbst festlegen (nur Konten); null = automatische Einschätzung. */
-export async function setStatus(key: string, status: Status | null): Promise<void> {
+/** Status selbst festlegen (nur Konten), optional mit Begründung;
+    null = automatische Einschätzung. */
+export async function setStatus(key: string, status: Status | null, notiz?: string): Promise<void> {
   const res = await fetch("/api/relevance/override", {
-    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ key, status }),
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ key, status, notiz }),
   });
   if (!res.ok) throw new Error(((await res.json().catch(() => ({}))) as { error?: string }).error ?? "Fehler");
   results.delete(key);
@@ -181,7 +204,8 @@ function scheduleRetry(keys: string[]) {
   }, 1500);
 }
 
-export function check(keys: string[]): Promise<void> {
+export async function check(keys: string[]): Promise<void> {
+  await loadStored();
   const missing = keys.filter((k) => !results.has(k) && !inflight.has(k));
   if (!missing.length) return Promise.resolve();
   if (!pending) {
@@ -207,6 +231,7 @@ const cheapMiss = new Set<string>();
 const cheapInflight = new Set<string>();
 
 async function checkCheap(keys: string[]): Promise<void> {
+  await loadStored();
   const missing = keys.filter((k) => !results.has(k) && !cheapMiss.has(k) && !cheapInflight.has(k) && !inflight.has(k));
   if (!missing.length) return;
   missing.forEach((k) => cheapInflight.add(k));

@@ -12,7 +12,7 @@ import { buildXlsx, S, type Cell, type Sheet } from "../xlsx";
    „Noch nicht geprüft“ in der Liste. */
 
 const NOT_CHECKED = "Noch nicht geprüft";
-type Col = "ja" | "teilweise" | "nein" | "unsicher" | "offen";
+export type Col = "ja" | "teilweise" | "nein" | "unsicher" | "offen";
 const colOf = (r?: MatchResult): Col => (!r || r.stufe === "fallback" ? "offen" : r.status);
 const labelOf = (r?: MatchResult) => (colOf(r) === "offen" ? NOT_CHECKED : STATUS_LABEL[r!.status]);
 const reasonOf = (r?: MatchResult) => {
@@ -27,7 +27,11 @@ const SHEET_NAME: Record<string, string> = { MKT: "Wertpapiere & Anlegerschutz" 
 const today = () => new Date().toLocaleDateString("de-DE", { timeZone: "Europe/Berlin", day: "2-digit", month: "2-digit", year: "numeric" });
 const date = (d?: string) => (d && /^\d{1,2}\.\d{1,2}\.\d{4}$/.test(d) ? dt(d) : null);
 
-export function relevanceWorkbook(p: Profile, results: Record<string, MatchResult>): Uint8Array {
+/** `only`: nur diese Status exportieren (Filter auf „Alle Updates“). Ohne
+    Filter alles, auch noch nicht Geprüftes. Rahmenwerk-Zeilen bleiben als
+    Gliederung stehen, wenn mindestens ein Update darunter passt. */
+export function relevanceWorkbook(p: Profile, results: Record<string, MatchResult>, only?: Set<Col>): Uint8Array {
+  const keep = (r?: MatchResult) => !only || only.has(colOf(r));
   const base = (process.env.APP_URL ?? "https://www.regradar.de").replace(/\/$/, "");
   const updatesByFw = new Map<string, UpdatePage[]>();
   for (const page of UPDATE_PAGES) {
@@ -65,6 +69,10 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
     for (const f of ordered) {
       const fr = fwRes(f);
       count.fws[colOf(fr)]++;
+      const pages = updatesByFw.get(f.id) ?? [];
+      for (const page of pages) count.ups[colOf(results[`u:${page.slug}`])]++;
+      const shownPages = pages.filter((page) => keep(results[`u:${page.slug}`]));
+      if (!keep(fr) && !shownPages.length) continue;
       const parent = f.parent ? FRAMEWORKS.find((x) => x.id === f.parent) : undefined;
       const fwName = parent ? `${parent.n.de} › ${f.n.de}` : f.n.de;
       rows.push([
@@ -74,9 +82,8 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
         f.refUrl ? { link: f.refUrl, text: "Rechtsakt" } : { v: "", s: S.group },
         { v: "", s: S.group },
       ]);
-      for (const page of updatesByFw.get(f.id) ?? []) {
+      for (const page of shownPages) {
         const r = results[`u:${page.slug}`];
-        count.ups[colOf(r)]++;
         const u = page.u;
         rows.push([
           fwName, f.ref, "Update", { date: date(u.d) }, { v: u.ti.de, s: S.wrap }, u.t.de, labelOf(r), { v: reasonOf(r), s: S.wrap },
@@ -87,7 +94,7 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
       }
     }
     summary.push(count);
-    topicSheets.push({ name: SHEET_NAME[topic.id] ?? topic.n.de, rows, widths, headerRow: 4 });
+    if (rows.length > 4) topicSheets.push({ name: SHEET_NAME[topic.id] ?? topic.n.de, rows, widths, headerRow: 4 });
   }
 
   const sum = (pick: (c: (typeof summary)[number]) => Count) =>
@@ -108,7 +115,9 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
       [{ v: facts || "Institutsprofil", s: S.muted }],
       [{ v: `Stand ${today()} · Regulatory Radar (regradar.de)`, s: S.muted }],
       [],
-      [{ v: "Je Themengebiet ein eigenes Blatt: Rahmenwerk (grau hinterlegt), darunter seine Updates, neueste zuerst.", s: S.muted }],
+      [{ v: only
+        ? `Exportiert: ${[...only].map((c) => (c === "offen" ? NOT_CHECKED : STATUS_LABEL[c])).join(", ")}. Die Übersicht zählt alle Einträge.`
+        : "Je Themengebiet ein eigenes Blatt: Rahmenwerk (grau hinterlegt), darunter seine Updates, neueste zuerst.", s: S.muted }],
       ["Themengebiet", "Rahmenwerke", "davon einschlägig", "Updates", "Einschlägig", "Teilweise", "Nicht einschlägig", "Unklar", NOT_CHECKED]
         .map((v) => ({ v, s: S.header })),
       ...summary.map((c) => line(c.name, c.fws, c.ups)),

@@ -20,6 +20,7 @@ export function RelevanceStatus({ target, className = "" }: { target: string; cl
   const res = useRelevance([target], withProfile);
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [notiz, setNotiz] = useState("");
   const box = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,9 +36,10 @@ export function RelevanceStatus({ target, className = "" }: { target: string; cl
   const r = res[target];
   const name = activeName(me);
   const manual = r?.stufe === "nutzer";
+  const savedNote = manual ? r?.notiz ?? "" : "";
   const choose = async (s: Status | null) => {
     setBusy(true);
-    try { await setStatus(target, s); } finally { setBusy(false); }
+    try { await setStatus(target, s, s ? notiz.trim() : undefined); } finally { setBusy(false); }
   };
 
   if (!r || isPending(r)) {
@@ -56,7 +58,7 @@ export function RelevanceStatus({ target, className = "" }: { target: string; cl
     <div ref={box} className={`relative shrink-0 ${className}`}>
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => { if (!open) setNotiz(savedNote); setOpen((v) => !v); }}
         aria-expanded={open}
         className={`${statusPill(r.status).replace("px-2.5 py-0.5 text-[11px]", "px-3.5 py-1 text-xs")} gap-1.5 hover:opacity-80`}
         title={`Für ${name}: ${r.grund}`}
@@ -101,12 +103,20 @@ export function RelevanceStatus({ target, className = "" }: { target: string; cl
           {me.loggedIn && (
             <div className="space-y-2 border-t border-slate-100 pt-3 text-xs">
               <p className="font-medium text-slate-900">Status selbst festlegen</p>
+              <input
+                type="text"
+                value={notiz}
+                maxLength={500}
+                onChange={(e) => setNotiz(e.target.value)}
+                placeholder="Begründung (optional)"
+                className="w-full rounded-full border border-slate-200 px-3 py-1 text-xs focus:border-slate-900 focus:outline-none"
+              />
               <div className="flex flex-wrap gap-1.5">
                 {CHOICES.map((s) => (
                   <button
                     key={s}
                     type="button"
-                    disabled={busy || (manual && r.status === s)}
+                    disabled={busy || (manual && r.status === s && notiz.trim() === savedNote)}
                     aria-pressed={manual && r.status === s}
                     onClick={() => choose(s)}
                     className={`rounded-full px-3 py-0.5 font-medium disabled:cursor-default ${
