@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T14:46:55Z",
+  "generated_at": "2026-11-09T23:05:45Z",
   "updates": {
     "bcbs": [
       {
@@ -2156,25 +2156,6 @@
             "d": "10.01.2025"
           }
         ]
-      },
-      {
-        "d": "03.01.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Zulassungsanforderungen für ART und EMT nach MiCAR",
-          "en": "Guidance Note on Authorization Requirements for ARTs and EMTs under MiCAR"
-        },
-        "sl": "merkblatt-zulassungsanforderungen-bzgl-art-und-emt-nach-micar",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Zulassungsanforderungen für vermögenswertereferenzierte Token (ART) und E-Geld-Token (EMT) gemäß der MiCAR veröffentlicht. Es erläutert die Definitionen dieser Kryptowerte und grenzt sie von „anderen“ Kryptowerten ab, für die weniger strenge Anforderungen gelten. Das Merkblatt geht auf die Erlaubnispflichten, Anzeigepflichten gegenüber der BaFin und die Notwendigkeit eines Kryptowerte-Whitepapers ein, die für ART und EMT bei öffentlichem Angebot oder Zulassung zum Handel bestehen.\n\nDas Merkblatt richtet sich an Emittenten und Anbieter von ART und EMT. Es klärt die Begriffe des öffentlichen Angebots und der Zulassung zum Handel und betont, dass ART und EMT im Gegensatz zu „anderen“ Kryptowerten von einem Emittenten ausgegeben werden müssen. Es wird auch der Unterschied zwischen E-Geld-Token und traditionellem E-Geld nach dem ZAG herausgestellt, insbesondere dass EMT nicht zwingend für Zahlungszwecke verwendet werden müssen und keine Forderung gegenüber dem Emittenten voraussetzen.\n\nDie MiCAR ist am 29. Juni 2023 in Kraft getreten und ist ab dem 30. Dezember 2024 unmittelbar anwendbar, wobei die Titel III und IV bereits ab dem 30. Juni 2024 gelten.",
-          "en": "BaFin has published a guidance note on the authorization requirements for asset-referenced tokens (ARTs) and e-money tokens (EMTs) under MiCAR. It clarifies the definitions of these crypto-assets and distinguishes them from 'other' crypto-assets, which are subject to less stringent requirements. The guidance note addresses the licensing obligations, notification requirements to BaFin, and the necessity of a crypto-asset white paper for ARTs and EMTs when offered to the public or admitted to trading.\n\nThe guidance note is aimed at issuers and providers of ARTs and EMTs. It clarifies the concepts of public offering and admission to trading, emphasizing that ARTs and EMTs, unlike 'other' crypto-assets, must be issued by an issuer. It also highlights the difference between e-money tokens and traditional e-money under the German Payment Services Supervision Act (ZAG), particularly that EMTs do not necessarily have to be used for payment purposes and do not require a claim against the issuer.\n\nMiCAR formally entered into force on June 29, 2023, and will be directly applicable from December 30, 2024, with Titles III and IV already applicable from June 30, 2024."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_zulassung_art_emt.html",
-        "imp": "high"
       }
     ],
     "esgrating": [
