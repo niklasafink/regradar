@@ -290,6 +290,127 @@
    "dropped": 0
   }
  },
+ "brrd-2026-11-09-srb-bi-annual-reporting-note-to-eurogroup-november-2026": {
+  "h1": "SRB-Halbjahresbericht an die Eurogruppe: Risiken und Krisenvorsorge (November 2026)",
+  "seo_title": "SRB-Bericht Eurogruppe November 2026",
+  "meta_description": "Der SRB hat der Eurogruppe seinen Halbjahresbericht vorgelegt: Lücken bei Liquidität und Solvenz, Cyber-Risiken und das kommende EU-Bankenpaket im Fokus.",
+  "lead": "Der Einheitliche Abwicklungsausschuss (SRB) hat am 09.11.2026 seinen halbjährlichen Bericht an die Eurogruppe vorgelegt. Er benennt Lücken im Krisenmanagementrahmen und fordert Nachbesserungen durch das bevorstehende Bankenpaket der Europäischen Kommission.",
+  "aka": [
+   "SRB Eurogruppe Bericht 2026",
+   "SRB biannual reporting note",
+   "Abwicklungsrahmen Krisenvorsorge",
+   "BRRD Krisenmanagement Update",
+   "SRB Halbjahresbericht"
+  ],
+  "summary": "Der SRB-Vorsitzende Dominique Laboureix hat der Eurogruppe am 09.11.2026 den Halbjahresbericht vorgelegt. Fortschritte bei der Abwicklungsfähigkeit werden anerkannt, doch Lücken bei Liquidität, Solvenz und operationeller Resilienz bleiben. Das bevorstehende Bankenpaket der Kommission soll den Krisenmanagementrahmen vervollständigen.",
+  "overview": [
+   "Der SRB hebt geopolitische Spannungen, Marktvolatilität und operationelle Bedrohungen als wachsende Herausforderungen hervor. Trotz Fortschritten bei der Resolvabilität bestehen weiterhin Lücken im Rahmen, insbesondere bei Liquiditäts- und Solvenzrisiken. Das angekündigte Bankenpaket der Europäischen Kommission wird als Chance gesehen, diese Lücken zu schließen und die Bankenunion weiterzuentwickeln.",
+   "Darüber hinaus betont der Bericht, dass Krisenvorsorge über klassische Finanzrisiken hinausgehen muss. Cyberangriffe und IKT-Ausfälle können die Kontinuität wesentlicher Bankdienstleistungen gefährden, auch wenn ein Institut finanziell solvent ist. Der SRB arbeitet dazu eng mit dem SSM und nationalen Behörden zusammen. Der Bericht erscheint zweimal jährlich, parallel zur Anhörung des EZB-Aufsichtsvorsitzenden."
+  ],
+  "facts": [
+   {
+    "label": "Datum",
+    "value": "09.11.2026"
+   },
+   {
+    "label": "Verfasser",
+    "value": "SRB-Vorsitzender Dominique Laboureix"
+   },
+   {
+    "label": "Adressat",
+    "value": "Eurogruppe"
+   },
+   {
+    "label": "Turnus",
+    "value": "Halbjährlich"
+   },
+   {
+    "label": "Schwerpunkte",
+    "value": "Liquiditäts- und Solvenzlücken, Cyber- und IKT-Risiken, kommendes EU-Bankenpaket"
+   },
+   {
+    "label": "Rahmenwerk",
+    "value": "BRRD"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Banken (SSM)",
+    "note": "Direkt im Fokus des Berichts",
+    "detail": "Bedeutende und weniger bedeutende Institute, die der Abwicklungsplanung des SRB oder nationaler Behörden unterliegen, sind vom Inhalt des Berichts direkt betroffen, insbesondere hinsichtlich Resolvabilität und IKT-Resilienz.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance",
+    "note": "Beobachtungspflicht bei Rahmenänderungen",
+    "detail": "Compliance-Funktionen sollten das angekündigte Bankenpaket der Kommission beobachten, da es den Krisenmanagementrahmen ändern und neue Anforderungen auslösen kann.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Risikomanagement",
+    "note": "Cyber- und IKT-Risiken adressiert",
+    "detail": "Der Bericht fordert explizit, Krisenvorsorge auf Cyberangriffe und IKT-Ausfälle auszuweiten. Risikofunktionen sollten prüfen, ob bestehende Szenarien diese Bedrohungslagen abdecken.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "BRRD/CMDI",
+    "title": "Lücken bei Liquidität und Solvenz",
+    "text": "Der SRB benennt weiterhin offene Lücken im Krisenmanagementrahmen, insbesondere bei Liquiditäts- und Solvenzrisiken. Das kommende Bankenpaket der Kommission soll diese Lücken schließen."
+   },
+   {
+    "ref": "",
+    "title": "Cyber- und IKT-Risiken in Krisenvorsorge",
+    "text": "Erstmals explizit: Abwicklungsvorsorge muss Cyberangriffe und IKT-Ausfälle einschließen, die Bankdienstleistungen gefährden können, auch bei finanzieller Solidität des Instituts."
+   },
+   {
+    "ref": "",
+    "title": "Bankenpaket der Kommission erwartet",
+    "text": "Der Bericht nennt das bevorstehende EU-Bankenpaket als Chance, den Krisenmanagementrahmen zu modernisieren und die Bankenunion weiterzuentwickeln. Konkrete Inhalte oder Termine sind noch nicht bekannt."
+   }
+  ],
+  "todos": [
+   "Entwicklung des angekündigten EU-Bankenpakets der Kommission beobachten und interne Auswirkungsanalyse vorbereiten",
+   "Krisenvorsorge- und Notfallpläne auf Cyberangriffe und IKT-Ausfälle hin überprüfen",
+   "Abwicklungsplanung auf verbleibende Lücken bei Liquidität und Solvenz prüfen",
+   "Nächsten SRB-Halbjahresbericht (voraussichtlich Frühjahr 2027) zur Nachverfolgung vormerken"
+  ],
+  "timeline": [
+   {
+    "date": "09.11.2026",
+    "label": "Bericht an Eurogruppe",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was ist der unmittelbare Handlungsbedarf aus dem Bericht?",
+    "a": "Unmittelbarer Regelungsbedarf entsteht nicht direkt aus dem Bericht. Er ist ein Lageüberblick. Handlungsbedarf folgt erst, wenn das angekündigte Bankenpaket der Kommission konkrete Anforderungen enthält."
+   },
+   {
+    "q": "Warum sind Cyber- und IKT-Risiken im Abwicklungskontext relevant?",
+    "a": "Der SRB stellt klar, dass IKT-Ausfälle die Kontinuität wesentlicher Bankdienstleistungen gefährden können, selbst wenn das Institut finanziell solvent ist. Das erweitert die Anforderungen an die Krisenvorsorge über klassische Finanzrisiken hinaus."
+   },
+   {
+    "q": "Welches Bankenpaket ist gemeint?",
+    "a": "Der Bericht verweist auf ein bevorstehendes Bankenpaket der Europäischen Kommission. Konkrete Inhalte, Termine oder eine offizielle Bezeichnung nennt weder der Bericht noch die Quelle."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Inhalt und Zeitplan des angekündigten EU-Bankenpakets sind aus Quelle und Seite nicht bekannt",
+   "Keine konkreten Fristen oder Umsetzungspflichten im Bericht genannt",
+   "Nächster Berichtstermin (Frühjahr 2027) nicht explizit in der Quelle bestätigt"
+  ],
+  "meta": {
+   "generated": "2026-11-10",
+   "model": "sonnet",
+   "source": "HTML, 2618 Zeichen, gekürzt auf 2618",
+   "dropped": 0,
+   "tokens": 8508
+  }
+ },
  "consumer-2026-10-13-verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde": {
   "h1": "Sachkunde bei Verbraucherdarlehen: BaFin konsultiert Änderungsverordnung (Konsultation 09/2026)",
   "seo_title": "BaFin Konsultation 09/2026: Sachkunde Verbraucherdarlehen",
@@ -982,6 +1103,112 @@
    "model": "sonnet",
    "source": "HTML + verlinktes PDF, 169115 Zeichen, gekürzt auf 18000",
    "dropped": 1
+  }
+ },
+ "csdr-2026-11-10-list-of-designated-authorities-payment-systems-and-securities-settlement-systems": {
+  "h1": "ESMA-Liste benannter Behörden und Systeme (SFTR Art. 2)",
+  "seo_title": "ESMA SFTR Behördenliste aktualisiert 2026",
+  "meta_description": "ESMA aktualisiert Liste benannter Behörden, Zahlungssysteme und Wertpapierabwicklungssysteme nach SFTR. Relevant für Institute mit Meldepflichten bei SFTs.",
+  "lead": "Die ESMA hat die Liste der benannten Behörden, Zahlungssysteme und Wertpapierabwicklungssysteme nach SFTR aktualisiert. Betroffen sind Finanzinstitute, die Wertpapierfinanzierungsgeschäfte melden.",
+  "aka": [
+   "SFTR Behördenliste",
+   "designated authorities SFTR",
+   "SFT Meldepflicht Systeme",
+   "ESMA SFTR Liste",
+   "Wertpapierabwicklungssysteme SFTR"
+  ],
+  "summary": "Die ESMA hat ihre Liste der benannten Behörden, Zahlungssysteme und Wertpapierabwicklungssysteme gemäß SFTR aktualisiert. Institute mit Meldepflichten für Wertpapierfinanzierungsgeschäfte müssen prüfen, ob die von ihnen verwendeten Systeme und Gegenparteibehörden korrekt referenziert sind.",
+  "overview": [
+   "Die ESMA veröffentlicht regelmäßig eine aktualisierte Fassung der Liste, die für die Anwendung der Verordnung (EU) 2015/2365 (SFTR) maßgeblich ist. Die Liste erfasst die zuständigen Behörden sowie die relevanten Zahlungs- und Wertpapierabwicklungssysteme, auf die SFTR-Meldepflichten Bezug nehmen.",
+   "Institute, die Wertpapierfinanzierungsgeschäfte (SFTs) abschließen oder vermitteln, müssen sicherstellen, dass ihre Meldungen die aktuellen Einträge dieser Liste korrekt wiedergeben. Eine veraltete Referenz kann zu fehlerhaften Transaktionsmeldungen führen."
+  ],
+  "facts": [
+   {
+    "label": "Veröffentlicht",
+    "value": "10.11.2026"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "ESMA"
+   },
+   {
+    "label": "Rechtsgrundlage",
+    "value": "Verordnung (EU) 2015/2365 (SFTR)"
+   },
+   {
+    "label": "Format",
+    "value": "Excel-Datei (.xlsx)"
+   },
+   {
+    "label": "Rahmenwerk",
+    "value": "CSDR & Umstellung auf T+1"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Banken & Broker",
+    "note": "Meldepflichtig bei SFT-Abschluss",
+    "detail": "Kreditinstitute und Wertpapierfirmen, die SFTs abschließen, müssen Transaktionen an ein Transaktionsregister melden und dabei korrekte Systeme und Behörden referenzieren.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Kapitalverwaltung",
+    "note": "SFTR gilt für AIF- und OGAW-Verwalter",
+    "detail": "Verwaltungsgesellschaften unterliegen SFTR-Meldepflichten für SFTs, die sie im Namen verwalteter Fonds abschließen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance",
+    "note": "Prüfung der Referenzdaten erforderlich",
+    "detail": "Compliance-Funktionen müssen sicherstellen, dass interne Meldeprozesse die aktuelle ESMA-Liste verwenden und veraltete Systemreferenzen ausgeschlossen sind.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "SFTR",
+    "title": "Aktualisierte Behörden- und Systemliste",
+    "text": "Die ESMA hat die Liste der benannten Behörden, Zahlungssysteme und Wertpapierabwicklungssysteme nach SFTR neu veröffentlicht. Welche konkreten Einträge geändert wurden, geht aus der verfügbaren Quelle nicht hervor."
+   }
+  ],
+  "todos": [
+   "Aktuelle ESMA-Liste herunterladen und mit intern verwendeten Systemreferenzen abgleichen.",
+   "Meldeprozesse prüfen: Werden benannte Behörden und Systeme aus der aktuellen Liste korrekt befüllt?",
+   "Bei Abweichungen Anpassungen in den Meldesystemen veranlassen und dokumentieren."
+  ],
+  "timeline": [
+   {
+    "date": "10.11.2026",
+    "label": "ESMA-Liste veröffentlicht",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welche Institute sind von dieser Liste betroffen?",
+    "a": "Alle Gegenparteien mit Meldepflicht nach SFTR, darunter Kreditinstitute, Wertpapierfirmen und Verwaltungsgesellschaften, die Wertpapierfinanzierungsgeschäfte abschließen oder vermitteln."
+   },
+   {
+    "q": "Was ist zu tun, wenn eine Referenz in eigenen Systemen nicht mehr in der Liste steht?",
+    "a": "Die betroffene Systemreferenz ist in den internen Meldeprozessen zu aktualisieren. Fehlhafte Referenzen können zu unvollständigen oder fehlerhaften SFTR-Meldungen führen."
+   },
+   {
+    "q": "Wo ist die Liste verfügbar?",
+    "a": "Die aktuelle Liste steht als Excel-Datei auf der ESMA-Website zum Download bereit."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die Quelldatei ist eine binäre Excel-Datei. Welche konkreten Einträge gegenüber der Vorversion geändert wurden, ist nicht erkennbar.",
+   "Kein Datum eines vorherigen Updates in der Quelle genannt; Vergleich mit Vorgängerversion nicht möglich.",
+   "Keine Fristen oder Übergangsregelungen in der Meldung genannt."
+  ],
+  "meta": {
+   "generated": "2026-11-10",
+   "model": "sonnet",
+   "source": "HTML, 44468 Zeichen, gekürzt auf 12000",
+   "dropped": 0,
+   "tokens": 16583
   }
  },
  "fitproper-2026-09-04-bafin-anzeigen-fuer-inhaber-besonderer-schluesselfunktionen-mvp-portal-ab-dem-4": {
