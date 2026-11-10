@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T11:19:34Z",
+  "generated_at": "2026-11-10T12:05:46Z",
   "updates": {
     "bcbs": [
       {
@@ -697,124 +697,6 @@
         "refnum": "Konsultation 04/2020"
       }
     ],
-    "csdr": [
-      {
-        "d": "10.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "List of designated authorities, payment systems and securities settlement systems",
-          "en": "List of designated authorities, payment systems and securities settlement systems"
-        },
-        "sl": "list-of-designated-authorities-payment-systems-and-securities-settlement-systems",
-        "s": {
-          "de": "Die ESMA hat eine aktualisierte Liste der benannten Behörden, Zahlungssysteme und Wertpapierabwicklungssysteme veröffentlicht. Diese Liste ist für die Anwendung der Verordnung (EU) 2015/2365 über die Transparenz von Wertpapierfinanzierungsgeschäften und der Weiterverwendung (SFTR) relevant.\n\nDie Aktualisierung ist für Finanzinstitute von Bedeutung, die Wertpapierfinanzierungsgeschäfte (SFTs) durchführen. Sie müssen sicherstellen, dass sie die korrekten benannten Behörden und Systeme für ihre Meldepflichten gemäß SFTR identifizieren und verwenden.\n\nEs sind keine spezifischen Fristen oder nächsten Schritte in der Meldung genannt.",
-          "en": "ESMA has published an updated list of designated authorities, payment systems, and securities settlement systems. This list is relevant for the application of Regulation (EU) 2015/2365 on transparency of securities financing transactions and of reuse (SFTR).\n\nThe update is important for financial institutions engaging in securities financing transactions (SFTs). They must ensure that they identify and use the correct designated authorities and systems for their reporting obligations under SFTR.\n\nNo specific deadlines or next steps are mentioned in the announcement."
-        },
-        "url": "https://www.esma.europa.eu/sites/default/files/library/sfd_designated_authorities_and_systems.xlsx",
-        "imp": "low",
-        "refnum": "ESMA70-155-11016"
-      },
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Zusammenfassung der Ergebnisse des EU T+1 Koordinierungsausschusses (September 2026)",
-          "en": "Summary of Conclusions of the EU T+1 Coordination Committee (September 2026)"
-        },
-        "sl": "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
-        "s": {
-          "de": "Das EU T+1 Coordination Committee hat die Ergebnisse seiner Sitzung vom September 2026 veröffentlicht. Die Europäische Kommission erwartet die baldige Veröffentlichung der geänderten RTS zur Abwicklungsdisziplin und plant, das politische Bewusstsein für die T+1-Umstellung zu schärfen. Die ESMA arbeitet mit nationalen Behörden an einem konvergenten Ansatz zur Überwachung der Einhaltung der neuen RTS-Anforderungen.\n\nDie EZB berichtete über Fortschritte bei der T+1-Migration in den Märkten und die Anpassungen von T2S. Die für T+1 erforderlichen Änderungen in T2S sind im Zeitplan. Die Verschiebung des Swift 2026 Standards Release auf den 12. Juni 2027 schützt die geplanten T+1-Testfenster. Die EZB (Bankenaufsicht) plant, im vierten Quartal 2026 erneut die T+1-Bereitschaft ausgewählter Banken zu prüfen, wobei die Kommunikation der Banken mit ihren Kunden als entscheidend hervorgehoben wird.\n\nDer Vorsitzende des EU T+1 Industry Committee (EUIC) betonte, dass die notwendige Marktanleitung bereitgestellt wurde und Tests lokal organisiert werden müssen. Eine Task Force für die Übergangsperiode (TPTF) wird eingerichtet, um praktische Fragen wie IPOs und größere Kapitalmaßnahmen zu behandeln. Das EUIC erwägt die Nutzung und Veröffentlichung von Daten zum tatsächlichen Verhalten der Marktteilnehmer zur Überwachung der Branchenbereitschaft und empfiehlt den nationalen Behörden, Daten auf nationaler Ebene zu sammeln, insbesondere zu Allokationen und Bestätigungen.",
-          "en": "The EU T+1 Coordination Committee has published the conclusions of its September 2026 meeting. The European Commission expects the amended RTS on Settlement Discipline to be published shortly and plans to raise political awareness for the T+1 transition. ESMA is working with national authorities on a convergent approach to supervising firms' compliance with the new RTS requirements.\n\nThe ECB reported on progress in T+1 migration in the markets and T2S adjustments. The T2S changes required for T+1 are on track. The deferral of the Swift 2026 Standards Release to June 12, 2027, protects the agreed T+1 testing windows. The ECB (Banking Supervision) plans to re-engage with a sample of banks in Q4 2026 regarding their T+1 readiness, emphasizing that banks' outreach to their clients will be key.\n\nThe Chair of the EU T+1 Industry Committee (EUIC) stated that the necessary market guidance has been delivered and testing must be organized locally. A Transition Period Task Force (TPTF) is being established to address practical issues such as IPOs and major corporate actions. The EUIC is considering using and publishing data on the actual behavior of market participants to monitor industry readiness and recommends that NCAs collect data at national level, particularly on allocations and confirmations."
-        },
-        "url": "https://www.esma.europa.eu/document/eu-t1-coordination-committee-summary-conclusions-september-2026",
-        "imp": "medium"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
-          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
-        },
-        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
-          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
-        "imp": "high"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Überarbeitete CSDR-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen",
-          "en": "Revised CSDR Guidelines on Standardised Procedures and Messaging Protocols"
-        },
-        "sl": "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
-        "s": {
-          "de": "Dieser Abschlussbericht der ESMA enthält überarbeitete Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen, die zwischen Wertpapierfirmen und ihren professionellen Kunden verwendet werden. Die Überarbeitung betrifft die Dokumentation von Vereinbarungen, die Einigung auf Kommunikationsverfahren und Nachrichtenprotokolle sowie die Abschaffung der mündlichen Kommunikation bei der Übermittlung von Allokationen und Bestätigungen.\n\nDie Leitlinien sind für Wertpapierfirmen relevant, die mit professionellen Kunden zusammenarbeiten. Sie sollen die Effizienz und Sicherheit der Wertpapierabwicklung verbessern, indem sie die Nutzung internationaler offener Kommunikationsverfahren und Standards vorschreiben und die Möglichkeit der Nutzung nicht-elektronischer Mittel auf Ausnahmefälle beschränken. Dies hat praktische Auswirkungen auf die internen Prozesse und die IT-Infrastruktur der betroffenen Unternehmen.\n\nDer Bericht enthält auch eine Kosten-Nutzen-Analyse und fasst das Feedback aus der Konsultation zusammen. Die genauen Anwendungsdaten und nächsten Schritte ergeben sich aus den finalen Leitlinien, die diesem Bericht beigefügt sind.",
-          "en": "This ESMA final report contains revised guidelines on standardised procedures and messaging protocols used between investment firms and their professional clients. The revision addresses the documentation of arrangements, agreement on communication procedures and messaging protocols, and the elimination of oral communication for submitting allocations and confirmations.\n\nThese guidelines are relevant for investment firms dealing with professional clients. They aim to enhance the efficiency and security of securities settlement by mandating the use of international open communication procedures and standards and limiting the use of non-electronic means to exceptional cases. This has practical implications for the internal processes and IT infrastructure of the affected firms.\n\nThe report also includes a cost-benefit analysis and summarises feedback from the consultation. The exact application dates and next steps will be determined by the final guidelines attached to this report."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-revised-csdr-guidelines-standardised-procedures-and-messaging-protocols-used",
-        "imp": "medium",
-        "refnum": "ESMA74-2119945926-3749"
-      },
-      {
-        "d": "12.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
-          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
-        },
-        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
-        "s": {
-          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
-          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
-        "imp": "medium"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
-          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
-        },
-        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
-          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
-        "imp": "high"
-      }
-    ],
     "luaifm": [
       {
         "d": "09.11.2026",
@@ -1257,123 +1139,6 @@
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs0124_MA_Abwicklungsfaehigkeit_V2.html",
         "imp": "high",
         "refnum": "Rundschreiben 01/2024"
-      }
-    ],
-    "dltpilot": [
-      {
-        "d": "09.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Aufruf zur Benennung von Mitgliedern für die European Tokenisation Standards Group",
-          "en": "Call for nominations for the European Tokenisation Standards Group"
-        },
-        "sl": "call-for-nominations-for-the-european-tokenisation-standards-group",
-        "s": {
-          "de": "Die ESMA ruft zur Benennung von Mitgliedern für die European Tokenisation Standards Group (ETSG) auf. Diese neue Industriegruppe soll die Interoperabilität im europäischen DLT-basierten Finanzmarkt-Ökosystem fördern und ein einheitliches Regelwerk für die Abwicklung und Verwahrung von DLT-Finanzinstrumenten zwischen DLT-Infrastrukturen erarbeiten.\n\nDie ETSG ist eine gemeinsame Initiative der Europäischen Kommission, ESMA und EZB, um der Fragmentierung im Tokenisierungs-Ökosystem entgegenzuwirken. Sie soll Standards entwickeln, die mit bestehenden Industriestandards kompatibel sind, und einen Rahmen zur Überwachung der Einhaltung dieser Standards schaffen. Die Ergebnisse der Gruppe werden regelmäßig an die EU-Behörden berichtet.\n\nMarktteilnehmer und öffentliche Stellen mit europäischer Präsenz und relevanter Expertise in Standardisierung oder praktischer Anwendung von Standards in Finanzdienstleistungen sind zur Bewerbung eingeladen. Die Bewerbungsfrist endet am 27. November 2026, und die Gruppe soll ihre Arbeit im Januar 2027 aufnehmen.",
-          "en": "ESMA is calling for nominations for the European Tokenisation Standards Group (ETSG). This new industry group aims to promote interoperability in the European DLT-based financial market ecosystem and to develop a single rulebook for the settlement and holding of DLT financial instruments between DLT infrastructures.\n\nThe ETSG is a joint initiative by the European Commission, ESMA, and the ECB to address fragmentation in the tokenisation ecosystem. It will develop standards compatible with existing industry standards and create a framework for monitoring compliance with these standards. The group's progress will be periodically reported to the EU authorities.\n\nMarket stakeholders and public sector bodies with a European presence and relevant expertise in technical and business standardisation or practical application of standards in financial services are invited to apply. The deadline for applications is 27 November 2026, and the group is expected to start its work in January 2027."
-        },
-        "url": "https://www.esma.europa.eu/sites/default/files/2026-11/ETSG_-_Background_and_Call_for_nominations.pdf",
-        "imp": "low"
-      },
-      {
-        "d": "09.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Mandat der Europäischen Tokenisierungs-Standardisierungsgruppe",
-          "en": "Mandate of the European Tokenisation Standards Group"
-        },
-        "sl": "mandate-of-the-european-tokenisation-standards-group",
-        "s": {
-          "de": "Die Europäische Kommission, ESMA und EZB haben die European Tokenisation Standards Group ins Leben gerufen. Ziel ist es, die Interoperabilität im europäischen DLT-basierten Finanzmarkt zu fördern, indem gemeinsame Marktstandards für die Abwicklung und Verwahrung von DLT-Finanzinstrumenten zwischen DLT-Infrastrukturen sowie zwischen DLT- und traditionellen Infrastrukturen entwickelt werden.\n\nDie Gruppe soll einen Rahmen zur Überwachung der effektiven Nutzung der vereinbarten Standards schaffen und Empfehlungen für Anreize zur Einhaltung dieser Standards an die EU-Behörden richten. Dies soll die Fragmentierung der Handelsinfrastruktur verhindern und einen integrierten Kapitalmarkt fördern. Die Arbeit der Gruppe ist marktorientiert und soll auf Beiträgen und Vereinbarungen von Marktteilnehmern basieren.\n\nDie Aufgaben umfassen die Entwicklung eines Standardisierungsansatzes, die Erarbeitung gemeinsamer Marktstandards, die Förderung ihrer Akzeptanz und die Zusammenarbeit mit anderen Standardisierungsforen. Die Gruppe soll auch Empfehlungen zur DLT-Interoperabilität für die europäische Politikgestaltung liefern.",
-          "en": "The European Commission, ESMA, and the ECB have established the European Tokenisation Standards Group. Its objective is to promote end-to-end interoperability in the European DLT-based financial market by agreeing on common market standards that facilitate the settlement and holding of DLT financial instruments between DLT infrastructures and between DLT and legacy infrastructures.\n\nThe group is tasked with creating a framework for monitoring the effective use of the agreed standards and may put forward recommendations to EU public authorities to apply measures to incentivise compliance. This aims to prevent fragmentation of trading infrastructure and foster an integrated capital market. The group's work is market-driven, based on contributions and agreements among market stakeholders.\n\nIts tasks include developing a standardisation approach, creating common market standards, fostering their market-wide adoption, and engaging with other standardisation forums. The group will also provide input and recommendations on DLT interoperability to inform relevant European public policy-making bodies."
-        },
-        "url": "https://www.esma.europa.eu/sites/default/files/2026-11/Mandate_of_the_European_Tokenisation_Standards_Group.pdf",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (ESMA91-1505572268-4934)",
-          "en": "Call for evidence on the CCP collateral tokenisation (ESMA91-1505572268-4934)"
-        },
-        "sl": "call-for-evidence-on-the-ccp-collateral-tokenisation",
-        "s": {
-          "de": "Die ESMA hat ein Konsultationspapier zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (CCPs) veröffentlicht. Ziel ist es, die Auswirkungen der Tokenisierung auf die Mobilisierung, Übertragung, Verwaltung, den Schutz und die Verwertung von Sicherheiten zu untersuchen. Dabei soll geklärt werden, ob der bestehende Regulierungs- und Aufsichtsrahmen noch angemessen ist.\n\nDas Papier richtet sich an CCPs, Clearing-Mitglieder, deren Kunden sowie Marktinfrastrukturen (CSDs, Verwahrer, Triparty-Agenten) und Anbieter von Tokenisierungs- oder DLT-Lösungen. Es ist auch relevant für Rechtsexperten, Branchenverbände und andere Stakeholder, die im Sicherheitenmanagement, bei Post-Trade-Dienstleistungen oder der Entwicklung digitaler Finanzmarktinfrastrukturen tätig sind. Die ESMA möchte ein besseres Verständnis für die Implikationen der Tokenisierung von Sicherheiten gewinnen, bevor sie über mögliche regulatorische Maßnahmen entscheidet.\n\nInteressierte Parteien können bis zum 15. Januar 2027 Stellungnahmen einreichen. Alle Beiträge werden nach Abschluss der Konsultation veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
-          "en": "ESMA has published a consultation paper on the tokenisation of collateral for central counterparties (CCPs). The aim is to investigate the implications of tokenisation for the mobilisation, transfer, management, protection, and realisation of collateral. It seeks to clarify whether the existing regulatory and supervisory framework remains adequate.\n\nThe paper is addressed to CCPs, clearing members and their clients, as well as market infrastructures (CSDs, custodians, triparty agents) and providers of tokenisation or DLT solutions. It is also relevant for legal experts, industry associations, and other stakeholders involved in collateral management, post-trade services, or digital financial market infrastructure developments. ESMA aims to gain a better understanding of the implications of collateral tokenisation before deciding on potential regulatory actions.\n\nInterested parties can submit comments until 15 January 2027. All contributions will be published after the close of the consultation, unless confidentiality is requested."
-        },
-        "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation",
-        "imp": "medium",
-        "refnum": "ESMA91-1505572268-4934"
-      },
-      {
-        "d": "14.02.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zum Erlaubnisverfahren für Kryptowertpapierregisterführung",
-          "en": "BaFin Guidance Notice on Licensing Procedure for Crypto Securities Register Management"
-        },
-        "sl": "merkblatt-02-2022-ba-hinweise-erlaubnisverfahren-kryptowertpapierregisterfuehrun",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung veröffentlicht. Diese Dienstleistung wurde durch das Gesetz zur Einführung von elektronischen Wertpapieren im Juni 2021 als neue Finanzdienstleistung in das KWG aufgenommen und ist erlaubnispflichtig.\n\nDas Merkblatt richtet sich an Unternehmen, die eine solche Erlaubnis gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG beantragen möchten. Es gibt Hinweise zu den aus BaFin-Sicht besonders wichtigen Aspekten im Erlaubnisverfahren, insbesondere zu den Anforderungen an das Anfangskapital (mindestens 150.000 Euro), die Zuverlässigkeit und fachliche Eignung von Inhabern und Geschäftsleitern sowie den Geschäftsplan. Zudem werden die Anforderungen der eWpRV und der Inhaberkontrollverordnung thematisiert. Ein besonderer Fokus liegt auf der IT-Strategie und IT-Sicherheit, wobei auf die MaRisk, BAIT und künftig DORA verwiesen wird.\n\nDas Erlaubnisverfahren orientiert sich an § 32 Abs. 1 KWG und ist mit etablierten Verfahren für Bankgeschäfte oder andere Finanzdienstleistungen vergleichbar. Antragsteller sollen vollständige Unterlagen einreichen und können sich bei Fragen direkt an die BaFin oder die Deutsche Bundesbank wenden. Unternehmen, die nicht unter Übergangsbestimmungen fallen, dürfen ihre Tätigkeit erst nach Erteilung der Erlaubnis aufnehmen.",
-          "en": "BaFin has published a guidance notice on applying for a license to operate a crypto securities register. This service was introduced as a new financial service under the KWG by the German Act on the Introduction of Electronic Securities in June 2021 and requires a license.\n\nThe guidance notice is aimed at companies wishing to apply for such a license in accordance with Section 1 (1a) sentence 2 no. 8 KWG. It provides guidance on aspects that BaFin considers particularly important in the licensing process, especially regarding initial capital requirements (at least 150,000 euros), the reliability and professional suitability of owners and managing directors, and the business plan. The requirements of the eWpRV and the Owner Control Ordinance are also addressed. A particular focus is placed on IT strategy and IT security, referring to MaRisk, BAIT, and in the future, DORA.\n\nThe licensing procedure is based on Section 32 (1) KWG and is comparable to established procedures for banking business or other financial services. Applicants should submit complete documentation and can contact BaFin or the Deutsche Bundesbank directly with questions. Companies not covered by transitional provisions may only commence their activities after obtaining the license."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/BA/mb_02_2022_BA_Hinweise_Erlaubnsvf_Kryptwertpapierregisterfuehrung.html",
-        "imp": "medium"
-      },
-      {
-        "d": "23.11.2023",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zur Kryptowertpapierregisterführung (KWG)",
-          "en": "BaFin Guidance Notice on Crypto Securities Register Management (KWG)"
-        },
-        "sl": "merkblatt-03-2023-hinweise-zum-tatbestand-der-kryptowertpapierregisterfuehrung-g",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Kryptowertpapierregisterführung gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG veröffentlicht. Es erläutert die Erlaubnispflicht für diese Finanzdienstleistung, die durch das Gesetz zur Einführung von elektronischen Wertpapieren (eWpG) eingeführt wurde. Ziel ist es, Anlegerschutz, Marktintegrität, Transparenz und Funktionsschutz der Kapitalmärkte bei DLT-basierten elektronischen Wertpapieren und Kryptofondsanteilen zu gewährleisten.\n\nDas Merkblatt definiert Kryptowertpapiere als elektronische Wertpapiere, die in ein Kryptowertpapierregister eingetragen sind, und Kryptofondsanteile als elektronische Anteilscheine, die ebenfalls in ein solches Register eingetragen sind. Es wird klargestellt, dass ein elektronisches Wertpapier eine Sache im Sinne des BGB fingiert, um den gleichen Eigentumsschutz wie bei physischen Wertpapieren zu gewährleisten. Die Registerführung umfasst das Bereitstellen und Pflegen einer Begebungsinfrastruktur, wobei die Anforderungen an Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität der Daten zu erfüllen sind.\n\nDie Regelungen sind relevant für Unternehmen, die Kryptowertpapierregister führen oder dies beabsichtigen. Sie müssen die Anforderungen des eWpG und die damit verbundene Erlaubnispflicht nach KWG beachten. Das Merkblatt betont die Technikoffenheit des Kryptowertpapierregisters, wobei DLT-basierte Aufzeichnungssysteme wie die Blockchain als primäre Technologie in Frage kommen.",
-          "en": "BaFin has published a guidance notice on the operation of crypto securities registers in accordance with Section 1 (1a) Sentence 2 No. 8 KWG. It clarifies the licensing requirement for this financial service, which was introduced by the Act on the Introduction of Electronic Securities (eWpG). The aim is to ensure investor protection, market integrity, transparency, and the functional integrity of capital markets for DLT-based electronic securities and crypto fund units.\n\nThe guidance notice defines crypto securities as electronic securities entered in a crypto securities register, and crypto fund units as electronic unit certificates also entered in such a register. It clarifies that an electronic security is deemed a thing within the meaning of the German Civil Code (BGB) to ensure the same ownership protection as for physical securities. Register management involves providing and maintaining an issuance infrastructure, with requirements for data confidentiality, integrity, availability, and authenticity.\n\nThe regulations are relevant for companies that operate or intend to operate crypto securities registers. They must comply with the requirements of the eWpG and the associated licensing obligation under the KWG. The guidance notice emphasizes the technology-neutral approach to crypto securities registers, with DLT-based recording systems such as blockchain being the primary technology in question."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_231114_tatbestand_kryptowertpapierregisterfuehrung.html",
-        "imp": "medium"
-      },
-      {
-        "d": "27.05.2022",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung",
-          "en": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung"
-        },
-        "sl": "hinweise-zum-erlaubnisantrag-fuer-die-kryptowertpapierregisterfuehrung",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung nach § 65 Abs. 1 Satz 1 KWG veröffentlicht. Es konkretisiert die Anforderungen an den Antrag und die einzureichenden Unterlagen, die für die Prüfung der Erlaubnisvoraussetzungen notwendig sind.\n\nDas Merkblatt richtet sich an Unternehmen, die die Kryptowertpapierregisterführung als Finanzdienstleistung anbieten möchten. Es erläutert detailliert die notwendigen Angaben zu Geschäftsmodell, Organisation, Personal und technischen Systemen, um eine vollständige und prüffähige Antragstellung zu gewährleisten.\n\nDie Hinweise sollen Antragstellern helfen, die komplexen Anforderungen des KWG und der Kryptowertpapierverordnung (KryptoWpVerOV) zu erfüllen und den Erlaubnisprozess zu beschleunigen.",
-          "en": "BaFin has published a guidance note on applying for a license to operate a crypto securities register in accordance with Section 65 (1) sentence 1 of the German Banking Act (KWG). It specifies the requirements for the application and the documents to be submitted, which are necessary for examining the licensing conditions.\n\nThe guidance note is aimed at companies that wish to offer crypto securities register management as a financial service. It explains in detail the necessary information regarding the business model, organization, personnel, and technical systems to ensure a complete and auditable application.\n\nThe guidelines are intended to help applicants meet the complex requirements of the KWG and the Crypto Securities Ordinance (KryptoWpVerOV) and to accelerate the licensing process."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/BA/Merkblatt_02_2022_Hinweise_Erlaubnisantrag_Kryptowertpapierregisterfuehrung.html",
-        "imp": "medium"
       }
     ],
     "itsrep": [
@@ -2703,6 +2468,104 @@
         "refnum": "ESMA80-519981123-3461"
       }
     ],
+    "csdr": [
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Zusammenfassung der Ergebnisse des EU T+1 Koordinierungsausschusses (September 2026)",
+          "en": "Summary of Conclusions of the EU T+1 Coordination Committee (September 2026)"
+        },
+        "sl": "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
+        "s": {
+          "de": "Das EU T+1 Coordination Committee hat die Ergebnisse seiner Sitzung vom September 2026 veröffentlicht. Die Europäische Kommission erwartet die baldige Veröffentlichung der geänderten RTS zur Abwicklungsdisziplin und plant, das politische Bewusstsein für die T+1-Umstellung zu schärfen. Die ESMA arbeitet mit nationalen Behörden an einem konvergenten Ansatz zur Überwachung der Einhaltung der neuen RTS-Anforderungen.\n\nDie EZB berichtete über Fortschritte bei der T+1-Migration in den Märkten und die Anpassungen von T2S. Die für T+1 erforderlichen Änderungen in T2S sind im Zeitplan. Die Verschiebung des Swift 2026 Standards Release auf den 12. Juni 2027 schützt die geplanten T+1-Testfenster. Die EZB (Bankenaufsicht) plant, im vierten Quartal 2026 erneut die T+1-Bereitschaft ausgewählter Banken zu prüfen, wobei die Kommunikation der Banken mit ihren Kunden als entscheidend hervorgehoben wird.\n\nDer Vorsitzende des EU T+1 Industry Committee (EUIC) betonte, dass die notwendige Marktanleitung bereitgestellt wurde und Tests lokal organisiert werden müssen. Eine Task Force für die Übergangsperiode (TPTF) wird eingerichtet, um praktische Fragen wie IPOs und größere Kapitalmaßnahmen zu behandeln. Das EUIC erwägt die Nutzung und Veröffentlichung von Daten zum tatsächlichen Verhalten der Marktteilnehmer zur Überwachung der Branchenbereitschaft und empfiehlt den nationalen Behörden, Daten auf nationaler Ebene zu sammeln, insbesondere zu Allokationen und Bestätigungen.",
+          "en": "The EU T+1 Coordination Committee has published the conclusions of its September 2026 meeting. The European Commission expects the amended RTS on Settlement Discipline to be published shortly and plans to raise political awareness for the T+1 transition. ESMA is working with national authorities on a convergent approach to supervising firms' compliance with the new RTS requirements.\n\nThe ECB reported on progress in T+1 migration in the markets and T2S adjustments. The T2S changes required for T+1 are on track. The deferral of the Swift 2026 Standards Release to June 12, 2027, protects the agreed T+1 testing windows. The ECB (Banking Supervision) plans to re-engage with a sample of banks in Q4 2026 regarding their T+1 readiness, emphasizing that banks' outreach to their clients will be key.\n\nThe Chair of the EU T+1 Industry Committee (EUIC) stated that the necessary market guidance has been delivered and testing must be organized locally. A Transition Period Task Force (TPTF) is being established to address practical issues such as IPOs and major corporate actions. The EUIC is considering using and publishing data on the actual behavior of market participants to monitor industry readiness and recommends that NCAs collect data at national level, particularly on allocations and confirmations."
+        },
+        "url": "https://www.esma.europa.eu/document/eu-t1-coordination-committee-summary-conclusions-september-2026",
+        "imp": "medium"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
+          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
+        },
+        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
+          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
+        "imp": "high"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Überarbeitete CSDR-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen",
+          "en": "Revised CSDR Guidelines on Standardised Procedures and Messaging Protocols"
+        },
+        "sl": "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
+        "s": {
+          "de": "Dieser Abschlussbericht der ESMA enthält überarbeitete Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen, die zwischen Wertpapierfirmen und ihren professionellen Kunden verwendet werden. Die Überarbeitung betrifft die Dokumentation von Vereinbarungen, die Einigung auf Kommunikationsverfahren und Nachrichtenprotokolle sowie die Abschaffung der mündlichen Kommunikation bei der Übermittlung von Allokationen und Bestätigungen.\n\nDie Leitlinien sind für Wertpapierfirmen relevant, die mit professionellen Kunden zusammenarbeiten. Sie sollen die Effizienz und Sicherheit der Wertpapierabwicklung verbessern, indem sie die Nutzung internationaler offener Kommunikationsverfahren und Standards vorschreiben und die Möglichkeit der Nutzung nicht-elektronischer Mittel auf Ausnahmefälle beschränken. Dies hat praktische Auswirkungen auf die internen Prozesse und die IT-Infrastruktur der betroffenen Unternehmen.\n\nDer Bericht enthält auch eine Kosten-Nutzen-Analyse und fasst das Feedback aus der Konsultation zusammen. Die genauen Anwendungsdaten und nächsten Schritte ergeben sich aus den finalen Leitlinien, die diesem Bericht beigefügt sind.",
+          "en": "This ESMA final report contains revised guidelines on standardised procedures and messaging protocols used between investment firms and their professional clients. The revision addresses the documentation of arrangements, agreement on communication procedures and messaging protocols, and the elimination of oral communication for submitting allocations and confirmations.\n\nThese guidelines are relevant for investment firms dealing with professional clients. They aim to enhance the efficiency and security of securities settlement by mandating the use of international open communication procedures and standards and limiting the use of non-electronic means to exceptional cases. This has practical implications for the internal processes and IT infrastructure of the affected firms.\n\nThe report also includes a cost-benefit analysis and summarises feedback from the consultation. The exact application dates and next steps will be determined by the final guidelines attached to this report."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-revised-csdr-guidelines-standardised-procedures-and-messaging-protocols-used",
+        "imp": "medium",
+        "refnum": "ESMA74-2119945926-3749"
+      },
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
+          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
+        },
+        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
+        "s": {
+          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
+          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
+      }
+    ],
     "cra": [
       {
         "d": "16.10.2026",
@@ -3306,6 +3169,85 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2023/kon_02_23_Konsultation_Leitlinien_Governance_Bankprodukte_Privatkundengeschaeft.html",
         "imp": "medium",
         "refnum": "Konsultation 02/2023"
+      }
+    ],
+    "dltpilot": [
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (ESMA91-1505572268-4934)",
+          "en": "Call for evidence on the CCP collateral tokenisation (ESMA91-1505572268-4934)"
+        },
+        "sl": "call-for-evidence-on-the-ccp-collateral-tokenisation",
+        "s": {
+          "de": "Die ESMA hat ein Konsultationspapier zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (CCPs) veröffentlicht. Ziel ist es, die Auswirkungen der Tokenisierung auf die Mobilisierung, Übertragung, Verwaltung, den Schutz und die Verwertung von Sicherheiten zu untersuchen. Dabei soll geklärt werden, ob der bestehende Regulierungs- und Aufsichtsrahmen noch angemessen ist.\n\nDas Papier richtet sich an CCPs, Clearing-Mitglieder, deren Kunden sowie Marktinfrastrukturen (CSDs, Verwahrer, Triparty-Agenten) und Anbieter von Tokenisierungs- oder DLT-Lösungen. Es ist auch relevant für Rechtsexperten, Branchenverbände und andere Stakeholder, die im Sicherheitenmanagement, bei Post-Trade-Dienstleistungen oder der Entwicklung digitaler Finanzmarktinfrastrukturen tätig sind. Die ESMA möchte ein besseres Verständnis für die Implikationen der Tokenisierung von Sicherheiten gewinnen, bevor sie über mögliche regulatorische Maßnahmen entscheidet.\n\nInteressierte Parteien können bis zum 15. Januar 2027 Stellungnahmen einreichen. Alle Beiträge werden nach Abschluss der Konsultation veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
+          "en": "ESMA has published a consultation paper on the tokenisation of collateral for central counterparties (CCPs). The aim is to investigate the implications of tokenisation for the mobilisation, transfer, management, protection, and realisation of collateral. It seeks to clarify whether the existing regulatory and supervisory framework remains adequate.\n\nThe paper is addressed to CCPs, clearing members and their clients, as well as market infrastructures (CSDs, custodians, triparty agents) and providers of tokenisation or DLT solutions. It is also relevant for legal experts, industry associations, and other stakeholders involved in collateral management, post-trade services, or digital financial market infrastructure developments. ESMA aims to gain a better understanding of the implications of collateral tokenisation before deciding on potential regulatory actions.\n\nInterested parties can submit comments until 15 January 2027. All contributions will be published after the close of the consultation, unless confidentiality is requested."
+        },
+        "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation",
+        "imp": "medium",
+        "refnum": "ESMA91-1505572268-4934"
+      },
+      {
+        "d": "14.02.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zum Erlaubnisverfahren für Kryptowertpapierregisterführung",
+          "en": "BaFin Guidance Notice on Licensing Procedure for Crypto Securities Register Management"
+        },
+        "sl": "merkblatt-02-2022-ba-hinweise-erlaubnisverfahren-kryptowertpapierregisterfuehrun",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung veröffentlicht. Diese Dienstleistung wurde durch das Gesetz zur Einführung von elektronischen Wertpapieren im Juni 2021 als neue Finanzdienstleistung in das KWG aufgenommen und ist erlaubnispflichtig.\n\nDas Merkblatt richtet sich an Unternehmen, die eine solche Erlaubnis gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG beantragen möchten. Es gibt Hinweise zu den aus BaFin-Sicht besonders wichtigen Aspekten im Erlaubnisverfahren, insbesondere zu den Anforderungen an das Anfangskapital (mindestens 150.000 Euro), die Zuverlässigkeit und fachliche Eignung von Inhabern und Geschäftsleitern sowie den Geschäftsplan. Zudem werden die Anforderungen der eWpRV und der Inhaberkontrollverordnung thematisiert. Ein besonderer Fokus liegt auf der IT-Strategie und IT-Sicherheit, wobei auf die MaRisk, BAIT und künftig DORA verwiesen wird.\n\nDas Erlaubnisverfahren orientiert sich an § 32 Abs. 1 KWG und ist mit etablierten Verfahren für Bankgeschäfte oder andere Finanzdienstleistungen vergleichbar. Antragsteller sollen vollständige Unterlagen einreichen und können sich bei Fragen direkt an die BaFin oder die Deutsche Bundesbank wenden. Unternehmen, die nicht unter Übergangsbestimmungen fallen, dürfen ihre Tätigkeit erst nach Erteilung der Erlaubnis aufnehmen.",
+          "en": "BaFin has published a guidance notice on applying for a license to operate a crypto securities register. This service was introduced as a new financial service under the KWG by the German Act on the Introduction of Electronic Securities in June 2021 and requires a license.\n\nThe guidance notice is aimed at companies wishing to apply for such a license in accordance with Section 1 (1a) sentence 2 no. 8 KWG. It provides guidance on aspects that BaFin considers particularly important in the licensing process, especially regarding initial capital requirements (at least 150,000 euros), the reliability and professional suitability of owners and managing directors, and the business plan. The requirements of the eWpRV and the Owner Control Ordinance are also addressed. A particular focus is placed on IT strategy and IT security, referring to MaRisk, BAIT, and in the future, DORA.\n\nThe licensing procedure is based on Section 32 (1) KWG and is comparable to established procedures for banking business or other financial services. Applicants should submit complete documentation and can contact BaFin or the Deutsche Bundesbank directly with questions. Companies not covered by transitional provisions may only commence their activities after obtaining the license."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/BA/mb_02_2022_BA_Hinweise_Erlaubnsvf_Kryptwertpapierregisterfuehrung.html",
+        "imp": "medium"
+      },
+      {
+        "d": "23.11.2023",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zur Kryptowertpapierregisterführung (KWG)",
+          "en": "BaFin Guidance Notice on Crypto Securities Register Management (KWG)"
+        },
+        "sl": "merkblatt-03-2023-hinweise-zum-tatbestand-der-kryptowertpapierregisterfuehrung-g",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Kryptowertpapierregisterführung gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG veröffentlicht. Es erläutert die Erlaubnispflicht für diese Finanzdienstleistung, die durch das Gesetz zur Einführung von elektronischen Wertpapieren (eWpG) eingeführt wurde. Ziel ist es, Anlegerschutz, Marktintegrität, Transparenz und Funktionsschutz der Kapitalmärkte bei DLT-basierten elektronischen Wertpapieren und Kryptofondsanteilen zu gewährleisten.\n\nDas Merkblatt definiert Kryptowertpapiere als elektronische Wertpapiere, die in ein Kryptowertpapierregister eingetragen sind, und Kryptofondsanteile als elektronische Anteilscheine, die ebenfalls in ein solches Register eingetragen sind. Es wird klargestellt, dass ein elektronisches Wertpapier eine Sache im Sinne des BGB fingiert, um den gleichen Eigentumsschutz wie bei physischen Wertpapieren zu gewährleisten. Die Registerführung umfasst das Bereitstellen und Pflegen einer Begebungsinfrastruktur, wobei die Anforderungen an Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität der Daten zu erfüllen sind.\n\nDie Regelungen sind relevant für Unternehmen, die Kryptowertpapierregister führen oder dies beabsichtigen. Sie müssen die Anforderungen des eWpG und die damit verbundene Erlaubnispflicht nach KWG beachten. Das Merkblatt betont die Technikoffenheit des Kryptowertpapierregisters, wobei DLT-basierte Aufzeichnungssysteme wie die Blockchain als primäre Technologie in Frage kommen.",
+          "en": "BaFin has published a guidance notice on the operation of crypto securities registers in accordance with Section 1 (1a) Sentence 2 No. 8 KWG. It clarifies the licensing requirement for this financial service, which was introduced by the Act on the Introduction of Electronic Securities (eWpG). The aim is to ensure investor protection, market integrity, transparency, and the functional integrity of capital markets for DLT-based electronic securities and crypto fund units.\n\nThe guidance notice defines crypto securities as electronic securities entered in a crypto securities register, and crypto fund units as electronic unit certificates also entered in such a register. It clarifies that an electronic security is deemed a thing within the meaning of the German Civil Code (BGB) to ensure the same ownership protection as for physical securities. Register management involves providing and maintaining an issuance infrastructure, with requirements for data confidentiality, integrity, availability, and authenticity.\n\nThe regulations are relevant for companies that operate or intend to operate crypto securities registers. They must comply with the requirements of the eWpG and the associated licensing obligation under the KWG. The guidance notice emphasizes the technology-neutral approach to crypto securities registers, with DLT-based recording systems such as blockchain being the primary technology in question."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_231114_tatbestand_kryptowertpapierregisterfuehrung.html",
+        "imp": "medium"
+      },
+      {
+        "d": "27.05.2022",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung",
+          "en": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung"
+        },
+        "sl": "hinweise-zum-erlaubnisantrag-fuer-die-kryptowertpapierregisterfuehrung",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung nach § 65 Abs. 1 Satz 1 KWG veröffentlicht. Es konkretisiert die Anforderungen an den Antrag und die einzureichenden Unterlagen, die für die Prüfung der Erlaubnisvoraussetzungen notwendig sind.\n\nDas Merkblatt richtet sich an Unternehmen, die die Kryptowertpapierregisterführung als Finanzdienstleistung anbieten möchten. Es erläutert detailliert die notwendigen Angaben zu Geschäftsmodell, Organisation, Personal und technischen Systemen, um eine vollständige und prüffähige Antragstellung zu gewährleisten.\n\nDie Hinweise sollen Antragstellern helfen, die komplexen Anforderungen des KWG und der Kryptowertpapierverordnung (KryptoWpVerOV) zu erfüllen und den Erlaubnisprozess zu beschleunigen.",
+          "en": "BaFin has published a guidance note on applying for a license to operate a crypto securities register in accordance with Section 65 (1) sentence 1 of the German Banking Act (KWG). It specifies the requirements for the application and the documents to be submitted, which are necessary for examining the licensing conditions.\n\nThe guidance note is aimed at companies that wish to offer crypto securities register management as a financial service. It explains in detail the necessary information regarding the business model, organization, personnel, and technical systems to ensure a complete and auditable application.\n\nThe guidelines are intended to help applicants meet the complex requirements of the KWG and the Crypto Securities Ordinance (KryptoWpVerOV) and to accelerate the licensing process."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/BA/Merkblatt_02_2022_Hinweise_Erlaubnisantrag_Kryptowertpapierregisterfuehrung.html",
+        "imp": "medium"
       }
     ],
     "sanctions": [
