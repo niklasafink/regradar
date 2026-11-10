@@ -124,20 +124,50 @@
     "2026-11-09"
    ],
    "keys": [
+    "call-for-nominations-for-the-european-tokenisation-standards-group",
     "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated",
-    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance"
+    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
+    "mandate-of-the-european-tokenisation-standards-group",
+    "srb-bi-annual-reporting-note-to-eurogroup-november-2026"
    ],
-   "hook": "Der Basler Ausschuss verschärft die Anforderungen an das Zinsrisikomanagement im Anlagebuch.",
-   "folge": "Banken müssen ihre Modelle, Stresstests und Kontrollen für das Zinsrisiko im Anlagebuch anpassen. Die Aufsichtsbehörden erhalten neue Informationspflichten zur Überwachung.",
-   "cover": "BCBS: Neue Leitlinien für Zinsrisiko im Anlagebuch",
+   "hook": "Das Zinsrisiko im Anlagebuch rückt erneut in den Fokus der Aufsicht, mit neuen Leitlinien und Meldepflichten.",
+   "folge": "Der Basler Ausschuss konsultiert zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch. Banken müssen sich auf strengere Anforderungen bei Modellvalidierung, Stresstests und neue Aufsichtsmeldungen einstellen, um Mängel im IRRBB-Management zu beheben.",
+   "cover": "BCBS: Neue Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch",
    "zeilen": [
-    "CSSF: Aktualisierte FAQ für luxemburgische SIFs und SICARs, die keine AIFs sind"
+    "ESMA: Aufruf zur Benennung von Mitgliedern für die European Tokenisation Standards Group bis 27.11.2026",
+    "SRB: Halbjährlicher Bericht an die Eurogruppe betont Notwendigkeit zur Stärkung der Krisenvorsorge",
+    "CSSF: Aktualisierte FAQ zu SIFs und SICARs, die nicht als AIFs qualifizieren"
    ],
-   "frage": "Wie oft überprüfen Sie die Angemessenheit Ihrer IRRBB-Modelle und Stresstests?",
+   "frage": "Welche Anpassungen planen Sie im IRRBB-Management, um den erwarteten strengeren Anforderungen gerecht zu werden?",
    "top": "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
    "kern": {
-    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance": "Der Basler Ausschuss konsultiert bis zum 09.02.2027 zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch, die das Risikomanagement und die aufsichtsrechtliche Überwachung stärken sollen.",
-    "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated": "Die CSSF hat ihre FAQ zu Spezialfonds und Investmentgesellschaften in Risikokapital aktualisiert, die nicht als alternative Investmentfonds qualifizieren."
+    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance": "Der Basler Ausschuss konsultiert bis zum 09.02.2027 zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch, die strengere Anforderungen an Modellvalidierung, Stresstests und neue Aufsichtsmeldungen für Banken einführen.",
+    "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated": "Die CSSF hat ihre FAQ zu luxemburgischen Spezialfonds (SIF) und Investmentgesellschaften in Risikokapital (SICAR) aktualisiert, die nicht als alternative Investmentfonds (AIF) gelten.",
+    "srb-bi-annual-reporting-note-to-eurogroup-november-2026": "Der SRB hat der Eurogruppe seinen halbjährlichen Bericht über Risiken und die Notwendigkeit zur Stärkung der Krisenvorsorge im europäischen Bankensektor vorgelegt.",
+    "call-for-nominations-for-the-european-tokenisation-standards-group": "Die ESMA ruft Marktteilnehmer und öffentliche Stellen bis zum 27.11.2026 zur Bewerbung für die European Tokenisation Standards Group auf, um Interoperabilität im DLT-Finanzmarkt zu fördern.",
+    "mandate-of-the-european-tokenisation-standards-group": "Die Europäische Kommission, ESMA und EZB haben die European Tokenisation Standards Group ins Leben gerufen, um gemeinsame Marktstandards für die Abwicklung und Verwahrung von DLT-Finanzinstrumenten zu entwickeln."
+   },
+   "doppelt": [
+    "mandate-of-the-european-tokenisation-standards-group"
+   ],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-11": {
+   "window": [
+    "2026-11-10"
+   ],
+   "keys": [
+    "list-of-designated-authorities-payment-systems-and-securities-settlement-systems"
+   ],
+   "hook": "Die ESMA aktualisiert ihre Liste der zuständigen Behörden für Wertpapierfinanzierungsgeschäfte.",
+   "folge": "Finanzinstitute müssen die korrekten Behörden und Systeme für ihre Meldepflichten gemäß SFTR identifizieren und verwenden. Dies betrifft alle Institute, die Wertpapierfinanzierungsgeschäfte durchführen.",
+   "cover": "ESMA: Aktualisierte Liste für SFTR-Meldepflichten",
+   "zeilen": [],
+   "frage": "Wie stellen Sie sicher, dass Ihre SFTR-Meldungen stets an die aktuell zuständigen Behörden gehen?",
+   "top": "list-of-designated-authorities-payment-systems-and-securities-settlement-systems",
+   "kern": {
+    "list-of-designated-authorities-payment-systems-and-securities-settlement-systems": "Die ESMA hat eine aktualisierte Liste der benannten Behörden, Zahlungssysteme und Wertpapierabwicklungssysteme für die SFTR-Meldepflichten veröffentlicht."
    },
    "doppelt": [],
    "fmt": 5,
