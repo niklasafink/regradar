@@ -30,6 +30,11 @@ Liste von Gruppen. Ein Unternehmen ist Adressat, wenn es ALLE Merkmale mindesten
 
 9. Die Adressaten werden später rein regelbasiert mit Institutsprofilen abgeglichen, ohne weitere Prüfung durch eine KI. Jede Gruppe muss deshalb für sich allein den Adressatenkreis treffen: Eine Gruppe nur aus Ortsmerkmalen ("taetig_de", "sitz_de", "sitz_lu") ist nur richtig, wenn die Vorgabe wirklich jedes beaufsichtigte Unternehmen dort trifft. Sonst immer Institutsart, Erlaubnis oder Geschäftsmerkmal dazunehmen (z. B. Vermögensanlagen-Rundschreiben: Unternehmen mit Platzierungs- oder Emissionsgeschäft, nicht alle Institute mit Privatkunden). Knüpft die Pflicht an eine Rolle oder ein Geschäft an (Betreiber von Hochrisiko-KI: "ki_systeme"; Krypto: "casp", "krypto_emittent" oder "krypto_aktiv"; Verbriefung; OTC-Derivate; Pfandbriefgeschäft: "lic_pfandbrief"), gehört dieses Merkmal in JEDE Gruppe. Lieber mehrere enge Gruppen als eine weite.
 10. Bei direkter EZB-, SRB- oder AMLA-Zuständigkeit das Statusmerkmal ("si") in die Gruppe aufnehmen; Vorgaben nur für weniger bedeutende Institute mit "lsi".
+11. Ortsmerkmale nur bei nationalem Recht. EU-Verordnungen, EU-Richtlinien und Veröffentlichungen der EU-Behörden (EBA, ESMA, EIOPA, AMLA, EZB, SRB, Kommission) gelten in der ganzen Union: dort NIE "taetig_de" oder "sitz_de" in die Gruppe schreiben, auch wenn das Rahmenwerk eine deutsche Umsetzung hat. Umgekehrt braucht bei deutschem Recht und bei BaFin- oder Bundesbank-Veröffentlichungen JEDE Gruppe "taetig_de" oder "sitz_de".
+12. MaRisk (Rundschreiben für Banken, § 25a KWG): Kreditinstitute und Finanzdienstleistungsinstitute nach KWG, NICHT Wertpapierinstitute nach WpIG ("wpi", "wpi_mittel", "wpi_klein"); für sie gilt das eigene Rahmenwerk WpI MaRisk.
+13. Geldwäscherecht (GwG, AMLR, AMLA- und EBA-Geldwäsche-Leitlinien): Von den Versicherern sind nur Lebensversicherer ("versicherer_leben") Verpflichtete. Keine Gruppen für Schaden-, Kranken- oder Rückversicherer und keine Gruppe, die nur aus "versicherungsvertrieb" besteht. EBA-Leitlinien außerhalb der Geldwäsche richten sich nicht an Versicherer.
+14. Pflichten, die an ein Merkmal statt an die Institutsart anknüpfen, bekommen zusätzlich eine Gruppe nur mit diesem Merkmal: Marktmissbrauchs- und Prospektrecht für Emittenten [{"alle":["kapitalmarktorientiert"]}] (trifft auch börsennotierte Finanzholdings und Leasinggesellschaften), CSRD und Art. 8 Taxonomie-VO [{"alle":["csrd_pflichtig"]}].
+15. Schwellen und Zulassungen gehören in JEDE Gruppe: LkSG nur mit "beschaeftigte_ab_1000", Schwarmfinanzierungs-VO nur mit "ecsp" (nicht jedes Institut mit Kreditgeschäft oder Anlagevermittlung). Freiwillige Standards und Labels (z. B. EU Green Bond Standard) sind "keine_institute".
 
 ## Ausschlüsse (Feld "ausschluesse")
 Gruppen in derselben Form für ausdrücklich ausgenommene Unternehmen (z. B. Förderbanken nach Art. 2 Abs. 5 CRD: [{"alle":["foerderbank"]}]). Nur angeben, was das Dokument oder der Rechtsakt ausdrücklich ausnimmt.
@@ -54,6 +59,12 @@ Merkmale, die für die Entscheidung im Einzelfall nötig und typischerweise nich
 Antworte ausschließlich mit einem JSON-Objekt:
 {"art": "...", "kurz": "...", "adressaten": [{"alle": ["..."], "hinweis": "..."}], "ausschluesse": [], "ebene": "...", "teilregeln": [], "schwellen": [], "fragen": [], "handlung": "...", "geltung": {"ab": null, "frist": null}, "normen": [], "belege": [], "konfidenz": 0.0}
 <!-- PROMPT-END -->
+
+## Leitplanken beim Export
+
+Die Regeln 11 bis 15 stammen aus der Nachprüfung vom 11.11.2026 an zehn Institutsprofilen (falsche Treffer bei MaRisk für Wertpapierinstitute, GwG für Schadenversicherer, LkSG ohne Beschäftigtenschwelle, Schwarmfinanzierung, Green Bond Standard; falsche Nicht-Treffer bei MAR, Prospekt und Taxonomie für eine börsennotierte Finanzholding sowie bei EU-Rechtsakten für Institute außerhalb Deutschlands). `apply_guards` in scope.py setzt sie beim Export deterministisch durch, auch für bereits gespeicherte Analysen. Deshalb wurde `FORMAT` dafür nicht hochgezählt: Ein Neulauf aller Analysen ist nicht nötig. Neue wiederkehrende Fehler im Adressatenkreis dort als Leitplanke ergänzen (mit Test in `tests/test_units.py`, Klasse `ScopeGuards`) und hier als Regel für künftige Analysen aufnehmen.
+
+Der Abgleich auf der Website (`web/lib/relevance/match.ts`, `ruleValue` und `ruleCheck`) ergänzt, was sich aus dem Profil sicher ergibt: EWR-Institute, die in Deutschland nur im grenzüberschreitenden Dienstleistungsverkehr tätig sind (§ 53b KWG, ohne Zweigniederlassung), bekommen deutsche Vorgaben nur, soweit sie Verbraucher schützen; nachgeordnete Unternehmen tragen keine konsolidierten Pflichten; G-SRI scheidet bei weniger bedeutenden Instituten aus.
 
 ## Kosten
 

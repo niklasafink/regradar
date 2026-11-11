@@ -567,6 +567,57 @@ class CliRunDisabledSource(unittest.TestCase):
         self.assertIn("DISABLED", text)
 
 
+class ScopeGuards(unittest.TestCase):
+    """Leitplanken beim Export der Anforderungsanalysen (Befunde 11.11.2026)."""
+
+    FWS = {"marisk": {"jur": "DE"}, "gwg": {"jur": "DE"}, "lksg": {"jur": "EU+DE"}, "mar": {"jur": "EU"},
+           "ecspr": {"jur": "EU"}, "greenbond": {"jur": "EU"}, "sanctions": {"jur": "EU"}, "macomp": {"jur": "DE"}}
+    ARTS = {"ki_crr", "ki", "wpi", "fdi", "versicherer_leben", "versicherer_schaden", "finanzholding"}
+
+    def _run(self, fw, groups, src=""):
+        from regradar.scope import apply_guards
+        s = {"art": "pflicht", "adressaten": [{"alle": list(g)} for g in groups], "fragen": []}
+        out = apply_guards(s, fw, self.FWS, self.ARTS, src)
+        return out, {tuple(g["alle"]) for g in out["adressaten"]}
+
+    def test_marisk_ohne_wertpapierinstitute(self):
+        _, ids = self._run("marisk", [["ki_crr", "sitz_de"], ["wpi", "sitz_de"]])
+        self.assertEqual(ids, {("ki_crr", "sitz_de")})
+
+    def test_gwg_nur_lebensversicherer(self):
+        _, ids = self._run("gwg", [["versicherer_leben", "taetig_de"], ["versicherer_schaden", "taetig_de"],
+                                   ["versicherungsvertrieb", "taetig_de"], ["ki_crr", "taetig_de"]])
+        self.assertEqual(ids, {("versicherer_leben", "taetig_de"), ("ki_crr", "taetig_de")})
+
+    def test_lksg_braucht_beschaeftigtenschwelle(self):
+        out, ids = self._run("lksg", [["ki_crr", "sitz_de"]])
+        self.assertEqual(ids, {("ki_crr", "sitz_de", "beschaeftigte_ab_1000")})
+        self.assertEqual(out["fragen"][0]["merkmal"], "beschaeftigte_ab_1000")
+
+    def test_emittenten_unabhaengig_von_der_institutsart(self):
+        _, ids = self._run("mar", [["ki_crr", "kapitalmarktorientiert"], ["wpi", "lic_eigenhandel"]])
+        self.assertIn(("kapitalmarktorientiert",), ids)
+
+    def test_schwarmfinanzierung_nur_mit_zulassung(self):
+        _, ids = self._run("ecspr", [["lic_kredit", "sitz_de"], ["lic_anlagevermittlung", "sitz_de"]])
+        self.assertEqual(ids, {("ecsp",)})
+
+    def test_freiwilliger_standard_ist_keine_pflicht(self):
+        out, ids = self._run("greenbond", [["lic_emission", "sitz_de"]])
+        self.assertEqual(out["art"], "keine_institute")
+        self.assertEqual(ids, set())
+
+    def test_eu_quelle_ohne_deutschland_bezug(self):
+        _, ids = self._run("sanctions", [["ki_crr", "taetig_de"], ["ki_crr"], ["taetig_de"]], src="eur-lex.europa.eu")
+        self.assertEqual(ids, {("ki_crr",), ("taetig_de",)})
+        _, national = self._run("sanctions", [["ki_crr", "taetig_de"]], src="bafin.de")
+        self.assertEqual(national, {("ki_crr", "taetig_de")})
+
+    def test_deutsches_recht_braucht_deutschland_bezug(self):
+        _, ids = self._run("macomp", [["wpi"], ["ki_crr", "sitz_de"]])
+        self.assertEqual(ids, {("wpi", "taetig_de"), ("ki_crr", "sitz_de")})
+
+
 class DoraKwgExtension(unittest.TestCase):
     """DORA gilt über § 1a Abs. 2a KWG entsprechend auch für KWG-Institute außerhalb von Art. 2."""
 

@@ -88,6 +88,7 @@ export const GATTUNG_RULES: [RegExp, string[]][] = [
   [/grenz[üu]berschreitender Dienstleister|EWR-/i, ["eu_pass"]],
   [/Zweigstelle|Zweigniederlassung/i, ["zweigstelle_drittstaat"]],
   [/Datenbereitstellung/i, ["datenbereitstellung"]],
+  [/Schwarmfinanzierung/i, ["ecsp"]],
 ];
 
 export function featuresFromGattung(gattung: string[]): string[] {

@@ -76,7 +76,37 @@ export function ruleValue(p: Profile, id: string): Tri {
   if (SEATS.includes(id) && SEATS.some((s) => s !== id && featureValue(p, s) === true)) return false;
   if (id === "taetig_de" && featureValue(p, "sitz_de") === true) return true;
   if (BANK_ONLY.has(id) && p.closed && !BANKLIKE.some((b) => featureValue(p, b) === true)) return false;
+  // Global systemrelevant ist kein weniger bedeutendes Institut und kein Haus
+  // unter 30 Mrd. € Bilanzsumme (Befund 11.11.2026: kleine Banken wurden
+  // nach G-SRI gefragt).
+  if (id === "gsii" && (featureValue(p, "lsi") === true || featureValue(p, "bs_ab_30mrd") === false)) return false;
+  // Lebens- und Krankenversicherer haben ihrem Geschäft nach Privatkunden
+  // (PRIIPs und Anlegerschutz hingen sonst an einer offenen Frage).
+  if (id === "privatkunden" && ["versicherer_leben", "versicherer_kranken"].some((x) => featureValue(p, x) === true)) return true;
+  // LkSG-Schwelle: Kleinstunternehmen und Häuser mit unter 50 Mio. €
+  // Bilanzsumme haben keine 1.000 Beschäftigten.
+  if (id === "beschaeftigte_ab_1000"
+    && (featureValue(p, "kleinstunternehmen") === true || (p.bilanzsumme?.mrd != null && p.bilanzsumme.mrd < 0.05))) return false;
+  // Eine ECSP-Zulassung steht im Register; Profile ohne vollständige
+  // Registerdaten (EZB-, EIOPA-Liste) mit bekannter anderer Institutsart haben sie nicht.
+  if (id === "ecsp" && FEATURES.some((f) => f.g === "art" && f.id !== "ecsp" && featureValue(p, f.id) === true)) return false;
   return null;
+}
+
+/* Verbraucherschützende Vorgaben gelten als Recht des Allgemeininteresses
+   auch im grenzüberschreitenden Dienstleistungsverkehr. */
+const CONSUMER = new Set(["privatkunden", "verbraucherkredit", "wohnimmobilienkredit", "zahlungskonten"]);
+
+/** EWR-Institut, das in Deutschland nur im grenzüberschreitenden
+    Dienstleistungsverkehr tätig ist (§ 53b KWG, keine Zweigniederlassung):
+    Organisations-, Melde- und Geldwäschepflichten folgen dem Recht des
+    Herkunftsstaats. Deutsche Vorgaben, die nur an „tätig in Deutschland“
+    anknüpfen, treffen ein solches Haus daher nicht, außer sie schützen
+    Verbraucher (Befund 11.11.2026: österreichische Bausparkasse bekam GwG,
+    AnaCredit und Kreditzweitmarktgesetz als Treffer). */
+export function passportOnly(p: Profile): boolean {
+  return featureValue(p, "eu_pass") === true && featureValue(p, "sitz_de") !== true
+    && featureValue(p, "zweigstelle_drittstaat") !== true;
 }
 
 function evalGroup(p: Profile, g: Group): GroupEval {
@@ -114,7 +144,28 @@ export function ruleCheck(p: Profile, scope: Scope | undefined): RuleResult {
     };
   }
   const evals = scope.adressaten.map((g) => ({ g, e: evalGroup(p, g) }));
-  const hits = evals.filter((x) => x.e.v === true).map((x) => x.g);
+  let hits = evals.filter((x) => x.e.v === true).map((x) => x.g);
+  if (hits.length > 0 && passportOnly(p)) {
+    const own = hits.filter((g) => !g.alle.includes("taetig_de"));
+    if (own.length > 0) hits = own;
+    else {
+      const consumer = hits.find((g) => g.alle.some((id) => CONSUMER.has(id)));
+      const merkmale = ["eu_pass", "taetig_de", "sitz_de", "zweigstelle_drittstaat", ...(consumer?.alle ?? [])];
+      return {
+        decided: consumer
+          ? {
+            ...base, status: "teilweise", merkmale,
+            grund: `Einschlägig, soweit Verbraucher in Deutschland betroffen sind (${consumer.alle.filter((id) => CONSUMER.has(id)).map(featureLabel).join(", ")}).`,
+            teile: "Ihr Haus ist in Deutschland nur im grenzüberschreitenden Dienstleistungsverkehr tätig (§ 53b KWG). Es gelten die verbraucherschützenden Teile; Organisations- und Meldepflichten richten sich nach dem Recht des Herkunftsstaats.",
+          }
+          : {
+            ...base, status: "nein", merkmale,
+            grund: "Nicht einschlägig, weil in Deutschland nur im grenzüberschreitenden Dienstleistungsverkehr tätig (§ 53b KWG): Es gilt das Aufsichtsrecht des Herkunftsstaats.",
+          },
+        hits: [], open: [], allFalse: !consumer,
+      };
+    }
+  }
   const open = evals.filter((x) => x.e.v === null).map((x) => x.e);
   const allFalse = evals.length > 0 && evals.every((x) => x.e.v === false);
   // Konsolidierte Pflichten treffen auch Finanzholdings und übergeordnete
@@ -124,8 +175,13 @@ export function ruleCheck(p: Profile, scope: Scope | undefined): RuleResult {
   // Greift nur, wenn das Haus selbst kein CRR-Institut ist und eine
   // Adressatengruppe allein an der Institutsart scheitert (alle übrigen
   // Merkmale wie Sitz oder Geschäft treffen zu).
+  // Ein nachgeordnetes Unternehmen (laut GLEIF Tochter in der Gruppe) trägt
+  // die konsolidierten Pflichten nicht, auch wenn im Profil zusätzlich
+  // „übergeordnet“ angegeben ist (Befund 11.11.2026: Leasing-Tochter bekam
+  // 268 CRR-Vorgaben „auf konsolidierter Ebene“).
   const holder = featureValue(p, "finanzholding") === true
-    || (featureValue(p, "gruppe_uebergeordnet") === true && featureValue(p, "ki_crr") !== true
+    || (featureValue(p, "gruppe_uebergeordnet") === true && featureValue(p, "gruppe_nachgeordnet") !== true
+      && featureValue(p, "ki_crr") !== true
       && ["ki", "fdi", "leasing_factoring", "wpi"].some((x) => featureValue(p, x) === true));
   const consolidated = scope.ebene !== "einzel" && holder && scope.adressaten.some((g) =>
     g.alle.some((id) => ["ki_crr", "ki", "wpi_gross"].includes(id))

@@ -1,7 +1,8 @@
 "use client";
 
 // Client-Seite der Einschlägigkeit: Besucherstatus (/api/me), Profil-Entwurf
-// im Browser (Gäste, bis zur Registrierung) und gebündelte Prüfabfragen.
+// im Browser (Gäste, bis zur Registrierung; Einschätzungen gibt es erst nach
+// der Anmeldung) und gebündelte Prüfabfragen.
 // Keine Server-Importe, damit Seiten-Bundles klein bleiben.
 
 import { useEffect, useState } from "react";
@@ -151,9 +152,16 @@ export async function setStatus(key: string, status: Status | null, notiz?: stri
   if (typeof window !== "undefined") window.dispatchEvent(new Event(EVENT));
 }
 
-/** Hat der Besucher irgendein Profil (Konto, Entwurf, Domain-Vorprofil)? */
+/** Zeigt die Seite Einschätzungen? Nur angemeldet und mit Kontoprofil
+    (Nutzerentscheidung 11.11.2026: keine Analyse ohne bekannte E-Mail). */
 export function hasProfile(me: Me | null): boolean {
-  return !!me && (me.profiles.length > 0 || !!readDraft() || !!me.pre?.name);
+  return !!me && me.loggedIn && me.profiles.length > 0;
+}
+
+/** Gast mit vorbereitetem Profil (Browser-Entwurf oder Vorprofil der
+    Domain): sieht keine Einschätzung, sondern die Bitte, sich anzumelden. */
+export function hasDraftOnly(me: Me | null): boolean {
+  return !!me && !me.loggedIn && (!!readDraft() || !!me.pre?.name);
 }
 
 export function activeName(me: Me | null): string | null {
@@ -172,7 +180,12 @@ async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
   // Pakete zu 20 parallel: erste Ergebnisse kommen schneller als bei einem
   // großen Paket, das bis zum Zeitlimit des Servers läuft.
   const me = await loadMe();
-  const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
+  if (!me.loggedIn) {
+    keys.forEach((k) => inflight.delete(k));
+    batch.waiters.forEach((w) => w());
+    return;
+  }
+  const draft = undefined;
   const chunks: string[][] = [];
   for (let i = 0; i < keys.length; i += 20) chunks.push(keys.slice(i, i + 20));
   const at = epoch;
@@ -247,7 +260,11 @@ async function checkCheap(keys: string[]): Promise<void> {
   if (!missing.length) return;
   missing.forEach((k) => cheapInflight.add(k));
   const me = await loadMe();
-  const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
+  if (!me.loggedIn) {
+    missing.forEach((k) => cheapInflight.delete(k));
+    return;
+  }
+  const draft = undefined;
   const queue: string[][] = [];
   for (let i = 0; i < missing.length; i += 40) queue.push(missing.slice(i, i + 40));
   const at = epoch;

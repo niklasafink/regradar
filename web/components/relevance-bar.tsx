@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  activeName, hasProfile, readDraft, useMe,
+  activeName, hasDraftOnly, hasProfile, useMe,
 } from "@/lib/relevanceClient";
 
 /** Prüfziel der aktuellen Seite: Update-Detail oder Rahmenwerk. */
@@ -17,7 +17,8 @@ function targetOf(pathname: string): string | null {
 
 /** Kurze Zeile unter der Navigation: Ist diese Seite für mein Institut
     einschlägig? Ohne Profil führt sie in den Profil-Ablauf, mit Vorprofil
-    oder Browser-Entwurf bittet sie um Registrierung. */
+    oder Browser-Entwurf bittet sie um die Anmeldung (ohne Anmeldung gibt es
+    keine Einschätzung). */
 export function RelevanceBar() {
   const pathname = usePathname() ?? "/";
   const me = useMe();
@@ -28,16 +29,24 @@ export function RelevanceBar() {
   const name = activeName(me);
   const next = encodeURIComponent(pathname);
 
-  const register = !me.loggedIn && withProfile ? (
-    <Link href="/profil?speichern=1" className="shrink-0 font-medium text-slate-900 underline-offset-2 hover:underline">
-      {readDraft() ? "Registrieren, damit das Profil gespeichert wird →" : "Registrieren, um das Profil zu speichern →"}
+  // Gast mit vorbereitetem Profil: Einschätzungen gibt es erst angemeldet.
+  const draftOnly = hasDraftOnly(me);
+  const register = draftOnly ? (
+    <Link href="/profil?speichern=1" className="shrink-0 rounded-full bg-slate-900 px-3 py-0.5 font-medium text-white hover:bg-slate-700">
+      Anmelden und Einschätzung sehen →
     </Link>
   ) : null;
 
   // Detailseiten zeigen den Status oben rechts am Titel (RelevanceStatus);
   // die Zeile bleibt dort nur für die Registrierung.
   let content: React.ReactNode;
-  if (!withProfile) {
+  if (draftOnly) {
+    content = (
+      <span className="text-slate-600">
+        Das Profil <span className="font-medium text-slate-900">{name}</span> ist vorbereitet. Die Einschätzung sehen Sie nach der Anmeldung.
+      </span>
+    );
+  } else if (!withProfile) {
     content = (
       <>
         <span className="text-slate-600">
@@ -55,8 +64,7 @@ export function RelevanceBar() {
       </>
     );
   } else if (key) {
-    if (!register) return null;
-    content = null;
+    return null;
   } else {
     content = (
       <span className="text-slate-600">
@@ -69,9 +77,6 @@ export function RelevanceBar() {
     <div className="border-b border-slate-100 bg-slate-50">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-1.5 px-4 py-2 text-center text-xs sm:px-6">
         {content}
-        {!me.loggedIn && me.pre?.name && !readDraft() && (
-          <span className="text-slate-500">Vorausgefüllt anhand Ihrer E-Mail-Domain.</span>
-        )}
         {register}
       </div>
     </div>

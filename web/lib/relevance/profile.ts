@@ -282,7 +282,7 @@ const Q_WPI = ["wpi_gross", "wpi_mittel", "wpi_klein", "privatkunden", "otc_deri
   "kapitalmarktorientiert", "auslagerung_wesentlich"];
 const Q_KVG = ["geldmarktfonds", "eltif", "privatkunden", "otc_derivate", "verbriefung_investor",
   "kapitalmarktorientiert", "csrd_pflichtig", "auslagerung_wesentlich", "sitz_lu"];
-const Q_INS = ["gruppe_uebergeordnet", "kapitalmarktorientiert", "csrd_pflichtig", "otc_derivate",
+const Q_INS = ["gruppe_uebergeordnet", "kapitalmarktorientiert", "csrd_pflichtig", "privatkunden", "otc_derivate",
   "verbriefung_investor", "versicherungsvertrieb", "auslagerung_wesentlich", "ki_systeme"];
 const Q_PAY = ["privatkunden", "kartengeschaeft", "krypto_aktiv", "auslagerung_wesentlich", "kapitalmarktorientiert"];
 const Q_LEASING = ["gruppe_uebergeordnet", "kapitalmarktorientiert", "csrd_pflichtig", "privatkunden",

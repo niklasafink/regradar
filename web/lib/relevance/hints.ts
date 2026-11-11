@@ -209,6 +209,14 @@ export const HINTS: Record<string, Hint> = {
     ],
     quelle: "Jahresabschluss, Personalabteilung",
   },
+  beschaeftigte_ab_1000: {
+    hinweis: "Das Lieferkettensorgfaltspflichtengesetz gilt für Unternehmen mit in der Regel mindestens 1.000 Beschäftigten in Deutschland (§ 1 LkSG). Leiharbeitnehmer zählen ab sechs Monaten Einsatzdauer mit, bei verbundenen Unternehmen werden die Beschäftigten der Konzerngesellschaften der Obergesellschaft zugerechnet.",
+    pruefen: [
+      "Hat das Unternehmen in der Regel mindestens 1.000 Beschäftigte im Inland?",
+      "Ist es Obergesellschaft eines Konzerns? Dann zählen die inländischen Beschäftigten aller konzernangehörigen Gesellschaften mit.",
+    ],
+    quelle: "Personalabteilung, Lagebericht (Mitarbeiterzahl)",
+  },
   auslagerung_wesentlich: {
     hinweis: "Wesentliche Auslagerungen nach § 25b KWG und MaRisk AT 9 sowie IKT-Dienstleistungen für kritische oder wichtige Funktionen nach DORA.",
     pruefen: [

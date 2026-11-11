@@ -464,9 +464,10 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       {step === "speichern" && profile && (
         <section className="mt-8 max-w-xl">
           <p className="text-sm text-slate-600">
-            Das Profil <span className="font-medium text-slate-900">{profile.name}</span> gilt jetzt in diesem Browser. Damit es
-            dauerhaft gespeichert wird und auch Ihre Newsletter-Mails die Einschlägigkeit zeigen, legen Sie ein Konto an. Ein
-            Passwort gibt es nicht: Sie bekommen einen Anmeldelink per E-Mail. Nutzen Sie am besten dieselbe Adresse wie für den Newsletter.
+            Das Profil <span className="font-medium text-slate-900">{profile.name}</span> ist vorbereitet. Die Einschätzung, welche
+            Updates und Rahmenwerke einschlägig sind, sehen Sie nach der Anmeldung; dann zeigen auch Ihre Newsletter-Mails die
+            Einschlägigkeit. Ein Passwort gibt es nicht: Sie bekommen einen Anmeldelink per E-Mail. Nutzen Sie am besten dieselbe
+            Adresse wie für den Newsletter.
           </p>
           <form className="mt-4 flex flex-wrap gap-2" onSubmit={(e) => { e.preventDefault(); void requestLink(); }}>
             <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@institut.de"

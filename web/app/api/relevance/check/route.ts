@@ -8,7 +8,7 @@ import { UPDATE_PAGES } from "@/lib/updates";
 export const maxDuration = 120;
 
 /* Einschlägigkeit für Updates ("u:<slug>") oder Rahmenwerke ("f:<id>").
-   Profil: Konto > Vorprofil der Abonnenten-Domain > Entwurf aus dem Browser. */
+   Nur angemeldet: Profil des Kontos, im Profil-Ablauf auch dessen Entwurf. */
 export async function POST(request: Request) {
   const body = (await request.json().catch(() => ({}))) as {
     keys?: string[]; profileId?: string; profile?: unknown; noLlm?: boolean; latest?: number; preview?: boolean;
@@ -19,9 +19,13 @@ export async function POST(request: Request) {
     : [];
   const keys = [...new Set([...latestKeys, ...(body.keys ?? []).filter((k) => typeof k === "string")])].slice(0, 40);
   const vp = await visitorProfile({ profileId: body.profileId, draft: body.profile, preferDraft: !!body.preview });
+  // Ergebnisse gibt es nur für angemeldete Konten (Nutzerentscheidung
+  // 11.11.2026): Ohne Anmeldung bleibt es beim Anlegen des Profils, die
+  // Einschätzung folgt nach dem Anmeldelink.
+  if (!vp.account) return Response.json({ profile: null, results: {}, login: true }, { status: 401 });
   if (!vp.profile) return Response.json({ profile: null, results: {} });
   const targets = keys.map(resolveTarget).filter((t) => t !== null);
-  // Gäste und Vorprofile: begrenztes Tageskontingent für KI-Prüfungen;
+  // Entwürfe im Profil-Ablauf: begrenztes Tageskontingent für KI-Prüfungen;
   // darüber hinaus nur Regel- und Cache-Ergebnisse.
   const allowLlm = !body.noLlm && (vp.source === "konto" || (await rateLimit(request, "check", 150)));
   // Browser-Entwürfe von Gästen ändern sich laufend: kein Profil-Speicher,

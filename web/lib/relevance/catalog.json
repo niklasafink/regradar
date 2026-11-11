@@ -37,6 +37,7 @@
     { "id": "versicherungsholding", "g": "art", "l": "Versicherungsholding" },
     { "id": "zweigstelle_drittstaat", "g": "art", "l": "Zweigstelle eines Drittstaateninstituts (§ 53 KWG)" },
     { "id": "eu_pass", "g": "art", "l": "EWR-Unternehmen mit Europäischem Pass (§ 53b KWG)" },
+    { "id": "ecsp", "g": "art", "l": "Schwarmfinanzierungsdienstleister (ECSP-Zulassung)" },
     { "id": "handelsplatz", "g": "art", "l": "Betreiber eines Handelsplatzes (Börse, MTF, OTF)" },
     { "id": "zentralverwahrer", "g": "art", "l": "Zentralverwahrer (CSDR)" },
     { "id": "ccp", "g": "art", "l": "Zentrale Gegenpartei (EMIR)" },
@@ -99,6 +100,7 @@
     { "id": "bs_ab_15mrd", "g": "schwelle", "l": "Bilanzsumme ab 15 Mrd. €" },
     { "id": "bs_ab_30mrd", "g": "schwelle", "l": "Bilanzsumme ab 30 Mrd. €" },
     { "id": "kleinstunternehmen", "g": "schwelle", "l": "Kleinstunternehmen (unter 10 Beschäftigte, Umsatz und Bilanzsumme höchstens 2 Mio. €)" },
+    { "id": "beschaeftigte_ab_1000", "g": "schwelle", "l": "Mindestens 1.000 Beschäftigte in Deutschland (LkSG)" },
 
     { "id": "privatkunden", "g": "geschaeft", "l": "Geschäft mit Privatkunden" },
     { "id": "verbraucherkredit", "g": "geschaeft", "l": "Verbraucherdarlehen" },

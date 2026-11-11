@@ -525,16 +525,121 @@ def extend_dora_kwg(scope: dict) -> dict:
     return scope
 
 
+# ---------- Leitplanken: fachliche Korrekturen beim Export ----------
+# Die Analyse je Meldung stammt von einer KI und wird danach rein
+# regelbasiert mit Institutsprofilen abgeglichen. Wiederkehrende Fehler im
+# Adressatenkreis korrigieren wir hier deterministisch, statt alle Analysen
+# neu laufen zu lassen (Befunde 11.11.2026, Nachprüfung an zehn
+# Institutsprofilen). Die Regeln stehen auch in SCOPE.md, damit neue Analysen
+# sie von vornherein einhalten.
+LOC = {"sitz_de", "sitz_lu", "sitz_eu", "taetig_de"}
+INSURERS = {"versicherer_leben", "versicherer_kranken", "versicherer_schaden", "rueckversicherer",
+            "pensionsfonds", "pensionskasse", "versicherungsholding"}
+# Nach § 2 Abs. 1 Nr. 7 GwG und Art. 3 AMLR sind nur Lebensversicherer (und
+# Vermittler solcher Produkte) Verpflichtete, nicht Schaden-, Kranken- oder
+# Rückversicherer.
+NOT_AML_OBLIGED = {"versicherer_kranken", "versicherer_schaden", "rueckversicherer", "versicherungsholding"}
+AML_FWS = {"gwg", "amla", "ebaamlofficer", "ebaamlrisk", "ebaamlstd", "ebaderisking", "ebaonboarding", "cssfaml"}
+# Pflichten, die an ein einzelnes Merkmal anknüpfen, unabhängig von der
+# Institutsart: Marktmissbrauchs- und Prospektrecht treffen jeden Emittenten
+# am geregelten Markt (auch eine börsennotierte Finanzholding), CSRD und
+# Art. 8 Taxonomie-VO jedes berichtspflichtige Unternehmen.
+FREE_FEATURE = {"mar": "kapitalmarktorientiert", "prospectus": "kapitalmarktorientiert",
+                "taxonomy": "csrd_pflichtig", "csrd": "csrd_pflichtig"}
+
+
+def apply_guards(scope: dict, fw_id: str, fws: Dict[str, dict], arts: set, src: str = "") -> dict:
+    """Adressatengruppen einer Analyse gegen feste fachliche Regeln prüfen.
+    `fw_id` ist das Rahmenwerk der Meldung, `arts` die Merkmale der Gruppe
+    „Institutsart“ aus dem Katalog, `src` die Quelle der Meldung (Host) bzw.
+    leer bei der Analyse eines ganzen Rahmenwerks."""
+    groups = scope.get("adressaten") or []
+    if scope.get("art") == "keine_institute" or not groups:
+        return scope
+    fw = fws.get(fw_id) or {}
+    fam = {fw_id, fw.get("parent")}
+
+    # Freiwillige Standards lösen keine Pflicht aus, solange das Haus sie nicht nutzt.
+    if "greenbond" in fam:
+        scope["art"] = "keine_institute"
+        scope["adressaten"] = []
+        return scope
+    # Schwarmfinanzierung: Adressat ist nur, wer die ECSP-Zulassung hat, nicht
+    # jedes Institut mit Kreditgeschäft oder Anlagevermittlung.
+    if "ecspr" in fam:
+        groups = [{"alle": ["ecsp"]}]
+    # MaRisk (Banken) gelten nicht für Wertpapierinstitute nach WpIG; für sie
+    # gibt es das Rahmenwerk WpI MaRisk. Große Wertpapierinstitute bleiben (KWG).
+    if "marisk" in fam:
+        groups = [g for g in groups if not {"wpi", "wpi_mittel", "wpi_klein"} & set(g["alle"])]
+    # Geldwäscherecht: Versicherer nur mit Lebensversicherung.
+    if fam & AML_FWS:
+        def obliged(g):
+            core = set(g["alle"]) - LOC - {"versicherungsvertrieb"}
+            return bool(core) and not core <= NOT_AML_OBLIGED
+        groups = [g for g in groups if obliged(g)]
+    # EBA-Leitlinien zu restriktiven Maßnahmen richten sich an Institute im
+    # Zuständigkeitsbereich der EBA, nicht an Versicherer.
+    if "ebasanctions" in fam:
+        groups = [g for g in groups if not INSURERS & set(g["alle"])]
+    # LkSG: nur ab 1.000 Beschäftigten in Deutschland.
+    if "lksg" in fam:
+        for g in groups:
+            if "beschaeftigte_ab_1000" not in g["alle"]:
+                g["alle"].append("beschaeftigte_ab_1000")
+        fragen = scope.get("fragen") or []
+        if not any(f.get("merkmal") == "beschaeftigte_ab_1000" for f in fragen):
+            scope["fragen"] = [{"merkmal": "beschaeftigte_ab_1000",
+                                "frage": "Hat Ihr Unternehmen in der Regel mindestens 1.000 Beschäftigte in Deutschland?"}] + fragen[:2]
+    free = next((FREE_FEATURE[f] for f in fam if f in FREE_FEATURE), None)
+    if free:
+        have = {tuple(sorted(g["alle"])) for g in groups}
+        for g in list(groups):
+            rest = set(g["alle"]) - {free}
+            if free in g["alle"] and rest and rest <= (arts | LOC):
+                new = sorted({free} | (rest & LOC))
+                if tuple(new) not in have:
+                    have.add(tuple(new))
+                    groups.append({"alle": new})
+    # EU-Rechtsakte und Veröffentlichungen der EU-Behörden gelten in der
+    # ganzen Union. Ein Deutschland-Bezug in der Gruppe ist dort ein Fehler der
+    # Analyse und schloss Institute mit Sitz in anderen Mitgliedstaaten aus
+    # (z. B. Sanktionsverordnungen, AMLA-Standards).
+    if src.endswith("europa.eu") or (not src and fw.get("jur") == "EU"):
+        seen = set()
+        cleaned = []
+        for g in groups:
+            rest = [x for x in g["alle"] if x not in ("taetig_de", "sitz_de")]
+            if rest:
+                g = {**g, "alle": rest}
+            key = tuple(sorted(g["alle"]))
+            if key not in seen:
+                seen.add(key)
+                cleaned.append(g)
+        groups = cleaned
+    # Deutsches Recht: jede Gruppe braucht den Bezug zu Deutschland.
+    if fw.get("jur") == "DE":
+        for g in groups:
+            if not {"sitz_de", "taetig_de"} & set(g["alle"]):
+                g["alle"].append("taetig_de")
+    scope["adressaten"] = groups
+    return scope
+
+
 def write_export(conn: sqlite3.Connection) -> int:
     """scopes.json mit allen gecachten Analysen der aktuellen live.json-Updates."""
     _ensure_table(conn)
-    urls = {u["url"] for u in _live_items()}
+    items = {u["url"]: u for u in _live_items()}
+    urls = set(items)
+    fws = _frameworks()
+    arts = {f["id"] for f in _catalog() if f["g"] == "art"}
     out = {}
     # Neueste Fassung je URL; ältere Formate bleiben bis zur Neuanalyse im
     # Export (z. B. wenn das Wochenbudget die Neuanalyse bremst).
     for url, scope in conn.execute("SELECT url, scope FROM llm_scope ORDER BY fmt"):
         if url in urls:
-            out[url] = extend_dora_kwg(json.loads(scope))
+            u = items[url]
+            out[url] = apply_guards(extend_dora_kwg(json.loads(scope)), u["fw"], fws, arts, u.get("src") or "")
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump({"format": FORMAT, "scopes": out}, f, ensure_ascii=False, separators=(",", ":"))
     return len(out)
