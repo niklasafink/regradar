@@ -60,12 +60,12 @@ async function alertCredits(detail: string): Promise<void> {
     const { error } = await new Resend(apiKey).emails.send({
       ...senderFields(),
       to: (process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de").toLowerCase(),
-      subject: "Einschlägigkeit: OpenRouter-Guthaben aufgebraucht",
-      text: `Der Einschlägigkeits-Abgleich auf regradar.de bekommt von OpenRouter keine Antworten mehr (HTTP 402).
+      subject: "Einschlägigkeit: OpenRouter-Guthaben fast oder ganz aufgebraucht",
+      text: `Der Einschlägigkeits-Abgleich auf regradar.de pausiert, weil das OpenRouter-Guthaben nicht mehr reicht.
 
 Meldung: ${detail}
 
-Bis das Guthaben aufgeladen ist, sehen Nutzer nur regelbasierte Ergebnisse; alles andere steht auf „Prüfung derzeit ausgelastet“. Nach dem Aufladen holt der Stundenlauf die offenen Prüfungen nach.
+Bis das Guthaben aufgeladen ist, sehen Nutzer für noch nicht geprüfte Meldungen eine vorläufige Einschätzung ohne KI. Nach dem Aufladen holt der Stundenlauf die offenen Prüfungen nach und ersetzt die vorläufigen Einschätzungen.
 
 Aufladen: https://openrouter.ai/settings/credits`,
     });
@@ -103,6 +103,31 @@ async function book(usd: number): Promise<void> {
   } catch { /* Buchung darf den Abgleich nicht blockieren */ }
 }
 
+/* Reserve auf dem OpenRouter-Konto: Der Schlüssel wird auch vom Scraper
+   genutzt (Zusammenfassungen, Titel, Newsletter). Fällt das Guthaben unter
+   die Reserve, pausiert der Abgleich und der Betreiber bekommt eine Mail,
+   statt das Konto leerzulaufen (Befund 11.11.2026). Der Stand wird fünf
+   Minuten zwischengespeichert. */
+const CREDIT_FLOOR_USD = Number(process.env.RELEVANCE_CREDIT_FLOOR_USD ?? "2");
+
+async function creditLeft(key: string): Promise<number | null> {
+  try {
+    const hit = await redis().get<number | string>("relcost:credit");
+    if (hit !== null && hit !== undefined) return Number(hit);
+    const res = await fetch("https://openrouter.ai/api/v1/credits", {
+      headers: { Authorization: `Bearer ${key}` }, signal: AbortSignal.timeout(8_000),
+    });
+    if (!res.ok) return null;
+    const d = ((await res.json()) as { data?: { total_credits?: number; total_usage?: number } }).data;
+    const left = Number(d?.total_credits) - Number(d?.total_usage);
+    if (!Number.isFinite(left)) return null;
+    await redis().set("relcost:credit", left, { ex: 300 });
+    return left;
+  } catch {
+    return null; // Stand unbekannt: nicht blockieren
+  }
+}
+
 export interface ChatResult<T> { data: T; costUsd: number; model: string }
 
 export async function chatJson<T>(opts: {
@@ -117,6 +142,12 @@ export async function chatJson<T>(opts: {
   if (!key) throw new Error("OPENROUTER_API_KEY fehlt");
   if ((await spentThisMonth()) >= MONTHLY_BUDGET_USD) throw new BudgetError();
   const down = await redis().get<string>(DOWN_KEY).catch(() => null);
+  const left = down ? null : await creditLeft(key);
+  if (left !== null && left < CREDIT_FLOOR_USD) {
+    const detail = `Guthaben ${left.toFixed(2)} $ liegt unter der Reserve von ${CREDIT_FLOOR_USD} $ (für den Scraper zurückgehalten)`;
+    await alertCredits(detail);
+    throw new ProviderDownError(402, detail);
+  }
   if (down) throw new ProviderDownError(Number(String(down).split("|")[0]) || 402, String(down).split("|").slice(1).join("|"));
 
   const body: Record<string, unknown> = {
