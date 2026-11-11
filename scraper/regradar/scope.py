@@ -248,7 +248,12 @@ def _chat_claude(system: str, users: List[str]):
     u = data.get("usage") or {}
     tokens = int(u.get("input_tokens") or 0) + int(u.get("output_tokens") or 0) \
         + int(u.get("cache_creation_input_tokens") or 0) + int(u.get("cache_read_input_tokens") or 0) // 10
+    if tokens > 30000:
+        # Ausreißer festhalten: am 11.11.2026 meldeten einzelne Pakete 120.000 bis
+        # 250.000 Tokens bei rund 40 Sekunden Laufzeit; die Ursache ist offen.
+        print("scope: Ausreißer {} Tokens, usage={}".format(tokens, json.dumps(u)[:600]), flush=True)
     if p.returncode != 0 or data.get("is_error"):
+        print("scope: Aufruf abgelehnt: {}".format(str(data.get("result"))[:200]), flush=True)
         return [None] * len(users), tokens
     text = str(data.get("result") or "")
     try:
