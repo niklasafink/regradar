@@ -11,7 +11,7 @@ import {
 } from "./catalog";
 import { chatJson, MODELS } from "./llm";
 import {
-  EEA, countryName, ecbByLei, ecbLookup, gleifLookup, registryDetails, searchRegistry,
+  EEA, countryName, ecbByLei, ecbLookup, eiopaById, gleifLookup, registryDetails, searchRegistry,
   type EcbEntity, type GleifInfo, type License,
 } from "./registry";
 
@@ -219,6 +219,37 @@ export async function profileFromEcb(lei: string): Promise<Profile> {
   return p;
 }
 
+const INSURER_GATTUNG = "Versicherungsunternehmen";
+const INSURER_TYPES = ["versicherer_leben", "versicherer_kranken", "versicherer_schaden", "rueckversicherer"];
+
+/** Profil eines Versicherers aus dem übrigen EWR: Name, Sitz, LEI und die
+    Tätigkeit in Deutschland aus dem EIOPA-Register, Gruppe aus GLEIF. Die
+    Sparte kennt das Register nicht; sie steht als erste Frage im Fragebogen. */
+export async function profileFromEiopa(key: string): Promise<Profile> {
+  const e = eiopaById(key);
+  if (!e) throw new Error("Versicherer nicht im EIOPA-Register");
+  const p = emptyProfile(e.name, "register");
+  p.lei = e.lei ?? undefined;
+  p.gattung = [INSURER_GATTUNG];
+  p.address = `Sitz: ${[e.city, countryName(e.country)].filter(Boolean).join(", ")}`;
+  setFact(p, "sitz_de", false, "register");
+  setFact(p, "sitz_lu", e.country === "LU", "register");
+  setFact(p, "sitz_eu", e.country !== "LU", "register");
+  // Gemeldet in Deutschland (Niederlassung oder Dienstleistungsverkehr) steht
+  // fest; fehlt die Meldung, bleibt die Frage offen.
+  if (e.de) setFact(p, "taetig_de", true, "register");
+  setFact(p, "si", false, "abgeleitet");
+  const gleif = await gleifLookup(e.name).catch(() => null);
+  if (gleif) {
+    p.group = { parent: gleif.directParent?.name, ultimate: gleif.ultimateParent?.name, ultimateCountry: gleif.ultimateParent?.country };
+    if (gleif.directParent) setFact(p, "gruppe_nachgeordnet", true, "gleif");
+    const uc = gleif.ultimateParent?.country;
+    if (uc) setFact(p, "drittstaatengruppe", !EEA.has(uc), "gleif");
+  }
+  applyDerived(p);
+  return p;
+}
+
 export function applyDerived(p: Profile): void {
   const trueSet = new Set(Object.entries(p.facts).filter(([, v]) => v).map(([k]) => k));
   const before = new Set(trueSet);
@@ -267,6 +298,8 @@ export function questionIds(p: Profile): string[] {
   else if (f("kvg_ogaw") || f("kvg_aif") || f("kvg_registriert")) ids = Q_KVG;
   else if (["versicherer_leben", "versicherer_kranken", "versicherer_schaden", "rueckversicherer",
     "pensionsfonds", "pensionskasse"].some(f)) ids = Q_INS;
+  // Versicherer aus dem EIOPA-Register: Sparte zuerst erfragen.
+  else if (p.gattung[0] === INSURER_GATTUNG) ids = [...INSURER_TYPES, ...Q_INS];
   else if (f("zi") || f("egi")) ids = Q_PAY;
   else if (f("leasing_factoring")) ids = Q_LEASING;
   else ids = Q_DEFAULT;
@@ -346,7 +379,9 @@ Rechtssubjekt, nicht für den Konzern oder Verbund.`;
 
 /** Profil-Entwurf: Registerdaten plus optionale Kurzrecherche. */
 export async function draftProfile(registryId: string, withResearch = true): Promise<{ profile: Profile; questions: string[]; costUsd: number }> {
-  const p = registryId.startsWith("ecb:") ? await profileFromEcb(registryId.slice(4)) : await profileFromRegistry(registryId);
+  const p = registryId.startsWith("ecb:") ? await profileFromEcb(registryId.slice(4))
+    : registryId.startsWith("eiopa:") ? await profileFromEiopa(registryId.slice(6))
+    : await profileFromRegistry(registryId);
   let costUsd = 0;
   if (withResearch) {
     try { costUsd = await research(p); } catch (e) { console.error("research failed:", e); }

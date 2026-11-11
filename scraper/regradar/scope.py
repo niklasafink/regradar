@@ -22,7 +22,9 @@ from typing import Dict, List, Optional
 
 from .llmfilter import API_URL, api_key
 
-FORMAT = 2
+# 3: Analyse über das Claude-Abo, präzisere Adressatengruppen, auch für
+#    kuratierte Chronologie-Einträge und ganze Rahmenwerke (11.11.2026).
+FORMAT = 3
 DEFAULT_MODEL = "google/gemini-2.5-flash"
 WORKERS = 6
 TIMEOUT = 120
@@ -33,6 +35,16 @@ CATALOG_PATH = os.path.join(ROOT, "web", "lib", "relevance", "catalog.json")
 DATA_TS = os.path.join(ROOT, "web", "lib", "data.ts")
 LIVE_PATH = os.path.join(ROOT, "web", "lib", "live.json")
 OUT_PATH = os.path.join(ROOT, "web", "lib", "relevance", "scopes.json")
+# Alle Prüfziele der Website (auch kuratierte Chronologie-Einträge aus data.ts
+# und die Rahmenwerke selbst), erzeugt von web/scripts/scope-targets.ts.
+TARGETS_PATH = os.path.join(ROOT, "scraper", "data", "scope_targets.json")
+
+FW_HINT = ("Analysiere das Rahmenwerk als Ganzes: Wer ist Normadressat des Rechtsakts und hat daraus unmittelbar eigene "
+           "Pflichten? Mittelbare Berührung (als Kunde, Nutzer, Investor, Vertragspartner) reicht nicht. Regelwerke für "
+           "bestimmte Anbieter (Ratingagenturen, Benchmark-Administratoren, Zentralverwahrer, Handelsplätze, "
+           "Kryptowerte-Dienstleister) nur mit der passenden Institutsart oder Erlaubnis; freiwillige Standards und "
+           "Labels sind 'keine_institute'. Querschnittsregeln (DORA, Geldwäsche, Datenschutz) mit allen betroffenen "
+           "Institutsarten als eigene Gruppen. art ist 'pflicht', wenn das Rahmenwerk gilt, sonst 'kuenftig'.")
 
 ARTS = ("pflicht", "kuenftig", "information", "keine_institute")
 
@@ -153,30 +165,98 @@ def _chat(model: str, key: str, system: str, user: str):
         (body.get("usage") or {}).get("cost") or 0)
 
 
+def _refresh_targets() -> None:
+    """Zielliste neu erzeugen (best effort: fehlt Node, bleibt die alte Liste)."""
+    import subprocess
+    try:
+        subprocess.run(["npx", "tsx", "scripts/scope-targets.ts", TARGETS_PATH], cwd=os.path.join(ROOT, "web"),
+                       check=True, capture_output=True, timeout=180)
+    except (OSError, subprocess.SubprocessError) as e:
+        print("scope: Zielliste nicht aktualisiert ({})".format(e))
+
+
+def _targets() -> dict:
+    try:
+        return json.load(open(TARGETS_PATH, encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"updates": [], "frameworks": []}
+
+
+# Standard seit 11.11.2026 (Nutzerentscheidung): Die Analyse läuft über das
+# Claude-Abo (claude -p), nicht über die OpenRouter-API. Mehrere Meldungen
+# gehen in einen Aufruf. SCOPE_BACKEND=openrouter schaltet auf die API zurück.
+CLAUDE_BATCH = 10
+CLAUDE_WORKERS = int(os.environ.get("SCOPE_CLAUDE_WORKERS", "4"))
+CLAUDE_TIMEOUT = 900
+
+
+def _chat_claude(system: str, users: List[str]) -> List[Optional[dict]]:
+    """Ein Aufruf für mehrere Meldungen; Ergebnis in der Reihenfolge der Eingabe."""
+    import shutil
+    import subprocess
+    exe = shutil.which("claude") or "/usr/local/bin/claude"
+    prompt = (system + "\n\nDu bekommst mehrere Meldungen als nummerierte Liste. Analysiere jede für sich nach den Regeln "
+              "oben. Nutze keine Werkzeuge. Antworte ausschließlich mit einem JSON-Objekt der Form "
+              '{"1": {…Analyse…}, "2": {…}, …} mit einem Eintrag je Nummer.\n\nMELDUNGEN:\n'
+              + "\n".join("{}: {}".format(i + 1, u) for i, u in enumerate(users)))
+    env = dict(os.environ)
+    # Ohne ANTHROPIC_*-Variablen greift der claude.ai-Login (Abo-Kontingent).
+    for k in ("ANTHROPIC_BASE_URL", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_API_KEY"):
+        env.pop(k, None)
+    env["PATH"] = "/usr/local/bin:/usr/bin:/bin:" + env.get("PATH", "")
+    cmd = [exe, "-p", prompt, "--output-format", "json", "--max-turns", "2", "--no-session-persistence",
+           "--model", os.environ.get("SCOPE_CLAUDE_MODEL", "sonnet"),
+           "--setting-sources", "project,local", "--disable-slash-commands"]
+    p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=CLAUDE_TIMEOUT, env=env)
+    data = json.loads(p.stdout.strip().splitlines()[-1])
+    if p.returncode != 0 or data.get("is_error"):
+        raise ValueError("claude -p: {}".format(str(data.get("result") or p.stderr)[:300]))
+    text = str(data.get("result") or "")
+    parsed = json.loads(text[text.find("{"):text.rfind("}") + 1])
+    return [parsed.get(str(i + 1)) if isinstance(parsed.get(str(i + 1)), dict) else None for i in range(len(users))]
+
+
 def _live_items() -> List[dict]:
+    """Alle Prüfziele: Updates aus live.json, kuratierte Einträge aus data.ts
+    und die Rahmenwerke selbst (Schlüssel "f:<id>" statt URL)."""
     live = json.load(open(LIVE_PATH, encoding="utf-8"))
     items = []
+    seen = set()
     for fw_id, ups in live["updates"].items():
         for u in ups:
-            if u.get("url"):
+            if u.get("url") and u["url"] not in seen:
+                seen.add(u["url"])
                 items.append({"fw": fw_id, **u})
+    targets = _targets()
+    for u in targets["updates"]:
+        if u.get("url") and u["url"] not in seen:
+            seen.add(u["url"])
+            items.append(u)
     items.sort(key=lambda u: tuple(reversed(u["d"].split("."))), reverse=True)
+    for f in targets["frameworks"]:
+        items.append({
+            "fw": f["id"], "url": "f:" + f["id"], "d": "", "src": "", "framework": True,
+            "ti": {"de": "Rahmenwerk {} ({})".format(f["name"], f["ref"])}, "t": {"de": "Rahmenwerk"},
+            "s": {"de": f["about"]},
+        })
     return items
 
 
 def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[int] = None) -> dict:
     _ensure_table(conn)
+    _refresh_targets()
     items = _live_items()
     if limit:
         items = items[:limit]
     cached = {r[0] for r in conn.execute("SELECT url FROM llm_scope WHERE fmt=?", (FORMAT,))}
     todo = [u for u in items if u["url"] not in cached]
-    key = api_key()
+    use_claude = os.environ.get("SCOPE_BACKEND", "claude") != "openrouter"
+    key = "abo" if use_claude else api_key()
     stats = {"total": len(items), "neu": 0, "fehler": 0, "kosten_usd": 0.0, "gebremst": False}
     if todo and key:
         budget = float(os.environ.get("SCOPE_WEEKLY_BUDGET_USD", "0.8"))
         spent = _spent_this_week(conn)
-        if not backfill and spent >= budget:
+        if not use_claude and not backfill and spent >= budget:
             stats["gebremst"] = True
             todo = []
         features = _catalog()
@@ -187,6 +267,65 @@ def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[in
         model = os.environ.get("OPENROUTER_SCOPE_MODEL", DEFAULT_MODEL)
         from .db import utcnow
 
+        def payload(u):
+            fw = fws.get(u["fw"], {"id": u["fw"]})
+            parent = fws.get(fw.get("parent") or "")
+            return json.dumps({
+                "meldung": {"titel": u["ti"]["de"], "typ": u["t"]["de"], "quelle": u["src"],
+                            "datum": u["d"], "frist": u.get("deadline"), "referenz": u.get("refnum"),
+                            "zusammenfassung": u["s"]["de"], "url": u["url"]},
+                "rahmenwerk": fw,
+                "eltern_rahmenwerk": parent,
+                **({"hinweis": FW_HINT} if u.get("framework") else {}),
+            }, ensure_ascii=False)
+
+        def save(url, scope, cost, used_model):
+            stats["kosten_usd"] += cost
+            if scope is None:
+                stats["fehler"] += 1
+                return
+            conn.execute("INSERT OR REPLACE INTO llm_scope VALUES (?,?,?,?,?,?)",
+                         (url, json.dumps(scope, ensure_ascii=False), used_model, cost, utcnow(), FORMAT))
+            conn.commit()
+            stats["neu"] += 1
+
+        def work_batch(batch):
+            for attempt in (1, 2):
+                try:
+                    raws = _chat_claude(system, [payload(u) for u in batch])
+                    return [(u["url"], _clean(r, ids) if r else None) for u, r in zip(batch, raws)]
+                except (ValueError, KeyError, OSError, IndexError) as e:
+                    err = e
+                except Exception as e:  # Timeout u. a.
+                    err = e
+            print("Scope-Analyse (Claude) fehlgeschlagen: {} Meldungen ({})".format(len(batch), str(err)[:200]))
+            return [(u["url"], None) for u in batch]
+
+        # Nur ein Lauf zur Zeit (der Stundenlauf startet sonst einen zweiten,
+        # während ein großer Nachlauf noch arbeitet).
+        lock = os.path.join(ROOT, "scraper", "data", ".scope_claude.lock")
+        if use_claude and os.path.exists(lock) and dt.datetime.now().timestamp() - os.path.getmtime(lock) < 4 * 3600:
+            print("scope: anderer Lauf aktiv, überspringe")
+            todo = []
+            use_claude = False
+        if use_claude:
+            open(lock, "w").close()
+            batches = [todo[i:i + CLAUDE_BATCH] for i in range(0, len(todo), CLAUDE_BATCH)]
+            claude_model = "claude:" + os.environ.get("SCOPE_CLAUDE_MODEL", "sonnet")
+            with ThreadPoolExecutor(max_workers=CLAUDE_WORKERS) as pool:
+                for done, res in enumerate(pool.map(work_batch, batches), 1):
+                    for url, scope in res:
+                        save(url, scope, 0.0, claude_model)
+                    if done % 5 == 0:
+                        print("scope: {}/{} Pakete".format(done, len(batches)), flush=True)
+                        os.utime(lock)
+                        write_export(conn)
+            try:
+                os.remove(lock)
+            except OSError:
+                pass
+            todo = []
+
         def work(u):
             fw = fws.get(u["fw"], {"id": u["fw"]})
             parent = fws.get(fw.get("parent") or "")
@@ -196,6 +335,7 @@ def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[in
                             "zusammenfassung": u["s"]["de"], "url": u["url"]},
                 "rahmenwerk": fw,
                 "eltern_rahmenwerk": parent,
+                **({"hinweis": FW_HINT} if u.get("framework") else {}),
             }, ensure_ascii=False)
             for attempt in (1, 2):
                 try:

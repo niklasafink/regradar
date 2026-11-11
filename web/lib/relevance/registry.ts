@@ -5,6 +5,7 @@
 
 import https from "node:https";
 import ecbJson from "./ecb-entities.json";
+import eiopaJson from "./eiopa-insurers.json";
 import { redis } from "../subscribers";
 
 const INST_BASE = "https://portal.mvp.bafin.de/database/InstInfo/";
@@ -152,7 +153,31 @@ const COUNTRY: Record<string, string> = {
   SI: "Slowenien", EE: "Estland", LV: "Lettland", LT: "Litauen", MT: "Malta", CY: "Zypern", HR: "Kroatien",
   BG: "Bulgarien",
 };
-export const countryName = (c: string) => COUNTRY[c] ?? c;
+const regionNames = new Intl.DisplayNames(["de"], { type: "region" });
+export const countryName = (c: string) => COUNTRY[c] ?? regionNames.of(c) ?? c;
+
+/* Versicherer des EWR außerhalb Deutschlands aus dem EIOPA-Register (Export
+   vom 11.11.2026, Abrufskript scraper/eiopa_fetch.py). Das Register
+   nennt Name, Sitzstaat, LEI und ob das Unternehmen in Deutschland über eine
+   Niederlassung oder im Dienstleistungsverkehr gemeldet ist (`de`), aber
+   keine Sparte: die fragt der Profil-Ablauf ab. Treffer-ID: "eiopa:<Staat>:<Nr>". */
+export interface EiopaEntity { id: string; lei: string | null; name: string; country: string; city: string | null; de?: boolean }
+const EIOPA = (eiopaJson as { entities: EiopaEntity[] }).entities ?? [];
+export const eiopaById = (key: string): EiopaEntity | undefined => {
+  const [country, id] = key.split(":");
+  return EIOPA.find((e) => e.country === country && e.id === id);
+};
+
+export function searchEiopa(name: string): RegistryHit[] {
+  for (const v of searchVariants(name)) {
+    const n = normName(v);
+    if (n.length < 3) continue;
+    const out = EIOPA.filter((e) => normName(e.name).includes(n)).slice(0, 10)
+      .map((e) => ({ id: `eiopa:${e.country}:${e.id}`, name: e.name, gattung: `Versicherungsunternehmen, Sitz ${countryName(e.country)}` }));
+    if (out.length) return out;
+  }
+  return [];
+}
 
 /** Banken und Finanzholdings des Euroraums außerhalb Deutschlands (für sie
     gibt es keinen Eintrag im deutschen Register). Treffer-ID: "ecb:<LEI>". */

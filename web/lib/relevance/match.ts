@@ -23,7 +23,7 @@
 import { featureById, featureLabel, FEATURE_IDS, FEATURES } from "./catalog";
 import { BudgetError, chatJson, MODELS } from "./llm";
 import { changedFeatures, featureValue, profileSignature, profileValues, type Profile, type Tri } from "./profile";
-import { scopeFor, SCOPE_FORMAT, type Group, type Scope } from "./scopes";
+import { scopeForTarget, SCOPE_FORMAT, type Group, type Scope } from "./scopes";
 import { redis } from "../subscribers";
 import type { Framework, Update } from "../data";
 
@@ -59,10 +59,30 @@ const TTL = 60 * 60 * 24 * 180;
 
 type GroupEval = { v: Tri; unknown: string[] };
 
+/* Bankaufsichtliche Merkmale gibt es nur bei Kreditinstituten, großen
+   Wertpapierinstituten und Finanzholdings (Befund 11.11.2026: Leasing-
+   Institute und Versicherer wurden nach SNCI und IRB gefragt). */
+const BANK_ONLY = new Set(["si", "lsi", "lsi_hi", "snci", "bedeutend_ivv", "osii", "gsii", "irb", "handelsbuch_klein"]);
+const BANKLIKE = ["ki", "ki_crr", "bausparkasse", "foerderbank", "wpi_gross", "finanzholding"];
+const SEATS = ["sitz_de", "sitz_lu", "sitz_eu"];
+
+/** Merkmalswert für die Regeln: wie im Profil, dazu was sich sicher ergibt,
+    auch wenn es (in älteren Profilen) nicht eingetragen ist: Ein Institut hat
+    genau einen Sitz, und bankaufsichtliche Merkmale treffen auf Nicht-Banken
+    mit vollständig bekannter Institutsart nicht zu. */
+export function ruleValue(p: Profile, id: string): Tri {
+  const v = featureValue(p, id);
+  if (v !== null) return v;
+  if (SEATS.includes(id) && SEATS.some((s) => s !== id && featureValue(p, s) === true)) return false;
+  if (id === "taetig_de" && featureValue(p, "sitz_de") === true) return true;
+  if (BANK_ONLY.has(id) && p.closed && !BANKLIKE.some((b) => featureValue(p, b) === true)) return false;
+  return null;
+}
+
 function evalGroup(p: Profile, g: Group): GroupEval {
   const unknown: string[] = [];
   for (const id of g.alle) {
-    const v = featureValue(p, id);
+    const v = ruleValue(p, id);
     if (v === false) return { v: false, unknown: [] };
     if (v === null) unknown.push(id);
   }
@@ -101,20 +121,73 @@ export function ruleCheck(p: Profile, scope: Scope | undefined): RuleResult {
   // Unternehmen, selbst wenn die Analyse nur die Institutsart nennt
   // (Beispiel GRENKE AG: Leasing-Erlaubnis, aber Finanzholding über einer
   // CRR-Bank). Dann entscheidet nicht die Regel, sondern die KI.
-  const consolidated = scope.ebene !== "einzel"
-    && (featureValue(p, "finanzholding") === true || featureValue(p, "gruppe_uebergeordnet") === true);
+  // Greift nur, wenn das Haus selbst kein CRR-Institut ist und eine
+  // Adressatengruppe allein an der Institutsart scheitert (alle übrigen
+  // Merkmale wie Sitz oder Geschäft treffen zu).
+  const holder = featureValue(p, "finanzholding") === true
+    || (featureValue(p, "gruppe_uebergeordnet") === true && featureValue(p, "ki_crr") !== true
+      && ["ki", "fdi", "leasing_factoring", "wpi"].some((x) => featureValue(p, x) === true));
+  const consolidated = scope.ebene !== "einzel" && holder && scope.adressaten.some((g) =>
+    g.alle.some((id) => ["ki_crr", "ki", "wpi_gross"].includes(id))
+    && g.alle.every((id) => featureById(id)?.g === "art" || ruleValue(p, id) === true));
   if (allFalse && !consolidated) {
     return {
       decided: { ...base, status: "nein", grund: `Nicht einschlägig, weil es sich nur richtet an: ${(scope.kurz || scope.adressaten.map((g) => g.alle.map(featureLabel).join(" + ")).join("; ")).replace(/\.+$/, "")}.` },
       hits, open, allFalse,
     };
   }
-  // Regel-„ja“ nur für Pflichten (geltend oder künftig); Hinweise und
-  // Berichte prüft die KI, ob sie wirklich einen Prüfanlass geben.
-  if (hits.length > 0 && scope.teilregeln.length === 0 && scope.schwellen.length === 0
-    && (scope.art === "pflicht" || scope.art === "kuenftig")) {
+  /* Seit 11.11.2026 entscheiden die Regeln jeden Fall, für den es eine
+     Anforderungsanalyse mit Adressaten gibt (Nutzerentscheidung: Wenn-Dann-
+     Regeln statt KI je Profil; die KI-Arbeit steckt einmalig in der Analyse
+     je Meldung). Die KI prüft nur noch Ziele ganz ohne Analyse. */
+  if (evals.length === 0) return { hits, open, allFalse: false };
+  if (hits.length > 0) {
+    // Teilregeln: Erleichterung greift oder ein Zusatzteil entfällt → teilweise.
+    const gilt: string[] = [];
+    const entfaellt: string[] = [];
+    const used = new Set(hits[0].alle);
+    for (const t of scope.teilregeln) {
+      if (!t.gilt_fuer.length) continue;
+      const es = t.gilt_fuer.map((g) => evalGroup(p, g).v);
+      const v: Tri = es.includes(true) ? true : es.every((x) => x === false) ? false : null;
+      if (v === null) continue;
+      t.gilt_fuer.forEach((g) => g.alle.forEach((x) => used.add(x)));
+      if (v && t.erleichterung) gilt.push(`${t.teil}${t.hinweis ? ` (${t.hinweis})` : ""}`);
+      else if (!v && !t.erleichterung) entfaellt.push(t.teil);
+    }
+    const partial = gilt.length > 0 || entfaellt.length > 0;
+    const teile = [gilt.length ? `Erleichterung: ${gilt.join("; ")}` : "", entfaellt.length ? `Entfällt: ${entfaellt.join("; ")}` : ""]
+      .filter(Boolean).join(". ").slice(0, 300);
     return {
-      decided: { ...base, status: "ja", grund: `Einschlägig, weil ${hits[0].alle.map(featureLabel).join(" + ")}.`, merkmale: hits[0].alle },
+      decided: {
+        ...base, status: partial ? "teilweise" : "ja", ...(partial ? { teile } : {}),
+        grund: `Einschlägig, weil ${hits[0].alle.map(featureLabel).join(" + ")}.`, merkmale: [...used],
+      },
+      hits, open, allFalse,
+    };
+  }
+  if (allFalse && consolidated) {
+    return {
+      decided: {
+        ...base, status: "teilweise", merkmale: ["finanzholding", "gruppe_uebergeordnet"],
+        grund: "Einschlägig auf konsolidierter Ebene, weil übergeordnetes Unternehmen einer Gruppe.",
+        teile: `Die Vorgabe richtet sich an: ${(scope.kurz || "gruppenangehörige Institute").replace(/\.+$/, "")}. Sie betrifft Ihr Haus, soweit solche Institute zur Gruppe gehören.`.slice(0, 300),
+      },
+      hits, open, allFalse: false,
+    };
+  }
+  // Kein Treffer, aber mindestens eine Gruppe hängt an unbekannten Merkmalen:
+  // Rückfrage zur Gruppe mit den wenigsten offenen Merkmalen.
+  if (open.length > 0) {
+    const best = [...open].sort((a, b) => a.unknown.length - b.unknown.length)[0];
+    const ids = [...new Set([...best.unknown, ...open.flatMap((o) => o.unknown)])];
+    const ask = (id: string) => scope.fragen.find((f) => f.merkmal === id) ?? { merkmal: id, frage: `Trifft auf Ihr Institut zu: ${featureLabel(id)}?` };
+    return {
+      decided: {
+        ...base, status: "unsicher", merkmale: ids,
+        grund: `Unklar, weil offen ist: ${best.unknown.map(featureLabel).join(", ")}.`.slice(0, 400),
+        frage: ask(ids[0]), weitere: ids.slice(1, 4).map(ask),
+      },
       hits, open, allFalse,
     };
   }
@@ -310,13 +383,7 @@ Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten
   };
 }
 
-/* Bankaufsichtliche Merkmale ergeben nur bei Kreditinstituten, großen
-   Wertpapierinstituten und Finanzholdings eine sinnvolle Rückfrage (Befund
-   11.11.2026: Leasing-Institute und Versicherer wurden nach SNCI und IRB gefragt). */
-const BANK_ONLY = new Set(["si", "lsi", "lsi_hi", "snci", "bedeutend_ivv", "osii", "gsii", "irb", "handelsbuch_klein"]);
-const BANKLIKE = ["ki", "ki_crr", "bausparkasse", "foerderbank", "wpi_gross", "finanzholding"];
-const askable = (p: Profile, id: string) =>
-  featureValue(p, id) === null && (!BANK_ONLY.has(id) || !p.closed || BANKLIKE.some((b) => featureValue(p, b) === true));
+const askable = (p: Profile, id: string) => ruleValue(p, id) === null;
 
 function fallbackQuestion(p: Profile, scope: Scope | undefined, rules: RuleResult) {
   const fromScope = scope?.fragen.find((f) => askable(p, f.merkmal));
@@ -397,7 +464,7 @@ export async function invalidateChanged(
   const removed = Object.entries(all).filter(([k, r]) => {
     const t = resolve(k);
     if (!t) return true;
-    return !stillValid(r, changed, t.u?.url ? scopeFor(t.u.url) : undefined, (id) => featureValue(p, id) === true);
+    return !stillValid(r, changed, scopeForTarget(t), (id) => featureValue(p, id) === true);
   }).map(([k]) => k);
   if (removed.length) await redis().hdel(store, ...removed);
   await redis().del(failKey(p)).catch(() => 0);
@@ -482,10 +549,22 @@ export function offlineEstimate(p: Profile, t: MatchTarget, scope: Scope | undef
   return out("nein", `Das Rahmenwerk „${fw.n.de}“ richtet sich nur an ${fw.ents.map((e) => ENT_LABEL[e] ?? e).join(", ")}.`);
 }
 
+/* Seit 11.11.2026 läuft je Profil keine KI mehr (Nutzerentscheidung, Kosten):
+   Die Regeln entscheiden anhand der Anforderungsanalyse; Ziele, deren Analyse
+   noch fehlt, bekommen bis dahin die vorläufige Einschätzung. Mit
+   RELEVANCE_LLM=1 prüft für solche Ziele wieder die KI. */
+const LLM_ENABLED = process.env.RELEVANCE_LLM === "1";
+
+/** Regel-Entscheidung für ein Ziel, falls die Analyse sie hergibt. */
+export function ruleFor(p: Profile, t: MatchTarget): MatchResult | undefined {
+  return ruleCheck(p, scopeForTarget(t)).decided;
+}
+
 async function computeOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean; persist: boolean }): Promise<MatchResult> {
-  const scope = t.u?.url ? scopeFor(t.u.url) : undefined;
+  const scope = scopeForTarget(t);
   const rules = ruleCheck(p, scope);
   if (rules.decided) return rules.decided;
+  if (!LLM_ENABLED) return offlineEstimate(p, t, scope, rules);
   const key = cacheKey(t, profileSignature(p));
   try {
     const hit = await redis().get<MatchResult>(key);
@@ -561,16 +640,32 @@ export async function matchMany(
       ]);
     } catch { /* ohne Speicher weiter */ }
   }
+  // Regeln kosten nichts und folgen immer der aktuellen Analyse: Sie gehen
+  // gespeicherten Ergebnissen vor (auch früheren KI-Urteilen) und werden nur
+  // gespeichert, damit Listen und Export sie in einem Abruf bekommen.
+  const fresh: Record<string, MatchResult> = {};
   const todo = targets.filter((t) => {
     const o = overrides[t.key];
-    if (o) { out[t.key] = fromOverride(o, stored[t.key]); return false; }
     const r = stored[t.key];
+    const rule = ruleFor(p, t);
+    if (rule) {
+      if (!r || r.status !== rule.status || r.grund !== rule.grund || r.teile !== rule.teile) fresh[t.key] = rule;
+      out[t.key] = o ? fromOverride(o, rule) : rule;
+      return false;
+    }
+    if (o) { out[t.key] = fromOverride(o, r); return false; }
     if (r && !answered(p, r)) { out[t.key] = r; return false; }
     return true;
   });
-  if (!todo.length) return out;
+  const save = async () => {
+    if (!persist || !Object.keys(fresh).length) return;
+    try {
+      await redis().hset(store, fresh);
+      await redis().expire(store, STORE_TTL);
+    } catch { /* egal */ }
+  };
+  if (!todo.length) { await save(); return out; }
 
-  const fresh: Record<string, MatchResult> = {};
   const queue = [...todo];
   const stopAt = opts.deadlineMs ? Date.now() + opts.deadlineMs : Infinity;
   const worker = async () => {
@@ -581,25 +676,25 @@ export async function matchMany(
     }
   };
   await Promise.all(Array.from({ length: Math.min(opts.concurrency ?? 4, todo.length) }, worker));
-  if (persist && Object.keys(fresh).length) {
-    try {
-      await redis().hset(store, fresh);
-      await redis().expire(store, STORE_TTL);
-    } catch { /* egal */ }
-  }
+  await save();
   return out;
 }
 
 /** Alles, was für das Profil festgehalten ist (gespeicherte Prüfungen und
     selbst gesetzte Status), in einem Abruf. Ergebnisse, deren Rückfrage das
     Profil inzwischen beantwortet, fehlen (sie werden neu geprüft). */
-export async function storedAll(p: Profile): Promise<Record<string, MatchResult>> {
+export async function storedAll(p: Profile, resolve?: (key: string) => MatchTarget | null): Promise<Record<string, MatchResult>> {
   const [stored, overrides] = await Promise.all([
     redis().hgetall<Record<string, MatchResult>>(storeKey(p)).then((x) => x ?? {}),
     redis().hgetall<Record<string, Override>>(overrideKey(p)).then((x) => x ?? {}),
   ]);
   const out: Record<string, MatchResult> = {};
-  for (const [k, r] of Object.entries(stored)) if (r && !answered(p, r)) out[k] = r;
+  for (const [k, r] of Object.entries(stored)) {
+    // Gespeicherte Stände folgen der aktuellen Analyse (Regeln sind gratis).
+    const t = resolve?.(k);
+    const rule = t ? ruleFor(p, t) : undefined;
+    if (rule) { out[k] = rule; stored[k] = rule; } else if (r && !answered(p, r)) out[k] = r;
+  }
   for (const [k, o] of Object.entries(overrides)) if (o) out[k] = fromOverride(o, stored[k]);
   return out;
 }

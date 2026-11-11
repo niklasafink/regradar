@@ -1,5 +1,5 @@
 import { storedAll } from "@/lib/relevance/match";
-import { visitorProfile } from "@/lib/relevance/server";
+import { resolveTarget, visitorProfile } from "@/lib/relevance/server";
 
 /* Alle festgehaltenen Ergebnisse des aktiven Kontoprofils in einem Abruf
    (gespeicherte Prüfungen und selbst gesetzte Status). Die Listen zeigen
@@ -8,7 +8,7 @@ import { visitorProfile } from "@/lib/relevance/server";
 export async function GET() {
   const vp = await visitorProfile();
   if (!vp.profile || vp.source !== "konto") return Response.json({ profileId: null, results: {} });
-  const all = await storedAll(vp.profile);
+  const all = await storedAll(vp.profile, resolveTarget);
   // Nur was die Anzeige braucht; Kosten, Zeitstempel und Merkmale bleiben weg.
   const results = Object.fromEntries(Object.entries(all).map(([k, r]) => [k, {
     status: r.status, grund: r.grund, teile: r.teile, frage: r.frage, weitere: r.weitere, art: r.art,

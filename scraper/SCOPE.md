@@ -28,6 +28,9 @@ Liste von Gruppen. Ein Unternehmen ist Adressat, wenn es ALLE Merkmale mindesten
 7. Wertpapier-/Marktrecht (MiFID II, MAR, PRIIPs): Unternehmen mit den einschlägigen Erlaubnissen (z. B. "lic_anlageberatung", "lic_portfolioverwaltung", "lic_eigenhandel"), PRIIPs/Anlegerschutz mit "privatkunden".
 8. Konsolidierungsebene in "ebene": "einzel", "konsolidiert" oder "beide".
 
+9. Die Adressaten werden später rein regelbasiert mit Institutsprofilen abgeglichen, ohne weitere Prüfung durch eine KI. Jede Gruppe muss deshalb für sich allein den Adressatenkreis treffen: Eine Gruppe nur aus Ortsmerkmalen ("taetig_de", "sitz_de", "sitz_lu") ist nur richtig, wenn die Vorgabe wirklich jedes beaufsichtigte Unternehmen dort trifft. Sonst immer Institutsart, Erlaubnis oder Geschäftsmerkmal dazunehmen (z. B. Vermögensanlagen-Rundschreiben: Unternehmen mit Platzierungs- oder Emissionsgeschäft, nicht alle Institute mit Privatkunden). Knüpft die Pflicht an eine Rolle oder ein Geschäft an (Betreiber von Hochrisiko-KI: "ki_systeme"; Krypto: "casp", "krypto_emittent" oder "krypto_aktiv"; Verbriefung; OTC-Derivate; Pfandbriefgeschäft: "lic_pfandbrief"), gehört dieses Merkmal in JEDE Gruppe. Lieber mehrere enge Gruppen als eine weite.
+10. Bei direkter EZB-, SRB- oder AMLA-Zuständigkeit das Statusmerkmal ("si") in die Gruppe aufnehmen; Vorgaben nur für weniger bedeutende Institute mit "lsi".
+
 ## Ausschlüsse (Feld "ausschluesse")
 Gruppen in derselben Form für ausdrücklich ausgenommene Unternehmen (z. B. Förderbanken nach Art. 2 Abs. 5 CRD: [{"alle":["foerderbank"]}]). Nur angeben, was das Dokument oder der Rechtsakt ausdrücklich ausnimmt.
 
