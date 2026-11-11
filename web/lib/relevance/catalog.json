@@ -98,6 +98,7 @@
     { "id": "bs_unter_5mrd", "g": "schwelle", "l": "Bilanzsumme bis 5 Mrd. €" },
     { "id": "bs_ab_15mrd", "g": "schwelle", "l": "Bilanzsumme ab 15 Mrd. €" },
     { "id": "bs_ab_30mrd", "g": "schwelle", "l": "Bilanzsumme ab 30 Mrd. €" },
+    { "id": "kleinstunternehmen", "g": "schwelle", "l": "Kleinstunternehmen (unter 10 Beschäftigte, Umsatz und Bilanzsumme höchstens 2 Mio. €)" },
 
     { "id": "privatkunden", "g": "geschaeft", "l": "Geschäft mit Privatkunden" },
     { "id": "verbraucherkredit", "g": "geschaeft", "l": "Verbraucherdarlehen" },

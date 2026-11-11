@@ -9,7 +9,7 @@ import type { Framework, Txt, Question } from "./base";
 export const FRAMEWORKS: Framework[] = [
 
   { id:"dora", jur:"EU",
-    about:{de:"Einheitliches EU-Regelwerk für IKT-Risiken im Finanzsektor: Risikomanagement, Meldung schwerwiegender Vorfälle, Resilienztests und Überwachung kritischer IT-Dienstleister.",en:"Single EU rulebook for ICT risk in the financial sector: risk management, major incident reporting, resilience testing and oversight of critical IT providers."}, topic:"ICT", ents:["CI","AM","IF","PI","INS"],
+    about:{de:"Einheitliches EU-Regelwerk für IKT-Risiken im Finanzsektor: Risikomanagement, Meldung schwerwiegender Vorfälle, Resilienztests und Überwachung kritischer IT-Dienstleister.",en:"Single EU rulebook for ICT risk in the financial sector: risk management, major incident reporting, resilience testing and oversight of critical IT providers."}, topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"DORA: Digitale operationale Resilienz",en:"DORA: Digital Operational Resilience"},
     alias:"DORA-Verordnung, Digital Operational Resilience Act, IKT-Risiko, ICT risk, Register of Information, TLPT",
     ref:"VO (EU) 2022/2554", cond:null,
@@ -28,8 +28,8 @@ export const FRAMEWORKS: Framework[] = [
       {refnum:"BGBl. 2024 I Nr. 438", eff:"17.01.2025", d:"27.12.2024", t:{de:"Gesetz",en:"Law"}, src:"recht.bund.de",
        url:"https://www.recht.bund.de/bgbl/1/2024/438/VO.html",
        ti:{de:"Finanzmarktdigitalisierungsgesetz (FinmadiG): nationale DORA-Begleitgesetzgebung",en:"Financial Market Digitalisation Act (FinmadiG): national legislation accompanying DORA"},
-       s:{de:"Passt KWG, VAG, WpIG, ZAG, KAGB und weitere Aufsichtsgesetze an DORA an, setzt die Änderungsrichtlinie (EU) 2022/2556 um und benennt die BaFin als zuständige Behörde mit Eingriffs- und Bußgeldbefugnissen. Verkündet am 27.12.2024, die DORA-Teile gelten ab dem 17.01.2025.",
-          en:"Aligns the KWG, VAG, WpIG, ZAG, KAGB and other supervisory acts with DORA, transposes amending Directive (EU) 2022/2556 and designates BaFin as competent authority with intervention and fining powers. Promulgated on 27 Dec 2024; the DORA parts apply from 17 Jan 2025."}},
+       s:{de:"Passt KWG, VAG, WpIG, ZAG, KAGB und weitere Aufsichtsgesetze an DORA an, setzt die Änderungsrichtlinie (EU) 2022/2556 um und benennt die BaFin als zuständige Behörde mit Eingriffs- und Bußgeldbefugnissen. Verkündet am 27.12.2024, die DORA-Teile gelten ab dem 17.01.2025. Über § 1a Abs. 2a i. V. m. § 65a Abs. 3 KWG gilt DORA entsprechend auch für alle KWG-Institute außerhalb von Art. 2 DORA, etwa Leasing- und Factoringinstitute: die Meldepflichten bei IKT-Vorfällen (Kapitel III) seit dem 17.01.2025, die übrigen Vorgaben ab dem 01.01.2027, mit vereinfachtem IKT-Risikomanagementrahmen (Art. 16 DORA), ohne bedrohungsgeleitete Penetrationstests (Art. 26/27) und bei Kleinstunternehmen ohne die Drittparteienregeln der Art. 28 bis 30.",
+          en:"Aligns the KWG, VAG, WpIG, ZAG, KAGB and other supervisory acts with DORA, transposes amending Directive (EU) 2022/2556 and designates BaFin as competent authority with intervention and fining powers. Promulgated on 27 Dec 2024; the DORA parts apply from 17 Jan 2025. Under section 1a(2a) in conjunction with section 65a(3) KWG, DORA also applies mutatis mutandis to all KWG institutions outside Art. 2 DORA, such as leasing and factoring institutions: incident reporting (Chapter III) since 17 Jan 2025, all other requirements from 1 Jan 2027, with the simplified ICT risk management framework (Art. 16 DORA), without threat-led penetration testing (Art. 26/27) and, for micro-enterprises, without the third-party rules of Arts. 28 to 30."}},
       {d:"17.12.2024", t:{de:"Mitteilung",en:"Statement"}, src:"bafin.de",
        url:"https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2024/meldung_2024_12_17_Dokumentationsanforderungen_DORA.html",
        ti:{de:"BaFin-Übersicht der Dokumentationsanforderungen unter DORA",en:"BaFin overview of documentation requirements under DORA"},
@@ -80,7 +80,7 @@ export const FRAMEWORKS: Framework[] = [
   /* Aus der DORA-Chronologie ausgegliedert (Daten und Links geprüft, Stand 02.09.2026). */
   { id:"dorarmf", jur:"EU", parent:"dora",
     about:{de:"Technische Standards zum IKT-Risikomanagementrahmen unter DORA: Sicherheitsrichtlinien, Zugriffs- und Änderungsmanagement, Erkennung, Business Continuity und Wiederherstellung sowie der vereinfachte Rahmen für kleine Unternehmen.",en:"Technical standards on the ICT risk management framework under DORA: security policies, access and change management, detection, business continuity and recovery, plus the simplified framework for small entities."},
-    topic:"ICT", ents:["CI","AM","IF","PI","INS"],
+    topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"IKT-Risikomanagementrahmen (RTS zu Art. 15 und 16 DORA)",en:"ICT risk management framework (RTS under Art. 15 and 16 DORA)"},
     sn:{de:"IKT-Risikomanagementrahmen",en:"ICT risk management framework"},
     alias:"RTS IKT-Risikomanagement, ICT risk management framework, Del. VO 2024/1774, vereinfachter Rahmen, Art. 15 DORA, Art. 16 DORA",
@@ -97,7 +97,7 @@ export const FRAMEWORKS: Framework[] = [
   /* Aus der DORA-Chronologie ausgegliedert (Daten und Links geprüft, Stand 02.09.2026). */
   { id:"doraincident", jur:"EU", parent:"dora",
     about:{de:"Technische Standards und Leitlinien zur Klassifizierung schwerwiegender IKT-Vorfälle, zu Inhalt, Fristen und Formularen der Meldung sowie zur Schätzung der jährlichen Kosten und Verluste.",en:"Technical standards and guidelines on classifying major ICT incidents, on the content, deadlines and forms of incident reports and on estimating annual costs and losses."},
-    topic:"ICT", ents:["CI","AM","IF","PI","INS"],
+    topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"IKT-Vorfälle: Klassifizierung, Meldung und Kosten (RTS/ITS zu Art. 18–20 DORA)",en:"ICT incidents: classification, reporting and costs (RTS/ITS under Art. 18–20 DORA)"},
     sn:{de:"Vorfallmeldung",en:"Incident reporting"},
     alias:"Vorfallmeldung, Incident Reporting, Vorfallklassifizierung, Del. VO 2024/1772, Del. VO 2025/301, DVO 2025/302, JC/2024/34, schwerwiegender IKT-Vorfall, major ICT incident",
@@ -134,7 +134,7 @@ export const FRAMEWORKS: Framework[] = [
   /* Aus der DORA-Chronologie ausgegliedert (Daten und Links geprüft, Stand 02.09.2026). */
   { id:"dorathirdparty", jur:"EU", parent:"dora",
     about:{de:"Technische Standards zum Einsatz von IKT-Drittdienstleistern: interne Leitlinie für kritische oder wichtige Funktionen, Standardvorlagen für das Informationsregister und Anforderungen an die Untervergabe.",en:"Technical standards on using ICT third-party providers: internal policy for critical or important functions, standard templates for the register of information and requirements for subcontracting."},
-    topic:"ICT", ents:["CI","AM","IF","PI","INS"],
+    topic:"ICT", ents:["CI","AM","IF","PI","INS","OTH"],
     n:{de:"IKT-Drittparteirisiko: Leitlinie, Informationsregister und Untervergabe (RTS/ITS zu Art. 28–30 DORA)",en:"ICT third-party risk: policy, register of information and subcontracting (RTS/ITS under Art. 28–30 DORA)"},
     sn:{de:"Drittparteirisiko",en:"Third-party risk"},
     alias:"Informationsregister, Register of Information, Untervergabe, Subcontracting, IKT-Drittdienstleister, Del. VO 2024/1773, DVO 2024/2956, Del. VO 2025/532, Mindestvertragsinhalte",
@@ -223,7 +223,7 @@ export const FRAMEWORKS: Framework[] = [
     ]},
 
   { id:"nis2", jur:"EU+DE",
-    about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz. Finanzunternehmen im Anwendungsbereich von DORA sind von den BSIG-Pflichten zu Risikomanagement und Meldungen ausgenommen (DORA als lex specialis); relevant bleibt NIS-2 für Leasing-, Factoring- und sonstige Finanzdienstleister außerhalb von DORA, die die Größenschwellen erreichen.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act. Financial entities within the scope of DORA are exempt from the BSIG duties on risk management and reporting (DORA as lex specialis); NIS 2 remains relevant for leasing, factoring and other financial service providers outside DORA that meet the size thresholds."}, topic:"ICT", ents:["OTH"],
+    about:{de:"Cybersicherheitsanforderungen für wesentliche und wichtige Einrichtungen, in Deutschland umgesetzt über das BSI-Gesetz. Finanzunternehmen im Anwendungsbereich von DORA sind von den BSIG-Pflichten zu Risikomanagement und Meldungen ausgenommen (DORA als lex specialis); relevant bleibt NIS-2 für Leasing-, Factoring- und sonstige Finanzdienstleister, die die Größenschwellen erreichen und noch nicht unter DORA fallen. Für KWG-Institute außerhalb von Art. 2 DORA gilt DORA ab dem 01.01.2027 entsprechend (§ 1a Abs. 2a KWG); danach sind sie nach § 28 Abs. 6 BSIG von den Pflichten der §§ 30, 31, 32, 35, 36, 38 und 39 BSIG ausgenommen, die Registrierung beim BSI (§ 33 BSIG) bleibt.",en:"Cybersecurity requirements for essential and important entities, implemented in Germany through the BSI Act. Financial entities within the scope of DORA are exempt from the BSIG duties on risk management and reporting (DORA as lex specialis); NIS 2 remains relevant for leasing, factoring and other financial service providers that meet the size thresholds and are not yet covered by DORA. DORA applies mutatis mutandis to KWG institutions outside Art. 2 DORA from 1 Jan 2027 (section 1a(2a) KWG); they are then exempt under section 28(6) BSIG from the duties of sections 30, 31, 32, 35, 36, 38 and 39 BSIG, while registration with the BSI (section 33 BSIG) remains."}, topic:"ICT", ents:["OTH"],
     n:{de:"NIS-2 / BSIG: Cybersicherheit",en:"NIS 2 / BSIG: cybersecurity"},
     alias:"NIS2, NIS-2-Umsetzungsgesetz, BSI-Gesetz, Cybersecurity, Cybersicherheit, KRITIS",
     ref:"RL (EU) 2022/2555, BSIG", cond:{k:"cross",any:["kritis"]},

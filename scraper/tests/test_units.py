@@ -567,6 +567,38 @@ class CliRunDisabledSource(unittest.TestCase):
         self.assertIn("DISABLED", text)
 
 
+class DoraKwgExtension(unittest.TestCase):
+    """DORA gilt über § 1a Abs. 2a KWG entsprechend auch für KWG-Institute außerhalb von Art. 2."""
+
+    def _scope(self, normen, groups, art="pflicht"):
+        return {"art": art, "normen": normen, "adressaten": [{"alle": g} for g in groups]}
+
+    def test_dora_spiegelt_fdi_und_crr(self):
+        from regradar.scope import extend_dora_kwg
+        s = extend_dora_kwg(self._scope(["VO (EU) 2022/2554 (DORA)"], [["ki_crr", "taetig_de"], ["fdi", "taetig_de"]]))
+        ids = {tuple(g["alle"]) for g in s["adressaten"]}
+        self.assertIn(("leasing_factoring", "taetig_de"), ids)
+        self.assertIn(("ki", "taetig_de"), ids)
+
+    def test_idempotent(self):
+        from regradar.scope import extend_dora_kwg
+        s = extend_dora_kwg(self._scope(["DORA"], [["fdi"]]))
+        n = len(s["adressaten"])
+        self.assertEqual(len(extend_dora_kwg(s)["adressaten"]), n)
+
+    def test_luxemburg_und_keine_institute_bleiben(self):
+        from regradar.scope import extend_dora_kwg
+        lu = extend_dora_kwg(self._scope(["DORA"], [["sitz_lu", "fdi"]]))
+        self.assertEqual(len(lu["adressaten"]), 1)
+        k = extend_dora_kwg(self._scope(["DORA"], [], art="keine_institute"))
+        self.assertEqual(k["adressaten"], [])
+
+    def test_nis2_bekommt_zeitvermerk(self):
+        from regradar.scope import extend_dora_kwg
+        s = extend_dora_kwg(self._scope(["RL (EU) 2022/2555 (NIS-2)"], [["sitz_de", "leasing_factoring"]]))
+        self.assertIn("01.01.2027", s["adressaten"][0]["hinweis"])
+
+
 if __name__ == "__main__":
     unittest.main()
 

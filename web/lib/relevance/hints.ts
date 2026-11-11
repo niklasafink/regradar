@@ -200,6 +200,15 @@ export const HINTS: Record<string, Hint> = {
     ],
     quelle: "Erlaubnisumfang, Produktkatalog",
   },
+  kleinstunternehmen: {
+    hinweis: "Kleinstunternehmen nach Art. 3 Nr. 60 DORA: weniger als 10 Beschäftigte und ein Jahresumsatz oder eine Jahresbilanzsumme von höchstens 2 Mio. €. Für KWG-Institute außerhalb von Art. 2 DORA, etwa Leasing- und Factoringinstitute, entfallen dann die Drittparteienregeln der Art. 28 bis 30 DORA (§ 1a Abs. 2a KWG).",
+    pruefen: [
+      "Hat das Institut weniger als 10 Beschäftigte?",
+      "Liegen Jahresumsatz oder Jahresbilanzsumme bei höchstens 2 Mio. €?",
+      "Gehört das Institut zu einer Gruppe? Dann kommt es auf die Größe des einzelnen Instituts an, bei verbundenen Unternehmen auf die Empfehlung 2003/361/EG.",
+    ],
+    quelle: "Jahresabschluss, Personalabteilung",
+  },
   auslagerung_wesentlich: {
     hinweis: "Wesentliche Auslagerungen nach § 25b KWG und MaRisk AT 9 sowie IKT-Dienstleistungen für kritische oder wichtige Funktionen nach DORA.",
     pruefen: [

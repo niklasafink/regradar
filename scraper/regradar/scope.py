@@ -220,6 +220,49 @@ def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[in
     return stats
 
 
+KWG_DORA_HINT = ("§ 1a Abs. 2a KWG: DORA gilt entsprechend (Meldepflichten seit 17.01.2025, Rest ab 01.01.2027; "
+                 "vereinfachter IKT-Rahmen Art. 16, kein TLPT, Drittparteienregeln nicht für Kleinstunternehmen).")
+NIS2_HINT = (" Ab 01.01.2027 gilt DORA für KWG-Institute außerhalb von Art. 2 DORA entsprechend (§ 1a Abs. 2a KWG); "
+             "dann sind sie nach § 28 Abs. 6 BSIG von §§ 30, 31, 32, 35, 36, 38 und 39 BSIG ausgenommen, die Registrierung "
+             "nach § 33 BSIG bleibt.")
+
+
+def extend_dora_kwg(scope: dict) -> dict:
+    """Deterministische Nachbearbeitung beim Export (kein Neulauf der KI nötig).
+
+    Nach § 1a Abs. 2a i. V. m. § 65a Abs. 3 KWG gilt DORA entsprechend für alle
+    KWG-Institute, die nicht schon unter Art. 2 DORA fallen (Leasing, Factoring,
+    übrige Finanzdienstleistungsinstitute, Kreditinstitute ohne CRR-Status).
+    Hat eine DORA-Meldung eine Gruppe mit "fdi" oder "ki_crr", wird sie für
+    "leasing_factoring" bzw. "ki" gespiegelt (Zusätze wie sitz_de bleiben).
+    Luxemburg (CSSF) ist ausgenommen, das KWG gilt dort nicht. NIS-2-Meldungen
+    bekommen einen Zeitvermerk, weil der Satz „nicht unter DORA“ ab 2027 nicht
+    mehr für diese Institute stimmt."""
+    normen = " ".join(scope.get("normen") or [])
+    groups = scope.get("adressaten") or []
+    if not groups or scope.get("art") == "keine_institute":
+        return scope
+    if any("sitz_lu" in g["alle"] for g in groups):
+        return scope
+    if "2022/2554" in normen or "DORA" in normen:
+        have = {tuple(sorted(g["alle"])) for g in groups}
+        for g in list(groups):
+            for src, dst in (("fdi", "leasing_factoring"), ("ki_crr", "ki")):
+                if src in g["alle"] and dst not in g["alle"]:
+                    new = sorted({dst if f == src else f for f in g["alle"]})
+                    if tuple(new) in have:
+                        continue
+                    have.add(tuple(new))
+                    groups.append({"alle": new, "hinweis": KWG_DORA_HINT})
+    elif "2022/2555" in normen or "NIS" in normen:
+        for g in groups:
+            h = g.get("hinweis") or ""
+            if "leasing_factoring" in g["alle"] or "fdi" in g["alle"]:
+                if NIS2_HINT.strip() not in h:
+                    g["hinweis"] = (h.rstrip() + NIS2_HINT) if h else NIS2_HINT.strip()
+    return scope
+
+
 def write_export(conn: sqlite3.Connection) -> int:
     """scopes.json mit allen gecachten Analysen der aktuellen live.json-Updates."""
     _ensure_table(conn)
@@ -229,7 +272,7 @@ def write_export(conn: sqlite3.Connection) -> int:
     # Export (z. B. wenn das Wochenbudget die Neuanalyse bremst).
     for url, scope in conn.execute("SELECT url, scope FROM llm_scope ORDER BY fmt"):
         if url in urls:
-            out[url] = json.loads(scope)
+            out[url] = extend_dora_kwg(json.loads(scope))
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump({"format": FORMAT, "scopes": out}, f, ensure_ascii=False, separators=(",", ":"))
     return len(out)

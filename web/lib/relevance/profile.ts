@@ -201,9 +201,9 @@ const Q_INS = ["gruppe_uebergeordnet", "kapitalmarktorientiert", "csrd_pflichtig
   "verbriefung_investor", "versicherungsvertrieb", "auslagerung_wesentlich", "ki_systeme"];
 const Q_PAY = ["privatkunden", "kartengeschaeft", "krypto_aktiv", "auslagerung_wesentlich", "kapitalmarktorientiert"];
 const Q_LEASING = ["gruppe_uebergeordnet", "kapitalmarktorientiert", "csrd_pflichtig", "privatkunden",
-  "verbriefung_originator", "otc_derivate", "auslagerung_wesentlich"];
+  "verbriefung_originator", "otc_derivate", "auslagerung_wesentlich", "kleinstunternehmen"];
 const Q_DEFAULT = ["gruppe_uebergeordnet", "kapitalmarktorientiert", "csrd_pflichtig", "privatkunden",
-  "otc_derivate", "auslagerung_wesentlich"];
+  "otc_derivate", "auslagerung_wesentlich", "kleinstunternehmen"];
 
 export function questionIds(p: Profile): string[] {
   const f = (id: string) => p.facts[id] === true;
