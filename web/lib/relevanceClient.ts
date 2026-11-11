@@ -85,8 +85,10 @@ function loadStored(): Promise<void> {
     storedPromise = loadMe().then(async (me) => {
       if (!me.loggedIn || !me.profiles.length) return;
       try {
+        const at = epoch;
         const res = await fetch("/api/relevance/stored", { cache: "no-store" });
         const json = (await res.json()) as { results?: Record<string, MatchResult> };
+        if (at !== epoch) return;
         for (const [k, v] of Object.entries(json.results ?? {})) if (!results.has(k)) results.set(k, v);
       } catch { /* dann paketweise wie bisher */ }
     });
@@ -94,7 +96,14 @@ function loadStored(): Promise<void> {
   return storedPromise;
 }
 
+/* Zählt Profilwechsel und -änderungen. Antworten, die vor dem Wechsel
+   angefragt wurden, gehören zum alten Profil und dürfen nicht mehr in die
+   Anzeige (Befund 11.11.2026: nach dem Wechsel standen kurz Status des
+   vorherigen Instituts in der Liste). */
+let epoch = 0;
+
 export function invalidate(): void {
+  epoch++;
   mePromise = null;
   storedPromise = null;
   results.clear();
@@ -166,6 +175,7 @@ async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
   const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
   const chunks: string[][] = [];
   for (let i = 0; i < keys.length; i += 20) chunks.push(keys.slice(i, i + 20));
+  const at = epoch;
   await Promise.all(chunks.map(async (chunk) => {
     try {
       const res = await fetch("/api/relevance/check", {
@@ -174,6 +184,7 @@ async function flush(batch: { keys: Set<string>; waiters: (() => void)[] }) {
         body: JSON.stringify({ keys: chunk, profile: draft }),
       });
       const json = (await res.json()) as { results?: Record<string, MatchResult> };
+      if (at !== epoch) return;
       for (const [k, v] of Object.entries(json.results ?? {})) results.set(k, v);
       if (typeof window !== "undefined") window.dispatchEvent(new Event(PARTIAL));
     } catch { /* still: keine Chips */ }
@@ -239,6 +250,7 @@ async function checkCheap(keys: string[]): Promise<void> {
   const draft = me.loggedIn ? undefined : readDraft() ?? undefined;
   const queue: string[][] = [];
   for (let i = 0; i < missing.length; i += 40) queue.push(missing.slice(i, i + 40));
+  const at = epoch;
   const worker = async () => {
     for (let chunk = queue.shift(); chunk; chunk = queue.shift()) {
       try {
@@ -248,9 +260,10 @@ async function checkCheap(keys: string[]): Promise<void> {
           body: JSON.stringify({ keys: chunk, profile: draft, noLlm: true }),
         });
         const json = (await res.json()) as { results?: Record<string, MatchResult> };
+        if (at !== epoch) return;
         for (const k of chunk) {
           const v = json.results?.[k];
-          if (v && v.stufe !== "fallback") results.set(k, v);
+          if (v && v.stufe !== "fallback" && v.stufe !== "vorlaeufig") results.set(k, v);
           else cheapMiss.add(k);
         }
         if (typeof window !== "undefined") window.dispatchEvent(new Event(PARTIAL));

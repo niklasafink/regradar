@@ -1,5 +1,5 @@
 import { logActivity } from "@/lib/relevance/activity";
-import { ecbLookup, searchRegistry } from "@/lib/relevance/registry";
+import { ecbByLei, ecbLookup, searchEcb, searchRegistryFuzzy } from "@/lib/relevance/registry";
 import { rateLimit } from "@/lib/relevance/server";
 
 /* Institutssuche für den Profil-Ablauf: Treffer mit Gattung und, falls
@@ -11,11 +11,12 @@ export async function GET(request: Request) {
     return Response.json({ error: "Zu viele Anfragen, bitte später erneut versuchen." }, { status: 429 });
   }
   try {
-    const hits = await searchRegistry(q);
+    // Deutsches Register, dazu Banken des übrigen Euroraums aus der EZB-Liste.
+    const hits = [...(await searchRegistryFuzzy(q)), ...searchEcb(q)];
     await logActivity(request, "Institutssuche", q);
     return Response.json({
       hits: hits.map((h) => {
-        const ecb = ecbLookup(h.name);
+        const ecb = h.id.startsWith("ecb:") ? ecbByLei(h.id.slice(4)) : ecbLookup(h.name);
         return { ...h, ecb: ecb ? { si: ecb.si, hi: ecb.hi, type: ecb.type } : null };
       }),
     });

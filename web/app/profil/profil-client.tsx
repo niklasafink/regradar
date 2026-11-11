@@ -8,6 +8,9 @@ import {
 import { RelevanceHint } from "@/components/relevance-hint";
 
 type Opt = { id: string; l: string };
+const SEATS: Opt[] = [
+  { id: "sitz_de", l: "Deutschland" }, { id: "sitz_lu", l: "Luxemburg" }, { id: "sitz_eu", l: "Anderer EU-/EWR-Staat" },
+];
 type Tri = true | false | null;
 
 interface License { text: string; since: string }
@@ -328,7 +331,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
             </ul>
           )}
           <p className="mt-6 text-sm text-slate-500">
-            Institut nicht dabei, etwa mit Sitz in Luxemburg?{" "}
+            Institut nicht dabei, etwa ein Versicherer mit Sitz außerhalb Deutschlands?{" "}
             <button type="button" className="font-medium text-slate-900 underline-offset-2 hover:underline" onClick={() => { setManualName(q); setStep("manuell"); }}>
               Profil von Hand anlegen
             </button>
@@ -343,6 +346,18 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
             <label className="text-sm font-medium text-slate-900" htmlFor="mname">Name</label>
             <input id="mname" value={manualName} onChange={(e) => setManualName(e.target.value)}
               className="mt-2 w-full rounded-full border border-slate-200 px-4 py-2 text-sm focus:border-slate-900 focus:outline-none" />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-slate-900">Sitz</p>
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {SEATS.map((o) => (
+                <button key={o.id} type="button" aria-pressed={!!manualFacts[o.id]}
+                  onClick={() => setManualFacts((f) => { const n = { ...f }; for (const s of SEATS) delete n[s.id]; if (!f[o.id]) n[o.id] = true; return n; })}
+                  className={`rounded-full border px-3 py-1 text-xs font-medium ${manualFacts[o.id] ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 text-slate-600 hover:border-slate-400"}`}>
+                  {o.l}
+                </button>
+              ))}
+            </div>
           </div>
           {[["Institutsart", art], ["Erlaubnisse", erl]].map(([label, opts]) => (
             <div key={label as string}>

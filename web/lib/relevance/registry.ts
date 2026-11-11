@@ -87,6 +87,30 @@ export function searchRegistry(name: string): Promise<RegistryHit[]> {
   });
 }
 
+/* Das Register sucht nur nach wörtlichen Teilstrings: „Commerzbank AG“,
+   „Sparda Bank Baden-Württemberg“ und „Signal Iduna Gruppe“ liefern nichts
+   (Befund aus dem Nutzungsprotokoll vom 11.11.2026). Ohne Treffer probiert
+   die Suche deshalb Varianten: ohne Rechtsform und „Gruppe“, mit Bindestrich
+   statt Leerzeichen, zuletzt nur das erste Wort. */
+const LEGAL_FORM = /\s+(ag|se|eg|e\.\s?g\.|gmbh|mbh|kgaa|kg|a\.\s?g\.|vvag|aktiengesellschaft|gruppe|group|konzern|holding)\.?$/i;
+
+export function searchVariants(name: string): string[] {
+  const q = name.trim().replace(/\s+/g, " ");
+  let stripped = q;
+  while (LEGAL_FORM.test(stripped)) stripped = stripped.replace(LEGAL_FORM, "").trim();
+  const first = stripped.split(" ")[0];
+  const out = [q, stripped, stripped.replace(" ", "-"), stripped.replace(/-/g, " "), first.length >= 4 ? first : ""];
+  return [...new Set(out.filter((v) => v.length >= 3))];
+}
+
+export async function searchRegistryFuzzy(name: string): Promise<RegistryHit[]> {
+  for (const v of searchVariants(name).slice(0, 5)) {
+    const hits = await searchRegistry(v);
+    if (hits.length) return hits;
+  }
+  return [];
+}
+
 export function registryDetails(id: string): Promise<RegistryEntry> {
   if (!/^\d{1,10}$/.test(id)) return Promise.reject(new Error("ungültige ID"));
   return cached(`reg:d:${id}`, async () => {
@@ -119,6 +143,34 @@ const normName = (s: string) =>
     .replace(/[äÄ]/g, "ae").replace(/[öÖ]/g, "oe").replace(/[üÜ]/g, "ue").replace(/ß/g, "ss")
     .replace(/\b(ag|gmbh|se|eg|kgaa|s\.a\.|sa|mbh|co|kg|& co\.?)\b/g, "")
     .replace(/[^a-z0-9]+/g, " ").trim();
+
+export const ecbByLei = (lei: string): EcbEntity | undefined => ECB.find((e) => e.lei === lei);
+
+const COUNTRY: Record<string, string> = {
+  AT: "Österreich", LU: "Luxemburg", FR: "Frankreich", IT: "Italien", ES: "Spanien", NL: "Niederlande",
+  BE: "Belgien", IE: "Irland", PT: "Portugal", FI: "Finnland", GR: "Griechenland", SK: "Slowakei",
+  SI: "Slowenien", EE: "Estland", LV: "Lettland", LT: "Litauen", MT: "Malta", CY: "Zypern", HR: "Kroatien",
+  BG: "Bulgarien",
+};
+export const countryName = (c: string) => COUNTRY[c] ?? c;
+
+/** Banken und Finanzholdings des Euroraums außerhalb Deutschlands (für sie
+    gibt es keinen Eintrag im deutschen Register). Treffer-ID: "ecb:<LEI>". */
+export function searchEcb(name: string): RegistryHit[] {
+  const out: RegistryHit[] = [];
+  for (const v of searchVariants(name)) {
+    const n = normName(v);
+    if (n.length < 3) continue;
+    for (const e of ECB) {
+      if (e.country === "DE" || !normName(e.name).includes(n)) continue;
+      const holding = e.type === "FH" || e.type === "MFH";
+      out.push({ id: `ecb:${e.lei}`, name: e.name, gattung: `${holding ? "Finanzholding" : "CRR-Kreditinstitut"}, Sitz ${countryName(e.country)}` });
+      if (out.length >= 10) return out;
+    }
+    if (out.length) return out;
+  }
+  return out;
+}
 
 export function ecbLookup(name: string, lei?: string): EcbEntity | undefined {
   if (lei) {

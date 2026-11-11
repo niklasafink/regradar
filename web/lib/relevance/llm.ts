@@ -4,6 +4,8 @@
 // erreicht, liefern Aufrufe einen BudgetError; der Abgleich fällt dann auf
 // den Regel-Vorfilter bzw. „unsicher“ zurück. Server-only.
 
+import { Resend } from "resend";
+import { senderFields } from "../email";
 import { redis } from "../subscribers";
 
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
@@ -28,7 +30,49 @@ export const MODELS = {
 };
 
 export class BudgetError extends Error {
-  constructor() { super("Monatsbudget für den Einschlägigkeits-Abgleich erreicht"); }
+  constructor(message = "Monatsbudget für den Einschlägigkeits-Abgleich erreicht") { super(message); }
+}
+
+/** Der Anbieter nimmt gerade gar keine Anfragen an (Guthaben leer, Schlüssel
+    ungültig, Drosselung, Störung). Das betrifft alle Paare gleich und ist
+    kein Befund zum einzelnen Paar: Der Abgleich behandelt es wie einen
+    Budget-Stopp, zählt keinen Fehlversuch und speichert kein „Unklar“
+    (Befund 11.11.2026: leeres Guthaben schrieb 8.000 „Unklar“ fest). */
+export class ProviderDownError extends BudgetError {
+  constructor(public status: number, detail: string) { super(`Anbieter nicht verfügbar (HTTP ${status}): ${detail}`); }
+}
+
+/* Nach einem Ausfall wegen Guthaben oder Schlüssel fragt die Website den
+   Anbieter fünf Minuten lang nicht mehr an (ein Komplettlauf würde sonst
+   tausende Anfragen ins Leere schicken). */
+const DOWN_KEY = "relcost:down";
+const DOWN_TTL = 300;
+
+const DOWN_STATUS = new Set([401, 402, 403, 429, 500, 502, 503, 504]);
+
+/** Betreiber einmal am Tag benachrichtigen, wenn das Guthaben leer ist. */
+async function alertCredits(detail: string): Promise<void> {
+  try {
+    const day = new Date().toISOString().slice(0, 10);
+    const fresh = await redis().set(`relalert:credits:${day}`, 1, { nx: true, ex: 60 * 60 * 30 });
+    const apiKey = process.env.RESEND_API_KEY;
+    if (fresh !== "OK" || !apiKey) return;
+    const { error } = await new Resend(apiKey).emails.send({
+      ...senderFields(),
+      to: (process.env.NOTIFY_EMAIL ?? "niklas.fink@hotmail.de").toLowerCase(),
+      subject: "Einschlägigkeit: OpenRouter-Guthaben aufgebraucht",
+      text: `Der Einschlägigkeits-Abgleich auf regradar.de bekommt von OpenRouter keine Antworten mehr (HTTP 402).
+
+Meldung: ${detail}
+
+Bis das Guthaben aufgeladen ist, sehen Nutzer nur regelbasierte Ergebnisse; alles andere steht auf „Prüfung derzeit ausgelastet“. Nach dem Aufladen holt der Stundenlauf die offenen Prüfungen nach.
+
+Aufladen: https://openrouter.ai/settings/credits`,
+    });
+    if (error) await redis().del(`relalert:credits:${day}`).catch(() => 0);
+  } catch (e) {
+    console.error("credit alert failed:", e);
+  }
 }
 
 export function isoWeek(d = new Date()): string {
@@ -72,6 +116,8 @@ export async function chatJson<T>(opts: {
   const key = process.env.OPENROUTER_API_KEY?.trim();
   if (!key) throw new Error("OPENROUTER_API_KEY fehlt");
   if ((await spentThisMonth()) >= MONTHLY_BUDGET_USD) throw new BudgetError();
+  const down = await redis().get<string>(DOWN_KEY).catch(() => null);
+  if (down) throw new ProviderDownError(Number(String(down).split("|")[0]) || 402, String(down).split("|").slice(1).join("|"));
 
   const body: Record<string, unknown> = {
     model: opts.model,
@@ -113,6 +159,12 @@ export async function chatJson<T>(opts: {
       };
       const cost = Number(json.usage?.cost ?? 0);
       await book(cost);
+      if (!res.ok && DOWN_STATUS.has(res.status)) {
+        const detail = json.error?.message ?? `HTTP ${res.status}`;
+        if (res.status === 402) await alertCredits(detail);
+        if (res.status < 429) await redis().set(DOWN_KEY, `${res.status}|${detail.slice(0, 200)}`, { ex: DOWN_TTL }).catch(() => 0);
+        throw new ProviderDownError(res.status, detail);
+      }
       if (!res.ok || json.error) throw new Error(json.error?.message ?? `HTTP ${res.status}`);
       const content = (json.choices?.[0]?.message?.content ?? "").trim()
         .replace(/^```(?:json)?/, "").replace(/```$/, "").trim();
@@ -122,6 +174,8 @@ export async function chatJson<T>(opts: {
       const data = JSON.parse(start >= 0 ? content.slice(start, end + 1) : content) as T;
       return { data, costUsd: cost, model: json.model ?? opts.model };
     } catch (e) {
+      // Leeres Guthaben oder ungültiger Schlüssel: ein zweiter Versuch ändert nichts.
+      if (e instanceof ProviderDownError && e.status !== 429 && e.status < 500) throw e;
       lastErr = e;
     }
   }

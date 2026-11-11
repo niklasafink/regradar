@@ -39,7 +39,9 @@ export interface MatchResult {
   /** Profilmerkmale, auf die sich das Urteil stützt (für die Wiederverwendung). */
   merkmale?: string[];
   art?: Scope["art"];
-  stufe: "regel" | "ki" | "schiedsrichter" | "fallback" | "nutzer";
+  /** "vorlaeufig": Ersatzeinschätzung ohne KI (Anbieter nicht erreichbar oder
+      Budget erschöpft). Wird nie gespeichert; die nächste Prüfung ersetzt sie. */
+  stufe: "regel" | "ki" | "schiedsrichter" | "fallback" | "vorlaeufig" | "nutzer";
   /** Bei stufe "nutzer": die automatische Einschätzung, falls vorhanden. */
   auto?: { status: Status; grund: string };
   /** Bei stufe "nutzer": Begründung des Nutzers (optional). */
@@ -188,6 +190,12 @@ Normadressaten des Rechtsakts:
   "unsicher" mit dem passenden Merkmal, wenn es unbekannt ist.
 - Querschnittsregeln für alle Institute (z. B. DORA, Geldwäsche, Datenschutz, Hinweisgeberschutz) bleiben "ja".
 
+Bankaufsichtliche Merkmale (SI/LSI, SNCI, O-SII, G-SII, IRB, kleines Handelsbuch, bedeutend nach IVV) betreffen nur
+Kreditinstitute, große Wertpapierinstitute und Finanzholdings. Bei anderen Institutsarten gelten sie als nicht zutreffend und
+sind kein Grund für "unsicher". Bei status "unsicher" beginnt "grund" mit „Unklar, weil …“. Nenne im "grund" keine internen
+Bezeichnungen (Merkmals-IDs, Gruppennummern der Anforderungsanalyse) und begründe mit dem Rechtsakt der Meldung, nicht mit
+einem anderen.
+
 Antworte nur als JSON: {"status": "ja|teilweise|nein|unsicher", "teile": "…" | null, "grund": "EIN kurzer Satz mit dem
 entscheidenden Merkmal, beginnend mit „Einschlägig, weil …“ bzw. „Nicht einschlägig, weil …“ (z. B. „Einschlägig, weil
 CRR-Kreditinstitut mit Einlagengeschäft.“, „Nicht einschlägig, weil Bilanzsumme unter 1 Mrd. €.“), höchstens 140 Zeichen", "merkmale": ["IDs der Profilmerkmale, auf die du dich stützt"], "frage": {"merkmal": "id", "frage": "…"} | null}`;
@@ -302,10 +310,18 @@ Anforderungsanalyse und entscheide selbst. Befunde der Regelprüfung sind Fakten
   };
 }
 
+/* Bankaufsichtliche Merkmale ergeben nur bei Kreditinstituten, großen
+   Wertpapierinstituten und Finanzholdings eine sinnvolle Rückfrage (Befund
+   11.11.2026: Leasing-Institute und Versicherer wurden nach SNCI und IRB gefragt). */
+const BANK_ONLY = new Set(["si", "lsi", "lsi_hi", "snci", "bedeutend_ivv", "osii", "gsii", "irb", "handelsbuch_klein"]);
+const BANKLIKE = ["ki", "ki_crr", "bausparkasse", "foerderbank", "wpi_gross", "finanzholding"];
+const askable = (p: Profile, id: string) =>
+  featureValue(p, id) === null && (!BANK_ONLY.has(id) || !p.closed || BANKLIKE.some((b) => featureValue(p, b) === true));
+
 function fallbackQuestion(p: Profile, scope: Scope | undefined, rules: RuleResult) {
-  const fromScope = scope?.fragen.find((f) => featureValue(p, f.merkmal) === null);
+  const fromScope = scope?.fragen.find((f) => askable(p, f.merkmal));
   if (fromScope) return fromScope;
-  const id = rules.open[0]?.unknown[0];
+  const id = rules.open.flatMap((o) => o.unknown).find((x) => askable(p, x));
   return id ? { merkmal: id, frage: `Trifft auf Ihr Institut zu: ${featureLabel(id)}?` } : undefined;
 }
 
@@ -347,7 +363,7 @@ function scopeFeatures(scope: Scope): Set<string> {
 export function stillValid(
   r: MatchResult, changed: Set<string>, scope: Scope | undefined, isTrue: (id: string) => boolean,
 ): boolean {
-  if (r.stufe === "fallback") return false;
+  if (r.stufe === "fallback" || r.stufe === "vorlaeufig") return false;
   if (changed.size === 0) return true;
   if (r.stufe === "regel" && r.art === "keine_institute") return true;
   const used = new Set([
@@ -419,6 +435,53 @@ const pendingResult = (scope: Scope | undefined, frage?: { merkmal: string; frag
   at: new Date().toISOString(),
 });
 
+/* ---------- Ersatzeinschätzung ohne KI ---------- */
+
+/* Institutsart → Zielgruppen der Rahmenwerke (Framework.ents). */
+const ENT_FEATURES: Record<string, string[]> = {
+  CI: ["ki", "ki_crr", "bausparkasse", "foerderbank", "finanzholding"],
+  IF: ["wpi", "wpi_gross", "wpi_mittel", "wpi_klein"],
+  AM: ["kvg_ogaw", "kvg_aif", "kvg_registriert", "verwahrstelle"],
+  PI: ["zi", "egi"],
+  INS: ["versicherer_leben", "versicherer_kranken", "versicherer_schaden", "rueckversicherer", "pensionsfonds",
+    "pensionskasse", "versicherungsholding"],
+  OTH: ["fdi", "leasing_factoring", "casp", "krypto_emittent", "handelsplatz", "zentralverwahrer", "ccp", "datenbereitstellung"],
+};
+const ENT_LABEL: Record<string, string> = {
+  CI: "Kreditinstitute", IF: "Wertpapierinstitute", AM: "Kapitalverwaltungsgesellschaften", PI: "Zahlungs- und E-Geld-Institute",
+  INS: "Versicherer", OTH: "Leasing, Factoring und sonstige Institute",
+};
+const VORLAEUFIG = "Vorläufige Einschätzung, die genaue Prüfung folgt";
+
+/** Ist die KI nicht erreichbar (Guthaben, Budget, Störung), bekommt der
+    Nutzer trotzdem eine brauchbare Einschätzung: aus der Anforderungsanalyse,
+    wo es eine gibt, sonst aus Zielgruppe und Rechtsraum des Rahmenwerks.
+    Sie wird nicht gespeichert; sobald die KI wieder antwortet, ersetzt die
+    richtige Prüfung sie (Nutzerentscheidung 11.11.2026). */
+export function offlineEstimate(p: Profile, t: MatchTarget, scope: Scope | undefined, rules: RuleResult): MatchResult {
+  const base = { art: scope?.art, stufe: "vorlaeufig" as const, kostenUsd: 0, at: new Date().toISOString() };
+  const out = (status: Status, grund: string, extra: Partial<MatchResult> = {}): MatchResult =>
+    ({ ...base, status, grund: `${VORLAEUFIG}: ${grund}`, ...extra });
+  if (scope) {
+    if (rules.hits.length) {
+      const partial = scope.teilregeln.length > 0 || scope.schwellen.length > 0;
+      return out(partial ? "teilweise" : "ja", `Adressat, weil ${rules.hits[0].alle.map(featureLabel).join(" + ")}.`,
+        partial ? { teile: "Welche Teile gelten, klärt die genaue Prüfung." } : {});
+    }
+    const frage = fallbackQuestion(p, scope, rules);
+    return out("unsicher", "Die Angaben im Profil reichen ohne genaue Prüfung nicht aus.", { frage });
+  }
+  const { fw } = t;
+  if ((fw.jur === "DE" && featureValue(p, "taetig_de") === false) || (fw.jur === "LU" && (featureValue(p, "sitz_lu") === false || featureValue(p, "sitz_de") === true))) {
+    return out("nein", `Das Rahmenwerk „${fw.n.de}“ gilt nur in ${fw.jur === "DE" ? "Deutschland" : "Luxemburg"}.`);
+  }
+  const mine = Object.keys(ENT_FEATURES).filter((e) => ENT_FEATURES[e].some((f) => featureValue(p, f) === true));
+  if (!mine.length) return out("unsicher", "Die Institutsart ist im Profil nicht angegeben.");
+  const hit = mine.find((e) => fw.ents.includes(e));
+  if (hit) return out("ja", `Das Rahmenwerk „${fw.n.de}“ richtet sich an ${ENT_LABEL[hit]}.`);
+  return out("nein", `Das Rahmenwerk „${fw.n.de}“ richtet sich nur an ${fw.ents.map((e) => ENT_LABEL[e] ?? e).join(", ")}.`);
+}
+
 async function computeOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean; persist: boolean }): Promise<MatchResult> {
   const scope = t.u?.url ? scopeFor(t.u.url) : undefined;
   const rules = ruleCheck(p, scope);
@@ -429,7 +492,7 @@ async function computeOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean; p
     if (hit && !answered(p, hit)) return hit;
   } catch { /* ohne Cache weiter */ }
   const extra = (main?: { merkmal: string }) =>
-    (scope?.fragen ?? []).filter((f) => featureValue(p, f.merkmal) === null && f.merkmal !== main?.merkmal).slice(0, 3);
+    (scope?.fragen ?? []).filter((f) => askable(p, f.merkmal) && f.merkmal !== main?.merkmal).slice(0, 3);
   if (opts.noLlm) {
     const frage = fallbackQuestion(p, scope, rules);
     return { ...pendingResult(scope, frage), weitere: extra(frage) };
@@ -446,8 +509,12 @@ async function computeOne(p: Profile, t: MatchTarget, opts: { noLlm?: boolean; p
     result = await llmMatch(p, t, scope, rules);
   } catch (e) {
     console.error("relevance llm failed:", t.key, e instanceof Error ? e.message : e);
-    const frage = fallbackQuestion(p, scope, rules);
     const budget = e instanceof BudgetError;
+    if (budget) {
+      if (opts.persist) await redis().del(lockKey(p, t.key)).catch(() => 0);
+      return offlineEstimate(p, t, scope, rules);
+    }
+    const frage = fallbackQuestion(p, scope, rules);
     // API-Fehler zählen je Paar; nach MAX_FAILS bleibt es dauerhaft bei
     // „Unklar“ (der Nutzer kann den Status selbst setzen). Budget-Stopps
     // zählen nicht, sie lösen sich im Folgemonat.
@@ -510,7 +577,7 @@ export async function matchMany(
     for (let t = queue.shift(); t; t = queue.shift()) {
       const r = await computeOne(p, t, { noLlm: opts.noLlm || Date.now() > stopAt, persist });
       out[t.key] = r;
-      if (r.stufe !== "fallback") fresh[t.key] = r;
+      if (r.stufe !== "fallback" && r.stufe !== "vorlaeufig") fresh[t.key] = r;
     }
   };
   await Promise.all(Array.from({ length: Math.min(opts.concurrency ?? 4, todo.length) }, worker));

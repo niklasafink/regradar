@@ -11,7 +11,7 @@ import {
 } from "./catalog";
 import { chatJson, MODELS } from "./llm";
 import {
-  EEA, ecbLookup, gleifLookup, registryDetails, searchRegistry,
+  EEA, countryName, ecbByLei, ecbLookup, gleifLookup, registryDetails, searchRegistry,
   type EcbEntity, type GleifInfo, type License,
 } from "./registry";
 
@@ -117,14 +117,27 @@ export async function profileFromRegistry(registryId: string, origin: Profile["o
   for (const l of reg.licenses) for (const id of featuresFromLicense(l.text)) setFact(p, id, true, "register");
 
   const de = /Deutschland\s*$/.test(reg.address);
+  // Ein Institut hat genau einen Sitz: Die anderen Sitz-Merkmale stehen damit
+  // fest und werden nicht mehr als Rückfrage gestellt (Befund 11.11.2026:
+  // „Sitz in Luxemburg?“ war die häufigste Rückfrage bei deutschen Instituten).
   if (de) {
     setFact(p, "sitz_de", true, "register");
     setFact(p, "taetig_de", true, "register");
+    setFact(p, "sitz_lu", false, "abgeleitet");
+    setFact(p, "sitz_eu", false, "abgeleitet");
   } else if (reg.address) {
+    const lu = /Luxemburg|Luxembourg/i.test(reg.address);
     setFact(p, "sitz_de", false, "register");
     setFact(p, "taetig_de", true, "register");
-    if (/Luxemburg|Luxembourg/i.test(reg.address)) setFact(p, "sitz_lu", true, "register");
-    else setFact(p, "sitz_eu", true, "register");
+    // Ob ein Sitz außerhalb Luxemburgs im EWR liegt, sagt die Anschrift
+    // nicht sicher (Drittstaaten-Zweigstellen): nur der Luxemburg-Fall steht fest.
+    if (lu) {
+      setFact(p, "sitz_lu", true, "register");
+      setFact(p, "sitz_eu", false, "abgeleitet");
+    } else {
+      setFact(p, "sitz_eu", true, "register");
+      setFact(p, "sitz_lu", false, "abgeleitet");
+    }
   }
 
   const gleif: GleifInfo | null = await gleifLookup(reg.name).catch(() => null);
@@ -161,6 +174,47 @@ export async function profileFromRegistry(registryId: string, origin: Profile["o
     setFact(p, "si", false, "abgeleitet");
   }
 
+  applyDerived(p);
+  return p;
+}
+
+/** Profil einer Bank oder Finanzholding aus dem übrigen Euroraum: Art, Sitz
+    und Aufsichtsstatus aus der EZB-Liste, Gruppe aus GLEIF. Erlaubnisse
+    kennt die Liste nicht, das Profil bleibt deshalb offen (closed=false). */
+export async function profileFromEcb(lei: string): Promise<Profile> {
+  const e = ecbByLei(lei);
+  if (!e) throw new Error("Institut nicht in der EZB-Liste");
+  const p = emptyProfile(e.name, "register");
+  const holding = e.type === "FH" || e.type === "MFH";
+  p.lei = e.lei;
+  p.gattung = [holding ? "Finanzholding" : "CRR-Kreditinstitut"];
+  p.address = `Sitz: ${countryName(e.country)}`;
+  p.ecb = { type: e.type, si: e.si, hi: e.hi, group: e.group };
+  if (holding) {
+    setFact(p, "finanzholding", true, "ezb");
+    setFact(p, "gruppe_uebergeordnet", true, "ezb");
+  } else {
+    setFact(p, "ki_crr", true, "ezb");
+    setFact(p, "ki", true, "ezb");
+  }
+  setFact(p, "sitz_de", e.country === "DE", "ezb");
+  setFact(p, "sitz_lu", e.country === "LU", "ezb");
+  setFact(p, "sitz_eu", e.country !== "DE" && e.country !== "LU", "ezb");
+  if (e.country === "DE") setFact(p, "taetig_de", true, "ezb");
+  setFact(p, "si", e.si, "ezb");
+  setFact(p, "lsi", !e.si, "ezb");
+  setFact(p, "lsi_hi", e.hi, "ezb");
+  if (e.si) {
+    setFact(p, "snci", false, "abgeleitet");
+    setFact(p, "bedeutend_ivv", true, "abgeleitet");
+  }
+  const gleif = await gleifLookup(e.name).catch(() => null);
+  if (gleif) {
+    p.group = { parent: gleif.directParent?.name, ultimate: gleif.ultimateParent?.name, ultimateCountry: gleif.ultimateParent?.country };
+    if (gleif.directParent) setFact(p, "gruppe_nachgeordnet", true, "gleif");
+    const uc = gleif.ultimateParent?.country;
+    if (uc) setFact(p, "drittstaatengruppe", !EEA.has(uc), "gleif");
+  }
   applyDerived(p);
   return p;
 }
@@ -216,6 +270,9 @@ export function questionIds(p: Profile): string[] {
   else if (f("zi") || f("egi")) ids = Q_PAY;
   else if (f("leasing_factoring")) ids = Q_LEASING;
   else ids = Q_DEFAULT;
+  // Sitz außerhalb Deutschlands oder unbekannt: Ob das Institut in Deutschland
+  // tätig ist, entscheidet über alle nationalen Vorgaben und steht vorn.
+  if (p.facts.sitz_de !== true) ids = ["taetig_de", ...ids];
   // Merkmale aus Registern stehen fest und werden nicht erfragt.
   return ids.filter((id) => !["register", "ezb", "abgeleitet"].includes(p.sources[id] ?? ""));
 }
@@ -289,7 +346,7 @@ Rechtssubjekt, nicht für den Konzern oder Verbund.`;
 
 /** Profil-Entwurf: Registerdaten plus optionale Kurzrecherche. */
 export async function draftProfile(registryId: string, withResearch = true): Promise<{ profile: Profile; questions: string[]; costUsd: number }> {
-  const p = await profileFromRegistry(registryId);
+  const p = registryId.startsWith("ecb:") ? await profileFromEcb(registryId.slice(4)) : await profileFromRegistry(registryId);
   let costUsd = 0;
   if (withResearch) {
     try { costUsd = await research(p); } catch (e) { console.error("research failed:", e); }
@@ -301,6 +358,12 @@ export async function draftProfile(registryId: string, withResearch = true): Pro
 export function manualProfile(name: string, facts: Record<string, boolean>): Profile {
   const p = emptyProfile(name, "manuell");
   for (const [id, v] of Object.entries(facts)) setFact(p, id, v, "nutzer", true);
+  // Sitz ist eine Einfachauswahl: Die anderen Sitz-Merkmale stehen damit fest.
+  const seat = ["sitz_de", "sitz_lu", "sitz_eu"].find((id) => p.facts[id] === true);
+  if (seat) {
+    for (const id of ["sitz_de", "sitz_lu", "sitz_eu"]) if (id !== seat) setFact(p, id, false, "abgeleitet", true);
+    if (seat === "sitz_de") setFact(p, "taetig_de", true, "abgeleitet");
+  }
   p.closed = Object.keys(facts).some((id) => featureById(id)?.g === "art");
   applyDerived(p);
   return p;
