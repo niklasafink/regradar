@@ -9,7 +9,9 @@ const ORDER: Status[] = ["ja", "teilweise", "nein", "unsicher"];
 
 /** Button „Export“ mit kleinem Dialog: Status wählen, Excel laden. Nur für
     angemeldete Nutzer; Gäste sehen den Hinweis zur Anmeldung. */
-export function ExportButton({ me, className = "" }: { me: Me | null; className?: string }) {
+export interface ExportScope { art: "updates" | "praxis" | "alle"; future: boolean; inst: string | null }
+
+export function ExportButton({ me, className = "", scope }: { me: Me | null; className?: string; scope?: ExportScope }) {
   const [open, setOpen] = useState(false);
   const [pick, setPick] = useState<Set<Status>>(new Set(ORDER));
 
@@ -28,13 +30,23 @@ export function ExportButton({ me, className = "" }: { me: Me | null; className?
   };
   const download = () => {
     const status = ORDER.filter((s) => pick.has(s)).join(",");
-    track("relevance_export", { status });
-    window.location.href = `/api/relevance/export?status=${status}`;
+    track("relevance_export", { status, art: scope?.art ?? "updates", future: String(!!scope?.future) });
+    const q = new URLSearchParams({ status });
+    if (scope?.art && scope.art !== "updates") q.set("art", scope.art);
+    if (scope?.future) q.set("future", "1");
+    if (scope?.inst) q.set("inst", scope.inst);
+    window.location.href = `/api/relevance/export?${q}`;
     setOpen(false);
   };
 
   const btn = "rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white hover:bg-slate-700 disabled:opacity-40";
   const ghost = "rounded-full px-3 py-1.5 text-xs font-medium text-slate-600 hover:text-slate-900";
+  const praxisOnly = scope?.art === "praxis";
+  const scopeText = [
+    praxisOnly ? "nur Aufsichtspraxis" : scope?.art === "alle" ? "Updates und Aufsichtspraxis" : "",
+    scope?.future ? "nur zukünftige Normen, nach Termin sortiert" : "",
+    scope?.inst ? "gewählter Institutstyp" : "",
+  ].filter(Boolean).join(", ");
   const loggedIn = !!me?.loggedIn;
   const withProfile = loggedIn && me!.profiles.length > 0;
 
@@ -73,7 +85,8 @@ export function ExportButton({ me, className = "" }: { me: Me | null; className?
             ) : (
               <>
                 <p className="mt-1 text-xs text-slate-500">Excel für {activeName(me)}</p>
-                <fieldset className="mt-4 space-y-2">
+                {scopeText && <p className="mt-2 text-xs text-slate-500">Mit Ihren Filtern: {scopeText}.</p>}
+                <fieldset className={`mt-4 space-y-2 ${praxisOnly ? "hidden" : ""}`}>
                   <legend className="sr-only">Einschlägigkeit</legend>
                   {ORDER.map((s) => (
                     <label key={s} className="flex cursor-pointer items-center gap-2.5 text-sm text-slate-800">
@@ -84,7 +97,7 @@ export function ExportButton({ me, className = "" }: { me: Me | null; className?
                 </fieldset>
                 <div className="mt-5 flex justify-end gap-2">
                   <button type="button" className={ghost} onClick={() => setOpen(false)}>Abbrechen</button>
-                  <button type="button" className={btn} disabled={!pick.size} onClick={download}>Herunterladen</button>
+                  <button type="button" className={btn} disabled={!pick.size && !praxisOnly} onClick={download}>Herunterladen</button>
                 </div>
               </>
             )}

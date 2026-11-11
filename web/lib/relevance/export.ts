@@ -1,5 +1,6 @@
-import { TOPICS } from "../base";
-import { dt, FRAMEWORKS } from "../logic";
+import { PRAXIS_CAT_LABELS, TOPICS } from "../base";
+import { daysUntil, dt, FRAMEWORKS } from "../logic";
+import { PRAXIS } from "../live";
 import { STATUS_LABEL, type MatchResult } from "./match";
 import type { Profile } from "./profile";
 import type { Framework } from "../data";
@@ -30,7 +31,31 @@ const date = (d?: string) => (d && /^\d{1,2}\.\d{1,2}\.\d{4}$/.test(d) ? dt(d) :
 /** `only`: nur diese Status exportieren (Filter auf „Alle Updates“). Ohne
     Filter alles, auch noch nicht Geprüftes. Rahmenwerk-Zeilen bleiben als
     Gliederung stehen, wenn mindestens ein Update darunter passt. */
-export function relevanceWorkbook(p: Profile, results: Record<string, MatchResult>, only?: Set<Col>): Uint8Array {
+export interface ExportScope {
+  /** Welche Arten: Updates (Standard), nur Aufsichtspraxis oder beides */
+  art?: "updates" | "praxis" | "alle";
+  /** Nur Updates mit künftigem Anwendungsbeginn oder künftiger Frist */
+  future?: boolean;
+  /** Nur Rahmenwerke dieses Institutstyps (Provider-ID wie auf „Alle Updates“) */
+  inst?: string;
+}
+
+/** Nächster anstehender Termin eines Updates (Anwendungsbeginn oder Frist). */
+function upcoming(u: UpdatePage["u"]): { date: string; kind: string } | null {
+  const c: { date: string; kind: string }[] = [];
+  if (u.eff && daysUntil(u.eff) >= 0) c.push({ date: u.eff, kind: "Gilt ab" });
+  if (u.deadline && daysUntil(u.deadline) >= 0) c.push({ date: u.deadline, kind: "Frist" });
+  c.sort((a, b) => dt(a.date).getTime() - dt(b.date).getTime());
+  return c[0] ?? null;
+}
+
+export function relevanceWorkbook(p: Profile, results: Record<string, MatchResult>, only?: Set<Col>, scope: ExportScope = {}): Uint8Array {
+  const art = scope.art ?? "updates";
+  const wantUpdates = art !== "praxis";
+  const wantPraxis = art !== "updates" && !scope.future;
+  const scoped = !!(scope.future || scope.inst);
+  const inScope = (page: UpdatePage) =>
+    (!scope.inst || page.fw.ents.includes(scope.inst)) && (!scope.future || !!upcoming(page.u));
   const keep = (r?: MatchResult) => !only || only.has(colOf(r));
   const base = (process.env.APP_URL ?? "https://www.regradar.de").replace(/\/$/, "");
   const updatesByFw = new Map<string, UpdatePage[]>();
@@ -71,8 +96,8 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
       count.fws[colOf(fr)]++;
       const pages = updatesByFw.get(f.id) ?? [];
       for (const page of pages) count.ups[colOf(results[`u:${page.slug}`])]++;
-      const shownPages = pages.filter((page) => keep(results[`u:${page.slug}`]));
-      if (!keep(fr) && !shownPages.length) continue;
+      const shownPages = pages.filter((page) => inScope(page) && keep(results[`u:${page.slug}`]));
+      if (scoped ? !shownPages.length : !keep(fr) && !shownPages.length) continue;
       const parent = f.parent ? FRAMEWORKS.find((x) => x.id === f.parent) : undefined;
       const fwName = parent ? `${parent.n.de} › ${f.n.de}` : f.n.de;
       rows.push([
@@ -117,7 +142,11 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
       [],
       [{ v: only
         ? `Exportiert: ${[...only].map((c) => (c === "offen" ? NOT_CHECKED : STATUS_LABEL[c])).join(", ")}. Die Übersicht zählt alle Einträge.`
-        : "Je Themengebiet ein eigenes Blatt: Rahmenwerk (grau hinterlegt), darunter seine Updates, neueste zuerst.", s: S.muted }],
+        : scope.future && wantUpdates
+          ? "Ein Blatt „Zukünftige Normen“, nach Termin aufsteigend (Anwendungsbeginn oder Frist)."
+          : !wantUpdates
+            ? "Ein Blatt „Aufsichtspraxis“, neueste zuerst. Die Zählung unten bezieht sich auf die Updates."
+            : "Je Themengebiet ein eigenes Blatt: Rahmenwerk (grau hinterlegt), darunter seine Updates, neueste zuerst.", s: S.muted }],
       ["Themengebiet", "Rahmenwerke", "davon einschlägig", "Updates", "Einschlägig", "Teilweise", "Nicht einschlägig", "Unklar", NOT_CHECKED]
         .map((v) => ({ v, s: S.header })),
       ...summary.map((c) => line(c.name, c.fws, c.ups)),
@@ -127,5 +156,58 @@ export function relevanceWorkbook(p: Profile, results: Record<string, MatchResul
     ],
   };
 
-  return buildXlsx([overview, ...topicSheets], { title: `Einschlägigkeit ${p.name}` });
+  // Zukünftige Normen: eine flache Liste nach Termin, statt Gliederung nach Themengebiet
+  const sheets: Sheet[] = [];
+  if (wantUpdates && scope.future) {
+    const rows: Cell[][] = [
+      [{ v: "Zukünftige Normen", s: S.title }],
+      [{ v: `${p.name} · Stand ${today()} · nach Termin aufsteigend`, s: S.muted }],
+      [],
+      ["Termin", "Terminart", "Rahmenwerk", "Rechtsakt", "Meldung", "Art", "Einschlägigkeit", "Begründung", "Frist", "Gilt ab", "Veröffentlicht", "Quelle", "Regulatory Radar"]
+        .map((h) => ({ v: h, s: S.header })),
+    ];
+    const items = UPDATE_PAGES
+      .filter((pg) => inScope(pg) && keep(results[`u:${pg.slug}`]))
+      .map((pg) => ({ pg, up: upcoming(pg.u)! }))
+      .sort((a, b) => dt(a.up.date).getTime() - dt(b.up.date).getTime()
+        || RANK[colOf(results[`u:${a.pg.slug}`])] - RANK[colOf(results[`u:${b.pg.slug}`])]);
+    for (const { pg, up } of items) {
+      const r = results[`u:${pg.slug}`];
+      const u = pg.u;
+      rows.push([
+        { date: date(up.date) }, up.kind, pg.fw.n.de, pg.fw.ref, { v: u.ti.de, s: S.wrap }, u.t.de, labelOf(r), { v: reasonOf(r), s: S.wrap },
+        { date: date(u.deadline) }, { date: date(u.eff) }, { date: date(u.d) },
+        u.url ? { link: u.url, text: "Quelle" } : "",
+        { link: `${base}/u/${pg.slug}`, text: "Ansehen" },
+      ]);
+    }
+    sheets.push({ name: "Zukünftige Normen", rows, widths: [12, 12, 30, 22, 60, 18, 20, 60, 12, 12, 14, 12, 16], headerRow: 4 });
+  } else if (wantUpdates) {
+    sheets.push(...topicSheets);
+  }
+  if (wantPraxis) {
+    const rows: Cell[][] = [
+      [{ v: "Aufsichtspraxis", s: S.title }],
+      [{ v: `Stand ${today()} · neueste zuerst · Praxis-Meldungen gehören keinem Institutstyp an und werden nicht nach Einschlägigkeit bewertet`, s: S.muted }],
+      [],
+      ["Datum", "Art", "Meldung", "Behörde", "Kurzbeschreibung", "Quelle"].map((h) => ({ v: h, s: S.header })),
+    ];
+    for (const i of [...PRAXIS].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime())) {
+      rows.push([
+        { date: date(i.d) }, PRAXIS_CAT_LABELS[i.cat].de, { v: i.ti, s: S.wrap }, i.auth, { v: i.sum ?? "", s: S.wrap },
+        i.url ? { link: i.url, text: i.src || "Quelle" } : "",
+      ]);
+    }
+    sheets.push({ name: "Aufsichtspraxis", rows, widths: [12, 14, 60, 14, 70, 22], headerRow: 4 });
+  }
+
+  const scopeNote = [
+    art === "praxis" ? "Nur Aufsichtspraxis" : art === "alle" ? "Updates und Aufsichtspraxis" : "",
+    scope.future ? "nur zukünftige Normen" : "",
+    scope.inst ? `Institutstyp ${scope.inst}` : "",
+  ].filter(Boolean).join(", ");
+  if (scopeNote) overview.rows.splice(5, 0, [{ v: `Filter von „Alle Updates“: ${scopeNote}.`, s: S.muted }]);
+  overview.headerRow = (overview.headerRow ?? 6) + (scopeNote ? 1 : 0);
+
+  return buildXlsx([overview, ...sheets], { title: `Einschlägigkeit ${p.name}` });
 }
