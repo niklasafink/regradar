@@ -183,39 +183,108 @@ def _targets() -> dict:
 
 
 # Standard seit 11.11.2026 (Nutzerentscheidung): Die Analyse läuft über das
-# Claude-Abo (claude -p), nicht über die OpenRouter-API. Mehrere Meldungen
-# gehen in einen Aufruf. SCOPE_BACKEND=openrouter schaltet auf die API zurück.
-CLAUDE_BATCH = 10
-CLAUDE_WORKERS = int(os.environ.get("SCOPE_CLAUDE_WORKERS", "4"))
-CLAUDE_TIMEOUT = 900
+# Claude-Abo (claude -p), nicht über die OpenRouter-API.
+# SCOPE_BACKEND=openrouter schaltet auf die API zurück.
+#
+# Aufbau des Laufs (Nutzervorgaben 11.11.2026):
+# - Kleine Pakete (5 Meldungen), viele parallel. Jedes Paket wird gespeichert,
+#   sobald es fertig ist; ein hängendes Paket hält kein anderes auf und bricht
+#   nach CLAUDE_TIMEOUT ab. Was fehlt, nimmt der nächste Lauf wieder auf.
+# - Harter Token-Deckel: höchstens SCOPE_TOKEN_CAP Tokens in 7 Tagen
+#   (Standard 1 Mio.). Gezählt wird, was der Aufruf meldet: Eingabe, Ausgabe
+#   und neu angelegter Cache voll, aus dem Cache gelesene Tokens zu 10 %.
+# - Ohne Nachdenken (MAX_THINKING_TOKENS=0), ohne Werkzeuge, eigener
+#   System-Prompt: Mit Nachdenken brauchte ein Paket rund 12.000 statt
+#   1.500 Ausgabe-Tokens und 156 statt etwa 30 Sekunden.
+CLAUDE_BATCH = int(os.environ.get("SCOPE_CLAUDE_BATCH", "5"))
+CLAUDE_WORKERS = int(os.environ.get("SCOPE_CLAUDE_WORKERS", "10"))
+CLAUDE_TIMEOUT = 240
+TOKEN_CAP = int(os.environ.get("SCOPE_TOKEN_CAP", "1000000"))
+# Reserve je laufendem Paket, damit der Deckel auch bei parallelen Paketen hält.
+TOKENS_PER_BATCH_EST = 6000
+
+OUTPUT_RULES = (
+    "\n\nAUSGABE: Du bekommst mehrere Meldungen als nummerierte Liste. Analysiere jede für sich. Antworte "
+    'ausschließlich mit EINEM JSON-Objekt {"1": {…}, "2": {…}} mit einem Eintrag je Nummer, kompakt in einer Zeile ohne '
+    'Einrückung und ohne Code-Zaun. Halte dich sehr kurz: "hinweis" weglassen, außer er ist für die Abgrenzung nötig '
+    '(höchstens 8 Wörter); "kurz" und "handlung" je ein Satz mit höchstens 20 Wörtern; "normen" höchstens 3; '
+    '"belege": []; "fragen" höchstens 2; leere Listen als [].')
 
 
-def _chat_claude(system: str, users: List[str]) -> List[Optional[dict]]:
-    """Ein Aufruf für mehrere Meldungen; Ergebnis in der Reihenfolge der Eingabe."""
+def _ensure_token_table(conn: sqlite3.Connection) -> None:
+    conn.execute("CREATE TABLE IF NOT EXISTS llm_scope_tokens (at TEXT NOT NULL, tokens INTEGER NOT NULL)")
+    conn.commit()
+
+
+def _tokens_used(conn: sqlite3.Connection) -> int:
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=7)).isoformat()
+    row = conn.execute("SELECT COALESCE(SUM(tokens),0) FROM llm_scope_tokens WHERE at >= ?", (since,)).fetchone()
+    return int(row[0] or 0)
+
+
+def _chat_claude(system: str, users: List[str]):
+    """Ein Aufruf für mehrere Meldungen. Liefert (Ergebnisse in Eingabe-
+    Reihenfolge, verbrauchte Tokens)."""
     import shutil
     import subprocess
     exe = shutil.which("claude") or "/usr/local/bin/claude"
-    prompt = (system + "\n\nDu bekommst mehrere Meldungen als nummerierte Liste. Analysiere jede für sich nach den Regeln "
-              "oben. Nutze keine Werkzeuge. Antworte ausschließlich mit einem JSON-Objekt der Form "
-              '{"1": {…Analyse…}, "2": {…}, …} mit einem Eintrag je Nummer.\n\nMELDUNGEN:\n'
-              + "\n".join("{}: {}".format(i + 1, u) for i, u in enumerate(users)))
+    prompt = "MELDUNGEN:\n" + "\n".join("{}: {}".format(i + 1, u) for i, u in enumerate(users))
     env = dict(os.environ)
     # Ohne ANTHROPIC_*-Variablen greift der claude.ai-Login (Abo-Kontingent).
     for k in ("ANTHROPIC_BASE_URL", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_API_KEY"):
         env.pop(k, None)
     env["PATH"] = "/usr/local/bin:/usr/bin:/bin:" + env.get("PATH", "")
-    cmd = [exe, "-p", prompt, "--output-format", "json", "--max-turns", "2", "--no-session-persistence",
+    env["MAX_THINKING_TOKENS"] = "0"
+    # Harte Obergrenze je Paket: Zwei Ausreißer mit rund 140.000 Tokens haben
+    # am 11.11.2026 ein Viertel des Deckels verbraucht. Ein abgeschnittenes
+    # Paket zählt als Fehler und wird im nächsten Lauf neu versucht.
+    env["CLAUDE_CODE_MAX_OUTPUT_TOKENS"] = str(600 * len(users) + 500)
+    cmd = [exe, "-p", prompt, "--system-prompt", system + OUTPUT_RULES, "--tools", "", "--output-format", "json",
+           "--max-turns", "1", "--no-session-persistence",
            "--model", os.environ.get("SCOPE_CLAUDE_MODEL", "sonnet"),
            "--setting-sources", "project,local", "--disable-slash-commands"]
-    p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=CLAUDE_TIMEOUT, env=env)
+    p = subprocess.run(cmd, cwd="/tmp", capture_output=True, text=True, timeout=CLAUDE_TIMEOUT, env=env)
     data = json.loads(p.stdout.strip().splitlines()[-1])
+    u = data.get("usage") or {}
+    tokens = int(u.get("input_tokens") or 0) + int(u.get("output_tokens") or 0) \
+        + int(u.get("cache_creation_input_tokens") or 0) + int(u.get("cache_read_input_tokens") or 0) // 10
     if p.returncode != 0 or data.get("is_error"):
-        raise ValueError("claude -p: {}".format(str(data.get("result") or p.stderr)[:300]))
+        return [None] * len(users), tokens
     text = str(data.get("result") or "")
-    parsed = json.loads(text[text.find("{"):text.rfind("}") + 1])
-    return [parsed.get(str(i + 1)) if isinstance(parsed.get(str(i + 1)), dict) else None for i in range(len(users))]
+    try:
+        parsed = json.loads(text[text.find("{"):text.rfind("}") + 1])
+    except ValueError:
+        return [None] * len(users), tokens
+    return [parsed.get(str(i + 1)) if isinstance(parsed.get(str(i + 1)), dict) else None
+            for i in range(len(users))], tokens
 
 
+def _lock_held(lock: str) -> bool:
+    """Sperre gilt nur, solange der eingetragene Prozess lebt (nach einem
+    Neustart des Rechners ist sie damit sofort frei)."""
+    try:
+        pid = int(open(lock).read().strip() or 0)
+        os.kill(pid, 0)
+        return pid != os.getpid()
+    except (OSError, ValueError):
+        return False
+
+
+def _refresh_targets() -> None:
+    """Zielliste neu erzeugen (best effort: fehlt Node, bleibt die alte Liste)."""
+    import subprocess
+    try:
+        subprocess.run(["npx", "tsx", "scripts/scope-targets.ts", TARGETS_PATH], cwd=os.path.join(ROOT, "web"),
+                       check=True, capture_output=True, timeout=180)
+    except (OSError, subprocess.SubprocessError) as e:
+        print("scope: Zielliste nicht aktualisiert ({})".format(e))
+
+
+def _targets() -> dict:
+    try:
+        return json.load(open(TARGETS_PATH, encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"updates": [], "frameworks": []}
 def _live_items() -> List[dict]:
     """Alle Prüfziele: Updates aus live.json, kuratierte Einträge aus data.ts
     und die Rahmenwerke selbst (Schlüssel "f:<id>" statt URL)."""
@@ -249,7 +318,15 @@ def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[in
     if limit:
         items = items[:limit]
     cached = {r[0] for r in conn.execute("SELECT url FROM llm_scope WHERE fmt=?", (FORMAT,))}
-    todo = [u for u in items if u["url"] not in cached]
+    older = {r[0] for r in conn.execute("SELECT url FROM llm_scope WHERE fmt<?", (FORMAT,))}
+    # Erst Ziele ganz ohne Analyse (sie haben auf der Website nur die
+    # vorläufige Einschätzung), danach ältere Fassungen, soweit der
+    # Token-Deckel reicht.
+    # Rahmenwerke zuerst: Ihre Analyse gilt auf der Website auch für jedes
+    # Update ohne eigene Analyse (scopes.ts, scopeForTarget).
+    fresh = [u for u in items if u["url"] not in cached and u["url"] not in older]
+    todo = [u for u in fresh if u.get("framework")] + [u for u in fresh if not u.get("framework")] \
+        + [u for u in items if u["url"] not in cached and u["url"] in older]
     use_claude = os.environ.get("SCOPE_BACKEND", "claude") != "openrouter"
     key = "abo" if use_claude else api_key()
     stats = {"total": len(items), "neu": 0, "fehler": 0, "kosten_usd": 0.0, "gebremst": False}
@@ -267,9 +344,20 @@ def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[in
         model = os.environ.get("OPENROUTER_SCOPE_MODEL", DEFAULT_MODEL)
         from .db import utcnow
 
+        def slim(f):
+            return {k: f[k] for k in ("name", "ref", "jur", "ents") if f and f.get(k)} if f else None
+
         def payload(u):
             fw = fws.get(u["fw"], {"id": u["fw"]})
             parent = fws.get(fw.get("parent") or "")
+            if use_claude:
+                # Schlanke Eingabe (Token-Deckel): Stammdaten des Rahmenwerks ohne Fließtext.
+                return json.dumps({
+                    "meldung": {"titel": u["ti"]["de"], "typ": u["t"]["de"], "quelle": u["src"], "datum": u["d"],
+                                "frist": u.get("deadline"), "zusammenfassung": u["s"]["de"]},
+                    "rahmenwerk": slim(fw), **({"eltern_rahmenwerk": slim(parent)} if parent else {}),
+                    **({"hinweis": FW_HINT} if u.get("framework") else {}),
+                }, ensure_ascii=False)
             return json.dumps({
                 "meldung": {"titel": u["ti"]["de"], "typ": u["t"]["de"], "quelle": u["src"],
                             "datum": u["d"], "frist": u.get("deadline"), "referenz": u.get("refnum"),
@@ -289,41 +377,63 @@ def analyze(conn: sqlite3.Connection, backfill: bool = False, limit: Optional[in
             conn.commit()
             stats["neu"] += 1
 
-        def work_batch(batch):
-            for attempt in (1, 2):
-                try:
-                    raws = _chat_claude(system, [payload(u) for u in batch])
-                    return [(u["url"], _clean(r, ids) if r else None) for u, r in zip(batch, raws)]
-                except (ValueError, KeyError, OSError, IndexError) as e:
-                    err = e
-                except Exception as e:  # Timeout u. a.
-                    err = e
-            print("Scope-Analyse (Claude) fehlgeschlagen: {} Meldungen ({})".format(len(batch), str(err)[:200]))
-            return [(u["url"], None) for u in batch]
-
-        # Nur ein Lauf zur Zeit (der Stundenlauf startet sonst einen zweiten,
-        # während ein großer Nachlauf noch arbeitet).
+        # Nur ein Lauf zur Zeit (Stundenlauf und Nachlauf-Agent).
         lock = os.path.join(ROOT, "scraper", "data", ".scope_claude.lock")
-        if use_claude and os.path.exists(lock) and dt.datetime.now().timestamp() - os.path.getmtime(lock) < 4 * 3600:
+        if use_claude and _lock_held(lock):
             print("scope: anderer Lauf aktiv, überspringe")
             todo = []
             use_claude = False
         if use_claude:
-            open(lock, "w").close()
-            batches = [todo[i:i + CLAUDE_BATCH] for i in range(0, len(todo), CLAUDE_BATCH)]
+            from concurrent.futures import FIRST_COMPLETED, wait
+            with open(lock, "w") as f:
+                f.write(str(os.getpid()))
+            _ensure_token_table(conn)
+            used = _tokens_used(conn)
             claude_model = "claude:" + os.environ.get("SCOPE_CLAUDE_MODEL", "sonnet")
-            with ThreadPoolExecutor(max_workers=CLAUDE_WORKERS) as pool:
-                for done, res in enumerate(pool.map(work_batch, batches), 1):
-                    for url, scope in res:
-                        save(url, scope, 0.0, claude_model)
-                    if done % 5 == 0:
-                        print("scope: {}/{} Pakete".format(done, len(batches)), flush=True)
-                        os.utime(lock)
-                        write_export(conn)
+            batches = [todo[i:i + CLAUDE_BATCH] for i in range(0, len(todo), CLAUDE_BATCH)]
+            stats["tokens"] = 0
+            pool = ThreadPoolExecutor(max_workers=CLAUDE_WORKERS)
+            running = {}
+            nxt = 0
+            done_n = 0
             try:
-                os.remove(lock)
-            except OSError:
-                pass
+                while nxt < len(batches) or running:
+                    # Neue Pakete nur, solange der Deckel auch mit allen
+                    # laufenden Paketen sicher hält.
+                    while nxt < len(batches) and len(running) < CLAUDE_WORKERS:
+                        if used + (len(running) + 1) * TOKENS_PER_BATCH_EST > TOKEN_CAP:
+                            stats["gebremst"] = True
+                            nxt = len(batches)
+                            break
+                        b = batches[nxt]
+                        running[pool.submit(_chat_claude, system, [payload(u) for u in b])] = b
+                        nxt += 1
+                    if not running:
+                        break
+                    finished, _ = wait(list(running), return_when=FIRST_COMPLETED)
+                    for fut in finished:
+                        b = running.pop(fut)
+                        done_n += 1
+                        try:
+                            raws, tokens = fut.result()
+                        except Exception as e:  # Timeout, kaputte Ausgabe
+                            print("scope: Paket fehlgeschlagen ({} Meldungen): {}".format(len(b), str(e)[:160]), flush=True)
+                            raws, tokens = [None] * len(b), TOKENS_PER_BATCH_EST
+                        used += tokens
+                        stats["tokens"] += tokens
+                        conn.execute("INSERT INTO llm_scope_tokens VALUES (?,?)", (utcnow(), tokens))
+                        for u, r in zip(b, raws):
+                            save(u["url"], _clean(r, ids) if r else None, 0.0, claude_model)
+                        if done_n % 10 == 0:
+                            print("scope: {}/{} Pakete, {} Tokens (7 Tage: {})".format(
+                                done_n, len(batches), stats["tokens"], used), flush=True)
+                            write_export(conn)
+            finally:
+                pool.shutdown(wait=False, cancel_futures=True)
+                try:
+                    os.remove(lock)
+                except OSError:
+                    pass
             todo = []
 
         def work(u):
