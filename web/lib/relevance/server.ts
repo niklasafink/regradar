@@ -54,15 +54,17 @@ export async function saveAndReconcile(email: string, p: Profile, makeActive = t
 /** Komplettlauf: alle noch nicht gespeicherten Ziele eines Profils prüfen,
     bis die Zeit um ist. Bereits gespeicherte Paare kosten nichts. Eine
     Sperre je Profil verhindert parallele Läufe. */
-export async function prefillProfile(p: Profile, deadlineMs: number): Promise<{ total: number; stored: number; skipped?: boolean }> {
-  const keys = allTargetKeys();
+export async function prefillProfile(p: Profile, deadlineMs: number, only?: string[]): Promise<{ total: number; stored: number; skipped?: boolean }> {
+  const keys = only ?? allTargetKeys();
   const lock = `rlock:prefill:${p.id}`;
   const got = await redis().set(lock, 1, { nx: true, ex: Math.ceil(deadlineMs / 1000) + 60 }).catch(() => "OK");
   if (got !== "OK") return { total: keys.length, stored: await storedCount(p, keys), skipped: true };
   try {
     const stopAt = Date.now() + deadlineMs;
-    for (let i = 0; i < keys.length && Date.now() < stopAt; i += 60) {
-      const targets = keys.slice(i, i + 60).map(resolveTarget).filter((t) => t !== null);
+    // Kleine Pakete: Ergebnisse landen nach jedem Paket im Profil-Speicher,
+    // ein Abbruch durch das Zeitlimit kostet höchstens ein Paket.
+    for (let i = 0; i < keys.length && Date.now() < stopAt; i += 20) {
+      const targets = keys.slice(i, i + 20).map(resolveTarget).filter((t) => t !== null);
       await matchMany(p, targets, { concurrency: 10, deadlineMs: Math.max(0, stopAt - Date.now()) });
     }
     return { total: keys.length, stored: await storedCount(p, keys) };
@@ -82,22 +84,38 @@ export async function prefillAll(deadlineMs: number): Promise<{ profiles: number
     cursor = String(next);
     emails.push(...batch.map((k) => k.slice(5)));
   } while (cursor !== "0");
-  let profiles = 0;
-  let complete = 0;
-  let open = 0;
+  const all: Profile[] = [];
   for (const email of emails) {
     const a = await getAccount(email);
     for (const p of a?.profiles ?? []) {
-      profiles++;
       await reconcileProfile(email, p);
-      const left = stopAt - Date.now();
-      const r = left > 5_000 ? await prefillProfile(p, left) : { total: 1, stored: 0 };
-      if (r.stored >= r.total) complete++;
-      else open += r.total - r.stored;
+      all.push(p);
     }
   }
-  return { profiles, complete, open };
+  // Erst das, was Nutzer zuerst sehen (alle Rahmenwerke und die neuesten
+  // Updates), für jedes Profil; danach der Rest. So bekommt bei knappem
+  // Budget oder vielen Profilen nicht ein Profil alles und die anderen nichts
+  // (Befund 11.11.2026).
+  const keys = allTargetKeys();
+  const first = [...keys.filter((k) => k.startsWith("f:")), ...keys.filter((k) => k.startsWith("u:")).slice(0, PRIORITY_UPDATES)];
+  for (const p of all) {
+    const left = stopAt - Date.now();
+    if (left > 5_000) await prefillProfile(p, left, first);
+  }
+  let complete = 0;
+  let open = 0;
+  for (const p of all) {
+    const left = stopAt - Date.now();
+    // Ohne Restzeit nur zählen, nicht prüfen.
+    const r = left > 5_000 ? await prefillProfile(p, left) : { total: keys.length, stored: await storedCount(p, keys) };
+    if (r.stored >= r.total) complete++;
+    else open += r.total - r.stored;
+  }
+  return { profiles: all.length, complete, open };
 }
+
+/** So viele der neuesten Updates prüft der Stundenlauf je Profil vorrangig. */
+const PRIORITY_UPDATES = 150;
 
 export interface VisitorProfile {
   profile: Profile | null;

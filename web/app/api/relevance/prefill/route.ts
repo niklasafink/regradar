@@ -12,6 +12,8 @@ function authorized(request: Request): boolean {
 
 export async function POST(request: Request) {
   if (!authorized(request)) return Response.json({ error: "unauthorized" }, { status: 401 });
-  const res = await prefillAll(270_000);
+  // 200 s: Ein begonnener KI-Abgleich darf noch zu Ende laufen, ohne das
+  // Zeitlimit der Funktion (300 s) zu reißen.
+  const res = await prefillAll(200_000);
   return Response.json({ ok: true, ...res });
 }
