@@ -191,15 +191,17 @@ def _targets() -> dict:
 #   sobald es fertig ist; ein hängendes Paket hält kein anderes auf und bricht
 #   nach CLAUDE_TIMEOUT ab. Was fehlt, nimmt der nächste Lauf wieder auf.
 # - Harter Token-Deckel: höchstens SCOPE_TOKEN_CAP Tokens in 7 Tagen
-#   (Standard 1 Mio.). Gezählt wird, was der Aufruf meldet: Eingabe, Ausgabe
+#   (Standard 2,5 Mio.). Gezählt wird, was der Aufruf meldet: Eingabe, Ausgabe
 #   und neu angelegter Cache voll, aus dem Cache gelesene Tokens zu 10 %.
 # - Ohne Nachdenken (MAX_THINKING_TOKENS=0), ohne Werkzeuge, eigener
 #   System-Prompt: Mit Nachdenken brauchte ein Paket rund 12.000 statt
 #   1.500 Ausgabe-Tokens und 156 statt etwa 30 Sekunden.
 CLAUDE_BATCH = int(os.environ.get("SCOPE_CLAUDE_BATCH", "5"))
-CLAUDE_WORKERS = int(os.environ.get("SCOPE_CLAUDE_WORKERS", "10"))
+# 5 parallel: bei 10 kamen am 11.11.2026 Pakete ohne Antwort zurück (Drosselung).
+CLAUDE_WORKERS = int(os.environ.get("SCOPE_CLAUDE_WORKERS", "5"))
 CLAUDE_TIMEOUT = 240
-TOKEN_CAP = int(os.environ.get("SCOPE_TOKEN_CAP", "1000000"))
+# 2,5 Mio.: Nutzerentscheidung 11.11.2026 (zuvor 1 Mio.).
+TOKEN_CAP = int(os.environ.get("SCOPE_TOKEN_CAP", "2500000"))
 # Reserve je laufendem Paket, damit der Deckel auch bei parallelen Paketen hält.
 TOKENS_PER_BATCH_EST = 6000
 
@@ -242,7 +244,12 @@ def _chat_claude(system: str, users: List[str]):
     cmd = [exe, "-p", prompt, "--system-prompt", system + OUTPUT_RULES, "--tools", "", "--output-format", "json",
            "--max-turns", "1", "--no-session-persistence",
            "--model", os.environ.get("SCOPE_CLAUDE_MODEL", "sonnet"),
-           "--setting-sources", "project,local", "--disable-slash-commands"]
+           "--setting-sources", "project,local", "--disable-slash-commands",
+           # Ohne MCP-Server: Die Ausreißer vom 11.11.2026 (120.000 bis 250.000
+           # Tokens Eingabe bei einzelnen Paketen) passen zu den Werkzeug-
+           # Beschreibungen der verbundenen Konnektoren, die je nach
+           # Verbindungstempo mit in die Anfrage gerieten.
+           "--strict-mcp-config", "--mcp-config", '{"mcpServers":{}}']
     p = subprocess.run(cmd, cwd="/tmp", capture_output=True, text=True, timeout=CLAUDE_TIMEOUT, env=env)
     data = json.loads(p.stdout.strip().splitlines()[-1])
     u = data.get("usage") or {}
