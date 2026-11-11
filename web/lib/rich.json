@@ -2043,6 +2043,251 @@
    "dropped": 2
   }
  },
+ "mica-2026-11-11-fsb-recommends-tuerkiye-further-strengthens-its-regulatory-framework-for-crypto": {
+  "h1": "FSB Peer Review: Türkiye soll Krypto-Rahmen und Stablecoin-Regime stärken (FSB 15/2026)",
+  "seo_title": "FSB Peer Review Türkiye Krypto 2026",
+  "meta_description": "FSB empfiehlt Türkiye vier Schritte: Finanzstabilitäts-Monitoring, Stablecoin-Regime, stärkere Aufsicht und grenzüberschreitende Kooperation (11.11.2026).",
+  "lead": "Der FSB hat am 11.11.2026 seinen zweiten Länder-Peer-Review zu Türkiye veröffentlicht und vier Empfehlungen zur Stärkung des Krypto-Regulierungsrahmens ausgesprochen. Betroffen sind primär türkische Behörden; für EU-Institute relevant als Signal zur globalen Konvergenz mit dem FSB-Rahmen.",
+  "aka": [
+   "FSB Peer Review Türkiye 2026",
+   "FSB Krypto Türkei",
+   "FSB 15/2026",
+   "FSB Stablecoin Türkiye",
+   "FSB Global Regulatory Framework Crypto"
+  ],
+  "summary": "Der FSB hat am 11.11.2026 seinen zweiten Peer Review zu Türkiye publiziert. Türkische Behörden haben Fortschritte bei Registrierung und Lizenzierung von Krypto-Dienstleistern erzielt. Der FSB empfiehlt vier weitere Schritte: Finanzstabilitäts-Monitoring operationalisieren, Stablecoin-Regime einführen, Aufsicht und Durchsetzung stärken sowie grenzüberschreitende Kooperation ausbauen.",
+  "overview": [
+   "Der FSB bewertet im zweiten Peer Review, wie weit Türkiye die FSB-Empfehlungen für Krypto-Aktivitäten und Stablecoins umgesetzt hat. Positiv bewertet werden Registrierungs- und Lizenzpflichten für Krypto-Dienstleister (CASPs), strikte Verwahrungstrennung, das Verbot von Krypto-Zahlungen im Inland sowie eine zentrale Datenplattform zur Marktüberwachung.",
+   "Für Compliance-Officer in EU-Instituten mit Türkiye-Bezug oder globalem Krypto-Geschäft ist relevant, dass der FSB weiterhin auf vollständige und konsistente Umsetzung seines Global Regulatory Framework drängt. Lücken bei Stablecoin-Regulierung und grenzüberschreitender Kooperation bleiben ausdrücklich adressiert. Die Empfehlungen signalisieren den Erwartungshorizont für FSB-Mitgliedsjurisdiktionen weltweit."
+  ],
+  "facts": [
+   {
+    "label": "Publikation",
+    "value": "11.11.2026"
+   },
+   {
+    "label": "Referenz",
+    "value": "FSB 15/2026"
+   },
+   {
+    "label": "Dokumenttyp",
+    "value": "Peer Review (Länderbericht)"
+   },
+   {
+    "label": "Geprüfte Jurisdiktion",
+    "value": "Türkiye"
+   },
+   {
+    "label": "Empfehlungen",
+    "value": "4: Monitoring-Rahmen, Stablecoin-Regime, Aufsicht/Durchsetzung, grenzüberschreitende Kooperation"
+   },
+   {
+    "label": "FSB-Basisrahmen",
+    "value": "Global Regulatory Framework for Crypto-asset Activities (2023)"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Krypto-Compliance",
+    "note": "Globale Konvergenz mit FSB-Standards beobachten",
+    "detail": "Institute mit Krypto-Aktivitäten oder CASP-Partnern in Türkiye sollten den Review als Indikator für regulatorische Anforderungen an grenzüberschreitende Kooperation und Stablecoin-Regime nutzen.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Zahlungsverkehr",
+    "note": "Stablecoin-Regime-Entwicklung verfolgen",
+    "detail": "Der FSB fordert ein dediziertes Stablecoin-Regime in Türkiye. Institute mit grenzüberschreitendem Zahlungsverkehr in die Türkei sollten die weitere Regulierungsentwicklung im Blick behalten.",
+    "status": "teilweise"
+   },
+   {
+    "name": "EU-Institute (MiCA)",
+    "note": "Kein direkter Handlungsbedarf aus diesem Review",
+    "detail": "Der Review adressiert Türkiye als Nicht-EU-Jurisdiktion. Für rein EU-tätige Institute ohne Türkiye-Bezug besteht kein unmittelbarer Handlungsbedarf; die globale FSB-Agenda bleibt Hintergrundkontext.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "FSB 15/2026",
+    "title": "Vier Empfehlungen an türkische Behörden",
+    "text": "FSB empfiehlt: (1) Finanzstabilitäts-Monitoring-Rahmen operationalisieren, (2) dediziertes Stablecoin-Regime einführen, (3) Aufsicht und Durchsetzung stärken, (4) grenzüberschreitende Kooperation und Informationsaustausch fördern."
+   },
+   {
+    "ref": "FSB 2025 Thematic Review",
+    "title": "Ausgangsbefund: Lücken in Jurisdiktionen",
+    "text": "Die FSB-Themenprüfung 2025 hatte signifikante Lücken und Inkonsistenzen bei der Umsetzung des globalen Rahmens festgestellt und alle Jurisdiktionen zur vollständigen Implementierung aufgefordert."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob das Institut CASP-Beziehungen oder Zahlungsverkehr mit Türkiye unterhält, und ggf. regulatorische Entwicklungen dort monitoren.",
+   "Den FSB Global Regulatory Framework for Crypto-asset Activities (2023) als Referenz für eigene Krypto-Compliance-Standards heranziehen.",
+   "Stablecoin-Regime-Entwicklungen in Türkiye beobachten, sofern grenzüberschreitende Stablecoin-Nutzung relevant ist."
+  ],
+  "timeline": [
+   {
+    "date": "11.11.2026",
+    "label": "Peer Review veröffentlicht",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was bedeutet dieser FSB-Review für EU-Institute ohne direkten Türkiye-Bezug?",
+    "a": "Kein unmittelbarer Handlungsbedarf. Der Review zeigt jedoch, welche Anforderungen der FSB an Jurisdiktionen weltweit stellt, insbesondere zu Stablecoin-Regimen und grenzüberschreitender Kooperation. Das ist nützlicher Referenzrahmen für die eigene MiCA- und Krypto-Strategie."
+   },
+   {
+    "q": "Welche Fortschritte hat Türkiye bereits erzielt?",
+    "a": "Türkiye hat Registrierungs- und Lizenzpflichten für CASPs eingeführt, strikte Verwahrungstrennung und ein Verbot von Krypto-Zahlungen im Inland umgesetzt sowie eine zentrale Datenplattform für Krypto-Marktdaten operationalisiert."
+   },
+   {
+    "q": "Gibt es Fristen aus diesem Review für Institute?",
+    "a": "Nein. Der Review richtet Empfehlungen an türkische Behörden, nicht direkt an Institute. Konkrete Umsetzungsfristen für neue türkische Regeln wurden in der Quelle nicht genannt."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Keine konkreten Umsetzungsfristen für türkische Behörden in der Quelle genannt; Zeitplan für Stablecoin-Regime und weitere Maßnahmen unklar.",
+   "Auswirkungen auf EU-Institute hängen vom individuellen Türkiye-Exposure ab; pauschale Bewertung nicht möglich.",
+   "Der Peer Review selbst (Volltext) wurde nicht als Quelle ausgewertet, nur die Pressemitteilung."
+  ],
+  "meta": {
+   "generated": "2026-11-11",
+   "model": "sonnet",
+   "source": "HTML, 4840 Zeichen, gekürzt auf 4840",
+   "dropped": 0,
+   "tokens": 8595
+  }
+ },
+ "mica-2026-11-11-peer-review-of-tuerkiye": {
+  "h1": "FSB Peer Review Türkiye: Handlungsempfehlungen zu Krypto und Stablecoins",
+  "seo_title": "FSB Peer Review Türkiye Krypto 2026",
+  "meta_description": "Der FSB empfiehlt Türkiye vier konkrete Schritte zur Stärkung des Krypto-Rahmenwerks, darunter ein Stablecoin-Regime und grenzüberschreitende Kooperation.",
+  "lead": "Der Financial Stability Board hat am 11.11.2026 seinen Peer Review zu Türkiye veröffentlicht und empfiehlt vier Maßnahmen zur Stärkung des Krypto-Aufsichtsrahmens. Der Report ist für international tätige Institute und Compliance-Funktionen mit Krypto-Bezug relevant.",
+  "aka": [
+   "FSB Peer Review Türkiye",
+   "Türkiye Krypto-Regulierung FSB",
+   "FSB Crypto Peer Review 2026",
+   "FSB Stablecoin Türkiye",
+   "FSB Global Regulatory Framework Crypto Türkiye"
+  ],
+  "summary": "Der FSB stellt fest, dass Türkiye einen Regulierungsrahmen für Krypto-Dienstleister eingeführt hat, aber kein Stablecoin-Regime besitzt. Er empfiehlt, ein Finanzstabilitäts-Monitoring zu operationalisieren, ein Stablecoin-Regime einzuführen, Aufsicht und Durchsetzung zu stärken sowie grenzüberschreitende Kooperation auszubauen.",
+  "overview": [
+   "Türkiye hat seit dem FSB-Thematic Peer Review 2025 Registrierungs- und Lizenzpflichten für Krypto-Dienstleister (CASPs) eingeführt, strikte Custody-Trennung vorgeschrieben und Krypto-Assets für inländische Zahlungen verboten. Eine zentrale Datenplattform zur Marktüberwachung ist operativ. Der FSB erkennt diese Fortschritte an, sieht aber wesentliche Lücken.",
+   "Der FSB empfiehlt vier weitere Schritte: Operationalisierung eines Rahmens für Finanzstabilitäts-Monitoring, Einführung eines dedizierten Stablecoin-Regimes, Stärkung von Aufsicht und Durchsetzung sowie Förderung grenzüberschreitender Kooperation und Informationsaustausch. Der Review orientiert sich am FSB Global Regulatory Framework for Crypto-asset Activities vom 17.07.2023."
+  ],
+  "facts": [
+   {
+    "label": "Publikation",
+    "value": "11.11.2026"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "Financial Stability Board (FSB)"
+   },
+   {
+    "label": "Dokumenttyp",
+    "value": "Peer Review Report"
+   },
+   {
+    "label": "Bezugsrahmen",
+    "value": "FSB Global Regulatory Framework for Crypto-asset Activities (17.07.2023)"
+   },
+   {
+    "label": "Vorgänger",
+    "value": "Thematic Peer Review on FSB Global Regulatory Framework (21.02.2025)"
+   },
+   {
+    "label": "Kernlücke Türkiye",
+    "value": "Kein dediziertes Stablecoin-Regime vorhanden"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Krypto-Institute",
+    "note": "CASPs mit Türkiye-Bezug direkt betroffen",
+    "detail": "CASPs, die in Türkiye registriert sind oder grenzüberschreitend tätig werden, müssen Aufsichtsanforderungen und künftige Stablecoin-Regeln beobachten.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance",
+    "note": "Regulatorische Entwicklung verfolgen",
+    "detail": "Compliance-Funktionen mit Krypto-Exposure sollten die empfohlenen Schritte im Blick behalten, da sie Anforderungen an grenzüberschreitende Kooperation und Meldepflichten ankündigen.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Zahlungsverkehr",
+    "note": "Krypto-Zahlungsverbot in TK beachten",
+    "detail": "Das bestehende Verbot des Einsatzes von Krypto-Assets für inländische Zahlungen in Türkiye ist regulatorisch relevant für Institute mit Zahlungsverkehrsangeboten in der Region.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "FSB Peer Review 2026",
+    "title": "Vier FSB-Empfehlungen für Türkiye",
+    "text": "FSB empfiehlt: Finanzstabilitäts-Monitoring operationalisieren, Stablecoin-Regime einführen, Aufsicht und Durchsetzung stärken, grenzüberschreitende Kooperation und Informationsaustausch fördern."
+   },
+   {
+    "ref": "FSB Thematic Review 2025",
+    "title": "Ausgangsbefund aus 2025",
+    "text": "Türkiye hatte 2025 einen Krypto-Rahmen abgeschlossen, aber kein Stablecoin-Regime. Dieser Review baut darauf auf und bewertet seitdem eingeführte Maßnahmen."
+   }
+  ],
+  "todos": [
+   "Krypto-Strategie auf geplante Stablecoin-Regulierung in Türkiye prüfen",
+   "Grenzüberschreitende Kooperationspflichten für CASPs mit Türkiye-Bezug beobachten",
+   "FSB-Empfehlungen in regulatorisches Monitoring für Krypto-Rahmenwerke aufnehmen",
+   "Custody-Anforderungen und Zahlungsverbot in Türkiye bei Produktangeboten berücksichtigen"
+  ],
+  "timeline": [
+   {
+    "date": "17.07.2023",
+    "label": "FSB Global Framework Crypto",
+    "kind": "schritt"
+   },
+   {
+    "date": "21.02.2025",
+    "label": "Thematic Peer Review Referenz",
+    "kind": "schritt"
+   },
+   {
+    "date": "11.11.2026",
+    "label": "Peer Review Türkiye publiziert",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was empfiehlt der FSB Türkiye konkret?",
+    "a": "Der FSB nennt vier Maßnahmen: ein Finanzstabilitäts-Monitoring operationalisieren, ein dediziertes Stablecoin-Regime einführen, Aufsicht und Durchsetzung stärken sowie grenzüberschreitende Kooperation und Informationsaustausch fördern."
+   },
+   {
+    "q": "Welche Maßnahmen hat Türkiye bereits umgesetzt?",
+    "a": "Türkiye hat Registrierungs- und Lizenzpflichten für CASPs eingeführt, strikte Custody-Trennung vorgeschrieben, Krypto-Assets für inländische Zahlungen verboten und eine zentrale Datenplattform zur Marktüberwachung aufgebaut."
+   },
+   {
+    "q": "Ist dieser Report für deutsche Institute handlungsrelevant?",
+    "a": "Unmittelbare Handlungspflichten entstehen nicht. Institute mit Krypto-Aktivitäten oder CASP-Verbindungen in Türkiye sollten die angekündigten regulatorischen Schritte beobachten, da sie grenzüberschreitende Anforderungen auslösen können."
+   },
+   {
+    "q": "Gibt es konkrete Fristen oder Umsetzungsdeadlines?",
+    "a": "Der Report nennt keine konkreten Fristen. Die Empfehlungen richten sich an die türkischen Behörden; ein Umsetzungszeitplan ist in den verfügbaren Quellen nicht angegeben."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Kein Umsetzungszeitplan für FSB-Empfehlungen in der Quelle angegeben",
+   "Stablecoin-Regime Türkiye: Entwurf oder Zeitplan nicht bekannt",
+   "Auswirkungen auf EU-CASPs mit Türkiye-Bezug nicht explizit adressiert"
+  ],
+  "meta": {
+   "generated": "2026-11-11",
+   "model": "sonnet",
+   "source": "HTML, 2776 Zeichen, gekürzt auf 2776",
+   "dropped": 0,
+   "tokens": 8092
+  }
+ },
  "taxonomy-2026-10-29-the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures": {
   "h1": "EBA empfiehlt gezielte Vereinfachungen bei Taxonomie-Offenlegungen (Art. 8 Taxonomie-VO)",
   "seo_title": "EBA: Vereinfachungen Taxonomie-Offenlegungen 2026",
