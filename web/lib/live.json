@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T12:05:46Z",
+  "generated_at": "2026-11-11T01:04:57Z",
   "updates": {
     "bcbs": [
       {
@@ -8385,6 +8385,15 @@
   },
   "praxis": [
     {
+      "d": "10.11.2026",
+      "ti": "Keynote-Rede von SRB-Vorsitzendem Laboureix beim 10. MREL Workshop",
+      "auth": "SRB",
+      "src": "srb.europa.eu",
+      "url": "https://www.srb.europa.eu/en/content/keynote-speech-srb-chair-dominique-laboureix-10th-mrel-workshop-mrel-ten-workshops-later",
+      "cat": "rede",
+      "sum": "In his speech at the 10th MREL Workshop in Vienna, SRB Chair Dominique Laboureix highlighted the importance of developing MREL capital markets to strengthen banking resilience and competitiveness in Central, Eastern and Southeastern Europe, stressing that MREL alone is not enough and must be complemented by robust crisis preparedness measures to ensure effective bank resolution."
+    },
+    {
       "d": "09.11.2026",
       "ti": "DF Deutsche Finance Investment GmbH: Bafin macht Sonderbeauftragten zum Geschäftsführer",
       "auth": "BaFin",
@@ -8401,6 +8410,14 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_11_09_standard_chartered_bank_ag.html?cms_expanded=true",
       "cat": "bussgeld",
       "sum": "Die Finanzaufsicht Bafin hat gegen die Standard Chartered Bank AG ein Bußgeld von 200.000 Euro festgesetzt. Grund dafür ist eine Überschreitung der Großkreditobergrenze."
+    },
+    {
+      "d": "09.11.2026",
+      "ti": "Keynote-Rede beim International Forum of Insurance Guarantee Schemes (IFIGS)",
+      "auth": "EIOPA",
+      "src": "eiopa.europa.eu",
+      "url": "https://www.eiopa.europa.eu/keynote-speech-international-forum-insurance-guarantee-schemes-ifigs-2026-11-09_en",
+      "cat": "rede"
     },
     {
       "d": "07.11.2026",
