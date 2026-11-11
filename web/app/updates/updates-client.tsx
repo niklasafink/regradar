@@ -196,15 +196,6 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
           ))}
         </nav>
 
-        <RelevanceFilter
-          className="mt-3"
-          keys={typeKeys}
-          rel={rel}
-          value={relFilter}
-          onChange={setRelFilter}
-          show={withProfile}
-        />
-
         {/* Art, zukünftige Normen und Ansicht; kombinierbar mit allen Filtern oben */}
         <div className="mt-3 flex flex-wrap items-center gap-1.5">
           <nav className="contents" aria-label={lang === "de" ? "Art der Meldung" : "Type of item"}>
@@ -243,6 +234,14 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
             {lang === "de" ? "Zukünftige Normen" : "Upcoming rules"}
             <span className="num text-xs opacity-70">{futureCount}</span>
           </button>
+          <RelevanceFilter
+            variant="dropdown"
+            keys={typeKeys}
+            rel={rel}
+            value={relFilter}
+            onChange={setRelFilter}
+            show={withProfile}
+          />
           <span className="min-w-0 flex-1" />
           <div className="inline-flex rounded-full border border-slate-200 bg-white p-0.5" role="group" aria-label={lang === "de" ? "Ansicht" : "View"}>
             {(["liste", "zeitachse"] as View[]).map((v) => (
