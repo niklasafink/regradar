@@ -12,7 +12,7 @@ import { authority, daysUntil, fmtDate, PROVIDER_SHORT, tx } from "@/lib/core";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
 import { SubtypeFilter } from "@/components/subtype-filter";
-import { subtypeIncludes, type Subtype } from "@/lib/subtypes";
+import { othIncludes, subtypeIncludes, type Subtype } from "@/lib/subtypes";
 
 /** Offene Frist mit den angezeigten Feldern (vom Server vorbereitet, page.tsx). */
 export interface DeadlineEntry {
@@ -34,6 +34,7 @@ export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
 
   const shown = sel === "OTH" && sub
     ? all.filter((i) => subtypeIncludes(sub, i.fw))
+    : sel === "OTH" ? all.filter((i) => othIncludes(i.fw))
     : sel ? all.filter((i) => i.fw.ents.includes(sel)) : all;
 
   const pill = (active: boolean) =>
@@ -60,7 +61,7 @@ export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
         {/* Zielgruppen-Filter wie auf der Updates-Seite */}
         <nav
           className="mt-5 flex flex-wrap items-center gap-1.5"
-          aria-label={lang === "de" ? "Institutstyp" : "Institution type"}
+          aria-label={lang === "de" ? "Institutsart" : "Institution type"}
         >
           <button
             type="button"
@@ -80,7 +81,7 @@ export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
             >
               {tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
               <span className="num text-xs opacity-70">
-                {all.filter((i) => i.fw.ents.includes(p.id)).length}
+                {all.filter((i) => (p.id === "OTH" ? othIncludes(i.fw) : i.fw.ents.includes(p.id))).length}
               </span>
             </button>
           ))}

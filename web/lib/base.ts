@@ -72,8 +72,8 @@ export const PROVIDERS: Provider[] = [
     s:{de:"Versicherungsgeschäft nach VAG und Solvency II",en:"Insurance business under VAG and Solvency II"},
     tags:["Solvency II","IDD","SFDR","DORA"] },
   { id:"OTH", slug:"weitere-institute", n:{de:"Weitere Institute",en:"Other institutions"},
-    s:{de:"Leasing, Factoring, Bausparkassen, Pfandbriefbanken, Förderbanken, Kryptowerte-Dienstleister, Token-Emittenten, Handelsplätze und Finanzholdings",en:"Leasing, factoring, building and loan associations, Pfandbrief banks, promotional banks, crypto-asset service providers, token issuers, trading venues and financial holdings"},
-    tags:["GwG","HinSchG","NIS-2","BGB"] }
+    s:{de:"Leasing, Factoring, Bausparkassen, Pfandbriefbanken, Förderbanken, Kryptowerte-Dienstleister, Token-Emittenten, Handelsplatzbetreiber und Finanzholdings",en:"Leasing, factoring, building and loan associations, Pfandbrief banks, promotional banks, crypto-asset service providers, token issuers, trading venue operators and financial holdings"},
+    tags:["DORA","GwG","MiCA","MaRisk"] }
 ];
 
 export const TOPICS: Topic[] = [

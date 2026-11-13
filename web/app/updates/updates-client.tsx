@@ -16,7 +16,7 @@ import { RelevanceChip } from "@/components/relevance-chip";
 import { ExportButton } from "@/components/export-dialog";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
-import { subtypeBySlug, subtypeIncludes, type Subtype } from "@/lib/subtypes";
+import { othIncludes, subtypeBySlug, subtypeIncludes, type Subtype } from "@/lib/subtypes";
 import { SubtypeFilter } from "@/components/subtype-filter";
 import { Timeline, type TlItem } from "./timeline";
 
@@ -82,9 +82,11 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
 
   const byInst = sel === "OTH" && sub
     ? UPDATE_PAGES.filter((p) => subtypeIncludes(sub, p.fw))
-    : sel
-      ? UPDATE_PAGES.filter((p) => p.fw.ents.includes(sel))
-      : UPDATE_PAGES;
+    : sel === "OTH"
+      ? UPDATE_PAGES.filter((p) => othIncludes(p.fw))
+      : sel
+        ? UPDATE_PAGES.filter((p) => p.fw.ents.includes(sel))
+        : UPDATE_PAGES;
   // „Zukünftige Normen“: Anwendungsbeginn oder Frist liegt noch vor uns
   const futureCount = byInst.filter((p) => upcoming(p.u)).length;
   const showUpdates = art !== "praxis";
@@ -200,7 +202,7 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
             >
               {tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
               <span className="num text-xs opacity-70">
-                {UPDATE_PAGES.filter((u) => u.fw.ents.includes(p.id)).length}
+                {UPDATE_PAGES.filter((u) => (p.id === "OTH" ? othIncludes(u.fw) : u.fw.ents.includes(p.id))).length}
               </span>
             </button>
           ))}

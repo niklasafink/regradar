@@ -60,8 +60,9 @@ export function redis(): Redis {
 // hat mindestens eine neue Quelle hinzubekommen oder seine Rahmenwerk-Auswahl
 // geändert. "unchanged": alles schon vorhanden (z. B. wiederholter Aufruf
 // desselben Bestätigungslinks).
-// Institutsarten werden vereinigt, die Rahmenwerk-Auswahl dagegen ersetzt:
-// die zuletzt bestätigte Auswahl gilt (leer = alle Updates).
+// Anbietertypen werden vereinigt, die Rahmenwerk-Auswahl und die Auswahl der
+// weiteren Institutsarten (arts) dagegen ersetzt: die zuletzt bestätigte
+// Auswahl gilt (leer = keine Einschränkung).
 export async function addSubscriber(
   email: string,
   newProviders: string[],

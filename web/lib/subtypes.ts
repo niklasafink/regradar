@@ -35,9 +35,11 @@ const CROSS = ["sanctions", "dsgvo", "aiact", "hinschg", "csrd", "lksg", "dataac
    Satz 2 Nr. 9/10 KWG mit eingeschränktem KWG-Regime. DORA gilt über
    § 1a Abs. 2a KWG entsprechend; TLPT und Bank-Aufsichtsrecht (CRR, SREP,
    Einlagensicherung) entfallen (§ 2 Abs. 7a KWG). §§ 25c/25d KWG gelten,
-   daher Fit & Proper. Das Beschwerde-Rundschreiben 06/2018 richtet sich nur
-   an CRR-Kreditinstitute, ZAG-Institute und KVGen (geprüft 13.11.2026). */
-const LEASING_FACTORING = [...CROSS, "kwglf", "dora", "nis2", "ebaict", "amla", "gwg", "marisk", "instvergv", "fitproper"];
+   daher Fit & Proper. Nicht anwendbar (geprüft 13.11.2026): InstitutsVergV
+   (§ 1 Abs. 1 Satz 2), EBA-IKT-Leitlinien (nur CRR-Institute und
+   Zahlungsdienstleister), Beschwerde-Rundschreiben 06/2018 (nur CRR-
+   Kreditinstitute, ZAG-Institute und KVGen). */
+const LEASING_FACTORING = [...CROSS, "kwglf", "dora", "nis2", "amla", "gwg", "marisk", "fitproper"];
 
 /* Bausparkassen und Pfandbriefbanken sind CRR-Kreditinstitute: volles
    Bankaufsichtsrecht, aber ohne Zahlungsverkehr und Wertpapierdienstleistungen. */
@@ -77,16 +79,24 @@ export const SUBTYPES: Subtype[] = [
     drop: ["ebamicaart"] },
   { id: "token", pl: "Token-Emittenten (EMT, ART)", slug: "token-emittent", g: "markets",
     n: { de: "Token-Emittent (EMT, ART)", en: "Token issuer (EMT, ART)" },
-    fws: [...CROSS, "dora", "amla", "mica"] },
+    // ART-Emittenten sind nach § 2 Abs. 1 Nr. 2 GwG Verpflichtete.
+    fws: [...CROSS, "dora", "amla", "gwg", "mica"] },
   { id: "venue", pl: "Handelsplatzbetreiber", slug: "handelsplatz", g: "markets",
     n: { de: "Handelsplatzbetreiber", en: "Trading venue operator" },
     fws: [...CROSS, "boersg", "dora", "mifid", "mar", "csdr", "dltpilot", "misp"] },
   { id: "holding", pl: "Finanzholdings", slug: "finanzholding", g: "group",
     n: { de: "Finanzholding", en: "Financial holding company" },
     // Pflichten auf konsolidierter Ebene; gemischte Finanzholdings zusätzlich FICOD.
-    fws: [...CROSS, "crr3", "ficod", "brrd", "ebagov", "srep", "irrbb", "instvergv", "itsrep", "fitproper",
+    // Als Finanzunternehmen geldwäscherechtlich verpflichtet (§ 2 Abs. 1 Nr. 6 GwG),
+    // als übergeordnetes Unternehmen gruppenweites Risikomanagement (§ 25a Abs. 3 KWG).
+    fws: [...CROSS, "gwg", "amla", "marisk", "crr3", "ficod", "brrd", "ebagov", "srep", "irrbb", "instvergv", "itsrep", "fitproper",
       "ebaesg", "securitisation", "loanorig"] },
 ];
+
+/** Gehört das Rahmenwerk zu „Weitere Institute“ insgesamt? Ohne gewählte
+    Institutsart gilt die Vereinigung: OTH-Rahmenwerke plus alle Arten. */
+export const othIncludes = (f: { id: string; parent?: string; ents: string[] }): boolean =>
+  f.ents.includes("OTH") || SUBTYPES.some((s) => subtypeIncludes(s, f));
 
 export const subtypeBySlug = (slug: string) => SUBTYPES.find((s) => s.slug === slug || s.id === slug);
 

@@ -3,7 +3,7 @@ import {
   type Cond, type Framework, type Lang, type Topic, type Txt,
 } from "./data";
 import { FRAMEWORKS_LIVE as FRAMEWORKS } from "./live";
-import { subtypeIncludes, type Subtype } from "./subtypes";
+import { othIncludes, subtypeIncludes, type Subtype } from "./subtypes";
 
 export { FRAMEWORKS };
 
@@ -26,7 +26,7 @@ export interface FrameworkView extends Framework {
 /* Rahmenwerke für Anbietertyp und Fragebogen, Updates absteigend datiert. */
 export function visibleFrameworks(provider: string, answers: Answers | null): FrameworkView[] {
   return FRAMEWORKS
-    .filter((f) => f.ents.includes(provider))
+    .filter((f) => (provider === "OTH" ? othIncludes(f) : f.ents.includes(provider)))
     .filter((f) => condMet(f.cond, answers))
     .map((f) => {
       const u = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());

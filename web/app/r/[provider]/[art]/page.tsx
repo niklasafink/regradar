@@ -15,7 +15,7 @@ export function generateStaticParams() {
 }
 
 const subDescription = (pl: string) =>
-  providerDescription(pl, "Aufsichtsrecht, Geldwäsche, IT-Sicherheit und Querschnittspflichten, die für diese Institutsart gelten");
+  providerDescription(pl, "die Rahmenwerke, Fristen und Konsultationen, die für diese Institutsart gelten");
 
 type Params = Promise<{ provider: string; art: string }>;
 

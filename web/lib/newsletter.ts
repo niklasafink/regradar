@@ -17,7 +17,7 @@
 // Erster Lauf (kein Hash, kein Alt-Set): Archiv wird mit Epoch markiert und
 // nichts verschickt (sonst käme das komplette Archiv).
 
-import { subtypeBySlug, subtypeIncludes, type Subtype } from "./subtypes";
+import { othIncludes, subtypeBySlug, subtypeIncludes, type Subtype } from "./subtypes";
 import { after } from "next/server";
 import { Resend } from "resend";
 import {
@@ -212,9 +212,12 @@ export function relevantFor(sub: Subscriber, pages: UpdatePage[]): UpdatePage[] 
   const arts = known.includes("OTH")
     ? (sub.arts ?? []).map(subtypeBySlug).filter((s): s is Subtype => !!s)
     : [];
-  const provsLeft = arts.length ? known.filter((pr) => pr !== "OTH") : known;
+  // Ohne Auswahl gilt OTH für alle Arten zusammen (othIncludes).
+  const provsLeft = known.filter((pr) => pr !== "OTH");
+  const oth = known.includes("OTH");
   return pages.filter(
-    (p) => provsLeft.some((pr) => p.fw.ents.includes(pr)) || arts.some((s) => subtypeIncludes(s, p.fw)),
+    (p) => provsLeft.some((pr) => p.fw.ents.includes(pr))
+      || (oth && (arts.length ? arts.some((s) => subtypeIncludes(s, p.fw)) : othIncludes(p.fw))),
   );
 }
 
