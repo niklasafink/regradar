@@ -238,11 +238,12 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
         <section className="mt-6 space-y-3">
           <p className="text-sm text-slate-600">Angemeldet als {me?.email}. Die Einschlägigkeit auf der Website gilt für das aktive Profil, das Sie oben rechts wechseln. Ihre Newsletter-Mails kennzeichnen nur das primäre Profil.</p>
           {(accountProfiles ?? []).map((p) => (
-            <div key={p.id} className={`${card} flex flex-wrap items-center gap-3`}>
-              <div className="min-w-0 flex-1">
-                <p className="font-medium text-slate-900">{p.name}</p>
+            <div key={p.id} className={card}>
+              <div className="min-w-0">
+                <p className="break-words font-medium text-slate-900">{p.name}</p>
                 <p className="text-xs text-slate-500">{p.gattung.join(", ") || "Manuell angelegt"}{supervision(p) ? `, ${supervision(p)}` : ""}</p>
               </div>
+              <div className="mt-4 flex flex-wrap items-center gap-3">
               {p.id === primaryId ? (
                 <span className={`${tag} border border-slate-900 text-slate-900`} title="Gilt für Ihre Newsletter-Mails">Primär (Newsletter)</span>
               ) : (
@@ -278,6 +279,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
                 invalidate();
                 await loadAccount();
               }}>Löschen</button>
+              </div>
             </div>
           ))}
           {accountProfiles?.length === 0 && <p className="text-sm text-slate-500">Noch kein Profil angelegt.</p>}
