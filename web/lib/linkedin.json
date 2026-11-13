@@ -1,29 +1,5 @@
 {
  "posts": {
-  "2026-10-30": {
-   "window": [
-    "2026-10-29"
-   ],
-   "keys": [
-    "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
-    "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures"
-   ],
-   "hook": "Weniger ist mehr: Die EBA schlägt konkrete Vereinfachungen bei den Taxonomie-Offenlegungen vor.",
-   "folge": "Die EBA empfiehlt der EU-Kommission, mehrere KPIs für Kreditinstitute und Wertpapierfirmen zu streichen oder zu vereinfachen, um die Komplexität der Taxonomie-Offenlegung zu reduzieren. Dies könnte den Aufwand für die Berichterstattung erheblich mindern.",
-   "cover": "EBA: Vereinfachung der Taxonomie-Offenlegungen",
-   "zeilen": [
-    "EU-Kommission: Konsultation zu Margenanforderungen für OTC-Derivate bis 26.11.2026"
-   ],
-   "frage": "Welche der vorgeschlagenen Vereinfachungen würde bei Ihnen den größten Aufwand einsparen?",
-   "top": "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures",
-   "kern": {
-    "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl": "Die EU-Kommission konsultiert bis zum 26.11.2026 Änderungen an den RTS zu Margenanforderungen für nicht zentral abgewickelte Derivate, was Finanzinstitute mit OTC-Derivaten betrifft.",
-    "the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures": "Die EBA empfiehlt der EU-Kommission, die Taxonomie-Offenlegungspflichten für Kreditinstitute und Wertpapierfirmen durch Streichung und Vereinfachung bestimmter KPIs zu reduzieren."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-11-02": {
    "window": [
     "2026-10-30",
