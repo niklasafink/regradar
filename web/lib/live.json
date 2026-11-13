@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T08:13:25Z",
+  "generated_at": "2026-11-13T13:53:04Z",
   "updates": {
     "bcbs": [
       {
@@ -4456,6 +4456,25 @@
         },
         "url": "https://www.edpb.europa.eu/news/edpb-harmonises-fining-methodology-and-adopts-final-dsa-gdpr-guidelines_en",
         "imp": "high"
+      },
+      {
+        "d": "21.09.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "edpb.europa.eu",
+        "ti": {
+          "de": "Leitlinien zur Verhängung von Geldbußen nach der DSGVO (Guidelines 04/2026)",
+          "en": "Guidelines on the application of administrative fines under the GDPR (Guidelines 04/2026)"
+        },
+        "sl": "guidelines-04-2026-on-the-application-of-the-power-to-impose-administrative-fine",
+        "s": {
+          "de": "Der Europäische Datenschutzausschuss (EDPB) hat Leitlinien zur Harmonisierung der Methodik für die Verhängung von Geldbußen gemäß der Datenschutz-Grundverordnung (DSGVO) veröffentlicht. Diese Leitlinien ergänzen die bereits bestehenden Berechnungsvorgaben und konzentrieren sich darauf, wann eine Geldbuße zusätzlich zu oder anstelle anderer Korrekturmaßnahmen nach Artikel 58 Absatz 2 DSGVO verhängt werden sollte.\n\nDie Methodik umfasst fünf Schritte: Zunächst wird geprüft, ob der Verstoß überhaupt mit einer Geldbuße geahndet werden kann und ob die betreffende Partei dafür haftbar ist. Anschließend wird festgestellt, ob der Verstoß vorsätzlich oder fahrlässig begangen wurde. In den weiteren Schritten wird beurteilt, ob die in Artikel 83 Absatz 2 DSGVO genannten Faktoren auf einen geringfügigen Verstoß hindeuten, bei dem in der Regel keine Geldbuße verhängt wird. Abschließend wird geprüft, ob die Verhängung einer Geldbuße im Einzelfall wirksam, verhältnismäßig und abschreckend wäre.\n\nDie Leitlinien befinden sich derzeit in öffentlicher Konsultation. Interessierte Parteien haben die Möglichkeit, Stellungnahmen abzugeben, bevor die endgültige Version verabschiedet wird.",
+          "en": "The European Data Protection Board (EDPB) has published guidelines to harmonise the methodology for imposing administrative fines under the General Data Protection Regulation (GDPR). These guidelines complement existing calculation rules and focus on when a fine should be imposed in addition to or instead of other corrective measures under Article 58(2) GDPR.\n\nThe methodology consists of five steps: First, it is checked whether the infringement can lead to an administrative fine at all and whether the party concerned is liable for it. Subsequently, it is determined whether the infringement was committed intentionally or negligently. Further steps assess whether the factors listed in Article 83(2) GDPR indicate a minor infringement, for which, as a general rule, no administrative fine is imposed. Finally, it is assessed whether the imposition of an administrative fine would be effective, proportionate, and dissuasive in the individual case.\n\nThe guidelines are currently open for public consultation. Interested parties have the opportunity to submit comments before the final version is adopted."
+        },
+        "url": "https://www.edpb.europa.eu/documents/guideline/guidelines-042026-on-the-application-of-the-power-to-impose-administrative-0_en",
+        "imp": "medium"
       },
       {
         "d": "15.04.2026",
