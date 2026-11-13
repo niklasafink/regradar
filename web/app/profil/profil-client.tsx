@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import {
-  invalidate, readDraft, statusPill, useMe, writeDraft,
+  invalidate, readDraft, useMe, writeDraft,
 } from "@/lib/relevanceClient";
 import { RelevanceHint } from "@/components/relevance-hint";
 
@@ -35,6 +35,8 @@ type Step = "liste" | "suche" | "manuell" | "laden" | "pruefen" | "speichern" | 
 
 const btn = "inline-flex items-center rounded-full bg-slate-900 px-5 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-50";
 const btn2 = "inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-900 hover:border-slate-900 disabled:opacity-50";
+// Statusanzeigen in der Profilzeile: gleiche Größe wie btn2, damit die Zeile einheitlich wirkt.
+const tag = "inline-flex items-center rounded-full px-5 py-2 text-sm font-medium";
 const card = "rounded-2xl border border-slate-200 bg-white p-5";
 
 async function post<T>(url: string, body: unknown): Promise<T> {
@@ -242,7 +244,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
                 <p className="text-xs text-slate-500">{p.gattung.join(", ") || "Manuell angelegt"}{supervision(p) ? `, ${supervision(p)}` : ""}</p>
               </div>
               {p.id === primaryId ? (
-                <span className={statusPill("teilweise")} title="Gilt für Ihre Newsletter-Mails">Primär (Newsletter)</span>
+                <span className={`${tag} border border-slate-900 text-slate-900`} title="Gilt für Ihre Newsletter-Mails">Primär (Newsletter)</span>
               ) : (
                 <button type="button" className={btn2} title="Dieses Profil kennzeichnet künftig Ihre Newsletter-Mails" onClick={async () => {
                   await post("/api/account/profile", { action: "primary", id: p.id });
@@ -251,7 +253,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
                 }}>Als primär setzen</button>
               )}
               {p.id === activeId ? (
-                <span className={statusPill("ja")}>Aktiv</span>
+                <span className={`${tag} border border-slate-900 bg-slate-900 text-white`}>Aktiv</span>
               ) : (
                 <button type="button" className={btn2} onClick={async () => {
                   await post("/api/account/profile", { action: "activate", id: p.id });
