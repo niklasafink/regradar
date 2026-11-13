@@ -1416,7 +1416,7 @@ class FrameworkQa14Oct2026(unittest.TestCase):
                                 "emerging services", "tokenisation and DLT"), "mica")
         self.assertEqual(self.c("Verordnung zur Konkretisierung von Mitteilungspflichten zur Offenlegung "
                                 "von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes"),
-                         "mica")
+                         "kmag")  # seit 13.11.2026 eigenes Kind-Rahmenwerk von MiCA
 
     def test_srb_documents_are_brrd(self):
         self.assertEqual(self.c("SRB clarifies guidance on Banks' Communication", "resolvability",

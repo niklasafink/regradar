@@ -188,6 +188,12 @@ FRAMEWORK_RULES = [
              r"kapitalmarktintegration und der aufsicht|\bmisp\b|"
              r"(savings and investments union|spar- und investitionsunion|\bsiu\b)"
              r"[\s\S]{0,80}(package|paket|proposal|vorschlag|directive|regulation|richtlinie|verordnung)"),
+    # Deutsche Begleitgesetze und Sonderregime für „Weitere Institute“ (13.11.2026):
+    # vor MiCA, MaRisk und CRR, die dieselben Begriffe allgemein abdecken.
+    ("kmag", r"\bkmag\b|kryptomärkteaufsichtsgesetz|\bkmmv\b|kryptomärktemitteilungs|\bkmanzv\b|kryptomärkteanzeige"),
+    ("boersg", r"\bbörsg\b|börsengesetz|\bbörszulv\b|börsenzulassungs-?verordnung|börsenträger|börsenaufsichtsbehörde"),
+    ("kwglf", r"finanzierungsleasing|factoringinstitut|leasinginstitut|leasing- und factoring|factoring- und (finanzierungs)?leasing|"
+              r"tatbestand(es)? des factorings?"),
     ("mica", r"\bmica\b|kryptowert|crypto-?asset|"
             r"\bmicar\b|markets in crypto-?assets|kryptowerte-verordnung|kryptomärkte|\bkmag\b|\bcasps?\b|kryptoverwahr|stablecoin|krypto-dienstleist"),
     ("eltif", r"\beltif\b|euveca|"
@@ -480,6 +486,7 @@ BAFIN_SEARCH_RULES = [
               r"wpdpv|30\.05\.2008|30\. mai 2008"),
     ("instvergv", r"vergütungsanzeigen|diversitätsanzeigen|institutsvergütung"),
     ("marisk", r"begleitschreiben von der bafin und der deutschen bundesbank für finanzierungsleasing"),
+    ("kwglf", r"finanzierungsleasing|factoring"),
     # Bankenaufsicht: Liquidität, Bank-SolvV (nicht Solvency II), KWG-Erlaubnis-
     # und Ausnahmetatbestände, Makroaufsicht. Vor den Versicherungen, weil
     # "Versicherungen in fortgeschrittenen Messansätzen" Bankenaufsicht ist.
