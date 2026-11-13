@@ -17,6 +17,7 @@
 // Erster Lauf (kein Hash, kein Alt-Set): Archiv wird mit Epoch markiert und
 // nichts verschickt (sonst käme das komplette Archiv).
 
+import { subtypeBySlug, subtypeIncludes, type Subtype } from "./subtypes";
 import { after } from "next/server";
 import { Resend } from "resend";
 import {
@@ -206,7 +207,15 @@ export function relevantFor(sub: Subscriber, pages: UpdatePage[]): UpdatePage[] 
   // Unbekannte Anbietertypen (Alt-Daten) zählen nicht als Filter.
   const known = provs.filter((pr) => PROVIDERS.some((p) => p.id === pr));
   if (known.length === 0) return pages;
-  return pages.filter((p) => known.some((pr) => p.fw.ents.includes(pr)));
+  // „Weitere Institute“ mit gewählten Institutsarten: statt aller OTH-
+  // Rahmenwerke nur die dieser Arten (lib/subtypes.ts).
+  const arts = known.includes("OTH")
+    ? (sub.arts ?? []).map(subtypeBySlug).filter((s): s is Subtype => !!s)
+    : [];
+  const provsLeft = arts.length ? known.filter((pr) => pr !== "OTH") : known;
+  return pages.filter(
+    (p) => provsLeft.some((pr) => p.fw.ents.includes(pr)) || arts.some((s) => subtypeIncludes(s, p.fw)),
+  );
 }
 
 /** Lokaler Tagesbeginn eines ISO-Zeitstempels — vergleichbar mit dt(u.d),

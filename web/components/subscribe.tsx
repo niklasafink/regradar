@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { PROVIDERS } from "@/lib/base";
+import { SUBTYPES } from "@/lib/subtypes";
 import { PROVIDER_SHORT, tx } from "@/lib/core";
 import { framePathLite, useFrameworkIndex } from "@/lib/fwIndex";
 import { FrameworkPicker } from "@/components/frameworkPicker";
@@ -54,6 +55,8 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
   const [selected, setSelected] = useState<string[]>(
     PROVIDERS.some((p) => p.id === provider) ? [provider] : [],
   );
+  // Institutsarten unter „Weitere Institute“ (optional, nur mit OTH).
+  const [arts, setArts] = useState<string[]>([]);
   // Optionale Rahmenwerk-Auswahl: gesetzt = nur Updates zu diesen Rahmenwerken.
   const [frameworks, setFrameworks] = useState<string[]>([]);
   const [status, setStatus] = useState<Status>("idle");
@@ -101,7 +104,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, providers, frameworks }),
+        body: JSON.stringify({ email, providers, frameworks, arts: providers.includes("OTH") ? arts : [] }),
       });
       if (res.ok) {
         // Der Abonnieren-Klick gilt (per Hinweis unterm Formular) als Analyse-
@@ -315,6 +318,36 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
                 );
               })}
             </div>
+            {selected.includes("OTH") && (
+              <div className="mt-3 rounded-2xl border border-slate-200 p-3">
+                <p className="text-xs font-medium text-slate-700">
+                  {lang === "de" ? "Welche weiteren Institute?" : "Which other institutions?"}{" "}
+                  <span className="font-normal text-slate-400">
+                    {lang === "de" ? "(optional, sonst alle)" : "(optional, otherwise all)"}
+                  </span>
+                </p>
+                <div className="mt-2 flex flex-wrap gap-1.5" role="group" aria-label={lang === "de" ? "Institutsart wählen" : "Choose type"}>
+                  {SUBTYPES.map((s) => {
+                    const on = arts.includes(s.id);
+                    return (
+                      <button
+                        key={s.id}
+                        type="button"
+                        aria-pressed={on}
+                        onClick={() => setArts((prev) => (on ? prev.filter((x) => x !== s.id) : [...prev, s.id]))}
+                        className={`rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${
+                          on
+                            ? "border-slate-900 bg-slate-900 text-white"
+                            : "border-slate-200 bg-white text-slate-600 hover:border-slate-400 hover:text-slate-900"
+                        }`}
+                      >
+                        {tx(lang, s.n)}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
             {hint && (
               <p className="mt-2 text-xs text-red-600">
                 {lang === "de"

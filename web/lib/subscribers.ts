@@ -24,6 +24,9 @@ export type Subscriber = {
   // es gilt der Institutsart-Filter. Mit Auswahl entfällt die
   // "Neu in der Datenbank"-Mail.
   frameworks?: string[];
+  // Institutsarten unter „Weitere Institute“ (lib/subtypes.ts). Gesetzt =
+  // die Zielgruppe OTH gilt nur mit den Rahmenwerken dieser Arten.
+  arts?: string[];
 };
 
 type Stored = {
@@ -33,6 +36,7 @@ type Stored = {
   lastNotifiedAt?: string;
   lastFwNotifiedAt?: string;
   frameworks?: string[];
+  arts?: string[];
 };
 
 const KEY = "subs";
@@ -62,6 +66,7 @@ export async function addSubscriber(
   email: string,
   newProviders: string[],
   frameworks: string[] = [],
+  arts: string[] = [],
 ): Promise<"new" | "expanded" | "unchanged"> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
@@ -76,7 +81,14 @@ export async function addSubscriber(
   const fwChanged = existing
     ? nextFw.join(",") !== [...(existing.frameworks ?? [])].sort().join(",")
     : false;
-  if (existing && providers.size === before && !freqChanged && !fwChanged) return "unchanged";
+  // Institutsarten gelten nur zusammen mit OTH; die zuletzt bestätigte Auswahl
+  // ersetzt die alte. Eine Anmeldung ohne OTH lässt sie unverändert, eine mit
+  // OTH, aber ohne Auswahl hebt die Einschränkung auf.
+  const nextArts = newProviders.includes("OTH")
+    ? [...new Set(arts.filter(Boolean))].sort()
+    : [...(existing?.arts ?? [])].sort();
+  const artsChanged = existing ? nextArts.join(",") !== [...(existing.arts ?? [])].sort().join(",") : false;
+  if (existing && providers.size === before && !freqChanged && !fwChanged && !artsChanged) return "unchanged";
   await redis().hset(KEY, {
     [key]: {
       providers: [...providers],
@@ -85,11 +97,12 @@ export async function addSubscriber(
       ...(existing?.lastNotifiedAt ? { lastNotifiedAt: existing.lastNotifiedAt } : {}),
       ...(existing?.lastFwNotifiedAt ? { lastFwNotifiedAt: existing.lastFwNotifiedAt } : {}),
       ...(nextFw.length ? { frameworks: nextFw } : {}),
+      ...(nextArts.length ? { arts: nextArts } : {}),
     } satisfies Stored,
   });
   // Reine Rhythmus-Änderung wird gespeichert, zählt aber nicht als "Abo
   // erweitert" (keine irreführende Betreiber-Mail über neue Quellen).
-  if (existing && providers.size === before && !fwChanged) return "unchanged";
+  if (existing && providers.size === before && !fwChanged && !artsChanged) return "unchanged";
   return existing ? "expanded" : "new";
 }
 
@@ -109,6 +122,7 @@ export async function listSubscribers(): Promise<Subscriber[]> {
     lastNotifiedAt: s.lastNotifiedAt,
     lastFwNotifiedAt: s.lastFwNotifiedAt,
     frameworks: s.frameworks,
+    arts: s.arts,
   }));
 }
 

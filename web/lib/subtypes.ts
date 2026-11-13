@@ -34,8 +34,10 @@ const CROSS = ["sanctions", "dsgvo", "aiact", "hinschg", "csrd", "lksg", "dataac
 /* Leasing und Factoring: Finanzdienstleistungsinstitute nach § 1 Abs. 1a
    Satz 2 Nr. 9/10 KWG mit eingeschränktem KWG-Regime. DORA gilt über
    § 1a Abs. 2a KWG entsprechend; TLPT und Bank-Aufsichtsrecht (CRR, SREP,
-   Einlagensicherung) entfallen. */
-const LEASING_FACTORING = [...CROSS, "kwglf", "dora", "nis2", "ebaict", "amla", "gwg", "marisk", "instvergv"];
+   Einlagensicherung) entfallen (§ 2 Abs. 7a KWG). §§ 25c/25d KWG gelten,
+   daher Fit & Proper. Das Beschwerde-Rundschreiben 06/2018 richtet sich nur
+   an CRR-Kreditinstitute, ZAG-Institute und KVGen (geprüft 13.11.2026). */
+const LEASING_FACTORING = [...CROSS, "kwglf", "dora", "nis2", "ebaict", "amla", "gwg", "marisk", "instvergv", "fitproper"];
 
 /* Bausparkassen und Pfandbriefbanken sind CRR-Kreditinstitute: volles
    Bankaufsichtsrecht, aber ohne Zahlungsverkehr und Wertpapierdienstleistungen. */

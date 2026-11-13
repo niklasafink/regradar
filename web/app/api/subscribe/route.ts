@@ -2,6 +2,7 @@ import { PROVIDERS } from "@/lib/data";
 import { datafastVisitorId, identifyDatafastVisitor } from "@/lib/datafast";
 import { sendConfirmationEmail, sendSubscriberNotification } from "@/lib/email";
 import { framePath, frameworkById } from "@/lib/logic";
+import { SUBTYPES } from "@/lib/subtypes";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Obergrenze der Rahmenwerk-Auswahl (schützt Token-Länge und Redis-Eintrag).
@@ -14,6 +15,7 @@ export async function POST(request: Request) {
     provider?: string;
     frequency?: string;
     frameworks?: string[];
+    arts?: string[];
   };
   try {
     body = await request.json();
@@ -45,6 +47,10 @@ export async function POST(request: Request) {
   if (chosen.length === 0 && fws.length === 0) {
     return Response.json({ error: "no_provider" }, { status: 400 });
   }
+  // Institutsarten unter „Weitere Institute“: nur mit OTH, nur bekannte.
+  const arts = chosen.some((p) => p.id === "OTH")
+    ? SUBTYPES.filter((s) => Array.isArray(body.arts) && (body.arts.includes(s.id) || body.arts.includes(s.slug)))
+    : [];
   const fwIds = fws.map((f) => f.id);
   const fwLabels = fws.map((f) => framePath("de", f));
   // Nur noch wöchentlicher Versand (seit 14.10.2026); ein mitgeschicktes
@@ -55,10 +61,11 @@ export async function POST(request: Request) {
     await sendConfirmationEmail(
       email,
       chosen.map((p) => p.id),
-      chosen.map((p) => p.n.de),
+      chosen.map((p) => (p.id === "OTH" && arts.length ? arts.map((s) => s.n.de).join(", ") : p.n.de)),
       frequency,
       fwIds,
       fwLabels,
+      arts.map((s) => s.id),
     );
   } catch (e) {
     console.error("subscribe failed:", e);

@@ -16,6 +16,8 @@ export type SubscribePayload = {
   freq: Frequency;
   // Rahmenwerk-IDs; leer = keine Einschränkung (alle Updates der Institutsart).
   frameworks: string[];
+  // Institutsarten unter „Weitere Institute“ (lib/subtypes.ts); nur mit OTH.
+  arts?: string[];
   exp: number;
 };
 
@@ -31,9 +33,10 @@ export function createToken(
   providers: string[],
   freq: Frequency = "weekly",
   frameworks: string[] = [],
+  arts: string[] = [],
 ): string {
   const payload = Buffer.from(
-    JSON.stringify({ email, providers, freq, frameworks, exp: Date.now() + TOKEN_TTL_MS }),
+    JSON.stringify({ email, providers, freq, frameworks, ...(arts.length ? { arts } : {}), exp: Date.now() + TOKEN_TTL_MS }),
   ).toString("base64url");
   return `${payload}.${sign(payload)}`;
 }
@@ -59,6 +62,7 @@ export function verifyToken(token: string): SubscribePayload | null {
     data.freq = "weekly";
     // Alt-Tokens ohne frameworks-Feld: keine Rahmenwerk-Einschränkung.
     if (!Array.isArray(data.frameworks)) data.frameworks = [];
+    if (!Array.isArray(data.arts)) data.arts = [];
     return data;
   } catch {
     return null;
@@ -386,6 +390,7 @@ export async function sendConfirmationEmail(
   freq: Frequency = "weekly",
   frameworks: string[] = [],
   frameworkLabels: string[] = [],
+  arts: string[] = [],
 ) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -394,7 +399,7 @@ export async function sendConfirmationEmail(
   const resend = new Resend(apiKey);
   const base = process.env.APP_URL ?? "http://localhost:3000";
   const confirmUrl = `${base}/api/confirm?token=${encodeURIComponent(
-    createToken(email, providers, freq, frameworks),
+    createToken(email, providers, freq, frameworks, arts),
   )}`;
   // Mit Rahmenwerk-Auswahl gilt nur diese; sonst die Institutsarten.
   const scopeLabels = frameworkLabels.length ? frameworkLabels : providerLabels;

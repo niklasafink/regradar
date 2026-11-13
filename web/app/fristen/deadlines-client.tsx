@@ -11,25 +11,30 @@ import { PROVIDERS, type Txt } from "@/lib/base";
 import { authority, daysUntil, fmtDate, PROVIDER_SHORT, tx } from "@/lib/core";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
+import { SubtypeFilter } from "@/components/subtype-filter";
+import { subtypeIncludes, type Subtype } from "@/lib/subtypes";
 
 /** Offene Frist mit den angezeigten Feldern (vom Server vorbereitet, page.tsx). */
 export interface DeadlineEntry {
   slug: string;
   date: string;
   kind: "deadline" | "eff";
-  fw: { ents: string[]; n: Txt };
+  fw: { id: string; parent?: string; ents: string[]; n: Txt };
   u: { d: string; src: string; t: Txt; ti: Txt };
 }
 
 export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
   const { lang } = useStore();
   const [sel, setSel] = useState<string | null>(null);
+  const [sub, setSub] = useState<Subtype | null>(null);
 
   useEffect(() => {
     track("deadlines_screen_viewed");
   }, []);
 
-  const shown = sel ? all.filter((i) => i.fw.ents.includes(sel)) : all;
+  const shown = sel === "OTH" && sub
+    ? all.filter((i) => subtypeIncludes(sub, i.fw))
+    : sel ? all.filter((i) => i.fw.ents.includes(sel)) : all;
 
   const pill = (active: boolean) =>
     `inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
@@ -61,7 +66,7 @@ export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
             type="button"
             className={pill(sel === null)}
             aria-pressed={sel === null}
-            onClick={() => setSel(null)}
+            onClick={() => { setSel(null); setSub(null); }}
           >
             {lang === "de" ? "Alle Institute" : "All institutions"}
           </button>
@@ -71,7 +76,7 @@ export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
               type="button"
               className={pill(sel === p.id)}
               aria-pressed={sel === p.id}
-              onClick={() => setSel(sel === p.id ? null : p.id)}
+              onClick={() => { setSel(sel === p.id ? null : p.id); setSub(null); }}
             >
               {tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
               <span className="num text-xs opacity-70">
@@ -80,6 +85,14 @@ export function Deadlines({ items: all }: { items: DeadlineEntry[] }) {
             </button>
           ))}
         </nav>
+        {sel === "OTH" && (
+          <SubtypeFilter
+            lang={lang}
+            value={sub}
+            onChange={setSub}
+            count={(s) => all.filter((i) => subtypeIncludes(s, i.fw)).length}
+          />
+        )}
 
         {/* Fristen-Tabelle */}
         <div className="mt-6 overflow-x-auto">

@@ -12,7 +12,7 @@ function openItems(): DeadlineEntry[] {
   for (const { slug, fw, u } of UPDATE_PAGES) {
     const base = {
       slug,
-      fw: { ents: fw.ents, n: fw.n },
+      fw: { id: fw.id, ...(fw.parent ? { parent: fw.parent } : {}), ents: fw.ents, n: fw.n },
       u: { d: u.d, src: u.src, t: u.t, ti: u.ti },
     };
     if (u.deadline && daysUntil(u.deadline) >= 0)

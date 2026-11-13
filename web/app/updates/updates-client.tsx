@@ -17,6 +17,7 @@ import { ExportButton } from "@/components/export-dialog";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
 import { subtypeBySlug, subtypeIncludes, type Subtype } from "@/lib/subtypes";
+import { SubtypeFilter } from "@/components/subtype-filter";
 import { Timeline, type TlItem } from "./timeline";
 
 /** Update-Zeile mit den angezeigten Feldern (vom Server vorbereitet, page.tsx). */
@@ -197,13 +198,22 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
                 setSub(null);
               }}
             >
-              {sel === p.id && sub ? tx(lang, sub.n) : tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
+              {tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
               <span className="num text-xs opacity-70">
-                {sel === p.id && sub ? byInst.length : UPDATE_PAGES.filter((u) => u.fw.ents.includes(p.id)).length}
+                {UPDATE_PAGES.filter((u) => u.fw.ents.includes(p.id)).length}
               </span>
             </button>
           ))}
         </nav>
+
+        {sel === "OTH" && (
+          <SubtypeFilter
+            lang={lang}
+            value={sub}
+            onChange={setSub}
+            count={(st) => UPDATE_PAGES.filter((u) => subtypeIncludes(st, u.fw)).length}
+          />
+        )}
 
         {/* Art, zukünftige Normen und Ansicht; kombinierbar mit allen Filtern oben */}
         <div className="mt-3 flex flex-wrap items-center gap-1.5">
