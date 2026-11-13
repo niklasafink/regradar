@@ -3,6 +3,7 @@
 // aus einer Kurzrecherche (nur Vorschlag, der Nutzer bestätigt). Alles wird
 // auf den Merkmalskatalog (catalog.json) abgebildet. Server-only.
 
+import { displayName } from "./names";
 import { HINTS } from "./hints";
 import { createHash, randomUUID } from "node:crypto";
 import {
@@ -98,7 +99,7 @@ function setFact(p: Profile, id: string, v: boolean, src: FactSource, overwrite 
 
 export function emptyProfile(name: string, origin: Profile["origin"]): Profile {
   return {
-    id: randomUUID(), name, gattung: [], licenses: [], facts: {}, sources: {},
+    id: randomUUID(), name: displayName(name), gattung: [], licenses: [], facts: {}, sources: {},
     closed: false, origin, createdAt: now(), updatedAt: now(),
   };
 }
@@ -448,7 +449,7 @@ export function sanitizeProfile(raw: unknown): Profile | null {
   const bs = Number(r.bilanzsumme?.mrd);
   return {
     id: typeof r.id === "string" ? r.id.slice(0, 64) : randomUUID(),
-    name: r.name.slice(0, 160),
+    name: displayName(r.name).slice(0, 160),
     registryId: typeof r.registryId === "string" ? r.registryId.slice(0, 12) : undefined,
     lei: typeof r.lei === "string" ? r.lei.slice(0, 20) : undefined,
     gattung: Array.isArray(r.gattung) ? r.gattung.slice(0, 10).map((g) => String(g).slice(0, 120)) : [],

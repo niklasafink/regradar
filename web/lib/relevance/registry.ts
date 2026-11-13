@@ -7,6 +7,7 @@ import https from "node:https";
 import ecbJson from "./ecb-entities.json";
 import eiopaJson from "./eiopa-insurers.json";
 import { redis } from "../subscribers";
+import { displayName } from "./names";
 
 const INST_BASE = "https://portal.mvp.bafin.de/database/InstInfo/";
 const UA = "Mozilla/5.0 (compatible; regradar.de)";
@@ -82,7 +83,7 @@ export function searchRegistry(name: string): Promise<RegistryHit[]> {
     for (const row of table.match(/<tr class="(?:odd|even)">[\s\S]*?<\/tr>/g) ?? []) {
       const m = row.match(/institutId=(\d+)">([\s\S]*?)<\/a>/);
       const tds = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((x) => decode(x[1]));
-      if (m) out.push({ id: m[1], name: decode(m[2]), gattung: tds[1] ?? "" });
+      if (m) out.push({ id: m[1], name: displayName(decode(m[2])), gattung: tds[1] ?? "" });
     }
     return out.slice(0, 25);
   });
@@ -173,7 +174,7 @@ export function searchEiopa(name: string): RegistryHit[] {
     const n = normName(v);
     if (n.length < 3) continue;
     const out = EIOPA.filter((e) => normName(e.name).includes(n)).slice(0, 10)
-      .map((e) => ({ id: `eiopa:${e.country}:${e.id}`, name: e.name, gattung: `Versicherungsunternehmen, Sitz ${countryName(e.country)}` }));
+      .map((e) => ({ id: `eiopa:${e.country}:${e.id}`, name: displayName(e.name), gattung: `Versicherungsunternehmen, Sitz ${countryName(e.country)}` }));
     if (out.length) return out;
   }
   return [];
@@ -189,7 +190,7 @@ export function searchEcb(name: string): RegistryHit[] {
     for (const e of ECB) {
       if (e.country === "DE" || !normName(e.name).includes(n)) continue;
       const holding = e.type === "FH" || e.type === "MFH";
-      out.push({ id: `ecb:${e.lei}`, name: e.name, gattung: `${holding ? "Finanzholding" : "CRR-Kreditinstitut"}, Sitz ${countryName(e.country)}` });
+      out.push({ id: `ecb:${e.lei}`, name: displayName(e.name), gattung: `${holding ? "Finanzholding" : "CRR-Kreditinstitut"}, Sitz ${countryName(e.country)}` });
       if (out.length >= 10) return out;
     }
     if (out.length) return out;

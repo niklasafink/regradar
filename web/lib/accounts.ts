@@ -7,6 +7,7 @@
 import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { redis } from "./subscribers";
+import { displayName } from "./relevance/names";
 import { ensureCheck, profileValues, type DomainProfile, type Profile } from "./relevance/profile";
 
 export interface Account {
@@ -36,7 +37,10 @@ export const domainOf = (email: string) => normEmail(email).split("@")[1] ?? "";
 /* ---------- Konto und Profile ---------- */
 
 export async function getAccount(email: string): Promise<Account | null> {
-  return (await redis().get<Account>(ACCT(normEmail(email)))) ?? null;
+  const a = (await redis().get<Account>(ACCT(normEmail(email)))) ?? null;
+  // Altbestand: Profile, die vor der Namensbereinigung angelegt wurden.
+  for (const p of a?.profiles ?? []) p.name = displayName(p.name);
+  return a;
 }
 
 async function putAccount(a: Account): Promise<void> {
