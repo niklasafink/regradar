@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, SlimFooter } from "@/components/chrome";
 import { SubscribeBox } from "@/components/subscribe";
+import { OtherInstitutesTile } from "@/components/institute-dialog";
 import { PROVIDERS, type Txt } from "@/lib/base";
 import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf, tx, type Impact,
@@ -34,6 +35,9 @@ const impactPill = (i: Impact) =>
         : "border border-slate-200 text-slate-400"
   }`;
 
+const TILE =
+  "flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-5 py-4 text-left shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)] transition-all hover:border-slate-900 hover:shadow-[0_2px_4px_rgb(31_30_26/0.05),0_8px_24px_rgb(31_30_26/0.1)]";
+
 export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recent }: HomeData) {
   const { lang } = useStore();
   const me = useMe();
@@ -57,13 +61,13 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
           </div>
           <h1 className="font-heading mx-auto max-w-3xl text-balance text-4xl leading-[1.08] font-medium tracking-tight text-slate-900 sm:text-5xl">
             {lang === "de"
-              ? "Alle Regulatorik für Finanzinstitute, kostenlos an einem Ort."
-              : "All regulation for financial institutions, free in one place."}
+              ? "Neue Regulatorik für Finanzinstitute. Jeden Montag im Postfach, kostenlos."
+              : "New regulation for financial institutions. In your inbox every Monday, free."}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
             {lang === "de"
-              ? "Regulatorische Änderungen aus Deutschland und der EU kostenlos verfolgen. Sehen Sie auf einen Blick, welche neuen Vorgaben und Änderungen Ihr Institut betreffen."
-              : "Track regulatory change from Germany and the EU for free. See at a glance which new requirements and changes affect your institution."}
+              ? "Regulatorische Änderungen aus Deutschland und der EU. Sehen Sie auf einen Blick, welche neuen Vorgaben Ihr Institut betreffen."
+              : "Regulatory change from Germany and the EU. See at a glance which new requirements affect your institution."}
           </p>
 
           <SubscribeBox />
@@ -71,6 +75,11 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
           <div className="mt-10 grid gap-3 text-left sm:grid-cols-2 lg:grid-cols-3">
             {PROVIDERS.map((p) => {
               const count = providerCounts[p.id] ?? 0;
+              if (p.id === "OTH") {
+                return (
+                  <OtherInstitutesTile key={p.id} lang={lang} slug={p.slug} label={tx(lang, p.n)} className={TILE} />
+                );
+              }
               return (
                 <Link
                   key={p.id}
@@ -78,7 +87,7 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
                   data-fast-goal="institute_selected"
                   data-fast-goal-institute={p.id}
                   data-fast-goal-source="home"
-                  className="flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)] transition-all hover:border-slate-900 hover:shadow-[0_2px_4px_rgb(31_30_26/0.05),0_8px_24px_rgb(31_30_26/0.1)]"
+                  className={TILE}
                 >
                   <span className="text-sm font-semibold tracking-tight">{tx(lang, p.n)}</span>
                   <span className="num shrink-0 rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">

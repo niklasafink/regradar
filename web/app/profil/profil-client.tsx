@@ -387,6 +387,9 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       {/* Schritt 2: prüfen und ergänzen */}
       {step === "pruefen" && profile && (
         <section className="mt-8 space-y-6">
+          <div className="flex flex-wrap gap-2">
+            <button type="button" className={btn} disabled={busy} onClick={() => void saveDirect()}>{busy ? "Speichert …" : "Profil speichern"}</button>
+          </div>
           <div className={card}>
             <p className="font-heading text-lg font-medium tracking-tight text-slate-900">{profile.name}</p>
             {profile.address && <p className="mt-1 text-xs text-slate-500">{profile.address}</p>}
@@ -444,7 +447,7 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
                       </span>
                     </div>
                     {x.evidence && x.source === "recherche" && (
-                      <p className="mt-1 text-xs text-slate-400">Vorschlag: {x.evidence}</p>
+                      <p className="mt-1 text-xs text-slate-400 [overflow-wrap:anywhere]">Vorschlag: <EvidenceText text={x.evidence} /></p>
                     )}
                     <RelevanceHint merkmal={x.id} className="mt-1.5" />
                   </li>
@@ -511,4 +514,22 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       )}
     </div>
   );
+}
+
+/** Belegtext aus der Recherche: Markdown-Links als Link mit Domain, lange Adressen umbrechen. */
+function EvidenceText({ text }: { text: string }) {
+  const parts: React.ReactNode[] = [];
+  const re = /\[([^\]]+)\]\s*\((https?:\/\/[^)\s]+)\)|(https?:\/\/[^\s)]+)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    const href = m[2] ?? m[3];
+    let label = m[1];
+    if (!label) { try { label = new URL(href).hostname.replace(/^www\./, ""); } catch { label = "Quelle"; } }
+    parts.push(<a key={m.index} href={href} target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-700">{label} ↗</a>);
+    last = re.lastIndex;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
 }

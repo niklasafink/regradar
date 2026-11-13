@@ -572,7 +572,7 @@ const ENT_FEATURES: Record<string, string[]> = {
 };
 const ENT_LABEL: Record<string, string> = {
   CI: "Kreditinstitute", IF: "Wertpapierinstitute", AM: "Kapitalverwaltungsgesellschaften", PI: "Zahlungs- und E-Geld-Institute",
-  INS: "Versicherer", OTH: "Leasing, Factoring und sonstige Institute",
+  INS: "Versicherer", OTH: "weitere Institute",
 };
 const VORLAEUFIG = "Vorläufige Einschätzung, die genaue Prüfung folgt";
 

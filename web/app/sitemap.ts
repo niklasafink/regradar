@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { PROVIDERS } from "@/lib/data";
-import { dt, FRAMEWORKS, visibleFrameworks } from "@/lib/logic";
+import { dt, FRAMEWORKS, providerSlug, subtypeFrameworks, visibleFrameworks } from "@/lib/logic";
+import { SUBTYPES } from "@/lib/subtypes";
 import { frameworkPath } from "@/lib/seo";
 import { UPDATE_PAGES } from "@/lib/updates";
 
@@ -24,6 +25,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE}/r/${p.slug}`,
       changeFrequency: "daily",
       priority: 0.8,
+      lastModified: fws[0] ? dt(fws[0].latest) : undefined,
+    });
+  }
+
+  // Institutsarten unter „Weitere Institute“.
+  for (const s of SUBTYPES) {
+    const fws = subtypeFrameworks(s);
+    out.push({
+      url: `${BASE}/r/${providerSlug("OTH")}/${s.slug}`,
+      changeFrequency: "daily",
+      priority: 0.7,
       lastModified: fws[0] ? dt(fws[0].latest) : undefined,
     });
   }

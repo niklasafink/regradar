@@ -15,6 +15,8 @@ import { RelevanceFilter } from "@/components/relevance-filter";
 /** Rahmenwerk-Kachel mit den angezeigten Feldern (vom Server vorbereitet). */
 export interface BoardFramework {
   id: string; n: Txt; ref: string; jur: string; latest: string;
+  /** Ziel der Kachel (eigene Zielgruppe oder kanonische Seite). */
+  href: string;
   /** Anzahl Updates und Quelle des neuesten Updates (für das Logo). */
   count: number; src?: string;
   kids: { id: string; n: Txt; sn?: Txt }[];
@@ -28,9 +30,12 @@ export interface BoardProps {
   totalUpdates: number;
   listCount: number;
   topics: (Topic & { fws: BoardFramework[] })[];
+  /** Nur „Weitere Institute“: Institutsarten als Leiste über dem Board. */
+  subnav?: { slug: string; n: Txt }[];
+  activeSub?: string | null;
 }
 
-export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: BoardProps) {
+export function Board({ p, frameworkCount, totalUpdates, listCount, topics, subnav, activeSub }: BoardProps) {
   const { lang } = useStore();
   const [selected, setSelected] = useState<string[]>([]);
 
@@ -80,6 +85,34 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
           </div>
         </div>
 
+        {subnav && (
+          <nav
+            className="mt-5 flex flex-wrap items-center gap-1.5"
+            aria-label={lang === "de" ? "Institutsart" : "Type of institution"}
+          >
+            <span className="mr-1 text-xs text-slate-500">
+              {lang === "de" ? "Institutsart:" : "Type:"}
+            </span>
+            <Link
+              href={`/r/${p.slug}`}
+              className={pill(!activeSub)}
+              aria-current={!activeSub ? "page" : undefined}
+            >
+              {lang === "de" ? "Alle" : "All"}
+            </Link>
+            {subnav.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/r/${p.slug}/${s.slug}`}
+                className={pill(activeSub === s.slug)}
+                aria-current={activeSub === s.slug ? "page" : undefined}
+              >
+                {tx(lang, s.n)}
+              </Link>
+            ))}
+          </nav>
+        )}
+
         {/* Filterleiste */}
         <div className="mt-5 flex flex-wrap items-center gap-2">
           <div className="inline-flex items-center rounded-full border border-slate-200 bg-white p-0.5">
@@ -87,7 +120,7 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
               {lang === "de" ? "Rahmenwerke" : "Frameworks"}
             </span>
             <Link
-              href={`/updates?type=${p.slug}`}
+              href={`/updates?type=${p.slug}${activeSub ? `&art=${activeSub}` : ""}`}
               className="rounded-full px-3.5 py-1 text-xs font-medium text-slate-500 transition-colors hover:text-slate-900"
             >
               {lang === "de" ? "Alle Updates" : "All updates"}
@@ -156,7 +189,7 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics }: Bo
                 return (
                   <Link
                     key={f.id}
-                    href={`/r/${p.slug}/f/${f.id}`}
+                    href={f.href}
                     className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)] transition-all hover:border-slate-900 hover:shadow-[0_2px_4px_rgb(31_30_26/0.05),0_8px_24px_rgb(31_30_26/0.1)]"
                   >
                     <div className="flex items-start justify-between gap-3">

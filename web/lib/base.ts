@@ -71,8 +71,8 @@ export const PROVIDERS: Provider[] = [
   { id:"INS", slug:"versicherung", n:{de:"Versicherungsunternehmen",en:"Insurance undertaking"},
     s:{de:"Versicherungsgeschäft nach VAG und Solvency II",en:"Insurance business under VAG and Solvency II"},
     tags:["Solvency II","IDD","SFDR","DORA"] },
-  { id:"OTH", slug:"sonstige", n:{de:"Leasing, Factoring, Sonstige",en:"Leasing, factoring, other"},
-    s:{de:"Finanzdienstleistungen mit eingeschränkter Erlaubnis",en:"Financial services under a limited licence"},
+  { id:"OTH", slug:"weitere-institute", n:{de:"Weitere Institute",en:"Other institutions"},
+    s:{de:"Leasing, Factoring, Bausparkassen, Pfandbriefbanken, Förderbanken, Kryptowerte-Dienstleister, Token-Emittenten, Handelsplätze und Finanzholdings",en:"Leasing, factoring, building and loan associations, Pfandbrief banks, promotional banks, crypto-asset service providers, token issuers, trading venues and financial holdings"},
     tags:["GwG","HinSchG","NIS-2","BGB"] }
 ];
 

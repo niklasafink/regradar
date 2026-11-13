@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { Board } from "./board-client";
 import { PROVIDERS } from "@/lib/data";
-import { childrenOf, PROVIDER_SHORT, providerById, topicsWithContent, visibleFrameworks } from "@/lib/logic";
+import { PROVIDER_SHORT, providerById, visibleFrameworks } from "@/lib/logic";
+import { boardData } from "./board-data";
 import {
   breadcrumbLd, frameworkPath, ldGraph, providerDescription, providerTitle, SITE_URL, webPageLd,
 } from "@/lib/seo";
@@ -20,15 +21,7 @@ export default async function Page({ params }: { params: Promise<{ provider: str
   if (!p) notFound();
   const all = visibleFrameworks(p.id, null);
   const list = all.filter((f) => !f.parent);
-  const topics = topicsWithContent(list).map((t) => ({
-    id: t.id, n: t.n, d: t.d,
-    fws: t.fws.map((f) => ({
-      id: f.id, n: f.n, ref: f.ref, jur: f.jur, latest: f.latest,
-      count: f.u.length,
-      ...(f.u[0]?.src ? { src: f.u[0].src } : {}),
-      kids: childrenOf(f.id).map((k) => ({ id: k.id, n: k.n, ...(k.sn ? { sn: k.sn } : {}) })),
-    })),
-  }));
+  const data = boardData(p, all);
   const path = `/r/${p.slug}`;
   const ld = ldGraph(
     {
@@ -54,13 +47,7 @@ export default async function Page({ params }: { params: Promise<{ provider: str
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ld }} />
-    <Board
-      p={p}
-      frameworkCount={all.length}
-      totalUpdates={all.reduce((n, f) => n + f.u.length, 0)}
-      listCount={list.length}
-      topics={topics}
-    />
+    <Board p={p} {...data} />
     </>
   );
 }

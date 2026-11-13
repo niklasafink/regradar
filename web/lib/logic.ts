@@ -3,6 +3,7 @@ import {
   type Cond, type Framework, type Lang, type Topic, type Txt,
 } from "./data";
 import { FRAMEWORKS_LIVE as FRAMEWORKS } from "./live";
+import { subtypeIncludes, type Subtype } from "./subtypes";
 
 export { FRAMEWORKS };
 
@@ -30,6 +31,17 @@ export function visibleFrameworks(provider: string, answers: Answers | null): Fr
     .map((f) => {
       const u = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
       // Rahmenwerke ohne Updates (frisch angebunden) sortieren ans Ende.
+      return { ...f, u, latest: u[0]?.d ?? "01.01.2020" };
+    })
+    .sort((a, b) => dt(b.latest).getTime() - dt(a.latest).getTime());
+}
+
+/** Rahmenwerke einer Institutsart unter „Weitere Institute“ (lib/subtypes.ts). */
+export function subtypeFrameworks(s: Subtype): FrameworkView[] {
+  return FRAMEWORKS
+    .filter((f) => subtypeIncludes(s, f))
+    .map((f) => {
+      const u = [...f.u].sort((a, b) => dt(b.d).getTime() - dt(a.d).getTime());
       return { ...f, u, latest: u[0]?.d ?? "01.01.2020" };
     })
     .sort((a, b) => dt(b.latest).getTime() - dt(a.latest).getTime());

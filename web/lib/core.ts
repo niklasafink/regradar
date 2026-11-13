@@ -125,13 +125,13 @@ export const PROVIDER_SHORT: Record<string, Txt> = {
   IF: { de: "Wertpapierinstitute", en: "Investment firms" },
   PI: { de: "Zahlungsinstitute", en: "Payment firms" },
   INS: { de: "Versicherer", en: "Insurers" },
-  OTH: { de: "Sonstige", en: "Other" },
+  OTH: { de: "Weitere Institute", en: "Other institutions" },
 };
 
 /* Löst URL-Slug ("bank") oder interne ID ("CI") auf; alte Links mit
    ID-Pfaden (/r/CI) bleiben dadurch funktionsfähig. */
 export const providerById = (idOrSlug: string) =>
-  PROVIDERS.find((p) => p.slug === idOrSlug || p.id === idOrSlug);
+  PROVIDERS.find((p) => p.slug === idOrSlug || p.id === idOrSlug || (idOrSlug === "sonstige" && p.id === "OTH"));
 export const providerSlug = (id: string) =>
   PROVIDERS.find((p) => p.id === id)?.slug ?? id;
 export const topicById = (id: string) => TOPICS.find((t) => t.id === id);

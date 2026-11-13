@@ -15,7 +15,7 @@ const PROVIDER_SLUGS: Record<string, string> = {
   IF: "wertpapierinstitut",
   PI: "zahlungsinstitut",
   INS: "versicherung",
-  OTH: "sonstige",
+  OTH: "weitere-institute",
 };
 
 // Sicherheits-Header für alle Antworten. Die CSP erlaubt Inline-Skripte (Next.js,
@@ -63,6 +63,10 @@ const nextConfig: NextConfig = {
     return Object.entries(PROVIDER_SLUGS).flatMap(([id, slug]) => [
       { source: `/r/${id}`, destination: `/r/${slug}`, permanent: true },
       { source: `/r/${id}/:path*`, destination: `/r/${slug}/:path*`, permanent: true },
+    ]).concat([
+      // Umbenennung „Sonstige“ → „Weitere Institute“ (13.11.2026).
+      { source: "/r/sonstige", destination: "/r/weitere-institute", permanent: true },
+      { source: "/r/sonstige/:path*", destination: "/r/weitere-institute/:path*", permanent: true },
     ]);
   },
 };

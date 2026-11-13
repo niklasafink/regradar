@@ -3,7 +3,8 @@
 // und wächst damit automatisch mit jedem Scraper-Export mit.
 
 import { PROVIDERS } from "@/lib/data";
-import { authority, FRAMEWORKS, visibleFrameworks } from "@/lib/logic";
+import { authority, FRAMEWORKS, providerSlug, visibleFrameworks } from "@/lib/logic";
+import { SUBTYPES } from "@/lib/subtypes";
 import { frameworkPath } from "@/lib/seo";
 import { firstParagraph, UPDATE_PAGES } from "@/lib/updates";
 
@@ -22,6 +23,10 @@ export function GET() {
     ...PROVIDERS.map(
       (p) => `- [${p.n.de}](${BASE}/r/${p.slug}): ${p.s.de}`,
     ),
+    "",
+    "### Weitere Institute nach Art",
+    "",
+    ...SUBTYPES.map((s) => `- [${s.pl}](${BASE}/r/${providerSlug("OTH")}/${s.slug})`),
     "",
     "## Rahmenwerke",
     "",

@@ -16,12 +16,13 @@ import { RelevanceChip } from "@/components/relevance-chip";
 import { ExportButton } from "@/components/export-dialog";
 import { useStore } from "@/lib/store";
 import { track } from "@/lib/track";
+import { subtypeBySlug, subtypeIncludes, type Subtype } from "@/lib/subtypes";
 import { Timeline, type TlItem } from "./timeline";
 
 /** Update-Zeile mit den angezeigten Feldern (vom Server vorbereitet, page.tsx). */
 export interface UpdateRow {
   slug: string;
-  fw: { ents: string[]; n: Txt };
+  fw: { id: string; parent?: string; ents: string[]; n: Txt };
   u: { d: string; src: string; t: Txt; ti: Txt; deadline?: string; eff?: string; imp?: Impact };
 }
 
@@ -60,6 +61,8 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
   );
   const { lang } = useStore();
   const [sel, setSel] = useState<string | null>(null);
+  // Institutsart unter „Weitere Institute“ (?type=weitere-institute&art=leasing).
+  const [sub, setSub] = useState<Subtype | null>(null);
   const [art, setArt] = useState<Art>("updates");
   const [future, setFuture] = useState(false);
   const [view, setView] = useState<View>("liste");
@@ -70,12 +73,17 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
     // Sprechender Slug ("bank") ist kanonisch, alte ID-Links ("CI") bleiben gültig.
     const match = type ? PROVIDERS.find((p) => p.slug === type || p.id === type) : undefined;
     if (match) setSel(match.id);
+    const art = new URLSearchParams(window.location.search).get("art");
+    const s = art ? subtypeBySlug(art) : undefined;
+    if (s) { setSel("OTH"); setSub(s); }
     track("updates_screen_viewed");
   }, []);
 
-  const byInst = sel
-    ? UPDATE_PAGES.filter((p) => p.fw.ents.includes(sel))
-    : UPDATE_PAGES;
+  const byInst = sel === "OTH" && sub
+    ? UPDATE_PAGES.filter((p) => subtypeIncludes(sub, p.fw))
+    : sel
+      ? UPDATE_PAGES.filter((p) => p.fw.ents.includes(sel))
+      : UPDATE_PAGES;
   // „Zukünftige Normen“: Anwendungsbeginn oder Frist liegt noch vor uns
   const futureCount = byInst.filter((p) => upcoming(p.u)).length;
   const showUpdates = art !== "praxis";
@@ -171,7 +179,7 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
             type="button"
             className={pill(sel === null)}
             aria-pressed={sel === null}
-            onClick={() => setSel(null)}
+            onClick={() => { setSel(null); setSub(null); }}
           >
             {lang === "de" ? "Alle Institute" : "All institutions"}
           </button>
@@ -186,11 +194,12 @@ export function AllUpdates({ fws, rows, praxis }: UpdatesData) {
                   track("institute_selected", { institute: p.id, source: "updates_filter" });
                 }
                 setSel(sel === p.id ? null : p.id);
+                setSub(null);
               }}
             >
-              {tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
+              {sel === p.id && sub ? tx(lang, sub.n) : tx(lang, PROVIDER_SHORT[p.id] ?? p.n)}
               <span className="num text-xs opacity-70">
-                {UPDATE_PAGES.filter((u) => u.fw.ents.includes(p.id)).length}
+                {sel === p.id && sub ? byInst.length : UPDATE_PAGES.filter((u) => u.fw.ents.includes(p.id)).length}
               </span>
             </button>
           ))}

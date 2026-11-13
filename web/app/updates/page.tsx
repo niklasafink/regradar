@@ -14,7 +14,7 @@ export default function Page() {
   for (const { slug, fw, u } of UPDATE_PAGES) {
     let f = index.get(fw.id);
     if (f === undefined) {
-      f = data.fws.push({ ents: fw.ents, n: fw.n }) - 1;
+      f = data.fws.push({ id: fw.id, ...(fw.parent ? { parent: fw.parent } : {}), ents: fw.ents, n: fw.n }) - 1;
       index.set(fw.id, f);
     }
     data.rows.push({
