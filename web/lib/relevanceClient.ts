@@ -347,9 +347,18 @@ export function useRelevance(keys: string[], enabled: boolean, cheap: string[] =
 
 /* ---------- Filter nach Einschlägigkeit ---------- */
 
-export type RelFilter = "alle" | Status;
+/** "alle" oder eine Auswahl von Status (Mehrfachauswahl, nie leer). */
+export type RelFilter = "alle" | Status[];
 const FILTER_KEY = "rr.relFilter";
 const FILTER_EVENT = "rr:relfilter";
+
+/** Normalisiert: leere oder vollständige Auswahl → "alle", Reihenfolge fest. */
+export function normRelFilter(v: RelFilter): RelFilter {
+  if (v === "alle") return "alle";
+  const order: Status[] = ["ja", "teilweise", "nein", "unsicher"];
+  const sel = order.filter((s) => v.includes(s));
+  return sel.length === 0 || sel.length === order.length ? "alle" : sel;
+}
 
 /** Auswahl gilt seitenübergreifend für die Sitzung. */
 export function useRelFilter(): [RelFilter, (f: RelFilter) => void] {
@@ -357,8 +366,12 @@ export function useRelFilter(): [RelFilter, (f: RelFilter) => void] {
   useEffect(() => {
     const read = () => {
       try {
-        const v = sessionStorage.getItem(FILTER_KEY) as RelFilter | null;
-        setF(v && (v === "alle" || v in STATUS_LABEL) ? v : "alle");
+        const raw = sessionStorage.getItem(FILTER_KEY);
+        // Altformat: einzelner Status als String; neu: kommagetrennt
+        const list = raw && raw !== "alle"
+          ? raw.split(",").filter((x): x is Status => x in STATUS_LABEL)
+          : [];
+        setF(normRelFilter(list));
       } catch { /* privat-Modus */ }
     };
     read();
@@ -366,16 +379,17 @@ export function useRelFilter(): [RelFilter, (f: RelFilter) => void] {
     return () => window.removeEventListener(FILTER_EVENT, read);
   }, []);
   const set = (v: RelFilter) => {
-    setF(v);
-    try { sessionStorage.setItem(FILTER_KEY, v); } catch { /* privat-Modus */ }
+    const n = normRelFilter(v);
+    setF(n);
+    try { sessionStorage.setItem(FILTER_KEY, n === "alle" ? "alle" : n.join(",")); } catch { /* privat-Modus */ }
     window.dispatchEvent(new Event(FILTER_EVENT));
   };
   return [f, set];
 }
 
 /** Passt ein Ergebnis zum Filter? Ungeprüfte Einträge erscheinen nur unter „Alle“. */
-export function relMatches(f: RelFilter, r?: MatchResult): boolean {
+export function relMatches(f: RelFilter | Status, r?: MatchResult): boolean {
   if (f === "alle") return true;
   if (!r || isPending(r)) return false;
-  return r.status === f;
+  return typeof f === "string" ? r.status === f : f.includes(r.status);
 }

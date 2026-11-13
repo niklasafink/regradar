@@ -2,8 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
-  isPending, relMatches, STATUS_LABEL, type MatchResult, type RelFilter, type Status,
+  isPending, normRelFilter, relMatches, STATUS_LABEL, type MatchResult, type RelFilter, type Status,
 } from "@/lib/relevanceClient";
+
+const isOn = (v: RelFilter, s: Status) => v !== "alle" && v.includes(s);
+/** Status an- oder abwählen; die übrige Auswahl bleibt bestehen. */
+const toggle = (v: RelFilter, s: Status): RelFilter =>
+  normRelFilter(v === "alle" ? [s] : v.includes(s) ? v.filter((x) => x !== s) : [...v, s]);
 
 const ORDER: Status[] = ["ja", "teilweise", "nein", "unsicher"];
 const SHORT: Record<Status, string> = {
@@ -14,7 +19,7 @@ const SHORT: Record<Status, string> = {
 };
 
 /** Filterleiste „Alle / Einschlägig / Teilweise / Nicht einschlägig / Unklar“
-    mit Anzahl je Status. Nur sichtbar, wenn ein Profil vorliegt (`show`). */
+    mit Anzahl je Status. Mehrere Status sind kombinierbar. Nur sichtbar, wenn ein Profil vorliegt (`show`). */
 export function RelevanceFilter({
   keys, rel, value, onChange, show, className = "", variant = "pills",
 }: {
@@ -49,9 +54,9 @@ export function RelevanceFilter({
             key={s}
             type="button"
             title={STATUS_LABEL[s]}
-            className={pill(value === s)}
-            aria-pressed={value === s}
-            onClick={() => onChange(value === s ? "alle" : s)}
+            className={pill(isOn(value, s))}
+            aria-pressed={isOn(value, s)}
+            onClick={() => onChange(toggle(value, s))}
           >
             {SHORT[s]}
             <span className="num text-xs opacity-70">{count(s)}</span>
@@ -92,12 +97,13 @@ function RelevanceDropdown({
 
   const count = (f: Status) => keys.filter((k) => relMatches(f, rel[k])).length;
   const open_ = keys.filter((k) => !rel[k] || isPending(rel[k])).length;
-  const options: { v: RelFilter; label: string; n: number }[] = [
-    { v: "alle", label: "Alle", n: keys.length },
-    ...ORDER.map((s) => ({ v: s as RelFilter, label: SHORT[s], n: count(s) })),
-  ];
-  const cur = options.find((o) => o.v === value) ?? options[0];
   const active = value !== "alle";
+  const curLabel = !active ? "Alle" : value.length === 1 ? SHORT[value[0]] : `${value.length} ausgewählt`;
+  const curN = !active ? keys.length : keys.filter((k) => relMatches(value, rel[k])).length;
+  const item = (on: boolean) =>
+    `flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2 text-left text-sm transition-colors ${
+      on ? "bg-slate-900 text-white" : "text-slate-700 hover:bg-slate-100"
+    }`;
   return (
     <div ref={box} className={`relative ${className}`}>
       <button
@@ -112,27 +118,42 @@ function RelevanceDropdown({
         }`}
       >
         <span className={active ? "opacity-70" : "text-slate-400"}>Einschlägigkeit:</span>
-        {cur.label}
-        <span className="num text-xs opacity-70">{cur.n}</span>
+        {curLabel}
+        <span className="num text-xs opacity-70">{curN}</span>
         <svg aria-hidden viewBox="0 0 12 12" className={`size-3 transition-transform ${open ? "rotate-180" : ""}`}>
           <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
       {open && (
-        <div role="listbox" aria-label="Einschlägigkeit" className="absolute left-0 z-30 mt-1.5 w-64 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-xl">
-          {options.map((o) => (
+        <div role="listbox" aria-multiselectable="true" aria-label="Einschlägigkeit" className="absolute left-0 z-30 mt-1.5 w-64 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-xl">
+          <button
+            type="button"
+            role="option"
+            aria-selected={!active}
+            onClick={() => { onChange("alle"); setOpen(false); }}
+            className={item(!active)}
+          >
+            Alle
+            <span className="num text-xs opacity-70">{keys.length}</span>
+          </button>
+          {ORDER.map((s) => (
             <button
-              key={o.v}
+              key={s}
               type="button"
               role="option"
-              aria-selected={value === o.v}
-              onClick={() => { onChange(o.v); setOpen(false); }}
-              className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-sm transition-colors ${
-                value === o.v ? "bg-slate-900 text-white" : "text-slate-700 hover:bg-slate-100"
-              }`}
+              aria-selected={isOn(value, s)}
+              onClick={() => onChange(toggle(value, s))}
+              className={item(isOn(value, s))}
             >
-              {o.label}
-              <span className="num text-xs opacity-70">{o.n}</span>
+              <span className="inline-flex items-center gap-2">
+                <span aria-hidden className={`grid size-3.5 place-items-center rounded border ${isOn(value, s) ? "border-white" : "border-slate-300"}`}>
+                  {isOn(value, s) && (
+                    <svg viewBox="0 0 12 12" className="size-2.5"><path d="M2.5 6.5 5 9l4.5-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  )}
+                </span>
+                {SHORT[s]}
+              </span>
+              <span className="num text-xs opacity-70">{count(s)}</span>
             </button>
           ))}
           {open_ > 0 && (
