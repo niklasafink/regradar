@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:53:04Z",
+  "generated_at": "2026-11-13T17:06:01Z",
   "updates": {
     "bcbs": [
       {
@@ -2318,33 +2318,6 @@
         "refnum": "ESMA75-113276571-1525"
       },
       {
-        "d": "26.05.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Kryptomärkteanzeigenverordnung (KMAnzV)",
-          "en": "Crypto Markets Notification Ordinance (KMAnzV)"
-        },
-        "sl": "verordnung-ueber-die-anzeigen-und-die-vorlage-von-unterlagen-nach-dem-kryptomaer",
-        "s": {
-          "de": "Die Kryptomärkteanzeigenverordnung (KMAnzV) konkretisiert die Anzeigepflichten und die Vorlage von Unterlagen nach dem Kryptomärkteaufsichtsgesetz (KMAG). Sie legt fest, welche Informationen und Dokumente Unternehmen bei der BaFin einreichen müssen, um den Anforderungen des KMAG nachzukommen.\n\nDiese Verordnung ist relevant für alle Unternehmen, die unter das KMAG fallen und Kryptowerte-Dienstleistungen anbieten oder emittieren. Sie müssen ihre internen Prozesse und Meldewege an die neuen Vorgaben anpassen, um die fristgerechte und vollständige Einreichung der erforderlichen Anzeigen und Unterlagen sicherzustellen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung der Verordnung hin, was die praktische Relevanz für die betroffenen Unternehmen unterstreicht.\n\nDie Verordnung wurde am 26.05.2026 im Bundesgesetzblatt veröffentlicht und ist somit in Kraft getreten.",
-          "en": "The Kryptomärkteanzeigenverordnung (KMAnzV) specifies the notification requirements and the submission of documents under the Kryptomärkteaufsichtsgesetz (KMAG). It defines which information and documents companies must submit to BaFin to comply with the KMAG requirements.\n\nThis regulation is relevant for all companies falling under the KMAG that offer or issue crypto-asset services. They must adapt their internal processes and reporting channels to the new requirements to ensure timely and complete submission of the necessary notifications and documents. KPMG highlights the publication of the regulation in an expert article, underscoring its practical relevance for affected companies.\n\nThe regulation was published in the Federal Law Gazette on May 26, 2026, and has thus entered into force."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/153",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Kryptomärkteanzeigenverordnung im BGBl. veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/kryptomaerkteanzeigenverordnung-im-bgbl-veroeffentlicht-2/",
-            "d": "26.05.2026"
-          }
-        ]
-      },
-      {
         "d": "20.05.2026",
         "t": {
           "de": "Meldung",
@@ -2392,33 +2365,6 @@
         "refnum": "Konsultation 18/2025"
       },
       {
-        "d": "28.08.2025",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Kryptomärktemitteilungs-Verordnung (KMMV) zur Offenlegung von Insiderinformationen",
-          "en": "Crypto Market Disclosure Regulation (KMMV) on Insider Information Disclosure"
-        },
-        "sl": "verordnung-zur-konkretisierung-von-mitteilungspflichten-zur-offenlegung-von-insi",
-        "s": {
-          "de": "Die Kryptomärktemitteilungs-Verordnung (KMMV) konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes. Sie legt fest, wie und wann relevante Informationen über Kryptomärkte zu veröffentlichen sind, um Markttransparenz und Anlegerschutz zu gewährleisten.\n\nDiese Verordnung ist für Unternehmen relevant, die im Kryptomarkt tätig sind und unter die Aufsicht des Kryptomärkteaufsichtsgesetzes fallen. Sie müssen ihre internen Prozesse anpassen, um Insiderinformationen fristgerecht und korrekt offenzulegen, um Compliance sicherzustellen und mögliche Sanktionen zu vermeiden.\n\nDie Verordnung wurde am 28.08.2025 im Bundesgesetzblatt veröffentlicht und trat am 25.08.2025 in Kraft. Die Federführung liegt bei der Bundesanstalt für Finanzdienstleistungsaufsicht.",
-          "en": "The Kryptomärktemitteilungs-Verordnung (KMMV) specifies the notification obligations for the disclosure of insider information according to § 36 of the Kryptomärkteaufsichtsgesetz. It defines how and when relevant information about crypto markets must be published to ensure market transparency and investor protection.\n\nThis regulation is relevant for companies active in the crypto market and subject to the supervision of the Kryptomärkteaufsichtsgesetz. They must adapt their internal processes to disclose insider information promptly and correctly to ensure compliance and avoid potential sanctions.\n\nThe regulation was published in the Federal Law Gazette on August 28, 2025, and came into force on August 25, 2025. The Federal Financial Supervisory Authority is responsible for its implementation."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Kryptomärktemitteilungs-Verordnung (KMMV) im BGBI. veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/kryptomaerktemitteilungs-verordnung-kmmv-im-bgbi-veroeffentlicht/",
-            "d": "01.09.2025"
-          }
-        ]
-      },
-      {
         "d": "03.01.2025",
         "t": {
           "de": "Auslegung",
@@ -2444,6 +2390,45 @@
             "d": "10.01.2025"
           }
         ]
+      },
+      {
+        "d": "03.01.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Zulassungsanforderungen für ART und EMT nach MiCAR",
+          "en": "Guidance Note on Authorization Requirements for ARTs and EMTs under MiCAR"
+        },
+        "sl": "merkblatt-zulassungsanforderungen-bzgl-art-und-emt-nach-micar",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu den Zulassungsanforderungen für vermögenswertereferenzierte Token (ART) und E-Geld-Token (EMT) gemäß der MiCAR veröffentlicht. Es erläutert die Definitionen dieser Kryptowerte und grenzt sie von „anderen“ Kryptowerten ab, für die weniger strenge Anforderungen gelten. Das Merkblatt geht auf die Erlaubnispflichten, Anzeigepflichten gegenüber der BaFin und die Notwendigkeit eines Kryptowerte-Whitepapers ein, die für ART und EMT bei öffentlichem Angebot oder Zulassung zum Handel bestehen.\n\nDas Merkblatt richtet sich an Emittenten und Anbieter von ART und EMT. Es klärt die Begriffe des öffentlichen Angebots und der Zulassung zum Handel und betont, dass ART und EMT im Gegensatz zu „anderen“ Kryptowerten von einem Emittenten ausgegeben werden müssen. Es wird auch der Unterschied zwischen E-Geld-Token und traditionellem E-Geld nach dem ZAG herausgestellt, insbesondere dass EMT nicht zwingend für Zahlungszwecke verwendet werden müssen und keine Forderung gegenüber dem Emittenten voraussetzen.\n\nDie MiCAR ist am 29. Juni 2023 in Kraft getreten und ist ab dem 30. Dezember 2024 unmittelbar anwendbar, wobei die Titel III und IV bereits ab dem 30. Juni 2024 gelten.",
+          "en": "BaFin has published a guidance note on the authorization requirements for asset-referenced tokens (ARTs) and e-money tokens (EMTs) under MiCAR. It clarifies the definitions of these crypto-assets and distinguishes them from 'other' crypto-assets, which are subject to less stringent requirements. The guidance note addresses the licensing obligations, notification requirements to BaFin, and the necessity of a crypto-asset white paper for ARTs and EMTs when offered to the public or admitted to trading.\n\nThe guidance note is aimed at issuers and providers of ARTs and EMTs. It clarifies the concepts of public offering and admission to trading, emphasizing that ARTs and EMTs, unlike 'other' crypto-assets, must be issued by an issuer. It also highlights the difference between e-money tokens and traditional e-money under the German Payment Services Supervision Act (ZAG), particularly that EMTs do not necessarily have to be used for payment purposes and do not require a claim against the issuer.\n\nMiCAR formally entered into force on June 29, 2023, and will be directly applicable from December 30, 2024, with Titles III and IV already applicable from June 30, 2024."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_zulassung_art_emt.html",
+        "imp": "high"
+      },
+      {
+        "d": "26.11.2024",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Kryptomärktemitteilungs-Verordnung (KMMV) (Konsultation 09/2024)",
+          "en": "Consultation on the Crypto Market Disclosure Ordinance (KMMV) (Consultation 09/2024)"
+        },
+        "sl": "konsultation-09-2024-konsultation-des-entwurfs-einer-kryptomaerktemitteilungs-ve",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf einer Kryptomärktemitteilungs-Verordnung (KMMV). Diese Verordnung konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes (KMAG-E).\n\nDie KMMV dient der weiteren Umsetzung des KMAG-E, der MiCAR und der technischen Durchführungsstandards nach Artikel 88 Absatz 4 MiCAR. Sie regelt die Übermittlung veröffentlichter Insiderinformationen an die BaFin sowie die Mitteilung über den Aufschub der Offenlegung von Insiderinformationen an die BaFin.\n\nDer Entwurf betrifft Emittenten, Anbieter oder Antragsteller, die nach Artikel 88 Absatz 1 MiCAR zur Veröffentlichung von Insiderinformationen verpflichtet sind und für die Deutschland der Herkunftsmitgliedstaat nach Artikel 3 Absatz 1 Nummer 33 MiCAR ist. Die Konsultation erfolgt unter Vorbehalt der Verabschiedung des Finanzmarktdigitalisierungsgesetzes und der Subdelegation der Verordnungsermächtigung an die BaFin.\n\nStellungnahmen zum Entwurf können bis zum 13. Dezember 2024 eingereicht werden.",
+          "en": "BaFin is consulting on the draft of a Crypto Market Disclosure Ordinance (KMMV). This ordinance specifies the notification obligations for the disclosure of inside information under Section 36 of the Crypto Market Supervision Act (KMAG-E).\n\nThe KMMV serves to further implement the KMAG-E, MiCAR, and the technical implementing standards under Article 88(4) MiCAR. It regulates the transmission of published inside information to BaFin and the notification to BaFin regarding the delayed disclosure of inside information.\n\nThe draft concerns issuers, offerors, or applicants who are obliged to publish inside information under Article 88(1) MiCAR and for whom Germany is the home Member State under Article 3(1)(33) MiCAR. The consultation is subject to the adoption of the Financial Market Digitalisation Act and the sub-delegation of the regulatory authorization to BaFin.\n\nComments on the draft can be submitted until December 13, 2024."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2024/kon_09_24_Kryptomaerktemitteilungs-VO_KMMV.html",
+        "imp": "medium",
+        "refnum": "Konsultation 09/2024"
       }
     ],
     "esgrating": [
@@ -6449,6 +6434,62 @@
         "imp": "high"
       }
     ],
+    "kmag": [
+      {
+        "d": "26.05.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Kryptomärkteanzeigenverordnung (KMAnzV)",
+          "en": "Crypto Markets Notification Ordinance (KMAnzV)"
+        },
+        "sl": "verordnung-ueber-die-anzeigen-und-die-vorlage-von-unterlagen-nach-dem-kryptomaer",
+        "s": {
+          "de": "Die Kryptomärkteanzeigenverordnung (KMAnzV) konkretisiert die Anzeigepflichten und die Vorlage von Unterlagen nach dem Kryptomärkteaufsichtsgesetz (KMAG). Sie legt fest, welche Informationen und Dokumente Unternehmen bei der BaFin einreichen müssen, um den Anforderungen des KMAG nachzukommen.\n\nDiese Verordnung ist relevant für alle Unternehmen, die unter das KMAG fallen und Kryptowerte-Dienstleistungen anbieten oder emittieren. Sie müssen ihre internen Prozesse und Meldewege an die neuen Vorgaben anpassen, um die fristgerechte und vollständige Einreichung der erforderlichen Anzeigen und Unterlagen sicherzustellen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung der Verordnung hin, was die praktische Relevanz für die betroffenen Unternehmen unterstreicht.\n\nDie Verordnung wurde am 26.05.2026 im Bundesgesetzblatt veröffentlicht und ist somit in Kraft getreten.",
+          "en": "The Kryptomärkteanzeigenverordnung (KMAnzV) specifies the notification requirements and the submission of documents under the Kryptomärkteaufsichtsgesetz (KMAG). It defines which information and documents companies must submit to BaFin to comply with the KMAG requirements.\n\nThis regulation is relevant for all companies falling under the KMAG that offer or issue crypto-asset services. They must adapt their internal processes and reporting channels to the new requirements to ensure timely and complete submission of the necessary notifications and documents. KPMG highlights the publication of the regulation in an expert article, underscoring its practical relevance for affected companies.\n\nThe regulation was published in the Federal Law Gazette on May 26, 2026, and has thus entered into force."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/153",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Kryptomärkteanzeigenverordnung im BGBl. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/kryptomaerkteanzeigenverordnung-im-bgbl-veroeffentlicht-2/",
+            "d": "26.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "28.08.2025",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Kryptomärktemitteilungs-Verordnung (KMMV) zur Offenlegung von Insiderinformationen",
+          "en": "Crypto Market Disclosure Regulation (KMMV) on Insider Information Disclosure"
+        },
+        "sl": "verordnung-zur-konkretisierung-von-mitteilungspflichten-zur-offenlegung-von-insi",
+        "s": {
+          "de": "Die Kryptomärktemitteilungs-Verordnung (KMMV) konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen gemäß § 36 des Kryptomärkteaufsichtsgesetzes. Sie legt fest, wie und wann relevante Informationen über Kryptomärkte zu veröffentlichen sind, um Markttransparenz und Anlegerschutz zu gewährleisten.\n\nDiese Verordnung ist für Unternehmen relevant, die im Kryptomarkt tätig sind und unter die Aufsicht des Kryptomärkteaufsichtsgesetzes fallen. Sie müssen ihre internen Prozesse anpassen, um Insiderinformationen fristgerecht und korrekt offenzulegen, um Compliance sicherzustellen und mögliche Sanktionen zu vermeiden.\n\nDie Verordnung wurde am 28.08.2025 im Bundesgesetzblatt veröffentlicht und trat am 25.08.2025 in Kraft. Die Federführung liegt bei der Bundesanstalt für Finanzdienstleistungsaufsicht.",
+          "en": "The Kryptomärktemitteilungs-Verordnung (KMMV) specifies the notification obligations for the disclosure of insider information according to § 36 of the Kryptomärkteaufsichtsgesetz. It defines how and when relevant information about crypto markets must be published to ensure market transparency and investor protection.\n\nThis regulation is relevant for companies active in the crypto market and subject to the supervision of the Kryptomärkteaufsichtsgesetz. They must adapt their internal processes to disclose insider information promptly and correctly to ensure compliance and avoid potential sanctions.\n\nThe regulation was published in the Federal Law Gazette on August 28, 2025, and came into force on August 25, 2025. The Federal Financial Supervisory Authority is responsible for its implementation."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/197",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Kryptomärktemitteilungs-Verordnung (KMMV) im BGBI. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/kryptomaerktemitteilungs-verordnung-kmmv-im-bgbi-veroeffentlicht/",
+            "d": "01.09.2025"
+          }
+        ]
+      }
+    ],
     "mmf": [
       {
         "d": "11.05.2026",
@@ -8314,6 +8355,66 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2017/kon_1117_finanzkonglomerate.html",
         "imp": "medium",
         "refnum": "Konsultation 11/2017"
+      }
+    ],
+    "kwglf": [
+      {
+        "d": "22.08.2017",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Auslegung: Finanzierungsleasinginstitute als CRR-vergleichbare Institute (Q&A 52-17/003)",
+          "en": "BaFin Interpretation: Financial Leasing Institutions as CRR-Comparable Institutions (Q&A 52-17/003)"
+        },
+        "sl": "veroeffentlichung-einer-nationalen-qa-52-17-003-nationale-finanzierungsleasingin",
+        "s": {
+          "de": "Die BaFin hat eine nationale Auslegungsentscheidung (Q&A 52-17/003) zur Behandlung von Risikopositionen gegenüber Finanzierungsleasinginstituten veröffentlicht. Konkret geht es um die Frage, ob solche Risikopositionen wie Risikopositionen gegenüber CRR-Instituten behandelt werden können, insbesondere im Hinblick auf die Großkreditvorschriften.\n\nLaut BaFin unterliegen in Deutschland zugelassene und beaufsichtigte Finanzierungsleasinginstitute vergleichbaren Aufsichtsvorschriften wie CRR-Institute. Daher können Risikopositionen gegenüber diesen Instituten wie Risikopositionen gegenüber CRR-Instituten behandelt werden. Dies ermöglicht die Anwendung der erhöhten Großkreditobergrenze nach Artikel 395 Absatz 1 Satz 2 CRR.\n\nDiese Klarstellung ist relevant für alle Institute, die Risikopositionen gegenüber deutschen Finanzierungsleasinginstituten halten. Sie schafft Rechtssicherheit bei der Anwendung der Eigenmittelanforderungen für das Kreditrisiko und der Großkreditregeln.",
+          "en": "The BaFin has published a national Q&A (52-17/003) on the treatment of exposures to financial leasing institutions. Specifically, it addresses whether such exposures can be treated like exposures to CRR institutions, particularly with regard to large exposure rules.\n\nAccording to BaFin, financial leasing institutions authorized and supervised in Germany are subject to supervisory regulations comparable in robustness to those for CRR institutions. Therefore, exposures to these institutions can be treated like exposures to CRR institutions. This allows for the application of the increased large exposure limit under Article 395(1) second sentence CRR.\n\nThis clarification is relevant for all institutions holding exposures to German financial leasing institutions. It provides legal certainty in applying own funds requirements for credit risk and large exposure rules."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/EBA_QA/ea_CRR_kreditrisiko_52_17_003.html",
+        "imp": "low"
+      },
+      {
+        "d": "20.02.2009",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Factoring und Finanzierungsleasing im KWG (5/2009)",
+          "en": "BaFin Circular on Factoring and Financial Leasing under the KWG (5/2009)"
+        },
+        "sl": "rundschreiben-5-2009-wa-zu-aenderungen-des-kreditwesengesetzes-fuer-finanzdienst",
+        "s": {
+          "de": "Das BaFin-Rundschreiben 5/2009 (WA) informiert über die durch das Jahressteuergesetz 2009 eingeführten neuen Erlaubnistatbestände im Kreditwesengesetz (KWG) für Finanzdienstleistungsunternehmen. Konkret geht es um Factoring und Finanzierungsleasing, die seit dem 1. Januar 2009 erlaubnispflichtig sind.\n\nFactoring wird als der laufende Ankauf von Forderungen auf Basis von Rahmenverträgen definiert. Finanzierungsleasing umfasst den Abschluss von Finanzierungsleasingverträgen als Leasinggeber sowie die Verwaltung von Objektgesellschaften, wobei Ausnahmen für bestimmte Leasing-Objektgesellschaften bestehen. Für Details verweist die BaFin auf entsprechende Merkblätter.\n\nInstitute, die bereits am 25. Dezember 2008 eine Erlaubnis nach § 1 Abs. 1a Nr. 1 bis 4 KWG besaßen, erhielten die Erlaubnis für Factoring und Finanzierungsleasing automatisch durch gesetzliche Fiktion. Die BaFin weist darauf hin, dass bei der Ausübung von Eigengeschäften, insbesondere solchen, die dem Handelsbuch zuzuordnen sind, höhere Eigenkapitalanforderungen (§ 33 Abs. 1 Nr. 1c KWG) zu beachten sind. Institute mit geringerem Eigenkapital dürfen Eigengeschäfte nur für das Anlagebuch tätigen. Eine Rückgabe der fingierten Erlaubnisse ist jederzeit möglich.",
+          "en": "BaFin Circular 5/2009 (WA) provides information on the new licensing requirements introduced by the Annual Tax Act 2009 for financial services companies under the German Banking Act (KWG). Specifically, it addresses factoring and financial leasing, which have been subject to licensing since January 1, 2009.\n\nFactoring is defined as the ongoing purchase of receivables based on framework agreements. Financial leasing includes entering into financial leasing contracts as a lessor and managing special purpose vehicles, with exceptions for certain leasing special purpose vehicles. For further details, BaFin refers to corresponding guidance notices.\n\nInstitutions that already held a license under Section 1 (1a) No. 1 to 4 KWG on December 25, 2008, automatically received the license for factoring and financial leasing through legal fiction. BaFin points out that when conducting proprietary trading, especially transactions assignable to the trading book, higher capital requirements (Section 33 (1) No. 1c KWG) must be observed. Institutions with lower capital may only conduct proprietary trading for the investment book. A surrender of the fictitiously granted licenses is possible at any time."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/rs_0905_wa.html",
+        "imp": "low",
+        "refnum": "Rundschreiben 5/2009"
+      },
+      {
+        "d": "05.01.2009",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zum Factoring aktualisiert (Stand Dezember 2024)",
+          "en": "BaFin Factoring Guidance Updated (December 2024)"
+        },
+        "sl": "merkblatt-factoring",
+        "s": {
+          "de": "Die BaFin hat ihr Merkblatt zum Factoring aktualisiert, das Hinweise zur Erlaubnispflicht nach dem Kreditwesengesetz (KWG) gibt. Es erläutert den Tatbestand des Factorings gemäß § 1 Abs. 1a Satz 2 Nr. 9 KWG, der 2008 eingeführt wurde. Factoring wird als der Erwerb von Forderungen von einem Kreditor durch einen Factor definiert, wobei zwischen echtem (mit Delkredererisikoübernahme) und unechtem Factoring (ohne Delkredererisikoübernahme) unterschieden wird.\n\nDas Merkblatt stellt klar, dass nicht jede Factoringtätigkeit erlaubnispflichtig ist. Entscheidend für die Einstufung als erlaubnispflichtiges Factoring ist die konkrete Ausgestaltung der Tätigkeit als Ganzes. Es wird betont, dass der Tatbestand des Factorings den Ankauf von Forderungen laufend auf der Grundlage von Rahmenverträgen mit einer Finanzierungsfunktion voraussetzt. Auch das unechte Factoring, das zivilrechtlich als Darlehen gilt, fällt unter diesen Tatbestand, da die Finanzierungsfunktion im Vordergrund steht.\n\nFür Unternehmen, die Factoring-Dienstleistungen anbieten oder in Anspruch nehmen, ist das Merkblatt relevant, um die aufsichtsrechtliche Einordnung ihrer Geschäftsmodelle zu prüfen. Es hilft zu beurteilen, ob eine Erlaubnispflicht nach § 32 Abs. 1 KWG besteht oder ob die Tätigkeit möglicherweise als Kreditgeschäft (§ 1 Abs. 1 Satz 2 Nr. 2 KWG) oder Finanztransfergeschäft (§ 1 Abs. 2 Nr. 6 ZAG) zu qualifizieren ist. Die Art der Forderungsabtretung (offen, still, halb-offen) ist für die Einstufung als erlaubnispflichtiges Factoring unerheblich.",
+          "en": "BaFin has updated its guidance on factoring, providing information on the licensing requirement under the German Banking Act (KWG). It clarifies the definition of factoring according to Section 1 (1a) sentence 2 no. 9 KWG, which was introduced in 2008. Factoring is defined as the acquisition of claims from a creditor by a factor, distinguishing between true factoring (with assumption of del credere risk) and non-recourse factoring (without assumption of del credere risk).\n\nThe guidance clarifies that not every factoring activity requires a license. The specific design of the activity as a whole is crucial for classification as a licensable factoring business. It emphasizes that the definition of factoring requires the ongoing purchase of claims based on framework agreements with a financing function. Even non-recourse factoring, which is civil law-wise considered a loan, falls under this definition because the financing function is paramount.\n\nFor companies offering or using factoring services, this guidance is relevant for assessing the regulatory classification of their business models. It helps determine whether a license is required under Section 32 (1) KWG or whether the activity might be classified as a lending business (Section 1 (1) sentence 2 no. 2 KWG) or money remittance business (Section 1 (2) no. 6 ZAG). The type of assignment of claims (open, silent, semi-open) is irrelevant for classification as licensable factoring."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_090105_tatbestand_factoring.html",
+        "imp": "low"
       }
     ],
     "zkg": [
