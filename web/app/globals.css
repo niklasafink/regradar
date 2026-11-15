@@ -41,3 +41,24 @@ dialog::backdrop {
     to { opacity: 1; transform: none; }
   }
 }
+
+/* Wortwechsel im Hero („Montag“/„Tag“): Würfel. Das alte Wort kippt nach oben
+   weg, das neue dreht sich von unten herein. */
+@keyframes rr-word-out {
+  from { opacity: 1; transform: perspective(500px) translateY(0) rotateX(0deg); }
+  to { opacity: 0; transform: perspective(500px) translateY(-55%) rotateX(88deg); }
+}
+@keyframes rr-word-in {
+  from { opacity: 0; transform: perspective(500px) translateY(55%) rotateX(-88deg); }
+  to { opacity: 1; transform: perspective(500px) translateY(0) rotateX(0deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  @keyframes rr-word-out {
+    from { opacity: 0; transform: none; }
+    to { opacity: 0; transform: none; }
+  }
+  @keyframes rr-word-in {
+    from { opacity: 1; transform: none; }
+    to { opacity: 1; transform: none; }
+  }
+}
