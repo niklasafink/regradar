@@ -24,6 +24,7 @@ import {
   createIdToken,
   createSendPacer,
   createUnsubToken,
+  profileBanner,
   isQuotaExceededError,
   sendApprovalRequest,
   sendQuotaExceededAlert,
@@ -306,6 +307,7 @@ export function renderFwNewsletter(
     "",
     "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
+    profileBanner(base).text,
     `Abmelden: ${unsubUrl}`,
     `Impressum: ${base}/impressum`,
     `Datenschutz: ${base}/datenschutz`,
@@ -319,6 +321,7 @@ export function renderFwNewsletter(
       Neu: ${esc(heading)}
     </h1>
     <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#64748b">${esc(intro)}</p>
+    ${profileBanner(base).html}
     ${parts.html}
     <p style="margin:28px 0 16px">
       <a href="${base}/quellen"

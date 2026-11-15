@@ -59,6 +59,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
   const [arts, setArts] = useState<string[]>([]);
   // Optionale Rahmenwerk-Auswahl: gesetzt = nur Updates zu diesen Rahmenwerken.
   const [frameworks, setFrameworks] = useState<string[]>([]);
+  const [freq, setFreq] = useState<"weekly" | "daily">("weekly");
   const [status, setStatus] = useState<Status>("idle");
   const [errorCode, setErrorCode] = useState<ErrorCode>("unknown");
   const [hint, setHint] = useState(false);
@@ -104,7 +105,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, providers, frameworks, arts: providers.includes("OTH") ? arts : [] }),
+        body: JSON.stringify({ email, providers, frameworks, frequency: freq, arts: providers.includes("OTH") ? arts : [] }),
       });
       if (res.ok) {
         // Der Abonnieren-Klick gilt (per Hinweis unterm Formular) als Analyse-
@@ -113,7 +114,7 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
         identify(email.trim().toLowerCase(), { source: "newsletter" });
         track("newsletter_submitted", {
           provider: providers.join(","),
-          frequency: "weekly",
+          frequency: freq,
           frameworks: frameworks.join(","),
         });
         setStatus("sent");
@@ -377,10 +378,32 @@ export function SubscribeBox({ provider = "" }: { provider?: string }) {
               </p>
             )}
 
-            <p className="mt-6 text-xs text-slate-500">
+            <p className="mt-6 text-sm font-medium text-slate-900">
+              {lang === "de" ? "Wie oft?" : "How often?"}
+            </p>
+            <div className="mt-2.5 flex flex-wrap gap-1.5" role="group" aria-label={lang === "de" ? "Rhythmus wählen" : "Choose frequency"}>
+              {(["weekly", "daily"] as const).map((f) => (
+                <button
+                  key={f}
+                  type="button"
+                  aria-pressed={freq === f}
+                  onClick={() => setFreq(f)}
+                  className={`rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
+                    freq === f
+                      ? "border-slate-900 bg-slate-900 text-white"
+                      : "border-slate-200 bg-white text-slate-700 hover:border-slate-900"
+                  }`}
+                >
+                  {f === "weekly"
+                    ? lang === "de" ? "Wöchentlich, montags" : "Weekly, on Mondays"
+                    : lang === "de" ? "Täglich, werktags" : "Daily, on weekdays"}
+                </button>
+              ))}
+            </div>
+            <p className="mt-2 text-xs text-slate-500">
               {lang === "de"
-                ? "Sie erhalten jeden Montag eine gesammelte Übersicht, nur wenn es neue Updates gibt."
-                : "You'll receive one combined digest every Thursday, only when there are new updates."}
+                ? "Nur wenn es neue Updates gibt. Den Rhythmus können Sie in jeder Mail ändern."
+                : "Only when there are new updates. You can change the frequency in any email."}
             </p>
 
             {status === "error" && (

@@ -17,6 +17,7 @@ import {
   createIdToken,
   createSendPacer,
   createUnsubToken,
+  profileBanner,
   isQuotaExceededError,
   sendApprovalRequest,
   sendQuotaExceededAlert,
@@ -260,6 +261,7 @@ export function renderPraxisNewsletter(
     "",
     "Sie erhalten diese E-Mail, weil Sie Updates von Regulatory Radar abonniert haben.",
     "Keine Rechtsberatung, alle Angaben ohne Gewähr.",
+    profileBanner(base).text,
     `Abmelden: ${unsubUrl}`,
     `Impressum: ${base}/impressum`,
     `Datenschutz: ${base}/datenschutz`,
@@ -273,6 +275,7 @@ export function renderPraxisNewsletter(
       Aufsichtspraxis und Fristen
     </h1>
     <p style="margin:0 0 8px;font-size:14px;line-height:1.6;color:#64748b">${esc(intro)}</p>
+    ${profileBanner(base).html}
     ${items.length > 0 ? `
     ${sectionTitle("Aufsichtspraxis der Vorwoche")}
     ${sub(label)}

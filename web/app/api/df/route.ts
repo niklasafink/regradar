@@ -7,8 +7,8 @@ import { ensureDomainProfile } from "@/lib/relevance/server";
 
 /* Wertet den Identify-Token aus Newsletter-Links (?df=…) aus: Der Client
    schickt ihn nach dem Seitenaufruf hierher; wir verknüpfen die E-Mail mit
-   dem DataFast-Besucherprofil (Cookie kommt im selben Request mit). Antwortet
-   immer 204 — auch bei ungültigem Token, nichts davon soll den Besuch stören. */
+   dem DataFast-Besucherprofil (Cookie kommt im selben Request mit). Ungültige
+   Token bekommen 204, nichts davon soll den Besuch stören. */
 export async function POST(request: Request) {
   let token = "";
   try {
@@ -27,5 +27,7 @@ export async function POST(request: Request) {
       source: "newsletter_link",
     });
   }
-  return new Response(null, { status: 204 });
+  // Die Adresse geht nur an den zurück, der den signierten Token aus seiner
+  // eigenen Mail vorlegt; /profil füllt damit das Anmeldefeld vor.
+  return email ? Response.json({ email }) : new Response(null, { status: 204 });
 }

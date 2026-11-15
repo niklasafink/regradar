@@ -6,8 +6,8 @@ const SECRET = process.env.SUBSCRIBE_SECRET ?? "dev-secret";
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 48; // Bestätigungslink 48h gültig
 
 // Benachrichtigungs-Rhythmus des Update-Newsletters. Standard ist "weekly"
-// (montags 12:00 gesammelt, nach QS und Freigabe); "daily" wählt man nur über
-// den Umschalter am Ende der Update-Mails.
+// (montags 12:00 gesammelt, nach QS und Freigabe); "daily" wählt man bei der
+// Anmeldung oder über den Umschalter am Ende der Update-Mails.
 export type Frequency = "daily" | "weekly";
 
 export type SubscribePayload = {
@@ -57,9 +57,7 @@ export function verifyToken(token: string): SubscribePayload | null {
     if (!Array.isArray(data.providers)) {
       data.providers = data.provider ? [data.provider] : [];
     }
-    // Anmeldung startet immer wöchentlich; auf täglich stellt man nur über
-    // den Umschalter in den Update-Mails um.
-    data.freq = "weekly";
+    if (data.freq !== "daily") data.freq = "weekly";
     // Alt-Tokens ohne frameworks-Feld: keine Rahmenwerk-Einschränkung.
     if (!Array.isArray(data.frameworks)) data.frameworks = [];
     if (!Array.isArray(data.arts)) data.arts = [];
@@ -321,6 +319,24 @@ Sobald das Limit zurückgesetzt ist, schickt regulatoryradar automatisch (späte
       </div>`,
   });
   if (error) throw new Error(error.message);
+}
+
+/** Farbiger Hinweis oben in jeder Abonnenten-Mail: Institut hinterlegen
+    (Konto per Anmeldelink) bzw. wieder anmelden. Die Links tragen keine
+    Query, damit addIdentifyParam den df-Token anhängt; /profil füllt damit
+    die E-Mail-Adresse vor. `profile` = Name des Kontoprofils, falls vorhanden. */
+export function profileBanner(base: string, profile?: string | null): { html: string; text: string } {
+  const a = (href: string, label: string) =>
+    `<a href="${href}" style="color:#1d4ed8;font-weight:600;white-space:nowrap">${label}</a>`;
+  const body = profile
+    ? `<strong>Einschlägigkeit für ${escapeHtml(profile)}:</strong> Der Status steht bei jedem Update. ${a(`${base}/profil#anmelden`, "Profil verwalten")}`
+    : `<strong>Für Ihr Institut einschlägig?</strong> Hinterlegen Sie Ihr Institut, dann steht der Status bei jedem Update. ${a(`${base}/profil`, "Institut hinterlegen")}`;
+  return {
+    html: `<p style="margin:16px 0 8px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;font-size:13px;line-height:1.5;color:#0f172a">${body}</p>`,
+    text: profile
+      ? `Einschlägigkeit für ${profile}: Profil verwalten unter ${base}/profil#anmelden`
+      : `Für Ihr Institut einschlägig? Institut hinterlegen: ${base}/profil`,
+  };
 }
 
 // Abmelde-Token: unbegrenzt gültig, damit der Link in alten Mails funktioniert.

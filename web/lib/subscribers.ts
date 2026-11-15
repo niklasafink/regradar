@@ -68,16 +68,18 @@ export async function addSubscriber(
   newProviders: string[],
   frameworks: string[] = [],
   arts: string[] = [],
+  /** Bei der Anmeldung gewählter Rhythmus; fehlt = bisherigen behalten. */
+  freq?: Frequency,
 ): Promise<"new" | "expanded" | "unchanged"> {
   const key = email.trim().toLowerCase();
   const existing = await redis().hget<Stored>(KEY, key);
   const providers = new Set(existing?.providers ?? []);
   const before = providers.size;
   for (const p of newProviders) if (p) providers.add(p);
-  // Standard ist wöchentlich; eine per Mail-Umschalter gewählte Frequenz
-  // bleibt bei erneuter Anmeldung erhalten.
-  const nextFreq: Frequency = existing?.frequency ?? "weekly";
-  const freqChanged = existing ? nextFreq !== existing.frequency : false;
+  // Die zuletzt bestätigte Wahl gilt; ohne Wahl bleibt der bisherige
+  // Rhythmus, Standard ist wöchentlich.
+  const nextFreq: Frequency = freq ?? existing?.frequency ?? "weekly";
+  const freqChanged = existing ? nextFreq !== (existing.frequency ?? "weekly") : false;
   const nextFw = [...new Set(frameworks.filter(Boolean))].sort();
   const fwChanged = existing
     ? nextFw.join(",") !== [...(existing.frameworks ?? [])].sort().join(",")

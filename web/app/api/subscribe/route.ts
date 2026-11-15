@@ -53,9 +53,8 @@ export async function POST(request: Request) {
     : [];
   const fwIds = fws.map((f) => f.id);
   const fwLabels = fws.map((f) => framePath("de", f));
-  // Nur noch wöchentlicher Versand (seit 14.10.2026); ein mitgeschicktes
-  // "daily" alter Formular-Stände wird ignoriert.
-  const frequency = "weekly";
+  // Rhythmus wählt man im Anmelde-Dialog (seit 15.11.2026), Standard wöchentlich.
+  const frequency = body.frequency === "daily" ? "daily" : "weekly";
 
   try {
     await sendConfirmationEmail(

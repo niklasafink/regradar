@@ -30,6 +30,7 @@ import {
   createIdToken,
   createSendPacer,
   createUnsubToken,
+  profileBanner,
   isQuotaExceededError,
   sendApprovalRequest,
   sendQuotaExceededAlert,
@@ -397,6 +398,7 @@ export function renderNewsletter(
        <p style="margin:0;font-size:13px;color:#64748b">Wir haben die Abdeckung von Regulatory Radar erweitert.</p>` : ""}
        ${db.html}`
     : "";
+  const banner = profileBanner(base, rel && !rel.fromDomain ? rel.profiles[0]?.name : null);
   const shown = pages.slice(0, MAX_PER_MAIL);
   const more = pages.length - shown.length;
 
@@ -464,6 +466,7 @@ export function renderNewsletter(
     ]),
     ...(more > 0 ? [`… und ${more} weitere Updates auf der Website.`, ""] : []),
     ...(db ? [...(pages.length > 0 ? [`Neu in der Datenbank: ${db.heading}`, ""] : []), ...db.text] : []),
+    banner.text, "",
     ...(rel ? [relevanceFooterText(rel, base), ""] : []),
     `Alle Updates: ${base}/updates`,
     `Offene Fristen: ${base}/fristen`,
@@ -493,6 +496,7 @@ export function renderNewsletter(
     <p style="margin:0 0 8px;font-size:14px;color:#64748b">
       ${esc(lead)}
     </p>
+    ${banner.html}
     ${sections}
     ${more > 0 ? `<p style="margin:16px 0 0;font-size:13px;color:#64748b">und ${more} weitere Updates auf der Website.</p>` : ""}
     ${dbHtml}

@@ -21,7 +21,7 @@ export async function GET() {
         ? { name: dp.profile.name, domain: dp.domain, kind: dp.kind, profile: dp.profile }
         : dp ? { name: null, domain: dp.domain, kind: dp.kind } : { name: null, domain: domainOf(subscriberEmail), kind: "unbekannt" };
     }
-    return Response.json({ loggedIn: false, email: null, profiles: [], activeId: null, pre, subscriber: !!subscriberEmail },
+    return Response.json({ loggedIn: false, email: null, profiles: [], activeId: null, pre, subscriber: !!subscriberEmail, subscriberEmail },
       { headers: { "Cache-Control": "no-store" } });
   } catch (e) {
     console.error("me failed:", e);

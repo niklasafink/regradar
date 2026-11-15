@@ -30,6 +30,8 @@ export interface Me {
   primaryId?: string | null;
   pre: { name: string | null; domain: string; kind: string; profile?: unknown } | null;
   subscriber?: boolean;
+  /** Adresse aus dem Abonnenten-Cookie (Klick auf einen Mail-Link). */
+  subscriberEmail?: string | null;
 }
 
 export const STATUS_LABEL: Record<Status, string> = {

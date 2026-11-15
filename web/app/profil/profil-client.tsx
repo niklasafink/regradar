@@ -72,6 +72,9 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
   const [bs, setBs] = useState<string>("");
 
   const [email, setEmail] = useState("");
+  // Token aus dem Mail-Link, gelesen bevor DatafastIdentify ihn aus der URL nimmt.
+  const [dfToken] = useState(() =>
+    typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("df"));
   const [accountProfiles, setAccountProfiles] = useState<Profile[] | null>(null);
   const [activeId, setActiveId] = useState<string | null>(null);
   const [primaryId, setPrimaryId] = useState<string | null>(null);
@@ -102,7 +105,15 @@ export function ProfilClient({ art, erl }: { art: Opt[]; erl: Opt[] }) {
       setStep(params.get("neu") ? "suche" : "liste");
       return;
     }
-    if (params.get("anmelden")) {
+    // Adresse vorausfüllen: aus dem Mail-Link oder dem Abonnenten-Cookie.
+    if (me.subscriberEmail) setEmail((e) => e || me.subscriberEmail!);
+    if (dfToken) {
+      void fetch("/api/df", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ token: dfToken }) })
+        .then((r) => (r.status === 200 ? r.json() : null))
+        .then((j: { email?: string } | null) => { if (j?.email) setEmail((e) => e || j.email!); })
+        .catch(() => {});
+    }
+    if (params.get("anmelden") || window.location.hash === "#anmelden") {
       setStep("anmelden");
       return;
     }
