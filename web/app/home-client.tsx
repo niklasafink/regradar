@@ -5,6 +5,7 @@ import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, SlimFooter } from "@/components/chrome";
 import { SubscribeBox } from "@/components/subscribe";
 import { OtherInstitutesTile } from "@/components/institute-dialog";
+import { WordRotate } from "@/components/ui/word-rotate";
 import { PROVIDERS, type Txt } from "@/lib/base";
 import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, fmtDate, IMPACT_LABEL, impactOf, tx, type Impact,
@@ -18,6 +19,7 @@ import { activeName, hasProfile, useMe, useRelevance } from "@/lib/relevanceClie
 export interface HomeData {
   frameworkCount: number;
   totalUpdates: number;
+  /** Updates je Zielgruppe (Summe über deren Rahmenwerke, wie auf /r/<Zielgruppe>). */
   providerCounts: Record<string, number>;
   recent: {
     slug: string;
@@ -64,13 +66,13 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
               <>
                 Neue Regulatorik für Finanzinstitute.
                 <br />
-                Jeden Montag im Postfach, kostenlos.
+                Jeden <WordRotate words={["Montag", "Tag"]} /> im Postfach, kostenlos.
               </>
             ) : (
               <>
                 New regulation for financial institutions.
                 <br />
-                In your inbox every Monday, free.
+                In your inbox every <WordRotate words={["Monday", "day"]} />, free.
               </>
             )}
           </h1>
@@ -101,7 +103,7 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
                 >
                   <span className="text-sm font-semibold tracking-tight">{tx(lang, p.n)}</span>
                   <span className="num shrink-0 rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
-                    {count}
+                    {count} Updates
                   </span>
                 </Link>
               );

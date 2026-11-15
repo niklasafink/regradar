@@ -20,7 +20,10 @@ export default function Home() {
     frameworkCount: FRAMEWORKS.length,
     totalUpdates: FRAMEWORKS.reduce((n, f) => n + f.u.length, 0),
     providerCounts: Object.fromEntries(
-      PROVIDERS.map((p) => [p.id, FRAMEWORKS.filter((f) => f.ents.includes(p.id)).length]),
+      PROVIDERS.map((p) => [
+        p.id,
+        FRAMEWORKS.filter((f) => f.ents.includes(p.id)).reduce((n, f) => n + f.u.length, 0),
+      ]),
     ),
     recent: UPDATE_PAGES.slice(0, 6).map(({ slug, fw, u }) => ({
       slug,
