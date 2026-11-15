@@ -84,3 +84,13 @@ Details zu Quellen, Endpunkten und Pipeline stehen in [scraper/README.md](scrape
 ## Hinweis
 
 regradar ist ein Informationsangebot und keine Rechtsberatung. Maßgeblich ist immer das verlinkte Originaldokument der jeweiligen Behörde.
+
+## Lizenz
+
+Der Quellcode ist öffentlich, damit nachvollziehbar bleibt, wie die Meldungen entstehen. Er steht unter der [PolyForm Noncommercial License 1.0.0](LICENSE).
+
+- **Erlaubt:** Lesen, Ausführen, Ändern und Weitergeben für nichtkommerzielle Zwecke, also private Nutzung, Forschung und Lehre sowie der Einsatz in gemeinnützigen Organisationen und Behörden.
+- **Nicht erlaubt ohne gesonderte Lizenz:** jede kommerzielle Nutzung. Dazu zählen der Betrieb eines eigenen Angebots auf dieser Grundlage und der Einsatz im Unternehmen, auch rein intern, etwa in der Compliance-Abteilung eines Instituts.
+- **Kommerzielle Lizenz:** Wer regradar im eigenen Haus betreiben oder in ein Produkt einbauen möchte, erhält eine Lizenz von der Neura Labs UG (haftungsbeschränkt). Kontakt über das [Impressum](https://regradar.de/impressum).
+
+Die Lizenz gilt für den Code und die eigenen Texte dieses Repos. Die Originaldokumente der Behörden und die verlinkten Fachbeiträge Dritter bleiben bei ihren jeweiligen Rechteinhabern.
