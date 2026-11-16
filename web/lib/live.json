@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T10:11:27Z",
+  "generated_at": "2026-11-16T16:10:51Z",
   "updates": {
     "bcbs": [
       {
@@ -830,6 +830,45 @@
           "en": "The German Federal Office for Information Security (BSI) has published the Community Draft of the AI Audit and Assurance Assessment Architecture (A5) for comment. The A5 lays the foundation for a modular and extensible audit architecture for AI systems, providing criteria and methodology for the systematic and standardized assessment of AI system trustworthiness.\n\nThe A5 is aimed at all stakeholders along the AI value chain, from providers and operators to those involved in development, operation, and supervision. It supports stakeholders in complying with regulatory requirements such as the EU AI Act and the Cyber Resilience Act, and allows integration into existing OSCAL-based tools for compliance processing. The methodology is based on the BSI's C5 catalog and the International Standard on Assurance Engagements 3000 (ISAE 3000).\n\nComments and suggestions on the Community Draft can be submitted by email to aisecurity@bsi.bund.de until August 31, 2026."
         },
         "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260706_KI_A5-Community-Draft.html",
+        "imp": "medium"
+      }
+    ],
+    "dgsd": [
+      {
+        "d": "16.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA supports further progress on the Banking Union, including on deposit insurance",
+          "en": "EBA supports further progress on the Banking Union, including on deposit insurance"
+        },
+        "sl": "eba-supports-further-progress-on-the-banking-union-including-on-deposit-insuranc",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-supports-further-progress-banking-union-including-deposit-insurance"
+      },
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA-Konsultation zur weiteren Verbesserung des Einlegerschutzes (DGS-Richtlinie)",
+          "en": "The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
+        },
+        "sl": "the-eba-consults-on-rules-to-further-improve-depositor-protection-under-the-revi",
+        "s": {
+          "de": "Die EBA hat vier Konsultationen zu Entwürfen von technischen Standards und Leitlinien veröffentlicht, die den Einlegerschutz gemäß der überarbeiteten Einlagensicherungssystem-Richtlinie (DGSD3) stärken sollen. Die Entwürfe umfassen Durchführungsstandards (ITS) zur Einlegerinformation, ITS zum Informationsaustausch zwischen Kreditinstituten, Einlagensicherungssystemen (DGS) und Behörden, Regulierungsstandards (RTS) zur Behandlung von Kundengeldern sowie Leitlinien zur Anlage von DGS-Mitteln.\n\nDie Regelungen betreffen alle Kreditinstitute und Einlagensicherungssysteme in der EU. Sie zielen darauf ab, die Transparenz für Einleger zu erhöhen, den Informationsaustausch bei Bankausfällen zu standardisieren, den Schutz von Kundengeldern zu vereinheitlichen und die effiziente Anlage von DGS-Mitteln sicherzustellen. Dies soll die finanzielle Stabilität wahren und die Harmonisierung des Einlegerschutzes in der EU vorantreiben.\n\nDie Konsultationsfrist für alle vier Entwürfe endet am 23. Oktober 2026. Eine öffentliche Anhörung findet am 24. September 2026 statt, Anmeldeschluss hierfür ist der 21. September 2026.",
+          "en": "The EBA has launched four consultations on draft technical standards and guidelines aimed at strengthening depositor protection under the revised Deposit Guarantee Schemes Directive (DGSD3). The drafts include Implementing Technical Standards (ITS) on depositor information, ITS on information exchange between credit institutions, Deposit Guarantee Schemes (DGSs) and authorities, Regulatory Technical Standards (RTS) on the treatment of client funds, and Guidelines on how DGSs should invest their funds.\n\nThese regulations apply to all credit institutions and DGSs in the EU. They aim to enhance transparency for depositors, standardize information exchange in bank failure scenarios, unify the protection of client funds, and ensure the efficient investment of DGS funds. This is intended to preserve financial stability and advance the harmonization of depositor protection across the EU.\n\nThe consultation period for all four drafts closes on 23 October 2026. A public hearing will take place on 24 September 2026, with the registration deadline being 21 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
         "imp": "medium"
       }
     ],
@@ -6102,27 +6141,6 @@
           "en": "In this guidance notice, BaFin clarifies the supervisory classification of corporate bonds in the context of the PRIIPs Regulation. It explains which features lead to a corporate bond being considered a “packaged retail investment product” (PRIP) and thus subject to the information requirements of the PRIIPs Regulation.\n\nFeatures such as indefinite maturity, subordination, fixed interest rates, or a call/put option for the issuer/investor do not, in themselves, lead to a PRIP classification. The decisive factor is whether the amount repayable on the bond is subject to fluctuations due to its dependence on a reference value or the performance of one or more assets not directly acquired by the retail investor. BaFin clarifies that interest rate indices such as Euribor or Libor exceptionally do not lead to PRIP qualification, unless there is further structuring. Issuer- or group-related profit figures as internal reference values also generally do not lead to PRIP classification. Conversion or subscription rights to other securities, however, qualify a bond as a PRIP.\n\nThe assessment of whether a corporate bond is to be classified as a PRIP is the responsibility of the manufacturers and distributors of investment products. They must examine the economic characteristics and terms and conditions of each product on a case-by-case basis. This guidance notice provides important orientation and creates legal certainty for issuers and distributors of corporate bonds, particularly with regard to the preparation of key information documents."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/WA/mb_210819_aufsichtrechtliche_Einordnung_einzelner_Merkmale_Unternehmensanleihen_auf_Grundlage_PRIIPs_VO.html",
-        "imp": "medium"
-      }
-    ],
-    "dgsd": [
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA-Konsultation zur weiteren Verbesserung des Einlegerschutzes (DGS-Richtlinie)",
-          "en": "The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
-        },
-        "sl": "the-eba-consults-on-rules-to-further-improve-depositor-protection-under-the-revi",
-        "s": {
-          "de": "Die EBA hat vier Konsultationen zu Entwürfen von technischen Standards und Leitlinien veröffentlicht, die den Einlegerschutz gemäß der überarbeiteten Einlagensicherungssystem-Richtlinie (DGSD3) stärken sollen. Die Entwürfe umfassen Durchführungsstandards (ITS) zur Einlegerinformation, ITS zum Informationsaustausch zwischen Kreditinstituten, Einlagensicherungssystemen (DGS) und Behörden, Regulierungsstandards (RTS) zur Behandlung von Kundengeldern sowie Leitlinien zur Anlage von DGS-Mitteln.\n\nDie Regelungen betreffen alle Kreditinstitute und Einlagensicherungssysteme in der EU. Sie zielen darauf ab, die Transparenz für Einleger zu erhöhen, den Informationsaustausch bei Bankausfällen zu standardisieren, den Schutz von Kundengeldern zu vereinheitlichen und die effiziente Anlage von DGS-Mitteln sicherzustellen. Dies soll die finanzielle Stabilität wahren und die Harmonisierung des Einlegerschutzes in der EU vorantreiben.\n\nDie Konsultationsfrist für alle vier Entwürfe endet am 23. Oktober 2026. Eine öffentliche Anhörung findet am 24. September 2026 statt, Anmeldeschluss hierfür ist der 21. September 2026.",
-          "en": "The EBA has launched four consultations on draft technical standards and guidelines aimed at strengthening depositor protection under the revised Deposit Guarantee Schemes Directive (DGSD3). The drafts include Implementing Technical Standards (ITS) on depositor information, ITS on information exchange between credit institutions, Deposit Guarantee Schemes (DGSs) and authorities, Regulatory Technical Standards (RTS) on the treatment of client funds, and Guidelines on how DGSs should invest their funds.\n\nThese regulations apply to all credit institutions and DGSs in the EU. They aim to enhance transparency for depositors, standardize information exchange in bank failure scenarios, unify the protection of client funds, and ensure the efficient investment of DGS funds. This is intended to preserve financial stability and advance the harmonization of depositor protection across the EU.\n\nThe consultation period for all four drafts closes on 23 October 2026. A public hearing will take place on 24 September 2026, with the registration deadline being 21 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
         "imp": "medium"
       }
     ],
