@@ -1352,6 +1352,122 @@
    "tokens": 16583
   }
  },
+ "dgsd-2026-11-16-eba-supports-further-progress-on-the-banking-union-including-on-deposit-insuranc": {
+  "h1": "EBA bekräftigt Unterstützung für Bankenunion und Einlagensicherung (DGSD)",
+  "seo_title": "EBA Einlagensicherung Bankenunion 2027",
+  "meta_description": "EBA stellt klar: kein Alternativplan zur gemeinsamen Einlagensicherung. EU-Kommission plant Paket-Vorschlag im ersten Quartal 2027.",
+  "lead": "Die EBA bekräftigt ihre Unterstützung für eine gemeinsame europäische Einlagensicherung und stellt klar, dass sie nicht an Alternativlösungen zum gemeinsamen Einlagensicherungssystem arbeitet. Die EU-Kommission will entsprechende Gesetzgebungsvorschläge im ersten Quartal 2027 vorlegen.",
+  "aka": [
+   "EDIS",
+   "Europäische Einlagensicherung",
+   "DGSD Reform",
+   "Banking Union Deposit Insurance",
+   "EBA Bankenunion"
+  ],
+  "summary": "Die EBA widerspricht Presseberichten, die eine Abkehr vom gemeinsamen Einlagensicherungssystem suggerierten. Die EU-Kommission plant für das erste Quartal 2027 Vorschläge zur Einlagensicherung als Teil eines breiteren Bankenpakets. Die EBA liefert technischen Input und Evidenz für diesen Gesetzgebungsprozess.",
+  "overview": [
+   "Die EBA hat am 16.11.2026 klargestellt, dass sie weiterhin die Schaffung einer gemeinsamen europäischen Einlagensicherung unterstützt und nicht an Alternativmodellen arbeitet. Damit reagiert die Behörde auf Medienberichte, die ein anderes Bild gezeichnet hatten.",
+   "Die EU-Kommission hat angekündigt, im ersten Quartal 2027 Gesetzgebungsvorschläge zur Einlagensicherung als Teil eines umfassenderen Bankenpakets vorzulegen. Die EBA wird diesen Prozess mit technischen Analysen begleiten, unter anderem auf Basis ihres Effizienzberichts vom Oktober 2025."
+  ],
+  "facts": [
+   {
+    "label": "Datum",
+    "value": "16.11.2026"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "EBA"
+   },
+   {
+    "label": "Kommissionsvorschlag erwartet",
+    "value": "Erstes Quartal 2027"
+   },
+   {
+    "label": "EBA-Rolle",
+    "value": "Technischer Input und Evidenz für Kommission und Gesetzgeber"
+   },
+   {
+    "label": "Bezugsdokument",
+    "value": "EBA-Effizienzbericht Oktober 2025"
+   },
+   {
+    "label": "Kommissions-Kommuniqué",
+    "value": "Juli 2026"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Einlagensicherung",
+    "note": "Direkt betroffen als Regelungsgegenstand",
+    "detail": "Einlagensicherungssysteme (ESS) und deren Träger verfolgen den Gesetzgebungsprozess zur DGSD-Reform eng, da strukturelle Änderungen an Finanzierung und Governance drohen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Universalbanken",
+    "note": "Mittelbar über Beitragspflichten",
+    "detail": "Kreditinstitute mit beitragspflichtiger Einlagensicherung müssen regulatorische Entwicklungen im Blick behalten, da neue Vorgaben Beitragshöhe und -mechanismus verändern können.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Compliance / Recht",
+    "note": "Beobachtung Gesetzgebungsverfahren",
+    "detail": "Compliance-Funktionen sollten den Zeitplan der Kommission (Q1 2027) erfassen und die weitere EBA-Konsultationstätigkeit monitoren.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "DGSD",
+    "title": "Reform-Zeitplan konkretisiert",
+    "text": "Die EU-Kommission plant Gesetzgebungsvorschläge zur Einlagensicherung für das erste Quartal 2027 als Teil eines breiteren Bankenpakets. Konkrete Regelungsinhalte sind noch nicht bekannt."
+   },
+   {
+    "ref": "EBA Oktober 2025",
+    "title": "EBA-Effizienzbericht als Grundlage",
+    "text": "Die EBA baut ihre technischen Beiträge auf dem Effizienzbericht vom Oktober 2025 auf. Folgemaßnahmen und Vorschläge daraus fließen in die Kommissionsarbeit ein."
+   }
+  ],
+  "todos": [
+   "Zeitplan der EU-Kommission für das Bankenpaket Q1 2027 in die regulatorische Agenda aufnehmen",
+   "EBA-Konsultationen und technische Papiere zur DGSD-Reform monitoren",
+   "Internen Abstimmungsprozess zur möglichen Änderung von Beitragsmechanismen vorbereiten",
+   "EBA-Effizienzbericht Oktober 2025 auf institutsspezifische Implikationen prüfen"
+  ],
+  "timeline": [
+   {
+    "date": "16.11.2026",
+    "label": "EBA-Pressemitteilung",
+    "kind": "schritt"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Arbeitet die EBA an Alternativen zur gemeinsamen Einlagensicherung?",
+    "a": "Nein. Die EBA hat ausdrücklich klargestellt, dass sie nicht an Alternativmodellen zur gemeinsamen Einlagensicherung arbeitet, entgegen anderslautender Presseberichte."
+   },
+   {
+    "q": "Wann sind konkrete Gesetzgebungsvorschläge zur Einlagensicherung zu erwarten?",
+    "a": "Die EU-Kommission hat angekündigt, Vorschläge zur Einlagensicherung als Teil eines breiteren Bankenpakets im ersten Quartal 2027 vorzulegen. Konkrete Regelungsinhalte sind noch nicht bekannt."
+   },
+   {
+    "q": "Welche Rolle spielt die EBA im weiteren Verfahren?",
+    "a": "Die EBA liefert technischen Input und Evidenz für die Kommission und den Gesetzgeber. Grundlage ist unter anderem der EBA-Effizienzbericht vom Oktober 2025."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Konkrete Regelungsinhalte des geplanten Kommissionsvorschlags sind nicht bekannt und können erst nach Veröffentlichung bewertet werden.",
+   "EBA-Effizienzbericht Oktober 2025 wurde nur erwähnt, nicht inhaltlich wiedergegeben; Detailimplikationen unklar.",
+   "Kommissions-Kommuniqué vom Juli 2026 wird referenziert, Inhalt jedoch nicht dargelegt."
+  ],
+  "meta": {
+   "generated": "2026-11-16",
+   "model": "sonnet",
+   "source": "HTML, 1757 Zeichen, gekürzt auf 1757",
+   "dropped": 2,
+   "tokens": 7731
+  }
+ },
  "fitproper-2026-09-04-bafin-anzeigen-fuer-inhaber-besonderer-schluesselfunktionen-mvp-portal-ab-dem-4": {
   "h1": "BaFin: Fit-&-Proper-Anzeigen über MVP-Portal ab 01.12.2026 (BRUBEG/KWG)",
   "seo_title": "BaFin Fit & Proper Anzeigen MVP-Portal 2026",
