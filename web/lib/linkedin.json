@@ -121,6 +121,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-17": {
+   "window": [
+    "2026-11-16"
+   ],
+   "keys": [
+    "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as"
+   ],
+   "hook": "Der AI Act verlangt eine Grundrechte-Folgenabschätzung, und die EU-Kommission liefert den Entwurf dafür.",
+   "folge": "Betreiber von Hochrisiko-KI-Systemen müssen ab dem 2. Dezember 2027 eine Grundrechte-Folgenabschätzung durchführen. Die vorgeschlagene Vorlage soll dabei helfen, diese Pflicht zu erfüllen und die Ergebnisse den Marktüberwachungsbehörden zu melden.",
+   "cover": "EU-Kommission: Entwurf zur Grundrechte-Folgenabschätzung für KI",
+   "zeilen": [],
+   "frage": "Wie bereiten Sie sich auf die Anforderungen des AI Act bezüglich Hochrisiko-KI-Systeme vor?",
+   "top": "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as",
+   "kern": {
+    "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as": "Die EU-Kommission konsultiert bis zum 15.01.2027 einen Entwurf für eine Vorlage zur Grundrechte-Folgenabschätzung, die Betreiber von Hochrisiko-KI-Systemen ab dem 02.12.2027 nutzen müssen."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
