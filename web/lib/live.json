@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T16:10:51Z",
+  "generated_at": "2026-11-16T23:05:43Z",
   "updates": {
     "bcbs": [
       {
@@ -536,25 +536,6 @@
           "en": "BaFin clarifies the applicability of the European Market Infrastructure Regulation (EMIR) to insurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision. EMIR aims to mitigate systemic risks in the European derivatives market by increasing transparency and safety, particularly through the clearing of standardized OTC derivatives via central counterparties and reporting to trade repositories.\n\nInsurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision are classified as “financial counterparties” and are subject to the clearing obligation for standardized OTC derivatives. Non-financial counterparties, which BaFin also considers to include burial funds, are subject to the clearing obligation if they use derivatives extensively for non-hedging purposes. All derivative transactions must be reported to a trade repository to enhance transparency.\n\nBaFin specifies that delegating the reporting obligation under Art. 9(1) EMIR to a counterparty does not constitute outsourcing under the German Insurance Supervision Act (VAG), whereas transferring it to a suitable third party requires a case-by-case assessment for functional outsourcing. Even when outsourcing services, risk management requirements according to VAG and MaRisk VA must be observed."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_hinweise_emir_va.html",
-        "imp": "medium"
-      },
-      {
-        "d": "18.02.2014",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Einordnung zur Delegation der EMIR-Meldepflicht für Versicherer",
-          "en": "BaFin Classification of EMIR Reporting Obligation Delegation for Insurers"
-        },
-        "sl": "versicherungsaufsichtsrechtliche-einordnung-der-delegation-der-meldepflicht-nach",
-        "s": {
-          "de": "Die BaFin präzisiert die versicherungsaufsichtsrechtliche Einordnung der Delegation der Meldepflicht nach Artikel 9 Abs. 1 EMIR. Sie unterscheidet dabei zwischen der Übertragung der Meldepflicht auf den Kontrahenten und auf einen geeigneten Dritten.\n\nWird die Meldepflicht auf den Kontrahenten übertragen, liegt nach Auffassung der BaFin keine Auslagerung oder Funktionsausgliederung gemäß § 5 Abs. 3 Nr. 4 VAG vor. Dies dient der Vermeidung von Mehrfachmeldungen und der Arbeitsvereinfachung. Bei einer Übertragung auf einen geeigneten Dritten ist hingegen stets eine Einzelfallprüfung erforderlich, ob eine Funktionsausgliederung nach §§ 5 Abs. 3 Nr. 4, 64a Abs. 4 VAG i.V.m. Punkt 8 der MaRisk VA oder eine Ausgliederung von Dienstleistungen nach § 64a Abs. 4 VAG i.V.m. Punkt 8 der MaRisk VA vorliegt.\n\nVersicherungsunternehmen müssen bei der Delegation der Meldepflicht an einen geeigneten Dritten die Anforderungen an das Risikomanagement gemäß § 64a Abs. 4 VAG und Punkt 8 der MaRisk VA einhalten. Die BaFin weist darauf hin, dass dies auch bei der Auslagerung von Dienstleistungen gilt.",
-          "en": "BaFin clarifies the insurance supervisory classification of the delegation of the reporting obligation under Article 9(1) EMIR. It distinguishes between transferring the reporting obligation to the counterparty and to a suitable third party.\n\nAccording to BaFin, if the reporting obligation is transferred to the counterparty, it does not constitute an outsourcing or functional outsourcing under Section 5 (3) No. 4 VAG. This aims to avoid duplicate reports and simplify work. However, if the obligation is transferred to a suitable third party, an individual assessment is always required to determine whether it constitutes a functional outsourcing under Sections 5 (3) No. 4, 64a (4) VAG in conjunction with point 8 of MaRisk VA, or an outsourcing of services under Section 64a (4) VAG in conjunction with point 8 of MaRisk VA.\n\nInsurance undertakings must comply with the risk management requirements under Section 64a (4) VAG and point 8 of MaRisk VA when delegating the reporting obligation to a suitable third party. BaFin points out that this also applies to the outsourcing of services."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_emir_meldepflicht_va.html",
         "imp": "medium"
       }
     ],
