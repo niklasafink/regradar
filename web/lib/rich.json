@@ -1,4 +1,145 @@
 {
+ "aiact-2026-11-16-commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as": {
+  "h1": "Grundrechte-Folgenabschätzung unter dem AI Act: Konsultation zur Vorlage (Art. 27)",
+  "seo_title": "AI Act FRIA-Vorlage: Konsultation 2026",
+  "meta_description": "EU-Kommission konsultiert Entwurf der Vorlage zur Grundrechte-Folgenabschätzung (Art. 27 AI Act). Frist: 15.01.2027. Pflicht ab 02.12.2027.",
+  "lead": "Die EU-Kommission konsultiert den Entwurf einer Vorlage für die Grundrechte-Folgenabschätzung nach Art. 27 AI Act. Betreiber bestimmter Hochrisiko-KI-Systeme müssen die Vorlage ab 02.12.2027 verbindlich nutzen.",
+  "aka": [
+   "FRIA",
+   "Fundamental Rights Impact Assessment",
+   "AI Act Art. 27",
+   "Grundrechte-Folgenabschätzung KI",
+   "Hochrisiko-KI Betreiberpflichten"
+  ],
+  "summary": "Betreiber von Hochrisiko-KI-Systemen nach Anhang III AI Act müssen ab 02.12.2027 vor dem Einsatz eine Grundrechte-Folgenabschätzung (FRIA) durchführen und das Ergebnis der Marktüberwachungsbehörde melden. Die EU-Kommission konsultiert jetzt den Entwurf der verbindlichen Vorlage; Rückmeldungen sind bis 15.01.2027 möglich.",
+  "overview": [
+   "Das AI-Büro der EU-Kommission hat einen Entwurf für die Vorlage zur Grundrechte-Folgenabschätzung (FRIA) nach Art. 27 AI Act veröffentlicht und zur öffentlichen Konsultation gestellt. Die Vorlage orientiert sich an der Struktur von Art. 27 Abs. 1 und soll Betreibern durch gezielte Fragen die Erfüllung ihrer Pflichten erleichtern. Nach Finalisierung wird sie auch als automatisiertes Tool auf der AI Act Single Information Platform bereitgestellt.",
+   "Parallel dazu ruft das AI-Büro Betreiber auf, den Entwurf in der Praxis zu testen. Interessierte melden sich bis 04.12.2026. Das AI-Büro begleitet die Teilnehmer mit einer Einführungssitzung und einer abschließenden Ergebnisdiskussion. Die Teilnahme ist freiwillig und berührt bestehende Pflichten nicht."
+  ],
+  "facts": [
+   {
+    "label": "Rechtsgrundlage",
+    "value": "Art. 27 AI Act (Anhang III)"
+   },
+   {
+    "label": "Verpflichtung ab",
+    "value": "02.12.2027"
+   },
+   {
+    "label": "Konsultationsfrist",
+    "value": "15.01.2027"
+   },
+   {
+    "label": "Bewerbungsfrist Pilottest",
+    "value": "04.12.2026"
+   },
+   {
+    "label": "Entwickelt von",
+    "value": "AI-Büro der EU-Kommission mit Beteiligung der FRA"
+   },
+   {
+    "label": "Meldepflicht",
+    "value": "Ergebnisse an Marktüberwachungsbehörde (Art. 27 Abs. 3 AI Act)"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Banken & Kreditinstitute",
+    "note": "Soweit Hochrisiko-KI nach Anhang III eingesetzt",
+    "detail": "Institute, die KI-Systeme aus Anhang III AI Act als Betreiber einsetzen (z. B. Kreditwürdigkeitsbewertung, biometrische Systeme), unterliegen ab 02.12.2027 der FRIA-Pflicht.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Versicherungen",
+    "note": "Soweit Hochrisiko-KI nach Anhang III eingesetzt",
+    "detail": "Versicherungsunternehmen, die entsprechende KI-Systeme betreiben, sind als Deployer von Art. 27 erfasst.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Compliance-Funktion",
+    "note": "Prüfaufgabe: Bestandsaufnahme KI-Systeme",
+    "detail": "Compliance muss prüfen, ob eingesetzte KI-Systeme unter Anhang III fallen, und den FRIA-Prozess rechtzeitig vor 02.12.2027 aufsetzen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "KI-Anbieter",
+    "note": "Art. 27 betrifft primär Betreiber",
+    "detail": "Anbieter von Hochrisiko-KI-Systemen unterliegen eigenen Pflichten; die FRIA-Vorlage richtet sich an Betreiber. Verhältnis wird im erläuternden Hinweis der Kommission geklärt.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Art. 27 AI Act",
+    "title": "Verbindliche FRIA-Vorlage ab 02.12.2027",
+    "text": "Nach Finalisierung der Konsultation wird die Vorlage verbindlich. Betreiber müssen sie für die FRIA nutzen und die Ergebnisse der Marktüberwachungsbehörde melden."
+   },
+   {
+    "ref": "Art. 27 Abs. 5 AI Act",
+    "title": "Automatisiertes Tool geplant",
+    "text": "Die fertige Vorlage soll als automatisiertes Tool auf der AI Act Single Information Platform verfügbar gemacht werden."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob eigene KI-Systeme unter Anhang III AI Act fallen und als Betreiber die FRIA-Pflicht ab 02.12.2027 greift.",
+   "Rückmeldung zum Vorlagenentwurf bis 15.01.2027 einreichen, sofern relevant.",
+   "Bei Interesse am Pilottest: Bewerbung beim AI-Büro bis 04.12.2026.",
+   "Internen FRIA-Prozess und Meldestrecke zur Marktüberwachungsbehörde rechtzeitig aufbauen."
+  ],
+  "timeline": [
+   {
+    "date": "16.11.2026",
+    "label": "Konsultation gestartet",
+    "kind": "schritt"
+   },
+   {
+    "date": "04.12.2026",
+    "label": "Frist Pilottest-Bewerbung",
+    "kind": "frist"
+   },
+   {
+    "date": "15.01.2027",
+    "label": "Frist öffentliche Konsultation",
+    "kind": "frist"
+   },
+   {
+    "date": "02.12.2027",
+    "label": "FRIA-Pflicht in Kraft",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wer muss die FRIA durchführen?",
+    "a": "Bestimmte Betreiber von Hochrisiko-KI-Systemen, die in Anhang III AI Act aufgeführt sind. Der erläuternde Hinweis zum Entwurf klärt genauer, welche Betreiber erfasst sind und wie sich die Pflicht zu den Anbieterpflichten verhält."
+   },
+   {
+    "q": "Wann wird die FRIA-Pflicht verbindlich?",
+    "a": "Ab 02.12.2027. Die Folgenabschätzung muss vor Inbetriebnahme des Systems durchgeführt und bei Änderungen aktualisiert werden."
+   },
+   {
+    "q": "Was passiert nach der Konsultation?",
+    "a": "Die Vorlage wird finalisiert. Danach müssen Betreiber sie verbindlich nutzen und die Ergebnisse der zuständigen Marktüberwachungsbehörde melden (Art. 27 Abs. 3 AI Act)."
+   },
+   {
+    "q": "Ist die Teilnahme am Pilottest verpflichtend?",
+    "a": "Nein. Die Teilnahme ist ausdrücklich freiwillig und berührt keine bestehenden Pflichten unter dem AI Act."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Welche nationalen Behörden als Marktüberwachungsbehörde zuständig sind, geht aus der Quelle nicht hervor.",
+   "Zeitplan für die Finalisierung der Vorlage nach Ende der Konsultation ist nicht angegeben.",
+   "Ob und wann das automatisierte Tool auf der AI Act Single Information Platform live geht, ist offen."
+  ],
+  "meta": {
+   "generated": "2026-11-16",
+   "model": "sonnet",
+   "source": "HTML, 3967 Zeichen, gekürzt auf 3967",
+   "dropped": 0,
+   "tokens": 8979
+  }
+ },
  "amla-2026-10-01-leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben": {
   "h1": "BaFin stellt Rundschreiben zu ESA- und AMLA-Leitlinien ein (ab 01.10.2026)",
   "seo_title": "BaFin: Keine Rundschreiben mehr zu ESA- und AMLA-Leitlinien",
