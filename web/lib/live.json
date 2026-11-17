@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T09:17:24Z",
+  "generated_at": "2026-11-17T10:19:55Z",
   "updates": {
     "bcbs": [
       {
@@ -682,8 +682,8 @@
       {
         "d": "17.11.2026",
         "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
+          "de": "Meldung",
+          "en": "News"
         },
         "src": "bafin.de",
         "ti": {
@@ -692,11 +692,10 @@
         },
         "sl": "aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review",
         "s": {
-          "de": "Diese Aufsichtsmitteilung gilt bis zum 31. Dezember 2027. — Thema: Versicherungen",
-          "en": "Diese Aufsichtsmitteilung gilt bis zum 31. Dezember 2027. — Thema: Versicherungen"
+          "de": "Diese Aufsichtsmitteilung gilt bis zum 31. Dezember 2027.",
+          "en": "Diese Aufsichtsmitteilung gilt bis zum 31. Dezember 2027."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_09_2026_weitere_aenderungen_aus_dem_solvencyII_review_va.html",
-        "refnum": "Aufsichtsmitteilung 09/2026"
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_09_2026_weitere_aenderungen_aus_dem_solvencyII_review_va.html"
       },
       {
         "d": "15.07.2026",
@@ -817,6 +816,24 @@
       }
     ],
     "aiact": [
+      {
+        "d": "17.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "digital-strategy.ec.europa.eu",
+        "ti": {
+          "de": "Call for Expression of Interest for European AI providers",
+          "en": "Call for Expression of Interest for European AI providers"
+        },
+        "sl": "call-for-expression-of-interest-for-european-ai-providers",
+        "s": {
+          "de": "The European Commission’s AI Office is launching a call for expression of interest for European AI providers to present AI solutions to the network of European Digital Innovation Hubs (EDIHs).",
+          "en": "The European Commission’s AI Office is launching a call for expression of interest for European AI providers to present AI solutions to the network of European Digital Innovation Hubs (EDIHs)."
+        },
+        "url": "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers"
+      },
       {
         "d": "16.11.2026",
         "t": {
