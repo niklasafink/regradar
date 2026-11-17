@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T14:08:06Z",
+  "generated_at": "2026-11-17T16:15:00Z",
   "updates": {
     "bcbs": [
       {
@@ -1085,6 +1085,263 @@
         "refnum": "C-526/24"
       }
     ],
+    "crr3": [
+      {
+        "d": "17.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "fsb.org",
+        "ti": {
+          "de": "FSB sets out its priorities for 2027",
+          "en": "FSB sets out its priorities for 2027"
+        },
+        "sl": "fsb-sets-out-its-priorities-for-2027",
+        "s": {
+          "de": "FSB members met in Basel to discuss vulnerabilities in the global financial system and the FSB work programme for 2027.",
+          "en": "FSB members met in Basel to discuss vulnerabilities in the global financial system and the FSB work programme for 2027."
+        },
+        "url": "https://www.fsb.org/2026/11/fsb-sets-out-its-priorities-for-2027/"
+      },
+      {
+        "d": "06.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anwendung der CRR-Ausnahme für Beteiligungen an Versicherern auf konsolidierter Ebene (Q&A 2026_7945)",
+          "en": "Application of CRR exemption for equity holdings in insurance undertakings at consolidated level (Q&A 2026_7945)"
+        },
+        "sl": "2026-7945-consolidated-application-and-intragroup-transferability-of-the-permane",
+        "s": {
+          "de": "Die EBA stellt klar, wie die dauerhafte Ausnahme vom Abzug von Beteiligungen an Versicherungsunternehmen (Artikel 495a Absatz 3 CRR) im Konzern anzuwenden ist: Einzel- und konsolidierte Ebene sind getrennt zu prüfen, und bei einer konzerninternen Umstrukturierung geht die Ausnahme nicht auf das Institut über, das die Beteiligung übernimmt. Institute, die die Ausnahme nutzen, sollten geplante Übertragungen solcher Beteiligungen vorab auf ihre Wirkung auf das harte Kernkapital prüfen.\n\nDie Anwendung der Ausnahme durch ein Einzelinstitut erstreckt sich nicht automatisch auf die konsolidierte Situation der Gruppe, zu der das Institut gehört. Eine übergeordnete Gesellschaft kann die Ausnahme auf konsolidierter Ebene nur anwenden, wenn sie die Bedingungen des Artikels 495a Absatz 3 CRR eigenständig erfüllt. Auch bei einer konzerninternen Übertragung einer Beteiligung auf ein anderes Institut ist die Ausnahme nicht automatisch übertragbar; das empfangende Institut muss die Voraussetzungen erneut prüfen.\n\nDies bedeutet, dass bei Akquisitionen oder Umstrukturierungen innerhalb einer Gruppe die historische Bedingung des Artikel 495a Absatz 3 CRR (Beteiligung am 27. Oktober 2021) für jede Ebene neu bewertet werden muss. Eine Muttergesellschaft, die ein Institut nach Inkrafttreten der CRR3 erwirbt, kann die Ausnahme für die konsolidierte Situation nicht geltend machen, wenn sie selbst die historischen Kriterien nicht erfüllt.",
+          "en": "The EBA clarifies how the permanent exemption from deducting holdings in insurance undertakings (Article 495a(3) CRR) applies within a group: the individual and consolidated levels must be assessed separately, and in an intragroup reorganisation the exemption does not pass to the institution that takes over the holding. Institutions using the exemption should assess the CET1 impact of any planned transfer of such holdings in advance.\n\nThe application of the exemption by an individual institution does not automatically extend to the consolidated situation of the group to which that institution belongs. A parent entity may apply the exemption at the consolidated level only if it independently meets the conditions of Article 495a(3) CRR. Similarly, in the event of an intragroup transfer of a shareholding to another institution, the exemption is not automatically transferable; the receiving institution must re-evaluate the conditions.\n\nThis implies that in acquisitions or restructurings within a group, the historical condition of Article 495a(3) CRR (holding on 27 October 2021) must be re-assessed for each level. A parent company acquiring an institution after the entry into force of CRR3 cannot claim the exemption for the consolidated situation if it does not meet the historical criteria itself."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7945",
+        "imp": "low"
+      },
+      {
+        "d": "02.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "IPU Quarterly Assessment: Neue Rechtsgrundlage im KWG",
+          "en": "IPU Quarterly Assessment: New Legal Basis in KWG"
+        },
+        "sl": "ipu-quarterly-assessment-neue-rechtsgrundlage",
+        "s": {
+          "de": "Die BaFin weist darauf hin, dass die Meldepflicht für das IPU Quarterly Assessment seit dem 1. April 2026 nicht mehr auf ihrer Anordnung beruht, sondern direkt in § 2g Absatz 8 KWG verankert ist. Inhalt und Meldeschwellen des Assessments bleiben unverändert.\n\nDas IPU Quarterly Assessment dient der Überwachung der Vermögenswerte von Drittstaatengruppen in der EU. Meldepflichtig sind bestimmte EU-Mutterinstitute, Einzelinstitute der Drittstaatengruppe sowie das IPU nach seiner Errichtung. Die Berechnung und Überwachung der Schwellenwerte richten sich nach den EBA-Leitlinien (EBA/GL/2021/08).\n\nDie Meldung erfolgt vierteljährlich zu den Stichtagen 31. März, 30. Juni, 30. September und 31. Dezember, mit einer Meldefrist von zwei Monaten nach dem Stichtag. Institute reichen die Meldebögen weiterhin über das NExt-System der Deutschen Bundesbank ein, die die Daten im Auftrag der BaFin erhebt und auswertet.",
+          "en": "The BaFin points out that the reporting obligation for the IPU Quarterly Assessment no longer stems from its own order since April 1, 2026, but is directly enshrined in Section 2g (8) of the German Banking Act (KWG). The content and reporting thresholds of the assessment remain unchanged.\n\nThe IPU Quarterly Assessment serves to monitor the assets of third-country groups in the EU. Certain EU parent institutions and individual institutions of the third-country group, as well as the IPU after its establishment, are subject to reporting requirements. The calculation and monitoring of the thresholds are based on the EBA Guidelines (EBA/GL/2021/08).\n\nReporting is done quarterly on March 31, June 30, September 30, and December 31, with a reporting deadline of two months after the respective reference date. Institutions continue to submit the reporting forms via the Deutsche Bundesbank's NExt system, which collects and evaluates the data on behalf of the BaFin."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_02_ipu_quarterly_assessment_neue_rechtsgrundlage.html",
+        "imp": "low"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Allgemeinverfügung",
+          "en": "General decision"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken",
+          "en": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken"
+        },
+        "sl": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
+        "s": {
+          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte Gewerbeimmobilienkredite reziprok anwendet. Dieser Puffer wird schrittweise erhöht: von einem Prozent auf zwei Prozent mit Inkrafttreten der Allgemeinverfügung und ab dem 1. Juli 2027 auf dreieinhalb Prozent.\n\nDie Erhöhungen gelten für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im Bau- und Immobiliensektor in Österreich, klassifiziert nach NACE-Kodes F 41, F 43 und L 68. Institute müssen den Puffer auf Einzel-, teilkonsolidierter und konsolidierter Basis anwenden, sofern ihre in Österreich belegenen Risikopositionen 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB).\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte die Erhöhung des Puffersatzes begründet, da der ursprüngliche Satz von 1 % nicht ausreichte, um identifizierte Risiken abzudecken, und die Auswirkungen der CRR 3 auf Gewerbeimmobilienengagements geringer ausfielen als erwartet.",
+          "en": "The BaFin has issued a general decree reciprocally applying the sectoral systemic risk buffer for certain commercial real estate loans mandated by the Austrian Financial Market Authority (FMA). This buffer will be gradually increased: from one percent to two percent upon the general decree's entry into force, and to three and a half percent from July 1, 2027.\n\nThe increases apply to risk exposures to non-financial corporations (excluding non-profit housing associations) in the construction and real estate sector in Austria, classified under NACE codes F 41, F 43, and L 68. Institutions must apply the buffer on an individual, sub-consolidated, and consolidated basis, provided their risk exposures located in Austria exceed 100 million Euros. The BaFin thus follows a recommendation from the European Systemic Risk Board (ESRB).\n\nThe general decree enters into force one month after its public announcement. The FMA justified the increase in the buffer rate by stating that the original rate of 1% was insufficient to cover identified risks, and the impact of CRR 3 on commercial real estate exposures was less than expected."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20261021_anerkennung_kapitalpuffer_sys_risiken_at.html",
+        "imp": "high"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
+          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
+        },
+        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
+        "s": {
+          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
+          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
+        "imp": "medium"
+      },
+      {
+        "d": "11.09.2026",
+        "t": {
+          "de": "Durchführungs-VO",
+          "en": "Implementing regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Technische Informationen für versicherungstechnische Rückstellungen und Eigenmittel (Solvency II) (32026R2041)",
+          "en": "Technical Information for Technical Provisions and Own Funds (Solvency II) (32026R2041)"
+        },
+        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
+        "s": {
+          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung der Volatilitätsanpassung und die risikofreien Zinssätze für verschiedene Währungen definiert.\n\nDie Regelungen betreffen alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union, die der Solvency-II-Richtlinie unterliegen. Sie müssen die hier festgelegten technischen Parameter für ihre versicherungsmathematischen Berechnungen und die Ermittlung ihrer Solvenzkapitalanforderungen anwenden. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im gesamten EU-Binnenmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 30. September 2026. Die technischen Informationen sind für die Anwendung ab diesem Datum relevant.",
+          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the volatility adjustment and the risk-free interest rates for various currencies are defined.\n\nThe regulations apply to all insurance and reinsurance undertakings within the European Union that are subject to the Solvency II Directive. They must apply the technical parameters set out herein for their actuarial calculations and the determination of their Solvency Capital Requirements. This ensures a uniform and comparable valuation basis across the entire EU single market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 30 September 2026. The technical information is relevant for application from this date."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
+        "imp": "high",
+        "refnum": "32026R2041"
+      },
+      {
+        "d": "31.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Informationen zur Datenverarbeitung bei Bestellungen von Verwaltern des Refinanzierungsregisters (KWG)",
+          "en": "BaFin Information on Data Processing for Appointments of Refinancing Register Administrators (KWG)"
+        },
+        "sl": "bestellungen-von-verwaltern-des-refinanzierungsregisters-und-stellvertretern-gem",
+        "s": {
+          "de": "Die BaFin informiert über die Verarbeitung personenbezogener Daten im Rahmen der Bestellung von Verwaltern und Stellvertretern des Refinanzierungsregisters gemäß §§ 22e ff. KWG. Die Datenverarbeitung erfolgt zur Prüfung der Eignung der betreffenden Person für diese Funktion.\n\nBetroffen sind Personen, die als Verwalter oder Stellvertreter des Refinanzierungsregisters vorgeschlagen oder beantragt werden. Die BaFin erhebt und verarbeitet hierfür Namen, Geburtsdatum, Adress- und Kontaktdaten sowie Informationen zur persönlichen Zuverlässigkeit, fachlichen Eignung und zu weiteren Tätigkeiten. Die Daten werden innerhalb der BaFin von zuständigen Mitarbeitern verarbeitet und nicht an Drittländer oder internationale Organisationen übermittelt.\n\nDie Speicherung der Daten erfolgt für zehn Jahre nach Ausscheiden aus der aufsichtsrechtlich relevanten Funktion oder nach erfolgtem Antrag/Vorschlag bei unterbliebener Funktionsübernahme. Betroffene Personen haben die Rechte gemäß DSGVO, einschließlich Auskunft, Berichtigung, Löschung und Widerspruch. Eine Nichtbereitstellung der notwendigen Daten führt dazu, dass der Antrag nicht bearbeitet werden kann.",
+          "en": "The BaFin provides information on the processing of personal data in connection with the appointment of administrators and deputies of the refinancing register in accordance with §§ 22e et seq. KWG. Data processing is carried out to assess the suitability of the person concerned for this function.\n\nThis affects individuals proposed or applying to be administrators or deputies of the refinancing register. For this purpose, BaFin collects and processes names, date of birth, address and contact details, as well as information on personal reliability, professional suitability, and other activities. The data is processed internally by BaFin's responsible employees and is not transferred to third countries or international organizations.\n\nData is stored for ten years after leaving the supervisory-relevant function or after an application/proposal has been made if the function is not taken up. Data subjects have rights under the GDPR, including access, rectification, erasure, and objection. Failure to provide the necessary data will result in the application not being processed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Anlage/Datenschutz/anlage_datenschutz_bestellungen_Refinanzierungsregisterverwalter_Kreditwesengesetz_ba.html",
+        "imp": "low"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
+          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
+        },
+        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
+        "s": {
+          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
+          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
+        "imp": "low"
+      },
+      {
+        "d": "17.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
+          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
+        },
+        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
+        "s": {
+          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
+          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
+        "imp": "medium"
+      },
+      {
+        "d": "04.06.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Anpassungen der Marktrisikoregeln zur Sicherung der Wettbewerbsfähigkeit von EU-Banken",
+          "en": "Adjustments to market risk rules to safeguard EU banks’ competitiveness"
+        },
+        "sl": "commission-adopts-temporary-adjustments-to-basel-iii-market-risk-rules-to-safegu",
+        "s": {
+          "de": "Die Europäische Kommission hat gezielte, befristete Anpassungen an den Marktrisikoregeln des Basler Ausschusses für Bankenaufsicht (FRTB – Fundamental Review of the Trading Book) vorgenommen. Diese Maßnahmen sollen die Wettbewerbsfähigkeit der EU-Banken im Vergleich zu internationalen Wettbewerbern sichern, da andere große Jurisdiktionen die FRTB-Umsetzung verzögern.\n\nDie Anpassungen, die durch einen delegierten Rechtsakt erfolgen, umfassen einen Multiplikator, um vorübergehend die Kapitaleffekte für EU-Banken auszugleichen, die durch die FRTB-Implementierung nachteilig betroffen sind. Dies soll Wettbewerbsverzerrungen entgegenwirken, die entstehen, weil die EU alle anderen Basel III-Standards bereits seit dem 1. Januar 2025 vollständig umgesetzt hat.\n\nDer delegierte Rechtsakt wird nun vom Europäischen Parlament und dem Rat geprüft. Wenn keine Einwände erhoben werden, treten die Maßnahmen am 1. Januar 2027 für einen Zeitraum von drei Jahren in Kraft.",
+          "en": "The European Commission has introduced targeted, time-limited adjustments to the Basel Committee on Banking Supervision's market risk rules (FRTB – Fundamental Review of the Trading Book). These measures aim to safeguard the competitiveness of EU banks compared to international competitors, as other major jurisdictions are delaying FRTB implementation.\n\nThe adjustments, introduced through a delegated act, include a multiplier to temporarily offset capital impacts for EU banks adversely affected by FRTB implementation. This is intended to counteract competitive distortions arising from the EU having fully implemented all other Basel III standards since January 1, 2025.\n\nThe delegated act will now be reviewed by the European Parliament and the Council. If no objections are raised, the measures will enter into application on January 1, 2027, for a period of three years."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-adopts-temporary-adjustments-basel-iii-market-risk-rules-safeguard-eu-banks-2026-06-04_en",
+        "imp": "medium"
+      },
+      {
+        "d": "30.03.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG)",
+          "en": "Banking Directive Implementation and Bureaucracy Reduction Act (BRUBEG)"
+        },
+        "sl": "gesetz-zur-umsetzung-der-richtlinie-eu-2024-1619-des-europaeischen-parlaments-un",
+        "s": {
+          "de": "Das Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG) setzt die EU-Richtlinie 2024/1619 in deutsches Recht um. Diese Richtlinie ändert die Richtlinie 2013/36/EU (CRD V) und betrifft Aufsichtsbefugnisse, Sanktionen, Zweigstellen aus Drittländern sowie die Berücksichtigung von Umwelt-, Sozial- und Unternehmensführungsrisiken (ESG-Risiken).\n\nDas Gesetz ist für Kreditinstitute relevant, da es neue Anforderungen an die Aufsicht und die Berichterstattung einführt. Gleichzeitig zielt es darauf ab, Bürokratie abzubauen. Die Umsetzung der ESG-Risikobetrachtung ist ein wichtiger Aspekt, der von Finanzinstituten entsprechende Anpassungen in ihren Risikomanagementsystemen erfordern wird.\n\nDas Gesetz wurde am 25. März 2026 ausgefertigt und am 30. März 2026 im Bundesgesetzblatt veröffentlicht.",
+          "en": "The Banking Directive Implementation and Bureaucracy Reduction Act (BRUBEG) transposes EU Directive 2024/1619 into German law. This directive amends Directive 2013/36/EU (CRD V) and addresses supervisory powers, sanctions, third-country branches, and the consideration of environmental, social, and governance (ESG) risks.\n\nThe act is relevant for credit institutions as it introduces new requirements for supervision and reporting. At the same time, it aims to reduce bureaucracy. The implementation of ESG risk considerations is a crucial aspect that will require financial institutions to make corresponding adjustments to their risk management systems.\n\nThe act was enacted on March 25, 2026, and published in the Federal Law Gazette on March 30, 2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/81",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG) im BGBl. veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bankenrichtlinienumsetzungs-und-buerokratieentlastungsgesetz-brubeg-im-bgbl-veroeffentlicht/",
+            "d": "31.03.2026"
+          }
+        ]
+      },
+      {
+        "d": "25.02.2026",
+        "t": {
+          "de": "Allgemeinverfügung",
+          "en": "General decision"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Anerkennung des österreichischen Systemrisikopuffers für Gewerbeimmobilien-Kredite",
+          "en": "Recognition of Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
+        },
+        "sl": "anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer-systemische-ri",
+        "s": {
+          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die einen von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer reziprok anerkennt. Dieser Puffer in Höhe von 1,0 % gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im österreichischen Bau- und Immobiliensektor, die nach NACE-Kodes F 41 (Hochbau), F 43 (Vorbereitende Baustellenarbeiten, Bauinstallation und sonstiges Ausbaugewerbe) und L 68 (Grundstücks- und Wohnungswesen) klassifiziert sind.\n\nDie Maßnahme ist auf Einzel-, teilkonsolidierter und konsolidierter Basis anzuwenden. Sie betrifft Institute, deren in Österreich belegene Risikopositionen – wie definiert – jeweils 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB), der die freiwillige reziproke Anwendung makroprudenzieller Maßnahmen zur Stärkung der Finanzstabilität unterstützt.\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte den Puffer ab dem 1. Juli 2025 aktiviert, um die Risikotragfähigkeit des österreichischen Bankensystems zu erhöhen und Risiken durch Störungen auf dem Gewerbeimmobilienmarkt zu minimieren.",
+          "en": "The BaFin has issued a general decree reciprocally recognizing a sectoral systemic risk buffer mandated by the Austrian Financial Market Authority (FMA). This 1.0% buffer applies to risk exposures to non-financial corporations (excluding non-profit housing associations) in the Austrian construction and real estate sector, classified under NACE codes F 41 (Building construction), F 43 (Civil engineering and specialized construction activities), and L 68 (Real estate activities).\n\nThe measure is to be applied on an individual, sub-consolidated, and consolidated basis. It affects institutions whose risk exposures located in Austria—as defined—exceed EUR 100 million each. BaFin thus follows a recommendation by the European Systemic Risk Board (ESRB), which supports the voluntary reciprocal application of macroprudential measures to strengthen financial stability.\n\nThe general decree enters into force one month after its public announcement. The FMA activated the buffer from July 1, 2025, to enhance the Austrian banking system's resilience and minimize risks from disruptions in the commercial real estate market."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20260225_anerkennung_kapitalpuffer_sys_risiken_at.html",
+        "imp": "high"
+      },
+      {
+        "d": "22.12.2025",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Umsetzung der EU-Richtlinie zu MREL-Anforderungen (BRRD/SRM-Verordnung)",
+          "en": "Transposition of EU Directive on MREL Requirements (BRRD/SRM Regulation)"
+        },
+        "sl": "gesetz-zur-umsetzung-der-richtlinie-eu-2024-1174-des-europaeischen-parlaments-un",
+        "s": {
+          "de": "Dieses Gesetz setzt die EU-Richtlinie 2024/1174 um, die Änderungen an der Richtlinie 2014/59/EU (BRRD) und der Verordnung (EU) Nr. 806/2014 (SRM-Verordnung) vornimmt. Die Änderungen betreffen spezifische Aspekte der Mindestanforderung an Eigenmittel und berücksichtigungsfähige Verbindlichkeiten (MREL).\n\nDie Umsetzung der Richtlinie ist für Finanzinstitute relevant, die den MREL-Anforderungen unterliegen. Sie müssen die angepassten Vorgaben für die Zusammensetzung und Höhe ihrer MREL-Puffer beachten, um im Abwicklungsfall ausreichend kapitalisiert zu sein. Dies dient der Stärkung der Abwicklungsfähigkeit von Instituten.\n\nDas Gesetz wurde am 22.12.2025 ausgefertigt und im Bundesgesetzblatt veröffentlicht.",
+          "en": "This law transposes EU Directive 2024/1174, which amends Directive 2014/59/EU (BRRD) and Regulation (EU) No 806/2014 (SRM Regulation). The amendments concern specific aspects of the minimum requirement for own funds and eligible liabilities (MREL).\n\nThe implementation of the directive is relevant for financial institutions subject to MREL requirements. They must comply with the adjusted provisions for the composition and amount of their MREL buffers to be sufficiently capitalized in the event of resolution. This aims to strengthen the resolvability of institutions.\n\nThe law was enacted and published in the Federal Law Gazette on 22.12.2025."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/344",
+        "imp": "high"
+      }
+    ],
     "dgsd": [
       {
         "d": "16.11.2026",
@@ -1801,245 +2058,6 @@
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7830",
         "imp": "low"
-      }
-    ],
-    "crr3": [
-      {
-        "d": "06.11.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anwendung der CRR-Ausnahme für Beteiligungen an Versicherern auf konsolidierter Ebene (Q&A 2026_7945)",
-          "en": "Application of CRR exemption for equity holdings in insurance undertakings at consolidated level (Q&A 2026_7945)"
-        },
-        "sl": "2026-7945-consolidated-application-and-intragroup-transferability-of-the-permane",
-        "s": {
-          "de": "Die EBA stellt klar, wie die dauerhafte Ausnahme vom Abzug von Beteiligungen an Versicherungsunternehmen (Artikel 495a Absatz 3 CRR) im Konzern anzuwenden ist: Einzel- und konsolidierte Ebene sind getrennt zu prüfen, und bei einer konzerninternen Umstrukturierung geht die Ausnahme nicht auf das Institut über, das die Beteiligung übernimmt. Institute, die die Ausnahme nutzen, sollten geplante Übertragungen solcher Beteiligungen vorab auf ihre Wirkung auf das harte Kernkapital prüfen.\n\nDie Anwendung der Ausnahme durch ein Einzelinstitut erstreckt sich nicht automatisch auf die konsolidierte Situation der Gruppe, zu der das Institut gehört. Eine übergeordnete Gesellschaft kann die Ausnahme auf konsolidierter Ebene nur anwenden, wenn sie die Bedingungen des Artikels 495a Absatz 3 CRR eigenständig erfüllt. Auch bei einer konzerninternen Übertragung einer Beteiligung auf ein anderes Institut ist die Ausnahme nicht automatisch übertragbar; das empfangende Institut muss die Voraussetzungen erneut prüfen.\n\nDies bedeutet, dass bei Akquisitionen oder Umstrukturierungen innerhalb einer Gruppe die historische Bedingung des Artikel 495a Absatz 3 CRR (Beteiligung am 27. Oktober 2021) für jede Ebene neu bewertet werden muss. Eine Muttergesellschaft, die ein Institut nach Inkrafttreten der CRR3 erwirbt, kann die Ausnahme für die konsolidierte Situation nicht geltend machen, wenn sie selbst die historischen Kriterien nicht erfüllt.",
-          "en": "The EBA clarifies how the permanent exemption from deducting holdings in insurance undertakings (Article 495a(3) CRR) applies within a group: the individual and consolidated levels must be assessed separately, and in an intragroup reorganisation the exemption does not pass to the institution that takes over the holding. Institutions using the exemption should assess the CET1 impact of any planned transfer of such holdings in advance.\n\nThe application of the exemption by an individual institution does not automatically extend to the consolidated situation of the group to which that institution belongs. A parent entity may apply the exemption at the consolidated level only if it independently meets the conditions of Article 495a(3) CRR. Similarly, in the event of an intragroup transfer of a shareholding to another institution, the exemption is not automatically transferable; the receiving institution must re-evaluate the conditions.\n\nThis implies that in acquisitions or restructurings within a group, the historical condition of Article 495a(3) CRR (holding on 27 October 2021) must be re-assessed for each level. A parent company acquiring an institution after the entry into force of CRR3 cannot claim the exemption for the consolidated situation if it does not meet the historical criteria itself."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7945",
-        "imp": "low"
-      },
-      {
-        "d": "02.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "IPU Quarterly Assessment: Neue Rechtsgrundlage im KWG",
-          "en": "IPU Quarterly Assessment: New Legal Basis in KWG"
-        },
-        "sl": "ipu-quarterly-assessment-neue-rechtsgrundlage",
-        "s": {
-          "de": "Die BaFin weist darauf hin, dass die Meldepflicht für das IPU Quarterly Assessment seit dem 1. April 2026 nicht mehr auf ihrer Anordnung beruht, sondern direkt in § 2g Absatz 8 KWG verankert ist. Inhalt und Meldeschwellen des Assessments bleiben unverändert.\n\nDas IPU Quarterly Assessment dient der Überwachung der Vermögenswerte von Drittstaatengruppen in der EU. Meldepflichtig sind bestimmte EU-Mutterinstitute, Einzelinstitute der Drittstaatengruppe sowie das IPU nach seiner Errichtung. Die Berechnung und Überwachung der Schwellenwerte richten sich nach den EBA-Leitlinien (EBA/GL/2021/08).\n\nDie Meldung erfolgt vierteljährlich zu den Stichtagen 31. März, 30. Juni, 30. September und 31. Dezember, mit einer Meldefrist von zwei Monaten nach dem Stichtag. Institute reichen die Meldebögen weiterhin über das NExt-System der Deutschen Bundesbank ein, die die Daten im Auftrag der BaFin erhebt und auswertet.",
-          "en": "The BaFin points out that the reporting obligation for the IPU Quarterly Assessment no longer stems from its own order since April 1, 2026, but is directly enshrined in Section 2g (8) of the German Banking Act (KWG). The content and reporting thresholds of the assessment remain unchanged.\n\nThe IPU Quarterly Assessment serves to monitor the assets of third-country groups in the EU. Certain EU parent institutions and individual institutions of the third-country group, as well as the IPU after its establishment, are subject to reporting requirements. The calculation and monitoring of the thresholds are based on the EBA Guidelines (EBA/GL/2021/08).\n\nReporting is done quarterly on March 31, June 30, September 30, and December 31, with a reporting deadline of two months after the respective reference date. Institutions continue to submit the reporting forms via the Deutsche Bundesbank's NExt system, which collects and evaluates the data on behalf of the BaFin."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_02_ipu_quarterly_assessment_neue_rechtsgrundlage.html",
-        "imp": "low"
-      },
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken",
-          "en": "Allgemeinverfügung zur Anerkennung des in Österreich angeordneten Kapitalpuffers für systemische Risiken"
-        },
-        "sl": "allgemeinverfuegung-zur-anerkennung-des-in-oesterreich-angeordneten-kapitalpuffe",
-        "s": {
-          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die den von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer für bestimmte Gewerbeimmobilienkredite reziprok anwendet. Dieser Puffer wird schrittweise erhöht: von einem Prozent auf zwei Prozent mit Inkrafttreten der Allgemeinverfügung und ab dem 1. Juli 2027 auf dreieinhalb Prozent.\n\nDie Erhöhungen gelten für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im Bau- und Immobiliensektor in Österreich, klassifiziert nach NACE-Kodes F 41, F 43 und L 68. Institute müssen den Puffer auf Einzel-, teilkonsolidierter und konsolidierter Basis anwenden, sofern ihre in Österreich belegenen Risikopositionen 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB).\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte die Erhöhung des Puffersatzes begründet, da der ursprüngliche Satz von 1 % nicht ausreichte, um identifizierte Risiken abzudecken, und die Auswirkungen der CRR 3 auf Gewerbeimmobilienengagements geringer ausfielen als erwartet.",
-          "en": "The BaFin has issued a general decree reciprocally applying the sectoral systemic risk buffer for certain commercial real estate loans mandated by the Austrian Financial Market Authority (FMA). This buffer will be gradually increased: from one percent to two percent upon the general decree's entry into force, and to three and a half percent from July 1, 2027.\n\nThe increases apply to risk exposures to non-financial corporations (excluding non-profit housing associations) in the construction and real estate sector in Austria, classified under NACE codes F 41, F 43, and L 68. Institutions must apply the buffer on an individual, sub-consolidated, and consolidated basis, provided their risk exposures located in Austria exceed 100 million Euros. The BaFin thus follows a recommendation from the European Systemic Risk Board (ESRB).\n\nThe general decree enters into force one month after its public announcement. The FMA justified the increase in the buffer rate by stating that the original rate of 1% was insufficient to cover identified risks, and the impact of CRR 3 on commercial real estate exposures was less than expected."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20261021_anerkennung_kapitalpuffer_sys_risiken_at.html",
-        "imp": "high"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anrechenbarkeit von Immobilien als Kreditsicherheit und IPRE-Definition (Q&A 2026_7898)",
-          "en": "IPRE and Property Collateral for Credit Risk Mitigation (Q&A 2026_7898)"
-        },
-        "sl": "2026-7898-ipre-and-property-collateral-for-credit-risk-mitigation",
-        "s": {
-          "de": "Die EBA präzisiert die Anrechenbarkeit von Immobilien als Kreditsicherheit im Rahmen des IRB-Ansatzes. Sie stellt klar, dass die Anrechenbarkeit von Immobilien als Sicherheit für die Minderung des Kreditrisikos (CRM) gemäß Artikel 199 Absatz 2 CRR nicht strikt an die Definition von ertragsgenerierenden Immobilienengagements (IPRE) in Artikel 4 Nummer 75b CRR gekoppelt ist.\n\nFür die Anrechnung als Sicherheit ist entscheidend, dass die Rückzahlung des gesicherten Betrags nicht wesentlich von den Cashflows der einzelnen Immobilie abhängt. Bei einem Pool von Sicherheiten muss die Rückzahlung des gesamten durch Immobilien gesicherten Betrags gemäß Artikel 231 CRR nicht wesentlich von den gesamten Cashflows der Immobilien in diesem Pool abhängen. Die EBA betont, dass sich der Begriff „Immobilie“ in Artikel 199 Absatz 2 CRR auf die gesamte als Sicherheit dienende Immobilie bezieht und nicht auf einzelne Mieteinheiten innerhalb dieser Immobilie, es sei denn, diese Einheiten sind separat und unabhängig als Sicherheit verpfändet.\n\nSelbst bei mehreren Mieteinheiten oder diversifizierten Mietstrukturen innerhalb einer Immobilie, wenn die Rückzahlung des Engagements wesentlich von den gesamten Cashflows dieser Immobilie abhängt, erfüllt die Sicherheit die Bedingung des Artikels 199 Absatz 2 Buchstabe b CRR nicht. Die EBA weist darauf hin, dass Artikel 147 Absatz 11 CRR3 die EBA beauftragt, technische Regulierungsstandards (RTS) zur Bestimmung der IPRE-Kategorie zu entwickeln, was die Interaktion weiter klären könnte.",
-          "en": "The EBA clarifies the eligibility of immovable property as credit collateral under the IRB approach. It states that the eligibility of immovable property collateral for credit risk mitigation (CRM) under Article 199(2) CRR is not strictly linked to the definition of income-producing real estate (IPRE) exposures in Article 4(75b) CRR.\n\nFor collateral recognition, it is crucial that the repayment of the secured amount does not materially depend on the cash flows of the individual property. For a pool of collateral, the repayment of the total amount secured by immovable property under Article 231 CRR must not materially depend on the total cash flows generated by the immovable properties in that pool. The EBA emphasizes that the term “property” in Article 199(2) CRR refers to the entire property serving as collateral, and not to individual rental units within that property, unless these units are separately and independently pledged as collateral.\n\nEven with multiple rental units or diversified tenancy structures within a property, if the repayment of the exposure materially depends on the overall cash flows generated by that property, the collateral does not meet the condition in Article 199(2)(b) CRR. The EBA notes that Article 147(11) CRR3 mandates the EBA to develop Regulatory Technical Standards (RTS) for determining the IPRE category, which could further clarify this interaction."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7898",
-        "imp": "medium"
-      },
-      {
-        "d": "11.09.2026",
-        "t": {
-          "de": "Durchführungs-VO",
-          "en": "Implementing regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Technische Informationen für versicherungstechnische Rückstellungen und Eigenmittel (Solvency II) (32026R2041)",
-          "en": "Technical Information for Technical Provisions and Own Funds (Solvency II) (32026R2041)"
-        },
-        "sl": "durchfuehrungsverordnung-eu-2026-2041-der-kommission-vom-11-september-2026-mit-d",
-        "s": {
-          "de": "Diese Durchführungsverordnung legt technische Informationen fest, die für die Berechnung versicherungstechnischer Rückstellungen und der Eigenmittel gemäß der Solvency-II-Richtlinie erforderlich sind. Sie beinhaltet spezifische Vorgaben für die Zinsstrukturkurve ohne Kreditrisiko, die für die Bewertung von Verpflichtungen und Vermögenswerten von Versicherungs- und Rückversicherungsunternehmen maßgeblich ist. Zudem werden Parameter für die Berechnung der Volatilitätsanpassung und die risikofreien Zinssätze für verschiedene Währungen definiert.\n\nDie Regelungen betreffen alle Versicherungs- und Rückversicherungsunternehmen innerhalb der Europäischen Union, die der Solvency-II-Richtlinie unterliegen. Sie müssen die hier festgelegten technischen Parameter für ihre versicherungsmathematischen Berechnungen und die Ermittlung ihrer Solvenzkapitalanforderungen anwenden. Dies gewährleistet eine einheitliche und vergleichbare Bewertungsgrundlage im gesamten EU-Binnenmarkt.\n\nDie Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft und gilt ab dem 30. September 2026. Die technischen Informationen sind für die Anwendung ab diesem Datum relevant.",
-          "en": "This Implementing Regulation specifies the technical information required for the calculation of technical provisions and own funds in accordance with the Solvency II Directive. It includes specific provisions for the risk-free interest rate term structure, which is crucial for the valuation of liabilities and assets of insurance and reinsurance undertakings. Furthermore, parameters for the calculation of the volatility adjustment and the risk-free interest rates for various currencies are defined.\n\nThe regulations apply to all insurance and reinsurance undertakings within the European Union that are subject to the Solvency II Directive. They must apply the technical parameters set out herein for their actuarial calculations and the determination of their Solvency Capital Requirements. This ensures a uniform and comparable valuation basis across the entire EU single market.\n\nThe regulation enters into force on the twentieth day following its publication in the Official Journal of the European Union and applies from 30 September 2026. The technical information is relevant for application from this date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2041",
-        "imp": "high",
-        "refnum": "32026R2041"
-      },
-      {
-        "d": "31.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Informationen zur Datenverarbeitung bei Bestellungen von Verwaltern des Refinanzierungsregisters (KWG)",
-          "en": "BaFin Information on Data Processing for Appointments of Refinancing Register Administrators (KWG)"
-        },
-        "sl": "bestellungen-von-verwaltern-des-refinanzierungsregisters-und-stellvertretern-gem",
-        "s": {
-          "de": "Die BaFin informiert über die Verarbeitung personenbezogener Daten im Rahmen der Bestellung von Verwaltern und Stellvertretern des Refinanzierungsregisters gemäß §§ 22e ff. KWG. Die Datenverarbeitung erfolgt zur Prüfung der Eignung der betreffenden Person für diese Funktion.\n\nBetroffen sind Personen, die als Verwalter oder Stellvertreter des Refinanzierungsregisters vorgeschlagen oder beantragt werden. Die BaFin erhebt und verarbeitet hierfür Namen, Geburtsdatum, Adress- und Kontaktdaten sowie Informationen zur persönlichen Zuverlässigkeit, fachlichen Eignung und zu weiteren Tätigkeiten. Die Daten werden innerhalb der BaFin von zuständigen Mitarbeitern verarbeitet und nicht an Drittländer oder internationale Organisationen übermittelt.\n\nDie Speicherung der Daten erfolgt für zehn Jahre nach Ausscheiden aus der aufsichtsrechtlich relevanten Funktion oder nach erfolgtem Antrag/Vorschlag bei unterbliebener Funktionsübernahme. Betroffene Personen haben die Rechte gemäß DSGVO, einschließlich Auskunft, Berichtigung, Löschung und Widerspruch. Eine Nichtbereitstellung der notwendigen Daten führt dazu, dass der Antrag nicht bearbeitet werden kann.",
-          "en": "The BaFin provides information on the processing of personal data in connection with the appointment of administrators and deputies of the refinancing register in accordance with §§ 22e et seq. KWG. Data processing is carried out to assess the suitability of the person concerned for this function.\n\nThis affects individuals proposed or applying to be administrators or deputies of the refinancing register. For this purpose, BaFin collects and processes names, date of birth, address and contact details, as well as information on personal reliability, professional suitability, and other activities. The data is processed internally by BaFin's responsible employees and is not transferred to third countries or international organizations.\n\nData is stored for ten years after leaving the supervisory-relevant function or after an application/proposal has been made if the function is not taken up. Data subjects have rights under the GDPR, including access, rectification, erasure, and objection. Failure to provide the necessary data will result in the application not being processed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Anlage/Datenschutz/anlage_datenschutz_bestellungen_Refinanzierungsregisterverwalter_Kreditwesengesetz_ba.html",
-        "imp": "low"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Anwendung der Währungsinkongruenz-Behandlung auf Selbstständige (Art. 123a CRR) (2026_7724)",
-          "en": "Application of currency mismatch treatment to self-employed individuals (Art. 123a CRR) (2026_7724)"
-        },
-        "sl": "2026-7724-application-of-the-currency-mismatch-treatment-to-self-employed-indivi",
-        "s": {
-          "de": "Die EBA klärt, ob die Währungsinkongruenz-Behandlung gemäß Artikel 123a der CRR auf Engagements gegenüber Selbstständigen (natürliche Personen, die eine wirtschaftliche Tätigkeit ausüben) anwendbar ist. Dies betrifft Fälle, in denen diese Personen die Kriterien des Artikels 123 CRR erfüllen, auch wenn sie gemäß Artikel 5(9) CRR als KMU gelten.\n\nDie EBA stellt fest, dass Artikel 123a CRR explizit Engagements gegenüber natürlichen Personen betrifft, die der Risikopositionsklasse gemäß Artikel 112 Buchstabe h oder i zugewiesen sind. Engagements gegenüber KMU fallen nicht in den Anwendungsbereich des Artikels 123a CRR, selbst wenn diese KMU natürliche Personen sind. Für die Einstufung eines Engagements gegenüber einem Selbstständigen als KMU verweist die EBA auf Q&A 2021_6301.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Engagements gegenüber selbstständigen natürlichen Personen halten. Sie müssen prüfen, ob diese Engagements als Engagements gegenüber natürlichen Personen oder als KMU eingestuft werden, um die korrekte Anwendung der Währungsinkongruenz-Behandlung zu gewährleisten.",
-          "en": "The EBA clarifies whether the currency mismatch treatment under Article 123a of the CRR applies to exposures to self-employed individuals (natural persons carrying out an economic activity). This concerns cases where these individuals meet the criteria of Article 123 CRR, even if they are considered SMEs under Article 5(9) CRR.\n\nThe EBA states that Article 123a CRR explicitly applies to exposures to natural persons assigned to the exposure class referred to in Article 112, point (h) or (i). Exposures to SMEs do not fall within the scope of Article 123a CRR, even if these SMEs are natural persons. For the classification of an exposure to a self-employed individual as an SME, the EBA refers to Q&A 2021_6301.\n\nThis clarification is relevant for credit institutions holding exposures to self-employed natural persons. They must assess whether these exposures are classified as exposures to natural persons or as SMEs to ensure the correct application of the currency mismatch treatment."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7724",
-        "imp": "low"
-      },
-      {
-        "d": "17.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finale Entwürfe der RTS und ITS zu wesentlichen Übernahmen, Fusionen und Spaltungen (CRD)",
-          "en": "EBA publishes final draft RTS and ITS on material acquisitions, mergers and divisions (CRD)"
-        },
-        "sl": "the-eba-publishes-its-final-draft-technical-standards-on-material-acquisitions-m",
-        "s": {
-          "de": "Die EBA hat ihre finalen Entwürfe der Technischen Regulierungsstandards (RTS) und Technischen Durchführungsstandards (ITS) zu wesentlichen Übernahmen, Vermögens- und Schuldenübertragungen, Fusionen und Spaltungen veröffentlicht. Ziel ist es, die Bankenkonsolidierung und EU-Marktintegration zu fördern, indem aufsichtsrechtliche Erwartungen geklärt, regulatorische Unsicherheiten reduziert und ein konsistenter aufsichtsrechtlicher Bewertungsrahmen geschaffen werden.\n\nDie RTS legen optimierte Informationsanforderungen für Meldungen fest, definieren eine gemeinsame Bewertungsmethodik und präzisieren die Verfahren für wesentliche Transaktionen. Die ITS ergänzen diesen Rahmen durch die Festlegung klarer Prozesse und Zeitpläne zur Erleichterung der Zusammenarbeit zwischen den Aufsichtsbehörden. Proportionalität ist ein Kernmerkmal, wobei Doppelarbeit vermieden und Informationen für konzerninterne Transaktionen vereinfacht werden. Ein vereinfachtes Regime für Fusionen und Spaltungen kleinerer Einheiten reduziert den Verwaltungsaufwand.\n\nDie Standards basieren auf Artikel 27b der Richtlinie 2013/36/EU (CRD), geändert durch die Richtlinie (EU) 2024/1619, und umfassen auch Mandate für ITS zur Förderung der Zusammenarbeit bei grenzüberschreitenden Transaktionen. Die Richtlinie (EU) 2017/1132 (Gesellschaftsrechtsrichtlinie) wurde ebenfalls berücksichtigt.",
-          "en": "The EBA has published its final draft Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) on material acquisitions, transfers of assets or liabilities, mergers, and divisions. The aim is to support banking consolidation and deepen EU market integration by clarifying supervisory expectations, reducing regulatory uncertainty, and promoting a consistent prudential assessment framework.\n\nThese RTS set out streamlined information requirements for notifications, define a common assessment methodology, and specify procedures for material transactions. The ITS complement this framework by establishing clear processes and timelines to facilitate effective cooperation among supervisory authorities. Proportionality is a core feature, avoiding duplication and simplifying information for intra-group transactions. A simplified regime for mergers and divisions involving smaller entities reduces administrative burdens.\n\nThe standards are based on Article 27b of Directive 2013/36/EU (CRD), as amended by Directive (EU) 2024/1619, and include mandates for ITS to foster cooperation in cross-border transactions. Directive (EU) 2017/1132 (Company Law Directive) was also considered."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-draft-technical-standards-material-acquisitions-material-transfers-mergers",
-        "imp": "medium"
-      },
-      {
-        "d": "04.06.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Anpassungen der Marktrisikoregeln zur Sicherung der Wettbewerbsfähigkeit von EU-Banken",
-          "en": "Adjustments to market risk rules to safeguard EU banks’ competitiveness"
-        },
-        "sl": "commission-adopts-temporary-adjustments-to-basel-iii-market-risk-rules-to-safegu",
-        "s": {
-          "de": "Die Europäische Kommission hat gezielte, befristete Anpassungen an den Marktrisikoregeln des Basler Ausschusses für Bankenaufsicht (FRTB – Fundamental Review of the Trading Book) vorgenommen. Diese Maßnahmen sollen die Wettbewerbsfähigkeit der EU-Banken im Vergleich zu internationalen Wettbewerbern sichern, da andere große Jurisdiktionen die FRTB-Umsetzung verzögern.\n\nDie Anpassungen, die durch einen delegierten Rechtsakt erfolgen, umfassen einen Multiplikator, um vorübergehend die Kapitaleffekte für EU-Banken auszugleichen, die durch die FRTB-Implementierung nachteilig betroffen sind. Dies soll Wettbewerbsverzerrungen entgegenwirken, die entstehen, weil die EU alle anderen Basel III-Standards bereits seit dem 1. Januar 2025 vollständig umgesetzt hat.\n\nDer delegierte Rechtsakt wird nun vom Europäischen Parlament und dem Rat geprüft. Wenn keine Einwände erhoben werden, treten die Maßnahmen am 1. Januar 2027 für einen Zeitraum von drei Jahren in Kraft.",
-          "en": "The European Commission has introduced targeted, time-limited adjustments to the Basel Committee on Banking Supervision's market risk rules (FRTB – Fundamental Review of the Trading Book). These measures aim to safeguard the competitiveness of EU banks compared to international competitors, as other major jurisdictions are delaying FRTB implementation.\n\nThe adjustments, introduced through a delegated act, include a multiplier to temporarily offset capital impacts for EU banks adversely affected by FRTB implementation. This is intended to counteract competitive distortions arising from the EU having fully implemented all other Basel III standards since January 1, 2025.\n\nThe delegated act will now be reviewed by the European Parliament and the Council. If no objections are raised, the measures will enter into application on January 1, 2027, for a period of three years."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-adopts-temporary-adjustments-basel-iii-market-risk-rules-safeguard-eu-banks-2026-06-04_en",
-        "imp": "medium"
-      },
-      {
-        "d": "30.03.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG)",
-          "en": "Banking Directive Implementation and Bureaucracy Reduction Act (BRUBEG)"
-        },
-        "sl": "gesetz-zur-umsetzung-der-richtlinie-eu-2024-1619-des-europaeischen-parlaments-un",
-        "s": {
-          "de": "Das Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG) setzt die EU-Richtlinie 2024/1619 in deutsches Recht um. Diese Richtlinie ändert die Richtlinie 2013/36/EU (CRD V) und betrifft Aufsichtsbefugnisse, Sanktionen, Zweigstellen aus Drittländern sowie die Berücksichtigung von Umwelt-, Sozial- und Unternehmensführungsrisiken (ESG-Risiken).\n\nDas Gesetz ist für Kreditinstitute relevant, da es neue Anforderungen an die Aufsicht und die Berichterstattung einführt. Gleichzeitig zielt es darauf ab, Bürokratie abzubauen. Die Umsetzung der ESG-Risikobetrachtung ist ein wichtiger Aspekt, der von Finanzinstituten entsprechende Anpassungen in ihren Risikomanagementsystemen erfordern wird.\n\nDas Gesetz wurde am 25. März 2026 ausgefertigt und am 30. März 2026 im Bundesgesetzblatt veröffentlicht.",
-          "en": "The Banking Directive Implementation and Bureaucracy Reduction Act (BRUBEG) transposes EU Directive 2024/1619 into German law. This directive amends Directive 2013/36/EU (CRD V) and addresses supervisory powers, sanctions, third-country branches, and the consideration of environmental, social, and governance (ESG) risks.\n\nThe act is relevant for credit institutions as it introduces new requirements for supervision and reporting. At the same time, it aims to reduce bureaucracy. The implementation of ESG risk considerations is a crucial aspect that will require financial institutions to make corresponding adjustments to their risk management systems.\n\nThe act was enacted on March 25, 2026, and published in the Federal Law Gazette on March 30, 2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/81",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG) im BGBl. veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bankenrichtlinienumsetzungs-und-buerokratieentlastungsgesetz-brubeg-im-bgbl-veroeffentlicht/",
-            "d": "31.03.2026"
-          }
-        ]
-      },
-      {
-        "d": "25.02.2026",
-        "t": {
-          "de": "Allgemeinverfügung",
-          "en": "General decision"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anerkennung des österreichischen Systemrisikopuffers für Gewerbeimmobilien-Kredite",
-          "en": "Recognition of Austrian Systemic Risk Buffer for Commercial Real Estate Loans"
-        },
-        "sl": "anerkennung-eines-in-oesterreich-angeordneten-kapitalpuffers-fuer-systemische-ri",
-        "s": {
-          "de": "Die BaFin hat eine Allgemeinverfügung erlassen, die einen von der österreichischen Finanzmarktaufsicht (FMA) angeordneten sektoralen Systemrisikopuffer reziprok anerkennt. Dieser Puffer in Höhe von 1,0 % gilt für Risikopositionen gegenüber nichtfinanziellen Kapitalgesellschaften (ausgenommen gemeinnützige Bauvereinigungen) im österreichischen Bau- und Immobiliensektor, die nach NACE-Kodes F 41 (Hochbau), F 43 (Vorbereitende Baustellenarbeiten, Bauinstallation und sonstiges Ausbaugewerbe) und L 68 (Grundstücks- und Wohnungswesen) klassifiziert sind.\n\nDie Maßnahme ist auf Einzel-, teilkonsolidierter und konsolidierter Basis anzuwenden. Sie betrifft Institute, deren in Österreich belegene Risikopositionen – wie definiert – jeweils 100 Mio. Euro überschreiten. Die BaFin folgt damit einer Empfehlung des Europäischen Ausschusses für Systemrisiken (ESRB), der die freiwillige reziproke Anwendung makroprudenzieller Maßnahmen zur Stärkung der Finanzstabilität unterstützt.\n\nDie Allgemeinverfügung tritt einen Monat nach ihrer öffentlichen Bekanntgabe in Kraft. Die FMA hatte den Puffer ab dem 1. Juli 2025 aktiviert, um die Risikotragfähigkeit des österreichischen Bankensystems zu erhöhen und Risiken durch Störungen auf dem Gewerbeimmobilienmarkt zu minimieren.",
-          "en": "The BaFin has issued a general decree reciprocally recognizing a sectoral systemic risk buffer mandated by the Austrian Financial Market Authority (FMA). This 1.0% buffer applies to risk exposures to non-financial corporations (excluding non-profit housing associations) in the Austrian construction and real estate sector, classified under NACE codes F 41 (Building construction), F 43 (Civil engineering and specialized construction activities), and L 68 (Real estate activities).\n\nThe measure is to be applied on an individual, sub-consolidated, and consolidated basis. It affects institutions whose risk exposures located in Austria—as defined—exceed EUR 100 million each. BaFin thus follows a recommendation by the European Systemic Risk Board (ESRB), which supports the voluntary reciprocal application of macroprudential measures to strengthen financial stability.\n\nThe general decree enters into force one month after its public announcement. The FMA activated the buffer from July 1, 2025, to enhance the Austrian banking system's resilience and minimize risks from disruptions in the commercial real estate market."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsrecht/Verfuegung/vf_20260225_anerkennung_kapitalpuffer_sys_risiken_at.html",
-        "imp": "high"
-      },
-      {
-        "d": "22.12.2025",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Umsetzung der EU-Richtlinie zu MREL-Anforderungen (BRRD/SRM-Verordnung)",
-          "en": "Transposition of EU Directive on MREL Requirements (BRRD/SRM Regulation)"
-        },
-        "sl": "gesetz-zur-umsetzung-der-richtlinie-eu-2024-1174-des-europaeischen-parlaments-un",
-        "s": {
-          "de": "Dieses Gesetz setzt die EU-Richtlinie 2024/1174 um, die Änderungen an der Richtlinie 2014/59/EU (BRRD) und der Verordnung (EU) Nr. 806/2014 (SRM-Verordnung) vornimmt. Die Änderungen betreffen spezifische Aspekte der Mindestanforderung an Eigenmittel und berücksichtigungsfähige Verbindlichkeiten (MREL).\n\nDie Umsetzung der Richtlinie ist für Finanzinstitute relevant, die den MREL-Anforderungen unterliegen. Sie müssen die angepassten Vorgaben für die Zusammensetzung und Höhe ihrer MREL-Puffer beachten, um im Abwicklungsfall ausreichend kapitalisiert zu sein. Dies dient der Stärkung der Abwicklungsfähigkeit von Instituten.\n\nDas Gesetz wurde am 22.12.2025 ausgefertigt und im Bundesgesetzblatt veröffentlicht.",
-          "en": "This law transposes EU Directive 2024/1174, which amends Directive 2014/59/EU (BRRD) and Regulation (EU) No 806/2014 (SRM Regulation). The amendments concern specific aspects of the minimum requirement for own funds and eligible liabilities (MREL).\n\nThe implementation of the directive is relevant for financial institutions subject to MREL requirements. They must comply with the adjusted provisions for the composition and amount of their MREL buffers to be sufficiently capitalized in the event of resolution. This aims to strengthen the resolvability of institutions.\n\nThe law was enacted and published in the Federal Law Gazette on 22.12.2025."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/344",
-        "imp": "high"
       }
     ],
     "ebagov": [
