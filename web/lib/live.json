@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:15:00Z",
+  "generated_at": "2026-11-17T21:17:00Z",
   "updates": {
     "bcbs": [
       {
@@ -1340,6 +1340,241 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/344",
         "imp": "high"
+      }
+    ],
+    "prospectus": [
+      {
+        "d": "17.11.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Guidelines specifying the circumstances in which a supplement is to be considered to introduce a new type of security that is not already described in a base prospectus under the Prospectus Regulation",
+          "en": "Guidelines specifying the circumstances in which a supplement is to be considered to introduce a new type of security that is not already described in a base prospectus under the Prospectus Regulation"
+        },
+        "sl": "guidelines-specifying-the-circumstances-in-which-a-supplement-is-to-be-considere",
+        "s": {
+          "de": "Guidelines & Recommendations — Guidelines and Technical standards, Prospectus",
+          "en": "Guidelines & Recommendations — Guidelines and Technical standards, Prospectus"
+        },
+        "url": "https://www.esma.europa.eu/sites/default/files/2026-11/ESMA32-753890202-3098_Guidelines_on_product_supplements.pdf",
+        "refnum": "ESMA32-753890202-3098"
+      },
+      {
+        "d": "18.09.2026",
+        "t": {
+          "de": "Delegierte VO",
+          "en": "Delegated regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Delegierten Verordnung (EU) 2026/1061 zur Prospektgestaltung (32026R1061R(01))",
+          "en": "Corrigendum to Delegated Regulation (EU) 2026/1061 on Prospectus Format (32026R1061R(01))"
+        },
+        "sl": "berichtigung-der-delegierten-verordnung-eu-2026-1061-der-kommission-vom-7-mai-20",
+        "s": {
+          "de": "Diese Berichtigung korrigiert Fehler in der Delegierten Verordnung (EU) 2026/1061, die wiederum die Delegierte Verordnung (EU) 2019/980 bezüglich der Prospektgestaltung ändert. Konkret werden zwei Punkte in den Anhängen IX und XI der Verordnung (EU) 2026/1061 angepasst.\n\nDie Änderungen betreffen die Nummerierung von Abschnitten und Verweise innerhalb der Anhänge. Im Anhang IX wird ein Verweis von „Punkt 6.3“ auf „Punkt 7.1“ korrigiert, und im Anhang XI wird ein alternativer Punkt zur Beschreibung der Preisfestsetzung von „Punkt 4.3.1“ auf „Punkt 4.4.1“ geändert.\n\nDiese Berichtigung ist für alle Finanzinstitute relevant, die Prospekte gemäß der Verordnung (EU) 2017/1129 erstellen und veröffentlichen müssen. Sie stellt sicher, dass die Anforderungen an die standardisierte Aufmachung, den Inhalt und die Prüfung von Prospekten korrekt angewendet werden können.",
+          "en": "This corrigendum rectifies errors in Delegated Regulation (EU) 2026/1061, which amends Delegated Regulation (EU) 2019/980 concerning prospectus format. Specifically, two points in Annexes IX and XI of Regulation (EU) 2026/1061 are adjusted.\n\nThe changes involve the numbering of sections and cross-references within the annexes. In Annex IX, a reference is corrected from “Point 6.3” to “Point 7.1”, and in Annex XI, an alternative point for describing the pricing method is changed from “Point 4.3.1” to “Point 4.4.1”.\n\nThis corrigendum is relevant for all financial institutions required to prepare and publish prospectuses in accordance with Regulation (EU) 2017/1129. It ensures that the requirements for the standardized format, content, and scrutiny of prospectuses can be applied correctly."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1061R(01)",
+        "imp": "low",
+        "refnum": "32026R1061R(01)"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zu Offenlegungspflichten und aktualisiert Leitlinien und Q&As zur Prospektverordnung",
+          "en": "ESMA consults on disclosure requirements and updates guidelines and Q&As under the Prospectus Regulation"
+        },
+        "sl": "esma-consults-on-disclosure-requirements-and-updates-guidelines-and-q-as-under-t",
+        "s": {
+          "de": "Die ESMA hat ein Maßnahmenpaket zur Prospektverordnung veröffentlicht, das Änderungen durch den Listing Act berücksichtigt. Es umfasst ein Konsultationspapier zur Aktualisierung der Leitlinien für Offenlegungspflichten, aktualisierte Q&As, einen Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen, sowie einen Abschlussbericht zu technischen Regulierungsstandards (RTS) für wichtige Finanzinformationen in Prospektzusammenfassungen.\n\nDas Konsultationspapier soll Emittenten und Beratern helfen, die Offenlegungspflichten gemäß der überarbeiteten Prospektverordnung besser zu verstehen und vereinfacht bestehende Leitlinien. Die aktualisierten Q&As passen rechtliche Verweise an, klären Sachverhalte und entfernen überholte Inhalte. Die Leitlinien für Produktnachträge schaffen einen gemeinsamen Ansatz zur Beurteilung, ob ein Nachtrag neue Wertpapiere in einen Basisprospekt einführt, und die RTS aktualisieren die Anforderungen an Finanzinformationen im Prospekt nach den Reformen des Listing Act.\n\nInteressenträger können bis zum 9. November 2026 zur Konsultation Stellung nehmen. Die ESMA plant, den Abschlussbericht und die aktualisierten Leitlinien im zweiten Quartal 2027 zu veröffentlichen. Die Leitlinien zu Produktnachträgen treten in Kraft, sobald Übersetzungen in alle Amtssprachen der EU vorliegen. Die RTS wurden der Europäischen Kommission zur Entscheidung übermittelt.",
+          "en": "ESMA has published a package of materials under the Prospectus Regulation, reflecting changes introduced by the Listing Act. This includes a Consultation Paper on updating disclosure requirements guidelines, updated Q&As, a Final Report on guidelines for supplements introducing new securities to a base prospectus, and a Final Report on regulatory technical standards (RTS) for key financial information in prospectus summaries.\n\nThe Consultation Paper aims to help issuers and their advisors better understand disclosure requirements under the revised Prospectus Regulation and simplifies existing guidance. The updated Q&As adjust legal references, provide clarifications, and remove obsolete content. The guidelines on product supplements establish a common approach for assessing whether a supplement introduces new securities to a base prospectus, and the RTS update financial information requirements in prospectuses following Listing Act reforms.\n\nStakeholders are invited to respond to the consultation by 9 November 2026. ESMA expects to publish the Final Report and updated Guidelines in Q2 2027. The guidelines on product supplements will apply once translations into all official EU languages are available. The RTS have been submitted to the European Commission for a decision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-disclosure-requirements-and-updates-guidelines-and-qas-under",
+        "imp": "medium"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Änderungen an den Q&As zur Prospektverordnung",
+          "en": "Changes to the Prospectus Q&As"
+        },
+        "sl": "overview-of-changes-made-to-the-prospectus-q-as",
+        "s": {
+          "de": "Die ESMA hat Änderungen an ihren Q&As zur Prospektverordnung vorgenommen. Diese Aktualisierungen betreffen die Vereinfachung und Reduzierung des Verwaltungsaufwands im Zusammenhang mit Prospekten.\n\nDie Änderungen sind für alle Unternehmen relevant, die Prospekte gemäß der Prospektverordnung erstellen und veröffentlichen müssen. Sie sollen dazu beitragen, den Prozess der Prospekterstellung effizienter zu gestalten und die damit verbundenen Belastungen zu mindern.\n\nDetails zu den spezifischen Änderungen und deren Auswirkungen auf die Praxis sind den aktualisierten Q&As zu entnehmen.",
+          "en": "ESMA has introduced changes to its Prospectus Q&As. These updates focus on the simplification and reduction of the administrative burden associated with prospectuses.\n\nThe changes are relevant for all companies required to prepare and publish prospectuses under the Prospectus Regulation. They aim to make the prospectus drafting process more efficient and alleviate related burdens.\n\nDetails on the specific changes and their practical implications can be found in the updated Q&As."
+        },
+        "url": "https://www.esma.europa.eu/document/overview-changes-made-prospectus-qas",
+        "imp": "low"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zur Aktualisierung der RTS für Finanzinformationen in der Prospektzusammenfassung (ESMA32-753890202-3065)",
+          "en": "Final Report on the update to the RTS concerning key financial information in the summary of a prospectus (ESMA32-753890202-3065)"
+        },
+        "sl": "final-report-on-the-update-to-the-rts-concerning-key-financial-information-in-th",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Aktualisierung der RTS bezüglich der wichtigsten Finanzinformationen in der Prospektzusammenfassung veröffentlicht. Ziel ist es, die Anforderungen an Finanzinformationen im Prospekt zu vereinfachen und an die durch den Listing Act geänderten Vorschriften anzupassen.\n\nDie wesentlichen Änderungen betreffen die Verkürzung der erforderlichen Zeiträume für Finanzinformationen bei der Emission von Eigenkapital- und Fremdkapitalinstrumenten. Zudem wird die Cashflow-Tabelle für Fremdkapitalinstrumente aus Anhang II entfernt, da sie keine entsprechende Position in der Delegierten Verordnung (EU) 2019/980 hat. Die Änderungen sollen die Belastung für Emittenten verringern.\n\nDie geänderten RTS werden der Europäischen Kommission zur Annahme vorgelegt und unterliegen einer Prüfungsfrist durch das Europäische Parlament und den Rat. Die ESMA ermutigt nationale zuständige Behörden, den Anwendungsbeginn vorwegzunehmen und einen konsistenten Ansatz mit der Prospektverordnung, wie sie durch den Listing Act geändert wurde, sicherzustellen.",
+          "en": "ESMA has published a final report on the update to the RTS concerning key financial information in the summary of a prospectus. The aim is to simplify the requirements for financial information in prospectuses and align them with the rules amended by the Listing Act.\n\nThe main changes involve reducing the required periods for financial information in the context of both equity and non-equity securities issuances. Additionally, the cash flow table for non-equity securities is removed from Annex II due to its lack of a corresponding item in Delegated Regulation (EU) 2019/980. These amendments are intended to alleviate the burden on issuers.\n\nThe amended RTS will be submitted to the European Commission for adoption and will be subject to a scrutiny period by the European Parliament and Council. ESMA encourages national competent authorities to anticipate its entry into application by ensuring a consistent approach with the Prospectus Regulation, as amended by the Listing Act."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-update-rts-concerning-key-financial-information-summary-prospectus",
+        "imp": "medium",
+        "refnum": "ESMA32-753890202-3065"
+      },
+      {
+        "d": "09.09.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen (ESMA32-753890202-3034)",
+          "en": "Final Report on Guidelines on supplements which introduce new securities to a base prospectus (ESMA32-753890202-3034)"
+        },
+        "sl": "final-report-on-the-guidelines-on-supplements-which-introduce-new-securities-to",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht zu den Leitlinien für Nachträge veröffentlicht, die neue Wertpapiere in einen Basisprospekt einführen. Diese Leitlinien sollen die EU-weite Aufsicht in diesem Bereich harmonisieren, da es bisher erhebliche Abweichungen gab, die zu unterschiedlichen aufsichtsrechtlichen Ergebnissen führten.\n\nDie Leitlinien präzisieren, wann ein Nachtrag als Einführung eines neuen Wertpapiertyps gilt, der nicht bereits im Basisprospekt beschrieben ist. Dies ist relevant, da ein Basisprospekt nicht zur Einführung eines neuen Wertpapiertyps verwendet werden sollte, für den die notwendigen Informationen nicht enthalten sind. Die ESMA reagiert damit auf die Notwendigkeit klarer Kriterien, um Inkonsistenzen bei den Anforderungen zwischen den Jurisdiktionen zu vermeiden und die Ziele des Listing Act zu unterstützen.\n\nDie Leitlinien in Anhang III des Berichts werden in die Amtssprachen der EU übersetzt und veröffentlicht. Sie basieren auf umfangreichem Feedback zu einem Konsultationspapier vom 18. Februar 2025 und wurden angepasst, um die Offenlegungsanhänge der Delegierten Verordnung (EU) 2019/980 zu berücksichtigen.",
+          "en": "ESMA has published its Final Report on the Guidelines on supplements which introduce new securities to a base prospectus. These guidelines aim to harmonise EU-wide supervision in this area, as there have been significant divergences leading to different supervisory outcomes.\n\nThe guidelines specify when a supplement is considered to introduce a new type of security not already described in the base prospectus. This is relevant because a base prospectus should not be used to introduce a new type of security for which the necessary information has not been included. ESMA is thus responding to the need for clear criteria to avoid inconsistencies in requirements across jurisdictions and to support the objectives of the Listing Act.\n\nThe guidelines, set out in Annex III of the report, will be translated into the official EU languages and published. They are based on extensive feedback to a consultation paper published on 18 February 2025 and have been adjusted to reflect the disclosure annexes of Delegated Regulation (EU) 2019/980."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
+        "imp": "medium",
+        "refnum": "ESMA32-753890202-3034"
+      },
+      {
+        "d": "04.03.2026",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Vorschlag für reduzierte und standardisierte EU-Folge- und Wachstumsemissionsprospekte (Ares(2024)6122774)",
+          "en": "Proposal for Reduced and Standardised EU Follow-on and Growth Issuance Prospectuses (Ares(2024)6122774)"
+        },
+        "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
+        "s": {
+          "de": "Die Europäische Kommission hat einen Legislativvorschlag für die Ausgestaltung von EU-Folgeprospekten und EU-Wachstumsemissionsprospekten vorgelegt. Ziel ist es, den Inhalt dieser Prospekte zu reduzieren und ein standardisiertes Format sowie eine feste Reihenfolge der Informationen festzulegen. Dies soll die Erstellung und Prüfung von Prospekten vereinfachen und die Effizienz des Kapitalmarkts steigern.\n\nDiese Regelungen sind für Unternehmen relevant, die Kapital über die Ausgabe von Wertpapieren am EU-Markt aufnehmen möchten. Insbesondere Emittenten, die bereits am Markt etabliert sind (Folgeprospekte) oder kleine und mittlere Unternehmen (Wachstumsemissionsprospekte), profitieren von den vereinfachten Anforderungen. Die Standardisierung soll die Vergleichbarkeit für Investoren verbessern und den Zugang zu Finanzierungen erleichtern.\n\nDer Vorschlag befindet sich im Adoptions-Workflow-Verfahren. Das Datum 04.03.2026 ist als Referenzdatum für den Vorschlag angegeben.",
+          "en": "The European Commission has submitted a legislative proposal for the design of EU follow-on prospectuses and EU growth issuance prospectuses. The aim is to reduce the content of these prospectuses and to establish a standardised format and a fixed sequence of information. This is intended to simplify the preparation and review of prospectuses and to increase the efficiency of the capital market.\n\nThese regulations are relevant for companies seeking to raise capital through the issuance of securities on the EU market. In particular, issuers already established on the market (follow-on prospectuses) or small and medium-sized enterprises (growth issuance prospectuses) will benefit from the simplified requirements. Standardisation is intended to improve comparability for investors and facilitate access to financing.\n\nThe proposal is currently in the adoption workflow procedure. The date 04.03.2026 is provided as a reference date for the proposal."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
+        "imp": "medium",
+        "refnum": "Ares(2024)6122774"
+      },
+      {
+        "d": "11.09.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zum Begriff des öffentlichen Angebots gemäß Prospektverordnung",
+          "en": "Merkblatt zum Begriff des öffentlichen Angebots gemäß Prospektverordnung"
+        },
+        "sl": "merkblatt-zum-begriff-des-oeffentlichen-angebots-gemaess-prospektverordnung",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Auslegung des Begriffs „öffentliches Angebot“ gemäß Artikel 2 lit. d der Prospektverordnung (EU) 2017/1129 veröffentlicht. Darin wird klargestellt, dass ein öffentliches Angebot eine Mitteilung an die Öffentlichkeit in jeglicher Form und auf jegliche Art und Weise ist, die ausreichende Informationen über Angebotsbedingungen und Wertpapiere enthält, damit Anleger eine Kauf- oder Zeichnungsentscheidung treffen können. Dies gilt auch für die Platzierung von Wertpapieren durch Finanzintermediäre.\n\nDas Merkblatt präzisiert, dass die Form der Mitteilung irrelevant ist und alle Kommunikationskanäle umfasst, von persönlichen Gesprächen bis zu Online-Werbung. Es ist keine bindende Willenserklärung erforderlich, eine invitatio ad offerendum genügt. Die Mitteilung muss ein Mindestmaß an Informationen enthalten, die eine Investitionsentscheidung ermöglichen, wobei die abschließende Beurteilung der „ausreichenden Informationen“ vom Einzelfall abhängt. Die Initiative für die Mitteilung muss vom Anbieter ausgehen, und es können auch mehrere Personen als Anbieter gelten, insbesondere bei kollusivem Zusammenwirken.\n\nEin öffentliches Angebot liegt vor, wenn sich die Mitteilung an mindestens zwei Personen richtet. Die BaFin lehnt die Annahme ab, dass sich die Mitteilung an unbestimmte oder unbestimmbare Personen richten muss oder dass das Informationsniveau der Anleger für die Einordnung relevant ist. Auch die Bezeichnung als „private placement“ ist für die Bestimmung eines öffentlichen Angebots irrelevant. Diese Auslegung entspricht der europäischen Rechtsprechung.",
+          "en": "BaFin has published a guidance note on the interpretation of the term “offer of securities to the public” according to Article 2 lit. d of the Prospectus Regulation (EU) 2017/1129. It clarifies that an offer to the public is a communication to the public in any form and by any means, containing sufficient information on the terms of the offer and the securities to be offered, to enable an investor to decide to purchase or subscribe for those securities. This also applies to the placement of securities by financial intermediaries.\n\nThe guidance note specifies that the form of communication is irrelevant and includes all communication channels, from personal conversations to online advertising. A binding declaration of intent is not required; an invitatio ad offerendum is sufficient. The communication must contain a minimum level of information enabling an investment decision, with the final assessment of “sufficient information” depending on the individual case. The initiative for the communication must come from the offeror, and multiple persons can be considered offerors, especially in cases of collusive action.\n\nAn offer to the public exists if the communication is addressed to at least two persons. BaFin rejects the assumption that the communication must be addressed to indeterminate or indeterminable persons or that the information level of investors is relevant for classification. The designation “private placement” is also irrelevant for determining an offer to the public. This interpretation is consistent with European case law."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/WA/mb_250911_oeffentliches_angebot.html",
+        "imp": "medium"
+      },
+      {
+        "d": "27.02.2024",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Auslegungsschreiben zur Bestimmung der Anlegergruppe",
+          "en": "Auslegungsschreiben zur Bestimmung der Anlegergruppe"
+        },
+        "sl": "auslegungsschreiben-zur-bestimmung-der-anlegergruppe",
+        "s": {
+          "de": "Die BaFin hat ein Auslegungsschreiben zur Bestimmung der Anlegergruppe („Zielmarkt“) in Verkaufsprospekten und Vermögensanlagen-Informationsblättern (VIB) nach dem Vermögensanlagengesetz veröffentlicht. Es konkretisiert die gesetzlichen Mindestanforderungen an die Angaben zur Anlegergruppe, die seit dem 3. Januar 2018 in Verkaufsprospekten und seit dem 14. Juli 2018 auch in VIB enthalten sein müssen.\n\nDas Schreiben präzisiert die erforderlichen Angaben zu Kundenkategorie (Privatkunden, professionelle Kunden, geeignete Gegenpartei), Anlagehorizont (konkrete Jahresangabe, optional mit „kurzfristig, mittelfristig, langfristig“ nach ESMA-Kriterien), Verlusttragfähigkeit (Prozentangabe des maximalen Verlusts, i.d.R. 100 % des Gesamtbetrags) sowie Kenntnisse und/oder Erfahrungen des Anlegers im Bereich Vermögensanlagen. Die BaFin prüft diese Angaben auf Vollständigkeit, Verständlichkeit und Kohärenz, jedoch nicht auf inhaltliche Eignung der Vermögensanlage für die angegebene Anlegergruppe.\n\nDie Regelungen richten sich an Emittenten und Anbieter von Vermögensanlagen. Prospektverantwortliche müssen bei der Erstellung der Angaben besondere Sorgfalt walten lassen, da bei unzureichenden Informationen eine Prospekthaftung nach dem Vermögensanlagengesetz droht. Für VIB sind aufgrund der Platzknappheit zusammengefasste, knappere Angaben akzeptabel, sofern sie alle Aspekte der Zielmarktbestimmung abdecken.",
+          "en": "BaFin has published an interpretative letter on determining the investor group (\"target market\") in sales prospectuses and asset information sheets (VIB) under the German Retail Investor Protection Act (Vermögensanlagengesetz). It specifies the minimum legal requirements for investor group information, which has been mandatory in sales prospectuses since January 3, 2018, and in VIBs since July 14, 2018.\n\nThe letter clarifies the required information on customer categories (retail clients, professional clients, eligible counterparties), investment horizon (specific number of years, optionally with \"short-term, medium-term, long-term\" according to ESMA criteria), loss-bearing capacity (percentage indicating maximum loss, typically 100% of the total amount), and the investor's knowledge and/or experience in asset investments. BaFin reviews this information for completeness, comprehensibility, and coherence, but not for the substantive suitability of the asset investment for the stated investor group.\n\nThe regulations are aimed at issuers and providers of asset investments. Those responsible for prospectuses must exercise particular diligence in preparing the information, as insufficient information may lead to prospectus liability under the German Retail Investor Protection Act. For VIBs, more concise, summarized information is acceptable due to space constraints, provided it covers all aspects of target market determination."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Auslegungsentscheidung/dl_Auslegungsschreiben_Bestimmung_Anlegergruppen.html",
+        "imp": "medium"
+      },
+      {
+        "d": "10.09.2019",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zur Prüfung von Wertpapierprospekten auf Verständlichkeit",
+          "en": "Merkblatt zur Prüfung von Wertpapierprospekten auf Verständlichkeit"
+        },
+        "sl": "merkblatt-zur-pruefung-von-wertpapierprospekten-auf-verstaendlichkeit",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Prüfung der Verständlichkeit von Wertpapierprospekten veröffentlicht. Es konkretisiert die neuen europäischen Vorgaben der EU-Prospektverordnung und der Delegierten Verordnung (EU) 2019/980, die seit dem 21. Juli 2019 gelten. Ziel ist es, Emittenten bei der Prospekterstellung zu unterstützen und die Berücksichtigung der neuen Anforderungen zu erleichtern.\n\nDas Merkblatt erläutert, wie die BaFin die Kriterien des Artikels 37 der Delegierten Verordnung (EU) 2019/980 bei der Verständlichkeitsprüfung berücksichtigt. Dazu gehören Anforderungen an ein klares und detailliertes Inhaltsverzeichnis, die Vermeidung unnötiger Wiederholungen, die Gruppierung zusammenhängender Angaben, eine leicht lesbare Schriftgröße und eine einfache Sprache. Besonders adressiert werden Basisprospekte, die in der Praxis oft als problematisch hinsichtlich der Verständlichkeit angesehen wurden. Die BaFin betont, dass sie keinen „One size fits all“-Ansatz verfolgt, sondern die Verständlichkeit im Einzelfall bewertet.\n\nDie Nichtbeachtung dieser Anforderungen kann zur Unverständlichkeit des Prospekts und damit zur Versagung der Billigung führen. Das Merkblatt dient als erste Hilfestellung, wobei sich die BaFin vorbehält, ihre Verwaltungspraxis zukünftig weiterzuentwickeln.",
+          "en": "The BaFin has published a guidance notice on the comprehensibility review of securities prospectuses. It specifies the new European requirements of the EU Prospectus Regulation and Delegated Regulation (EU) 2019/980, which have been in force since July 21, 2019. The aim is to support issuers in drafting prospectuses and to facilitate the consideration of the new requirements.\n\nThe guidance notice explains how BaFin takes into account the criteria of Article 37 of Delegated Regulation (EU) 2019/980 in its comprehensibility review. These include requirements for a clear and detailed table of contents, the avoidance of unnecessary repetitions, the grouping of related information, an easily readable font size, and simple language. Particular attention is paid to base prospectuses, which have often been considered problematic in practice regarding comprehensibility. BaFin emphasizes that it does not pursue a 'one size fits all' approach but assesses comprehensibility on a case-by-case basis.\n\nNon-compliance with these requirements can lead to the incomprehensibility of the prospectus and thus to the refusal of approval. The guidance notice serves as initial assistance, with BaFin reserving the right to further develop its administrative practice in the future."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_wa_merkblatt_verstaendlichkeitspruefung_prospekte.html",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2018",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation 15/2018 – Vermögensanlagen: Auslegungsschreiben zur Bestimmung der Anlegergruppe",
+          "en": "Konsultation 15/2018 – Vermögensanlagen: Auslegungsschreiben zur Bestimmung der Anlegergruppe"
+        },
+        "sl": "konsultation-15-2018-vermoegensanlagen-auslegungsschreiben-zur-bestimmung-der-an",
+        "s": {
+          "de": "Die BaFin konsultiert ein Auslegungsschreiben zur Bestimmung der Anlegergruppe in Verkaufsprospekten und Vermögensanlagen-Informationsblättern (VIB) nach dem Vermögensanlagengesetz (VermAnlG).\n\nDie Pflicht zur Angabe der Zielgruppe besteht für Verkaufsprospekte seit Anfang 2018 und für VIBs seit dem 14. Juli 2018. Das Auslegungsschreiben konkretisiert die erforderlichen Angaben, die über die gesetzlich genannten Kriterien wie Anlagehorizont und Verlusttragfähigkeit hinaus auch Kenntnisse und Erfahrungen mit den Anlageprodukten berücksichtigen sollen, analog zu europarechtlichen Vorgaben für Basisinformationsblätter.\n\nStellungnahmen zum Auslegungsschreiben können bis zum 17. August 2018 schriftlich oder per E-Mail bei der BaFin eingereicht werden.",
+          "en": "BaFin is consulting on an interpretative letter regarding the determination of the investor group in sales prospectuses and asset information sheets (VIB) under the German Retail Investor Protection Act (VermAnlG).\n\nThe obligation to specify the target group has existed for sales prospectuses since early 2018 and for VIBs since July 14, 2018. The interpretative letter specifies the required information, which, in addition to the legally mandated criteria such as investment horizon and loss-bearing capacity, should also consider knowledge and experience with the investment products, analogous to European legal requirements for key information documents.\n\nComments on the interpretative letter can be submitted to BaFin in writing or by email until August 17, 2018."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2018/kon_1518_auslegungsschreiben_anlegergruppe.html",
+        "imp": "medium",
+        "refnum": "Konsultation 15/2018"
+      },
+      {
+        "d": "24.06.2013",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Auslegung zum öffentlichen Angebot von Wertpapieren im Sekundärmarkt (Prospektverordnung)",
+          "en": "Interpretation of Public Offer of Securities in Secondary Market (Prospectus Regulation)"
+        },
+        "sl": "auslegungsschreiben-zum-begriff-des-oeffentlichen-angebots-von-wertpapieren-im-s",
+        "s": {
+          "de": "Die BaFin präzisiert ihre Auslegung des Begriffs des öffentlichen Angebots von Wertpapieren im Sekundärmarkthandel gemäß Artikel 2 lit. d der Prospektverordnung (EU) 2017/1129. Demnach werden bestimmte Informationen über Wertpapiere, die im organisierten Markt oder Freiverkehr gehandelt werden, nicht als prospektpflichtiges öffentliches Angebot eingestuft, sofern spezifische Bedingungen erfüllt sind.\n\nDies betrifft die Wiedergabe von Ausstattungsmerkmalen, die Veröffentlichung von An- und Verkaufskursen während der Handelszeiten sowie die Bekanntgabe weiterer, nicht werblicher Informationen, zu deren Veröffentlichung der Emittent verpflichtet ist. Voraussetzung ist unter anderem, dass für das erstmalige öffentliche Angebot ein gebilligter Prospekt veröffentlicht wurde, dieser während der Gültigkeitsdauer aktualisiert wird, bis der Primärmarktvertrieb abgeschlossen ist, und der Emittent nach Abschluss des Primärmarktes keine aktiven Vertriebsaktivitäten mehr unternimmt oder unterstützt. Zudem dürfen keine direkten Verlinkungen zu Online-Brokern bestehen und die Internetseite des Emittenten darf keine werblichen Aussagen zum Erwerb im Sekundärmarkt enthalten.\n\nDie Veröffentlichung eines fortlaufend aktualisierten Produktinformationsblatts oder die Bereithaltung gebilligter, aber nicht mehr gültiger Prospekte nach Ende des Primärmarktvertriebs stellt ebenfalls kein öffentliches Angebot dar. Diese Klarstellung ist für Emittenten und Finanzintermediäre relevant, um die Prospektpflicht im Sekundärmarkt korrekt zu beurteilen und Compliance-Risiken zu minimieren.",
+          "en": "BaFin clarifies its interpretation of the term 'public offer of securities' in secondary market trading, as defined in Article 2 lit. d of the Prospectus Regulation (EU) 2017/1129. Accordingly, certain information about securities traded on an organized market or multilateral trading facility will not be classified as a public offer requiring a prospectus, provided specific conditions are met.\n\nThis applies to the reproduction of security features, the publication of bid and ask prices during trading hours, and the disclosure of further, non-promotional information that the issuer is obliged to publish. Prerequisites include the publication of an approved prospectus for the initial public offer, its updating during its validity period until primary market distribution is completed, and the issuer refraining from active distribution activities or support after the primary market phase. Furthermore, there must be no direct links to online brokers, and the issuer's website must not contain promotional statements regarding secondary market acquisition.\n\nThe publication of a continuously updated key information document or the retention of approved but no longer valid prospectuses after the end of primary market distribution also does not constitute a public offer. This clarification is relevant for issuers and financial intermediaries to correctly assess prospectus requirements in the secondary market and minimize compliance risks."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/WA/ae_261001_oeffentliches_angebot_WpPG.html",
+        "imp": "medium"
       }
     ],
     "dgsd": [
@@ -4747,222 +4982,6 @@
           "en": "The BaFin has published implementation guidance on the Digital Operational Resilience Act (DORA). This non-binding supervisory statement aims to support banks and insurers in implementing DORA's requirements for ICT risk management and ICT third-party risk management.\n\nThe guidance compares DORA's requirements with the existing banking and insurance supervisory requirements for IT (BAIT and VAIT) and identifies areas for action. It also includes an overview of minimum contractual contents for agreements with ICT third-party service providers. The findings are generally transferable to capital management companies (KAIT) and payment and e-money institutions (ZAIT).\n\nFrom January 17, 2025, most supervised entities must apply DORA. The BaFin intends to repeal the circulars BAIT, VAIT, ZAIT, and KAIT, as many of their requirements overlap with DORA."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2024/Aufsichtsmitteilung_Umsetzungshinweise_DORA.html",
-        "imp": "medium"
-      }
-    ],
-    "prospectus": [
-      {
-        "d": "18.09.2026",
-        "t": {
-          "de": "Delegierte VO",
-          "en": "Delegated regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Delegierten Verordnung (EU) 2026/1061 zur Prospektgestaltung (32026R1061R(01))",
-          "en": "Corrigendum to Delegated Regulation (EU) 2026/1061 on Prospectus Format (32026R1061R(01))"
-        },
-        "sl": "berichtigung-der-delegierten-verordnung-eu-2026-1061-der-kommission-vom-7-mai-20",
-        "s": {
-          "de": "Diese Berichtigung korrigiert Fehler in der Delegierten Verordnung (EU) 2026/1061, die wiederum die Delegierte Verordnung (EU) 2019/980 bezüglich der Prospektgestaltung ändert. Konkret werden zwei Punkte in den Anhängen IX und XI der Verordnung (EU) 2026/1061 angepasst.\n\nDie Änderungen betreffen die Nummerierung von Abschnitten und Verweise innerhalb der Anhänge. Im Anhang IX wird ein Verweis von „Punkt 6.3“ auf „Punkt 7.1“ korrigiert, und im Anhang XI wird ein alternativer Punkt zur Beschreibung der Preisfestsetzung von „Punkt 4.3.1“ auf „Punkt 4.4.1“ geändert.\n\nDiese Berichtigung ist für alle Finanzinstitute relevant, die Prospekte gemäß der Verordnung (EU) 2017/1129 erstellen und veröffentlichen müssen. Sie stellt sicher, dass die Anforderungen an die standardisierte Aufmachung, den Inhalt und die Prüfung von Prospekten korrekt angewendet werden können.",
-          "en": "This corrigendum rectifies errors in Delegated Regulation (EU) 2026/1061, which amends Delegated Regulation (EU) 2019/980 concerning prospectus format. Specifically, two points in Annexes IX and XI of Regulation (EU) 2026/1061 are adjusted.\n\nThe changes involve the numbering of sections and cross-references within the annexes. In Annex IX, a reference is corrected from “Point 6.3” to “Point 7.1”, and in Annex XI, an alternative point for describing the pricing method is changed from “Point 4.3.1” to “Point 4.4.1”.\n\nThis corrigendum is relevant for all financial institutions required to prepare and publish prospectuses in accordance with Regulation (EU) 2017/1129. It ensures that the requirements for the standardized format, content, and scrutiny of prospectuses can be applied correctly."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R1061R(01)",
-        "imp": "low",
-        "refnum": "32026R1061R(01)"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zu Offenlegungspflichten und aktualisiert Leitlinien und Q&As zur Prospektverordnung",
-          "en": "ESMA consults on disclosure requirements and updates guidelines and Q&As under the Prospectus Regulation"
-        },
-        "sl": "esma-consults-on-disclosure-requirements-and-updates-guidelines-and-q-as-under-t",
-        "s": {
-          "de": "Die ESMA hat ein Maßnahmenpaket zur Prospektverordnung veröffentlicht, das Änderungen durch den Listing Act berücksichtigt. Es umfasst ein Konsultationspapier zur Aktualisierung der Leitlinien für Offenlegungspflichten, aktualisierte Q&As, einen Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen, sowie einen Abschlussbericht zu technischen Regulierungsstandards (RTS) für wichtige Finanzinformationen in Prospektzusammenfassungen.\n\nDas Konsultationspapier soll Emittenten und Beratern helfen, die Offenlegungspflichten gemäß der überarbeiteten Prospektverordnung besser zu verstehen und vereinfacht bestehende Leitlinien. Die aktualisierten Q&As passen rechtliche Verweise an, klären Sachverhalte und entfernen überholte Inhalte. Die Leitlinien für Produktnachträge schaffen einen gemeinsamen Ansatz zur Beurteilung, ob ein Nachtrag neue Wertpapiere in einen Basisprospekt einführt, und die RTS aktualisieren die Anforderungen an Finanzinformationen im Prospekt nach den Reformen des Listing Act.\n\nInteressenträger können bis zum 9. November 2026 zur Konsultation Stellung nehmen. Die ESMA plant, den Abschlussbericht und die aktualisierten Leitlinien im zweiten Quartal 2027 zu veröffentlichen. Die Leitlinien zu Produktnachträgen treten in Kraft, sobald Übersetzungen in alle Amtssprachen der EU vorliegen. Die RTS wurden der Europäischen Kommission zur Entscheidung übermittelt.",
-          "en": "ESMA has published a package of materials under the Prospectus Regulation, reflecting changes introduced by the Listing Act. This includes a Consultation Paper on updating disclosure requirements guidelines, updated Q&As, a Final Report on guidelines for supplements introducing new securities to a base prospectus, and a Final Report on regulatory technical standards (RTS) for key financial information in prospectus summaries.\n\nThe Consultation Paper aims to help issuers and their advisors better understand disclosure requirements under the revised Prospectus Regulation and simplifies existing guidance. The updated Q&As adjust legal references, provide clarifications, and remove obsolete content. The guidelines on product supplements establish a common approach for assessing whether a supplement introduces new securities to a base prospectus, and the RTS update financial information requirements in prospectuses following Listing Act reforms.\n\nStakeholders are invited to respond to the consultation by 9 November 2026. ESMA expects to publish the Final Report and updated Guidelines in Q2 2027. The guidelines on product supplements will apply once translations into all official EU languages are available. The RTS have been submitted to the European Commission for a decision."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-disclosure-requirements-and-updates-guidelines-and-qas-under",
-        "imp": "medium"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Änderungen an den Q&As zur Prospektverordnung",
-          "en": "Changes to the Prospectus Q&As"
-        },
-        "sl": "overview-of-changes-made-to-the-prospectus-q-as",
-        "s": {
-          "de": "Die ESMA hat Änderungen an ihren Q&As zur Prospektverordnung vorgenommen. Diese Aktualisierungen betreffen die Vereinfachung und Reduzierung des Verwaltungsaufwands im Zusammenhang mit Prospekten.\n\nDie Änderungen sind für alle Unternehmen relevant, die Prospekte gemäß der Prospektverordnung erstellen und veröffentlichen müssen. Sie sollen dazu beitragen, den Prozess der Prospekterstellung effizienter zu gestalten und die damit verbundenen Belastungen zu mindern.\n\nDetails zu den spezifischen Änderungen und deren Auswirkungen auf die Praxis sind den aktualisierten Q&As zu entnehmen.",
-          "en": "ESMA has introduced changes to its Prospectus Q&As. These updates focus on the simplification and reduction of the administrative burden associated with prospectuses.\n\nThe changes are relevant for all companies required to prepare and publish prospectuses under the Prospectus Regulation. They aim to make the prospectus drafting process more efficient and alleviate related burdens.\n\nDetails on the specific changes and their practical implications can be found in the updated Q&As."
-        },
-        "url": "https://www.esma.europa.eu/document/overview-changes-made-prospectus-qas",
-        "imp": "low"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Abschlussbericht zur Aktualisierung der RTS für Finanzinformationen in der Prospektzusammenfassung (ESMA32-753890202-3065)",
-          "en": "Final Report on the update to the RTS concerning key financial information in the summary of a prospectus (ESMA32-753890202-3065)"
-        },
-        "sl": "final-report-on-the-update-to-the-rts-concerning-key-financial-information-in-th",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Aktualisierung der RTS bezüglich der wichtigsten Finanzinformationen in der Prospektzusammenfassung veröffentlicht. Ziel ist es, die Anforderungen an Finanzinformationen im Prospekt zu vereinfachen und an die durch den Listing Act geänderten Vorschriften anzupassen.\n\nDie wesentlichen Änderungen betreffen die Verkürzung der erforderlichen Zeiträume für Finanzinformationen bei der Emission von Eigenkapital- und Fremdkapitalinstrumenten. Zudem wird die Cashflow-Tabelle für Fremdkapitalinstrumente aus Anhang II entfernt, da sie keine entsprechende Position in der Delegierten Verordnung (EU) 2019/980 hat. Die Änderungen sollen die Belastung für Emittenten verringern.\n\nDie geänderten RTS werden der Europäischen Kommission zur Annahme vorgelegt und unterliegen einer Prüfungsfrist durch das Europäische Parlament und den Rat. Die ESMA ermutigt nationale zuständige Behörden, den Anwendungsbeginn vorwegzunehmen und einen konsistenten Ansatz mit der Prospektverordnung, wie sie durch den Listing Act geändert wurde, sicherzustellen.",
-          "en": "ESMA has published a final report on the update to the RTS concerning key financial information in the summary of a prospectus. The aim is to simplify the requirements for financial information in prospectuses and align them with the rules amended by the Listing Act.\n\nThe main changes involve reducing the required periods for financial information in the context of both equity and non-equity securities issuances. Additionally, the cash flow table for non-equity securities is removed from Annex II due to its lack of a corresponding item in Delegated Regulation (EU) 2019/980. These amendments are intended to alleviate the burden on issuers.\n\nThe amended RTS will be submitted to the European Commission for adoption and will be subject to a scrutiny period by the European Parliament and Council. ESMA encourages national competent authorities to anticipate its entry into application by ensuring a consistent approach with the Prospectus Regulation, as amended by the Listing Act."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-update-rts-concerning-key-financial-information-summary-prospectus",
-        "imp": "medium",
-        "refnum": "ESMA32-753890202-3065"
-      },
-      {
-        "d": "09.09.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Abschlussbericht zu Leitlinien für Nachträge, die neue Wertpapiere in einen Basisprospekt einführen (ESMA32-753890202-3034)",
-          "en": "Final Report on Guidelines on supplements which introduce new securities to a base prospectus (ESMA32-753890202-3034)"
-        },
-        "sl": "final-report-on-the-guidelines-on-supplements-which-introduce-new-securities-to",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht zu den Leitlinien für Nachträge veröffentlicht, die neue Wertpapiere in einen Basisprospekt einführen. Diese Leitlinien sollen die EU-weite Aufsicht in diesem Bereich harmonisieren, da es bisher erhebliche Abweichungen gab, die zu unterschiedlichen aufsichtsrechtlichen Ergebnissen führten.\n\nDie Leitlinien präzisieren, wann ein Nachtrag als Einführung eines neuen Wertpapiertyps gilt, der nicht bereits im Basisprospekt beschrieben ist. Dies ist relevant, da ein Basisprospekt nicht zur Einführung eines neuen Wertpapiertyps verwendet werden sollte, für den die notwendigen Informationen nicht enthalten sind. Die ESMA reagiert damit auf die Notwendigkeit klarer Kriterien, um Inkonsistenzen bei den Anforderungen zwischen den Jurisdiktionen zu vermeiden und die Ziele des Listing Act zu unterstützen.\n\nDie Leitlinien in Anhang III des Berichts werden in die Amtssprachen der EU übersetzt und veröffentlicht. Sie basieren auf umfangreichem Feedback zu einem Konsultationspapier vom 18. Februar 2025 und wurden angepasst, um die Offenlegungsanhänge der Delegierten Verordnung (EU) 2019/980 zu berücksichtigen.",
-          "en": "ESMA has published its Final Report on the Guidelines on supplements which introduce new securities to a base prospectus. These guidelines aim to harmonise EU-wide supervision in this area, as there have been significant divergences leading to different supervisory outcomes.\n\nThe guidelines specify when a supplement is considered to introduce a new type of security not already described in the base prospectus. This is relevant because a base prospectus should not be used to introduce a new type of security for which the necessary information has not been included. ESMA is thus responding to the need for clear criteria to avoid inconsistencies in requirements across jurisdictions and to support the objectives of the Listing Act.\n\nThe guidelines, set out in Annex III of the report, will be translated into the official EU languages and published. They are based on extensive feedback to a consultation paper published on 18 February 2025 and have been adjusted to reflect the disclosure annexes of Delegated Regulation (EU) 2019/980."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-guidelines-supplements-which-introduce-new-securities-base-prospectus",
-        "imp": "medium",
-        "refnum": "ESMA32-753890202-3034"
-      },
-      {
-        "d": "04.03.2026",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Vorschlag für reduzierte und standardisierte EU-Folge- und Wachstumsemissionsprospekte (Ares(2024)6122774)",
-          "en": "Proposal for Reduced and Standardised EU Follow-on and Growth Issuance Prospectuses (Ares(2024)6122774)"
-        },
-        "sl": "reduced-content-and-standardised-format-and-sequence-of-the-eu-follow-on-prospec",
-        "s": {
-          "de": "Die Europäische Kommission hat einen Legislativvorschlag für die Ausgestaltung von EU-Folgeprospekten und EU-Wachstumsemissionsprospekten vorgelegt. Ziel ist es, den Inhalt dieser Prospekte zu reduzieren und ein standardisiertes Format sowie eine feste Reihenfolge der Informationen festzulegen. Dies soll die Erstellung und Prüfung von Prospekten vereinfachen und die Effizienz des Kapitalmarkts steigern.\n\nDiese Regelungen sind für Unternehmen relevant, die Kapital über die Ausgabe von Wertpapieren am EU-Markt aufnehmen möchten. Insbesondere Emittenten, die bereits am Markt etabliert sind (Folgeprospekte) oder kleine und mittlere Unternehmen (Wachstumsemissionsprospekte), profitieren von den vereinfachten Anforderungen. Die Standardisierung soll die Vergleichbarkeit für Investoren verbessern und den Zugang zu Finanzierungen erleichtern.\n\nDer Vorschlag befindet sich im Adoptions-Workflow-Verfahren. Das Datum 04.03.2026 ist als Referenzdatum für den Vorschlag angegeben.",
-          "en": "The European Commission has submitted a legislative proposal for the design of EU follow-on prospectuses and EU growth issuance prospectuses. The aim is to reduce the content of these prospectuses and to establish a standardised format and a fixed sequence of information. This is intended to simplify the preparation and review of prospectuses and to increase the efficiency of the capital market.\n\nThese regulations are relevant for companies seeking to raise capital through the issuance of securities on the EU market. In particular, issuers already established on the market (follow-on prospectuses) or small and medium-sized enterprises (growth issuance prospectuses) will benefit from the simplified requirements. Standardisation is intended to improve comparability for investors and facilitate access to financing.\n\nThe proposal is currently in the adoption workflow procedure. The date 04.03.2026 is provided as a reference date for the proposal."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14389",
-        "imp": "medium",
-        "refnum": "Ares(2024)6122774"
-      },
-      {
-        "d": "11.09.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zum Begriff des öffentlichen Angebots gemäß Prospektverordnung",
-          "en": "Merkblatt zum Begriff des öffentlichen Angebots gemäß Prospektverordnung"
-        },
-        "sl": "merkblatt-zum-begriff-des-oeffentlichen-angebots-gemaess-prospektverordnung",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Auslegung des Begriffs „öffentliches Angebot“ gemäß Artikel 2 lit. d der Prospektverordnung (EU) 2017/1129 veröffentlicht. Darin wird klargestellt, dass ein öffentliches Angebot eine Mitteilung an die Öffentlichkeit in jeglicher Form und auf jegliche Art und Weise ist, die ausreichende Informationen über Angebotsbedingungen und Wertpapiere enthält, damit Anleger eine Kauf- oder Zeichnungsentscheidung treffen können. Dies gilt auch für die Platzierung von Wertpapieren durch Finanzintermediäre.\n\nDas Merkblatt präzisiert, dass die Form der Mitteilung irrelevant ist und alle Kommunikationskanäle umfasst, von persönlichen Gesprächen bis zu Online-Werbung. Es ist keine bindende Willenserklärung erforderlich, eine invitatio ad offerendum genügt. Die Mitteilung muss ein Mindestmaß an Informationen enthalten, die eine Investitionsentscheidung ermöglichen, wobei die abschließende Beurteilung der „ausreichenden Informationen“ vom Einzelfall abhängt. Die Initiative für die Mitteilung muss vom Anbieter ausgehen, und es können auch mehrere Personen als Anbieter gelten, insbesondere bei kollusivem Zusammenwirken.\n\nEin öffentliches Angebot liegt vor, wenn sich die Mitteilung an mindestens zwei Personen richtet. Die BaFin lehnt die Annahme ab, dass sich die Mitteilung an unbestimmte oder unbestimmbare Personen richten muss oder dass das Informationsniveau der Anleger für die Einordnung relevant ist. Auch die Bezeichnung als „private placement“ ist für die Bestimmung eines öffentlichen Angebots irrelevant. Diese Auslegung entspricht der europäischen Rechtsprechung.",
-          "en": "BaFin has published a guidance note on the interpretation of the term “offer of securities to the public” according to Article 2 lit. d of the Prospectus Regulation (EU) 2017/1129. It clarifies that an offer to the public is a communication to the public in any form and by any means, containing sufficient information on the terms of the offer and the securities to be offered, to enable an investor to decide to purchase or subscribe for those securities. This also applies to the placement of securities by financial intermediaries.\n\nThe guidance note specifies that the form of communication is irrelevant and includes all communication channels, from personal conversations to online advertising. A binding declaration of intent is not required; an invitatio ad offerendum is sufficient. The communication must contain a minimum level of information enabling an investment decision, with the final assessment of “sufficient information” depending on the individual case. The initiative for the communication must come from the offeror, and multiple persons can be considered offerors, especially in cases of collusive action.\n\nAn offer to the public exists if the communication is addressed to at least two persons. BaFin rejects the assumption that the communication must be addressed to indeterminate or indeterminable persons or that the information level of investors is relevant for classification. The designation “private placement” is also irrelevant for determining an offer to the public. This interpretation is consistent with European case law."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/WA/mb_250911_oeffentliches_angebot.html",
-        "imp": "medium"
-      },
-      {
-        "d": "27.02.2024",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Auslegungsschreiben zur Bestimmung der Anlegergruppe",
-          "en": "Auslegungsschreiben zur Bestimmung der Anlegergruppe"
-        },
-        "sl": "auslegungsschreiben-zur-bestimmung-der-anlegergruppe",
-        "s": {
-          "de": "Die BaFin hat ein Auslegungsschreiben zur Bestimmung der Anlegergruppe („Zielmarkt“) in Verkaufsprospekten und Vermögensanlagen-Informationsblättern (VIB) nach dem Vermögensanlagengesetz veröffentlicht. Es konkretisiert die gesetzlichen Mindestanforderungen an die Angaben zur Anlegergruppe, die seit dem 3. Januar 2018 in Verkaufsprospekten und seit dem 14. Juli 2018 auch in VIB enthalten sein müssen.\n\nDas Schreiben präzisiert die erforderlichen Angaben zu Kundenkategorie (Privatkunden, professionelle Kunden, geeignete Gegenpartei), Anlagehorizont (konkrete Jahresangabe, optional mit „kurzfristig, mittelfristig, langfristig“ nach ESMA-Kriterien), Verlusttragfähigkeit (Prozentangabe des maximalen Verlusts, i.d.R. 100 % des Gesamtbetrags) sowie Kenntnisse und/oder Erfahrungen des Anlegers im Bereich Vermögensanlagen. Die BaFin prüft diese Angaben auf Vollständigkeit, Verständlichkeit und Kohärenz, jedoch nicht auf inhaltliche Eignung der Vermögensanlage für die angegebene Anlegergruppe.\n\nDie Regelungen richten sich an Emittenten und Anbieter von Vermögensanlagen. Prospektverantwortliche müssen bei der Erstellung der Angaben besondere Sorgfalt walten lassen, da bei unzureichenden Informationen eine Prospekthaftung nach dem Vermögensanlagengesetz droht. Für VIB sind aufgrund der Platzknappheit zusammengefasste, knappere Angaben akzeptabel, sofern sie alle Aspekte der Zielmarktbestimmung abdecken.",
-          "en": "BaFin has published an interpretative letter on determining the investor group (\"target market\") in sales prospectuses and asset information sheets (VIB) under the German Retail Investor Protection Act (Vermögensanlagengesetz). It specifies the minimum legal requirements for investor group information, which has been mandatory in sales prospectuses since January 3, 2018, and in VIBs since July 14, 2018.\n\nThe letter clarifies the required information on customer categories (retail clients, professional clients, eligible counterparties), investment horizon (specific number of years, optionally with \"short-term, medium-term, long-term\" according to ESMA criteria), loss-bearing capacity (percentage indicating maximum loss, typically 100% of the total amount), and the investor's knowledge and/or experience in asset investments. BaFin reviews this information for completeness, comprehensibility, and coherence, but not for the substantive suitability of the asset investment for the stated investor group.\n\nThe regulations are aimed at issuers and providers of asset investments. Those responsible for prospectuses must exercise particular diligence in preparing the information, as insufficient information may lead to prospectus liability under the German Retail Investor Protection Act. For VIBs, more concise, summarized information is acceptable due to space constraints, provided it covers all aspects of target market determination."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Auslegungsentscheidung/dl_Auslegungsschreiben_Bestimmung_Anlegergruppen.html",
-        "imp": "medium"
-      },
-      {
-        "d": "10.09.2019",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zur Prüfung von Wertpapierprospekten auf Verständlichkeit",
-          "en": "Merkblatt zur Prüfung von Wertpapierprospekten auf Verständlichkeit"
-        },
-        "sl": "merkblatt-zur-pruefung-von-wertpapierprospekten-auf-verstaendlichkeit",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Prüfung der Verständlichkeit von Wertpapierprospekten veröffentlicht. Es konkretisiert die neuen europäischen Vorgaben der EU-Prospektverordnung und der Delegierten Verordnung (EU) 2019/980, die seit dem 21. Juli 2019 gelten. Ziel ist es, Emittenten bei der Prospekterstellung zu unterstützen und die Berücksichtigung der neuen Anforderungen zu erleichtern.\n\nDas Merkblatt erläutert, wie die BaFin die Kriterien des Artikels 37 der Delegierten Verordnung (EU) 2019/980 bei der Verständlichkeitsprüfung berücksichtigt. Dazu gehören Anforderungen an ein klares und detailliertes Inhaltsverzeichnis, die Vermeidung unnötiger Wiederholungen, die Gruppierung zusammenhängender Angaben, eine leicht lesbare Schriftgröße und eine einfache Sprache. Besonders adressiert werden Basisprospekte, die in der Praxis oft als problematisch hinsichtlich der Verständlichkeit angesehen wurden. Die BaFin betont, dass sie keinen „One size fits all“-Ansatz verfolgt, sondern die Verständlichkeit im Einzelfall bewertet.\n\nDie Nichtbeachtung dieser Anforderungen kann zur Unverständlichkeit des Prospekts und damit zur Versagung der Billigung führen. Das Merkblatt dient als erste Hilfestellung, wobei sich die BaFin vorbehält, ihre Verwaltungspraxis zukünftig weiterzuentwickeln.",
-          "en": "The BaFin has published a guidance notice on the comprehensibility review of securities prospectuses. It specifies the new European requirements of the EU Prospectus Regulation and Delegated Regulation (EU) 2019/980, which have been in force since July 21, 2019. The aim is to support issuers in drafting prospectuses and to facilitate the consideration of the new requirements.\n\nThe guidance notice explains how BaFin takes into account the criteria of Article 37 of Delegated Regulation (EU) 2019/980 in its comprehensibility review. These include requirements for a clear and detailed table of contents, the avoidance of unnecessary repetitions, the grouping of related information, an easily readable font size, and simple language. Particular attention is paid to base prospectuses, which have often been considered problematic in practice regarding comprehensibility. BaFin emphasizes that it does not pursue a 'one size fits all' approach but assesses comprehensibility on a case-by-case basis.\n\nNon-compliance with these requirements can lead to the incomprehensibility of the prospectus and thus to the refusal of approval. The guidance notice serves as initial assistance, with BaFin reserving the right to further develop its administrative practice in the future."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_wa_merkblatt_verstaendlichkeitspruefung_prospekte.html",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2018",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation 15/2018 – Vermögensanlagen: Auslegungsschreiben zur Bestimmung der Anlegergruppe",
-          "en": "Konsultation 15/2018 – Vermögensanlagen: Auslegungsschreiben zur Bestimmung der Anlegergruppe"
-        },
-        "sl": "konsultation-15-2018-vermoegensanlagen-auslegungsschreiben-zur-bestimmung-der-an",
-        "s": {
-          "de": "Die BaFin konsultiert ein Auslegungsschreiben zur Bestimmung der Anlegergruppe in Verkaufsprospekten und Vermögensanlagen-Informationsblättern (VIB) nach dem Vermögensanlagengesetz (VermAnlG).\n\nDie Pflicht zur Angabe der Zielgruppe besteht für Verkaufsprospekte seit Anfang 2018 und für VIBs seit dem 14. Juli 2018. Das Auslegungsschreiben konkretisiert die erforderlichen Angaben, die über die gesetzlich genannten Kriterien wie Anlagehorizont und Verlusttragfähigkeit hinaus auch Kenntnisse und Erfahrungen mit den Anlageprodukten berücksichtigen sollen, analog zu europarechtlichen Vorgaben für Basisinformationsblätter.\n\nStellungnahmen zum Auslegungsschreiben können bis zum 17. August 2018 schriftlich oder per E-Mail bei der BaFin eingereicht werden.",
-          "en": "BaFin is consulting on an interpretative letter regarding the determination of the investor group in sales prospectuses and asset information sheets (VIB) under the German Retail Investor Protection Act (VermAnlG).\n\nThe obligation to specify the target group has existed for sales prospectuses since early 2018 and for VIBs since July 14, 2018. The interpretative letter specifies the required information, which, in addition to the legally mandated criteria such as investment horizon and loss-bearing capacity, should also consider knowledge and experience with the investment products, analogous to European legal requirements for key information documents.\n\nComments on the interpretative letter can be submitted to BaFin in writing or by email until August 17, 2018."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2018/kon_1518_auslegungsschreiben_anlegergruppe.html",
-        "imp": "medium",
-        "refnum": "Konsultation 15/2018"
-      },
-      {
-        "d": "24.06.2013",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Auslegung zum öffentlichen Angebot von Wertpapieren im Sekundärmarkt (Prospektverordnung)",
-          "en": "Interpretation of Public Offer of Securities in Secondary Market (Prospectus Regulation)"
-        },
-        "sl": "auslegungsschreiben-zum-begriff-des-oeffentlichen-angebots-von-wertpapieren-im-s",
-        "s": {
-          "de": "Die BaFin präzisiert ihre Auslegung des Begriffs des öffentlichen Angebots von Wertpapieren im Sekundärmarkthandel gemäß Artikel 2 lit. d der Prospektverordnung (EU) 2017/1129. Demnach werden bestimmte Informationen über Wertpapiere, die im organisierten Markt oder Freiverkehr gehandelt werden, nicht als prospektpflichtiges öffentliches Angebot eingestuft, sofern spezifische Bedingungen erfüllt sind.\n\nDies betrifft die Wiedergabe von Ausstattungsmerkmalen, die Veröffentlichung von An- und Verkaufskursen während der Handelszeiten sowie die Bekanntgabe weiterer, nicht werblicher Informationen, zu deren Veröffentlichung der Emittent verpflichtet ist. Voraussetzung ist unter anderem, dass für das erstmalige öffentliche Angebot ein gebilligter Prospekt veröffentlicht wurde, dieser während der Gültigkeitsdauer aktualisiert wird, bis der Primärmarktvertrieb abgeschlossen ist, und der Emittent nach Abschluss des Primärmarktes keine aktiven Vertriebsaktivitäten mehr unternimmt oder unterstützt. Zudem dürfen keine direkten Verlinkungen zu Online-Brokern bestehen und die Internetseite des Emittenten darf keine werblichen Aussagen zum Erwerb im Sekundärmarkt enthalten.\n\nDie Veröffentlichung eines fortlaufend aktualisierten Produktinformationsblatts oder die Bereithaltung gebilligter, aber nicht mehr gültiger Prospekte nach Ende des Primärmarktvertriebs stellt ebenfalls kein öffentliches Angebot dar. Diese Klarstellung ist für Emittenten und Finanzintermediäre relevant, um die Prospektpflicht im Sekundärmarkt korrekt zu beurteilen und Compliance-Risiken zu minimieren.",
-          "en": "BaFin clarifies its interpretation of the term 'public offer of securities' in secondary market trading, as defined in Article 2 lit. d of the Prospectus Regulation (EU) 2017/1129. Accordingly, certain information about securities traded on an organized market or multilateral trading facility will not be classified as a public offer requiring a prospectus, provided specific conditions are met.\n\nThis applies to the reproduction of security features, the publication of bid and ask prices during trading hours, and the disclosure of further, non-promotional information that the issuer is obliged to publish. Prerequisites include the publication of an approved prospectus for the initial public offer, its updating during its validity period until primary market distribution is completed, and the issuer refraining from active distribution activities or support after the primary market phase. Furthermore, there must be no direct links to online brokers, and the issuer's website must not contain promotional statements regarding secondary market acquisition.\n\nThe publication of a continuously updated key information document or the retention of approved but no longer valid prospectuses after the end of primary market distribution also does not constitute a public offer. This clarification is relevant for issuers and financial intermediaries to correctly assess prospectus requirements in the secondary market and minimize compliance risks."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/WA/ae_261001_oeffentliches_angebot_WpPG.html",
         "imp": "medium"
       }
     ],
@@ -8613,6 +8632,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "17.11.2026",
+      "ti": "Bundesbankpräsident Joachim Nagel im Interview mit ARD plusminus",
+      "auth": "Bundesbank",
+      "src": "bundesbank.de",
+      "url": "https://www.bundesbank.de/de/aufgaben/themen/bundesbankpraesident-joachim-nagel-im-interview-mit-ard-plusminus-1016260",
+      "cat": "rede",
+      "sum": "Bundesbankpräsident Joachim Nagel spricht am Mittwoch, den 18. November, im ARD‑Wirtschaftsmagazin plusminus über die aktuelle Inflationsentwicklung und erklärt, wie die EZB das Inflationsziel von 2 Prozent wieder erreichen wird. Die Sendung läuft von 21:45 Uhr bis 22:15 Uhr."
+    },
     {
       "d": "13.11.2026",
       "ti": "Rede von Carlo Comporti auf der IOSCO-Konferenz (13. November 2026)",
