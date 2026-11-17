@@ -977,6 +977,133 @@
    "dropped": 3
   }
  },
+ "crr3-2026-11-17-fsb-sets-out-its-priorities-for-2027": {
+  "h1": "FSB-Plenarsitzung: Arbeitsprogramm 2027 (Ref. 17/2026)",
+  "seo_title": "FSB Prioritäten 2027: KI, Stablecoins, NBFI",
+  "meta_description": "FSB legt Schwerpunkte für 2027 fest: KI-Risiken, Stablecoins, NBFI-Resilienz und Krisenvorsorge. Plenarsitzung vom 16./17. November 2026 in Basel.",
+  "lead": "Der FSB hat auf seiner Plenarsitzung vom 16. bis 17. November 2026 in Basel die Arbeitsschwerpunkte für 2027 beschlossen. Im Fokus stehen KI-Risiken, globale Stablecoins, Resilienz im Nichtbankenbereich und Krisenvorsorge.",
+  "aka": [
+   "FSB Work Programme 2027",
+   "FSB Plenary November 2026",
+   "Financial Stability Board Prioritäten 2027",
+   "FSB KI Stablecoins NBFI",
+   "FSB Ref 17/2026"
+  ],
+  "summary": "Der FSB diskutierte auf seiner Jahresplenar-Sitzung Systemrisiken, KI-Entwicklungen, Stablecoins, Krisenvorsorge und NBFI-Resilienz. Das Arbeitsprogramm 2027 wird Anfang 2027 veröffentlicht. Unmittelbare Handlungspflichten für Institute entstehen nicht, jedoch sind die thematischen Schwerpunkte frühzeitig für interne Planungen relevant.",
+  "overview": [
+   "Der FSB hat auf seiner Plenarsitzung vom 16. bis 17. November 2026 Risiken für die globale Finanzstabilität erörtert und die Prioritäten für 2027 festgelegt. Als wesentliche Vulnerabilitäten nennt das Plenum hohe Staatsanleiherenditen, steigende Schuldendienst­kosten, gehebelte Strategien von Nichtbanken in Staatsanleihemärkten sowie potenzielle Schocks im Versicherungssektor. Der KI-Investitionsboom gilt als neues Risiko, falls Bewertungen oder Erträge hinter Erwartungen zurückbleiben.",
+   "Für 2027 stehen KI-Operationsresilienz, grenzüberschreitende Stablecoin-Regulierung, NBFI-Leverage sowie der G20-Zahlungsroadmap auf der Agenda. Das finale Arbeitsprogramm erscheint Anfang 2027. Die strategische Überprüfung der Krisenvorsorge läuft bereits; Ergebnisse sollen die Key Attributes of Effective Resolution Regimes stärken. Eine öffentliche Konsultation zu NBFI-Leverage-Metriken ist geplant."
+  ],
+  "facts": [
+   {
+    "label": "Datum Plenarsitzung",
+    "value": "16./17.11.2026, Basel"
+   },
+   {
+    "label": "FSB-Referenz",
+    "value": "Ref. 17/2026"
+   },
+   {
+    "label": "Vorsitz",
+    "value": "Andrew Bailey, Bank of England"
+   },
+   {
+    "label": "Arbeitsprogramm 2027",
+    "value": "Veröffentlichung Anfang 2027"
+   },
+   {
+    "label": "G20-Präsidentschaft 2027",
+    "value": "Vereinigtes Königreich"
+   },
+   {
+    "label": "NBFI-Konsultation",
+    "value": "Geplant zu Leverage-Metriken in Staatsanleihemärkten"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Großbanken / SIFIs",
+    "note": "NBFI-Leverage, Krisenvorsorge, KI",
+    "detail": "Systemrelevante Institute sollten die NBFI-Leverage-Konsultation und die strategische Krisenvorsorge-Überprüfung des FSB im Blick behalten, da daraus neue Anforderungen an Resolutionspläne und Risikosteuerung entstehen können.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Versicherungen",
+    "note": "Asset-intensive Rückversicherung",
+    "detail": "Der FSB nennt Schwachstellen in der Versicherungsbranche, insbesondere bei asset-intensiver Rückversicherung und Private Credit, als Beobachtungsschwerpunkt für 2027.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Krypto / Stablecoins",
+    "note": "Grenzüberschreitende Regulierung",
+    "detail": "Institute mit Stablecoin-Aktivitäten sollten den angekündigten Stocktake zur grenzüberschreitenden Regulierung beobachten; Handlungspflichten entstehen erst nach Folgemaßnahmen.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Compliance / Risiko",
+    "note": "Frühwarnung für Planungszwecke",
+    "detail": "Compliance- und Risikofunktionen sollten das finale Arbeitsprogramm (Anfang 2027) auswerten und interne Planungen für KI-Governance, NBFI-Exposition und Krisenvorsorge vorziehen.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Ref. 17/2026",
+    "title": "FSB-Arbeitsprogramm 2027 angekündigt",
+    "text": "Schwerpunkte sind KI-Operationsresilienz, Stablecoin-Regulierung, NBFI-Leverage und der G20-Zahlungsroadmap. Das finale Programm erscheint Anfang 2027."
+   },
+   {
+    "ref": "Krisenvorsorge",
+    "title": "Strategische Überprüfung läuft",
+    "text": "Der FSB prüft seine Krisenvorsorge-Aktivitäten und will Verbindungen zwischen identifizierten Vulnerabilitäten und Krisenreaktionsmechanismen stärken sowie die Key Attributes aktualisieren."
+   },
+   {
+    "ref": "NBFI-Leverage",
+    "title": "Konsultation zu Leverage-Metriken geplant",
+    "text": "Der FSB plant eine öffentliche Konsultation zu Metriken, die Leverage-Strategien in Staatsanleihemärkten überwachen sollen. Institute mit entsprechender Exposition sollten die Konsultation verfolgen."
+   }
+  ],
+  "todos": [
+   "Veröffentlichung des finalen FSB-Arbeitsprogramms Anfang 2027 beobachten und auf interne Auswirkungen prüfen.",
+   "Geplante NBFI-Leverage-Konsultation im Blick behalten und eigene Exposition in Staatsanleihemärkten vorab intern bewerten.",
+   "Strategische Überprüfung der FSB-Krisenvorsorge verfolgen; ggf. eigene Resolutions- und Krisenplanung anpassen.",
+   "KI-Governance intern auf Lücken prüfen, die sich aus dem angekündigten FSB-Fokus auf Operationsresilienz und KI-Betrug ergeben könnten."
+  ],
+  "timeline": [
+   {
+    "date": "17.11.2026",
+    "label": "FSB-Plenarsitzung Basel",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Entstehen aus der FSB-Plenarsitzung unmittelbare Handlungspflichten für Institute?",
+    "a": "Nein. Die Sitzung ist ein Planungs- und Diskussionsforum. Handlungspflichten entstehen erst, wenn der FSB konkrete Standards, Empfehlungen oder Konsultationen veröffentlicht."
+   },
+   {
+    "q": "Wann erscheint das finale FSB-Arbeitsprogramm 2027?",
+    "a": "Laut FSB-Pressemitteilung Anfang 2027. Ein konkretes Datum nennt die Quelle nicht."
+   },
+   {
+    "q": "Warum ist die Meldung dem Rahmenwerk CRR III / CRD VI zugeordnet?",
+    "a": "Die Zuordnung basiert auf der thematischen Einordnung im System. Inhaltlich deckt die FSB-Sitzung ein breiteres Spektrum ab, das über Eigenmittel und Aufsicht hinausgeht."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Kein konkretes Datum für die NBFI-Leverage-Konsultation genannt; Beobachtung erforderlich.",
+   "Die Zuordnung zum Rahmenwerk CRR III / CRD VI ist thematisch ungenau; FSB-Plenarsitzungen haben Querschnittscharakter.",
+   "Ergebnisse der strategischen Krisenvorsorge-Überprüfung noch nicht veröffentlicht; zweite Phase läuft."
+  ],
+  "meta": {
+   "generated": "2026-11-17",
+   "model": "sonnet",
+   "source": "HTML, 6585 Zeichen, gekürzt auf 6585",
+   "dropped": 1,
+   "tokens": 9196
+  }
+ },
  "csdr-2026-10-14-t-1-geaenderte-standards-zur-abwicklungsdisziplin-im-amtsblatt": {
   "h1": "T+1-Abwicklungsdisziplin: Delegierte VO (EU) 2026/1536 im Amtsblatt",
   "seo_title": "T+1 Abwicklungsdisziplin, VO EU 2026/1536",
