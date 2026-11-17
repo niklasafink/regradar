@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:06:21Z",
+  "generated_at": "2026-11-17T09:17:24Z",
   "updates": {
     "bcbs": [
       {
@@ -676,6 +676,144 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
         "imp": "medium",
         "refnum": "Konsultation 04/2020"
+      }
+    ],
+    "solvency": [
+      {
+        "d": "17.11.2026",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung 09/2026 (VA): Weitere Änderungen aus dem Solvency-II-Review",
+          "en": "Aufsichtsmitteilung 09/2026 (VA): Weitere Änderungen aus dem Solvency-II-Review"
+        },
+        "sl": "aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review",
+        "s": {
+          "de": "Diese Aufsichtsmitteilung gilt bis zum 31. Dezember 2027. — Thema: Versicherungen",
+          "en": "Diese Aufsichtsmitteilung gilt bis zum 31. Dezember 2027. — Thema: Versicherungen"
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_09_2026_weitere_aenderungen_aus_dem_solvencyII_review_va.html",
+        "refnum": "Aufsichtsmitteilung 09/2026"
+      },
+      {
+        "d": "15.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EIOPA schließt Solvency II-Überprüfung mit Leitlinien und Entwürfen technischer Standards ab",
+          "en": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year"
+        },
+        "sl": "eiopa-completes-solvency-ii-review-mandate-with-final-guidelines-and-draft-techn",
+        "s": {
+          "de": "Die EIOPA hat acht Leitlinien und Entwürfe technischer Standards zur Überprüfung des Solvency II-Rahmens veröffentlicht. Diese umfassen neue Leitlinien zur Behebung von Mängeln im Liquiditätsrisikomanagement sowie Überarbeitungen bestehender Leitlinien und technischer Standards zur Berechnung der Risikomarge und zur Anwendung des Matching Adjustment.\n\nDiese Veröffentlichungen sind für Versicherungsunternehmen relevant, die unter Solvency II fallen. Die neuen Leitlinien zum Liquiditätsrisikomanagement legen fest, welche Befugnisse Aufsichtsbehörden zur Stärkung der Liquidität von Unternehmen ausüben können und unter welchen Umständen Rücknahmerechte von Versicherungsnehmern vorübergehend ausgesetzt werden dürfen. Die Änderungen an der Risikomarge durch den „Lambda-Faktor“ sollen die Zeitabhängigkeit von Risiken besser berücksichtigen und die Sensitivität gegenüber Zinsänderungen reduzieren. Für Unternehmen, die den Matching Adjustment nutzen, ermöglichen die überarbeiteten ITS eine vollständige Diversifikation zwischen MA-Portfolio und dem restlichen Unternehmen bei der Berechnung der Solvenzkapitalanforderung, sofern die besten Schätzwerte der Versicherungs- und Rückversicherungsverpflichtungen keinen Ring-fenced Fund bilden.\n\nDie Entwürfe der technischen Standards wurden der Europäischen Kommission zur Entscheidung übermittelt. Die neuen Regelungen treten zusammen mit dem geänderten Solvency II-Rahmenwerk am 30. Januar 2027 in Kraft.",
+          "en": "EIOPA has published eight sets of guidelines and draft technical standards related to the Solvency II framework review. These include new guidelines on addressing deficiencies in liquidity risk management, as well as revisions to existing guidelines and technical standards on the calculation of the risk margin and the application of the matching adjustment.\n\nThese publications are relevant for insurance undertakings falling under Solvency II. The new guidelines on liquidity risk management specify the powers supervisors may exercise to strengthen undertakings' liquidity positions and the exceptional circumstances under which policyholders' redemption rights may be temporarily suspended. Changes to the risk margin through the “lambda factor” aim to better account for the time dependency of risks and reduce sensitivity to interest rate changes. For undertakings using the matching adjustment, the revised ITS allow for full diversification between their MA portfolio and the rest of the undertaking when calculating their Solvency Capital Requirement, provided that the best estimate of insurance and reinsurance obligations does not form a ring-fenced fund.\n\n The draft technical standards have been submitted to the European Commission for a decision. The new regulations, along with the amended Solvency II framework, will apply from 30 January 2027."
+        },
+        "url": "https://www.eiopa.europa.eu/eiopa-completes-solvency-ii-review-mandate-final-guidelines-and-draft-technical-standards-revised-2026-07-15_en",
+        "imp": "high"
+      },
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Aufsichtsmitteilung zu Änderungen aus dem Solvency-II-Review (04/2026)",
+          "en": "BaFin Supervisory Statement on Changes from the Solvency II Review (04/2026)"
+        },
+        "sl": "aufsichtsmitteilung-04-2026-va-aenderungen-aus-dem-solvency-ii-review",
+        "s": {
+          "de": "Die BaFin gibt mit dieser Aufsichtsmitteilung erste Hinweise zur Auslegung und Verwaltungspraxis bezüglich der Änderungen aus dem Solvency-II-Review. Im Fokus stehen dabei die angepassten oder neu eingeführten Anzeige- und Antragsverfahren für Proportionalitätsmaßnahmen. Die BaFin betont ihre Verpflichtung zum Proportionalitätsgrundsatz, um insbesondere kleinen und nicht komplexen Unternehmen die Anwendung dieser Maßnahmen bereits mit Inkrafttreten der neuen Regelungen zu ermöglichen.\n\nDie Mitteilung richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, ausgenommen Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen sowie bestimmte Rückversicherer. Künftig können risikoarme Unternehmen als „small and non-complex undertakings“ (SNCU) oder Gruppen als „small and non-complex groups“ (SNCG) eingestuft werden. SNCU können nach einem Anzeigeverfahren bis zu zehn Proportionalitätsmaßnahmen ohne weitere BaFin-Handlung anwenden, während Non-SNCU bis zu sieben Maßnahmen nach vorheriger BaFin-Genehmigung nutzen können. Die BaFin bietet eine Voranzeige- bzw. Vorantragsphase an, um Unternehmen die Einreichung bereits vor dem Inkrafttreten der neuen gesetzlichen Regelungen am 30. Januar 2027 zu ermöglichen.\n\nDie Aufsichtsmitteilung gilt ab ihrer Veröffentlichung bis zum 31. Dezember 2027. Die neuen gesetzlichen Regelungen sind ab dem 30. Januar 2027 anwendbar. Anträge, die vor diesem Datum eingehen, werden ab dem 30. Januar 2027 als formale Anträge gewertet, sofern das Unternehmen nicht widerspricht. Eine erneute Einreichung ist dann nicht erforderlich. Die BaFin wird die Mitteilung bei wesentlichen Änderungen anpassen und plant, die Verwaltungspraxis bei Verstetigung in ein Rundschreiben zu überführen.",
+          "en": "This supervisory statement provides initial guidance from BaFin on the interpretation and administrative practice concerning the changes resulting from the Solvency II Review. The focus is on the adjusted or newly introduced notification and application procedures for proportionality measures. BaFin emphasizes its commitment to the principle of proportionality, particularly to enable small and non-complex undertakings to apply these measures upon the entry into force of the new regulations.\n\nThe statement applies to all primary and reinsurance undertakings domiciled in Germany or a third country, excluding funeral funds, pension funds, small insurance undertakings, and certain reinsurers. In the future, low-risk insurance undertakings can be classified as “small and non-complex undertakings” (SNCU) or groups as “small and non-complex groups” (SNCG). SNCUs can apply up to ten proportionality measures after a notification procedure without further BaFin action, while Non-SNCUs can use up to seven measures after prior BaFin approval. BaFin offers a pre-notification and pre-application phase to allow undertakings to submit applications before the new legal regulations come into force on January 30, 2027.\n\nThe supervisory statement is valid from its publication until December 31, 2027. The new legal regulations are applicable from January 30, 2027. Applications received before this date will be treated as formal applications from January 30, 2027, unless the undertaking objects. A re-submission will then not be necessary. BaFin will adapt the statement in case of significant changes and plans to convert the administrative practice into a circular letter once it becomes established."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_04_2026_aenderungen_aus_dem_solvencyII_review_va.html",
+        "imp": "medium",
+        "refnum": "Aufsichtsmitteilung 04/2026"
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone",
+          "en": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone"
+        },
+        "sl": "aufsichtsmitteilung-01-2026-va-bildung-einer-schwankungsrueckstellung-fuer-die-v",
+        "s": {
+          "de": "Die BaFin gibt Hinweise zur Bildung einer Schwankungsrückstellung für die neue Versicherungsart „Cyberversicherung Stand alone“ (Va 26.1). Hintergrund ist die ab Ende 2025 erstmals gesondert aufzustellende Gewinn- und Verlustrechnung für diese Versicherungsart gemäß Versicherungsberichterstattungs-Verordnung.\n\nVersicherungsunternehmen, die Cyberversicherungen als eigenständige Policen anbieten, sind angesprochen. Da zum jetzigen Zeitpunkt keine Versicherungsunternehmen über die erforderlichen zehnjährigen Beobachtungszeiträume für die Schadenquoten verfügen, besteht für das Bilanzjahr 2025 keine Pflicht zur Bildung einer Schwankungsrückstellung. Eine vorzeitige freiwillige Bildung ist jedoch auf Antrag möglich, wobei ein verkürzter Beobachtungszeitraum von mindestens sieben Jahren akzeptiert werden kann, sofern die Daten aus den eigenen Geschäftsunterlagen stammen. Die BaFin kann keine branchenweite generelle Ausnahmebewilligung erteilen.\n\nDiese Aufsichtsmitteilung gilt ab sofort bis zum 31.12.2030. Danach sollen ausreichende BaFin-Daten für einen zehnjährigen Beobachtungszeitraum vorliegen, sodass die gesetzlichen Regelungen der RechVersV greifen.",
+          "en": "BaFin provides guidance on forming a fluctuation reserve for the new insurance class “Cyberversicherung Stand alone” (Va 26.1). This follows the requirement to prepare a separate profit and loss account for this insurance class for the first time by the end of 2025, in accordance with the Insurance Reporting Regulation.\n\nThis supervisory statement is addressed to insurance undertakings offering cyber insurance as standalone policies. As no insurance undertakings currently possess the required ten-year observation periods for loss ratios, there is no obligation to form a fluctuation reserve for the 2025 financial year. However, early voluntary formation is possible upon application, whereby a shortened observation period of at least seven years may be accepted, provided the data originates from the undertaking's own business records. BaFin cannot grant a general industry-wide exemption.\n\nThis supervisory statement is effective immediately and applies until 31.12.2030. By then, sufficient BaFin data for a ten-year observation period is expected to be available, allowing the statutory provisions of the RechVersV to apply."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_01_2026_bildung_schwankungsrueckstellung_cyber_va.html",
+        "imp": "medium",
+        "refnum": "Aufsichtsmitteilung 01/2026"
+      },
+      {
+        "d": "03.02.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Aufsichtserklärung für (Rück-)Versicherer und Private Equity",
+          "en": "Consultation on Supervisory Statement for (Re-)Insurance Undertakings and Private Equity"
+        },
+        "sl": "consultation-on-supervisory-statement-on-the-authorisation-and-ongoing-supervisi",
+        "s": {
+          "de": "Die EIOPA konsultiert eine Aufsichtserklärung zur Genehmigung und laufenden Beaufsichtigung von (Rück-)Versicherungsunternehmen im Zusammenhang mit Private-Equity-Firmen. Ziel ist es, die spezifische Art und die Risiken dieser Unternehmen zu berücksichtigen, um Risiken zu adressieren und eine hochwertige sowie konvergente Aufsicht zu gewährleisten.\n\nDie Erklärung legt aufsichtsrechtliche Erwartungen für den Erwerb qualifizierter Beteiligungen, Portfolioübertragungen und Fusionen sowie für die laufende Aufsicht fest. Sie richtet sich an europäische Aufsichtsbehörden und soll im Einklang mit den Grundsätzen einer risikobasierten und verhältnismäßigen Aufsicht angewendet werden.\n\nDie Konsultationsfrist endete am 30.04.2026.",
+          "en": "EIOPA is consulting on a supervisory statement concerning the authorisation and ongoing supervision of (re-)insurance undertakings related to private equity firms. The aim is to address the specific nature and risks of these entities, ensuring high-quality and convergent supervision.\n\nThe statement sets out supervisory expectations for acquisitions of qualifying holdings, portfolio transfers, and mergers, as well as for ongoing supervision. It is intended to be applied by European supervisory authorities in line with the principles of risk-based and proportionate supervision.\n\nThe consultation period closed on 30 April 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-supervisory-statement-authorisation-and-ongoing-supervision-re-insurance-undertakings_en",
+        "imp": "medium",
+        "deadline": "30.04.2026"
+      },
+      {
+        "d": "13.11.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Hinweise zum Solvency-II-Berichtswesen aktualisiert",
+          "en": "BaFin updates Solvency II reporting guidance"
+        },
+        "sl": "hinweise-zum-solvency-ii-berichtswesen-fuer-erst-und-rueckversicherungsunternehm",
+        "s": {
+          "de": "Die BaFin hat ein aktualisiertes Hinweisschreiben zum Solvency-II-Berichtswesen für Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen veröffentlicht. Es enthält Änderungen und präzisiert die Berichtspflichten unter Solvency II und gegenüber der EZB.\n\nDas Schreiben behandelt detailliert das quantitative und narrative Berichtswesen, einschließlich des Berichts über die Solvabilität und Finanzlage (SFCR), des Regelmäßigen Aufsichtlichen Berichts (RSR) und des ORSA-Berichts. Es gibt spezifische Hinweise zu zahlreichen Berichtsformularen (z.B. S.01.01, S.02.01, S.06.02) und deren Inhalten, zur Kategorisierung von Kapitalanlagen und Derivaten sowie zum Umgang mit Fristen und Datenqualität. Auch Besonderheiten für Anwender interner Modelle und das Berichtswesen zur Finanzstabilität werden erläutert.\n\nDas Hinweisschreiben richtet sich an alle Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen in Deutschland, die den Solvency-II-Vorschriften unterliegen. Es dient als umfassende Orientierungshilfe für die Erfüllung der umfangreichen Berichtspflichten gegenüber der BaFin und der Deutschen Bundesbank im Rahmen des ESZB-Versicherungsstatistiksystems. Die Aktualisierungen sind für die Compliance-Verantwortlichen relevant, um die korrekte und fristgerechte Einreichung der erforderlichen Unterlagen sicherzustellen.",
+          "en": "BaFin has published an updated guidance letter on Solvency II reporting for primary and reinsurance undertakings and insurance groups. It includes amendments and clarifies reporting obligations under Solvency II and to the ECB.\n\n The letter comprehensively addresses quantitative and narrative reporting, including the Solvency and Financial Condition Report (SFCR), the Regular Supervisory Report (RSR), and the ORSA report. It provides specific guidance on numerous reporting forms (e.g., S.01.01, S.02.01, S.06.02) and their contents, the categorization of investments and derivatives, and handling deadlines and data quality. Special considerations for users of internal models and financial stability reporting are also explained.\n\nThis guidance letter is aimed at all primary and reinsurance undertakings and insurance groups in Germany subject to Solvency II regulations. It serves as a comprehensive guide for fulfilling extensive reporting obligations to BaFin and the Deutsche Bundesbank within the ESZB insurance statistics system. The updates are relevant for compliance officers to ensure the correct and timely submission of required documents."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/VA/dl_Hinweissschreiben_mit_Aenderungen_Berichtspflichten_SolvencyII.html",
+        "imp": "medium"
+      },
+      {
+        "d": "14.07.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Anforderungen an die Geschäftsorganisation in Bezug auf Eigenmittel (Solvabilität II)",
+          "en": "Requirements for the Business Organisation Regarding Own Funds (Solvency II)"
+        },
+        "sl": "merkblatt-02-2025-va-anforderungen-an-die-geschaeftsorganisation-in-bezug-auf-ei",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu den Anforderungen an die Geschäftsorganisation in Bezug auf Eigenmittel im Rahmen von Solvabilität II veröffentlicht. Es konkretisiert die Auslegung der Vorschriften des Versicherungsaufsichtsgesetzes (VAG) und der Delegierten Verordnung (EU) 2015/35 (DVO) und ist für die BaFin verbindlich, um eine konsistente Anwendung sicherzustellen.\n\nDas Merkblatt richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, die dem Solvabilität II-Aufsichtssystem unterliegen, sowie an bestimmte Gruppen. Es legt dar, dass Unternehmen jederzeit über ausreichend anrechnungsfähige Eigenmittel zur Bedeckung der Solvabilitätskapitalanforderung (SCR) und Mindestkapitalanforderung (MCR) verfügen müssen. Dies erfordert eine kontinuierliche Beobachtung, Überwachung von SCR/MCR-Bewegungen und ein aktives Management der Eigenmittel, einschließlich der Entwicklung von Verfahren, Prozessen und Plänen sowie deren schriftlicher Dokumentation.\n\nUnternehmen müssen sicherstellen, dass Eigenmittelbestandteile die Anforderungen der jeweiligen Qualitätsklasse erfüllen, sowohl bei Emission als auch fortlaufend. Die Auswirkungen von Verlusten auf anrechnungsfähige Eigenmittel aufgrund von Anrechnungsgrenzen sind in die Kapitalmanagementüberlegungen einzubeziehen. Kapitalmanagement-Leitlinien, die mindestens jährlich zu überprüfen und von der Geschäftsleitung zu verabschieden sind, müssen die Verfahren zur Sicherstellung der Eigenmittelklassifizierung und zur Beschaffung neuer Eigenmittel regeln.",
+          "en": "BaFin has published a guidance notice on the requirements for the business organisation regarding own funds under Solvency II. It specifies the interpretation of the provisions of the German Insurance Supervision Act (VAG) and Delegated Regulation (EU) 2015/35 (DVO), and is binding for BaFin to ensure consistent application.\n\nThe guidance notice applies to all primary and reinsurance undertakings domiciled in Germany or a third country subject to the Solvency II supervisory system, as well as to certain groups. It states that undertakings must at all times hold sufficient eligible own funds to cover the Solvency Capital Requirement (SCR) and Minimum Capital Requirement (MCR). This necessitates continuous monitoring, oversight of SCR/MCR movements, and active own funds management, including the development of procedures, processes, and plans, and their written documentation.\n\nUndertakings must ensure that own funds items meet the requirements of their respective quality class, both at issuance and on an ongoing basis. The impact of losses on eligible own funds due to deduction limits must be considered in capital management deliberations. Capital management guidelines, which must be reviewed at least annually and approved by the management board, must regulate the procedures for ensuring own funds classification and for procuring new own funds."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_02_2025_Anforderungen_an_die_Geschaeftsorganisation_in_Bezug_auf_Eigenmittel_va.html",
+        "imp": "medium"
       }
     ],
     "aiact": [
@@ -6143,125 +6281,6 @@
         "imp": "medium"
       }
     ],
-    "solvency": [
-      {
-        "d": "15.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EIOPA schließt Solvency II-Überprüfung mit Leitlinien und Entwürfen technischer Standards ab",
-          "en": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year"
-        },
-        "sl": "eiopa-completes-solvency-ii-review-mandate-with-final-guidelines-and-draft-techn",
-        "s": {
-          "de": "Die EIOPA hat acht Leitlinien und Entwürfe technischer Standards zur Überprüfung des Solvency II-Rahmens veröffentlicht. Diese umfassen neue Leitlinien zur Behebung von Mängeln im Liquiditätsrisikomanagement sowie Überarbeitungen bestehender Leitlinien und technischer Standards zur Berechnung der Risikomarge und zur Anwendung des Matching Adjustment.\n\nDiese Veröffentlichungen sind für Versicherungsunternehmen relevant, die unter Solvency II fallen. Die neuen Leitlinien zum Liquiditätsrisikomanagement legen fest, welche Befugnisse Aufsichtsbehörden zur Stärkung der Liquidität von Unternehmen ausüben können und unter welchen Umständen Rücknahmerechte von Versicherungsnehmern vorübergehend ausgesetzt werden dürfen. Die Änderungen an der Risikomarge durch den „Lambda-Faktor“ sollen die Zeitabhängigkeit von Risiken besser berücksichtigen und die Sensitivität gegenüber Zinsänderungen reduzieren. Für Unternehmen, die den Matching Adjustment nutzen, ermöglichen die überarbeiteten ITS eine vollständige Diversifikation zwischen MA-Portfolio und dem restlichen Unternehmen bei der Berechnung der Solvenzkapitalanforderung, sofern die besten Schätzwerte der Versicherungs- und Rückversicherungsverpflichtungen keinen Ring-fenced Fund bilden.\n\nDie Entwürfe der technischen Standards wurden der Europäischen Kommission zur Entscheidung übermittelt. Die neuen Regelungen treten zusammen mit dem geänderten Solvency II-Rahmenwerk am 30. Januar 2027 in Kraft.",
-          "en": "EIOPA has published eight sets of guidelines and draft technical standards related to the Solvency II framework review. These include new guidelines on addressing deficiencies in liquidity risk management, as well as revisions to existing guidelines and technical standards on the calculation of the risk margin and the application of the matching adjustment.\n\nThese publications are relevant for insurance undertakings falling under Solvency II. The new guidelines on liquidity risk management specify the powers supervisors may exercise to strengthen undertakings' liquidity positions and the exceptional circumstances under which policyholders' redemption rights may be temporarily suspended. Changes to the risk margin through the “lambda factor” aim to better account for the time dependency of risks and reduce sensitivity to interest rate changes. For undertakings using the matching adjustment, the revised ITS allow for full diversification between their MA portfolio and the rest of the undertaking when calculating their Solvency Capital Requirement, provided that the best estimate of insurance and reinsurance obligations does not form a ring-fenced fund.\n\n The draft technical standards have been submitted to the European Commission for a decision. The new regulations, along with the amended Solvency II framework, will apply from 30 January 2027."
-        },
-        "url": "https://www.eiopa.europa.eu/eiopa-completes-solvency-ii-review-mandate-final-guidelines-and-draft-technical-standards-revised-2026-07-15_en",
-        "imp": "high"
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Aufsichtsmitteilung zu Änderungen aus dem Solvency-II-Review (04/2026)",
-          "en": "BaFin Supervisory Statement on Changes from the Solvency II Review (04/2026)"
-        },
-        "sl": "aufsichtsmitteilung-04-2026-va-aenderungen-aus-dem-solvency-ii-review",
-        "s": {
-          "de": "Die BaFin gibt mit dieser Aufsichtsmitteilung erste Hinweise zur Auslegung und Verwaltungspraxis bezüglich der Änderungen aus dem Solvency-II-Review. Im Fokus stehen dabei die angepassten oder neu eingeführten Anzeige- und Antragsverfahren für Proportionalitätsmaßnahmen. Die BaFin betont ihre Verpflichtung zum Proportionalitätsgrundsatz, um insbesondere kleinen und nicht komplexen Unternehmen die Anwendung dieser Maßnahmen bereits mit Inkrafttreten der neuen Regelungen zu ermöglichen.\n\nDie Mitteilung richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, ausgenommen Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen sowie bestimmte Rückversicherer. Künftig können risikoarme Unternehmen als „small and non-complex undertakings“ (SNCU) oder Gruppen als „small and non-complex groups“ (SNCG) eingestuft werden. SNCU können nach einem Anzeigeverfahren bis zu zehn Proportionalitätsmaßnahmen ohne weitere BaFin-Handlung anwenden, während Non-SNCU bis zu sieben Maßnahmen nach vorheriger BaFin-Genehmigung nutzen können. Die BaFin bietet eine Voranzeige- bzw. Vorantragsphase an, um Unternehmen die Einreichung bereits vor dem Inkrafttreten der neuen gesetzlichen Regelungen am 30. Januar 2027 zu ermöglichen.\n\nDie Aufsichtsmitteilung gilt ab ihrer Veröffentlichung bis zum 31. Dezember 2027. Die neuen gesetzlichen Regelungen sind ab dem 30. Januar 2027 anwendbar. Anträge, die vor diesem Datum eingehen, werden ab dem 30. Januar 2027 als formale Anträge gewertet, sofern das Unternehmen nicht widerspricht. Eine erneute Einreichung ist dann nicht erforderlich. Die BaFin wird die Mitteilung bei wesentlichen Änderungen anpassen und plant, die Verwaltungspraxis bei Verstetigung in ein Rundschreiben zu überführen.",
-          "en": "This supervisory statement provides initial guidance from BaFin on the interpretation and administrative practice concerning the changes resulting from the Solvency II Review. The focus is on the adjusted or newly introduced notification and application procedures for proportionality measures. BaFin emphasizes its commitment to the principle of proportionality, particularly to enable small and non-complex undertakings to apply these measures upon the entry into force of the new regulations.\n\nThe statement applies to all primary and reinsurance undertakings domiciled in Germany or a third country, excluding funeral funds, pension funds, small insurance undertakings, and certain reinsurers. In the future, low-risk insurance undertakings can be classified as “small and non-complex undertakings” (SNCU) or groups as “small and non-complex groups” (SNCG). SNCUs can apply up to ten proportionality measures after a notification procedure without further BaFin action, while Non-SNCUs can use up to seven measures after prior BaFin approval. BaFin offers a pre-notification and pre-application phase to allow undertakings to submit applications before the new legal regulations come into force on January 30, 2027.\n\nThe supervisory statement is valid from its publication until December 31, 2027. The new legal regulations are applicable from January 30, 2027. Applications received before this date will be treated as formal applications from January 30, 2027, unless the undertaking objects. A re-submission will then not be necessary. BaFin will adapt the statement in case of significant changes and plans to convert the administrative practice into a circular letter once it becomes established."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_04_2026_aenderungen_aus_dem_solvencyII_review_va.html",
-        "imp": "medium",
-        "refnum": "Aufsichtsmitteilung 04/2026"
-      },
-      {
-        "d": "12.03.2026",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone",
-          "en": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone"
-        },
-        "sl": "aufsichtsmitteilung-01-2026-va-bildung-einer-schwankungsrueckstellung-fuer-die-v",
-        "s": {
-          "de": "Die BaFin gibt Hinweise zur Bildung einer Schwankungsrückstellung für die neue Versicherungsart „Cyberversicherung Stand alone“ (Va 26.1). Hintergrund ist die ab Ende 2025 erstmals gesondert aufzustellende Gewinn- und Verlustrechnung für diese Versicherungsart gemäß Versicherungsberichterstattungs-Verordnung.\n\nVersicherungsunternehmen, die Cyberversicherungen als eigenständige Policen anbieten, sind angesprochen. Da zum jetzigen Zeitpunkt keine Versicherungsunternehmen über die erforderlichen zehnjährigen Beobachtungszeiträume für die Schadenquoten verfügen, besteht für das Bilanzjahr 2025 keine Pflicht zur Bildung einer Schwankungsrückstellung. Eine vorzeitige freiwillige Bildung ist jedoch auf Antrag möglich, wobei ein verkürzter Beobachtungszeitraum von mindestens sieben Jahren akzeptiert werden kann, sofern die Daten aus den eigenen Geschäftsunterlagen stammen. Die BaFin kann keine branchenweite generelle Ausnahmebewilligung erteilen.\n\nDiese Aufsichtsmitteilung gilt ab sofort bis zum 31.12.2030. Danach sollen ausreichende BaFin-Daten für einen zehnjährigen Beobachtungszeitraum vorliegen, sodass die gesetzlichen Regelungen der RechVersV greifen.",
-          "en": "BaFin provides guidance on forming a fluctuation reserve for the new insurance class “Cyberversicherung Stand alone” (Va 26.1). This follows the requirement to prepare a separate profit and loss account for this insurance class for the first time by the end of 2025, in accordance with the Insurance Reporting Regulation.\n\nThis supervisory statement is addressed to insurance undertakings offering cyber insurance as standalone policies. As no insurance undertakings currently possess the required ten-year observation periods for loss ratios, there is no obligation to form a fluctuation reserve for the 2025 financial year. However, early voluntary formation is possible upon application, whereby a shortened observation period of at least seven years may be accepted, provided the data originates from the undertaking's own business records. BaFin cannot grant a general industry-wide exemption.\n\nThis supervisory statement is effective immediately and applies until 31.12.2030. By then, sufficient BaFin data for a ten-year observation period is expected to be available, allowing the statutory provisions of the RechVersV to apply."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_01_2026_bildung_schwankungsrueckstellung_cyber_va.html",
-        "imp": "medium",
-        "refnum": "Aufsichtsmitteilung 01/2026"
-      },
-      {
-        "d": "03.02.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Aufsichtserklärung für (Rück-)Versicherer und Private Equity",
-          "en": "Consultation on Supervisory Statement for (Re-)Insurance Undertakings and Private Equity"
-        },
-        "sl": "consultation-on-supervisory-statement-on-the-authorisation-and-ongoing-supervisi",
-        "s": {
-          "de": "Die EIOPA konsultiert eine Aufsichtserklärung zur Genehmigung und laufenden Beaufsichtigung von (Rück-)Versicherungsunternehmen im Zusammenhang mit Private-Equity-Firmen. Ziel ist es, die spezifische Art und die Risiken dieser Unternehmen zu berücksichtigen, um Risiken zu adressieren und eine hochwertige sowie konvergente Aufsicht zu gewährleisten.\n\nDie Erklärung legt aufsichtsrechtliche Erwartungen für den Erwerb qualifizierter Beteiligungen, Portfolioübertragungen und Fusionen sowie für die laufende Aufsicht fest. Sie richtet sich an europäische Aufsichtsbehörden und soll im Einklang mit den Grundsätzen einer risikobasierten und verhältnismäßigen Aufsicht angewendet werden.\n\nDie Konsultationsfrist endete am 30.04.2026.",
-          "en": "EIOPA is consulting on a supervisory statement concerning the authorisation and ongoing supervision of (re-)insurance undertakings related to private equity firms. The aim is to address the specific nature and risks of these entities, ensuring high-quality and convergent supervision.\n\nThe statement sets out supervisory expectations for acquisitions of qualifying holdings, portfolio transfers, and mergers, as well as for ongoing supervision. It is intended to be applied by European supervisory authorities in line with the principles of risk-based and proportionate supervision.\n\nThe consultation period closed on 30 April 2026."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-supervisory-statement-authorisation-and-ongoing-supervision-re-insurance-undertakings_en",
-        "imp": "medium",
-        "deadline": "30.04.2026"
-      },
-      {
-        "d": "13.11.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Hinweise zum Solvency-II-Berichtswesen aktualisiert",
-          "en": "BaFin updates Solvency II reporting guidance"
-        },
-        "sl": "hinweise-zum-solvency-ii-berichtswesen-fuer-erst-und-rueckversicherungsunternehm",
-        "s": {
-          "de": "Die BaFin hat ein aktualisiertes Hinweisschreiben zum Solvency-II-Berichtswesen für Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen veröffentlicht. Es enthält Änderungen und präzisiert die Berichtspflichten unter Solvency II und gegenüber der EZB.\n\nDas Schreiben behandelt detailliert das quantitative und narrative Berichtswesen, einschließlich des Berichts über die Solvabilität und Finanzlage (SFCR), des Regelmäßigen Aufsichtlichen Berichts (RSR) und des ORSA-Berichts. Es gibt spezifische Hinweise zu zahlreichen Berichtsformularen (z.B. S.01.01, S.02.01, S.06.02) und deren Inhalten, zur Kategorisierung von Kapitalanlagen und Derivaten sowie zum Umgang mit Fristen und Datenqualität. Auch Besonderheiten für Anwender interner Modelle und das Berichtswesen zur Finanzstabilität werden erläutert.\n\nDas Hinweisschreiben richtet sich an alle Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen in Deutschland, die den Solvency-II-Vorschriften unterliegen. Es dient als umfassende Orientierungshilfe für die Erfüllung der umfangreichen Berichtspflichten gegenüber der BaFin und der Deutschen Bundesbank im Rahmen des ESZB-Versicherungsstatistiksystems. Die Aktualisierungen sind für die Compliance-Verantwortlichen relevant, um die korrekte und fristgerechte Einreichung der erforderlichen Unterlagen sicherzustellen.",
-          "en": "BaFin has published an updated guidance letter on Solvency II reporting for primary and reinsurance undertakings and insurance groups. It includes amendments and clarifies reporting obligations under Solvency II and to the ECB.\n\n The letter comprehensively addresses quantitative and narrative reporting, including the Solvency and Financial Condition Report (SFCR), the Regular Supervisory Report (RSR), and the ORSA report. It provides specific guidance on numerous reporting forms (e.g., S.01.01, S.02.01, S.06.02) and their contents, the categorization of investments and derivatives, and handling deadlines and data quality. Special considerations for users of internal models and financial stability reporting are also explained.\n\nThis guidance letter is aimed at all primary and reinsurance undertakings and insurance groups in Germany subject to Solvency II regulations. It serves as a comprehensive guide for fulfilling extensive reporting obligations to BaFin and the Deutsche Bundesbank within the ESZB insurance statistics system. The updates are relevant for compliance officers to ensure the correct and timely submission of required documents."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/VA/dl_Hinweissschreiben_mit_Aenderungen_Berichtspflichten_SolvencyII.html",
-        "imp": "medium"
-      },
-      {
-        "d": "14.07.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anforderungen an die Geschäftsorganisation in Bezug auf Eigenmittel (Solvabilität II)",
-          "en": "Requirements for the Business Organisation Regarding Own Funds (Solvency II)"
-        },
-        "sl": "merkblatt-02-2025-va-anforderungen-an-die-geschaeftsorganisation-in-bezug-auf-ei",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Anforderungen an die Geschäftsorganisation in Bezug auf Eigenmittel im Rahmen von Solvabilität II veröffentlicht. Es konkretisiert die Auslegung der Vorschriften des Versicherungsaufsichtsgesetzes (VAG) und der Delegierten Verordnung (EU) 2015/35 (DVO) und ist für die BaFin verbindlich, um eine konsistente Anwendung sicherzustellen.\n\nDas Merkblatt richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, die dem Solvabilität II-Aufsichtssystem unterliegen, sowie an bestimmte Gruppen. Es legt dar, dass Unternehmen jederzeit über ausreichend anrechnungsfähige Eigenmittel zur Bedeckung der Solvabilitätskapitalanforderung (SCR) und Mindestkapitalanforderung (MCR) verfügen müssen. Dies erfordert eine kontinuierliche Beobachtung, Überwachung von SCR/MCR-Bewegungen und ein aktives Management der Eigenmittel, einschließlich der Entwicklung von Verfahren, Prozessen und Plänen sowie deren schriftlicher Dokumentation.\n\nUnternehmen müssen sicherstellen, dass Eigenmittelbestandteile die Anforderungen der jeweiligen Qualitätsklasse erfüllen, sowohl bei Emission als auch fortlaufend. Die Auswirkungen von Verlusten auf anrechnungsfähige Eigenmittel aufgrund von Anrechnungsgrenzen sind in die Kapitalmanagementüberlegungen einzubeziehen. Kapitalmanagement-Leitlinien, die mindestens jährlich zu überprüfen und von der Geschäftsleitung zu verabschieden sind, müssen die Verfahren zur Sicherstellung der Eigenmittelklassifizierung und zur Beschaffung neuer Eigenmittel regeln.",
-          "en": "BaFin has published a guidance notice on the requirements for the business organisation regarding own funds under Solvency II. It specifies the interpretation of the provisions of the German Insurance Supervision Act (VAG) and Delegated Regulation (EU) 2015/35 (DVO), and is binding for BaFin to ensure consistent application.\n\nThe guidance notice applies to all primary and reinsurance undertakings domiciled in Germany or a third country subject to the Solvency II supervisory system, as well as to certain groups. It states that undertakings must at all times hold sufficient eligible own funds to cover the Solvency Capital Requirement (SCR) and Minimum Capital Requirement (MCR). This necessitates continuous monitoring, oversight of SCR/MCR movements, and active own funds management, including the development of procedures, processes, and plans, and their written documentation.\n\nUndertakings must ensure that own funds items meet the requirements of their respective quality class, both at issuance and on an ongoing basis. The impact of losses on eligible own funds due to deduction limits must be considered in capital management deliberations. Capital management guidelines, which must be reviewed at least annually and approved by the management board, must regulate the procedures for ensuring own funds classification and for procuring new own funds."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_02_2025_Anforderungen_an_die_Geschaeftsorganisation_in_Bezug_auf_Eigenmittel_va.html",
-        "imp": "medium"
-      }
-    ],
     "marisk": [
       {
         "d": "30.06.2026",
@@ -8615,6 +8634,14 @@
       "auth": "ESMA",
       "src": "esma.europa.eu",
       "url": "https://www.esma.europa.eu/sites/default/files/2026-11/ESMA30-1837799092-658_Carlo_Comporti_s_keynote_speech_at_the_13th_Joint_ESAs_Consumer_Protection_Day.pdf",
+      "cat": "rede"
+    },
+    {
+      "d": "04.11.2026",
+      "ti": "From ambition to delivery: AMLA Executive Board Member Derville Rowland speaks at AFME’s European AML Conference",
+      "auth": "AMLA",
+      "src": "amla.europa.eu",
+      "url": "https://www.amla.europa.eu/news-media/news-articles/amla-executive-board-member-derville-rowland-speaks-afmes-european-aml-conference_en",
       "cat": "rede"
     },
     {
