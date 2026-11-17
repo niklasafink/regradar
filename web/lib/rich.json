@@ -2545,6 +2545,163 @@
    "tokens": 8092
   }
  },
+ "solvency-2026-11-17-aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review": {
+  "h1": "BaFin Aufsichtsmitteilung 09/2026 (VA): Weitere Änderungen aus dem Solvency-II-Review",
+  "seo_title": "Solvency-II-Review: BaFin Aufsichtsmitteilung 09/2026",
+  "meta_description": "BaFin konkretisiert ab 17.11.2026 Proportionalität, Berichtspflichten und makroprudenzielle Anforderungen aus dem Solvency-II-Review. Gültig bis 31.12.2027.",
+  "lead": "Die BaFin ergänzt mit der Aufsichtsmitteilung 09/2026 (VA) die frühere Mitteilung 04/2026 um weitere Themenfelder aus dem Solvency-II-Review. Die Mitteilung gilt ab Veröffentlichung am 17.11.2026 bis zum 31.12.2027.",
+  "aka": [
+   "Solvency II Review BaFin 2026",
+   "Aufsichtsmitteilung VA 09/2026",
+   "BaFin Solvency II Proportionalität",
+   "ORSA Solvency-II-Review",
+   "RSR SFCR Einreichungsfristen 2027"
+  ],
+  "summary": "Die BaFin konkretisiert ihre Verwaltungspraxis zu Proportionalitätsmaßnahmen, narrativem Berichtswesen (RSR, SFCR, ORSA) und makroprudenziellen Instrumenten im Zuge des Solvency-II-Reviews. Kerndaten: Kombinationsverbot für interne Revision ab 30.01.2027, maschinenlesbare Berichte ab 30.01.2027, LRMP-Pflicht für alle betroffenen Unternehmen.",
+  "overview": [
+   "Die Aufsichtsmitteilung 09/2026 (VA) richtet sich an alle inländischen und drittstaatlichen Erst- und Rückversicherungsunternehmen, die unter das Solvency-II-Regime fallen. Ausgenommen sind Sterbekassen, Pensionskassen, kleine Versicherungsunternehmen sowie bestimmte Rückversicherungsunternehmen. Die Mitteilung ergänzt die Aufsichtsmitteilung 04/2026 (VA) um die Themenfelder Proportionalität, narratives Berichtswesen und makroprudenzielle Instrumente.",
+   "Zentrale Handlungsfelder: Ab 30.01.2027 darf die interne Revisionsfunktion nicht mehr mit anderen Schlüsselfunktionen oder einer Geschäftsleitungsposition kombiniert werden. Die Übergangsregelung für Proportionalitätsmaßnahmen läuft bis spätestens 30.01.2031, danach ist ein Anzeige- oder Genehmigungsverfahren zwingend. Narrative Berichte müssen ab 30.01.2027 maschinenlesbar eingereicht werden. Für den ORSA erwartet die BaFin eine aktive Auseinandersetzung mit den veränderten Säule-1-Anforderungen, insbesondere zur Auswirkung des Reviews auf SCR, versicherungstechnische Rückstellungen und Eigenmittel. Neu ist außerdem die Pflicht zur Erstellung eines Liquiditätsrisikomanagementplans (LRMP)."
+  ],
+  "facts": [
+   {
+    "label": "Veröffentlicht",
+    "value": "17.11.2026"
+   },
+   {
+    "label": "Gültig bis",
+    "value": "31.12.2027"
+   },
+   {
+    "label": "Anwendungsbereich",
+    "value": "Erst- und Rückversicherungsunternehmen (Solvency II), nicht Sterbekassen, Pensionskassen, kleine VU"
+   },
+   {
+    "label": "Kombinationsverbot interne Revision",
+    "value": "Ab 30.01.2027 keine Kombination mit anderen Schlüsselfunktionen oder Geschäftsleitung"
+   },
+   {
+    "label": "Maschinenlesbare Berichte",
+    "value": "RSR, SFCR, ORSA-Bericht ab 30.01.2027 maschinenlesbar einzureichen"
+   },
+   {
+    "label": "Übergangsregel Proportionalität endet",
+    "value": "Spätestens 30.01.2031"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Erstversicherer",
+    "note": "Vollständig betroffen, alle Themenfelder",
+    "detail": "Alle inländischen und drittstaatlichen Erstversicherungsunternehmen unter Solvency II. Ausgenommen: Sterbekassen, Pensionskassen, kleine VU (§ 211 VAG).",
+    "status": "betroffen"
+   },
+   {
+    "name": "Rückversicherer",
+    "note": "Betroffen, soweit kein Ausnahmetatbestand",
+    "detail": "Rückversicherungsunternehmen sind betroffen, sofern sie nicht die Voraussetzungen nach § 165 Abs. 1 VAG oder § 343 VAG erfüllen.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Versicherungsgruppen",
+    "note": "LRMP-Pflicht und ORSA-Anforderungen",
+    "detail": "Versicherungsgruppen unterliegen der LRMP-Pflicht und den erweiterten makroprudenziellen ORSA-Anforderungen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance / Risiko",
+    "note": "ORSA, Berichtspflichten, Kombinationsverbot",
+    "detail": "Compliance- und Risikofunktionen müssen die neuen ORSA-Inhalte, die maschinenlesbare Einreichung und das Kombinationsverbot für die interne Revision umsetzen.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Ab 30.01.2027",
+    "title": "Kombinationsverbot interne Revision",
+    "text": "Die interne Revisionsfunktion darf ab 30.01.2027 nicht mehr mit anderen Schlüsselfunktionen oder einer Geschäftsleitungsposition kombiniert werden. Die bisherige DVO-Grundlage entfällt. Die Übergangsregelung für Proportionalitätsmaßnahmen greift hier nicht."
+   },
+   {
+    "ref": "Ab 30.01.2027",
+    "title": "Maschinenlesbare narrative Berichte",
+    "text": "RSR, SFCR und ORSA-Bericht müssen ab 30.01.2027 in maschinenlesbarer elektronischer Form eingereicht werden. Berichte ohne Suchfunktion gelten als nicht ordnungsgemäß eingereicht. Verlängerte Einreichungsfristen (18 Wochen) gelten bereits für Berichte, die nach dem 29.01.2027 eingereicht werden."
+   },
+   {
+    "ref": "Bis 30.01.2031",
+    "title": "Übergangsregel Proportionalitätsmaßnahmen",
+    "text": "Bereits genutzte und der BaFin bekannte Proportionalitätsmaßnahmen können bis spätestens 30.01.2031 ohne weiteres Verfahren weitergeführt werden. Nach Ablauf ist ein Anzeige- oder Genehmigungsverfahren zwingend, sonst automatisch unzulässig."
+   },
+   {
+    "ref": "Ab GJ nach 31.12.2026",
+    "title": "Neue ORSA-Inhalte und LRMP-Pflicht",
+    "text": "ORSA-Berichte für Geschäftsjahre ab 01.01.2027 müssen Auswirkungen des Solvency-II-Reviews auf SCR, Rückstellungen und Eigenmittel analysieren. Neu: Liquiditätsrisikomanagementplan (LRMP) für alle betroffenen Unternehmen und Gruppen."
+   }
+  ],
+  "todos": [
+   "Kombinationsverbot für interne Revision prüfen: bestehende Doppelfunktionen bis 30.01.2027 auflösen",
+   "Technische Voraussetzungen für maschinenlesbare Einreichung von RSR, SFCR und ORSA-Bericht schaffen (Deadline 30.01.2027)",
+   "ORSA-Prozess um Analyse der Solvency-II-Review-Auswirkungen auf SCR, Rückstellungen und Eigenmittel erweitern",
+   "Status der Proportionalitätsmaßnahmen dokumentieren und Verfahren für Zeit nach 30.01.2031 vorbereiten",
+   "BaFin-Mitteilung zu LRMP und makroprudenziellen Anforderungen abwarten (angekündigt bis Ende November 2026)"
+  ],
+  "timeline": [
+   {
+    "date": "17.11.2026",
+    "label": "Mitteilung veröffentlicht",
+    "kind": "kern"
+   },
+   {
+    "date": "30.01.2027",
+    "label": "Kombinationsverbot in Kraft",
+    "kind": "frist"
+   },
+   {
+    "date": "30.01.2027",
+    "label": "Maschinenlesbare Berichte",
+    "kind": "frist"
+   },
+   {
+    "date": "31.12.2027",
+    "label": "Mitteilung läuft aus",
+    "kind": "schritt"
+   },
+   {
+    "date": "30.01.2031",
+    "label": "Ende Übergangsregel Proportionalität",
+    "kind": "frist"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Gilt die Übergangsregelung für Proportionalitätsmaßnahmen auch für die Kombination der internen Revision?",
+    "a": "Nein. Die Übergangsregelung erlaubt nur die Weiternutzung von Proportionalitätsmaßnahmen im Sinne der Solvency-II-Richtlinie. Das Kombinationsverbot für die interne Revision ist davon ausdrücklich ausgenommen und gilt ab 30.01.2027 uneingeschränkt."
+   },
+   {
+    "q": "Ab wann gelten die neuen ORSA-Inhalte?",
+    "a": "Die inhaltlich geänderten Anforderungen an den ORSA-Bericht gelten erstmalig für Geschäftsjahre, die nach dem 31.12.2026 beginnen. Für ORSA-Berichte, die nach dem 30.01.2027 fertiggestellt werden, erwartet die BaFin bereits Ausführungen zu den Auswirkungen des Solvency-II-Reviews."
+   },
+   {
+    "q": "Was passiert, wenn Proportionalitätsmaßnahmen nach dem 30.01.2031 ohne Verfahren weiter genutzt werden?",
+    "a": "Ohne fristgerechte Anzeige oder Genehmigung ist die weitere Anwendung automatisch unzulässig. Unternehmen müssen je nach Fallkonstellation ein Anzeige- oder Genehmigungsverfahren bei der BaFin durchlaufen."
+   },
+   {
+    "q": "Wann informiert die BaFin über individuelle LRMP- und makroprudenzielle Anforderungen?",
+    "a": "Die BaFin hat angekündigt, betroffene Unternehmen voraussichtlich bis Ende November 2026 zu informieren, welche von ihnen einen erweiterten LRMP oder vertiefte makroprudenzielle Analysen vorzunehmen haben."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Der vollständige Abschnitt zu Fragen und Antworten (Nr. 5 der Mitteilung) liegt nicht im Quelltext vor; weitere Detailanforderungen könnten dort enthalten sein.",
+   "Die finale Fassung der einschlägigen gesetzlichen Regelungen ist laut BaFin maßgeblich ab 30.01.2027; Änderungen bis dahin möglich.",
+   "Aufsichtsmitteilung 04/2026 (VA) als Vorgängerdokument nicht im Quelltext enthalten; Überschneidungen mit dortigen Regelungen nicht vollständig prüfbar."
+  ],
+  "meta": {
+   "generated": "2026-11-17",
+   "model": "sonnet",
+   "source": "HTML, 28335 Zeichen, gekürzt auf 12000",
+   "dropped": 0,
+   "tokens": 13240
+  }
+ },
  "taxonomy-2026-10-29-the-eba-advises-on-targeted-simplifications-to-taxonomy-disclosures": {
   "h1": "EBA empfiehlt gezielte Vereinfachungen bei Taxonomie-Offenlegungen (Art. 8 Taxonomie-VO)",
   "seo_title": "EBA: Vereinfachungen Taxonomie-Offenlegungen 2026",
