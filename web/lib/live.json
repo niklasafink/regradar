@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T10:19:55Z",
+  "generated_at": "2026-11-17T14:08:06Z",
   "updates": {
     "bcbs": [
       {
@@ -969,46 +969,26 @@
         "imp": "medium"
       }
     ],
-    "dgsd": [
-      {
-        "d": "16.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA supports further progress on the Banking Union, including on deposit insurance",
-          "en": "EBA supports further progress on the Banking Union, including on deposit insurance"
-        },
-        "sl": "eba-supports-further-progress-on-the-banking-union-including-on-deposit-insuranc",
-        "s": {
-          "de": "",
-          "en": ""
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-supports-further-progress-banking-union-including-deposit-insurance"
-      },
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA-Konsultation zur weiteren Verbesserung des Einlegerschutzes (DGS-Richtlinie)",
-          "en": "The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
-        },
-        "sl": "the-eba-consults-on-rules-to-further-improve-depositor-protection-under-the-revi",
-        "s": {
-          "de": "Die EBA hat vier Konsultationen zu Entwürfen von technischen Standards und Leitlinien veröffentlicht, die den Einlegerschutz gemäß der überarbeiteten Einlagensicherungssystem-Richtlinie (DGSD3) stärken sollen. Die Entwürfe umfassen Durchführungsstandards (ITS) zur Einlegerinformation, ITS zum Informationsaustausch zwischen Kreditinstituten, Einlagensicherungssystemen (DGS) und Behörden, Regulierungsstandards (RTS) zur Behandlung von Kundengeldern sowie Leitlinien zur Anlage von DGS-Mitteln.\n\nDie Regelungen betreffen alle Kreditinstitute und Einlagensicherungssysteme in der EU. Sie zielen darauf ab, die Transparenz für Einleger zu erhöhen, den Informationsaustausch bei Bankausfällen zu standardisieren, den Schutz von Kundengeldern zu vereinheitlichen und die effiziente Anlage von DGS-Mitteln sicherzustellen. Dies soll die finanzielle Stabilität wahren und die Harmonisierung des Einlegerschutzes in der EU vorantreiben.\n\nDie Konsultationsfrist für alle vier Entwürfe endet am 23. Oktober 2026. Eine öffentliche Anhörung findet am 24. September 2026 statt, Anmeldeschluss hierfür ist der 21. September 2026.",
-          "en": "The EBA has launched four consultations on draft technical standards and guidelines aimed at strengthening depositor protection under the revised Deposit Guarantee Schemes Directive (DGSD3). The drafts include Implementing Technical Standards (ITS) on depositor information, ITS on information exchange between credit institutions, Deposit Guarantee Schemes (DGSs) and authorities, Regulatory Technical Standards (RTS) on the treatment of client funds, and Guidelines on how DGSs should invest their funds.\n\nThese regulations apply to all credit institutions and DGSs in the EU. They aim to enhance transparency for depositors, standardize information exchange in bank failure scenarios, unify the protection of client funds, and ensure the efficient investment of DGS funds. This is intended to preserve financial stability and advance the harmonization of depositor protection across the EU.\n\nThe consultation period for all four drafts closes on 23 October 2026. A public hearing will take place on 24 September 2026, with the registration deadline being 21 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
-        "imp": "medium"
-      }
-    ],
     "dsgvo": [
+      {
+        "d": "17.11.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "Judgment of the Court of Justice in Case C-698/23 P EDPS v Parliament and Council",
+          "en": "Judgment of the Court of Justice in Case C-698/23 P EDPS v Parliament and Council"
+        },
+        "sl": "judgment-of-the-court-of-justice-in-case-c-698-23-p-edps-v-parliament-and-counci",
+        "s": {
+          "de": "Processing of personal data by Europol: the Court of Justice confirms that the action brought by the European Data Protection Supervisor (EDPS) against the amendment of the Europol regulation is inadmissible",
+          "en": "Processing of personal data by Europol: the Court of Justice confirms that the action brought by the European Data Protection Supervisor (EDPS) against the amendment of the Europol regulation is inadmissible"
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-11/cp260165de.pdf",
+        "refnum": "C-698/23"
+      },
       {
         "d": "16.11.2026",
         "t": {
@@ -1103,6 +1083,45 @@
         "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
         "imp": "medium",
         "refnum": "C-526/24"
+      }
+    ],
+    "dgsd": [
+      {
+        "d": "16.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA supports further progress on the Banking Union, including on deposit insurance",
+          "en": "EBA supports further progress on the Banking Union, including on deposit insurance"
+        },
+        "sl": "eba-supports-further-progress-on-the-banking-union-including-on-deposit-insuranc",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-supports-further-progress-banking-union-including-deposit-insurance"
+      },
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA-Konsultation zur weiteren Verbesserung des Einlegerschutzes (DGS-Richtlinie)",
+          "en": "The EBA consults on rules to further improve depositor protection under the revised Deposit Guarantee Schemes Directive"
+        },
+        "sl": "the-eba-consults-on-rules-to-further-improve-depositor-protection-under-the-revi",
+        "s": {
+          "de": "Die EBA hat vier Konsultationen zu Entwürfen von technischen Standards und Leitlinien veröffentlicht, die den Einlegerschutz gemäß der überarbeiteten Einlagensicherungssystem-Richtlinie (DGSD3) stärken sollen. Die Entwürfe umfassen Durchführungsstandards (ITS) zur Einlegerinformation, ITS zum Informationsaustausch zwischen Kreditinstituten, Einlagensicherungssystemen (DGS) und Behörden, Regulierungsstandards (RTS) zur Behandlung von Kundengeldern sowie Leitlinien zur Anlage von DGS-Mitteln.\n\nDie Regelungen betreffen alle Kreditinstitute und Einlagensicherungssysteme in der EU. Sie zielen darauf ab, die Transparenz für Einleger zu erhöhen, den Informationsaustausch bei Bankausfällen zu standardisieren, den Schutz von Kundengeldern zu vereinheitlichen und die effiziente Anlage von DGS-Mitteln sicherzustellen. Dies soll die finanzielle Stabilität wahren und die Harmonisierung des Einlegerschutzes in der EU vorantreiben.\n\nDie Konsultationsfrist für alle vier Entwürfe endet am 23. Oktober 2026. Eine öffentliche Anhörung findet am 24. September 2026 statt, Anmeldeschluss hierfür ist der 21. September 2026.",
+          "en": "The EBA has launched four consultations on draft technical standards and guidelines aimed at strengthening depositor protection under the revised Deposit Guarantee Schemes Directive (DGSD3). The drafts include Implementing Technical Standards (ITS) on depositor information, ITS on information exchange between credit institutions, Deposit Guarantee Schemes (DGSs) and authorities, Regulatory Technical Standards (RTS) on the treatment of client funds, and Guidelines on how DGSs should invest their funds.\n\nThese regulations apply to all credit institutions and DGSs in the EU. They aim to enhance transparency for depositors, standardize information exchange in bank failure scenarios, unify the protection of client funds, and ensure the efficient investment of DGS funds. This is intended to preserve financial stability and advance the harmonization of depositor protection across the EU.\n\nThe consultation period for all four drafts closes on 23 October 2026. A public hearing will take place on 24 September 2026, with the registration deadline being 21 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-rules-further-improve-depositor-protection-under-revised-deposit-guarantee-schemes",
+        "imp": "medium"
       }
     ],
     "luaifm": [
