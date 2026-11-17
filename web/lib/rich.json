@@ -140,6 +140,120 @@
    "tokens": 8979
   }
  },
+ "aiact-2026-11-17-call-for-expression-of-interest-for-european-ai-providers": {
+  "h1": "KI-Anbieter-Aufruf der EU-Kommission für EDIH-Katalog (Call for Expression of Interest)",
+  "seo_title": "EU-Kommission: Call for AI-Anbieter 2026",
+  "meta_description": "Die EU-Kommission sucht bis 17.12.2026 bis zu 100 europäische KI-Anbieter für den EDIH-Katalog auf der AI-on-Demand-Plattform.",
+  "lead": "Das AI Office der EU-Kommission ruft europäische KI-Anbieter auf, marktreife Lösungen für KMU einzureichen. Bewerbungen sind bis 17.12.2026 möglich.",
+  "aka": [
+   "Call for Expression of Interest AI",
+   "EDIH KI-Katalog",
+   "AI-on-Demand Platform",
+   "EDIH Ready",
+   "Apply AI Strategy"
+  ],
+  "summary": "Das AI Office der EU-Kommission sucht bis zu 100 europäische KI-Anbieter mit marktreifen Lösungen für KMU. Ausgewählte Lösungen werden als 'EDIH Ready' in einem Katalog auf der AI-on-Demand-Plattform gelistet und über das EDIH-Netzwerk in Unternehmen vermittelt. Bewerbungsschluss ist der 17.12.2026 um 17:00 Uhr MEZ.",
+  "overview": [
+   "Das AI Office der Europäischen Kommission veröffentlicht einen Call for Expression of Interest für europäische KI-Anbieter. Ziel ist ein Katalog marktreifer KI-Lösungen, die kleine und mittlere Unternehmen über das Netz der European Digital Innovation Hubs (EDIHs) einsetzen können. EDIHs fungieren als Vermittler zwischen Anbietern und KMU-Nutzern.",
+   "Ausgewählte Lösungen erhalten das Label 'EDIH Ready' im Business Navigator der AI-on-Demand-Plattform. Der Aufruf ist auf maximal 100 Anbieter begrenzt und kann vor dem offiziellen Fristende schließen, sobald diese Zahl erreicht ist. Folgemaßnahmen wie Informationssessions mit EDIHs sind für das erste Quartal 2027 geplant."
+  ],
+  "facts": [
+   {
+    "label": "Frist",
+    "value": "17.12.2026, 17:00 Uhr MEZ"
+   },
+   {
+    "label": "Max. Teilnehmer",
+    "value": "100 KI-Anbieter"
+   },
+   {
+    "label": "Zielgruppe Anbieter",
+    "value": "Europäische KI-Anbieter mit marktreifen Lösungen für KMU"
+   },
+   {
+    "label": "Plattform",
+    "value": "AI-on-Demand Platform (Label: EDIH Ready)"
+   },
+   {
+    "label": "Kontakt",
+    "value": "CNECT-DIH@ec.europa.eu"
+   },
+   {
+    "label": "Sprache Einreichung",
+    "value": "Englisch (EU-Survey)"
+   }
+  ],
+  "audience": [
+   {
+    "name": "KI-Anbieter",
+    "note": "Bewerbung als EDIH-Ready-Anbieter möglich",
+    "detail": "Europäische Unternehmen (Sitz in EU-Mitgliedstaat oder assoziiertem Digital-Europe-Staat) mit marktreifen KI-Lösungen für KMU können sich bis 17.12.2026 bewerben. Proof-of-Concept-Lösungen sind nicht zugelassen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Finanzinstitute",
+    "note": "Kein direkter Regulierungsauftrag",
+    "detail": "Finanzinstitute sind nicht als Zielgruppe dieser Initiative adressiert. Eine Handlungspflicht ergibt sich nicht. Allenfalls als KMU-Kreditgeber oder Digitalinvestor mittelbar relevant.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Apply AI Strategy",
+    "title": "EDIH-Netzwerk als KI-Vermittler",
+    "text": "Die EDIHs werden als 'Experience Centres for AI' neu positioniert und sollen KI-Anbieter mit KMU zusammenbringen. Ausgewählte Lösungen erscheinen ab voraussichtlich Ende Januar 2027 im Business Navigator."
+   },
+   {
+    "ref": "",
+    "title": "Katalog-Modell 'EDIH Ready'",
+    "text": "Erstmals wird ein kuratierter Katalog europäischer KI-Lösungen auf der AI-on-Demand-Plattform aufgebaut. Die Kommission behält sich das Recht vor, nicht mehr geeignete Lösungen zu entfernen."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob eigene KI-Produkte oder Beteiligungen die Kriterien erfüllen (Marktreihe, europäischer Sitz).",
+   "Bei Interesse: FAQs auf der Angebotsseite konsultieren und EU-Survey auf Englisch bis 17.12.2026 einreichen.",
+   "Frist im Compliance-Kalender vermerken: Aufruf schließt ggf. vor 17.12.2026 bei 100 Einreichungen."
+  ],
+  "timeline": [
+   {
+    "date": "17.11.2026",
+    "label": "Aufruf veröffentlicht",
+    "kind": "schritt"
+   },
+   {
+    "date": "17.12.2026",
+    "label": "Einreichungsfrist (17:00 MEZ)",
+    "kind": "frist"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Müssen Finanzinstitute auf diesen Aufruf reagieren?",
+    "a": "Nein. Der Aufruf richtet sich an KI-Anbieter, nicht an regulierte Finanzinstitute. Eine aufsichtsrechtliche Handlungspflicht besteht nicht."
+   },
+   {
+    "q": "Welche Länder gelten als 'europäisch'?",
+    "a": "Alle 27 EU-Mitgliedstaaten sowie mit dem Digital Europe Programme assoziierte Staaten, darunter Norwegen, Schweiz, Ukraine und weitere. Maßgeblich ist der Firmensitz."
+   },
+   {
+    "q": "Was passiert nach der Einreichung?",
+    "a": "Die Kommission teilt geeignete Kandidaten mit dem DeployAI-Konsortium. Das Onboarding auf die AI-on-Demand-Plattform ist für die zweite Januarhälfte 2027 geplant. EDIH-Sessions folgen in Q1 2027."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Kein konkretes Datum für den Start der EDIH-Informationssessions in Q1 2027 genannt.",
+   "Ob und wann ein Folgeaufruf kommt, ist laut Quelle nicht entschieden.",
+   "Für Finanzinstitute ohne eigenes KI-Produktgeschäft keine erkennbare Relevanz."
+  ],
+  "meta": {
+   "generated": "2026-11-17",
+   "model": "sonnet",
+   "source": "HTML, 8583 Zeichen, gekürzt auf 8583",
+   "dropped": 2,
+   "tokens": 9163
+  }
+ },
  "amla-2026-10-01-leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben": {
   "h1": "BaFin stellt Rundschreiben zu ESA- und AMLA-Leitlinien ein (ab 01.10.2026)",
   "seo_title": "BaFin: Keine Rundschreiben mehr zu ESA- und AMLA-Leitlinien",
