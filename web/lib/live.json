@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T21:17:00Z",
+  "generated_at": "2026-11-18T09:21:34Z",
   "updates": {
     "bcbs": [
       {
@@ -678,6 +678,312 @@
         "refnum": "Konsultation 04/2020"
       }
     ],
+    "brrd": [
+      {
+        "d": "18.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "Ex-ante publicity of a negotiated procedure for the award of a low or middle value contract",
+          "en": "Ex-ante publicity of a negotiated procedure for the award of a low or middle value contract"
+        },
+        "sl": "ex-ante-publicity-of-a-negotiated-procedure-for-the-award-of-a-low-or-middle-val",
+        "s": {
+          "de": "I. General information 1. What is this publicity about? Economic operators interested in the subject of this publicity should note that this is not a call for tenders . It is a publication to announce the Contracting authority’s intention to launch a negotiated procedure for the …",
+          "en": "I. General information 1. What is this publicity about? Economic operators interested in the subject of this publicity should note that this is not a call for tenders . It is a publication to announce the Contracting authority’s intention to launch a negotiated procedure for the …"
+        },
+        "url": "https://www.srb.europa.eu/en/content/ex-ante-publicity-negotiated-procedure-award-low-or-middle-value-contract"
+      },
+      {
+        "d": "09.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB-Bericht an die Eurogruppe: Risiken und Krisenvorsorge im Bankensektor",
+          "en": "SRB Bi-annual Reporting Note to Eurogroup: Risks and Crisis Preparedness in Banking Sector"
+        },
+        "sl": "srb-bi-annual-reporting-note-to-eurogroup-november-2026",
+        "s": {
+          "de": "Der Einheitliche Abwicklungsausschuss (SRB) hat der Eurogruppe seine halbjährliche Berichtsnote vorgelegt. Darin werden die sich entwickelnden Risiken für den europäischen Bankensektor hervorgehoben, darunter geopolitische Spannungen, Marktvolatilität und operationelle Bedrohungen.\n\nDer Bericht betont die Notwendigkeit, die Widerstandsfähigkeit und Krisenvorsorge weiter zu stärken. Obwohl Fortschritte bei der Stärkung der Abwicklungsfähigkeit erzielt wurden, bestehen weiterhin Lücken im Rahmen, insbesondere bei Liquiditäts- und Solvenzrisiken. Das bevorstehende Bankenpaket der Europäischen Kommission wird als Chance gesehen, diese Probleme anzugehen und den Krisenmanagementrahmen zu vervollständigen.\n\nDie Vorsorge muss über traditionelle Finanzrisiken hinausgehen und auch Cyberangriffe sowie IKT-Ausfälle umfassen, die die Kontinuität wesentlicher Bankdienstleistungen gefährden können. Der SRB arbeitet eng mit dem SSM und nationalen Behörden zusammen, um seine Bereitschaft für solche Szenarien zu verbessern. Dieser Bericht wird zweimal jährlich vorgelegt.",
+          "en": "The Single Resolution Board (SRB) has presented its bi-annual reporting note to the Eurogroup, highlighting evolving risks to the European banking sector, including geopolitical tensions, market volatility, and operational threats.\n\nThe report emphasizes the need to further strengthen resilience and crisis preparedness. While progress has been made in enhancing resolvability, gaps remain in the framework, particularly concerning liquidity and solvency risks. The European Commission's forthcoming banking package is seen as an opportunity to address these issues and complete the crisis management framework.\n\nPreparedness must extend beyond traditional financial risks to include cyber-attacks and ICT disruptions that can threaten the continuity of essential banking services. The SRB is working closely with the SSM and national authorities to enhance its readiness for such scenarios. This report is submitted twice a year."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-bi-annual-reporting-note-eurogroup-november-2026",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Klassifizierung von Tier-2-Emissionen bei Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung (Q&A 2026_7797)",
+          "en": "Classification of Tier 2 Subordinated Issuances Losing MREL Computability Due to Early Call (Q&A 2026_7797)"
+        },
+        "sl": "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr",
+        "s": {
+          "de": "Die EBA präzisiert die Klassifizierung von nachrangigen Tier-2-Emissionen im Rahmen des BRRD-Reportings, wenn diese ihre MREL-Anrechenbarkeit aufgrund einer vorzeitigen Rückzahlung verlieren, die bereits angekündigt, aber noch nicht ausgeführt wurde.\n\nEin Instrument, für das eine vorzeitige Rückzahlung angekündigt wurde, soll weiterhin in Zeile r0531 des Templates Z 02.00 als Teil der als Eigenmittel anerkannten nachrangigen Verbindlichkeiten ausgewiesen werden. Die Abzugsfähigkeit vom Tier-2-Kapital ändert nichts an der Einstufung des Instruments selbst. Die insolvenzrechtliche Rangfolge des Instruments bleibt unverändert und richtet sich nach dem nationalen Insolvenzrecht.\n\nIm Template Z 12.00 ist der Betrag, der die Bedingungen für die MREL-Anrechenbarkeit erfüllt, nach dem Abzug aufgrund der angekündigten Rückzahlung als Null auszuweisen.",
+          "en": "The EBA clarifies the classification of Tier 2 subordinated issuances for BRRD reporting purposes when they lose their MREL computability due to an early call that has been announced but not yet executed.\n\nAn instrument for which an early redemption has been announced should continue to be reported in row r0531 of template Z 02.00 as part of subordinated liabilities recognized as own funds. The deduction from Tier 2 capital does not change the classification of the instrument itself. The insolvency ranking of the instrument remains unchanged and is determined by national insolvency law.\n\nIn template Z 12.00, the amount meeting the conditions for MREL eligibility shall be reported as zero after the deduction following the announced redemption."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7797",
+        "imp": "medium"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 (Q&A 2026_7815)",
+          "en": "Reporting of Counterparty Identifiers in Templates Z 12.00 and Z 14.00 (Q&A 2026_7815)"
+        },
+        "sl": "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and",
+        "s": {
+          "de": "Die EBA hat eine Klarstellung zur Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 der ITS zum Abwicklungsplan-Reporting veröffentlicht. Es wird präzisiert, wie Institute vorgehen sollen, wenn Gegenparteien unbekannt sind oder Daten auf aggregierter Ebene gemeldet werden müssen.\n\nInstitute müssen einen internen Identifikator verwenden, wenn kein LEI oder MFI-Code verfügbar ist. Dies gilt auch für aggregierte Meldungen, wobei für jede aggregierte Gruppe ein konsistenter interner Identifikator zuzuweisen ist. Für Mitarbeiterverbindlichkeiten sind separate Identifikatoren zu nutzen, wenn diese nach Typ und Insolvenzrang getrennt aggregiert werden.\n\nDie Antwort stellt klar, dass Platzhalter wie „0000“ oder „Not applicable“ nicht verwendet werden sollen. Stattdessen ist ein interner Identifikator zu vergeben und der entsprechende Identifikatortyp anzugeben. Dies soll divergierende Meldepraktiken beenden und die Datenqualität verbessern.",
+          "en": "The EBA has published a clarification on the reporting of counterparty identifiers in templates Z 12.00 and Z 14.00 of the ITS on Resolution Planning Reporting. It specifies how institutions should proceed when counterparties are unknown or data needs to be reported at an aggregated level.\n\nInstitutions must use an internal identifier when an LEI or MFI code is not available. This also applies to aggregated reporting, where a consistent internal identifier must be assigned to each aggregated group. For employee liabilities, separate identifiers are to be used if they are aggregated separately by type and insolvency ranking.\n\nThe answer clarifies that placeholders such as “0000” or “Not applicable” should not be used. Instead, an internal identifier must be assigned and the corresponding identifier type indicated. This aims to end divergent reporting practices and improve data quality."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7815",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu Meldung Z 09.01 (FMI Services) im Abwicklungsplanungs-Reporting (2026_7823)",
+          "en": "EBA Q&A on Reporting Template Z 09.01 (FMI Services) in Resolution Planning Reporting (2026_7823)"
+        },
+        "sl": "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii",
+        "s": {
+          "de": "Die EBA hat eine Klarstellung zur Meldung Z 09.01 (FMI Services) im Rahmen des ITS zum Abwicklungsplanungs-Reporting veröffentlicht. Konkret geht es um die Spalte 0110 („Criticality assessment by provider“), die laut Anhang II leer bleiben darf, wenn in Spalte 0090 „Direct“ angegeben wird.\n\nDie technische Taxonomie erlaubt es jedoch nicht, Spalte 0110 leer zu lassen, da sie Teil des Primärschlüssels ist. Die EBA stellt klar, dass Spalte 0110 weiterhin Teil des Primärschlüssels bleibt und daher nicht null sein darf. Stattdessen ist „Not applicable“ einzutragen, wenn in Spalte 0090 „Direct“ gemeldet wird. Die Anweisungen werden entsprechend angepasst.\n\nDiese Regelung ist relevant für Kreditinstitute, die Abwicklungsplanungs-Reportings gemäß der BRRD erstellen. Sie müssen sicherstellen, dass ihre Meldungen der technischen Taxonomie entsprechen und in Spalte 0110 „Not applicable“ eintragen, wenn die Bedingung in Spalte 0090 erfüllt ist, um Validierungsfehler zu vermeiden.",
+          "en": "The EBA has published a clarification regarding template Z 09.01 (FMI Services) within the ITS on Resolution Planning Reporting. Specifically, it addresses column 0110 (“Criticality assessment by provider”), which, according to Annex II, may be left blank when 'Direct' is reported in column 0090.\n\nHowever, the technical taxonomy does not permit column 0110 to be left blank as it is part of the primary key. The EBA clarifies that column 0110 will remain part of the primary key and therefore cannot be reported as null. Instead, 'Not applicable' shall be reported when 'Direct' is indicated in column 0090. The instructions will be amended accordingly.\n\nThis ruling is relevant for credit institutions preparing resolution planning reports under the BRRD. They must ensure their reports comply with the technical taxonomy and enter 'Not applicable' in column 0110 when the condition in column 0090 is met, to avoid validation errors."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7823",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA präzisiert Meldepflichten für FMI-Dienstleistungen (Q&A 2026_7824)",
+          "en": "EBA clarifies reporting requirements for FMI services (Q&A 2026_7824)"
+        },
+        "sl": "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia",
+        "s": {
+          "de": "Die EBA präzisiert die Auslegung der Spalten 0210 und 0220 der Vorlage Z09.01 (FMI Services – Providers and Users) für das BRRD-Reporting. Die Meldung von Dienstleistungen in dieser Vorlage ist auf solche beschränkt, die für die vertragliche Beziehung zum Zugang oder zur Funktion einer Finanzmarktinfrastruktur (FMI) relevant sind.\n\nDies umfasst auch Dienstleistungen, die den direkten oder indirekten Zugang zur FMI unterstützen. Allgemeine kommerzielle, operative oder konzerninterne Dienstleistungen, die mit einem Intermediär ausgetauscht werden und nicht mit der FMI-Beziehung zusammenhängen, sollen nicht gemeldet werden. Dies betrifft Kreditinstitute, die unter die BRRD-Berichtspflicht fallen.\n\nDie Klarstellung hilft den meldenden Instituten, den Umfang der zu berichtenden Dienstleistungen korrekt abzugrenzen und unnötige Meldungen zu vermeiden. Die Antwort wurde von der EBA erstellt und am 09.10.2026 veröffentlicht.",
+          "en": "The EBA clarifies the interpretation of columns 0210 and 0220 of template Z09.01 (FMI Services – Providers and Users) for BRRD reporting. The reporting of services in this template is limited to those relevant to the contractual relationship governing access to, or the functioning of, a Financial Market Infrastructure (FMI).\n\nThis includes services supporting direct or indirect access to the FMI. General commercial, operational, or intragroup services exchanged with an intermediary that are unrelated to the FMI relationship should not be reported. This applies to credit institutions subject to BRRD reporting requirements.\n\nThe clarification helps reporting institutions correctly define the scope of services to be reported and avoid unnecessary submissions. The answer was prepared by the EBA and published on 09.10.2026."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7824",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA-Klarstellung zur Meldung von Vertrags-IDs bei eigenen Vermögenswerten (Q&A 2026_7844)",
+          "en": "EBA Clarification on Reporting Contract IDs for Owned Assets (Q&A 2026_7844)"
+        },
+        "sl": "2026-7844-reporting-template-resol-2-z-08-02",
+        "s": {
+          "de": "Die EBA präzisiert die Meldung von Vertrags-IDs im Rahmen des Abwicklungsplanungs-Reportings (RESOL 2 – Z 08.02). Wenn ein Vermögenswert im Eigentum des Instituts steht und keinem vertraglichen Arrangement unterliegt, ist in Feld c0080 („Contract ID“) der Wert „Not applicable“ anzugeben.\n\nDiese Klarstellung betrifft Kreditinstitute, die gemäß der BRRD und der ITS zur Abwicklungsplanung berichten müssen. Sie löst ein technisches Problem bei der Datenmeldung, da die Spalte „Contract ID“ als Primärschlüssel definiert ist, aber bei eigenen Vermögenswerten keine Vertrags-ID existiert.\n\nDie EBA wird die entsprechenden Anweisungen bei nächster Gelegenheit anpassen, um diese Handhabung zu verdeutlichen.",
+          "en": "The EBA clarifies the reporting of contract IDs within the resolution planning reporting (RESOL 2 – Z 08.02). If an asset is owned by the institution and is not governed by a contractual arrangement, “Not applicable” shall be reported in field c0080 (“Contract ID”).\n\nThis clarification affects credit institutions that are required to report under BRRD and the ITS on resolution planning. It resolves a technical issue in data reporting, as the “Contract ID” column is defined as a primary key, but no contract ID exists for owned assets.\n\nThe EBA will amend the relevant instructions at the next available opportunity to clarify this treatment."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7844",
+        "imp": "low"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Definition der Substituierbarkeit von CCPs und Meldung alternativer Anbieter (RESOL II) (Q&A 2026_7912)",
+          "en": "Definition of “Substitutability” of CCPs and the connected reporting of “Alternative Providers” (RESOL II) (Q&A 2026_7912)"
+        },
+        "sl": "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of",
+        "s": {
+          "de": "Die EBA präzisiert die Definition der „Substituierbarkeit“ von Zentralen Gegenparteien (CCPs) und die Meldung von „alternativen Anbietern“ für das Template Z 09.04 (RESOL II). Die Substituierbarkeit ist im Hinblick auf die fortgesetzte Bereitstellung des Clearing-Dienstes für den in Spalte 0020 gemeldeten Produkttyp zu beurteilen. Dabei muss der alternative Anbieter nicht denselben Handelsplatz oder Markt bedienen wie die ursprüngliche CCP.\n\nEin alternativer Anbieter kann eine andere CCP oder ein Intermediär, einschließlich eines Brokers, sein, sofern das meldende Institut zum Meldezeitpunkt eine entsprechende vertragliche Beziehung zu diesem Anbieter hat und die Vereinbarung die Fortsetzung der Clearing-Aktivität innerhalb eines angemessenen Zeitrahmens nach einem Abwicklungsereignis ermöglichen würde. Dies kann auch die Umleitung der Clearing-Aktivität über eine alternative Marktinfrastruktur umfassen. Spalte 0040 soll den FMI oder Intermediär identifizieren, der den alternativen Anbieter des Clearing-Dienstes darstellt oder Zugang dazu bietet, nicht alle beteiligten FMIs der Wertschöpfungskette.\n\nDie Nutzung eines anderen Handelsplatzes oder Marktes schließt eine Alternative nicht aus dem Anwendungsbereich von Z 09.04 aus. Rein hypothetische Alternativen, für die zum Meldezeitpunkt keine vertragliche Beziehung besteht, sind jedoch nicht als Ersatzanbieter zu melden. Die EBA beantwortet damit eine Frage zur Auslegung der BRRD-Berichterstattung gemäß Artikel 11 Absatz 3 und der ITS zur Abwicklungsplanungsberichterstattung (Verordnung (EU) 2025/2303, Artikel 3 Absatz 1).",
+          "en": "The EBA clarifies the definition of “substitutability” of Central Counterparties (CCPs) and the reporting of “alternative providers” for template Z 09.04 (RESOL II). Substitutability must be assessed in relation to the continued provision of the clearing service for the product type reported in column 0020. The alternative provider does not have to serve the same trading venue or market as the original CCP.\n\nAn alternative provider can be another CCP or an intermediary, including a broker, provided that the reporting institution has a relevant contractual relationship with that provider at the reporting date and the arrangement would enable the relevant clearing activity to be continued within a reasonable timeframe following a resolution event. This may include rerouting clearing activity through alternative market infrastructure. Column 0040 should identify the FMI or intermediary that constitutes the alternative provider of, or provides access to, the substitute clearing service, not all FMIs involved in the value chain.\n\nThe use of a different trading venue or market does not in itself exclude an alternative from the scope of Z 09.04. However, purely hypothetical alternatives for which the required contractual relationship does not exist at the reporting date are not to be reported as substitute providers. The EBA thus answers a question on the interpretation of BRRD reporting according to Article 11(3) and the ITS on Resolution Planning Reporting (Regulation (EU) 2025/2303, Article 3(1))."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7912",
+        "imp": "medium"
+      },
+      {
+        "d": "07.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB veröffentlicht Konsultationsliste und vereinfacht Anfragen ab 2027",
+          "en": "SRB publishes list of consultations and simplifies requests from 2027"
+        },
+        "sl": "srb-publishes-the-list-of-consultations-and-simplifies-its-requests-to-the-indus",
+        "s": {
+          "de": "Der Single Resolution Board (SRB) hat seine Liste der Konsultationen und Anfragen an die Industrie für 2027 veröffentlicht. Diese Liste umfasst erwartete Konsultationen, Datenanfragen und einzureichende Unterlagen, die sich aus EU-Rechtsakten, den SRB Expectations for Banks (EfB) und der Verlagerung hin zu bankengesteuerten Tests und Abwicklungsfähigkeitsbewertungen ergeben.\n\nAb 2027 führt der SRB eine Vereinfachung ein, indem er von jährlichen Anfragen zu einem dreijährigen Einreichungszyklus für bankspezifische Unterlagen übergeht. Dies gilt, wenn keine wesentlichen Abwicklungsbedenken bestehen, und soll den Verwaltungsaufwand reduzieren. Zudem hat der SRB die vierteljährliche Bestätigung der MREL-Berechtigung von gemeldeten Verbindlichkeiten mit sofortiger Wirkung eingestellt.\n\nDiese Änderungen sollen die Belastung für den Bankensektor verringern und gleichzeitig die Abwicklungsfähigkeit aufrechterhalten. Banken, die eine konstant zufriedenstellende Abwicklungsleistung zeigen, können eine Reduzierung der jährlichen Anfragen um bis zu einem Drittel erwarten. Individuelle Anforderungen werden den Banken über Prioritätsschreiben mitgeteilt.",
+          "en": "The Single Resolution Board (SRB) has published its list of consultations and requests to the industry for 2027. This list includes expected consultations, data requests, and deliverables stemming from EU legal acts, the SRB Expectations for Banks (EfB), and the ongoing shift towards bank-led testing and resolvability assessments.\n\nFrom 2027, the SRB will introduce a simplification by transitioning from annual requests to a three-year submission cycle for bank-specific deliverables. This change applies where no material resolvability concerns exist and aims to reduce administrative burden. Additionally, the SRB has immediately discontinued the quarterly Sign-off form on MREL eligibility of reported liabilities.\n\nThese changes are intended to ease the burden on the banking sector while maintaining resolvability. Banks demonstrating consistently satisfactory resolvability performance can expect a reduction in annual requests by up to one-third. Individual requirements will be communicated to banks via priority letters."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-publishes-list-consultations-and-simplifies-its-requests-industry-2027",
+        "imp": "medium"
+      },
+      {
+        "d": "17.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB präzisiert Leitlinien zur Kommunikation von Banken in der Abwicklung",
+          "en": "SRB clarifies guidance on Banks’ Communication in Resolution"
+        },
+        "sl": "srb-clarifies-guidance-on-banks-communication",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) hat eine operative Leitlinie zur Kommunikation von Banken in der Abwicklung sowie ein ergänzendes Dokument zur Prüfung der Kommunikationsfähigkeit veröffentlicht. Diese Dokumente präzisieren die Kommunikationsdimension der „Expectations for Banks (EfB)“ des SRB und die Prüfung der Kommunikationsfähigkeiten im Rahmen der Abwicklungsplanung von Banken.\n\nDie Leitlinie legt keine neuen Anforderungen fest, sondern bietet zusätzliche operative Klarheit und ist auf die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zur Abwicklungsfähigkeit abgestimmt. Sie soll Banken dabei unterstützen, die Erwartungen des SRB zu erfüllen und eine effektive Krisenkommunikation sicherzustellen, insbesondere wenn eine Bank in Schwierigkeiten gerät oder wahrscheinlich in Schwierigkeiten geraten wird. Dies ist ein wesentliches Element der operativen Bereitschaft von Banken zur Umsetzung von Abwicklungsstrategien.\n\nBanken haben bis April 2028 Zeit, diese operativen Überlegungen zu berücksichtigen und gegebenenfalls in ihren Kommunikationsplänen widerzuspiegeln. Die Dokumente wurden nach einer öffentlichen Konsultation vom 17. Oktober bis 12. Dezember 2025 veröffentlicht.",
+          "en": "The Single Resolution Board (SRB) has published operational guidance for banks on communication in resolution, along with a supplementary document for testing communication capabilities. These documents clarify the communication dimension of the SRB's Expectations for Banks (EfB) and the testing of communication capabilities as part of banks' resolution preparedness.\n\nThe guidance does not set new requirements but provides additional operational clarity and aligns with the European Banking Authority's (EBA) guidelines on resolvability. It aims to help banks meet SRB expectations and ensure effective crisis communication, especially when a bank is failing or likely to fail. This is an essential element of banks' operational readiness to implement resolution strategies.\n\nBanks have until April 2028 to take these operational considerations into account and reflect them, where needed, in their communication plans. The documents were published following a public consultation held from October 17 to December 12, 2025."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication",
+        "imp": "high"
+      },
+      {
+        "d": "30.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "SRB veröffentlicht operative Leitlinie für Business Reorganisation Plan Analysis Reports (BRP AR)",
+          "en": "SRB publishes Operational Guidance on Business Reorganisation Plan Analysis Reports (BRP AR)"
+        },
+        "sl": "srb-publishes-a-renewed-operational-guidance-on-business-reorganisation-plan-ana",
+        "s": {
+          "de": "Das Single Resolution Board (SRB) hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen (Business Reorganisation Plan Analysis Reports – BRP AR) sowie eine ergänzende quantitative Vorlage veröffentlicht. Diese Dokumente bieten Banken einen konsolidierten, transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit, ohne neue Anforderungen einzuführen.\n\nDie Leitlinie ist eine Reaktion auf eine Branchenanfrage nach einer öffentlich zugänglichen, standardisierten Referenz zur Harmonisierung der Erwartungen und zur Verbesserung der Konsistenz bei der Umstrukturierungsplanung. Sie fasst bereits bestehende Erwartungen in einem kohärenten Rahmen zusammen und präzisiert diese. Die nicht-obligatorische quantitative Vorlage bietet praktische Unterstützung für Banken.\n\nDie Veröffentlichung erfolgte am 30.07.2026 und folgt einer öffentlichen Konsultation vom 03.02. bis 30.03.2026. Das SRB behält sich das Recht vor, je nach spezifischer Situation und im Einklang mit dem anwendbaren Rechtsrahmen von den beschriebenen Maßnahmen und Erwartungen abzuweichen.",
+          "en": "The Single Resolution Board (SRB) has published renewed operational guidance for banks on Business Reorganisation Plan Analysis Reports (BRP AR) along with a complementary quantitative template. These documents provide banks with a consolidated, transparent framework to strengthen their crisis preparedness and resolvability, without introducing new requirements.\n\nThe guidance responds to an industry request for a publicly available, standardized reference to harmonize expectations and enhance consistency in reorganization planning. It compiles and clarifies existing expectations within a single, coherent framework. The non-mandatory quantitative template offers practical support for banks.\n\nThe publication was released on 30.07.2026, following a public consultation from 03.02. to 30.03.2026. The SRB reserves the right to deviate from the actions and expectations described, depending on the specific situation and in line with the applicable legal framework."
+        },
+        "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "srb.europa.eu",
+        "ti": {
+          "de": "Banken erfüllen MREL-Ziele weiterhin zum Jahresende 2025",
+          "en": "Banks continue to meet their MREL targets at year end 2025"
+        },
+        "sl": "banks-continue-to-meet-their-mrel-targets-at-year-end-2025",
+        "s": {
+          "de": "Das SRB hat sein MREL Dashboard für das zweite Halbjahr 2025 veröffentlicht. Demnach erfüllen die Banken weiterhin ihre MREL-Ziele. Die durchschnittliche MREL-Zielvorgabe, einschließlich der kombinierten Kapitalpufferanforderung (CBR), lag für Abwicklungseinheiten bei 27,8 % des Gesamtrisikobetrags (TREA) und blieb damit gegenüber dem ersten Halbjahr 2025 stabil.\n\nDer aggregierte MREL-Fehlbetrag gegenüber den endgültigen Zielen der Banken, einschließlich des CBR, betrug 0,2 Mrd. EUR (weniger als 0,01 % des TREA). Dieser Fehlbetrag ist auf einige wenige Banken zurückzuführen, die sich noch in Übergangsfristen zur Erfüllung ihrer endgültigen Ziele befinden. Alle anderen Institute erfüllen ihre Anforderungen weiterhin.\n\nDas Dashboard verfolgt die Entwicklung der MREL-Ziele und -Fehlbeträge für externes und internes MREL sowie das Niveau und die Zusammensetzung der MREL-Instrumente. Es basiert auf den dem SRB gemeldeten Bankdaten und deckt die dem SRB unterstellten Einheiten ab.",
+          "en": "The SRB has published its MREL Dashboard for H2 2025, indicating that banks continue to meet their MREL targets. The average MREL final target, including the Combined Buffer Requirement (CBR), for resolution entities was 27.8% of the Total Risk Exposure Amount (TREA), remaining stable compared to H1 2025.\n\nThe aggregate MREL shortfall against banks’ final targets, including the CBR, stood at EUR 0.2 billion (less than 0.01% of TREA). This shortfall is attributed to a few banks under transitional periods to meet their final targets. All other entities continue to meet their requirements.\n\nThe dashboard tracks the evolution of MREL targets and shortfalls for external and internal MREL, as well as the level and composition of MREL instruments. It is based on bank data reported to the SRB and covers entities under the SRB’s remit."
+        },
+        "url": "https://www.srb.europa.eu/en/content/mrel-dashboard-h2-2025",
+        "imp": "low"
+      },
+      {
+        "d": "26.08.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Rundschreiben MaBail-in Version 5",
+          "en": "Consultation on Circular MaBail-in Version 5"
+        },
+        "sl": "rundschreiben-mabail-in-version-5-anschreiben-fuer-die-initiierung-der-oeffentli",
+        "s": {
+          "de": "Die BaFin hat den Entwurf der fünften Version des Rundschreibens zu den Mindestanforderungen zur Umsetzbarkeit eines Bail-in (MaBail-in) zur öffentlichen Konsultation gestellt. Dieses Rundschreiben aktualisiert die Vorgängerversion 02/2024.\n\nDas Rundschreiben richtet sich an Unternehmen, die nicht in den Zuständigkeitsbereich des Einheitlichen Abwicklungsausschusses (SRB) fallen und für die im Abwicklungsplan keine Liquidation im Insolvenzverfahren vorgesehen ist. Der Schwerpunkt der neuen Version liegt auf der Angleichung der MaBail-in an das „Minimum Bail-in Data Template“ (MBDT) des SRB, einschließlich des „Country Annex“ für Deutschland. Dies soll die Anforderungen harmonisieren und den Umstellungsaufwand für Institute bei einem Zuständigkeitswechsel zum SRB minimieren. Die BaFin erwartet durch den Entwurf keinen zusätzlichen Erfüllungsaufwand für die Wirtschaft oder die Verwaltung, da die Vorgaben bereits aus der SRM-VO, dem SAG und der Delegierten Verordnung (EU) 2016/1075 resultieren.\n\nStellungnahmen zum Entwurf können bis zum 23. September 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen auf ihrer Homepage zu veröffentlichen und bittet um entsprechende Einwilligung zur Veröffentlichung sowie um die Abgabe von Stellungnahmen ohne personenbezogene Daten.",
+          "en": "BaFin has published the draft of the fifth version of its Circular on Minimum Requirements for Bail-in Implementability (MaBail-in) for public consultation. This circular updates the previous version 02/2024.\n\nThe circular is addressed to entities not falling under the jurisdiction of the Single Resolution Board (SRB) and for which the resolution plan does not foresee liquidation under insolvency proceedings. The focus of the new version is to align the MaBail-in with the SRB's “Minimum Bail-in Data Template” (MBDT), including the “Country Annex” for Germany. This aims to harmonize requirements and minimize the conversion effort for institutions in case of a change of jurisdiction to the SRB. BaFin does not expect the draft to create additional compliance costs for businesses or the administration, as the requirements already stem from the SRM Regulation, the German Resolution Act (SAG), and Delegated Regulation (EU) 2016/1075.\n\nComments on the draft can be submitted to BaFin until September 23, 2025. BaFin intends to publish the submitted comments on its website and requests consent for publication as well as the submission of comments free of personal data."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_16_2025_MaBail_in.html",
+        "imp": "medium"
+      },
+      {
+        "d": "06.12.2024",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zur Sanierungsplanung",
+          "en": "Merkblatt zur Sanierungsplanung"
+        },
+        "sl": "merkblatt-zur-sanierungsplanung",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Sanierungsplanung veröffentlicht, das sich an alle Institute und übergeordnete Unternehmen einer Gruppe richtet, die nach dem Sanierungs- und Abwicklungsgesetz (SAG) einen Sanierungsplan erstellen müssen. Es erläutert das Zusammenspiel der relevanten nationalen und europäischen Vorschriften, insbesondere des SAG, der Sanierungsplanmindestanforderungsverordnung (MaSanV) und der Delegierten Verordnung (EU) Nr. 2016/1075.\n\nDas Merkblatt bietet Erläuterungen zu Sanierungsplänen, die den vollen Anforderungen unterliegen, sowie zu solchen mit vereinfachten Anforderungen gemäß § 19 SAG oder die von institutsbezogenen Sicherungssystemen nach § 20 SAG zu erstellen sind. Es stellt eine bewährte Struktur für Sanierungspläne dar und konkretisiert die Anforderungen an die Zusammenfassung der wichtigsten Bestandteile, die Beschreibung der erfassten Unternehmen, die Unternehmensführung, Indikatoren, Handlungsoptionen, Belastungsszenarien, Kommunikations- und Informationspläne sowie Vorbereitungsmaßnahmen.\n\nInstitute sollten sich bei der Erstellung ihrer Sanierungspläne an der im Merkblatt beschriebenen Struktur orientieren. Es präzisiert unter anderem, welche Unternehmen von den Sanierungsplänen erfasst werden müssen und welche Angaben zur Geschäfts- und Risikostrategie, zum Geschäftsmodell und zum Geschäftsplan zu machen sind, einschließlich der Beschreibung wesentlicher Geschäftsaktivitäten und kritischer Funktionen.",
+          "en": "BaFin has published a guidance notice on recovery planning, aimed at all institutions and parent undertakings of a group that are required to draw up a recovery plan under the German Recovery and Resolution Act (SAG). It explains the interplay of relevant national and European regulations, particularly the SAG, the Minimum Requirements for Recovery Plans Ordinance (MaSanV), and Delegated Regulation (EU) No 2016/1075.\n\nThe guidance notice provides explanations for recovery plans subject to full requirements, as well as for those with simplified requirements under Section 19 SAG or those to be drawn up by institutional protection schemes under Section 20 SAG. It presents a proven structure for recovery plans and specifies the requirements for summarizing key components, describing the entities covered, corporate governance, indicators, recovery options, stress scenarios, communication and information plans, and preparatory measures.\n\nInstitutions should align their recovery plan preparation with the structure described in the guidance notice. It clarifies, among other things, which entities must be covered by the recovery plans and what information regarding business and risk strategy, business model, and business plan must be provided, including the description of essential business activities and critical functions."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_Merkblatt_zur_Sanierungsplanung.html",
+        "imp": "medium"
+      },
+      {
+        "d": "04.07.2024",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zur externen Bail-in-Implementierung (Vergleichsversion)",
+          "en": "BaFin Guidance Notice on External Bail-in Implementation (Comparison Version)"
+        },
+        "sl": "merkblatt-externe-bail-in-implementierung-vergleichsversion",
+        "s": {
+          "de": "Die BaFin hat eine aktualisierte Vergleichsversion ihres Merkblatts zur externen Bail-in-Implementierung veröffentlicht. Das 318 Seiten umfassende Dokument beschreibt detailliert die Prozesse und Zuständigkeiten bei der Anwendung von Bail-in-Instrumenten im Rahmen einer Abwicklung. Es gliedert sich in Abschnitte zu Einleitung, Zielen, Akteuren, Zuständigkeiten, Kontaktdaten, zeitlichen Phasen der Implementierung und dem Ende des Abwicklungsverfahrens.\n\nDas Merkblatt richtet sich an Unternehmen im Sinne von Artikel 2 der SRM-Verordnung und an Unternehmen nach § 1 Absatz 1 Nr. 1 bis 3 SAG mit Sitz in Deutschland. Es enthält detaillierte Prozessschritte für die inländische und ICSD-Bail-in-Implementierung, von der Bekanntgabe der Abwicklungsanordnung über Handelsaufhebung, Settlement-Blocking, ISIN-Generierung und technische Implementierung bis hin zur Verbuchung in Teilnehmerkonten und Kundeninformation. Zudem sind Mustervorlagen für Bankdokumente und Rechenbeispiele enthalten.\n\nDie Veröffentlichung dient der Transparenz und Vorbereitung auf mögliche Abwicklungsfälle. Sie ist relevant für alle betroffenen Finanzinstitute, um die komplexen Abläufe und Anforderungen im Falle einer externen Bail-in-Maßnahme zu verstehen und umzusetzen.",
+          "en": "BaFin has published an updated comparison version of its guidance notice on external bail-in implementation. The 318-page document describes in detail the processes and responsibilities for applying bail-in instruments in the context of a resolution. It is structured into sections on introduction, objectives, actors, responsibilities, contact details, temporal phases of implementation, and the end of the resolution procedure.\n\nThe guidance notice is addressed to institutions within the meaning of Article 2 of the SRM Regulation and to institutions within the meaning of Section 1 (1) Nos. 1 to 3 of the German Resolution Act (SAG) with their registered office in Germany. It contains detailed process steps for domestic and ICSD bail-in implementation, from the announcement of the resolution order, trading suspension, settlement blocking, ISIN generation, and technical implementation, to booking in participant accounts and customer information. It also includes sample templates for bank documents and calculation examples.\n\nThis publication serves to enhance transparency and prepare for potential resolution cases. It is relevant for all affected financial institutions to understand and implement the complex procedures and requirements in the event of an external bail-in measure."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/A/dl_merkblatt_externe_Bail_in_Implementierung_Vergleichsversion_07_24.html",
+        "imp": "low"
+      },
+      {
+        "d": "16.02.2024",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Mindestanforderungen an die Abwicklungsfähigkeit (MaAbwicklungsfähigkeit) (Rundschreiben 01/2024 (A))",
+          "en": "Minimum Requirements for Resolvability (MaAbwicklungsfähigkeit) (Circular 01/2024 (A))"
+        },
+        "sl": "rundschreiben-01-2024-a",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 01/2024 (A) zu den Mindestanforderungen an die Abwicklungsfähigkeit im Rahmen der Abwicklungsplanung (MaAbwicklungsfähigkeit) veröffentlicht. Es setzt die Erwartungen des Einheitlichen Abwicklungsausschusses (SRB Expectations for Banks) und die EBA Resolvability Guidelines in die nationale Verwaltungspraxis um. Das Rundschreiben soll eine harmonisierte Anwendung innerhalb der Bankenunion gewährleisten und berücksichtigt dabei nationale Besonderheiten.\n\nDas Rundschreiben richtet sich an Unternehmen im Sinne von Artikel 2 SRM-VO sowie an Unternehmen nach § 1 Absatz 1 Nr. 1 bis 3 SAG in Deutschland, die nicht in den Zuständigkeitsbereich des SRB fallen. Es konkretisiert die Anforderungen an die Abwicklungsfähigkeit in sieben Dimensionen: Governance, Verlustabsorptions- und Rekapitalisierungskapazität, Liquidität und Refinanzierung, operative Kontinuität und Zugang zu FMI-Dienstleistungen, Informationssysteme und Datenanforderungen, Kommunikation sowie Separierbarkeit und Restrukturierung.\n\nKünftige Änderungen der SRB Expectations for Banks und der EBA Resolvability Guidelines wird die BaFin nachvollziehen und das Rundschreiben gegebenenfalls anpassen.",
+          "en": "BaFin has published Circular 01/2024 (A) on the Minimum Requirements for Resolvability within the framework of Resolution Planning (MaAbwicklungsfähigkeit). It implements the expectations of the Single Resolution Board (SRB Expectations for Banks) and the EBA Resolvability Guidelines into national administrative practice. The circular aims to ensure harmonized application within the banking union, while taking national specificities into account.\n\nThe circular addresses undertakings within the meaning of Article 2 SRM Regulation, as well as undertakings pursuant to Section 1 (1) Nos. 1 to 3 of the German Resolution Act (SAG) that do not fall under the jurisdiction of the SRB. It specifies the requirements for resolvability across seven dimensions: governance, loss absorption and recapitalization capacity, liquidity and funding, operational continuity and access to FMI services, information systems and data requirements, communication, and separability and restructuring.\n\nBaFin will monitor future changes to the SRB Expectations for Banks and the EBA Resolvability Guidelines and will adapt the circular accordingly if necessary."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs0124_MA_Abwicklungsfaehigkeit_V2.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 01/2024"
+      }
+    ],
     "solvency": [
       {
         "d": "17.11.2026",
@@ -737,6 +1043,25 @@
         "refnum": "Aufsichtsmitteilung 04/2026"
       },
       {
+        "d": "15.04.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Consultation on the shortening of additional Guidelines under Solvency II",
+          "en": "Consultation on the shortening of additional Guidelines under Solvency II"
+        },
+        "sl": "consultation-on-the-shortening-of-additional-guidelines-under-solvency-ii",
+        "s": {
+          "de": "",
+          "en": ""
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-shortening-additional-guidelines-under-solvency-ii_en",
+        "deadline": "08.07.2026"
+      },
+      {
         "d": "12.03.2026",
         "t": {
           "de": "Mitteilung",
@@ -793,25 +1118,6 @@
           "en": "BaFin has published an updated guidance letter on Solvency II reporting for primary and reinsurance undertakings and insurance groups. It includes amendments and clarifies reporting obligations under Solvency II and to the ECB.\n\n The letter comprehensively addresses quantitative and narrative reporting, including the Solvency and Financial Condition Report (SFCR), the Regular Supervisory Report (RSR), and the ORSA report. It provides specific guidance on numerous reporting forms (e.g., S.01.01, S.02.01, S.06.02) and their contents, the categorization of investments and derivatives, and handling deadlines and data quality. Special considerations for users of internal models and financial stability reporting are also explained.\n\nThis guidance letter is aimed at all primary and reinsurance undertakings and insurance groups in Germany subject to Solvency II regulations. It serves as a comprehensive guide for fulfilling extensive reporting obligations to BaFin and the Deutsche Bundesbank within the ESZB insurance statistics system. The updates are relevant for compliance officers to ensure the correct and timely submission of required documents."
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/VA/dl_Hinweissschreiben_mit_Aenderungen_Berichtspflichten_SolvencyII.html",
-        "imp": "medium"
-      },
-      {
-        "d": "14.07.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anforderungen an die Geschäftsorganisation in Bezug auf Eigenmittel (Solvabilität II)",
-          "en": "Requirements for the Business Organisation Regarding Own Funds (Solvency II)"
-        },
-        "sl": "merkblatt-02-2025-va-anforderungen-an-die-geschaeftsorganisation-in-bezug-auf-ei",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Anforderungen an die Geschäftsorganisation in Bezug auf Eigenmittel im Rahmen von Solvabilität II veröffentlicht. Es konkretisiert die Auslegung der Vorschriften des Versicherungsaufsichtsgesetzes (VAG) und der Delegierten Verordnung (EU) 2015/35 (DVO) und ist für die BaFin verbindlich, um eine konsistente Anwendung sicherzustellen.\n\nDas Merkblatt richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, die dem Solvabilität II-Aufsichtssystem unterliegen, sowie an bestimmte Gruppen. Es legt dar, dass Unternehmen jederzeit über ausreichend anrechnungsfähige Eigenmittel zur Bedeckung der Solvabilitätskapitalanforderung (SCR) und Mindestkapitalanforderung (MCR) verfügen müssen. Dies erfordert eine kontinuierliche Beobachtung, Überwachung von SCR/MCR-Bewegungen und ein aktives Management der Eigenmittel, einschließlich der Entwicklung von Verfahren, Prozessen und Plänen sowie deren schriftlicher Dokumentation.\n\nUnternehmen müssen sicherstellen, dass Eigenmittelbestandteile die Anforderungen der jeweiligen Qualitätsklasse erfüllen, sowohl bei Emission als auch fortlaufend. Die Auswirkungen von Verlusten auf anrechnungsfähige Eigenmittel aufgrund von Anrechnungsgrenzen sind in die Kapitalmanagementüberlegungen einzubeziehen. Kapitalmanagement-Leitlinien, die mindestens jährlich zu überprüfen und von der Geschäftsleitung zu verabschieden sind, müssen die Verfahren zur Sicherstellung der Eigenmittelklassifizierung und zur Beschaffung neuer Eigenmittel regeln.",
-          "en": "BaFin has published a guidance notice on the requirements for the business organisation regarding own funds under Solvency II. It specifies the interpretation of the provisions of the German Insurance Supervision Act (VAG) and Delegated Regulation (EU) 2015/35 (DVO), and is binding for BaFin to ensure consistent application.\n\nThe guidance notice applies to all primary and reinsurance undertakings domiciled in Germany or a third country subject to the Solvency II supervisory system, as well as to certain groups. It states that undertakings must at all times hold sufficient eligible own funds to cover the Solvency Capital Requirement (SCR) and Minimum Capital Requirement (MCR). This necessitates continuous monitoring, oversight of SCR/MCR movements, and active own funds management, including the development of procedures, processes, and plans, and their written documentation.\n\nUndertakings must ensure that own funds items meet the requirements of their respective quality class, both at issuance and on an ongoing basis. The impact of losses on eligible own funds due to deduction limits must be considered in capital management deliberations. Capital management guidelines, which must be reviewed at least annually and approved by the management board, must regulate the procedures for ensuring own funds classification and for procuring new own funds."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_02_2025_Anforderungen_an_die_Geschaeftsorganisation_in_Bezug_auf_Eigenmittel_va.html",
         "imp": "medium"
       }
     ],
@@ -1770,294 +2076,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/law-of-17-december-2010/",
         "imp": "low"
-      }
-    ],
-    "brrd": [
-      {
-        "d": "09.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB-Bericht an die Eurogruppe: Risiken und Krisenvorsorge im Bankensektor",
-          "en": "SRB Bi-annual Reporting Note to Eurogroup: Risks and Crisis Preparedness in Banking Sector"
-        },
-        "sl": "srb-bi-annual-reporting-note-to-eurogroup-november-2026",
-        "s": {
-          "de": "Der Einheitliche Abwicklungsausschuss (SRB) hat der Eurogruppe seine halbjährliche Berichtsnote vorgelegt. Darin werden die sich entwickelnden Risiken für den europäischen Bankensektor hervorgehoben, darunter geopolitische Spannungen, Marktvolatilität und operationelle Bedrohungen.\n\nDer Bericht betont die Notwendigkeit, die Widerstandsfähigkeit und Krisenvorsorge weiter zu stärken. Obwohl Fortschritte bei der Stärkung der Abwicklungsfähigkeit erzielt wurden, bestehen weiterhin Lücken im Rahmen, insbesondere bei Liquiditäts- und Solvenzrisiken. Das bevorstehende Bankenpaket der Europäischen Kommission wird als Chance gesehen, diese Probleme anzugehen und den Krisenmanagementrahmen zu vervollständigen.\n\nDie Vorsorge muss über traditionelle Finanzrisiken hinausgehen und auch Cyberangriffe sowie IKT-Ausfälle umfassen, die die Kontinuität wesentlicher Bankdienstleistungen gefährden können. Der SRB arbeitet eng mit dem SSM und nationalen Behörden zusammen, um seine Bereitschaft für solche Szenarien zu verbessern. Dieser Bericht wird zweimal jährlich vorgelegt.",
-          "en": "The Single Resolution Board (SRB) has presented its bi-annual reporting note to the Eurogroup, highlighting evolving risks to the European banking sector, including geopolitical tensions, market volatility, and operational threats.\n\nThe report emphasizes the need to further strengthen resilience and crisis preparedness. While progress has been made in enhancing resolvability, gaps remain in the framework, particularly concerning liquidity and solvency risks. The European Commission's forthcoming banking package is seen as an opportunity to address these issues and complete the crisis management framework.\n\nPreparedness must extend beyond traditional financial risks to include cyber-attacks and ICT disruptions that can threaten the continuity of essential banking services. The SRB is working closely with the SSM and national authorities to enhance its readiness for such scenarios. This report is submitted twice a year."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-bi-annual-reporting-note-eurogroup-november-2026",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Klassifizierung von Tier-2-Emissionen bei Verlust der MREL-Anrechenbarkeit durch vorzeitige Rückzahlung (Q&A 2026_7797)",
-          "en": "Classification of Tier 2 Subordinated Issuances Losing MREL Computability Due to Early Call (Q&A 2026_7797)"
-        },
-        "sl": "2026-7797-where-to-classify-tier2-subordinated-issuances-when-they-loss-their-mr",
-        "s": {
-          "de": "Die EBA präzisiert die Klassifizierung von nachrangigen Tier-2-Emissionen im Rahmen des BRRD-Reportings, wenn diese ihre MREL-Anrechenbarkeit aufgrund einer vorzeitigen Rückzahlung verlieren, die bereits angekündigt, aber noch nicht ausgeführt wurde.\n\nEin Instrument, für das eine vorzeitige Rückzahlung angekündigt wurde, soll weiterhin in Zeile r0531 des Templates Z 02.00 als Teil der als Eigenmittel anerkannten nachrangigen Verbindlichkeiten ausgewiesen werden. Die Abzugsfähigkeit vom Tier-2-Kapital ändert nichts an der Einstufung des Instruments selbst. Die insolvenzrechtliche Rangfolge des Instruments bleibt unverändert und richtet sich nach dem nationalen Insolvenzrecht.\n\nIm Template Z 12.00 ist der Betrag, der die Bedingungen für die MREL-Anrechenbarkeit erfüllt, nach dem Abzug aufgrund der angekündigten Rückzahlung als Null auszuweisen.",
-          "en": "The EBA clarifies the classification of Tier 2 subordinated issuances for BRRD reporting purposes when they lose their MREL computability due to an early call that has been announced but not yet executed.\n\nAn instrument for which an early redemption has been announced should continue to be reported in row r0531 of template Z 02.00 as part of subordinated liabilities recognized as own funds. The deduction from Tier 2 capital does not change the classification of the instrument itself. The insolvency ranking of the instrument remains unchanged and is determined by national insolvency law.\n\nIn template Z 12.00, the amount meeting the conditions for MREL eligibility shall be reported as zero after the deduction following the announced redemption."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7797",
-        "imp": "medium"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 (Q&A 2026_7815)",
-          "en": "Reporting of Counterparty Identifiers in Templates Z 12.00 and Z 14.00 (Q&A 2026_7815)"
-        },
-        "sl": "2026-7815-reporting-of-certain-counterparty-identifiers-in-templates-z-12-00-and",
-        "s": {
-          "de": "Die EBA hat eine Klarstellung zur Meldung von Gegenpartei-Identifikatoren in den Templates Z 12.00 und Z 14.00 der ITS zum Abwicklungsplan-Reporting veröffentlicht. Es wird präzisiert, wie Institute vorgehen sollen, wenn Gegenparteien unbekannt sind oder Daten auf aggregierter Ebene gemeldet werden müssen.\n\nInstitute müssen einen internen Identifikator verwenden, wenn kein LEI oder MFI-Code verfügbar ist. Dies gilt auch für aggregierte Meldungen, wobei für jede aggregierte Gruppe ein konsistenter interner Identifikator zuzuweisen ist. Für Mitarbeiterverbindlichkeiten sind separate Identifikatoren zu nutzen, wenn diese nach Typ und Insolvenzrang getrennt aggregiert werden.\n\nDie Antwort stellt klar, dass Platzhalter wie „0000“ oder „Not applicable“ nicht verwendet werden sollen. Stattdessen ist ein interner Identifikator zu vergeben und der entsprechende Identifikatortyp anzugeben. Dies soll divergierende Meldepraktiken beenden und die Datenqualität verbessern.",
-          "en": "The EBA has published a clarification on the reporting of counterparty identifiers in templates Z 12.00 and Z 14.00 of the ITS on Resolution Planning Reporting. It specifies how institutions should proceed when counterparties are unknown or data needs to be reported at an aggregated level.\n\nInstitutions must use an internal identifier when an LEI or MFI code is not available. This also applies to aggregated reporting, where a consistent internal identifier must be assigned to each aggregated group. For employee liabilities, separate identifiers are to be used if they are aggregated separately by type and insolvency ranking.\n\nThe answer clarifies that placeholders such as “0000” or “Not applicable” should not be used. Instead, an internal identifier must be assigned and the corresponding identifier type indicated. This aims to end divergent reporting practices and improve data quality."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7815",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu Meldung Z 09.01 (FMI Services) im Abwicklungsplanungs-Reporting (2026_7823)",
-          "en": "EBA Q&A on Reporting Template Z 09.01 (FMI Services) in Resolution Planning Reporting (2026_7823)"
-        },
-        "sl": "2026-7823-template-z09-01-eba-taxonomy-alignment-with-its-requirements-annex-ii",
-        "s": {
-          "de": "Die EBA hat eine Klarstellung zur Meldung Z 09.01 (FMI Services) im Rahmen des ITS zum Abwicklungsplanungs-Reporting veröffentlicht. Konkret geht es um die Spalte 0110 („Criticality assessment by provider“), die laut Anhang II leer bleiben darf, wenn in Spalte 0090 „Direct“ angegeben wird.\n\nDie technische Taxonomie erlaubt es jedoch nicht, Spalte 0110 leer zu lassen, da sie Teil des Primärschlüssels ist. Die EBA stellt klar, dass Spalte 0110 weiterhin Teil des Primärschlüssels bleibt und daher nicht null sein darf. Stattdessen ist „Not applicable“ einzutragen, wenn in Spalte 0090 „Direct“ gemeldet wird. Die Anweisungen werden entsprechend angepasst.\n\nDiese Regelung ist relevant für Kreditinstitute, die Abwicklungsplanungs-Reportings gemäß der BRRD erstellen. Sie müssen sicherstellen, dass ihre Meldungen der technischen Taxonomie entsprechen und in Spalte 0110 „Not applicable“ eintragen, wenn die Bedingung in Spalte 0090 erfüllt ist, um Validierungsfehler zu vermeiden.",
-          "en": "The EBA has published a clarification regarding template Z 09.01 (FMI Services) within the ITS on Resolution Planning Reporting. Specifically, it addresses column 0110 (“Criticality assessment by provider”), which, according to Annex II, may be left blank when 'Direct' is reported in column 0090.\n\nHowever, the technical taxonomy does not permit column 0110 to be left blank as it is part of the primary key. The EBA clarifies that column 0110 will remain part of the primary key and therefore cannot be reported as null. Instead, 'Not applicable' shall be reported when 'Direct' is indicated in column 0090. The instructions will be amended accordingly.\n\nThis ruling is relevant for credit institutions preparing resolution planning reports under the BRRD. They must ensure their reports comply with the technical taxonomy and enter 'Not applicable' in column 0110 when the condition in column 0090 is met, to avoid validation errors."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7823",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA präzisiert Meldepflichten für FMI-Dienstleistungen (Q&A 2026_7824)",
-          "en": "EBA clarifies reporting requirements for FMI services (Q&A 2026_7824)"
-        },
-        "sl": "2026-7824-templates-z09-01-services-provided-to-and-received-from-fmi-intermedia",
-        "s": {
-          "de": "Die EBA präzisiert die Auslegung der Spalten 0210 und 0220 der Vorlage Z09.01 (FMI Services – Providers and Users) für das BRRD-Reporting. Die Meldung von Dienstleistungen in dieser Vorlage ist auf solche beschränkt, die für die vertragliche Beziehung zum Zugang oder zur Funktion einer Finanzmarktinfrastruktur (FMI) relevant sind.\n\nDies umfasst auch Dienstleistungen, die den direkten oder indirekten Zugang zur FMI unterstützen. Allgemeine kommerzielle, operative oder konzerninterne Dienstleistungen, die mit einem Intermediär ausgetauscht werden und nicht mit der FMI-Beziehung zusammenhängen, sollen nicht gemeldet werden. Dies betrifft Kreditinstitute, die unter die BRRD-Berichtspflicht fallen.\n\nDie Klarstellung hilft den meldenden Instituten, den Umfang der zu berichtenden Dienstleistungen korrekt abzugrenzen und unnötige Meldungen zu vermeiden. Die Antwort wurde von der EBA erstellt und am 09.10.2026 veröffentlicht.",
-          "en": "The EBA clarifies the interpretation of columns 0210 and 0220 of template Z09.01 (FMI Services – Providers and Users) for BRRD reporting. The reporting of services in this template is limited to those relevant to the contractual relationship governing access to, or the functioning of, a Financial Market Infrastructure (FMI).\n\nThis includes services supporting direct or indirect access to the FMI. General commercial, operational, or intragroup services exchanged with an intermediary that are unrelated to the FMI relationship should not be reported. This applies to credit institutions subject to BRRD reporting requirements.\n\nThe clarification helps reporting institutions correctly define the scope of services to be reported and avoid unnecessary submissions. The answer was prepared by the EBA and published on 09.10.2026."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7824",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA-Klarstellung zur Meldung von Vertrags-IDs bei eigenen Vermögenswerten (Q&A 2026_7844)",
-          "en": "EBA Clarification on Reporting Contract IDs for Owned Assets (Q&A 2026_7844)"
-        },
-        "sl": "2026-7844-reporting-template-resol-2-z-08-02",
-        "s": {
-          "de": "Die EBA präzisiert die Meldung von Vertrags-IDs im Rahmen des Abwicklungsplanungs-Reportings (RESOL 2 – Z 08.02). Wenn ein Vermögenswert im Eigentum des Instituts steht und keinem vertraglichen Arrangement unterliegt, ist in Feld c0080 („Contract ID“) der Wert „Not applicable“ anzugeben.\n\nDiese Klarstellung betrifft Kreditinstitute, die gemäß der BRRD und der ITS zur Abwicklungsplanung berichten müssen. Sie löst ein technisches Problem bei der Datenmeldung, da die Spalte „Contract ID“ als Primärschlüssel definiert ist, aber bei eigenen Vermögenswerten keine Vertrags-ID existiert.\n\nDie EBA wird die entsprechenden Anweisungen bei nächster Gelegenheit anpassen, um diese Handhabung zu verdeutlichen.",
-          "en": "The EBA clarifies the reporting of contract IDs within the resolution planning reporting (RESOL 2 – Z 08.02). If an asset is owned by the institution and is not governed by a contractual arrangement, “Not applicable” shall be reported in field c0080 (“Contract ID”).\n\nThis clarification affects credit institutions that are required to report under BRRD and the ITS on resolution planning. It resolves a technical issue in data reporting, as the “Contract ID” column is defined as a primary key, but no contract ID exists for owned assets.\n\nThe EBA will amend the relevant instructions at the next available opportunity to clarify this treatment."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7844",
-        "imp": "low"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Definition der Substituierbarkeit von CCPs und Meldung alternativer Anbieter (RESOL II) (Q&A 2026_7912)",
-          "en": "Definition of “Substitutability” of CCPs and the connected reporting of “Alternative Providers” (RESOL II) (Q&A 2026_7912)"
-        },
-        "sl": "2026-7912-definition-of-substitutability-of-ccps-and-the-connected-reporting-of",
-        "s": {
-          "de": "Die EBA präzisiert die Definition der „Substituierbarkeit“ von Zentralen Gegenparteien (CCPs) und die Meldung von „alternativen Anbietern“ für das Template Z 09.04 (RESOL II). Die Substituierbarkeit ist im Hinblick auf die fortgesetzte Bereitstellung des Clearing-Dienstes für den in Spalte 0020 gemeldeten Produkttyp zu beurteilen. Dabei muss der alternative Anbieter nicht denselben Handelsplatz oder Markt bedienen wie die ursprüngliche CCP.\n\nEin alternativer Anbieter kann eine andere CCP oder ein Intermediär, einschließlich eines Brokers, sein, sofern das meldende Institut zum Meldezeitpunkt eine entsprechende vertragliche Beziehung zu diesem Anbieter hat und die Vereinbarung die Fortsetzung der Clearing-Aktivität innerhalb eines angemessenen Zeitrahmens nach einem Abwicklungsereignis ermöglichen würde. Dies kann auch die Umleitung der Clearing-Aktivität über eine alternative Marktinfrastruktur umfassen. Spalte 0040 soll den FMI oder Intermediär identifizieren, der den alternativen Anbieter des Clearing-Dienstes darstellt oder Zugang dazu bietet, nicht alle beteiligten FMIs der Wertschöpfungskette.\n\nDie Nutzung eines anderen Handelsplatzes oder Marktes schließt eine Alternative nicht aus dem Anwendungsbereich von Z 09.04 aus. Rein hypothetische Alternativen, für die zum Meldezeitpunkt keine vertragliche Beziehung besteht, sind jedoch nicht als Ersatzanbieter zu melden. Die EBA beantwortet damit eine Frage zur Auslegung der BRRD-Berichterstattung gemäß Artikel 11 Absatz 3 und der ITS zur Abwicklungsplanungsberichterstattung (Verordnung (EU) 2025/2303, Artikel 3 Absatz 1).",
-          "en": "The EBA clarifies the definition of “substitutability” of Central Counterparties (CCPs) and the reporting of “alternative providers” for template Z 09.04 (RESOL II). Substitutability must be assessed in relation to the continued provision of the clearing service for the product type reported in column 0020. The alternative provider does not have to serve the same trading venue or market as the original CCP.\n\nAn alternative provider can be another CCP or an intermediary, including a broker, provided that the reporting institution has a relevant contractual relationship with that provider at the reporting date and the arrangement would enable the relevant clearing activity to be continued within a reasonable timeframe following a resolution event. This may include rerouting clearing activity through alternative market infrastructure. Column 0040 should identify the FMI or intermediary that constitutes the alternative provider of, or provides access to, the substitute clearing service, not all FMIs involved in the value chain.\n\nThe use of a different trading venue or market does not in itself exclude an alternative from the scope of Z 09.04. However, purely hypothetical alternatives for which the required contractual relationship does not exist at the reporting date are not to be reported as substitute providers. The EBA thus answers a question on the interpretation of BRRD reporting according to Article 11(3) and the ITS on Resolution Planning Reporting (Regulation (EU) 2025/2303, Article 3(1))."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7912",
-        "imp": "medium"
-      },
-      {
-        "d": "07.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB veröffentlicht Konsultationsliste und vereinfacht Anfragen ab 2027",
-          "en": "SRB publishes list of consultations and simplifies requests from 2027"
-        },
-        "sl": "srb-publishes-the-list-of-consultations-and-simplifies-its-requests-to-the-indus",
-        "s": {
-          "de": "Der Single Resolution Board (SRB) hat seine Liste der Konsultationen und Anfragen an die Industrie für 2027 veröffentlicht. Diese Liste umfasst erwartete Konsultationen, Datenanfragen und einzureichende Unterlagen, die sich aus EU-Rechtsakten, den SRB Expectations for Banks (EfB) und der Verlagerung hin zu bankengesteuerten Tests und Abwicklungsfähigkeitsbewertungen ergeben.\n\nAb 2027 führt der SRB eine Vereinfachung ein, indem er von jährlichen Anfragen zu einem dreijährigen Einreichungszyklus für bankspezifische Unterlagen übergeht. Dies gilt, wenn keine wesentlichen Abwicklungsbedenken bestehen, und soll den Verwaltungsaufwand reduzieren. Zudem hat der SRB die vierteljährliche Bestätigung der MREL-Berechtigung von gemeldeten Verbindlichkeiten mit sofortiger Wirkung eingestellt.\n\nDiese Änderungen sollen die Belastung für den Bankensektor verringern und gleichzeitig die Abwicklungsfähigkeit aufrechterhalten. Banken, die eine konstant zufriedenstellende Abwicklungsleistung zeigen, können eine Reduzierung der jährlichen Anfragen um bis zu einem Drittel erwarten. Individuelle Anforderungen werden den Banken über Prioritätsschreiben mitgeteilt.",
-          "en": "The Single Resolution Board (SRB) has published its list of consultations and requests to the industry for 2027. This list includes expected consultations, data requests, and deliverables stemming from EU legal acts, the SRB Expectations for Banks (EfB), and the ongoing shift towards bank-led testing and resolvability assessments.\n\nFrom 2027, the SRB will introduce a simplification by transitioning from annual requests to a three-year submission cycle for bank-specific deliverables. This change applies where no material resolvability concerns exist and aims to reduce administrative burden. Additionally, the SRB has immediately discontinued the quarterly Sign-off form on MREL eligibility of reported liabilities.\n\nThese changes are intended to ease the burden on the banking sector while maintaining resolvability. Banks demonstrating consistently satisfactory resolvability performance can expect a reduction in annual requests by up to one-third. Individual requirements will be communicated to banks via priority letters."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-publishes-list-consultations-and-simplifies-its-requests-industry-2027",
-        "imp": "medium"
-      },
-      {
-        "d": "17.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB präzisiert Leitlinien zur Kommunikation von Banken in der Abwicklung",
-          "en": "SRB clarifies guidance on Banks’ Communication in Resolution"
-        },
-        "sl": "srb-clarifies-guidance-on-banks-communication",
-        "s": {
-          "de": "Das Single Resolution Board (SRB) hat eine operative Leitlinie zur Kommunikation von Banken in der Abwicklung sowie ein ergänzendes Dokument zur Prüfung der Kommunikationsfähigkeit veröffentlicht. Diese Dokumente präzisieren die Kommunikationsdimension der „Expectations for Banks (EfB)“ des SRB und die Prüfung der Kommunikationsfähigkeiten im Rahmen der Abwicklungsplanung von Banken.\n\nDie Leitlinie legt keine neuen Anforderungen fest, sondern bietet zusätzliche operative Klarheit und ist auf die Leitlinien der Europäischen Bankenaufsichtsbehörde (EBA) zur Abwicklungsfähigkeit abgestimmt. Sie soll Banken dabei unterstützen, die Erwartungen des SRB zu erfüllen und eine effektive Krisenkommunikation sicherzustellen, insbesondere wenn eine Bank in Schwierigkeiten gerät oder wahrscheinlich in Schwierigkeiten geraten wird. Dies ist ein wesentliches Element der operativen Bereitschaft von Banken zur Umsetzung von Abwicklungsstrategien.\n\nBanken haben bis April 2028 Zeit, diese operativen Überlegungen zu berücksichtigen und gegebenenfalls in ihren Kommunikationsplänen widerzuspiegeln. Die Dokumente wurden nach einer öffentlichen Konsultation vom 17. Oktober bis 12. Dezember 2025 veröffentlicht.",
-          "en": "The Single Resolution Board (SRB) has published operational guidance for banks on communication in resolution, along with a supplementary document for testing communication capabilities. These documents clarify the communication dimension of the SRB's Expectations for Banks (EfB) and the testing of communication capabilities as part of banks' resolution preparedness.\n\nThe guidance does not set new requirements but provides additional operational clarity and aligns with the European Banking Authority's (EBA) guidelines on resolvability. It aims to help banks meet SRB expectations and ensure effective crisis communication, especially when a bank is failing or likely to fail. This is an essential element of banks' operational readiness to implement resolution strategies.\n\nBanks have until April 2028 to take these operational considerations into account and reflect them, where needed, in their communication plans. The documents were published following a public consultation held from October 17 to December 12, 2025."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-clarifies-guidance-banks-communication",
-        "imp": "high"
-      },
-      {
-        "d": "30.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "SRB veröffentlicht operative Leitlinie für Business Reorganisation Plan Analysis Reports (BRP AR)",
-          "en": "SRB publishes Operational Guidance on Business Reorganisation Plan Analysis Reports (BRP AR)"
-        },
-        "sl": "srb-publishes-a-renewed-operational-guidance-on-business-reorganisation-plan-ana",
-        "s": {
-          "de": "Das Single Resolution Board (SRB) hat eine erneuerte operative Leitlinie für Banken zu Berichten über die Analyse von Geschäftsumstrukturierungsplänen (Business Reorganisation Plan Analysis Reports – BRP AR) sowie eine ergänzende quantitative Vorlage veröffentlicht. Diese Dokumente bieten Banken einen konsolidierten, transparenten Rahmen zur Stärkung ihrer Krisenvorsorge und Abwicklungsfähigkeit, ohne neue Anforderungen einzuführen.\n\nDie Leitlinie ist eine Reaktion auf eine Branchenanfrage nach einer öffentlich zugänglichen, standardisierten Referenz zur Harmonisierung der Erwartungen und zur Verbesserung der Konsistenz bei der Umstrukturierungsplanung. Sie fasst bereits bestehende Erwartungen in einem kohärenten Rahmen zusammen und präzisiert diese. Die nicht-obligatorische quantitative Vorlage bietet praktische Unterstützung für Banken.\n\nDie Veröffentlichung erfolgte am 30.07.2026 und folgt einer öffentlichen Konsultation vom 03.02. bis 30.03.2026. Das SRB behält sich das Recht vor, je nach spezifischer Situation und im Einklang mit dem anwendbaren Rechtsrahmen von den beschriebenen Maßnahmen und Erwartungen abzuweichen.",
-          "en": "The Single Resolution Board (SRB) has published renewed operational guidance for banks on Business Reorganisation Plan Analysis Reports (BRP AR) along with a complementary quantitative template. These documents provide banks with a consolidated, transparent framework to strengthen their crisis preparedness and resolvability, without introducing new requirements.\n\nThe guidance responds to an industry request for a publicly available, standardized reference to harmonize expectations and enhance consistency in reorganization planning. It compiles and clarifies existing expectations within a single, coherent framework. The non-mandatory quantitative template offers practical support for banks.\n\nThe publication was released on 30.07.2026, following a public consultation from 03.02. to 30.03.2026. The SRB reserves the right to deviate from the actions and expectations described, depending on the specific situation and in line with the applicable legal framework."
-        },
-        "url": "https://www.srb.europa.eu/en/content/srb-publishes-renewed-operational-guidance-business-reorganisation-plan-analysis-reports",
-        "imp": "medium"
-      },
-      {
-        "d": "20.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "srb.europa.eu",
-        "ti": {
-          "de": "Banken erfüllen MREL-Ziele weiterhin zum Jahresende 2025",
-          "en": "Banks continue to meet their MREL targets at year end 2025"
-        },
-        "sl": "banks-continue-to-meet-their-mrel-targets-at-year-end-2025",
-        "s": {
-          "de": "Das SRB hat sein MREL Dashboard für das zweite Halbjahr 2025 veröffentlicht. Demnach erfüllen die Banken weiterhin ihre MREL-Ziele. Die durchschnittliche MREL-Zielvorgabe, einschließlich der kombinierten Kapitalpufferanforderung (CBR), lag für Abwicklungseinheiten bei 27,8 % des Gesamtrisikobetrags (TREA) und blieb damit gegenüber dem ersten Halbjahr 2025 stabil.\n\nDer aggregierte MREL-Fehlbetrag gegenüber den endgültigen Zielen der Banken, einschließlich des CBR, betrug 0,2 Mrd. EUR (weniger als 0,01 % des TREA). Dieser Fehlbetrag ist auf einige wenige Banken zurückzuführen, die sich noch in Übergangsfristen zur Erfüllung ihrer endgültigen Ziele befinden. Alle anderen Institute erfüllen ihre Anforderungen weiterhin.\n\nDas Dashboard verfolgt die Entwicklung der MREL-Ziele und -Fehlbeträge für externes und internes MREL sowie das Niveau und die Zusammensetzung der MREL-Instrumente. Es basiert auf den dem SRB gemeldeten Bankdaten und deckt die dem SRB unterstellten Einheiten ab.",
-          "en": "The SRB has published its MREL Dashboard for H2 2025, indicating that banks continue to meet their MREL targets. The average MREL final target, including the Combined Buffer Requirement (CBR), for resolution entities was 27.8% of the Total Risk Exposure Amount (TREA), remaining stable compared to H1 2025.\n\nThe aggregate MREL shortfall against banks’ final targets, including the CBR, stood at EUR 0.2 billion (less than 0.01% of TREA). This shortfall is attributed to a few banks under transitional periods to meet their final targets. All other entities continue to meet their requirements.\n\nThe dashboard tracks the evolution of MREL targets and shortfalls for external and internal MREL, as well as the level and composition of MREL instruments. It is based on bank data reported to the SRB and covers entities under the SRB’s remit."
-        },
-        "url": "https://www.srb.europa.eu/en/content/mrel-dashboard-h2-2025",
-        "imp": "low"
-      },
-      {
-        "d": "26.08.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Rundschreiben MaBail-in Version 5",
-          "en": "Consultation on Circular MaBail-in Version 5"
-        },
-        "sl": "rundschreiben-mabail-in-version-5-anschreiben-fuer-die-initiierung-der-oeffentli",
-        "s": {
-          "de": "Die BaFin hat den Entwurf der fünften Version des Rundschreibens zu den Mindestanforderungen zur Umsetzbarkeit eines Bail-in (MaBail-in) zur öffentlichen Konsultation gestellt. Dieses Rundschreiben aktualisiert die Vorgängerversion 02/2024.\n\nDas Rundschreiben richtet sich an Unternehmen, die nicht in den Zuständigkeitsbereich des Einheitlichen Abwicklungsausschusses (SRB) fallen und für die im Abwicklungsplan keine Liquidation im Insolvenzverfahren vorgesehen ist. Der Schwerpunkt der neuen Version liegt auf der Angleichung der MaBail-in an das „Minimum Bail-in Data Template“ (MBDT) des SRB, einschließlich des „Country Annex“ für Deutschland. Dies soll die Anforderungen harmonisieren und den Umstellungsaufwand für Institute bei einem Zuständigkeitswechsel zum SRB minimieren. Die BaFin erwartet durch den Entwurf keinen zusätzlichen Erfüllungsaufwand für die Wirtschaft oder die Verwaltung, da die Vorgaben bereits aus der SRM-VO, dem SAG und der Delegierten Verordnung (EU) 2016/1075 resultieren.\n\nStellungnahmen zum Entwurf können bis zum 23. September 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen auf ihrer Homepage zu veröffentlichen und bittet um entsprechende Einwilligung zur Veröffentlichung sowie um die Abgabe von Stellungnahmen ohne personenbezogene Daten.",
-          "en": "BaFin has published the draft of the fifth version of its Circular on Minimum Requirements for Bail-in Implementability (MaBail-in) for public consultation. This circular updates the previous version 02/2024.\n\nThe circular is addressed to entities not falling under the jurisdiction of the Single Resolution Board (SRB) and for which the resolution plan does not foresee liquidation under insolvency proceedings. The focus of the new version is to align the MaBail-in with the SRB's “Minimum Bail-in Data Template” (MBDT), including the “Country Annex” for Germany. This aims to harmonize requirements and minimize the conversion effort for institutions in case of a change of jurisdiction to the SRB. BaFin does not expect the draft to create additional compliance costs for businesses or the administration, as the requirements already stem from the SRM Regulation, the German Resolution Act (SAG), and Delegated Regulation (EU) 2016/1075.\n\nComments on the draft can be submitted to BaFin until September 23, 2025. BaFin intends to publish the submitted comments on its website and requests consent for publication as well as the submission of comments free of personal data."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_16_2025_MaBail_in.html",
-        "imp": "medium"
-      },
-      {
-        "d": "06.12.2024",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zur Sanierungsplanung",
-          "en": "Merkblatt zur Sanierungsplanung"
-        },
-        "sl": "merkblatt-zur-sanierungsplanung",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Sanierungsplanung veröffentlicht, das sich an alle Institute und übergeordnete Unternehmen einer Gruppe richtet, die nach dem Sanierungs- und Abwicklungsgesetz (SAG) einen Sanierungsplan erstellen müssen. Es erläutert das Zusammenspiel der relevanten nationalen und europäischen Vorschriften, insbesondere des SAG, der Sanierungsplanmindestanforderungsverordnung (MaSanV) und der Delegierten Verordnung (EU) Nr. 2016/1075.\n\nDas Merkblatt bietet Erläuterungen zu Sanierungsplänen, die den vollen Anforderungen unterliegen, sowie zu solchen mit vereinfachten Anforderungen gemäß § 19 SAG oder die von institutsbezogenen Sicherungssystemen nach § 20 SAG zu erstellen sind. Es stellt eine bewährte Struktur für Sanierungspläne dar und konkretisiert die Anforderungen an die Zusammenfassung der wichtigsten Bestandteile, die Beschreibung der erfassten Unternehmen, die Unternehmensführung, Indikatoren, Handlungsoptionen, Belastungsszenarien, Kommunikations- und Informationspläne sowie Vorbereitungsmaßnahmen.\n\nInstitute sollten sich bei der Erstellung ihrer Sanierungspläne an der im Merkblatt beschriebenen Struktur orientieren. Es präzisiert unter anderem, welche Unternehmen von den Sanierungsplänen erfasst werden müssen und welche Angaben zur Geschäfts- und Risikostrategie, zum Geschäftsmodell und zum Geschäftsplan zu machen sind, einschließlich der Beschreibung wesentlicher Geschäftsaktivitäten und kritischer Funktionen.",
-          "en": "BaFin has published a guidance notice on recovery planning, aimed at all institutions and parent undertakings of a group that are required to draw up a recovery plan under the German Recovery and Resolution Act (SAG). It explains the interplay of relevant national and European regulations, particularly the SAG, the Minimum Requirements for Recovery Plans Ordinance (MaSanV), and Delegated Regulation (EU) No 2016/1075.\n\nThe guidance notice provides explanations for recovery plans subject to full requirements, as well as for those with simplified requirements under Section 19 SAG or those to be drawn up by institutional protection schemes under Section 20 SAG. It presents a proven structure for recovery plans and specifies the requirements for summarizing key components, describing the entities covered, corporate governance, indicators, recovery options, stress scenarios, communication and information plans, and preparatory measures.\n\nInstitutions should align their recovery plan preparation with the structure described in the guidance notice. It clarifies, among other things, which entities must be covered by the recovery plans and what information regarding business and risk strategy, business model, and business plan must be provided, including the description of essential business activities and critical functions."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_Merkblatt_zur_Sanierungsplanung.html",
-        "imp": "medium"
-      },
-      {
-        "d": "04.07.2024",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zur externen Bail-in-Implementierung (Vergleichsversion)",
-          "en": "BaFin Guidance Notice on External Bail-in Implementation (Comparison Version)"
-        },
-        "sl": "merkblatt-externe-bail-in-implementierung-vergleichsversion",
-        "s": {
-          "de": "Die BaFin hat eine aktualisierte Vergleichsversion ihres Merkblatts zur externen Bail-in-Implementierung veröffentlicht. Das 318 Seiten umfassende Dokument beschreibt detailliert die Prozesse und Zuständigkeiten bei der Anwendung von Bail-in-Instrumenten im Rahmen einer Abwicklung. Es gliedert sich in Abschnitte zu Einleitung, Zielen, Akteuren, Zuständigkeiten, Kontaktdaten, zeitlichen Phasen der Implementierung und dem Ende des Abwicklungsverfahrens.\n\nDas Merkblatt richtet sich an Unternehmen im Sinne von Artikel 2 der SRM-Verordnung und an Unternehmen nach § 1 Absatz 1 Nr. 1 bis 3 SAG mit Sitz in Deutschland. Es enthält detaillierte Prozessschritte für die inländische und ICSD-Bail-in-Implementierung, von der Bekanntgabe der Abwicklungsanordnung über Handelsaufhebung, Settlement-Blocking, ISIN-Generierung und technische Implementierung bis hin zur Verbuchung in Teilnehmerkonten und Kundeninformation. Zudem sind Mustervorlagen für Bankdokumente und Rechenbeispiele enthalten.\n\nDie Veröffentlichung dient der Transparenz und Vorbereitung auf mögliche Abwicklungsfälle. Sie ist relevant für alle betroffenen Finanzinstitute, um die komplexen Abläufe und Anforderungen im Falle einer externen Bail-in-Maßnahme zu verstehen und umzusetzen.",
-          "en": "BaFin has published an updated comparison version of its guidance notice on external bail-in implementation. The 318-page document describes in detail the processes and responsibilities for applying bail-in instruments in the context of a resolution. It is structured into sections on introduction, objectives, actors, responsibilities, contact details, temporal phases of implementation, and the end of the resolution procedure.\n\nThe guidance notice is addressed to institutions within the meaning of Article 2 of the SRM Regulation and to institutions within the meaning of Section 1 (1) Nos. 1 to 3 of the German Resolution Act (SAG) with their registered office in Germany. It contains detailed process steps for domestic and ICSD bail-in implementation, from the announcement of the resolution order, trading suspension, settlement blocking, ISIN generation, and technical implementation, to booking in participant accounts and customer information. It also includes sample templates for bank documents and calculation examples.\n\nThis publication serves to enhance transparency and prepare for potential resolution cases. It is relevant for all affected financial institutions to understand and implement the complex procedures and requirements in the event of an external bail-in measure."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/A/dl_merkblatt_externe_Bail_in_Implementierung_Vergleichsversion_07_24.html",
-        "imp": "low"
-      },
-      {
-        "d": "16.02.2024",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Mindestanforderungen an die Abwicklungsfähigkeit (MaAbwicklungsfähigkeit) (Rundschreiben 01/2024 (A))",
-          "en": "Minimum Requirements for Resolvability (MaAbwicklungsfähigkeit) (Circular 01/2024 (A))"
-        },
-        "sl": "rundschreiben-01-2024-a",
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 01/2024 (A) zu den Mindestanforderungen an die Abwicklungsfähigkeit im Rahmen der Abwicklungsplanung (MaAbwicklungsfähigkeit) veröffentlicht. Es setzt die Erwartungen des Einheitlichen Abwicklungsausschusses (SRB Expectations for Banks) und die EBA Resolvability Guidelines in die nationale Verwaltungspraxis um. Das Rundschreiben soll eine harmonisierte Anwendung innerhalb der Bankenunion gewährleisten und berücksichtigt dabei nationale Besonderheiten.\n\nDas Rundschreiben richtet sich an Unternehmen im Sinne von Artikel 2 SRM-VO sowie an Unternehmen nach § 1 Absatz 1 Nr. 1 bis 3 SAG in Deutschland, die nicht in den Zuständigkeitsbereich des SRB fallen. Es konkretisiert die Anforderungen an die Abwicklungsfähigkeit in sieben Dimensionen: Governance, Verlustabsorptions- und Rekapitalisierungskapazität, Liquidität und Refinanzierung, operative Kontinuität und Zugang zu FMI-Dienstleistungen, Informationssysteme und Datenanforderungen, Kommunikation sowie Separierbarkeit und Restrukturierung.\n\nKünftige Änderungen der SRB Expectations for Banks und der EBA Resolvability Guidelines wird die BaFin nachvollziehen und das Rundschreiben gegebenenfalls anpassen.",
-          "en": "BaFin has published Circular 01/2024 (A) on the Minimum Requirements for Resolvability within the framework of Resolution Planning (MaAbwicklungsfähigkeit). It implements the expectations of the Single Resolution Board (SRB Expectations for Banks) and the EBA Resolvability Guidelines into national administrative practice. The circular aims to ensure harmonized application within the banking union, while taking national specificities into account.\n\nThe circular addresses undertakings within the meaning of Article 2 SRM Regulation, as well as undertakings pursuant to Section 1 (1) Nos. 1 to 3 of the German Resolution Act (SAG) that do not fall under the jurisdiction of the SRB. It specifies the requirements for resolvability across seven dimensions: governance, loss absorption and recapitalization capacity, liquidity and funding, operational continuity and access to FMI services, information systems and data requirements, communication, and separability and restructuring.\n\nBaFin will monitor future changes to the SRB Expectations for Banks and the EBA Resolvability Guidelines and will adapt the circular accordingly if necessary."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs0124_MA_Abwicklungsfaehigkeit_V2.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 01/2024"
       }
     ],
     "itsrep": [
@@ -6221,33 +6239,6 @@
             "d": "16.06.2025"
           }
         ]
-      },
-      {
-        "d": "27.03.2025",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften",
-          "en": "Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften"
-        },
-        "sl": "praevention-von-geldwaesche-und-terrorismusfinanzierung-risiken-im-zusammenhang",
-        "s": {
-          "de": "Die BaFin warnt Finanzunternehmen vor erheblichen Geldwäsche- und Terrorismusfinanzierungsrisiken durch Umgehungsgeschäfte. Solche Geschäfte zielen darauf ab, gesetzliche, regulatorische oder vertragliche Vorgaben zu umgehen, indem sie den tatsächlichen wirtschaftlichen oder länderspezifischen Hintergrund verschleiern. Dies erschwert die Einhaltung der Sorgfaltspflichten nach §§ 10 ff. GwG.\n\nBei Anhaltspunkten für Umgehungsgeschäfte sind verstärkte Sorgfaltspflichten gemäß § 15 GwG anzuwenden. Können diese nicht erfüllt werden, greift die Beendigungspflicht nach § 15 Absatz 9 GwG in Verbindung mit § 10 Absatz 9 GwG, und es sind gegebenenfalls Verdachtsmeldungen nach § 43 Absatz 1 GwG zu erstatten. Die BaFin hebt hervor, dass Verpflichtete ihr Risikomanagement und ihre Monitoring-Systeme anpassen müssen, um verdächtige Muster zu erkennen und den Informationsaustausch nach § 47 Absatz 5 GwG zu nutzen.\n\nBesondere Aufmerksamkeit gilt Umgehungsgeschäften mit Iran-Bezug, da der Iran als Hochrisikoland eingestuft ist. Die BaFin nennt hier die Einbindung von „Exchange Trading Houses“ und „Payment Agents“ sowie den Missbrauch von Handelsfinanzierungen als bekannte Modelle zur Verschleierung des Iran-Bezugs und zur Umgehung von Sanktionen und Sorgfaltspflichten.",
-          "en": "The BaFin warns financial institutions about significant money laundering and terrorist financing risks posed by circumvention schemes. Such schemes aim to bypass legal, regulatory, or contractual requirements by obscuring the true economic or country-specific background. This makes it difficult to comply with due diligence obligations under Sections 10 et seq. of the German Money Laundering Act (GwG).\n\nIf there are indications of circumvention schemes, enhanced due diligence obligations under Section 15 GwG must be applied. If these cannot be met, the termination obligation under Section 15 (9) GwG in conjunction with Section 10 (9) GwG applies, and suspicious activity reports under Section 43 (1) GwG must be filed if necessary. The BaFin emphasizes that obliged entities must adapt their risk management and monitoring systems to identify suspicious patterns and utilize information exchange under Section 47 (5) GwG.\n\nParticular attention is drawn to circumvention schemes involving Iran, as Iran is classified as a high-risk country. The BaFin specifically mentions the involvement of “Exchange Trading Houses” and “Payment Agents,” as well as the misuse of trade finance, as known models for concealing Iran-related transactions and circumventing sanctions and due diligence obligations."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2025/aufsichtsmitteilung_250311_umgehungsgeschaefte_gw.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin veröffentlicht Aufsichtsmitteilung zur Prävention von Geldwäsche und Terrorismusfinanzierung: Risiken im Zusammenhang mit Umgehungsgeschäften",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-veroeffentlicht-aufsichtsmitteilung-zur-praevention-von-geldwaesche-und-terrorismusfinanzierung-risiken-im-zusammenhang-mit-umgehungsgeschaeften/",
-            "d": "27.03.2025"
-          }
-        ]
       }
     ],
     "ebamicaclass": [
@@ -8633,6 +8624,15 @@
   },
   "praxis": [
     {
+      "d": "18.11.2026",
+      "ti": "KT Bank AG: Bafin ordnet Maßnahmen bei der Geldwäscheprävention sowie der Kundendatenaktualisierung an und setzt Bußgelder fest",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG/meldung_2026_11_18_kt_bank_ag.html?cms_expanded=true",
+      "cat": "bussgeld",
+      "sum": "Die Finanzaufsicht Bafin hat bei der KT Bank AG erneut erhebliche Mängel bei der Prävention von Geldwäsche und Terrorismusfinanzierung festgestellt. Die Bafin hat deshalb angeordnet, dass das Institut angemessene und geeignete Maßnahmen ergreifen muss, um diese Mängel zu beseitigen."
+    },
+    {
       "d": "17.11.2026",
       "ti": "Bundesbankpräsident Joachim Nagel im Interview mit ARD plusminus",
       "auth": "Bundesbank",
@@ -9354,14 +9354,6 @@
       "auth": "AMLA",
       "src": "amla.europa.eu",
       "url": "https://www.amla.europa.eu/news-media/news-articles/amla-chair-bruna-szego-delivers-keynote-bafin-aml-conference_en",
-      "cat": "rede"
-    },
-    {
-      "d": "17.11.2025",
-      "ti": "AMLA-Vorsitzende Bruna Szego spricht auf der Euro Finance Week",
-      "auth": "AMLA",
-      "src": "amla.europa.eu",
-      "url": "https://www.amla.europa.eu/news-media/news-articles/amla-chair-bruna-szego-speaks-euro-finance-week_en",
       "cat": "rede"
     }
   ]
