@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:08:18Z",
+  "generated_at": "2026-11-18T16:09:21Z",
   "updates": {
     "bcbs": [
       {
@@ -859,25 +859,6 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_10_2026_relizenzierung_crd-drittstaatenzweigstellen_ba.html",
         "imp": "medium"
-      },
-      {
-        "d": "18.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Aufsichtsmitteilung zur Relizenzierung von CRD-Drittstaatenzweigstellen (10/2026 BA)",
-          "en": "BaFin Supervisory Communication on Re-licensing of CRD Third-Country Branches (10/2026 BA)"
-        },
-        "sl": "crd-drittstaatenzweigstellen-muessen-ihre-erlaubnis-erneuern",
-        "s": {
-          "de": "Die BaFin informiert über die Relizenzierung von CRD-Drittstaatenzweigstellen, die ihre Geschäftstätigkeit in Deutschland nach dem 10. Januar 2027 fortsetzen wollen. Dies ist aufgrund eines neuen, europaweit harmonisierten Aufsichtsregimes erforderlich, das ab diesem Datum gilt. Die BaFin hat hierzu die Aufsichtsmitteilung „10/2026 (BA): Relizenzierung von CRD-Drittstaatenzweigstellen und Anforderungen an Abwicklungskonten bei CRR-KI“ veröffentlicht.\n\nCRD-Drittstaatenzweigstellen müssen im Relizenzierungsverfahren nachweisen, dass sie über ein geeignetes Abwicklungskonto verfügen. Die BaFin präzisiert in ihrer Mitteilung die aufsichtlichen Erwartungen an diese Zweigstellen, insbesondere wenn sie ein solches Konto bei einem CRR-Kreditinstitut in Deutschland führen. Während des Verfahrens dürfen die Zweigstellen ihre Geschäfte fortführen, sofern kein Lizenzentzugsverfahren eingeleitet wurde.\n\nDie Aufsichtsmitteilung ist ab sofort gültig. Die Regelungen zur Relizenzierung gelten, bis alle Verfahren abgeschlossen sind, während die Passagen zum Abwicklungskonto bis Ende 2027 Anwendung finden.",
-          "en": "The BaFin provides information on the re-licensing of CRD third-country branches that wish to continue their business activities in Germany after January 10, 2027. This is necessary due to a new, harmonized European supervisory regime that will apply from this date. The BaFin has published supervisory communication “10/2026 (BA): Re-licensing of CRD third-country branches and requirements for settlement accounts at CRR institutions” on this matter.\n\nCRD third-country branches must demonstrate in the re-licensing process that they have a suitable settlement account. In its communication, the BaFin specifies its supervisory expectations for these branches, particularly if they maintain such an account with a CRR credit institution in Germany. During the process, branches may continue their business, provided that no license withdrawal procedure has been initiated.\n\nThe supervisory communication is effective immediately. The provisions on re-licensing apply until all procedures are completed, while the passages on settlement accounts apply until the end of 2027."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_18_am_crd-drittstaatenzweigstellen.html",
-        "imp": "high"
       }
     ],
     "solvency": [
