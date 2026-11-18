@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:08:50Z",
+  "generated_at": "2026-11-18T15:08:18Z",
   "updates": {
     "bcbs": [
       {
@@ -676,6 +676,208 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
         "imp": "medium",
         "refnum": "Konsultation 04/2020"
+      }
+    ],
+    "macomp": [
+      {
+        "d": "18.11.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Neufassung des MaComp-Rundschreibens (BaFin Konsultation 12/2026)",
+          "en": "Consultation on the Revised MaComp Circular (BaFin Consultation 12/2026)"
+        },
+        "sl": "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf",
+        "s": {
+          "de": "Die BaFin hat den Entwurf einer Neufassung des Rundschreibens MaComp zur Konsultation gestellt. Dieses Rundschreiben konkretisiert die Mindestanforderungen an die Compliance-Funktion und weitere Pflichten nach §§ 63 ff. WpHG für Wertpapierdienstleistungsunternehmen (WpDU).\n\nDas Rundschreiben gibt Hinweise zur Auslegung des 11. Abschnitts des WpHG, der Art. 21 ff. der Delegierten Verordnung (EU) 2017/565 (DV) sowie der WpDVerOV. Es berücksichtigt die heterogene Unternehmensstruktur und die Vielfalt der Geschäftsaktivitäten von WpDU und enthält Öffnungsklauseln, die eine vereinfachte Umsetzung insbesondere für kleinere Unternehmen ermöglichen. Die Anforderungen richten sich an alle WpDU im Sinne von § 2 Abs. 10 WpHG, ausgenommen sind Unternehmen, die einen Ausnahmetatbestand nach § 3 WpHG erfüllen.\n\nDie Konsultation läuft bis zum 18.11.2026. Das Rundschreiben soll ab dem Tag seiner Veröffentlichung gelten und das Rundschreiben 05/2018 (WA) ersetzen.",
+          "en": "BaFin has published a draft of the revised MaComp Circular for consultation. This circular specifies the minimum requirements for the compliance function and other obligations under Sections 63 et seq. of the German Securities Trading Act (WpHG) for investment firms (Wertpapierdienstleistungsunternehmen – WpDU).\n\nThe circular provides guidance on the interpretation of Section 11 of the WpHG, Articles 21 et seq. of Delegated Regulation (EU) 2017/565 (DR), and the WpDVerOV. It considers the heterogeneous corporate structure and the diversity of business activities of WpDU and includes opening clauses that allow for simplified implementation, especially for smaller firms. The requirements apply to all WpDU within the meaning of Section 2 (10) WpHG, with the exception of firms that meet an exemption criterion under Section 3 WpHG.\n\nThe consultation period ends on 18 November 2026. The circular is intended to apply from the date of its publication and will replace Circular 05/2018 (WA)."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_12_2026_aenderung_rs_neufassung_der_macomp.html",
+        "imp": "medium"
+      },
+      {
+        "d": "18.11.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "MaComp: Bafin konsultiert Neufassung des Rundschreibens",
+          "en": "MaComp: Bafin konsultiert Neufassung des Rundschreibens"
+        },
+        "sl": "macomp-bafin-konsultiert-neufassung-des-rundschreibens",
+        "s": {
+          "de": "Die BaFin konsultiert einen Entwurf zur Neufassung ihres Rundschreibens zu den Mindestanforderungen an die Compliance-Funktion (MaComp). Ziel ist ein Bürokratieabbau und eine Reduzierung der Komplexität durch die Streichung von Doppelungen, insbesondere dort, wo Inhalte bereits in Leitlinien der Europäischen Wertpapier- und Marktaufsichtsbehörde (ESMA) existieren.\n\nDer Entwurf konzentriert sich auf allgemeine Anforderungen an Wertpapierdienstleistungsunternehmen sowie organisatorische Anforderungen und Aufgaben der Compliance-Funktion. Die bisherigen Module BT 2–15 werden gestrichen, da sie im Wesentlichen eine Umsetzung bestehender ESMA-Leitlinien darstellen. Die BaFin betont, dass sich die Verwaltungspraxis inhaltlich nicht ändert.\n\nZukünftig wird die BaFin neue ESMA-Leitlinien nach Prüfung auf ihrer Website veröffentlichen und unmittelbar anwenden, sofern sie diese in ihre Verwaltungspraxis übernimmt. Stellungnahmen zum Entwurf können bis zum 11. Januar 2027 eingereicht werden.",
+          "en": "BaFin is consulting on a draft revision of its circular on minimum requirements for the compliance function (MaComp). The aim is to reduce bureaucracy and complexity by eliminating redundancies, particularly where content already exists in guidelines from the European Securities and Markets Authority (ESMA).\n\n The draft focuses on general requirements for investment firms and the organizational requirements and tasks of the compliance function. The previous modules BT 2–15 are being removed as they largely represent an implementation of existing ESMA guidelines. BaFin emphasizes that the substance of its administrative practice will not change.\n\nIn the future, BaFin will publish new ESMA guidelines on its website after review and apply them directly if it adopts them into its administrative practice. Comments on the draft can be submitted until January 11, 2027."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_18_konsultation_12_2026_mindestanforderungen_compliance_funktion.html",
+        "imp": "medium"
+      },
+      {
+        "d": "07.10.2024",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin aktualisiert MaComp: Mindestanforderungen an Compliance-Funktion und Produkt-Governance (RS 05/2018)",
+          "en": "BaFin Updates MaComp: Minimum Requirements for Compliance Function and Product Governance (Circular 05/2018)"
+        },
+        "sl": "macomp-in-der-fassung-vom-19-04-2018-geaendert-am-26-09-2024",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 05/2018 (WA) – MaComp – in einer am 26. September 2024 geänderten Fassung veröffentlicht. Die MaComp (Mindestanforderungen an die Compliance-Funktion und weitere Verhaltens-, Organisations- und Transparenzpflichten) konkretisieren die Anforderungen der §§ 63 ff. WpHG für Wertpapierdienstleistungsunternehmen.\n\nDas Rundschreiben enthält detaillierte Vorgaben zu den Überwachungs-, Berichts- und Beratungsaufgaben der Compliance-Funktion sowie zu deren Beteiligung an Prozessen. Es behandelt zudem Aspekte wie die Wirksamkeit, Dauerhaftigkeit und Unabhängigkeit der Compliance-Funktion und die Möglichkeit ihrer Auslagerung. Weitere Abschnitte widmen sich der Produkt-Governance, insbesondere der Bestimmung des abstrakten und konkreten Zielmarktes durch Konzepteur und Vertriebsunternehmen sowie der Vertriebsstrategie.\n\nDie Änderungen sind für alle Wertpapierdienstleistungsunternehmen relevant, da sie die organisatorischen und prozessualen Anforderungen an die Compliance-Funktion sowie die Produkt-Governance-Prozesse betreffen. Unternehmen müssen prüfen, ob ihre internen Regelungen und Prozesse den aktualisierten Mindestanforderungen entsprechen.",
+          "en": "BaFin has published Circular 05/2018 (WA) – MaComp – in a version amended on September 26, 2024. The MaComp (Minimum Requirements for the Compliance Function and other Rules of Conduct, Organisation and Transparency) specify the requirements of §§ 63 et seq. WpHG for investment firms.\n\nThe circular contains detailed provisions on the monitoring, reporting, and advisory tasks of the compliance function, as well as its involvement in processes. It also addresses aspects such as the effectiveness, permanence, and independence of the compliance function and the possibility of outsourcing it. Further sections are dedicated to product governance, particularly the determination of the abstract and concrete target market by product manufacturers and distributors, and the distribution strategy.\n\nThe changes are relevant for all investment firms, as they concern the organizational and procedural requirements for the compliance function and product governance processes. Firms must assess whether their internal regulations and processes comply with the updated minimum requirements."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_september_2024.html",
+        "imp": "low"
+      },
+      {
+        "d": "26.09.2024",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "MaComp: Geeignetheitsprüfung nach WpHG und DV (BT 7.1)",
+          "en": "MaComp: Suitability Assessment under WpHG and Delegated Regulation (BT 7.1)"
+        },
+        "sl": "bt-7-1-macomp-in-der-fassung-vom-26-09-2024-aenderungsversion",
+        "s": {
+          "de": "Die BaFin hat eine Änderungsversion des Moduls BT 7.1 der MaComp veröffentlicht, das die Geeignetheitsprüfung nach § 64 Abs. 3 WpHG und Art. 54, 55 der Delegierten Verordnung (EU) 2017/565 konkretisiert. Das Modul präzisiert die Informationspflichten von Wertpapierdienstleistungsunternehmen gegenüber ihren Kunden bezüglich des Zwecks der Geeignetheitsprüfung.\n\nWertpapierdienstleistungsunternehmen müssen Kunden eindeutig und verständlich über die Notwendigkeit vollständiger, aktueller und zutreffender Informationen zu Kenntnissen, Erfahrungen, finanziellen Verhältnissen und Anlagezielen aufklären. Es wird klargestellt, dass die Verantwortung für die Geeignetheitsbeurteilung beim Unternehmen liegt und Haftungsausschlüsse dies nicht ändern. Zudem müssen Unternehmen die Begriffe und Unterschiede von Nachhaltigkeitspräferenzen gemäß Art. 2 Abs. 7 DV erläutern und sicherstellen, dass Kunden die erbrachten Dienstleistungen verstehen.\n\nDie Unternehmen müssen über geeignete Grundsätze und Verfahren zur Einholung und einheitlichen Beurteilung kundenbezogener Informationen verfügen. Bei der Gestaltung von Fragebögen zur Geeignetheitsprüfung ist darauf zu achten, dass diese verständlich sind und häufige Gründe für unzutreffende Antworten berücksichtigt werden, um die Qualität der Kundeninformationen zu gewährleisten.",
+          "en": "BaFin has published an amended version of Module BT 7.1 of the MaComp, which specifies the suitability assessment according to Section 64 (3) WpHG and Articles 54, 55 of Delegated Regulation (EU) 2017/565. The module clarifies the information obligations of investment firms towards their clients regarding the purpose of the suitability assessment.\n\nInvestment firms must clearly and understandably inform clients about the need for complete, up-to-date, and accurate information on their knowledge, experience, financial situation, and investment objectives. It is clarified that the responsibility for the suitability assessment lies with the firm and that disclaimers do not alter this. Furthermore, firms must explain the terms and differences of sustainability preferences according to Article 2 (7) of the Delegated Regulation and ensure that clients understand the services provided.\n\nFirms must have appropriate policies and procedures for obtaining and consistently assessing client-related information. When designing questionnaires for the suitability assessment, care must be taken to ensure they are understandable and address common reasons for inaccurate answers to ensure the quality of client information."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_anlage_bt_7_1.html",
+        "imp": "low"
+      },
+      {
+        "d": "26.09.2024",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin MaComp BT 5: Konkretisierung der Product Governance-Anforderungen",
+          "en": "BaFin MaComp BT 5: Clarification of Product Governance Requirements"
+        },
+        "sl": "bt-5-macomp-in-der-fassung-vom-26-09-2024-aenderungsversion",
+        "s": {
+          "de": "Die BaFin hat eine Änderungsversion des Moduls BT 5 der MaComp veröffentlicht, das die Product Governance-Anforderungen für Wertpapierdienstleistungsunternehmen konkretisiert. Es präzisiert die Vorgaben der §§ 63 Abs. 4, 5 und 5a, 80 Abs. 9, 13, 13a, 81 Abs. 4 und 5 WpHG sowie §§ 11 und 12 WpDVerOV.\n\nDas Modul definiert Produkte als Finanzinstrumente und strukturierte Einlagen. Es unterscheidet zwischen Konzepteuren (die Produkte schaffen, entwickeln, begeben oder gestalten) und Vertriebsunternehmen (die Produkte verkaufen, vertreiben, anbieten, empfehlen oder vermarkten). Die Anforderungen gelten für Primär- und Sekundärmarktprodukte, wobei die Art des Produkts, seine Komplexität, das Risiko-Rendite-Profil, die Liquidität und der Innovationsgehalt zu berücksichtigen sind. Konzepteure müssen den abstrakten Zielmarkt auf Basis von fünf Kategorien bestimmen, die nicht ausschließlich auf quantitativen Kriterien basieren dürfen, sondern auch qualitative Erwägungen und Szenarioanalysen einbeziehen müssen. Für Produkte, die vor dem 03.01.2018 hergestellt wurden, gelten spezielle Regelungen zur Zielmarktbestimmung.\n\nDie fünf Zielmarktkategorien umfassen die Kundenkategorie (Privatkunden, Professionelle Kunden, Geeignete Gegenparteien), Kenntnisse und Erfahrungen der Zielkunden, sowie weitere, im Auszug nicht vollständig genannte Kategorien. Die Detailtiefe der Aussagen richtet sich nach der Produktart und -eigenschaften. Konzepteure müssen ihre Entscheidungen im Rahmen der Produktüberwachungsprozesse begründen und dokumentieren, insbesondere bezüglich der Zielmarktbestimmung und Vertriebsstrategien.",
+          "en": "BaFin has published an amended version of Module BT 5 of the MaComp, which specifies the product governance requirements for investment firms. It clarifies the provisions of Sections 63 (4), (5) and (5a), 80 (9), (13), (13a), 81 (4) and (5) of the German Securities Trading Act (WpHG) and Sections 11 and 12 of the German Securities Trading Ordinance (WpDVerOV).\n\nThe module defines products as financial instruments and structured deposits. It distinguishes between manufacturers (who create, develop, issue or design products) and distributors (who sell, distribute, offer, recommend or market products). The requirements apply to primary and secondary market products, taking into account the type of product, its complexity, risk-return profile, liquidity and innovative content. Manufacturers must determine the abstract target market based on five categories, which may not be based exclusively on quantitative criteria, but must also include qualitative considerations and scenario analyses. Special rules for target market determination apply to products manufactured before 3 January 2018.\n\nThe five target market categories include the client category (retail clients, professional clients, eligible counterparties), knowledge and experience of the target clients, and other categories not fully specified in the excerpt. The level of detail of the statements depends on the product type and characteristics. Manufacturers must justify and document their decisions within the product monitoring processes, especially regarding target market determination and distribution strategies."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_anlage_bt_5.html",
+        "imp": "low"
+      },
+      {
+        "d": "05.03.2024",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin veröffentlicht aktualisierte MaComp (Rundschreiben 05/2018 (WA))",
+          "en": "BaFin publishes updated MaComp (Circular 05/2018 (WA))"
+        },
+        "sl": "macomp-in-der-fassung-vom-19-04-2018-geaendert-am-28-02-2024",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 05/2018 (WA) – MaComp in einer am 28. Februar 2024 geänderten Fassung veröffentlicht. Dieses Rundschreiben legt die Mindestanforderungen an die Compliance-Funktion sowie weitere Verhaltens-, Organisations- und Transparenzpflichten für Wertpapierdienstleistungsunternehmen fest, basierend auf den §§ 63 ff. WpHG.\n\nDie MaComp konkretisiert die Anforderungen an die Überwachungs-, Berichts- und Beratungsaufgaben der Compliance-Funktion sowie deren Beteiligung an Prozessen. Es werden auch Aspekte wie Wirksamkeit, Dauerhaftigkeit, Unabhängigkeit und die Auslagerung der Compliance-Funktion oder einzelner Tätigkeiten behandelt. Ein Fachbeitrag von Deloitte Legal hebt die Aktualisierungen hervor, was auf eine relevante Anpassung für die Praxis schließen lässt.\n\nDas Rundschreiben geht zudem auf den Anwendungsbereich und Pflichtenumfang ein, das Verhältnis zu anderen Vorschriften und die Darstellung von Vorteilen, Risiken und Wertentwicklungen. Weiterhin werden detaillierte Vorgaben zur Bestimmung des abstrakten und konkreten Zielmarktes im Rahmen der Product Governance sowie das Zusammenspiel mit der Geeignetheits- bzw. Angemessenheitsprüfung gemacht.",
+          "en": "BaFin has published Circular 05/2018 (WA) – MaComp, as amended on 28 February 2024. This circular sets out the minimum requirements for the compliance function and other conduct, organisational, and transparency obligations for investment firms, based on §§ 63 et seq. WpHG.\n\nMaComp specifies the requirements for the monitoring, reporting, and advisory tasks of the compliance function, as well as its involvement in processes. It also addresses aspects such as effectiveness, permanence, independence, and the outsourcing of the compliance function or individual activities. A specialist article by Deloitte Legal highlights the updates, indicating a relevant adjustment for practical application.\n\nFurthermore, the circular covers the scope of application and obligations, the relationship to other regulations, and the presentation of benefits, risks, and performance developments. Detailed requirements for determining the abstract and concrete target market within the framework of product governance and the interaction with suitability and appropriateness assessments are also provided."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_februar_2024.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "Deloitte Legal",
+            "ti": "BT8 MaComp 2024",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bt8-macomp-2024.html",
+            "d": "10.03.2024"
+          }
+        ]
+      },
+      {
+        "d": "30.06.2023",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin aktualisiert MaComp-Rundschreiben zu Compliance-Pflichten (05/2018 (WA))",
+          "en": "BaFin updates MaComp Circular on Compliance Obligations (05/2018 (WA))"
+        },
+        "sl": "macomp-in-der-fassung-vom-19-04-2018-geaendert-am-30-06-2023",
+        "s": {
+          "de": "Die BaFin hat die Mindestanforderungen an die Compliance-Funktion (MaComp) in der Fassung vom 19. April 2018 aktualisiert. Die Änderungen wurden am 30. Juni 2023 vorgenommen und betreffen die Verhaltens-, Organisations- und Transparenzpflichten für Wertpapierdienstleistungsunternehmen.\n\nDas Rundschreiben 05/2018 (WA) konkretisiert die Anforderungen nach §§ 63 ff. WpHG. Es dient dazu, die Einhaltung dieser Pflichten sicherzustellen und die Compliance-Funktion in den Unternehmen zu stärken.\n\nDie aktualisierte Fassung ist ab dem 30. Juni 2023 gültig. Wertpapierdienstleistungsunternehmen sollten die Änderungen prüfen und ihre internen Prozesse entsprechend anpassen, um die fortlaufende Einhaltung der MaComp zu gewährleisten.",
+          "en": "BaFin has updated the Minimum Requirements for the Compliance Function (MaComp) from April 19, 2018. The amendments were made on June 30, 2023, and concern the conduct, organizational, and transparency obligations for investment firms.\n\nCircular 05/2018 (WA) specifies the requirements under sections 63 et seq. of the German Securities Trading Act (WpHG). Its purpose is to ensure compliance with these obligations and to strengthen the compliance function within firms.\n\nThe updated version is effective from June 30, 2023. Investment firms should review the changes and adjust their internal processes accordingly to ensure ongoing compliance with MaComp."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_juni_2023.html",
+        "imp": "low"
+      },
+      {
+        "d": "24.03.2021",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin MaComp: Aktualisierte Mindestanforderungen an die Compliance-Funktion",
+          "en": "BaFin MaComp: Updated Minimum Requirements for the Compliance Function"
+        },
+        "sl": "macomp-in-der-fassung-24-maerz-2021-reinschrift",
+        "s": {
+          "de": "Die BaFin hat die Mindestanforderungen an die Compliance-Funktion (MaComp) in einer aktualisierten Fassung vom 24. März 2021 veröffentlicht. Das Rundschreiben 05/2018 (WA) konkretisiert die Verhaltens-, Organisations- und Transparenzpflichten für Wertpapierdienstleistungsunternehmen gemäß Wertpapierhandelsgesetz (WpHG) und der Delegierten Verordnung (EU) 2017/565 (DV).\n\nDie MaComp gliedern sich in allgemeine (AT) und besondere (BT) Anforderungen. Die allgemeinen Anforderungen betreffen unter anderem die Gesamtverantwortung der Geschäftsleitung, die Aufbau- und Ablauforganisation, Mittel und Verfahren sowie Aufzeichnungspflichten. Die besonderen Anforderungen umfassen detaillierte Vorgaben zur Compliance-Funktion, Überwachung persönlicher Geschäfte, Informationspflichten gegenüber Kunden, Best Execution, Product Governance, Geeignetheitsprüfung, Vergütungssysteme und Interessenkonflikte.\n\nDas Dokument ist für Wertpapierdienstleistungsunternehmen relevant und bietet eine umfassende Orientierungshilfe zur Ausgestaltung ihrer Compliance-Prozesse. Es präzisiert die Anforderungen an die Unabhängigkeit und Wirksamkeit der Compliance-Funktion sowie an die Produktüberwachung und den Informationsaustausch zwischen Konzepteuren und Vertriebsunternehmen.",
+          "en": "BaFin has published an updated version of the Minimum Requirements for the Compliance Function (MaComp) dated March 24, 2021. Circular 05/2018 (WA) specifies the conduct, organizational, and transparency obligations for investment firms in accordance with the German Securities Trading Act (WpHG) and Delegated Regulation (EU) 2017/565 (DV).\n\nThe MaComp are divided into general (AT) and specific (BT) requirements. The general requirements cover, among other things, the overall responsibility of management, organizational structure and processes, resources and procedures, and record-keeping obligations. The specific requirements include detailed provisions on the compliance function, monitoring of personal transactions, information obligations towards clients, best execution, product governance, suitability assessment, remuneration systems, and conflicts of interest.\n\nThis document is relevant for investment firms and provides comprehensive guidance on designing their compliance processes. It clarifies the requirements for the independence and effectiveness of the compliance function, as well as for product monitoring and information exchange between product manufacturers and distributors."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_MaComp2.html",
+        "imp": "low"
+      }
+    ],
+    "ebatcb": [
+      {
+        "d": "18.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Relizenzierung von CRD-Drittstaatenzweigstellen und Anforderungen an Abwicklungskonten (BaFin Aufsichtsmitteilung 10/2026)",
+          "en": "Re-licensing of CRD Third-Country Branches and Requirements for Settlement Accounts (BaFin Supervisory Communication 10/2026)"
+        },
+        "sl": "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u",
+        "s": {
+          "de": "Die BaFin gibt Hinweise zur Umstellung auf das neue Aufsichtsregime für CRD-Drittstaatenzweigstellen, das ab dem 11. Januar 2027 gilt. Im Fokus steht das sogenannte Relizenzierungsverfahren gemäß § 53cc Absatz 6 KWG, bei dem die BaFin über die Fortgeltung bestehender Erlaubnisse entscheidet.\n\nDie Mitteilung richtet sich an alle Drittstaatenzweigstellen, die zum Stichtag 10. Januar 2027 eine Erlaubnis nach § 53 i.V.m. § 32 KWG besitzen und ihre Geschäftstätigkeit fortsetzen wollen. Die BaFin wird in jedem Fall einen Bescheid erlassen, der die alte Erlaubnis aufhebt und eine neue Lizenz nach den §§ 53ca bis 53cq KWG erteilt, sofern die Anforderungen erfüllt sind. Ein bereits eingereichter Self-Assessment-Questionnaire wird als Antrag behandelt.\n\nZudem präzisiert die BaFin ihre Erwartungen an das nach neuem Recht erforderliche Abwicklungskonto, das für eine Relizenzierung nachzuweisen ist. CRD-Drittstaatenzweigstellen müssen ein geeignetes Konto auswählen und durch Vertragsgestaltung sicherstellen, dass die hinterlegten Instrumente im Liquidations- oder Abwicklungsfall zur Verfügung stehen. Die Eignung kann durch ein anwaltliches Gutachten dargelegt werden. Die Aufsichtsmitteilung gilt ab Veröffentlichung und in Bezug auf Abschnitt 3 bis zum 31. Dezember 2027.",
+          "en": "BaFin provides guidance on the transition to the new supervisory regime for CRD third-country branches, which will apply from January 11, 2027. The focus is on the re-licensing procedure according to Section 53cc (6) KWG, where BaFin decides on the continued validity of existing licenses.\n\nThe communication is addressed to all third-country branches that hold a license under Section 53 in conjunction with Section 32 KWG as of January 10, 2027, and intend to continue their business activities. BaFin will issue a decision in each case, revoking the old license and granting a new one under Sections 53ca to 53cq KWG, provided the requirements are met. A self-assessment questionnaire already submitted will be treated as an application.\n\nFurthermore, BaFin specifies its expectations regarding the settlement account required under the new law, which must be demonstrated for re-licensing. CRD third-country branches must select a suitable account and ensure through contractual arrangements that the deposited instruments are available in the event of liquidation or resolution. Suitability can be demonstrated by a legal opinion. The supervisory communication applies from the date of its publication and, with regard to Section 3, until December 31, 2027."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_10_2026_relizenzierung_crd-drittstaatenzweigstellen_ba.html",
+        "imp": "medium"
+      },
+      {
+        "d": "18.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Aufsichtsmitteilung zur Relizenzierung von CRD-Drittstaatenzweigstellen (10/2026 BA)",
+          "en": "BaFin Supervisory Communication on Re-licensing of CRD Third-Country Branches (10/2026 BA)"
+        },
+        "sl": "crd-drittstaatenzweigstellen-muessen-ihre-erlaubnis-erneuern",
+        "s": {
+          "de": "Die BaFin informiert über die Relizenzierung von CRD-Drittstaatenzweigstellen, die ihre Geschäftstätigkeit in Deutschland nach dem 10. Januar 2027 fortsetzen wollen. Dies ist aufgrund eines neuen, europaweit harmonisierten Aufsichtsregimes erforderlich, das ab diesem Datum gilt. Die BaFin hat hierzu die Aufsichtsmitteilung „10/2026 (BA): Relizenzierung von CRD-Drittstaatenzweigstellen und Anforderungen an Abwicklungskonten bei CRR-KI“ veröffentlicht.\n\nCRD-Drittstaatenzweigstellen müssen im Relizenzierungsverfahren nachweisen, dass sie über ein geeignetes Abwicklungskonto verfügen. Die BaFin präzisiert in ihrer Mitteilung die aufsichtlichen Erwartungen an diese Zweigstellen, insbesondere wenn sie ein solches Konto bei einem CRR-Kreditinstitut in Deutschland führen. Während des Verfahrens dürfen die Zweigstellen ihre Geschäfte fortführen, sofern kein Lizenzentzugsverfahren eingeleitet wurde.\n\nDie Aufsichtsmitteilung ist ab sofort gültig. Die Regelungen zur Relizenzierung gelten, bis alle Verfahren abgeschlossen sind, während die Passagen zum Abwicklungskonto bis Ende 2027 Anwendung finden.",
+          "en": "The BaFin provides information on the re-licensing of CRD third-country branches that wish to continue their business activities in Germany after January 10, 2027. This is necessary due to a new, harmonized European supervisory regime that will apply from this date. The BaFin has published supervisory communication “10/2026 (BA): Re-licensing of CRD third-country branches and requirements for settlement accounts at CRR institutions” on this matter.\n\nCRD third-country branches must demonstrate in the re-licensing process that they have a suitable settlement account. In its communication, the BaFin specifies its supervisory expectations for these branches, particularly if they maintain such an account with a CRR credit institution in Germany. During the process, branches may continue their business, provided that no license withdrawal procedure has been initiated.\n\nThe supervisory communication is effective immediately. The provisions on re-licensing apply until all procedures are completed, while the passages on settlement accounts apply until the end of 2027."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_18_am_crd-drittstaatenzweigstellen.html",
+        "imp": "high"
       }
     ],
     "solvency": [
@@ -7434,130 +7636,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2019/kon_12_19_Entwurf_RS_Vbd_STS.html",
         "imp": "medium",
         "refnum": "Konsultation 12/2019"
-      }
-    ],
-    "macomp": [
-      {
-        "d": "07.10.2024",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin aktualisiert MaComp: Mindestanforderungen an Compliance-Funktion und Produkt-Governance (RS 05/2018)",
-          "en": "BaFin Updates MaComp: Minimum Requirements for Compliance Function and Product Governance (Circular 05/2018)"
-        },
-        "sl": "macomp-in-der-fassung-vom-19-04-2018-geaendert-am-26-09-2024",
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 05/2018 (WA) – MaComp – in einer am 26. September 2024 geänderten Fassung veröffentlicht. Die MaComp (Mindestanforderungen an die Compliance-Funktion und weitere Verhaltens-, Organisations- und Transparenzpflichten) konkretisieren die Anforderungen der §§ 63 ff. WpHG für Wertpapierdienstleistungsunternehmen.\n\nDas Rundschreiben enthält detaillierte Vorgaben zu den Überwachungs-, Berichts- und Beratungsaufgaben der Compliance-Funktion sowie zu deren Beteiligung an Prozessen. Es behandelt zudem Aspekte wie die Wirksamkeit, Dauerhaftigkeit und Unabhängigkeit der Compliance-Funktion und die Möglichkeit ihrer Auslagerung. Weitere Abschnitte widmen sich der Produkt-Governance, insbesondere der Bestimmung des abstrakten und konkreten Zielmarktes durch Konzepteur und Vertriebsunternehmen sowie der Vertriebsstrategie.\n\nDie Änderungen sind für alle Wertpapierdienstleistungsunternehmen relevant, da sie die organisatorischen und prozessualen Anforderungen an die Compliance-Funktion sowie die Produkt-Governance-Prozesse betreffen. Unternehmen müssen prüfen, ob ihre internen Regelungen und Prozesse den aktualisierten Mindestanforderungen entsprechen.",
-          "en": "BaFin has published Circular 05/2018 (WA) – MaComp – in a version amended on September 26, 2024. The MaComp (Minimum Requirements for the Compliance Function and other Rules of Conduct, Organisation and Transparency) specify the requirements of §§ 63 et seq. WpHG for investment firms.\n\nThe circular contains detailed provisions on the monitoring, reporting, and advisory tasks of the compliance function, as well as its involvement in processes. It also addresses aspects such as the effectiveness, permanence, and independence of the compliance function and the possibility of outsourcing it. Further sections are dedicated to product governance, particularly the determination of the abstract and concrete target market by product manufacturers and distributors, and the distribution strategy.\n\nThe changes are relevant for all investment firms, as they concern the organizational and procedural requirements for the compliance function and product governance processes. Firms must assess whether their internal regulations and processes comply with the updated minimum requirements."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_september_2024.html",
-        "imp": "low"
-      },
-      {
-        "d": "26.09.2024",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "MaComp: Geeignetheitsprüfung nach WpHG und DV (BT 7.1)",
-          "en": "MaComp: Suitability Assessment under WpHG and Delegated Regulation (BT 7.1)"
-        },
-        "sl": "bt-7-1-macomp-in-der-fassung-vom-26-09-2024-aenderungsversion",
-        "s": {
-          "de": "Die BaFin hat eine Änderungsversion des Moduls BT 7.1 der MaComp veröffentlicht, das die Geeignetheitsprüfung nach § 64 Abs. 3 WpHG und Art. 54, 55 der Delegierten Verordnung (EU) 2017/565 konkretisiert. Das Modul präzisiert die Informationspflichten von Wertpapierdienstleistungsunternehmen gegenüber ihren Kunden bezüglich des Zwecks der Geeignetheitsprüfung.\n\nWertpapierdienstleistungsunternehmen müssen Kunden eindeutig und verständlich über die Notwendigkeit vollständiger, aktueller und zutreffender Informationen zu Kenntnissen, Erfahrungen, finanziellen Verhältnissen und Anlagezielen aufklären. Es wird klargestellt, dass die Verantwortung für die Geeignetheitsbeurteilung beim Unternehmen liegt und Haftungsausschlüsse dies nicht ändern. Zudem müssen Unternehmen die Begriffe und Unterschiede von Nachhaltigkeitspräferenzen gemäß Art. 2 Abs. 7 DV erläutern und sicherstellen, dass Kunden die erbrachten Dienstleistungen verstehen.\n\nDie Unternehmen müssen über geeignete Grundsätze und Verfahren zur Einholung und einheitlichen Beurteilung kundenbezogener Informationen verfügen. Bei der Gestaltung von Fragebögen zur Geeignetheitsprüfung ist darauf zu achten, dass diese verständlich sind und häufige Gründe für unzutreffende Antworten berücksichtigt werden, um die Qualität der Kundeninformationen zu gewährleisten.",
-          "en": "BaFin has published an amended version of Module BT 7.1 of the MaComp, which specifies the suitability assessment according to Section 64 (3) WpHG and Articles 54, 55 of Delegated Regulation (EU) 2017/565. The module clarifies the information obligations of investment firms towards their clients regarding the purpose of the suitability assessment.\n\nInvestment firms must clearly and understandably inform clients about the need for complete, up-to-date, and accurate information on their knowledge, experience, financial situation, and investment objectives. It is clarified that the responsibility for the suitability assessment lies with the firm and that disclaimers do not alter this. Furthermore, firms must explain the terms and differences of sustainability preferences according to Article 2 (7) of the Delegated Regulation and ensure that clients understand the services provided.\n\nFirms must have appropriate policies and procedures for obtaining and consistently assessing client-related information. When designing questionnaires for the suitability assessment, care must be taken to ensure they are understandable and address common reasons for inaccurate answers to ensure the quality of client information."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_anlage_bt_7_1.html",
-        "imp": "low"
-      },
-      {
-        "d": "26.09.2024",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin MaComp BT 5: Konkretisierung der Product Governance-Anforderungen",
-          "en": "BaFin MaComp BT 5: Clarification of Product Governance Requirements"
-        },
-        "sl": "bt-5-macomp-in-der-fassung-vom-26-09-2024-aenderungsversion",
-        "s": {
-          "de": "Die BaFin hat eine Änderungsversion des Moduls BT 5 der MaComp veröffentlicht, das die Product Governance-Anforderungen für Wertpapierdienstleistungsunternehmen konkretisiert. Es präzisiert die Vorgaben der §§ 63 Abs. 4, 5 und 5a, 80 Abs. 9, 13, 13a, 81 Abs. 4 und 5 WpHG sowie §§ 11 und 12 WpDVerOV.\n\nDas Modul definiert Produkte als Finanzinstrumente und strukturierte Einlagen. Es unterscheidet zwischen Konzepteuren (die Produkte schaffen, entwickeln, begeben oder gestalten) und Vertriebsunternehmen (die Produkte verkaufen, vertreiben, anbieten, empfehlen oder vermarkten). Die Anforderungen gelten für Primär- und Sekundärmarktprodukte, wobei die Art des Produkts, seine Komplexität, das Risiko-Rendite-Profil, die Liquidität und der Innovationsgehalt zu berücksichtigen sind. Konzepteure müssen den abstrakten Zielmarkt auf Basis von fünf Kategorien bestimmen, die nicht ausschließlich auf quantitativen Kriterien basieren dürfen, sondern auch qualitative Erwägungen und Szenarioanalysen einbeziehen müssen. Für Produkte, die vor dem 03.01.2018 hergestellt wurden, gelten spezielle Regelungen zur Zielmarktbestimmung.\n\nDie fünf Zielmarktkategorien umfassen die Kundenkategorie (Privatkunden, Professionelle Kunden, Geeignete Gegenparteien), Kenntnisse und Erfahrungen der Zielkunden, sowie weitere, im Auszug nicht vollständig genannte Kategorien. Die Detailtiefe der Aussagen richtet sich nach der Produktart und -eigenschaften. Konzepteure müssen ihre Entscheidungen im Rahmen der Produktüberwachungsprozesse begründen und dokumentieren, insbesondere bezüglich der Zielmarktbestimmung und Vertriebsstrategien.",
-          "en": "BaFin has published an amended version of Module BT 5 of the MaComp, which specifies the product governance requirements for investment firms. It clarifies the provisions of Sections 63 (4), (5) and (5a), 80 (9), (13), (13a), 81 (4) and (5) of the German Securities Trading Act (WpHG) and Sections 11 and 12 of the German Securities Trading Ordinance (WpDVerOV).\n\nThe module defines products as financial instruments and structured deposits. It distinguishes between manufacturers (who create, develop, issue or design products) and distributors (who sell, distribute, offer, recommend or market products). The requirements apply to primary and secondary market products, taking into account the type of product, its complexity, risk-return profile, liquidity and innovative content. Manufacturers must determine the abstract target market based on five categories, which may not be based exclusively on quantitative criteria, but must also include qualitative considerations and scenario analyses. Special rules for target market determination apply to products manufactured before 3 January 2018.\n\nThe five target market categories include the client category (retail clients, professional clients, eligible counterparties), knowledge and experience of the target clients, and other categories not fully specified in the excerpt. The level of detail of the statements depends on the product type and characteristics. Manufacturers must justify and document their decisions within the product monitoring processes, especially regarding target market determination and distribution strategies."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_anlage_bt_5.html",
-        "imp": "low"
-      },
-      {
-        "d": "05.03.2024",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin veröffentlicht aktualisierte MaComp (Rundschreiben 05/2018 (WA))",
-          "en": "BaFin publishes updated MaComp (Circular 05/2018 (WA))"
-        },
-        "sl": "macomp-in-der-fassung-vom-19-04-2018-geaendert-am-28-02-2024",
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 05/2018 (WA) – MaComp in einer am 28. Februar 2024 geänderten Fassung veröffentlicht. Dieses Rundschreiben legt die Mindestanforderungen an die Compliance-Funktion sowie weitere Verhaltens-, Organisations- und Transparenzpflichten für Wertpapierdienstleistungsunternehmen fest, basierend auf den §§ 63 ff. WpHG.\n\nDie MaComp konkretisiert die Anforderungen an die Überwachungs-, Berichts- und Beratungsaufgaben der Compliance-Funktion sowie deren Beteiligung an Prozessen. Es werden auch Aspekte wie Wirksamkeit, Dauerhaftigkeit, Unabhängigkeit und die Auslagerung der Compliance-Funktion oder einzelner Tätigkeiten behandelt. Ein Fachbeitrag von Deloitte Legal hebt die Aktualisierungen hervor, was auf eine relevante Anpassung für die Praxis schließen lässt.\n\nDas Rundschreiben geht zudem auf den Anwendungsbereich und Pflichtenumfang ein, das Verhältnis zu anderen Vorschriften und die Darstellung von Vorteilen, Risiken und Wertentwicklungen. Weiterhin werden detaillierte Vorgaben zur Bestimmung des abstrakten und konkreten Zielmarktes im Rahmen der Product Governance sowie das Zusammenspiel mit der Geeignetheits- bzw. Angemessenheitsprüfung gemacht.",
-          "en": "BaFin has published Circular 05/2018 (WA) – MaComp, as amended on 28 February 2024. This circular sets out the minimum requirements for the compliance function and other conduct, organisational, and transparency obligations for investment firms, based on §§ 63 et seq. WpHG.\n\nMaComp specifies the requirements for the monitoring, reporting, and advisory tasks of the compliance function, as well as its involvement in processes. It also addresses aspects such as effectiveness, permanence, independence, and the outsourcing of the compliance function or individual activities. A specialist article by Deloitte Legal highlights the updates, indicating a relevant adjustment for practical application.\n\nFurthermore, the circular covers the scope of application and obligations, the relationship to other regulations, and the presentation of benefits, risks, and performance developments. Detailed requirements for determining the abstract and concrete target market within the framework of product governance and the interaction with suitability and appropriateness assessments are also provided."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_februar_2024.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "Deloitte Legal",
-            "ti": "BT8 MaComp 2024",
-            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bt8-macomp-2024.html",
-            "d": "10.03.2024"
-          }
-        ]
-      },
-      {
-        "d": "30.06.2023",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin aktualisiert MaComp-Rundschreiben zu Compliance-Pflichten (05/2018 (WA))",
-          "en": "BaFin updates MaComp Circular on Compliance Obligations (05/2018 (WA))"
-        },
-        "sl": "macomp-in-der-fassung-vom-19-04-2018-geaendert-am-30-06-2023",
-        "s": {
-          "de": "Die BaFin hat die Mindestanforderungen an die Compliance-Funktion (MaComp) in der Fassung vom 19. April 2018 aktualisiert. Die Änderungen wurden am 30. Juni 2023 vorgenommen und betreffen die Verhaltens-, Organisations- und Transparenzpflichten für Wertpapierdienstleistungsunternehmen.\n\nDas Rundschreiben 05/2018 (WA) konkretisiert die Anforderungen nach §§ 63 ff. WpHG. Es dient dazu, die Einhaltung dieser Pflichten sicherzustellen und die Compliance-Funktion in den Unternehmen zu stärken.\n\nDie aktualisierte Fassung ist ab dem 30. Juni 2023 gültig. Wertpapierdienstleistungsunternehmen sollten die Änderungen prüfen und ihre internen Prozesse entsprechend anpassen, um die fortlaufende Einhaltung der MaComp zu gewährleisten.",
-          "en": "BaFin has updated the Minimum Requirements for the Compliance Function (MaComp) from April 19, 2018. The amendments were made on June 30, 2023, and concern the conduct, organizational, and transparency obligations for investment firms.\n\nCircular 05/2018 (WA) specifies the requirements under sections 63 et seq. of the German Securities Trading Act (WpHG). Its purpose is to ensure compliance with these obligations and to strengthen the compliance function within firms.\n\nThe updated version is effective from June 30, 2023. Investment firms should review the changes and adjust their internal processes accordingly to ensure ongoing compliance with MaComp."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0518_MaComp_fassung_juni_2023.html",
-        "imp": "low"
-      },
-      {
-        "d": "24.03.2021",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin MaComp: Aktualisierte Mindestanforderungen an die Compliance-Funktion",
-          "en": "BaFin MaComp: Updated Minimum Requirements for the Compliance Function"
-        },
-        "sl": "macomp-in-der-fassung-24-maerz-2021-reinschrift",
-        "s": {
-          "de": "Die BaFin hat die Mindestanforderungen an die Compliance-Funktion (MaComp) in einer aktualisierten Fassung vom 24. März 2021 veröffentlicht. Das Rundschreiben 05/2018 (WA) konkretisiert die Verhaltens-, Organisations- und Transparenzpflichten für Wertpapierdienstleistungsunternehmen gemäß Wertpapierhandelsgesetz (WpHG) und der Delegierten Verordnung (EU) 2017/565 (DV).\n\nDie MaComp gliedern sich in allgemeine (AT) und besondere (BT) Anforderungen. Die allgemeinen Anforderungen betreffen unter anderem die Gesamtverantwortung der Geschäftsleitung, die Aufbau- und Ablauforganisation, Mittel und Verfahren sowie Aufzeichnungspflichten. Die besonderen Anforderungen umfassen detaillierte Vorgaben zur Compliance-Funktion, Überwachung persönlicher Geschäfte, Informationspflichten gegenüber Kunden, Best Execution, Product Governance, Geeignetheitsprüfung, Vergütungssysteme und Interessenkonflikte.\n\nDas Dokument ist für Wertpapierdienstleistungsunternehmen relevant und bietet eine umfassende Orientierungshilfe zur Ausgestaltung ihrer Compliance-Prozesse. Es präzisiert die Anforderungen an die Unabhängigkeit und Wirksamkeit der Compliance-Funktion sowie an die Produktüberwachung und den Informationsaustausch zwischen Konzepteuren und Vertriebsunternehmen.",
-          "en": "BaFin has published an updated version of the Minimum Requirements for the Compliance Function (MaComp) dated March 24, 2021. Circular 05/2018 (WA) specifies the conduct, organizational, and transparency obligations for investment firms in accordance with the German Securities Trading Act (WpHG) and Delegated Regulation (EU) 2017/565 (DV).\n\nThe MaComp are divided into general (AT) and specific (BT) requirements. The general requirements cover, among other things, the overall responsibility of management, organizational structure and processes, resources and procedures, and record-keeping obligations. The specific requirements include detailed provisions on the compliance function, monitoring of personal transactions, information obligations towards clients, best execution, product governance, suitability assessment, remuneration systems, and conflicts of interest.\n\nThis document is relevant for investment firms and provides comprehensive guidance on designing their compliance processes. It clarifies the requirements for the independence and effectiveness of the compliance function, as well as for product monitoring and information exchange between product manufacturers and distributors."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Anlage/dl_MaComp2.html",
-        "imp": "low"
       }
     ],
     "zagmarisk": [

@@ -123,6 +123,37 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-19": {
+   "window": [
+    "2026-11-18"
+   ],
+   "keys": [
+    "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u",
+    "crd-drittstaatenzweigstellen-muessen-ihre-erlaubnis-erneuern",
+    "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf",
+    "macomp-bafin-konsultiert-neufassung-des-rundschreibens"
+   ],
+   "hook": "Ab dem 11.01.2027 müssen CRD-Drittstaatenzweigstellen ihre bestehende Erlaubnis erneuern.",
+   "folge": "Die BaFin hat eine Aufsichtsmitteilung zur Relizenzierung von CRD-Drittstaatenzweigstellen veröffentlicht. Institute müssen ein geeignetes Abwicklungskonto nachweisen, um ihre Geschäftstätigkeit fortsetzen zu können.",
+   "cover": "BaFin: CRD-Drittstaatenzweigstellen brauchen neue Lizenz",
+   "zeilen": [
+    "BaFin: Konsultation zur Neufassung des MaComp-Rundschreibens bis 11.01.2027",
+    "BaFin: Neufassung des MaComp-Rundschreibens bis 18.11.2026 zur Konsultation"
+   ],
+   "frage": "Haben Sie bereits die Anforderungen an das neue Abwicklungskonto geprüft?",
+   "top": "crd-drittstaatenzweigstellen-muessen-ihre-erlaubnis-erneuern",
+   "kern": {
+    "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf": "Die BaFin konsultiert bis zum 18.11.2026 den Entwurf einer Neufassung des MaComp-Rundschreibens, das ab Veröffentlichung das Rundschreiben 05/2018 (WA) ersetzen soll.",
+    "macomp-bafin-konsultiert-neufassung-des-rundschreibens": "Die BaFin konsultiert bis zum 11.01.2027 die Neufassung des MaComp-Rundschreibens, um Bürokratie abzubauen und Doppelungen mit ESMA-Leitlinien zu streichen.",
+    "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u": "Die BaFin gibt Hinweise zur Relizenzierung von CRD-Drittstaatenzweigstellen ab dem 11.01.2027 und präzisiert die Anforderungen an das nachzuweisende Abwicklungskonto.",
+    "crd-drittstaatenzweigstellen-muessen-ihre-erlaubnis-erneuern": "CRD-Drittstaatenzweigstellen müssen ihre Erlaubnis nach dem 10.01.2027 erneuern und ein geeignetes Abwicklungskonto nachweisen, um ihre Geschäftstätigkeit fortzusetzen."
+   },
+   "doppelt": [
+    "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u"
+   ],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
