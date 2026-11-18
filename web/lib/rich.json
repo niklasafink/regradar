@@ -1823,6 +1823,283 @@
    "tokens": 7731
   }
  },
+ "ebatcb-2026-11-18-aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u": {
+  "h1": "Relizenzierung von CRD-Drittstaatenzweigstellen und Abwicklungskonten (BaFin Aufsichtsmitteilung 10/2026)",
+  "seo_title": "CRD-Drittstaatenzweigstellen: Relizenzierung 2027",
+  "meta_description": "BaFin klärt Relizenzierungsverfahren für CRD-Drittstaatenzweigstellen ab 11.01.2027 und Anforderungen an Abwicklungskonten bis 31.12.2027.",
+  "lead": "Die BaFin erläutert den Ablauf des Relizenzierungsverfahrens für CRD-Drittstaatenzweigstellen und ihre Erwartungen an Abwicklungskonten. Betroffen sind alle Drittstaatenzweigstellen mit bestehender KWG-Erlaubnis, die ihren Betrieb über den 10.01.2027 hinaus fortsetzen wollen.",
+  "aka": [
+   "CRD-Drittstaatenzweigstellen Relizenzierung",
+   "BaFin Aufsichtsmitteilung 10/2026",
+   "Abwicklungskonto CRD VI",
+   "§ 53cc KWG Relizenzierung",
+   "CRD VI Drittlandzweigstelle"
+  ],
+  "summary": "Die BaFin stellt klar, dass bestehende Erlaubnisse nach § 53 KWG nicht automatisch erlöschen oder umgewandelt werden. Sie erlässt in jedem Fall einen Bescheid, der die alte Erlaubnis aufhebt und eine neue erteilt. Zugleich präzisiert sie die Anforderungen an das Abwicklungskonto, das für die Relizenzierung nachzuweisen ist.",
+  "overview": [
+   "Das KWG enthält seit dem 01.04.2026 ein eigenes Aufsichtsregime für CRD-Drittstaatenzweigstellen, das ab dem 11.01.2027 gilt. Die BaFin stellt mit der Aufsichtsmitteilung 10/2026 klar, dass § 53cc Absatz 6 KWG keinen Automatismus vorsieht: Bestehende Lizenzen erlöschen nicht automatisch und werden nicht automatisch umgestellt. Die BaFin erlässt stattdessen in jedem Fall einen Bescheid, der die alte Erlaubnis aufhebt und die neue Lizenz nach §§ 53ca bis 53cq KWG erteilt. Ein bereits eingereicherter Self-Assessment-Questionnaire gilt als Antrag; ein gesonderter Antrag ist nicht erforderlich. Läuft der 10.01.2027 ab, ohne dass ein Bescheid ergangen ist, gilt der bisherige Geschäftsbetrieb bis zum Verfahrensabschluss grundsätzlich als erlaubt.",
+   "Für das Abwicklungskonto erwartet die BaFin, dass Drittstaatenzweigstellen eigenständig ein geeignetes Konto bei einem CRR-Kreditinstitut oder der Deutschen Bundesbank auswählen und vertraglich sicherstellen, dass hinterlegte Instrumente im Liquidations- oder Abwicklungsfall verfügbar sind. Die Eignung kann durch ein anwaltliches Gutachten nachgewiesen werden. Einen abschließenden Kriterienkatalog veröffentlicht die BaFin nicht. Die Aufsichtsmitteilung gilt ab Veröffentlichung; Abschnitt 3 zu Abwicklungskonten gilt bis 31.12.2027."
+  ],
+  "facts": [
+   {
+    "label": "Veröffentlicht",
+    "value": "18.11.2026"
+   },
+   {
+    "label": "Anwendungsbeginn neues Regime",
+    "value": "11.01.2027"
+   },
+   {
+    "label": "Stichtag bestehende Erlaubnisse",
+    "value": "10.01.2027"
+   },
+   {
+    "label": "Geltung Abschnitt 3 (Abwicklungskonto)",
+    "value": "bis 31.12.2027"
+   },
+   {
+    "label": "Rechtsgrundlage",
+    "value": "§§ 53ca bis 53cq KWG (CRD VI-Umsetzung)"
+   },
+   {
+    "label": "Gesetz in Kraft seit",
+    "value": "01.04.2026"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Drittstaatenzweigst.",
+    "note": "Kernzielgruppe der Mitteilung",
+    "detail": "Alle Zweigstellen von Drittstaatsinstituten mit Erlaubnis nach § 53 i.V.m. § 32 KWG, die den Betrieb über den 10.01.2027 hinaus fortsetzen wollen, müssen das Relizenzierungsverfahren durchlaufen und ein Abwicklungskonto nachweisen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "CRR-Kreditinstitute",
+    "note": "Als Anbieter von Abwicklungskonten",
+    "detail": "CRR-Kreditinstitute können Drittstaatenzweigstellen ein Abwicklungskonto anbieten. Eigene Handlungspflichten im Relizenzierungsverfahren ergeben sich für sie nicht direkt.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Compliance / Recht",
+    "note": "Verfahrenssteuerung und Nachweise",
+    "detail": "Compliance- und Rechtsabteilungen der betroffenen Zweigstellen müssen das Relizenzierungsverfahren koordinieren, das Abwicklungskonto auswählen, Vertragsgestaltung prüfen und ggf. ein anwaltliches Gutachten einholen.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "§ 53cc Abs. 6 KWG",
+    "title": "Kein Automatismus bei Lizenzen",
+    "text": "Die BaFin stellt klar: Bestehende Erlaubnisse erlöschen nicht automatisch am 10.01.2027 und werden nicht automatisch umgestellt. Die BaFin erlässt in jedem Fall einen Bescheid, der alte Erlaubnis aufhebt und neue Lizenz erteilt."
+   },
+   {
+    "ref": "§ 53ce Abs. 3 KWG",
+    "title": "Abwicklungskonto: Anforderungen",
+    "text": "Drittstaatenzweigstellen wählen eigenständig ein Abwicklungskonto bei einem CRR-Institut oder der Deutschen Bundesbank und stellen vertraglich sicher, dass Instrumente im Liquidations- oder Abwicklungsfall verfügbar sind. Nachweis durch anwaltliches Gutachten empfohlen."
+   },
+   {
+    "ref": "",
+    "title": "Self-Assessment gilt als Antrag",
+    "text": "Ein bereits eingereichter Self-Assessment-Questionnaire wird von der BaFin als Antrag auf Relizenzierung behandelt. Ein separater Antrag ist nicht erforderlich."
+   },
+   {
+    "ref": "",
+    "title": "Übergangsbetrieb bei offenen Verfahren",
+    "text": "Ist ein Relizenzierungsantrag am 10.01.2027 noch nicht beschieden, gilt der uneingeschränkte Betrieb im bisherigen Rahmen bis zum Verfahrensabschluss grundsätzlich als erlaubt, sofern kein Entzugsverfahren läuft."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob eine bestehende Erlaubnis nach § 53 KWG vorliegt und ob der Betrieb nach dem 10.01.2027 fortgeführt werden soll.",
+   "Self-Assessment-Questionnaire einreichen, falls noch nicht geschehen, da er als Relizenzierungsantrag gilt.",
+   "Geeignetes Abwicklungskonto bei einem CRR-Kreditinstitut oder der Deutschen Bundesbank auswählen und Vertragsgestaltung auf Verfügbarkeit der Instrumente im Abwicklungsfall prüfen.",
+   "Anwaltliches Gutachten zur Eignung des gewählten Abwicklungskontos einholen und für das Relizenzierungsverfahren bereithalten.",
+   "Sicherstellen, dass jederzeit Auskunft über Kapitalausstattung und hinterlegte Instrumente erteilt werden kann."
+  ],
+  "timeline": [
+   {
+    "date": "01.04.2026",
+    "label": "KWG-Regime in Kraft",
+    "kind": "schritt"
+   },
+   {
+    "date": "18.11.2026",
+    "label": "Aufsichtsmitteilung veröffentlicht",
+    "kind": "schritt"
+   },
+   {
+    "date": "10.01.2027",
+    "label": "Stichtag bestehende Erlaubnisse",
+    "kind": "frist"
+   },
+   {
+    "date": "11.01.2027",
+    "label": "Neues Regime anwendbar",
+    "kind": "kern"
+   },
+   {
+    "date": "31.12.2027",
+    "label": "Geltungsende Abschnitt 3",
+    "kind": "frist"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Erlöschen bestehende Erlaubnisse automatisch am 10.01.2027?",
+    "a": "Nein. Die BaFin legt § 53cc Absatz 6 KWG so aus, dass kein Automatismus gilt. Sie erlässt in jedem Fall einen Bescheid, der die alte Erlaubnis aufhebt und die neue erteilt, sofern die Anforderungen erfüllt sind."
+   },
+   {
+    "q": "Muss nach Einreichung des Self-Assessment-Questionnaires ein gesonderter Antrag gestellt werden?",
+    "a": "Nein. Die BaFin behandelt den eingereichten Fragebogen als Relizenzierungsantrag. Ein separater Antrag auf Beschluss der Fortgeltung ist nicht erforderlich."
+   },
+   {
+    "q": "Wie weist eine Drittstaatenzweigstelle die Eignung ihres Abwicklungskontos nach?",
+    "a": "Die BaFin empfiehlt, die Eignung durch ein anwaltliches Gutachten darzulegen. Einen abschließenden Kriterienkatalog veröffentlicht die BaFin nicht. Maßgeblich ist, ob die hinterlegten Instrumente im Liquidations- oder Abwicklungsfall verfügbar sind."
+   },
+   {
+    "q": "Was gilt, wenn der Bescheid bis zum 10.01.2027 noch nicht erteilt wurde?",
+    "a": "Der bisherige Geschäftsbetrieb gilt bis zum Abschluss des Verwaltungsverfahrens grundsätzlich als erlaubt, es sei denn, es läuft bereits ein Verfahren zur Entziehung der bisherigen Erlaubnis."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Die Aufsichtsmitteilung nennt keine konkreten Fristen für die Einreichung des Self-Assessment-Questionnaires vor dem Stichtag 10.01.2027.",
+   "Ob und wann Inhalte aus Abschnitt 3 in ein Rundschreiben überführt werden, lässt die BaFin offen.",
+   "Kriterien für die Eignung eines Abwicklungskontos werden von der BaFin nicht als Katalog veröffentlicht; Rechtsunsicherheit bei der Auswahl bleibt bestehen."
+  ],
+  "meta": {
+   "generated": "2026-11-18",
+   "model": "sonnet",
+   "source": "HTML, 7109 Zeichen, gekürzt auf 7109",
+   "dropped": 0,
+   "tokens": 11756
+  }
+ },
+ "ebatcb-2026-11-18-crd-drittstaatenzweigstellen-muessen-ihre-erlaubnis-erneuern": {
+  "h1": "BaFin-Aufsichtsmitteilung: Relizenzierung von CRD-Drittstaatenzweigstellen (10/2026 BA)",
+  "seo_title": "CRD-Drittstaatenzweigstellen: Relizenzierung 2027",
+  "meta_description": "BaFin verlangt Erlaubniserneuerung für CRD-Drittstaatenzweigstellen bis 10.01.2027. Aufsichtsmitteilung 10/2026 BA regelt Verfahren und Abwicklungskonto.",
+  "lead": "CRD-Drittstaatenzweigstellen müssen ihre Erlaubnis bei der BaFin erneuern lassen, wenn sie ihre Geschäfte in Deutschland nach dem 10.01.2027 fortführen wollen. Die BaFin hat dazu am 18.11.2026 die Aufsichtsmitteilung 10/2026 (BA) veröffentlicht.",
+  "aka": [
+   "Relizenzierung Drittstaatenzweigstellen",
+   "CRD VI Drittlandzweigstellen BaFin",
+   "Aufsichtsmitteilung 10/2026 BA",
+   "Third-country branches CRD relicensing",
+   "CRD-Drittstaatenzweigstellen Erlaubnis"
+  ],
+  "summary": "CRD-Drittstaatenzweigstellen, die ab dem 11.01.2027 unter dem neuen europaweit harmonisierten Aufsichtsregime tätig bleiben wollen, müssen ihre Erlaubnis bei der BaFin erneuern. Die Aufsichtsmitteilung 10/2026 (BA) regelt das Verfahren und konkretisiert Anforderungen an das Abwicklungskonto bei CRR-Kreditinstituten in Deutschland.",
+  "overview": [
+   "Ab dem 11.01.2027 gilt für CRD-Drittstaatenzweigstellen ein neues, europaweit harmonisiertes Aufsichtsregime. Zweigstellen, die ihre bisherige Geschäftstätigkeit in Deutschland fortsetzen möchten, müssen zuvor bei der BaFin eine Relizenzierung beantragen. Während das Verfahren läuft, dürfen sie ihre Geschäfte auch nach dem Stichtag 10.01.2027 weiterführen, solange die BaFin kein Lizenzentzugsverfahren eingeleitet hat.",
+   "Im Relizenzierungsverfahren müssen die Zweigstellen nachweisen, dass sie über ein geeignetes Abwicklungskonto verfügen. Die Aufsichtsmitteilung 10/2026 (BA) konkretisiert die aufsichtlichen Erwartungen der BaFin für den Fall, dass dieses Konto bei einem CRR-Kreditinstitut in Deutschland geführt wird. Die Mitteilung gilt ab sofort. Die Relizenzierungspassagen laufen bis zum Abschluss aller Verfahren, die Passagen zum Abwicklungskonto bis Ende 2027."
+  ],
+  "facts": [
+   {
+    "label": "Veröffentlicht",
+    "value": "18.11.2026"
+   },
+   {
+    "label": "Bezeichnung",
+    "value": "Aufsichtsmitteilung 10/2026 (BA)"
+   },
+   {
+    "label": "Stichtag Relizenzierung",
+    "value": "10.01.2027"
+   },
+   {
+    "label": "Neues Regime ab",
+    "value": "11.01.2027"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "BaFin"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Drittstaatenzweigstellen",
+    "note": "Unmittelbar betroffen, Handlungspflicht",
+    "detail": "CRD-Drittstaatenzweigstellen, die nach dem 10.01.2027 in Deutschland tätig bleiben wollen, müssen die Relizenzierung bei der BaFin beantragen und ein geeignetes Abwicklungskonto nachweisen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "CRR-Kreditinstitute",
+    "note": "Betroffen als Kontoführer",
+    "detail": "CRR-KI in Deutschland, bei denen CRD-Drittstaatenzweigstellen ein Abwicklungskonto führen, müssen die BaFin-Erwartungen aus der Aufsichtsmitteilung kennen und umsetzen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Inlandsbanken (sonstige)",
+    "note": "Nicht direkt adressiert",
+    "detail": "Reine Inlandsinstitute ohne Verbindung zu Drittstaatenzweigstellen sind vom Verfahren nicht betroffen.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "10/2026 (BA)",
+    "title": "Neue Aufsichtsmitteilung zur Relizenzierung",
+    "text": "Die BaFin regelt das Relizenzierungsverfahren für CRD-Drittstaatenzweigstellen und konkretisiert Anforderungen an das Abwicklungskonto bei CRR-KI. Gilt ab sofort."
+   },
+   {
+    "ref": "CRD VI",
+    "title": "Harmonisiertes Aufsichtsregime ab 11.01.2027",
+    "text": "Ab dem 11.01.2027 gilt europaweit ein einheitliches Regime für Drittstaatenzweigstellen. Ohne Relizenzierung ist die Fortführung der Geschäfte nicht zulässig."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob das Institut als CRD-Drittstaatenzweigstelle in Deutschland tätig ist und eine Relizenzierung erforderlich ist.",
+   "Relizenzierungsantrag bei der BaFin stellen, um Geschäfte nach dem 10.01.2027 fortführen zu dürfen.",
+   "Nachweis eines geeigneten Abwicklungskontos vorbereiten und BaFin-Erwartungen gemäß Aufsichtsmitteilung 10/2026 (BA) erfüllen.",
+   "Für CRR-KI: eigene Anforderungen aus der Aufsichtsmitteilung prüfen, sofern Drittstaatenzweigstellen Konten führen."
+  ],
+  "timeline": [
+   {
+    "date": "18.11.2026",
+    "label": "Aufsichtsmitteilung veröffentlicht",
+    "kind": "schritt"
+   },
+   {
+    "date": "10.01.2027",
+    "label": "Stichtag Relizenzierung",
+    "kind": "frist"
+   },
+   {
+    "date": "11.01.2027",
+    "label": "Neues Aufsichtsregime gilt",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was passiert, wenn eine Zweigstelle den Stichtag 10.01.2027 ohne Relizenzierung überschreitet?",
+    "a": "Sie darf ihre bisherigen Geschäfte während des laufenden Verfahrens fortführen, sofern die BaFin kein Lizenzentzugsverfahren eingeleitet hat. Ohne laufendes Verfahren ist die Fortführung nicht zulässig."
+   },
+   {
+    "q": "Welche Anforderungen stellt die BaFin an das Abwicklungskonto?",
+    "a": "Die Zweigstelle muss im Relizenzierungsverfahren ein geeignetes Abwicklungskonto nachweisen. Die Aufsichtsmitteilung 10/2026 (BA) konkretisiert die BaFin-Erwartungen für Konten bei CRR-KI in Deutschland. Details sind der Mitteilung zu entnehmen."
+   },
+   {
+    "q": "Bis wann gelten die Regelungen zum Abwicklungskonto?",
+    "a": "Die entsprechenden Passagen der Aufsichtsmitteilung gelten bis Ende 2027. Die Relizenzierungspassagen gelten so lange, bis alle Verfahren abgeschlossen sind."
+   },
+   {
+    "q": "Welche Institute sind CRD-Drittstaatenzweigstellen?",
+    "a": "CRD-Drittstaatenzweigstellen sind im Kreditwesengesetz (KWG) definiert. CRD steht für die Capital Requirements Directive. Weitere Abgrenzungen ergeben sich aus dem KWG."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Die Aufsichtsmitteilung selbst (Volltext) lag nicht als Quelle vor; konkrete Verfahrensschritte und Fristen für die Antragstellung sind nicht belegt.",
+   "Ob eine Übergangsfrist für bereits eingereichte Anträge besteht, geht aus der Quelle nicht hervor.",
+   "Stichtag in der Zusammenfassung (10.01.2027) und im Quelltext (11.01.2027 als Anwendungsdatum des neuen Regimes) weichen leicht voneinander ab; Quelle nennt beide Daten."
+  ],
+  "meta": {
+   "generated": "2026-11-18",
+   "model": "sonnet",
+   "source": "HTML, 2440 Zeichen, gekürzt auf 2440",
+   "dropped": 2,
+   "tokens": 9303
+  }
+ },
  "fitproper-2026-09-04-bafin-anzeigen-fuer-inhaber-besonderer-schluesselfunktionen-mvp-portal-ab-dem-4": {
   "h1": "BaFin: Fit-&-Proper-Anzeigen über MVP-Portal ab 01.12.2026 (BRUBEG/KWG)",
   "seo_title": "BaFin Fit & Proper Anzeigen MVP-Portal 2026",
@@ -2295,6 +2572,267 @@
    "source": "HTML, 3975 Zeichen, gekürzt auf 3975",
    "dropped": 0,
    "tokens": 8401
+  }
+ },
+ "macomp-2026-11-18-konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf": {
+  "h1": "BaFin konsultiert Neufassung des MaComp-Rundschreibens (Konsultation 12/2026)",
+  "seo_title": "MaComp Neufassung, BaFin Konsultation 12/2026",
+  "meta_description": "BaFin konsultiert Neufassung des MaComp-Rundschreibens für Wertpapierdienstleister. Konsultationsfrist endet 18.11.2026. RS 05/2018 (WA) wird abgelöst.",
+  "lead": "Die BaFin hat am 18.11.2026 den Entwurf einer Neufassung des MaComp-Rundschreibens zur Konsultation gestellt. Betroffen sind alle Wertpapierdienstleistungsunternehmen nach WpHG.",
+  "aka": [
+   "MaComp Neufassung 2026",
+   "BaFin Konsultation 12/2026",
+   "Mindestanforderungen Compliance-Funktion WpHG",
+   "MaComp Rundschreiben Wertpapierdienstleister",
+   "RS 05/2018 WA Nachfolger"
+  ],
+  "summary": "Die BaFin konsultiert die Neufassung des MaComp-Rundschreibens, das die Anforderungen an die Compliance-Funktion und weitere Pflichten für Wertpapierdienstleistungsunternehmen konkretisiert. Es löst das Rundschreiben 05/2018 (WA) ab und tritt mit Veröffentlichung in Kraft.",
+  "overview": [
+   "Die BaFin hat den Entwurf einer vollständigen Neufassung des MaComp-Rundschreibens veröffentlicht. Das Rundschreiben konkretisiert die Mindestanforderungen an die Compliance-Funktion sowie weitere Verhaltenspflichten für Wertpapierdienstleistungsunternehmen (WpDU). Es gibt Auslegungshinweise zum 11. Abschnitt des WpHG, zu den Artikeln 21 ff. der Delegierten Verordnung (EU) 2017/565 sowie zur WpDVerOV.",
+   "Die Neufassung berücksichtigt die unterschiedliche Größe und Struktur der WpDU und enthält Öffnungsklauseln für vereinfachte Umsetzungen, insbesondere für kleinere Unternehmen. Ausgenommen sind Institute, die einen Ausnahmetatbestand nach WpHG erfüllen. Das neue Rundschreiben soll das bisherige Rundschreiben 05/2018 (WA) mit seiner Veröffentlichung ersetzen."
+  ],
+  "facts": [
+   {
+    "label": "Konsultationsnummer",
+    "value": "12/2026"
+   },
+   {
+    "label": "Veröffentlicht",
+    "value": "18.11.2026"
+   },
+   {
+    "label": "Konsultationsfrist",
+    "value": "18.11.2026"
+   },
+   {
+    "label": "Abgelöstes Rundschreiben",
+    "value": "RS 05/2018 (WA)"
+   },
+   {
+    "label": "Ikrafttreten",
+    "value": "Tag der Veröffentlichung des finalen Rundschreibens"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "BaFin"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Wertpapierfirmen",
+    "note": "Vollumfänglich betroffen",
+    "detail": "Alle WpDU nach WpHG, die keine Ausnahme nach WpHG in Anspruch nehmen. Compliance-Funktion und Verhaltenspflichten sind neu zu überprüfen und ggf. anzupassen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Banken mit WpDL",
+    "note": "Betroffen, soweit WpDU-Status",
+    "detail": "Kreditinstitute, die Wertpapierdienstleistungen erbringen, gelten als WpDU und müssen die neuen Anforderungen einhalten.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Kleine WpDU",
+    "note": "Öffnungsklauseln verfügbar",
+    "detail": "Für kleinere Unternehmen sieht die Neufassung Öffnungsklauseln vor, die eine vereinfachte Umsetzung einzelner Anforderungen ermöglichen.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "RS 05/2018 (WA)",
+    "title": "Vollständige Ablösung des bisherigen MaComp",
+    "text": "Das neue Rundschreiben ersetzt RS 05/2018 (WA) vollständig. WpDU müssen ihre internen Regelwerke und Prozesse auf Basis der Neufassung überprüfen und anpassen."
+   },
+   {
+    "ref": "DV (EU) 2017/565",
+    "title": "Aktualisierte Auslegungshinweise",
+    "text": "Das Rundschreiben gibt aktualisierte Hinweise zur Auslegung der Art. 21 ff. der Delegierten Verordnung (EU) 2017/565 sowie der WpDVerOV."
+   },
+   {
+    "ref": "",
+    "title": "Öffnungsklauseln für kleinere WpDU",
+    "text": "Kleinere Unternehmen können vereinfachte Umsetzungswege nutzen. Die Neufassung berücksichtigt ausdrücklich die Heterogenität der Unternehmensstrukturen."
+   }
+  ],
+  "todos": [
+   "Entwurf des neuen MaComp-Rundschreibens herunterladen und mit internen Compliance-Vorgaben abgleichen",
+   "Gap-Analyse: Unterschiede zur bisherigen Fassung RS 05/2018 (WA) identifizieren und Handlungsbedarf dokumentieren",
+   "Prüfen, ob Öffnungsklauseln für das eigene Institut anwendbar sind",
+   "Stellungnahme zur Konsultation vorbereiten, falls interne Positionen abweichen",
+   "Zeitplan für Anpassung interner Richtlinien und Schulungen aufsetzen, sobald finale Fassung vorliegt"
+  ],
+  "timeline": [
+   {
+    "date": "18.11.2026",
+    "label": "Konsultation veröffentlicht",
+    "kind": "kern"
+   },
+   {
+    "date": "18.11.2026",
+    "label": "Konsultationsfrist endet",
+    "kind": "frist"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Wer ist von der MaComp-Neufassung betroffen?",
+    "a": "Alle Wertpapierdienstleistungsunternehmen nach WpHG, die keinen Ausnahmetatbestand erfüllen. Das umfasst Wertpapierfirmen und Kreditinstitute, die Wertpapierdienstleistungen erbringen."
+   },
+   {
+    "q": "Wann tritt das neue Rundschreiben in Kraft?",
+    "a": "Das neue MaComp-Rundschreiben soll mit dem Tag seiner Veröffentlichung in Kraft treten und gleichzeitig RS 05/2018 (WA) ersetzen. Ein konkretes Datum für die finale Veröffentlichung ist noch nicht bekannt."
+   },
+   {
+    "q": "Gibt es Erleichterungen für kleinere Institute?",
+    "a": "Ja. Die Neufassung enthält Öffnungsklauseln, die kleineren WpDU eine vereinfachte Umsetzung einzelner Anforderungen ermöglichen. Welche Klauseln anwendbar sind, hängt vom jeweiligen Institut ab."
+   },
+   {
+    "q": "Bis wann konnte eine Stellungnahme eingereicht werden?",
+    "a": "Die Konsultationsfrist endete am 18.11.2026, dem Tag der Veröffentlichung. Eine Beteiligung war damit nur sehr kurzfristig möglich."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Konsultationsfrist und Veröffentlichungsdatum sind identisch (18.11.2026) – es ist unklar, ob die Frist zu einem späteren Zeitpunkt endet oder ob dies ein Datenfehler in der Quelle ist.",
+   "Datum der finalen Veröffentlichung und Inkrafttreten sind noch nicht bekannt.",
+   "Quelle liefert nur Metadaten; inhaltliche Details der Neufassung sind nur aus dem verlinkten PDF (346 KB) ersichtlich, das nicht ausgewertet wurde."
+  ],
+  "meta": {
+   "generated": "2026-11-18",
+   "model": "sonnet",
+   "source": "HTML, 821 Zeichen, gekürzt auf 821",
+   "dropped": 0,
+   "tokens": 8861
+  }
+ },
+ "macomp-2026-11-18-macomp-bafin-konsultiert-neufassung-des-rundschreibens": {
+  "h1": "MaComp-Neufassung in Konsultation: BaFin streicht Module BT 2–15 (Konsultation 12/2026)",
+  "seo_title": "MaComp Neufassung 2026: BaFin-Konsultation",
+  "meta_description": "BaFin konsultiert Neufassung der MaComp: Module BT 2–15 entfallen, Frist für Stellungnahmen ist der 11.01.2027 (Konsultation 12/2026).",
+  "lead": "Die BaFin konsultiert eine verkürzte Neufassung der MaComp für Wertpapierdienstleistungsunternehmen. Die Module BT 2–15 entfallen ersatzlos; Stellungnahmen sind bis zum 11.01.2027 möglich.",
+  "aka": [
+   "MaComp Neufassung",
+   "Konsultation 12/2026",
+   "Mindestanforderungen Compliance-Funktion",
+   "MaComp BT 2-15",
+   "BaFin MaComp 2026"
+  ],
+  "summary": "Die BaFin konsultiert einen Entwurf zur Neufassung der MaComp (Konsultation 12/2026). Die Module BT 2–15 werden gestrichen, weil sie ESMA-Leitlinien doppeln, die die BaFin bereits als eingehalten bestätigt hat. Erhalten bleiben der Allgemeine Teil und BT 1. Die Verwaltungspraxis ändert sich inhaltlich nicht. Frist für Stellungnahmen: 11.01.2027.",
+  "overview": [
+   "Die BaFin hat am 18.11.2026 den Entwurf einer überarbeiteten MaComp zur Konsultation gestellt. Kernänderung ist die Streichung der bisherigen Module BT 2 bis BT 15. Diese enthielten Anforderungen, die inhaltlich identisch mit bestehenden ESMA-Leitlinien sind, welche die BaFin in ihre Verwaltungspraxis übernommen und gegenüber der ESMA als eingehalten gemeldet hat. Im Entwurf verbleiben nur der Allgemeine Teil sowie BT 1 zu organisatorischen Anforderungen und Aufgaben der Compliance-Funktion.",
+   "Für zukünftige ESMA-Leitlinien kündigt die BaFin ein neues Verfahren an: Sie prüft zunächst, ob sie eine Leitlinie übernehmen will, und veröffentlicht das Ergebnis per Meldung auf ihrer Website. Bei Übernahme wendet sie die Leitlinie unmittelbar an, ohne sie erneut in die MaComp einzuarbeiten. Eine inhaltliche Änderung der bisherigen Aufsichtspraxis ist damit laut BaFin nicht verbunden."
+  ],
+  "facts": [
+   {
+    "label": "Konsultationsnummer",
+    "value": "12/2026"
+   },
+   {
+    "label": "Betroffenes Regelwerk",
+    "value": "MaComp (Mindestanforderungen an die Compliance-Funktion)"
+   },
+   {
+    "label": "Gestrichene Module",
+    "value": "BT 2 bis BT 15"
+   },
+   {
+    "label": "Verbleibende Teile",
+    "value": "Allgemeiner Teil und BT 1"
+   },
+   {
+    "label": "Stellungnahmefrist",
+    "value": "11.01.2027"
+   },
+   {
+    "label": "Einreichung",
+    "value": "Konsultation-12-26@bafin.de, Betreff: Stellungnahme im Rahmen der Konsultation 12/2026, Gz. WA 15-FR 4100/00017#00002"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Wertpapier-institute",
+    "note": "Unmittelbar betroffen als Adressaten der MaComp",
+    "detail": "Alle Wertpapierdienstleistungsunternehmen, auf die die MaComp nach WpHG (§§ 63 ff.) anwendbar ist. Compliance-Funktion, Recht und Vorstand sollten den Entwurf prüfen und ggf. Stellung nehmen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance-Funktion",
+    "note": "Muss künftigen ESMA-Leitlinien direkt folgen",
+    "detail": "Die Compliance-Funktion muss das neue BaFin-Verfahren für ESMA-Leitlinien im Blick behalten: Übernahmeentscheidungen erscheinen künftig nur noch als BaFin-Meldung, nicht mehr im MaComp-Text.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Andere Institute",
+    "note": "MaComp gilt nur für WpDL-Unternehmen",
+    "detail": "Kreditinstitute ohne Wertpapierdienstleistungen sowie reine Zahlungsinstitute fallen nicht unter die MaComp.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "MaComp BT 2–15",
+    "title": "Module BT 2–15 werden gestrichen",
+    "text": "Die bisherigen thematischen Module BT 2 bis BT 15 entfallen vollständig. Sie doppelten ESMA-Leitlinien, die die BaFin bereits als eingehalten gemeldet hat. Die Verwaltungspraxis ändert sich inhaltlich nicht."
+   },
+   {
+    "ref": "MaComp AT + BT 1",
+    "title": "Allgemeiner Teil und BT 1 bleiben",
+    "text": "Erhalten bleiben die allgemeinen Anforderungen an Wertpapierdienstleistungsunternehmen sowie die organisatorischen Anforderungen und Aufgaben der Compliance-Funktion (BT 1), jeweils mit sprachlichen Anpassungen."
+   },
+   {
+    "ref": "Künftige ESMA-Leitlinien",
+    "title": "Neues Verfahren für ESMA-Leitlinien",
+    "text": "Zukünftige ESMA-Leitlinien werden nicht mehr in die MaComp eingearbeitet. Die BaFin veröffentlicht Übernahmeentscheidungen per Meldung auf ihrer Website und wendet die Leitlinien dann unmittelbar an."
+   }
+  ],
+  "todos": [
+   "Entwurf der Neufassung intern prüfen, insbesondere ob die gestrichenen BT-Module durch ESMA-Leitlinien vollständig abgedeckt sind.",
+   "Entscheiden, ob eine Stellungnahme eingereicht wird (Frist 11.01.2027, E-Mail an Konsultation-12-26@bafin.de).",
+   "BaFin-Website künftig auf Meldungen zu ESMA-Leitlinien-Übernahmen monitoren, da diese nicht mehr in die MaComp einfließen.",
+   "Interne MaComp-Dokumentation und Schulungsunterlagen auf Streichung von BT 2–15 vorbereiten."
+  ],
+  "timeline": [
+   {
+    "date": "18.11.2026",
+    "label": "Konsultation eröffnet",
+    "kind": "kern"
+   },
+   {
+    "date": "11.01.2027",
+    "label": "Frist Stellungnahmen",
+    "kind": "frist"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Ändert sich die Aufsichtspraxis der BaFin durch die Neufassung?",
+    "a": "Nein. Die BaFin betont ausdrücklich, dass sich die Verwaltungspraxis inhaltlich nicht ändert. Die gestrichenen Module BT 2–15 spiegelten ESMA-Leitlinien wider, die die BaFin bereits übernommen hat und weiterhin anwendet."
+   },
+   {
+    "q": "Wie erfahren Institute künftig, wenn die BaFin eine neue ESMA-Leitlinie übernimmt?",
+    "a": "Die BaFin veröffentlicht Übernahmeentscheidungen künftig per Meldung auf ihrer Website. Die Leitlinie gilt dann unmittelbar, ohne in die MaComp eingearbeitet zu werden. Institute müssen die BaFin-Website aktiv beobachten."
+   },
+   {
+    "q": "Wie kann eine Stellungnahme eingereicht werden?",
+    "a": "Ausschließlich per E-Mail an Konsultation-12-26@bafin.de mit dem Betreff 'Stellungnahme im Rahmen der Konsultation 12/2026' und dem Geschäftszeichen WA 15-FR 4100/00017#00002. Frist ist der 11.01.2027."
+   },
+   {
+    "q": "Gilt die neue MaComp auch für Kreditinstitute ohne Wertpapiergeschäft?",
+    "a": "Nein. Die MaComp richtet sich ausschließlich an Wertpapierdienstleistungsunternehmen im Sinne des WpHG (§§ 63 ff.). Reine Einlagengeschäfte oder Zahlungsdienste ohne Wertpapierdienstleistung fallen nicht darunter."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Kein Entwurfstext in der Quelle verfügbar; genaue Formulierungsänderungen im verbleibenden AT und BT 1 nicht prüfbar.",
+   "Zeitplan für Finalisierung und Inkrafttreten der Neufassung nicht angegeben.",
+   "Ob und welche ESMA-Leitlinien künftig per Meldung übernommen werden, ist noch offen."
+  ],
+  "meta": {
+   "generated": "2026-11-18",
+   "model": "sonnet",
+   "source": "HTML, 2974 Zeichen, gekürzt auf 2974",
+   "dropped": 0,
+   "tokens": 9549
   }
  },
  "mica-2026-10-21-compliance-table-on-the-guidelines-on-market-abuse-under-mica": {
