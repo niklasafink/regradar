@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:09:21Z",
+  "generated_at": "2026-11-18T22:53:29Z",
   "updates": {
     "bcbs": [
       {
@@ -41,6 +41,25 @@
         "url": "https://www.bis.org/publications/consolidated-guidelines-consequential-amendments",
         "imp": "low",
         "deadline": "21.12.2026"
+      },
+      {
+        "d": "18.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Basel Committee discusses risks and vulnerabilities faced by global banking system",
+          "en": "Basel Committee discusses risks and vulnerabilities faced by global banking system"
+        },
+        "sl": "basel-committee-discusses-risks-and-vulnerabilities-faced-by-global-banking-syst",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat sich am 18. November 2026 getroffen, um aktuelle Risiken und Schwachstellen im globalen Bankensystem zu erörtern. Im Fokus standen operationelle Risiken wie Informationssicherheit und Abhängigkeiten von Dritten, insbesondere durch die zunehmende Nutzung digitaler Kanäle, Cloud-Dienste und KI. Auch finanzielle Risiken wie Zinsänderungsrisiken im Bankbuch, nicht realisierte Verluste, Refinanzierungsrisiken bei Gewerbeimmobilien sowie die Verflechtungen zwischen Banken und Nichtbanken (z.B. Private Credit, Finanzierungen von Rechenzentren und KI) wurden behandelt.\n\nDer Ausschuss plant, im nächsten Monat eine Konsultation zu gezielten Aktualisierungen seiner „Principles for Sound Liquidity Risk Management and Supervision“ zu veröffentlichen. Zudem wird noch in diesem Monat eine Konsultation zu technischen Änderungen der Standards für das Kontrahentenkreditrisiko und die Liquiditätsdeckungsquote (LCR) folgen. Diese Initiativen sind relevant für Banken weltweit, da sie die Rahmenbedingungen für das Risikomanagement und die Liquiditätssteuerung präzisieren und an aktuelle Entwicklungen anpassen.\n\nIm Rahmen des Regulatory Consistency Assessment Programme (RCAP) beginnt der Ausschuss mit der Bewertung der Umsetzung der ausstehenden Basel III-Standards in den Mitgliedsländern. Die erste Bewertung wird die Implementierung der überarbeiteten Standards für Kredit- und operationelle Risiken in Hongkong umfassen. Ferner wurde vereinbart, dass Aufsichtsbehörden Banken erlauben können, Forderungen an die Inter-American Investment Corporation (IDB Invest) mit einem Risikogewicht von 0 % zu versehen.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) met on November 18, 2026, to discuss current risks and vulnerabilities in the global banking system. The focus was on operational risks such as information security and third-party dependencies, particularly due to the increasing use of digital channels, cloud services, and AI. Financial risks, including interest rate risk in the banking book, unrealized losses, refinancing risks in commercial real estate, and interconnections between banks and non-bank financial institutions (e.g., private credit, financing for data centers and AI), were also addressed.\n\nThe Committee plans to publish a consultation next month on targeted updates to its “Principles for Sound Liquidity Risk Management and Supervision.” Additionally, a consultation on technical amendments to the counterparty credit risk and Liquidity Coverage Ratio (LCR) standards will follow later this month. These initiatives are relevant for banks worldwide as they refine the frameworks for risk management and liquidity control and adapt them to current developments.\n\nUnder the Regulatory Consistency Assessment Programme (RCAP), the Committee is commencing assessments of the implementation of outstanding Basel III standards in member jurisdictions. The first assessment will cover the implementation of revised credit risk and operational risk standards in Hong Kong. Furthermore, it was agreed that supervisors may allow banks to apply a 0% risk weight to claims on the Inter-American Investment Corporation (IDB Invest)."
+        },
+        "url": "https://www.bis.org/media-releases/20261118-basel-committee-discusses-risks-and-vulnerabilities-faced-global-banking-system",
+        "imp": "low"
       },
       {
         "d": "16.10.2026",

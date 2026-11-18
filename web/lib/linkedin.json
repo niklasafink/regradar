@@ -130,21 +130,24 @@
    ],
    "keys": [
     "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u",
+    "basel-committee-discusses-risks-and-vulnerabilities-faced-by-global-banking-syst",
     "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf",
     "macomp-bafin-konsultiert-neufassung-des-rundschreibens"
    ],
-   "hook": "Bürokratieabbau bei der BaFin: Das MaComp-Rundschreiben wird entschlackt und fokussiert.",
-   "folge": "Die BaFin streicht zahlreiche Module aus dem MaComp-Rundschreiben, um Doppelungen mit ESMA-Leitlinien zu vermeiden. Institute müssen die ESMA-Leitlinien künftig direkt beachten, die BaFin wird sie auf ihrer Website veröffentlichen.",
+   "hook": "Die BaFin strafft die MaComp: Weniger Bürokratie, aber die Verwaltungspraxis bleibt unverändert.",
+   "folge": "Die Neufassung des MaComp-Rundschreibens streicht redundante Module, die bereits in ESMA-Leitlinien enthalten sind. Wertpapierdienstleistungsunternehmen müssen sich auf eine direktere Anwendung von ESMA-Vorgaben einstellen, während die inhaltlichen Anforderungen bestehen bleiben.",
    "cover": "BaFin: MaComp-Rundschreiben wird entschlackt",
    "zeilen": [
-    "BaFin: Relizenzierung von CRD-Drittstaatenzweigstellen bis 10.01.2027 und Anforderungen an Abwicklungskonten"
+    "BaFin: Relizenzierung von Drittstaatenzweigstellen bis 11.01.2027 mit neuem Abwicklungskonto",
+    "Basler Ausschuss: Konsultationen zu Liquiditätsrisiko und Kontrahentenkreditrisiko geplant"
    ],
-   "frage": "Welche ESMA-Leitlinien sind für Ihre Compliance-Funktion am relevantesten?",
+   "frage": "Welche konkreten Erleichterungen erwarten Sie sich durch die Neufassung der MaComp?",
    "top": "macomp-bafin-konsultiert-neufassung-des-rundschreibens",
    "kern": {
-    "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf": "Die BaFin konsultiert die Neufassung des MaComp-Rundschreibens bis zum 18.11.2026, das ab Veröffentlichung die Mindestanforderungen an die Compliance-Funktion für Wertpapierdienstleistungsunternehmen konkretisiert.",
-    "macomp-bafin-konsultiert-neufassung-des-rundschreibens": "Die BaFin konsultiert bis zum 11.01.2027 die Neufassung des MaComp-Rundschreibens, um Bürokratie abzubauen und Doppelungen mit ESMA-Leitlinien zu streichen.",
-    "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u": "Die BaFin gibt Hinweise zur Relizenzierung von CRD-Drittstaatenzweigstellen bis zum 10.01.2027 und präzisiert die Anforderungen an die nachzuweisenden Abwicklungskonten."
+    "basel-committee-discusses-risks-and-vulnerabilities-faced-by-global-banking-syst": "Der Basler Ausschuss plant Konsultationen zu aktualisierten Prinzipien für Liquiditätsrisikomanagement und technischen Änderungen an Standards für Kontrahentenkreditrisiko und LCR.",
+    "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf": "Die BaFin konsultiert bis zum 18.11.2026 einen Entwurf zur Neufassung des MaComp-Rundschreibens, das Mindestanforderungen an die Compliance-Funktion für Wertpapierdienstleistungsunternehmen konkretisiert.",
+    "macomp-bafin-konsultiert-neufassung-des-rundschreibens": "Die BaFin konsultiert bis zum 11.01.2027 eine Neufassung des MaComp-Rundschreibens, um Bürokratie abzubauen und die Komplexität für Wertpapierdienstleistungsunternehmen zu reduzieren.",
+    "aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u": "Die BaFin gibt Hinweise zur Relizenzierung von CRD-Drittstaatenzweigstellen und den Anforderungen an Abwicklungskonten, die ab dem 11.01.2027 gelten."
    },
    "doppelt": [
     "konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf"
