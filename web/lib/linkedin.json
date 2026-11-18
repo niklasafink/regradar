@@ -99,6 +99,30 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-18": {
+   "window": [
+    "2026-11-17"
+   ],
+   "keys": [
+    "aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review",
+    "guidelines-specifying-the-circumstances-in-which-a-supplement-is-to-be-considere"
+   ],
+   "hook": "Ein Nachtrag zum Prospekt darf keine neuen Wertpapierarten einführen, um den Anlegerschutz zu gewährleisten.",
+   "folge": "Die ESMA präzisiert, wann ein Prospektnachtrag als Einführung einer neuen Wertpapierart gilt. Institute müssen sicherstellen, dass Nachträge keine unbeschriebenen Wertpapierarten enthalten, um die Prospektverordnung einzuhalten.",
+   "cover": "ESMA: Prospektnachträge dürfen keine neuen Wertpapierarten einführen",
+   "zeilen": [
+    "BaFin: Solvency-II-Review ändert Fristen und Anforderungen für Versicherer ab 30.01.2027"
+   ],
+   "frage": "Wie stellen Sie sicher, dass Prospektnachträge keine neuen Wertpapierarten einführen?",
+   "top": "guidelines-specifying-the-circumstances-in-which-a-supplement-is-to-be-considere",
+   "kern": {
+    "aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review": "Die BaFin präzisiert die Solvency-II-Regeln für Versicherer, wobei Proportionalitätsmaßnahmen bis 30.01.2031 enden und narrative Berichte ab 30.01.2027 maschinenlesbar einzureichen sind.",
+    "guidelines-specifying-the-circumstances-in-which-a-supplement-is-to-be-considere": "Die ESMA hat Leitlinien veröffentlicht, die festlegen, wann ein Nachtrag zu einem Basisprospekt als Einführung einer neuen Art von Wertpapieren gilt."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
