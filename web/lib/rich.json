@@ -545,6 +545,143 @@
    "dropped": 0
   }
  },
+ "bcbs-2026-11-18-basel-committee-discusses-risks-and-vulnerabilities-faced-by-global-banking-syst": {
+  "h1": "Basler Ausschuss: Risiken, Liquiditätsprinzipien und RCAP-Start (BCBS, 18.11.2026)",
+  "seo_title": "Basler Ausschuss: Risiken und Konsultationen 2026",
+  "meta_description": "BCBS diskutierte am 18.11.2026 operationelle und finanzielle Risiken, kündigt zwei Konsultationen an und startet RCAP für ausstehende Basel-III-Standards.",
+  "lead": "Der Basler Ausschuss (BCBS) hat am 18.11.2026 aktuelle Risiken im globalen Bankensystem erörtert und zwei Konsultationen angekündigt: zur Überarbeitung der Liquiditätsprinzipien und zu technischen Änderungen bei Kontrahentenkreditrisiko sowie LCR. Zudem beginnt das RCAP für noch nicht bewertete Basel-III-Standards.",
+  "aka": [
+   "BCBS Meeting November 2026",
+   "Basler Ausschuss Liquiditätsprinzipien",
+   "BCBS Liquidity Risk Management",
+   "Basel Committee Cryptoassets",
+   "RCAP Basel III"
+  ],
+  "summary": "Der BCBS traf sich am 18.11.2026 und diskutierte operationelle Risiken (Informationssicherheit, Drittabhängigkeiten, Cloud, KI) sowie finanzielle Risiken (Zinsänderungsrisiko, Gewerbeimmobilien, Verflechtungen mit Nichtbanken). Zwei Konsultationen stehen unmittelbar bevor. Das RCAP für ausstehende Basel-III-Standards beginnt mit einer Bewertung Hongkongs.",
+  "overview": [
+   "Der Basler Ausschuss diskutierte auf seiner Sitzung vom 18.11.2026 Schwerpunkte für das Arbeitsprogramm 2027 bis 2028. Operationelle Risiken rund um Informationssicherheit und Drittanbieterabhängigkeiten bleiben führende Aufsichtsprioritäten. Auf der finanziellen Seite stehen Zinsänderungsrisiken im Bankbuch, nicht realisierte Verluste, Refinanzierungsrisiken bei Gewerbeimmobilien sowie wachsende Verflechtungen mit dem Nichtbankensektor, einschließlich Private Credit und Finanzierungen für Rechenzentren und KI-Infrastruktur, im Mittelpunkt.",
+   "Für Compliance-Officer relevant sind zwei unmittelbar bevorstehende Konsultationen: Die Überarbeitung der Liquiditätsprinzipien von 2008 soll im Dezember 2026 veröffentlicht werden, die technischen Änderungen zu Kontrahentenkreditrisiko und LCR noch im November 2026. Zusätzlich startet das RCAP für die ausstehenden Basel-III-Standards; die erste Jurisdiktionsbewertung betrifft Hongkong. Forderungen an IDB Invest können künftig mit 0 % Risikogewicht angesetzt werden."
+  ],
+  "facts": [
+   {
+    "label": "Datum der Sitzung",
+    "value": "18.11.2026"
+   },
+   {
+    "label": "Konsultation Liquiditätsprinzipien",
+    "value": "Veröffentlichung im Dezember 2026"
+   },
+   {
+    "label": "Konsultation CCR/LCR (technisch)",
+    "value": "Veröffentlichung noch November 2026"
+   },
+   {
+    "label": "RCAP-Start ausstehende Basel III",
+    "value": "Erste Bewertung: Hongkong, Veröffentlichung in den kommenden Monaten"
+   },
+   {
+    "label": "IDB Invest Risikogewicht",
+    "value": "0 % auf Forderungen zulässig (CRE20.14)"
+   },
+   {
+    "label": "Ausschussvorsitz",
+    "value": "Erik Thedéen, Gouverneur Sveriges Riksbank"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Großbanken/G-SIBs",
+    "note": "Vollständig betroffen, alle Themen relevant",
+    "detail": "Zinsänderungsrisiko, Nichtbankverflechtungen, Kryptostandard, LCR-Änderungen und RCAP betreffen international aktive Banken direkt.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Regionalbanken",
+    "note": "LCR- und CCR-Konsultation prüfen",
+    "detail": "Technische Änderungen zu LCR und Kontrahentenkreditrisiko können auch für national tätige Institute mit entsprechenden Positionen relevant werden.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Risikocontrolling",
+    "note": "Operationelle Risiken, IRRBB, CRE",
+    "detail": "Informationssicherheit, Drittabhängigkeiten, Zinsänderungsrisiko im Bankbuch und Gewerbeimmobilien-Refinanzierungsrisiken sind direkte Handlungsfelder.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Treasury/ALM",
+    "note": "Liquiditätsprinzipien und LCR",
+    "detail": "Bevorstehende Konsultation zu den Liquiditätsprinzipien und technische LCR-Änderungen erfordern frühzeitige Analyse der eigenen Steuerungsrahmen.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "BCBS Liquidität 2008",
+    "title": "Überarbeitung Liquiditätsprinzipien",
+    "text": "Die 2008 veröffentlichten Principles for Sound Liquidity Risk Management and Supervision werden gezielt überarbeitet. Die Konsultation erscheint im Dezember 2026. Institute sollten bestehende Liquiditätsrahmen auf Anpassungsbedarf prüfen."
+   },
+   {
+    "ref": "BCBS CCR/LCR",
+    "title": "Technische Änderungen CCR und LCR",
+    "text": "Technische Anpassungen der Standards für Kontrahentenkreditrisiko und Liquiditätsdeckungsquote werden noch November 2026 zur Konsultation gestellt. Für betroffene Institute besteht Kommentierungsbedarf."
+   },
+   {
+    "ref": "RCAP Basel III",
+    "title": "RCAP für ausstehende Basel-III-Standards",
+    "text": "Der Ausschuss beginnt Jurisdiktionsbewertungen für noch nicht bewertete Basel-III-Standards. Erste Bewertung betrifft Hongkong (überarbeitete Kredit- und operationelle Risikostandards)."
+   },
+   {
+    "ref": "CRE20.14",
+    "title": "IDB Invest: 0 % Risikogewicht",
+    "text": "Aufsichtsbehörden können Banken erlauben, Forderungen an die Inter-American Investment Corporation (IDB Invest) mit 0 % Risikogewicht zu versehen."
+   }
+  ],
+  "todos": [
+   "Konsultation zu LCR und Kontrahentenkreditrisiko beobachten und nach Veröffentlichung noch November 2026 auf interne Relevanz prüfen.",
+   "Konsultation zu den überarbeiteten Liquiditätsprinzipien im Dezember 2026 abwarten und Kommentierungsprozess intern vorbereiten.",
+   "IDB-Invest-Positionen im Portfolio prüfen und 0 %-Risikogewicht-Option gegebenenfalls umsetzen (CRE20.14 als Referenz).",
+   "Entwicklungen zu Nichtbankverflechtungen, Private Credit und KI-Finanzierungen in der eigenen Risikolandkarte berücksichtigen.",
+   "RCAP-Ergebnisse für Hongkong nach Veröffentlichung als Frühindikator für eigene Implementierungslücken auswerten."
+  ],
+  "timeline": [
+   {
+    "date": "18.11.2026",
+    "label": "BCBS-Sitzung Basel",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welche Konsultationen stehen unmittelbar bevor?",
+    "a": "Noch im November 2026 erscheint eine Konsultation zu technischen Änderungen der Standards für Kontrahentenkreditrisiko und LCR. Im Dezember 2026 folgt die Konsultation zu gezielten Überarbeitungen der Liquiditätsprinzipien von 2008."
+   },
+   {
+    "q": "Was bedeutet der RCAP-Start für Institute?",
+    "a": "Das RCAP bewertet, ob nationale Umsetzungen der Basel-III-Standards mit den globalen Vorgaben übereinstimmen. Die Ergebnisse können Hinweise auf Lücken in der eigenen Implementierung liefern, auch wenn das eigene Institut nicht direkt bewertet wird."
+   },
+   {
+    "q": "Für wen gilt das 0 %-Risikogewicht auf IDB-Invest-Forderungen?",
+    "a": "Aufsichtsbehörden können Banken die Anwendung eines 0 %-Risikogewichts auf Forderungen an die Inter-American Investment Corporation (IDB Invest) erlauben, sofern die Kriterien in Paragraph CRE20.14 des Basel-Rahmenwerks erfüllt sind."
+   },
+   {
+    "q": "Hat der BCBS rechtlich bindende Wirkung?",
+    "a": "Nein. Der Ausschuss hat keine formale supranationale Autorität, seine Entscheidungen haben keine Rechtskraft. Die Umsetzung hängt von den Commitments der Mitgliedsländer ab."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Genaue Fristen für die Konsultationsperioden sind noch nicht veröffentlicht; Veröffentlichungstermine laut Pressemitteilung nur ungefähr (November/Dezember 2026).",
+   "Inhaltliche Details der geplanten Überarbeitungen der Liquiditätsprinzipien liegen noch nicht vor; Bewertung erst nach Konsultationsveröffentlichung möglich.",
+   "Stand der Überarbeitung des Kryptoasset-Standards bleibt unklar; Quelle nennt lediglich eine laufende Prüfung."
+  ],
+  "meta": {
+   "generated": "2026-11-18",
+   "model": "sonnet",
+   "source": "HTML, 5636 Zeichen, gekürzt auf 5636",
+   "dropped": 2,
+   "tokens": 9861
+  }
+ },
  "brrd-2026-11-09-srb-bi-annual-reporting-note-to-eurogroup-november-2026": {
   "h1": "SRB-Halbjahresbericht an die Eurogruppe: Risiken und Krisenvorsorge (November 2026)",
   "seo_title": "SRB-Bericht Eurogruppe November 2026",
