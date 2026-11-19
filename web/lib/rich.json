@@ -1355,6 +1355,143 @@
    "tokens": 9196
   }
  },
+ "crr3-2026-11-19-ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": {
+  "h1": "EZB: SREP-Ergebnisse 2026 und aufsichtliche Prioritäten 2027–29 (CRR III / CRD VI)",
+  "seo_title": "EZB SREP 2026: Kapitalanforderungen und Prioritäten 2027",
+  "meta_description": "EZB hält CET1-Anforderungen für 2027 stabil bei 11,3 %. Neue Säule-2-Methodik erstmals angewandt. Prioritäten 2027–29: geopolitische und operationelle Risiken.",
+  "lead": "Die EZB hat am 19.11.2026 die SREP-Ergebnisse für 2026 und die aufsichtlichen Prioritäten für 2027–29 veröffentlicht. Betroffen sind die 108 direkt von der EZB beaufsichtigten Banken.",
+  "aka": [
+   "SREP 2026",
+   "EZB Säule-2-Anforderungen 2027",
+   "Aufsichtliche Prioritäten 2027",
+   "ECB supervisory priorities",
+   "Pillar 2 requirement 2027"
+  ],
+  "summary": "Die EZB hält die CET1-Gesamtanforderung für 2027 mit 11,3 % stabil. Die neue Säule-2-Methodik wurde erstmals eingesetzt. Aufsichtliche Schwerpunkte 2027–29 sind finanzielle Widerstandsfähigkeit gegenüber geopolitischen Risiken sowie operationelle Resilienz und IKT-Fähigkeiten.",
+  "overview": [
+   "Die EZB hat die SREP-Ergebnisse für 2026 veröffentlicht. Die CET1-Gesamtanforderung und -empfehlung für 2027 bleibt mit 11,3 % der risikogewichteten Aktiva nahezu unverändert (2026: 11,2 %). Die Säule-2-Anforderung in CET1 liegt bei 1,2 %, die unverbindliche Säule-2-Empfehlung bei 1,1 %. Erstmals wurde die überarbeitete Säule-2-Methodik angewandt, die Überschneidungen mit Säule-1-Anforderungen im Kontext der CRR-III-Umsetzung gezielt adressiert. Der durchschnittliche SREP-Gesamtscore blieb unverändert bei 2,5. Die Zahl neuer qualitativer Maßnahmen sank gegenüber dem Vorjahr um rund 50 %.",
+   "Die aufsichtlichen Prioritäten 2027–29 umfassen zwei Schwerpunkte: Erstens die Stärkung der finanziellen Widerstandsfähigkeit gegenüber geopolitischen Risiken und makrofinanziellen Schocks, einschließlich Kreditvergabestandards, CRR-III-Implementierung und Klimarisiken. Zweitens die Stärkung operationeller Resilienz und IKT-Fähigkeiten, einschließlich Cybersicherheit, Drittparteienrisiken, DORA-Penetrationstests, Cloud-Abhängigkeiten und KI-bezogener Cyberbedrohungen. Für Risikodatenaggregation und -reporting werden bei anhaltenden Schwächen Durchsetzungsmaßnahmen angekündigt."
+  ],
+  "facts": [
+   {
+    "label": "CET1-Gesamtanforderung 2027",
+    "value": "11,3 % der risikogewichteten Aktiva (2026: 11,2 %)"
+   },
+   {
+    "label": "Säule-2-Anforderung CET1",
+    "value": "1,2 % (2026: 1,1 %)"
+   },
+   {
+    "label": "Säule-2-Empfehlung (P2G)",
+    "value": "1,1 % (unverbindlich, unverändert)"
+   },
+   {
+    "label": "Gesamtkapitalanforderung 2027",
+    "value": "15,7 % (2026: 15,6 %)"
+   },
+   {
+    "label": "Durchschnittlicher SREP-Score",
+    "value": "2,5 (unverändert; 86 % der Banken unverändert)"
+   },
+   {
+    "label": "Neue qualitative Maßnahmen",
+    "value": "78 Banken, ca. 50 % weniger als im Vorjahr"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Significant Inst.",
+    "note": "Direkt EZB-beaufsichtigte Banken (108)",
+    "detail": "Alle 108 im SREP bewerteten Banken erhalten eine SREP-Entscheidung oder einen SREP-Betriebsbrief mit verbindlichen Kapitalanforderungen ab Januar 2027. Drei Institute erhalten 2026 keine neue Entscheidung (M&A oder besondere Umstände).",
+    "status": "betroffen"
+   },
+   {
+    "name": "Kapitalplanung",
+    "note": "Interne Kapital- und Liquiditätsplanung",
+    "detail": "Die neue Säule-2-Methodik sowie die ab 2027 geltende Liquiditätsmethodik erfordern Anpassungen in der Kapital- und Liquiditätsplanung. Weitere Methodikänderungen sind für die nächsten zwei Jahre nicht geplant.",
+    "status": "betroffen"
+   },
+   {
+    "name": "IKT / Operational Risk",
+    "note": "IKT-Risikomanagement und Cybersicherheit",
+    "detail": "92 % der bedeutenden Institute weisen Mängel in Cybersicherheit, Drittparteienrisikomanagement und IKT-Risikokontrollen auf. DORA-Penetrationstests und Überprüfungen von Cloud-Abhängigkeiten sind für 2027 angekündigt.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Less Significant Inst.",
+    "note": "Nicht direkt EZB-beaufsichtigt",
+    "detail": "Dieser SREP betrifft ausschließlich die 108 direkt von der EZB beaufsichtigten Banken. LSIs fallen unter nationale Aufsichtsbehörden.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Säule-2-Methodik",
+    "title": "Neue P2R-Methodik erstmals angewandt",
+    "text": "Die überarbeitete Säule-2-Methodik gilt erstmals für die ab Januar 2027 wirksamen Kapitalanforderungen. Sie reduziert Komplexität, stärkt den Bezug zu bankspezifischen Risikoprofilen und vermeidet Überschneidungen mit Säule-1-Anforderungen im Kontext der CRR-III-Einführung."
+   },
+   {
+    "ref": "CRR III",
+    "title": "CRR-III-Auswirkungen auf Säule 2",
+    "text": "Die CRR-III-Effekte waren bisher gering und unterschiedlich. Wo Säule-1-Anforderungen stiegen und Überschneidungen festgestellt wurden, hat die EZB Säule-2-Anforderungen reduziert. Die EZB überwacht Double-Counting-Risiken laufend."
+   },
+   {
+    "ref": "SREP-Reform",
+    "title": "SREP-Reform 2026 abgeschlossen",
+    "text": "Die EZB hat ihre SREP-Reform abgeschlossen. Ergebnisse: kürzere Entscheidungen, Fokus auf wesentliche Schwachstellen, weniger qualitative Maßnahmen, frühere Kommunikation der Prüfprogramme. Weitere Methodikänderungen sind für zwei Jahre nicht geplant."
+   },
+   {
+    "ref": "Prioritäten 2027–29",
+    "title": "Neue aufsichtliche Prioritäten veröffentlicht",
+    "text": "Zwei Schwerpunkte: (1) Finanzielle Resilienz gegenüber geopolitischen und makrofinanziellen Risiken inkl. CRR-III-Implementierung und Klimarisiken. (2) Operationelle Resilienz und IKT inkl. DORA, Cloud, KI-Cyberbedrohungen und Post-Quantum-Kryptografie."
+   }
+  ],
+  "todos": [
+   "Kapitalbedarf für 2027 auf Basis der neuen Säule-2-Anforderungen (P2R 1,2 %, P2G 1,1 %) in der internen Kapitalplanung aktualisieren.",
+   "IKT-Risikokontrollen, Cybersicherheitsmaßnahmen und Drittparteienrisikomanagement auf Basis der SREP-Befunde und angekündigter Vor-Ort-Prüfungen überprüfen.",
+   "Mängel in Risikodatenaggregation und -reporting innerhalb vereinbarter Fristen beheben, da die EZB Durchsetzungsmaßnahmen angekündigt hat.",
+   "CRR-III-Umsetzung hinsichtlich Risikogewichtungsberechnung für Kredit- und operationelles Risiko auf Vollständigkeit und Konsistenz prüfen (Supervisory-Review-Schwerpunkt 2027).",
+   "Klimarisiken: Vorbereitung auf den thematischen Review 2027 zur aufsichtlichen Transition-Planung starten."
+  ],
+  "timeline": [
+   {
+    "date": "19.11.2026",
+    "label": "EZB veröffentlicht SREP 2026",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Gilt der SREP 2026 auch für Less Significant Institutions?",
+    "a": "Nein. Der SREP der EZB betrifft ausschließlich die direkt beaufsichtigten bedeutenden Institute. Für LSIs sind die nationalen Aufsichtsbehörden zuständig."
+   },
+   {
+    "q": "Was ändert sich durch die neue Säule-2-Methodik konkret?",
+    "a": "Die Methodik stärkt den Bezug zwischen Kapitalanforderungen und bankspezifischen Risikoprofilen und vermeidet Doppelzählungen mit Säule-1-Anforderungen im Kontext der CRR-III-Einführung. Am Systemdurchschnitt ändert sich die Kapitalanforderung nicht, aber auf Einzelinstitutsebene kann es zu Verschiebungen kommen."
+   },
+   {
+    "q": "Welche Risikobereiche stehen 2027 im Aufsichtsfokus?",
+    "a": "Schwerpunkte sind Kreditrisiko (Underwriting-Standards, CRR-III-Umsetzung), IKT und Cybersicherheit (inkl. DORA-Penetrationstests, Cloud, KI-Cyberbedrohungen), Drittparteienrisiken sowie Klimarisiken mit einem thematischen Review zur Transition-Planung."
+   },
+   {
+    "q": "Was droht bei anhaltenden Schwächen in der Risikodatenaggregation?",
+    "a": "Die EZB hat angekündigt, Durchsetzungsmaßnahmen zu ergreifen, wenn Banken wesentliche Mängel in Risikodatenaggregation und -reporting nicht innerhalb vereinbarter Fristen beheben."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Individuelle SREP-Entscheidungen je Institut sind nicht öffentlich; institutsspezifische P2R/P2G-Werte müssen aus der direkten Kommunikation der EZB entnommen werden.",
+   "Konkrete Fristen für die Behebung von IKT- und Datenmängeln sind in der Pressemitteilung nicht genannt.",
+   "Auswirkungen auf Less Significant Institutions durch etwaige nationale Umsetzung der Prioritäten sind nicht aus der Quelle ableitbar."
+  ],
+  "meta": {
+   "generated": "2026-11-19",
+   "model": "sonnet",
+   "source": "HTML, 15993 Zeichen, gekürzt auf 12000",
+   "dropped": 1,
+   "tokens": 11815
+  }
+ },
  "csdr-2026-10-14-t-1-geaenderte-standards-zur-abwicklungsdisziplin-im-amtsblatt": {
   "h1": "T+1-Abwicklungsdisziplin: Delegierte VO (EU) 2026/1536 im Amtsblatt",
   "seo_title": "T+1 Abwicklungsdisziplin, VO EU 2026/1536",
