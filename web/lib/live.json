@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T09:17:46Z",
+  "generated_at": "2026-11-19T16:07:51Z",
   "updates": {
     "bcbs": [
       {
@@ -953,6 +953,517 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/344",
         "imp": "high"
+      }
+    ],
+    "aifmd2": [
+      {
+        "d": "19.11.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
+          "en": "Minimum Requirements for Risk Management of Capital Management Companies (KAMaRisk)"
+        },
+        "sl": "rundschreiben-16-2026-wa",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 16/2026 (WA) zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht. Es konkretisiert die Organisationspflichten und allgemeinen Anforderungen an das Risikomanagement gemäß KAGB, KAVerOV und der AIFM Level 2-VO. Das Rundschreiben ist prinzipienorientiert und proportional ausgestaltet, um Kapitalverwaltungsgesellschaften einen flexiblen Rahmen zu bieten.\n\nEs richtet sich an Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB und deren Auslandszweigniederlassungen. Besondere Mindestanforderungen gelten für AIF-Kapitalverwaltungsgesellschaften, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für Gesellschafterdarlehen unter bestimmten Schwellenwerten. Die MaRisk (BA) finden für diese Gesellschaften keine Anwendung, da die Anforderungen in diesem Rundschreiben abschließend geregelt sind.\n\nDie in Abschnitt 5 dargelegten Anforderungen sind nach einer Übergangsfrist von sechs Monaten nach Veröffentlichung umzusetzen. Die anderen Abschnitte gelten ab sofort. Das Rundschreiben ersetzt das frühere Rundschreiben 07/2017.",
+          "en": "BaFin has published Circular 16/2026 (WA) on the Minimum Requirements for Risk Management of Capital Management Companies (KAMaRisk). It specifies the organizational duties and general risk management requirements according to the KAGB, KAVerOV, and the AIFM Level 2 Regulation. The circular is principle-based and proportionate, aiming to provide capital management companies with a flexible framework.\n\nIt addresses capital management companies licensed under Section 17 KAGB and their foreign branches. Specific minimum requirements apply to AIF capital management companies that grant loans or invest in unsecuritized loan claims, with exceptions for shareholder loans below certain thresholds. The MaRisk (BA) do not apply to these companies, as the requirements are exhaustively regulated in this circular.\n\nThe requirements outlined in Section 5 must be implemented after a six-month transition period following publication. The other sections are effective immediately. This circular replaces the previous Circular 07/2017."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_16_2026_mindestanforderungen_an_das_risikomanagement_von_kavg.html",
+        "imp": "high",
+        "refnum": "16/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB",
+          "en": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB"
+        },
+        "sl": "rundschreiben-12-2026-wa-erlaubnisverfahren-fuer-aif-kapitalverwaltungsgesellsch",
+        "s": {
+          "de": "Das Rundschreiben der BaFin präzisiert das Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVG) gemäß § 22 KAGB. Es legt detaillierte Anforderungen an die einzureichenden Unterlagen fest, insbesondere in Bezug auf Eigenmittel, Liquidität, Angaben zu Geschäftsleitern, bedeutend beteiligten Inhabern und engen Verbindungen.\n\nFür AIF-KVGs bedeutet dies eine klare Richtlinie für die Antragstellung. Das Rundschreiben behandelt unter anderem die Darstellung des Geschäftsplans, der Geschäftsorganisation, interner Kontrollverfahren, der Vergütungspolitik, Auslagerungen und Anlagestrategien. Es wird erwartet, dass die Angaben zu den Arten der zu verwaltenden AIF mit dem Unternehmensgegenstand in der Satzung übereinstimmen.\n\nDas Rundschreiben ist am 15.09.2026 in Kraft getreten. Die BaFin behält sich vor, die Erlaubnis auf bestimmte Arten von Investmentvermögen zu beschränken und empfiehlt, den Unternehmensgegenstand vorab abzustimmen.",
+          "en": "The BaFin circular specifies the licensing procedure for AIF management companies (AIFMs) in accordance with Section 22 KAGB. It sets out detailed requirements for the documents to be submitted, particularly regarding own funds, liquidity, information on managing directors, significantly involved owners, and close links.\n\nFor AIFMs, this provides clear guidelines for submitting applications. The circular addresses, among other things, the presentation of the business plan, business organization, internal control procedures, remuneration policy, outsourcing, and investment strategies. It is expected that the information on the types of AIFs to be managed aligns with the company's business objective stated in its articles of association.\n\nThe circular came into force on 15.09.2026. BaFin reserves the right to restrict the license to certain types of investment funds and recommends coordinating the company's business objective in advance."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1226_erlaubnisverfahren_fuer_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high",
+        "refnum": "12/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (§ 22 KAGB)",
+          "en": "BaFin Circular on Licensing Procedure for AIF Management Companies (Section 22 KAGB)"
+        },
+        "sl": "rundschreiben-12-2026-wa",
+        "s": {
+          "de": "Die BaFin hat ein Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVGen) nach § 22 KAGB veröffentlicht. Es konkretisiert die Anforderungen an Inhalt und Unterlagen des Erlaubnisantrags sowie Aspekte der Erlaubniserteilung. Ziel ist es, Transparenz zu schaffen und Bearbeitungszeiten zu verkürzen.\n\nDas Rundschreiben richtet sich an Unternehmen, die einen Erlaubnisantrag als AIF-KVG stellen oder beabsichtigen. Es gilt einheitlich für interne und externe AIF-KVGen sowie für Gesellschaften, die bereits nach § 44 KAGB registriert sind. Besondere Beachtung finden die Nachweise zu Eigenmitteln, Liquidität sowie die Zuverlässigkeit und fachliche Eignung der Geschäftsleiter.\n\nDas Rundschreiben 12/2026 (WA) ist ab dem 15.09.2026 gültig und ersetzt das Merkblatt vom 24. März 2025. Merkblätter zur Eignung von Geschäftsleitern und Aufsichtsorganen bleiben unberührt.",
+          "en": "BaFin has published a circular on the licensing procedure for AIF management companies (AIFMs) under Section 22 KAGB. It specifies the requirements for the content and documents of the license application, as well as aspects of the license granting. The aim is to create transparency and shorten processing times.\n\nThe circular is addressed to companies that are applying for or intend to apply for a license as an AIFM. It applies uniformly to internal and external AIFMs, as well as to companies already registered under Section 44 KAGB. Special attention is paid to the proof of own funds, liquidity, and the reliability and professional suitability of managing directors.\n\nCircular 12/2026 (WA) is valid from 15.09.2026 and replaces the guidance notice of March 24, 2025. Guidance notices on the suitability of managing directors and supervisory bodies remain unaffected."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_12_2026_erlaubnisverfahren_f%C3%BCr_aif_kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high",
+        "refnum": "12/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren",
+          "en": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren"
+        },
+        "sl": "aif-kvgen-bafin-schafft-transparenz-bei-erlaubnisverfahren",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 12/2026 zu Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 Kapitalanlagegesetzbuch (KAGB) veröffentlicht. Es bietet detaillierte Informationen zu den erforderlichen Dokumenten und Angaben für Antragsteller.\n\nDieses Rundschreiben ersetzt das Merkblatt vom 22. März 2013 (zuletzt geändert am 24. März 2025) und zielt darauf ab, mehr Transparenz zu schaffen und die Bearbeitung von Erlaubnisanträgen zu beschleunigen. Branchenstellungnahmen wurden berücksichtigt, und Anpassungen resultieren auch aus dem Fondsrisikobegrenzungsgesetz.\n\nDas Rundschreiben ist für Kapitalverwaltungsgesellschaften relevant, die Alternative Investmentfonds (AIF) verwalten und eine Erlaubnis nach § 22 KAGB beantragen. Es soll den Antragsprozess für diese Unternehmen vereinfachen und die Anforderungen klarer definieren.",
+          "en": "The BaFin has published Circular 12/2026 on authorization procedures for AIF management companies under Section 22 of the German Investment Code (KAGB). It provides detailed information on the required documents and data for applicants.\n\nThis circular replaces the leaflet from March 22, 2013 (last amended on March 24, 2025) and aims to create more transparency and accelerate the processing of authorization applications. Industry comments were taken into account, and adjustments also result from the Fund Risk Limitation Act.\n\nThis circular is relevant for management companies that manage Alternative Investment Funds (AIFs) and apply for authorization under Section 22 KAGB. It aims to simplify the application process for these companies and to define the requirements more clearly."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_15_rs_erlaubnisverfahren_f%C3%BCr_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high"
+      },
+      {
+        "d": "21.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs (ESMA34-671404336-1384)",
+          "en": "Compliance Table on ESMA Guidelines on Liquidity Management Tools (LMTs) of UCITS and Open-ended AIFs (ESMA34-671404336-1384)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden in den EU- und EWR-Staaten die Leitlinien anwenden oder beabsichtigen, diese anzuwenden.\n\nDie Tabelle zeigt, dass viele nationale Behörden die Leitlinien bereits anwenden oder beabsichtigen, dies bis zu einem bestimmten Datum oder nach Abschluss notwendiger legislativer oder regulatorischer Verfahren zu tun. Für Finanzinstitute bedeutet dies, dass sie sich auf eine zunehmend harmonisierte Anwendung der LMT-Leitlinien in Europa einstellen müssen, was die Anforderungen an das Liquiditätsmanagement von OGAW und offenen AIFs betrifft.\n\nEinige Länder wie Belgien, Bulgarien, Tschechien, Estland, Frankreich, Ungarn, Italien, Lettland, Polen, Portugal, Slowenien, Island und Norwegen haben angegeben, dass sie beabsichtigen, die Leitlinien zu einem späteren Zeitpunkt oder nach Abschluss nationaler Gesetzgebungsverfahren umzusetzen. Die Fristen für die Umsetzung variieren, beispielsweise der 31.08.2026 für Bulgarien und der 31.12.2026 für Italien und Lettland.",
+          "en": "ESMA has published a compliance table regarding its Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. This table provides an overview of the extent to which national competent authorities in EU and EEA states apply or intend to apply these guidelines.\n\nThe table indicates that many national authorities already apply the guidelines or intend to do so by a specific date or after completing necessary legislative or regulatory proceedings. For financial institutions, this means they should prepare for an increasingly harmonized application of LMT guidelines across Europe, affecting the requirements for liquidity management of UCITS and open-ended AIFs.\n\nSome countries, such as Belgium, Bulgaria, Czech Republic, Estonia, France, Hungary, Italy, Latvia, Poland, Portugal, Slovenia, Iceland, and Norway, have stated their intention to implement the guidelines at a later date or after the completion of national legislative processes. Implementation deadlines vary, for example, August 31, 2026, for Bulgaria, and December 31, 2026, for Italy and Latvia."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
+        "imp": "low",
+        "refnum": "ESMA34-671404336-1384"
+      },
+      {
+        "d": "16.06.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Konsultation: Änderungen im KAGB durch das Fondsrisikobegrenzungsgesetz (07/2026)",
+          "en": "BaFin Consultation: KAGB Amendments by Fund Risk Limitation Act (07/2026)"
+        },
+        "sl": "konsultation-07-2026-rundschreiben-zu-aenderungen-im-kapitalanlagegesetzbuch-dur",
+        "s": {
+          "de": "Die BaFin konsultiert ein Rundschreiben mit Hinweisen zu den Änderungen des Kapitalanlagegesetzbuchs (KAGB) durch das Fondsrisikobegrenzungsgesetz (FRiG). Das FRiG, das am 16. April 2026 in Kraft trat, führte umfangreiche Neuerungen ein, insbesondere die verpflichtende Einführung von Liquiditätsmanagement-Tools (LMTs) für offene Fonds.\n\nDas Rundschreiben erläutert die Implementierung von mindestens zwei LMTs in das Liquiditätsmanagementsystem offener Investmentvermögen und geht auf allgemeine Anforderungen sowie Besonderheiten einzelner LMTs ein. Zudem behandelt es Änderungen im Erlaubnisverfahren, wie zusätzliche Angaben zu Geschäftsleitern und den Wegfall der Konnexität zwischen Finanzportfolioverwaltung und Anlageberatung/-vermittlung als Nebendienstleistungen. Auch die Kreditvergabe durch Investmentvermögen wird thematisiert. Fachbeiträge weisen auf die Auswirkungen auf Immobilien-Sondervermögen hin.\n\nStellungnahmen zum Entwurf können bis zum 6. Juli 2026 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
+          "en": "BaFin is consulting on a circular providing guidance on the amendments to the German Capital Investment Code (KAGB) introduced by the Fund Risk Limitation Act (FRiG). The FRiG, which entered into force on April 16, 2026, brought about extensive changes, particularly the mandatory introduction of liquidity management tools (LMTs) for open-ended funds.\n\nThe circular explains the implementation of at least two LMTs in the liquidity management system of open-ended investment funds, addressing general requirements and specific features of individual LMTs. It also covers changes to the licensing procedure, such as additional information required for managing directors and the elimination of the nexus between financial portfolio management and investment advice/brokerage as ancillary services. Lending by investment funds is also addressed. Expert contributions highlight the implications for real estate special funds.\n\nComments on the draft can be submitted to BaFin until July 6, 2026. BaFin intends to publish the submitted comments online."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/kon_07_2026_rs_kagb_aenderungen.html",
+        "imp": "medium",
+        "deadline": "06.07.2026",
+        "refnum": "Konsultation 07/2026",
+        "adv": [
+          {
+            "f": "Waldeck Rechtsanwälte",
+            "ti": "Auswirkungen des Fondsrisikobegrenzungsgesetzes auf Immobilien-Sondervermögen",
+            "url": "https://www.waldvorlauternormen.com/auswirkungen-des-fondsrisikobegrenzungsgesetzes-auf-immobilien-sondervermogen/",
+            "d": "18.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.06.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
+          "en": "Consultation on Minimum Requirements for Risk Management of Management Companies (KAMaRisk)"
+        },
+        "sl": "konsultation-06-2026-kamarisk-aenderungsuebersicht-konsultationsfassung",
+        "s": {
+          "de": "Die BaFin hat eine Konsultation zu den beabsichtigten Änderungen des Rundschreibens \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\" veröffentlicht. Das Rundschreiben richtet sich an alle Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB sowie an registrierungspflichtige AIF-Kapitalverwaltungsgesellschaften nach § 2 Absatz 4 und 5 KAGB, insbesondere im Hinblick auf die Vergabe von Gelddarlehen und die damit verbundenen Dokumentationspflichten.\n\nDie Anforderungen des Rundschreibens beziehen sich auf das Management wesentlicher Risiken für Investmentvermögen und Gesellschaften, wobei mindestens Adressenausfall-, Marktpreis-, Liquiditäts- und operationelle Risiken (einschließlich Rechts-, Reputations- und IKT-Risiken) als wesentlich einzustufen sind. Neu ist die explizite Berücksichtigung von ESG-Risiken als Risikotreiber bei der Beurteilung der Wesentlichkeit und der Ausgestaltung des internen Kontrollsystems. Zudem werden besondere Mindestanforderungen für AIF festgelegt, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für bestimmte Gesellschafterdarlehen.\n\nStellungnahmen zu den Änderungen können bis zum 1. Juli 2026 bei der BaFin eingereicht werden. Die Konsultation ist für Kapitalverwaltungsgesellschaften relevant, da sie die Anforderungen an ihr Risikomanagement aktualisiert und präzisiert, insbesondere im Bereich der Kreditvergabe und der Berücksichtigung von ESG-Risiken.",
+          "en": "BaFin has published a consultation on the proposed amendments to the circular \"Minimum Requirements for Risk Management of Management Companies (KAMaRisk)\". The circular addresses all management companies with a license under Section 17 KAGB, as well as AIF management companies subject to registration under Section 2 (4) and (5) KAGB, particularly regarding the granting of loans and associated documentation obligations.\n\nThe circular's requirements pertain to the management of material risks for investment funds and companies, with at least credit, market, liquidity, and operational risks (including legal, reputational, and ICT risks) to be classified as material. A new aspect is the explicit consideration of ESG risks as risk drivers in assessing materiality and designing the internal control system. Furthermore, specific minimum requirements are established for AIFs that grant loans or invest in uncertificated loan receivables, with exceptions for certain shareholder loans.\n\nComments on the amendments can be submitted to BaFin until July 1, 2026. The consultation is relevant for management companies as it updates and clarifies the requirements for their risk management, especially in the area of lending and the consideration of ESG risks."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_06_2026_kamarisk_aenderungen.html",
+        "imp": "medium",
+        "deadline": "01.07.2026",
+        "refnum": "Konsultation 06/2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "BaFin startet Konsultation zu aktualisiertem Rundschreiben \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\"",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-aktualisiertem-rundschreiben-mindestanforderungen-an-das-risikomanagement-von-kapitalverwaltungsgesellschaften-kamarisk-2/",
+            "d": "23.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "14.04.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Fondsrisikobegrenzungsgesetz zur Umsetzung von EU-Richtlinien (BGBl. 2026 I Nr. 97)",
+          "en": "Investment Fund Risk Limitation Act for the Implementation of EU Directives (BGBl. 2026 I Nr. 97)"
+        },
+        "sl": "gesetz-zur-begrenzung-der-risiken-durch-investmentfonds-und-zur-umsetzung-der-ri",
+        "s": {
+          "de": "Das Fondsrisikobegrenzungsgesetz setzt die Richtlinien (EU) 2024/927 und (EU) 2024/2994 in nationales Recht um. Es zielt darauf ab, Risiken durch Investmentfonds zu begrenzen und umfasst Regelungen zu Übertragungsvereinbarungen, Liquiditätsrisikomanagement und aufsichtlicher Berichterstattung.\n\nDie Regelungen betreffen insbesondere alternative Investmentfonds hinsichtlich der Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie der Kreditvergabe. Zudem werden Vorschriften zum Umgang mit Konzentrationsrisiken aus Risikopositionen gegenüber zentralen Gegenparteien und Ausfallrisiken bei zentral geclearten Derivategeschäften geändert.\n\nDas Gesetz wurde am 09.04.2026 ausgefertigt und am 14.04.2026 im Bundesgesetzblatt veröffentlicht.",
+          "en": "The Investment Fund Risk Limitation Act transposes Directives (EU) 2024/927 and (EU) 2024/2994 into national law. It aims to limit risks posed by investment funds and includes provisions on transfer agreements, liquidity risk management, and supervisory reporting.\n\nThe regulations primarily affect alternative investment funds concerning the provision of custody and depositary services and lending activities. Furthermore, provisions on managing concentration risks arising from exposures to central counterparties and default risks in centrally cleared derivative transactions are amended.\n\nThe Act was enacted on 09.04.2026 and published in the Federal Law Gazette on 14.04.2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
+        "imp": "high"
+      },
+      {
+        "d": "09.09.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (Konsultation 17/2025)",
+          "en": "Consultation on the Licensing Procedure for AIF Management Companies (Consultation 17/2025)"
+        },
+        "sl": "konsultation-17-2025-aenderungen-und-konkretisierungen-des-merkblattes-zum-erlau",
+        "s": {
+          "de": "Die BaFin konsultiert Änderungen und Konkretisierungen ihres Merkblattes zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB. Ziel ist es, die Erlaubnisverfahren zu erleichtern und zu beschleunigen. Die Überarbeitung betrifft unter anderem Nachweise der erforderlichen Mittel, Angaben zur fachlichen Eignung der Geschäftsleiter, den Geschäftsplan sowie Anlagebedingungen und Satzungen der zu verwaltenden AIF.\n\nDie Änderungen sind relevant für alle Unternehmen, die eine Erlaubnis als AIF-Kapitalverwaltungsgesellschaft beantragen oder bereits eine solche Erlaubnis besitzen. Insbesondere die Konkretisierungen zur Beurteilung der fachlichen Eignung der Geschäftsleiter sind von praktischer Bedeutung, da sie nach Abschluss der Konsultation auch in das „Merkblatt zur Eignung von Geschäftsleitern nach dem KAGB“ übernommen werden. Fachbeiträge von Verbänden und Kanzleien zeigen das breite Interesse an den Anpassungen.\n\nStellungnahmen zum Entwurf können bis zum 30. September 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
+          "en": "BaFin is consulting on amendments and clarifications to its guidance notice on the licensing procedure for AIF management companies under Section 22 KAGB. The aim is to facilitate and accelerate the licensing procedures. The revision affects, among other things, evidence of the required funds, information on the professional suitability of managing directors, the business plan, and the investment conditions and articles of association of the AIFs to be managed.\n\nThese changes are relevant for all companies applying for or already holding a license as an AIF management company. The clarifications regarding the professional suitability of managing directors are of particular practical importance, as they will also be incorporated into the “Guidance Notice on the Suitability of Managing Directors under the KAGB” after the consultation. Contributions from associations and law firms highlight the broad interest in these adjustments.\n\nComments on the draft can be submitted to BaFin until September 30, 2025. BaFin intends to publish the submitted comments online."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_17_2025_Aenderungen_Konkretisierungen_Merkblatt_Erlaubnisverfahren_fuer_eine_AIF_Kapitalverwaltungsgesellschaft.html",
+        "imp": "medium",
+        "refnum": "Konsultation 17/2025"
+      },
+      {
+        "d": "25.02.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Konsultation zu Pflichten bei Krypto-Investmentvermögen (06/25)",
+          "en": "BaFin Consultation on Obligations for Crypto Investment Funds (06/25)"
+        },
+        "sl": "konsultation-06-25-entwurf-eines-rundschreibens-2025-zu-den-pflichten-von-verwah",
+        "s": {
+          "de": "Die BaFin hat einen Entwurf für ein Rundschreiben zur Konsultation gestellt, das die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften (KAGs) bei Investmentvermögen regelt, die in Kryptowerte investieren.\n\nSeit Inkrafttreten des Zukunftsfinanzierungsgesetzes können neben Spezial-AIF auch inländische Publikums-AIF und geschlossene Publikums-AIF direkt in Kryptowerte investieren. Das Rundschreiben soll Mindestanforderungen für Verwahrstellen und KAGs festlegen, um den technischen und regulatorischen Herausforderungen dieser neuen Anlageklasse zu begegnen.\n\nStellungnahmen zum Entwurf können bis zum 31. März 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
+          "en": "The BaFin has published a draft circular for consultation, which regulates the obligations of depositaries and capital management companies (KAGs) for investment funds investing in crypto assets.\n\nSince the Future Financing Act came into force, in addition to special AIFs, domestic public AIFs and closed public AIFs can also invest directly in crypto assets. The circular aims to establish minimum requirements for depositaries and KAGs to address the technical and regulatory challenges of this new asset class.\n\nComments on the draft can be submitted to BaFin until March 31, 2025. BaFin intends to publish the submitted comments online."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_06_2025_konsultation_kryptowerte_KVG_Verwahrstelle.html",
+        "imp": "medium"
+      }
+    ],
+    "mica": [
+      {
+        "d": "19.11.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Kryptowerten und DLT-Finanzinstrumenten (15/2026)",
+          "en": "BaFin Circular on Crypto Assets and DLT Financial Instruments (15/2026)"
+        },
+        "sl": "rundschreiben-15-2026-wa",
+        "s": {
+          "de": "Die BaFin hat ein Rundschreiben zu den Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-basierte Finanzinstrumente veröffentlicht. Es ergänzt das bestehende Verwahrstellenrundschreiben und gibt Hinweise zur Verwaltungspraxis der BaFin. Das Rundschreiben definiert Kryptowerte im Sinne des KAGB unter Bezugnahme auf MiCAR, wobei Finanzinstrumente nach MiFID II und Utility Token ausgenommen sind. DLT-basierte Finanzinstrumente umfassen beispielsweise Kryptowertpapiere und Kryptofondsanteile.\n\nDas Rundschreiben gilt für Kapitalverwaltungsgesellschaften und Verwahrstellen, die direkt in Kryptowerte oder DLT-basierte Finanzinstrumente investieren. Es behandelt nicht die mittelbare Anlage in Kryptowerte über Derivate oder die Ausgabe von Anteilsscheinen auf Basis dezentraler Kryptowertpapierregister. Verwahrstellen müssen vor Mandatsübernahme die Risiken bewerten und angemessene Aufsichtsprozesse etablieren. Zudem sind ausreichende sachliche und personelle Ressourcen sowie qualifizierte Geschäftsleiter erforderlich, wobei für letztere eine sechsmonatige Frist zum Aufbau praktischer Erfahrung eingeräumt wird.\n\nDas Rundschreiben ist ab dem Tag der Veröffentlichung gültig. Es präzisiert die Pflichten der Verwahrstelle, insbesondere hinsichtlich der Verwahrfähigkeit und des Umfangs der Kontrollpflichten bei diesen neuen Anlageklassen.",
+          "en": "BaFin has published a circular on the obligations of depositaries and management companies when investing in crypto assets and DLT-based financial instruments. It supplements the existing depositary circular and provides guidance on BaFin's administrative practice. The circular defines crypto assets within the meaning of the KAGB by reference to MiCAR, excluding financial instruments under MiFID II and utility tokens. DLT-based financial instruments include, for example, crypto securities and crypto fund units.\n\nThis circular applies to management companies and depositaries that invest directly in crypto assets or DLT-based financial instruments. It does not cover indirect investments in crypto assets via derivatives or the issuance of fund units based on decentralized crypto securities registers. Depositaries must assess risks before taking on a mandate and establish appropriate oversight processes. Furthermore, sufficient material and human resources, as well as qualified managing directors, are required, with a six-month period granted for the latter to build up practical experience.\n\nThe circular is valid from the date of publication. It specifies the duties of the depositary, particularly regarding the safekeeping capability and the scope of control obligations for these new asset classes."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_15_2026_kryptowerte.html",
+        "imp": "high",
+        "refnum": "15/2026"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
+          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
+          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1625"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
+          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
+        },
+        "sl": "reporting-instructions-midas-system",
+        "s": {
+          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
+          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
+        "imp": "high",
+        "refnum": "ESMA65-955014868-17690"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR (ESMA)",
+          "en": "New Q&As on Crypto-Asset Service Providers, Crowdfunding and EMIR (ESMA)"
+        },
+        "sl": "new-q-as-available",
+        "s": {
+          "de": "Die ESMA hat neue Q&As zu verschiedenen Themen veröffentlicht. Für Krypto-Dienstleister (CASPs) wird die Nutzung von Zahlungskonten bei Nicht-Bank-Zahlungsdienstleistern zur Verwahrung von Kundengeldern behandelt. Für europäische Crowdfunding-Dienstleister wird die Frage geklärt, ob Plattformen, die Registrierungs-, Mitglieds- oder andere Zugangsgebühren erheben (\"Investment Club\"-Plattformen), unter die Regulierung fallen.\n\nIm Bereich OTC-Derivate, zentrale Gegenparteien (CCPs) und Transaktionsregister (EMIR) werden spezifische Fragen zur AAR-Befreiung (85%), zur Berechnung der AAR-Schwellenwerte und zur AAR-Repräsentativitätspflicht beantwortet. Diese Klarstellungen sind für die betroffenen Finanzinstitute relevant, um ihre Compliance-Pflichten korrekt zu erfüllen und die Anwendung der jeweiligen Vorschriften besser zu verstehen.\n\nDie Q&As dienen der Vereinheitlichung der Aufsichtspraxis und der Klärung von Auslegungsfragen. Sie sind ab dem Veröffentlichungsdatum, dem 16.10.2026, verfügbar und sollten von den relevanten Marktteilnehmern beachtet werden.",
+          "en": "ESMA has published new Q&As on various topics. For Crypto-Asset Service Providers (CASPs), the use of payment accounts provided by non-bank payment service providers for holding clients’ funds is addressed. For European crowdfunding service providers, the question of whether platforms charging registration, membership, or other access fees (\"investment club\" platforms) fall under the regulation is clarified.\n\nIn the area of OTC derivatives, central counterparties (CCPs), and trade repositories (EMIR), specific questions regarding the AAR 85% exemption, AAR thresholds calculation, and the AAR representativeness obligation are answered. These clarifications are relevant for the affected financial institutions to correctly fulfill their compliance obligations and better understand the application of the respective regulations.\n\nThe Q&As aim to standardize supervisory practices and clarify interpretative issues. They are available from the publication date, 16 October 2026, and should be considered by relevant market participants."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
+        "imp": "low"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
+          "en": "Supervisory expectations on services related to unauthorised stablecoins"
+        },
+        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
+          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
+        "imp": "high"
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
+          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
+        },
+        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
+          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0: Neue Impulse von ESMA, ESRB, AMLA und SRB",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
+            "d": "14.10.2026"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
+          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
+        },
+        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
+        "s": {
+          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
+          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1721",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
+          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
+          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1525"
+      },
+      {
+        "d": "20.05.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
+          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
+        },
+        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
+          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
+            "d": "21.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "29.09.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Verordnung über Anzeigen nach dem Kryptomärkteaufsichtsgesetz (KMAnzV)",
+          "en": "Consultation on the Regulation on Notifications under the Crypto Markets Supervision Act (KMAnzV)"
+        },
+        "sl": "konsultation-18-2025-verordnung-ueber-die-anzeigen-und-die-vorlage-von-unterlage",
+        "s": {
+          "de": "Die BaFin hat den Entwurf einer „Verordnung über die Anzeigen und die Vorlage von Unterlagen nach dem Kryptomärkteaufsichtsgesetz“ (Kryptomärkteanzeigenverordnung – KMAnzV) zur Konsultation gestellt. Ziel der Verordnung ist es, klare Vorgaben für die im Kryptomärkteaufsichtsgesetz (KMAG) normierten Anzeigetatbestände festzulegen.\n\nDie Verordnung soll ein effizientes Anzeigewesen etablieren, indem sie standardisierte Formulare und Regelungen verwendet, die sich an bestehenden Anzeigenverordnungen nach dem Kreditwesengesetz (KWG) und dem Zahlungsdiensteaufsichtsgesetz (ZAG) orientieren. Dies soll den Anzeigepflichtigen einen geringeren Aufwand ermöglichen und die aufsichtliche Beurteilung durch die BaFin erleichtern.\n\nStellungnahmen zum Entwurf können bis zum 29. Oktober 2025 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die Konsultation erfolgt ausschließlich im schriftlichen Verfahren.",
+          "en": "BaFin has published a draft “Regulation on Notifications and the Submission of Documents under the Crypto Markets Supervision Act” (Kryptomärkteanzeigenverordnung – KMAnzV) for consultation. The regulation aims to establish clear requirements for the notification obligations stipulated in the Crypto Markets Supervision Act (KMAG).\n\nThe regulation seeks to create an efficient notification system by using standardized forms and rules, drawing inspiration from existing notification regulations under the Banking Act (KWG) and the Payment Services Supervision Act (ZAG). This approach is intended to reduce the burden on obliged entities and facilitate supervisory assessment by BaFin.\n\nComments on the draft can be submitted in writing or via email to BaFin until October 29, 2025. The consultation will be conducted exclusively through written submissions."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_18_2025_Kryptom%C3%A4rkteaufsichtsgesetz.html",
+        "imp": "medium",
+        "refnum": "Konsultation 18/2025"
+      },
+      {
+        "d": "03.01.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zu Kryptowerte-Dienstleistungen nach MiCAR",
+          "en": "BaFin Guidance on Crypto-Asset Services under MiCAR"
+        },
+        "sl": "merkblatt-kryptowerte-dienstleistungen-nach-micar",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu den Kryptowerte-Dienstleistungen nach der Markets in Crypto-Assets Regulation (MiCAR) veröffentlicht, die ab dem 30. Dezember 2024 anwendbar ist. Das Merkblatt erläutert die erlaubnispflichtigen Dienstleistungen, die sich auf vermögenswertreferenzierte Token, E-Geld-Token und sonstige Kryptowerte wie Bitcoin und Ether-Token beziehen.\n\nEs werden die Definitionen und Abgrenzungen der einzelnen Dienstleistungen nach MiCAR detailliert beschrieben, darunter die Verwahrung und Verwaltung von Kryptowerten für Kunden, der Betrieb einer Handelsplattform, der Tausch von Kryptowerten gegen Geld oder andere Kryptowerte sowie die Ausführung von Aufträgen über Kryptowerte für Kunden. Die BaFin zieht dabei Vergleiche zu bestehenden Regelungen im Kreditwesengesetz (KWG) und der MiFID II, um die Auslegung zu erleichtern. Insbesondere wird klargestellt, dass die Verwahrung und Verwaltung eigener Kryptowerte nicht erfasst ist und dass der Tatbestand des Tauschs von Kryptowerten gegen andere Kryptowerte einen Übersetzungsfehler in der deutschen MiCAR-Fassung enthält.\n\nDas Merkblatt ist für alle Unternehmen relevant, die Kryptowerte-Dienstleistungen im Anwendungsbereich der MiCAR erbringen oder planen, diese anzubieten. Es dient als wichtige Orientierungshilfe für die Beantragung entsprechender Erlaubnisse und die Einhaltung der neuen regulatorischen Anforderungen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung hin.",
+          "en": "BaFin has published guidance on crypto-asset services under the Markets in Crypto-Assets Regulation (MiCAR), which will be applicable from 30 December 2024. The guidance explains the licensable services related to asset-referenced tokens, e-money tokens, and other crypto-assets such as Bitcoin and Ether tokens.\n\nThe document details the definitions and distinctions of individual MiCAR services, including the custody and administration of crypto-assets for clients, the operation of a trading platform, the exchange of crypto-assets for fiat currency or other crypto-assets, and the execution of orders for crypto-assets on behalf of clients. BaFin draws comparisons to existing regulations in the German Banking Act (KWG) and MiFID II to facilitate interpretation. It clarifies that the custody and administration of own crypto-assets are not covered and that the definition for the exchange of crypto-assets for other crypto-assets contains a translation error in the German MiCAR version.\n\nThis guidance is relevant for all companies that provide or plan to offer crypto-asset services within the scope of MiCAR. It serves as an important guide for applying for relevant licenses and complying with the new regulatory requirements. KPMG highlights the publication in a specialized article."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_Kryptowerte_Dienstl.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "BaFin-Merkblatt \"Kryptowerte-Dienstleistungen nach MiCAR\" veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-merkblatt-kryptowerte-dienstleistungen-nach-micar-veroeffentlicht/",
+            "d": "10.01.2025"
+          }
+        ]
+      },
+      {
+        "d": "03.01.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Zulassungsanforderungen für ART und EMT nach MiCAR",
+          "en": "Guidance Note on Authorization Requirements for ARTs and EMTs under MiCAR"
+        },
+        "sl": "merkblatt-zulassungsanforderungen-bzgl-art-und-emt-nach-micar",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu den Zulassungsanforderungen für vermögenswertereferenzierte Token (ART) und E-Geld-Token (EMT) gemäß der MiCAR veröffentlicht. Es erläutert die Definitionen dieser Kryptowerte und grenzt sie von „anderen“ Kryptowerten ab, für die weniger strenge Anforderungen gelten. Das Merkblatt geht auf die Erlaubnispflichten, Anzeigepflichten gegenüber der BaFin und die Notwendigkeit eines Kryptowerte-Whitepapers ein, die für ART und EMT bei öffentlichem Angebot oder Zulassung zum Handel bestehen.\n\nDas Merkblatt richtet sich an Emittenten und Anbieter von ART und EMT. Es klärt die Begriffe des öffentlichen Angebots und der Zulassung zum Handel und betont, dass ART und EMT im Gegensatz zu „anderen“ Kryptowerten von einem Emittenten ausgegeben werden müssen. Es wird auch der Unterschied zwischen E-Geld-Token und traditionellem E-Geld nach dem ZAG herausgestellt, insbesondere dass EMT nicht zwingend für Zahlungszwecke verwendet werden müssen und keine Forderung gegenüber dem Emittenten voraussetzen.\n\nDie MiCAR ist am 29. Juni 2023 in Kraft getreten und ist ab dem 30. Dezember 2024 unmittelbar anwendbar, wobei die Titel III und IV bereits ab dem 30. Juni 2024 gelten.",
+          "en": "BaFin has published a guidance note on the authorization requirements for asset-referenced tokens (ARTs) and e-money tokens (EMTs) under MiCAR. It clarifies the definitions of these crypto-assets and distinguishes them from 'other' crypto-assets, which are subject to less stringent requirements. The guidance note addresses the licensing obligations, notification requirements to BaFin, and the necessity of a crypto-asset white paper for ARTs and EMTs when offered to the public or admitted to trading.\n\nThe guidance note is aimed at issuers and providers of ARTs and EMTs. It clarifies the concepts of public offering and admission to trading, emphasizing that ARTs and EMTs, unlike 'other' crypto-assets, must be issued by an issuer. It also highlights the difference between e-money tokens and traditional e-money under the German Payment Services Supervision Act (ZAG), particularly that EMTs do not necessarily have to be used for payment purposes and do not require a claim against the issuer.\n\nMiCAR formally entered into force on June 29, 2023, and will be directly applicable from December 30, 2024, with Titles III and IV already applicable from June 30, 2024."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_zulassung_art_emt.html",
+        "imp": "high"
+      },
+      {
+        "d": "26.11.2024",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Kryptomärktemitteilungs-Verordnung (KMMV) (Konsultation 09/2024)",
+          "en": "Consultation on the Crypto Market Disclosure Ordinance (KMMV) (Consultation 09/2024)"
+        },
+        "sl": "konsultation-09-2024-konsultation-des-entwurfs-einer-kryptomaerktemitteilungs-ve",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf einer Kryptomärktemitteilungs-Verordnung (KMMV). Diese Verordnung konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes (KMAG-E).\n\nDie KMMV dient der weiteren Umsetzung des KMAG-E, der MiCAR und der technischen Durchführungsstandards nach Artikel 88 Absatz 4 MiCAR. Sie regelt die Übermittlung veröffentlichter Insiderinformationen an die BaFin sowie die Mitteilung über den Aufschub der Offenlegung von Insiderinformationen an die BaFin.\n\nDer Entwurf betrifft Emittenten, Anbieter oder Antragsteller, die nach Artikel 88 Absatz 1 MiCAR zur Veröffentlichung von Insiderinformationen verpflichtet sind und für die Deutschland der Herkunftsmitgliedstaat nach Artikel 3 Absatz 1 Nummer 33 MiCAR ist. Die Konsultation erfolgt unter Vorbehalt der Verabschiedung des Finanzmarktdigitalisierungsgesetzes und der Subdelegation der Verordnungsermächtigung an die BaFin.\n\nStellungnahmen zum Entwurf können bis zum 13. Dezember 2024 eingereicht werden.",
+          "en": "BaFin is consulting on the draft of a Crypto Market Disclosure Ordinance (KMMV). This ordinance specifies the notification obligations for the disclosure of inside information under Section 36 of the Crypto Market Supervision Act (KMAG-E).\n\nThe KMMV serves to further implement the KMAG-E, MiCAR, and the technical implementing standards under Article 88(4) MiCAR. It regulates the transmission of published inside information to BaFin and the notification to BaFin regarding the delayed disclosure of inside information.\n\nThe draft concerns issuers, offerors, or applicants who are obliged to publish inside information under Article 88(1) MiCAR and for whom Germany is the home Member State under Article 3(1)(33) MiCAR. The consultation is subject to the adoption of the Financial Market Digitalisation Act and the sub-delegation of the regulatory authorization to BaFin.\n\nComments on the draft can be submitted until December 13, 2024."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2024/kon_09_24_Kryptomaerktemitteilungs-VO_KMMV.html",
+        "imp": "medium",
+        "refnum": "Konsultation 09/2024"
       }
     ],
     "macomp": [
@@ -2868,280 +3379,6 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Auslegungsentscheidung/dl_ae_070228_FgABS_kuendigungsrechte_ba.html",
         "imp": "medium"
-      }
-    ],
-    "mica": [
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
-          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
-          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1625"
-      },
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
-          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
-        },
-        "sl": "reporting-instructions-midas-system",
-        "s": {
-          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
-          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
-        },
-        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
-        "imp": "high",
-        "refnum": "ESMA65-955014868-17690"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR (ESMA)",
-          "en": "New Q&As on Crypto-Asset Service Providers, Crowdfunding and EMIR (ESMA)"
-        },
-        "sl": "new-q-as-available",
-        "s": {
-          "de": "Die ESMA hat neue Q&As zu verschiedenen Themen veröffentlicht. Für Krypto-Dienstleister (CASPs) wird die Nutzung von Zahlungskonten bei Nicht-Bank-Zahlungsdienstleistern zur Verwahrung von Kundengeldern behandelt. Für europäische Crowdfunding-Dienstleister wird die Frage geklärt, ob Plattformen, die Registrierungs-, Mitglieds- oder andere Zugangsgebühren erheben (\"Investment Club\"-Plattformen), unter die Regulierung fallen.\n\nIm Bereich OTC-Derivate, zentrale Gegenparteien (CCPs) und Transaktionsregister (EMIR) werden spezifische Fragen zur AAR-Befreiung (85%), zur Berechnung der AAR-Schwellenwerte und zur AAR-Repräsentativitätspflicht beantwortet. Diese Klarstellungen sind für die betroffenen Finanzinstitute relevant, um ihre Compliance-Pflichten korrekt zu erfüllen und die Anwendung der jeweiligen Vorschriften besser zu verstehen.\n\nDie Q&As dienen der Vereinheitlichung der Aufsichtspraxis und der Klärung von Auslegungsfragen. Sie sind ab dem Veröffentlichungsdatum, dem 16.10.2026, verfügbar und sollten von den relevanten Marktteilnehmern beachtet werden.",
-          "en": "ESMA has published new Q&As on various topics. For Crypto-Asset Service Providers (CASPs), the use of payment accounts provided by non-bank payment service providers for holding clients’ funds is addressed. For European crowdfunding service providers, the question of whether platforms charging registration, membership, or other access fees (\"investment club\" platforms) fall under the regulation is clarified.\n\nIn the area of OTC derivatives, central counterparties (CCPs), and trade repositories (EMIR), specific questions regarding the AAR 85% exemption, AAR thresholds calculation, and the AAR representativeness obligation are answered. These clarifications are relevant for the affected financial institutions to correctly fulfill their compliance obligations and better understand the application of the respective regulations.\n\nThe Q&As aim to standardize supervisory practices and clarify interpretative issues. They are available from the publication date, 16 October 2026, and should be considered by relevant market participants."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
-        "imp": "low"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
-          "en": "Supervisory expectations on services related to unauthorised stablecoins"
-        },
-        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
-          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
-        "imp": "high"
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
-          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
-        },
-        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
-          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0: Neue Impulse von ESMA, ESRB, AMLA und SRB",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
-            "d": "14.10.2026"
-          },
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
-          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
-        },
-        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
-        "s": {
-          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
-          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1721",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      },
-      {
-        "d": "20.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
-          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
-        },
-        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
-          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
-            "d": "21.05.2026"
-          }
-        ]
-      },
-      {
-        "d": "29.09.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Verordnung über Anzeigen nach dem Kryptomärkteaufsichtsgesetz (KMAnzV)",
-          "en": "Consultation on the Regulation on Notifications under the Crypto Markets Supervision Act (KMAnzV)"
-        },
-        "sl": "konsultation-18-2025-verordnung-ueber-die-anzeigen-und-die-vorlage-von-unterlage",
-        "s": {
-          "de": "Die BaFin hat den Entwurf einer „Verordnung über die Anzeigen und die Vorlage von Unterlagen nach dem Kryptomärkteaufsichtsgesetz“ (Kryptomärkteanzeigenverordnung – KMAnzV) zur Konsultation gestellt. Ziel der Verordnung ist es, klare Vorgaben für die im Kryptomärkteaufsichtsgesetz (KMAG) normierten Anzeigetatbestände festzulegen.\n\nDie Verordnung soll ein effizientes Anzeigewesen etablieren, indem sie standardisierte Formulare und Regelungen verwendet, die sich an bestehenden Anzeigenverordnungen nach dem Kreditwesengesetz (KWG) und dem Zahlungsdiensteaufsichtsgesetz (ZAG) orientieren. Dies soll den Anzeigepflichtigen einen geringeren Aufwand ermöglichen und die aufsichtliche Beurteilung durch die BaFin erleichtern.\n\nStellungnahmen zum Entwurf können bis zum 29. Oktober 2025 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die Konsultation erfolgt ausschließlich im schriftlichen Verfahren.",
-          "en": "BaFin has published a draft “Regulation on Notifications and the Submission of Documents under the Crypto Markets Supervision Act” (Kryptomärkteanzeigenverordnung – KMAnzV) for consultation. The regulation aims to establish clear requirements for the notification obligations stipulated in the Crypto Markets Supervision Act (KMAG).\n\nThe regulation seeks to create an efficient notification system by using standardized forms and rules, drawing inspiration from existing notification regulations under the Banking Act (KWG) and the Payment Services Supervision Act (ZAG). This approach is intended to reduce the burden on obliged entities and facilitate supervisory assessment by BaFin.\n\nComments on the draft can be submitted in writing or via email to BaFin until October 29, 2025. The consultation will be conducted exclusively through written submissions."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_18_2025_Kryptom%C3%A4rkteaufsichtsgesetz.html",
-        "imp": "medium",
-        "refnum": "Konsultation 18/2025"
-      },
-      {
-        "d": "03.01.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zu Kryptowerte-Dienstleistungen nach MiCAR",
-          "en": "BaFin Guidance on Crypto-Asset Services under MiCAR"
-        },
-        "sl": "merkblatt-kryptowerte-dienstleistungen-nach-micar",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Kryptowerte-Dienstleistungen nach der Markets in Crypto-Assets Regulation (MiCAR) veröffentlicht, die ab dem 30. Dezember 2024 anwendbar ist. Das Merkblatt erläutert die erlaubnispflichtigen Dienstleistungen, die sich auf vermögenswertreferenzierte Token, E-Geld-Token und sonstige Kryptowerte wie Bitcoin und Ether-Token beziehen.\n\nEs werden die Definitionen und Abgrenzungen der einzelnen Dienstleistungen nach MiCAR detailliert beschrieben, darunter die Verwahrung und Verwaltung von Kryptowerten für Kunden, der Betrieb einer Handelsplattform, der Tausch von Kryptowerten gegen Geld oder andere Kryptowerte sowie die Ausführung von Aufträgen über Kryptowerte für Kunden. Die BaFin zieht dabei Vergleiche zu bestehenden Regelungen im Kreditwesengesetz (KWG) und der MiFID II, um die Auslegung zu erleichtern. Insbesondere wird klargestellt, dass die Verwahrung und Verwaltung eigener Kryptowerte nicht erfasst ist und dass der Tatbestand des Tauschs von Kryptowerten gegen andere Kryptowerte einen Übersetzungsfehler in der deutschen MiCAR-Fassung enthält.\n\nDas Merkblatt ist für alle Unternehmen relevant, die Kryptowerte-Dienstleistungen im Anwendungsbereich der MiCAR erbringen oder planen, diese anzubieten. Es dient als wichtige Orientierungshilfe für die Beantragung entsprechender Erlaubnisse und die Einhaltung der neuen regulatorischen Anforderungen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung hin.",
-          "en": "BaFin has published guidance on crypto-asset services under the Markets in Crypto-Assets Regulation (MiCAR), which will be applicable from 30 December 2024. The guidance explains the licensable services related to asset-referenced tokens, e-money tokens, and other crypto-assets such as Bitcoin and Ether tokens.\n\nThe document details the definitions and distinctions of individual MiCAR services, including the custody and administration of crypto-assets for clients, the operation of a trading platform, the exchange of crypto-assets for fiat currency or other crypto-assets, and the execution of orders for crypto-assets on behalf of clients. BaFin draws comparisons to existing regulations in the German Banking Act (KWG) and MiFID II to facilitate interpretation. It clarifies that the custody and administration of own crypto-assets are not covered and that the definition for the exchange of crypto-assets for other crypto-assets contains a translation error in the German MiCAR version.\n\nThis guidance is relevant for all companies that provide or plan to offer crypto-asset services within the scope of MiCAR. It serves as an important guide for applying for relevant licenses and complying with the new regulatory requirements. KPMG highlights the publication in a specialized article."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_Kryptowerte_Dienstl.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin-Merkblatt \"Kryptowerte-Dienstleistungen nach MiCAR\" veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-merkblatt-kryptowerte-dienstleistungen-nach-micar-veroeffentlicht/",
-            "d": "10.01.2025"
-          }
-        ]
-      },
-      {
-        "d": "03.01.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Zulassungsanforderungen für ART und EMT nach MiCAR",
-          "en": "Guidance Note on Authorization Requirements for ARTs and EMTs under MiCAR"
-        },
-        "sl": "merkblatt-zulassungsanforderungen-bzgl-art-und-emt-nach-micar",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Zulassungsanforderungen für vermögenswertereferenzierte Token (ART) und E-Geld-Token (EMT) gemäß der MiCAR veröffentlicht. Es erläutert die Definitionen dieser Kryptowerte und grenzt sie von „anderen“ Kryptowerten ab, für die weniger strenge Anforderungen gelten. Das Merkblatt geht auf die Erlaubnispflichten, Anzeigepflichten gegenüber der BaFin und die Notwendigkeit eines Kryptowerte-Whitepapers ein, die für ART und EMT bei öffentlichem Angebot oder Zulassung zum Handel bestehen.\n\nDas Merkblatt richtet sich an Emittenten und Anbieter von ART und EMT. Es klärt die Begriffe des öffentlichen Angebots und der Zulassung zum Handel und betont, dass ART und EMT im Gegensatz zu „anderen“ Kryptowerten von einem Emittenten ausgegeben werden müssen. Es wird auch der Unterschied zwischen E-Geld-Token und traditionellem E-Geld nach dem ZAG herausgestellt, insbesondere dass EMT nicht zwingend für Zahlungszwecke verwendet werden müssen und keine Forderung gegenüber dem Emittenten voraussetzen.\n\nDie MiCAR ist am 29. Juni 2023 in Kraft getreten und ist ab dem 30. Dezember 2024 unmittelbar anwendbar, wobei die Titel III und IV bereits ab dem 30. Juni 2024 gelten.",
-          "en": "BaFin has published a guidance note on the authorization requirements for asset-referenced tokens (ARTs) and e-money tokens (EMTs) under MiCAR. It clarifies the definitions of these crypto-assets and distinguishes them from 'other' crypto-assets, which are subject to less stringent requirements. The guidance note addresses the licensing obligations, notification requirements to BaFin, and the necessity of a crypto-asset white paper for ARTs and EMTs when offered to the public or admitted to trading.\n\nThe guidance note is aimed at issuers and providers of ARTs and EMTs. It clarifies the concepts of public offering and admission to trading, emphasizing that ARTs and EMTs, unlike 'other' crypto-assets, must be issued by an issuer. It also highlights the difference between e-money tokens and traditional e-money under the German Payment Services Supervision Act (ZAG), particularly that EMTs do not necessarily have to be used for payment purposes and do not require a claim against the issuer.\n\nMiCAR formally entered into force on June 29, 2023, and will be directly applicable from December 30, 2024, with Titles III and IV already applicable from June 30, 2024."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_zulassung_art_emt.html",
-        "imp": "high"
-      },
-      {
-        "d": "26.11.2024",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Kryptomärktemitteilungs-Verordnung (KMMV) (Konsultation 09/2024)",
-          "en": "Consultation on the Crypto Market Disclosure Ordinance (KMMV) (Consultation 09/2024)"
-        },
-        "sl": "konsultation-09-2024-konsultation-des-entwurfs-einer-kryptomaerktemitteilungs-ve",
-        "s": {
-          "de": "Die BaFin konsultiert den Entwurf einer Kryptomärktemitteilungs-Verordnung (KMMV). Diese Verordnung konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes (KMAG-E).\n\nDie KMMV dient der weiteren Umsetzung des KMAG-E, der MiCAR und der technischen Durchführungsstandards nach Artikel 88 Absatz 4 MiCAR. Sie regelt die Übermittlung veröffentlichter Insiderinformationen an die BaFin sowie die Mitteilung über den Aufschub der Offenlegung von Insiderinformationen an die BaFin.\n\nDer Entwurf betrifft Emittenten, Anbieter oder Antragsteller, die nach Artikel 88 Absatz 1 MiCAR zur Veröffentlichung von Insiderinformationen verpflichtet sind und für die Deutschland der Herkunftsmitgliedstaat nach Artikel 3 Absatz 1 Nummer 33 MiCAR ist. Die Konsultation erfolgt unter Vorbehalt der Verabschiedung des Finanzmarktdigitalisierungsgesetzes und der Subdelegation der Verordnungsermächtigung an die BaFin.\n\nStellungnahmen zum Entwurf können bis zum 13. Dezember 2024 eingereicht werden.",
-          "en": "BaFin is consulting on the draft of a Crypto Market Disclosure Ordinance (KMMV). This ordinance specifies the notification obligations for the disclosure of inside information under Section 36 of the Crypto Market Supervision Act (KMAG-E).\n\nThe KMMV serves to further implement the KMAG-E, MiCAR, and the technical implementing standards under Article 88(4) MiCAR. It regulates the transmission of published inside information to BaFin and the notification to BaFin regarding the delayed disclosure of inside information.\n\nThe draft concerns issuers, offerors, or applicants who are obliged to publish inside information under Article 88(1) MiCAR and for whom Germany is the home Member State under Article 3(1)(33) MiCAR. The consultation is subject to the adoption of the Financial Market Digitalisation Act and the sub-delegation of the regulatory authorization to BaFin.\n\nComments on the draft can be submitted until December 13, 2024."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2024/kon_09_24_Kryptomaerktemitteilungs-VO_KMMV.html",
-        "imp": "medium",
-        "refnum": "Konsultation 09/2024"
       }
     ],
     "esgrating": [
@@ -5204,203 +5441,6 @@
         "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-outsourcing-cloud-service-providers",
         "imp": "low",
         "refnum": "ESMA65-294529287-4824"
-      }
-    ],
-    "aifmd2": [
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB",
-          "en": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB"
-        },
-        "sl": "rundschreiben-12-2026-wa-erlaubnisverfahren-fuer-aif-kapitalverwaltungsgesellsch",
-        "s": {
-          "de": "Das Rundschreiben der BaFin präzisiert das Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVG) gemäß § 22 KAGB. Es legt detaillierte Anforderungen an die einzureichenden Unterlagen fest, insbesondere in Bezug auf Eigenmittel, Liquidität, Angaben zu Geschäftsleitern, bedeutend beteiligten Inhabern und engen Verbindungen.\n\nFür AIF-KVGs bedeutet dies eine klare Richtlinie für die Antragstellung. Das Rundschreiben behandelt unter anderem die Darstellung des Geschäftsplans, der Geschäftsorganisation, interner Kontrollverfahren, der Vergütungspolitik, Auslagerungen und Anlagestrategien. Es wird erwartet, dass die Angaben zu den Arten der zu verwaltenden AIF mit dem Unternehmensgegenstand in der Satzung übereinstimmen.\n\nDas Rundschreiben ist am 15.09.2026 in Kraft getreten. Die BaFin behält sich vor, die Erlaubnis auf bestimmte Arten von Investmentvermögen zu beschränken und empfiehlt, den Unternehmensgegenstand vorab abzustimmen.",
-          "en": "The BaFin circular specifies the licensing procedure for AIF management companies (AIFMs) in accordance with Section 22 KAGB. It sets out detailed requirements for the documents to be submitted, particularly regarding own funds, liquidity, information on managing directors, significantly involved owners, and close links.\n\nFor AIFMs, this provides clear guidelines for submitting applications. The circular addresses, among other things, the presentation of the business plan, business organization, internal control procedures, remuneration policy, outsourcing, and investment strategies. It is expected that the information on the types of AIFs to be managed aligns with the company's business objective stated in its articles of association.\n\nThe circular came into force on 15.09.2026. BaFin reserves the right to restrict the license to certain types of investment funds and recommends coordinating the company's business objective in advance."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1226_erlaubnisverfahren_fuer_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
-        "imp": "high",
-        "refnum": "12/2026"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (§ 22 KAGB)",
-          "en": "BaFin Circular on Licensing Procedure for AIF Management Companies (Section 22 KAGB)"
-        },
-        "sl": "rundschreiben-12-2026-wa",
-        "s": {
-          "de": "Die BaFin hat ein Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVGen) nach § 22 KAGB veröffentlicht. Es konkretisiert die Anforderungen an Inhalt und Unterlagen des Erlaubnisantrags sowie Aspekte der Erlaubniserteilung. Ziel ist es, Transparenz zu schaffen und Bearbeitungszeiten zu verkürzen.\n\nDas Rundschreiben richtet sich an Unternehmen, die einen Erlaubnisantrag als AIF-KVG stellen oder beabsichtigen. Es gilt einheitlich für interne und externe AIF-KVGen sowie für Gesellschaften, die bereits nach § 44 KAGB registriert sind. Besondere Beachtung finden die Nachweise zu Eigenmitteln, Liquidität sowie die Zuverlässigkeit und fachliche Eignung der Geschäftsleiter.\n\nDas Rundschreiben 12/2026 (WA) ist ab dem 15.09.2026 gültig und ersetzt das Merkblatt vom 24. März 2025. Merkblätter zur Eignung von Geschäftsleitern und Aufsichtsorganen bleiben unberührt.",
-          "en": "BaFin has published a circular on the licensing procedure for AIF management companies (AIFMs) under Section 22 KAGB. It specifies the requirements for the content and documents of the license application, as well as aspects of the license granting. The aim is to create transparency and shorten processing times.\n\nThe circular is addressed to companies that are applying for or intend to apply for a license as an AIFM. It applies uniformly to internal and external AIFMs, as well as to companies already registered under Section 44 KAGB. Special attention is paid to the proof of own funds, liquidity, and the reliability and professional suitability of managing directors.\n\nCircular 12/2026 (WA) is valid from 15.09.2026 and replaces the guidance notice of March 24, 2025. Guidance notices on the suitability of managing directors and supervisory bodies remain unaffected."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_12_2026_erlaubnisverfahren_f%C3%BCr_aif_kapitalverwaltungsgesellschaften_nach_22_kagb.html",
-        "imp": "high",
-        "refnum": "12/2026"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren",
-          "en": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren"
-        },
-        "sl": "aif-kvgen-bafin-schafft-transparenz-bei-erlaubnisverfahren",
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 12/2026 zu Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 Kapitalanlagegesetzbuch (KAGB) veröffentlicht. Es bietet detaillierte Informationen zu den erforderlichen Dokumenten und Angaben für Antragsteller.\n\nDieses Rundschreiben ersetzt das Merkblatt vom 22. März 2013 (zuletzt geändert am 24. März 2025) und zielt darauf ab, mehr Transparenz zu schaffen und die Bearbeitung von Erlaubnisanträgen zu beschleunigen. Branchenstellungnahmen wurden berücksichtigt, und Anpassungen resultieren auch aus dem Fondsrisikobegrenzungsgesetz.\n\nDas Rundschreiben ist für Kapitalverwaltungsgesellschaften relevant, die Alternative Investmentfonds (AIF) verwalten und eine Erlaubnis nach § 22 KAGB beantragen. Es soll den Antragsprozess für diese Unternehmen vereinfachen und die Anforderungen klarer definieren.",
-          "en": "The BaFin has published Circular 12/2026 on authorization procedures for AIF management companies under Section 22 of the German Investment Code (KAGB). It provides detailed information on the required documents and data for applicants.\n\nThis circular replaces the leaflet from March 22, 2013 (last amended on March 24, 2025) and aims to create more transparency and accelerate the processing of authorization applications. Industry comments were taken into account, and adjustments also result from the Fund Risk Limitation Act.\n\nThis circular is relevant for management companies that manage Alternative Investment Funds (AIFs) and apply for authorization under Section 22 KAGB. It aims to simplify the application process for these companies and to define the requirements more clearly."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_15_rs_erlaubnisverfahren_f%C3%BCr_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
-        "imp": "high"
-      },
-      {
-        "d": "21.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs (ESMA34-671404336-1384)",
-          "en": "Compliance Table on ESMA Guidelines on Liquidity Management Tools (LMTs) of UCITS and Open-ended AIFs (ESMA34-671404336-1384)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden in den EU- und EWR-Staaten die Leitlinien anwenden oder beabsichtigen, diese anzuwenden.\n\nDie Tabelle zeigt, dass viele nationale Behörden die Leitlinien bereits anwenden oder beabsichtigen, dies bis zu einem bestimmten Datum oder nach Abschluss notwendiger legislativer oder regulatorischer Verfahren zu tun. Für Finanzinstitute bedeutet dies, dass sie sich auf eine zunehmend harmonisierte Anwendung der LMT-Leitlinien in Europa einstellen müssen, was die Anforderungen an das Liquiditätsmanagement von OGAW und offenen AIFs betrifft.\n\nEinige Länder wie Belgien, Bulgarien, Tschechien, Estland, Frankreich, Ungarn, Italien, Lettland, Polen, Portugal, Slowenien, Island und Norwegen haben angegeben, dass sie beabsichtigen, die Leitlinien zu einem späteren Zeitpunkt oder nach Abschluss nationaler Gesetzgebungsverfahren umzusetzen. Die Fristen für die Umsetzung variieren, beispielsweise der 31.08.2026 für Bulgarien und der 31.12.2026 für Italien und Lettland.",
-          "en": "ESMA has published a compliance table regarding its Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. This table provides an overview of the extent to which national competent authorities in EU and EEA states apply or intend to apply these guidelines.\n\nThe table indicates that many national authorities already apply the guidelines or intend to do so by a specific date or after completing necessary legislative or regulatory proceedings. For financial institutions, this means they should prepare for an increasingly harmonized application of LMT guidelines across Europe, affecting the requirements for liquidity management of UCITS and open-ended AIFs.\n\nSome countries, such as Belgium, Bulgaria, Czech Republic, Estonia, France, Hungary, Italy, Latvia, Poland, Portugal, Slovenia, Iceland, and Norway, have stated their intention to implement the guidelines at a later date or after the completion of national legislative processes. Implementation deadlines vary, for example, August 31, 2026, for Bulgaria, and December 31, 2026, for Italy and Latvia."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
-        "imp": "low",
-        "refnum": "ESMA34-671404336-1384"
-      },
-      {
-        "d": "16.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Konsultation: Änderungen im KAGB durch das Fondsrisikobegrenzungsgesetz (07/2026)",
-          "en": "BaFin Consultation: KAGB Amendments by Fund Risk Limitation Act (07/2026)"
-        },
-        "sl": "konsultation-07-2026-rundschreiben-zu-aenderungen-im-kapitalanlagegesetzbuch-dur",
-        "s": {
-          "de": "Die BaFin konsultiert ein Rundschreiben mit Hinweisen zu den Änderungen des Kapitalanlagegesetzbuchs (KAGB) durch das Fondsrisikobegrenzungsgesetz (FRiG). Das FRiG, das am 16. April 2026 in Kraft trat, führte umfangreiche Neuerungen ein, insbesondere die verpflichtende Einführung von Liquiditätsmanagement-Tools (LMTs) für offene Fonds.\n\nDas Rundschreiben erläutert die Implementierung von mindestens zwei LMTs in das Liquiditätsmanagementsystem offener Investmentvermögen und geht auf allgemeine Anforderungen sowie Besonderheiten einzelner LMTs ein. Zudem behandelt es Änderungen im Erlaubnisverfahren, wie zusätzliche Angaben zu Geschäftsleitern und den Wegfall der Konnexität zwischen Finanzportfolioverwaltung und Anlageberatung/-vermittlung als Nebendienstleistungen. Auch die Kreditvergabe durch Investmentvermögen wird thematisiert. Fachbeiträge weisen auf die Auswirkungen auf Immobilien-Sondervermögen hin.\n\nStellungnahmen zum Entwurf können bis zum 6. Juli 2026 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
-          "en": "BaFin is consulting on a circular providing guidance on the amendments to the German Capital Investment Code (KAGB) introduced by the Fund Risk Limitation Act (FRiG). The FRiG, which entered into force on April 16, 2026, brought about extensive changes, particularly the mandatory introduction of liquidity management tools (LMTs) for open-ended funds.\n\nThe circular explains the implementation of at least two LMTs in the liquidity management system of open-ended investment funds, addressing general requirements and specific features of individual LMTs. It also covers changes to the licensing procedure, such as additional information required for managing directors and the elimination of the nexus between financial portfolio management and investment advice/brokerage as ancillary services. Lending by investment funds is also addressed. Expert contributions highlight the implications for real estate special funds.\n\nComments on the draft can be submitted to BaFin until July 6, 2026. BaFin intends to publish the submitted comments online."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/kon_07_2026_rs_kagb_aenderungen.html",
-        "imp": "medium",
-        "deadline": "06.07.2026",
-        "refnum": "Konsultation 07/2026",
-        "adv": [
-          {
-            "f": "Waldeck Rechtsanwälte",
-            "ti": "Auswirkungen des Fondsrisikobegrenzungsgesetzes auf Immobilien-Sondervermögen",
-            "url": "https://www.waldvorlauternormen.com/auswirkungen-des-fondsrisikobegrenzungsgesetzes-auf-immobilien-sondervermogen/",
-            "d": "18.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "12.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
-          "en": "Consultation on Minimum Requirements for Risk Management of Management Companies (KAMaRisk)"
-        },
-        "sl": "konsultation-06-2026-kamarisk-aenderungsuebersicht-konsultationsfassung",
-        "s": {
-          "de": "Die BaFin hat eine Konsultation zu den beabsichtigten Änderungen des Rundschreibens \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\" veröffentlicht. Das Rundschreiben richtet sich an alle Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB sowie an registrierungspflichtige AIF-Kapitalverwaltungsgesellschaften nach § 2 Absatz 4 und 5 KAGB, insbesondere im Hinblick auf die Vergabe von Gelddarlehen und die damit verbundenen Dokumentationspflichten.\n\nDie Anforderungen des Rundschreibens beziehen sich auf das Management wesentlicher Risiken für Investmentvermögen und Gesellschaften, wobei mindestens Adressenausfall-, Marktpreis-, Liquiditäts- und operationelle Risiken (einschließlich Rechts-, Reputations- und IKT-Risiken) als wesentlich einzustufen sind. Neu ist die explizite Berücksichtigung von ESG-Risiken als Risikotreiber bei der Beurteilung der Wesentlichkeit und der Ausgestaltung des internen Kontrollsystems. Zudem werden besondere Mindestanforderungen für AIF festgelegt, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für bestimmte Gesellschafterdarlehen.\n\nStellungnahmen zu den Änderungen können bis zum 1. Juli 2026 bei der BaFin eingereicht werden. Die Konsultation ist für Kapitalverwaltungsgesellschaften relevant, da sie die Anforderungen an ihr Risikomanagement aktualisiert und präzisiert, insbesondere im Bereich der Kreditvergabe und der Berücksichtigung von ESG-Risiken.",
-          "en": "BaFin has published a consultation on the proposed amendments to the circular \"Minimum Requirements for Risk Management of Management Companies (KAMaRisk)\". The circular addresses all management companies with a license under Section 17 KAGB, as well as AIF management companies subject to registration under Section 2 (4) and (5) KAGB, particularly regarding the granting of loans and associated documentation obligations.\n\nThe circular's requirements pertain to the management of material risks for investment funds and companies, with at least credit, market, liquidity, and operational risks (including legal, reputational, and ICT risks) to be classified as material. A new aspect is the explicit consideration of ESG risks as risk drivers in assessing materiality and designing the internal control system. Furthermore, specific minimum requirements are established for AIFs that grant loans or invest in uncertificated loan receivables, with exceptions for certain shareholder loans.\n\nComments on the amendments can be submitted to BaFin until July 1, 2026. The consultation is relevant for management companies as it updates and clarifies the requirements for their risk management, especially in the area of lending and the consideration of ESG risks."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_06_2026_kamarisk_aenderungen.html",
-        "imp": "medium",
-        "deadline": "01.07.2026",
-        "refnum": "Konsultation 06/2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin startet Konsultation zu aktualisiertem Rundschreiben \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\"",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-aktualisiertem-rundschreiben-mindestanforderungen-an-das-risikomanagement-von-kapitalverwaltungsgesellschaften-kamarisk-2/",
-            "d": "23.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "14.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Fondsrisikobegrenzungsgesetz zur Umsetzung von EU-Richtlinien (BGBl. 2026 I Nr. 97)",
-          "en": "Investment Fund Risk Limitation Act for the Implementation of EU Directives (BGBl. 2026 I Nr. 97)"
-        },
-        "sl": "gesetz-zur-begrenzung-der-risiken-durch-investmentfonds-und-zur-umsetzung-der-ri",
-        "s": {
-          "de": "Das Fondsrisikobegrenzungsgesetz setzt die Richtlinien (EU) 2024/927 und (EU) 2024/2994 in nationales Recht um. Es zielt darauf ab, Risiken durch Investmentfonds zu begrenzen und umfasst Regelungen zu Übertragungsvereinbarungen, Liquiditätsrisikomanagement und aufsichtlicher Berichterstattung.\n\nDie Regelungen betreffen insbesondere alternative Investmentfonds hinsichtlich der Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie der Kreditvergabe. Zudem werden Vorschriften zum Umgang mit Konzentrationsrisiken aus Risikopositionen gegenüber zentralen Gegenparteien und Ausfallrisiken bei zentral geclearten Derivategeschäften geändert.\n\nDas Gesetz wurde am 09.04.2026 ausgefertigt und am 14.04.2026 im Bundesgesetzblatt veröffentlicht.",
-          "en": "The Investment Fund Risk Limitation Act transposes Directives (EU) 2024/927 and (EU) 2024/2994 into national law. It aims to limit risks posed by investment funds and includes provisions on transfer agreements, liquidity risk management, and supervisory reporting.\n\nThe regulations primarily affect alternative investment funds concerning the provision of custody and depositary services and lending activities. Furthermore, provisions on managing concentration risks arising from exposures to central counterparties and default risks in centrally cleared derivative transactions are amended.\n\nThe Act was enacted on 09.04.2026 and published in the Federal Law Gazette on 14.04.2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
-        "imp": "high"
-      },
-      {
-        "d": "09.09.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (Konsultation 17/2025)",
-          "en": "Consultation on the Licensing Procedure for AIF Management Companies (Consultation 17/2025)"
-        },
-        "sl": "konsultation-17-2025-aenderungen-und-konkretisierungen-des-merkblattes-zum-erlau",
-        "s": {
-          "de": "Die BaFin konsultiert Änderungen und Konkretisierungen ihres Merkblattes zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB. Ziel ist es, die Erlaubnisverfahren zu erleichtern und zu beschleunigen. Die Überarbeitung betrifft unter anderem Nachweise der erforderlichen Mittel, Angaben zur fachlichen Eignung der Geschäftsleiter, den Geschäftsplan sowie Anlagebedingungen und Satzungen der zu verwaltenden AIF.\n\nDie Änderungen sind relevant für alle Unternehmen, die eine Erlaubnis als AIF-Kapitalverwaltungsgesellschaft beantragen oder bereits eine solche Erlaubnis besitzen. Insbesondere die Konkretisierungen zur Beurteilung der fachlichen Eignung der Geschäftsleiter sind von praktischer Bedeutung, da sie nach Abschluss der Konsultation auch in das „Merkblatt zur Eignung von Geschäftsleitern nach dem KAGB“ übernommen werden. Fachbeiträge von Verbänden und Kanzleien zeigen das breite Interesse an den Anpassungen.\n\nStellungnahmen zum Entwurf können bis zum 30. September 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
-          "en": "BaFin is consulting on amendments and clarifications to its guidance notice on the licensing procedure for AIF management companies under Section 22 KAGB. The aim is to facilitate and accelerate the licensing procedures. The revision affects, among other things, evidence of the required funds, information on the professional suitability of managing directors, the business plan, and the investment conditions and articles of association of the AIFs to be managed.\n\nThese changes are relevant for all companies applying for or already holding a license as an AIF management company. The clarifications regarding the professional suitability of managing directors are of particular practical importance, as they will also be incorporated into the “Guidance Notice on the Suitability of Managing Directors under the KAGB” after the consultation. Contributions from associations and law firms highlight the broad interest in these adjustments.\n\nComments on the draft can be submitted to BaFin until September 30, 2025. BaFin intends to publish the submitted comments online."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_17_2025_Aenderungen_Konkretisierungen_Merkblatt_Erlaubnisverfahren_fuer_eine_AIF_Kapitalverwaltungsgesellschaft.html",
-        "imp": "medium",
-        "refnum": "Konsultation 17/2025"
-      },
-      {
-        "d": "25.02.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Konsultation zu Pflichten bei Krypto-Investmentvermögen (06/25)",
-          "en": "BaFin Consultation on Obligations for Crypto Investment Funds (06/25)"
-        },
-        "sl": "konsultation-06-25-entwurf-eines-rundschreibens-2025-zu-den-pflichten-von-verwah",
-        "s": {
-          "de": "Die BaFin hat einen Entwurf für ein Rundschreiben zur Konsultation gestellt, das die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften (KAGs) bei Investmentvermögen regelt, die in Kryptowerte investieren.\n\nSeit Inkrafttreten des Zukunftsfinanzierungsgesetzes können neben Spezial-AIF auch inländische Publikums-AIF und geschlossene Publikums-AIF direkt in Kryptowerte investieren. Das Rundschreiben soll Mindestanforderungen für Verwahrstellen und KAGs festlegen, um den technischen und regulatorischen Herausforderungen dieser neuen Anlageklasse zu begegnen.\n\nStellungnahmen zum Entwurf können bis zum 31. März 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
-          "en": "The BaFin has published a draft circular for consultation, which regulates the obligations of depositaries and capital management companies (KAGs) for investment funds investing in crypto assets.\n\nSince the Future Financing Act came into force, in addition to special AIFs, domestic public AIFs and closed public AIFs can also invest directly in crypto assets. The circular aims to establish minimum requirements for depositaries and KAGs to address the technical and regulatory challenges of this new asset class.\n\nComments on the draft can be submitted to BaFin until March 31, 2025. BaFin intends to publish the submitted comments online."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_06_2025_konsultation_kryptowerte_KVG_Verwahrstelle.html",
-        "imp": "medium"
       }
     ],
     "ecspr": [

@@ -160,16 +160,23 @@
     "2026-11-19"
    ],
    "keys": [
-    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on"
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on",
+    "rundschreiben-15-2026-wa",
+    "rundschreiben-16-2026-wa"
    ],
-   "hook": "Die EZB hält die Kapitalanforderungen für 2027 stabil, fokussiert aber neue Schwerpunkte in der Aufsicht.",
-   "folge": "Die durchschnittlichen CET1-Anforderungen bleiben für 2027 bei 11,3 % der risikogewichteten Aktiva. Institute müssen sich auf neue qualitative Maßnahmen zu Kreditrisiko, interner Governance und operationellem Risiko einstellen.",
-   "cover": "EZB: SREP-Ergebnisse 2026 und Prioritäten 2027-29",
-   "zeilen": [],
-   "frage": "Wie bewerten Sie die Auswirkungen der neuen Säule-2-Methodik auf Ihr Risikoprofil?",
-   "top": "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on",
+   "hook": "Neue Regeln für KVG-Risikomanagement: Die BaFin legt den Fokus auf Flexibilität und Proportionalität.",
+   "folge": "Das neue KAMaRisk-Rundschreiben der BaFin konkretisiert die Organisationspflichten für Kapitalverwaltungsgesellschaften. Die Anforderungen in Abschnitt 5 sind innerhalb von sechs Monaten umzusetzen, die anderen Abschnitte gelten sofort.",
+   "cover": "BaFin: Neue KAMaRisk für KVGen",
+   "zeilen": [
+    "BaFin: Kryptowerte und DLT-Finanzinstrumente erfordern neue Pflichten für Verwahrstellen und KVGen",
+    "EZB: Kapitalanforderungen für Banken bleiben 2027 stabil, Fokus auf Resilienz gegen geopolitische Risiken"
+   ],
+   "frage": "Wie stellen Sie die Einhaltung der neuen KAMaRisk-Anforderungen in Ihrer KVG sicher?",
+   "top": "rundschreiben-16-2026-wa",
    "kern": {
-    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB veröffentlicht die SREP-Ergebnisse 2026 und die aufsichtlichen Prioritäten 2027-29, wobei die Kapitalanforderungen für 2027 stabil bleiben, aber neue qualitative Maßnahmen eingeführt werden."
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die Kapitalanforderungen für Banken 2027 weitgehend stabil und priorisiert die Widerstandsfähigkeit gegenüber geopolitischen und technologiebedingten Risiken.",
+    "rundschreiben-16-2026-wa": "Die BaFin hat neue Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht, die ab sofort gelten, mit einer sechsmonatigen Umsetzungsfrist für Abschnitt 5.",
+    "rundschreiben-15-2026-wa": "Die BaFin präzisiert die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-Finanzinstrumente ab sofort."
    },
    "doppelt": [],
    "fmt": 5,
