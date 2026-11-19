@@ -154,6 +154,26 @@
    ],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-20": {
+   "window": [
+    "2026-11-19"
+   ],
+   "keys": [
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on"
+   ],
+   "hook": "Die EZB hält die Kapitalanforderungen für 2027 stabil, fokussiert aber neue Schwerpunkte in der Aufsicht.",
+   "folge": "Die durchschnittlichen CET1-Anforderungen bleiben für 2027 bei 11,3 % der risikogewichteten Aktiva. Institute müssen sich auf neue qualitative Maßnahmen zu Kreditrisiko, interner Governance und operationellem Risiko einstellen.",
+   "cover": "EZB: SREP-Ergebnisse 2026 und Prioritäten 2027-29",
+   "zeilen": [],
+   "frage": "Wie bewerten Sie die Auswirkungen der neuen Säule-2-Methodik auf Ihr Risikoprofil?",
+   "top": "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on",
+   "kern": {
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB veröffentlicht die SREP-Ergebnisse 2026 und die aufsichtlichen Prioritäten 2027-29, wobei die Kapitalanforderungen für 2027 stabil bleiben, aber neue qualitative Maßnahmen eingeführt werden."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
