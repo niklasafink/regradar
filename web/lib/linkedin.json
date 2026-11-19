@@ -161,25 +161,22 @@
    ],
    "keys": [
     "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on",
-    "public-register-for-the-trading-obligation-for-derivatives-under-mifir",
     "rundschreiben-15-2026-wa",
     "rundschreiben-16-2026-wa"
    ],
-   "hook": "Neues BaFin-Rundschreiben: KVG-Risikomanagement muss sich anpassen, besonders bei Kreditvergabe.",
-   "folge": "Das neue KAMaRisk-Rundschreiben der BaFin konkretisiert die Organisationspflichten für Kapitalverwaltungsgesellschaften. Institute müssen ihre Risikomanagementprozesse innerhalb von sechs Monaten anpassen, insbesondere wenn sie Kredite vergeben.",
-   "cover": "BaFin: Neue Mindestanforderungen an KVG-Risikomanagement",
+   "hook": "Neue Regeln für KVG-Risikomanagement: Die BaFin legt den Fokus auf Proportionalität und Flexibilität.",
+   "folge": "Das neue KAMaRisk-Rundschreiben der BaFin konkretisiert die Organisationspflichten für Kapitalverwaltungsgesellschaften. Institute müssen die Anforderungen in Abschnitt 5 innerhalb von sechs Monaten umsetzen, die übrigen Abschnitte gelten sofort.",
+   "cover": "BaFin: Neue KAMaRisk für Kapitalverwaltungsgesellschaften",
    "zeilen": [
-    "BaFin: Neue Pflichten für Verwahrstellen und KVGen bei Kryptowerten und DLT-Finanzinstrumenten",
-    "EZB: Kapitalanforderungen bleiben 2027 stabil, Fokus auf Widerstandsfähigkeit gegen Schocks",
-    "ESMA: Bestimmte GBP- und USD-Zinsderivate fallen nicht mehr unter MiFIR-Handelspflicht"
+    "BaFin: Kryptowerte und DLT-Finanzinstrumente erfordern neue Pflichten für Verwahrstellen",
+    "EZB: SREP-Kapitalanforderungen für 2027 bleiben stabil, Fokus auf Resilienz und Tech-Risiken"
    ],
-   "frage": "Wie stellen Sie sicher, dass Ihr Risikomanagement die neuen KAMaRisk-Anforderungen fristgerecht erfüllt?",
+   "frage": "Welche Anpassungen im Risikomanagement sind bei Ihnen durch die neuen KAMaRisk-Regeln nötig?",
    "top": "rundschreiben-16-2026-wa",
    "kern": {
-    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die Kapitalanforderungen für 2027 stabil bei durchschnittlich 11,3 % CET1 und legt neue aufsichtliche Prioritäten für 2027-29 fest.",
-    "rundschreiben-16-2026-wa": "Die BaFin hat neue Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht, die innerhalb von sechs Monaten umzusetzen sind.",
-    "rundschreiben-15-2026-wa": "Die BaFin präzisiert die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-Finanzinstrumente ab sofort.",
-    "public-register-for-the-trading-obligation-for-derivatives-under-mifir": "Die ESMA hat ihr Register zur MiFIR-Handelspflicht für Derivate aktualisiert, wodurch bestimmte GBP- und USD-Zinsderivate nicht mehr der Pflicht unterliegen."
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die SREP-Kapitalanforderungen für 2027 stabil und konzentriert sich in ihren Prioritäten 2027-29 auf geopolitische und technologiebedingte Risiken der Banken.",
+    "rundschreiben-16-2026-wa": "Die BaFin hat neue Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht, die für Abschnitt 5 innerhalb von sechs Monaten umzusetzen sind.",
+    "rundschreiben-15-2026-wa": "Die BaFin präzisiert die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-Finanzinstrumente ab sofort."
    },
    "doppelt": [],
    "fmt": 5,
