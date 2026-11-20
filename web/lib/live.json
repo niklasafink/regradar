@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:09:15Z",
+  "generated_at": "2026-11-20T16:09:51Z",
   "updates": {
     "bcbs": [
       {
@@ -697,6 +697,201 @@
         "refnum": "Konsultation 04/2020"
       }
     ],
+    "dora": [
+      {
+        "d": "20.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "FINREP: Behandlung von DORA-bezogenen IKT-Kosten und -Verlusten (Q&A 2026_7936)",
+          "en": "FINREP: Treatment of DORA-related ICT costs and losses (Q&A 2026_7936)"
+        },
+        "sl": "2026-7936-finrep-f-16-08-treatment-of-dora-related-ict-service-provider-costs-an",
+        "s": {
+          "de": "Die EBA hat eine Q&A zur Behandlung von DORA-bezogenen Kosten und Verlusten aus IKT-Dienstleistungen in FINREP-Meldungen veröffentlicht. Konkret geht es um die Frage, ob solche Aufwendungen in der FINREP-Vorlage F 16.08 unter der Position „IT-Outsourcing“ zu melden sind, insbesondere wenn sie auf ausgelagerte IKT-Dienste zurückzuführen sind, die in den Anwendungsbereich von DORA fallen.\n\nDie EBA stellt klar, dass diese Kosten und Verluste in den entsprechenden Positionen der Gewinn- und Verlustrechnung gemäß ihrer Art und der Klassifizierung in den öffentlichen Abschlüssen des Instituts zu melden sind. Ausgaben an IKT-Drittanbieter sind demnach unter „Sonstige Verwaltungsaufwendungen – IT-Outsourcing“ in der Vorlage F 16.08 auszuweisen. Andere Aufwendungen und Verluste sind je nach ihrer spezifischen Natur (z. B. Wertminderungen von Software-Anlagen, Rückstellungen, sonstige betriebliche Aufwendungen) und konsistent mit der Rechnungslegungsklassifizierung in den öffentlichen Abschlüssen zu behandeln.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die von DORA betroffen sind und IKT-Dienstleistungen auslagern. Sie präzisiert die Meldepflichten für Kosten und Verluste, die im Zusammenhang mit IKT-Drittanbietern entstehen, und stellt sicher, dass diese konsistent in den FINREP-Berichten erfasst werden, unabhängig davon, ob das Verlustereignis aus den eigenen IKT-Systemen des Instituts oder von einem IKT-Drittanbieter stammt.",
+          "en": "The EBA has published a Q&A on the treatment of DORA-related costs and losses from ICT services in FINREP reports. Specifically, it addresses whether such expenses should be reported in FINREP template F 16.08 under the 'IT outsourcing' line item, particularly when attributable to outsourced ICT services falling within the scope of DORA.\n\nThe EBA clarifies that these costs and losses should be reported in the appropriate items of the income statement according to their nature and the classification used in the institution's public financial statements. Expenses paid to ICT third-party providers are to be reported under 'Other administrative expenses – IT outsourcing' in template F 16.08. Other expenses and losses are to be treated according to their specific nature (e.g., impairment on software assets, provisions, other operating expenses) and consistently with the accounting classification used in the public financial statements.\n\nThis clarification is relevant for credit institutions affected by DORA and outsourcing ICT services. It specifies the reporting obligations for costs and losses arising in connection with ICT third-party providers, ensuring consistent recording in FINREP reports, regardless of whether the loss event originates from the institution's own ICT systems or from an ICT third-party service provider."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7936",
+        "imp": "low"
+      },
+      {
+        "d": "23.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
+          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
+        },
+        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
+          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
+        "imp": "medium"
+      },
+      {
+        "d": "16.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "DORA: Operationelle Anweisungen zur Meldung von IKT-Vorfällen",
+          "en": "DORA incident reporting - operational instructions"
+        },
+        "sl": "dora-incident-reporting-operational-instructions",
+        "s": {
+          "de": "Dieses Dokument der ESMA enthält operationelle Anweisungen für die zuständigen Behörden zur Meldung schwerwiegender IKT-bezogener Vorfälle gemäß der DORA-Verordnung. Ziel ist es, die Datenqualität zu verbessern und die Konsistenz der Meldungen über verschiedene Jurisdiktionen hinweg zu fördern. Die Anweisungen basieren auf den Implementing Technical Standards (ITS) 2025/302 und den Regulatory Technical Standards (RTS) 2025/301 und 2024/1772, die die Meldeformulare, Verfahren, Inhalte, Fristen und Klassifizierungskriterien für IKT-Vorfälle festlegen.\n\nDie Anweisungen behandeln spezifische Aspekte wie die Verwendung der englischen Sprache für Meldungen an die ESAs, die einheitliche Angabe monetärer Felder in Tausendereinheiten und die korrekte Nutzung von Freitextfeldern. Weiterhin wird die Notwendigkeit der Einreichung von Abschlussberichten, die Vorgehensweise bei Korrekturmeldungen und die konsistente Verwendung eindeutiger Identifikatoren für Vorfälle betont. Auch die Kriterien für die Klassifizierung von Vorfällen als schwerwiegend und die geografische Verbreitung werden präzisiert.\n\nFinanzunternehmen, die unter DORA fallen, müssen nach der Erkennung eines als schwerwiegend eingestuften IKT-Vorfalls Informationen über den Vorfall an ihre zuständige Behörde melden. Diese Behörden wiederum benachrichtigen die ESAs unter Verwendung vordefinierter englischer Vorlagen. Die Anweisungen sollen regelmäßig aktualisiert werden, um Erfahrungen aus der Praxis zu berücksichtigen.",
+          "en": "This ESMA document provides operational instructions for competent authorities regarding the reporting of major ICT-related incidents under the DORA Regulation. The aim is to enhance data quality and promote greater consistency in reporting across jurisdictions. The instructions are based on Implementing Technical Standards (ITS) 2025/302 and Regulatory Technical Standards (RTS) 2025/301 and 2024/1772, which define reporting forms, procedures, content, timelines, and classification criteria for ICT incidents.\n\nThe instructions cover specific aspects such as the use of the English language for reports to the ESAs, the consistent reporting of monetary fields in thousands of units, and the correct use of free-text fields. Furthermore, the document emphasizes the necessity of submitting final reports, the procedure for correction reports, and the consistent use of unique identifiers for incidents. Criteria for classifying incidents as major and their geographical spread are also clarified.\n\nFinancial entities falling under DORA must report information on ICT-related incidents classified as major to their competent authority. These authorities, in turn, notify the ESAs using predefined English templates. The instructions will be updated regularly to incorporate practical experience."
+        },
+        "url": "https://www.esma.europa.eu/document/dora-incident-reporting-operational-instructions",
+        "imp": "high"
+      },
+      {
+        "d": "10.09.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Verordnung zur Anpassung von Prüfungsberichtsverordnungen an DORA",
+          "en": "Regulation amending audit report regulations to incorporate DORA requirements"
+        },
+        "sl": "verordnung-zur-aenderung-der-wertpapierinstituts-pruefungsberichtsverordnung-und",
+        "s": {
+          "de": "Diese Verordnung ändert die Wertpapierinstituts-Prüfungsberichtsverordnung und die Schwarmfinanzierungsdienstleister-Prüfungsverordnung. Ziel ist es, die Vorgaben der Verordnung (EU) 2022/2554 (DORA) im Rahmen von Prüfungen zu berücksichtigen.\n\nDie Änderungen betreffen Wertpapierinstitute und Schwarmfinanzierungsdienstleister. Für diese Unternehmen bedeutet dies, dass ihre Prüfungen künftig die Anforderungen der DORA-Verordnung an die digitale operationale Resilienz einbeziehen müssen. Dies wird voraussichtlich Anpassungen in den Prüfprozessen und den zugehörigen Berichten erfordern.\n\nDie Verordnung wurde am 10.09.2026 im Bundesgesetzblatt veröffentlicht und trat am 26.08.2026 in Kraft.",
+          "en": "This regulation amends the Investment Firm Audit Report Regulation and the Crowdfunding Service Provider Audit Regulation. The aim is to incorporate the requirements of Regulation (EU) 2022/2554 (DORA) into audits.\n\nThe amendments affect investment firms and crowdfunding service providers. For these entities, this means that their audits will in future have to include the DORA regulation's requirements for digital operational resilience. This will likely necessitate adjustments to audit processes and related reports.\n\nThe regulation was published in the Federal Law Gazette on 10.09.2026 and entered into force on 26.08.2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/256",
+        "imp": "high"
+      },
+      {
+        "d": "27.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu den gemeinsamen DORA-Leitlinien für IKT-Kosten und -Verluste (ESMA75-1012365701-566)",
+          "en": "Compliance Table on Joint DORA Guidelines for ICT Costs and Losses (ESMA75-1012365701-566)"
+        },
+        "sl": "compliance-table-on-the-joint-guidelines-on-costs-and-losses-under-dora",
+        "s": {
+          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der Europäischen Aufsichtsbehörden (ESAs) zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 (JC/GL/2024/34) verursacht werden.\n\nDie Tabelle listet auf, welche nationalen zuständigen Behörden (z.B. FMA Österreich, BaFin Deutschland, AMF Frankreich) diese Leitlinien einhalten oder beabsichtigen, sie einzuhalten. Einige Behörden geben zusätzliche Informationen zu ihrer Umsetzung an, wie die Veröffentlichung auf ihren Websites, die Integration in Aufsichtsverfahren oder die Entwicklung spezifischer nationaler Anweisungen und Formulare zur Berichterstattung.\n\nDie Leitlinien sind ab dem 19. Mai 2025 anwendbar. Mehrere nationale Behörden haben bereits Maßnahmen zur Umsetzung ergriffen oder planen diese, um die Anforderungen der DORA-Verordnung bezüglich der Meldung von Kosten und Verlusten aus IKT-Vorfällen zu erfüllen.",
+          "en": "This document is a compliance table for the Joint Guidelines of the European Supervisory Authorities (ESAs) on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under the DORA Regulation (EU) 2022/2554 (JC/GL/2024/34).\n\nThe table lists which national competent authorities (e.g., FMA Austria, BaFin Germany, AMF France) comply or intend to comply with these guidelines. Some authorities provide additional information on their implementation, such as publication on their websites, integration into supervisory procedures, or the development of specific national instructions and forms for reporting.\n\nThe guidelines are applicable from May 19, 2025. Several national authorities have already taken or plan to take measures for implementation to meet the DORA Regulation's requirements regarding the reporting of costs and losses from ICT incidents."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
+        "imp": "medium",
+        "refnum": "ESMA75-1012365701-566"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA fordern verbesserte Governance und konsistente Aufsicht zur Minderung von IKT-Risiken durch KI-Modelle im EU-Finanzsektor",
+          "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
+        },
+        "sl": "eba-eiopa-and-esma-call-for-enhanced-governance-and-consistent-supervision-to-mi",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA – ESAs) fordern einen sektorübergreifenden, risikobasierten und konsistenten Aufsichtsansatz zur Minderung von IKT-Risiken, die von „Frontier AI“-Modellen ausgehen. Die Erklärung berücksichtigt bestehende regulatorische Anforderungen sowie Veröffentlichungen anderer Behörden wie der Europäischen Kommission, des ESRB und der ENISA.\n\nDie ESAs skizzieren Maßnahmen, die Finanzunternehmen dabei helfen sollen, ihre operationelle Resilienz gegenüber Cyberrisiken im Zusammenhang mit „Frontier AI“-Modellen zu stärken. Besonderes Augenmerk liegt auf der Prävention, Erkennung und dem Management dieser Risiken. Finanzunternehmen sollen robuste Governance- und Risikomanagementrahmen implementieren.\n\nDie ESAs ermutigen Finanzunternehmen und zuständige Behörden, die Erklärung als Grundlage für den Aufsichtsdialog zu nutzen. Dies soll dazu beitragen, die Widerstandsfähigkeit des EU-Finanzsystems gegenüber Risiken durch „Frontier AI“-Technologien zu gewährleisten. Die Erklärung informiert auch über laufende und geplante DORA-Aufsichtsaktivitäten für kritische IKT-Drittanbieter (CTPPs).",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA – ESAs) are calling for a cross-sectoral, risk-based, and consistent supervisory approach to mitigate ICT risks stemming from frontier AI models. The statement considers existing regulatory requirements and publications from other authorities such as the European Commission, ESRB, and ENISA.\n\nThe ESAs outline measures to help financial entities strengthen their operational resilience against cyber risks linked to frontier AI models. Particular emphasis is placed on the prevention, detection, and management of these risks. Financial entities should implement robust governance and risk management frameworks.\n\nThe ESAs encourage both financial entities and competent authorities to use the statement as a basis for supervisory dialogue. This approach aims to ensure the EU financial system remains resilient against risks driven by frontier AI technologies. The statement also provides updates on ongoing and planned DORA oversight activities for critical ICT third-party providers (CTPPs)."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision",
+        "imp": "medium"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESAs-Stellungnahme zu IKT-Risiken durch Frontier AI-Modelle (JC 2026 25)",
+          "en": "ESAs' Statement on ICT Risks from Frontier AI Models (JC 2026 25)"
+        },
+        "sl": "esas-statement-toward-a-consistent-and-risk-based-approach-for-ict-risks-from-fr",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (ESAs) haben eine Stellungnahme zu einem konsistenten und risikobasierten Ansatz für IKT-Risiken durch „Frontier AI“-Modelle veröffentlicht. Diese Modelle, die an der Spitze der KI-Entwicklung stehen, bergen neue Herausforderungen für die operationelle Resilienz von Finanzunternehmen. Die Stellungnahme betont die Notwendigkeit, bestehende IKT-Risikomanagementrahmen anzupassen, um diesen neuen Bedrohungen zu begegnen.\n\nFinanzinstitute müssen ihre Präventions-, Detektions- und Managementstrategien für Cyberrisiken überdenken. Dazu gehören die kontinuierliche Aktualisierung von IT-Inventaren, die Implementierung von „Secure-by-Design“-Prinzipien, verbesserte Überwachungsprozesse und die Anpassung von Risikomanagement-Frameworks an KI-gestützte Bedrohungen. Auch die Schulung des Managements und der Mitarbeiter im Bereich Cybersicherheit muss weiterentwickelt werden, um eine proaktivere Haltung zu fördern.\n\nDie Stellungnahme fordert eine Weiterentwicklung der Cybersicherheitsstrategien, um auf KI-gestützte Angriffe reagieren zu können. Dies beinhaltet die Integration automatisierter Sicherheitskontrollen in Entwicklungsprozesse und die Berücksichtigung neuer oder verstärkter Risiken durch KI-Modelle, einschließlich der Abhängigkeiten von Drittanbietern und Open-Source-Gemeinschaften.",
+          "en": "The European Supervisory Authorities (ESAs) have issued a statement on a consistent and risk-based approach to ICT risks arising from frontier AI models. These cutting-edge AI models pose new challenges to the operational resilience of financial entities. The statement emphasizes the need to adapt existing ICT risk management frameworks to address these emerging threats.\n\nFinancial institutions must re-evaluate their cyber risk prevention, detection, and management strategies. This includes continuously updating IT inventories, implementing secure-by-design principles, enhancing monitoring processes, and adapting risk management frameworks to AI-assisted threats. Cybersecurity awareness training for management and staff also needs to evolve to foster a more proactive mindset.\n\nThe statement calls for the evolution of cybersecurity strategies to respond to AI-enhanced attacks. This involves integrating automated security controls into development processes and considering new or heightened risks from AI models, including dependencies on third-party providers and open-source communities."
+        },
+        "url": "https://www.esma.europa.eu/document/esas-statement-toward-consistent-and-risk-based-approach-ict-risks-frontier-ai-models",
+        "imp": "medium"
+      },
+      {
+        "d": "23.07.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Anpassung der PrüfV wegen DORA, Taxonomie und Offenlegungsverordnung (Konsultation 14/2025)",
+          "en": "Consultation on the amendment of the PrüfV due to DORA, Taxonomy, and Disclosure Regulations (Consultation 14/2025)"
+        },
+        "sl": "konsultation-14-2025-entwurf-einer-aenderungsverordnung-zur-anpassung-der-pruefv",
+        "s": {
+          "de": "Die BaFin konsultiert einen Entwurf zur Änderung der Prüfungsberichteverordnung (PrüfV). Ziel ist die Konkretisierung der Berichtspflichten für Abschlussprüfer im Zusammenhang mit der EU-Offenlegungsverordnung, der EU-Taxonomieverordnung und der DORA-Verordnung.\n\nDie Anpassung der PrüfV soll sicherstellen, dass die BaFin ausreichend detaillierte Informationen über die Prüfungsergebnisse erhält, um ihren Aufsichtspflichten nachkommen zu können. Hierfür werden die §§ 40a und 40b PrüfV neu eingeführt, die spezifische Anforderungen an die Prüfungsberichterstattung zu diesen neuen Regelwerken festlegen.\n\nDie neuen Vorgaben sollen erstmals auf den Prüfungsbericht für Geschäftsjahre angewendet werden, die nach dem 31. Dezember 2024 beginnen. Stellungnahmen zum Entwurf können bis zum 12. August 2025 eingereicht werden.",
+          "en": "BaFin is consulting on a draft amendment to the German Audit Report Regulation (PrüfV). The aim is to specify the reporting obligations for auditors in connection with the EU Disclosure Regulation, the EU Taxonomy Regulation, and the DORA Regulation.\n\nThe amendment to the PrüfV is intended to ensure that BaFin receives sufficiently detailed information on audit results to fulfill its supervisory duties. For this purpose, new sections 40a and 40b PrüfV are introduced, which set specific requirements for audit reporting on these new regulatory frameworks.\n\nThe new provisions are to be applied for the first time to audit reports for financial years beginning after December 31, 2024. Comments on the draft can be submitted until August 12, 2025."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_14_2025_entwurf_aenderungsverordnung_zur_pruefv_va.html",
+        "imp": "medium",
+        "refnum": "Konsultation 14/2025"
+      },
+      {
+        "d": "17.01.2025",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Bankaufsichtliche Anforderungen an die IT (BAIT) – Aktualisierung (Rundschreiben 10/2017)",
+          "en": "Banking Supervisory Requirements for IT (BAIT) – Update (Circular 10/2017)"
+        },
+        "sl": "rundschreiben-10-2017-ba-bankaufsichtliche-anforderungen-an-die-it-bait",
+        "s": {
+          "de": "Das Rundschreiben 10/2017 (BA) der BaFin, bekannt als BAIT, legt einen flexiblen und praxisnahen Rahmen für die technisch-organisatorische Ausstattung von Instituten fest. Es konzentriert sich dabei auf das Management von IT-Ressourcen, das Informationsrisikomanagement und das Informationssicherheitsmanagement. Zudem präzisiert es die Anforderungen des § 25b KWG bezüglich der Auslagerung von Aktivitäten und Prozessen.\n\nDie BAIT konkretisiert die Anforderungen der MaRisk im Bereich der IT und gilt für alle Kredit- und Finanzdienstleistungsinstitute in Deutschland. Ab dem 17. Januar 2025 sind Institute, die ein IKT-Risikomanagement nach Art. 5-15 oder Art. 16 der DORA-Verordnung betreiben müssen, von diesem Rundschreiben ausgenommen. Die Geschäftsleitung ist für die Festlegung und Anpassung einer konsistenten IT-Strategie und IT-Governance verantwortlich, die auch die Informationssicherheit und das IT-Notfallmanagement umfasst.\n\nDie aktualisierte Fassung des Rundschreibens tritt am 17. Januar 2025 in Kraft. Institute sollten ihre IT-Strategien und -Prozesse entsprechend den präzisierten Anforderungen überprüfen und anpassen, insbesondere im Hinblick auf die IT-Governance, das Informationsrisikomanagement und die operative Informationssicherheit.",
+          "en": "BaFin's Circular 10/2017 (BA), known as BAIT, establishes a flexible and practical framework for the technical and organizational setup of institutions. It focuses on IT resource management, information risk management, and information security management. Furthermore, it clarifies the requirements of Section 25b KWG regarding the outsourcing of activities and processes.\n\nBAIT specifies the IT-related requirements of MaRisk and applies to all credit institutions and financial service institutions in Germany. As of January 17, 2025, institutions that are required to implement ICT risk management according to Articles 5-15 or Article 16 of the DORA Regulation are exempt from this circular. The management board is responsible for defining and adapting a consistent IT strategy and IT governance, which also includes information security and IT emergency management.\n\nThe updated version of the circular comes into effect on January 17, 2025. Institutions should review and adjust their IT strategies and processes in accordance with the clarified requirements, particularly concerning IT governance, information risk management, and operational information security."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1710_ba_BAIT.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 10/2017"
+      },
+      {
+        "d": "09.10.2024",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Umsetzungshinweise zu DORA für IKT-Risikomanagement",
+          "en": "BaFin Implementation Guidance on DORA for ICT Risk Management"
+        },
+        "sl": "bafin-veroeffentlicht-umsetzungshinweise-zu-dora",
+        "s": {
+          "de": "Die BaFin hat Umsetzungshinweise zum Digital Operational Resilience Act (DORA) veröffentlicht. Diese nicht-verpflichtende Aufsichtsmitteilung soll Banken und Versicherer bei der Implementierung der DORA-Anforderungen an das IKT-Risikomanagement und das IKT-Drittparteienrisikomanagement unterstützen.\n\nDie Hinweise vergleichen die DORA-Anforderungen mit den bestehenden bank- und versicherungsaufsichtlichen Anforderungen an die IT (BAIT und VAIT) und identifizieren Handlungsbedarfe. Sie enthalten auch eine Übersicht der Mindestvertragsinhalte für Vereinbarungen mit IKT-Drittdienstleistern. Die Ergebnisse sind in der Regel auch auf Kapitalverwaltungsgesellschaften (KAIT) sowie Zahlungs- und E-Geld-Institute (ZAIT) übertragbar.\n\nAb dem 17. Januar 2025 müssen die meisten beaufsichtigten Unternehmen DORA anwenden. Die BaFin beabsichtigt, die Rundschreiben BAIT, VAIT, ZAIT und KAIT aufzuheben, da sich viele Anforderungen mit DORA decken.",
+          "en": "The BaFin has published implementation guidance on the Digital Operational Resilience Act (DORA). This non-binding supervisory statement aims to support banks and insurers in implementing DORA's requirements for ICT risk management and ICT third-party risk management.\n\nThe guidance compares DORA's requirements with the existing banking and insurance supervisory requirements for IT (BAIT and VAIT) and identifies areas for action. It also includes an overview of minimum contractual contents for agreements with ICT third-party service providers. The findings are generally transferable to capital management companies (KAIT) and payment and e-money institutions (ZAIT).\n\nFrom January 17, 2025, most supervised entities must apply DORA. The BaFin intends to repeal the circulars BAIT, VAIT, ZAIT, and KAIT, as many of their requirements overlap with DORA."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2024/Aufsichtsmitteilung_Umsetzungshinweise_DORA.html",
+        "imp": "medium"
+      }
+    ],
     "brrd": [
       {
         "d": "20.11.2026",
@@ -706,17 +901,54 @@
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "Meldung von Treuhandkonten in der Abwicklungsplanung (Q&A 2026_7988)",
-          "en": "Reporting of beneficiary accounts in resolution planning (Q&A 2026_7988)"
+          "de": "Meldung von Wertpapierfinanzierungsgeschäften (SFT) im Abwicklungsplanungsbericht (Q&A 2026_7947)",
+          "en": "Reporting of Securities Financing Transactions (SFTs) in Resolution Planning Report (Q&A 2026_7947)"
         },
-        "sl": "reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-template-z-02",
+        "sl": "2026-7947-annex-ii-of-instructions-for-resolution-planning-report-representation",
         "s": {
-          "de": "Die EBA präzisiert die Meldung von Einlagen auf Treuhandkonten in der Vorlage Z 02.00 für die Abwicklungsplanung. Institute müssen in Zeile 0110 (gedeckte Einlagen) nur solche Beträge ausweisen, die gemäß Artikel 2(1)(5) der Richtlinie 2014/49/EU tatsächlich gedeckt sind.\n\nDies erfordert eine genaue Prüfung der Identifizierbarkeit der letztbegünstigten Personen gemäß Artikel 7(3) der Richtlinie 2014/49/EU und nationaler Bestimmungen. Die Annahme einer vollständigen Deckung, wie sie in den EBA-Leitlinien EBA/GL/2023/02 für die Berechnung der Beiträge zu Einlagensicherungssystemen vorgesehen ist, gilt nicht für die Abwicklungsberichterstattung. Nicht gedeckte Beträge sind stattdessen in den entsprechenden Haftungskategorien der Vorlage Z 02.00 zu klassifizieren, basierend auf ihrer rechtlichen Natur und insolvenzrechtlichen Behandlung.\n\nDie Meldung muss konsistent mit den Informationen in der Vorlage Z 06.00 erfolgen. Eine automatische Klassifizierung als gedeckt ist ausgeschlossen, wenn die letztbegünstigten Personen nicht identifiziert werden können.",
-          "en": "The EBA clarifies the reporting of beneficiary accounts in template Z 02.00 for resolution planning. Institutions must only report amounts in row 0110 (covered deposits) that are actually covered as defined in Article 2(1)(5) of Directive 2014/49/EU.\n\nThis requires a precise assessment of the identifiability of the ultimate beneficiaries in accordance with Article 7(3) of Directive 2014/49/EU and national provisions. The presumption of full coverage, as provided for in EBA Guidelines EBA/GL/2023/02 for the calculation of contributions to deposit guarantee schemes, does not apply to resolution reporting. Uncovered amounts must instead be classified in the appropriate liability categories of template Z 02.00, based on their legal nature and insolvency treatment.\n\nReporting must be consistent with the information in template Z 06.00. Automatic classification as covered is excluded if the ultimate beneficiaries cannot be identified."
+          "de": "Die EBA präzisiert die Meldung von Wertpapierfinanzierungsgeschäften (SFTs) im Rahmen von Abwicklungsplanungsberichten (BRRD-Reporting), insbesondere für Template Z16.00 und Z02.00. Es geht um SFTs, die einem Netting-Vertrag unterliegen, der jedoch nicht für Rechnungslegungs- und/oder Aufsichtszwecke anerkannt ist.\n\nFür Template Z16.00 sind SFTs, die unter dieselbe Netting-Vereinbarung fallen, als Netting-Set gemäß den Anweisungen zu melden. Bei Template Z02.00.a soll der ausstehende Betrag die Verbindlichkeitsforderung widerspiegeln, die sich aus den anwendbaren vertraglichen Bedingungen ergibt, einschließlich Netting, wenn die Vereinbarung zu einer effektiven Nettoverbindlichkeitsforderung führt. Die fehlende Anerkennung des Netting für Rechnungslegungs- oder Aufsichtszwecke ist dabei nicht ausschlaggebend für den ausstehenden Betrag.\n\nDer Buchwert in Template Z02.00.b bleibt weiterhin durch seine separate Rechnungslegungsdefinition bestimmt und kann daher vom ausstehenden Betrag abweichen. Diese Klarstellung ist für Kreditinstitute relevant, die Abwicklungsplanungsberichte gemäß der BRRD erstellen müssen.",
+          "en": "The EBA clarifies the reporting of Securities Financing Transactions (SFTs) within resolution planning reports (BRRD reporting), specifically for Templates Z16.00 and Z02.00. This concerns SFTs subject to a netting agreement that is not recognized for accounting and/or prudential purposes.\n\nFor Template Z16.00, SFTs covered by the same netting arrangement are to be reported by netting set in accordance with the template instructions. For Template Z02.00.a, the outstanding amount should reflect the liability claim resulting from the applicable contractual terms, including netting where the agreement gives rise to an effective net liability claim. The absence of accounting or prudential recognition of netting does not, by itself, determine the outstanding amount for this purpose.\n\nThe carrying amount in Template Z02.00.b remains governed by its separate accounting definition and may therefore differ from the outstanding amount. This clarification is relevant for credit institutions required to prepare resolution planning reports under the BRRD."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7947",
+        "imp": "low"
+      },
+      {
+        "d": "20.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "BRRD-Reporting: Wert von Transaktionen für Wertpapierabwicklungsdienstleistungen (Q&A 2026_7973)",
+          "en": "BRRD Reporting: Value of Transactions for Securities Settlement Services (Q&A 2026_7973)"
+        },
+        "sl": "2026-7973-z07-01-3-value-of-transactions-for-securities-settlement-services-func",
+        "s": {
+          "de": "Die EBA präzisiert in einer Q&A-Antwort die Meldung des Transaktionswerts für Wertpapierabwicklungsdienstleistungen (Funktions-ID 3.4) im Rahmen des BRRD-Reportings (RESOL-Meldung, Anhang für IT-Lösungen, Z07.01.3). Die Frage bezog sich auf die Auslegung des Begriffs „gesendete Transaktionen“ und ob dieser nur Käufe, den Gesamtwert der Abwicklungsanweisungen oder auch Zins- und Dividendenzahlungen sowie Aktiensplits umfasst.\n\nDie EBA stellt klar, dass „gesendete Transaktionen“ Wertpapierübertragungen im Auftrag von Kunden umfassen, unabhängig davon, ob es sich um Käufe oder Verkäufe handelt. Dies schließt auch Free-of-Payment-Transaktionen und intern abgewickelte Übertragungen ein. Reine Zins- oder Dividendenzahlungen sind keine Wertpapierübertragungen und somit ausgeschlossen. Bei Kapitalmaßnahmen ist zu prüfen, ob sie zu einer Wertpapierübertragungsanweisung im Rahmen des gemeldeten Dienstes führen; sie sind nicht allein aufgrund ihrer Eigenschaft als Kapitalmaßnahme auszuschließen.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Wertpapierabwicklungsdienstleistungen erbringen und unter die BRRD-Meldepflicht fallen. Sie hilft bei der korrekten Erfassung und Meldung der Transaktionswerte und stellt sicher, dass die Daten konsistent interpretiert werden.",
+          "en": "The EBA clarifies in a Q&A response the reporting of the value of transactions for securities settlement services (function ID 3.4) within the BRRD reporting framework (RESOL reporting, Annex for IT solutions, Z07.01.3). The question concerned the interpretation of the term 'transactions sent' and whether it includes only purchases, the total value of settlement instructions, or also interest and dividend payments, as well as stock splits.\n\nThe EBA clarifies that 'transactions sent' comprise securities transfers processed on behalf of clients, whether they relate to a purchase or a sale. This includes relevant free-of-payment transfers and transfers settled internally by the reporting entity. Standalone cash payments of interest or dividends are not securities transfers and are excluded. For corporate actions, it must be assessed whether they result in a securities transfer instruction within the scope of the reported service; they should not be excluded solely because they are a corporate action.\n\nThis clarification is relevant for credit institutions providing securities settlement services and subject to BRRD reporting requirements. It helps in the correct recording and reporting of transaction values and ensures consistent data interpretation."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7973",
+        "imp": "low"
+      },
+      {
+        "d": "20.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Meldung von Treuhandkonten als gedeckte Einlagen in der Abwicklungsplanung (Q&A 2026_7988)",
+          "en": "Reporting of beneficiary accounts as covered deposits in resolution planning (Q&A 2026_7988)"
+        },
+        "sl": "2026-7988-reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-temp",
+        "s": {
+          "de": "Die EBA hat eine Q&A zur Meldung von Einlagen auf Treuhandkonten im Rahmen der Abwicklungsplanung veröffentlicht. Es wird präzisiert, wie Institute den ausstehenden Betrag von Treuhandkonten oder Kundengeldern in Zeile 0110 (Gedeckte Einlagen) der Vorlage Z 02.00 melden sollen, wenn die Identität oder Anzahl der letztbegünstigten Personen sowie die ihnen zustehenden Beträge dem meldenden Institut nicht bekannt sind.\n\nDie EBA stellt klar, dass die Annahme aus Paragraph 23 der EBA/GL/2023/02, wonach der gesamte Saldo als gedeckt gilt, wenn der genaue oder maximal mögliche Betrag gedeckter Einlagen auf Treuhandkonten nicht bestimmt wird, ausschließlich für die Berechnung der Beiträge zu Einlagensicherungssystemen gilt. Diese Annahme ist nicht auf das Reporting zur Abwicklungsplanung übertragbar. Können die Bedingungen für die Einlagendeckung nicht erfüllt werden, dürfen die entsprechenden Beträge nicht als gedeckte Einlagen in Zeile 0110 ausgewiesen werden. Eine automatische Klassifizierung als gedeckt, nur weil die letztbegünstigten Personen nicht identifiziert wurden, ist nicht zulässig.\n\nStattdessen sind die Beträge in der entsprechenden Verbindlichkeitskategorie der Vorlage Z 02.00 zu klassifizieren, unter Berücksichtigung ihrer rechtlichen Natur und der anwendbaren Insolvenzbehandlung. Eine Meldung in den Zeilen 0130 oder 0140 ist nur dann angemessen, wenn die jeweiligen Bedingungen des Artikels 44 Absatz 2 Buchstabe c oder d der Richtlinie 2014/59/EU erfüllt sind. Die Meldung muss zudem konsistent mit den Informationen in der Vorlage Z 06.00 sein.",
+          "en": "The EBA has published a Q&A on the reporting of beneficiary accounts in the context of resolution planning. It clarifies how institutions should report the outstanding amount of beneficiary accounts or client funds deposits in row 0110 (Covered deposits) of template Z 02.00 when the identity or number of ultimate beneficiaries, as well as the amounts attributable to them, are not known to the reporting institution.\n\nThe EBA clarifies that the assumption from paragraph 23 of EBA/GL/2023/02, which states that the entire balance is presumed to be covered if the exact or maximum possible amount of covered deposits held in beneficiary accounts is not determined, applies exclusively to the calculation of contributions to deposit guarantee schemes. This assumption is not transferable to resolution planning reporting. If the conditions for deposit coverage are not met, the corresponding amounts must not be reported as covered deposits in row 0110. Automatic classification as covered solely because the ultimate beneficiaries have not been identified is not permissible.\n\nInstead, the amounts must be classified in the appropriate liability category of template Z 02.00, taking into account their legal nature and applicable insolvency treatment. Reporting in rows 0130 or 0140 is only appropriate if the respective conditions of Article 44(2)(c) or (d) of Directive 2014/59/EU are satisfied. The reporting must also be consistent with the corresponding information in template Z 06.00."
         },
         "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7988",
-        "imp": "low",
-        "refnum": "2026_7988"
+        "imp": "low"
       },
       {
         "d": "09.11.2026",
@@ -1005,7 +1237,7 @@
         "refnum": "Rundschreiben 01/2024"
       }
     ],
-    "csdr": [
+    "itsrep": [
       {
         "d": "20.11.2026",
         "t": {
@@ -1014,113 +1246,266 @@
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "EBA-Klarstellung zu Transaktionswerten im RESOL-Reporting für Wertpapierabwicklung (Q&A 2026_7973)",
-          "en": "EBA Clarification on Transaction Values in RESOL Reporting for Securities Settlement (Q&A 2026_7973)"
+          "de": "FINREP: Geografische Aufschlüsselung bei Geschäften mit Zweigstellen (Q&A 2026_7976)",
+          "en": "FINREP: Geographical breakdown for transactions with branches (Q&A 2026_7976)"
         },
-        "sl": "z07-01-3-value-of-transactions-for-securities-settlement-services-function-id-3",
+        "sl": "2026-7976-finrep-template-f-20-04",
         "s": {
-          "de": "Die EBA präzisiert die Meldung von Transaktionswerten für Wertpapierabwicklungsdienstleistungen (Funktions-ID 3.4) im Rahmen des RESOL-Reportings gemäß BRRD. Es wird klargestellt, dass „gesendete Transaktionen“ sowohl Käufe als auch Verkäufe von Wertpapieren im Auftrag von Kunden umfassen.\n\nDies beinhaltet auch Free-of-Payment-Transaktionen und solche, die intern von den meldenden Instituten abgewickelt werden. Die EBA betont, dass dieselbe Übertragung nicht doppelt gezählt werden soll, nur weil sie eine Empfängerseite hat. Reine Zins- oder Dividendenzahlungen, die keine Wertpapierübertragungen sind, sind ausgeschlossen. Maßnahmen im Rahmen von Corporate Actions sind einzubeziehen, wenn sie zu einer Wertpapierübertragungsanweisung führen.\n\nDiese Klarstellung ist relevant für Kreditinstitute, die Wertpapierabwicklungsdienstleistungen anbieten und dem RESOL-Reporting unterliegen. Sie hilft bei der korrekten Interpretation der Meldepflichten und der einheitlichen Erfassung von Transaktionswerten, um die Abwicklungsfähigkeit von Instituten zu bewerten.",
-          "en": "The EBA clarifies the reporting of transaction values for securities settlement services (function ID 3.4) within the RESOL reporting framework under BRRD. It is specified that “transactions sent” include both purchases and sales of securities on behalf of clients.\n\nThis also covers free-of-payment transactions and those settled internally by the reporting entities. The EBA emphasizes that the same transfer should not be counted again merely because it also has a receiving side. Standalone cash payments of interest or dividends that are not securities transfers are excluded. Corporate actions should be included if they result in a securities transfer instruction.\n\nThis clarification is relevant for credit institutions offering securities settlement services and subject to RESOL reporting. It aids in the correct interpretation of reporting obligations and the consistent recording of transaction values to assess the resolvability of institutions."
+          "de": "Die EBA hat eine Frage zur geografischen Aufschlüsselung von FINREP-Meldungen (F 20.04) beantwortet, wenn Geschäfte mit einer ausländischen Zweigstelle getätigt werden. Es ging um die Frage, ob das Land der Zweigstelle oder das Land des Hauptsitzes des Mutterinstituts maßgeblich ist.\n\nGemäß der Antwort der EBA ist für die FINREP-Meldung F 20.04 das Land des Hauptsitzes der juristischen Person des Geschäftspartners maßgeblich, da eine Zweigstelle keine eigenständige juristische Einheit ist. Im genannten Beispiel einer schwedischen Bank, die Geschäfte mit einer schwedischen Zweigstelle einer dänischen Bank tätigt, ist die Exposition gegenüber Dänemark zu melden. Für die FINREP-Meldungen F 20.01 bis F 20.03 gilt hingegen der Standort der Aktivitäten, also das Land der Zweigstelle.\n\nDies ist relevant für alle Institute, die FINREP-Meldungen gemäß der CRR erstellen müssen und grenzüberschreitende Geschäfte mit Zweigstellen tätigen. Die Klarstellung hilft bei der korrekten Zuordnung von Expositionen nach geografischer Lage des Geschäftspartners.",
+          "en": "The EBA has answered a question regarding the geographical breakdown of FINREP reports (F 20.04) when doing business with a foreign branch. The question was whether the country of the branch or the country of the head office of the parent institution is decisive.\n\nAccording to the EBA's answer, for FINREP report F 20.04, the country of residence of the legal entity's head office is decisive, as a branch is not considered a separate legal entity. In the example given of a Swedish bank doing business with a Swedish branch of a Danish bank, the exposure should be reported as being to Denmark. For FINREP reports F 20.01 to F 20.03, however, the location of the activities, i.e., the country of the branch, applies.\n\nThis is relevant for all institutions that are required to submit FINREP reports under the CRR and conduct cross-border business with branches. The clarification helps in the correct allocation of exposures by geographical location of the counterparty."
         },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7973",
-        "imp": "low",
-        "refnum": "2026_7973"
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7976",
+        "imp": "low"
       },
       {
-        "d": "21.10.2026",
+        "d": "20.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "FINREP: Meldung von FVOCI-Eigenkapitalinstrumenten (Q&A 2026_7978)",
+          "en": "FINREP: Reporting of FVOCI Equity Instruments (Q&A 2026_7978)"
+        },
+        "sl": "2026-7978-supervisory-reporting-finrep",
+        "s": {
+          "de": "Die EBA hat eine Frage zur Meldung von Eigenkapitalinstrumenten, die zum beizulegenden Zeitwert über das sonstige Ergebnis (FVOCI) bewertet werden, im FINREP-Meldeformular F 46.00 beantwortet. Konkret ging es um die Frage, wie die Übertragung des kumulierten sonstigen Ergebnisses (OCI) bei der Ausbuchung dieser Instrumente zu behandeln ist.\n\nDie EBA stellt klar, dass die Übertragung des kumulierten OCI bei der Ausbuchung von FVOCI-Eigenkapitalinstrumenten in der Zelle für „einbehaltene Gewinne“ (Retained earnings) im Formular F 46.00 zu melden ist. Dies soll einen harmonisierten Ansatz für die Berichterstattung fördern, auch wenn Institute in ihren öffentlichen Abschlüssen andere Darstellungen verwenden können.\n\nDiese Klarstellung ist für Kreditinstitute relevant, die FVOCI-Eigenkapitalinstrumente halten und diese im Rahmen des FINREP-Meldewesens berichten müssen. Sie präzisiert die korrekte Zuordnung von Eigenkapitalbewegungen und trägt zur Konsistenz der aufsichtsrechtlichen Meldungen bei.",
+          "en": "The EBA has answered a question regarding the reporting of equity instruments designated at fair value through other comprehensive income (FVOCI) in FINREP template F 46.00. Specifically, the question concerned how to treat the transfer of accumulated other comprehensive income (OCI) upon derecognition of these instruments.\n\nThe EBA clarifies that the transfer of accumulated OCI upon derecognition of FVOCI equity instruments should be reported in the cell corresponding to “Retained earnings” in template F 46.00. This aims to promote a harmonised approach for reporting, even though institutions may use alternative representations in their public financial statements.\n\nThis clarification is relevant for credit institutions that hold FVOCI equity instruments and are required to report them under FINREP. It specifies the correct allocation of equity movements and contributes to the consistency of supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7978",
+        "imp": "low"
+      },
+      {
+        "d": "20.11.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "FINREP: Meldung von Verwahr- und Depotvermögen (Q&A 2026_8014)",
+          "en": "FINREP: Reporting of Assets under Custody and Depositary (Q&A 2026_8014)"
+        },
+        "sl": "2026-8014-finrep-f22-01-row-0080-column-0010-f22-02-row-0060-column-0010",
+        "s": {
+          "de": "Die EBA hat eine Q&A zur Meldung von Verwahr- und Depotvermögen in den FINREP-Templates F 22.01 und F 22.02 veröffentlicht. Sie präzisiert, welche Vermögenswerte und Dienstleistungen in diesen Templates zu berücksichtigen sind.\n\nDemnach sind alle Verwahr- und Depotdienstleistungen, die von der meldenden Institution selbst erbracht oder an Unterverwahrer delegiert werden, in den Templates F22 zu melden. Dies gilt unabhängig von der Art der zugrunde liegenden Vermögenswerte. Die EBA stellt klar, dass auch Gebühren- und Provisionserträge sowie -aufwendungen aus Finanzinstrumenten, die nicht zum beizulegenden Zeitwert über die Gewinn- und Verlustrechnung bewertet werden, in F22 zu erfassen sind, sofern sie nicht in die Berechnung des Effektivzinses einfließen.\n\nDie Q&A richtet sich an Kreditinstitute, die Verwahr- und Depotdienstleistungen erbringen. Sie bietet wichtige Klarstellungen für die korrekte FINREP-Meldung dieser Vermögenswerte und der damit verbundenen Erträge und Aufwendungen gemäß CRR und den ITS zur aufsichtsrechtlichen Berichterstattung.",
+          "en": "The EBA has published a Q&A on the reporting of assets under custody and depositary in FINREP templates F 22.01 and F 22.02. It specifies which assets and services are to be included in these templates.\n\nAccordingly, all custody and depositary services provided by the reporting institution itself or entrusted to sub-custodians must be reported in templates F22. This applies regardless of the type of underlying assets. The EBA clarifies that fee and commission income and expenses arising from financial instruments not measured at fair value through profit or loss are also to be included in F22, unless they are part of the effective interest rate calculation.\n\nThe Q&A is aimed at credit institutions that provide custody and depositary services. It provides important clarifications for the correct FINREP reporting of these assets and related income and expenses in accordance with the CRR and the ITS on supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_8014",
+        "imp": "low"
+      },
+      {
+        "d": "06.11.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
-        "src": "esma.europa.eu",
+        "src": "eba.europa.eu",
         "ti": {
-          "de": "Zusammenfassung der Ergebnisse des EU T+1 Koordinierungsausschusses (September 2026)",
-          "en": "Summary of Conclusions of the EU T+1 Coordination Committee (September 2026)"
+          "de": "EBA vereinfacht aufsichtsrechtliches Meldewesen und verlängert Umsetzungsfristen",
+          "en": "EBA simplifies supervisory reporting and extends implementation timelines"
         },
-        "sl": "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
+        "sl": "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends",
         "s": {
-          "de": "Das EU T+1 Coordination Committee hat die Ergebnisse seiner Sitzung vom September 2026 veröffentlicht. Die Europäische Kommission erwartet die baldige Veröffentlichung der geänderten RTS zur Abwicklungsdisziplin und plant, das politische Bewusstsein für die T+1-Umstellung zu schärfen. Die ESMA arbeitet mit nationalen Behörden an einem konvergenten Ansatz zur Überwachung der Einhaltung der neuen RTS-Anforderungen.\n\nDie EZB berichtete über Fortschritte bei der T+1-Migration in den Märkten und die Anpassungen von T2S. Die für T+1 erforderlichen Änderungen in T2S sind im Zeitplan. Die Verschiebung des Swift 2026 Standards Release auf den 12. Juni 2027 schützt die geplanten T+1-Testfenster. Die EZB (Bankenaufsicht) plant, im vierten Quartal 2026 erneut die T+1-Bereitschaft ausgewählter Banken zu prüfen, wobei die Kommunikation der Banken mit ihren Kunden als entscheidend hervorgehoben wird.\n\nDer Vorsitzende des EU T+1 Industry Committee (EUIC) betonte, dass die notwendige Marktanleitung bereitgestellt wurde und Tests lokal organisiert werden müssen. Eine Task Force für die Übergangsperiode (TPTF) wird eingerichtet, um praktische Fragen wie IPOs und größere Kapitalmaßnahmen zu behandeln. Das EUIC erwägt die Nutzung und Veröffentlichung von Daten zum tatsächlichen Verhalten der Marktteilnehmer zur Überwachung der Branchenbereitschaft und empfiehlt den nationalen Behörden, Daten auf nationaler Ebene zu sammeln, insbesondere zu Allokationen und Bestätigungen.",
-          "en": "The EU T+1 Coordination Committee has published the conclusions of its September 2026 meeting. The European Commission expects the amended RTS on Settlement Discipline to be published shortly and plans to raise political awareness for the T+1 transition. ESMA is working with national authorities on a convergent approach to supervising firms' compliance with the new RTS requirements.\n\nThe ECB reported on progress in T+1 migration in the markets and T2S adjustments. The T2S changes required for T+1 are on track. The deferral of the Swift 2026 Standards Release to June 12, 2027, protects the agreed T+1 testing windows. The ECB (Banking Supervision) plans to re-engage with a sample of banks in Q4 2026 regarding their T+1 readiness, emphasizing that banks' outreach to their clients will be key.\n\nThe Chair of the EU T+1 Industry Committee (EUIC) stated that the necessary market guidance has been delivered and testing must be organized locally. A Transition Period Task Force (TPTF) is being established to address practical issues such as IPOs and major corporate actions. The EUIC is considering using and publishing data on the actual behavior of market participants to monitor industry readiness and recommends that NCAs collect data at national level, particularly on allocations and confirmations."
+          "de": "Die EBA verlängert nach Abschluss der Konsultation die Umsetzungsfristen für das vereinfachte aufsichtliche Meldewesen: Neue Anforderungen gelten erstmals zum Meldestichtag Dezember 2027, die Bereiche Liquidität, Asset Encumbrance, aufsichtliches Benchmarking und ESG erst ab Dezember 2028. Den Abschlussbericht zu den ITS will die EBA im Dezember 2026 vorlegen; Institute sollten ihre Umsetzungsplanung im Meldewesen daran ausrichten.\n\nZu den wesentlichen Änderungen gehören eine weitere Vereinfachung der Meldebögen, eine stärkere Proportionalität, präzisere Anweisungen, reduzierte Meldefrequenzen und eine engere Abstimmung mit den Offenlegungspflichten. Dies umfasst eine Reduzierung der Meldepflichten für Sicherheiten, Stresstests und ESG-bezogene Daten sowie die Integration von Kreditrisiko- und IFRS-9-Benchmarking-Meldungen in das aufsichtsrechtliche Meldewesen. Auch die Meldung von operationellen Verlusten wird vereinfacht und ein spezielles Modul für Stresstest-Meldungen eingeführt.\n\nDie EBA wird den Abschlussbericht zu den Entwürfen der technischen Durchführungsstandards (ITS) im Dezember 2026 veröffentlichen. Die erste Referenzperiode für neue Anforderungen wird auf Dezember 2027 verschoben, und bestimmte Meldebereiche wie Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG-Meldungen werden bis Dezember 2028 aufgeschoben. Im Übergangszeitraum sind bestehende Vorgaben für IFRS-18, FRTB, operationelle Risikoverluste und aufsichtsrechtliches Benchmarking weiterhin zu beachten.",
+          "en": "Following its consultation, the EBA is extending the implementation timelines for simplified supervisory reporting: new requirements will first apply from the December 2027 reference date, while liquidity, asset encumbrance, supervisory benchmarking and ESG reporting are deferred until December 2028. The EBA plans to publish the final report on the ITS in December 2026; institutions should align their reporting implementation plans accordingly.\n\nKey changes include further simplification of reporting templates, greater proportionality, clarified instructions, reduced reporting frequencies, and closer alignment with disclosure requirements. This encompasses a reduction in collateral reporting, stress testing, and ESG-related reporting, as well as the integration of credit risk and IFRS 9 benchmarking reporting into the supervisory reporting framework. Operational risk loss reporting will also be simplified, and a dedicated stress-testing reporting module will be introduced.\n\nThe EBA will publish the final report on the draft Implementing Technical Standards (ITS) package in December 2026. The first reference date for new requirements is postponed to December 2027, with selected reporting areas such as liquidity, asset encumbrance, supervisory benchmarking, and ESG reporting deferred until December 2028. During the transition period, existing requirements for IFRS-18, FRTB, operational risk losses, and supervisory benchmarking must continue to be observed."
         },
-        "url": "https://www.esma.europa.eu/document/eu-t1-coordination-committee-summary-conclusions-september-2026",
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-outlines-next-steps-supervisory-reporting-simplification-and-extends-implementation-timelines",
         "imp": "medium"
       },
       {
-        "d": "16.10.2026",
+        "d": "19.10.2026",
         "t": {
-          "de": "Meldung",
-          "en": "News"
+          "de": "Konsultation",
+          "en": "Consultation"
         },
-        "src": "esma.europa.eu",
+        "src": "bafin.de",
         "ti": {
-          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
-          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
+          "de": "Anpassung von Verordnungen nach Wegfall des Millionenkreditmeldewesens (Konsultation 10/2026)",
+          "en": "Adjustment of Regulations Following Discontinuation of Million Loan Reporting (Consultation 10/2026)"
         },
-        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+        "sl": "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher",
         "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
-          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
+          "de": "Dieser Konsultationsentwurf der BaFin passt verschiedene Verordnungen an, nachdem das Millionenkreditmeldewesen nach § 14 KWG zum 30. Dezember 2026 entfällt. Die Großkredit- und Millionenkreditverordnung (GroMiKV) wird aufgehoben und durch eine neue Großkreditverordnung (GroKV) ersetzt. Zudem werden weitere Verordnungen, die auf das Millionenkreditmeldewesen Bezug nehmen, geändert oder aufgehoben.\n\nDie Änderungen betreffen insbesondere Institute, die bisher Millionenkreditmeldungen abgeben mussten. Die neue GroKV regelt Ausnahmen von der Obergrenze für Großkredite nach Art. 395 Abs. 1 CRR, Beschlussfassungspflichten der Geschäftsleiter bei Großkrediten und Meldungen zu Großkrediten. Dies soll den Wegfall der bisherigen Meldepflichten und die damit verbundenen Anpassungen im Aufsichtsrecht umsetzen.\n\nDie Konsultation läuft bis zum 19.10.2026. Die Änderungen treten mit Wirkung zum 30. Dezember 2026 in Kraft, dem Zeitpunkt der Streichung der Millionenkreditmeldepflichten im KWG.",
+          "en": "This BaFin consultation draft adapts various regulations following the discontinuation of the large exposure reporting requirement under Section 14 KWG as of December 30, 2026. The Large Exposure and Million Loan Regulation (GroMiKV) will be repealed and replaced by a new Large Exposure Regulation (GroKV). In addition, other regulations referring to the large exposure reporting system will be amended or repealed.\n\nThe changes primarily affect institutions that previously had to submit large exposure reports. The new GroKV regulates exemptions from the large exposure limit according to Art. 395 (1) CRR, decision-making obligations of managing directors for large exposures, and reporting requirements for large exposures. This is intended to implement the discontinuation of the previous reporting obligations and the associated adjustments in supervisory law.\n\nThe consultation runs until October 19, 2026. The changes will come into effect on December 30, 2026, the date on which the large exposure reporting obligations in the KWG are removed."
         },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
-        "imp": "high"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Überarbeitete CSDR-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen",
-          "en": "Revised CSDR Guidelines on Standardised Procedures and Messaging Protocols"
-        },
-        "sl": "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
-        "s": {
-          "de": "Dieser Abschlussbericht der ESMA enthält überarbeitete Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen, die zwischen Wertpapierfirmen und ihren professionellen Kunden verwendet werden. Die Überarbeitung betrifft die Dokumentation von Vereinbarungen, die Einigung auf Kommunikationsverfahren und Nachrichtenprotokolle sowie die Abschaffung der mündlichen Kommunikation bei der Übermittlung von Allokationen und Bestätigungen.\n\nDie Leitlinien sind für Wertpapierfirmen relevant, die mit professionellen Kunden zusammenarbeiten. Sie sollen die Effizienz und Sicherheit der Wertpapierabwicklung verbessern, indem sie die Nutzung internationaler offener Kommunikationsverfahren und Standards vorschreiben und die Möglichkeit der Nutzung nicht-elektronischer Mittel auf Ausnahmefälle beschränken. Dies hat praktische Auswirkungen auf die internen Prozesse und die IT-Infrastruktur der betroffenen Unternehmen.\n\nDer Bericht enthält auch eine Kosten-Nutzen-Analyse und fasst das Feedback aus der Konsultation zusammen. Die genauen Anwendungsdaten und nächsten Schritte ergeben sich aus den finalen Leitlinien, die diesem Bericht beigefügt sind.",
-          "en": "This ESMA final report contains revised guidelines on standardised procedures and messaging protocols used between investment firms and their professional clients. The revision addresses the documentation of arrangements, agreement on communication procedures and messaging protocols, and the elimination of oral communication for submitting allocations and confirmations.\n\nThese guidelines are relevant for investment firms dealing with professional clients. They aim to enhance the efficiency and security of securities settlement by mandating the use of international open communication procedures and standards and limiting the use of non-electronic means to exceptional cases. This has practical implications for the internal processes and IT infrastructure of the affected firms.\n\nThe report also includes a cost-benefit analysis and summarises feedback from the consultation. The exact application dates and next steps will be determined by the final guidelines attached to this report."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-revised-csdr-guidelines-standardised-procedures-and-messaging-protocols-used",
-        "imp": "medium",
-        "refnum": "ESMA74-2119945926-3749"
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_10_2026_entwurf_verordnung_anpassung_vorschriften_ba.html",
+        "imp": "medium"
       },
       {
         "d": "12.10.2026",
         "t": {
-          "de": "Final Report",
-          "en": "Final report"
+          "de": "Meldung",
+          "en": "News"
         },
         "src": "eba.europa.eu",
         "ti": {
-          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
-          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
+          "de": "EBA veröffentlicht finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4",
+          "en": "EBA releases final technical package for reporting and Pillar 3 disclosure framework 4.4"
         },
-        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
+        "sl": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
         "s": {
-          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
-          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
+          "de": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht. Dieses Paket deckt die IFRS-18-Berichterstattung, ESG-Offenlegungen gemäß Säule 3 sowie weitere technische Anpassungen ab. Ziel ist es, die Berichterstattungskosten für Institute zu senken und die Einhaltung der Vorschriften zu erleichtern.\n\nDas Paket umfasst das Data Point Model (DPM), Validierungsregeln und XBRL-Taxonomien für neue oder geänderte Anforderungen. Dazu gehören aktualisierte Offenlegungspflichten zu ESG-Risiken, Eigenkapital und Schattenbanken sowie ein neues FINREP-Modul, das die IFRS-18-Anforderungen widerspiegelt. Auch technische Anpassungen für die Abwicklungsplanung, MREL-Entscheidungen und die Offenlegung gemäß Säule 3 sind enthalten, ebenso wie Korrekturen für die Liquiditätsberichterstattung von Drittlandzweigstellen und Vorlagen für die AMLA-Risikobewertung.\n\nDies ist die erste Phase der technischen Implementierung des 4.4-Rahmens; eine zweite Phase zur Vereinfachung der aufsichtsrechtlichen Berichterstattung wird Anfang 2027 erwartet. Das Paket berücksichtigt Rückmeldungen aus der Konsultation und enthält gezielte Verfeinerungen des Glossars im Rahmen des DPM 2.0. Die EBA hat zudem eine aktualisierte Liste bekannter DPM-Probleme und FAQs veröffentlicht, um die Implementierung zu unterstützen.",
+          "en": "The EBA has released the final technical package for version 4.4 of its reporting and Pillar 3 disclosure framework. This package covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to reduce institutions' reporting costs and facilitate their compliance.\n\nThe package includes the Data Point Model (DPM), validation rules, and XBRL taxonomies for new or amended requirements. These include updated disclosure requirements on ESG risks, equity, and shadow banking, as well as a new FINREP module reflecting IFRS 18 requirements. Technical amendments for resolution planning, MREL decisions, and Pillar 3 disclosures are also included, along with corrections for third-country branch liquidity reporting and templates for the AMLA risk assessment. \n\nThis is the first phase of the technical implementation of the 4.4 framework; a second phase for simplifying supervisory reporting is expected in early 2027. The package incorporates feedback from the consultation and includes targeted refinements to the DPM 2.0 glossary. The EBA has also published an updated list of known DPM issues and FAQs to support implementation."
         },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
-        "imp": "medium"
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-release-44-its-reporting-and-pillar-3-disclosure-framework",
+        "imp": "high"
       },
       {
-        "d": "20.07.2026",
+        "d": "09.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
+          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
+        },
+        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
+        "s": {
+          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
+          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
+        "imp": "low"
+      },
+      {
+        "d": "14.09.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
         },
-        "src": "esma.europa.eu",
+        "src": "eba.europa.eu",
         "ti": {
-          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
-          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
+          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
         },
-        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
         "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
-          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
+          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
         },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
+        "imp": "medium"
+      },
+      {
+        "d": "31.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
+          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
+        },
+        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
+        "s": {
+          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
+          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
+        "imp": "medium"
+      },
+      {
+        "d": "24.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
+          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
+        },
+        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
+        "s": {
+          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
+          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
+        "imp": "medium"
+      },
+      {
+        "d": "09.07.2026",
+        "t": {
+          "de": "ITS",
+          "en": "ITS"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht finales technisches Paket für Meldewesen 4.3 (TCB-Meldungen und AMLA-Risikobewertung)",
+          "en": "EBA releases final technical package for reporting framework 4.3 (TCB reporting and AMLA risk assessment)"
+        },
+        "sl": "the-eba-releases-the-final-technical-package-for-its-4-3-reporting-framework-to",
+        "s": {
+          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat das finale technische Paket für die Version 4.3 ihres Meldewesens veröffentlicht. Dieses Paket implementiert neue Meldepflichten für Zweigstellen aus Drittländern (Third-Country Branches, TCBs) gemäß der Eigenkapitalrichtlinie (CRD) und unterstützt die Datenerhebung der Anti-Geldwäsche-Behörde (AMLA) zur Risikobewertung.\n\nDas technische Paket umfasst Standard-Spezifikationen wie Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es dient der Umsetzung der finalen Entwürfe der technischen Durchführungsstandards (ITS) für TCBs und der AMLA-Risikobewertung, um direkt von der AMLA beaufsichtigte Verpflichtete zu identifizieren. Zusätzlich wurde eine neue Glossary Usage Exploration-Datei veröffentlicht, um die Nutzung des Meldewesens zu vereinfachen und die Interpretation der Meldepflichten zu erleichtern.\n\nFür die Meldepflichten der TCBs ist der erste Referenzstichtag der 31. März 2027. Für die AMLA-Risikobewertung ist der erste Referenzstichtag der 31. Dezember 2026. Die EBA behält sich vor, Ende September ein gezieltes Update („Hotfix“) herauszugeben, falls dringende Klärungen oder Anpassungen erforderlich sind.",
+          "en": "The European Banking Authority (EBA) has released the final technical package for version 4.3 of its reporting framework. This package implements new reporting requirements for Third-Country Branches (TCBs) under the Capital Requirements Directive (CRD) and supports the Anti-Money Laundering Authority's (AMLA) data collection for risk assessment.\n\nThe technical package includes standard specifications such as validation rules, the Data Point Model (DPM), and XBRL taxonomies. It facilitates the implementation of the final draft Implementing Technical Standards (ITS) for TCBs and AMLA's risk assessment reporting, aimed at identifying obliged entities under AMLA's direct supervision. Additionally, a new Glossary Usage Exploration file has been published to simplify the use of the reporting framework and aid in interpreting reporting requirements.\n\nFor TCB reporting obligations, the first reference date is 31 March 2027. For AMLA risk assessment reporting, the first reference date is 31 December 2026. The EBA may issue a targeted update (\"hotfix\") at the end of September if critical clarifications or adjustments are needed."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-its-43-reporting-framework-support-third-country-branches",
         "imp": "high"
+      },
+      {
+        "d": "03.07.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
+          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
+        },
+        "sl": "sectoral-classification-of-uk-credit-institutions",
+        "s": {
+          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
+          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
+        },
+        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
+        "imp": "low",
+        "refnum": "2026_7843"
+      },
+      {
+        "d": "15.07.2019",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation 15/2019 (BA) – Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV)",
+          "en": "Konsultation 15/2019 (BA) – Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV)"
+        },
+        "sl": "konsultation-15-2019-ba-aenderung-der-finanz-und-risikotragfaehigkeitsinformatio",
+        "s": {
+          "de": "Die BaFin konsultiert die Dritte Verordnung zur Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV). Ziel ist die Umsetzung zweier EBA-Leitlinien in nationales Recht.\n\nKonkret werden die FinaRisikoV um zwei neue Meldevordrucke für Informationen zum Internal Capital Adequacy Process (ICAAP) und Internal Liquidity Adequacy Assessment Process (ILAAP) erweitert. Zudem werden weitere Informationen zu Zinsschockszenarien im Rahmen der Leitlinien zum Zinsänderungsrisiko im Anlagebuch abgefragt. Die BaFin nutzt die Änderung auch zur Vereinheitlichung von Einreichungsstichtagen und zur Effizienzsteigerung des Meldeprozesses durch Aufhebung nicht mehr benötigter Meldefelder.\n\nDie Änderungen betreffen Kreditinstitute, die der Aufsicht der BaFin unterliegen und ICAAP/ILAAP-Informationen sowie Daten zum Zinsänderungsrisiko im Anlagebuch melden müssen. Die Konsultationsfrist endet am 31. August 2019.",
+          "en": "BaFin is consulting on the Third Ordinance Amending the Financial and Risk-Bearing Capacity Information Ordinance (FinaRisikoV). The aim is to implement two EBA guidelines into national law.\n\nSpecifically, the FinaRisikoV will be expanded to include two new reporting forms for information on the Internal Capital Adequacy Process (ICAAP) and Internal Liquidity Adequacy Assessment Process (ILAAP). Furthermore, additional information on interest rate shock scenarios will be requested as part of the guidelines on interest rate risk in the banking book. BaFin is also using this amendment to standardize submission deadlines and to improve the efficiency of the reporting process by removing reporting fields that are no longer required.\n\nThese changes affect credit institutions subject to BaFin supervision that are required to report ICAAP/ILAAP information and data on interest rate risk in the banking book. The consultation period ends on August 31, 2019."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2019/kon_15_19_BA_FinaRisikoV.html",
+        "imp": "medium",
+        "refnum": "Konsultation 15/2019"
+      },
+      {
+        "d": "18.12.2017",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Änderung der FinaRisikoV: Anpassung der Berichtspflichten",
+          "en": "Consultation on FinaRisikoV Amendment: Adjustment of Reporting Obligations"
+        },
+        "sl": "konsultation-18-2017-aenderung-der-finanz-und-risikotragfaehigkeitsinformationen",
+        "s": {
+          "de": "Die BaFin konsultiert einen Entwurf zur Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV). Ziel ist es, die Berichtspflichten für Finanzinstitute anzupassen und zu vereinfachen, insbesondere vor dem Hintergrund des europaweit harmonisierten Meldewesens (FinRep) im IFRS-Format.\n\nDie Änderungen umfassen die Angleichung der Einreichungsfristen für Finanzinformationen an die harmonisierten europäischen Termine, um Doppelberichterstattung und unterschiedliche Meldeinhalte zu vermeiden. Weniger bedeutende Institutsgruppen, die nach HGB bilanzieren und bereits FinRep-Meldungen einreichen, sollen von der Befreiungsmöglichkeit des § 6 Absatz 3 FinaRisikoV erfasst werden und nur das Formular QSA auf Gruppenbasis einreichen müssen. Zudem werden Meldepflichten für bestimmte Finanzdienstleistungsinstitute, die bisher außerhalb der FinaRisikoV geregelt waren, integriert und weitere Klarstellungen vorgenommen.\n\nDie Konsultation richtet sich an alle beaufsichtigten Unternehmen und Gruppen, die Finanz- und Risikotragfähigkeitsinformationen melden müssen. Die Anpassungen sollen die Belastung der Institute reduzieren und die Konsistenz zwischen nationalen und europäischen Meldepflichten verbessern. Stellungnahmen zum Entwurf können bis zum 17. Januar 2018 eingereicht werden.",
+          "en": "BaFin is consulting on a draft amendment to the Regulation on the Submission of Financial and Risk-Bearing Capacity Information (FinaRisikoV). The aim is to adapt and simplify reporting obligations for financial institutions, particularly in light of the harmonized European reporting framework (FinRep) in IFRS format.\n\nThe proposed changes include aligning the submission deadlines for financial information with the harmonized European dates to avoid duplicate reporting and differing content. Less significant banking groups that prepare their financial statements under HGB and already submit FinRep reports are to be covered by the exemption possibility of Section 6 (3) FinaRisikoV, requiring them to submit only form QSA on a group basis. Additionally, reporting obligations for certain financial service institutions, previously regulated outside FinaRisikoV, will be integrated, and further clarifications will be made.\n\nThe consultation is addressed to all supervised entities and groups required to report financial and risk-bearing capacity information. The adjustments are intended to reduce the burden on institutions and improve consistency between national and European reporting obligations. Comments on the draft can be submitted until January 17, 2018."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2017/kon_1817_aenderung_verordnung_einreichung_risikotragfaehigkeitsinformationen_ba.html",
+        "imp": "medium",
+        "refnum": "Konsultation 18/2017"
       }
     ],
     "crr3": [
@@ -2742,220 +3127,6 @@
         "imp": "low"
       }
     ],
-    "itsrep": [
-      {
-        "d": "06.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA vereinfacht aufsichtsrechtliches Meldewesen und verlängert Umsetzungsfristen",
-          "en": "EBA simplifies supervisory reporting and extends implementation timelines"
-        },
-        "sl": "the-eba-outlines-next-steps-on-supervisory-reporting-simplification-and-extends",
-        "s": {
-          "de": "Die EBA verlängert nach Abschluss der Konsultation die Umsetzungsfristen für das vereinfachte aufsichtliche Meldewesen: Neue Anforderungen gelten erstmals zum Meldestichtag Dezember 2027, die Bereiche Liquidität, Asset Encumbrance, aufsichtliches Benchmarking und ESG erst ab Dezember 2028. Den Abschlussbericht zu den ITS will die EBA im Dezember 2026 vorlegen; Institute sollten ihre Umsetzungsplanung im Meldewesen daran ausrichten.\n\nZu den wesentlichen Änderungen gehören eine weitere Vereinfachung der Meldebögen, eine stärkere Proportionalität, präzisere Anweisungen, reduzierte Meldefrequenzen und eine engere Abstimmung mit den Offenlegungspflichten. Dies umfasst eine Reduzierung der Meldepflichten für Sicherheiten, Stresstests und ESG-bezogene Daten sowie die Integration von Kreditrisiko- und IFRS-9-Benchmarking-Meldungen in das aufsichtsrechtliche Meldewesen. Auch die Meldung von operationellen Verlusten wird vereinfacht und ein spezielles Modul für Stresstest-Meldungen eingeführt.\n\nDie EBA wird den Abschlussbericht zu den Entwürfen der technischen Durchführungsstandards (ITS) im Dezember 2026 veröffentlichen. Die erste Referenzperiode für neue Anforderungen wird auf Dezember 2027 verschoben, und bestimmte Meldebereiche wie Liquidität, Vermögensbelastung, aufsichtsrechtliches Benchmarking und ESG-Meldungen werden bis Dezember 2028 aufgeschoben. Im Übergangszeitraum sind bestehende Vorgaben für IFRS-18, FRTB, operationelle Risikoverluste und aufsichtsrechtliches Benchmarking weiterhin zu beachten.",
-          "en": "Following its consultation, the EBA is extending the implementation timelines for simplified supervisory reporting: new requirements will first apply from the December 2027 reference date, while liquidity, asset encumbrance, supervisory benchmarking and ESG reporting are deferred until December 2028. The EBA plans to publish the final report on the ITS in December 2026; institutions should align their reporting implementation plans accordingly.\n\nKey changes include further simplification of reporting templates, greater proportionality, clarified instructions, reduced reporting frequencies, and closer alignment with disclosure requirements. This encompasses a reduction in collateral reporting, stress testing, and ESG-related reporting, as well as the integration of credit risk and IFRS 9 benchmarking reporting into the supervisory reporting framework. Operational risk loss reporting will also be simplified, and a dedicated stress-testing reporting module will be introduced.\n\nThe EBA will publish the final report on the draft Implementing Technical Standards (ITS) package in December 2026. The first reference date for new requirements is postponed to December 2027, with selected reporting areas such as liquidity, asset encumbrance, supervisory benchmarking, and ESG reporting deferred until December 2028. During the transition period, existing requirements for IFRS-18, FRTB, operational risk losses, and supervisory benchmarking must continue to be observed."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-outlines-next-steps-supervisory-reporting-simplification-and-extends-implementation-timelines",
-        "imp": "medium"
-      },
-      {
-        "d": "19.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Anpassung von Verordnungen nach Wegfall des Millionenkreditmeldewesens (Konsultation 10/2026)",
-          "en": "Adjustment of Regulations Following Discontinuation of Million Loan Reporting (Consultation 10/2026)"
-        },
-        "sl": "konsultation-10-2026-entwurf-der-verordnung-zur-anpassung-verordnungsrechtlicher",
-        "s": {
-          "de": "Dieser Konsultationsentwurf der BaFin passt verschiedene Verordnungen an, nachdem das Millionenkreditmeldewesen nach § 14 KWG zum 30. Dezember 2026 entfällt. Die Großkredit- und Millionenkreditverordnung (GroMiKV) wird aufgehoben und durch eine neue Großkreditverordnung (GroKV) ersetzt. Zudem werden weitere Verordnungen, die auf das Millionenkreditmeldewesen Bezug nehmen, geändert oder aufgehoben.\n\nDie Änderungen betreffen insbesondere Institute, die bisher Millionenkreditmeldungen abgeben mussten. Die neue GroKV regelt Ausnahmen von der Obergrenze für Großkredite nach Art. 395 Abs. 1 CRR, Beschlussfassungspflichten der Geschäftsleiter bei Großkrediten und Meldungen zu Großkrediten. Dies soll den Wegfall der bisherigen Meldepflichten und die damit verbundenen Anpassungen im Aufsichtsrecht umsetzen.\n\nDie Konsultation läuft bis zum 19.10.2026. Die Änderungen treten mit Wirkung zum 30. Dezember 2026 in Kraft, dem Zeitpunkt der Streichung der Millionenkreditmeldepflichten im KWG.",
-          "en": "This BaFin consultation draft adapts various regulations following the discontinuation of the large exposure reporting requirement under Section 14 KWG as of December 30, 2026. The Large Exposure and Million Loan Regulation (GroMiKV) will be repealed and replaced by a new Large Exposure Regulation (GroKV). In addition, other regulations referring to the large exposure reporting system will be amended or repealed.\n\nThe changes primarily affect institutions that previously had to submit large exposure reports. The new GroKV regulates exemptions from the large exposure limit according to Art. 395 (1) CRR, decision-making obligations of managing directors for large exposures, and reporting requirements for large exposures. This is intended to implement the discontinuation of the previous reporting obligations and the associated adjustments in supervisory law.\n\nThe consultation runs until October 19, 2026. The changes will come into effect on December 30, 2026, the date on which the large exposure reporting obligations in the KWG are removed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_10_2026_entwurf_verordnung_anpassung_vorschriften_ba.html",
-        "imp": "medium"
-      },
-      {
-        "d": "12.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finales technisches Paket für Berichts- und Säule-3-Offenlegungsrahmen 4.4",
-          "en": "EBA releases final technical package for reporting and Pillar 3 disclosure framework 4.4"
-        },
-        "sl": "the-eba-releases-the-final-technical-package-for-release-4-4-of-its-reporting-an",
-        "s": {
-          "de": "Die EBA hat das finale technische Paket für Version 4.4 ihres Berichts- und Säule-3-Offenlegungsrahmens veröffentlicht. Dieses Paket deckt die IFRS-18-Berichterstattung, ESG-Offenlegungen gemäß Säule 3 sowie weitere technische Anpassungen ab. Ziel ist es, die Berichterstattungskosten für Institute zu senken und die Einhaltung der Vorschriften zu erleichtern.\n\nDas Paket umfasst das Data Point Model (DPM), Validierungsregeln und XBRL-Taxonomien für neue oder geänderte Anforderungen. Dazu gehören aktualisierte Offenlegungspflichten zu ESG-Risiken, Eigenkapital und Schattenbanken sowie ein neues FINREP-Modul, das die IFRS-18-Anforderungen widerspiegelt. Auch technische Anpassungen für die Abwicklungsplanung, MREL-Entscheidungen und die Offenlegung gemäß Säule 3 sind enthalten, ebenso wie Korrekturen für die Liquiditätsberichterstattung von Drittlandzweigstellen und Vorlagen für die AMLA-Risikobewertung.\n\nDies ist die erste Phase der technischen Implementierung des 4.4-Rahmens; eine zweite Phase zur Vereinfachung der aufsichtsrechtlichen Berichterstattung wird Anfang 2027 erwartet. Das Paket berücksichtigt Rückmeldungen aus der Konsultation und enthält gezielte Verfeinerungen des Glossars im Rahmen des DPM 2.0. Die EBA hat zudem eine aktualisierte Liste bekannter DPM-Probleme und FAQs veröffentlicht, um die Implementierung zu unterstützen.",
-          "en": "The EBA has released the final technical package for version 4.4 of its reporting and Pillar 3 disclosure framework. This package covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to reduce institutions' reporting costs and facilitate their compliance.\n\nThe package includes the Data Point Model (DPM), validation rules, and XBRL taxonomies for new or amended requirements. These include updated disclosure requirements on ESG risks, equity, and shadow banking, as well as a new FINREP module reflecting IFRS 18 requirements. Technical amendments for resolution planning, MREL decisions, and Pillar 3 disclosures are also included, along with corrections for third-country branch liquidity reporting and templates for the AMLA risk assessment. \n\nThis is the first phase of the technical implementation of the 4.4 framework; a second phase for simplifying supervisory reporting is expected in early 2027. The package incorporates feedback from the consultation and includes targeted refinements to the DPM 2.0 glossary. The EBA has also published an updated list of known DPM issues and FAQs to support implementation."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-release-44-its-reporting-and-pillar-3-disclosure-framework",
-        "imp": "high"
-      },
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA Q&A zu COREP-Meldung „Other Countries“ (2026_7908)",
-          "en": "EBA Q&A on COREP Reporting of 'Other Countries' (2026_7908)"
-        },
-        "sl": "2026-7908-changes-between-dpm-4-0-and-dpm-4-2-an-error-has-occurred-while-perfor",
-        "s": {
-          "de": "Die EBA hat eine Frage bezüglich der Meldung von „Other Countries“ in COREP-Berichten beantwortet, insbesondere im Kontext von DPM 4.0 und DPM 4.2. Es wurde festgestellt, dass der Code „Other Countries“ in DPM 4.2 entfernt wurde, was zu Inkonsistenzen mit den ITS-Vorgaben führt. Diese besagen, dass „Other Countries“ zu melden ist, wenn kein einzelnes Land einen Schwellenwert von 20 % der Vermögenswerte/Verbindlichkeiten überschreitet.\n\nDie EBA bestätigt, dass das Fehlen des Eintrags „Other Countries“ in DPM 4.2 ein bekanntes Problem ist. Zur Wiederherstellung der Konsistenz zwischen DPM und ITS wird die entsprechende Unterkategorie in der nächsten Version, DPM v4.4 Phase 2, angepasst. Bis zur Implementierung dieser Korrektur sollen Institute die Spalte 0190 (Land) nicht melden, wenn kein einzelnes Land mehr als 20 % der zugrunde liegenden Engagements ausmacht. Überschreitet ein einzelnes Land den 20 %-Schwellenwert, ist dieses Land weiterhin in Spalte 0190 zu melden.\n\nDiese Regelung betrifft Kreditinstitute, die COREP-Meldungen gemäß CRR erstellen. Die temporäre Anweisung der EBA bietet eine Übergangslösung, um die Meldung von Ländern zu vermeiden, die das im ITS festgelegte Kriterium nicht erfüllen. Institute sollten die Veröffentlichung von DPM v4.4 Phase 2 abwarten, um die korrigierte Codeliste und die ITS-Anweisungen vollständig umzusetzen.",
-          "en": "The EBA has answered a question regarding the reporting of 'Other Countries' in COREP reports, specifically in the context of DPM 4.0 and DPM 4.2. It was noted that the 'Other Countries' code was removed in DPM 4.2, leading to inconsistencies with ITS requirements. These state that 'Other Countries' should be reported when no single country exceeds a 20% threshold of assets/liabilities.\n\nThe EBA confirms that the omission of the 'Other Countries' item in DPM 4.2 is a known issue. To restore consistency between DPM and ITS, the relevant sub-category will be amended in the next version, DPM v4.4 Phase 2. Until this correction is implemented, institutions should not report column 0190 (Country) where no individual country represents more than 20% of the underlying exposures. If an individual country exceeds the 20% threshold, that country should continue to be reported in column 0190.\n\nThis regulation affects credit institutions preparing COREP reports under CRR. The EBA's temporary instruction provides an interim solution to avoid reporting countries that do not meet the criteria specified in the ITS. Institutions should await the release of DPM v4.4 Phase 2 to fully implement the corrected code list and ITS instructions."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7908",
-        "imp": "low"
-      },
-      {
-        "d": "14.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht aktualisierte Liste der Validierungsregeln für Meldewesen-Frameworks",
-          "en": "The EBA publishes updated list of validation rules as part of its regular quarterly reporting frameworks update"
-        },
-        "sl": "the-eba-publishes-updated-list-of-validation-rules-as-part-of-its-regular-quarte",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat eine aktualisierte Liste von Validierungsregeln für ihre Meldewesen-Frameworks veröffentlicht. Diese Aktualisierung erfolgt im Rahmen des vierteljährlichen Überprüfungsprozesses und identifiziert Regeln, die aufgrund von Ungenauigkeiten oder IT-Problemen deaktiviert oder reaktiviert wurden.\n\nZusätzlich hat die EBA ein kleines Validierungsregelpaket bereitgestellt, das ein Mikro-Taxonomiepaket und Skripte für die Aktualisierung der Data Point Model (DPM)-Validierungsregeln enthält. Diese Komponenten sind ab Version 4.0 für jede Aktualisierung der Validierungsregeln erforderlich und sollen konsistente Änderungen in der Taxonomie und im DPM gewährleisten.\n\nMit der Einführung von DPM 2.0 ab Version 4.0 sind Validierungsregeln direkt in die Taxonomie und das DPM integriert. Dies soll die Konsistenz der Implementierung durch meldende Institute verbessern, die Nachvollziehbarkeit von Änderungen erhöhen und zu einem effizienteren und harmonisierten Aufsichtsreporting beitragen. Zuständige Behörden werden darauf hingewiesen, dass Daten, die gemäß den ITS und Leitlinien übermittelt werden, nicht formell gegen deaktivierte Regeln validiert werden sollten.",
-          "en": "The European Banking Authority (EBA) has published an updated list of validation rules for its reporting frameworks. This update is part of the quarterly review process and identifies rules that have been deactivated due to inaccuracies or IT-related issues, or have been reactivated.\n\nIn addition, the EBA has released a small validation rules package, which includes a micro taxonomy package and Data Point Model (DPM) validation rules update scripts. These components are required from release 4.0 onwards for each validation rules update exercise and are intended to ensure consistent amendments to the rules in both the taxonomy and the DPM.\n\nWith the introduction of DPM 2.0 from release 4.0 onwards, validation rules are now embedded directly in both the taxonomy and the DPM. This aims to improve consistency in implementation by reporting institutions, enhance traceability of changes, and contribute to a more efficient and harmonised supervisory reporting process. Competent authorities are reminded that data submitted in accordance with the ITS and Guidelines should not be formally validated against deactivated rules."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-updated-list-validation-rules-part-its-regular-quarterly-reporting-frameworks-update",
-        "imp": "medium"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Konsultation der DPM Alliance zu DPM 2.1 und Metadaten-Namenskonventionen (EBA-ECB-EIOPA)",
-          "en": "DPM Alliance Consultation on DPM 2.1 and Metadata Naming Conventions (EBA-ECB-EIOPA)"
-        },
-        "sl": "the-eba-ecb-eiopa-data-point-model-alliance-consults-on-improvements-to-their-da",
-        "s": {
-          "de": "Die „Data Point Model Alliance“ von EBA, EZB und EIOPA konsultiert Verbesserungen an ihrem Metamodell für Datenwörterbücher, um das statistische und aufsichtsrechtliche Meldewesen besser zu unterstützen. Die neue Version DPM 2.1 soll die Integration des europäischen Meldewesens über alle regulatorischen Rahmenwerke im Finanzbereich hinweg fördern.\n\nDies soll die Komplexität reduzieren, die Datenqualität verbessern und die Meldewesen-Kosten senken. Insbesondere werden erweiterte Metadaten-Versionierung eingeführt und das Metamodell zur Aufnahme logischer Datenmodelle erweitert. Zudem werden Namenskonventionen für Metadaten veröffentlicht, um die Konsistenz über verschiedene Meldewesen-Rahmenwerke hinweg zu erhöhen.\n\nDie Konsultation läuft über zwei Monate, und Kommentare können bis zum 30. September 2026 eingereicht werden.",
-          "en": "The EBA-ECB-EIOPA “Data Point Model Alliance” is consulting on improvements to its data dictionary metamodel to better support statistical and supervisory reporting. The new version, DPM 2.1, aims to facilitate the integration of European reporting across all regulatory frameworks in the financial sector.\n\nThis initiative seeks to reduce complexity, improve data quality, and lower reporting costs. Specifically, it introduces enhanced metadata versioning and extends the metamodel to host logical data models. Additionally, naming conventions for metadata are being published to enhance consistency across regulatory reporting frameworks.\n\n The consultation is open for two months, and comments can be submitted until 30 September 2026."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-ecb-eiopa-data-point-model-alliance-consults-improvements-their-data-dictionary-metamodel-better",
-        "imp": "medium"
-      },
-      {
-        "d": "24.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA konsultiert Entwurf des technischen Pakets 4.4 für Berichts- und Offenlegungsrahmen (IFRS 18, ESG, FRTB)",
-          "en": "EBA consults on draft technical package 4.4 for reporting and disclosure framework (IFRS 18, ESG, FRTB)"
-        },
-        "sl": "the-eba-seeks-feedback-on-the-4-4-draft-technical-package-of-its-reporting-and-d",
-        "s": {
-          "de": "Die EBA hat einen Entwurf des technischen Pakets 4.4 ihres Berichts- und Offenlegungsrahmens veröffentlicht. Dieser Entwurf umfasst die Berichterstattung nach IFRS 18, die Offenlegung von ESG-Risiken gemäß Säule 3 sowie weitere technische Anpassungen. Ziel ist es, den meldepflichtigen Instituten eine frühzeitige Vorbereitung auf die bevorstehenden Änderungen zu ermöglichen.\n\nDas Paket beinhaltet Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es führt neue Berichtspflichten ein, darunter Änderungen der ITS zu Säule-3-Offenlegungen für ESG-Risiken, Eigenkapital und Schattenbanken (erster Referenzstichtag 31.12.2026), neue IFRS-18-konforme FINREP-Vorlagen (erster Referenzstichtag 31.03.2027) und die Integration von FRTB-bezogenen Offenlegungsvorlagen in das DPM (erster Referenzstichtag 31.03.2027). Zudem sind technische Anpassungen an DPM und Taxonomie für die Abwicklungsplanung, MREL-Entscheidungen und Säule-3-Offenlegungsvorlagen (erster Referenzstichtag 31.12.2026) sowie DPM und Taxonomie für AMLA-Eignungsvorlagen (erster Referenzstichtag 31.12.2026) enthalten.\n\nInteressenträger können bis zum 24. August 2026 Rückmeldungen zum Entwurf des technischen Pakets 4.4 und dem begleitenden Glossar einreichen. Die endgültige Veröffentlichung des technischen Pakets 4.4 ist für September 2026 geplant. Diese Veröffentlichung stellt Phase 1 der Version 4.4 dar; Phase 2 (4.4.1) wird weitere Themen aus dem Konsultationspapier zur Vereinfachung des Meldewesens umfassen.",
-          "en": "The EBA has published a draft technical package for version 4.4 of its reporting and disclosure framework. This draft covers IFRS 18 reporting, Pillar 3 ESG disclosures, and other technical amendments. The aim is to enable reporting entities to prepare early for the upcoming changes.\n\nThe package includes validation rules, the Data Point Model (DPM), and XBRL taxonomies. It introduces new reporting requirements, including amendments to the ITS on Pillar 3 disclosures for ESG risks, equity, and shadow banking (first reference date 31.12.2026), new IFRS 18-aligned FINREP templates (first reference date 31.03.2027), and the integration of FRTB-related disclosure templates into the DPM (first reference date 31.03.2027). Additionally, technical amendments to DPM and taxonomy for resolution planning, MREL decisions, and Pillar 3 disclosure templates (first reference date 31.12.2026), as well as DPM and taxonomy for AMLA eligibility templates (first reference date 31.12.2026), are included.\n\nStakeholders are invited to submit feedback on the draft technical package 4.4 and the accompanying glossary by 24 August 2026. The final publication of the technical package 4.4 is scheduled for September 2026. This release represents Phase 1 of version 4.4; Phase 2 (4.4.1) will include further topics from the consultation paper on the simplification of supervisory reporting."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-seeks-feedback-44-draft-technical-package-its-reporting-and-disclosure-framework",
-        "imp": "medium"
-      },
-      {
-        "d": "09.07.2026",
-        "t": {
-          "de": "ITS",
-          "en": "ITS"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "EBA veröffentlicht finales technisches Paket für Meldewesen 4.3 (TCB-Meldungen und AMLA-Risikobewertung)",
-          "en": "EBA releases final technical package for reporting framework 4.3 (TCB reporting and AMLA risk assessment)"
-        },
-        "sl": "the-eba-releases-the-final-technical-package-for-its-4-3-reporting-framework-to",
-        "s": {
-          "de": "Die Europäische Bankenaufsichtsbehörde (EBA) hat das finale technische Paket für die Version 4.3 ihres Meldewesens veröffentlicht. Dieses Paket implementiert neue Meldepflichten für Zweigstellen aus Drittländern (Third-Country Branches, TCBs) gemäß der Eigenkapitalrichtlinie (CRD) und unterstützt die Datenerhebung der Anti-Geldwäsche-Behörde (AMLA) zur Risikobewertung.\n\nDas technische Paket umfasst Standard-Spezifikationen wie Validierungsregeln, das Data Point Model (DPM) und XBRL-Taxonomien. Es dient der Umsetzung der finalen Entwürfe der technischen Durchführungsstandards (ITS) für TCBs und der AMLA-Risikobewertung, um direkt von der AMLA beaufsichtigte Verpflichtete zu identifizieren. Zusätzlich wurde eine neue Glossary Usage Exploration-Datei veröffentlicht, um die Nutzung des Meldewesens zu vereinfachen und die Interpretation der Meldepflichten zu erleichtern.\n\nFür die Meldepflichten der TCBs ist der erste Referenzstichtag der 31. März 2027. Für die AMLA-Risikobewertung ist der erste Referenzstichtag der 31. Dezember 2026. Die EBA behält sich vor, Ende September ein gezieltes Update („Hotfix“) herauszugeben, falls dringende Klärungen oder Anpassungen erforderlich sind.",
-          "en": "The European Banking Authority (EBA) has released the final technical package for version 4.3 of its reporting framework. This package implements new reporting requirements for Third-Country Branches (TCBs) under the Capital Requirements Directive (CRD) and supports the Anti-Money Laundering Authority's (AMLA) data collection for risk assessment.\n\nThe technical package includes standard specifications such as validation rules, the Data Point Model (DPM), and XBRL taxonomies. It facilitates the implementation of the final draft Implementing Technical Standards (ITS) for TCBs and AMLA's risk assessment reporting, aimed at identifying obliged entities under AMLA's direct supervision. Additionally, a new Glossary Usage Exploration file has been published to simplify the use of the reporting framework and aid in interpreting reporting requirements.\n\nFor TCB reporting obligations, the first reference date is 31 March 2027. For AMLA risk assessment reporting, the first reference date is 31 December 2026. The EBA may issue a targeted update (\"hotfix\") at the end of September if critical clarifications or adjustments are needed."
-        },
-        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-releases-final-technical-package-its-43-reporting-framework-support-third-country-branches",
-        "imp": "high"
-      },
-      {
-        "d": "03.07.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "eba.europa.eu",
-        "ti": {
-          "de": "Sektorale Klassifizierung von UK-Kreditinstituten für FINREP-Meldungen (EBA Q&A 2026_7843)",
-          "en": "Sectoral Classification of UK Credit Institutions for FINREP Reporting (EBA Q&A 2026_7843)"
-        },
-        "sl": "sectoral-classification-of-uk-credit-institutions",
-        "s": {
-          "de": "Die EBA klärt die sektorale Klassifizierung von Kreditinstituten aus dem Vereinigten Königreich für FINREP-Meldungen. Gemäß der FINREP-Definition in Anhang V. Teil 1.42(c) der Verordnung (EU) 2024/1623 werden Kreditinstitute basierend auf ihren wirtschaftlichen Aktivitäten definiert, nicht auf ihrer Unterstellung unter die CRR/CRD-Rahmenwerke. Dies bedeutet, dass auch Institute aus Drittländern, die nicht dem CRR/CRD-Rahmen unterliegen, unter diese Definition fallen können.\n\nFür die Großkredite-Meldung (C 27.00) wird auf die FINREP-Definition in Anhang V, Teil 1, Absatz 42 verwiesen, um den Sektor des Kontrahenten zu melden. Dies erfordert eine konsistente Aufschlüsselung der Kontrahenten in beiden Meldewesen. Die Einstufung von UK-Banken als Kreditinstitute in FINREP erfolgt somit nach einem funktionalen Ansatz, unabhängig von ihrem Drittlandstatus.\n\nDie EBA betont, dass die Definition von Kreditinstituten in FINREP auf den wirtschaftlichen Aktivitäten basiert und nicht auf der Anwendung des CRR/CRD-Rahmens. Dies ermöglicht es, Drittlandinstitute, einschließlich solcher aus dem Vereinigten Königreich, als Kreditinstitute zu klassifizieren, auch wenn sie nicht den EU-Vorschriften unterliegen.",
-          "en": "The EBA clarifies the sectoral classification of UK credit institutions for FINREP reporting. According to the FINREP definition in Annex V. Part 1.42(c) of Regulation (EU) 2024/1623, credit institutions are defined based on their economic activities, not on their subjection to the CRR/CRD frameworks. This means that third-country institutions not subject to the CRR/CRD framework can also fall under this definition.\n\nFor large exposures reporting (C 27.00), reference is made to the FINREP definition in Annex V, Part 1, paragraph 42, to report the counterparty's sector. This requires a consistent breakdown of counterparties in both reporting frameworks. The classification of UK banks as credit institutions in FINREP is thus based on a functional approach, regardless of their third-country status.\n\n The EBA emphasizes that the definition of credit institutions in FINREP is based on economic activities and not on the application of the CRR/CRD framework. This allows third-country institutions, including those from the United Kingdom, to be classified as credit institutions, even if they are not subject to EU regulations."
-        },
-        "url": "https://www.eba.europa.eu/single-rule-book-qa/qna/view/publicId/2026_7843",
-        "imp": "low",
-        "refnum": "2026_7843"
-      },
-      {
-        "d": "15.07.2019",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation 15/2019 (BA) – Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV)",
-          "en": "Konsultation 15/2019 (BA) – Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV)"
-        },
-        "sl": "konsultation-15-2019-ba-aenderung-der-finanz-und-risikotragfaehigkeitsinformatio",
-        "s": {
-          "de": "Die BaFin konsultiert die Dritte Verordnung zur Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV). Ziel ist die Umsetzung zweier EBA-Leitlinien in nationales Recht.\n\nKonkret werden die FinaRisikoV um zwei neue Meldevordrucke für Informationen zum Internal Capital Adequacy Process (ICAAP) und Internal Liquidity Adequacy Assessment Process (ILAAP) erweitert. Zudem werden weitere Informationen zu Zinsschockszenarien im Rahmen der Leitlinien zum Zinsänderungsrisiko im Anlagebuch abgefragt. Die BaFin nutzt die Änderung auch zur Vereinheitlichung von Einreichungsstichtagen und zur Effizienzsteigerung des Meldeprozesses durch Aufhebung nicht mehr benötigter Meldefelder.\n\nDie Änderungen betreffen Kreditinstitute, die der Aufsicht der BaFin unterliegen und ICAAP/ILAAP-Informationen sowie Daten zum Zinsänderungsrisiko im Anlagebuch melden müssen. Die Konsultationsfrist endet am 31. August 2019.",
-          "en": "BaFin is consulting on the Third Ordinance Amending the Financial and Risk-Bearing Capacity Information Ordinance (FinaRisikoV). The aim is to implement two EBA guidelines into national law.\n\nSpecifically, the FinaRisikoV will be expanded to include two new reporting forms for information on the Internal Capital Adequacy Process (ICAAP) and Internal Liquidity Adequacy Assessment Process (ILAAP). Furthermore, additional information on interest rate shock scenarios will be requested as part of the guidelines on interest rate risk in the banking book. BaFin is also using this amendment to standardize submission deadlines and to improve the efficiency of the reporting process by removing reporting fields that are no longer required.\n\nThese changes affect credit institutions subject to BaFin supervision that are required to report ICAAP/ILAAP information and data on interest rate risk in the banking book. The consultation period ends on August 31, 2019."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2019/kon_15_19_BA_FinaRisikoV.html",
-        "imp": "medium",
-        "refnum": "Konsultation 15/2019"
-      },
-      {
-        "d": "18.12.2017",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Änderung der FinaRisikoV: Anpassung der Berichtspflichten",
-          "en": "Consultation on FinaRisikoV Amendment: Adjustment of Reporting Obligations"
-        },
-        "sl": "konsultation-18-2017-aenderung-der-finanz-und-risikotragfaehigkeitsinformationen",
-        "s": {
-          "de": "Die BaFin konsultiert einen Entwurf zur Änderung der Finanz- und Risikotragfähigkeitsinformationenverordnung (FinaRisikoV). Ziel ist es, die Berichtspflichten für Finanzinstitute anzupassen und zu vereinfachen, insbesondere vor dem Hintergrund des europaweit harmonisierten Meldewesens (FinRep) im IFRS-Format.\n\nDie Änderungen umfassen die Angleichung der Einreichungsfristen für Finanzinformationen an die harmonisierten europäischen Termine, um Doppelberichterstattung und unterschiedliche Meldeinhalte zu vermeiden. Weniger bedeutende Institutsgruppen, die nach HGB bilanzieren und bereits FinRep-Meldungen einreichen, sollen von der Befreiungsmöglichkeit des § 6 Absatz 3 FinaRisikoV erfasst werden und nur das Formular QSA auf Gruppenbasis einreichen müssen. Zudem werden Meldepflichten für bestimmte Finanzdienstleistungsinstitute, die bisher außerhalb der FinaRisikoV geregelt waren, integriert und weitere Klarstellungen vorgenommen.\n\nDie Konsultation richtet sich an alle beaufsichtigten Unternehmen und Gruppen, die Finanz- und Risikotragfähigkeitsinformationen melden müssen. Die Anpassungen sollen die Belastung der Institute reduzieren und die Konsistenz zwischen nationalen und europäischen Meldepflichten verbessern. Stellungnahmen zum Entwurf können bis zum 17. Januar 2018 eingereicht werden.",
-          "en": "BaFin is consulting on a draft amendment to the Regulation on the Submission of Financial and Risk-Bearing Capacity Information (FinaRisikoV). The aim is to adapt and simplify reporting obligations for financial institutions, particularly in light of the harmonized European reporting framework (FinRep) in IFRS format.\n\nThe proposed changes include aligning the submission deadlines for financial information with the harmonized European dates to avoid duplicate reporting and differing content. Less significant banking groups that prepare their financial statements under HGB and already submit FinRep reports are to be covered by the exemption possibility of Section 6 (3) FinaRisikoV, requiring them to submit only form QSA on a group basis. Additionally, reporting obligations for certain financial service institutions, previously regulated outside FinaRisikoV, will be integrated, and further clarifications will be made.\n\nThe consultation is addressed to all supervised entities and groups required to report financial and risk-bearing capacity information. The adjustments are intended to reduce the burden on institutions and improve consistency between national and European reporting obligations. Comments on the draft can be submitted until January 17, 2018."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2017/kon_1817_aenderung_verordnung_einreichung_risikotragfaehigkeitsinformationen_ba.html",
-        "imp": "medium",
-        "refnum": "Konsultation 18/2017"
-      }
-    ],
     "ebaownfunds": [
       {
         "d": "06.11.2026",
@@ -3539,6 +3710,104 @@
         "url": "https://www.esma.europa.eu/document/decision-delegating-esma-chair-refusal-registration-decisions-under-temporary-regime-small",
         "imp": "low",
         "refnum": "ESMA80-519981123-3461"
+      }
+    ],
+    "csdr": [
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Zusammenfassung der Ergebnisse des EU T+1 Koordinierungsausschusses (September 2026)",
+          "en": "Summary of Conclusions of the EU T+1 Coordination Committee (September 2026)"
+        },
+        "sl": "eu-t-1-coordination-committee-summary-of-conclusions-september-2026",
+        "s": {
+          "de": "Das EU T+1 Coordination Committee hat die Ergebnisse seiner Sitzung vom September 2026 veröffentlicht. Die Europäische Kommission erwartet die baldige Veröffentlichung der geänderten RTS zur Abwicklungsdisziplin und plant, das politische Bewusstsein für die T+1-Umstellung zu schärfen. Die ESMA arbeitet mit nationalen Behörden an einem konvergenten Ansatz zur Überwachung der Einhaltung der neuen RTS-Anforderungen.\n\nDie EZB berichtete über Fortschritte bei der T+1-Migration in den Märkten und die Anpassungen von T2S. Die für T+1 erforderlichen Änderungen in T2S sind im Zeitplan. Die Verschiebung des Swift 2026 Standards Release auf den 12. Juni 2027 schützt die geplanten T+1-Testfenster. Die EZB (Bankenaufsicht) plant, im vierten Quartal 2026 erneut die T+1-Bereitschaft ausgewählter Banken zu prüfen, wobei die Kommunikation der Banken mit ihren Kunden als entscheidend hervorgehoben wird.\n\nDer Vorsitzende des EU T+1 Industry Committee (EUIC) betonte, dass die notwendige Marktanleitung bereitgestellt wurde und Tests lokal organisiert werden müssen. Eine Task Force für die Übergangsperiode (TPTF) wird eingerichtet, um praktische Fragen wie IPOs und größere Kapitalmaßnahmen zu behandeln. Das EUIC erwägt die Nutzung und Veröffentlichung von Daten zum tatsächlichen Verhalten der Marktteilnehmer zur Überwachung der Branchenbereitschaft und empfiehlt den nationalen Behörden, Daten auf nationaler Ebene zu sammeln, insbesondere zu Allokationen und Bestätigungen.",
+          "en": "The EU T+1 Coordination Committee has published the conclusions of its September 2026 meeting. The European Commission expects the amended RTS on Settlement Discipline to be published shortly and plans to raise political awareness for the T+1 transition. ESMA is working with national authorities on a convergent approach to supervising firms' compliance with the new RTS requirements.\n\nThe ECB reported on progress in T+1 migration in the markets and T2S adjustments. The T2S changes required for T+1 are on track. The deferral of the Swift 2026 Standards Release to June 12, 2027, protects the agreed T+1 testing windows. The ECB (Banking Supervision) plans to re-engage with a sample of banks in Q4 2026 regarding their T+1 readiness, emphasizing that banks' outreach to their clients will be key.\n\nThe Chair of the EU T+1 Industry Committee (EUIC) stated that the necessary market guidance has been delivered and testing must be organized locally. A Transition Period Task Force (TPTF) is being established to address practical issues such as IPOs and major corporate actions. The EUIC is considering using and publishing data on the actual behavior of market participants to monitor industry readiness and recommends that NCAs collect data at national level, particularly on allocations and confirmations."
+        },
+        "url": "https://www.esma.europa.eu/document/eu-t1-coordination-committee-summary-conclusions-september-2026",
+        "imp": "medium"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Ein Jahr bis zur T+1-Abwicklung – Regulierungsrahmen vollständig",
+          "en": "ESMA: One Year to T+1 Settlement – Regulatory Framework Complete"
+        },
+        "sl": "one-year-to-go-for-t-1-settlement-the-regulatory-framework-is-complete-now-let-s",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) ruft Marktteilnehmer dazu auf, die technischen Vorbereitungen für die Umstellung auf die T+1-Abwicklung in der EU bis zum 11. Oktober 2027 abzuschließen. Mit der Veröffentlichung der RTS und der ESMA-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen ist der Regulierungsrahmen nun vollständig.\n\nDie neuen Anforderungen an Allokationen und Bestätigungen, die durch die geänderten RTS zur Abwicklungsdisziplin eingeführt wurden, müssen von Wertpapierfirmen und deren Kunden ab dem 7. Dezember 2026 erfüllt werden. Dies beinhaltet die verpflichtende Nutzung elektronischer, standardisierter Kommunikationskanäle und internationaler Nachrichtenstandards sowie maschinenlesbarer Kommunikationsmethoden, außer bei vorübergehenden technischen Störungen.\n\nDie ESMA betont die Bedeutung der Umstellung für die Effizienz und internationale Wettbewerbsfähigkeit der EU-Märkte und fordert alle Akteure in der Handels- und Abwicklungskette auf, ihre Systeme und Prozesse vorzubereiten und zu testen. Die erfolgreiche Transition erfordert eine gemeinsame Anstrengung von Industrie und Behörden.",
+          "en": "The European Securities and Markets Authority (ESMA) urges market participants to finalise technical preparations for the EU's transition to T+1 settlement by 11 October 2027. With the publication of the RTS and ESMA Guidelines on standardised procedures and messaging protocols, the regulatory framework is now complete.\n\nNew requirements for allocations and confirmations, introduced by the amended RTS on Settlement Discipline, must be complied with by investment firms and their clients from 7 December 2026. This includes the mandatory use of electronic, standardised communication channels and international messaging standards, as well as machine-readable communication methods, except in cases of temporary technical disruptions.\n\nESMA emphasizes the importance of the transition for the efficiency and international competitiveness of EU markets and calls on all players in the trading and settlement chain to prepare and test their systems and processes. A successful transition requires a joint effort from industry and public authorities."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/one-year-go-t1-settlement-regulatory-framework-complete-now-lets-make-it",
+        "imp": "high"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Überarbeitete CSDR-Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen",
+          "en": "Revised CSDR Guidelines on Standardised Procedures and Messaging Protocols"
+        },
+        "sl": "final-report-on-the-revised-csdr-guidelines-on-standardised-procedures-and-messa",
+        "s": {
+          "de": "Dieser Abschlussbericht der ESMA enthält überarbeitete Leitlinien zu standardisierten Verfahren und Nachrichtenprotokollen, die zwischen Wertpapierfirmen und ihren professionellen Kunden verwendet werden. Die Überarbeitung betrifft die Dokumentation von Vereinbarungen, die Einigung auf Kommunikationsverfahren und Nachrichtenprotokolle sowie die Abschaffung der mündlichen Kommunikation bei der Übermittlung von Allokationen und Bestätigungen.\n\nDie Leitlinien sind für Wertpapierfirmen relevant, die mit professionellen Kunden zusammenarbeiten. Sie sollen die Effizienz und Sicherheit der Wertpapierabwicklung verbessern, indem sie die Nutzung internationaler offener Kommunikationsverfahren und Standards vorschreiben und die Möglichkeit der Nutzung nicht-elektronischer Mittel auf Ausnahmefälle beschränken. Dies hat praktische Auswirkungen auf die internen Prozesse und die IT-Infrastruktur der betroffenen Unternehmen.\n\nDer Bericht enthält auch eine Kosten-Nutzen-Analyse und fasst das Feedback aus der Konsultation zusammen. Die genauen Anwendungsdaten und nächsten Schritte ergeben sich aus den finalen Leitlinien, die diesem Bericht beigefügt sind.",
+          "en": "This ESMA final report contains revised guidelines on standardised procedures and messaging protocols used between investment firms and their professional clients. The revision addresses the documentation of arrangements, agreement on communication procedures and messaging protocols, and the elimination of oral communication for submitting allocations and confirmations.\n\nThese guidelines are relevant for investment firms dealing with professional clients. They aim to enhance the efficiency and security of securities settlement by mandating the use of international open communication procedures and standards and limiting the use of non-electronic means to exceptional cases. This has practical implications for the internal processes and IT infrastructure of the affected firms.\n\nThe report also includes a cost-benefit analysis and summarises feedback from the consultation. The exact application dates and next steps will be determined by the final guidelines attached to this report."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-revised-csdr-guidelines-standardised-procedures-and-messaging-protocols-used",
+        "imp": "medium",
+        "refnum": "ESMA74-2119945926-3749"
+      },
+      {
+        "d": "12.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "eba.europa.eu",
+        "ti": {
+          "de": "EBA veröffentlicht Entwurf zur Änderung der RTS zu aufsichtsrechtlichen Anforderungen für Zentralverwahrer",
+          "en": "EBA publishes Final Report on draft amendments to technical standards on prudential requirements for central securities depositories"
+        },
+        "sl": "the-eba-publishes-final-report-on-draft-amendments-to-technical-standards-on-pru",
+        "s": {
+          "de": "Die EBA hat einen Abschlussbericht mit Entwürfen zur Änderung der technischen Regulierungsstandards (RTS) für die aufsichtsrechtlichen Anforderungen an Zentralverwahrer (CSDs) veröffentlicht. Die Änderungen reagieren hauptsächlich auf Anpassungen der CSDR-Überarbeitung (\"CSDR Refit\"), die es CSDs mit Banklizenz ermöglichen, bankähnliche Nebendienstleistungen auch für andere CSDs zu erbringen.\n\nDies betrifft CSDs mit Banklizenz, die nun bankähnliche Nebendienstleistungen wie Zahlungsdienste und Devisentransaktionen für andere CSDs anbieten dürfen. Ziel ist es, den Zugang zu Fremdwährungen für CSDs ohne Banklizenz zu verbessern und die Abwicklungseffizienz in Europa zu steigern. Die Aktualisierungen der RTS sollen sicherstellen, dass eine erhöhte Vernetzung zwischen CSDs nicht zu einem Anstieg des Systemrisikos führt.\n\nDie Änderungen konzentrieren sich auf die Auswirkungen dieser neuen Regelung auf das Risikoprofil der CSDs mit Banklizenz und die erforderlichen Meldungen an die Aufsichtsbehörden. Weitere Aktualisierungen passen die RTS an jüngste Änderungen der Kapitaladäquanzverordnung (CRR) und an den geänderten CSDR-Text an.",
+          "en": "The EBA has published a final report with draft amendments to the Regulatory Technical Standards (RTS) on prudential requirements for central securities depositories (CSDs). These amendments primarily respond to changes introduced by the Central Securities Depositories Regulation (CSDR) \"Refit\", which allow banking CSDs to provide banking-type ancillary services to other CSDs.\n\nThis affects banking CSDs, which are now permitted to offer banking-type ancillary services, such as payment services and foreign exchange transactions, to other CSDs. The aim is to increase access to foreign currency for non-banking CSDs and ultimately enhance settlement efficiency in Europe. The RTS updates are designed to prevent any potential increase in interconnectedness between CSDs from raising systemic risk.\n\nThe amendments focus on the impact of this arrangement on the risk profile of banking CSDs and the notifications required for supervisors. Further updates align the RTS with recent changes in the Capital Requirements Regulation (CRR) and with the amended CSDR text where relevant."
+        },
+        "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-final-report-draft-amendments-technical-standards-prudential-requirements-central",
+        "imp": "medium"
+      },
+      {
+        "d": "20.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Unternehmen auf, Vorbereitungen für T+1-Abwicklungsfristen abzuschließen",
+          "en": "ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines"
+        },
+        "sl": "esma-calls-on-firms-to-finalise-preparations-ahead-of-t-1-settlement-deadlines",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat eine Erklärung veröffentlicht, die wichtige Fristen und Maßnahmen für den Übergang zu einem T+1-Abwicklungszyklus in den EU-Finanzmärkten hervorhebt. Der Übergang ist für den 11. Oktober 2027 geplant, wobei 2026 als entscheidendes Jahr für die Finalisierung der Vorbereitungen gilt.\n\nMarktteilnehmer werden aufgefordert, ihre eigene Bereitschaft sowie die ihres gesamten Ökosystems über die gesamte Handels- und Abwicklungskette hinweg vorzubereiten und zu testen. Eine erste regulatorische Frist für Allokations- und Bestätigungsprozesse ist der 7. Dezember 2026.\n\nDie ESMA betont die Notwendigkeit, die Vorbereitungen abzuschließen, um einen reibungslosen Übergang zum T+1-Abwicklungszyklus zu gewährleisten.",
+          "en": "The European Securities and Markets Authority (ESMA) has issued a statement outlining key deadlines and actions for the transition to a T+1 settlement cycle in EU financial markets. The move is scheduled for 11 October 2027, with 2026 identified as a critical year for finalizing preparations.\n\nMarket participants are encouraged to prepare and test their own readiness, as well as that of their entire ecosystem across the trading and settlement chain. A first regulatory deadline for allocations and confirmations processes is set for 7 December 2026.\n\nESMA emphasizes the need to finalize preparations to ensure a smooth transition to the T+1 settlement cycle."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
+        "imp": "high"
       }
     ],
     "cra": [
@@ -5117,182 +5386,6 @@
         },
         "url": "https://www.cssf.lu/en/Document/grand-ducal-regulation-of-1-february-2010/",
         "imp": "low"
-      }
-    ],
-    "dora": [
-      {
-        "d": "23.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA legt neue Aufsichtspriorität für digitale Innovationen ab 2027 fest",
-          "en": "ESMA sets new supervisory priority on digital innovation from 2027"
-        },
-        "sl": "esma-sets-new-supervisory-priority-on-digital-innovation-from-2027",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) führt ab 2027 eine neue strategische EU-weite Aufsichtspriorität (USSP) für digitale Innovationen ein. Ziel ist es, Innovationen zu fördern und gleichzeitig den Anlegerschutz sowie robuste Sicherheitsvorkehrungen zu gewährleisten. Die ESMA will sicherstellen, dass die Aufsichtsbehörden über das nötige Fachwissen und die Kapazitäten verfügen, um neue Technologien zu überwachen.\n\nDer anfängliche Fokus der Zusammenarbeit mit den nationalen zuständigen Behörden liegt auf der Nutzung von künstlicher Intelligenz und Tokenisierung durch beaufsichtigte Unternehmen. Die ESMA wird flexibel bleiben, um auf zukünftige technologische Entwicklungen reagieren zu können. Diese neue Priorität ergänzt die bereits seit 2025 bestehende USSP zur Cyber- und operationellen Resilienz.\n\nDie ESMA schließt in diesem Jahr die 2023 gestartete USSP zu ESG-Offenlegungen ab. USSPs sind Konvergenzinstrumente der ESMA, die auf Hochrisikobereiche von strategischer Bedeutung in der gesamten EU abzielen, um Aufsichtsressourcen auf die wichtigsten Risiken für Anlegerschutz, Finanzstabilität und das ordnungsgemäße Funktionieren der EU-Finanzmärkte zu lenken.",
-          "en": "The European Securities and Markets Authority (ESMA) is introducing a new Union Strategic Supervisory Priority (USSP) on digital innovation from 2027. The aim is to embrace innovation while protecting investors and maintaining strong safeguards. ESMA seeks to ensure that supervisors have the expertise and capacity to oversee the use of new technologies.\n\nInitially, in collaboration with National Competent Authorities, the focus will be on how supervised entities use artificial intelligence and tokenisation. ESMA will remain flexible to address future technological developments as they emerge. This new priority will run alongside the USSP on cyber and operational resilience, which has been in place since 2025.\n\nESMA is concluding the USSP on ESG disclosures, launched in 2023, this year. USSPs are ESMA’s convergence tools that address high-risk areas of strategic importance across the EU, helping to direct supervisory resources towards the most critical risks for investor protection, financial stability, and the orderly functioning of EU financial markets."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-new-supervisory-priority-digital-innovation-2027",
-        "imp": "medium"
-      },
-      {
-        "d": "16.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "DORA: Operationelle Anweisungen zur Meldung von IKT-Vorfällen",
-          "en": "DORA incident reporting - operational instructions"
-        },
-        "sl": "dora-incident-reporting-operational-instructions",
-        "s": {
-          "de": "Dieses Dokument der ESMA enthält operationelle Anweisungen für die zuständigen Behörden zur Meldung schwerwiegender IKT-bezogener Vorfälle gemäß der DORA-Verordnung. Ziel ist es, die Datenqualität zu verbessern und die Konsistenz der Meldungen über verschiedene Jurisdiktionen hinweg zu fördern. Die Anweisungen basieren auf den Implementing Technical Standards (ITS) 2025/302 und den Regulatory Technical Standards (RTS) 2025/301 und 2024/1772, die die Meldeformulare, Verfahren, Inhalte, Fristen und Klassifizierungskriterien für IKT-Vorfälle festlegen.\n\nDie Anweisungen behandeln spezifische Aspekte wie die Verwendung der englischen Sprache für Meldungen an die ESAs, die einheitliche Angabe monetärer Felder in Tausendereinheiten und die korrekte Nutzung von Freitextfeldern. Weiterhin wird die Notwendigkeit der Einreichung von Abschlussberichten, die Vorgehensweise bei Korrekturmeldungen und die konsistente Verwendung eindeutiger Identifikatoren für Vorfälle betont. Auch die Kriterien für die Klassifizierung von Vorfällen als schwerwiegend und die geografische Verbreitung werden präzisiert.\n\nFinanzunternehmen, die unter DORA fallen, müssen nach der Erkennung eines als schwerwiegend eingestuften IKT-Vorfalls Informationen über den Vorfall an ihre zuständige Behörde melden. Diese Behörden wiederum benachrichtigen die ESAs unter Verwendung vordefinierter englischer Vorlagen. Die Anweisungen sollen regelmäßig aktualisiert werden, um Erfahrungen aus der Praxis zu berücksichtigen.",
-          "en": "This ESMA document provides operational instructions for competent authorities regarding the reporting of major ICT-related incidents under the DORA Regulation. The aim is to enhance data quality and promote greater consistency in reporting across jurisdictions. The instructions are based on Implementing Technical Standards (ITS) 2025/302 and Regulatory Technical Standards (RTS) 2025/301 and 2024/1772, which define reporting forms, procedures, content, timelines, and classification criteria for ICT incidents.\n\nThe instructions cover specific aspects such as the use of the English language for reports to the ESAs, the consistent reporting of monetary fields in thousands of units, and the correct use of free-text fields. Furthermore, the document emphasizes the necessity of submitting final reports, the procedure for correction reports, and the consistent use of unique identifiers for incidents. Criteria for classifying incidents as major and their geographical spread are also clarified.\n\nFinancial entities falling under DORA must report information on ICT-related incidents classified as major to their competent authority. These authorities, in turn, notify the ESAs using predefined English templates. The instructions will be updated regularly to incorporate practical experience."
-        },
-        "url": "https://www.esma.europa.eu/document/dora-incident-reporting-operational-instructions",
-        "imp": "high"
-      },
-      {
-        "d": "10.09.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Verordnung zur Anpassung von Prüfungsberichtsverordnungen an DORA",
-          "en": "Regulation amending audit report regulations to incorporate DORA requirements"
-        },
-        "sl": "verordnung-zur-aenderung-der-wertpapierinstituts-pruefungsberichtsverordnung-und",
-        "s": {
-          "de": "Diese Verordnung ändert die Wertpapierinstituts-Prüfungsberichtsverordnung und die Schwarmfinanzierungsdienstleister-Prüfungsverordnung. Ziel ist es, die Vorgaben der Verordnung (EU) 2022/2554 (DORA) im Rahmen von Prüfungen zu berücksichtigen.\n\nDie Änderungen betreffen Wertpapierinstitute und Schwarmfinanzierungsdienstleister. Für diese Unternehmen bedeutet dies, dass ihre Prüfungen künftig die Anforderungen der DORA-Verordnung an die digitale operationale Resilienz einbeziehen müssen. Dies wird voraussichtlich Anpassungen in den Prüfprozessen und den zugehörigen Berichten erfordern.\n\nDie Verordnung wurde am 10.09.2026 im Bundesgesetzblatt veröffentlicht und trat am 26.08.2026 in Kraft.",
-          "en": "This regulation amends the Investment Firm Audit Report Regulation and the Crowdfunding Service Provider Audit Regulation. The aim is to incorporate the requirements of Regulation (EU) 2022/2554 (DORA) into audits.\n\nThe amendments affect investment firms and crowdfunding service providers. For these entities, this means that their audits will in future have to include the DORA regulation's requirements for digital operational resilience. This will likely necessitate adjustments to audit processes and related reports.\n\nThe regulation was published in the Federal Law Gazette on 10.09.2026 and entered into force on 26.08.2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/256",
-        "imp": "high"
-      },
-      {
-        "d": "27.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu den gemeinsamen DORA-Leitlinien für IKT-Kosten und -Verluste (ESMA75-1012365701-566)",
-          "en": "Compliance Table on Joint DORA Guidelines for ICT Costs and Losses (ESMA75-1012365701-566)"
-        },
-        "sl": "compliance-table-on-the-joint-guidelines-on-costs-and-losses-under-dora",
-        "s": {
-          "de": "Dieses Dokument ist eine Compliance-Tabelle zu den gemeinsamen Leitlinien der Europäischen Aufsichtsbehörden (ESAs) zur Schätzung der aggregierten jährlichen Kosten und Verluste, die durch schwerwiegende IKT-bezogene Vorfälle gemäß der DORA-Verordnung (EU) 2022/2554 (JC/GL/2024/34) verursacht werden.\n\nDie Tabelle listet auf, welche nationalen zuständigen Behörden (z.B. FMA Österreich, BaFin Deutschland, AMF Frankreich) diese Leitlinien einhalten oder beabsichtigen, sie einzuhalten. Einige Behörden geben zusätzliche Informationen zu ihrer Umsetzung an, wie die Veröffentlichung auf ihren Websites, die Integration in Aufsichtsverfahren oder die Entwicklung spezifischer nationaler Anweisungen und Formulare zur Berichterstattung.\n\nDie Leitlinien sind ab dem 19. Mai 2025 anwendbar. Mehrere nationale Behörden haben bereits Maßnahmen zur Umsetzung ergriffen oder planen diese, um die Anforderungen der DORA-Verordnung bezüglich der Meldung von Kosten und Verlusten aus IKT-Vorfällen zu erfüllen.",
-          "en": "This document is a compliance table for the Joint Guidelines of the European Supervisory Authorities (ESAs) on the estimation of aggregated annual costs and losses caused by major ICT-related incidents under the DORA Regulation (EU) 2022/2554 (JC/GL/2024/34).\n\nThe table lists which national competent authorities (e.g., FMA Austria, BaFin Germany, AMF France) comply or intend to comply with these guidelines. Some authorities provide additional information on their implementation, such as publication on their websites, integration into supervisory procedures, or the development of specific national instructions and forms for reporting.\n\nThe guidelines are applicable from May 19, 2025. Several national authorities have already taken or plan to take measures for implementation to meet the DORA Regulation's requirements regarding the reporting of costs and losses from ICT incidents."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-joint-guidelines-costs-and-losses-under-dora",
-        "imp": "medium",
-        "refnum": "ESMA75-1012365701-566"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA fordern verbesserte Governance und konsistente Aufsicht zur Minderung von IKT-Risiken durch KI-Modelle im EU-Finanzsektor",
-          "en": "EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector"
-        },
-        "sl": "eba-eiopa-and-esma-call-for-enhanced-governance-and-consistent-supervision-to-mi",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA – ESAs) fordern einen sektorübergreifenden, risikobasierten und konsistenten Aufsichtsansatz zur Minderung von IKT-Risiken, die von „Frontier AI“-Modellen ausgehen. Die Erklärung berücksichtigt bestehende regulatorische Anforderungen sowie Veröffentlichungen anderer Behörden wie der Europäischen Kommission, des ESRB und der ENISA.\n\nDie ESAs skizzieren Maßnahmen, die Finanzunternehmen dabei helfen sollen, ihre operationelle Resilienz gegenüber Cyberrisiken im Zusammenhang mit „Frontier AI“-Modellen zu stärken. Besonderes Augenmerk liegt auf der Prävention, Erkennung und dem Management dieser Risiken. Finanzunternehmen sollen robuste Governance- und Risikomanagementrahmen implementieren.\n\nDie ESAs ermutigen Finanzunternehmen und zuständige Behörden, die Erklärung als Grundlage für den Aufsichtsdialog zu nutzen. Dies soll dazu beitragen, die Widerstandsfähigkeit des EU-Finanzsystems gegenüber Risiken durch „Frontier AI“-Technologien zu gewährleisten. Die Erklärung informiert auch über laufende und geplante DORA-Aufsichtsaktivitäten für kritische IKT-Drittanbieter (CTPPs).",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA – ESAs) are calling for a cross-sectoral, risk-based, and consistent supervisory approach to mitigate ICT risks stemming from frontier AI models. The statement considers existing regulatory requirements and publications from other authorities such as the European Commission, ESRB, and ENISA.\n\nThe ESAs outline measures to help financial entities strengthen their operational resilience against cyber risks linked to frontier AI models. Particular emphasis is placed on the prevention, detection, and management of these risks. Financial entities should implement robust governance and risk management frameworks.\n\nThe ESAs encourage both financial entities and competent authorities to use the statement as a basis for supervisory dialogue. This approach aims to ensure the EU financial system remains resilient against risks driven by frontier AI technologies. The statement also provides updates on ongoing and planned DORA oversight activities for critical ICT third-party providers (CTPPs)."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision",
-        "imp": "medium"
-      },
-      {
-        "d": "31.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESAs-Stellungnahme zu IKT-Risiken durch Frontier AI-Modelle (JC 2026 25)",
-          "en": "ESAs' Statement on ICT Risks from Frontier AI Models (JC 2026 25)"
-        },
-        "sl": "esas-statement-toward-a-consistent-and-risk-based-approach-for-ict-risks-from-fr",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (ESAs) haben eine Stellungnahme zu einem konsistenten und risikobasierten Ansatz für IKT-Risiken durch „Frontier AI“-Modelle veröffentlicht. Diese Modelle, die an der Spitze der KI-Entwicklung stehen, bergen neue Herausforderungen für die operationelle Resilienz von Finanzunternehmen. Die Stellungnahme betont die Notwendigkeit, bestehende IKT-Risikomanagementrahmen anzupassen, um diesen neuen Bedrohungen zu begegnen.\n\nFinanzinstitute müssen ihre Präventions-, Detektions- und Managementstrategien für Cyberrisiken überdenken. Dazu gehören die kontinuierliche Aktualisierung von IT-Inventaren, die Implementierung von „Secure-by-Design“-Prinzipien, verbesserte Überwachungsprozesse und die Anpassung von Risikomanagement-Frameworks an KI-gestützte Bedrohungen. Auch die Schulung des Managements und der Mitarbeiter im Bereich Cybersicherheit muss weiterentwickelt werden, um eine proaktivere Haltung zu fördern.\n\nDie Stellungnahme fordert eine Weiterentwicklung der Cybersicherheitsstrategien, um auf KI-gestützte Angriffe reagieren zu können. Dies beinhaltet die Integration automatisierter Sicherheitskontrollen in Entwicklungsprozesse und die Berücksichtigung neuer oder verstärkter Risiken durch KI-Modelle, einschließlich der Abhängigkeiten von Drittanbietern und Open-Source-Gemeinschaften.",
-          "en": "The European Supervisory Authorities (ESAs) have issued a statement on a consistent and risk-based approach to ICT risks arising from frontier AI models. These cutting-edge AI models pose new challenges to the operational resilience of financial entities. The statement emphasizes the need to adapt existing ICT risk management frameworks to address these emerging threats.\n\nFinancial institutions must re-evaluate their cyber risk prevention, detection, and management strategies. This includes continuously updating IT inventories, implementing secure-by-design principles, enhancing monitoring processes, and adapting risk management frameworks to AI-assisted threats. Cybersecurity awareness training for management and staff also needs to evolve to foster a more proactive mindset.\n\nThe statement calls for the evolution of cybersecurity strategies to respond to AI-enhanced attacks. This involves integrating automated security controls into development processes and considering new or heightened risks from AI models, including dependencies on third-party providers and open-source communities."
-        },
-        "url": "https://www.esma.europa.eu/document/esas-statement-toward-consistent-and-risk-based-approach-ict-risks-frontier-ai-models",
-        "imp": "medium"
-      },
-      {
-        "d": "23.07.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Anpassung der PrüfV wegen DORA, Taxonomie und Offenlegungsverordnung (Konsultation 14/2025)",
-          "en": "Consultation on the amendment of the PrüfV due to DORA, Taxonomy, and Disclosure Regulations (Consultation 14/2025)"
-        },
-        "sl": "konsultation-14-2025-entwurf-einer-aenderungsverordnung-zur-anpassung-der-pruefv",
-        "s": {
-          "de": "Die BaFin konsultiert einen Entwurf zur Änderung der Prüfungsberichteverordnung (PrüfV). Ziel ist die Konkretisierung der Berichtspflichten für Abschlussprüfer im Zusammenhang mit der EU-Offenlegungsverordnung, der EU-Taxonomieverordnung und der DORA-Verordnung.\n\nDie Anpassung der PrüfV soll sicherstellen, dass die BaFin ausreichend detaillierte Informationen über die Prüfungsergebnisse erhält, um ihren Aufsichtspflichten nachkommen zu können. Hierfür werden die §§ 40a und 40b PrüfV neu eingeführt, die spezifische Anforderungen an die Prüfungsberichterstattung zu diesen neuen Regelwerken festlegen.\n\nDie neuen Vorgaben sollen erstmals auf den Prüfungsbericht für Geschäftsjahre angewendet werden, die nach dem 31. Dezember 2024 beginnen. Stellungnahmen zum Entwurf können bis zum 12. August 2025 eingereicht werden.",
-          "en": "BaFin is consulting on a draft amendment to the German Audit Report Regulation (PrüfV). The aim is to specify the reporting obligations for auditors in connection with the EU Disclosure Regulation, the EU Taxonomy Regulation, and the DORA Regulation.\n\nThe amendment to the PrüfV is intended to ensure that BaFin receives sufficiently detailed information on audit results to fulfill its supervisory duties. For this purpose, new sections 40a and 40b PrüfV are introduced, which set specific requirements for audit reporting on these new regulatory frameworks.\n\nThe new provisions are to be applied for the first time to audit reports for financial years beginning after December 31, 2024. Comments on the draft can be submitted until August 12, 2025."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_14_2025_entwurf_aenderungsverordnung_zur_pruefv_va.html",
-        "imp": "medium",
-        "refnum": "Konsultation 14/2025"
-      },
-      {
-        "d": "17.01.2025",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Bankaufsichtliche Anforderungen an die IT (BAIT) – Aktualisierung (Rundschreiben 10/2017)",
-          "en": "Banking Supervisory Requirements for IT (BAIT) – Update (Circular 10/2017)"
-        },
-        "sl": "rundschreiben-10-2017-ba-bankaufsichtliche-anforderungen-an-die-it-bait",
-        "s": {
-          "de": "Das Rundschreiben 10/2017 (BA) der BaFin, bekannt als BAIT, legt einen flexiblen und praxisnahen Rahmen für die technisch-organisatorische Ausstattung von Instituten fest. Es konzentriert sich dabei auf das Management von IT-Ressourcen, das Informationsrisikomanagement und das Informationssicherheitsmanagement. Zudem präzisiert es die Anforderungen des § 25b KWG bezüglich der Auslagerung von Aktivitäten und Prozessen.\n\nDie BAIT konkretisiert die Anforderungen der MaRisk im Bereich der IT und gilt für alle Kredit- und Finanzdienstleistungsinstitute in Deutschland. Ab dem 17. Januar 2025 sind Institute, die ein IKT-Risikomanagement nach Art. 5-15 oder Art. 16 der DORA-Verordnung betreiben müssen, von diesem Rundschreiben ausgenommen. Die Geschäftsleitung ist für die Festlegung und Anpassung einer konsistenten IT-Strategie und IT-Governance verantwortlich, die auch die Informationssicherheit und das IT-Notfallmanagement umfasst.\n\nDie aktualisierte Fassung des Rundschreibens tritt am 17. Januar 2025 in Kraft. Institute sollten ihre IT-Strategien und -Prozesse entsprechend den präzisierten Anforderungen überprüfen und anpassen, insbesondere im Hinblick auf die IT-Governance, das Informationsrisikomanagement und die operative Informationssicherheit.",
-          "en": "BaFin's Circular 10/2017 (BA), known as BAIT, establishes a flexible and practical framework for the technical and organizational setup of institutions. It focuses on IT resource management, information risk management, and information security management. Furthermore, it clarifies the requirements of Section 25b KWG regarding the outsourcing of activities and processes.\n\nBAIT specifies the IT-related requirements of MaRisk and applies to all credit institutions and financial service institutions in Germany. As of January 17, 2025, institutions that are required to implement ICT risk management according to Articles 5-15 or Article 16 of the DORA Regulation are exempt from this circular. The management board is responsible for defining and adapting a consistent IT strategy and IT governance, which also includes information security and IT emergency management.\n\nThe updated version of the circular comes into effect on January 17, 2025. Institutions should review and adjust their IT strategies and processes in accordance with the clarified requirements, particularly concerning IT governance, information risk management, and operational information security."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1710_ba_BAIT.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 10/2017"
-      },
-      {
-        "d": "09.10.2024",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Umsetzungshinweise zu DORA für IKT-Risikomanagement",
-          "en": "BaFin Implementation Guidance on DORA for ICT Risk Management"
-        },
-        "sl": "bafin-veroeffentlicht-umsetzungshinweise-zu-dora",
-        "s": {
-          "de": "Die BaFin hat Umsetzungshinweise zum Digital Operational Resilience Act (DORA) veröffentlicht. Diese nicht-verpflichtende Aufsichtsmitteilung soll Banken und Versicherer bei der Implementierung der DORA-Anforderungen an das IKT-Risikomanagement und das IKT-Drittparteienrisikomanagement unterstützen.\n\nDie Hinweise vergleichen die DORA-Anforderungen mit den bestehenden bank- und versicherungsaufsichtlichen Anforderungen an die IT (BAIT und VAIT) und identifizieren Handlungsbedarfe. Sie enthalten auch eine Übersicht der Mindestvertragsinhalte für Vereinbarungen mit IKT-Drittdienstleistern. Die Ergebnisse sind in der Regel auch auf Kapitalverwaltungsgesellschaften (KAIT) sowie Zahlungs- und E-Geld-Institute (ZAIT) übertragbar.\n\nAb dem 17. Januar 2025 müssen die meisten beaufsichtigten Unternehmen DORA anwenden. Die BaFin beabsichtigt, die Rundschreiben BAIT, VAIT, ZAIT und KAIT aufzuheben, da sich viele Anforderungen mit DORA decken.",
-          "en": "The BaFin has published implementation guidance on the Digital Operational Resilience Act (DORA). This non-binding supervisory statement aims to support banks and insurers in implementing DORA's requirements for ICT risk management and ICT third-party risk management.\n\nThe guidance compares DORA's requirements with the existing banking and insurance supervisory requirements for IT (BAIT and VAIT) and identifies areas for action. It also includes an overview of minimum contractual contents for agreements with ICT third-party service providers. The findings are generally transferable to capital management companies (KAIT) and payment and e-money institutions (ZAIT).\n\nFrom January 17, 2025, most supervised entities must apply DORA. The BaFin intends to repeal the circulars BAIT, VAIT, ZAIT, and KAIT, as many of their requirements overlap with DORA."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2024/Aufsichtsmitteilung_Umsetzungshinweise_DORA.html",
-        "imp": "medium"
       }
     ],
     "dsgvo": [
