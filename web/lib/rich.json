@@ -2324,6 +2324,117 @@
    "tokens": 7731
   }
  },
+ "dora-2026-11-20-2026-7936-finrep-f-16-08-treatment-of-dora-related-ict-service-provider-costs-an": {
+  "h1": "FINREP F 16.08: Meldung DORA-bezogener IKT-Kosten und -Verluste (EBA Q&A 2026_7936)",
+  "seo_title": "EBA Q&A FINREP DORA IKT-Kosten F 16.08",
+  "meta_description": "EBA klärt: DORA-bezogene IKT-Drittanbieterkosten gehören in FINREP-Vorlage F 16.08 unter IT-Outsourcing, andere Verluste nach ihrer buchhalterischen Natur.",
+  "lead": "Die EBA hat am 20.11.2026 klargestellt, wie Institute DORA-bezogene IKT-Kosten und -Verluste in der FINREP-Vorlage F 16.08 melden müssen. Die Einordnung folgt der buchhalterischen Klassifizierung im öffentlichen Abschluss.",
+  "aka": [
+   "EBA Q&A 2026_7936",
+   "FINREP IT-Outsourcing DORA",
+   "F 16.08 IKT-Kosten",
+   "DORA IKT-Drittanbieter FINREP",
+   "Q&A FINREP DORA"
+  ],
+  "summary": "Zahlungen an IKT-Drittanbieter im Sinne von DORA sind in FINREP-Vorlage F 16.08 unter \"Sonstige Verwaltungsaufwendungen - IT-Outsourcing\" zu melden. Alle weiteren DORA-bezogenen Verluste folgen ihrer buchhalterischen Natur. Die Herkunft des Verlustereignisses (eigene Systeme oder Drittanbieter) ändert die Zuordnung nicht.",
+  "overview": [
+   "Die EBA beantwortet mit Q&A 2026_7936, ob DORA-bezogene Kosten und Verluste aus IKT-Drittanbieterverhältnissen stets unter der Position \"IT-Outsourcing\" in Vorlage F 16.08 zu melden sind. Die Antwort lautet: Ausgaben an IKT-Drittanbieter gehören unter \"Sonstige Verwaltungsaufwendungen - IT-Outsourcing\". Andere Aufwendungen und Verluste, etwa Wertminderungen auf Software-Anlagen, Rückstellungen oder sonstige betriebliche Aufwendungen, sind dagegen nach ihrer spezifischen buchhalterischen Natur einzuordnen.",
+   "Ausgangspunkt ist die Meldepflicht aus der ITS on Incident Reporting (VO 2025/302): Finanzinstitute müssen dort Brutto-Direkt- und -Indirektkosten aus schwerwiegenden IKT-Vorfällen ausweisen. Die Q&A stellt sicher, dass diese Kosten in FINREP konsistent mit den öffentlichen Abschlüssen erfasst werden, unabhängig davon, ob der Vorfall aus den eigenen Systemen oder von einem Drittanbieter ausging."
+  ],
+  "facts": [
+   {
+    "label": "Q&A-Nummer",
+    "value": "2026_7936"
+   },
+   {
+    "label": "Veröffentlicht",
+    "value": "20.11.2026"
+   },
+   {
+    "label": "Einreichender",
+    "value": "Kreditinstitut"
+   },
+   {
+    "label": "Rechtsgrundlage",
+    "value": "CRR (VO 575/2013), ITS Supervisory Reporting (VO 2024/3117), ITS Incident Reporting (VO 2025/302)"
+   },
+   {
+    "label": "Status",
+    "value": "Final"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "FINREP-pflichtig und DORA-betroffen",
+    "detail": "Institute, die IKT-Dienstleistungen auslagern und unter DORA fallen, müssen ihre FINREP-Meldeprozesse für Vorlage F 16.08 auf Basis dieser Klarstellung überprüfen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen / Reporting",
+    "note": "Zuordnung in F 16.08 prüfen",
+    "detail": "Zuständige Teams müssen sicherstellen, dass IKT-Drittanbieterkosten und andere DORA-bezogene Verluste entsprechend ihrer buchhalterischen Natur korrekt zugeordnet werden.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Rechnungslegung",
+    "note": "Klassifizierung im Abschluss maßgeblich",
+    "detail": "Die Einordnung in FINREP folgt der Klassifizierung im öffentlichen Abschluss. Abstimmung zwischen Rechnungslegung und Meldewesen ist erforderlich.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "EBA Q&A 2026_7936",
+    "title": "Zuordnung IKT-Drittanbieterkosten in F 16.08",
+    "text": "Zahlungen an IKT-Drittanbieter (DORA-Scope) sind in F 16.08 unter \"Sonstige Verwaltungsaufwendungen - IT-Outsourcing\" zu melden. Die Herkunft des Verlustereignisses ist für die Zuordnung nicht relevant."
+   },
+   {
+    "ref": "VO 2025/302",
+    "title": "ITS Incident Reporting als Ausgangsgröße",
+    "text": "Brutto-Direkt- und -Indirektkosten aus schwerwiegenden IKT-Vorfällen (Datenfeld 4.13) fließen in die FINREP-Positionen ein und sind konsistent mit dem öffentlichen Abschluss zu klassifizieren."
+   }
+  ],
+  "todos": [
+   "FINREP-Vorlage F 16.08 daraufhin prüfen, ob IKT-Drittanbieterkosten bisher korrekt unter IT-Outsourcing erfasst werden.",
+   "Abstimmung zwischen Meldewesen und Rechnungslegung sicherstellen, damit FINREP-Zuordnung mit dem öffentlichen Abschluss übereinstimmt.",
+   "Meldeprozess für schwerwiegende IKT-Vorfälle (VO 2025/302, Datenfeld 4.13) mit FINREP-Klassifizierung synchronisieren.",
+   "Interne Mapping-Tabelle für DORA-bezogene Verlustarten und ihre FINREP-Positionen erstellen oder aktualisieren."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Finale Veröffentlichung",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Müssen alle DORA-bezogenen Kosten unter IT-Outsourcing in F 16.08 gemeldet werden?",
+    "a": "Nein. Nur Ausgaben, die direkt an IKT-Drittanbieter gezahlt werden, gehören unter IT-Outsourcing. Andere Verluste (z. B. Software-Wertminderungen, Rückstellungen) sind nach ihrer buchhalterischen Natur einzuordnen."
+   },
+   {
+    "q": "Spielt es eine Rolle, ob der Vorfall aus eigenen Systemen oder von einem Drittanbieter stammt?",
+    "a": "Nein. Die Q&A stellt ausdrücklich klar, dass die Herkunft des Verlustereignisses die Meldezuordnung nicht ändert. Maßgeblich ist die Art des Aufwands und die Klassifizierung im öffentlichen Abschluss."
+   },
+   {
+    "q": "Welche Rechtsgrundlage ist für die Brutto-Kostenmeldung bei IKT-Vorfällen relevant?",
+    "a": "Die ITS on Incident Reporting (VO 2025/302) verpflichtet zur Meldung von Brutto-Direkt- und -Indirektkosten schwerwiegender IKT-Vorfälle. Diese Größen fließen in die FINREP-Positionen ein."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Kein Anwendungsdatum für bestehende FINREP-Meldungen genannt; unklar, ob rückwirkende Korrekturen erwartet werden.",
+   "Die Q&A verweist auf VO 2025/302 (ITS Incident Reporting); Inkrafttreten und Geltungsbeginn dieser Verordnung sind in Quelle nicht angegeben."
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 3123 Zeichen, gekürzt auf 3123",
+   "dropped": 2,
+   "tokens": 9127
+  }
+ },
  "ebatcb-2026-11-18-aufsichtsmitteilung-10-2026-ba-relizenzierung-von-crd-drittstaatenzweigstellen-u": {
   "h1": "Relizenzierung von CRD-Drittstaatenzweigstellen und Abwicklungskonten (BaFin Aufsichtsmitteilung 10/2026)",
   "seo_title": "CRD-Drittstaatenzweigstellen: Relizenzierung 2027",
@@ -2958,6 +3069,342 @@
    "source": "HTML, 6115 Zeichen, gekürzt auf 6115",
    "dropped": 3,
    "tokens": 24681
+  }
+ },
+ "itsrep-2026-11-20-2026-7976-finrep-template-f-20-04": {
+  "h1": "FINREP F 20.04: Geografische Aufschlüsselung bei Zweigstellen (Q&A 2026_7976)",
+  "seo_title": "FINREP Q&A 2026_7976: Zweigstellen geografisch melden",
+  "meta_description": "EBA klärt: Bei F 20.04 gilt das Land des Hauptsitzes der juristischen Person, nicht der Zweigstellenstandort. Veröffentlicht 20.11.2026.",
+  "lead": "Die EBA hat mit Q&A 2026_7976 klargestellt, wie Expositionen gegenüber ausländischen Zweigstellen in FINREP-Tabelle F 20.04 geografisch zuzuordnen sind. Die Antwort ist seit 20.11.2026 final veröffentlicht.",
+  "aka": [
+   "Q&A 2026_7976",
+   "FINREP F 20.04 Zweigstelle",
+   "geografische Aufschlüsselung FINREP",
+   "Counterparty Residence Branch FINREP",
+   "EBA Q&A Zweigstelle"
+  ],
+  "summary": "Für FINREP-Tabelle F 20.04 ist das Land des Hauptsitzes der juristischen Person des Geschäftspartners maßgeblich, nicht der Standort einer Zweigstelle. Eine Zweigstelle gilt nicht als eigenständige juristische Einheit. Für F 20.01 bis F 20.03 gilt dagegen der Aktivitätsstandort, also das Land der Zweigstelle.",
+  "overview": [
+   "Die EBA hat auf eine Frage von Nordic Financial Consulting AB (Schweden) geantwortet, wie Geschäfte mit einer ausländischen Zweigstelle in FINREP-Tabelle F 20.04 geografisch aufzuschlüsseln sind. Maßgeblich ist das Land des Hauptsitzes der juristischen Person des unmittelbaren Geschäftspartners. Da eine Zweigstelle keine eigene juristische Einheit darstellt, entspricht ihr Sitz dem Sitz des Mutterinstituts.",
+   "Im Beispiel der EBA meldet Institut A seine Exposition gegenüber Zweigstelle B (Standort Schweden) von Institut C (Hauptsitz Dänemark) in F 20.04 als Exposition gegenüber Dänemark. Anders verhält es sich bei F 20.01 bis F 20.03: Dort gilt der Aktivitätsstandort, also der Zweigstellenstandort Schweden."
+  ],
+  "facts": [
+   {
+    "label": "Q&A-ID",
+    "value": "2026_7976"
+   },
+   {
+    "label": "Rechtsakt",
+    "value": "CRR (VO (EU) Nr. 575/2013)"
+   },
+   {
+    "label": "Durchführungsrechtsakt",
+    "value": "VO (EU) 2024/3117 (ITS Aufsichtsmeldewesen), Anhang V"
+   },
+   {
+    "label": "Betroffene Tabelle",
+    "value": "F 20.04 (und F 20.01 bis F 20.03 abweichend)"
+   },
+   {
+    "label": "Final veröffentlicht",
+    "value": "20.11.2026"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "FINREP-pflichtig nach CRR",
+    "detail": "Alle Institute, die FINREP-Meldungen nach CRR erstellen und grenzüberschreitende Geschäfte mit Zweigstellen anderer Institute tätigen, müssen die Zuordnung in F 20.04 prüfen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen",
+    "note": "Zuordnung F 20.04 prüfen",
+    "detail": "Fachfunktionen im Aufsichtsmeldewesen müssen die Länderkennung bei Expositionen gegenüber Zweigstellen in F 20.04 auf Basis des Hauptsitzes des Mutterinstituts vergeben.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance",
+    "note": "Handlungsbedarf prüfen",
+    "detail": "Compliance-Officer sollten prüfen, ob bestehende Meldeprozesse die Unterscheidung zwischen F 20.04 (Hauptsitz) und F 20.01 bis F 20.03 (Aktivitätsstandort) korrekt abbilden.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Annex V, Part 2.271",
+    "title": "F 20.04: Hauptsitz statt Zweigstellenland",
+    "text": "Bei F 20.04 ist das Land des Hauptsitzes der juristischen Person des unmittelbaren Geschäftspartners zu verwenden. Eine Zweigstelle gilt nicht als eigene juristische Einheit."
+   },
+   {
+    "ref": "Annex V, Part 2.270",
+    "title": "F 20.01 bis F 20.03: Aktivitätsstandort",
+    "text": "Für F 20.01 bis F 20.03 gilt weiterhin der Standort der Aktivitäten, also das Land der Zweigstelle, nicht das Land des Hauptsitzes."
+   }
+  ],
+  "todos": [
+   "Meldeprozess für F 20.04 prüfen: Wird bei Expositionen gegenüber Zweigstellen das Land des Hauptsitzes des Mutterinstituts verwendet?",
+   "Unterscheidung zwischen F 20.04 (Hauptsitz) und F 20.01 bis F 20.03 (Aktivitätsstandort) in Meldesystemen und Handbüchern sicherstellen.",
+   "Historische Meldungen auf Fehlzuordnungen prüfen, falls bisher der Zweigstellenstandort für F 20.04 verwendet wurde.",
+   "Fachliche Abstimmung zwischen Meldewesen und Datenmanagement zur korrekten Länderkennung bei grenzüberschreitenden Zweigstellengeschäften anstoßen."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Finale Veröffentlichung",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welches Land ist in F 20.04 zu melden, wenn ein Institut mit einer Zweigstelle eines ausländischen Instituts Geschäfte tätigt?",
+    "a": "Das Land des Hauptsitzes der juristischen Person, also des Mutterinstituts der Zweigstelle. Eine Zweigstelle ist keine eigenständige juristische Einheit. Beispiel: Zweigstelle in Schweden, Mutter in Dänemark → Dänemark melden."
+   },
+   {
+    "q": "Gilt dieselbe Regel auch für F 20.01 bis F 20.03?",
+    "a": "Nein. Für F 20.01 bis F 20.03 gilt der Aktivitätsstandort, also das Land, in dem die Zweigstelle ansässig ist. Die Behandlung ist dort ausdrücklich anders als bei F 20.04."
+   },
+   {
+    "q": "Für wen ist diese Q&A relevant?",
+    "a": "Für alle CRR-Institute, die FINREP-Meldungen erstellen und grenzüberschreitende Geschäfte mit Zweigstellen anderer Institute tätigen, insbesondere Fachfunktionen im Meldewesen."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die Q&A enthält keinen Hinweis auf Übergangszeiträume oder Rückwirkung. Handlungsbedarf bei historischen Meldungen ist nicht explizit adressiert.",
+   "Es ist unklar, ob die Klarstellung auch für F 20.05 bis F 20.07 gilt, die in der Antwort zusammen mit F 20.04 genannt werden."
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 3135 Zeichen, gekürzt auf 3135",
+   "dropped": 2,
+   "tokens": 8822
+  }
+ },
+ "itsrep-2026-11-20-2026-7978-supervisory-reporting-finrep": {
+  "h1": "FINREP F 46.00: FVOCI-Eigenkapitalinstrumente in Retained Earnings melden (Q&A 2026_7978)",
+  "seo_title": "FINREP Q&A 2026_7978: FVOCI und Retained Earnings",
+  "meta_description": "EBA klärt: Kumuliertes OCI bei Ausbuchung von FVOCI-Eigenkapitalinstrumenten gehört in F 46.00 unter Retained Earnings, nicht Other Reserves.",
+  "lead": "Die EBA hat klargestellt, dass die Übertragung des kumulierten sonstigen Ergebnisses (OCI) bei Ausbuchung von FVOCI-Eigenkapitalinstrumenten im FINREP-Formular F 46.00 unter Retained Earnings zu melden ist. Die Antwort gilt ab dem 20.11.2026.",
+  "aka": [
+   "Q&A 2026_7978",
+   "FINREP F 46.00 FVOCI",
+   "FVOCI Retained Earnings FINREP",
+   "EBA Q&A FVOCI OCI",
+   "Supervisory Reporting FVOCI"
+  ],
+  "summary": "Die EBA bestätigt in Q&A 2026_7978, dass die Übertragung des kumulierten OCI bei Ausbuchung von FVOCI-Eigenkapitalinstrumenten in F 46.00 unter Retained Earnings zu erfassen ist. Die Zelle Other Reserves bleibt geschlossen. Dies gilt unabhängig von einer abweichenden Darstellung im öffentlichen Abschluss.",
+  "overview": [
+   "Die EBA hat auf eine Anfrage der BBVA geantwortet, die fragte, ob die Übertragung des kumulierten OCI bei Ausbuchung von Eigenkapitalinstrumenten nach FVOCI-Designation in F 46.00 unter Retained Earnings oder Other Reserves zu melden ist. Die finale Antwort: Retained Earnings. Andere Reserves bleiben für diesen Zweck geschlossen.",
+   "Die Klarstellung stützt sich auf die Implementierungshilfe zu IFRS 7 (IG11B) und zielt auf eine harmonisierte Meldung ab. Institute können in ihren öffentlichen Abschlüssen abweichende Darstellungen wählen, sind aber für FINREP an diese Zuordnung gebunden. Rechtsgrundlage ist DVO (EU) 2024/3117, Annex V, Teil 2, Paragraph 317."
+  ],
+  "facts": [
+   {
+    "label": "Q&A-ID",
+    "value": "2026_7978"
+   },
+   {
+    "label": "Formular",
+    "value": "F 46.00 (FINREP)"
+   },
+   {
+    "label": "Veröffentlichung",
+    "value": "20.11.2026"
+   },
+   {
+    "label": "Einreicher",
+    "value": "BBVA (Kreditinstitut, Spanien)"
+   },
+   {
+    "label": "Rechtsgrundlage",
+    "value": "DVO (EU) 2024/3117, Annex V, Teil 2, Paragraph 317"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "FINREP-pflichtige Institute mit FVOCI-Positionen",
+    "detail": "Alle Institute, die Eigenkapitalinstrumente nach FVOCI-Designation halten und im FINREP-Meldewesen berichten, müssen die Zuordnung in F 46.00 prüfen und bei Bedarf anpassen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen",
+    "note": "Zuständig für FINREP-Formulare",
+    "detail": "Meldewesen-Teams müssen sicherstellen, dass die Zelle Retained Earnings in F 46.00 für OCI-Übertragungen bei FVOCI-Ausbuchungen korrekt befüllt wird.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Rechnungswesen",
+    "note": "IFRS-9-Buchungen prüfen",
+    "detail": "Abstimmung zwischen IFRS-9-Buchung und FINREP-Meldung erforderlich, da öffentlicher Abschluss abweichen darf.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Q&A 2026_7978",
+    "title": "Retained Earnings statt Other Reserves",
+    "text": "Die EBA stellt klar, dass die Übertragung des kumulierten OCI bei FVOCI-Ausbuchungen ausschließlich in der Zelle Retained Earnings in F 46.00 zu melden ist. Die Zelle Other Reserves bleibt für diesen Zweck geschlossen."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob FVOCI-Eigenkapitalinstrumente im Portfolio gehalten werden und ob bisherige F 46.00-Meldungen die OCI-Übertragung korrekt unter Retained Earnings ausgewiesen haben.",
+   "Meldeprozess anpassen, sodass künftige Ausbuchungen von FVOCI-Eigenkapitalinstrumenten automatisch in die Retained-Earnings-Zelle fließen.",
+   "Abstimmung zwischen Rechnungswesen und Meldewesen sicherstellen, da der öffentliche Abschluss von der FINREP-Darstellung abweichen kann."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Finale Veröffentlichung",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Warum darf der öffentliche Abschluss von der FINREP-Meldung abweichen?",
+    "a": "FINREP verfolgt eine harmonisierte Meldung für Aufsichtszwecke. Die EBA verweist auf IFRS 7 IG11B als illustratives Beispiel. Institute sind frei, intern andere Eigenkapitalpositionen zu verwenden, müssen aber für F 46.00 Retained Earnings nehmen."
+   },
+   {
+    "q": "Gilt diese Klarstellung rückwirkend?",
+    "a": "Die EBA weist darauf hin, dass Q&As die zum Veröffentlichungszeitpunkt geltenden Vorschriften betreffen und nach Gesetzesänderungen nicht automatisch aktualisiert werden. Eine rückwirkende Korrektur früherer Meldungen ist der Quelle nicht zu entnehmen."
+   },
+   {
+    "q": "Welche Formulare sind betroffen?",
+    "a": "Ausschließlich F 46.00 (Bewegungen im Eigenkapital). Andere FINREP-Formulare werden in der Q&A nicht genannt."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Die Quelle enthält keine Aussage dazu, ob und wie frühere fehlerhafte Meldungen zu korrigieren sind.",
+   "Ob andere Eigenkapitalinstrumente (z. B. FVTPL) analoge Fragen aufwerfen, ist der Q&A nicht zu entnehmen."
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 2865 Zeichen, gekürzt auf 2865",
+   "dropped": 2,
+   "tokens": 8491
+  }
+ },
+ "itsrep-2026-11-20-2026-8014-finrep-f22-01-row-0080-column-0010-f22-02-row-0060-column-0010": {
+  "h1": "FINREP: Meldepflicht für Verwahr- und Depotvermögen in F22 (Q&A 2026_8014)",
+  "seo_title": "EBA Q&A 2026_8014: FINREP F22 Custody Assets",
+  "meta_description": "EBA klärt: Alle Verwahr- und Depotdienstleistungen gehören in FINREP F22.01 und F22.02, unabhängig von der Art der zugrunde liegenden Vermögenswerte.",
+  "lead": "Die EBA hat am 20.11.2026 die Q&A 2026_8014 final veröffentlicht und klärt, welche Custody- und Depositary-Positionen Kreditinstitute in den FINREP-Templates F22.01 und F22.02 zu melden haben.",
+  "aka": [
+   "Q&A 2026_8014",
+   "FINREP F22 Custody",
+   "Assets under Custody FINREP",
+   "Assets under Depositary FINREP",
+   "FINREP F22.01 F22.02"
+  ],
+  "summary": "Kreditinstitute müssen alle Verwahr- und Depotdienstleistungen in FINREP F22 melden, unabhängig von der Art der zugrunde liegenden Vermögenswerte. Das gilt sowohl für selbst erbrachte als auch an Unterverwahrer delegierte Leistungen. Gebühren- und Provisionserträge aus nicht zum Fair Value bewerteten Finanzinstrumenten sind ebenfalls einzubeziehen, sofern sie nicht in den Effektivzins einfließen.",
+  "overview": [
+   "Die EBA klärt mit Q&A 2026_8014, dass Custody- und Depositary-Dienstleistungen vollständig in die FINREP-Templates F22.01 (Erträge und Aufwendungen) und F22.02 (Vermögensbestände) einzubeziehen sind. Maßgeblich ist nicht die Art des verwahrten Vermögenswerts, sondern ob eine treuhänderische Dienstleistung vorliegt.",
+   "Für Gebühren- und Provisionen gilt: Erträge und Aufwendungen aus Finanzinstrumenten, die nicht zum Fair Value through Profit or Loss bewertet werden, sind in F22 zu erfassen, es sei denn, sie fließen in die Effektivzinsberechnung ein. Auch Leistungen, die an Unterverwahrer weitergegeben wurden, bleiben im Meldescope des berichtenden Instituts."
+  ],
+  "facts": [
+   {
+    "label": "Q&A-Nummer",
+    "value": "2026_8014"
+   },
+   {
+    "label": "Final veröffentlicht",
+    "value": "20.11.2026"
+   },
+   {
+    "label": "Betroffene Templates",
+    "value": "F22.01 (r0080c0010), F22.02 (r0060c0010)"
+   },
+   {
+    "label": "Rechtsgrundlage",
+    "value": "CRR Art. 430 Abs. 3; DVO (EU) 2024/3117 Art. 22, Anhang V"
+   },
+   {
+    "label": "Verfasser",
+    "value": "EBA"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "Custody- oder Depositary-Dienstleister",
+    "detail": "Institute, die Verwahr- oder Depotvermögensverwaltung selbst erbringen oder an Unterverwahrer delegieren, müssen ihre FINREP-F22-Meldung auf Vollständigkeit prüfen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen",
+    "note": "FINREP-Verantwortliche",
+    "detail": "Müssen sicherstellen, dass alle relevanten Positionen korrekt in F22.01 und F22.02 erfasst werden, einschließlich delegierter Custody-Leistungen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Fondsverwahrer",
+    "note": "AIFMD- und UCITS-Verwahrstellen",
+    "detail": "Depositary-Dienstleistungen für kollektive Kapitalanlagen fallen ausdrücklich unter den F22-Meldescope, unabhängig vom Typ der verwahrten Vermögenswerte.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Q&A 2026_8014",
+    "title": "Depositary-Assets vollständig in F22",
+    "text": "Alle Depositary-Dienstleistungen (AIFMD, UCITS) sind in F22 zu melden, unabhängig vom Typ der verwahrten Assets (Wertpapiere, Bargeld, Darlehen, Immobilien)."
+   },
+   {
+    "ref": "Q&A 2026_8014",
+    "title": "Unterverwahrer im Scope",
+    "text": "Auch an Unterverwahrer delegierte Custody-Leistungen bleiben im Meldescope des berichtenden Instituts und sind als 'entrusted to other entities' auszuweisen."
+   },
+   {
+    "ref": "Q&A 2026_8014",
+    "title": "Gebühren nicht-FV-Instrumente",
+    "text": "Gebühren- und Provisionserträge aus nicht zum Fair Value bewerteten Finanzinstrumenten gehören in F22, sofern sie nicht in den Effektivzins einfließen."
+   }
+  ],
+  "todos": [
+   "FINREP-F22-Meldung prüfen: Sind alle Depositary-Positionen (AIFMD, UCITS) vollständig erfasst, unabhängig vom Typ der verwahrten Vermögenswerte?",
+   "Unterverwahrer-Positionen identifizieren und in F22.02 als 'entrusted to other entities' korrekt ausweisen.",
+   "Gebühren- und Provisionserträge aus nicht-FV-Instrumenten auf Vollständigkeit in F22.01 prüfen und Abgrenzung zur Effektivzinsberechnung dokumentieren.",
+   "Bei Bedarf ergänzend Q&A 2017_3334 für weitere Hinweise zu den in F22 meldepflichtigen Vermögenswerten heranziehen."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Finale Veröffentlichung",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Müssen auch Assets under Depositary für AIFMD- und UCITS-Fonds in F22 gemeldet werden?",
+    "a": "Ja. Die EBA stellt klar, dass Depositary-Dienstleistungen treuhänderische Tätigkeiten im Sinne von IFRS 7.20(c) darstellen und daher vollständig in F22 zu erfassen sind, unabhängig vom Typ der verwahrten Vermögenswerte."
+   },
+   {
+    "q": "Bleiben an Unterverwahrer delegierte Leistungen im Meldescope?",
+    "a": "Ja. Custody-Leistungen, die an Unterverwahrer weitergegeben werden, verbleiben im Meldescope des berichtenden Instituts und sind in F22.02 gesondert als 'entrusted to other entities' auszuweisen."
+   },
+   {
+    "q": "Welche Gebühren und Provisionen gehören in F22?",
+    "a": "Gebühren- und Provisionsaufwendungen und -erträge aus Finanzinstrumenten, die nicht zum Fair Value through Profit or Loss bewertet werden, sind in F22 zu melden, es sei denn, sie werden bei der Berechnung des Effektivzinses berücksichtigt."
+   },
+   {
+    "q": "Gilt die Q&A auch für bestehende Meldezeiträume?",
+    "a": "Die Q&A bezieht sich auf die zum Veröffentlichungsdatum (20.11.2026) geltenden Vorschriften. Eine rückwirkende systematische Überprüfung durch die EBA ist laut Disclaimer nicht vorgesehen."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Kein konkretes Anwendungsdatum für Meldeanpassungen genannt; unklar, ab welchem Referenzzeitraum die Klarstellung erstmals anzuwenden ist.",
+   "Q&A 2017_3334 wird als ergänzende Quelle genannt, aber nicht im Detail wiedergegeben; Inhalt muss separat geprüft werden."
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 4693 Zeichen, gekürzt auf 4693",
+   "dropped": 2,
+   "tokens": 9322
   }
  },
  "luaifm-2026-11-09-faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated": {
@@ -3937,6 +4384,134 @@
    "source": "HTML, 2776 Zeichen, gekürzt auf 2776",
    "dropped": 0,
    "tokens": 8092
+  }
+ },
+ "sfdr-2026-11-20-commission-welcomes-political-agreement-to-simplify-transparency-rules-for-susta": {
+  "h1": "SFDR-Reform: Politische Einigung auf neues Drei-Kategorien-System (SFDR-Revision)",
+  "seo_title": "SFDR-Reform 2026: Drei-Kategorien-System",
+  "meta_description": "Parlament und Rat einigen sich auf SFDR-Revision: drei Produktkategorien (sustainable, transition, ESG basics), gestraffte Offenlegungspflichten, Anwendung zwei Jahre nach Inkrafttreten.",
+  "lead": "Europäisches Parlament und Rat haben sich am 19.11.2026 politisch auf die Überarbeitung der SFDR geeinigt. Das neue Rahmenwerk führt drei Produktkategorien ein und strafft die Offenlegungspflichten für Finanzmarktteilnehmer.",
+  "aka": [
+   "SFDR-Reform",
+   "Sustainable Finance Disclosure Regulation Revision",
+   "Offenlegungsverordnung Überarbeitung",
+   "SFDR Drei-Kategorien",
+   "ESG-Offenlegung Reform"
+  ],
+  "summary": "Die politische Einigung zur SFDR-Revision vom 19.11.2026 ersetzt das bisherige Artikel-8/9-System durch drei Produktkategorien: sustainable, transition und ESG basics. Offenlegungspflichten auf Unternehmens- und Produktebene werden gestrafft. Nach formeller Annahme und Veröffentlichung im Amtsblatt gilt die Verordnung zwei Jahre nach Inkrafttreten.",
+  "overview": [
+   "Parlament und Rat einigten sich am 19.11.2026 auf die Revision der SFDR. Kernstück ist ein Drei-Kategorien-System für Finanzprodukte mit Nachhaltigkeitsaussagen: sustainable, transition und ESG basics. Die Kategorien sollen Anlegern eine klarere Einordnung ermöglichen und Greenwashing reduzieren. Gleichzeitig werden die Offenlegungspflichten auf Unternehmensebene erheblich gestrafft und die Anforderungen auf Produktebene vereinfacht.",
+   "Der Text wird nun technisch finalisiert und muss formal von Parlament und Rat angenommen werden. Nach Veröffentlichung im Amtsblatt tritt die Verordnung 20 Tage später in Kraft und gilt zwei Jahre danach. Die Kommission bereitet in der Zwischenzeit gezielte Durchführungsmaßnahmen vor. Der genaue Zeitpunkt der formellen Annahme steht noch nicht fest."
+  ],
+  "facts": [
+   {
+    "label": "Einigungsrahmen",
+    "value": "Drei Kategorien: sustainable, transition, ESG basics"
+   },
+   {
+    "label": "Inkrafttreten",
+    "value": "20 Tage nach Veröffentlichung im Amtsblatt"
+   },
+   {
+    "label": "Anwendungsbeginn",
+    "value": "Zwei Jahre nach Inkrafttreten"
+   },
+   {
+    "label": "Nächster Schritt",
+    "value": "Technische Finalisierung und formelle Annahme"
+   },
+   {
+    "label": "Quelle",
+    "value": "Europäische Kommission, DG FISMA, 20.11.2026"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Asset Manager",
+    "note": "Produktkategorisierung und Offenlegung prüfen",
+    "detail": "Bestehende Fonds müssen künftig einer der drei Kategorien zugeordnet werden. Offenlegungspflichten auf Produkt- und Unternehmensebene ändern sich erheblich. Umsetzungsfrist beginnt mit Inkrafttreten der Verordnung.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Banken/KWG-Institute",
+    "note": "Vertrieb nachhaltiger Produkte betroffen",
+    "detail": "Finanzmarktteilnehmer im Sinne der SFDR, die Produkte mit Nachhaltigkeitsaussagen vertreiben, müssen Kategorisierung und Offenlegung anpassen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Versicherungen",
+    "note": "IDD-gebundene SFDR-Pflichten",
+    "detail": "Versicherungsbasierte Anlageprodukte (IBIPs) mit Nachhaltigkeitsbezug fallen unter die neuen Kategorien und Offenlegungsregeln.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Compliance/Legal",
+    "note": "Übergangsstrategie vorbereiten",
+    "detail": "Frühzeitige Gap-Analyse der bestehenden Produktpalette gegenüber den drei neuen Kategorien empfohlen, auch wenn Anwendungsbeginn noch ca. zwei Jahre entfernt ist.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "SFDR-Revision",
+    "title": "Neues Drei-Kategorien-System",
+    "text": "Das bisherige Artikel-8/9-System wird durch drei klar definierte Produktkategorien ersetzt: sustainable, transition und ESG basics. Produkte mit Nachhaltigkeitsaussagen müssen einer dieser Kategorien zugeordnet werden."
+   },
+   {
+    "ref": "SFDR-Revision",
+    "title": "Gestraffte Offenlegungspflichten",
+    "text": "Offenlegungsanforderungen auf Unternehmensebene werden erheblich reduziert. Auch auf Produktebene sinken die Anforderungen, bei gleichzeitig klareren Kriterien für kategorisierte Produkte."
+   },
+   {
+    "ref": "SFDR-Revision",
+    "title": "Greenwashing-Schutz",
+    "text": "Klarere Kategorie-Kriterien und fokussiertere Informationspflichten sollen Greenwashing wirksamer entgegenwirken als das bisherige Framework."
+   }
+  ],
+  "todos": [
+   "Bestehende Produktpalette inventarisieren und vorläufig den drei neuen Kategorien zuordnen",
+   "Gap-Analyse der aktuellen Offenlegungsdokumente gegenüber künftigen Anforderungen starten",
+   "Durchführungsmaßnahmen der Kommission beobachten und in Umsetzungsplanung einbeziehen",
+   "Formelle Annahme und Veröffentlichungsdatum im Amtsblatt verfolgen, um Anwendungsfrist zu berechnen",
+   "Governance-Prozess für Produktkategorisierungsentscheidungen vorbereiten"
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Kommission begrüßt Einigung",
+    "kind": "schritt"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was ändert sich für bestehende Artikel-8- und Artikel-9-Fonds?",
+    "a": "Die Quelle nennt das Artikel-8/9-System nicht explizit. Das neue Drei-Kategorien-System (sustainable, transition, ESG basics) ersetzt den bisherigen Rahmen. Wie die Überleitung konkret ausgestaltet wird, hängt von Durchführungsmaßnahmen ab, die die Kommission noch vorbereitet."
+   },
+   {
+    "q": "Wann gilt die neue SFDR konkret?",
+    "a": "Die Verordnung tritt 20 Tage nach Veröffentlichung im Amtsblatt in Kraft und gilt zwei Jahre danach. Der genaue Zeitplan hängt von der formellen Annahme durch Parlament und Rat ab, die noch aussteht."
+   },
+   {
+    "q": "Welche Produkte fallen unter welche Kategorie?",
+    "a": "Die Quelle nennt die drei Kategorien sustainable, transition und ESG basics, ohne die genauen Abgrenzungskriterien zu beschreiben. Details ergeben sich aus dem technisch finalisierten Rechtstext und den Durchführungsmaßnahmen der Kommission."
+   },
+   {
+    "q": "Was müssen Compliance-Officer jetzt tun?",
+    "a": "Unmittelbar bestehen keine Handlungspflichten, da Anwendungsbeginn noch ca. zwei Jahre nach Inkrafttreten liegt. Empfehlenswert ist eine frühzeitige Produktinventur und Gap-Analyse, um den Umsetzungsaufwand rechtzeitig einzuplanen."
+   }
+  ],
+  "impact": "hoch",
+  "open_points": [
+   "Genaue Abgrenzungskriterien für die drei Kategorien sind im Quelltext nicht beschrieben und erst mit dem finalisierten Rechtstext bekannt",
+   "Übergangsregelungen für bestehende Artikel-8/9-Produkte werden in der Quelle nicht erwähnt",
+   "Zeitplan für formelle Annahme und Veröffentlichung im Amtsblatt ist noch nicht bekannt"
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 5782 Zeichen, gekürzt auf 5782",
+   "dropped": 5,
+   "tokens": 9252
   }
  },
  "solvency-2026-11-17-aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review": {
