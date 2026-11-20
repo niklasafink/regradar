@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T16:09:51Z",
+  "generated_at": "2026-11-20T17:08:35Z",
   "updates": {
     "bcbs": [
       {
@@ -1506,6 +1506,125 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2017/kon_1817_aenderung_verordnung_einreichung_risikotragfaehigkeitsinformationen_ba.html",
         "imp": "medium",
         "refnum": "Konsultation 18/2017"
+      }
+    ],
+    "sfdr": [
+      {
+        "d": "20.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Politische Einigung zur Vereinfachung der SFDR-Transparenzregeln",
+          "en": "Political Agreement to Simplify SFDR Transparency Rules"
+        },
+        "sl": "commission-welcomes-political-agreement-to-simplify-transparency-rules-for-susta",
+        "s": {
+          "de": "Die Europäische Kommission begrüßt die politische Einigung von Europäischem Parlament und Rat zur Überarbeitung der Sustainable Finance Disclosure Regulation (SFDR). Ziel ist ein vereinfachter, klarerer und anlegerfreundlicherer Rahmen für nachhaltige Finanzprodukte in der EU.\n\nDie überarbeitete SFDR führt ein Drei-Kategorien-System für Finanzprodukte mit Nachhaltigkeitsaussagen ein: „sustainable“, „transition“ oder „ESG basics“. Dies soll Anlegern die Bewertung erleichtern und fundiertere Anlageentscheidungen ermöglichen. Zudem werden die Offenlegungspflichten für Finanzmarktteilnehmer auf Unternehmensebene erheblich gestrafft und für Finanzprodukte reduziert, um Greenwashing entgegenzuwirken.\n\nDer Vorschlag wird nun technisch finalisiert und muss noch formell von Parlament und Rat angenommen werden. Nach Veröffentlichung im Amtsblatt tritt die Verordnung 20 Tage später in Kraft und gilt zwei Jahre danach. Die Kommission wird in der Zwischenzeit gezielte Durchführungsmaßnahmen vorbereiten.",
+          "en": "The European Commission welcomes the political agreement reached by the European Parliament and the Council on the revision of the Sustainable Finance Disclosure Regulation (SFDR). The aim is to create a simpler, clearer, and more investor-friendly sustainable finance framework in the EU.\n\nThe revised SFDR introduces a three-category system for financial products making sustainability claims: 'sustainable', 'transition', or 'ESG basics'. This aims to make it easier for investors to assess products and support more informed investment decisions. Furthermore, disclosure requirements for financial market participants at entity level are significantly streamlined, and those for financial products are reduced, to combat greenwashing.\n\nThe proposal will now undergo technical finalisation and formal approval by the European Parliament and the Council. After publication in the Official Journal, the Regulation will enter into force 20 days later and apply two years thereafter. In the interim, the Commission will prepare targeted implementing measures."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-welcomes-political-agreement-simplify-transparency-rules-sustainable-financial-products-2026-11-20_en",
+        "imp": "medium"
+      },
+      {
+        "d": "24.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu den Leitlinien zur Durchsetzung von Nachhaltigkeitsinformationen (ESMA32-992851010-1155)",
+          "en": "Compliance Table on Guidelines on Enforcement of Sustainability Information (ESMA32-992851010-1155)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-enforcement-of-sustainability-information",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien zur Durchsetzung von Nachhaltigkeitsinformationen (GLESI) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden (NCAs) der EU-Mitgliedstaaten und der EWR-EFTA-Staaten die GLESI einhalten oder beabsichtigen, diese einzuhalten.\n\nDie Tabelle zeigt, dass viele NCAs die GLESI noch nicht vollständig umsetzen, oft aufgrund fehlender nationaler Gesetzgebung zur Corporate Sustainability Reporting Directive (CSRD) oder spezifischer Ressourcen- und Zuständigkeitsprobleme. Einige Behörden, wie die deutsche BaFin, beabsichtigen die Einhaltung, sobald die CSRD in nationales Recht umgesetzt ist. Andere, wie die österreichische FMA, geben an, bestimmte Leitlinien aufgrund nationaler Gesetze oder Ressourcenmangel nicht einhalten zu können.\n\nDie Anwendung der GLESI soll in den ersten Jahren verhältnismäßig und realistisch erfolgen, um den Lernprozess bei der Umsetzung der European Sustainability Reporting Standards (ESRS) zu berücksichtigen. Viele NCAs planen die vollständige Einhaltung bis zur nationalen Umsetzung der CSRD oder bis zu einem bestimmten Datum im Jahr 2026 oder 2027.",
+          "en": "ESMA has published a compliance table regarding its Guidelines on Enforcement of Sustainability Information (GLESI). This table provides an overview of the extent to which national competent authorities (NCAs) in EU Member States and EEA EFTA States comply with or intend to comply with the GLESI.\n\nThe table indicates that many NCAs have not yet fully implemented the GLESI, often due to a lack of national legislation transposing the Corporate Sustainability Reporting Directive (CSRD) or specific resource and responsibility issues. Some authorities, such as Germany's BaFin, intend to comply once the CSRD has been transposed into national law. Others, like Austria's FMA, state that they cannot comply with certain guidelines due to national laws or lack of resources.\n\nThe application of the GLESI in the initial years is intended to be proportionate and realistic, taking into account the learning curve in implementing the European Sustainability Reporting Standards (ESRS). Many NCAs plan full compliance by the time the CSRD is transposed nationally or by a specific date in 2026 or 2027."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-enforcement-sustainability-information",
+        "imp": "medium",
+        "refnum": "ESMA32-992851010-1155"
+      },
+      {
+        "d": "15.12.2025",
+        "t": {
+          "de": "Gesetzentwurf",
+          "en": "Bill"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Überarbeitung der EU-Regeln zur Offenlegung im Bereich nachhaltiger Finanzen (Ares(2025)3526490)",
+          "en": "Revision of EU rules on sustainable finance disclosure (Ares(2025)3526490)"
+        },
+        "sl": "revision-of-eu-rules-on-sustainable-finance-disclosure",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Überarbeitung der EU-Regeln zur Offenlegung im Bereich nachhaltiger Finanzen vorgeschlagen. Dieser Vorschlag zielt darauf ab, die bestehenden Vorschriften zu präzisieren und zu verbessern, um die Transparenz und Vergleichbarkeit von Informationen über nachhaltige Investitionen zu erhöhen.\n\nDiese Überarbeitung ist für Finanzmarktteilnehmer und Finanzberater relevant, die Produkte als nachhaltig bewerben oder entsprechende Beratungsleistungen anbieten. Sie müssen sich auf potenzielle Änderungen in den Offenlegungspflichten einstellen, die sich auf die Art und Weise auswirken könnten, wie sie Nachhaltigkeitsinformationen bereitstellen und verwalten.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er verschiedene Stufen des Gesetzgebungsverfahrens durchlaufen wird, bevor er final verabschiedet wird.",
+          "en": "The European Commission has proposed a revision of the EU rules on sustainable finance disclosure. This proposal aims to clarify and improve existing regulations to enhance the transparency and comparability of information on sustainable investments.\n\nThis revision is relevant for financial market participants and financial advisors who market products as sustainable or offer related advisory services. They must prepare for potential changes in disclosure requirements, which could impact how they provide and manage sustainability information.\n\nThe proposal is currently in the adoption workflow, meaning it will go through various stages of the legislative process before being finally adopted."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14666",
+        "imp": "medium",
+        "refnum": "Ares(2025)3526490"
+      },
+      {
+        "d": "25.07.2024",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin passt Verwaltungspraxis an ESMA-Leitlinien zu nachhaltigen Fondsnamen an",
+          "en": "BaFin aligns administrative practice with ESMA Guidelines on sustainable fund names"
+        },
+        "sl": "esma-leitlinien-zu-fondsnamen",
+        "s": {
+          "de": "Die BaFin hat ihre Verwaltungspraxis zu nachhaltigen Investmentvermögen an die neuen ESMA-Leitlinien zu Fondsnamen angepasst. Diese Leitlinien legen erstmals europaweit einheitliche Bedingungen fest, unter denen Fonds nachhaltigkeitsbezogene Begriffe wie „Umwelt“, „Soziales“ oder „Governance“ im Namen führen dürfen. Damit soll sichergestellt werden, dass Fondsnamen die Anlagestrategie und -ziele korrekt widerspiegeln und Anleger nicht irreführen.\n\nDie ESMA-Leitlinien unterscheiden drei Begriffsgruppen (Transition-, sozial- oder Governance-verwandte Begriffe; Umwelt- oder Impact-verwandte Begriffe; Nachhaltigkeit-verwandte Begriffe) und definieren für jede Gruppe spezifische Schwellenwerte und Mindestausschlüsse. Fonds müssen demnach 80 Prozent ihres Vermögens gemäß den nachhaltigen Elementen der Anlagestrategie investieren. Zusätzlich gelten je nach Begriff im Fondsnamen unterschiedliche Mindestausschlüsse, die sich an der EU-Benchmark-Verordnung (CTB oder PAB) orientieren. So unterliegen „Umwelt“-Fonds strengeren Ausschlüssen als „Transition“-Fonds, um letzteren Investitionen in Unternehmen mit Übergangspfaden zu ermöglichen.\n\nDie neuen Vorgaben sind für Kapitalverwaltungsgesellschaften (KVGen) relevant, die nachhaltigkeitsbezogene Fonds anbieten. Sie müssen ihre Anlagestrategien und Offenlegungen entsprechend anpassen und sicherstellen, dass die Fondsnamen den definierten Kriterien und Ausschlüssen genügen. Eine Ausnahme in den ESMA-Q&A erlaubt Investitionen in „grüne“ Anleihen von ansonsten ausgeschlossenen Unternehmen.",
+          "en": "BaFin has aligned its administrative practice on sustainable investment funds with the new ESMA Guidelines on Funds’ Names. These guidelines establish, for the first time, uniform European-wide conditions under which funds may use sustainability-related terms such as 'Environment,' 'Social,' or 'Governance' in their names. This aims to ensure that fund names accurately reflect investment strategies and objectives and do not mislead investors.\n\nThe ESMA guidelines distinguish three categories of terms (transition-, social-, or governance-related terms; environmental- or impact-related terms; sustainability-related terms) and define specific thresholds and minimum exclusions for each group. Funds must invest 80 percent of their assets in accordance with the sustainable elements of their investment strategy. Additionally, depending on the term used in the fund name, different minimum exclusions apply, based on the EU Benchmark Regulation (CTB or PAB). For instance, 'Environment' funds are subject to stricter exclusions than 'Transition' funds, allowing the latter to invest in companies with transition pathways.\n\nThese new requirements are relevant for UCITS management companies and AIFMs offering sustainability-related funds. They must adapt their investment strategies and disclosures accordingly and ensure that fund names comply with the defined criteria and exclusions. An exception in the ESMA Q&A allows investments in 'green' bonds issued by otherwise excluded companies."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2024/aufsichtsmitteilung_24072024_ESMA_Leitlinien_Fondsnamen.html",
+        "imp": "high"
+      },
+      {
+        "d": "25.07.2023",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zum Zuordnungsansatz für Versicherer und Pensionsfonds unter der SFDR (02/2023 (VA))",
+          "en": "BaFin Guidance Notice on the Allocation Approach for Insurers and Pension Funds under SFDR (02/2023 (VA))"
+        },
+        "sl": "merkblatt-02-2023-va-zur-anwendung-des-zuordnungsansatzes-durch-lebensversicheru",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Anwendung des Zuordnungsansatzes für Lebensversicherungsunternehmen, Pensionskassen und Pensionsfonds im Rahmen der EU-Offenlegungsverordnung (SFDR) veröffentlicht. Es ermöglicht die freiwillige Anwendung eines spezifischen Ansatzes für die produktbezogenen Informationspflichten gemäß Art. 8 bis 11 SFDR.\n\nDas Merkblatt richtet sich an inländische Lebensversicherungsunternehmen, Pensionskassen und Pensionsfonds, die als Finanzmarktteilnehmer Finanzprodukte gemäß Art. 8 oder 9 SFDR anbieten. Es berücksichtigt die Besonderheiten der deutschen „klassischen Lebensversicherung“, bei der mangels einer Eins-zu-Eins-Zuweisung von Vermögenswerten zu einzelnen Produkten die Nachhaltigkeitsangaben oft auf das gesamte nicht-fondsgebundene Vermögen bezogen werden. Der neue Ansatz soll eine transparente Zuordnung von Vermögenswerten zu konkreten Finanzprodukten ermöglichen.\n\nDer Zuordnungsansatz ist ausschließlich für neue Finanzprodukte in Form einer klassischen Lebensversicherung oder den klassischen Teil eines neuen Hybridprodukts anwendbar. Für Pensionsfonds kann die Bildung eines gesonderten Sicherungsvermögens den Ansatz entbehrlich machen, ist aber bei gemeinsamer Kapitalanlage ebenfalls möglich. Voraussetzung ist die vorvertragliche Information des Versicherungsnehmers über die Anwendung des Ansatzes.",
+          "en": "BaFin has published a guidance notice on the application of the allocation approach for life insurance undertakings, pension funds, and Pensionskassen within the framework of the EU Disclosure Regulation (SFDR). It allows for the voluntary application of a specific approach for product-related information obligations according to Articles 8 to 11 SFDR.\n\nThe guidance notice is addressed to domestic life insurance undertakings, pension funds, and Pensionskassen that offer financial products under Article 8 or 9 SFDR as financial market participants. It takes into account the specifics of German “classic life insurance,” where, due to the lack of a one-to-one allocation of assets to individual products, sustainability disclosures often refer to the entire non-unit-linked assets. The new approach aims to enable a transparent allocation of assets to specific financial products.\n\nThe allocation approach is exclusively applicable to new financial products in the form of classic life insurance or the classic part of a new hybrid product. For pension funds, the formation of a separate ring-fenced fund may make the approach unnecessary, but it is also possible for joint asset investments. A prerequisite is the pre-contractual information of the policyholder about the application of the approach."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_02_2023_anwendung_zuordnungsansatz_va.html",
+        "imp": "medium"
+      },
+      {
+        "d": "26.04.2023",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Konsultation: Zuordnungsansatz für Lebensversicherer und Pensionskassen nach SFDR (Konsultation 08/2023)",
+          "en": "BaFin Consultation: Allocation Approach for Life Insurers and Pension Funds under SFDR (Consultation 08/2023)"
+        },
+        "sl": "konsultation-08-2023-merkblatt-02-2023-va-zur-anwendung-des-zuordnungsansatzes-d",
+        "s": {
+          "de": "Die BaFin konsultiert ein Merkblatt zur Anwendung des Zuordnungsansatzes durch Lebensversicherungsunternehmen im engeren Sinne sowie Pensionskassen und Pensionsfonds im Rahmen der EU-Offenlegungsverordnung (SFDR).\n\nDas Merkblatt beschreibt, wie konkrete Kapitalanlagen bestimmten Finanzprodukten für Offenlegungszwecke zugeordnet werden können. Es ist anwendbar für neue Finanzprodukte, insbesondere der klassischen Lebensversicherung, die mit ökologischen und/oder sozialen Merkmalen beworben werden und für die zusätzliche Angaben nach Artikel 8 oder 9 SFDR offenzulegen sind. Das Volumen der zuzuordnenden Vermögenswerte bestimmt sich nach dem aus Sparbeiträgen angesammelten Kapital der Versicherungsnehmer des jeweiligen Produkts oder der Produktgruppe.\n\nDer Zuordnungsansatz ist optional. Wird er nicht angewendet, beziehen sich die offenzulegenden Angaben primär auf die gesamten Vermögenswerte des Sicherungsvermögens. Stellungnahmen zum Entwurf können bis zum 9. Juni 2023 eingereicht werden.",
+          "en": "BaFin is consulting on a guidance notice regarding the application of the allocation approach by life insurance undertakings in the narrower sense, as well as pension funds and Pensionskassen, within the framework of the EU Disclosure Regulation (SFDR).\n\nThe guidance notice describes how specific capital investments can be allocated to certain financial products for disclosure purposes. It applies to new financial products, particularly classic life insurance products, that are promoted with environmental and/or social characteristics and for which additional disclosures under Article 8 or 9 SFDR are required. The volume of assets to be allocated is determined by the capital accumulated from policyholders' savings contributions for the respective product or product group.\n\nThe allocation approach is optional. If it is not applied, the disclosures under the SFDR primarily refer to the entire assets of the segregated fund (Sicherungsvermögen). Comments on the draft can be submitted until June 9, 2023."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2023/kon_08_23_Merkblatt_zur_Anwendung_des_Zuordnungsansatzes.html",
+        "imp": "medium",
+        "refnum": "Konsultation 08/2023"
       }
     ],
     "crr3": [
@@ -6209,106 +6328,6 @@
             "d": "11.08.2025"
           }
         ]
-      }
-    ],
-    "sfdr": [
-      {
-        "d": "24.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu den Leitlinien zur Durchsetzung von Nachhaltigkeitsinformationen (ESMA32-992851010-1155)",
-          "en": "Compliance Table on Guidelines on Enforcement of Sustainability Information (ESMA32-992851010-1155)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-enforcement-of-sustainability-information",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien zur Durchsetzung von Nachhaltigkeitsinformationen (GLESI) veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden (NCAs) der EU-Mitgliedstaaten und der EWR-EFTA-Staaten die GLESI einhalten oder beabsichtigen, diese einzuhalten.\n\nDie Tabelle zeigt, dass viele NCAs die GLESI noch nicht vollständig umsetzen, oft aufgrund fehlender nationaler Gesetzgebung zur Corporate Sustainability Reporting Directive (CSRD) oder spezifischer Ressourcen- und Zuständigkeitsprobleme. Einige Behörden, wie die deutsche BaFin, beabsichtigen die Einhaltung, sobald die CSRD in nationales Recht umgesetzt ist. Andere, wie die österreichische FMA, geben an, bestimmte Leitlinien aufgrund nationaler Gesetze oder Ressourcenmangel nicht einhalten zu können.\n\nDie Anwendung der GLESI soll in den ersten Jahren verhältnismäßig und realistisch erfolgen, um den Lernprozess bei der Umsetzung der European Sustainability Reporting Standards (ESRS) zu berücksichtigen. Viele NCAs planen die vollständige Einhaltung bis zur nationalen Umsetzung der CSRD oder bis zu einem bestimmten Datum im Jahr 2026 oder 2027.",
-          "en": "ESMA has published a compliance table regarding its Guidelines on Enforcement of Sustainability Information (GLESI). This table provides an overview of the extent to which national competent authorities (NCAs) in EU Member States and EEA EFTA States comply with or intend to comply with the GLESI.\n\nThe table indicates that many NCAs have not yet fully implemented the GLESI, often due to a lack of national legislation transposing the Corporate Sustainability Reporting Directive (CSRD) or specific resource and responsibility issues. Some authorities, such as Germany's BaFin, intend to comply once the CSRD has been transposed into national law. Others, like Austria's FMA, state that they cannot comply with certain guidelines due to national laws or lack of resources.\n\nThe application of the GLESI in the initial years is intended to be proportionate and realistic, taking into account the learning curve in implementing the European Sustainability Reporting Standards (ESRS). Many NCAs plan full compliance by the time the CSRD is transposed nationally or by a specific date in 2026 or 2027."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-enforcement-sustainability-information",
-        "imp": "medium",
-        "refnum": "ESMA32-992851010-1155"
-      },
-      {
-        "d": "15.12.2025",
-        "t": {
-          "de": "Gesetzentwurf",
-          "en": "Bill"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Überarbeitung der EU-Regeln zur Offenlegung im Bereich nachhaltiger Finanzen (Ares(2025)3526490)",
-          "en": "Revision of EU rules on sustainable finance disclosure (Ares(2025)3526490)"
-        },
-        "sl": "revision-of-eu-rules-on-sustainable-finance-disclosure",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Überarbeitung der EU-Regeln zur Offenlegung im Bereich nachhaltiger Finanzen vorgeschlagen. Dieser Vorschlag zielt darauf ab, die bestehenden Vorschriften zu präzisieren und zu verbessern, um die Transparenz und Vergleichbarkeit von Informationen über nachhaltige Investitionen zu erhöhen.\n\nDiese Überarbeitung ist für Finanzmarktteilnehmer und Finanzberater relevant, die Produkte als nachhaltig bewerben oder entsprechende Beratungsleistungen anbieten. Sie müssen sich auf potenzielle Änderungen in den Offenlegungspflichten einstellen, die sich auf die Art und Weise auswirken könnten, wie sie Nachhaltigkeitsinformationen bereitstellen und verwalten.\n\nDer Vorschlag befindet sich im Adoptions-Workflow, was bedeutet, dass er verschiedene Stufen des Gesetzgebungsverfahrens durchlaufen wird, bevor er final verabschiedet wird.",
-          "en": "The European Commission has proposed a revision of the EU rules on sustainable finance disclosure. This proposal aims to clarify and improve existing regulations to enhance the transparency and comparability of information on sustainable investments.\n\nThis revision is relevant for financial market participants and financial advisors who market products as sustainable or offer related advisory services. They must prepare for potential changes in disclosure requirements, which could impact how they provide and manage sustainability information.\n\nThe proposal is currently in the adoption workflow, meaning it will go through various stages of the legislative process before being finally adopted."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14666",
-        "imp": "medium",
-        "refnum": "Ares(2025)3526490"
-      },
-      {
-        "d": "25.07.2024",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin passt Verwaltungspraxis an ESMA-Leitlinien zu nachhaltigen Fondsnamen an",
-          "en": "BaFin aligns administrative practice with ESMA Guidelines on sustainable fund names"
-        },
-        "sl": "esma-leitlinien-zu-fondsnamen",
-        "s": {
-          "de": "Die BaFin hat ihre Verwaltungspraxis zu nachhaltigen Investmentvermögen an die neuen ESMA-Leitlinien zu Fondsnamen angepasst. Diese Leitlinien legen erstmals europaweit einheitliche Bedingungen fest, unter denen Fonds nachhaltigkeitsbezogene Begriffe wie „Umwelt“, „Soziales“ oder „Governance“ im Namen führen dürfen. Damit soll sichergestellt werden, dass Fondsnamen die Anlagestrategie und -ziele korrekt widerspiegeln und Anleger nicht irreführen.\n\nDie ESMA-Leitlinien unterscheiden drei Begriffsgruppen (Transition-, sozial- oder Governance-verwandte Begriffe; Umwelt- oder Impact-verwandte Begriffe; Nachhaltigkeit-verwandte Begriffe) und definieren für jede Gruppe spezifische Schwellenwerte und Mindestausschlüsse. Fonds müssen demnach 80 Prozent ihres Vermögens gemäß den nachhaltigen Elementen der Anlagestrategie investieren. Zusätzlich gelten je nach Begriff im Fondsnamen unterschiedliche Mindestausschlüsse, die sich an der EU-Benchmark-Verordnung (CTB oder PAB) orientieren. So unterliegen „Umwelt“-Fonds strengeren Ausschlüssen als „Transition“-Fonds, um letzteren Investitionen in Unternehmen mit Übergangspfaden zu ermöglichen.\n\nDie neuen Vorgaben sind für Kapitalverwaltungsgesellschaften (KVGen) relevant, die nachhaltigkeitsbezogene Fonds anbieten. Sie müssen ihre Anlagestrategien und Offenlegungen entsprechend anpassen und sicherstellen, dass die Fondsnamen den definierten Kriterien und Ausschlüssen genügen. Eine Ausnahme in den ESMA-Q&A erlaubt Investitionen in „grüne“ Anleihen von ansonsten ausgeschlossenen Unternehmen.",
-          "en": "BaFin has aligned its administrative practice on sustainable investment funds with the new ESMA Guidelines on Funds’ Names. These guidelines establish, for the first time, uniform European-wide conditions under which funds may use sustainability-related terms such as 'Environment,' 'Social,' or 'Governance' in their names. This aims to ensure that fund names accurately reflect investment strategies and objectives and do not mislead investors.\n\nThe ESMA guidelines distinguish three categories of terms (transition-, social-, or governance-related terms; environmental- or impact-related terms; sustainability-related terms) and define specific thresholds and minimum exclusions for each group. Funds must invest 80 percent of their assets in accordance with the sustainable elements of their investment strategy. Additionally, depending on the term used in the fund name, different minimum exclusions apply, based on the EU Benchmark Regulation (CTB or PAB). For instance, 'Environment' funds are subject to stricter exclusions than 'Transition' funds, allowing the latter to invest in companies with transition pathways.\n\nThese new requirements are relevant for UCITS management companies and AIFMs offering sustainability-related funds. They must adapt their investment strategies and disclosures accordingly and ensure that fund names comply with the defined criteria and exclusions. An exception in the ESMA Q&A allows investments in 'green' bonds issued by otherwise excluded companies."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2024/aufsichtsmitteilung_24072024_ESMA_Leitlinien_Fondsnamen.html",
-        "imp": "high"
-      },
-      {
-        "d": "25.07.2023",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zum Zuordnungsansatz für Versicherer und Pensionsfonds unter der SFDR (02/2023 (VA))",
-          "en": "BaFin Guidance Notice on the Allocation Approach for Insurers and Pension Funds under SFDR (02/2023 (VA))"
-        },
-        "sl": "merkblatt-02-2023-va-zur-anwendung-des-zuordnungsansatzes-durch-lebensversicheru",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Anwendung des Zuordnungsansatzes für Lebensversicherungsunternehmen, Pensionskassen und Pensionsfonds im Rahmen der EU-Offenlegungsverordnung (SFDR) veröffentlicht. Es ermöglicht die freiwillige Anwendung eines spezifischen Ansatzes für die produktbezogenen Informationspflichten gemäß Art. 8 bis 11 SFDR.\n\nDas Merkblatt richtet sich an inländische Lebensversicherungsunternehmen, Pensionskassen und Pensionsfonds, die als Finanzmarktteilnehmer Finanzprodukte gemäß Art. 8 oder 9 SFDR anbieten. Es berücksichtigt die Besonderheiten der deutschen „klassischen Lebensversicherung“, bei der mangels einer Eins-zu-Eins-Zuweisung von Vermögenswerten zu einzelnen Produkten die Nachhaltigkeitsangaben oft auf das gesamte nicht-fondsgebundene Vermögen bezogen werden. Der neue Ansatz soll eine transparente Zuordnung von Vermögenswerten zu konkreten Finanzprodukten ermöglichen.\n\nDer Zuordnungsansatz ist ausschließlich für neue Finanzprodukte in Form einer klassischen Lebensversicherung oder den klassischen Teil eines neuen Hybridprodukts anwendbar. Für Pensionsfonds kann die Bildung eines gesonderten Sicherungsvermögens den Ansatz entbehrlich machen, ist aber bei gemeinsamer Kapitalanlage ebenfalls möglich. Voraussetzung ist die vorvertragliche Information des Versicherungsnehmers über die Anwendung des Ansatzes.",
-          "en": "BaFin has published a guidance notice on the application of the allocation approach for life insurance undertakings, pension funds, and Pensionskassen within the framework of the EU Disclosure Regulation (SFDR). It allows for the voluntary application of a specific approach for product-related information obligations according to Articles 8 to 11 SFDR.\n\nThe guidance notice is addressed to domestic life insurance undertakings, pension funds, and Pensionskassen that offer financial products under Article 8 or 9 SFDR as financial market participants. It takes into account the specifics of German “classic life insurance,” where, due to the lack of a one-to-one allocation of assets to individual products, sustainability disclosures often refer to the entire non-unit-linked assets. The new approach aims to enable a transparent allocation of assets to specific financial products.\n\nThe allocation approach is exclusively applicable to new financial products in the form of classic life insurance or the classic part of a new hybrid product. For pension funds, the formation of a separate ring-fenced fund may make the approach unnecessary, but it is also possible for joint asset investments. A prerequisite is the pre-contractual information of the policyholder about the application of the approach."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/VA/mb_02_2023_anwendung_zuordnungsansatz_va.html",
-        "imp": "medium"
-      },
-      {
-        "d": "26.04.2023",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Konsultation: Zuordnungsansatz für Lebensversicherer und Pensionskassen nach SFDR (Konsultation 08/2023)",
-          "en": "BaFin Consultation: Allocation Approach for Life Insurers and Pension Funds under SFDR (Consultation 08/2023)"
-        },
-        "sl": "konsultation-08-2023-merkblatt-02-2023-va-zur-anwendung-des-zuordnungsansatzes-d",
-        "s": {
-          "de": "Die BaFin konsultiert ein Merkblatt zur Anwendung des Zuordnungsansatzes durch Lebensversicherungsunternehmen im engeren Sinne sowie Pensionskassen und Pensionsfonds im Rahmen der EU-Offenlegungsverordnung (SFDR).\n\nDas Merkblatt beschreibt, wie konkrete Kapitalanlagen bestimmten Finanzprodukten für Offenlegungszwecke zugeordnet werden können. Es ist anwendbar für neue Finanzprodukte, insbesondere der klassischen Lebensversicherung, die mit ökologischen und/oder sozialen Merkmalen beworben werden und für die zusätzliche Angaben nach Artikel 8 oder 9 SFDR offenzulegen sind. Das Volumen der zuzuordnenden Vermögenswerte bestimmt sich nach dem aus Sparbeiträgen angesammelten Kapital der Versicherungsnehmer des jeweiligen Produkts oder der Produktgruppe.\n\nDer Zuordnungsansatz ist optional. Wird er nicht angewendet, beziehen sich die offenzulegenden Angaben primär auf die gesamten Vermögenswerte des Sicherungsvermögens. Stellungnahmen zum Entwurf können bis zum 9. Juni 2023 eingereicht werden.",
-          "en": "BaFin is consulting on a guidance notice regarding the application of the allocation approach by life insurance undertakings in the narrower sense, as well as pension funds and Pensionskassen, within the framework of the EU Disclosure Regulation (SFDR).\n\nThe guidance notice describes how specific capital investments can be allocated to certain financial products for disclosure purposes. It applies to new financial products, particularly classic life insurance products, that are promoted with environmental and/or social characteristics and for which additional disclosures under Article 8 or 9 SFDR are required. The volume of assets to be allocated is determined by the capital accumulated from policyholders' savings contributions for the respective product or product group.\n\nThe allocation approach is optional. If it is not applied, the disclosures under the SFDR primarily refer to the entire assets of the segregated fund (Sicherungsvermögen). Comments on the draft can be submitted until June 9, 2023."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2023/kon_08_23_Merkblatt_zur_Anwendung_des_Zuordnungsansatzes.html",
-        "imp": "medium",
-        "refnum": "Konsultation 08/2023"
       }
     ],
     "ebaretaildiv": [
