@@ -917,6 +917,122 @@
    "tokens": 9338
   }
  },
+ "brrd-2026-11-20-reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-template-z-02": {
+  "h1": "Treuhandkonten in der Abwicklungsplanung: EBA klärt Meldung in Z 02.00 (Q&A 2026_7988)",
+  "seo_title": "EBA Q&A 2026_7988: Treuhandkonten Z 02.00",
+  "meta_description": "EBA stellt klar: Treuhandkonten ohne identifizierbare Begünstigte dürfen in Z 02.00 nicht als gedeckte Einlagen gemeldet werden. Gilt ab 20.11.2026.",
+  "lead": "Die EBA klärt, wie Institute Treuhandkonten mit nicht identifizierbaren Begünstigten in Vorlage Z 02.00 der Abwicklungsplanung melden müssen. Die Antwort ist seit 20.11.2026 final.",
+  "aka": [
+   "EBA Q&A 2026_7988",
+   "Z 02.00 Treuhandkonten",
+   "Covered deposits Abwicklungsplanung",
+   "BRRD Reporting Treuhand",
+   "ITS Resolution Planning Reporting"
+  ],
+  "summary": "Institute dürfen Treuhandkonten in Zeile 0110 (gedeckte Einlagen) der Vorlage Z 02.00 nur ausweisen, wenn die letztbegünstigten Personen tatsächlich identifiziert oder identifizierbar sind. Die Pauschalannahme aus EBA/GL/2023/02 gilt ausschließlich für die Beitragsberechnung zu Einlagensicherungssystemen und nicht für die Abwicklungsberichterstattung.",
+  "overview": [
+   "Die EBA beantwortet eine Frage der Banco BPM zur Behandlung von Einlagen, die ein Institut im eigenen Namen, aber für Dritte hält, wenn weder Identität noch Anzahl der Begünstigten bekannt sind. Zeile 0110 der Vorlage Z 02.00 (ITS gemäß Verordnung (EU) 2025/2303) erfasst ausschließlich gedeckte Einlagen im Sinne von Artikel 2(1)(5) der Richtlinie 2014/49/EU. Eine automatische Einordnung als gedeckt wegen fehlender Identifikation der Begünstigten ist unzulässig.",
+   "Nicht gedeckte Beträge sind in den einschlägigen Haftungskategorien der Vorlage Z 02.00 zu klassifizieren. Die Meldung muss konsistent mit Vorlage Z 06.00 sein. Die Pauschalannahme aus EBA/GL/2023/02 (Paragraph 23) dient allein Finanzierungszwecken bei der Beitragsberechnung zu Einlagensicherungssystemen und entfaltet keine Wirkung für die Abwicklungsberichterstattung."
+  ],
+  "facts": [
+   {
+    "label": "Q&A-ID",
+    "value": "2026_7988"
+   },
+   {
+    "label": "Finale Veröffentlichung",
+    "value": "20.11.2026"
+   },
+   {
+    "label": "Rechtsakt",
+    "value": "Richtlinie 2014/59/EU (BRRD)"
+   },
+   {
+    "label": "Betroffene Vorlage",
+    "value": "Z 02.00, Zeile 0110 (ITS Verordnung (EU) 2025/2303)"
+   },
+   {
+    "label": "Einreicher",
+    "value": "Banco BPM, Italien (Kreditinstitut)"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "Direkt betroffen bei Treuhandkonten",
+    "detail": "Institute, die Einlagen im eigenen Namen für Dritte halten, müssen prüfen, ob Begünstigte identifiziert oder identifizierbar sind, bevor sie Beträge in Zeile 0110 ausweisen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Abwicklungsplanung",
+    "note": "Meldepflicht betroffen",
+    "detail": "Einheiten, die die Vorlage Z 02.00 befüllen, müssen die Klassifizierungslogik für Treuhandkonten anpassen und mit Z 06.00 abstimmen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Einlagensicherung",
+    "note": "Nur für Beitragsberechnung",
+    "detail": "Die Pauschalannahme aus EBA/GL/2023/02 bleibt für die Beitragsberechnung zu Einlagensicherungssystemen unberührt.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Q&A 2026_7988",
+    "title": "Keine Pauschaldeckung in Z 02.00",
+    "text": "Die Pauschalannahme aus EBA/GL/2023/02 (Paragraph 23) gilt nicht für Zeile 0110 der Vorlage Z 02.00. Eine vollständige Einordnung als gedeckt ist unzulässig, wenn Begünstigte nicht identifiziert werden können."
+   },
+   {
+    "ref": "Art. 7(3) DGSD",
+    "title": "Identifizierbarkeit entscheidend",
+    "text": "Für die Meldung in Z 02.00 ist zu prüfen, ob Begünstigte identifiziert oder identifizierbar sind. Erst dann darf der entsprechende Betrag als gedeckte Einlage ausgewiesen werden."
+   },
+   {
+    "ref": "Z 02.00 / Z 06.00",
+    "title": "Konsistenzpflicht zwischen Vorlagen",
+    "text": "Nicht gedeckte Beträge sind in den passenden Haftungskategorien von Z 02.00 zu erfassen. Die Meldung muss mit den Informationen in Vorlage Z 06.00 übereinstimmen."
+   }
+  ],
+  "todos": [
+   "Prüfen, ob eigene Treuhandkonten in Z 02.00 korrekt klassifiziert sind und Begünstigte identifiziert oder identifizierbar sind.",
+   "Interne Meldelogik anpassen: Pauschaldeckung nach EBA/GL/2023/02 darf nicht auf Z 02.00 übertragen werden.",
+   "Abstimmung zwischen Vorlage Z 02.00 und Z 06.00 sicherstellen.",
+   "Rechtliche Natur und insolvenzrechtliche Behandlung nicht gedeckter Beträge prüfen und in passenden Haftungskategorien ausweisen."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Finale Q&A-Veröffentlichung",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Darf ein Institut den gesamten Kontostand eines Treuhandkontos als gedeckte Einlage in Z 02.00 melden, wenn die Begünstigten unbekannt sind?",
+    "a": "Nein. Weder der vollständige Kontostand noch ein pauschaler Betrag von 100.000 Euro darf automatisch als gedeckt eingestuft werden. Es muss geprüft werden, ob die Begünstigten identifiziert oder identifizierbar sind."
+   },
+   {
+    "q": "Gilt die Pauschalannahme aus EBA/GL/2023/02 auch für die Abwicklungsberichterstattung?",
+    "a": "Nein. Die Annahme in Paragraph 23 von EBA/GL/2023/02 gilt ausschließlich für die Berechnung von Beiträgen zu Einlagensicherungssystemen und nicht für Vorlage Z 02.00 der Abwicklungsplanung."
+   },
+   {
+    "q": "Wo sind nicht gedeckte Beträge aus Treuhandkonten in Z 02.00 zu melden?",
+    "a": "In den einschlägigen Haftungskategorien der Vorlage Z 02.00, abhängig von der rechtlichen Natur und insolvenzrechtlichen Behandlung. Zeilen 0130 oder 0140 kommen nur in Betracht, wenn die Bedingungen von Artikel 44(2)(c) bzw. (d) BRRD erfüllt sind."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Nationale Umsetzungsunterschiede bei der Identifizierbarkeit von Begünstigten (Artikel 7(3) DGSD) sind nicht im Detail beschrieben.",
+   "Es ist unklar, ob und wann die EBA bestehende Q&As nach Änderungen der Richtlinie 2026/804 aktualisiert."
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 4735 Zeichen, gekürzt auf 4735",
+   "dropped": 2,
+   "tokens": 9365
+  }
+ },
  "consumer-2026-10-13-verbraucherdarlehen-bafin-konsultiert-aenderungsverordnung-zur-sachkunde": {
   "h1": "Sachkunde bei Verbraucherdarlehen: BaFin konsultiert Änderungsverordnung (Konsultation 09/2026)",
   "seo_title": "BaFin Konsultation 09/2026: Sachkunde Verbraucherdarlehen",
@@ -1979,6 +2095,117 @@
    "source": "HTML, 44468 Zeichen, gekürzt auf 12000",
    "dropped": 0,
    "tokens": 16583
+  }
+ },
+ "csdr-2026-11-20-z07-01-3-value-of-transactions-for-securities-settlement-services-function-id-3": {
+  "h1": "EBA-Klarstellung zu Transaktionswerten im RESOL-Reporting (Q&A 2026_7973)",
+  "seo_title": "EBA Q&A 2026_7973 RESOL-Reporting Transaktionswerte",
+  "meta_description": "EBA klärt, was unter gesendeten Transaktionen im RESOL-Reporting für Wertpapierabwicklung (Funktion 3.4, BRRD) zu verstehen ist. Veröffentlicht 20.11.2026.",
+  "lead": "Die EBA präzisiert den Begriff gesendete Transaktionen im RESOL-Reporting für Wertpapierabwicklungsdienstleistungen (Funktion ID 3.4, BRRD-Anhang). Die Klarstellung gilt für Kreditinstitute, die diesen Dienst erbringen, ab sofort.",
+  "aka": [
+   "Q&A 2026_7973",
+   "RESOL-Reporting Wertpapierabwicklung",
+   "BRRD Meldepflichten Transaktionswert",
+   "Funktion 3.4 RESOL",
+   "Z07.01.3 EBA"
+  ],
+  "summary": "Die EBA stellt klar, dass gesendete Transaktionen im RESOL-Reporting sowohl Käufe als auch Verkäufe von Wertpapieren im Kundenauftrag umfassen, einschließlich Free-of-Payment- und intern abgewickelter Transfers. Reine Zins- und Dividendenzahlungen ohne Wertpapierübertragung sind ausgeschlossen. Corporate Actions zählen, wenn sie zu einer Wertpapierübertragungsanweisung führen.",
+  "overview": [
+   "Die EBA beantwortet mit Q&A 2026_7973 eine Anfrage, welche Transaktionen Kreditinstitute im RESOL-Reporting für die Funktion Wertpapierabwicklung (Funktion ID 3.4, Anhang der delegierten BRRD-Verordnung) als Transaktionswert ausweisen müssen. Der Begriff gesendete Transaktionen bezieht sich auf Wertpapierübertragungen im Kundenauftrag unabhängig davon, ob es sich um einen Kauf oder Verkauf handelt.",
+   "Eine Doppelzählung derselben Übertragung auf Empfängerseite ist unzulässig. Reine Zinsen und Dividenden ohne Wertpapierübertragung werden nicht erfasst. Corporate Actions sind einzubeziehen, wenn sie eine Wertpapierübertragungsanweisung auslösen. Das Q&A gilt mit dem Veröffentlichungsdatum; Änderungen der zugrunde liegenden Rechtsakte nach Veröffentlichung werden von der EBA nicht automatisch nachgeführt."
+  ],
+  "facts": [
+   {
+    "label": "Q&A-Nummer",
+    "value": "2026_7973"
+   },
+   {
+    "label": "Rechtsakt",
+    "value": "Richtlinie 2014/59/EU (BRRD)"
+   },
+   {
+    "label": "Thema",
+    "value": "RESOL-Reporting, Funktion ID 3.4 (Z07.01.3)"
+   },
+   {
+    "label": "Einreicher",
+    "value": "Kreditinstitut"
+   },
+   {
+    "label": "Veröffentlicht",
+    "value": "20.11.2026"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "Wertpapierabwicklung als kritische Funktion",
+    "detail": "Kreditinstitute, die Wertpapierabwicklungsdienstleistungen für Kunden erbringen und diese Funktion im RESOL-Reporting (Funktion ID 3.4) melden, müssen ihre Zähllogik prüfen und ggf. anpassen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen / Reporting",
+    "note": "Direkter Handlungsbedarf bei Zähllogik",
+    "detail": "Reporting-Teams müssen sicherstellen, dass Käufe und Verkäufe gleichermaßen erfasst werden, Doppelzählungen vermieden werden und Corporate Actions korrekt bewertet werden.",
+    "status": "betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Q&A 2026_7973",
+    "title": "Definition gesendete Transaktionen",
+    "text": "Gesendete Transaktionen umfassen Käufe und Verkäufe im Kundenauftrag sowie Free-of-Payment- und intern abgewickelte Transfers. Keine Doppelzählung auf Empfängerseite. Reine Zins-/Dividendenzahlungen ausgeschlossen."
+   },
+   {
+    "ref": "BRRD-Anhang Funktion 3.4",
+    "title": "Corporate Actions einbeziehen",
+    "text": "Corporate Actions sind zu erfassen, wenn sie zu einer Wertpapierübertragungsanweisung im Rahmen der gemeldeten Dienstleistung führen. Eine generelle Ausnahme für Corporate Actions gibt es nicht."
+   }
+  ],
+  "todos": [
+   "Zähllogik im RESOL-Reporting für Funktion 3.4 prüfen: Werden Käufe und Verkäufe gleichermaßen als gesendete Transaktionen erfasst?",
+   "Doppelzählungen auf Empfängerseite identifizieren und ausschließen.",
+   "Verarbeitungsregeln für Corporate Actions anpassen: Einbeziehung prüfen, wenn Wertpapierübertragungsanweisung vorliegt.",
+   "Reine Zins- und Dividendenzahlungen ohne Wertpapierübertragung aus dem Meldewert herausnehmen.",
+   "Prüfen, ob die aktuelle BRRD-Fassung noch mit dem Veröffentlichungsstand des Q&A übereinstimmt."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Veröffentlichung final",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Müssen nur Käufe oder auch Verkäufe als gesendete Transaktionen gemeldet werden?",
+    "a": "Beide. Die EBA stellt klar, dass gesendete Transaktionen sowohl Käufe als auch Verkäufe von Wertpapieren im Kundenauftrag umfassen. Der Begriff ist nicht auf Käufe beschränkt."
+   },
+   {
+    "q": "Wie sind Corporate Actions zu behandeln?",
+    "a": "Corporate Actions sind einzubeziehen, wenn sie eine Wertpapierübertragungsanweisung innerhalb der gemeldeten Dienstleistung auslösen. Die bloße Eigenschaft als Corporate Action schließt sie nicht aus."
+   },
+   {
+    "q": "Zählen Dividenden- und Zinszahlungen zum Transaktionswert?",
+    "a": "Nein. Reine Zins- oder Dividendenzahlungen ohne Wertpapierübertragung sind ausgeschlossen. Sie gelten nicht als Wertpapiertransfers im Sinne der Funktion ID 3.4."
+   },
+   {
+    "q": "Gilt die Klarstellung dauerhaft?",
+    "a": "Das Q&A gilt für die am Veröffentlichungstag gültige Rechtslage. Die EBA überarbeitet veröffentlichte Q&As nicht automatisch bei späteren Gesetzesänderungen. Aktualität der Rechtsgrundlage sollte daher regelmäßig geprüft werden."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die Quelle nennt keine konkreten Übergangsfristen oder Erstanwendungszeitpunkte für die angepasste Zähllogik.",
+   "Es bleibt offen, ob und wie bereits eingereichte Meldungen für frühere Perioden korrigiert werden müssen.",
+   "Delegierter Rechtsakt oder ITS zum BRRD-Anhang wurde in der Quelle nicht konkret bezeichnet; Prüfung der aktuellen Fassung empfohlen."
+  ],
+  "meta": {
+   "generated": "2026-11-20",
+   "model": "sonnet",
+   "source": "HTML, 2428 Zeichen, gekürzt auf 2428",
+   "dropped": 2,
+   "tokens": 8625
   }
  },
  "dgsd-2026-11-16-eba-supports-further-progress-on-the-banking-union-including-on-deposit-insuranc": {
