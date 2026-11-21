@@ -166,6 +166,18 @@ class FrameworkClassification(unittest.TestCase):
         self.assertEqual(_classify("Communication to the investment fund industry – Law of 3 March 2026", source_id="cssf"), "luaifm")
         self.assertIsNone(_classify("Application of the Digital Operational Resilience Act (DORA) to third-country branches", source_id="cssf"))
         self.assertIsNone(_classify("Public consultation by ESMA on simplifying EU Taxonomy disclosure framework", source_id="cssf"))
+        # Welle 21.11.2026: Berichtswesen, ManCo, Vertrieb, ESG, OGAW-Produkte, Spezialfonds.
+        self.assertEqual(_classify("Circular CSSF 25/894 – non-authorised funds", source_id="cssf"), "cssfreport")
+        self.assertEqual(_classify("Circular CSSF 22/811 on UCI administrators", source_id="cssf"), "cssfmanco")
+        self.assertEqual(_classify("Communication on management notifications with a European passport for IFMs", source_id="cssf"), "cssfdistr")
+        self.assertEqual(_classify("CSSF FAQ on Sustainable Finance Disclosure Regulation (SFDR)", source_id="cssf"), "cssfesg")
+        self.assertEqual(_classify("Circular CSSF 26/911 stress test scenarios money market funds", source_id="cssf"), "cssfucits")
+        self.assertEqual(_classify("FAQ concerning SIFs and SICARs that do not qualify as AIFs", source_id="cssf"), "cssfspecial")
+        # AML-Texte, die SIF/SICAR nur nennen, bleiben bei cssfaml.
+        self.assertEqual(_classify("FAQ on AML/CFT obligations for SIFs and SICARs", source_id="cssf"), "cssfaml")
+        # Banken-Fragebogen und ESG-Ratings-Anbieter sind kein Fondsthema.
+        self.assertIsNone(_classify("Self-assessment questionnaire (revised Long Form Report)", source_id="cssf"))
+        self.assertIsNone(_classify("Application of the ESG Ratings Regulation and the new disclosure requirements under the SFDR", source_id="cssf"))
         # Ohne Quellenkontext greifen die Lux-Regeln nicht.
         self.assertEqual(_classify("ESMA Guidelines on Liquidity Management Tools of UCITS"), "aifmd2")
 
@@ -580,6 +592,11 @@ class ScopeGuards(unittest.TestCase):
         out = apply_guards(s, fw, self.FWS, self.ARTS, src)
         return out, {tuple(g["alle"]) for g in out["adressaten"]}
 
+    def test_cssfdistr_ohne_vertriebserlaubnis(self):
+        self.FWS["cssfdistr"] = {"jur": "LU", "parent": "cbdf"}
+        _, ids = self._run("cssfdistr", [["kvg_ogaw", "sitz_lu", "lic_fonds_vertrieb"]])
+        self.assertEqual(ids, {("kvg_ogaw", "sitz_lu")})
+
     def test_marisk_ohne_wertpapierinstitute(self):
         _, ids = self._run("marisk", [["ki_crr", "sitz_de"], ["wpi", "sitz_de"]])
         self.assertEqual(ids, {("ki_crr", "sitz_de")})
@@ -713,7 +730,8 @@ class QaSweepSept2026(unittest.TestCase):
         from regradar.webexport import _classify
         self.assertIsNone(_classify("Public Consultation on AML/CFT and Financial Inclusion - Updated FATF Guidance", source_id="cssf"))
         self.assertIsNone(_classify("The European Banking Authority consults on new rules related to the anti-money laundering package", source_id="cssf"))
-        self.assertIsNone(_classify("Circular CSSF 25/893 Reporting of major ICT-related incidents under DORA", source_id="cssf"))
+        # 21.11.2026: 25/893 ist luxemburgisches Recht (Meldung großer IKT-Vorfälle) und gehört zu cssfict.
+        self.assertEqual(_classify("Circular CSSF 25/893 Reporting of major ICT-related incidents under DORA", source_id="cssf"), "cssfict")
         self.assertIsNone(_classify("Notification of white papers under Title II of MiCAR", source_id="cssf"))
         self.assertEqual(_classify("Circular CSSF 12-02 on money laundering", source_id="cssf"), "cssfaml")
         self.assertEqual(_classify("Circular CSSF 26/910 on liquidity management tools", source_id="cssf"), "lulmt")

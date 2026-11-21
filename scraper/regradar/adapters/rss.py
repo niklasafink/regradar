@@ -133,6 +133,8 @@ class RssAdapter(SourceAdapter):
             for item in _iter_items(root):
                 title = _childtext(item, "title")
                 link = _childtext(item, "link")
+                if link.startswith("//"):   # CRF Luxemburg liefert protokollrelative Links
+                    link = "https:" + link
                 if not title or not link:
                     continue
                 desc = _childtext(item, "description")

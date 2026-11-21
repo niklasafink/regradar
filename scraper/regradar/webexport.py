@@ -29,7 +29,10 @@ RECENT_DAYS = 90
 # Das BIS-Rahmenwerk bündelt vier Quellen (Basler Ausschuss, CPMI, FSI,
 # Pressemitteilungen); die Chronologie in data.ts endet vor dem Zeitfenster
 # des Scrapers (zwei Listenseiten), daher mehr Live-Einträge als üblich.
-MAX_PER_FRAMEWORK_BY_ID = {"bcbs": 12}
+# Luxemburg-Rahmenwerke tragen die Fassungshistorie (Archiv, Gesetze, Rundschreiben).
+MAX_PER_FRAMEWORK_BY_ID = {"bcbs": 12, **{f: 400 for f in (
+    "luaifm", "lulmt", "cssf18698", "cssf24856", "cssfaml", "cssfict", "cssfreport",
+    "cssfmanco", "cssfdistr", "cssfesg", "cssfucits", "cssfspecial")}}
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
 FRAMEWORK_RULES = [
@@ -511,6 +514,19 @@ SOURCE_RULES = {
     "bis_fsi": BIS_SECONDARY_RULES,
     "bis_press": BIS_RULES,
     "cssf": [
+        # Nummerngenaue Regeln zuerst (Welle 21.11.2026): Berichtswesen, ManCo-
+        # Organisation, Vertrieb, ESG, OGAW-Produkte, Spezialfonds. Sie gehen den
+        # allgemeinen Stichworten (Fondsmanager, IFM, OGAW) weiter unten vor.
+        ("cssfreport", r"21/789|21/790|23/839|15/627|25/871|15/633|23/844|25/894|19/708|"
+                       r"self-assessment questionnaire(?!.{0,40}long form)|management letter|separate report|"
+                       r"non-authori[sz]ed (funds?|aif)"),
+        ("cssfmanco", r"10-04|11/512|22/811|25/900|16/644|18/697|uci administrators?|\bucia\b"),
+        ("cssfdistr", r"22/810|22/795|pre-marketing|cross-border (distribution|marketing)|\bcbdf\b|"
+                      r"european passport|marketing communications?|management notifications?"),
+        (None, r"esg ratings regulation"),
+        ("cssfesg", r"24/863|\bsfdr\b|sustainable finance disclosure|fund names?|esg or sustainability"),
+        ("cssfucits", r"20/764|26/911|25/877|18/696|performance fees?|master[- ]feeder|stress test scenarios|\bmmfr\b|mmf handbook"),
+        ("cssfspecial", r"15-07|15-08"),
         ("cssfict", r"20/750|22/828|25/881|26/915|ict and security risk management|"
                     r"informations- und kommunikationstechnologie|psp ict assessment"),
         ("lulmt", r"liquidity management tool|\blmts?\b|26/910|swing pricing|side pocket|redemption gate|anti-dilution"),
@@ -518,15 +534,50 @@ SOURCE_RULES = {
                       r"investment (restriction|rule) breach|02/77"),
         ("cssf18698", r"18/698|22/806|25/883|outsourcing|substance requirement|conducting officers?|dirigeants?|"
                       r"investment fund managers?(?! and)|\bifms?\b|delegation oversight"),
+        # Archivtexte (Welle 7): weitere Stichworte für ältere Fondsrundschreiben.
+        ("cssfict", r"ict-related incident|24/847|25/893|cloud computing"),
+        ("cssfucits", r"kiid|key investor information|simplified prospectus|packaged retail|"
+                      r"material change to an open-ended|14/591"),
+        ("cssfmanco", r"remuneration polic"),
+        ("cssfaml", r"\bamla\b|obliged entities|transfers of funds|2015/847"),
         # Weiterleitungen internationaler/europäischer AML-Standards (FATF, EBA)
         # sind kein luxemburgisches Recht und entfallen.
         (None, r"\bfatf\b|european banking authority|\beba\b"),
         ("cssfaml", r"12-02|law of 12 november 2004|money laundering|aml/cft|\baml\b|\bcft\b|terrorist financing|"
                     r"financial sanctions?|questionnaire on financial crime|\brc\b.{0,20}\brr\b"),
+        # Schwache Stichworte erst nach AML, damit AML-Texte, die SIF/SICAR oder
+        # Verwahrstellen nur nennen, bei cssfaml bleiben.
+        ("cssfmanco", r"depositar(y|ies)|risk management process"),
+        ("cssfucits", r"money market fund|crypto-assets?[^.]{0,40}(collective investment|\bucis?\b)"),
+        ("cssfspecial", r"\bsifs?\b|sicars?\b|\braifs?\b|specialised investment fund|"
+                        r"reserved alternative investment fund"),
         ("luaifm", r"law of 17 december 2010|law of 12 july 2013|law of 3 march 2026|\b2010 law\b|\b2013 law\b|25/901|"
-                   r"\bsifs?\b|sicar|\braifs?\b|part ii uci|\bucits\b|\baifms?\b|\baifs?\b|investment funds?\b|"
+                   r"part ii uci|\bucits\b|\baifms?\b|\baifs?\b|investment funds?\b|"
                    r"undertakings for collective investment|\bucis?\b|eltif|\bmmfr?\b|money market fund"),
     ],
+    # Weitere Luxemburger Quellen (Welle 7, 21.11.2026): das CSSF-Archiv teilt
+    # die Regeln des Feeds (wird unten gesetzt); Legilux und Chambre-Dossiers
+    # tragen französische Titel.
+    "legilux": [
+        # Sanktionslisten/Embargo-Verordnungen sind kein Fondsrecht.
+        (None, r"russie|cr[ií]m[eé]e|s[eé]bastopol|exploration|double usage|exportation|embargo|bi?ens .{0,20}transfert"),
+        ("cssfict", r"r[eé]silience op[eé]rationnelle num[eé]rique"),
+        ("cssfspecial", r"fonds d.investissement sp[eé]cialis[eé]s|soci[eé]t[eé]s? d.investissement en capital [aà] risque|"
+                        r"fonds d.investissement altern\w+ r[eé]serv[eé]s|sicar"),
+        ("cssfaml", r"blanchiment|financement du terrorisme|b[eé]n[eé]ficiaires effectifs|mesures restrictives|"
+                    r"registre des fiducies"),
+        # Nur Titel, die Fonds oder Fondsmanager nennen; "secteur financier" allein
+        # trifft Banken-, Gebühren- und Haushaltsgesetze und bleibt draußen.
+        ("luaifm", r"organismes? de placement collectif|gestionnaires? de fonds d.investissement|fonds d.investissement|"
+                   r"\bopcvm\b"),
+    ],
+    "chd": [
+        ("cssfspecial", r"fonds d.investissement altern|soci[eé]t[eé] en commandite"),
+        ("cssfict", r"r[eé]silience op[eé]rationnelle num[eé]rique"),
+        ("cssfaml", r"blanchiment|financement du terrorisme|b[eé]n[eé]ficiaires effectifs|mesures restrictives"),
+        ("luaifm", r"organismes? de placement collectif|fonds d.investissement"),
+    ],
+    "crf_lu": [("cssfaml", r".")],
     # EBA-Feed: Q&As zu den Z-Meldebögen (RESOL, Abwicklungsplanung) gehören
     # zur BRRD — "CCPs" darin ist kein EMIR-Thema, "EBA Taxonomy" die
     # Meldewesen-Taxonomie, nicht die EU-Taxonomie (Q&A 2026_7912 und
@@ -823,10 +874,11 @@ EVERGREEN_URL = re.compile(BUNDESBANK_EVERGREEN, re.IGNORECASE)
 # gebiete ab; generische Muster wie "Verbraucherschutz" oder "Lieferkette"
 # treffen dort auch Energie-, Agrar- oder Beamtenrecht.
 LEGISLATION_SOURCES = {"bgbl", "dip", "gii"}
+SOURCE_RULES["cssf_archive"] = SOURCE_RULES["cssf"]
 # Quellen, deren Dokumente nur über ihre SOURCE_RULES zugeordnet werden
 # (kein Fallback auf FRAMEWORK_RULES): CSSF-Schreiben gehören nicht in
 # EU-Rahmenwerke wie DORA, die alle Zielgruppen sehen.
-EXCLUSIVE_SOURCES = {"cssf"}
+EXCLUSIVE_SOURCES = {"cssf", "cssf_archive", "legilux", "chd", "crf_lu"}
 OFFTOPIC_DE = re.compile(
     r"beamten|besoldung|energiewirtschaft|energiebereich|agrar|tiergesundheit|"
     r"tierarznei|tierschutz|lebensmittel|landwirtschaft|forst|jagd|fischerei|"
@@ -867,6 +919,26 @@ TREATY_LAW = re.compile(
     # (Vorbehalte, Geltungsbereich, Notenwechsel) lösen keine Pflicht aus.
     r"bekanntmachung (zu (dem|der|den)|über den geltungsbereich|des|der|den)\b)[\s\S]{0,200}?"
     r"(abkommen|vereinbarung|übereinkommen|protokoll|vertrag)", re.IGNORECASE)
+
+
+LU_SOURCES = {"cssf", "cssf_archive", "legilux", "chd", "crf_lu"}
+_CURATED_URLS: Optional[set] = None
+
+
+def _curated_urls() -> set:
+    """URLs, die bereits als kuratierter Eintrag in web/lib/data.ts stehen.
+    Luxemburger Scraper-Treffer mit derselben URL werden nicht doppelt gezeigt."""
+    global _CURATED_URLS
+    if _CURATED_URLS is None:
+        path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                            "web", "lib", "data.ts")
+        try:
+            with open(path, encoding="utf-8") as f:
+                txt = f.read()
+        except OSError:
+            txt = ""
+        _CURATED_URLS = {m.rstrip("/").lower() for m in re.findall(r'url:"(https?://[^"]+)"', txt)}
+    return _CURATED_URLS
 
 
 def _classify(text: str, forced: Optional[str] = None,
@@ -1283,6 +1355,9 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         hys_age = (_days_apart(r["publication_date"][:10], _hys_today)
                    if r["source_id"] == "hys" and r["publication_date"] else None)
         if hys_age is not None and hys_age > HYS_MAX_AGE_DAYS:
+            continue
+        if (r["source_id"] in LU_SOURCES and r["canonical_url"]
+                and r["canonical_url"].rstrip("/").lower() in _curated_urls()):
             continue
         # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
         # Titel wie "Consultation on the draft RTS on Customer Due

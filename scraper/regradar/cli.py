@@ -202,6 +202,11 @@ def main(argv=None):
             print("Anforderungsanalyse: {neu} neu, {fehler} Fehler, {kosten_usd:.4f} USD "
                   "(von {total} Updates{gebremst})".format(
                       **{**info, "gebremst": ", Wochenbudget erreicht" if info["gebremst"] else ""}))
+        elif cmd == "archive-titles":
+            from .archive_titles import run as at_run
+            limit = int(argv[argv.index("--limit") + 1]) if "--limit" in argv else None
+            info = at_run(conn, limit)
+            print("Archiv-Titel: {neu} neu, {fehler} Fehler, {offen} offen".format(**info))
         elif cmd == "ecb-list":
             from .ecblist import export as ecb_export
             n = ecb_export(force="--force" in argv)

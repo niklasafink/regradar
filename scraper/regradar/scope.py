@@ -568,6 +568,11 @@ def apply_guards(scope: dict, fw_id: str, fws: Dict[str, dict], arts: set, src: 
     # jedes Institut mit Kreditgeschäft oder Anlagevermittlung.
     if "ecspr" in fam:
         groups = [{"alle": ["ecsp"]}]
+    # Luxemburger Vertriebsverfahren (Pre-Marketing, EU-Pass, Werbemitteilungen)
+    # treffen jeden Fondsmanager, nicht nur Häuser mit der Erlaubnis
+    # "Vertrieb von Investmentanteilen".
+    if "cssfdistr" in fam:
+        groups = [{**g, "alle": [m for m in g["alle"] if m != "lic_fonds_vertrieb"]} for g in groups]
     # MaRisk (Banken) gelten nicht für Wertpapierinstitute nach WpIG; für sie
     # gibt es das Rahmenwerk WpI MaRisk. Große Wertpapierinstitute bleiben (KWG).
     if "marisk" in fam:

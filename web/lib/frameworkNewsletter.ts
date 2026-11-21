@@ -140,6 +140,9 @@ const FW_ABBR: Record<string, string> = {
   luaifm: "Lux. Fondsrecht", lulmt: "LMT (Luxemburg)",
   cssf18698: "CSSF 18/698", cssf24856: "CSSF 24/856",
   cssfaml: "CSSF-AML-VO", cssfict: "CSSF 20/750",
+  cssfreport: "CSSF-Berichte", cssfmanco: "ManCo-Organisation (LU)", cssfdistr: "Vertrieb (LU)",
+  cssfesg: "ESG-Fondsnamen (LU)", cssfucits: "OGAW-Produkte (LU)", cssfspecial: "SIF/SICAR/RAIF",
+  ucits: "OGAW-RL", cbdf: "CBDF",
 };
 
 /** Anzeigename für die Newsletter-Überschrift: Abkürzung statt Volltext.

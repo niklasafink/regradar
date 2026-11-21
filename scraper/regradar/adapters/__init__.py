@@ -15,6 +15,7 @@ from .bis import BisAdapter
 from .dsnews import DsNewsAdapter
 from .ecfinance import EcFinanceAdapter
 from .bafinsearch import BafinSearchAdapter
+from .lux import LegiluxAdapter, ChdAdapter, CssfArchiveAdapter
 
 ADAPTERS = {
     "ecfinance": EcFinanceAdapter,
@@ -34,4 +35,7 @@ ADAPTERS = {
     "bis": BisAdapter,
     "dsnews": DsNewsAdapter,
     "bafinsearch": BafinSearchAdapter,
+    "legilux": LegiluxAdapter,
+    "chd": ChdAdapter,
+    "cssfarchive": CssfArchiveAdapter,
 }

@@ -94,3 +94,17 @@ Auslandsbewertungen (RCAP für Kanada, Japan …) und Monitoring-Berichte entfal
 - Eigener Ordner `scraper/` mit Python-Backend: gemeinsames `SourceAdapter`-Interface (`discover → fetch → parse → normalize`), Source Registry, Raw-Archiv (SHA-256, ETag/Last-Modified), Canonical Document Model, SQLite/PostgreSQL-Persistenz.
 - Reihenfolge: **2 (Gesetze im Internet, XML) → 3 (DIP, API) → 6 (AMLA, HTML)** — das erfüllt die MVP-Definition (3 Quellentypen), danach 1, 4, 5, 7–11.
 - Defensive Scraping-Regeln: Rate Limiting, Conditional GET, Timeouts, Retry mit Backoff, eigener User-Agent. Keine Paywalls/Logins.
+
+## Welle 9 — Luxemburg vertieft (umgesetzt am 21.11.2026)
+
+Anlass: Fondsmanager und Fonds mit Luxemburg-Bezug. Neue Rahmenwerke `cssfreport`, `cssfmanco`, `cssfdistr` (Kind von `cbdf`), `cssfesg`, `cssfucits`, `cssfspecial` sowie die EU-Rahmenwerke `ucits` und `cbdf`. Zuordnung über `SOURCE_RULES` in webexport.py: nummerngenaue Regeln zuerst, schwache Stichworte (Verwahrstelle, SIF, Geldmarktfonds) erst nach AML. Luxemburger Treffer, deren URL schon als kuratierter Eintrag in data.ts steht, werden nicht doppelt gezeigt (`_curated_urls`).
+
+| # | Quelle | Behörde / Jurisdiktion | Zugriffsweg | Dokumenttypen | Bemerkung |
+|---|---|---|---|---|---|
+| 28a | CSSF (Feed, zusätzliche Typen) | LU | RSS: `technical-document`, `cssf-guidance`, `other-guidance`, `studies-reports`, `statement`, `national-regulation` | GUIDELINE, OTHER, REGULATION | Typnamen nur aus `cssf.lu/en/rss-feed/`: Unbekannte Namen liefern stillschweigend den Allgemeinfeed. Je Feed höchstens 20 Einträge. |
+| 32 | CSSF Archiv (`cssf_archive`) | LU | HTML-Listenseite `cssf.lu/en/regulatory-framework/?content_type=…&entity_type=…&archives=include`, Adapter `cssfarchive` | CIRCULAR, REGULATION, LAW, Q_AND_A | Wöchentlich; Erstlauf mit `run cssf_archive --since=1990-01-01 --no-fetch` holt rund 650 Texte seit 1991, auch aufgehobene. cssf.lu sperrt die IP nach rund 70 Abrufen in wenigen Minuten: Pause 4 s je Seite. |
+| 33 | Legilux (Mémorial A) | LU | SPARQL-GET `data.legilux.public.lu/sparqlendpoint` (jolux:Act), Adapter `legilux` | LAW, REGULATION | Kein RSS. Titelfilter auf Fonds-, Finanzsektor-, AML-, DORA-Begriffe; Erstlauf `--since=2004-01-01` (169 Akte). Französische Titel, nur Metadaten. |
+| 34 | Chambre des Députés (Dossiers) | LU | HTML `chd.lu/fr/dossier/<Nr>`, Adapter `chd`, Zustand in `data/chd_state.json` | BILL | Beobachtet einschlägige Dossiers (Status, Avis, Änderungsanträge) und scannt neue Nummern oberhalb der höchsten bekannten. |
+| 35 | CRF Luxemburg (FIU) | LU | RSS `crf.public.lu/en/actualites.rss` (protokollrelative Links) | OTHER | Alles → `cssfaml`; rund 1 Meldung im Monat. |
+
+Anzeigetexte für Altbestand ohne OpenRouter: `python3 -m regradar archive-titles` übersetzt Titel und Untertitel über `claude -p` (Abo) in den Cache `llm_summary` (model `claude-archive`). Es erfindet keinen Inhalt.
