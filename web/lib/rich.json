@@ -7854,6 +7854,382 @@
    "tokens": 8401
   }
  },
+ "luaifm-2026-11-16-mmfr-handbook-updated": {
+  "h1": "CSSF MMFR-Handbuch Version 1.4 (aktualisiert November 2026)",
+  "seo_title": "CSSF MMFR-Handbuch Version 1.4, Update 2026",
+  "meta_description": "Die CSSF hat am 16.11.2026 ihr MMFR-Handbuch auf Version 1.4 aktualisiert. Betroffen sind Verwalter von Geldmarktfonds in Luxemburg.",
+  "lead": "Die CSSF hat am 16.11.2026 ihr MMFR-Handbuch auf Version 1.4 aktualisiert. Das technische Dokument gilt für alle Verwalter von Geldmarktfonds, die der Money Market Fund Regulation unterliegen.",
+  "aka": [
+   "MMFR Handbook",
+   "MMFR-Leitfaden CSSF",
+   "Geldmarktfonds Handbuch Luxemburg",
+   "MMFR Version 1.4",
+   "CSSF Geldmarktfonds"
+  ],
+  "summary": "Die CSSF hat am 16.11.2026 das MMFR-Handbuch in Version 1.4 veröffentlicht. Es richtet sich an Investmentfondsverwalter sowie Verwalter von SIFs, UCITS und Part-II-UCIs in Luxemburg und dient der korrekten Anwendung der Money Market Fund Regulation.",
+  "overview": [
+   "Das MMFR-Handbuch der CSSF ist ein technisches Dokument zur Anwendung der Money Market Fund Regulation. Die ursprüngliche Fassung stammt vom 16.06.2020; Version 1.4 wurde am 16.11.2026 veröffentlicht. Das Handbuch richtet sich an Investmentfondsverwalter sowie an Verwalter von Spezialinvestmentfonds (SIFs), UCITS und Part-II-UCIs.",
+   "Zusätzlich zum Handbuch stellt die CSSF einen User Guide zum Reporting nach Artikel 37 MMFR (Version 2, zuletzt aktualisiert 30.08.2022) sowie eine Fehlercodes-Liste im XLSX-Format bereit. Welche inhaltlichen Änderungen Version 1.4 gegenüber der Vorgängerversion enthält, geht aus der Quelle nicht hervor."
+  ],
+  "facts": [
+   {
+    "label": "Dokument",
+    "value": "MMFR-Handbuch Version 1.4"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "CSSF (Luxemburg)"
+   },
+   {
+    "label": "Erstveröffentlichung",
+    "value": "16.06.2020"
+   },
+   {
+    "label": "Aktualisierung",
+    "value": "16.11.2026"
+   },
+   {
+    "label": "Format",
+    "value": "PDF, 381 KB"
+   },
+   {
+    "label": "Begleitdokumente",
+    "value": "User Guide Art. 37 MMFR (Version 2) und MMFR Error Codes"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kapitalverwaltungs-gesellschaften",
+    "note": "Verwalter von Geldmarktfonds",
+    "detail": "Investmentfondsverwalter, die Geldmarktfonds nach MMFR verwalten, sind die primäre Zielgruppe des Handbuchs.",
+    "status": "betroffen"
+   },
+   {
+    "name": "UCITS-Gesellschaften",
+    "note": "Soweit Geldmarktfonds verwaltet",
+    "detail": "UCITS-Verwalter sind im Handbuch ausdrücklich als relevante Zielgruppe genannt, sofern sie Geldmarktfonds führen.",
+    "status": "teilweise"
+   },
+   {
+    "name": "SIF-Verwalter",
+    "note": "Soweit Geldmarktfonds verwaltet",
+    "detail": "Verwalter von Spezialinvestmentfonds (SIFs) in Luxemburg sind im Handbuch als Zielgruppe aufgeführt.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Banken",
+    "note": "Kein direkter Anwendungsbereich",
+    "detail": "Das Handbuch richtet sich ausschließlich an Fondsverwalter. Banken ohne Fondsverwaltungsgeschäft sind nicht adressiert.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Version 1.4",
+    "title": "Aktualisierung des MMFR-Handbuchs",
+    "text": "Die CSSF hat das MMFR-Handbuch am 16.11.2026 auf Version 1.4 aktualisiert. Welche konkreten Änderungen gegenüber der Vorversion vorgenommen wurden, ist aus der Quelle nicht ersichtlich."
+   },
+   {
+    "ref": "Art. 37 MMFR",
+    "title": "User Guide Reporting unverändert",
+    "text": "Der begleitende User Guide zum Reporting nach Artikel 37 MMFR liegt weiterhin in Version 2 vor (zuletzt aktualisiert 30.08.2022) und wurde nicht aktualisiert."
+   }
+  ],
+  "todos": [
+   "Aktualisierte Version 1.4 des MMFR-Handbuchs herunterladen und mit der vorherigen Version vergleichen.",
+   "Interne Betriebsanweisungen und Verfahren zur MMFR-Compliance auf Anpassungsbedarf prüfen.",
+   "Meldeprozesse nach Artikel 37 MMFR gegen den User Guide (Version 2) validieren.",
+   "Zuständige Fachabteilungen über die Aktualisierung informieren und Umsetzungsverantwortung klären."
+  ],
+  "timeline": [
+   {
+    "date": "16.06.2020",
+    "label": "Erstveröffentlichung Handbuch",
+    "kind": "schritt"
+   },
+   {
+    "date": "04.05.2021",
+    "label": "User Guide Art. 37 veröff.",
+    "kind": "schritt"
+   },
+   {
+    "date": "30.08.2022",
+    "label": "User Guide auf Version 2",
+    "kind": "schritt"
+   },
+   {
+    "date": "16.11.2026",
+    "label": "Handbuch Version 1.4",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Für wen gilt das MMFR-Handbuch der CSSF?",
+    "a": "Das Handbuch richtet sich laut CSSF an Investmentfondsverwalter sowie Verwalter von SIFs, UCITS und Part-II-UCIs in Luxemburg, die Geldmarktfonds nach MMFR verwalten."
+   },
+   {
+    "q": "Was hat sich in Version 1.4 geändert?",
+    "a": "Die Quelle nennt keine konkreten inhaltlichen Änderungen gegenüber der Vorgängerversion. Institute müssen das Dokument selbst auf Änderungen sichten."
+   },
+   {
+    "q": "Gilt das Handbuch auch für den Meldeprozess nach Artikel 37 MMFR?",
+    "a": "Für das Reporting nach Artikel 37 MMFR stellt die CSSF einen separaten User Guide (Version 2, Stand 30.08.2022) sowie eine Fehlercodes-Liste bereit. Diese Dokumente wurden zuletzt nicht aktualisiert."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die konkreten inhaltlichen Änderungen von Version 1.4 gegenüber der Vorversion sind aus der Quelle nicht ersichtlich.",
+   "Es ist unklar, ob die Aktualisierung eine formelle Anpassungspflicht für bestehende Verfahren auslöst oder rein klarstellender Natur ist.",
+   "Der User Guide zu Artikel 37 MMFR wurde nicht aktualisiert; ob eine Überarbeitung geplant ist, geht aus der Quelle nicht hervor."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Dokumentenvergleich MMFR-Handbuch v1.3 vs. v1.4",
+     "change": "Das MMFR-Handbuch liegt in neuer Version vor; ohne Versionsvergleich ist nicht feststellbar, ob bestehende Kontrollen angepasst werden müssen.",
+     "steps": [
+      "Die Compliance-Funktion lädt Version 1.4 von der CSSF-Website herunter und stellt die Vorgängerversion bereit.",
+      "Beide Versionen werden systematisch verglichen, um geänderte oder neue Anforderungen zu identifizieren.",
+      "Das Ergebnis des Vergleichs wird dokumentiert und als Grundlage für eine etwaige Kontrollanpassung verwendet."
+     ]
+    },
+    {
+     "name": "Validierung MMFR-Meldeprozess (Art. 37)",
+     "change": "Der bestehende Meldeprozess nach Artikel 37 MMFR ist gegen den unveränderten User Guide Version 2 zu validieren, um sicherzustellen, dass keine Lücke zwischen Handbuch und Meldeverfahren entstanden ist.",
+     "steps": [
+      "Das Meldewesen prüft, ob die im aktualisierten Handbuch enthaltenen Vorgaben mit dem User Guide (Version 2, Stand 30.08.2022) übereinstimmen.",
+      "Abweichungen werden dokumentiert und der Compliance-Funktion gemeldet.",
+      "Bei Abweichungen wird eine Klärung mit der CSSF eingeleitet oder der interne Prozess angepasst."
+     ]
+    }
+   ],
+   "processes": [
+    {
+     "name": "MMFR-Compliance-Überprüfung",
+     "change": "Nach jeder Handbuch-Aktualisierung ist eine Überprüfung der internen MMFR-Umsetzung erforderlich, um sicherzustellen, dass Betriebsanweisungen und Verfahren dem aktuellen Stand entsprechen.",
+     "steps": [
+      "Die zuständige Fachabteilung gleicht alle internen MMFR-Verfahren mit den Vorgaben aus Version 1.4 ab.",
+      "Identifizierte Abweichungen werden priorisiert und einer verantwortlichen Person zur Behebung zugewiesen.",
+      "Das Ergebnis der Überprüfung wird in einem Prüfvermerk festgehalten und dem Management berichtet."
+     ]
+    }
+   ],
+   "policies": [
+    {
+     "name": "MMFR-Betriebsanweisung / Verfahrensrichtlinie",
+     "change": "Die interne Verfahrensrichtlinie zur MMFR-Umsetzung muss nach dem Versionsvergleich auf Aktualität geprüft und bei Bedarf angepasst werden.",
+     "steps": [
+      "Die Compliance-Funktion prüft nach dem Dokumentenvergleich, ob die Betriebsanweisung inhaltliche Anpassungen erfordert.",
+      "Notwendige Änderungen werden im internen Freigabeprozess verabschiedet und dokumentiert.",
+      "Die aktualisierte Richtlinie wird an alle betroffenen Mitarbeitenden kommuniziert."
+     ]
+    }
+   ],
+   "departments": [
+    {
+     "name": "Compliance",
+     "detail": "Koordiniert den Versionsvergleich, bewertet den Anpassungsbedarf und stellt die Kommunikation an Fachbereiche sicher.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Fondsverwaltung / Portfolio Management",
+     "detail": "Setzt geänderte operative Anforderungen aus dem Handbuch um und passt Fondsmanagement-Prozesse an.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Meldewesen / Reporting",
+     "detail": "Validiert den Meldeprozess nach Artikel 37 MMFR gegen die aktualisierten Handbuchvorgaben und den User Guide.",
+     "workload": "gering"
+    }
+   ]
+  },
+  "meta": {
+   "generated": "2026-11-21",
+   "model": "sonnet",
+   "source": "HTML, 4225 Zeichen, gekürzt auf 4225",
+   "dropped": 0,
+   "tokens": 10776
+  }
+ },
+ "luaifm-2026-11-19-loi-du-18-novembre-2026-portant-modification-n1-du-code-de-la-consommation-n2-de": {
+  "h1": "Umsetzung der Verbraucherkreditrichtlinie (EU) 2023/2225 in Luxemburg",
+  "seo_title": "Verbraucherkreditrichtlinie 2023/2225 Luxemburg",
+  "meta_description": "Luxemburg hat am 18.11.2026 die EU-Verbraucherkreditrichtlinie 2023/2225 in nationales Recht umgesetzt. In Kraft seit 19.11.2026.",
+  "lead": "Luxemburg hat am 18.11.2026 die Richtlinie (EU) 2023/2225 über Verbraucherkreditverträge in nationales Recht umgesetzt. Das Gesetz ist am 19.11.2026 in Kraft getreten.",
+  "aka": [
+   "Verbraucherkreditrichtlinie 2023/2225",
+   "Consumer Credit Directive CCD2",
+   "Richtlinie 2023/2225",
+   "Umsetzungsgesetz Verbraucherkredit Luxemburg",
+   "CCD2 Luxemburg"
+  ],
+  "summary": "Luxemburg hat am 18.11.2026 ein Gesetz zur Umsetzung der Richtlinie (EU) 2023/2225 verabschiedet, die die bisherige Richtlinie 2008/48/EG ablöst. Das Gesetz ändert das Verbrauchergesetzbuch und das Gesetz zur Schaffung einer Finanzaufsichtskommission. Kreditgebende Finanzunternehmen müssen Prozesse und Verträge anpassen.",
+  "overview": [
+   "Das luxemburgische Gesetz vom 18.11.2026 setzt die europäische Verbraucherkreditrichtlinie (EU) 2023/2225 um und hebt damit die bisherige Grundlage aus der Richtlinie 2008/48/EG ab. Es ändert das Verbrauchergesetzbuch sowie das Gesetz zur Schaffung einer Finanzaufsichtskommission.",
+   "Finanzunternehmen, die in Luxemburg Verbraucherkredite vergeben, müssen ihre Vertragsunterlagen, Informationspflichten und internen Prozesse an die neuen Anforderungen anpassen. Das Gesetz ist unmittelbar am 19.11.2026 in Kraft getreten."
+  ],
+  "facts": [
+   {
+    "label": "Datum des Gesetzes",
+    "value": "18.11.2026"
+   },
+   {
+    "label": "Inkrafttreten",
+    "value": "19.11.2026"
+   },
+   {
+    "label": "Umgesetzte Richtlinie",
+    "value": "(EU) 2023/2225"
+   },
+   {
+    "label": "Aufgehobene Richtlinie",
+    "value": "2008/48/EG"
+   },
+   {
+    "label": "Geänderte Gesetze",
+    "value": "Verbrauchergesetzbuch, Gesetz zur Finanzaufsichtskommission"
+   },
+   {
+    "label": "Rechtsraum",
+    "value": "Luxemburg"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Banken",
+    "note": "Verbraucherkreditgeschäft in LU betroffen",
+    "detail": "Banken, die in Luxemburg Verbraucherkreditverträge abschließen, müssen Vertragsunterlagen und Informationspflichten an die Anforderungen der Richtlinie (EU) 2023/2225 anpassen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Zahlungsinstitute",
+    "note": "Soweit Kreditprodukte angeboten werden",
+    "detail": "Zahlungsinstitute mit Verbraucherkreditangeboten in Luxemburg unterliegen den neuen Anforderungen des Umsetzungsgesetzes.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Kapitalverwaltungs-ges.",
+    "note": "Kein direkter Bezug zum Kerngeschäft",
+    "detail": "Kapitalverwaltungsgesellschaften vergeben in der Regel keine Verbraucherkredite; ein unmittelbarer Handlungsbedarf ergibt sich aus dem Gesetz nicht.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "(EU) 2023/2225",
+    "title": "Neue Verbraucherkreditanforderungen",
+    "text": "Die Richtlinie (EU) 2023/2225 löst die bisherige Richtlinie 2008/48/EG ab und stellt neue Anforderungen an Verbraucherkreditverträge, insbesondere zu Transparenz und Verbraucherinformation."
+   },
+   {
+    "ref": "Verbrauchergesetzbuch LU",
+    "title": "Änderung des Verbrauchergesetzbuchs",
+    "text": "Das luxemburgische Verbrauchergesetzbuch wird angepasst, um die neuen europäischen Vorgaben zu Kreditinformationen und Vertragsgestaltung abzubilden."
+   },
+   {
+    "ref": "",
+    "title": "Änderung Finanzaufsichtsrecht",
+    "text": "Das Gesetz zur Schaffung einer Finanzaufsichtskommission wird ebenfalls geändert, was auf angepasste Aufsichtsbefugnisse im Verbraucherkreditbereich hindeutet."
+   }
+  ],
+  "todos": [
+   "Vertragsunterlagen für Verbraucherkredite in Luxemburg auf Konformität mit (EU) 2023/2225 prüfen und anpassen.",
+   "Vorvertragliche Informationspflichten gegenüber Verbrauchern gemäß den neuen Anforderungen aktualisieren.",
+   "Interne Kreditvergabeprozesse auf Einhaltung der neuen Vorgaben hin überprüfen.",
+   "Schulungen für betroffene Bereiche zum neuen Rechtsrahmen durchführen."
+  ],
+  "timeline": [
+   {
+    "date": "18.11.2026",
+    "label": "Gesetz verabschiedet",
+    "kind": "schritt"
+   },
+   {
+    "date": "19.11.2026",
+    "label": "Inkrafttreten",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Ab wann gilt das neue Verbraucherkreditrecht in Luxemburg?",
+    "a": "Das Gesetz ist am 19.11.2026 in Kraft getreten. Kreditgebende Institute müssen die Anforderungen ab diesem Datum erfüllen."
+   },
+   {
+    "q": "Welche bisherige Regelung wird abgelöst?",
+    "a": "Die Richtlinie 2008/48/EG über Verbraucherkreditverträge wird durch die Richtlinie (EU) 2023/2225 ersetzt. Das luxemburgische Umsetzungsgesetz vollzieht diesen Wechsel auf nationaler Ebene."
+   },
+   {
+    "q": "Welche Institute sind in Luxemburg betroffen?",
+    "a": "Betroffen sind alle Finanzunternehmen, die in Luxemburg Verbraucherkreditverträge abschließen, insbesondere Banken und vergleichbare Kreditgeber."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die Quelle (Legilux-Seite) war zum Zeitpunkt der Erstellung nicht abrufbar; konkrete Einzelanforderungen der nationalen Umsetzung konnten nicht verifiziert werden.",
+   "Übergangszeiträume oder abgestufte Anwendungszeitpunkte einzelner Anforderungen sind aus den verfügbaren Daten nicht ableitbar.",
+   "Welche spezifischen Änderungen am Gesetz zur Finanzaufsichtskommission vorgenommen wurden, ist aus den verfügbaren Daten nicht ersichtlich."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Prüfung vorvertraglicher Informationsdokumente",
+     "change": "Die Richtlinie (EU) 2023/2225 stellt neue Anforderungen an vorvertragliche Verbraucherinformationen; bestehende Prüfprozesse für Kreditdokumente müssen auf Vollständigkeit und Aktualität geprüft werden.",
+     "steps": [
+      "Die Compliance-Funktion erstellt eine Checkliste der nach (EU) 2023/2225 erforderlichen vorvertraglichen Informationselemente.",
+      "Bestehende Formulare und Musterverträge werden gegen die Checkliste abgeglichen; Lücken werden dokumentiert.",
+      "Die Rechtsabteilung passt Dokumente an und gibt sie frei; das Ergebnis ist ein aktualisierter Dokumentenbestand."
+     ]
+    }
+   ],
+   "processes": [
+    {
+     "name": "Kreditantrags- und Vertragsabschlussprozess",
+     "change": "Der Kreditvergabeprozess muss die neuen Informations- und Transparenzpflichten gegenüber Verbrauchern abbilden, die das Umsetzungsgesetz vom 18.11.2026 einführt.",
+     "steps": [
+      "Die Prozessverantwortlichen im Kreditbereich identifizieren alle Prozessschritte, in denen Verbraucherinformationen übergeben oder eingeholt werden.",
+      "Prozessanpassungen werden dokumentiert und im Verfahrenshandbuch aktualisiert; Ergebnis ist ein genehmigter Soll-Prozess.",
+      "Der aktualisierte Prozess wird in den operativen Betrieb überführt und in einem Testlauf vor dem nächsten Kreditabschluss überprüft."
+     ]
+    }
+   ],
+   "policies": [
+    {
+     "name": "Kreditvergaberichtlinie (Verbraucherkredit)",
+     "change": "Die interne Kreditvergaberichtlinie muss den Wechsel von der Richtlinie 2008/48/EG zu (EU) 2023/2225 als neue Rechtsgrundlage widerspiegeln und etwaige inhaltliche Änderungen der Anforderungen einarbeiten.",
+     "steps": [
+      "Die Rechtsabteilung analysiert die inhaltlichen Unterschiede zwischen 2008/48/EG und (EU) 2023/2225 und erstellt eine Delta-Übersicht.",
+      "Die Richtlinie wird auf Basis der Delta-Übersicht überarbeitet und dem zuständigen Gremium zur Genehmigung vorgelegt.",
+      "Nach Genehmigung wird die aktualisierte Richtlinie kommuniziert und tritt in Kraft; das Versionsdokument wird archiviert."
+     ]
+    }
+   ],
+   "departments": [
+    {
+     "name": "Compliance",
+     "detail": "Koordiniert die Umsetzung der neuen Anforderungen, prüft Dokumente und Prozesse auf Konformität mit (EU) 2023/2225 und berichtet an die Geschäftsleitung.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Rechtsabteilung",
+     "detail": "Analysiert die Änderungen gegenüber der bisherigen Richtlinie 2008/48/EG, passt Vertragsunterlagen an und aktualisiert interne Richtlinien.",
+     "workload": "hoch"
+    },
+    {
+     "name": "Kreditbereich",
+     "detail": "Setzt die angepassten Prozesse und Dokumentenstandards im Tagesgeschäft um und stellt sicher, dass Mitarbeitende geschult sind.",
+     "workload": "mittel"
+    }
+   ]
+  },
+  "meta": {
+   "generated": "2026-11-21",
+   "model": "sonnet",
+   "source": "HTML, 7 Zeichen, gekürzt auf 7",
+   "dropped": 0,
+   "tokens": 9834
+  }
+ },
  "macomp-2026-11-18-konsultation-12-2026-entwurf-der-neufassung-des-rundschreibens-macomp-mindestanf": {
   "h1": "BaFin konsultiert Neufassung des MaComp-Rundschreibens (Konsultation 12/2026)",
   "seo_title": "MaComp Neufassung, BaFin Konsultation 12/2026",
