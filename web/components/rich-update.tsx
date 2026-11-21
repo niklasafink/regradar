@@ -151,9 +151,9 @@ export function RichUpdateSections(
         <Grid n={rich.audience.length} className="mt-4">
           {rich.audience.map((a) => (
             <li key={a.name} className={CELL}>
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <b className="font-semibold text-slate-900">{a.name}</b>
-                <span className={`${PILL} ${STATUS_PILL[a.status]}`}>{a.status}</span>
+              <div className="flex items-start justify-between gap-3">
+                <b className="min-w-0 font-semibold leading-snug text-slate-900">{a.name}</b>
+                <span className={`${PILL} shrink-0 whitespace-nowrap ${STATUS_PILL[a.status]}`}>{a.status}</span>
               </div>
               <p className="mt-1 text-sm text-slate-600">{a.detail}</p>
             </li>
@@ -163,9 +163,9 @@ export function RichUpdateSections(
           <Grid n={ia.departments.length} className="mt-3">
             {ia.departments.map((d) => (
               <li key={d.name} className={CELL}>
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <b className="font-semibold text-slate-900">{d.name}</b>
-                  <span className={`${PILL} ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
+                <div className="flex items-start justify-between gap-3">
+                  <b className="min-w-0 font-semibold leading-snug text-slate-900">{d.name}</b>
+                  <span className={`${PILL} shrink-0 whitespace-nowrap ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
                 </div>
                 <p className="mt-1 text-sm text-slate-600">{d.detail}</p>
               </li>

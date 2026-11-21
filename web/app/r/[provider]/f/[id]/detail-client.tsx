@@ -7,6 +7,7 @@ import { Chrome, Footer } from "@/components/chrome";
 import {
   Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious,
 } from "@/components/ui/carousel";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import {
   daysAgo, daysUntil, deadlineExpired, deadlineLabel, dt, firstParagraph, fmtDate, tx,
 } from "@/lib/core";
@@ -19,6 +20,9 @@ import { useState } from "react";
 import type { Framework, Provider, Topic, Txt, Update } from "@/lib/base";
 
 /** Update mit vorberechnetem Link auf die Einzelseite (/u/…). */
+
+// Trackpad-Wischgesten (horizontales Scrollen) bewegen den Rahmenwerk-Slider.
+const CHILD_SLIDER_PLUGINS = [WheelGesturesPlugin()];
 export type LinkedUpdate = Update & { href: string };
 export type LinkedFramework = Omit<Framework, "u"> & { u: LinkedUpdate[] };
 
@@ -174,7 +178,7 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
 
         {/* Slider als Filter: Alle, Hauptstandard, je ein Unterrahmenwerk */}
         {kids.length > 0 && (
-          <Carousel opts={{ align: "start" }} className="mt-5 flex items-center gap-3">
+          <Carousel opts={{ align: "start" }} plugins={CHILD_SLIDER_PLUGINS} className="mt-5 flex items-center gap-3">
             <div className="min-w-0 flex-1">
             <CarouselContent>
               <CarouselItem className="basis-auto">
