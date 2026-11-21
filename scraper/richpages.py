@@ -35,14 +35,15 @@ Faktenregeln:
 - audience: wer ist betroffen (Institutsarten, Funktionen). status "nicht betroffen" nur, wenn die Quelle das ausdrücklich sagt oder der Anwendungsbereich es klar ausschließt.
 
 Stil: Deutsch, kurze klare Sätze, aktiv. Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A, T+1) bleiben. Keine Mittelpunkte als Trenner, keine Versalien, keine Gedankenstrich-Einschübe, keine Floskeln, kein Marketing. Antworte ausschließlich mit einem JSON-Objekt (kein Markdown, kein Text davor oder danach) mit genau diesen Feldern:
-h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (40 bis 60 Wörter, zitierfähig), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (1 bis 4 Objekte {ref max. 20 Zeichen oder leer, title max. 40 Zeichen, text max. 220 Zeichen}), todos (2 bis 5 Strings), timeline (0 bis 6 Objekte {date TT.MM.JJJJ, label max. 26 Zeichen, kind "schritt"|"kern"|"frist"}), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings).
-Gesamtumfang höchstens 900 Wörter."""
+h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (40 bis 60 Wörter, zitierfähig), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (1 bis 4 Objekte {ref max. 20 Zeichen oder leer, title max. 40 Zeichen, text max. 220 Zeichen}), todos (2 bis 5 Strings), timeline (0 bis 6 Objekte {date TT.MM.JJJJ, label max. 26 Zeichen, kind "schritt"|"kern"|"frist"}), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings), impact_analysis (Objekt mit vier Listen: controls 0 bis 6 Objekte {name max. 60 Zeichen, change max. 200 Zeichen, action "neu einrichten"|"anpassen"|"prüfen"}, processes 0 bis 6 gleich aufgebaut, policies 0 bis 5 gleich aufgebaut, departments 1 bis 6 Objekte {name max. 30 Zeichen, detail max. 160 Zeichen, workload "hoch"|"mittel"|"gering"}).
+impact_analysis: Nur Auswirkungen, die aus QUELLE oder SEITE folgen. controls = Kontrollen, die Institute anpassen oder neu aufsetzen müssen; processes = betroffene Geschäftsprozesse; policies = Richtlinien und Regelwerke, die zu ändern sind; departments = betroffene Abteilungen oder Funktionen. Ist ein Bereich aus der Quelle nicht ableitbar, Liste leer lassen statt zu raten.
+Gesamtumfang höchstens 1100 Wörter."""
 
 SCHEMA = {
     "type": "object",
     "additionalProperties": False,
     "required": ["h1", "seo_title", "meta_description", "lead", "aka", "summary", "overview",
-                 "facts", "audience", "changes", "todos", "timeline", "faq", "impact", "open_points"],
+                 "facts", "audience", "changes", "todos", "timeline", "faq", "impact", "open_points", "impact_analysis"],
     "properties": {
         "h1": {"type": "string", "description": "Deutsche Überschrift, max. 90 Zeichen, mit Kernbegriff und offizieller Kennung in Klammern falls vorhanden"},
         "seo_title": {"type": "string", "description": "max. 60 Zeichen, Suchbegriff vorn"},
@@ -74,6 +75,29 @@ SCHEMA = {
                 "required": ["q", "a"], "properties": {"q": {"type": "string"}, "a": {"type": "string", "description": "max. 350 Zeichen"}}}},
         "impact": {"type": "string", "enum": ["hoch", "mittel", "gering"]},
         "open_points": {"type": "array", "items": {"type": "string"}},
+        "impact_analysis": {"type": "object", "additionalProperties": False,
+                            "required": ["controls", "processes", "policies", "departments"], "properties": {
+            "controls": {"type": "array", "maxItems": 6, "items": {"type": "object", "additionalProperties": False,
+                         "required": ["name", "change", "action"], "properties": {
+                             "name": {"type": "string", "description": "max. 60 Zeichen"},
+                             "change": {"type": "string", "description": "max. 200 Zeichen, was sich ändert"},
+                             "action": {"type": "string", "enum": ["neu einrichten", "anpassen", "prüfen"]}}}},
+            "processes": {"type": "array", "maxItems": 6, "items": {"type": "object", "additionalProperties": False,
+                          "required": ["name", "change", "action"], "properties": {
+                              "name": {"type": "string", "description": "max. 60 Zeichen"},
+                              "change": {"type": "string", "description": "max. 200 Zeichen, was sich ändert"},
+                              "action": {"type": "string", "enum": ["neu einrichten", "anpassen", "prüfen"]}}}},
+            "policies": {"type": "array", "maxItems": 5, "items": {"type": "object", "additionalProperties": False,
+                         "required": ["name", "change", "action"], "properties": {
+                             "name": {"type": "string", "description": "max. 60 Zeichen"},
+                             "change": {"type": "string", "description": "max. 200 Zeichen, was sich ändert"},
+                             "action": {"type": "string", "enum": ["neu einrichten", "anpassen", "prüfen"]}}}},
+            "departments": {"type": "array", "maxItems": 6, "items": {"type": "object", "additionalProperties": False,
+                            "required": ["name", "detail", "workload"], "properties": {
+                                "name": {"type": "string", "description": "max. 30 Zeichen"},
+                                "detail": {"type": "string", "description": "max. 160 Zeichen, warum betroffen"},
+                                "workload": {"type": "string", "enum": ["hoch", "mittel", "gering"]}}}},
+        }},
     },
 }
 
@@ -202,6 +226,19 @@ def validate(d):
         c.setdefault("ref", "")
     if d["impact"] not in ("hoch", "mittel", "gering"):
         d["impact"] = "mittel"
+    ia = d["impact_analysis"]
+    if not isinstance(ia, dict):
+        return "impact_analysis kein Objekt"
+    for k in ("controls", "processes", "policies", "departments"):
+        if not isinstance(ia.get(k), list):
+            return f"impact_analysis.{k} keine Liste"
+    for k in ("controls", "processes", "policies"):
+        for x in ia[k]:
+            if x.get("action") not in ("neu einrichten", "anpassen", "prüfen") or not x.get("name"):
+                return f"impact_analysis.{k} ungültig"
+    for x in ia["departments"]:
+        if x.get("workload") not in ("hoch", "mittel", "gering") or not x.get("name"):
+            return "impact_analysis.departments ungültig"
     return ""
 
 

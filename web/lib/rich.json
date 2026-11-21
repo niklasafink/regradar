@@ -917,6 +917,167 @@
    "tokens": 9338
   }
  },
+ "brrd-2026-11-20-2026-7947-annex-ii-of-instructions-for-resolution-planning-report-representation": {
+  "h1": "SFT-Meldung im Abwicklungsplanungsbericht (EBA Q&A 2026_7947)",
+  "seo_title": "SFT im Abwicklungsplanungsbericht: EBA Q&A 2026_7947",
+  "meta_description": "EBA Q&A 2026_7947 vom 20.11.2026: So melden Institute SFTs unter nicht anerkanntem Netting in den Templates Z16.00 und Z02.00.a.",
+  "lead": "Die EBA hat am 20.11.2026 geklärt, wie SFTs unter einem nicht anerkannten Netting-Vertrag im Abwicklungsplanungsbericht zu melden sind. Betroffen sind Kreditinstitute, die diesen Bericht nach der ITS (EU) 2025/2303 erstellen.",
+  "aka": [
+   "Q&A 2026_7947",
+   "SFT Netting Abwicklungsplanungsbericht",
+   "Template Z16.00 Z02.00 SFT",
+   "BRRD Reporting SFT Netting",
+   "ITS Resolution Planning Reporting Q&A"
+  ],
+  "summary": "Die EBA stellt in Q&A 2026_7947 klar: Im Abwicklungsplanungsbericht werden SFTs unter derselben Netting-Vereinbarung in Z16.00 je Netting-Set gemeldet. In Z02.00.a zählt die vertraglich resultierende Nettoverbindlichkeit, auch ohne Anerkennung des Netting für Rechnungslegung oder Aufsicht. Der Buchwert in Z02.00.b folgt weiter eigener Definition.",
+  "overview": [
+   "Ein Kreditinstitut hatte gefragt, wie SFTs unter einem Netting-Vertrag zu melden sind, der weder für die Rechnungslegung noch für aufsichtliche Zwecke anerkannt ist. Die EBA antwortet im Rahmen der ITS zur Meldung für die Abwicklungsplanung (Verordnung (EU) 2025/2303) und der BRRD.",
+   "Für Z16.00 gilt: SFTs derselben Netting-Vereinbarung werden je Netting-Set gemeldet. Für Z02.00.a gilt: Der ausstehende Betrag bildet die Verbindlichkeitsforderung nach den Vertragsbedingungen ab, einschließlich Netting, sofern sich daraus effektiv eine Nettoverbindlichkeit ergibt. Fehlende Anerkennung des Netting ist dafür allein nicht entscheidend. Der Buchwert in Z02.00.b bleibt an seine Rechnungslegungsdefinition gebunden und kann abweichen."
+  ],
+  "facts": [
+   {
+    "label": "Kennung",
+    "value": "EBA Q&A 2026_7947"
+   },
+   {
+    "label": "Veröffentlicht",
+    "value": "20.11.2026"
+   },
+   {
+    "label": "Rechtsakt",
+    "value": "BRRD (Richtlinie 2014/59/EU), ITS (EU) 2025/2303"
+   },
+   {
+    "label": "Betroffene Templates",
+    "value": "Z16.00, Z02.00.a, Z02.00.b"
+   },
+   {
+    "label": "Status",
+    "value": "Final"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kreditinstitute",
+    "note": "Ersteller des Abwicklungsplanungsberichts",
+    "detail": "Institute, die den Abwicklungsplanungsbericht nach der ITS erstellen und SFTs unter nicht anerkanntem Netting halten, müssen ihre Meldung prüfen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Meldewesen",
+    "note": "Befüllung der Templates Z16.00 und Z02.00",
+    "detail": "Das Meldewesen setzt die Klarstellung bei Netting-Sets und ausstehenden Beträgen um.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Rechnungswesen",
+    "note": "Buchwert in Z02.00.b",
+    "detail": "Der Buchwert folgt weiter der Rechnungslegungsdefinition und kann vom ausstehenden Betrag abweichen.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Z16.00",
+    "title": "Meldung je Netting-Set",
+    "text": "SFTs, die unter dieselbe Netting-Vereinbarung fallen, werden als Netting-Set nach den Template-Anweisungen gemeldet."
+   },
+   {
+    "ref": "Z02.00.a",
+    "title": "Ausstehender Betrag netto",
+    "text": "Der Betrag spiegelt die vertraglich resultierende Verbindlichkeitsforderung inklusive Netting, wenn effektiv eine Nettoverbindlichkeit entsteht."
+   },
+   {
+    "ref": "Z02.00.b",
+    "title": "Buchwert unverändert",
+    "text": "Der Buchwert bleibt an die separate Rechnungslegungsdefinition gebunden und kann vom ausstehenden Betrag abweichen."
+   }
+  ],
+  "todos": [
+   "Bestand an SFTs mit nicht anerkanntem Netting-Vertrag identifizieren.",
+   "Befüllung von Z16.00 auf Meldung je Netting-Set prüfen.",
+   "Ermittlung des ausstehenden Betrags in Z02.00.a auf vertragliche Nettologik prüfen.",
+   "Abgrenzung zwischen ausstehendem Betrag und Buchwert in Z02.00.b dokumentieren."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Q&A final veröffentlicht",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Was klärt die EBA in Q&A 2026_7947?",
+    "a": "Wie SFTs unter einem Netting-Vertrag ohne Anerkennung für Rechnungslegung oder Aufsicht in Z16.00 und Z02.00.a zu melden sind."
+   },
+   {
+    "q": "Zählt fehlende Netting-Anerkennung für den ausstehenden Betrag?",
+    "a": "Nein, nicht allein. In Z02.00.a zählt die vertraglich resultierende Verbindlichkeitsforderung, auch mit Netting bei effektiver Nettoverbindlichkeit."
+   },
+   {
+    "q": "Ändert sich der Buchwert in Z02.00.b?",
+    "a": "Nein. Er bleibt durch seine separate Rechnungslegungsdefinition bestimmt und kann vom ausstehenden Betrag abweichen."
+   }
+  ],
+  "impact": "gering",
+  "open_points": [
+   "Die Quelle nennt keine Umsetzungsfrist und keine Pflicht zur Neueinreichung früherer Berichte.",
+   "Der Wortlaut der Template-Anweisungen zu Z16.00 und Randziffer 76 ist nicht Teil der Quelle."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Plausibilitätsprüfung Z02.00.a gegen Z02.00.b",
+     "change": "Abweichungen zwischen ausstehendem Betrag und Buchwert sind fachlich erklärbar und zu dokumentieren.",
+     "action": "prüfen"
+    },
+    {
+     "name": "Netting-Set-Zuordnung bei SFTs",
+     "change": "Zuordnung der SFTs zu Netting-Sets in Z16.00 gemäß derselben Netting-Vereinbarung sicherstellen.",
+     "action": "prüfen"
+    }
+   ],
+   "processes": [
+    {
+     "name": "Befüllung Abwicklungsplanungsbericht",
+     "change": "Berechnung des ausstehenden Betrags in Z02.00.a folgt der vertraglichen Nettoverbindlichkeit, unabhängig von der Anerkennung des Netting.",
+     "action": "anpassen"
+    }
+   ],
+   "policies": [
+    {
+     "name": "Meldewesen-Arbeitsanweisung Resolution Planning",
+     "change": "Auslegung zu SFTs unter nicht anerkanntem Netting aufnehmen, sofern bisher abweichend gehandhabt.",
+     "action": "prüfen"
+    }
+   ],
+   "departments": [
+    {
+     "name": "Meldewesen",
+     "detail": "Setzt die Klarstellung in den Templates Z16.00 und Z02.00 um.",
+     "workload": "gering"
+    },
+    {
+     "name": "Rechnungswesen",
+     "detail": "Stimmt Buchwert und ausstehenden Betrag ab.",
+     "workload": "gering"
+    },
+    {
+     "name": "Abwicklungsplanung",
+     "detail": "Prüft die Konsistenz des Berichts.",
+     "workload": "gering"
+    }
+   ]
+  },
+  "meta": {
+   "generated": "2026-11-21",
+   "model": "sonnet",
+   "source": "HTML, 2895 Zeichen, gekürzt auf 2895",
+   "dropped": 2,
+   "tokens": 13105
+  }
+ },
  "brrd-2026-11-20-reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-template-z-02": {
   "h1": "Treuhandkonten in der Abwicklungsplanung: EBA klärt Meldung in Z 02.00 (Q&A 2026_7988)",
   "seo_title": "EBA Q&A 2026_7988: Treuhandkonten Z 02.00",

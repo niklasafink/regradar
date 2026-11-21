@@ -4,6 +4,13 @@
 import RICH from "./rich.json";
 
 export type RichAudience = { name: string; note: string; detail: string; status: "betroffen" | "teilweise" | "nicht betroffen" };
+export type RichImpactItem = { name: string; change: string; action: "neu einrichten" | "anpassen" | "prüfen" };
+export type RichImpactAnalysis = {
+  controls: RichImpactItem[];
+  processes: RichImpactItem[];
+  policies: RichImpactItem[];
+  departments: { name: string; detail: string; workload: "hoch" | "mittel" | "gering" }[];
+};
 export type RichUpdate = {
   h1: string;
   seo_title: string;
@@ -20,6 +27,7 @@ export type RichUpdate = {
   faq: { q: string; a: string }[];
   impact: "hoch" | "mittel" | "gering";
   open_points: string[];
+  impact_analysis?: RichImpactAnalysis;
   meta: { generated: string; model: string; source: string; dropped: number };
 };
 
