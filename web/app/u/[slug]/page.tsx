@@ -142,7 +142,7 @@ export default async function UpdatePage(
       />
       <Chrome />
 
-      <main className="mx-auto max-w-4xl px-3 pb-24 sm:px-4">
+      <main className="mx-auto max-w-4xl px-3 pb-8 sm:px-4">
         <article className="mt-6 min-w-0">
           <div className="flex flex-wrap items-center gap-2 text-xs print:hidden">
             <Link

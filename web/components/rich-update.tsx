@@ -65,7 +65,7 @@ export function richToc(rich: RichUpdate): TocItem[] {
   ];
 }
 
-const H2 = "font-heading text-xl font-medium tracking-tight text-slate-900";
+const H2 = "font-heading text-xl font-bold tracking-tight text-slate-900";
 const SECTION = "mt-12 scroll-mt-24";
 const PILL = "inline-flex shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium";
 
@@ -80,17 +80,22 @@ const LOAD_PILL = {
   gering: "border border-slate-200 text-slate-400",
 } as const;
 
-function Card({ title, sub, children }: { title: string; sub: string; children: React.ReactNode }) {
+/** Tabelle mit einer Spalte je Eintrag; ab fünf Einträgen auf zwei Zeilen verteilt. */
+function Grid({ n, children, className = "" }: { n: number; children: React.ReactNode; className?: string }) {
+  const cols = n <= 4 ? n : Math.ceil(n / 2);
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200">
-      <div className="border-b border-slate-100 px-4 py-3">
-        <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
-        <p className="text-xs text-slate-500">{sub}</p>
-      </div>
-      <ul className="divide-y divide-slate-100">{children}</ul>
+    <div className={`overflow-hidden rounded-2xl border border-slate-200 ${className}`}>
+      <ul
+        className="-mb-px -mr-px grid grid-cols-1 sm:[grid-template-columns:repeat(var(--c),minmax(0,1fr))]"
+        style={{ "--c": cols } as React.CSSProperties}
+      >
+        {children}
+      </ul>
     </div>
   );
 }
+
+const CELL = "border-b border-r border-slate-100 px-4 py-3";
 
 function ImpactGroup({ title, items }: { title: string; items: RichImpactItem[] }) {
   if (items.length === 0) return null;
@@ -98,7 +103,7 @@ function ImpactGroup({ title, items }: { title: string; items: RichImpactItem[] 
     <div className="mt-8">
       <h3 className="font-heading text-lg font-medium tracking-tight text-slate-900">{title}</h3>
       {items.map((x) => (
-        <div key={x.name} className="mt-4">
+        <div key={x.name} className="mt-4 pl-5">
           <h4 className="font-semibold text-slate-900">{x.name}</h4>
           <ul className="mt-1.5 list-disc space-y-1.5 pl-5">
             <li>{x.change}</li>
@@ -129,12 +134,13 @@ export function RichUpdateSections(
         </ul>
       </section>
 
+      {/* Eckdaten in einer Zeile; die Spalten richten sich nach der Länge des Inhalts. */}
       <dl className="mt-4 overflow-hidden rounded-2xl border border-slate-200 text-sm">
-        <div className="-mb-px -mr-px flex flex-wrap">
+        <div className="-mb-px -mr-px grid grid-cols-2 md:flex">
           {facts.map((f) => (
-            <div key={f.label} className="min-w-[10.5rem] grow basis-44 border-b border-r border-slate-100 px-4 py-2.5">
+            <div key={f.label} className="border-b border-r border-slate-100 px-3 py-2 md:flex-auto">
               <dt className="text-xs text-slate-500">{f.label}</dt>
-              <dd className="mt-0.5 text-slate-900">{f.value}</dd>
+              <dd className={`mt-0.5 leading-snug text-slate-900 ${f.value.length <= 24 ? "md:whitespace-nowrap" : ""}`}>{f.value}</dd>
             </div>
           ))}
         </div>
@@ -142,32 +148,30 @@ export function RichUpdateSections(
 
       <section id="relevanz" className={SECTION}>
         <h2 className={H2}>Für wen relevant</h2>
-        <div className={`mt-4 grid gap-4 ${ia?.departments.length ? "md:grid-cols-2" : ""}`}>
-          <Card title="Institutsgruppen" sub="Welche Institute die Meldung betrifft">
-            {rich.audience.map((a) => (
-              <li key={a.name} className="flex items-start justify-between gap-3 px-4 py-3">
-                <div className="min-w-0">
-                  <b className="font-semibold text-slate-900">{a.name}</b>
-                  <p className="mt-0.5 text-sm text-slate-600">{a.detail}</p>
-                </div>
+        <Grid n={rich.audience.length} className="mt-4">
+          {rich.audience.map((a) => (
+            <li key={a.name} className={CELL}>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <b className="font-semibold text-slate-900">{a.name}</b>
                 <span className={`${PILL} ${STATUS_PILL[a.status]}`}>{a.status}</span>
+              </div>
+              <p className="mt-1 text-sm text-slate-600">{a.detail}</p>
+            </li>
+          ))}
+        </Grid>
+        {ia && ia.departments.length > 0 && (
+          <Grid n={ia.departments.length} className="mt-3">
+            {ia.departments.map((d) => (
+              <li key={d.name} className={CELL}>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <b className="font-semibold text-slate-900">{d.name}</b>
+                  <span className={`${PILL} ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
+                </div>
+                <p className="mt-1 text-sm text-slate-600">{d.detail}</p>
               </li>
             ))}
-          </Card>
-          {ia && ia.departments.length > 0 && (
-            <Card title="Abteilungen" sub="Wo im Institut Aufwand entsteht">
-              {ia.departments.map((d) => (
-                <li key={d.name} className="flex items-start justify-between gap-3 px-4 py-3">
-                  <div className="min-w-0">
-                    <b className="font-semibold text-slate-900">{d.name}</b>
-                    <p className="mt-0.5 text-sm text-slate-600">{d.detail}</p>
-                  </div>
-                  <span className={`${PILL} ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
-                </li>
-              ))}
-            </Card>
-          )}
-        </div>
+          </Grid>
+        )}
       </section>
 
       <section id="worum" className={SECTION}>
@@ -195,9 +199,6 @@ export function RichUpdateSections(
       {ia && hasImpact(ia) ? (
         <section id="impact" className={SECTION}>
           <h2 className={H2}>Impact-Analyse</h2>
-          <p className="mt-1 text-sm text-slate-500">
-            Was sich an Kontrollen, Prozessen und Policies ändert und was Ihr Institut dafür tun muss.
-          </p>
           <ImpactGroup title="Kontrollen" items={ia.controls} />
           <ImpactGroup title="Prozesse" items={ia.processes} />
           <ImpactGroup title="Policies" items={ia.policies} />
@@ -233,7 +234,7 @@ export function RichUpdateSections(
         </div>
       </section>
 
-      <p className="mt-12 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
+      <p className="mt-10 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
         Hinweis zur Erstellung und Haftung: Dieser Beitrag wurde mit Unterstützung künstlicher Intelligenz aus dem verlinkten
         Originaldokument erstellt und regelbasiert geprüft. Trotz sorgfältiger Prüfung können Fehler, Auslassungen oder
         zwischenzeitliche Rechtsänderungen nicht ausgeschlossen werden. Bitte hinterfragen Sie die Inhalte kritisch und prüfen

@@ -469,7 +469,7 @@ export function Footer({ hideSources = false }: { hideSources?: boolean } = {}) 
   const { lang } = useStore();
   return (
     <footer className="border-t border-slate-100 bg-white">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+      <div className={`mx-auto max-w-6xl px-4 sm:px-6 ${hideSources ? "py-6" : "py-14"}`}>
         {!hideSources && (
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-3xl">
@@ -507,7 +507,7 @@ export function Footer({ hideSources = false }: { hideSources?: boolean } = {}) 
           </Link>
         </div>
         )}
-        <div className={`${hideSources ? "" : "mt-12 "}border-t border-slate-100 pt-6`}>
+        <div className={hideSources ? "" : "mt-12 border-t border-slate-100 pt-6"}>
           <p className="text-xs leading-relaxed text-slate-400">
             {lang === "de"
               ? "Die Inhalte auf dieser Website wurden mit Unterstützung von KI zusammengefasst. Fehler können nicht ausgeschlossen werden. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir als Websiteanbieter keine Haftung."
