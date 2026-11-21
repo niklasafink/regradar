@@ -158,6 +158,48 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-23": {
+   "window": [
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-22"
+   ],
+   "keys": [
+    "2026-7936-finrep-f-16-08-treatment-of-dora-related-ict-service-provider-costs-an",
+    "2026-7947-annex-ii-of-instructions-for-resolution-planning-report-representation",
+    "2026-7973-z07-01-3-value-of-transactions-for-securities-settlement-services-func",
+    "2026-7976-finrep-template-f-20-04",
+    "2026-7978-supervisory-reporting-finrep",
+    "2026-7988-reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-temp",
+    "2026-8014-finrep-f22-01-row-0080-column-0010-f22-02-row-0060-column-0010",
+    "commission-welcomes-political-agreement-to-simplify-transparency-rules-for-susta",
+    "thematic-review-self-assessment-questionnaires-submitted-by-ifms-relating-to-cir"
+   ],
+   "hook": "Die EU vereinfacht die SFDR-Regeln: Ein neues Drei-Kategorien-System soll Greenwashing verhindern.",
+   "folge": "Die Überarbeitung der SFDR führt ein Drei-Kategorien-System für nachhaltige Finanzprodukte ein: „sustainable“, „transition“ oder „ESG basics“. Dies soll Anlegern die Bewertung erleichtern und die Offenlegungspflichten für Finanzmarktteilnehmer straffen.",
+   "cover": "EU-Kommission: SFDR-Regeln werden vereinfacht",
+   "zeilen": [
+    "CSSF: Thematische Prüfung zu Selbstbewertungsfragebögen von Investmentfondsmanagern veröffentlicht",
+    "EBA: Sechs Q&A zu FINREP-Meldungen, u.a. zu DORA-Kosten und geografischer Aufschlüsselung",
+    "EBA: Drei Q&A zu BRRD-Reporting, u.a. zu SFTs und Wertpapierabwicklungsdienstleistungen"
+   ],
+   "frage": "Welche Herausforderungen sehen Sie bei der Kategorisierung Ihrer Finanzprodukte nach den neuen SFDR-Regeln?",
+   "top": "commission-welcomes-political-agreement-to-simplify-transparency-rules-for-susta",
+   "kern": {
+    "2026-7936-finrep-f-16-08-treatment-of-dora-related-ict-service-provider-costs-an": "Die EBA präzisiert, dass DORA-bezogene IKT-Kosten und -Verluste in FINREP F 16.08 unter „Sonstige Verwaltungsaufwendungen – IT-Outsourcing“ zu melden sind.",
+    "2026-7947-annex-ii-of-instructions-for-resolution-planning-report-representation": "Die EBA stellt klar, dass SFTs im Abwicklungsplanungsbericht als Netting-Set zu melden sind, auch wenn Netting nicht für Rechnungslegungszwecke anerkannt ist.",
+    "2026-7973-z07-01-3-value-of-transactions-for-securities-settlement-services-func": "Die EBA präzisiert, dass „gesendete Transaktionen“ im BRRD-Reporting Wertpapierübertragungen im Kundenauftrag umfassen, aber keine reinen Zins- oder Dividendenzahlungen.",
+    "2026-7988-reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-temp": "Die EBA stellt klar, dass Treuhandkonten ohne bekannte Begünstigte nicht automatisch als gedeckte Einlagen im Abwicklungsplanungsbericht gelten.",
+    "2026-7976-finrep-template-f-20-04": "Die EBA präzisiert, dass für FINREP F 20.04 bei Geschäften mit Zweigstellen das Land des Hauptsitzes des Geschäftspartners maßgeblich ist.",
+    "2026-7978-supervisory-reporting-finrep": "Die EBA stellt klar, dass die Übertragung des kumulierten OCI bei Ausbuchung von FVOCI-Eigenkapitalinstrumenten in FINREP F 46.00 unter „einbehaltene Gewinne“ zu melden ist.",
+    "2026-8014-finrep-f22-01-row-0080-column-0010-f22-02-row-0060-column-0010": "Die EBA präzisiert, dass alle Verwahr- und Depotdienstleistungen sowie zugehörige Erträge und Aufwendungen in den FINREP-Templates F 22.01 und F 22.02 zu melden sind.",
+    "commission-welcomes-political-agreement-to-simplify-transparency-rules-for-susta": "Die EU-Kommission begrüßt die politische Einigung zur Überarbeitung der SFDR, die ein Drei-Kategorien-System für nachhaltige Finanzprodukte einführt und Offenlegungspflichten strafft.",
+    "thematic-review-self-assessment-questionnaires-submitted-by-ifms-relating-to-cir": "Die CSSF hat eine thematische Prüfung zu Selbstbewertungsfragebögen von Investmentfondsmanagern veröffentlicht, die Feststellungen und Empfehlungen zur Compliance enthält."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
