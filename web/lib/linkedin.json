@@ -34,23 +34,20 @@
     "2026-11-09"
    ],
    "keys": [
-    "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated",
     "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
     "srb-bi-annual-reporting-note-to-eurogroup-november-2026"
    ],
-   "hook": "Der Basler Ausschuss verschärft die Säule-2-Leitlinien für das Zinsrisiko im Anlagebuch.",
-   "folge": "Banken müssen ihre Modelle, Stresstests und Kontrollen für IRRBB anpassen und neue aufsichtsrechtliche Informationen melden. Stellungnahmen sind bis zum 9. Februar 2027 möglich.",
-   "cover": "BCBS: Neue Säule-2-Leitlinien für Zinsrisiko im Anlagebuch",
+   "hook": "Zinsrisiken im Anlagebuch: Der Basler Ausschuss plant strengere Regeln für Modellvalidierung und Stresstests.",
+   "folge": "Banken müssen sich auf zusätzliche Säule-2-Leitlinien zum IRRBB einstellen, die das Risikomanagement und die aufsichtsrechtliche Überwachung stärken. Dies erfordert Anpassungen bei Modellvalidierung, Stresstests und neuen Meldepflichten.",
+   "cover": "BCBS: Neue Leitlinien für Zinsrisiko im Anlagebuch",
    "zeilen": [
-    "SRB: Geopolitische Spannungen und Cyberangriffe sind Top-Risiken für Banken",
-    "CSSF: Aktualisierte FAQ für luxemburgische SIFs und SICARs, die keine AIFs sind"
+    "SRB: Halbjährlicher Bericht an die Eurogruppe warnt vor geopolitischen Risiken und Cyberangriffen"
    ],
-   "frage": "Wie oft validieren Sie Ihre IRRBB-Modelle und welche Szenarien nutzen Sie für Stresstests?",
+   "frage": "Wie bewerten Sie die aktuellen Herausforderungen bei der Modellvalidierung von Zinsrisiken in Ihrem Institut?",
    "top": "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
    "kern": {
-    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance": "Der Basler Ausschuss konsultiert neue Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch, die Modellvalidierung, Stresstests und neue Meldepflichten für Banken stärken sollen; Stellungnahmen sind bis zum 9. Februar 2027 möglich.",
-    "faq-concerning-sifs-and-sicars-that-do-not-qualify-as-aifs-updated": "Die CSSF hat ihre FAQ für luxemburgische Spezialfonds und Investmentgesellschaften in Risikokapital aktualisiert, die nicht als alternative Investmentfonds qualifizieren, um Orientierung zu regulatorischen Anforderungen zu geben.",
-    "srb-bi-annual-reporting-note-to-eurogroup-november-2026": "Der SRB hat der Eurogruppe seinen halbjährlichen Bericht zu Risiken und Krisenvorsorge im europäischen Bankensektor vorgelegt, der geopolitische Spannungen, Marktvolatilität und operationelle Bedrohungen hervorhebt."
+    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance": "Der Basler Ausschuss konsultiert bis zum 09.02.2027 zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch, die Modellvalidierung, Stresstests und neue Aufsichtsmeldungen für Banken umfassen.",
+    "srb-bi-annual-reporting-note-to-eurogroup-november-2026": "Der SRB hat der Eurogruppe einen halbjährlichen Bericht über Risiken und Krisenvorsorge im europäischen Bankensektor vorgelegt, der geopolitische Spannungen und operationelle Bedrohungen hervorhebt."
    },
    "doppelt": [],
    "fmt": 5,
@@ -61,15 +58,19 @@
     "2026-11-16"
    ],
    "keys": [
-    "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as"
+    "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as",
+    "mmfr-handbook-updated"
    ],
-   "hook": "Der AI Act verlangt eine Grundrechte-Folgenabschätzung, und die EU-Kommission liefert den Entwurf dafür.",
-   "folge": "Betreiber von Hochrisiko-KI-Systemen müssen ab dem 2. Dezember 2027 eine Grundrechte-Folgenabschätzung durchführen. Die vorgeschlagene Vorlage soll dabei helfen, diese Pflicht zu erfüllen und die Ergebnisse den Marktüberwachungsbehörden zu melden.",
-   "cover": "EU-Kommission: Entwurf zur Grundrechte-Folgenabschätzung für KI",
-   "zeilen": [],
-   "frage": "Wie bereiten Sie sich auf die Anforderungen des AI Act bezüglich Hochrisiko-KI-Systeme vor?",
+   "hook": "KI-Systeme mit hohem Risiko erfordern ab 2027 eine Grundrechte-Folgenabschätzung.",
+   "folge": "Betreiber von Hochrisiko-KI-Systemen müssen ab dem 02.12.2027 eine Folgenabschätzung für Grundrechte durchführen. Die EU-Kommission konsultiert hierzu eine Vorlage, die die Umsetzung erleichtern soll.",
+   "cover": "EU-Kommission: Vorlage für KI-Grundrechte-Folgenabschätzung",
+   "zeilen": [
+    "CSSF: Aktualisiertes MMFR-Handbuch Version 1.4 für Geldmarktfonds-Verwalter"
+   ],
+   "frage": "Welche Prozesse etablieren Sie bereits heute für die Bewertung von KI-Systemen in Ihrem Institut?",
    "top": "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as",
    "kern": {
+    "mmfr-handbook-updated": "Die CSSF hat am 16.11.2026 die Version 1.4 ihres MMFR-Handbuchs aktualisiert, um Verwalter von Geldmarktfonds bei der Einhaltung der MMFR zu unterstützen.",
     "commission-seeks-feedback-on-draft-template-for-the-fundamental-rights-impact-as": "Die EU-Kommission konsultiert bis zum 15.01.2027 einen Entwurf für eine Vorlage zur Grundrechte-Folgenabschätzung, die Betreiber von Hochrisiko-KI-Systemen ab dem 02.12.2027 nutzen müssen."
    },
    "doppelt": [],
@@ -137,22 +138,25 @@
    ],
    "keys": [
     "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on",
+    "loi-du-18-novembre-2026-portant-modification-n1-du-code-de-la-consommation-n2-de",
     "rundschreiben-15-2026-wa",
     "rundschreiben-16-2026-wa"
    ],
-   "hook": "Neue Regeln für KVG-Risikomanagement: Die BaFin legt den Fokus auf Proportionalität und Flexibilität.",
-   "folge": "Das neue KAMaRisk-Rundschreiben der BaFin konkretisiert die Organisationspflichten für Kapitalverwaltungsgesellschaften. Institute müssen die Anforderungen in Abschnitt 5 innerhalb von sechs Monaten umsetzen, die übrigen Abschnitte gelten sofort.",
-   "cover": "BaFin: Neue KAMaRisk für Kapitalverwaltungsgesellschaften",
+   "hook": "Luxemburg setzt neue EU-Regeln für Verbraucherkredite um, die den Schutz der Verbraucher stärken.",
+   "folge": "Finanzunternehmen müssen ihre Prozesse und Verträge an die neuen Vorgaben der Richtlinie (EU) 2023/2225 anpassen, um transparentere Kreditinformationen und besseren Verbraucherschutz zu gewährleisten. Das Gesetz ist am 19.11.2026 in Kraft getreten.",
+   "cover": "Luxemburg: Neue Regeln für Verbraucherkredite",
    "zeilen": [
-    "BaFin: Kryptowerte und DLT-Finanzinstrumente erfordern neue Pflichten für Verwahrstellen",
-    "EZB: SREP-Kapitalanforderungen für 2027 bleiben stabil, Fokus auf Resilienz und Tech-Risiken"
+    "BaFin: Neue KAMaRisk für KVG ab sofort, Abschnitt 5 nach sechs Monaten umzusetzen",
+    "BaFin: Rundschreiben zu Kryptowerten und DLT-Finanzinstrumenten für KVG und Verwahrstellen ab sofort gültig",
+    "EZB: SREP-Kapitalanforderungen für 2027 bleiben stabil bei durchschnittlich 11,3 % CET1"
    ],
-   "frage": "Welche Anpassungen im Risikomanagement sind bei Ihnen durch die neuen KAMaRisk-Regeln nötig?",
-   "top": "rundschreiben-16-2026-wa",
+   "frage": "Wie stellen Sie sicher, dass Ihre Verbraucherkreditverträge stets den aktuellen EU-Richtlinien entsprechen?",
+   "top": "loi-du-18-novembre-2026-portant-modification-n1-du-code-de-la-consommation-n2-de",
    "kern": {
-    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die SREP-Kapitalanforderungen für 2027 stabil und konzentriert sich in ihren Prioritäten 2027-29 auf geopolitische und technologiebedingte Risiken der Banken.",
-    "rundschreiben-16-2026-wa": "Die BaFin hat neue Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht, die für Abschnitt 5 innerhalb von sechs Monaten umzusetzen sind.",
-    "rundschreiben-15-2026-wa": "Die BaFin präzisiert die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-Finanzinstrumente ab sofort."
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die durchschnittlichen CET1-Kapitalanforderungen für Banken im SREP 2027 mit 11,3 % der risikogewichteten Aktiva stabil und fokussiert auf Resilienz gegenüber geopolitischen und technologiebedingten Risiken.",
+    "rundschreiben-16-2026-wa": "Die BaFin hat die neuen Mindestanforderungen an das Risikomanagement (KAMaRisk) für Kapitalverwaltungsgesellschaften veröffentlicht, die ab sofort gelten, mit einer sechsmonatigen Übergangsfrist für Abschnitt 5.",
+    "rundschreiben-15-2026-wa": "Die BaFin präzisiert mit einem neuen Rundschreiben die Pflichten von Kapitalverwaltungsgesellschaften und Verwahrstellen bei Investitionen in Kryptowerte und DLT-Finanzinstrumente, gültig ab Veröffentlichung.",
+    "loi-du-18-novembre-2026-portant-modification-n1-du-code-de-la-consommation-n2-de": "Luxemburg hat am 19.11.2026 ein Gesetz zur Umsetzung der EU-Verbraucherkreditrichtlinie 2023/2225 in Kraft gesetzt, das Finanzunternehmen zur Anpassung ihrer Prozesse und Verträge verpflichtet."
    },
    "doppelt": [],
    "fmt": 5,

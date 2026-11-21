@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T23:42:22Z",
+  "generated_at": "2026-11-21T18:26:07Z",
   "sources": [
     {
       "id": "eurlex",
@@ -256,6 +256,38 @@
       "jurisdiction": "LU",
       "access": "RSS",
       "url": "https://www.cssf.lu/"
+    },
+    {
+      "id": "legilux",
+      "name": "Legilux (Mémorial A Luxemburg)",
+      "authority": "Legilux",
+      "jurisdiction": "LU",
+      "access": "API",
+      "url": "https://legilux.public.lu/"
+    },
+    {
+      "id": "chd",
+      "name": "Chambre des Députés (Gesetzentwürfe)",
+      "authority": "Chambre des Députés",
+      "jurisdiction": "LU",
+      "access": "HTML",
+      "url": "https://www.chd.lu/"
+    },
+    {
+      "id": "cssf_archive",
+      "name": "CSSF Archiv (Fondsrecht, inkl. aufgehobener Texte)",
+      "authority": "CSSF",
+      "jurisdiction": "LU",
+      "access": "HTML",
+      "url": "https://www.cssf.lu/"
+    },
+    {
+      "id": "crf_lu",
+      "name": "CRF Luxemburg (Financial Intelligence Unit)",
+      "authority": "CRF Luxemburg",
+      "jurisdiction": "LU",
+      "access": "RSS",
+      "url": "https://crf.public.lu/"
     },
     {
       "id": "ec_fisma",
