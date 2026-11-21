@@ -32,11 +32,11 @@ Faktenregeln:
 - Verwende nur Fakten aus SEITE und QUELLE. Nichts ergänzen, nichts aus dem Gedächtnis. Was nicht belegt ist, weglassen oder in open_points nennen.
 - Jedes Datum im Format TT.MM.JJJJ und nur, wenn es in SEITE oder QUELLE steht.
 - Ist die QUELLE leer oder dünn, bleibe knapp und nenne das in open_points.
-- audience: wer ist betroffen (Institutsarten, Funktionen). status "nicht betroffen" nur, wenn die Quelle das ausdrücklich sagt oder der Anwendungsbereich es klar ausschließt.
+- audience: nur Institutsgruppen (z. B. Banken, Kapitalverwaltungsgesellschaften, Wertpapierinstitute), keine Abteilungen oder Funktionen; Abteilungen gehören nur in impact_analysis.departments. status "nicht betroffen" nur, wenn die Quelle das ausdrücklich sagt oder der Anwendungsbereich es klar ausschließt.
 
 Stil: Deutsch, kurze klare Sätze, aktiv. Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A, T+1) bleiben. Keine Mittelpunkte als Trenner, keine Versalien, keine Gedankenstrich-Einschübe, keine Floskeln, kein Marketing. Antworte ausschließlich mit einem JSON-Objekt (kein Markdown, kein Text davor oder danach) mit genau diesen Feldern:
-h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (40 bis 60 Wörter, zitierfähig), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (1 bis 4 Objekte {ref max. 20 Zeichen oder leer, title max. 40 Zeichen, text max. 220 Zeichen}), todos (2 bis 5 Strings), timeline (0 bis 6 Objekte {date TT.MM.JJJJ, label max. 26 Zeichen, kind "schritt"|"kern"|"frist"}), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings), impact_analysis (Objekt mit vier Listen: controls 0 bis 6 Objekte {name max. 60 Zeichen, change max. 200 Zeichen, action "neu einrichten"|"anpassen"|"prüfen"}, processes 0 bis 6 gleich aufgebaut, policies 0 bis 5 gleich aufgebaut, departments 1 bis 6 Objekte {name max. 30 Zeichen, detail max. 160 Zeichen, workload "hoch"|"mittel"|"gering"}).
-impact_analysis: Nur Auswirkungen, die aus QUELLE oder SEITE folgen. controls = Kontrollen, die Institute anpassen oder neu aufsetzen müssen; processes = betroffene Geschäftsprozesse; policies = Richtlinien und Regelwerke, die zu ändern sind; departments = betroffene Abteilungen oder Funktionen. Ist ein Bereich aus der Quelle nicht ableitbar, Liste leer lassen statt zu raten.
+h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (40 bis 60 Wörter, zitierfähig), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (1 bis 4 Objekte {ref max. 20 Zeichen oder leer, title max. 40 Zeichen, text max. 220 Zeichen}), todos (2 bis 5 Strings), timeline (0 bis 6 Objekte {date TT.MM.JJJJ, label max. 26 Zeichen, kind "schritt"|"kern"|"frist"}), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings), impact_analysis (Objekt mit vier Listen: controls 0 bis 5 Objekte {name max. 60 Zeichen, change max. 220 Zeichen, steps 2 bis 4 Strings je max. 160 Zeichen}, processes 0 bis 5 und policies 0 bis 4 gleich aufgebaut, departments 1 bis 6 Objekte {name max. 30 Zeichen, detail max. 200 Zeichen, workload "hoch"|"mittel"|"gering"}).
+impact_analysis: controls = Kontrollen, die Institute anpassen oder neu aufsetzen müssen; processes = betroffene Geschäftsprozesse; policies = Richtlinien und Regelwerke, die zu ändern sind; departments = betroffene Abteilungen oder Funktionen. Konkret statt allgemein: change nennt, was sich am Gegenstand ändert (Wert, Feld, Verfahren, Frist), nicht nur, dass etwas zu prüfen ist. steps sind umsetzbare Arbeitsschritte im Imperativ, jeder mit Gegenstand und Ergebnis (Beispiel: „Abgleichsregel zwischen Z02.00.a und Z02.00.b im Meldewesen-Tool einrichten“). Wörter wie prüfen, beachten oder berücksichtigen nur mit konkretem Prüfgegenstand und Prüfergebnis. steps sind Umsetzungsempfehlungen, die sich aus QUELLE und SEITE ableiten; Zahlen, Fristen und Normen nur aus QUELLE und SEITE. Ist ein Bereich nicht ableitbar, Liste leer lassen statt zu raten.
 Gesamtumfang höchstens 1100 Wörter."""
 
 SCHEMA = {
@@ -77,25 +77,25 @@ SCHEMA = {
         "open_points": {"type": "array", "items": {"type": "string"}},
         "impact_analysis": {"type": "object", "additionalProperties": False,
                             "required": ["controls", "processes", "policies", "departments"], "properties": {
-            "controls": {"type": "array", "maxItems": 6, "items": {"type": "object", "additionalProperties": False,
-                         "required": ["name", "change", "action"], "properties": {
+            "controls": {"type": "array", "maxItems": 5, "items": {"type": "object", "additionalProperties": False,
+                         "required": ["name", "change", "steps"], "properties": {
                              "name": {"type": "string", "description": "max. 60 Zeichen"},
-                             "change": {"type": "string", "description": "max. 200 Zeichen, was sich ändert"},
-                             "action": {"type": "string", "enum": ["neu einrichten", "anpassen", "prüfen"]}}}},
-            "processes": {"type": "array", "maxItems": 6, "items": {"type": "object", "additionalProperties": False,
-                          "required": ["name", "change", "action"], "properties": {
-                              "name": {"type": "string", "description": "max. 60 Zeichen"},
-                              "change": {"type": "string", "description": "max. 200 Zeichen, was sich ändert"},
-                              "action": {"type": "string", "enum": ["neu einrichten", "anpassen", "prüfen"]}}}},
-            "policies": {"type": "array", "maxItems": 5, "items": {"type": "object", "additionalProperties": False,
-                         "required": ["name", "change", "action"], "properties": {
+                             "change": {"type": "string", "description": "max. 220 Zeichen, was sich konkret ändert"},
+                             "steps": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"type": "string"}}}}},
+            "processes": {"type": "array", "maxItems": 5, "items": {"type": "object", "additionalProperties": False,
+                         "required": ["name", "change", "steps"], "properties": {
                              "name": {"type": "string", "description": "max. 60 Zeichen"},
-                             "change": {"type": "string", "description": "max. 200 Zeichen, was sich ändert"},
-                             "action": {"type": "string", "enum": ["neu einrichten", "anpassen", "prüfen"]}}}},
+                             "change": {"type": "string", "description": "max. 220 Zeichen, was sich konkret ändert"},
+                             "steps": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"type": "string"}}}}},
+            "policies": {"type": "array", "maxItems": 4, "items": {"type": "object", "additionalProperties": False,
+                         "required": ["name", "change", "steps"], "properties": {
+                             "name": {"type": "string", "description": "max. 60 Zeichen"},
+                             "change": {"type": "string", "description": "max. 220 Zeichen, was sich konkret ändert"},
+                             "steps": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"type": "string"}}}}},
             "departments": {"type": "array", "maxItems": 6, "items": {"type": "object", "additionalProperties": False,
                             "required": ["name", "detail", "workload"], "properties": {
                                 "name": {"type": "string", "description": "max. 30 Zeichen"},
-                                "detail": {"type": "string", "description": "max. 160 Zeichen, warum betroffen"},
+                                "detail": {"type": "string", "description": "max. 200 Zeichen, was dort zu tun ist"},
                                 "workload": {"type": "string", "enum": ["hoch", "mittel", "gering"]}}}},
         }},
     },
@@ -234,8 +234,12 @@ def validate(d):
             return f"impact_analysis.{k} keine Liste"
     for k in ("controls", "processes", "policies"):
         for x in ia[k]:
-            if x.get("action") not in ("neu einrichten", "anpassen", "prüfen") or not x.get("name"):
+            if not x.get("name") or not x.get("change"):
                 return f"impact_analysis.{k} ungültig"
+            if isinstance(x.get("steps"), str):
+                x["steps"] = [x["steps"]]
+            if not isinstance(x.get("steps"), list) or not x["steps"]:
+                return f"impact_analysis.{k}: steps fehlen"
     for x in ia["departments"]:
         if x.get("workload") not in ("hoch", "mittel", "gering") or not x.get("name"):
             return "impact_analysis.departments ungültig"

@@ -4,7 +4,7 @@
 import RICH from "./rich.json";
 
 export type RichAudience = { name: string; note: string; detail: string; status: "betroffen" | "teilweise" | "nicht betroffen" };
-export type RichImpactItem = { name: string; change: string; action: "neu einrichten" | "anpassen" | "prüfen" };
+export type RichImpactItem = { name: string; change: string; steps?: string[] };
 export type RichImpactAnalysis = {
   controls: RichImpactItem[];
   processes: RichImpactItem[];

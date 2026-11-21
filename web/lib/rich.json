@@ -920,19 +920,19 @@
  "brrd-2026-11-20-2026-7947-annex-ii-of-instructions-for-resolution-planning-report-representation": {
   "h1": "SFT-Meldung im Abwicklungsplanungsbericht (EBA Q&A 2026_7947)",
   "seo_title": "SFT im Abwicklungsplanungsbericht: EBA Q&A 2026_7947",
-  "meta_description": "EBA Q&A 2026_7947 vom 20.11.2026: So melden Institute SFTs unter nicht anerkanntem Netting in den Templates Z16.00 und Z02.00.a.",
-  "lead": "Die EBA hat am 20.11.2026 geklärt, wie SFTs unter einem nicht anerkannten Netting-Vertrag im Abwicklungsplanungsbericht zu melden sind. Betroffen sind Kreditinstitute, die diesen Bericht nach der ITS (EU) 2025/2303 erstellen.",
+  "meta_description": "EBA Q&A 2026_7947 vom 20.11.2026: Wie Institute SFT unter nicht anerkannten Netting-Vereinbarungen in Z16.00 und Z02.00 melden.",
+  "lead": "Die EBA hat am 20.11.2026 die Q&A 2026_7947 zur Meldung von SFT unter Netting-Vereinbarungen im Abwicklungsplanungsbericht veröffentlicht. Sie betrifft Institute, die den ITS zur Abwicklungsplanung (Verordnung (EU) 2025/2303) anwenden.",
   "aka": [
-   "Q&A 2026_7947",
-   "SFT Netting Abwicklungsplanungsbericht",
-   "Template Z16.00 Z02.00 SFT",
-   "BRRD Reporting SFT Netting",
-   "ITS Resolution Planning Reporting Q&A"
+   "EBA Q&A 2026_7947",
+   "SFT Netting Abwicklungsplanung",
+   "Z16.00 Z02.00 SFT",
+   "Resolution Planning Reporting SFT",
+   "BRRD Reporting Netting"
   ],
-  "summary": "Die EBA stellt in Q&A 2026_7947 klar: Im Abwicklungsplanungsbericht werden SFTs unter derselben Netting-Vereinbarung in Z16.00 je Netting-Set gemeldet. In Z02.00.a zählt die vertraglich resultierende Nettoverbindlichkeit, auch ohne Anerkennung des Netting für Rechnungslegung oder Aufsicht. Der Buchwert in Z02.00.b folgt weiter eigener Definition.",
+  "summary": "Die EBA stellt in Q&A 2026_7947 klar: SFT unter derselben Netting-Vereinbarung werden in Z16.00 je Netting Set gemeldet. In Z02.00.a zählt die Verbindlichkeit nach den Vertragsbedingungen inklusive Netting. Fehlende bilanzielle oder aufsichtliche Anerkennung entscheidet nicht über den Outstanding Value. Z02.00.b folgt weiter der Bilanzdefinition.",
   "overview": [
-   "Ein Kreditinstitut hatte gefragt, wie SFTs unter einem Netting-Vertrag zu melden sind, der weder für die Rechnungslegung noch für aufsichtliche Zwecke anerkannt ist. Die EBA antwortet im Rahmen der ITS zur Meldung für die Abwicklungsplanung (Verordnung (EU) 2025/2303) und der BRRD.",
-   "Für Z16.00 gilt: SFTs derselben Netting-Vereinbarung werden je Netting-Set gemeldet. Für Z02.00.a gilt: Der ausstehende Betrag bildet die Verbindlichkeitsforderung nach den Vertragsbedingungen ab, einschließlich Netting, sofern sich daraus effektiv eine Nettoverbindlichkeit ergibt. Fehlende Anerkennung des Netting ist dafür allein nicht entscheidend. Der Buchwert in Z02.00.b bleibt an seine Rechnungslegungsdefinition gebunden und kann abweichen."
+   "Ein Kreditinstitut fragte, wie SFT unter einer Netting-Vereinbarung zu melden sind, die bilanziell und/oder aufsichtlich nicht anerkannt ist. Die EBA antwortet für zwei Templates des Abwicklungsplanungsberichts (Q&A zur BRRD, ITS Verordnung (EU) 2025/2303).",
+   "Für Z16.00 melden Institute SFT derselben Netting-Vereinbarung je Netting Set. Für Z02.00.a (Outstanding Value) zählt die Verbindlichkeit, die sich aus den Vertragsbedingungen ergibt, einschließlich Netting, wenn daraus eine effektive Nettoverbindlichkeit entsteht. Der Buchwert in Z02.00.b bleibt nach der eigenen bilanziellen Definition zu melden und kann abweichen. Die Q&A gilt für die Rechtslage am Veröffentlichungstag."
   ],
   "facts": [
    {
@@ -945,59 +945,53 @@
    },
    {
     "label": "Rechtsakt",
-    "value": "BRRD (Richtlinie 2014/59/EU), ITS (EU) 2025/2303"
+    "value": "Richtlinie 2014/59/EU (BRRD), Art. 44"
+   },
+   {
+    "label": "ITS",
+    "value": "Verordnung (EU) 2025/2303, Instructions Rn. 11 und 76"
    },
    {
     "label": "Betroffene Templates",
     "value": "Z16.00, Z02.00.a, Z02.00.b"
-   },
-   {
-    "label": "Status",
-    "value": "Final"
    }
   ],
   "audience": [
    {
-    "name": "Kreditinstitute",
-    "note": "Ersteller des Abwicklungsplanungsberichts",
-    "detail": "Institute, die den Abwicklungsplanungsbericht nach der ITS erstellen und SFTs unter nicht anerkanntem Netting halten, müssen ihre Meldung prüfen.",
+    "name": "Banken",
+    "note": "Meldepflicht Abwicklungsplanung",
+    "detail": "Kreditinstitute, die den Abwicklungsplanungsbericht nach dem ITS einreichen, müssen die Klarstellung für Z16.00 und Z02.00 anwenden.",
     "status": "betroffen"
    },
    {
-    "name": "Meldewesen",
-    "note": "Befüllung der Templates Z16.00 und Z02.00",
-    "detail": "Das Meldewesen setzt die Klarstellung bei Netting-Sets und ausstehenden Beträgen um.",
-    "status": "betroffen"
-   },
-   {
-    "name": "Rechnungswesen",
-    "note": "Buchwert in Z02.00.b",
-    "detail": "Der Buchwert folgt weiter der Rechnungslegungsdefinition und kann vom ausstehenden Betrag abweichen.",
+    "name": "Wertpapierinstitute",
+    "note": "Nur bei Meldepflicht nach dem ITS",
+    "detail": "Die Quelle nennt nur Kreditinstitute als Fragesteller. Der Kreis der Meldepflichtigen ergibt sich aus dem ITS.",
     "status": "teilweise"
    }
   ],
   "changes": [
    {
     "ref": "Z16.00",
-    "title": "Meldung je Netting-Set",
-    "text": "SFTs, die unter dieselbe Netting-Vereinbarung fallen, werden als Netting-Set nach den Template-Anweisungen gemeldet."
+    "title": "Meldung je Netting Set",
+    "text": "SFT derselben Netting-Vereinbarung werden nach den Template-Instruktionen je Netting Set gemeldet."
    },
    {
     "ref": "Z02.00.a",
-    "title": "Ausstehender Betrag netto",
-    "text": "Der Betrag spiegelt die vertraglich resultierende Verbindlichkeitsforderung inklusive Netting, wenn effektiv eine Nettoverbindlichkeit entsteht."
+    "title": "Outstanding Value mit Netting",
+    "text": "Maßgeblich ist die Verbindlichkeit aus den Vertragsbedingungen inklusive Netting. Fehlende bilanzielle oder aufsichtliche Anerkennung entscheidet nicht."
    },
    {
     "ref": "Z02.00.b",
-    "title": "Buchwert unverändert",
-    "text": "Der Buchwert bleibt an die separate Rechnungslegungsdefinition gebunden und kann vom ausstehenden Betrag abweichen."
+    "title": "Buchwert getrennt",
+    "text": "Der Buchwert folgt seiner eigenen bilanziellen Definition und kann vom Outstanding Value abweichen."
    }
   ],
   "todos": [
-   "Bestand an SFTs mit nicht anerkanntem Netting-Vertrag identifizieren.",
-   "Befüllung von Z16.00 auf Meldung je Netting-Set prüfen.",
-   "Ermittlung des ausstehenden Betrags in Z02.00.a auf vertragliche Nettologik prüfen.",
-   "Abgrenzung zwischen ausstehendem Betrag und Buchwert in Z02.00.b dokumentieren."
+   "Bestehende Befüllung von Z16.00 und Z02.00.a für SFT unter nicht anerkanntem Netting mit der EBA-Antwort abgleichen.",
+   "Vertragliche Netting-Klauseln bei SFT daraufhin auswerten, ob eine effektive Nettoverbindlichkeit entsteht.",
+   "Abweichung zwischen Z02.00.a und Z02.00.b für SFT dokumentieren und im Meldewesen erklärbar halten.",
+   "Meldelogik im Meldewesen-Tool anpassen, falls die bisherige Befüllung abweicht."
   ],
   "timeline": [
    {
@@ -1008,64 +1002,72 @@
   ],
   "faq": [
    {
-    "q": "Was klärt die EBA in Q&A 2026_7947?",
-    "a": "Wie SFTs unter einem Netting-Vertrag ohne Anerkennung für Rechnungslegung oder Aufsicht in Z16.00 und Z02.00.a zu melden sind."
+    "q": "Was meldet ein Institut in Z02.00.a bei SFT unter nicht anerkanntem Netting?",
+    "a": "Den Outstanding Value, der sich aus den Vertragsbedingungen ergibt, einschließlich Netting bei effektiver Nettoverbindlichkeit. Die fehlende Anerkennung bestimmt den Betrag nicht."
    },
    {
-    "q": "Zählt fehlende Netting-Anerkennung für den ausstehenden Betrag?",
-    "a": "Nein, nicht allein. In Z02.00.a zählt die vertraglich resultierende Verbindlichkeitsforderung, auch mit Netting bei effektiver Nettoverbindlichkeit."
-   },
-   {
-    "q": "Ändert sich der Buchwert in Z02.00.b?",
-    "a": "Nein. Er bleibt durch seine separate Rechnungslegungsdefinition bestimmt und kann vom ausstehenden Betrag abweichen."
+    "q": "Muss Z02.00.b dem Outstanding Value in Z02.00.a entsprechen?",
+    "a": "Nein. Der Buchwert in Z02.00.b folgt einer eigenen bilanziellen Definition und kann abweichen."
    }
   ],
-  "impact": "gering",
+  "impact": "mittel",
   "open_points": [
-   "Die Quelle nennt keine Umsetzungsfrist und keine Pflicht zur Neueinreichung früherer Berichte.",
-   "Der Wortlaut der Template-Anweisungen zu Z16.00 und Randziffer 76 ist nicht Teil der Quelle."
+   "Die Quelle nennt keine Frist für die Umsetzung. Die Q&A gilt für die Rechtslage am Veröffentlichungstag.",
+   "Welche Institute den ITS genau anwenden, geht aus der Quelle nicht hervor."
   ],
   "impact_analysis": {
    "controls": [
     {
-     "name": "Plausibilitätsprüfung Z02.00.a gegen Z02.00.b",
-     "change": "Abweichungen zwischen ausstehendem Betrag und Buchwert sind fachlich erklärbar und zu dokumentieren.",
-     "action": "prüfen"
+     "name": "Abgleich Z02.00.a und Z02.00.b für SFT",
+     "change": "Outstanding Value in Z02.00.a enthält Netting aus Vertragsbedingungen, der Buchwert in Z02.00.b bleibt bilanziell. Beide Werte können abweichen.",
+     "steps": [
+      "Abgleichsregel zwischen Z02.00.a und Z02.00.b im Meldewesen-Tool mit zulässiger SFT-Abweichung einrichten.",
+      "Abweichungen bei SFT je Netting Set mit Begründung im Meldeprotokoll dokumentieren."
+     ]
     },
     {
-     "name": "Netting-Set-Zuordnung bei SFTs",
-     "change": "Zuordnung der SFTs zu Netting-Sets in Z16.00 gemäß derselben Netting-Vereinbarung sicherstellen.",
-     "action": "prüfen"
+     "name": "Plausibilisierung Z16.00 je Netting Set",
+     "change": "SFT derselben Netting-Vereinbarung werden in Z16.00 je Netting Set gemeldet, unabhängig von der Anerkennung.",
+     "steps": [
+      "Netting-Set-Zuordnung der SFT im Meldedatenbestand gegen die Vertragsdaten abstimmen.",
+      "Stichprobe der letzten Meldung auf SFT unter nicht anerkanntem Netting ziehen und Abweichungen auflisten."
+     ]
     }
    ],
    "processes": [
     {
      "name": "Befüllung Abwicklungsplanungsbericht",
-     "change": "Berechnung des ausstehenden Betrags in Z02.00.a folgt der vertraglichen Nettoverbindlichkeit, unabhängig von der Anerkennung des Netting.",
-     "action": "anpassen"
+     "change": "Netting-Wirkung bei SFT wird für Z02.00.a nach Vertragsbedingungen ermittelt, nicht nach bilanzieller oder aufsichtlicher Anerkennung.",
+     "steps": [
+      "Ableitungslogik für den Outstanding Value bei SFT auf Vertragsbasis dokumentieren.",
+      "Datenfeld für effektive Nettoverbindlichkeit je Netting Set in der Meldedatenquelle bereitstellen."
+     ]
     }
    ],
    "policies": [
     {
-     "name": "Meldewesen-Arbeitsanweisung Resolution Planning",
-     "change": "Auslegung zu SFTs unter nicht anerkanntem Netting aufnehmen, sofern bisher abweichend gehandhabt.",
-     "action": "prüfen"
+     "name": "Meldewesen-Arbeitsanweisung Abwicklungsplanung",
+     "change": "Die Anweisung braucht eine Regel zur Behandlung von SFT unter nicht anerkanntem Netting in Z16.00 und Z02.00.",
+     "steps": [
+      "Absatz zu SFT und Netting mit Verweis auf EBA Q&A 2026_7947 ergänzen.",
+      "Verantwortlichkeit für die Vertragsauswertung der Netting-Klauseln festlegen."
+     ]
     }
    ],
    "departments": [
     {
      "name": "Meldewesen",
-     "detail": "Setzt die Klarstellung in den Templates Z16.00 und Z02.00 um.",
-     "workload": "gering"
-    },
-    {
-     "name": "Rechnungswesen",
-     "detail": "Stimmt Buchwert und ausstehenden Betrag ab.",
-     "workload": "gering"
+     "detail": "Passt Befüllung und Plausibilitätsregeln für Z16.00 und Z02.00 an.",
+     "workload": "mittel"
     },
     {
      "name": "Abwicklungsplanung",
-     "detail": "Prüft die Konsistenz des Berichts.",
+     "detail": "Verantwortet den Bericht und stimmt die Auslegung mit dem Meldewesen ab.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Rechtsabteilung",
+     "detail": "Wertet Netting-Klauseln aus und bestätigt effektive Nettoverbindlichkeiten.",
      "workload": "gering"
     }
    ]
@@ -1075,7 +1077,7 @@
    "model": "sonnet",
    "source": "HTML, 2895 Zeichen, gekürzt auf 2895",
    "dropped": 2,
-   "tokens": 13105
+   "tokens": 13082
   }
  },
  "brrd-2026-11-20-reporting-of-beneficiary-accounts-in-row-0110-covered-deposits-of-template-z-02": {

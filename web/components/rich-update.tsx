@@ -1,8 +1,9 @@
 import { Patrick_Hand } from "next/font/google";
 import { Sketch } from "@/components/sketch";
-import type { RichImpactItem, RichUpdate } from "@/lib/rich";
+import type { TocItem } from "@/components/toc";
+import type { RichAudience, RichImpactAnalysis, RichImpactItem, RichUpdate } from "@/lib/rich";
 
-// Handschrift nur für die Strichgrafiken (wie in den Erklärvideos).
+// Handschrift nur für die Strichgrafik des Zeitplans (zeigt einen Ablauf).
 const hand = Patrick_Hand({ subsets: ["latin"], weight: "400", variable: "--font-hand" });
 
 const SK = { fill: "none", stroke: "currentColor", strokeWidth: 1.6 } as const;
@@ -46,155 +47,209 @@ function bullets(s: string): string[] {
   return s.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean);
 }
 
-const H2 = "mt-10 font-heading text-xl font-medium tracking-tight text-slate-900";
+const hasImpact = (ia?: RichImpactAnalysis) =>
+  !!ia && (ia.controls.length + ia.processes.length + ia.policies.length > 0);
 
-function ImpactList({ title, items }: { title: string; items: RichImpactItem[] }) {
+/** Einträge der Gliederung rechts, passend zu den Abschnitten unten. */
+export function richToc(rich: RichUpdate): TocItem[] {
+  const ia = rich.impact_analysis;
+  return [
+    { id: "kurz", label: "Kurz gesagt" },
+    { id: "relevanz", label: "Für wen relevant" },
+    { id: "worum", label: "Worum es geht" },
+    { id: "aenderungen", label: "Was sich ändert" },
+    ...(hasImpact(ia) ? [{ id: "impact", label: "Impact-Analyse" }] : []),
+    { id: "todos", label: "Was jetzt zu tun ist" },
+    ...(rich.timeline.length >= 2 ? [{ id: "zeitplan", label: "Zeitplan" }] : []),
+    { id: "faq", label: "Häufige Fragen" },
+  ];
+}
+
+const H2 = "font-heading text-xl font-medium tracking-tight text-slate-900";
+const SECTION = "mt-12 scroll-mt-24";
+const PILL = "inline-flex shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium";
+
+const STATUS_PILL: Record<RichAudience["status"], string> = {
+  betroffen: "bg-slate-900 text-white",
+  teilweise: "border border-slate-300 text-slate-700",
+  "nicht betroffen": "border border-slate-200 text-slate-400",
+};
+const LOAD_PILL = {
+  hoch: "bg-slate-900 text-white",
+  mittel: "border border-slate-300 text-slate-700",
+  gering: "border border-slate-200 text-slate-400",
+} as const;
+
+function Card({ title, sub, children }: { title: string; sub: string; children: React.ReactNode }) {
+  return (
+    <div className="overflow-hidden rounded-2xl border border-slate-200">
+      <div className="border-b border-slate-100 px-4 py-3">
+        <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
+        <p className="text-xs text-slate-500">{sub}</p>
+      </div>
+      <ul className="divide-y divide-slate-100">{children}</ul>
+    </div>
+  );
+}
+
+function ImpactGroup({ title, items }: { title: string; items: RichImpactItem[] }) {
   if (items.length === 0) return null;
   return (
     <div>
       <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
-      <ul className="mt-2 border-t border-slate-200">
-        {items.map((x) => (
-          <li key={x.name} className="grid grid-cols-1 gap-1 border-b border-slate-200 py-2.5 sm:grid-cols-[9rem_1fr] sm:gap-4">
-            <span className="text-sm text-slate-500">{x.action}</span>
-            <div className="min-w-0">
-              <b className="font-semibold text-slate-900">{x.name}</b>
-              <span className="block text-slate-700">{x.change}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div className="mt-2 divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200">
+        {items.map((x) => {
+          const head = (
+            <>
+              <b className="block font-semibold text-slate-900">{x.name}</b>
+              <span className="mt-0.5 block text-sm text-slate-600">{x.change}</span>
+            </>
+          );
+          if (!x.steps?.length) return <div key={x.name} className="px-4 py-3">{head}</div>;
+          return (
+            <details key={x.name} className="group">
+              <summary className="flex cursor-pointer list-none items-start gap-3 px-4 py-3 marker:hidden hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
+                <span aria-hidden className="mt-1 text-xs text-slate-400 transition-transform group-open:rotate-90">▸</span>
+                <span className="min-w-0 flex-1">{head}</span>
+                <span className="shrink-0 pt-0.5 text-xs text-slate-400 group-open:hidden">{x.steps.length} Schritte</span>
+              </summary>
+              <ol className="list-decimal space-y-1.5 border-t border-slate-100 bg-slate-50 py-3 pl-12 pr-4 text-sm text-slate-700">
+                {x.steps.map((s) => <li key={s}>{s}</li>)}
+              </ol>
+            </details>
+          );
+        })}
+      </div>
     </div>
   );
 }
 
 /** Angereicherte Abschnitte einer Detailseite (Server-Komponente, volles HTML für Suchmaschinen). */
-export function RichUpdateSections({ rich, published, seed }: { rich: RichUpdate; published: string; seed: number }) {
+export function RichUpdateSections(
+  { rich, published, extra, seed }: { rich: RichUpdate; published: string; extra: { label: string; value: string }[]; seed: number },
+) {
   const ia = rich.impact_analysis;
+  const facts = [
+    { label: "Veröffentlicht", value: published },
+    ...rich.facts.filter((f) => f.label !== "Veröffentlicht"),
+    ...extra,
+  ];
   return (
     <div className={`${hand.variable} mt-5 text-base leading-relaxed text-slate-700`}>
-      <p className="text-lg leading-relaxed text-slate-600">{rich.lead}</p>
-
-      {rich.facts.length > 0 && (
-        <dl className="mt-6 overflow-hidden rounded-2xl border border-slate-200 text-sm">
-          {[{ label: "Veröffentlicht", value: published }, ...rich.facts].map((f) => (
-            <div key={f.label} className="grid grid-cols-1 gap-0.5 border-b border-slate-100 px-4 py-2.5 last:border-b-0 sm:grid-cols-[13rem_1fr] sm:gap-4">
-              <dt className="text-slate-500">{f.label}</dt>
-              <dd className="min-w-0 text-slate-900">{f.value}</dd>
-            </div>
-          ))}
-        </dl>
-      )}
-
-      <section className="mt-6 rounded-2xl bg-slate-50 px-5 py-4" aria-label="Kurz gesagt">
+      <section id="kurz" className="scroll-mt-24 rounded-2xl bg-slate-50 px-5 py-4" aria-label="Kurz gesagt">
         <h2 className="text-sm font-semibold tracking-tight text-slate-900">Kurz gesagt</h2>
         <ul className="rich-summary mt-2 list-disc space-y-1.5 pl-5">
           {bullets(rich.summary).map((b) => <li key={b.slice(0, 40)}>{b}</li>)}
         </ul>
       </section>
 
-      <h2 className={H2}>Für wen relevant</h2>
-      <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="text-left text-xs text-slate-500">
-              <th className="px-4 py-2.5 font-medium">Wer</th>
-              <th className="w-px whitespace-nowrap px-4 py-2.5 font-medium">Relevanz</th>
-              <th className="px-4 py-2.5 font-medium">Warum</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rich.audience.map((a) => (
-              <tr key={a.name} className="border-t border-slate-100 align-top">
-                <td className="px-4 py-2.5 text-slate-900">{a.name}</td>
-                <td className="whitespace-nowrap px-4 py-2.5">{a.status}</td>
-                <td className="px-4 py-2.5">{a.detail}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <h2 className={H2}>Worum es geht</h2>
-      <div className="mt-3 space-y-3">
-        {rich.overview.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
-      </div>
-
-      <h2 className={H2}>Was sich ändert</h2>
-      <ul className="mt-3 border-t border-slate-200">
-        {rich.changes.map((c) => (
-          <li key={c.title} className="grid grid-cols-1 gap-1 border-b border-slate-200 py-3 sm:grid-cols-[9rem_1fr] sm:gap-4">
-            <span className="text-sm text-slate-500">{c.ref}</span>
-            <div className="min-w-0">
-              <b className="block font-heading font-semibold text-slate-900">{c.title}</b>
-              {c.text}
+      <dl className="mt-4 overflow-hidden rounded-2xl border border-slate-200 text-sm">
+        <div className="-mb-px -mr-px flex flex-wrap">
+          {facts.map((f) => (
+            <div key={f.label} className="min-w-[10.5rem] grow basis-44 border-b border-r border-slate-100 px-4 py-2.5">
+              <dt className="text-xs text-slate-500">{f.label}</dt>
+              <dd className="mt-0.5 text-slate-900">{f.value}</dd>
             </div>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </dl>
 
-      <h2 className={H2}>Was jetzt zu tun ist</h2>
-      <ol className="mt-3 list-decimal space-y-2 pl-6">
-        {rich.todos.map((t) => <li key={t.slice(0, 40)}>{t}</li>)}
-      </ol>
-
-      {ia && (
-        <>
-          <h2 className={H2}>Impact-Analyse</h2>
-          <div className="mt-3 space-y-6">
-            <ImpactList title="Kontrollen" items={ia.controls} />
-            <ImpactList title="Prozesse" items={ia.processes} />
-            <ImpactList title="Policies" items={ia.policies} />
-            {ia.departments.length > 0 && (
-              <div>
-                <h3 className="text-sm font-semibold text-slate-900">Betroffene Abteilungen</h3>
-                <div className="mt-2 overflow-hidden rounded-2xl border border-slate-200">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="text-left text-xs text-slate-500">
-                        <th className="px-4 py-2.5 font-medium">Abteilung</th>
-                        <th className="w-px whitespace-nowrap px-4 py-2.5 font-medium">Aufwand</th>
-                        <th className="px-4 py-2.5 font-medium">Was dort zu tun ist</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {ia.departments.map((d) => (
-                        <tr key={d.name} className="border-t border-slate-100 align-top">
-                          <td className="px-4 py-2.5 text-slate-900">{d.name}</td>
-                          <td className="whitespace-nowrap px-4 py-2.5">{d.workload}</td>
-                          <td className="px-4 py-2.5">{d.detail}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+      <section id="relevanz" className={SECTION}>
+        <h2 className={H2}>Für wen relevant</h2>
+        <div className={`mt-4 grid gap-4 ${ia?.departments.length ? "md:grid-cols-2" : ""}`}>
+          <Card title="Institutsgruppen" sub="Welche Institute die Meldung betrifft">
+            {rich.audience.map((a) => (
+              <li key={a.name} className="flex items-start justify-between gap-3 px-4 py-3">
+                <div className="min-w-0">
+                  <b className="font-semibold text-slate-900">{a.name}</b>
+                  <p className="mt-0.5 text-sm text-slate-600">{a.detail}</p>
                 </div>
+                <span className={`${PILL} ${STATUS_PILL[a.status]}`}>{a.status}</span>
+              </li>
+            ))}
+          </Card>
+          {ia && ia.departments.length > 0 && (
+            <Card title="Abteilungen" sub="Wo im Institut Aufwand entsteht">
+              {ia.departments.map((d) => (
+                <li key={d.name} className="flex items-start justify-between gap-3 px-4 py-3">
+                  <div className="min-w-0">
+                    <b className="font-semibold text-slate-900">{d.name}</b>
+                    <p className="mt-0.5 text-sm text-slate-600">{d.detail}</p>
+                  </div>
+                  <span className={`${PILL} ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
+                </li>
+              ))}
+            </Card>
+          )}
+        </div>
+      </section>
+
+      <section id="worum" className={SECTION}>
+        <h2 className={H2}>Worum es geht</h2>
+        <div className="mt-3 space-y-3">
+          {rich.overview.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
+        </div>
+      </section>
+
+      <section id="aenderungen" className={SECTION}>
+        <h2 className={H2}>Was sich ändert</h2>
+        <ul className="mt-3 border-t border-slate-200">
+          {rich.changes.map((c) => (
+            <li key={c.title} className="grid grid-cols-1 gap-1 border-b border-slate-200 py-3 sm:grid-cols-[9rem_1fr] sm:gap-4">
+              <span className="text-sm text-slate-500">{c.ref}</span>
+              <div className="min-w-0">
+                <b className="block font-heading font-semibold text-slate-900">{c.title}</b>
+                {c.text}
               </div>
-            )}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {ia && hasImpact(ia) && (
+        <section id="impact" className={SECTION}>
+          <h2 className={H2}>Impact-Analyse</h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Was sich an Kontrollen, Prozessen und Policies konkret ändert. Eintrag anklicken für die Arbeitsschritte.
+          </p>
+          <div className="mt-4 space-y-6">
+            <ImpactGroup title="Kontrollen" items={ia.controls} />
+            <ImpactGroup title="Prozesse" items={ia.processes} />
+            <ImpactGroup title="Policies" items={ia.policies} />
           </div>
-        </>
+        </section>
       )}
 
+      <section id="todos" className={SECTION}>
+        <h2 className={H2}>Was jetzt zu tun ist</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-6">
+          {rich.todos.map((t) => <li key={t.slice(0, 40)}>{t}</li>)}
+        </ol>
+      </section>
+
       {rich.timeline.length >= 2 && (
-        <>
+        <section id="zeitplan" className={SECTION}>
           <h2 className={H2}>Zeitplan</h2>
           <figure className="mt-4">
             <Timeline items={rich.timeline} seed={seed} />
             <figcaption className="mt-2 text-sm text-slate-500">Daten aus der Meldung und dem Originaldokument.</figcaption>
           </figure>
-        </>
+        </section>
       )}
 
-      <h2 className={H2}>Häufige Fragen</h2>
-      <div className="mt-2">
-        {rich.faq.map((q) => (
-          <div key={q.q} className="mt-4">
-            <h3 className="font-semibold text-slate-900">{q.q}</h3>
-            <p className="mt-1">{q.a}</p>
-          </div>
-        ))}
-      </div>
+      <section id="faq" className={SECTION}>
+        <h2 className={H2}>Häufige Fragen</h2>
+        <div className="mt-2">
+          {rich.faq.map((q) => (
+            <div key={q.q} className="mt-4">
+              <h3 className="font-semibold text-slate-900">{q.q}</h3>
+              <p className="mt-1">{q.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <p className="mt-10 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
+      <p className="mt-12 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
         Hinweis zur Erstellung und Haftung: Dieser Beitrag wurde mit Unterstützung künstlicher Intelligenz aus dem verlinkten
         Originaldokument erstellt und regelbasiert geprüft. Trotz sorgfältiger Prüfung können Fehler, Auslassungen oder
         zwischenzeitliche Rechtsänderungen nicht ausgeschlossen werden. Bitte hinterfragen Sie die Inhalte kritisch und prüfen

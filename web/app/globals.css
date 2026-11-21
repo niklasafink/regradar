@@ -62,3 +62,15 @@ dialog::backdrop {
     to { opacity: 1; transform: none; }
   }
 }
+
+/* PDF-Export über den Druckdialog: nur der Artikel, ohne Navigation und Fußzeile. */
+@media print {
+  header,
+  footer,
+  nav {
+    display: none !important;
+  }
+  details > summary {
+    break-inside: avoid;
+  }
+}
