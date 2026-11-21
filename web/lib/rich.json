@@ -2387,6 +2387,519 @@
    "tokens": 8625
   }
  },
+ "cssfreport-2026-11-20-thematic-review-self-assessment-questionnaires-submitted-by-ifms-relating-to-cir": {
+  "h1": "CSSF-Themenprüfung zu IFM-Selbstbewertungsfragebögen (CSSF 21/789)",
+  "seo_title": "CSSF 21/789 Themenprüfung IFM-Fragebögen",
+  "meta_description": "CSSF veröffentlicht Feststellungen und Empfehlungen aus Themenprüfung zu Selbstbewertungsfragebögen von Investmentfondsmanagern (Rundschreiben 21/789 i.d.F. 23/839).",
+  "lead": "Die CSSF hat am 20.11.2026 eine Themenprüfung mit Feststellungen und Empfehlungen zu den Selbstbewertungsfragebögen veröffentlicht, die Investmentfondsmanager (IFMs) nach Rundschreiben CSSF 21/789 eingereicht haben. Betroffen sind Alternative Investmentfondsmanager und Verwaltungsgesellschaften nach Kapitel 15.",
+  "aka": [
+   "CSSF 21/789 Thematic Review",
+   "IFM Self-Assessment Questionnaire",
+   "CSSF Themenprüfung Investmentfondsmanager",
+   "Circular CSSF 23/839",
+   "CSSF SAQ Review"
+  ],
+  "summary": "Die CSSF hat am 20.11.2026 eine Themenprüfung veröffentlicht, die Feststellungen und Empfehlungen aus der Auswertung von Selbstbewertungsfragebögen enthält, die IFMs nach Rundschreiben CSSF 21/789 (geändert durch CSSF 23/839) eingereicht haben. Betroffen sind Alternative Investmentfondsmanager und Verwaltungsgesellschaften nach Kapitel 15 in Luxemburg.",
+  "overview": [
+   "Die CSSF hat im Nachgang der Selbstbewertungsfragebögen, die Investmentfondsmanager auf Basis des Rundschreibens CSSF 21/789 sowie der Ergänzung durch CSSF 23/839 einreichen mussten, eine strukturierte Themenprüfung durchgeführt. Das Ergebnis liegt als Bericht mit zwei PDF-Dokumenten vor und enthält konkrete Feststellungen sowie Empfehlungen.",
+   "Die Feststellungen decken Bereiche auf, in denen IFMs die Anforderungen der Rundschreiben nicht vollständig erfüllen. Die Empfehlungen geben vor, welche Maßnahmen IFMs zur Verbesserung ihrer Compliance-Praxis ergreifen sollen. Da die CSSF solche Themenprüfungen erfahrungsgemäß als Grundlage für Folgeaufsichtsmaßnahmen nutzt, sollten betroffene Institute die Feststellungen systematisch gegen die eigene Praxis abgleichen."
+  ],
+  "facts": [
+   {
+    "label": "Veröffentlicht",
+    "value": "20.11.2026"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "CSSF (Luxemburg)"
+   },
+   {
+    "label": "Bezugsdokumente",
+    "value": "Rundschreiben CSSF 21/789, CSSF 23/839"
+   },
+   {
+    "label": "Format",
+    "value": "Themenprüfung mit Feststellungen und Empfehlungen (2 PDFs)"
+   },
+   {
+    "label": "Zielgruppe laut CSSF",
+    "value": "Alternative Investmentfondsmanager, Verwaltungsgesellschaften Kapitel 15"
+   }
+  ],
+  "audience": [
+   {
+    "name": "AIFMs",
+    "note": "Ausdrücklich als Zielgruppe genannt",
+    "detail": "Alternative Investmentfondsmanager, die Selbstbewertungsfragebögen nach CSSF 21/789 eingereicht haben, sind unmittelbar betroffen und müssen Feststellungen und Empfehlungen prüfen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Verwaltungsgesellschaften",
+    "note": "Kapitel-15-Gesellschaften betroffen",
+    "detail": "Management Companies nach Kapitel 15 des Luxemburger Investmentgesetzes sind laut CSSF ausdrücklich als relevante Gruppe benannt.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Banken",
+    "note": "Kein Bezug im Dokument",
+    "detail": "Der Anwendungsbereich beschränkt sich laut CSSF auf IFMs; Kreditinstitute ohne Fondsverwaltungsmandat sind nicht genannt.",
+    "status": "nicht betroffen"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "CSSF 21/789",
+    "title": "Feststellungen aus Fragebogen-Auswertung",
+    "text": "Die CSSF hat die eingereichten Selbstbewertungsfragebögen ausgewertet und konkrete Schwachstellen identifiziert. Die Feststellungen signalisieren, wo die Aufsicht Nachbesserungsbedarf sieht und möglicherweise Folgeprüfungen einleitet."
+   },
+   {
+    "ref": "CSSF 23/839",
+    "title": "Empfehlungen zur Praxis-Verbesserung",
+    "text": "Neben den Feststellungen enthält der Bericht Empfehlungen, die IFMs umsetzen sollen. Da Themenprüfungen der CSSF als Aufsichtssignal gelten, sind die Empfehlungen faktisch handlungsrelevant."
+   }
+  ],
+  "todos": [
+   "Beide PDF-Dokumente der Themenprüfung herunterladen und inhaltlich auswerten.",
+   "Eigene Antworten im Selbstbewertungsfragebogen gegen die CSSF-Feststellungen abgleichen und Lücken dokumentieren.",
+   "Empfehlungen priorisieren und einen internen Maßnahmenplan mit Verantwortlichen und Terminen aufstellen.",
+   "Ergebnisse und Maßnahmen in der Compliance-Dokumentation festhalten, um bei Rückfragen der CSSF auskunftsfähig zu sein."
+  ],
+  "timeline": [
+   {
+    "date": "20.11.2026",
+    "label": "Veröffentlichung Themenprüfung",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Welche Institute müssen die Themenprüfung beachten?",
+    "a": "Laut CSSF sind Alternative Investmentfondsmanager und Verwaltungsgesellschaften nach Kapitel 15 die relevanten Zielgruppen. Beide Gruppen haben Selbstbewertungsfragebögen nach CSSF 21/789 eingereicht und sind direkt von den Feststellungen betroffen."
+   },
+   {
+    "q": "Sind die Empfehlungen rechtlich verbindlich?",
+    "a": "Die Quelle bezeichnet das Dokument als Themenprüfung mit Empfehlungen, nicht als Rundschreiben. Dennoch sind Empfehlungen der CSSF aus Aufsichtsprüfungen faktisch handlungsrelevant, da sie als Maßstab für künftige Prüfungen dienen."
+   },
+   {
+    "q": "Welche Frist gilt für die Umsetzung der Empfehlungen?",
+    "a": "Die Quelle nennt keine explizite Umsetzungsfrist. Institute sollten intern eine Frist setzen und Maßnahmen dokumentieren, um bei Rückfragen der CSSF auskunftsfähig zu sein."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die konkreten Feststellungen und Empfehlungen sind nur aus den PDFs ersichtlich, die nicht im Quelltext vorliegen. Inhaltliche Details können daher nicht beschrieben werden.",
+   "Es ist unklar, ob die CSSF eine Frist für die Umsetzung der Empfehlungen kommuniziert hat.",
+   "Es ist nicht belegt, ob die Themenprüfung Folgeaufsichtsmaßnahmen oder aufsichtliche Gespräche nach sich zieht."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Abgleich eigener SAQ-Antworten gegen CSSF-Feststellungen",
+     "change": "Die CSSF hat aus den eingereichten Fragebögen Schwachstellen abgeleitet. Institute müssen prüfen, ob ihre eigenen Antworten zu den beanstandeten Punkten gehören.",
+     "steps": [
+      "Die Compliance-Funktion lädt beide PDFs der Themenprüfung herunter und extrahiert alle Feststellungspunkte in eine interne Liste.",
+      "Die ursprünglichen eigenen SAQ-Antworten werden Punkt für Punkt mit den CSSF-Feststellungen verglichen; Abweichungen werden markiert.",
+      "Das Ergebnis des Abgleichs wird als schriftliches Gap-Dokument festgehalten und dem Management vorgelegt."
+     ]
+    }
+   ],
+   "processes": [
+    {
+     "name": "Nachverfolgung von CSSF-Empfehlungen aus Themenprüfungen",
+     "change": "Themenprüfungen der CSSF erzeugen einen strukturierten Handlungsbedarf. Der Prozess zur Umsetzung aufsichtlicher Empfehlungen muss diesen Bericht erfassen und mit Verantwortlichen und Terminen versehen.",
+     "steps": [
+      "Die Compliance-Funktion erstellt einen Maßnahmenplan, der jede Empfehlung aus der Themenprüfung einer verantwortlichen Person und einem internen Zieldatum zuordnet.",
+      "Der Fortschritt wird in regelmäßigen Abständen (mindestens quartalsweise) überprüft und im Compliance-Reporting dokumentiert.",
+      "Nach Abschluss aller Maßnahmen wird ein internes Abschlussdokument erstellt, das die Umsetzung belegt und für eine mögliche Aufsichtsanfrage bereitgehalten wird."
+     ]
+    }
+   ],
+   "policies": [
+    {
+     "name": "Interne Richtlinie zu Selbstbewertungsfragebögen (CSSF 21/789)",
+     "change": "Falls die CSSF-Feststellungen zeigen, dass die bisherigen Antwortprozesse nicht den Anforderungen entsprechen, muss die zugehörige interne Richtlinie angepasst werden.",
+     "steps": [
+      "Die Compliance-Funktion prüft, ob die bestehende Richtlinie die in den Feststellungen beanstandeten Punkte adressiert.",
+      "Bei identifizierten Lücken werden konkrete Änderungen am Richtlinientext vorgeschlagen und durch das Management freigegeben.",
+      "Die aktualisierte Richtlinie wird an alle betroffenen Mitarbeiter kommuniziert und die Einarbeitung dokumentiert."
+     ]
+    }
+   ],
+   "departments": [
+    {
+     "name": "Compliance",
+     "detail": "Federführend bei der Auswertung der Themenprüfung, dem Abgleich mit eigenen SAQ-Antworten, der Erstellung des Maßnahmenplans und der Dokumentation gegenüber der CSSF.",
+     "workload": "hoch"
+    },
+    {
+     "name": "Fondsmanagement",
+     "detail": "Liefert fachliche Einschätzungen zu den Feststellungen, die operative Prozesse der Fondsverwaltung betreffen, und unterstützt bei der Umsetzung von Empfehlungen.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Geschäftsführung / Vorstand",
+     "detail": "Erhält den Gap-Bericht und den Maßnahmenplan zur Freigabe und trägt die Gesamtverantwortung für die Umsetzung gegenüber der CSSF.",
+     "workload": "gering"
+    }
+   ]
+  },
+  "meta": {
+   "generated": "2026-11-21",
+   "model": "sonnet",
+   "source": "HTML, 4331 Zeichen, gekürzt auf 4331",
+   "dropped": 0,
+   "tokens": 10889
+  }
+ },
+ "cssfspecial-2026-11-09-cssf-aktualisiert-die-faq-zu-sif-und-sicar-die-keine-aif-sind": {
+  "h1": "CSSF-FAQ zu SIF und SICAR ohne AIF-Status aktualisiert (Version 7)",
+  "seo_title": "CSSF FAQ SIF SICAR keine AIF, Version 7",
+  "meta_description": "Die CSSF hat am 09.11.2026 die FAQ zu SIF und SICAR ohne AIF-Eigenschaft auf Version 7 aktualisiert. Betroffen sind Initiatoren und Manager luxemburgischer SIF und SICAR.",
+  "lead": "Die CSSF hat am 09.11.2026 die FAQ zu SIF und SICAR, die nicht als AIF qualifizieren, auf Version 7 aktualisiert. Betroffen sind Initiatoren und Manager von SIF und SICAR ohne AIF-Eigenschaft.",
+  "aka": [
+   "CSSF FAQ SIF SICAR",
+   "Spezialfonds Luxemburg FAQ",
+   "SICAR nicht AIF",
+   "SIF kein AIF CSSF",
+   "FAQ SIF SICAR Version 7"
+  ],
+  "summary": "Die CSSF hat die FAQ zu SIF und SICAR ohne AIF-Eigenschaft am 09.11.2026 als Version 7 veröffentlicht. Die FAQ gilt für spezialisierte Investmentfonds und Risikokapitalgesellschaften luxemburgischen Rechts, die nicht dem AIFMD-Regime unterliegen. Initiatoren und Manager prüfen ihre Fondsdokumente und Prozesse gegen die neue Fassung.",
+  "overview": [
+   "Die CSSF veröffentlichte die FAQ zu SIF und SICAR ohne AIF-Status erstmals am 02.09.2019. Die Aktualisierung vom 09.11.2026 bringt Version 7 hervor. Die FAQ richtet sich ausdrücklich an Manager und Initiatoren von Spezialfonds (SIF) und Investmentgesellschaften in Risikokapital (SICAR) nach luxemburgischem Recht, die nicht als AIF im Sinne der AIFMD qualifizieren.",
+   "Der genaue Inhalt der Änderungen geht aus den verfügbaren Quellen nicht hervor. Die Quelle beschränkt sich auf Metadaten und Strukturinformationen der CSSF-Website. Compliance-Officers in Luxemburg-verwaltenden Einheiten sollten das aktualisierte PDF (132,6 KB) direkt prüfen und feststellen, welche Anforderungen gegenüber der Vorgängerversion geändert wurden."
+  ],
+  "facts": [
+   {
+    "label": "Erstveröffentlichung",
+    "value": "02.09.2019"
+   },
+   {
+    "label": "Letzte Aktualisierung",
+    "value": "09.11.2026"
+   },
+   {
+    "label": "Version",
+    "value": "7"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "CSSF (Luxemburg)"
+   },
+   {
+    "label": "Dokumenttyp",
+    "value": "FAQ (PDF, 132,6 KB)"
+   },
+   {
+    "label": "Anwendungsbereich",
+    "value": "SIF und SICAR ohne AIF-Qualifikation"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kapitalverwaltungs-gesellschaften",
+    "note": "Manager luxemburgischer SIF ohne AIF-Status",
+    "detail": "Kapitalverwaltungsgesellschaften, die luxemburgische SIF verwalten, die nicht dem AIF-Regime unterfallen, müssen die aktualisierte FAQ gegen ihre internen Prozesse und Fondsdokumente prüfen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Investmentgesell-schaften (SICAR)",
+    "note": "SICAR ohne AIF-Eigenschaft nach luxemburgischem Recht",
+    "detail": "Risikokapitalgesellschaften (SICAR) luxemburgischen Rechts, die nicht als AIF qualifizieren, unterliegen direkt dem Anwendungsbereich dieser FAQ.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Banken",
+    "note": "Nur als Depotbank oder Vertrieb von SIF/SICAR",
+    "detail": "Banken sind nicht primäre Adressaten. Eine mittelbare Relevanz besteht, wenn sie als Depotbank oder Vertriebsstelle für betroffene SIF oder SICAR tätig sind.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Version 7",
+    "title": "FAQ aktualisiert auf Version 7",
+    "text": "Die CSSF hat die FAQ am 09.11.2026 auf Version 7 aktualisiert. Welche Fragen oder Antworten inhaltlich geändert wurden, geht aus den verfügbaren Quellen nicht hervor. Das aktuelle PDF ist auf der CSSF-Website abrufbar."
+   }
+  ],
+  "todos": [
+   "Aktualisiertes FAQ-PDF (Version 7) von der CSSF-Website herunterladen und gegen Vorgängerversion vergleichen.",
+   "Fondsdokumente betroffener SIF und SICAR auf Konformität mit den aktualisierten FAQ-Antworten prüfen.",
+   "Risikomanagement-Prozesse für SIF und SICAR ohne AIF-Status auf Anpassungsbedarf untersuchen.",
+   "Ergebnis der Prüfung dokumentieren und ggf. Änderungsbedarf an zuständige Teams weitergeben."
+  ],
+  "timeline": [
+   {
+    "date": "02.09.2019",
+    "label": "Erstveröffentlichung FAQ",
+    "kind": "schritt"
+   },
+   {
+    "date": "09.11.2026",
+    "label": "Aktualisierung Version 7",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Für wen gilt diese FAQ?",
+    "a": "Die FAQ gilt für Initiatoren und Manager von SIF und SICAR nach luxemburgischem Recht, die nicht als AIF im Sinne der AIFMD qualifizieren. SIF und SICAR mit AIF-Status sind nicht erfasst."
+   },
+   {
+    "q": "Was hat sich in Version 7 geändert?",
+    "a": "Die verfügbaren Quellen nennen keine inhaltlichen Änderungen. Das aktualisierte PDF (132,6 KB) muss direkt auf der CSSF-Website abgerufen und mit der Vorgängerversion verglichen werden."
+   },
+   {
+    "q": "Welche Handlungspflicht ergibt sich sofort?",
+    "a": "Institute prüfen das neue FAQ-Dokument gegen ihre Fondsdokumente und internen Prozesse. Abweichungen sind zu dokumentieren und zeitnah zu beheben."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die Quelle enthält keine inhaltlichen Angaben zu den Änderungen in Version 7. Der genaue Änderungsumfang ist nur durch Vergleich des PDF mit der Vorgängerversion feststellbar.",
+   "Es ist kein Übergangszeitraum oder Umsetzungsdatum aus den verfügbaren Quellen ableitbar.",
+   "Das betroffene Rahmenwerk (luxemburgisches SIF- und SICAR-Recht) ist auf regradar.de noch nicht zugeordnet."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Abgleich Fondsdokumente gegen FAQ Version 7",
+     "change": "Die FAQ in Version 7 kann geänderte Anforderungen an Fondsdokumente von SIF und SICAR ohne AIF-Status enthalten. Die bestehende Kontrolle muss auf die neue Fassung aktualisiert werden.",
+     "steps": [
+      "Die Compliance-Funktion lädt das FAQ-PDF Version 7 von der CSSF-Website herunter und erstellt einen Vergleich mit der Vorgängerversion.",
+      "Für jede geänderte FAQ-Antwort prüft die Kontrolle, ob Prospekte, Satzungen oder andere Fondsdokumente der betroffenen SIF und SICAR anzupassen sind.",
+      "Das Ergebnis des Abgleichs wird schriftlich dokumentiert und bildet die Grundlage für ggf. notwendige Dokumentenanpassungen."
+     ]
+    }
+   ],
+   "processes": [
+    {
+     "name": "Fondsdokumentation SIF/SICAR ohne AIF",
+     "change": "Der Prozess zur Pflege und Aktualisierung von Fondsdokumenten muss die neuen FAQ-Antworten der CSSF als Referenzquelle einbeziehen.",
+     "steps": [
+      "Die zuständige Funktion identifiziert alle verwalteten SIF und SICAR ohne AIF-Eigenschaft und prüft deren Dokumentation gegen die aktualisierte FAQ.",
+      "Festgestellte Abweichungen werden in einem Aktionsplan erfasst, der Verantwortliche und Fristen benennt.",
+      "Nach Abschluss der Anpassungen bestätigt die Compliance-Funktion die Konformität schriftlich."
+     ]
+    },
+    {
+     "name": "Risikomanagement-Überprüfung SIF/SICAR",
+     "change": "Risikomanagement-Prozesse für SIF und SICAR ohne AIF-Status sind auf Konformität mit der aktualisierten FAQ zu prüfen, da die FAQ Anforderungen an das Risikomanagement adressieren kann.",
+     "steps": [
+      "Das Risikomanagement identifiziert die FAQ-Passagen, die Risikomanagement-Anforderungen betreffen, und vergleicht diese mit den internen Prozessen.",
+      "Abweichungen werden dokumentiert und in den nächsten Überprüfungszyklus der Risikomanagement-Richtlinie aufgenommen.",
+      "Die Ergebnisse werden der Geschäftsleitung zur Kenntnis gebracht."
+     ]
+    }
+   ],
+   "policies": [
+    {
+     "name": "Richtlinie zur Fondsverwaltung SIF/SICAR",
+     "change": "Interne Richtlinien für die Verwaltung von SIF und SICAR ohne AIF-Status müssen nach Auswertung der Version 7 auf Anpassungsbedarf geprüft werden.",
+     "steps": [
+      "Die Compliance-Funktion prüft nach dem FAQ-Vergleich, ob interne Richtlinien die aktualisierten CSSF-Vorgaben noch korrekt wiedergeben.",
+      "Notwendige Änderungen werden im regulären Richtlinien-Update-Prozess eingebracht und dokumentiert.",
+      "Die aktualisierte Richtlinie wird den betroffenen Mitarbeitenden kommuniziert."
+     ]
+    }
+   ],
+   "departments": [
+    {
+     "name": "Compliance",
+     "detail": "Compliance verantwortet den Vergleich der FAQ-Versionen, die Prüfung der Fondsdokumente und die Dokumentation des Ergebnisses.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Fondsmanagement / Portfolio Management",
+     "detail": "Das Fondsmanagement prüft operative Auswirkungen auf die Verwaltung betroffener SIF und SICAR und setzt Anpassungen in Abstimmung mit Compliance um.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Rechtsabteilung",
+     "detail": "Die Rechtsabteilung bewertet rechtliche Konsequenzen aus geänderten FAQ-Antworten und koordiniert ggf. Anpassungen an Fondsdokumenten.",
+     "workload": "gering"
+    }
+   ]
+  },
+  "meta": {
+   "generated": "2026-11-21",
+   "model": "sonnet",
+   "source": "HTML, 3929 Zeichen, gekürzt auf 3929",
+   "dropped": 0,
+   "tokens": 10427
+  }
+ },
+ "cssfucits-2026-11-16-mmfr-handbook-updated": {
+  "h1": "CSSF MMFR-Handbuch Version 1.4 (aktualisiert November 2026)",
+  "seo_title": "CSSF MMFR-Handbuch Version 1.4, Update 2026",
+  "meta_description": "Die CSSF hat ihr MMFR-Handbuch auf Version 1.4 aktualisiert (16.11.2026). Betroffen sind Verwalter von Geldmarktfonds in Luxemburg.",
+  "lead": "Die CSSF hat am 16.11.2026 ihr technisches MMFR-Handbuch auf Version 1.4 aktualisiert. Es richtet sich an Verwalter von Geldmarktfonds (UCITS, SIF, Part-II-UCI), die der Money Market Fund Regulation unterliegen.",
+  "aka": [
+   "MMFR Handbook CSSF",
+   "Geldmarktfonds Handbuch CSSF",
+   "Money Market Fund Regulation Luxemburg",
+   "MMFR Version 1.4",
+   "CSSF MMFR Leitfaden"
+  ],
+  "summary": "Die CSSF hat ihr technisches MMFR-Handbuch am 16.11.2026 auf Version 1.4 aktualisiert. Das Dokument richtet sich an Investment-Fondsmanager sowie Verwalter von UCITS, SIF und Part-II-UCI in Luxemburg und begleitet die korrekte Anwendung der Money Market Fund Regulation.",
+  "overview": [
+   "Das MMFR-Handbuch der CSSF ist seit seiner Erstveröffentlichung am 16.06.2020 das zentrale technische Referenzdokument für die Anwendung der Money Market Fund Regulation in Luxemburg. Die aktuelle Version 1.4 wurde am 16.11.2026 veröffentlicht.",
+   "Ergänzend stehen der User Guide zum Meldewesen (Art. 37 MMFR, Version 2, zuletzt aktualisiert 30.08.2022) sowie die MMFR-Fehlercodes-Datei zur Verfügung. Die drei Dokumente bilden gemeinsam die technische Grundlage für die MMFR-Compliance gegenüber der CSSF."
+  ],
+  "facts": [
+   {
+    "label": "Dokumentversion",
+    "value": "Version 1.4"
+   },
+   {
+    "label": "Aktualisierungsdatum",
+    "value": "16.11.2026"
+   },
+   {
+    "label": "Erstveröffentlichung",
+    "value": "16.06.2020"
+   },
+   {
+    "label": "Herausgeber",
+    "value": "CSSF (Luxemburg)"
+   },
+   {
+    "label": "Dateiformat",
+    "value": "PDF, 381 KB"
+   },
+   {
+    "label": "Ergänzende Dokumente",
+    "value": "User Guide Art. 37 MMFR (v2) + MMFR Error Codes"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Kapitalverwaltungs-ges.",
+    "note": "Verwalter von Geldmarktfonds in LU",
+    "detail": "Investment-Fondsmanager mit Luxemburger Zulassung, die Geldmarktfonds nach MMFR verwalten, sind direkt adressiert. Das gilt für UCITS-KVGen, SIF-Verwalter und Part-II-UCI-Verwalter.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Banken",
+    "note": "Soweit Geldmarktfonds verwaltet",
+    "detail": "Kreditinstitute, die als Investment-Fondsmanager Geldmarktfonds in Luxemburg verwalten, fallen unter den Anwendungsbereich des Handbuchs.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "MMFR-Handbuch v1.4",
+    "title": "Neue Version des technischen Leitfadens",
+    "text": "Die CSSF hat das MMFR-Handbuch auf Version 1.4 aktualisiert. Welche konkreten Abschnitte geändert wurden, geht aus der Quelle nicht hervor. Verwalter sollten die neue Version gegen die zuletzt verwendete abgleichen."
+   },
+   {
+    "ref": "User Guide Art. 37",
+    "title": "Meldewesen-Leitfaden weiterhin v2",
+    "text": "Der User Guide zum Meldewesen unter Art. 37 MMFR (Version 2) wurde zuletzt am 30.08.2022 aktualisiert und ist weiterhin gültig. Er ergänzt das Handbuch für die praktische Meldeumsetzung."
+   }
+  ],
+  "todos": [
+   "Neue Version 1.4 des MMFR-Handbuchs herunterladen und mit der intern verwendeten Vorversion vergleichen.",
+   "Geänderte oder neue Anforderungen in der internen MMFR-Compliance-Dokumentation nachführen.",
+   "User Guide Art. 37 MMFR und MMFR-Fehlercodes auf Aktualität prüfen und ggf. interne Meldeprozesse anpassen.",
+   "Ergebnis des Versionsabgleichs in der Compliance-Akte dokumentieren."
+  ],
+  "timeline": [
+   {
+    "date": "16.06.2020",
+    "label": "Erstveröffentlichung Handbuch",
+    "kind": "schritt"
+   },
+   {
+    "date": "04.05.2021",
+    "label": "User Guide + Error Codes",
+    "kind": "schritt"
+   },
+   {
+    "date": "30.08.2022",
+    "label": "User Guide auf v2 aktualisiert",
+    "kind": "schritt"
+   },
+   {
+    "date": "16.11.2026",
+    "label": "Handbuch auf v1.4 aktualisiert",
+    "kind": "kern"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Für welche Fondsstrukturen gilt das MMFR-Handbuch?",
+    "a": "Das Handbuch richtet sich laut CSSF an Investment-Fondsmanager sowie Verwalter von UCITS, SIF und Part-II-UCI (Gesetz vom 17.12.2010), soweit diese Geldmarktfonds nach MMFR verwalten."
+   },
+   {
+    "q": "Was ändert sich in Version 1.4 gegenüber der Vorversion?",
+    "a": "Die Quelle nennt keine konkreten inhaltlichen Änderungen. Verwalter müssen die neue Version selbst gegen die Vorversion abgleichen, um Handlungsbedarf zu identifizieren."
+   },
+   {
+    "q": "Welche ergänzenden Dokumente stellt die CSSF zum MMFR bereit?",
+    "a": "Ergänzend zum Handbuch gibt es den User Guide zum Meldewesen unter Art. 37 MMFR (Version 2, zuletzt 30.08.2022) sowie eine MMFR-Fehlercodes-Datei. Beide sind auf der CSSF-Website abrufbar."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Die Quelle nennt keine konkreten inhaltlichen Änderungen zwischen Version 1.3 und Version 1.4. Ein Versionsvergleich ist nur durch direkten Dokumentabgleich möglich.",
+   "Es ist unklar, ob Version 1.4 auf neue regulatorische Vorgaben (z. B. ESMA-Leitlinien) reagiert oder rein redaktioneller Natur ist.",
+   "Die Quelle enthält keine Übergangsfrist oder Anwendungsdatum, ab dem die neue Version verbindlich anzuwenden ist."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Versionsabgleich MMFR-Handbuch v1.3 vs. v1.4",
+     "change": "Das MMFR-Handbuch wurde auf Version 1.4 aktualisiert. Da die Quelle keine Änderungsübersicht enthält, müssen Institute die neue Version selbst gegen die zuletzt intern verwendete abgleichen, um neue oder geänderte Anforderungen zu identifizieren.",
+     "steps": [
+      "Die Compliance-Funktion lädt die Version 1.4 von der CSSF-Website herunter und stellt sie der intern verwendeten Vorversion gegenüber.",
+      "Unterschiede werden in einem internen Änderungsprotokoll dokumentiert; das Ergebnis zeigt, ob neue Kontrollpflichten entstehen.",
+      "Sofern Änderungen festgestellt werden, passt die Compliance-Funktion die betroffenen Kontrollpunkte in der MMFR-Kontrollmatrix an."
+     ]
+    }
+   ],
+   "processes": [
+    {
+     "name": "MMFR-Meldeprozess (Art. 37 MMFR)",
+     "change": "Der User Guide zum Art.-37-Meldewesen (Version 2) bleibt unverändert. Dennoch ist zu prüfen, ob Version 1.4 des Handbuchs Auswirkungen auf die Datenlieferung oder Fehlerbehebung hat, da Handbuch und User Guide zusammen gelesen werden.",
+     "steps": [
+      "Der Meldeverantwortliche prüft, ob Version 1.4 Abschnitte enthält, die den Meldeprozess oder die Fehlerbehandlung (MMFR Error Codes) betreffen.",
+      "Ergeben sich Abweichungen, aktualisiert der Meldeverantwortliche die internen Verfahrensanweisungen für die CSSF-Meldung.",
+      "Die überarbeiteten Anweisungen werden vor dem nächsten Meldetermin abgestimmt und freigegeben."
+     ]
+    }
+   ],
+   "policies": [
+    {
+     "name": "MMFR-Compliance-Richtlinie",
+     "change": "Die interne MMFR-Richtlinie verweist in der Regel auf die jeweils gültige Version des CSSF-Handbuchs. Mit Version 1.4 ist die Versionsnummer in der Richtlinie nachzuführen; inhaltliche Änderungen folgen aus dem Versionsabgleich.",
+     "steps": [
+      "Die Compliance-Funktion aktualisiert den Verweis auf das MMFR-Handbuch in der internen Richtlinie auf Version 1.4.",
+      "Soweit der Versionsabgleich inhaltliche Änderungen ergibt, werden die betroffenen Richtlinienabschnitte überarbeitet und intern freigegeben.",
+      "Die aktualisierte Richtlinie wird an alle betroffenen Fachbereiche kommuniziert und im Dokumentenmanagementsystem versioniert abgelegt."
+     ]
+    }
+   ],
+   "departments": [
+    {
+     "name": "Compliance / Fondsrecht",
+     "detail": "Führt den Versionsabgleich durch, dokumentiert Änderungen, aktualisiert die MMFR-Richtlinie und koordiniert die Umsetzung mit den Fachbereichen.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Fondsmeldewesen / Reporting",
+     "detail": "Prüft, ob Version 1.4 Auswirkungen auf den Art.-37-Meldeprozess oder die Fehlerbehandlung hat, und passt Verfahrensanweisungen an.",
+     "workload": "gering"
+    }
+   ]
+  },
+  "meta": {
+   "generated": "2026-11-21",
+   "model": "sonnet",
+   "source": "HTML, 4225 Zeichen, gekürzt auf 4225",
+   "dropped": 0,
+   "tokens": 21440
+  }
+ },
  "dgsd-2026-11-16-eba-supports-further-progress-on-the-banking-union-including-on-deposit-insuranc": {
   "h1": "EBA bekräftigt Unterstützung für Bankenunion und Einlagensicherung (DGSD)",
   "seo_title": "EBA Einlagensicherung Bankenunion 2027",
