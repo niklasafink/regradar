@@ -23,8 +23,7 @@ export function Toc({ items }: { items: TocItem[] }) {
   }, [items]);
 
   return (
-    <nav aria-label="Gliederung" className="sticky top-24 hidden max-h-[calc(100vh-8rem)] overflow-auto lg:block print:hidden">
-      <p className="mb-2 text-xs font-medium text-slate-400">Auf dieser Seite</p>
+    <nav aria-label="Gliederung" className="fixed right-4 top-1/2 z-20 hidden max-h-[70vh] w-44 -translate-y-1/2 overflow-auto xl:block print:hidden">
       <ul className="border-l border-slate-200">
         {items.map((i) => (
           <li key={i.id}>

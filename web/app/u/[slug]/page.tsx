@@ -142,7 +142,7 @@ export default async function UpdatePage(
       />
       <Chrome />
 
-      <main className="mx-auto max-w-6xl px-3 pb-24 sm:px-4 lg:grid lg:grid-cols-[minmax(0,1fr)_13rem] lg:gap-10">
+      <main className="mx-auto max-w-4xl px-3 pb-24 sm:px-4">
         <article className="mt-6 min-w-0">
           <div className="flex flex-wrap items-center gap-2 text-xs print:hidden">
             <Link
@@ -236,11 +236,7 @@ export default async function UpdatePage(
             </dl>
           )}
         </article>
-        {rich && (
-          <aside className="mt-6 lg:mt-12 print:hidden">
-            <Toc items={richToc(rich)} />
-          </aside>
-        )}
+        {rich && <Toc items={richToc(rich)} />}
       </main>
       <Footer />
     </>
