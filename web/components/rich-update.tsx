@@ -1,77 +1,14 @@
 import { Patrick_Hand } from "next/font/google";
 import { Sketch } from "@/components/sketch";
-import type { RichAudience, RichUpdate } from "@/lib/rich";
+import type { RichImpactItem, RichUpdate } from "@/lib/rich";
 
 // Handschrift nur für die Strichgrafiken (wie in den Erklärvideos).
 const hand = Patrick_Hand({ subsets: ["latin"], weight: "400", variable: "--font-hand" });
 
-const STATUS_LABEL: Record<RichAudience["status"], string> = {
-  betroffen: "betroffen",
-  teilweise: "teilweise",
-  "nicht betroffen": "nicht betroffen",
-};
-
-function wrap(s: string, n: number): string[] {
-  const lines: string[] = [];
-  let cur = "";
-  // Umbruch an Leerzeichen und nach „/“ (z. B. „Depotbanken/Verwahrstellen“).
-  for (const w of s.split(/\s+/).flatMap((x) => x.split(/(?<=\/)/))) {
-    const sep = cur.endsWith("/") ? "" : " ";
-    if (cur && cur.length + w.length + sep.length > n) {
-      lines.push(cur);
-      cur = w;
-    } else cur = cur ? `${cur}${sep}${w}` : w;
-  }
-  if (cur) lines.push(cur);
-  return lines;
-}
-
 const SK = { fill: "none", stroke: "currentColor", strokeWidth: 1.6 } as const;
 const handText = { fontFamily: "var(--font-hand), 'Comic Sans MS', cursive" } as const;
 
-/** Zielgruppen in einer Zeile: je Gruppe ein Strichmännchen, Name und Status. */
-function AudienceRow({ items, seed }: { items: RichAudience[]; seed: number }) {
-  const W = 800;
-  const n = items.length;
-  const cw = W / n;
-  const avail = cw - 14;
-  return (
-    <Sketch seed={seed}>
-      <svg viewBox={`0 0 ${W} 150`} role="img" aria-label="Für wen die Meldung relevant ist"
-        className="block h-auto w-full min-w-[560px] text-slate-900" style={handText}>
-        {items.map((a, i) => {
-          const cx = cw * i + cw / 2;
-          const lines = wrap(a.name, Math.max(8, Math.floor(avail / (16 * 0.47)))).slice(0, 2);
-          const longest = Math.max(...lines.map((l) => l.length), 1);
-          const fs = Math.max(12, Math.min(19, avail / (longest * 0.47)));
-          const color = a.status === "betroffen" ? "text-blue-600" : a.status === "nicht betroffen" ? "text-slate-400" : "text-slate-900";
-          const statusY = 104 + lines.length * (fs + 3) + 4;
-          return (
-            <g key={a.name + i}>
-              <g className={`fig ${color}`} data-x={cx.toFixed(0)} data-y="78" />
-              {a.status === "nicht betroffen" && (
-                <>
-                  <path className="sk text-red-600" data-w="2.5" d={`M ${cx - 20} 22 L ${cx + 20} 80`} {...SK} />
-                  <path className="sk text-red-600" data-w="2.5" d={`M ${cx + 20} 22 L ${cx - 20} 80`} {...SK} />
-                </>
-              )}
-              {lines.map((l, j) => (
-                <text key={j} x={cx} y={104 + j * (fs + 3)} textAnchor="middle" className="fill-slate-900" style={{ fontSize: fs }}>
-                  {l}
-                </text>
-              ))}
-              <text x={cx} y={statusY} textAnchor="middle" style={{ fontSize: 15 }}
-                className={a.status === "betroffen" ? "fill-blue-600" : a.status === "nicht betroffen" ? "fill-red-600" : "fill-slate-500"}>
-                {STATUS_LABEL[a.status]}
-              </text>
-            </g>
-          );
-        })}
-      </svg>
-    </Sketch>
-  );
-}
-
+/** Zeitstrahl: Strichgrafik, die den zeitlichen Ablauf zeigt. */
 function Timeline({ items, seed }: { items: RichUpdate["timeline"]; seed: number }) {
   const n = items.length;
   const xs = items.map((_, i) => (n > 1 ? 70 + i * (660 / (n - 1)) : 400));
@@ -104,16 +41,39 @@ function Timeline({ items, seed }: { items: RichUpdate["timeline"]; seed: number
   );
 }
 
+/** Kurzfassung in Stichpunkten: jeder Satz ein Punkt. */
+function bullets(s: string): string[] {
+  return s.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean);
+}
+
 const H2 = "mt-10 font-heading text-xl font-medium tracking-tight text-slate-900";
+
+function ImpactList({ title, items }: { title: string; items: RichImpactItem[] }) {
+  if (items.length === 0) return null;
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
+      <ul className="mt-2 border-t border-slate-200">
+        {items.map((x) => (
+          <li key={x.name} className="grid grid-cols-1 gap-1 border-b border-slate-200 py-2.5 sm:grid-cols-[9rem_1fr] sm:gap-4">
+            <span className="text-sm text-slate-500">{x.action}</span>
+            <div className="min-w-0">
+              <b className="font-semibold text-slate-900">{x.name}</b>
+              <span className="block text-slate-700">{x.change}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 /** Angereicherte Abschnitte einer Detailseite (Server-Komponente, volles HTML für Suchmaschinen). */
 export function RichUpdateSections({ rich, published, seed }: { rich: RichUpdate; published: string; seed: number }) {
+  const ia = rich.impact_analysis;
   return (
     <div className={`${hand.variable} mt-5 text-base leading-relaxed text-slate-700`}>
       <p className="text-lg leading-relaxed text-slate-600">{rich.lead}</p>
-      {rich.aka.length > 0 && (
-        <p className="mt-3 text-sm text-slate-500">Auch gesucht als: {rich.aka.join(", ")}</p>
-      )}
 
       {rich.facts.length > 0 && (
         <dl className="mt-6 overflow-hidden rounded-2xl border border-slate-200 text-sm">
@@ -126,20 +86,14 @@ export function RichUpdateSections({ rich, published, seed }: { rich: RichUpdate
         </dl>
       )}
 
-      <section className="mt-6 rounded-2xl bg-slate-50 px-5 py-4" aria-label="Kurzfassung">
+      <section className="mt-6 rounded-2xl bg-slate-50 px-5 py-4" aria-label="Kurz gesagt">
         <h2 className="text-sm font-semibold tracking-tight text-slate-900">Kurz gesagt</h2>
-        <p className="rich-summary mt-1">{rich.summary}</p>
+        <ul className="rich-summary mt-2 list-disc space-y-1.5 pl-5">
+          {bullets(rich.summary).map((b) => <li key={b.slice(0, 40)}>{b}</li>)}
+        </ul>
       </section>
 
-      <h2 className={H2}>Worum es geht</h2>
-      <div className="mt-3 space-y-3">
-        {rich.overview.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
-      </div>
-
       <h2 className={H2}>Für wen relevant</h2>
-      <figure className="mt-4">
-        <AudienceRow items={rich.audience} seed={seed} />
-      </figure>
       <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
         <table className="w-full text-sm">
           <thead>
@@ -161,6 +115,11 @@ export function RichUpdateSections({ rich, published, seed }: { rich: RichUpdate
         </table>
       </div>
 
+      <h2 className={H2}>Worum es geht</h2>
+      <div className="mt-3 space-y-3">
+        {rich.overview.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
+      </div>
+
       <h2 className={H2}>Was sich ändert</h2>
       <ul className="mt-3 border-t border-slate-200">
         {rich.changes.map((c) => (
@@ -179,11 +138,47 @@ export function RichUpdateSections({ rich, published, seed }: { rich: RichUpdate
         {rich.todos.map((t) => <li key={t.slice(0, 40)}>{t}</li>)}
       </ol>
 
+      {ia && (
+        <>
+          <h2 className={H2}>Impact-Analyse</h2>
+          <div className="mt-3 space-y-6">
+            <ImpactList title="Kontrollen" items={ia.controls} />
+            <ImpactList title="Prozesse" items={ia.processes} />
+            <ImpactList title="Policies" items={ia.policies} />
+            {ia.departments.length > 0 && (
+              <div>
+                <h3 className="text-sm font-semibold text-slate-900">Betroffene Abteilungen</h3>
+                <div className="mt-2 overflow-hidden rounded-2xl border border-slate-200">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="text-left text-xs text-slate-500">
+                        <th className="px-4 py-2.5 font-medium">Abteilung</th>
+                        <th className="w-px whitespace-nowrap px-4 py-2.5 font-medium">Aufwand</th>
+                        <th className="px-4 py-2.5 font-medium">Was dort zu tun ist</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {ia.departments.map((d) => (
+                        <tr key={d.name} className="border-t border-slate-100 align-top">
+                          <td className="px-4 py-2.5 text-slate-900">{d.name}</td>
+                          <td className="whitespace-nowrap px-4 py-2.5">{d.workload}</td>
+                          <td className="px-4 py-2.5">{d.detail}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </div>
+        </>
+      )}
+
       {rich.timeline.length >= 2 && (
         <>
           <h2 className={H2}>Zeitplan</h2>
           <figure className="mt-4">
-            <Timeline items={rich.timeline} seed={seed + 1} />
+            <Timeline items={rich.timeline} seed={seed} />
             <figcaption className="mt-2 text-sm text-slate-500">Daten aus der Meldung und dem Originaldokument.</figcaption>
           </figure>
         </>

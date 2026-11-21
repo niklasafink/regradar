@@ -2,14 +2,13 @@ import { RelevanceStatus } from "@/components/relevance-status";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, permanentRedirect, redirect } from "next/navigation";
-import { AuthorityLogo, FirmLogo } from "@/components/authority-logo";
+import { AuthorityLogo } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
 import { TrackGoal } from "@/components/track-goal";
 import { RichUpdateSections } from "@/components/rich-update";
 import { richBySlug, trimDescription } from "@/lib/rich";
 import { authority, daysUntil, deadlineExpired, frameworkById, providerSlug, topicById } from "@/lib/logic";
 import { firstParagraph, isoDate, LEGACY_SLUGS, UPDATE_PAGES, updateBySlug, updateBySlugLoose, updateHref } from "@/lib/updates";
-import { hashtag, shareOpener } from "@/lib/linkedin";
 import {
   breadcrumbLd, clip, description, frameworkPath, ldGraph, organizationLd, pageMeta, SITE_URL, title, TITLE_MAX,
 } from "@/lib/seo";
@@ -84,39 +83,6 @@ export default async function UpdatePage(
     .filter((p) => p.fw.id === fw.id && p.slug !== slug)
     .slice(0, 6);
 
-  // Sachlicher LinkedIn-Post in ganzen Sätzen, Regeln siehe LINKEDIN.md im Repo-Root.
-  const hashtags = [
-    ...new Set([
-      hashtag(fw.n.de.split(":")[0].trim()),
-      hashtag(authority(u.src)),
-      "Compliance",
-      "regradar",
-    ]),
-  ]
-    .filter(Boolean)
-    .map((h) => `#${h}`)
-    .join(" ");
-  const opener = shareOpener(u);
-  // Überlange Zusammenfassungen an einer Satzgrenze kürzen, nie mitten im Satz.
-  const trimToSentence = (s: string, max: number) => {
-    if (s.length <= max) return s;
-    const cut = s.slice(0, max);
-    const end = cut.lastIndexOf(". ");
-    if (end > max * 0.4) return cut.slice(0, end + 1);
-    return `${cut.replace(/\s+\S*$/, "")} …`;
-  };
-  const excerpt = u.s.de ? trimToSentence(firstParagraph(u.s.de), 400) : "";
-  const shareText = [
-    opener,
-    excerpt,
-    u.url ? `Die vollständige Meldung gibt es hier: ${u.url}` : "",
-    hashtags,
-  ]
-    .filter(Boolean)
-    .join("\n\n");
-  const linkedInHref =
-    `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(shareText)}`;
-
   const url = `${SITE_URL}/u/${slug}`;
   const fwPath = frameworkPath(fw);
   const jsonLd = ldGraph(
@@ -174,17 +140,16 @@ export default async function UpdatePage(
       />
       <Chrome />
 
-      <main className="mx-auto max-w-3xl px-4 pb-24 sm:px-6">
-        <Link
-          href={backHref}
-          className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900"
-        >
-          <span aria-hidden>←</span>
-          Alle Updates zu {fw.n.de}
-        </Link>
-
-        <article className="mt-4">
+      <main className="mx-auto max-w-4xl px-3 pb-24 sm:px-4">
+        <article className="mt-6">
           <div className="flex flex-wrap items-center gap-2 text-xs">
+            <Link
+              href={backHref}
+              className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500 hover:text-slate-900"
+            >
+              <span aria-hidden>←</span>
+              Zurück
+            </Link>
             {t && (
               <span className="rounded-full bg-slate-100 px-3 py-0.5 font-medium text-slate-600">
                 {t.n.de}
@@ -193,27 +158,9 @@ export default async function UpdatePage(
             <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
               {u.t.de}
             </span>
-            <span className="rounded-full border border-slate-200 px-3 py-0.5 font-medium text-slate-500">
-              {authority(u.src)}
+            <span className="inline-flex items-center rounded-full border border-slate-200 px-3 py-0.5">
+              <AuthorityLogo src={u.src} className="h-3.5" />
             </span>
-            {u.refnum && <span className="num text-slate-400">{u.refnum}</span>}
-          </div>
-
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
-            <a
-              href={linkedInHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-fast-goal="linkedin_share_click"
-              data-fast-goal-slug={slug}
-              data-fast-goal-authority={u.src}
-              className="inline-flex items-center gap-1.5 rounded-full border border-slate-900 px-3.5 py-1 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5" aria-hidden>
-                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
-              </svg>
-              Auf LinkedIn posten ↗
-            </a>
             {u.url && (
               <a
                 href={u.url}
@@ -222,27 +169,31 @@ export default async function UpdatePage(
                 data-fast-goal="original_link_click"
                 data-fast-goal-slug={slug}
                 data-fast-goal-authority={u.src}
-                className="inline-flex items-center gap-1.5 rounded-full border border-slate-900 px-3.5 py-1 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
+                className="inline-flex items-center gap-1.5 rounded-full border border-slate-900 px-3 py-0.5 font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
               >
-                Zur Original-Meldung: {new URL(u.url).hostname.replace(/^www\./, "")} ↗
+                Zur Originalmeldung ↗
               </a>
             )}
           </div>
 
-          <div className="mt-4 flex items-start justify-between gap-4">
+          <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-500">
+            <time dateTime={isoDate(u.d)} className="num">{u.d}</time>
+            <span aria-hidden>·</span>
+            <span>{fw.ref}, {fw.jur}</span>
+            {u.refnum && (
+              <>
+                <span aria-hidden>·</span>
+                <span className="num text-slate-400">{u.refnum}</span>
+              </>
+            )}
+          </p>
+
+          <div className="mt-2 flex items-start justify-between gap-4">
             <h1 className="font-heading text-balance text-2xl font-medium tracking-tight sm:text-3xl">
               {rich?.h1 ?? u.ti.de}
             </h1>
             <RelevanceStatus target={`u:${slug}`} className="mt-1" />
           </div>
-
-          <p className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-500">
-            <time dateTime={isoDate(u.d)} className="num">{u.d}</time>
-            <span aria-hidden>·</span>
-            <AuthorityLogo src={u.src} className="h-3.5" />
-            <span aria-hidden>·</span>
-            <span>{fw.ref}, {fw.jur}</span>
-          </p>
 
           {rich ? (
             <RichUpdateSections rich={rich} published={u.d} seed={[...slug].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 997, 7)} />
@@ -282,49 +233,6 @@ export default async function UpdatePage(
               )}
             </dl>
           )}
-
-          {u.adv?.length ? (
-            <section className="mt-8">
-              <h2 className="text-sm font-semibold tracking-tight">
-                So kommentieren Big 4 &amp; Kanzleien
-              </h2>
-              <ul className="mt-3 space-y-2">
-                {u.adv.map((a) => (
-                  <li key={a.url}>
-                    <a
-                      href={a.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 transition-colors hover:border-slate-900"
-                    >
-                      <span className="flex w-24 shrink-0 items-center">
-                        <FirmLogo firm={a.f} large />
-                      </span>
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-sm font-medium leading-snug text-slate-900">
-                          {a.ti}
-                        </span>
-                        <span className="mt-0.5 block text-xs text-slate-400">
-                          {a.f}
-                          {a.d && (
-                            <>
-                              , <span className="num">{a.d}</span>
-                            </>
-                          )}
-                        </span>
-                      </span>
-                      <span
-                        aria-hidden
-                        className="shrink-0 text-slate-400 group-hover:text-slate-900"
-                      >
-                        ↗
-                      </span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
 
           <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-4">
             <h2 className="text-sm font-semibold tracking-tight">
