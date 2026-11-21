@@ -238,7 +238,7 @@ export default async function UpdatePage(
         </article>
         {rich && <Toc items={richToc(rich)} />}
       </main>
-      <Footer />
+      <Footer hideSources />
     </>
   );
 }

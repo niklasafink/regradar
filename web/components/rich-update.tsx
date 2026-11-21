@@ -59,7 +59,7 @@ export function richToc(rich: RichUpdate): TocItem[] {
     { id: "worum", label: "Worum es geht" },
     { id: "aenderungen", label: "Was sich ändert" },
     ...(hasImpact(ia) ? [{ id: "impact", label: "Impact-Analyse" }] : []),
-    { id: "todos", label: "Was jetzt zu tun ist" },
+    ...(hasImpact(ia) ? [] : [{ id: "todos", label: "Was jetzt zu tun ist" }]),
     ...(rich.timeline.length >= 2 ? [{ id: "zeitplan", label: "Zeitplan" }] : []),
     { id: "faq", label: "Häufige Fragen" },
   ];
@@ -95,31 +95,17 @@ function Card({ title, sub, children }: { title: string; sub: string; children: 
 function ImpactGroup({ title, items }: { title: string; items: RichImpactItem[] }) {
   if (items.length === 0) return null;
   return (
-    <div>
-      <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
-      <div className="mt-2 divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200">
-        {items.map((x) => {
-          const head = (
-            <>
-              <b className="block font-semibold text-slate-900">{x.name}</b>
-              <span className="mt-0.5 block text-sm text-slate-600">{x.change}</span>
-            </>
-          );
-          if (!x.steps?.length) return <div key={x.name} className="px-4 py-3">{head}</div>;
-          return (
-            <details key={x.name} className="group">
-              <summary className="flex cursor-pointer list-none items-start gap-3 px-4 py-3 marker:hidden hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
-                <span aria-hidden className="mt-1 text-xs text-slate-400 transition-transform group-open:rotate-90">▸</span>
-                <span className="min-w-0 flex-1">{head}</span>
-                <span className="shrink-0 pt-0.5 text-xs text-slate-400 group-open:hidden">{x.steps.length} Schritte</span>
-              </summary>
-              <ol className="list-decimal space-y-1.5 border-t border-slate-100 bg-slate-50 py-3 pl-12 pr-4 text-sm text-slate-700">
-                {x.steps.map((s) => <li key={s}>{s}</li>)}
-              </ol>
-            </details>
-          );
-        })}
-      </div>
+    <div className="mt-8">
+      <h3 className="font-heading text-lg font-medium tracking-tight text-slate-900">{title}</h3>
+      {items.map((x) => (
+        <div key={x.name} className="mt-4">
+          <h4 className="font-semibold text-slate-900">{x.name}</h4>
+          <ul className="mt-1.5 list-disc space-y-1.5 pl-5">
+            <li>{x.change}</li>
+            {x.steps?.map((st) => <li key={st}>{st}</li>)}
+          </ul>
+        </div>
+      ))}
     </div>
   );
 }
@@ -206,26 +192,24 @@ export function RichUpdateSections(
         </ul>
       </section>
 
-      {ia && hasImpact(ia) && (
+      {ia && hasImpact(ia) ? (
         <section id="impact" className={SECTION}>
           <h2 className={H2}>Impact-Analyse</h2>
           <p className="mt-1 text-sm text-slate-500">
-            Was sich an Kontrollen, Prozessen und Policies konkret ändert. Eintrag anklicken für die Arbeitsschritte.
+            Was sich an Kontrollen, Prozessen und Policies ändert und was Ihr Institut dafür tun muss.
           </p>
-          <div className="mt-4 space-y-6">
-            <ImpactGroup title="Kontrollen" items={ia.controls} />
-            <ImpactGroup title="Prozesse" items={ia.processes} />
-            <ImpactGroup title="Policies" items={ia.policies} />
-          </div>
+          <ImpactGroup title="Kontrollen" items={ia.controls} />
+          <ImpactGroup title="Prozesse" items={ia.processes} />
+          <ImpactGroup title="Policies" items={ia.policies} />
+        </section>
+      ) : (
+        <section id="todos" className={SECTION}>
+          <h2 className={H2}>Was jetzt zu tun ist</h2>
+          <ol className="mt-3 list-decimal space-y-2 pl-6">
+            {rich.todos.map((t) => <li key={t.slice(0, 40)}>{t}</li>)}
+          </ol>
         </section>
       )}
-
-      <section id="todos" className={SECTION}>
-        <h2 className={H2}>Was jetzt zu tun ist</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-6">
-          {rich.todos.map((t) => <li key={t.slice(0, 40)}>{t}</li>)}
-        </ol>
-      </section>
 
       {rich.timeline.length >= 2 && (
         <section id="zeitplan" className={SECTION}>
