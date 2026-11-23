@@ -200,6 +200,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-24": {
+   "window": [
+    "2026-11-23"
+   ],
+   "keys": [
+    "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral"
+   ],
+   "hook": "Die EZB öffnet die Tür für DLT-basierte Vermögenswerte als Sicherheiten, aber erst in drei Jahren.",
+   "folge": "Ab Juni 2027 akzeptiert die EZB marktfähige DLT-basierte Vermögenswerte als Sicherheiten für Eurosystem-Kreditoperationen, sofern sie unter der EU-DLT-Pilotregulierungsverordnung lizenziert sind und bestimmte technische sowie rechtliche Anforderungen erfüllen.",
+   "cover": "EZB: DLT-Vermögenswerte ab 2027 als Sicherheiten zugelassen",
+   "zeilen": [],
+   "frage": "Welche DLT-basierten Vermögenswerte könnten Sie sich vorstellen, ab 2027 als Sicherheiten zu nutzen?",
+   "top": "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral",
+   "kern": {
+    "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral": "Die EZB akzeptiert ab Juni 2027 marktfähige DLT-basierte Vermögenswerte als Sicherheiten für Eurosystem-Kreditoperationen, Details der Anforderungen folgen im Frühjahr 2027."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }

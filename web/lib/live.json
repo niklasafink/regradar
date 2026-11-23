@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T23:05:48Z",
+  "generated_at": "2026-11-23T15:19:55Z",
   "updates": {
     "bcbs": [
       {
@@ -695,6 +695,104 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
         "imp": "medium",
         "refnum": "Konsultation 04/2020"
+      }
+    ],
+    "dltpilot": [
+      {
+        "d": "23.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "ecb.europa.eu",
+        "ti": {
+          "de": "EZB erweitert Akzeptanz von DLT-basierten Vermögenswerten als Sicherheiten",
+          "en": "ECB expands acceptance of DLT-based assets as eligible Eurosystem collateral"
+        },
+        "sl": "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral",
+        "s": {
+          "de": "Der EZB-Rat hat beschlossen, marktfähige Vermögenswerte, die auf DLT-Plattformen (Distributed Ledger Technology) ausgegeben werden und unter der EU-DLT-Pilotregulierungsverordnung lizenziert sind, als notenbankfähige Sicherheiten für Eurosystem-Kreditoperationen zu akzeptieren. Dies ist ein weiterer Schritt in der Roadmap des Eurosystems, um den Sicherheitenrahmen für einen tokenisierten europäischen Finanzmarkt anzupassen.\n\nDie Entscheidung zielt darauf ab, die Akzeptanz von DLT-basierten Vermögenswerten im Sicherheitenrahmen des Eurosystems schrittweise und technologie-neutral zu erweitern, ohne die Standards für Sicherheit und Risikobewertung zu senken. Die Vermögenswerte müssen alle Standardkriterien für Sicherheiten erfüllen und über eine geeignete Verbindung zu einer Zentralverwahrstelle (CSD) verfügbar gemacht werden, die ein Wertpapierabwicklungssystem betreibt, das die CSDR einhält und die Abwicklung in TARGET2-Securities anbietet. DLT-Plattformen müssen zudem spezifische Eurosystem-Anforderungen erfüllen, um Rechtssicherheit und Betriebssicherheit zu gewährleisten.\n\nDie Details dieser Anforderungen werden voraussichtlich im Frühjahr 2027 bekannt gegeben, die Umsetzung ist für Juni 2027 geplant. Die Entscheidung fördert die Interoperabilität zwischen DLT-Plattformen und traditionellen Systemen und trägt zur Integration im aktuellen hybriden Umfeld bei.",
+          "en": "The ECB Governing Council has decided to accept marketable assets issued on Distributed Ledger Technology (DLT) platforms licensed under the EU DLT Pilot Regime Regulation as eligible collateral for Eurosystem credit operations. This marks a new milestone in the Eurosystem's roadmap to adapt its collateral framework for a tokenised European financial market.\n\nThe decision aims to expand the eligibility of DLT-based assets within the Eurosystem's collateral framework in a measured, controlled, and technology-neutral manner, without compromising safety or risk assessment standards. The assets must meet all standard collateral eligibility criteria and be made available via an eligible link to a Central Securities Depository (CSD) operating a securities settlement system compliant with CSDR and offering settlement in TARGET2-Securities. DLT platforms will also need to meet specific Eurosystem requirements to ensure legal certainty and operational safety.\n\nThe details of these requirements are expected to be communicated in spring 2027, with implementation planned for June 2027. This decision significantly contributes to interoperability between DLT platforms and traditional systems, fostering integration in the current hybrid environment."
+        },
+        "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261123~76b6f57b74.en.html",
+        "imp": "medium"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (ESMA91-1505572268-4934)",
+          "en": "Call for evidence on the CCP collateral tokenisation (ESMA91-1505572268-4934)"
+        },
+        "sl": "call-for-evidence-on-the-ccp-collateral-tokenisation",
+        "s": {
+          "de": "Die ESMA hat ein Konsultationspapier zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (CCPs) veröffentlicht. Ziel ist es, die Auswirkungen der Tokenisierung auf die Mobilisierung, Übertragung, Verwaltung, den Schutz und die Verwertung von Sicherheiten zu untersuchen. Dabei soll geklärt werden, ob der bestehende Regulierungs- und Aufsichtsrahmen noch angemessen ist.\n\nDas Papier richtet sich an CCPs, Clearing-Mitglieder, deren Kunden sowie Marktinfrastrukturen (CSDs, Verwahrer, Triparty-Agenten) und Anbieter von Tokenisierungs- oder DLT-Lösungen. Es ist auch relevant für Rechtsexperten, Branchenverbände und andere Stakeholder, die im Sicherheitenmanagement, bei Post-Trade-Dienstleistungen oder der Entwicklung digitaler Finanzmarktinfrastrukturen tätig sind. Die ESMA möchte ein besseres Verständnis für die Implikationen der Tokenisierung von Sicherheiten gewinnen, bevor sie über mögliche regulatorische Maßnahmen entscheidet.\n\nInteressierte Parteien können bis zum 15. Januar 2027 Stellungnahmen einreichen. Alle Beiträge werden nach Abschluss der Konsultation veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
+          "en": "ESMA has published a consultation paper on the tokenisation of collateral for central counterparties (CCPs). The aim is to investigate the implications of tokenisation for the mobilisation, transfer, management, protection, and realisation of collateral. It seeks to clarify whether the existing regulatory and supervisory framework remains adequate.\n\nThe paper is addressed to CCPs, clearing members and their clients, as well as market infrastructures (CSDs, custodians, triparty agents) and providers of tokenisation or DLT solutions. It is also relevant for legal experts, industry associations, and other stakeholders involved in collateral management, post-trade services, or digital financial market infrastructure developments. ESMA aims to gain a better understanding of the implications of collateral tokenisation before deciding on potential regulatory actions.\n\nInterested parties can submit comments until 15 January 2027. All contributions will be published after the close of the consultation, unless confidentiality is requested."
+        },
+        "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation",
+        "imp": "medium",
+        "refnum": "ESMA91-1505572268-4934"
+      },
+      {
+        "d": "14.02.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zum Erlaubnisverfahren für Kryptowertpapierregisterführung",
+          "en": "BaFin Guidance Notice on Licensing Procedure for Crypto Securities Register Management"
+        },
+        "sl": "merkblatt-02-2022-ba-hinweise-erlaubnisverfahren-kryptowertpapierregisterfuehrun",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung veröffentlicht. Diese Dienstleistung wurde durch das Gesetz zur Einführung von elektronischen Wertpapieren im Juni 2021 als neue Finanzdienstleistung in das KWG aufgenommen und ist erlaubnispflichtig.\n\nDas Merkblatt richtet sich an Unternehmen, die eine solche Erlaubnis gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG beantragen möchten. Es gibt Hinweise zu den aus BaFin-Sicht besonders wichtigen Aspekten im Erlaubnisverfahren, insbesondere zu den Anforderungen an das Anfangskapital (mindestens 150.000 Euro), die Zuverlässigkeit und fachliche Eignung von Inhabern und Geschäftsleitern sowie den Geschäftsplan. Zudem werden die Anforderungen der eWpRV und der Inhaberkontrollverordnung thematisiert. Ein besonderer Fokus liegt auf der IT-Strategie und IT-Sicherheit, wobei auf die MaRisk, BAIT und künftig DORA verwiesen wird.\n\nDas Erlaubnisverfahren orientiert sich an § 32 Abs. 1 KWG und ist mit etablierten Verfahren für Bankgeschäfte oder andere Finanzdienstleistungen vergleichbar. Antragsteller sollen vollständige Unterlagen einreichen und können sich bei Fragen direkt an die BaFin oder die Deutsche Bundesbank wenden. Unternehmen, die nicht unter Übergangsbestimmungen fallen, dürfen ihre Tätigkeit erst nach Erteilung der Erlaubnis aufnehmen.",
+          "en": "BaFin has published a guidance notice on applying for a license to operate a crypto securities register. This service was introduced as a new financial service under the KWG by the German Act on the Introduction of Electronic Securities in June 2021 and requires a license.\n\nThe guidance notice is aimed at companies wishing to apply for such a license in accordance with Section 1 (1a) sentence 2 no. 8 KWG. It provides guidance on aspects that BaFin considers particularly important in the licensing process, especially regarding initial capital requirements (at least 150,000 euros), the reliability and professional suitability of owners and managing directors, and the business plan. The requirements of the eWpRV and the Owner Control Ordinance are also addressed. A particular focus is placed on IT strategy and IT security, referring to MaRisk, BAIT, and in the future, DORA.\n\nThe licensing procedure is based on Section 32 (1) KWG and is comparable to established procedures for banking business or other financial services. Applicants should submit complete documentation and can contact BaFin or the Deutsche Bundesbank directly with questions. Companies not covered by transitional provisions may only commence their activities after obtaining the license."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/BA/mb_02_2022_BA_Hinweise_Erlaubnsvf_Kryptwertpapierregisterfuehrung.html",
+        "imp": "medium"
+      },
+      {
+        "d": "23.11.2023",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zur Kryptowertpapierregisterführung (KWG)",
+          "en": "BaFin Guidance Notice on Crypto Securities Register Management (KWG)"
+        },
+        "sl": "merkblatt-03-2023-hinweise-zum-tatbestand-der-kryptowertpapierregisterfuehrung-g",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Kryptowertpapierregisterführung gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG veröffentlicht. Es erläutert die Erlaubnispflicht für diese Finanzdienstleistung, die durch das Gesetz zur Einführung von elektronischen Wertpapieren (eWpG) eingeführt wurde. Ziel ist es, Anlegerschutz, Marktintegrität, Transparenz und Funktionsschutz der Kapitalmärkte bei DLT-basierten elektronischen Wertpapieren und Kryptofondsanteilen zu gewährleisten.\n\nDas Merkblatt definiert Kryptowertpapiere als elektronische Wertpapiere, die in ein Kryptowertpapierregister eingetragen sind, und Kryptofondsanteile als elektronische Anteilscheine, die ebenfalls in ein solches Register eingetragen sind. Es wird klargestellt, dass ein elektronisches Wertpapier eine Sache im Sinne des BGB fingiert, um den gleichen Eigentumsschutz wie bei physischen Wertpapieren zu gewährleisten. Die Registerführung umfasst das Bereitstellen und Pflegen einer Begebungsinfrastruktur, wobei die Anforderungen an Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität der Daten zu erfüllen sind.\n\nDie Regelungen sind relevant für Unternehmen, die Kryptowertpapierregister führen oder dies beabsichtigen. Sie müssen die Anforderungen des eWpG und die damit verbundene Erlaubnispflicht nach KWG beachten. Das Merkblatt betont die Technikoffenheit des Kryptowertpapierregisters, wobei DLT-basierte Aufzeichnungssysteme wie die Blockchain als primäre Technologie in Frage kommen.",
+          "en": "BaFin has published a guidance notice on the operation of crypto securities registers in accordance with Section 1 (1a) Sentence 2 No. 8 KWG. It clarifies the licensing requirement for this financial service, which was introduced by the Act on the Introduction of Electronic Securities (eWpG). The aim is to ensure investor protection, market integrity, transparency, and the functional integrity of capital markets for DLT-based electronic securities and crypto fund units.\n\nThe guidance notice defines crypto securities as electronic securities entered in a crypto securities register, and crypto fund units as electronic unit certificates also entered in such a register. It clarifies that an electronic security is deemed a thing within the meaning of the German Civil Code (BGB) to ensure the same ownership protection as for physical securities. Register management involves providing and maintaining an issuance infrastructure, with requirements for data confidentiality, integrity, availability, and authenticity.\n\nThe regulations are relevant for companies that operate or intend to operate crypto securities registers. They must comply with the requirements of the eWpG and the associated licensing obligation under the KWG. The guidance notice emphasizes the technology-neutral approach to crypto securities registers, with DLT-based recording systems such as blockchain being the primary technology in question."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_231114_tatbestand_kryptowertpapierregisterfuehrung.html",
+        "imp": "medium"
+      },
+      {
+        "d": "27.05.2022",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung",
+          "en": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung"
+        },
+        "sl": "hinweise-zum-erlaubnisantrag-fuer-die-kryptowertpapierregisterfuehrung",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung nach § 65 Abs. 1 Satz 1 KWG veröffentlicht. Es konkretisiert die Anforderungen an den Antrag und die einzureichenden Unterlagen, die für die Prüfung der Erlaubnisvoraussetzungen notwendig sind.\n\nDas Merkblatt richtet sich an Unternehmen, die die Kryptowertpapierregisterführung als Finanzdienstleistung anbieten möchten. Es erläutert detailliert die notwendigen Angaben zu Geschäftsmodell, Organisation, Personal und technischen Systemen, um eine vollständige und prüffähige Antragstellung zu gewährleisten.\n\nDie Hinweise sollen Antragstellern helfen, die komplexen Anforderungen des KWG und der Kryptowertpapierverordnung (KryptoWpVerOV) zu erfüllen und den Erlaubnisprozess zu beschleunigen.",
+          "en": "BaFin has published a guidance note on applying for a license to operate a crypto securities register in accordance with Section 65 (1) sentence 1 of the German Banking Act (KWG). It specifies the requirements for the application and the documents to be submitted, which are necessary for examining the licensing conditions.\n\nThe guidance note is aimed at companies that wish to offer crypto securities register management as a financial service. It explains in detail the necessary information regarding the business model, organization, personnel, and technical systems to ensure a complete and auditable application.\n\nThe guidelines are intended to help applicants meet the complex requirements of the KWG and the Crypto Securities Ordinance (KryptoWpVerOV) and to accelerate the licensing process."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/BA/Merkblatt_02_2022_Hinweise_Erlaubnisantrag_Kryptowertpapierregisterfuehrung.html",
+        "imp": "medium"
       }
     ],
     "dora": [
@@ -6671,85 +6769,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2023/kon_02_23_Konsultation_Leitlinien_Governance_Bankprodukte_Privatkundengeschaeft.html",
         "imp": "medium",
         "refnum": "Konsultation 02/2023"
-      }
-    ],
-    "dltpilot": [
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (ESMA91-1505572268-4934)",
-          "en": "Call for evidence on the CCP collateral tokenisation (ESMA91-1505572268-4934)"
-        },
-        "sl": "call-for-evidence-on-the-ccp-collateral-tokenisation",
-        "s": {
-          "de": "Die ESMA hat ein Konsultationspapier zur Tokenisierung von Sicherheiten bei zentralen Gegenparteien (CCPs) veröffentlicht. Ziel ist es, die Auswirkungen der Tokenisierung auf die Mobilisierung, Übertragung, Verwaltung, den Schutz und die Verwertung von Sicherheiten zu untersuchen. Dabei soll geklärt werden, ob der bestehende Regulierungs- und Aufsichtsrahmen noch angemessen ist.\n\nDas Papier richtet sich an CCPs, Clearing-Mitglieder, deren Kunden sowie Marktinfrastrukturen (CSDs, Verwahrer, Triparty-Agenten) und Anbieter von Tokenisierungs- oder DLT-Lösungen. Es ist auch relevant für Rechtsexperten, Branchenverbände und andere Stakeholder, die im Sicherheitenmanagement, bei Post-Trade-Dienstleistungen oder der Entwicklung digitaler Finanzmarktinfrastrukturen tätig sind. Die ESMA möchte ein besseres Verständnis für die Implikationen der Tokenisierung von Sicherheiten gewinnen, bevor sie über mögliche regulatorische Maßnahmen entscheidet.\n\nInteressierte Parteien können bis zum 15. Januar 2027 Stellungnahmen einreichen. Alle Beiträge werden nach Abschluss der Konsultation veröffentlicht, sofern keine Vertraulichkeit beantragt wird.",
-          "en": "ESMA has published a consultation paper on the tokenisation of collateral for central counterparties (CCPs). The aim is to investigate the implications of tokenisation for the mobilisation, transfer, management, protection, and realisation of collateral. It seeks to clarify whether the existing regulatory and supervisory framework remains adequate.\n\nThe paper is addressed to CCPs, clearing members and their clients, as well as market infrastructures (CSDs, custodians, triparty agents) and providers of tokenisation or DLT solutions. It is also relevant for legal experts, industry associations, and other stakeholders involved in collateral management, post-trade services, or digital financial market infrastructure developments. ESMA aims to gain a better understanding of the implications of collateral tokenisation before deciding on potential regulatory actions.\n\nInterested parties can submit comments until 15 January 2027. All contributions will be published after the close of the consultation, unless confidentiality is requested."
-        },
-        "url": "https://www.esma.europa.eu/document/call-evidence-ccp-collateral-tokenisation",
-        "imp": "medium",
-        "refnum": "ESMA91-1505572268-4934"
-      },
-      {
-        "d": "14.02.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zum Erlaubnisverfahren für Kryptowertpapierregisterführung",
-          "en": "BaFin Guidance Notice on Licensing Procedure for Crypto Securities Register Management"
-        },
-        "sl": "merkblatt-02-2022-ba-hinweise-erlaubnisverfahren-kryptowertpapierregisterfuehrun",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung veröffentlicht. Diese Dienstleistung wurde durch das Gesetz zur Einführung von elektronischen Wertpapieren im Juni 2021 als neue Finanzdienstleistung in das KWG aufgenommen und ist erlaubnispflichtig.\n\nDas Merkblatt richtet sich an Unternehmen, die eine solche Erlaubnis gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG beantragen möchten. Es gibt Hinweise zu den aus BaFin-Sicht besonders wichtigen Aspekten im Erlaubnisverfahren, insbesondere zu den Anforderungen an das Anfangskapital (mindestens 150.000 Euro), die Zuverlässigkeit und fachliche Eignung von Inhabern und Geschäftsleitern sowie den Geschäftsplan. Zudem werden die Anforderungen der eWpRV und der Inhaberkontrollverordnung thematisiert. Ein besonderer Fokus liegt auf der IT-Strategie und IT-Sicherheit, wobei auf die MaRisk, BAIT und künftig DORA verwiesen wird.\n\nDas Erlaubnisverfahren orientiert sich an § 32 Abs. 1 KWG und ist mit etablierten Verfahren für Bankgeschäfte oder andere Finanzdienstleistungen vergleichbar. Antragsteller sollen vollständige Unterlagen einreichen und können sich bei Fragen direkt an die BaFin oder die Deutsche Bundesbank wenden. Unternehmen, die nicht unter Übergangsbestimmungen fallen, dürfen ihre Tätigkeit erst nach Erteilung der Erlaubnis aufnehmen.",
-          "en": "BaFin has published a guidance notice on applying for a license to operate a crypto securities register. This service was introduced as a new financial service under the KWG by the German Act on the Introduction of Electronic Securities in June 2021 and requires a license.\n\nThe guidance notice is aimed at companies wishing to apply for such a license in accordance with Section 1 (1a) sentence 2 no. 8 KWG. It provides guidance on aspects that BaFin considers particularly important in the licensing process, especially regarding initial capital requirements (at least 150,000 euros), the reliability and professional suitability of owners and managing directors, and the business plan. The requirements of the eWpRV and the Owner Control Ordinance are also addressed. A particular focus is placed on IT strategy and IT security, referring to MaRisk, BAIT, and in the future, DORA.\n\nThe licensing procedure is based on Section 32 (1) KWG and is comparable to established procedures for banking business or other financial services. Applicants should submit complete documentation and can contact BaFin or the Deutsche Bundesbank directly with questions. Companies not covered by transitional provisions may only commence their activities after obtaining the license."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/BA/mb_02_2022_BA_Hinweise_Erlaubnsvf_Kryptwertpapierregisterfuehrung.html",
-        "imp": "medium"
-      },
-      {
-        "d": "23.11.2023",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zur Kryptowertpapierregisterführung (KWG)",
-          "en": "BaFin Guidance Notice on Crypto Securities Register Management (KWG)"
-        },
-        "sl": "merkblatt-03-2023-hinweise-zum-tatbestand-der-kryptowertpapierregisterfuehrung-g",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Kryptowertpapierregisterführung gemäß § 1 Abs. 1a Satz 2 Nr. 8 KWG veröffentlicht. Es erläutert die Erlaubnispflicht für diese Finanzdienstleistung, die durch das Gesetz zur Einführung von elektronischen Wertpapieren (eWpG) eingeführt wurde. Ziel ist es, Anlegerschutz, Marktintegrität, Transparenz und Funktionsschutz der Kapitalmärkte bei DLT-basierten elektronischen Wertpapieren und Kryptofondsanteilen zu gewährleisten.\n\nDas Merkblatt definiert Kryptowertpapiere als elektronische Wertpapiere, die in ein Kryptowertpapierregister eingetragen sind, und Kryptofondsanteile als elektronische Anteilscheine, die ebenfalls in ein solches Register eingetragen sind. Es wird klargestellt, dass ein elektronisches Wertpapier eine Sache im Sinne des BGB fingiert, um den gleichen Eigentumsschutz wie bei physischen Wertpapieren zu gewährleisten. Die Registerführung umfasst das Bereitstellen und Pflegen einer Begebungsinfrastruktur, wobei die Anforderungen an Vertraulichkeit, Integrität, Verfügbarkeit und Authentizität der Daten zu erfüllen sind.\n\nDie Regelungen sind relevant für Unternehmen, die Kryptowertpapierregister führen oder dies beabsichtigen. Sie müssen die Anforderungen des eWpG und die damit verbundene Erlaubnispflicht nach KWG beachten. Das Merkblatt betont die Technikoffenheit des Kryptowertpapierregisters, wobei DLT-basierte Aufzeichnungssysteme wie die Blockchain als primäre Technologie in Frage kommen.",
-          "en": "BaFin has published a guidance notice on the operation of crypto securities registers in accordance with Section 1 (1a) Sentence 2 No. 8 KWG. It clarifies the licensing requirement for this financial service, which was introduced by the Act on the Introduction of Electronic Securities (eWpG). The aim is to ensure investor protection, market integrity, transparency, and the functional integrity of capital markets for DLT-based electronic securities and crypto fund units.\n\nThe guidance notice defines crypto securities as electronic securities entered in a crypto securities register, and crypto fund units as electronic unit certificates also entered in such a register. It clarifies that an electronic security is deemed a thing within the meaning of the German Civil Code (BGB) to ensure the same ownership protection as for physical securities. Register management involves providing and maintaining an issuance infrastructure, with requirements for data confidentiality, integrity, availability, and authenticity.\n\nThe regulations are relevant for companies that operate or intend to operate crypto securities registers. They must comply with the requirements of the eWpG and the associated licensing obligation under the KWG. The guidance notice emphasizes the technology-neutral approach to crypto securities registers, with DLT-based recording systems such as blockchain being the primary technology in question."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_231114_tatbestand_kryptowertpapierregisterfuehrung.html",
-        "imp": "medium"
-      },
-      {
-        "d": "27.05.2022",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung",
-          "en": "Hinweise zum Erlaubnisantrag für die Kryptowertpapierregisterführung"
-        },
-        "sl": "hinweise-zum-erlaubnisantrag-fuer-die-kryptowertpapierregisterfuehrung",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Beantragung einer Erlaubnis für die Kryptowertpapierregisterführung nach § 65 Abs. 1 Satz 1 KWG veröffentlicht. Es konkretisiert die Anforderungen an den Antrag und die einzureichenden Unterlagen, die für die Prüfung der Erlaubnisvoraussetzungen notwendig sind.\n\nDas Merkblatt richtet sich an Unternehmen, die die Kryptowertpapierregisterführung als Finanzdienstleistung anbieten möchten. Es erläutert detailliert die notwendigen Angaben zu Geschäftsmodell, Organisation, Personal und technischen Systemen, um eine vollständige und prüffähige Antragstellung zu gewährleisten.\n\nDie Hinweise sollen Antragstellern helfen, die komplexen Anforderungen des KWG und der Kryptowertpapierverordnung (KryptoWpVerOV) zu erfüllen und den Erlaubnisprozess zu beschleunigen.",
-          "en": "BaFin has published a guidance note on applying for a license to operate a crypto securities register in accordance with Section 65 (1) sentence 1 of the German Banking Act (KWG). It specifies the requirements for the application and the documents to be submitted, which are necessary for examining the licensing conditions.\n\nThe guidance note is aimed at companies that wish to offer crypto securities register management as a financial service. It explains in detail the necessary information regarding the business model, organization, personnel, and technical systems to ensure a complete and auditable application.\n\nThe guidelines are intended to help applicants meet the complex requirements of the KWG and the Crypto Securities Ordinance (KryptoWpVerOV) and to accelerate the licensing process."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/BA/Merkblatt_02_2022_Hinweise_Erlaubnisantrag_Kryptowertpapierregisterfuehrung.html",
-        "imp": "medium"
       }
     ],
     "sanctions": [
@@ -13201,7 +13220,7 @@
     },
     {
       "d": "19.11.2026",
-      "ti": "ESMA: Rede von Natasha Cazenave auf der AEFR Konferenz (18.11.2026)",
+      "ti": "Natasha Cazenaves Rede auf der AEFR Konferenz (18. November 2026)",
       "auth": "ESMA",
       "src": "esma.europa.eu",
       "url": "https://www.esma.europa.eu/sites/default/files/2026-11/ESMA71-545613100-3054_Natasha_Cazenave_s_speech_at_the_AEFR_Conference__18_November_2026.pdf",
