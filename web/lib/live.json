@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T15:19:55Z",
+  "generated_at": "2026-11-23T18:06:36Z",
   "updates": {
     "bcbs": [
       {
@@ -4373,7 +4373,7 @@
     ],
     "cssfaml": [
       {
-        "d": "19.10.2026",
+        "d": "18.10.2026",
         "t": {
           "de": "Meldung",
           "en": "News"
@@ -4430,7 +4430,7 @@
         "imp": "medium"
       },
       {
-        "d": "08.09.2026",
+        "d": "01.09.2026",
         "t": {
           "de": "Leitlinien",
           "en": "Guidelines"
@@ -4446,44 +4446,6 @@
           "en": "The Financial Intelligence Unit (FIU) Luxembourg has published new guidelines on cooperation between obliged entities and the FIU. These guidelines provide information on suspicious operations reports, responses to information requests from the FIU, and freezing orders.\n\nThe new guidelines replace the previous guidelines on reporting suspicious operations and on freezing suspicious transactions ordered by the FIU. They aim to prepare obliged entities for the new obligations arising from Regulation (EU) 2024/1624 and Directive (EU) 2024/1640, anticipating certain provisions of Article 69 of Regulation (EU) 2024/1624. The most significant change is the replacement by the FIU of the response deadlines applicable to its information requests.\n\nThe guidelines emphasize the importance of preparing for forthcoming legal developments, while not replacing the official legal texts themselves."
         },
         "url": "https://crf.public.lu/en/actualites/guidelinescooperation.html",
-        "imp": "high"
-      },
-      {
-        "d": "08.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "crf.public.lu",
-        "ti": {
-          "de": "AMLA konsultiert neues EU-weites Format für Verdachtsmeldungen",
-          "en": "AMLA consults on new EU-wide suspicious transaction reporting format"
-        },
-        "sl": "amla-launches-consultation-on-a-new-suspicious-transaction-reporting-format-acro",
-        "s": {
-          "de": "Die Europäische Anti-Geldwäschebehörde (AMLA) hat eine öffentliche Konsultation zu einem Entwurf technischer Durchführungsstandards (ITS) gestartet. Dieser Entwurf legt ein EU-weit einheitliches Format für die Meldung verdächtiger Transaktionen und die Bereitstellung von Transaktionsaufzeichnungen an die Financial Intelligence Units (FIUs) fest.\n\nDer ITS-Entwurf enthält spezifische Meldeformulare für verdächtige Transaktionen, die auf verschiedene Kategorien von Verpflichteten zugeschnitten sind. Zudem sind Vorlagen für die Bereitstellung von Transaktionsaufzeichnungen durch Kredit- und Finanzinstitute vorgesehen. Ziel ist es, die Konsistenz und Qualität der Informationen zu verbessern, die zwischen den Mitgliedstaaten ausgetauscht werden, unter Berücksichtigung sektorspezifischer Merkmale.\n\nDie FIU Luxemburg fordert Verpflichtete aus dem Finanz- und Nichtfinanzsektor auf, den Entwurf zu prüfen und Kommentare einzureichen. Eine Online-Anhörung findet am 9. September 2026 statt. Die Frist für die Einreichung von Rückmeldungen ist der 20. September 2026.",
-          "en": "The European Anti-Money Laundering Authority (AMLA) has launched a public consultation on a draft Implementing Technical Standard (ITS). This draft establishes an EU-wide uniform format for reporting suspicious transactions and providing transaction records to Financial Intelligence Units (FIUs).\n\nThe draft ITS includes specific suspicious transaction reporting templates tailored to different categories of obliged entities. It also provides templates for credit and financial institutions to submit transaction records. The aim is to enhance the consistency and quality of information exchanged among Member States, while taking into account sector-specific characteristics.\n\nThe FIU Luxembourg encourages obliged entities from both the financial and non-financial sectors to review the draft ITS and submit their comments. An online public hearing will be held on 9 September 2026. The deadline for submitting feedback is 20 September 2026."
-        },
-        "url": "https://crf.public.lu/en/actualites/amlapucblicconsultation.html",
-        "imp": "medium"
-      },
-      {
-        "d": "08.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "crf.public.lu",
-        "ti": {
-          "de": "Luxemburg: Ausweitung des Geldwäschetatbestands auf alle Straftaten",
-          "en": "Luxembourg: Extension of Money Laundering Offense to All Crimes"
-        },
-        "sl": "new-article-506-1-of-the-criminal-code",
-        "s": {
-          "de": "Das luxemburgische Gesetz vom 12. Dezember 2025 ändert Artikel 506-1 des Strafgesetzbuches. Die wesentliche Neuerung ist die Ausweitung des Geldwäschetatbestands auf Erträge aus allen Straftaten, sowohl „crimes“ als auch „délits“.\n\nKonkret werden Handlungen wie die wissentliche Erleichterung der falschen Rechtfertigung von Art, Herkunft, Ort, Verfügung, Bewegung oder Eigentum von Vermögenswerten, die aus einer Straftat stammen, unter Strafe gestellt. Ebenso ist die wissentliche Unterstützung bei der Platzierung, Verschleierung, Übertragung oder Umwandlung solcher Vermögenswerte sowie der Erwerb, das Halten oder die Nutzung dieser Vermögenswerte, wenn deren krimineller Ursprung bekannt ist, strafbar. Auch der Versuch dieser Handlungen ist strafbar.\n\nFür meldepflichtige Unternehmen bedeutet dies, dass die Pflicht zur Meldung verdächtiger Transaktionen nun für Erträge aus einem erweiterten Spektrum von Vortaten gilt. Gemäß Artikel 5(1)(a) des geänderten Gesetzes vom 12. November 2004 zur Bekämpfung der Geldwäsche und Terrorismusfinanzierung müssen die meldepflichtigen Stellen die Vortat nicht qualifizieren, um eine Meldepflicht auszulösen.",
-          "en": "The Luxembourg Law of December 12, 2025, amends Article 506-1 of the Criminal Code. The key change is the extension of the money laundering offense to cover proceeds from all crimes, encompassing both “crimes” and “délits.”\n\nSpecifically, actions such as knowingly facilitating the false justification of the nature, origin, location, disposition, movement, or ownership of assets derived from a crime are now criminalized. Similarly, knowingly assisting in the placement, concealment, transfer, or conversion of such assets, as well as acquiring, holding, or using these assets with knowledge of their criminal origin, are punishable. Attempts to commit these offenses are also subject to the same penalties.\n\nFor reporting entities, this means that the obligation to report suspicious transactions now applies to proceeds from a broader range of predicate offenses. According to Article 5(1)(a) of the amended Law of November 12, 2004, on the fight against money laundering and terrorist financing, reporting entities do not need to qualify the predicate offense to trigger a reporting obligation."
-        },
-        "url": "https://crf.public.lu/en/actualites/news506.html",
         "imp": "high"
       },
       {
@@ -4524,6 +4486,25 @@
         "url": "https://legilux.public.lu/eli/etat/leg/loi/2026/07/22/a412/jo",
         "imp": "high",
         "refnum": "loi/2026/07/22/a412"
+      },
+      {
+        "d": "28.07.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "crf.public.lu",
+        "ti": {
+          "de": "AMLA konsultiert neues EU-weites Format für Verdachtsmeldungen",
+          "en": "AMLA consults on new EU-wide suspicious transaction reporting format"
+        },
+        "sl": "amla-launches-consultation-on-a-new-suspicious-transaction-reporting-format-acro",
+        "s": {
+          "de": "Die Europäische Anti-Geldwäschebehörde (AMLA) hat eine öffentliche Konsultation zu einem Entwurf technischer Durchführungsstandards (ITS) gestartet. Dieser Entwurf legt ein EU-weit einheitliches Format für die Meldung verdächtiger Transaktionen und die Bereitstellung von Transaktionsaufzeichnungen an die Financial Intelligence Units (FIUs) fest.\n\nDer ITS-Entwurf enthält spezifische Meldeformulare für verdächtige Transaktionen, die auf verschiedene Kategorien von Verpflichteten zugeschnitten sind. Zudem sind Vorlagen für die Bereitstellung von Transaktionsaufzeichnungen durch Kredit- und Finanzinstitute vorgesehen. Ziel ist es, die Konsistenz und Qualität der Informationen zu verbessern, die zwischen den Mitgliedstaaten ausgetauscht werden, unter Berücksichtigung sektorspezifischer Merkmale.\n\nDie FIU Luxemburg fordert Verpflichtete aus dem Finanz- und Nichtfinanzsektor auf, den Entwurf zu prüfen und Kommentare einzureichen. Eine Online-Anhörung findet am 9. September 2026 statt. Die Frist für die Einreichung von Rückmeldungen ist der 20. September 2026.",
+          "en": "The European Anti-Money Laundering Authority (AMLA) has launched a public consultation on a draft Implementing Technical Standard (ITS). This draft establishes an EU-wide uniform format for reporting suspicious transactions and providing transaction records to Financial Intelligence Units (FIUs).\n\nThe draft ITS includes specific suspicious transaction reporting templates tailored to different categories of obliged entities. It also provides templates for credit and financial institutions to submit transaction records. The aim is to enhance the consistency and quality of information exchanged among Member States, while taking into account sector-specific characteristics.\n\nThe FIU Luxembourg encourages obliged entities from both the financial and non-financial sectors to review the draft ITS and submit their comments. An online public hearing will be held on 9 September 2026. The deadline for submitting feedback is 20 September 2026."
+        },
+        "url": "https://crf.public.lu/en/actualites/amlapucblicconsultation.html",
+        "imp": "medium"
       },
       {
         "d": "23.07.2026",
@@ -4621,6 +4602,25 @@
         },
         "url": "https://www.cssf.lu/en/Document/public-consultation-by-amla-on-the-draft-guidelines-on-business-wide-risk-assessment/",
         "imp": "medium"
+      },
+      {
+        "d": "26.02.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "crf.public.lu",
+        "ti": {
+          "de": "Luxemburg: Ausweitung des Geldwäschetatbestands auf alle Straftaten",
+          "en": "Luxembourg: Extension of Money Laundering Offense to All Crimes"
+        },
+        "sl": "new-article-506-1-of-the-criminal-code",
+        "s": {
+          "de": "Das luxemburgische Gesetz vom 12. Dezember 2025 ändert Artikel 506-1 des Strafgesetzbuches. Die wesentliche Neuerung ist die Ausweitung des Geldwäschetatbestands auf Erträge aus allen Straftaten, sowohl „crimes“ als auch „délits“.\n\nKonkret werden Handlungen wie die wissentliche Erleichterung der falschen Rechtfertigung von Art, Herkunft, Ort, Verfügung, Bewegung oder Eigentum von Vermögenswerten, die aus einer Straftat stammen, unter Strafe gestellt. Ebenso ist die wissentliche Unterstützung bei der Platzierung, Verschleierung, Übertragung oder Umwandlung solcher Vermögenswerte sowie der Erwerb, das Halten oder die Nutzung dieser Vermögenswerte, wenn deren krimineller Ursprung bekannt ist, strafbar. Auch der Versuch dieser Handlungen ist strafbar.\n\nFür meldepflichtige Unternehmen bedeutet dies, dass die Pflicht zur Meldung verdächtiger Transaktionen nun für Erträge aus einem erweiterten Spektrum von Vortaten gilt. Gemäß Artikel 5(1)(a) des geänderten Gesetzes vom 12. November 2004 zur Bekämpfung der Geldwäsche und Terrorismusfinanzierung müssen die meldepflichtigen Stellen die Vortat nicht qualifizieren, um eine Meldepflicht auszulösen.",
+          "en": "The Luxembourg Law of December 12, 2025, amends Article 506-1 of the Criminal Code. The key change is the extension of the money laundering offense to cover proceeds from all crimes, encompassing both “crimes” and “délits.”\n\nSpecifically, actions such as knowingly facilitating the false justification of the nature, origin, location, disposition, movement, or ownership of assets derived from a crime are now criminalized. Similarly, knowingly assisting in the placement, concealment, transfer, or conversion of such assets, as well as acquiring, holding, or using these assets with knowledge of their criminal origin, are punishable. Attempts to commit these offenses are also subject to the same penalties.\n\nFor reporting entities, this means that the obligation to report suspicious transactions now applies to proceeds from a broader range of predicate offenses. According to Article 5(1)(a) of the amended Law of November 12, 2004, on the fight against money laundering and terrorist financing, reporting entities do not need to qualify the predicate offense to trigger a reporting obligation."
+        },
+        "url": "https://crf.public.lu/en/actualites/news506.html",
+        "imp": "high"
       },
       {
         "d": "18.02.2026",
