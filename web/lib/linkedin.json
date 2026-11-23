@@ -206,16 +206,20 @@
     "2026-11-23"
    ],
    "keys": [
+    "consultation-on-the-draft-rts-on-the-conditions-for-the-functioning-of-aml-cft-s",
     "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral"
    ],
-   "hook": "Die EZB öffnet die Tür für DLT-basierte Vermögenswerte als Sicherheiten, aber erst in drei Jahren.",
-   "folge": "Ab Juni 2027 akzeptiert die EZB marktfähige DLT-basierte Vermögenswerte als Sicherheiten für Eurosystem-Kreditoperationen, sofern sie unter der EU-DLT-Pilotregulierungsverordnung lizenziert sind und bestimmte technische sowie rechtliche Anforderungen erfüllen.",
-   "cover": "EZB: DLT-Vermögenswerte ab 2027 als Sicherheiten zugelassen",
-   "zeilen": [],
-   "frage": "Welche DLT-basierten Vermögenswerte könnten Sie sich vorstellen, ab 2027 als Sicherheiten zu nutzen?",
+   "hook": "Die EZB öffnet die Tür für DLT-basierte Vermögenswerte als Sicherheiten im Eurosystem.",
+   "folge": "Ab Juni 2027 akzeptiert die EZB marktfähige DLT-basierte Vermögenswerte als Sicherheiten für Kreditoperationen, sofern sie alle Standardkriterien erfüllen und über eine CSD angebunden sind. Institute können so neue Anlageformen nutzen.",
+   "cover": "EZB: DLT-Vermögenswerte als Sicherheiten zugelassen",
+   "zeilen": [
+    "AMLA: Konsultation zu RTS für AML/CFT-Aufsichtskollegien bis 23.12.2026"
+   ],
+   "frage": "Welche DLT-basierten Vermögenswerte halten Sie für notenbankfähig und wie bereiten Sie sich darauf vor?",
    "top": "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral",
    "kern": {
-    "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral": "Die EZB akzeptiert ab Juni 2027 marktfähige DLT-basierte Vermögenswerte als Sicherheiten für Eurosystem-Kreditoperationen, Details der Anforderungen folgen im Frühjahr 2027."
+    "consultation-on-the-draft-rts-on-the-conditions-for-the-functioning-of-aml-cft-s": "Die AMLA konsultiert bis zum 23.12.2026 Entwürfe technischer Regulierungsstandards (RTS) zur Arbeitsweise von AML/CFT-Aufsichtskollegien im Finanzsektor.",
+    "ecb-expands-acceptance-of-dlt-based-assets-as-eligible-eurosystem-collateral": "Die EZB akzeptiert ab Juni 2027 DLT-basierte Vermögenswerte als Sicherheiten für Eurosystem-Kreditoperationen, wenn sie die Standardkriterien erfüllen und über eine CSD angebunden sind."
    },
    "doppelt": [],
    "fmt": 5,
