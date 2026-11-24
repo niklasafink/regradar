@@ -201,16 +201,23 @@
     "2026-11-24"
    ],
    "keys": [
-    "regeln-die-zum-einzelnen-institut-passen"
+    "compliance-table-on-mica-suitability-and-portfolio-periodic-statement-guidelines",
+    "regeln-die-zum-einzelnen-institut-passen",
+    "solvency-ii-review-bafin-wendet-eiopa-leitlinien-an"
    ],
-   "hook": "BaFin entbürokratisiert das Risikomanagement für Kapitalverwaltungsgesellschaften und Wertpapierinstitute.",
-   "folge": "Die novellierten KAMaRisk und neuen WpI MaRisk schaffen passgenauere und proportionalere Regeln. Institute müssen nun prüfen, welche spezifischen Erleichterungen oder neuen Anforderungen sie betreffen und ihre internen Prozesse entsprechend anpassen.",
-   "cover": "BaFin: Novellierte KAMaRisk und neue WpI MaRisk",
-   "zeilen": [],
-   "frage": "Welche der neuen Proportionalitätsregeln entlastet Ihr Institut am stärksten?",
+   "hook": "Die BaFin schafft spezifische Regeln für Kapitalverwaltungsgesellschaften und Wertpapierinstitute.",
+   "folge": "Die novellierten KAMaRisk und neuen WpI MaRisk entbürokratisieren und proportionalisieren die Anforderungen. Institute müssen ihre Risikomanagementsysteme anpassen, um den neuen Vorgaben gerecht zu werden.",
+   "cover": "BaFin: Neue MaRisk für KVG und WpI",
+   "zeilen": [
+    "BaFin: Fünf EIOPA-Leitlinien zu Solvency II seit 11.11.2026 anwendbar",
+    "ESMA: Compliance-Tabelle zu MiCA-Leitlinien für Eignungsanforderungen und Portfoliomanagement veröffentlicht"
+   ],
+   "frage": "Wie stellen Sie sicher, dass Ihr Risikomanagement die spezifischen Anforderungen Ihres Instituts widerspiegelt?",
    "top": "regeln-die-zum-einzelnen-institut-passen",
    "kern": {
-    "regeln-die-zum-einzelnen-institut-passen": "Die BaFin hat novellierte KAMaRisk und neue WpI MaRisk veröffentlicht, die das Risikomanagement für Kapitalverwaltungsgesellschaften und Wertpapierinstitute entbürokratisieren und proportionaler gestalten."
+    "regeln-die-zum-einzelnen-institut-passen": "Die BaFin hat novellierte KAMaRisk und neue WpI MaRisk veröffentlicht, die das Risikomanagement für Kapitalverwaltungsgesellschaften und Wertpapierinstitute entbürokratisieren und proportionalisieren.",
+    "solvency-ii-review-bafin-wendet-eiopa-leitlinien-an": "Die BaFin wendet seit dem 11.11.2026 fünf EIOPA-Leitlinien aus dem Solvency-II-Review an, um die Aufsichts- und Meldepraxis für Versicherungs- und Rückversicherungsunternehmen zu vereinheitlichen.",
+    "compliance-table-on-mica-suitability-and-portfolio-periodic-statement-guidelines": "Die ESMA hat eine Compliance-Tabelle zu ihren MiCA-Leitlinien für Eignungsanforderungen und Portfoliomanagement veröffentlicht, die zeigt, welche nationalen Behörden diese einhalten."
    },
    "doppelt": [],
    "fmt": 5,

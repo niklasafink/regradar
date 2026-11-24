@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T09:10:27Z",
+  "generated_at": "2026-11-24T15:24:52Z",
   "updates": {
     "amla": [
       {
@@ -1069,6 +1069,478 @@
             "d": "11.08.2025"
           }
         ]
+      }
+    ],
+    "solvency": [
+      {
+        "d": "24.11.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Solvency-II-Review: BaFin wendet EIOPA-Leitlinien an",
+          "en": "Solvency II Review: BaFin applies EIOPA Guidelines"
+        },
+        "sl": "solvency-ii-review-bafin-wendet-eiopa-leitlinien-an",
+        "s": {
+          "de": "Die BaFin wendet seit dem 11. November 2026 fünf Leitlinien der EIOPA an, die im Rahmen des Solvency-II-Reviews zwischen Juli und Dezember 2025 veröffentlicht wurden. Diese Leitlinien sollen die europäische Aufsichts- und Meldepraxis vereinheitlichen und konkretisieren zentrale Vorgaben.\n\nDie Leitlinien regeln unter anderem Standards für unternehmensspezifische Kapitalanforderungen, die Berechnung von Marktanteilen zu Meldezwecken, den Umgang mit Beteiligungen und Ausnahmen bei der Gruppenaufsicht sowie Kriterien zur Förderung von Diversität in Verwaltungs-, Management- und Aufsichtsorganen. Sie zielen darauf ab, individuelle Risiken realistisch abzubilden, ein einheitliches Verständnis von Vielfalt zu schaffen und die Meldepflichten vergleichbar umzusetzen.\n\nDie Anwendung der Leitlinien durch die BaFin ist für Versicherungs- und Rückversicherungsunternehmen relevant, da sie die Berechnung der Solvenzkapitalanforderung, die Zusammensetzung der Führungsgremien und die Meldepflichten betreffen. Sie sollen eine einheitliche und verhältnismäßige Anwendung der Solvency-II-Vorgaben in Deutschland gewährleisten.",
+          "en": "The BaFin has been applying five EIOPA guidelines since November 11, 2026, which were published as part of the Solvency II Review between July and December 2025. These guidelines aim to standardize European supervisory and reporting practices and specify key requirements.\n\nThe guidelines regulate, among other things, standards for undertaking-specific capital requirements, the calculation of market shares for reporting purposes, the treatment of participations and exemptions in group supervision, and criteria for promoting diversity in administrative, management, and supervisory bodies. They aim to realistically reflect individual risks, create a uniform understanding of diversity, and ensure comparable implementation of reporting obligations.\n\nThe application of the guidelines by the BaFin is relevant for insurance and reinsurance undertakings, as they affect the calculation of the Solvency Capital Requirement, the composition of management bodies, and reporting obligations. They are intended to ensure a uniform and proportionate application of Solvency II requirements in Germany."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_24_solvency-II-review_bafin_wendet_eiopa-leitlinien_an.html",
+        "imp": "high"
+      },
+      {
+        "d": "17.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Aufsichtsmitteilung zu weiteren Änderungen aus dem Solvency-II-Review (09/2026 (VA))",
+          "en": "BaFin Supervisory Notice on Further Changes from the Solvency II Review (09/2026 (VA))"
+        },
+        "sl": "aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review",
+        "s": {
+          "de": "Die BaFin ergänzt mit dieser Aufsichtsmitteilung die Hinweise zum Solvency-II-Review und zur Auslegung relevanter Rechtsnormen. Sie richtet sich an Erst- und Rückversicherungsunternehmen mit Sitz im In- oder Ausland, ausgenommen sind Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen sowie bestimmte Rückversicherungs- und Erst-/Rückversicherungsunternehmen.\n\nDie Mitteilung präzisiert die Übergangsregelung für Proportionalitätsmaßnahmen nach § 361 Abs. 3 VAG n.F., die für vier Jahre ohne Anzeige weitergenutzt werden können, aber spätestens am 30. Januar 2031 enden. Ab dem 30. Januar 2027 ist die Kombination der internen Revisionsfunktion mit anderen Schlüsselfunktionen oder einer Geschäftsleitungsposition nicht mehr zulässig. Narrative Berichte wie RSR, SFCR und ORSA-Bericht müssen ab diesem Datum maschinenlesbar eingereicht werden, wobei die Einreichungsfristen für RSR und SFCR bereits für Berichte nach dem 29. Januar 2027 auf 18 Wochen verlängert werden.\n\nFür kleine und nicht komplexe Unternehmen (SNCU) beträgt die RSR-Frequenz grundsätzlich drei Jahre, kann aber von der BaFin abweichend festgelegt werden. Alle Unternehmen müssen im ORSA analysieren, ob der Solvency-II-Review zu wesentlichen Änderungen bei versicherungstechnischen Rückstellungen, Eigenmitteln und der Solvabilitätskapitalanforderung (SCR) führt und dies im ORSA-Bericht darlegen. Zudem ist für Nutzer der Volatilitätsanpassung die Abweichung des Risikoprofils von den zugrundeliegenden Annahmen zu beurteilen.",
+          "en": "This supervisory notice from BaFin supplements the guidance on the Solvency II Review and the interpretation of relevant legal norms. It is addressed to primary and reinsurance undertakings domiciled in Germany or a third country, with the exception of funeral expense funds, pension funds, small insurance undertakings, and certain reinsurance and primary/reinsurance undertakings.\n\nThe notice clarifies the transitional arrangement for proportionality measures under § 361 para. 3 VAG n.F., which can continue to be used for four years without notification, but will expire no later than January 30, 2031. As of January 30, 2027, the combination of the internal audit function with other key functions or a management position is no longer permitted. Narrative reports such as the RSR, SFCR, and ORSA report must be submitted in machine-readable electronic form from this date, with the submission deadlines for the RSR and SFCR already extended to 18 weeks for reports due after January 29, 2027.\n\nFor small and non-complex undertakings (SNCU), the RSR frequency is generally three years but can be set differently by BaFin. All undertakings must analyze in their ORSA whether the Solvency II Review leads to significant changes in technical provisions, own funds, and the Solvency Capital Requirement (SCR), and present this in the ORSA report. Furthermore, for users of the volatility adjustment, deviations of the risk profile from the underlying assumptions must be assessed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_09_2026_weitere_aenderungen_aus_dem_solvencyII_review_va.html",
+        "imp": "medium"
+      },
+      {
+        "d": "15.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "EIOPA schließt Solvency II-Überprüfung mit Leitlinien und Entwürfen technischer Standards ab",
+          "en": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year"
+        },
+        "sl": "eiopa-completes-solvency-ii-review-mandate-with-final-guidelines-and-draft-techn",
+        "s": {
+          "de": "Die EIOPA hat acht Leitlinien und Entwürfe technischer Standards zur Überprüfung des Solvency II-Rahmens veröffentlicht. Diese umfassen neue Leitlinien zur Behebung von Mängeln im Liquiditätsrisikomanagement sowie Überarbeitungen bestehender Leitlinien und technischer Standards zur Berechnung der Risikomarge und zur Anwendung des Matching Adjustment.\n\nDiese Veröffentlichungen sind für Versicherungsunternehmen relevant, die unter Solvency II fallen. Die neuen Leitlinien zum Liquiditätsrisikomanagement legen fest, welche Befugnisse Aufsichtsbehörden zur Stärkung der Liquidität von Unternehmen ausüben können und unter welchen Umständen Rücknahmerechte von Versicherungsnehmern vorübergehend ausgesetzt werden dürfen. Die Änderungen an der Risikomarge durch den „Lambda-Faktor“ sollen die Zeitabhängigkeit von Risiken besser berücksichtigen und die Sensitivität gegenüber Zinsänderungen reduzieren. Für Unternehmen, die den Matching Adjustment nutzen, ermöglichen die überarbeiteten ITS eine vollständige Diversifikation zwischen MA-Portfolio und dem restlichen Unternehmen bei der Berechnung der Solvenzkapitalanforderung, sofern die besten Schätzwerte der Versicherungs- und Rückversicherungsverpflichtungen keinen Ring-fenced Fund bilden.\n\nDie Entwürfe der technischen Standards wurden der Europäischen Kommission zur Entscheidung übermittelt. Die neuen Regelungen treten zusammen mit dem geänderten Solvency II-Rahmenwerk am 30. Januar 2027 in Kraft.",
+          "en": "EIOPA has published eight sets of guidelines and draft technical standards related to the Solvency II framework review. These include new guidelines on addressing deficiencies in liquidity risk management, as well as revisions to existing guidelines and technical standards on the calculation of the risk margin and the application of the matching adjustment.\n\nThese publications are relevant for insurance undertakings falling under Solvency II. The new guidelines on liquidity risk management specify the powers supervisors may exercise to strengthen undertakings' liquidity positions and the exceptional circumstances under which policyholders' redemption rights may be temporarily suspended. Changes to the risk margin through the “lambda factor” aim to better account for the time dependency of risks and reduce sensitivity to interest rate changes. For undertakings using the matching adjustment, the revised ITS allow for full diversification between their MA portfolio and the rest of the undertaking when calculating their Solvency Capital Requirement, provided that the best estimate of insurance and reinsurance obligations does not form a ring-fenced fund.\n\n The draft technical standards have been submitted to the European Commission for a decision. The new regulations, along with the amended Solvency II framework, will apply from 30 January 2027."
+        },
+        "url": "https://www.eiopa.europa.eu/eiopa-completes-solvency-ii-review-mandate-final-guidelines-and-draft-technical-standards-revised-2026-07-15_en",
+        "imp": "high"
+      },
+      {
+        "d": "13.07.2026",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Aufsichtsmitteilung zu Änderungen aus dem Solvency-II-Review (04/2026)",
+          "en": "BaFin Supervisory Statement on Changes from the Solvency II Review (04/2026)"
+        },
+        "sl": "aufsichtsmitteilung-04-2026-va-aenderungen-aus-dem-solvency-ii-review",
+        "s": {
+          "de": "Die BaFin gibt mit dieser Aufsichtsmitteilung erste Hinweise zur Auslegung und Verwaltungspraxis bezüglich der Änderungen aus dem Solvency-II-Review. Im Fokus stehen dabei die angepassten oder neu eingeführten Anzeige- und Antragsverfahren für Proportionalitätsmaßnahmen. Die BaFin betont ihre Verpflichtung zum Proportionalitätsgrundsatz, um insbesondere kleinen und nicht komplexen Unternehmen die Anwendung dieser Maßnahmen bereits mit Inkrafttreten der neuen Regelungen zu ermöglichen.\n\nDie Mitteilung richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, ausgenommen Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen sowie bestimmte Rückversicherer. Künftig können risikoarme Unternehmen als „small and non-complex undertakings“ (SNCU) oder Gruppen als „small and non-complex groups“ (SNCG) eingestuft werden. SNCU können nach einem Anzeigeverfahren bis zu zehn Proportionalitätsmaßnahmen ohne weitere BaFin-Handlung anwenden, während Non-SNCU bis zu sieben Maßnahmen nach vorheriger BaFin-Genehmigung nutzen können. Die BaFin bietet eine Voranzeige- bzw. Vorantragsphase an, um Unternehmen die Einreichung bereits vor dem Inkrafttreten der neuen gesetzlichen Regelungen am 30. Januar 2027 zu ermöglichen.\n\nDie Aufsichtsmitteilung gilt ab ihrer Veröffentlichung bis zum 31. Dezember 2027. Die neuen gesetzlichen Regelungen sind ab dem 30. Januar 2027 anwendbar. Anträge, die vor diesem Datum eingehen, werden ab dem 30. Januar 2027 als formale Anträge gewertet, sofern das Unternehmen nicht widerspricht. Eine erneute Einreichung ist dann nicht erforderlich. Die BaFin wird die Mitteilung bei wesentlichen Änderungen anpassen und plant, die Verwaltungspraxis bei Verstetigung in ein Rundschreiben zu überführen.",
+          "en": "This supervisory statement provides initial guidance from BaFin on the interpretation and administrative practice concerning the changes resulting from the Solvency II Review. The focus is on the adjusted or newly introduced notification and application procedures for proportionality measures. BaFin emphasizes its commitment to the principle of proportionality, particularly to enable small and non-complex undertakings to apply these measures upon the entry into force of the new regulations.\n\nThe statement applies to all primary and reinsurance undertakings domiciled in Germany or a third country, excluding funeral funds, pension funds, small insurance undertakings, and certain reinsurers. In the future, low-risk insurance undertakings can be classified as “small and non-complex undertakings” (SNCU) or groups as “small and non-complex groups” (SNCG). SNCUs can apply up to ten proportionality measures after a notification procedure without further BaFin action, while Non-SNCUs can use up to seven measures after prior BaFin approval. BaFin offers a pre-notification and pre-application phase to allow undertakings to submit applications before the new legal regulations come into force on January 30, 2027.\n\nThe supervisory statement is valid from its publication until December 31, 2027. The new legal regulations are applicable from January 30, 2027. Applications received before this date will be treated as formal applications from January 30, 2027, unless the undertaking objects. A re-submission will then not be necessary. BaFin will adapt the statement in case of significant changes and plans to convert the administrative practice into a circular letter once it becomes established."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_04_2026_aenderungen_aus_dem_solvencyII_review_va.html",
+        "imp": "medium",
+        "refnum": "Aufsichtsmitteilung 04/2026"
+      },
+      {
+        "d": "15.04.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Kürzung von Solvency II-Leitlinien",
+          "en": "Consultation on Shortening of Solvency II Guidelines"
+        },
+        "sl": "consultation-on-the-shortening-of-additional-guidelines-under-solvency-ii",
+        "s": {
+          "de": "Die EIOPA konsultiert Vorschläge zur Kürzung von 13 Leitlinien unter Solvency II. Ziel ist es, die Regulierung zu vereinfachen und den Verwaltungsaufwand in der EU zu reduzieren. Die betroffenen Leitlinien umfassen verschiedene Aspekte des Solvency-II-Rahmenwerks, darunter Themen der Säule I sowie wichtige Bereiche der Säule II wie das Governance-System und die unternehmenseigene Risiko- und Solvabilitätsbeurteilung (ORSA) von (Rück-)Versicherern.\n\nDiese Maßnahme ist für (Rück-)Versicherer in der EU relevant, da sie potenziell zu einer Vereinfachung und Entlastung bei der Einhaltung der Solvency-II-Vorschriften führen könnte. Die Kürzung der Leitlinien soll dazu beitragen, die Komplexität der Regulierung zu verringern.\n\nDie Konsultationsfrist endete am 8. Juli 2026.",
+          "en": "EIOPA is consulting on proposals to shorten 13 sets of Guidelines under Solvency II. The objective is to simplify regulation and reduce administrative burdens in the EU. The affected Guidelines cover various aspects of the Solvency II framework, including Pillar I topics and important Pillar II areas such as the system of governance and (re)insurers’ Own Risk and Solvency Assessment (ORSA).\n\nThis measure is relevant for (re)insurers in the EU, as it could potentially lead to simplification and relief in complying with Solvency II requirements. The shortening of the Guidelines aims to reduce regulatory complexity.\n\nThe consultation period ended on July 8, 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-shortening-additional-guidelines-under-solvency-ii_en",
+        "imp": "medium",
+        "deadline": "08.07.2026"
+      },
+      {
+        "d": "12.03.2026",
+        "t": {
+          "de": "Mitteilung",
+          "en": "Statement"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone",
+          "en": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone"
+        },
+        "sl": "aufsichtsmitteilung-01-2026-va-bildung-einer-schwankungsrueckstellung-fuer-die-v",
+        "s": {
+          "de": "Die BaFin gibt Hinweise zur Bildung einer Schwankungsrückstellung für die neue Versicherungsart „Cyberversicherung Stand alone“ (Va 26.1). Hintergrund ist die ab Ende 2025 erstmals gesondert aufzustellende Gewinn- und Verlustrechnung für diese Versicherungsart gemäß Versicherungsberichterstattungs-Verordnung.\n\nVersicherungsunternehmen, die Cyberversicherungen als eigenständige Policen anbieten, sind angesprochen. Da zum jetzigen Zeitpunkt keine Versicherungsunternehmen über die erforderlichen zehnjährigen Beobachtungszeiträume für die Schadenquoten verfügen, besteht für das Bilanzjahr 2025 keine Pflicht zur Bildung einer Schwankungsrückstellung. Eine vorzeitige freiwillige Bildung ist jedoch auf Antrag möglich, wobei ein verkürzter Beobachtungszeitraum von mindestens sieben Jahren akzeptiert werden kann, sofern die Daten aus den eigenen Geschäftsunterlagen stammen. Die BaFin kann keine branchenweite generelle Ausnahmebewilligung erteilen.\n\nDiese Aufsichtsmitteilung gilt ab sofort bis zum 31.12.2030. Danach sollen ausreichende BaFin-Daten für einen zehnjährigen Beobachtungszeitraum vorliegen, sodass die gesetzlichen Regelungen der RechVersV greifen.",
+          "en": "BaFin provides guidance on forming a fluctuation reserve for the new insurance class “Cyberversicherung Stand alone” (Va 26.1). This follows the requirement to prepare a separate profit and loss account for this insurance class for the first time by the end of 2025, in accordance with the Insurance Reporting Regulation.\n\nThis supervisory statement is addressed to insurance undertakings offering cyber insurance as standalone policies. As no insurance undertakings currently possess the required ten-year observation periods for loss ratios, there is no obligation to form a fluctuation reserve for the 2025 financial year. However, early voluntary formation is possible upon application, whereby a shortened observation period of at least seven years may be accepted, provided the data originates from the undertaking's own business records. BaFin cannot grant a general industry-wide exemption.\n\nThis supervisory statement is effective immediately and applies until 31.12.2030. By then, sufficient BaFin data for a ten-year observation period is expected to be available, allowing the statutory provisions of the RechVersV to apply."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_01_2026_bildung_schwankungsrueckstellung_cyber_va.html",
+        "imp": "medium",
+        "refnum": "Aufsichtsmitteilung 01/2026"
+      },
+      {
+        "d": "03.02.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "eiopa.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Aufsichtserklärung für (Rück-)Versicherer und Private Equity",
+          "en": "Consultation on Supervisory Statement for (Re-)Insurance Undertakings and Private Equity"
+        },
+        "sl": "consultation-on-supervisory-statement-on-the-authorisation-and-ongoing-supervisi",
+        "s": {
+          "de": "Die EIOPA konsultiert eine Aufsichtserklärung zur Genehmigung und laufenden Beaufsichtigung von (Rück-)Versicherungsunternehmen im Zusammenhang mit Private-Equity-Firmen. Ziel ist es, die spezifische Art und die Risiken dieser Unternehmen zu berücksichtigen, um Risiken zu adressieren und eine hochwertige sowie konvergente Aufsicht zu gewährleisten.\n\nDie Erklärung legt aufsichtsrechtliche Erwartungen für den Erwerb qualifizierter Beteiligungen, Portfolioübertragungen und Fusionen sowie für die laufende Aufsicht fest. Sie richtet sich an europäische Aufsichtsbehörden und soll im Einklang mit den Grundsätzen einer risikobasierten und verhältnismäßigen Aufsicht angewendet werden.\n\nDie Konsultationsfrist endete am 30.04.2026.",
+          "en": "EIOPA is consulting on a supervisory statement concerning the authorisation and ongoing supervision of (re-)insurance undertakings related to private equity firms. The aim is to address the specific nature and risks of these entities, ensuring high-quality and convergent supervision.\n\nThe statement sets out supervisory expectations for acquisitions of qualifying holdings, portfolio transfers, and mergers, as well as for ongoing supervision. It is intended to be applied by European supervisory authorities in line with the principles of risk-based and proportionate supervision.\n\nThe consultation period closed on 30 April 2026."
+        },
+        "url": "https://www.eiopa.europa.eu/consultations/consultation-supervisory-statement-authorisation-and-ongoing-supervision-re-insurance-undertakings_en",
+        "imp": "medium",
+        "deadline": "30.04.2026"
+      },
+      {
+        "d": "13.11.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Hinweise zum Solvency-II-Berichtswesen aktualisiert",
+          "en": "BaFin updates Solvency II reporting guidance"
+        },
+        "sl": "hinweise-zum-solvency-ii-berichtswesen-fuer-erst-und-rueckversicherungsunternehm",
+        "s": {
+          "de": "Die BaFin hat ein aktualisiertes Hinweisschreiben zum Solvency-II-Berichtswesen für Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen veröffentlicht. Es enthält Änderungen und präzisiert die Berichtspflichten unter Solvency II und gegenüber der EZB.\n\nDas Schreiben behandelt detailliert das quantitative und narrative Berichtswesen, einschließlich des Berichts über die Solvabilität und Finanzlage (SFCR), des Regelmäßigen Aufsichtlichen Berichts (RSR) und des ORSA-Berichts. Es gibt spezifische Hinweise zu zahlreichen Berichtsformularen (z.B. S.01.01, S.02.01, S.06.02) und deren Inhalten, zur Kategorisierung von Kapitalanlagen und Derivaten sowie zum Umgang mit Fristen und Datenqualität. Auch Besonderheiten für Anwender interner Modelle und das Berichtswesen zur Finanzstabilität werden erläutert.\n\nDas Hinweisschreiben richtet sich an alle Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen in Deutschland, die den Solvency-II-Vorschriften unterliegen. Es dient als umfassende Orientierungshilfe für die Erfüllung der umfangreichen Berichtspflichten gegenüber der BaFin und der Deutschen Bundesbank im Rahmen des ESZB-Versicherungsstatistiksystems. Die Aktualisierungen sind für die Compliance-Verantwortlichen relevant, um die korrekte und fristgerechte Einreichung der erforderlichen Unterlagen sicherzustellen.",
+          "en": "BaFin has published an updated guidance letter on Solvency II reporting for primary and reinsurance undertakings and insurance groups. It includes amendments and clarifies reporting obligations under Solvency II and to the ECB.\n\n The letter comprehensively addresses quantitative and narrative reporting, including the Solvency and Financial Condition Report (SFCR), the Regular Supervisory Report (RSR), and the ORSA report. It provides specific guidance on numerous reporting forms (e.g., S.01.01, S.02.01, S.06.02) and their contents, the categorization of investments and derivatives, and handling deadlines and data quality. Special considerations for users of internal models and financial stability reporting are also explained.\n\nThis guidance letter is aimed at all primary and reinsurance undertakings and insurance groups in Germany subject to Solvency II regulations. It serves as a comprehensive guide for fulfilling extensive reporting obligations to BaFin and the Deutsche Bundesbank within the ESZB insurance statistics system. The updates are relevant for compliance officers to ensure the correct and timely submission of required documents."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/VA/dl_Hinweissschreiben_mit_Aenderungen_Berichtspflichten_SolvencyII.html",
+        "imp": "medium"
+      }
+    ],
+    "mica": [
+      {
+        "d": "24.11.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Compliance-Tabelle zu MiCA-Leitlinien für Eignungsanforderungen und Portfoliomanagement",
+          "en": "ESMA Compliance Table on MiCA Suitability and Portfolio Management Guidelines"
+        },
+        "sl": "compliance-table-on-mica-suitability-and-portfolio-periodic-statement-guidelines",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Eignungsanforderungen und periodische Berichte für das Portfoliomanagement unter der MiCA-Verordnung veröffentlicht. Diese Tabelle zeigt, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien (ESMA35-1872330276-2031) einhalten oder beabsichtigen, diese einzuhalten.\n\nDie meisten NCAs in den EU-Mitgliedstaaten und EWR-EFTA-Staaten haben angegeben, dass sie die Leitlinien einhalten oder dies beabsichtigen. Einige Behörden haben Links zu nationalen Umsetzungsdokumenten oder Erklärungen bereitgestellt. Polen und Rumänien geben an, die Leitlinien standardmäßig nicht einzuhalten, bis die zuständige Behörde benannt ist.\n\nGemäß Artikel 16 Absatz 3 der ESMA-Verordnung müssen NCAs die ESMA über ihre Einhaltung oder Absicht zur Einhaltung von Leitlinien informieren und gegebenenfalls Gründe für die Nichteinhaltung angeben. Die Informationen in der Tabelle stammen von den NCAs selbst.",
+          "en": "ESMA has published a compliance table regarding its guidelines on suitability requirements and periodic statements for portfolio management under the MiCA Regulation. This table indicates which national competent authorities (NCAs) comply or intend to comply with the ESMA Guidelines (ESMA35-1872330276-2031).\n\nMost NCAs in EU Member States and EEA EFTA States have indicated that they comply or intend to comply with the guidelines. Some authorities have provided links to national implementation documents or explanations. Poland and Romania state non-compliance by default, pending the designation of the competent authority.\n\nAccording to Article 16(3) of the ESMA Regulation, NCAs must inform ESMA whether they comply or intend to comply with guidelines, and provide reasons for non-compliance if applicable. The information in the table is provided by the NCAs themselves."
+        },
+        "url": "https://www.esma.europa.eu/sites/default/files/2025-07/ESMA35-24871704-2595_Compliance_table_on_MiCA_suitability_and_portfolio_periodic_statement_Guidelines.pdf",
+        "imp": "medium",
+        "refnum": "ESMA35-24871704-2595"
+      },
+      {
+        "d": "19.11.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Kryptowerten und DLT-Finanzinstrumenten (15/2026)",
+          "en": "BaFin Circular on Crypto Assets and DLT Financial Instruments (15/2026)"
+        },
+        "sl": "rundschreiben-15-2026-wa",
+        "s": {
+          "de": "Die BaFin hat ein Rundschreiben zu den Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-basierte Finanzinstrumente veröffentlicht. Es ergänzt das bestehende Verwahrstellenrundschreiben und gibt Hinweise zur Verwaltungspraxis der BaFin. Das Rundschreiben definiert Kryptowerte im Sinne des KAGB unter Bezugnahme auf MiCAR, wobei Finanzinstrumente nach MiFID II und Utility Token ausgenommen sind. DLT-basierte Finanzinstrumente umfassen beispielsweise Kryptowertpapiere und Kryptofondsanteile.\n\nDas Rundschreiben gilt für Kapitalverwaltungsgesellschaften und Verwahrstellen, die direkt in Kryptowerte oder DLT-basierte Finanzinstrumente investieren. Es behandelt nicht die mittelbare Anlage in Kryptowerte über Derivate oder die Ausgabe von Anteilsscheinen auf Basis dezentraler Kryptowertpapierregister. Verwahrstellen müssen vor Mandatsübernahme die Risiken bewerten und angemessene Aufsichtsprozesse etablieren. Zudem sind ausreichende sachliche und personelle Ressourcen sowie qualifizierte Geschäftsleiter erforderlich, wobei für letztere eine sechsmonatige Frist zum Aufbau praktischer Erfahrung eingeräumt wird.\n\nDas Rundschreiben ist ab dem Tag der Veröffentlichung gültig. Es präzisiert die Pflichten der Verwahrstelle, insbesondere hinsichtlich der Verwahrfähigkeit und des Umfangs der Kontrollpflichten bei diesen neuen Anlageklassen.",
+          "en": "BaFin has published a circular on the obligations of depositaries and management companies when investing in crypto assets and DLT-based financial instruments. It supplements the existing depositary circular and provides guidance on BaFin's administrative practice. The circular defines crypto assets within the meaning of the KAGB by reference to MiCAR, excluding financial instruments under MiFID II and utility tokens. DLT-based financial instruments include, for example, crypto securities and crypto fund units.\n\nThis circular applies to management companies and depositaries that invest directly in crypto assets or DLT-based financial instruments. It does not cover indirect investments in crypto assets via derivatives or the issuance of fund units based on decentralized crypto securities registers. Depositaries must assess risks before taking on a mandate and establish appropriate oversight processes. Furthermore, sufficient material and human resources, as well as qualified managing directors, are required, with a six-month period granted for the latter to build up practical experience.\n\nThe circular is valid from the date of publication. It specifies the duties of the depositary, particularly regarding the safekeeping capability and the scope of control obligations for these new asset classes."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_15_2026_kryptowerte.html",
+        "imp": "high",
+        "refnum": "15/2026"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
+          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
+          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
+        "imp": "high",
+        "refnum": "ESMA75-113276571-1625"
+      },
+      {
+        "d": "21.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
+          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
+        },
+        "sl": "reporting-instructions-midas-system",
+        "s": {
+          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
+          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
+        },
+        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
+        "imp": "high",
+        "refnum": "ESMA65-955014868-17690"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Q&A",
+          "en": "Q&A"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR (ESMA)",
+          "en": "New Q&As on Crypto-Asset Service Providers, Crowdfunding and EMIR (ESMA)"
+        },
+        "sl": "new-q-as-available",
+        "s": {
+          "de": "Die ESMA hat neue Q&As zu verschiedenen Themen veröffentlicht. Für Krypto-Dienstleister (CASPs) wird die Nutzung von Zahlungskonten bei Nicht-Bank-Zahlungsdienstleistern zur Verwahrung von Kundengeldern behandelt. Für europäische Crowdfunding-Dienstleister wird die Frage geklärt, ob Plattformen, die Registrierungs-, Mitglieds- oder andere Zugangsgebühren erheben (\"Investment Club\"-Plattformen), unter die Regulierung fallen.\n\nIm Bereich OTC-Derivate, zentrale Gegenparteien (CCPs) und Transaktionsregister (EMIR) werden spezifische Fragen zur AAR-Befreiung (85%), zur Berechnung der AAR-Schwellenwerte und zur AAR-Repräsentativitätspflicht beantwortet. Diese Klarstellungen sind für die betroffenen Finanzinstitute relevant, um ihre Compliance-Pflichten korrekt zu erfüllen und die Anwendung der jeweiligen Vorschriften besser zu verstehen.\n\nDie Q&As dienen der Vereinheitlichung der Aufsichtspraxis und der Klärung von Auslegungsfragen. Sie sind ab dem Veröffentlichungsdatum, dem 16.10.2026, verfügbar und sollten von den relevanten Marktteilnehmern beachtet werden.",
+          "en": "ESMA has published new Q&As on various topics. For Crypto-Asset Service Providers (CASPs), the use of payment accounts provided by non-bank payment service providers for holding clients’ funds is addressed. For European crowdfunding service providers, the question of whether platforms charging registration, membership, or other access fees (\"investment club\" platforms) fall under the regulation is clarified.\n\nIn the area of OTC derivatives, central counterparties (CCPs), and trade repositories (EMIR), specific questions regarding the AAR 85% exemption, AAR thresholds calculation, and the AAR representativeness obligation are answered. These clarifications are relevant for the affected financial institutions to correctly fulfill their compliance obligations and better understand the application of the respective regulations.\n\nThe Q&As aim to standardize supervisory practices and clarify interpretative issues. They are available from the publication date, 16 October 2026, and should be considered by relevant market participants."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
+        "imp": "low"
+      },
+      {
+        "d": "08.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
+          "en": "Supervisory expectations on services related to unauthorised stablecoins"
+        },
+        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
+        "s": {
+          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
+          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
+        "imp": "high"
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
+          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
+        },
+        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
+        "s": {
+          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
+          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0: Neue Impulse von ESMA, ESRB, AMLA und SRB",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
+            "d": "14.10.2026"
+          },
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "30.09.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
+          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
+        },
+        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
+        "s": {
+          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
+          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
+        },
+        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1721",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
+            "d": "28.09.2026"
+          }
+        ]
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
+          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
+          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
+        "imp": "medium",
+        "refnum": "ESMA75-113276571-1525"
+      },
+      {
+        "d": "20.05.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
+          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
+        },
+        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
+        "s": {
+          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
+          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
+        },
+        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
+            "d": "21.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "29.09.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Verordnung über Anzeigen nach dem Kryptomärkteaufsichtsgesetz (KMAnzV)",
+          "en": "Consultation on the Regulation on Notifications under the Crypto Markets Supervision Act (KMAnzV)"
+        },
+        "sl": "konsultation-18-2025-verordnung-ueber-die-anzeigen-und-die-vorlage-von-unterlage",
+        "s": {
+          "de": "Die BaFin hat den Entwurf einer „Verordnung über die Anzeigen und die Vorlage von Unterlagen nach dem Kryptomärkteaufsichtsgesetz“ (Kryptomärkteanzeigenverordnung – KMAnzV) zur Konsultation gestellt. Ziel der Verordnung ist es, klare Vorgaben für die im Kryptomärkteaufsichtsgesetz (KMAG) normierten Anzeigetatbestände festzulegen.\n\nDie Verordnung soll ein effizientes Anzeigewesen etablieren, indem sie standardisierte Formulare und Regelungen verwendet, die sich an bestehenden Anzeigenverordnungen nach dem Kreditwesengesetz (KWG) und dem Zahlungsdiensteaufsichtsgesetz (ZAG) orientieren. Dies soll den Anzeigepflichtigen einen geringeren Aufwand ermöglichen und die aufsichtliche Beurteilung durch die BaFin erleichtern.\n\nStellungnahmen zum Entwurf können bis zum 29. Oktober 2025 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die Konsultation erfolgt ausschließlich im schriftlichen Verfahren.",
+          "en": "BaFin has published a draft “Regulation on Notifications and the Submission of Documents under the Crypto Markets Supervision Act” (Kryptomärkteanzeigenverordnung – KMAnzV) for consultation. The regulation aims to establish clear requirements for the notification obligations stipulated in the Crypto Markets Supervision Act (KMAG).\n\nThe regulation seeks to create an efficient notification system by using standardized forms and rules, drawing inspiration from existing notification regulations under the Banking Act (KWG) and the Payment Services Supervision Act (ZAG). This approach is intended to reduce the burden on obliged entities and facilitate supervisory assessment by BaFin.\n\nComments on the draft can be submitted in writing or via email to BaFin until October 29, 2025. The consultation will be conducted exclusively through written submissions."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_18_2025_Kryptom%C3%A4rkteaufsichtsgesetz.html",
+        "imp": "medium",
+        "refnum": "Konsultation 18/2025"
+      },
+      {
+        "d": "03.01.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Merkblatt zu Kryptowerte-Dienstleistungen nach MiCAR",
+          "en": "BaFin Guidance on Crypto-Asset Services under MiCAR"
+        },
+        "sl": "merkblatt-kryptowerte-dienstleistungen-nach-micar",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu den Kryptowerte-Dienstleistungen nach der Markets in Crypto-Assets Regulation (MiCAR) veröffentlicht, die ab dem 30. Dezember 2024 anwendbar ist. Das Merkblatt erläutert die erlaubnispflichtigen Dienstleistungen, die sich auf vermögenswertreferenzierte Token, E-Geld-Token und sonstige Kryptowerte wie Bitcoin und Ether-Token beziehen.\n\nEs werden die Definitionen und Abgrenzungen der einzelnen Dienstleistungen nach MiCAR detailliert beschrieben, darunter die Verwahrung und Verwaltung von Kryptowerten für Kunden, der Betrieb einer Handelsplattform, der Tausch von Kryptowerten gegen Geld oder andere Kryptowerte sowie die Ausführung von Aufträgen über Kryptowerte für Kunden. Die BaFin zieht dabei Vergleiche zu bestehenden Regelungen im Kreditwesengesetz (KWG) und der MiFID II, um die Auslegung zu erleichtern. Insbesondere wird klargestellt, dass die Verwahrung und Verwaltung eigener Kryptowerte nicht erfasst ist und dass der Tatbestand des Tauschs von Kryptowerten gegen andere Kryptowerte einen Übersetzungsfehler in der deutschen MiCAR-Fassung enthält.\n\nDas Merkblatt ist für alle Unternehmen relevant, die Kryptowerte-Dienstleistungen im Anwendungsbereich der MiCAR erbringen oder planen, diese anzubieten. Es dient als wichtige Orientierungshilfe für die Beantragung entsprechender Erlaubnisse und die Einhaltung der neuen regulatorischen Anforderungen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung hin.",
+          "en": "BaFin has published guidance on crypto-asset services under the Markets in Crypto-Assets Regulation (MiCAR), which will be applicable from 30 December 2024. The guidance explains the licensable services related to asset-referenced tokens, e-money tokens, and other crypto-assets such as Bitcoin and Ether tokens.\n\nThe document details the definitions and distinctions of individual MiCAR services, including the custody and administration of crypto-assets for clients, the operation of a trading platform, the exchange of crypto-assets for fiat currency or other crypto-assets, and the execution of orders for crypto-assets on behalf of clients. BaFin draws comparisons to existing regulations in the German Banking Act (KWG) and MiFID II to facilitate interpretation. It clarifies that the custody and administration of own crypto-assets are not covered and that the definition for the exchange of crypto-assets for other crypto-assets contains a translation error in the German MiCAR version.\n\nThis guidance is relevant for all companies that provide or plan to offer crypto-asset services within the scope of MiCAR. It serves as an important guide for applying for relevant licenses and complying with the new regulatory requirements. KPMG highlights the publication in a specialized article."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_Kryptowerte_Dienstl.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "BaFin-Merkblatt \"Kryptowerte-Dienstleistungen nach MiCAR\" veröffentlicht",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-merkblatt-kryptowerte-dienstleistungen-nach-micar-veroeffentlicht/",
+            "d": "10.01.2025"
+          }
+        ]
+      },
+      {
+        "d": "03.01.2025",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Zulassungsanforderungen für ART und EMT nach MiCAR",
+          "en": "Guidance Note on Authorization Requirements for ARTs and EMTs under MiCAR"
+        },
+        "sl": "merkblatt-zulassungsanforderungen-bzgl-art-und-emt-nach-micar",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu den Zulassungsanforderungen für vermögenswertereferenzierte Token (ART) und E-Geld-Token (EMT) gemäß der MiCAR veröffentlicht. Es erläutert die Definitionen dieser Kryptowerte und grenzt sie von „anderen“ Kryptowerten ab, für die weniger strenge Anforderungen gelten. Das Merkblatt geht auf die Erlaubnispflichten, Anzeigepflichten gegenüber der BaFin und die Notwendigkeit eines Kryptowerte-Whitepapers ein, die für ART und EMT bei öffentlichem Angebot oder Zulassung zum Handel bestehen.\n\nDas Merkblatt richtet sich an Emittenten und Anbieter von ART und EMT. Es klärt die Begriffe des öffentlichen Angebots und der Zulassung zum Handel und betont, dass ART und EMT im Gegensatz zu „anderen“ Kryptowerten von einem Emittenten ausgegeben werden müssen. Es wird auch der Unterschied zwischen E-Geld-Token und traditionellem E-Geld nach dem ZAG herausgestellt, insbesondere dass EMT nicht zwingend für Zahlungszwecke verwendet werden müssen und keine Forderung gegenüber dem Emittenten voraussetzen.\n\nDie MiCAR ist am 29. Juni 2023 in Kraft getreten und ist ab dem 30. Dezember 2024 unmittelbar anwendbar, wobei die Titel III und IV bereits ab dem 30. Juni 2024 gelten.",
+          "en": "BaFin has published a guidance note on the authorization requirements for asset-referenced tokens (ARTs) and e-money tokens (EMTs) under MiCAR. It clarifies the definitions of these crypto-assets and distinguishes them from 'other' crypto-assets, which are subject to less stringent requirements. The guidance note addresses the licensing obligations, notification requirements to BaFin, and the necessity of a crypto-asset white paper for ARTs and EMTs when offered to the public or admitted to trading.\n\nThe guidance note is aimed at issuers and providers of ARTs and EMTs. It clarifies the concepts of public offering and admission to trading, emphasizing that ARTs and EMTs, unlike 'other' crypto-assets, must be issued by an issuer. It also highlights the difference between e-money tokens and traditional e-money under the German Payment Services Supervision Act (ZAG), particularly that EMTs do not necessarily have to be used for payment purposes and do not require a claim against the issuer.\n\nMiCAR formally entered into force on June 29, 2023, and will be directly applicable from December 30, 2024, with Titles III and IV already applicable from June 30, 2024."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_zulassung_art_emt.html",
+        "imp": "high"
+      },
+      {
+        "d": "26.11.2024",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zur Kryptomärktemitteilungs-Verordnung (KMMV) (Konsultation 09/2024)",
+          "en": "Consultation on the Crypto Market Disclosure Ordinance (KMMV) (Consultation 09/2024)"
+        },
+        "sl": "konsultation-09-2024-konsultation-des-entwurfs-einer-kryptomaerktemitteilungs-ve",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf einer Kryptomärktemitteilungs-Verordnung (KMMV). Diese Verordnung konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes (KMAG-E).\n\nDie KMMV dient der weiteren Umsetzung des KMAG-E, der MiCAR und der technischen Durchführungsstandards nach Artikel 88 Absatz 4 MiCAR. Sie regelt die Übermittlung veröffentlichter Insiderinformationen an die BaFin sowie die Mitteilung über den Aufschub der Offenlegung von Insiderinformationen an die BaFin.\n\nDer Entwurf betrifft Emittenten, Anbieter oder Antragsteller, die nach Artikel 88 Absatz 1 MiCAR zur Veröffentlichung von Insiderinformationen verpflichtet sind und für die Deutschland der Herkunftsmitgliedstaat nach Artikel 3 Absatz 1 Nummer 33 MiCAR ist. Die Konsultation erfolgt unter Vorbehalt der Verabschiedung des Finanzmarktdigitalisierungsgesetzes und der Subdelegation der Verordnungsermächtigung an die BaFin.\n\nStellungnahmen zum Entwurf können bis zum 13. Dezember 2024 eingereicht werden.",
+          "en": "BaFin is consulting on the draft of a Crypto Market Disclosure Ordinance (KMMV). This ordinance specifies the notification obligations for the disclosure of inside information under Section 36 of the Crypto Market Supervision Act (KMAG-E).\n\nThe KMMV serves to further implement the KMAG-E, MiCAR, and the technical implementing standards under Article 88(4) MiCAR. It regulates the transmission of published inside information to BaFin and the notification to BaFin regarding the delayed disclosure of inside information.\n\nThe draft concerns issuers, offerors, or applicants who are obliged to publish inside information under Article 88(1) MiCAR and for whom Germany is the home Member State under Article 3(1)(33) MiCAR. The consultation is subject to the adoption of the Financial Market Digitalisation Act and the sub-delegation of the regulatory authorization to BaFin.\n\nComments on the draft can be submitted until December 13, 2024."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2024/kon_09_24_Kryptomaerktemitteilungs-VO_KMMV.html",
+        "imp": "medium",
+        "refnum": "Konsultation 09/2024"
       }
     ],
     "dltpilot": [
@@ -2730,300 +3202,6 @@
         "imp": "medium"
       }
     ],
-    "mica": [
-      {
-        "d": "19.11.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zu Kryptowerten und DLT-Finanzinstrumenten (15/2026)",
-          "en": "BaFin Circular on Crypto Assets and DLT Financial Instruments (15/2026)"
-        },
-        "sl": "rundschreiben-15-2026-wa",
-        "s": {
-          "de": "Die BaFin hat ein Rundschreiben zu den Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-basierte Finanzinstrumente veröffentlicht. Es ergänzt das bestehende Verwahrstellenrundschreiben und gibt Hinweise zur Verwaltungspraxis der BaFin. Das Rundschreiben definiert Kryptowerte im Sinne des KAGB unter Bezugnahme auf MiCAR, wobei Finanzinstrumente nach MiFID II und Utility Token ausgenommen sind. DLT-basierte Finanzinstrumente umfassen beispielsweise Kryptowertpapiere und Kryptofondsanteile.\n\nDas Rundschreiben gilt für Kapitalverwaltungsgesellschaften und Verwahrstellen, die direkt in Kryptowerte oder DLT-basierte Finanzinstrumente investieren. Es behandelt nicht die mittelbare Anlage in Kryptowerte über Derivate oder die Ausgabe von Anteilsscheinen auf Basis dezentraler Kryptowertpapierregister. Verwahrstellen müssen vor Mandatsübernahme die Risiken bewerten und angemessene Aufsichtsprozesse etablieren. Zudem sind ausreichende sachliche und personelle Ressourcen sowie qualifizierte Geschäftsleiter erforderlich, wobei für letztere eine sechsmonatige Frist zum Aufbau praktischer Erfahrung eingeräumt wird.\n\nDas Rundschreiben ist ab dem Tag der Veröffentlichung gültig. Es präzisiert die Pflichten der Verwahrstelle, insbesondere hinsichtlich der Verwahrfähigkeit und des Umfangs der Kontrollpflichten bei diesen neuen Anlageklassen.",
-          "en": "BaFin has published a circular on the obligations of depositaries and management companies when investing in crypto assets and DLT-based financial instruments. It supplements the existing depositary circular and provides guidance on BaFin's administrative practice. The circular defines crypto assets within the meaning of the KAGB by reference to MiCAR, excluding financial instruments under MiFID II and utility tokens. DLT-based financial instruments include, for example, crypto securities and crypto fund units.\n\nThis circular applies to management companies and depositaries that invest directly in crypto assets or DLT-based financial instruments. It does not cover indirect investments in crypto assets via derivatives or the issuance of fund units based on decentralized crypto securities registers. Depositaries must assess risks before taking on a mandate and establish appropriate oversight processes. Furthermore, sufficient material and human resources, as well as qualified managing directors, are required, with a six-month period granted for the latter to build up practical experience.\n\nThe circular is valid from the date of publication. It specifies the duties of the depositary, particularly regarding the safekeeping capability and the scope of control obligations for these new asset classes."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_15_2026_kryptowerte.html",
-        "imp": "high",
-        "refnum": "15/2026"
-      },
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Marktmisbrauch unter MiCA (ESMA75-113276571-1625)",
-          "en": "Compliance Table on ESMA Guidelines for Market Abuse under MiCA (ESMA75-113276571-1625)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-market-abuse-under-mica",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für Marktmisbrauch unter MiCA veröffentlicht. Diese Tabelle gibt einen Überblick darüber, welche nationalen zuständigen Behörden (Competent Authorities, CAs) beabsichtigen, die ESMA-Leitlinien zu den Aufsichtspraktiken zur Verhinderung und Aufdeckung von Marktmisbrauch gemäß der MiCA-Verordnung einzuhalten oder dies bereits tun.\n\nDie Tabelle ist relevant für alle Finanzinstitute, die im Bereich Krypto-Assets tätig sind, sowie für die nationalen Aufsichtsbehörden. Sie zeigt auf, wie die einzelnen Mitgliedstaaten die MiCA-Vorgaben umsetzen und welche Behörden für die Überwachung zuständig sind. Einige Behörden, wie die FMA in Österreich oder die BaFin in Deutschland, bestätigen die Einhaltung, während andere, wie die Zentralbank Zyperns oder die Ungarische Nationalbank, die Einhaltung bis zu einem bestimmten Datum (z.B. 30.09.2026) beabsichtigen.\n\nEinige Länder, wie Polen und Rumänien, haben noch keine zuständige Behörde benannt oder die MiCA-Verordnung noch nicht vollständig umgesetzt. Die Zentralbank Irlands plant die Einhaltung mit der Einführung eines zentralisierten europäischen Überwachungstools Ende 2025 oder Anfang 2026.",
-          "en": "ESMA has published a compliance table regarding the Guidelines on market abuse under MiCA. This table provides an overview of which national competent authorities (CAs) intend to comply with or are already complying with the ESMA Guidelines on supervisory practices to prevent and detect market abuse under the MiCA Regulation.\n\nThis table is relevant for all financial institutions operating in the crypto-asset sector, as well as for national supervisory authorities. It illustrates how individual Member States are implementing MiCA requirements and which authorities are responsible for supervision. Some authorities, such as the FMA in Austria or BaFin in Germany, confirm compliance, while others, like the Central Bank of Cyprus or the Hungarian National Bank, intend to comply by a specific date (e.g., 30/09/2026).\n\nSome countries, such as Poland and Romania, have not yet designated a competent authority or have not fully implemented the MiCA Regulation. The Central Bank of Ireland plans to comply with the guidelines, including the delivery of a centralized European Surveillance Tool expected by the end of 2025 or the first half of 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-market-abuse-under-mica",
-        "imp": "high",
-        "refnum": "ESMA75-113276571-1625"
-      },
-      {
-        "d": "21.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA: Reporting-Anweisungen für das MIDAS-System (Krypto-Assets)",
-          "en": "ESMA: Reporting Instructions for the MIDAS System (Crypto-Assets)"
-        },
-        "sl": "reporting-instructions-midas-system",
-        "s": {
-          "de": "Die ESMA hat Anweisungen für das Reporting über das MIDAS-System veröffentlicht, die sich auf die Aufzeichnung von Krypto-Assets und Orderbüchern beziehen. Das Dokument beschreibt die technischen Spezifikationen für die Einreichung von Daten, einschließlich der Dateiformate (JSON), der Namenskonventionen und der Datenvalidierungsregeln.\n\nDiese Anweisungen sind relevant für Unternehmen, die im Bereich Krypto-Assets tätig sind und unter die MiCA-Verordnung fallen. Sie müssen ihre internen Systeme anpassen, um die geforderten Daten in den spezifizierten JSON-Formaten zu generieren und über das MIDAS-System einzureichen. Die detaillierten Validierungsregeln und die Struktur der Feedback-Dateien sind entscheidend für eine korrekte und effiziente Datenübermittlung.\n\nDas Dokument enthält auch Informationen zum Onboarding-Prozess und den Upload-Spezifikationen, einschließlich der Einrichtung des Zugangs und der Übermittlung von Testdateien. Es wird auf ein früheres Dokument mit den MiCA Order Book und Records Keeping Message Specifications vom 28. November 2025 verwiesen.",
-          "en": "ESMA has published reporting instructions for the MIDAS system, which relate to the record-keeping of crypto-assets and order books. The document describes the technical specifications for data submission, including file formats (JSON), naming conventions, and data validation rules.\n\nThese instructions are relevant for companies operating in the crypto-asset sector and falling under the MiCA Regulation. They must adapt their internal systems to generate the required data in the specified JSON formats and submit them via the MIDAS system. The detailed validation rules and the structure of the feedback files are crucial for accurate and efficient data transmission.\n\nThe document also includes information on the onboarding process and upload specifications, including access setup and submission of test files. It refers to an earlier document on MiCA Order Book and Records Keeping Message Specifications dated 28 November 2025."
-        },
-        "url": "https://www.esma.europa.eu/document/reporting-instructions-midas-system",
-        "imp": "high",
-        "refnum": "ESMA65-955014868-17690"
-      },
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Q&A",
-          "en": "Q&A"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Neue Q&As zu Krypto-Dienstleistern, Crowdfunding und EMIR (ESMA)",
-          "en": "New Q&As on Crypto-Asset Service Providers, Crowdfunding and EMIR (ESMA)"
-        },
-        "sl": "new-q-as-available",
-        "s": {
-          "de": "Die ESMA hat neue Q&As zu verschiedenen Themen veröffentlicht. Für Krypto-Dienstleister (CASPs) wird die Nutzung von Zahlungskonten bei Nicht-Bank-Zahlungsdienstleistern zur Verwahrung von Kundengeldern behandelt. Für europäische Crowdfunding-Dienstleister wird die Frage geklärt, ob Plattformen, die Registrierungs-, Mitglieds- oder andere Zugangsgebühren erheben (\"Investment Club\"-Plattformen), unter die Regulierung fallen.\n\nIm Bereich OTC-Derivate, zentrale Gegenparteien (CCPs) und Transaktionsregister (EMIR) werden spezifische Fragen zur AAR-Befreiung (85%), zur Berechnung der AAR-Schwellenwerte und zur AAR-Repräsentativitätspflicht beantwortet. Diese Klarstellungen sind für die betroffenen Finanzinstitute relevant, um ihre Compliance-Pflichten korrekt zu erfüllen und die Anwendung der jeweiligen Vorschriften besser zu verstehen.\n\nDie Q&As dienen der Vereinheitlichung der Aufsichtspraxis und der Klärung von Auslegungsfragen. Sie sind ab dem Veröffentlichungsdatum, dem 16.10.2026, verfügbar und sollten von den relevanten Marktteilnehmern beachtet werden.",
-          "en": "ESMA has published new Q&As on various topics. For Crypto-Asset Service Providers (CASPs), the use of payment accounts provided by non-bank payment service providers for holding clients’ funds is addressed. For European crowdfunding service providers, the question of whether platforms charging registration, membership, or other access fees (\"investment club\" platforms) fall under the regulation is clarified.\n\nIn the area of OTC derivatives, central counterparties (CCPs), and trade repositories (EMIR), specific questions regarding the AAR 85% exemption, AAR thresholds calculation, and the AAR representativeness obligation are answered. These clarifications are relevant for the affected financial institutions to correctly fulfill their compliance obligations and better understand the application of the respective regulations.\n\nThe Q&As aim to standardize supervisory practices and clarify interpretative issues. They are available from the publication date, 16 October 2026, and should be considered by relevant market participants."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/new-qas-available-27",
-        "imp": "low"
-      },
-      {
-        "d": "08.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Aufsichtsrechtliche Erwartungen zu Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins",
-          "en": "Supervisory expectations on services related to unauthorised stablecoins"
-        },
-        "sl": "esma-sets-out-supervisory-expectations-on-services-related-to-unauthorised-stabl",
-        "s": {
-          "de": "Die ESMA hat eine Stellungnahme veröffentlicht, die die aufsichtsrechtlichen Erwartungen an Krypto-Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Asset-Referenced Tokens (ARTs) und E-Geld-Tokens (EMTs), auch bekannt als Stablecoins, präzisiert.\n\nKrypto-Dienstleister (CASPs), die unter MiCA zugelassen sind, müssen die Erbringung von Dienstleistungen im Zusammenhang mit nicht-MiCA-konformen Stablecoins für Kunden in der EU einstellen. Dies betrifft alle von MiCA abgedeckten Krypto-Dienstleistungen, einschließlich des Betriebs von Handelsplattformen, Umtauschdiensten, Auftragsausführung, Platzierung von Krypto-Assets, Orderannahme und -übermittlung, Anlageberatung, Übertragungen, Verwahrung und Verwaltung sowie Portfoliomanagement.\n\nNationale zuständige Behörden (NCAs) sollen sicherstellen, dass Marktteilnehmer den Zugang zu nicht-MiCA-konformen Stablecoins weder aufrechterhalten noch erleichtern. CASPs müssen technische, vertragliche und organisatorische Kontrollen implementieren, um die Verfügbarkeit solcher Tokens in der EU zu verhindern. Bestehende Engagements sollen so schnell wie möglich, spätestens jedoch drei Monate nach Veröffentlichung der Stellungnahme, behoben werden. Eine Fortsetzung von Dienstleistungen ist nur für die Liquidation, Umwandlung, Abhebung, Übertragung oder Verwahrung solcher Assets unter strenger Befristung und Aufsicht zulässig.",
-          "en": "ESMA has published an opinion clarifying supervisory expectations for crypto-asset services involving non-MiCA-compliant asset-referenced tokens (ARTs) and e-money tokens (EMTs), also known as stablecoins.\n\nCrypto-asset service providers (CASPs) authorised under MiCA must cease providing services related to non-MiCA-compliant stablecoins to clients in the EU. This applies to all crypto-asset services covered by MiCA, including the operation of trading platforms, exchange services, execution of orders, placing of crypto-assets, reception and transmission of orders, investment advice, transfers, custody and administration, and portfolio management.\n\nNational Competent Authorities (NCAs) are called upon to ensure that market participants neither maintain nor facilitate client access to non-MiCA-compliant stablecoins. CASPs must implement technical, contractual, and organisational controls to prevent the availability of such tokens in the EU. Existing exposures should be remediated as soon as possible, and no later than three months after the opinion's publication. Any continuation of services is strictly limited to activities necessary for the liquidation, conversion, withdrawal, transfer, or safekeeping of such assets, under strict time limits and supervision."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-sets-out-supervisory-expectations-services-related-unauthorised",
-        "imp": "high"
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA fordert Änderungen zur Verbesserung und Klärung der MiCA-Verordnung",
-          "en": "ESMA calls for changes to make MiCA clearer, safer and ready for emerging services"
-        },
-        "sl": "esma-calls-for-changes-to-make-mica-clearer-safer-and-ready-for-emerging-service",
-        "s": {
-          "de": "Die Europäische Wertpapier- und Marktaufsichtsbehörde (ESMA) hat auf die öffentliche Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung (Markets in Crypto-Assets Regulation) reagiert. Die Empfehlungen der ESMA zielen darauf ab, den Rahmen zu vereinfachen, den Anlegerschutz zu verbessern und innovative Geschäftsmodelle wie dezentrale Finanzen (DeFi), Staking, Lending und Borrowing zu adressieren.\n\nDie ESMA schlägt strengere Regeln für die Vermarktung von Krypto-Assets vor, insbesondere wenn diese von Influencern beworben werden, sowie mehr Kostentransparenz und proportionale Anforderungen für Staking, Lending und Borrowing. Zudem sollen die Aufsichtsbefugnisse gestärkt werden, um betrügerische Websites zu erkennen und zu blockieren, Krypto-Assets einzufrieren und den Umgang mit Drittlandfirmen zu regeln. Auch die Klassifizierung von Krypto-Assets und die Einführung eines neuen regulierten Krypto-Asset-Dienstes für den Zugang zu DeFi-Protokollen sind Teil der Vorschläge. Diese Maßnahmen sollen den Anlegerschutz verbessern und regulatorische Arbitrage reduzieren.\n\nDie ESMA betont die Notwendigkeit eines Rahmens für tokenisierte Wertpapiere und On-Chain-Abwicklung, um einen integrierten europäischen Markt für tokenisierte Kapitalmärkte zu fördern.",
-          "en": "The European Securities and Markets Authority (ESMA) has responded to the European Commission's public consultation on the review of the Markets in Crypto-Assets Regulation (MiCA). ESMA's recommendations aim to simplify the framework, improve investor protection, and address innovative business models such as decentralised finance (DeFi), staking, lending, and borrowing.\n\nESMA proposes stricter rules for the marketing of crypto-assets, especially when promoted by influencers, as well as greater cost transparency and proportionate requirements for staking, lending, and borrowing. Supervisory powers are also to be strengthened to detect and block fraudulent websites, freeze crypto-assets, and regulate dealings with third-country firms. The classification of crypto-assets and the introduction of a new regulated crypto-asset service for accessing DeFi protocols are also part of the proposals. These measures are intended to enhance investor protection and reduce regulatory arbitrage.\n\nESMA highlights the need for a framework for tokenised securities and on-chain settlement to support an integrated European tokenised capital market."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-changes-make-mica-clearer-safer-and-ready-emerging-services",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0: Neue Impulse von ESMA, ESRB, AMLA und SRB",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-neue-impulse-von-esma-esrb-amla-und-srb",
-            "d": "14.10.2026"
-          },
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "30.09.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA-Antwort auf die Konsultation der EU-Kommission zur MiCA-Überprüfung (ESMA75-113276571-1721)",
-          "en": "ESMA Response to the European Commission's consultation on the review of MiCA regulation (ESMA75-113276571-1721)"
-        },
-        "sl": "response-to-the-european-commission-s-consultation-on-the-review-of-mica-regulat",
-        "s": {
-          "de": "Die ESMA hat auf die Konsultation der Europäischen Kommission zur Überprüfung der MiCA-Verordnung geantwortet. Sie schlägt gezielte Änderungen, Klarstellungen und weitere Bestimmungen vor, um die Wirksamkeit und Kohärenz des EU-Regulierungsrahmens für Krypto-Assets zu stärken. Ziel ist es, Rechtsunsicherheiten zu beseitigen, Regulierungsarbitrage zu verhindern und die Vorschriften für Marktteilnehmer zu vereinfachen.\n\nDie Vorschläge der ESMA umfassen neue regulierte Dienstleistungen für Krypto-Asset-Dienstleister (CASPs), die als Gateways zu DeFi agieren, sowie erweiterte Aufsichtsbefugnisse und die Möglichkeit, verbindliche Stellungnahmen zur Token-Klassifizierung abzugeben. Zudem sollen Whitepaper-Notifizierungsverfahren gestrafft, Autorisierungsanforderungen für Transferdienste vereinfacht und die Eigenkapitalanforderungen besser an andere Regulierungsrahmen angepasst werden. Die ESMA fordert auch gezielte Anforderungen für Staking-, Lending- und Borrowing-Dienste, verbesserte Anlegerschutzmaßnahmen und strengere Regeln gegen die Bereitstellung von CASP-Diensten für nicht autorisierte Stablecoins.\n\nDie ESMA betont die Notwendigkeit einer vollständigen Abstimmung zwischen der MiCA-Überprüfung und dem Market Integration and Supervisory Package (MISP), insbesondere hinsichtlich der Aufsichtsregelungen für CASPs. Die Konsultationsfrist endete am 30. September 2026.",
-          "en": "ESMA has responded to the European Commission's consultation on the review of the MiCA regulation, proposing targeted amendments, clarifications, and further provisions to strengthen the effectiveness and overall coherence of the EU regulatory framework for crypto-assets. The aim is to remove legal uncertainty, prevent regulatory arbitrage, and simplify rules for market participants.\n\nESMA's proposals include new regulated services for Crypto-Asset Service Providers (CASPs) acting as gateways to DeFi, enhanced supervisory powers, and the ability to issue binding opinions on token classification. Furthermore, white paper notification procedures should be streamlined, authorization requirements for transfer services simplified, and prudential requirements better aligned with other regulatory frameworks. ESMA also calls for targeted requirements for staking, lending, and borrowing services, enhanced investor protection measures, and stricter rules against the provision of CASP services for unauthorized stablecoins.\n\nESMA emphasizes the need for full alignment between the MiCA review and the Market Integration and Supervisory Package (MISP), particularly regarding supervisory arrangements for CASPs. The consultation period ended on September 30, 2026."
-        },
-        "url": "https://www.esma.europa.eu/document/response-european-commissions-consultation-review-mica-regulation",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1721",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "MiCAR 2.0? Europa baut nicht nur am Krypto-Regelwerk – sondern an der Architektur digitaler Finanzmärkte",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/micar-20-europa-baut-nicht-nur-am-krypto-regelwerk-sondern-an-der-architektur-digitaler-finanzmaerkte",
-            "d": "28.09.2026"
-          }
-        ]
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu MiCA-Leitlinien für Systeme und Sicherheitsprotokolle (ESMA75-113276571-1525)",
-          "en": "Compliance Table on MiCA Guidelines for Systems and Security Protocols (ESMA75-113276571-1525)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-maintenance-of-systems-and-security-access",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu den Leitlinien für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen gemäß MiCA veröffentlicht. Diese Tabelle gibt an, welche nationalen zuständigen Behörden (NCAs) die ESMA-Leitlinien zur Spezifikation von Unionsstandards für die Aufrechterhaltung von Systemen und Sicherheitsprotokollen für Anbieter und Personen, die die Zulassung zum Handel mit Krypto-Assets (außer vermögenswertreferenzierten Token und E-Geld-Token) anstreben, einhalten oder beabsichtigen, einzuhalten.\n\nDie Tabelle zeigt, dass die Mehrheit der EU-Mitgliedstaaten und einige EWR-EFTA-Staaten die Leitlinien einhalten oder dies beabsichtigen. Einige Länder wie Belgien und Island haben noch nicht geantwortet, während Polen und Rumänien die Leitlinien standardmäßig nicht einhalten, da die zuständige Behörde noch nicht benannt wurde. Die nationalen Behörden verweisen auf entsprechende nationale Umsetzungsmaßnahmen, wie Gesetze, Rundschreiben oder Veröffentlichungen auf ihren Webseiten.\n\nDie Leitlinien sind für Anbieter von Krypto-Assets und Personen relevant, die eine Zulassung zum Handel mit Krypto-Assets beantragen, ausgenommen vermögenswertreferenzierte Token und E-Geld-Token. Die Einhaltung der Leitlinien ist für die Sicherheit und Integrität des Krypto-Asset-Marktes von Bedeutung.",
-          "en": "ESMA has published a compliance table regarding the guidelines on the maintenance of systems and security access protocols under MiCA. This table indicates which National Competent Authorities (NCAs) comply or intend to comply with the ESMA Guidelines on the specification of Union standards for the maintenance of systems and security access protocols for offerors and persons seeking admission to trading of crypto-assets (other than asset-referenced tokens and e-money tokens).\n\nThe table shows that the majority of EU Member States and some EEA EFTA states comply or intend to comply with the guidelines. Some countries, such as Belgium and Iceland, have not yet responded, while Poland and Romania are non-compliant by default, pending the designation of the competent authority. National authorities refer to corresponding national implementation measures, such as laws, circulars, or publications on their websites.\n\nThe guidelines are relevant for offerors of crypto-assets and persons seeking admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens. Compliance with these guidelines is crucial for the security and integrity of the crypto-asset market."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-maintenance-systems-and-security-access-protocols-under-mica",
-        "imp": "medium",
-        "refnum": "ESMA75-113276571-1525"
-      },
-      {
-        "d": "20.05.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Funktionsweise der EU-Krypto-Asset-Regulierung (MiCA)",
-          "en": "Consultation on the Functioning of EU Crypto-Assets Rules (MiCA)"
-        },
-        "sl": "commission-seeks-feedback-on-the-functioning-of-eu-crypto-assets-rules",
-        "s": {
-          "de": "Die Europäische Kommission hat eine Konsultation zur Funktionsweise der Markets in Crypto-Assets Regulation (MiCA) gestartet. Ziel ist es, Rückmeldungen von Stakeholdern und der Öffentlichkeit zu sammeln, um zu bewerten, ob der aktuelle Rahmen angesichts der sich entwickelnden Kryptomärkte und des globalen Regulierungsumfelds noch zweckmäßig ist.\n\nDie MiCA-Verordnung, die 2024 implementiert wurde, etablierte einen harmonisierten EU-Rahmen für Krypto-Assets und damit verbundene Dienstleistungen, einschließlich Asset-Referenz-Tokens und E-Geld-Tokens (Stablecoins) sowie deren Emittenten und Dienstleister. Die Konsultation richtet sich an digitale Asset-Emittenten und -Dienstleister, Finanzinstitute, Technologieanbieter, die Wissenschaft, Denkfabriken, Branchenverbände, Verbraucherorganisationen und EU-Behörden.\n\nDie Konsultation läuft bis zum 31. August. Die gesammelten Rückmeldungen werden in die zukünftige politische Arbeit der Kommission zu digitalen Assets einfließen.",
-          "en": "The European Commission has launched a consultation on the functioning of the Markets in Crypto-Assets Regulation (MiCA). The aim is to gather feedback from stakeholders and the public to assess whether the current framework remains fit for purpose given the evolving crypto markets and global regulatory landscape.\n\nImplemented in 2024, MiCA established a harmonized EU framework for crypto-assets and related services, covering asset-referenced tokens and e-money tokens (stablecoins), their issuers, and service providers. The consultation targets digital asset issuers and service providers, financial institutions, technology providers, academia, think tanks, industry bodies, consumer organizations, and EU public authorities.\n\nThe consultation is open until August 31. The feedback gathered will inform the Commission's future policy work on digital assets."
-        },
-        "url": "https://finance.ec.europa.eu/news/commission-seeks-feedback-functioning-eu-crypto-assets-rules-2026-05-20_en",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "Zwei Konsultationen zur Überprüfung der MiCAR gestartet",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/zwei-konsultationen-zur-ueberpruefung-der-micar-gestartet-2/",
-            "d": "21.05.2026"
-          }
-        ]
-      },
-      {
-        "d": "29.09.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Verordnung über Anzeigen nach dem Kryptomärkteaufsichtsgesetz (KMAnzV)",
-          "en": "Consultation on the Regulation on Notifications under the Crypto Markets Supervision Act (KMAnzV)"
-        },
-        "sl": "konsultation-18-2025-verordnung-ueber-die-anzeigen-und-die-vorlage-von-unterlage",
-        "s": {
-          "de": "Die BaFin hat den Entwurf einer „Verordnung über die Anzeigen und die Vorlage von Unterlagen nach dem Kryptomärkteaufsichtsgesetz“ (Kryptomärkteanzeigenverordnung – KMAnzV) zur Konsultation gestellt. Ziel der Verordnung ist es, klare Vorgaben für die im Kryptomärkteaufsichtsgesetz (KMAG) normierten Anzeigetatbestände festzulegen.\n\nDie Verordnung soll ein effizientes Anzeigewesen etablieren, indem sie standardisierte Formulare und Regelungen verwendet, die sich an bestehenden Anzeigenverordnungen nach dem Kreditwesengesetz (KWG) und dem Zahlungsdiensteaufsichtsgesetz (ZAG) orientieren. Dies soll den Anzeigepflichtigen einen geringeren Aufwand ermöglichen und die aufsichtliche Beurteilung durch die BaFin erleichtern.\n\nStellungnahmen zum Entwurf können bis zum 29. Oktober 2025 schriftlich oder per E-Mail bei der BaFin eingereicht werden. Die Konsultation erfolgt ausschließlich im schriftlichen Verfahren.",
-          "en": "BaFin has published a draft “Regulation on Notifications and the Submission of Documents under the Crypto Markets Supervision Act” (Kryptomärkteanzeigenverordnung – KMAnzV) for consultation. The regulation aims to establish clear requirements for the notification obligations stipulated in the Crypto Markets Supervision Act (KMAG).\n\nThe regulation seeks to create an efficient notification system by using standardized forms and rules, drawing inspiration from existing notification regulations under the Banking Act (KWG) and the Payment Services Supervision Act (ZAG). This approach is intended to reduce the burden on obliged entities and facilitate supervisory assessment by BaFin.\n\nComments on the draft can be submitted in writing or via email to BaFin until October 29, 2025. The consultation will be conducted exclusively through written submissions."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_18_2025_Kryptom%C3%A4rkteaufsichtsgesetz.html",
-        "imp": "medium",
-        "refnum": "Konsultation 18/2025"
-      },
-      {
-        "d": "03.01.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Merkblatt zu Kryptowerte-Dienstleistungen nach MiCAR",
-          "en": "BaFin Guidance on Crypto-Asset Services under MiCAR"
-        },
-        "sl": "merkblatt-kryptowerte-dienstleistungen-nach-micar",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Kryptowerte-Dienstleistungen nach der Markets in Crypto-Assets Regulation (MiCAR) veröffentlicht, die ab dem 30. Dezember 2024 anwendbar ist. Das Merkblatt erläutert die erlaubnispflichtigen Dienstleistungen, die sich auf vermögenswertreferenzierte Token, E-Geld-Token und sonstige Kryptowerte wie Bitcoin und Ether-Token beziehen.\n\nEs werden die Definitionen und Abgrenzungen der einzelnen Dienstleistungen nach MiCAR detailliert beschrieben, darunter die Verwahrung und Verwaltung von Kryptowerten für Kunden, der Betrieb einer Handelsplattform, der Tausch von Kryptowerten gegen Geld oder andere Kryptowerte sowie die Ausführung von Aufträgen über Kryptowerte für Kunden. Die BaFin zieht dabei Vergleiche zu bestehenden Regelungen im Kreditwesengesetz (KWG) und der MiFID II, um die Auslegung zu erleichtern. Insbesondere wird klargestellt, dass die Verwahrung und Verwaltung eigener Kryptowerte nicht erfasst ist und dass der Tatbestand des Tauschs von Kryptowerten gegen andere Kryptowerte einen Übersetzungsfehler in der deutschen MiCAR-Fassung enthält.\n\nDas Merkblatt ist für alle Unternehmen relevant, die Kryptowerte-Dienstleistungen im Anwendungsbereich der MiCAR erbringen oder planen, diese anzubieten. Es dient als wichtige Orientierungshilfe für die Beantragung entsprechender Erlaubnisse und die Einhaltung der neuen regulatorischen Anforderungen. KPMG weist in einem Fachbeitrag auf die Veröffentlichung hin.",
-          "en": "BaFin has published guidance on crypto-asset services under the Markets in Crypto-Assets Regulation (MiCAR), which will be applicable from 30 December 2024. The guidance explains the licensable services related to asset-referenced tokens, e-money tokens, and other crypto-assets such as Bitcoin and Ether tokens.\n\nThe document details the definitions and distinctions of individual MiCAR services, including the custody and administration of crypto-assets for clients, the operation of a trading platform, the exchange of crypto-assets for fiat currency or other crypto-assets, and the execution of orders for crypto-assets on behalf of clients. BaFin draws comparisons to existing regulations in the German Banking Act (KWG) and MiFID II to facilitate interpretation. It clarifies that the custody and administration of own crypto-assets are not covered and that the definition for the exchange of crypto-assets for other crypto-assets contains a translation error in the German MiCAR version.\n\nThis guidance is relevant for all companies that provide or plan to offer crypto-asset services within the scope of MiCAR. It serves as an important guide for applying for relevant licenses and complying with the new regulatory requirements. KPMG highlights the publication in a specialized article."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_Kryptowerte_Dienstl.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin-Merkblatt \"Kryptowerte-Dienstleistungen nach MiCAR\" veröffentlicht",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-merkblatt-kryptowerte-dienstleistungen-nach-micar-veroeffentlicht/",
-            "d": "10.01.2025"
-          }
-        ]
-      },
-      {
-        "d": "03.01.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Zulassungsanforderungen für ART und EMT nach MiCAR",
-          "en": "Guidance Note on Authorization Requirements for ARTs and EMTs under MiCAR"
-        },
-        "sl": "merkblatt-zulassungsanforderungen-bzgl-art-und-emt-nach-micar",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu den Zulassungsanforderungen für vermögenswertereferenzierte Token (ART) und E-Geld-Token (EMT) gemäß der MiCAR veröffentlicht. Es erläutert die Definitionen dieser Kryptowerte und grenzt sie von „anderen“ Kryptowerten ab, für die weniger strenge Anforderungen gelten. Das Merkblatt geht auf die Erlaubnispflichten, Anzeigepflichten gegenüber der BaFin und die Notwendigkeit eines Kryptowerte-Whitepapers ein, die für ART und EMT bei öffentlichem Angebot oder Zulassung zum Handel bestehen.\n\nDas Merkblatt richtet sich an Emittenten und Anbieter von ART und EMT. Es klärt die Begriffe des öffentlichen Angebots und der Zulassung zum Handel und betont, dass ART und EMT im Gegensatz zu „anderen“ Kryptowerten von einem Emittenten ausgegeben werden müssen. Es wird auch der Unterschied zwischen E-Geld-Token und traditionellem E-Geld nach dem ZAG herausgestellt, insbesondere dass EMT nicht zwingend für Zahlungszwecke verwendet werden müssen und keine Forderung gegenüber dem Emittenten voraussetzen.\n\nDie MiCAR ist am 29. Juni 2023 in Kraft getreten und ist ab dem 30. Dezember 2024 unmittelbar anwendbar, wobei die Titel III und IV bereits ab dem 30. Juni 2024 gelten.",
-          "en": "BaFin has published a guidance note on the authorization requirements for asset-referenced tokens (ARTs) and e-money tokens (EMTs) under MiCAR. It clarifies the definitions of these crypto-assets and distinguishes them from 'other' crypto-assets, which are subject to less stringent requirements. The guidance note addresses the licensing obligations, notification requirements to BaFin, and the necessity of a crypto-asset white paper for ARTs and EMTs when offered to the public or admitted to trading.\n\nThe guidance note is aimed at issuers and providers of ARTs and EMTs. It clarifies the concepts of public offering and admission to trading, emphasizing that ARTs and EMTs, unlike 'other' crypto-assets, must be issued by an issuer. It also highlights the difference between e-money tokens and traditional e-money under the German Payment Services Supervision Act (ZAG), particularly that EMTs do not necessarily have to be used for payment purposes and do not require a claim against the issuer.\n\nMiCAR formally entered into force on June 29, 2023, and will be directly applicable from December 30, 2024, with Titles III and IV already applicable from June 30, 2024."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Merkblatt/mb_250103_zulassung_art_emt.html",
-        "imp": "high"
-      },
-      {
-        "d": "26.11.2024",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zur Kryptomärktemitteilungs-Verordnung (KMMV) (Konsultation 09/2024)",
-          "en": "Consultation on the Crypto Market Disclosure Ordinance (KMMV) (Consultation 09/2024)"
-        },
-        "sl": "konsultation-09-2024-konsultation-des-entwurfs-einer-kryptomaerktemitteilungs-ve",
-        "s": {
-          "de": "Die BaFin konsultiert den Entwurf einer Kryptomärktemitteilungs-Verordnung (KMMV). Diese Verordnung konkretisiert die Mitteilungspflichten zur Offenlegung von Insiderinformationen nach § 36 des Kryptomärkteaufsichtsgesetzes (KMAG-E).\n\nDie KMMV dient der weiteren Umsetzung des KMAG-E, der MiCAR und der technischen Durchführungsstandards nach Artikel 88 Absatz 4 MiCAR. Sie regelt die Übermittlung veröffentlichter Insiderinformationen an die BaFin sowie die Mitteilung über den Aufschub der Offenlegung von Insiderinformationen an die BaFin.\n\nDer Entwurf betrifft Emittenten, Anbieter oder Antragsteller, die nach Artikel 88 Absatz 1 MiCAR zur Veröffentlichung von Insiderinformationen verpflichtet sind und für die Deutschland der Herkunftsmitgliedstaat nach Artikel 3 Absatz 1 Nummer 33 MiCAR ist. Die Konsultation erfolgt unter Vorbehalt der Verabschiedung des Finanzmarktdigitalisierungsgesetzes und der Subdelegation der Verordnungsermächtigung an die BaFin.\n\nStellungnahmen zum Entwurf können bis zum 13. Dezember 2024 eingereicht werden.",
-          "en": "BaFin is consulting on the draft of a Crypto Market Disclosure Ordinance (KMMV). This ordinance specifies the notification obligations for the disclosure of inside information under Section 36 of the Crypto Market Supervision Act (KMAG-E).\n\nThe KMMV serves to further implement the KMAG-E, MiCAR, and the technical implementing standards under Article 88(4) MiCAR. It regulates the transmission of published inside information to BaFin and the notification to BaFin regarding the delayed disclosure of inside information.\n\nThe draft concerns issuers, offerors, or applicants who are obliged to publish inside information under Article 88(1) MiCAR and for whom Germany is the home Member State under Article 3(1)(33) MiCAR. The consultation is subject to the adoption of the Financial Market Digitalisation Act and the sub-delegation of the regulatory authorization to BaFin.\n\nComments on the draft can be submitted until December 13, 2024."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2024/kon_09_24_Kryptomaerktemitteilungs-VO_KMMV.html",
-        "imp": "medium",
-        "refnum": "Konsultation 09/2024"
-      }
-    ],
     "macomp": [
       {
         "d": "18.11.2026",
@@ -3204,145 +3382,6 @@
           "en": "BaFin provides guidance on the transition to the new supervisory regime for CRD third-country branches, which will apply from January 11, 2027. The focus is on the re-licensing procedure according to Section 53cc (6) KWG, where BaFin decides on the continued validity of existing licenses.\n\nThe communication is addressed to all third-country branches that hold a license under Section 53 in conjunction with Section 32 KWG as of January 10, 2027, and intend to continue their business activities. BaFin will issue a decision in each case, revoking the old license and granting a new one under Sections 53ca to 53cq KWG, provided the requirements are met. A self-assessment questionnaire already submitted will be treated as an application.\n\nFurthermore, BaFin specifies its expectations regarding the settlement account required under the new law, which must be demonstrated for re-licensing. CRD third-country branches must select a suitable account and ensure through contractual arrangements that the deposited instruments are available in the event of liquidation or resolution. Suitability can be demonstrated by a legal opinion. The supervisory communication applies from the date of its publication and, with regard to Section 3, until December 31, 2027."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_10_2026_relizenzierung_crd-drittstaatenzweigstellen_ba.html",
-        "imp": "medium"
-      }
-    ],
-    "solvency": [
-      {
-        "d": "17.11.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Aufsichtsmitteilung zu weiteren Änderungen aus dem Solvency-II-Review (09/2026 (VA))",
-          "en": "BaFin Supervisory Notice on Further Changes from the Solvency II Review (09/2026 (VA))"
-        },
-        "sl": "aufsichtsmitteilung-09-2026-va-weitere-aenderungen-aus-dem-solvency-ii-review",
-        "s": {
-          "de": "Die BaFin ergänzt mit dieser Aufsichtsmitteilung die Hinweise zum Solvency-II-Review und zur Auslegung relevanter Rechtsnormen. Sie richtet sich an Erst- und Rückversicherungsunternehmen mit Sitz im In- oder Ausland, ausgenommen sind Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen sowie bestimmte Rückversicherungs- und Erst-/Rückversicherungsunternehmen.\n\nDie Mitteilung präzisiert die Übergangsregelung für Proportionalitätsmaßnahmen nach § 361 Abs. 3 VAG n.F., die für vier Jahre ohne Anzeige weitergenutzt werden können, aber spätestens am 30. Januar 2031 enden. Ab dem 30. Januar 2027 ist die Kombination der internen Revisionsfunktion mit anderen Schlüsselfunktionen oder einer Geschäftsleitungsposition nicht mehr zulässig. Narrative Berichte wie RSR, SFCR und ORSA-Bericht müssen ab diesem Datum maschinenlesbar eingereicht werden, wobei die Einreichungsfristen für RSR und SFCR bereits für Berichte nach dem 29. Januar 2027 auf 18 Wochen verlängert werden.\n\nFür kleine und nicht komplexe Unternehmen (SNCU) beträgt die RSR-Frequenz grundsätzlich drei Jahre, kann aber von der BaFin abweichend festgelegt werden. Alle Unternehmen müssen im ORSA analysieren, ob der Solvency-II-Review zu wesentlichen Änderungen bei versicherungstechnischen Rückstellungen, Eigenmitteln und der Solvabilitätskapitalanforderung (SCR) führt und dies im ORSA-Bericht darlegen. Zudem ist für Nutzer der Volatilitätsanpassung die Abweichung des Risikoprofils von den zugrundeliegenden Annahmen zu beurteilen.",
-          "en": "This supervisory notice from BaFin supplements the guidance on the Solvency II Review and the interpretation of relevant legal norms. It is addressed to primary and reinsurance undertakings domiciled in Germany or a third country, with the exception of funeral expense funds, pension funds, small insurance undertakings, and certain reinsurance and primary/reinsurance undertakings.\n\nThe notice clarifies the transitional arrangement for proportionality measures under § 361 para. 3 VAG n.F., which can continue to be used for four years without notification, but will expire no later than January 30, 2031. As of January 30, 2027, the combination of the internal audit function with other key functions or a management position is no longer permitted. Narrative reports such as the RSR, SFCR, and ORSA report must be submitted in machine-readable electronic form from this date, with the submission deadlines for the RSR and SFCR already extended to 18 weeks for reports due after January 29, 2027.\n\nFor small and non-complex undertakings (SNCU), the RSR frequency is generally three years but can be set differently by BaFin. All undertakings must analyze in their ORSA whether the Solvency II Review leads to significant changes in technical provisions, own funds, and the Solvency Capital Requirement (SCR), and present this in the ORSA report. Furthermore, for users of the volatility adjustment, deviations of the risk profile from the underlying assumptions must be assessed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_09_2026_weitere_aenderungen_aus_dem_solvencyII_review_va.html",
-        "imp": "medium"
-      },
-      {
-        "d": "15.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "EIOPA schließt Solvency II-Überprüfung mit Leitlinien und Entwürfen technischer Standards ab",
-          "en": "EIOPA completes Solvency II Review mandate with final guidelines and draft technical standards before revised framework takes effect early next year"
-        },
-        "sl": "eiopa-completes-solvency-ii-review-mandate-with-final-guidelines-and-draft-techn",
-        "s": {
-          "de": "Die EIOPA hat acht Leitlinien und Entwürfe technischer Standards zur Überprüfung des Solvency II-Rahmens veröffentlicht. Diese umfassen neue Leitlinien zur Behebung von Mängeln im Liquiditätsrisikomanagement sowie Überarbeitungen bestehender Leitlinien und technischer Standards zur Berechnung der Risikomarge und zur Anwendung des Matching Adjustment.\n\nDiese Veröffentlichungen sind für Versicherungsunternehmen relevant, die unter Solvency II fallen. Die neuen Leitlinien zum Liquiditätsrisikomanagement legen fest, welche Befugnisse Aufsichtsbehörden zur Stärkung der Liquidität von Unternehmen ausüben können und unter welchen Umständen Rücknahmerechte von Versicherungsnehmern vorübergehend ausgesetzt werden dürfen. Die Änderungen an der Risikomarge durch den „Lambda-Faktor“ sollen die Zeitabhängigkeit von Risiken besser berücksichtigen und die Sensitivität gegenüber Zinsänderungen reduzieren. Für Unternehmen, die den Matching Adjustment nutzen, ermöglichen die überarbeiteten ITS eine vollständige Diversifikation zwischen MA-Portfolio und dem restlichen Unternehmen bei der Berechnung der Solvenzkapitalanforderung, sofern die besten Schätzwerte der Versicherungs- und Rückversicherungsverpflichtungen keinen Ring-fenced Fund bilden.\n\nDie Entwürfe der technischen Standards wurden der Europäischen Kommission zur Entscheidung übermittelt. Die neuen Regelungen treten zusammen mit dem geänderten Solvency II-Rahmenwerk am 30. Januar 2027 in Kraft.",
-          "en": "EIOPA has published eight sets of guidelines and draft technical standards related to the Solvency II framework review. These include new guidelines on addressing deficiencies in liquidity risk management, as well as revisions to existing guidelines and technical standards on the calculation of the risk margin and the application of the matching adjustment.\n\nThese publications are relevant for insurance undertakings falling under Solvency II. The new guidelines on liquidity risk management specify the powers supervisors may exercise to strengthen undertakings' liquidity positions and the exceptional circumstances under which policyholders' redemption rights may be temporarily suspended. Changes to the risk margin through the “lambda factor” aim to better account for the time dependency of risks and reduce sensitivity to interest rate changes. For undertakings using the matching adjustment, the revised ITS allow for full diversification between their MA portfolio and the rest of the undertaking when calculating their Solvency Capital Requirement, provided that the best estimate of insurance and reinsurance obligations does not form a ring-fenced fund.\n\n The draft technical standards have been submitted to the European Commission for a decision. The new regulations, along with the amended Solvency II framework, will apply from 30 January 2027."
-        },
-        "url": "https://www.eiopa.europa.eu/eiopa-completes-solvency-ii-review-mandate-final-guidelines-and-draft-technical-standards-revised-2026-07-15_en",
-        "imp": "high"
-      },
-      {
-        "d": "13.07.2026",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Aufsichtsmitteilung zu Änderungen aus dem Solvency-II-Review (04/2026)",
-          "en": "BaFin Supervisory Statement on Changes from the Solvency II Review (04/2026)"
-        },
-        "sl": "aufsichtsmitteilung-04-2026-va-aenderungen-aus-dem-solvency-ii-review",
-        "s": {
-          "de": "Die BaFin gibt mit dieser Aufsichtsmitteilung erste Hinweise zur Auslegung und Verwaltungspraxis bezüglich der Änderungen aus dem Solvency-II-Review. Im Fokus stehen dabei die angepassten oder neu eingeführten Anzeige- und Antragsverfahren für Proportionalitätsmaßnahmen. Die BaFin betont ihre Verpflichtung zum Proportionalitätsgrundsatz, um insbesondere kleinen und nicht komplexen Unternehmen die Anwendung dieser Maßnahmen bereits mit Inkrafttreten der neuen Regelungen zu ermöglichen.\n\nDie Mitteilung richtet sich an alle Erst- und Rückversicherungsunternehmen mit Sitz im Inland oder Drittstaat, ausgenommen Sterbekassen, Pensionskassen und kleine Versicherungsunternehmen sowie bestimmte Rückversicherer. Künftig können risikoarme Unternehmen als „small and non-complex undertakings“ (SNCU) oder Gruppen als „small and non-complex groups“ (SNCG) eingestuft werden. SNCU können nach einem Anzeigeverfahren bis zu zehn Proportionalitätsmaßnahmen ohne weitere BaFin-Handlung anwenden, während Non-SNCU bis zu sieben Maßnahmen nach vorheriger BaFin-Genehmigung nutzen können. Die BaFin bietet eine Voranzeige- bzw. Vorantragsphase an, um Unternehmen die Einreichung bereits vor dem Inkrafttreten der neuen gesetzlichen Regelungen am 30. Januar 2027 zu ermöglichen.\n\nDie Aufsichtsmitteilung gilt ab ihrer Veröffentlichung bis zum 31. Dezember 2027. Die neuen gesetzlichen Regelungen sind ab dem 30. Januar 2027 anwendbar. Anträge, die vor diesem Datum eingehen, werden ab dem 30. Januar 2027 als formale Anträge gewertet, sofern das Unternehmen nicht widerspricht. Eine erneute Einreichung ist dann nicht erforderlich. Die BaFin wird die Mitteilung bei wesentlichen Änderungen anpassen und plant, die Verwaltungspraxis bei Verstetigung in ein Rundschreiben zu überführen.",
-          "en": "This supervisory statement provides initial guidance from BaFin on the interpretation and administrative practice concerning the changes resulting from the Solvency II Review. The focus is on the adjusted or newly introduced notification and application procedures for proportionality measures. BaFin emphasizes its commitment to the principle of proportionality, particularly to enable small and non-complex undertakings to apply these measures upon the entry into force of the new regulations.\n\nThe statement applies to all primary and reinsurance undertakings domiciled in Germany or a third country, excluding funeral funds, pension funds, small insurance undertakings, and certain reinsurers. In the future, low-risk insurance undertakings can be classified as “small and non-complex undertakings” (SNCU) or groups as “small and non-complex groups” (SNCG). SNCUs can apply up to ten proportionality measures after a notification procedure without further BaFin action, while Non-SNCUs can use up to seven measures after prior BaFin approval. BaFin offers a pre-notification and pre-application phase to allow undertakings to submit applications before the new legal regulations come into force on January 30, 2027.\n\nThe supervisory statement is valid from its publication until December 31, 2027. The new legal regulations are applicable from January 30, 2027. Applications received before this date will be treated as formal applications from January 30, 2027, unless the undertaking objects. A re-submission will then not be necessary. BaFin will adapt the statement in case of significant changes and plans to convert the administrative practice into a circular letter once it becomes established."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_04_2026_aenderungen_aus_dem_solvencyII_review_va.html",
-        "imp": "medium",
-        "refnum": "Aufsichtsmitteilung 04/2026"
-      },
-      {
-        "d": "15.04.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Kürzung von Solvency II-Leitlinien",
-          "en": "Consultation on Shortening of Solvency II Guidelines"
-        },
-        "sl": "consultation-on-the-shortening-of-additional-guidelines-under-solvency-ii",
-        "s": {
-          "de": "Die EIOPA konsultiert Vorschläge zur Kürzung von 13 Leitlinien unter Solvency II. Ziel ist es, die Regulierung zu vereinfachen und den Verwaltungsaufwand in der EU zu reduzieren. Die betroffenen Leitlinien umfassen verschiedene Aspekte des Solvency-II-Rahmenwerks, darunter Themen der Säule I sowie wichtige Bereiche der Säule II wie das Governance-System und die unternehmenseigene Risiko- und Solvabilitätsbeurteilung (ORSA) von (Rück-)Versicherern.\n\nDiese Maßnahme ist für (Rück-)Versicherer in der EU relevant, da sie potenziell zu einer Vereinfachung und Entlastung bei der Einhaltung der Solvency-II-Vorschriften führen könnte. Die Kürzung der Leitlinien soll dazu beitragen, die Komplexität der Regulierung zu verringern.\n\nDie Konsultationsfrist endete am 8. Juli 2026.",
-          "en": "EIOPA is consulting on proposals to shorten 13 sets of Guidelines under Solvency II. The objective is to simplify regulation and reduce administrative burdens in the EU. The affected Guidelines cover various aspects of the Solvency II framework, including Pillar I topics and important Pillar II areas such as the system of governance and (re)insurers’ Own Risk and Solvency Assessment (ORSA).\n\nThis measure is relevant for (re)insurers in the EU, as it could potentially lead to simplification and relief in complying with Solvency II requirements. The shortening of the Guidelines aims to reduce regulatory complexity.\n\nThe consultation period ended on July 8, 2026."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-shortening-additional-guidelines-under-solvency-ii_en",
-        "imp": "medium",
-        "deadline": "08.07.2026"
-      },
-      {
-        "d": "12.03.2026",
-        "t": {
-          "de": "Mitteilung",
-          "en": "Statement"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone",
-          "en": "Aufsichtsmitteilung 01/2026 (VA): Bildung einer Schwankungsrückstellung für die Versicherungsart Cyber Stand alone"
-        },
-        "sl": "aufsichtsmitteilung-01-2026-va-bildung-einer-schwankungsrueckstellung-fuer-die-v",
-        "s": {
-          "de": "Die BaFin gibt Hinweise zur Bildung einer Schwankungsrückstellung für die neue Versicherungsart „Cyberversicherung Stand alone“ (Va 26.1). Hintergrund ist die ab Ende 2025 erstmals gesondert aufzustellende Gewinn- und Verlustrechnung für diese Versicherungsart gemäß Versicherungsberichterstattungs-Verordnung.\n\nVersicherungsunternehmen, die Cyberversicherungen als eigenständige Policen anbieten, sind angesprochen. Da zum jetzigen Zeitpunkt keine Versicherungsunternehmen über die erforderlichen zehnjährigen Beobachtungszeiträume für die Schadenquoten verfügen, besteht für das Bilanzjahr 2025 keine Pflicht zur Bildung einer Schwankungsrückstellung. Eine vorzeitige freiwillige Bildung ist jedoch auf Antrag möglich, wobei ein verkürzter Beobachtungszeitraum von mindestens sieben Jahren akzeptiert werden kann, sofern die Daten aus den eigenen Geschäftsunterlagen stammen. Die BaFin kann keine branchenweite generelle Ausnahmebewilligung erteilen.\n\nDiese Aufsichtsmitteilung gilt ab sofort bis zum 31.12.2030. Danach sollen ausreichende BaFin-Daten für einen zehnjährigen Beobachtungszeitraum vorliegen, sodass die gesetzlichen Regelungen der RechVersV greifen.",
-          "en": "BaFin provides guidance on forming a fluctuation reserve for the new insurance class “Cyberversicherung Stand alone” (Va 26.1). This follows the requirement to prepare a separate profit and loss account for this insurance class for the first time by the end of 2025, in accordance with the Insurance Reporting Regulation.\n\nThis supervisory statement is addressed to insurance undertakings offering cyber insurance as standalone policies. As no insurance undertakings currently possess the required ten-year observation periods for loss ratios, there is no obligation to form a fluctuation reserve for the 2025 financial year. However, early voluntary formation is possible upon application, whereby a shortened observation period of at least seven years may be accepted, provided the data originates from the undertaking's own business records. BaFin cannot grant a general industry-wide exemption.\n\nThis supervisory statement is effective immediately and applies until 31.12.2030. By then, sufficient BaFin data for a ten-year observation period is expected to be available, allowing the statutory provisions of the RechVersV to apply."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Aufsichtsmitteilung/2026/aufsichtsmitteilung_01_2026_bildung_schwankungsrueckstellung_cyber_va.html",
-        "imp": "medium",
-        "refnum": "Aufsichtsmitteilung 01/2026"
-      },
-      {
-        "d": "03.02.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "eiopa.europa.eu",
-        "ti": {
-          "de": "Konsultation zur Aufsichtserklärung für (Rück-)Versicherer und Private Equity",
-          "en": "Consultation on Supervisory Statement for (Re-)Insurance Undertakings and Private Equity"
-        },
-        "sl": "consultation-on-supervisory-statement-on-the-authorisation-and-ongoing-supervisi",
-        "s": {
-          "de": "Die EIOPA konsultiert eine Aufsichtserklärung zur Genehmigung und laufenden Beaufsichtigung von (Rück-)Versicherungsunternehmen im Zusammenhang mit Private-Equity-Firmen. Ziel ist es, die spezifische Art und die Risiken dieser Unternehmen zu berücksichtigen, um Risiken zu adressieren und eine hochwertige sowie konvergente Aufsicht zu gewährleisten.\n\nDie Erklärung legt aufsichtsrechtliche Erwartungen für den Erwerb qualifizierter Beteiligungen, Portfolioübertragungen und Fusionen sowie für die laufende Aufsicht fest. Sie richtet sich an europäische Aufsichtsbehörden und soll im Einklang mit den Grundsätzen einer risikobasierten und verhältnismäßigen Aufsicht angewendet werden.\n\nDie Konsultationsfrist endete am 30.04.2026.",
-          "en": "EIOPA is consulting on a supervisory statement concerning the authorisation and ongoing supervision of (re-)insurance undertakings related to private equity firms. The aim is to address the specific nature and risks of these entities, ensuring high-quality and convergent supervision.\n\nThe statement sets out supervisory expectations for acquisitions of qualifying holdings, portfolio transfers, and mergers, as well as for ongoing supervision. It is intended to be applied by European supervisory authorities in line with the principles of risk-based and proportionate supervision.\n\nThe consultation period closed on 30 April 2026."
-        },
-        "url": "https://www.eiopa.europa.eu/consultations/consultation-supervisory-statement-authorisation-and-ongoing-supervision-re-insurance-undertakings_en",
-        "imp": "medium",
-        "deadline": "30.04.2026"
-      },
-      {
-        "d": "13.11.2025",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Hinweise zum Solvency-II-Berichtswesen aktualisiert",
-          "en": "BaFin updates Solvency II reporting guidance"
-        },
-        "sl": "hinweise-zum-solvency-ii-berichtswesen-fuer-erst-und-rueckversicherungsunternehm",
-        "s": {
-          "de": "Die BaFin hat ein aktualisiertes Hinweisschreiben zum Solvency-II-Berichtswesen für Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen veröffentlicht. Es enthält Änderungen und präzisiert die Berichtspflichten unter Solvency II und gegenüber der EZB.\n\nDas Schreiben behandelt detailliert das quantitative und narrative Berichtswesen, einschließlich des Berichts über die Solvabilität und Finanzlage (SFCR), des Regelmäßigen Aufsichtlichen Berichts (RSR) und des ORSA-Berichts. Es gibt spezifische Hinweise zu zahlreichen Berichtsformularen (z.B. S.01.01, S.02.01, S.06.02) und deren Inhalten, zur Kategorisierung von Kapitalanlagen und Derivaten sowie zum Umgang mit Fristen und Datenqualität. Auch Besonderheiten für Anwender interner Modelle und das Berichtswesen zur Finanzstabilität werden erläutert.\n\nDas Hinweisschreiben richtet sich an alle Erst- und Rückversicherungsunternehmen sowie Versicherungsgruppen in Deutschland, die den Solvency-II-Vorschriften unterliegen. Es dient als umfassende Orientierungshilfe für die Erfüllung der umfangreichen Berichtspflichten gegenüber der BaFin und der Deutschen Bundesbank im Rahmen des ESZB-Versicherungsstatistiksystems. Die Aktualisierungen sind für die Compliance-Verantwortlichen relevant, um die korrekte und fristgerechte Einreichung der erforderlichen Unterlagen sicherzustellen.",
-          "en": "BaFin has published an updated guidance letter on Solvency II reporting for primary and reinsurance undertakings and insurance groups. It includes amendments and clarifies reporting obligations under Solvency II and to the ECB.\n\n The letter comprehensively addresses quantitative and narrative reporting, including the Solvency and Financial Condition Report (SFCR), the Regular Supervisory Report (RSR), and the ORSA report. It provides specific guidance on numerous reporting forms (e.g., S.01.01, S.02.01, S.06.02) and their contents, the categorization of investments and derivatives, and handling deadlines and data quality. Special considerations for users of internal models and financial stability reporting are also explained.\n\nThis guidance letter is aimed at all primary and reinsurance undertakings and insurance groups in Germany subject to Solvency II regulations. It serves as a comprehensive guide for fulfilling extensive reporting obligations to BaFin and the Deutsche Bundesbank within the ESZB insurance statistics system. The updates are relevant for compliance officers to ensure the correct and timely submission of required documents."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/VA/dl_Hinweissschreiben_mit_Aenderungen_Berichtspflichten_SolvencyII.html",
         "imp": "medium"
       }
     ],
@@ -13256,6 +13295,14 @@
       "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG_anonym/meldung_2026_11_24_verwarnung_gl.html?cms_expanded=true",
       "cat": "verwarnung",
       "sum": "Die Bafin hat am 8. Juli 2026 einen Geschäftsleiter eines Kreditinstitutes verwarnt. Grund waren Mängel in der Geschäftsorganisation. Hierfür sind die Geschäftsleiter verantwortlich."
+    },
+    {
+      "d": "23.11.2026",
+      "ti": "Keynote-Rede auf der S&P-Konferenz: Die Zukunft der Versicherung in einer unsicheren Welt",
+      "auth": "EIOPA",
+      "src": "eiopa.europa.eu",
+      "url": "https://www.eiopa.europa.eu/keynote-speech-sp-conference-future-insurance-uncertain-world-2026-11-23_en",
+      "cat": "rede"
     },
     {
       "d": "20.11.2026",
