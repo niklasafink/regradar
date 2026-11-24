@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T23:17:56Z",
+  "generated_at": "2026-11-24T09:10:27Z",
   "updates": {
     "amla": [
       {
@@ -874,6 +874,201 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
         "imp": "medium",
         "refnum": "Konsultation 04/2020"
+      }
+    ],
+    "wpimarisk": [
+      {
+        "d": "24.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin veröffentlicht novellierte KAMaRisk und neue WpI MaRisk",
+          "en": "BaFin publishes amended KAMaRisk and new WpI MaRisk"
+        },
+        "sl": "regeln-die-zum-einzelnen-institut-passen",
+        "s": {
+          "de": "Die BaFin hat die novellierten Mindestanforderungen an das Risikomanagement für Kapitalverwaltungsgesellschaften (KAMaRisk) sowie die neuen WpI MaRisk für Wertpapierinstitute veröffentlicht. Beide Rundschreiben verfolgen das Ziel der Entbürokratisierung, Prinzipienorientierung, Proportionalität und Risikoorientierung, um die Anforderungen klarer, passgenauer und näher an der Realität der Unternehmen zu gestalten.\n\nDie WpI MaRisk schaffen ein eigenständiges Regelwerk für Wertpapierinstitute, das deren spezifischem Risikoprofil gerecht wird, welches sich von dem von Banken unterscheidet. Kleine und mittlere Wertpapierinstitute profitieren von mehr Proportionalität, indem sie beispielsweise von Stresstests befreit sein können oder eine interne Revision nur bei Verhältnismäßigkeit einrichten müssen. Große Wertpapierinstitute wenden weiterhin die MaRisk für Banken an.\n\nDie Novelle der KAMaRisk berücksichtigt das Fondsrisikobegrenzungsgesetz und reduziert Anforderungen, die über die EU-Vorgaben hinausgingen, etwa bei der Kreditvergabe durch Investmentvermögen. Doppelungen mit DORA wurden gestrichen, kleine, registrierte KVG aus dem Anwendungsbereich ausgenommen. Neu sind die Berücksichtigung von ESG-Risiken und die Anpassung der Anforderungen an die interne Revision an internationale Standards. Auch die Behandlung unverbriefter Darlehensforderungen wurde angepasst.",
+          "en": "BaFin has published the revised Minimum Requirements for Risk Management for Capital Management Companies (KAMaRisk) and the new WpI MaRisk for Investment Firms. Both circulars aim at reducing bureaucracy, promoting principle-based approaches, proportionality, and risk orientation, to make requirements clearer, more tailored, and closer to the reality of the companies.\n\n The WpI MaRisk establish a standalone regulatory framework for investment firms, addressing their specific risk profile, which differs from that of banks. Small and medium-sized investment firms benefit from increased proportionality, for example, by being exempt from stress tests or only needing to establish an internal audit function if proportionate. Large investment firms continue to apply the MaRisk for banks.\n\n The KAMaRisk amendment incorporates the Fund Risk Limitation Act, reducing requirements that exceeded EU specifications, such as those for lending by investment funds. Duplications with DORA have been removed, and small, registered AIFMs are excluded from the scope. New additions include the consideration of ESG risks and the alignment of internal audit requirements with international standards. The treatment of unsecuritised loan claims has also been adjusted."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Fachartikel/2026/fa_bj_261124_wpi_marisk_und_kamarisk_interview_ed_wa.html",
+        "imp": "high"
+      },
+      {
+        "d": "24.08.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin veröffentlicht finale WpI MaRisk (Rundschreiben 09/2026 (WA))",
+          "en": "BaFin publishes final WpI MaRisk (Circular 09/2026 (WA))"
+        },
+        "sl": "anschreiben-zum-rundschreiben-09-2026-wa",
+        "s": {
+          "de": "Die BaFin hat die finale Fassung der Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Diese basieren auf einem zweiten Konsultationsverfahren und berücksichtigen Stellungnahmen sowie Diskussionen im Arbeitskreis Wertpapierinstitute und -firmen. Die Anforderungen wurden an die Ergebnisse des KWG MaRisk-Reviews angepasst, um Konsistenz zwischen den aufsichtsrechtlichen Regelwerken zu gewährleisten.\n\nDie WpI MaRisk präzisieren die Aufgaben der Compliance-Funktion, auch außerhalb der Wohlverhaltenspflichten, und enthalten Ausführungen zum Risiko einer ungeordneten Abwicklung, ohne jedoch Sanierungs- und Abwicklungspläne zu fordern. Die Anforderungen erstrecken sich zudem auf erlaubnisfreie Geschäfte, sofern diese die Risiken des Instituts oder die Erbringung von Wertpapierdienstleistungen beeinflussen. Für die Interne Revision werden Regelbeispiele genannt, bei denen die Aufsicht von erhöhten Anforderungen ausgeht, etwa bei komplexen Produkten. Begriffe der Kreditinstitutsaufsicht wie „Risikoinventur“ werden verwendet, jedoch ohne dieselben inhaltlichen Erwartungen wie an Kreditinstitute.\n\nDie WpI MaRisk treten am 1. Januar 2027 in Kraft. Für die Übergangszeit bis dahin gilt die sinngemäße Anwendung der KWG MaRisk (8. Novelle); Änderungen aus der 9. Novelle der KWG MaRisk müssen in diesem Zeitraum nicht zwingend berücksichtigt werden.",
+          "en": "BaFin has published the final version of the Minimum Requirements for Risk Management of Investment Firms (WpI MaRisk). These are based on a second consultation process and incorporate feedback and discussions from the Investment Firms Working Group. The requirements have been aligned with the results of the KWG MaRisk review to ensure consistency across supervisory regulations.\n\nThe WpI MaRisk clarify the tasks of the compliance function, including those outside of conduct-of-business obligations, and include provisions on the risk of disorderly winding-up, without, however, requiring recovery and resolution plans. The requirements also extend to non-licensed activities, provided they affect the firm's risks or the provision of investment services. For internal audit, examples are provided where the supervisory authority expects increased requirements, such as for complex products. Terms from credit institution supervision like “risk inventory” are used, but without the same substantive expectations as for credit institutions.\n\nThe WpI MaRisk will come into force on January 1, 2027. During the transitional period until then, the KWG MaRisk (8th amendment) applies mutatis mutandis; changes from the 9th amendment of the KWG MaRisk do not necessarily have to be considered during this period."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_09_26_anschreiben_zum_rundschreiben_09_2026_wa.html",
+        "imp": "high",
+        "refnum": "09/2026",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Regulatory Blog: WpI MaRisk 2026",
+            "url": "https://blogs.pwc.de/de/regulatory/article/256663/wpi-marisk-2026/",
+            "d": "07.09.2026"
+          },
+          {
+            "f": "Waldeck Rechtsanwälte",
+            "ti": "WpI MaRisk: Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
+            "url": "https://www.waldvorlauternormen.com/wpi-marisk-bafin-veroffentlicht-marisk-fur-kleine-und-mittlere-wertpapierinstitute/",
+            "d": "26.08.2026"
+          },
+          {
+            "f": "Deloitte Legal",
+            "ti": "Bafin veröffentlicht WpI MaRisk",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bafin-wpI-ma-risk.html",
+            "d": "25.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.08.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk)",
+          "en": "Minimum Requirements for Risk Management of Investment Firms (WpI MaRisk)"
+        },
+        "sl": "rundschreiben-09-2026-wa-wpi-marisk",
+        "s": {
+          "de": "Das Rundschreiben 09/2026 (WA) der BaFin legt die Mindestanforderungen an das Risikomanagement (MaRisk) für Wertpapierinstitute fest. Es definiert die Ziele des Rundschreibens, seinen Geltungsbeginn sowie den Anwenderkreis und die relevanten Risiko- und Geschäftsdefinitionen.\n\nDie Regelungen betreffen Wertpapierinstitute und umfassen detaillierte Anforderungen an die Verantwortung der Geschäftsleiter und des Aufsichtsorgans, die Risikotragfähigkeit und Kapitalplanung sowie Strategien und interne Kontrollmechanismen. Besondere Funktionen wie Risikomanagement, Compliance und Interne Revision werden ebenfalls adressiert. Fachbeiträge heben hervor, dass diese MaRisk speziell für kleine und mittlere Wertpapierinstitute relevant sind.\n\nDas Rundschreiben behandelt zudem Organisationsrichtlinien, Dokumentationspflichten und die Bereitstellung von Ressourcen, einschließlich Personal, technisch-organisatorischer Ausstattung und Notfallmanagement. Ein konkreter Anwendungsbeginn wird im vorliegenden Auszug nicht genannt.",
+          "en": "BaFin Circular 09/2026 (WA) establishes the minimum requirements for risk management (MaRisk) for investment firms. It defines the objectives of the circular, its effective date, the scope of application, and relevant risk and business definitions.\n\nThe regulations apply to investment firms and include detailed requirements for the responsibility of managing directors and supervisory bodies, risk-bearing capacity and capital planning, as well as strategies and internal control mechanisms. Specific functions such as risk management, compliance, and internal audit are also addressed. Expert contributions emphasize that these MaRisk are particularly relevant for small and medium-sized investment firms.\n\nThe circular also covers organizational guidelines, documentation requirements, and the provision of resources, including personnel, technical and organizational equipment, and emergency management. A specific effective date is not mentioned in the provided excerpt."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0926_wpi_marisk.html",
+        "imp": "high",
+        "refnum": "09/2026",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Regulatory Blog: WpI MaRisk 2026",
+            "url": "https://blogs.pwc.de/de/regulatory/article/256663/wpi-marisk-2026/",
+            "d": "07.09.2026"
+          },
+          {
+            "f": "Waldeck Rechtsanwälte",
+            "ti": "WpI MaRisk: Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
+            "url": "https://www.waldvorlauternormen.com/wpi-marisk-bafin-veroffentlicht-marisk-fur-kleine-und-mittlere-wertpapierinstitute/",
+            "d": "26.08.2026"
+          },
+          {
+            "f": "Deloitte Legal",
+            "ti": "Bafin veröffentlicht WpI MaRisk",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bafin-wpI-ma-risk.html",
+            "d": "25.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "24.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
+          "en": "Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute"
+        },
+        "sl": "bafin-veroeffentlicht-marisk-fuer-kleine-und-mittlere-wertpapierinstitute",
+        "s": {
+          "de": "Die BaFin hat die Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Dieses Rundschreiben schafft einen eigenständigen Aufsichtsrahmen für Kleine und Mittlere Wertpapierinstitute und ersetzt die bisherige sinngemäße Anwendung der MaRisk für Kreditinstitute.\n\nDie WpI MaRisk richten sich explizit an Kleine und Mittlere Wertpapierinstitute. Für diese Institute bedeuten die neuen Regelungen mehr Transparenz und Rechtsklarheit im Risikomanagement. Große Wertpapierinstitute müssen weiterhin die MaRisk für Kreditinstitute anwenden.\n\nDie WpI MaRisk treten am 1. Januar 2027 in Kraft. Bis zu diesem Zeitpunkt gelten für Kleine und Mittlere Wertpapierinstitute weiterhin die MaRisk für Kreditinstitute, wobei sie die Änderungen der 9. MaRisk-Novelle im Übergangszeitraum berücksichtigen können.",
+          "en": "The BaFin has published the Minimum Requirements for Risk Management of Investment Firms (WpI MaRisk). This circular establishes an independent supervisory framework for small and medium-sized investment firms, replacing the previous analogous application of the MaRisk for credit institutions.\n\nThe WpI MaRisk are explicitly aimed at small and medium-sized investment firms. For these institutions, the new regulations mean greater transparency and legal clarity in risk management. Large investment firms must continue to apply the MaRisk for credit institutions.\n\nThe WpI MaRisk will come into force on January 1, 2027. Until then, the MaRisk for credit institutions will continue to apply to small and medium-sized investment firms, with the possibility of considering the changes of the 9th MaRisk amendment during the transitional period."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_08_24_rundschreiben_wpi_marisk.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Regulatory Blog: WpI MaRisk 2026",
+            "url": "https://blogs.pwc.de/de/regulatory/article/256663/wpi-marisk-2026/",
+            "d": "07.09.2026"
+          },
+          {
+            "f": "Waldeck Rechtsanwälte",
+            "ti": "WpI MaRisk: Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
+            "url": "https://www.waldvorlauternormen.com/wpi-marisk-bafin-veroffentlicht-marisk-fur-kleine-und-mittlere-wertpapierinstitute/",
+            "d": "26.08.2026"
+          },
+          {
+            "f": "Deloitte Legal",
+            "ti": "Bafin veröffentlicht WpI MaRisk",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bafin-wpI-ma-risk.html",
+            "d": "25.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "06.05.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin konsultiert Entwurf zu den WpI MaRisk (Konsultation 05/2026)",
+          "en": "BaFin consults on draft WpI MaRisk (Consultation 05/2026)"
+        },
+        "sl": "konsultation-05-2026-entwurf-zum-rundschreiben-wpi-marisk",
+        "s": {
+          "de": "Die BaFin hat einen Konsultationsentwurf für ein Rundschreiben zu den Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Das Rundschreiben konkretisiert die Anforderungen an die Geschäftsleiter und das Aufsichtsorgan sowie an das allgemeine Risikomanagement, einschließlich Risikotragfähigkeit, Kapitalplanung, Strategien und interne Kontrollmechanismen.\n\nEs richtet sich an Wertpapierinstitute und legt detaillierte Vorgaben für deren Aufbau- und Ablauforganisation, Risikomanagementprozesse und Stresstests fest. Auch die besonderen Funktionen wie Risikomanagement-, Compliance- und Interne Revisionsfunktion werden behandelt. Fachbeiträge von Beratungsgesellschaften weisen auf die Relevanz der WpI MaRisk für die Praxis hin.\n\nDer Entwurf umfasst zudem Regelungen zu Organisationsrichtlinien, Dokumentation, Ressourcen (Personal, technisch-organisatorische Ausstattung) und Notfallmanagement. Die Konsultation ermöglicht es den betroffenen Instituten und Verbänden, Stellungnahmen zu den vorgeschlagenen Regelungen abzugeben.",
+          "en": "BaFin has published a consultation draft for a circular on the minimum requirements for risk management of investment firms (WpI MaRisk). The circular specifies the requirements for managing directors and the supervisory board, as well as for general risk management, including risk-bearing capacity, capital planning, strategies, and internal control mechanisms.\n\nIt targets investment firms and sets out detailed requirements for their organizational structure, operational processes, risk management processes, and stress tests. Special functions such as risk management, compliance, and internal audit functions are also addressed. Expert contributions from consulting firms highlight the practical relevance of WpI MaRisk.\n\nThe draft also includes regulations on organizational guidelines, documentation, resources (personnel, technical and organizational equipment), and emergency management. The consultation allows affected institutions and associations to submit comments on the proposed regulations."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_05_2026_rs_wpi_marisk.html",
+        "imp": "medium",
+        "refnum": "Konsultation 05/2026",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "WpI MaRisk – Bafin konsultiert Rundschreiben",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/wpl-marisk-bafin-konsultiert-rundschreiben",
+            "d": "18.05.2026"
+          }
+        ]
+      },
+      {
+        "d": "06.08.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin konsultiert Rundschreiben zu den Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk)",
+          "en": "BaFin consults on circular on minimum requirements for risk management of investment firms (WpI MaRisk)"
+        },
+        "sl": "wpi-marisk-bafin-konsultiert-rundschreiben",
+        "s": {
+          "de": "Die BaFin konsultiert den Entwurf ihres Rundschreibens „Mindestanforderungen an das Risikomanagement von Wertpapierinstituten“ (WpI MaRisk). Dieses Rundschreiben soll den Rahmen für die Geschäftsorganisation und das Risikomanagement von Wertpapierinstituten bilden, basierend auf Kapitel 5, Abschnitt 1 des Wertpapierinstitutsgesetzes (WpIG).\n\nDas Rundschreiben legt Anforderungen an Strategien, Verfahren, Unternehmenssteuerung, Risikotragfähigkeit, interne Kontrollmechanismen, Governance-Regelungen und Organisationsstrukturen fest. Es ist modular aufgebaut mit einem allgemeinen Teil zu Risikomanagement und Geschäftsorganisation sowie einem besonderen Teil zu internen Kontrollmechanismen, dem Management wesentlicher Risiken (laufende Tätigkeit, sonstige Risiken, Liquiditätsrisiken, ungeordnete Abwicklung) und der Risikoberichterstattung.\n\nDie WpI MaRisk gelten für mittlere und kleine Wertpapierinstitute gemäß § 2 Abs. 16 und 17 WpIG, einschließlich ihrer ausländischen Zweigniederlassungen. Sie berücksichtigen die heterogene Struktur der Institute und die Vielfalt der Dienstleistungen durch zahlreiche Öffnungsklauseln, die eine vereinfachte Umsetzung je nach Komplexität und Risikosituation ermöglichen. Die BaFin erwartet einen fortlaufenden Dialog mit der Praxis und eine Weiterentwicklung des Rundschreibens. Die Konsultationsfrist läuft bis zum 06.08.2025.",
+          "en": "BaFin is consulting on the draft of its circular “Minimum Requirements for Risk Management of Investment Firms” (WpI MaRisk). This circular is intended to provide the framework for the business organization and risk management of investment firms, based on Chapter 5, Section 1 of the German Investment Firms Act (WpIG).\n\nThe circular sets out requirements for strategies, procedures, corporate governance, risk-bearing capacity, internal control mechanisms, governance arrangements, and organizational structures. It is modular in structure, with a general section on risk management and business organization, and a special section on internal control mechanisms, the management of material risks (ongoing operations, other risks, liquidity risks, disorderly resolution), and risk reporting.\n\nThe WpI MaRisk apply to medium and small investment firms as defined in Section 2 (16) and (17) WpIG, including their foreign branches. They take into account the heterogeneous structure of the institutions and the diversity of services through numerous opening clauses that allow for simplified implementation depending on complexity and risk situation. BaFin expects an ongoing dialogue with practitioners and a continuous development of this circular. The consultation period runs until August 6, 2025."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2025/dl_kon_15_2025_Rundschreiben_MaRisk.html",
+        "imp": "medium",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "BaFin startet Konsultation zu dem Entwurf ihres neuen Rundschreibens \"Mindestanforderungen an das Risikomanagement von Wertpapierinstituten“ (WpI MaRisk)\"",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-dem-entwurf-ihres-neuen-rundschreibens-mindestanforderungen-an-das-risikomanagement-von-wertpapierinstituten-wpi-marisk/",
+            "d": "11.08.2025"
+          }
+        ]
       }
     ],
     "dltpilot": [
@@ -8133,182 +8328,6 @@
         "imp": "medium"
       }
     ],
-    "wpimarisk": [
-      {
-        "d": "24.08.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin veröffentlicht finale WpI MaRisk (Rundschreiben 09/2026 (WA))",
-          "en": "BaFin publishes final WpI MaRisk (Circular 09/2026 (WA))"
-        },
-        "sl": "anschreiben-zum-rundschreiben-09-2026-wa",
-        "s": {
-          "de": "Die BaFin hat die finale Fassung der Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Diese basieren auf einem zweiten Konsultationsverfahren und berücksichtigen Stellungnahmen sowie Diskussionen im Arbeitskreis Wertpapierinstitute und -firmen. Die Anforderungen wurden an die Ergebnisse des KWG MaRisk-Reviews angepasst, um Konsistenz zwischen den aufsichtsrechtlichen Regelwerken zu gewährleisten.\n\nDie WpI MaRisk präzisieren die Aufgaben der Compliance-Funktion, auch außerhalb der Wohlverhaltenspflichten, und enthalten Ausführungen zum Risiko einer ungeordneten Abwicklung, ohne jedoch Sanierungs- und Abwicklungspläne zu fordern. Die Anforderungen erstrecken sich zudem auf erlaubnisfreie Geschäfte, sofern diese die Risiken des Instituts oder die Erbringung von Wertpapierdienstleistungen beeinflussen. Für die Interne Revision werden Regelbeispiele genannt, bei denen die Aufsicht von erhöhten Anforderungen ausgeht, etwa bei komplexen Produkten. Begriffe der Kreditinstitutsaufsicht wie „Risikoinventur“ werden verwendet, jedoch ohne dieselben inhaltlichen Erwartungen wie an Kreditinstitute.\n\nDie WpI MaRisk treten am 1. Januar 2027 in Kraft. Für die Übergangszeit bis dahin gilt die sinngemäße Anwendung der KWG MaRisk (8. Novelle); Änderungen aus der 9. Novelle der KWG MaRisk müssen in diesem Zeitraum nicht zwingend berücksichtigt werden.",
-          "en": "BaFin has published the final version of the Minimum Requirements for Risk Management of Investment Firms (WpI MaRisk). These are based on a second consultation process and incorporate feedback and discussions from the Investment Firms Working Group. The requirements have been aligned with the results of the KWG MaRisk review to ensure consistency across supervisory regulations.\n\nThe WpI MaRisk clarify the tasks of the compliance function, including those outside of conduct-of-business obligations, and include provisions on the risk of disorderly winding-up, without, however, requiring recovery and resolution plans. The requirements also extend to non-licensed activities, provided they affect the firm's risks or the provision of investment services. For internal audit, examples are provided where the supervisory authority expects increased requirements, such as for complex products. Terms from credit institution supervision like “risk inventory” are used, but without the same substantive expectations as for credit institutions.\n\nThe WpI MaRisk will come into force on January 1, 2027. During the transitional period until then, the KWG MaRisk (8th amendment) applies mutatis mutandis; changes from the 9th amendment of the KWG MaRisk do not necessarily have to be considered during this period."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_09_26_anschreiben_zum_rundschreiben_09_2026_wa.html",
-        "imp": "high",
-        "refnum": "09/2026",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Regulatory Blog: WpI MaRisk 2026",
-            "url": "https://blogs.pwc.de/de/regulatory/article/256663/wpi-marisk-2026/",
-            "d": "07.09.2026"
-          },
-          {
-            "f": "Waldeck Rechtsanwälte",
-            "ti": "WpI MaRisk: Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
-            "url": "https://www.waldvorlauternormen.com/wpi-marisk-bafin-veroffentlicht-marisk-fur-kleine-und-mittlere-wertpapierinstitute/",
-            "d": "26.08.2026"
-          },
-          {
-            "f": "Deloitte Legal",
-            "ti": "Bafin veröffentlicht WpI MaRisk",
-            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bafin-wpI-ma-risk.html",
-            "d": "25.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "24.08.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk)",
-          "en": "Minimum Requirements for Risk Management of Investment Firms (WpI MaRisk)"
-        },
-        "sl": "rundschreiben-09-2026-wa-wpi-marisk",
-        "s": {
-          "de": "Das Rundschreiben 09/2026 (WA) der BaFin legt die Mindestanforderungen an das Risikomanagement (MaRisk) für Wertpapierinstitute fest. Es definiert die Ziele des Rundschreibens, seinen Geltungsbeginn sowie den Anwenderkreis und die relevanten Risiko- und Geschäftsdefinitionen.\n\nDie Regelungen betreffen Wertpapierinstitute und umfassen detaillierte Anforderungen an die Verantwortung der Geschäftsleiter und des Aufsichtsorgans, die Risikotragfähigkeit und Kapitalplanung sowie Strategien und interne Kontrollmechanismen. Besondere Funktionen wie Risikomanagement, Compliance und Interne Revision werden ebenfalls adressiert. Fachbeiträge heben hervor, dass diese MaRisk speziell für kleine und mittlere Wertpapierinstitute relevant sind.\n\nDas Rundschreiben behandelt zudem Organisationsrichtlinien, Dokumentationspflichten und die Bereitstellung von Ressourcen, einschließlich Personal, technisch-organisatorischer Ausstattung und Notfallmanagement. Ein konkreter Anwendungsbeginn wird im vorliegenden Auszug nicht genannt.",
-          "en": "BaFin Circular 09/2026 (WA) establishes the minimum requirements for risk management (MaRisk) for investment firms. It defines the objectives of the circular, its effective date, the scope of application, and relevant risk and business definitions.\n\nThe regulations apply to investment firms and include detailed requirements for the responsibility of managing directors and supervisory bodies, risk-bearing capacity and capital planning, as well as strategies and internal control mechanisms. Specific functions such as risk management, compliance, and internal audit are also addressed. Expert contributions emphasize that these MaRisk are particularly relevant for small and medium-sized investment firms.\n\nThe circular also covers organizational guidelines, documentation requirements, and the provision of resources, including personnel, technical and organizational equipment, and emergency management. A specific effective date is not mentioned in the provided excerpt."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0926_wpi_marisk.html",
-        "imp": "high",
-        "refnum": "09/2026",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Regulatory Blog: WpI MaRisk 2026",
-            "url": "https://blogs.pwc.de/de/regulatory/article/256663/wpi-marisk-2026/",
-            "d": "07.09.2026"
-          },
-          {
-            "f": "Waldeck Rechtsanwälte",
-            "ti": "WpI MaRisk: Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
-            "url": "https://www.waldvorlauternormen.com/wpi-marisk-bafin-veroffentlicht-marisk-fur-kleine-und-mittlere-wertpapierinstitute/",
-            "d": "26.08.2026"
-          },
-          {
-            "f": "Deloitte Legal",
-            "ti": "Bafin veröffentlicht WpI MaRisk",
-            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bafin-wpI-ma-risk.html",
-            "d": "25.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "24.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
-          "en": "Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute"
-        },
-        "sl": "bafin-veroeffentlicht-marisk-fuer-kleine-und-mittlere-wertpapierinstitute",
-        "s": {
-          "de": "Die BaFin hat die Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Dieses Rundschreiben schafft einen eigenständigen Aufsichtsrahmen für Kleine und Mittlere Wertpapierinstitute und ersetzt die bisherige sinngemäße Anwendung der MaRisk für Kreditinstitute.\n\nDie WpI MaRisk richten sich explizit an Kleine und Mittlere Wertpapierinstitute. Für diese Institute bedeuten die neuen Regelungen mehr Transparenz und Rechtsklarheit im Risikomanagement. Große Wertpapierinstitute müssen weiterhin die MaRisk für Kreditinstitute anwenden.\n\nDie WpI MaRisk treten am 1. Januar 2027 in Kraft. Bis zu diesem Zeitpunkt gelten für Kleine und Mittlere Wertpapierinstitute weiterhin die MaRisk für Kreditinstitute, wobei sie die Änderungen der 9. MaRisk-Novelle im Übergangszeitraum berücksichtigen können.",
-          "en": "The BaFin has published the Minimum Requirements for Risk Management of Investment Firms (WpI MaRisk). This circular establishes an independent supervisory framework for small and medium-sized investment firms, replacing the previous analogous application of the MaRisk for credit institutions.\n\nThe WpI MaRisk are explicitly aimed at small and medium-sized investment firms. For these institutions, the new regulations mean greater transparency and legal clarity in risk management. Large investment firms must continue to apply the MaRisk for credit institutions.\n\nThe WpI MaRisk will come into force on January 1, 2027. Until then, the MaRisk for credit institutions will continue to apply to small and medium-sized investment firms, with the possibility of considering the changes of the 9th MaRisk amendment during the transitional period."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_08_24_rundschreiben_wpi_marisk.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Regulatory Blog: WpI MaRisk 2026",
-            "url": "https://blogs.pwc.de/de/regulatory/article/256663/wpi-marisk-2026/",
-            "d": "07.09.2026"
-          },
-          {
-            "f": "Waldeck Rechtsanwälte",
-            "ti": "WpI MaRisk: Bafin veröffentlicht MaRisk für Kleine und Mittlere Wertpapierinstitute",
-            "url": "https://www.waldvorlauternormen.com/wpi-marisk-bafin-veroffentlicht-marisk-fur-kleine-und-mittlere-wertpapierinstitute/",
-            "d": "26.08.2026"
-          },
-          {
-            "f": "Deloitte Legal",
-            "ti": "Bafin veröffentlicht WpI MaRisk",
-            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/bafin-wpI-ma-risk.html",
-            "d": "25.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "06.05.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin konsultiert Entwurf zu den WpI MaRisk (Konsultation 05/2026)",
-          "en": "BaFin consults on draft WpI MaRisk (Consultation 05/2026)"
-        },
-        "sl": "konsultation-05-2026-entwurf-zum-rundschreiben-wpi-marisk",
-        "s": {
-          "de": "Die BaFin hat einen Konsultationsentwurf für ein Rundschreiben zu den Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk) veröffentlicht. Das Rundschreiben konkretisiert die Anforderungen an die Geschäftsleiter und das Aufsichtsorgan sowie an das allgemeine Risikomanagement, einschließlich Risikotragfähigkeit, Kapitalplanung, Strategien und interne Kontrollmechanismen.\n\nEs richtet sich an Wertpapierinstitute und legt detaillierte Vorgaben für deren Aufbau- und Ablauforganisation, Risikomanagementprozesse und Stresstests fest. Auch die besonderen Funktionen wie Risikomanagement-, Compliance- und Interne Revisionsfunktion werden behandelt. Fachbeiträge von Beratungsgesellschaften weisen auf die Relevanz der WpI MaRisk für die Praxis hin.\n\nDer Entwurf umfasst zudem Regelungen zu Organisationsrichtlinien, Dokumentation, Ressourcen (Personal, technisch-organisatorische Ausstattung) und Notfallmanagement. Die Konsultation ermöglicht es den betroffenen Instituten und Verbänden, Stellungnahmen zu den vorgeschlagenen Regelungen abzugeben.",
-          "en": "BaFin has published a consultation draft for a circular on the minimum requirements for risk management of investment firms (WpI MaRisk). The circular specifies the requirements for managing directors and the supervisory board, as well as for general risk management, including risk-bearing capacity, capital planning, strategies, and internal control mechanisms.\n\nIt targets investment firms and sets out detailed requirements for their organizational structure, operational processes, risk management processes, and stress tests. Special functions such as risk management, compliance, and internal audit functions are also addressed. Expert contributions from consulting firms highlight the practical relevance of WpI MaRisk.\n\nThe draft also includes regulations on organizational guidelines, documentation, resources (personnel, technical and organizational equipment), and emergency management. The consultation allows affected institutions and associations to submit comments on the proposed regulations."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_05_2026_rs_wpi_marisk.html",
-        "imp": "medium",
-        "refnum": "Konsultation 05/2026",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "WpI MaRisk – Bafin konsultiert Rundschreiben",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/wpl-marisk-bafin-konsultiert-rundschreiben",
-            "d": "18.05.2026"
-          }
-        ]
-      },
-      {
-        "d": "06.08.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin konsultiert Rundschreiben zu den Mindestanforderungen an das Risikomanagement von Wertpapierinstituten (WpI MaRisk)",
-          "en": "BaFin consults on circular on minimum requirements for risk management of investment firms (WpI MaRisk)"
-        },
-        "sl": "wpi-marisk-bafin-konsultiert-rundschreiben",
-        "s": {
-          "de": "Die BaFin konsultiert den Entwurf ihres Rundschreibens „Mindestanforderungen an das Risikomanagement von Wertpapierinstituten“ (WpI MaRisk). Dieses Rundschreiben soll den Rahmen für die Geschäftsorganisation und das Risikomanagement von Wertpapierinstituten bilden, basierend auf Kapitel 5, Abschnitt 1 des Wertpapierinstitutsgesetzes (WpIG).\n\nDas Rundschreiben legt Anforderungen an Strategien, Verfahren, Unternehmenssteuerung, Risikotragfähigkeit, interne Kontrollmechanismen, Governance-Regelungen und Organisationsstrukturen fest. Es ist modular aufgebaut mit einem allgemeinen Teil zu Risikomanagement und Geschäftsorganisation sowie einem besonderen Teil zu internen Kontrollmechanismen, dem Management wesentlicher Risiken (laufende Tätigkeit, sonstige Risiken, Liquiditätsrisiken, ungeordnete Abwicklung) und der Risikoberichterstattung.\n\nDie WpI MaRisk gelten für mittlere und kleine Wertpapierinstitute gemäß § 2 Abs. 16 und 17 WpIG, einschließlich ihrer ausländischen Zweigniederlassungen. Sie berücksichtigen die heterogene Struktur der Institute und die Vielfalt der Dienstleistungen durch zahlreiche Öffnungsklauseln, die eine vereinfachte Umsetzung je nach Komplexität und Risikosituation ermöglichen. Die BaFin erwartet einen fortlaufenden Dialog mit der Praxis und eine Weiterentwicklung des Rundschreibens. Die Konsultationsfrist läuft bis zum 06.08.2025.",
-          "en": "BaFin is consulting on the draft of its circular “Minimum Requirements for Risk Management of Investment Firms” (WpI MaRisk). This circular is intended to provide the framework for the business organization and risk management of investment firms, based on Chapter 5, Section 1 of the German Investment Firms Act (WpIG).\n\nThe circular sets out requirements for strategies, procedures, corporate governance, risk-bearing capacity, internal control mechanisms, governance arrangements, and organizational structures. It is modular in structure, with a general section on risk management and business organization, and a special section on internal control mechanisms, the management of material risks (ongoing operations, other risks, liquidity risks, disorderly resolution), and risk reporting.\n\nThe WpI MaRisk apply to medium and small investment firms as defined in Section 2 (16) and (17) WpIG, including their foreign branches. They take into account the heterogeneous structure of the institutions and the diversity of services through numerous opening clauses that allow for simplified implementation depending on complexity and risk situation. BaFin expects an ongoing dialogue with practitioners and a continuous development of this circular. The consultation period runs until August 6, 2025."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2025/dl_kon_15_2025_Rundschreiben_MaRisk.html",
-        "imp": "medium",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin startet Konsultation zu dem Entwurf ihres neuen Rundschreibens \"Mindestanforderungen an das Risikomanagement von Wertpapierinstituten“ (WpI MaRisk)\"",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-dem-entwurf-ihres-neuen-rundschreibens-mindestanforderungen-an-das-risikomanagement-von-wertpapierinstituten-wpi-marisk/",
-            "d": "11.08.2025"
-          }
-        ]
-      }
-    ],
     "ebaretaildiv": [
       {
         "d": "21.08.2026",
@@ -13229,6 +13248,15 @@
     ]
   },
   "praxis": [
+    {
+      "d": "24.11.2026",
+      "ti": "Bafin verwarnt Geschäftsleiter",
+      "auth": "BaFin",
+      "src": "bafin.de",
+      "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Massnahmen/60b_KWG_84_WpIG_und_57_GwG_anonym/meldung_2026_11_24_verwarnung_gl.html?cms_expanded=true",
+      "cat": "verwarnung",
+      "sum": "Die Bafin hat am 8. Juli 2026 einen Geschäftsleiter eines Kreditinstitutes verwarnt. Grund waren Mängel in der Geschäftsorganisation. Hierfür sind die Geschäftsleiter verantwortlich."
+    },
     {
       "d": "20.11.2026",
       "ti": "State Street Bank International GmbH: Bafin ordnet umfassende Mängelbeseitigung an",

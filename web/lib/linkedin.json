@@ -195,6 +195,26 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-25": {
+   "window": [
+    "2026-11-24"
+   ],
+   "keys": [
+    "regeln-die-zum-einzelnen-institut-passen"
+   ],
+   "hook": "BaFin entbürokratisiert das Risikomanagement für Kapitalverwaltungsgesellschaften und Wertpapierinstitute.",
+   "folge": "Die novellierten KAMaRisk und neuen WpI MaRisk schaffen passgenauere und proportionalere Regeln. Institute müssen nun prüfen, welche spezifischen Erleichterungen oder neuen Anforderungen sie betreffen und ihre internen Prozesse entsprechend anpassen.",
+   "cover": "BaFin: Novellierte KAMaRisk und neue WpI MaRisk",
+   "zeilen": [],
+   "frage": "Welche der neuen Proportionalitätsregeln entlastet Ihr Institut am stärksten?",
+   "top": "regeln-die-zum-einzelnen-institut-passen",
+   "kern": {
+    "regeln-die-zum-einzelnen-institut-passen": "Die BaFin hat novellierte KAMaRisk und neue WpI MaRisk veröffentlicht, die das Risikomanagement für Kapitalverwaltungsgesellschaften und Wertpapierinstitute entbürokratisieren und proportionaler gestalten."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
