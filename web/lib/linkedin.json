@@ -202,22 +202,25 @@
    ],
    "keys": [
     "compliance-table-on-mica-suitability-and-portfolio-periodic-statement-guidelines",
+    "public-consultation-by-amla-on-the-draft-regulatory-technical-standards-rtss-for",
     "regeln-die-zum-einzelnen-institut-passen",
     "solvency-ii-review-bafin-wendet-eiopa-leitlinien-an"
    ],
-   "hook": "Die BaFin schafft spezifische Regeln für Kapitalverwaltungsgesellschaften und Wertpapierinstitute.",
-   "folge": "Die novellierten KAMaRisk und neuen WpI MaRisk entbürokratisieren und proportionalisieren die Anforderungen. Institute müssen ihre Risikomanagementsysteme anpassen, um den neuen Vorgaben gerecht zu werden.",
-   "cover": "BaFin: Neue MaRisk für KVG und WpI",
+   "hook": "BaFin entbürokratisiert: Neue MaRisk für Wertpapierinstitute und angepasste KAMaRisk sind da.",
+   "folge": "Die BaFin hat die WpI MaRisk und novellierte KAMaRisk veröffentlicht. Wertpapierinstitute erhalten ein eigenes Regelwerk, Kapitalverwaltungsgesellschaften profitieren von reduzierten Anforderungen und mehr Proportionalität.",
+   "cover": "BaFin: Neue MaRisk für Wertpapierinstitute und KVG",
    "zeilen": [
-    "BaFin: Fünf EIOPA-Leitlinien zu Solvency II seit 11.11.2026 anwendbar",
-    "ESMA: Compliance-Tabelle zu MiCA-Leitlinien für Eignungsanforderungen und Portfoliomanagement veröffentlicht"
+    "BaFin: EIOPA-Leitlinien zu Solvency II seit 11.11.2026 anwendbar",
+    "ESMA: MiCA-Leitlinien zu Eignung und Portfoliobericht werden von den meisten NCAs eingehalten",
+    "AMLA: Konsultation zu RTS für AML/CFT-Aufsichtskollegien bis 23.12.2026"
    ],
-   "frage": "Wie stellen Sie sicher, dass Ihr Risikomanagement die spezifischen Anforderungen Ihres Instituts widerspiegelt?",
+   "frage": "Welche konkreten Erleichterungen spüren Sie durch die neuen MaRisk in Ihrem Institut?",
    "top": "regeln-die-zum-einzelnen-institut-passen",
    "kern": {
-    "regeln-die-zum-einzelnen-institut-passen": "Die BaFin hat novellierte KAMaRisk und neue WpI MaRisk veröffentlicht, die das Risikomanagement für Kapitalverwaltungsgesellschaften und Wertpapierinstitute entbürokratisieren und proportionalisieren.",
-    "solvency-ii-review-bafin-wendet-eiopa-leitlinien-an": "Die BaFin wendet seit dem 11.11.2026 fünf EIOPA-Leitlinien aus dem Solvency-II-Review an, um die Aufsichts- und Meldepraxis für Versicherungs- und Rückversicherungsunternehmen zu vereinheitlichen.",
-    "compliance-table-on-mica-suitability-and-portfolio-periodic-statement-guidelines": "Die ESMA hat eine Compliance-Tabelle zu ihren MiCA-Leitlinien für Eignungsanforderungen und Portfoliomanagement veröffentlicht, die zeigt, welche nationalen Behörden diese einhalten."
+    "regeln-die-zum-einzelnen-institut-passen": "Die BaFin hat novellierte KAMaRisk und neue WpI MaRisk veröffentlicht, die Anforderungen für Kapitalverwaltungsgesellschaften und Wertpapierinstitute entbürokratisieren und proportionaler gestalten.",
+    "solvency-ii-review-bafin-wendet-eiopa-leitlinien-an": "Die BaFin wendet seit dem 11.11.2026 fünf EIOPA-Leitlinien zum Solvency-II-Review an, die die Aufsichts- und Meldepraxis für Versicherer vereinheitlichen.",
+    "compliance-table-on-mica-suitability-and-portfolio-periodic-statement-guidelines": "Die ESMA hat eine Compliance-Tabelle veröffentlicht, die zeigt, dass die meisten nationalen Behörden ihre MiCA-Leitlinien zu Eignungsanforderungen und Portfolioberichten einhalten.",
+    "public-consultation-by-amla-on-the-draft-regulatory-technical-standards-rtss-for": "Die AMLA konsultiert bis zum 23.12.2026 einen Entwurf für RTS zur Funktionsweise von AML/CFT-Aufsichtskollegien, um die Zusammenarbeit der Aufsichtsbehörden zu verbessern."
    },
    "doppelt": [],
    "fmt": 5,
