@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T20:05:42Z",
+  "generated_at": "2026-11-25T22:12:05Z",
   "updates": {
     "amla": [
       {
@@ -240,6 +240,25 @@
         "url": "https://www.bis.org/publications/consolidated-guidelines-consequential-amendments",
         "imp": "low",
         "deadline": "21.12.2026"
+      },
+      {
+        "d": "25.11.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bis.org",
+        "ti": {
+          "de": "Basler Ausschuss veröffentlicht Details zur G-SIB-Bewertung 2026",
+          "en": "Basel Committee publishes more details on the 2026 assessment of global systemically important banks"
+        },
+        "sl": "basel-committee-publishes-more-details-on-the-2026-assessment-of-global-systemic",
+        "s": {
+          "de": "Der Basler Ausschuss für Bankenaufsicht (BCBS) hat weitere Details zur Methodik der Bewertung global systemrelevanter Banken (G-SIBs) für das Jahr 2026 veröffentlicht. Dies soll das Verständnis der Scoring-Methodik verbessern und begleitet die aktualisierte G-SIB-Liste des Financial Stability Board.\n\nDie Veröffentlichung enthält die globalen Nenner der hochrangigen Indikatoren, die zur Berechnung der Banken-Scores verwendet werden, sowie die hochrangigen Indikatoren für jede Bank in der Stichprobe. Zudem werden der Cut-off-Score zur Identifizierung der G-SIBs und die Schwellenwerte für die Zuweisung der G-SIBs zu den Kategorien für die Berechnung der Anforderungen an die zusätzliche Verlustabsorptionsfähigkeit aufgeführt.\n\nDie Methodik des Ausschusses bewertet die Systemrelevanz globaler Banken anhand von Indikatoren, die aus Daten des vorherigen Geschäftsjahres (2025) berechnet werden. Diese Daten werden von den Banken bereitgestellt und von den nationalen Behörden validiert. Die finalen Scores werden Kategorien zugeordnet, die die Höhe der zusätzlichen Verlustabsorptionsfähigkeit für jede G-SIB bestimmen. Das interaktive G-SIB-Dashboard des Basler Ausschusses wurde entsprechend aktualisiert.",
+          "en": "The Basel Committee on Banking Supervision (BCBS) has published further details on the methodology for the 2026 assessment of global systemically important banks (G-SIBs). This aims to improve understanding of the scoring methodology and accompanies the Financial Stability Board's updated G-SIB list.\n\nThe publication includes the global denominators of the high-level indicators used to calculate banks' scores, as well as the high-level indicators for each bank in the sample. It also specifies the cut-off score used to identify G-SIBs and the thresholds for allocating G-SIBs to buckets for calculating higher loss-absorbency requirements.\n\nThe Committee's methodology assesses the systemic importance of global banks using indicators calculated from data for the previous fiscal year-end (2025). These data are supplied by banks and validated by national authorities. The final scores are mapped to corresponding buckets that determine the higher loss-absorbency requirement for each G-SIB. The Basel Committee's G-SIB interactive dashboard has been updated to reflect the latest results."
+        },
+        "url": "https://www.bis.org/media-releases/20261125-basel-committee-publishes-more-details-2026-assessment-global-systemically-important-banks",
+        "imp": "medium"
       },
       {
         "d": "18.11.2026",
