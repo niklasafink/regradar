@@ -1,29 +1,5 @@
 {
  "posts": {
-  "2026-11-10": {
-   "window": [
-    "2026-11-09"
-   ],
-   "keys": [
-    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
-    "srb-bi-annual-reporting-note-to-eurogroup-november-2026"
-   ],
-   "hook": "Zinsrisiken im Anlagebuch: Der Basler Ausschuss plant strengere Regeln für Modellvalidierung und Stresstests.",
-   "folge": "Banken müssen sich auf zusätzliche Säule-2-Leitlinien zum IRRBB einstellen, die das Risikomanagement und die aufsichtsrechtliche Überwachung stärken. Dies erfordert Anpassungen bei Modellvalidierung, Stresstests und neuen Meldepflichten.",
-   "cover": "BCBS: Neue Leitlinien für Zinsrisiko im Anlagebuch",
-   "zeilen": [
-    "SRB: Halbjährlicher Bericht an die Eurogruppe warnt vor geopolitischen Risiken und Cyberangriffen"
-   ],
-   "frage": "Wie bewerten Sie die aktuellen Herausforderungen bei der Modellvalidierung von Zinsrisiken in Ihrem Institut?",
-   "top": "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance",
-   "kern": {
-    "interest-rate-risk-in-the-banking-book-additional-pillar-2-guidance": "Der Basler Ausschuss konsultiert bis zum 09.02.2027 zusätzliche Säule-2-Leitlinien zum Zinsrisiko im Anlagebuch, die Modellvalidierung, Stresstests und neue Aufsichtsmeldungen für Banken umfassen.",
-    "srb-bi-annual-reporting-note-to-eurogroup-november-2026": "Der SRB hat der Eurogruppe einen halbjährlichen Bericht über Risiken und Krisenvorsorge im europäischen Bankensektor vorgelegt, der geopolitische Spannungen und operationelle Bedrohungen hervorhebt."
-   },
-   "doppelt": [],
-   "fmt": 5,
-   "model": "google/gemini-2.5-flash"
-  },
   "2026-11-17": {
    "window": [
     "2026-11-16"
