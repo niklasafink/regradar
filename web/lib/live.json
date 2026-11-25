@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-11-25T09:06:32Z",
+  "generated_at": "2026-11-25T12:09:10Z",
   "updates": {
     "amla": [
+      {
+        "d": "25.11.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "AMLA-Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen",
+          "en": "AMLA Consultation on Guidelines for Pecuniary Sanctions in AML/CFT Breaches"
+        },
+        "sl": "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for",
+        "s": {
+          "de": "Die AMLA hat einen Entwurf von Leitlinien zur Bestimmung des Mindestbasisbetrags für die Verhängung von Geldsanktionen konsultiert. Diese Leitlinien sollen einen gemeinsamen Ansatz für die Festlegung des Basisbetrags von Geldsanktionen bei Verstößen gegen die AML/CFT-Anforderungen etablieren.\n\nDie Leitlinien richten sich an Aufsichtsbehörden im Finanz- und Nichtfinanzsektor und sollen die Konvergenz bei der Durchsetzung der AML/CFT-Vorschriften in der gesamten Union fördern. Sie legen fest, wie Aufsichtsbehörden die Schwere des Verstoßes, die Rechtsform und Kategorie des verpflichteten Unternehmens sowie eine relevante Finanzkennzahl berücksichtigen sollen. Ziel ist es, die Unterschiede in den Durchsetzungspraktiken zu verringern und wirksame, verhältnismäßige und abschreckende Geldsanktionen zu unterstützen.\n\nDie Konsultationsfrist für diesen Entwurf endet am 25. Februar 2027. Eine öffentliche Anhörung ist für den 12. Januar 2027 geplant.",
+          "en": "AMLA has consulted on a draft of Guidelines on determining the minimum base amount for imposing pecuniary sanctions. These Guidelines aim to establish a common approach for determining the base amount of pecuniary sanctions imposed in cases of breaches of AML/CFT requirements.\n\nThe Guidelines are targeted at supervisors across both the financial and non-financial sectors and are intended to foster greater convergence in AML/CFT enforcement throughout the Union. They set out how supervisors should take into account the severity of the breach, the legal form and category of the obliged entity concerned, and use a relevant financial metric. The goal is to reduce divergences in enforcement practices and support effective, proportionate, and dissuasive pecuniary sanctions.\n\nThe consultation period for this draft ends on 25 February 2027. A public hearing is scheduled for 12 January 2027."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-guidelines-determining-minimum-base-amount-imposing-pecuniary-sanctions_en",
+        "imp": "medium",
+        "deadline": "25.02.2027"
+      },
       {
         "d": "23.11.2026",
         "t": {
@@ -874,6 +894,243 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2020/kon_04_20_Konsultation_Rundschreiben_Gruppenversicherungsvertraege.html",
         "imp": "medium",
         "refnum": "Konsultation 04/2020"
+      }
+    ],
+    "aifmd2": [
+      {
+        "d": "25.11.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zu Liquiditätsmanagementinstrumenten im KAGB (17/2026)",
+          "en": "BaFin Circular on Liquidity Management Tools in the KAGB (17/2026)"
+        },
+        "sl": "rundschreiben-17-2026-wa",
+        "s": {
+          "de": "Die BaFin hat ein Rundschreiben veröffentlicht, das Hinweise zur Auslegung der neuen Regelungen des Fondsrisikobegrenzungsgesetzes (FRiG) im Kapitalanlagegesetzbuch (KAGB) gibt. Es beantwortet Fragen von Marktteilnehmern, insbesondere zur verpflichtenden Implementierung von mindestens zwei Liquiditätsmanagementinstrumenten (LMT) in offenen Investmentvermögen sowie zu Änderungen bei Erlaubnisverfahren und Kreditvergabe.\n\nDas Rundschreiben richtet sich an erlaubnispflichtige Kapitalverwaltungsgesellschaften (KVGen) und behandelt ausschließlich aufsichtsrechtliche Aspekte. Es präzisiert, dass die Auswahl und Aktivierung von LMTs alleinige Verantwortung der KVG ist und Anlegern kein Wahlrecht zwischen verschiedenen LMTs zusteht. Zudem können KVGen zusätzliche Liquiditätsmaßnahmen implementieren und müssen Anleger grundsätzlich über die Aktivierung und Deaktivierung von LMTs informieren, wobei die Art der Information je nach Art des Investmentvermögens variieren kann.\n\nDas Rundschreiben ist mit seiner Veröffentlichung am 25.11.2026 in Kraft getreten. Es enthält auch Ausführungen zur Anwendung von LMTs bei ETFs und zur Meldepflicht gegenüber der BaFin, die bereits durch die Einreichung von Anlagebedingungen und Verkaufsprospekten erfüllt wird. Änderungen der Vertragsbedingungen zur Umsetzung gesetzlich vorgeschriebener LMTs gelten für Publikumsinvestmentvermögen ohne Anlegerzustimmung als wirksam.",
+          "en": "The BaFin has published a circular providing guidance on the interpretation of the new regulations introduced by the Fund Risk Limitation Act (FRiG) into the German Investment Code (KAGB). It addresses questions from market participants, particularly regarding the mandatory implementation of at least two liquidity management tools (LMTs) in open-ended investment funds, as well as changes to authorization procedures and lending.\n\nThe circular is aimed at authorized capital management companies (KVGs) and exclusively deals with supervisory aspects. It clarifies that the selection and activation of LMTs are the sole responsibility of the KVG, and investors do not have the right to choose between different LMTs. Furthermore, KVGs may implement additional liquidity measures and must generally inform investors about the activation and deactivation of LMTs, with the type of information varying depending on the type of investment fund.\n\nThe circular became effective upon its publication on November 25, 2026. It also includes provisions on the application of LMTs to ETFs and the reporting obligation to BaFin, which is already fulfilled by submitting the investment conditions and sales prospectus. Amendments to contractual terms for the implementation of legally required LMTs are considered effective for public investment funds without investor consent."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_17_2026_hinweise_zu_aenderungen_im_kagb_durch_das_frig.html",
+        "imp": "high",
+        "refnum": "Rundschreiben 17/2026"
+      },
+      {
+        "d": "19.11.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
+          "en": "Minimum Requirements for Risk Management of Capital Management Companies (KAMaRisk)"
+        },
+        "sl": "rundschreiben-16-2026-wa",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 16/2026 (WA) zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht. Es konkretisiert die Organisationspflichten und allgemeinen Anforderungen an das Risikomanagement gemäß KAGB, KAVerOV und der AIFM Level 2-VO. Das Rundschreiben ist prinzipienorientiert und proportional ausgestaltet, um Kapitalverwaltungsgesellschaften einen flexiblen Rahmen zu bieten.\n\nEs richtet sich an Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB und deren Auslandszweigniederlassungen. Besondere Mindestanforderungen gelten für AIF-Kapitalverwaltungsgesellschaften, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für Gesellschafterdarlehen unter bestimmten Schwellenwerten. Die MaRisk (BA) finden für diese Gesellschaften keine Anwendung, da die Anforderungen in diesem Rundschreiben abschließend geregelt sind.\n\nDie in Abschnitt 5 dargelegten Anforderungen sind nach einer Übergangsfrist von sechs Monaten nach Veröffentlichung umzusetzen. Die anderen Abschnitte gelten ab sofort. Das Rundschreiben ersetzt das frühere Rundschreiben 07/2017.",
+          "en": "BaFin has published Circular 16/2026 (WA) on the Minimum Requirements for Risk Management of Capital Management Companies (KAMaRisk). It specifies the organizational duties and general risk management requirements according to the KAGB, KAVerOV, and the AIFM Level 2 Regulation. The circular is principle-based and proportionate, aiming to provide capital management companies with a flexible framework.\n\nIt addresses capital management companies licensed under Section 17 KAGB and their foreign branches. Specific minimum requirements apply to AIF capital management companies that grant loans or invest in unsecuritized loan claims, with exceptions for shareholder loans below certain thresholds. The MaRisk (BA) do not apply to these companies, as the requirements are exhaustively regulated in this circular.\n\nThe requirements outlined in Section 5 must be implemented after a six-month transition period following publication. The other sections are effective immediately. This circular replaces the previous Circular 07/2017."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_16_2026_mindestanforderungen_an_das_risikomanagement_von_kavg.html",
+        "imp": "high",
+        "refnum": "16/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB",
+          "en": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB"
+        },
+        "sl": "rundschreiben-12-2026-wa-erlaubnisverfahren-fuer-aif-kapitalverwaltungsgesellsch",
+        "s": {
+          "de": "Das Rundschreiben der BaFin präzisiert das Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVG) gemäß § 22 KAGB. Es legt detaillierte Anforderungen an die einzureichenden Unterlagen fest, insbesondere in Bezug auf Eigenmittel, Liquidität, Angaben zu Geschäftsleitern, bedeutend beteiligten Inhabern und engen Verbindungen.\n\nFür AIF-KVGs bedeutet dies eine klare Richtlinie für die Antragstellung. Das Rundschreiben behandelt unter anderem die Darstellung des Geschäftsplans, der Geschäftsorganisation, interner Kontrollverfahren, der Vergütungspolitik, Auslagerungen und Anlagestrategien. Es wird erwartet, dass die Angaben zu den Arten der zu verwaltenden AIF mit dem Unternehmensgegenstand in der Satzung übereinstimmen.\n\nDas Rundschreiben ist am 15.09.2026 in Kraft getreten. Die BaFin behält sich vor, die Erlaubnis auf bestimmte Arten von Investmentvermögen zu beschränken und empfiehlt, den Unternehmensgegenstand vorab abzustimmen.",
+          "en": "The BaFin circular specifies the licensing procedure for AIF management companies (AIFMs) in accordance with Section 22 KAGB. It sets out detailed requirements for the documents to be submitted, particularly regarding own funds, liquidity, information on managing directors, significantly involved owners, and close links.\n\nFor AIFMs, this provides clear guidelines for submitting applications. The circular addresses, among other things, the presentation of the business plan, business organization, internal control procedures, remuneration policy, outsourcing, and investment strategies. It is expected that the information on the types of AIFs to be managed aligns with the company's business objective stated in its articles of association.\n\nThe circular came into force on 15.09.2026. BaFin reserves the right to restrict the license to certain types of investment funds and recommends coordinating the company's business objective in advance."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1226_erlaubnisverfahren_fuer_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high",
+        "refnum": "12/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Rundschreiben",
+          "en": "Circular"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (§ 22 KAGB)",
+          "en": "BaFin Circular on Licensing Procedure for AIF Management Companies (Section 22 KAGB)"
+        },
+        "sl": "rundschreiben-12-2026-wa",
+        "s": {
+          "de": "Die BaFin hat ein Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVGen) nach § 22 KAGB veröffentlicht. Es konkretisiert die Anforderungen an Inhalt und Unterlagen des Erlaubnisantrags sowie Aspekte der Erlaubniserteilung. Ziel ist es, Transparenz zu schaffen und Bearbeitungszeiten zu verkürzen.\n\nDas Rundschreiben richtet sich an Unternehmen, die einen Erlaubnisantrag als AIF-KVG stellen oder beabsichtigen. Es gilt einheitlich für interne und externe AIF-KVGen sowie für Gesellschaften, die bereits nach § 44 KAGB registriert sind. Besondere Beachtung finden die Nachweise zu Eigenmitteln, Liquidität sowie die Zuverlässigkeit und fachliche Eignung der Geschäftsleiter.\n\nDas Rundschreiben 12/2026 (WA) ist ab dem 15.09.2026 gültig und ersetzt das Merkblatt vom 24. März 2025. Merkblätter zur Eignung von Geschäftsleitern und Aufsichtsorganen bleiben unberührt.",
+          "en": "BaFin has published a circular on the licensing procedure for AIF management companies (AIFMs) under Section 22 KAGB. It specifies the requirements for the content and documents of the license application, as well as aspects of the license granting. The aim is to create transparency and shorten processing times.\n\nThe circular is addressed to companies that are applying for or intend to apply for a license as an AIFM. It applies uniformly to internal and external AIFMs, as well as to companies already registered under Section 44 KAGB. Special attention is paid to the proof of own funds, liquidity, and the reliability and professional suitability of managing directors.\n\nCircular 12/2026 (WA) is valid from 15.09.2026 and replaces the guidance notice of March 24, 2025. Guidance notices on the suitability of managing directors and supervisory bodies remain unaffected."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_12_2026_erlaubnisverfahren_f%C3%BCr_aif_kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high",
+        "refnum": "12/2026"
+      },
+      {
+        "d": "15.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren",
+          "en": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren"
+        },
+        "sl": "aif-kvgen-bafin-schafft-transparenz-bei-erlaubnisverfahren",
+        "s": {
+          "de": "Die BaFin hat das Rundschreiben 12/2026 zu Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 Kapitalanlagegesetzbuch (KAGB) veröffentlicht. Es bietet detaillierte Informationen zu den erforderlichen Dokumenten und Angaben für Antragsteller.\n\nDieses Rundschreiben ersetzt das Merkblatt vom 22. März 2013 (zuletzt geändert am 24. März 2025) und zielt darauf ab, mehr Transparenz zu schaffen und die Bearbeitung von Erlaubnisanträgen zu beschleunigen. Branchenstellungnahmen wurden berücksichtigt, und Anpassungen resultieren auch aus dem Fondsrisikobegrenzungsgesetz.\n\nDas Rundschreiben ist für Kapitalverwaltungsgesellschaften relevant, die Alternative Investmentfonds (AIF) verwalten und eine Erlaubnis nach § 22 KAGB beantragen. Es soll den Antragsprozess für diese Unternehmen vereinfachen und die Anforderungen klarer definieren.",
+          "en": "The BaFin has published Circular 12/2026 on authorization procedures for AIF management companies under Section 22 of the German Investment Code (KAGB). It provides detailed information on the required documents and data for applicants.\n\nThis circular replaces the leaflet from March 22, 2013 (last amended on March 24, 2025) and aims to create more transparency and accelerate the processing of authorization applications. Industry comments were taken into account, and adjustments also result from the Fund Risk Limitation Act.\n\nThis circular is relevant for management companies that manage Alternative Investment Funds (AIFs) and apply for authorization under Section 22 KAGB. It aims to simplify the application process for these companies and to define the requirements more clearly."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_15_rs_erlaubnisverfahren_f%C3%BCr_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
+        "imp": "high"
+      },
+      {
+        "d": "21.07.2026",
+        "t": {
+          "de": "Leitlinien",
+          "en": "Guidelines"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs (ESMA34-671404336-1384)",
+          "en": "Compliance Table on ESMA Guidelines on Liquidity Management Tools (LMTs) of UCITS and Open-ended AIFs (ESMA34-671404336-1384)"
+        },
+        "sl": "compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a",
+        "s": {
+          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden in den EU- und EWR-Staaten die Leitlinien anwenden oder beabsichtigen, diese anzuwenden.\n\nDie Tabelle zeigt, dass viele nationale Behörden die Leitlinien bereits anwenden oder beabsichtigen, dies bis zu einem bestimmten Datum oder nach Abschluss notwendiger legislativer oder regulatorischer Verfahren zu tun. Für Finanzinstitute bedeutet dies, dass sie sich auf eine zunehmend harmonisierte Anwendung der LMT-Leitlinien in Europa einstellen müssen, was die Anforderungen an das Liquiditätsmanagement von OGAW und offenen AIFs betrifft.\n\nEinige Länder wie Belgien, Bulgarien, Tschechien, Estland, Frankreich, Ungarn, Italien, Lettland, Polen, Portugal, Slowenien, Island und Norwegen haben angegeben, dass sie beabsichtigen, die Leitlinien zu einem späteren Zeitpunkt oder nach Abschluss nationaler Gesetzgebungsverfahren umzusetzen. Die Fristen für die Umsetzung variieren, beispielsweise der 31.08.2026 für Bulgarien und der 31.12.2026 für Italien und Lettland.",
+          "en": "ESMA has published a compliance table regarding its Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. This table provides an overview of the extent to which national competent authorities in EU and EEA states apply or intend to apply these guidelines.\n\nThe table indicates that many national authorities already apply the guidelines or intend to do so by a specific date or after completing necessary legislative or regulatory proceedings. For financial institutions, this means they should prepare for an increasingly harmonized application of LMT guidelines across Europe, affecting the requirements for liquidity management of UCITS and open-ended AIFs.\n\nSome countries, such as Belgium, Bulgaria, Czech Republic, Estonia, France, Hungary, Italy, Latvia, Poland, Portugal, Slovenia, Iceland, and Norway, have stated their intention to implement the guidelines at a later date or after the completion of national legislative processes. Implementation deadlines vary, for example, August 31, 2026, for Bulgaria, and December 31, 2026, for Italy and Latvia."
+        },
+        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
+        "imp": "low",
+        "refnum": "ESMA34-671404336-1384"
+      },
+      {
+        "d": "16.06.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Konsultation: Änderungen im KAGB durch das Fondsrisikobegrenzungsgesetz (07/2026)",
+          "en": "BaFin Consultation: KAGB Amendments by Fund Risk Limitation Act (07/2026)"
+        },
+        "sl": "konsultation-07-2026-rundschreiben-zu-aenderungen-im-kapitalanlagegesetzbuch-dur",
+        "s": {
+          "de": "Die BaFin konsultiert ein Rundschreiben mit Hinweisen zu den Änderungen des Kapitalanlagegesetzbuchs (KAGB) durch das Fondsrisikobegrenzungsgesetz (FRiG). Das FRiG, das am 16. April 2026 in Kraft trat, führte umfangreiche Neuerungen ein, insbesondere die verpflichtende Einführung von Liquiditätsmanagement-Tools (LMTs) für offene Fonds.\n\nDas Rundschreiben erläutert die Implementierung von mindestens zwei LMTs in das Liquiditätsmanagementsystem offener Investmentvermögen und geht auf allgemeine Anforderungen sowie Besonderheiten einzelner LMTs ein. Zudem behandelt es Änderungen im Erlaubnisverfahren, wie zusätzliche Angaben zu Geschäftsleitern und den Wegfall der Konnexität zwischen Finanzportfolioverwaltung und Anlageberatung/-vermittlung als Nebendienstleistungen. Auch die Kreditvergabe durch Investmentvermögen wird thematisiert. Fachbeiträge weisen auf die Auswirkungen auf Immobilien-Sondervermögen hin.\n\nStellungnahmen zum Entwurf können bis zum 6. Juli 2026 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
+          "en": "BaFin is consulting on a circular providing guidance on the amendments to the German Capital Investment Code (KAGB) introduced by the Fund Risk Limitation Act (FRiG). The FRiG, which entered into force on April 16, 2026, brought about extensive changes, particularly the mandatory introduction of liquidity management tools (LMTs) for open-ended funds.\n\nThe circular explains the implementation of at least two LMTs in the liquidity management system of open-ended investment funds, addressing general requirements and specific features of individual LMTs. It also covers changes to the licensing procedure, such as additional information required for managing directors and the elimination of the nexus between financial portfolio management and investment advice/brokerage as ancillary services. Lending by investment funds is also addressed. Expert contributions highlight the implications for real estate special funds.\n\nComments on the draft can be submitted to BaFin until July 6, 2026. BaFin intends to publish the submitted comments online."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/kon_07_2026_rs_kagb_aenderungen.html",
+        "imp": "medium",
+        "deadline": "06.07.2026",
+        "refnum": "Konsultation 07/2026",
+        "adv": [
+          {
+            "f": "Waldeck Rechtsanwälte",
+            "ti": "Auswirkungen des Fondsrisikobegrenzungsgesetzes auf Immobilien-Sondervermögen",
+            "url": "https://www.waldvorlauternormen.com/auswirkungen-des-fondsrisikobegrenzungsgesetzes-auf-immobilien-sondervermogen/",
+            "d": "18.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "12.06.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
+          "en": "Consultation on Minimum Requirements for Risk Management of Management Companies (KAMaRisk)"
+        },
+        "sl": "konsultation-06-2026-kamarisk-aenderungsuebersicht-konsultationsfassung",
+        "s": {
+          "de": "Die BaFin hat eine Konsultation zu den beabsichtigten Änderungen des Rundschreibens \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\" veröffentlicht. Das Rundschreiben richtet sich an alle Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB sowie an registrierungspflichtige AIF-Kapitalverwaltungsgesellschaften nach § 2 Absatz 4 und 5 KAGB, insbesondere im Hinblick auf die Vergabe von Gelddarlehen und die damit verbundenen Dokumentationspflichten.\n\nDie Anforderungen des Rundschreibens beziehen sich auf das Management wesentlicher Risiken für Investmentvermögen und Gesellschaften, wobei mindestens Adressenausfall-, Marktpreis-, Liquiditäts- und operationelle Risiken (einschließlich Rechts-, Reputations- und IKT-Risiken) als wesentlich einzustufen sind. Neu ist die explizite Berücksichtigung von ESG-Risiken als Risikotreiber bei der Beurteilung der Wesentlichkeit und der Ausgestaltung des internen Kontrollsystems. Zudem werden besondere Mindestanforderungen für AIF festgelegt, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für bestimmte Gesellschafterdarlehen.\n\nStellungnahmen zu den Änderungen können bis zum 1. Juli 2026 bei der BaFin eingereicht werden. Die Konsultation ist für Kapitalverwaltungsgesellschaften relevant, da sie die Anforderungen an ihr Risikomanagement aktualisiert und präzisiert, insbesondere im Bereich der Kreditvergabe und der Berücksichtigung von ESG-Risiken.",
+          "en": "BaFin has published a consultation on the proposed amendments to the circular \"Minimum Requirements for Risk Management of Management Companies (KAMaRisk)\". The circular addresses all management companies with a license under Section 17 KAGB, as well as AIF management companies subject to registration under Section 2 (4) and (5) KAGB, particularly regarding the granting of loans and associated documentation obligations.\n\nThe circular's requirements pertain to the management of material risks for investment funds and companies, with at least credit, market, liquidity, and operational risks (including legal, reputational, and ICT risks) to be classified as material. A new aspect is the explicit consideration of ESG risks as risk drivers in assessing materiality and designing the internal control system. Furthermore, specific minimum requirements are established for AIFs that grant loans or invest in uncertificated loan receivables, with exceptions for certain shareholder loans.\n\nComments on the amendments can be submitted to BaFin until July 1, 2026. The consultation is relevant for management companies as it updates and clarifies the requirements for their risk management, especially in the area of lending and the consideration of ESG risks."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_06_2026_kamarisk_aenderungen.html",
+        "imp": "medium",
+        "deadline": "01.07.2026",
+        "refnum": "Konsultation 06/2026",
+        "adv": [
+          {
+            "f": "KPMG",
+            "ti": "BaFin startet Konsultation zu aktualisiertem Rundschreiben \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\"",
+            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-aktualisiertem-rundschreiben-mindestanforderungen-an-das-risikomanagement-von-kapitalverwaltungsgesellschaften-kamarisk-2/",
+            "d": "23.06.2026"
+          }
+        ]
+      },
+      {
+        "d": "14.04.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Fondsrisikobegrenzungsgesetz zur Umsetzung von EU-Richtlinien (BGBl. 2026 I Nr. 97)",
+          "en": "Investment Fund Risk Limitation Act for the Implementation of EU Directives (BGBl. 2026 I Nr. 97)"
+        },
+        "sl": "gesetz-zur-begrenzung-der-risiken-durch-investmentfonds-und-zur-umsetzung-der-ri",
+        "s": {
+          "de": "Das Fondsrisikobegrenzungsgesetz setzt die Richtlinien (EU) 2024/927 und (EU) 2024/2994 in nationales Recht um. Es zielt darauf ab, Risiken durch Investmentfonds zu begrenzen und umfasst Regelungen zu Übertragungsvereinbarungen, Liquiditätsrisikomanagement und aufsichtlicher Berichterstattung.\n\nDie Regelungen betreffen insbesondere alternative Investmentfonds hinsichtlich der Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie der Kreditvergabe. Zudem werden Vorschriften zum Umgang mit Konzentrationsrisiken aus Risikopositionen gegenüber zentralen Gegenparteien und Ausfallrisiken bei zentral geclearten Derivategeschäften geändert.\n\nDas Gesetz wurde am 09.04.2026 ausgefertigt und am 14.04.2026 im Bundesgesetzblatt veröffentlicht.",
+          "en": "The Investment Fund Risk Limitation Act transposes Directives (EU) 2024/927 and (EU) 2024/2994 into national law. It aims to limit risks posed by investment funds and includes provisions on transfer agreements, liquidity risk management, and supervisory reporting.\n\nThe regulations primarily affect alternative investment funds concerning the provision of custody and depositary services and lending activities. Furthermore, provisions on managing concentration risks arising from exposures to central counterparties and default risks in centrally cleared derivative transactions are amended.\n\nThe Act was enacted on 09.04.2026 and published in the Federal Law Gazette on 14.04.2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
+        "imp": "high"
+      },
+      {
+        "d": "09.09.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Konsultation zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (Konsultation 17/2025)",
+          "en": "Consultation on the Licensing Procedure for AIF Management Companies (Consultation 17/2025)"
+        },
+        "sl": "konsultation-17-2025-aenderungen-und-konkretisierungen-des-merkblattes-zum-erlau",
+        "s": {
+          "de": "Die BaFin konsultiert Änderungen und Konkretisierungen ihres Merkblattes zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB. Ziel ist es, die Erlaubnisverfahren zu erleichtern und zu beschleunigen. Die Überarbeitung betrifft unter anderem Nachweise der erforderlichen Mittel, Angaben zur fachlichen Eignung der Geschäftsleiter, den Geschäftsplan sowie Anlagebedingungen und Satzungen der zu verwaltenden AIF.\n\nDie Änderungen sind relevant für alle Unternehmen, die eine Erlaubnis als AIF-Kapitalverwaltungsgesellschaft beantragen oder bereits eine solche Erlaubnis besitzen. Insbesondere die Konkretisierungen zur Beurteilung der fachlichen Eignung der Geschäftsleiter sind von praktischer Bedeutung, da sie nach Abschluss der Konsultation auch in das „Merkblatt zur Eignung von Geschäftsleitern nach dem KAGB“ übernommen werden. Fachbeiträge von Verbänden und Kanzleien zeigen das breite Interesse an den Anpassungen.\n\nStellungnahmen zum Entwurf können bis zum 30. September 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
+          "en": "BaFin is consulting on amendments and clarifications to its guidance notice on the licensing procedure for AIF management companies under Section 22 KAGB. The aim is to facilitate and accelerate the licensing procedures. The revision affects, among other things, evidence of the required funds, information on the professional suitability of managing directors, the business plan, and the investment conditions and articles of association of the AIFs to be managed.\n\nThese changes are relevant for all companies applying for or already holding a license as an AIF management company. The clarifications regarding the professional suitability of managing directors are of particular practical importance, as they will also be incorporated into the “Guidance Notice on the Suitability of Managing Directors under the KAGB” after the consultation. Contributions from associations and law firms highlight the broad interest in these adjustments.\n\nComments on the draft can be submitted to BaFin until September 30, 2025. BaFin intends to publish the submitted comments online."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_17_2025_Aenderungen_Konkretisierungen_Merkblatt_Erlaubnisverfahren_fuer_eine_AIF_Kapitalverwaltungsgesellschaft.html",
+        "imp": "medium",
+        "refnum": "Konsultation 17/2025"
+      },
+      {
+        "d": "25.02.2025",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "BaFin-Konsultation zu Pflichten bei Krypto-Investmentvermögen (06/25)",
+          "en": "BaFin Consultation on Obligations for Crypto Investment Funds (06/25)"
+        },
+        "sl": "konsultation-06-25-entwurf-eines-rundschreibens-2025-zu-den-pflichten-von-verwah",
+        "s": {
+          "de": "Die BaFin hat einen Entwurf für ein Rundschreiben zur Konsultation gestellt, das die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften (KAGs) bei Investmentvermögen regelt, die in Kryptowerte investieren.\n\nSeit Inkrafttreten des Zukunftsfinanzierungsgesetzes können neben Spezial-AIF auch inländische Publikums-AIF und geschlossene Publikums-AIF direkt in Kryptowerte investieren. Das Rundschreiben soll Mindestanforderungen für Verwahrstellen und KAGs festlegen, um den technischen und regulatorischen Herausforderungen dieser neuen Anlageklasse zu begegnen.\n\nStellungnahmen zum Entwurf können bis zum 31. März 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
+          "en": "The BaFin has published a draft circular for consultation, which regulates the obligations of depositaries and capital management companies (KAGs) for investment funds investing in crypto assets.\n\nSince the Future Financing Act came into force, in addition to special AIFs, domestic public AIFs and closed public AIFs can also invest directly in crypto assets. The circular aims to establish minimum requirements for depositaries and KAGs to address the technical and regulatory challenges of this new asset class.\n\nComments on the draft can be submitted to BaFin until March 31, 2025. BaFin intends to publish the submitted comments online."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_06_2025_konsultation_kryptowerte_KVG_Verwahrstelle.html",
+        "imp": "medium"
       }
     ],
     "wpimarisk": [
@@ -4797,223 +5054,6 @@
         },
         "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2025/344",
         "imp": "high"
-      }
-    ],
-    "aifmd2": [
-      {
-        "d": "19.11.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
-          "en": "Minimum Requirements for Risk Management of Capital Management Companies (KAMaRisk)"
-        },
-        "sl": "rundschreiben-16-2026-wa",
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 16/2026 (WA) zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht. Es konkretisiert die Organisationspflichten und allgemeinen Anforderungen an das Risikomanagement gemäß KAGB, KAVerOV und der AIFM Level 2-VO. Das Rundschreiben ist prinzipienorientiert und proportional ausgestaltet, um Kapitalverwaltungsgesellschaften einen flexiblen Rahmen zu bieten.\n\nEs richtet sich an Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB und deren Auslandszweigniederlassungen. Besondere Mindestanforderungen gelten für AIF-Kapitalverwaltungsgesellschaften, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für Gesellschafterdarlehen unter bestimmten Schwellenwerten. Die MaRisk (BA) finden für diese Gesellschaften keine Anwendung, da die Anforderungen in diesem Rundschreiben abschließend geregelt sind.\n\nDie in Abschnitt 5 dargelegten Anforderungen sind nach einer Übergangsfrist von sechs Monaten nach Veröffentlichung umzusetzen. Die anderen Abschnitte gelten ab sofort. Das Rundschreiben ersetzt das frühere Rundschreiben 07/2017.",
-          "en": "BaFin has published Circular 16/2026 (WA) on the Minimum Requirements for Risk Management of Capital Management Companies (KAMaRisk). It specifies the organizational duties and general risk management requirements according to the KAGB, KAVerOV, and the AIFM Level 2 Regulation. The circular is principle-based and proportionate, aiming to provide capital management companies with a flexible framework.\n\nIt addresses capital management companies licensed under Section 17 KAGB and their foreign branches. Specific minimum requirements apply to AIF capital management companies that grant loans or invest in unsecuritized loan claims, with exceptions for shareholder loans below certain thresholds. The MaRisk (BA) do not apply to these companies, as the requirements are exhaustively regulated in this circular.\n\nThe requirements outlined in Section 5 must be implemented after a six-month transition period following publication. The other sections are effective immediately. This circular replaces the previous Circular 07/2017."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_16_2026_mindestanforderungen_an_das_risikomanagement_von_kavg.html",
-        "imp": "high",
-        "refnum": "16/2026"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB",
-          "en": "Rundschreiben 12/2026 (WA) - Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB"
-        },
-        "sl": "rundschreiben-12-2026-wa-erlaubnisverfahren-fuer-aif-kapitalverwaltungsgesellsch",
-        "s": {
-          "de": "Das Rundschreiben der BaFin präzisiert das Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVG) gemäß § 22 KAGB. Es legt detaillierte Anforderungen an die einzureichenden Unterlagen fest, insbesondere in Bezug auf Eigenmittel, Liquidität, Angaben zu Geschäftsleitern, bedeutend beteiligten Inhabern und engen Verbindungen.\n\nFür AIF-KVGs bedeutet dies eine klare Richtlinie für die Antragstellung. Das Rundschreiben behandelt unter anderem die Darstellung des Geschäftsplans, der Geschäftsorganisation, interner Kontrollverfahren, der Vergütungspolitik, Auslagerungen und Anlagestrategien. Es wird erwartet, dass die Angaben zu den Arten der zu verwaltenden AIF mit dem Unternehmensgegenstand in der Satzung übereinstimmen.\n\nDas Rundschreiben ist am 15.09.2026 in Kraft getreten. Die BaFin behält sich vor, die Erlaubnis auf bestimmte Arten von Investmentvermögen zu beschränken und empfiehlt, den Unternehmensgegenstand vorab abzustimmen.",
-          "en": "The BaFin circular specifies the licensing procedure for AIF management companies (AIFMs) in accordance with Section 22 KAGB. It sets out detailed requirements for the documents to be submitted, particularly regarding own funds, liquidity, information on managing directors, significantly involved owners, and close links.\n\nFor AIFMs, this provides clear guidelines for submitting applications. The circular addresses, among other things, the presentation of the business plan, business organization, internal control procedures, remuneration policy, outsourcing, and investment strategies. It is expected that the information on the types of AIFs to be managed aligns with the company's business objective stated in its articles of association.\n\nThe circular came into force on 15.09.2026. BaFin reserves the right to restrict the license to certain types of investment funds and recommends coordinating the company's business objective in advance."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_1226_erlaubnisverfahren_fuer_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
-        "imp": "high",
-        "refnum": "12/2026"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Rundschreiben",
-          "en": "Circular"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (§ 22 KAGB)",
-          "en": "BaFin Circular on Licensing Procedure for AIF Management Companies (Section 22 KAGB)"
-        },
-        "sl": "rundschreiben-12-2026-wa",
-        "s": {
-          "de": "Die BaFin hat ein Rundschreiben zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (AIF-KVGen) nach § 22 KAGB veröffentlicht. Es konkretisiert die Anforderungen an Inhalt und Unterlagen des Erlaubnisantrags sowie Aspekte der Erlaubniserteilung. Ziel ist es, Transparenz zu schaffen und Bearbeitungszeiten zu verkürzen.\n\nDas Rundschreiben richtet sich an Unternehmen, die einen Erlaubnisantrag als AIF-KVG stellen oder beabsichtigen. Es gilt einheitlich für interne und externe AIF-KVGen sowie für Gesellschaften, die bereits nach § 44 KAGB registriert sind. Besondere Beachtung finden die Nachweise zu Eigenmitteln, Liquidität sowie die Zuverlässigkeit und fachliche Eignung der Geschäftsleiter.\n\nDas Rundschreiben 12/2026 (WA) ist ab dem 15.09.2026 gültig und ersetzt das Merkblatt vom 24. März 2025. Merkblätter zur Eignung von Geschäftsleitern und Aufsichtsorganen bleiben unberührt.",
-          "en": "BaFin has published a circular on the licensing procedure for AIF management companies (AIFMs) under Section 22 KAGB. It specifies the requirements for the content and documents of the license application, as well as aspects of the license granting. The aim is to create transparency and shorten processing times.\n\nThe circular is addressed to companies that are applying for or intend to apply for a license as an AIFM. It applies uniformly to internal and external AIFMs, as well as to companies already registered under Section 44 KAGB. Special attention is paid to the proof of own funds, liquidity, and the reliability and professional suitability of managing directors.\n\nCircular 12/2026 (WA) is valid from 15.09.2026 and replaces the guidance notice of March 24, 2025. Guidance notices on the suitability of managing directors and supervisory bodies remain unaffected."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_12_2026_erlaubnisverfahren_f%C3%BCr_aif_kapitalverwaltungsgesellschaften_nach_22_kagb.html",
-        "imp": "high",
-        "refnum": "12/2026"
-      },
-      {
-        "d": "15.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren",
-          "en": "AIF-KVGen: Bafin schafft Transparenz bei Erlaubnisverfahren"
-        },
-        "sl": "aif-kvgen-bafin-schafft-transparenz-bei-erlaubnisverfahren",
-        "s": {
-          "de": "Die BaFin hat das Rundschreiben 12/2026 zu Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 Kapitalanlagegesetzbuch (KAGB) veröffentlicht. Es bietet detaillierte Informationen zu den erforderlichen Dokumenten und Angaben für Antragsteller.\n\nDieses Rundschreiben ersetzt das Merkblatt vom 22. März 2013 (zuletzt geändert am 24. März 2025) und zielt darauf ab, mehr Transparenz zu schaffen und die Bearbeitung von Erlaubnisanträgen zu beschleunigen. Branchenstellungnahmen wurden berücksichtigt, und Anpassungen resultieren auch aus dem Fondsrisikobegrenzungsgesetz.\n\nDas Rundschreiben ist für Kapitalverwaltungsgesellschaften relevant, die Alternative Investmentfonds (AIF) verwalten und eine Erlaubnis nach § 22 KAGB beantragen. Es soll den Antragsprozess für diese Unternehmen vereinfachen und die Anforderungen klarer definieren.",
-          "en": "The BaFin has published Circular 12/2026 on authorization procedures for AIF management companies under Section 22 of the German Investment Code (KAGB). It provides detailed information on the required documents and data for applicants.\n\nThis circular replaces the leaflet from March 22, 2013 (last amended on March 24, 2025) and aims to create more transparency and accelerate the processing of authorization applications. Industry comments were taken into account, and adjustments also result from the Fund Risk Limitation Act.\n\nThis circular is relevant for management companies that manage Alternative Investment Funds (AIFs) and apply for authorization under Section 22 KAGB. It aims to simplify the application process for these companies and to define the requirements more clearly."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_09_15_rs_erlaubnisverfahren_f%C3%BCr_aif-kapitalverwaltungsgesellschaften_nach_22_kagb.html",
-        "imp": "high"
-      },
-      {
-        "d": "21.07.2026",
-        "t": {
-          "de": "Leitlinien",
-          "en": "Guidelines"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Compliance-Tabelle zu ESMA-Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs (ESMA34-671404336-1384)",
-          "en": "Compliance Table on ESMA Guidelines on Liquidity Management Tools (LMTs) of UCITS and Open-ended AIFs (ESMA34-671404336-1384)"
-        },
-        "sl": "compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a",
-        "s": {
-          "de": "Die ESMA hat eine Compliance-Tabelle zu ihren Leitlinien für Liquiditätsmanagement-Tools (LMTs) von OGAW und offenen AIFs veröffentlicht. Diese Tabelle gibt einen Überblick darüber, inwieweit die nationalen zuständigen Behörden in den EU- und EWR-Staaten die Leitlinien anwenden oder beabsichtigen, diese anzuwenden.\n\nDie Tabelle zeigt, dass viele nationale Behörden die Leitlinien bereits anwenden oder beabsichtigen, dies bis zu einem bestimmten Datum oder nach Abschluss notwendiger legislativer oder regulatorischer Verfahren zu tun. Für Finanzinstitute bedeutet dies, dass sie sich auf eine zunehmend harmonisierte Anwendung der LMT-Leitlinien in Europa einstellen müssen, was die Anforderungen an das Liquiditätsmanagement von OGAW und offenen AIFs betrifft.\n\nEinige Länder wie Belgien, Bulgarien, Tschechien, Estland, Frankreich, Ungarn, Italien, Lettland, Polen, Portugal, Slowenien, Island und Norwegen haben angegeben, dass sie beabsichtigen, die Leitlinien zu einem späteren Zeitpunkt oder nach Abschluss nationaler Gesetzgebungsverfahren umzusetzen. Die Fristen für die Umsetzung variieren, beispielsweise der 31.08.2026 für Bulgarien und der 31.12.2026 für Italien und Lettland.",
-          "en": "ESMA has published a compliance table regarding its Guidelines on Liquidity Management Tools (LMTs) for UCITS and open-ended AIFs. This table provides an overview of the extent to which national competent authorities in EU and EEA states apply or intend to apply these guidelines.\n\nThe table indicates that many national authorities already apply the guidelines or intend to do so by a specific date or after completing necessary legislative or regulatory proceedings. For financial institutions, this means they should prepare for an increasingly harmonized application of LMT guidelines across Europe, affecting the requirements for liquidity management of UCITS and open-ended AIFs.\n\nSome countries, such as Belgium, Bulgaria, Czech Republic, Estonia, France, Hungary, Italy, Latvia, Poland, Portugal, Slovenia, Iceland, and Norway, have stated their intention to implement the guidelines at a later date or after the completion of national legislative processes. Implementation deadlines vary, for example, August 31, 2026, for Bulgaria, and December 31, 2026, for Italy and Latvia."
-        },
-        "url": "https://www.esma.europa.eu/document/compliance-table-guidelines-liquidity-management-tools-lmts-ucits-and-open-ended-aifs",
-        "imp": "low",
-        "refnum": "ESMA34-671404336-1384"
-      },
-      {
-        "d": "16.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Konsultation: Änderungen im KAGB durch das Fondsrisikobegrenzungsgesetz (07/2026)",
-          "en": "BaFin Consultation: KAGB Amendments by Fund Risk Limitation Act (07/2026)"
-        },
-        "sl": "konsultation-07-2026-rundschreiben-zu-aenderungen-im-kapitalanlagegesetzbuch-dur",
-        "s": {
-          "de": "Die BaFin konsultiert ein Rundschreiben mit Hinweisen zu den Änderungen des Kapitalanlagegesetzbuchs (KAGB) durch das Fondsrisikobegrenzungsgesetz (FRiG). Das FRiG, das am 16. April 2026 in Kraft trat, führte umfangreiche Neuerungen ein, insbesondere die verpflichtende Einführung von Liquiditätsmanagement-Tools (LMTs) für offene Fonds.\n\nDas Rundschreiben erläutert die Implementierung von mindestens zwei LMTs in das Liquiditätsmanagementsystem offener Investmentvermögen und geht auf allgemeine Anforderungen sowie Besonderheiten einzelner LMTs ein. Zudem behandelt es Änderungen im Erlaubnisverfahren, wie zusätzliche Angaben zu Geschäftsleitern und den Wegfall der Konnexität zwischen Finanzportfolioverwaltung und Anlageberatung/-vermittlung als Nebendienstleistungen. Auch die Kreditvergabe durch Investmentvermögen wird thematisiert. Fachbeiträge weisen auf die Auswirkungen auf Immobilien-Sondervermögen hin.\n\nStellungnahmen zum Entwurf können bis zum 6. Juli 2026 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
-          "en": "BaFin is consulting on a circular providing guidance on the amendments to the German Capital Investment Code (KAGB) introduced by the Fund Risk Limitation Act (FRiG). The FRiG, which entered into force on April 16, 2026, brought about extensive changes, particularly the mandatory introduction of liquidity management tools (LMTs) for open-ended funds.\n\nThe circular explains the implementation of at least two LMTs in the liquidity management system of open-ended investment funds, addressing general requirements and specific features of individual LMTs. It also covers changes to the licensing procedure, such as additional information required for managing directors and the elimination of the nexus between financial portfolio management and investment advice/brokerage as ancillary services. Lending by investment funds is also addressed. Expert contributions highlight the implications for real estate special funds.\n\nComments on the draft can be submitted to BaFin until July 6, 2026. BaFin intends to publish the submitted comments online."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2026/kon_07_2026_rs_kagb_aenderungen.html",
-        "imp": "medium",
-        "deadline": "06.07.2026",
-        "refnum": "Konsultation 07/2026",
-        "adv": [
-          {
-            "f": "Waldeck Rechtsanwälte",
-            "ti": "Auswirkungen des Fondsrisikobegrenzungsgesetzes auf Immobilien-Sondervermögen",
-            "url": "https://www.waldvorlauternormen.com/auswirkungen-des-fondsrisikobegrenzungsgesetzes-auf-immobilien-sondervermogen/",
-            "d": "18.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "12.06.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zu den Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)",
-          "en": "Consultation on Minimum Requirements for Risk Management of Management Companies (KAMaRisk)"
-        },
-        "sl": "konsultation-06-2026-kamarisk-aenderungsuebersicht-konsultationsfassung",
-        "s": {
-          "de": "Die BaFin hat eine Konsultation zu den beabsichtigten Änderungen des Rundschreibens \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\" veröffentlicht. Das Rundschreiben richtet sich an alle Kapitalverwaltungsgesellschaften mit Erlaubnis nach § 17 KAGB sowie an registrierungspflichtige AIF-Kapitalverwaltungsgesellschaften nach § 2 Absatz 4 und 5 KAGB, insbesondere im Hinblick auf die Vergabe von Gelddarlehen und die damit verbundenen Dokumentationspflichten.\n\nDie Anforderungen des Rundschreibens beziehen sich auf das Management wesentlicher Risiken für Investmentvermögen und Gesellschaften, wobei mindestens Adressenausfall-, Marktpreis-, Liquiditäts- und operationelle Risiken (einschließlich Rechts-, Reputations- und IKT-Risiken) als wesentlich einzustufen sind. Neu ist die explizite Berücksichtigung von ESG-Risiken als Risikotreiber bei der Beurteilung der Wesentlichkeit und der Ausgestaltung des internen Kontrollsystems. Zudem werden besondere Mindestanforderungen für AIF festgelegt, die Kredite vergeben oder in unverbriefte Darlehensforderungen investieren, mit Ausnahmen für bestimmte Gesellschafterdarlehen.\n\nStellungnahmen zu den Änderungen können bis zum 1. Juli 2026 bei der BaFin eingereicht werden. Die Konsultation ist für Kapitalverwaltungsgesellschaften relevant, da sie die Anforderungen an ihr Risikomanagement aktualisiert und präzisiert, insbesondere im Bereich der Kreditvergabe und der Berücksichtigung von ESG-Risiken.",
-          "en": "BaFin has published a consultation on the proposed amendments to the circular \"Minimum Requirements for Risk Management of Management Companies (KAMaRisk)\". The circular addresses all management companies with a license under Section 17 KAGB, as well as AIF management companies subject to registration under Section 2 (4) and (5) KAGB, particularly regarding the granting of loans and associated documentation obligations.\n\nThe circular's requirements pertain to the management of material risks for investment funds and companies, with at least credit, market, liquidity, and operational risks (including legal, reputational, and ICT risks) to be classified as material. A new aspect is the explicit consideration of ESG risks as risk drivers in assessing materiality and designing the internal control system. Furthermore, specific minimum requirements are established for AIFs that grant loans or invest in uncertificated loan receivables, with exceptions for certain shareholder loans.\n\nComments on the amendments can be submitted to BaFin until July 1, 2026. The consultation is relevant for management companies as it updates and clarifies the requirements for their risk management, especially in the area of lending and the consideration of ESG risks."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Konsultation/2026/dl_kon_06_2026_kamarisk_aenderungen.html",
-        "imp": "medium",
-        "deadline": "01.07.2026",
-        "refnum": "Konsultation 06/2026",
-        "adv": [
-          {
-            "f": "KPMG",
-            "ti": "BaFin startet Konsultation zu aktualisiertem Rundschreiben \"Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk)\"",
-            "url": "https://klardenker.kpmg.de/financialservices-hub/regulatory-update/bafin-startet-konsultation-zu-aktualisiertem-rundschreiben-mindestanforderungen-an-das-risikomanagement-von-kapitalverwaltungsgesellschaften-kamarisk-2/",
-            "d": "23.06.2026"
-          }
-        ]
-      },
-      {
-        "d": "14.04.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Fondsrisikobegrenzungsgesetz zur Umsetzung von EU-Richtlinien (BGBl. 2026 I Nr. 97)",
-          "en": "Investment Fund Risk Limitation Act for the Implementation of EU Directives (BGBl. 2026 I Nr. 97)"
-        },
-        "sl": "gesetz-zur-begrenzung-der-risiken-durch-investmentfonds-und-zur-umsetzung-der-ri",
-        "s": {
-          "de": "Das Fondsrisikobegrenzungsgesetz setzt die Richtlinien (EU) 2024/927 und (EU) 2024/2994 in nationales Recht um. Es zielt darauf ab, Risiken durch Investmentfonds zu begrenzen und umfasst Regelungen zu Übertragungsvereinbarungen, Liquiditätsrisikomanagement und aufsichtlicher Berichterstattung.\n\nDie Regelungen betreffen insbesondere alternative Investmentfonds hinsichtlich der Erbringung von Verwahr- und Hinterlegungsdienstleistungen sowie der Kreditvergabe. Zudem werden Vorschriften zum Umgang mit Konzentrationsrisiken aus Risikopositionen gegenüber zentralen Gegenparteien und Ausfallrisiken bei zentral geclearten Derivategeschäften geändert.\n\nDas Gesetz wurde am 09.04.2026 ausgefertigt und am 14.04.2026 im Bundesgesetzblatt veröffentlicht.",
-          "en": "The Investment Fund Risk Limitation Act transposes Directives (EU) 2024/927 and (EU) 2024/2994 into national law. It aims to limit risks posed by investment funds and includes provisions on transfer agreements, liquidity risk management, and supervisory reporting.\n\nThe regulations primarily affect alternative investment funds concerning the provision of custody and depositary services and lending activities. Furthermore, provisions on managing concentration risks arising from exposures to central counterparties and default risks in centrally cleared derivative transactions are amended.\n\nThe Act was enacted on 09.04.2026 and published in the Federal Law Gazette on 14.04.2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/97",
-        "imp": "high"
-      },
-      {
-        "d": "09.09.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Konsultation zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften (Konsultation 17/2025)",
-          "en": "Consultation on the Licensing Procedure for AIF Management Companies (Consultation 17/2025)"
-        },
-        "sl": "konsultation-17-2025-aenderungen-und-konkretisierungen-des-merkblattes-zum-erlau",
-        "s": {
-          "de": "Die BaFin konsultiert Änderungen und Konkretisierungen ihres Merkblattes zum Erlaubnisverfahren für AIF-Kapitalverwaltungsgesellschaften nach § 22 KAGB. Ziel ist es, die Erlaubnisverfahren zu erleichtern und zu beschleunigen. Die Überarbeitung betrifft unter anderem Nachweise der erforderlichen Mittel, Angaben zur fachlichen Eignung der Geschäftsleiter, den Geschäftsplan sowie Anlagebedingungen und Satzungen der zu verwaltenden AIF.\n\nDie Änderungen sind relevant für alle Unternehmen, die eine Erlaubnis als AIF-Kapitalverwaltungsgesellschaft beantragen oder bereits eine solche Erlaubnis besitzen. Insbesondere die Konkretisierungen zur Beurteilung der fachlichen Eignung der Geschäftsleiter sind von praktischer Bedeutung, da sie nach Abschluss der Konsultation auch in das „Merkblatt zur Eignung von Geschäftsleitern nach dem KAGB“ übernommen werden. Fachbeiträge von Verbänden und Kanzleien zeigen das breite Interesse an den Anpassungen.\n\nStellungnahmen zum Entwurf können bis zum 30. September 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
-          "en": "BaFin is consulting on amendments and clarifications to its guidance notice on the licensing procedure for AIF management companies under Section 22 KAGB. The aim is to facilitate and accelerate the licensing procedures. The revision affects, among other things, evidence of the required funds, information on the professional suitability of managing directors, the business plan, and the investment conditions and articles of association of the AIFs to be managed.\n\nThese changes are relevant for all companies applying for or already holding a license as an AIF management company. The clarifications regarding the professional suitability of managing directors are of particular practical importance, as they will also be incorporated into the “Guidance Notice on the Suitability of Managing Directors under the KAGB” after the consultation. Contributions from associations and law firms highlight the broad interest in these adjustments.\n\nComments on the draft can be submitted to BaFin until September 30, 2025. BaFin intends to publish the submitted comments online."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_17_2025_Aenderungen_Konkretisierungen_Merkblatt_Erlaubnisverfahren_fuer_eine_AIF_Kapitalverwaltungsgesellschaft.html",
-        "imp": "medium",
-        "refnum": "Konsultation 17/2025"
-      },
-      {
-        "d": "25.02.2025",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "BaFin-Konsultation zu Pflichten bei Krypto-Investmentvermögen (06/25)",
-          "en": "BaFin Consultation on Obligations for Crypto Investment Funds (06/25)"
-        },
-        "sl": "konsultation-06-25-entwurf-eines-rundschreibens-2025-zu-den-pflichten-von-verwah",
-        "s": {
-          "de": "Die BaFin hat einen Entwurf für ein Rundschreiben zur Konsultation gestellt, das die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften (KAGs) bei Investmentvermögen regelt, die in Kryptowerte investieren.\n\nSeit Inkrafttreten des Zukunftsfinanzierungsgesetzes können neben Spezial-AIF auch inländische Publikums-AIF und geschlossene Publikums-AIF direkt in Kryptowerte investieren. Das Rundschreiben soll Mindestanforderungen für Verwahrstellen und KAGs festlegen, um den technischen und regulatorischen Herausforderungen dieser neuen Anlageklasse zu begegnen.\n\nStellungnahmen zum Entwurf können bis zum 31. März 2025 bei der BaFin eingereicht werden. Die BaFin beabsichtigt, die eingereichten Stellungnahmen im Internet zu veröffentlichen.",
-          "en": "The BaFin has published a draft circular for consultation, which regulates the obligations of depositaries and capital management companies (KAGs) for investment funds investing in crypto assets.\n\nSince the Future Financing Act came into force, in addition to special AIFs, domestic public AIFs and closed public AIFs can also invest directly in crypto assets. The circular aims to establish minimum requirements for depositaries and KAGs to address the technical and regulatory challenges of this new asset class.\n\nComments on the draft can be submitted to BaFin until March 31, 2025. BaFin intends to publish the submitted comments online."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_06_2025_konsultation_kryptowerte_KVG_Verwahrstelle.html",
-        "imp": "medium"
       }
     ],
     "macomp": [

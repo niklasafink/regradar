@@ -201,6 +201,30 @@
    "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-26": {
+   "window": [
+    "2026-11-25"
+   ],
+   "keys": [
+    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for",
+    "rundschreiben-17-2026-wa"
+   ],
+   "hook": "BaFin präzisiert die Anwendung neuer Liquiditätsmanagementinstrumente für offene Investmentvermögen.",
+   "folge": "Kapitalverwaltungsgesellschaften müssen mindestens zwei LMTs implementieren und Anleger über deren Aktivierung informieren. Dies betrifft die Auslegung des Fondsrisikobegrenzungsgesetzes im KAGB.",
+   "cover": "BaFin: LMTs für offene Investmentvermögen verpflichtend",
+   "zeilen": [
+    "AMLA: Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen bis 25.02.2027"
+   ],
+   "frage": "Welche Liquiditätsmanagementinstrumente haben Sie bereits implementiert oder planen Sie einzuführen?",
+   "top": "rundschreiben-17-2026-wa",
+   "kern": {
+    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien zur Bestimmung des Mindestbasisbetrags für Geldsanktionen bei AML/CFT-Verstößen, um die Durchsetzung zu vereinheitlichen.",
+    "rundschreiben-17-2026-wa": "Die BaFin präzisiert mit sofortiger Wirkung, dass Kapitalverwaltungsgesellschaften mindestens zwei Liquiditätsmanagementinstrumente in offenen Investmentvermögen implementieren müssen."
+   },
+   "doppelt": [],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
   }
  }
 }
