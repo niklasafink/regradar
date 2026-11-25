@@ -208,19 +208,22 @@
    ],
    "keys": [
     "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for",
-    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben"
+    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
+    "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich"
    ],
-   "hook": "BaFin konkretisiert neue KAGB-Regeln: Liquiditätsmanagement-Tools werden für KVGen Pflicht.",
-   "folge": "Das neue BaFin-Rundschreiben legt die Änderungen des KAGB durch das Fondsrisikobegrenzungsgesetz aus. Kapitalverwaltungsgesellschaften müssen Liquiditätsmanagement-Tools zur Vorbeugung systemischer Risiken einsetzen und erweiterte Angaben zu Geschäftsleitern machen.",
-   "cover": "BaFin: Neue KAGB-Regeln für KVGen konkretisiert",
+   "hook": "BaFin konkretisiert das Fondsrisikobegrenzungsgesetz: Neue Pflichten für Kapitalverwaltungsgesellschaften.",
+   "folge": "Das neue BaFin-Rundschreiben legt die geänderten KAGB-Regeln des FRiG aus. KVGen müssen Liquiditätsmanagement-Tools einsetzen und erweiterte Angaben zu Geschäftsleitern machen. Auch für AIF gelten neue Kreditvergabestandards.",
+   "cover": "BaFin: Neue KAGB-Regeln für KVGen durch FRiG",
    "zeilen": [
+    "Bundesgesetzblatt: Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung am 25.11.2026 veröffentlicht",
     "AMLA: Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen bis 25.02.2027"
    ],
-   "frage": "Welche Liquiditätsmanagement-Tools nutzen Sie bereits oder planen Sie einzuführen?",
+   "frage": "Welche Liquiditätsmanagement-Tools setzen Sie bereits ein, um systemische Risiken zu mindern?",
    "top": "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
    "kern": {
-    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien zur Bestimmung des Mindestbasisbetrags für Geldsanktionen bei AML/CFT-Verstößen für Aufsichtsbehörden im Finanz- und Nichtfinanzsektor.",
-    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": "Die BaFin konkretisiert im Rundschreiben „17/2026“ die durch das Fondsrisikobegrenzungsgesetz geänderten KAGB-Regeln für Kapitalverwaltungsgesellschaften, insbesondere zu Liquiditätsmanagement-Tools."
+    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien zur Bestimmung des Mindestbasisbetrags für Geldsanktionen bei AML/CFT-Verstößen für Aufsichtsbehörden.",
+    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": "Die BaFin konkretisiert im Rundschreiben 17/2026 die neuen KAGB-Regelungen des Fondsrisikobegrenzungsgesetzes für Kapitalverwaltungsgesellschaften.",
+    "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich": "Das Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung schafft nationale Rahmenbedingungen für Cybersicherheitsanforderungen an Produkte mit digitalen Elementen."
    },
    "doppelt": [],
    "fmt": 5,

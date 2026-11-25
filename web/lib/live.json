@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T15:13:15Z",
+  "generated_at": "2026-11-25T16:10:39Z",
   "updates": {
     "amla": [
       {
@@ -1130,6 +1130,79 @@
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2025/kon_06_2025_konsultation_kryptowerte_KVG_Verwahrstelle.html",
         "imp": "medium"
+      }
+    ],
+    "cra": [
+      {
+        "d": "25.11.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung (2024/2847)",
+          "en": "Law on the Implementation of the EU Cyber Resilience Regulation (2024/2847)"
+        },
+        "sl": "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich",
+        "s": {
+          "de": "Dieses Gesetz dient der nationalen Durchführung der EU-Verordnung 2024/2847, der sogenannten Cyberresilienz-Verordnung (CRA). Es schafft die notwendigen rechtlichen Rahmenbedingungen in Deutschland, um die Vorgaben der EU-Verordnung in nationales Recht zu überführen und deren Anwendung zu gewährleisten.\n\nDie Cyberresilienz-Verordnung legt horizontale Cybersicherheitsanforderungen für Produkte mit digitalen Elementen fest. Das Gesetz ist relevant für Hersteller, Importeure und Händler solcher Produkte, da es die Einhaltung von Sicherheitsstandards und Meldepflichten bei Sicherheitsvorfällen vorschreibt. Es betrifft somit eine breite Palette von Unternehmen, die digitale Produkte auf den Markt bringen oder vertreiben.\n\nDas Gesetz wurde am 20. November 2026 ausgefertigt und am 25. November 2026 im Bundesgesetzblatt veröffentlicht.",
+          "en": "This law serves to implement EU Regulation 2024/2847, known as the Cyber Resilience Act (CRA), at the national level. It establishes the necessary legal framework in Germany to transpose the requirements of the EU Regulation into national law and ensure its application.\n\nThe Cyber Resilience Act sets out horizontal cybersecurity requirements for products with digital elements. This law is relevant for manufacturers, importers, and distributors of such products, as it mandates compliance with security standards and reporting obligations for security incidents. It thus affects a wide range of companies that place or distribute digital products on the market.\n\nThe law was enacted on November 20, 2026, and published in the Federal Law Gazette on November 25, 2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/355",
+        "imp": "high"
+      },
+      {
+        "d": "16.10.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bsi.bund.de",
+        "ti": {
+          "de": "CRA-Durchführungsgesetz verabschiedet: BSI wird zentrale Behörde für Cybersicherheit",
+          "en": "CRA Implementing Act Adopted: BSI Becomes Central Cybersecurity Authority"
+        },
+        "sl": "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet",
+        "s": {
+          "de": "Der Deutsche Bundestag hat das Durchführungsgesetz zum Cyber Resilience Act (CRA) verabschiedet. Dieses Gesetz erweitert das bekannte CE-Kennzeichen ab Dezember 2027 um Cybersicherheitsaspekte für Produkte mit digitalen Elementen. Ziel ist es, europaweit verbindliche Cybersicherheitsanforderungen für solche Produkte zu schaffen, von der Entwicklung bis zum gesamten Lebenszyklus.\n\nDas Bundesamt für Sicherheit in der Informationstechnik (BSI) wird als zuständige Behörde benannt und erhält neue Aufgaben. Es wird zur marktüberwachenden Behörde, die IT-Produkte auf Cybersicherheit überprüft, Nachbesserungen einfordert und bei Verstößen Sanktionen verhängen oder Produkte vom Markt nehmen kann. Zudem agiert das BSI als notifizierende Behörde für Konformitätsbewertungsstellen, als CSIRT für CRA-Meldungen und als Beschwerdestelle für Verbraucher.\n\nDas BSI unterstützt betroffene Wirtschaftsakteure, insbesondere kleine und mittlere Unternehmen, bei der Erfüllung der CRA-Anforderungen. Die Verordnung soll den Schutz von Bürgern, Unternehmen und digitalen Infrastrukturen im EU-Binnenmarkt stärken.",
+          "en": "The German Bundestag has passed the implementing act for the Cyber Resilience Act (CRA). This law will extend the well-known CE mark to include cybersecurity aspects for products with digital elements starting in December 2027. The goal is to establish mandatory cybersecurity requirements for such products across Europe, from development throughout their entire lifecycle.\n\nThe Federal Office for Information Security (BSI) is designated as the competent authority and will be assigned new tasks. It will act as the market surveillance authority, inspecting IT products for cybersecurity, demanding improvements, and imposing sanctions or removing products from the market in case of violations. Furthermore, the BSI will serve as the notifying authority for conformity assessment bodies, as the CSIRT for CRA notifications, and as a complaint body for consumers.\n\nThe BSI will support affected economic operators, especially small and medium-sized enterprises, in fulfilling the CRA requirements. The regulation aims to substantially strengthen the protection of citizens, businesses, and digital infrastructures within the EU internal market."
+        },
+        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/261020_CRA-Durchf%C3%BChrungsgesetz.html",
+        "imp": "high"
+      },
+      {
+        "d": "11.09.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "bsi.bund.de",
+        "ti": {
+          "de": "Cyber Resilience Act: Meldepflicht für Hersteller startet",
+          "en": "Cyber Resilience Act: Reporting Obligation for Manufacturers Starts"
+        },
+        "sl": "cyber-resilience-act-meldepflicht-startet",
+        "s": {
+          "de": "Ab dem 11. September 2026 treten für Hersteller von Produkten mit digitalen Elementen auf dem EU-Binnenmarkt die Meldepflichten des Cyber Resilience Act (CRA) in Kraft. Sie müssen aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle, die ihre Produkte betreffen, melden. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) bietet hierzu Schritt-für-Schritt-Anleitungen an.\n\nDie Meldungen erfolgen EU-weit einheitlich über die von der ENISA bereitgestellte Single Reporting Platform (CRA-SRP). Empfänger sind das zuständige koordinierende Computer Security Incident Response Team (CSIRT) des jeweiligen EU-Mitgliedstaates und die ENISA. In Deutschland ist das CERT-Bund im BSI das koordinierende CSIRT. Die Zuständigkeit des CSIRT richtet sich nach dem Mitgliedstaat, in dem die wesentlichen Entscheidungen zur Cybersicherheit der Produkte getroffen werden, oder, falls keine Hauptniederlassung in der EU besteht, nach den Kriterien des CRA Artikel 14 Absatz 7.\n\nDie CRA-SRP ermöglicht eine zentrale, benutzerfreundliche und vertrauliche Meldung, die gleichzeitig die CSIRTs der relevanten Mitgliedstaaten erreicht. Eine vorherige Registrierung ist nicht erforderlich. Das BSI und die ENISA stellen weitere Informationen zur Nutzung der Plattform bereit.",
+          "en": "As of September 11, 2026, manufacturers of products with digital elements on the EU internal market will be subject to the reporting obligations of the Cyber Resilience Act (CRA). They must report actively exploited vulnerabilities and serious security incidents affecting their products. The German Federal Office for Information Security (BSI) provides step-by-step instructions for this.\n\nReports are submitted uniformly across the EU via the Single Reporting Platform (CRA-SRP) provided by ENISA. Recipients are the responsible coordinating Computer Security Incident Response Team (CSIRT) of the respective EU member state and ENISA. In Germany, CERT-Bund within the BSI is the coordinating CSIRT. The CSIRT's jurisdiction is determined by the member state where key decisions on product cybersecurity are made, or, if there is no main establishment in the EU, by the criteria set out in CRA Article 14(7).\n\nThe CRA-SRP enables central, user-friendly, and confidential reporting, simultaneously reaching the CSIRTs of the relevant member states. Prior registration is not required. The BSI and ENISA provide further information on how to use the platform."
+        },
+        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260911_CRA_Meldepflicht_Schwachstellen.html",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "PwC",
+            "ti": "Sector Shorts: CRA-Meldepflichten - Warum Hersteller jetzt handeln sollten",
+            "url": "https://blogs.pwc.de/de/steuern-und-recht/article/256793/sector-shorts-cra-meldepflichten-warum-hersteller-jetzt-handeln-sollten/",
+            "d": "11.09.2026"
+          },
+          {
+            "f": "Deloitte Legal",
+            "ti": "Meldepflichten nach dem Cyber Resilience Act: Was Unternehmen jetzt wissen müssen",
+            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/meldepflichten-cyber-resilience-act.html",
+            "d": "10.09.2026"
+          }
+        ]
       }
     ],
     "wpimarisk": [
@@ -6635,60 +6708,6 @@
         },
         "url": "https://www.esma.europa.eu/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines",
         "imp": "high"
-      }
-    ],
-    "cra": [
-      {
-        "d": "16.10.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bsi.bund.de",
-        "ti": {
-          "de": "CRA-Durchführungsgesetz verabschiedet: BSI wird zentrale Behörde für Cybersicherheit",
-          "en": "CRA Implementing Act Adopted: BSI Becomes Central Cybersecurity Authority"
-        },
-        "sl": "bundestag-staerkt-cybersicherheit-cra-durchfuehrungsgesetz-verabschiedet",
-        "s": {
-          "de": "Der Deutsche Bundestag hat das Durchführungsgesetz zum Cyber Resilience Act (CRA) verabschiedet. Dieses Gesetz erweitert das bekannte CE-Kennzeichen ab Dezember 2027 um Cybersicherheitsaspekte für Produkte mit digitalen Elementen. Ziel ist es, europaweit verbindliche Cybersicherheitsanforderungen für solche Produkte zu schaffen, von der Entwicklung bis zum gesamten Lebenszyklus.\n\nDas Bundesamt für Sicherheit in der Informationstechnik (BSI) wird als zuständige Behörde benannt und erhält neue Aufgaben. Es wird zur marktüberwachenden Behörde, die IT-Produkte auf Cybersicherheit überprüft, Nachbesserungen einfordert und bei Verstößen Sanktionen verhängen oder Produkte vom Markt nehmen kann. Zudem agiert das BSI als notifizierende Behörde für Konformitätsbewertungsstellen, als CSIRT für CRA-Meldungen und als Beschwerdestelle für Verbraucher.\n\nDas BSI unterstützt betroffene Wirtschaftsakteure, insbesondere kleine und mittlere Unternehmen, bei der Erfüllung der CRA-Anforderungen. Die Verordnung soll den Schutz von Bürgern, Unternehmen und digitalen Infrastrukturen im EU-Binnenmarkt stärken.",
-          "en": "The German Bundestag has passed the implementing act for the Cyber Resilience Act (CRA). This law will extend the well-known CE mark to include cybersecurity aspects for products with digital elements starting in December 2027. The goal is to establish mandatory cybersecurity requirements for such products across Europe, from development throughout their entire lifecycle.\n\nThe Federal Office for Information Security (BSI) is designated as the competent authority and will be assigned new tasks. It will act as the market surveillance authority, inspecting IT products for cybersecurity, demanding improvements, and imposing sanctions or removing products from the market in case of violations. Furthermore, the BSI will serve as the notifying authority for conformity assessment bodies, as the CSIRT for CRA notifications, and as a complaint body for consumers.\n\nThe BSI will support affected economic operators, especially small and medium-sized enterprises, in fulfilling the CRA requirements. The regulation aims to substantially strengthen the protection of citizens, businesses, and digital infrastructures within the EU internal market."
-        },
-        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/261020_CRA-Durchf%C3%BChrungsgesetz.html",
-        "imp": "high"
-      },
-      {
-        "d": "11.09.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "bsi.bund.de",
-        "ti": {
-          "de": "Cyber Resilience Act: Meldepflicht für Hersteller startet",
-          "en": "Cyber Resilience Act: Reporting Obligation for Manufacturers Starts"
-        },
-        "sl": "cyber-resilience-act-meldepflicht-startet",
-        "s": {
-          "de": "Ab dem 11. September 2026 treten für Hersteller von Produkten mit digitalen Elementen auf dem EU-Binnenmarkt die Meldepflichten des Cyber Resilience Act (CRA) in Kraft. Sie müssen aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle, die ihre Produkte betreffen, melden. Das Bundesamt für Sicherheit in der Informationstechnik (BSI) bietet hierzu Schritt-für-Schritt-Anleitungen an.\n\nDie Meldungen erfolgen EU-weit einheitlich über die von der ENISA bereitgestellte Single Reporting Platform (CRA-SRP). Empfänger sind das zuständige koordinierende Computer Security Incident Response Team (CSIRT) des jeweiligen EU-Mitgliedstaates und die ENISA. In Deutschland ist das CERT-Bund im BSI das koordinierende CSIRT. Die Zuständigkeit des CSIRT richtet sich nach dem Mitgliedstaat, in dem die wesentlichen Entscheidungen zur Cybersicherheit der Produkte getroffen werden, oder, falls keine Hauptniederlassung in der EU besteht, nach den Kriterien des CRA Artikel 14 Absatz 7.\n\nDie CRA-SRP ermöglicht eine zentrale, benutzerfreundliche und vertrauliche Meldung, die gleichzeitig die CSIRTs der relevanten Mitgliedstaaten erreicht. Eine vorherige Registrierung ist nicht erforderlich. Das BSI und die ENISA stellen weitere Informationen zur Nutzung der Plattform bereit.",
-          "en": "As of September 11, 2026, manufacturers of products with digital elements on the EU internal market will be subject to the reporting obligations of the Cyber Resilience Act (CRA). They must report actively exploited vulnerabilities and serious security incidents affecting their products. The German Federal Office for Information Security (BSI) provides step-by-step instructions for this.\n\nReports are submitted uniformly across the EU via the Single Reporting Platform (CRA-SRP) provided by ENISA. Recipients are the responsible coordinating Computer Security Incident Response Team (CSIRT) of the respective EU member state and ENISA. In Germany, CERT-Bund within the BSI is the coordinating CSIRT. The CSIRT's jurisdiction is determined by the member state where key decisions on product cybersecurity are made, or, if there is no main establishment in the EU, by the criteria set out in CRA Article 14(7).\n\nThe CRA-SRP enables central, user-friendly, and confidential reporting, simultaneously reaching the CSIRTs of the relevant member states. Prior registration is not required. The BSI and ENISA provide further information on how to use the platform."
-        },
-        "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Pressemitteilungen/Presse2026/260911_CRA_Meldepflicht_Schwachstellen.html",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "PwC",
-            "ti": "Sector Shorts: CRA-Meldepflichten - Warum Hersteller jetzt handeln sollten",
-            "url": "https://blogs.pwc.de/de/steuern-und-recht/article/256793/sector-shorts-cra-meldepflichten-warum-hersteller-jetzt-handeln-sollten/",
-            "d": "11.09.2026"
-          },
-          {
-            "f": "Deloitte Legal",
-            "ti": "Meldepflichten nach dem Cyber Resilience Act: Was Unternehmen jetzt wissen müssen",
-            "url": "https://www.deloitte.com/dl/de/services/legal/perspectives/meldepflichten-cyber-resilience-act.html",
-            "d": "10.09.2026"
-          }
-        ]
       }
     ],
     "psd3": [
