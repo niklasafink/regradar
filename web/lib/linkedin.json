@@ -207,7 +207,6 @@
     "2026-11-25"
    ],
    "keys": [
-    "ai-act-scientific-panel-holds-second-regular-meeting",
     "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for",
     "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
     "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich",
@@ -215,22 +214,21 @@
     "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour"
    ],
    "hook": "Das Fondsrisikobegrenzungsgesetz bringt neue Pflichten für Kapitalverwaltungsgesellschaften mit sich.",
-   "folge": "Kapitalverwaltungsgesellschaften müssen Liquiditätsmanagement-Tools zur Vorbeugung systemischer Risiken einsetzen. Zudem gibt es erweiterte Angaben zu Geschäftsleitern in Erlaubnisanträgen und Änderungen bei zulässigen Dienstleistungen.",
-   "cover": "BaFin: Neue Regeln für KVGen durch Fondsrisikobegrenzungsgesetz",
+   "folge": "Die BaFin konkretisiert die Anwendung von Liquiditätsmanagement-Tools und erweiterte Angaben zu Geschäftsleitern. Kapitalverwaltungsgesellschaften müssen ihre Prozesse anpassen, um systemische Risiken zu vermeiden und neue EU-Standards bei der Kreditvergabe einzuhalten.",
+   "cover": "BaFin: Neue Pflichten für KVGen durch Fondsrisikobegrenzungsgesetz",
    "zeilen": [
     "Bundesgesetzblatt: Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung am 25.11.2026 veröffentlicht",
     "AMLA: Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen bis 25.02.2027",
-    "Luxemburg: Gesetzentwurf zur Schaffung der ALBA-Behörde und Umsetzung der EU-Richtlinie 2024/1640"
+    "Luxemburg: Gesetzentwürfe zur Schaffung und Finanzierung der ALBA-Behörde am 25.11.2026 eingebracht"
    ],
    "frage": "Welche Liquiditätsmanagement-Tools setzen Sie bereits ein, um systemische Risiken zu begrenzen?",
    "top": "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
    "kern": {
-    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien zur Bestimmung des Mindestbasisbetrags für Geldsanktionen bei AML/CFT-Verstößen, um die Durchsetzung zu harmonisieren.",
-    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": "Die BaFin konkretisiert im Rundschreiben „17/2026“ neue KAGB-Regelungen durch das Fondsrisikobegrenzungsgesetz für Kapitalverwaltungsgesellschaften, insbesondere zu Liquiditätsmanagement-Tools und Erlaubnisanträgen.",
-    "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich": "Das Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung (CRA) wurde am 25.11.2026 im Bundesgesetzblatt veröffentlicht und schafft nationale Rahmenbedingungen für Cybersicherheitsanforderungen an Produkte mit digitalen Elementen.",
-    "ai-act-scientific-panel-holds-second-regular-meeting": "Das wissenschaftliche Gremium zum AI Act hat seine zweite Sitzung abgehalten, um das KI-Büro bei der Durchsetzung der Regeln für allgemeine KI, insbesondere bei systemischen Risiken, zu unterstützen.",
-    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour": "Das luxemburgische Finanzministerium hat einen Gesetzesentwurf zur jährlichen Finanzierung der Anti-Geldwäsche- und Terrorismusfinanzierungsbehörde (ALBA) im Parlament eingebracht.",
-    "projet-de-loi-portant-creation-de-l-autorite-luxembourgeoise-de-lutte-contre-le": "Ein luxemburgischer Gesetzentwurf sieht die Schaffung der ALBA-Behörde und die teilweise Umsetzung der EU-Richtlinie 2024/1640 zur Bekämpfung von Geldwäsche und Terrorismusfinanzierung vor."
+    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien, die einen gemeinsamen Ansatz für die Festlegung des Mindestbasisbetrags von Geldsanktionen bei AML/CFT-Verstößen etablieren sollen.",
+    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": "Die BaFin hat ein Rundschreiben veröffentlicht, das die neuen Regelungen des Kapitalanlagegesetzbuchs durch das Fondsrisikobegrenzungsgesetz für Kapitalverwaltungsgesellschaften konkretisiert.",
+    "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich": "Das Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung wurde am 25.11.2026 im Bundesgesetzblatt veröffentlicht und schafft nationale Rahmenbedingungen für Produkte mit digitalen Elementen.",
+    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour": "Ein luxemburgischer Gesetzesentwurf zur jährlichen Finanzierung der Anti-Geldwäsche- und Terrorismusfinanzierungsbehörde (ALBA) wurde am 25.11.2026 im Parlament eingebracht.",
+    "projet-de-loi-portant-creation-de-l-autorite-luxembourgeoise-de-lutte-contre-le": "Ein luxemburgischer Gesetzentwurf zur Schaffung der Geldwäschebekämpfungsbehörde ALBA und zur teilweisen Umsetzung der EU-Richtlinie 2024/1640 wurde am 25.11.2026 eingebracht."
    },
    "doppelt": [
     "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour"
