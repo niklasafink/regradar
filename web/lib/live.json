@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T12:09:10Z",
+  "generated_at": "2026-11-25T15:13:15Z",
   "updates": {
     "amla": [
       {
@@ -905,17 +905,16 @@
         },
         "src": "bafin.de",
         "ti": {
-          "de": "BaFin-Rundschreiben zu Liquiditätsmanagementinstrumenten im KAGB (17/2026)",
-          "en": "BaFin Circular on Liquidity Management Tools in the KAGB (17/2026)"
+          "de": "Fondsrisikobegrenzungsgesetz: Bafin veröffentlicht Rundschreiben",
+          "en": "Fondsrisikobegrenzungsgesetz: Bafin veröffentlicht Rundschreiben"
         },
-        "sl": "rundschreiben-17-2026-wa",
+        "sl": "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
         "s": {
-          "de": "Die BaFin hat ein Rundschreiben veröffentlicht, das Hinweise zur Auslegung der neuen Regelungen des Fondsrisikobegrenzungsgesetzes (FRiG) im Kapitalanlagegesetzbuch (KAGB) gibt. Es beantwortet Fragen von Marktteilnehmern, insbesondere zur verpflichtenden Implementierung von mindestens zwei Liquiditätsmanagementinstrumenten (LMT) in offenen Investmentvermögen sowie zu Änderungen bei Erlaubnisverfahren und Kreditvergabe.\n\nDas Rundschreiben richtet sich an erlaubnispflichtige Kapitalverwaltungsgesellschaften (KVGen) und behandelt ausschließlich aufsichtsrechtliche Aspekte. Es präzisiert, dass die Auswahl und Aktivierung von LMTs alleinige Verantwortung der KVG ist und Anlegern kein Wahlrecht zwischen verschiedenen LMTs zusteht. Zudem können KVGen zusätzliche Liquiditätsmaßnahmen implementieren und müssen Anleger grundsätzlich über die Aktivierung und Deaktivierung von LMTs informieren, wobei die Art der Information je nach Art des Investmentvermögens variieren kann.\n\nDas Rundschreiben ist mit seiner Veröffentlichung am 25.11.2026 in Kraft getreten. Es enthält auch Ausführungen zur Anwendung von LMTs bei ETFs und zur Meldepflicht gegenüber der BaFin, die bereits durch die Einreichung von Anlagebedingungen und Verkaufsprospekten erfüllt wird. Änderungen der Vertragsbedingungen zur Umsetzung gesetzlich vorgeschriebener LMTs gelten für Publikumsinvestmentvermögen ohne Anlegerzustimmung als wirksam.",
-          "en": "The BaFin has published a circular providing guidance on the interpretation of the new regulations introduced by the Fund Risk Limitation Act (FRiG) into the German Investment Code (KAGB). It addresses questions from market participants, particularly regarding the mandatory implementation of at least two liquidity management tools (LMTs) in open-ended investment funds, as well as changes to authorization procedures and lending.\n\nThe circular is aimed at authorized capital management companies (KVGs) and exclusively deals with supervisory aspects. It clarifies that the selection and activation of LMTs are the sole responsibility of the KVG, and investors do not have the right to choose between different LMTs. Furthermore, KVGs may implement additional liquidity measures and must generally inform investors about the activation and deactivation of LMTs, with the type of information varying depending on the type of investment fund.\n\nThe circular became effective upon its publication on November 25, 2026. It also includes provisions on the application of LMTs to ETFs and the reporting obligation to BaFin, which is already fulfilled by submitting the investment conditions and sales prospectus. Amendments to contractual terms for the implementation of legally required LMTs are considered effective for public investment funds without investor consent."
+          "de": "Die BaFin hat das Rundschreiben „17/2026 Hinweise zu Änderungen im Kapitalanlagegesetzbuch durch das Fondsrisikobegrenzungsgesetz“ veröffentlicht. Darin legt sie neue Regelungen des Kapitalanlagegesetzbuchs (KAGB) aus, die durch das Fondsrisikobegrenzungsgesetz (FRiG) im April 2026 angepasst wurden.\n\nDas Rundschreiben konkretisiert, dass Kapitalverwaltungsgesellschaften (KVGen) Liquiditätsmanagement-Tools zur Vorbeugung systemischer Risiken einsetzen müssen. Es informiert zudem über erweiterte Angaben zu Geschäftsleitern in Erlaubnisanträgen und Änderungen bei den zulässigen Dienstleistungen und Nebendienstleistungen von KVGen. Für alternative Investmentfonds gelten neue EU-weit harmonisierte Standards bei der Kreditvergabe.\n\nDas Rundschreiben beantwortet auch Fragen von Marktteilnehmern zur Auslegung der gesetzlichen Vorschriften und zum Bestandsschutz. Die BaFin hatte bereits am 19. November 2026 ein weiteres Rundschreiben zu den durch das FRiG bedingten Änderungen der MaRisk für KVGen veröffentlicht.",
+          "en": "BaFin has published Circular “17/2026 Guidance on amendments to the German Capital Investment Code by the Fund Risk Limitation Act”. In it, BaFin interprets new regulations of the German Capital Investment Code (KAGB), which were amended by the Fund Risk Limitation Act (FRiG) in April 2026.\n\nThe circular specifies that capital management companies (KVGen) must use liquidity management tools to prevent systemic risks. It also provides information on expanded disclosures regarding managing directors in licensing applications and changes to the permissible services and ancillary services of KVGen. New EU-wide harmonised standards for lending apply to alternative investment funds.\n\nThe circular also answers questions from market participants regarding the interpretation of legal provisions and grandfathering rules. BaFin had already published another circular on 19 November 2026 concerning the MaRisk amendments for KVGen resulting from the FRiG."
         },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Rundschreiben/2026/rs_17_2026_hinweise_zu_aenderungen_im_kagb_durch_das_frig.html",
-        "imp": "high",
-        "refnum": "Rundschreiben 17/2026"
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_25_rs_fondsrisikobegrenzungsgesetz.html",
+        "imp": "high"
       },
       {
         "d": "19.11.2026",
