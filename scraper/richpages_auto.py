@@ -28,7 +28,7 @@ STATE = os.path.join(HERE, "data", "rich_state.json")
 CUTOFF = os.environ.get("RICH_CUTOFF", "2026-11-07")
 MAX_PER_RUN = int(os.environ.get("RICH_MAX_PER_RUN", "5"))
 MAX_PER_DAY = int(os.environ.get("RICH_MAX_PER_DAY", "40"))
-TOKEN_BUDGET = 20000
+TOKEN_BUDGET = 60000
 MAX_ATTEMPTS = 2
 
 
