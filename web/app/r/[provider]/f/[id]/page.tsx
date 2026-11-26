@@ -8,6 +8,7 @@ import {
   breadcrumbLd, frameworkDescription, frameworkPath, frameworkTitle, ldGraph, SITE_URL, webPageLd,
 } from "@/lib/seo";
 import { updateHref } from "@/lib/updates";
+import { COMPARISONS } from "@/lib/comparisons";
 
 /* Daten auf dem Server auflösen und nur dieses Rahmenwerk samt Unterrahmenwerken
    an die Client-Ansicht geben. */
@@ -85,6 +86,7 @@ export default async function Page({ params }: { params: Promise<{ provider: str
       kids={kids}
       siblings={siblings}
       aboutLong={ABOUT_LONG[f.id]}
+      cmp={COMPARISONS[f.id]}
     />
     </>
   );

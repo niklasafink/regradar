@@ -17,7 +17,8 @@ import { RelevanceStatus } from "@/components/relevance-status";
 import { activeName, hasProfile, relMatches, useMe, useRelevance, useRelFilter } from "@/lib/relevanceClient";
 import { RelevanceFilter } from "@/components/relevance-filter";
 import { useState } from "react";
-import type { Framework, Provider, Topic, Txt, Update } from "@/lib/base";
+import type { Comparison, Framework, Provider, Topic, Txt, Update } from "@/lib/base";
+import { VersionCompare } from "@/components/version-compare";
 
 /** Update mit vorberechnetem Link auf die Einzelseite (/u/…). */
 
@@ -36,10 +37,13 @@ export interface FrameworkDetailProps {
   kids: LinkedFramework[];
   siblings: { id: string; n: Txt; latest: string }[];
   aboutLong?: [Txt, Txt];
+  /** Fassungsvergleich alt gegen neu, falls für dieses Rahmenwerk gepflegt. */
+  cmp?: Comparison;
 }
 
-export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: FrameworkDetailProps) {
+export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong, cmp }: FrameworkDetailProps) {
   const { lang } = useStore();
+  const [view, setView] = useState<"chrono" | "cmp">("chrono");
 
   // Slider als Filter: „Alle" (Hauptstandard + alle Unterrahmenwerke), der
   // Hauptstandard selbst oder ein einzelnes Unterrahmenwerk.
@@ -176,9 +180,40 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
           </details>
         )}
 
+        {/* Ansicht: Chronologie oder Fassungsvergleich (nur wo ein Vergleich gepflegt ist) */}
+        {cmp && (
+          <div
+            role="group"
+            aria-label={lang === "de" ? "Ansicht" : "View"}
+            className="mt-5 inline-flex rounded-full border border-slate-200 bg-white p-0.5 text-xs font-medium"
+          >
+            {(["chrono", "cmp"] as const).map((v) => (
+              <button
+                key={v}
+                type="button"
+                aria-pressed={view === v}
+                onClick={() => setView(v)}
+                className={`rounded-full px-3.5 py-1.5 transition-colors ${
+                  view === v ? "bg-slate-900 text-white" : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                {v === "chrono"
+                  ? lang === "de" ? "Chronologie" : "Timeline"
+                  : lang === "de" ? "Fassungsvergleich" : "Version comparison"}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {view === "cmp" && cmp && (
+          <div className="mt-6">
+            <VersionCompare cmp={cmp} />
+          </div>
+        )}
+
         {/* Slider als Filter: Alle, Hauptstandard, je ein Unterrahmenwerk */}
         {kids.length > 0 && (
-          <Carousel opts={{ align: "start" }} plugins={CHILD_SLIDER_PLUGINS} className="mt-5 flex items-center gap-3">
+          <Carousel opts={{ align: "start" }} plugins={CHILD_SLIDER_PLUGINS} className={`mt-5 flex items-center gap-3 ${view === "cmp" ? "hidden" : ""}`}>
             <div className="min-w-0 flex-1">
             <CarouselContent>
               <CarouselItem className="basis-auto">
@@ -240,7 +275,7 @@ export function FrameworkDetail({ p, f, t, parent, kids, siblings, aboutLong }: 
           </Carousel>
         )}
 
-        <div className="mt-8 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_290px]">
+        <div className={`mt-8 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_290px] ${view === "cmp" ? "hidden" : ""}`}>
           {/* Update-Verlauf als Zeitleiste */}
           <div>
             {ups.length === 0 && (

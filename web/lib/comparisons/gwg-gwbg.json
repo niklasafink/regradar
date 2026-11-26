@@ -1,0 +1,1340 @@
+[
+ {
+  "g": "risk",
+  "kind": "changed",
+  "oldRef": "§ 7 Abs. 4 Satz 1 GwG",
+  "newRef": "§ 6 Abs. 3 Satz 1 GwBG-E",
+  "oldText": "Die Verpflichteten haben der Aufsichtsbehörde die Bestellung des Geldwäschebeauftragten und seines Stellvertreters oder ihre Entpflichtung vorab anzuzeigen.",
+  "newText": "Die Verpflichteten haben der Aufsichtsbehörde die Bestellung des Geldwäschebeauftragten vorab anzuzeigen.",
+  "act": {
+   "de": "Bestellungsprozess für den Geldwäschebeauftragten auf vorherige Anzeige bei der Aufsicht prüfen und Stellvertreterregelung klären.",
+   "en": "Check the appointment process for the money laundering reporting officer provides for prior notice to the supervisor and clarify the deputy arrangement."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 6 Abs. 3 GwBG-E",
+  "s": {
+   "de": "Die vorherige Anzeige der Bestellung an die Aufsicht bleibt national bestehen, weil die Verordnung nur die Abberufung kennt. Die Begründung sagt, ein Stellvertreter sei in Art. 11 Abs. 2 VO nicht vorgesehen und werde daher nicht mehr geregelt. Der Normtext erwähnt ihn in Satz 2 noch.",
+   "en": "The prior notification of the appointment to the supervisor remains under national law because the Regulation only covers removal. The memorandum says a deputy is not provided for in Art. 11(2) of the Regulation and is therefore no longer regulated. The statutory text still mentions the deputy in sentence 2."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "removed",
+  "oldRef": "§ 7 Abs. 1 GwG",
+  "newRef": "Art. 11 Abs. 2 VO (EU) 2024/1624",
+  "oldText": "Verpflichtete nach § 2 Absatz 1 Nummer 1 bis 3, 6, 7, 9 und 15 haben einen Geldwäschebeauftragten auf Führungsebene sowie einen Stellvertreter zu bestellen.",
+  "newText": null,
+  "act": {
+   "de": "Funktionsbeschreibung und Berichtswege des Geldwäschebeauftragten gegen Art. 11 VO abgleichen.",
+   "en": "Compare the role description and reporting lines of the money laundering reporting officer against Art. 11 of the Regulation."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 6 Abs. 3 GwBG-E; Art. 4 Nr. 5 Buchst. f GwBG-E (§ 25h Abs. 7 KWG)",
+  "s": {
+   "de": "Die Pflicht zur Bestellung und die Stellung des Geldwäschebeauftragten stehen nicht mehr im nationalen Recht. Die Begründung nennt Art. 11 Abs. 2 der Verordnung, wonach der Beauftragte Kontaktstelle für die Aufsicht ist. Welche Inhalte aus § 7 Abs. 5 bis 7 GwG (Befugnisse, Kündigungsschutz) national bleiben, ist in diesem Entwurfsteil unklar.",
+   "en": "The duty to appoint and the position of the money laundering reporting officer are no longer in national law. The memorandum cites Art. 11(2) of the Regulation, under which the officer is the contact point for supervisors. Which content of § 7(5) to (7) GwG (powers, dismissal protection) remains national is unclear in this part of the draft."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "removed",
+  "oldRef": "§ 5 Abs. 1 GwG",
+  "newRef": "Art. 10 VO (EU) 2024/1624",
+  "oldText": "Die Verpflichteten haben diejenigen Risiken der Geldwäsche und der Terrorismusfinanzierung zu ermitteln und zu bewerten, die für Geschäfte bestehen, die von ihnen betrieben werden.",
+  "newText": null,
+  "act": {
+   "de": "Risikoanalyse auf Art. 10 VO umstellen und die nationale Risikoanalyse als Quelle einbinden, auch für Sanktionsrisiken.",
+   "en": "Align the risk assessment with Art. 10 of the Regulation and use the national risk analysis as a source, including sanctions risks."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 7 GwBG-E; § 7 Abs. 1 und 3 Nr. 6 GwBG-E",
+  "s": {
+   "de": "Die institutseigene Risikoanalyse steht künftig in Art. 10 der Verordnung, nicht mehr im GwG. National bleibt die nationale Risikoanalyse (§ 7 GwBG-E), mindestens alle vier Jahre aktualisiert. Sie soll Verpflichteten Informationen für die Risikobewertungen nach Art. 10 liefern und umfasst nun auch Risiken der Nichtumsetzung und Umgehung gezielter finanzieller Sanktionen.",
+   "en": "The institution's own risk assessment will be set out in Art. 10 of the Regulation, no longer in the GwG. The national risk analysis (§ 7 GwBG-E) remains, updated at least every four years. It is to give obliged entities information for the Art. 10 assessments and now also covers risks of non-implementation and circumvention of targeted financial sanctions."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "removed",
+  "oldRef": "§ 6 Abs. 1 GwG",
+  "newRef": "Kapitel II VO (EU) 2024/1624",
+  "oldText": "Verpflichtete haben angemessene geschäfts- und kundenbezogene interne Sicherungsmaßnahmen zu schaffen, um die Risiken von Geldwäsche und von Terrorismusfinanzierung in Form von Grundsätzen, Verfahren und Kontrollen zu steuern und zu mindern.",
+  "newText": null,
+  "act": {
+   "de": "Internes Regelwerk (Grundsätze, Verfahren, Kontrollen) auf Kapitel II VO mappen und Verweise auf § 6 GwG ersetzen.",
+   "en": "Map the internal framework (policies, procedures, controls) to Chapter II of the Regulation and replace references to § 6 GwG."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Art. 4 Nr. 5 Buchst. a GwBG-E (§ 25h Abs. 1 KWG)",
+  "s": {
+   "de": "Interne Sicherungsmaßnahmen wandern in Kapitel II der Verordnung. Das zeigt die Änderung von § 25h KWG, die statt der §§ 4 bis 6 GwG auf dieses Kapitel verweist. Eine eigene GwBG-Regelung gibt es nicht mehr.",
+   "en": "Internal safeguards move to Chapter II of the Regulation. This follows from the amendment of § 25h KWG, which refers to that chapter instead of §§ 4 to 6 GwG. There is no separate GwBG provision any more."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "changed",
+  "oldRef": "§ 6 Abs. 7 Satz 1 GwG",
+  "newRef": "§ 25h Abs. 4 Satz 1 KWG (Art. 4 Nr. 5 Buchst. d GwBG-E)",
+  "oldText": "Die Verpflichteten dürfen die internen Sicherungsmaßnahmen im Rahmen von vertraglichen Vereinbarungen durch einen Dritten durchführen lassen, wenn sie dies vorher der Aufsichtsbehörde angezeigt haben.",
+  "newText": "Institute dürfen interne Sicherungsmaßnahmen nach Absatz 1 Satz 1 unbeschadet des Artikels 18 der Verordnung (EU) 2024/1624 und nach vorheriger Anzeige bei der Bundesanstalt im Rahmen von vertraglichen Vereinbarungen durch einen Dritten durchführen lassen.",
+  "act": {
+   "de": "Auslagerungen von AML-Funktionen prüfen: Anzeige bei der BaFin und Vereinbarkeit mit Art. 18 VO.",
+   "en": "Review AML outsourcing: notice to BaFin and compatibility with Art. 18 of the Regulation."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Art. 4 Nr. 5 Buchst. d und e GwBG-E (§ 25h Abs. 4 und 5 KWG)",
+  "s": {
+   "de": "Auslagerung interner Sicherungsmaßnahmen bleibt für Institute mit vorheriger Anzeige bei der BaFin möglich, gilt aber unbeschadet von Art. 18 der Verordnung. Die BaFin kann gegenüber Institut und Auslagerungsunternehmen, auch bei Auslagerung nach Art. 18, im Einzelfall Anordnungen treffen.",
+   "en": "Outsourcing of internal safeguards stays possible for institutions with prior notice to BaFin, but applies without prejudice to Art. 18 of the Regulation. BaFin may issue case-by-case orders to the institution and the outsourcing provider, including for outsourcing under Art. 18."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "changed",
+  "oldRef": "§ 24c KWG",
+  "newRef": "§ 24c Abs. 1 Satz 1 KWG (Art. 4 Nr. 3 GwBG-E)",
+  "oldText": null,
+  "newText": "in Bezug auf Depotkonten im Sinne von Artikel 2 Absatz 1 Nummer 28 der Verordnung (EU) Nr. 909/2014 des Europäischen Parlaments und des Rates: die einheitliche Kontokennung sowie das Datum der Kontoeröffnung und Kontoschließung",
+  "act": {
+   "de": "Dateisystem nach § 24c um die neuen Datenfelder und Löschfristen erweitern und Schnittstellen für § 24e KWG einplanen.",
+   "en": "Extend the § 24c file system with the new data fields and deletion periods and plan interfaces for § 24e KWG."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu Art. 4 Nr. 3 und 4 (§§ 24c bis 24e KWG), Art. 5 Nr. 5 und Art. 6 Nr. 5 GwBG-E",
+  "s": {
+   "de": "Das Kontenabrufverfahren (§ 24c KWG) wird neu gefasst und führt virtuelle IBAN, Depotkonten, Kryptowertekonten und Schließfächer ausdrücklich auf. Die Zehnjahresfrist nach Kontoauflösung bleibt, alte Datensätze sind drei Jahre nach Anlegen des neuen zu löschen. Neu: Abrufmöglichkeit der BaFin für Insiderhandel und Marktmanipulation, EU-Vernetzung (§ 24d, bis 10. Juli 2029) und Formatvorgaben für Transaktionsdaten an Strafverfolger (§ 24e KWG; gilt auch für Zahlungs- und E-Geld-Institute sowie Kryptowerte-Dienstleister).",
+   "en": "The account retrieval procedure (§ 24c KWG) is redrafted and expressly lists virtual IBANs, securities accounts, crypto-asset accounts and safe-deposit boxes. The ten-year period after account closure remains; old records are deleted three years after the new one is created. New: BaFin retrieval for insider dealing and market manipulation, EU interconnection (§ 24d, by 10 July 2029) and format rules for transaction data sent to law enforcement (§ 24e KWG; also applies to payment and e-money institutions and crypto-asset service providers)."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "removed",
+  "oldRef": "§ 23a Abs. 1 GwG",
+  "newRef": "Art. 24 Abs. 1 VO (EU) 2024/1624",
+  "oldText": "Verpflichtete nach § 23 Absatz 1 Satz 1 Nummer 2 haben der registerführenden Stelle Unstimmigkeiten unverzüglich zu melden, die sie zwischen den Angaben über die wirtschaftlich Berechtigten, die im Transparenzregister zugänglich sind, und den ihnen zur Verfügung stehenden Angaben und Erkenntnissen über die wirtschaftlich Berechtigten feststellen.",
+  "newText": null,
+  "act": {
+   "de": "Unstimmigkeitsmeldeprozess (Abgleich Register gegen KYC-Erkenntnisse) auf Art. 24 Abs. 1 der Verordnung umstellen; der Inhalt der Verordnungspflicht ist gesondert zu prüfen.",
+   "en": "Align the discrepancy-reporting process (register vs. KYC findings) with Art. 24(1) of the Regulation; review the Regulation's content separately."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 28 GwBG-E",
+  "s": {
+   "de": "Die Pflicht der Verpflichteten zur Unstimmigkeitsmeldung steht nicht mehr im nationalen Gesetz, sondern künftig in Art. 24 Abs. 1 der Geldwäscheverordnung. Das GwBG-E regelt nur noch den Meldeweg und die Prüfung durch die registerführende Stelle.",
+   "en": "The obligation of obliged entities to report discrepancies is no longer in the national act but will sit in Art. 24(1) of the AML Regulation. The GwBG-E only governs the reporting channel and the register's review."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 28 Abs. 3 GwBG-E",
+  "oldText": null,
+  "newText": "Der Erstattende der Unstimmigkeitsmeldung, die betroffene Vereinigung oder die Rechtsvereinbarung ist verpflichtet, diesem Verlangen zu entsprechen, wobei sich die Pflicht des Erstattenden der Unstimmigkeitsmeldung auf bei ihm vorhandene Informationen und Unterlagen beschränkt.",
+  "act": {
+   "de": "Zuständigkeit und Frist für Rückfragen zu Unstimmigkeitsmeldungen intern festlegen; Ergebnisse nicht weitergeben.",
+   "en": "Assign ownership and turnaround for register queries on discrepancy reports; do not pass results on."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 28 GwBG-E",
+  "s": {
+   "de": "Wer eine Unstimmigkeit meldet, muss Nachfragen der registerführenden Stelle beantworten, aber nur mit vorhandenen Informationen und Unterlagen. Die Stelle soll die Unstimmigkeit binnen 30 Werktagen beheben (§ 28 Abs. 6); der Meldende erhält das Ergebnis zur Verwendung nur für eigene Sorgfaltsmaßnahmen (§ 28 Abs. 9).",
+   "en": "Whoever reports a discrepancy must answer queries from the register authority, limited to information and documents already held. The authority should resolve the discrepancy within 30 working days (§ 28(6)); the reporter gets the result for use in its own due diligence only (§ 28(9))."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 23 Abs. 1 Satz 3 GwG",
+  "newRef": "§ 25 Abs. 2 GwBG-E",
+  "oldText": "In den Fällen des Satzes 1 Nummer 1 und 2 übermittelt die registerführende Stelle neben den Angaben nach § 19 Absatz 1 auch die Eigentums- und Kontrollstrukturübersichten nach § 23a Absatz 3a, soweit diese zu den übermittelten Angaben nach § 19 Absatz 1 aufgrund einer abgeschlossenen Unstimmigkeitsmeldung vorhanden sind.",
+  "newText": "In den Fällen des Absatzes 1 Nummer 1 und 2 wird Einsichtnahme in die Angaben nach § 14 Absatz 1 gewährt und dürfen die Angaben an den Einsichtnehmenden übermittelt werden. Zu diesen Angaben gehören auch die zeitlich vorangegangenen Angaben sowie die vorhandenen Eigentums- und Kontrollstrukturübersichten.",
+  "act": {
+   "de": "Prüfen, wie die größere Datenmenge samt Historie und Strukturübersichten in KYC-Akte und Abgleich einfließt.",
+   "en": "Assess how the larger data set, history and structure charts feed into the KYC file and reconciliation."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu §§ 14, 25 GwBG-E",
+  "s": {
+   "de": "Institute sehen künftig alle Angaben nach § 14 Abs. 1, auch frühere Fassungen und vorhandene Eigentums- und Kontrollstrukturübersichten, nicht mehr nur nach abgeschlossener Unstimmigkeitsmeldung. § 14 verlangt mehr Daten (u. a. Geburtsort, Anschrift, Ausweisnummer, Rechtsträgerkennung, Beschreibung der Struktur). Übermittlung an Verpflichtete erfolgt unverzüglich.",
+   "en": "Institutions will see all § 14(1) data, including prior versions and existing ownership and control structure charts, not only after a completed discrepancy report. § 14 requires more data (e.g. place of birth, address, ID number, LEI, structure description). Transfer to obliged entities is prompt."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "removed",
+  "oldRef": "§ 43 Abs. 1 GwG",
+  "newRef": "Art. 69 Abs. 1 Unterabs. 1 Buchst. a VO (EU) 2024/1624",
+  "oldText": "hat der Verpflichtete diesen Sachverhalt unabhängig vom Wert des betroffenen Vermögensgegenstandes oder der Transaktionshöhe unverzüglich der Zentralstelle für Finanztransaktionsuntersuchungen zu melden.",
+  "newText": "Verdachtsmeldungen sind Meldungen der Verpflichteten gemäß Artikel 69 Absatz 1 Unterabsatz 1 Buchstabe a der Verordnung (EU) 2024/1624.",
+  "act": {
+   "de": "Interne Meldeprozesse, Eskalationswege und Meldeanweisungen auf Art. 69 AMLR umstellen; Verweise auf § 43 GwG ersetzen.",
+   "en": "Update internal reporting processes, escalation paths and policies to Art. 69 AMLR and replace references to § 43 GwG."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 2 Abs. 14 GwBG-E",
+  "s": {
+   "de": "Die Pflicht zur Verdachtsmeldung steht künftig unmittelbar in Art. 69 AMLR, nicht mehr im deutschen Gesetz. Das GwBG-E definiert nur den Begriff „Verdachtsmeldung“ (§ 2 Abs. 14) und regelt FIU-Verfahren und Sonderfälle.",
+   "en": "The duty to file suspicious activity reports will sit directly in Art. 69 AMLR, no longer in German law. The GwBG-E only defines the term (§ 2 para. 14) and covers FIU procedure and special cases."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "removed",
+  "oldRef": "§ 46 Abs. 1 GwG",
+  "newRef": "Art. 71 Abs. 1 Unterabs. 1 VO (EU) 2024/1624",
+  "oldText": "Eine Transaktion, wegen der eine Meldung nach § 43 Absatz 1 erfolgt ist, darf frühestens durchgeführt werden, wenn 1.dem Verpflichteten die Zustimmung der Zentralstelle für Finanztransaktionsuntersuchungen oder der Staatsanwaltschaft zur Durchführung übermittelt wurde oder 2.der dritte Werktag nach dem Abgangstag der Meldung verstrichen ist",
+  "newText": null,
+  "act": {
+   "de": "Transaktionssperren nach Meldung künftig an Art. 71 AMLR ausrichten und die Frist dort prüfen.",
+   "en": "Align post-report transaction holds with Art. 71 AMLR and check the period there."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Normtext § 119 GwBG-E (Bußgeldvorschrift); keine eigene Begründung",
+  "s": {
+   "de": "Die Regel zur Durchführung gemeldeter Transaktionen (Zustimmung oder Ablauf des dritten Werktags) steht nicht mehr im GwBG-E. Die Bußgeldvorschrift verweist für das Durchführen einer Transaktion auf Art. 71 AMLR (Absatz 1 Unterabsatz 1) und für die Unterrichtung der FIU auf Art. 71 Abs. 2. Die Begründung erläutert den Wegfall nicht, ob die Drei-Werktage-Frist bleibt, ist daher im GwBG-E nicht erkennbar.",
+   "en": "The rule on executing reported transactions (consent or lapse of the third working day) no longer appears in the GwBG-E. The fines provision refers to Art. 71 AMLR for executing a transaction (para. 1 subpara. 1) and for informing the FIU (para. 2). The explanatory memorandum does not explain the removal, so whether the three-working-day period remains cannot be seen from the GwBG-E."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "changed",
+  "oldRef": "§ 40 Abs. 1 GwG",
+  "newRef": "§ 51 Abs. 1 GwBG-E",
+  "oldText": "Liegen der Zentralstelle für Finanztransaktionsuntersuchungen Anhaltspunkte dafür vor, dass eine Transaktion im Zusammenhang mit Geldwäsche oder einer Straftat nach § 18 Absatz 1 des Außenwirtschaftsgesetzes steht oder der Terrorismusfinanzierung dient, so kann sie die Durchführung der Transaktion untersagen",
+  "newText": "Liegen der Zentralstelle für Finanztransaktionsuntersuchungen aufgrund einer Meldung eines Verpflichteten Anhaltspunkte dafür vor, dass eine Transaktion im Zusammenhang mit Geldwäsche oder einer Straftat nach § 17 Absatz 1 oder § 18 Absatz 1 des Außenwirtschaftsgesetzes, § 80 der Außenwirtschaftsverordnung oder nach den §§ 19 bis 22a des Gesetzes über die Kontrolle von Kriegswaffen steht oder der Terrorismusfinanzierung dient, so kann die Zentralstelle für Finanztransaktionsuntersuchungen die Zustimmung zur Durchführung dieser Transaktion innerhalb von drei Werktagen nach dem Abgangstag der Meldung aussetzen oder verweigern.",
+  "act": {
+   "de": "Prozesse für das Anhalten von Transaktionen und für die Umsetzung von FIU-Anordnungen mit den neuen Fristen (3 und 10 Werktage) abgleichen.",
+   "en": "Align processes for holding transactions and implementing FIU orders with the new periods (3 and 10 working days)."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 51 GwBG-E",
+  "s": {
+   "de": "Sofortmaßnahmen bei Transaktionen: Nach einer Meldung kann die FIU die Zustimmung innerhalb von drei Werktagen aussetzen oder verweigern, auch gestützt auf weitere Katalogtaten (Kriegswaffenkontrolle, AWV). Die Maßnahme darf höchstens zehn Werktage dauern, bisher endete sie spätestens einen Monat nach Anordnung. Ohne Meldung greift die FIU unverzüglich ein. Auslöser können auch Meldungen nach Art. 74 und Art. 80 Abs. 4 AMLR sein.",
+   "en": "Immediate measures on transactions: after a report the FIU may suspend or refuse consent within three working days, also based on further predicate offences (war weapons control, foreign trade ordinance). The measure may last at most ten working days; previously it ended one month after the order at the latest. Without a report the FIU acts immediately. Reports under Art. 74 and Art. 80(4) AMLR can also trigger it."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 51 Abs. 2 GwBG-E",
+  "oldText": null,
+  "newText": "so kann die Zentralstelle für Finanztransaktionsuntersuchungen gegenüber dem Verpflichteten anordnen, die Nutzung des Kontos oder die Geschäftsbeziehung auszusetzen.",
+  "act": {
+   "de": "Operativen Ablauf für Kontosperren auf FIU-Anordnung (inkl. Schließfachzugang und Freigabeanträge) festlegen.",
+   "en": "Define the operating procedure for account freezes on FIU order (incl. safe-deposit access and release requests)."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 51 GwBG-E",
+  "s": {
+   "de": "Neu: Bei Anhaltspunkten kann die FIU anordnen, ein Bank-, Zahlungs- oder Kryptowertekonto oder eine Geschäftsbeziehung auszusetzen, auch ohne konkrete Transaktion. Die Maßnahme darf höchstens fünf Werktage dauern. Widerspruch hat keine aufschiebende Wirkung, die FIU haftet nicht. Auf Antrag kann sie Mittel für Lebensunterhalt oder Unterhalt freigeben.",
+   "en": "New: where there are indications, the FIU can order a bank, payment or crypto-asset account or a business relationship to be suspended, even without a specific transaction. The measure may last at most five working days. An objection has no suspensive effect and the FIU is not liable. On request it can release funds for living costs or maintenance."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 52 Abs. 1 GwBG-E",
+  "oldText": null,
+  "newText": "Die Zentralstelle für Finanztransaktionsuntersuchungen kann einen Verpflichteten anweisen, für die Dauer eines von ihr festgelegten Zeitraums Transaktionen oder Tätigkeiten zu überwachen,",
+  "act": {
+   "de": "Technische und organisatorische Umsetzbarkeit gezielter Kontenüberwachung samt Berichtsweg zur FIU vorbereiten.",
+   "en": "Prepare the technical and organisational ability to run targeted account monitoring and report to the FIU."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 52 GwBG-E",
+  "s": {
+   "de": "Neue Überwachungsanordnung: Die FIU kann ein Institut anweisen, für einen von ihr bestimmten Zeitraum Transaktionen oder Tätigkeiten über bestimmte Konten oder Geschäftsbeziehungen zu überwachen und darüber zu berichten. Gilt bei erheblichem Risiko der Geldwäsche oder Terrorismusfinanzierung, auch auf Ersuchen ausländischer Meldestellen. Widerspruch ohne aufschiebende Wirkung.",
+   "en": "New monitoring order: the FIU can instruct an institution to monitor transactions or activities on specific accounts or business relationships for a period it sets and to report on them. Applies where there is a significant risk of money laundering or terrorist financing, also at the request of foreign FIUs. An objection has no suspensive effect."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "removed",
+  "oldRef": "§ 47 Abs. 1 GwG",
+  "newRef": "Art. 73 Abs. 1 VO (EU) 2024/1624",
+  "oldText": "Ein Verpflichteter darf den Vertragspartner, den Auftraggeber der Transaktion und sonstige Dritte nicht in Kenntnis setzen von 1.einer beabsichtigten oder erstatteten Meldung nach § 43 Absatz 1",
+  "newText": null,
+  "act": {
+   "de": "Tipping-off-Regeln und Gruppenausnahmen künftig an Art. 73 AMLR messen.",
+   "en": "Measure tipping-off rules and group exceptions against Art. 73 AMLR."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 75 GwBG-E",
+  "s": {
+   "de": "Das Verbot, Kunden und Dritte über Meldungen zu informieren, ist künftig in Art. 73 AMLR geregelt. Der GwBG-E regelt in § 75 nur Sonderfälle, soweit Art. 73 AMLR keine Vorgaben enthält. Die Ausnahmen für Gruppen und Informationsaustausch unter Verpflichteten (§ 47 Abs. 2, 5 GwG) stehen nicht im GwBG-E: unklar.",
+   "en": "The ban on tipping off customers and third parties will be governed by Art. 73 AMLR. The GwBG-E covers only special cases in § 75, where Art. 73 AMLR gives no rules. The group and information-sharing exceptions among obliged entities (§ 47 paras. 2, 5 GwG) are not in the GwBG-E: unclear."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "changed",
+  "oldRef": "§ 47 Abs. 3 GwG",
+  "newRef": "§ 75 Abs. 2 GwBG-E",
+  "oldText": "Eine Weitergabe dieser Informationen an diese Personen ist nur zulässig, wenn die Zentralstelle für Finanztransaktionsuntersuchungen vorher ihr Einverständnis erklärt hat",
+  "newText": "Eine Weitergabe der in Absatz 1 Satz 1 genannten Informationen durch Verpflichtete ist nur zulässig, wenn die Zentralstelle für Finanztransaktionsuntersuchungen vorher ihr Einverständnis erklärt hat.",
+  "act": {
+   "de": "Informationsfluss zu Kunden bei FIU-Maßnahmen regeln: Auskünfte nur nach Freigabe der FIU.",
+   "en": "Regulate communication with customers during FIU measures: disclose only after FIU release."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 75 GwBG-E",
+  "s": {
+   "de": "Das Weitergabeverbot wird erweitert: Es erfasst nun auch Sofortmaßnahmen (§ 51) und Überwachungsanordnungen (§ 52), und Institute dürfen darüber nur nach vorherigem Einverständnis der FIU informieren. Das Einverständnis kann nicht mehr erteilt werden, sobald die FIU den Fall an eine andere Behörde abgegeben hat.",
+   "en": "The disclosure ban is extended: it now also covers immediate measures (§ 51) and monitoring orders (§ 52), and institutions may disclose them only with the FIU's prior consent. Consent can no longer be given once the FIU has passed the case to another authority."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 52 Abs. 7 GwG",
+  "newRef": "§ 93 Abs. 5 GwBG-E",
+  "oldText": "Verpflichtete haben der Bundesanstalt für Finanzdienstleistungsaufsicht, soweit diese zuständige Aufsichtsbehörde […] jährlich die für die Zwecke des Artikels 40",
+  "newText": "Verpflichtete haben der Bundesanstalt für Finanzdienstleistungsaufsicht, soweit diese zuständige Aufsichtsbehörde […] einmal jährlich bis zum 31. März eines Jahres mit Stichtag zum 31.12. des vorangegangenen Kalenderjahres die für die Zwecke des Artikels 40",
+  "act": {
+   "de": "Meldeprozess und Datenquellen auf den Termin 31. März mit Stichtag 31.12. ausrichten und die EU-Standards beobachten.",
+   "en": "Align the reporting process and data sources with the 31 March deadline and 31 December reference date and monitor the EU standards."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 93 GwBG-E",
+  "s": {
+   "de": "Die jährliche Informationsmeldung an die BaFin hat jetzt einen festen Termin: bis zum 31. März, Stichtag 31.12. des Vorjahres. Inhalt richtet sich nach den noch ausstehenden EU-Standards (RTS und ITS) und einer möglichen BMF-Verordnung für zusätzliche Aufsichtsdaten.",
+   "en": "The annual information return to the BaFin now has a fixed deadline: 31 March, reference date 31 December of the previous year. Content follows the EU standards still to be adopted (RTS and ITS) and a possible Ministry of Finance ordinance for additional supervisory data."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "new",
+  "oldRef": "§ 52 Abs. 1 GwG",
+  "newRef": "§ 88 Abs. 7 Nr. 1 GwBG-E",
+  "oldText": null,
+  "newText": "alle Informationen und Unterlagen von Verpflichteten und von Dienstleistern, an die der Verpflichtete einen Teil seiner Aufgaben ausgelagert hat, sowie jeweils von den Mitgliedern von deren Organen und von deren Beschäftigten jeweils auch nach deren Ausscheiden, verlangen",
+  "act": {
+   "de": "Auslagerungsverträge um Mitwirkungs- und Herausgabepflichten gegenüber der Aufsicht ergänzen.",
+   "en": "Add cooperation and disclosure duties towards the supervisor to outsourcing contracts."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 88 Abs. 7 Nr. 1 GwBG-E",
+  "s": {
+   "de": "Die Aufsicht kann Informationen und Unterlagen ausdrücklich auch von Auslagerungsunternehmen verlangen, dazu von deren Organmitgliedern und Beschäftigten, auch nach deren Ausscheiden. Das gilt auch für die Auslagerungspartner des Instituts.",
+   "en": "Supervisors may expressly demand information and documents from outsourcing providers as well, and from their board members and staff, also after they have left. This covers an institution's outsourcing partners."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 52 Abs. 2 GwG",
+  "newRef": "§ 88 Abs. 9 GwBG-E",
+  "oldText": "die Geschäftsräume des Verpflichteten innerhalb der üblichen Betriebs- und Geschäftszeiten zu betreten und zu besichtigen",
+  "newText": "die Betriebsstätten des Verpflichteten ohne vorherige Ankündigung innerhalb der üblichen Betriebs- und Geschäftszeiten zu betreten und zu besichtigen, wenn die ordnungsgemäße Durchführung und Wirksamkeit einer Prüfung dies erfordern",
+  "act": {
+   "de": "Zugriffsrechte und Ansprechpartner für unangekündigte Prüfungen vorhalten, auch für Systeme bei Dienstleistern.",
+   "en": "Keep access rights and contacts ready for unannounced inspections, including systems at service providers."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 88 Abs. 9 GwBG-E",
+  "s": {
+   "de": "Unangekündigte Besichtigung der Betriebsstätten ist ausdrücklich erlaubt, wenn die Wirksamkeit der Prüfung das erfordert. Vor Ort darf die Aufsicht Bücher und Aufzeichnungen prüfen und kopieren, Zugang zu Software, Datenbanken und IT-Anwendungen verlangen sowie Mitarbeiter und Mitarbeiter von Auslagerungsunternehmen befragen.",
+   "en": "Unannounced inspection of premises is expressly permitted where the effectiveness of an inspection requires it. On site, supervisors may examine and copy books and records, demand access to software, databases and IT applications, and interview staff, including staff of outsourcing providers."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 51 Abs. 2 GwG",
+  "newRef": "§ 103 Abs. 1 GwBG-E",
+  "oldText": "die geeigneten und erforderlichen Maßnahmen und Anordnungen treffen, um die Einhaltung der in diesem Gesetz",
+  "newText": "Maßnahmen treffen, die geeignet, erforderlich und angemessen sind, um sicherzustellen, dass die Verpflichtungen aus diesem Gesetz",
+  "act": {
+   "de": "Interne Kontrollen gegen das Risikoprofil abgleichen und bekannte Schwachstellen vor Prüfungen schließen.",
+   "en": "Compare internal controls with the risk profile and close known weaknesses before inspections."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 103 Abs. 1 GwBG-E",
+  "s": {
+   "de": "Die Eingriffsgrundlage nennt jetzt Anlässe: Verstöße gegen GwBG und AMLR, Schwachstellen in internen Strategien, Verfahren oder Kontrollen sowie ein unangemessenes Verhältnis von Kontrollen und Risiken. Maßnahmen sind also schon bei Schwachstellen ohne Verstoß möglich. Die frühere ausdrückliche Befugnis, im Einzelfall Geschäftsbeziehungen und Transaktionen zu unterbinden (§ 51 Abs. 2 Satz 2), steht nicht im Normtext von § 103: unklar.",
+   "en": "The basis for intervention now names triggers: breaches of the GwBG and AMLR, weaknesses in internal policies, procedures or controls, and controls that are out of proportion to risks. Measures are thus possible on weaknesses alone. The former express power to stop business relationships and transactions in individual cases (§ 51(2) sentence 2) is not in the text of § 103: unclear."
+  }
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 51 Abs. 5 GwG",
+  "newRef": "§ 103 Abs. 2 und 3 GwBG-E",
+  "oldText": null,
+  "newText": null,
+  "act": {
+   "de": "Sanktionsrisiko neu bewerten: Beschränkung von Geschäftsfeldern und Leitungsverbote sind ausdrücklich vorgesehen.",
+   "en": "Reassess sanction risk: restrictions on business lines and management bans are expressly provided for."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 103 Abs. 2 und 3 GwBG-E",
+  "s": {
+   "de": "Der nicht abschließende Maßnahmenkatalog umfasst Empfehlungen, Anordnungen mit Abhilfemaßnahmen, öffentliche Bekanntgabe nach § 121, Beschränkung von Geschäftsbereichen oder Veräußerungsauflagen, Entzug oder Aussetzung der Erlaubnis und Auflagen zur Leitungsstruktur. Heute setzt der Entzug Verwarnung und nachhaltigen Verstoß voraus; § 103 nennt diese Voraussetzungen nicht. Zusätzlich möglich: verstärkte Kontrollen, Hochrisikostrategien und vorübergehendes Leitungsverbot.",
+   "en": "The non-exhaustive catalogue covers recommendations, orders with remedial action, public disclosure under § 121, restriction of business lines or divestment orders, withdrawal or suspension of authorisation and requirements on governance structure. Today withdrawal requires a warning and a persistent breach; § 103 does not state these conditions. Also possible: strengthened controls, high-risk policies and a temporary management ban."
+  }
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 56 Abs. 1 Satz 1 GwG",
+  "newRef": "§ 119 Abs. 1 GwBG-E",
+  "oldText": "Ordnungswidrig handelt, wer vorsätzlich oder leichtfertig",
+  "newText": "Ordnungswidrig handelt, wer gegen die Verordnung (EU) 2024/1624 in der Fassung vom 31. Mai 2024 verstößt, indem er vorsätzlich oder fahrlässig",
+  "s": {
+   "de": "Für die bußgeldbewehrten Kernpflichten (Risikoanalyse, interne Sicherungsmaßnahmen, Sorgfaltspflichten, Aufzeichnung) genügt künftig einfache Fahrlässigkeit statt Vorsatz oder Leichtfertigkeit. Der Katalog wächst von 74 auf 80 Nummern und verweist nicht mehr auf GwG-Paragrafen, sondern auf Artikel der Geldwäscheverordnung (AMLR). Das Wort leichtfertig kommt im Entwurf nicht mehr vor.",
+   "en": "For the core duties subject to fines (risk assessment, internal safeguards, due diligence, record-keeping) simple negligence is enough in future, instead of intent or recklessness. The catalogue grows from 74 to 80 items and refers to articles of the AML Regulation (AMLR) instead of GwG sections. The word reckless no longer appears in the draft."
+  },
+  "act": {
+   "de": "Bußgeldrisiko neu bewerten: Auch einfache Versäumnisse bei Risikoanalyse, Kundenüberwachung und Aufzeichnung sind künftig ahndbar; Dokumentation und Kontrollnachweise sind die Verteidigung.",
+   "en": "Reassess fine exposure: even simple lapses in risk assessment, customer monitoring and record-keeping become punishable; documentation and control evidence are the defence."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 119; Normtext § 119 Abs. 1"
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 56 Abs. 3 Satz 3 und 4 GwG",
+  "newRef": "§ 119 Abs. 6 und 7 GwBG-E",
+  "oldText": "Gegenüber Verpflichteten gemäß § 2 Absatz 1 Nummer 1 bis 3 und 6 bis 9, die juristische Personen oder Personenvereinigungen sind, kann über Satz 1 hinaus eine höhere Geldbuße verhängt werden. In diesen Fällen darf die Geldbuße den höheren der folgenden Beträge nicht übersteigen: fünf Millionen Euro oder 10 Prozent des Gesamtumsatzes",
+  "newText": "[…] kann gegenüber einer juristischen Person oder Personenvereinigung, die ein Kreditinstitut […] oder ein Finanzinstitut […] ist, eine Ordnungswidrigkeit nach Absatz 4 mit einer Geldbuße bis zu zehn Millionen Euro geahndet werden. […] Über Absatz 6 hinaus kann gegenüber einer dort genannten juristischen Person […] mit einem Gesamtumsatz von mehr als 100 Millionen Euro […] eine Ordnungswidrigkeit nach Absatz 4 mit einer Geldbuße bis zu 10 Prozent des Gesamtumsatzes geahndet werden.",
+  "s": {
+   "de": "Bei schwerwiegenden, wiederholten oder systematischen Verstößen steigt der feste Höchstbetrag für Kredit- und Finanzinstitute (juristische Personen) von 5 auf 10 Mio. Euro. Die 10-Prozent-Grenze bleibt, gilt aber nur bei Gesamtumsatz über 100 Mio. Euro. Heute gilt der höhere Betrag aus 5 Mio. Euro oder 10 Prozent, also schon ab 50 Mio. Euro Umsatz. Für natürliche Personen bleibt es bei 5 Mio. Euro (§ 119 Abs. 5).",
+   "en": "For serious, repeated or systematic breaches the fixed maximum for credit and financial institutions (legal persons) rises from EUR 5m to EUR 10m. The 10 percent cap stays but applies only above EUR 100m total turnover. Today the higher of EUR 5m or 10 percent applies, i.e. from EUR 50m turnover. For natural persons it stays at EUR 5m (section 119(5))."
+  },
+  "act": {
+   "de": "Maximalrahmen im Risikoappetit und in der Rückstellungsbetrachtung neu ansetzen: Für Institute mit weniger als 100 Mio. Euro Umsatz steigt die Obergrenze, darüber bleibt sie bei 10 Prozent.",
+   "en": "Reset the maximum exposure in risk appetite and provisioning: the ceiling rises for institutions with turnover below EUR 100m and stays at 10 percent above."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 119 Abs. 6 und 7; Normtext § 119 Abs. 5 bis 7"
+ },
+ {
+  "g": "enforce",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 119 Abs. 9 GwBG-E",
+  "oldText": null,
+  "newText": "In den Fällen der Absätze 4 bis 7 oder 8 ist § 17 Absatz 2 des Gesetzes über Ordnungswidrigkeiten nicht anzuwenden.",
+  "s": {
+   "de": "Bei schwerwiegenden, wiederholten oder systematischen Verstößen gilt der volle Rahmen auch bei Fahrlässigkeit: Die Halbierung nach § 17 Abs. 2 OWiG (fahrlässiges Handeln nur mit der Hälfte des Höchstbetrags) ist ausgeschlossen. Zusammen mit der Fahrlässigkeitshaftung steigt das Risiko für nicht vorsätzliche Verstöße deutlich.",
+   "en": "For serious, repeated or systematic breaches the full range applies even for negligence: the halving under section 17(2) OWiG (negligent conduct only up to half the maximum) is excluded. Together with liability for negligence this raises the exposure for non-intentional breaches considerably."
+  },
+  "act": {
+   "de": "Fahrlässige Einzelverstöße nicht mehr als Bußgeld-Bagatelle einstufen; Eskalationsschwellen für schwerwiegende Mängel schärfen.",
+   "en": "Stop treating negligent one-off breaches as minor fine cases; sharpen escalation thresholds for serious deficiencies."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Normtext § 119 Abs. 9 (die Begründung äußert sich zur Wirkung nicht)"
+ },
+ {
+  "g": "enforce",
+  "kind": "new",
+  "oldRef": "kein Zwangsgeld im GwG",
+  "newRef": "§ 104 GwBG-E",
+  "oldText": null,
+  "newText": "Das periodische Zwangsgeld ist für jeden Tag des Verstoßes zu zahlen und beträgt bei natürlichen Personen bis zu zwei Prozent des Nettotagesumsatzes nach Satz 3 sowie bei juristischen Personen und rechtsfähigen Personengesellschaften bis zu drei Prozent des durchschnittlichen Nettotagesumsatzes nach Satz 3.",
+  "s": {
+   "de": "Neu: tägliches, umsatzbezogenes Zwangsgeld bis 3 Prozent des durchschnittlichen Nettotagesumsatzes (natürliche Personen 2 Prozent), wenn Anordnungen nach § 103 Abs. 2 nicht oder nicht fristgerecht befolgt werden. Es läuft bis zu sechs Monate und kann um weitere sechs Monate verlängert werden. Widerspruch und Klage haben keine aufschiebende Wirkung. Rechenbeispiel (eigene Rechnung): bei 1 Mrd. Euro Jahresnettoumsatz bis zu rund 82.000 Euro je Tag, über sechs Monate rund 15 Mio. Euro. Das bisherige BaFin-Zwangsgeld nach § 17 FinDAG (bis 2,5 Mio. Euro) bleibt daneben.",
+   "en": "New: daily turnover-based periodic penalty of up to 3 percent of average net daily turnover (natural persons 2 percent) where orders under section 103(2) are not complied with or not on time. It runs for up to six months and can be extended by a further six. Objection and action have no suspensory effect. Worked example (own calculation): at EUR 1bn annual net turnover up to about EUR 82,000 per day, about EUR 15m over six months. BaFin's existing coercive penalty under section 17 FinDAG (up to EUR 2.5m) remains alongside."
+  },
+  "act": {
+   "de": "Anordnungen der Aufsicht ohne Verzug umsetzen und Fristverlängerung früh beantragen: Verzug kostet künftig täglich nach Umsatz und nicht mehr in Einmalbeträgen.",
+   "en": "Implement supervisory orders without delay and request extensions early: delay will cost daily by turnover rather than in one-off amounts."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 104; Normtext § 104 Abs. 1 bis 4; § 17 FinDAG"
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 57 Abs. 1 Satz 1 GwG",
+  "newRef": "§ 121 Abs. 1 Satz 1 GwBG-E",
+  "oldText": "haben bestandskräftige Maßnahmen und unanfechtbare Bußgeldentscheidungen, die sie wegen eines Verstoßes gegen dieses Gesetz, die auf seiner Grundlage erlassenen Rechtsverordnungen oder die Bestimmungen der Verordnung (EU) 2023/1113 verhängt haben, nach Unterrichtung des Adressaten der Maßnahme oder Bußgeldentscheidung auf ihrer Internetseite oder auf einer gemeinsamen Internetseite bekannt zu machen.",
+  "newText": "haben folgende Maßnahmen, die sie wegen eines Verstoßes gegen dieses Gesetz, die auf seiner Grundlage erlassenen Rechtsverordnungen oder gegen die Bestimmungen der Verordnungen (EU) 2024/1624 und (EU) 2023/1113 verhängt haben, auf ihrer Internetseite oder auf einer gemeinsamen Internetseite in einem allgemein zugänglichen Format bekannt zu machen, sobald die Adressaten der Maßnahme über diese in Kenntnis gesetzt wurden:",
+  "s": {
+   "de": "Veröffentlicht wird künftig, sobald der Adressat informiert ist, auch bei noch anfechtbaren Entscheidungen; heute erst nach Bestandskraft oder Unanfechtbarkeit. Neu im Kreis: verwaltungsrechtliche Maßnahmen (§ 103 Abs. 2 Nr. 3 bis 8) und periodische Zwangsgelder, jeweils mit Höhe. Aufschub bis Ablauf der Rechtsbehelfsfrist nur bei nicht schwerwiegenden Maßnahmen. Anonymisierung, Aufschub bei Gefahr für Finanzmarktstabilität und die Fünf-Jahres-Frist bleiben.",
+   "en": "Publication will occur as soon as the addressee has been informed, even for decisions that can still be challenged; today only after they become final. New in scope: administrative measures (section 103(2) nos. 3 to 8) and periodic penalties, each with the amount. Deferral until the appeal period ends only for non-serious measures. Anonymisation, deferral for threats to financial stability and the five-year period remain."
+  },
+  "act": {
+   "de": "Kommunikations- und Rechtsbehelfsstrategie vorbereiten: Die Reputationswirkung tritt vor Rechtskraft ein; der Ausgang des Rechtsbehelfs wird nachveröffentlicht (§ 121 Abs. 3).",
+   "en": "Prepare a communications and appeals strategy: the reputational effect occurs before finality; the outcome of any appeal is published afterwards (section 121(3))."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 121 Abs. 1 bis 3"
+ },
+ {
+  "g": "transition",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 122 Abs. 1 GwBG-E",
+  "oldText": null,
+  "newText": "Ordnungswidrigkeiten nach § 56 des Geldwäschegesetzes, die vor dem 10. Juli 2027 begangen wurden, können abweichend von § 4 Absatz 3 des Gesetzes über Ordnungswidrigkeiten nach den zum Zeitpunkt der Tat geltenden Bestimmungen geahndet werden.",
+  "s": {
+   "de": "Verstöße bis 09.07.2027 bleiben nach altem Recht ahndbar, auch nach Aufhebung des GwG und auch in laufenden Verfahren. Das Meistbegünstigungsprinzip (§ 4 Abs. 3 OWiG) wird bewusst ausgeschlossen, damit keine Ahndungslücke entsteht.",
+   "en": "Breaches up to 9 July 2027 remain punishable under the old law, even after the GwG is repealed and in pending proceedings. The most-favourable-law principle (section 4(3) OWiG) is deliberately disapplied to avoid a gap in enforcement."
+  },
+  "act": {
+   "de": "Altfälle und offene Prüfungsfeststellungen bis 09.07.2027 nicht als erledigt behandeln: Der Stichtag entlastet nicht.",
+   "en": "Do not treat legacy cases and open audit findings as closed on 9 July 2027: the cut-off date gives no relief."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Begründung zu § 122 Abs. 1"
+ },
+ {
+  "g": "transition",
+  "kind": "removed",
+  "oldRef": "GwG vom 23.06.2017",
+  "newRef": "Art. 2 und 19 GwBG-E",
+  "oldText": null,
+  "newText": "Das Geldwäschegesetz vom 23. Juni 2017 […] wird aufgehoben. […] Das Gesetz tritt am 10. Juli 2027 in Kraft.",
+  "s": {
+   "de": "Das GwG wird aufgehoben, das GwBG-E tritt am 10.07.2027 in Kraft, dem Tag, ab dem die Geldwäscheverordnung unmittelbar gilt. Gleichzeitig entfällt die Zahlungskonto-Identitätsprüfungsverordnung (Art. 18), und die geldwäscherechtlichen Vorschriften in KWG, ZAG, WpIG, VAG und KMAG werden angepasst. Eine allgemeine Übergangsfrist für Verpflichtete sieht der Entwurf nicht vor. Gestaffelt gelten 30.06.2028 (Schnittstelle Unstimmigkeitsmeldungen) und 10.07.2029 (Profifußball, Zugangsstelle Immobilien, laut Kanzleikommentierung auch Inhaberaktien).",
+   "en": "The GwG is repealed and the GwBG-E enters into force on 10 July 2027, the day the AML Regulation applies directly. The payment account identity verification ordinance (Art. 18) lapses at the same time, and the AML provisions in the KWG, ZAG, WpIG, VAG and KMAG are adjusted. The draft provides no general transitional period for obliged entities. Staggered dates apply: 30 June 2028 (discrepancy-report interface) and 10 July 2029 (professional football, property access point, bearer shares according to law-firm commentary)."
+  },
+  "act": {
+   "de": "Projektplan auf den Stichtag 10.07.2027 ausrichten: Richtlinien, Risikoanalyse, Schulungen und Meldeprozesse müssen am Tag der Geltung stehen.",
+   "en": "Align the project plan to 10 July 2027: policies, risk assessment, training and reporting processes must be in place on the day of application."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Art. 2, 18, 19 GwBG-E; Begründung zu Art. 19"
+ },
+ {
+  "g": "cdd",
+  "kind": "removed",
+  "oldRef": "§§ 10 bis 15 GwG",
+  "newRef": "Art. 19 ff. VO (EU) 2024/1624; Bußgeld: § 119 Abs. 1 Nr. 17 bis 38 GwBG-E",
+  "oldText": null,
+  "newText": null,
+  "s": {
+   "de": "Die Sorgfaltspflichten (Identifizierung, wirtschaftlich Berechtigter, Zweck der Geschäftsbeziehung, laufende Überwachung, verstärkte Sorgfaltspflichten) stehen ab 10.07.2027 nicht mehr im GwG, sondern unmittelbar in der Geldwäscheverordnung. Das GwBG-E regelt dazu nur noch die Bußgeldbewehrung (§ 119 Abs. 1 Nr. 17 bis 38 mit Verweisen auf Art. 20, 21, 25, 26, 29, 33, 34, 36 und 37 AMLR). Der Bußgeldkatalog nennt ausdrücklich Überprüfungen binnen zwei Jahren (Art. 26 Abs. 4 und Art. 33 Abs. 4 AMLR). Der Inhalt der AMLR-Pflichten selbst ist nicht Gegenstand dieses Vergleichs.",
+   "en": "From 10 July 2027 the due diligence duties (identification, beneficial owner, purpose of the relationship, ongoing monitoring, enhanced due diligence) are no longer in the GwG but directly in the AML Regulation. The GwBG-E only regulates the fines (section 119(1) nos. 17 to 38 referring to Arts. 20, 21, 25, 26, 29, 33, 34, 36 and 37 AMLR). The fines catalogue expressly mentions reviews within two years (Art. 26(4) and Art. 33(4) AMLR). The content of the AMLR duties themselves is outside this comparison."
+  },
+  "act": {
+   "de": "KYC-Arbeitsanweisungen und Aktualisierungszyklen gegen die AMLR statt gegen das GwG abgleichen und den Bezug in Richtlinien und Prüfplänen umstellen.",
+   "en": "Check KYC procedures and review cycles against the AMLR instead of the GwG and update references in policies and audit plans."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Normtext § 119 Abs. 1 Nr. 17 bis 38; Allgemeiner Teil II"
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "§ 2 Abs. 1 GwG",
+  "newRef": "§ 2 Abs. 2 GwBG-E",
+  "oldText": "Verpflichtete im Sinne dieses Gesetzes sind, soweit sie in Ausübung ihres Gewerbes oder Berufs handeln",
+  "newText": "Verpflichtete sind solche nach Artikel 3 der Verordnung (EU) 2024/1624 und nach § 3, ungeachtet ihrer Rechtsform, soweit sie nicht nach § 4 in Verbindung mit den Artikeln 4 bis 6 der Verordnung (EU) 2024/1624 ausgenommen sind.",
+  "act": {
+   "de": "Prüfen, ob das Institut unter Art. 3 VO (EU) 2024/1624 oder § 3 GwBG-E fällt, und Gruppeneinheiten einzeln zuordnen.",
+   "en": "Check whether the institution falls under Art. 3 of Regulation (EU) 2024/1624 or § 3 GwBG-E and map each group entity."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 2 Abs. 2 GwBG-E; Begründung zu § 1 Abs. 2 GwBG-E",
+  "s": {
+   "de": "Der Verpflichtetenkatalog des GwG entfällt. Wer Verpflichteter ist, bestimmt künftig Art. 3 der EU-Geldwäscheverordnung, ergänzt um nationale Zusatzfälle in § 3 GwBG-E. Die Verordnung gilt unmittelbar ab dem 10. Juli 2027.",
+   "en": "The GwG list of obliged entities falls away. Who is obliged is now set by Art. 3 of the EU AML Regulation, supplemented by national additions in § 3 GwBG-E. The Regulation applies directly from 10 July 2027."
+  }
+ },
+ {
+  "g": "scope",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 3 Abs. 1 GwBG-E",
+  "oldText": null,
+  "newText": "Institute, die als Bankgeschäft ausschließlich das Einlagengeschäft nach § 1 Absatz 1 Satz 2 Nummer 1 des Kreditwesengesetzes betreiben, ohne ein Kreditinstitut im Sinne von Artikel 4 Absatz 1 Nummer 1 der Verordnung (EU) 575/2013 zu sein",
+  "act": {
+   "de": "Betroffene Institute bestätigen, dass sie weiterhin erfasst sind und die Verordnung in vollem Umfang anwenden.",
+   "en": "Affected institutions should confirm they remain in scope and apply the Regulation in full."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 3 GwBG-E",
+  "s": {
+   "de": "National bleiben drei Gruppen zusätzlich Verpflichtete: reine Einlageninstitute, Institute mit Emissionsgeschäft ausschließlich in Nicht-MiFID-Finanzinstrumenten sowie Institute mit qualifiziertem Kryptoverwahrgeschäft oder Kryptowertpapierregisterführung. Auf sie ist die Verordnung vollständig anzuwenden (§ 3 Abs. 2). Laut Begründung waren sie bereits bisher Verpflichtete.",
+   "en": "Three groups remain obliged entities under national law in addition: pure deposit-taking institutions, institutions with issuing business solely in non-MiFID instruments, and institutions providing qualified crypto custody or crypto securities register keeping. The Regulation applies to them in full (§ 3(2)). Per the explanatory memorandum they were already obliged entities before."
+  }
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "§ 45 Abs. 1 Satz 2 GwG",
+  "newRef": "§ 6 Abs. 1 und 2 GwBG-E",
+  "oldText": "Verpflichtete nach § 2 Absatz 1 haben sich unabhängig von der Abgabe einer Verdachtsmeldung bei der Zentralstelle für Finanztransaktionsuntersuchungen elektronisch zu registrieren.",
+  "newText": "Verpflichtete haben sich bei Aufnahme ihrer die Eigenschaft als Verpflichtete begründenden Tätigkeit bei der Zentralstelle für Finanztransaktionsuntersuchungen elektronisch zu registrieren.",
+  "act": {
+   "de": "Prüfen, ob die FIU-Registrierung vorliegt und bei Neugründungen oder neuen Tätigkeiten zum Start erfolgt.",
+   "en": "Check the FIU registration exists and is completed at the start of new entities or activities."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 6 Abs. 1 und 2 GwBG-E",
+  "s": {
+   "de": "Die FIU-Registrierung bleibt, bekommt aber einen festen Zeitpunkt: Aufnahme der Tätigkeit. Zusätzlich müssen sich Verpflichtete bei ihrer Aufsichtsbehörde registrieren, außer sie haben bereits eine Erlaubnis oder Zulassung nach anderen Vorschriften. Erlaubnispflichtige Institute sind damit von der zweiten Registrierung ausgenommen.",
+   "en": "FIU registration remains but now has a fixed trigger: start of the activity. Obliged entities must also register with their supervisor unless they already hold a licence or authorisation under other rules. Licensed institutions are therefore exempt from the second registration."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "changed",
+  "oldRef": "§ 25h Abs. 1 KWG",
+  "newRef": "§ 25h Abs. 1 Satz 1 KWG (Art. 4 Nr. 5 GwBG-E)",
+  "oldText": "den §§ 4 bis 6 des Geldwäschegesetzes",
+  "newText": "Kapitel II der Verordnung (EU) 2024/1624",
+  "act": {
+   "de": "Bankinterne Verweise auf GwG-Normen im Regelwerk und in Prüfungsplänen auf die neuen Fundstellen umstellen.",
+   "en": "Update bank-internal references to GwG provisions in policies and audit plans to the new citations."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Art. 4 Nr. 5 GwBG-E",
+  "s": {
+   "de": "§ 25h KWG (institutsinterne Vorkehrungen) bleibt bestehen, verweist aber auf die Verordnung: Kapitel II statt §§ 4 bis 6 GwG, Art. 20 Abs. 1 Buchst. f und Art. 26 statt § 10 Abs. 1 Nr. 5 GwG, Kapitel III Abschnitt 4 statt § 15 GwG, Art. 77 statt § 8 GwG und Art. 11 Abs. 2 statt § 7 GwG. Abs. 3 Satz 4 entfällt.",
+   "en": "§ 25h KWG (institution-internal arrangements) remains but now refers to the Regulation: Chapter II instead of §§ 4 to 6 GwG, Art. 20(1)(f) and Art. 26 instead of § 10(1) no. 5 GwG, Chapter III Section 4 instead of § 15 GwG, Art. 77 instead of § 8 GwG, and Art. 11(2) instead of § 7 GwG. Paragraph 3 sentence 4 is deleted."
+  }
+ },
+ {
+  "g": "risk",
+  "kind": "removed",
+  "oldRef": "§§ 25i bis 25m KWG",
+  "newRef": null,
+  "oldText": null,
+  "newText": null,
+  "act": {
+   "de": "Interne Anweisungen und Prüfprogramme von Verweisen auf §§ 25i bis 25m KWG bereinigen.",
+   "en": "Remove references to §§ 25i to 25m KWG from internal instructions and audit programmes."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Art. 4 Nr. 1, 6 und 16 GwBG-E; Begründung zu Art. 4 Nr. 6 und 16",
+  "s": {
+   "de": "Die §§ 25i bis 25m KWG werden gestrichen; die Inhaltsübersicht führt sie als weggefallen. Die Begründung nennt nur den Übergang der maßgeblichen Vorschriften auf die EU-Ebene, ohne die Inhalte im Einzelnen zu benennen. Ebenso entfallen in § 56 KWG die Bußgeldnummern 11h bis 13 und Absatz 4; Bußgelder für Verstöße gegen VO (EU) 2023/1113 stehen künftig in § 118 GwBG-E.",
+   "en": "§§ 25i to 25m KWG are deleted; the table of contents lists them as repealed. The memorandum only refers to the transfer of the relevant rules to EU level without naming the contents. Likewise, § 56 KWG loses fine items 11h to 13 and paragraph 4; fines for breaches of Regulation (EU) 2023/1113 will be in § 118 GwBG-E."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 23a Abs. 2 GwG",
+  "newRef": "§ 28 Abs. 2 GwBG-E",
+  "oldText": "Die registerführende Stelle hat auf der Internetseite des Transparenzregisters deutlich sichtbar eine Vorkehrung einzurichten, über die Unstimmigkeitsmeldungen nach Absatz 1 abzugeben sind.",
+  "newText": "Die registerführende Stelle hat auf der Internetseite des Transparenzregisters deutlich sichtbar eine Vorkehrung einzurichten, über die Unstimmigkeitsmeldungen nach Absatz 1 und nach Artikel 24 Absatz 1 Verordnung (EU) 2024/1624 abzugeben sind.",
+  "act": {
+   "de": "Prüfen, ob Meldungen künftig über die Schnittstelle automatisiert aus dem KYC-Prozess abgegeben werden können.",
+   "en": "Check whether reports can be submitted automatically from the KYC process via the new interface."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 28 GwBG-E",
+  "s": {
+   "de": "Das Meldeportal gilt auch für Meldungen nach Art. 24 Abs. 1 der Verordnung. Neu ist eine Schnittstelle zur automatisierten Abgabe von Unstimmigkeitsmeldungen (§ 28 Abs. 2 Satz 2).",
+   "en": "The reporting portal also covers reports under Art. 24(1) of the Regulation. New: an interface for automated submission of discrepancy reports (§ 28(2) sentence 2)."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 31 Abs. 2 GwBG-E",
+  "oldText": null,
+  "newText": "Die Erfüllung der Mitwirkungspflicht, zu der ein Erstattender einer Unstimmigkeitsmeldung, eine betroffene Vereinigung oder eine Rechtsvereinbarung nach § 30 Absatz 2 aufgefordert wurde, kann mit Zwangsmitteln nach dem Verwaltungs-Vollstreckungsgesetz durchgesetzt werden. Die Höhe des Zwangsgeldes beträgt bis zu 500 000 Euro.",
+  "act": {
+   "de": "Rückfragen der registerführenden Stelle fristgerecht beantworten, auch als Meldender und als Rechtseinheit.",
+   "en": "Answer register queries on time, both as reporter and as reporting legal entity."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu §§ 30, 31 GwBG-E",
+  "s": {
+   "de": "Wer bei der Prüfung einer Unstimmigkeit nicht mitwirkt, kann per Verwaltungsakt dazu aufgefordert werden (§ 30 Abs. 2). Die Mitwirkung ist dann mit Zwangsgeld bis 500.000 Euro durchsetzbar; Widerspruch und Klage haben keine aufschiebende Wirkung (§ 30 Abs. 3).",
+   "en": "Non-cooperation in a discrepancy review can be ordered by administrative act (§ 30(2)). Cooperation is then enforceable by a coercive fine of up to EUR 500,000; objection and action have no suspensive effect (§ 30(3))."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 23 Abs. 1 Satz 1 Nr. 2 GwG",
+  "newRef": "§ 25 Abs. 1 GwBG-E",
+  "oldText": "sofern sie der registerführenden Stelle darlegen, dass die Einsichtnahme zur Erfüllung ihrer Sorgfaltspflichten in einem der in § 10 Absatz 3 und 3a genannten Fälle erfolgt",
+  "newText": "Verpflichtete haben der registerführenden Stelle darzulegen, dass die Einsichtnahme zur Erfüllung ihrer Sorgfaltsmaßnahmen in einem der in Kapitel III der Verordnung (EU) 2024/1624 genannten Fälle erfolgt.",
+  "act": {
+   "de": "Registerabrufe auf Anlässe nach Kapitel III der Verordnung beschränken und die Darlegung dokumentieren.",
+   "en": "Limit register look-ups to Chapter III triggers and document the justification."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 25 GwBG-E",
+  "s": {
+   "de": "Institute dürfen weiter Einsicht nehmen, müssen aber darlegen, dass sie für Sorgfaltsmaßnahmen in einem Fall des Kapitels III der Verordnung handeln. Der Verweis auf § 10 Abs. 3 und 3a GwG entfällt. Einsichtnahme und Datenübermittlung sind ausschließlich für eigene Sorgfaltsmaßnahmen zulässig (§ 25 Abs. 8).",
+   "en": "Institutions may continue to inspect the register but must show that they act for due diligence in a case under Chapter III of the Regulation. The reference to § 10(3) and (3a) GwG falls away. Inspection and data transfer are permitted solely for own due diligence (§ 25(8))."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 23 Abs. 1 Satz 4 GwG",
+  "newRef": "§ 25 Abs. 2 Satz 3 GwBG-E",
+  "oldText": "Gegenüber den Behörden, Gerichten, den in § 2 Absatz 4 genannten Stellen und gegenüber Verpflichteten nach § 2 Absatz 1 Nummer 1 bis 3 und 7 sowie gegenüber Notaren sind zusätzlich die Angaben nach § 19a zu allen im Transparenzregister erfassten Immobilien der Einsichtnahme zugänglich",
+  "newText": "Gegenüber den Behörden nach Absatz 1 Nummer 1 Buchstabe a und b, Gerichten, den in § 5 Absatz 2 genannten Stellen und gegenüber Notaren sind zusätzlich die Angaben nach § 15 zu allen im Transparenzregister erfassten Immobilien der Einsichtnahme zugänglich zu machen",
+  "act": {
+   "de": "Prozesse prüfen, die Immobilienangaben aus dem Transparenzregister nutzen, und Ersatzquellen festlegen.",
+   "en": "Review processes that use real estate data from the register and define alternative sources."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 29 GwBG-E",
+  "s": {
+   "de": "Kredit- und Finanzinstitute und andere Verpflichtete (bisher Nr. 1 bis 3 und 7) verlieren den Zugriff auf die Immobiliendaten im Transparenzregister. Die Begründung nennt das ausdrücklich bei § 29.",
+   "en": "Credit and financial institutions and other obliged entities (formerly nos. 1 to 3 and 7) lose access to the real estate data in the register. The explanatory memorandum says so expressly at § 29."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 23 Abs. 2 Satz 4 GwG",
+  "newRef": "§ 25 Abs. 4 Satz 5 GwBG-E",
+  "oldText": "Die Beschränkung der Einsichtnahme und Übermittlung nach Satz 1 ist nicht möglich gegenüber Behörden, Gerichten und den in § 2 Absatz 4 genannten Stellen, gegenüber Verpflichteten nach § 2 Absatz 1 Nummer 1 bis 3 und 7 sowie gegenüber Notaren.",
+  "newText": "Die Beschränkung der Einsichtnahme und Übermittlung nach Satz 1 ist nicht möglich gegenüber den in Absatz 1 Nummer 1 genannten Behörden, Gerichten und in § 5 Absatz 2 genannten Stellen sowie gegenüber Notaren.",
+  "act": {
+   "de": "Verfahren für beschränkte Registereinträge vorsehen (Rückfrage beim Kunden, Nachweise) und Klärung im Gesetzgebungsverfahren beobachten.",
+   "en": "Plan a procedure for restricted register entries (customer query, evidence) and watch for clarification in the legislative process."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 25 GwBG-E",
+  "s": {
+   "de": "Nach dem Normtext fehlen die Verpflichteten in der Liste, gegenüber denen eine Beschränkung der Einsicht ausgeschlossen ist. Heute können wirtschaftlich Berechtigte Institute nicht aussperren. Ob das gewollt ist, bleibt unklar: Die Begründung nennt § 25 Abs. 4 unverändert.",
+   "en": "By the wording, obliged entities are missing from the list against which restricting access is excluded. Today beneficial owners cannot shut institutions out. Whether this is intended is unclear: the memorandum describes § 25(4) as unchanged."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 18 Abs. 3 GwG",
+  "newRef": "§ 21 Abs. 1 GwBG-E",
+  "oldText": "kann die registerführende Stelle von der in der Mitteilung genannten Vereinigung verlangen, dass diese die für eine Eintragung in das Transparenzregister erforderlichen Informationen innerhalb einer angemessenen Frist übermittelt",
+  "newText": "kann die registerführende Stelle von der in der Mitteilung genannten Vereinigung, von einer vertretungsberechtigten Person nach § 20 und von dem wirtschaftlichen und rechtlichen Eigentümer verlangen, dass diese die für die Ermittlung und Überprüfung der für die Eintragung in das Transparenzregister erforderlichen Informationen und Unterlagen innerhalb einer angemessenen Frist, höchstens jedoch innerhalb von 10 Werktagen, übermitteln",
+  "act": {
+   "de": "Als mitteilungspflichtige Rechtseinheit (eigene Eigentümerstruktur) Zuständigkeit für die 10-Werktage-Frist und den Registrierungsnachweis festlegen.",
+   "en": "As a reporting legal entity (own ownership structure), assign ownership for the 10-working-day deadline and the registration proof."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 21 GwBG-E",
+  "s": {
+   "de": "Die registerführende Stelle prüft Mitteilungen risikobasiert, soll nach 20 Werktagen fertig sein, kann Eintragung und Registrierungsnachweis zurückstellen oder verweigern und prüft eingetragene Angaben mindestens jährlich. Rückfragen sind binnen höchstens 10 Werktagen zu beantworten, auch von wirtschaftlich Eigentümern.",
+   "en": "The register authority reviews notifications on a risk basis, aims to finish within 20 working days, may defer or refuse registration and its proof, and re-checks entries at least annually. Queries must be answered within 10 working days at most, including by beneficial owners."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "removed",
+  "oldRef": "§ 20 Abs. 1 Satz 1 GwG",
+  "newRef": "Art. 63 ff. VO (EU) 2024/1624",
+  "oldText": "haben die in § 19 Absatz 1 aufgeführten Angaben zu den wirtschaftlich Berechtigten dieser Vereinigungen einzuholen, aufzubewahren, auf aktuellem Stand zu halten und der registerführenden Stelle unverzüglich zur Eintragung in das Transparenzregister mitzuteilen",
+  "newText": null,
+  "act": {
+   "de": "Eigene Mitteilung des Instituts zum wirtschaftlichen Eigentümer prüfen und eine vertretungsberechtigte Person benennen.",
+   "en": "Check the institution's own beneficial-ownership notification and appoint an authorised representative."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu §§ 18, 20 GwBG-E",
+  "s": {
+   "de": "Die Mitteilungspflicht der Rechtseinheiten folgt künftig aus den Art. 63 ff. der Verordnung. Das GwBG-E regelt nur Form, Vorbelegung durch die registerführende Stelle und Änderungsmitteilungen. Die Vorbelegung entbindet nicht von der Mitteilung vollständiger und richtiger Daten und setzt eine benannte vertretungsberechtigte Person voraus.",
+   "en": "The notification duty of legal entities will follow from Art. 63 et seq. of the Regulation. The GwBG-E only governs form, pre-filling by the register authority and change notices. Pre-filling does not relieve the entity of reporting complete and correct data and requires a named authorised representative."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 32 Abs. 1 und 3 GwBG-E",
+  "oldText": null,
+  "newText": "Vereinigungen und Rechtsvereinbarungen, bei denen die Nichterfüllung einer Mitteilungspflicht nach § 30 Absatz 1 bestandskräftig festgestellt wurde, werden durch die registerführende Stelle inaktiviert. […] Ab Eintragung des Inaktivierungsvermerks gilt Artikel 21 Absatz 1 und 2 der Verordnung (EU) 2024/1624 entsprechend.",
+  "act": {
+   "de": "Inaktivierungsvermerke bei Kunden im Onboarding und Review als Prüfhinweis berücksichtigen; Folgen nach Art. 21 der Verordnung gesondert klären.",
+   "en": "Treat deactivation notes on customers as a flag at onboarding and review; clarify the consequences under Art. 21 of the Regulation separately."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 32 GwBG-E",
+  "s": {
+   "de": "Rechtseinheiten, die ihre Mitteilung trotz bestandskräftiger Feststellung nicht nachholen, werden inaktiviert, frühestens sechs Wochen nach Bestandskraft, und im Register sichtbar vermerkt. Aufhebung nur auf Antrag über die Registerseite nach erfolgreicher Prüfung und ohne offene Unstimmigkeitsverfahren, gebührenpflichtig (§ 33 Abs. 3).",
+   "en": "Legal entities that fail to file despite a final finding are deactivated, at the earliest six weeks after the finding becomes final, with a visible register note. Reversal only on application via the register website after successful review and without open discrepancy proceedings, for a fee (§ 33(3))."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 23 Abs. 4 GwBG-E",
+  "oldText": null,
+  "newText": "Die Pflicht Dritter zur eigenständigen Prüfung des Vorliegens gezielter finanzieller Sanktionen bleibt unberührt. Die registerführende Stelle ist nicht für Maßnahmen verantwortlich, die Dritte aufgrund von vorhandenen oder fehlenden Hinweisen nach Absatz 2 und 3 treffen.",
+  "act": {
+   "de": "Sanktionsvermerke im Register als zusätzliches Signal nutzen, die eigene Screening-Pflicht aber nicht reduzieren.",
+   "en": "Use register sanctions flags as an extra signal, but do not reduce own screening."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 23 GwBG-E",
+  "s": {
+   "de": "Die registerführende Stelle gleicht Register und Mitteilungen mit Sanktionslisten ab (bei Eingang, unverzüglich nach Veröffentlichung, mindestens halbjährlich) und vermerkt Treffer sichtbar im Auszug, auch bei Kontrolle durch Sanktionierte. Ein fehlender Hinweis ersetzt die eigene Sanktionsprüfung der Institute nicht.",
+   "en": "The register authority screens the register and notifications against sanctions lists (on receipt, promptly after publication, at least semi-annually) and shows hits visibly in the extract, also for control by sanctioned persons. A missing flag does not replace institutions' own sanctions screening."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "changed",
+  "oldRef": "§ 32 Abs. 2 GwG",
+  "newRef": "§ 59 Abs. 2 GwBG-E",
+  "oldText": "Stellt die Zentralstelle für Finanztransaktionsuntersuchungen bei der operativen Analyse fest, dass ein Vermögensgegenstand mit Geldwäsche, mit Terrorismusfinanzierung oder mit einer sonstigen Straftat im Zusammenhang steht, übermittelt sie das Ergebnis ihrer Analyse sowie alle sachdienlichen Informationen unverzüglich an die zuständigen Strafverfolgungsbehörden.",
+  "newText": "Stellt die Zentralstelle für Finanztransaktionsuntersuchungen bei der operativen Analyse fest, dass ein Vermögensgegenstand mit Geldwäsche, kriminellen Tätigkeiten oder Terrorismusfinanzierung im Zusammenhang steht, übermittelt sie das Ergebnis ihrer Analyse sowie alle sachdienlichen Informationen unverzüglich an die zuständigen Strafverfolgungsbehörden.",
+  "act": {
+   "de": "Meldekriterien und Fallbewertung auf den engeren Begriff der mit Geldwäsche zusammenhängenden kriminellen Tätigkeiten prüfen.",
+   "en": "Check reporting criteria and case assessment against the narrower concept of criminal activities related to money laundering."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 59 Abs. 2 GwBG-E",
+  "s": {
+   "de": "Der Fokus der FIU verengt sich: Analyse und Weitergabe richten sich auf Geldwäsche, damit zusammenhängende kriminelle Tätigkeiten und Terrorismusfinanzierung statt auf jede „sonstige Straftat“. Die Begründung nennt dies angeglichen an die gegenüber dem geltenden Recht eingeschränkte Meldepflicht nach Art. 69 AMLR.",
+   "en": "The FIU's focus narrows: analysis and onward transfer target money laundering, related criminal activities and terrorist financing instead of any \"other offence\". The explanatory memorandum says this aligns with the narrower reporting duty under Art. 69 AMLR compared with current law."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "changed",
+  "oldRef": "§ 43 Abs. 5 GwG",
+  "newRef": "§ 72 Abs. 2 GwBG-E",
+  "oldText": "Die Zentralstelle für Finanztransaktionsuntersuchungen kann im Benehmen mit Aufsichtsbehörden typisierte Transaktionen bestimmen, die stets nach Absatz 1 zu melden sind.",
+  "newText": "Die Zentralstelle für Finanztransaktionsuntersuchungen kann im Benehmen mit Aufsichtsbehörden Transaktionen beschreiben, die stets nach Artikel 69 Absatz 1 Unterabsatz 1 Buchstabe a der Verordnung (EU) 2024/1624 oder § 73 zu melden sind.",
+  "act": {
+   "de": "FIU-Typologien und Hinweise zu stets meldepflichtigen Fällen weiter als Meldekriterien berücksichtigen.",
+   "en": "Keep treating FIU typologies for always-reportable cases as reporting criteria."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 72 GwBG-E",
+  "s": {
+   "de": "Die FIU kann weiter Typologien beschreiben, die stets zu melden sind (Verweis nun auf Art. 69 AMLR). Neu: Typisierung auch für Meldungen der Aufsichtsbehörden. § 72 Abs. 1 (Meldung gilt zugleich als Selbstanzeige nach § 261 Abs. 8 StGB) und Abs. 3 (Verordnungsermächtigung für Pflichtmeldungen bei Grunderwerb, bisher § 43 Abs. 6 GwG) übernehmen das geltende Recht.",
+   "en": "The FIU can still describe typologies that must always be reported (now referring to Art. 69 AMLR). New: typification also covers reports by supervisors. § 72 para. 1 (report counts as self-disclosure under § 261 para. 8 StGB) and para. 3 (ordinance power for mandatory reports on real estate acquisitions, formerly § 43 para. 6 GwG) carry over current law."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "changed",
+  "oldRef": "§ 45 Abs. 1 bis 3 GwG",
+  "newRef": "§ 74 Abs. 1 bis 3 GwBG-E",
+  "oldText": "Die Meldung nach § 43 Absatz 1 oder § 44 hat elektronisch zu erfolgen. […] Bei einer Störung der elektronischen Datenübermittlung ist die Übermittlung auf dem Postweg zulässig.",
+  "newText": "Die Meldungen und Mitteilungen im Sinne von § 46 Absatz 1 Satz 3 Nummer 1 Buchstabe a bis c haben elektronisch zu erfolgen. Bei einer Störung der elektronischen Datenübermittlung ist die Übermittlung auf dem Postweg zulässig.",
+  "act": {
+   "de": "Registrierung bei der FIU und Meldeweg prüfen und Format-Vorgaben der kommenden Verordnung beobachten.",
+   "en": "Check registration with the FIU and the filing channel and watch for format rules in the forthcoming ordinance."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 74 GwBG-E",
+  "s": {
+   "de": "Elektronische Meldung bleibt Pflicht, Postweg nur bei Störung oder genehmigter Härtefallausnahme (amtlicher Vordruck). Die Registrierung bei der FIU steht künftig in § 6 Abs. 1 GwBG-E. Eine Rechtsverordnung des BMF zu Angaben und Form gilt nur, solange kein Durchführungsrechtsakt der Kommission nach Art. 69 Abs. 4 AMLR etwas Abweichendes regelt. Das Zurückgreifen auf Dritte (§ 45 Abs. 4 GwG) findet sich in § 74 nicht: unklar.",
+   "en": "Electronic filing stays mandatory; postal filing only for outages or approved hardship exemptions (official form). Registration with the FIU moves to § 6 para. 1 GwBG-E. A BMF ordinance on content and form applies only as long as no Commission implementing act under Art. 69 para. 4 AMLR provides otherwise. Reliance on third parties (§ 45 para. 4 GwG) does not appear in § 74: unclear."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 54 Abs. 1 und 2 GwBG-E",
+  "oldText": null,
+  "newText": "Die Informationen nach Satz 1 sind von den Verpflichteten für einen von der Zentralstelle für Finanztransaktionsuntersuchungen festgelegten Zeitraum, der sechs Monate nicht übersteigen darf, zu berücksichtigen.",
+  "act": {
+   "de": "Prozess für Eingang, Auswertung und Umsetzung von FIU-Hinweisen in Kundensorgfalt und Monitoring einrichten.",
+   "en": "Set up a process to receive, assess and apply FIU notices in customer due diligence and monitoring."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 54 GwBG-E",
+  "s": {
+   "de": "Neu: Die FIU kann Institute jederzeit über aktuelle Risiken informieren (Transaktionsarten, Personen mit erheblichem Risiko, Gebiete). Diese Hinweise sind für einen von der FIU festgelegten Zeitraum von höchstens sechs Monaten bei den Sorgfaltsmaßnahmen zu berücksichtigen. Zusätzlich gibt es jährlich oder anlassbezogen strategische Typologien.",
+   "en": "New: the FIU can inform institutions at any time about current risks (transaction types, persons with a significant risk, areas). These notices must be taken into account in due diligence for a period set by the FIU of at most six months. In addition, strategic typologies are provided annually or ad hoc."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "changed",
+  "oldRef": "§ 41 Abs. 1 und 2 GwG",
+  "newRef": "§ 70 Abs. 1 und 2 GwBG-E",
+  "oldText": "Die Zentralstelle für Finanztransaktionsuntersuchungen bestätigt dem Verpflichteten, der eine Meldung nach § 43 Absatz 1 durch elektronische Datenübermittlung abgegeben hat, unverzüglich den Eingang seiner Meldung.",
+  "newText": "Die Zentralstelle für Finanztransaktionsuntersuchungen bestätigt dem Verpflichteten, dem Gericht oder der Behörde, der oder die eine Verdachtsmeldung oder Mitteilung nach § 46 Absatz 1 Satz 3 Nummer 1 Buchstabe a, b oder c durch elektronische Datenübermittlung abgegeben hat, unverzüglich den Eingang der Meldung.",
+  "act": {
+   "de": "Jährliche FIU-Rückmeldung in Meldequalität und Schulung auswerten und die Löschregel für Rückmeldedaten klären.",
+   "en": "Use the annual FIU feedback to improve report quality and training, and clarify the deletion rule for feedback data."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 70 GwBG-E",
+  "s": {
+   "de": "Eingangsbestätigung bleibt. Die Rückmeldung zur Relevanz „in angemessener Zeit“ wird durch eine Rückmeldung mindestens einmal jährlich zu Qualität, Zeitnähe, Verdachtsbeschreibung und Unterlagen ersetzt, nicht je Einzelmeldung, auch an Aufsicht und AMLA. Keine Pflicht bei Gefährdung laufender Analysen. Die bisherige Löschfrist von einem Jahr für Rückmeldedaten steht in § 70 nicht mehr: unklar.",
+   "en": "Acknowledgement of receipt stays. Feedback on relevance \"within reasonable time\" is replaced by feedback at least once a year on quality, timeliness, description of the suspicion and documents, not per individual report, also sent to supervisors and AMLA. No duty where ongoing analyses would be endangered. The former one-year deletion period for feedback data no longer appears in § 70: unclear."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 50 GwG",
+  "newRef": "§ 77 Abs. 1 und 3 GwBG-E",
+  "oldText": "Zuständige Aufsichtsbehörde für die Durchführung dieses Gesetzes ist",
+  "newText": "zuständige Behörde für die Aufsicht über die Durchführung der Verordnung (EU) 2024/1624 und dieses Gesetzes, soweit nicht die AMLA als Aufsichtsbehörde handelt,",
+  "act": {
+   "de": "Zuständige Aufsicht je Institutsart anhand der Aufzählung in § 77 Abs. 1 prüfen und Ansprechpartner anpassen.",
+   "en": "Check the competent supervisor per institution type against the list in § 77(1) and update contacts."
+  },
+  "aud": "all",
+  "imp": "medium",
+  "src": "Begründung zu § 77 GwBG-E",
+  "s": {
+   "de": "Die BaFin bleibt für Kredit- und Finanzinstitute zuständig, die Versicherungsaufsicht für Versicherungsunternehmen. Neu: Die Aufsicht erstreckt sich auch auf die Geldwäscheverordnung (VO (EU) 2024/1624), und die Zuständigkeit gilt nur, soweit nicht die AMLA selbst als Aufsichtsbehörde handelt. Für die Geldtransferverordnung (VO (EU) 2023/1113) ist die BaFin zuständig.",
+   "en": "The BaFin stays competent for credit and financial institutions, the insurance supervisor for insurers. New: supervision also covers the AML Regulation (Regulation (EU) 2024/1624), and competence applies only where AMLA does not act as supervisor itself. The BaFin is competent for the Transfer of Funds Regulation (Regulation (EU) 2023/1113)."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 51 Abs. 3 GwG",
+  "newRef": "§ 89 Abs. 1 bis 3 GwBG-E",
+  "oldText": "Häufigkeit und Intensität der Prüfungen haben sich am Risikoprofil der Verpflichteten",
+  "newText": "Häufigkeit und Intensität von Prüfungen vor Ort und andernorts sowie der themenbezogenen Prüfungen am Risikoprofil der Verpflichteten",
+  "act": {
+   "de": "Risikoprofil und Risikoeinstufung so dokumentieren, dass sie der aufsichtlichen Methodik standhalten, und mit themenbezogenen Prüfungen rechnen.",
+   "en": "Document risk profile and risk rating so they withstand the supervisory methodology, and expect thematic reviews."
+  },
+  "aud": "all",
+  "imp": "medium",
+  "src": "Begründung zu § 89 GwBG-E",
+  "s": {
+   "de": "Die risikobasierte Aufsicht wird ausdrücklich geregelt: Prüfungsfrequenz und Prüfungstiefe richten sich nach Risikoprofil und nationalen Risiken, auch themenbezogene Prüfungen sind erfasst. Die Aufsichtsbehörden erstellen jährliche Aufsichtsprogramme und wenden die EU-Benchmarks und die Methodik zur Einstufung des Risikoprofils (inhärente Risiken, Restrisiken) an.",
+   "en": "Risk-based supervision is regulated expressly: frequency and depth of inspections follow the risk profile and national risks, and thematic reviews are included. Supervisors draw up annual supervisory programmes and apply the EU benchmarks and methodology for classifying the risk profile (inherent and residual risk)."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 52 Abs. 1 GwG",
+  "newRef": "§ 93 Abs. 1 GwBG-E",
+  "oldText": "auf Verlangen unentgeltlich",
+  "newText": "dem Verlangen der Aufsichtsbehörden unverzüglich nachzukommen",
+  "act": {
+   "de": "Interne Fristen für Aufsichtsanfragen auf unverzügliche Beantwortung auslegen.",
+   "en": "Set internal deadlines for supervisory requests to ensure prompt responses."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 93 GwBG-E",
+  "s": {
+   "de": "Verpflichtete müssen Aufsichtsverlangen künftig ausdrücklich unverzüglich nachkommen und Maßnahmen zur elektronischen Einreichung (Allgemeinverfügung) dulden. Die Vorlage von Unterlagen erfolgt nach Vorgabe der Behörde im Original, als Kopie oder digital. Auskunftsverweigerungsrechte (Selbstbelastung, Berufsgeheimnis) bleiben.",
+   "en": "Obliged entities must now expressly comply with supervisory requests without undue delay and tolerate measures on electronic submission (general ruling). Documents are provided as the authority specifies: original, copy or digital. Rights to refuse information (self-incrimination, professional secrecy) remain."
+  }
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 51 Abs. 5 Satz 2 GwG",
+  "newRef": "§ 103 Abs. 3 Nr. 5 GwBG-E",
+  "oldText": "ein vorübergehendes Verbot zur Ausübung einer Leitungsposition bei Verpflichteten",
+  "newText": "ein vorübergehendes Verbot gegen jede Person, die Leitungsaufgaben bei einem Verpflichteten wahrnimmt, oder gegen jede andere für den Verstoß verantwortlich gemachte natürliche Person verhängen, bei dem Verpflichteten Leitungsaufgaben wahrzunehmen",
+  "act": null,
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 103 Abs. 3 GwBG-E",
+  "s": {
+   "de": "Das vorübergehende Leitungsverbot trifft nach dem Entwurf jede Person mit Leitungsaufgaben und jede andere für den Verstoß verantwortliche natürliche Person; es ist nicht mehr an die Voraussetzungen des heutigen § 51 Abs. 5 geknüpft, die der Normtext nicht wiederholt.",
+   "en": "Under the draft the temporary ban applies to any person performing management tasks and any other natural person held responsible for the breach; it is no longer tied to the conditions of today's § 51(5), which the text does not repeat."
+  }
+ },
+ {
+  "g": "enforce",
+  "kind": "new",
+  "oldRef": "§ 51 Abs. 2 GwG",
+  "newRef": "§ 103 Abs. 4 und 5 GwBG-E",
+  "oldText": null,
+  "newText": "Der Verpflichtete erstattet der zuständigen Aufsichtsbehörde unaufgefordert und in regelmäßigen, von der Aufsichtsbehörde zu bestimmenden Abständen Bericht über die Umsetzung der angeordneten Maßnahme.",
+  "act": {
+   "de": "Berichtsprozess für Maßnahmen der Aufsicht mit Verantwortlichen und Terminen aufsetzen.",
+   "en": "Set up a reporting process for supervisory measures with owners and dates."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 103 Abs. 4 und 5 GwBG-E",
+  "s": {
+   "de": "Neu: Die Aufsicht setzt für angeordnete Maßnahmen bei Bedarf verbindliche Umsetzungsfristen und überwacht die Umsetzung. Das Institut muss von sich aus regelmäßig über den Umsetzungsstand berichten. Widerspruch und Anfechtungsklage haben weiterhin keine aufschiebende Wirkung.",
+   "en": "New: for ordered measures, supervisors set binding implementation deadlines where needed and monitor implementation. The institution must report on progress regularly and on its own initiative. Objection and action for annulment continue to have no suspensive effect."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 80 Abs. 1 GwBG-E",
+  "oldText": null,
+  "newText": "müssen gegenüber der Bundesanstalt für Finanzdienstleistungsaufsicht eine zentrale Kontaktstelle im Inland benennen",
+  "act": {
+   "de": "Prüfen, ob Agenten- oder Vertriebsstrukturen in Deutschland eine Kontaktstelle auslösen (Kriterien im EU-Standard).",
+   "en": "Check whether agent or distributor structures in Germany trigger a contact point (criteria in the EU standard)."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 80 GwBG-E",
+  "s": {
+   "de": "E-Geld-Emittenten, Zahlungsdienstleister und Krypto-Dienstleister, die im Inland andere Niederlassungen als Tochterunternehmen oder Zweigniederlassungen betreiben oder über Agenten, Distributoren oder andere Infrastruktur tätig sind, müssen der BaFin eine zentrale Kontaktstelle im Inland benennen. Nach § 79 beaufsichtigt die BaFin zudem solche Infrastruktur von Verpflichteten mit Hauptsitz in einem anderen EU-Staat.",
+   "en": "E-money issuers, payment service providers and crypto-asset service providers operating in Germany through establishments other than subsidiaries or branches, or through agents, distributors or other infrastructure, must name a central contact point in Germany to the BaFin. Under § 79 the BaFin also supervises such infrastructure of obliged entities headquartered in another EU state."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 109 Abs. 6 GwBG-E",
+  "oldText": null,
+  "newText": "Führt die AMLA nach Artikel 19 der Verordnung (EU) 2024/1620 eine Vor-Ort-Kontrolle bei einem ausgewählten Verpflichteten nach Artikel 2 Absatz 1 Nummer 1 der Verordnung (EU) 2024/1620 durch, so nehmen die Finanzaufsichtsbehörden nach Maßgabe des Artikels 19 Absatz 5 und 6 der Verordnung (EU) 2024/1620 die erforderlichen Unterstützungshandlungen vor.",
+  "act": {
+   "de": "Bei großen grenzüberschreitenden Instituten mit einer direkten AMLA-Aufsicht rechnen und Ansprechpartner für AMLA-Prüfungen benennen.",
+   "en": "Large cross-border institutions should prepare for direct AMLA supervision and name contacts for AMLA inspections."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 109 GwBG-E",
+  "s": {
+   "de": "Neu: Die BaFin und die übrigen Finanzaufsichtsbehörden arbeiten mit der AMLA zusammen, unterstützen deren Prüfungen bei ausgewählten Verpflichteten (auch vor Ort) und folgen dabei deren Weisungen. Sie melden der AMLA jährlich bis zum 1. Dezember geplante thematische Prüfungen für das Folgejahr (Abs. 3) und wirken an Risikobewertungen von Instituten mit (Abs. 5).",
+   "en": "New: the BaFin and other financial supervisors cooperate with AMLA, support its inspections of selected obliged entities (also on site) and follow its instructions. By 1 December each year they report planned thematic reviews for the following year to AMLA (para. 3) and contribute to risk assessments of institutions (para. 5)."
+  }
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 56 Abs. 1 Satz 2 GwG",
+  "newRef": "§ 119 Abs. 3 GwBG-E",
+  "oldText": "Die Ordnungswidrigkeit kann bei vorsätzlicher Begehung mit einer Geldbuße bis zu einhundertfünfzigtausend Euro, im Übrigen mit einer Geldbuße bis zu einhunderttausend Euro geahndet werden.",
+  "newText": "Die Ordnungswidrigkeit kann in den Fällen der Absätze 1 und 2 mit einer Geldbuße bis zu zweihunderttausend Euro geahndet werden.",
+  "s": {
+   "de": "Der Regelrahmen wird einheitlich: bis 200.000 Euro. Heute gilt bei Vorsatz 150.000 und sonst 100.000 Euro (bei den Pflichten nach § 56 Abs. 2 GwG gestaffelt 150.000, 100.000 und 50.000 Euro).",
+   "en": "The standard range becomes uniform: up to EUR 200,000. Today it is EUR 150,000 for intent and EUR 100,000 otherwise (tiered EUR 150,000, 100,000 and 50,000 for the duties in section 56(2) GwG)."
+  },
+  "act": null,
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Normtext § 119 Abs. 3"
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 56 Abs. 3 Satz 1 GwG",
+  "newRef": "§ 119 Abs. 8 GwBG-E",
+  "oldText": "Geldbuße bis zum Zweifachen des aus dem Verstoß gezogenen wirtschaftlichen Vorteils, wenn es sich um einen schwerwiegenden, wiederholten oder systematischen Verstoß handelt.",
+  "newText": "Eine Ordnungswidrigkeit nach Absatz 4 kann mit einer Geldbuße bis zur zweifachen Höhe des aus dem Verstoß gezogenen wirtschaftlichen Vorteils geahndet werden: […] bei einer juristischen Person oder Personenvereinigung, die in Absatz 6 genannt ist, über Absatz 6 und 7 hinaus",
+  "s": {
+   "de": "Die tatgewinnbezogene Geldbuße (zweifacher wirtschaftlicher Vorteil) bleibt und steht nun ausdrücklich zusätzlich über den Festbeträgen und der Umsatzgrenze; sie trifft auch Fahrlässigkeit. Der Vorteil umfasst erzielte Gewinne und vermiedene Verluste und darf geschätzt werden.",
+   "en": "The profit-based fine (twice the economic benefit) stays and now expressly sits on top of the fixed amounts and the turnover cap; it also covers negligence. The benefit includes profits made and losses avoided and may be estimated."
+  },
+  "act": null,
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 119 Abs. 8"
+ },
+ {
+  "g": "transition",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 122 Abs. 3 GwBG-E",
+  "oldText": null,
+  "newText": "Die Schnittstelle nach § 28 Absatz 2 Satz 2 zur Übermittlung von Unstimmigkeitsmeldungen ist von der registerführenden Stelle bis spätestens zum 30. Juni 2028 technisch umzusetzen.",
+  "s": {
+   "de": "Die Schnittstelle für Unstimmigkeitsmeldungen zum Transparenzregister muss die registerführende Stelle bis 30.06.2028 bereitstellen; bis dahin bleibt der Meldeweg offen.",
+   "en": "The registrar must provide the interface for discrepancy reports to the transparency register by 30 June 2028; the reporting route stays open until then."
+  },
+  "act": {
+   "de": "Meldeprozess für Unstimmigkeiten im Transparenzregister bis 2028 an die neue Schnittstelle anbindbar halten.",
+   "en": "Keep the discrepancy-report process ready to connect to the new interface by 2028."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Begründung zu § 122 Abs. 3"
+ },
+ {
+  "g": "cdd",
+  "kind": "removed",
+  "oldRef": "§ 8 GwG",
+  "newRef": "Art. 27 VO (EU) 2024/1624; Bußgeld: § 119 Abs. 1 Nr. 33 GwBG-E",
+  "oldText": null,
+  "newText": null,
+  "s": {
+   "de": "Aufzeichnung und Aufbewahrung der Sorgfaltsdaten (heute § 8 GwG: fünf Jahre, spätestens nach zehn Jahren vernichten) richten sich künftig nach der AMLR; das GwBG-E sanktioniert nur fehlende oder unvollständige Aufzeichnungen (Art. 27 Abs. 1 AMLR). Die Aufbewahrungsfrist der AMLR steht nicht im Entwurfstext; Kanzleikommentierungen nennen fünf Jahre nach Art. 77 AMLR.",
+   "en": "Recording and retention of due diligence data (today section 8 GwG: five years, destroy after ten at the latest) will follow the AMLR; the GwBG-E only penalises missing or incomplete records (Art. 27(1) AMLR). The AMLR retention period is not in the draft text; law-firm commentary cites five years under Art. 77 AMLR."
+  },
+  "act": {
+   "de": "Aufbewahrungs- und Löschkonzept gegen die AMLR prüfen, besonders die bisherige Zehn-Jahres-Höchstfrist.",
+   "en": "Check the retention and deletion concept against the AMLR, in particular the current ten-year maximum."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Normtext § 119 Abs. 1 Nr. 33; Kanzleikommentierung für Art. 77"
+ },
+ {
+  "g": "cdd",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "Art. 80 VO (EU) 2024/1624; § 119 Abs. 10, § 120 Abs. 4 GwBG-E",
+  "oldText": null,
+  "newText": null,
+  "s": {
+   "de": "EU-weite Barzahlungsobergrenze: Gewerblich dürfen Barzahlungen nur bis 10.000 Euro (oder Gegenwert) angenommen werden, flankiert von einer Kontrollmeldepflicht (Art. 80 Abs. 4 AMLR). Zahlungen zwischen Privatpersonen außerhalb der Berufstätigkeit sind ausgenommen. Für Verstöße gibt es eine neue Bußgeldregelung; Länder- und Finanzbehörden sind in die Verfolgung eingebunden.",
+   "en": "EU-wide cash payment cap: in commercial transactions cash may be accepted only up to EUR 10,000 (or equivalent), accompanied by a control reporting duty (Art. 80(4) AMLR). Payments between private individuals outside professional activity are exempt. A new fines rule applies to breaches; state and tax authorities are involved in enforcement."
+  },
+  "act": {
+   "de": "Annahme von Bargeld bei Firmenkunden, Tresor- und Schließfachgeschäft sowie Barein- und -auszahlungen gegen die Grenze prüfen und einen Kontrollmeldeprozess aufsetzen.",
+   "en": "Check cash acceptance for corporate clients, safe-deposit and cash-handling business against the cap and set up a control reporting process."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Allgemeiner Teil II Nr. 8; Normtext § 119 Abs. 10, § 120 Abs. 4"
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "§ 2 Abs. 2 GwG",
+  "newRef": "§ 4 Abs. 3 GwBG-E",
+  "oldText": "Finanztätigkeiten, die keinen Finanztransfer im Sinne von § 1 Absatz 1 Satz 2 Nummer 6 des Zahlungsdiensteaufsichtsgesetzes darstellen, nur gelegentlich oder in sehr begrenztem Umfang ausüben",
+  "newText": "Finanztätigkeiten, die keine Finanztransfergeschäfte im Sinne von § 1 Absatz 1 Satz 2 Nummer 6 des Zahlungsdiensteaufsichtsgesetzes darstellen, nur gelegentlich oder in sehr begrenztem Umfang ausüben",
+  "act": null,
+  "aud": "all",
+  "imp": "low",
+  "src": "Begründung zu § 4 Abs. 3 GwBG-E",
+  "s": {
+   "de": "Die Verordnungsermächtigung für Bagatellausnahmen bleibt mit kleineren Anpassungen und stützt sich nun auf Art. 6 Abs. 1 der Verordnung. Die Schwellen (1.000 Euro je Transaktion, 5 Prozent des Gesamtumsatzes) bleiben im Entwurfstext erhalten, neu ist ein ausreichend niedriger Umsatzschwellenwert.",
+   "en": "The ordinance power for minor-activity exemptions continues with small changes and is now based on Art. 6(1) of the Regulation. The thresholds (EUR 1,000 per transaction, 5 percent of turnover) remain in the draft text; a sufficiently low turnover threshold is new."
+  }
+ },
+ {
+  "g": "property",
+  "kind": "changed",
+  "oldRef": "§ 16a Abs. 1 Satz 2 GwG",
+  "newRef": "§ 9 Abs. 1 Satz 2 GwBG-E",
+  "oldText": "Dasselbe gilt für den Erwerb von Anteilen an Gesellschaften, zu deren Vermögen unmittelbar oder mittelbar eine inländische Immobilie gehört.",
+  "newText": "Dasselbe gilt für den Erwerb von Anteilen an Gesellschaften und Genossenschaften, zu deren Vermögen unmittelbar oder mittelbar eine inländische Immobilie gehört.",
+  "act": {
+   "de": "Bei Immobilienfinanzierungen und Zahlungsbestätigungen prüfen, ob Erwerbe von Genossenschaftsanteilen mit Immobilienbezug erfasst werden.",
+   "en": "For property finance and payment confirmations, check whether acquisitions of cooperative shares with real estate holdings are covered."
+  },
+  "aud": "all",
+  "imp": "low",
+  "src": "Begründung zu § 9 GwBG-E",
+  "s": {
+   "de": "Das Barzahlungsverbot beim Immobilienerwerb (Bargeld, Kryptowerte, Gold, Platin, Edelsteine) wird fortgeführt und um Genossenschaften erweitert. Die Frist für die Notarprüfung bei Verdachtsmeldungen wird laut Begründung an die EU-Frist für FIU-Sofortmaßnahmen angeglichen; im Normtext bleibt es bei fünf Werktagen nach Abgang der Meldung.",
+   "en": "The cash payment ban for real estate purchases (cash, crypto-assets, gold, platinum, gemstones) continues and is extended to cooperatives. According to the memorandum, the notary's check period for suspicious activity reports is aligned with the EU deadline for FIU immediate measures; the statutory text still says five working days after the report is sent."
+  }
+ },
+ {
+  "g": "property",
+  "kind": "changed",
+  "oldRef": "§ 16 Abs. 4 Satz 1 Nr. 2 GwG",
+  "newRef": "§ 11 Abs. 4 Satz 1 Nr. 2 GwBG-E",
+  "oldText": "von einem Zahlungskonto nach § 1 Absatz 17 des Zahlungsdiensteaufsichtsgesetzes, das auf den Namen des Spielers bei einem Verpflichteten nach § 2 Absatz 1 Nummer 1 oder 3 errichtet worden ist",
+  "newText": "von einem Zahlungskonto nach § 1 Absatz 17 des Zahlungsdiensteaufsichtsgesetzes, das auf den Namen des Spielers bei einem Verpflichteten nach Artikel 3 Nummer 1 oder 2 der Verordnung (EU) 2024/1624 errichtet worden ist",
+  "act": {
+   "de": "Institute mit Glücksspielkunden prüfen, ob die Kontenverweise und der Wegfall der vorläufigen Identifizierung ihre Prozesse berühren.",
+   "en": "Institutions serving gambling customers should check whether the changed account references and the removal of provisional identification affect their processes."
+  },
+  "aud": "all",
+  "imp": "low",
+  "src": "Begründung zu § 11 GwBG-E",
+  "s": {
+   "de": "Die Sonderregeln für Online-Glücksspiel (Spielerkonto, Zahlungswege, Schwellen von 25 Euro je Transaktion und 100 Euro im Monat) bleiben bis auf redaktionelle Anpassungen. Die vorläufige Identifizierung nach § 16 Abs. 8 GwG entfällt. Das Spielerkonto muss bei einem Verpflichteten nach Art. 3 Nr. 1 oder 2 der Verordnung geführt werden.",
+   "en": "The special rules for online gambling (player account, payment channels, thresholds of EUR 25 per transaction and EUR 100 per month) remain apart from editorial changes. The provisional identification under § 16(8) GwG is removed. The player account must be held with an obliged entity under Art. 3 nos. 1 or 2 of the Regulation."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "changed",
+  "oldRef": "§ 23b GwG",
+  "newRef": "§ 29 Abs. 1 GwBG-E",
+  "oldText": "Die in § 23 Absatz 1 Satz 1 Nummer 1 aufgeführten Behörden, Verpflichtete nach § 2 Absatz 1 Nummer 1 bis 3 und 7 sowie Notare haben der registerführenden Stelle Abweichungen unverzüglich zu melden",
+  "newText": "Die in § 27 Absatz 1 aufgeführten Behörden, Gerichte und die in § 5 Absatz 2 genannten Stellen sowie Notare haben der registerführenden Stelle Abweichungen unverzüglich zu melden",
+  "act": {
+   "de": "Entfallene Meldeprozesse zu Immobilienabweichungen aus der Arbeitsanweisung streichen.",
+   "en": "Remove the discontinued property-discrepancy reporting step from internal procedures."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "Begründung zu § 29 GwBG-E",
+  "s": {
+   "de": "Die Pflicht zur Meldung von Abweichungen bei der Zuordnung von Immobilien trifft Institute nicht mehr, nur noch Behörden und Notare. Die Begründung nennt als Grund den entfallenden Immobilienzugriff. Begründung (Behörden nach § 25 Abs. 1 Nr. 1) und Normtext (§ 27 Abs. 1) verweisen unterschiedlich.",
+   "en": "Institutions are no longer required to report discrepancies in property allocation; only authorities and notaries are. The memorandum gives the loss of property access as the reason. Memorandum (authorities under § 25(1) no. 1) and text (§ 27(1)) cite differently."
+  }
+ },
+ {
+  "g": "tr",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 28 Abs. 12 GwBG-E",
+  "oldText": null,
+  "newText": "Von den Verpflichteten und den zuständigen Behörden sind die von der EU-Kommission gemäß Artikel 10 Absatz 7 Unterabsatz 3 der Richtlinie (EU) 2024/1640 bis zum 10. Juli 2028 herauszugebenden Empfehlungen zu den Methoden und Verfahren zur Feststellung und Meldung von Unstimmigkeiten bei den Angaben zum wirtschaftlichen Eigentümer anzuwenden.",
+  "act": {
+   "de": "Veröffentlichung der Kommissionsempfehlungen beobachten und das Unstimmigkeitsverfahren danach nachziehen.",
+   "en": "Monitor the Commission recommendations and adapt the discrepancy procedure accordingly."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "Begründung zu § 28 GwBG-E",
+  "s": {
+   "de": "Institute müssen die Empfehlungen der EU-Kommission zu Methoden und Verfahren der Feststellung und Meldung von Unstimmigkeiten anwenden. Sie sollen bis zum 10. Juli 2028 erscheinen.",
+   "en": "Institutions must apply the European Commission's recommendations on methods and procedures for identifying and reporting discrepancies. They are due by 10 July 2028."
+  }
+ },
+ {
+  "g": "reporting",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 48 GwBG-E",
+  "oldText": null,
+  "newText": "Die Zentralstelle für Finanztransaktionsuntersuchungen benennt einen Grundrechtsbeauftragten, der ihrem bestehenden Personal angehören kann und im Rahmen der Erfüllung seiner Aufgaben nach Absatz 2 weisungsunabhängig ist.",
+  "act": null,
+  "aud": "auth",
+  "imp": "low",
+  "src": "Begründung zu § 48 GwBG-E",
+  "s": {
+   "de": "Die FIU benennt einen weisungsunabhängigen Grundrechtsbeauftragten, der ihre Tätigkeit auf Grundrechtskonformität berät und überwacht. Betrifft nur die Behörde.",
+   "en": "The FIU appoints an independent fundamental rights officer who advises on and monitors the fundamental rights compliance of its activities. Concerns the authority only."
+  }
+ },
+ {
+  "g": "property",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 37 bis § 39 GwBG-E",
+  "oldText": null,
+  "newText": "Es wird eine zentrale Zugangsstelle für Informationen über Immobilien und deren Eigentümer eingerichtet.",
+  "act": null,
+  "aud": "auth",
+  "imp": "low",
+  "src": "Begründung zu §§ 37 bis 44 GwBG-E",
+  "s": {
+   "de": "Neu: Eine zentrale Zugangsstelle für Immobilieninformationen (Grundstücke, Eigentümer, Kaufpreise, Belastungen seit 8. Juli 2019) steht Aufsicht, FIU, Zoll, Strafverfolgung und weiteren Behörden offen. Für Institute selbst ist kein Zugang vorgesehen, § 43 sieht Meldungen der Zugangsstelle an die FIU vor. Aufgaben kann das BMF per Verordnung an einen Beliehenen übertragen (§ 44).",
+   "en": "New: a central access point for real estate information (plots, owners, purchase prices, encumbrances since 8 July 2019) is open to supervisors, the FIU, customs, law enforcement and other authorities. No access is provided for institutions themselves; § 43 provides for reports from the access point to the FIU. The BMF may delegate the task by ordinance to an entrusted body (§ 44)."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "new",
+  "oldRef": null,
+  "newRef": "§ 81 GwBG-E",
+  "oldText": null,
+  "newText": "Bei der Bundesanstalt für Finanzdienstleistungsaufsicht wird eine Zentrale Koordinierungsstelle Geldwäscheaufsicht eingerichtet. […] Die Zentrale Koordinierungsstelle Geldwäscheaufsicht führt keine Aufsicht über die Verpflichteten.",
+  "act": null,
+  "aud": "auth",
+  "imp": "low",
+  "src": "Begründung zu § 81 GwBG-E",
+  "s": {
+   "de": "Bei der BaFin entsteht eine Zentrale Koordinierungsstelle Geldwäscheaufsicht. Sie organisiert die sektorübergreifende und sektorspezifische Koordinierung der Aufsichtsbehörden (§§ 82, 83) und unterstützt vor allem die Aufsicht im Nichtfinanzsektor. Sie beaufsichtigt keine Verpflichteten und hat laut Begründung kein Durchgriffs- oder Weisungsrecht gegenüber den Aufsichtsbehörden.",
+   "en": "A Central Anti-Money-Laundering Supervision Coordination Unit is created at the BaFin. It organises the cross-sector and sector-specific coordination of supervisors (§§ 82, 83) and mainly supports non-financial-sector supervision. It does not supervise obliged entities and, per the explanatory memorandum, has no power of direction over supervisors."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 51 Abs. 5a GwG",
+  "newRef": "§ 102 Abs. 4 GwBG-E",
+  "oldText": "wenn die ausländische Behörde selbst keine Maßnahmen ergreift oder sich die von ihr ergriffenen Maßnahmen als unzureichend erweisen und eine sofortige Abhilfe geboten ist",
+  "newText": "wenn sie schwerwiegende, wiederholte oder systematische Verstöße feststellen, die der sofortigen Abhilfe bedürfen",
+  "act": null,
+  "aud": "all",
+  "imp": "low",
+  "src": "Begründung zu § 102 GwBG-E",
+  "s": {
+   "de": "Grenzüberschreitend gilt ein gestuftes Verfahren: Die BaFin fordert Abhilfe bei Niederlassungen und Infrastruktur in anderen Mitgliedstaaten und unterrichtet die Heimataufsicht; bei schwerwiegenden, wiederholten oder systematischen Verstößen kann sie befristet auf eigene Initiative handeln. Bei Uneinigkeit kann die AMLA angerufen werden.",
+   "en": "Cross-border a staged procedure applies: the BaFin demands remedy at establishments and infrastructure in other member states and informs the home supervisor; for serious, repeated or systematic breaches it may act on its own initiative for a limited time. In case of disagreement AMLA can be called upon."
+  }
+ },
+ {
+  "g": "super",
+  "kind": "changed",
+  "oldRef": "§ 53 Abs. 1 GwG",
+  "newRef": "§ 107 Abs. 1 GwBG-E",
+  "oldText": "Die Aufsichtsbehörden errichten ein System zur Annahme von Hinweisen zu potenziellen oder tatsächlichen Verstößen gegen dieses Gesetz",
+  "newText": "haben jeweils externe Meldestellen für die Entgegennahme von Meldungen und Hinweisen über Verstöße gegen die Verordnung (EU) 2024/1624, die Verordnung (EU) 2023/1113 und dieses Gesetz zu errichten",
+  "act": {
+   "de": "Interne Hinweisgebersysteme und Mitarbeiterinformation auf die Meldewege zur BaFin abgleichen.",
+   "en": "Align internal whistleblowing systems and staff information with the reporting channels to the BaFin."
+  },
+  "aud": "all",
+  "imp": "low",
+  "src": "Begründung zu § 107 GwBG-E",
+  "s": {
+   "de": "Die Hinweisgebersysteme der Aufsicht werden zu externen Meldestellen nach dem Hinweisgeberschutzgesetz: Für die BaFin gilt § 21 HinSchG, für alle gelten die §§ 24 bis 31 HinSchG. Der heutige § 53 wird ersetzt; die Aufsichtsbehörden des Nichtfinanzsektors berichten der AMLA jährlich über Meldungen.",
+   "en": "The supervisors' whistleblowing systems become external reporting offices under the Whistleblower Protection Act: § 21 HinSchG applies to the BaFin, §§ 24 to 31 HinSchG to all. Today's § 53 is replaced; non-financial-sector supervisors report annually to AMLA on reports received."
+  }
+ },
+ {
+  "g": "enforce",
+  "kind": "changed",
+  "oldRef": "§ 56 Abs. 5 bis 8 GwG",
+  "newRef": "§ 120 GwBG-E",
+  "oldText": null,
+  "newText": null,
+  "s": {
+   "de": "Zuständigkeits-, Auskunfts- und Meldevorschriften zum Bußgeldverfahren bleiben im Kern erhalten (§ 56 Abs. 6 und 7 GwG werden § 120 Abs. 2 und 3). Neu sind die Konsultation anderer Aufsichtsbehörden vor einer Geldbuße (Abs. 1) und die Mitteilung von Barzahlungsverstößen durch die Finanzbehörden (Abs. 4); Meldungen an AMLA und andere Aufsichtsbehörden regelt § 105.",
+   "en": "Competence, information and reporting rules for fine proceedings remain essentially unchanged (sections 56(6) and (7) GwG become section 120(2) and (3)). New are consulting other supervisors before a fine (para. 1) and tax authorities passing on cash-payment breaches (para. 4); reports to AMLA and other supervisors are governed by section 105."
+  },
+  "act": null,
+  "aud": "auth",
+  "imp": "low",
+  "src": "Begründung zu §§ 105, 120"
+ },
+ {
+  "g": "transition",
+  "kind": "changed",
+  "oldRef": "§ 59 Abs. 7 GwG",
+  "newRef": "§ 122 Abs. 2 GwBG-E",
+  "oldText": "Bis zur technischen Umsetzung des Verfahrens nach § 31 Absatz 6, längstens jedoch bis zum 31. Dezember 2027, darf die Zentralstelle für Finanztransaktionsuntersuchungen das Bundeszentralamt für Steuern ersuchen, bei den Kreditinstituten die in § 93b Absatz 1 und 1a der Abgabenordnung bezeichneten Daten […] abzurufen",
+  "newText": "Bis zur technischen Umsetzung des Verfahrens nach § 58 Absatz 3, längstens jedoch bis zum 31. Dezember 2030, darf die Zentralstelle für Finanztransaktionsuntersuchungen das Bundeszentralamt für Steuern ersuchen, bei den Kreditinstituten die in § 93b Absatz 1 und 1a der Abgabenordnung bezeichneten Daten […] abzurufen",
+  "s": {
+   "de": "Der Übergang für den Kontodaten-Abruf der FIU über das Bundeszentralamt für Steuern verlängert sich von Ende 2027 auf Ende 2030; die technische Anbindung braucht laut Begründung mittelfristig Zeit.",
+   "en": "The transitional route for the FIU's retrieval of account data via the Federal Central Tax Office is extended from end 2027 to end 2030; according to the explanatory memorandum the technical connection needs medium-term time."
+  },
+  "act": null,
+  "aud": "all",
+  "imp": "low",
+  "src": "Begründung zu § 122 Abs. 2"
+ }
+]

@@ -44,6 +44,38 @@ export interface Framework {
   sn?: Txt;
   about: Txt; cond: Cond | null; condL?: Txt; u: Update[];
 }
+/** Fassungsvergleich: alte gegen neue Fassung eines Rechtsakts (z. B. GwG gegen GwBG-E). */
+export type CmpKind = "changed" | "new" | "removed" | "moved" | "same";
+export interface CmpRow {
+  /** Gruppen-ID, siehe Comparison.groups. */
+  g: string;
+  kind: CmpKind;
+  /** Fundstelle in der alten bzw. neuen Fassung, z. B. "§ 56 Abs. 1 GwG". */
+  oldRef?: string; newRef?: string;
+  /** Wörtliche Auszüge (deutsch, Originalsprache der Norm). Der Wortvergleich
+      entsteht zur Laufzeit; Auslassungen stehen in beiden Texten gleich als „[…]“. */
+  oldText?: string; newText?: string;
+  /** Was ändert sich, auf hoher Flughöhe. */
+  s: Txt;
+  /** Handlungsbedarf für Institute (fehlt, wenn nur Behörden betroffen sind). */
+  act?: Txt;
+  aud: "inst" | "auth" | "all";
+  imp: "high" | "medium" | "low";
+  /** Beleg im Entwurf, z. B. "Begründung zu § 119". */
+  src: string;
+}
+export interface Comparison {
+  from: { n: Txt; ref: string; note: Txt };
+  to: { n: Txt; ref: string; note: Txt; url: string };
+  /** Einleitung: Einordnung des Vergleichs in zwei, drei Sätzen. */
+  intro: Txt;
+  /** Hinweise zur Belastbarkeit (Entwurfsstand, Quellenlage). */
+  caveat: Txt;
+  stand: string;
+  groups: { id: string; n: Txt }[];
+  rows: CmpRow[];
+}
+
 export interface Option { v: string; l: Txt }
 export interface Question { key: string; multi: boolean; q: Txt; why: Txt; o: Option[] }
 
