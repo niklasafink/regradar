@@ -26,6 +26,16 @@ MIN_CHARS = 300
 RETRY_AFTER_HOURS = 24
 
 
+def eurlex_text_url(url: str) -> str:
+    """EUR-Lex-Dokumentseiten (TXT/?uri=CELEX:...) zeigen nur Metadaten und
+    Navigation. Der Rechtstext selbst liegt unter TXT/HTML/ (deutsch). Alle
+    anderen URLs bleiben unverändert."""
+    m = re.match(r"https?://eur-lex\.europa\.eu/legal-content/[A-Z]{2}/TXT/(?:HTML/)?\?uri=(CELEX:[^&#]+)", url or "", re.I)
+    if not m:
+        return url
+    return "https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=" + m.group(1)
+
+
 def _retry_due(fetched_at: Optional[str]) -> bool:
     from datetime import datetime, timedelta, timezone
     if not fetched_at:
@@ -172,7 +182,7 @@ def fetch_fulltext(conn: sqlite3.Connection, document_id: int,
         return row[0]
 
     text = ""
-    result, err = get(url)
+    result, err = get(eurlex_text_url(url))
     if result and result.status == 200:
         ct = result.content_type
         if "pdf" in ct or url.lower().endswith(".pdf") or result.content[:5] == b"%PDF-":

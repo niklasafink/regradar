@@ -17,7 +17,7 @@ import subprocess
 import sys
 import urllib.request
 
-os.environ.setdefault("RICH_SRC_CHARS", "12000")
+os.environ.setdefault("RICH_SRC_CHARS", "40000")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import richpages as rp  # noqa: E402
 
@@ -28,7 +28,7 @@ STATE = os.path.join(HERE, "data", "rich_state.json")
 CUTOFF = os.environ.get("RICH_CUTOFF", "2026-11-07")
 MAX_PER_RUN = int(os.environ.get("RICH_MAX_PER_RUN", "5"))
 MAX_PER_DAY = int(os.environ.get("RICH_MAX_PER_DAY", "40"))
-TOKEN_BUDGET = 60000
+TOKEN_BUDGET = 120000
 MAX_ATTEMPTS = 2
 
 
