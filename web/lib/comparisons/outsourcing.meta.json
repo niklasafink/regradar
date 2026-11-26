@@ -1,0 +1,45 @@
+{
+ "from": {
+  "n": {
+   "de": "EBA-Leitlinien zu Auslagerungsvereinbarungen",
+   "en": "EBA guidelines on outsourcing arrangements"
+  },
+  "ref": "EBA/GL/2019/02",
+  "note": {
+   "de": "Veröffentlicht am 25.02.2019, angewendet seit 30.09.2019. Wortlaut hier in der englischen Fassung. Wird laut Tz. 22 der neuen Leitlinie aufgehoben, das Datum ist noch offen.",
+   "en": "Published 25 February 2019, applied since 30 September 2019. Wording shown here in the English version. According to para. 22 of the new guideline they will be repealed; the date is still open."
+  }
+ },
+ "to": {
+  "n": {
+   "de": "EBA-Leitlinien zum Management von Drittparteienrisiken bei Nicht-IKT-Dienstleistungen",
+   "en": "EBA guidelines on the sound management of third-party risk related to non-ICT services"
+  },
+  "ref": "EBA/GL/2026/09",
+  "note": {
+   "de": "Abschlussbericht vom 18.09.2026 (Konsultation EBA/CP/2025/12). Das Anwendungsdatum steht in der veröffentlichten englischen Fassung noch als Platzhalter; vorgesehen sind zwei Jahre Übergangsfrist für Vereinbarungen über kritische oder wichtige Funktionen.",
+   "en": "Final report of 18 September 2026 (consultation EBA/CP/2025/12). The date of application is still a placeholder in the published English version; a two-year transition is provided for arrangements supporting critical or important functions."
+  },
+  "url": "https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/internal-governance/guidelines-third-party-risk-management"
+ },
+ "stand": "18.09.2026",
+ "lblOld": "{n} EBA/GL/2019/02",
+ "lblNew": "{n} EBA/GL/2026/09",
+ "goneDe": "ohne Entsprechung in EBA/GL/2026/09",
+ "goneEn": "no counterpart in EBA/GL/2026/09",
+ "newOnlyDe": "Neu in EBA/GL/2026/09, ohne Vorgänger in EBA/GL/2019/02",
+ "newOnlyEn": "New in EBA/GL/2026/09, no predecessor in EBA/GL/2019/02",
+ "aboutDe": [
+  "Alt: Die EBA-Leitlinien zu Auslagerungsvereinbarungen (EBA/GL/2019/02) regeln für Institute, Zahlungs- und E-Geld-Institute Auswahl, Vertragsinhalt, Steuerung, Register und Ausstieg bei Auslagerungen. Der Vergleich folgt ihren Abschnitten (Titel I bis V); Absätze (Tz.) sind nach Textähnlichkeit der neuen Fassung zugeordnet, nicht nach Nummern.",
+  "Neu: EBA/GL/2026/09 ersetzt den Begriff der Auslagerung durch die Drittparteienvereinbarung (Auslagerung bleibt Teilmenge, Tz. 17), erfasst alle Nicht-IKT-Dienstleister einschließlich konzerninterner und nimmt IKT-Dienste aus, die unter DORA fallen (Tz. 7). Der Adressatenkreis wächst um Wertpapierfirmen, ART-Emittenten und Immobilienkreditgeber (Tz. 9). Die Leitlinie hebt die Leitlinien vom 25.02.2019 auf (Tz. 22).",
+  "Zeitplan: Das Anwendungsdatum ist im Abschlussbericht noch nicht eingetragen (Tz. 18). Für Vereinbarungen über kritische oder wichtige Funktionen gilt eine Frist von zwei Jahren ab Anwendungsdatum, danach ist die Aufsicht zu informieren (Tz. 20); nicht kritische Vereinbarungen dürfen bei Verlängerung angepasst werden (Tz. 21). Bis zur Aufhebung gelten die Leitlinien von 2019 fort.",
+  "Grenzen: Verglichen wurde der englische Wortlaut des Abschlussberichts (Abschnitt 3), eine deutsche Fassung lag nicht vor. Fußnotenverweise sind weggelassen. Die Begriffstabelle (Tz. 17) ist nicht im Wortvergleich, sondern nur im Kommentar berücksichtigt. Die nationale Umsetzung durch die Aufsicht ist in den Texten nicht geregelt."
+ ],
+ "aboutEn": [
+  "Old: The EBA guidelines on outsourcing arrangements (EBA/GL/2019/02) set out for institutions and payment and e-money institutions the selection, contract content, management, register and exit for outsourcing. The comparison follows their sections (Titles I to V); paragraphs are matched to the new version by text similarity, not by numbers.",
+  "New: EBA/GL/2026/09 replaces the concept of outsourcing with the third-party arrangement (outsourcing remains a subset, para. 17), covers all non-ICT providers including intragroup ones and excludes ICT services that fall under DORA (para. 7). The group of addressees grows to include investment firms, ART issuers and mortgage creditors (para. 9). The guideline repeals the guidelines of 25 February 2019 (para. 22).",
+  "Timeline: The date of application is not yet filled in the final report (para. 18). For arrangements supporting critical or important functions, a period of two years from the date of application applies, after which the supervisor must be informed (para. 20); non-critical arrangements may be adapted at renewal (para. 21). Until repeal, the 2019 guidelines continue to apply.",
+  "Limits: The English wording of the final report (section 3) was compared; no German version was available. Footnote markers are omitted. The definitions table (para. 17) is not in the word comparison but only used in commentary. National implementation by the supervisor is not regulated in the texts."
+ ],
+ "file": "EBA-Auslagerung-Drittparteien"
+}

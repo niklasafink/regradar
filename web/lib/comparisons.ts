@@ -3,7 +3,12 @@
 // beider Fassungen und der Begründung des Entwurfs (public/cmp/*.json, Kommentare
 // aus lib/comparisons/*.json). Keine regulatorische Auskunft.
 
-import type { Comparison } from "./base";
+import type { Comparison, Txt } from "./base";
+import outsourcingMeta from "./comparisons/outsourcing.meta.json";
+import ebagovMeta from "./comparisons/ebagov.meta.json";
+import srepMeta from "./comparisons/srep.meta.json";
+import crr3Meta from "./comparisons/crr3.meta.json";
+import mariskMeta from "./comparisons/marisk.meta.json";
 
 const GWG: Comparison = {
   from: {
@@ -25,6 +30,39 @@ const GWG: Comparison = {
   },
   stand: "28.10.2026",
   paras: "/cmp/gwg-gwbg.json",
+  lbl: {
+    old: "§ {n} GwG", neu: "§ {n} GwBG-E",
+    gone: { de: "fällt künftig in die EU-Geldwäscheverordnung", en: "moves to the EU AML Regulation" },
+    newOnly: { de: "Neu im GwBG-E, ohne Vorgänger im GwG", en: "New in the GwBG-E, no predecessor in the GwG" },
+    open: { de: "Entwurf öffnen", en: "Open draft" },
+    file: "GwG-GwBG-E",
+  },
 };
 
-export const COMPARISONS: Record<string, Comparison> = { gwg: GWG };
+/** Meta-Dateien der Builder (scripts/<id>-compare-build.py) in einen Comparison umsetzen. */
+interface Meta {
+  from: Comparison["from"]; to: Comparison["to"]; stand: string;
+  lblOld: string; lblNew: string; goneDe: string; goneEn: string; newOnlyDe: string; newOnlyEn: string;
+  aboutDe?: string[]; aboutEn?: string[]; file: string;
+}
+function fromMeta(m: Meta, openLabel: Txt): Comparison {
+  return {
+    from: m.from, to: m.to, stand: m.stand, paras: `/cmp/${m.file}.json`,
+    about: (m.aboutDe ?? []).map((de, i) => ({ de, en: m.aboutEn?.[i] ?? de })),
+    lbl: {
+      old: m.lblOld, neu: m.lblNew,
+      gone: { de: m.goneDe, en: m.goneEn }, newOnly: { de: m.newOnlyDe, en: m.newOnlyEn },
+      open: openLabel, file: m.file,
+    },
+  };
+}
+const SRC: Txt = { de: "Quelle öffnen", en: "Open source" };
+
+export const COMPARISONS: Record<string, Comparison> = {
+  gwg: GWG,
+  outsourcing: fromMeta(outsourcingMeta as Meta, SRC),
+  ebagov: fromMeta(ebagovMeta as Meta, SRC),
+  srep: fromMeta(srepMeta as Meta, SRC),
+  crr3: fromMeta(crr3Meta as Meta, SRC),
+  marisk: fromMeta(mariskMeta as Meta, SRC),
+};

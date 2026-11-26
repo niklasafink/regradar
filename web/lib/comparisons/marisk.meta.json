@@ -1,0 +1,45 @@
+{
+ "from": {
+  "n": {
+   "de": "MaRisk, 8. Fassung",
+   "en": "MaRisk, 8th version"
+  },
+  "ref": "BaFin-Rundschreiben 06/2024 (BA) vom 29.05.2024",
+  "note": {
+   "de": "Bisher geltende Fassung der Mindestanforderungen an das Risikomanagement, Text und Erläuterungen, wie sie die BaFin in ihrer Vergleichsfassung als Ausgangsstand ausweist.",
+   "en": "Previously applicable version of the Minimum Requirements for Risk Management, text and explanatory notes, as shown by BaFin in its comparison version as the starting point."
+  }
+ },
+ "to": {
+  "n": {
+   "de": "MaRisk, 9. Novelle",
+   "en": "MaRisk, 9th amendment"
+  },
+  "ref": "BaFin-Rundschreiben 06/2026 (BA) vom 30.06.2026",
+  "note": {
+   "de": "Neufassung des Rundschreibens, veröffentlicht am 30.06.2026; zusätzliche Anforderungen gelten nach einer Übergangsfrist ab 01.01.2027.",
+   "en": "Restated circular published on 30.06.2026; additional requirements apply after a transition period from 01.01.2027."
+  },
+  "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Rundschreiben/dl_rs_0626_9_marisk.html"
+ },
+ "stand": "30.06.2026",
+ "lblOld": "{n}",
+ "lblNew": "{n}",
+ "goneDe": "fällt weg; die Neufassung enthält keine entsprechende Einheit",
+ "goneEn": "deleted; the new version contains no corresponding unit",
+ "newOnlyDe": "Neu in der 9. MaRisk-Novelle, ohne Vorgänger in der 8. Fassung",
+ "newOnlyEn": "New in the 9th MaRisk amendment, without a predecessor in the 8th version",
+ "aboutDe": [
+  "Verglichen werden die MaRisk in der 8. Fassung (BaFin-Rundschreiben 06/2024 (BA) vom 29.05.2024) und die Neufassung als 9. Novelle (Rundschreiben 06/2026 (BA) vom 30.06.2026). Die Gegenüberstellung folgt der alten Fassung Modul für Modul; Regelungstext (Textziffern) und Erläuterungen sind getrennt dargestellt.",
+  "Nach dem Übersendungsschreiben der BaFin ist das Hauptziel der Überarbeitung, das Rundschreiben stärker prinzipienbasiert zu gestalten und die Komplexität deutlich zu reduzieren. Teile des Regelungstextes und viele Erläuterungen sind gestrichen; das bedeutet nach Aussage der BaFin keine grundsätzliche Absenkung des Anforderungsniveaus. Neu aufgenommen sind die EBA-Leitlinien zur Umwelt-Szenarioanalyse (EBA/GL/2025/04) und die in Überarbeitung befindlichen Leitlinien zur Internen Governance, außerdem ist die Aufsichtsmitteilung vom 26.11.2024 in den Regelungstext überführt.",
+  "Die neue Fassung ist mit Veröffentlichung am 30.06.2026 in Kraft getreten. Soweit sich aus ihr in Einzelfällen zusätzliche Anforderungen ergeben, gilt eine Übergangsfrist bis zum 01.01.2027; das gilt auch für organisatorische Anpassungen, wenn ein Institut eine abweichende Auslegung der Aufsichtsmitteilung dokumentiert hat.",
+  "Zur Methode: Der Wortlaut der 8. Fassung stammt aus der amtlichen Vergleichsfassung der BaFin (Zeichen mit Streichung oder ohne Markierung), der Wortlaut der Neufassung aus dem sauberen Rundschreiben. Die Zuordnung der alten Absätze zu den neuen erfolgt maschinell nach Textähnlichkeit und kann im Einzelfall von der Systematik der BaFin abweichen; die alten Textziffern sind je Modul fortlaufend gezählt. Maßgeblich bleiben die Originaltexte der BaFin."
+ ],
+ "aboutEn": [
+  "The comparison covers the MaRisk in the 8th version (BaFin circular 06/2024 (BA) of 29.05.2024) and the restated version as the 9th amendment (circular 06/2026 (BA) of 30.06.2026). The comparison follows the old version module by module; regulatory text (numbered items) and explanatory notes are shown separately.",
+  "According to BaFin's covering letter, the main aim of the revision is to make the circular more principles-based and to reduce complexity significantly. Parts of the rules and many explanatory notes are deleted; according to BaFin this does not mean a fundamental lowering of the level of requirements. Newly incorporated are the EBA guidelines on environmental scenario analysis (EBA/GL/2025/04) and the guidelines on internal governance that are under revision, and the supervisory notice of 26.11.2024 has been transferred into the text.",
+  "The new version entered into force on publication on 30.06.2026. Where it results in additional requirements in individual cases, a transition period applies until 01.01.2027; this also applies to organisational adjustments where an institution has documented a deviating interpretation of the supervisory notice.",
+  "On method: the wording of the 8th version comes from BaFin's official comparison version (characters with strike-through or without markup), the wording of the new version from the clean circular. The assignment of old paragraphs to new ones is made automatically by text similarity and may deviate from BaFin's structure in individual cases; the old item numbers are counted consecutively per module. The original BaFin texts remain authoritative."
+ ],
+ "file": "marisk"
+}

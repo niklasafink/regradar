@@ -85,7 +85,7 @@ export default async function Page({ params }: { params: Promise<{ provider: str
       parent={parent ? { id: parent.id, n: parent.n } : undefined}
       kids={kids}
       siblings={siblings}
-      aboutLong={ABOUT_LONG[f.id]}
+      aboutLong={[...(ABOUT_LONG[f.id] ?? []), ...(COMPARISONS[f.id]?.about ?? [])].filter(Boolean).length ? [...(ABOUT_LONG[f.id] ?? []), ...(COMPARISONS[f.id]?.about ?? [])] : undefined}
       cmp={COMPARISONS[f.id]}
     />
     </>

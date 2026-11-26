@@ -1,0 +1,712 @@
+[
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Tz. 5 EBA/GL/2019/02",
+  "newRef": "Tz. 5 EBA/GL/2026/09",
+  "oldText": "when they outsource functions, in particular with regard to the outsourcing of critical or important functions.",
+  "newText": "when they rely on third-party service providers (TPSPs) to provide non-ICT services supporting functions with a particular focus on critical or important functions.",
+  "s": {
+   "de": "Die Leitlinie knüpft nicht mehr an die Auslagerung an, sondern an Nicht-IKT-Dienstleistungen von Drittparteien, die Funktionen unterstützen; kritische oder wichtige Funktionen stehen weiter im Fokus.",
+   "en": "The guideline no longer rests on outsourcing but on non-ICT services from third parties that support functions; critical or important functions remain the focus."
+  },
+  "act": {
+   "de": "Prüfen, welche bisher nicht als Auslagerung geführten Dienstleistungen nun als Drittparteienvereinbarung unter die Leitlinie fallen.",
+   "en": "Check which services not previously treated as outsourcing now fall under the guideline as third-party arrangements."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 5"
+ },
+ {
+  "g": "scope",
+  "kind": "new",
+  "oldRef": "Tz. 5 EBA/GL/2019/02",
+  "newRef": "Tz. 7 EBA/GL/2026/09",
+  "newText": "The management of information and communication technology (ICT) risk and the use of TPSPs to provide ICT services as defined in Article 3",
+  "s": {
+   "de": "IKT-Risiken und IKT-Dienstleistungen von Drittparteien sind ausgenommen, weil sie unter DORA fallen. Die Leitlinie deckt nur Dienstleister ab, die keine IKT-Dienste für kritische oder wichtige Funktionen im Sinne von DORA erbringen; ein ganzheitlicher Ansatz für IKT und Nicht-IKT wird erwartet.",
+   "en": "ICT risk and ICT services from third parties are excluded because they fall under DORA. The guideline only covers providers that do not supply ICT services for critical or important functions under DORA; a holistic approach covering ICT and non-ICT is expected."
+  },
+  "act": {
+   "de": "Dienstleistungen je Vertrag in IKT (DORA) und Nicht-IKT (diese Leitlinie) einordnen und beide Steuerungen aufeinander abstimmen.",
+   "en": "Classify services per contract as ICT (DORA) or non-ICT (this guideline) and align both management processes."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 7",
+  "anchor": 5
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Tz. 7 EBA/GL/2019/02",
+  "newRef": "Tz. 9 EBA/GL/2026/09",
+  "newText": "investment firms as defined in point (1) of Article 4(1) of Directive (EU) 2014/65 (MiFID II) with the exception of small and non-interconnected investment firms",
+  "s": {
+   "de": "Der Adressatenkreis wächst: Wertpapierfirmen (ohne kleine, nicht verflochtene), Zahlungs- und E-Geld-Institute, Emittenten wertreferenzierter Token, Kreditgeber nach der Wohnimmobilienkreditrichtlinie, Drittlandzweigstellen sowie Finanzholdinggesellschaften.",
+   "en": "The group of addressees grows: investment firms (except small, non-interconnected ones), payment and e-money institutions, issuers of asset-referenced tokens, creditors under the Mortgage Credit Directive, third-country branches and financial holding companies."
+  },
+  "act": {
+   "de": "Prüfen, ob das eigene Haus (z. B. Wertpapierfirma der Klasse 2, ART-Emittent, Immobilienkreditgeber) neu unter die Leitlinie fällt.",
+   "en": "Check whether your firm (e.g. class 2 investment firm, ART issuer, mortgage creditor) newly falls under the guideline."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 9, 13, 15"
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Tz. 26 EBA/GL/2019/02",
+  "newRef": "Tz. 31 EBA/GL/2026/09",
+  "oldText": "Institutions and payment institutions should establish whether an arrangement with a third party falls under the definition of outsourcing.",
+  "newText": "financial entities should establish whether an arrangement with a TPSP falls under the definition of third-party arrangement provided in these Guidelines.",
+  "s": {
+   "de": "Statt der Auslagerung gilt der Begriff der Drittparteienvereinbarung; die Auslagerung bleibt als Teilmenge erfasst (Tz. 17 der neuen Leitlinie: „This includes outsourcing arrangements as a subset.“). Die Einordnung nach wiederkehrender oder dauerhafter Leistung bleibt der Maßstab.",
+   "en": "The concept of third-party arrangement replaces outsourcing; outsourcing remains covered as a subset (para. 17 of the new guideline: \"This includes outsourcing arrangements as a subset.\"). Recurrent or ongoing provision remains the test."
+  },
+  "act": {
+   "de": "Einordnungsprozess für Dienstleistungen auf den weiteren Begriff umstellen, nicht nur auf typische Auslagerungen.",
+   "en": "Change the classification process for services to the broader concept, not only typical outsourcing."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 17 und 31"
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Tz. 28 EBA/GL/2019/02",
+  "newRef": "Tz. 33 EBA/GL/2026/09",
+  "oldText": "the acquisition of services that would otherwise not be undertaken by the institution or payment institution",
+  "newText": "the acquisition of services that do not have material impact on the financial entities’ risks exposures or on their operational resilience",
+  "s": {
+   "de": "Die Ausnahmen werden angepasst: Der Maßstab für Einkaufsleistungen ist nicht mehr, ob das Institut sie sonst nie selbst erbringen würde, sondern ob sie wesentliche Auswirkungen auf Risikopositionen oder operative Widerstandsfähigkeit haben. Neu ausgenommen sind regulierte Finanzdienstleistungen anderer beaufsichtigter Unternehmen (z. B. Verwahrung, Handelsplätze) sowie Geschäfte zwischen Finanzinstituten und mit Zentralbanken; bei Zahlungsnetzwerken nennt der Text jetzt auch WERO.",
+   "en": "The exclusions change: the test for purchased services is no longer whether the institution would otherwise never perform them itself, but whether they have a material impact on risk exposures or operational resilience. Newly excluded are regulated financial services from other supervised entities (e.g. custody, trading venues) and transactions between financial institutions and with central banks; for payment networks the text now also names WERO."
+  },
+  "act": {
+   "de": "Bestehende Positivliste der Nicht-Auslagerungen gegen den neuen Katalog und den Wesentlichkeitsmaßstab abgleichen.",
+   "en": "Compare the existing list of non-outsourcing items against the new catalogue and the materiality test."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 33"
+ },
+ {
+  "g": "crit",
+  "kind": "changed",
+  "oldRef": "Tz. 29 EBA/GL/2019/02",
+  "newRef": "Tz. 34 EBA/GL/2026/09",
+  "oldText": "situations: a. where a defect or failure in its performance would materially impair:",
+  "newText": "situations, where its disruption, discontinuity, defect or failure in its performance would materially impair:",
+  "s": {
+   "de": "Die Definition der kritischen oder wichtigen Funktion wird um Unterbrechung und Diskontinuität ergänzt und laut Zusammenfassung der EBA mit DORA in Einklang gebracht. Die Regeln zu internen Kontrollfunktionen und zu erlaubnispflichtigen Tätigkeiten stehen nun in eigenen Absätzen.",
+   "en": "The definition of a critical or important function adds disruption and discontinuity and, according to the EBA summary, is aligned with DORA. The rules on internal control functions and on activities requiring authorisation now stand in separate paragraphs."
+  },
+  "act": {
+   "de": "Kriterien der Kritikalitätsbewertung gegen die neue Formulierung und die DORA-Definition abgleichen.",
+   "en": "Compare the criteria for the criticality assessment against the new wording and the DORA definition."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 34 bis 37 und Zusammenfassung"
+ },
+ {
+  "g": "crit",
+  "kind": "changed",
+  "oldRef": "Tz. 31 EBA/GL/2019/02",
+  "newRef": "Tz. 72 EBA/GL/2026/09",
+  "oldText": "e. all outsourcing arrangements, the institution’s or payment institution’s aggregated exposure to the same service provider and the potential cumulative impact of outsourcing arrangements in the same business area;",
+  "newText": "c. the size and complexity of any business area affected;",
+  "s": {
+   "de": "Die frühere Faktorenliste zur Kritikalität ist nur noch als Teil der Risikobewertung vorhanden und kürzer: Der Punkt zur aggregierten Exposition gegenüber demselben Dienstleister und der Punkt zu Wiederherstellung und Abwicklung fehlen in Tz. 72. Konzentrationsrisiko wird dafür in Tz. 71 genannt.",
+   "en": "The earlier list of criticality factors survives only as part of the risk assessment and is shorter: the item on aggregated exposure to the same provider and the item on recovery and resolution are missing in para. 72. Concentration risk is instead named in para. 71."
+  },
+  "act": {
+   "de": "Bewertungsraster für Kritikalität und Risiko auf die verbleibenden Faktoren und das Konzentrationsrisiko auf Institutsebene ausrichten.",
+   "en": "Align the criticality and risk assessment grid with the remaining factors and entity-level concentration risk."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2019/02, Tz. 31; EBA/GL/2026/09, Tz. 71 und 72"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "Tz. 36 EBA/GL/2019/02",
+  "newRef": "Tz. 42 EBA/GL/2026/09",
+  "oldText": "c. the identification, assessment and management of conflicts of interest;",
+  "newText": "c. approving and overseeing the implementation and maintenance of effective policies to identify, assess, manage and mitigate or prevent actual and potential conflicts of interest;",
+  "s": {
+   "de": "Die Pflichten des Leitungsorgans wachsen: Es soll auch die Notfallpolitik zu Drittparteienvereinbarungen sowie die Prüfpläne der Internen Revision dazu genehmigen und überwachen.",
+   "en": "The management body’s duties grow: it should also approve and oversee the business continuity policy and the internal audit plans regarding third-party arrangements."
+  },
+  "act": {
+   "de": "Zuständigkeiten und Beschlusslage des Leitungsorgans zu Notfallpolitik und Prüfplänen für Drittparteien ergänzen.",
+   "en": "Add management body responsibilities and approvals for the business continuity policy and audit plans on third parties."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 42"
+ },
+ {
+  "g": "gov",
+  "kind": "new",
+  "oldRef": "Tz. 35 EBA/GL/2019/02",
+  "newRef": "Tz. 38 EBA/GL/2026/09",
+  "newText": "The management body of financial entities should define, approve and regularly review a strategy on the sound management of third-party risks",
+  "s": {
+   "de": "Neu ist eine vom Leitungsorgan zu beschließende Strategie für das Management von Drittparteienrisiken, die die Richtlinie zum Drittparteienrisiko umfasst und das operationelle Risikomanagement ergänzt.",
+   "en": "New is a strategy on managing third-party risks to be approved by the management body, covering the third-party risk policy and complementing operational risk management."
+  },
+  "act": {
+   "de": "Strategie zum Drittparteienrisiko entwerfen und vom Leitungsorgan beschließen lassen.",
+   "en": "Draft a third-party risk strategy and have the management body approve it."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 38",
+  "anchor": 35
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "Tz. 38 EBA/GL/2019/02",
+  "newRef": "Tz. 44 EBA/GL/2026/09",
+  "oldText": "establish an outsourcing function or designate a senior staff member who is directly accountable to the management body (e.g. a key function holder of a control function)",
+  "newText": "establish a role in order to monitor all third-party arrangements or designate a member of senior management within the financial entity as directly accountable to the management body",
+  "s": {
+   "de": "Statt einer Auslagerungsfunktion oder eines Verantwortlichen unterhalb der Geschäftsleitung ist eine Rolle oder ein Mitglied der oberen Führungsebene zu benennen, das dem Leitungsorgan direkt verantwortlich ist.",
+   "en": "Instead of an outsourcing function or a senior staff member, a role or a member of senior management directly accountable to the management body must be designated."
+  },
+  "act": {
+   "de": "Prüfen, ob die bisherige Verantwortlichkeit für Auslagerungen auf Ebene der oberen Führung angesiedelt ist.",
+   "en": "Check whether current outsourcing responsibility sits at senior management level."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 44"
+ },
+ {
+  "g": "policy",
+  "kind": "changed",
+  "oldRef": "Tz. 41 EBA/GL/2019/02",
+  "newRef": "Tz. 47 EBA/GL/2026/09",
+  "oldText": "approve, regularly review and update a written outsourcing policy",
+  "newText": "approve a written policy on the use of non-ICT related services supporting critical or important functions provided by TPSP. The management body should review it at least once a year",
+  "s": {
+   "de": "Die Richtlinie betrifft nun Nicht-IKT-Dienstleistungen für kritische oder wichtige Funktionen und ist mindestens einmal jährlich zu überprüfen; zuvor genügte eine regelmäßige Überprüfung.",
+   "en": "The policy now concerns non-ICT services supporting critical or important functions and must be reviewed at least once a year; previously a regular review sufficed."
+  },
+  "act": {
+   "de": "Jährlichen Überprüfungszyklus für die Richtlinie festlegen und Änderungen zeitnah umsetzen.",
+   "en": "Set an annual review cycle for the policy and implement changes in a timely manner."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 47"
+ },
+ {
+  "g": "policy",
+  "kind": "changed",
+  "oldRef": "Tz. 43 EBA/GL/2019/02",
+  "newRef": "Tz. 49 EBA/GL/2026/09",
+  "oldText": "The outsourcing policy should differentiate between the following:",
+  "newText": "The policy may be merged with the policy foreseen under Article 28(10) of DORA",
+  "s": {
+   "de": "Die Richtlinie darf mit der DORA-Richtlinie zu IKT-Drittparteien zusammengeführt werden, muss aber zwischen IKT-Diensten unter DORA und Nicht-IKT-Diensten unterscheiden.",
+   "en": "The policy may be merged with the DORA policy on ICT third parties but must distinguish between ICT services under DORA and non-ICT services."
+  },
+  "act": {
+   "de": "Prüfen, ob eine gemeinsame Richtlinie mit DORA sinnvoll ist und die Unterscheidung IKT / Nicht-IKT enthält.",
+   "en": "Check whether a joint policy with DORA makes sense and includes the ICT / non-ICT distinction."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 49"
+ },
+ {
+  "g": "policy",
+  "kind": "changed",
+  "oldRef": "Tz. 47 EBA/GL/2019/02",
+  "newRef": "Tz. 53 EBA/GL/2026/09",
+  "oldText": "should be set at arm’s length.",
+  "newText": "are to be taken objectively.",
+  "s": {
+   "de": "Bei Leistungen konzerninterner Anbieter gilt nicht mehr der Maßstab marktüblicher Bedingungen (arm’s length), sondern objektive Konditionen; Synergien dürfen weiter eingepreist werden, solange der Anbieter allein überlebensfähig bleibt.",
+   "en": "For intragroup providers the arm’s length standard is replaced by objectively determined conditions; synergies may still be priced in as long as the provider remains viable on a stand-alone basis."
+  },
+  "act": {
+   "de": "Konzerninterne Verrechnungsregeln auf den neuen Wortlaut prüfen.",
+   "en": "Review intragroup charging rules against the new wording."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "EBA/GL/2026/09, Tz. 53"
+ },
+ {
+  "g": "bcp",
+  "kind": "changed",
+  "oldRef": "Tz. 49 EBA/GL/2019/02",
+  "newRef": "Tz. 55 EBA/GL/2026/09",
+  "oldText": "Business continuity plans should take into account the possible event that the quality of the provision of the outsourced critical or important function deteriorates to an unacceptable level or fails.",
+  "newText": "financial entities should conduct a business impact analysis (BIA) of their exposures to severe business disruptions.",
+  "s": {
+   "de": "Neu ist eine Business-Impact-Analyse zu schweren Störungen, die auch Abhängigkeiten von Drittparteien und Austauschbarkeit berücksichtigt.",
+   "en": "New is a business impact analysis of severe disruptions that also considers third-party dependencies and substitutability."
+  },
+  "act": {
+   "de": "Business-Impact-Analyse um Drittparteien-Abhängigkeiten erweitern.",
+   "en": "Extend the business impact analysis to third-party dependencies."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 55"
+ },
+ {
+  "g": "bcp",
+  "kind": "changed",
+  "oldRef": "Tz. 48 EBA/GL/2019/02",
+  "newRef": "Tz. 54 EBA/GL/2026/09",
+  "newText": "The TPSP should also be involved in those tests as appropriate.",
+  "s": {
+   "de": "Die Notfallpläne sind regelmäßig zu testen; neu soll der Dienstleister dabei angemessen einbezogen werden.",
+   "en": "Business continuity plans must be tested regularly; new is that the provider should be involved in those tests as appropriate."
+  },
+  "act": {
+   "de": "Dienstleister in Notfalltests für kritische oder wichtige Funktionen einbinden.",
+   "en": "Involve providers in continuity tests for critical or important functions."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 54"
+ },
+ {
+  "g": "audit",
+  "kind": "new",
+  "oldRef": "Tz. 50 EBA/GL/2019/02",
+  "newRef": "Tz. 57 EBA/GL/2026/09",
+  "newText": "Financial entities should establish a formal follow-up process regarding internal audit findings",
+  "s": {
+   "de": "Neu ist ein förmlicher Nachverfolgungsprozess für Feststellungen der Internen Revision zu Drittparteienvereinbarungen, einschließlich zeitnaher Überprüfung und Behebung wesentlicher Feststellungen.",
+   "en": "New is a formal follow-up process for internal audit findings on third-party arrangements, including timely verification and remediation of material findings."
+  },
+  "act": {
+   "de": "Nachverfolgung von Revisionsfeststellungen zu Dienstleistern förmlich regeln.",
+   "en": "Set up formal follow-up of audit findings on providers."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 57",
+  "anchor": 50
+ },
+ {
+  "g": "register",
+  "kind": "changed",
+  "oldRef": "Tz. 52 EBA/GL/2019/02",
+  "newRef": "Tz. 58 EBA/GL/2026/09",
+  "oldText": "maintain an updated register of information on all outsourcing arrangements at the institution",
+  "newText": "maintain an updated register of information on all third-party arrangements that are within the scope of these guidelines",
+  "s": {
+   "de": "Das Register umfasst alle Drittparteienvereinbarungen im Anwendungsbereich, nicht nur Auslagerungen.",
+   "en": "The register covers all third-party arrangements in scope, not only outsourcing."
+  },
+  "act": {
+   "de": "Register auf alle Drittparteienvereinbarungen erweitern.",
+   "en": "Extend the register to all third-party arrangements."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 58"
+ },
+ {
+  "g": "register",
+  "kind": "changed",
+  "oldRef": "Tz. 54 EBA/GL/2019/02",
+  "newRef": "Tz. 61 EBA/GL/2026/09",
+  "oldText": "The register should include at least the following information for all existing outsourcing arrangements:",
+  "newText": "the register should be consistent to the extent possible, with the register of information under Article 28(3) of DORA.",
+  "s": {
+   "de": "Das Register für Nicht-IKT-Dienste soll möglichst mit dem DORA-Informationsregister übereinstimmen; beide dürfen in einem Register zusammengeführt werden. Die Pflichtangaben wachsen, etwa um die Vertragsart (Einzel-, Rahmen- oder Folgevereinbarung) und Kennungen wie die EUID.",
+   "en": "The register for non-ICT services should be consistent as far as possible with the DORA register of information; both may be combined in one register. Mandatory fields grow, for example the contract type (standalone, overarching or subsequent arrangement) and identifiers such as the EUID."
+  },
+  "act": {
+   "de": "Registerfelder gegen die neue Liste abgleichen und mit dem DORA-Register harmonisieren.",
+   "en": "Compare register fields against the new list and harmonise with the DORA register."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 61"
+ },
+ {
+  "g": "register",
+  "kind": "changed",
+  "oldRef": "Tz. 55 EBA/GL/2019/02",
+  "newRef": "Tz. 62 EBA/GL/2026/09",
+  "oldText": "h. an outcome of the assessment of the service provider’s substitutability (as easy, difficult or impossible),",
+  "newText": "the outcome and date of the last assessment",
+  "s": {
+   "de": "Die Austauschbarkeit wird feiner eingestuft (einfach, mittel, hochkomplex, unmöglich) und mit Datum der Bewertung geführt; zusätzlich sind bei Unterauslagerung Kennung, Funktionsart, Rang in der Kette und Leistungsort anzugeben.",
+   "en": "Substitutability is graded more finely (easy, medium, highly complex, impossible) and recorded with the assessment date; for subcontracting, identifier, function type, rank in the chain and place of performance must also be recorded."
+  },
+  "act": {
+   "de": "Bewertungsskala und Unterauslagerungsfelder im Register anpassen.",
+   "en": "Adapt the rating scale and subcontracting fields in the register."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 62"
+ },
+ {
+  "g": "register",
+  "kind": "changed",
+  "oldRef": "Tz. 58 EBA/GL/2019/02",
+  "newRef": "Tz. 65 EBA/GL/2026/09",
+  "oldText": "inform competent authorities in a timely manner or engage in a supervisory dialogue",
+  "newText": "and, where appropriate, engage in a supervisory dialogue",
+  "s": {
+   "de": "Die Aufsicht ist über geplante Vereinbarungen zu kritischen oder wichtigen Funktionen rechtzeitig zu informieren und, soweit angemessen, in einen Aufsichtsdialog einzubeziehen; zuvor galt Information oder Dialog. Als Bezug für die Angaben dienen nun Tz. 61 und 62.",
+   "en": "The supervisor must be informed in good time about planned arrangements for critical or important functions and, where appropriate, engaged in a supervisory dialogue; previously it was information or dialogue. The information to be provided now refers to paras. 61 and 62."
+  },
+  "act": {
+   "de": "Meldeprozess an die Aufsicht für geplante und neu kritisch gewordene Vereinbarungen prüfen.",
+   "en": "Check the supervisory notification process for planned and newly critical arrangements."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 65"
+ },
+ {
+  "g": "due",
+  "kind": "changed",
+  "oldRef": "Tz. 73 EBA/GL/2019/02",
+  "newRef": "Tz. 82 EBA/GL/2026/09",
+  "oldText": "acts in an ethical and socially responsible manner and adheres to international standards on human rights (e.g. the European Convention on Human Rights), environmental protection and appropriate working conditions, including the prohibition of child labour.",
+  "newText": "including by taking into account environmental, social, and governance (ESG) risks, and adheres to international standards on human rights including the prohibition of child labour and, environmental protection",
+  "s": {
+   "de": "Bei Dienstleistern in Drittländern sind nun ausdrücklich ESG-Risiken zu berücksichtigen.",
+   "en": "For providers in third countries, ESG risks must now expressly be taken into account."
+  },
+  "act": {
+   "de": "ESG-Kriterien in die Prüfung von Drittland-Dienstleistern aufnehmen.",
+   "en": "Include ESG criteria in the review of third-country providers."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 82"
+ },
+ {
+  "g": "due",
+  "kind": "changed",
+  "oldRef": "Tz. 70 EBA/GL/2019/02",
+  "newRef": "Tz. 79 EBA/GL/2026/09",
+  "newText": "geographic dependencies and manage the related risks",
+  "s": {
+   "de": "Die Sorgfaltsprüfung nennt neu Lieferkettenrisiken, geografische Abhängigkeiten und die tatsächliche Möglichkeit von Prüfungen vor Ort beim Dienstleister.",
+   "en": "Due diligence newly names supply chain risks, geographic dependencies and the practical ability to conduct audits, including onsite, at the provider."
+  },
+  "act": {
+   "de": "Prüfkatalog der Due Diligence um Lieferkette, geografische Abhängigkeiten und Prüfbarkeit ergänzen.",
+   "en": "Add supply chain, geographic dependencies and auditability to the due diligence checklist."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 79"
+ },
+ {
+  "g": "due",
+  "kind": "changed",
+  "oldRef": "Tz. 64 EBA/GL/2019/02",
+  "newRef": "Tz. 71 EBA/GL/2026/09",
+  "newText": "the operational risk, the reputational risk, the legal risk and the concentration risk at entity level",
+  "s": {
+   "de": "Die Risikobewertung vor Vertragsschluss nennt ausdrücklich operationelles, Reputations-, Rechts- und Konzentrationsrisiko auf Ebene des Instituts.",
+   "en": "The pre-contract risk assessment expressly names operational, reputational, legal and entity-level concentration risk."
+  },
+  "act": {
+   "de": "Konzentrationsrisiko je Dienstleister in der Risikoanalyse abbilden.",
+   "en": "Reflect concentration risk per provider in the risk analysis."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 71"
+ },
+ {
+  "g": "contract",
+  "kind": "changed",
+  "oldRef": "Tz. 75 EBA/GL/2019/02",
+  "newRef": "Tz. 84 EBA/GL/2026/09",
+  "oldText": "The outsourcing agreement for critical or important functions should set out at least:",
+  "newText": "The contractual arrangement should include at least the following elements:",
+  "s": {
+   "de": "Der Mindestvertragsinhalt gilt nicht mehr nur für kritische oder wichtige Funktionen, sondern für jede Drittparteienvereinbarung. Für kritische oder wichtige Funktionen kommen in Tz. 85 weitere Elemente hinzu.",
+   "en": "The minimum contract content no longer applies only to critical or important functions but to every third-party arrangement. For critical or important functions, further elements follow in para. 85."
+  },
+  "act": {
+   "de": "Verträge mit allen Dienstleistern im Anwendungsbereich auf den Mindestinhalt prüfen und Vorlagen anpassen.",
+   "en": "Review contracts with all providers in scope against the minimum content and adapt templates."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2019/02, Tz. 75; EBA/GL/2026/09, Tz. 84 und 85"
+ },
+ {
+  "g": "sub",
+  "kind": "changed",
+  "oldRef": "Tz. 80 EBA/GL/2019/02",
+  "newRef": "Tz. 94 EBA/GL/2026/09",
+  "oldText": "the institution or payment institution should exercise its right to object to the sub-outsourcing, if such a right was agreed, and/or terminate the contract.",
+  "newText": "Financial entities should ensure that the TPSP appropriately identifies all subcontractors and monitors the subcontractors",
+  "s": {
+   "de": "Beim Einsatz von Unterauftragnehmern verlangt die neue Leitlinie ein ausdrückliches Verfahren: Meldung vor Änderungen, angemessene Frist zur Genehmigung oder zum Widerspruch, Verbot der Umsetzung vor Ablauf, Widerspruchspflichten bei Überschreiten der Risikotoleranz sowie Kündigungsgründe im Unterauftrag. Zuvor hing das Widerspruchsrecht davon ab, dass es vereinbart war.",
+   "en": "For subcontractors the new guideline requires an express procedure: notice before changes, a reasonable period to approve or object, no implementation before the period ends, objection where risk tolerance is exceeded, and termination grounds in the subcontract. Previously the right to object depended on having been agreed."
+  },
+  "act": {
+   "de": "Vertragsklauseln zu Unterauftragnehmern (Frist, Widerspruch, Kündigung) in Rahmenverträgen ergänzen.",
+   "en": "Add subcontractor clauses (period, objection, termination) to framework contracts."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2019/02, Tz. 80; EBA/GL/2026/09, Tz. 90 bis 95"
+ },
+ {
+  "g": "sub",
+  "kind": "changed",
+  "oldRef": "Tz. 77 EBA/GL/2019/02",
+  "newRef": "Tz. 88 EBA/GL/2026/09",
+  "oldText": "determine whether the part of the function to be sub-outsourced is, as such, critical or important",
+  "newText": "determine whether the subcontractor effectively underpins the non-ICT related service that supports the critical or important function",
+  "s": {
+   "de": "Maßstab für die Erfassung von Unterauftragnehmern ist nun, ob sie den Nicht-IKT-Dienst tatsächlich trägt, der die kritische oder wichtige Funktion unterstützt.",
+   "en": "The test for recording subcontractors is now whether the subcontractor effectively underpins the non-ICT service supporting the critical or important function."
+  },
+  "act": {
+   "de": "Kriterium für die Registrierung von Unterauftragnehmern anpassen.",
+   "en": "Adapt the criterion for recording subcontractors."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 88"
+ },
+ {
+  "g": "sec",
+  "kind": "removed",
+  "oldRef": "Tz. 81 EBA/GL/2019/02",
+  "oldText": "should ensure that service providers, where relevant, comply with appropriate IT security standards.",
+  "s": {
+   "de": "Die Absätze zu IT-Sicherheitsstandards, Daten- und Systemsicherheit, Speicherort und Penetrationstests haben in der neuen Leitlinie keine Entsprechung; IKT-Dienste sind nach Tz. 7 ausgenommen und fallen unter DORA.",
+   "en": "The paragraphs on IT security standards, data and system security, storage location and penetration testing have no counterpart in the new guideline; ICT services are excluded under para. 7 and fall under DORA."
+  },
+  "act": {
+   "de": "Prüfen, dass die entfallenen IT-Sicherheitsanforderungen für IKT-Dienste über DORA abgedeckt sind.",
+   "en": "Check that the dropped IT security requirements for ICT services are covered via DORA."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2019/02, Tz. 81 bis 83 und 94; EBA/GL/2026/09, Tz. 7"
+ },
+ {
+  "g": "audit",
+  "kind": "changed",
+  "oldRef": "Tz. 88 EBA/GL/2019/02",
+  "newRef": "Tz. 99 EBA/GL/2026/09",
+  "oldText": "institutions and payment institutions should ensure the access and audit rights",
+  "newText": "financial entities should consider including the access and audit rights",
+  "s": {
+   "de": "Für Dienste ohne kritische oder wichtige Funktion sind Zugangs- und Prüfrechte nur noch zu erwägen, nicht mehr sicherzustellen.",
+   "en": "For services not supporting critical or important functions, access and audit rights are only to be considered, no longer ensured."
+  },
+  "act": {
+   "de": "Vertragliche Prüfrechte bei nicht kritischen Diensten risikobasiert neu festlegen.",
+   "en": "Re-determine contractual audit rights for non-critical services on a risk basis."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 99"
+ },
+ {
+  "g": "audit",
+  "kind": "changed",
+  "oldRef": "Tz. 87 EBA/GL/2019/02",
+  "newRef": "Tz. 98 EBA/GL/2026/09",
+  "newText": "as well as the right to take copies of relevant information and documentation if they are critical to the operations of the TPSP",
+  "s": {
+   "de": "Neu ist ein ausdrückliches Recht, Kopien relevanter Unterlagen zu erhalten, wenn sie für den Betrieb des Dienstleisters kritisch sind.",
+   "en": "New is an express right to take copies of relevant documents if they are critical to the provider’s operations."
+  },
+  "act": {
+   "de": "Kopierrecht in Prüfrechtsklauseln für kritische Dienstleister ergänzen.",
+   "en": "Add the right to take copies to audit-rights clauses for critical providers."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 98"
+ },
+ {
+  "g": "audit",
+  "kind": "changed",
+  "oldRef": "Tz. 92 EBA/GL/2019/02",
+  "newRef": "Tz. 103 EBA/GL/2026/09",
+  "newText": "when relying on pooled audits as referred to in paragraph 102(a), whether they have sufficient information and are sufficiently involved in scoping, planning, performing and reporting the audit and its findings.",
+  "s": {
+   "de": "Bei Gemeinschaftsprüfungen (Pooled Audits) ist künftig zu bewerten, ob das Institut genug Informationen hat und ausreichend in Umfang, Planung, Durchführung und Berichterstattung eingebunden ist.",
+   "en": "For pooled audits it must be assessed whether the entity has sufficient information and is sufficiently involved in scoping, planning, performance and reporting."
+  },
+  "act": {
+   "de": "Beteiligung an Gemeinschaftsprüfungen und Nutzung von Zertifikaten gegen diese Kriterien prüfen.",
+   "en": "Check participation in pooled audits and use of certifications against these criteria."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 103"
+ },
+ {
+  "g": "term",
+  "kind": "changed",
+  "oldRef": "Tz. 98 EBA/GL/2019/02",
+  "newRef": "Tz. 108 EBA/GL/2026/09",
+  "oldText": "where there are weaknesses regarding the management and security of confidential, personal or otherwise sensitive data or information;",
+  "newText": "where there are evidenced weaknesses pertaining to its risk management and security of confidential, personal or otherwise sensitive data, or non-personal data;",
+  "s": {
+   "de": "Die Kündigungsmöglichkeiten bleiben im Kern bestehen; Verstöße müssen nun erheblich sein, Datenmängel nachgewiesen und die Erkenntnisse aus der laufenden Überwachung als Auslöser genannt werden.",
+   "en": "The termination grounds remain in substance; breaches must now be significant, data weaknesses evidenced, and findings from ongoing monitoring named as a trigger."
+  },
+  "act": {
+   "de": "Kündigungsklauseln auf die neue Formulierung prüfen.",
+   "en": "Check termination clauses against the new wording."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 108"
+ },
+ {
+  "g": "mon",
+  "kind": "changed",
+  "oldRef": "Tz. 102 EBA/GL/2019/02",
+  "newRef": "Tz. 110 EBA/GL/2026/09",
+  "oldText": "Institutions should regularly update their risk assessment",
+  "newText": "Financial entities should regularly update their risk assessment in accordance with Section 11.2 and should periodically report to the management body",
+  "s": {
+   "de": "Die laufende Aktualisierung der Risikobewertung und die regelmäßige Berichterstattung an das Leitungsorgan gelten nun für alle Adressaten, nicht nur für Institute; die Überwachung folgt einem risikobasierten Ansatz.",
+   "en": "Ongoing updating of the risk assessment and regular reporting to the management body now apply to all addressees, not only institutions; monitoring follows a risk-based approach."
+  },
+  "act": {
+   "de": "Berichtswesen an das Leitungsorgan zu Drittparteienrisiken einrichten oder anpassen.",
+   "en": "Set up or adapt reporting to the management body on third-party risks."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2019/02, Tz. 102; EBA/GL/2026/09, Tz. 110"
+ },
+ {
+  "g": "exit",
+  "kind": "changed",
+  "oldRef": "Tz. 106 EBA/GL/2019/02",
+  "newRef": "Tz. 114 EBA/GL/2026/09",
+  "oldText": "d. material risks arising for the appropriate and continuous application of the function.",
+  "newText": "c. the concentration risk at entity level and the possibility of difficult exit from such arrangements;",
+  "s": {
+   "de": "Der Ausstiegsplan berücksichtigt nun auch Konzentrationsrisiko und erschwerten Ausstieg sowie erhebliche Verstöße des Dienstleisters.",
+   "en": "The exit strategy now also considers concentration risk and difficult exit as well as significant breaches by the provider."
+  },
+  "act": {
+   "de": "Ausstiegsstrategien um Konzentrationsrisiko und Verstoßszenarien ergänzen.",
+   "en": "Add concentration risk and breach scenarios to exit strategies."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/09, Tz. 114"
+ },
+ {
+  "g": "exit",
+  "kind": "changed",
+  "oldRef": "Tz. 108 EBA/GL/2019/02",
+  "newRef": "Tz. 116 EBA/GL/2026/09",
+  "oldText": "b. perform a business impact analysis that is commensurate with the risk of the outsourced processes, services or activities,",
+  "newText": "a. take into account the results of the analysis described in paragraph 73;",
+  "s": {
+   "de": "Die eigene Business-Impact-Analyse für den Ausstieg entfällt; stattdessen sind die Ergebnisse der Szenarioanalyse aus der Risikobewertung (Tz. 73) zu berücksichtigen.",
+   "en": "The separate business impact analysis for exit is dropped; instead, the results of the scenario analysis in the risk assessment (para. 73) are to be taken into account."
+  },
+  "act": {
+   "de": "Ausstiegsplanung mit der Szenarioanalyse der Risikobewertung verknüpfen.",
+   "en": "Link exit planning with the scenario analysis of the risk assessment."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "EBA/GL/2026/09, Tz. 116 (Verweis auf Tz. 73)"
+ },
+ {
+  "g": "auth",
+  "kind": "new",
+  "oldRef": "Tz. 119 EBA/GL/2019/02",
+  "newRef": "Tz. 128 EBA/GL/2026/09",
+  "newText": "Competent authorities should closely cooperate among themselves and should, in a timely manner, mutually exchange all relevant information",
+  "s": {
+   "de": "Neu sollen Aufsichtsbehörden eng zusammenarbeiten und Informationen zu Nicht-IKT-Dienstleistungen für kritische oder wichtige Funktionen zeitnah austauschen.",
+   "en": "New is close cooperation and timely exchange of information between competent authorities on non-ICT services supporting critical or important functions."
+  },
+  "aud": "auth",
+  "imp": "low",
+  "src": "EBA/GL/2026/09, Tz. 128",
+  "anchor": 119
+ },
+ {
+  "g": "trans",
+  "kind": "changed",
+  "oldRef": "Tz. 13 EBA/GL/2019/02",
+  "newRef": "Tz. 18 EBA/GL/2026/09",
+  "oldText": "With the exception of paragraph 63 (b), these guidelines apply from 30 September 2019 to all outsourcing arrangements entered into, reviewed or amended on or after this date.",
+  "newText": "These Guidelines apply from [date] to all third-party arrangements entered into, reviewed or amended on or after this date.",
+  "s": {
+   "de": "Das Anwendungsdatum ist im veröffentlichten Abschlussbericht noch nicht ausgefüllt („[date]“). Die Leitlinie gilt für Vereinbarungen, die ab diesem Datum geschlossen, geprüft oder geändert werden; Bestandsvereinbarungen sind anzupassen.",
+   "en": "The date of application is not yet filled in the published final report (\"[date]\"). The guideline applies to arrangements entered into, reviewed or amended from that date; existing arrangements must be adapted."
+  },
+  "act": {
+   "de": "Anwendungsdatum nach Veröffentlichung der Übersetzungen beobachten und Umsetzungsplan erstellen.",
+   "en": "Monitor the date of application once translations are published and prepare an implementation plan."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 18 und 19"
+ },
+ {
+  "g": "trans",
+  "kind": "changed",
+  "oldRef": "Tz. 15 EBA/GL/2019/02",
+  "newRef": "Tz. 20 EBA/GL/2026/09",
+  "oldText": "Where the review of outsourcing arrangements of critical or important functions is not finalised by 31 December 2021,",
+  "newText": "Where the review and the documentation of third-party arrangements supporting critical or important functions are not finalised by [date: two years from the date of application],",
+  "s": {
+   "de": "Für Vereinbarungen über kritische oder wichtige Funktionen gilt eine Übergangsfrist von zwei Jahren ab Anwendungsdatum; wer bis dahin nicht fertig ist, muss die Aufsicht samt geplanten Maßnahmen oder Ausstiegsstrategie informieren. Bei nicht kritischen Vereinbarungen genügt die Überprüfung zum Zeitpunkt der Verlängerung.",
+   "en": "A transition of two years from the date of application applies to arrangements for critical or important functions; those not finished by then must inform the supervisor, including planned measures or an exit strategy. For non-critical arrangements, review at renewal suffices."
+  },
+  "act": {
+   "de": "Bestandsverträge nach Kritikalität priorisieren und die Überprüfung innerhalb der Zweijahresfrist planen.",
+   "en": "Prioritise existing contracts by criticality and plan the review within the two-year period."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 20 und 21"
+ },
+ {
+  "g": "trans",
+  "kind": "changed",
+  "oldRef": "Tz. 17 EBA/GL/2019/02",
+  "newRef": "Tz. 22 EBA/GL/2026/09",
+  "oldText": "The Committee of European Banking Supervisors (CEBS) guidelines on outsourcing of 14 December 2006 and the EBA recommendations on outsourcing to cloud service providers are repealed with effect from 30 September 2019.",
+  "newText": "The EBA Guidelines on outsourcing of 25 February 2019 are repealed with effect from [date].",
+  "s": {
+   "de": "Die neue Leitlinie hebt die Auslagerungsleitlinien vom 25.02.2019 auf; das Datum ist noch offen.",
+   "en": "The new guideline repeals the outsourcing guidelines of 25 February 2019; the date is still open."
+  },
+  "act": {
+   "de": "Bis zum Aufhebungsdatum gelten die Leitlinien 2019/02 fort.",
+   "en": "Until the repeal date, the 2019/02 guidelines continue to apply."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/09, Tz. 22"
+ }
+]

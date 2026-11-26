@@ -1,0 +1,712 @@
+[
+ {
+  "g": "gov",
+  "kind": "new",
+  "oldRef": "§ 25c KWG",
+  "newRef": "§ 25c Abs. 1b, 1c KWG",
+  "oldText": "",
+  "newText": "Erfüllt eine Person die Voraussetzungen des Absatzes 1 Satz 1 oder des Absatzes 2 nicht, so hat das Institut unverzüglich sicherzustellen, dass 1. sie nicht zum Geschäftsleiter bestellt wird, 2. sie von ihrer Position als Geschäftsleiter abberufen wird oder 3. Maßnahmen ergriffen werden, damit die Person die Voraussetzungen erfüllt.",
+  "s": {
+   "de": "Nicht geeignete Personen dürfen nicht Geschäftsleiter werden oder bleiben: Das Institut muss unverzüglich dafür sorgen, dass sie nicht bestellt, abberufen oder durch Maßnahmen geeignet gemacht werden. Die Bundesanstalt kann die Bestellung untersagen, wenn Tatsachen gegen die Eignung sprechen oder wesentliche Angaben in der Anzeige fehlen. Das Gleiche gilt für Mitglieder des Verwaltungs- oder Aufsichtsorgans (§ 25d).",
+   "en": "Unsuitable persons may not become or remain managing directors: the institution must without delay ensure that they are not appointed, are removed or are made suitable through measures. BaFin can prohibit the appointment where facts speak against suitability or where essential information is missing from the notification. The same applies to members of the management or supervisory body (section 25d)."
+  },
+  "act": {
+   "de": "Verfahren für Eignungsprüfung und Nachbesserung vor Bestellung einrichten und die Anzeigeunterlagen nach § 24 auf Vollständigkeit prüfen.",
+   "en": "Set up a process for suitability assessment and remediation before appointment and check the notification files under section 24 for completeness."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 25 (§ 25c Abs. 1b, 1c)"
+ },
+ {
+  "g": "gov",
+  "kind": "new",
+  "oldRef": "§ 25d KWG",
+  "newRef": "§ 25d Abs. 1a, 1b KWG",
+  "oldText": "",
+  "newText": "Erfüllt eine Person die Voraussetzungen des Absatzes 1 Satz 1, des Absatzes 3 oder des Absatzes 3a nicht, so hat das Institut unverzüglich sicherzustellen, dass 1. sie nicht zum Mitglied des Verwaltungs- oder Aufsichtsorgans bestellt wird, 2. sie von ihrer Position als Mitglied des Verwaltungs- oder Aufsichtsorgans abberufen wird oder 3. Maßnahmen ergriffen werden, damit die Person die Voraussetzungen erfüllt.",
+  "s": {
+   "de": "Auch für das Verwaltungs- oder Aufsichtsorgan gilt: Wer die Voraussetzungen nicht erfüllt, darf nicht bestellt werden oder muss abberufen bzw. nachqualifiziert werden, und die Bundesanstalt kann die Bestellung anordnen zu verhindern. Neu geregelt ist außerdem, dass bei Bestellung durch regionale oder lokale Gremien das Institut Schutzvorkehrungen für die Eignung treffen muss.",
+   "en": "The same applies to the management or supervisory body: persons who do not meet the requirements may not be appointed or must be removed or upskilled, and BaFin can order that the appointment does not take place. It is also newly provided that where appointment is made by regional or local bodies, the institution must put safeguards in place for suitability."
+  },
+  "act": {
+   "de": "Eignungsprüfung für Aufsichts- und Verwaltungsorgan an die neuen Abberufungs- und Nachbesserungspflichten anpassen.",
+   "en": "Align the suitability assessment for the supervisory and administrative body with the new removal and remediation duties."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 26 (§ 25d Abs. 1a, 1b, 2)"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "§ 25c Abs. 2 KWG",
+  "newRef": "§ 25c Abs. 2 KWG",
+  "oldText": "die derselben Gruppe im Sinne des Artikels 4 Absatz 1 Nummer 138 der Verordnung (EU) Nr. 575/2013 angehören,",
+  "newText": "die derselben Finanzholding-Gruppe oder gemischten Finanzholding-Gruppe angehören oder die verbundene Unternehmen im Sinne des Handelsgesetzbuchs oder in vergleichbarer Weise in einer Gruppe verbunden sind,",
+  "s": {
+   "de": "Die Mandatsgrenzen für Geschäftsleiter bedeutender Institute gelten künftig auch für Geschäftsleiter zugelassener Finanzholding-Gesellschaften. Für die Zählung von Konzernmandaten gilt ein eigener Gruppenbegriff, der auch verbundene Unternehmen nach HGB oder vergleichbar verbundene Unternehmen erfasst.",
+   "en": "The limits on directorships for managing directors of significant institutions will in future also apply to managing directors of authorised financial holding companies. A separate group concept applies when counting group mandates, covering affiliated undertakings under the HGB or comparably linked undertakings."
+  },
+  "act": {
+   "de": "Mandatsübersicht der Geschäftsleiter gegen die neue Gruppenabgrenzung und die Übergangsregel in § 64c Abs. 1 prüfen.",
+   "en": "Check the managing directors mandate overview against the new group delineation and the transitional rule in section 64c(1)."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 25 (§ 25c Abs. 2, 3)"
+ },
+ {
+  "g": "gov",
+  "kind": "new",
+  "oldRef": "§ 25c Abs. 4a KWG",
+  "newRef": "§ 25c Abs. 4a Buchst. h, i KWG",
+  "oldText": "",
+  "newText": "die Leiter der internen Kontrollfunktionen über eine hinreichende Autorität verfügen, direkten Zugang zum Verwaltungs- und Aufsichtsorgan haben und berechtigt sind, unabhängig von der Geschäftsleitung direkt an das Verwaltungs- oder Aufsichtsorgan zu berichten und insbesondere Warnungen über riskante Entwicklungen auszusprechen, und i) die Leiter der internen Kontrollfunktionen nicht ohne vorherige Zustimmung durch das Verwaltungs- oder Aufsichtsorgan von ihrer Funktion entbunden werden dürfen",
+  "s": {
+   "de": "Die Leiter der internen Kontrollfunktionen müssen hinreichend Autorität haben, direkten Zugang zum Verwaltungs- oder Aufsichtsorgan und das Recht zur unabhängigen Berichterstattung an dieses. Sie dürfen nur mit vorheriger Zustimmung des Organs von ihrer Funktion entbunden werden.",
+   "en": "The heads of internal control functions must have sufficient authority, direct access to the management or supervisory body and the right to report to it independently. They may be relieved of their function only with the prior consent of that body."
+  },
+  "act": {
+   "de": "Stellung und Abberufungsregeln der Leiter von Risikocontrolling, Compliance und Revision in Satzungen und Geschäftsordnungen prüfen.",
+   "en": "Review the standing and removal rules for the heads of risk control, compliance and audit in articles and rules of procedure."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 25 (§ 25c Abs. 4a)"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "§ 25e KWG",
+  "newRef": "§ 25e Abs. 1 bis 3 KWG",
+  "oldText": "Bedient sich ein CRR-Kreditinstitut eines vertraglich gebundenen Vermittlers im Sinne des § 2 Absatz 10 Satz 1, hat es sicherzustellen, dass dieser zuverlässig und fachlich geeignet ist, bei der Erbringung der Finanzdienstleistungen die gesetzlichen Vorgaben erfüllt, Kunden vor Aufnahme der Geschäftsbeziehung über seinen Status nach § 2 Absatz 10 Satz 1 und 2 informiert",
+  "newText": "Inhaber von Schlüsselfunktionen müssen fachlich geeignet und zuverlässig sein. Die Institute sowie Finanzholding-Gesellschaften und gemischten Finanzholding-Gesellschaften ergreifen die erforderlichen Maßnahmen, um die ordnungsgemäße Ausübung der Schlüsselfunktionen sicherzustellen. Hierzu gehört auch, dass die Unternehmen den Inhaber einer Schlüsselfunktion ersetzen, wenn dieser die Voraussetzungen nach Absatz 1 nicht erfüllt. Erfüllt ein Inhaber besonderer Schlüsselfunktionen nicht die Anforderungen des Absatzes 1, kann die Bundesanstalt verlangen,",
+  "s": {
+   "de": "Neu ist ein Fit-and-Proper-Regime für Inhaber von Schlüsselfunktionen: Sie müssen fachlich geeignet und zuverlässig sein, das Institut muss sie bei fehlender Eignung ersetzen. Bei Inhabern besonderer Schlüsselfunktionen kann die Bundesanstalt verlangen, dass die Funktion nicht übertragen oder entzogen wird. Die bisherige Regel zu vertraglich gebundenen Vermittlern bleibt als Absatz 4.",
+   "en": "A fit-and-proper regime is new for key function holders: they must be professionally suitable and reliable, and the institution must replace them if they are not. For holders of special key functions BaFin can require that the function is not assigned or is withdrawn. The existing rule on tied agents remains as paragraph 4."
+  },
+  "act": {
+   "de": "Kreis der Schlüsselfunktionsinhaber bestimmen und Eignungsbewertung vor Übernahme und regelmäßig dokumentieren (vgl. § 25c Abs. 4b Nr. 7).",
+   "en": "Define the group of key function holders and document the suitability assessment before assumption and regularly (see section 25c(4b) no. 7)."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 27 (§ 25e)"
+ },
+ {
+  "g": "gov",
+  "kind": "new",
+  "oldRef": "§ 25c Abs. 4a KWG",
+  "newRef": "§ 25c Abs. 4a, 4b KWG",
+  "oldText": "",
+  "newText": "angemessene Verfahren und Konzepte, die sicherstellen, dass Inhaber von Schlüsselfunktionen jederzeit die Anforderungen des § 25e Absatz 1 erfüllen; mindestens haben die Geschäftsleiter dafür Sorge zu tragen, dass die Eignung der Inhaber von Schlüsselfunktionen vor Übernahme der Funktion sowie regelmäßig und bei Bedarf bewertet wird",
+  "s": {
+   "de": "Die Geschäftsleiter müssen Verfahren schaffen, die sicherstellen, dass Inhaber von Schlüsselfunktionen jederzeit die Eignungsanforderungen erfüllen. Die Eignung ist mindestens vor Übernahme der Funktion und danach regelmäßig zu bewerten.",
+   "en": "Managing directors must establish procedures ensuring that key function holders meet the suitability requirements at all times. Suitability must be assessed at least before assuming the function and regularly thereafter."
+  },
+  "act": {
+   "de": "Prozess für Erst- und Folgebewertung der Schlüsselfunktionsinhaber in der Geschäftsorganisation verankern.",
+   "en": "Anchor a process for initial and follow-up assessment of key function holders in the business organisation."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 25 (§ 25c Abs. 4b)"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "§ 25d Abs. 12 KWG",
+  "newRef": "§ 25d Abs. 12 KWG",
+  "oldText": "überwacht die angemessene Ausgestaltung der Vergütungssysteme der Geschäftsleiter und Mitarbeiter, und insbesondere die angemessene Ausgestaltung der Vergütungen für die Leiter der Risikocontrolling-Funktion und der Compliance-Funktion sowie solcher Mitarbeiter, die einen wesentlichen Einfluss auf das Gesamtrisikoprofil des Instituts haben,",
+  "newText": "überwacht die angemessene Ausgestaltung der Vergütungssysteme der Mitarbeiter und insbesondere solcher Mitarbeiter, die einen wesentlichen Einfluss auf das Gesamtrisikoprofil des Instituts haben; 2. überwacht unmittelbar die angemessene Ausgestaltung der Vergütungssysteme der Geschäftsleiter",
+  "s": {
+   "de": "Der Vergütungskontrollausschuss überwacht die Vergütungssysteme der Geschäftsleiter und der Leiter der internen Kontrollfunktionen künftig unmittelbar. In den Ausschuss muss ein Mitglied mit Sachverstand in Risikomanagement und Risikocontrolling bestellt werden, bei Mitbestimmung auch ein Arbeitnehmervertreter.",
+   "en": "The remuneration control committee will in future directly oversee the remuneration systems of managing directors and heads of internal control functions. A member with expertise in risk management and risk control must be appointed to the committee, and an employee representative where co-determination applies."
+  },
+  "act": {
+   "de": "Besetzung und Aufgabenzuschnitt des Vergütungskontrollausschusses prüfen.",
+   "en": "Review the composition and remit of the remuneration control committee."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 26 (§ 25d Abs. 12)"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "§ 25c Abs. 4 KWG",
+  "newRef": "§ 25c Abs. 4 KWG",
+  "oldText": "Die Institute müssen angemessene personelle und finanzielle Ressourcen einsetzen, um den Mitgliedern der Geschäftsleitung die Einführung in ihr Amt zu erleichtern und die Fortbildung zu ermöglichen, die zur Aufrechterhaltung ihrer fachlichen Eignung erforderlich ist.",
+  "newText": "Die Institute müssen angemessene personelle und finanzielle Ressourcen einsetzen, um den Mitgliedern der Geschäftsleitung die Einführung in ihr Amt zu erleichtern und die Fortbildung zu ermöglichen, die zur Aufrechterhaltung ihrer fachlichen Eignung erforderlich ist, auch in Bezug auf IKT-Risiken im Sinne des Artikels 4 Absatz 1 Unterabsatz 1 Nummer 52c der Verordnung (EU) Nr. 575/2013.",
+  "s": {
+   "de": "Einführung und Fortbildung der Leitungsorgane müssen künftig ausdrücklich auch IKT-Risiken abdecken. Dasselbe gilt für Verwaltungs- und Aufsichtsorgane (§ 25d Abs. 4).",
+   "en": "Induction and training of governing bodies must in future expressly cover ICT risks as well. The same applies to management and supervisory bodies (section 25d(4))."
+  },
+  "act": {
+   "de": "Schulungsplan für Geschäftsleiter und Aufsichtsorgan um IKT-Risiken ergänzen.",
+   "en": "Add ICT risks to the training plan for managing directors and the supervisory body."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 25 d, Nr. 26 d"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "oldRef": "§ 24 Abs. 1 KWG",
+  "newRef": "§ 24 Abs. 1 Nr. 1 KWG",
+  "oldText": "neue Tatsachen, die sich auf die ursprüngliche Beurteilung der Zuverlässigkeit, der fachlichen Eignung und der ausreichenden zeitlichen Verfügbarkeit erheblich auswirken, sind ebenfalls unverzüglich nach Kenntniserlangung anzuzeigen;",
+  "newText": "handelt es sich um einen Geschäftsleiter eines großen Unternehmens im Sinne des § 1 Absatz 1c, hat die Anzeige der Absicht der Bestellung spätestens 30 Arbeitstage vor der Übernahme der Funktion zu erfolgen;",
+  "s": {
+   "de": "Bei großen Unternehmen muss die Bestellung eines Geschäftsleiters spätestens 30 Arbeitstage vor Übernahme der Funktion angezeigt werden. Die Anzeigepflicht erfasst auch Vertreter von Geschäftsleitern, und die Bundesanstalt kann Instituten, bei denen Eingriffsvoraussetzungen nach §§ 45 bis 46 vorliegen, die Vorlaufzeit von bis zu 30 Arbeitstagen ebenfalls auferlegen. Die Pflicht zur Anzeige neuer Tatsachen steht jetzt in § 24 Abs. 2a.",
+   "en": "For large undertakings the appointment of a managing director must be notified at least 30 working days before the function is assumed. The duty also covers deputies of managing directors, and BaFin can impose the lead time of up to 30 working days on institutions where intervention conditions under sections 45 to 46 are met. The duty to notify new facts is now in section 24(2a)."
+  },
+  "act": {
+   "de": "Personalplanung für Geschäftsleiterwechsel auf die Vorlaufzeit von 30 Arbeitstagen ausrichten.",
+   "en": "Align succession planning for managing director changes with the 30 working days lead time."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 23 (§ 24 Abs. 1, 3a, 3b)"
+ },
+ {
+  "g": "gov",
+  "kind": "new",
+  "oldRef": "§ 24 KWG",
+  "newRef": "§ 24 Abs. 1f KWG",
+  "oldText": "",
+  "newText": "Ein CRR-Kreditinstitut hat die geplante wesentliche Übertragung von Vermögenswerten oder Verbindlichkeiten unverzüglich im Voraus anzuzeigen,",
+  "s": {
+   "de": "CRR-Kreditinstitute müssen die geplante wesentliche Übertragung von Vermögenswerten oder Verbindlichkeiten im Voraus anzeigen, auch bei Übertragungen innerhalb der Gruppe.",
+   "en": "CRR credit institutions must give advance notice of a planned material transfer of assets or liabilities, including transfers within the group."
+  },
+  "act": {
+   "de": "Anzeigeprozess für Portfolio- und Bestandsübertragungen mit den Schwellen der Verordnung abstimmen.",
+   "en": "Align the notification process for portfolio and book transfers with the thresholds under the ordinance."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 23 (§ 24 Abs. 1f)"
+ },
+ {
+  "g": "sup",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 2h KWG",
+  "oldText": "",
+  "newText": "CRR-Kreditinstitute haben die Absicht, direkt oder indirekt eine wesentliche Beteiligung zu erwerben, im Voraus anzuzeigen.",
+  "s": {
+   "de": "Neu ist eine Vorabanzeige für den Erwerb wesentlicher Beteiligungen durch CRR-Kreditinstitute. Die Aufsicht bestätigt den Eingang binnen zehn Arbeitstagen und hat anschließend 60 Arbeitstage für ihre Beurteilung.",
+   "en": "A prior notification for the acquisition of material holdings by CRR credit institutions is new. The supervisor confirms receipt within ten working days and then has 60 working days for its assessment."
+  },
+  "act": {
+   "de": "Beteiligungserwerbe künftig vorab anzeigen und in Transaktionszeitplänen die Beurteilungsfrist berücksichtigen.",
+   "en": "Notify holding acquisitions in advance in future and factor the assessment period into transaction timetables."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 8 (§ 2h)"
+ },
+ {
+  "g": "sup",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 2i KWG",
+  "oldText": "",
+  "newText": "CRR-Kreditinstitute, Finanzholding-Gesellschaften und gemischte Finanzholding-Gesellschaften müssen der Aufsichtsbehörde und der Deutschen Bundesbank eine geplante Verschmelzung oder Spaltung nach Annahme des Verschmelzungs- oder Spaltungsplans und vor Abschluss des geplanten Vorgangs mit allen erforderlichen Informationen anzeigen,",
+  "s": {
+   "de": "Geplante Verschmelzungen und Spaltungen sind nach Annahme des Plans und vor Abschluss anzuzeigen und werden von der Aufsicht beurteilt. Für Verschmelzungen nur innerhalb einer Gruppe muss die Aufsicht keine Beurteilung durchführen.",
+   "en": "Planned mergers and demergers must be notified after adoption of the plan and before completion and are assessed by the supervisor. For mergers solely within one group the supervisor need not carry out an assessment."
+  },
+  "act": {
+   "de": "Umstrukturierungsprojekte um einen Anzeige- und Beurteilungsschritt gegenüber BaFin und Bundesbank ergänzen.",
+   "en": "Add a notification and assessment step towards BaFin and the Bundesbank to restructuring projects."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 8 (§ 2i)"
+ },
+ {
+  "g": "sup",
+  "kind": "changed",
+  "oldRef": "§ 2c Abs. 1 KWG",
+  "newRef": "§ 2c Abs. 1 KWG",
+  "oldText": "innerhalb von zwei Arbeitstagen nach deren Zugang schriftlich oder elektronisch gegenüber dem Anzeigepflichtigen zu bestätigen.",
+  "newText": "innerhalb von zehn Arbeitstagen nach deren Zugang schriftlich oder elektronisch gegenüber dem Anzeigepflichtigen zu bestätigen.",
+  "s": {
+   "de": "Die Aufsicht muss den Eingang einer Anzeige über bedeutende Beteiligungen künftig binnen zehn statt zwei Arbeitstagen bestätigen. Außerdem konsultiert sie bei Geldwäscherisiken die zuständigen Behörden und kann Einwände gegen Erwerber aus bestimmten Drittländern erheben.",
+   "en": "The supervisor must in future confirm receipt of a notification on significant holdings within ten instead of two working days. It also consults the competent authorities on money laundering risks and can object to acquirers from certain third countries."
+  },
+  "aud": "all",
+  "imp": "low",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 5 (§ 2c Abs. 1c)"
+ },
+ {
+  "g": "sup",
+  "kind": "new",
+  "oldRef": "§ 1 KWG",
+  "newRef": "§ 1 Abs. 1c KWG",
+  "oldText": "",
+  "newText": "Große Unternehmen im Sinne dieses Gesetzes sind große Institute und große Tochterunternehmen sowie nach § 2f Absatz 1 zugelassene Mutterfinanzholding-Gesellschaften und gemischte Mutterfinanzholding-Gesellschaften, die ein großes Institut in ihrer Gruppe haben.",
+  "s": {
+   "de": "Das Gesetz führt den Begriff „große Unternehmen“ ein. An ihn knüpfen etwa die 30 Arbeitstage Vorlauf bei der Anzeige von Geschäftsleiterbestellungen an.",
+   "en": "The Act introduces the concept of “large undertakings”. It is linked, for example, to the 30 working days lead time for notifying managing director appointments."
+  },
+  "act": {
+   "de": "Prüfen, ob das eigene Institut oder die Gruppe als großes Unternehmen gilt.",
+   "en": "Check whether your institution or group qualifies as a large undertaking."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 2 (§ 1 Abs. 1c)"
+ },
+ {
+  "g": "esg",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 26c KWG",
+  "oldText": "",
+  "newText": "Im Rahmen des Risikomanagements nach § 25a sind ESG-Risiken wie folgt zu berücksichtigen: 1. im Rahmen der Risikostrategie ist ein ESG-Risikoplan nach § 26d zu erstellen;",
+  "s": {
+   "de": "ESG-Risiken werden Teil des Risikomanagements nach § 25a: Strategien, Risikoinventur, Steuerung, Stresstests und Vergütung müssen sie über kurze, mittlere und lange Sicht von mindestens zehn Jahren erfassen. Institute müssen zusätzlich die langfristige Resilienz ihres Geschäftsmodells gegen ESG-, vor allem Klimarisiken, mit Szenarien testen. Geschäftsleiter und Aufsichtsorgan brauchen die Sachkunde auch für ESG-Risiken.",
+   "en": "ESG risks become part of risk management under section 25a: strategies, risk inventory, steering, stress tests and remuneration must capture them over short, medium and long term of at least ten years. Institutions must also test the long-term resilience of their business model against ESG, above all climate, risks using scenarios. Managing directors and the supervisory body need the expertise to cover ESG risks too."
+  },
+  "act": {
+   "de": "ESG-Risiken in Strategie, Risikoinventur, Limitsystem, Stresstests und Vergütung verankern und Weiterbildung der Leitungsorgane planen.",
+   "en": "Embed ESG risks in strategy, risk inventory, limit system, stress tests and remuneration and plan training for governing bodies."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 29 (§ 26c)"
+ },
+ {
+  "g": "esg",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 26d KWG",
+  "oldText": "",
+  "newText": "Die Geschäftsleiter haben dafür Sorge zu tragen, dass ein spezifischer Plan zur Überwachung und Steuerung der ESG-Risiken (ESG-Risikoplan)",
+  "s": {
+   "de": "Geschäftsleiter müssen einen ESG-Risikoplan mit Zielen, Kennzahlen und Überwachungsverfahren erstellen, der Risiken auf mindestens zehn Jahre abdeckt. Kleine und nicht komplexe Institute dürfen Ziele und Verfahren rein qualitativ beschreiben und den Plan bis zum 31. Dezember 2029 auf umweltbezogene Risiken beschränken.",
+   "en": "Managing directors must prepare an ESG risk plan with targets, metrics and monitoring procedures covering risks over at least ten years. Small and non-complex institutions may describe targets and procedures purely qualitatively and limit the plan to environmental risks until 31 December 2029."
+  },
+  "act": {
+   "de": "Prüfen, ob das Institut als klein und nicht komplex gilt, und den Plan mit Zielen und Kennzahlen für den Stichtag 11.01.2027 vorbereiten.",
+   "en": "Check whether the institution qualifies as small and non-complex and prepare the plan with targets and metrics for the 11 January 2027 deadline."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 29 (§ 26d)"
+ },
+ {
+  "g": "esg",
+  "kind": "changed",
+  "oldRef": "§ 6b Abs. 2 KWG",
+  "newRef": "§ 6b Abs. 2 Satz 2 Nr. 15 KWG",
+  "oldText": "Neben Kreditrisiken, Marktrisiken und operationellen Risiken berücksichtigt sie dabei insbesondere",
+  "newText": "Neben Kreditrisiken, Marktrisiken und operationellen Risiken sowie jeweils auf diese und weitere Risikoarten einwirkenden ESG-Risiken berücksichtigt sie dabei insbesondere",
+  "s": {
+   "de": "In der aufsichtlichen Überprüfung bewertet die Aufsicht künftig auch auf andere Risikoarten einwirkende ESG-Risiken sowie den ESG-Risikoplan und die Fortschritte des Instituts bei der Handhabung von ESG-Risiken.",
+   "en": "In the supervisory review the supervisor will in future also assess ESG risks affecting other risk types as well as the ESG risk plan and the institution’s progress in handling ESG risks."
+  },
+  "act": {
+   "de": "ESG-Risikoplan und Fortschrittsnachweise für die aufsichtliche Überprüfung vorhalten.",
+   "en": "Keep the ESG risk plan and evidence of progress available for the supervisory review."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 10 (§ 6b)"
+ },
+ {
+  "g": "tcb",
+  "kind": "moved",
+  "oldRef": "§ 53c Abs. 1 KWG",
+  "newRef": "§ 53 Abs. 7, 8 KWG",
+  "oldText": "Ungeachtet der Regelungen des Absatzes 1 können Unternehmen mit Sitz in einem Drittstaat, die in das Register nach Artikel 48 der Verordnung (EU) Nr. 600/2014 eingetragen wurden, gegenüber geeigneten Gegenparteien und professionellen Kunden im Inland Wertpapierdienstleistungen im Sinne des § 2 Absatz 3 und 3a des Wertpapierhandelsgesetzes erbringen.",
+  "newText": "Ungeachtet der Regelungen des Absatzes 7 können Unternehmen mit Sitz in einem Drittstaat, die in das Register nach Artikel 48 der Verordnung (EU) Nr. 600/2014 eingetragen wurden, gegenüber geeigneten Gegenparteien und professionellen Kunden im Inland Wertpapierdienstleistungen im Sinne des § 2 Absatz 8 und 9 des Wertpapierhandelsgesetzes erbringen.",
+  "s": {
+   "de": "Die bisherige Verordnungsermächtigung und die Ausnahme für Drittstaatenunternehmen im ESMA-Register stehen jetzt als Absätze 7 und 8 in § 53. Der alte § 53c wird für das neue Regime der CRD-Drittstaatenzweigstellen frei.",
+   "en": "The previous ordinance authorisation and the exemption for third-country firms in the ESMA register now stand as paragraphs 7 and 8 of section 53. The former section 53c is freed up for the new regime for CRD third-country branches."
+  },
+  "aud": "all",
+  "imp": "low",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 41, 42 (§ 53 Abs. 7, 8; § 53c)"
+ },
+ {
+  "g": "tcb",
+  "kind": "changed",
+  "oldRef": "§ 53c KWG",
+  "newRef": "§ 53c KWG",
+  "oldText": "",
+  "newText": "§ 53 Absatz 1 ist auf eine Zweigstelle eines Unternehmens mit Sitz in einem Drittstaat ausschließlich nach Maßgabe der §§ 53ca bis 53cq anzuwenden, sofern, vorbehaltlich des Satzes 2, eine der folgenden Voraussetzungen vorliegt (CRD-Drittstaatenzweigstelle):",
+  "s": {
+   "de": "Zweigstellen von Drittstaatenunternehmen, die bestimmte Tätigkeiten nach Anhang I der Richtlinie 2013/36/EU erbringen (oder bei EU-Sitz ein CRR-Kreditinstitut wären), unterliegen einem eigenen Erlaubnis- und Aufsichtsregime nach §§ 53c bis 53cq. Reine Wertpapierdienstleistungen nach Richtlinie 2014/65/EU fallen nicht darunter. Angewendet wird das Regime überwiegend erst ab dem 11. Januar 2027.",
+   "en": "Branches of third-country undertakings that provide certain activities under Annex I of Directive 2013/36/EU (or that would be CRR credit institutions if headquartered in the EU) are subject to their own licensing and supervisory regime under sections 53c to 53cq. Pure investment services under Directive 2014/65/EU do not fall within it. The regime mainly applies only from 11 January 2027."
+  },
+  "act": {
+   "de": "Prüfen, ob eine inländische Zweigstelle unter die Definition fällt, und die Erlaubnisplanung rechtzeitig vor dem 11.01.2027 aufsetzen.",
+   "en": "Check whether a domestic branch falls under the definition and start licence planning well before 11 January 2027."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53c); Art. 2 Nr. 44 (§ 64c Abs. 5)"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 53ca KWG",
+  "oldText": "",
+  "newText": "Eine CRD-Drittstaatenzweigstelle gilt als CRD-Drittstaatenzweigstelle der Risikoklasse 1, sofern eine der folgenden Voraussetzungen erfüllt ist: 1. der Gesamtwert der von der CRD-Drittstaatenzweigstelle verbuchten oder initiierten Vermögenswerte im Inland beträgt laut Meldung für den unmittelbar vorangegangenen jährlichen Berichtszeitraum nach den §§ 53ck und 53cl mindestens 5 Milliarden Euro;",
+  "s": {
+   "de": "Zweigstellen werden in zwei Risikoklassen eingeteilt. Klasse 1 gilt bei mindestens 5 Milliarden Euro Vermögenswerten im Inland, bei nennenswerten Privatkundeneinlagen oder wenn die Zweigstelle nicht als qualifiziert gilt; alle übrigen sind Klasse 2. Der Klassenwechsel ist unverzüglich anzuzeigen.",
+   "en": "Branches are divided into two risk classes. Class 1 applies at assets of at least EUR 5 billion in Germany, with material retail deposits or where the branch is not qualified; all others are class 2. A change of class must be notified without delay."
+  },
+  "act": {
+   "de": "Risikoklasse der Zweigstelle bestimmen und die Schwellenüberwachung samt Anzeigeprozess einrichten.",
+   "en": "Determine the branch’s risk class and set up threshold monitoring including the notification process."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53ca)"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 53cc KWG",
+  "oldText": "",
+  "newText": "Eine CRD-Drittstaatenzweigstelle bedarf der schriftlichen oder elektronischen Erlaubnis der Bundesanstalt, wenn sie die in § 53c Absatz 1 Satz 1 genannten Dienstleistungen gewerbsmäßig oder in einem Umfang, der einen in kaufmännischer Weise eingerichteten Geschäftsbetrieb erfordert, im Inland erbringen will.",
+  "s": {
+   "de": "CRD-Drittstaatenzweigstellen brauchen eine Erlaubnis der Bundesanstalt. Erlaubnisse, die bis zum 10. Januar 2027 erteilt wurden, können fortgelten, wenn die Zweigstelle die neuen Anforderungen erfüllt. Die Tätigkeiten dürfen grundsätzlich nur im Inland ausgeübt werden.",
+   "en": "CRD third-country branches need a licence from BaFin. Licences granted up to 10 January 2027 may continue if the branch meets the new requirements. The activities may in principle only be conducted in Germany."
+  },
+  "act": {
+   "de": "Erlaubnisantrag bzw. Fortgeltungsbeschluss vorbereiten und die Beschränkung auf die Tätigkeit im Inland in der Geschäftsplanung prüfen.",
+   "en": "Prepare the licence application or continuation decision and check the restriction to domestic activity in the business plan."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53cc)"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 53ce KWG",
+  "oldText": "",
+  "newText": "CRD-Drittstaatenzweigstellen haben jederzeit eine Mindestkapitalausstattung in folgender Höhe vorzuhalten: 1. CRD-Drittstaatenzweigstelle der Risikoklasse 1: 2,5 Prozent der durchschnittlichen Verbindlichkeiten der drei unmittelbar vorangegangenen jährlichen Berichtszeiträume, im Fall einer neu zugelassenen CRD- Drittstaatenzweigstelle nach den Verbindlichkeiten zum Zeitpunkt der Erlaubniserteilung, gemäß Meldung nach den §§ 53ck und 53cl, mindestens jedoch 10 Millionen Euro;",
+  "s": {
+   "de": "Zweigstellen müssen Mindestkapital in Höhe von 2,5 Prozent (Klasse 1, mindestens 10 Millionen Euro) bzw. 0,5 Prozent (Klasse 2, mindestens 5 Millionen Euro) der durchschnittlichen Verbindlichkeiten vorhalten. Es ist in liquiden Instrumenten auf einem Abwicklungskonto im Inland zu hinterlegen.",
+   "en": "Branches must hold minimum capital of 2.5 percent (class 1, at least EUR 10 million) or 0.5 percent (class 2, at least EUR 5 million) of average liabilities. It must be held in liquid instruments in a resolution account in Germany."
+  },
+  "act": {
+   "de": "Kapitalbedarf der Zweigstelle berechnen und Abwicklungskonto bei einem gruppenfremden Kreditinstitut oder der Bundesbank einrichten.",
+   "en": "Calculate the branch’s capital need and set up the resolution account at a non-group credit institution or the Bundesbank."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53ce)"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 53cf KWG",
+  "oldText": "",
+  "newText": "CRD-Drittstaatenzweigstellen der Risikoklasse 2 halten jederzeit unbelastete liquide Aktiva in einem Volumen vor, das ausreicht, Liquiditätsabflüsse über einen Zeitraum von mindestens 30 Tagen zu decken.",
+  "s": {
+   "de": "Klasse-1-Zweigstellen unterliegen den Liquiditätsvorgaben der CRR, Klasse-2-Zweigstellen müssen liquide Aktiva für mindestens 30 Tage Abflüsse auf einem Konto im Inland halten. Qualifizierte Zweigstellen kann die Bundesanstalt befreien.",
+   "en": "Class 1 branches are subject to the liquidity requirements of the CRR; class 2 branches must hold liquid assets covering outflows for at least 30 days in an account in Germany. BaFin can exempt qualified branches."
+  },
+  "act": {
+   "de": "Liquiditätssteuerung der Zweigstelle auf die klassenabhängigen Vorgaben und die Kontenführung im Inland ausrichten.",
+   "en": "Align the branch’s liquidity management with the class-dependent requirements and domestic account keeping."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53cf)"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 53cg KWG",
+  "oldText": "",
+  "newText": "CRD-Drittstaatenzweigstellen haben zwei natürliche Personen mit Wohnsitz im Inland zu bestellen, die für den Geschäftsbereich der CRD-Drittstaatenzweigstelle zur Geschäftsführung und zur Vertretung des Unternehmens befugt sind. Solche Personen gelten als Geschäftsleiter. Sie sind zur Eintragung in das Handelsregister anzumelden.",
+  "s": {
+   "de": "Zweigstellen müssen zwei im Inland ansässige Geschäftsleiter bestellen, die ins Handelsregister einzutragen sind. Klasse-1-Zweigstellen müssen zudem wesentliche Organisations-, Risikomanagement- und Vergütungsvorgaben des KWG erfüllen.",
+   "en": "Branches must appoint two managing directors resident in Germany, to be entered in the commercial register. Class 1 branches must also meet key organisation, risk management and remuneration requirements of the KWG."
+  },
+  "act": {
+   "de": "Inländische Geschäftsleiter bestellen und Governance-Struktur der Zweigstelle gegen die klassenabhängigen KWG-Pflichten abgleichen.",
+   "en": "Appoint domestic managing directors and compare the branch governance structure with the class-dependent KWG duties."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53cg)"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 53ci KWG",
+  "oldText": "",
+  "newText": "Die Bundesanstalt kann von einer CRD-Drittstaatenzweigstelle verlangen, eine Erlaubnis nach § 32 zu beantragen, insbesondere wenn",
+  "s": {
+   "de": "Die Bundesanstalt kann verlangen, dass eine Zweigstelle ein Tochterunternehmen mit Erlaubnis nach § 32 gründet, etwa bei Systemrelevanz, bei grenzüberschreitenden Tätigkeiten oder wenn Vermögenswerte der Zweigstellen derselben Drittstaatengruppe 40 Milliarden Euro oder im Inland 10 Milliarden Euro erreichen.",
+   "en": "BaFin can require a branch to establish a subsidiary licensed under section 32, for example in case of systemic relevance, cross-border activities or where assets of branches of the same third-country group reach EUR 40 billion or EUR 10 billion in Germany."
+  },
+  "act": {
+   "de": "Szenarien für eine Umwandlung in ein Tochterunternehmen vorbereiten, wenn die Gruppe nahe an den Schwellen liegt.",
+   "en": "Prepare scenarios for conversion into a subsidiary where the group is close to the thresholds."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 42 (§ 53ci)"
+ },
+ {
+  "g": "cap",
+  "kind": "new",
+  "oldRef": "§ 6d KWG",
+  "newRef": "§ 6d Abs. 1a KWG",
+  "oldText": "",
+  "newText": "Unterliegt ein Institut, eine Institutsgruppe, eine Finanzholding-Gruppe oder eine gemischte Finanzholding-Gruppe der Output-Floor-Eigenmitteluntergrenze, so kann die Aufsichtsbehörde ihre Leitlinien für zusätzliche Eigenmittel überprüfen, die sie diesem Institut, dieser Institutsgruppe, dieser Finanzholding-Gruppe oder dieser gemischten Finanzholding-Gruppe mitgeteilt hat, um sicherzustellen, dass die Kalibrierung weiterhin angemessen ist.",
+  "s": {
+   "de": "Unterliegt ein Institut dem Output Floor, kann die Aufsicht ihre Leitlinien für zusätzliche Eigenmittel überprüfen, um die Kalibrierung angemessen zu halten.",
+   "en": "Where an institution is subject to the output floor, the supervisor may review its guidance on additional own funds to keep the calibration appropriate."
+  },
+  "act": {
+   "de": "Eigenmittelplanung auf mögliche Anpassung der Eigenmittelempfehlung nach Output-Floor-Einstufung prüfen.",
+   "en": "Review own funds planning for a possible adjustment of the own funds guidance after output floor classification."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 12 (§ 6d Abs. 1a)"
+ },
+ {
+  "g": "cap",
+  "kind": "changed",
+  "oldRef": "§ 25a Abs. 2 KWG",
+  "newRef": "§ 25a Abs. 2 KWG",
+  "oldText": "Vorgaben zur Ausgestaltung einer plötzlichen und unerwarteten Zinsänderung und zur Ermittlungsmethodik der Auswirkungen auf den Barwert und die Erträge bezüglich der Zinsänderungsrisiken aus den nicht unter das Handelsbuch fallenden Geschäften festlegen.",
+  "newText": "gegenüber einem Institut die Anwendung des standardisierten Ansatzes oder des vereinfachten standardisierten Ansatzes, jeweils gemäß der Delegierten Verordnung (EU) 2024/857 in der Fassung vom 1. Dezember 2023, für das Risikomanagement von Zinsänderungsrisiken aus den nicht unter das Handelsbuch fallenden Geschäften anordnen,",
+  "s": {
+   "de": "Die Bundesanstalt kann einem Institut die Anwendung des standardisierten oder vereinfachten standardisierten Ansatzes für Zinsänderungsrisiken im Anlagebuch anordnen, wenn die internen Verfahren kein angemessenes Risikomanagement gewährleisten.",
+   "en": "BaFin can order an institution to apply the standardised or simplified standardised approach for interest rate risk in the banking book where internal methods do not ensure adequate risk management."
+  },
+  "act": {
+   "de": "Interne Zinsänderungsrisikomodelle auf Angemessenheit prüfen und den Standardansatz als Rückfallposition vorhalten.",
+   "en": "Review internal interest rate risk models for adequacy and keep the standardised approach as a fallback."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 24 (§ 25a Abs. 2)"
+ },
+ {
+  "g": "sup",
+  "kind": "changed",
+  "oldRef": "§ 45 Abs. 1 KWG",
+  "newRef": "§ 45 Abs. 1, 2 KWG",
+  "oldText": "Wenn die Vermögens-, Finanz- oder Ertragsentwicklung eines Instituts oder andere Umstände die Annahme rechtfertigen, dass das Institut 1. die Anforderungen der Artikel 92 bis 386 der Verordnung (EU) Nr. 575/2013 oder des § 10 Absatz 3 und 4,",
+  "newText": "Die Aufsichtsbehörde kann gegenüber einem Institut Maßnahmen zur dauerhaften Erfüllung der jeweiligen Anforderung anordnen, wenn seine Vermögens-, Finanz- oder Ertragsentwicklung oder andere Umstände die Annahme rechtfertigen, dass es mindestens eine der folgenden Anforderungen nicht erfüllt oder zukünftig voraussichtlich nicht erfüllen wird: 1. die Anforderungen der Verordnung (EU) Nr. 575/2013,",
+  "s": {
+   "de": "Der Eingriffstatbestand wird erweitert: Die Aufsicht kann Maßnahmen schon bei erwarteten künftigen Verstößen gegen aufsichtliche Anforderungen anordnen, nicht nur bei Eigenmittel- und Liquiditätsmängeln. Zu den Maßnahmen zählt auch die Anordnung, Nettogewinne zur Stärkung der Eigenmittel einzusetzen und Ausschüttungen zu beschränken.",
+   "en": "The grounds for intervention are widened: the supervisor can order measures already where future breaches of supervisory requirements are expected, not only for own funds and liquidity deficiencies. The measures include ordering net profits to be used to strengthen own funds and restricting distributions."
+  },
+  "act": {
+   "de": "Frühwarn- und Maßnahmenplanung für erwartete Unterschreitungen aufsichtlicher Anforderungen überprüfen.",
+   "en": "Review early-warning and action planning for expected shortfalls against supervisory requirements."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 34 (§ 45)"
+ },
+ {
+  "g": "sanc",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 50 KWG",
+  "oldText": "",
+  "newText": "Die Bundesanstalt kann bei einem anhaltenden Verstoß gegen dieses Gesetz oder die dazu erlassenen Rechtsverordnungen, gegen die Verordnung (EU) Nr. 575/2013 oder gegen vollziehbare Anordnungen der Bundesanstalt die Zahlung eines periodischen Zwangsgelds durch Unternehmen, Geschäftsleiter, Mitglieder des Verwaltungs- oder Aufsichtsorgans, Inhaber von Schlüsselfunktionen, Risikoträger sowie jede andere natürliche Person, die für den Verstoß verantwortlich ist,",
+  "s": {
+   "de": "Bei anhaltenden Verstößen kann die Bundesanstalt periodische Zwangsgelder festsetzen, höchstens für sechs Monate. Sie betragen bis zu 50.000 Euro je Tag bei natürlichen Personen und bis zu 5 Prozent des durchschnittlichen Nettotagesumsatzes bei Unternehmen.",
+   "en": "In case of continuing breaches BaFin can impose periodic penalty payments for a maximum of six months. They amount to up to EUR 50,000 per day for natural persons and up to 5 percent of average daily net turnover for undertakings."
+  },
+  "act": {
+   "de": "Verantwortlichkeiten für die Beseitigung festgestellter Mängel klar zuweisen, um täglich anfallende Zwangsgelder zu vermeiden.",
+   "en": "Assign clear responsibility for remediating identified deficiencies to avoid daily penalty payments."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 39 (§ 50)"
+ },
+ {
+  "g": "sanc",
+  "kind": "new",
+  "oldRef": "§ 36a KWG",
+  "newRef": "§ 36a Abs. 5 KWG",
+  "oldText": "",
+  "newText": "Bei Verstößen gegen die in § 2c Absatz 1 Satz 1 oder 6 oder Absatz 3 Satz 1, § 2f Absatz 1 Satz 1 oder 2, § 2h Absatz 1, § 2i Absatz 1 Satz 1, § 24 Absatz 1f Satz 1 oder 4 oder § 32 Absatz 1 Satz 1 festgelegten Pflichten kann die Aufsichtsbehörde einer für den Verstoß verantwortlichen natürlichen Person untersagen, für einen Zeitraum von bis zu zwei Jahren Aufgaben in einem Institut wahrzunehmen.",
+  "s": {
+   "de": "Bei Verstößen gegen bestimmte Anzeige- und Erlaubnispflichten kann die Aufsicht der verantwortlichen natürlichen Person untersagen, für bis zu zwei Jahre Aufgaben in einem Institut wahrzunehmen.",
+   "en": "For breaches of certain notification and licensing duties the supervisor can prohibit the responsible natural person from performing tasks at an institution for up to two years."
+  },
+  "act": {
+   "de": "Verantwortliche für Anzeige- und Erlaubnispflichten benennen und Fristen überwachen.",
+   "en": "Name those responsible for notification and licensing duties and monitor deadlines."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 33 (§ 36a Abs. 5)"
+ },
+ {
+  "g": "rel",
+  "kind": "changed",
+  "oldRef": "§ 18 Satz 1 KWG",
+  "newRef": "§ 18 Satz 1 KWG",
+  "oldText": "Ein Kreditinstitut darf einen Kredit, der insgesamt 750.000 Euro oder 10 Prozent seines Kernkapitals",
+  "newText": "Ein Kreditinstitut darf einen Kredit, der insgesamt 1.500.000 Euro oder 10 Prozent seines Kernkapitals",
+  "s": {
+   "de": "Die Pflicht, sich die wirtschaftlichen Verhältnisse offenlegen zu lassen, greift erst bei Krediten über 1,5 Millionen Euro statt 750.000 Euro (oder 10 Prozent des Kernkapitals).",
+   "en": "The duty to obtain disclosure of the borrower’s financial situation applies only to loans above EUR 1.5 million instead of EUR 750,000 (or 10 percent of Tier 1 capital)."
+  },
+  "act": {
+   "de": "Kreditprozesse und Schwellenwerte für die Offenlegung der wirtschaftlichen Verhältnisse anpassen.",
+   "en": "Adapt credit processes and thresholds for disclosure of the borrower’s financial situation."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 1 Nr. 25 (§ 18); in Kraft seit 31.03.2026"
+ },
+ {
+  "g": "rel",
+  "kind": "changed",
+  "oldRef": "§ 15 Abs. 3 KWG",
+  "newRef": "§ 15 Abs. 3 KWG",
+  "oldText": "für Kredite an in Absatz 1 Satz 1 Nr. 6 bis 11 genannte Personen oder Unternehmen, wenn der Kredit weniger als 1 vom Hundert der nach Artikel 4 Absatz 1 Nummer 71 der Verordnung (EU) Nr. 575/2013 anrechenbaren Eigenmittel des Instituts oder weniger als 50.000 Euro beträgt, und",
+  "newText": "für Kredite an in Absatz 1 Satz 1 Nummer 6 bis 11 genannte Personen oder Unternehmen, wenn der Kredit weniger als 1 Prozent der nach Artikel 4 Absatz 1 Nummer 71 Buchstabe b der Verordnung (EU) Nr. 575/2013 anrechenbaren Eigenmittel des Instituts oder weniger als 100.000 Euro beträgt,",
+  "s": {
+   "de": "Die Bagatellgrenze für Organkredite steigt von 50.000 auf 100.000 Euro. Neu ist eine Ausnahme für Organkredite bis 20.000 Euro, die ausschließlich in vollautomatisierten Kreditentscheidungen vergeben werden, wenn das Organverhältnis die Konditionen nicht beeinflusst.",
+   "en": "The de minimis threshold for loans to board members increases from EUR 50,000 to EUR 100,000. A new exemption applies to such loans up to EUR 20,000 granted exclusively in fully automated credit decisions where the board relationship does not influence the terms."
+  },
+  "act": {
+   "de": "Organkreditprozess auf neue Grenzen und die Ausnahme für automatisierte Entscheidungen umstellen und die Konditionenneutralität nachweisen.",
+   "en": "Switch the board loan process to the new limits and the exemption for automated decisions and evidence terms neutrality."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 1 Nr. 24 (§ 15 Abs. 3); in Kraft seit 31.03.2026"
+ },
+ {
+  "g": "rel",
+  "kind": "changed",
+  "oldRef": "§ 15 Abs. 6 KWG",
+  "newRef": "§ 15 Abs. 6 KWG",
+  "oldText": "Für Geschäfte des Instituts, die keine Kredite im Sinne von § 21 Absatz 1 sind, mit Personen oder Unternehmen nach Absatz 1 Satz 1 Nummer 1 bis 12",
+  "newText": "Auf ein Organgeschäft mit Personen nach Absatz 1 Satz 1 Nummer 1 bis 5 und Nummer 12 ist Absatz 1 nicht anzuwenden, wenn das Gesamtvolumen der Organgeschäfte innerhalb des Kalenderjahres bis zum Zeitpunkt des jeweiligen Geschäfts 100.000 Euro nicht übersteigt.",
+  "s": {
+   "de": "Auch für sonstige Geschäfte mit Organmitgliedern (Organgeschäfte) gilt eine Bagatellgrenze: Bei einem Gesamtvolumen bis 100.000 Euro im Kalenderjahr ist Absatz 1 nicht anzuwenden. Die Überschrift des Paragrafen lautet jetzt Organtransaktionen.",
+   "en": "A de minimis threshold now also applies to other transactions with board members (Organgeschäfte): where the total volume does not exceed EUR 100,000 in the calendar year, paragraph 1 does not apply. The heading of the section now reads Organtransaktionen."
+  },
+  "act": {
+   "de": "Erfassung der Organgeschäfte auf das kalenderjährliche Gesamtvolumen von 100.000 Euro ausrichten.",
+   "en": "Align the recording of related-party transactions with the calendar-year aggregate of EUR 100,000."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 1 Nr. 24 (§ 15 Abs. 6)"
+ },
+ {
+  "g": "rel",
+  "kind": "changed",
+  "oldRef": "§ 32 Abs. 1 KWG",
+  "newRef": "§ 32 Abs. 1 Satz 2 Nr. 2, Abs. 1h KWG",
+  "oldText": "berechnete Monatsdurchschnitt der gesamten konsolidierten Vermögenswerte aller Unternehmen der Gruppe, die das Emissionsgeschäft, den Eigenhandel oder das Eigengeschäft betreiben, 30 Milliarden Euro überschreitet.",
+  "newText": "zwölf aufeinander folgende Monate berechnete Durchschnitt der gesamten Vermögenswerte zwar unter 30 Milliarden Euro liegt, das Unternehmen aber zu einer Gruppe gehört, in der die konsolidierte Bilanzsumme aller in der Europäischen Union niedergelassenen Unternehmen der Gruppe, einschließlich ihrer in Drittländern niedergelassenen Zweigstellen und Tochterunternehmen, die einzeln auch über Gesamtvermögen von weniger als 30 Milliarden Euro verfügen und das Emissionsgeschäft, den Eigenhandel oder das Eigengeschäft betreiben, 30 Milliarden Euro entspricht oder überschreitet;",
+  "s": {
+   "de": "Die 30-Milliarden-Euro-Schwelle, ab der Wertpapierfirmen mit Emissions- oder Eigenhandelsgeschäft eine Bankerlaubnis brauchen, wird gruppenweit unter Einbeziehung von Drittlandszweigstellen berechnet. Die Aufsicht kann Unternehmen nach Einholen einer Stellungnahme der EBA vom Erlaubniserfordernis ausnehmen.",
+   "en": "The EUR 30 billion threshold above which investment firms with underwriting or proprietary trading business need a banking licence is calculated group-wide including third-country branches. The supervisor can exempt firms from the licensing requirement after an EBA opinion."
+  },
+  "act": {
+   "de": "Gruppenbilanzsumme für die Schwelle berechnen und eine Ausnahme nach § 32 Abs. 1h erwägen.",
+   "en": "Calculate the group balance sheet total for the threshold and consider an exemption under section 32(1h)."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 31 (§ 32)"
+ },
+ {
+  "g": "trans",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 64c Abs. 5 KWG",
+  "oldText": "",
+  "newText": "Mit Ausnahme des § 53cc Absatz 6, der §§ 53ck und 53cl sind die §§ 53c bis 53cq erst ab dem 11. Januar 2027 anzuwenden. Für die Zwecke der Anwendung der §§ 53ck und 53cl gilt § 53c Absatz 1 bereits ab dem 11. Januar 2026.",
+  "s": {
+   "de": "Die Vorschriften zu CRD-Drittstaatenzweigstellen gelten überwiegend erst ab dem 11. Januar 2027. Die Meldepflichten nach §§ 53ck und 53cl und die Fortgeltungsregel in § 53cc Abs. 6 gelten früher, die Definition in § 53c Abs. 1 für die Meldungen bereits ab dem 11. Januar 2026.",
+   "en": "The rules on CRD third-country branches mainly apply only from 11 January 2027. The reporting duties under sections 53ck and 53cl and the continuation rule in section 53cc(6) apply earlier, the definition in section 53c(1) for the reports already from 11 January 2026."
+  },
+  "act": {
+   "de": "Meldungen nach §§ 53ck, 53cl vorbereiten und den Umstellungsplan für den 11.01.2027 festlegen.",
+   "en": "Prepare the reports under sections 53ck and 53cl and fix the transition plan for 11 January 2027."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 44 (§ 64c Abs. 5)"
+ },
+ {
+  "g": "trans",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 64c Abs. 3 KWG",
+  "oldText": "",
+  "newText": "Die Pflicht gemäß § 26d Absatz 1 tritt für die in § 26d Absatz 1 Satz 3 genannten Institute am 11. Januar 2027 in Kraft.",
+  "s": {
+   "de": "Für kleine und nicht komplexe Institute und vergleichbare Institute beginnt die Pflicht zum ESG-Risikoplan erst am 11. Januar 2027.",
+   "en": "For small and non-complex institutions and comparable institutions the duty to prepare an ESG risk plan only begins on 11 January 2027."
+  },
+  "act": {
+   "de": "ESG-Risikoplan bis 11.01.2027 fertigstellen, wenn das Institut unter die Erleichterung fällt.",
+   "en": "Complete the ESG risk plan by 11 January 2027 if the institution falls under the relief."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 44 (§ 64c Abs. 3)"
+ },
+ {
+  "g": "trans",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 64c Abs. 1, 2 KWG",
+  "oldText": "",
+  "newText": "Für Geschäftsleiter von nach § 2f zugelassenen Finanzholding-Gesellschaften und von nach § 2f zugelassenen gemischten Finanzholding-Gesellschaften gilt die Mandatsbeschränkung des § 25c Absatz 2 nicht für Mandate als Geschäftsleiter und für Mandate in Verwaltungs- und Aufsichtsorganen, die der Geschäftsleiter am 31. Dezember 2025 bereits innehatte.",
+  "s": {
+   "de": "Geschäftsleiter zugelassener Finanzholding-Gesellschaften sind von der Mandatsbeschränkung für Mandate ausgenommen, die sie am 31. Dezember 2025 bereits hatten. Die verlängerten Anzeigefristen nach § 24 gelten erstmals für Personen, bei denen die Anzeigepflicht ab dem 1. April 2026 entsteht.",
+   "en": "Managing directors of authorised financial holding companies are exempt from the restriction on mandates they already held on 31 December 2025. The extended notification periods under section 24 apply for the first time to persons whose notification duty arises from 1 April 2026."
+  },
+  "act": {
+   "de": "Bestehende Mandate zum 31.12.2025 dokumentieren, um die Übergangsregel in Anspruch zu nehmen.",
+   "en": "Document existing mandates as of 31 December 2025 to rely on the transitional rule."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 44 (§ 64c Abs. 1, 2)"
+ },
+ {
+  "g": "trans",
+  "kind": "new",
+  "oldRef": "",
+  "newRef": "§ 64c Abs. 4 KWG",
+  "oldText": "",
+  "newText": "Rechtsverordnungen des Bundesministeriums der Finanzen, welche die vollständige oder teilweise Anwendung der Vorschriften des § 53b unter vollständiger oder teilweiser Freistellung von den Vorschriften des § 53 auf Unternehmen mit Sitz in einem Drittstaat angeordnet haben, gelten fort. Satz 1 gilt nicht in Bezug auf CRD-Drittstaatenzweigstellen nach § 53c.",
+  "s": {
+   "de": "Bestehende Verordnungen, die Drittstaatenunternehmen von § 53 freistellen und § 53b anordnen, gelten fort, nicht aber für CRD-Drittstaatenzweigstellen nach § 53c.",
+   "en": "Existing ordinances that exempt third-country firms from section 53 and order section 53b continue to apply, but not to CRD third-country branches under section 53c."
+  },
+  "aud": "all",
+  "imp": "low",
+  "src": "BGBl. 2026 I Nr. 81, Art. 2 Nr. 44 (§ 64c Abs. 4)"
+ }
+]

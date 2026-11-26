@@ -1,0 +1,45 @@
+{
+ "from": {
+  "n": {
+   "de": "KWG vor dem BRUBEG",
+   "en": "KWG before the BRUBEG"
+  },
+  "ref": "KWG, Fassung vor dem 31.03.2026 (zuletzt geändert durch Art. 37 G v. 04.02.2026, BGBl. 2026 I Nr. 33)",
+  "note": {
+   "de": "Stand der Fassung unmittelbar vor Art. 1 BRUBEG; nur die vom BRUBEG geänderten Paragrafen sind aufgenommen.",
+   "en": "Version immediately before Art. 1 BRUBEG; only the sections amended by the BRUBEG are included."
+  }
+ },
+ "to": {
+  "n": {
+   "de": "KWG nach dem BRUBEG",
+   "en": "KWG after the BRUBEG"
+  },
+  "ref": "KWG, Fassung nach Art. 1 und Art. 2 BRUBEG (BGBl. 2026 I Nr. 81)",
+  "note": {
+   "de": "Fassung ab 01.04.2026 (Art. 1 seit 31.03.2026, Art. 2 seit 01.04.2026). Art. 3 (ab 11.01.2027, ändert § 56) ist nicht eingearbeitet.",
+   "en": "Version from 1 April 2026 (Art. 1 since 31 March 2026, Art. 2 since 1 April 2026). Art. 3 (from 11 January 2027, amends section 56) is not incorporated."
+  },
+  "url": "https://www.recht.bund.de/bgbl/1/2026/81/VO.html"
+ },
+ "stand": "01.04.2026",
+ "lblOld": "§ {n} KWG",
+ "lblNew": "§ {n} KWG",
+ "goneDe": "Absatz oder Regelung fällt weg",
+ "goneEn": "Paragraph or rule is dropped",
+ "newOnlyDe": "Neu im KWG durch das BRUBEG, ohne Vorgänger",
+ "newOnlyEn": "New in the KWG through the BRUBEG, without predecessor",
+ "aboutDe": [
+  "Das Bankenrichtlinienumsetzungs- und Bürokratieentlastungsgesetz (BRUBEG) vom 25.03.2026 (BGBl. 2026 I Nr. 81, verkündet am 30.03.2026) ändert das Kreditwesengesetz in drei Schritten: Artikel 1 wirkt seit dem 31.03.2026, Artikel 2 seit dem 01.04.2026, Artikel 3 tritt am 11.01.2027 in Kraft. Der Vergleich zeigt die Fassung vor dem Gesetz gegen die Fassung nach Artikel 1 und 2.",
+  "Artikel 1 enthält überwiegend Entlastungen und Anpassungen, etwa höhere Schwellen bei der Kreditwürdigkeitsprüfung nach § 18 und bei Organkrediten nach § 15. Artikel 2 setzt die Richtlinie (EU) 2024/1619 (CRD VI) um: Anforderungen an Eignung und Governance (§§ 25c bis 25e), ESG-Risiken (§§ 26c, 26d), neue Anzeigepflichten (§§ 2h, 2i, 24), periodische Zwangsgelder (§ 50) und das Regime für CRD-Drittstaatenzweigstellen (§§ 53c bis 53cq).",
+  "Die Übergangsregeln stehen in § 64c: Die Vorschriften zu CRD-Drittstaatenzweigstellen gelten überwiegend erst ab dem 11.01.2027, die Pflicht zum ESG-Risikoplan für kleine und nicht komplexe Institute ebenfalls ab dem 11.01.2027.",
+  "Der Wortlaut der neuen Fassung wurde gegen den BGBl-Text des Gesetzes geprüft; die alte Fassung stammt aus der konsolidierten Fassung auf buzer.de. Die Paragrafen 53cb, 53cd, 53ch, 53cj bis 53cq sind als neue Paragrafen nur mit Titel aufgeführt. Die Verordnungen, die das BRUBEG ebenfalls ändert (z. B. Solvabilitäts- und Großkredit- und Millionenkreditverordnung), sind nicht Teil des Vergleichs."
+ ],
+ "aboutEn": [
+  "The Banking Directive Implementation and Bureaucracy Relief Act (BRUBEG) of 25 March 2026 (BGBl. 2026 I No. 81, promulgated on 30 March 2026) amends the Banking Act (KWG) in three steps: Article 1 has applied since 31 March 2026, Article 2 since 1 April 2026, Article 3 enters into force on 11 January 2027. The comparison shows the version before the Act against the version after Articles 1 and 2.",
+  "Article 1 mainly contains relief and adjustments, such as higher thresholds for creditworthiness checks under section 18 and for loans to board members under section 15. Article 2 transposes Directive (EU) 2024/1619 (CRD VI): requirements on suitability and governance (sections 25c to 25e), ESG risks (sections 26c, 26d), new notification duties (sections 2h, 2i, 24), periodic penalty payments (section 50) and the regime for CRD third-country branches (sections 53c to 53cq).",
+  "The transitional rules are in section 64c: the provisions on CRD third-country branches mainly apply only from 11 January 2027, and the duty to prepare an ESG risk plan for small and non-complex institutions likewise from 11 January 2027.",
+  "The wording of the new version was checked against the BGBl text of the Act; the old version comes from the consolidated version on buzer.de. Sections 53cb, 53cd, 53ch and 53cj to 53cq are listed as new sections with their titles only. The ordinances also amended by the BRUBEG (for example the Solvency Ordinance and the Large Exposures and Millions of Loans Ordinance) are not part of the comparison."
+ ],
+ "file": "crr3"
+}

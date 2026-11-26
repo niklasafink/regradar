@@ -1,0 +1,790 @@
+[
+ {
+  "g": "ziel",
+  "kind": "changed",
+  "oldRef": "AT 1 Tz 1",
+  "newRef": "AT 1 Tz 1",
+  "oldText": "Dieses Rundschreiben gibt auf der Grundlage des § 25a Abs. 1 des Kreditwesengesetzes (KWG) einen flexiblen und praxisnahen Rahmen für die Ausgestaltung des Risikomanagements der Institute vor.",
+  "newText": "Dieses Rundschreiben zeigt auf der Grundlage des § 25a Abs. 1 des Kreditwesengesetzes (KWG) einen flexiblen und praxisnahen Rahmen für die Ausgestaltung des Risikomanagements der Institute auf.",
+  "s": {
+   "de": "Die 9. MaRisk-Novelle fasst das Rundschreiben neu und soll es stärker prinzipienbasiert und weniger komplex machen. Teile des Regelungstextes und viele Erläuterungen sind gestrichen; das senkt nach Aussage der BaFin das Anforderungsniveau nicht und lässt Raum für alternative, zum Geschäftsmodell passende Verfahren. Sie ist mit Veröffentlichung am 30.06.2026 in Kraft getreten, für zusätzliche Anforderungen gilt eine Übergangsfrist bis zum 01.01.2027.",
+   "en": "The 9th MaRisk amendment restates the circular with a more principles-based and less complex approach. Parts of the rules and many explanatory notes are deleted; according to BaFin this does not lower the level of requirements and leaves room for alternative procedures that fit the business model. It entered into force on publication on 30.06.2026, with a transition period until 01.01.2027 for additional requirements."
+  },
+  "act": {
+   "de": "Eine Lückenanalyse der bestehenden MaRisk-Umsetzung gegen die Neufassung durchführen, den Umsetzungsplan bis 01.01.2027 festlegen und dokumentieren, welche früheren Erläuterungen das Institut weiter als Auslegung nutzt.",
+   "en": "Carry out a gap analysis of the existing MaRisk implementation against the new version, set the implementation plan until 01.01.2027 and document which former explanatory notes the institution continues to use as guidance."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Übersendungsschreiben der BaFin vom 30.06.2026, Abschnitte „Übergangsfrist“ und Einleitung"
+ },
+ {
+  "g": "ziel",
+  "kind": "new",
+  "oldRef": "AT 1 Tz 1",
+  "newRef": "AT 1",
+  "s": {
+   "de": "Die Aufsichtsmitteilung vom 26.11.2024 wird in den Regelungstext der MaRisk überführt, in wenigen Fällen mit Klarstellungen. Institute, die eine abweichende Auslegung der Aufsichtsmitteilung dokumentiert haben, müssen erforderliche organisatorische Anpassungen erst zum 01.01.2027 umsetzen.",
+   "en": "The supervisory notice of 26.11.2024 is transferred into the text of the MaRisk, in a few cases with clarifications. Institutions that have documented a deviating interpretation of the notice must implement any necessary organisational changes only by 01.01.2027."
+  },
+  "act": {
+   "de": "Dokumentierte abweichende Auslegungen der Aufsichtsmitteilung vom 26.11.2024 sammeln, gegen den neuen Wortlaut prüfen und die nötigen Anpassungen bis 01.01.2027 einplanen.",
+   "en": "Collect documented deviating interpretations of the supervisory notice of 26.11.2024, check them against the new wording and plan the necessary changes by 01.01.2027."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Übersendungsschreiben der BaFin vom 30.06.2026, Abschnitt „Übergangsfrist“"
+ },
+ {
+  "g": "ziel",
+  "kind": "changed",
+  "oldRef": "AT 1 Erl. zu Tz 2",
+  "newRef": "AT 1 Erl. zu Tz 2",
+  "oldText": "Für die EBA-Leitlinien für die Kreditvergabe und Überwachung (EBA/GL/2020/06) sind Tz. 16 lit. a-d zu beachten.",
+  "newText": "Abschnitte aus den oben genannten EBA-Leitlinien sind nur dann zusätzlich zu den Anforderungen nach den MaRisk zu beachten, wenn die MaRisk auf diese Abschnitte verweisen; soweit in diesen Abschnitten wiederum auf andere Abschnitte oder auf einen Anhang dieser EBA-Leitlinien verwiesen wird, können diese Verweise unbeachtet bleiben.",
+  "s": {
+   "de": "Die MaRisk führen die umgesetzten EBA-Leitlinien jetzt in einer Liste auf, darunter die Leitlinien zum Management von ESG-Risiken (EBA/GL/2025/01), zur Umwelt-Szenarioanalyse (EBA/GL/2025/04) und zur internen Governance (EBA/GL/2021/05). Abschnitte der Leitlinien gelten nur dann zusätzlich, wenn die MaRisk auf sie verweisen; im Übrigen gelten die Leitlinien als vollständig umgesetzt.",
+   "en": "The MaRisk now list the EBA guidelines they implement, including the guidelines on the management of ESG risks (EBA/GL/2025/01), on environmental scenario analysis (EBA/GL/2025/04) and on internal governance (EBA/GL/2021/05). Sections of the guidelines apply additionally only where the MaRisk refer to them; otherwise the guidelines are deemed fully implemented."
+  },
+  "act": {
+   "de": "Interne Richtlinien, die EBA-Leitlinien direkt zitieren, auf die in den MaRisk ausdrücklich referenzierten Abschnitte zurückführen und den Verweis auf die neuen ESG-Leitlinien prüfen.",
+   "en": "Trace internal policies that cite EBA guidelines directly to the sections expressly referenced in the MaRisk and check the references to the new ESG guidelines."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Übersendungsschreiben der BaFin vom 30.06.2026 (zu EBA/GL/2025/04 und Interne Governance); Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 1"
+ },
+ {
+  "g": "anw",
+  "kind": "changed",
+  "oldRef": "AT 1 Tz 2",
+  "newRef": "AT 1 Tz 3; Erl. zu Tz 3 (2)",
+  "oldText": "Insofern haben Institute, die besonders groß sind oder deren Geschäftsaktivitäten durch besondere Komplexität, Internationalität oder eine besondere Risikoexponierung gekennzeichnet sind, weitergehende Vorkehrungen im Bereich des Risikomanagements zu treffen als weniger große Institute mit weniger komplex strukturierten Geschäftsaktivitäten, die keine außergewöhnliche Risikoexponierung aufweisen.",
+  "newText": "Zusätzlich zur proportionalen Anwendung der Anforderungen auf alle Institute sind Größenklassen definiert, die konkrete weitere Erleichterungen gewähren.",
+  "s": {
+   "de": "Neben dem allgemeinen Proportionalitätsprinzip definieren die MaRisk jetzt Größenklassen mit eigenen, ausdrücklich geregelten Erleichterungen. Kleine Institute sind SNCI nach Art. 4 Abs. 1 Nr. 145 CRR sowie CRD-Drittstaatenzweigstellen der Risikoklasse 2; sehr kleine Institute haben im Vierjahresdurchschnitt höchstens 1 Mrd. Euro Bilanzsumme und können die Erleichterungen für kleine Institute nutzen.",
+   "en": "In addition to the general principle of proportionality, the MaRisk now define size classes with their own expressly regulated relief. Small institutions are SNCIs under Art. 4(1)(145) CRR and CRD third-country branches of risk class 2; very small institutions have a balance sheet total of at most EUR 1 billion on a four-year average and may use the relief for small institutions."
+  },
+  "act": {
+   "de": "Die Größenklasse des Instituts feststellen (kleines oder sehr kleines Institut), je Modul die nutzbaren Erleichterungen auflisten und die Inanspruchnahme begründet dokumentieren.",
+   "en": "Determine the size class of the institution (small or very small institution), list the relief available in each module and document its use with reasons."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 1 Tz 3 und Erläuterung zu Tz 3"
+ },
+ {
+  "g": "anw",
+  "kind": "changed",
+  "oldRef": "AT 2.1 Tz 1",
+  "newRef": "AT 2.1 Tz 1",
+  "oldText": "Die Anforderungen des Rundschreibens sind von allen Instituten im Sinne von § 1 Abs. 1b KWG bzw. im Sinne von § 53 Abs. 1 KWG zu beachten.",
+  "newText": "Die Anforderungen des Rundschreibens richten sich an alle Institute gemäß § 1 Abs. 1b KWG bzw. gemäß § 53 Abs. 1 KWG, sofern sie nicht als bedeutende Institute im Sinne von Art. 6 der Verordnung (EU) Nr. 1024/2013 vom 15.",
+  "s": {
+   "de": "Der Anwenderkreis ist nach dem Wortlaut enger gefasst: Die MaRisk richten sich an Institute, die nicht als bedeutende Institute im Sinne der SSM-Verordnung eingestuft sind und damit nicht der direkten Aufsicht der EZB unterliegen. Ausdrücklich einbezogen sind CRD-Drittstaatenzweigstellen nach §§ 53c ff. KWG; Anforderungen für Institute mit hohem NPL-Bestand (Quote von mindestens 5 %) bleiben bestehen.",
+   "en": "According to the wording, the scope is narrower: the MaRisk address institutions that are not classified as significant institutions under the SSM Regulation and are therefore not under the direct supervision of the ECB. CRD third-country branches under sections 53c et seq. KWG are expressly included; requirements for institutions with a high NPL stock (ratio of at least 5%) remain."
+  },
+  "act": {
+   "de": "Prüfen, ob das Institut als bedeutend im Sinne der SSM-Verordnung gilt, und die Anwendbarkeit der MaRisk sowie der NPL-Sonderregeln (Quote ab 5 %) mit Aufsicht und Rechtsabteilung klären.",
+   "en": "Check whether the institution is classified as significant under the SSM Regulation and clarify the applicability of the MaRisk and of the special NPL rules (ratio of 5% or more) with the supervisor and the legal department."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 2.1 Tz 1"
+ },
+ {
+  "g": "esg",
+  "kind": "changed",
+  "oldRef": "AT 2.2 Tz 1",
+  "newRef": "AT 2.2 Tz 3",
+  "oldText": "wobei die Auswirkungen von ESG-Risiken angemessen und explizit einzubeziehen sind (Gesamtrisikoprofil).",
+  "newText": "Bei der Beurteilung der Wesentlichkeit im Rahmen der Risikoinventur, der Ausgestaltung des internen Kontrollsystems (Risikotragfähigkeitskonzept, Risikosteuerungs- und –controllingprozesse, Prozesse im Rahmen der Aufbau- und Ablauforganisation), der (Risiko-)Strategie und der Berichterstattung sind die Auswirkungen von ESG-Risiken angemessen zu berücksichtigen.",
+  "s": {
+   "de": "Die Altfassung enthält ESG-Hinweise in 32 Absätzen (Text und Erläuterungen), etwa bei Risikoinventur, Risikotragfähigkeit, Strategien, Stresstests, Kreditprozessen, Liquidität und Berichten. Die Neufassung bündelt sie in AT 2.2 Tz 3: ESG-Risiken sind bei Wesentlichkeitsbeurteilung, internem Kontrollsystem, Strategie und Berichterstattung angemessen zu berücksichtigen, mit plausiblen Szenarien und über kurze, mittlere und lange Zeithorizonte.",
+   "en": "The previous version contains ESG references in 32 paragraphs (text and explanatory notes), for example on risk inventory, risk-bearing capacity, strategies, stress tests, credit processes, liquidity and reports. The new version bundles them in AT 2.2 item 3: ESG risks must be appropriately taken into account in the materiality assessment, the internal control system, strategy and reporting, using plausible scenarios and short, medium and long time horizons."
+  },
+  "act": {
+   "de": "Verstreute ESG-Einzelvorgaben im internen Regelwerk auf die zentrale Anforderung in AT 2.2 Tz 3 zurückführen und prüfen, welche Detailregeln bewusst beibehalten werden.",
+   "en": "Trace scattered individual ESG rules in the internal framework to the central requirement in AT 2.2 item 3 and check which detailed rules are deliberately retained."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 2.2 Tz 3 (Zählung der Altfassung: Absätze mit „ESG“)"
+ },
+ {
+  "g": "gov",
+  "kind": "moved",
+  "oldRef": "BT 3.1 Tz 5",
+  "newRef": "AT 3.2 Tz 2",
+  "oldText": "Die Geschäftsleitung hat das Aufsichtsorgan mindestens vierteljährlich über die Risikosituation einschließlich vorhandener Risikokonzentrationen in angemessener Weise schriftlich zu informieren.",
+  "newText": "Die Geschäftsleitung muss das Aufsichtsorgan mindestens vierteljährlich in Textform über die Geschäftslage und die Risikosituation informieren.",
+  "s": {
+   "de": "Die Pflichten gegenüber dem Aufsichtsorgan stehen jetzt gebündelt in einem neuen Modul AT 3.2 (zuvor verstreut in AT 4.2, AT 4.4 und BT 3.1). Die vierteljährliche Information erfolgt in Textform; zusätzlich erhält das Aufsichtsorgan den Compliance-Bericht und die regelmäßigen Berichte der Internen Revision, bei schwerwiegenden Feststellungen gegen Geschäftsleiter ist der Vorsitzende unverzüglich zu informieren.",
+   "en": "The duties towards the supervisory body are now bundled in a new module AT 3.2 (previously scattered across AT 4.2, AT 4.4 and BT 3.1). The quarterly information is provided in text form; in addition, the supervisory body receives the compliance report and the regular internal audit reports, and its chair must be informed without delay of serious findings against managing directors."
+  },
+  "act": {
+   "de": "Die Berichtslinie zum Aufsichtsorgan prüfen: vierteljährliche Information in Textform, Weiterleitung von Compliance-Bericht und Revisionsberichten sowie unverzügliche Unterrichtung des Vorsitzenden bei schwerwiegenden Feststellungen.",
+   "en": "Review the reporting line to the supervisory body: quarterly information in text form, forwarding of the compliance report and internal audit reports and prompt notification of the chair in case of serious findings."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 3.2 Tz 2 (neu)"
+ },
+ {
+  "g": "rtf",
+  "kind": "changed",
+  "oldRef": "AT 4.1 Tz 9",
+  "newRef": "AT 4.1 Tz 9",
+  "oldText": "Die Angemessenheit der Methoden und Verfahren ist zumindest jährlich durch die fachlich zuständigen Mitarbeiter zu überprüfen.",
+  "newText": "Im Rahmen einer Initialvalidierung ist die Angemessenheit der Methoden, Verfahren und Parameter bereits vor deren Einsatz zu überprüfen.",
+  "s": {
+   "de": "Die Überprüfung der Methoden zur Risikotragfähigkeit wird durch ein Validierungsregime ersetzt: Initialvalidierung vor dem Einsatz, Folgevalidierungen mindestens alle drei Jahre sowie anlassbezogen, bei komplexen Methoden unabhängig von der Modellentwicklung. Kleine Institute können auf die Trennung von Entwicklung und Validierung verzichten; bei zentral validierten Methoden externer Dienstleister bleibt eine institutsindividuelle Angemessenheitsprüfung der Parameter nötig.",
+   "en": "The review of risk-bearing capacity methods is replaced by a validation regime: initial validation before use, follow-up validations at least every three years and on an ad hoc basis, independent of model development for complex methods. Small institutions may waive the separation of development and validation; for centrally validated methods of external providers an institution-specific adequacy check of the parameters is still required."
+  },
+  "act": {
+   "de": "Ein Validierungskonzept für die Methoden der Risikotragfähigkeit festlegen (Initialvalidierung, Dreijahresturnus, Anlässe, Unabhängigkeit) und die Prüfung der Parameter bei externen Methoden vorsehen.",
+   "en": "Establish a validation concept for the risk-bearing capacity methods (initial validation, three-year cycle, triggers, independence) and provide for checking the parameters of external methods."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.1 Tz 9"
+ },
+ {
+  "g": "strat",
+  "kind": "changed",
+  "oldRef": "AT 4.2 Tz 2",
+  "newRef": "AT 4.2 Tz 2",
+  "oldText": "Die Geschäftsleitung hat eine mit der Geschäftsstrategie und den daraus resultierenden Risiken konsistente Risikostrategie festzulegen.",
+  "newText": "Die Geschäftsleitung muss eine mit der Geschäftsstrategie konsistente und nachhaltige IKT-Strategie festlegen.",
+  "s": {
+   "de": "Neu im Text ist die Pflicht, eine mit der Geschäftsstrategie konsistente IKT-Strategie festzulegen. Muss das Institut eine DOR-Strategie nach DORA erstellen, können IKT-Strategie und DOR-Strategie in einem Dokument stehen, ebenso IKT- und Geschäftsstrategie.",
+   "en": "New in the text is the obligation to set an ICT strategy consistent with the business strategy. If the institution must prepare a DOR strategy under DORA, the ICT strategy and the DOR strategy may be set out in one document, as may the ICT and business strategies."
+  },
+  "act": {
+   "de": "Prüfen, ob eine eigenständige IKT-Strategie vorliegt und mit Geschäfts- und Risikostrategie sowie ggf. der DOR-Strategie abgestimmt ist; Zusammenlegung der Dokumente entscheiden.",
+   "en": "Check whether a separate ICT strategy exists and is aligned with the business and risk strategies and, where applicable, the DOR strategy; decide on combining the documents."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.2 Tz 2 und Tz 4"
+ },
+ {
+  "g": "ics",
+  "kind": "new",
+  "oldRef": "AT 4.3.3 Tz 1",
+  "newRef": "AT 4.3.3 Tz 7",
+  "oldText": "Hierfür sind die für die jeweiligen Risiken wesentlichen Risikofaktoren zu identifizieren und die Auswirkungen von ESG-Risiken zu berücksichtigen.",
+  "newText": "Zusätzlich sind über einen langen Zeithorizont so genannte „Resilienzanalysen“ durchzuführen, die den kurzfristigen Zeithorizont von Stresstests ergänzen.",
+  "s": {
+   "de": "Stresstests müssen wesentliche Umweltrisiken berücksichtigen. Zusätzlich sind über einen langen Zeithorizont Resilienzanalysen durchzuführen: Ein Referenzszenario wird mindestens einem adversen Alternativszenario gegenübergestellt, Ergebnisse fließen in Geschäftsmodellanalyse und Strategie ein. Die Ausgestaltung ist proportional, kleine Institute können qualitative Ansätze nutzen. Die Regelung setzt die EBA-Leitlinien zur Umwelt-Szenarioanalyse um.",
+   "en": "Stress tests must take material environmental risks into account. In addition, resilience analyses must be carried out over a long time horizon: a reference scenario is compared with at least one adverse alternative scenario, and the results feed into the business model analysis and strategy. The design is proportionate; small institutions may use qualitative approaches. The rule implements the EBA guidelines on environmental scenario analysis."
+  },
+  "act": {
+   "de": "Ein Verfahren für Resilienzanalysen aufsetzen (Referenzszenario, mindestens ein adverses Szenario, langer Horizont) und die Ergebnisse in Geschäftsmodellanalyse und Strategie einspeisen.",
+   "en": "Set up a procedure for resilience analyses (reference scenario, at least one adverse scenario, long horizon) and feed the results into the business model analysis and strategy."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.3.3 Tz 7 und Erläuterungen; Übersendungsschreiben der BaFin vom 30.06.2026"
+ },
+ {
+  "g": "ics",
+  "kind": "removed",
+  "oldRef": "AT 4.3.4 Tz 1",
+  "oldText": "Die Anforderungen dieses Moduls richten sich an bedeutende Institute und gelten sowohl auf Gruppenebene als auch auf der Ebene der wesentlichen gruppenangehörigen Einzelinstitute.",
+  "s": {
+   "de": "Das Modul AT 4.3.4 zu Datenmanagement, Datenqualität und Aggregation von Risikodaten entfällt ersatzlos; es galt nur für bedeutende Institute. Die Vorgaben zu Datenstruktur, Genauigkeit, Abgleich, Aggregationskapazität und Verantwortlichkeiten stehen nicht mehr in den MaRisk.",
+   "en": "Module AT 4.3.4 on data management, data quality and aggregation of risk data is deleted without replacement; it applied only to significant institutions. The requirements on data structure, accuracy, reconciliation, aggregation capacity and responsibilities are no longer in the MaRisk."
+  },
+  "act": {
+   "de": "Interne Vorgaben zur Risikodatenaggregation daraufhin prüfen, ob sie als freiwilliger Standard bestehen bleiben oder zurückgebaut werden, und die Entscheidung dokumentieren.",
+   "en": "Check whether internal rules on risk data aggregation remain as a voluntary standard or are scaled back, and document the decision."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.3.4 (alt, entfällt)"
+ },
+ {
+  "g": "funk",
+  "kind": "changed",
+  "oldRef": "AT 4.4.1 Tz 6",
+  "newRef": "AT 4.4.1 Tz 4; Erl. zu Tz 4",
+  "oldText": "Bei bedeutenden Instituten und Instituten gemäß § 2 Abs. 9i Satz 2 KWG, welche die in Satz 2 dieser Vorschrift gesetzte Bilanzschwelle überschreiten hat die exklusive Wahrnehmung der Leitung der Risikocontrolling-Funktion grundsätzlich durch einen Geschäftsleiter zu erfolgen.",
+  "newText": "Die gleichzeitige Wahrnehmung der Leitung der Risikocontrolling-Funktion sowie des Bereichs Marktfolge und des Bereichs Markt für „nicht-risikorelevantes“ Kreditgeschäft durch einen Geschäftsleiter ist nicht zulässig.",
+  "s": {
+   "de": "Die Sonderregel, nach der bei größeren Instituten die Leitung des Risikocontrollings grundsätzlich ein Geschäftsleiter übernimmt, entfällt. Die Leitung muss nun mindestens direkt unterhalb der Geschäftsleitung angesiedelt sein und ihre Aufgabe grundsätzlich exklusiv wahrnehmen. Übernimmt ein Geschäftsleiter die Leitung, sind Maßnahmen gegen Interessenkonflikte nötig; die gleichzeitige Leitung von Risikocontrolling, Marktfolge und Markt für nicht-risikorelevantes Kreditgeschäft ist nicht zulässig.",
+   "en": "The special rule under which larger institutions had to assign the head of risk control to a managing director no longer applies. The head must now be positioned at least directly below the management board and should in principle perform the task exclusively. If a managing director takes over, measures against conflicts of interest are required; simultaneous leadership of risk control, back office and the front office for non-risk-relevant credit business is not permitted."
+  },
+  "act": {
+   "de": "Die Zuordnung der Leitung der Risikocontrolling-Funktion prüfen: Ebene unterhalb der Geschäftsleitung, exklusive Wahrnehmung und Trennung von Marktfolge, bei Geschäftsleiterlösung Maßnahmen gegen Interessenkonflikte.",
+   "en": "Review the assignment of the head of risk control: level below the management board, exclusive performance and separation from the back office; if a managing director leads it, measures against conflicts of interest."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.4.1 Tz 4 und Erläuterung"
+ },
+ {
+  "g": "funk",
+  "kind": "moved",
+  "oldRef": "BT 2.3 Tz 1",
+  "newRef": "AT 4.4.3 Tz 6",
+  "oldText": "Die Tätigkeit der Internen Revision muss auf einem umfassenden und jährlich fortzuschreibenden Prüfungsplan basieren.",
+  "newText": "Die Tätigkeit der Internen Revision muss auf einem umfassenden, risikoorientierten und jährlich fortzuschreibenden Prüfungsplan basieren.",
+  "s": {
+   "de": "Das Modul BT 2 mit den besonderen Anforderungen an die Interne Revision entfällt; seine Inhalte stehen verdichtet in AT 4.4.3 Tz 6 bis 12, darunter Prüfungsplanung, Berichtswesen und Mängelverfolgung. Neu im Text: Aktivitäten, die unter Risikogesichtspunkten nicht wesentlich sind, sind innerhalb von fünf Jahren zu prüfen; Revisionsberichte und Arbeitsunterlagen sind sechs Jahre aufzubewahren.",
+   "en": "Module BT 2 with the special requirements for internal audit is deleted; its content is condensed in AT 4.4.3 items 6 to 12, including audit planning, reporting and tracking of deficiencies. New in the text: activities that are not material from a risk perspective must be audited within five years; audit reports and working papers must be kept for six years."
+  },
+  "act": {
+   "de": "Prüfungsplanung der Internen Revision gegen die neuen Vorgaben abgleichen (risikoorientiert, Dreijahresturnus, fünf Jahre für nicht wesentliche Aktivitäten) und die Aufbewahrungsfrist von sechs Jahren prüfen.",
+   "en": "Compare the audit planning of internal audit with the new requirements (risk-based, three-year cycle, five years for non-material activities) and check the retention period of six years."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.4.3 Tz 6, Tz 10; BT 2 (alt, entfällt)"
+ },
+ {
+  "g": "it",
+  "kind": "removed",
+  "oldRef": "AT 7.2 Tz 2",
+  "newRef": "AT 7.2 Tz 1",
+  "oldText": "Die IT-Systeme (Hardware- und Software-Komponenten), die zugehörigen IT-Prozesse und sonstige Bestandteile des Informationsverbundes müssen die Integrität, die Verfügbarkeit, die Authentizität sowie die Vertraulichkeit der Daten sicherstellen.",
+  "newText": "Umfang und Qualität der technisch-organisatorischen Ausstattung sind an den internen Erfordernissen, den Geschäftsaktivitäten sowie der Risikosituation auszurichten.",
+  "s": {
+   "de": "Die Vorgaben zu IT-Systemen und IT-Prozessen entfallen in AT 7.2: Schutzziele, Standards und Berechtigungskonzept (Tz 2), Test und Abnahme (Tz 3), IT-Risikoprozesse (Tz 4) und Eigenentwicklungen der Fachbereiche (Tz 5) stehen nicht mehr in den MaRisk. Die Neufassung verweist zu IKT an anderer Stelle auf die DORA (AT 4.2, AT 9).",
+   "en": "The requirements on IT systems and IT processes are deleted in AT 7.2: protection goals, standards and access concept (item 2), testing and acceptance (item 3), IT risk processes (item 4) and end-user developments (item 5) are no longer in the MaRisk. The new version refers to DORA for ICT elsewhere (AT 4.2, AT 9)."
+  },
+  "act": {
+   "de": "Interne IT-Vorgaben nicht mehr aus AT 7.2 herleiten, sondern gegen die für das Institut geltenden DORA-Anforderungen prüfen und Doppelregelungen bereinigen.",
+   "en": "Do not derive internal IT rules from AT 7.2 any longer; check them against the DORA requirements applicable to the institution and remove duplicate rules."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 7.2 (Tz 2 bis 5 alt, entfallen)"
+ },
+ {
+  "g": "it",
+  "kind": "changed",
+  "oldRef": "AT 7.3 Tz 1",
+  "newRef": "AT 7.3 Tz 1",
+  "oldText": "Für Notfälle in zeitkritischen Aktivitäten und Prozessen ist Vorsorge zu treffen (Notfallkonzept).",
+  "newText": "Für Aktivitäten und Prozesse, die kritische oder wichtige Funktionen darstellen, ist Vorsorge durch ein Notfallkonzept zu treffen.",
+  "s": {
+   "de": "Das Notfallmanagement knüpft nicht mehr an zeitkritische Aktivitäten und Prozesse an, sondern an kritische oder wichtige Funktionen. Auswirkungsanalysen beruhen auf einer Übersicht aller Funktionen und umfassen Unterstützungsprozesse und IKT-Systeme; Notfallkonzept und Überprüfungen beziehen sich ebenfalls auf diese Funktionen.",
+   "en": "Emergency management no longer relates to time-critical activities and processes but to critical or important functions. Impact analyses are based on an overview of all functions and cover supporting processes and ICT systems; the emergency concept and its reviews also relate to these functions."
+  },
+  "act": {
+   "de": "Notfallkonzepte und Auswirkungsanalysen auf kritische oder wichtige Funktionen umstellen und eine Übersicht aller Funktionen als Grundlage anlegen.",
+   "en": "Convert emergency concepts and impact analyses to critical or important functions and create an overview of all functions as a basis."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 7.3 Tz 1 bis 3"
+ },
+ {
+  "g": "ausl",
+  "kind": "changed",
+  "oldRef": "AT 9 Tz 11",
+  "newRef": "AT 9 Tz 12",
+  "oldText": "Jedes Institut, das Auslagerungen vornimmt, hat einen zentralen Auslagerungsbeauftragten im Institut selbst einzurichten.",
+  "newText": "Das Institut muss abhängig von der Art, dem Umfang und der Komplexität der Auslagerungsaktivitäten ein zentrales Auslagerungsmanagement einrichten.",
+  "s": {
+   "de": "Die Pflicht zu einem zentralen Auslagerungsbeauftragten entfällt. Das Institut muss abhängig von Art, Umfang und Komplexität der Auslagerungen ein zentrales Auslagerungsmanagement einrichten, das auch das Auslagerungsregister nach § 25b Abs. 1 Satz 4 KWG führt. Das Auslagerungsmanagement berichtet regelmäßig und anlassbezogen; sehr kleine Institute können im Rahmen einer Vorstandssitzung berichten.",
+   "en": "The obligation to appoint a central outsourcing officer is deleted. Depending on the type, scope and complexity of outsourcing, the institution must set up a central outsourcing management, which also maintains the outsourcing register under section 25b(1) sentence 4 KWG. Outsourcing management reports regularly and on an ad hoc basis; very small institutions may report within a board meeting."
+  },
+  "act": {
+   "de": "Die Rolle des Auslagerungsbeauftragten gegen das geforderte Auslagerungsmanagement abgleichen, Aufgaben (Register, Risikoanalyse, Berichte) zuordnen und den Berichtsturnus festlegen.",
+   "en": "Compare the role of the outsourcing officer with the required outsourcing management, assign tasks (register, risk analysis, reports) and set the reporting cycle."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 9 Tz 12 und Tz 13"
+ },
+ {
+  "g": "ausl",
+  "kind": "new",
+  "oldRef": "AT 9 Tz 1",
+  "newRef": "AT 9 Erl. zu Tz 1 (2)",
+  "newText": "Ausgelagerte oder fremdbezogene IKT-Dienstleistungen gemäß Art. 3 Nr. 21 DORA, die dem IKT-Drittparteienrisikomanagement gemäß Art. 28-30 DORA unterliegen, fallen nicht in den Anwendungsbereich des AT 9.",
+  "s": {
+   "de": "AT 9 grenzt sich ausdrücklich von der DORA ab: IKT-Dienstleistungen nach Art. 3 Nr. 21 DORA, die dem IKT-Drittparteienrisikomanagement nach Art. 28 bis 30 DORA unterliegen, fallen nicht in den Anwendungsbereich von AT 9.",
+   "en": "AT 9 expressly delimits itself from DORA: ICT services under Art. 3(21) DORA that are subject to ICT third-party risk management under Arts. 28 to 30 DORA do not fall within the scope of AT 9."
+  },
+  "act": {
+   "de": "Das Auslagerungsinventar in DORA-IKT-Dienstleistungen und Auslagerungen nach AT 9 trennen und nur Letztere nach AT 9 steuern.",
+   "en": "Separate the outsourcing inventory into DORA ICT services and outsourcing under AT 9 and manage only the latter under AT 9."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 9 Erläuterung zu Tz 1"
+ },
+ {
+  "g": "bto",
+  "kind": "changed",
+  "oldRef": "BTO 3 Erl. zu Tz 1",
+  "newRef": "BTO 3 Tz 1",
+  "oldText": "Auf die Einhaltung dieser Anforderungen kann verzichtet werden, sofern die Buchwerte aller Immobiliengeschäfte weder 30 Mio. EUR noch 2 % der Bilanzsumme übersteigen.",
+  "newText": "Auf die Einhaltung dieser Anforderungen kann verzichtet werden, sofern die Buchwerte aller Immobiliengeschäfte weder 40 Mio. EUR noch 4 % der Bilanzsumme übersteigen.",
+  "s": {
+   "de": "Die Schwellen, bis zu denen Institute auf die Anforderungen an das Immobiliengeschäft (BTO 3) verzichten können, steigen von 30 Mio. EUR und 2 % der Bilanzsumme auf 40 Mio. EUR und 4 % der Bilanzsumme. Die Regel steht jetzt im Text statt in einer Erläuterung.",
+   "en": "The thresholds up to which institutions may waive the requirements for real estate business (BTO 3) rise from EUR 30 million and 2% of the balance sheet total to EUR 40 million and 4% of the balance sheet total. The rule is now in the text instead of an explanatory note."
+  },
+  "act": {
+   "de": "Die Buchwerte der Immobiliengeschäfte gegen die neuen Schwellen (40 Mio. EUR, 4 % der Bilanzsumme) prüfen und die Inanspruchnahme der Befreiung von BTO 3 neu bewerten.",
+   "en": "Check the carrying amounts of real estate business against the new thresholds (EUR 40 million, 4% of the balance sheet total) and reassess the use of the exemption from BTO 3."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTO 3 Tz 1"
+ },
+ {
+  "g": "btr",
+  "kind": "changed",
+  "oldRef": "BTR 3.2 Tz 2",
+  "newRef": "BTR 3 Tz 4",
+  "oldText": "Zur Überbrückung des kurzfristigen Liquiditätsbedarfs von mindestens einer Woche hat das Institut neben Zentralbankgeld hochliquide Vermögensgegenstände vorzuhalten, die jederzeit ohne signifikante Wertverluste in privaten Märkten liquidiert werden können und zentralbankfähig sind.",
+  "newText": "Für kurzfristig eintretende Verschlechterungen der Liquiditätssituation muss das Institut ausreichend bemessene, nachhaltige Liquiditätspuffer vorhalten.",
+  "s": {
+   "de": "Das Modul BTR 3.2 mit den Zusatzanforderungen für kapitalmarktorientierte Institute entfällt. Die Pufferanforderung steht jetzt in BTR 3 Tz 4 ohne diese Beschränkung: nachhaltige Liquiditätspuffer, die den Bedarf aus den Stresstests über den Risikoappetit entsprechenden Horizont, mindestens einen Monat, abdecken. Die frühere Vorgabe für mindestens eine Woche bleibt als gesonderte Stufe nicht erhalten.",
+   "en": "Module BTR 3.2 with the additional requirements for capital-market-oriented institutions is deleted. The buffer requirement is now in BTR 3 item 4 without this restriction: sustainable liquidity buffers covering the need identified in stress tests over a horizon in line with the risk appetite, at least one month. The former requirement for at least one week is not retained as a separate tier."
+  },
+  "act": {
+   "de": "Die Liquiditätspuffer gegen BTR 3 Tz 4 prüfen (Bemessung aus Stresstests, Horizont von mindestens einem Monat) und sicherstellen, dass keine rechtlichen oder operationellen Nutzungsrestriktionen bestehen.",
+   "en": "Check the liquidity buffers against BTR 3 item 4 (sizing from stress tests, horizon of at least one month) and ensure there are no legal or operational restrictions on their use."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTR 3 Tz 4; BTR 3.2 (alt, entfällt)"
+ },
+ {
+  "g": "anw",
+  "kind": "moved",
+  "oldRef": "AT 4.5 Tz 1",
+  "newRef": "AT 2.1 Tz 3",
+  "oldText": "Nach § 25a Abs. 3 KWG sind die Geschäftsleiter des übergeordneten Unternehmens einer Institutsgruppe oder Finanzholding-Gruppe sowie die Geschäftsleiter des übergeordneten Finanzkonglomeratsunternehmens eines Finanzkonglomerats für die Einrichtung eines angemessenen und wirksamen Risikomanagements auf Gruppenebene verantwortlich.",
+  "newText": "Übergeordnete Unternehmen einer Institutsgruppe, einer Finanzholding-Gruppe oder eines Finanzkonglomerats müssen sicherstellen, dass die Anforderungen dieses Rundschreibens auf Gruppenebene beachtet werden, soweit dies für ein angemessenes Risikomanagement auf Gruppenebene gemäß § 25a Abs. 3 KWG sinnvoll und notwendig erscheint.",
+  "s": {
+   "de": "Das Modul AT 4.5 zum Risikomanagement auf Gruppenebene mit sechs Anforderungen entfällt. An seine Stelle tritt in AT 2.1 Tz 3 eine kurze Aufzählung: gruppenweite Strategien, Risikotragfähigkeit auf Gruppenebene, Aufbau- und Ablauforganisation, Risikosteuerung mit Stresstests, Konzernrevision und Berichtswesen, jeweils soweit sinnvoll und notwendig nach § 25a Abs. 3 KWG.",
+   "en": "Module AT 4.5 on group-level risk management with six requirements is deleted. It is replaced by a short list in AT 2.1 item 3: group-wide strategies, risk-bearing capacity at group level, organisational structure, risk management including stress tests, group internal audit and reporting, in each case to the extent appropriate and necessary under section 25a(3) KWG."
+  },
+  "act": {
+   "de": "Die bestehenden Gruppenvorgaben gegen die verdichtete Aufzählung in AT 2.1 Tz 3 abgleichen und festhalten, welche Detailregeln aus AT 4.5 intern beibehalten werden.",
+   "en": "Compare the existing group requirements with the condensed list in AT 2.1 item 3 and record which detailed rules from AT 4.5 are retained internally."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.5 (entfällt) und AT 2.1 Tz 3"
+ },
+ {
+  "g": "risk",
+  "kind": "changed",
+  "oldRef": "AT 2.2 Tz 1",
+  "newRef": "AT 2.2 Tz 1",
+  "oldText": "Grundsätzlich sind zumindest die folgenden Risiken als wesentlich einzustufen: a) Adressenausfallrisiken (einschließlich Länderrisiken), b) Marktpreisrisiken, c) Liquiditätsrisiken, und d) operationelle Risiken.",
+  "newText": "Als Wesentlichkeitsschwelle in der ökonomischen Perspektive wird ein Schwellenwert von 5 % bezogen auf das Risikodeckungspotenzial als angemessen anerkannt.",
+  "s": {
+   "de": "Für die vier Standardrisikoarten (Adressenausfall, Marktpreis, Liquidität, operationelle Risiken) kann eine gesondert dokumentierte Wesentlichkeitsanalyse entfallen. Neu ist außerdem die ausdrückliche Anerkennung einer Wesentlichkeitsschwelle von 5 % bezogen auf das Risikodeckungspotenzial in der ökonomischen Perspektive.",
+   "en": "For the four standard risk types (credit, market, liquidity, operational risk) a separately documented materiality analysis may be omitted. In addition, a materiality threshold of 5% of the risk coverage potential in the economic perspective is now expressly recognised."
+  },
+  "act": {
+   "de": "Die Risikoinventur auf die Erleichterung für die Standardrisikoarten abstimmen und prüfen, ob die 5-Prozent-Schwelle für die Wesentlichkeitseinstufung übernommen wird.",
+   "en": "Align the risk inventory with the relief for the standard risk types and check whether the 5% threshold is adopted for the materiality assessment."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 2.2 Tz 1"
+ },
+ {
+  "g": "risk",
+  "kind": "new",
+  "oldRef": "AT 2.2 Tz 1",
+  "newRef": "AT 2.2 Erl. zu Tz 1 (2)",
+  "newText": "Informations- und Kommunikationstechnologierisiken (IKT-Risiken) sind ein Bestandteil der operationellen Risiken und in die Risikoinventur explizit einzubeziehen.",
+  "s": {
+   "de": "IKT-Risiken werden ausdrücklich als Bestandteil der operationellen Risiken benannt und müssen in die Risikoinventur einbezogen werden.",
+   "en": "ICT risks are expressly named as a component of operational risk and must be included in the risk inventory."
+  },
+  "act": {
+   "de": "Prüfen, ob IKT-Risiken in der Risikoinventur ausdrücklich als Teil der operationellen Risiken erfasst und bewertet werden.",
+   "en": "Check whether ICT risks are expressly recorded and assessed in the risk inventory as part of operational risk."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 2.2 Erläuterung zu Tz 1"
+ },
+ {
+  "g": "rtf",
+  "kind": "changed",
+  "oldRef": "AT 4.1 Tz 11",
+  "newRef": "AT 4.1 Tz 10",
+  "oldText": "Jedes Institut muss über einen in die Ertrags- und Risikosteuerung eingebundenen Prozess zur Planung des zukünftigen Kapitalbedarfs und des zur Deckung dieses Kapitalbedarfs verfügbaren Kapitals verfügen.",
+  "newText": "Der Prozess muss jährlich durchlaufen werden und sein Ergebnis ist bei wesentlichen Änderungen der Annahmen anlassbezogen zu aktualisieren.",
+  "s": {
+   "de": "Die Kapitalplanung muss jetzt ausdrücklich jährlich durchlaufen und bei wesentlichen Änderungen der Annahmen anlassbezogen aktualisiert werden; die Konsistenz mit der operativen Geschäftsplanung steht nun im Text statt in einer Erläuterung.",
+   "en": "Capital planning must now expressly be run annually and updated on an ad hoc basis in case of material changes in assumptions; consistency with operational business planning is now in the text instead of an explanatory note."
+  },
+  "act": {
+   "de": "Den Kapitalplanungsprozess auf einen jährlichen Durchlauf mit anlassbezogener Aktualisierung ausrichten und die Abstimmung mit der operativen Planung dokumentieren.",
+   "en": "Align the capital planning process with an annual run and ad hoc updates and document the reconciliation with operational planning."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.1 Tz 10"
+ },
+ {
+  "g": "strat",
+  "kind": "changed",
+  "oldRef": "AT 4.2 Tz 5",
+  "newRef": "AT 4.2 Tz 5",
+  "oldText": "Die Geschäftsleitung hat einen Strategieprozess einzurichten, der sich insbesondere auf die Prozessschritte Planung, Umsetzung, Beurteilung und Anpassung der Strategien erstreckt.",
+  "newText": "Kleine Institute dürfen sich darauf beschränken, die Strategie und Kapitalplanung nur jährlich zu überwachen, wenn sie zusätzlich zu der aufsichtlich vorgeschriebenen und empfohlenen Kapitalausstattung einen weiteren Puffer von mindestens zwei Prozentpunkten an hartem Kernkapital vorhalten.",
+  "s": {
+   "de": "Kleine Institute dürfen Strategie und Kapitalplanung nur jährlich überwachen, wenn sie zusätzlich zur vorgeschriebenen und empfohlenen Kapitalausstattung einen weiteren Puffer von mindestens zwei Prozentpunkten hartem Kernkapital vorhalten.",
+   "en": "Small institutions may monitor strategy and capital planning only annually if, in addition to the prescribed and recommended capital, they hold a further buffer of at least two percentage points of common equity tier 1."
+  },
+  "act": {
+   "de": "Bei kleinen Instituten prüfen, ob der jährliche Überwachungsturnus in Anspruch genommen werden soll und der Zusatzpuffer von zwei Prozentpunkten dauerhaft vorhanden ist.",
+   "en": "For small institutions, check whether the annual monitoring cycle is to be used and the additional buffer of two percentage points is permanently available."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.2 Tz 5"
+ },
+ {
+  "g": "ics",
+  "kind": "changed",
+  "oldRef": "AT 4.3.1 Tz 1",
+  "newRef": "AT 4.3.1 Tz 1",
+  "oldText": "Berechtigungen und Kompetenzen sind nach dem Sparsamkeitsgrundsatz (Need-to-know-Prinzip) zu vergeben und bei Bedarf zeitnah anzupassen.",
+  "newText": "Kleine Institute können auch alternative Kontrollmechanismen einrichten.",
+  "s": {
+   "de": "Die Vorgabe, Berechtigungen und Kompetenzen nach dem Need-to-know-Prinzip zu vergeben und anzupassen, steht nicht mehr in AT 4.3.1. Neu ist eine Erleichterung: Kleine Institute können alternative Kontrollmechanismen einrichten.",
+   "en": "The requirement to assign and adjust permissions and competences on a need-to-know basis is no longer in AT 4.3.1. New is a relief: small institutions may set up alternative control mechanisms."
+  },
+  "act": {
+   "de": "Berechtigungs- und Kompetenzprozesse nicht mehr aus AT 4.3.1 herleiten, sondern ihre Beibehaltung bewusst festlegen; bei kleinen Instituten alternative Kontrollen dokumentieren.",
+   "en": "Do not derive permission and competence processes from AT 4.3.1 any longer, but decide deliberately on keeping them; for small institutions, document alternative controls."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.3.1 Tz 1"
+ },
+ {
+  "g": "ics",
+  "kind": "changed",
+  "oldRef": "AT 4.3.3 Tz 4",
+  "newRef": "AT 4.3.3 Tz 4",
+  "oldText": "Das Institut hat auch sogenannte „inverse Stresstests“ durchzuführen.",
+  "newText": "Kleine Institute können auf die Durchführung von inversen Stresstests verzichten.",
+  "s": {
+   "de": "Kleine Institute können auf inverse Stresstests verzichten. Weitere Erleichterungen betreffen risikoartenspezifische Stresstests (sehr kleine Institute, Tz 2) und den schweren konjunkturellen Abschwung (kleine Institute, Tz 3).",
+   "en": "Small institutions may waive inverse stress tests. Further relief concerns risk-type-specific stress tests (very small institutions, item 2) and the severe economic downturn (small institutions, item 3)."
+  },
+  "act": {
+   "de": "Bei kleinen Instituten festlegen, ob auf inverse Stresstests verzichtet wird, und den Verzicht begründet dokumentieren.",
+   "en": "For small institutions, decide whether inverse stress tests are waived and document the waiver with reasons."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.3.3 Tz 2 bis 4"
+ },
+ {
+  "g": "funk",
+  "kind": "changed",
+  "oldRef": "AT 4.4.2 Tz 4",
+  "newRef": "AT 4.4.2 Tz 3; Tz 4",
+  "oldText": "Bedeutende Institute und Institute gemäß § 2 Abs. 9i Satz 2 KWG, welche die in Satz 2 dieser Vorschrift gesetzte Bilanzschwelle überschreiten haben für die Compliance-Funktion grundsätzlich eine eigenständige Organisationseinheit einzurichten.",
+  "newText": "Bei sehr kleinen Instituten kann die Funktion des Compliance-Beauftragten auch auf einen Geschäftsleiter übertragen werden, sofern Maßnahmen zur Vermeidung von Interessenkonflikten implementiert sind.",
+  "s": {
+   "de": "Die Pflicht zu einer eigenständigen Compliance-Einheit bei größeren Instituten entfällt. Die Compliance-Funktion kann bei der Risikocontrolling-Funktion oder anderen geeigneten Funktionen angebunden sein, sofern eine direkte Berichtslinie zur Geschäftsleitung besteht; bei sehr kleinen Instituten kann ein Geschäftsleiter Compliance-Beauftragter sein, wenn Maßnahmen gegen Interessenkonflikte bestehen.",
+   "en": "The obligation to set up a separate compliance unit at larger institutions is deleted. The compliance function may be attached to risk control or other suitable functions provided there is a direct reporting line to the management board; at very small institutions a managing director may act as compliance officer if measures against conflicts of interest are in place."
+  },
+  "act": {
+   "de": "Die organisatorische Anbindung der Compliance-Funktion prüfen und bei Kombination mit anderen Funktionen die direkte Berichtslinie und Unabhängigkeit von Markt und Handel sicherstellen.",
+   "en": "Review the organisational attachment of the compliance function and, when combined with other functions, ensure the direct reporting line and independence from the front office and trading."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.4.2 Tz 3 und Tz 4"
+ },
+ {
+  "g": "funk",
+  "kind": "removed",
+  "oldRef": "AT 4.4.1 Tz 7",
+  "oldText": "Wechselt die Leitung der Risikocontrolling-Funktion, ist das Aufsichtsorgan rechtzeitig vorab unter Angabe der Gründe für den Wechsel zu informieren.",
+  "s": {
+   "de": "Die Pflicht, das Aufsichtsorgan vor einem Wechsel der Leitung von Risikocontrolling, Compliance (AT 4.4.2 Tz 8) und Interner Revision (AT 4.4.3 Tz 6) unter Angabe der Gründe zu informieren, steht in der Neufassung nicht mehr im Text.",
+   "en": "The obligation to inform the supervisory body, stating the reasons, before a change in the head of risk control, compliance (AT 4.4.2 item 8) and internal audit (AT 4.4.3 item 6) no longer appears in the new text."
+  },
+  "act": {
+   "de": "Die Informationspflichten bei Wechsel der Funktionsleitungen in internen Abläufen prüfen; nach Wortlaut der MaRisk besteht keine Pflicht zur vorherigen Information des Aufsichtsorgans mehr.",
+   "en": "Review the notification duties on changes of function heads in internal procedures; under the wording of the MaRisk there is no longer a duty to inform the supervisory body in advance."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.4.1 Tz 7, AT 4.4.2 Tz 8 und AT 4.4.3 Tz 6 (alt)"
+ },
+ {
+  "g": "funk",
+  "kind": "changed",
+  "oldRef": "AT 4.4.3 Tz 3",
+  "newRef": "AT 4.4.3 Tz 5",
+  "oldText": "Die Interne Revision hat risikoorientiert und prozessunabhängig die Wirksamkeit und Angemessenheit des Risikomanagements im Allgemeinen und des internen Kontrollsystems im Besonderen sowie die Ordnungsmäßigkeit grundsätzlich aller Aktivitäten und Prozesse zu prüfen und zu beurteilen, unabhängig davon, ob diese ausgelagert sind oder nicht.",
+  "newText": "Die Interne Revision prüft unabhängig und risikoorientiert alle Aktivitäten und Prozesse des Instituts, einschließlich der ausgelagerten Tätigkeiten.",
+  "s": {
+   "de": "Der Prüfungsauftrag der Internen Revision ist neu gefasst: Sie prüft unabhängig und risikoorientiert alle Aktivitäten und Prozesse einschließlich ausgelagerter Tätigkeiten, die Ordnungsmäßigkeit der Geschäftsorganisation sowie das Risikomanagement einschließlich der Umsetzung der Risikostrategie und das interne Kontrollsystem. Die Interne Revision muss mindestens vierteljährlich berichten.",
+   "en": "The audit mandate of internal audit is restated: it audits independently and on a risk basis all activities and processes including outsourced activities, the propriety of the business organisation as well as risk management including the implementation of the risk strategy and the internal control system. Internal audit must report at least quarterly."
+  },
+  "act": {
+   "de": "Den Prüfungsauftrag und den vierteljährlichen Revisionsbericht gegen AT 4.4.3 Tz 5 und Tz 9 abgleichen, insbesondere die Prüfung der Umsetzung der Risikostrategie.",
+   "en": "Compare the audit mandate and the quarterly audit report with AT 4.4.3 items 5 and 9, in particular the audit of the implementation of the risk strategy."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.4.3 Tz 5 und Tz 9"
+ },
+ {
+  "g": "org",
+  "kind": "changed",
+  "oldRef": "AT 5 Tz 3",
+  "newRef": "AT 5 Tz 3; Erl. zu Tz 3 (1)",
+  "oldText": "Regelungen zu den Verfahren, Methoden und Prozessen der Aggregation von Risikodaten (bei bedeutenden Instituten),",
+  "newText": "inkl. der Übersicht über die Aufgaben und individuellen Verantwortlichkeiten gemäß § 25c Abs. 4a Nr. 8 KWG",
+  "s": {
+   "de": "Organisationsrichtlinien müssen künftig die Übersicht über Aufgaben und individuelle Verantwortlichkeiten nach § 25c Abs. 4a Nr. 8 KWG enthalten. Entfallen sind die Regelungen zur Risikodatenaggregation bei bedeutenden Instituten und die gesonderte Pflicht zu Regelungen über ESG-Risiken.",
+   "en": "Organisational policies must in future include the overview of tasks and individual responsibilities under section 25c(4a) no. 8 KWG. The rules on risk data aggregation for significant institutions and the separate requirement for ESG rules have been dropped."
+  },
+  "act": {
+   "de": "Die Organisationsrichtlinien um die Übersicht der Aufgaben und individuellen Verantwortlichkeiten nach § 25c Abs. 4a Nr. 8 KWG ergänzen.",
+   "en": "Supplement the organisational policies with the overview of tasks and individual responsibilities under section 25c(4a) no. 8 KWG."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 5 Tz 3 und Erläuterung"
+ },
+ {
+  "g": "ausl",
+  "kind": "changed",
+  "oldRef": "AT 9 Tz 2",
+  "newRef": "AT 9 Tz 2",
+  "oldText": "Diese ist auf der Grundlage von institutsweit bzw. gruppenweit einheitlichen Rahmenvorgaben sowohl regelmäßig als auch anlassbezogen durchzuführen.",
+  "newText": "Risikoanalyse ist regelmäßig, bei kleinen Instituten alle drei Jahre, zu überprüfen und bei wesentlichen Änderungen der Risikosituation anzupassen.",
+  "s": {
+   "de": "Die Risikoanalyse zu Auslagerungen muss regelmäßig überprüft werden, bei kleinen Instituten alle drei Jahre, und bei wesentlichen Änderungen der Risikosituation angepasst werden. Die Beteiligung der Internen Revision an der Analyse entfällt.",
+   "en": "The risk analysis for outsourcing must be reviewed regularly, every three years for small institutions, and adjusted in case of material changes in the risk situation. The involvement of internal audit in the analysis is deleted."
+  },
+  "act": {
+   "de": "Einen Überprüfungsturnus für die Auslagerungs-Risikoanalyse festlegen (kleine Institute alle drei Jahre) und anlassbezogene Anpassungen vorsehen.",
+   "en": "Set a review cycle for the outsourcing risk analysis (every three years for small institutions) and provide for ad hoc updates."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 9 Tz 2"
+ },
+ {
+  "g": "bto",
+  "kind": "changed",
+  "oldRef": "BTO Tz 7",
+  "newRef": "BTO Tz 3",
+  "oldText": "Das Rechnungswesen, insbesondere die Aufstellung der Kontierungsregeln sowie die Entwicklung der Buchungssystematik, ist in einer vom Markt und Handel unabhängigen Stelle anzusiedeln.",
+  "newText": "Die Aufbauorganisation ist so zu gestalten, dass Markt (Kredit) und Handel bis einschließlich Geschäftsleiterebene von Marktfolge (Kredit), Risikocontrolling, Handelsabwicklung sowie von weiteren Bereichen bzw. Funktionen organisatorisch getrennt sind (BTO 1.1 Tz. 7, BTO 1.2 Tz. 1, BTO 1.2.4 Tz. 1, BTO 1.2.5 Tz. 1 und BTO 1.4 Tz. 2).",
+  "s": {
+   "de": "Die Funktionstrennung ist neu gefasst: Markt (Kredit) und Handel müssen bis einschließlich Geschäftsleiterebene von Marktfolge, Risikocontrolling, Handelsabwicklung und weiteren Bereichen getrennt sein; die fachliche und disziplinarische Trennung ist ausdrücklich genannt. Die gesonderten Vorgaben zur Ansiedlung des Rechnungswesens und des Marktpreisrisikocontrollings (alt Tz 4 und Tz 7) entfallen.",
+   "en": "The segregation of duties is restated: front office (credit) and trading must be separated up to and including management board level from the back office, risk control, trade settlement and other areas; functional and disciplinary separation is expressly named. The separate rules on the positioning of accounting and market risk control (former items 4 and 7) are deleted."
+  },
+  "act": {
+   "de": "Die Aufbauorganisation gegen BTO Tz 3 prüfen (fachliche und disziplinarische Trennung) und die Zuordnung des Rechnungswesens nicht mehr aus der MaRisk herleiten.",
+   "en": "Check the organisational structure against BTO item 3 (functional and disciplinary separation) and do not derive the positioning of accounting from the MaRisk any longer."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTO Tz 3 sowie BTO Tz 4 und Tz 7 (alt)"
+ },
+ {
+  "g": "bto",
+  "kind": "changed",
+  "oldRef": "BTO 1.2 Erl. zu Tz 1 (1)",
+  "newRef": "BTO 1.2 Tz 1",
+  "oldText": "Die Verfahren für das Kreditrisiko sollten Folgendes vorgeben:",
+  "newText": "Die Verfahren für die Bestimmung des Kreditrisikos müssen Folgendes vorgeben:",
+  "s": {
+   "de": "Die Anforderungen an die Verfahren zur Bestimmung des Kreditrisikos (Genehmigungsstufen, Kreditvergabekriterien, Besicherung, automatisierte Entscheidungsverfahren, Abweichungen, Dokumentation) stehen jetzt als Muss-Vorgabe im Text statt als Soll-Empfehlung in der Erläuterung. Zugleich entfällt die Vorgabe zu Aggregation und Konzentrationsmanagement aus der Liste.",
+   "en": "The requirements for the procedures to determine credit risk (approval levels, lending criteria, collateral, automated decision procedures, deviations, documentation) are now a mandatory rule in the text instead of a recommendation in the explanatory note. At the same time the item on aggregation and concentration management is dropped from the list."
+  },
+  "act": {
+   "de": "Die Kreditrisiko-Verfahren gegen die sechs Punkte in BTO 1.2 Tz 1 prüfen und die Verbindlichkeit der bisherigen Soll-Vorgaben in der Kreditprozessdokumentation nachziehen.",
+   "en": "Check the credit risk procedures against the six points in BTO 1.2 item 1 and update the credit process documentation for the former recommendations now being mandatory."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTO 1.2 Tz 1 und Erläuterung (alt)"
+ },
+ {
+  "g": "bto",
+  "kind": "removed",
+  "oldRef": "BTO 1.3.2 Tz 5",
+  "newRef": "BTO 1.3.2 Tz 4",
+  "oldText": "Dabei können in Abhängigkeit von der Art und der Laufzeit der Kredite sowohl kurzfristige als auch langfristige Forbearance-Maßnahmen in Erwägung gezogen werden, wobei der Zeitraum von maximal zwei Jahren für die Durchführung der kurzfristigen Maßnahmen grundsätzlich nicht überschritten werden sollte.",
+  "newText": "Ob Forbearance-Maßnahmen möglich und wirksam sind, muss ausschließlich auf Grundlage der Zahlungsfähigkeit und -willigkeit des Kreditnehmers und nicht unter Berücksichtigung von bereitgestellten Sicherheiten oder Garantien beurteilt werden.",
+  "s": {
+   "de": "Die Forbearance-Vorgaben sind gekürzt: Die Unterscheidung tragfähiger und nicht tragfähiger Maßnahmen samt Richtwert von höchstens zwei Jahren für kurzfristige Maßnahmen entfällt. Ob Maßnahmen möglich und wirksam sind, ist ausschließlich nach Zahlungsfähigkeit und -willigkeit des Kreditnehmers zu beurteilen, nicht unter Berücksichtigung von Sicherheiten.",
+   "en": "The forbearance requirements are shortened: the distinction between viable and non-viable measures, including the guideline of at most two years for short-term measures, is deleted. Whether measures are possible and effective must be assessed solely on the borrower's ability and willingness to pay, not taking collateral into account."
+  },
+  "act": {
+   "de": "Die Forbearance-Vorgaben des Instituts anpassen: Tragfähigkeitsunterscheidung und Zwei-Jahres-Richtwert nicht mehr aus der MaRisk ableiten, Beurteilung auf Zahlungsfähigkeit und -willigkeit stützen.",
+   "en": "Adjust the institution's forbearance rules: do not derive the viability distinction and two-year guideline from the MaRisk any longer, and base the assessment on ability and willingness to pay."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTO 1.3.2 Tz 4 und Tz 5 (alt)"
+ },
+ {
+  "g": "btr",
+  "kind": "changed",
+  "oldRef": "BTR 2.3 Tz 7",
+  "newRef": "BTR 2.3 Tz 5; Tz 6",
+  "oldText": "Bei der Berücksichtigung von Positionen mit unbestimmter Kapital- oder Zinsbindung sind Einlagen von Finanzkunden nicht zu modellieren und als täglich fällig anzunehmen.",
+  "newText": "Positionen mit unbestimmter Kapital- oder Zinsbindung aus Einlagen von Finanzkunden dürfen nur dann modelliert werden, wenn es sich um operative Einlagen im Sinne von Art. 27 der Delegierten Verordnung (EU) 2015/61handelt.",
+  "s": {
+   "de": "Bei Zinsänderungsrisiken im Anlagebuch gilt für Einlagen von Finanzkunden nicht mehr pauschal tägliche Fälligkeit: Sie dürfen modelliert werden, wenn es sich um operative Einlagen nach Art. 27 der Delegierten Verordnung (EU) 2015/61 handelt. Die angenommene Zinsbindung darf im Portfolio die gewichtete durchschnittliche Zinsbindung von fünf Jahren nicht überschreiten, getrennt je Währung.",
+   "en": "For interest rate risk in the banking book, deposits from financial customers are no longer assumed to be payable on demand across the board: they may be modelled if they are operational deposits under Art. 27 of Delegated Regulation (EU) 2015/61. The assumed interest rate lock-in may not exceed a weighted average of five years across the portfolio, separately for each currency."
+  },
+  "act": {
+   "de": "Die Modellierung von Einlagen im Anlagebuch prüfen: Finanzkundeneinlagen nur bei operativer Einlage modellieren, die Fünf-Jahres-Grenze je Währung einhalten.",
+   "en": "Review the modelling of deposits in the banking book: model financial-customer deposits only if they are operational deposits and observe the five-year limit per currency."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTR 2.3 Tz 5 und Tz 6"
+ },
+ {
+  "g": "btr",
+  "kind": "removed",
+  "oldRef": "BTR 3.1 Tz 6",
+  "newRef": "BTR 3 Tz 5",
+  "oldText": "Große Institute mit komplexen Geschäftsaktivitäten haben ein Liquiditätstransferpreissystem zur verursachungsgerechten internen Verrechnung der jeweiligen Liquiditätskosten, -nutzen und –risiken zu etablieren.",
+  "newText": "Das Institut muss ein geeignetes Verrechnungssystem zur verursachungsgerechten internen Verrechnung der jeweiligen Liquiditätskosten, -nutzen und -risiken einrichten.",
+  "s": {
+   "de": "Die Pflicht großer Institute mit komplexen Geschäftsaktivitäten zu einem Liquiditätstransferpreissystem samt Zuständigkeitsregeln (alt Tz 6 und Tz 7) entfällt. Es bleibt die Pflicht aller Institute zu einem geeigneten Verrechnungssystem für Liquiditätskosten, -nutzen und -risiken, das die Kosten der Liquiditätspuffer in der Steuerung berücksichtigt.",
+   "en": "The obligation of large institutions with complex business activities to have a liquidity transfer pricing system, including responsibility rules (former items 6 and 7), is deleted. The obligation of all institutions to have a suitable allocation system for liquidity costs, benefits and risks remains and must take the costs of liquidity buffers into account in management."
+  },
+  "act": {
+   "de": "Das Verrechnungssystem für Liquiditätskosten prüfen und sicherstellen, dass die Kosten der Liquiditätspuffer in Ertrags- und Risikosteuerung einfließen; das frühere Transferpreissystem ist nicht mehr verlangt.",
+   "en": "Review the allocation system for liquidity costs and ensure the costs of liquidity buffers feed into earnings and risk management; the former transfer pricing system is no longer required."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTR 3 Tz 5; BTR 3.1 Tz 6 und Tz 7 (alt)"
+ },
+ {
+  "g": "btr",
+  "kind": "new",
+  "oldRef": "BTR 3.1 Tz 8",
+  "newRef": "BTR 3 Erl. zu Tz 6",
+  "oldText": "Für Liquiditätsrisiken sind regelmäßig angemessene Stresstests durchzuführen.",
+  "newText": "Kleine Institute müssen nur jenes Szenario analysieren, das regelmäßig die größten Auswirkungen hat.",
+  "s": {
+   "de": "Neue Erleichterung für kleine Institute bei Liquiditätsstresstests: Sie müssen nur das Szenario analysieren, das regelmäßig die größten Auswirkungen hat, in der Regel die Kombination aus institutseigenen und marktweiten Ursachen.",
+   "en": "New relief for small institutions in liquidity stress testing: they only need to analyse the scenario that regularly has the greatest impact, usually the combination of institution-specific and market-wide causes."
+  },
+  "act": {
+   "de": "Bei kleinen Instituten prüfen, ob die Beschränkung auf das Kombinationsszenario genutzt wird, und die Begründung dokumentieren.",
+   "en": "For small institutions, check whether the restriction to the combined scenario is used and document the reasons."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTR 3 Erläuterung zu Tz 6"
+ },
+ {
+  "g": "btr",
+  "kind": "changed",
+  "oldRef": "BTR 5 Tz 2",
+  "newRef": "BTR 5 Tz 2",
+  "oldText": "Für die Identifizierung und Beurteilung von Kreditspreadrisiken im Anlagebuch hat das Institut jene Positionen des Anlagebuches zu bestimmen, die einem Kreditspreadrisiko unterliegen.",
+  "newText": "Zum beizulegenden Zeitwert bewertete Positionen der Aktivseite müssen berücksichtigt werden.",
+  "s": {
+   "de": "Bei Kreditspreadrisiken im Anlagebuch müssen zum beizulegenden Zeitwert bewertete Positionen der Aktivseite berücksichtigt werden; notleidende Risikopositionen werden nicht berücksichtigt. Bei der Bestimmung der Risiken ist nur noch von wesentlichen Kreditspreadrisiken die Rede.",
+   "en": "For credit spread risk in the banking book, assets measured at fair value must be taken into account; non-performing exposures are not taken into account. The determination of risks now refers only to material credit spread risks."
+  },
+  "act": {
+   "de": "Die Positionsabgrenzung für Kreditspreadrisiken prüfen: Zeitwertpositionen einbeziehen, notleidende Risikopositionen ausnehmen.",
+   "en": "Review the delineation of positions for credit spread risk: include fair-value positions and exclude non-performing exposures."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTR 5 Tz 1 und Tz 2"
+ },
+ {
+  "g": "ber",
+  "kind": "changed",
+  "oldRef": "BT 3.2 Tz 1",
+  "newRef": "BT 2.2 Tz 1",
+  "oldText": "Die Risikocontrolling-Funktion hat regelmäßig, mindestens aber vierteljährlich, einen Gesamtrisikobericht über die als wesentlich eingestuften Risikoarten unter Berücksichtigung der Auswirkungen von ESG-Risiken zu erstellen und der Geschäftsleitung vorzulegen.",
+  "newText": "Kleine Institute können auf vorherige Berichte verweisen, sollte es keine relevanten Veränderungen in einer Risikoart geben; weiterhin besteht für Risiken mit hoher Stabilität keine unterjährige Berichtspflicht.",
+  "s": {
+   "de": "Das Modul zur Risikoberichterstattung rückt von BT 3 auf BT 2, die Berichtsinhalte sind verdichtet und die ESG-Erläuterung entfällt. Kleine Institute können auf frühere Berichte verweisen, wenn sich nichts Relevantes ändert, und müssen bei stabilen Risiken nicht unterjährig berichten; das Risikocontrolling berichtet mindestens vierteljährlich.",
+   "en": "The module on risk reporting moves from BT 3 to BT 2, the report contents are condensed and the ESG explanatory note is deleted. Small institutions may refer to earlier reports if nothing relevant changes and need not report intra-year on stable risks; risk control reports at least quarterly."
+  },
+  "act": {
+   "de": "Das Berichtswesen gegen BT 2 prüfen und bei kleinen Instituten festlegen, ob auf frühere Berichte verwiesen und die unterjährige Berichtspflicht eingeschränkt wird.",
+   "en": "Review reporting against BT 2 and, for small institutions, decide whether earlier reports are referred to and intra-year reporting is limited."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BT 2.1 und BT 2.2 (alt BT 3.1 und BT 3.2)"
+ },
+ {
+  "g": "rtf",
+  "kind": "changed",
+  "oldRef": "AT 4.1 Tz 5",
+  "newRef": "AT 4.1 Tz 5",
+  "oldText": "Die Plausibilisierung kann auf der Basis einer qualifizierten Expertenschätzung durchgeführt werden.",
+  "newText": "Statt pauschalisierter Schätzungen von solchen schwer quantifizierbaren Risiken und deren Berücksichtigung auf der Risikoseite können auch angemessene Puffer im Risikodeckungspotenzial vorgehalten werden.",
+  "s": {
+   "de": "Für schwer quantifizierbare Risiken können statt pauschaler Schätzungen auch angemessene Puffer im Risikodeckungspotenzial vorgehalten werden, wenn dokumentiert ist, welche Risiken der Puffer abdeckt.",
+   "en": "For risks that are difficult to quantify, appropriate buffers in the risk coverage potential may be held instead of flat-rate estimates, provided it is documented which risks the buffer covers."
+  },
+  "act": {
+   "de": "Bei schwer quantifizierbaren Risiken entscheiden, ob Risikobeträge oder dokumentierte Puffer verwendet werden.",
+   "en": "For risks that are difficult to quantify, decide whether risk amounts or documented buffers are used."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.1 Tz 5"
+ },
+ {
+  "g": "btr",
+  "kind": "removed",
+  "oldRef": "BTR 4 Erl. zu Tz 3 (1)",
+  "oldText": "Größere Institute haben hierfür eine Ereignisdatenbank für Schadensfälle einzurichten, bei welcher die vollständige Erfassung aller Schadensereignisse oberhalb angemessener Schwellenwerte sichergestellt ist.",
+  "s": {
+   "de": "Die Erwartung, dass größere Institute eine Ereignisdatenbank für Schadensfälle mit vollständiger Erfassung oberhalb angemessener Schwellenwerte führen, entfällt. Geblieben ist die Pflicht zu einer angemessenen Erfassung von Schadensfällen und zur Aggregation zusammengehörender Schadensfälle.",
+   "en": "The expectation that larger institutions maintain a loss event database with complete recording above appropriate thresholds is deleted. The obligation to record loss events appropriately and to aggregate related loss events remains."
+  },
+  "act": {
+   "de": "Prüfen, ob die Ereignisdatenbank für Schadensfälle freiwillig beibehalten wird, und die Aggregation zusammengehörender Schadensfälle sicherstellen.",
+   "en": "Check whether the loss event database is retained voluntarily and ensure related loss events are aggregated."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), BTR 4 Tz 3"
+ },
+ {
+  "g": "ics",
+  "kind": "moved",
+  "oldRef": "AT 4.3.5 Tz 1",
+  "newRef": "AT 4.3.4 Tz 1",
+  "oldText": "Die Anforderungen dieses Moduls gelten für Modelle, die für die in diesem Rundschreiben geregelten Prozesse eingesetzt werden.",
+  "newText": "Die Anforderungen dieses Moduls gelten für Modelle, die für die in diesem Rundschreiben geregelten Prozesse eingesetzt werden.",
+  "s": {
+   "de": "Das Modul zur Verwendung von Modellen wird von AT 4.3.5 zu AT 4.3.4; inhaltlich ändert es sich nur geringfügig (redaktionelle Anpassungen und aktualisierte Verweise).",
+   "en": "The module on the use of models becomes AT 4.3.4 instead of AT 4.3.5; its content changes only slightly (editorial adjustments and updated references)."
+  },
+  "act": {
+   "de": "Interne Verweise auf AT 4.3.5 auf AT 4.3.4 umstellen.",
+   "en": "Update internal references from AT 4.3.5 to AT 4.3.4."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "Vergleichsfassung der BaFin zum Rundschreiben 06/2026 (BA), AT 4.3.4 (neu), AT 4.3.5 (alt)"
+ }
+]

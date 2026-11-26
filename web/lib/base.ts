@@ -70,6 +70,15 @@ export interface Comparison {
   stand: string;
   /** Pfad der Paragrafen-Daten (JSON in /public, wird beim Öffnen geladen). */
   paras: string;
+  /** Einordnung, wird unter „Mehr zum Rahmenwerk“ angehängt. */
+  about?: Txt[];
+  /** Anzeigetexte je Rahmenwerk; {n} wird durch die Einheitennummer ersetzt. */
+  lbl: {
+    old: string; neu: string;
+    gone: Txt; newOnly: Txt; open: Txt;
+    /** Dateiname für den Word-Export, ohne Endung. */
+    file: string;
+  };
 }
 
 export interface Option { v: string; l: Txt }

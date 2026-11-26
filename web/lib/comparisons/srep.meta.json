@@ -1,0 +1,43 @@
+{
+ "from": {
+  "n": {
+   "de": "SREP-Leitlinien 2022 (EBA/GL/2022/03)",
+   "en": "SREP guidelines 2022 (EBA/GL/2022/03)"
+  },
+  "ref": "EBA/GL/2022/03",
+  "note": {
+   "de": "Geltende Fassung vom 18.03.2022, Anwendung seit 01.01.2023. Wird zum 01.01.2027 aufgehoben, ebenso die IKT-SREP-Leitlinien EBA/GL/2017/05.",
+   "en": "Version in force dated 18 March 2022, applying since 1 January 2023. To be repealed on 1 January 2027, together with the ICT SREP guidelines EBA/GL/2017/05."
+  }
+ },
+ "to": {
+  "n": {
+   "de": "Überarbeitete SREP-Leitlinien (EBA/GL/2026/06)",
+   "en": "Revised SREP guidelines (EBA/GL/2026/06)"
+  },
+  "ref": "EBA/GL/2026/06",
+  "note": {
+   "de": "Veröffentlicht am 26.06.2026, Anwendung ab 01.01.2027. Titel 12 gilt ab 11.01.2027, die Vorgaben zu gezielten finanziellen Sanktionen ab 10.07.2027. Die zuständigen Behörden melden der EBA bis 28.12.2026, ob sie die Leitlinien anwenden.",
+   "en": "Published on 26 June 2026, applying from 1 January 2027. Title 12 applies from 11 January 2027, the provisions on targeted financial sanctions from 10 July 2027. Competent authorities notify the EBA by 28 December 2026 whether they comply."
+  },
+  "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-reaches-another-important-milestone-enhancing-supervisory-efficiency-its-revised-srep-guidelines"
+ },
+ "stand": "26.06.2026",
+ "lblOld": "Abschnitt {n} EBA/GL/2022/03",
+ "lblNew": "Abschnitt {n} EBA/GL/2026/06",
+ "goneDe": "ohne wörtliche Entsprechung in der Neufassung (entfällt, neu gefasst oder in Tabellen verlagert)",
+ "goneEn": "no verbatim counterpart in the revision (dropped, redrafted or moved to tables)",
+ "newOnlyDe": "Neu in EBA/GL/2026/06, ohne Vorgänger in EBA/GL/2022/03",
+ "newOnlyEn": "New in EBA/GL/2026/06, no predecessor in EBA/GL/2022/03",
+ "aboutDe": [
+  "Die SREP-Leitlinien legen fest, wie Aufsichtsbehörden Geschäftsmodell, Governance, Kapital- und Liquiditätsrisiken von Instituten bewerten und Säule-2-Anforderungen bestimmen. Sie richten sich an die zuständigen Behörden; Institute spüren sie über die Aufsichtspraxis. Die Fassung EBA/GL/2022/03 gilt seit 01.01.2023, daneben bestanden eigene Leitlinien zur IKT-Risikobewertung (EBA/GL/2017/05).",
+  "EBA/GL/2026/06 führt beides zusammen, ergänzt einen Titel für Zweigstellen aus Drittländern und regelt den Output Floor in der Säule-2-Anforderung. Laut EBA-Pressemitteilung sinkt die Seitenzahl insgesamt um 30 Prozent; ESG-Risiken, DORA und operationale Resilienz sind eingearbeitet, Liquiditäts- und Refinanzierungsrisiko werden gemeinsam bewertet.",
+  "Der Vergleich ordnet die Absätze (Textziffern) maschinell nach Textähnlichkeit zu, nicht nach Nummern, und folgt den Abschnitten der alten Fassung. Tabellen (Scoring, Maßnahmenlisten, Tabelle 1) und Anhänge stehen nicht im Absatzvergleich; wesentliche Inhalte daraus sind nur in den Kommentaren erfasst, soweit gelesen. Die Kommentare sind eine Auswahl und ersetzen nicht die Lektüre des Wortlauts."
+ ],
+ "aboutEn": [
+  "The SREP guidelines set out how supervisors assess an institution's business model, governance, capital and liquidity risks and determine Pillar 2 requirements. They are addressed to competent authorities; institutions feel them through supervisory practice. EBA/GL/2022/03 has applied since 1 January 2023, alongside separate guidelines on ICT risk assessment (EBA/GL/2017/05).",
+  "EBA/GL/2026/06 merges both, adds a title for third-country branches and regulates the output floor in the Pillar 2 requirement. According to the EBA press release the overall page count falls by 30 per cent; ESG risks, DORA and operational resilience are integrated, and liquidity and funding risk are assessed together.",
+  "The comparison assigns paragraphs (marginal numbers) by text similarity, not by number, and follows the sections of the old version. Tables (scoring, lists of measures, Table 1) and annexes are not part of the paragraph comparison; material content from them appears only in the comments, as far as it was read. The comments are a selection and do not replace reading the wording."
+ ],
+ "file": "SREP-Leitlinien-EBA-GL-2026-06"
+}

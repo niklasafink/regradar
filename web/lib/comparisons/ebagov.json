@@ -1,0 +1,413 @@
+[
+ {
+  "g": "map",
+  "kind": "new",
+  "oldRef": "Titel III, 6.1",
+  "newRef": "Titel III, 6.1 Tz. 71 bis 75 EBA/GL/2026/10",
+  "oldText": "The reporting lines and the allocation of responsibilities, in particular among key function holders, within an institution should be clear, well-defined, coherent, enforceable and duly documented. The documentation should be updated as appropriate.",
+  "newText": "Institutions should draw up, maintain and update, in accordance with Article 88(3) of Directive 2013/36/EU, in a single set of documents or a repository, a mapping of the individual duties of the persons within the institution who are part of the governance arrangements as referred to in Article 74(1) of Directive 2013/36/EU.",
+  "s": {
+   "de": "Neu ist eine Aufgabenzuordnung (mapping of duties) für alle Personen, die zur Governance gehören, in einem Dokumentensatz oder Verzeichnis. Zusätzlich braucht jedes Mitglied des Leitungsorgans in der Managementfunktion, des Senior Managements und jeder Schlüsselfunktionsträger eine eigene, unterzeichnete Aufgabenbeschreibung. Das Leitungsorgan genehmigt die Zuordnung, die Aufsicht kann sie anfordern. Gegenüber dem Entwurf ist die Detailtiefe reduziert, eine Vorlage im Anhang ist optional.",
+   "en": "A mapping of duties for all persons who are part of the governance arrangements is new, kept in a single set of documents or a repository. In addition, each member of the management body in its management function, each member of senior management and each key function holder needs an individual signed statement of duties. The management body approves the mapping and the supervisor may request it. Compared with the consultation draft the level of detail is reduced, and a template in the annex is optional."
+  },
+  "act": {
+   "de": "Prüfen, ob eine genehmigte Aufgabenzuordnung und individuelle Aufgabenbeschreibungen für alle erfassten Personen vorliegen, und fehlende Dokumente vor Anwendung der Leitlinien erstellen.",
+   "en": "Check whether an approved mapping of duties and individual statements exist for all persons covered, and prepare any missing documents before the guidelines apply."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 21, 71 bis 76 und Anhang; Pressemitteilung der EBA vom 05.11.2026"
+ },
+ {
+  "g": "chair",
+  "kind": "changed",
+  "oldRef": "Titel II, 4 Tz. 37",
+  "newRef": "Titel II, 4 Tz. 38 EBA/GL/2026/10",
+  "oldText": "In particular, in accordance with Article 88(1)(e) of Directive 2013/36/EU, the chair of the management body in its supervisory function of an institution must not exercise simultaneously the functions of a CEO within the same institution, unless justified by the institution and authorised by competent authorities.",
+  "newText": "In accordance with Article 88(1)(e) of Directive 2013/36/EU, the chair of the management body in its supervisory function of an institution cannot exercise simultaneously the function of a CEO within the same institution.",
+  "s": {
+   "de": "Der Vorsitzende des Leitungsorgans in der Aufsichtsfunktion darf nicht zugleich Geschäftsleiter (CEO) desselben Instituts sein. Die bisherige Ausnahme bei Begründung durch das Institut und Genehmigung der Aufsicht steht nicht mehr im Text. Übernimmt der Vorsitzende Leitungsaufgaben, auch in einer anderen Konzerngesellschaft, braucht es Maßnahmen, die Auswirkungen auf die Kontrollmechanismen erkennen, bewerten und mindern, auch durch den Umgang mit Interessenkonflikten.",
+   "en": "The chair of the management body in its supervisory function may not simultaneously be the CEO of the same institution. The previous exception where the institution justified it and the competent authority authorised it is no longer in the text. Where the chair takes on executive functions, including in another group entity, measures are needed to identify, assess and mitigate adverse effects on checks and balances, including by managing conflicts of interest."
+  },
+  "act": {
+   "de": "Prüfen, ob der Vorsitzende des Leitungsorgans zugleich Geschäftsleiter ist, und bei Konzernmandaten Ausgleichsmaßnahmen festlegen und dokumentieren.",
+   "en": "Check whether the chair of the management body is also the CEO and, for group mandates, define and document mitigating measures."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 38; Art. 88 Abs. 1 Buchst. e CRD"
+ },
+ {
+  "g": "chair",
+  "kind": "new",
+  "oldRef": "Titel IV, 11",
+  "newRef": "Titel IV, 10 Tz. 122 bis 124 EBA/GL/2026/10",
+  "oldText": null,
+  "newText": "Without prejudice to national law, institutions should ensure that where a former CEO becomes chairperson within the same entity within two years after their executive mandate has ended, any potential conflicts of interest are appropriately identified, managed and mitigated as appropriate.",
+  "s": {
+   "de": "Neu ist ein Abschnitt zu Interessenkonflikten bei Wechseln an der Spitze. Wird ein früherer CEO innerhalb von zwei Jahren nach Ende seines Mandats Vorsitzender derselben Gesellschaft, müssen mögliche Interessenkonflikte erkannt, gesteuert und gemindert werden. Ohne Abkühlungsphase von zwei Jahren sind Maßnahmen nötig, etwa die Leitung bestimmter Tagesordnungspunkte abzugeben oder sich bei der Bewertung der früheren Leistung oder Vergütung nicht zu beteiligen. Dasselbe gilt für Geschäftsleiter, die in anderen Konzerninstituten der Aufsichtsfunktion angehören.",
+   "en": "A new section deals with conflicts of interest on a change at the top. Where a former CEO becomes chair of the same entity within two years after the executive mandate ended, potential conflicts of interest must be identified, managed and mitigated. Without a two-year cooling-off period, measures are needed, for example giving up the chairing of certain agenda items or not taking part when the former performance or remuneration is assessed. The same applies to CEOs who sit on the supervisory function of other group institutions."
+  },
+  "act": {
+   "de": "Besetzungswechsel vom Geschäftsleiter zum Vorsitzenden und Mandate von Geschäftsleitern in der Aufsichtsfunktion anderer Konzerninstitute auf Interessenkonflikte prüfen und Maßnahmen in der Richtlinie zu Interessenkonflikten verankern.",
+   "en": "Review changes from CEO to chair and CEO mandates on the supervisory function of other group institutions for conflicts of interest, and anchor the measures in the conflicts of interest policy."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 122 bis 124"
+ },
+ {
+  "g": "tcb",
+  "kind": "new",
+  "newRef": "Titel III, 7.2 Tz. 98 bis 107 EBA/GL/2026/10",
+  "oldText": null,
+  "newText": "The two persons, or more, located in the relevant Member State effectively directing the business of third-country branches required by Article 48g of Directive 2013/36/EU should have the same duties and responsibilities as the members of the management body in its management function referred to in paragraphs 28 to 32, where applicable, taking into account the specific nature of third-country branches.",
+  "s": {
+   "de": "Neuer Abschnitt zur internen Governance von Drittlandzweigstellen nach Art. 48g und 74 CRD: mindestens zwei Personen, die das Geschäft leiten, mit den Aufgaben von Geschäftsleitern, bei Klasse 1 optional ein lokales Managementkomitee, ausreichende Präsenz im Mitgliedstaat, Substanz statt Briefkastenstruktur, Risikosteuerung von Back-to-back-Buchungen aus der EU sowie Vergütungsgrundsätze. Für Drittlandzweigstellen gilt nur ein Teil der Leitlinien (Titel I, Titel II Abschnitt 2, Titel III Abschnitt 7.2, Titel IV Abschnitte 8, 9 und 13, Titel V, Titel VII ohne Tz. 244 und 245).",
+   "en": "New section on the internal governance of third-country branches under Articles 48g and 74 CRD: at least two persons directing the business with the duties of management body members, an optional local management committee for class 1 branches, sufficient presence in the Member State, substance rather than letter-box structures, risk management of back-to-back booking from the EU, and remuneration principles. Only part of the guidelines applies to third-country branches (Title I, Title II Section 2, Title III Section 7.2, Title IV Sections 8, 9 and 13, Title V, Title VII except paragraphs 244 and 245)."
+  },
+  "act": {
+   "de": "Drittlandzweigstellen: Leitung, Präsenz, Substanz und Buchungsmodelle gegen die Tz. 98 bis 107 abgleichen und den anwendbaren Teil der Leitlinien nach Tz. 12 festlegen.",
+   "en": "Third-country branches: compare management, presence, substance and booking models against paragraphs 98 to 107 and determine the applicable part of the guidelines under paragraph 12."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 12 und 98 bis 107"
+ },
+ {
+  "g": "aml",
+  "kind": "changed",
+  "oldRef": "Titel V, 19 Tz. 171",
+  "newRef": "Titel V, 18 Tz. 186 EBA/GL/2026/10",
+  "oldText": "Without prejudice to national law implementing Directive 2015/849/EU, institutions should assign the responsibility for ensuring the institution’s compliance with the requirements of that directive and the institution’s policies and procedures to a staff member (e.g. head of compliance). Institutions may establish a separate AML/TF compliance function as an independent control function. The person responsible for AML/CTF should, where necessary, be able to directly report to the management body in its management and its supervisory function.",
+  "newText": "As part of the internal control functions, in accordance with Article 11(1) of Regulation (EU) 2024/1624, institutions should assign the responsibility for ensuring the institution’s compliance with the requirements of that Regulation and the institution’s policies and procedures to a member of the management body in its management function. The person responsible for the policies, procedures and controls in the day-to-day operation of the obliged entity’s AML/CFT requirements in accordance with Article 11(2) and 11(5) of Regulation (EU) 2024/1624 should be able to directly report to the management body in its supervisory function and raise concerns where specific risk developments affect or may affect the institution.",
+  "s": {
+   "de": "Die Verantwortung für die Einhaltung der Geldwäschevorgaben ist nun einem Mitglied des Leitungsorgans in der Managementfunktion zuzuweisen, gestützt auf Art. 11 Abs. 1 der Verordnung (EU) 2024/1624. Bisher genügte ein Mitarbeiter, etwa der Compliance-Leiter, und eine eigene Funktion für Geldwäsche-Compliance war als unabhängige Kontrollfunktion möglich; dieser Satz steht nicht mehr im Text. Der für den Tagesbetrieb Verantwortliche berichtet direkt an die Aufsichtsfunktion.",
+   "en": "Responsibility for compliance with the anti-money laundering requirements must now be assigned to a member of the management body in its management function, based on Article 11(1) of Regulation (EU) 2024/1624. Previously a staff member such as the head of compliance was enough, and a separate AML compliance function as an independent control function was possible; that sentence is no longer in the text. The person responsible for day-to-day operation reports directly to the supervisory function."
+  },
+  "act": {
+   "de": "Prüfen, welches Mitglied des Leitungsorgans die Verantwortung für Geldwäsche-Compliance trägt, und die Berichtslinie des operativ Verantwortlichen an die Aufsichtsfunktion anpassen.",
+   "en": "Check which member of the management body bears responsibility for AML compliance, and adjust the reporting line of the operationally responsible person to the supervisory function."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 186; Art. 11 Abs. 1, 2 und 5 der Verordnung (EU) 2024/1624"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 19.1 Tz. 172",
+  "newRef": "Titel V, 18.1 Tz. 187 EBA/GL/2026/10",
+  "oldText": "Notwithstanding the overall responsibility of the management body, heads of internal control functions should be independent of the business lines or units they control. To this end, the heads of the risk management, compliance and internal audit functions should report and be directly accountable to the management body, and their performance should be reviewed by the management body.",
+  "newText": "Where, in accordance with Article 76(6) of Directive 2013/36/EU and under the conditions referred to in paragraph 30, an internal control function is headed by a member of the management body in its management function, the institution should ensure that appropriate safeguards and mitigants are in place to avoid conflicts of interest, such as, but not limited to, an independent mindset of the individual and appropriate key performance indicators, including objective appraisal and remuneration determination.",
+  "s": {
+   "de": "Eine Kontrollfunktion darf nach Art. 76 Abs. 6 CRD von einem Mitglied des Leitungsorgans in der Managementfunktion geleitet werden (Tz. 30). Dann sind Schutzvorkehrungen gegen Interessenkonflikte nötig, zum Beispiel eine unabhängige Grundhaltung der Person, geeignete Leistungskennzahlen und eine objektive Beurteilung und Vergütungsfestsetzung. Die bisherige Vorgabe, dass die Leiter der Kontrollfunktionen dem Leitungsorgan berichten und von ihm beurteilt werden, steht nicht mehr in dieser Form im Text. Diese Regelungen sind in Aufgabenzuordnung und Einzelbeschreibungen abzubilden (Tz. 188).",
+   "en": "A control function may be headed by a member of the management body in its management function under Article 76(6) CRD (paragraph 30). Safeguards against conflicts of interest are then needed, for example an independent mindset of the person, appropriate key performance indicators and objective appraisal and remuneration determination. The previous requirement that heads of control functions report to the management body and are assessed by it is no longer in that form in the text. These arrangements must be reflected in the mapping of duties and the individual statements (paragraph 188)."
+  },
+  "act": {
+   "de": "Wird eine Kontrollfunktion von einem Geschäftsleiter geführt, Schutzvorkehrungen gegen Interessenkonflikte festlegen, dokumentieren und in der Aufgabenzuordnung abbilden.",
+   "en": "Where a member of the management body heads a control function, define and document safeguards against conflicts of interest and reflect them in the mapping of duties."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 30, 187 und 188; Art. 76 Abs. 6 CRD"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 19.1 Tz. 174",
+  "newRef": "Titel V, 18.1 Tz. 189 EBA/GL/2026/10",
+  "oldText": "In any case, the heads of internal control functions should – and under Article 76(5) of Directive 2013/36/EU the head of the risk management function must – not be removed without the prior approval of the management body in its supervisory function.",
+  "newText": "In any case, the heads of internal control functions must not, under Article 76(6) of Directive 2013/36/EU, be removed without the prior approval of the management body in its supervisory function.",
+  "s": {
+   "de": "Die Leiter aller Kontrollfunktionen dürfen nach dem Text nun nicht mehr ohne vorherige Zustimmung der Aufsichtsfunktion abberufen werden (bisher ein Soll, ein Muss nur für den Leiter der Risikomanagementfunktion). Die Aufsicht ist bei bedeutenden Instituten weiterhin zeitnah über Zustimmung und Hauptgründe zu informieren.",
+   "en": "The heads of all control functions may now not be removed without prior approval of the supervisory function (previously a should, with a must only for the head of the risk management function). In significant institutions the competent authority must still be promptly informed about the approval and the main reasons."
+  },
+  "act": {
+   "de": "Abberufungs- und Zuweisungsprozesse für alle Leiter der Kontrollfunktionen auf die Zustimmung der Aufsichtsfunktion hin prüfen.",
+   "en": "Review the appointment and removal processes for all heads of control functions for approval by the supervisory function."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 189; Art. 76 Abs. 6 CRD"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 19.3 Tz. 176",
+  "newRef": "Titel V, 18.3 Tz. 192 EBA/GL/2026/10",
+  "oldText": "Taking into account the proportionality criteria set out in Title I, the risk management function and compliance function may be combined. The internal audit function should not be combined with another internal control function.",
+  "newText": "In this regard, in accordance with the third subparagraph of Article 76(6) of Directive 2013/36/EU and paragraphs 30 and 187 of these guidelines, institutions should be able to demonstrate that, considering the nature, scale and complexity of their activities, the appointment of a separate person for each function is not justified. Institutions should ensure that the required conflict‑of‑interest assessment has been performed and that any identified conflicts of interest are appropriately mitigated. The decision to combine the risk management function with the compliance function should be duly documented. It should be ensured that the senior person fulfils the suitability criteria including time commitment and requirements of knowledge, skills and experience laid out in Article 76(6) of Directive 2013/36/EU.",
+  "s": {
+   "de": "Die Zusammenlegung von Risikomanagement- und Compliance-Funktion ist an engere Bedingungen geknüpft: Das Institut muss darlegen können, dass die Bestellung je einer eigenen Person nach Art, Umfang und Komplexität nicht gerechtfertigt ist, eine Interessenkonfliktprüfung durchführen und die Entscheidung dokumentieren. Die interne Revision darf nicht mit einer anderen Kontrollfunktion verbunden werden (bisher: soll nicht).",
+   "en": "Combining the risk management and compliance functions is subject to tighter conditions: the institution must be able to demonstrate that appointing a separate person for each is not justified given nature, scale and complexity, perform a conflict of interest assessment and document the decision. The internal audit function may not be combined with another control function (previously: should not)."
+  },
+  "act": {
+   "de": "Bei kombinierter Leitung von Risikomanagement und Compliance Begründung, Konfliktprüfung und Eignung der Person dokumentieren.",
+   "en": "Where risk management and compliance are headed jointly, document the justification, the conflict assessment and the suitability of the person."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 192; Art. 76 Abs. 6 Unterabs. 3 CRD"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 19.2 Tz. 175",
+  "newRef": "Titel V, 18.2 Tz. 190 bis 191 EBA/GL/2026/10",
+  "oldText": "In order for the internal control functions to be regarded as independent,",
+  "newText": "In accordance with Article 76(5) and (6) of Directive 2013/36/EU, institutions should have internal control functions independent from the operational functions and from the members of the management body in its management function and from senior management. This independence should not prevent internal control functions from interacting with business lines.",
+  "s": {
+   "de": "Vorangestellt ist nun ein allgemeiner Grundsatz: Kontrollfunktionen sind von den operativen Funktionen, den Mitgliedern des Leitungsorgans in der Managementfunktion und dem Senior Management unabhängig, ohne Austausch mit den Geschäftsbereichen auszuschließen, und haben direkten Zugang zur Aufsichtsfunktion. Die vier Kriterien für die Unabhängigkeit bleiben inhaltlich bestehen.",
+   "en": "A general principle now comes first: control functions are independent of the operational functions, the members of the management body in its management function and senior management, without precluding interaction with the business lines, and have direct access to the supervisory function. The four criteria for independence remain substantially unchanged."
+  },
+  "act": {
+   "de": "Unabhängigkeit der Kontrollfunktionen von Geschäftsleitung und Senior Management und den direkten Zugang zur Aufsichtsfunktion prüfen.",
+   "en": "Check the independence of control functions from the management function and senior management and their direct access to the supervisory function."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 190 und 191; Art. 76 Abs. 5 und 6 CRD"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 20.5 Tz. 201",
+  "newRef": "Titel V, 19.5 Tz. 215 EBA/GL/2026/10",
+  "oldText": "When the head of the RMF is not a member of the management body, significant institutions should appoint an independent head of the RMF who has no responsibilities for other functions and reports directly to the management body. Where it is not proportionate to appoint a person who is dedicated only to the role of head of the RMF, taking into account the principle of proportionality as set out in Title I, this function can be combined with the head of the compliance function or can be performed by another senior person, provided there is no conflict of interest between the functions combined. In any case, this person should have sufficient authority, stature and independence (e.g. head of legal).",
+  "newText": "The head of the RMF should have sufficient expertise, independence and seniority to challenge decisions that affect an institution’s exposure to risks.",
+  "s": {
+   "de": "Die Vorgaben, dass bedeutende Institute einen unabhängigen Leiter der Risikomanagementfunktion ohne weitere Aufgaben bestellen sollen, wenn dieser nicht dem Leitungsorgan angehört, und dass die Funktion mit der Compliance oder einer anderen leitenden Person (etwa dem Leiter Recht) verbunden werden kann, stehen nicht mehr im Text. Zur Kombination enthält Tz. 192 neue Vorgaben.",
+   "en": "The requirements that significant institutions should appoint an independent head of the risk management function without other responsibilities where that head is not a member of the management body, and that the function may be combined with compliance or another senior person (for example the head of legal), are no longer in the text. Paragraph 192 contains new provisions on combination."
+  },
+  "act": {
+   "de": "Besetzung der Leitung der Risikomanagementfunktion gegen die gestrichenen Vorgaben und Tz. 192 abgleichen.",
+   "en": "Compare the staffing of the head of the risk management function against the deleted requirements and paragraph 192."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 192 und 215"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 21 Tz. 204 bis 206",
+  "newRef": "Titel V, 20 Tz. 218 EBA/GL/2026/10",
+  "oldText": "Where it is not proportionate to appoint a person who is dedicated only to the role of head of compliance, taking into account the principle of proportionality as set out in Title I, this function can be combined with the head of the RMF or can be performed by another senior person (e.g. head of legal), provided there is no conflict of interest between the functions combined.",
+  "newText": "Institutions should establish a permanent and effective compliance function to identify, manage and mitigate compliance risk and ensure that the institution’s risk strategy and all material management decisions take into account risk stemming from non-compliance events.",
+  "s": {
+   "de": "Der Auftrag der Compliance-Funktion wird weiter gefasst: Compliance-Risiken erkennen, steuern und mindern und sicherstellen, dass Risikostrategie und wesentliche Managemententscheidungen Risiken aus Verstößen berücksichtigen. Die Aussagen, dass der Compliance-Leiter auch andere Aufgaben übernehmen kann und die Funktion vom Risikomanagement unterstützt oder mit ihm kombiniert werden kann, sind gestrichen.",
+   "en": "The mandate of the compliance function is broadened: identify, manage and mitigate compliance risk and ensure that the risk strategy and material management decisions take account of risk stemming from non-compliance events. The statements that the head of compliance may take on other tasks and that the function may be assisted by or combined with risk management are deleted."
+  },
+  "act": {
+   "de": "Auftrag, Berichtswege und Kombinationen der Compliance-Funktion gegen Tz. 218 bis 223 und Tz. 192 abgleichen.",
+   "en": "Compare the mandate, reporting lines and combinations of the compliance function against paragraphs 218 to 223 and 192."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 218; gestrichene Tz. 205 und 206"
+ },
+ {
+  "g": "esg",
+  "kind": "changed",
+  "oldRef": "Titel V, 17 Tz. 152",
+  "newRef": "Titel V, 16 Tz. 168 EBA/GL/2026/10",
+  "oldText": "both financial and non-financial risks, including credit, market, liquidity, concentration, operational, IT, reputational, legal, conduct, compliance with AML/CTF and other financial crime, ESG, and strategic risks.",
+  "newText": "In accordance with Article 87a of Directive 2013/36/EU, the risk management framework should also pay attention to ESG risks in the short and medium term and over a long-term horizon of at least 10 years, and to the channels through which they may drive their prudential risks, in particular through environmental physical and/or transition risks.",
+  "s": {
+   "de": "Die Liste einzelner Risikoarten im Risikomanagementrahmen entfällt zugunsten relevanter Kategorien finanzieller und nichtfinanzieller Risiken. Neu ist, dass ESG-Risiken nach Art. 87a CRD kurz- und mittelfristig und über einen langfristigen Horizont von mindestens zehn Jahren zu betrachten sind. Alle Risikoverweise erfassen ausdrücklich auch Risiken aus dem Einsatz künstlicher Intelligenz und von Quantentechnologien (Fußnote 12 zu Tz. 7).",
+   "en": "The list of individual risk types in the risk management framework is replaced by relevant categories of financial and non-financial risks. New is that ESG risks must be considered in the short and medium term and over a long-term horizon of at least ten years under Article 87a CRD. All references to risks expressly also cover risks from the use of artificial intelligence and quantum technologies (footnote 12 to paragraph 7)."
+  },
+  "act": {
+   "de": "Risikoinventur und Risikomanagementrahmen auf ESG-Risiken mit Zehnjahreshorizont sowie auf KI- und Quantenrisiken prüfen.",
+   "en": "Review the risk inventory and risk management framework for ESG risks with a ten-year horizon and for AI and quantum risks."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 24, 168 und Fußnote 12 zu Tz. 7; Art. 87a CRD"
+ },
+ {
+  "g": "ict",
+  "kind": "changed",
+  "oldRef": "Titel II, 1 Tz. 22",
+  "newRef": "Titel II, 1 Tz. 23 EBA/GL/2026/10",
+  "oldText": "includes a clear organisational structure and well-functioning independent internal risk management, compliance and audit functions that have sufficient authority, stature and resources to perform their functions;",
+  "newText": "includes an effective operational resilience approach including network and information systems that are established and managed in accordance with Regulation (EU) 2022/2554, and ensures that organisational arrangements support the continuity of critical or important functions in the event of disruptions;",
+  "s": {
+   "de": "Der Pflichtkatalog des Leitungsorgans umfasst nun ein wirksames Konzept der operativen Resilienz einschließlich der nach DORA eingerichteten Netz- und Informationssysteme und Prozesse zur Steuerung von Risiken einschließlich ESG-Risiken. Die Vergütungspolitik soll geschlechtsneutral sein und den Umgang mit ESG-Risiken berücksichtigen, Vielfalt und Inklusion kommen als Gegenstand der Unternehmenswerte hinzu.",
+   "en": "The management body list of responsibilities now includes an effective operational resilience approach including network and information systems set up under DORA and processes to manage risks including ESG risks. Remuneration policy should be gender-neutral and take account of ESG risk appetite, and diversity and inclusion are added as part of corporate values."
+  },
+  "act": {
+   "de": "Berichts- und Beschlusswege des Leitungsorgans zu operativer Resilienz, ESG-Risiken und Vergütungspolitik gegen Tz. 23 abgleichen.",
+   "en": "Compare the management body reporting and decision routes on operational resilience, ESG risks and remuneration policy against paragraph 23."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 23"
+ },
+ {
+  "g": "bcm",
+  "kind": "changed",
+  "oldRef": "Titel VI Tz. 225",
+  "newRef": "Titel VI Tz. 237 bis 241 EBA/GL/2026/10",
+  "oldText": "Institutions should establish a sound business continuity management and recovery plan to ensure their ability to operate on an ongoing basis and to limit losses in the event of severe business disruption.",
+  "newText": "Institutions should establish sound business continuity management, encompassing appropriate planning and testing to ensure their ability to operate on an ongoing basis and to limit losses in the event of severe business disruption. This should encompass the institution’s business continuity policy and response and recovery plans.",
+  "s": {
+   "de": "Das Business Continuity Management wird an DORA ausgerichtet: es soll zur IKT-Geschäftsfortführungsleitlinie nach Art. 11 Abs. 1 DORA passen, statt einer Risikoanalyse wird eine Business-Impact-Analyse verlangt, die Pläne umfassen Reaktions- und Wiederherstellungspläne und unterliegen der Prüfung der internen Revision, und Testergebnisse sind dem Leitungsorgan zu berichten.",
+   "en": "Business continuity management is aligned with DORA: it should be consistent with the ICT business continuity policy under Article 11(1) DORA, a business impact analysis is required instead of a risk analysis, the plans include response and recovery plans and are subject to internal audit review, and test results must be reported to the management body."
+  },
+  "act": {
+   "de": "Notfallpläne, Business-Impact-Analyse, Revisionsprüfung und Berichterstattung der Testergebnisse an das Leitungsorgan gegen Tz. 237 bis 241 abgleichen.",
+   "en": "Compare contingency plans, the business impact analysis, internal audit review and reporting of test results to the management body against paragraphs 237 to 241."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 237 bis 241; Art. 11 Abs. 1 und 7 Verordnung (EU) 2022/2554"
+ },
+ {
+  "g": "subst",
+  "kind": "new",
+  "oldRef": "Titel III, 6.1 Tz. 68",
+  "newRef": "Titel III, 6.1 Tz. 70 EBA/GL/2026/10",
+  "oldText": "The reporting lines and the allocation of responsibilities, in particular among key function holders, within an institution should be clear, well-defined, coherent, enforceable and duly documented. The documentation should be updated as appropriate.",
+  "newText": "The management body should also ensure that the institution maintains at all times sufficient substance to satisfy the conditions of its authorisation as defined by Commission Delegated Regulation (EU) 2022/2580 and Commission Implementing Regulation (EU) 2022/2581, and does not become ‘empty shells’ or ‘letter-box entities’, including when using third-party arrangements, or executing back-to-back transactions or any other service agreement with its head undertaking, if applicable.",
+  "s": {
+   "de": "Neu muss das Leitungsorgan sicherstellen, dass das Institut jederzeit genug Substanz für die Zulassungsvoraussetzungen behält und nicht zur Briefkastengesellschaft wird, auch bei Drittparteien oder Back-to-back-Geschäften mit der Muttergesellschaft. Entsprechendes gilt für Tochterunternehmen von Drittlandsunternehmen (Tz. 96). Gestrichen sind die Vorgabe zu klar dokumentierten Berichtslinien und Zuständigkeiten sowie die Tz. 69 und 70 zur Wirkung der Struktur auf die Aufsicht und zur Bewertung wesentlicher Konzernänderungen.",
+   "en": "The management body must now ensure that the institution at all times keeps sufficient substance to meet its authorisation conditions and does not become a letter-box entity, including when using third parties or back-to-back transactions with the head undertaking. The same applies to subsidiaries of third-country undertakings (paragraph 96). Deleted are the requirement for clearly documented reporting lines and responsibilities and paragraphs 69 and 70 on the effect of the structure on supervision and on assessing material group changes."
+  },
+  "act": {
+   "de": "Substanz, Auslagerungs- und Back-to-back-Modelle gegen Tz. 70 und 96 prüfen.",
+   "en": "Review substance, third-party and back-to-back models against paragraphs 70 and 96."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tz. 70 und 96; gestrichener Schlusssatz der Tz. 68, gestrichene Tz. 69 und 70"
+ },
+ {
+  "g": "div",
+  "kind": "changed",
+  "oldRef": "Titel IV, 10 Tz. 100",
+  "newRef": "Titel IV, 9 Tz. 114 bis 116 EBA/GL/2026/10",
+  "oldText": "Institutions should ensure that there is no discrimination of staff based on gender, race, colour, ethnic or social origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation.",
+  "newText": "Institutions should establish a culture of equality, diversity and inclusion and prevent discrimination and harassment.",
+  "s": {
+   "de": "Ergänzt wird die Pflicht, eine Kultur der Gleichstellung, Vielfalt und Inklusion zu schaffen und Diskriminierung und Belästigung zu verhindern. Auswahlgremien sollen grundsätzlich geschlechterausgewogen besetzt sein, Mutterschutz- und Elternzeit geschlechtsneutral zugänglich sein und zusätzliche interne Kennzahlen die Repräsentanz und Gleichbehandlung messen. Die EBA hat die Granularität gegenüber der Konsultation verringert.",
+   "en": "The duty is added to build a culture of equality, diversity and inclusion and to prevent discrimination and harassment. Selection committees should as a general principle be gender-balanced, maternity and paternity leave should be accessible on a gender-neutral basis, and additional internal indicators should monitor representation and equal treatment. The EBA reduced the granularity compared with the consultation."
+  },
+  "act": {
+   "de": "Gleichstellungs-, Auswahl- und Elternzeitregeln sowie interne Kennzahlen gegen Tz. 114 bis 116 abgleichen.",
+   "en": "Compare equality, selection and parental leave rules and internal indicators against paragraphs 114 to 116."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 114 bis 116; Pressemitteilung vom 05.11.2026"
+ },
+ {
+  "g": "cmte",
+  "kind": "changed",
+  "oldRef": "Titel II, 5.2 Tz. 52",
+  "newRef": "Titel II, 5.2 Tz. 54 EBA/GL/2026/10",
+  "oldText": "In G-SIIs and O-SIIs, the nomination committee should include a majority of members who are independent and be chaired by an independent member.",
+  "newText": "In G-SIIs and O-SIIs, the nomination committee should include a sufficient number of members who are independent and be chaired by an independent member.",
+  "s": {
+   "de": "In global und anderweitig systemrelevanten Instituten muss der Nominierungsausschuss nicht mehr mehrheitlich mit unabhängigen Mitgliedern besetzt sein, eine ausreichende Zahl genügt. Der Risikoausschuss behält die Mehrheit unabhängiger Mitglieder. In sonstigen bedeutenden Instituten gilt die Unabhängigkeit der Mitglieder nur noch, wo möglich. Neu sind Anforderungen an die Kenntnisse der Mitglieder des Vergütungsausschusses (Tz. 53).",
+   "en": "In global and other systemically important institutions the nomination committee no longer needs a majority of independent members, a sufficient number is enough. The risk committee keeps its majority of independent members. In other significant institutions independence of members applies only where possible. New are requirements on the knowledge of remuneration committee members (paragraph 53)."
+  },
+  "act": {
+   "de": "Besetzung der Ausschüsse gegen Tz. 54, 56 und 53 prüfen.",
+   "en": "Check the composition of committees against paragraphs 54, 56 and 53."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 53, 54 und 56"
+ },
+ {
+  "g": "tpr",
+  "kind": "removed",
+  "oldRef": "Titel III, 8 Tz. 91",
+  "oldText": "An institution remains fully responsible for all outsourced services and activities and management decisions arising from them. Accordingly, the outsourcing policy should make it clear that outsourcing does not relieve the institution of its regulatory obligations and its responsibilities to its customers.",
+  "newText": null,
+  "s": {
+   "de": "Der Abschnitt zur Auslagerungsrichtlinie (Tz. 91 bis 93) entfällt. Die EBA begründet die Streichung des eigenständigen Abschnitts zur allgemeinen Richtlinie zum Drittparteirisikomanagement damit, dass dedizierte Regelwerke dies bereits abdecken. Im Text steht statt Auslagerung durchgehend die Nutzung von Drittdienstleistern, mit Verweis auf die EBA-Leitlinien zum Drittparteirisikomanagement.",
+   "en": "The section on the outsourcing policy (paragraphs 91 to 93) is deleted. The EBA explains the removal of the standalone section on the general policy for third-party risk management by the fact that dedicated regulatory frameworks already cover it. The text now speaks throughout of the use of third-party service providers instead of outsourcing, with a reference to the EBA guidelines on third-party risk management."
+  },
+  "act": {
+   "de": "Interne Auslagerungs- und Drittparteirichtlinien auf DORA und die EBA-Leitlinien zum Drittparteirisikomanagement stützen und Verweise auf den Abschnitt 8 anpassen.",
+   "en": "Base internal outsourcing and third-party policies on DORA and the EBA guidelines on third-party risk management and update references to Section 8."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "gestrichene Tz. 91 bis 93; Abschnitt 5.1 Nr. 16 des Abschlussberichts"
+ },
+ {
+  "g": "strat",
+  "kind": "changed",
+  "oldRef": "Titel V, 20.1 Tz. 187",
+  "newRef": "Titel V, 19.1 Tz. 201 EBA/GL/2026/10",
+  "oldText": "The RMF should be actively involved at an early stage in elaborating the institution’s risk strategy and in ensuring that the institution has effective risk management processes in place.",
+  "newText": "The RMF should be actively involved at an early stage in elaborating the institution’s risk strategy and in ensuring that the institution has effective risk management processes in place and should monitor the effective implementation of the risk strategy.",
+  "s": {
+   "de": "Die Risikomanagementfunktion soll die wirksame Umsetzung der Risikostrategie überwachen, die interne Revision prüft sie unabhängig (Tz. 230). Für die Revision gelten ausdrücklich die Global Internal Audit Standards des Institute of Internal Auditors.",
+   "en": "The risk management function should monitor the effective implementation of the risk strategy, and internal audit reviews it independently (paragraph 230). Internal audit expressly follows the Global Internal Audit Standards of the Institute of Internal Auditors."
+  },
+  "act": {
+   "de": "Zuständigkeit für Überwachung und unabhängige Prüfung der Risikostrategie klären und das Revisionshandbuch auf die Global Internal Audit Standards ausrichten.",
+   "en": "Clarify responsibility for monitoring and independent review of the risk strategy and align the internal audit manual with the Global Internal Audit Standards."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "Tz. 201, 230 und 233"
+ },
+ {
+  "g": "ctrl",
+  "kind": "changed",
+  "oldRef": "Titel V, 20 Tz. 180",
+  "newRef": "Titel V, 19 Tz. 195 bis 196 EBA/GL/2026/10",
+  "oldText": "The RMF should have, where necessary, direct access to the management body in its supervisory function and its committees, where established, including in particular the risk committee.",
+  "newText": "The RMF should have access to all business lines and other internal units that have the potential to generate risk, as well as to relevant subsidiaries and affiliates.",
+  "s": {
+   "de": "Gestrichen ist die ausdrückliche Vorgabe, dass die Risikomanagementfunktion bei Bedarf direkten Zugang zur Aufsichtsfunktion und ihren Ausschüssen hat, sowie der Satz zur Unabhängigkeit von den Geschäftsbereichen. Der direkte Zugang aller Kontrollfunktionen und ihre Unabhängigkeit stehen nun in Tz. 188 und 190.",
+   "en": "The express requirement that the risk management function has direct access to the supervisory function and its committees where necessary is deleted, as is the sentence on independence of the business lines. Direct access of all control functions and their independence are now in paragraphs 188 and 190."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "gestrichene Tz. 180 und 183; Tz. 188 und 190"
+ },
+ {
+  "g": "prop",
+  "kind": "changed",
+  "oldRef": "Titel I Tz. 18",
+  "newRef": "Titel I Tz. 19 EBA/GL/2026/10",
+  "oldText": "the outsourced functions and distribution channels;",
+  "newText": "whether third-country branches as defined in Article 47(3), point (1) of Directive 2013/36/EU are class 1 or class 2 in accordance with Article 48a of Directive 2013/36/EU.",
+  "s": {
+   "de": "Die Kriterien für die Verhältnismäßigkeit werden um die Nutzung von Drittdienstleistern, den Einsatz verschiedener Vertriebskanäle und die Einstufung von Drittlandzweigstellen in Klasse 1 oder 2 ergänzt. Die IT-Systeme heißen nun IKT-Systeme.",
+   "en": "The proportionality criteria are extended by the use of third-party service providers, the use of different distribution channels and the classification of third-country branches as class 1 or class 2. IT systems are now called ICT systems."
+  },
+  "act": {
+   "de": "Die Verhältnismäßigkeitsbewertung um die neuen Kriterien ergänzen.",
+   "en": "Extend the proportionality assessment by the new criteria."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "Tz. 19"
+ },
+ {
+  "g": "map",
+  "kind": "removed",
+  "oldRef": "Titel III, 7 Tz. 90",
+  "oldText": "When establishing policies and documenting governance arrangements, institutions should take into account the aspects listed in Annex I to the guidelines.",
+  "newText": null,
+  "s": {
+   "de": "Anhang I (Aspekte einer Governance-Richtlinie) und der Verweis darauf entfallen, weil er laut EBA den Haupttext größtenteils wiederholte. Neu ist ein optionaler Vorlagenanhang für individuelle Aufgabenbeschreibungen.",
+   "en": "Annex I (aspects of an internal governance policy) and the reference to it are deleted because, according to the EBA, it largely duplicated the main text. A new optional template annex for individual statements of duties is added."
+  },
+  "act": {
+   "de": "Verweise der internen Governance-Richtlinie auf Anhang I entfernen.",
+   "en": "Remove references to Annex I from the internal governance policy."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "gestrichene Tz. 90; Abschnitt 5.1 Nr. 16 des Abschlussberichts"
+ }
+]

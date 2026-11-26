@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { tx } from "@/lib/core";
 import { useStore } from "@/lib/store";
 import type { CmpRow, Comparison } from "@/lib/base";
-import { changesOnly, isDot, removedTarget, shortComments, T, targetText, type CmpData, type L, type OldPara, type Seg } from "@/lib/cmpData";
+import { changesOnly, isDot, removedTarget, shortComments, T, targetText, unitNeu, unitOld, type CmpData, type L, type OldPara, type Seg } from "@/lib/cmpData";
 
 /* Fassungsvergleich im Rahmenwerk, Paragraf für Paragraf nach der alten Fassung
    (Buzer-Prinzip): nur die Änderungen im Wortlaut, Umsetzungshinweis als aufklappbarer
@@ -85,25 +85,25 @@ function Toggle({ open, onClick, dot, children, right }: { open: boolean; onClic
   );
 }
 
-function Title({ p, lang }: { p: OldPara; lang: L }) {
+function Title({ cmp, p, lang }: { cmp: Comparison; p: OldPara; lang: L }) {
   return (
     <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-      <span className="num text-sm font-semibold tracking-tight">§ {p.n} GwG</span>
+      <span className="num text-sm font-semibold tracking-tight">{unitOld(cmp, p.n)}</span>
       <span className="text-sm text-slate-700">{p.t}</span>
-      <span className="text-xs text-slate-400">→ {targetText(p, lang).replace(/^jetzt |^now /, "")}</span>
+      <span className="text-xs text-slate-400">→ {targetText(cmp, p, lang).replace(/^jetzt |^now /, "")}</span>
     </span>
   );
 }
 
 /** Wegfallender oder übernommener Paragraf: nur eine Zeile, kein Kommentar. */
-function DotRow({ p, lang }: { p: OldPara; lang: L }) {
+function DotRow({ cmp, p, lang }: { cmp: Comparison; p: OldPara; lang: L }) {
   const [text, setText] = useState(false);
-  const where = p.st === "removed" ? removedTarget(p, lang) : p.st === "same" ? T("inhaltlich übernommen", "carried over", lang) : T("weitgehend neu gefasst", "largely recast", lang);
+  const where = p.st === "removed" ? removedTarget(cmp, p, lang) : p.st === "same" ? T("inhaltlich übernommen", "carried over", lang) : T("weitgehend neu gefasst", "largely recast", lang);
   return (
     <li className="px-1 py-1">
       <p className="flex flex-wrap items-baseline gap-x-2 text-sm">
         <span aria-hidden className={`size-2 shrink-0 translate-y-px self-center rounded-full ${p.st === "removed" ? "border border-slate-300 bg-white" : "bg-slate-300"}`} />
-        <span className="num font-semibold tracking-tight">§ {p.n} GwG</span>
+        <span className="num font-semibold tracking-tight">{unitOld(cmp, p.n)}</span>
         <span className="text-slate-700">{p.t}</span>
         <span className="text-xs text-slate-400">({where})</span>
         {p.st === "changed" && (
@@ -118,12 +118,12 @@ function DotRow({ p, lang }: { p: OldPara; lang: L }) {
 }
 
 /** Geänderter Paragraf: Änderungen im Wortlaut links, kurze Kommentare immer rechts. */
-function Para({ p, lang }: { p: OldPara; lang: L }) {
-  if (isDot(p)) return <DotRow p={p} lang={lang} />;
+function Para({ cmp, p, lang }: { cmp: Comparison; p: OldPara; lang: L }) {
+  if (isDot(p)) return <DotRow cmp={cmp} p={p} lang={lang} />;
   const hasNote = shortComments(p.c, lang).length > 0;
   return (
     <li className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)]">
-      <Title p={p} lang={lang} />
+      <Title cmp={cmp} p={p} lang={lang} />
       <div className={`mt-2.5 grid gap-x-6 gap-y-3 ${hasNote ? "lg:grid-cols-[minmax(0,1fr)_280px]" : ""}`}>
         <div className="min-w-0"><Changes p={p} lang={lang} /></div>
         {hasNote && (
@@ -136,7 +136,7 @@ function Para({ p, lang }: { p: OldPara; lang: L }) {
   );
 }
 
-function NewRow({ n, lang, all }: { n: CmpData["neu"][number]; lang: L; all: boolean | null }) {
+function NewRow({ cmp, n, lang, all }: { cmp: Comparison; n: CmpData["neu"][number]; lang: L; all: boolean | null }) {
   const [open, setOpen] = useState(false);
   useEffect(() => { if (all !== null) setOpen(all); }, [all]);
   const has = shortComments(n.c, lang).length > 0;
@@ -145,14 +145,14 @@ function NewRow({ n, lang, all }: { n: CmpData["neu"][number]; lang: L; all: boo
       {has ? (
         <Toggle open={open} onClick={() => setOpen((v) => !v)} dot="bg-blue-600">
           <span className="flex flex-wrap items-baseline gap-x-2">
-            <span className="num whitespace-nowrap text-sm font-semibold tracking-tight">§ {n.n} GwBG-E</span>
+            <span className="num whitespace-nowrap text-sm font-semibold tracking-tight">{unitNeu(cmp, n.n)}</span>
             <span className="text-sm text-slate-700">{n.t}</span>
           </span>
         </Toggle>
       ) : (
         <div className="-mx-2 flex items-center gap-2 px-2 py-1.5">
           <span aria-hidden className="size-2 shrink-0 rounded-full bg-slate-300" />
-          <span className="num whitespace-nowrap text-sm font-semibold tracking-tight">§ {n.n} GwBG-E</span>
+          <span className="num whitespace-nowrap text-sm font-semibold tracking-tight">{unitNeu(cmp, n.n)}</span>
           <span className="text-sm text-slate-700">{n.t}</span>
         </div>
       )}
@@ -221,7 +221,7 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
         <span aria-hidden className="text-slate-300">→</span>
         <span className="font-medium text-slate-900">{tx(lang, cmp.to.n)}</span>
         <a href={cmp.to.url} target="_blank" rel="noopener noreferrer" className="font-medium text-slate-900 underline-offset-2 hover:underline">
-          {T("Entwurf öffnen", "Open draft", lang)} ↗
+          {tx(lang, cmp.lbl.open)} ↗
         </a>
       </p>
 
@@ -243,16 +243,16 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
 
           {oldShown.length > 0 && (
             <ol className="mt-4 space-y-1.5">
-              {oldShown.map((p) => <Para key={p.n} p={p} lang={lang} />)}
+              {oldShown.map((p) => <Para key={p.n} cmp={cmp} p={p} lang={lang} />)}
             </ol>
           )}
 
           {(neuShown.length > 0 || restShown.length > 0) && (
             <>
               <h2 className="font-heading mt-8 text-base font-medium tracking-tight">
-                {T("Neu im GwBG-E, ohne Vorgänger im GwG", "New in the GwBG-E, no predecessor in the GwG", lang)}
+                {tx(lang, cmp.lbl.newOnly)}
               </h2>
-              {neuShown.length > 0 && <ol className="mt-2 space-y-0.5">{neuShown.map((n) => <NewRow key={n.n} n={n} lang={lang} all={all} />)}</ol>}
+              {neuShown.length > 0 && <ol className="mt-2 space-y-0.5">{neuShown.map((n) => <NewRow key={n.n} cmp={cmp} n={n} lang={lang} all={all} />)}</ol>}
               {restShown.length > 0 && (
                 <div className="mt-6 space-y-3">
                   <p className="text-xs font-medium text-slate-400">{T("Weitere Änderungen, Fristen und Folgeänderungen", "Further changes, deadlines and consequential amendments", lang)}</p>

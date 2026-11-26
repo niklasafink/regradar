@@ -1,0 +1,611 @@
+[
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Abschnitt 1, Tz. 14",
+  "newRef": "Abschnitt 1, Tz. 10",
+  "oldText": "Diese aktualisierten Leitlinien gelten ab dem 1. Januar 2023.",
+  "newText": "Diese Leitlinien gelten ab dem 1. Januar 2027.",
+  "s": {
+   "de": "Die Neufassung gilt ab 01.01.2027. Titel 12 (Zweigstellen aus Drittländern) gilt ab 11.01.2027, die Berücksichtigung der Risiken der Nichtumsetzung und Umgehung gezielter finanzieller Sanktionen ab 10.07.2027.",
+   "en": "The revision applies from 1 January 2027. Title 12 (third-country branches) applies from 11 January 2027, and the consideration of the risks of non-implementation and circumvention of targeted financial sanctions from 10 July 2027."
+  },
+  "act": {
+   "de": "ICAAP- und ILAAP-Unterlagen sowie Gesprächsunterlagen für die Aufsicht auf die ab 01.01.2027 geltende Struktur der Leitlinien ausrichten.",
+   "en": "Align ICAAP and ILAAP documentation and supervisory dialogue materials with the structure of the guidelines that applies from 1 January 2027."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 10"
+ },
+ {
+  "g": "ict",
+  "kind": "changed",
+  "oldRef": "Abschnitt 5.8, Tz. 144",
+  "newRef": "Abschnitt 6.4, Tz. 195",
+  "oldText": "EBA-Leitlinien für das Management von IKT- und Sicherheitsrisiken",
+  "newText": "das IKT-Risiko gemäß der DORA-Verordnung und seine potenziellen Auswirkungen auf die kritischen oder wichtigen Funktionen des Instituts",
+  "s": {
+   "de": "IKT-Risiken werden nicht mehr nach eigenen Leitlinien bewertet, sondern im SREP selbst als Teil des operationellen Risikos und nach DORA, einschließlich der Auswirkungen auf kritische oder wichtige Funktionen. Grundlage sind unter anderem der Bericht zur Überprüfung des IKT-Risikomanagementrahmens und gemeldete schwerwiegende IKT-Vorfälle.",
+   "en": "ICT risks are no longer assessed under separate guidelines but within the SREP itself as part of operational risk and in line with DORA, including the impact on critical or important functions. Inputs include the report on the review of the ICT risk management framework and reported major ICT incidents."
+  },
+  "act": {
+   "de": "IKT-Risikoprofil, Klassifizierung der IKT-gestützten Funktionen und Assets sowie den Bericht zur Überprüfung des IKT-Risikomanagementrahmens nach Art. 6 Abs. 5 DORA für die SREP-Bewertung bereithalten.",
+   "en": "Keep the ICT risk profile, the classification of ICT-supported functions and assets and the report on the review of the ICT risk management framework under Art. 6(5) DORA ready for the SREP assessment."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 195 und 214"
+ },
+ {
+  "g": "ict",
+  "kind": "new",
+  "newRef": "Abschnitt 6.4, Tz. 231",
+  "newText": "Bei der Bewertung des IKT-Risikomanagements sollten die zuständigen Behörden besonderes Augenmerk auf das Management des IKT-Drittparteienrisikos legen, einschließlich des Konzentrationsgrads des Instituts bei IKT-Drittdienstleistern.",
+  "s": {
+   "de": "Die Aufsicht achtet besonders auf das IKT-Drittparteienrisiko einschließlich der Konzentration bei IKT-Drittdienstleistern und stimmt sich dazu mit den für kritische IKT-Drittdienstleister zuständigen federführenden Überwachungsbehörden ab.",
+   "en": "Supervisors pay particular attention to ICT third-party risk, including concentration on ICT third-party providers, and coordinate with the lead overseers responsible for critical ICT third-party providers."
+  },
+  "act": {
+   "de": "Konzentration bei IKT-Drittdienstleistern und das Management des IKT-Drittparteienrisikos nachvollziehbar dokumentieren.",
+   "en": "Document concentration on ICT third-party providers and the management of ICT third-party risk in a traceable way."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 231"
+ },
+ {
+  "g": "ict",
+  "kind": "new",
+  "newRef": "Abschnitt 6.4, Tz. 196",
+  "newText": "Die zuständigen Behörden sollten bewerten, ob das Institut über einen angemessenen Ansatz für die operationale Resilienz verfügt, um in der Lage zu sein, Störungen standzuhalten, sich an sie anzupassen und sich von ihnen zu erholen, wenn sie sich ereignen",
+  "s": {
+   "de": "Neu bewertet die Aufsicht die operationale Resilienz: Das Institut soll Störungen standhalten, sich anpassen und erholen können, abgestimmt auf Risikomanagementrahmen, Geschäftsfortführungspläne und Drittparteienmanagement. Im Mittelpunkt stehen kritische oder wichtige Funktionen.",
+   "en": "Supervisors now assess operational resilience: the institution should be able to withstand, adapt to and recover from disruptions, aligned with the risk management framework, business continuity plans and third-party management. Critical or important functions are the focus."
+  },
+  "act": {
+   "de": "Nachweisen, dass operationale Resilienz, Risikomanagementrahmen, Geschäftsfortführungspläne und Drittparteienmanagement aufeinander abgestimmt sind.",
+   "en": "Demonstrate that operational resilience, the risk management framework, business continuity plans and third-party management are aligned."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 196 und 241"
+ },
+ {
+  "g": "esg",
+  "kind": "changed",
+  "oldRef": "Abschnitt 4.9, Tz. 95",
+  "newRef": "Abschnitt 4.1, Tz. 58",
+  "oldText": "g. ESG-Risiken und ihre Auswirkungen auf die Tragfähigkeit und Nachhaltigkeit des Geschäftsmodells und die langfristige Resilienz des Instituts.",
+  "newText": "um die strategischen und aufsichtlichen Auswirkungen dieser Risiken auf das Geschäftsmodell des Instituts kurz-, mittel- und langfristig zu bewerten.",
+  "s": {
+   "de": "ESG-Risiken, mit Vorrang für physische und Transitionsrisiken aus der Umwelt, sind jetzt ausdrücklicher Bestandteil der Geschäftsmodellanalyse. Die alte Fassung nannte sie nur als einen von mehreren Anfälligkeitsaspekten.",
+   "en": "ESG risks, with priority for environmental physical and transition risks, are now an explicit part of the business model analysis. The old version only named them as one of several vulnerability aspects."
+  },
+  "act": {
+   "de": "Strategische und aufsichtliche Auswirkungen von ESG-Risiken auf das Geschäftsmodell kurz-, mittel- und langfristig bewerten und dokumentieren.",
+   "en": "Assess and document the strategic and prudential impact of ESG risks on the business model in the short, medium and long term."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 58 und 68"
+ },
+ {
+  "g": "esg",
+  "kind": "new",
+  "newRef": "Abschnitt 6.2, Tz. 127",
+  "newText": "Die zuständigen Behörden sollten die Auswirkungen von ESG-Risiken auf das inhärente Kreditrisiko sowie die Angemessenheit der Kreditrisikokontrollen im Zusammenhang mit ESG- Risiken bewerten und dabei Umweltrisiken Vorrang einräumen.",
+  "s": {
+   "de": "Die Bewertung des inhärenten Kreditrisikos berücksichtigt ESG-Risiken mit Vorrang für Umweltrisiken, insbesondere beim Kreditkonzentrationsrisiko, beim Immobilienrisiko und in Portfolios mit wesentlicher Exposition gegenüber Umweltrisiken. Ähnliche Vorgaben gelten für Marktrisiko, operationelles Risiko und Liquidität.",
+   "en": "The assessment of inherent credit risk takes ESG risks into account, with priority for environmental risks, in particular for credit concentration risk, real estate risk and portfolios with material exposure to environmental risks. Similar provisions apply to market risk, operational risk and liquidity."
+  },
+  "act": {
+   "de": "Physische und Transitionsrisiken in den Kreditportfolios (insbesondere Immobilien und Konzentrationen) erfassen und in Kreditrisikokontrollen abbilden.",
+   "en": "Capture physical and transition risks in credit portfolios (in particular real estate and concentrations) and reflect them in credit risk controls."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 127, 163, 199, 370"
+ },
+ {
+  "g": "icaap",
+  "kind": "changed",
+  "oldRef": "Abschnitt 5.7, Tz. 124",
+  "newRef": "Abschnitt 5.6, Tz. 91",
+  "oldText": "die Abdeckung der Geschäftsbereiche, der juristischen Personen und der Risiken",
+  "newText": "neu auftretende Risiken und/oder Risiken mit geringer Eintrittswahrscheinlichkeit/schwerwiegender Auswirkung, darunter IKT-Risiken, Umweltrisiken und geopolitische Unsicherheiten, ermittelt werden",
+  "s": {
+   "de": "Im ICAAP-Prüfkatalog ist ausdrücklich verankert, ob neu auftretende Risiken und Risiken mit geringer Eintrittswahrscheinlichkeit und schwerwiegender Auswirkung ermittelt werden, darunter IKT-Risiken, Umweltrisiken und geopolitische Unsicherheiten.",
+   "en": "The ICAAP review catalogue now expressly asks whether emerging risks and low-probability, high-impact risks are identified, including ICT risks, environmental risks and geopolitical uncertainties."
+  },
+  "act": {
+   "de": "Prüfen, ob ICAAP und ILAAP IKT-Risiken, Umweltrisiken und geopolitische Unsicherheiten als neu auftretende Risiken erfassen.",
+   "en": "Check whether the ICAAP and ILAAP capture ICT risks, environmental risks and geopolitical uncertainties as emerging risks."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 91 Buchst. f"
+ },
+ {
+  "g": "cap",
+  "kind": "new",
+  "oldRef": "Abschnitt 7.2, Tz. 366",
+  "newRef": "Abschnitt 7.2, Tz. 317",
+  "newText": "sicherstellen, dass sich der Nominalbetrag der P2R nicht automatisch erhöht",
+  "s": {
+   "de": "Neu geregelt ist der Output Floor in der P2R: Unterliegt ein Institut ihm erstmals, bleibt der Nominalbetrag der P2R zunächst begrenzt (Prozentsatz auf den Gesamtrisikobetrag ohne Untergrenze). Spätestens bis zum Ende des nächsten SREP-Zyklus überprüft die Aufsicht die P2R und streicht Doppelzählungen und rein arithmetische Effekte.",
+   "en": "The output floor in Pillar 2 requirements is newly regulated: where an institution becomes subject to it for the first time, the nominal P2R remains initially capped (percentage applied to total risk exposure amount without floor). By the end of the next SREP cycle at the latest, supervisors review the P2R and remove double counting and purely arithmetic effects."
+  },
+  "act": {
+   "de": "Absehbare Anwendung des Output Floor früh der Aufsicht melden und die P2R-Bestandteile auf Doppelzählungen mit dem Output Floor abgleichen.",
+   "en": "Notify the supervisor early of the expected application of the output floor and check the P2R components for double counting with the output floor."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 294, 317 bis 319"
+ },
+ {
+  "g": "irrbb",
+  "kind": "new",
+  "newRef": "Abschnitt 6.5, Tz. 276",
+  "newText": "sowie die Behandlung des CSRBB im Rahmen des ICAAP.",
+  "s": {
+   "de": "Das Kreditspreadrisiko im Anlagebuch (CSRBB) wird als eigener Teil neben dem Zinsänderungsrisiko bewertet, mit kombiniertem Score. Geprüft werden unter anderem CSRBB-Strategie, Risikobereitschaft, Behandlung im ICAAP und Schockszenarien.",
+   "en": "Credit spread risk in the banking book (CSRBB) is assessed as a separate part alongside interest rate risk, with a combined score. The review covers, among other things, the CSRBB strategy, risk appetite, treatment in the ICAAP and shock scenarios."
+  },
+  "act": {
+   "de": "CSRBB-Quellen, Strategie, Risikobereitschaft, Messung inklusive Schockszenarien und Behandlung im ICAAP dokumentieren.",
+   "en": "Document CSRBB sources, strategy, risk appetite, measurement including shock scenarios and treatment in the ICAAP."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 249, 276 bis 288"
+ },
+ {
+  "g": "aml",
+  "kind": "changed",
+  "oldRef": "Abschnitt 5.9, Tz. 147",
+  "newRef": "Abschnitt 5.8, Tz. 103",
+  "oldText": "Die zuständigen Behörden sollten bewerten, ob der Gesamtrahmen für die Governance des Instituts auch das Management der Risiken im Zusammenhang mit Geldwäsche und Terrorismusfinanzierung einschließt.",
+  "newText": "Die zuständigen Behörden sollten bewerten, ob der Gesamtrahmen für die interne Governance und das Risikomanagement des Instituts auch das Management der Risiken im Zusammenhang mit Geldwäsche und Terrorismusfinanzierung sowie der Risiken bezüglich der Nichtumsetzung und der Umgehung gezielter finanzieller Sanktionen umfasst.",
+  "s": {
+   "de": "Die Governance-Bewertung umfasst neben Geldwäsche und Terrorismusfinanzierung nun auch Risiken der Nichtumsetzung und Umgehung gezielter finanzieller Sanktionen. Das gilt auch für grenzüberschreitende Gruppen. Anwendung dieser Teile ab 10.07.2027.",
+   "en": "The governance assessment now covers, besides money laundering and terrorist financing, the risks of non-implementation and circumvention of targeted financial sanctions. This also applies to cross-border groups. These parts apply from 10 July 2027."
+  },
+  "act": {
+   "de": "Governance und Risikomanagement auf die Steuerung der Risiken aus Nichtumsetzung und Umgehung gezielter finanzieller Sanktionen erweitern und mit dem Geldwäsche-Rahmen verzahnen.",
+   "en": "Extend governance and risk management to cover the risks of non-implementation and circumvention of targeted financial sanctions and align them with the AML framework."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 10, 102, 103, 239, 462, 463"
+ },
+ {
+  "g": "prop",
+  "kind": "changed",
+  "oldRef": "Abschnitt 2.4, Tz. 53",
+  "newRef": "Abschnitt 2.4, Tz. 43",
+  "oldText": "c. die Bewertungen aller einzelnen SREP-Elemente mindestens alle drei Jahre oder",
+  "s": {
+   "de": "Für Institute der Kategorie 4 kann die Mindesthäufigkeit der Bewertung aller SREP-Elemente von drei auf fünf Jahre verlängert werden, wenn das Risikoprofil stabil niedrig ist, die Kennzahlen und Margen stabil sind und die vierteljährliche Überwachung keine Bedenken ergibt. Die übrigen Mindesthäufigkeiten stehen jetzt in Tabelle 1.",
+   "en": "For category 4 institutions the minimum frequency of assessing all SREP elements can be extended from three to five years where the risk profile is stable and low, financial indicators and margins are stable and quarterly monitoring raises no concerns. The other minimum frequencies are now set out in Table 1."
+  },
+  "act": {
+   "de": "Prüfen, ob die Voraussetzungen für eine fünfjährige Bewertungsfrist erfüllt sind, und Kennzahlen, Margen und Risikoindikatoren stabil dokumentieren.",
+   "en": "Check whether the conditions for a five-year assessment cycle are met and document indicators, margins and key risk indicators as stable."
+  },
+  "aud": "inst",
+  "imp": "high",
+  "src": "Tabelle 1, Fußnote ** (nach Tz. 43)",
+  "newText": "Die Mindesthäufigkeit für die Bewertung aller SREP-Elemente kann für Institute der Kategorie 4 von drei auf fünf Jahre verlängert werden, sofern: i) sie weisen ein stabiles niedriges Risikoprofil auf und verfügen über stabile finanzielle Kennzahlen und solide Margen, und ii) die vierteljährliche Überwachung der zentralen Risikoindikatoren"
+ },
+ {
+  "g": "branch",
+  "kind": "new",
+  "newRef": "Abschnitt 12, Tz. 497",
+  "newText": "Für Zweigstellen aus Drittländern der Klasse 1 sollten die zuständigen Behörden mindestens das Maß an aufsichtlicher Überwachung für Institute der Kategorie 3 anwenden",
+  "s": {
+   "de": "Neuer Titel 12 für Zweigstellen aus Drittländern (Anwendung ab 11.01.2027): SREP-Elemente sind Geschäftsmodell, Governance und Kontrollen, Kapital und Liquidität sowie Buchungsregeln. Zweigstellen der Klasse 1 werden mindestens wie Institute der Kategorie 3, solche der Klasse 2 mindestens wie Kategorie 4 überwacht.",
+   "en": "New Title 12 for third-country branches (applying from 11 January 2027): the SREP elements are business model, governance and controls, capital and liquidity, and booking arrangements. Class 1 branches are supervised at least like category 3 institutions, class 2 branches at least like category 4."
+  },
+  "act": {
+   "de": "Falls eine Zweigstelle aus einem Drittland betrieben wird: Klasse nach Art. 48a CRD und erwartete Aufsichtsintensität prüfen und Unterlagen zu den SREP-Elementen bereithalten.",
+   "en": "If a third-country branch is operated: check its class under Art. 48a CRD and the expected supervisory intensity and keep documentation on the SREP elements ready."
+  },
+  "aud": "all",
+  "imp": "high",
+  "src": "EBA/GL/2026/06, Tz. 494 bis 500"
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Abschnitt 1, Tz. 15",
+  "newRef": "Abschnitt 1, Tz. 11",
+  "newText": "werden mit Wirkung zum 1. Januar 2027 aufgehoben. Bezugnahmen auf die aufgehobenen Leitlinien gelten als Bezugnahmen auf die vorliegenden Leitlinien.",
+  "s": {
+   "de": "Die Leitlinien ersetzen die SREP-Leitlinien von 2022 und die separaten IKT-SREP-Leitlinien (EBA/GL/2017/05). Bezugnahmen auf die aufgehobenen Leitlinien gelten als Bezugnahmen auf die neuen.",
+   "en": "The guidelines replace the 2022 SREP guidelines and the separate ICT SREP guidelines (EBA/GL/2017/05). References to the repealed guidelines are to be read as references to the new ones."
+  },
+  "act": {
+   "de": "Verweise in internen Richtlinien auf EBA/GL/2022/03 und EBA/GL/2017/05 auf EBA/GL/2026/06 umstellen.",
+   "en": "Update references in internal policies to EBA/GL/2022/03 and EBA/GL/2017/05 to EBA/GL/2026/06."
+  },
+  "aud": "all",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 11"
+ },
+ {
+  "g": "ict",
+  "kind": "new",
+  "newRef": "Abschnitt 6.4, Tz. 217",
+  "newText": "Anschließend sollten die zuständigen Behörden das ermittelte wesentliche IKT-Risiko den in Anhang III aufgeführten IKT-Risikokategorien zuordnen. Es wird erwartet, dass die Institute ihre eigenen Kategorisierung beibehalten, statt die im Anhang aufgeführte Kategorisierung zu verwenden.",
+  "s": {
+   "de": "Die Aufsicht ordnet wesentliche IKT-Risiken den IKT-Risikokategorien aus Anhang III zu. Institute sollen ihre eigene Kategorisierung beibehalten.",
+   "en": "Supervisors map material ICT risks to the ICT risk categories in Annex III. Institutions are expected to keep their own categorisation."
+  },
+  "act": {
+   "de": "Die eigene IKT-Risikokategorisierung beibehalten und eine Überleitung auf die Kategorien in Anhang III vorbereiten.",
+   "en": "Keep the own ICT risk categorisation and prepare a mapping to the categories in Annex III."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 217"
+ },
+ {
+  "g": "ict",
+  "kind": "new",
+  "newRef": "Abschnitt 6.4, Tz. 197",
+  "newText": "Bei der Bewertung des operationellen Risikos sollten die zuständigen Behörden gegebenenfalls beurteilen, ob die operationellen Risiken, die sich aus den Tätigkeiten im Zusammenhang mit Kryptowerten und deren Unterstützungstechnologien ergeben, durch die Richtlinien und Verfahren des Instituts ermittelt, evaluiert und angemessen gesteuert werden.",
+  "s": {
+   "de": "Operationelle Risiken aus Tätigkeiten mit Kryptowerten und deren Unterstützungstechnologien werden in die Bewertung einbezogen.",
+   "en": "Operational risks from crypto-asset activities and their supporting technology are included in the assessment."
+  },
+  "act": {
+   "de": "Falls Kryptowerte-Tätigkeiten betrieben werden, die zugehörigen operationellen Risiken in Richtlinien und Verfahren erfassen.",
+   "en": "If crypto-asset activities are carried out, capture the related operational risks in policies and procedures."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 197"
+ },
+ {
+  "g": "model",
+  "kind": "changed",
+  "oldRef": "Abschnitt 6.4, Tz. 298",
+  "newRef": "Abschnitt 6.4, Tz. 210",
+  "oldText": "(z. B. Produktpreisgestaltung, Evaluierung von Finanzinstrumenten, Überwachung von Risikolimits usw.)",
+  "newText": "(z. B. KI- Modellen, Produktpreisgestaltung, Festlegung und Überwachung von Risikolimits, ICAAP- /ILAAP-Modelle, Sanierungsoptionen)",
+  "s": {
+   "de": "Das Modellrisiko bei internen Modellen nennt jetzt ausdrücklich KI-Modelle, ICAAP- und ILAAP-Modelle und Sanierungsoptionen. Die alte Fassung nannte als Beispiele Produktpreisgestaltung, Bewertung von Finanzinstrumenten und Risikolimits.",
+   "en": "Model risk for internal models now expressly names AI models, ICAAP and ILAAP models and recovery options. The old version named product pricing, valuation of financial instruments and risk limits as examples."
+  },
+  "act": {
+   "de": "Modellinventar und Steuerung des Modellrisikos um KI-Modelle, ICAAP-/ILAAP-Modelle und Modelle für Sanierungsoptionen erweitern.",
+   "en": "Extend the model inventory and model risk management to AI models, ICAAP/ILAAP models and models for recovery options."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 210"
+ },
+ {
+  "g": "esg",
+  "kind": "new",
+  "newRef": "Abschnitt 5.1, Tz. 75",
+  "newText": "Die zuständigen Behörden sollten bei der Bewertung der in den Buchstaben a bis f des vorstehenden Absatzes genannten Bereiche ESG-Risiken berücksichtigen und dabei den umweltbezogenen physischen und Transitionsrisiken Vorrang einräumen.",
+  "s": {
+   "de": "Governance, interne Kontrollen und Risikomanagement werden unter Berücksichtigung von ESG-Risiken bewertet, mit Vorrang für physische und Transitionsrisiken aus der Umwelt.",
+   "en": "Governance, internal controls and risk management are assessed taking ESG risks into account, with priority for environmental physical and transition risks."
+  },
+  "act": {
+   "de": "Governance-Rahmen und Kontrollfunktionen auf ESG-Risiken prüfen.",
+   "en": "Review the governance framework and control functions for ESG risks."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 75"
+ },
+ {
+  "g": "icaap",
+  "kind": "changed",
+  "oldRef": "Abschnitt 5.7, Tz. 116",
+  "newRef": "Abschnitt 5.6, Tz. 91",
+  "oldText": "und deren Solidität, Wirksamkeit und Vollständigkeit gemäß den in diesem Abschnitt beschriebenen Kriterien bestimmen.",
+  "newText": "und deren Solidität, Wirksamkeit und Vollständigkeit bestimmen.",
+  "s": {
+   "de": "Die Prüfung von ICAAP und ILAAP bleibt auf Solidität, Wirksamkeit und Vollständigkeit ausgerichtet. Die in der alten Fassung auf mehrere Absätze verteilten Kriterien (Tz. 118 bis 124) stehen nun gebündelt in einem Absatz (Tz. 91, Buchstaben a bis g).",
+   "en": "The review of the ICAAP and ILAAP remains focused on soundness, effectiveness and completeness. The criteria spread over several paragraphs in the old version (paras 118 to 124) are now bundled in one paragraph (para 91, points a to g)."
+  },
+  "act": {
+   "de": "ICAAP- und ILAAP-Dokumentation entlang der Kriterien Integration, Zukunftsorientierung, Angemessenheit, Leitungsorgan, Abdeckung und Abweichungen gliedern.",
+   "en": "Structure ICAAP and ILAAP documentation along the criteria of integration, forward-looking nature, adequacy, management body, coverage and deviations."
+  },
+  "aud": "all",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 91"
+ },
+ {
+  "g": "stress",
+  "kind": "changed",
+  "oldRef": "Abschnitt 5.7, Tz. 125",
+  "newRef": "Abschnitt 5.6, Tz. 93",
+  "oldText": "Konformität mit den EBA-Leitlinien zu den Stresstests der Institute",
+  "newText": "die EBA-Leitlinien zur Umweltszenario-Analyse im Hinblick auf die Einbeziehung von Umweltrisiken",
+  "s": {
+   "de": "Bei den Stresstests der Institute prüft die Aufsicht künftig auch die Einhaltung der EBA-Leitlinien zur Umweltszenario-Analyse. Die ausführlichen Vorgaben der alten Fassung zum Hinterfragen von Szenarien und Annahmen (Tz. 135 bis 137) stehen in den Absätzen 93 bis 98 nicht mehr.",
+   "en": "For institutions' stress tests, supervisors will also check compliance with the EBA guidelines on environmental scenario analysis. The detailed provisions of the old version on challenging scenarios and assumptions (paras 135 to 137) no longer appear in paragraphs 93 to 98."
+  },
+  "act": {
+   "de": "Stresstestprogramm auf die EBA-Leitlinien zu Stresstests der Institute und zur Umweltszenario-Analyse ausrichten.",
+   "en": "Align the stress testing programme with the EBA guidelines on institutions' stress testing and on environmental scenario analysis."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 93"
+ },
+ {
+  "g": "cap",
+  "kind": "new",
+  "newRef": "Abschnitt 7.2, Tz. 318",
+  "newText": "Für die Zwecke des vorstehenden Absatzes sollten die zuständigen Behörden die Institute dazu anhalten, sie frühzeitig zu informieren",
+  "s": {
+   "de": "Die Aufsicht kann von Instituten verlangen, im Rahmen der Säule-3-Berichterstattung die Auswirkungen der befristeten Begrenzung oder der Überprüfung der Doppelzählung auf die gemeldete P2R offenzulegen. Institute sollen die Aufsicht früh informieren, wenn sie dem Output Floor voraussichtlich unterliegen.",
+   "en": "Supervisors may require institutions to disclose in their Pillar 3 reporting the effect of the temporary cap or of the double-counting review on the reported P2R. Institutions should inform supervisors early when they expect to become subject to the output floor."
+  },
+  "act": {
+   "de": "Schätzung zum Zeitpunkt der Unterwerfung unter den Output Floor erstellen und für die Aufsicht sowie die Säule-3-Offenlegung vorhalten.",
+   "en": "Prepare an estimate of when the institution becomes subject to the output floor and keep it ready for the supervisor and Pillar 3 disclosure."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 317 Buchst. c und 318"
+ },
+ {
+  "g": "cap",
+  "kind": "changed",
+  "oldRef": "Abschnitt 7.7, Tz. 425",
+  "newRef": "Abschnitt 7.6, Tz. 344",
+  "oldText": "anhand einer Multi-Faktor- Szenarioanalyse über einen zukunftsorientierten Zeithorizont von mindestens zwei Jahren (entweder Top-down oder Bottom-up)",
+  "newText": "über einen zukunftsorientierten Zeithorizont von mindestens zwei Jahren",
+  "s": {
+   "de": "Die Systematik der P2G bleibt im Kern: adverses Szenario aufsichtlicher Stresstests über mindestens zwei Jahre, Aufrechnung gegen den Kapitalerhaltungspuffer, Festlegung ggf. nur alle zwei Jahre. Der Abschnitt ist kürzer gefasst; im Wortlaut entfällt die Multi-Faktor-Szenarioanalyse (Top-down oder Bottom-up).",
+   "en": "The core P2G approach is unchanged: adverse scenario of supervisory stress tests over at least two years, offsetting against the capital conservation buffer, setting possibly only every two years. The section is shorter; the wording no longer refers to multi-factor scenario analysis (top-down or bottom-up)."
+  },
+  "act": {
+   "de": "Prüfen, ob interne Stresstests und Kapitalplanung zur fortgeführten P2G-Logik passen (adverses Szenario, mindestens zwei Jahre).",
+   "en": "Check whether internal stress tests and capital planning fit the continued P2G logic (adverse scenario, at least two years)."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 343 bis 355"
+ },
+ {
+  "g": "cap",
+  "kind": "new",
+  "newRef": "Abschnitt 7.7, Tz. 357",
+  "newText": "den Scorewert für die Gesamtsanierungskapazität in Bezug auf das Kapital (schwach, angemessen, mit Entwicklungspotenzial oder zufriedenstellend)",
+  "s": {
+   "de": "Der Kapitalangemessenheits-Score berücksichtigt, soweit zutreffend, den Score für die Gesamtsanierungskapazität in Bezug auf Kapital. Bei einem schwachen Wert ist dies besonders relevant. Entsprechendes gilt für die Liquiditätsausstattung.",
+   "en": "The capital adequacy score takes into account, where applicable, the overall recovery capacity score for capital. This is particularly relevant for a weak score. The same applies to liquidity adequacy."
+  },
+  "act": {
+   "de": "Sanierungsplanung und Gesamtsanierungskapazität konsistent zu Kapital- und Liquiditätsplanung halten.",
+   "en": "Keep recovery planning and overall recovery capacity consistent with capital and liquidity planning."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 357 und 423"
+ },
+ {
+  "g": "market",
+  "kind": "new",
+  "newRef": "Abschnitt 6.3, Tz. 174",
+  "newText": "(z. B. mehr als 5 % der vom Institut erwirtschafteten Gewinne und Verluste ausmachen)",
+  "s": {
+   "de": "Neu geprüft werden Transferpreisvereinbarungen zwischen EU-Instituten einer Drittlandsgruppe und Unternehmen außerhalb der Union für Handelsbuchpositionen. Bei wesentlichen Effekten (Beispiel: mehr als 5 Prozent der Gewinne und Verluste) und fehlender Abdeckung durch die Säule 1 fließt das Risiko in die P2R ein.",
+   "en": "Transfer pricing arrangements between EU institutions of a third-country group and entities outside the Union for trading book positions are newly reviewed. Where effects are material (example: more than 5 per cent of profits and losses) and not covered by Pillar 1, the risk is reflected in the P2R."
+  },
+  "act": {
+   "de": "Transferpreisvereinbarungen mit Gruppenunternehmen außerhalb der Union für Handelsbuchpositionen identifizieren und ihre Wesentlichkeit bestimmen.",
+   "en": "Identify transfer pricing arrangements with group entities outside the Union for trading book positions and determine their materiality."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 172 bis 174, Anhang V"
+ },
+ {
+  "g": "liq",
+  "kind": "changed",
+  "oldRef": "Abschnitt 8.1, Tz. 452",
+  "newRef": "Abschnitt 8.1, Tz. 363",
+  "oldText": "Die Methode umfasst drei Hauptkomponenten:",
+  "newText": "Die Methode umfasst sechs Hauptkomponenten:",
+  "s": {
+   "de": "Liquiditäts- und Refinanzierungsrisiko werden in einem Titel gemeinsam bewertet (neu: sechs statt drei Hauptkomponenten, jetzt inklusive Maßnahmen, Benchmarking und quantitativer Anforderungen). Die alte Fassung trennte die SREP-Liquiditätsbewertung in einen eigenen Titel 9.",
+   "en": "Liquidity and funding risk are assessed together in one title (now six instead of three main components, including measures, benchmarking and quantitative requirements). The old version separated the SREP liquidity assessment into its own Title 9."
+  },
+  "act": {
+   "de": "ILAAP-Dokumentation und Berichte so gliedern, dass Liquiditäts- und Refinanzierungsrisiko gemeinsam bewertet werden können.",
+   "en": "Structure ILAAP documentation and reports so that liquidity and funding risk can be assessed together."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 363"
+ },
+ {
+  "g": "liq",
+  "kind": "new",
+  "newRef": "Abschnitt 8.2, Tz. 377",
+  "newText": "die Auswirkungen der Digitalisierung (einschließlich z. B. Sofortzahlungen) und das Potenzial für die Verbreitung von Informationen in den sozialen Medien berücksichtigt werden",
+  "s": {
+   "de": "Bei der Bewertung des kurzfristigen Liquiditätsbedarfs berücksichtigt die Aufsicht neu die Auswirkungen der Digitalisierung (z. B. Sofortzahlungen) und die Verbreitung von Informationen in sozialen Medien, die Abhebungen im Stress beschleunigen können.",
+   "en": "When assessing short-term liquidity needs, supervisors now consider the effects of digitalisation (for example instant payments) and the spread of information on social media, which can accelerate withdrawals under stress."
+  },
+  "act": {
+   "de": "Abflussannahmen und Liquiditätsstresstests auf digitale Abhebungsdynamik prüfen.",
+   "en": "Review outflow assumptions and liquidity stress tests for digital withdrawal dynamics."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 377"
+ },
+ {
+  "g": "gov",
+  "kind": "changed",
+  "newRef": "Abschnitt 5.5, Tz. 85",
+  "newText": "die Einhaltung der EBA-Leitlinien zur internen Governance und der einschlägigen Bestimmungen der Verordnung (EU) 2022/2554 (DORA)",
+  "s": {
+   "de": "Die Beurteilung interner Kontrollfunktionen und des Risikomanagements stützt sich nun ausdrücklich auch auf die DORA-Verordnung neben den EBA-Leitlinien zur internen Governance.",
+   "en": "The assessment of internal control functions and risk management now expressly also relies on the DORA Regulation alongside the EBA guidelines on internal governance."
+  },
+  "act": {
+   "de": "Dokumentation der Kontrollfunktionen und des Risikomanagements auf den Bezug zu DORA prüfen.",
+   "en": "Check the documentation of control functions and risk management for its link to DORA."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 85 und 89"
+ },
+ {
+  "g": "bm",
+  "kind": "changed",
+  "oldRef": "Abschnitt 4.5, Tz. 85",
+  "newRef": "Abschnitt 4.3, Tz. 64",
+  "oldText": "um festzustellen, welche Risiken das Institut zu übernehmen bereit ist, um sein Finanzergebnis zu steigern.",
+  "newText": "und seine operationale Resilienz zu stärken. Dies sollte auch die Auswirkungstoleranz mit Blick auf IKT-Störungen umfassen.",
+  "s": {
+   "de": "Bei Risikobereitschaft und Risikotoleranzschwellen wird neu die Auswirkungstoleranz mit Blick auf IKT-Störungen einbezogen. Der Zweck wird um die Stärkung der operationalen Resilienz ergänzt.",
+   "en": "Risk appetite and tolerance now include the impact tolerance for ICT disruptions. The purpose is extended to strengthening operational resilience."
+  },
+  "act": {
+   "de": "Auswirkungstoleranz für IKT-Störungen in der Risikobereitschaft festlegen.",
+   "en": "Define the impact tolerance for ICT disruptions in the risk appetite."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 64 Buchst. c"
+ },
+ {
+  "g": "scope",
+  "kind": "changed",
+  "oldRef": "Abschnitt 4.2, Tz. 79",
+  "newRef": "Abschnitt 4.2, Tz. 62",
+  "oldText": "Die zuständigen Behörden sollten diese erste Beurteilung zu folgenden Zwecken verwenden:",
+  "newText": "Die zuständigen Behörden sollten sich ein Urteil über die Wesentlichkeit der Änderungen am Geschäftsmodell des Instituts gegenüber der vorherigen aufsichtlichen Überprüfung bilden",
+  "s": {
+   "de": "Die Geschäftsmodellanalyse wird verschlankt: Die Aufsicht beurteilt die Wesentlichkeit der Änderungen seit der letzten Überprüfung, um Umfang und Tiefe festzulegen, und bestimmt die wichtigsten Geschäftsfelder. Die Gliederung schrumpft von zehn Abschnitten (alt 4.1 bis 4.10) auf fünf (neu 4.1 bis 4.5); der Abschnitt Erste Beurteilung entfällt als eigener Abschnitt.",
+   "en": "The business model analysis is streamlined: supervisors assess the materiality of changes since the last review to set scope and depth, and identify the key business lines. The structure shrinks from ten sections (old 4.1 to 4.10) to five (new 4.1 to 4.5); the initial assessment section no longer exists as a separate section."
+  },
+  "aud": "auth",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 61 bis 63"
+ },
+ {
+  "g": "prop",
+  "kind": "changed",
+  "oldRef": "Abschnitt 2.4, Tz. 52",
+  "newRef": "Abschnitt 2.4, Tz. 44",
+  "oldText": "c. die Bewertungen aller einzelnen SREP-Elemente mindestens alle drei Jahre oder im Falle wesentlicher neuer Informationen bezüglich des zu bewertenden Risikos häufiger aktualisieren",
+  "newText": "Insbesondere können auch Informationen aus den Vorjahren als Grundlage für die Bewertung und Zusammenfassung der SREP-Gesamtbewertung dienen",
+  "s": {
+   "de": "Informationen aus Vorjahren können als Grundlage der SREP-Gesamtbewertung dienen, wenn sich das Risikoprofil laut vierteljährlicher Überwachung nicht wesentlich geändert hat. Die alten Absätze je Kategorie (Tz. 50 bis 53) sind durch Tabelle 1 ersetzt.",
+   "en": "Information from previous years can serve as a basis for the overall SREP assessment where quarterly monitoring shows no material change in the risk profile. The old paragraphs per category (paras 50 to 53) are replaced by Table 1."
+  },
+  "act": {
+   "de": "Wesentliche Änderungen des Risikoprofils zeitnah dokumentieren, weil sie den Rückgriff auf Vorjahresinformationen ausschließen.",
+   "en": "Document material changes in the risk profile promptly, because they rule out reliance on prior-year information."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 43 und 44, Tabelle 1"
+ },
+ {
+  "g": "esc",
+  "kind": "changed",
+  "oldRef": "Abschnitt 10.5, Tz. 548",
+  "newRef": "Abschnitt 2.1, Tz. 21",
+  "oldText": "Zur Eindämmung bestimmter Mängel, die während der Bewertung der SREP-Elemente ermittelt wurden",
+  "newText": "a. Aufnahme eines erweiterten aufsichtlichen Dialogs mit dem Institut",
+  "s": {
+   "de": "Der Maßnahmenkatalog in Abschnitt 10.5 (32 Absätze) entfällt bis auf einen Absatz als Fließtext. Stattdessen steht ein abgestufter Eskalationsrahmen: erweiterter Dialog, unverbindliche Erwartungen, verbindliche Maßnahmen (z. B. qualitative Auflagen, höhere P2R oder Liquiditätsanforderungen) und Durchsetzung; Maßnahmenlisten stehen als Tabellen in den einzelnen Titeln.",
+   "en": "The measures catalogue in section 10.5 (32 paragraphs) no longer exists as running text, apart from one paragraph. Instead there is a graduated escalation framework: enhanced dialogue, non-binding expectations, binding measures (for example qualitative requirements, higher P2R or liquidity requirements) and enforcement; lists of measures appear as tables in the individual titles."
+  },
+  "act": {
+   "de": "Mit abgestuften Aufsichtsreaktionen rechnen und Mängelbehebung aus früheren SREP-Feststellungen nachvollziehbar dokumentieren.",
+   "en": "Expect graduated supervisory responses and document the remediation of deficiencies from earlier SREP findings in a traceable way."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 20 bis 23"
+ },
+ {
+  "g": "scope",
+  "kind": "new",
+  "oldRef": "Abschnitt 2.1, Tz. 16",
+  "newRef": "Abschnitt 2.1, Tz. 12",
+  "newText": "wobei die Liste der Rechtsakte zu berücksichtigen ist, die gesondert auf der Website der EBA veröffentlicht werden und anhand derer die Einhaltung der Vorschriften durch das Institut beurteilt werden sollte",
+  "s": {
+   "de": "Alle Bewertungen berücksichtigen nun eine gesondert auf der EBA-Website veröffentlichte Liste der Rechtsakte, anhand derer die Einhaltung durch das Institut beurteilt wird.",
+   "en": "All assessments now take into account a list of legal acts published separately on the EBA website, against which compliance by the institution is assessed."
+  },
+  "act": {
+   "de": "Prüfen, welche Rechtsakte der EBA-Liste für das Institut gelten, und Nachweise zur Einhaltung bereithalten.",
+   "en": "Check which legal acts on the EBA list apply to the institution and keep compliance evidence ready."
+  },
+  "aud": "all",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 12"
+ },
+ {
+  "g": "branch",
+  "kind": "new",
+  "newRef": "Abschnitt 12.1, Tz. 516",
+  "newText": "ob die Zweigstelle aus einem Drittland die Mindestanforderung an die Kapitalausstattung gemäß Artikel 48e Absatz 1 der Richtlinie 2013/36/EU erfüllt",
+  "s": {
+   "de": "Bei Zweigstellen aus Drittländern wird die Kapitalausstattung gegen die Mindestanforderung nach Art. 48e CRD geprüft, einschließlich Konzentration und Währungsinkongruenz, ebenso die Zusammenarbeit mit dem Unternehmen an der Spitze bei Kapital- und Liquiditätsmanagement.",
+   "en": "For third-country branches the capital endowment is tested against the minimum requirement under Art. 48e CRD, including concentration and currency mismatch, as well as cooperation with the head undertaking on capital and liquidity management."
+  },
+  "act": {
+   "de": "Kapitalausstattung der Zweigstelle und Eskalationswege zum Unternehmen an der Spitze prüfen.",
+   "en": "Review the branch's capital endowment and escalation routes to the head undertaking."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 516 und 519"
+ },
+ {
+  "g": "branch",
+  "kind": "new",
+  "newRef": "Abschnitt 12.1, Tz. 520",
+  "newText": "Die zuständigen Behörden überprüfen, ob der Rahmen der Zweigstelle aus einem Drittland ein Registerbuch umfasst",
+  "s": {
+   "de": "Bei Zweigstellen aus Drittländern prüft die Aufsicht ein Registerbuch für verbuchte oder initiierte Vermögenswerte und Verbindlichkeiten nach Art. 48h CRD sowie Back-to-back- und Remote-Buchungsregeln.",
+   "en": "For third-country branches, supervisors review a register of booked or initiated assets and liabilities under Art. 48h CRD and back-to-back and remote booking arrangements."
+  },
+  "act": {
+   "de": "Registerbuch und Grundsätze der Buchungsregeln der Zweigstelle auf Vollständigkeit prüfen.",
+   "en": "Check the branch's register and booking arrangement principles for completeness."
+  },
+  "aud": "inst",
+  "imp": "medium",
+  "src": "EBA/GL/2026/06, Tz. 520 bis 522"
+ },
+ {
+  "g": "comm",
+  "kind": "changed",
+  "oldRef": "Abschnitt 2.4, Tz. 51",
+  "newRef": "Abschnitt 9.3, Tz. 447",
+  "oldText": "d. das Institut mindestens alle zwei Jahre über das Ergebnis der SREP- Gesamtbewertung informieren",
+  "newText": "schriftlich mitteilen. Die Mitteilung ist an das Leitungsorgan des Instituts zu richten.",
+  "s": {
+   "de": "Das Ergebnis der SREP-Bewertung wird dem Institut schriftlich und an das Leitungsorgan gerichtet mitgeteilt; der Rhythmus folgt dem SREP-Überwachungsmodell. Die alte Fassung nannte feste Zeiträume je Kategorie (jährlich, alle zwei oder drei Jahre).",
+   "en": "The outcome of the SREP assessment is communicated to the institution in writing and addressed to the management body; the frequency follows the SREP supervisory model. The old version named fixed periods per category (annually, every two or three years)."
+  },
+  "act": {
+   "de": "Empfang und Weiterleitung der schriftlichen SREP-Mitteilung an das Leitungsorgan sicherstellen.",
+   "en": "Ensure receipt and forwarding of the written SREP communication to the management body."
+  },
+  "aud": "inst",
+  "imp": "low",
+  "src": "EBA/GL/2026/06, Tz. 447"
+ }
+]

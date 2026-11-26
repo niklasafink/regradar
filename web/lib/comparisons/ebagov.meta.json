@@ -1,0 +1,43 @@
+{
+ "from": {
+  "n": {
+   "de": "EBA-Leitlinien zur internen Governance (2021)",
+   "en": "EBA guidelines on internal governance (2021)"
+  },
+  "ref": "EBA/GL/2021/05",
+  "note": {
+   "de": "Geltende Leitlinien vom 02.07.2021, anwendbar seit 31.12.2021. Die überarbeitete Fassung hebt sie auf, das Aufhebungsdatum steht im Abschlussbericht noch offen. Verglichen wird der englische Wortlaut.",
+   "en": "Guidelines in force, issued on 2 July 2021 and applicable since 31 December 2021. The revised version repeals them, the repeal date is still open in the final report. The English wording is compared."
+  }
+ },
+ "to": {
+  "n": {
+   "de": "Überarbeitete EBA-Leitlinien zur internen Governance (Endfassung)",
+   "en": "Revised EBA guidelines on internal governance (final)"
+  },
+  "ref": "EBA/GL/2026/10",
+  "note": {
+   "de": "Endgültiger Bericht der EBA vom 05.11.2026, noch nicht in die EU-Amtssprachen übersetzt. Kein Entwurf: Die Konsultation lief bis 07.11.2025. Anwendung zwei Monate nach Veröffentlichung in allen Amtssprachen, ein Datum nennt der Text noch nicht (Platzhalter in Tz. 3, 15 und 16). Nur englisch verfügbar, daher ist auch der Wortlaut der neuen Fassung englisch.",
+   "en": "Final report of the EBA of 5 November 2026, not yet translated into the EU official languages. Not a draft: the consultation ran until 7 November 2025. Application two months after publication in all official languages, the text does not yet name a date (placeholders in paragraphs 3, 15 and 16). Available in English only, so the wording of the new version is also English."
+  },
+  "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-revised-guidelines-internal-governance-delivering-greater-proportionality-and"
+ },
+ "stand": "05.11.2026",
+ "lblOld": "{n} (EBA/GL/2021/05)",
+ "lblNew": "{n} (EBA/GL/2026/10)",
+ "goneDe": "fällt weg, ohne Ersatz in den überarbeiteten Leitlinien",
+ "goneEn": "is deleted without a replacement in the revised guidelines",
+ "newOnlyDe": "Neu in den überarbeiteten Leitlinien, ohne Vorgänger in EBA/GL/2021/05",
+ "newOnlyEn": "New in the revised guidelines, no predecessor in EBA/GL/2021/05",
+ "aboutDe": [
+  "Die EBA hat am 05.11.2026 die überarbeiteten Leitlinien zur internen Governance nach der CRD als EBA/GL/2026/10 veröffentlicht. Sie ersetzen EBA/GL/2021/05 und setzen die Änderungen der CRD VI um, unter anderem die Aufgabenzuordnung für Leitungsorgan, Senior Management und Schlüsselfunktionsträger und den Rahmen für Drittlandzweigstellen. Außerdem passen sie die Leitlinien an DORA und die Geldwäscheverordnung an.",
+  "Der Vergleich folgt dem Aufbau der alten Leitlinien Abschnitt für Abschnitt und zeigt je Textziffer, was gestrichen (rot) und ergänzt (blau) ist. Die Textziffern sind neu nummeriert, die Zuordnung alt zu neu beruht auf Textähnlichkeit. Neu angefügte Textziffern stehen unter dem Abschnitt, in den sie inhaltlich gehören; der Abschnitt zu Drittlandzweigstellen ist ganz neu, der Abschnitt zur Auslagerungsrichtlinie und Anhang I entfallen.",
+  "Die Leitlinien gelten zwei Monate nach Veröffentlichung in allen EU-Amtssprachen, ein Datum steht noch aus; bis dahin gilt EBA/GL/2021/05. Offen ist auch die deutsche Übersetzung, die Textstellen im Vergleich sind deshalb englisch. Die parallelen Leitlinien für Wertpapierinstitute (EBA/GL/2021/14) sind nicht Gegenstand dieses Vergleichs. Keine Rechtsberatung."
+ ],
+ "aboutEn": [
+  "On 5 November 2026 the EBA published the revised guidelines on internal governance under the CRD as EBA/GL/2026/10. They replace EBA/GL/2021/05 and implement the CRD VI changes, among them the mapping of duties for the management body, senior management and key function holders and the framework for third-country branches. They also align the guidelines with DORA and the AML Regulation.",
+  "The comparison follows the structure of the old guidelines section by section and shows for each paragraph what is deleted (red) and added (blue). The paragraphs are renumbered, and the old to new mapping rests on text similarity. Newly added paragraphs appear under the section they belong to by content; the section on third-country branches is entirely new, the section on the outsourcing policy and Annex I are deleted.",
+  "The guidelines apply two months after publication in all EU official languages, a date is still outstanding; until then EBA/GL/2021/05 applies. The German translation is also outstanding, so the passages in the comparison are in English. The parallel guidelines for investment firms (EBA/GL/2021/14) are not covered by this comparison. Not legal advice."
+ ],
+ "file": "ebagov-EBA-GL-2026-10"
+}

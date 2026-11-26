@@ -1,5 +1,5 @@
 // Gemeinsame Typen und Hilfen für den Fassungsvergleich (Ansicht und Word-Export).
-import type { CmpRow } from "./base";
+import type { CmpRow, Comparison } from "./base";
 
 export type Seg = [0 | 1 | 2, string];            // 0 gleich, 1 gelöscht, 2 ergänzt
 export interface Abs { l: string; st: "eq" | "chg" | "del"; to?: string; segs: Seg[] }
@@ -12,16 +12,18 @@ export interface CmpData { old: OldPara[]; neu: NewPara[]; rest: CmpRow[] }
 export type L = "de" | "en";
 
 export const T = (de: string, en: string, lang: L) => (lang === "de" ? de : en);
-export const toLabel = (to: string[]) => (to.length ? `§ ${to.join(", ")} GwBG-E` : "");
+export const unitOld = (cmp: Comparison, n: string) => cmp.lbl.old.replace("{n}", n);
+export const unitNeu = (cmp: Comparison, n: string) => cmp.lbl.neu.replace("{n}", n);
+export const toLabel = (cmp: Comparison, to: string[]) => (to.length ? unitNeu(cmp, to.join(", ")) : "");
 
 /** Kleine Zeile statt Block: wegfallend, übernommen oder so stark neu gefasst, dass kein
     sinnvoller Fließtext-Vergleich bleibt (und kein Hinweis existiert). */
 export const isDot = (p: OldPara) => p.st === "removed" || p.st === "same" || (p.hv && p.c.length === 0);
 
 /** Zielangabe für Kopfzeile und Word-Kommentar. */
-export function targetText(p: OldPara, lang: L): string {
-  if (p.to.length) return `${T("jetzt", "now", lang)} ${toLabel(p.to)}`;
-  return T("künftig in der EU-Geldwäscheverordnung", "in future in the EU AML Regulation", lang);
+export function targetText(cmp: Comparison, p: OldPara, lang: L): string {
+  if (p.to.length) return `${T("jetzt", "now", lang)} ${toLabel(cmp, p.to)}`;
+  return cmp.lbl.gone[lang] ?? cmp.lbl.gone.de;
 }
 
 /** Lange unveränderte Läufe auf Anfang und Ende kürzen (nur Änderungen zeigen). */
@@ -65,9 +67,9 @@ export function shortComments(rows: CmpRow[], lang: L): { ref: string; text: str
 }
 
 /** Zielhinweis für ganz wegfallende Paragrafen: „künftig in EU-Geldwäscheverordnung, Art. 10“. */
-export function removedTarget(p: OldPara, lang: L): string {
-  if (p.to.length) return `${T("jetzt", "now", lang)} ${toLabel(p.to)}`;
+export function removedTarget(cmp: Comparison, p: OldPara, lang: L): string {
+  if (p.to.length) return `${T("jetzt", "now", lang)} ${toLabel(cmp, p.to)}`;
   const arts = [...new Set(p.c.map((r) => r.newRef).filter((x): x is string => !!x && /^Art\./.test(x)).map((x) => x.replace(/ VO \(EU\) 2024\/1624/, "")))];
-  const base = T("fällt künftig in die EU-Geldwäscheverordnung", "moves to the EU AML Regulation", lang);
+  const base = cmp.lbl.gone[lang] ?? cmp.lbl.gone.de;
   return arts.length ? `${base}, ${arts.join(", ")}` : base;
 }

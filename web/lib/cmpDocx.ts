@@ -2,7 +2,7 @@
 // Revisionen, annehmen und ablehnen möglich), Umsetzungshinweise als Kommentare.
 // Läuft im Browser; die Bibliothek wird erst beim Klick geladen.
 import type { CmpRow, Comparison } from "./base";
-import { T, removedTarget, shortComments, type CmpData, type L, type OldPara, type Seg } from "./cmpData";
+import { T, removedTarget, shortComments, unitNeu, unitOld, type CmpData, type L, type OldPara, type Seg } from "./cmpData";
 
 const AUTHOR = "Regulatory Radar";
 
@@ -48,11 +48,11 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
   for (const p of opts.old) {
     const dot = p.st === "removed" || p.st === "same" || (p.hv && p.c.length === 0);
     if (dot && p.st !== "changed") {
-      out.push(new Paragraph({ spacing: { before: 120 }, children: [new TextRun({ text: `§ ${p.n} GwG ${p.t} `, bold: true }), new TextRun({ text: `(${p.st === "removed" ? removedTarget(p, lang) : T("inhaltlich übernommen", "carried over", lang)})`, size: 20 })] }));
+      out.push(new Paragraph({ spacing: { before: 120 }, children: [new TextRun({ text: `${unitOld(cmp, p.n)} ${p.t} `, bold: true }), new TextRun({ text: `(${p.st === "removed" ? removedTarget(cmp, p, lang) : T("inhaltlich übernommen", "carried over", lang)})`, size: 20 })] }));
       continue;
     }
     const sc = shortComments(p.c, lang);
-    out.push(heading(`§ ${p.n} GwG ${p.t}`, sc.map((r) => `${r.ref ? r.ref + ": " : ""}${r.text}`)));
+    out.push(heading(`${unitOld(cmp, p.n)} ${p.t}`, sc.map((r) => `${r.ref ? r.ref + ": " : ""}${r.text}`)));
     const items = [...p.abs.map((a) => ({ l: a.l, segs: a.segs })), ...p.ins.map((a) => ({ l: a.l, segs: a.segs }))];
     for (const a of items) {
       out.push(new Paragraph({ spacing: { after: 100 }, children: [...(a.l ? [new TextRun({ text: `${a.l} `, bold: true })] : []), ...segRuns(a.segs)] }));
@@ -60,10 +60,10 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
   }
 
   if (opts.neu.length) {
-    out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, spacing: { before: 360 }, children: [new TextRun(T("Neu im GwBG-E, ohne Vorgänger im GwG", "New in the GwBG-E, no predecessor in the GwG", lang))] }));
+    out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, spacing: { before: 360 }, children: [new TextRun(tx(cmp.lbl.newOnly))] }));
     for (const n of opts.neu) {
       const lines = shortComments(n.c, lang).map((r) => `${r.ref ? r.ref + ": " : ""}${r.text}`);
-      out.push(new Paragraph({ spacing: { after: 60 }, children: withComment([new InsertedTextRun({ text: `§ ${n.n} GwBG-E ${n.t}`, id: revId++, author: AUTHOR, date: date.toISOString() })], lines.length ? lines : [T("Neue Vorschrift ohne Vorgänger im GwG.", "New provision without predecessor in the GwG.", lang)]) }));
+      out.push(new Paragraph({ spacing: { after: 60 }, children: withComment([new InsertedTextRun({ text: `${unitNeu(cmp, n.n)} ${n.t}`, id: revId++, author: AUTHOR, date: date.toISOString() })], lines.length ? lines : [tx(cmp.lbl.newOnly)]) }));
     }
   }
   if (opts.rest.length) {
@@ -75,7 +75,7 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
 
   const doc = new Document({
     creator: AUTHOR,
-    title: `${T("Fassungsvergleich", "Version comparison", lang)} GwG GwBG-E`,
+    title: `${T("Fassungsvergleich", "Version comparison", lang)}: ${tx(cmp.from.n)} / ${tx(cmp.to.n)}`,
     comments: { children: comments },
     features: { trackRevisions: true },
     sections: [{ children: out }],
@@ -83,7 +83,7 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
   const blob = await Packer.toBlob(doc);
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "Fassungsvergleich-GwG-GwBG-E.docx";
+  a.download = `Fassungsvergleich-${cmp.lbl.file}.docx`;
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 5000);
 }
