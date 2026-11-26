@@ -23,26 +23,7 @@ const GWG: Comparison = {
     },
     url: "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_VII/21_Legislaturperiode/2026-10-28-E6EUGWRL/0-Gesetz.html",
   },
-  intro: {
-    de: "Das GwBG-E ersetzt das GwG als neues Stammgesetz. Weil die Geldwäscheverordnung (VO (EU) 2024/1624) ab 10.07.2027 unmittelbar gilt, entfallen Risikomanagement-, Sorgfalts- und Meldepflichten im nationalen Gesetz; geregelt bleiben Verpflichtetenkreis, Transparenzregister, FIU, Aufsicht, Zwangsmittel und Sanktionen. Der Vergleich zeigt je Thema, was wegfällt, was bleibt und was neu ist.",
-    en: "The GwBG-E replaces the GwG as a new framework act. Because the AML Regulation (Regulation (EU) 2024/1624) applies directly from 10 July 2027, risk management, due diligence and reporting duties disappear from the national act; the circle of obliged entities, transparency register, FIU, supervision, coercive measures and sanctions remain regulated. The comparison shows per topic what falls away, what stays and what is new.",
-  },
-  caveat: {
-    de: "Entwurf, nicht beschlossen. Fundstellen und Wortlaut folgen dem Referentenentwurf und dem heutigen GwG; die Zusammenfassungen sind redaktionell und ersetzen keine Rechtsprüfung.",
-    en: "Draft, not adopted. References and wording follow the ministry draft and the current GwG; the summaries are editorial and are no substitute for legal review.",
-  },
   stand: "28.10.2026",
-  groups: [
-    { id: "enforce", n: { de: "Bußgeld, Zwangsgeld und Veröffentlichung", en: "Fines, periodic penalties and publication" } },
-    { id: "transition", n: { de: "Inkrafttreten und Übergang", en: "Entry into force and transition" } },
-    { id: "scope", n: { de: "Anwendungsbereich und Verpflichtete", en: "Scope and obliged entities" } },
-    { id: "risk", n: { de: "Risikomanagement, interne Sicherungsmaßnahmen, Geldwäschebeauftragter", en: "Risk management, internal safeguards, AML officer" } },
-    { id: "cdd", n: { de: "Sorgfaltspflichten, Aufzeichnung, Bargeld", en: "Due diligence, record-keeping, cash" } },
-    { id: "reporting", n: { de: "Verdachtsmeldung und FIU", en: "Suspicious activity reports and FIU" } },
-    { id: "tr", n: { de: "Transparenzregister", en: "Transparency register" } },
-    { id: "property", n: { de: "Immobilien und Glücksspiel", en: "Real estate and gambling" } },
-    { id: "super", n: { de: "Aufsicht und Mitwirkungspflichten", en: "Supervision and cooperation duties" } },
-  ],
   paras: "/cmp/gwg-gwbg.json",
 };
 

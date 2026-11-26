@@ -14,6 +14,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@upstash/redis": "^1.38.3",
     "clsx": "^2.1.1",
+    "docx": "^9.5.1",
     "embla-carousel-react": "^8.6.0",
     "embla-carousel-wheel-gestures": "^8.1.0",
     "lucide-react": "^1.34.0",

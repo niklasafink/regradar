@@ -36,7 +36,7 @@ export interface FrameworkDetailProps {
   parent?: { id: string; n: Txt };
   kids: LinkedFramework[];
   siblings: { id: string; n: Txt; latest: string }[];
-  aboutLong?: [Txt, Txt];
+  aboutLong?: Txt[];
   /** Fassungsvergleich alt gegen neu, falls für dieses Rahmenwerk gepflegt. */
   cmp?: Comparison;
 }

@@ -67,12 +67,7 @@ export interface CmpRow {
 export interface Comparison {
   from: { n: Txt; ref: string; note: Txt };
   to: { n: Txt; ref: string; note: Txt; url: string };
-  /** Einleitung: Einordnung des Vergleichs in zwei, drei Sätzen. */
-  intro: Txt;
-  /** Hinweise zur Belastbarkeit (Entwurfsstand, Quellenlage). */
-  caveat: Txt;
   stand: string;
-  groups: { id: string; n: Txt }[];
   /** Pfad der Paragrafen-Daten (JSON in /public, wird beim Öffnen geladen). */
   paras: string;
 }
