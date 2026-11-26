@@ -247,16 +247,20 @@
     "2026-11-26"
    ],
    "keys": [
-    "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru"
+    "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru",
+    "crisis-readiness-and-simplification-at-the-heart-of-srb-s-2027-work-programme"
    ],
-   "hook": "Eine Berichtigung der DORA-Verordnung stellt die sprachliche Präzision im deutschen Text sicher.",
-   "folge": "Die Delegierte Verordnung (EU) 2025/1190 zu kritischen IKT-Drittdienstleistern wurde redaktionell korrigiert. Finanzunternehmen müssen die korrekte deutsche Fassung für die Bestimmung und Verwaltung ihrer kritischen IKT-Drittdienstleister gemäß DORA beachten.",
-   "cover": "EU-Amtsblatt: DORA-Verordnung zu IKT-Drittdienstleistern korrigiert",
-   "zeilen": [],
-   "frage": "Welche Kriterien nutzen Sie intern, um die Kritikalität Ihrer IKT-Drittdienstleister zu bewerten?",
-   "top": "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru",
+   "hook": "Der SRB intensiviert seine Krisenbereitschaft und plant hybride Simulationsübungen mit Banken.",
+   "folge": "Der SRB wird 2027 seine Krisenbereitschaft durch erweiterte 'Dry Run'-Programme und hybride Simulationsübungen mit Behörden und Banken stärken. Institute sollten sich auf intensivere Trainingsprogramme und angepasste Verfahren im Rahmen des überarbeiteten CMDI-Rahmens einstellen.",
+   "cover": "SRB: Krisenbereitschaft und Vereinfachung 2027",
+   "zeilen": [
+    "EU-Amtsblatt: Berichtigung der DORA-VO zu Kriterien für kritische IKT-Drittdienstleister"
+   ],
+   "frage": "Wie bereiten Sie sich auf mögliche hybride Simulationsübungen mit Abwicklungsbehörden vor?",
+   "top": "crisis-readiness-and-simplification-at-the-heart-of-srb-s-2027-work-programme",
    "kern": {
-    "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru": "Eine Berichtigung der DORA-Delegierten Verordnung (EU) 2025/1190 korrigiert spezifische Formulierungen im deutschen Text zu Kriterien für kritische IKT-Drittdienstleister."
+    "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru": "Eine Berichtigung korrigiert die deutsche Sprachfassung der DORA-Delegierten Verordnung zu Kriterien für kritische IKT-Drittdienstleister, ohne inhaltliche Änderungen.",
+    "crisis-readiness-and-simplification-at-the-heart-of-srb-s-2027-work-programme": "Der SRB veröffentlicht sein Arbeitsprogramm für 2027 und plant, die Krisenbereitschaft durch 'Dry Run'-Programme und hybride Simulationen zu stärken."
    },
    "doppelt": [],
    "fmt": 5,
