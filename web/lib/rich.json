@@ -255,26 +255,26 @@
   }
  },
  "aifmd2-2026-11-25-fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": {
-  "h1": "BaFin-Rundschreiben 17/2026 zum KAGB nach dem FRiG (Liquiditätsmanagement-Tools)",
-  "seo_title": "BaFin Rundschreiben 17/2026: KAGB-Änderungen durch FRiG",
-  "meta_description": "BaFin Rundschreiben 17/2026 vom 25.11.2026: Auslegung der KAGB-Änderungen durch das FRiG zu LMTs, Erlaubnisverfahren und Kreditfonds. Gilt ab Veröffentlichung.",
-  "lead": "Die BaFin legt im Rundschreiben 17/2026 die durch das FRiG geänderten KAGB-Regeln aus. Es richtet sich an erlaubnispflichtige KVGen und gilt seit der Veröffentlichung am 25.11.2026.",
+  "h1": "BaFin-Rundschreiben 17/2026 zum KAGB nach dem FRiG (WA)",
+  "seo_title": "Rundschreiben 17/2026 FRiG: KAGB-Auslegung der BaFin",
+  "meta_description": "BaFin Rundschreiben 17/2026 (WA) vom 25.11.2026: Auslegung des KAGB nach dem FRiG zu LMTs, Erlaubnisverfahren, Kreditvergabe und Bestandsschutz für KVGen.",
+  "lead": "Die BaFin hat am 25.11.2026 das Rundschreiben 17/2026 (WA) veröffentlicht. Es legt die durch das FRiG geänderten KAGB-Regeln für Kapitalverwaltungsgesellschaften aus und gilt ab Veröffentlichung.",
   "aka": [
-   "Rundschreiben 17/2026 (WA)",
-   "FRiG KAGB Rundschreiben",
-   "Fondsrisikobegrenzungsgesetz BaFin",
-   "Liquiditätsmanagementinstrumente KVG",
-   "LMT Auslegung BaFin"
+   "Rundschreiben 17/2026 WA",
+   "FRiG Rundschreiben BaFin",
+   "Fondsrisikobegrenzungsgesetz Auslegung",
+   "Liquiditätsmanagementinstrumente KAGB",
+   "LMT Rundschreiben KVG"
   ],
-  "summary": "Die BaFin hat am 25.11.2026 das Rundschreiben 17/2026 veröffentlicht. Es legt die durch das Fondsrisikobegrenzungsgesetz geänderten KAGB-Regeln für erlaubnispflichtige KVGen aus. Kern sind mindestens zwei Liquiditätsmanagementinstrumente je offenem Investmentvermögen. Hinzu kommen Hinweise zu Erlaubnisverfahren und Kreditvergabe. Das Rundschreiben gilt mit Veröffentlichung.",
+  "summary": "Die BaFin hat am 25.11.2026 das Rundschreiben 17/2026 (WA) mit Hinweisen zu den Änderungen im KAGB durch das Fondsrisikobegrenzungsgesetz (FRiG) veröffentlicht. Es richtet sich an erlaubnispflichtige Kapitalverwaltungsgesellschaften und beantwortet Fragen von Marktteilnehmern. Themenblöcke: Pflicht, für jedes offene Investmentvermögen mindestens zwei Liquiditätsmanagementinstrumente (LMT) auszuwählen, samt Auslegung zu Rücknahmebeschränkung, verlängerter Rückgabefrist, Rückgabegebühr, Swing und Dual Pricing sowie Sachauskehr; Informationspflichten gegenüber Anlegern; zusätzliche Angaben zu Geschäftsleitern, MiFID-Dienstleistungen und Nebendienstleistungen im Erlaubnisantrag; Auslagerung der Kreditvergabe bei Kreditfonds; Bestandsschutz in mehreren Konstellationen. Das FRiG hatte das KAGB im April 2026 geändert. Das Rundschreiben gilt mit seiner Veröffentlichung. Es beschränkt sich auf aufsichtsrechtliche Aspekte, zivilrechtliche Folgen bleiben unberührt.",
   "overview": [
-   "Das FRiG hat das KAGB im April 2026 angepasst. Das Rundschreiben 17/2026 beantwortet Fragen von Marktteilnehmern zur Auslegung. Es beschränkt sich auf aufsichtsrechtliche Aspekte, zivilrechtliche Folgen bleiben unberührt.",
-   "Schwerpunkt sind die LMTs. KVGen müssen für jedes offene Investmentvermögen mindestens zwei geeignete LMTs auswählen (§ 30a KAGB). Die Entscheidung über Auswahl und Aktivierung liegt allein bei der KVG. Ein Wahlrecht des Anlegers ist aufsichtsrechtlich nicht zulässig. Die KVG muss Anleger grundsätzlich über Aktivierung und Deaktivierung informieren. Weitere Abschnitte betreffen das Erlaubnisverfahren und neue Standards für die Kreditvergabe von AIF. Zum Bestandsschutz enthält das Rundschreiben ebenfalls Hinweise. Der verfügbare Quelltext bricht bei den LMTs im Einzelnen ab."
+   "Das Rundschreiben 17/2026 (WA) ist die Auslegungshilfe der BaFin zu den neuen KAGB-Regeln aus dem FRiG. Es beantwortet Fragen aus dem Markt und legt fest, wie die BaFin die neuen Vorgaben anwendet. Kernthema ist die Pflicht nach § 30a KAGB, für jedes offene Investmentvermögen mindestens zwei geeignete LMT zu wählen.",
+   "Daneben behandelt das Rundschreiben das Erlaubnisverfahren (Geschäftsleiter, MiFID-Dienstleistungen, Nebendienstleistungen) und die Kreditvergabe durch AIF. Es nennt mehrere Bestandsschutzregeln. Am 19.11.2026 hat die BaFin ein weiteres Rundschreiben zur daraus folgenden Änderung der MaRisk für KVGen veröffentlicht."
   ],
   "facts": [
    {
     "label": "Kennung",
-    "value": "BaFin-Rundschreiben 17/2026 (WA)"
+    "value": "Rundschreiben 17/2026 (WA)"
    },
    {
     "label": "Veröffentlicht",
@@ -282,222 +282,303 @@
    },
    {
     "label": "Geltungsbeginn",
-    "value": "Mit Veröffentlichung, 25.11.2026"
+    "value": "Mit Veröffentlichung"
    },
    {
     "label": "Adressaten",
     "value": "Erlaubnispflichtige KVGen nach KAGB"
    },
    {
-    "label": "Kernpflicht",
-    "value": "Mindestens zwei geeignete LMTs je offenem Investmentvermögen (§ 30a KAGB)"
+    "label": "Anlass",
+    "value": "Fondsrisikobegrenzungsgesetz (FRiG), KAGB-Änderung im April 2026"
    },
    {
-    "label": "Verwandt",
-    "value": "MaRisk-Änderung für KVGen, BaFin-Rundschreiben vom 19.11.2026"
+    "label": "Stichtage Bestandsschutz",
+    "value": "16.04.2026 (Inkrafttreten FRiG), 15.04.2026 (alte KAGB-Fassung)"
    }
   ],
   "audience": [
    {
     "name": "KVGen",
-    "note": "Erlaubnispflichtige KVGen nach KAGB",
-    "detail": "Das Rundschreiben richtet sich direkt an sie. Es betrifft LMTs, Erlaubnisanträge, Dienstleistungen und Kreditvergabe.",
+    "note": "Adressat des Rundschreibens",
+    "detail": "Erlaubnispflichtige Kapitalverwaltungsgesellschaften nach KAGB sind unmittelbar adressiert, bei LMT, Erlaubnisverfahren und Kreditvergabe.",
     "status": "betroffen"
    },
    {
-    "name": "AIF-Verwalter",
-    "note": "Kreditvergabe durch AIF",
-    "detail": "Für AIF gelten neue Standards bei der Kreditvergabe. Sie harmonisieren Kreditfonds erstmals EU-weit.",
-    "status": "betroffen"
-   },
-   {
-    "name": "Banken",
-    "note": "Nur mittelbar, etwa als Vertriebspartner",
-    "detail": "Das Rundschreiben nennt Banken nicht. Eine direkte Pflicht ergibt sich aus der Quelle nicht.",
+    "name": "ETF-Anbieter",
+    "note": "LMT gelten auch gegenüber Authorised Participants",
+    "detail": "Bei ETFs wirkt ein aktiviertes LMT auch im Verhältnis zwischen KVG und Authorised Participant.",
     "status": "teilweise"
    }
   ],
   "changes": [
    {
-    "ref": "§ 30a KAGB",
-    "title": "Mindestens zwei LMTs je Fonds",
-    "text": "KVGen wählen für jedes offene Investmentvermögen mindestens zwei geeignete LMTs aus. Die Auswahl liegt im Ermessen der KVG, Anleger haben kein Wahlrecht."
+    "ref": "Kap. 2.1",
+    "title": "Mindestens zwei LMT, Entscheidung bei der KVG",
+    "text": "Die KVG wählt je offenem Investmentvermögen mindestens zwei geeignete LMT (§ 30a KAGB). Ein Wahlrecht des Anlegers, welches LMT greift, ist aufsichtsrechtlich unzulässig. Weitere Liquiditätsmaßnahmen sind erlaubt. Die KVG muss prüfen, ob Anlagebedingungen solche Wahlrechte enthalten."
    },
    {
-    "ref": "§ 26 Abs. 2 KAGB",
-    "title": "Information der Anleger",
-    "text": "Die KVG informiert Anleger grundsätzlich über Aktivierung und Deaktivierung von LMTs. Bei Dauermaßnahmen entfällt dies. Publikumsfonds: Hinweis auf der Internetseite empfohlen."
+    "ref": "Kap. 2.1.3 bis 2.1.7",
+    "title": "Rückgaben, Information, ETFs, Vertragsbedingungen",
+    "text": "Die KVG legt fest, ob ein LMT bereits erklärte Rückgaben erfasst, und nennt dies im Verkaufsprospekt bzw. in den Angaben nach § 307 KAGB. Anleger sind über Aktivierung und Deaktivierung zu informieren, außer bei Dauermaßnahmen. Bei ETFs gelten LMT auch gegenüber APs."
    },
    {
-    "ref": "",
+    "ref": "Kap. 2.2.1, 2.2.2",
+    "title": "Rücknahmebeschränkung und Rückgabefrist",
+    "text": "Der Schwellenwert gehört bei Publikumsfonds in die Anlagebedingungen. Nur am Aktivierungstag gilt der Schwellenwert als Mindestausführung, danach bestimmt die verfügbare Liquidität die Quote. Die maximale Dauer der verlängerten Rückgabefrist ist im Verkaufsprospekt anzugeben und darf nicht überschritten werden. Forward Pricing ist kein LMT."
+   },
+   {
+    "ref": "Kap. 2.2.3, 2.2.4",
+    "title": "Rückgabegebühr, Swing und Dual Pricing",
+    "text": "Die Rückgabegebühr wird erst beim Rücknahmepreis abgezogen (NAV je Anteil abzüglich Gebühr), nicht im NAV. Ein Schwellenwert ist nicht zwingend. Bei Dual Pricing wird nur der modifizierte NAV veröffentlicht. Sonstige Vergütungen basieren stets auf dem regulären NAV."
+   },
+   {
+    "ref": "Kap. 2.2.5",
+    "title": "Sachauskehr",
+    "text": "Eine Sachauskehr als LMT ist nur für professionelle Anleger zulässig (§ 98 Abs. 4 KAGB). Die bisherige BaFin-Praxis für Einzelfälle bei Privatanlegern bleibt, zählt aber nicht als LMT. Dann braucht die KVG zwei weitere LMT."
+   },
+   {
+    "ref": "Kap. 3",
     "title": "Erlaubnisverfahren",
-    "text": "Erlaubnisanträge verlangen künftig zusätzliche Angaben zu den Geschäftsleitern. Die erlaubten Dienstleistungen und Nebendienstleistungen ändern sich."
+    "text": "Zwei Geschäftsleiter müssen Vollzeit arbeiten, bei mehr als zwei zusammen mindestens zwei Vollzeitäquivalente. Mindestens zwei Geschäftsleiter brauchen EU-Wohnsitz, Bestandsschutz gilt bis zum Wechsel. MiFID-Dienstleistungen sind einzeln im Erlaubnisbescheid aufzuführen. Neue Antragsangaben gelten nicht für bestehende KVGen."
    },
    {
-    "ref": "",
-    "title": "Kreditvergabe durch AIF",
-    "text": "Für AIF gelten neue Standards bei der Kreditvergabe. Sie dienen der erstmaligen EU-weiten Harmonisierung von Kreditfonds."
+    "ref": "Kap. 4",
+    "title": "Kreditvergabe",
+    "text": "Die Kreditvergabe kann separat von der Portfolioverwaltung ausgelagert werden. Das Auslagerungsunternehmen braucht dafür keine Erlaubnis zur Finanzportfolioverwaltung. Fonds, die nach altem Recht (bis 15.04.2026) Darlehen vergeben durften, dürfen weiter verwaltet werden. § 367 KAGB ist zu beachten."
    }
   ],
   "todos": [
-   "Je offenem Investmentvermögen prüfen, ob mindestens zwei geeignete LMTs implementiert sind.",
-   "Anlagebedingungen, Verkaufsprospekte und Angaben nach § 307 KAGB auf LMT-Regelungen und Schwellenwerte abgleichen.",
-   "Verfahren zur Information der Anleger über Aktivierung und Deaktivierung von LMTs festlegen.",
-   "Bei ETFs die Wirkung von LMTs auf Authorised Participants klären.",
-   "Erlaubnisanträge und Kreditfonds-Vorgaben auf die neuen Anforderungen prüfen."
+   "Anlagebedingungen, Verkaufsprospekte und Angaben nach § 307 KAGB auf die Vorgaben zu LMT, Schwellenwerten und maximaler Rückgabefrist abgleichen.",
+   "Je offenem Investmentvermögen dokumentieren, welche mindestens zwei LMT gewählt sind und ob Anlegerwahlrechte bestehen.",
+   "Verfahren für Information der Anleger über Aktivierung und Deaktivierung festlegen.",
+   "Geschäftsleiterstruktur, Erlaubnisumfang und Kreditfonds auf Bestandsschutz und neue Anforderungen prüfen."
   ],
   "timeline": [
    {
-    "date": "19.11.2026",
-    "label": "BaFin-RS zur MaRisk für KVGen",
+    "date": "16.04.2026",
+    "label": "FRiG-Regeln in Kraft",
     "kind": "schritt"
    },
    {
+    "date": "21.07.2026",
+    "label": "ESMA-Compliance-Tabelle LMT",
+    "kind": "schritt",
+    "slug": "aifmd2-2026-07-21-compliance-table-on-the-guidelines-on-liquidity-management-tools-lmts-of-ucits-a"
+   },
+   {
+    "date": "19.11.2026",
+    "label": "KAMaRisk Rundschreiben 16/2026",
+    "kind": "schritt",
+    "slug": "aifmd2-2026-11-19-rundschreiben-16-2026-wa"
+   },
+   {
     "date": "25.11.2026",
-    "label": "RS 17/2026 gilt",
+    "label": "Rundschreiben 17/2026 (WA)",
     "kind": "kern"
+   }
+  ],
+  "outline": [
+   {
+    "heading": "1 Einführung",
+    "items": [
+     "Das Rundschreiben legt die durch das FRiG neu in das KAGB eingeführten Regeln aus und beantwortet Marktfragen.",
+     "Es richtet sich an erlaubnispflichtige KVGen und betrifft nur aufsichtsrechtliche Aspekte.",
+     "Es gilt mit seiner Veröffentlichung am 25.11.2026."
+    ]
+   },
+   {
+    "heading": "2.1 LMT: Allgemeines",
+    "items": [
+     "Die KVG wählt mindestens zwei geeignete LMT je offenem Investmentvermögen. Ein Anlegerwahlrecht über das konkrete LMT ist unzulässig.",
+     "Zusätzliche Liquiditätsmaßnahmen sind zulässig, auch außerhalb der LMT-Definition.",
+     "Die KVG legt fest, ob ein LMT bereits erklärte Rückgaben erfasst, und legt das offen.",
+     "Anleger sind über Aktivierung und Deaktivierung zu informieren, nicht bei Dauermaßnahmen. Publikumsfonds informieren über die Internetseite.",
+     "Bei ETFs gilt ein LMT auch gegenüber Authorised Participants.",
+     "Die Meldepflicht nach § 35 Abs. 2 Nr. 2 KAGB erfüllt die KVG durch Einreichung der Anlagebedingungen und des Verkaufsprospekts bzw. der Angaben nach § 307 KAGB.",
+     "Neue LMT-Klauseln gelten bei Publikumsfonds ohne Anlegerzustimmung, bei Spezialfonds sind sie aufsichtlich bindend."
+    ]
+   },
+   {
+    "heading": "2.2.1 Rücknahmebeschränkung",
+    "items": [
+     "Die Beschränkung kann ab einem zuvor bestimmten Schwellenwert für einen vorab festgelegten Zeitraum aktiviert werden.",
+     "Verlängerung oder erneute Aktivierung ist möglich, solange sie vorübergehend bleibt und nicht einer Aussetzung gleichkommt.",
+     "Nur am Aktivierungstag müssen Rücknahmen mindestens bis zur Höhe des Schwellenwerts bedient werden, danach bestimmt die Liquidität die Quote.",
+     "Der Schwellenwert ist bei Publikumsfonds in den Anlagebedingungen anzugeben, bei Spezialfonds nach § 307 Abs. 1 Nr. 12 KAGB."
+    ]
+   },
+   {
+    "heading": "2.2.2 Verlängerung der Rückgabefrist",
+    "items": [
+     "Forward Pricing ist eine Preisfestsetzungsmethode und kein LMT.",
+     "Die KVG informiert Anleger über die konkrete Frist und kann sie bei besserer Liquidität vorzeitig beenden.",
+     "Die maximale Dauer gehört in den Verkaufsprospekt bzw. die Angaben nach § 307 KAGB, nicht zwingend in die Anlagebedingungen.",
+     "Mehrfache Verlängerung ist möglich, die maximale Gesamtdauer darf nicht überschritten werden."
+    ]
+   },
+   {
+    "heading": "2.2.3 bis 2.2.5 Rückgabegebühr, Swing und Dual Pricing, Sachauskehr",
+    "items": [
+     "Die Rückgabegebühr belastet den ausscheidenden Anleger und mindert den Rücknahmepreis, nicht den NAV.",
+     "Aktivierungsschwellen für Anti-Dilution Tools sind empfohlen, nicht zwingend. Dauermaßnahmen sind möglich.",
+     "Bei Dual Pricing werden beide NAV berechnet, veröffentlicht wird nur der modifizierte NAV. Sonstige Vergütungen basieren auf dem regulären NAV.",
+     "Sachauskehr als LMT nur für professionelle Anleger. Bisherige BaFin-Praxis für Einzelfälle bleibt, ist aber kein LMT."
+    ]
+   },
+   {
+    "heading": "3 Änderungen beim Erlaubnisverfahren",
+    "items": [
+     "Zwei Geschäftsleiter in Vollzeit, bei mehr als zwei mindestens zwei Vollzeitäquivalente. Das ist nun ausdrücklicher Versagungsgrund.",
+     "Mindestens zwei Geschäftsleiter mit EU-Wohnsitz. Bestandsschutz für Altfälle zum 16.04.2026, bei Wechsel gilt die neue Regel. Als ultima ratio droht Erlaubnisaufhebung.",
+     "MiFID-Dienstleistungen sind einzeln beantragbar und im Erlaubnisbescheid aufzuführen. Altbescheide mit Finanzportfolioverwaltung genießen Bestandsschutz.",
+     "Sonstige Nebendienstleistungen, Benchmark-Verwaltung und Kreditdienstleistungen brauchen keine ausdrückliche Erlaubnis. Benchmark-Administration erfordert Registrierung.",
+     "Zusätzliche Antragsangaben nach § 21 und § 22 KAGB gelten nicht für bestehende KVGen."
+    ]
+   },
+   {
+    "heading": "4 Kreditvergabe",
+    "items": [
+     "Die Kreditvergabe kann separat von der Portfolioverwaltung ausgelagert werden, ohne Erlaubnis zur Finanzportfolioverwaltung.",
+     "Eine KWG-Erlaubnispflicht des Auslagerungsunternehmens ist einzelfallbezogen zu beurteilen. Ist die KVG oder der AIF Kreditgeber, braucht es keine eigene.",
+     "Bestandsschutz für Fonds, die nach dem KAGB bis 15.04.2026 Darlehen gewähren durften. § 367 KAGB ist zu berücksichtigen."
+    ]
    }
   ],
   "faq": [
    {
     "q": "Darf der Anleger wählen, welches LMT aktiviert wird?",
-    "a": "Nein. Nach Ansicht der BaFin ist ein Wahlrecht des Anlegers aufsichtsrechtlich nicht zulässig. Auswahl und Aktivierung liegen ausschließlich bei der KVG."
+    "a": "Nein. Ein Wahlrecht des Anlegers ist nach Ansicht der BaFin aufsichtsrechtlich unzulässig. Auswahl und Aktivierung liegen ausschließlich bei der KVG."
    },
    {
-    "q": "Muss die KVG Anleger über LMTs informieren?",
-    "a": "Grundsätzlich ja, über Aktivierung und Deaktivierung. Bei einem LMT als Dauermaßnahme entfällt das. Die Art der Information ist frei, bei Publikumsfonds empfiehlt die BaFin die Internetseite."
+    "q": "Gilt das Rundschreiben ab sofort?",
+    "a": "Ja. Es gilt mit seiner Veröffentlichung am 25.11.2026. Für einzelne Konstellationen nennt es Bestandsschutz."
    },
    {
-    "q": "Gilt ein aktiviertes LMT auch für bereits erklärte Rückgaben?",
-    "a": "Das legt die KVG selbst fest. Sie muss die gewählte Verfahrensweise im Verkaufsprospekt bzw. bei Spezialfonds in den Angaben nach § 307 KAGB darlegen."
-   },
-   {
-    "q": "Gilt das Rundschreiben auch bei ETFs?",
-    "a": "Ja. Ein aktiviertes LMT gilt auch im Verhältnis zwischen KVG und Authorised Participant, da bei ETFs die APs Anteile zurückgeben."
+    "q": "Müssen Anleger über LMT informiert werden?",
+    "a": "Grundsätzlich ja, über Aktivierung und Deaktivierung. Bei Dauermaßnahmen entfällt das Informationsbedürfnis. Publikumsfonds informieren am besten über die Internetseite."
    }
   ],
   "impact": "hoch",
   "open_points": [
-   "Der Quelltext bricht bei den LMTs im Einzelnen ab. Die Hinweise zu weiteren LMTs fehlen.",
-   "Details zu Erlaubnisverfahren, Kreditvergabe und Bestandsschutz stehen nicht im verfügbaren Text.",
-   "Eine Übergangsfrist für die Umsetzung nennt die Quelle nicht."
+   "Das Rundschreiben nennt Details der Delegierten Verordnungen (EU) 2026/465 und 2026/466 nur in Fußnoten, Inhalte stehen nicht in der Quelle.",
+   "Die Übergangsregeln nach § 367 KAGB für die Kreditvergabe sind nicht im Detail dargestellt."
   ],
   "impact_analysis": {
    "controls": [
     {
-     "name": "Bestandsprüfung der zwei LMTs je offenem Investmentvermögen",
-     "change": "Jedes offene Investmentvermögen braucht mindestens zwei geeignete LMTs. Die BaFin legt dies in Rundschreiben 17/2026 aus und erwartet die Umsetzung seit dem 25.11.2026.",
+     "name": "Abgleich Anlagebedingungen und Verkaufsprospekt mit LMT-Vorgaben",
+     "change": "Die BaFin verlangt Angaben zu Schwellenwert, Voraussetzungen der Rücknahmebeschränkung, maximaler Dauer der Rückgabefrist und zum Umgang mit bereits erklärten Rückgaben in Anlagebedingungen, Verkaufsprospekt bzw. den Angaben nach § 307 KAGB.",
      "steps": [
-      "Das Fondsmanagement erstellt eine Liste aller verwalteten offenen Investmentvermögen mit den jeweils implementierten LMTs.",
-      "Compliance bewertet je Fonds, ob mindestens zwei geeignete LMTs vorliegen, und dokumentiert Lücken.",
-      "Für Fonds mit Lücken legt das Risikomanagement ein zweites LMT fest und beschließt die Umsetzung in der Geschäftsleitung.",
-      "Das Ergebnis liegt als Fondsmatrix mit Maßnahmen und Verantwortlichen vor."
+      "Die Fondsadministration gleicht je offenem Investmentvermögen Anlagebedingungen und Verkaufsprospekt mit den Angabepflichten aus Kapitel 2.2 ab und hält Lücken in einer Liste fest.",
+      "Das Produktmanagement ergänzt fehlende Schwellenwerte und die maximale Dauer der verlängerten Rückgabefrist und legt die Änderungen zur Genehmigung vor.",
+      "Die KVG legt fest, ob aktivierte LMT bereits erklärte Rückgaben erfassen, und dokumentiert die Entscheidung im Verkaufsprospekt bzw. in den Angaben nach § 307 KAGB.",
+      "Die Compliance dokumentiert das Ergebnis je Fonds als Nachweis."
      ]
     },
     {
-     "name": "Ausschluss von Anlegerwahlrechten zwischen LMTs",
-     "change": "Ein Wahlrecht des Anlegers, welches LMT angewendet wird, ist aufsichtsrechtlich unzulässig. Die Entscheidung liegt allein bei der KVG.",
+     "name": "Ausschluss eines Anlegerwahlrechts beim LMT",
+     "change": "Ein Wahlrecht des Anlegers zwischen kombinierten LMT, etwa verlängerte Rückgabefrist oder Rückgabegebühr, ist nach Ansicht der BaFin unzulässig, die Entscheidung liegt allein bei der KVG.",
      "steps": [
-      "Compliance gleicht Produktkonzepte und Vertragsbedingungen auf Modelle ab, bei denen Anleger zwischen LMTs wählen, etwa Rückgabegebühr statt verlängerter Rückgabefrist.",
-      "Betroffene Konzepte werden vom Produktmanagement angepasst, sodass die KVG über Aktivierung entscheidet.",
-      "Das Ergebnis ist eine dokumentierte Freigabe je Fonds ohne Anlegerwahlrecht."
+      "Das Produktmanagement prüft alle Fondsdokumente auf Klauseln, die dem Anleger die Wahl zwischen LMT einräumen, und listet Treffer.",
+      "Die KVG ersetzt solche Klauseln durch eine Entscheidungsbefugnis der KVG.",
+      "Das Risikomanagement hält fest, wer die Aktivierung entscheidet, und legt dies in der Governance schriftlich ab."
      ]
     },
     {
-     "name": "Information der Anleger bei Aktivierung und Deaktivierung von LMTs",
-     "change": "Die KVG muss Anleger grundsätzlich über Aktivierung und Deaktivierung informieren, außer bei Dauermaßnahmen. Bei Publikumsfonds empfiehlt die BaFin die Internetseite.",
+     "name": "Preisberechnung bei Rückgabegebühr und Dual Pricing",
+     "change": "Die Rückgabegebühr wird vom NAV je Anteil erst beim Rücknahmepreis abgezogen, bei Dual Pricing wird nur der modifizierte NAV veröffentlicht, sonstige Vergütungen basieren auf dem regulären NAV.",
      "steps": [
-      "Compliance legt je Fondstyp den Informationsweg fest, bei Publikumsfonds die Internetseite der KVG.",
-      "Die Kommunikationsabteilung bereitet Vorlagen für Mitteilungen zu Aktivierung und Deaktivierung vor.",
-      "Bei Spezialfonds dokumentiert das Fondsmanagement, dass Anleger durch enge Kommunikation Kenntnis erlangt haben.",
-      "Eine Ablaufbeschreibung mit Verantwortlichen und Fristen liegt vor."
+      "Die Fondsbuchhaltung stellt sicher, dass die Rückgabegebühr nicht als Verbindlichkeit in den NAV einfließt.",
+      "Das Fund Accounting passt die Preisberechnung so an, dass Verwaltungsvergütung und Performance Fee auf dem regulären NAV beruhen.",
+      "Die Compliance prüft anhand von Testberechnungen den Rücknahmepreis als NAV abzüglich Rückgabegebühr und dokumentiert das Ergebnis."
      ]
     }
    ],
    "processes": [
     {
-     "name": "Aktivierung eines LMT bei laufender Rückgabefrist",
-     "change": "Die KVG legt selbst fest, ob ein aktiviertes LMT bereits erklärte, aber noch nicht ausgeführte Rückgaben erfasst. Die Verfahrensweise muss offengelegt werden.",
+     "name": "Aktivierung und Deaktivierung von LMT mit Anlegerinformation",
+     "change": "Die KVG muss Anleger grundsätzlich über Aktivierung und Deaktivierung informieren, Publikumsfonds bevorzugt über die Internetseite, bei ETFs wirkt das LMT auch gegenüber Authorised Participants.",
      "steps": [
-      "Das Fondsmanagement entscheidet je Fonds, ob bereits erklärte Rückgaben vom LMT erfasst werden.",
-      "Die Rechtsabteilung nimmt die Verfahrensweise in den Verkaufsprospekt bzw. die Angaben nach § 307 KAGB auf.",
-      "Der Prozess wird schriftlich beschrieben und von der Geschäftsleitung freigegeben."
+      "Das Risikomanagement definiert einen Ablauf von Schwellenwerterreichung über Entscheidung bis Aktivierung mit klaren Zuständigkeiten.",
+      "Die Kommunikation richtet je Fonds einen Veröffentlichungsweg ein, bei Publikumsfonds über die Internetseite der KVG.",
+      "Das ETF-Team stellt sicher, dass APs über die Aktivierung informiert werden.",
+      "Die Compliance dokumentiert jede Aktivierung samt Information."
      ]
     },
     {
-     "name": "Rücknahmebeschränkung mit Schwellenwert und Auszahlungsquote",
-     "change": "Der Schwellenwert gehört bei Publikumsfonds in die Anlagebedingungen. Die Auszahlungsquote richtet sich an Folgetagen nach der verfügbaren Liquidität.",
+     "name": "Erlaubnisantrag und Geschäftsleiterwechsel",
+     "change": "Neue Versagungsgründe zu Vollzeit und EU-Wohnsitz sowie zusätzliche Antragsangaben prägen Anträge und Wechsel von Geschäftsleitern, Bestandsschutz gilt nur für bestehende Konstellationen.",
      "steps": [
-      "Das Risikomanagement legt je Fonds Schwellenwert und Beschränkungszeitraum fest.",
-      "Die Rechtsabteilung trägt den Schwellenwert in die Anlagebedingungen von Publikumsfonds bzw. in die Angaben nach § 307 KAGB ein.",
-      "Das Fondsmanagement dokumentiert die tägliche Quote nach verfügbarer Liquidität.",
-      "Eine Prozessbeschreibung zur Aktivierung, Verlängerung und Beendigung liegt vor."
+      "Das Legal prüft die aktuelle Geschäftsleiterstruktur auf Vollzeitäquivalente und EU-Wohnsitz und hält den Bestandsschutz fest.",
+      "Bei geplanten Wechseln stellt die Geschäftsführung sicher, dass der Nachfolger den EU-Wohnsitz erfüllt, bevor sie die Absicht anzeigt.",
+      "Das Legal erstellt Antragsunterlagen mit den zusätzlichen Angaben zu Geschäftsplan, Auslagerungen und Unterauslagerungen."
      ]
     },
     {
-     "name": "LMT-Aktivierung bei ETFs im Verhältnis zu Authorised Participants",
-     "change": "Ein aktiviertes LMT gilt auch gegenüber dem Authorised Participant, da bei ETFs die APs Anteile zurückgeben.",
+     "name": "Kreditvergabe und Auslagerung bei Kreditfonds",
+     "change": "Die Kreditvergabe darf separat ausgelagert werden, Altfonds mit Darlehensvergabe bis 15.04.2026 genießen Bestandsschutz, § 367 KAGB bleibt für neue Regeln maßgeblich.",
      "steps": [
-      "Das ETF-Fondsmanagement gleicht die Vereinbarungen mit APs auf die Wirkung von LMTs ab.",
-      "Die Rechtsabteilung ergänzt Vereinbarungen, wo die Anwendung auf APs nicht geregelt ist.",
-      "Das Ergebnis ist eine Liste angepasster AP-Vereinbarungen."
+      "Das Auslagerungsmanagement prüft, ob bestehende Kreditfonds unter den Bestandsschutz fallen, und dokumentiert die Zuordnung.",
+      "Das Legal bewertet für jedes Auslagerungsunternehmen die Erlaubnispflicht nach KWG einzelfallbezogen.",
+      "Die Compliance gleicht Neuauflagen von Kreditfonds mit den Übergangsregeln des § 367 KAGB ab."
      ]
     }
    ],
    "policies": [
     {
-     "name": "Anlagebedingungen, Verkaufsprospekt und Angaben nach § 307 KAGB",
-     "change": "LMT-Regelungen, Schwellenwerte und die Behandlung laufender Rückgaben müssen in diesen Dokumenten stehen. Neue LMT-Klauseln gelten bei Publikumsfonds auch ohne Zustimmung der Anleger.",
+     "name": "Liquiditätsmanagement-Richtlinie der KVG",
+     "change": "Die Richtlinie muss die Auswahl von mindestens zwei LMT je offenem Fonds, die alleinige Entscheidungsbefugnis der KVG und den Umgang mit zusätzlichen Maßnahmen abbilden.",
      "steps": [
-      "Die Rechtsabteilung gleicht alle Dokumente je Fonds auf LMT-Klauseln, Schwellenwerte und Verfahrensangaben ab.",
-      "Sie ergänzt fehlende Angaben und legt die Änderungen der Geschäftsleitung vor.",
-      "Geänderte Fassungen werden bei der BaFin eingereicht, womit die Meldepflicht nach § 35 Abs. 2 Nr. 2 KAGB erfüllt ist."
+      "Das Risikomanagement ergänzt die Richtlinie um die Pflicht, je Fonds mindestens zwei geeignete LMT festzulegen.",
+      "Es nimmt eine Regel auf, dass Sachauskehr nach BaFin-Praxis kein LMT ist und zwei weitere LMT erfordert.",
+      "Es legt Zuständigkeit und Dokumentation für Aktivierung und Deaktivierung fest."
      ]
     },
     {
-     "name": "Liquiditätsmanagement-Richtlinie der KVG",
-     "change": "Die Richtlinie muss die Auswahl von mindestens zwei LMTs, die Entscheidungsbefugnis der KVG und die Anlegerinformation abbilden.",
+     "name": "Geschäftsleiter- und Erlaubnisrichtlinie",
+     "change": "Interne Regeln müssen Vollzeit, EU-Wohnsitz und die ausdrückliche Aufführung von MiFID-Dienstleistungen im Erlaubnisbescheid berücksichtigen.",
      "steps": [
-      "Das Risikomanagement ergänzt Auswahlkriterien für geeignete LMTs und die alleinige Entscheidungsbefugnis der KVG.",
-      "Compliance nimmt die Regeln zur Anlegerinformation und zu Dauermaßnahmen auf.",
-      "Die Geschäftsleitung verabschiedet die neue Fassung."
+      "Das Legal ergänzt die Regelungen zur Bestellung von Geschäftsleitern um die Anforderungen zu Vollzeit und EU-Wohnsitz.",
+      "Es dokumentiert Umfang der MiFID-Dienstleistungen laut Erlaubnisbescheid und Bestandsschutz.",
+      "Es legt fest, wie Nebendienstleistungen für Dritte auf eigene Fonds beschränkt bleiben."
      ]
     }
    ],
    "departments": [
     {
-     "name": "Fondsmanagement",
-     "detail": "Wählt LMTs aus, entscheidet über Aktivierung und legt Rückgabequoten fest.",
-     "workload": "hoch"
-    },
-    {
      "name": "Risikomanagement",
-     "detail": "Legt Schwellenwerte fest und passt das Liquiditätsmanagementsystem an.",
+     "detail": "Wählt und dokumentiert LMT, legt Schwellenwerte und Aktivierungsprozess fest.",
      "workload": "hoch"
     },
     {
-     "name": "Recht",
-     "detail": "Überarbeitet Anlagebedingungen, Verkaufsprospekte, Angaben nach § 307 KAGB und AP-Vereinbarungen.",
+     "name": "Produktmanagement",
+     "detail": "Passt Anlagebedingungen und Verkaufsprospekte an LMT-Vorgaben an.",
      "workload": "hoch"
     },
     {
-     "name": "Compliance",
-     "detail": "Steuert die Bestandsprüfung und dokumentiert Umsetzung und Informationswege.",
+     "name": "Fund Accounting",
+     "detail": "Setzt Rückgabegebühr und modifizierten NAV in der Preisberechnung um.",
      "workload": "mittel"
     },
     {
-     "name": "Kommunikation",
-     "detail": "Bereitet Mitteilungen an Anleger über LMT-Aktivierung vor.",
-     "workload": "gering"
+     "name": "Legal",
+     "detail": "Prüft Erlaubnis, Geschäftsleiter, Auslagerungen und Bestandsschutz.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Compliance",
+     "detail": "Überwacht Umsetzung und dokumentiert Nachweise.",
+     "workload": "mittel"
     }
    ]
   },
   "meta": {
    "generated": "2026-11-26",
    "model": "sonnet",
-   "source": "HTML + 1 verlinkte(s) Dokument(e), 12172 Zeichen, gekürzt auf 12000",
+   "source": "HTML + 1 verlinkte(s) Dokument(e), 28779 Zeichen, gekürzt auf 28779",
    "dropped": 0,
-   "tokens": 21685
+   "tokens": 34325
   }
  },
  "amla-2026-10-01-leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben": {
