@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T20:06:04Z",
+  "generated_at": "2026-11-26T23:05:51Z",
   "updates": {
     "amla": [
       {
@@ -639,163 +639,6 @@
         "imp": "low"
       }
     ],
-    "emir": [
-      {
-        "d": "29.10.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "ec.europa.eu",
-        "ti": {
-          "de": "Konsultation zu Margenanforderungen für nicht zentral abgewickelte Derivate (Ares(2026)10142916)",
-          "en": "Consultation on margin requirements for non-centrally cleared derivatives (Ares(2026)10142916)"
-        },
-        "sl": "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
-        "s": {
-          "de": "Die Europäische Kommission konsultiert Änderungen an den technischen Regulierungsstandards (RTS) zu bestimmten Margenanforderungen für nicht zentral abgewickelte Transaktionen. Diese Änderungen betreffen die Anwendung von Sicherheitenanforderungen für Derivatekontrakte, die nicht über eine zentrale Gegenpartei (CCP) abgewickelt werden.\n\nDie Konsultation ist relevant für Finanzinstitute, die außerbörsliche Derivate (OTC-Derivate) handeln und dabei Margenanforderungen gemäß EMIR erfüllen müssen. Die Anpassungen könnten Auswirkungen auf die Berechnung und den Austausch von Initial- und Variation-Margin haben.\n\nInteressierte Parteien können bis zum 26. November 2026 Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
-          "en": "The European Commission is consulting on amendments to the Regulatory Technical Standards (RTS) on certain margin requirements applicable to non-centrally cleared transactions. These amendments concern the application of collateral requirements for derivative contracts not cleared by a central counterparty (CCP).\n\nThis consultation is relevant for financial institutions trading over-the-counter (OTC) derivatives that are subject to margin requirements under EMIR. The adjustments could impact the calculation and exchange of initial and variation margin.\n\nInterested parties can submit comments on the proposed amendments until 26 November 2026."
-        },
-        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19680",
-        "imp": "medium",
-        "deadline": "26.11.2026",
-        "refnum": "Ares(2026)10142916"
-      },
-      {
-        "d": "20.10.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finale RTS zu Anforderungen an Post-Trade Risk Reduction Services (EMIR)",
-          "en": "Final RTS on requirements for Post-Trade Risk Reduction services (EMIR)"
-        },
-        "sl": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
-        "s": {
-          "de": "Die ESMA hat ihren Abschlussbericht zu den technischen Regulierungsstandards (RTS) für Post-Trade Risk Reduction (PTRR) Services veröffentlicht. Diese RTS legen die Anforderungen fest, unter denen Derivategeschäfte, die im Rahmen von PTRR-Diensten abgeschlossen werden, von der Clearingpflicht gemäß EMIR ausgenommen werden können.\n\nDer Bericht befasst sich mit der Identifizierung von PTRR-Diensten, der Marktrisikoneutralität, der Risikoreduzierung und der nicht-preisbildenden Natur von PTRR-Übungen. Zudem werden Anforderungen an die Unabhängigkeit der PTRR-Dienstleister von den Gegenparteien der OTC-Derivatekontrakte sowie an die Teilnahme und Ausführung einer PTRR-Übung detailliert beschrieben. Für Finanzunternehmen, die OTC-Derivate handeln, sind diese Standards relevant, da sie die Bedingungen für die Nutzung von PTRR-Diensten zur Reduzierung von Risikopositionen und zur potenziellen Befreiung von der Clearingpflicht klären.\n\nDes Weiteren werden operative Bedingungen für PTRR-Dienstleister behandelt, einschließlich algorithmischer Anforderungen, organisatorischer Vorgaben, Kontrollen und Kriterien zur Vermeidung der Umgehung der Clearingpflicht. Auch die Aufzeichnung von Transaktionen, die im Rahmen einer PTRR-Übung ausgeführt werden, ist ein wichtiger Bestandteil der neuen Regelungen.",
-          "en": "ESMA has published its final report on the Regulatory Technical Standards (RTS) for Post-Trade Risk Reduction (PTRR) services. These RTS define the requirements under which derivative transactions concluded within the framework of PTRR services may be exempted from the clearing obligation under EMIR.\n\n The report addresses the identification of PTRR services, market risk neutrality, risk reduction, and the non-price-forming nature of PTRR exercises. It also details requirements for the independence of PTRR service providers from the counterparties to OTC derivative contracts, as well as for the participation and execution of a PTRR exercise. These standards are relevant for financial undertakings trading OTC derivatives, as they clarify the conditions for using PTRR services to reduce risk exposures and potentially qualify for an exemption from the clearing obligation.\n\nFurthermore, operational conditions for PTRR service providers are covered, including algorithmic requirements, organizational requirements, controls, and criteria to prevent circumvention of the clearing obligation. The record-keeping of transactions executed pursuant to a PTRR exercise is also an important component of the new regulations."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-regulatory-standards-requirements-post-trade-risk-reduction-services-purpose",
-        "imp": "high",
-        "refnum": "ESMA74-1049116226-981"
-      },
-      {
-        "d": "18.08.2026",
-        "t": {
-          "de": "Konsultation",
-          "en": "Consultation"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
-          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
-        },
-        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
-        "s": {
-          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
-          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
-          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
-        },
-        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
-        "s": {
-          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
-          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
-        },
-        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
-        "imp": "medium"
-      },
-      {
-        "d": "03.08.2026",
-        "t": {
-          "de": "Final Report",
-          "en": "Final report"
-        },
-        "src": "esma.europa.eu",
-        "ti": {
-          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
-          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
-        },
-        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
-        "s": {
-          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
-          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
-        },
-        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
-        "imp": "medium"
-      },
-      {
-        "d": "05.01.2017",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Intragruppenausnahmen nach EMIR (Art. 11 Abs. 6-10)",
-          "en": "Guidance on Intragroup Exemptions under EMIR (Art. 11(6)-(10))"
-        },
-        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-11-abs-6-10-emir",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen gemäß Artikel 11 Absätze 6 bis 10 der EMIR-Verordnung veröffentlicht. Es konkretisiert die Anforderungen und das Verfahren für Unternehmen, die von den Clearing- und Besicherungsplichten für Derivate innerhalb einer Gruppe befreit werden möchten.\n\nDas Merkblatt richtet sich an Finanz- und Nichtfinanzkontrahenten, die gruppeninterne Derivategeschäfte tätigen und die Voraussetzungen für eine Ausnahme von den EMIR-Pflichten erfüllen. Es erläutert die notwendigen Schritte und einzureichenden Unterlagen für die Beantragung oder Anzeige dieser Ausnahmen bei der BaFin.\n\nDas Merkblatt wurde am 5. Januar 2017 veröffentlicht und zuletzt am 1. April 2017 geändert. Es ist über das MVP-Portal zugänglich.",
-          "en": "BaFin has published guidance on notifications and applications for intragroup exemptions under Article 11(6) to (10) of the EMIR Regulation. It specifies the requirements and procedures for companies seeking to be exempted from clearing and collateralisation obligations for intragroup derivatives.\n\nThis guidance is aimed at financial and non-financial counterparties that conduct intragroup derivative transactions and meet the conditions for an exemption from EMIR obligations. It explains the necessary steps and documents to be submitted for applying for or notifying these exemptions to BaFin.\n\nThe guidance was published on January 5, 2017, and last amended on April 1, 2017. It is accessible via the MVP portal."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_wa_Merkblatt_Art11_EMIR_Anzeigen_Antraege_Intragruppenausnahmen.html",
-        "imp": "medium"
-      },
-      {
-        "d": "22.12.2015",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen von der EMIR-Clearingpflicht",
-          "en": "Guidance Notice on Notifications and Applications for Intragroup Exemptions from EMIR Clearing Obligation"
-        },
-        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-4-emir-sowie-bei-drit",
-        "s": {
-          "de": "Die BaFin hat ein Merkblatt zur Ausgestaltung von Anzeigen und Anträgen für Intragruppenausnahmen von der Clearingpflicht nach Art. 4 EMIR sowie bei Drittstaatensachverhalten veröffentlicht. Es konkretisiert die Anforderungen für finanzielle und nichtfinanzielle Gegenparteien, die von der Clearingpflicht für OTC-Derivate befreit werden möchten.\n\nDas Merkblatt erläutert die zwei Hauptfälle für Intragruppenausnahmen: Geschäfte zwischen EU-ansässigen Gegenparteien (Art. 4 Abs. 2a EMIR) und Geschäfte, bei denen eine Gegenpartei in einem Drittstaat ansässig ist (Art. 4 Abs. 2b EMIR). Es beschreibt die jeweiligen Anzeige- und Antragsverfahren, einschließlich der Fristen und der Möglichkeit für die BaFin, die Ausnahme zu untersagen. Auch temporäre Ausnahmen durch RTS für Drittstaaten-Geschäfte werden behandelt.\n\nDie Regelungen sind relevant für alle finanziellen und nichtfinanziellen Gegenparteien, die OTC-Derivate handeln und die Clearingschwelle nach Art. 10 Abs. 1 EMIR überschreiten. Sie müssen die im Merkblatt beschriebenen Verfahren einhalten, um Intragruppengeschäfte von der Clearingpflicht ausnehmen zu können. Das Merkblatt berücksichtigt die Änderungen durch EMIR REFIT, die seit dem 17.06.2019 gelten, und die Q&A der ESMA zur EMIR-Implementierung.",
-          "en": "BaFin has published a guidance notice on the design of notifications and applications for intragroup exemptions from the clearing obligation under Art. 4 EMIR, including cases involving third-country entities. It specifies the requirements for financial and non-financial counterparties seeking exemption from the clearing obligation for OTC derivatives.\n\nThe guidance notice explains the two main scenarios for intragroup exemptions: transactions between EU-based counterparties (Art. 4 para. 2a EMIR) and transactions where one counterparty is located in a third country (Art. 4 para. 2b EMIR). It describes the respective notification and application procedures, including deadlines and BaFin's power to prohibit the exemption. Temporary exemptions for third-country transactions under RTS are also covered.\n\nThe regulations are relevant for all financial and non-financial counterparties trading OTC derivatives and exceeding the clearing threshold under Art. 10 para. 1 EMIR. They must follow the procedures outlined in the guidance notice to exempt intragroup transactions from the clearing obligation. The notice incorporates the changes introduced by EMIR REFIT, effective since 17 June 2019, and ESMA's Q&A on EMIR implementation."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_infoblatt_emir_intragruppenausnahmen_wa.html",
-        "imp": "medium"
-      },
-      {
-        "d": "18.02.2014",
-        "t": {
-          "de": "Auslegung",
-          "en": "Guidance"
-        },
-        "src": "bafin.de",
-        "ti": {
-          "de": "EMIR in der Versicherungsaufsicht: Anwendbarkeit und Meldepflichten",
-          "en": "EMIR in Insurance Supervision: Applicability and Reporting Obligations"
-        },
-        "sl": "european-market-infrastructure-regulation-emir-in-der-versicherungsaufsicht",
-        "s": {
-          "de": "Die BaFin erläutert die Anwendbarkeit der European Market Infrastructure Regulation (EMIR) auf Versicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung. Die EMIR zielt darauf ab, systemische Risiken im europäischen Derivatemarkt durch Transparenz und Sicherheit zu reduzieren, insbesondere durch die Abwicklung standardisierter OTC-Derivate über zentrale Gegenparteien und die Meldung an Transaktionsregister.\n\nVersicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung werden als „finanzielle Gegenparteien“ eingestuft und unterliegen der Clearingpflicht für standardisierte OTC-Derivate. Nichtfinanzielle Gegenparteien, zu denen die BaFin auch Sterbekassen zählt, sind von der Clearingpflicht betroffen, wenn sie Derivate in größerem Umfang für nicht-absichernde Zwecke einsetzen. Alle Derivategeschäfte müssen zur Erhöhung der Transparenz an ein Transaktionsregister gemeldet werden.\n\nDie BaFin präzisiert, dass die Delegation der Meldepflicht nach Art. 9 Abs. 1 EMIR an den Kontrahenten keine Auslagerung im Sinne des VAG darstellt, während eine Übertragung an einen geeigneten Dritten eine Einzelfallprüfung auf Funktionsausgliederung erfordert. Auch bei der Auslagerung von Dienstleistungen sind die Anforderungen des Risikomanagements gemäß VAG und MaRisk VA einzuhalten.",
-          "en": "BaFin clarifies the applicability of the European Market Infrastructure Regulation (EMIR) to insurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision. EMIR aims to mitigate systemic risks in the European derivatives market by increasing transparency and safety, particularly through the clearing of standardized OTC derivatives via central counterparties and reporting to trade repositories.\n\nInsurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision are classified as “financial counterparties” and are subject to the clearing obligation for standardized OTC derivatives. Non-financial counterparties, which BaFin also considers to include burial funds, are subject to the clearing obligation if they use derivatives extensively for non-hedging purposes. All derivative transactions must be reported to a trade repository to enhance transparency.\n\nBaFin specifies that delegating the reporting obligation under Art. 9(1) EMIR to a counterparty does not constitute outsourcing under the German Insurance Supervision Act (VAG), whereas transferring it to a suitable third party requires a case-by-case assessment for functional outsourcing. Even when outsourcing services, risk management requirements according to VAG and MaRisk VA must be observed."
-        },
-        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_hinweise_emir_va.html",
-        "imp": "medium"
-      }
-    ],
     "idd": [
       {
         "d": "08.10.2026",
@@ -944,13 +787,13 @@
         },
         "src": "eur-lex.europa.eu",
         "ti": {
-          "de": "Berichtigung der DORA-Delegierten Verordnung zu Kriterien für kritische IKT-Drittdienstleister (32025R1190R(02))",
-          "en": "Corrigendum to DORA Delegated Regulation on criteria for critical ICT third-party service providers (32025R1190R(02))"
+          "de": "Berichtigung der DORA-TLPT-RTS (Delegierte VO (EU) 2025/1190, 32025R1190R(02))",
+          "en": "Corrigendum to the DORA TLPT RTS (Delegated Regulation (EU) 2025/1190, 32025R1190R(02))"
         },
         "sl": "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru",
         "s": {
-          "de": "Diese Berichtigung korrigiert die Delegierte Verordnung (EU) 2025/1190, die technische Regulierungsstandards (RTS) zur Bestimmung kritischer IKT-Drittdienstleister gemäß der Verordnung (EU) 2022/2554 (DORA) festlegt. Die Änderungen betreffen spezifische Formulierungen im deutschen Text der Verordnung.\n\nDie Delegierte Verordnung ist relevant für Finanzunternehmen, die IKT-Dienstleistungen von Drittanbietern beziehen. Die Berichtigung stellt sicher, dass die deutsche Sprachfassung der Kriterien für die Bestimmung kritischer IKT-Drittdienstleister korrekt ist, was für die Einhaltung der DORA-Anforderungen von Bedeutung ist.\n\nEs handelt sich um eine redaktionelle Berichtigung, die keine inhaltlichen Änderungen an den ursprünglichen RTS vornimmt, sondern lediglich die sprachliche Präzision im deutschen Text verbessert.",
-          "en": "This corrigendum rectifies Delegated Regulation (EU) 2025/1190, which establishes regulatory technical standards (RTS) for determining critical ICT third-party service providers in accordance with Regulation (EU) 2022/2554 (DORA). The amendments concern specific wording in the German text of the regulation.\n\nThe Delegated Regulation is relevant for financial entities that procure ICT services from third-party providers. The corrigendum ensures that the German language version of the criteria for determining critical ICT third-party service providers is accurate, which is important for compliance with DORA requirements.\n\nThis is an editorial correction that does not introduce any substantive changes to the original RTS but merely improves linguistic precision in the German text."
+          "de": "Das Amtsblatt der Europäischen Union (Reihe L 2026/91002) hat am 26.11.2026 eine Berichtigung der deutschen Sprachfassung der Delegierten Verordnung (EU) 2025/1190 der Kommission vom 13. Februar 2025 veröffentlicht. Der berichtigte Rechtsakt ergänzt die Verordnung (EU) 2022/2554 (DORA) durch technische Regulierungsstandards zu bedrohungsorientierten Penetrationstests (TLPT). Er regelt die Kriterien für die Bestimmung der TLPT-pflichtigen Finanzunternehmen, die Anforderungen an interne Tester, Testumfang, Testmethodik und Testkonzept je Phase, Ergebnisse, Abschluss und Behebung sowie die aufsichtliche Zusammenarbeit und gegenseitige Anerkennung. Die Berichtigung korrigiert vier Stellen. In Erwägungsgrund 10 heißt es statt Zugang zur Geschäftsleitung nun Zugang zum Leitungsorgan. In Artikel 2 Absatz 2 Buchstabe f Ziffer ii Nummern 1 und 2 ersetzen Verweise auf Artikel 4 Absatz 1 Nummer 44 Buchstaben a und b der Richtlinie 2014/65/EU die bisherigen Beschreibungen der Wertpapierarten. In Artikel 7 Absatz 1 Buchstabe f Ziffer iv entfällt der Zusatz von Bedrohungsanalysen beim Anbieter. In Anhang VIII Buchstabe a Ziffer vi Nummer 2 wird der Verweis auf Artikel 5 Absatz 3 Unterabsatz 2 durch Artikel 7 Absatz 2 Unterabsatz 2 ersetzt. Ein Geltungsbeginn nennt die Quelle nicht.",
+          "en": "The Official Journal published on 26.11.2026 (L 2026/91002) a corrigendum to Commission Delegated Regulation (EU) 2025/1190 of 13.02.2025, the DORA RTS on threat-led penetration testing (TLPT). The German text is corrected in four places: recital 10 (access to the management body instead of senior management), Article 2(2)(f)(ii) points 1 and 2 (references to Article 4(1)(44)(a) and (b) of Directive 2014/65/EU instead of descriptive wording), Article 7(1)(f)(iv) (independence rule applies to any provider with blue-team tasks, not only threat intelligence providers) and Annex VIII(a)(vi) point 2 (cross-reference to Article 7(2) second subparagraph instead of Article 5(3))."
         },
         "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1190R(02)",
         "imp": "low",
@@ -6370,6 +6213,163 @@
         },
         "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-revised-guidelines-internal-governance-delivering-greater-proportionality-and",
         "imp": "high"
+      }
+    ],
+    "emir": [
+      {
+        "d": "29.10.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "ec.europa.eu",
+        "ti": {
+          "de": "Konsultation zu Margenanforderungen für nicht zentral abgewickelte Derivate (Ares(2026)10142916)",
+          "en": "Consultation on margin requirements for non-centrally cleared derivatives (Ares(2026)10142916)"
+        },
+        "sl": "amending-regulatory-technical-standards-on-certain-margin-requirements-applicabl",
+        "s": {
+          "de": "Die Europäische Kommission konsultiert Änderungen an den technischen Regulierungsstandards (RTS) zu bestimmten Margenanforderungen für nicht zentral abgewickelte Transaktionen. Diese Änderungen betreffen die Anwendung von Sicherheitenanforderungen für Derivatekontrakte, die nicht über eine zentrale Gegenpartei (CCP) abgewickelt werden.\n\nDie Konsultation ist relevant für Finanzinstitute, die außerbörsliche Derivate (OTC-Derivate) handeln und dabei Margenanforderungen gemäß EMIR erfüllen müssen. Die Anpassungen könnten Auswirkungen auf die Berechnung und den Austausch von Initial- und Variation-Margin haben.\n\nInteressierte Parteien können bis zum 26. November 2026 Stellungnahmen zu den vorgeschlagenen Änderungen einreichen.",
+          "en": "The European Commission is consulting on amendments to the Regulatory Technical Standards (RTS) on certain margin requirements applicable to non-centrally cleared transactions. These amendments concern the application of collateral requirements for derivative contracts not cleared by a central counterparty (CCP).\n\nThis consultation is relevant for financial institutions trading over-the-counter (OTC) derivatives that are subject to margin requirements under EMIR. The adjustments could impact the calculation and exchange of initial and variation margin.\n\nInterested parties can submit comments on the proposed amendments until 26 November 2026."
+        },
+        "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19680",
+        "imp": "medium",
+        "deadline": "26.11.2026",
+        "refnum": "Ares(2026)10142916"
+      },
+      {
+        "d": "20.10.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finale RTS zu Anforderungen an Post-Trade Risk Reduction Services (EMIR)",
+          "en": "Final RTS on requirements for Post-Trade Risk Reduction services (EMIR)"
+        },
+        "sl": "final-report-on-the-regulatory-standards-on-the-requirements-for-post-trade-risk",
+        "s": {
+          "de": "Die ESMA hat ihren Abschlussbericht zu den technischen Regulierungsstandards (RTS) für Post-Trade Risk Reduction (PTRR) Services veröffentlicht. Diese RTS legen die Anforderungen fest, unter denen Derivategeschäfte, die im Rahmen von PTRR-Diensten abgeschlossen werden, von der Clearingpflicht gemäß EMIR ausgenommen werden können.\n\nDer Bericht befasst sich mit der Identifizierung von PTRR-Diensten, der Marktrisikoneutralität, der Risikoreduzierung und der nicht-preisbildenden Natur von PTRR-Übungen. Zudem werden Anforderungen an die Unabhängigkeit der PTRR-Dienstleister von den Gegenparteien der OTC-Derivatekontrakte sowie an die Teilnahme und Ausführung einer PTRR-Übung detailliert beschrieben. Für Finanzunternehmen, die OTC-Derivate handeln, sind diese Standards relevant, da sie die Bedingungen für die Nutzung von PTRR-Diensten zur Reduzierung von Risikopositionen und zur potenziellen Befreiung von der Clearingpflicht klären.\n\nDes Weiteren werden operative Bedingungen für PTRR-Dienstleister behandelt, einschließlich algorithmischer Anforderungen, organisatorischer Vorgaben, Kontrollen und Kriterien zur Vermeidung der Umgehung der Clearingpflicht. Auch die Aufzeichnung von Transaktionen, die im Rahmen einer PTRR-Übung ausgeführt werden, ist ein wichtiger Bestandteil der neuen Regelungen.",
+          "en": "ESMA has published its final report on the Regulatory Technical Standards (RTS) for Post-Trade Risk Reduction (PTRR) services. These RTS define the requirements under which derivative transactions concluded within the framework of PTRR services may be exempted from the clearing obligation under EMIR.\n\n The report addresses the identification of PTRR services, market risk neutrality, risk reduction, and the non-price-forming nature of PTRR exercises. It also details requirements for the independence of PTRR service providers from the counterparties to OTC derivative contracts, as well as for the participation and execution of a PTRR exercise. These standards are relevant for financial undertakings trading OTC derivatives, as they clarify the conditions for using PTRR services to reduce risk exposures and potentially qualify for an exemption from the clearing obligation.\n\nFurthermore, operational conditions for PTRR service providers are covered, including algorithmic requirements, organizational requirements, controls, and criteria to prevent circumvention of the clearing obligation. The record-keeping of transactions executed pursuant to a PTRR exercise is also an important component of the new regulations."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-regulatory-standards-requirements-post-trade-risk-reduction-services-purpose",
+        "imp": "high",
+        "refnum": "ESMA74-1049116226-981"
+      },
+      {
+        "d": "18.08.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "ESMA konsultiert zum Berichtsrahmen für Clearing-Aktivitäten bei anerkannten Drittland-CCPs",
+          "en": "ESMA consults on reporting framework for clearing activity at recognised third-country CCPs"
+        },
+        "sl": "esma-consults-on-reporting-framework-for-clearing-activity-at-recognised-third-c",
+        "s": {
+          "de": "Die ESMA hat eine Konsultation zu einem jährlichen Meldewesenrahmen gemäß EMIR für Clearing-Aktivitäten bei anerkannten Drittland-CCPs gestartet. Ziel ist es, die aufsichtsrechtliche Transparenz der Engagements von EU-Firmen gegenüber solchen CCPs zu verbessern. Der Vorschlag umfasst Regulatory Technical Standards (RTS) und Implementing Technical Standards (ITS).\n\nDie Meldepflicht gilt für Clearing-Mitglieder und Kunden, die Transaktionen über anerkannte Drittland-CCPs clearen. Dies soll den Aufsichtsbehörden einen strukturierten Überblick über Umfang, Merkmale und Risikoprofil der Engagements von EU-Firmen bei diesen CCPs verschaffen und zum umfassenderen Überwachungsrahmen gemäß EMIR 3 beitragen.\n\nDie ESMA lädt Interessenträger ein, bis zum 12. Oktober 2026 Stellungnahmen zu dem Meldewesenrahmen, den Vorlagen und dem Format einzureichen.",
+          "en": "ESMA has launched a consultation on a proposed annual reporting framework under EMIR for clearing activity at recognised third-country CCPs. The aim is to improve supervisory visibility of EU firms' exposures to such CCPs. The proposal includes Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS).\n\nThe reporting obligation will apply to clearing members and clients that clear transactions through recognised third-country CCPs. This aims to provide supervisory authorities with a structured overview of the scale, characteristics, and risk profile of EU firms' exposures to these CCPs, contributing to the broader monitoring framework established under EMIR 3.\n\nESMA invites stakeholders to provide feedback on the reporting framework, templates, and format by 12 October 2026."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "EBA, EIOPA und ESMA schlagen Änderungen der bilateralen Margenanforderungen vor",
+          "en": "EBA, EIOPA and ESMA propose amendments to bilateral margin requirements"
+        },
+        "sl": "eba-eiopa-and-esma-propose-amendments-to-bilateral-margin-requirements",
+        "s": {
+          "de": "Die Europäischen Aufsichtsbehörden (EBA, EIOPA und ESMA) haben einen Abschlussbericht zu Entwürfen Regulierungs-technischer Standards (RTS) veröffentlicht. Diese schlagen eine Vereinfachung der bilateralen Margenanforderungen der Delegierten Verordnung (EU) 2016/2251 vor.\n\nDie Änderungen zielen darauf ab, den Rahmen für bilaterale Margen für Gegenparteien zu vereinfachen, die Initial Margin-Anforderungen unterliegen und unter dem Schwellenwert von 8 Milliarden Euro für den Austausch von Initial Margins gemäß EMIR liegen. Gegenparteien unterhalb dieses Schwellenwerts müssten dann keine Initial Margins mehr für neue oder bestehende außerbörsliche Derivatkontrakte austauschen. Dies soll den Ausstieg aus den Initial Margin-Anforderungen für diese Gegenparteien erleichtern und die Konsistenz mit anderen Jurisdiktionen verbessern.\n\nDer Abschlussbericht und die Entwürfe der RTS wurden der Europäischen Kommission zur Billigung vorgelegt. Nach der Überprüfung und Annahme durch die Kommission werden die RTS vom Europäischen Parlament und dem Rat geprüft, bevor sie im Amtsblatt der Europäischen Union veröffentlicht werden.",
+          "en": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have published a final report on draft Regulatory Technical Standards (RTS). These propose simplifying the bilateral margin requirements of Delegated Regulation (EU) 2016/2251.\n\nThe amendments aim to simplify the bilateral margin framework for counterparties subject to initial margin requirements and below the €8 billion threshold for exchanging initial margin under EMIR. Counterparties below this threshold would no longer be required to exchange initial margin for new or existing uncleared over-the-counter derivative contracts. This is intended to facilitate the phase-out of initial margin requirements for these counterparties and enhance consistency with other jurisdictions.\n\nThe final report and draft RTS have been submitted to the European Commission for endorsement. Following the Commission's review and adoption process, the RTS will be subject to scrutiny by the European Parliament and the Council before being published in the Official Journal of the European Union."
+        },
+        "url": "https://www.esma.europa.eu/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements",
+        "imp": "medium"
+      },
+      {
+        "d": "03.08.2026",
+        "t": {
+          "de": "Final Report",
+          "en": "Final report"
+        },
+        "src": "esma.europa.eu",
+        "ti": {
+          "de": "Finaler Bericht zur Änderung der RTS zu Initial Margin für nicht geclearte OTC-Derivate (ESA 2026 07)",
+          "en": "Final Report on amending RTS on Initial Margin for uncleared OTC derivatives (ESA 2026 07)"
+        },
+        "sl": "final-report-on-amending-rts-on-uncleared-otc-derivatives",
+        "s": {
+          "de": "Die ESMA hat einen Abschlussbericht zur Änderung der RTS zu nicht geclearten OTC-Derivaten veröffentlicht. Die vorgeschlagenen Änderungen betreffen die Anforderungen an die Initial Margin für Gegenparteien, die unter einen bestimmten Schwellenwert fallen. Ziel ist es, die bestehende Ausnahmeregelung für neue OTC-Derivatkontrakte auf bereits bestehende Verträge auszuweiten.\n\nBislang erlaubt Artikel 28(1) der Delegierten Verordnung (EU) 2016/2251 eine Befreiung von der Erhebung der Initial Margin für neue Verträge, wenn eine der Gegenparteien einen durchschnittlichen monatlichen Nominalbetrag (AANA) von nicht zentral geclearten OTC-Derivaten unter 8 Mrd. EUR aufweist. Die vorgeschlagenen RTS erweitern diese Ausnahmeregelung auf bestehende Verträge, um praktische Probleme zu lösen und eine Angleichung an die Regelungen in anderen Jurisdiktionen zu erreichen. Dies reduziert den Aufwand für Gegenparteien, die sonst für bestehende Verträge weiterhin Initial Margins berechnen und austauschen müssten.\n\nDer Abschlussbericht wird nun der Europäischen Kommission zur Billigung als delegierte Verordnung vorgelegt. Nach der Billigung und einer Nichtbeanstandung durch das Europäische Parlament und den Rat wird die Verordnung im Amtsblatt der Europäischen Union veröffentlicht und ist dann in allen Mitgliedstaaten direkt anwendbar.",
+          "en": "ESMA has published a final report on amending the RTS on uncleared OTC derivatives. The proposed changes concern the initial margin requirements for counterparties falling below a certain threshold. The aim is to extend the existing derogation for new OTC derivative contracts to cover existing contracts.\n\nCurrently, Article 28(1) of Delegated Regulation (EU) 2016/2251 allows for an exemption from initial margin collection for new contracts if one of the counterparties has an aggregate month-end average notional amount (AANA) of non-centrally cleared OTC derivatives below EUR 8 billion. The proposed RTS extend this derogation to existing contracts to address practical issues and align with regulations in other jurisdictions. This reduces the burden on counterparties who would otherwise have to continue calculating and exchanging initial margins for existing contracts.\n\nThe final report will now be submitted to the European Commission for endorsement as a delegated regulation. Following endorsement and no objection from the European Parliament and the Council, the regulation will be published in the Official Journal of the European Union and will then be directly applicable in all Member States."
+        },
+        "url": "https://www.esma.europa.eu/document/final-report-amending-rts-uncleared-otc-derivatives",
+        "imp": "medium"
+      },
+      {
+        "d": "05.01.2017",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Intragruppenausnahmen nach EMIR (Art. 11 Abs. 6-10)",
+          "en": "Guidance on Intragroup Exemptions under EMIR (Art. 11(6)-(10))"
+        },
+        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-11-abs-6-10-emir",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen gemäß Artikel 11 Absätze 6 bis 10 der EMIR-Verordnung veröffentlicht. Es konkretisiert die Anforderungen und das Verfahren für Unternehmen, die von den Clearing- und Besicherungsplichten für Derivate innerhalb einer Gruppe befreit werden möchten.\n\nDas Merkblatt richtet sich an Finanz- und Nichtfinanzkontrahenten, die gruppeninterne Derivategeschäfte tätigen und die Voraussetzungen für eine Ausnahme von den EMIR-Pflichten erfüllen. Es erläutert die notwendigen Schritte und einzureichenden Unterlagen für die Beantragung oder Anzeige dieser Ausnahmen bei der BaFin.\n\nDas Merkblatt wurde am 5. Januar 2017 veröffentlicht und zuletzt am 1. April 2017 geändert. Es ist über das MVP-Portal zugänglich.",
+          "en": "BaFin has published guidance on notifications and applications for intragroup exemptions under Article 11(6) to (10) of the EMIR Regulation. It specifies the requirements and procedures for companies seeking to be exempted from clearing and collateralisation obligations for intragroup derivatives.\n\nThis guidance is aimed at financial and non-financial counterparties that conduct intragroup derivative transactions and meet the conditions for an exemption from EMIR obligations. It explains the necessary steps and documents to be submitted for applying for or notifying these exemptions to BaFin.\n\nThe guidance was published on January 5, 2017, and last amended on April 1, 2017. It is accessible via the MVP portal."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_wa_Merkblatt_Art11_EMIR_Anzeigen_Antraege_Intragruppenausnahmen.html",
+        "imp": "medium"
+      },
+      {
+        "d": "22.12.2015",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "Merkblatt zu Anzeigen und Anträgen für Intragruppenausnahmen von der EMIR-Clearingpflicht",
+          "en": "Guidance Notice on Notifications and Applications for Intragroup Exemptions from EMIR Clearing Obligation"
+        },
+        "sl": "merkblatt-anzeigen-antraege-intragruppenausnahmen-nach-art-4-emir-sowie-bei-drit",
+        "s": {
+          "de": "Die BaFin hat ein Merkblatt zur Ausgestaltung von Anzeigen und Anträgen für Intragruppenausnahmen von der Clearingpflicht nach Art. 4 EMIR sowie bei Drittstaatensachverhalten veröffentlicht. Es konkretisiert die Anforderungen für finanzielle und nichtfinanzielle Gegenparteien, die von der Clearingpflicht für OTC-Derivate befreit werden möchten.\n\nDas Merkblatt erläutert die zwei Hauptfälle für Intragruppenausnahmen: Geschäfte zwischen EU-ansässigen Gegenparteien (Art. 4 Abs. 2a EMIR) und Geschäfte, bei denen eine Gegenpartei in einem Drittstaat ansässig ist (Art. 4 Abs. 2b EMIR). Es beschreibt die jeweiligen Anzeige- und Antragsverfahren, einschließlich der Fristen und der Möglichkeit für die BaFin, die Ausnahme zu untersagen. Auch temporäre Ausnahmen durch RTS für Drittstaaten-Geschäfte werden behandelt.\n\nDie Regelungen sind relevant für alle finanziellen und nichtfinanziellen Gegenparteien, die OTC-Derivate handeln und die Clearingschwelle nach Art. 10 Abs. 1 EMIR überschreiten. Sie müssen die im Merkblatt beschriebenen Verfahren einhalten, um Intragruppengeschäfte von der Clearingpflicht ausnehmen zu können. Das Merkblatt berücksichtigt die Änderungen durch EMIR REFIT, die seit dem 17.06.2019 gelten, und die Q&A der ESMA zur EMIR-Implementierung.",
+          "en": "BaFin has published a guidance notice on the design of notifications and applications for intragroup exemptions from the clearing obligation under Art. 4 EMIR, including cases involving third-country entities. It specifies the requirements for financial and non-financial counterparties seeking exemption from the clearing obligation for OTC derivatives.\n\nThe guidance notice explains the two main scenarios for intragroup exemptions: transactions between EU-based counterparties (Art. 4 para. 2a EMIR) and transactions where one counterparty is located in a third country (Art. 4 para. 2b EMIR). It describes the respective notification and application procedures, including deadlines and BaFin's power to prohibit the exemption. Temporary exemptions for third-country transactions under RTS are also covered.\n\nThe regulations are relevant for all financial and non-financial counterparties trading OTC derivatives and exceeding the clearing threshold under Art. 10 para. 1 EMIR. They must follow the procedures outlined in the guidance notice to exempt intragroup transactions from the clearing obligation. The notice incorporates the changes introduced by EMIR REFIT, effective since 17 June 2019, and ESMA's Q&A on EMIR implementation."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Downloads/DE/Merkblatt/WA/dl_infoblatt_emir_intragruppenausnahmen_wa.html",
+        "imp": "medium"
+      },
+      {
+        "d": "18.02.2014",
+        "t": {
+          "de": "Auslegung",
+          "en": "Guidance"
+        },
+        "src": "bafin.de",
+        "ti": {
+          "de": "EMIR in der Versicherungsaufsicht: Anwendbarkeit und Meldepflichten",
+          "en": "EMIR in Insurance Supervision: Applicability and Reporting Obligations"
+        },
+        "sl": "european-market-infrastructure-regulation-emir-in-der-versicherungsaufsicht",
+        "s": {
+          "de": "Die BaFin erläutert die Anwendbarkeit der European Market Infrastructure Regulation (EMIR) auf Versicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung. Die EMIR zielt darauf ab, systemische Risiken im europäischen Derivatemarkt durch Transparenz und Sicherheit zu reduzieren, insbesondere durch die Abwicklung standardisierter OTC-Derivate über zentrale Gegenparteien und die Meldung an Transaktionsregister.\n\nVersicherungsunternehmen, Rückversicherungsunternehmen und Einrichtungen der betrieblichen Altersversorgung werden als „finanzielle Gegenparteien“ eingestuft und unterliegen der Clearingpflicht für standardisierte OTC-Derivate. Nichtfinanzielle Gegenparteien, zu denen die BaFin auch Sterbekassen zählt, sind von der Clearingpflicht betroffen, wenn sie Derivate in größerem Umfang für nicht-absichernde Zwecke einsetzen. Alle Derivategeschäfte müssen zur Erhöhung der Transparenz an ein Transaktionsregister gemeldet werden.\n\nDie BaFin präzisiert, dass die Delegation der Meldepflicht nach Art. 9 Abs. 1 EMIR an den Kontrahenten keine Auslagerung im Sinne des VAG darstellt, während eine Übertragung an einen geeigneten Dritten eine Einzelfallprüfung auf Funktionsausgliederung erfordert. Auch bei der Auslagerung von Dienstleistungen sind die Anforderungen des Risikomanagements gemäß VAG und MaRisk VA einzuhalten.",
+          "en": "BaFin clarifies the applicability of the European Market Infrastructure Regulation (EMIR) to insurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision. EMIR aims to mitigate systemic risks in the European derivatives market by increasing transparency and safety, particularly through the clearing of standardized OTC derivatives via central counterparties and reporting to trade repositories.\n\nInsurance undertakings, reinsurance undertakings, and institutions for occupational retirement provision are classified as “financial counterparties” and are subject to the clearing obligation for standardized OTC derivatives. Non-financial counterparties, which BaFin also considers to include burial funds, are subject to the clearing obligation if they use derivatives extensively for non-hedging purposes. All derivative transactions must be reported to a trade repository to enhance transparency.\n\nBaFin specifies that delegating the reporting obligation under Art. 9(1) EMIR to a counterparty does not constitute outsourcing under the German Insurance Supervision Act (VAG), whereas transferring it to a suitable third party requires a case-by-case assessment for functional outsourcing. Even when outsourcing services, risk management requirements according to VAG and MaRisk VA must be observed."
+        },
+        "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Auslegungsentscheidung/VA/ae_140218_hinweise_emir_va.html",
+        "imp": "medium"
       }
     ],
     "taxonomy": [
