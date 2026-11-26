@@ -28,7 +28,15 @@ export function targetText(p: OldPara, lang: L): string {
 export function changesOnly(segs: Seg[], keep = 7): Seg[] {
   const out: Seg[] = [];
   segs.forEach(([k, x], i) => {
-    if (k !== 0) { out.push([k, x]); return; }
+    if (k !== 0) {
+      const w = x.split(/(\s+)/);
+      const n = w.filter((v) => v.trim()).length;
+      if (n <= 45) { out.push([k, x]); return; }
+      // lange Streichungen/Ergänzungen: Anfang zeigen, Rest als Zähler
+      out.push([k, `${w.slice(0, 40).join("")} […] `], [0, `(${n - 20} ${k === 1 ? "Wörter gestrichen" : "Wörter ergänzt"}) `]);
+      out.push([k, w.slice(-20).join("")]);
+      return;
+    }
     const w = x.split(/(\s+)/);
     const n = w.filter((v) => v.trim()).length;
     if (n <= keep * 2 + 2) { out.push([0, x]); return; }
@@ -38,4 +46,28 @@ export function changesOnly(segs: Seg[], keep = 7): Seg[] {
     out.push([0, `${head}${first ? "" : " "}[…]${last ? "" : " "}${tail}`.replace(/\s+\[…\]$/, " […]")]);
   });
   return out;
+}
+
+const firstSentence = (t: string) => (t.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? t);
+
+/** Kurze Kommentare für rechts bzw. Word: je Zeile Fundstelle + ein Satz. Ohne Handlungsbedarf
+    und ohne hohe Wichtigkeit entfällt der Eintrag. Behörden-Zeilen entfallen. */
+export function shortComments(rows: CmpRow[], lang: L): { ref: string; text: string; high: boolean }[] {
+  const order = { high: 0, medium: 1, low: 2 } as const;
+  return [...rows]
+    .filter((r) => r.aud !== "auth" && (r.act || r.imp !== "low"))
+    .sort((a, b) => order[a.imp] - order[b.imp])
+    .map((r) => ({
+      ref: r.newRef ?? "",
+      text: (r.act ? r.act[lang] ?? r.act.de : firstSentence(r.s[lang] ?? r.s.de)),
+      high: r.imp === "high",
+    }));
+}
+
+/** Zielhinweis für ganz wegfallende Paragrafen: „künftig in EU-Geldwäscheverordnung, Art. 10“. */
+export function removedTarget(p: OldPara, lang: L): string {
+  if (p.to.length) return `${T("jetzt", "now", lang)} ${toLabel(p.to)}`;
+  const arts = [...new Set(p.c.map((r) => r.newRef).filter((x): x is string => !!x && /^Art\./.test(x)).map((x) => x.replace(/ VO \(EU\) 2024\/1624/, "")))];
+  const base = T("fällt künftig in die EU-Geldwäscheverordnung", "moves to the EU AML Regulation", lang);
+  return arts.length ? `${base}, ${arts.join(", ")}` : base;
 }

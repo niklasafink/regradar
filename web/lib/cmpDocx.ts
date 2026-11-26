@@ -2,7 +2,7 @@
 // Revisionen, annehmen und ablehnen möglich), Umsetzungshinweise als Kommentare.
 // Läuft im Browser; die Bibliothek wird erst beim Klick geladen.
 import type { CmpRow, Comparison } from "./base";
-import { T, targetText, toLabel, type CmpData, type L, type OldPara, type Seg } from "./cmpData";
+import { T, removedTarget, shortComments, type CmpData, type L, type OldPara, type Seg } from "./cmpData";
 
 const AUTHOR = "Regulatory Radar";
 
@@ -52,14 +52,14 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
   out.push(new Paragraph({ children: [new TextRun({ text: T("Änderungen als Word-Revisionen (Autor: Regulatory Radar), Umsetzungshinweise als Kommentare. Redaktionelle Auswertung, keine Rechtsberatung.", "Changes as Word tracked changes (author: Regulatory Radar), implementation notes as comments. Editorial analysis, no legal advice.", lang), italics: true, size: 18 })] }));
 
   for (const p of opts.old) {
-    const head = `§ ${p.n} GwG ${p.t}`;
-    const lines: string[] = [targetText(p, lang)];
-    if (p.st === "removed" && !p.to.length) lines[0] = T("Künftig in der EU-Geldwäscheverordnung (VO (EU) 2024/1624) geregelt, im nationalen Gesetz gestrichen.", "In future governed by the EU AML Regulation (Regulation (EU) 2024/1624), deleted from the national act.", lang);
-    if (p.st === "same") lines[0] = `${T("Inhaltlich übernommen", "Carried over", lang)}: ${toLabel(p.to)}`;
-    for (const r of [...p.c].sort((a, b) => ({ high: 0, medium: 1, low: 2 }[a.imp] - { high: 0, medium: 1, low: 2 }[b.imp]))) lines.push("", ...rowLines(r));
-    out.push(heading(head, lines));
+    const dot = p.st === "removed" || p.st === "same" || (p.hv && p.c.length === 0);
+    if (dot && p.st !== "changed") {
+      out.push(new Paragraph({ spacing: { before: 120 }, children: [new TextRun({ text: `§ ${p.n} GwG ${p.t} `, bold: true }), new TextRun({ text: `(${p.st === "removed" ? removedTarget(p, lang) : T("inhaltlich übernommen", "carried over", lang)})`, size: 20 })] }));
+      continue;
+    }
+    const sc = shortComments(p.c, lang);
+    out.push(heading(`§ ${p.n} GwG ${p.t}`, sc.map((r) => `${r.ref ? r.ref + ": " : ""}${r.text}`)));
     const items = [...p.abs.map((a) => ({ l: a.l, segs: a.segs })), ...p.ins.map((a) => ({ l: a.l, segs: a.segs }))];
-    if (p.st === "same") { out.push(new Paragraph({ children: [new TextRun({ text: T("Unverändert übernommen.", "Carried over unchanged.", lang), italics: true })] })); continue; }
     for (const a of items) {
       out.push(new Paragraph({ spacing: { after: 100 }, children: [...(a.l ? [new TextRun({ text: `${a.l} `, bold: true })] : []), ...segRuns(a.segs)] }));
     }

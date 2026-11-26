@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { tx } from "@/lib/core";
 import { useStore } from "@/lib/store";
 import type { CmpRow, Comparison } from "@/lib/base";
-import { changesOnly, isDot, T, targetText, type CmpData, type L, type OldPara, type Seg } from "@/lib/cmpData";
+import { changesOnly, isDot, removedTarget, shortComments, T, targetText, type CmpData, type L, type OldPara, type Seg } from "@/lib/cmpData";
 
 /* Fassungsvergleich im Rahmenwerk, Paragraf für Paragraf nach der alten Fassung
    (Buzer-Prinzip): nur die Änderungen im Wortlaut, Umsetzungshinweis als aufklappbarer
@@ -50,23 +50,19 @@ function Changes({ p, lang }: { p: OldPara; lang: L }) {
 }
 
 function Comments({ rows, lang }: { rows: CmpRow[]; lang: L }) {
-  const sorted = [...rows].sort((a, b) => IMP[a.imp] - IMP[b.imp]);
+  const list = shortComments(rows, lang);
   return (
-    <div className="space-y-3">
-      {sorted.map((r, i) => (
-        <div key={i} className="text-[0.8125rem] leading-relaxed">
-          {r.newRef && <p className="text-[0.6875rem] font-medium text-slate-400">{r.newRef}</p>}
-          <p className="mt-0.5 text-slate-700">{tx(lang, r.s)}</p>
-          {r.act && (
-            <p className="mt-1.5">
-              <span className="font-medium text-slate-900">{T("Für Institute:", "For institutions:", lang)}</span>{" "}
-              <span className="text-slate-600">{tx(lang, r.act)}</span>
-            </p>
-          )}
-          <p className="mt-1 text-[0.6875rem] text-slate-400">{T("Beleg", "Source", lang)}: {r.src}</p>
-        </div>
+    <ul className="space-y-2.5">
+      {list.map((r, i) => (
+        <li key={i} className="text-[0.8125rem] leading-snug">
+          <p className="flex items-center gap-1.5 text-[0.6875rem] font-medium text-slate-400">
+            <span aria-hidden className={`size-1.5 shrink-0 rounded-full ${r.high ? "bg-blue-600" : "bg-slate-300"}`} />
+            {r.ref}
+          </p>
+          <p className={`mt-0.5 ${r.high ? "text-slate-900" : "text-slate-600"}`}>{r.text}</p>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
@@ -99,74 +95,41 @@ function Title({ p, lang }: { p: OldPara; lang: L }) {
   );
 }
 
-function Para({ p, lang, all }: { p: OldPara; lang: L; all: boolean | null }) {
-  const dot = isDot(p);
-  const [open, setOpen] = useState(!dot && !p.hv);
-  const [note, setNote] = useState(false);
+/** Wegfallender oder übernommener Paragraf: nur eine Zeile, kein Kommentar. */
+function DotRow({ p, lang }: { p: OldPara; lang: L }) {
   const [text, setText] = useState(false);
-  useEffect(() => { if (all !== null) setOpen(all); }, [all]);
-  const hasNote = p.c.length > 0;
-  const top = p.c.some((r) => r.imp === "high");
-  const noteBtn = hasNote && (
-    <button
-      type="button"
-      aria-expanded={note}
-      onClick={() => { setNote((v) => !v); setOpen(true); }}
-      className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
-        note ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-700 hover:border-slate-900"
-      }`}
-    >
-      {top && <span aria-hidden className={`size-1.5 rounded-full ${note ? "bg-white" : "bg-blue-600"}`} />}
-      {T("Umsetzungshinweis", "Implementation note", lang)}
-      <span className="num opacity-70">{p.c.length}</span>
-    </button>
-  );
-  const kindDot = p.st === "removed" ? "border border-slate-300 bg-white" : dot ? "bg-slate-300" : "bg-slate-900";
-  const sideNote = note && !dot && !p.hv;
+  const where = p.st === "removed" ? removedTarget(p, lang) : p.st === "same" ? T("inhaltlich übernommen", "carried over", lang) : T("weitgehend neu gefasst", "largely recast", lang);
   return (
-    <li>
-      <div className={dot ? "" : "rounded-2xl border border-slate-200 bg-white px-4 py-2.5 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)]"}>
-        <Toggle open={open} onClick={() => setOpen((v) => !v)} dot={kindDot} right={noteBtn || undefined}>
-          <Title p={p} lang={lang} />
-        </Toggle>
-        {open && (
-          <div className={`mt-2 grid gap-4 pb-1.5 ${sideNote ? "lg:grid-cols-[minmax(0,1fr)_300px]" : ""}`}>
-            <div className="min-w-0">
-              {dot ? (
-                <>
-                  <p className="text-xs leading-relaxed text-slate-500">
-                    {p.st === "removed" && !p.to.length
-                      ? T("Fällt im nationalen Gesetz weg; die Pflicht gilt ab 10.07.2027 unmittelbar nach der EU-Verordnung.", "Falls away in the national act; the duty applies directly under the EU regulation from 10 July 2027.", lang)
-                      : p.st === "same"
-                        ? T("Inhaltlich übernommen, nur Verweise angepasst.", "Carried over, only references adjusted.", lang)
-                        : T("Weitgehend neu gefasst, kaum Wortlaut übernommen.", "Largely recast, little wording retained.", lang)}{" "}
-                    {p.st !== "same" && (
-                      <button type="button" onClick={() => setText((v) => !v)} className="font-medium text-slate-900 underline-offset-2 hover:underline">
-                        {text ? T("Wortlaut ausblenden", "Hide wording", lang) : T("Wortlaut zeigen", "Show wording", lang)}
-                      </button>
-                    )}
-                  </p>
-                  {text && <div className="mt-2 rounded-xl border border-slate-100 bg-slate-50/60 px-3.5 py-3"><Changes p={p} lang={lang} /></div>}
-                  {hasNote && <div className="mt-3"><Comments rows={p.c} lang={lang} /></div>}
-                </>
-              ) : p.hv ? (
-                <>
-                  <button type="button" onClick={() => setText((v) => !v)} className="text-xs font-medium text-slate-900 underline-offset-2 hover:underline">
-                    {text ? T("Wortlaut ausblenden", "Hide wording", lang) : T("Wortlaut mit Änderungen zeigen", "Show wording with changes", lang)}
-                  </button>
-                  {text && <div className="mt-2"><Changes p={p} lang={lang} /></div>}
-                  <div className="mt-3"><Comments rows={p.c} lang={lang} /></div>
-                </>
-              ) : (
-                <Changes p={p} lang={lang} />
-              )}
-            </div>
-            {sideNote && (
-              <aside className="self-start rounded-xl border border-slate-200 bg-slate-50/60 p-3.5 lg:sticky lg:top-24">
-                <Comments rows={p.c} lang={lang} />
-              </aside>
-            )}
-          </div>
+    <li className="px-1 py-1">
+      <p className="flex flex-wrap items-baseline gap-x-2 text-sm">
+        <span aria-hidden className={`size-2 shrink-0 translate-y-px self-center rounded-full ${p.st === "removed" ? "border border-slate-300 bg-white" : "bg-slate-300"}`} />
+        <span className="num font-semibold tracking-tight">§ {p.n} GwG</span>
+        <span className="text-slate-700">{p.t}</span>
+        <span className="text-xs text-slate-400">({where})</span>
+        {p.st === "changed" && (
+          <button type="button" onClick={() => setText((v) => !v)} className="text-xs font-medium text-slate-900 underline-offset-2 hover:underline">
+            {text ? T("Wortlaut ausblenden", "Hide wording", lang) : T("Wortlaut zeigen", "Show wording", lang)}
+          </button>
+        )}
+      </p>
+      {text && <div className="mt-2 rounded-xl border border-slate-100 bg-slate-50/60 px-3.5 py-3"><Changes p={p} lang={lang} /></div>}
+    </li>
+  );
+}
+
+/** Geänderter Paragraf: Änderungen im Wortlaut links, kurze Kommentare immer rechts. */
+function Para({ p, lang }: { p: OldPara; lang: L }) {
+  if (isDot(p)) return <DotRow p={p} lang={lang} />;
+  const hasNote = shortComments(p.c, lang).length > 0;
+  return (
+    <li className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-[0_1px_2px_rgb(31_30_26/0.04),0_4px_14px_rgb(31_30_26/0.07)]">
+      <Title p={p} lang={lang} />
+      <div className={`mt-2.5 grid gap-x-6 gap-y-3 ${hasNote ? "lg:grid-cols-[minmax(0,1fr)_280px]" : ""}`}>
+        <div className="min-w-0"><Changes p={p} lang={lang} /></div>
+        {hasNote && (
+          <aside className="self-start border-slate-200 lg:border-l lg:pl-4">
+            <Comments rows={p.c} lang={lang} />
+          </aside>
         )}
       </div>
     </li>
@@ -225,6 +188,7 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
     };
   }, [data]);
 
+  const PREVIEW = 5; // Entwurf des neuen Aufbaus: erst nur die ersten fünf Paragrafen
   const hasAct = (c: CmpRow[]) => c.some((r) => r.act && r.aud !== "auth");
   const oldShown = data?.old.filter((p) => {
     if (filter === "neu") return false;
@@ -232,9 +196,9 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
     if (filter === "removed" && !(isDot(p) && p.st !== "same")) return false;
     if (onlyAct && !hasAct(p.c)) return false;
     return true;
-  }) ?? [];
-  const neuShown = data && (filter === "all" || filter === "neu") ? data.neu.filter((n) => !onlyAct || hasAct(n.c)) : [];
-  const restShown = data && (filter === "all" || filter === "neu") ? data.rest.filter((r) => !onlyAct || (r.act && r.aud !== "auth")) : [];
+  }).slice(0, PREVIEW) ?? [];
+  const neuShown: CmpData["neu"] = [];
+  const restShown: CmpRow[] = [];
 
   const pill = (active: boolean) =>
     `rounded-full border px-3 py-1 text-xs font-medium transition-colors ${active ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-600 hover:border-slate-900"}`;
@@ -267,40 +231,20 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
 
       {data && counts && (
         <>
-          <div className="mt-3 flex flex-wrap items-center gap-2">
-            <button type="button" aria-pressed={filter === "all"} onClick={() => setFilter("all")} className={pill(filter === "all")}>
-              {T("Alle", "All", lang)}
-            </button>
-            <button type="button" aria-pressed={filter === "changed"} onClick={() => setFilter("changed")} className={pill(filter === "changed")}>
-              {T("Geändert", "Changed", lang)} <span className="num opacity-70">{counts.changed}</span>
-            </button>
-            <button type="button" aria-pressed={filter === "removed"} onClick={() => setFilter("removed")} className={pill(filter === "removed")}>
-              {T("Entfällt oder neu gefasst", "Removed or recast", lang)} <span className="num opacity-70">{counts.removed}</span>
-            </button>
-            <button type="button" aria-pressed={filter === "neu"} onClick={() => setFilter("neu")} className={pill(filter === "neu")}>
-              {T("Neu im GwBG-E", "New in GwBG-E", lang)} <span className="num opacity-70">{counts.neu}</span>
-            </button>
-            <button type="button" aria-pressed={onlyAct} onClick={() => setOnlyAct((v) => !v)} className={pill(onlyAct)}>
-              {T("Nur mit Handlungsbedarf", "Action needed only", lang)}
-            </button>
-            <span className="ml-auto flex items-center gap-3 text-xs">
-              <button type="button" onClick={() => setAll((v) => (v === true ? false : true))} className="font-medium text-slate-500 underline-offset-2 hover:text-slate-900 hover:underline">
-                {all === true ? T("Alles einklappen", "Collapse all", lang) : T("Alles aufklappen", "Expand all", lang)}
-              </button>
-              <button type="button" onClick={exportDocx} disabled={busy} className="rounded-full bg-slate-900 px-3.5 py-1.5 font-medium text-white transition-colors hover:bg-slate-700 disabled:opacity-60">
-                {busy ? T("Wird erstellt …", "Creating …", lang) : T("Als Word exportieren", "Export to Word", lang)}
-              </button>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+            <span className="flex flex-wrap items-center gap-x-4 gap-y-1">
+              <span><del className={DEL}>{T("gestrichen", "deleted", lang)}</del></span>
+              <span><ins className={INS}>{T("ergänzt", "inserted", lang)}</ins></span>
+              <span className="flex items-center gap-1.5"><span aria-hidden className="size-1.5 rounded-full bg-blue-600" />{T("Handlungsbedarf", "Action needed", lang)}</span>
             </span>
+            <button type="button" onClick={exportDocx} disabled={busy} className="rounded-full bg-slate-900 px-3.5 py-1.5 font-medium text-white transition-colors hover:bg-slate-700 disabled:opacity-60">
+              {busy ? T("Wird erstellt …", "Creating …", lang) : T("Als Word exportieren", "Export to Word", lang)}
+            </button>
           </div>
-          <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500">
-            <span><del className={DEL}>{T("gestrichen", "deleted", lang)}</del></span>
-            <span><ins className={INS}>{T("ergänzt", "inserted", lang)}</ins></span>
-            <span className="text-slate-400">{T("Paragrafen anklicken, um sie auf- und zuzuklappen", "Click a section to expand or collapse it", lang)}</span>
-          </p>
 
           {oldShown.length > 0 && (
             <ol className="mt-4 space-y-1.5">
-              {oldShown.map((p) => <Para key={p.n} p={p} lang={lang} all={all} />)}
+              {oldShown.map((p) => <Para key={p.n} p={p} lang={lang} />)}
             </ol>
           )}
 
