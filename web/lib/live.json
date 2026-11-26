@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T00:09:07Z",
+  "generated_at": "2026-11-26T12:09:03Z",
   "updates": {
     "amla": [
       {
@@ -935,6 +935,28 @@
         "refnum": "Konsultation 04/2020"
       }
     ],
+    "doratlpt": [
+      {
+        "d": "26.11.2026",
+        "t": {
+          "de": "Delegierte VO",
+          "en": "Delegated regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der DORA-Delegierten Verordnung zu Kriterien für kritische IKT-Drittdienstleister (32025R1190R(02))",
+          "en": "Corrigendum to DORA Delegated Regulation on criteria for critical ICT third-party service providers (32025R1190R(02))"
+        },
+        "sl": "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru",
+        "s": {
+          "de": "Diese Berichtigung korrigiert die Delegierte Verordnung (EU) 2025/1190, die technische Regulierungsstandards (RTS) zur Bestimmung kritischer IKT-Drittdienstleister gemäß der Verordnung (EU) 2022/2554 (DORA) festlegt. Die Änderungen betreffen spezifische Formulierungen im deutschen Text der Verordnung.\n\nDie Delegierte Verordnung ist relevant für Finanzunternehmen, die IKT-Dienstleistungen von Drittanbietern beziehen. Die Berichtigung stellt sicher, dass die deutsche Sprachfassung der Kriterien für die Bestimmung kritischer IKT-Drittdienstleister korrekt ist, was für die Einhaltung der DORA-Anforderungen von Bedeutung ist.\n\nEs handelt sich um eine redaktionelle Berichtigung, die keine inhaltlichen Änderungen an den ursprünglichen RTS vornimmt, sondern lediglich die sprachliche Präzision im deutschen Text verbessert.",
+          "en": "This corrigendum rectifies Delegated Regulation (EU) 2025/1190, which establishes regulatory technical standards (RTS) for determining critical ICT third-party service providers in accordance with Regulation (EU) 2022/2554 (DORA). The amendments concern specific wording in the German text of the regulation.\n\nThe Delegated Regulation is relevant for financial entities that procure ICT services from third-party providers. The corrigendum ensures that the German language version of the criteria for determining critical ICT third-party service providers is accurate, which is important for compliance with DORA requirements.\n\nThis is an editorial correction that does not introduce any substantive changes to the original RTS but merely improves linguistic precision in the German text."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32025R1190R(02)",
+        "imp": "low",
+        "refnum": "32025R1190R(02)"
+      }
+    ],
     "aifmd2": [
       {
         "d": "25.11.2026",
@@ -944,13 +966,13 @@
         },
         "src": "bafin.de",
         "ti": {
-          "de": "Fondsrisikobegrenzungsgesetz: Bafin veröffentlicht Rundschreiben",
-          "en": "Fondsrisikobegrenzungsgesetz: Bafin veröffentlicht Rundschreiben"
+          "de": "BaFin-Rundschreiben zu Änderungen im KAGB durch das Fondsrisikobegrenzungsgesetz (17/2026)",
+          "en": "BaFin Circular on KAGB Amendments by the Fund Risk Limitation Act (17/2026)"
         },
         "sl": "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
         "s": {
-          "de": "Die BaFin hat das Rundschreiben „17/2026 Hinweise zu Änderungen im Kapitalanlagegesetzbuch durch das Fondsrisikobegrenzungsgesetz“ veröffentlicht. Darin legt sie neue Regelungen des Kapitalanlagegesetzbuchs (KAGB) aus, die durch das Fondsrisikobegrenzungsgesetz (FRiG) im April 2026 angepasst wurden.\n\nDas Rundschreiben konkretisiert, dass Kapitalverwaltungsgesellschaften (KVGen) Liquiditätsmanagement-Tools zur Vorbeugung systemischer Risiken einsetzen müssen. Es informiert zudem über erweiterte Angaben zu Geschäftsleitern in Erlaubnisanträgen und Änderungen bei den zulässigen Dienstleistungen und Nebendienstleistungen von KVGen. Für alternative Investmentfonds gelten neue EU-weit harmonisierte Standards bei der Kreditvergabe.\n\nDas Rundschreiben beantwortet auch Fragen von Marktteilnehmern zur Auslegung der gesetzlichen Vorschriften und zum Bestandsschutz. Die BaFin hatte bereits am 19. November 2026 ein weiteres Rundschreiben zu den durch das FRiG bedingten Änderungen der MaRisk für KVGen veröffentlicht.",
-          "en": "BaFin has published Circular “17/2026 Guidance on amendments to the German Capital Investment Code by the Fund Risk Limitation Act”. In it, BaFin interprets new regulations of the German Capital Investment Code (KAGB), which were amended by the Fund Risk Limitation Act (FRiG) in April 2026.\n\nThe circular specifies that capital management companies (KVGen) must use liquidity management tools to prevent systemic risks. It also provides information on expanded disclosures regarding managing directors in licensing applications and changes to the permissible services and ancillary services of KVGen. New EU-wide harmonised standards for lending apply to alternative investment funds.\n\nThe circular also answers questions from market participants regarding the interpretation of legal provisions and grandfathering rules. BaFin had already published another circular on 19 November 2026 concerning the MaRisk amendments for KVGen resulting from the FRiG."
+          "de": "Die BaFin hat das Rundschreiben 17/2026 veröffentlicht, das Hinweise zur Auslegung der durch das Fondsrisikobegrenzungsgesetz (FRiG) geänderten Regelungen im Kapitalanlagegesetzbuch (KAGB) gibt. Es befasst sich insbesondere mit der Pflicht von Kapitalverwaltungsgesellschaften (KVGen), für offene Investmentvermögen mindestens zwei Liquiditätsmanagementinstrumente (LMTs) zu implementieren.\n\nDas Rundschreiben richtet sich an erlaubnispflichtige KVGen und klärt Fragen zur Auswahl und Aktivierung von LMTs. Es stellt klar, dass die Entscheidungsbefugnis für die Aktivierung eines LMTs ausschließlich bei der KVG liegt und ein Wahlrecht für Anleger unzulässig ist. Zudem werden Informationspflichten gegenüber Anlegern bei der Aktivierung und Deaktivierung von LMTs sowie deren Anwendung bei ETFs und die Meldepflichten gegenüber der BaFin erläutert.\n\nDas Rundschreiben ist mit seiner Veröffentlichung am 25.11.2026 in Kraft getreten. Es behandelt auch Änderungen im Erlaubnisverfahren für KVGen, die künftig zusätzliche Angaben zu Geschäftsleitern erfordern, sowie neue Standards bei der Kreditvergabe für alternative Investmentfonds, die eine EU-weite Harmonisierung von Kreditfonds bezwecken.",
+          "en": "BaFin has published Circular 17/2026, providing guidance on the interpretation of the amended regulations in the German Investment Code (KAGB) introduced by the Fund Risk Limitation Act (FRiG). It primarily addresses the obligation of capital management companies (KVGs) to implement at least two liquidity management tools (LMTs) for open-ended investment funds.\n\nThe circular is aimed at licensed KVGs and clarifies questions regarding the selection and activation of LMTs. It states that the decision-making authority for activating an LMT rests exclusively with the KVG, and an option for investors to choose is impermissible. Furthermore, it explains information obligations towards investors when activating and deactivating LMTs, their application to ETFs, and reporting obligations to BaFin.\n\nThe circular came into effect upon its publication on November 25, 2026. It also covers changes in the licensing procedure for KVGs, which will now require additional information on managing directors, as well as new standards for lending by alternative investment funds, aiming for EU-wide harmonization of credit funds."
         },
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Meldung/2026/meldung_2026_11_25_rs_fondsrisikobegrenzungsgesetz.html",
         "imp": "high"
@@ -3095,6 +3117,189 @@
           "en": "CSSF Circulars IML 94/112, 05/211, and 08/387 have been repealed. They addressed combating money laundering and preventing the use of the financial sector for money laundering purposes.\n\nThe circulars were aimed at financial undertakings and contained requirements for money laundering prevention. Although the specific contents of the repealed circulars are not detailed, the subject matter indicates fundamental compliance requirements for financial institutions.\n\nCirculars IML 94/112 and 05/211 were archived on 13 October 2005 and 19 December 2008, respectively, and replaced by subsequent circulars, most recently by Circular CSSF 08/387, which has also been repealed. This indicates an ongoing update of anti-money laundering regulations."
         },
         "url": "https://www.cssf.lu/en/Document/circular-iml-94-112/",
+        "imp": "high"
+      }
+    ],
+    "sanctions": [
+      {
+        "d": "25.11.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Russland-Sanktionen (Ukraine): Änderung der Verordnung (EU) Nr. 833/2014",
+          "en": "Russia Sanctions (Ukraine): Amendment to Regulation (EU) No 833/2014"
+        },
+        "sl": "verordnung-eu-2026-2632-des-rates-vom-25-november-2026-zur-aenderung-der-verordn",
+        "s": {
+          "de": "Die Verordnung (EU) 2026/2632 des Rates ändert die bestehende Verordnung (EU) Nr. 833/2014. Diese Verordnung regelt restriktive Maßnahmen angesichts der Handlungen Russlands, die die Lage in der Ukraine destabilisieren.\n\nDie Änderung betrifft alle Unternehmen und Personen, die den bestehenden Russland-Sanktionen unterliegen. Sie müssen die neuen Bestimmungen prüfen und ihre Compliance-Prozesse entsprechend anpassen, um die Einhaltung der aktualisierten Maßnahmen zu gewährleisten.",
+          "en": "Council Regulation (EU) 2026/2632 amends the existing Regulation (EU) No 833/2014. This regulation concerns restrictive measures in view of Russia's actions destabilising the situation in Ukraine.\n\nThe amendment affects all companies and individuals subject to the existing Russia sanctions. They must review the new provisions and adjust their compliance processes accordingly to ensure adherence to the updated measures."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2632",
+        "imp": "high",
+        "refnum": "32026R2632"
+      },
+      {
+        "d": "09.10.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Sanktionen Libyen: Änderungen der restriktiven Maßnahmen (EU) 2026/2259",
+          "en": "Sanctions Libya: Amendments to restrictive measures (EU) 2026/2259"
+        },
+        "sl": "verordnung-eu-2026-2259-des-rates-vom-9-oktober-2026-zur-aenderung-der-verordnun",
+        "s": {
+          "de": "Diese Verordnung ändert die bestehende Verordnung (EU) 2016/44, die restriktive Maßnahmen angesichts der Lage in Libyen festlegt. Die Änderungen betreffen spezifische Anpassungen der Sanktionsregelungen, die sich aus der fortlaufenden Bewertung der Situation in Libyen ergeben.\n\nDie Änderungen sind für alle Unternehmen und Personen relevant, die Geschäftsbeziehungen mit Libyen unterhalten oder von den dortigen Entwicklungen betroffen sind. Sie müssen die aktualisierten Bestimmungen prüfen, um die Einhaltung der Sanktionsvorschriften sicherzustellen und mögliche Risiken zu identifizieren.\n\nDie Verordnung tritt am Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
+          "en": "This Regulation amends the existing Regulation (EU) 2016/44, which establishes restrictive measures in view of the situation in Libya. The amendments concern specific adjustments to the sanctions regime resulting from the ongoing assessment of the situation in Libya.\n\nThe changes are relevant for all companies and individuals that have business relations with Libya or are affected by developments there. They must review the updated provisions to ensure compliance with sanctions regulations and identify potential risks.\n\nThe Regulation enters into force on the day following its publication in the Official Journal of the European Union."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2259",
+        "imp": "high",
+        "refnum": "32026R2259"
+      },
+      {
+        "d": "03.09.2026",
+        "t": {
+          "de": "Urteil",
+          "en": "Court decision"
+        },
+        "src": "curia.europa.eu",
+        "ti": {
+          "de": "EuGH-Urteil zu Beweisanforderungen bei Kontrolle von Unternehmen durch sanktionierte Personen (C-147/25)",
+          "en": "ECJ ruling on evidentiary requirements for control of companies by sanctioned persons (C-147/25)"
+        },
+        "sl": "judgment-of-the-court-in-case-c-147-25-inter-rao-lietuva",
+        "s": {
+          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Kontrolle einer Gesellschaft durch eine Person, die EU-restriktiven Maßnahmen unterliegt, objektiv und hinreichend gesichert nachgewiesen werden muss. Der autokratische Charakter eines politischen Regimes allein reicht nicht aus, um eine solche Kontrolle zu belegen. Nationale Behörden müssen die Kontrolle durch unmittelbare Beweise oder ein Bündel konkreter, genauer und übereinstimmender Indizien belegen.\n\nDies betrifft Finanzinstitute und andere Unternehmen, die mit Sanktionen belegte Personen oder Unternehmen identifizieren und deren Vermögenswerte einfrieren müssen. Die Entscheidung präzisiert die Anforderungen an die Beweisführung für die Kontrolle von Unternehmen im Kontext von EU-Sanktionen und betont die Notwendigkeit einer soliden faktischen Grundlage für solche Maßnahmen. Nationale Gerichte müssen die Rechtmäßigkeit von Einfrierungsmaßnahmen überprüfen, ohne jedoch die Frage einer Bedrohung der nationalen Sicherheit beurteilen zu müssen.\n\nDie Begründung für das Einfrieren von Geldern muss den Betroffenen so bald wie möglich mitgeteilt werden, um deren Recht auf gerichtlichen Rechtsschutz zu gewährleisten. Eine vorherige Anhörung oder Mitteilung ist nicht erforderlich, um die Wirksamkeit der Maßnahme nicht zu gefährden.",
+          "en": "The European Court of Justice (ECJ) has ruled that the control of a company by a person subject to EU restrictive measures must be proven objectively and with sufficient certainty. The autocratic nature of a political regime alone is not sufficient to demonstrate such control. National authorities must prove control through direct evidence or a set of concrete, precise, and consistent indications.\n\nThis affects financial institutions and other companies that need to identify sanctioned individuals or entities and freeze their assets. The decision clarifies the evidentiary requirements for proving company control in the context of EU sanctions and emphasizes the need for a solid factual basis for such measures. National courts must review the legality of asset-freezing measures but are not required to assess the question of a threat to national security.\n\nThe reasons for freezing funds must be communicated to the affected parties as soon as possible to ensure their right to judicial review. Prior hearings or notifications are not required to avoid jeopardizing the effectiveness of the measure."
+        },
+        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260116de.pdf",
+        "imp": "medium",
+        "refnum": "C-147/25"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/513 zu restriktiven Maßnahmen gegen Belarus (32026R0513R(01))",
+          "en": "Corrigendum to Regulation (EU) 2026/513 concerning restrictive measures against Belarus (32026R0513R(01))"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert einen Fehler in der Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Beteiligung an der Aggression Russlands gegen die Ukraine festlegt. Konkret wird eine Ungenauigkeit in Anhang Nummer 6 Buchstabe c der Verordnung behoben.\n\nDie Korrektur betrifft die Zolltarifnummern für Platin in Rohform, als Halbzeug oder Pulver. Anstatt „ex 7110 Platin, in Rohform oder als Halbzeug oder Pulver, ausgenommen KN-Codes 7110 21 und 7210 29“ muss es korrekt „ex 7110 Platin, in Rohform oder als Halbzeug oder Pulver, ausgenommen KN-Codes 7110 21 und 7110 29“ heißen. Dies ist relevant für Unternehmen, die mit Platin handeln und von den Sanktionen betroffen sind.\n\nDie Berichtigung wurde am 11. August 2026 im Amtsblatt der Europäischen Union veröffentlicht und ist ab diesem Datum gültig.",
+          "en": "This corrigendum rectifies an error in Council Regulation (EU) 2026/513, which establishes restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. Specifically, an inaccuracy in Annex No 6, letter c of the regulation is corrected.\n\nThe correction concerns the customs tariff numbers for platinum in unwrought, semi-manufactured, or powder form. Instead of “ex 7110 Platinum, in unwrought, semi-manufactured or powder form, excluding CN codes 7110 21 and 7210 29”, it should correctly read “ex 7110 Platinum, in unwrought, semi-manufactured or powder form, excluding CN codes 7110 21 and 7110 29”. This is relevant for companies trading in platinum and affected by the sanctions.\n\nThe corrigendum was published in the Official Journal of the European Union on 11 August 2026 and is valid from that date."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
+        "imp": "low",
+        "refnum": "32026R0513R(01)"
+      },
+      {
+        "d": "11.08.2026",
+        "t": {
+          "de": "Verordnung",
+          "en": "Regulation"
+        },
+        "src": "eur-lex.europa.eu",
+        "ti": {
+          "de": "Berichtigung der Verordnung (EU) 2026/506 zu restriktiven Maßnahmen gegen Russland (32026R0506R(03))",
+          "en": "Corrigendum to Regulation (EU) 2026/506 concerning restrictive measures against Russia (32026R0506R(03))"
+        },
+        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
+        "s": {
+          "de": "Diese Berichtigung korrigiert einen Fehler in der Verordnung (EU) 2026/506 des Rates, die restriktive Maßnahmen gegen Russland festlegt. Konkret wird eine Änderung im Anhang VI vorgenommen, der sich auf die Zolltarifnummern für Platin bezieht.\n\nDie Korrektur betrifft die Angabe der KN-Codes für Platin in Rohform, als Halbzeug oder Pulver. Statt „ausgenommen KN-Codes 7110 21 und 7210 29“ muss es nun korrekt „ausgenommen KN-Codes 7110 21 und 7110 29“ heißen. Dies ist relevant für Unternehmen, die mit Platin handeln und die Sanktionsvorschriften einhalten müssen.\n\nDie Berichtigung wurde am 11.08.2026 veröffentlicht und ist ab diesem Datum gültig.",
+          "en": "This corrigendum rectifies an error in Council Regulation (EU) 2026/506, which establishes restrictive measures against Russia. Specifically, an amendment is made to Annex VI, concerning the customs tariff numbers for platinum.\n\nThe correction pertains to the specification of CN codes for platinum in unwrought, semi-manufactured forms, or powder. Instead of “excluding CN codes 7110 21 and 7210 29”, it should now correctly read “excluding CN codes 7110 21 and 7110 29”. This is relevant for companies dealing with platinum that must comply with the sanctions regulations.\n\nThe corrigendum was published on 11.08.2026 and is effective from that date."
+        },
+        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
+        "imp": "low",
+        "refnum": "32026R0506R(03)",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "21. Sanktionspaket der EU gegen Russland",
+          "en": "EU adopts 21st package of sanctions against Russia"
+        },
+        "sl": "eu-adopts-21th-package-of-sanctions-against-russia",
+        "s": {
+          "de": "Die Europäische Kommission hat das 21. Sanktionspaket der EU gegen Russland begrüßt, das darauf abzielt, Russlands Fähigkeit zur Finanzierung des Krieges und zur Durchführung von Angriffen auf die Ukraine weiter einzuschränken. Das Paket konzentriert sich auf die Bereiche Energie, Finanzdienstleistungen (einschließlich Krypto), Handel und den militärisch-industriellen Komplex Russlands.\n\nZu den wesentlichen Elementen gehören Anpassungen der Ölpreisobergrenze, ein Ausbau des Infrastrukturverbots auf Raffinerien und Häfen, eine Meldepflicht für den Verkauf von LNG-Tankern an Drittländer sowie die Klarstellung, dass das Verbot von LNG-Terminaldienstleistungen auch von russischen Unternehmen kontrollierte Drittlandbetreiber umfasst. Im Finanzbereich werden über 100 russische Banken einem Transaktionsverbot unterworfen, das auch die Nutzung von Finanznachrichtendiensten untersagt. Zudem werden neue Beschränkungen für Krypto-Dienstleistungen und -Plattformen eingeführt, einschließlich eines Verbots für russische Staatsangehörige, in Krypto-Dienstleistungsunternehmen tätig zu sein. Das Paket enthält auch Maßnahmen zum Rechtsschutz von EU-Betreibern gegen missbräuchliche Klagen.\n\nDas Paket erweitert Export- und Importbeschränkungen, fügt 51 Einrichtungen zur Liste der sanktionierten Unternehmen hinzu, die den militärisch-industriellen Komplex unterstützen oder Sanktionen umgehen, und listet 218 weitere Personen und Organisationen. Dies umfasst 94 Banken und Finanzinstitute sowie wichtige Akteure im russischen Bankensektor und im Krypto-Bereich. PwC Legal weist in einem Fachbeitrag darauf hin, dass die Sanktionspakete eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen erfordern.",
+          "en": "The European Commission has welcomed the EU's 21st package of sanctions against Russia, aimed at further restricting Russia's ability to fund the war and carry out attacks on Ukraine. The package focuses on energy, financial services (including crypto), trade, and Russia's military-industrial complex.\n\nKey elements include adjustments to the oil price cap, an expansion of the infrastructure ban to refineries and ports, a notification obligation for LNG tanker sales to third countries, and clarification that the ban on LNG terminal services also covers third-country operators controlled by Russian companies. In the financial sector, over 100 Russian banks are subject to a transaction ban, which also prohibits the use of financial messaging services. New restrictions on crypto services and platforms are introduced, including a ban on Russian nationals owning, controlling, or serving on the boards of crypto service companies. The package also includes measures for the legal protection of EU operators against abusive lawsuits.\n\nThe package expands export and import restrictions, adds 51 entities to the list of sanctioned companies supporting the military-industrial complex or circumventing sanctions, and lists 218 additional individuals and entities. This includes 94 banks and financial institutions, as well as key players in the Russian banking and crypto sectors. PwC Legal notes in an expert article that the sanctions packages require a new compliance architecture for financial services companies."
+        },
+        "url": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "23.07.2026",
+        "t": {
+          "de": "Meldung",
+          "en": "News"
+        },
+        "src": "finance.ec.europa.eu",
+        "ti": {
+          "de": "Russland-Sanktionen (Ukraine): 21. Paket mit neuen Finanz- und Krypto-Beschränkungen",
+          "en": "Russia Sanctions (Ukraine): 21st Package with New Financial and Crypto Restrictions"
+        },
+        "sl": "eu-adopts-21st-package-of-sanctions-against-russia",
+        "s": {
+          "de": "Die EU hat das 21. Sanktionspaket gegen Russland verabschiedet, das darauf abzielt, Russlands Fähigkeit zur Finanzierung des Krieges und zur Durchführung von Angriffen auf zivile Infrastruktur weiter einzuschränken. Die Maßnahmen konzentrieren sich auf die Bereiche Energie, Finanzdienstleistungen (einschließlich Krypto), Handel und den militärisch-industriellen Komplex.\n\nDas Paket enthält Anpassungen der Ölpreisobergrenze, ein Infrastrukturverbot für bestimmte russische Häfen, Flughäfen und Raffinerien sowie eine Notifizierungspflicht für den Verkauf von LNG-Tankern an Drittländer. Im Finanzsektor werden die Transaktionsverbote auf weitere Banken und Drittlandbanken ausgeweitet, und es gibt neue Beschränkungen für Krypto-Dienstleistungen und -Plattformen, einschließlich eines Verbots für russische Staatsangehörige, in Vorständen von Krypto-Dienstleistern tätig zu sein. Zudem werden Export- und Importbeschränkungen für Güter, die den militärisch-industriellen Komplex betreffen, erweitert.\n\nDas Paket listet 218 zusätzliche Personen und Organisationen, darunter 94 Banken und Finanzinstitute, die nun Vermögenssperren und Reiseverboten unterliegen. Es wurden auch 51 Unternehmen, die den militärisch-industriellen Komplex unterstützen oder Sanktionen umgehen, in die Liste aufgenommen, darunter Unternehmen aus China, der Türkei, Kirgisistan, Indien, Kasachstan und den Vereinigten Arabischen Emiraten. Für EU-Unternehmen werden rechtliche Schutzmaßnahmen gegen missbräuchliche Klagen eingeführt, die als Vergeltung für EU-Sanktionen dienen.",
+          "en": "The EU has adopted its 21st package of sanctions against Russia, aiming to further restrict Russia's ability to fund its war and carry out attacks on civilian infrastructure. The measures focus on the energy, financial services (including crypto), trade, and military-industrial complex sectors.\n\nThe package includes adjustments to the oil price cap, an infrastructure ban for certain Russian ports, airports, and refineries, and a notification obligation for LNG tanker sales to third countries. In the financial sector, transaction bans are extended to additional banks and third-country banks, and new restrictions are imposed on crypto services and platforms, including a prohibition for Russian nationals to serve on the boards of crypto service companies. Export and import restrictions for goods related to the military-industrial complex are also expanded.\n\nThe package lists 218 additional individuals and entities, including 94 banks and financial institutions, who are now subject to asset freezes and travel bans. Furthermore, 51 entities supporting the military-industrial complex or enabling sanctions circumvention have been added to the list, including entities from China, Turkey, Kyrgyzstan, India, Kazakhstan, and the United Arab Emirates. Legal protection measures for EU operators against abusive lawsuits used in retaliation for EU sanctions are also introduced."
+        },
+        "url": "https://finance.ec.europa.eu/news/eu-adopts-21st-package-sanctions-against-russia-2026-07-23_en",
+        "imp": "high",
+        "adv": [
+          {
+            "f": "PwC Legal",
+            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
+            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
+            "d": "03.08.2026"
+          }
+        ]
+      },
+      {
+        "d": "05.02.2026",
+        "t": {
+          "de": "Gesetz",
+          "en": "Law"
+        },
+        "src": "recht.bund.de",
+        "ti": {
+          "de": "Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen EU-Restriktionen",
+          "en": "Law on adapting criminal offenses and sanctions for violations of EU restrictive measures"
+        },
+        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
+        "s": {
+          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
+          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
+        },
+        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
         "imp": "high"
       }
     ],
@@ -7338,169 +7543,6 @@
         "url": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/DE/Konsultation/2023/kon_02_23_Konsultation_Leitlinien_Governance_Bankprodukte_Privatkundengeschaeft.html",
         "imp": "medium",
         "refnum": "Konsultation 02/2023"
-      }
-    ],
-    "sanctions": [
-      {
-        "d": "09.10.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Sanktionen Libyen: Änderungen der restriktiven Maßnahmen (EU) 2026/2259",
-          "en": "Sanctions Libya: Amendments to restrictive measures (EU) 2026/2259"
-        },
-        "sl": "verordnung-eu-2026-2259-des-rates-vom-9-oktober-2026-zur-aenderung-der-verordnun",
-        "s": {
-          "de": "Diese Verordnung ändert die bestehende Verordnung (EU) 2016/44, die restriktive Maßnahmen angesichts der Lage in Libyen festlegt. Die Änderungen betreffen spezifische Anpassungen der Sanktionsregelungen, die sich aus der fortlaufenden Bewertung der Situation in Libyen ergeben.\n\nDie Änderungen sind für alle Unternehmen und Personen relevant, die Geschäftsbeziehungen mit Libyen unterhalten oder von den dortigen Entwicklungen betroffen sind. Sie müssen die aktualisierten Bestimmungen prüfen, um die Einhaltung der Sanktionsvorschriften sicherzustellen und mögliche Risiken zu identifizieren.\n\nDie Verordnung tritt am Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.",
-          "en": "This Regulation amends the existing Regulation (EU) 2016/44, which establishes restrictive measures in view of the situation in Libya. The amendments concern specific adjustments to the sanctions regime resulting from the ongoing assessment of the situation in Libya.\n\nThe changes are relevant for all companies and individuals that have business relations with Libya or are affected by developments there. They must review the updated provisions to ensure compliance with sanctions regulations and identify potential risks.\n\nThe Regulation enters into force on the day following its publication in the Official Journal of the European Union."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R2259",
-        "imp": "high",
-        "refnum": "32026R2259"
-      },
-      {
-        "d": "03.09.2026",
-        "t": {
-          "de": "Urteil",
-          "en": "Court decision"
-        },
-        "src": "curia.europa.eu",
-        "ti": {
-          "de": "EuGH-Urteil zu Beweisanforderungen bei Kontrolle von Unternehmen durch sanktionierte Personen (C-147/25)",
-          "en": "ECJ ruling on evidentiary requirements for control of companies by sanctioned persons (C-147/25)"
-        },
-        "sl": "judgment-of-the-court-in-case-c-147-25-inter-rao-lietuva",
-        "s": {
-          "de": "Der Europäische Gerichtshof (EuGH) hat entschieden, dass die Kontrolle einer Gesellschaft durch eine Person, die EU-restriktiven Maßnahmen unterliegt, objektiv und hinreichend gesichert nachgewiesen werden muss. Der autokratische Charakter eines politischen Regimes allein reicht nicht aus, um eine solche Kontrolle zu belegen. Nationale Behörden müssen die Kontrolle durch unmittelbare Beweise oder ein Bündel konkreter, genauer und übereinstimmender Indizien belegen.\n\nDies betrifft Finanzinstitute und andere Unternehmen, die mit Sanktionen belegte Personen oder Unternehmen identifizieren und deren Vermögenswerte einfrieren müssen. Die Entscheidung präzisiert die Anforderungen an die Beweisführung für die Kontrolle von Unternehmen im Kontext von EU-Sanktionen und betont die Notwendigkeit einer soliden faktischen Grundlage für solche Maßnahmen. Nationale Gerichte müssen die Rechtmäßigkeit von Einfrierungsmaßnahmen überprüfen, ohne jedoch die Frage einer Bedrohung der nationalen Sicherheit beurteilen zu müssen.\n\nDie Begründung für das Einfrieren von Geldern muss den Betroffenen so bald wie möglich mitgeteilt werden, um deren Recht auf gerichtlichen Rechtsschutz zu gewährleisten. Eine vorherige Anhörung oder Mitteilung ist nicht erforderlich, um die Wirksamkeit der Maßnahme nicht zu gefährden.",
-          "en": "The European Court of Justice (ECJ) has ruled that the control of a company by a person subject to EU restrictive measures must be proven objectively and with sufficient certainty. The autocratic nature of a political regime alone is not sufficient to demonstrate such control. National authorities must prove control through direct evidence or a set of concrete, precise, and consistent indications.\n\nThis affects financial institutions and other companies that need to identify sanctioned individuals or entities and freeze their assets. The decision clarifies the evidentiary requirements for proving company control in the context of EU sanctions and emphasizes the need for a solid factual basis for such measures. National courts must review the legality of asset-freezing measures but are not required to assess the question of a threat to national security.\n\nThe reasons for freezing funds must be communicated to the affected parties as soon as possible to ensure their right to judicial review. Prior hearings or notifications are not required to avoid jeopardizing the effectiveness of the measure."
-        },
-        "url": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-09/cp260116de.pdf",
-        "imp": "medium",
-        "refnum": "C-147/25"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/513 zu restriktiven Maßnahmen gegen Belarus (32026R0513R(01))",
-          "en": "Corrigendum to Regulation (EU) 2026/513 concerning restrictive measures against Belarus (32026R0513R(01))"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-513-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Diese Berichtigung korrigiert einen Fehler in der Verordnung (EU) 2026/513 des Rates, die restriktive Maßnahmen gegen Belarus aufgrund seiner Beteiligung an der Aggression Russlands gegen die Ukraine festlegt. Konkret wird eine Ungenauigkeit in Anhang Nummer 6 Buchstabe c der Verordnung behoben.\n\nDie Korrektur betrifft die Zolltarifnummern für Platin in Rohform, als Halbzeug oder Pulver. Anstatt „ex 7110 Platin, in Rohform oder als Halbzeug oder Pulver, ausgenommen KN-Codes 7110 21 und 7210 29“ muss es korrekt „ex 7110 Platin, in Rohform oder als Halbzeug oder Pulver, ausgenommen KN-Codes 7110 21 und 7110 29“ heißen. Dies ist relevant für Unternehmen, die mit Platin handeln und von den Sanktionen betroffen sind.\n\nDie Berichtigung wurde am 11. August 2026 im Amtsblatt der Europäischen Union veröffentlicht und ist ab diesem Datum gültig.",
-          "en": "This corrigendum rectifies an error in Council Regulation (EU) 2026/513, which establishes restrictive measures against Belarus due to its involvement in Russia's aggression against Ukraine. Specifically, an inaccuracy in Annex No 6, letter c of the regulation is corrected.\n\nThe correction concerns the customs tariff numbers for platinum in unwrought, semi-manufactured, or powder form. Instead of “ex 7110 Platinum, in unwrought, semi-manufactured or powder form, excluding CN codes 7110 21 and 7210 29”, it should correctly read “ex 7110 Platinum, in unwrought, semi-manufactured or powder form, excluding CN codes 7110 21 and 7110 29”. This is relevant for companies trading in platinum and affected by the sanctions.\n\nThe corrigendum was published in the Official Journal of the European Union on 11 August 2026 and is valid from that date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0513R(01)",
-        "imp": "low",
-        "refnum": "32026R0513R(01)"
-      },
-      {
-        "d": "11.08.2026",
-        "t": {
-          "de": "Verordnung",
-          "en": "Regulation"
-        },
-        "src": "eur-lex.europa.eu",
-        "ti": {
-          "de": "Berichtigung der Verordnung (EU) 2026/506 zu restriktiven Maßnahmen gegen Russland (32026R0506R(03))",
-          "en": "Corrigendum to Regulation (EU) 2026/506 concerning restrictive measures against Russia (32026R0506R(03))"
-        },
-        "sl": "berichtigung-der-verordnung-eu-2026-506-des-rates-vom-23-april-2026-zur-aenderun",
-        "s": {
-          "de": "Diese Berichtigung korrigiert einen Fehler in der Verordnung (EU) 2026/506 des Rates, die restriktive Maßnahmen gegen Russland festlegt. Konkret wird eine Änderung im Anhang VI vorgenommen, der sich auf die Zolltarifnummern für Platin bezieht.\n\nDie Korrektur betrifft die Angabe der KN-Codes für Platin in Rohform, als Halbzeug oder Pulver. Statt „ausgenommen KN-Codes 7110 21 und 7210 29“ muss es nun korrekt „ausgenommen KN-Codes 7110 21 und 7110 29“ heißen. Dies ist relevant für Unternehmen, die mit Platin handeln und die Sanktionsvorschriften einhalten müssen.\n\nDie Berichtigung wurde am 11.08.2026 veröffentlicht und ist ab diesem Datum gültig.",
-          "en": "This corrigendum rectifies an error in Council Regulation (EU) 2026/506, which establishes restrictive measures against Russia. Specifically, an amendment is made to Annex VI, concerning the customs tariff numbers for platinum.\n\nThe correction pertains to the specification of CN codes for platinum in unwrought, semi-manufactured forms, or powder. Instead of “excluding CN codes 7110 21 and 7210 29”, it should now correctly read “excluding CN codes 7110 21 and 7110 29”. This is relevant for companies dealing with platinum that must comply with the sanctions regulations.\n\nThe corrigendum was published on 11.08.2026 and is effective from that date."
-        },
-        "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32026R0506R(03)",
-        "imp": "low",
-        "refnum": "32026R0506R(03)",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "21. Sanktionspaket der EU gegen Russland",
-          "en": "EU adopts 21st package of sanctions against Russia"
-        },
-        "sl": "eu-adopts-21th-package-of-sanctions-against-russia",
-        "s": {
-          "de": "Die Europäische Kommission hat das 21. Sanktionspaket der EU gegen Russland begrüßt, das darauf abzielt, Russlands Fähigkeit zur Finanzierung des Krieges und zur Durchführung von Angriffen auf die Ukraine weiter einzuschränken. Das Paket konzentriert sich auf die Bereiche Energie, Finanzdienstleistungen (einschließlich Krypto), Handel und den militärisch-industriellen Komplex Russlands.\n\nZu den wesentlichen Elementen gehören Anpassungen der Ölpreisobergrenze, ein Ausbau des Infrastrukturverbots auf Raffinerien und Häfen, eine Meldepflicht für den Verkauf von LNG-Tankern an Drittländer sowie die Klarstellung, dass das Verbot von LNG-Terminaldienstleistungen auch von russischen Unternehmen kontrollierte Drittlandbetreiber umfasst. Im Finanzbereich werden über 100 russische Banken einem Transaktionsverbot unterworfen, das auch die Nutzung von Finanznachrichtendiensten untersagt. Zudem werden neue Beschränkungen für Krypto-Dienstleistungen und -Plattformen eingeführt, einschließlich eines Verbots für russische Staatsangehörige, in Krypto-Dienstleistungsunternehmen tätig zu sein. Das Paket enthält auch Maßnahmen zum Rechtsschutz von EU-Betreibern gegen missbräuchliche Klagen.\n\nDas Paket erweitert Export- und Importbeschränkungen, fügt 51 Einrichtungen zur Liste der sanktionierten Unternehmen hinzu, die den militärisch-industriellen Komplex unterstützen oder Sanktionen umgehen, und listet 218 weitere Personen und Organisationen. Dies umfasst 94 Banken und Finanzinstitute sowie wichtige Akteure im russischen Bankensektor und im Krypto-Bereich. PwC Legal weist in einem Fachbeitrag darauf hin, dass die Sanktionspakete eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen erfordern.",
-          "en": "The European Commission has welcomed the EU's 21st package of sanctions against Russia, aimed at further restricting Russia's ability to fund the war and carry out attacks on Ukraine. The package focuses on energy, financial services (including crypto), trade, and Russia's military-industrial complex.\n\nKey elements include adjustments to the oil price cap, an expansion of the infrastructure ban to refineries and ports, a notification obligation for LNG tanker sales to third countries, and clarification that the ban on LNG terminal services also covers third-country operators controlled by Russian companies. In the financial sector, over 100 Russian banks are subject to a transaction ban, which also prohibits the use of financial messaging services. New restrictions on crypto services and platforms are introduced, including a ban on Russian nationals owning, controlling, or serving on the boards of crypto service companies. The package also includes measures for the legal protection of EU operators against abusive lawsuits.\n\nThe package expands export and import restrictions, adds 51 entities to the list of sanctioned companies supporting the military-industrial complex or circumventing sanctions, and lists 218 additional individuals and entities. This includes 94 banks and financial institutions, as well as key players in the Russian banking and crypto sectors. PwC Legal notes in an expert article that the sanctions packages require a new compliance architecture for financial services companies."
-        },
-        "url": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "23.07.2026",
-        "t": {
-          "de": "Meldung",
-          "en": "News"
-        },
-        "src": "finance.ec.europa.eu",
-        "ti": {
-          "de": "Russland-Sanktionen (Ukraine): 21. Paket mit neuen Finanz- und Krypto-Beschränkungen",
-          "en": "Russia Sanctions (Ukraine): 21st Package with New Financial and Crypto Restrictions"
-        },
-        "sl": "eu-adopts-21st-package-of-sanctions-against-russia",
-        "s": {
-          "de": "Die EU hat das 21. Sanktionspaket gegen Russland verabschiedet, das darauf abzielt, Russlands Fähigkeit zur Finanzierung des Krieges und zur Durchführung von Angriffen auf zivile Infrastruktur weiter einzuschränken. Die Maßnahmen konzentrieren sich auf die Bereiche Energie, Finanzdienstleistungen (einschließlich Krypto), Handel und den militärisch-industriellen Komplex.\n\nDas Paket enthält Anpassungen der Ölpreisobergrenze, ein Infrastrukturverbot für bestimmte russische Häfen, Flughäfen und Raffinerien sowie eine Notifizierungspflicht für den Verkauf von LNG-Tankern an Drittländer. Im Finanzsektor werden die Transaktionsverbote auf weitere Banken und Drittlandbanken ausgeweitet, und es gibt neue Beschränkungen für Krypto-Dienstleistungen und -Plattformen, einschließlich eines Verbots für russische Staatsangehörige, in Vorständen von Krypto-Dienstleistern tätig zu sein. Zudem werden Export- und Importbeschränkungen für Güter, die den militärisch-industriellen Komplex betreffen, erweitert.\n\nDas Paket listet 218 zusätzliche Personen und Organisationen, darunter 94 Banken und Finanzinstitute, die nun Vermögenssperren und Reiseverboten unterliegen. Es wurden auch 51 Unternehmen, die den militärisch-industriellen Komplex unterstützen oder Sanktionen umgehen, in die Liste aufgenommen, darunter Unternehmen aus China, der Türkei, Kirgisistan, Indien, Kasachstan und den Vereinigten Arabischen Emiraten. Für EU-Unternehmen werden rechtliche Schutzmaßnahmen gegen missbräuchliche Klagen eingeführt, die als Vergeltung für EU-Sanktionen dienen.",
-          "en": "The EU has adopted its 21st package of sanctions against Russia, aiming to further restrict Russia's ability to fund its war and carry out attacks on civilian infrastructure. The measures focus on the energy, financial services (including crypto), trade, and military-industrial complex sectors.\n\nThe package includes adjustments to the oil price cap, an infrastructure ban for certain Russian ports, airports, and refineries, and a notification obligation for LNG tanker sales to third countries. In the financial sector, transaction bans are extended to additional banks and third-country banks, and new restrictions are imposed on crypto services and platforms, including a prohibition for Russian nationals to serve on the boards of crypto service companies. Export and import restrictions for goods related to the military-industrial complex are also expanded.\n\nThe package lists 218 additional individuals and entities, including 94 banks and financial institutions, who are now subject to asset freezes and travel bans. Furthermore, 51 entities supporting the military-industrial complex or enabling sanctions circumvention have been added to the list, including entities from China, Turkey, Kyrgyzstan, India, Kazakhstan, and the United Arab Emirates. Legal protection measures for EU operators against abusive lawsuits used in retaliation for EU sanctions are also introduced."
-        },
-        "url": "https://finance.ec.europa.eu/news/eu-adopts-21st-package-sanctions-against-russia-2026-07-23_en",
-        "imp": "high",
-        "adv": [
-          {
-            "f": "PwC Legal",
-            "ti": "Das 20. und 21. Sanktionspaket der EU gegen Russland: Eine neue Compliance-Architektur für Finanzdienstleistungsunternehmen",
-            "url": "https://legal.pwc.de/de/news/fachbeitraege/das-20-und-21-sanktionspaket-der-eu-gegen-russland-eine-neue-compliance-architektur-fuer-finanzdienstleistungsunternehmen",
-            "d": "03.08.2026"
-          }
-        ]
-      },
-      {
-        "d": "05.02.2026",
-        "t": {
-          "de": "Gesetz",
-          "en": "Law"
-        },
-        "src": "recht.bund.de",
-        "ti": {
-          "de": "Anpassung von Straftatbeständen und Sanktionen bei Verstößen gegen EU-Restriktionen",
-          "en": "Law on adapting criminal offenses and sanctions for violations of EU restrictive measures"
-        },
-        "sl": "gesetz-zur-anpassung-von-straftatbestaenden-und-sanktionen-bei-verstoessen-gegen",
-        "s": {
-          "de": "Das Gesetz passt Straftatbestände und Sanktionen bei Verstößen gegen restriktive Maßnahmen der Europäischen Union an. Es wurde am 03.02.2026 ausgefertigt und am 05.02.2026 im Bundesgesetzblatt (BGBl. 2026 I Nr. 27) veröffentlicht.\n\nDie Regelung betrifft Unternehmen und Einzelpersonen, die den restriktiven Maßnahmen der EU unterliegen. Sie müssen sich auf verschärfte Strafen bei Nichteinhaltung einstellen, was eine genaue Prüfung der Compliance-Prozesse erfordert. Die Federführung liegt beim Bundesministerium für Wirtschaft und Energie.\n\nDas Gesetz ist am 05.02.2026 in Kraft getreten.",
-          "en": "This law adjusts criminal offenses and sanctions for violations of restrictive measures of the European Union. It was enacted on February 3, 2026, and published in the Federal Law Gazette (BGBl. 2026 I No. 27) on February 5, 2026.\n\nThe regulation affects companies and individuals subject to EU restrictive measures. They must prepare for stricter penalties in case of non-compliance, which requires a thorough review of their compliance processes. The Federal Ministry for Economic Affairs and Energy is responsible for this law.\n\nThe law came into force on February 5, 2026."
-        },
-        "url": "https://www.recht.bund.de/eli/bund/bgbl-1/2026/27",
-        "imp": "high"
       }
     ],
     "srep": [

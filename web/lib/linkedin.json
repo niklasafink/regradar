@@ -213,31 +213,52 @@
     "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
     "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich",
     "projet-de-loi-portant-creation-de-l-autorite-luxembourgeoise-de-lutte-contre-le",
-    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour"
+    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour",
+    "verordnung-eu-2026-2632-des-rates-vom-25-november-2026-zur-aenderung-der-verordn"
    ],
-   "hook": "BaFin konkretisiert die neuen Pflichten für Kapitalverwaltungsgesellschaften durch das FRiG.",
-   "folge": "Kapitalverwaltungsgesellschaften müssen Liquiditätsmanagement-Tools zur Vorbeugung systemischer Risiken einsetzen und erweiterte Angaben zu Geschäftsleitern machen. Dies betrifft Prozesse und Meldepflichten.",
-   "cover": "BaFin: Neue Pflichten für KVGen durch Fondsrisikobegrenzungsgesetz",
+   "hook": "BaFin präzisiert die Pflichten für Kapitalverwaltungsgesellschaften zur Liquiditätssteuerung offener Fonds.",
+   "folge": "KVGen müssen für offene Investmentvermögen mindestens zwei Liquiditätsmanagementinstrumente implementieren und dürfen Anlegern kein Wahlrecht bei deren Aktivierung einräumen. Das Rundschreiben 17/2026 ist ab sofort gültig.",
+   "cover": "BaFin: Neue Regeln für Liquiditätsmanagement in Investmentfonds",
    "zeilen": [
-    "Bundesgesetzblatt: Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung am 25.11.2026 veröffentlicht",
-    "AMLA: Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen bis 25.02.2027",
-    "Basler Ausschuss: Details zur G-SIB-Bewertung 2026 veröffentlicht"
+    "EU-Amtsblatt: Russland-Sanktionen gegen die Ukraine wurden erneut angepasst",
+    "Bundesgesetzblatt: Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung ist in Kraft",
+    "AMLA: Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen läuft bis 25.02.2027"
    ],
-   "frage": "Welche Liquiditätsmanagement-Tools setzen Sie bereits ein oder planen Sie einzuführen?",
+   "frage": "Welche Herausforderungen sehen Sie bei der Implementierung neuer Liquiditätsmanagementinstrumente?",
    "top": "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben",
    "kern": {
-    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Entwürfe von Leitlinien zur Bestimmung des Mindestbasisbetrags für Geldsanktionen bei AML/CFT-Verstößen.",
-    "consultation-on-the-draft-guidelines-on-determining-the-base-amount-for-imposing": "Die AMLA konsultiert bis zum 25.02.2027 Entwürfe von Leitlinien zur Bestimmung des Ausgangsbetrags für Geldsanktionen bei AML/CFT-Verstößen.",
-    "basel-committee-publishes-more-details-on-the-2026-assessment-of-global-systemic": "Der Basler Ausschuss veröffentlicht Details zur Methodik der Bewertung global systemrelevanter Banken (G-SIBs) für das Jahr 2026.",
-    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": "Die BaFin konkretisiert im Rundschreiben 17/2026 die neuen Regelungen des KAGB durch das Fondsrisikobegrenzungsgesetz für Kapitalverwaltungsgesellschaften.",
-    "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich": "Das Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung wurde am 25.11.2026 im Bundesgesetzblatt veröffentlicht und schafft nationale Rahmenbedingungen.",
-    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour": "Ein luxemburgischer Gesetzesentwurf zur jährlichen Finanzierung der Anti-Geldwäsche- und Terrorismusfinanzierungsbehörde (ALBA) wurde am 25.11.2026 eingebracht.",
-    "projet-de-loi-portant-creation-de-l-autorite-luxembourgeoise-de-lutte-contre-le": "Ein luxemburgischer Gesetzentwurf zur Schaffung der ALBA und teilweisen Umsetzung der EU-Richtlinie 2024/1640 wurde am 25.11.2026 eingebracht."
+    "consultation-on-the-draft-guidelines-on-determining-the-minimum-base-amount-for": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien zur Bestimmung des Mindestbasisbetrags für Geldsanktionen bei AML/CFT-Verstößen, um die Durchsetzung zu harmonisieren.",
+    "consultation-on-the-draft-guidelines-on-determining-the-base-amount-for-imposing": "Die AMLA konsultiert bis zum 25.02.2027 Leitlinien zur Bestimmung des Ausgangsbetrags für Geldsanktionen bei AML/CFT-Verstößen, um die Durchsetzung zu harmonisieren.",
+    "basel-committee-publishes-more-details-on-the-2026-assessment-of-global-systemic": "Der Basler Ausschuss veröffentlicht Details zur Methodik der G-SIB-Bewertung 2026, um das Verständnis der Scoring-Methodik für global systemrelevante Banken zu verbessern.",
+    "fondsrisikobegrenzungsgesetz-bafin-veroeffentlicht-rundschreiben": "Die BaFin präzisiert mit Rundschreiben 17/2026 die Pflicht von Kapitalverwaltungsgesellschaften, für offene Investmentvermögen mindestens zwei Liquiditätsmanagementinstrumente zu implementieren.",
+    "gesetz-zur-durchfuehrung-der-verordnung-eu-2024-2847-ueber-horizontale-cybersich": "Das Gesetz zur Umsetzung der EU-Cyberresilienz-Verordnung (2024/2847) schafft den nationalen Rahmen für Cybersicherheitsanforderungen an Produkte mit digitalen Elementen.",
+    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour": "Ein luxemburgischer Gesetzesentwurf sieht die jährliche Finanzierung der neuen Anti-Geldwäsche- und Terrorismusfinanzierungsbehörde (ALBA) vor.",
+    "projet-de-loi-portant-creation-de-l-autorite-luxembourgeoise-de-lutte-contre-le": "Ein luxemburgischer Gesetzentwurf schafft die neue Geldwäschebekämpfungsbehörde ALBA und setzt Teile der EU-Richtlinie 2024/1640 um.",
+    "verordnung-eu-2026-2632-des-rates-vom-25-november-2026-zur-aenderung-der-verordn": "Die Verordnung (EU) 2026/2632 ändert die Russland-Sanktionen (EU) Nr. 833/2014, was Anpassungen der Compliance-Prozesse erfordert."
    },
    "doppelt": [
-    "consultation-on-the-draft-guidelines-on-determining-the-base-amount-for-imposing",
-    "projet-de-loi-relative-a-l-octroi-d-une-dotation-annuelle-a-l-autorite-luxembour"
+    "consultation-on-the-draft-guidelines-on-determining-the-base-amount-for-imposing"
    ],
+   "fmt": 5,
+   "model": "google/gemini-2.5-flash"
+  },
+  "2026-11-27": {
+   "window": [
+    "2026-11-26"
+   ],
+   "keys": [
+    "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru"
+   ],
+   "hook": "Eine Berichtigung der DORA-Verordnung stellt die sprachliche Präzision im deutschen Text sicher.",
+   "folge": "Die Delegierte Verordnung (EU) 2025/1190 zu kritischen IKT-Drittdienstleistern wurde redaktionell korrigiert. Finanzunternehmen müssen die korrekte deutsche Fassung für die Bestimmung und Verwaltung ihrer kritischen IKT-Drittdienstleister gemäß DORA beachten.",
+   "cover": "EU-Amtsblatt: DORA-Verordnung zu IKT-Drittdienstleistern korrigiert",
+   "zeilen": [],
+   "frage": "Welche Kriterien nutzen Sie intern, um die Kritikalität Ihrer IKT-Drittdienstleister zu bewerten?",
+   "top": "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru",
+   "kern": {
+    "berichtigung-der-delegierten-verordnung-eu-2025-1190-der-kommission-vom-13-febru": "Eine Berichtigung der DORA-Delegierten Verordnung (EU) 2025/1190 korrigiert spezifische Formulierungen im deutschen Text zu Kriterien für kritische IKT-Drittdienstleister."
+   },
+   "doppelt": [],
    "fmt": 5,
    "model": "google/gemini-2.5-flash"
   }
