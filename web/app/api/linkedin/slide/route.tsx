@@ -1,31 +1,29 @@
-// Slides des täglichen LinkedIn-Posts als PNG (1080×1080, quadratisch für
-// die LinkedIn-Slideshow). GET ?day=YYYY-MM-DD&n=0 → Titel-Slide, n=1…N je
-// Meldung, n=N+1 Abschluss. Inhalt aus lib/linkedin.ts, Regeln in LINKEDIN.md.
-// Titel und Abschluss dunkel mit Radar-Motiv, Meldungen hell mit großer
-// Nummer und Box „Kurz gesagt“. Nie Versalien (kein textTransform uppercase).
+// Slides des täglichen LinkedIn-Posts als PNG (1600×1147, Querformat wie die
+// App-Ansicht). GET ?day=YYYY-MM-DD&n=0 → Update-Liste der App mit rotem
+// Rahmen um die Meldungen des Tages, n=1…N → Impact-Analyse je Meldung, zu der
+// scraper/richpages.py eine erzeugt hat. Inhalt aus lib/linkedin.ts, Regeln in
+// LINKEDIN.md. Nie Versalien (kein textTransform uppercase).
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { LOGOS } from "@/components/authority-logo";
-import { deDate, digestFor, windowLabel, type Digest } from "@/lib/linkedin";
-import { authority } from "@/lib/logic";
+import { deDate, digestFor, impactSlides, type Digest } from "@/lib/linkedin";
+import { IMPACT_LABEL, impactOf } from "@/lib/logic";
+import type { RichUpdate } from "@/lib/rich";
+import { UPDATE_PAGES, type UpdatePage } from "@/lib/updates";
 
 export const runtime = "nodejs";
 
-const S = 1080;
-const C = {
-  ink: "#0f172a",
-  text: "#475569",
-  muted: "#94a3b8",
-  line: "#e2e8f0",
-  soft: "#f1f5f9",
-  blue: "#2563eb",
-  nightText: "#cbd5e1",
-  nightLine: "rgba(255,255,255,0.16)",
-};
+const W = 1600;
+const H = 1147;
+/** Maße sind für 1200 Pixel Breite entworfen; k rechnet auf die Slide-Breite um. */
+const k = (n: number) => Math.round((n * W) / 1200);
+const C = { ink: "#0f172a", text: "#334155", soft: "#64748b", line: "#e2e8f0", red: "#e11d48" };
+const MAX_ROWS = 8;
+const MAX_BOX_ROWS = 6;
 
-// Schriften, Logos und Icon bindet next.config.ts per outputFileTracingIncludes
-// ein; turbopackIgnore verhindert, dass der Build das ganze Projekt mitnimmt.
+// Schriften und Logos bindet next.config.ts per outputFileTracingIncludes ein;
+// turbopackIgnore verhindert, dass der Build das ganze Projekt mitnimmt.
 const asset = (p: string) => readFile(join(/* turbopackIgnore: true */ process.cwd(), p));
 
 async function fonts() {
@@ -56,29 +54,20 @@ function ratio(file: string, buf: Buffer): number {
   return w && h ? Number(w[1]) / Number(h[1]) : 2;
 }
 
-/** Flaggen ohne Behördennamen: hier steht der Name zusätzlich daneben. */
-const GENERIC = new Set(["eu.svg", "de.svg"]);
-
-interface Logo { src: string; ratio: number; generic: boolean }
+interface Logo { src: string; ratio: number }
 
 async function logo(srcDomain: string): Promise<Logo | null> {
   const file = LOGOS[srcDomain];
   if (!file) return null;
   const buf = await asset(`public/authorities/${file}`);
   const mime = file.endsWith(".png") ? "image/png" : "image/svg+xml";
-  return {
-    src: `data:${mime};base64,${buf.toString("base64")}`,
-    ratio: ratio(file, buf),
-    generic: GENERIC.has(file),
-  };
+  return { src: `data:${mime};base64,${buf.toString("base64")}`, ratio: ratio(file, buf) };
 }
 
-/** Logo in einer festen Box, breite Wortmarken werden nicht riesig. */
 function LogoImg({ l, h, maxW }: { l: Logo; h: number; maxW: number }) {
   const w = Math.min(maxW, Math.round(h * l.ratio));
-  const hh = Math.round(w / l.ratio);
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={l.src} width={w} height={hh} alt="" style={{ objectFit: "contain" }} />;
+  return <img src={l.src} width={w} height={Math.round(w / l.ratio)} alt="" style={{ objectFit: "contain" }} />;
 }
 
 let ICON: string | null = null;
@@ -87,249 +76,203 @@ async function icon() {
   return ICON;
 }
 
-/** Phosphor „ArrowRight“, Gewicht Bold (MIT), wie das Caret in der Navigation. */
-function ArrowIcon({ size, color }: { size: number; color: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 256 256" fill={color}>
-      <path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z" />
-    </svg>
-  );
-}
-
-/** Radar-Ringe mit Sweep und blauem Blip als Hintergrund-Motiv (wie im Logo). */
-function radarSvg(stroke: string, opacity: number) {
-  const rings = [140, 260, 380, 500]
-    .map((r) => `<circle cx="540" cy="540" r="${r}" fill="none" stroke="${stroke}" stroke-opacity="${opacity}" stroke-width="3"/>`)
-    .join("");
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
-    <defs><linearGradient id="g" x1="540" y1="540" x2="894" y2="186" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="${stroke}" stop-opacity="0"/><stop offset="1" stop-color="${stroke}" stop-opacity="${opacity * 1.6}"/>
-    </linearGradient></defs>
-    ${rings}
-    <path d="M540 540 L894 186 A500 500 0 0 1 1040 540 Z" fill="url(#g)"/>
-    <line x1="540" y1="540" x2="894" y2="186" stroke="${stroke}" stroke-opacity="${opacity * 2}" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="540" cy="540" r="10" fill="${stroke}" fill-opacity="${opacity * 2.5}"/>
-    <circle cx="690" cy="430" r="22" fill="${C.blue}"/>
-  </svg>`;
-  return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
-}
-
-function Radar({ dark, size, right, top }: { dark: boolean; size: number; right: number; top: number }) {
-  return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={radarSvg(dark ? "#ffffff" : C.ink, dark ? 0.13 : 0.06)}
-      width={size} height={size} alt=""
-      style={{ position: "absolute", right, top }}
-    />
-  );
-}
-
-/** Wortmarke „regulatory radar.de“ (DESIGN.md: regulatory fett, radar kursiv-leicht). */
-function Brand({ iconSrc, size, dark }: { iconSrc: string; size: number; dark?: boolean }) {
+/** Wortmarke „regulatory radar“ (DESIGN.md: regulatory fett, radar kursiv-leicht). */
+function Brand({ iconSrc, size }: { iconSrc: string; size: number }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: size * 0.4 }}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={iconSrc} width={size * 1.3} height={size * 1.3} alt=""
-        style={dark ? { borderRadius: 999, border: "2px solid rgba(255,255,255,0.35)" } : {}} />
-      <div style={{ display: "flex", fontSize: size, color: dark ? "#fff" : C.ink, letterSpacing: -0.5 }}>
+      <img src={iconSrc} width={size * 1.3} height={size * 1.3} alt="" />
+      <div style={{ display: "flex", fontSize: size, color: C.ink, letterSpacing: -0.5 }}>
         <span style={{ fontFamily: "Manrope", fontWeight: 700 }}>regulatory</span>
-        <span style={{ fontFamily: "Inter", fontStyle: "italic", fontWeight: 400, color: dark ? C.nightText : C.text, marginLeft: size * 0.12 }}>radar</span>
-        <span style={{ fontFamily: "Inter", fontWeight: 400, color: dark ? C.nightText : C.text }}>.de</span>
+        <span style={{ fontFamily: "Inter", fontStyle: "italic", fontWeight: 400, color: C.text, marginLeft: size * 0.12 }}>radar</span>
       </div>
     </div>
   );
 }
 
-/** Überschrift wortweise mit festem Wortabstand. Satori setzt Leerzeichen bei
-    negativem Buchstabenabstand ungleich breit („desKunden“, „Kunden  (C-70/25)“). */
-function Words({ text, size, style }: { text: string; size: number; style: React.CSSProperties }) {
+/** Dunkle Pille mit der Domain, unten rechts auf jeder Slide. */
+function Domain() {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", columnGap: Math.round(size * 0.27), fontSize: size, ...style }}>
-      {/* Bindestrich-Wörter als feste Zeile aus Teilen: als ein Span misst Satori
-          „Post-Trade-Transparenz“ zu breit und lässt eine Lücke dahinter. */}
-      {text.split(/\s+/).filter(Boolean).map((w, i) => (
-        <div key={i} style={{ display: "flex", flexWrap: "nowrap" }}>
-          {w.split(/(?<=-)/).map((part, j) => <span key={j} style={{ whiteSpace: "nowrap" }}>{part}</span>)}
+    <div style={{
+      display: "flex", position: "absolute", right: k(56), bottom: k(30), padding: `${k(8)}px ${k(26)}px`,
+      borderRadius: 999, background: C.ink, color: "#fff", fontFamily: "Inter", fontWeight: 500, fontSize: k(21),
+    }}>regulatoryradar.de</div>
+  );
+}
+
+/** Handgezeichneter roter Pfeil nach rechts unten, zeigt auf den Rahmen. */
+const ARROW = `data:image/svg+xml;base64,${Buffer.from(
+  `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="44" viewBox="0 0 64 44"><path d="M4 8 C26 6 38 16 44 32 M33 28 L44 36 L48 23" stroke="${C.red}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+).toString("base64")}`;
+
+const slideTitle = (ti: string) => ti.replace(/\s*\((?=[^)]*\d)[^()\s]{12,}\)\s*$/, "");
+
+/** Kürzt an einer Wortgrenze, damit ein Aufzählungspunkt höchstens zwei Zeilen belegt. */
+const clip = (s: string, max: number) =>
+  s.length <= max ? s : `${s.slice(0, max).replace(/\s+\S*$/, "").replace(/[\s,;:.]+$/, "")} …`;
+
+function Pill({ label, strong }: { label: string; strong: boolean }) {
+  return (
+    <div style={{
+      display: "flex", flexShrink: 0, whiteSpace: "nowrap", padding: `${k(2)}px ${k(13)}px`, borderRadius: 999, fontFamily: "Inter", fontWeight: 500,
+      fontSize: k(13), color: strong ? "#fff" : C.soft, background: strong ? C.ink : "#fff",
+      border: `${Math.max(1, k(1))}px solid ${strong ? C.ink : "#cbd5e1"}`,
+    }}>{label}</div>
+  );
+}
+
+const impactLabel = (u: UpdatePage["u"]) => {
+  const i = impactOf(u);
+  return { text: `Impact: ${IMPACT_LABEL[i].de}`, strong: i === "high" };
+};
+
+/* ---------- Slide 1: Update-Liste ---------- */
+
+/** Zeilen der Liste: ab der ersten Meldung des Zeitfensters, dann ältere zum Vergleich. */
+function listRows(d: Digest): { inBox: UpdatePage[]; more: number; context: UpdatePage[] } {
+  const days = new Set(d.window.map(deDate));
+  const start = UPDATE_PAGES.findIndex((p) => days.has(p.u.d));
+  const fresh = UPDATE_PAGES.slice(start).filter((p) => days.has(p.u.d));
+  const shown = fresh.length > MAX_BOX_ROWS ? MAX_BOX_ROWS - 1 : fresh.length;
+  const rowsUsed = shown + (fresh.length > shown ? 1 : 0);
+  const after = UPDATE_PAGES.slice(start + fresh.length).slice(0, Math.max(0, MAX_ROWS - rowsUsed));
+  return { inBox: fresh.slice(0, shown), more: fresh.length - shown, context: after };
+}
+
+const ROW_H = k(62);
+
+function Row({ p, l }: { p: UpdatePage; l: Logo | null }) {
+  const imp = impactLabel(p.u);
+  return (
+    <div style={{ display: "flex", alignItems: "center", height: ROW_H, borderBottom: `1px solid #f1f5f9` }}>
+      <div style={{ display: "flex", width: k(88), flexShrink: 0, justifyContent: "flex-end", fontSize: k(13), color: C.soft }}>{p.u.d}</div>
+      <div style={{ display: "flex", width: k(40), flexShrink: 0, justifyContent: "center", position: "relative", alignSelf: "stretch", alignItems: "center" }}>
+        <div style={{ position: "absolute", top: 0, bottom: 0, left: k(20), width: 1, background: C.line }} />
+        <div style={{ display: "flex", width: k(9), height: k(9), borderRadius: 999, background: "#2563eb" }} />
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", flex: "1 1 0", minWidth: 0, marginRight: k(16) }}>
+        <div style={{ display: "flex", alignItems: "center", gap: k(8), minWidth: 0 }}>
+          {l && <LogoImg l={l} h={k(15)} maxW={k(44)} />}
+          <div style={{
+            display: "block", fontFamily: "Inter", fontWeight: 500, fontSize: k(17), color: C.ink,
+            whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", minWidth: 0, flex: "1 1 0",
+          }}>{slideTitle(p.u.ti.de)}</div>
+        </div>
+        <div style={{
+          display: "block", fontSize: k(13), color: C.soft, marginTop: k(1),
+          whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+        }}>{`${p.fw.n.de}, ${p.u.t.de}`}</div>
+      </div>
+      <Pill label={imp.text} strong={imp.strong} />
+    </div>
+  );
+}
+
+async function listSlide(d: Digest, iconSrc: string) {
+  const { inBox, more, context } = listRows(d);
+  const last = d.window[d.window.length - 1];
+  const label = d.window.length > 1
+    ? `Neu vom ${deDate(d.window[0]).slice(0, 6)} bis ${deDate(last)}`
+    : `Neu vom ${deDate(d.window[0])}`;
+  const boxRows = inBox.length + (more > 0 ? 1 : 0);
+  const logos = new Map(await Promise.all([...inBox, ...context].map(async (p) => [p.slug, await logo(p.u.src)] as const)));
+  return (
+    <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", background: "#fff", position: "relative", fontFamily: "Inter", color: C.ink, padding: `${k(36)}px ${k(56)}px 0` }}>
+      <Brand iconSrc={iconSrc} size={k(26)} />
+      <div style={{ display: "flex", fontFamily: "Manrope", fontWeight: 500, fontSize: k(42), letterSpacing: -1, marginTop: k(26) }}>Alle Updates</div>
+      {/* Datum in Rot mit Pfeil auf den Rahmen. */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: k(10), height: k(70), color: C.red, fontFamily: "Inter", fontWeight: 500, fontSize: k(24) }}>
+        {label}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={ARROW} width={k(64)} height={k(44)} alt="" />
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", position: "relative" }}>
+        <div style={{
+          position: "absolute", left: k(-12), right: k(-12), top: k(2), height: boxRows * ROW_H - k(4),
+          border: `${k(3)}px solid ${C.red}`, borderRadius: k(14),
+        }} />
+        {inBox.map((p) => <Row key={p.slug} p={p} l={logos.get(p.slug) ?? null} />)}
+        {more > 0 && (
+          <div style={{ display: "flex", alignItems: "center", height: ROW_H, paddingLeft: k(128), fontSize: k(16), color: C.soft }}>
+            {`+ ${more} weitere ${more === 1 ? "Meldung" : "Meldungen"} vom selben Zeitraum`}
+          </div>
+        )}
+        {context.map((p) => <Row key={p.slug} p={p} l={logos.get(p.slug) ?? null} />)}
+      </div>
+      <Domain />
+    </div>
+  );
+}
+
+/* ---------- Slide 2…: Impact-Analyse ---------- */
+
+const DEPT_WORDS = /compliance|risiko|meldewesen|revision|geschäftsleitung|recht|kunden|officer|fachbereich/i;
+const WORKLOAD = { hoch: 0, mittel: 1, gering: 2 } as const;
+
+/** „Bank, Asset Manager“ aus den Zielgruppen der Detailseite; Funktionsbezeichnungen gehören zu den Abteilungen. */
+function affected(rich: RichUpdate): string {
+  const pick = (status: string) =>
+    rich.audience.filter((a) => a.status === status && !DEPT_WORDS.test(a.name)).map((a) => a.name);
+  const names = pick("betroffen").length ? pick("betroffen") : pick("teilweise");
+  return [...new Set(names)].slice(0, 4).join(", ");
+}
+
+function departments(rich: RichUpdate): string {
+  const deps = [...(rich.impact_analysis?.departments ?? [])]
+    .sort((a, b) => WORKLOAD[a.workload] - WORKLOAD[b.workload]);
+  return [...new Set(deps.map((x) => x.name))].slice(0, 4).join(", ");
+}
+
+function Facts({ label, value }: { label: string; value: string }) {
+  if (!value) return null;
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap", alignItems: "baseline", fontSize: k(17), color: C.soft, marginTop: k(3) }}>
+      <span style={{ marginRight: k(8) }}>{label}</span>
+      <span style={{ fontFamily: "Manrope", fontWeight: 700, color: C.ink, fontSize: k(19) }}>{value}</span>
+    </div>
+  );
+}
+
+function Group({ title, item }: { title: string; item?: { name: string; change: string; steps?: string[] } }) {
+  if (!item) return null;
+  const bullets = [item.change, item.steps?.[0]].filter((x): x is string => !!x).map((x) => clip(x, 210));
+  return (
+    <div style={{ display: "flex", flexDirection: "column", marginTop: k(14) }}>
+      <div style={{ display: "flex", fontFamily: "Manrope", fontWeight: 500, fontSize: k(21), color: C.ink }}>{title}</div>
+      <div style={{ display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: k(17), color: C.ink, margin: `${k(3)}px 0 0 ${k(20)}px` }}>{item.name}</div>
+      {bullets.map((b) => (
+        <div key={b} style={{ display: "flex", margin: `${k(3)}px 0 0 ${k(20)}px`, fontSize: k(16), lineHeight: 1.42, color: C.text }}>
+          <div style={{ display: "flex", width: k(22), flexShrink: 0, justifyContent: "center" }}>•</div>
+          <div style={{ display: "flex", flexGrow: 1, minWidth: 0 }}>{b}</div>
         </div>
       ))}
     </div>
   );
 }
 
-/** Lange Kennungen am Titelende („(ESMA43-502934634-2993)“) fallen auf der Slide weg,
-    kurze Aktenzeichen wie „(C-70/25)“ bleiben. */
-const slideTitle = (ti: string) => ti.replace(/\s*\((?=[^)]*\d)[^()\s]{12,}\)\s*$/, "");
-
-function Pill({ children, blue, outline }: { children: React.ReactNode; blue?: boolean; outline?: boolean }) {
-  const bg = blue ? C.blue : "#fff";
+function impactSlide(page: UpdatePage, rich: RichUpdate) {
+  const ia = rich.impact_analysis!;
+  const imp = impactLabel(page.u);
   return (
-    <div style={{
-      display: "flex", padding: "9px 24px", borderRadius: 999, fontSize: 25,
-      fontFamily: "Inter", fontWeight: 500,
-      background: outline ? "transparent" : bg,
-      color: blue || outline ? "#fff" : C.ink,
-      border: `2px solid ${outline ? "rgba(255,255,255,0.4)" : blue ? bg : C.line}`,
-    }}>{children}</div>
-  );
-}
-
-function Footer({ iconSrc, page, total, dark }: { iconSrc: string; page: number; total: number; dark?: boolean }) {
-  return (
-    <div style={{
-      display: "flex", justifyContent: "space-between", alignItems: "center", flexShrink: 0,
-      borderTop: `2px solid ${dark ? C.nightLine : C.line}`, paddingTop: 28,
-    }}>
-      <Brand iconSrc={iconSrc} size={26} dark={dark} />
-      <div style={{ display: "flex", fontSize: 24, color: C.muted, fontFamily: "Inter" }}>
-        {`${page} / ${total}`}
+    <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", background: "#fff", position: "relative", fontFamily: "Inter", color: C.text, padding: `${k(34)}px ${k(56)}px 0` }}>
+      <div style={{ display: "flex", alignItems: "center", gap: k(12), fontSize: k(17), color: C.soft }}>
+        {page.u.d}
+        <Pill label={imp.text} strong={imp.strong} />
       </div>
-    </div>
-  );
-}
-
-const frame = (dark: boolean) => ({
-  width: "100%", height: "100%", display: "flex", flexDirection: "column" as const,
-  position: "relative" as const, overflow: "hidden" as const,
-  // Großer Rand oben und unten: die LinkedIn-App zeigt quadratische Seiten
-  // mobil beschnitten (ca. 7 % oben, 12 % unten, Screenshot 16.10.2026).
-  background: dark ? C.ink : "#fff", padding: "118px 80px 112px",
-  fontFamily: "Inter", color: dark ? "#fff" : C.ink,
-});
-
-/** „ESMA, EBA und EU-Amtsblatt“: Behörden der übrigen Meldungen, höchstens drei. */
-function others(d: Digest): string {
-  const names = [...new Set(d.items.slice(1).map((i) => authority(i.page.u.src)))];
-  const shown = names.length > 3 ? [...names.slice(0, 2), "weiteren"] : names;
-  return shown.length > 1 ? `${shown.slice(0, -1).join(", ")} und ${shown[shown.length - 1]}` : shown[0] ?? "";
-}
-
-// Titel-Slide: die wichtigste Meldung als konkrete Überschrift (im Jev-Vergleich
-// klar vor Rubrik-Titeln wie „Regulatorik-Update für Finanzinstitute“), darunter
-// die übrigen Meldungen als Ausblick und der Pfeil als Wisch-Hinweis.
-function cover(d: Digest, iconSrc: string) {
-  const n = d.items.length;
-  const last = d.window[d.window.length - 1];
-  const wd = (iso: string) => windowLabel([iso]).split(",")[0];
-  // Montags deckt der Post Freitag bis Sonntag ab: beide Wochentage nennen.
-  const date = d.window.length > 1
-    ? `${wd(d.window[0])} bis ${wd(last)}, ${deDate(d.window[0]).slice(0, 6)} bis ${deDate(last)}`
-    : windowLabel(d.window);
-  const size = d.cover.length > 75 ? 62 : d.cover.length > 50 ? 74 : 86;
-  const more = n === 1 ? "Die Meldung im Überblick"
-    : `+ ${n - 1} ${n === 2 ? "weitere Meldung" : "weitere Meldungen"} von ${others(d)}`;
-  return (
-    <div style={frame(true)}>
-      <Radar dark size={760} right={-330} top={-250} />
-      <div style={{ display: "flex", flexGrow: 1 }} />
-      <div style={{ display: "flex", marginBottom: 40 }}><Brand iconSrc={iconSrc} size={30} dark /></div>
-      {/* Datum groß und fett: zeigt auf einen Blick, dass der Post tagesaktuell ist. */}
-      <div style={{
-        display: "flex", marginBottom: 22, color: "#fff",
-        fontFamily: "Manrope", fontWeight: 700, fontSize: date.length > 30 ? 38 : 44, letterSpacing: -0.5,
-      }}>{date}</div>
-      <div style={{ display: "flex", fontSize: 34, color: "#60a5fa", fontWeight: 500, marginBottom: 24 }}>
-        Regulatorik-Update für Finanzinstitute
+      <div style={{ display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: k(25), lineHeight: 1.28, color: C.ink, marginTop: k(8), letterSpacing: -0.3 }}>
+        {slideTitle(page.u.ti.de)}
       </div>
-      <Words text={d.cover} size={size} style={{
-        fontFamily: "Manrope", fontWeight: 700, lineHeight: 1.08, letterSpacing: -1.5, maxWidth: 920,
-      }} />
-      <div style={{
-        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 40,
-        marginTop: 52, paddingTop: 32, borderTop: `2px solid ${C.nightLine}`,
-      }}>
-        {/* Wortweise ohne Umbruch innerhalb, sonst trennt Satori „EU-Amtsblatt“ am Bindestrich. */}
-        <div style={{ display: "flex", flexWrap: "wrap", columnGap: 10, fontSize: 34, lineHeight: 1.3, color: C.nightText, maxWidth: 720 }}>
-          {more.split(" ").map((w, i) => <span key={i} style={{ whiteSpace: "nowrap" }}>{w}</span>)}
-        </div>
-        <div style={{
-          display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
-          width: 104, height: 104, borderRadius: 999, background: "#fff",
-        }}>
-          <ArrowIcon size={52} color={C.ink} />
-        </div>
+      <div style={{ display: "flex", flexDirection: "column", marginTop: k(10) }}>
+        <Facts label="Betroffen:" value={affected(rich)} />
+        <Facts label="Abteilungen:" value={departments(rich)} />
       </div>
-    </div>
-  );
-}
-
-async function itemSlide(d: Digest, idx: number, iconSrc: string) {
-  const { page, kern } = d.items[idx];
-  const u = page.u;
-  const l = await logo(u.src);
-  const ti = slideTitle(u.ti.de);
-  const long = ti.length + kern.length;
-  const tiSize = ti.length > 110 || long > 290 ? 40 : ti.length > 75 || long > 230 ? 46 : 54;
-  const kernSize = long > 290 ? 29 : 32;
-  const fw = page.fw.n.de.split(":")[0].trim();
-  const nr = String(idx + 1).padStart(2, "0");
-  return (
-    <div style={frame(false)}>
-      <Radar dark={false} size={640} right={-330} top={-300} />
-      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", flexShrink: 0 }}>
-        <div style={{
-          display: "flex", fontFamily: "Manrope", fontWeight: 700, fontSize: 140,
-          lineHeight: 0.82, letterSpacing: -6, color: C.ink,
-        }}>{nr}</div>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 18, paddingTop: 4 }}>
-          {/* Einheitliche Logo-Höhe für Flaggen und Wortmarken. */}
-          <div style={{ display: "flex", alignItems: "center", gap: 16, height: 60 }}>
-            {l && <LogoImg l={l} h={l.generic ? 46 : 60} maxW={200} />}
-            {(!l || l.generic) && (
-              <div style={{ display: "flex", fontSize: 30, fontWeight: 500 }}>{authority(u.src)}</div>
-            )}
-          </div>
-          <div style={{ display: "flex", fontSize: 26, color: C.muted }}>{u.d}</div>
-        </div>
+      <div style={{ display: "flex", fontFamily: "Manrope", fontWeight: 500, fontSize: k(29), color: C.ink, letterSpacing: -0.5, marginTop: k(14), paddingTop: k(12), borderTop: `1px solid ${C.line}` }}>
+        Impact-Analyse
       </div>
-      <div style={{ display: "flex", gap: 12, marginTop: 34, flexShrink: 0 }}>
-        <Pill>{u.t.de}</Pill>
-        {u.imp === "high" && <Pill blue>Hohe Relevanz</Pill>}
-      </div>
-      <Words text={ti} size={tiSize} style={{
-        fontFamily: "Manrope", fontWeight: 700, lineHeight: 1.14, letterSpacing: -0.5, marginTop: 26, flexShrink: 0,
-      }} />
-      {/* Box direkt unter dem Titel, der freie Raum liegt über der Fußzeile. */}
-      <div style={{
-        display: "flex", flexDirection: "column", background: C.soft, borderRadius: 32,
-        padding: "30px 38px", marginTop: 36, flexShrink: 0,
-      }}>
-        <div style={{ display: "flex", fontSize: 23, color: C.blue, fontWeight: 500 }}>Kurz gesagt</div>
-        <div style={{ display: "flex", fontSize: kernSize, lineHeight: 1.38, color: C.ink, marginTop: 10 }}>{kern}</div>
-        <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 18 }}>
-          {u.deadline && (
-            <div style={{ display: "flex", fontSize: 23, fontWeight: 500, color: C.blue }}>{`Frist: ${u.deadline}`}</div>
-          )}
-          <div style={{ display: "flex", fontSize: 23, color: C.text }}>{`Rahmenwerk: ${fw}`}</div>
-        </div>
-      </div>
-      <div style={{ display: "flex", flexGrow: 1, minHeight: 28 }} />
-      <Footer iconSrc={iconSrc} page={idx + 2} total={d.slides} />
-    </div>
-  );
-}
-
-function endSlide(d: Digest, iconSrc: string) {
-  return (
-    <div style={frame(true)}>
-      <Radar dark size={950} right={-500} top={-200} />
-      <div style={{ display: "flex", flexGrow: 1 }} />
-      <Words text="Alle Meldungen mit Zusammenfassung und Link zur Quelle" size={66} style={{
-        fontFamily: "Manrope", fontWeight: 700, lineHeight: 1.1, letterSpacing: -1,
-      }} />
-      <div style={{ display: "flex", marginTop: 44 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16, padding: "20px 42px", borderRadius: 999, background: "#fff", color: C.ink, fontSize: 38, fontWeight: 500 }}>
-          regradar.de/updates
-          <ArrowIcon size={36} color={C.ink} />
-        </div>
-      </div>
-      <div style={{ display: "flex", gap: 14, marginTop: 48 }}>
-        {["Rechtsmonitoring", "Kostenlos", "Quelloffen"].map((t) => <Pill key={t} outline>{t}</Pill>)}
-      </div>
-      <div style={{ display: "flex", fontSize: 30, lineHeight: 1.45, color: C.nightText, marginTop: 34, marginBottom: 48 }}>
-        Kostenloses Rechtsmonitoring mit öffentlichem Quellcode. Jeden Montag die Meldungen der Woche zu Ihren Rahmenwerken per E-Mail.
-      </div>
-      <Footer iconSrc={iconSrc} page={d.slides} total={d.slides} dark />
+      <Group title="Kontrollen" item={ia.controls[0]} />
+      <Group title="Prozesse" item={ia.processes[0]} />
+      <Group title="Policies" item={ia.policies[0]} />
+      <Domain />
     </div>
   );
 }
@@ -341,12 +284,11 @@ export async function GET(req: Request) {
   const d = /^\d{4}-\d{2}-\d{2}$/.test(day) ? digestFor(day) : undefined;
   if (!d || !Number.isInteger(n) || n < 0 || n >= d.slides)
     return new Response("Nicht gefunden", { status: 404 });
-  const iconSrc = await icon();
-  const el = n === 0 ? cover(d, iconSrc)
-    : n === d.slides - 1 ? endSlide(d, iconSrc)
-    : await itemSlide(d, n - 1, iconSrc);
+  const el = n === 0
+    ? await listSlide(d, await icon())
+    : (({ item, rich }) => impactSlide(item.page, rich))(impactSlides(d)[n - 1]);
   return new ImageResponse(el, {
-    width: S, height: S, fonts: await fonts(),
+    width: W, height: H, fonts: await fonts(),
     headers: { "Cache-Control": "public, max-age=300" },
   });
 }

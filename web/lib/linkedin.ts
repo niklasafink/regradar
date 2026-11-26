@@ -6,6 +6,7 @@
 
 import type { Update } from "./data";
 import { authority } from "./logic";
+import { richBySlug, type RichUpdate } from "./rich";
 import { UPDATE_PAGES, type UpdatePage } from "./updates";
 import linkedinJson from "./linkedin.json";
 
@@ -87,9 +88,16 @@ export interface Digest {
   comment: string;
   /** Titel des PDF-Dokuments (Slideshow) */
   title: string;
-  /** Anzahl der Slides: Titel, je Meldung eine, Abschluss */
+  /** Anzahl der Slides: Update-Liste, dazu je Meldung mit Impact-Analyse eine */
   slides: number;
 }
+
+/** Meldungen mit Impact-Analyse (scraper/richpages.py); nur sie bekommen eine eigene Slide. */
+export const impactSlides = (d: Digest): { item: DigestItem; rich: RichUpdate }[] =>
+  d.items.flatMap((item) => {
+    const rich = richBySlug(item.page.slug);
+    return rich?.impact_analysis ? [{ item, rich }] : [];
+  });
 
 const WEEKDAYS = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 const IMP_RANK: Record<string, number> = { high: 0, medium: 1, low: 2 };
@@ -163,7 +171,7 @@ export function digestFor(day: string): Digest | undefined {
     tags,
   ].filter(Boolean).join("\n\n");
 
-  return {
+  const digest: Digest = {
     day,
     window: post.window,
     hook: post.hook,
@@ -174,8 +182,10 @@ export function digestFor(day: string): Digest | undefined {
     title: post.window.length === 1
       ? `Regulatorik-Update vom ${deDate(post.window[0])}`
       : `Regulatorik-Update vom ${deDate(post.window[0]).slice(0, 6)} bis ${deDate(post.window[post.window.length - 1])}`,
-    slides: n + 2,
+    slides: 1,
   };
+  digest.slides += impactSlides(digest).length;
+  return digest;
 }
 
 /** Alle Posttage mit Inhalt, neueste zuerst. */

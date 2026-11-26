@@ -17,7 +17,7 @@
 import { createHash } from "node:crypto";
 import { Resend } from "resend";
 import { approverAddress, createSignedToken, senderFields } from "./email";
-import { digestFor, type Digest } from "./linkedin";
+import { digestFor, impactSlides, type Digest } from "./linkedin";
 import { digestPdf } from "./linkedinPdf";
 import { redis } from "./subscribers";
 
@@ -62,6 +62,7 @@ export function digestHash(d: Digest): string {
   return createHash("sha256").update(JSON.stringify([
     d.text, d.comment, d.cover, d.window,
     d.items.map((i) => [i.page.u.ti.de, i.page.u.d, i.kern]),
+    impactSlides(d).map((s) => s.rich.meta.generated),
   ])).digest("hex").slice(0, 16);
 }
 
