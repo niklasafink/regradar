@@ -1,10 +1,9 @@
 // Fassungsvergleiche alt gegen neu je Rahmenwerk (Schlüssel = Rahmenwerk-ID).
-// Die Zeilen liegen als JSON neben dieser Datei; sie entstehen aus dem Normtext
-// beider Fassungen (Wortlaut wörtlich, Prüfung gegen die Quelle) und der
-// Begründung des Entwurfs. Keine regulatorische Auskunft.
+// Die Paragrafen-Daten entstehen mit scripts/gwg-compare-build.py aus dem Normtext
+// beider Fassungen und der Begründung des Entwurfs (public/cmp/*.json, Kommentare
+// aus lib/comparisons/*.json). Keine regulatorische Auskunft.
 
-import type { CmpRow, Comparison } from "./base";
-import gwgRows from "./comparisons/gwg-gwbg.json";
+import type { Comparison } from "./base";
 
 const GWG: Comparison = {
   from: {
@@ -44,7 +43,7 @@ const GWG: Comparison = {
     { id: "property", n: { de: "Immobilien und Glücksspiel", en: "Real estate and gambling" } },
     { id: "super", n: { de: "Aufsicht und Mitwirkungspflichten", en: "Supervision and cooperation duties" } },
   ],
-  rows: gwgRows as unknown as CmpRow[],
+  paras: "/cmp/gwg-gwbg.json",
 };
 
 export const COMPARISONS: Record<string, Comparison> = { gwg: GWG };

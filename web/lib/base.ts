@@ -73,7 +73,8 @@ export interface Comparison {
   caveat: Txt;
   stand: string;
   groups: { id: string; n: Txt }[];
-  rows: CmpRow[];
+  /** Pfad der Paragrafen-Daten (JSON in /public, wird beim Öffnen geladen). */
+  paras: string;
 }
 
 export interface Option { v: string; l: Txt }
