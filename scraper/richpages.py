@@ -20,6 +20,7 @@ import sys
 
 UA = "Mozilla/5.0 (compatible; regradar-richpages/0.1)"
 BASE = "https://www.regradar.de"
+LINKED_CHARS = int(os.environ.get("RICH_LINKED_CHARS", "40000"))  # verlinkte Dokumente (z. B. Rundschreiben) zusätzlich
 SRC_CHARS = int(os.environ.get("RICH_SRC_CHARS", "18000"))  # 12000 im Stundenlauf: unter 20.000 Tokens je Meldung
 TODAY = dt.date(2026, 11, 7)
 MODEL = os.environ.get("RICH_MODEL", "sonnet")
@@ -35,9 +36,9 @@ Faktenregeln:
 - audience: nur Institutsgruppen (z. B. Banken, Kapitalverwaltungsgesellschaften, Wertpapierinstitute), keine Abteilungen oder Funktionen; Abteilungen gehören nur in impact_analysis.departments. status "nicht betroffen" nur, wenn die Quelle das ausdrücklich sagt oder der Anwendungsbereich es klar ausschließt.
 
 Stil: Deutsch, kurze klare Sätze, aktiv. Englische Eigenbegriffe (DORA, MiCA, RTS, Q&A, T+1) bleiben. Keine Mittelpunkte als Trenner, keine Versalien, keine Gedankenstrich-Einschübe, keine Floskeln, kein Marketing. Antworte ausschließlich mit einem JSON-Objekt (kein Markdown, kein Text davor oder danach) mit genau diesen Feldern:
-h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (40 bis 60 Wörter, zitierfähig), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (1 bis 4 Objekte {ref max. 20 Zeichen oder leer, title max. 40 Zeichen, text max. 220 Zeichen}), todos (2 bis 5 Strings), timeline (0 bis 6 Objekte {date TT.MM.JJJJ, label max. 26 Zeichen, kind "schritt"|"kern"|"frist"}), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings), impact_analysis (Objekt mit vier Listen: controls 0 bis 5 Objekte {name max. 70 Zeichen, change max. 400 Zeichen, steps 3 bis 5 Strings je max. 260 Zeichen}, processes 0 bis 5 und policies 0 bis 4 gleich aufgebaut, departments 1 bis 6 Objekte {name max. 30 Zeichen, detail max. 200 Zeichen, workload "hoch"|"mittel"|"gering"}).
-impact_analysis ersetzt die Handlungsliste und ist der Kern der Seite: controls = Kontrollen, die Institute anpassen oder neu aufsetzen müssen; processes = betroffene Geschäftsprozesse; policies = Richtlinien und Regelwerke, die zu ändern sind; departments = betroffene Abteilungen oder Funktionen. Konkret und ausführlich statt allgemein. name benennt den Gegenstand (z. B. „Abgleich Z02.00.a gegen Z02.00.b“), nicht eine Kategorie. change und jeder Eintrag in steps sind vollständige, eigenständig lesbare Sätze (Subjekt, Verb, Objekt), die als Stichpunkte unter dem Namen stehen: change sagt, was sich am Gegenstand ändert und warum (Wert, Feld, Verfahren, Frist); die steps nennen, was das Institut konkret tun muss, wer es tut und was als Ergebnis vorliegen soll. Wörter wie prüfen, beachten oder berücksichtigen nur mit konkretem Prüfgegenstand und Prüfergebnis. steps sind Umsetzungsempfehlungen, die sich aus QUELLE und SEITE ableiten; Zahlen, Fristen und Normen nur aus QUELLE und SEITE. Ist ein Bereich nicht ableitbar, Liste leer lassen statt zu raten.
-Gesamtumfang höchstens 1100 Wörter."""
+h1 (max. 90 Zeichen, Kernbegriff, offizielle Kennung in Klammern), seo_title (30 bis 60 Zeichen, Suchbegriff vorn), meta_description (120 bis 155 Zeichen, Fakten zuerst), lead (1 bis 2 Sätze: was, wer, ab wann), aka (bis 5 Suchvarianten), summary (100 bis 160 Wörter, zitierfähig; bei Dokumenten mit Gliederung der gesamte Inhalt in Kurzform: Anlass, Adressaten, alle Themenblöcke in einem Halbsatz, Geltungsbeginn), overview (1 bis 2 Absätze), facts (bis 6 Objekte {label, value}), audience (1 bis 5 Objekte {name max. 18 Zeichen, note max. 44 Zeichen, detail max. 160 Zeichen, status "betroffen"|"teilweise"|"nicht betroffen"}), changes (3 bis 8 Objekte {ref max. 20 Zeichen oder leer, title max. 50 Zeichen, text max. 420 Zeichen: konkret, was neu gilt und was das Institut daraus ableiten muss, mit Zahlen, Schwellen, Fristen aus der Quelle}), todos (2 bis 5 Strings), timeline (0 bis 8 Objekte {date TT.MM.JJJJ, label max. 30 Zeichen, kind "schritt"|"kern"|"frist", slug optional}: die aktuelle Meldung als "kern"; nimm zusätzlich passende Einträge aus VERWANDTE MELDUNGEN auf (gleicher Regelungszusammenhang, z. B. Gesetz, Vorläufer, Konsultation, Parallelrundschreiben) mit deren slug, Datum und einem Kurzlabel; unpassende weglassen), outline (3 bis 10 Objekte {heading max. 90 Zeichen, items 2 bis 7 Strings je max. 360 Zeichen}: strukturierte Zusammenfassung entlang der Gliederung des Originaldokuments; übernimm dessen Kapitelüberschriften samt Nummerierung und liste unter jedem Kapitel die Neuerungen und Auslegungsaussagen als vollständige Sätze, sodass der Inhalt des Dokuments im Wesentlichen abgebildet ist; hat das Dokument keine Gliederung, gliedere nach Themen), faq (2 bis 4 Objekte {q, a max. 300 Zeichen}), impact ("hoch"|"mittel"|"gering"), open_points (bis 3 Strings), impact_analysis (Objekt mit vier Listen: controls 0 bis 6 Objekte {name max. 80 Zeichen, change max. 700 Zeichen, steps 3 bis 6 Strings je max. 420 Zeichen}, processes 0 bis 5 und policies 0 bis 4 gleich aufgebaut, departments 1 bis 6 Objekte {name max. 30 Zeichen, detail max. 240 Zeichen, workload "hoch"|"mittel"|"gering"}).
+impact_analysis ersetzt die Handlungsliste und ist der Kern der Seite: controls = Kontrollen, die Institute anpassen oder neu aufsetzen müssen; processes = betroffene Geschäftsprozesse; policies = Richtlinien und Regelwerke, die zu ändern sind; departments = betroffene Abteilungen oder Funktionen. Konkret und ausführlich statt allgemein: lange, inhaltsreiche Sätze mit Gegenstand, Grund, Norm und Ergebnis, aus denen Leser alle Erkenntnisse mitnehmen können. name benennt den Gegenstand (z. B. „Abgleich Z02.00.a gegen Z02.00.b“), nicht eine Kategorie. change und jeder Eintrag in steps sind vollständige, eigenständig lesbare Sätze (Subjekt, Verb, Objekt), die als Stichpunkte unter dem Namen stehen: change sagt, was sich am Gegenstand ändert und warum (Wert, Feld, Verfahren, Frist); die steps nennen, was das Institut konkret tun muss, wer es tut und was als Ergebnis vorliegen soll. Wörter wie prüfen, beachten oder berücksichtigen nur mit konkretem Prüfgegenstand und Prüfergebnis. steps sind Umsetzungsempfehlungen, die sich aus QUELLE und SEITE ableiten; Zahlen, Fristen und Normen nur aus QUELLE und SEITE. Ist ein Bereich nicht ableitbar, Liste leer lassen statt zu raten.
+Gesamtumfang höchstens 2800 Wörter. Ist QUELLE ein langes Dokument, bilde es vollständig ab und lasse kein Kapitel aus."""
 
 SCHEMA = {
     "type": "object",
@@ -50,7 +51,9 @@ SCHEMA = {
         "meta_description": {"type": "string", "description": "max. 155 Zeichen, Fakten zuerst"},
         "lead": {"type": "string", "description": "1 bis 2 Sätze: was, wer, ab wann"},
         "aka": {"type": "array", "items": {"type": "string"}, "maxItems": 5, "description": "Suchvarianten und Kennungen"},
-        "summary": {"type": "string", "description": "eigenständige Kurzfassung mit 40 bis 60 Wörtern, zitierfähig"},
+        "summary": {"type": "string", "description": "eigenständige Kurzfassung mit 100 bis 160 Wörtern, zitierfähig"},
+        "outline": {"type": "array", "maxItems": 10, "items": {"type": "object", "additionalProperties": False,
+                    "required": ["heading", "items"], "properties": {"heading": {"type": "string"}, "items": {"type": "array", "items": {"type": "string"}}}}},
         "overview": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 3, "description": "Absätze: worum es geht"},
         "facts": {"type": "array", "maxItems": 8, "items": {"type": "object", "additionalProperties": False,
                   "required": ["label", "value"], "properties": {"label": {"type": "string"}, "value": {"type": "string"}}}},
@@ -128,6 +131,31 @@ def text_of(h):
     return re.sub(r"\s+", " ", html.unescape(h)).strip()
 
 
+def related_updates(slug, days=150, limit=8):
+    """Andere Meldungen desselben Rahmenwerks im Umkreis (aus live.json), für den Zeitplan."""
+    try:
+        live = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "web", "lib", "live.json"), encoding="utf-8"))["updates"]
+    except (OSError, ValueError, KeyError):
+        return []
+    fw = max((k for k in live if slug.startswith(k + "-")), key=len, default=None)
+    if not fw:
+        return []
+    def iso(dmy):
+        d, m, y = dmy.split(".")
+        return dt.date(int(y), int(m), int(d))
+    mine = next((u for u in live[fw] if f"{fw}-{iso(u['d']).isoformat()}-{u['sl']}" == slug), None)
+    if not mine:
+        return []
+    out = []
+    for u in live[fw]:
+        s2 = f"{fw}-{iso(u['d']).isoformat()}-{u['sl']}"
+        if s2 == slug or abs((iso(u["d"]) - iso(mine["d"])).days) > days:
+            continue
+        out.append({"date": u["d"], "titel": u["ti"]["de"], "slug": s2, "_k": abs((iso(u["d"]) - iso(mine["d"])).days)})
+    out.sort(key=lambda r: r["_k"])
+    return [{k: v for k, v in r.items() if k != "_k"} for r in out[:limit]]
+
+
 def extract_page(slug):
     raw, code = get(f"{BASE}/u/{slug}")
     t = raw.decode("utf-8", "ignore")
@@ -140,7 +168,8 @@ def extract_page(slug):
     m = re.search(r'<div class="mt-5 space-y-3[^"]*">(.*?)</div>', body, re.S)
     summ = [clean(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", m.group(1), re.S)] if m else []
     pills = [html.unescape(x) for x in re.findall(r'<span class="rounded-full[^"]*">([^<]+)</span>', body)]
-    return {"slug": slug, "status": code, "title": h1, "date": date,
+    related = related_updates(slug)
+    return {"slug": slug, "related": related, "status": code, "title": h1, "date": date,
             "fw_path": back.group(1) if back else "", "fw_name": clean(back.group(2)) if back else "",
             "orig": html.unescape(orig.group(1)) if orig else "", "summary": summ, "pills": pills[:4]}
 
@@ -175,7 +204,23 @@ def fetch_source(url, workdir):
                     ptxt = re.sub(r"\n\s*\n+", "\n", ptxt)
                     txt = txt + "\n\nVERLINKTES PDF (" + pdf + "):\n" + ptxt
                     kind = "HTML + verlinktes PDF"
-    return txt[:SRC_CHARS], f"{kind}, {len(txt)} Zeichen, gekürzt auf {min(len(txt), SRC_CHARS)}"
+    # Ankündigungsmeldungen (BaFin „veröffentlicht Rundschreiben“): der Inhalt
+    # steht im verlinkten Dokument. Meldung kurz halten, Rest für die Unterseiten.
+    if kind == "HTML":
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            from regradar.fulltext import linked_docs
+            docs = linked_docs(url, LINKED_CHARS)
+        except Exception:  # noqa: BLE001
+            docs = []
+        if docs:
+            head = txt[:3000]
+            room = LINKED_CHARS // len(docs)
+            parts = ["\n\nVERLINKTES DOKUMENT ({}):\n{}".format(l, t[:room]) for l, t in docs]
+            txt = head + "".join(parts)
+            kind = "HTML + {} verlinkte(s) Dokument(e)".format(len(docs))
+    cap = SRC_CHARS + (LINKED_CHARS if kind.startswith("HTML +") and "verlinkte" in kind else 0)
+    return txt[:cap], f"{kind}, {len(txt)} Zeichen, gekürzt auf {min(len(txt), cap)}"
 
 
 def dates_in(text):
@@ -224,6 +269,19 @@ def validate(d):
             return "facts ungültig"
     for c in d["changes"]:
         c.setdefault("ref", "")
+    ol = d.get("outline") or []
+    if isinstance(ol, dict):
+        ol = [ol]
+    clean_ol = []
+    for o in ol if isinstance(ol, list) else []:
+        if isinstance(o, dict) and o.get("heading"):
+            its = o.get("items") or []
+            if isinstance(its, str):
+                its = [its]
+            its = [str(x).strip() for x in its if str(x).strip()]
+            if its:
+                clean_ol.append({"heading": str(o["heading"]).strip(), "items": its})
+    d["outline"] = clean_ol
     if d["impact"] not in ("hoch", "mittel", "gering"):
         d["impact"] = "mittel"
     ia = d["impact_analysis"]
@@ -253,6 +311,8 @@ def run_model(page, source, src_note):
     user = ("SEITE (bestehende Detailseite auf regradar.de):\n" + json.dumps({
         "titel": page["title"], "datum": page["date"], "rahmenwerk": page["fw_name"], "kategorien": page["pills"],
         "zusammenfassung": page["summary"], "quelle_url": page["orig"]}, ensure_ascii=False, indent=1)
+        + ("\n\nVERWANDTE MELDUNGEN (gleiches Rahmenwerk auf regradar.de):\n" + json.dumps(
+            page.get("related") or [], ensure_ascii=False, indent=1) if page.get("related") else "")
         + f"\n\nQUELLE ({src_note}):\n" + (source or "(nicht abrufbar)"))
     cmd = [exe, "-p", "--output-format", "json", "--model", MODEL, "--system-prompt", SYSTEM,
            "--tools", "", "--strict-mcp-config",
@@ -291,6 +351,13 @@ def check(data, page, source):
     allowed = dates_in(source + " " + " ".join(page["summary"]) + " " + page["title"])
     y, m, d = page["date"].split("-")
     allowed.add((int(d), int(m), int(y)))
+    rel = {r["slug"]: r for r in page.get("related") or []}
+    for r in rel.values():
+        dd, mm_, yy = r["date"].split(".")
+        allowed.add((int(dd), int(mm_), int(yy)))
+    for t in data["timeline"]:
+        if t.get("slug") not in rel:
+            t.pop("slug", None)
     dropped = []
 
     def ok_date(s):

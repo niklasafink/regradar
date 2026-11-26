@@ -32,7 +32,13 @@ function Timeline({ items, seed }: { items: RichUpdate["timeline"]; seed: number
             <g key={t.date + i}>
               <circle className={`sk ${stroke}`} data-fill="" data-w="2" cx={x} cy={100} r={tone ? 11 : 7} {...SK} />
               <text x={ax} y={dy} textAnchor={anchor} style={{ fontSize: 20 }} className={fill}>{t.date}</text>
-              <text x={ax} y={ly} textAnchor={anchor} style={{ fontSize: 16 }} className="fill-slate-500">{t.label}</text>
+              {t.slug ? (
+                <a href={`/u/${t.slug}`}>
+                  <text x={ax} y={ly} textAnchor={anchor} style={{ fontSize: 16, textDecoration: "underline" }} className="fill-slate-500">{t.label}</text>
+                </a>
+              ) : (
+                <text x={ax} y={ly} textAnchor={anchor} style={{ fontSize: 16 }} className="fill-slate-500">{t.label}</text>
+              )}
             </g>
           );
         })}
@@ -58,9 +64,10 @@ export function richToc(rich: RichUpdate): TocItem[] {
     { id: "relevanz", label: "Für wen relevant" },
     { id: "worum", label: "Worum es geht" },
     { id: "aenderungen", label: "Was sich ändert" },
+    ...(rich.timeline.length >= 2 ? [{ id: "zeitplan", label: "Zeitplan" }] : []),
+    ...(rich.outline?.length ? [{ id: "gliederung", label: "Inhalt im Überblick" }] : []),
     ...(hasImpact(ia) ? [{ id: "impact", label: "Impact-Analyse" }] : []),
     ...(hasImpact(ia) ? [] : [{ id: "todos", label: "Was jetzt zu tun ist" }]),
-    ...(rich.timeline.length >= 2 ? [{ id: "zeitplan", label: "Zeitplan" }] : []),
     { id: "faq", label: "Häufige Fragen" },
   ];
 }
@@ -196,6 +203,31 @@ export function RichUpdateSections(
         </ul>
       </section>
 
+      {rich.timeline.length >= 2 && (
+        <section id="zeitplan" className={SECTION}>
+          <h2 className={H2}>Zeitplan</h2>
+          <figure className="mt-4">
+            <Timeline items={rich.timeline} seed={seed} />
+            <figcaption className="mt-2 text-sm text-slate-500">Daten aus der Meldung und dem Originaldokument; verwandte Meldungen sind verlinkt.</figcaption>
+          </figure>
+        </section>
+      )}
+
+      {rich.outline && rich.outline.length > 0 && (
+        <section id="gliederung" className={SECTION}>
+          <h2 className={H2}>Inhalt im Überblick</h2>
+          <p className="mt-2 text-sm text-slate-500">Die Neuerungen entlang der Gliederung des Originaldokuments.</p>
+          {rich.outline.map((o) => (
+            <div key={o.heading} className="mt-5">
+              <h3 className="font-heading font-semibold text-slate-900">{o.heading}</h3>
+              <ul className="mt-1.5 list-disc space-y-1.5 pl-5">
+                {o.items.map((it) => <li key={it.slice(0, 50)}>{it}</li>)}
+              </ul>
+            </div>
+          ))}
+        </section>
+      )}
+
       {ia && hasImpact(ia) ? (
         <section id="impact" className={SECTION}>
           <h2 className={H2}>Impact-Analyse</h2>
@@ -209,16 +241,6 @@ export function RichUpdateSections(
           <ol className="mt-3 list-decimal space-y-2 pl-6">
             {rich.todos.map((t) => <li key={t.slice(0, 40)}>{t}</li>)}
           </ol>
-        </section>
-      )}
-
-      {rich.timeline.length >= 2 && (
-        <section id="zeitplan" className={SECTION}>
-          <h2 className={H2}>Zeitplan</h2>
-          <figure className="mt-4">
-            <Timeline items={rich.timeline} seed={seed} />
-            <figcaption className="mt-2 text-sm text-slate-500">Daten aus der Meldung und dem Originaldokument.</figcaption>
-          </figure>
         </section>
       )}
 

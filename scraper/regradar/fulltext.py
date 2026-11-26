@@ -202,3 +202,121 @@ def fetch_fulltext(conn: sqlite3.Connection, document_id: int,
         (document_id, url, text, utcnow()))
     conn.commit()
     return text
+
+
+# --- Verlinkte Unterseiten ---------------------------------------------------
+# Viele Meldungen (z. B. BaFin „Bafin veröffentlicht Rundschreiben“) sind nur
+# Ankündigungen; der eigentliche Inhalt steht im verlinkten Dokument. Die
+# Zusammenfassung und die Impact-Einstufung sollen daher auch diese
+# Unterseiten kennen. Der Hauptauszug (fetch_fulltext) bleibt davon
+# unberührt – die BaFin-Rundschreiben-Dublettenerkennung liest nur ihn.
+
+# Tiefe 1, höchstens so viele Links, je Link höchstens so viele Zeichen.
+LINK_MAX = 2
+LINK_CHARS = 9000
+# Version der Link-Logik; bei Änderungen hochzählen (alte Einträge werden neu geholt).
+LINK_VER = 1
+
+_LINK_PATH = re.compile(
+    r"/(rundschreiben|konsultation|auslegungsentscheidung|merkblatt|"
+    r"aufsichtsmitteilung|verfuegung|allgemeinverfuegung|faq|"
+    r"fachartikel)/|\.pdf(?:$|\?)", re.IGNORECASE)
+_LINK_RANK = ("rundschreiben", "auslegungsentscheidung", "merkblatt",
+              "aufsichtsmitteilung", "konsultation", "verfuegung", "faq")
+
+
+def _host(u: str) -> str:
+    from urllib.parse import urlsplit
+    return urlsplit(u).netloc.lower().removeprefix("www.")
+
+
+def _content_links(base_url: str, raw_html: str) -> list:
+    """Relevante Links aus dem Inhaltsbereich (gleiche Domain, Dokumentpfade)."""
+    from urllib.parse import urljoin, urldefrag
+    raw = re.sub(r"(?is)<(script|style|nav|header|footer|aside|form)\b.*?</\1>",
+                 " ", raw_html)
+    for pat in (r"(?is)<main\b.*?</main>", r"(?is)<article\b.*?</article>"):
+        m = re.search(pat, raw)
+        if m and len(m.group(0)) > 2000:
+            raw = m.group(0)
+            break
+    self_key = urldefrag(base_url)[0].split("?")[0]
+    found, seen = [], set()
+    for m in re.finditer(r'href=["\']?([^"\'\s>]+)', raw, re.IGNORECASE):
+        u = urldefrag(urljoin(base_url, html_mod.unescape(m.group(1))))[0]
+        key = u.split("?")[0]
+        if (key in seen or key == self_key or _host(u) != _host(base_url)
+                or not _LINK_PATH.search(u) or "/EN/" in u):
+            continue
+        seen.add(key)
+        low = u.lower()
+        rank = next((i for i, k in enumerate(_LINK_RANK) if "/" + k in low),
+                    len(_LINK_RANK))
+        found.append((rank, len(found), u))
+    return [u for _, _, u in sorted(found)[:LINK_MAX]]
+
+
+def _page_text(url: str, limit: int = LINK_CHARS) -> str:
+    res, _ = get(url)
+    if not res or res.status != 200:
+        return ""
+    if ("pdf" in res.content_type or url.lower().split("?")[0].endswith(".pdf")
+            or res.content[:5] == b"%PDF-"):
+        text = _pdf_text(res.content)
+    else:
+        raw = res.text()
+        text = _html_text(raw)
+        if len(text) < 1500:  # Dokumentseite mit PDF-Download
+            pdf_url = _linked_pdf(res.url, raw)
+            if pdf_url:
+                pdf_res, _ = get(pdf_url)
+                if pdf_res and pdf_res.status == 200:
+                    pt = _pdf_text(pdf_res.content)
+                    if _plausible(pt):
+                        text = "{}\n{}".format(text, pt).strip()
+    return text[:limit] if _plausible(text) else ""
+
+
+def fetch_linked(conn: sqlite3.Connection, document_id: int,
+                 url: Optional[str]) -> str:
+    """Gecachter Auszug der von der Meldung verlinkten Unterseiten ('' wenn
+    keine). Leere Ergebnisse werden nach RETRY_AFTER_HOURS neu versucht."""
+    if not url:
+        return ""
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS doc_linked (
+               document_id INTEGER PRIMARY KEY,
+               text TEXT NOT NULL, fetched_at TEXT NOT NULL, ver INTEGER NOT NULL)""")
+    row = conn.execute(
+        "SELECT text, fetched_at, ver FROM doc_linked WHERE document_id=?",
+        (document_id,)).fetchone()
+    if row is not None and row[2] == LINK_VER and (row[0] or not _retry_due(row[1])):
+        return row[0]
+    if url.lower().split("?")[0].endswith(".pdf"):
+        return ""
+    res, _ = get(url)
+    parts = []
+    if res and res.status == 200:
+        for link in _content_links(res.url, res.text()):
+            t = _page_text(link)
+            if t:
+                parts.append("[Verlinkte Unterseite {}]\n{}".format(link, t))
+    text = "\n\n".join(parts)
+    from .db import utcnow
+    conn.execute("INSERT OR REPLACE INTO doc_linked VALUES (?,?,?,?)",
+                 (document_id, text, utcnow(), LINK_VER))
+    conn.commit()
+    return text
+
+
+def linked_docs(url: str, limit: int = LINK_CHARS) -> list:
+    """Ungecacht: [(link, text)] der verlinkten Dokumente (für Detailseiten)."""
+    res, _ = get(url)
+    if not res or res.status != 200 or url.lower().split("?")[0].endswith(".pdf"):
+        return []
+    out = []
+    for link in _content_links(res.url, res.text()):
+        t = _page_text(link, limit)
+        if t:
+            out.append((link, t))
+    return out

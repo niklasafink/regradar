@@ -1535,11 +1535,14 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     # Bei Sanktionen entscheidet die Art der Änderung (neue Listung vs.
     # Streichung/geänderte Begründung, IMPACT.md Nr. 7) — die steht nicht im
     # Amtsblatt-Titel, sondern erst in der Zusammenfassung aus dem Volltext.
+    # Seit 26.11.2026 für alle: Ankündigungsmeldungen (BaFin „veröffentlicht
+    # Rundschreiben“) tragen den Inhalt erst in der Zusammenfassung, die
+    # auch die verlinkten Dokumente einbezieht.
     fw_of = {r["document_id"]: fw_id for r, fw_id, _ in selected}
     from .impact import assess
     impacts = assess(conn, [
         (i, "{}\nZusammenfassung: {}".format(t, summaries[i]["de"])
-         if fw_of.get(i) == "sanctions" and i in summaries else t)
+         if i in summaries else t)
         for i, t in contexts])
 
     updates = {}

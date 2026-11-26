@@ -393,7 +393,7 @@ def summarize(conn: sqlite3.Connection,
     for i, ti in backfill_titles(conn, model, key, need_title).items():
         result[i]["ti"] = ti
 
-    from .fulltext import fetch_fulltext
+    from .fulltext import fetch_fulltext, fetch_linked
     todo = []
     for i, t, url in items:
         if i in result:
@@ -401,6 +401,9 @@ def summarize(conn: sqlite3.Connection,
         full = fetch_fulltext(conn, i, url)
         if full:
             t = "{}\nVolltext der Original-Meldung (Auszug):\n{}".format(t, full)
+        linked = fetch_linked(conn, i, url)
+        if linked:
+            t = "{}\nInhalt der verlinkten Dokumente (maßgeblich, wenn die Meldung nur darauf verweist):\n{}".format(t, linked)
         todo.append((i, t))
     if not todo:
         return result

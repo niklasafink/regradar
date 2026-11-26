@@ -23,7 +23,9 @@ export type RichUpdate = {
   audience: RichAudience[];
   changes: { ref: string; title: string; text: string }[];
   todos: string[];
-  timeline: { date: string; label: string; kind: "schritt" | "kern" | "frist" }[];
+  timeline: { date: string; label: string; kind: "schritt" | "kern" | "frist"; slug?: string }[];
+  /** Strukturierte Zusammenfassung entlang der Gliederung des Originaldokuments. */
+  outline?: { heading: string; items: string[] }[];
   faq: { q: string; a: string }[];
   impact: "hoch" | "mittel" | "gering";
   open_points: string[];
