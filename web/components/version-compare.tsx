@@ -139,20 +139,20 @@ function Para({ p, lang }: { p: OldPara; lang: L }) {
 function NewRow({ n, lang, all }: { n: CmpData["neu"][number]; lang: L; all: boolean | null }) {
   const [open, setOpen] = useState(false);
   useEffect(() => { if (all !== null) setOpen(all); }, [all]);
-  const has = n.c.length > 0;
+  const has = shortComments(n.c, lang).length > 0;
   return (
     <li>
       {has ? (
         <Toggle open={open} onClick={() => setOpen((v) => !v)} dot="bg-blue-600">
           <span className="flex flex-wrap items-baseline gap-x-2">
-            <span className="num text-sm font-semibold tracking-tight">§ {n.n} GwBG-E</span>
+            <span className="num whitespace-nowrap text-sm font-semibold tracking-tight">§ {n.n} GwBG-E</span>
             <span className="text-sm text-slate-700">{n.t}</span>
           </span>
         </Toggle>
       ) : (
         <div className="-mx-2 flex items-center gap-2 px-2 py-1.5">
           <span aria-hidden className="size-2 shrink-0 rounded-full bg-slate-300" />
-          <span className="num text-sm font-semibold tracking-tight">§ {n.n} GwBG-E</span>
+          <span className="num whitespace-nowrap text-sm font-semibold tracking-tight">§ {n.n} GwBG-E</span>
           <span className="text-sm text-slate-700">{n.t}</span>
         </div>
       )}
@@ -188,7 +188,6 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
     };
   }, [data]);
 
-  const PREVIEW = 5; // Entwurf des neuen Aufbaus: erst nur die ersten fünf Paragrafen
   const hasAct = (c: CmpRow[]) => c.some((r) => r.act && r.aud !== "auth");
   const oldShown = data?.old.filter((p) => {
     if (filter === "neu") return false;
@@ -196,9 +195,9 @@ export function VersionCompare({ cmp }: { cmp: Comparison }) {
     if (filter === "removed" && !(isDot(p) && p.st !== "same")) return false;
     if (onlyAct && !hasAct(p.c)) return false;
     return true;
-  }).slice(0, PREVIEW) ?? [];
-  const neuShown: CmpData["neu"] = [];
-  const restShown: CmpRow[] = [];
+  }) ?? [];
+  const neuShown = data ? data.neu : [];
+  const restShown = data ? data.rest.filter((r) => shortComments([r], lang).length > 0) : [];
 
   const pill = (active: boolean) =>
     `rounded-full border px-3 py-1 text-xs font-medium transition-colors ${active ? "border-slate-900 bg-slate-900 text-white" : "border-slate-200 bg-white text-slate-600 hover:border-slate-900"}`;

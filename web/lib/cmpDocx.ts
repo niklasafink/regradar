@@ -17,12 +17,6 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
   const comments: { id: number; author: string; date: Date; children: InstanceType<typeof Paragraph>[] }[] = [];
 
   const commentParas = (lines: string[]) => lines.filter(Boolean).map((t) => new Paragraph({ children: [new TextRun({ text: t, size: 20 })] }));
-  const rowLines = (r: CmpRow) => [
-    r.newRef ? `${r.newRef}` : "",
-    tx(r.s),
-    r.act ? `${T("Für Institute: ", "For institutions: ", lang)}${tx(r.act)}` : "",
-    `${T("Beleg", "Source", lang)}: ${r.src}`,
-  ];
   const tx = (t: { de: string; en: string }) => t[lang] ?? t.de;
 
   /** Absatz/Überschrift mit angehängtem Word-Kommentar. */
@@ -68,14 +62,14 @@ export async function exportCmpDocx(cmp: Comparison, lang: L, opts: { old: OldPa
   if (opts.neu.length) {
     out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, spacing: { before: 360 }, children: [new TextRun(T("Neu im GwBG-E, ohne Vorgänger im GwG", "New in the GwBG-E, no predecessor in the GwG", lang))] }));
     for (const n of opts.neu) {
-      const lines = n.c.flatMap((r) => ["", ...rowLines(r)]);
+      const lines = shortComments(n.c, lang).map((r) => `${r.ref ? r.ref + ": " : ""}${r.text}`);
       out.push(new Paragraph({ spacing: { after: 60 }, children: withComment([new InsertedTextRun({ text: `§ ${n.n} GwBG-E ${n.t}`, id: revId++, author: AUTHOR, date: date.toISOString() })], lines.length ? lines : [T("Neue Vorschrift ohne Vorgänger im GwG.", "New provision without predecessor in the GwG.", lang)]) }));
     }
   }
   if (opts.rest.length) {
     out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, spacing: { before: 360 }, children: [new TextRun(T("Weitere Änderungen, Fristen und Folgeänderungen", "Further changes, deadlines and consequential amendments", lang))] }));
     for (const r of opts.rest) {
-      out.push(heading(`${r.oldRef ?? T("keine Entsprechung", "no counterpart", lang)} → ${r.newRef ?? T("entfällt", "removed", lang)}`, rowLines({ ...r, newRef: undefined })));
+      out.push(heading(`${r.oldRef ?? T("keine Entsprechung", "no counterpart", lang)} → ${r.newRef ?? T("entfällt", "removed", lang)}`, shortComments([r], lang).map((c) => c.text)));
     }
   }
 
