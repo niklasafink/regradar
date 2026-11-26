@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T22:12:05Z",
+  "generated_at": "2026-11-26T00:09:07Z",
   "updates": {
     "amla": [
       {
@@ -19,6 +19,26 @@
           "en": "AMLA has consulted on a draft of Guidelines on determining the minimum base amount for imposing pecuniary sanctions. These Guidelines aim to establish a common approach for determining the base amount of pecuniary sanctions imposed in cases of breaches of AML/CFT requirements.\n\nThe Guidelines are targeted at supervisors across both the financial and non-financial sectors and are intended to foster greater convergence in AML/CFT enforcement throughout the Union. They set out how supervisors should take into account the severity of the breach, the legal form and category of the obliged entity concerned, and use a relevant financial metric. The goal is to reduce divergences in enforcement practices and support effective, proportionate, and dissuasive pecuniary sanctions.\n\nThe consultation period for this draft ends on 25 February 2027. A public hearing is scheduled for 12 January 2027."
         },
         "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-guidelines-determining-minimum-base-amount-imposing-pecuniary-sanctions_en",
+        "imp": "medium",
+        "deadline": "25.02.2027"
+      },
+      {
+        "d": "25.11.2026",
+        "t": {
+          "de": "Konsultation",
+          "en": "Consultation"
+        },
+        "src": "amla.europa.eu",
+        "ti": {
+          "de": "Konsultation zu Leitlinien für Geldsanktionen bei AML/CFT-Verstößen",
+          "en": "Consultation on Guidelines for Pecuniary Sanctions in AML/CFT Breaches"
+        },
+        "sl": "consultation-on-the-draft-guidelines-on-determining-the-base-amount-for-imposing",
+        "s": {
+          "de": "Die AMLA konsultiert Entwürfe von Leitlinien zur Bestimmung des Ausgangsbetrags für Geldsanktionen. Diese Leitlinien legen einen gemeinsamen Ansatz fest, wie Aufsichtsbehörden den Ausgangsbetrag von Geldsanktionen bei Verstößen gegen die AML/CFT-Anforderungen bestimmen sollen.\n\nDabei sollen die Schwere des Verstoßes, die Rechtsform und Kategorie des verpflichteten Unternehmens sowie eine relevante Finanzkennzahl berücksichtigt werden. Ziel ist es, die Konvergenz bei der Durchsetzung der AML/CFT-Vorschriften in der gesamten Union zu fördern und Divergenzen in den Durchsetzungspraktiken zu reduzieren.\n\nDie Konsultation läuft bis zum 25. Februar 2027. Eine öffentliche Anhörung zu den Entwürfen ist für den 12. Januar 2027 geplant.",
+          "en": "AMLA is consulting on draft Guidelines for determining the base amount for pecuniary sanctions. These Guidelines establish a common approach for supervisors to determine the base amount of pecuniary sanctions imposed for breaches of AML/CFT requirements.\n\nThe approach considers the severity of the breach, the legal form and category of the obliged entity, and a relevant financial metric. The aim is to foster greater convergence in AML/CFT enforcement across the Union and reduce divergences in enforcement practices.\n\nThe consultation is open until 25 February 2027. A public hearing on the draft Guidelines is scheduled for 12 January 2027."
+        },
+        "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-guidelines-determining-base-amount-imposing-pecuniary-sanctions_en",
         "imp": "medium",
         "deadline": "25.02.2027"
       },
