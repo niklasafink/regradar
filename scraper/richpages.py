@@ -280,6 +280,15 @@ def fetch_source(url, workdir):
         pass
     f = os.path.join(workdir, "src.bin")
     code = get(url, f)
+    if code != "200" and "eur-lex.europa.eu" in url:  # EUR-Lex liefert 202: Cellar als Ausweg
+        mc = re.search(r"CELEX:([0-9A-Z()]+)", url)
+        if mc:
+            from urllib.parse import quote
+            rc_, so_, _ = sh(["curl", "-sL", "--max-time", "60", "-o", f, "-w", "%{http_code}", "-H", "Accept: application/xhtml+xml",
+                              "-H", "Accept-Language: deu", "https://publications.europa.eu/resource/celex/" + quote(mc.group(1))], timeout=90)
+            if so_.decode()[-3:] == "200" and open(f, "rb").read(5) != b"%PDF-":
+                code = "200"
+                url = "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:" + mc.group(1)
     if code != "200":
         return "", f"Quelle HTTP {code}"
     data = open(f, "rb").read()
