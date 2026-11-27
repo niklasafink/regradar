@@ -504,7 +504,7 @@ def extend_dora_kwg(scope: dict) -> dict:
     groups = scope.get("adressaten") or []
     if not groups or scope.get("art") == "keine_institute":
         return scope
-    if any("sitz_lu" in g["alle"] for g in groups):
+    if any("sitz_lu" in g["alle"] or "sitz_ch" in g["alle"] for g in groups):
         return scope
     if "2022/2554" in normen or "DORA" in normen:
         have = {tuple(sorted(g["alle"])) for g in groups}
@@ -532,7 +532,9 @@ def extend_dora_kwg(scope: dict) -> dict:
 # neu laufen zu lassen (Befunde 11.11.2026, Nachprüfung an zehn
 # Institutsprofilen). Die Regeln stehen auch in SCOPE.md, damit neue Analysen
 # sie von vornherein einhalten.
-LOC = {"sitz_de", "sitz_lu", "sitz_eu", "taetig_de"}
+LOC = {"sitz_de", "sitz_lu", "sitz_eu", "taetig_de", "sitz_ch", "taetig_ch"}
+# Ortsmerkmale fremder Rechtsräume: Schweizer Recht (jur "CH") knüpft nie an sie an.
+FOREIGN_FOR_CH = {"sitz_de", "taetig_de", "sitz_lu", "sitz_eu"}
 INSURERS = {"versicherer_leben", "versicherer_kranken", "versicherer_schaden", "rueckversicherer",
             "pensionsfonds", "pensionskasse", "versicherungsholding"}
 # Nach § 2 Abs. 1 Nr. 7 GwG und Art. 3 AMLR sind nur Lebensversicherer (und
@@ -622,6 +624,28 @@ def apply_guards(scope: dict, fw_id: str, fws: Dict[str, dict], arts: set, src: 
                 seen.add(key)
                 cleaned.append(g)
         groups = cleaned
+    # Schweizer Recht (Welle 10): Ortsmerkmale für DE/LU/EU sind ein Fehler der
+    # Analyse. Sie werden entfernt; gibt es im Katalog ein Merkmal "sitz_ch",
+    # ersetzt es sie. Gruppen, die danach leer wären, entfallen, bleiben aber
+    # erhalten, wenn sonst keine Gruppe übrig bliebe. Die Regel „deutsches Recht
+    # braucht Deutschland-Bezug" gilt nur für jur "DE" (siehe unten).
+    if fw.get("jur") == "CH":
+        try:
+            ch_tok = ["sitz_ch"] if "sitz_ch" in {f["id"] for f in _catalog()} else []
+        except (OSError, ValueError, KeyError):
+            ch_tok = []
+        seen, cleaned = set(), []
+        for g in groups:
+            rest = [x for x in g["alle"] if x not in FOREIGN_FOR_CH]
+            if len(rest) < len(g["alle"]):
+                rest += [t for t in ch_tok if t not in rest]
+            if not rest:
+                continue
+            key = tuple(sorted(rest))
+            if key not in seen:
+                seen.add(key)
+                cleaned.append({**g, "alle": rest})
+        groups = cleaned or groups
     # Deutsches Recht: jede Gruppe braucht den Bezug zu Deutschland.
     if fw.get("jur") == "DE":
         for g in groups:

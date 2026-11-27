@@ -123,6 +123,13 @@ export DIP_API_KEY="..."
 | CSSF Luxemburg | `rss` | 7 typisierte Feeds `cssf.lu/en/feed/publications?content_type=…` (Rundschreiben, CSSF-Verordnungen, Communiqués, Konsultationen, FAQ, Gesetze, Großherzogliche Verordnungen); Jurisdiktion `LU`; Zuordnung zuerst gegen Lux-Rahmenwerke (`SOURCE_RULES` in webexport) |
 | EU-Kommission / GD FISMA | `ecfinance` | News-Liste `finance.ec.europa.eu/finance-news_en` (ECL-Markup, 2 Seiten, Teaser aus der Liste); kein RSS vorhanden |
 | EZB (Presse) | `rss` | `ecb.europa.eu/rss/press.xml` — Digitaler Euro, IReF |
+| FINMA (News) | `rss` | `finma.ch/de/rss/news/` (offizieller Feed, 50 Einträge); Sanktionslisten-Meldungen und Reden per `RSS_LINK_EXCLUDE`; Jurisdiktion `CH`, Zuordnung nur über `CH_RULES` |
+| FINMA (Dokumente) | `finmadocs` | Rundschreiben und Aufsichtsmitteilungen über den JSON-Aufruf der Seite (POST `finma.ch/de/api/search/getresult`, `ds`/`Order` aus `data-source`/`data-order`), laufende Anhörungen aus dem HTML; kein PDF-Abruf |
+| News Service Bund | `nsb` | offizieller Bundes-RSS `newsd.admin.ch/newsd/feeds/rss?org-nr=1&start_date=…`, gefiltert auf Finanzmarkt-Stichworte (SIF, SECO, BACS, BSV, EDÖB, Bundesrat); Links `admin.ch/de/newnsb/<id>` |
+| SIX Exchange Regulation | `six` | `ser-ag.com/…/regulatory-communication/…results.json` und `…/media-releases/…results.json` (JSON der Seitenkomponenten); Einzelfälle (Dekotierung, Sanktionsbescheid) entfallen |
+| OAK BV | `oak` | Listen `oak-bv.admin.ch/de/weisungen` und `/de/mitteilungen` (HTML, Datum aus der Karte) |
+| AMAS | `amas` | Medienmitteilungen `am-switzerland.ch/de/medien-positionen/medien/medienmitteilungen` (HTML); Zirkulare liegen im Mitgliederbereich und werden nicht abgerufen |
+| Fedlex | `fedlex` | SPARQL `fedlex.data.admin.ch/sparqlendpoint` (JOLUX): neue konsolidierte Fassungen von 27 Erlassen (`FEDLEX_ACTS` in `adapters/ch.py`) |
 
 **FATF** ist nicht angebunden: fatf-gafi.org liefert 403 auf allen Pfaden
 (Cloudflare-Bot-Schutz, auch mit Browser-User-Agent) — wird nicht umgangen.

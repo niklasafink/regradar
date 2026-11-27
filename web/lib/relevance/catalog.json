@@ -122,6 +122,7 @@
 
     { "id": "sitz_de", "g": "recht", "l": "Sitz in Deutschland" },
     { "id": "sitz_lu", "g": "recht", "l": "Sitz in Luxemburg" },
+    { "id": "sitz_ch", "g": "recht", "l": "Sitz in der Schweiz" },
     { "id": "sitz_eu", "g": "recht", "l": "Sitz in einem anderen EU-/EWR-Staat" },
     { "id": "taetig_de", "g": "recht", "l": "Tätig in Deutschland" }
   ]

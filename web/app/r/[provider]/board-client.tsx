@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AuthorityLogo, FRAMEWORK_AUTH } from "@/components/authority-logo";
 import { Chrome, Footer } from "@/components/chrome";
+import { Icon } from "@/components/icons";
 import { SearchBox } from "@/components/search";
 import type { Provider, Topic, Txt } from "@/lib/base";
 import { daysAgo, fmtDate, tx } from "@/lib/core";
@@ -150,6 +151,7 @@ export function Board({ p, frameworkCount, totalUpdates, listCount, topics, subn
               aria-pressed={selected.includes(t.id)}
               onClick={() => toggleTopic(t.id)}
             >
+              <Icon id={t.id} className="size-3.5" />
               {tx(lang, t.n)}
               <span className="num text-xs opacity-70">{t.fws.length}</span>
             </button>

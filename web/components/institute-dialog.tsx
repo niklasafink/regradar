@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { ChevronDown, ChevronRight, X } from "lucide-react";
 import type { Lang } from "@/lib/base";
 import { tx } from "@/lib/core";
+import { Icon } from "@/components/icons";
 import { SUBTYPES, SUBTYPE_GROUPS } from "@/lib/subtypes";
 
 /** Kachel „Weitere Institute“ auf der Startseite: öffnet die Auswahl der
@@ -24,7 +25,12 @@ export function OtherInstitutesTile({ lang, slug, label, className }: {
         onClick={() => ref.current?.showModal()}
         className={className}
       >
-        <span className="text-sm font-semibold tracking-tight">{label}</span>
+        <span className="flex items-center gap-3 text-sm font-semibold tracking-tight">
+          <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-700">
+            <Icon id="OTH" />
+          </span>
+          {label}
+        </span>
         <ChevronDown aria-hidden className="size-4 shrink-0 text-slate-500" />
       </button>
 

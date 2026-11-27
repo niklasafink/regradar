@@ -9,7 +9,7 @@ export interface Source {
   id: string;
   name: string;
   authority: string;
-  jurisdiction: "EU" | "DE" | "LU" | "INT";
+  jurisdiction: "EU" | "DE" | "LU" | "CH" | "INT";
   access: string; // Zugriffsweg: RSS, API, SITEMAP, XML, HTML
   url: string;
 }
@@ -26,7 +26,7 @@ export const SOURCES: Source[] = payload.sources;
 export const SOURCES_GENERATED_AT = payload.generated_at;
 
 /** Anzeige-Reihenfolge der Rechtsräume auf der Quellen-Seite. */
-export const JURISDICTIONS: Source["jurisdiction"][] = ["EU", "DE", "LU", "INT"];
+export const JURISDICTIONS: Source["jurisdiction"][] = ["EU", "DE", "LU", "CH", "INT"];
 
 export const JURISDICTION_LABEL: Record<
   Source["jurisdiction"],
@@ -35,5 +35,6 @@ export const JURISDICTION_LABEL: Record<
   EU: { de: "Europäische Union", en: "European Union" },
   DE: { de: "Deutschland", en: "Germany" },
   LU: { de: "Luxemburg", en: "Luxembourg" },
+  CH: { de: "Schweiz", en: "Switzerland" },
   INT: { de: "International", en: "International" },
 };

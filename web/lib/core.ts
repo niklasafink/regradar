@@ -84,6 +84,21 @@ const AUTHORITIES: Record<string, string> = {
   "iosco.org": "IOSCO",
   "bis.org": "BIS",
   "dejure.org": "dejure.org",
+  "finma.ch": "FINMA",
+  "admin.ch": "Bundesrat",
+  "fedlex.admin.ch": "Fedlex",
+  "parlament.ch": "Parlament (CH)",
+  "sif.admin.ch": "SIF",
+  "efd.admin.ch": "EFD",
+  "seco.admin.ch": "SECO",
+  "bj.admin.ch": "BJ",
+  "bacs.admin.ch": "BACS",
+  "bsv.admin.ch": "BSV",
+  "oak-bv.admin.ch": "OAK BV",
+  "edoeb.admin.ch": "EDÖB",
+  "snb.ch": "SNB",
+  "ser-ag.com": "SIX Exchange Regulation",
+  "am-switzerland.ch": "AMAS",
 };
 export const authority = (src: string): string => AUTHORITIES[src] ?? src;
 

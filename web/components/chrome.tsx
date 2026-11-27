@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ConsentSettingsLink } from "@/components/cookie-consent";
+import { Icon } from "@/components/icons";
 import { PROVIDERS } from "@/lib/base";
 import { providerById, tx } from "@/lib/core";
 import { SOURCES } from "@/lib/sources";
@@ -125,7 +126,10 @@ function ProviderMenu() {
                     : "text-slate-700 hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
-                {tx(lang, p.n)}
+                <span className="flex items-center gap-2.5">
+                  <Icon id={p.id} className="size-4 opacity-70" />
+                  {tx(lang, p.n)}
+                </span>
               </Link>
             ))}
           </div>
@@ -309,7 +313,10 @@ function MobileMenu() {
                     data-fast-goal-source="mobile_menu"
                     className={row(pathname === `/r/${p.slug}`)}
                   >
-                    {tx(lang, p.n)}
+                    <span className="flex items-center gap-2.5">
+                      <Icon id={p.id} className="size-4 opacity-70" />
+                      {tx(lang, p.n)}
+                    </span>
                   </Link>
                 ))}
               </div>

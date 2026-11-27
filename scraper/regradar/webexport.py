@@ -32,7 +32,12 @@ RECENT_DAYS = 90
 # Luxemburg-Rahmenwerke tragen die Fassungshistorie (Archiv, Gesetze, Rundschreiben).
 MAX_PER_FRAMEWORK_BY_ID = {"bcbs": 12, **{f: 400 for f in (
     "luaifm", "lulmt", "cssf18698", "cssf24856", "cssfaml", "cssfict", "cssfreport",
-    "cssfmanco", "cssfdistr", "cssfesg", "cssfucits", "cssfspecial")}}
+    "cssfmanco", "cssfdistr", "cssfesg", "cssfucits", "cssfspecial")},
+    # Schweizer Rahmenwerke (Welle 10): Fassungshistorie aus Fedlex/FINMA ohne Kappung.
+    **{f: 100 for f in (
+    "chfidleg", "chverhalten", "chkag", "chkonsol", "chgwg", "chsanktion", "chcrypto", "chident",
+    "chict", "chauslag", "chki", "chdsg", "chtbtf", "chbankrs", "chdepo", "chfinmag", "chvag",
+    "chbvg", "chsix", "chnachhalt")}}
 
 # Reihenfolge wichtig: spezifische Regime vor generischen prüfen.
 FRAMEWORK_RULES = [
@@ -384,6 +389,7 @@ BIS_FOREIGN_RCAP = (
 # bewertet als sonstige unverbindliche Berichte internationaler Standardsetzer.
 BIS_SOURCES = {"bis", "bis_cpmi", "bis_fsi", "bis_press"}
 LLM_BIS_PREFIX = "[BIS] "
+LLM_CH_PREFIX = "[CH] "   # Schweizer Quellen (CH_SOURCES), siehe AUSNAHME Schweiz im Prompt
 # Finanzmarktinfrastrukturen (CPMI-IOSCO) und Statistik-Pressemeldungen sind
 # keine Bankenaufsichtsstandards.
 BIS_NOT_BANK_SUPERVISION = (
@@ -875,10 +881,108 @@ EVERGREEN_URL = re.compile(BUNDESBANK_EVERGREEN, re.IGNORECASE)
 # treffen dort auch Energie-, Agrar- oder Beamtenrecht.
 LEGISLATION_SOURCES = {"bgbl", "dip", "gii"}
 SOURCE_RULES["cssf_archive"] = SOURCE_RULES["cssf"]
+
+# ---------------------------------------------------------------- Schweiz
+# Welle 10 (28.11.2026). Schweizer Quellen werden ausschliesslich über diese
+# Regeln den ch*-Rahmenwerken zugeordnet (EXCLUSIVE_SOURCES). Reihenfolge =
+# Vorrang: erst Ausschlüsse (None), dann spezifische Rundschreiben/Normen, zuletzt
+# die breiteren Themenwörter. Schwache Wörter ("bank", "finma", "klima") stehen
+# bewusst nirgends allein.
+CH_DROP = (
+    # Personalien, Einzelfälle, Verfahren, Veranstaltungen, Statistik, Verbandsleben
+    r"verlässt die finma|neues mitglied|\bgewählt (zum|zur|als)\b|personalstruktur|geschäftsleitung:|übernahmekommission|"
+    r"enforcementverfahren|schliesst enforcement|dekotierung|sanktionsbescheid|untersuchung in sachen|"
+    r"aktualisierte sanktionsmeldung|neumitglied|neue mitglieder|generalversammlung|asset management day|"
+    r"wächst weiter|kopf des monats|medienlunch|marktbericht|jahresbericht|geschäftsbericht|"
+    r"treffen mit|trifft sich mit|von-wattenwyl|bitcoin-etf|"
+    # Einzelinstitute: Krisenpläne einzelner Banken sind Aufsichtspraxis, keine Regeländerung
+    r"krisenvorbereitung der ubs|notfall- und stabilisierungspläne von|abwicklungsfähigkeit der ubs|"
+    r"änderungen an regelungen zu personal und verwaltungsrat der finma|"
+    # Cyber-Vorfälle und Strafverfolgung Einzelner, Awareness
+    r"\bpublica\b|festnahmen|hausdurchsuchung|zerschlagung|ransomware-gruppe|cyber security month|cyber week|"
+    r"effizienz der verwaltung|"
+    # Steuern (Nutzerentscheidung 02.09.2026) und Sozialversicherung ausserhalb BVG/VAG
+    r"automatische[rn]? informationsaustausch|besteuerung|steuerlich|steuerrecht|steuerreform|steuerabkommen|krankenversicher|unfallversicher|sozialversicherungsabkommen|\bahv\b|"
+    r"invalidenversicherung|mutterschaft|pflegeversicherung|"
+    # Reden/Artikel
+    r"\b(referat|rede|vortrag) (von|des|der|zum|zur)\b")
+CH_RULES = [
+    (None, CH_DROP),
+    # Spezifische Rundschreiben und Normen zuerst.
+    ("chident", r"2016/7|video- und online-identifizierung|online-identifizierung|\be-id\b|"
+                r"elektronische[rn]? identit|bgeid"),
+    ("chnachhalt", r"2026/1\b|naturbezogene finanzrisik|greenwashing|05/2021|nachhaltigkeitsbericht|"
+                   r"nachhaltigkeitsrisik|nachhaltige finanz|klimarisik|klimaverordnung|climate scores|"
+                   r"\bnufg\b|nachhaltige unternehmensführung|sustainable finance"),
+    ("chgwg", r"geldwäsch|terrorismusfinanzierung|\bgwg\b|\bgwv\b|gwv-finma|wirtschaftlich berechtigt|"
+              r"transparenzregister|transparenz juristischer|\btjpg\b|\btjpv\b|2011/1|sorgfaltspflichten der finanzintermediäre"),
+    ("chsanktion", r"embargo|sanktionspaket|sanktionen: (russland|belarus|ukraine)|"
+                   r"sanktionen (gegenüber|gegen) (russland|belarus)|russland und belarus|"
+                   r"massnahmen gegenüber (russland|belarus)|ukraine-verordnung|belarus-verordnung"),
+    ("chcrypto", r"krypto|stablecoin|\bdlt\b|blockchain|zahlungsmittelinstitut|digital assets?|"
+                 r"distributed ledger|registerwertrecht|tokenisier"),
+    ("chki", r"künstliche[nr]? intelligenz|ki-konvention|\bki\b|ki-modell|ki-anwendung"),
+    ("chict", r"2023/1\b|operationelle resilienz|cyberrisik|cyber-risik|cyber-resilienz|cybersicherheitsverordnung|cyberangriff|cybervorfall|meldepflicht für cyber|\bikt\b|informationssicherheit|\bbacs\b|"
+              r"betrugsrisiken|digitale betrug|quantum|datenabfluss"),
+    ("chauslag", r"2018/3\b|auslagerung|outsourcing|2017/1\b|corporate governance"),
+    ("chfinmag", r"\bfinmag\b|finanzmarktaufsichtsgesetz|direktübermittlung|2017/6\b|amtshilfe|"
+                 r"art\. 42c|25\.071"),
+    ("chdsg", r"datenschutz|\bdsg\b|\bedöb\b|personendaten"),
+    ("chkonsol", r"2025/4\b|konsolidierte aufsicht|finanzgruppe"),
+    ("chtbtf", r"too big to fail|\btbtf\b|systemrelevant|verantwortlichkeitsregime|liquidity backstop|"
+               r"\bplb\b|notfallplan|stabilisierungsplan|ausländischer beteiligungen|26\.027"),
+    ("chdepo", r"einlagensicherung|esisuisse|einlegerliste|bankinsolvenz|abwicklungsplanung|"
+               r"sanierungs- und abwicklung"),
+    ("chverhalten", r"2025/2\b|verhaltenspflichten"),
+    ("chbvg", r"berufliche vorsorge|\bbvg\b|\bbvv ?[23]\b|\boak\b|vorsorgeeinrichtung|pensionskasse|"
+              r"mindestzinssatz|säule 3a|freizügigkeit|vorsorgeguthaben"),
+    ("chvag", r"versicherungsaufsicht|versicherungsunternehmen|versicherer|versicherungsvermittl|\bvag\b|\bavo\b|schweizer solvenztest|\bsst\b|rückversicher|2024/2\b|2025/3\b"),
+    ("chsix", r"six exchange regulation|six swiss exchange|kotierungsreglement|ad hoc-publizität|"
+              r"ad-hoc-publizität|regelmeldepflicht|offenlegung von beteiligungen|finfrag|finfrav|"
+              r"finanzmarktinfrastruktur|börsengesetz|marktverhaltensregeln|insiderhandel|kursmanipulation|"
+              r"regulatory board|prospektprüfstelle"),
+    ("chkag", r"kollektivanlage|\bkag\b|\bkkv\b|\bl-qif\b|fondsleitung|\bsicav\b|\bsicaf\b|"
+              r"anlagefonds|limited qualified investor fund"),
+    ("chbankrs", r"2019/2\b|zinsrisiken|eigenmittel|liquiditätsverordnung|\bliqv\b|\berv\b|"
+                 r"risikoverteilung|basel iii|bankenverordnung|\bbankv\b|bankengesetz|\bbankg\b|"
+                 r"banken und wertpapierhäuser|2008/21|2015/2\b"),
+    ("chfidleg", r"fidleg|fidlev|\bfinig\b|\bfiniv\b|finanzdienstleistungsgesetz|finanzinstitutsgesetz|"
+                 r"vermögensverwalt|wertpapierhäus|\btrustees?\b|beraterregister|ombudsstelle|"
+                 r"basisinformationsblatt|prospekt"),
+]
+CH_SOURCES = {"finma", "finma_docs", "ch_admin", "six_regulation", "oak_bv", "amas", "fedlex"}
+for _src in ("finma", "finma_docs", "ch_admin"):
+    SOURCE_RULES[_src] = CH_RULES
+# SIX: alles, was keine Einzelfall-Meldung ist, gehört zu den Marktverhaltensregeln.
+SOURCE_RULES["six_regulation"] = [(None, CH_DROP), ("chsix", r"[\s\S]")]
+# OAK BV: ausschliesslich berufliche Vorsorge.
+SOURCE_RULES["oak_bv"] = [("chbvg", r"[\s\S]")]
+# AMAS: Verbandsmeldungen ohne Regelungsbezug fallen weg.
+SOURCE_RULES["amas"] = [
+    (None, CH_DROP),
+    ("chnachhalt", r"sustainable finance|nachhaltigkeit|greenwashing"),
+    ("chkag", r"kollektivanlage|\bkag\b|fondsrecht|musterdokument|richtlinie|selbstregulierung|t\+1|settlement"),
+    ("chfidleg", r"fidleg|finig|vermögensverwalt|vermögensverwaltung"),
+]
+# Fedlex: Titel beginnen mit dem Kurznamen des Erlasses (siehe FEDLEX_ACTS).
+SOURCE_RULES["fedlex"] = [
+    ("chsanktion", r"^embg\b"),
+    ("chgwg", r"^(gwg|gwv|gwv-finma|tjpg|tjpv)\b"),
+    ("chfidleg", r"^(fidleg|fidlev|finig|finiv)\b"),
+    ("chkag", r"^(kag|kkv)\b"),
+    ("chbankrs", r"^(bankg|bankv|erv|liqv)\b"),
+    ("chvag", r"^(vag|avo)\b"),
+    ("chbvg", r"^(bvg|bvv 2)\b"),
+    ("chsix", r"^(finfrag|finfrav)\b"),
+    ("chfinmag", r"^finmag\b"),
+    ("chdsg", r"^(dsg|dsv)\b"),
+    ("chict", r"^(isg|cybersicherheitsverordnung)\b"),
+]
 # Quellen, deren Dokumente nur über ihre SOURCE_RULES zugeordnet werden
 # (kein Fallback auf FRAMEWORK_RULES): CSSF-Schreiben gehören nicht in
 # EU-Rahmenwerke wie DORA, die alle Zielgruppen sehen.
-EXCLUSIVE_SOURCES = {"cssf", "cssf_archive", "legilux", "chd", "crf_lu"}
+EXCLUSIVE_SOURCES = {"cssf", "cssf_archive", "legilux", "chd", "crf_lu",
+                     "finma", "finma_docs", "ch_admin", "six_regulation", "oak_bv", "amas", "fedlex"}
 OFFTOPIC_DE = re.compile(
     r"beamten|besoldung|energiewirtschaft|energiebereich|agrar|tiergesundheit|"
     r"tierarznei|tierschutz|lebensmittel|landwirtschaft|forst|jagd|fischerei|"
@@ -922,6 +1026,8 @@ TREATY_LAW = re.compile(
 
 
 LU_SOURCES = {"cssf", "cssf_archive", "legilux", "chd", "crf_lu"}
+# Schweizer und Luxemburger Scraper-Treffer, deren URL schon kuratiert in data.ts steht, entfallen.
+CURATED_DEDUP_SOURCES = LU_SOURCES | CH_SOURCES  # Treffer mit URL aus data.ts entfallen
 _CURATED_URLS: Optional[set] = None
 
 
@@ -991,7 +1097,7 @@ SHADOW_SOURCES = {"esma_library": "esma"}
 # Quellen derselben Behörde für die Zusammenführung "Pressemitteilung +
 # Dokument" (samepub.py): BIS-Publikationslisten und BIS-Pressefeed melden
 # dieselbe Veröffentlichung unter verschiedenen Titeln.
-SAME_AUTHORITY_SOURCES = {"bis_cpmi": "bis", "bis_fsi": "bis", "bis_press": "bis"}
+SAME_AUTHORITY_SOURCES = {"bis_cpmi": "bis", "bis_fsi": "bis", "bis_press": "bis", "finma_docs": "finma"}
 SHADOW_WINDOW_DAYS = 3
 _STOP = {"the", "and", "for", "under", "with", "from", "into", "that", "this",
          "esma", "consultation", "paper", "press", "release", "report", "final"}
@@ -1356,7 +1462,7 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
                    if r["source_id"] == "hys" and r["publication_date"] else None)
         if hys_age is not None and hys_age > HYS_MAX_AGE_DAYS:
             continue
-        if (r["source_id"] in LU_SOURCES and r["canonical_url"]
+        if (r["source_id"] in CURATED_DEDUP_SOURCES and r["canonical_url"]
                 and r["canonical_url"].rstrip("/").lower() in _curated_urls()):
             continue
         # Dokumente der AMLA-Website gehören immer zum AMLA-Rahmenwerk;
@@ -1380,7 +1486,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
     from .llmfilter import api_key, classify as llm_classify
     relevance = llm_classify(conn, [
         (r["document_id"], "{}{} – {}".format(
-            LLM_BIS_PREFIX if r["source_id"] in BIS_SOURCES else "",
+            LLM_BIS_PREFIX if r["source_id"] in BIS_SOURCES
+            else LLM_CH_PREFIX if r["source_id"] in CH_SOURCES else "",
             _clean(r["title"], 200), _clean(r["summary"])))
         for r, _, _ in candidates])
 

@@ -290,6 +290,11 @@ export const HINTS: Record<string, Hint> = {
     pruefen: ["Ist die Verwaltungsgesellschaft oder der Fonds in Luxemburg zugelassen?"],
     quelle: "Handelsregister, CSSF-Register",
   },
+  sitz_ch: {
+    hinweis: "Die Gesellschaft hat ihren Sitz in der Schweiz und untersteht der FINMA.",
+    pruefen: ["Ist das Institut oder der Fonds in der Schweiz von der FINMA bewilligt oder einer Aufsichtsorganisation angeschlossen?"],
+    quelle: "Handelsregister, FINMA-Register der bewilligten Institute",
+  },
 };
 
 export const hintFor = (id: string): Hint | undefined => HINTS[id];

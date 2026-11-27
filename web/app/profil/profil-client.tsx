@@ -9,7 +9,7 @@ import { RelevanceHint } from "@/components/relevance-hint";
 
 type Opt = { id: string; l: string };
 const SEATS: Opt[] = [
-  { id: "sitz_de", l: "Deutschland" }, { id: "sitz_lu", l: "Luxemburg" }, { id: "sitz_eu", l: "Anderer EU-/EWR-Staat" },
+  { id: "sitz_de", l: "Deutschland" }, { id: "sitz_lu", l: "Luxemburg" }, { id: "sitz_ch", l: "Schweiz" }, { id: "sitz_eu", l: "Anderer EU-/EWR-Staat" },
 ];
 type Tri = true | false | null;
 

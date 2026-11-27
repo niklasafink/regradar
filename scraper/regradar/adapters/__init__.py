@@ -16,6 +16,8 @@ from .dsnews import DsNewsAdapter
 from .ecfinance import EcFinanceAdapter
 from .bafinsearch import BafinSearchAdapter
 from .lux import LegiluxAdapter, ChdAdapter, CssfArchiveAdapter
+from .ch import (FinmaDocsAdapter, NsbAdapter, SixAdapter, OakAdapter, AmasAdapter,
+                 FedlexAdapter)
 
 ADAPTERS = {
     "ecfinance": EcFinanceAdapter,
@@ -38,4 +40,10 @@ ADAPTERS = {
     "legilux": LegiluxAdapter,
     "chd": ChdAdapter,
     "cssfarchive": CssfArchiveAdapter,
+    "finmadocs": FinmaDocsAdapter,
+    "nsb": NsbAdapter,
+    "six": SixAdapter,
+    "oak": OakAdapter,
+    "amas": AmasAdapter,
+    "fedlex": FedlexAdapter,
 }

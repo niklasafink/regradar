@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T20:05:42Z",
+  "generated_at": "2026-11-27T23:38:44Z",
   "sources": [
     {
       "id": "eurlex",
@@ -304,6 +304,62 @@
       "jurisdiction": "EU",
       "access": "RSS",
       "url": "https://www.ecb.europa.eu/"
+    },
+    {
+      "id": "finma",
+      "name": "FINMA (News: Medienmitteilungen, Anhörungen)",
+      "authority": "FINMA",
+      "jurisdiction": "CH",
+      "access": "RSS",
+      "url": "https://www.finma.ch/de/news/"
+    },
+    {
+      "id": "finma_docs",
+      "name": "FINMA (Rundschreiben, Aufsichtsmitteilungen, laufende Anhörungen)",
+      "authority": "FINMA",
+      "jurisdiction": "CH",
+      "access": "API",
+      "url": "https://www.finma.ch/de/dokumentation/"
+    },
+    {
+      "id": "ch_admin",
+      "name": "News Service Bund (SIF, SECO, BACS, BSV, EDÖB, Bundesrat)",
+      "authority": "Bundesverwaltung",
+      "jurisdiction": "CH",
+      "access": "RSS",
+      "url": "https://www.news.admin.ch/"
+    },
+    {
+      "id": "six_regulation",
+      "name": "SIX Exchange Regulation (Mitteilungen, Regelwerke)",
+      "authority": "SIX Exchange Regulation",
+      "jurisdiction": "CH",
+      "access": "API",
+      "url": "https://www.ser-ag.com/de/resources/notifications.html"
+    },
+    {
+      "id": "oak_bv",
+      "name": "OAK BV (Weisungen, Mitteilungen)",
+      "authority": "OAK BV",
+      "jurisdiction": "CH",
+      "access": "HTML",
+      "url": "https://www.oak-bv.admin.ch/"
+    },
+    {
+      "id": "amas",
+      "name": "AMAS (Medienmitteilungen Asset Management Association Switzerland)",
+      "authority": "AMAS",
+      "jurisdiction": "CH",
+      "access": "HTML",
+      "url": "https://www.am-switzerland.ch/"
+    },
+    {
+      "id": "fedlex",
+      "name": "Fedlex (Schweizer Bundesrecht, neue Fassungen)",
+      "authority": "Fedlex",
+      "jurisdiction": "CH",
+      "access": "API",
+      "url": "https://www.fedlex.admin.ch/"
     }
   ]
 }

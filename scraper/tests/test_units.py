@@ -3,6 +3,7 @@
 Ausführen:  python3 -m unittest discover -s tests -v
 """
 import os
+import re
 import sys
 import sqlite3
 import unittest
@@ -1698,3 +1699,191 @@ class BafinSearch(unittest.TestCase):
             self.assertEqual(_classify(title, source_id="bafin_search", title=title), "bspkg")
         title = "Verordnung zur Änderung der Bausparkassen-Verordnung"
         self.assertEqual(_classify(title, source_id="bgbl", title=title), "bspkg")
+
+
+class SwissSources(unittest.TestCase):
+    """Schweizer Quellen (Welle 10, 28.11.2026): Parser mit kleinen Fixtures
+    und Zuordnung auf die ch*-Rahmenwerke."""
+
+    def test_finma_dokumentenliste(self):
+        from regradar.adapters.ch import parse_finma_items
+        payload = {"Items": [
+            {"Title": "2026/01 FINMA-Rundschreiben \"Naturbezogene Finanzrisiken\" (12.12.2024)",
+             "Description": "Management der klima- und weiteren naturbezogenen Finanzrisiken",
+             "Link": "/de/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2026-01.pdf?sc_lang=de&hash=3C48",
+             "Date": "12.12.2024"},
+            {"Title": "FINMA-Aufsichtsmitteilung 07/2026", "Description": "Zweistufige Aufsicht über Vermögensverwalter",
+             "Link": "/de/~/media/finma/x/20261119-finma-aufsichtsmitteilung-07-2026.pdf?sc_lang=de&hash=91", "Date": "19.11.2026"},
+            {"Title": "ohne Datum", "Link": "/de/x.pdf", "Date": ""},
+        ]}
+        docs = parse_finma_items(payload, "CIRCULAR", "finma_docs", "FINMA")
+        self.assertEqual(len(docs), 2)
+        # Hash-Parameter entfallen: kuratierte Einträge in data.ts führen die URL ohne Query.
+        self.assertEqual(docs[0].detail_url,
+                         "https://www.finma.ch/de/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2026-01.pdf")
+        self.assertEqual(docs[0].publication_date, "2024-12-12")
+        self.assertEqual(docs[0].extra["reference"], "RS 2026/01")
+        self.assertEqual(docs[0].jurisdiction, "CH")
+        self.assertTrue(docs[1].title.startswith("FINMA-Aufsichtsmitteilung 07/2026: Zweistufige"))
+
+    def test_review_befunde_zuordnung(self):
+        """Review 28.11.2026: Fedlex-Kurzname mit Doppelpunkt, zu breite Drop-Wörter,
+        Mischteaser Banken und Versicherungen."""
+        from regradar import webexport as w
+        c = lambda t, src="finma": w._classify(t, source_id=src)  # noqa: E731
+        self.assertEqual(c("TJPG: neue Fassung gilt ab 1.1.2027", "fedlex"), "chgwg")
+        self.assertEqual(c("ISG: neue Fassung gilt ab 1.4.2025", "fedlex"), "chict")
+        self.assertEqual(c("FINMA Rundschreiben 2026/3: Die ausgewählte Methode zum Steuern von Risiken. Eigenmittel Banken"), "chbankrs")
+        self.assertEqual(c("FINMA beaufsichtigt Banken und Versicherungen: Eigenmittel Zinsrisiken"), "chbankrs")
+        self.assertIsNone(c("Neuer Direktor gewählt zum Leiter Asset Management"))
+
+    def test_finma_anhoerungen_html(self):
+        from regradar.adapters.ch import parse_finma_anhoerungen
+        page = ('<div class="document-teaser-box"><a class="document-teaser-box-title" title="x" '
+                'href="/de/~/media/finma/a/20261104-rs19-02.pdf?sc_lang=de&amp;hash=1">Entwurf: Revision des FINMA-Rundschreibens 2019/2</a>'
+                '<span>Zuletzt geändert: 04.11.2026</span></div>'
+                '<div class="document-teaser-box"><a class="document-teaser-box-title" '
+                'href="/de/~/media/finma/a/erlaeuterung.pdf">Erl&#228;uterungsbericht</a><span>Zuletzt geändert: 04.11.2026</span></div>')
+        items = parse_finma_anhoerungen(page)
+        self.assertEqual(len(items), 1)   # Erläuterungsbericht ist kein eigener Eintrag
+        self.assertEqual(items[0]["date"], "2026-11-04")
+        self.assertNotIn("?", items[0]["url"])
+
+    def test_finma_feed_ausschluss(self):
+        from regradar.registry import RSS_LINK_EXCLUDE
+        rx = re.compile(RSS_LINK_EXCLUDE["finma"])
+        self.assertTrue(rx.search("https://www.finma.ch/de/news/2026/11/20261123-sr-946-231-08/"))
+        self.assertTrue(rx.search("https://www.finma.ch/de/news/2026/09/aktualisierte-sanktionsmeldung_isil/"))
+        self.assertTrue(rx.search("https://www.finma.ch/de/news/older/20261118-rede-marlene-amstad-x/"))
+        self.assertFalse(rx.search("https://www.finma.ch/de/news/2026/11/20261106-sanktionen-russland-belarus/"))
+        self.assertFalse(rx.search("https://www.finma.ch/de/news/2026/11/20261110-mm-gwv-finma/"))
+
+    def test_news_service_bund(self):
+        from regradar.adapters.ch import parse_nsb
+        xml = """<?xml version="1.0"?><rss version="2.0"><channel>
+        <item><title>Ukraine: Der Bundesrat setzt das 21. Sanktionspaket um</title><link>https://www.admin.ch/de/newnsb/KsmEWk4E-bHM</link>
+          <description>Sanktionen</description><pubDate>2026-11-04</pubDate><author>Der Schweizerische Bundesrat</author></item>
+        <item><title>Öffentliche Warnung: Falsches Verbrauchsdatum bei Coop</title><link>https://www.admin.ch/de/newnsb/f8O15</link>
+          <description>Rückruf</description><pubDate>2026-11-27</pubDate><author>BLV</author></item>
+        <item><title>Tourismus Forum Schweiz 2026</title><link>https://www.admin.ch/de/newnsb/zzz</link>
+          <description>Finanzmarkt</description><pubDate>2026-11-26</pubDate><author>SECO</author></item>
+        <item><title>Dritter Bericht zu Geldwäscherei</title><link>https://www.admin.ch/de/newnsb/Amio6</link>
+          <description>x</description><pubDate>2026-10-14</pubDate><author>EFD</author></item>
+        </channel></rss>""".encode()
+        docs = parse_nsb(xml, "ch_admin")
+        self.assertEqual([d.external_id for d in docs], ["KsmEWk4E-bHM", "Amio6"])
+        self.assertEqual(docs[0].publication_date, "2026-11-04")
+        self.assertEqual(docs[0].jurisdiction, "CH")
+
+    def test_six_regulatory_communications(self):
+        from regradar.adapters.ch import parse_six
+        payload = {"results": [
+            {"title": "Mitteilung des Regulatory Board Nr. 2/2026", "description": "Anpassung Richtlinie Ad hoc-Publizität",
+             "url": "https://www.ser-ag.com/dam/downloads/regulation/listing/communiques-regulatory-board/com202602-de.pdf",
+             "publicationDate": 1790855580000, "abbreviation": "COM202602"},
+            {"title": "Dekotierung Leclanché SA, Yverdon-les-Bains", "url": "https://www.ser-ag.com/x.html",
+             "publicationDate": 1792101600000},
+        ]}
+        docs = parse_six(payload, "SUPERVISORY_STATEMENT", "six_regulation", "SIX Exchange Regulation")
+        self.assertEqual(len(docs), 1)   # Dekotierung eines Emittenten = Einzelfall
+        self.assertEqual(docs[0].external_id, "COM202602")
+        self.assertEqual(docs[0].publication_date, "2026-10-01")
+        self.assertIn("Ad hoc-Publizität", docs[0].title)
+
+    def test_oak_karten(self):
+        from regradar.adapters.ch import parse_oak
+        page = ('<div><h3>Mindestanforderungen für Rechtsgeschäfte der Vorsorgeeinrichtung</h3>'
+                '<p>W – 01/2026</p><p>Erstversion</p><p>22.04.2026</p>'
+                '<a href="/de/weisungen-w-01-2026">Mehr über «Mindestanforderungen»</a></div>')
+        items = parse_oak(page)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["ref"], "W – 01/2026")
+        self.assertEqual(items[0]["date"], "2026-04-22")
+        self.assertEqual(items[0]["href"], "/de/weisungen-w-01-2026")
+
+    def test_amas_medienmitteilung(self):
+        from regradar.adapters.ch import parse_amas
+        page = ('<h3>AMAS wächst weiter</h3><p><strong>Basel, 19. November 2026 – Die AMAS verzeichnet fünf Neumitglieder.</strong></p>')
+        items = parse_amas(page)
+        self.assertEqual(items[0]["date"], "2026-11-19")
+        self.assertEqual(items[0]["title"], "AMAS wächst weiter")
+
+    def test_fedlex_fassungen(self):
+        from regradar.adapters.ch import parse_fedlex
+        payload = {"results": {"bindings": [{
+            "work": {"value": "https://fedlex.data.admin.ch/eli/cc/2019/758"},
+            "c": {"value": "https://fedlex.data.admin.ch/eli/cc/2019/758/20261001"},
+            "app": {"value": "2026-10-01"}, "created": {"value": "2026-06-19T09:04:56"},
+            "pubdate": {"value": "2026-06-18"}}]}}
+        docs = parse_fedlex(payload, "fedlex", "Fedlex")
+        self.assertEqual(docs[0].title, "FIDLEG (SR 950.1): neue Fassung gilt ab 1.10.2026")
+        self.assertEqual(docs[0].external_id, "2019/758/20261001")
+        self.assertEqual(docs[0].publication_date, "2026-06-18")
+        self.assertEqual(docs[0].extra["reference"], "SR 950.1")
+
+    def test_fedlex_erlass_liste_ohne_sanktionslisten(self):
+        """Ukraine-/Belarus-Verordnung erzeugen mit jeder Listenänderung eine Fassung."""
+        from regradar.adapters.ch import FEDLEX_ACTS
+        self.assertNotIn("2022/151", FEDLEX_ACTS)
+        self.assertNotIn("2022/172", FEDLEX_ACTS)
+
+    def test_zuordnung_finma_und_bund(self):
+        from regradar.webexport import _classify
+        cases = [
+            ("FINMA verabschiedet teilrevidiertes Rundschreiben 2016/7 \"Video- und Online-Identifizierung\"", "finma", "chident"),
+            ("FINMA veröffentlicht die teilrevidierte Geldwäschereiverordnung-FINMA", "finma", "chgwg"),
+            ("FINMA eröffnet Anhörung zum teilrevidierten Rundschreiben 2019/2 «Zinsrisiken – Banken»", "finma", "chbankrs"),
+            ("FINMA eröffnet Anhörung zum teilrevidierten Rundschreiben 2017/6 «Direktübermittlung»", "finma", "chfinmag"),
+            ("FINMA-Aufsichtsmitteilung 05/2026: Quantum Computing", "finma_docs", "chict"),
+            ("FINMA-Aufsichtsmitteilung 01/2026: Verwahrung von kryptobasierten Vermögenswerten", "finma_docs", "chcrypto"),
+            ("FINMA-Aufsichtsmitteilung 07/2026: Aufsicht über die Vermögensverwalter und Trustees", "finma_docs", "chfidleg"),
+            ("FINMA begrüsst die Vernehmlassungsvorlagen des Bundesrates zum Gesetzespaket zur Stärkung des TBTF-Dispositivs", "finma", "chtbtf"),
+            ("Sanktionen: Russland und Belarus", "finma", "chsanktion"),
+            ("Ukraine: Der Bundesrat setzt das 21. Sanktionspaket um", "ch_admin", "chsanktion"),
+            ("Der Bundesrat beschliesst eine Anhebung des Mindestzinssatzes auf 2%", "ch_admin", "chbvg"),
+            ("Transparenzregister nimmt den Betrieb auf", "ch_admin", "chgwg"),
+            ("OAK BV Weisung W 01/2026 (Erstversion): Mindestanforderungen für Rechtsgeschäfte", "oak_bv", "chbvg"),
+            ("Mitteilung des Regulatory Board Nr. 2/2026: Anpassung Richtlinie Ad hoc-Publizität", "six_regulation", "chsix"),
+            ("GwG (SR 955.0): neue Fassung gilt ab 1.10.2026 Konsolidierte Fassung von GwG", "fedlex", "chgwg"),
+            ("BVV 2 (SR 831.441.1): neue Fassung gilt ab 1.1.2027", "fedlex", "chbvg"),
+            ("LiqV (SR 952.06): neue Fassung gilt ab 1.1.2027", "fedlex", "chbankrs"),
+        ]
+        for title, src, expected in cases:
+            self.assertEqual(_classify(title, source_id=src, title=title), expected, title)
+
+    def test_einzelfaelle_und_fachfremdes_entfallen(self):
+        from regradar.webexport import _classify
+        for title, src in [
+            ("FINMA schliesst Enforcementverfahren gegen Julius Bär ab", "finma"),
+            ("FINMA-Geschäftsleitung: Alexandra Karg verlässt die FINMA", "finma"),
+            ("FINMA beurteilt die Krisenvorbereitung der UBS", "finma"),
+            ("FINMA genehmigt ersten Schweizer Bitcoin-ETF", "finma"),
+            ("Aktualisierte Sanktionsmeldung: Taliban", "finma"),
+            ("Bundesrat genehmigt Partnerstaaten für den automatischen Informationsaustausch über Kryptowerte", "ch_admin"),
+            ("Cyberangriff auf Softwarelieferanten: Publica lässt Umgang mit Personendaten prüfen", "ch_admin"),
+            ("Dekotierung Leclanché SA", "six_regulation"),
+            ("AMAS wächst weiter und stärkt mit Apollo und Blackstone ihre Kompetenz", "amas"),
+            ("Prämienwachstum der Krankenversicherung", "ch_admin"),
+        ]:
+            self.assertIsNone(_classify(title, source_id=src, title=title), title)
+
+    def test_schweizer_quellen_sind_exklusiv(self):
+        """Kein Rückfall auf EU-Rahmenwerke: ein FINMA-Text mit DORA-Stichwort bleibt Schweizer Recht."""
+        from regradar.webexport import _classify, EXCLUSIVE_SOURCES, CURATED_DEDUP_SOURCES, CH_SOURCES
+        self.assertTrue(CH_SOURCES <= EXCLUSIVE_SOURCES)
+        self.assertTrue(CH_SOURCES <= CURATED_DEDUP_SOURCES)    # kuratierte URLs aus data.ts unterdrücken
+        self.assertIsNone(_classify("EU Verordnung DORA und MiCA im Überblick", source_id="finma"))
+
+    def test_scope_schweiz_ohne_deutschlandbezug(self):
+        from regradar.scope import apply_guards
+        fws = {"chgwg": {"id": "chgwg", "jur": "CH"}, "gwg": {"id": "gwg", "jur": "DE"}}
+        out = apply_guards({"art": "institute", "adressaten": [{"alle": ["ki", "taetig_de"]}]}, "chgwg", fws, set(), "finma.ch")
+        self.assertNotIn("taetig_de", out["adressaten"][0]["alle"])
+        self.assertIn("ki", out["adressaten"][0]["alle"])
+        # Deutsches Recht verlangt weiter den Deutschland-Bezug.
+        de = apply_guards({"art": "institute", "adressaten": [{"alle": ["ki"]}]}, "gwg", fws, set(), "bafin.de")
+        self.assertIn("taetig_de", de["adressaten"][0]["alle"])
+
+    def test_llm_prompt_schweiz(self):
+        from regradar.llmfilter import SYSTEM_PROMPT
+        self.assertIn("[CH]", SYSTEM_PROMPT)

@@ -64,7 +64,7 @@ type GroupEval = { v: Tri; unknown: string[] };
    Institute und Versicherer wurden nach SNCI und IRB gefragt). */
 const BANK_ONLY = new Set(["si", "lsi", "lsi_hi", "snci", "bedeutend_ivv", "osii", "gsii", "irb", "handelsbuch_klein"]);
 const BANKLIKE = ["ki", "ki_crr", "bausparkasse", "foerderbank", "wpi_gross", "finanzholding"];
-const SEATS = ["sitz_de", "sitz_lu", "sitz_eu"];
+const SEATS = ["sitz_de", "sitz_lu", "sitz_ch", "sitz_eu"];
 
 /** Merkmalswert für die Regeln: wie im Profil, dazu was sich sicher ergibt,
     auch wenn es (in älteren Profilen) nicht eingetragen ist: Ein Institut hat
@@ -595,8 +595,10 @@ export function offlineEstimate(p: Profile, t: MatchTarget, scope: Scope | undef
     return out("unsicher", "Die Angaben im Profil reichen ohne genaue Prüfung nicht aus.", { frage });
   }
   const { fw } = t;
-  if ((fw.jur === "DE" && featureValue(p, "taetig_de") === false) || (fw.jur === "LU" && (featureValue(p, "sitz_lu") === false || featureValue(p, "sitz_de") === true))) {
-    return out("nein", `Das Rahmenwerk „${fw.n.de}“ gilt nur in ${fw.jur === "DE" ? "Deutschland" : "Luxemburg"}.`);
+  if ((fw.jur === "DE" && featureValue(p, "taetig_de") === false)
+    || (fw.jur === "LU" && (featureValue(p, "sitz_lu") === false || featureValue(p, "sitz_de") === true))
+    || (fw.jur === "CH" && (featureValue(p, "sitz_ch") === false || featureValue(p, "sitz_de") === true))) {
+    return out("nein", `Das Rahmenwerk „${fw.n.de}“ gilt nur in ${fw.jur === "DE" ? "Deutschland" : fw.jur === "LU" ? "Luxemburg" : "der Schweiz"}.`);
   }
   const mine = Object.keys(ENT_FEATURES).filter((e) => ENT_FEATURES[e].some((f) => featureValue(p, f) === true));
   if (!mine.length) return out("unsicher", "Die Institutsart ist im Profil nicht angegeben.");

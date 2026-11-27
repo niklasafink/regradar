@@ -34,6 +34,19 @@ export const LOGOS: Record<string, string> = {
   "europarl.europa.eu": "eu.svg",
   "ecb.europa.eu": "ezb.svg",
   "bundestag.de": "bundestag.svg",
+  "finma.ch": "finma.svg",
+  "snb.ch": "snb.svg",
+  "admin.ch": "ch.svg",
+  "fedlex.admin.ch": "ch.svg",
+  "parlament.ch": "ch.svg",
+  "sif.admin.ch": "ch.svg",
+  "efd.admin.ch": "ch.svg",
+  "seco.admin.ch": "ch.svg",
+  "bj.admin.ch": "ch.svg",
+  "bacs.admin.ch": "ch.svg",
+  "bsv.admin.ch": "ch.svg",
+  "oak-bv.admin.ch": "ch.svg",
+  "edoeb.admin.ch": "ch.svg",
 };
 
 /* Rahmenwerk -> herausgebende Stelle (Domain wie in LOGOS/AUTHORITIES). */
@@ -146,6 +159,12 @@ export const FRAMEWORK_AUTH: Record<string, string> = {
   eidas2: "eur-lex.europa.eu",
   csrd: "eur-lex.europa.eu",
   consumer: "gesetze-im-internet.de",
+  // Schweiz: FINMA für Aufsichtsrecht, sonst die zuständige Bundesstelle
+  chfidleg: "finma.ch", chverhalten: "finma.ch", chkag: "finma.ch", chkonsol: "finma.ch",
+  chgwg: "finma.ch", chsanktion: "seco.admin.ch", chcrypto: "finma.ch", chident: "finma.ch",
+  chict: "finma.ch", chauslag: "finma.ch", chki: "finma.ch", chdsg: "edoeb.admin.ch",
+  chtbtf: "admin.ch", chbankrs: "finma.ch", chdepo: "admin.ch", chfinmag: "finma.ch",
+  chvag: "finma.ch", chbvg: "bsv.admin.ch", chnachhalt: "finma.ch", chsix: "ser-ag.com",
 };
 
 /* Big-4- bzw. Kanzlei-Name (adv.f aus live.json) -> Logodatei in public/firms.

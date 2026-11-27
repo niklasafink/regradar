@@ -26,6 +26,9 @@ TIMEOUT = 90
 # Der [BIS]-Zusatz im Prompt wirkt nur auf neue Dokumente und zählt FORMAT
 # bewusst nicht hoch: ein Hochzählen würde alle Urteile anderer Quellen neu
 # würfeln (22.10.2026: 22 Meldungen verschwanden aus anderen Rahmenwerken).
+# Gleiches gilt für den [CH]-Zusatz (28.11.2026): er wirkt nur auf Schweizer
+# Quellen, die vorher nicht exportiert wurden und noch kein Urteil im Cache
+# haben. Ein Hochzählen würde alle bestehenden Urteile neu würfeln.
 FORMAT = 4
 
 SYSTEM_PROMPT = (
@@ -77,6 +80,24 @@ SYSTEM_PROMPT = (
     "Zentralbanken oder Finanzmarktinfrastrukturen richten (Zahlungsverkehr, "
     "Wertpapierabwicklung, Zentralbankgovernance), sowie FSI-Studien ohne "
     "Standard- oder Leitliniencharakter.\n\n"
+    "AUSNAHME Schweiz: Meldungen mit dem Präfix [CH] stammen von der FINMA, "
+    "der Bundesverwaltung (SIF, SECO, BACS, BSV, EDÖB), SIX Exchange "
+    "Regulation, der OAK BV, der AMAS oder von Fedlex und werden bewusst "
+    "verfolgt (eigene Schweizer Rahmenwerke; ein EU- oder DE-Bezug ist dafür "
+    "nicht nötig). RELEVANT sind dort: FINMA-Rundschreiben, "
+    "Aufsichtsmitteilungen, Anhörungen und Vernehmlassungen, neue oder "
+    "geänderte Gesetze und Verordnungen (FIDLEG, FINIG, KAG, GwG, BankG, VAG, "
+    "BVG, DSG, FinfraG u. a.), Mitteilungen und Reglementsänderungen von SIX "
+    "Exchange Regulation, Weisungen der OAK BV und Sanktionspakete. NICHT "
+    "RELEVANT bleiben auch mit Präfix [CH]: Personalien, Reden, "
+    "Enforcementverfahren und Verfügungen gegen einzelne Institute, "
+    "Dekotierungen einzelner Emittenten, Verbandsmeldungen (Mitglieder, "
+    "Generalversammlungen), Statistiken und Berichte ohne Pflichtenbezug "
+    "sowie Steuer- und Sozialversicherungsthemen. Bei Meldungen der "
+    "Bundesverwaltung (SIF, SECO, BACS, BSV, EDÖB) muss ein klarer "
+    "Pflichtenbezug für Finanzinstitute, FINMA-Beaufsichtigte oder "
+    "Vorsorgeeinrichtungen erkennbar sein; allgemeine Cyber-, "
+    "Datenschutz- und KI-Politik ohne Pflichten ist nicht relevant.\n\n"
     "Ebenfalls NICHT RELEVANT: Mitteilungen über den Ein- oder Austritt "
     "einzelner Panelbanken oder Beitragszahler eines Referenzwerts (z. B. "
     "'Upcoming changes to the Euribor panel' – eine namentlich genannte Bank "

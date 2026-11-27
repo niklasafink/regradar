@@ -27,9 +27,11 @@ export interface Update {
 }
 export interface Framework {
   /** Rechtsraum; "LU" = luxemburgisches Fonds-/CSSF-Recht (nur sichtbar,
-      wenn im Onboarding „Luxemburg" gewählt ist); "INT" = internationale
+      wenn im Onboarding „Luxemburg" gewählt ist); "CH" = Schweizer Recht
+      (FINMA, Bundesrecht; nur sichtbar, wenn im Onboarding „Schweiz"
+      gewählt ist); "INT" = internationale
       Standardsetzer (BIS/Basler Ausschuss), sichtbar für alle. */
-  id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE" | "LU" | "INT";
+  id: string; topic: string; ents: string[]; jur: "EU" | "DE" | "EU+DE" | "LU" | "CH" | "INT";
   n: Txt; ref: string;
   /** Umgangssprachliche Bezeichnungen und Abkürzungen (nur für die Suche). */
   alias?: string;

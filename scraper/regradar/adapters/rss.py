@@ -22,7 +22,7 @@ from .base import SourceAdapter
 
 # Titelmuster → Dokumenttyp-Verfeinerung
 TYPE_PATTERNS = [
-    (r"(?i)\bconsult|konsultation", "CONSULTATION"),
+    (r"(?i)\bconsult|konsultation|^(anhörung|vernehmlassung)\b|(eröffnet|startet|lanciert|führt)\s+(die\s+|eine\s+)?(anhörung|vernehmlassung)", "CONSULTATION"),
     (r"(?i)\brundschreiben", "CIRCULAR"),
     (r"(?i)\bguidelines?\b|leitlinien", "GUIDELINE"),
     (r"(?i)\bfinal report", "FINAL_REPORT"),

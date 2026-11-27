@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { AuthorityLogo } from "@/components/authority-logo";
+import { Icon } from "@/components/icons";
 import { Chrome, SlimFooter } from "@/components/chrome";
 import { SubscribeBox } from "@/components/subscribe";
 import { OtherInstitutesTile } from "@/components/institute-dialog";
@@ -101,7 +102,12 @@ export function HomeClient({ frameworkCount, totalUpdates, providerCounts, recen
                   data-fast-goal-source="home"
                   className={TILE}
                 >
-                  <span className="text-sm font-semibold tracking-tight">{tx(lang, p.n)}</span>
+                  <span className="flex items-center gap-3 text-sm font-semibold tracking-tight">
+                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-700">
+                      <Icon id={p.id} />
+                    </span>
+                    {tx(lang, p.n)}
+                  </span>
                   <span className="num shrink-0 rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
                     {count} Updates
                   </span>
