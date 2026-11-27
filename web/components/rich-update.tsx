@@ -102,6 +102,9 @@ function Grid({ n, children, className = "" }: { n: number; children: React.Reac
   );
 }
 
+/** "A/B" -> "A / B": Umbruch nach dem Schrägstrich möglich. */
+const slashSpace = (n: string) => n.replace(/\s*\/\s*/g, " / ");
+
 const CELL = "border-b border-r border-slate-100 px-4 py-3";
 
 function ImpactGroup({ title, items }: { title: string; items: RichImpactItem[] }) {
@@ -158,9 +161,9 @@ export function RichUpdateSections(
         <Grid n={rich.audience.length} className="mt-4">
           {rich.audience.map((a) => (
             <li key={a.name} className={CELL}>
-              <div className="flex items-start justify-between gap-3">
-                <b className="min-w-0 font-semibold leading-snug text-slate-900">{a.name}</b>
-                <span className={`${PILL} shrink-0 whitespace-nowrap ${STATUS_PILL[a.status]}`}>{a.status}</span>
+              <div className="flex flex-wrap-reverse items-start gap-x-3 gap-y-1">
+                <b className="font-semibold leading-snug text-slate-900">{slashSpace(a.name)}</b>
+                <span className={`${PILL} ml-auto shrink-0 whitespace-nowrap ${STATUS_PILL[a.status]}`}>{a.status}</span>
               </div>
               <p className="mt-1 text-sm text-slate-600">{a.detail}</p>
             </li>
@@ -170,9 +173,9 @@ export function RichUpdateSections(
           <Grid n={ia.departments.length} className="mt-3">
             {ia.departments.map((d) => (
               <li key={d.name} className={CELL}>
-                <div className="flex items-start justify-between gap-3">
-                  <b className="min-w-0 font-semibold leading-snug text-slate-900">{d.name}</b>
-                  <span className={`${PILL} shrink-0 whitespace-nowrap ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
+                <div className="flex flex-wrap-reverse items-start gap-x-3 gap-y-1">
+                  <b className="font-semibold leading-snug text-slate-900">{slashSpace(d.name)}</b>
+                  <span className={`${PILL} ml-auto shrink-0 whitespace-nowrap ${LOAD_PILL[d.workload]}`}>Aufwand {d.workload}</span>
                 </div>
                 <p className="mt-1 text-sm text-slate-600">{d.detail}</p>
               </li>
