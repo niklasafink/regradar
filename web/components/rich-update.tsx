@@ -50,7 +50,28 @@ function Timeline({ items, seed }: { items: RichUpdate["timeline"]; seed: number
 
 /** Kurzfassung in Stichpunkten: jeder Satz ein Punkt. */
 function bullets(s: string): string[] {
-  return s.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean);
+  // Nicht nach Abkürzungen trennen (Art., Abs., Buchst., Nr., Ziff., z. B., ggf., bzw., vgl.).
+  return s.split(/(?<!\b(?:Art|Abs|Buchst|Nr|Ziff|lit|Anh|vgl|ggf|bzw|ca|inkl|ff|S)\.)(?<!z\. B\.)(?<=[.!?])(?:\[\d+\])*\s+(?=[A-ZÄÖÜ„"])/).map((x) => x.trim()).filter(Boolean);
+}
+
+/** Quellenverweise [1] im Text als hochgestellte Links auf die Quellenliste. */
+function Cite({ text }: { text: string }) {
+  const parts = text.split(/(\[\d+(?:[,\s]+\d+)*\])/g);
+  return (
+    <>
+      {parts.map((p, i) => {
+        const m = /^\[(\d+(?:[,\s]+\d+)*)\]$/.exec(p);
+        if (!m) return p;
+        return (
+          <sup key={i} className="ml-0.5 text-[0.7em] font-medium">
+            {m[1].split(/[,\s]+/).map((n, j) => (
+              <a key={n} href={`#quelle-${n}`} className="text-blue-700 no-underline hover:underline">{j ? "," : ""}{n}</a>
+            ))}
+          </sup>
+        );
+      })}
+    </>
+  );
 }
 
 const hasImpact = (ia?: RichImpactAnalysis) =>
@@ -69,6 +90,7 @@ export function richToc(rich: RichUpdate): TocItem[] {
     ...(hasImpact(ia) ? [{ id: "impact", label: "Impact-Analyse" }] : []),
     ...(hasImpact(ia) ? [] : [{ id: "todos", label: "Was jetzt zu tun ist" }]),
     { id: "faq", label: "Häufige Fragen" },
+    ...(rich.sources?.length ? [{ id: "quellen", label: "Quellen" }] : []),
   ];
 }
 
@@ -116,8 +138,8 @@ function ImpactGroup({ title, items }: { title: string; items: RichImpactItem[] 
         <div key={x.name} className="mt-4 pl-5">
           <h4 className="font-semibold text-slate-900">{x.name}</h4>
           <ul className="mt-1.5 list-disc space-y-1.5 pl-5">
-            <li>{x.change}</li>
-            {x.steps?.map((st) => <li key={st}>{st}</li>)}
+            <li><Cite text={x.change} /></li>
+            {x.steps?.map((st) => <li key={st}><Cite text={st} /></li>)}
           </ul>
         </div>
       ))}
@@ -140,7 +162,7 @@ export function RichUpdateSections(
       <section id="kurz" className="scroll-mt-24 rounded-2xl bg-slate-50 px-5 py-4" aria-label="Kurz gesagt">
         <h2 className="text-sm font-semibold tracking-tight text-slate-900">Kurz gesagt</h2>
         <ul className="rich-summary mt-2 list-disc space-y-1.5 pl-5">
-          {bullets(rich.summary).map((b) => <li key={b.slice(0, 40)}>{b}</li>)}
+          {bullets(rich.summary).map((b) => <li key={b.slice(0, 40)}><Cite text={b} /></li>)}
         </ul>
       </section>
 
@@ -187,7 +209,7 @@ export function RichUpdateSections(
       <section id="worum" className={SECTION}>
         <h2 className={H2}>Worum es geht</h2>
         <div className="mt-3 space-y-3">
-          {rich.overview.map((p) => <p key={p.slice(0, 40)}>{p}</p>)}
+          {rich.overview.map((p) => <p key={p.slice(0, 40)}><Cite text={p} /></p>)}
         </div>
       </section>
 
@@ -199,7 +221,7 @@ export function RichUpdateSections(
               <span className="text-sm text-slate-500">{c.ref}</span>
               <div className="min-w-0">
                 <b className="block font-heading font-semibold text-slate-900">{c.title}</b>
-                {c.text}
+                <Cite text={c.text} />
               </div>
             </li>
           ))}
@@ -224,7 +246,7 @@ export function RichUpdateSections(
             <div key={o.heading} className="mt-5">
               <h3 className="font-heading font-semibold text-slate-900">{o.heading}</h3>
               <ul className="mt-1.5 list-disc space-y-1.5 pl-5">
-                {o.items.map((it) => <li key={it.slice(0, 50)}>{it}</li>)}
+                {o.items.map((it) => <li key={it.slice(0, 50)}><Cite text={it} /></li>)}
               </ul>
             </div>
           ))}
@@ -253,11 +275,24 @@ export function RichUpdateSections(
           {rich.faq.map((q) => (
             <div key={q.q} className="mt-4">
               <h3 className="font-semibold text-slate-900">{q.q}</h3>
-              <p className="mt-1">{q.a}</p>
+              <p className="mt-1"><Cite text={q.a} /></p>
             </div>
           ))}
         </div>
       </section>
+
+      {rich.sources && rich.sources.length > 0 && (
+        <section id="quellen" className={SECTION}>
+          <h2 className={H2}>Quellen</h2>
+          <ol className="mt-3 list-decimal space-y-1.5 pl-6 text-sm">
+            {rich.sources.map((q, i) => (
+              <li key={q.url} id={`quelle-${i + 1}`} className="scroll-mt-24">
+                <a href={q.url} rel="noopener nofollow" target="_blank" className="text-blue-700 underline-offset-2 hover:underline">{q.label}</a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       <p className="mt-10 border-t border-slate-200 pt-4 text-xs leading-relaxed text-slate-500">
         Hinweis zur Erstellung und Haftung: Dieser Beitrag wurde mit Unterstützung künstlicher Intelligenz aus dem verlinkten

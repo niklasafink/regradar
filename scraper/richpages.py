@@ -33,6 +33,8 @@ Tiefe (wichtigste Regel): Die Seite ersetzt für Leser das Lesen der Primärquel
 - Berichtigungen und Änderungsrechtsakte: Nenne in changes für jede einzelne Korrektur die Fundstelle (Seite, Artikel, Absatz), den früheren Wortlaut („vorher“) und den neuen Wortlaut („nachher“) wörtlich oder sinngemäß mit den konkret ersetzten Begriffen, dazu die Folge für die Praxis (materiell oder nur redaktionell, betrifft welche Pflicht). Gib zuerst Titel und Kennung des berichtigten Rechtsakts exakt so an, wie die QUELLE sie nennt; übernimm nie einen Gegenstand aus dem Gedächtnis oder aus dem Titel der SEITE, wenn die QUELLE etwas anderes sagt, und nenne Abweichungen in open_points.
 - Normtexte, Leitlinien, Q&As: Hintergrund und Anlass, Anwendungsbereich, Kernpflichten mit Zahlen und Fristen, Übergangsregeln, Zusammenspiel mit anderen Regelwerken (jeweils nur, soweit in QUELLE oder SEITE belegt).
 - Konsultationen und Entwürfe: Fragen, Frist, Stufe im Verfahren, geplanter Geltungsbeginn, was sich gegenüber dem geltenden Stand ändern soll.
+- Quellenverweise: Die QUELLE besteht aus nummerierten Blöcken „[Q1] Bezeichnung | URL“. Belege jede inhaltliche Aussage in summary, overview, changes, outline, impact_analysis und faq mit dem Verweis [1], [2] oder [1, 3] direkt hinter dem Satz, passend zur Nummer des Blocks, aus dem sie stammt. Verweise nur auf vorhandene Blöcke. Aussagen, die nur aus SEITE stammen, bekommen keinen Verweis. Die Quellenliste erzeugt das System, schreibe sie nicht.
+- summary („Kurz gesagt“): 3 bis 5 vollständige Sätze, jeder inhaltlich eigenständig und aussagekräftig: was gilt oder ändert sich konkret, für wen, mit welcher Folge oder Frist. Weniger Sätze, dafür dichter. Verboten sind Sätze ohne Aussage wie „Die Verordnung wurde im Februar 2025 veröffentlicht“, reine Veröffentlichungs- oder Adressatenangaben als eigener Satz und Aufzählungen von Fundstellen. Den Geltungsbereich hängst du, wenn nötig, an einen inhaltlichen Satz an. Kürze Fundstellen immer ab: Art., Abs., Buchst., Nr., Ziff., Anh., S. (z. B. „Art. 7 Abs. 1 Buchst. f Ziff. iv“), und lass Normverweise weg, wenn sie dem Leser nichts bringen.
 - Jede Meldung, auch kurze: mindestens 800 Wörter Gesamtumfang, soweit die QUELLE das hergibt. Ist die QUELLE dünn, bleibe bei den belegten Fakten, erkläre in impact_analysis aber ausführlich, was daraus für Institute folgt, und nenne die Lücke in open_points.
 
 Faktenregeln:
@@ -180,7 +182,94 @@ def extract_page(slug):
             "orig": html.unescape(orig.group(1)) if orig else "", "summary": summ, "pills": pills[:4]}
 
 
+DOC_CHARS = int(os.environ.get("RICH_DOC_CHARS", "70000"))  # Hauptdokument (z. B. Konsultationspapier)
+_DOC_SKIP = re.compile(r"record.of.processing|privacy|datenschutz|data.protection|cookie|legal.notice|impressum|template|form(ular)?\b", re.I)
+_DOC_PREF = re.compile(r"consultation|guideline|final.report|draft|opinion|rts|its|report|leitlinien|rundschreiben|entwurf", re.I)
+
+
+def _pdf_text(path):
+    rc, so, _ = sh(["pdftotext", "-layout", path, "-"], timeout=90)
+    t = re.sub(r"[ \t]+", " ", so.decode("utf-8", "ignore"))
+    return re.sub(r"\n\s*\n+", "\n", t)
+
+
+def _label_of(url, fallback):
+    from urllib.parse import unquote, urlparse, parse_qs
+    q = parse_qs(urlparse(url).query).get("filename")
+    name = unquote(q[0]) if q else unquote(urlparse(url).path.rsplit("/", 1)[-1])
+    name = re.sub(r"\.(pdf|html?|docx?)$", "", name, flags=re.I).replace("_", " ").strip()
+    return name or fallback
+
+
+def _page_documents(url, raw, workdir, limit=2):
+    """Haupt-Dokumente einer Seite (PDF-Downloads wie Consultation Paper, Final Report): [(url, label, text)]."""
+    from urllib.parse import urljoin
+    cands = []
+    for h in re.findall(r'href=["\']([^"\'#]+)', raw):
+        h = html.unescape(h)
+        low = h.lower()
+        if not (".pdf" in low or "/document/download" in low or "/files/" in low and "download" in low):
+            continue
+        u = urljoin(url, h)
+        lab = _label_of(u, "Dokument")
+        if _DOC_SKIP.search(lab) or u in [c[0] for c in cands]:
+            continue
+        cands.append((u, lab))
+    cands.sort(key=lambda c: (0 if _DOC_PREF.search(c[1]) else 1))
+    out = []
+    for i, (u, lab) in enumerate(cands[:limit]):
+        f = os.path.join(workdir, f"doc{i}.bin")
+        if get(u, f) != "200" or open(f, "rb").read(4) != b"%PDF":
+            continue
+        t = _pdf_text(f)
+        if len(t) > 800 and not _DOC_SKIP.search(t[:400]):
+            out.append((u, lab, t))
+    return out
+
+
+_ABBR = {"AMLR": "32024R1624", "DORA": "32022R2554", "MiCAR": "32023R1114", "MiCA": "32023R1114",
+         "CRR": "32013R0575", "SFDR": "32019R2088", "AI Act": "32024R1689", "AMLD6": "32024L1640"}
+
+
+def _legal_excerpts(text, limit_each=6000, max_arts=5):
+    """Zitierte Artikel des am häufigsten mit Artikelnummer genannten Rechtsakts (EUR-Lex, englisch) als Belegtext.
+    Nur bei eindeutiger Zuordnung: 'Art. N <Kürzel>' oder 'Article N of Regulation (EU) Y/Z'."""
+    from collections import defaultdict
+    head = text[:80000]
+    found = defaultdict(list)  # celex -> Artikelnummern
+    for m in re.finditer(r"Art(?:icles?|s?\.)\s+(\d{1,3})(?:\([^)]*\))?(?:[^.;\n]{0,40}?)\s(?:of\s+(?:the\s+)?)?(" + "|".join(map(re.escape, _ABBR)) + r")\b", head):
+        found[_ABBR[m.group(2)]].append(int(m.group(1)))
+    for m in re.finditer(r"Art(?:icles?|s?\.)\s+(\d{1,3})(?:\([^)]*\))?[^.;\n]{0,40}?(?:of\s+(?:the\s+)?)?Regulation \(EU\) (\d{4})/(\d{1,4})", head):
+        found[f"3{m.group(2)}R{int(m.group(3)):04d}"].append(int(m.group(1)))
+    if not found:
+        return None
+    celex = max(found, key=lambda k: len(found[k]))
+    url = f"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:{celex}"
+    raw, code = get(url)
+    if code != "200":
+        return None
+    t = text_of(raw.decode("utf-8", "ignore"))
+    if len(t) < 5000:
+        return None
+    arts = []
+    for a in found[celex]:
+        if a not in arts:
+            arts.append(a)
+    parts = []
+    for a in arts[:max_arts]:
+        m = re.search(rf"Article {a}\s+(?=[A-Z])", t)
+        if not m:
+            continue
+        m2 = re.search(rf"Article {a + 1}\s+(?=[A-Z])", t[m.end():])
+        end = m.end() + (m2.start() if m2 else limit_each)
+        parts.append(t[m.start():min(end, m.start() + limit_each)])
+    if not parts:
+        return None
+    return f"Rechtsakt {celex[1:5]}/{int(celex[6:]) if celex[5]=='R' else celex[5:]}, zitierte Artikel (EUR-Lex)", url, "\n".join(parts)
+
+
 def fetch_source(url, workdir):
+    """Quelltext mit nummerierten Blöcken: '[Qn] Bezeichnung | URL' leitet jeden Beleg ein."""
     if not url:
         return "", "keine Quelle"
     try:
@@ -194,45 +283,61 @@ def fetch_source(url, workdir):
     if code != "200":
         return "", f"Quelle HTTP {code}"
     data = open(f, "rb").read()
+    blocks = []  # (label, url, text)
+    kind = "HTML"
+    raw = ""
     if data[:4] == b"%PDF":
-        rc, so, _ = sh(["pdftotext", "-layout", f, "-"], timeout=60)
-        txt = re.sub(r"[ \t]+", " ", so.decode("utf-8", "ignore"))
-        txt = re.sub(r"\n\s*\n+", "\n", txt)
+        blocks.append(("Originaldokument (PDF)", url, _pdf_text(f)))
         kind = "PDF"
     else:
         raw = data.decode("utf-8", "ignore")
-        txt = text_of(raw)
-        kind = "HTML"
-        if len(txt) < 2000:
-            from urllib.parse import urljoin
+        main = text_of(raw)
+        blocks.append(("Originalmeldung, " + re.sub(r"^www\.", "", url.split("/")[2]), url, main))
+        if len(main) < 2000:
             links = [html.unescape(l) for l in re.findall(r'["\'(=]([^"\'\s()<>]+\.pdf)', raw, re.I)]
             links = sorted(set(links), key=lambda l: ("files/20" not in l, len(l)))
             if links:
+                from urllib.parse import urljoin
                 pdf = urljoin(url, links[0])
                 fp = os.path.join(workdir, "src2.pdf")
                 if get(pdf, fp) == "200" and open(fp, "rb").read(4) == b"%PDF":
-                    rc, so, _ = sh(["pdftotext", "-layout", fp, "-"], timeout=60)
-                    ptxt = re.sub(r"[ \t]+", " ", so.decode("utf-8", "ignore"))
-                    ptxt = re.sub(r"\n\s*\n+", "\n", ptxt)
-                    txt = txt + "\n\nVERLINKTES PDF (" + pdf + "):\n" + ptxt
+                    blocks.append((_label_of(pdf, "Verlinktes PDF"), pdf, _pdf_text(fp)))
                     kind = "HTML + verlinktes PDF"
-    # Ankündigungsmeldungen (BaFin „veröffentlicht Rundschreiben“): der Inhalt
-    # steht im verlinkten Dokument. Meldung kurz halten, Rest für die Unterseiten.
-    if kind == "HTML":
+        try:
+            for u, lab, t in _page_documents(url, raw, workdir):
+                if all(u != b[1] for b in blocks):
+                    blocks.append((lab, u, t))
+        except Exception:  # noqa: BLE001
+            pass
         try:
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
             from regradar.fulltext import linked_docs
-            docs = linked_docs(url, LINKED_CHARS)
+            for l, t in linked_docs(url, LINKED_CHARS):
+                if all(l != b[1] for b in blocks) and not _DOC_SKIP.search(t[:400]):
+                    blocks.append((_label_of(l, "Verlinktes Dokument"), l, t))
         except Exception:  # noqa: BLE001
-            docs = []
-        if docs:
-            head = txt[:3000]
-            room = LINKED_CHARS // len(docs)
-            parts = ["\n\nVERLINKTES DOKUMENT ({}):\n{}".format(l, t[:room]) for l, t in docs]
-            txt = head + "".join(parts)
-            kind = "HTML + {} verlinkte(s) Dokument(e)".format(len(docs))
-    cap = SRC_CHARS + (LINKED_CHARS if kind.startswith("HTML +") and "verlinkte" in kind else 0)
-    return txt[:cap], f"{kind}, {len(txt)} Zeichen, gekürzt auf {min(len(txt), cap)}"
+            pass
+    try:
+        lg = _legal_excerpts(" ".join(b[2] for b in blocks))
+        if lg:
+            blocks.append(lg)
+    except Exception:  # noqa: BLE001
+        pass
+    out, total = [], 0
+    for i, (lab, u, t) in enumerate(blocks, 1):
+        cap = DOC_CHARS if i == 1 and len(blocks) == 1 else (SRC_CHARS if i == 1 else DOC_CHARS if len(t) > 20000 else LINKED_CHARS)
+        if i == 1 and len(blocks) > 1:
+            cap = min(len(t), 6000)
+        out.append(f"[Q{i}] {lab} | {u}\n{t[:cap]}")
+        total += len(t)
+    txt = "\n\n".join(out)
+    return txt, f"{kind}, {len(blocks)} Quelle(n), {total} Zeichen, gekürzt auf {len(txt)}"
+
+
+def sources_of(source):
+    """Quellenliste aus den [Qn]-Köpfen des Quelltexts."""
+    return [{"label": m.group(1).strip(), "url": m.group(2).strip()}
+            for m in re.finditer(r"^\[Q\d+\] (.*?) \| (\S+)$", source, re.M)]
 
 
 def dates_in(text):
@@ -370,6 +475,23 @@ def check(data, page, source):
     for t in data["timeline"]:
         if t.get("slug") not in rel:
             t.pop("slug", None)
+    data["sources"] = sources_of(source)
+    n_src = len(data["sources"])
+
+    def cites(x):
+        """Verweise vor das Satzzeichen ziehen ('Satz. [1, 2]' -> 'Satz[1, 2].'), nur vorhandene Nummern."""
+        if isinstance(x, str):
+            x = re.sub(r"\s*(\[\d+(?:\s*,\s*\d+)*\])([.!?])", r"\1\2", x)
+            x = re.sub(r"([.!?])\s+(\[\d+(?:\s*,\s*\d+)*\])", lambda m: m.group(2) + m.group(1), x)
+            return re.sub(r"\[(\d+(?:\s*,\s*\d+)*)\]", lambda m: m.group(0) if all(1 <= int(n) <= n_src for n in re.split(r"\s*,\s*", m.group(1))) else "", x)
+        if isinstance(x, list):
+            return [cites(i) for i in x]
+        if isinstance(x, dict):
+            return {k: (v if k in ("sources", "meta", "timeline") else cites(v)) for k, v in x.items()}
+        return x
+    for k in list(data):
+        if k not in ("sources", "timeline"):
+            data[k] = cites(data[k])
     dropped = []
 
     def ok_date(s):

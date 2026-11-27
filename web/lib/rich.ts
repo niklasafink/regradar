@@ -30,6 +30,8 @@ export type RichUpdate = {
   impact: "hoch" | "mittel" | "gering";
   open_points: string[];
   impact_analysis?: RichImpactAnalysis;
+  /** Verwendete Quellen; Verweise [1], [2] im Text beziehen sich auf die Reihenfolge. */
+  sources?: { label: string; url: string }[];
   meta: { generated: string; model: string; source: string; dropped: number };
 };
 

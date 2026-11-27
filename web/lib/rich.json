@@ -1786,6 +1786,395 @@
    "tokens": 26385
   }
  },
+ "amla-2026-11-26-consultation-on-the-draft-guidelines-on-outsourcing-reliance-on-customer-due-dil": {
+  "h1": "AMLA-Konsultation: Leitlinien zu Auslagerung, Reliance und Drittbeziehungen (AMLR)",
+  "seo_title": "AMLA Leitlinien Auslagerung und Reliance Konsultation",
+  "meta_description": "AMLA konsultiert bis 26.02.2027 Entwurf der Leitlinien zu Auslagerung (Art. 18 AMLR), Reliance (Art. 48, 49 AMLR) und Drittbeziehungen.",
+  "lead": "Die AMLA hat am 26.11.2026 den Entwurf von Leitlinien zu Auslagerung, Reliance auf Kundensorgfaltspflichten anderer Verpflichteter und sonstigen Drittbeziehungen zur Konsultation gestellt. Stellungnahmen sind bis 26.02.2027 möglich, die finalen Leitlinien sollen im zweiten Quartal 2027 folgen.",
+  "aka": [
+   "AMLA Outsourcing-Leitlinien",
+   "AMLR Auslagerung Leitlinien",
+   "Reliance Leitlinien AMLA",
+   "Drittbeziehungen AML/CFT",
+   "Art. 18 AMLR Leitlinien"
+  ],
+  "summary": "Die AMLA konsultiert bis 26.02.2027 den Entwurf von Leitlinien zu Auslagerung nach Art. 18 AMLR, zur Nutzung von Kundensorgfaltspflichten anderer Verpflichteter nach Art. 48 und 49 AMLR sowie zu sonstigen Drittbeziehungen[1, 2]. Die Leitlinien setzen die Mandate aus Art. 18 Abs. 8 und Art. 50 AMLR um, für die Art. 18 Abs. 8 und Art. 50 AMLR jeweils eine Frist bis 10.07.2027 vorsehen; Drittbeziehungen wie Software, Datenbanken oder Screening-Dienste regelt die AMLA aus eigener Initiative nach Art. 54 Abs. 1 der Verordnung (EU) 2024/1620[2, 3]. Der Entwurf besteht aus allgemeinen Grundsätzen für alle Drittbeziehungen, Leitlinie 1 zu Auslagerung (inklusive Kriterien für kritische Funktionen, Register, Vertragsinhalte und Risikobewertung) und Leitlinie 2 zu Reliance[2]. Zentral sind die unveränderte Letztverantwortung des Verpflichteten und des Leitungsorgans, eine schriftliche Richtlinie, eine Vertragsdokumentation sowie ein Register aller Vereinbarungen[2]. Die Leitlinien sollen für Vereinbarungen gelten, die nach dem Anwendungsdatum abgeschlossen, überprüft oder geändert werden; für Verpflichtete nach Art. 3 Abs. 3 Buchst. n und o AMLR gilt der 10.07.2029[2]. Sie ersetzen mit ihrem Anwendungsdatum die bestehenden EBA-Leitlinien zum selben Thema[2]. Eine öffentliche Anhörung findet am 10.02.2027 statt[1].",
+  "overview": [
+   "Anlass sind die Mandate in Art. 18 Abs. 8 und Art. 50 AMLR. Danach muss die AMLA Leitlinien zur Einrichtung und Steuerung von Auslagerungen, zu den Rollen von Verpflichtetem und Dienstleister, zu aufsichtlichen Erwartungen bei kritischen Funktionen sowie zu den Bedingungen und Verantwortlichkeiten bei Reliance herausgeben[2, 3]. Die AMLA bündelt beide Mandate in einem Dokument und ergänzt es um Leitlinien aus eigener Initiative zu sonstigen Drittbeziehungen nach Erwägungsgrund 47 AMLR[2].",
+   "Der Entwurf betont Verhältnismäßigkeit, branchenübergreifende Anwendbarkeit und den risikobasierten Ansatz. Verhältnismäßigkeit bedeutet ausdrücklich keine niedrigeren Standards für kleine Verpflichtete, sondern eine Kalibrierung von Intensität und Dokumentation[2]. Bestehende Rahmen etwa aus DORA, DSGVO und die EBA-Leitlinien zum Drittparteirisiko bei Nicht-IKT-Dienstleistungen (EBA/GL/2026/09) dürfen genutzt werden, ersetzen die AML-spezifischen Elemente aber nicht[2]. Der vorliegende Auszug der Quelle bricht bei der Risikobewertung der Auslagerung (Rn. 47) ab; die Vorgaben zu Unterauslagerung, Meldungen und zum vollständigen Reliance-Teil sind hier nur aus den Beschreibungen des Konsultationspapiers belegt[2]."
+  ],
+  "facts": [
+   {
+    "label": "Konsultationsfrist",
+    "value": "26.02.2027, 23:59 Uhr (MEZ) [1]"
+   },
+   {
+    "label": "Öffentliche Anhörung",
+    "value": "10.02.2027, 14:00 bis 16:00 Uhr MEZ [1]"
+   },
+   {
+    "label": "Rechtsgrundlage",
+    "value": "Art. 18 Abs. 8 und Art. 50 AMLR sowie Art. 54 Abs. 1 der Verordnung (EU) 2024/1620 [1, 2]"
+   },
+   {
+    "label": "Finale Leitlinien",
+    "value": "geplant für Q2 2027 [2]"
+   },
+   {
+    "label": "Anwendung Sonderfälle",
+    "value": "10.07.2029 für Verpflichtete nach Art. 3 Abs. 3 Buchst. n und o AMLR [2]"
+   },
+   {
+    "label": "Verhältnis zu EBA",
+    "value": "ersetzen die EBA-Leitlinien zum selben Thema ab Anwendungsdatum [2]"
+   }
+  ],
+  "audience": [
+   {
+    "name": "Banken",
+    "note": "Verpflichtete nach Art. 3 AMLR",
+    "detail": "Banken nutzen Auslagerung, Reliance und Tools für KYC, Monitoring und Screening und fallen als Verpflichtete unter die Leitlinien.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Wertpapierinstitute",
+    "note": "Verpflichtete nach Art. 3 AMLR",
+    "detail": "Als Verpflichtete des Finanzsektors adressiert; Konsultation richtet sich ausdrücklich an Finanz- und Nichtfinanzsektor.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Zahlungsinstitute",
+    "note": "Verpflichtete, TFR relevant",
+    "detail": "Die Leitlinien gelten auch für Vereinbarungen, die zur Einhaltung der Verordnung (EU) 2023/1113 (TFR) beitragen.",
+    "status": "betroffen"
+   },
+   {
+    "name": "Kapitalverwalter",
+    "note": "Sonderregel Art. 18 Abs. 7 AMLR",
+    "detail": "Organismen ohne Rechtspersönlichkeit dürfen nach Art. 18 Abs. 7 AMLR unter Genehmigung bestimmte Aufgaben auslagern.",
+    "status": "teilweise"
+   },
+   {
+    "name": "Krypto-Dienstleister",
+    "note": "Nur soweit Verpflichtete",
+    "detail": "Die Quelle nennt Krypto-Dienstleister nicht ausdrücklich, TFR-Bezug umfasst Krypto-Werte-Transfers.",
+    "status": "teilweise"
+   }
+  ],
+  "changes": [
+   {
+    "ref": "Rn. 14, Abschn. 3.1",
+    "title": "Anwendungsdatum und Übergang",
+    "text": "Der Entwurf nennt kein konkretes Anwendungsdatum (Platzhalter DD.MM.YYYY). Verpflichtete nach Art. 3 Abs. 3 Buchst. n und o AMLR sollen die Leitlinien erst ab 10.07.2029 anwenden. Ab dem jeweiligen Datum gelten sie für alle Vereinbarungen, die danach abgeschlossen, überprüft oder geändert werden. Bestandsverträge müssen also spätestens bei Überprüfung oder Änderung angepasst werden[2]."
+   },
+   {
+    "ref": "Rn. 15, Abschn. 3.2",
+    "title": "Ersatz der EBA-Leitlinien",
+    "text": "Nach Art. 54 Abs. 5 der Verordnung (EU) 2024/1620 ersetzen die AMLA-Leitlinien ab ihrem Anwendungsdatum die EBA-Leitlinien zum selben Thema. Eine begleitende Mitteilung auf der AMLA-Website soll festlegen, welche EBA-Leitlinien oder Teile ersetzt werden. Institute müssen ihre auf EBA-Leitlinien gestützten Regelwerke dann auf die AMLA-Fassung umstellen[2]."
+   },
+   {
+    "ref": "Rn. 18 bis 22",
+    "title": "Letztverantwortung und Governance",
+    "text": "Die Nutzung von Drittbeziehungen überträgt die Verantwortung nicht. Sie liegt letztlich beim Leitungsorgan. Je nach Größe ist eine dedizierte Rolle oder ein Mitglied des Leitungsorgans für die Überwachung zu benennen. Risiken fließen in die unternehmensweite Risikobewertung nach Art. 10 AMLR ein. In Gruppen wird der Rahmen auf Ebene des Mutterunternehmens in der Union geschaffen[2]."
+   },
+   {
+    "ref": "Rn. 23 bis 25",
+    "title": "Richtlinien und Überprüfung",
+    "text": "Für Auslagerung und Reliance sind schriftliche Richtlinien Pflicht, für sonstige Drittbeziehungen mit risikobasierter Detailtiefe. Das Leitungsorgan überprüft sie jährlich oder, bei Verhältnismäßigkeit, in längeren regelmäßigen Abständen. Richtlinien dürfen zusammengeführt werden, müssen die drei Arrangementarten aber klar unterscheiden[2]."
+   },
+   {
+    "ref": "Rn. 27 bis 31",
+    "title": "Einstufung, Prüfung und Register",
+    "text": "Vor jeder Vereinbarung ist zu klären, ob Auslagerung, Reliance oder sonstige Drittbeziehung vorliegt. Bei Dritttools führt das Institut die Funktion selbst aus. Vor Abschluss sind Risikobewertung und Due Diligence des Dienstleisters nötig. Ein Register muss mindestens Name, Standort, Art der Vereinbarung und erfasste Aufgaben enthalten und auf Anfrage vorliegen. Register aus DORA oder anderen Rahmen sind nutzbar[2]."
+   },
+   {
+    "ref": "Rn. 32 bis 34",
+    "title": "Mindestinhalt der Verträge",
+    "text": "Schriftliche Vereinbarung oder gruppeninterne Verfahren müssen Aufgaben, Verantwortlichkeiten, Standorte inklusive Datenspeicherung, Eskalation, Leistungserwartungen, Verbleib der Verantwortung beim Verpflichteten, Kooperation mit Aufsicht und Prüfern, Interessenkonflikte, Datenschutz, Unterauslagerung, Zugangs-, Prüf- und Exit-Rechte sowie Information über Mängel regeln. Drittland-Dienstleister erfordern zusätzliche Schutzmaßnahmen, die gegenüber der Aufsicht belegbar sein müssen[2]."
+   },
+   {
+    "ref": "Rn. 35 bis 40",
+    "title": "Technologie, KI, Prüfrechte, Exit",
+    "text": "Automatisierte oder KI-gestützte Drittlösungen dürfen nicht verhindern, dass Institut, interne Kontrollfunktionen, Prüfer und Aufsicht ihre Funktionsweise nachvollziehen. Gepoolte Audits sowie Zertifizierungen und Prüfberichte des Dienstleisters sind zulässig, ersetzen aber nicht die Letztverantwortung. Business-Continuity-Pläne, Auditprogramme und Exit-Fähigkeit ohne Störung der Compliance sind risikobasiert vorzuhalten[2]."
+   },
+   {
+    "ref": "Rn. 41 bis 43",
+    "title": "Kritische Funktionen",
+    "text": "Eine Funktion ist kritisch, wenn ihr Mangel oder Ausfall die laufende Einhaltung von AMLR oder TFR wesentlich beeinträchtigen würde. In der Regel kritisch sind Kundensorgfaltspflichten inklusive Remote-CDD, Transaktionsüberwachung, TFS-Pflichten, Meldungen nach Art. 69 AMLR (soweit zulässig) und interne Kontrollen. Zu bewerten sind Auswirkung, Risikosteuerung, Konzentrationsrisiken, Datenzugang und Rückholzeit. Die Bewertung ist nachvollziehbar zu dokumentieren[2]."
+   },
+   {
+    "ref": "Rn. 44 bis 46",
+    "title": "Auslagerungsregister und Vertragsinhalte",
+    "text": "Das Auslagerungsregister auf Einzel- und Gruppenebene enthält Registernummer oder LEI, Standort, Aufgabenbeschreibung samt Begründung, Start- und Enddatum, Bewertung der Eignung, Gruppenzugehörigkeit, Kritikalität bzw. Begründung der Nicht-Kritikalität und Unterauftragnehmer bei kritischen Funktionen. Verträge zu kritischen Funktionen brauchen zusätzlich KPIs, Meldepflichten, unbeschränkte Zugangs- und Prüfrechte, Störungsmeldung und Exit-Übergangsfristen[2]."
+   },
+   {
+    "ref": "Rn. 47",
+    "title": "Risikobewertung vor Auslagerung",
+    "text": "Vor jeder Auslagerung ist zu bewerten: Größe, Umfang und Komplexität der Funktionen, Folgen für Risikosteuerung und Audits, Auswirkungen auf Kunden, regulierter Status des Dienstleisters, Gruppennutzung, Wirkung auf interne Kontrollen, Kritikalität und Datenschutz. Der weitere Verlauf der Liste liegt in der vorliegenden Quelle nicht vor[2]."
+   },
+   {
+    "ref": "Abschn. 2.2",
+    "title": "Definitionen",
+    "text": "Auslagerung ist jede Vereinbarung, bei der ein Dienstleister, auch gruppenintern, AMLR- oder TFR-Funktionen erbringt, die sonst das Institut ausführt. Sonstige Drittbeziehungen liegen vor, wenn das Institut die Funktion selbst ausführt und von Tools oder Diensten unterstützt wird. Gruppe umfasst auch Strukturen nach Art. 16 Abs. 4 AMLR[2]."
+   }
+  ],
+  "todos": [
+   "Bestehende Auslagerungs- und Reliance-Verträge sowie Drittanbieter-Tools gegen den Mindestinhalt aus Rn. 32 und Rn. 45 bis 46 des Entwurfs abgleichen und Lücken listen.",
+   "Stellungnahme zu den Konsultationsfragen (Abschn. 5.2 des Papiers) vorbereiten und bis 26.02.2027 über die AMLA-Seite einreichen; Anhörung am 10.02.2027 vormerken.",
+   "Prüfen, ob bestehendes Auslagerungs- oder DORA-Register um die AML-Felder aus Rn. 44 erweiterbar ist."
+  ],
+  "timeline": [
+   {
+    "date": "20.07.2026",
+    "label": "Taxonomie Risikobewertung 2027",
+    "kind": "schritt",
+    "slug": "amla-2026-07-20-updated-taxonomy-for-the-2027-risk-assessment-data-collection"
+   },
+   {
+    "date": "01.10.2026",
+    "label": "BaFin zu ESA/AMLA-Leitlinien",
+    "kind": "schritt",
+    "slug": "amla-2026-10-01-leitlinien-der-esas-und-der-amla-bafin-reduziert-rundschreiben"
+   },
+   {
+    "date": "25.11.2026",
+    "label": "Konsultation Sanktionsleitlinien",
+    "kind": "schritt",
+    "slug": "amla-2026-11-25-consultation-on-the-draft-guidelines-on-determining-the-base-amount-for-imposing"
+   },
+   {
+    "date": "26.11.2026",
+    "label": "Konsultation Auslagerung/Reliance",
+    "kind": "kern"
+   },
+   {
+    "date": "10.02.2027",
+    "label": "Öffentliche Anhörung",
+    "kind": "schritt"
+   },
+   {
+    "date": "26.02.2027",
+    "label": "Ende Konsultationsfrist",
+    "kind": "frist"
+   },
+   {
+    "date": "10.07.2029",
+    "label": "Anwendung Art. 3(3) n, o",
+    "kind": "schritt"
+   }
+  ],
+  "outline": [
+   {
+    "heading": "1. Responding to this consultation",
+    "items": [
+     "Stellungnahmen sind über den Button auf der Konsultationsseite bis 26.02.2027 einzureichen; spätere oder anderweitig übermittelte Beiträge werden möglicherweise nicht bearbeitet[2].",
+     "Beiträge werden stets veröffentlicht, ebenso die Namen von Organisationen; Namen natürlicher Personen nur ohne Widerspruch[2].",
+     "Hilfreich sind Antworten auf die Fragen mit klarem Bezug, Begründung, Belegen und Alternativvorschlägen[2]."
+    ]
+   },
+   {
+    "heading": "2. Executive Summary und nächste Schritte",
+    "items": [
+     "Art. 18 Abs. 8 und Art. 50 AMLR verpflichten die AMLA zu Leitlinien zu Auslagerung und Reliance[2, 3].",
+     "Drittbeziehungen wie Software, Datenbankzugang oder Screening gelten nach Erwägungsgrund 47 AMLR nicht als Auslagerung, können Kontrollen aber wesentlich beeinflussen; hierfür gibt es allgemeine Erwartungen[2].",
+     "Der Entwurf hat drei Teile: horizontale Grundsätze, Auslagerung (inkl. Meldungen nach Art. 18 Abs. 1 und Genehmigungen nach Art. 18 Abs. 7 AMLR) und Reliance[2].",
+     "Die Konsultation läuft drei Monate, die finalen Leitlinien sollen im zweiten Quartal 2027 erscheinen; die AMLA erwägt Factsheets oder Erklärmaterial für kleine Verpflichtete[2]."
+    ]
+   },
+   {
+    "heading": "3. Background and rationale",
+    "items": [
+     "Auslagerung ist nach Art. 18 AMLR an Bedingungen geknüpft: vorherige Meldung an die Aufsicht, Eignungsprüfung des Dienstleisters, schriftliche Vereinbarung und regelmäßige Kontrollen; der Verpflichtete bleibt voll haftbar[2, 3].",
+     "Art. 18 Abs. 3 AMLR nennt Aufgaben, die nie ausgelagert werden dürfen, etwa Genehmigung der Risikobewertung und Entscheidung über Geschäftsbeziehungen[3].",
+     "Reliance nach Art. 48 und 49 AMLR betrifft die Maßnahmen nach Art. 20 Abs. 1 Buchst. a bis c AMLR; die Letztverantwortung bleibt beim sich verlassenden Verpflichteten[2, 3].",
+     "Vereinfachung: gemeinsame Grundsätze, Nutzung vorhandener Third-Party-Frameworks, Zusammenführung von Richtlinien und weniger Anforderungen an nicht kritische Funktionen[2].",
+     "Zusammenspiel mit DORA, DSGVO und EBA/GL/2026/09: Die Erwartungen gelten parallel, Compliance mit einem Rahmen belegt nicht die Einhaltung des anderen; IKT-Dienstleister für Monitoring oder Screening fallen unter die Leitlinien[2].",
+     "Die Leitlinien verknüpfen sich mit Leitlinien und RTS zu Art. 9 Abs. 4, Art. 10 Abs. 4, Art. 26 Abs. 5, Art. 28 Abs. 1, Art. 16 und 17 AMLR sowie zur Aufsichtsmethodik[2]."
+    ]
+   },
+   {
+    "heading": "4.1 General Guidelines",
+    "items": [
+     "Verhältnismäßigkeit nach Größe, Risikoprofil, Geschäftsmodell und Komplexität[2].",
+     "Letztverantwortung beim Leitungsorgan, ausreichende Ressourcen und Expertise, regelmäßige Information des Leitungsorgans[2].",
+     "Schriftliche Richtlinien, jährliche Überprüfung, Register, Risikobewertung und Due Diligence vor Abschluss[2].",
+     "Mindestvertragsinhalte, Datenschutz, zusätzliche Schutzmaßnahmen für Drittländer, Transparenz bei KI und Automatisierung[2].",
+     "Laufende Kontrollen, gepoolte Audits, Notfallpläne und Exit ohne Störung der Compliance[2]."
+    ]
+   },
+   {
+    "heading": "4.2 Guideline 1: Outsourcing",
+    "items": [
+     "Kritikalität wird im Einzelfall bewertet; Regelbeispiele sind CDD, Transaktionsüberwachung, TFS, Meldungen und interne Kontrollen[2].",
+     "Bewertungsfaktoren: Auswirkung eines Ausfalls, Risikosteuerung, Konzentrationsrisiken, Datenzugang und Rückholbarkeit[2].",
+     "Das Register enthält die in Rn. 44 genannten Angaben; für kritische Funktionen gelten erweiterte Vertragsinhalte (KPIs, Prüfrechte, Exit)[2].",
+     "Die Risikobewertung vor Auslagerung deckt Umfang, Kundenfolgen, Status des Dienstleisters und Datenschutz ab[2]."
+    ]
+   },
+   {
+    "heading": "4.3 Guideline 2: Reliance (nur laut Beschreibung)",
+    "items": [
+     "Der Teil regelt Umfang und Bedingungen, Verantwortungsverteilung, Prüfungen vor Reliance, schriftliche Vereinbarungen oder gruppeninterne Verfahren, Remote-CDD, Zugang zu CDD-Unterlagen und Drittlandaspekte[2].",
+     "Reliance soll Doppelarbeit bei der Kundensorgfalt vermeiden, das Institut prüft aber weiter selbst, ob die Voraussetzungen erfüllt sind und ob zusätzliche Maßnahmen nötig sind[2].",
+     "Der Wortlaut dieses Kapitels liegt in der vorliegenden Quelle nicht vor[2]."
+    ]
+   },
+   {
+    "heading": "5. Accompanying documents",
+    "items": [
+     "Das Papier enthält eine Folgenabschätzung mit Kosten-Nutzen-Analyse (Abschn. 5.1) und die Konsultationsfragen (Abschn. 5.2)[2].",
+     "Die AMLA bittet besonders um Belege zur Verhältnismäßigkeit und Umsetzbarkeit, einschließlich Vereinfachungen für kleine und risikoarme Unternehmen[1]."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Bis wann kann ich Stellung nehmen?",
+    "a": "Bis 26.02.2027, 23:59 Uhr MEZ über den Respond-Button auf der AMLA-Konsultationsseite. Die öffentliche Anhörung findet am 10.02.2027 von 14:00 bis 16:00 Uhr statt[1]."
+   },
+   {
+    "q": "Gelten die Leitlinien auch für Software und Screening-Tools?",
+    "a": "Ja, als sonstige Drittbeziehungen mit allgemeinen, verhältnismäßigen Governance-Erwartungen, aber ohne die spezifischen Auslagerungsregeln. Rechtsgrundlage ist Art. 54 Abs. 1 der Verordnung (EU) 2024/1620[2]."
+   },
+   {
+    "q": "Ersetzen DORA-Unterlagen die AML-Anforderungen?",
+    "a": "Nein. Bestehende Richtlinien, Register und Verträge dürfen genutzt werden, wenn die AML/CFT/TFS-spezifischen Elemente abgedeckt sind. Compliance mit DORA belegt nicht die mit den Leitlinien[2]."
+   }
+  ],
+  "impact": "mittel",
+  "open_points": [
+   "Das Anwendungsdatum und das Ausstellungsdatum sind im Entwurf offen (Platzhalter DD.MM.YYYY).",
+   "Die Quelle bricht in Leitlinie 1 bei Rn. 47 ab; Unterauslagerung, Meldungen, Beendigung und der Wortlaut von Leitlinie 2 zu Reliance liegen nicht vor.",
+   "Welche EBA-Leitlinien konkret ersetzt werden, soll eine separate AMLA-Mitteilung klären."
+  ],
+  "impact_analysis": {
+   "controls": [
+    {
+     "name": "Kritikalitätsbewertung ausgelagerter AML-Funktionen",
+     "change": "Der Entwurf verlangt eine dokumentierte Einzelfallbewertung, ob eine ausgelagerte Funktion kritisch ist, und stuft CDD, Transaktionsmonitoring, TFS, Meldungen und interne Kontrollen grundsätzlich als kritisch ein (Rn. 41 bis 43).",
+     "steps": [
+      "Das Institut erstellt eine Liste aller ausgelagerten AML/CFT/TFS-Funktionen und ordnet jede einer Regelkategorie nach Rn. 41 Buchst. a bis e zu.",
+      "Die Verantwortlichen bewerten je Funktion die fünf Faktoren aus Rn. 42 (Ausfallwirkung, Risikosteuerung, Konzentration, Datenzugang, Rückholzeit) und halten das Ergebnis schriftlich fest.",
+      "Für als nicht kritisch eingestufte Funktionen liegt eine nachvollziehbare Begründung vor, die Interne Revision und Aufsicht einsehen können."
+     ]
+    },
+    {
+     "name": "Laufende Kontrolle und Überprüfung von Drittbeziehungen",
+     "change": "Drittbeziehungen unterliegen laufenden Kontrollen und regelmäßigen Überprüfungen mit risikobasierter Frequenz; Risikobewertungen sind periodisch zu aktualisieren und an das Leitungsorgan zu berichten (Rn. 36 bis 40).",
+     "steps": [
+      "Die Compliance-Funktion legt je Vereinbarung Frequenz, Umfang und Intensität der Überprüfung fest und begründet sie über Art, Risiko und Kritikalität.",
+      "Das Institut definiert für kritische Auslagerungen KPIs, an denen die Wirksamkeit gemessen wird (Rn. 46 Buchst. a).",
+      "Die verantwortliche Rolle berichtet dem Leitungsorgan regelmäßig die Ergebnisse der Risikobewertung."
+     ]
+    },
+    {
+     "name": "Nachvollziehbarkeit von KI- und Automatisierungslösungen",
+     "change": "Drittsoftware mit automatisierten Prozessen oder KI darf nicht verhindern, dass Institut, Kontrollfunktionen, Prüfer und Aufsicht die Unterstützung der AMLR-Compliance nachvollziehen können (Rn. 35).",
+     "steps": [
+      "Das Institut fordert von Anbietern von Monitoring- und Screening-Tools Dokumentation zur Funktionsweise ein.",
+      "Die Compliance-Funktion prüft, ob Entscheidungslogik und Parameter für Revision und Aufsicht erklärbar sind, und hält Lücken fest.",
+      "Nicht erklärbare Lösungen werden eskaliert und mit Nachbesserungsfrist oder Exit-Plan versehen."
+     ]
+    }
+   ],
+   "processes": [
+    {
+     "name": "Onboarding von Dienstleistern und Reliance-Partnern",
+     "change": "Vor jeder Vereinbarung ist die Einstufung als Auslagerung, Reliance oder sonstige Drittbeziehung vorzunehmen und der Dienstleister per Risikobewertung und Due Diligence zu prüfen (Rn. 27 bis 29, 47).",
+     "steps": [
+      "Der Einkauf legt für neue Vereinbarungen einen Einstufungsschritt mit den drei Kategorien aus Rn. 27 vor Vertragsabschluss fest.",
+      "Die Compliance führt die Risikobewertung nach den Kriterien aus Rn. 47 durch und dokumentiert das Ergebnis.",
+      "Bei Auslagerungen erfolgt vor Beginn die Meldung an die Aufsicht nach Art. 18 Abs. 1 AMLR."
+     ]
+    },
+    {
+     "name": "Vertragsmanagement und Exit",
+     "change": "Verträge müssen Mindestinhalte zu Aufgaben, Prüfrechten, Datenschutz, Unterauslagerung und Exit enthalten; bei kritischen Funktionen zusätzlich KPIs und Übergangsfristen (Rn. 32, 45, 46).",
+     "steps": [
+      "Die Rechtsabteilung gleicht Standardverträge mit der Checkliste aus Rn. 32 und Rn. 45 ab und markiert fehlende Klauseln.",
+      "Für kritische Funktionen werden KPIs, Meldefristen, unbeschränkte Zugangsrechte und eine verpflichtende Übergangsphase ergänzt.",
+      "Das Institut erstellt je kritischer Auslagerung einen getesteten Exit- und Notfallplan."
+     ]
+    },
+    {
+     "name": "Reliance bei der Kundenannahme",
+     "change": "Reliance betrifft die Maßnahmen nach Art. 20 Abs. 1 Buchst. a bis c AMLR; das Institut bleibt letztverantwortlich und muss vorab Voraussetzungen und Informationsgenügen prüfen (Abschn. 3.1 des Papiers).",
+     "steps": [
+      "Das Onboarding dokumentiert vor Nutzung eines Reliance-Partners dessen Eignung nach Art. 48 Abs. 1 AMLR.",
+      "Vereinbarungen regeln Zugang zu CDD-Informationen und Unterlagen des Partners.",
+      "Für Partner in Drittländern werden die geografischen Risikofaktoren nach Art. 48 Abs. 2 AMLR berücksichtigt."
+     ]
+    }
+   ],
+   "policies": [
+    {
+     "name": "Richtlinie zu Auslagerung, Reliance und Drittbeziehungen",
+     "change": "Schriftliche Richtlinien sind für Auslagerung und Reliance Pflicht, für sonstige Drittbeziehungen risikobasiert; sie sind jährlich vom Leitungsorgan zu überprüfen und dürfen zusammengeführt werden, wenn die Arrangementarten unterscheidbar bleiben (Rn. 23 bis 25).",
+     "steps": [
+      "Die Compliance gleicht die bestehende Auslagerungsrichtlinie mit den Rn. 18 bis 25 ab und ergänzt Reliance und sonstige Drittbeziehungen.",
+      "Das Leitungsorgan beschließt den Überprüfungsturnus und dokumentiert die Begründung bei Abweichung von jährlich.",
+      "Bei Gruppen legt das Mutterunternehmen den Rahmen fest und verteilt ihn an die Tochterunternehmen."
+     ]
+    },
+    {
+     "name": "Register der Drittbeziehungen",
+     "change": "Das Institut führt ein Register mit Mindestangaben und für Auslagerungen erweitert um LEI, Rationale, Kritikalität und Unterauftragnehmer (Rn. 31, 44).",
+     "steps": [
+      "Das Institut vergleicht sein DORA- oder Auslagerungsregister mit den Feldern aus Rn. 44 und ergänzt fehlende Felder.",
+      "Das Register wird auf Einzel- und Gruppenebene gepflegt und ist auf Anfrage der Aufsicht lieferbar."
+     ]
+    }
+   ],
+   "departments": [
+    {
+     "name": "Geldwäsche-Compliance",
+     "detail": "Leitet Einstufung, Kritikalitätsbewertung, Richtlinienanpassung und Konsultationsantwort.",
+     "workload": "hoch"
+    },
+    {
+     "name": "Einkauf / Vendor Management",
+     "detail": "Passt Onboarding, Register und Vertragsstandards an.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Recht",
+     "detail": "Überarbeitet Vertragsklauseln zu Prüfrechten, Exit und Datenschutz.",
+     "workload": "mittel"
+    },
+    {
+     "name": "Interne Revision",
+     "detail": "Auditiert Dokumentation der Kritikalität und Wirksamkeit der Kontrollen.",
+     "workload": "gering"
+    },
+    {
+     "name": "IT / Informationssicherheit",
+     "detail": "Liefert Nachvollziehbarkeit von Monitoring- und Screening-Tools, auch KI-gestützt.",
+     "workload": "mittel"
+    }
+   ]
+  },
+  "sources": [
+   {
+    "label": "Originalmeldung, amla.europa.eu",
+    "url": "https://www.amla.europa.eu/policy/public-consultations/consultation-draft-guidelines-reliance-outsourcing-and-third-party-arrangements_en"
+   },
+   {
+    "label": "Consultation Paper GL outsourcing",
+    "url": "https://www.amla.europa.eu/document/download/38dbab1f-5ffe-41ac-a646-dded75ddbb57_en?filename=Consultation%20Paper_GL%20outsourcing.pdf"
+   },
+   {
+    "label": "Rechtsakt 2024/1624, zitierte Artikel (EUR-Lex)",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1624"
+   }
+  ],
+  "meta": {
+   "generated": "2026-11-26",
+   "model": "sonnet",
+   "source": "HTML, 3 Quelle(n), 161460 Zeichen, gekürzt auf 90648",
+   "dropped": 0,
+   "tokens": 56733
+  }
+ },
  "bcbs-2026-11-18-basel-committee-discusses-risks-and-vulnerabilities-faced-by-global-banking-syst": {
   "h1": "Basler Ausschuss: Risiken, Liquiditätsprinzipien und RCAP-Start (BCBS, 18.11.2026)",
   "seo_title": "Basler Ausschuss: Risiken und Konsultationen 2026",
