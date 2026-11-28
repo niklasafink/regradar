@@ -20,6 +20,9 @@ WEB_LIVE_PATH = os.path.join(
 WEB_SOURCES_PATH = os.path.join(os.path.dirname(WEB_LIVE_PATH), "sources.json")
 
 MAX_PER_FRAMEWORK = 6
+# Vollexport (RADAR_FULL_EXPORT=1): keine Kappung je Rahmenwerk, einschlägige Meldungen ohne Rahmenwerk landen in
+# "sonstige". Standardmäßig aus; die Radar-Anzeige bleibt dann unverändert.
+FULL_EXPORT = os.environ.get("RADAR_FULL_EXPORT") == "1"
 # Meldungen der letzten RECENT_DAYS Tage werden nie gekappt (Nutzerentscheidung
 # 07.11.2026): Sonst verdrängen in aktiven Rahmenwerken neue Meldungen ältere,
 # bevor der Wochen-Newsletter sie verschickt hat, und deren Detailseiten
@@ -1475,7 +1478,13 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
             forced="amla" if r["source_id"] == "amla" else None,
             source_id=r["source_id"], title=r["title"], url=r["canonical_url"])
         if not fw_id:
-            continue
+            if not FULL_EXPORT:
+                continue
+            # Vollexport: bereits als einschlägig bewertet, aber ohne Rahmenwerk → Sammelbereich (keine Neubewertung)
+            if not conn.execute("SELECT 1 FROM llm_relevance WHERE document_id=? AND relevant=1",
+                                (r["document_id"],)).fetchone():
+                continue
+            fw_id = "sonstige"
         date = _de_date(r["publication_date"]) or _de_date(r["first_seen_at"][:10])
         if not date:
             continue
@@ -1519,6 +1528,8 @@ def export_web(conn: sqlite3.Connection, path: Optional[str] = None) -> dict:
         return (r["publication_date"] or r["first_seen_at"] or "")[:10] >= recent_from
 
     def _cap(fw_id):
+        if FULL_EXPORT:
+            return 10 ** 9
         return MAX_PER_FRAMEWORK_BY_ID.get(fw_id, MAX_PER_FRAMEWORK)
 
     selected = []
