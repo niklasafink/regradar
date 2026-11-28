@@ -85,22 +85,25 @@
    ],
    "keys": [
     "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on",
+    "finma-aufsichtsmitteilung-07-2026-informationen-zur-zweistufigen-aufsicht-ueber",
     "rundschreiben-15-2026-wa",
     "rundschreiben-16-2026-wa"
    ],
-   "hook": "Neue Regeln für KVG-Risikomanagement: Die BaFin legt flexible, prinzipienorientierte Anforderungen vor.",
-   "folge": "Das neue KAMaRisk-Rundschreiben konkretisiert die Organisationspflichten für Kapitalverwaltungsgesellschaften. Es bietet einen flexiblen Rahmen, der nach sechs Monaten Übergangsfrist für Abschnitt 5 umzusetzen ist.",
-   "cover": "BaFin: Neue KAMaRisk für KVG-Risikomanagement",
+   "hook": "Kryptowerte und DLT-Finanzinstrumente erfordern von Verwahrstellen und KVG neue Prozesse.",
+   "folge": "Die BaFin präzisiert die Pflichten von Verwahrstellen und KVG bei der Anlage in Kryptowerte und DLT-Finanzinstrumente. Verwahrstellen müssen vor Mandatsübernahme Risiken bewerten und Aufsichtsprozesse etablieren.",
+   "cover": "BaFin: Neue Regeln für Kryptowerte und DLT-Finanzinstrumente",
    "zeilen": [
-    "BaFin: Rundschreiben zu Kryptowerten und DLT-Finanzinstrumenten ab sofort gültig",
-    "EZB: SREP-Kapitalanforderungen für 2027 bleiben stabil bei 11,3 % CET1"
+    "BaFin: KAMaRisk konkretisiert Organisationspflichten für KVG, Übergangsfrist sechs Monate für Abschnitt 5",
+    "FINMA: Ab 2027 beurteilt die FINMA Bewilligungsänderungsgesuche direkt, Gebührenrahmen CHF 200 bis CHF 4'000",
+    "EZB: Kapitalanforderungen für 2027 bleiben stabil bei durchschnittlich 11,3 % CET1"
    ],
-   "frage": "Wie stellen Sie die Proportionalität im Risikomanagement Ihrer KVG sicher?",
-   "top": "rundschreiben-16-2026-wa",
+   "frage": "Wie stellen Sie sicher, dass Ihre Verwahrstelle die neuen Anforderungen an Kryptowerte erfüllt?",
+   "top": "rundschreiben-15-2026-wa",
    "kern": {
-    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die durchschnittlichen CET1-Kapitalanforderungen für 2027 bei 11,3 % stabil und fokussiert aufsichtliche Prioritäten auf geopolitische und technologiebedingte Risiken.",
-    "rundschreiben-16-2026-wa": "Die BaFin hat die Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht, die für Abschnitt 5 nach sechs Monaten umzusetzen sind.",
-    "rundschreiben-15-2026-wa": "Die BaFin präzisiert ab sofort die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-Finanzinstrumente."
+    "rundschreiben-16-2026-wa": "Die BaFin hat die Mindestanforderungen an das Risikomanagement von Kapitalverwaltungsgesellschaften (KAMaRisk) veröffentlicht, die sechs Monate nach Veröffentlichung für Abschnitt 5 umzusetzen sind.",
+    "rundschreiben-15-2026-wa": "Die BaFin präzisiert die Pflichten von Verwahrstellen und Kapitalverwaltungsgesellschaften bei Investitionen in Kryptowerte und DLT-basierte Finanzinstrumente ab sofort.",
+    "ecb-keeps-capital-requirements-broadly-stable-for-2027-focuses-its-priorities-on": "Die EZB hält die Kapitalanforderungen für 2027 mit durchschnittlich 11,3 % der risikogewichteten Aktiva weitgehend stabil und konzentriert sich auf die Widerstandsfähigkeit der Banken.",
+    "finma-aufsichtsmitteilung-07-2026-informationen-zur-zweistufigen-aufsicht-ueber": "Die FINMA optimiert die Aufsicht über Vermögensverwalter und Trustees, indem sie ab 2027 Bewilligungsänderungsgesuche direkt beurteilt und eine verursachergerechte Gebührenverrechnung einführt."
    },
    "doppelt": [],
    "fmt": 5,
